@@ -230,7 +230,8 @@ WarInfo.o: WarInfo.cpp \
  /usr/include/sys/cdefs.h \
  /usr/include/gnu/stubs.h \
  /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
+ /usr/include/bits/pthreadtypes.h \
+ /usr/include/bits/sched.h \
  /usr/include/wchar.h \
  /usr/include/bits/wchar.h \
  /usr/include/gconv.h \
@@ -272,10 +273,11 @@ WarInfo.o: WarInfo.cpp \
  /usr/include/limits.h \
  /usr/include/bits/posix1_lim.h \
  /usr/include/bits/local_lim.h \
-  /usr/include/linux/limits.h \
+ /usr/include/linux/limits.h \
  /usr/include/bits/posix2_lim.h \
  /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
+ /usr/include/STL/stl_iterator.h \
+ /usr/include/STL/stl_construct.h \
  /usr/include/STL/stl_tempbuf.h \
  /usr/include/STL/stl_uninitialized.h \
  /usr/include/STL/stl_raw_storage_iter.h \
