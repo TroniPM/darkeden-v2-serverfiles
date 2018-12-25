@@ -68,7 +68,7 @@ public:
 	Zone* removeZone(ZoneID_t zoneID) throw(NoSuchElementException);
 	
 	// get zone from zone group
-	Zone* getZone(ZoneID_t zoneID) const throw(NoSuchElementException);
+	Zone* getZone(ZoneID_t zoneID) ;
 
 //#ifdef __NO_COMBAT__
 	Zone* getCombatZone(ZoneID_t zoneID) const throw(Error); // getZone과 같은 일을 수행하나 NULL을 리턴하는 것이 가능, 김경석

@@ -83,9 +83,9 @@ public:
 	void deleteZoneGroup(ZoneGroupID_t zoneGroupID) throw(NoSuchElementException);
 	
 	// get zone group from zone group manager
-	ZoneGroup* getZoneGroup(ZoneGroupID_t zoneGroupID) const throw(NoSuchElementException);
+	ZoneGroup* getZoneGroup(ZoneGroupID_t zoneGroupID) ;
 
-	ZoneGroup* getZoneGroupByGroupID(ZoneGroupID_t ZoneGroupID) const throw(NoSuchElementException);
+	ZoneGroup* getZoneGroupByGroupID(ZoneGroupID_t ZoneGroupID) ;
 
 	// size of zone group
 	uint size()  { return m_ZoneGroups.size(); }

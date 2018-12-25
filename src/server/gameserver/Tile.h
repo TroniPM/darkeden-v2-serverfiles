@@ -126,8 +126,8 @@ public:
 	void addObject(Object* pObject) throw(DuplicatedException);
 	void deleteObject(ObjectID_t objectID) throw(NoSuchElementException);
 	void deleteObject(ObjectPriority tilePriority) throw(NoSuchElementException);
-	Object* getObject(ObjectID_t objectID) const throw(NoSuchElementException);
-	Object* getObject(ObjectPriority tilePriority) const throw(NoSuchElementException);
+	Object* getObject(ObjectID_t objectID) ;
+	Object* getObject(ObjectPriority tilePriority) ;
 
 public:
 	WORD getOption()  { return m_wOption; }

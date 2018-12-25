@@ -46,7 +46,7 @@ public:
 	void addScriptParameter( ScriptParameter* pParam ) throw(DuplicatedException);
 	void clearScriptParameters() throw();
 	HashMapScriptParameter& getScriptParameters() { return m_ScriptParameters; }
-	string getValue( const string& name ) const throw(NoSuchElementException);
+	string getValue( const string& name ) ;
 
 private:
 	ObjectID_t m_ObjectID; // NPC's object id
