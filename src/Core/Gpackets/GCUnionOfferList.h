@@ -32,7 +32,7 @@ public:
         QUIT
     };
 
-	PacketSize_t getSize() const throw()
+	PacketSize_t getSize() 
 	{ 
 		return szGuildID +				// Guild ID
 			   szBYTE +					// Guild Type
@@ -114,23 +114,23 @@ public:
 	}
 
 	// get/set Guild ID
-	GuildID_t getGuildID() const throw() { return m_GuildID; }
+	GuildID_t getGuildID()  { return m_GuildID; }
 	void setGuildID( GuildID_t GuildID ) throw() { m_GuildID = GuildID; }
 
 	// get/set OfferGuild Type (JOIN-신청자 목록, QUIT-탈퇴신청한 길드)
-	BYTE	getGuildType()	const throw() { return m_Type; }
+	BYTE	getGuildType()	 { return m_Type; }
 	void	setGuildType( BYTE Type ) throw() { m_Type = Type; }
 
 	// get/set Guild Name
-	const string& getGuildName() const throw() { return m_GuildName; }
+	const string& getGuildName()  { return m_GuildName; }
 	void setGuildName( const string& GuildName ) throw() { m_GuildName = GuildName; }
 
 	// get/set Guild Master
-	const string& getGuildMaster() const throw() { return m_MasterName; }
+	const string& getGuildMaster()  { return m_MasterName; }
 	void setGuildMaster( const string& GuildMaster ) throw() { m_MasterName = GuildMaster; }
 
 	// get/set Date
-	const DWORD getDate() const throw() { return m_Date; }
+	const DWORD getDate()  { return m_Date; }
 	void setDate( DWORD date  ) throw() { m_Date = date; }
 
 private :
@@ -161,18 +161,18 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_UNION_OFFER_LIST;}
+	PacketID_t getPacketID()  { return PACKET_GC_UNION_OFFER_LIST;}
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw();
+	PacketSize_t getPacketSize() ;
 
 	// get packet name
-	string getPacketName() const throw() { return "GCUnionOfferList"; }
+	string getPacketName()  { return "GCUnionOfferList"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
-	list<SingleGuildUnionOffer*>	getUnionOfferList() const throw() { return m_UnionOfferList; }
+	list<SingleGuildUnionOffer*>	getUnionOfferList()  { return m_UnionOfferList; }
 	
 	void	addUnionOfferList(SingleGuildUnionOffer* pUnionOffer) throw()
 	{
@@ -200,15 +200,15 @@ public :
 	Packet* createPacket() throw() { return new GCUnionOfferList(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCUnionOfferList"; }
+	string getPacketName()  { return "GCUnionOfferList"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_UNION_OFFER_LIST; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_UNION_OFFER_LIST; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCSystemMessagePacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return SingleGuildUnionOffer::getMaxSize() * 20; }
+	PacketSize_t getPacketMaxSize()  { return SingleGuildUnionOffer::getMaxSize() * 20; }
 
 };
 

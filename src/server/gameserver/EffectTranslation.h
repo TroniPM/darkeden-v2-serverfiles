@@ -19,7 +19,7 @@ public:
 	EffectTranslation(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_TRANSLATION; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_TRANSLATION; }
 
 	void affect() throw(Error) {}
 	void affect(Creature* pCreature) throw(Error);
@@ -27,7 +27,7 @@ public:
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error); 
 
-	string toString() const throw();
+	string toString() ;
 };
 
 #endif // __EFFECT_DOOM__

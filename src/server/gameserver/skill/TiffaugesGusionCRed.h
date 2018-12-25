@@ -20,8 +20,8 @@ public:
 	~TiffaugesGusionCRed() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "TiffaugesGusionCRed"; }
-	SkillType_t getSkillType() const throw() { return SKILL_TIFFAUGES_GUSION_C_RED; }
+    string getSkillHandlerName()  { return "TiffaugesGusionCRed"; }
+	SkillType_t getSkillType()  { return SKILL_TIFFAUGES_GUSION_C_RED; }
 
 	void execute(Monster* pMonster, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
 

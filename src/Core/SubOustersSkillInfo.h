@@ -40,19 +40,19 @@ public :
 public :
 
 	// get / set SkillType
-	SkillType_t getSkillType() const throw() { return m_SkillType; }
+	SkillType_t getSkillType()  { return m_SkillType; }
 	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
 
 	// get /set Skill ExpLevel
-	ExpLevel_t getExpLevel() const throw() { return m_ExpLevel; }
+	ExpLevel_t getExpLevel()  { return m_ExpLevel; }
 	void setExpLevel( ExpLevel_t ExpLevel ) throw() { m_ExpLevel = ExpLevel; }
 
 	// get / set Turn
-	Turn_t getSkillTurn() const throw() { return m_Interval ; }
+	Turn_t getSkillTurn()  { return m_Interval ; }
 	void setSkillTurn(Turn_t SkillTurn) throw() { m_Interval = SkillTurn; }
 
 	// get / set CastingTime
-	Turn_t getCastingTime() const throw() { return m_CastingTime; }
+	Turn_t getCastingTime()  { return m_CastingTime; }
 	void setCastingTime(Turn_t CastingTime) throw() { m_CastingTime = CastingTime; }
 
 private :

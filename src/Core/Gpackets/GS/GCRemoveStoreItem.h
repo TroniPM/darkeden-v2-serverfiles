@@ -25,10 +25,10 @@ public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_REMOVE_STORE_ITEM; }
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szBYTE; }
-	string getPacketName() const throw() { return "GCRemoveStoreItem"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_REMOVE_STORE_ITEM; }
+	PacketSize_t getPacketSize()  { return szObjectID + szBYTE; }
+	string getPacketName()  { return "GCRemoveStoreItem"; }
+	string toString() ;
 
 	ObjectID_t	getOwnerObjectID() const { return m_OwnerObjectID; }
 	void		setOwnerObjectID(ObjectID_t oid) { m_OwnerObjectID = oid; }
@@ -49,9 +49,9 @@ class GCRemoveStoreItemFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCRemoveStoreItem(); }
-	string getPacketName() const throw() { return "GCRemoveStoreItem"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_REMOVE_STORE_ITEM; }
-	PacketSize_t getPacketMaxSize() const throw()
+	string getPacketName()  { return "GCRemoveStoreItem"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_REMOVE_STORE_ITEM; }
+	PacketSize_t getPacketMaxSize() 
 	{
 		return szObjectID + szBYTE;
 	}

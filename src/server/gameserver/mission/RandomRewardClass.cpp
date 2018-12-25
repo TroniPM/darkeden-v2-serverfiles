@@ -14,7 +14,7 @@ RewardInfo*	RandomRewardClass::selectReward( PlayerCreature* pPC ) const throw(E
 	__END_CATCH
 }
 
-string RandomRewardClass::toString() const throw()
+string RandomRewardClass::toString() 
 {
 	return "RandomRewardClass() : \n" + RewardClass::toString();
 }

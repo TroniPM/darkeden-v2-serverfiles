@@ -20,8 +20,8 @@ public:
 	~AirShield() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "AirShield"; }
-	SkillType_t getSkillType() const throw() { return SKILL_AIR_SHIELD; }
+    string getSkillHandlerName()  { return "AirShield"; }
+	SkillType_t getSkillType()  { return SKILL_AIR_SHIELD; }
 
 	void execute(Slayer* pSlayer,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

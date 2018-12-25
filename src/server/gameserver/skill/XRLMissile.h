@@ -20,8 +20,8 @@ public:
 	~XRLMissile() throw() {}
 
 public:
-    string getSkillHandlerName() const throw() { return "XRLMissile"; }
-	SkillType_t getSkillType() const throw() { return SKILL_XRL_Missile; }
+    string getSkillHandlerName()  { return "XRLMissile"; }
+	SkillType_t getSkillType()  { return SKILL_XRL_Missile; }
 
 	void execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

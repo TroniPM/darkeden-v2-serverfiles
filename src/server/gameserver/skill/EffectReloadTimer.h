@@ -20,7 +20,7 @@ public:
 	EffectReloadTimer(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_RELOAD_TIMER; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_RELOAD_TIMER; }
 
 	void affect() throw(Error){}
 	void affect(Creature* pCreature) throw(Error);
@@ -31,7 +31,7 @@ public:
 	void unaffect(Item* pItem) throw(Error) {}
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void setFromInventory(bool b) throw() { m_bFromInventory = b; }

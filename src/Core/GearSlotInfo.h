@@ -37,7 +37,7 @@ public:
 
 public:
 	void setSlotID(SlotID_t SlotID) throw() { m_SlotID = SlotID; }
-	SlotID_t getSlotID() const throw() { return m_SlotID; }
+	SlotID_t getSlotID()  { return m_SlotID; }
 
 private:
 	SlotID_t m_SlotID;

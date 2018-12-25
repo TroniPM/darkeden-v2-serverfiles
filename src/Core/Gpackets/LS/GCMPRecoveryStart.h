@@ -47,28 +47,28 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_MP_RECOVERY_START; }
+	PacketID_t getPacketID()  { return PACKET_GC_MP_RECOVERY_START; }
 	
 	// get packet's body size
 	// 최적화시, 미리 계산된 정수를 사용한다.
-	PacketSize_t getPacketSize() const throw() { return szBYTE + szMP + szMP; }
+	PacketSize_t getPacketSize()  { return szBYTE + szMP + szMP; }
 
 	// get packet's name
-	string getPacketName() const throw() { return "GCMPRecoveryStart"; }
+	string getPacketName()  { return "GCMPRecoveryStart"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get / set Delay
-	BYTE getDelay() const throw() { return m_Delay; }
+	BYTE getDelay()  { return m_Delay; }
 	void setDelay(BYTE Delay) throw() { m_Delay = Delay; }
 
 	// get / set Period
-	MP_t getPeriod() const throw() { return m_Period; }
+	MP_t getPeriod()  { return m_Period; }
 	void setPeriod(MP_t Period) throw() { m_Period = Period; }
 
 	// get / set Quantity
-	MP_t getQuantity() const throw() { return m_Quantity; }
+	MP_t getQuantity()  { return m_Quantity; }
 	void setQuantity(MP_t Quantity) throw() { m_Quantity = Quantity; }
 
 private :
@@ -111,13 +111,13 @@ public :
 	Packet* createPacket() throw() { return new GCMPRecoveryStart(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCMPRecoveryStart"; }
+	string getPacketName()  { return "GCMPRecoveryStart"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_MP_RECOVERY_START; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_MP_RECOVERY_START; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + szMP + szMP; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + szMP + szMP; }
 
 };
 

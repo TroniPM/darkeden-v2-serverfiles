@@ -54,26 +54,26 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_SYSTEM_MESSAGE; }
+	PacketID_t getPacketID()  { return PACKET_GC_SYSTEM_MESSAGE; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szBYTE + m_Message.size() + szuint + szBYTE; }
+	PacketSize_t getPacketSize()  { return szBYTE + m_Message.size() + szuint + szBYTE; }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCSystemMessage"; }
+	string getPacketName()  { return "GCSystemMessage"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get/set chatting message
-	string getMessage() const throw() { return m_Message; }
+	string getMessage()  { return m_Message; }
 	void setMessage(const string & msg) throw() { m_Message = msg; }
 
 	// get/set text color
-	uint getColor() const throw() { return m_Color; }
+	uint getColor()  { return m_Color; }
 	void setColor( uint color ) throw() { m_Color = color; }
 
-	SystemMessageType getType() const throw() { return m_Type; }
+	SystemMessageType getType()  { return m_Type; }
 	void setType( SystemMessageType Type ) throw() { m_Type = Type; }
 
 	// get/set race
@@ -112,15 +112,15 @@ public :
 	Packet* createPacket() throw() { return new GCSystemMessage(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCSystemMessage"; }
+	string getPacketName()  { return "GCSystemMessage"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_SYSTEM_MESSAGE; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_SYSTEM_MESSAGE; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCSystemMessagePacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + 256 + szuint + szBYTE; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + 256 + szuint + szBYTE; }
 
 };
 

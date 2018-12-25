@@ -40,7 +40,7 @@ public:
 	Grade_t getGrade() const { return m_Grade; }
 	void setGrade( Grade_t grade ) { m_Grade = grade; }
 
-	Silver_t getSilver() const throw() { return m_Silver; }
+	Silver_t getSilver()  { return m_Silver; }
 	void setSilver(Silver_t amount) throw() { m_Silver = amount;}
 
 	const list<OptionType_t>& getOptionTypeList() const { return m_OptionTypes; }
@@ -49,13 +49,13 @@ public:
 	const list<OptionType_t>& getOptionTypeList2() const { return m_OptionTypes2; }
 	void setOptionTypeList2( const list<OptionType_t>& optionTypes ) { m_OptionTypes2 = optionTypes; }
 
-	EnchantLevel_t getHeroOption() const throw() { return m_HeroOption;}
+	EnchantLevel_t getHeroOption()  { return m_HeroOption;}
 	void setHeroOption(EnchantLevel_t HeroOption) throw() { m_HeroOption = HeroOption; }
 
-	EnchantLevel_t getHeroOptionAttr() const throw() { return m_HeroOptionAttr;}
+	EnchantLevel_t getHeroOptionAttr()  { return m_HeroOptionAttr;}
 	void setHeroOptionAttr(EnchantLevel_t HeroOptionAttr) throw() { m_HeroOptionAttr = HeroOptionAttr; }
 
-	EnchantLevel_t getEnchantLevel() const throw() { return m_EnchantLevel;}
+	EnchantLevel_t getEnchantLevel()  { return m_EnchantLevel;}
 	void setEnchantLevel(EnchantLevel_t level) throw() { m_EnchantLevel = level; }
 
 	int getNum() const { return m_Num; }
@@ -117,10 +117,10 @@ public:
 	void addGoodsInfo(GoodsInfo* pGoodsInfo) throw(DuplicatedException, Error);
 
 	// get GoodsInfo
-	GoodsInfo* getGoodsInfo( DWORD id ) const throw();
+	GoodsInfo* getGoodsInfo( DWORD id ) ;
 
 	// toString for Debug
-	string toString() const throw();
+	string toString() ;
 
 private:
 	HashMapGoodsInfo		m_GoodsInfos;

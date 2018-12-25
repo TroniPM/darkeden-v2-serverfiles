@@ -20,7 +20,7 @@ public:
 	EffectPassingHeal2(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_PASSING_HEAL2; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_PASSING_HEAL2; }
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
@@ -37,7 +37,7 @@ public:
 	int getHealPoint() const { return m_HealPoint; }
 	void setHealPoint(int HealPoint) { m_HealPoint = HealPoint; }
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	int	m_PassingCount;

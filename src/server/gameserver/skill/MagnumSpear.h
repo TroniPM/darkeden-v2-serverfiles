@@ -20,8 +20,8 @@ public:
 	~MagnumSpear() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "MagnumSpear"; }
-	SkillType_t getSkillType() const throw() { return SKILL_MAGNUM_SPEAR; }
+    string getSkillHandlerName()  { return "MagnumSpear"; }
+	SkillType_t getSkillType()  { return SKILL_MAGNUM_SPEAR; }
 
 	void execute(Ousters* pOusters, ObjectID_t ObjectID,  OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 

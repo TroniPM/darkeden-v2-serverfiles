@@ -35,23 +35,23 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_EXPEL_GUILD_MEMBER; }
+	PacketID_t getPacketID()  { return PACKET_CG_EXPEL_GUILD_MEMBER; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szGuildID + szBYTE + m_Name.size(); }
+	PacketSize_t getPacketSize()  { return szGuildID + szBYTE + m_Name.size(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGExpelGuildMember"; }
+	string getPacketName()  { return "CGExpelGuildMember"; }
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get/set GuildID
-	GuildID_t getGuildID() const throw() { return m_GuildID; }
+	GuildID_t getGuildID()  { return m_GuildID; }
 	void setGuildID( GuildID_t guildID ) throw() { m_GuildID = guildID; }
 
 	// get/set name
-	const string& getName() const throw() { return m_Name; }
+	const string& getName()  { return m_Name; }
 	void setName( const string& name ) throw() { m_Name = name; }
 
 
@@ -91,13 +91,13 @@ public:
 	Packet* createPacket() throw() { return new CGExpelGuildMember(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGExpelGuildMember"; }
+	string getPacketName()  { return "CGExpelGuildMember"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_EXPEL_GUILD_MEMBER; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_EXPEL_GUILD_MEMBER; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szGuildID + szBYTE + 20; }
+	PacketSize_t getPacketMaxSize()  { return szGuildID + szBYTE + 20; }
 };
 
 

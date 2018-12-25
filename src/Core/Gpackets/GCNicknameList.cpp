@@ -79,7 +79,7 @@ void GCNicknameList::write ( SocketOutputStream & oStream )
 	__END_CATCH
 }
 
-PacketSize_t GCNicknameList::getPacketSize() const throw()
+PacketSize_t GCNicknameList::getPacketSize() 
 {
 	__BEGIN_TRY
 

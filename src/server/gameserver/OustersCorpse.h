@@ -34,16 +34,16 @@ public:
 
 
 public:
-	virtual ItemClass getItemClass() const throw() { return ITEM_CLASS_CORPSE; }
+	virtual ItemClass getItemClass()  { return ITEM_CLASS_CORPSE; }
 
-	virtual ItemType_t getItemType() const throw() { return OUSTERS_CORPSE; }
+	virtual ItemType_t getItemType()  { return OUSTERS_CORPSE; }
 	virtual void setItemType(ItemType_t itemType) throw() { throw UnsupportedError(__PRETTY_FUNCTION__); }
 
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 	PCOustersInfo3 & getOustersInfo() throw() { return m_OustersInfo; }
-	const PCOustersInfo3 & getOustersInfo() const throw() { return m_OustersInfo; }
+	const PCOustersInfo3 & getOustersInfo()  { return m_OustersInfo; }
 	void setOustersInfo(const PCOustersInfo3 & slayerInfo) throw() { m_OustersInfo = slayerInfo; }
 
 	void setXY(ZoneCoord_t X, ZoneCoord_t Y) { m_OustersInfo.setX(X); m_OustersInfo.setY(Y); }

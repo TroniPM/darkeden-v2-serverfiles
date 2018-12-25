@@ -20,8 +20,8 @@ public:
 	~OpenCasket() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "OpenCasket"; }
-	SkillType_t getSkillType() const throw() { return SKILL_OPEN_CASKET; }
+    string getSkillHandlerName()  { return "OpenCasket"; }
+	SkillType_t getSkillType()  { return SKILL_OPEN_CASKET; }
 
 	void execute(Vampire* pVampire, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
 

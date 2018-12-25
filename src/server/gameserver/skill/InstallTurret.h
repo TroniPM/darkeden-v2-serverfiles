@@ -20,8 +20,8 @@ public:
 	~InstallTurret() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "InstallTurret"; }
-	SkillType_t getSkillType() const throw() { return SKILL_INSTALL_TURRET; }
+    string getSkillHandlerName()  { return "InstallTurret"; }
+	SkillType_t getSkillType()  { return SKILL_INSTALL_TURRET; }
 
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

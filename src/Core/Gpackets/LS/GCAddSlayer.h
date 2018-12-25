@@ -37,23 +37,23 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_ADD_SLAYER; }
-	PacketSize_t getPacketSize() const throw();
-	string getPacketName() const throw() { return "GCAddSlayer"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_ADD_SLAYER; }
+	PacketSize_t getPacketSize() ;
+	string getPacketName()  { return "GCAddSlayer"; }
+	string toString() ;
 
 public:
 	PCSlayerInfo3 & getSlayerInfo() throw() { return m_SlayerInfo; }
-	const PCSlayerInfo3 & getSlayerInfo() const throw() { return m_SlayerInfo; }
+	const PCSlayerInfo3 & getSlayerInfo()  { return m_SlayerInfo; }
 	void setSlayerInfo(const PCSlayerInfo3 & slayerInfo) throw() { m_SlayerInfo = slayerInfo; }
 
-	EffectInfo* getEffectInfo() const throw() { return m_pEffectInfo; }
+	EffectInfo* getEffectInfo()  { return m_pEffectInfo; }
 	void setEffectInfo(EffectInfo* pEffectInfo) throw() { m_pEffectInfo = pEffectInfo; }
 
-	PetInfo* getPetInfo() const throw() { return m_pPetInfo; }
+	PetInfo* getPetInfo()  { return m_pPetInfo; }
 	void setPetInfo(PetInfo* pPetInfo) throw() { m_pPetInfo = pPetInfo; }
 
-	NicknameInfo* getNicknameInfo() const throw() { return m_pNicknameInfo; }
+	NicknameInfo* getNicknameInfo()  { return m_pNicknameInfo; }
 	void setNicknameInfo(NicknameInfo* pNicknameInfo) throw() { m_pNicknameInfo = pNicknameInfo; }
 
 	StoreOutlook	getStoreOutlook() const { return m_StoreOutlook; }
@@ -75,9 +75,9 @@ class GCAddSlayerFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCAddSlayer(); }
-	string getPacketName() const throw() { return "GCAddSlayer"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_ADD_SLAYER; }
-	PacketSize_t getPacketMaxSize() const throw()
+	string getPacketName()  { return "GCAddSlayer"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_SLAYER; }
+	PacketSize_t getPacketMaxSize() 
 	{ 
 		return PCSlayerInfo3::getMaxSize() + EffectInfo::getMaxSize() + PetInfo::getMaxSize() + NicknameInfo::getMaxSize() + StoreOutlook::getMaxSize();
 	}

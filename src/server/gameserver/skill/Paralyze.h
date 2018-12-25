@@ -20,8 +20,8 @@ public:
 	~Paralyze() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Paralyze"; }
-	SkillType_t getSkillType() const throw() { return SKILL_PARALYZE; }
+    string getSkillHandlerName()  { return "Paralyze"; }
+	SkillType_t getSkillType()  { return SKILL_PARALYZE; }
 
 	void execute(Vampire* pVampire, ObjectID_t targetObject, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Monster* pMonster, Creature* pEnemy) throw(Error);

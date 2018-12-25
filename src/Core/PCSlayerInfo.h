@@ -145,7 +145,7 @@ public:
 	}
 
 	// get/set Alignment
-	Alignment_t getAlignment() const throw() { return m_Alignment; }
+	Alignment_t getAlignment()  { return m_Alignment; }
 	void setAlignment(Alignment_t Alignment) throw() { m_Alignment = Alignment; }
 
 	// get/set STR

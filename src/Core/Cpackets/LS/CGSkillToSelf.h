@@ -45,24 +45,24 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_SKILL_TO_SELF; }
+	PacketID_t getPacketID()  { return PACKET_CG_SKILL_TO_SELF; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szSkillType + szCEffectID; }
+	PacketSize_t getPacketSize()  { return szSkillType + szCEffectID; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGSkillToSelf"; }
+	string getPacketName()  { return "CGSkillToSelf"; }
 
 	// get SkillType
-	SkillType_t getSkillType() const throw()  { return m_SkillType; }
+	SkillType_t getSkillType()   { return m_SkillType; }
 	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
 
 	// get CEffectID
-	CEffectID_t getCEffectID() const throw() { return m_CEffectID; }
+	CEffectID_t getCEffectID()  { return m_CEffectID; }
 	void setCEffectID(CEffectID_t CEffectID) throw() { m_CEffectID = CEffectID; }
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 private :
 
@@ -100,13 +100,13 @@ public:
 	Packet* createPacket() throw() { return new CGSkillToSelf(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGSkillToSelf"; }
+	string getPacketName()  { return "CGSkillToSelf"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_SKILL_TO_SELF; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_SKILL_TO_SELF; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szSkillType + szCEffectID; }
+	PacketSize_t getPacketMaxSize()  { return szSkillType + szCEffectID; }
 
 };
 

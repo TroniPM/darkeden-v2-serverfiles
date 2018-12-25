@@ -18,11 +18,11 @@
 class ConditionPcHasOriginalItems : public Condition 
 {
 public:
-	virtual ConditionType_t getConditionType() const throw() { return CONDITION_PC_HAS_ORIGINAL_ITEMS; }
-	virtual bool isPassive() const throw() { return true; }
-	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) const throw();
+	virtual ConditionType_t getConditionType()  { return CONDITION_PC_HAS_ORIGINAL_ITEMS; }
+	virtual bool isPassive()  { return true; }
+	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) ;
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 private:
 	uint	m_ItemClass, m_ItemType, m_ItemNumber;
 };
@@ -34,9 +34,9 @@ private:
 class ConditionPcHasOriginalItemsFactory : public ConditionFactory 
 {
 public:
-    virtual ConditionType_t getConditionType() const throw() { return Condition::CONDITION_PC_HAS_ORIGINAL_ITEMS; }
-    virtual Condition* createCondition() const throw() { return new ConditionPcHasOriginalItems(); }
-    virtual string getConditionName() const throw() { return "PcHasOriginalItems"; }
+    virtual ConditionType_t getConditionType()  { return Condition::CONDITION_PC_HAS_ORIGINAL_ITEMS; }
+    virtual Condition* createCondition()  { return new ConditionPcHasOriginalItems(); }
+    virtual string getConditionName()  { return "PcHasOriginalItems"; }
 };
 
 #endif

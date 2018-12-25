@@ -22,7 +22,7 @@ public:
 	ItemID_t getCastleSymbolItemID() const			{ return m_ItemID; }
 	void	 setCastleSymbolItemID(ItemID_t itemID) 	{ m_ItemID = itemID; }
 
-	string toString() const throw();
+	string toString() ;
 
 public :
 	ShrineID_t		m_ShrineID;				// Shrine ID. ItemType과 같아야 한다.
@@ -57,7 +57,7 @@ public:
 	CastleShrineSet* getShrineSet( ShrineID_t shrineID ) const throw(Error);
 	int  size() const { return m_ShrineSets.size(); }
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	bool isMatchHolyShrine(Item* pItem, MonsterCorpse* pMonsterCorpse) const throw(Error);

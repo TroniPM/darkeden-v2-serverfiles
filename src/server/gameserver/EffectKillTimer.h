@@ -21,11 +21,11 @@ public:
 	~EffectKillTimer() throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_TRANSPORT_CREATURE; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_TRANSPORT_CREATURE; }
 
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	bool	m_bKill;

@@ -26,7 +26,7 @@ EffectGrandMasterSlayer::EffectGrandMasterSlayer(Creature* pCreature)
 	__END_CATCH
 }
 
-Effect::EffectClass EffectGrandMasterSlayer::getSendEffectClass() const throw()
+Effect::EffectClass EffectGrandMasterSlayer::getSendEffectClass() 
 {
 	Slayer* pSlayer = dynamic_cast<Slayer*>(m_pTarget);
 	if ( pSlayer == NULL ) return getEffectClass();
@@ -129,7 +129,7 @@ void EffectGrandMasterSlayer::unaffect(Creature* pCreature)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 string EffectGrandMasterSlayer::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

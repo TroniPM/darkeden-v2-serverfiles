@@ -217,10 +217,10 @@ public:
 
 public:
 	virtual ~Action() throw(Error) {}
-	virtual ActionType_t getActionType() const throw() = 0;
+	virtual ActionType_t getActionType()  = 0;
 	virtual void read(PropertyBuffer & buffer) throw(Error) = 0;
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error) = 0;	
-	virtual string toString() const throw() = 0;
+	virtual string toString()  = 0;
 
 };
 

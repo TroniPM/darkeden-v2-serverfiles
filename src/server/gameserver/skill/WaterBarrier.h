@@ -20,8 +20,8 @@ public:
 	~WaterBarrier() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "WaterBarrier"; }
-	SkillType_t getSkillType() const throw() { return SKILL_WATER_BARRIER; }
+    string getSkillHandlerName()  { return "WaterBarrier"; }
+	SkillType_t getSkillType()  { return SKILL_WATER_BARRIER; }
 
 	void execute(Ousters* pOusters,  OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 

@@ -46,40 +46,40 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_ABSORB_SOUL; }
+	PacketID_t getPacketID()  { return PACKET_CG_ABSORB_SOUL; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szZoneCoord + szZoneCoord + szObjectID + szCoordInven + szCoordInven + szCoordInven + szCoordInven; }
+	PacketSize_t getPacketSize()  { return szObjectID + szZoneCoord + szZoneCoord + szObjectID + szCoordInven + szCoordInven + szCoordInven + szCoordInven; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGAbsorbSoul"; }
+	string getPacketName()  { return "CGAbsorbSoul"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get/set ObjectID
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
 	
-	ZoneCoord_t getTargetZoneX() const throw() { return m_TargetZoneX; }
+	ZoneCoord_t getTargetZoneX()  { return m_TargetZoneX; }
 	void setTargetZoneX( ZoneCoord_t x ) throw() { m_TargetZoneX = x; }
 
-	ZoneCoord_t getTargetZoneY() const throw() { return m_TargetZoneY; }
+	ZoneCoord_t getTargetZoneY()  { return m_TargetZoneY; }
 	void setTargetZoneY( ZoneCoord_t y ) throw() { m_TargetZoneY = y; }
 
-	ObjectID_t getInvenObjectID() const throw() { return m_InvenObjectID; }
+	ObjectID_t getInvenObjectID()  { return m_InvenObjectID; }
 	void setInvenObjectID(ObjectID_t invenObjectID) throw() { m_InvenObjectID = invenObjectID; }
 
-	Coord_t getInvenX() const throw() { return m_InvenX; }
+	Coord_t getInvenX()  { return m_InvenX; }
 	void setInvenX( CoordInven_t x ) throw() { m_InvenX = x; }
 
-	Coord_t getInvenY() const throw() { return m_InvenY; }
+	Coord_t getInvenY()  { return m_InvenY; }
 	void setInvenY( CoordInven_t y ) throw() { m_InvenY = y; }
 
-	Coord_t getTargetInvenX() const throw() { return m_TargetInvenX; }
+	Coord_t getTargetInvenX()  { return m_TargetInvenX; }
 	void setTargetInvenX( CoordInven_t x ) throw() { m_TargetInvenX = x; }
 
-	Coord_t getTargetInvenY() const throw() { return m_TargetInvenY; }
+	Coord_t getTargetInvenY()  { return m_TargetInvenY; }
 	void setTargetInvenY( CoordInven_t y ) throw() { m_TargetInvenY = y; }
 
 private :
@@ -122,13 +122,13 @@ public:
 	Packet* createPacket() throw() { return new CGAbsorbSoul(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGAbsorbSoul"; }
+	string getPacketName()  { return "CGAbsorbSoul"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_ABSORB_SOUL; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_ABSORB_SOUL; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szZoneCoord + szZoneCoord + szObjectID + szCoordInven + szCoordInven + szCoordInven + szCoordInven; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szZoneCoord + szZoneCoord + szObjectID + szCoordInven + szCoordInven + szCoordInven + szCoordInven; }
 
 };
 

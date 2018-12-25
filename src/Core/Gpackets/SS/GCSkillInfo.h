@@ -47,16 +47,16 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_SKILL_INFO; }
+	PacketID_t getPacketID()  { return PACKET_GC_SKILL_INFO; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw();
+	PacketSize_t getPacketSize() ;
 
 	// get packet name
-	string getPacketName() const throw() { return "GCSkillInfo"; }
+	string getPacketName()  { return "GCSkillInfo"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 //--------------------------------------------------
 // methods
@@ -64,7 +64,7 @@ public :
 public :
 
 	// get / set PCType
-	BYTE getPCType() const throw() { return m_PCType; }
+	BYTE getPCType()  { return m_PCType; }
 	void setPCType(BYTE PCType) throw() { m_PCType = PCType; }
 
     // add / delete / clear Skill List
@@ -108,15 +108,15 @@ public :
 	Packet* createPacket() throw() { return new GCSkillInfo(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCSkillInfo"; }
+	string getPacketName()  { return "GCSkillInfo"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_SKILL_INFO; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_SKILL_INFO; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCSkillInfoPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		return SlayerSkillInfo::getMaxSize();
 	}

@@ -24,10 +24,10 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_CG_DELETE_SMS_ADDRESS; }
-	PacketSize_t getPacketSize() const throw() { return szDWORD; }
-	string getPacketName() const throw() { return "CGDeleteSMSAddress"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_CG_DELETE_SMS_ADDRESS; }
+	PacketSize_t getPacketSize()  { return szDWORD; }
+	string getPacketName()  { return "CGDeleteSMSAddress"; }
+	string toString() ;
 	
 public:
 	DWORD	getElementID() const { return m_ElementID; }
@@ -45,9 +45,9 @@ class CGDeleteSMSAddressFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new CGDeleteSMSAddress(); }
-	string getPacketName() const throw() { return "CGDeleteSMSAddress"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_DELETE_SMS_ADDRESS; }
-	PacketSize_t getPacketMaxSize() const throw() { return szDWORD; }
+	string getPacketName()  { return "CGDeleteSMSAddress"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_DELETE_SMS_ADDRESS; }
+	PacketSize_t getPacketMaxSize()  { return szDWORD; }
 };
 
 //////////////////////////////////////////////////////////////////////////////

@@ -53,11 +53,11 @@ public :
 	string toString () const throw ();
 
 	// get/set Name
-	string getName() const throw() { return m_Name; }
+	string getName()  { return m_Name; }
 	void setName( const string& name ) throw() { m_Name = name; }
 
 	// get/set Value
-	string getValue() const throw() { return m_Value; }
+	string getValue()  { return m_Value; }
 	void setValue( const string& value ) throw() { m_Value = value; }
 
 private :

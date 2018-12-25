@@ -19,7 +19,7 @@ public:
 	EffectObservingEye(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_OBSERVING_EYE; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_OBSERVING_EYE; }
 
 	void affect() throw(Error) {}
 	void affect(Creature* pCreature) throw(Error);
@@ -32,7 +32,7 @@ public:
 
 	bool canSeeInvisibility( Creature* pTarget ) const throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	int getDamageBonus(void) const { return m_DamageBonus; }

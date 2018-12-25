@@ -38,19 +38,19 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_CREATURE_DIED; }
+	PacketID_t getPacketID()  { return PACKET_GC_CREATURE_DIED; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szObjectID; }
+	PacketSize_t getPacketSize()  { return szObjectID; }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCCreatureDied"; }
+	string getPacketName()  { return "GCCreatureDied"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get/set dead creature's creature id
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(const ObjectID_t & creatureID) throw() { m_ObjectID = creatureID; }
 	
 
@@ -78,15 +78,15 @@ public :
 	Packet* createPacket() throw() { return new GCCreatureDied(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCCreatureDied"; }
+	string getPacketName()  { return "GCCreatureDied"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_CREATURE_DIED; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_CREATURE_DIED; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCCreatureDiedPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID; }
 
 };
 

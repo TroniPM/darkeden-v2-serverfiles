@@ -20,10 +20,10 @@
 class ActionRestore : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_RESTORE; }
+	virtual ActionType_t getActionType()  { return ACTION_RESTORE; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 private :
 
@@ -36,9 +36,9 @@ private :
 class ActionRestoreFactory : public ActionFactory 
 {
 public:
-    virtual ActionType_t getActionType() const throw() { return Action::ACTION_RESTORE; }
-    virtual Action* createAction() const throw() { return new ActionRestore(); }
-    virtual string getActionName() const throw() { return "Restore"; }
+    virtual ActionType_t getActionType()  { return Action::ACTION_RESTORE; }
+    virtual Action* createAction()  { return new ActionRestore(); }
+    virtual string getActionName()  { return "Restore"; }
 
 };
 

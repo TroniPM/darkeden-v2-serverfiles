@@ -20,10 +20,10 @@
 class ActionShowConfirmGetEventItemDialog : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_SHOW_CONFIRM_GET_EVENT_ITEM_DIALOG; }
+	virtual ActionType_t getActionType()  { return ACTION_SHOW_CONFIRM_GET_EVENT_ITEM_DIALOG; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 private:
 	string m_Type;
@@ -36,9 +36,9 @@ private:
 class ActionShowConfirmGetEventItemDialogFactory : public ActionFactory 
 {
 public:
-    virtual ActionType_t getActionType() const throw() { return Action::ACTION_SHOW_CONFIRM_GET_EVENT_ITEM_DIALOG; }
-	virtual string getActionName() const throw() { return "ShowConfirmGetEventItemDialog"; }
-    virtual Action* createAction() const throw() { return new ActionShowConfirmGetEventItemDialog(); }
+    virtual ActionType_t getActionType()  { return Action::ACTION_SHOW_CONFIRM_GET_EVENT_ITEM_DIALOG; }
+	virtual string getActionName()  { return "ShowConfirmGetEventItemDialog"; }
+    virtual Action* createAction()  { return new ActionShowConfirmGetEventItemDialog(); }
 };
 
 #endif

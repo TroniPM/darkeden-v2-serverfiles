@@ -20,8 +20,8 @@ public:
 	~AllysterWind() throw() {}
 	
 public:
-	string getSkillHandlerName() const throw() { return "AllysterWind"; }
-	SkillType_t getSkillType() const throw() { return SKILL_ALLYSTER_WIND; }
+	string getSkillHandlerName()  { return "AllysterWind"; }
+	SkillType_t getSkillType()  { return SKILL_ALLYSTER_WIND; }
 
 	void execute(Ousters* pSlayer,  OustersSkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

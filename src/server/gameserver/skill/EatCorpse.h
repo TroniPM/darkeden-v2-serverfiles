@@ -20,8 +20,8 @@ public:
 	~EatCorpse() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "EatCorpse"; }
-	SkillType_t getSkillType() const throw() { return SKILL_EAT_CORPSE; }
+    string getSkillHandlerName()  { return "EatCorpse"; }
+	SkillType_t getSkillType()  { return SKILL_EAT_CORPSE; }
 
 	void execute(Vampire* pVampire, ZoneCoord_t X, ZoneCoord_t Y,  VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
 

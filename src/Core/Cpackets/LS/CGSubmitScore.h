@@ -46,16 +46,16 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_SUBMIT_SCORE; }
+	PacketID_t getPacketID()  { return PACKET_CG_SUBMIT_SCORE; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szBYTE + szBYTE + szWORD; }
+	PacketSize_t getPacketSize()  { return szBYTE + szBYTE + szWORD; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGSubmitScore"; }
+	string getPacketName()  { return "CGSubmitScore"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public:
 	BYTE	getGameType() const { return m_GameType; }
@@ -98,13 +98,13 @@ public:
 	Packet* createPacket() throw() { return new CGSubmitScore(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGSubmitScore"; }
+	string getPacketName()  { return "CGSubmitScore"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_SUBMIT_SCORE; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_SUBMIT_SCORE; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + szBYTE + szWORD; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + szBYTE + szWORD; }
 
 };
 

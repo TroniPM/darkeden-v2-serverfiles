@@ -46,15 +46,15 @@ public:
 
 public:
 	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 
 	void setItemType(ItemType_t ItemType) throw() { m_ItemType = ItemType; }
-	ItemType_t getItemType() const throw() { return m_ItemType; }
+	ItemType_t getItemType()  { return m_ItemType; }
 
 	void addOptionType(OptionType_t OptionType) throw() { m_OptionType.push_back( OptionType ); }
 	void setOptionType(const list<OptionType_t>& OptionType) throw() { m_OptionType = OptionType; }
-	int getOptionTypeSize() const throw()	{ return m_OptionType.size(); }
-	const list<OptionType_t>& getOptionType() const throw() { return m_OptionType; }
+	int getOptionTypeSize() 	{ return m_OptionType.size(); }
+	const list<OptionType_t>& getOptionType()  { return m_OptionType; }
 	OptionType_t popOptionType() throw()
 	{
 		if (m_OptionType.empty()) return 0;
@@ -64,7 +64,7 @@ public:
 	}
 
 public:
-	BYTE getListNum() const throw() { return m_ListNum; }
+	BYTE getListNum()  { return m_ListNum; }
 	void setListNum(BYTE ListNum) throw() { m_ListNum = ListNum; }
 
 	void addListElement(RideMotorcycleSlotInfo* pRideMotorcycleSlotInfo) throw() { m_RideMotorcycleSlotInfoList.push_back(pRideMotorcycleSlotInfo); }

@@ -20,9 +20,9 @@ public:
 	~EventRefreshHolyLandPlayer() throw() {}
 			
 public:
-	virtual EventClass getEventClass() const throw() { return EVENT_CLASS_REFRESH_HOLY_LAND_PLAYER; }
+	virtual EventClass getEventClass()  { return EVENT_CLASS_REFRESH_HOLY_LAND_PLAYER; }
 	virtual void activate() throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 private:
 };

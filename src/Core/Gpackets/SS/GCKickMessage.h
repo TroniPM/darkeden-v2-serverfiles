@@ -51,23 +51,23 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_KICK_MESSAGE; }
+	PacketID_t getPacketID()  { return PACKET_GC_KICK_MESSAGE; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szBYTE + szuint; }
+	PacketSize_t getPacketSize()  { return szBYTE + szuint; }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCKickMessage"; }
+	string getPacketName()  { return "GCKickMessage"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get/set Kick Message Type
-	BYTE getType() const throw() { return m_Type; }
+	BYTE getType()  { return m_Type; }
 	void setType( BYTE type ) throw() { m_Type = (KickMessageType)type; }
 
 	// get/set seconds
-	uint getSeconds() const throw() { return m_Seconds; }
+	uint getSeconds()  { return m_Seconds; }
 	void setSeconds( uint seconds ) throw() { m_Seconds = seconds; }
 
 private :
@@ -95,15 +95,15 @@ public :
 	Packet* createPacket() throw() { return new GCKickMessage(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCKickMessage"; }
+	string getPacketName()  { return "GCKickMessage"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_KICK_MESSAGE; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_KICK_MESSAGE; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCKickMessagePacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + szuint; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + szuint; }
 
 };
 

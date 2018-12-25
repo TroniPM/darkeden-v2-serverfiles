@@ -33,21 +33,21 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_LOADING_READY; }
+	PacketID_t getPacketID()  { return PACKET_CG_LOADING_READY; }
 	
 	// get packet body size
 	// *OPTIMIZATION HINT*
 	// const static CGLoadingReadyPacketSize 를 정의, 리턴하라.
-	PacketSize_t getPacketSize() const throw() { return szBYTE; }
+	PacketSize_t getPacketSize()  { return szBYTE; }
 	
 	// get packet's name
-	string getPacketName() const throw() { return "CGLoadingReady"; }
+	string getPacketName()  { return "CGLoadingReady"; }
 	
 	// get packet's debug string
-	string toString() const throw() { return "CGLoadingReady"; }
+	string toString()  { return "CGLoadingReady"; }
 
 public:
-	BYTE getType() const throw()  { return m_Type; }
+	BYTE getType()   { return m_Type; }
 	void setType(BYTE Type) throw() { m_Type = Type; }
 
 private:
@@ -71,13 +71,13 @@ public:
 	Packet* createPacket() throw() { return new CGLoadingReady(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGLoadingReady"; }
+	string getPacketName()  { return "CGLoadingReady"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_LOADING_READY; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_LOADING_READY; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE; }
 	
 };
 

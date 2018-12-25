@@ -30,7 +30,7 @@ public:
 	virtual ~InfoClassManager() throw();
 
 public:
-	virtual Item::ItemClass getItemClass() const throw() = 0;
+	virtual Item::ItemClass getItemClass()  = 0;
 	
 	void init() throw(Error);
 	void reload() throw(Error);
@@ -39,7 +39,7 @@ public:
 
 	void addItemInfo(ItemInfo* pItemInfo) throw(DuplicatedException, Error);
 	ItemInfo* getItemInfo(ItemType_t ItemType) const throw(NoSuchElementException, Error);
-	uint getInfoCount() const throw() { return m_InfoCount + 1; }
+	uint getInfoCount()  { return m_InfoCount + 1; }
 
 	void removeAllItemInfo() throw(Error);
 
@@ -49,7 +49,7 @@ public:
 	Price_t		getAveragePrice() const 	{ return m_AveragePrice; }
 
 
-	string toString() const throw();
+	string toString() ;
 
 protected:
 	uint       m_InfoCount;  // #아이템정보

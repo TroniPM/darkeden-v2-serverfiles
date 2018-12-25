@@ -29,15 +29,15 @@ public:
 	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) throw(Error);
 	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
 	void tinysave(const char* field) const throw (Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	static void initItemIDRegistry(void) throw();
 
 public:
-	virtual ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_MOON_CARD; }
-	virtual string getObjectTableName() const throw() { return "MoonCardObject"; }
+	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_MOON_CARD; }
+	virtual string getObjectTableName()  { return "MoonCardObject"; }
 
-	virtual ItemType_t getItemType() const throw() { return m_ItemType; }
+	virtual ItemType_t getItemType()  { return m_ItemType; }
 	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() const throw(Error);
@@ -45,10 +45,10 @@ public:
 	virtual Weight_t getWeight() const throw(Error);
 
 public:
-	virtual ItemNum_t getNum() const throw() { return m_Num; }
+	virtual ItemNum_t getNum()  { return m_Num; }
 	virtual void setNum(ItemNum_t Num) throw() { m_Num = Num; }
 
-	bool    isStackable() const throw() { return true; }
+	bool    isStackable()  { return true; }
 
 private:
 	ItemType_t m_ItemType;
@@ -65,8 +65,8 @@ private:
 class MoonCardInfo : public ItemInfo 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_MOON_CARD; }
-	virtual string toString() const throw();
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_MOON_CARD; }
+	virtual string toString() ;
 };
 
 //////////////////////////////////////////////////////////////////////////////
@@ -76,7 +76,7 @@ public:
 class MoonCardInfoManager : public InfoClassManager 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_MOON_CARD; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_MOON_CARD; }
 	virtual void load() throw(Error);
 };
 
@@ -89,8 +89,8 @@ extern MoonCardInfoManager* g_pMoonCardInfoManager;
 class MoonCardFactory : public ItemFactory 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_MOON_CARD; }
-	virtual string getItemClassName() const throw() { return "MoonCard"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_MOON_CARD; }
+	virtual string getItemClassName()  { return "MoonCard"; }
 	
 public:
 	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new MoonCard(ItemType,OptionType,1); }
@@ -103,8 +103,8 @@ public:
 class MoonCardLoader : public ItemLoader 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_MOON_CARD; }
-	virtual string getItemClassName() const throw() { return "MoonCard"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_MOON_CARD; }
+	virtual string getItemClassName()  { return "MoonCard"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

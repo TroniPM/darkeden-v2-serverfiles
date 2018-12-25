@@ -34,16 +34,16 @@ public:
 
 
 public:
-	virtual ItemClass getItemClass() const throw() { return ITEM_CLASS_CORPSE; }
+	virtual ItemClass getItemClass()  { return ITEM_CLASS_CORPSE; }
 
-	virtual ItemType_t getItemType() const throw() { return SLAYER_CORPSE; }
+	virtual ItemType_t getItemType()  { return SLAYER_CORPSE; }
 	virtual void setItemType(ItemType_t itemType) throw() { throw UnsupportedError(__PRETTY_FUNCTION__); }
 
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 	PCSlayerInfo3 & getSlayerInfo() throw() { return m_SlayerInfo; }
-	const PCSlayerInfo3 & getSlayerInfo() const throw() { return m_SlayerInfo; }
+	const PCSlayerInfo3 & getSlayerInfo()  { return m_SlayerInfo; }
 	void setSlayerInfo(const PCSlayerInfo3 & slayerInfo) throw() { m_SlayerInfo = slayerInfo; }
 
 	void setXY(ZoneCoord_t X, ZoneCoord_t Y) { m_SlayerInfo.setX(X); m_SlayerInfo.setY(Y); }

@@ -3486,7 +3486,7 @@ void Slayer::sendSlayerSkillInfo()
 
 
 EffectInfo* Slayer::getEffectInfo()
-	const throw()
+	
 {
 	EffectInfo* pEffectInfo = m_pEffectManager->getEffectInfo();
 	return pEffectInfo;
@@ -4739,7 +4739,7 @@ bool Slayer::isPayPlayAvaiable()
 	__END_CATCH
 }
 
-QuestGrade_t Slayer::getQuestGrade() const throw() { return getTotalAttr( ATTR_BASIC ) - getSkillDomainLevel(SKILL_DOMAIN_HEAL)*1.5 - getSkillDomainLevel(SKILL_DOMAIN_ENCHANT)*1.5; }
+QuestGrade_t Slayer::getQuestGrade()  { return getTotalAttr( ATTR_BASIC ) - getSkillDomainLevel(SKILL_DOMAIN_HEAL)*1.5 - getSkillDomainLevel(SKILL_DOMAIN_ENCHANT)*1.5; }
 
 // 순수 능력치 합이 40 미만이면 초보(Novice) 이다.
 bool Slayer::isNovice() const

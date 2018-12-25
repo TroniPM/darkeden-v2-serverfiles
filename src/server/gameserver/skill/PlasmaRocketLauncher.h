@@ -20,8 +20,8 @@ public:
 	~PlasmaRocketLauncher() throw() {}
 
 public:
-    string getSkillHandlerName() const throw() { return "PlasmaRocketLauncher"; }
-	SkillType_t getSkillType() const throw() { return SKILL_PLASMA_ROCKET_LAUNCHER; }
+    string getSkillHandlerName()  { return "PlasmaRocketLauncher"; }
+	SkillType_t getSkillType()  { return SKILL_PLASMA_ROCKET_LAUNCHER; }
 
 	void execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

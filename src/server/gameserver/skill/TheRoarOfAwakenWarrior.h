@@ -20,8 +20,8 @@ public:
 	~TheRoarOfAwakenWarrior() throw() {}
 	
 public :
-    string getSkillHandlerName() const throw() { return "TheRoarOfAwakenWarrior"; }
-	SkillType_t getSkillType() const throw() { return SKILL_THE_ROAR_OF_AWAKEN_WARRIOR; }
+    string getSkillHandlerName()  { return "TheRoarOfAwakenWarrior"; }
+	SkillType_t getSkillType()  { return SKILL_THE_ROAR_OF_AWAKEN_WARRIOR; }
 
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

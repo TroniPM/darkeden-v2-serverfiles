@@ -28,10 +28,10 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_FLAG_WAR_STATUS; }
-	PacketSize_t getPacketSize() const throw() { return szWORD + szBYTE*3; }
-	string getPacketName() const throw() { return "GCFlagWarStatus"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_FLAG_WAR_STATUS; }
+	PacketSize_t getPacketSize()  { return szWORD + szBYTE*3; }
+	string getPacketName()  { return "GCFlagWarStatus"; }
+	string toString() ;
 
 public:
 	WORD	getTimeRemain() const { return m_TimeRemain; }
@@ -58,9 +58,9 @@ public :
 	
 public:
 	Packet* createPacket() throw() { return new GCFlagWarStatus(); }
-	string getPacketName() const throw() { return "GCFlagWarStatus"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_FLAG_WAR_STATUS; }
-	PacketSize_t getPacketMaxSize() const throw() { return szWORD + szBYTE * 3; }
+	string getPacketName()  { return "GCFlagWarStatus"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_FLAG_WAR_STATUS; }
+	PacketSize_t getPacketMaxSize()  { return szWORD + szBYTE * 3; }
 };
 
 //////////////////////////////////////////////////////////////////////////////

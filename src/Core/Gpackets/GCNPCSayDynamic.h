@@ -21,15 +21,15 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_NPC_SAY_DYNAMIC; }
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szBYTE + m_Message.size(); }
-	string getPacketName() const throw() { return "GCNPCSayDynamic"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_NPC_SAY_DYNAMIC; }
+	PacketSize_t getPacketSize()  { return szObjectID + szBYTE + m_Message.size(); }
+	string getPacketName()  { return "GCNPCSayDynamic"; }
+	string toString() ;
 
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(const ObjectID_t & creatureID) throw() { m_ObjectID = creatureID; }
 
-	string getMessage() const throw() { return m_Message; }
+	string getMessage()  { return m_Message; }
 	void setMessage(const string & msg) throw() { m_Message = msg; }
 
 private:
@@ -48,9 +48,9 @@ class GCNPCSayDynamicFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCNPCSayDynamic(); }
-	string getPacketName() const throw() { return "GCNPCSayDynamic"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_NPC_SAY_DYNAMIC; }
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szBYTE + 2048 ; }
+	string getPacketName()  { return "GCNPCSayDynamic"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_NPC_SAY_DYNAMIC; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szBYTE + 2048 ; }
 };
 
 

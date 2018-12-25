@@ -20,8 +20,8 @@ public:
 	~LandMineExplosion() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "LandMineExplosion"; }
-	SkillType_t getSkillType() const throw() { return SKILL_LAND_MINE_EXPLOSION; }
+    string getSkillHandlerName()  { return "LandMineExplosion"; }
+	SkillType_t getSkillType()  { return SKILL_LAND_MINE_EXPLOSION; }
 
 	void execute(Monster* pMonster) throw(Error);
 

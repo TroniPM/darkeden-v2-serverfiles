@@ -26,10 +26,10 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_SKILL_FAILED_1; }
-	PacketSize_t getPacketSize() const throw() { return szSkillType + szBYTE + ModifyInfo::getPacketSize(); }
-	string getPacketName() const throw() { return "GCSkillFailed1"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_SKILL_FAILED_1; }
+	PacketSize_t getPacketSize()  { return szSkillType + szBYTE + ModifyInfo::getPacketSize(); }
+	string getPacketName()  { return "GCSkillFailed1"; }
+	string toString() ;
 
 public:
 	SkillType_t getSkillType(void) const { return m_SkillType; }
@@ -60,9 +60,9 @@ public:
 	
 public:
 	Packet* createPacket() throw() { return new GCSkillFailed1(); }
-	string getPacketName() const throw() { return "GCSkillFailed1"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_SKILL_FAILED_1; }
-	PacketSize_t getPacketMaxSize() const throw() { return szSkillType + szBYTE + ModifyInfo::getPacketMaxSize(); }
+	string getPacketName()  { return "GCSkillFailed1"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_SKILL_FAILED_1; }
+	PacketSize_t getPacketMaxSize()  { return szSkillType + szBYTE + ModifyInfo::getPacketMaxSize(); }
 };
 
 

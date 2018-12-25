@@ -20,8 +20,8 @@ public:
 	~CutStorm() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "CutStorm"; }
-	SkillType_t getSkillType() const throw() { return SKILL_Cut_Storm; }
+    string getSkillHandlerName()  { return "CutStorm"; }
+	SkillType_t getSkillType()  { return SKILL_Cut_Storm; }
 
 	void execute(Slayer* pSlayer, ObjectID_t targetObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Slayer* pSlayer, ZoneCoord_t X, ZoneCoord_t Y,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);

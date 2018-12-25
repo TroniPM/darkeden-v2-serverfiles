@@ -22,8 +22,8 @@ public:
 public:
 	//virtual Item* createItem(ItemType_t ItemType, OptionType_t OptionType) throw() = 0;
 	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() = 0;
-	virtual Item::ItemClass getItemClass() const throw() = 0;
-	virtual string getItemClassName() const throw() = 0;
+	virtual Item::ItemClass getItemClass()  = 0;
+	virtual string getItemClassName()  = 0;
 };
 
 #endif

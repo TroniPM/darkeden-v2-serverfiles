@@ -28,70 +28,70 @@ public:
 	~MasterLairInfo();
 
 public:
-	ZoneID_t getZoneID() const throw() { return m_ZoneID; }
+	ZoneID_t getZoneID()  { return m_ZoneID; }
 	void setZoneID(ZoneID_t zoneID) throw() { m_ZoneID = zoneID; }
 
-	MonsterType_t getMasterNotReadyMonsterType() const throw() { return m_MasterNotReadyMonsterType; }
+	MonsterType_t getMasterNotReadyMonsterType()  { return m_MasterNotReadyMonsterType; }
 	void setMasterNotReadyMonsterType(MonsterType_t mt) throw() { m_MasterNotReadyMonsterType = mt; }
 
-	MonsterType_t getMasterMonsterType() const throw() { return m_MasterMonsterType; }
+	MonsterType_t getMasterMonsterType()  { return m_MasterMonsterType; }
 	void setMasterMonsterType(MonsterType_t mt) throw() { m_MasterMonsterType = mt; }
 	
-	bool isMasterRemainNotReady() const throw() { return m_MasterRemainNotReady; }
+	bool isMasterRemainNotReady()  { return m_MasterRemainNotReady; }
 	void setMasterRemainNotReady(bool toCorpse=true) throw() { m_MasterRemainNotReady = toCorpse; }
 
-	ZoneCoord_t getMasterX() const throw() { return m_MasterX; }
+	ZoneCoord_t getMasterX()  { return m_MasterX; }
 	void setMasterX(ZoneCoord_t x) throw() { m_MasterX = x; }
 
-	ZoneCoord_t getMasterY() const throw() { return m_MasterY; }
+	ZoneCoord_t getMasterY()  { return m_MasterY; }
 	void setMasterY(ZoneCoord_t y) throw() { m_MasterY = y; }
 
-	Dir_t getMasterDir() const throw() { return m_MasterDir; }
+	Dir_t getMasterDir()  { return m_MasterDir; }
 	void setMasterDir(Dir_t dir) throw() { m_MasterDir = dir; }
 
-	int  getMaxPassPlayer() const throw() { return m_MaxPassPlayer; }
+	int  getMaxPassPlayer()  { return m_MaxPassPlayer; }
 	void setMaxPassPlayer(int mp) throw() { m_MaxPassPlayer = mp; }
 
-	//int  getMaxSummonMonster() const throw() { return m_MasterMonsterType; }
+	//int  getMaxSummonMonster()  { return m_MasterMonsterType; }
 	//void setMaxSummonMonster(int mt) throw() { m_MasterMonsterType = mt; }
 
-	ZoneCoord_t  getSummonX() const throw() { return m_SummonX; }
+	ZoneCoord_t  getSummonX()  { return m_SummonX; }
 	void setSummonX(ZoneCoord_t x) throw() { m_SummonX = x; }
 
-	ZoneCoord_t  getSummonY() const throw() { return m_SummonY; }
+	ZoneCoord_t  getSummonY()  { return m_SummonY; }
 	void setSummonY(ZoneCoord_t y) throw() { m_SummonY = y; }
 
-	int  getFirstRegenDelay() const throw() { return m_FirstRegenDelay; }
+	int  getFirstRegenDelay()  { return m_FirstRegenDelay; }
 	void setFirstRegenDelay(int delay) throw() { m_FirstRegenDelay = delay; }
 
-	int  getRegenDelay() const throw() { return m_RegenDelay; }
+	int  getRegenDelay()  { return m_RegenDelay; }
 	void setRegenDelay(int delay) throw() { m_RegenDelay = delay; }
 
-	int  getStartDelay() const throw() { return m_StartDelay; }
+	int  getStartDelay()  { return m_StartDelay; }
 	void setStartDelay(int delay) throw() { m_StartDelay = delay; }
 
-	int  getEndDelay() const throw() { return m_EndDelay; }
+	int  getEndDelay()  { return m_EndDelay; }
 	void setEndDelay(int delay) throw() { m_EndDelay = delay; }
 
-	int  getKickOutDelay() const throw() { return m_KickOutDelay; }
+	int  getKickOutDelay()  { return m_KickOutDelay; }
 	void setKickOutDelay(int delay) throw() { m_KickOutDelay = delay; }
 
-	ZoneID_t  getKickZoneID() const throw() { return m_KickZoneID; }
+	ZoneID_t  getKickZoneID()  { return m_KickZoneID; }
 	void setKickZoneID(ZoneID_t zoneID) throw() { m_KickZoneID = zoneID; }
 
-	ZoneCoord_t  getKickZoneX() const throw() { return m_KickZoneX; }
+	ZoneCoord_t  getKickZoneX()  { return m_KickZoneX; }
 	void setKickZoneX(ZoneCoord_t x) throw() { m_KickZoneX = x; }
 
-	ZoneCoord_t  getKickZoneY() const throw() { return m_KickZoneY; }
+	ZoneCoord_t  getKickZoneY()  { return m_KickZoneY; }
 	void setKickZoneY(ZoneCoord_t y) throw() { m_KickZoneY = y; }
 
-	int  getLairAttackTick() const throw() { return m_LairAttackTick; }
+	int  getLairAttackTick()  { return m_LairAttackTick; }
 	void setLairAttackTick(int t) throw() { m_LairAttackTick = t; }
 
-	int  getLairAttackMinNumber() const throw() { return m_LairAttackMinNumber; }
+	int  getLairAttackMinNumber()  { return m_LairAttackMinNumber; }
 	void setLairAttackMinNumber(int t) throw() { m_LairAttackMinNumber = t; }
 
-	int  getLairAttackMaxNumber() const throw() { return m_LairAttackMaxNumber; }
+	int  getLairAttackMaxNumber()  { return m_LairAttackMaxNumber; }
 	void setLairAttackMaxNumber(int t) throw() { m_LairAttackMaxNumber = t; }
 
 	void setSayText(vector<string>& sayWords, const string& text) throw();
@@ -100,12 +100,12 @@ public:
 	void setMasterDeadVampireSay(const string& text) throw();
 	void setMasterNotDeadSay(const string& text) throw();
 
-	const string& getRandomMasterSummonSay() const throw();
-	const string& getRandomMasterDeadSlayerSay() const throw();
-	const string& getRandomMasterDeadVampireSay() const throw();
-	const string& getRandomMasterNotDeadSay() const throw();
+	const string& getRandomMasterSummonSay() ;
+	const string& getRandomMasterDeadSlayerSay() ;
+	const string& getRandomMasterDeadVampireSay() ;
+	const string& getRandomMasterNotDeadSay() ;
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	ZoneID_t       m_ZoneID;                    // 존 아이디
@@ -167,7 +167,7 @@ public:
 	MasterLairInfo* getMasterLairInfo(ZoneID_t zoneID) throw(NoSuchElementException);
 	int  size() const	{ return m_MasterLairInfos.size(); }
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	hash_map<ZoneID_t, MasterLairInfo*> m_MasterLairInfos; // zone info 의 해쉬맵

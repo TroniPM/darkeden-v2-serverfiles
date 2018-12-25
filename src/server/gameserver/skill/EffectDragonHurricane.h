@@ -21,8 +21,8 @@ public:
 	EffectDragonHurricane(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_DRAGON_HURRICANE; }
-	EffectClass getSendEffectClass() const throw() { return EFFECT_CLASS_DRAGON_HURRICANE; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_DRAGON_HURRICANE; }
+	EffectClass getSendEffectClass()  { return EFFECT_CLASS_DRAGON_HURRICANE; }
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
@@ -30,7 +30,7 @@ public:
 	void unaffect() throw(Error);
 	void unaffect(Creature* pCreature) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	ObjectID_t getUserOID(void) const { return m_UserOID; }

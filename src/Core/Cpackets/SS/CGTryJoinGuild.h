@@ -35,23 +35,23 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_TRY_JOIN_GUILD; }
+	PacketID_t getPacketID()  { return PACKET_CG_TRY_JOIN_GUILD; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szGuildID + szGuildMemberRank; }
+	PacketSize_t getPacketSize()  { return szGuildID + szGuildMemberRank; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGTryJoinGuild"; }
+	string getPacketName()  { return "CGTryJoinGuild"; }
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get/set Guild ID
-	GuildID_t getGuildID() const throw() { return m_GuildID; }
+	GuildID_t getGuildID()  { return m_GuildID; }
 	void setGuildID( GuildID_t GuildID ) throw() { m_GuildID = GuildID; }
 
 	// get/set Guild Member Rank
-	GuildMemberRank_t getGuildMemberRank() const throw() { return m_GuildMemberRank; }
+	GuildMemberRank_t getGuildMemberRank()  { return m_GuildMemberRank; }
 	void setGuildMemberRank( GuildMemberRank_t GuildMemberRank ) throw() { m_GuildMemberRank = GuildMemberRank; }
 
 
@@ -91,13 +91,13 @@ public:
 	Packet* createPacket() throw() { return new CGTryJoinGuild(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGTryJoinGuild"; }
+	string getPacketName()  { return "CGTryJoinGuild"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_TRY_JOIN_GUILD; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_TRY_JOIN_GUILD; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szGuildID + szGuildMemberRank; }
+	PacketSize_t getPacketMaxSize()  { return szGuildID + szGuildMemberRank; }
 };
 
 

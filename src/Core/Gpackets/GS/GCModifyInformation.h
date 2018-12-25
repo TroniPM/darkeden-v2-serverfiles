@@ -21,8 +21,8 @@ class GCModifyInformation : public ModifyInfo
 {
 public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_MODIFY_INFORMATION; }
-	string getPacketName() const throw() { return "GCModifyInformation"; }
+	PacketID_t getPacketID()  { return PACKET_GC_MODIFY_INFORMATION; }
+	string getPacketName()  { return "GCModifyInformation"; }
 };
 
 
@@ -34,9 +34,9 @@ class GCModifyInformationFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCModifyInformation(); }
-	string getPacketName() const throw() { return "GCModifyInformation"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_MODIFY_INFORMATION; }
-	PacketSize_t getPacketMaxSize() const throw() { return ModifyInfo::getPacketMaxSize(); }
+	string getPacketName()  { return "GCModifyInformation"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_MODIFY_INFORMATION; }
+	PacketSize_t getPacketMaxSize()  { return ModifyInfo::getPacketMaxSize(); }
 };
 
 

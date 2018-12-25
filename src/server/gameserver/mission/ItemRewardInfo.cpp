@@ -175,7 +175,7 @@ QuestMessage ItemRewardInfo::giveReward( PlayerCreature *pPC ) const
 	__END_CATCH
 }*/
 
-string ItemRewardInfo::toString() const throw()
+string ItemRewardInfo::toString() 
 {
 	__BEGIN_TRY
 

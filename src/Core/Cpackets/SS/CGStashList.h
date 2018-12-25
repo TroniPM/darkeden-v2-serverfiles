@@ -25,10 +25,10 @@ public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_CG_STASH_LIST; }
-	PacketSize_t getPacketSize() const throw() { return szObjectID; }
-	string getPacketName() const throw() { return "CGStashList"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_CG_STASH_LIST; }
+	PacketSize_t getPacketSize()  { return szObjectID; }
+	string getPacketName()  { return "CGStashList"; }
+	string toString() ;
 
 public:
 	ObjectID_t getObjectID() throw() { return m_ObjectID; }
@@ -52,9 +52,9 @@ class CGStashListFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new CGStashList(); }
-	string getPacketName() const throw() { return "CGStashList"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_STASH_LIST; }
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID; }
+	string getPacketName()  { return "CGStashList"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_STASH_LIST; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID; }
 
 };
 

@@ -45,32 +45,32 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_THROW_ITEM; }
+	PacketID_t getPacketID()  { return PACKET_CG_THROW_ITEM; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szObjectID + szCoordInven + szCoordInven; }
+	PacketSize_t getPacketSize()  { return szObjectID + szObjectID + szCoordInven + szCoordInven; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGThrowItem"; }
+	string getPacketName()  { return "CGThrowItem"; }
 
 	// get/set ItemObjectID
-	ObjectID_t getObjectID() const throw()  { return m_ObjectID; }
+	ObjectID_t getObjectID()   { return m_ObjectID; }
 	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
 
 	// get / set TargetObjectID
-	ObjectID_t getTargetObjectID() const throw()  { return m_TargetObjectID; }
+	ObjectID_t getTargetObjectID()   { return m_TargetObjectID; }
 	void setTargetObjectID(ObjectID_t TargetObjectID) throw() { m_TargetObjectID = TargetObjectID; }
 
 	// get/set InvenX
-	CoordInven_t getX() const throw() { return m_InvenX; }
+	CoordInven_t getX()  { return m_InvenX; }
 	void setX(CoordInven_t InvenX) throw() { m_InvenX = InvenX; }
 
 	// get/set InvenY
-	CoordInven_t getY() const throw() { return m_InvenY; }
+	CoordInven_t getY()  { return m_InvenY; }
 	void setY(CoordInven_t InvenY) throw() { m_InvenY = InvenY; }
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 private :
 
@@ -112,13 +112,13 @@ public:
 	Packet* createPacket() throw() { return new CGThrowItem(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGThrowItem"; }
+	string getPacketName()  { return "CGThrowItem"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_THROW_ITEM; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_THROW_ITEM; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szObjectID + szCoordInven + szCoordInven; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szObjectID + szCoordInven + szCoordInven; }
 };
 
 

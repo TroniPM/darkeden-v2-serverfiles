@@ -18,7 +18,7 @@ public:
 	EffectRelicPosition(Item* pItem) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_RELIC_POSITION; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_RELIC_POSITION; }
 
 	void affect() throw(Error);
 	void affect(Item* pItem) throw(Error);
@@ -26,7 +26,7 @@ public:
 	void unaffect() throw(Error); 
 	void unaffect(Item* pItem) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	int getTick(void) const { return m_Tick; }

@@ -29,7 +29,7 @@ public:
 
 	const LuckInfo& getLuckInfo(int level) const throw (Error);
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	vector<int>	m_ItemTypeUpgradeRatio[3];

@@ -20,8 +20,8 @@ public:
 	~SummonGoreGland() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "SummonGoreGland"; }
-	SkillType_t getSkillType() const throw() { return SKILL_SUMMON_GORE_GLAND; }
+    string getSkillHandlerName()  { return "SummonGoreGland"; }
+	SkillType_t getSkillType()  { return SKILL_SUMMON_GORE_GLAND; }
 
 	void execute(Vampire* pVampire, ZoneCoord_t X, ZoneCoord_t Y,  VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Vampire* pVampire, ObjectID_t,  VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);

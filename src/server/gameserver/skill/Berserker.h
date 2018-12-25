@@ -20,8 +20,8 @@ public:
 	~Berserker() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Berserker"; }
-	SkillType_t getSkillType() const throw() { return SKILL_BERSERKER; }
+    string getSkillHandlerName()  { return "Berserker"; }
+	SkillType_t getSkillType()  { return SKILL_BERSERKER; }
 
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

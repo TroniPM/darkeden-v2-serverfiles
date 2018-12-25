@@ -22,8 +22,8 @@ public:
 	virtual ~EffectLoader() {}
 
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() = 0;
-	virtual string getEffectClassName() const throw() = 0;
+	virtual Effect::EffectClass getEffectClass()  = 0;
+	virtual string getEffectClassName()  = 0;
 	virtual void load(Creature* pCreature) throw(Error) = 0;
 	virtual void load(Zone* pZone) throw(Error) { }
 };

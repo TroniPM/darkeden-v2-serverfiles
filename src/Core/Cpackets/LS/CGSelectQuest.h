@@ -35,19 +35,19 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_SELECT_QUEST; }
+	PacketID_t getPacketID()  { return PACKET_CG_SELECT_QUEST; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szQuestID + szObjectID; }
+	PacketSize_t getPacketSize()  { return szQuestID + szObjectID; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGSelectQuest"; }
+	string getPacketName()  { return "CGSelectQuest"; }
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get/set QuestID
-	QuestID_t getQuestID() const throw() { return m_QuestID; }
+	QuestID_t getQuestID()  { return m_QuestID; }
 	void setQuestID( QuestID_t QuestID ) throw() { m_QuestID = QuestID; }
 
 	ObjectID_t	getNPCObjectID() const { return m_NPCOID; }
@@ -89,13 +89,13 @@ public:
 	Packet* createPacket() throw() { return new CGSelectQuest(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGSelectQuest"; }
+	string getPacketName()  { return "CGSelectQuest"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_SELECT_QUEST; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_SELECT_QUEST; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szQuestID + szObjectID; }
+	PacketSize_t getPacketMaxSize()  { return szQuestID + szObjectID; }
 };
 
 

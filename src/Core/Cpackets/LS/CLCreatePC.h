@@ -56,12 +56,12 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CL_CREATE_PC; }
+	PacketID_t getPacketID()  { return PACKET_CL_CREATE_PC; }
 	
 	// get packet's body size
 	// *OPTIMIZATION HINT*
 	// const static CLCreatePCPacketSize 를 정의, 리턴하라.
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		return szBYTE + m_Name.size() 	// 이름
 			+ szSlot					// 슬랏
@@ -71,65 +71,65 @@ public:
 	}
 
 	// get packet's name
-	string getPacketName() const throw() { return "CLCreatePC"; }
+	string getPacketName()  { return "CLCreatePC"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public:
 
 	// get/set name
-	string getName() const throw() { return m_Name; }
+	string getName()  { return m_Name; }
 	void setName(string name) throw() { m_Name = name; }
 
 	// get/set slot
-	Slot getSlot() const throw() { return m_Slot; }
+	Slot getSlot()  { return m_Slot; }
 	void setSlot(Slot slot) throw() { m_Slot = slot; }
 
 	// get/set sex
-    Sex getSex() const throw() { return m_BitSet.test(SLAYER_BIT_SEX)?MALE:FEMALE; }
+    Sex getSex()  { return m_BitSet.test(SLAYER_BIT_SEX)?MALE:FEMALE; }
     void setSex(Sex sex) throw() { m_BitSet.set(SLAYER_BIT_SEX,(sex==MALE?true:false)); }
 
 	// get/set hair style
-	HairStyle getHairStyle() const throw() { return HairStyle((m_BitSet.to_ulong() >> 1) & 3); }
+	HairStyle getHairStyle()  { return HairStyle((m_BitSet.to_ulong() >> 1) & 3); }
 	void setHairStyle(HairStyle hairStyle) throw() { m_BitSet |= bitset<SLAYER_BIT_MAX>(hairStyle << 1); }
 
 	// get/set race. by sigi. 2002.10.31
-	//bool isSlayer() const throw() { return ((m_BitSet.to_ulong() >> 3) & 1)==0; }
+	//bool isSlayer()  { return ((m_BitSet.to_ulong() >> 3) & 1)==0; }
 	//void setSlayer(bool bSlayer=true) throw() { m_BitSet |= bitset<SLAYER_BIT_MAX>((int)(bSlayer==false) << 3); }
 
 	// get/set hair color
-	Color_t getHairColor() const throw() { return m_Colors[ SLAYER_COLOR_HAIR ]; }
+	Color_t getHairColor()  { return m_Colors[ SLAYER_COLOR_HAIR ]; }
 	void setHairColor(Color_t hairColor) throw() { m_Colors[ SLAYER_COLOR_HAIR ] = hairColor; }
 
 	// get/set skin color
-	Color_t getSkinColor() const throw() { return m_Colors[ SLAYER_COLOR_SKIN ]; }
+	Color_t getSkinColor()  { return m_Colors[ SLAYER_COLOR_SKIN ]; }
 	void setSkinColor(Color_t skinColor) throw() { m_Colors[ SLAYER_COLOR_SKIN ] = skinColor; }
 
 	// get/set shirt color
-	Color_t getShirtColor(ColorType colorType = MAIN_COLOR) const throw() { return m_Colors[ SLAYER_COLOR_SHIRT +(uint)colorType ]; }
+	Color_t getShirtColor(ColorType colorType = MAIN_COLOR)  { return m_Colors[ SLAYER_COLOR_SHIRT +(uint)colorType ]; }
 	void setShirtColor(Color_t shirtColor, ColorType colorType = MAIN_COLOR) throw() { m_Colors[ SLAYER_COLOR_SHIRT +(uint)colorType ] = shirtColor; }
 
 	// get/set jeans color
-	Color_t getJeansColor(ColorType colorType = MAIN_COLOR) const throw() { return m_Colors[ SLAYER_COLOR_JEANS +(uint)colorType ]; }
+	Color_t getJeansColor(ColorType colorType = MAIN_COLOR)  { return m_Colors[ SLAYER_COLOR_JEANS +(uint)colorType ]; }
 	void setJeansColor(Color_t jeansColor, ColorType colorType = MAIN_COLOR) throw() { m_Colors[ SLAYER_COLOR_JEANS +(uint)colorType ] = jeansColor; }
 
 	// get/set STR
-	Attr_t getSTR() const throw() { return m_STR; }
+	Attr_t getSTR()  { return m_STR; }
 	void setSTR(Attr_t str) throw() { m_STR = str; }
 	// get/set DEX
-	Attr_t getDEX() const throw() { return m_DEX; }
+	Attr_t getDEX()  { return m_DEX; }
 	void setDEX(Attr_t dex) throw() { m_DEX = dex; }
 	// get/set INT
-	Attr_t getINT() const throw() { return m_INT; }
+	Attr_t getINT()  { return m_INT; }
 	void setINT(Attr_t inte) throw() { m_INT = inte; }
 
 	// get/set Race
-	Race_t getRace() const throw() { return m_Race; }
+	Race_t getRace()  { return m_Race; }
 	void setRace( Race_t race ) throw() { m_Race = race; }
 
 	// get/set Domain
-	Race_t getDomainType() const throw() { return m_domaintype; }
+	Race_t getDomainType()  { return m_domaintype; }
 	void setDomainType( Race_t domaintype ) throw() { m_domaintype = domaintype; }
 
 
@@ -174,15 +174,15 @@ public:
 	Packet* createPacket() throw() { return new CLCreatePC(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CLCreatePC"; }
+	string getPacketName()  { return "CLCreatePC"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CL_CREATE_PC; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CL_CREATE_PC; }
 
 	// get packet's body size
 	// *OPTIMIZATION HINT*
 	// const static CLCreatePCPacketSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw()
+	PacketSize_t getPacketMaxSize() 
 	{ 
 		return szBYTE + 20 								// 이름
 			+ szSlot									// 슬랏

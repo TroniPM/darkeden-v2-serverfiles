@@ -3279,7 +3279,7 @@ void LocalPartyManager::shareGDRLairEnter(int PartyID, Creature* pLeader)
 	__END_CATCH
 }
 
-int LocalPartyManager::shareAdvancementExp(int PartyID, Creature* pLeader, int amount) const throw()
+int LocalPartyManager::shareAdvancementExp(int PartyID, Creature* pLeader, int amount) 
 {
 	__BEGIN_TRY
 

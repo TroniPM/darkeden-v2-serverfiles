@@ -260,7 +260,7 @@ public:
 	int  getEffectClassNum(void) const { return m_EffectClassNum;}
 	void setEffectClassNum(int EffectClassNum) { m_EffectClassNum = EffectClassNum;}
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	MonsterType_t      m_MonsterType;               // 몬스터 타입
@@ -354,7 +354,7 @@ public:
 	MonsterType_t	getRandomMonsterByClass( int minClass, int maxClass );
 
 	// get debug string
-	string toString() const throw();
+	string toString() ;
 
 protected :
 	void	clearTreasures();

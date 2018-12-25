@@ -20,7 +20,7 @@ public:
 	EffectCrossCounter(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_CROSS_COUNTER; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_CROSS_COUNTER; }
 
 	void affect() throw(Error){}
 	void affect(Creature* pCreature) throw(Error);
@@ -31,7 +31,7 @@ public:
 	void unaffect(Item* pItem) throw(Error) {}
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 
@@ -44,8 +44,8 @@ private:
 class EffectCrossCounterLoader : public EffectLoader 
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_CROSS_COUNTER; }
-	virtual string getEffectClassName() const throw() { return "EffectCrossCounter"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_CROSS_COUNTER; }
+	virtual string getEffectClassName()  { return "EffectCrossCounter"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error) {}

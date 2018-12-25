@@ -31,7 +31,7 @@ public:
 	Script* getScript(ScriptID_t scriptID) const throw(NoSuchElementException, Error);
 	void setScript(ScriptID_t scriptID, Script* pScript) throw(DuplicatedException, Error);
 
-	string toString() const throw();
+	string toString() ;
 
 	// 갖다 쓰지 마세요.
 	XMLTree*	getXML(const string& owner) { return m_XMLS[owner]; }

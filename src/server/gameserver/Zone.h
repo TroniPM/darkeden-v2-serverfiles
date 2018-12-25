@@ -198,8 +198,8 @@ public:
 	void heartbeat() throw(Error);
 
 	// 이름, 크리처 클래스, OID 등을 이용해서 존에 존재하는 크리쳐 객체에 접근
-	Creature* getCreature(const string& Name) const throw();//NoSuchElementException, Error);
-	Creature* getCreature(ObjectID_t objectID) const throw();//NoSuchElementException, Error);
+	Creature* getCreature(const string& Name) ;//NoSuchElementException, Error);
+	Creature* getCreature(ObjectID_t objectID) ;//NoSuchElementException, Error);
 	Creature* getCreature(Creature::CreatureClass creatureClass, ObjectID_t objectID) const throw(NoSuchElementException, Error);
 
 
@@ -208,7 +208,7 @@ public:
 	void unlock() throw(Error) { m_Mutex.unlock(); }
 
 	// get debug string
-	string toString() const throw();
+	string toString() ;
 
 public:
 	ObjectRegistry & getObjectRegistry() throw() { return m_ObjectRegistry; }
@@ -218,47 +218,47 @@ public:
 
 	Sector* getSector(ZoneCoord_t x, ZoneCoord_t y) throw(OutOfBoundException);
 
-	ZoneID_t getZoneID() const throw() { return m_ZoneID; }
+	ZoneID_t getZoneID()  { return m_ZoneID; }
 	void setZoneID(ZoneID_t zoneID) throw() { m_ZoneID = zoneID; }
 	
-	ZoneGroup* getZoneGroup() const throw() { return m_pZoneGroup; }
+	ZoneGroup* getZoneGroup()  { return m_pZoneGroup; }
 	void setZoneGroup(ZoneGroup* pZoneGroup) throw() { m_pZoneGroup = pZoneGroup; }
 
-	ZoneType getZoneType() const throw() { return m_ZoneType; }
+	ZoneType getZoneType()  { return m_ZoneType; }
 	void setZoneType(ZoneType zoneType) throw() { m_ZoneType = zoneType; }
 
-	ZoneLevel_t getZoneLevel() const throw() { return m_ZoneLevel; }
+	ZoneLevel_t getZoneLevel()  { return m_ZoneLevel; }
 	void setZoneLevel(ZoneLevel_t zoneLevel) throw() { m_ZoneLevel = zoneLevel; }
     ZoneLevel_t getZoneLevel(ZoneCoord_t x, ZoneCoord_t y) const throw(OutOfBoundException);
 
-	ZoneAccessMode getZoneAccessMode() const throw() { return m_ZoneAccessMode; }
+	ZoneAccessMode getZoneAccessMode()  { return m_ZoneAccessMode; }
 	void setZoneAccessMode(ZoneAccessMode zoneAccessMode) throw() { m_ZoneAccessMode = zoneAccessMode; }
 
-	string getOwnerID() const throw() { return m_OwnerID; }
+	string getOwnerID()  { return m_OwnerID; }
 	void setOwnerID(const string & ownerID) throw() { m_OwnerID = ownerID; }
 
-	DarkLevel_t getDarkLevel() const throw() { return m_DarkLevel; }
+	DarkLevel_t getDarkLevel()  { return m_DarkLevel; }
 	void setDarkLevel(DarkLevel_t darkLevel) throw() { m_DarkLevel = darkLevel; }
 
-	LightLevel_t getLightLevel() const throw() { return m_LightLevel; }
+	LightLevel_t getLightLevel()  { return m_LightLevel; }
 	void setLightLevel(LightLevel_t lightLevel) throw() { m_LightLevel = lightLevel; }
 
-	const WeatherManager* getWeatherManager() const throw() { return m_pWeatherManager; }
+	const WeatherManager* getWeatherManager()  { return m_pWeatherManager; }
 
-	uint getNPCCount() const throw() { return m_NPCCount; }
+	uint getNPCCount()  { return m_NPCCount; }
 	void setNPCCount(uint n) throw(Error) { Assert(n <= maxNPCPerZone); m_NPCCount = n; }
 
-	NPCType_t getNPCType(uint n) const throw() { Assert(n < maxNPCPerZone); return m_NPCTypes[n]; }
+	NPCType_t getNPCType(uint n)  { Assert(n < maxNPCPerZone); return m_NPCTypes[n]; }
 	void setNPCType(uint n, NPCType_t npcType) throw() { Assert(n < maxNPCPerZone); m_NPCTypes[n] = npcType; }
 
-	uint getMonsterCount() const throw() { return m_MonsterCount; }
+	uint getMonsterCount()  { return m_MonsterCount; }
 	void setMonsterCount(uint n) throw(Error) { Assert(n <= maxMonsterPerZone); m_MonsterCount = n; }
 
-	MonsterType_t getMonsterType(uint n) const throw() { Assert(n < maxMonsterPerZone); return m_MonsterTypes[n]; }
+	MonsterType_t getMonsterType(uint n)  { Assert(n < maxMonsterPerZone); return m_MonsterTypes[n]; }
 	void setMonsterType(uint n, MonsterType_t npcType) throw() { Assert(n < maxMonsterPerZone); m_MonsterTypes[n] = npcType; }
 
-	ZoneCoord_t getWidth() const throw() { return m_Width; }
-	ZoneCoord_t getHeight() const throw() { return m_Height; }
+	ZoneCoord_t getWidth()  { return m_Width; }
+	ZoneCoord_t getHeight()  { return m_Height; }
 
 	uint getTimeband() const { return m_Timeband; }
 	void setTimeband( uint timeband ) { m_Timeband = timeband; }
@@ -306,7 +306,7 @@ public:
 
 	// pPC가 pMonster를 볼때 Monster는 어떤 packet으로 add되는가?
 	// pPC가 NULL인 경우 다 보이는 상태라고 가정한다.
-	Packet*	createMonsterAddPacket(Monster* pMonster, Creature* pPC) const throw();
+	Packet*	createMonsterAddPacket(Monster* pMonster, Creature* pPC) ;
 
 	// 몹 생성 좌표
 	const BPOINT& getRandomMonsterRegenPosition() const;
@@ -323,7 +323,7 @@ public:
 	void	killAllPCs() throw(Error);
 
 	const PCManager*  getPCManager() const		{ return m_pPCManager; }             // PC Manager 
-	WORD getPCCount(void) const throw() { return m_pPCManager->getSize(); }
+	WORD getPCCount(void)  { return m_pPCManager->getSize(); }
 
 #ifdef __USE_ENCRYPTER__
 	// get zone's encrypt code
@@ -332,32 +332,32 @@ public:
 
 public :
 	// 유료화
-	bool isPayPlay() const throw() { return m_bPayPlay; }
+	bool isPayPlay()  { return m_bPayPlay; }
     void setPayPlay(bool bPayPlay=true) throw() { m_bPayPlay = bPayPlay; }
 
-	bool isPremiumZone() const throw() { return m_bPremiumZone; }
+	bool isPremiumZone()  { return m_bPremiumZone; }
 	void setPremiumZone(bool bPremiumZone=true) throw() { m_bPremiumZone = bPremiumZone; }
 
-	bool isPKZone() const throw() { return m_bPKZone; }
+	bool isPKZone()  { return m_bPKZone; }
 	void setPKZone(bool bPKZone=true) throw() { m_bPKZone = bPKZone; }
 
-	bool isNoPortalZone() const throw() { return m_bNoPortalZone; }
+	bool isNoPortalZone()  { return m_bNoPortalZone; }
 	void setNoPortalZone(bool bNoPortalZone=true) throw() { m_bNoPortalZone = bNoPortalZone; }
 
-	bool isMasterLair() const throw() { return m_bMasterLair; }
+	bool isMasterLair()  { return m_bMasterLair; }
 	void setMasterLair(bool bMasterLair=true) throw() { m_bMasterLair = bMasterLair; }
 
-	bool isCastle() const throw() { return m_bCastle; }
+	bool isCastle()  { return m_bCastle; }
 	void setCastle(bool bCastle=true) throw() { m_bCastle = bCastle; }
 
-	bool isHolyLand() const throw() { return m_bHolyLand; }
+	bool isHolyLand()  { return m_bHolyLand; }
 	void setHolyLand(bool bHolyLand=true) throw() { m_bHolyLand = bHolyLand; }
 
-	bool isCastleZone() const throw() { return m_bCastleZone; }
+	bool isCastleZone()  { return m_bCastleZone; }
 	void setCastleZone(bool bCastleZone=true) throw() { m_bCastleZone = bCastleZone; }
 
 	// Relic보관대를 갖고 있나?
-	bool hasRelicTable() const throw() { return m_bHasRelicTable; }
+	bool hasRelicTable()  { return m_bHasRelicTable; }
     void setRelicTable(bool bHasRelicTable=true) throw() { m_bHasRelicTable = bHasRelicTable; }
 
 	bool addRelicItem(int relicIndex) throw(Error); 

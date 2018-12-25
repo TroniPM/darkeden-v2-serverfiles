@@ -48,25 +48,25 @@ public:
 	Result * executeQuery(const string& sqlStatement) throw(SQLQueryException, Error);
 	
 	// get SQL statement
-	string getStatement() const throw() { return m_Statement; }
+	string getStatement()  { return m_Statement; }
 
 	// SQL 문을 지정한다.
 	void setStatement(char * fmt, ...) throw(Error);
 
 	// get connection object
-	Connection * getConnection() const throw() { return m_pConnection; }
+	Connection * getConnection()  { return m_pConnection; }
 
 	// set connection object
 	void setConnection(Connection * pConnection) throw() { m_pConnection = pConnection; }
 
 	// get warning/error string
-	string getError() const throw() 
+	string getError()  
 	{ 
 		return(m_pConnection == NULL) ?("Not Associated with Connection Object") :(m_pConnection->getError()); 
 	}
 
 	// get affected rows
-	uint getAffectedRowCount() const throw() { return m_nAffectedRows; }
+	uint getAffectedRowCount()  { return m_nAffectedRows; }
 
 	
 private:

@@ -20,8 +20,8 @@ public:
 	~SelfDestruction() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "SelfDestruction"; }
-	SkillType_t getSkillType() const throw() { return SKILL_SELF_DESTRUCTION; }
+    string getSkillHandlerName()  { return "SelfDestruction"; }
+	SkillType_t getSkillType()  { return SKILL_SELF_DESTRUCTION; }
 
 	void execute(Monster* pMonster) throw(Error);
 

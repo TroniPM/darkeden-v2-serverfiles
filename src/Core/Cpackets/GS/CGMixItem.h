@@ -23,22 +23,22 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_CG_MIX_ITEM; }
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szCoordInven + szCoordInven + ( szObjectID * 2 ); }
-	string getPacketName() const throw() { return "CGMixItem"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_CG_MIX_ITEM; }
+	PacketSize_t getPacketSize()  { return szObjectID + szCoordInven + szCoordInven + ( szObjectID * 2 ); }
+	string getPacketName()  { return "CGMixItem"; }
+	string toString() ;
 	
 public:
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
 
-	CoordInven_t getX() const throw() { return m_InvenX; }
+	CoordInven_t getX()  { return m_InvenX; }
 	void setX(CoordInven_t InvenX) throw() { m_InvenX = InvenX; }
 
-	CoordInven_t getY() const throw() { return m_InvenY; }
+	CoordInven_t getY()  { return m_InvenY; }
 	void setY(CoordInven_t InvenY) throw() { m_InvenY = InvenY; }
 
-	ObjectID_t getTargetObjectID( uint index ) const throw() { Assert(index<2); return m_TargetObjectID[index]; }
+	ObjectID_t getTargetObjectID( uint index )  { Assert(index<2); return m_TargetObjectID[index]; }
 	void setTargetObjectID( uint index, ObjectID_t oid ) throw() { Assert(index<2); m_TargetObjectID[index] = oid; }
 
 private:
@@ -58,9 +58,9 @@ class CGMixItemFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new CGMixItem(); }
-	string getPacketName() const throw() { return "CGMixItem"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_MIX_ITEM; }
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szCoordInven + szCoordInven + ( szObjectID * 2 ); }
+	string getPacketName()  { return "CGMixItem"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_MIX_ITEM; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szCoordInven + szCoordInven + ( szObjectID * 2 ); }
 };
 
 

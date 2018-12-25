@@ -42,24 +42,24 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_LC_SERVER_LIST; }
+	PacketID_t getPacketID()  { return PACKET_LC_SERVER_LIST; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw();
+	PacketSize_t getPacketSize() ;
 	
 	// get packet's name
-	string getPacketName() const throw() { return "LCServerList"; }
+	string getPacketName()  { return "LCServerList"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 	
 public:
 
 	// 현재 서버 그룹
-	ServerGroupID_t getCurrentServerGroupID() const throw() { return m_CurrentServerGroupID; }
+	ServerGroupID_t getCurrentServerGroupID()  { return m_CurrentServerGroupID; }
 	void setCurrentServerGroupID( ServerGroupID_t ServerGroupID ) throw() { m_CurrentServerGroupID = ServerGroupID; }
 
-    BYTE getListNum() const throw() { return m_ServerGroupInfoList.size(); }
+    BYTE getListNum()  { return m_ServerGroupInfoList.size(); }
 
 	// add / delete / clear S List
 	void addListElement(ServerGroupInfo* pServerGroupInfo) throw() { m_ServerGroupInfoList.push_back(pServerGroupInfo); }
@@ -99,13 +99,13 @@ public:
 	Packet* createPacket() throw() { return new LCServerList(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "LCServerList"; }
+	string getPacketName()  { return "LCServerList"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_LC_SERVER_LIST; }
+	PacketID_t getPacketID()  { return Packet::PACKET_LC_SERVER_LIST; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		// 슬레이어 정보가 뱀파이어 정보보다 사이즈가 크기 때문에,
 		// 이 패킷의 최대 크기는 슬레이어 3 명일 경우이다.

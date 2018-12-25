@@ -21,8 +21,8 @@ public:
 	~Peace() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Peace"; }
-	SkillType_t getSkillType() const throw() { return SKILL_PEACE; }
+    string getSkillHandlerName()  { return "Peace"; }
+	SkillType_t getSkillType()  { return SKILL_PEACE; }
 
 	void execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);

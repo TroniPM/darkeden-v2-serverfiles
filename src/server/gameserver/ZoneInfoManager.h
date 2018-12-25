@@ -36,7 +36,7 @@ public:
 
 	vector<Zone*> getNormalFields() const;
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	hash_map<ZoneID_t, ZoneInfo*> m_ZoneInfos; // zone info ÀÇ ÇØ½¬¸Ê

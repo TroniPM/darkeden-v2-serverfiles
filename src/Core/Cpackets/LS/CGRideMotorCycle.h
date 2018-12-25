@@ -45,28 +45,28 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_RIDE_MOTORCYCLE; }
+	PacketID_t getPacketID()  { return PACKET_CG_RIDE_MOTORCYCLE; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szCoord + szCoord ; }
+	PacketSize_t getPacketSize()  { return szObjectID + szCoord + szCoord ; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGRideMotorCycle"; }
+	string getPacketName()  { return "CGRideMotorCycle"; }
 
 	// get/set ObjectID
-	ObjectID_t getObjectID() const throw()  { return m_ObjectID; }
+	ObjectID_t getObjectID()   { return m_ObjectID; }
 	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
 
 	// get/set X
-	Coord_t getX() const throw() { return m_X; }
+	Coord_t getX()  { return m_X; }
 	void setX(Coord_t X) throw() { m_X = X; }
 
 	// get/set Y
-	Coord_t getY() const throw() { return m_Y; }
+	Coord_t getY()  { return m_Y; }
 	void setY(Coord_t Y) throw() { m_Y = Y; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 private :
 
@@ -107,13 +107,13 @@ public:
 	Packet* createPacket() throw() { return new CGRideMotorCycle(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGRideMotorCycle"; }
+	string getPacketName()  { return "CGRideMotorCycle"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_RIDE_MOTORCYCLE; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_RIDE_MOTORCYCLE; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szCoord + szCoord; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szCoord + szCoord; }
 
 };
 

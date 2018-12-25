@@ -32,7 +32,7 @@ void EffectHasSweeper::unaffect() throw(Error)
 	__END_CATCH
 }
 
-string EffectHasSweeper::toString() const throw()
+string EffectHasSweeper::toString() 
 {
 	__BEGIN_TRY
 

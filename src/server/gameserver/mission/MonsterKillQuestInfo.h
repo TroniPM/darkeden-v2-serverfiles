@@ -23,7 +23,7 @@ public:
 
 public:
 
-	virtual string					toString() const throw();
+	virtual string					toString() ;
 
 	virtual MonsterKillQuestStatus*	makeQuestStatus( PlayerCreature* pPC ) const throw(Error);
 	bool	isMonsterKillQuest() const { return true; }

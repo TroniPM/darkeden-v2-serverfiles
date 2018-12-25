@@ -45,32 +45,32 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_SKILL_TO_TILE; }
+	PacketID_t getPacketID()  { return PACKET_CG_SKILL_TO_TILE; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szSkillType + szCEffectID + szCoord + szCoord ; }
+	PacketSize_t getPacketSize()  { return szSkillType + szCEffectID + szCoord + szCoord ; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGSkillToTile"; }
+	string getPacketName()  { return "CGSkillToTile"; }
 
 	// get/set SkillType
-	SkillType_t getSkillType() const throw()  { return m_SkillType; }
+	SkillType_t getSkillType()   { return m_SkillType; }
 	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
 
 	// get/set CEffectID
-	CEffectID_t getCEffectID() const throw() { return m_CEffectID; }
+	CEffectID_t getCEffectID()  { return m_CEffectID; }
 	void setCEffectID(CEffectID_t CEffectID) throw() { m_CEffectID = CEffectID; }
 
 	// get/set X
-	Coord_t getX() const throw() { return m_X; }
+	Coord_t getX()  { return m_X; }
 	void setX(Coord_t X) throw() { m_X = X; }
 
 	// get/set Y
-	Coord_t getY() const throw() { return m_Y; }
+	Coord_t getY()  { return m_Y; }
 	void setY(Coord_t Y) throw() { m_Y = Y; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 private :
 
@@ -114,13 +114,13 @@ public:
 	Packet* createPacket() throw() { return new CGSkillToTile(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGSkillToTile"; }
+	string getPacketName()  { return "CGSkillToTile"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_SKILL_TO_TILE; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_SKILL_TO_TILE; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szSkillType + szCEffectID + szCoord + szCoord; }
+	PacketSize_t getPacketMaxSize()  { return szSkillType + szCEffectID + szCoord + szCoord; }
 
 };
 

@@ -20,8 +20,8 @@ public:
 	~ContinualLight() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "ContinualLight"; }
-	SkillType_t getSkillType() const throw() { return SKILL_CONTINUAL_LIGHT; }
+    string getSkillHandlerName()  { return "ContinualLight"; }
+	SkillType_t getSkillType()  { return SKILL_CONTINUAL_LIGHT; }
 
 	void execute(Slayer* pSlayer, ZoneCoord_t X, ZoneCoord_t Y, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

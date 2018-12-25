@@ -20,8 +20,8 @@ public:
 	~TrueColorofVampLoad() throw() {}
 	
 public:
-	string getSkillHandlerName() const throw() { return "TrueColorofVampLoad"; }
-	SkillType_t getSkillType() const throw() { return SKILL_TRUE_COLOR_OF_VAMP_LOAD; }
+	string getSkillHandlerName()  { return "TrueColorofVampLoad"; }
+	SkillType_t getSkillType()  { return SKILL_TRUE_COLOR_OF_VAMP_LOAD; }
 
 	void execute(Vampire* pSlayer,  VampireSkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

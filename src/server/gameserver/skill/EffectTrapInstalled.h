@@ -19,7 +19,7 @@ public:
 	EffectTrapInstalled(Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_TRAP_INSTALLED; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_TRAP_INSTALLED; }
 
 	void affect() throw(Error);
 	void affect(Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
@@ -27,7 +27,7 @@ public:
 
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 

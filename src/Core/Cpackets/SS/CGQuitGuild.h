@@ -35,19 +35,19 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_QUIT_GUILD; }
+	PacketID_t getPacketID()  { return PACKET_CG_QUIT_GUILD; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szGuildID; }
+	PacketSize_t getPacketSize()  { return szGuildID; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGQuitGuild"; }
+	string getPacketName()  { return "CGQuitGuild"; }
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get/set GuildID
-	GuildID_t getGuildID() const throw() { return m_GuildID; }
+	GuildID_t getGuildID()  { return m_GuildID; }
 	void setGuildID( GuildID_t guildID ) throw() { m_GuildID = guildID; }
 
 
@@ -84,13 +84,13 @@ public:
 	Packet* createPacket() throw() { return new CGQuitGuild(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGQuitGuild"; }
+	string getPacketName()  { return "CGQuitGuild"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_QUIT_GUILD; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_QUIT_GUILD; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szGuildID; }
+	PacketSize_t getPacketMaxSize()  { return szGuildID; }
 };
 
 

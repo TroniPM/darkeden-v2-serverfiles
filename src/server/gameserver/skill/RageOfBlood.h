@@ -20,8 +20,8 @@ public:
 	~RageOfBlood() throw() {}
 	
 public:
-	string getSkillHandlerName() const throw() { return "RageOfBlood"; }
-	SkillType_t getSkillType() const throw() { return SKILL_RAGE_OF_BLOOD; }
+	string getSkillHandlerName()  { return "RageOfBlood"; }
+	SkillType_t getSkillType()  { return SKILL_RAGE_OF_BLOOD; }
 
 	void execute(Vampire* pSlayer,  VampireSkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

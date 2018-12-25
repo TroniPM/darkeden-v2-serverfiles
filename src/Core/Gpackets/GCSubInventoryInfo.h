@@ -23,10 +23,10 @@ public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_SUB_INVENTORY_INFO; }
-	PacketSize_t getPacketSize() const throw() { return szObjectID + m_pInventoryInfo->getSize(); }	
-	string getPacketName() const throw() { return "GCSubInventoryInfo"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_SUB_INVENTORY_INFO; }
+	PacketSize_t getPacketSize()  { return szObjectID + m_pInventoryInfo->getSize(); }	
+	string getPacketName()  { return "GCSubInventoryInfo"; }
+	string toString() ;
 public:
 	void		setObjectID(ObjectID_t ObjectID) { m_ObjectID = ObjectID; }
 	ObjectID_t	getObjectID() const { return m_ObjectID; }
@@ -43,9 +43,9 @@ class GCSubInventoryInfoFactory : public PacketFactory {
 public :
 	
 	Packet* createPacket() throw() { return new GCSubInventoryInfo(); }	
-	string getPacketName() const throw() { return "GCSubInventoryInfo"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_SUB_INVENTORY_INFO; }
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + InventoryInfo::getMaxSize(); }
+	string getPacketName()  { return "GCSubInventoryInfo"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_SUB_INVENTORY_INFO; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + InventoryInfo::getMaxSize(); }
 };
 
 class GCSubInventoryInfoHandler {

@@ -53,7 +53,7 @@ public:
 	bool isAble(ZoneID_t zoneID) const; 
 
 	// toString for Debug
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void setSweeperBonusRace( SweeperBonusType_t sweeperBonusType, Race_t race ) throw( Error );

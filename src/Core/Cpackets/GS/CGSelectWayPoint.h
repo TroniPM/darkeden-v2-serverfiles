@@ -23,13 +23,13 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_CG_SELECT_WAYPOINT; }
-	PacketSize_t getPacketSize() const throw() { return szZoneID + szCoord*2; }
-	string getPacketName() const throw() { return "CGSelectWayPoint"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_CG_SELECT_WAYPOINT; }
+	PacketSize_t getPacketSize()  { return szZoneID + szCoord*2; }
+	string getPacketName()  { return "CGSelectWayPoint"; }
+	string toString() ;
 
 public:
-	ZoneID_t getZoneID() const throw()  { return m_ZoneID; }
+	ZoneID_t getZoneID()   { return m_ZoneID; }
 	void setZoneID(ZoneID_t ZoneID) throw() { m_ZoneID = ZoneID; }
 
 	Coord_t getX(void) const { return m_X; }
@@ -52,9 +52,9 @@ private:
 class CGSelectWayPointFactory : public PacketFactory 
 {
 	Packet* createPacket() throw() { return new CGSelectWayPoint(); }
-	string getPacketName() const throw() { return "CGSelectWayPoint"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_SELECT_WAYPOINT; }
-	PacketSize_t getPacketMaxSize() const throw() { return szZoneID + szCoord*2; }
+	string getPacketName()  { return "CGSelectWayPoint"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_SELECT_WAYPOINT; }
+	PacketSize_t getPacketMaxSize()  { return szZoneID + szCoord*2; }
 };
 
 //////////////////////////////////////////////////////////////////////////////

@@ -20,9 +20,9 @@ public:
 	~GammaChop() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "GammaChop"; }
+    string getSkillHandlerName()  { return "GammaChop"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_GAMMA_CHOP; }
+	SkillType_t getSkillType()  { return SKILL_GAMMA_CHOP; }
 
 	void execute(Ousters* pOusters, ObjectID_t targetObject, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 

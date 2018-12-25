@@ -37,10 +37,10 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_RECONNECT_LOGIN; }
+	PacketID_t getPacketID()  { return PACKET_GC_RECONNECT_LOGIN; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		return szBYTE + m_LoginServerIP.size() 	// 게임 서버 아이피
 			+ szuint							// 게임 서버 포트
@@ -48,23 +48,23 @@ public :
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "GCReconnectLogin"; }
+	string getPacketName()  { return "GCReconnectLogin"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public :
 
 	// get/set game server's ip
-	string getLoginServerIP() const throw() { return m_LoginServerIP; }
+	string getLoginServerIP()  { return m_LoginServerIP; }
 	void setLoginServerIP(const string & ip) throw() { m_LoginServerIP = ip; }
 
 	// get/set game server's port
-	uint getLoginServerPort() const throw() { return m_LoginServerPort; }
+	uint getLoginServerPort()  { return m_LoginServerPort; }
 	void setLoginServerPort(uint port) throw() { m_LoginServerPort = port; }
 
 	// get/set key
-	DWORD getKey() const throw() { return m_Key; }
+	DWORD getKey()  { return m_Key; }
 	void setKey(DWORD key) throw() { m_Key = key; }
 
 private :
@@ -97,15 +97,15 @@ public :
 	Packet* createPacket() throw() { return new GCReconnectLogin(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCReconnectLogin"; }
+	string getPacketName()  { return "GCReconnectLogin"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_RECONNECT_LOGIN; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_RECONNECT_LOGIN; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCReconnectLoginPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		return szBYTE + 15 	// 게임 서버 아이피
 			+ szuint		// 게임 서버 포트

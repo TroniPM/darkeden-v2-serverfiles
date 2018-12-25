@@ -20,7 +20,7 @@ public:
 public:
 	RewardInfo*		selectReward( PlayerCreature* pPC ) const throw(Error);
 
-	virtual string	toString() const throw();
+	virtual string	toString() ;
 
 private:
 };

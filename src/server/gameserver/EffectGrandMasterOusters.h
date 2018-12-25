@@ -19,8 +19,8 @@ public:
 	EffectGrandMasterOusters(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_GRAND_MASTER_OUSTERS; }
-	EffectClass getSendEffectClass() const throw();
+    EffectClass getEffectClass()  { return EFFECT_CLASS_GRAND_MASTER_OUSTERS; }
+	EffectClass getSendEffectClass() ;
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
@@ -28,7 +28,7 @@ public:
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error); 
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 };

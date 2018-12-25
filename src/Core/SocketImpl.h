@@ -127,7 +127,7 @@ public :
 	SOCKET getSOCKET () const throw () { return m_SocketID; }
 
 	//add by viva
-	string getLocalHost();// const throw();
+	string getLocalHost();// ;
 
 
 //////////////////////////////////////////////////

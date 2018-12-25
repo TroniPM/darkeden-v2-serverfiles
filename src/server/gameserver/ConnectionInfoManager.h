@@ -31,7 +31,7 @@ public:
 	void deleteConnectionInfo(const string& ip) throw(NoSuchElementException, Error);
 	ConnectionInfo* getConnectionInfo(const string& ip) throw(NoSuchElementException, Error);
 	void heartbeat() throw(Error);	
-	string toString() const throw();
+	string toString() ;
 
 private:
 	// hash map of ConnectionInfo

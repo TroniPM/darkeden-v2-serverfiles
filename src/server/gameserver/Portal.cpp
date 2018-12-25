@@ -448,7 +448,7 @@ void TriggeredPortal::load(ZoneID_t zoneid, int left, int top, int right, int bo
 	__END_CATCH
 }
 
-string TriggeredPortal::toString() const throw()
+string TriggeredPortal::toString() 
 {
 	__BEGIN_TRY
 

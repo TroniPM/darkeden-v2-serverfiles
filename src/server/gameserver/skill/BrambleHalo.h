@@ -20,8 +20,8 @@ public:
 	~BrambleHalo() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "BrambleHalo"; }
-	SkillType_t getSkillType() const throw() { return SKILL_Bramble_Halo; }
+    string getSkillHandlerName()  { return "BrambleHalo"; }
+	SkillType_t getSkillType()  { return SKILL_Bramble_Halo; }
 
 	void execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Slayer* pSlayer,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);

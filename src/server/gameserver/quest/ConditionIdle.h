@@ -21,18 +21,18 @@
 class ConditionIdle : public Condition 
 {
 public:
-	virtual ConditionType_t getConditionType() const throw() { return CONDITION_IDLE; }
+	virtual ConditionType_t getConditionType()  { return CONDITION_IDLE; }
 
-	virtual bool isActive() const throw() { return true; }
+	virtual bool isActive()  { return true; }
 
-	virtual bool isSatisfied(Creature* pCreature1, Creature* pCreature2 = NULL, void* pParam = NULL) const throw() 
+	virtual bool isSatisfied(Creature* pCreature1, Creature* pCreature2 = NULL, void* pParam = NULL)  
 	{ 
 		return pCreature1 != NULL && !pCreature1->isPC() && pCreature2 == NULL;
 	}
 
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error) {}
 
-	virtual string toString() const throw() { return "ConditionIdle"; }
+	virtual string toString()  { return "ConditionIdle"; }
 
 };
 
@@ -44,9 +44,9 @@ public:
 class ConditionIdleFactory : public ConditionFactory 
 {
 public:
-    virtual ConditionType_t getConditionType() const throw() { return Condition::CONDITION_IDLE; }
-    virtual Condition* createCondition() const throw() { return new ConditionIdle(); }
-    virtual string getConditionName() const throw() { return "Idle"; }
+    virtual ConditionType_t getConditionType()  { return Condition::CONDITION_IDLE; }
+    virtual Condition* createCondition()  { return new ConditionIdle(); }
+    virtual string getConditionName()  { return "Idle"; }
 };
 
 #endif

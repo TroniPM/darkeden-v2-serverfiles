@@ -20,9 +20,9 @@ public:
 	~HandsOfWisdom() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "HandsOfWisdom"; }
+    string getSkillHandlerName()  { return "HandsOfWisdom"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_HANDS_OF_WISDOM; }
+	SkillType_t getSkillType()  { return SKILL_HANDS_OF_WISDOM; }
 
 	void execute(Vampire* pVampire, ObjectID_t targetObject, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Monster* pMonster, Creature* pEnemy) throw(Error);

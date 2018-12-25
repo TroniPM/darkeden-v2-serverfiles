@@ -20,9 +20,9 @@ public:
 	~EventShutdown() throw() {}
 			
 public:
-	virtual EventClass getEventClass() const throw() { return EVENT_CLASS_SHUTDOWN; }
+	virtual EventClass getEventClass()  { return EVENT_CLASS_SHUTDOWN; }
 	virtual void activate() throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 private:
 };

@@ -18,16 +18,16 @@ class WeatherInfo
 {
 public:
 	// 확률값을 파라미터로 넘겨주면, 오늘의 날씨를 리턴한다.
-	Weather getWeather(uint probability) const throw();
+	Weather getWeather(uint probability) ;
 
 	// 특정 날씨의 확률을 리턴한다.
-	uint getProbability(Weather weather) const throw() { return m_Probabilities[weather]; }
+	uint getProbability(Weather weather)  { return m_Probabilities[weather]; }
 
 	// 특정 날씨의 확률을 지정한다.
 	void setProbability(Weather weather, uint prob) throw() { m_Probabilities[weather] = prob; }
 
 	// get debug string
-	string toString() const throw();
+	string toString() ;
 
 private:
 	uint m_Probabilities[WEATHER_MAX];
@@ -61,7 +61,7 @@ public:
 	}
 
 	// get debug string
-	string toString() const throw();
+	string toString() ;
 
 private:
 	// WeatherInfo의 이차원 배열

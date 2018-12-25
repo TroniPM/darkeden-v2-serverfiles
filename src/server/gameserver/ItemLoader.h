@@ -25,10 +25,10 @@ public:
 
 public:
 	// get item class
-	virtual Item::ItemClass getItemClass() const throw() = 0;
+	virtual Item::ItemClass getItemClass()  = 0;
 
 	// get item class name
-	virtual string getItemClassName() const throw() = 0;
+	virtual string getItemClassName()  = 0;
 
 	// load to creature
 	virtual void load(Creature* pCreature) throw(Error) = 0;

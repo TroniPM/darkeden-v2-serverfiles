@@ -20,8 +20,8 @@ public:
 	~PlayingWithFire() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "PlayingWithFire"; }
-	SkillType_t getSkillType() const throw() { return SKILL_PLAYING_WITH_FIRE; }
+    string getSkillHandlerName()  { return "PlayingWithFire"; }
+	SkillType_t getSkillType()  { return SKILL_PLAYING_WITH_FIRE; }
 
 	//void execute(Slayer* pSlayer, SlayerSkillSlot* pSlayerSkillSlot, CEffectID_t CEffectID) throw(Error);
 	//void execute(Vampire* pVampire, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);

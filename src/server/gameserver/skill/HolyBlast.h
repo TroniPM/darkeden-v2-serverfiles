@@ -21,8 +21,8 @@ public:
 	~HolyBlast() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "HolyBlast"; }
-	SkillType_t getSkillType() const throw() { return SKILL_HOLY_BLAST; }
+    string getSkillHandlerName()  { return "HolyBlast"; }
+	SkillType_t getSkillType()  { return SKILL_HOLY_BLAST; }
 
 	void execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);

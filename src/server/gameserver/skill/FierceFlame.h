@@ -20,9 +20,9 @@ public:
 	~FierceFlame() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "FierceFlame"; }
+    string getSkillHandlerName()  { return "FierceFlame"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_FIERCE_FLAME; }
+	SkillType_t getSkillType()  { return SKILL_FIERCE_FLAME; }
 
 	void execute(Ousters* pOusters, ObjectID_t targetObject, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 

@@ -39,26 +39,26 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_MP_RECOVERY_END; }
+	PacketID_t getPacketID()  { return PACKET_GC_MP_RECOVERY_END; }
 	
 	// get packet's body size
 	// *OPTIMIZATION HINT*
 	// const static GCMPRecoveryEndPacketSize 를 정의, 리턴하라.
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		return szMP; 
 	}
 
 	// get packet's name
-	string getPacketName() const throw() { return "GCMPRecoveryEnd"; }
+	string getPacketName()  { return "GCMPRecoveryEnd"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public :
 
 	// get /set CurrentMP
-	MP_t getCurrentMP() const throw() { return m_CurrentMP; }
+	MP_t getCurrentMP()  { return m_CurrentMP; }
 	void setCurrentMP(MP_t CurrentMP) throw() { m_CurrentMP = CurrentMP; }
 
 private :
@@ -85,15 +85,15 @@ public :
 	Packet* createPacket() throw() { return new GCMPRecoveryEnd(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCMPRecoveryEnd"; }
+	string getPacketName()  { return "GCMPRecoveryEnd"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_MP_RECOVERY_END; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_MP_RECOVERY_END; }
 
 	// get packet's body size
 	// *OPTIMIZATION HINT*
 	// const static GCMPRecoveryEndPacketSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		return szMP; 
 	}

@@ -20,14 +20,14 @@ public:
 	virtual ~EventRegeneration() throw();
 
 public:
-	virtual EventClass getEventClass() const throw() { return EVENT_CLASS_REGENERATION; }
+	virtual EventClass getEventClass()  { return EVENT_CLASS_REGENERATION; }
 
-	virtual bool isTemporary() const throw() { return false; }
-	virtual bool isPermanent() const throw() { return true; }
+	virtual bool isTemporary()  { return false; }
+	virtual bool isPermanent()  { return true; }
 
 	virtual void activate() throw(Error);
 	
-	virtual string toString() const throw() { return "Regeneration Event"; }
+	virtual string toString()  { return "Regeneration Event"; }
 
 };
 

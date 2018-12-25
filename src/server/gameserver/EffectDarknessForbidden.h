@@ -20,11 +20,11 @@ public:
 	EffectDarknessForbidden(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_DARKNESS_FORBIDDEN; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_DARKNESS_FORBIDDEN; }
 
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 };
 

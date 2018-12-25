@@ -34,23 +34,23 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_SET_SLAYER_HOT_KEY; }
+	PacketID_t getPacketID()  { return PACKET_CG_SET_SLAYER_HOT_KEY; }
 	
 	// get packet's body size
 	// *OPTIMIZATION HINT*
 	// const static CGSetSlayerHotKeyPacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketSize() const throw() { return szSkillType* 4; }
+	PacketSize_t getPacketSize()  { return szSkillType* 4; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGSetSlayerHotKey"; }
+	string getPacketName()  { return "CGSetSlayerHotKey"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 	
 public:
 
 	// get/set X Coordicate
-	SkillType_t getHotKey(BYTE pos) const throw() { return m_HotKey[pos]; }
+	SkillType_t getHotKey(BYTE pos)  { return m_HotKey[pos]; }
 	void setHotKey(BYTE pos, SkillType_t SkillType) throw() { m_HotKey[pos] = SkillType; }
 
 private :
@@ -76,15 +76,15 @@ public:
 	Packet* createPacket() throw() { return new CGSetSlayerHotKey(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGSetSlayerHotKey"; }
+	string getPacketName()  { return "CGSetSlayerHotKey"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_SET_SLAYER_HOT_KEY; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_SET_SLAYER_HOT_KEY; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static CGSetSlayerHotKeyPacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szSkillType* 4; }
+	PacketSize_t getPacketMaxSize()  { return szSkillType* 4; }
 
 };
 

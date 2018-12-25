@@ -47,30 +47,30 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_DELETE_EFFECT_FROM_TILE; }
+	PacketID_t getPacketID()  { return PACKET_GC_DELETE_EFFECT_FROM_TILE; }
 	
 	// get packet's body size
 	// 최적화시, 미리 계산된 정수를 사용한다.
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szCoord*2 + szEffectID; }
+	PacketSize_t getPacketSize()  { return szObjectID + szCoord*2 + szEffectID; }
 
 	// get packet's name
-	string getPacketName() const throw() { return "GCDeleteEffectFromTile"; }
+	string getPacketName()  { return "GCDeleteEffectFromTile"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get / set EffectID 
-	EffectID_t getEffectID() const throw() { return m_EffectID; }
+	EffectID_t getEffectID()  { return m_EffectID; }
 	void setEffectID(EffectID_t e) throw() { m_EffectID = e; }
 	
 
 	// get / set ObjectID 
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t d) throw() { m_ObjectID = d; }
 
 	// get & set X, Y
-	Coord_t getX() const throw() { return m_X;}
-	Coord_t getY() const throw() { return m_Y;}
+	Coord_t getX()  { return m_X;}
+	Coord_t getY()  { return m_Y;}
 	void setXY(Coord_t x, Coord_t y) throw() { m_X = x; m_Y = y;}
 	
 private :
@@ -107,14 +107,14 @@ public :
 	Packet* createPacket() throw() { return new GCDeleteEffectFromTile(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCDeleteEffectFromTile"; }
+	string getPacketName()  { return "GCDeleteEffectFromTile"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_DELETE_EFFECT_FROM_TILE; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_DELETE_EFFECT_FROM_TILE; }
 
 	// get Packet Max Size
-	// PacketSize_t getPacketMaxSize() const throw() { return szSkillType + szCEffectID + szDuration + szBYTE + szBYTE* m_ListNum* 2 ; }
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szCoord*2 + szEffectID ; }
+	// PacketSize_t getPacketMaxSize()  { return szSkillType + szCEffectID + szDuration + szBYTE + szBYTE* m_ListNum* 2 ; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szCoord*2 + szEffectID ; }
 
 };
 

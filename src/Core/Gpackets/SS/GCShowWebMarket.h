@@ -35,10 +35,10 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_SHOW_WEB_MARKET; }
+	PacketID_t getPacketID()  { return PACKET_GC_SHOW_WEB_MARKET; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw()
+	PacketSize_t getPacketSize() 
 	{ 
 		return szBYTE +				// Player ID length
 			   m_PlayerID.size() +	// Player ID
@@ -49,10 +49,10 @@ public :
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "GCShowWebMarket"; }
+	string getPacketName()  { return "GCShowWebMarket"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get/set Player ID
 	string getPlayerID() const { return m_PlayerID; }
@@ -101,15 +101,15 @@ public :
 	Packet* createPacket() throw() { return new GCShowWebMarket(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCShowWebMarket"; }
+	string getPacketName()  { return "GCShowWebMarket"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_SHOW_WEB_MARKET; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_SHOW_WEB_MARKET; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCSystemMessagePacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw()
+	PacketSize_t getPacketMaxSize() 
 	{
 		return szBYTE +		// Player ID length
 			   20 +			// Player ID

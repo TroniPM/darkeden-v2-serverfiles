@@ -36,8 +36,8 @@ public :
 	~GCRemoveEffect() throw();
 	
 public :
-    PacketID_t getPacketID() const throw() { return PACKET_GC_REMOVE_EFFECT; }
-    string getPacketName() const throw() { return "GCRemoveEffect"; }
+    PacketID_t getPacketID()  { return PACKET_GC_REMOVE_EFFECT; }
+    string getPacketName()  { return "GCRemoveEffect"; }
 	
 	
     // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
@@ -50,18 +50,18 @@ public :
 
 	// get packet's body size
 	// 최적화시, 미리 계산된 정수를 사용한다.
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szBYTE + szEffectID* m_ListNum; }
+	PacketSize_t getPacketSize()  { return szObjectID + szBYTE + szEffectID* m_ListNum; }
 	static PacketSize_t getPacketMaxSize() throw() { return 255;}
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get / set ListNumber
-	BYTE getListNum() const throw() { return m_ListNum; }
+	BYTE getListNum()  { return m_ListNum; }
 	void setListNum(BYTE ListNum) throw() { m_ListNum = ListNum; }
 
 	// get&set ObjectID
-	ObjectID_t getObjectID() const throw() { return m_ObjectID;}
+	ObjectID_t getObjectID()  { return m_ObjectID;}
 	void setObjectID(ObjectID_t id) throw() { m_ObjectID = id;}
 
 	// add / delete / clear S List
@@ -109,13 +109,13 @@ public :
 	Packet* createPacket() throw() { return new GCRemoveEffect(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCRemoveEffect"; }
+	string getPacketName()  { return "GCRemoveEffect"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_REMOVE_EFFECT; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_REMOVE_EFFECT; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return 255;}
+	PacketSize_t getPacketMaxSize()  { return 255;}
 
 };
 

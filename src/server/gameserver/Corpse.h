@@ -35,41 +35,41 @@ public:
 	virtual ~Corpse() throw();
 
 public:
-	virtual ItemClass getItemClass() const throw() { return ITEM_CLASS_CORPSE; }
-	virtual string getObjectTableName() const throw() { return ""; }
+	virtual ItemClass getItemClass()  { return ITEM_CLASS_CORPSE; }
+	virtual string getObjectTableName()  { return ""; }
 
-	virtual ItemType_t getItemType() const throw() = 0;
+	virtual ItemType_t getItemType()  = 0;
 	virtual void setItemType(ItemType_t monsterType) throw() = 0;
 
     virtual VolumeWidth_t getVolumeWidth() const throw(Error) { return 0; }
     virtual VolumeHeight_t getVolumeHeight() const throw(Error) { return 0; }
     virtual Weight_t getWeight() const throw(Error) { return 0; }
 
-	virtual string toString() const throw() = 0;
+	virtual string toString()  = 0;
 
 public:
 	void addTreasure(Item* pItem) throw();
 	Item* getTreasure() throw();
-	Item* getTreasure( ObjectID_t objectID ) const throw();
+	Item* getTreasure( ObjectID_t objectID ) ;
 	Item* popTreasure( ObjectID_t objectID ) throw();
 
-	BYTE getTreasureCount() const throw() { return m_TreasureCount; }
+	BYTE getTreasureCount()  { return m_TreasureCount; }
 	void setTreasureCount(BYTE Count) throw() { m_TreasureCount = Count; }
 
-	ZoneCoord_t getX() const throw() { return m_X; }
+	ZoneCoord_t getX()  { return m_X; }
 	void setX(ZoneCoord_t x) throw() { m_X = x; }
 
-	ZoneCoord_t getY() const throw() { return m_Y; }
+	ZoneCoord_t getY()  { return m_Y; }
 	void setY(ZoneCoord_t y) throw() { m_Y = y; }
 
 	// get/set zone
-    Zone* getZone() const throw() { return m_pZone; }
+    Zone* getZone()  { return m_pZone; }
     void setZone(Zone* pZone) throw() { m_pZone = pZone; }
 
-	int getLevel() const throw() { return m_Level; }
+	int getLevel()  { return m_Level; }
 	void setLevel(int level) throw() { m_Level = level; }
 
-	Exp_t getExp() const throw() { return m_Exp; }
+	Exp_t getExp()  { return m_Exp; }
 	void setExp(Exp_t exp) throw() { m_Exp = exp; }
 
 protected:
@@ -98,8 +98,8 @@ class CorpseFactory : public ItemFactory
 {
 public:
 	Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return NULL; }
-	string getItemName() const throw() { return "Corpse"; }
-	Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_CORPSE; }
+	string getItemName()  { return "Corpse"; }
+	Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_CORPSE; }
 };
 
 #endif

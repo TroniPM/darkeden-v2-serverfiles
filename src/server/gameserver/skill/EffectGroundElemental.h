@@ -20,11 +20,11 @@ public:
 	EffectGroundElemental(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_GROUND_ELEMENTAL_CENTER; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_GROUND_ELEMENTAL_CENTER; }
 
 	void unaffect() throw(Error);
 	void unaffect(Creature* pCreature) throw(Error);
-	string toString() const throw();
+	string toString() ;
 
 public:
 };

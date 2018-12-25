@@ -20,8 +20,8 @@ public:
 	~RingOfFlare() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "RingOfFlare"; }
-	SkillType_t getSkillType() const throw() { return SKILL_RING_OF_FLARE; }
+    string getSkillHandlerName()  { return "RingOfFlare"; }
+	SkillType_t getSkillType()  { return SKILL_RING_OF_FLARE; }
 
 	void execute(Ousters* pOusters,  OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 

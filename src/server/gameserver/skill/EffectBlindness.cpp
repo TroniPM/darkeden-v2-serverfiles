@@ -93,7 +93,7 @@ void EffectBlindness::unaffect( Creature* pCreature ) throw (Error)
 	__END_CATCH
 }
 
-string EffectBlindness::toString() const throw()
+string EffectBlindness::toString() 
 {
 	__BEGIN_TRY
 

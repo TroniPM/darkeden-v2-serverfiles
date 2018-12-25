@@ -45,28 +45,28 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_SKILL_TO_NAMED; }
+	PacketID_t getPacketID()  { return PACKET_CG_SKILL_TO_NAMED; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szSkillType + szCEffectID + szBYTE + m_TargetName.size(); }
+	PacketSize_t getPacketSize()  { return szSkillType + szCEffectID + szBYTE + m_TargetName.size(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGSkillToNamed"; }
+	string getPacketName()  { return "CGSkillToNamed"; }
 
 	// get SkillType
-	SkillType_t getSkillType() const throw()  { return m_SkillType; }
+	SkillType_t getSkillType()   { return m_SkillType; }
 	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
 
 	// get CEffectID
-	CEffectID_t getCEffectID() const throw() { return m_CEffectID; }
+	CEffectID_t getCEffectID()  { return m_CEffectID; }
 	void setCEffectID(CEffectID_t CEffectID) throw() { m_CEffectID = CEffectID; }
 
 	// get Target name
-	const string& getTargetName() const throw() { return m_TargetName; }
+	const string& getTargetName()  { return m_TargetName; }
 	void setTargetName( const string& targetName ) throw() { m_TargetName = targetName; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 private :
 
@@ -107,13 +107,13 @@ public:
 	Packet* createPacket() throw() { return new CGSkillToNamed(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGSkillToNamed"; }
+	string getPacketName()  { return "CGSkillToNamed"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_SKILL_TO_NAMED; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_SKILL_TO_NAMED; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szSkillType + szCEffectID + szBYTE + 20; }
+	PacketSize_t getPacketMaxSize()  { return szSkillType + szCEffectID + szBYTE + 20; }
 
 };
 

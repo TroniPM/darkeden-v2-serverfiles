@@ -161,7 +161,7 @@ void EffectItemLoader::save (const string & ownerID)
 }
 
 string EffectItemLoader::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

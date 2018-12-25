@@ -20,9 +20,9 @@ public:
 	~IllusionInversion() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "IllusionInversion"; }
+    string getSkillHandlerName()  { return "IllusionInversion"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_ILLUSION_INVERSION; }
+	SkillType_t getSkillType()  { return SKILL_ILLUSION_INVERSION; }
 
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

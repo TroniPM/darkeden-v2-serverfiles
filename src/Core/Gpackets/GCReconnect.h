@@ -37,10 +37,10 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_RECONNECT; }
+	PacketID_t getPacketID()  { return PACKET_GC_RECONNECT; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		return szBYTE + m_Name.size() 		// 캐릭터 이름
 			+ szPCType 						// 슬레이어 or 뱀파이어?
@@ -49,27 +49,27 @@ public :
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "GCReconnect"; }
+	string getPacketName()  { return "GCReconnect"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public :
 
 	// get/set creature name
-	string getName() const throw() { return m_Name; }
+	string getName()  { return m_Name; }
 	void setName(const string & name) throw() { m_Name = name; }
 
 	// get/set pc type
-	PCType getPCType() const throw() { return m_PCType; }
+	PCType getPCType()  { return m_PCType; }
 	void setPCType(PCType pcType) throw() { m_PCType = pcType; }
 
 	// get/set server ip
-	string getServerIP() const throw() { return m_ServerIP; }
+	string getServerIP()  { return m_ServerIP; }
 	void setServerIP(const string & serverIP) throw() { m_ServerIP = serverIP; }
 
 	// get/set key
-	DWORD getKey() const throw() { return m_Key; }
+	DWORD getKey()  { return m_Key; }
 	void setKey(DWORD key) throw() { m_Key = key; }
 
 private :
@@ -105,15 +105,15 @@ public :
 	Packet* createPacket() throw() { return new GCReconnect(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCReconnect"; }
+	string getPacketName()  { return "GCReconnect"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_RECONNECT; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_RECONNECT; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCReconnectPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw()
+	PacketSize_t getPacketMaxSize() 
 	{
 		return szBYTE + 20 		 		// 캐릭터 이름
 			+ szPCType 					// 슬레이어 or 뱀파이어?

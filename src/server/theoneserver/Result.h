@@ -46,8 +46,8 @@ public:
 	const char* getString(uint index) throw(OutOfBoundException, Error);
 
 	// 쿼리 결과값이 포함하는 row/column의 숫자를 리턴한다.
-	uint getRowCount() const throw() { return m_RowCount; }
-	uint getFieldCount() const throw() { return m_FieldCount; }
+	uint getRowCount()  { return m_RowCount; }
+	uint getFieldCount()  { return m_FieldCount; }
 
 	string getStatement(void) const { return m_Statement; }
 

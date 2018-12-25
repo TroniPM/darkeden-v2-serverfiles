@@ -21,8 +21,8 @@ public:
 	~Cannonade() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Cannonade"; }
-	SkillType_t getSkillType() const throw() { return SKILL_CANNONADE; }
+    string getSkillHandlerName()  { return "Cannonade"; }
+	SkillType_t getSkillType()  { return SKILL_CANNONADE; }
 
 	void execute(Monster*, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
 

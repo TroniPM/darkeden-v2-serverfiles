@@ -20,8 +20,8 @@ public:
 	~PoisonMesh() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "PoisonMesh"; }
-	SkillType_t getSkillType() const throw() { return SKILL_POISON_MESH; }
+    string getSkillHandlerName()  { return "PoisonMesh"; }
+	SkillType_t getSkillType()  { return SKILL_POISON_MESH; }
 
 	void execute(Vampire* pVampire, ObjectID_t targetObject, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
 

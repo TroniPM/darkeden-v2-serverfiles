@@ -19,7 +19,7 @@ public:
 	EffectMute(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_MUTE; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_MUTE; }
 
 	void affect() throw(Error) { }
 	void affect(Creature* pCreature) throw(Error);
@@ -33,7 +33,7 @@ public:
 	virtual void destroy(const string & ownerID) throw(Error);
 	virtual void save(const string & ownerID) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 };
 
@@ -44,8 +44,8 @@ public:
 class EffectMuteLoader : public EffectLoader 
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_MUTE; }
-	virtual string getEffectClassName() const throw() { return "EffectMute"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_MUTE; }
+	virtual string getEffectClassName()  { return "EffectMute"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

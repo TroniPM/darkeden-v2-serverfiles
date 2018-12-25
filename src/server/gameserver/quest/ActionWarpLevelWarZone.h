@@ -19,10 +19,10 @@
 class ActionWarpLevelWarZone : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_WARP_LEVEL_WAR_ZONE; }
+	virtual ActionType_t getActionType()  { return ACTION_WARP_LEVEL_WAR_ZONE; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public :
 
@@ -38,9 +38,9 @@ private :
 class ActionWarpLevelWarZoneFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_WARP_LEVEL_WAR_ZONE; }
-	virtual string getActionName() const throw() { return "WarpLevelWarZone"; }
-	virtual Action* createAction() const throw() { return new ActionWarpLevelWarZone(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_WARP_LEVEL_WAR_ZONE; }
+	virtual string getActionName()  { return "WarpLevelWarZone"; }
+	virtual Action* createAction()  { return new ActionWarpLevelWarZone(); }
 
 };
 

@@ -94,7 +94,7 @@ void GCMiniGameScores::write ( SocketOutputStream & oStream )
 	__END_CATCH
 }
 
-PacketSize_t GCMiniGameScores::getPacketSize() const throw()
+PacketSize_t GCMiniGameScores::getPacketSize() 
 {
 	PacketSize_t ret = szBYTE + szBYTE + szBYTE;
 

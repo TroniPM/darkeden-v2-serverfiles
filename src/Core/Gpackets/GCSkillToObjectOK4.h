@@ -48,42 +48,42 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_SKILL_TO_OBJECT_OK_4; }
+	PacketID_t getPacketID()  { return PACKET_GC_SKILL_TO_OBJECT_OK_4; }
 	
 	// get packet's body size
 	// 최적화시, 미리 계산된 정수를 사용한다.
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szSkillType + szDuration + szBYTE; }
+	PacketSize_t getPacketSize()  { return szObjectID + szSkillType + szDuration + szBYTE; }
 
 	// get packet's name
-	string getPacketName() const throw() { return "GCSkillToObjectOK4"; }
+	string getPacketName()  { return "GCSkillToObjectOK4"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get / set ObjectID
-	ObjectID_t getTargetObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getTargetObjectID()  { return m_ObjectID; }
 	void setTargetObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
 
 	// get / set SkillType
-	SkillType_t getSkillType() const throw() { return m_SkillType; }
+	SkillType_t getSkillType()  { return m_SkillType; }
 	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
 	
 /*
 	// get / set Target X,Y
-	Coord_t getTargetX() const throw() { return m_TargetX; }
-	Coord_t getTargetY() const throw() { return m_TargetY; }
+	Coord_t getTargetX()  { return m_TargetX; }
+	Coord_t getTargetY()  { return m_TargetY; }
 	void setTargetXY(Coord_t X, Coord_t Y) throw() { m_TargetX = X; m_TargetY = Y; }
 */
 	
 	// get / set Duration
-	Duration_t getDuration() const throw() { return m_Duration; }
+	Duration_t getDuration()  { return m_Duration; }
 	void setDuration(Duration_t Duration) throw() { m_Duration = Duration; }
 	
 	// get / set CEffectID 
-//	CEffectID_t getCEffectID() const throw() { return m_CEffectID; }
+//	CEffectID_t getCEffectID()  { return m_CEffectID; }
 //	void setCEffectID(CEffectID_t e) throw() { m_CEffectID = e; }
 
-	BYTE getGrade() const throw() { return m_Grade; }
+	BYTE getGrade()  { return m_Grade; }
 	void setGrade( BYTE grade ) throw() { m_Grade = grade; }
 
 private :
@@ -130,13 +130,13 @@ public :
 	Packet* createPacket() throw() { return new GCSkillToObjectOK4(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCSkillToObjectOK4"; }
+	string getPacketName()  { return "GCSkillToObjectOK4"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_SKILL_TO_OBJECT_OK_4; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_SKILL_TO_OBJECT_OK_4; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szSkillType + szDuration + szBYTE; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szSkillType + szDuration + szBYTE; }
 
 };
 

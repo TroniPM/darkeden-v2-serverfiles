@@ -20,8 +20,8 @@ public:
 	~FlameSpike() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "FlameSpike"; }
-	SkillType_t getSkillType() const throw() { return SKILL_FLAME_SPIKE; }
+    string getSkillHandlerName()  { return "FlameSpike"; }
+	SkillType_t getSkillType()  { return SKILL_FLAME_SPIKE; }
 
 	void execute(Ousters* pOusters, ZoneCoord_t X, ZoneCoord_t Y, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Ousters* pOusters, ObjectID_t, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);

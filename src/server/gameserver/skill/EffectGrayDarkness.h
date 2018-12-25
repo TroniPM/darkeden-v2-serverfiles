@@ -21,7 +21,7 @@ public:
 	EffectGrayDarkness(Zone* pZone, ZoneCoord_t ZoneX, ZoneCoord_t ZoneY) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_GRAY_DARKNESS; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_GRAY_DARKNESS; }
 
 	void affect() throw(Error){}
 //	void affect(Creature* pCreature) throw(Error);
@@ -32,11 +32,11 @@ public:
 //	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject ) throw(Error);
 //	void unaffect(Item* pItem) throw(Error) {}
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void setLevel(Attr_t l) throw(Error) { m_Level = l;}
-	Attr_t getLevel() const throw() { return m_Level;}
+	Attr_t getLevel()  { return m_Level;}
 	
 	void setDuration(Duration_t d) throw(Error) { m_Duration = d; }
 	Duration_t getDuration() throw(Error) { return m_Duration;}
@@ -71,8 +71,8 @@ private :
 /*class EffectGrayDarknessLoader : public EffectLoader
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_GRAY_DARKNESS; }
-	virtual string getEffectClassName() const throw() { return "EffectGrayDarkness"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_GRAY_DARKNESS; }
+	virtual string getEffectClassName()  { return "EffectGrayDarkness"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error) {}

@@ -22,16 +22,16 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_CG_USE_ITEM_FROM_GEAR; }
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szBYTE; }
-	string getPacketName() const throw() { return "CGUseItemFromGear"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_CG_USE_ITEM_FROM_GEAR; }
+	PacketSize_t getPacketSize()  { return szObjectID + szBYTE; }
+	string getPacketName()  { return "CGUseItemFromGear"; }
+	string toString() ;
 	
 public:
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
 
-	BYTE getPart() const throw() { return m_Part; }
+	BYTE getPart()  { return m_Part; }
 	void setPart( BYTE part ) throw() { m_Part = part; }
 
 private:
@@ -48,9 +48,9 @@ class CGUseItemFromGearFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new CGUseItemFromGear(); }
-	string getPacketName() const throw() { return "CGUseItemFromGear"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_USE_ITEM_FROM_GEAR; }
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szBYTE; }
+	string getPacketName()  { return "CGUseItemFromGear"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_USE_ITEM_FROM_GEAR; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szBYTE; }
 };
 
 

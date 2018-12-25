@@ -65,13 +65,13 @@ public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_TRADE_VERIFY; }
-	PacketSize_t getPacketSize() const throw() { return szBYTE ; }
-	string getPacketName() const throw() { return "GCTradeVerify"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_TRADE_VERIFY; }
+	PacketSize_t getPacketSize()  { return szBYTE ; }
+	string getPacketName()  { return "GCTradeVerify"; }
+	string toString() ;
 
 public:
-	BYTE getCode() const throw() { return m_Code; }
+	BYTE getCode()  { return m_Code; }
 	void setCode(BYTE code) throw() { m_Code = code; }
 
 private:
@@ -90,9 +90,9 @@ class GCTradeVerifyFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCTradeVerify(); }
-	string getPacketName() const throw() { return "GCTradeVerify"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_TRADE_VERIFY; }
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE; }
+	string getPacketName()  { return "GCTradeVerify"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_TRADE_VERIFY; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE; }
 
 };
 

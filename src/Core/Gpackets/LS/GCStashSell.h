@@ -24,13 +24,13 @@ public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_STASH_SELL; }
-	PacketSize_t getPacketSize() const throw() { return szGold; }
-	string getPacketName() const throw() { return "GCStashSell"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_STASH_SELL; }
+	PacketSize_t getPacketSize()  { return szGold; }
+	string getPacketName()  { return "GCStashSell"; }
+	string toString() ;
 
 public:
-	Gold_t getPrice(void) const throw() { return m_Price; }
+	Gold_t getPrice(void)  { return m_Price; }
 	void  setPrice(Gold_t price) throw() { m_Price = price; }
 
 private:
@@ -49,9 +49,9 @@ class GCStashSellFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCStashSell(); }
-	string getPacketName() const throw() { return "GCStashSell"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_STASH_SELL; }
-	PacketSize_t getPacketMaxSize() const throw() { return szGold; }
+	string getPacketName()  { return "GCStashSell"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_STASH_SELL; }
+	PacketSize_t getPacketMaxSize()  { return szGold; }
 };
 
 

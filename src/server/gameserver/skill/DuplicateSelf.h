@@ -20,8 +20,8 @@ public:
 	~DuplicateSelf() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "DuplicateSelf"; }
-	SkillType_t getSkillType() const throw() { return SKILL_DUPLICATE_SELF; }
+    string getSkillHandlerName()  { return "DuplicateSelf"; }
+	SkillType_t getSkillType()  { return SKILL_DUPLICATE_SELF; }
 
 	//void execute(Slayer* pSlayer, SlayerSkillSlot* pSlayerSkillSlot, CEffectID_t CEffectID) throw(Error);
 	//void execute(Vampire* pVampire, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);

@@ -38,8 +38,8 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_ADD_VAMPIRE; }
-	PacketSize_t getPacketSize() const throw()
+	PacketID_t getPacketID()  { return PACKET_GC_ADD_VAMPIRE; }
+	PacketSize_t getPacketSize() 
 	{
 		PacketSize_t ret = m_VampireInfo.getSize() + m_pEffectInfo->getSize() + ((m_pPetInfo!=NULL)?m_pPetInfo->getSize():szPetType) + szBYTE;
 
@@ -58,21 +58,21 @@ public:
 
 		return ret;
 	}
-	string getPacketName() const throw() { return "GCAddVampire"; }
-	string toString() const throw();
+	string getPacketName()  { return "GCAddVampire"; }
+	string toString() ;
 
 public:
 	PCVampireInfo3 & getVampireInfo() throw() { return m_VampireInfo; }
-	const PCVampireInfo3 & getVampireInfo() const throw() { return m_VampireInfo; }
+	const PCVampireInfo3 & getVampireInfo()  { return m_VampireInfo; }
 	void setVampireInfo(const PCVampireInfo3 & vampireInfo) throw() { m_VampireInfo = vampireInfo; }
 
-	EffectInfo* getEffectInfo() const throw() { return m_pEffectInfo; }
+	EffectInfo* getEffectInfo()  { return m_pEffectInfo; }
 	void setEffectInfo(EffectInfo* pEffectInfo) throw() { m_pEffectInfo = pEffectInfo; }
 
-	PetInfo* getPetInfo() const throw() { return m_pPetInfo; }
+	PetInfo* getPetInfo()  { return m_pPetInfo; }
 	void setPetInfo(PetInfo* pPetInfo) throw() { m_pPetInfo = pPetInfo; }
 
-	NicknameInfo* getNicknameInfo() const throw() { return m_pNicknameInfo; }
+	NicknameInfo* getNicknameInfo()  { return m_pNicknameInfo; }
 	void setNicknameInfo(NicknameInfo* pNicknameInfo) throw() { m_pNicknameInfo = pNicknameInfo; }
 
 	StoreOutlook	getStoreOutlook() const { return m_StoreOutlook; }
@@ -99,9 +99,9 @@ class GCAddVampireFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCAddVampire(); }
-	string getPacketName() const throw() { return "GCAddVampire"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_ADD_VAMPIRE; }
-	PacketSize_t getPacketMaxSize() const throw() { return PCVampireInfo3::getMaxSize() + EffectInfo::getMaxSize() + PetInfo::getMaxSize() + NicknameInfo::getMaxSize() + StoreOutlook::getMaxSize() + szBYTE; }
+	string getPacketName()  { return "GCAddVampire"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_VAMPIRE; }
+	PacketSize_t getPacketMaxSize()  { return PCVampireInfo3::getMaxSize() + EffectInfo::getMaxSize() + PetInfo::getMaxSize() + NicknameInfo::getMaxSize() + StoreOutlook::getMaxSize() + szBYTE; }
 };
 
 

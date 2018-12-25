@@ -20,7 +20,7 @@ public:
 	EffectDetectHidden(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_DETECT_HIDDEN; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_DETECT_HIDDEN; }
 
 	void affect() throw(Error){}
 	void affect(Creature* pCreature) throw(Error);
@@ -31,7 +31,7 @@ public:
 	void unaffect(Item* pItem) throw(Error) {}
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 

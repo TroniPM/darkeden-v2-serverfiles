@@ -20,9 +20,9 @@ public:
 	~BloodyScarify() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "BloodyScarify"; }
+    string getSkillHandlerName()  { return "BloodyScarify"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_BLLODY_SCARIFY; }
+	SkillType_t getSkillType()  { return SKILL_BLLODY_SCARIFY; }
 
 	void execute(Vampire* pVampire, ObjectID_t targetObject, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
 

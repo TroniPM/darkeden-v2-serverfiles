@@ -20,19 +20,19 @@ public:
 	EffectSquallyBarrier1back(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_SQUALLY_BARRIER1_BACK; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_SQUALLY_BARRIER1_BACK; }
 
 	void affect() throw(Error){}
 
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 public:
-	Level_t getLevel() const throw() { return m_Level; }
+	Level_t getLevel()  { return m_Level; }
 	void setLevel(Level_t Level) throw();
 
-	EffectClass getClientEffectClass() const throw() { return m_ClientEffectClass; }
+	EffectClass getClientEffectClass()  { return m_ClientEffectClass; }
 	void setClientEffectClass(EffectClass effectClass) throw() { m_ClientEffectClass = effectClass; }
 
 private:
@@ -47,8 +47,8 @@ private:
 class EffectSquallyBarrier1backLoader : public EffectLoader 
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_SQUALLY_BARRIER1_BACK; }
-	virtual string getEffectClassName() const throw() { return "EffectSquallyBarrier1back"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_SQUALLY_BARRIER1_BACK; }
+	virtual string getEffectClassName()  { return "EffectSquallyBarrier1back"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error) {}

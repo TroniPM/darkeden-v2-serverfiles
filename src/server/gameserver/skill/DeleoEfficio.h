@@ -20,8 +20,8 @@ public:
 	~DeleoEfficio() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "DeleoEfficio"; }
-	SkillType_t getSkillType() const throw() { return SKILL_DELEO_EFFICIO; }
+    string getSkillHandlerName()  { return "DeleoEfficio"; }
+	SkillType_t getSkillType()  { return SKILL_DELEO_EFFICIO; }
 
 	void execute(Ousters* pOusters, ObjectID_t ObjectID, OustersSkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void computeOutput(const SkillInput& input, SkillOutput& output);

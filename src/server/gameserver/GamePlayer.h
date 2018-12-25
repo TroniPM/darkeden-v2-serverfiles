@@ -79,7 +79,7 @@ public:
 	
 	// get creature pointer 
 	Creature* getCreature() throw() { return m_pCreature; }
-	const Creature* getCreature() const throw() { return m_pCreature; }
+	const Creature* getCreature()  { return m_pCreature; }
 
 	// set creature pointer
 	void setCreature(Creature* pCreature) throw() { m_pCreature = pCreature; }
@@ -93,7 +93,7 @@ public:
 	Packet* getOldPacket(PacketID_t packetID) throw(NoSuchElementException);
 
 	// get player's status
-	PlayerStatus getPlayerStatus() const throw() { return m_PlayerStatus; }
+	PlayerStatus getPlayerStatus()  { return m_PlayerStatus; }
 
 	// set player's status
 	void setPlayerStatus(PlayerStatus playerStatus) throw() { m_PlayerStatus = playerStatus; }
@@ -120,11 +120,11 @@ public:
 	void saveSpecialEventCount(void) throw();
 	
 public :	// '이미 접속 중'인 경우. 강제 종료를 위해서. by sigi.
-	bool isKickForLogin() const throw()						{ return m_bKickForLogin; }
+	bool isKickForLogin() 						{ return m_bKickForLogin; }
 	void setKickForLogin(bool bKickForLogin=true) throw() 	{ m_bKickForLogin = bKickForLogin; }
 
-	const string& 	getKickRequestHost() const throw()		{ return m_KickRequestHost; }
-	uint  			getKickRequestPort() const throw()		{ return m_KickRequestPort; }
+	const string& 	getKickRequestHost() 		{ return m_KickRequestHost; }
+	uint  			getKickRequestPort() 		{ return m_KickRequestPort; }
 
 	void			setKickRequestHost(const string& host) throw()	{ m_KickRequestHost = host; }
 	void			setKickRequestPort(uint port) throw()			{ m_KickRequestPort = port; }
@@ -132,7 +132,7 @@ public :	// '이미 접속 중'인 경우. 강제 종료를 위해서. by sigi.
 public :
 	// 쩝. 
 	void	setReconnectPacket(GCReconnectLogin* pPacket) throw() 	{ SAFE_DELETE(m_pReconnectPacket); m_pReconnectPacket = pPacket; }
-	GCReconnectLogin* getReconnectPacket() const throw()			{ return m_pReconnectPacket; }
+	GCReconnectLogin* getReconnectPacket() 			{ return m_pReconnectPacket; }
 
 	// by sigi. 2002.10.23
 	bool isFreePass() const { return m_bFreePass; }

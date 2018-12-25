@@ -88,7 +88,7 @@ public:
 	ZoneGroup* getZoneGroupByGroupID(ZoneGroupID_t ZoneGroupID) const throw(NoSuchElementException);
 
 	// size of zone group
-	uint size() const throw() { return m_ZoneGroups.size(); }
+	uint size()  { return m_ZoneGroups.size(); }
 
 	// getZoneGroups
 	const hash_map<ZoneGroupID_t, ZoneGroup*>& getZoneGroups() const { return m_ZoneGroups; }
@@ -102,7 +102,7 @@ public:
 
 
 	// get debug string
-	string toString() const throw();
+	string toString() ;
 
 	void	outputLoadValue() throw (Error);
 

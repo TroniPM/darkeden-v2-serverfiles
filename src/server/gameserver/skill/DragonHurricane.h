@@ -20,8 +20,8 @@ public:
 	~DragonHurricane() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "DragonHurricane"; }
-	SkillType_t getSkillType() const throw() { return SKILL_DRAGON_HURRICANE; }
+    string getSkillHandlerName()  { return "DragonHurricane"; }
+	SkillType_t getSkillType()  { return SKILL_DRAGON_HURRICANE; }
 
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

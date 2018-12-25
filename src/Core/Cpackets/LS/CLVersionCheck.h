@@ -36,24 +36,24 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CL_VERSION_CHECK; }
+	PacketID_t getPacketID()  { return PACKET_CL_VERSION_CHECK; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szDWORD + szDWORD; }
+	PacketSize_t getPacketSize()  { return szDWORD + szDWORD; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CLVersionCheck"; }
+	string getPacketName()  { return "CLVersionCheck"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public:
 
 	// get/set Client Version
-	DWORD getVersion() const throw() { return m_Version; }
+	DWORD getVersion()  { return m_Version; }
 	void setVersion(DWORD Version) throw() { m_Version = Version; }
 
-	DWORD getServerVersion() const throw() { return m_ServerVersion; }
+	DWORD getServerVersion()  { return m_ServerVersion; }
 	void setServerVersion(DWORD ServerVersion) throw() { m_ServerVersion= ServerVersion; }
 
 private :
@@ -80,13 +80,13 @@ public:
 	Packet* createPacket() throw() { return new CLVersionCheck(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CLVersionCheck"; }
+	string getPacketName()  { return "CLVersionCheck"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CL_VERSION_CHECK; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CL_VERSION_CHECK; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw() { return szDWORD + szDWORD; }
+	PacketSize_t getPacketMaxSize()  { return szDWORD + szDWORD; }
 
 };
 

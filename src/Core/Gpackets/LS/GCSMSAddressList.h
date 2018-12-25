@@ -45,10 +45,10 @@ public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_SMS_ADDRESS_LIST; }
-	PacketSize_t getPacketSize() const throw();
-	string getPacketName() const throw() { return "GCSMSAddressList"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_SMS_ADDRESS_LIST; }
+	PacketSize_t getPacketSize() ;
+	string getPacketName()  { return "GCSMSAddressList"; }
+	string toString() ;
 
 public:
 	vector<AddressUnit*>& getAddresses() { return m_Addresses; }
@@ -69,9 +69,9 @@ public :
 	
 public:
 	Packet* createPacket() throw() { return new GCSMSAddressList(); }
-	string getPacketName() const throw() { return "GCSMSAddressList"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_SMS_ADDRESS_LIST; }
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + AddressUnit::getMaxPacketSize() * MAX_ADDRESS_NUM; }
+	string getPacketName()  { return "GCSMSAddressList"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_SMS_ADDRESS_LIST; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + AddressUnit::getMaxPacketSize() * MAX_ADDRESS_NUM; }
 };
 
 //////////////////////////////////////////////////////////////////////////////

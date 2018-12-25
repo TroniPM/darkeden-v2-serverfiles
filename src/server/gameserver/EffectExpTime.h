@@ -22,7 +22,7 @@ public:
 	virtual ~EffectExpTime() throw(Error);
 
 public:
-	virtual EffectClass getEffectClass() const throw() { return EFFECT_CLASS_EXP_TIME; }
+	virtual EffectClass getEffectClass()  { return EFFECT_CLASS_EXP_TIME; }
 
 	virtual void affect() throw(Error);
 	
@@ -32,7 +32,7 @@ public:
 	void save(const string & ownerID) throw(Error) {}
 	void destroy(const string & ownerID) throw(Error) {}
 
-	virtual string toString() const throw();
+	virtual string toString() ;
 };
 
 #endif

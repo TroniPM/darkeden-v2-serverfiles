@@ -33,10 +33,10 @@ public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_NICKNAME_LIST; }
-	PacketSize_t getPacketSize() const throw();
-	string getPacketName() const throw() { return "GCNicknameList"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_NICKNAME_LIST; }
+	PacketSize_t getPacketSize() ;
+	string getPacketName()  { return "GCNicknameList"; }
+	string toString() ;
 
 public:
 	vector<NicknameInfo*>& getNicknames() { return m_Nicknames; }
@@ -57,9 +57,9 @@ public :
 	
 public:
 	Packet* createPacket() throw() { return new GCNicknameList(); }
-	string getPacketName() const throw() { return "GCNicknameList"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_NICKNAME_LIST; }
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + NicknameInfo::getMaxSize() * MAX_NICKNAME_NUM; }
+	string getPacketName()  { return "GCNicknameList"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_NICKNAME_LIST; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + NicknameInfo::getMaxSize() * MAX_NICKNAME_NUM; }
 };
 
 //////////////////////////////////////////////////////////////////////////////

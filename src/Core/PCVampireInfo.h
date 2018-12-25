@@ -104,7 +104,7 @@ public:
 			throw InvalidProtocolException("invalid slot value");
 	}
 
-	Alignment_t getAlignment() const throw() { return m_Alignment; }
+	Alignment_t getAlignment()  { return m_Alignment; }
 	void setAlignment(Alignment_t Alignment) throw() { m_Alignment = Alignment; }
 
 	Fame_t getFame () const throw () { return m_Fame; }
@@ -131,10 +131,10 @@ public:
 	Color_t getSkinColor () const throw () { return m_SkinColor; }
 	void setSkinColor (Color_t skinColor) throw () { m_SkinColor = skinColor; }
 
-	ItemType_t getCoatType() const throw() { return m_CoatType; }
+	ItemType_t getCoatType()  { return m_CoatType; }
 	void setCoatType(ItemType_t CoatType) throw() { m_CoatType = CoatType; }
 	
-	Color_t getCoatColor() const throw() { return m_CoatColor; }
+	Color_t getCoatColor()  { return m_CoatColor; }
 	void setCoatColor(Color_t CoatColor) throw() { m_CoatColor = CoatColor; }
 
     Attr_t getSTR () const throw (Error) { if (m_STR > maxVampireAttr) throw Error("STR out of range"); return m_STR; }

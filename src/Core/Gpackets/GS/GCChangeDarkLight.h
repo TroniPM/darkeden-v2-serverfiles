@@ -33,27 +33,27 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_CHANGE_DARK_LIGHT; }
+	PacketID_t getPacketID()  { return PACKET_GC_CHANGE_DARK_LIGHT; }
 	
 	// get packet's body size
 	// *OPTIMIZATION HINT*
 	// const static GCChangeDarkLightPacketSize 를 정의, 리턴하라.
-	PacketSize_t getPacketSize() const throw() { return szDarkLevel + szLightLevel; }
+	PacketSize_t getPacketSize()  { return szDarkLevel + szLightLevel; }
 
 	// get packet's name
-	string getPacketName() const throw() { return "GCChangeDarkLight"; }
+	string getPacketName()  { return "GCChangeDarkLight"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public :
 
 	// get/set dark level
-	DarkLevel_t getDarkLevel() const throw() { return m_DarkLevel; }
+	DarkLevel_t getDarkLevel()  { return m_DarkLevel; }
 	void setDarkLevel(DarkLevel_t darkLevel) throw() { m_DarkLevel = darkLevel; }
 
 	// get/set light level
-	LightLevel_t getLightLevel() const throw() { return m_LightLevel; }
+	LightLevel_t getLightLevel()  { return m_LightLevel; }
 	void setLightLevel(LightLevel_t lightLevel) throw() { m_LightLevel = lightLevel; }
 
 
@@ -84,15 +84,15 @@ public :
 	Packet* createPacket() throw() { return new GCChangeDarkLight(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCChangeDarkLight"; }
+	string getPacketName()  { return "GCChangeDarkLight"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_CHANGE_DARK_LIGHT; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_CHANGE_DARK_LIGHT; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCChangeDarkLightPacketSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szDarkLevel + szLightLevel; }
+	PacketSize_t getPacketMaxSize()  { return szDarkLevel + szLightLevel; }
 
 };
 

@@ -20,13 +20,13 @@
 class ActionTutorial : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_TUTORIAL; }
+	virtual ActionType_t getActionType()  { return ACTION_TUTORIAL; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
-	string getInterface(void) const throw() { return m_Interface; }
+	string getInterface(void)  { return m_Interface; }
 	void setInterface(string interface) throw() { m_Interface = interface; }
 
 private:
@@ -42,8 +42,8 @@ private:
 class ActionTutorialFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_TUTORIAL; }
-	virtual string getActionName() const throw() { return "Tutorial"; }
-	virtual Action* createAction() const throw() { return new ActionTutorial(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_TUTORIAL; }
+	virtual string getActionName()  { return "Tutorial"; }
+	virtual Action* createAction()  { return new ActionTutorial(); }
 };
 #endif

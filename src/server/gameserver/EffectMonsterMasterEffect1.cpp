@@ -24,7 +24,7 @@ EffectMonsterMasterEffect1::EffectMonsterMasterEffect1(Creature* pCreature)
 	__END_CATCH
 }
 
-Effect::EffectClass EffectMonsterMasterEffect1::getSendEffectClass() const throw()
+Effect::EffectClass EffectMonsterMasterEffect1::getSendEffectClass() 
 {
 	Monster* pSlayer = dynamic_cast<Monster*>(m_pTarget);
 	if ( pSlayer == NULL ) return getEffectClass();
@@ -117,7 +117,7 @@ void EffectMonsterMasterEffect1::unaffect(Creature* pCreature)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 string EffectMonsterMasterEffect1::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

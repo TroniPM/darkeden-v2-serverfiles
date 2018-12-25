@@ -33,18 +33,18 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_LC_DELETE_PC_OK; }
+	PacketID_t getPacketID()  { return PACKET_LC_DELETE_PC_OK; }
 	
 	// get packet body size
 	// *OPTIMIZATION HINT*
 	// const static LCDeletePCOKPacketSize 를 정의, 리턴하라.
-	PacketSize_t getPacketSize() const throw() { return 0; }
+	PacketSize_t getPacketSize()  { return 0; }
 	
 	// get packet's name
-	string getPacketName() const throw() { return "LCDeletePCOK"; }
+	string getPacketName()  { return "LCDeletePCOK"; }
 	
 	// get packet's debug string
-	string toString() const throw() { return "LCDeletePCOK"; }
+	string toString()  { return "LCDeletePCOK"; }
 	
 };
 
@@ -65,13 +65,13 @@ public:
 	Packet* createPacket() throw() { return new LCDeletePCOK(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "LCDeletePCOK"; }
+	string getPacketName()  { return "LCDeletePCOK"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_LC_DELETE_PC_OK; }
+	PacketID_t getPacketID()  { return Packet::PACKET_LC_DELETE_PC_OK; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw() { return 0; }
+	PacketSize_t getPacketMaxSize()  { return 0; }
 	
 };
 

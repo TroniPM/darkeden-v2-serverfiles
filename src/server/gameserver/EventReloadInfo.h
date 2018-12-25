@@ -45,11 +45,11 @@ public:
 	~EventReloadInfo() throw();			
 
 public:
-	virtual EventClass getEventClass() const throw() { return EVENT_CLASS_RELOAD_INFO; }
+	virtual EventClass getEventClass()  { return EVENT_CLASS_RELOAD_INFO; }
 
 	virtual void activate() throw(Error);
 	
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 	InfoType getInfoType() const { return m_InfoType; }

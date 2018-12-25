@@ -34,8 +34,8 @@ public:
 	void load() throw();
 
 public:
-	bool getSlayerPosition(ZoneID_t id, ZONE_COORD& zoneCoord) const throw();//NoSuchElementException);
-	bool getVampirePosition(ZoneID_t id, ZONE_COORD& zoneCoord) const throw();//NoSuchElementException);
+	bool getSlayerPosition(ZoneID_t id, ZONE_COORD& zoneCoord) ;//NoSuchElementException);
+	bool getVampirePosition(ZoneID_t id, ZONE_COORD& zoneCoord) ;//NoSuchElementException);
 
 	void addSlayerPosition(ZoneID_t id, const ZONE_COORD& coord) throw(DuplicatedException, Error);
 	void addVampirePosition(ZoneID_t id, const ZONE_COORD& coord) throw(DuplicatedException, Error);

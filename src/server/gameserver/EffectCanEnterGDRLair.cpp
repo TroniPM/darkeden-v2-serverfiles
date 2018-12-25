@@ -161,7 +161,7 @@ void EffectCanEnterGDRLair::save (const string & ownerID)
 }
 
 string EffectCanEnterGDRLair::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

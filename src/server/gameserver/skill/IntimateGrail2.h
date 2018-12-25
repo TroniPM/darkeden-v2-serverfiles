@@ -20,8 +20,8 @@ public:
 	~IntimateGrail2() throw() {}
 	
 public :
-    string getSkillHandlerName() const throw() { return "IntimateGrail2"; }
-	SkillType_t getSkillType() const throw() { return SKILL_INTIMATE_GRAIL2; }
+    string getSkillHandlerName()  { return "IntimateGrail2"; }
+	SkillType_t getSkillType()  { return SKILL_INTIMATE_GRAIL2; }
 
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);

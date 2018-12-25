@@ -29,7 +29,7 @@ GCUnionOfferList::~GCUnionOfferList()
     __END_CATCH
 }
 
-PacketSize_t GCUnionOfferList::getPacketSize() const throw()
+PacketSize_t GCUnionOfferList::getPacketSize() 
 {
 	PacketSize_t ret = szBYTE;
 

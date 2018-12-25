@@ -27,16 +27,16 @@ public:
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error); 
 
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_ENEMY_ERASE; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_ENEMY_ERASE; }
 
-	string getEnemyName() const throw() { return m_EnemyName ;}
+	string getEnemyName()  { return m_EnemyName ;}
 	void setEnemyName(const string & EnemyName) throw(Error) { m_EnemyName = EnemyName;}
 
     virtual void create(const string & ownerID) throw(Error);
     virtual void save(const string & ownerID) throw(Error);
     virtual void destroy(const string & ownerID) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	string m_EnemyName;
@@ -49,8 +49,8 @@ private:
 class EffectEnemyEraseLoader : public EffectLoader 
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_ENEMY_ERASE; }
-	virtual string getEffectClassName() const throw() { return "EffectEnemyErase"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_ENEMY_ERASE; }
+	virtual string getEffectClassName()  { return "EffectEnemyErase"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

@@ -64,7 +64,7 @@ public:
 	ZoneID_t getZoneID(SkillType_t SkillType) const;
 	
 	// toString for Debug
-	string toString() const throw();
+	string toString() ;
 
 private:
 

@@ -29,25 +29,25 @@ public:
 	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) throw(Error);
 	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
 	void tinysave(const char* field) const throw (Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	static void initItemIDRegistry(void) throw();
 
 public:
-	virtual ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_ETC; }
-	virtual string getObjectTableName() const throw() { return "ETCObject"; }
+	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_ETC; }
+	virtual string getObjectTableName()  { return "ETCObject"; }
 
-	virtual ItemType_t getItemType() const throw() { return m_ItemType; }
+	virtual ItemType_t getItemType()  { return m_ItemType; }
 	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() const throw(Error);
 	virtual VolumeHeight_t getVolumeHeight() const throw(Error);
 	virtual Weight_t getWeight() const throw(Error);
 
-	virtual ItemNum_t getNum() const throw() { return m_Num; }
+	virtual ItemNum_t getNum()  { return m_Num; }
 	virtual void setNum(ItemNum_t Num) throw() { m_Num = Num; }
 
-	bool    isStackable() const throw() { return true; }
+	bool    isStackable()  { return true; }
 
 
 private:
@@ -66,8 +66,8 @@ private:
 class ETCInfo : public ItemInfo 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_ETC; }
-	virtual string toString() const throw();
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_ETC; }
+	virtual string toString() ;
 
 private:
 	// bomb material 
@@ -83,7 +83,7 @@ private:
 class ETCInfoManager : public InfoClassManager 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_ETC; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_ETC; }
 	
 	virtual void load() throw(Error);
 
@@ -100,10 +100,10 @@ class ETCFactory : public ItemFactory {
 public:
 	
 	// get item class
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_ETC; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_ETC; }
 
 	// get item classname
-	virtual string getItemClassName() const throw() { return "ETC"; }
+	virtual string getItemClassName()  { return "ETC"; }
 	
 public:
 
@@ -123,10 +123,10 @@ class ETCLoader : public ItemLoader
 public:
 
 	// get item class
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_ETC; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_ETC; }
 
 	// get item class name
-	virtual string getItemClassName() const throw() { return "ETC"; }
+	virtual string getItemClassName()  { return "ETC"; }
 
 public:
 

@@ -54,23 +54,23 @@ public :
 	string toString () const throw ();
 
 	// get/set GuildID
-	GuildID_t getGuildID() const throw() { return m_GuildID; }
+	GuildID_t getGuildID()  { return m_GuildID; }
 	void setGuildID( GuildID_t GuildID ) throw() { m_GuildID = GuildID; }
 
 	// get/set Guild Name
-	string getGuildName() const throw() { return m_GuildName; }
+	string getGuildName()  { return m_GuildName; }
 	void setGuildName( const string& GuildName ) throw() { m_GuildName = GuildName; }
 
 	// get/set Guild Master
-	string getGuildMaster() const throw() { return m_GuildMaster; }
+	string getGuildMaster()  { return m_GuildMaster; }
 	void setGuildMaster( const string& GuildMaster ) throw() { m_GuildMaster = GuildMaster; }
 
 	// get/set Guild Member Count
-	BYTE getGuildMemberCount() const throw() { return m_GuildMemberCount; }
+	BYTE getGuildMemberCount()  { return m_GuildMemberCount; }
 	void setGuildMemberCount( BYTE GuildMemberCount ) throw() { m_GuildMemberCount = GuildMemberCount; }
 
 	// get/set Guild Expire Date
-	string getGuildExpireDate() const throw() { return m_GuildExpireDate; }
+	string getGuildExpireDate()  { return m_GuildExpireDate; }
 	void setGuildExpireDate( const string& GuildExpireDate ) throw() { m_GuildExpireDate = GuildExpireDate; }
 
 

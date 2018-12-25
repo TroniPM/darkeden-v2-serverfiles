@@ -37,24 +37,24 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CL_RECONNECT_LOGIN; }
+	PacketID_t getPacketID()  { return PACKET_CL_RECONNECT_LOGIN; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		return szDWORD + szBYTE; 						// authentication key
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "CLReconnectLogin"; }
+	string getPacketName()  { return "CLReconnectLogin"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public:
 
 	// get/set key
-	DWORD getKey() const throw() { return m_Key; }
+	DWORD getKey()  { return m_Key; }
 	void setKey(DWORD key) throw() { m_Key = key; }
 
 	// Web login
@@ -88,13 +88,13 @@ public:
 	Packet* createPacket() throw() { return new CLReconnectLogin(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CLReconnectLogin"; }
+	string getPacketName()  { return "CLReconnectLogin"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CL_RECONNECT_LOGIN; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CL_RECONNECT_LOGIN; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw()
+	PacketSize_t getPacketMaxSize() 
 	{ 
 		return szDWORD + szBYTE; 			// authentication key
 	}

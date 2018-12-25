@@ -25,13 +25,13 @@ public:
 	ActionAskVariable() : m_pVariableBuffer(NULL) {}
 
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_ASK_VARIABLE; }
+	virtual ActionType_t getActionType()  { return ACTION_ASK_VARIABLE; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
-	ScriptID_t getScriptID() const throw() { return m_ScriptID; }
+	ScriptID_t getScriptID()  { return m_ScriptID; }
 	void setScriptID(ScriptID_t scriptID) throw() { m_ScriptID = scriptID; }
 
 private:
@@ -47,8 +47,8 @@ private:
 class ActionAskVariableFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_ASK_VARIABLE; }
-	virtual string getActionName() const throw() { return "AskVariable"; }
-	virtual Action* createAction() const throw() { return new ActionAskVariable(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_ASK_VARIABLE; }
+	virtual string getActionName()  { return "AskVariable"; }
+	virtual Action* createAction()  { return new ActionAskVariable(); }
 };
 #endif

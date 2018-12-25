@@ -63,7 +63,7 @@ public:
 	void loadFromFile(ifstream& file) throw();
 	void parseString(const string& text) throw();
 
-	string toString(void) const throw();
+	string toString(void) ;
 //	XMLTree*	makeXMLTree() const;
 
 public:
@@ -89,7 +89,7 @@ public:
 	void parseString(int itemClass, const string& text) throw();
 	bool getRandomOption(ITEM_TEMPLATE* pTemplate) throw();
 	bool getRandomOption2(ITEM_TEMPLATE* pTemplate) throw();
-	string toString(void) const throw();
+	string toString(void) ;
 //	XMLTree*	makeXMLTree() const;
 
 public:
@@ -120,7 +120,7 @@ public:
 	void loadFromFile(ifstream& file) throw();
 	void parseString(const string& text) throw();
 	bool getRandomItem(ITEM_TEMPLATE* pTemplate) throw();
-	string toString(void) const throw();
+	string toString(void) ;
 //	XMLTree*	makeXMLTree() const;
 
 public:
@@ -154,7 +154,7 @@ public:
 	bool getRandomItem(ITEM_TEMPLATE* pTemplate) throw();
 	bool getRandomItem(ITEM_TEMPLATE* pTemplate, int nPercent) throw();
 	
-	string toString(void) const throw();
+	string toString(void) ;
 //	XMLTree*	makeXMLTree() const;
 
 public:
@@ -186,7 +186,7 @@ public:
 	void parseString(const string& text) throw();
 	void addTreasure(Treasure* pTreasure) throw();
 
-	string toString(void) const throw();
+	string toString(void) ;
 //	XMLTree*	makeXMLTree() const;
 
 public:

@@ -36,10 +36,10 @@ public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_MONSTER_KILL_QUEST_INFO; }
-	PacketSize_t getPacketSize() const throw();
-	string getPacketName() const throw() { return "GCMonsterKillQuestInfo"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_MONSTER_KILL_QUEST_INFO; }
+	PacketSize_t getPacketSize() ;
+	string getPacketName()  { return "GCMonsterKillQuestInfo"; }
+	string toString() ;
 
 public:
 	bool		empty() const { return m_QuestInfoList.empty(); }
@@ -58,9 +58,9 @@ class GCMonsterKillQuestInfoFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCMonsterKillQuestInfo(); }
-	string getPacketName() const throw() { return "GCMonsterKillQuestInfo"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_MONSTER_KILL_QUEST_INFO; }
-	PacketSize_t getPacketMaxSize() const throw()
+	string getPacketName()  { return "GCMonsterKillQuestInfo"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_MONSTER_KILL_QUEST_INFO; }
+	PacketSize_t getPacketMaxSize() 
 	{
 		return szBYTE
 			 + GCMonsterKillQuestInfo::szQuestInfo * maxQuestNum;

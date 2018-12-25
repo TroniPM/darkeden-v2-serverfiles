@@ -37,26 +37,26 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_OTHER_GUILD_NAME; }
+	PacketID_t getPacketID()  { return PACKET_GC_OTHER_GUILD_NAME; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szGuildID + szBYTE + m_GuildName.size(); }
+	PacketSize_t getPacketSize()  { return szObjectID + szGuildID + szBYTE + m_GuildName.size(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCOtherGuildName"; }
+	string getPacketName()  { return "GCOtherGuildName"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID( ObjectID_t objectID ) throw() { m_ObjectID = objectID; }
 
 	// get/set Guild ID
-	GuildID_t getGuildID() const throw() { return m_GuildID; }
+	GuildID_t getGuildID()  { return m_GuildID; }
 	void setGuildID( GuildID_t guildID ) throw() { m_GuildID = guildID; }
 
 	// get/set Guild Name
-	string getGuildName() const throw() { return m_GuildName; }
+	string getGuildName()  { return m_GuildName; }
 	void setGuildName(const string& guildName) throw() { m_GuildName = guildName; }
 
 private :
@@ -88,15 +88,15 @@ public :
 	Packet* createPacket() throw() { return new GCOtherGuildName(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCOtherGuildName"; }
+	string getPacketName()  { return "GCOtherGuildName"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_OTHER_GUILD_NAME; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_OTHER_GUILD_NAME; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCOtherGuildNamePacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szGuildID + szBYTE + 30; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szGuildID + szBYTE + 30; }
 
 };
 

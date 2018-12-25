@@ -98,37 +98,37 @@ public :
 	void setFailureCount ( uint nFailed ) throw () { m_FailureCount = nFailed; }
 
     // get / set GoreLevel
-    bool isAdult() const throw() { return m_isAdult; }
+    bool isAdult()  { return m_isAdult; }
     void setAdult(bool isAdult) throw() { m_isAdult = isAdult; }
 
 public :
-	int		getKickCharacterCount() const throw()	{ return m_KickCharacterCount; }	
+	int		getKickCharacterCount() 	{ return m_KickCharacterCount; }	
 	void 	setExpireTimeForKickCharacter() throw();
 
 	// 현재 월드의 ID
-	WorldID_t getWorldID() const throw() { return m_WorldID; }
+	WorldID_t getWorldID()  { return m_WorldID; }
 	void setWorldID( WorldID_t WorldID ) throw() { m_WorldID = WorldID; }
 
 	// 현재 서버의 ID
-	WorldID_t getGroupID() const throw() { return m_ServerGroupID; }
+	WorldID_t getGroupID()  { return m_ServerGroupID; }
 	void setGroupID( ServerGroupID_t ServerGroupID ) throw() { m_ServerGroupID = ServerGroupID; }
 
 	// 현재 서버의 ID
-	uint getLastSlot() const throw() { return m_LastSlot; }
+	uint getLastSlot()  { return m_LastSlot; }
 	void setLastSlot( uint lastSlot ) throw() { m_LastSlot = lastSlot; }
 
     // WorldID, GroupID가 설정되었나?
-    bool isSetWorldGroupID() const throw() { return m_bSetWorldGroupID; }
+    bool isSetWorldGroupID()  { return m_bSetWorldGroupID; }
     void setWorldGroupID(bool bSet) throw() { m_bSetWorldGroupID = bSet; }
 
     // 마지막으로 접속한 캐릭터의 이름
-	const string& getLastCharacterName() const throw() { return m_LastCharacterName; }
+	const string& getLastCharacterName()  { return m_LastCharacterName; }
 	void setLastCharacterName( const string& name ) throw() { m_LastCharacterName = name; }
 
-	const string& getZipcode() const throw() { return m_Zipcode; }
+	const string& getZipcode()  { return m_Zipcode; }
 	void setZipcode( const string& zipcode ) throw() { m_Zipcode = zipcode; }
 
-	const string& getSSN() const throw() { return m_SSN; }
+	const string& getSSN()  { return m_SSN; }
 	void setSSN( const string& ssn ) throw() { m_SSN = ssn; }
 
 	bool isFreePass() const	{ return m_bFreePass; }

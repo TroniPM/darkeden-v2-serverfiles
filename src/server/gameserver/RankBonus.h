@@ -117,13 +117,13 @@ public:
 	~RankBonus() throw();
 
 public:
-	DWORD getType() const throw() { return m_Type; }
+	DWORD getType()  { return m_Type; }
 	void setType( DWORD type ) throw() { m_Type = type; }
 
-	DWORD getPoint() const throw() { return m_Point; }
+	DWORD getPoint()  { return m_Point; }
 	void setPoint( DWORD point ) throw() { m_Point = point; }
 
-	Rank_t getRank() const throw() { return m_Rank; }
+	Rank_t getRank()  { return m_Rank; }
 	void setRank( Rank_t rank ) throw() { m_Rank = rank; }
 
 protected:

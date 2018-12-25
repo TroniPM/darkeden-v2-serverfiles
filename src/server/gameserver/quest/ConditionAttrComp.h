@@ -40,15 +40,15 @@ public:
 	virtual ~ConditionAttrComp() throw();
 
 public:
-	virtual ConditionType_t getConditionType() const throw() { return CONDITION_ATTR_COMP; }
-	virtual bool isPassive() const throw() { return true; }
-	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) const throw();
+	virtual ConditionType_t getConditionType()  { return CONDITION_ATTR_COMP; }
+	virtual bool isPassive()  { return true; }
+	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) ;
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 	void parseOperator(string& op, uint& var) throw();
-	bool satisfy(uint op, uint current, uint restriction) const throw();
+	bool satisfy(uint op, uint current, uint restriction) ;
 
 private:
 	uint m_ReqSTR;        // ÇÊ¿ä STR
@@ -73,9 +73,9 @@ private:
 class ConditionAttrCompFactory : public ConditionFactory 
 {
 public:
-    virtual ConditionType_t getConditionType() const throw() { return Condition::CONDITION_ATTR_COMP; }
-    virtual Condition* createCondition() const throw() { return new ConditionAttrComp(); }
-    virtual string getConditionName() const throw() { return "AttrComp"; }
+    virtual ConditionType_t getConditionType()  { return Condition::CONDITION_ATTR_COMP; }
+    virtual Condition* createCondition()  { return new ConditionAttrComp(); }
+    virtual string getConditionName()  { return "AttrComp"; }
 };
 
 #endif

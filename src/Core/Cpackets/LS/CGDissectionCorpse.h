@@ -45,31 +45,31 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_DISSECTION_CORPSE; }
+	PacketID_t getPacketID()  { return PACKET_CG_DISSECTION_CORPSE; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szCoord + szCoord + szBYTE; }
+	PacketSize_t getPacketSize()  { return szObjectID + szCoord + szCoord + szBYTE; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGDissectionCorpse"; }
+	string getPacketName()  { return "CGDissectionCorpse"; }
 
 	// get/set Corpse's X
-	Coord_t getX() const throw() { return m_X; }
+	Coord_t getX()  { return m_X; }
 	void setX(Coord_t X) throw() { m_X = X; }
 
 	// get/set Corpse's Y
-	Coord_t getY() const throw() { return m_Y; }
+	Coord_t getY()  { return m_Y; }
 	void setY(Coord_t Y) throw() { m_Y = Y; }
 
 	// get/set ObjectID
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
 
 	BYTE isPet() const { return m_IsPet; }
 	void setPet(BYTE isPet) { m_IsPet = isPet; }
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 private :
 
@@ -108,13 +108,13 @@ public:
 	Packet* createPacket() throw() { return new CGDissectionCorpse(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGDissectionCorpse"; }
+	string getPacketName()  { return "CGDissectionCorpse"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_DISSECTION_CORPSE; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_DISSECTION_CORPSE; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szCoord + szCoord + szBYTE; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szCoord + szCoord + szBYTE; }
 };
 
 

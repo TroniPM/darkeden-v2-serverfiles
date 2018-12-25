@@ -82,7 +82,7 @@ public:
 	void addSkillProperty(SkillProperty* pSkillProperty) throw(DuplicatedException, OutOfBoundException, Error);
 
 	// toString for Debug
-	string toString() const throw();
+	string toString() ;
 
 private:
 	vector<SkillProperty*> 	m_SkillProperties;

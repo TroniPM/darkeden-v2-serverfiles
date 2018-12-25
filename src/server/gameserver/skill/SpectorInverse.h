@@ -20,9 +20,9 @@ public:
 	~SpectorInverse() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "SpectorInverse"; }
+    string getSkillHandlerName()  { return "SpectorInverse"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_SPECTOR_INVERSE; }
+	SkillType_t getSkillType()  { return SKILL_SPECTOR_INVERSE; }
 
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

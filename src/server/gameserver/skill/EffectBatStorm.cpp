@@ -223,7 +223,7 @@ void EffectBatStorm::unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object*
 }
 
 string EffectBatStorm::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

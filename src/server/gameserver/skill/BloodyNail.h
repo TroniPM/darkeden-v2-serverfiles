@@ -20,9 +20,9 @@ public:
 	~BloodyNail() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "BloodyNail"; }
+    string getSkillHandlerName()  { return "BloodyNail"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_BLOODY_NAIL; }
+	SkillType_t getSkillType()  { return SKILL_BLOODY_NAIL; }
 
 	void execute(Vampire* pVampire, ObjectID_t targetObject, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Monster* pMonster, Creature* pEnemy) throw(Error);

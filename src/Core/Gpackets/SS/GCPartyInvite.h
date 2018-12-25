@@ -36,13 +36,13 @@ public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_PARTY_INVITE; }
-	PacketSize_t getPacketSize() const throw() { return szBYTE + szObjectID; }
-	string getPacketName() const throw() { return "GCPartyInvite"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_PARTY_INVITE; }
+	PacketSize_t getPacketSize()  { return szBYTE + szObjectID; }
+	string getPacketName()  { return "GCPartyInvite"; }
+	string toString() ;
 
 public:
-	BYTE getCode() const throw() { return m_Code; }
+	BYTE getCode()  { return m_Code; }
 	void setCode(BYTE code) { m_Code = code; }
 
 	ObjectID_t getTargetObjectID(void) const { return m_TargetObjectID; }
@@ -62,9 +62,9 @@ class GCPartyInviteFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCPartyInvite(); }
-	string getPacketName() const throw() { return "GCPartyInvite"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_PARTY_INVITE; }
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + szObjectID; }
+	string getPacketName()  { return "GCPartyInvite"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_PARTY_INVITE; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + szObjectID; }
 };
 
 

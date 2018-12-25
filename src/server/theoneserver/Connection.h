@@ -49,8 +49,8 @@ public:
 	void connect() throw(SQLConnectException);
 	
 	// check the connection 
-	bool isConnected() const throw() { return m_bConnected; }
-	bool operator !() const throw() { return m_bConnected == false; }
+	bool isConnected()  { return m_bConnected; }
+	bool operator !()  { return m_bConnected == false; }
 	
 	// Statement 객체를 생성해서 리턴한다.
 	Statement * createStatement() throw();	
@@ -59,28 +59,28 @@ public:
 	MYSQL * getMYSQL() throw() { return &m_Mysql; }
 	
 	// get MS's host name(ip)
-	string getHost() const throw() { return m_Host; }
+	string getHost()  { return m_Host; }
 
 	// get MS's service port
-	uint getPort() const throw() { return m_Port; }
+	uint getPort()  { return m_Port; }
 
 	// get database name
-	string getDatabase() const throw() { return m_Database; }
+	string getDatabase()  { return m_Database; }
 
 	// get user id 
-	string getUser() const throw() { return m_User; }
+	string getUser()  { return m_User; }
 
 	// get user password
-	string getPassword() const throw() { return m_Password; }
+	string getPassword()  { return m_Password; }
 
 	// get connection's name
-	string getName() const throw() { return m_Name; }
+	string getName()  { return m_Name; }
 
 	// set connection's name
 	void setName(string name) throw() { m_Name = name; }
 
 	// get/set busy status
-	bool isBusy(void) const throw() { return m_bBusy;}
+	bool isBusy(void)  { return m_bBusy;}
 	void setBusy(bool busy=true) throw() { m_bBusy = busy;}
 
 	// get error

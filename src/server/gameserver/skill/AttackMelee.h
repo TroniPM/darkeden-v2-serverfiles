@@ -20,9 +20,9 @@ public:
 	~AttackMelee() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "AttackMelee"; }
+    string getSkillHandlerName()  { return "AttackMelee"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_ATTACK_MELEE; }
+	SkillType_t getSkillType()  { return SKILL_ATTACK_MELEE; }
 
 	void execute(Slayer* pPlayer, ObjectID_t ObjectID) throw(Error);
 	void execute(Vampire* pCreature, ObjectID_t ObjectID) throw(Error);

@@ -20,8 +20,8 @@ public:
 	~CurseOfBlood1() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "CurseOfBlood1"; }
-	SkillType_t getSkillType() const throw() { return SKILL_CURSE_OF_BLOOD1; }
+    string getSkillHandlerName()  { return "CurseOfBlood1"; }
+	SkillType_t getSkillType()  { return SKILL_CURSE_OF_BLOOD1; }
 
 	void execute(Vampire* pSlayer, VampireSkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	//void execute(Monster* pMonster, Creature* pEnemy) throw(Error);

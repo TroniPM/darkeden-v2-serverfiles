@@ -20,8 +20,8 @@ public:
 	~TripleSlasher() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "TripleSlasher"; }
-	SkillType_t getSkillType() const throw() { return SKILL_TRIPLE_SLASHER; }
+    string getSkillHandlerName()  { return "TripleSlasher"; }
+	SkillType_t getSkillType()  { return SKILL_TRIPLE_SLASHER; }
 
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

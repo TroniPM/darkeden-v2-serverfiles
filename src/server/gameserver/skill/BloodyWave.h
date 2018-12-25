@@ -22,8 +22,8 @@ public:
 	~BloodyWave() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "BloodyWave"; }
-	SkillType_t getSkillType() const throw() { return SKILL_BLOODY_WAVE; }
+    string getSkillHandlerName()  { return "BloodyWave"; }
+	SkillType_t getSkillType()  { return SKILL_BLOODY_WAVE; }
 
 	void execute(Vampire* pVampire, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Vampire* pVampire, ObjectID_t ObjectID, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);

@@ -20,8 +20,8 @@ public:
 	~PlumyBoar() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "PlumyBoar"; }
-	SkillType_t getSkillType() const throw() { return SKILL_PLUMYBOAR; }
+    string getSkillHandlerName()  { return "PlumyBoar"; }
+	SkillType_t getSkillType()  { return SKILL_PLUMYBOAR; }
 
 	void execute(Vampire* pVampire, ObjectID_t ObjectID, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Vampire* pVampire, ZoneCoord_t X, ZoneCoord_t Y, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);

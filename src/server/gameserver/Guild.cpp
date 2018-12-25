@@ -598,7 +598,7 @@ void Guild::tinysave( const char* field ) const
 	__END_CATCH
 }
 
-void Guild::saveCount() const throw()
+void Guild::saveCount() 
 {
 	__BEGIN_TRY
 

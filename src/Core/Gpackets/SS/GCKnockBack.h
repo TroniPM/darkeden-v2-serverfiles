@@ -26,10 +26,10 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_KNOCK_BACK; }
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szZoneCoord*4; }
-	string getPacketName() const throw() { return "GCKnockBack"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_KNOCK_BACK; }
+	PacketSize_t getPacketSize()  { return szObjectID + szZoneCoord*4; }
+	string getPacketName()  { return "GCKnockBack"; }
+	string toString() ;
 
 public:
 	ObjectID_t getObjectID() const { return m_ObjectID; }
@@ -66,9 +66,9 @@ class GCKnockBackFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCKnockBack(); }
-	string getPacketName() const throw() { return "GCKnockBack"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_KNOCK_BACK; }
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szZoneCoord*4; }
+	string getPacketName()  { return "GCKnockBack"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_KNOCK_BACK; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szZoneCoord*4; }
 };
 
 //////////////////////////////////////////////////////////////////////////////

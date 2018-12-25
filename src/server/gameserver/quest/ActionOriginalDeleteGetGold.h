@@ -21,10 +21,10 @@
 class ActionOriginalDeleteGetGold : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_ORIGINAL_DELETE_GETGOLD; }
+	virtual ActionType_t getActionType()  { return ACTION_ORIGINAL_DELETE_GETGOLD; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 private:
@@ -39,8 +39,8 @@ private:
 class ActionOriginalDeleteGetGoldFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_ORIGINAL_DELETE_GETGOLD; }
-	virtual string getActionName() const throw() { return "OriginalDeleteGetGold"; }
-	virtual Action* createAction() const throw() { return new ActionOriginalDeleteGetGold(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_ORIGINAL_DELETE_GETGOLD; }
+	virtual string getActionName()  { return "OriginalDeleteGetGold"; }
+	virtual Action* createAction()  { return new ActionOriginalDeleteGetGold(); }
 };
 #endif

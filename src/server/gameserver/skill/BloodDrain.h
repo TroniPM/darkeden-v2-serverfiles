@@ -22,8 +22,8 @@ public:
 	~BloodDrain() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "BloodDrain"; }
-	SkillType_t getSkillType() const throw() { return SKILL_BLOOD_DRAIN; }
+    string getSkillHandlerName()  { return "BloodDrain"; }
+	SkillType_t getSkillType()  { return SKILL_BLOOD_DRAIN; }
 
 	void execute(Vampire* pCreature, ObjectID_t ObjectID) throw(Error);
 	void execute(Vampire* pCreature, Creature* pEnemy) throw(Error);

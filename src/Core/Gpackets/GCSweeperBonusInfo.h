@@ -43,20 +43,20 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_SWEEPER_BONUS_INFO; }
+	PacketID_t getPacketID()  { return PACKET_GC_SWEEPER_BONUS_INFO; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw();
+	PacketSize_t getPacketSize() ;
 
 	// get packet name
-	string getPacketName() const throw() { return "GCSweeperBonusInfo"; }
+	string getPacketName()  { return "GCSweeperBonusInfo"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public:
 
-	BYTE getListNum() const throw() { return m_SweeperBonusInfoList.size(); }
+	BYTE getListNum()  { return m_SweeperBonusInfoList.size(); }
 
 	void addSweeperBonusInfo( SweeperBonusInfo* pSweeperBonusInfo ) throw() { m_SweeperBonusInfoList.push_back( pSweeperBonusInfo ); }
 
@@ -96,15 +96,15 @@ public :
 	Packet* createPacket() throw() { return new GCSweeperBonusInfo(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCSweeperBonusInfo"; }
+	string getPacketName()  { return "GCSweeperBonusInfo"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_SWEEPER_BONUS_INFO; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_SWEEPER_BONUS_INFO; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCSystemMessagePacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + SweeperBonusInfo::getMaxSize() * 12 ; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + SweeperBonusInfo::getMaxSize() * 12 ; }
 
 };
 

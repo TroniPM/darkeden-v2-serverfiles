@@ -31,7 +31,7 @@ public:
 	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) throw(Error);
 	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
 	void tinysave(const char* field) const throw (Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	static void initItemIDRegistry(void) throw();
 
@@ -48,8 +48,8 @@ private:
 class SMSItemInfo : public ItemInfo 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_SMS_ITEM; }
-	virtual string toString() const throw();
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_SMS_ITEM; }
+	virtual string toString() ;
 
 	uint	getCharge() const { return m_Charge; }
 	void	setCharge( uint Charge ) { m_Charge = Charge; }
@@ -65,7 +65,7 @@ private:
 class SMSItemInfoManager : public InfoClassManager 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_SMS_ITEM; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_SMS_ITEM; }
 	virtual void load() throw(Error);
 };
 
@@ -78,8 +78,8 @@ extern SMSItemInfoManager* g_pSMSItemInfoManager;
 class SMSItemFactory : public ItemFactory 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_SMS_ITEM; }
-	virtual string getItemClassName() const throw() { return "SMSItem"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_SMS_ITEM; }
+	virtual string getItemClassName()  { return "SMSItem"; }
 	
 public:
 	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new SMSItem(ItemType,OptionType); }
@@ -92,8 +92,8 @@ public:
 class SMSItemLoader : public ItemLoader 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_SMS_ITEM; }
-	virtual string getItemClassName() const throw() { return "SMSItem"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_SMS_ITEM; }
+	virtual string getItemClassName()  { return "SMSItem"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

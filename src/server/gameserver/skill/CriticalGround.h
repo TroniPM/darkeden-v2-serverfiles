@@ -20,8 +20,8 @@ public:
 	~CriticalGround() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "CriticalGround"; }
-	SkillType_t getSkillType() const throw() { return SKILL_CRITICAL_GROUND; }
+    string getSkillHandlerName()  { return "CriticalGround"; }
+	SkillType_t getSkillType()  { return SKILL_CRITICAL_GROUND; }
 
 	//void execute(Slayer* pSlayer, SlayerSkillSlot* pSlayerSkillSlot, CEffectID_t CEffectID) throw(Error);
 	//void execute(Vampire* pVampire, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);

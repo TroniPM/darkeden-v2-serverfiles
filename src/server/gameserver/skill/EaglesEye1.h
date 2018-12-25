@@ -20,8 +20,8 @@ public:
 	~EaglesEye1() throw() {}
 	
 public:
-	string getSkillHandlerName() const throw() { return "EaglesEye1"; }
-	SkillType_t getSkillType() const throw() { return SKILL_EAGLES_EYE1; }
+	string getSkillHandlerName()  { return "EaglesEye1"; }
+	SkillType_t getSkillType()  { return SKILL_EAGLES_EYE1; }
 
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Slayer* pSlayer,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);

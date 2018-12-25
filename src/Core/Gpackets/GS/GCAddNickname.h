@@ -30,10 +30,10 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_ADD_NICKNAME; }
-	PacketSize_t getPacketSize() const throw() { return m_NicknameInfo.getSize(); }
-	string getPacketName() const throw() { return "GCAddNickname"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_ADD_NICKNAME; }
+	PacketSize_t getPacketSize()  { return m_NicknameInfo.getSize(); }
+	string getPacketName()  { return "GCAddNickname"; }
+	string toString() ;
 
 public:
 	NicknameInfo&	getNicknameInfo() { return m_NicknameInfo; }
@@ -55,9 +55,9 @@ public :
 	
 public:
 	Packet* createPacket() throw() { return new GCAddNickname(); }
-	string getPacketName() const throw() { return "GCAddNickname"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_ADD_NICKNAME; }
-	PacketSize_t getPacketMaxSize() const throw() { return NicknameInfo::getMaxSize(); }
+	string getPacketName()  { return "GCAddNickname"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_NICKNAME; }
+	PacketSize_t getPacketMaxSize()  { return NicknameInfo::getMaxSize(); }
 };
 
 //////////////////////////////////////////////////////////////////////////////

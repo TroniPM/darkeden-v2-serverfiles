@@ -51,7 +51,7 @@ public:
 
 	static uint getMaxSize(void) { return szBYTE + 30 + szNPCID + szZoneCoord + szZoneCoord; }
 
-	string toString(void) const throw();
+	string toString(void) ;
 
 ///// member data /////
 

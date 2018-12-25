@@ -20,13 +20,13 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_OTHER_MODIFY_INFO; }
-	PacketSize_t getPacketSize() const throw() { return szObjectID + ModifyInfo::getPacketSize(); }
-	string getPacketName() const throw() { return "GCOtherModifyInfo"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_OTHER_MODIFY_INFO; }
+	PacketSize_t getPacketSize()  { return szObjectID + ModifyInfo::getPacketSize(); }
+	string getPacketName()  { return "GCOtherModifyInfo"; }
+	string toString() ;
 
 public:
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
 
 private:
@@ -42,9 +42,9 @@ class GCOtherModifyInfoFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCOtherModifyInfo(); }
-	string getPacketName() const throw() { return "GCOtherModifyInfo"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_OTHER_MODIFY_INFO; }
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + ModifyInfo::getPacketMaxSize(); }
+	string getPacketName()  { return "GCOtherModifyInfo"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_OTHER_MODIFY_INFO; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + ModifyInfo::getPacketMaxSize(); }
 };
 
 

@@ -41,21 +41,21 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_RELOAD_OK; }
+	PacketID_t getPacketID()  { return PACKET_GC_RELOAD_OK; }
 	
 	// get packet's body size
 	// *OPTIMIZATION HINT*
 	// const static GCReloadOKPacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketSize() const throw() { return szBullet; }
+	PacketSize_t getPacketSize()  { return szBullet; }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCReloadOK"; }
+	string getPacketName()  { return "GCReloadOK"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get / set BulletNum
-	Bullet_t getBulletNum() const throw() { return m_BulletNum; }
+	Bullet_t getBulletNum()  { return m_BulletNum; }
 	void setBulletNum(Bullet_t BulletNum) throw() { m_BulletNum = BulletNum; }
 	
 
@@ -83,15 +83,15 @@ public :
 	Packet* createPacket() throw() { return new GCReloadOK(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCReloadOK"; }
+	string getPacketName()  { return "GCReloadOK"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_RELOAD_OK; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_RELOAD_OK; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCReloadOKPacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szBullet; }
+	PacketSize_t getPacketMaxSize()  { return szBullet; }
 
 };
 

@@ -34,27 +34,27 @@ public:
 	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) throw(Error);
 	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
 	void tinysave(const char* field) const throw (Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	static void initItemIDRegistry(void) throw();
 
 public:
-	virtual ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_PET_ENCHANT_ITEM; }
-	virtual string getObjectTableName() const throw() { return "PetEnchantItemObject"; }
+	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_PET_ENCHANT_ITEM; }
+	virtual string getObjectTableName()  { return "PetEnchantItemObject"; }
 
-	virtual ItemType_t getItemType() const throw() { return m_ItemType; }
+	virtual ItemType_t getItemType()  { return m_ItemType; }
 	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() const throw(Error);
 	virtual VolumeHeight_t getVolumeHeight() const throw(Error);
 	virtual Weight_t getWeight() const throw(Error);
 
-	virtual ItemNum_t getNum() const throw() { return m_Num; }
+	virtual ItemNum_t getNum()  { return m_Num; }
 	virtual void setNum(ItemNum_t Num) throw() { m_Num = Num; }
 
 	void makePCItemInfo(PCItemInfo& result) const;
 
-	bool    isStackable() const throw() { return true; }
+	bool    isStackable()  { return true; }
 
 private:
 	ItemType_t m_ItemType;
@@ -89,8 +89,8 @@ public:
 		PET_MIXING_CLEANER_FUNCTION = 29,
 	};
 
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_PET_ENCHANT_ITEM; }
-	virtual string toString() const throw();
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_PET_ENCHANT_ITEM; }
+	virtual string toString() ;
 
 	BYTE getFunction() const { return m_Function; }
 	void setFunction( BYTE Function ) { m_Function = Function; }
@@ -111,7 +111,7 @@ private :
 class PetEnchantItemInfoManager : public InfoClassManager 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_PET_ENCHANT_ITEM; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_PET_ENCHANT_ITEM; }
 	virtual void load() throw(Error);
 };
 
@@ -124,8 +124,8 @@ extern PetEnchantItemInfoManager* g_pPetEnchantItemInfoManager;
 class PetEnchantItemFactory : public ItemFactory 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_PET_ENCHANT_ITEM; }
-	virtual string getItemClassName() const throw() { return "PetEnchantItem"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_PET_ENCHANT_ITEM; }
+	virtual string getItemClassName()  { return "PetEnchantItem"; }
 	
 public:
 	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new PetEnchantItem(ItemType,OptionType,1); }
@@ -138,8 +138,8 @@ public:
 class PetEnchantItemLoader : public ItemLoader 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_PET_ENCHANT_ITEM; }
-	virtual string getItemClassName() const throw() { return "PetEnchantItem"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_PET_ENCHANT_ITEM; }
+	virtual string getItemClassName()  { return "PetEnchantItem"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

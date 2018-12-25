@@ -48,39 +48,39 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_KNOCKS_TARGET_BACK_OK_1; }
+	PacketID_t getPacketID()  { return PACKET_GC_KNOCKS_TARGET_BACK_OK_1; }
 	
 	// get packet's body size
 	// 최적화시, 미리 계산된 정수를 사용한다.
-	PacketSize_t getPacketSize() const throw() { return szSkillType + szDir + szCoord*2 + szObjectID + szBullet + szbool + ModifyInfo::getPacketSize() ;}
+	PacketSize_t getPacketSize()  { return szSkillType + szDir + szCoord*2 + szObjectID + szBullet + szbool + ModifyInfo::getPacketSize() ;}
 
 	// get packet's name
-	string getPacketName() const throw() { return "GCKnocksTargetBackOK1"; }
+	string getPacketName()  { return "GCKnocksTargetBackOK1"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get / set ObjectID
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
 
 	// get / set Success
-	bool getSkillSuccess() const throw() { return m_bSuccess; }
+	bool getSkillSuccess()  { return m_bSuccess; }
 	void setSkillSuccess(bool Success) throw() { m_bSuccess = Success; }
 	
 	// get / set Bullet Num
-	Bullet_t getBullet() const throw() { return m_BulletNum; }
+	Bullet_t getBullet()  { return m_BulletNum; }
 	void setBulletNum(Bullet_t BulletNum) { m_BulletNum = BulletNum; }
 
 	void setXYDir(Coord_t x, Coord_t y, Coord_t dir) throw()
 	{
 		m_X = x; m_Y = y; m_dir = dir;
 	}
-	Coord_t getX() const throw() { return m_X;}
-	Coord_t getY() const throw() { return m_Y;}
-	Dir_t getDir() const throw() { return m_dir;}
+	Coord_t getX()  { return m_X;}
+	Coord_t getY()  { return m_Y;}
+	Dir_t getDir()  { return m_dir;}
 
-	SkillType_t getSkillType() const throw() { return m_SkillType;}
+	SkillType_t getSkillType()  { return m_SkillType;}
 	void setSkillType(SkillType_t s) throw() { m_SkillType = s;}
 
 
@@ -125,13 +125,13 @@ public :
 	Packet* createPacket() throw() { return new GCKnocksTargetBackOK1(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCKnocksTargetBackOK1"; }
+	string getPacketName()  { return "GCKnocksTargetBackOK1"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_KNOCKS_TARGET_BACK_OK_1; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_KNOCKS_TARGET_BACK_OK_1; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szSkillType + szDir + szCoord*2 + szObjectID + szBullet + szbool + ModifyInfo::getPacketMaxSize(); }
+	PacketSize_t getPacketMaxSize()  { return szSkillType + szDir + szCoord*2 + szObjectID + szBullet + szbool + ModifyInfo::getPacketMaxSize(); }
 
 };
 

@@ -20,7 +20,7 @@ public:
 	EffectAcidSwamp(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_ACID_SWAMP; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_ACID_SWAMP; }
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
@@ -31,7 +31,7 @@ public:
 	void unaffect(Item* pItem) throw(Error) {}
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	int getDamage(void) const { return m_Damage; }
@@ -76,8 +76,8 @@ private:
 class EffectAcidSwampLoader : public EffectLoader 
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_ACID_SWAMP; }
-	virtual string getEffectClassName() const throw() { return "EffectAcidSwamp"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_ACID_SWAMP; }
+	virtual string getEffectClassName()  { return "EffectAcidSwamp"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error) {}

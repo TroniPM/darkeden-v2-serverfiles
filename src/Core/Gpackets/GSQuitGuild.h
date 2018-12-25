@@ -38,10 +38,10 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GS_QUIT_GUILD; }
+	PacketID_t getPacketID()  { return PACKET_GS_QUIT_GUILD; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		return szGuildID +				// Guild ID
 			   szBYTE +					// name length
@@ -49,19 +49,19 @@ public:
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "GSQuitGuild"; }
+	string getPacketName()  { return "GSQuitGuild"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public:
 
 	// get/set Guild ID
-	GuildID_t getGuildID() const throw() { return m_GuildID; }
+	GuildID_t getGuildID()  { return m_GuildID; }
 	void setGuildID( GuildID_t guildID ) throw() { m_GuildID = guildID; }
 
 	// get/set Name
-	const string& getName() const throw() { return m_Name; }
+	const string& getName()  { return m_Name; }
 	void setName( const string& name ) throw() { m_Name = name; }
 
 private :
@@ -91,15 +91,15 @@ public:
 	Packet* createPacket() throw() { return new GSQuitGuild(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GSQuitGuild"; }
+	string getPacketName()  { return "GSQuitGuild"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GS_QUIT_GUILD; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GS_QUIT_GUILD; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static LGIncomingConnectionPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		return szGuildID +			// guild ID
 			   szBYTE +				// name length

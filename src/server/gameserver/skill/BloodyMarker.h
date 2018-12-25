@@ -20,8 +20,8 @@ public:
 	~BloodyMarker() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "BloodyMarker"; }
-	SkillType_t getSkillType() const throw() { return SKILL_BLOODY_MARKER; }
+    string getSkillHandlerName()  { return "BloodyMarker"; }
+	SkillType_t getSkillType()  { return SKILL_BLOODY_MARKER; }
 
 	void execute(Vampire* pVampire, ObjectID_t TargetObjectID, CoordInven_t X, CoordInven_t Y, CoordInven_t TargetX, CoordInven_t TargetY, VampireSkillSlot* pVampireSkillSlot) throw(Error);
 

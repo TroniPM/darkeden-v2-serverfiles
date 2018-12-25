@@ -47,29 +47,29 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GL_INCOMING_CONNECTION; }
+	PacketID_t getPacketID()  { return PACKET_GL_INCOMING_CONNECTION; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		return + szBYTE + m_PlayerID.size()	// Player ID
 			+ szBYTE + m_ClientIP.size(); 	// client ip
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "GLIncomingConnection"; }
+	string getPacketName()  { return "GLIncomingConnection"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public :
 
 	// get/set playerID
-	const string& getPlayerID() const throw() { return m_PlayerID; }
+	const string& getPlayerID()  { return m_PlayerID; }
 	void setPlayerID(const string& playerID) throw() { m_PlayerID = playerID; }
 	
 	// get/set client ip
-	const string& getClientIP() const throw() { return m_ClientIP; }
+	const string& getClientIP()  { return m_ClientIP; }
 	void setClientIP(const string& ip) throw() { m_ClientIP = ip; }
 	
 private :
@@ -99,15 +99,15 @@ public :
 	Packet* createPacket() throw() { return new GLIncomingConnection(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GLIncomingConnection"; }
+	string getPacketName()  { return "GLIncomingConnection"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GL_INCOMING_CONNECTION; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GL_INCOMING_CONNECTION; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GLIncomingConnectionPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		return + szBYTE + 20 	// creature name
 			+ szBYTE + 15; 		// client ip

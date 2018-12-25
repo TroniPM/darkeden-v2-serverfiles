@@ -20,8 +20,8 @@ public:
 	~Mephisto() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Mephisto"; }
-	SkillType_t getSkillType() const throw() { return SKILL_MEPHISTO; }
+    string getSkillHandlerName()  { return "Mephisto"; }
+	SkillType_t getSkillType()  { return SKILL_MEPHISTO; }
 
 	void execute(Vampire* pVampire ) throw(Error);
 	void execute(Vampire* pVampire, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);

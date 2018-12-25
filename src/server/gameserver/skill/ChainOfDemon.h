@@ -20,8 +20,8 @@ public:
 	~ChainOfDemon() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "ChainOfDemon"; }
-	SkillType_t getSkillType() const throw() { return SKILL_CHAIN_OF_DEMON; }
+    string getSkillHandlerName()  { return "ChainOfDemon"; }
+	SkillType_t getSkillType()  { return SKILL_CHAIN_OF_DEMON; }
 
 	void execute(Vampire* pVampire, ObjectID_t targetObject, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
 

@@ -125,16 +125,16 @@ public:
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
-	PacketID_t getPacketID() const throw() { return PACKET_GC_NOTICE_EVENT; }
-	PacketSize_t getPacketSize() const throw();
-	string getPacketName() const throw() { return "GCNoticeEvent"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_NOTICE_EVENT; }
+	PacketSize_t getPacketSize() ;
+	string getPacketName()  { return "GCNoticeEvent"; }
+	string toString() ;
 	
 public:
-	BYTE getCode(void) const throw() { return m_Code;}
+	BYTE getCode(void)  { return m_Code;}
 	void setCode(WORD code) throw() { m_Code = code;}
 
-	uint getParameter(void) const throw() { return m_Parameter; }
+	uint getParameter(void)  { return m_Parameter; }
 	void setParameter(uint parameter) throw() { m_Parameter = parameter; }
 
 #ifndef __GAME_CLIENT__
@@ -156,9 +156,9 @@ class GCNoticeEventFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCNoticeEvent(); }
-	string getPacketName() const throw() { return "GCNoticeEvent"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_NOTICE_EVENT; }
-	PacketSize_t getPacketMaxSize() const throw() { return szWORD + szuint; }
+	string getPacketName()  { return "GCNoticeEvent"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_NOTICE_EVENT; }
+	PacketSize_t getPacketMaxSize()  { return szWORD + szuint; }
 };
 
 

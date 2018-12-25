@@ -20,10 +20,10 @@
 class ActionAcceptReinforce : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_ACCEPT_REINFORCE; }
+	virtual ActionType_t getActionType()  { return ACTION_ACCEPT_REINFORCE; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 	ZoneID_t	getZoneID() const { return m_ZoneID; }
@@ -41,8 +41,8 @@ private:
 class ActionAcceptReinforceFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_ACCEPT_REINFORCE; }
-	virtual string getActionName() const throw() { return "AcceptReinforce"; }
-	virtual Action* createAction() const throw() { return new ActionAcceptReinforce(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_ACCEPT_REINFORCE; }
+	virtual string getActionName()  { return "AcceptReinforce"; }
+	virtual Action* createAction()  { return new ActionAcceptReinforce(); }
 };
 #endif

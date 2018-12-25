@@ -20,8 +20,8 @@ public:
 	~WideIceField() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "WideIceField"; }
-	SkillType_t getSkillType() const throw() { return SKILL_WIDE_ICE_FIELD; }
+    string getSkillHandlerName()  { return "WideIceField"; }
+	SkillType_t getSkillType()  { return SKILL_WIDE_ICE_FIELD; }
 
 	void execute(Monster*, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
 

@@ -20,8 +20,8 @@ public:
 	~Tanning() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Tanning"; }
-	SkillType_t getSkillType() const throw() { return SKILL_TANNING; }
+    string getSkillHandlerName()  { return "Tanning"; }
+	SkillType_t getSkillType()  { return SKILL_TANNING; }
 
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Vampire* pVampire, ObjectID_t ObjectID, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);

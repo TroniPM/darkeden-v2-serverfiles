@@ -51,39 +51,39 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_CHANGE_SHAPE; }
+	PacketID_t getPacketID()  { return PACKET_GC_CHANGE_SHAPE; }
 	
 	// get packet's body size
 	// 최적화시, 미리 계산된 정수를 사용한다.
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szBYTE + szItemType + szOptionType + szSpeed + szBYTE ; }
+	PacketSize_t getPacketSize()  { return szObjectID + szBYTE + szItemType + szOptionType + szSpeed + szBYTE ; }
 
 	// get packet's name
-	string getPacketName() const throw() { return "GCChangeShape"; }
+	string getPacketName()  { return "GCChangeShape"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get Object ID 
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t objectID) throw() { m_ObjectID = objectID; }
 
 	// get/set ItemClass
-	BYTE getItemClass() const throw() { return m_ItemClass; }
+	BYTE getItemClass()  { return m_ItemClass; }
 	void setItemClass(BYTE ItemClass) throw() { m_ItemClass = ItemClass; }
 
 	// get / set ItemType
-	ItemType_t getItemType() const throw() { return m_ItemType; }
+	ItemType_t getItemType()  { return m_ItemType; }
 	void setItemType(ItemType_t ItemType) throw() { m_ItemType = ItemType ; }
 
 	// get / set OptionType
 	void setOptionType(OptionType_t optionType) throw() { m_OptionType = optionType; }
-	OptionType_t getOptionType() const throw() { return m_OptionType; }
+	OptionType_t getOptionType()  { return m_OptionType; }
 
 	// get / set AttackSpeed
-	Speed_t getAttackSpeed() const throw() { return m_AttackSpeed; }
+	Speed_t getAttackSpeed()  { return m_AttackSpeed; }
 	void setAttackSpeed(Speed_t AttackSpeed) throw() { m_AttackSpeed = AttackSpeed; }
 
-	BYTE getFlag() const throw() { return m_Flag; }
+	BYTE getFlag()  { return m_Flag; }
 	void setFlag( BYTE flag ) throw() { m_Flag = flag; }
 
 private :
@@ -132,13 +132,13 @@ public :
 	Packet* createPacket() throw() { return new GCChangeShape(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCChangeShape"; }
+	string getPacketName()  { return "GCChangeShape"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_CHANGE_SHAPE; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_CHANGE_SHAPE; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szBYTE + szItemType + szOptionType + szSpeed + szBYTE; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szBYTE + szItemType + szOptionType + szSpeed + szBYTE; }
 
 };
 

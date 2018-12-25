@@ -20,8 +20,8 @@ public:
 	~Extreme() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Extreme"; }
-	SkillType_t getSkillType() const throw() { return SKILL_EXTREME; }
+    string getSkillHandlerName()  { return "Extreme"; }
+	SkillType_t getSkillType()  { return SKILL_EXTREME; }
 
 	void execute(Vampire* pVampire ) throw(Error);
 	void execute(Vampire* pVampire, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);

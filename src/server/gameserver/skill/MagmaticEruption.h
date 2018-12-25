@@ -20,8 +20,8 @@ public:
 	~MagmaticEruption() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "MagmaticEruption"; }
-	SkillType_t getSkillType() const throw() { return SKILL_MAGMATIC_ERUPTION; }
+    string getSkillHandlerName()  { return "MagmaticEruption"; }
+	SkillType_t getSkillType()  { return SKILL_MAGMATIC_ERUPTION; }
 
 	void execute(Slayer* pSlayer, ZoneCoord_t X, ZoneCoord_t Y, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);

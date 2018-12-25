@@ -19,7 +19,7 @@ public:
 	EffectMindControl(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_MIND_CONTROL; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_MIND_CONTROL; }
 
 	void affect() throw(Error) {}
 	void affect(Creature* pCreature) throw(Error);
@@ -30,7 +30,7 @@ public:
 	void unaffect() throw(Error); 
 	void unaffect(Item* pItem) throw(Error) {}
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	int getToHitBonus(void) const { return m_ToHitBonus; }

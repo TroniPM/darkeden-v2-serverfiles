@@ -25,7 +25,7 @@ public:
 public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		PacketSize_t rValue = 0;
 
@@ -51,23 +51,23 @@ public:
 public :
 
 	// get/set creature ID 
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t creatureID) throw() { m_ObjectID = creatureID; }
 
 	// get/set X
-	Coord_t getX() const throw() { return m_X; }
+	Coord_t getX()  { return m_X; }
 	void setX(Coord_t x) throw() { m_X = x; }
 	
 	// get/set Y
-	Coord_t getY() const throw() { return m_Y; }
+	Coord_t getY()  { return m_Y; }
 	void setY(Coord_t y) throw() { m_Y = y; }
 
 	// get / set ItemClass
-	BYTE getItemClass() const throw() { return m_ItemClass; }
+	BYTE getItemClass()  { return m_ItemClass; }
 	void setItemClass(BYTE Class) throw() { m_ItemClass = Class; }
 
 	// get / set ItemType
-	ItemType_t getItemType() const throw() { return m_ItemType; }
+	ItemType_t getItemType()  { return m_ItemType; }
 	void setItemType(ItemType_t ItemType) throw() { m_ItemType = ItemType; }
 
 	// get / set OptionType
@@ -78,10 +78,10 @@ public :
 		m_OptionType.pop_front();
 		return optionType;
 	}
-	int getOptionTypeSize() const throw() { return m_OptionType.size(); }
+	int getOptionTypeSize()  { return m_OptionType.size(); }
 	void addOptionType(OptionType_t OptionType) throw() { m_OptionType.push_back( OptionType ); }
 	void setOptionType(const list<OptionType_t>& OptionTypes) throw() { m_OptionType = OptionTypes; }
-	const list<OptionType_t>& getOptionType() const throw() { return m_OptionType; }
+	const list<OptionType_t>& getOptionType()  { return m_OptionType; }
 
 	// get / set OptionType
 	OptionType_t popOptionType2() throw()
@@ -91,39 +91,39 @@ public :
 		m_OptionType2.pop_front();
 		return optionType2;
 	}
-	int getOptionTypeSize2() const throw() { return m_OptionType2.size(); }
+	int getOptionTypeSize2()  { return m_OptionType2.size(); }
 	void addOptionType2(OptionType_t OptionType) throw() { m_OptionType2.push_back( OptionType ); }
 	void setOptionType2(const list<OptionType_t>& OptionTypes) throw() { m_OptionType2 = OptionTypes; }
-	const list<OptionType_t>& getOptionType2() const throw() { return m_OptionType2; }
+	const list<OptionType_t>& getOptionType2()  { return m_OptionType2; }
 
 	// get / set Silver
-	Silver_t getSilver() const throw() { return m_Silver; }
+	Silver_t getSilver()  { return m_Silver; }
 	void setSilver(Silver_t Silver) throw() { m_Silver = Silver; }
 
 	// get / set Grade
-	Grade_t getGrade() const throw() { return m_Grade; }
+	Grade_t getGrade()  { return m_Grade; }
 	void setGrade(Grade_t Grade) throw() { m_Grade = Grade; }
 
 	// get / set enchant level
-	EnchantLevel_t getEnchantLevel() const throw() { return m_EnchantLevel; }
+	EnchantLevel_t getEnchantLevel()  { return m_EnchantLevel; }
 	void setEnchantLevel(EnchantLevel_t level) throw() { m_EnchantLevel = level; }
 
-	EnchantLevel_t getHeroOption() const throw() { return m_HeroOption; }
+	EnchantLevel_t getHeroOption()  { return m_HeroOption; }
 	void setHeroOption(EnchantLevel_t level) throw() { m_HeroOption= level; }
 
-	EnchantLevel_t getHeroOptionAttr() const throw() { return m_HeroOptionAttr; }
+	EnchantLevel_t getHeroOptionAttr()  { return m_HeroOptionAttr; }
 	void setHeroOptionAttr(EnchantLevel_t level) throw() { m_HeroOptionAttr = level; }
 
 	// get / set Durability
-	Durability_t getDurability() const throw() { return m_Durability; }
+	Durability_t getDurability()  { return m_Durability; }
 	void setDurability(Durability_t Durability) throw() { m_Durability = Durability; }
 
 	// get / set ItemNum
-	ItemNum_t getItemNum() const throw() { return m_ItemNum; }
+	ItemNum_t getItemNum()  { return m_ItemNum; }
 	void setItemNum(ItemNum_t ItemNum) throw() { m_ItemNum = ItemNum; }
 
 	// get / set ListNumber
-	BYTE getListNum() const throw() { return m_ListNum; }
+	BYTE getListNum()  { return m_ListNum; }
 	void setListNum(BYTE ListNum) throw() { m_ListNum = ListNum; }
 
 	// add / delete / clear S List

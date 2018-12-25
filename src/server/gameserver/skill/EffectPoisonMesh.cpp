@@ -89,7 +89,7 @@ void EffectPoisonMesh::unaffect( Creature* pCreature ) throw (Error)
 	__END_CATCH
 }
 
-string EffectPoisonMesh::toString() const throw()
+string EffectPoisonMesh::toString() 
 {
 	__BEGIN_TRY
 

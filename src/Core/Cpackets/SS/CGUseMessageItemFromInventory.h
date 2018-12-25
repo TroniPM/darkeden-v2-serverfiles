@@ -23,17 +23,17 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_CG_USE_MESSAGE_ITEM_FROM_INVENTORY; }
-	PacketSize_t getPacketSize() const throw() 
+	PacketID_t getPacketID()  { return PACKET_CG_USE_MESSAGE_ITEM_FROM_INVENTORY; }
+	PacketSize_t getPacketSize()  
 	{ 
 		return CGUseItemFromInventory::getPacketSize() 
 				+ szBYTE + m_Message.size(); 
 	}
-	string getPacketName() const throw() { return "CGUseMessageItemFromInventory"; }
-	string toString() const throw();
+	string getPacketName()  { return "CGUseMessageItemFromInventory"; }
+	string toString() ;
 	
 public:
-	const string& getMessage() const throw() { return m_Message; }
+	const string& getMessage()  { return m_Message; }
 	void setMessage(const string& msg) throw() { m_Message = msg; }
 
 private:
@@ -49,9 +49,9 @@ class CGUseMessageItemFromInventoryFactory : public CGUseItemFromInventoryFactor
 {
 public:
 	Packet* createPacket() throw() { return new CGUseMessageItemFromInventory(); }
-	string getPacketName() const throw() { return "CGUseMessageItemFromInventory"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_USE_MESSAGE_ITEM_FROM_INVENTORY; }
-	PacketSize_t getPacketMaxSize() const throw() 
+	string getPacketName()  { return "CGUseMessageItemFromInventory"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_USE_MESSAGE_ITEM_FROM_INVENTORY; }
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		return CGUseItemFromInventoryFactory::getPacketMaxSize() 
 				+ szBYTE + 128; 

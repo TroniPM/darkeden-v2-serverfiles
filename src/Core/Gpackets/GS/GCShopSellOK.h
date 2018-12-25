@@ -42,37 +42,37 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_SHOP_SELL_OK; }
+	PacketID_t getPacketID()  { return PACKET_GC_SHOP_SELL_OK; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		return szObjectID + szShopVersion + szObjectID + szPrice;
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "GCShopSellOK"; }
+	string getPacketName()  { return "GCShopSellOK"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 
 public :
 
 	// get/set NPC's object id
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t creatureID) throw() { m_ObjectID = creatureID; }
 
 	// get/set shop version	
-	ShopVersion_t getShopVersion(void) const throw() { return m_Version;}
+	ShopVersion_t getShopVersion(void)  { return m_Version;}
 	void setShopVersion(const ShopVersion_t ver) throw() { m_Version = ver;}
 
 	// get/set item object id
-	ObjectID_t getItemObjectID() const throw() { return m_ItemObjectID;}
+	ObjectID_t getItemObjectID()  { return m_ItemObjectID;}
 	void setItemObjectID(ObjectID_t id) throw() { m_ItemObjectID = id;}
 
 	// get/set price
-	Price_t getPrice() const throw() { return m_Price;}
+	Price_t getPrice()  { return m_Price;}
 	void setPrice(Price_t price) { m_Price = price;}
 
 private :
@@ -110,13 +110,13 @@ public :
 	Packet* createPacket() throw() { return new GCShopSellOK(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCShopSellOK"; }
+	string getPacketName()  { return "GCShopSellOK"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_SHOP_SELL_OK; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_SHOP_SELL_OK; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		return szObjectID + szShopVersion + szObjectID + szPrice;
 	}

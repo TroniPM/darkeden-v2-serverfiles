@@ -41,10 +41,10 @@ public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_CG_SHOP_REQUEST_SELL; }
-	PacketSize_t getPacketSize() const throw() { return szObjectID+szObjectID+szBYTE; }
-	string getPacketName() const throw() { return "CGShopRequestSell"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_CG_SHOP_REQUEST_SELL; }
+	PacketSize_t getPacketSize()  { return szObjectID+szObjectID+szBYTE; }
+	string getPacketName()  { return "CGShopRequestSell"; }
+	string toString() ;
 	
 public:
 	ObjectID_t getObjectID() throw() { return m_ObjectID; }
@@ -74,9 +74,9 @@ class CGShopRequestSellFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new CGShopRequestSell(); }
-	string getPacketName() const throw() { return "CGShopRequestSell"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_SHOP_REQUEST_SELL; }
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID+szObjectID+szBYTE; }
+	string getPacketName()  { return "CGShopRequestSell"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_SHOP_REQUEST_SELL; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID+szObjectID+szBYTE; }
 
 };
 

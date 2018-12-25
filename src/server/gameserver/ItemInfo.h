@@ -24,46 +24,46 @@ public:
 
 // 공통 정보
 public:
-	virtual Item::ItemClass getItemClass() const throw() = 0;
-	string getItemClassName() const throw() { return ItemClass2String[getItemClass()]; }
+	virtual Item::ItemClass getItemClass()  = 0;
+	string getItemClassName()  { return ItemClass2String[getItemClass()]; }
 
-	ItemType_t getItemType() const throw() { return m_ItemType; }
+	ItemType_t getItemType()  { return m_ItemType; }
     void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
  
-	string getName() const throw() { return m_Name; }
+	string getName()  { return m_Name; }
 	void setName(const string & name) throw() { m_Name = name; }
 
-	string getEName() const throw() { return m_EName; }
+	string getEName()  { return m_EName; }
 	void setEName(const string & ename) throw() { m_EName = ename; }
 	
-	Price_t getPrice() const throw() { return m_Price; }
+	Price_t getPrice()  { return m_Price; }
 	void setPrice(Price_t Price) throw(){ m_Price = Price; }
 
-	VolumeType_t getVolumeType() const throw() { return m_VolumeType; }
+	VolumeType_t getVolumeType()  { return m_VolumeType; }
 	void setVolumeType(VolumeType_t VolumeType) throw() { m_VolumeType = VolumeType; }
-	VolumeWidth_t getVolumeWidth() const throw();
-	VolumeHeight_t getVolumeHeight() const throw();
+	VolumeWidth_t getVolumeWidth() ;
+	VolumeHeight_t getVolumeHeight() ;
 
-	Weight_t getWeight() const throw() { return m_Weight; }
+	Weight_t getWeight()  { return m_Weight; }
 	void setWeight(Weight_t weight) throw() { m_Weight = weight; }
 
-	Ratio_t getRatio() const throw() { return m_Ratio; }
+	Ratio_t getRatio()  { return m_Ratio; }
 	void setRatio(Ratio_t Ratio) throw() { m_Ratio = Ratio; }
 	
-	string getDescription() const throw() { return m_Description; }
+	string getDescription()  { return m_Description; }
 	void setDescription(const string& description) throw() { m_Description = description ; }
 	
-	virtual Attr_t  getReqSTR(void) const throw()    { return m_ReqSTR; }
-	virtual Attr_t  getReqDEX(void) const throw()    { return m_ReqDEX; }
-	virtual Attr_t  getReqINT(void) const throw()    { return m_ReqINT; }
-	virtual Attr_t  getReqSum(void) const throw()    { return m_ReqSum; }
-	virtual Level_t getReqLevel(void) const throw()  { return m_ReqLevel; }
-	virtual Level_t getReqAdvancedLevel(void) const throw()  { return m_ReqAdvanceLevel; }
-	virtual Attr_t  getReqGender(void) const throw() { return m_ReqGender; }
+	virtual Attr_t  getReqSTR(void)     { return m_ReqSTR; }
+	virtual Attr_t  getReqDEX(void)     { return m_ReqDEX; }
+	virtual Attr_t  getReqINT(void)     { return m_ReqINT; }
+	virtual Attr_t  getReqSum(void)     { return m_ReqSum; }
+	virtual Level_t getReqLevel(void)   { return m_ReqLevel; }
+	virtual Level_t getReqAdvancedLevel(void)   { return m_ReqAdvanceLevel; }
+	virtual Attr_t  getReqGender(void)  { return m_ReqGender; }
 
 	// 새로 추가
-	virtual SkillDomainType_t  getReqDomainType(void) const throw()    { return m_ReqDomainType; }
-	virtual SkillType_t getSkillLearn(void) const throw()  { return m_ReqSkillLearn; }
+	virtual SkillDomainType_t  getReqDomainType(void)     { return m_ReqDomainType; }
+	virtual SkillType_t getSkillLearn(void)   { return m_ReqSkillLearn; }
 
 	virtual void    setReqSTR(Attr_t req) throw()      { m_ReqSTR = req; }
 	virtual void    setReqDEX(Attr_t req) throw()      { m_ReqDEX = req; }
@@ -78,51 +78,51 @@ public:
 	virtual void    setReqSkillLearn(SkillType_t req) throw()      { m_ReqSkillLearn = req; }
 	virtual void    setReqAbility(const string& req) throw();
 
-	virtual string toString() const throw() = 0;
+	virtual string toString()  = 0;
 
 
 // 개별 정보. 편의상 베이스 클래스에 정의해준다.
 public:
-	virtual Durability_t getDurability() const throw() { return 1; }
+	virtual Durability_t getDurability()  { return 1; }
 	virtual void setDurability(Durability_t durability) throw() {}
 
-	virtual Damage_t getMinDamage() const throw() { return 0; }
+	virtual Damage_t getMinDamage()  { return 0; }
 	virtual void setMinDamage(Damage_t damage) throw() {}
 
-	virtual Damage_t getMaxDamage() const throw() { return 0; }
+	virtual Damage_t getMaxDamage()  { return 0; }
 	virtual void setMaxDamage(Damage_t damage) throw() {}
 
-	virtual Range_t getRange() const throw() { return 0; }
+	virtual Range_t getRange()  { return 0; }
 	virtual void setRange(Range_t range) throw() {}
 
-	virtual ToHit_t getToHitBonus() const throw() { return 0; }
+	virtual ToHit_t getToHitBonus()  { return 0; }
 	virtual void setToHitBonus(ToHit_t tohit) throw() {}
 
-	virtual Defense_t getDefenseBonus() const throw() { return 0; }
+	virtual Defense_t getDefenseBonus()  { return 0; }
 	virtual void setDefenseBonus(Defense_t defense) throw() {}
 
-	virtual Protection_t getProtectionBonus() const throw() { return 0; }
+	virtual Protection_t getProtectionBonus()  { return 0; }
 	virtual void setProtectionBonus(Protection_t defense) throw() {}
 
-	virtual MP_t getMPBonus() const throw() { return 0;}
+	virtual MP_t getMPBonus()  { return 0;}
 	virtual void setMPBonus(MP_t bonus) throw() { }
 
-	virtual Silver_t getMaxSilver() const throw() { return 0; }
+	virtual Silver_t getMaxSilver()  { return 0; }
 	virtual void setMaxSilver(Silver_t amount) throw() { }
 
-	virtual Speed_t getSpeed(void) const throw() { return 0; }
+	virtual Speed_t getSpeed(void)  { return 0; }
 	virtual void setSpeed(Speed_t speed) throw() { } 
 
-	virtual uint getItemLevel(void) const throw() { return 99; }
+	virtual uint getItemLevel(void)  { return 99; }
 	virtual void setItemLevel(uint level) throw() { }
 
-	virtual int getCriticalBonus(void) const throw() { return 0; }
+	virtual int getCriticalBonus(void)  { return 0; }
 	virtual void setCriticalBonus(int bonus) throw() { };
 
-	virtual int getDefaulBodyColor(void) const throw() { return 0; }
+	virtual int getDefaulBodyColor(void)  { return 0; }
 	virtual void setDefaulBodyColor(int DefaulBodyColor) throw() { };
 
-	virtual int getDefaulEffectColor(void) const throw() { return 0; }
+	virtual int getDefaulEffectColor(void)  { return 0; }
 	virtual void setDefaulEffectColor(int DefaulEffectColor) throw() { };
 
 	virtual ElementalType getElementalType() const { return ELEMENTAL_MAX; }

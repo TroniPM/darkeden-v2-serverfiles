@@ -31,7 +31,7 @@ public:
 
 	Item::ItemClass	getItemClass() const { return m_IClass; }
 
-	virtual string	toString() const throw();
+	virtual string	toString() ;
 
 public:
 //	static void		loadRewardClass( RewardClass& rClass ) throw(Error);

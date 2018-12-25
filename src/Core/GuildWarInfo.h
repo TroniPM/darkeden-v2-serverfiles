@@ -37,7 +37,7 @@ public :
     // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 
-	PacketSize_t getSize() const throw() 
+	PacketSize_t getSize()  
 	{ 
 		return WarInfo::getSize() 
 				+ szZoneID 
@@ -56,7 +56,7 @@ public :
 	}
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	void operator = (const GuildWarInfo& GWI)
 	{

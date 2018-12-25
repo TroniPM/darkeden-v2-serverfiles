@@ -29,19 +29,19 @@ public:
 	Motorcycle* getMotorcycle() throw() { return m_pMotorcycle; }
 	void setMotorcycle(Motorcycle* pMotorcycle) throw() { m_pMotorcycle = pMotorcycle; }
 
-	Zone* getZone() const throw() { return m_pZone; }
+	Zone* getZone()  { return m_pZone; }
 	void setZone(Zone* pZone) throw() { m_pZone = pZone; }
 
-	ZoneCoord_t getX() const throw() { return m_X; }
+	ZoneCoord_t getX()  { return m_X; }
 	void setX(ZoneCoord_t X) throw() { m_X = X; }
 
-	ZoneCoord_t getY() const throw() { return m_Y; }
+	ZoneCoord_t getY()  { return m_Y; }
 	void setY(ZoneCoord_t Y) throw() { m_Y = Y; }
 
-	ItemID_t getItemID() const throw() { return m_pMotorcycle->getItemID(); }
+	ItemID_t getItemID()  { return m_pMotorcycle->getItemID(); }
 
 	// 다른 zone으로 이동중인 오토바이
-	bool isTransport() const throw() 		{ return m_bTransport; }
+	bool isTransport()  		{ return m_bTransport; }
 	void setTransport(bool bTransport=true) { m_bTransport = bTransport; }
 
 private:

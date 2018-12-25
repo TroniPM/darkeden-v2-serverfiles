@@ -25,10 +25,10 @@ public:
 public:
 
 
-	EffectClass getEffectClass() const throw() { return EFFECT_CLASS_CONTINUAL_BLOODY_WALL; }
+	EffectClass getEffectClass()  { return EFFECT_CLASS_CONTINUAL_BLOODY_WALL; }
 
 	// OBJECT_PRIORITY_NONE 라는 뜻은, 타일에 들어가서는 안된다는 뜻이다.
-//	virtual ObjectPriority getObjectPriority() const throw() { return OBJECT_PRIORITY_NONE; }
+//	virtual ObjectPriority getObjectPriority()  { return OBJECT_PRIORITY_NONE; }
 
 	virtual void affect() throw(Error);
 	
@@ -38,19 +38,19 @@ public:
 	void save(const string & ownerID) throw(Error) {}
 	void destroy(const string & ownerID) throw(Error) {}
 
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 
 public:
 	
 	void setDamage(Damage_t damage) throw(Error) { m_Damage = damage; }
-	Damage_t getDamage() const throw() { return m_Damage; }
+	Damage_t getDamage()  { return m_Damage; }
   
 	void setTick( Turn_t tick ) throw(Error) { m_Tick = tick; }
-	Turn_t getTick() const throw() { return m_Tick; }
+	Turn_t getTick()  { return m_Tick; }
 
 	void setDuration( Turn_t duration ) throw(Error) { m_Duration = duration; }
-	Turn_t getDuration() const throw() { return m_Duration; }
+	Turn_t getDuration()  { return m_Duration; }
 
 	void setRect(ZoneCoord_t left, ZoneCoord_t right, ZoneCoord_t top, ZoneCoord_t bottom) throw(Error) { m_Left = left; m_Right = right; m_Top = top; m_Bottom = bottom; }
 
@@ -73,8 +73,8 @@ private:
 class EffectContinualBloodyWallLoader : public EffectLoader
 {
 public:
-    virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_CONTINUAL_BLOODY_WALL; }
-    virtual string getEffectClassName() const throw() { return "EffectContinualBloodyWall"; }
+    virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_CONTINUAL_BLOODY_WALL; }
+    virtual string getEffectClassName()  { return "EffectContinualBloodyWall"; }
 
 public:
     virtual void load(Creature* pCreature) throw(Error) {}

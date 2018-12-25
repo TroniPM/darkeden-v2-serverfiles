@@ -20,8 +20,8 @@ public:
 	~MistOfSoul2() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "MistOfSoul2"; }
-	SkillType_t getSkillType() const throw() { return SKILL_MIST_OF_SOUL2; }
+    string getSkillHandlerName()  { return "MistOfSoul2"; }
+	SkillType_t getSkillType()  { return SKILL_MIST_OF_SOUL2; }
 
 	void execute(Ousters* pOusters, OustersSkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

@@ -20,8 +20,8 @@ public:
 	~IllusionOfAvenge() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "IllusionOfAvenge"; }
-	SkillType_t getSkillType() const throw() { return SKILL_ILLUSION_OF_AVENGE; }
+    string getSkillHandlerName()  { return "IllusionOfAvenge"; }
+	SkillType_t getSkillType()  { return SKILL_ILLUSION_OF_AVENGE; }
 
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

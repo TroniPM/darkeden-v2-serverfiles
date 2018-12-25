@@ -20,8 +20,8 @@ public:
 	~SharpChakram() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "SharpChakram"; }
-	SkillType_t getSkillType() const throw() { return SKILL_SHARP_CHAKRAM; }
+    string getSkillHandlerName()  { return "SharpChakram"; }
+	SkillType_t getSkillType()  { return SKILL_SHARP_CHAKRAM; }
 
 	void execute(Ousters* pOusters,  OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 

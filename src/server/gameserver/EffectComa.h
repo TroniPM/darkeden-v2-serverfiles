@@ -25,7 +25,7 @@ public:
 	~EffectComa() throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_COMA; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_COMA; }
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
@@ -37,7 +37,7 @@ public:
     virtual void save(const string & ownerID) throw(Error);
     virtual void destroy(const string & ownerID) throw(Error);	
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	Timeval getStartTime(void) const { return m_StartTime; }
@@ -55,8 +55,8 @@ private:
 class EffectComaLoader : public EffectLoader 
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_COMA; }
-	virtual string getEffectClassName() const throw() { return "EffectComa"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_COMA; }
+	virtual string getEffectClassName()  { return "EffectComa"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

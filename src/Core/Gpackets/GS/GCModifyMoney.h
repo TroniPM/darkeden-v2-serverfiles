@@ -35,19 +35,19 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_MODIFY_MONEY; }
+	PacketID_t getPacketID()  { return PACKET_GC_MODIFY_MONEY; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szGold; }
+	PacketSize_t getPacketSize()  { return szGold; }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCModifyMoney"; }
+	string getPacketName()  { return "GCModifyMoney"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get/set amount
-	Gold_t getAmount() const throw() { return m_Amount; }
+	Gold_t getAmount()  { return m_Amount; }
 	void setAmount( Gold_t amount ) throw() { m_Amount = amount; }
 	
 
@@ -75,15 +75,15 @@ public :
 	Packet* createPacket() throw() { return new GCModifyMoney(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCModifyMoney"; }
+	string getPacketName()  { return "GCModifyMoney"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_MODIFY_MONEY; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_MODIFY_MONEY; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCSystemMessagePacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szGold; }
+	PacketSize_t getPacketMaxSize()  { return szGold; }
 
 };
 

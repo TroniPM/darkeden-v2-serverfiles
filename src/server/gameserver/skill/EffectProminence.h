@@ -20,12 +20,12 @@ public:
 	EffectProminence(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_PROMINENCE; }
-	EffectClass getSendEffectClass() const throw() { return m_SendEffectClass; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_PROMINENCE; }
+	EffectClass getSendEffectClass()  { return m_SendEffectClass; }
 
 	void affect() throw(Error);
 	void unaffect() throw(Error);
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void setSendEffectClass(EffectClass eClass) throw() { m_SendEffectClass = eClass; }
@@ -59,8 +59,8 @@ class EffectProminenceLoader : public EffectLoader
 {
 
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_PROMINENCE; }
-	virtual string getEffectClassName() const throw() { return "EffectProminence"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_PROMINENCE; }
+	virtual string getEffectClassName()  { return "EffectProminence"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error) {}

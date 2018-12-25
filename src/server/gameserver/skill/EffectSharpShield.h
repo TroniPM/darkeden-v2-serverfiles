@@ -20,8 +20,8 @@ public:
 	EffectSharpShield(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_SHARP_SHIELD_1; }
-	EffectClass getSendEffectClass() const throw() { return m_ClientEffectClass; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_SHARP_SHIELD_1; }
+	EffectClass getSendEffectClass()  { return m_ClientEffectClass; }
 
 	void affect() throw(Error){}
 	void affect(Creature* pCreature) throw(Error);
@@ -32,15 +32,15 @@ public:
 	void unaffect(Item* pItem) throw(Error) {}
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void setLevel(Level_t Level) throw();
 
-	Damage_t getDamage() const throw() { return m_Damage; }
+	Damage_t getDamage()  { return m_Damage; }
 	void setDamage(Damage_t Damage) throw() { m_Damage = Damage; }
 
-	EffectClass getClientEffectClass() const throw() { return m_ClientEffectClass; }
+	EffectClass getClientEffectClass()  { return m_ClientEffectClass; }
 	void setClientEffectClass(EffectClass effectClass) throw() { m_ClientEffectClass = effectClass; }
 
 private:
@@ -55,8 +55,8 @@ private:
 class EffectSharpShieldLoader : public EffectLoader 
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_SHARP_SHIELD_1; }
-	virtual string getEffectClassName() const throw() { return "EffectSharpShield"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_SHARP_SHIELD_1; }
+	virtual string getEffectClassName()  { return "EffectSharpShield"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error) {}

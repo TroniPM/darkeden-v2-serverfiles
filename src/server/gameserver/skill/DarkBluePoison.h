@@ -20,8 +20,8 @@ public:
 	~DarkBluePoison() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "DarkBluePoison"; }
-	SkillType_t getSkillType() const throw() { return SKILL_DARKBLUE_POISON; }
+    string getSkillHandlerName()  { return "DarkBluePoison"; }
+	SkillType_t getSkillType()  { return SKILL_DARKBLUE_POISON; }
 
 	void execute(Vampire* pVampire, ObjectID_t ObjectID, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Monster* pMonster, Creature* pEnemy) throw(Error);

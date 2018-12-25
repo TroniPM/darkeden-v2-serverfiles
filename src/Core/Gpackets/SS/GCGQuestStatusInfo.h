@@ -34,10 +34,10 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_GQUEST_STATUS_INFO; }
-	PacketSize_t getPacketSize() const throw() { return accumulate( m_Infos.begin(), m_Infos.end(), szBYTE, addSize ); }
-	string getPacketName() const throw() { return "GCGQuestStatusInfo"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_GQUEST_STATUS_INFO; }
+	PacketSize_t getPacketSize()  { return accumulate( m_Infos.begin(), m_Infos.end(), szBYTE, addSize ); }
+	string getPacketName()  { return "GCGQuestStatusInfo"; }
+	string toString() ;
 
 public:
 	static PacketSize_t	addSize( PacketSize_t tot, const QuestStatusInfo* pInfo ) { return tot + pInfo->getSize(); }
@@ -62,9 +62,9 @@ public :
 	
 public:
 	Packet* createPacket() throw() { return new GCGQuestStatusInfo(); }
-	string getPacketName() const throw() { return "GCGQuestStatusInfo"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_GQUEST_STATUS_INFO; }
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + QuestStatusInfo::getMaxSize() * MAX_QUEST_NUM; }
+	string getPacketName()  { return "GCGQuestStatusInfo"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_GQUEST_STATUS_INFO; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + QuestStatusInfo::getMaxSize() * MAX_QUEST_NUM; }
 };
 
 //////////////////////////////////////////////////////////////////////////////

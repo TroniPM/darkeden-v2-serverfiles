@@ -19,10 +19,10 @@
 class ActionTradeGQuestEventItem : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_TRADE_GQUEST_EVENT_ITEM; }
+	virtual ActionType_t getActionType()  { return ACTION_TRADE_GQUEST_EVENT_ITEM; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 };
 
 
@@ -33,9 +33,9 @@ public:
 class ActionTradeGQuestEventItemFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_TRADE_GQUEST_EVENT_ITEM; }
-	virtual string getActionName() const throw() { return "TradeGQuestEventItem"; }
-	virtual Action* createAction() const throw() { return new ActionTradeGQuestEventItem(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_TRADE_GQUEST_EVENT_ITEM; }
+	virtual string getActionName()  { return "TradeGQuestEventItem"; }
+	virtual Action* createAction()  { return new ActionTradeGQuestEventItem(); }
 };
 
 #endif

@@ -18,11 +18,11 @@
 class ConditionSiegeAttackerSide : public Condition 
 {
 public:
-	virtual ConditionType_t getConditionType() const throw() { return CONDITION_SIEGE_ATTACKER_SIDE; }
-	virtual bool isPassive() const throw() { return true; }
-	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) const throw();
+	virtual ConditionType_t getConditionType()  { return CONDITION_SIEGE_ATTACKER_SIDE; }
+	virtual bool isPassive()  { return true; }
+	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) ;
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 
@@ -35,9 +35,9 @@ public:
 class ConditionSiegeAttackerSideFactory : public ConditionFactory 
 {
 public:
-    virtual ConditionType_t getConditionType() const throw() { return Condition::CONDITION_SIEGE_ATTACKER_SIDE; }
-    virtual Condition* createCondition() const throw() { return new ConditionSiegeAttackerSide(); }
-    virtual string getConditionName() const throw() { return "SiegeAttackerSide"; }
+    virtual ConditionType_t getConditionType()  { return Condition::CONDITION_SIEGE_ATTACKER_SIDE; }
+    virtual Condition* createCondition()  { return new ConditionSiegeAttackerSide(); }
+    virtual string getConditionName()  { return "SiegeAttackerSide"; }
 };
 
 #endif

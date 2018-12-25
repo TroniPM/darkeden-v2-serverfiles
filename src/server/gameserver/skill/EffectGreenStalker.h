@@ -20,7 +20,7 @@ public:
 	EffectGreenStalker(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_GREEN_STALKER; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_GREEN_STALKER; }
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
@@ -31,20 +31,20 @@ public:
 	void unaffect(Item* pItem) throw(Error) {}
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
-	HP_t getDamage() const throw() { return m_Damage; }
+	HP_t getDamage()  { return m_Damage; }
 	void setDamage(HP_t Damage) throw() { m_Damage = Damage; }
 
 	void setTick(Turn_t Tick) throw() { m_Tick = Tick; }
-	Turn_t getTick() const throw() { return m_Tick; }
+	Turn_t getTick()  { return m_Tick; }
 
-	Level_t getLevel() const throw() { return m_Level; }
+	Level_t getLevel()  { return m_Level; }
 	void setLevel(Level_t Level) throw() { m_Level = Level; }
 
 	void setUserObjectID(ObjectID_t oid) throw() { m_UserObjectID = oid; }
-	ObjectID_t getUserObjectID() const throw() { return m_UserObjectID; }
+	ObjectID_t getUserObjectID()  { return m_UserObjectID; }
 
 	void setVampire( bool bVampire = true ) { m_bVampire = bVampire; }
 	bool isVampire() const { return m_bVampire; }

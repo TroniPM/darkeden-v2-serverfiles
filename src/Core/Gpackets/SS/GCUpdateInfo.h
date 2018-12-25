@@ -67,10 +67,10 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_UPDATE_INFO; }
+	PacketID_t getPacketID()  { return PACKET_GC_UPDATE_INFO; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		// [PCType][PCInfo]
 		// [GameTime][Weather][WeatherLevel][DarkLevel][LightLevel]
@@ -145,10 +145,10 @@ public :
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "GCUpdateInfo"; }
+	string getPacketName()  { return "GCUpdateInfo"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 //--------------------------------------------------
 // methods
@@ -156,81 +156,81 @@ public :
 public :
 
 	// get/set PC info
-	PCInfo* getPCInfo() const throw() { return m_pPCInfo; }
+	PCInfo* getPCInfo()  { return m_pPCInfo; }
 	void setPCInfo(PCInfo* pPCInfo) throw(Error) { m_pPCInfo = pPCInfo; }
 
 	// get/set Inventory Info
-	InventoryInfo* getInventoryInfo() const throw() { return m_pInventoryInfo; }
+	InventoryInfo* getInventoryInfo()  { return m_pInventoryInfo; }
 	void setInventoryInfo(InventoryInfo* pInventoryInfo) throw(Error) { m_pInventoryInfo = pInventoryInfo; }
 
 	// get/set Gear Info
-	GearInfo* getGearInfo() const throw() { return m_pGearInfo; }
+	GearInfo* getGearInfo()  { return m_pGearInfo; }
 	void setGearInfo(GearInfo* pGearInfo) throw(Error) { m_pGearInfo = pGearInfo; }
 
 	// get/set ExtraInfo
-	ExtraInfo* getExtraInfo() const throw() { return m_pExtraInfo; }
+	ExtraInfo* getExtraInfo()  { return m_pExtraInfo; }
 	void setExtraInfo(ExtraInfo* pExtraInfo) throw(Error) { m_pExtraInfo = pExtraInfo; }
 
 	// get/set EffectInfo
-	EffectInfo* getEffectInfo() const throw() { return m_pEffectInfo; }
+	EffectInfo* getEffectInfo()  { return m_pEffectInfo; }
 	void setEffectInfo(EffectInfo* pEffectInfo) throw(Error) { m_pEffectInfo = pEffectInfo; }
 
 	// get/set hasMotorcycle
-	bool hasMotorcycle() const throw() { return m_hasMotorcycle; }
+	bool hasMotorcycle()  { return m_hasMotorcycle; }
 
 	// get/set RideMotorcycleInfo
-	RideMotorcycleInfo* getRideMotorcycleInfo() const throw() { return m_pRideMotorcycleInfo; }
+	RideMotorcycleInfo* getRideMotorcycleInfo()  { return m_pRideMotorcycleInfo; }
 	void setRideMotorcycleInfo(RideMotorcycleInfo* pRideMotorcycleInfo) throw() {
 		m_pRideMotorcycleInfo = pRideMotorcycleInfo;
 		m_hasMotorcycle = true;
 	}
 
 	// get/set ZoneID
-	ZoneID_t getZoneID() const throw() { return m_ZoneID; }
+	ZoneID_t getZoneID()  { return m_ZoneID; }
 	void setZoneID(const ZoneID_t & zoneID) throw() { m_ZoneID = zoneID; }
 
 	// get / set ZoneX
-	Coord_t getZoneX() const throw() { return m_ZoneX; }
+	Coord_t getZoneX()  { return m_ZoneX; }
 	void setZoneX(Coord_t ZoneX) { m_ZoneX = ZoneX; }
 
 	// get / set ZoneY
-	Coord_t getZoneY() const throw() { return m_ZoneY; }
+	Coord_t getZoneY()  { return m_ZoneY; }
 	void setZoneY(Coord_t ZoneY) { m_ZoneY = ZoneY; }
 
 	// get/set GameTime
-	GameTime getGameTime() const throw() { return m_GameTime; }
+	GameTime getGameTime()  { return m_GameTime; }
 	void setGameTime(const GameTime & gameTime) throw() { m_GameTime = gameTime; }
 
 	// get/set weather
-	Weather getWeather() const throw() { return m_Weather; }
+	Weather getWeather()  { return m_Weather; }
 	void setWeather(Weather weather) throw() { m_Weather = weather; }
 
 	// get/set weather level
-	WeatherLevel_t getWeatherLevel() const throw() { return m_WeatherLevel; }
+	WeatherLevel_t getWeatherLevel()  { return m_WeatherLevel; }
 	void setWeatherLevel(WeatherLevel_t weatherLevel) throw() { m_WeatherLevel = weatherLevel; }
 
 	// get/set darklevel
-	DarkLevel_t getDarkLevel() const throw() { return m_DarkLevel; }
+	DarkLevel_t getDarkLevel()  { return m_DarkLevel; }
 	void setDarkLevel(DarkLevel_t darkLevel) throw() { m_DarkLevel = darkLevel; }
 
 	// get/set lightlevel
-	LightLevel_t getLightLevel() const throw() { return m_LightLevel; }
+	LightLevel_t getLightLevel()  { return m_LightLevel; }
 	void setLightLevel(LightLevel_t lightLevel) throw() { m_LightLevel = lightLevel; }
 
 	// get/set # of NPC
-	uint getNPCCount() const throw() { return m_nNPCs; }
+	uint getNPCCount()  { return m_nNPCs; }
 	void setNPCCount(uint n) throw(Error) { Assert(n <= maxNPCPerZone); m_nNPCs = n; }
 
 	// get/set NPC type
-	NPCType_t getNPCType(uint n) const throw() { Assert(n < maxNPCPerZone); return m_NPCTypes[n]; }
+	NPCType_t getNPCType(uint n)  { Assert(n < maxNPCPerZone); return m_NPCTypes[n]; }
 	void setNPCType(uint n, NPCType_t npcType) throw() { Assert(n < maxNPCPerZone); m_NPCTypes[n] = npcType; }
 
 	// get/set # of monster
-	uint getMonsterCount() const throw() { return m_nMonsters; }
+	uint getMonsterCount()  { return m_nMonsters; }
 	void setMonsterCount(uint n) throw(Error) { Assert(n <= maxMonsterPerZone); m_nMonsters = n; }
 
 	// get/set Monster type
-	MonsterType_t getMonsterType(uint n) const throw() { Assert(n < maxMonsterPerZone); return m_MonsterTypes[n]; }
+	MonsterType_t getMonsterType(uint n)  { Assert(n < maxMonsterPerZone); return m_MonsterTypes[n]; }
 	void setMonsterType(uint n, MonsterType_t npcType) throw() { Assert(n < maxMonsterPerZone); m_MonsterTypes[n] = npcType; }
 
 	// get/set npc info
@@ -239,7 +239,7 @@ public :
 
 	// get/set ServerStat
 	void setServerStat( BYTE ServerStat ) throw() { m_ServerStat = ServerStat; }
-	BYTE getServerStat() const throw() { return m_ServerStat; }
+	BYTE getServerStat()  { return m_ServerStat; }
 
 	// premium play 관련
 	void setPremiumZone() { m_fPremium |= FLAG_PREMIUM_ZONE; }
@@ -250,7 +250,7 @@ public :
 	DWORD	getSMSCharge() const { return m_SMSCharge; }
 	void	setSMSCharge(DWORD charge) { m_SMSCharge = charge; }
 
-	NicknameInfo* getNicknameInfo() const throw() { return m_pNicknameInfo; }
+	NicknameInfo* getNicknameInfo()  { return m_pNicknameInfo; }
 	void setNicknameInfo(NicknameInfo* pNicknameInfo) throw(Error) { m_pNicknameInfo = pNicknameInfo; }
 
 	BYTE	isNonPK() const { return m_NonPK; }
@@ -390,15 +390,15 @@ public :
 	Packet* createPacket() throw() { return new GCUpdateInfo(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCUpdateInfo"; }
+	string getPacketName()  { return "GCUpdateInfo"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_UPDATE_INFO; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_UPDATE_INFO; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCUpdateInfoPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		PacketSize_t size = 0;
 

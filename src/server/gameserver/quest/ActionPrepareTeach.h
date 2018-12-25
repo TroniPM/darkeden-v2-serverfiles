@@ -22,13 +22,13 @@
 class ActionPrepareTeach : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_PREPARE_TEACH; }
+	virtual ActionType_t getActionType()  { return ACTION_PREPARE_TEACH; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
-	SkillLevel_t getMaxLevel(void) const throw() { return m_MaxLevel;}
+	SkillLevel_t getMaxLevel(void)  { return m_MaxLevel;}
 	void setMaxLevel(SkillLevel_t level) throw() { m_MaxLevel = level;}
 
 private:
@@ -44,9 +44,9 @@ private:
 class ActionPrepareTeachFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_PREPARE_TEACH; }
-	virtual string getActionName() const throw() { return "PrepareTeach"; }
-	virtual Action* createAction() const throw() { return new ActionPrepareTeach(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_PREPARE_TEACH; }
+	virtual string getActionName()  { return "PrepareTeach"; }
+	virtual Action* createAction()  { return new ActionPrepareTeach(); }
 
 };
 

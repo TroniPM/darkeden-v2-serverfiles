@@ -24,14 +24,14 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_ADD_VAMPIRE_PORTAL; }
-	PacketSize_t getPacketSize() const throw() 
+	PacketID_t getPacketID()  { return PACKET_GC_ADD_VAMPIRE_PORTAL; }
+	PacketSize_t getPacketSize()  
 	{ 
 		return szObjectID + szBYTE + m_OwnerID.size() + szDuration 
 			+ szCoord*2 + szZoneID + szCoord*2 + szBYTE;
 	}
-	string getPacketName() const throw() { return "GCAddVampirePortal"; }
-	string toString() const throw();
+	string getPacketName()  { return "GCAddVampirePortal"; }
+	string toString() ;
 
 public:
 	ObjectID_t getObjectID(void) const { return m_ObjectID; }
@@ -82,9 +82,9 @@ class GCAddVampirePortalFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCAddVampirePortal(); }
-	string getPacketName() const throw() { return "GCAddVampirePortal"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_ADD_VAMPIRE_PORTAL; }
-	PacketSize_t getPacketMaxSize() const throw()
+	string getPacketName()  { return "GCAddVampirePortal"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_VAMPIRE_PORTAL; }
+	PacketSize_t getPacketMaxSize() 
 	{ 
 		return szObjectID + szBYTE + 20 + szDuration 
 			+ szCoord*2 + szZoneID + szCoord*2 + szBYTE;

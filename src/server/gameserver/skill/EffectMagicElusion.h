@@ -21,14 +21,14 @@ public:
 	EffectMagicElusion(Zone* pZone, ZoneCoord_t ZoneX, ZoneCoord_t ZoneY) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_MAGIC_ELUSION; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_MAGIC_ELUSION; }
 
 	void affect() throw(Error){}
 
 	void unaffect() throw(Error);
 	void unaffect(Creature* pCreature) throw(Error) {};
 
-	string toString() const throw();
+	string toString() ;
 };
 
 #endif // __EFFECT_MAGIC_ELUSION__

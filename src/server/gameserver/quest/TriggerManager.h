@@ -35,12 +35,12 @@ public:
 
 	Trigger* getTrigger(TriggerID_t triggerID) throw(NoSuchElementException, Error);
 
-	bool hasCondition(ConditionType_t conditionType) const throw() { return m_ConditionSet.test(conditionType); }
+	bool hasCondition(ConditionType_t conditionType)  { return m_ConditionSet.test(conditionType); }
 
 	list<Trigger*> & getTriggers() throw() { return m_Triggers; }
-	const list<Trigger*> & getTriggers() const throw() { return m_Triggers; }
+	const list<Trigger*> & getTriggers()  { return m_Triggers; }
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 

@@ -25,13 +25,13 @@ class Slayer;
 class ActionRedeemMotorcycle : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_REDEEM_MOTORCYCLE; }
+	virtual ActionType_t getActionType()  { return ACTION_REDEEM_MOTORCYCLE; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2=NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 protected:
-	bool load(Item* pItem, Slayer* pSlayer, Zone* pZone, ZoneCoord_t x, ZoneCoord_t y) const throw();
+	bool load(Item* pItem, Slayer* pSlayer, Zone* pZone, ZoneCoord_t x, ZoneCoord_t y) ;
 
 };
 
@@ -42,9 +42,9 @@ protected:
 class ActionRedeemMotorcycleFactory : public ActionFactory 
 {
 public :
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_REDEEM_MOTORCYCLE; }
-	virtual string getActionName() const throw() { return "RedeemMotorcycle"; }
-	virtual Action* createAction() const throw() { return new ActionRedeemMotorcycle(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_REDEEM_MOTORCYCLE; }
+	virtual string getActionName()  { return "RedeemMotorcycle"; }
+	virtual Action* createAction()  { return new ActionRedeemMotorcycle(); }
 };
 
 

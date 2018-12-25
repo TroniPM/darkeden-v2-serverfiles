@@ -25,10 +25,10 @@
 class ActionHeightTeachSkill : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_HEIGHT_TEACH_SKILL; }
+	virtual ActionType_t getActionType()  { return ACTION_HEIGHT_TEACH_SKILL; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 private:
 	SkillDomainType_t m_DomainType; // 가르쳐 줄 스킬의 도메인
@@ -42,9 +42,9 @@ private:
 class ActionHeightTeachSkillFactory : public ActionFactory 
 {
 public :
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_HEIGHT_TEACH_SKILL; }
-	virtual string getActionName() const throw() { return "HeightTeachSkill"; }
-	virtual Action* createAction() const throw() { return new ActionHeightTeachSkill(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_HEIGHT_TEACH_SKILL; }
+	virtual string getActionName()  { return "HeightTeachSkill"; }
+	virtual Action* createAction()  { return new ActionHeightTeachSkill(); }
 
 };
 

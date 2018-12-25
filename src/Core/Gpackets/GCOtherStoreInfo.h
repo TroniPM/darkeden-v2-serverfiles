@@ -25,10 +25,10 @@ public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_OTHER_STORE_INFO; }
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szBYTE + m_pInfo->getSize(true); }
-	string getPacketName() const throw() { return "GCOtherStoreInfo"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_OTHER_STORE_INFO; }
+	PacketSize_t getPacketSize()  { return szObjectID + szBYTE + m_pInfo->getSize(true); }
+	string getPacketName()  { return "GCOtherStoreInfo"; }
+	string toString() ;
 
 public:
 	ObjectID_t	getObjectID() const { return m_ObjectID; }
@@ -54,9 +54,9 @@ class GCOtherStoreInfoFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCOtherStoreInfo(); }
-	string getPacketName() const throw() { return "GCOtherStoreInfo"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_OTHER_STORE_INFO; }
-	PacketSize_t getPacketMaxSize() const throw()
+	string getPacketName()  { return "GCOtherStoreInfo"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_OTHER_STORE_INFO; }
+	PacketSize_t getPacketMaxSize() 
 	{
 		return szObjectID + szBYTE + StoreInfo::getMaxSize();
 	}

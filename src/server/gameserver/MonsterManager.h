@@ -60,7 +60,7 @@ public:
 	void regenerateCreatures() throw(Error);
 
 	// 몬스터를 추가할 적절한 위치를 검색한다.
-	bool findPosition(MonsterType_t monsterType, ZoneCoord_t& x, ZoneCoord_t& y) const throw();
+	bool findPosition(MonsterType_t monsterType, ZoneCoord_t& x, ZoneCoord_t& y) ;
 
 	// 죽은 크리처를 처리한다.
 	void killCreature(Creature* pDeadMonster) throw(Error);
@@ -78,7 +78,7 @@ public:
 	void addEnemy(Monster* pMonster, Creature* pCreature) throw(Error);
 
 	// get debug string 
-	string toString() const throw();
+	string toString() ;
 
 	// delete AllMonsters
 	void deleteAllMonsters(bool bDeleteFromZone=true) throw(Error);//NoSuchElementException, Error);

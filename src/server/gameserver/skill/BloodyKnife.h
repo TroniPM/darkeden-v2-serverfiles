@@ -20,8 +20,8 @@ public:
 	~BloodyKnife() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "BloodyKnife"; }
-	SkillType_t getSkillType() const throw() { return SKILL_BLOODY_KNIFE; }
+    string getSkillHandlerName()  { return "BloodyKnife"; }
+	SkillType_t getSkillType()  { return SKILL_BLOODY_KNIFE; }
 
 	void execute(Vampire* pVampire, ObjectID_t ObjectID,  VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Monster* pMonster, Creature* pEnemy) throw(Error);

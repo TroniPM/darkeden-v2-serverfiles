@@ -12,11 +12,11 @@ public:
 	EffectCrushingStorm(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_CRUSHING_STORM; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_CRUSHING_STORM; }
 
 	void affect() throw(Error);
 	void unaffect() throw(Error);
-	string toString() const throw();
+	string toString() ;
 
 public:
 	int getDamage(void) const { return m_Damage; }

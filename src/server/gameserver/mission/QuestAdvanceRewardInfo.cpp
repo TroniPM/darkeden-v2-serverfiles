@@ -49,7 +49,7 @@ QuestMessage QuestAdvanceRewardInfo::giveReward( PlayerCreature *pPC ) const
 	__END_CATCH
 }
 
-string QuestAdvanceRewardInfo::toString() const throw()
+string QuestAdvanceRewardInfo::toString() 
 {
 	__BEGIN_TRY
 

@@ -20,14 +20,14 @@ public:
 	EffectFrozenArmor(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_FROZEN_ARMOR; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_FROZEN_ARMOR; }
 
 	void affect() throw(Error){}
 
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void setBonus( uint bonus ) { m_Bonus = bonus; }

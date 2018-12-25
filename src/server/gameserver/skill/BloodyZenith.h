@@ -20,9 +20,9 @@ public:
 	~BloodyZenith() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "BloodyZenith"; }
+    string getSkillHandlerName()  { return "BloodyZenith"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_BLOODY_ZENITH; }
+	SkillType_t getSkillType()  { return SKILL_BLOODY_ZENITH; }
 
 	void execute(Vampire* pVampire, ObjectID_t targetObject, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Monster* pMonster, Creature* pEnemy) throw(Error);

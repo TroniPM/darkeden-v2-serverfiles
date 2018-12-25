@@ -20,8 +20,8 @@ public:
 	~SatelliteBomb2() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "SatelliteBomb2"; }
-	SkillType_t getSkillType() const throw() { return SKILL_SATELLITE_BOMB2; }
+    string getSkillHandlerName()  { return "SatelliteBomb2"; }
+	SkillType_t getSkillType()  { return SKILL_SATELLITE_BOMB2; }
 
 	void execute(Slayer* pSlayer, ZoneCoord_t X, ZoneCoord_t Y,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Slayer* pSlayer, ObjectID_t,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);

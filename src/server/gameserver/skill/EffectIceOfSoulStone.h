@@ -20,14 +20,14 @@ public:
 	EffectIceOfSoulStone(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_ICE_OF_SOUL_STONE; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_ICE_OF_SOUL_STONE; }
 
 	void affect() throw(Error){}
 
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 };
 

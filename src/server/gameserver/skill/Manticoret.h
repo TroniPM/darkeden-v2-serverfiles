@@ -20,8 +20,8 @@ public:
 	~Manticoret() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Manticoret"; }
-	SkillType_t getSkillType() const throw() { return SKILL_MANTICORET; }
+    string getSkillHandlerName()  { return "Manticoret"; }
+	SkillType_t getSkillType()  { return SKILL_MANTICORET; }
 
 	void execute(Vampire* pVampire, ObjectID_t ObjectID,  VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Monster* pMonster, Creature* pEnemy) throw(Error);

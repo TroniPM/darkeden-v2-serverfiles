@@ -46,27 +46,27 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_SKILL_FAILED_2; }
+	PacketID_t getPacketID()  { return PACKET_GC_SKILL_FAILED_2; }
 	
 	// get packet size
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szObjectID + szSkillType + szBYTE; }
+	PacketSize_t getPacketSize()  { return szObjectID + szObjectID + szSkillType + szBYTE; }
 	
 	// get packet's name
-	string getPacketName() const throw() { return "GCSkillFailed2"; }
+	string getPacketName()  { return "GCSkillFailed2"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 	
 	// get/set ObjectID
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
 
 	// get/set TargetObjectID
-	ObjectID_t getTargetObjectID() const throw() { return m_TargetObjectID; }
+	ObjectID_t getTargetObjectID()  { return m_TargetObjectID; }
 	void setTargetObjectID(ObjectID_t TargetObjectID) throw() { m_TargetObjectID = TargetObjectID; }
 
 	// get/set SkillType
-	SkillType_t getSkillType() const throw() { return m_SkillType; }
+	SkillType_t getSkillType()  { return m_SkillType; }
 	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
 
 	BYTE getGrade() const { return m_Grade; }
@@ -113,13 +113,13 @@ public :
 	Packet* createPacket() throw() { return new GCSkillFailed2(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCSkillFailed2"; }
+	string getPacketName()  { return "GCSkillFailed2"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_SKILL_FAILED_2; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_SKILL_FAILED_2; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return  szObjectID + szObjectID + szSkillType + szBYTE; }
+	PacketSize_t getPacketMaxSize()  { return  szObjectID + szObjectID + szSkillType + szBYTE; }
 
 };
 

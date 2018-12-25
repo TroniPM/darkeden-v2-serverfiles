@@ -36,10 +36,10 @@ public:
 	void load() throw();
 
 public:
-	bool getSlayerPosition(ZoneID_t id, ZONE_COORD& zoneCoord) const throw();//NoSuchElementException);
-	bool getVampirePosition(ZoneID_t id, ZONE_COORD& zoneCoord) const throw();//NoSuchElementException);
-	bool getOustersPosition(ZoneID_t id, ZONE_COORD& zoneCoord) const throw();//NoSuchElementException);
-	bool getRaceDefaultPosition(Race_t, ZONE_COORD& zoneCoord) const throw();
+	bool getSlayerPosition(ZoneID_t id, ZONE_COORD& zoneCoord) ;//NoSuchElementException);
+	bool getVampirePosition(ZoneID_t id, ZONE_COORD& zoneCoord) ;//NoSuchElementException);
+	bool getOustersPosition(ZoneID_t id, ZONE_COORD& zoneCoord) ;//NoSuchElementException);
+	bool getRaceDefaultPosition(Race_t, ZONE_COORD& zoneCoord) ;
 
 	bool getPosition(PlayerCreature* pPC, ZONE_COORD& zondCoord) const throw(Error);
 	bool getBasicPosition(PlayerCreature* pPC, ZONE_COORD& zondCoord) const throw(Error);

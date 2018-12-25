@@ -31,14 +31,14 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_CG_TAME_MONSTER; }
-	PacketSize_t getPacketSize() const throw() { return szObjectID; }
-	string getPacketName() const throw() { return "CGTameMonster"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_CG_TAME_MONSTER; }
+	PacketSize_t getPacketSize()  { return szObjectID; }
+	string getPacketName()  { return "CGTameMonster"; }
+	string toString() ;
 	
 public:
 	// get/set ObjectID
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
 	
 private :
@@ -63,9 +63,9 @@ public:
 
 public:
 	Packet* createPacket() throw() { return new CGTameMonster(); }
-	string getPacketName() const throw() { return "CGTameMonster"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_TAME_MONSTER; }
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID; }
+	string getPacketName()  { return "CGTameMonster"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_TAME_MONSTER; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID; }
 };
 
 //////////////////////////////////////////////////////////////////////

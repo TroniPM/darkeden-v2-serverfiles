@@ -47,40 +47,40 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_MINE_EXPLOSION_OK_2; }
+	PacketID_t getPacketID()  { return PACKET_GC_MINE_EXPLOSION_OK_2; }
 	
 	// get packet's body size
 	// 최적화시, 미리 계산된 정수를 사용한다.
-	PacketSize_t getPacketSize() const throw() { return szCoord*2+ szDir + szItemType
+	PacketSize_t getPacketSize()  { return szCoord*2+ szDir + szItemType
 	   + szBYTE + szObjectID* m_CListNum; }
          //CListNum, SListNum, ListEle* CListNum, ListEle* SListNum* 5 
 
 	// get packet's name
-	string getPacketName() const throw() { return "GCMineExplosionOK2"; }
+	string getPacketName()  { return "GCMineExplosionOK2"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get / set X
-	Coord_t getX() const throw() { return m_X; }
+	Coord_t getX()  { return m_X; }
 	void setX(Coord_t X) throw() { m_X = X; }
 
 	// get / set Y
-	Coord_t getY() const throw() { return m_Y; }
+	Coord_t getY()  { return m_Y; }
 	void setY(Coord_t Y) throw() { m_Y = Y; }
 	
 	// get / set Dir
-	Dir_t getDir() const throw() { return m_Dir; }
+	Dir_t getDir()  { return m_Dir; }
 	void setDir(Dir_t r) throw() { m_Dir = r; }
 	
 	// get / set ItemType
-	ItemType_t getItemType() const throw() { return m_ItemType; }
+	ItemType_t getItemType()  { return m_ItemType; }
 	void setItemType(ItemType_t r) throw() { m_ItemType = r; }
 
 	void setXYDir(Coord_t X, Coord_t Y, Dir_t R) throw() { m_X = X; m_Y = Y; m_Dir = R;}
 
     // get / set Creature List Number
-    BYTE getCListNum() const throw() { return m_CListNum; }
+    BYTE getCListNum()  { return m_CListNum; }
     void setCListNum(BYTE CListNum) throw() { m_CListNum = CListNum; }
 
 
@@ -140,13 +140,13 @@ public :
 	Packet* createPacket() throw() { return new GCMineExplosionOK2(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCMineExplosionOK2"; }
+	string getPacketName()  { return "GCMineExplosionOK2"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_MINE_EXPLOSION_OK_2; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_MINE_EXPLOSION_OK_2; }
 
 	// get Pakcet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szCoord*2 + szDir + szItemType 
+	PacketSize_t getPacketMaxSize()  { return szCoord*2 + szDir + szItemType 
 		+ szBYTE + szWORD + szObjectID + 255; }
 };
 

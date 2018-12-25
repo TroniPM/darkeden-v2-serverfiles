@@ -56,10 +56,10 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_NPC_INFO; }
+	PacketID_t getPacketID()  { return PACKET_GC_NPC_INFO; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		PacketSize_t size = 0;
 
@@ -75,10 +75,10 @@ public :
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "GCNPCInfo"; }
+	string getPacketName()  { return "GCNPCInfo"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 
 //--------------------------------------------------
@@ -114,15 +114,15 @@ public :
 	Packet* createPacket() throw() { return new GCNPCInfo(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCNPCInfo"; }
+	string getPacketName()  { return "GCNPCInfo"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_NPC_INFO; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_NPC_INFO; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCNPCInfoPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		PacketSize_t size = 0;
 

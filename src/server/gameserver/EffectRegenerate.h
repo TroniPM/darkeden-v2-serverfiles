@@ -21,12 +21,12 @@ public:
 	~EffectRegenerate() throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_TRANSPORT_CREATURE; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_TRANSPORT_CREATURE; }
 
 	void affect() throw(Error);
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 	void setPoint(HP_t point) { m_Point = point; }
 	void setTick(Turn_t tick) { m_Tick = tick; }

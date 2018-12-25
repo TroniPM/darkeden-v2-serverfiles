@@ -55,27 +55,27 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GM_SERVER_INFO; }
+	PacketID_t getPacketID()  { return PACKET_GM_SERVER_INFO; }
 	
 	// get packet name
-	string getPacketName() const throw() { return "GMServerInfo"; }
+	string getPacketName()  { return "GMServerInfo"; }
 	
 	PacketSize_t getPacketSize () const throw () { return szWorldID + szBYTE + m_ZoneCount*(szBYTE+szDWORD); }
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public:
 
 	// get/set playerID
-	WorldID_t getWorldID() const throw() { return m_WorldID; }
+	WorldID_t getWorldID()  { return m_WorldID; }
 	void setWorldID(WorldID_t WorldID) throw() { m_WorldID= WorldID; }
 	
 	// get/set playerID
-	BYTE getServerID() const throw() { return m_ServerID; }
+	BYTE getServerID()  { return m_ServerID; }
 	void setServerID(BYTE ServerID) throw() { m_ServerID= ServerID; }
 	
-	BYTE getZoneUserCount(void) const throw() { return m_ZoneCount; }
+	BYTE getZoneUserCount(void)  { return m_ZoneCount; }
 
 	void addZoneUserData(ZoneID_t ZoneID, DWORD value) throw();
 
@@ -115,15 +115,15 @@ public :
 	Packet* createPacket() throw() { return new GMServerInfo(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GMServerInfo"; }
+	string getPacketName()  { return "GMServerInfo"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GM_SERVER_INFO; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GM_SERVER_INFO; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GMServerInfoPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szWorldID + szBYTE + 255*(szBYTE+szDWORD); }
+	PacketSize_t getPacketMaxSize()  { return szWorldID + szBYTE + 255*(szBYTE+szDWORD); }
 
 };
 

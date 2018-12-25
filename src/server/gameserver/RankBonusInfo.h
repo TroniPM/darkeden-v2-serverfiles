@@ -79,7 +79,7 @@ public:
 	void addRankBonusInfo(RankBonusInfo* pRankBonusInfo) throw(DuplicatedException, Error);
 
 	// toString for Debug
-	string toString() const throw();
+	string toString() ;
 
 private:
 	uint				m_Count;

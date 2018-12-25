@@ -20,8 +20,8 @@ public:
 	~NooseOfWraith() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "NooseOfWraith"; }
-	SkillType_t getSkillType() const throw() { return SKILL_NOOSE_OF_WRAITH; }
+    string getSkillHandlerName()  { return "NooseOfWraith"; }
+	SkillType_t getSkillType()  { return SKILL_NOOSE_OF_WRAITH; }
 
 	void execute(Vampire* pVampire, ObjectID_t ObjectID, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Vampire* pVampire, ZoneCoord_t X, ZoneCoord_t Y, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);

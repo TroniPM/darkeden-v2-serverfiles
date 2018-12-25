@@ -20,19 +20,19 @@
 class ActionWarpToNoviceZone : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_WARP_TO_NOVICE_ZONE; }
+	virtual ActionType_t getActionType()  { return ACTION_WARP_TO_NOVICE_ZONE; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
-	ZoneID_t    getNoviceZoneID(void) const throw() { return m_NoviceZoneID; }
-	ZoneCoord_t getNoviceX(void) const throw() { return m_NoviceX; }
-	ZoneCoord_t getNoviceY(void) const throw() { return m_NoviceY; }
+	ZoneID_t    getNoviceZoneID(void)  { return m_NoviceZoneID; }
+	ZoneCoord_t getNoviceX(void)  { return m_NoviceX; }
+	ZoneCoord_t getNoviceY(void)  { return m_NoviceY; }
 
-	ZoneID_t    getBeginnerZoneID(void) const throw() { return m_BeginnerZoneID; }
-	ZoneCoord_t getBeginnerX(void) const throw() { return m_BeginnerX; }
-	ZoneCoord_t getBeginnerY(void) const throw() { return m_BeginnerY; }
+	ZoneID_t    getBeginnerZoneID(void)  { return m_BeginnerZoneID; }
+	ZoneCoord_t getBeginnerX(void)  { return m_BeginnerX; }
+	ZoneCoord_t getBeginnerY(void)  { return m_BeginnerY; }
 
 private:
 	ZoneID_t    m_NoviceZoneID;
@@ -52,8 +52,8 @@ private:
 class ActionWarpToNoviceZoneFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_WARP_TO_NOVICE_ZONE; }
-	virtual string getActionName() const throw() { return "WarpToNoviceZone"; }
-	virtual Action* createAction() const throw() { return new ActionWarpToNoviceZone(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_WARP_TO_NOVICE_ZONE; }
+	virtual string getActionName()  { return "WarpToNoviceZone"; }
+	virtual Action* createAction()  { return new ActionWarpToNoviceZone(); }
 };
 #endif

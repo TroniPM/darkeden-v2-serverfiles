@@ -138,7 +138,7 @@ const string& MasterLairInfo::getRandomMasterNotDeadSay() const
 
 string
 MasterLairInfo::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

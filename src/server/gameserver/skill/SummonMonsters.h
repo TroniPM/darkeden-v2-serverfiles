@@ -20,8 +20,8 @@ public:
 	~SummonMonsters() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "SummonMonsters"; }
-	SkillType_t getSkillType() const throw() { return SKILL_SUMMON_MONSTERS; }
+    string getSkillHandlerName()  { return "SummonMonsters"; }
+	SkillType_t getSkillType()  { return SKILL_SUMMON_MONSTERS; }
 
 	//void execute(Slayer* pSlayer, SlayerSkillSlot* pSlayerSkillSlot, CEffectID_t CEffectID) throw(Error);
 	//void execute(Vampire* pVampire, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);

@@ -37,10 +37,10 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_CONNECT; }
+	PacketID_t getPacketID()  { return PACKET_CG_CONNECT; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		return szDWORD 						// authentication key
 			+ szPCType 						// Slayer or Vampire?
@@ -48,23 +48,23 @@ public:
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "CGConnect"; }
+	string getPacketName()  { return "CGConnect"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public:
 
 	// get/set key
-	DWORD getKey() const throw() { return m_Key; }
+	DWORD getKey()  { return m_Key; }
 	void setKey(DWORD key) throw() { m_Key = key; }
 
 	// get/set PCType
-	PCType getPCType() const throw() { return m_PCType; }
+	PCType getPCType()  { return m_PCType; }
 	void setPCType(PCType pcType) throw() { m_PCType = pcType; }
 	
 	// get/set pc name
-	string getPCName() const throw() { return m_PCName; }
+	string getPCName()  { return m_PCName; }
 	void setPCName(string pcName) throw() { m_PCName = pcName; }
 
 	const BYTE* getMacAddress() const { return m_MacAddress; }
@@ -100,13 +100,13 @@ public:
 	Packet* createPacket() throw() { return new CGConnect(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGConnect"; }
+	string getPacketName()  { return "CGConnect"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_CONNECT; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_CONNECT; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw()
+	PacketSize_t getPacketMaxSize() 
 	{ 
 		return szDWORD 			// authentication key
 			+ szPCType 			// Slayer or Vampire

@@ -37,31 +37,31 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_LC_LOGIN_OK; }
+	PacketID_t getPacketID()  { return PACKET_LC_LOGIN_OK; }
 	
 	// get packet body size
 	// *OPTIMIZATION HINT*
 	// const static LCLoginOKPacketSize 를 정의, 리턴하라.
-	PacketSize_t getPacketSize() const throw() { return szBYTE + szBYTE + szBYTE + szWORD; }
+	PacketSize_t getPacketSize()  { return szBYTE + szBYTE + szBYTE + szWORD; }
 	
 	// get packet's name
-	string getPacketName() const throw() { return "LCLoginOK"; }
+	string getPacketName()  { return "LCLoginOK"; }
 
 	// get / set GoreLevel
-	bool isAdult() const throw() { return m_isAdult; }
+	bool isAdult()  { return m_isAdult; }
 	void setAdult(bool isAdult) throw() { m_isAdult = isAdult; }
 
-	bool isFamily() const throw() { return m_bFamily; }
+	bool isFamily()  { return m_bFamily; }
 	void setFamily(bool isFamily) throw() { m_bFamily = isFamily; }
 
-	BYTE getStat() const throw() { return m_Stat; }
+	BYTE getStat()  { return m_Stat; }
 	void setStat(BYTE Stat) throw() { m_Stat = Stat; }
 
-	WORD getLastDays() const throw() { return m_LastDays; }
+	WORD getLastDays()  { return m_LastDays; }
 	void setLastDays(WORD LastDays) throw() { m_LastDays = LastDays; }
 
 	// get packet's debug string
-	string toString() const throw() { return "LCLoginOK"; }
+	string toString()  { return "LCLoginOK"; }
 
 private :
 
@@ -97,13 +97,13 @@ public:
 	Packet* createPacket() throw() { return new LCLoginOK(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "LCLoginOK"; }
+	string getPacketName()  { return "LCLoginOK"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_LC_LOGIN_OK; }
+	PacketID_t getPacketID()  { return Packet::PACKET_LC_LOGIN_OK; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + szBYTE + szBYTE + szWORD; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + szBYTE + szBYTE + szWORD; }
 	
 };
 

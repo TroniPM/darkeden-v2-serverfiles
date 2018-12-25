@@ -20,10 +20,10 @@
 class ActionGiveFinalLottoScript : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_GIVE_FINAL_LOTTO_SCRIPT; }
+	virtual ActionType_t getActionType()  { return ACTION_GIVE_FINAL_LOTTO_SCRIPT; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 
@@ -41,8 +41,8 @@ private:
 class ActionGiveFinalLottoScriptFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_GIVE_FINAL_LOTTO_SCRIPT; }
-	virtual string getActionName() const throw() { return "GiveFinalLottoScript"; }
-	virtual Action* createAction() const throw() { return new ActionGiveFinalLottoScript(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_GIVE_FINAL_LOTTO_SCRIPT; }
+	virtual string getActionName()  { return "GiveFinalLottoScript"; }
+	virtual Action* createAction()  { return new ActionGiveFinalLottoScript(); }
 };
 #endif

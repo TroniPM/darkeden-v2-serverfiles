@@ -22,8 +22,8 @@ public:
 	~GreenStalker() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "GreenStalker"; }
-	SkillType_t getSkillType() const throw() { return SKILL_GREEN_STALKER; }
+    string getSkillHandlerName()  { return "GreenStalker"; }
+	SkillType_t getSkillType()  { return SKILL_GREEN_STALKER; }
 
 	void execute(Vampire* pVampire, ObjectID_t targetObject, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Monster* pMonster, Creature* pEnemy) throw(Error);

@@ -45,24 +45,24 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_LOTTERY_SELECT; }
+	PacketID_t getPacketID()  { return PACKET_CG_LOTTERY_SELECT; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szBYTE + szDWORD + szDWORD; }
+	PacketSize_t getPacketSize()  { return szBYTE + szDWORD + szDWORD; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGLotterySelect"; }
+	string getPacketName()  { return "CGLotterySelect"; }
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
-	BYTE getType() const throw() { return m_Type; }
+	BYTE getType()  { return m_Type; }
 	void setType( BYTE type ) { m_Type = type; }
 
-	DWORD getGiftID() const throw() { return m_GiftID; }
+	DWORD getGiftID()  { return m_GiftID; }
 	void setGiftID( DWORD GiftID ) throw() { m_GiftID = GiftID; }
 
-	DWORD getQuestLevel() const throw() { return m_QuestLevel; }
+	DWORD getQuestLevel()  { return m_QuestLevel; }
 	void setQuestLevel( DWORD QuestLevel ) throw() { m_QuestLevel = QuestLevel; }
 
 private :
@@ -99,13 +99,13 @@ public:
 	Packet* createPacket() throw() { return new CGLotterySelect(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGLotterySelect"; }
+	string getPacketName()  { return "CGLotterySelect"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_LOTTERY_SELECT; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_LOTTERY_SELECT; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + szDWORD + szDWORD; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + szDWORD + szDWORD; }
 };
 
 

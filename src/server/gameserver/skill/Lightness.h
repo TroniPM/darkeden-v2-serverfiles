@@ -20,8 +20,8 @@ public:
 	~Lightness() throw() {}
 
 public:
-    string getSkillHandlerName() const throw() { return "Lightness"; }
-	SkillType_t getSkillType() const throw() { return SKILL_LIGHTNESS; }
+    string getSkillHandlerName()  { return "Lightness"; }
+	SkillType_t getSkillType()  { return SKILL_LIGHTNESS; }
 
 	void execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);

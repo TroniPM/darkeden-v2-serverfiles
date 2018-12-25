@@ -23,16 +23,16 @@ public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_TEACH_SKILL_INFO; }
-	PacketSize_t getPacketSize() const throw() { return szSkillDomainType+szSkillLevel; }
-	string getPacketName() const throw() { return "GCTeachSkillInfo"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_TEACH_SKILL_INFO; }
+	PacketSize_t getPacketSize()  { return szSkillDomainType+szSkillLevel; }
+	string getPacketName()  { return "GCTeachSkillInfo"; }
+	string toString() ;
 
 public :
-	SkillDomainType_t getDomainType(void) const throw() { return m_DomainType;}
+	SkillDomainType_t getDomainType(void)  { return m_DomainType;}
 	void setDomainType(SkillDomainType_t type) throw()  { m_DomainType = type;}
 
-	SkillLevel_t getTargetLevel(void) const throw() { return m_TargetLevel;}
+	SkillLevel_t getTargetLevel(void)  { return m_TargetLevel;}
 	void setTargetLevel(SkillLevel_t level) throw() { m_TargetLevel = level;}
 
 private:
@@ -48,9 +48,9 @@ class GCTeachSkillInfoFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCTeachSkillInfo(); }
-	string getPacketName() const throw() { return "GCTeachSkillInfo"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_TEACH_SKILL_INFO; }
-	PacketSize_t getPacketMaxSize() const throw() { return szSkillDomainType+szSkillLevel; }
+	string getPacketName()  { return "GCTeachSkillInfo"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_TEACH_SKILL_INFO; }
+	PacketSize_t getPacketMaxSize()  { return szSkillDomainType+szSkillLevel; }
 };
 
 //////////////////////////////////////////////////////////////////////////////

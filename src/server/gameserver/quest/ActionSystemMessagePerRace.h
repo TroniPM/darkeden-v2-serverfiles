@@ -19,10 +19,10 @@
 class ActionSystemMessagePerRace : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_SYSTEM_MESSAGE_PER_RACE; }
+	virtual ActionType_t getActionType()  { return ACTION_SYSTEM_MESSAGE_PER_RACE; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 };
 
@@ -33,9 +33,9 @@ public:
 class ActionSystemMessagePerRaceFactory : public ActionFactory 
 {
 public:
-    virtual ActionType_t getActionType() const throw() { return Action::ACTION_SYSTEM_MESSAGE_PER_RACE; }
-	virtual string getActionName() const throw() { return "SystemMessagePerRace"; }
-    virtual Action* createAction() const throw() { return new ActionSystemMessagePerRace(); }
+    virtual ActionType_t getActionType()  { return Action::ACTION_SYSTEM_MESSAGE_PER_RACE; }
+	virtual string getActionName()  { return "SystemMessagePerRace"; }
+    virtual Action* createAction()  { return new ActionSystemMessagePerRace(); }
 };
 
 #endif

@@ -33,7 +33,7 @@ public:
 	string toString () const throw ();
 
 public:
-	string getName() const throw() { return m_Name; }
+	string getName()  { return m_Name; }
 	void setName( const char* pName) throw() { m_Name = pName;}
 
 protected:

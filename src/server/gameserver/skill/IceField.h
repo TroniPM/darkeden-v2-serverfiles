@@ -20,8 +20,8 @@ public:
 	~IceField() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "IceField"; }
-	SkillType_t getSkillType() const throw() { return SKILL_ICE_FIELD; }
+    string getSkillHandlerName()  { return "IceField"; }
+	SkillType_t getSkillType()  { return SKILL_ICE_FIELD; }
 
 	void execute(Ousters* pOusters, ZoneCoord_t X, ZoneCoord_t Y, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Ousters* pOusters, ObjectID_t, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);

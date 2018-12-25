@@ -20,8 +20,8 @@ public:
 	~Concealment() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Concealment"; }
-	SkillType_t getSkillType() const throw() { return SKILL_CONCEALMENT; }
+    string getSkillHandlerName()  { return "Concealment"; }
+	SkillType_t getSkillType()  { return SKILL_CONCEALMENT; }
 
 	void execute(Slayer* pSlayer,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

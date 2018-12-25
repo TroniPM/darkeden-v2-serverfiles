@@ -33,16 +33,16 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_REQUEST_REPAIR; }
+	PacketID_t getPacketID()  { return PACKET_CG_REQUEST_REPAIR; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szObjectID; }
+	PacketSize_t getPacketSize()  { return szObjectID; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGRequestRepair"; }
+	string getPacketName()  { return "CGRequestRepair"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 	
 public:
 
@@ -74,13 +74,13 @@ public:
 	Packet* createPacket() throw() { return new CGRequestRepair(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGRequestRepair"; }
+	string getPacketName()  { return "CGRequestRepair"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_REQUEST_REPAIR; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_REQUEST_REPAIR; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID; }
 
 };
 

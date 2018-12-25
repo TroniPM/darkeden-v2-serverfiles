@@ -21,12 +21,12 @@ public:
 	~EventMorph() throw();
 			
 public:
-	virtual EventClass getEventClass() const throw() { return EVENT_CLASS_MORPH; }
+	virtual EventClass getEventClass()  { return EVENT_CLASS_MORPH; }
 	virtual void activate() throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
-	Creature* getCreature() const throw() { return m_pTargetCreature; }
+	Creature* getCreature()  { return m_pTargetCreature; }
 	void setCreature(Creature* pCreature) throw() { m_pTargetCreature = pCreature; }
 
 private:

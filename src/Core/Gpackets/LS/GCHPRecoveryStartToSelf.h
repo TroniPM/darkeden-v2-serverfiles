@@ -47,28 +47,28 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_HP_RECOVERY_START_TO_SELF; }
+	PacketID_t getPacketID()  { return PACKET_GC_HP_RECOVERY_START_TO_SELF; }
 	
 	// get packet's body size
 	// 최적화시, 미리 계산된 정수를 사용한다.
-	PacketSize_t getPacketSize() const throw() { return szBYTE + szHP + szHP; }
+	PacketSize_t getPacketSize()  { return szBYTE + szHP + szHP; }
 
 	// get packet's name
-	string getPacketName() const throw() { return "GCHPRecoveryStartToSelf"; }
+	string getPacketName()  { return "GCHPRecoveryStartToSelf"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get / set Delay
-	BYTE getDelay() const throw() { return m_Delay; }
+	BYTE getDelay()  { return m_Delay; }
 	void setDelay(BYTE Delay) throw() { m_Delay = Delay; }
 
 	// get / set Period
-	HP_t getPeriod() const throw() { return m_Period; }
+	HP_t getPeriod()  { return m_Period; }
 	void setPeriod(HP_t Period) throw() { m_Period = Period; }
 
 	// get / set Quantity
-	HP_t getQuantity() const throw() { return m_Quantity; }
+	HP_t getQuantity()  { return m_Quantity; }
 	void setQuantity(HP_t Quantity) throw() { m_Quantity = Quantity; }
 
 private :
@@ -111,13 +111,13 @@ public :
 	Packet* createPacket() throw() { return new GCHPRecoveryStartToSelf(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCHPRecoveryStartToSelf"; }
+	string getPacketName()  { return "GCHPRecoveryStartToSelf"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_HP_RECOVERY_START_TO_SELF; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_HP_RECOVERY_START_TO_SELF; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + szHP + szHP; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + szHP + szHP; }
 
 };
 

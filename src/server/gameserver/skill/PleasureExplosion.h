@@ -20,8 +20,8 @@ public:
 	~PleasureExplosion() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "PleasureExplosion"; }
-	SkillType_t getSkillType() const throw() { return SKILL_PLEASURE_EXPLOSION; }
+    string getSkillHandlerName()  { return "PleasureExplosion"; }
+	SkillType_t getSkillType()  { return SKILL_PLEASURE_EXPLOSION; }
 
 	void execute(Monster* pMonster) throw(Error);
 

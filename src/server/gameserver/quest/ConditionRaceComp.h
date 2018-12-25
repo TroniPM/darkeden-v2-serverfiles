@@ -18,11 +18,11 @@
 class ConditionRaceComp : public Condition 
 {
 public:
-	virtual ConditionType_t getConditionType() const throw() { return CONDITION_RACE_COMP; }
-	virtual bool isPassive() const throw() { return true; }
-	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) const throw();
+	virtual ConditionType_t getConditionType()  { return CONDITION_RACE_COMP; }
+	virtual bool isPassive()  { return true; }
+	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) ;
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 private:
 	Creature::CreatureClass m_CClass; // 크리쳐 클래스
@@ -36,9 +36,9 @@ private:
 class ConditionRaceCompFactory : public ConditionFactory 
 {
 public:
-    virtual ConditionType_t getConditionType() const throw() { return Condition::CONDITION_RACE_COMP; }
-    virtual Condition* createCondition() const throw() { return new ConditionRaceComp(); }
-    virtual string getConditionName() const throw() { return "RaceComp"; }
+    virtual ConditionType_t getConditionType()  { return Condition::CONDITION_RACE_COMP; }
+    virtual Condition* createCondition()  { return new ConditionRaceComp(); }
+    virtual string getConditionName()  { return "RaceComp"; }
 };
 
 #endif

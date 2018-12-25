@@ -190,16 +190,16 @@ public:
 	list<int>& getConditions(void) throw() { return m_Conditions; }
 	void addCondition(int condition) throw();
 
-	int getAction(void) const throw() { return m_Action; }
+	int getAction(void)  { return m_Action; }
 	void setAction(int action) throw() { m_Action = action; }
 
-	int getParameter(void) const throw() { return m_Parameter; }
+	int getParameter(void)  { return m_Parameter; }
 	void setParameter(int parameter) throw() { m_Parameter = parameter; }
 
-	int getRatio(void) const throw() { return m_Ratio; }
+	int getRatio(void)  { return m_Ratio; }
 	void setRatio(int ratio) throw() { m_Ratio = ratio; }
 
-	int getWeight(void) const throw() { return m_Weight; }
+	int getWeight(void)  { return m_Weight; }
 	void setWeight(int weight) throw() { m_Weight = weight; }
 
 	string toString(void) throw();
@@ -237,15 +237,15 @@ public:
 	~DirectiveSet() throw();
 
 public:
-	const list<Directive*>& getDirectives(void) const throw() { return m_Directives; }
-	const list<Directive*>& getDeadDirectives(void) const throw() { return m_DeadDirectives; }
+	const list<Directive*>& getDirectives(void)  { return m_Directives; }
+	const list<Directive*>& getDeadDirectives(void)  { return m_DeadDirectives; }
 
 	void addDirective(Directive* pDirective) throw();
 	void addDeadDirective(Directive* pDirective) throw();
 
 	void clear() throw();
 
-	string getName(void) const throw() { return m_Name; }
+	string getName(void)  { return m_Name; }
 	void setName(const string& name) throw() { m_Name = name; }
 
 	bool hasCondition( int condition ) const;

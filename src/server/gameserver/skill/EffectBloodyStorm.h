@@ -9,7 +9,7 @@ class EffectBloodyStorm : public Effect
 public:
 	EffectBloodyStorm(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY) throw(Error);
 
-	EffectClass getEffectClass() const throw() { return EFFECT_CLASS_BLOODY_STORM; }
+	EffectClass getEffectClass()  { return EFFECT_CLASS_BLOODY_STORM; }
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
@@ -20,7 +20,7 @@ public:
 	void unaffect(Item* pItem) throw(Error) {}
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	int getDamage(void) const { return m_Damage; }
@@ -36,7 +36,7 @@ public:
 	bool isVampire() const { return m_bVampire; }
 
 	void setUserObjectID(ObjectID_t oid) throw() { m_UserObjectID = oid; }
-	ObjectID_t getUserObjectID() const throw() { return m_UserObjectID; }
+	ObjectID_t getUserObjectID()  { return m_UserObjectID; }
 
 	bool affectCreature(Creature* pCreature, bool bAffectByMove) throw(Error); 
 private:
@@ -52,8 +52,8 @@ private:
 class EffectBloodyStormLoader : public EffectLoader
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_BLOODY_STORM; }
-	virtual string getEffectClassName() const throw() { return "EffectBloodyStorm"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_BLOODY_STORM; }
+	virtual string getEffectClassName()  { return "EffectBloodyStorm"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error) {}

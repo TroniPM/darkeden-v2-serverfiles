@@ -20,8 +20,8 @@ public:
 	~SquallyBarrier1() throw() {}
 	
 public:
-	string getSkillHandlerName() const throw() { return "SquallyBarrier1"; }
-	SkillType_t getSkillType() const throw() { return SKILL_SQUALLY_BARRIER1; }
+	string getSkillHandlerName()  { return "SquallyBarrier1"; }
+	SkillType_t getSkillType()  { return SKILL_SQUALLY_BARRIER1; }
 
 	void execute(Ousters* pSlayer,  OustersSkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

@@ -25,15 +25,15 @@ public:
 	virtual ~EffectRideMotorcycle() throw(Error);
 
 public:
-	EffectClass getEffectClass() const throw() { return EFFECT_CLASS_TRANSPORT_ITEM; }
+	EffectClass getEffectClass()  { return EFFECT_CLASS_TRANSPORT_ITEM; }
 
 	// OBJECT_PRIORITY_NONE 라는 뜻은, 타일에 들어가서는 안된다는 뜻이다.
-	ObjectPriority getObjectPriority() const throw() { return OBJECT_PRIORITY_NONE; }
+	ObjectPriority getObjectPriority()  { return OBJECT_PRIORITY_NONE; }
 
 	void unaffect() throw(Error);
 
 	// get debug string
-	string toString() const throw();
+	string toString() ;
 
 private:
 	ZoneCoord_t m_MotorX; 

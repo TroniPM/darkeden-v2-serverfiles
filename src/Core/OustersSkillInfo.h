@@ -54,11 +54,11 @@ public :
 	string toString () const throw ();
 
 	// get / set New Skill
-	bool isLearnNewSkill() const throw() { return m_bLearnNewSkill; }
+	bool isLearnNewSkill()  { return m_bLearnNewSkill; }
 	void setLearnNewSkill(bool NewSkill) throw() { m_bLearnNewSkill = NewSkill; }
 
 	// get / set ListNumber
-	BYTE getListNum() const throw() { return m_ListNum; }
+	BYTE getListNum()  { return m_ListNum; }
 	void setListNum(BYTE ListNum) throw() { m_ListNum = ListNum; }
 
 	// add / delete / clear S List

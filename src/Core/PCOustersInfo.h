@@ -98,7 +98,7 @@ public:
 			throw InvalidProtocolException("invalid slot value");
 	}
 
-	Alignment_t getAlignment() const throw() { return m_Alignment; }
+	Alignment_t getAlignment()  { return m_Alignment; }
 	void setAlignment(Alignment_t Alignment) throw() { m_Alignment = Alignment; }
 
 	Fame_t getFame () const throw () { return m_Fame; }
@@ -119,7 +119,7 @@ public:
 			throw InvalidProtocolException("invalid sex value");
 	}
 
-	Color_t getCoatColor() const throw() { return m_CoatColor; }
+	Color_t getCoatColor()  { return m_CoatColor; }
 	void setCoatColor(Color_t CoatColor) throw() { m_CoatColor = CoatColor; }
 
 	Color_t getHairColor () const throw () { return m_HairColor; }
@@ -131,10 +131,10 @@ public:
 	Color_t getBootsColor () const throw () { return m_BootsColor; }
 	void setBootsColor (Color_t bootsColor) throw () { m_BootsColor = bootsColor; }
 
-	OustersCoatType getCoatType() const throw() { return m_CoatType; }
+	OustersCoatType getCoatType()  { return m_CoatType; }
 	void setCoatType(OustersCoatType coatType) throw() { m_CoatType = coatType; }
 
-	OustersArmType getArmType() const throw() { return m_ArmType; }
+	OustersArmType getArmType()  { return m_ArmType; }
 	void setArmType( OustersArmType armType ) throw() { m_ArmType = armType; }
 
     Attr_t getSTR () const throw (Error) { if (m_STR > maxOustersAttr) throw Error("STR out of range"); return m_STR; }

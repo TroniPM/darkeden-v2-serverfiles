@@ -32,19 +32,19 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_LOAD_INVENTORY; }
+	PacketID_t getPacketID()  { return PACKET_GC_LOAD_INVENTORY; }
 
 	// 사이즈 재 정리와 규칙 계열 정리
-	PacketSize_t getPacketSize() const throw() {
+	PacketSize_t getPacketSize()  {
 	return m_pInventoryInfo->getSize();
 	}
 
-	string getPacketName() const throw() { return "GCLoadInventory"; }
-	string toString() const throw();
+	string getPacketName()  { return "GCLoadInventory"; }
+	string toString() ;
 
 public:
 	// get/set Inventory Info
-	InventoryInfo* getInventoryInfo() const throw() { return m_pInventoryInfo; }
+	InventoryInfo* getInventoryInfo()  { return m_pInventoryInfo; }
 	void setInventoryInfo(InventoryInfo* pInventoryInfo) throw(Error) { m_pInventoryInfo = pInventoryInfo; }
 	
 private :
@@ -64,10 +64,10 @@ public :
 	
 public:
 	Packet* createPacket() throw() { return new GCLoadInventory(); }
-	string getPacketName() const throw() { return "GCLoadInventory"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_LOAD_INVENTORY; }
+	string getPacketName()  { return "GCLoadInventory"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_LOAD_INVENTORY; }
 
-	PacketSize_t getPacketMaxSize() const throw() { 
+	PacketSize_t getPacketMaxSize()  { 
 	return InventoryInfo::getMaxSize();
 	}
 };

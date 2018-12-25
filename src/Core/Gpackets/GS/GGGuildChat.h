@@ -34,10 +34,10 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GG_GUILD_CHAT; }
+	PacketID_t getPacketID()  { return PACKET_GG_GUILD_CHAT; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		return szBYTE +
 			   szGuildID +						// GuildID
@@ -47,30 +47,30 @@ public :
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "GGGuildChat"; }
+	string getPacketName()  { return "GGGuildChat"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public :
 
-	BYTE getType() const throw() { return m_Type; }
+	BYTE getType()  { return m_Type; }
 	void setType( BYTE type ) throw() { m_Type = type; }
 
 	// get/set Guild ID
-	GuildID_t getGuildID() const throw() { return m_GuildID; }
+	GuildID_t getGuildID()  { return m_GuildID; }
 	void setGuildID( GuildID_t guildID ) throw() { m_GuildID = guildID; }
 
 	// get/set Sender
-	const string& getSender() const throw() { return m_Sender; }
+	const string& getSender()  { return m_Sender; }
 	void setSender( const string& sender ) throw() { m_Sender = sender; }
 
 	// get/set text color
-	uint getColor() const throw() { return m_Color; }
+	uint getColor()  { return m_Color; }
 	void setColor( uint color ) throw() { m_Color = color; }
 
 	// get/set message
-	const string& getMessage() const throw() { return m_Message; }
+	const string& getMessage()  { return m_Message; }
 	void setMessage( const string& message ) throw() { m_Message = message; }
 
 private :
@@ -107,15 +107,15 @@ public :
 	Packet* createPacket() throw() { return new GGGuildChat(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GGGuildChat"; }
+	string getPacketName()  { return "GGGuildChat"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GG_GUILD_CHAT; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GG_GUILD_CHAT; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GGGuildChatPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		return szBYTE +
 			   szGuildID +						// GuildID

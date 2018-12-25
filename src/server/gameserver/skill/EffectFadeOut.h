@@ -22,7 +22,7 @@ public:
 	EffectFadeOut(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_FADE_OUT; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_FADE_OUT; }
 
 	void affect() throw(Error){}
 	void affect(Creature* pCreature) throw(Error);
@@ -33,7 +33,7 @@ public:
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	Duration_t getDuration() const throw(Error) { return m_Duration;}

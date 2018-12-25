@@ -20,8 +20,8 @@ public:
 	~BeatHead() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "BeatHead"; }
-	SkillType_t getSkillType() const throw() { return SKILL_BEAT_HEAD; }
+    string getSkillHandlerName()  { return "BeatHead"; }
+	SkillType_t getSkillType()  { return SKILL_BEAT_HEAD; }
 
 	void execute(Ousters* pOusters, ObjectID_t ObjectID,  OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Monster* pMonster, Creature* pEnemy) throw(Error);

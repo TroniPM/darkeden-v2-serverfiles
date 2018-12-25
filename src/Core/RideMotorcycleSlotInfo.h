@@ -37,10 +37,10 @@ public:
 
 public:
 	void setInvenX(CoordInven_t InvenX) throw() { m_InvenX = InvenX; }
-	CoordInven_t getInvenX() const throw() { return m_InvenX; }
+	CoordInven_t getInvenX()  { return m_InvenX; }
 
 	void setInvenY(CoordInven_t InvenY) throw() { m_InvenY = InvenY; }
-	CoordInven_t getInvenY() const throw() { return m_InvenY; }
+	CoordInven_t getInvenY()  { return m_InvenY; }
 
 private:
 	CoordInven_t m_InvenX;

@@ -20,10 +20,10 @@
 class ActionEnterSiege : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_ENTER_SIEGE; }
+	virtual ActionType_t getActionType()  { return ACTION_ENTER_SIEGE; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 private:
 	ZoneID_t    m_ZoneID;
@@ -37,8 +37,8 @@ private:
 class ActionEnterSiegeFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_ENTER_SIEGE; }
-	virtual string getActionName() const throw() { return "EnterSiege"; }
-	virtual Action* createAction() const throw() { return new ActionEnterSiege(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_ENTER_SIEGE; }
+	virtual string getActionName()  { return "EnterSiege"; }
+	virtual Action* createAction()  { return new ActionEnterSiege(); }
 };
 #endif

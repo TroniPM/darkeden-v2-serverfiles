@@ -20,8 +20,8 @@ public:
 	~TransformToBat() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "TransformToBat"; }
-	SkillType_t getSkillType() const throw() { return SKILL_TRANSFORM_TO_BAT; }
+    string getSkillHandlerName()  { return "TransformToBat"; }
+	SkillType_t getSkillType()  { return SKILL_TRANSFORM_TO_BAT; }
 
 	void execute(Vampire* pVampire, ObjectID_t TargetObjectID, CoordInven_t X, CoordInven_t Y, CoordInven_t TargetX, CoordInven_t TargetY, VampireSkillSlot* pVampireSkillSlot) throw(Error);
 	void execute(Monster* pMonster) throw(Error);

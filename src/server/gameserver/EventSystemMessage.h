@@ -21,11 +21,11 @@ public:
 	~EventSystemMessage() throw();			
 
 public:
-	virtual EventClass getEventClass() const throw() { return EVENT_CLASS_SYSTEM_MESSAGE; }
+	virtual EventClass getEventClass()  { return EVENT_CLASS_SYSTEM_MESSAGE; }
 
 	virtual void activate() throw(Error);
 	
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	void	addMessage(const string& msg) throw(Error);
 

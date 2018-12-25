@@ -29,15 +29,15 @@ public:
 	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) throw(Error);
 	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
 	void tinysave(const char* field) const throw (Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	static void initItemIDRegistry(void) throw();
 
 public:
-	virtual ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_TRAP_ITEM; }
-	virtual string getObjectTableName() const throw() { return "TrapItemObject"; }
+	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_TRAP_ITEM; }
+	virtual string getObjectTableName()  { return "TrapItemObject"; }
 
-	virtual ItemType_t getItemType() const throw() { return m_ItemType; }
+	virtual ItemType_t getItemType()  { return m_ItemType; }
 	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() const throw(Error);
@@ -65,8 +65,8 @@ public:
 		SUMMON_TRAP,
 	};
 
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_TRAP_ITEM; }
-	virtual string toString() const throw();
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_TRAP_ITEM; }
+	virtual string toString() ;
 
 	uint	getFunction() const { return m_Function; }
 	void	setFunction(uint fun) { m_Function = fun; }
@@ -86,7 +86,7 @@ private :
 class TrapItemInfoManager : public InfoClassManager 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_TRAP_ITEM; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_TRAP_ITEM; }
 	virtual void load() throw(Error);
 };
 
@@ -99,8 +99,8 @@ extern TrapItemInfoManager* g_pTrapItemInfoManager;
 class TrapItemFactory : public ItemFactory 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_TRAP_ITEM; }
-	virtual string getItemClassName() const throw() { return "TrapItem"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_TRAP_ITEM; }
+	virtual string getItemClassName()  { return "TrapItem"; }
 	
 public:
 	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new TrapItem(ItemType,OptionType); }
@@ -113,8 +113,8 @@ public:
 class TrapItemLoader : public ItemLoader 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_TRAP_ITEM; }
-	virtual string getItemClassName() const throw() { return "TrapItem"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_TRAP_ITEM; }
+	virtual string getItemClassName()  { return "TrapItem"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

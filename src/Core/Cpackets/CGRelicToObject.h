@@ -45,31 +45,31 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_RELIC_TO_OBJECT; }
+	PacketID_t getPacketID()  { return PACKET_CG_RELIC_TO_OBJECT; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szObjectID + szCoord + szCoord; }
+	PacketSize_t getPacketSize()  { return szObjectID + szObjectID + szCoord + szCoord; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGRelicToObject"; }
+	string getPacketName()  { return "CGRelicToObject"; }
 
 	// get/set Corpse's X
-	Coord_t getX() const throw() { return m_X; }
+	Coord_t getX()  { return m_X; }
 	void setX(Coord_t X) throw() { m_X = X; }
 
 	// get/set Corpse's Y
-	Coord_t getY() const throw() { return m_Y; }
+	Coord_t getY()  { return m_Y; }
 	void setY(Coord_t Y) throw() { m_Y = Y; }
 
 	// get/set ObjectID
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
-	ObjectID_t getItemObjectID() const throw() { return m_ItemObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
+	ObjectID_t getItemObjectID()  { return m_ItemObjectID; }
 
 	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
 	void setItemObjectID(ObjectID_t ItemObjectID) throw() { m_ItemObjectID = ItemObjectID; }
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 private :
 
@@ -107,13 +107,13 @@ public:
 	Packet* createPacket() throw() { return new CGRelicToObject(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGRelicToObject"; }
+	string getPacketName()  { return "CGRelicToObject"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_RELIC_TO_OBJECT; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_RELIC_TO_OBJECT; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szObjectID + szCoord + szCoord; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szObjectID + szCoord + szCoord; }
 };
 
 

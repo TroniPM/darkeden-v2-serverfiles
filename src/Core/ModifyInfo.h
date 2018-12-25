@@ -237,8 +237,8 @@ public:
 	string toString () const throw ();
 
 public:
-	BYTE getShortCount(void) const throw() { return m_ShortCount; }
-	BYTE getLongCount(void) const throw() { return m_LongCount; }
+	BYTE getShortCount(void)  { return m_ShortCount; }
+	BYTE getLongCount(void)  { return m_LongCount; }
 
 	void addShortData(ModifyType type, ushort value) throw();
 	void addLongData(ModifyType type, ulong value) throw();

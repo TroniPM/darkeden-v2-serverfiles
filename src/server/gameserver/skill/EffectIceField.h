@@ -21,7 +21,7 @@ public:
 	EffectIceField(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_ICE_FIELD; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_ICE_FIELD; }
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
@@ -29,7 +29,7 @@ public:
 	void unaffect() throw(Error);
 	void unaffect(Creature* pCreature) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	string getCasterName(void) const { return m_CasterName; }
@@ -59,8 +59,8 @@ class EffectIceFieldLoader : public EffectLoader
 {
 
 public:
-    virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_ICE_FIELD; }
-    virtual string getEffectClassName() const throw() { return "EffectIceField"; }
+    virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_ICE_FIELD; }
+    virtual string getEffectClassName()  { return "EffectIceField"; }
 
 public:
     virtual void load(Creature* pCreature) throw(Error) {}

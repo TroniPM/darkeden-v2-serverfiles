@@ -860,7 +860,7 @@ void PlayerCreature::deleteEnemy(const string& Name)
 // 특정 이름을 가진 선공자가 이미 있는지 없는지 확인하는 함수.
 //----------------------------------------------------------------------
 bool PlayerCreature::hasEnemy(const string& Name)
-	const throw()
+	
 {
 	__BEGIN_DEBUG
 
@@ -912,9 +912,9 @@ GuildMemberRank_t PlayerCreature::getGuildMemberRank() const
 	return GuildMember::GUILDMEMBER_RANK_DENY;
 }
 
-Rank_t PlayerCreature::getRank() const throw() { return m_pRank->getLevel(); }
-RankExp_t PlayerCreature::getRankExp() const throw() { return m_pRank->getTotalExp(); }
-RankExp_t PlayerCreature::getRankGoalExp() const throw() { return m_pRank->getGoalExp(); }
+Rank_t PlayerCreature::getRank()  { return m_pRank->getLevel(); }
+RankExp_t PlayerCreature::getRankExp()  { return m_pRank->getTotalExp(); }
+RankExp_t PlayerCreature::getRankGoalExp()  { return m_pRank->getGoalExp(); }
 
 RankBonus* PlayerCreature::getRankBonus( RankBonus::RankBonusType type ) const
 	throw()

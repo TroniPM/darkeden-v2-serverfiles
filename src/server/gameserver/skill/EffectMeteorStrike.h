@@ -20,7 +20,7 @@ public:
 	EffectMeteorStrike(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY, bool bPlayer = false) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_METEOR_STRIKE; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_METEOR_STRIKE; }
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
@@ -28,7 +28,7 @@ public:
 	void unaffect() throw(Error);
 	void unaffect(Creature* pCreature) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	int getDamage(void) const { return m_Damage; }
@@ -61,8 +61,8 @@ private:
 class EffectMeteorStrikeLoader : public EffectLoader 
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_METEOR_STRIKE; }
-	virtual string getEffectClassName() const throw() { return "EffectMeteorStrike"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_METEOR_STRIKE; }
+	virtual string getEffectClassName()  { return "EffectMeteorStrike"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error) {}

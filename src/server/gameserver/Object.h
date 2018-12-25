@@ -80,13 +80,13 @@ public:
 	// 물론 Object에 m_ObjectClass 데이타 멤버를 둬도 되지만, 이렇게 하면 
 	// 컴파일러의 정렬 문제로 인해 모든 Object 하위 클래스의 객체들이 추가적인
 	// 바이트를 소모하게 되므로, virtual method 로 해결했다.
-	virtual ObjectClass getObjectClass() const throw() = 0;
+	virtual ObjectClass getObjectClass()  = 0;
 
 	// get object priority(virtual)
 	virtual ObjectPriority getObjectPriority() const throw(Error) = 0;
 
 	// get debug string
-	virtual string toString() const throw() = 0;
+	virtual string toString()  = 0;
 
 	virtual Packet* getAddPacket() const { return NULL; }
 

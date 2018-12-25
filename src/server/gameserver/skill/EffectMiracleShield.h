@@ -25,9 +25,9 @@ public:
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error); 
 
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_MIRACLE_SHIELD; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_MIRACLE_SHIELD; }
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	int getDefenseBonus() throw() { return m_DefenseBonus;}

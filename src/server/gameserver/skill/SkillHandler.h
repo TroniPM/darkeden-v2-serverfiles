@@ -157,8 +157,8 @@ public:
 
 ///// identity methods /////
 public:
-	virtual string getSkillHandlerName() const throw() = 0;
-	virtual SkillType_t getSkillType() const throw() = 0;
+	virtual string getSkillHandlerName()  = 0;
+	virtual SkillType_t getSkillType()  = 0;
 };
 
 #endif

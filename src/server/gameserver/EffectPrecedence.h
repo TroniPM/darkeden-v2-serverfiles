@@ -20,10 +20,10 @@ public:
 	EffectPrecedence(Item* pItem) throw(Error);
 	
 public:
-	virtual EffectClass getEffectClass() const throw() { return EFFECT_CLASS_PRECEDENCE; }
+	virtual EffectClass getEffectClass()  { return EFFECT_CLASS_PRECEDENCE; }
 
 	// OBJECT_PRIORITY_NONE 라는 뜻은, 타일에 들어가서는 안된다는 뜻이다.
-	virtual ObjectPriority getObjectPriority() const throw() { return OBJECT_PRIORITY_NONE; }
+	virtual ObjectPriority getObjectPriority()  { return OBJECT_PRIORITY_NONE; }
 
 	virtual void affect() throw(Error);
 	virtual void affect(Creature* pCreature) throw(Error);
@@ -38,7 +38,7 @@ public:
 	void save(const string & ownerID) throw(Error) {}
 	void destroy(const string & ownerID) throw(Error) {}
 	
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 	string getHostName(void) const { return m_HostName; }

@@ -20,14 +20,14 @@ public:
 	EffectDragonEye(Item* pItem) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_DRAGON_EYE; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_DRAGON_EYE; }
 
 	void affect(Creature* pCreature) throw(Error);
 	void affect(Item* pItem) throw(Error);
 
 	void unaffect(Creature* pCreature) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 	// get/set ItemID
 	ItemID_t getItemID() const { return m_ItemID; }

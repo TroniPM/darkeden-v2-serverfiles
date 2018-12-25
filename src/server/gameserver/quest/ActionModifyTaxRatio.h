@@ -20,10 +20,10 @@
 class ActionModifyTaxRatio : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_MODIFY_TAX_RATIO; }
+	virtual ActionType_t getActionType()  { return ACTION_MODIFY_TAX_RATIO; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 };
 
 
@@ -34,8 +34,8 @@ public:
 class ActionModifyTaxRatioFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_MODIFY_TAX_RATIO; }
-	virtual string getActionName() const throw() { return "ModifyTaxRatio"; }
-	virtual Action* createAction() const throw() { return new ActionModifyTaxRatio(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_MODIFY_TAX_RATIO; }
+	virtual string getActionName()  { return "ModifyTaxRatio"; }
+	virtual Action* createAction()  { return new ActionModifyTaxRatio(); }
 };
 #endif

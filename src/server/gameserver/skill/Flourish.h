@@ -20,9 +20,9 @@ public:
 	~Flourish() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Flourish"; }
+    string getSkillHandlerName()  { return "Flourish"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_FLOURISH; }
+	SkillType_t getSkillType()  { return SKILL_FLOURISH; }
 
 	void execute(Ousters* pOusters, ObjectID_t targetObject, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 

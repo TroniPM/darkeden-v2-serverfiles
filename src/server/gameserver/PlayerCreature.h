@@ -120,7 +120,7 @@ public:
 // 인벤토리 관련 메쏘드
 ////////////////////////////////////////////////////////////
 public:
-	virtual Inventory* getInventory() const throw() { return m_pInventory; }
+	virtual Inventory* getInventory()  { return m_pInventory; }
 	virtual void setInventory(Inventory* pInventory) throw() { m_pInventory = pInventory; }
 
 	virtual InventorySlot* getExtraInventorySlot() throw() { return m_pExtraInventorySlot; }
@@ -131,27 +131,27 @@ public:
 	// 2003.04.04. by Sequoia
 	virtual void loadItem() throw (InvalidProtocolException, Error);
 
-	virtual GoodsInventory* getGoodsInventory() const throw() { return m_pGoodsInventory; }
+	virtual GoodsInventory* getGoodsInventory()  { return m_pGoodsInventory; }
 
 ////////////////////////////////////////////////////////////
 // 보관함 관련 메쏘드
 ////////////////////////////////////////////////////////////
 public:
-	virtual Stash* getStash(void) const throw() { return m_pStash; }
+	virtual Stash* getStash(void)  { return m_pStash; }
 	virtual void setStash(Stash* pStash) throw() { m_pStash = pStash; }
 
-	virtual BYTE getStashNum(void) const throw() { return m_StashNum; }
+	virtual BYTE getStashNum(void)  { return m_StashNum; }
 	virtual void setStashNum(BYTE num) throw() { m_StashNum = num; }
 	virtual void setStashNumEx(BYTE num) throw();
 
-	virtual Gold_t getStashGold(void) const throw() { return m_StashGold; }
+	virtual Gold_t getStashGold(void)  { return m_StashGold; }
 	virtual void setStashGold(Gold_t gold) throw() { m_StashGold = gold; }
 	virtual void setStashGoldEx(Gold_t gold) throw();
 	virtual void increaseStashGoldEx(Gold_t gold) throw();
 	virtual void decreaseStashGoldEx(Gold_t gold) throw();
 	virtual bool checkStashGoldIntegrity() = 0;
 
-	virtual bool getStashStatus(void) const throw() { return m_bStashStatus; }
+	virtual bool getStashStatus(void)  { return m_bStashStatus; }
 	virtual void setStashStatus(bool s) throw() { m_bStashStatus = s; }
 
 	virtual void deleteStash(void) throw();
@@ -191,7 +191,7 @@ public:
 // 플래그 셋 관련 함수
 ////////////////////////////////////////////////////////////
 public:
-	FlagSet* getFlagSet(void) const throw() { return m_pFlagSet; }
+	FlagSet* getFlagSet(void)  { return m_pFlagSet; }
 	void setFlagSet(FlagSet* pSet) throw() { m_pFlagSet = pSet; } 
 	void deleteFlagSet(void) throw();
 
@@ -200,10 +200,10 @@ public:
 // 기타 함수
 ////////////////////////////////////////////////////////////
 public:
-	virtual Fame_t getFame() const throw() = 0;
+	virtual Fame_t getFame()  = 0;
 	virtual void setFame(Fame_t fame) throw() = 0;
 
-	virtual Gold_t getGold() const throw() = 0;
+	virtual Gold_t getGold()  = 0;
 	virtual void setGold(Gold_t gold) throw() = 0;
 	virtual void setGoldEx(Gold_t gold) throw() = 0;
 	virtual void   increaseGoldEx(Gold_t gold) throw() = 0;
@@ -218,15 +218,15 @@ public:
 		return ret;
 	}
 
-	virtual Fame_t getKillPoint() const throw() = 0;
+	virtual Fame_t getKillPoint()  = 0;
 	virtual void setKillPoint(Fame_t fame) throw() = 0;
 
-	virtual Color_t getShopColor() const throw() = 0;
+	virtual Color_t getShopColor()  = 0;
 	virtual void setShopColor(Color_t ShopColor) throw() = 0;
 
-	virtual Sex	getSex() const throw() = 0;
+	virtual Sex	getSex()  = 0;
 
-	virtual ZoneID_t getResurrectZoneID(void) const throw() = 0;
+	virtual ZoneID_t getResurrectZoneID(void)  = 0;
 	virtual void setResurrectZoneID(ZoneID_t id) throw() = 0;
 	virtual void setResurrectZoneIDEx(ZoneID_t id) throw() = 0;
 
@@ -244,8 +244,8 @@ public:
 	void deleteEnemy(const string& Name) throw(NoSuchElementException, Error);
 
 	// 이 특정 사용자가 이미 선공을 하였는가?
-	bool hasEnemy(const string& Name) const throw();
-	uint getMaxEnemies() const throw();
+	bool hasEnemy(const string& Name) ;
+	uint getMaxEnemies() ;
 
 	list<string>& getEnemies(void) throw() { return m_Enemies;}
 
@@ -254,22 +254,22 @@ public:
 	void setPK(bool isPK) throw() { m_isPK = isPK; }
 
 	void setGuildID( GuildID_t GuildID ) throw() { m_GuildID = GuildID; }
-	GuildID_t getGuildID() const throw() { return m_GuildID; }
+	GuildID_t getGuildID()  { return m_GuildID; }
 
-	string getGuildName() const throw();
-	GuildMemberRank_t getGuildMemberRank() const throw();
+	string getGuildName() ;
+	GuildMemberRank_t getGuildMemberRank() ;
 
-	Rank_t  	getRank() const throw();
-	RankExp_t   getRankExp() const throw();
-	RankExp_t   getRankGoalExp() const throw();
+	Rank_t  	getRank() ;
+	RankExp_t   getRankExp() ;
+	RankExp_t   getRankGoalExp() ;
 
-//	virtual Rank_t getRank() const throw() = 0;
+//	virtual Rank_t getRank()  = 0;
 	void increaseRankExp(RankExp_t Point);
 
 	WORD getRankExpSaveCount(void) const { return m_RankExpSaveCount; }
 	void setRankExpSaveCount(WORD count) { m_RankExpSaveCount = count; }
 
-	virtual Alignment_t getAlignment() const throw()=0;
+	virtual Alignment_t getAlignment() =0;
 	virtual void setAlignment(Alignment_t Alignment) throw()=0;
 
 ////////////////////////////////////////////////////////////
@@ -277,8 +277,8 @@ public:
 ////////////////////////////////////////////////////////////
 	void loadRankBonus() throw();
 	bool hasRankBonus( RankBonus::RankBonusType type ) throw() { return m_RankBonusFlag.test(type); }
-	RankBonus* getRankBonus( RankBonus::RankBonusType type ) const throw();
-	RankBonus* getRankBonusByRank( Rank_t rank ) const throw();
+	RankBonus* getRankBonus( RankBonus::RankBonusType type ) ;
+	RankBonus* getRankBonusByRank( Rank_t rank ) ;
 	bool learnRankBonus( DWORD type ) throw();
 	void clearRankBonus() throw();
 	void clearRankBonus( Rank_t rank ) throw();
@@ -584,7 +584,7 @@ public:
 	bool				deputAdvancedBonusToDEX();
 	bool				deputAdvancedBonusToINT();
 
-	virtual Bonus_t getBonus() const throw() = 0;
+	virtual Bonus_t getBonus()  = 0;
 	virtual void    setBonus(Bonus_t bonus) throw() = 0;
 
 protected:

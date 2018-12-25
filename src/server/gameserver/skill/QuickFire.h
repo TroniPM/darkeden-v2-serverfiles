@@ -20,8 +20,8 @@ public:
 	~QuickFire() throw() {}
 
 public:
-    string getSkillHandlerName() const throw() { return "QuickFire"; }
-	SkillType_t getSkillType() const throw() { return SKILL_QUICK_FIRE; }
+    string getSkillHandlerName()  { return "QuickFire"; }
+	SkillType_t getSkillType()  { return SKILL_QUICK_FIRE; }
 
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Monster* pMonster, Creature* pEnemy) throw(Error);

@@ -33,11 +33,11 @@ public :
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
-	PacketID_t getPacketID() const throw() { return PACKET_GC_TIME_LIMIT_ITEM_INFO; }
-	PacketSize_t getPacketSize() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_TIME_LIMIT_ITEM_INFO; }
+	PacketSize_t getPacketSize() ;
 
-	string getPacketName() const throw() { return "GCTimeLimitItemInfo"; }
-	string toString() const throw();
+	string getPacketName()  { return "GCTimeLimitItemInfo"; }
+	string toString() ;
 
 public:
 
@@ -63,9 +63,9 @@ class GCTimeLimitItemInfoFactory : public PacketFactory {
 
 public :
 	Packet* createPacket() throw() { return new GCTimeLimitItemInfo(); }
-	string getPacketName() const throw() { return "GCTimeLimitItemInfo"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_TIME_LIMIT_ITEM_INFO; }
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + MAX_TIME_LIMIT_ITEM_INFO * ( szObjectID + szDWORD ); }
+	string getPacketName()  { return "GCTimeLimitItemInfo"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_TIME_LIMIT_ITEM_INFO; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + MAX_TIME_LIMIT_ITEM_INFO * ( szObjectID + szDWORD ); }
 
 };
 

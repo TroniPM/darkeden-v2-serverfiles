@@ -33,16 +33,16 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CL_GET_WORLD_LIST; }
+	PacketID_t getPacketID()  { return PACKET_CL_GET_WORLD_LIST; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return 0; }
+	PacketSize_t getPacketSize()  { return 0; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CLGetWorldList"; }
+	string getPacketName()  { return "CLGetWorldList"; }
 
 	// get packet's debug string
-	string toString() const throw() { return "CLGetWorldList"; }
+	string toString()  { return "CLGetWorldList"; }
 
 private :
 
@@ -65,13 +65,13 @@ public:
 	Packet* createPacket() throw() { return new CLGetWorldList(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CLGetWorldList"; }
+	string getPacketName()  { return "CLGetWorldList"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CL_GET_WORLD_LIST; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CL_GET_WORLD_LIST; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw() { return 0; }
+	PacketSize_t getPacketMaxSize()  { return 0; }
 
 };
 

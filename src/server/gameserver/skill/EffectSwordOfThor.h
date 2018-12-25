@@ -19,11 +19,11 @@ public:
 	EffectSwordOfThor(Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_SWORD_OF_THOR; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_SWORD_OF_THOR; }
 
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	Level_t getLevel() const { return m_Level; }

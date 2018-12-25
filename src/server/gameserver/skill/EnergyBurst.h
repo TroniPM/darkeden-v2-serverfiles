@@ -20,8 +20,8 @@ public:
 	~EnergyBurst() throw() {}
 	
 public:
-	string getSkillHandlerName() const throw() { return "EnergyBurst"; }
-	SkillType_t getSkillType() const throw() { return SKILL_ENERGY_BURST; }
+	string getSkillHandlerName()  { return "EnergyBurst"; }
+	SkillType_t getSkillType()  { return SKILL_ENERGY_BURST; }
 
 	void execute(Ousters* pSlayer,  OustersSkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

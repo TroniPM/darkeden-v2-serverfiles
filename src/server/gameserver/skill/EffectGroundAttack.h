@@ -20,7 +20,7 @@ public:
 	EffectGroundAttack(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_GROUND_ATTACK; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_GROUND_ATTACK; }
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
@@ -28,7 +28,7 @@ public:
 	void unaffect() throw(Error);
 	void unaffect(Creature* pCreature) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	int getDamagePercent(void) const { return m_DamagePercent; }
@@ -58,8 +58,8 @@ private:
 class EffectGroundAttackLoader : public EffectLoader 
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_GROUND_ATTACK; }
-	virtual string getEffectClassName() const throw() { return "EffectGroundAttack"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_GROUND_ATTACK; }
+	virtual string getEffectClassName()  { return "EffectGroundAttack"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error) {}

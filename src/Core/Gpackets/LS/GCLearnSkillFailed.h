@@ -43,23 +43,23 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_LEARN_SKILL_FAILED; }
+	PacketID_t getPacketID()  { return PACKET_GC_LEARN_SKILL_FAILED; }
 	
 	// get packet size
-	PacketSize_t getPacketSize() const throw() { return szSkillType+szBYTE; }
+	PacketSize_t getPacketSize()  { return szSkillType+szBYTE; }
 	
 	// get packet's name
-	string getPacketName() const throw() { return "GCLearnSkillFailed"; }
+	string getPacketName()  { return "GCLearnSkillFailed"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 	
 	// get/set skill type
-	SkillType_t getSkillType(void) const throw() { return m_SkillType; }
+	SkillType_t getSkillType(void)  { return m_SkillType; }
 	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
 
 	// get/set description
-	BYTE getDesc(void) const throw() { return m_Desc;}
+	BYTE getDesc(void)  { return m_Desc;}
 	void setDesc(BYTE desc) throw() { m_Desc = desc;}
 
 private:
@@ -96,13 +96,13 @@ public :
 	Packet* createPacket() throw() { return new GCLearnSkillFailed(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCLearnSkillFailed"; }
+	string getPacketName()  { return "GCLearnSkillFailed"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_LEARN_SKILL_FAILED; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_LEARN_SKILL_FAILED; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szSkillType+szBYTE; }
+	PacketSize_t getPacketMaxSize()  { return szSkillType+szBYTE; }
 
 };
 

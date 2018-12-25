@@ -74,7 +74,7 @@ void EffectRegenerate::unaffect()
 }
 
 string EffectRegenerate::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

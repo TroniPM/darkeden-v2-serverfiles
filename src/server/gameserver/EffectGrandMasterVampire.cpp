@@ -24,7 +24,7 @@ EffectGrandMasterVampire::EffectGrandMasterVampire(Creature* pCreature)
 	__END_CATCH
 }
 
-Effect::EffectClass EffectGrandMasterVampire::getSendEffectClass() const throw()
+Effect::EffectClass EffectGrandMasterVampire::getSendEffectClass() 
 {
 	Vampire* pVampire = dynamic_cast<Vampire*>(m_pTarget);
 	if ( pVampire == NULL ) return getEffectClass();
@@ -114,7 +114,7 @@ void EffectGrandMasterVampire::unaffect(Creature* pCreature)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 string EffectGrandMasterVampire::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

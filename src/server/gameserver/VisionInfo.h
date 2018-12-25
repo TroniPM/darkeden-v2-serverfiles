@@ -27,7 +27,7 @@ const Coord_t maxVisionHeight = maxViewportUpperHeight + maxViewportLowerHeight 
 /*class VisionInfo 
 {
 public:
-	VisionState getVisionState(ZoneCoord_t cx, ZoneCoord_t cy, ZoneCoord_t x, ZoneCoord_t y) const throw()
+	VisionState getVisionState(ZoneCoord_t cx, ZoneCoord_t cy, ZoneCoord_t x, ZoneCoord_t y) 
 	{
 		// inline for speed. by sigi. 2002.11.8
 //		int px = x + (maxViewportWidth + 1) - cx;
@@ -41,7 +41,7 @@ public:
 
 		return OUT_OF_SIGHT;
 	}
-	string toString() const throw();
+	string toString() ;
 		
 private:
 	// 시야 레벨(0 - 13)
@@ -101,7 +101,7 @@ public:
 	}
 
 	// get debug string
-	string toString() const throw();
+	string toString() ;
 
 private:
 

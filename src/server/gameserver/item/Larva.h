@@ -33,38 +33,38 @@ public:
 
 
 	// get debug string
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	static void initItemIDRegistry(void) throw();
 
 public:
-	virtual ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_LARVA; }
-	virtual string getObjectTableName() const throw() { return "LarvaObject"; }
+	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_LARVA; }
+	virtual string getObjectTableName()  { return "LarvaObject"; }
 
-	virtual ItemType_t getItemType() const throw() { return m_ItemType; }
+	virtual ItemType_t getItemType()  { return m_ItemType; }
 	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() const throw(Error);
 	virtual VolumeHeight_t getVolumeHeight() const throw(Error);
 	virtual Weight_t getWeight() const throw(Error);
 
-	virtual ItemNum_t getNum() const throw() { return m_Num; }
+	virtual ItemNum_t getNum()  { return m_Num; }
 	virtual void setNum(ItemNum_t Num) throw() { m_Num = Num; }
 
-	bool    isStackable() const throw() { return true; }
+	bool    isStackable()  { return true; }
 
 	// È¸º¹¾ç
-	int getHPAmount(void) const throw();
-	int getMPAmount(void) const throw();
+	int getHPAmount(void) ;
+	int getMPAmount(void) ;
 
-	int getHPDelay(void) const throw();
-	int getMPDelay(void) const throw();
+	int getHPDelay(void) ;
+	int getMPDelay(void) ;
 
-	int getHPQuantity(void) const throw();
-	int getMPQuantity(void) const throw();
+	int getHPQuantity(void) ;
+	int getMPQuantity(void) ;
 
-	int getHPRecoveryUnit(void) const throw();
-	int getMPRecoveryUnit(void) const throw();
+	int getHPRecoveryUnit(void) ;
+	int getMPRecoveryUnit(void) ;
 
 private:
 
@@ -87,24 +87,24 @@ class LarvaInfo : public ItemInfo
 public:
 
 	// get item class
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_LARVA; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_LARVA; }
 
-	int getHPAmount(void) const throw() { return m_HPAmount; }
-	int getMPAmount(void) const throw() { return m_MPAmount; }
+	int getHPAmount(void)  { return m_HPAmount; }
+	int getMPAmount(void)  { return m_MPAmount; }
 
-	int getHPDelay(void) const throw() { return m_HPDelay; }
-	int getMPDelay(void) const throw() { return m_MPDelay; }
+	int getHPDelay(void)  { return m_HPDelay; }
+	int getMPDelay(void)  { return m_MPDelay; }
 
-	int getHPQuantity(void) const throw() { return m_HPRecoveryUnit; }
-	int getMPQuantity(void) const throw() { return m_MPRecoveryUnit; }
+	int getHPQuantity(void)  { return m_HPRecoveryUnit; }
+	int getMPQuantity(void)  { return m_MPRecoveryUnit; }
 
-	int getHPRecoveryUnit(void) const throw() { return m_HPRecoveryUnit; }
-	int getMPRecoveryUnit(void) const throw() { return m_MPRecoveryUnit; }
+	int getHPRecoveryUnit(void)  { return m_HPRecoveryUnit; }
+	int getMPRecoveryUnit(void)  { return m_MPRecoveryUnit; }
 
 	void parseEffect(const string& effect) throw();
 
 	// toString
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 private:
 	int  m_HPAmount;
@@ -127,7 +127,7 @@ class LarvaInfoManager : public InfoClassManager {
 public:
 
 	// get item class
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_LARVA; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_LARVA; }
 	
 	// load from DB
 	virtual void load() throw(Error);
@@ -148,10 +148,10 @@ class LarvaFactory : public ItemFactory {
 public:
 	
 	// get item class
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_LARVA; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_LARVA; }
 
 	// get item classname
-	virtual string getItemClassName() const throw() { return "Larva"; }
+	virtual string getItemClassName()  { return "Larva"; }
 	
 public:
 
@@ -172,10 +172,10 @@ class LarvaLoader : public ItemLoader {
 public:
 
 	// get item class
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_LARVA; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_LARVA; }
 
 	// get item class name
-	virtual string getItemClassName() const throw() { return "Larva"; }
+	virtual string getItemClassName()  { return "Larva"; }
 
 public:
 

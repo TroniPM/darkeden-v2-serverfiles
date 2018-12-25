@@ -15,7 +15,7 @@ QuestMessage AnotherQuestRewardClass::giveReward( PlayerCreature* pPC ) const
 	__END_CATCH
 }
 
-string AnotherQuestRewardClass::toString() const throw()
+string AnotherQuestRewardClass::toString() 
 {
 	return "AnotherQuestRewardClass() : \n" + RewardClass::toString();
 }

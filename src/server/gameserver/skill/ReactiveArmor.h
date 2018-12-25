@@ -20,8 +20,8 @@ public:
 	~ReactiveArmor() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "ReactiveArmor"; }
-	SkillType_t getSkillType() const throw() { return SKILL_REACTIVE_ARMOR; }
+    string getSkillHandlerName()  { return "ReactiveArmor"; }
+	SkillType_t getSkillType()  { return SKILL_REACTIVE_ARMOR; }
 
 	void execute(Ousters* pOusters,  OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Ousters* pOusters, ObjectID_t ObjectID,  OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);

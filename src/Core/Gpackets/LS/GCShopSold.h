@@ -41,34 +41,34 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_SHOP_SOLD; }
+	PacketID_t getPacketID()  { return PACKET_GC_SHOP_SOLD; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szShopVersion + szShopRackType + szBYTE;}
+	PacketSize_t getPacketSize()  { return szObjectID + szShopVersion + szShopRackType + szBYTE;}
 
 	// get packet name
-	string getPacketName() const throw() { return "GCShopSold"; }
+	string getPacketName()  { return "GCShopSold"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 
 public :
 
 	// get/set NPC's object id
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t creatureID) throw() { m_ObjectID = creatureID; }
 
 	// get/set shop version	
-	ShopVersion_t getShopVersion(void) const throw() { return m_Version;}
+	ShopVersion_t getShopVersion(void)  { return m_Version;}
 	void setShopVersion(const ShopVersion_t ver) throw() { m_Version = ver;}
 
 	// get/set rack type
-	ShopRackType_t getShopType(void) const throw() { return m_RackType;}
+	ShopRackType_t getShopType(void)  { return m_RackType;}
 	void setShopType(ShopRackType_t type) throw() { m_RackType = type;}
 	
 	// get/set rack index
-	BYTE getShopIndex(void) const throw() { return m_RackIndex;}
+	BYTE getShopIndex(void)  { return m_RackIndex;}
 	void setShopIndex(BYTE index) throw() { m_RackIndex = index;}
 
 private :
@@ -106,15 +106,15 @@ public :
 	Packet* createPacket() throw() { return new GCShopSold(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCShopSold"; }
+	string getPacketName()  { return "GCShopSold"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_SHOP_SOLD; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_SHOP_SOLD; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCShopSoldPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szShopVersion + szShopRackType + szBYTE; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szShopVersion + szShopRackType + szBYTE; }
 
 };
 

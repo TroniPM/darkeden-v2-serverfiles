@@ -22,13 +22,13 @@ public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_CG_GQUEST_ACCEPT; }
-	PacketSize_t getPacketSize() const throw() { return szDWORD; }
-	string getPacketName() const throw() { return "CGGQuestAccept"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_CG_GQUEST_ACCEPT; }
+	PacketSize_t getPacketSize()  { return szDWORD; }
+	string getPacketName()  { return "CGGQuestAccept"; }
+	string toString() ;
 
 public:
-	DWORD getQuestID() const throw()  { return m_QuestID; }
+	DWORD getQuestID()   { return m_QuestID; }
 	void setQuestID(DWORD QuestID) throw() { m_QuestID = QuestID; }
 
 private:
@@ -43,9 +43,9 @@ class CGGQuestAcceptFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new CGGQuestAccept(); }
-	string getPacketName() const throw() { return "CGGQuestAccept"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_GQUEST_ACCEPT; }
-	PacketSize_t getPacketMaxSize() const throw() { return szDWORD; }
+	string getPacketName()  { return "CGGQuestAccept"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_GQUEST_ACCEPT; }
+	PacketSize_t getPacketMaxSize()  { return szDWORD; }
 };
 
 

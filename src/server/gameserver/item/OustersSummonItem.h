@@ -33,26 +33,26 @@ public:
 	static void initItemIDRegistry(void) throw();
 
 public:
-	virtual ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_OUSTERS_SUMMON_ITEM; }
-	virtual string getObjectTableName() const throw() { return "OustersSummonItemObject"; }
+	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_OUSTERS_SUMMON_ITEM; }
+	virtual string getObjectTableName()  { return "OustersSummonItemObject"; }
 
-	virtual ItemType_t getItemType() const throw() { return m_ItemType; }
+	virtual ItemType_t getItemType()  { return m_ItemType; }
 	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() const throw(Error);
 	virtual VolumeHeight_t getVolumeHeight() const throw(Error);
 	virtual Weight_t getWeight() const throw(Error);
 
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 	int getCharge(void) const { return m_Charge; }
 	void setCharge(int charge) { m_Charge = charge; }
 
-	int getMaxCharge(void) const throw();
+	int getMaxCharge(void) ;
 
 public:
-	virtual EnchantLevel_t getEnchantLevel() const throw() { return m_Charge; }
+	virtual EnchantLevel_t getEnchantLevel()  { return m_Charge; }
 
 private:
 	ItemType_t m_ItemType; // 아이템 타입
@@ -70,8 +70,8 @@ private:
 class OustersSummonItemInfo : public ItemInfo 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_OUSTERS_SUMMON_ITEM; }
-	virtual string toString() const throw();
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_OUSTERS_SUMMON_ITEM; }
+	virtual string toString() ;
 
 public:
 	int getMaxCharge(void) const { return m_MaxCharge; }
@@ -93,7 +93,7 @@ private:
 class OustersSummonItemInfoManager : public InfoClassManager 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_OUSTERS_SUMMON_ITEM; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_OUSTERS_SUMMON_ITEM; }
 	virtual void load() throw(Error);
 };
 
@@ -107,8 +107,8 @@ extern OustersSummonItemInfoManager* g_pOustersSummonItemInfoManager;
 class OustersSummonItemFactory : public ItemFactory 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_OUSTERS_SUMMON_ITEM; }
-	virtual string getItemClassName() const throw() { return "OustersSummonItem"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_OUSTERS_SUMMON_ITEM; }
+	virtual string getItemClassName()  { return "OustersSummonItem"; }
 	
 public:
 	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new OustersSummonItem(ItemType,OptionType); }
@@ -122,8 +122,8 @@ public:
 class OustersSummonItemLoader : public ItemLoader 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_OUSTERS_SUMMON_ITEM; }
-	virtual string getItemClassName() const throw() { return "OustersSummonItem"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_OUSTERS_SUMMON_ITEM; }
+	virtual string getItemClassName()  { return "OustersSummonItem"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

@@ -51,7 +51,7 @@ public:
 	void addBloodBibleBonus(BloodBibleBonus* pBloodBibleBonus) throw(DuplicatedException, Error);
 
 	// toString for Debug
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void setBloodBibleBonusRace( BloodBibleBonusType_t bloodBibleBonusType, Race_t race ) throw( Error );

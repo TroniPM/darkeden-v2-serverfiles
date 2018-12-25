@@ -62,10 +62,10 @@ public:
 	bool isAllSatisfied(TriggerMode triggerMode, Creature* pCreature1, Creature* pCreature2 = NULL, void* pParam = NULL) const throw(Error);
 	bool activate(Creature* pCreature1, Creature* pCreature2 = NULL) const throw(Error); 
 	bool activateCounter(Creature* pCreature1, Creature* pCreature2 = NULL) const throw(Error); 
-	string toString() const throw();
+	string toString() ;
 
 public:
-	TriggerType getTriggerType() const throw() { return m_TriggerType; }
+	TriggerType getTriggerType()  { return m_TriggerType; }
 	void setTriggerType(TriggerType triggerType) throw() { m_TriggerType = triggerType; }
 	void setTriggerType(const string & triggerType) throw(Error) 
 	{ 
@@ -75,17 +75,17 @@ public:
 		else throw Error("invalid triggerType");
 	}
 
-	TriggerID_t getTriggerID() const throw() { return m_TriggerID; }
+	TriggerID_t getTriggerID()  { return m_TriggerID; }
 	void setTriggerID(TriggerID_t triggerID) throw() { m_TriggerID = triggerID; }
 
-	QuestID_t getQuestID() const throw() { return m_QuestID; }
+	QuestID_t getQuestID()  { return m_QuestID; }
 	void setQuestID(QuestID_t questID) throw() { m_QuestID = questID; }
 
-	string getComment() const throw() { return m_Comment; }
+	string getComment()  { return m_Comment; }
 	void setComment(string comment) throw() { m_Comment = comment; }
 
 	ConditionSet & getConditionSet() throw() { return m_ConditionSet; }
-	const ConditionSet & getConditionSet() const throw() { return m_ConditionSet; }
+	const ConditionSet & getConditionSet()  { return m_ConditionSet; }
 
 	void setConditions(const string & str) throw(Error);
 	void setActions(const string & str) throw(Error);

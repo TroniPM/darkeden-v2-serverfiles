@@ -43,13 +43,13 @@ public :
     // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 
-	PacketSize_t getPacketSize() const throw() { return szBYTE + szObjectID* m_ChangedItemListNum + szItemNum*m_ChangedItemListNum;} 
+	PacketSize_t getPacketSize()  { return szBYTE + szObjectID* m_ChangedItemListNum + szItemNum*m_ChangedItemListNum;} 
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get / set ListNumber
-	BYTE getChangedItemListNum() const throw() { return m_ChangedItemListNum; }
+	BYTE getChangedItemListNum()  { return m_ChangedItemListNum; }
 	void setChangedItemListNum(BYTE ListNum) throw() { m_ChangedItemListNum = ListNum; }
 
 	// add / delete / clear S List

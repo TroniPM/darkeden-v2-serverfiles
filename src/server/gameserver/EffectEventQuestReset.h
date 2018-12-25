@@ -30,9 +30,9 @@ public:
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error); 
 
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_TRANSPORT_CREATURE; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_TRANSPORT_CREATURE; }
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	int m_Type;

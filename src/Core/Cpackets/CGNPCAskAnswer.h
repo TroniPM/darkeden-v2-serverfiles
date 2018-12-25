@@ -32,18 +32,18 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_NPC_ASK_ANSWER; }
+	PacketID_t getPacketID()  { return PACKET_CG_NPC_ASK_ANSWER; }
 	
 	// get packet's body size
 	// *OPTIMIZATION HINT*
 	// const static CGNPCAskAnswerPacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szScriptID + szAnswerID; }
+	PacketSize_t getPacketSize()  { return szObjectID + szScriptID + szAnswerID; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGNPCAskAnswer"; }
+	string getPacketName()  { return "CGNPCAskAnswer"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 	
 public:
 
@@ -83,15 +83,15 @@ public:
 	Packet* createPacket() throw() { return new CGNPCAskAnswer(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGNPCAskAnswer"; }
+	string getPacketName()  { return "CGNPCAskAnswer"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_NPC_ASK_ANSWER; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_NPC_ASK_ANSWER; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static CGNPCAskAnswerPacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szScriptID + szAnswerID; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szScriptID + szAnswerID; }
 
 };
 

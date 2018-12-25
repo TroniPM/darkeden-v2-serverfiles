@@ -20,10 +20,10 @@
 class ActionCreateGuild : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_CREATE_GUILD; }
+	virtual ActionType_t getActionType()  { return ACTION_CREATE_GUILD; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 };
 
 //////////////////////////////////////////////////////////////////////////////
@@ -33,9 +33,9 @@ public:
 class ActionCreateGuildFactory : public ActionFactory 
 {
 public:
-    virtual ActionType_t getActionType() const throw() { return Action::ACTION_CREATE_GUILD; }
-	virtual string getActionName() const throw() { return "CreateGuild"; }
-    virtual Action* createAction() const throw() { return new ActionCreateGuild(); }
+    virtual ActionType_t getActionType()  { return Action::ACTION_CREATE_GUILD; }
+	virtual string getActionName()  { return "CreateGuild"; }
+    virtual Action* createAction()  { return new ActionCreateGuild(); }
 };
 
 #endif

@@ -258,7 +258,7 @@ int  InstantDungeonMonsterManager::getTowerEndStatge(int Count) const
 	__END_CATCH
 }
 
-list<WORD> InstantDungeonMonsterManager::getTowerMonsterList(int Count, int Statge) const throw()
+list<WORD> InstantDungeonMonsterManager::getTowerMonsterList(int Count, int Statge) 
 {
 	__BEGIN_TRY
 	list<WORD> m_MonsterType;

@@ -30,15 +30,15 @@ public:
 	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
 	void tinysave(const char* field) const throw (Error);
 
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	static void initItemIDRegistry(void) throw();
 
 public:
-	virtual ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_HOLYWATER; }
-	virtual string getObjectTableName() const throw() { return "HolyWaterObject"; }
+	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_HOLYWATER; }
+	virtual string getObjectTableName()  { return "HolyWaterObject"; }
 
-	virtual ItemType_t getItemType() const throw() { return m_ItemType; }
+	virtual ItemType_t getItemType()  { return m_ItemType; }
 	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() const throw(Error);
@@ -48,10 +48,10 @@ public:
 	virtual Damage_t getMinDamage() const throw(Error);
 	virtual Damage_t getMaxDamage() const throw(Error);
 
-	virtual ItemNum_t getNum() const throw() { return m_Num; }
+	virtual ItemNum_t getNum()  { return m_Num; }
 	virtual void setNum(ItemNum_t Num) throw() { m_Num = Num; }
 
-	bool    isStackable() const throw() { return true; }
+	bool    isStackable()  { return true; }
 
 private:
 	ItemType_t m_ItemType;  // 아이템 타입
@@ -68,13 +68,13 @@ private:
 class HolyWaterInfo : public ItemInfo 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_HOLYWATER; }
-	virtual string toString() const throw();
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_HOLYWATER; }
+	virtual string toString() ;
 
-	virtual Damage_t getMinDamage() const throw() { return m_MinDamage; }
+	virtual Damage_t getMinDamage()  { return m_MinDamage; }
 	virtual void setMinDamage(Damage_t minDamage) throw() { m_MinDamage = minDamage; }
 
-	virtual Damage_t getMaxDamage() const throw() { return m_MaxDamage; }
+	virtual Damage_t getMaxDamage()  { return m_MaxDamage; }
 	virtual void setMaxDamage(Damage_t maxDamage) throw() { m_MaxDamage = maxDamage; }
 
 private:
@@ -89,7 +89,7 @@ private:
 class HolyWaterInfoManager : public InfoClassManager 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_HOLYWATER; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_HOLYWATER; }
 	virtual void load() throw(Error);
 };
 
@@ -103,8 +103,8 @@ extern HolyWaterInfoManager* g_pHolyWaterInfoManager;
 class HolyWaterFactory : public ItemFactory 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_HOLYWATER; }
-	virtual string getItemClassName() const throw() { return "HolyWater"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_HOLYWATER; }
+	virtual string getItemClassName()  { return "HolyWater"; }
 	
 public:
 	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new HolyWater(ItemType,OptionType); }
@@ -117,8 +117,8 @@ public:
 class HolyWaterLoader : public ItemLoader 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_HOLYWATER; }
-	virtual string getItemClassName() const throw() { return "HolyWater"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_HOLYWATER; }
+	virtual string getItemClassName()  { return "HolyWater"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

@@ -22,8 +22,8 @@ public:
 	~Restore() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Restore"; }
-	SkillType_t getSkillType() const throw() { return SKILL_RESTORE; }
+    string getSkillHandlerName()  { return "Restore"; }
+	SkillType_t getSkillType()  { return SKILL_RESTORE; }
 
 	void execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(NPC* pNPC, Creature* pTargetCreature) throw(Error);

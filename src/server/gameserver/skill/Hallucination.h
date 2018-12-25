@@ -20,8 +20,8 @@ public:
 	~Hallucination() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Hallucination"; }
-	SkillType_t getSkillType() const throw() { return SKILL_HALLUCINATION; }
+    string getSkillHandlerName()  { return "Hallucination"; }
+	SkillType_t getSkillType()  { return SKILL_HALLUCINATION; }
 
 	void execute(Vampire* pVampire, ObjectID_t ObjectID, VampireSkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Monster* pMonster, Creature* pEnemy) throw(Error);

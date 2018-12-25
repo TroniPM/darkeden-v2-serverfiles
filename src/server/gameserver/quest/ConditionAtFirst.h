@@ -19,11 +19,11 @@
 class ConditionAtFirst : public Condition 
 {
 public:
-	virtual ConditionType_t getConditionType() const throw() { return CONDITION_AT_FIRST; }
-	virtual bool isActive() const throw() { return true; }
-	virtual bool isSatisfied(Creature* pCreature1, Creature* pCreature2 = NULL, void* pParam = NULL) const throw() { return true; }
+	virtual ConditionType_t getConditionType()  { return CONDITION_AT_FIRST; }
+	virtual bool isActive()  { return true; }
+	virtual bool isSatisfied(Creature* pCreature1, Creature* pCreature2 = NULL, void* pParam = NULL)  { return true; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error) {}
-	virtual string toString() const throw() { return "AtFirst"; }
+	virtual string toString()  { return "AtFirst"; }
 
 };
 
@@ -34,9 +34,9 @@ public:
 class ConditionAtFirstFactory : public ConditionFactory 
 {
 public:
-	virtual ConditionType_t getConditionType() const throw() { return Condition::CONDITION_AT_FIRST; }
-	virtual Condition* createCondition() const throw() { return new ConditionAtFirst(); }
-	virtual string getConditionName() const throw() { return "AtFirst"; }
+	virtual ConditionType_t getConditionType()  { return Condition::CONDITION_AT_FIRST; }
+	virtual Condition* createCondition()  { return new ConditionAtFirst(); }
+	virtual string getConditionName()  { return "AtFirst"; }
 };
 
 #endif

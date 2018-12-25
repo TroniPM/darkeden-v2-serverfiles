@@ -18,7 +18,7 @@ public:
 	EffectLoginEvent(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_LOGIN_EVENT; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_LOGIN_EVENT; }
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
@@ -26,7 +26,7 @@ public:
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error); 
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	int m_Delay;      // 몇 초마다 TICK이 발동 되는가.

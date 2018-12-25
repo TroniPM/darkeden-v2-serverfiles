@@ -39,7 +39,7 @@ public:
 	bool getProperty(string key, string& value) throw(NoSuchElementException, Error);
 	bool getPropertyInt(string key, int& value) throw(NoSuchElementException, Error);
 
-	string toString() const throw();
+	string toString() ;
 	
 private:
 	uint   m_Index;

@@ -46,17 +46,17 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_GET_OFF_MOTORCYCLE_OK; }
+	PacketID_t getPacketID()  { return PACKET_GC_GET_OFF_MOTORCYCLE_OK; }
 	
 	// get packet's body size
 	// 최적화시, 미리 계산된 정수를 사용한다.
-	PacketSize_t getPacketSize() const throw() { return 0; }
+	PacketSize_t getPacketSize()  { return 0; }
 
 	// get packet's name
-	string getPacketName() const throw() { return "GCGetOffMotorCycleOK"; }
+	string getPacketName()  { return "GCGetOffMotorCycleOK"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 private :
 	
@@ -87,13 +87,13 @@ public :
 	Packet* createPacket() throw() { return new GCGetOffMotorCycleOK(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCGetOffMotorCycleOK"; }
+	string getPacketName()  { return "GCGetOffMotorCycleOK"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_GET_OFF_MOTORCYCLE_OK; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_GET_OFF_MOTORCYCLE_OK; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return 0; }
+	PacketSize_t getPacketMaxSize()  { return 0; }
 
 };
 

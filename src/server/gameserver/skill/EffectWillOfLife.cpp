@@ -111,7 +111,7 @@ void EffectWillOfLife::unaffect(Creature* pCreature)
 }
 
 string EffectWillOfLife::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

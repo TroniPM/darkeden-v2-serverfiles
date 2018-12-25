@@ -20,8 +20,8 @@ public:
 	~GaeBolt() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "GaeBolt"; }
-	SkillType_t getSkillType() const throw() { return SKILL_GAE_BOLT; }
+    string getSkillHandlerName()  { return "GaeBolt"; }
+	SkillType_t getSkillType()  { return SKILL_GAE_BOLT; }
 
 	void execute(Slayer* pSlayer, ObjectID_t targetObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Slayer* pSlayer, ZoneCoord_t X, ZoneCoord_t Y,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);

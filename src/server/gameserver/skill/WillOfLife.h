@@ -20,8 +20,8 @@ public:
 	~WillOfLife() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "WillOfLife"; }
-	SkillType_t getSkillType() const throw() { return SKILL_WILL_OF_LIFE; }
+    string getSkillHandlerName()  { return "WillOfLife"; }
+	SkillType_t getSkillType()  { return SKILL_WILL_OF_LIFE; }
 
 	void execute(Vampire* pVampire, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
 

@@ -20,8 +20,8 @@ public:
 	~Glacier1() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Glacier1"; }
-	SkillType_t getSkillType() const throw() { return SKILL_GLACIER_1; }
+    string getSkillHandlerName()  { return "Glacier1"; }
+	SkillType_t getSkillType()  { return SKILL_GLACIER_1; }
 
 	void execute(Monster*, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
 

@@ -18,11 +18,11 @@
 class ConditionPcHasParty : public Condition 
 {
 public:
-	virtual ConditionType_t getConditionType() const throw() { return CONDITION_PC_HAS_PARTY; }
-	virtual bool isPassive() const throw() { return true; }
-	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) const throw();
+	virtual ConditionType_t getConditionType()  { return CONDITION_PC_HAS_PARTY; }
+	virtual bool isPassive()  { return true; }
+	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) ;
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 private:
 	int m_Party;
 };
@@ -34,9 +34,9 @@ private:
 class ConditionPcHasPartyFactory : public ConditionFactory 
 {
 public:
-    virtual ConditionType_t getConditionType() const throw() { return Condition::CONDITION_PC_HAS_PARTY; }
-    virtual Condition* createCondition() const throw() { return new ConditionPcHasParty(); }
-    virtual string getConditionName() const throw() { return "PcHasParty"; }
+    virtual ConditionType_t getConditionType()  { return Condition::CONDITION_PC_HAS_PARTY; }
+    virtual Condition* createCondition()  { return new ConditionPcHasParty(); }
+    virtual string getConditionName()  { return "PcHasParty"; }
 };
 
 #endif

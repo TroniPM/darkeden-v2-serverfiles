@@ -20,10 +20,10 @@
 class ActionShowWarSchedule : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_SHOW_WAR_SCHEDULE; }
+	virtual ActionType_t getActionType()  { return ACTION_SHOW_WAR_SCHEDULE; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 	ZoneID_t	getZoneID() const { return m_ZoneID; }
@@ -41,8 +41,8 @@ private:
 class ActionShowWarScheduleFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_SHOW_WAR_SCHEDULE; }
-	virtual string getActionName() const throw() { return "ShowWarSchedule"; }
-	virtual Action* createAction() const throw() { return new ActionShowWarSchedule(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_SHOW_WAR_SCHEDULE; }
+	virtual string getActionName()  { return "ShowWarSchedule"; }
+	virtual Action* createAction()  { return new ActionShowWarSchedule(); }
 };
 #endif

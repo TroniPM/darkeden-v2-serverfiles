@@ -34,9 +34,9 @@ public:
 	void setNearbySector(uint dir, Sector* pSector) throw (Error);
 
 	const hash_map<ObjectID_t, Object*>& getObjects(void) const { return m_Objects; }
-	uint getSize(void) const throw() { return m_Objects.size(); }
+	uint getSize(void)  { return m_Objects.size(); }
 
-	string toString(void) const throw();
+	string toString(void) ;
 
 protected:
 	hash_map<ObjectID_t, Object*> m_Objects;

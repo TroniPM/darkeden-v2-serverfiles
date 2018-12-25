@@ -80,7 +80,7 @@ public:
 public:
 
 	// get/set zone group id
-	ZoneGroupID_t getZoneGroupID() const throw() { return m_ZoneGroupID; }
+	ZoneGroupID_t getZoneGroupID()  { return m_ZoneGroupID; }
 	void setZoneGroupID(ZoneGroupID_t zoneGroupID) throw() { m_ZoneGroupID = zoneGroupID; }
 
 	// get zone player manager
@@ -88,7 +88,7 @@ public:
 	void setZonePlayerManager(ZonePlayerManager* pZonePlayerManager) throw() { m_pZonePlayerManager = pZonePlayerManager; }
 
 	// get/set game time
-	GameTime getGameTime() const throw() { return m_GameTime; }
+	GameTime getGameTime()  { return m_GameTime; }
 	void setGameTime(const GameTime & gameTime) throw() { m_GameTime = gameTime; }
 
 	void makeZoneUserInfo ( GMServerInfo & gmServerInfo ) throw(Error);
@@ -96,7 +96,7 @@ public:
 	const hash_map< ZoneID_t, Zone* >& getZones() const { return m_Zones; }
 
 	// get debug string
-	string toString() const throw();
+	string toString() ;
 
 public :
 	void 	lock() throw (Error)		{ m_Mutex.lock(); }

@@ -25,7 +25,7 @@ void EffectKeepSweeper::unaffect() throw(Error)
 	__END_CATCH
 }
 
-string EffectKeepSweeper::toString() const throw()
+string EffectKeepSweeper::toString() 
 {
 	__BEGIN_TRY
 

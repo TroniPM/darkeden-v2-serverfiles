@@ -20,7 +20,7 @@ public:
 	EffectShadyDouple(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_SHADY_DOUPLE; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_SHADY_DOUPLE; }
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
@@ -28,14 +28,14 @@ public:
 	void unaffect() throw(Error);
 	void unaffect(Creature* pCreature) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
-	HP_t getPoint() const throw() { return m_Point; }
+	HP_t getPoint()  { return m_Point; }
 	void setPoint(HP_t Point) throw() { m_Point = Point; }
 
 	void setUserObjectID(ObjectID_t oid) throw() { m_UserObjectID = oid; }
-	ObjectID_t getUserObjectID() const throw() { return m_UserObjectID; }
+	ObjectID_t getUserObjectID()  { return m_UserObjectID; }
 
 	uint getAttackNum() const { return m_AttackNum; }
 	void setAttackNum( uint AttackNum ) { m_AttackNum = AttackNum; }

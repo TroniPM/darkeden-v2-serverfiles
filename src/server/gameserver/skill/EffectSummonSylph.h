@@ -20,15 +20,15 @@ public:
 	EffectSummonSylph(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_SUMMON_SYLPH; }
-    EffectClass getSendEffectClass() const throw() { return m_EClass; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_SUMMON_SYLPH; }
+    EffectClass getSendEffectClass()  { return m_EClass; }
 
 	void affect() throw(Error){}
 
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void setBonus( uint bonus ) { m_Bonus = bonus; }

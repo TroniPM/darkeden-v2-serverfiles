@@ -46,20 +46,20 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_WAIT_GUILD_LIST; }
+	PacketID_t getPacketID()  { return PACKET_GC_WAIT_GUILD_LIST; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw();
+	PacketSize_t getPacketSize() ;
 
 	// get packet name
-	string getPacketName() const throw() { return "GCWaitGuildList"; }
+	string getPacketName()  { return "GCWaitGuildList"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public:
 
-	BYTE getListNum() const throw() { return m_GuildInfoList.size(); }
+	BYTE getListNum()  { return m_GuildInfoList.size(); }
 
 	// add GuildInfo
 	void addGuildInfo( GuildInfo* pGuildInfo ) throw() { m_GuildInfoList.push_front( pGuildInfo ); }
@@ -102,15 +102,15 @@ public :
 	Packet* createPacket() throw() { return new GCWaitGuildList(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCWaitGuildList"; }
+	string getPacketName()  { return "GCWaitGuildList"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_WAIT_GUILD_LIST; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_WAIT_GUILD_LIST; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCSystemMessagePacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szWORD + (GuildInfo::getMaxSize() * 5000); }
+	PacketSize_t getPacketMaxSize()  { return szWORD + (GuildInfo::getMaxSize() * 5000); }
 
 };
 

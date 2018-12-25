@@ -20,14 +20,14 @@ public:
 	EffectGroundBless(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_GROUND_BLESS; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_GROUND_BLESS; }
 
 	void affect() throw(Error){}
 
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void setBonus( uint bonus ) { m_Bonus = bonus; }

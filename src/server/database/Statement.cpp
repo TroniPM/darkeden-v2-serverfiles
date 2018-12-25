@@ -238,7 +238,7 @@ void Statement::setStatement (char * fmt , ... )
 	__END_CATCH	
 }
 
-uint Statement::getInsertID() const throw()
+uint Statement::getInsertID() 
 {
 	__BEGIN_TRY
 	return mysql_insert_id( m_pConnection->getMYSQL() );

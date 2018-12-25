@@ -24,10 +24,10 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_CG_ADD_SMS_ADDRESS; }
-	PacketSize_t getPacketSize() const throw() { return szBYTE + m_CharacterName.size() + szBYTE + m_CustomName.size() + szBYTE + m_Number.size(); }
-	string getPacketName() const throw() { return "CGAddSMSAddress"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_CG_ADD_SMS_ADDRESS; }
+	PacketSize_t getPacketSize()  { return szBYTE + m_CharacterName.size() + szBYTE + m_CustomName.size() + szBYTE + m_Number.size(); }
+	string getPacketName()  { return "CGAddSMSAddress"; }
+	string toString() ;
 	
 public:
 	const string&	getCharacterName() const { return m_CharacterName; }
@@ -53,9 +53,9 @@ class CGAddSMSAddressFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new CGAddSMSAddress(); }
-	string getPacketName() const throw() { return "CGAddSMSAddress"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_ADD_SMS_ADDRESS; }
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + 20 + szBYTE + 40 + szBYTE + 11; }
+	string getPacketName()  { return "CGAddSMSAddress"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_ADD_SMS_ADDRESS; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + 20 + szBYTE + 40 + szBYTE + 11; }
 };
 
 //////////////////////////////////////////////////////////////////////////////

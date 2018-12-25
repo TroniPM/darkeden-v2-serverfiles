@@ -26,28 +26,28 @@ public:
 public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szCoord + szCoord + szBYTE + szItemType + szBYTE + m_OptionType.size() + szDurability; }
-	string getPacketName() const throw() { return "GCAddItemToInventory"; }
-	string toString() const throw();
+	PacketSize_t getPacketSize()  { return szObjectID + szCoord + szCoord + szBYTE + szItemType + szBYTE + m_OptionType.size() + szDurability; }
+	string getPacketName()  { return "GCAddItemToInventory"; }
+	string toString() ;
 
 public:
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t ID) throw() { m_ObjectID = ID; }
 
-	CoordInven_t getX() const throw() { return m_X; }
+	CoordInven_t getX()  { return m_X; }
 	void setX(CoordInven_t x) throw() { m_X = x; }
 	
-	CoordInven_t getY() const throw() { return m_Y; }
+	CoordInven_t getY()  { return m_Y; }
 	void setY(CoordInven_t y) throw() { m_Y = y; }
 
-	BYTE getItemClass() const throw() { return m_ItemClass; }
+	BYTE getItemClass()  { return m_ItemClass; }
 	void setItemClass(BYTE Class) throw() { m_ItemClass = Class; }
 
-	ItemType_t getItemType() const throw() { return m_ItemType; }
+	ItemType_t getItemType()  { return m_ItemType; }
 	void setItemType(ItemType_t ItemType) throw() { m_ItemType = ItemType; }
 
-	int getOptionTypeSize() const throw() { return m_OptionType.size(); }
-	const list<OptionType_t>& getOptionType() const throw() { return m_OptionType; }
+	int getOptionTypeSize()  { return m_OptionType.size(); }
+	const list<OptionType_t>& getOptionType()  { return m_OptionType; }
 	OptionType_t popOptionType() throw()
 	{
 		if (m_OptionType.empty()) return 0;
@@ -58,10 +58,10 @@ public:
 	void addOptionType(OptionType_t OptionType) throw() { m_OptionType.push_back( OptionType ); }
 	void setOptionType(const list<OptionType_t>& OptionTypes) throw() { m_OptionType = OptionTypes; }
 
-	Durability_t getDurability() const throw() { return m_Durability; }
+	Durability_t getDurability()  { return m_Durability; }
 	void setDurability(Durability_t Durability) throw() { m_Durability = Durability; }
 
-	ItemNum_t getItemNum() const throw() { return m_ItemNum; }
+	ItemNum_t getItemNum()  { return m_ItemNum; }
 	void setItemNum(ItemNum_t ItemNum) throw() { m_ItemNum = ItemNum; }
 
 protected:

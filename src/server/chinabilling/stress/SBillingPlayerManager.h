@@ -41,7 +41,7 @@ public:
 	void sendMinusMinute( PayUser* pPayUser, int i ) throw ( ProtocolException, Error );
 	void sendLogout( PayUser* pPayUser, int i ) throw ( ProtocolException, Error );
 
-	int getVersionNumber() const throw();
+	int getVersionNumber() ;
 	int getMinusIntervalInt() const throw ();
 	string getMinusInterval() const throw ();
 

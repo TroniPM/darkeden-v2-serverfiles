@@ -99,7 +99,7 @@ public :
 	string toString ();// const throw ();
 	
 	//add by viva
-	string getLocalHost();// const throw() { return m_pSocketImpl->getLocalHost(); }
+	string getLocalHost();//  { return m_pSocketImpl->getLocalHost(); }
 
 //////////////////////////////////////////////////
 // attributes

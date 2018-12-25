@@ -39,7 +39,7 @@ public :
     // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
     virtual void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 
-	virtual PacketSize_t getSize() const throw();
+	virtual PacketSize_t getSize() ;
 
 	static PacketSize_t getMaxSize() throw()
 	{
@@ -47,7 +47,7 @@ public :
 	}
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void setObjectID( ObjectID_t objectID ) throw(Error) { m_ObjectID = objectID; }

@@ -20,8 +20,8 @@ public:
 	~SingleBlow() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "SingleBlow"; }
-	SkillType_t getSkillType() const throw() { return SKILL_SINGLE_BLOW; }
+    string getSkillHandlerName()  { return "SingleBlow"; }
+	SkillType_t getSkillType()  { return SKILL_SINGLE_BLOW; }
 
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Slayer* pSlayer, ZoneCoord_t X, ZoneCoord_t Y, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);

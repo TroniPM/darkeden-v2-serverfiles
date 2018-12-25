@@ -21,10 +21,10 @@
 class ActionCreateNotEffect : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_CREATE_EFFECT_NOTLOGOUT; }
+	virtual ActionType_t getActionType()  { return ACTION_CREATE_EFFECT_NOTLOGOUT; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 private:
@@ -40,8 +40,8 @@ private:
 class ActionCreateNotEffectFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_CREATE_EFFECT_NOTLOGOUT; }
-	virtual string getActionName() const throw() { return "CreateNotEffect"; }
-	virtual Action* createAction() const throw() { return new ActionCreateNotEffect(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_CREATE_EFFECT_NOTLOGOUT; }
+	virtual string getActionName()  { return "CreateNotEffect"; }
+	virtual Action* createAction()  { return new ActionCreateNotEffect(); }
 };
 #endif

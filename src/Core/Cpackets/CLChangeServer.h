@@ -33,20 +33,20 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CL_CHANGE_SERVER; }
+	PacketID_t getPacketID()  { return PACKET_CL_CHANGE_SERVER; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szServerGroupID; }
+	PacketSize_t getPacketSize()  { return szServerGroupID; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CLChangeServer"; }
+	string getPacketName()  { return "CLChangeServer"; }
 
 	// get / set ServerGroupID
-	ServerGroupID_t getServerGroupID() const throw() { return m_ServerGroupID; }
+	ServerGroupID_t getServerGroupID()  { return m_ServerGroupID; }
 	void setServerGroupID(ServerGroupID_t ServerGroupID) throw() { m_ServerGroupID = ServerGroupID; }
 	
 	// get packet's debug string
-	string toString() const throw() { return "CLChangeServer"; }
+	string toString()  { return "CLChangeServer"; }
 
 private :
 
@@ -71,13 +71,13 @@ public:
 	Packet* createPacket() throw() { return new CLChangeServer(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CLChangeServer"; }
+	string getPacketName()  { return "CLChangeServer"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CL_CHANGE_SERVER; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CL_CHANGE_SERVER; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw() { return szServerGroupID; }
+	PacketSize_t getPacketMaxSize()  { return szServerGroupID; }
 
 };
 

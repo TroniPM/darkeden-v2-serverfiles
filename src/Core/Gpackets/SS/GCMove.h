@@ -50,36 +50,36 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_MOVE; }
+	PacketID_t getPacketID()  { return PACKET_GC_MOVE; }
 	
 	// get packet's body size
 	// *OPTIMIZATION HINT*
 	// const static GCMovePacketSize 를 정의, 리턴하라.
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szCoord + szCoord + szDir ; }
+	PacketSize_t getPacketSize()  { return szObjectID + szCoord + szCoord + szDir ; }
 
 	// get packet's name
-	string getPacketName() const throw() { return "GCMove"; }
+	string getPacketName()  { return "GCMove"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 
 public :
 
 	// get/set Creature ID 
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t objectID) throw() { m_ObjectID = objectID; }
 
 	// get/set X
-	Coord_t getX() const throw() { return m_X; }
+	Coord_t getX()  { return m_X; }
 	void setX(Coord_t x) throw() { m_X = x; }
 	
 	// get/set Y
-	Coord_t getY() const throw() { return m_Y; }
+	Coord_t getY()  { return m_Y; }
 	void setY(Coord_t y) throw() { m_Y = y; }
 
 	// get/set Dir
-	Dir_t getDir() const throw() { return m_Dir; }
+	Dir_t getDir()  { return m_Dir; }
 	void setDir(Dir_t dir) throw() { m_Dir = dir; }
 
 
@@ -109,15 +109,15 @@ public :
 	Packet* createPacket() throw() { return new GCMove(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCMove"; }
+	string getPacketName()  { return "GCMove"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_MOVE; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_MOVE; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCMovePacketSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szCoord + szCoord + szDir ; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szCoord + szCoord + szDir ; }
 
 };
 

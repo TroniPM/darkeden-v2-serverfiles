@@ -21,10 +21,10 @@
 class ActionPcGetItem : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_PC_GETITEM; }
+	virtual ActionType_t getActionType()  { return ACTION_PC_GETITEM; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 private:
@@ -47,8 +47,8 @@ private:
 class ActionPcGetItemFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_PC_GETITEM; }
-	virtual string getActionName() const throw() { return "PcGetItem"; }
-	virtual Action* createAction() const throw() { return new ActionPcGetItem(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_PC_GETITEM; }
+	virtual string getActionName()  { return "PcGetItem"; }
+	virtual Action* createAction()  { return new ActionPcGetItem(); }
 };
 #endif

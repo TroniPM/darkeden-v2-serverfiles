@@ -56,16 +56,16 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_USE_POWER_POINT_RESULT; }
+	PacketID_t getPacketID()  { return PACKET_GC_USE_POWER_POINT_RESULT; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szBYTE + szBYTE + szint; }
+	PacketSize_t getPacketSize()  { return szBYTE + szBYTE + szint; }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCUsePowerPointResult"; }
+	string getPacketName()  { return "GCUsePowerPointResult"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get / set Error Code
 	BYTE getErrorCode() const { return m_ErrorCode; }
@@ -109,15 +109,15 @@ public :
 	Packet* createPacket() throw() { return new GCUsePowerPointResult(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCUsePowerPointResult"; }
+	string getPacketName()  { return "GCUsePowerPointResult"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_USE_POWER_POINT_RESULT; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_USE_POWER_POINT_RESULT; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCUsePowerPointResultPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + szBYTE + szint; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + szBYTE + szint; }
 };
 
 

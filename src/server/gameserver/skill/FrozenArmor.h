@@ -20,8 +20,8 @@ public:
 	~FrozenArmor() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "FrozenArmor"; }
-	SkillType_t getSkillType() const throw() { return SKILL_FROZEN_ARMOR; }
+    string getSkillHandlerName()  { return "FrozenArmor"; }
+	SkillType_t getSkillType()  { return SKILL_FROZEN_ARMOR; }
 
 	void execute(Ousters* pOusters,  OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Ousters* pOusters, ObjectID_t ObjectID,  OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);

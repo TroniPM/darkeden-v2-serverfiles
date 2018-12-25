@@ -20,9 +20,9 @@ public:
 	~SharpRound() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "SharpRound"; }
+    string getSkillHandlerName()  { return "SharpRound"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_SHARP_ROUND; }
+	SkillType_t getSkillType()  { return SKILL_SHARP_ROUND; }
 
 	void execute(Ousters* pOusters, ObjectID_t targetObject, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 

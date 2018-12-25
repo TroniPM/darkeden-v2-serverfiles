@@ -39,22 +39,22 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_SHOP_SELL_FAIL; }
+	PacketID_t getPacketID()  { return PACKET_GC_SHOP_SELL_FAIL; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szObjectID;}
+	PacketSize_t getPacketSize()  { return szObjectID;}
 
 	// get packet name
-	string getPacketName() const throw() { return "GCShopSellFail"; }
+	string getPacketName()  { return "GCShopSellFail"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 
 public :
 
 	// get/set NPC's object id
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t creatureID) throw() { m_ObjectID = creatureID; }
 
 
@@ -83,15 +83,15 @@ public :
 	Packet* createPacket() throw() { return new GCShopSellFail(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCShopSellFail"; }
+	string getPacketName()  { return "GCShopSellFail"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_SHOP_SELL_FAIL; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_SHOP_SELL_FAIL; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCShopSellFailPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID; }
 
 };
 

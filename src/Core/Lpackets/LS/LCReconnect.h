@@ -37,10 +37,10 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_LC_RECONNECT; }
+	PacketID_t getPacketID()  { return PACKET_LC_RECONNECT; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		return szBYTE + m_GameServerIP.size() 	// 게임 서버 아이피
 			+ szuint							// 게임 서버 포트
@@ -48,23 +48,23 @@ public:
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "LCReconnect"; }
+	string getPacketName()  { return "LCReconnect"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public:
 
 	// get/set game server's ip
-	string getGameServerIP() const throw() { return m_GameServerIP; }
+	string getGameServerIP()  { return m_GameServerIP; }
 	void setGameServerIP(const string & ip) throw() { m_GameServerIP = ip; }
 
 	// get/set game server's port
-	uint getGameServerPort() const throw() { return m_GameServerPort; }
+	uint getGameServerPort()  { return m_GameServerPort; }
 	void setGameServerPort(uint port) throw() { m_GameServerPort = port; }
 
 	// get/set key
-	DWORD getKey() const throw() { return m_Key; }
+	DWORD getKey()  { return m_Key; }
 	void setKey(DWORD key) throw() { m_Key = key; }
 
 private :
@@ -97,15 +97,15 @@ public:
 	Packet* createPacket() throw() { return new LCReconnect(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "LCReconnect"; }
+	string getPacketName()  { return "LCReconnect"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_LC_RECONNECT; }
+	PacketID_t getPacketID()  { return Packet::PACKET_LC_RECONNECT; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static LCReconnectPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		return szBYTE + 15 	// 게임 서버 아이피
 			+ szuint		// 게임 서버 포트

@@ -47,10 +47,10 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_LG_INCOMING_CONNECTION; }
+	PacketID_t getPacketID()  { return PACKET_LG_INCOMING_CONNECTION; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		return + szBYTE + m_PlayerID.size()	// Player ID
 			+ szBYTE + m_PCName.size() 		// PC name
@@ -58,23 +58,23 @@ public:
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "LGIncomingConnection"; }
+	string getPacketName()  { return "LGIncomingConnection"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public:
 
 	// get/set playerID
-	string getPlayerID() const throw() { return m_PlayerID; }
+	string getPlayerID()  { return m_PlayerID; }
 	void setPlayerID(const string& playerID) throw() { m_PlayerID = playerID; }
 	
 	// get/set pcName
-	string getPCName() const throw() { return m_PCName; }
+	string getPCName()  { return m_PCName; }
 	void setPCName(const string& pcName) throw() { m_PCName = pcName; }
 	
 	// get/set client ip
-	string getClientIP() const throw() { return m_ClientIP; }
+	string getClientIP()  { return m_ClientIP; }
 	void setClientIP(const string& ip) throw() { m_ClientIP = ip; }
 	
 private :
@@ -107,15 +107,15 @@ public:
 	Packet* createPacket() throw() { return new LGIncomingConnection(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "LGIncomingConnection"; }
+	string getPacketName()  { return "LGIncomingConnection"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_LG_INCOMING_CONNECTION; }
+	PacketID_t getPacketID()  { return Packet::PACKET_LG_INCOMING_CONNECTION; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static LGIncomingConnectionPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		return + szBYTE + 20 	// creature name
 			+ szBYTE + 20 		// PC name

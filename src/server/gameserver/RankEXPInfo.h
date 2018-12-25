@@ -23,15 +23,15 @@ public:
 
 public:
 	void setLevel(uint lev) throw() { m_Level = lev; }
-	uint getLevel() const throw() { return m_Level; }
+	uint getLevel()  { return m_Level; }
 
 	void setGoalExp(uint sum) throw() { m_GoalExp = sum; }
-	uint getGoalExp() const throw() { return m_GoalExp; }
+	uint getGoalExp()  { return m_GoalExp; }
 
 	void setAccumExp(uint accum) throw() { m_AccumExp = accum ; }
-	uint getAccumExp() const throw() { return m_AccumExp; }
+	uint getAccumExp()  { return m_AccumExp; }
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	uint m_Level;
@@ -57,7 +57,7 @@ public:
 	RankEXPInfo* getRankEXPInfo(uint value) const throw (InvalidProtocolException);
 	void addRankEXPInfo(RankEXPInfo* pRankEXPInfo) throw();
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	uint             m_RankEXPCount;

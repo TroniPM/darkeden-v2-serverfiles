@@ -20,10 +20,10 @@
 class ActionTakeOutGoods : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_TAKE_OUT_GOODS; }
+	virtual ActionType_t getActionType()  { return ACTION_TAKE_OUT_GOODS; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 
@@ -38,8 +38,8 @@ private:
 class ActionTakeOutGoodsFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_TAKE_OUT_GOODS; }
-	virtual string getActionName() const throw() { return "TakeOutGoods"; }
-	virtual Action* createAction() const throw() { return new ActionTakeOutGoods(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_TAKE_OUT_GOODS; }
+	virtual string getActionName()  { return "TakeOutGoods"; }
+	virtual Action* createAction()  { return new ActionTakeOutGoods(); }
 };
 #endif

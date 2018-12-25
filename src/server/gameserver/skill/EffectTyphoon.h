@@ -25,9 +25,9 @@ public:
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error); 
 
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_TYPHOON; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_TYPHOON; }
 
-	string toString() const throw();
+	string toString() ;
 };
 
 #endif // __EFFECT_TYPHOON__

@@ -53,15 +53,15 @@ public :
 	string toString () const throw ();
 
 	// get / set ID
-	BYTE getID() const throw() { return m_ID; }
+	BYTE getID()  { return m_ID; }
 	void setID(WorldID_t ID) throw() { m_ID = ID; }
 
 	// get / set Name
-	string getName() const throw() { return m_Name; }
+	string getName()  { return m_Name; }
 	void setName(string Name) throw() { m_Name = Name; }
 
 	// get / set  Stat
-	BYTE getStat() const throw() { return m_Stat; }
+	BYTE getStat()  { return m_Stat; }
 	void setStat(BYTE Stat) throw() { m_Stat = Stat; }
 
 private :

@@ -35,16 +35,16 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_WITHDRAW_TAX; }
+	PacketID_t getPacketID()  { return PACKET_CG_WITHDRAW_TAX; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szGold; }
+	PacketSize_t getPacketSize()  { return szGold; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGWithdrawTax"; }
+	string getPacketName()  { return "CGWithdrawTax"; }
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get/set Gold
 	Gold_t getGold() const { return m_Gold; }
@@ -82,13 +82,13 @@ public:
 	Packet* createPacket() throw() { return new CGWithdrawTax(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGWithdrawTax"; }
+	string getPacketName()  { return "CGWithdrawTax"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_WITHDRAW_TAX; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_WITHDRAW_TAX; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szGold; }
+	PacketSize_t getPacketMaxSize()  { return szGold; }
 };
 
 

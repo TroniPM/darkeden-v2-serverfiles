@@ -20,8 +20,8 @@ public:
 	~SummonWaterElemental() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "SummonWaterElemental"; }
-	SkillType_t getSkillType() const throw() { return SKILL_SUMMON_WATER_ELEMENTAL; }
+    string getSkillHandlerName()  { return "SummonWaterElemental"; }
+	SkillType_t getSkillType()  { return SKILL_SUMMON_WATER_ELEMENTAL; }
 
 	void execute(Ousters* pOusters,  OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 

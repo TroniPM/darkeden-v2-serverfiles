@@ -21,7 +21,7 @@ public:
 	EffectStriking(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_STRIKING; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_STRIKING; }
 
 	void affect() throw(Error){}
 	void affect(Creature* pCreature) throw(Error);
@@ -31,7 +31,7 @@ public:
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject) throw(Error);
     void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	Damage_t getDamageBonus(void) const { return m_DamageBonus; }

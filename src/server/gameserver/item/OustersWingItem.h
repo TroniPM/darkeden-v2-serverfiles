@@ -29,28 +29,28 @@ public:
 	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) throw(Error);
 	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
 	void tinysave(const char* field) const throw (Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	static void initItemIDRegistry(void) throw();
 
 public:
-	virtual ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_OUSTERSWING_ITEM; }
-	virtual string getObjectTableName() const throw() { return "OustersWingItemObject"; }
+	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_OUSTERSWING_ITEM; }
+	virtual string getObjectTableName()  { return "OustersWingItemObject"; }
 
-	virtual ItemType_t getItemType() const throw() { return m_ItemType; }
+	virtual ItemType_t getItemType()  { return m_ItemType; }
 	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() const throw(Error);
 	virtual VolumeHeight_t getVolumeHeight() const throw(Error);
 	virtual Weight_t getWeight() const throw(Error);
 
-	virtual Color_t getBodyColor() const throw() { return m_BodyColor; }
+	virtual Color_t getBodyColor()  { return m_BodyColor; }
 	virtual void setBodyColor(Color_t BodyColor) throw() { m_BodyColor = BodyColor; }
 
-	virtual Color_t getEffectColor() const throw() { return m_EffectColor; }
+	virtual Color_t getEffectColor()  { return m_EffectColor; }
 	virtual void setEffectColor(Color_t EffectColor) throw() { m_EffectColor = EffectColor; }
 
-	bool    isStackable() const throw() { return true; }
+	bool    isStackable()  { return true; }
 
 private:
 	ItemType_t m_ItemType; // ...
@@ -69,8 +69,8 @@ private:
 class OustersWingItemInfo : public ItemInfo 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_OUSTERSWING_ITEM; }
-	virtual string toString() const throw();
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_OUSTERSWING_ITEM; }
+	virtual string toString() ;
 };
 
 
@@ -81,7 +81,7 @@ public:
 class OustersWingItemInfoManager : public InfoClassManager 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_OUSTERSWING_ITEM; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_OUSTERSWING_ITEM; }
 	virtual void load() throw(Error);
 };
 
@@ -95,8 +95,8 @@ extern OustersWingItemInfoManager* g_pOustersWingItemInfoManager;
 class OustersWingItemFactory : public ItemFactory 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_OUSTERSWING_ITEM; }
-	virtual string getItemClassName() const throw() { return "OustersWingItem"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_OUSTERSWING_ITEM; }
+	virtual string getItemClassName()  { return "OustersWingItem"; }
 	
 public:
 	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new OustersWingItem(ItemType,OptionType); }
@@ -110,8 +110,8 @@ public:
 class OustersWingItemLoader : public ItemLoader 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_OUSTERSWING_ITEM; }
-	virtual string getItemClassName() const throw() { return "OustersWingItem"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_OUSTERSWING_ITEM; }
+	virtual string getItemClassName()  { return "OustersWingItem"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

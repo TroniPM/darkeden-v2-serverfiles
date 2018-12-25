@@ -20,8 +20,8 @@ public:
 	~Rebuke() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Rebuke"; }
-	SkillType_t getSkillType() const throw() { return SKILL_REBUKE; }
+    string getSkillHandlerName()  { return "Rebuke"; }
+	SkillType_t getSkillType()  { return SKILL_REBUKE; }
 
 	void execute(Slayer* pSlayer,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

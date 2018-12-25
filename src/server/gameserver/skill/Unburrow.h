@@ -20,8 +20,8 @@ public:
 	~Unburrow() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Unburrow"; }
-	SkillType_t getSkillType() const throw() { return SKILL_UN_BURROW; }
+    string getSkillHandlerName()  { return "Unburrow"; }
+	SkillType_t getSkillType()  { return SKILL_UN_BURROW; }
 
 	void execute(Vampire* pVampire) throw(Error);
 	void execute(Monster* pMonster) throw(Error);

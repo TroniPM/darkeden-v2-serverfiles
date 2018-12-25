@@ -20,9 +20,9 @@ public:
 	~BombingStar() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "BombingStar"; }
+    string getSkillHandlerName()  { return "BombingStar"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_BOMBING_STAR; }
+	SkillType_t getSkillType()  { return SKILL_BOMBING_STAR; }
 
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Slayer* pSlayer, ZoneCoord_t X, ZoneCoord_t Y, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);

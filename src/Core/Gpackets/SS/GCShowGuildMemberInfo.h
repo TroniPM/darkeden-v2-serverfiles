@@ -35,10 +35,10 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_SHOW_GUILD_MEMBER_INFO; }
+	PacketID_t getPacketID()  { return PACKET_GC_SHOW_GUILD_MEMBER_INFO; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw()
+	PacketSize_t getPacketSize() 
 	{ 
 		return szGuildID +					// Guild ID
 			   szBYTE +						// Name length
@@ -49,25 +49,25 @@ public :
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "GCShowGuildMemberInfo"; }
+	string getPacketName()  { return "GCShowGuildMemberInfo"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get/set Guild ID
-	GuildID_t getGuildID() const throw() { return m_GuildID; }
+	GuildID_t getGuildID()  { return m_GuildID; }
 	void setGuildID( GuildID_t GuildID ) throw() { m_GuildID = GuildID; }
 
 	// get/set Name
-	const string& getName() const throw() { return m_Name; }
+	const string& getName()  { return m_Name; }
 	void setName( const string& name ) throw() { m_Name = name; }
 
 	// get/set Guild Member Rank
-	GuildMemberRank_t getGuildMemberRank() const throw() { return m_GuildMemberRank; }
+	GuildMemberRank_t getGuildMemberRank()  { return m_GuildMemberRank; }
 	void setGuildMemberRank( GuildMemberRank_t guildMemberRank ) throw() { m_GuildMemberRank = guildMemberRank; }
 
 	// get/set Guild Member Intro
-	const string& getGuildMemberIntro() const throw() { return m_GuildMemberIntro; }
+	const string& getGuildMemberIntro()  { return m_GuildMemberIntro; }
 	void setGuildMemberIntro( const string& intro ) throw() { m_GuildMemberIntro = intro; }
 
 private :
@@ -103,15 +103,15 @@ public :
 	Packet* createPacket() throw() { return new GCShowGuildMemberInfo(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCShowGuildMemberInfo"; }
+	string getPacketName()  { return "GCShowGuildMemberInfo"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_SHOW_GUILD_MEMBER_INFO; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_SHOW_GUILD_MEMBER_INFO; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCSystemMessagePacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw()
+	PacketSize_t getPacketMaxSize() 
 	{
 		return szGuildID +					// Guild ID
 			   szBYTE +						// Name length

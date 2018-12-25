@@ -23,13 +23,13 @@ public:
 	DarkLightInfo(const DarkLightInfo & dli) throw();
 
 public:
-	DarkLevel_t getDarkLevel() const throw() { return m_DarkLevel; }
+	DarkLevel_t getDarkLevel()  { return m_DarkLevel; }
 	void setDarkLevel(DarkLevel_t darkLevel) throw() { m_DarkLevel = darkLevel; }
 
-	LightLevel_t getLightLevel() const throw() { return m_LightLevel; }
+	LightLevel_t getLightLevel()  { return m_LightLevel; }
 	void setLightLevel(LightLevel_t lightLevel) throw() { m_LightLevel = lightLevel; }
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 
@@ -70,7 +70,7 @@ public:
 	DarkLightInfo* getCurrentDarkLightInfo( Zone* pZone ) throw(Error);
 	const DarkLightInfo* getCurrentDarkLightInfo( Zone* pZone ) const throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	DarkLightInfo* m_DarkLightInfos[nDarkLightInfos];

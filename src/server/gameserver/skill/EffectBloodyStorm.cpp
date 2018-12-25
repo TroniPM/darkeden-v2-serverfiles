@@ -222,7 +222,7 @@ void EffectBloodyStorm::unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Obje
 }
 
 string EffectBloodyStorm::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

@@ -20,7 +20,7 @@ public:
 	EffectHellFire(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_HELLFIRE; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_HELLFIRE; }
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
@@ -28,7 +28,7 @@ public:
 	void unaffect() throw(Error);
 	void unaffect(Creature* pCreature) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	string getCasterName(void) const { return m_CasterName; }
@@ -62,8 +62,8 @@ class EffectHellFireLoader : public EffectLoader
 {
 
 public:
-    virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_HELLFIRE; }
-    virtual string getEffectClassName() const throw() { return "EffectHellFire"; }
+    virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_HELLFIRE; }
+    virtual string getEffectClassName()  { return "EffectHellFire"; }
 
 public:
     virtual void load(Creature* pCreature) throw(Error) {}

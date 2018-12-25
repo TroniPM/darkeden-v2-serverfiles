@@ -20,8 +20,8 @@ public:
 	~HolyArmor() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "HolyArmor"; }
-	SkillType_t getSkillType() const throw() { return SKILL_HOLY_ARMOR; }
+    string getSkillHandlerName()  { return "HolyArmor"; }
+	SkillType_t getSkillType()  { return SKILL_HOLY_ARMOR; }
 
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

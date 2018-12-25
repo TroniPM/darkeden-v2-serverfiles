@@ -47,10 +47,10 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_MORPH_1; }
+	PacketID_t getPacketID()  { return PACKET_GC_MORPH_1; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		// [PCType][PCInfo]
 		// [GameTime][Weather][WeatherLevel][DarkLevel][LightLevel]
@@ -63,10 +63,10 @@ public :
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "GCMorph1"; }
+	string getPacketName()  { return "GCMorph1"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 
 //--------------------------------------------------
@@ -75,19 +75,19 @@ public :
 public :
 
 	// get/set PC info
-	PCInfo* getPCInfo2() const throw() { return m_pPCInfo; }
+	PCInfo* getPCInfo2()  { return m_pPCInfo; }
 	void setPCInfo2(PCInfo* pPCInfo) throw(Error) { m_pPCInfo = pPCInfo; }
 
 	// get/set Inventory Info
-	InventoryInfo* getInventoryInfo() const throw() { return m_pInventoryInfo; }
+	InventoryInfo* getInventoryInfo()  { return m_pInventoryInfo; }
 	void setInventoryInfo(InventoryInfo* pInventoryInfo) throw(Error) { m_pInventoryInfo = pInventoryInfo; }
 
 	// get/set Gear Info
-	GearInfo* getGearInfo() const throw() { return m_pGearInfo; }
+	GearInfo* getGearInfo()  { return m_pGearInfo; }
 	void setGearInfo(GearInfo* pGearInfo) throw(Error) { m_pGearInfo = pGearInfo; }
 
 	// get/set ExtraInfo
-	ExtraInfo* getExtraInfo() const throw() { return m_pExtraInfo; }
+	ExtraInfo* getExtraInfo()  { return m_pExtraInfo; }
 	void setExtraInfo(ExtraInfo* pExtraInfo) throw(Error) { m_pExtraInfo = pExtraInfo; }
 
 //--------------------------------------------------
@@ -145,15 +145,15 @@ public :
 	Packet* createPacket() throw() { return new GCMorph1(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCMorph1"; }
+	string getPacketName()  { return "GCMorph1"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_MORPH_1; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_MORPH_1; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCMorph1PacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		return szBYTE + PCSlayerInfo2::getMaxSize() 
 			+ InventoryInfo::getMaxSize()

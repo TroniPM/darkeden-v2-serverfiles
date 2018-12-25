@@ -28,23 +28,23 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_ADD_EFFECT_TO_TILE; }
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szCoord*2 + szEffectID + szTurn; }
-	string getPacketName() const throw() { return "GCAddEffectToTile"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_ADD_EFFECT_TO_TILE; }
+	PacketSize_t getPacketSize()  { return szObjectID + szCoord*2 + szEffectID + szTurn; }
+	string getPacketName()  { return "GCAddEffectToTile"; }
+	string toString() ;
 
 public:
-	EffectID_t getEffectID() const throw() { return m_EffectID; }
+	EffectID_t getEffectID()  { return m_EffectID; }
 	void setEffectID(EffectID_t e) throw() { m_EffectID = e; }
 
-	Turn_t getDuration() const throw() { return m_Duration; }
+	Turn_t getDuration()  { return m_Duration; }
 	void setDuration(Turn_t d) throw() { m_Duration = d; }
 
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t d) throw() { m_ObjectID = d; }
 
-	Coord_t getX() const throw() { return m_X;}
-	Coord_t getY() const throw() { return m_Y;}
+	Coord_t getX()  { return m_X;}
+	Coord_t getY()  { return m_Y;}
 	void setXY(Coord_t x, Coord_t y) throw() { m_X = x; m_Y = y;}
 	
 private:
@@ -63,9 +63,9 @@ class GCAddEffectToTileFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCAddEffectToTile(); }
-	string getPacketName() const throw() { return "GCAddEffectToTile"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_ADD_EFFECT_TO_TILE; }
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szCoord*2 + szEffectID + szTurn; }
+	string getPacketName()  { return "GCAddEffectToTile"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_EFFECT_TO_TILE; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szCoord*2 + szEffectID + szTurn; }
 };
 
 //////////////////////////////////////////////////////////////////////////////

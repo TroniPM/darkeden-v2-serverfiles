@@ -29,7 +29,7 @@ public:
 	virtual QuestMessage	canGiveReward(PlayerCreature* pPC) const throw(Error);
 	virtual QuestMessage	giveReward(PlayerCreature* pPC) const throw(Error);
 
-	virtual string	toString() const throw();
+	virtual string	toString() ;
 
 private:
 	int			m_ThisQuestLevel;

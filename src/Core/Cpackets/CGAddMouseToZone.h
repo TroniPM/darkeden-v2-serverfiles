@@ -24,10 +24,10 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_CG_ADD_MOUSE_TO_ZONE; }
-	PacketSize_t getPacketSize() const throw() { return szObjectID; }
-	string getPacketName() const throw() { return "CGAddMouseToZone"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_CG_ADD_MOUSE_TO_ZONE; }
+	PacketSize_t getPacketSize()  { return szObjectID; }
+	string getPacketName()  { return "CGAddMouseToZone"; }
+	string toString() ;
 	
 public:
 	ObjectID_t getObjectID() throw() { return m_ObjectID; }
@@ -45,9 +45,9 @@ class CGAddMouseToZoneFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new CGAddMouseToZone(); }
-	string getPacketName() const throw() { return "CGAddMouseToZone"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_ADD_MOUSE_TO_ZONE; }
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID; }
+	string getPacketName()  { return "CGAddMouseToZone"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_ADD_MOUSE_TO_ZONE; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID; }
 };
 
 //////////////////////////////////////////////////////////////////////////////

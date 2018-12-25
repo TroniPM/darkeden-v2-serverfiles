@@ -20,8 +20,8 @@ public:
 	~SummonFireElemental() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "SummonFireElemental"; }
-	SkillType_t getSkillType() const throw() { return SKILL_SUMMON_FIRE_ELEMENTAL; }
+    string getSkillHandlerName()  { return "SummonFireElemental"; }
+	SkillType_t getSkillType()  { return SKILL_SUMMON_FIRE_ELEMENTAL; }
 
 	void execute(Ousters* pOusters,  OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 

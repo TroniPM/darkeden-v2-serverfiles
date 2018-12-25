@@ -29,15 +29,15 @@ public:
 	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) throw(Error);
 	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
 	void tinysave(const char* field) const throw (Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	static void initItemIDRegistry(void) throw();
 
 public:
-	virtual ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_QUEST_ITEM; }
-	virtual string getObjectTableName() const throw() { return "QuestItemObject"; }
+	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_QUEST_ITEM; }
+	virtual string getObjectTableName()  { return "QuestItemObject"; }
 
-	virtual ItemType_t getItemType() const throw() { return m_ItemType; }
+	virtual ItemType_t getItemType()  { return m_ItemType; }
 	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() const throw(Error);
@@ -58,10 +58,10 @@ private:
 class QuestItemInfo : public ItemInfo 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_QUEST_ITEM; }
-	virtual string toString() const throw();
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_QUEST_ITEM; }
+	virtual string toString() ;
 
-	Ratio_t getBonusRatio() const throw() { return m_BonusRatio; }
+	Ratio_t getBonusRatio()  { return m_BonusRatio; }
 	void setBonusRatio(Ratio_t BonusRatio) throw() { m_BonusRatio = BonusRatio; }
 
 private :
@@ -76,7 +76,7 @@ private :
 class QuestItemInfoManager : public InfoClassManager 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_QUEST_ITEM; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_QUEST_ITEM; }
 	virtual void load() throw(Error);
 };
 
@@ -89,8 +89,8 @@ extern QuestItemInfoManager* g_pQuestItemInfoManager;
 class QuestItemFactory : public ItemFactory 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_QUEST_ITEM; }
-	virtual string getItemClassName() const throw() { return "QuestItem"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_QUEST_ITEM; }
+	virtual string getItemClassName()  { return "QuestItem"; }
 	
 public:
 	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new QuestItem(ItemType,OptionType); }
@@ -103,8 +103,8 @@ public:
 class QuestItemLoader : public ItemLoader 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_QUEST_ITEM; }
-	virtual string getItemClassName() const throw() { return "QuestItem"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_QUEST_ITEM; }
+	virtual string getItemClassName()  { return "QuestItem"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

@@ -20,8 +20,8 @@ public:
 	~IceHail() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "IceHail"; }
-	SkillType_t getSkillType() const throw() { return SKILL_ICE_HAIL; }
+    string getSkillHandlerName()  { return "IceHail"; }
+	SkillType_t getSkillType()  { return SKILL_ICE_HAIL; }
 
 	void execute(Monster*, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
 

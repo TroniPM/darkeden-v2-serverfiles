@@ -83,7 +83,7 @@ void EffectStoneSkin::unaffect(Creature* pCreature)
 }
 
 string EffectStoneSkin::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

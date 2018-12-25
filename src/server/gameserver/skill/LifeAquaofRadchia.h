@@ -20,8 +20,8 @@ public:
 	~LifeAquaofRadchia() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "LifeAquaofRadchia"; }
-	SkillType_t getSkillType() const throw() { return SKILL_LIFE_AQUA_OF_RADCHIA; }
+    string getSkillHandlerName()  { return "LifeAquaofRadchia"; }
+	SkillType_t getSkillType()  { return SKILL_LIFE_AQUA_OF_RADCHIA; }
 
 	void execute(Ousters* pOusters, ZoneCoord_t X, ZoneCoord_t Y, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Ousters* pOusters, ObjectID_t, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);

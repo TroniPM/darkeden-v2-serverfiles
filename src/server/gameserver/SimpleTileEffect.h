@@ -19,13 +19,13 @@ public:
 	SimpleTileEffect(EffectClass eClass, Zone* pZone, ZoneCoord_t x, ZoneCoord_t y) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return m_EffectClass; }
+    EffectClass getEffectClass()  { return m_EffectClass; }
 
 	void affect() throw(Error){}
 
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	EffectClass	m_EffectClass;

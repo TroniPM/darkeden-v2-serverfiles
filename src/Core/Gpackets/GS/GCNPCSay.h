@@ -21,10 +21,10 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_NPC_SAY; }
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szScriptID + szBYTE; }
-	string getPacketName() const throw() { return "GCNPCSay"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_NPC_SAY; }
+	PacketSize_t getPacketSize()  { return szObjectID + szScriptID + szBYTE; }
+	string getPacketName()  { return "GCNPCSay"; }
+	string toString() ;
 
 	ObjectID_t getObjectID(void) const { return m_ObjectID; }
 	void setObjectID(const ObjectID_t & creatureID) { m_ObjectID = creatureID; }
@@ -52,9 +52,9 @@ class GCNPCSayFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCNPCSay(); }
-	string getPacketName() const throw() { return "GCNPCSay"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_NPC_SAY; }
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szScriptID + szBYTE; }
+	string getPacketName()  { return "GCNPCSay"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_NPC_SAY; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szScriptID + szBYTE; }
 };
 
 //////////////////////////////////////////////////////////////////////////////

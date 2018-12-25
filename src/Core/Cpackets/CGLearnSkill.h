@@ -22,16 +22,16 @@ public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_CG_LEARN_SKILL; }
-	PacketSize_t getPacketSize() const throw() { return szSkillType+szSkillDomainType; }
-	string getPacketName() const throw() { return "CGLearnSkill"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_CG_LEARN_SKILL; }
+	PacketSize_t getPacketSize()  { return szSkillType+szSkillDomainType; }
+	string getPacketName()  { return "CGLearnSkill"; }
+	string toString() ;
 
 public:
-	SkillType_t getSkillType() const throw()  { return m_SkillType; }
+	SkillType_t getSkillType()   { return m_SkillType; }
 	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
 
-	SkillDomainType_t getSkillDomainType() const throw() { return m_DomainType;}
+	SkillDomainType_t getSkillDomainType()  { return m_DomainType;}
 	void setSkillDomainType(SkillDomainType_t DomainType) throw() { m_DomainType = DomainType;}
 
 private:
@@ -47,9 +47,9 @@ class CGLearnSkillFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new CGLearnSkill(); }
-	string getPacketName() const throw() { return "CGLearnSkill"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_LEARN_SKILL; }
-	PacketSize_t getPacketMaxSize() const throw() { return szSkillType+szSkillDomainType; }
+	string getPacketName()  { return "CGLearnSkill"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_LEARN_SKILL; }
+	PacketSize_t getPacketMaxSize()  { return szSkillType+szSkillDomainType; }
 };
 
 

@@ -48,24 +48,24 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_TAKE_OFF; }
+	PacketID_t getPacketID()  { return PACKET_GC_TAKE_OFF; }
 	
 	// get packet's body size
 	// 최적화시, 미리 계산된 정수를 사용한다.
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szSlotID; }
+	PacketSize_t getPacketSize()  { return szObjectID + szSlotID; }
 
 	// get packet's name
-	string getPacketName() const throw() { return "GCTakeOff"; }
+	string getPacketName()  { return "GCTakeOff"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get / set ObjectID 
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
 
 	// get/set SlotID
-	SlotID_t getSlotID() const throw() { return m_SlotID; }
+	SlotID_t getSlotID()  { return m_SlotID; }
 	void setSlotID(SlotID_t SlotID) throw() { m_SlotID = SlotID; }
 
 private :
@@ -104,13 +104,13 @@ public :
 	Packet* createPacket() throw() { return new GCTakeOff(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCTakeOff"; }
+	string getPacketName()  { return "GCTakeOff"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_TAKE_OFF; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_TAKE_OFF; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szSlotID;}
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szSlotID;}
 
 };
 

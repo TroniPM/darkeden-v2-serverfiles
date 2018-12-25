@@ -146,7 +146,7 @@ void EffectTryingPosition::unaffect() throw(Error)
 	__END_CATCH
 }
 
-string EffectTryingPosition::toString() const throw()
+string EffectTryingPosition::toString() 
 {
 	return "EffectTryingPosition" + m_pTower->toString();
 }

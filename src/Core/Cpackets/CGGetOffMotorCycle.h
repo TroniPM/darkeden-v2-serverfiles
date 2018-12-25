@@ -45,20 +45,20 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_GET_OFF_MOTORCYCLE; }
+	PacketID_t getPacketID()  { return PACKET_CG_GET_OFF_MOTORCYCLE; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szObjectID; }
+	PacketSize_t getPacketSize()  { return szObjectID; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGGetOffMotorCycle"; }
+	string getPacketName()  { return "CGGetOffMotorCycle"; }
 
 	// get/set ObjectID
-	ObjectID_t getObjectID() const throw()  { return m_ObjectID; }
+	ObjectID_t getObjectID()   { return m_ObjectID; }
 	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 private :
 
@@ -92,13 +92,13 @@ public:
 	Packet* createPacket() throw() { return new CGGetOffMotorCycle(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGGetOffMotorCycle"; }
+	string getPacketName()  { return "CGGetOffMotorCycle"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_GET_OFF_MOTORCYCLE; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_GET_OFF_MOTORCYCLE; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID; }
 
 };
 

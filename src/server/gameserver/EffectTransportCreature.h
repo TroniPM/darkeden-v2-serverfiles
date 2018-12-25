@@ -23,10 +23,10 @@ public:
 	virtual ~EffectTransportCreature() throw(Error);
 
 public:
-	virtual EffectClass getEffectClass() const throw() { return EFFECT_CLASS_TRANSPORT_CREATURE; }
+	virtual EffectClass getEffectClass()  { return EFFECT_CLASS_TRANSPORT_CREATURE; }
 
 	// OBJECT_PRIORITY_NONE 라는 뜻은, 타일에 들어가서는 안된다는 뜻이다.
-	virtual ObjectPriority getObjectPriority() const throw() { return OBJECT_PRIORITY_NONE; }
+	virtual ObjectPriority getObjectPriority()  { return OBJECT_PRIORITY_NONE; }
 
 	virtual void affect() throw(Error);
 	virtual void affect(Creature* pCreature) throw(Error);
@@ -38,13 +38,13 @@ public:
 	void save(const string & ownerID) throw(Error) {}
 	void destroy(const string & ownerID) throw(Error) {}
 
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 	void setZoneName(const string& zoneName) throw() { m_ZoneName = zoneName; }
 
 	void setMessageTick(Turn_t tick) throw() { m_MessageTick = tick; }
-	Turn_t getMessageTick() const throw() { return m_MessageTick; }
+	Turn_t getMessageTick()  { return m_MessageTick; }
 	
 private:
 	ZoneID_t 	m_ZoneID;

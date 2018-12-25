@@ -38,19 +38,19 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GS_REQUEST_GUILD_INFO; }
+	PacketID_t getPacketID()  { return PACKET_GS_REQUEST_GUILD_INFO; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		return 0;
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "GSRequestGuildInfo"; }
+	string getPacketName()  { return "GSRequestGuildInfo"; }
 	
 	// get packet's debug string
-	string toString() const throw() { return "GSRequestGuildInfo"; }
+	string toString()  { return "GSRequestGuildInfo"; }
 };
 
 
@@ -70,15 +70,15 @@ public:
 	Packet* createPacket() throw() { return new GSRequestGuildInfo(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GSRequestGuildInfo"; }
+	string getPacketName()  { return "GSRequestGuildInfo"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GS_REQUEST_GUILD_INFO; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GS_REQUEST_GUILD_INFO; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static LGIncomingConnectionPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		return 0;
 	}

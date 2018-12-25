@@ -99,7 +99,7 @@ void MonsterCorpse::save (const string & ownerID , Storage stroage , DWORD stora
 // get debug string
 //////////////////////////////////////////////////////////////////////////////
 string MonsterCorpse::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

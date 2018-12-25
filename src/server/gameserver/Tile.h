@@ -64,11 +64,11 @@ public:
 	Creature* getCreature(ObjectID_t creatureID) throw(NoSuchElementException, Error);
 	Creature* getCreature(Creature::MoveMode mode) throw(NoSuchElementException, Error);
 
-	bool hasWalkingCreature() const throw() { return FLAG_ISSET(m_wFlags, TILE_WALKING_CREATURE) > 0; }
-	bool hasFlyingCreature() const throw() { return FLAG_ISSET(m_wFlags, TILE_FLYING_CREATURE) > 0; }
-	bool hasBurrowingCreature() const throw() { return FLAG_ISSET(m_wFlags, TILE_BURROWING_CREATURE) > 0; }
-	bool hasCreature(Creature::MoveMode mode) const throw() { return FLAG_ISSET(m_wFlags, mode + TILE_WALKING_CREATURE) > 0; }
-	bool hasCreature() const throw() { 
+	bool hasWalkingCreature()  { return FLAG_ISSET(m_wFlags, TILE_WALKING_CREATURE) > 0; }
+	bool hasFlyingCreature()  { return FLAG_ISSET(m_wFlags, TILE_FLYING_CREATURE) > 0; }
+	bool hasBurrowingCreature()  { return FLAG_ISSET(m_wFlags, TILE_BURROWING_CREATURE) > 0; }
+	bool hasCreature(Creature::MoveMode mode)  { return FLAG_ISSET(m_wFlags, mode + TILE_WALKING_CREATURE) > 0; }
+	bool hasCreature()  { 
 		return FLAG_ISSET(m_wFlags, TILE_WALKING_CREATURE) ||
 			   FLAG_ISSET(m_wFlags, TILE_BURROWING_CREATURE) ||
 			   FLAG_ISSET(m_wFlags, TILE_FLYING_CREATURE) ; 
@@ -78,49 +78,49 @@ public:
 	void addItem(Item* pItem) throw(DuplicatedException, Error);
 	void deleteItem() throw(NoSuchElementException, Error);
 	Item* getItem() throw(NoSuchElementException, Error);
-	bool hasItem() const throw() { return FLAG_ISSET(m_wFlags, TILE_ITEM) > 0; }
+	bool hasItem()  { return FLAG_ISSET(m_wFlags, TILE_ITEM) > 0; }
 	
 public:
 	void addObstacle(Obstacle* pObstacle) throw(DuplicatedException, Error);
 	void deleteObstacle() throw(NoSuchElementException, Error);
 	Obstacle* getObstacle() throw(NoSuchElementException, Error);
-	bool hasObstacle() const throw() { return FLAG_ISSET(m_wFlags, TILE_OBSTACLE) > 0; }
+	bool hasObstacle()  { return FLAG_ISSET(m_wFlags, TILE_OBSTACLE) > 0; }
 
 public:
 	void addEffect(Effect* pEffect) throw(DuplicatedException, Error);
 	bool canAddEffect() throw(Error);
 	void deleteEffect(ObjectID_t effectID) throw(NoSuchElementException, Error);
 	Effect* getEffect(ObjectID_t effectID) throw(NoSuchElementException, Error);
-	bool hasEffect() const throw() { return FLAG_ISSET(m_wFlags, TILE_EFFECT) > 0; }
+	bool hasEffect()  { return FLAG_ISSET(m_wFlags, TILE_EFFECT) > 0; }
 	Effect* getEffect(Effect::EffectClass effectClass) throw(Error);
 
 public:
 	void addBuilding(BuildingID_t buildingID) throw(Error);
 	void deleteBuilding() throw(Error);
 	BuildingID_t getBuilding() const throw(Error);
-	bool hasBuilding() const throw() { return FLAG_ISSET(m_wFlags, TILE_BUILDING) > 0; }
+	bool hasBuilding()  { return FLAG_ISSET(m_wFlags, TILE_BUILDING) > 0; }
 
 public:
 	void addPortal(Portal* pPortal) throw(Error);
 	void deletePortal() throw(Error);
 	Portal* getPortal() const throw(Error);
-	bool hasPortal() const throw() { return FLAG_ISSET(m_wFlags, TILE_PORTAL) > 0; }
+	bool hasPortal()  { return FLAG_ISSET(m_wFlags, TILE_PORTAL) > 0; }
 
 public:
 	void addTerrain(TerrainID_t terrainID) throw(Error);
 	void deleteTerrain() throw(Error);
 	TerrainID_t getTerrain() const throw(Error);
-	bool isTerrain() const throw() { return FLAG_ISSET(m_wFlags, TILE_TERRAIN) > 0; }
+	bool isTerrain()  { return FLAG_ISSET(m_wFlags, TILE_TERRAIN) > 0; }
 
 public:
-	bool isGroundBlocked() const throw() { return FLAG_ISSET(m_wFlags, TILE_GROUND_BLOCKED) > 0; }
-	bool isAirBlocked() const throw() { return FLAG_ISSET(m_wFlags, TILE_AIR_BLOCKED) > 0; }
-	bool isUndergroundBlocked() const throw() { return FLAG_ISSET(m_wFlags, TILE_UNDERGROUND_BLOCKED) > 0; }
-	bool isBlocked(Creature::MoveMode mode) const throw() { return FLAG_ISSET(m_wFlags, TILE_GROUND_BLOCKED + mode) > 0; }
+	bool isGroundBlocked()  { return FLAG_ISSET(m_wFlags, TILE_GROUND_BLOCKED) > 0; }
+	bool isAirBlocked()  { return FLAG_ISSET(m_wFlags, TILE_AIR_BLOCKED) > 0; }
+	bool isUndergroundBlocked()  { return FLAG_ISSET(m_wFlags, TILE_UNDERGROUND_BLOCKED) > 0; }
+	bool isBlocked(Creature::MoveMode mode)  { return FLAG_ISSET(m_wFlags, TILE_GROUND_BLOCKED + mode) > 0; }
 	void setBlocked(Creature::MoveMode mode) throw() { FLAG_SET(m_wFlags, TILE_GROUND_BLOCKED + mode); }
 	void clearBlocked(Creature::MoveMode mode) throw() { FLAG_CLEAR(m_wFlags, TILE_GROUND_BLOCKED + mode); }
 
-	bool isFixedGroundBlocked() const throw() { return isGroundBlocked() && !hasWalkingCreature(); }
+	bool isFixedGroundBlocked()  { return isGroundBlocked() && !hasWalkingCreature(); }
 
 public:
 	void addObject(Object* pObject) throw(DuplicatedException);
@@ -130,7 +130,7 @@ public:
 	Object* getObject(ObjectPriority tilePriority) const throw(NoSuchElementException);
 
 public:
-	WORD getOption() const throw() { return m_wOption; }
+	WORD getOption()  { return m_wOption; }
 	void setOption(WORD option) throw() { m_wOption = option; }
 
 public:
@@ -138,10 +138,10 @@ public:
 	void setSector(Sector* pSector) { m_pSector = pSector; }
 
 public:
-	const slist<Object*> & getObjectList() const throw() { return m_Objects; }
+	const slist<Object*> & getObjectList()  { return m_Objects; }
 	slist<Object*> & getObjectList() throw() { return m_Objects; }
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	WORD           m_wFlags;  // 타일 속성 플래그

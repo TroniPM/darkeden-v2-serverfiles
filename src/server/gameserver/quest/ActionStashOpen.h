@@ -19,10 +19,10 @@
 class ActionStashOpen : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_STASH_OPEN; }
+	virtual ActionType_t getActionType()  { return ACTION_STASH_OPEN; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 };
 
 
@@ -33,9 +33,9 @@ public:
 class ActionStashOpenFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_STASH_OPEN; }
-	virtual string getActionName() const throw() { return "StashOpen"; }
-	virtual Action* createAction() const throw() { return new ActionStashOpen(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_STASH_OPEN; }
+	virtual string getActionName()  { return "StashOpen"; }
+	virtual Action* createAction()  { return new ActionStashOpen(); }
 };
 
 #endif

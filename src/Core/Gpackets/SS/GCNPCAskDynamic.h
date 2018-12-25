@@ -25,8 +25,8 @@ public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_NPC_ASK_DYNAMIC; }
-	PacketSize_t getPacketSize() const throw()
+	PacketID_t getPacketID()  { return PACKET_GC_NPC_ASK_DYNAMIC; }
+	PacketSize_t getPacketSize() 
 	{ 
 		PacketSize_t size = 0;
 
@@ -40,20 +40,20 @@ public:
 
 		return size;
 	}
-	string getPacketName() const throw() { return "GCNPCAskDynamic"; }
-	string toString() const throw();
+	string getPacketName()  { return "GCNPCAskDynamic"; }
+	string toString() ;
 
 public:
-	ObjectID_t getObjectID(void) const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID(void)  { return m_ObjectID; }
 	void setObjectID(ObjectID_t creatureID) throw() { m_ObjectID = creatureID; }
 
-	ScriptID_t getScriptID(void) const throw() { return m_ScriptID; }
+	ScriptID_t getScriptID(void)  { return m_ScriptID; }
 	void setScriptID(ScriptID_t id) throw() { m_ScriptID = id; }
 
-	string getSubject(void) const throw() { return m_Subject; }
+	string getSubject(void)  { return m_Subject; }
 	void setSubject(string subject) throw() { m_Subject = subject; }
 
-	BYTE getContentsCount(void) const throw() { return m_ContentsCount; }
+	BYTE getContentsCount(void)  { return m_ContentsCount; }
 
 	void addContent(string content) throw();
 	string popContent(void) throw();
@@ -76,9 +76,9 @@ class GCNPCAskDynamicFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCNPCAskDynamic(); }
-	string getPacketName() const throw() { return "GCNPCAskDynamic"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_NPC_ASK_DYNAMIC; }
-	PacketSize_t getPacketMaxSize() const throw() 
+	string getPacketName()  { return "GCNPCAskDynamic"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_NPC_ASK_DYNAMIC; }
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		PacketSize_t size = 0;
 

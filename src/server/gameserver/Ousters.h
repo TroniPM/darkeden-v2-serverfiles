@@ -124,8 +124,8 @@ public:
 // 하위 클래스(Creature) 상속 함수
 ////////////////////////////////////////////////////
 public:
-	virtual CreatureClass getCreatureClass() const throw() { return CREATURE_CLASS_OUSTERS; }
-	virtual string getCreatureClassString() const throw() { return "CREATURE_CLASS_OUSTERS"; }
+	virtual CreatureClass getCreatureClass()  { return CREATURE_CLASS_OUSTERS; }
+	virtual string getCreatureClassString()  { return "CREATURE_CLASS_OUSTERS"; }
 
 	virtual void registerObject() throw(Error);
 	virtual void registerInitObject() throw(Error);
@@ -142,7 +142,7 @@ public:
 
 	virtual void act(const Timeval& currentTime) throw(Error) {}
 
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	virtual Race_t getRace() const { return RACE_OUSTERS; }
 	virtual GuildID_t getCommonGuildID() const { return OustersCommon; }
@@ -158,24 +158,24 @@ public:
 // 상태 관련 함수(Dead or Alive!)
 ////////////////////////////////////////////////////
 public:
-	bool isAlive() const throw() { return m_HP[ATTR_CURRENT] != 0; }
-	bool isDead() const throw() { return m_HP[ATTR_CURRENT] == 0; }
+	bool isAlive()  { return m_HP[ATTR_CURRENT] != 0; }
+	bool isDead()  { return m_HP[ATTR_CURRENT] == 0; }
 
 
 ////////////////////////////////////////////////////
 // 겉모습 관련 함수(이름, 권한, 성별, 머리, 피부)
 ////////////////////////////////////////////////////
 public:
-	const string& getName() const throw() { return m_Name; }
+	const string& getName()  { return m_Name; }
 	void setName(const string & name) throw() { m_Name = name; }
 
-	BYTE getCompetence() const throw() { return m_Competence; }
+	BYTE getCompetence()  { return m_Competence; }
 	void setCompetence(BYTE Competence) { m_Competence = Competence; }
 
-	BYTE getCompetenceShape() const throw() { return m_CompetenceShape; }
+	BYTE getCompetenceShape()  { return m_CompetenceShape; }
 	void setCompetenceShape(BYTE CompetenceShape) { m_CompetenceShape = CompetenceShape; }
 
-	Sex getSex() const throw() { return m_Sex; }
+	Sex getSex()  { return m_Sex; }
 	void setSex(Sex sex) throw() { m_Sex = sex; m_OustersInfo.setSex(sex); }
 	void setSex(const string & sex) throw(InvalidProtocolException) 
 	{
@@ -186,7 +186,7 @@ public:
 		else throw InvalidProtocolException("invalid sex");
 	}
 
-	Color_t getHairColor() const throw() { return m_HairColor; }
+	Color_t getHairColor()  { return m_HairColor; }
 	void setHairColor(Color_t hairColor) throw() { m_HairColor = hairColor; }
 
 	virtual BYTE getWingSylphType() const throw (){ return m_WingSylphType; }
@@ -201,7 +201,7 @@ public:
 	virtual Color_t getWingEffectColor() const throw () { return m_WingEffectColor; }
 	virtual void	setWingEffectColor(Color_t batColor) throw () { m_WingEffectColor = batColor; }
 
-	virtual Color_t getShopColor() const throw() { return m_ShopColor; }
+	virtual Color_t getShopColor()  { return m_ShopColor; }
 	virtual void setShopColor(Color_t ShopColor) throw() { m_ShopColor = ShopColor; }
 
 ////////////////////////////////////////////////////
@@ -209,28 +209,28 @@ public:
 ////////////////////////////////////////////////////
 public:
 
-	Alignment_t getAlignment() const throw() { return m_Alignment; }
+	Alignment_t getAlignment()  { return m_Alignment; }
 	void setAlignment(Alignment_t Alignment) throw() { m_Alignment = Alignment; }
 	void saveAlignment(Alignment_t alignment) throw();
 
-	Attr_t getSTR(AttrType attrType = ATTR_CURRENT) const throw() { return m_STR[attrType]; }
+	Attr_t getSTR(AttrType attrType = ATTR_CURRENT)  { return m_STR[attrType]; }
 	void setSTR(Attr_t attr, AttrType attrType = ATTR_CURRENT) throw() { m_STR[attrType] = attr; }
 	
-	Attr_t getDEX(AttrType attrType = ATTR_CURRENT) const throw() { return m_DEX[attrType]; }
+	Attr_t getDEX(AttrType attrType = ATTR_CURRENT)  { return m_DEX[attrType]; }
 	void setDEX(Attr_t attr, AttrType attrType = ATTR_CURRENT) throw() { m_DEX[attrType] = attr; }
 
-	Attr_t getINT(AttrType attrType = ATTR_CURRENT) const throw() { return m_INT[attrType]; }
+	Attr_t getINT(AttrType attrType = ATTR_CURRENT)  { return m_INT[attrType]; }
 	void setINT(Attr_t attr, AttrType attrType = ATTR_CURRENT) throw() { m_INT[attrType] = attr; }
 
 ////////////////////////////////////////////////////
 // 능력치 관련 함수(HP)
 ////////////////////////////////////////////////////
 public:
-	HP_t getHP(AttrType attrType = ATTR_CURRENT) const throw() { return m_HP[attrType]; }
+	HP_t getHP(AttrType attrType = ATTR_CURRENT)  { return m_HP[attrType]; }
 	void setHP(HP_t hp, AttrType attrType = ATTR_CURRENT) throw() { m_HP[attrType] = hp; }
 	void setHP(HP_t current, HP_t max) throw() { m_HP[ATTR_CURRENT] = current; m_HP[ATTR_MAX] = max; }
 
-	MP_t getMP(AttrType attrType = ATTR_CURRENT) const throw() { return m_MP[attrType]; }
+	MP_t getMP(AttrType attrType = ATTR_CURRENT)  { return m_MP[attrType]; }
 	void setMP(MP_t hp, AttrType attrType = ATTR_CURRENT) throw() { m_MP[attrType] = hp; }
 	void setMP(MP_t current, MP_t max) throw() { m_MP[ATTR_CURRENT] = current; m_MP[ATTR_MAX] = max; }
 
@@ -238,48 +238,48 @@ public:
 // 능력치 관련 함수(Damage, Protect, Defense, ToHit)
 ////////////////////////////////////////////////////
 public:
-	Damage_t     getDamage(AttrType attrType = ATTR_CURRENT) const throw() { return m_Damage[attrType]; }
-	Protection_t getProtection(void) const throw() { return m_Protection[ATTR_CURRENT]; }
-	Defense_t    getDefense(void) const throw() { return m_Defense[ATTR_CURRENT]; }
-	ToHit_t      getToHit(void) const throw() { return m_ToHit[ATTR_CURRENT]; }
-	Speed_t      getAttackSpeed(void) const throw() { return m_AttackSpeed[ATTR_CURRENT]; }
+	Damage_t     getDamage(AttrType attrType = ATTR_CURRENT)  { return m_Damage[attrType]; }
+	Protection_t getProtection(void)  { return m_Protection[ATTR_CURRENT]; }
+	Defense_t    getDefense(void)  { return m_Defense[ATTR_CURRENT]; }
+	ToHit_t      getToHit(void)  { return m_ToHit[ATTR_CURRENT]; }
+	Speed_t      getAttackSpeed(void)  { return m_AttackSpeed[ATTR_CURRENT]; }
 	
 ////////////////////////////////////////////////////
 // 경험치 관련 함수
 ////////////////////////////////////////////////////
 public:
-//	Exp_t getExp() const throw() { return m_Exp; }
+//	Exp_t getExp()  { return m_Exp; }
 //	void  setExp(Exp_t exp) throw() { m_Exp = exp; }
 
-	Exp_t getGoalExp() const throw() { return m_GoalExp; }
+	Exp_t getGoalExp()  { return m_GoalExp; }
 	void  setGoalExp(Exp_t GoalExp) throw() { m_GoalExp = GoalExp; }
 
-//	Exp_t getExpOffset() const throw() { return m_ExpOffset; }
+//	Exp_t getExpOffset()  { return m_ExpOffset; }
 //	void  setExpOffset(Exp_t expOffset) throw() { m_ExpOffset = expOffset; }
 
 //	void setExp(Exp_t exp, Exp_t expOffset) throw() { m_Exp = exp; m_ExpOffset = expOffset; }
 
-	Level_t getLevel() const throw() { return m_Level; }
+	Level_t getLevel()  { return m_Level; }
 	void    setLevel(Level_t level) throw() { m_Level = level; }
 
 	int		getQuestLevel() const { return getLevel(); }
 
 	// 계급. by sigi. 2002.8.30
-/*	Rank_t  getRank() const throw() { return m_Rank; }
+/*	Rank_t  getRank()  { return m_Rank; }
 	void    setRank(Rank_t rank) throw() { m_Rank = rank; }
-	RankExp_t   getRankExp() const throw() { return m_RankExp; }
+	RankExp_t   getRankExp()  { return m_RankExp; }
 	void    setRankExp(RankExp_t exp) throw() { m_RankExp = exp; }
-	RankExp_t   getRankGoalExp() const throw() { return m_RankGoalExp; }
+	RankExp_t   getRankGoalExp()  { return m_RankGoalExp; }
 	void    setRankGoalExp(RankExp_t RankGoalExp) throw() { m_RankGoalExp = RankGoalExp; }*/
 
 
-	Bonus_t getBonus() const throw() { return m_Bonus; }
+	Bonus_t getBonus()  { return m_Bonus; }
 	void    setBonus(Bonus_t bonus) throw() { m_Bonus = bonus; }
 
-	SkillBonus_t	getSkillBonus() const throw() { return m_SkillBonus; }
+	SkillBonus_t	getSkillBonus()  { return m_SkillBonus; }
 	void			setSkillBonus( SkillBonus_t skillBonus ) throw() { m_SkillBonus = skillBonus; }
 
-	SkillBonus_t	getSumOfUsedSkillBonus() const throw();
+	SkillBonus_t	getSumOfUsedSkillBonus() ;
 
 ////////////////////////////////////////////////////
 // 스킬 관련 함수
@@ -290,8 +290,8 @@ public:
 	void removeSkill(SkillType_t SkillType) throw();
 	void removeCastleSkill(SkillType_t SkillType) throw();
 	void removeAllCastleSkill() throw();
-	OustersSkillSlot* hasSkill(SkillType_t SkillType) const throw() { return getSkill(SkillType); }
-	OustersSkillSlot* getSkill(SkillType_t SkillType) const throw();
+	OustersSkillSlot* hasSkill(SkillType_t SkillType)  { return getSkill(SkillType); }
+	OustersSkillSlot* getSkill(SkillType_t SkillType) ;
 
 
 ////////////////////////////////////////////////////
@@ -313,10 +313,10 @@ public:
 
 	void destroyGears() throw();
 
-	bool isRealWearing(WearPart Part) const throw();
-	bool isRealWearing(Item* pItem) const throw();
+	bool isRealWearing(WearPart Part) ;
+	bool isRealWearing(Item* pItem) ;
 	bool isRealWearingEx(WearPart Part) const;
-	DWORD sendRealWearingInfo(void) const throw();
+	DWORD sendRealWearingInfo(void) ;
 
 	void  getShapeInfo (DWORD& flag, Color_t color[PCOustersInfo::OUSTERS_COLOR_MAX]) const;
 
@@ -326,8 +326,8 @@ public:
 public:
 	void initAllStat(int numPartyMember=-1) throw();
 	void initCastleSkill() throw();
-	void sendModifyInfo(const OUSTERS_RECORD& previous) const throw();
-	void addModifyInfo(const OUSTERS_RECORD& previous, ModifyInfo& pkt) const throw();
+	void sendModifyInfo(const OUSTERS_RECORD& previous) ;
+	void addModifyInfo(const OUSTERS_RECORD& previous, ModifyInfo& pkt) ;
 	void initAllStatAndSend();
 	
 private:
@@ -367,11 +367,11 @@ public:
 public:
 
 	PCOustersInfo2* getOustersInfo2() throw();
-	PCOustersInfo3  getOustersInfo3() const throw();
-	InventoryInfo*  getInventoryInfo() const throw();
-	InventoryInfo*  getInventoryInfo2() const throw();
-	GearInfo*       getGearInfo() const throw();
-	ExtraInfo*      getExtraInfo() const throw();
+	PCOustersInfo3  getOustersInfo3() ;
+	InventoryInfo*  getInventoryInfo() ;
+	InventoryInfo*  getInventoryInfo2() ;
+	GearInfo*       getGearInfo() ;
+	ExtraInfo*      getExtraInfo() ;
 	void sendOustersSkillInfo() throw();
 
 
@@ -380,7 +380,7 @@ public:
 ////////////////////////////////////////////////////
 public:
 
-	virtual Gold_t getGold() const throw() { return m_Gold; }
+	virtual Gold_t getGold()  { return m_Gold; }
 	virtual void setGold(Gold_t gold) throw();
 	virtual void setGoldEx(Gold_t gold) throw();
 	virtual void   increaseGoldEx(Gold_t gold) throw();
@@ -391,12 +391,12 @@ public:
 
 	void heartbeat(const Timeval& currentTime) throw();
 
-	void getOustersRecord(OUSTERS_RECORD& record) const throw();
+	void getOustersRecord(OUSTERS_RECORD& record) ;
 
-	virtual Fame_t getFame() const throw() { return m_Fame; }
+	virtual Fame_t getFame()  { return m_Fame; }
 	virtual void   setFame(Fame_t fame) throw() { m_Fame = fame; }
 
-	virtual Fame_t getKillPoint() const throw() { return m_KillPoint; }
+	virtual Fame_t getKillPoint()  { return m_KillPoint; }
 	virtual void   setKillPoint(Fame_t KillPoint) throw() { m_KillPoint = KillPoint; }
 
 	virtual Attr_t getAttackBloodBurstPoint() const { return m_AttackBloodBurstPoint; }
@@ -408,11 +408,11 @@ public:
 	virtual Attr_t getPartyBloodBurstPoint() const { return m_PartyBloodBurstPoint; }
 	virtual void setPartyBloodBurstPoin( Attr_t point ) { m_PartyBloodBurstPoint = point; }
 
-	virtual ZoneID_t getResurrectZoneID(void) const throw() { return m_ResurrectZoneID; }
+	virtual ZoneID_t getResurrectZoneID(void)  { return m_ResurrectZoneID; }
 	virtual void setResurrectZoneID(ZoneID_t id) throw() { m_ResurrectZoneID = id; }
 	virtual void setResurrectZoneIDEx(ZoneID_t id) throw();
 
-	Silver_t getSilverDamage() const throw() { return m_SilverDamage; }
+	Silver_t getSilverDamage()  { return m_SilverDamage; }
 	void setSilverDamage(Silver_t damage) throw() { m_SilverDamage = damage; }
 	void saveSilverDamage(Silver_t damage) throw();
 

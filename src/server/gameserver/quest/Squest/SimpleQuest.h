@@ -58,7 +58,7 @@ public :
 	virtual ~SimpleQuest() throw (Error);
 
 	void 				setDeadline (Turn_t delay) throw ();
-	Duration_t		 	getRemainDuration() const throw();
+	Duration_t		 	getRemainDuration() ;
 
 	//virtual void		create() throw (Error) = 0;
 	virtual void        save() throw (Error) = 0;

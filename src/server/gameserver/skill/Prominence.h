@@ -20,8 +20,8 @@ public:
 	~Prominence() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Prominence"; }
-	SkillType_t getSkillType() const throw() { return SKILL_PROMINENCE; }
+    string getSkillHandlerName()  { return "Prominence"; }
+	SkillType_t getSkillType()  { return SKILL_PROMINENCE; }
 
 	void execute(Ousters* pOusters, ZoneCoord_t X, ZoneCoord_t Y, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Ousters* pOusters, ObjectID_t, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);

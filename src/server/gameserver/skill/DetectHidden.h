@@ -20,8 +20,8 @@ public:
 	~DetectHidden() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "DetectHidden"; }
-	SkillType_t getSkillType() const throw() { return SKILL_DETECT_HIDDEN; }
+    string getSkillHandlerName()  { return "DetectHidden"; }
+	SkillType_t getSkillType()  { return SKILL_DETECT_HIDDEN; }
 
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

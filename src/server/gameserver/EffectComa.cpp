@@ -165,7 +165,7 @@ bool EffectComa::canResurrect(void)
 }
 
 string EffectComa::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

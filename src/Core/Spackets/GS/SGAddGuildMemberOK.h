@@ -38,10 +38,10 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_SG_ADD_GUILD_MEMBER_OK; }
+	PacketID_t getPacketID()  { return PACKET_SG_ADD_GUILD_MEMBER_OK; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		return szGuildID +				// guild ID
 			   szBYTE +					// name length
@@ -51,27 +51,27 @@ public:
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "SGAddGuildMemberOK"; }
+	string getPacketName()  { return "SGAddGuildMemberOK"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public:
 
 	// get/set guildID
-	GuildID_t getGuildID() const throw() { return m_GuildID; }
+	GuildID_t getGuildID()  { return m_GuildID; }
 	void setGuildID( GuildID_t guildID ) throw() { m_GuildID = guildID; }
 
 	// get/set name
-	const string& getName() const throw() { return m_Name; }
+	const string& getName()  { return m_Name; }
 	void setName( const string& name ) throw() { m_Name = name; }
 
 	// get/set Guild Member Rank
-	GuildMemberRank_t getGuildMemberRank() const throw() { return m_GuildMemberRank; }
+	GuildMemberRank_t getGuildMemberRank()  { return m_GuildMemberRank; }
 	void setGuildMemberRank( GuildMemberRank_t GuildMemberRank ) throw() { m_GuildMemberRank = GuildMemberRank; }
 
 	// get/set server group ID
-	ServerGroupID_t getServerGroupID() const throw() { return m_ServerGroupID; }
+	ServerGroupID_t getServerGroupID()  { return m_ServerGroupID; }
 	void setServerGroupID( ServerGroupID_t serverGroupID ) throw() { m_ServerGroupID = serverGroupID; }
 
 private :
@@ -107,15 +107,15 @@ public:
 	Packet* createPacket() throw() { return new SGAddGuildMemberOK(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "SGAddGuildMemberOK"; }
+	string getPacketName()  { return "SGAddGuildMemberOK"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_SG_ADD_GUILD_MEMBER_OK; }
+	PacketID_t getPacketID()  { return Packet::PACKET_SG_ADD_GUILD_MEMBER_OK; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static LGIncomingConnectionPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		return szGuildID +				// guild ID
 			   szBYTE +					// name length

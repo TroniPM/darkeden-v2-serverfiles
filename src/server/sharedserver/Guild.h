@@ -181,32 +181,32 @@ public: // DB methods
 	void leave() throw();
 	
 	void saveIntro( const string& intro ) throw();
-	string getIntro() const throw();
+	string getIntro() ;
 
 	
 public: // identity methods
-	GuildID_t getGuildID() const throw() { return m_GuildID; }
+	GuildID_t getGuildID()  { return m_GuildID; }
 	void setGuildID(GuildID_t guildID) throw() { m_GuildID = guildID; }
 
-	string getName() const throw() { return m_Name; }
+	string getName()  { return m_Name; }
 	void setName(const string& name) throw() { m_Name = name; }
 
-	GuildMemberRank_t getRank() const throw() { return m_Rank; }
+	GuildMemberRank_t getRank()  { return m_Rank; }
 	void setRank(GuildMemberRank_t rank) throw();		// Guild class 에서 처리한다.
 
-	bool getLogOn() const throw() { return m_bLogOn; }
+	bool getLogOn()  { return m_bLogOn; }
 	void setLogOn( bool logOn ) throw() { m_bLogOn = logOn; }
 
-	ServerID_t	getServerID()	const throw() { return m_ServerID; }
+	ServerID_t	getServerID()	 { return m_ServerID; }
 	void		setServerID( ServerID_t ServerID ) throw() { m_ServerID = ServerID; }
 	
-	string getRequestDateTime() const throw();
+	string getRequestDateTime() ;
 	void setRequestDateTime( const VSDateTime& vsdatetime ) throw() { m_RequestDateTime = vsdatetime; }
 	void setRequestDateTime( const string& rdatetime ) throw();
-	bool isRequestDateTimeOut( const VSDateTime& currentDateTime ) const throw();
+	bool isRequestDateTimeOut( const VSDateTime& currentDateTime ) ;
 
 public: // debug
-	string toString() const throw();
+	string toString() ;
 
 
 ///// operator overloadgin /////
@@ -301,46 +301,46 @@ public: // DB methods
 
 	
 public: // identity methods
-	GuildID_t getID() const throw() { return m_ID; }
+	GuildID_t getID()  { return m_ID; }
 	void setID(GuildID_t id) throw() { m_ID = id; }
 
-	string getName() const throw() { return m_Name; }
+	string getName()  { return m_Name; }
 	void setName(const string& name) throw() { m_Name = name; }
 
-	GuildType_t getType() const throw() { return m_Type; }
+	GuildType_t getType()  { return m_Type; }
 	void setType(GuildType_t type) throw() { m_Type = type; }
 
-	GuildRace_t getRace() const throw() { return m_Race; }
+	GuildRace_t getRace()  { return m_Race; }
 	void setRace( GuildRace_t race ) throw() { m_Race = race; }
 
-	GuildState_t getState() const throw() { return m_State; }
+	GuildState_t getState()  { return m_State; }
 	void setState(GuildState_t state) throw() { m_State = state; }
 
-	ServerGroupID_t getServerGroupID() const throw() { return m_ServerGroupID; }
+	ServerGroupID_t getServerGroupID()  { return m_ServerGroupID; }
 	void setServerGroupID( ServerGroupID_t serverGroupID ) throw() { m_ServerGroupID = serverGroupID; }
 
-	ZoneID_t getZoneID() const throw() { return m_ZoneID; }
+	ZoneID_t getZoneID()  { return m_ZoneID; }
 	void setZoneID( ZoneID_t zoneID ) throw() { m_ZoneID = zoneID; }
 
-	string getMaster() const throw() { return m_Master; }
+	string getMaster()  { return m_Master; }
 	void setMaster(const string& master) throw() { m_Master = master; }
 
-	string getDate() const throw() { return m_Date; }
+	string getDate()  { return m_Date; }
 	void setDate( const string& Date ) throw() { m_Date = Date; }
 
-	string getIntro() const throw() { return m_Intro; }
+	string getIntro()  { return m_Intro; }
 	void setIntro( const string& intro ) throw() { m_Intro = intro; }
 
 #ifdef __SHARED_SERVER__
 	void saveIntro( const string& intro ) throw();
-	void tinysave( const char* field ) const throw();
-	void saveCount() const throw();
+	void tinysave( const char* field ) ;
+	void saveCount() ;
 #endif
 
 
 ///// GuildMember get/add/delete/modify /////
-	GuildMember* getMember( const string& name ) const throw();
-	GuildMember* getMember_NOLOCKED( const string& name ) const throw();
+	GuildMember* getMember( const string& name ) ;
+	GuildMember* getMember_NOLOCKED( const string& name ) ;
 	void addMember( GuildMember* pMember ) throw( DuplicatedException, Error );
 	void deleteMember( const string& name ) throw();
 	void modifyMember( GuildMember& Member ) throw();
@@ -349,8 +349,8 @@ public: // identity methods
 
 	HashMapGuildMember& getMembers() throw() { return m_Members; }
 
-	int getActiveMemberCount() const throw() { return m_ActiveMemberCount; }
-	int getWaitMemberCount() const throw() { return m_WaitMemberCount; }
+	int getActiveMemberCount()  { return m_ActiveMemberCount; }
+	int getWaitMemberCount()  { return m_WaitMemberCount; }
 
 #ifdef __GAME_SERVER__
 	void addCurrentMember( const string& name ) throw( DuplicatedException, Error );
@@ -383,7 +383,7 @@ public:
 	void expireTimeOutWaitMember( VSDateTime currentDateTime, list<string>& mList ) throw(Error);
 
 public: // debug
-	string toString() const throw();
+	string toString() ;
 
 	static string correctString( const string& str ) throw();
 

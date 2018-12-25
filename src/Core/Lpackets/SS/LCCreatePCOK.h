@@ -35,18 +35,18 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_LC_CREATE_PC_OK; }
+	PacketID_t getPacketID()  { return PACKET_LC_CREATE_PC_OK; }
 	
 	// get packet body size
 	// *OPTIMIZATION HINT*
 	// const static LCCreatePCOKPacketSize 를 정의, 리턴하라.
-	PacketSize_t getPacketSize() const throw() { return 0; }
+	PacketSize_t getPacketSize()  { return 0; }
 	
 	// get packet's name
-	string getPacketName() const throw() { return "LCCreatePCOK"; }
+	string getPacketName()  { return "LCCreatePCOK"; }
 	
 	// get packet's debug string
-	string toString() const throw() { return "LCCreatePCOK"; }
+	string toString()  { return "LCCreatePCOK"; }
 	
 };
 
@@ -67,13 +67,13 @@ public:
 	Packet* createPacket() throw() { return new LCCreatePCOK(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "LCCreatePCOK"; }
+	string getPacketName()  { return "LCCreatePCOK"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_LC_CREATE_PC_OK; }
+	PacketID_t getPacketID()  { return Packet::PACKET_LC_CREATE_PC_OK; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw() { return 0; }
+	PacketSize_t getPacketMaxSize()  { return 0; }
 	
 };
 

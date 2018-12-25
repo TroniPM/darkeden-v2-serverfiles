@@ -20,8 +20,8 @@ public:
 	~Doom() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Doom"; }
-	SkillType_t getSkillType() const throw() { return SKILL_DOOM; }
+    string getSkillHandlerName()  { return "Doom"; }
+	SkillType_t getSkillType()  { return SKILL_DOOM; }
 
 	void execute(Vampire* pVampire, ObjectID_t ObjectID, VampireSkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Monster* pMonster, Creature* pEnemy) throw(Error);

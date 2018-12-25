@@ -21,22 +21,22 @@ public:
 	~DomainInfo() throw();
 
 public:
-	SkillDomainType_t getType() const throw() { return m_Type; }
+	SkillDomainType_t getType()  { return m_Type; }
 	void setType(SkillDomainType_t type) throw() { m_Type = type; }
 
-	Level_t getLevel() const throw() { return m_Level; }
+	Level_t getLevel()  { return m_Level; }
 	void setLevel(Level_t level) throw() { m_Level = level; }
 
-	uint getGoalExp() const throw() { return m_GoalExp; }
+	uint getGoalExp()  { return m_GoalExp; }
 	void setGoalExp(Exp_t exp) throw() { m_GoalExp = exp ; }
 
-	uint getAccumExp() const throw() { return m_AccumExp; }
+	uint getAccumExp()  { return m_AccumExp; }
 	void setAccumExp(Exp_t exp) throw() { m_AccumExp = exp ; }
 
-	ItemType_t getBestItemType() const throw() { return m_BestItemType; }
+	ItemType_t getBestItemType()  { return m_BestItemType; }
 	void setBestItemType(ItemType_t it) throw() { m_BestItemType = it; }
 	
-	string toString() const throw();
+	string toString() ;
 
 private:
 
@@ -84,7 +84,7 @@ public:
 	uint getDomainCount() const throw(Error);
 
 	// toString for debug
-	string toString() const throw();
+	string toString() ;
 
 private:
 
@@ -114,7 +114,7 @@ public:
 	void addDomainInfo(DomainInfo* pDomainInfo) const throw(Error);
 
 	// toString for debug
-	string toString() const throw();
+	string toString() ;
 
 private:
 	DomainInfo ** m_DomainInfoLists[SKILL_DOMAIN_MAX];

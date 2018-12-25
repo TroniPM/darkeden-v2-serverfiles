@@ -20,8 +20,8 @@ public:
 	~Sacrifice() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Sacrifice"; }
-	SkillType_t getSkillType() const throw() { return SKILL_SACRIFICE; }
+    string getSkillHandlerName()  { return "Sacrifice"; }
+	SkillType_t getSkillType()  { return SKILL_SACRIFICE; }
 
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

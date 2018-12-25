@@ -38,7 +38,7 @@ public:
 	string toString () const throw ();
 
 public:
-	BYTE getListNum() const throw() { return m_ListNum; }
+	BYTE getListNum()  { return m_ListNum; }
 	void setListNum(BYTE ListNum) throw() { m_ListNum = ListNum; }
 
 	void addListElement(InventorySlotInfo* pInventorySlotInfo) throw() { m_InventorySlotInfoList.push_back(pInventorySlotInfo); }

@@ -58,7 +58,7 @@ void GCAddSylph::write ( SocketOutputStream & oStream ) const
 	__END_CATCH
 }
 
-PacketSize_t GCAddSylph::getPacketSize() const throw() 
+PacketSize_t GCAddSylph::getPacketSize()  
 { 
 	PacketSize_t PacketSize;
 
@@ -116,7 +116,7 @@ string GCAddSylph::toString () const
 
 	__END_CATCH
 }
-PacketSize_t GCAddSylphFactory::getPacketMaxSize() const throw() 
+PacketSize_t GCAddSylphFactory::getPacketMaxSize()  
 {
 	PacketSize_t MaxPacketSize;
 

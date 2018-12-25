@@ -53,11 +53,11 @@ public:
 	Gold_t increaseTaxBalanceEx( Gold_t tax ) throw(Error);
 	Gold_t decreaseTaxBalanceEx( Gold_t tax ) throw(Error);
 
-	const list<OptionType_t>& getOptionTypeList() const throw() { return m_BonusOptionList; }
+	const list<OptionType_t>& getOptionTypeList()  { return m_BonusOptionList; }
 	void setOptionTypeList( const string& options ) throw();
 
 	bool isCastleZone(ZoneID_t targetZoneID) const throw (Error);
-	const list<ZoneID_t>& getZoneIDList() const throw() { return m_CastleZoneIDList; }
+	const list<ZoneID_t>& getZoneIDList()  { return m_CastleZoneIDList; }
 	void setZoneIDList( const string& zoneIDs ) throw();
 
 	Race_t getRace() const { return m_Race; }
@@ -70,7 +70,7 @@ public:
 
 	void	broadcast(Packet* pPacket) const throw (Error);
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	ZoneID_t 	m_ZoneID;		// Á¸ID
@@ -152,7 +152,7 @@ public:
 
 	SkillType_t getCastleSkillType( ZoneID_t zoneID, GuildID_t guildID ) const throw (Error);
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	hash_map<ZoneID_t, CastleInfo*> m_CastleInfos;

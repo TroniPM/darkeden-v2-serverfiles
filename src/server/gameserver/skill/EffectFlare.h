@@ -20,7 +20,7 @@ public:
 	EffectFlare(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_FLARE; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_FLARE; }
 
 	void affect() throw(Error){}
 	void affect(Creature* pCreature) throw(Error);
@@ -35,14 +35,14 @@ public:
 	virtual void destroy(const string & ownerID) throw(Error);
 	virtual void save(const string & ownerID) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 	
 public:
 
-	int getLevel() const throw() { return m_Level; }
+	int getLevel()  { return m_Level; }
 	void setLevel(int Level) throw() { m_Level = Level; }
 
-	Sight_t getOldSight() const throw() { return m_OldSight; }
+	Sight_t getOldSight()  { return m_OldSight; }
 	void setOldSight(Sight_t OldSight) throw() { m_OldSight = OldSight; }
 
 private:
@@ -58,8 +58,8 @@ private:
 class EffectFlareLoader : public EffectLoader 
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_FLARE; }
-	virtual string getEffectClassName() const throw() { return "EffectFlare"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_FLARE; }
+	virtual string getEffectClassName()  { return "EffectFlare"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

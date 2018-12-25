@@ -19,7 +19,7 @@ public:
 	EffectRelic(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_RELIC; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_RELIC; }
 
 	void affect() throw(Error) {}
 	void affect(Creature* pCreature) throw(Error);
@@ -27,13 +27,13 @@ public:
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error); 
 
-	string toString() const throw();
+	string toString() ;
 
 public:
-	HP_t getPoint() const throw() { return m_Point; }
+	HP_t getPoint()  { return m_Point; }
 	void setPoint(HP_t Point) throw() { m_Point = Point; }
 
-	Turn_t getTick() const throw() { return m_Tick; }
+	Turn_t getTick()  { return m_Tick; }
 	void   setTick(Turn_t Tick) throw() { m_Tick = Tick; }
 
 private:

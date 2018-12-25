@@ -21,12 +21,12 @@ public:
 	~EventKick() throw();			
 
 public:
-	virtual EventClass getEventClass() const throw() { return EVENT_CLASS_KICK; }
+	virtual EventClass getEventClass()  { return EVENT_CLASS_KICK; }
 
 	virtual void activate() throw(Error);
 	void sendMessage() throw (Error);
 
-	virtual string toString() const throw();
+	virtual string toString() ;
 };
 
 #endif

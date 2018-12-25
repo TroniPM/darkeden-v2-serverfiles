@@ -46,16 +46,16 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_PARTY_POSITION; }
+	PacketID_t getPacketID()  { return PACKET_CG_PARTY_POSITION; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szZoneID + szZoneCoord * 2 + szHP * 2; }
+	PacketSize_t getPacketSize()  { return szZoneID + szZoneCoord * 2 + szHP * 2; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGPartyPosition"; }
+	string getPacketName()  { return "CGPartyPosition"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void	setZoneID(ZoneID_t zoneID) { m_ZoneID = zoneID; }
@@ -103,13 +103,13 @@ public:
 	Packet* createPacket() throw() { return new CGPartyPosition(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGPartyPosition"; }
+	string getPacketName()  { return "CGPartyPosition"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_PARTY_POSITION; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_PARTY_POSITION; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szZoneID + szZoneCoord*2 + szHP*2; }
+	PacketSize_t getPacketMaxSize()  { return szZoneID + szZoneCoord*2 + szHP*2; }
 
 };
 

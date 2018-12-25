@@ -20,8 +20,8 @@ public:
 	~IceAuger() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "IceAuger"; }
-	SkillType_t getSkillType() const throw() { return SKILL_ICE_AUGER; }
+    string getSkillHandlerName()  { return "IceAuger"; }
+	SkillType_t getSkillType()  { return SKILL_ICE_AUGER; }
 
 	void execute(Monster* pMonster, Creature* pEnemy) throw(Error);
 

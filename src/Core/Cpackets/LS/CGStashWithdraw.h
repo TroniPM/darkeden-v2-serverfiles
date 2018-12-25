@@ -22,13 +22,13 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_CG_STASH_WITHDRAW; }
-	PacketSize_t getPacketSize() const throw() { return szGold; }
-	string getPacketName() const throw() { return "CGStashWithdraw"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_CG_STASH_WITHDRAW; }
+	PacketSize_t getPacketSize()  { return szGold; }
+	string getPacketName()  { return "CGStashWithdraw"; }
+	string toString() ;
 	
 public:
-	Gold_t getAmount(void) const throw() { return m_Amount;}
+	Gold_t getAmount(void)  { return m_Amount;}
 	void setAmount(Gold_t amount) throw() { m_Amount = amount;}
 
 private :
@@ -46,9 +46,9 @@ class CGStashWithdrawFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new CGStashWithdraw(); }
-	string getPacketName() const throw() { return "CGStashWithdraw"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_STASH_WITHDRAW; }
-	PacketSize_t getPacketMaxSize() const throw() { return szGold; }
+	string getPacketName()  { return "CGStashWithdraw"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_STASH_WITHDRAW; }
+	PacketSize_t getPacketMaxSize()  { return szGold; }
 
 };
 

@@ -95,7 +95,7 @@ QuestMessage SlayerWeaponRewardClass::giveReward( PlayerCreature* pPC ) const th
 	__END_CATCH
 }
 
-string SlayerWeaponRewardClass::toString() const throw()
+string SlayerWeaponRewardClass::toString() 
 {
 	return "SlayerWeaponRewardClass() : \n" + RewardClass::toString();
 }

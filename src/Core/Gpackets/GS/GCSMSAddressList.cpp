@@ -121,7 +121,7 @@ void GCSMSAddressList::write ( SocketOutputStream & oStream )
 	__END_CATCH
 }
 
-PacketSize_t GCSMSAddressList::getPacketSize() const throw()
+PacketSize_t GCSMSAddressList::getPacketSize() 
 {
 	__BEGIN_TRY
 

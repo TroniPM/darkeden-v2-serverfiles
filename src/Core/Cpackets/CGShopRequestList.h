@@ -35,18 +35,18 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_SHOP_REQUEST_LIST; }
+	PacketID_t getPacketID()  { return PACKET_CG_SHOP_REQUEST_LIST; }
 	
 	// get packet's body size
 	// *OPTIMIZATION HINT*
 	// const static CGShopRequestListPacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketSize() const throw() { return szObjectID+szShopRackType; }
+	PacketSize_t getPacketSize()  { return szObjectID+szShopRackType; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGShopRequestList"; }
+	string getPacketName()  { return "CGShopRequestList"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 	
 public:
 
@@ -82,13 +82,13 @@ public:
 	Packet* createPacket() throw() { return new CGShopRequestList(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGShopRequestList"; }
+	string getPacketName()  { return "CGShopRequestList"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_SHOP_REQUEST_LIST; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_SHOP_REQUEST_LIST; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID+szShopRackType; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID+szShopRackType; }
 
 };
 

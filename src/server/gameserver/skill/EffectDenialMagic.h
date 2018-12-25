@@ -20,7 +20,7 @@ public:
 	EffectDenialMagic(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_DENIAL_MAGIC; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_DENIAL_MAGIC; }
 
 	void affect() throw(Error){}
 	void affect(Creature* pCreature) throw(Error);
@@ -31,7 +31,7 @@ public:
 	void unaffect(Item* pItem) throw(Error) {}
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 
@@ -45,8 +45,8 @@ private:
 class EffectDenialMagicLoader : public EffectLoader 
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_DENIAL_MAGIC; }
-	virtual string getEffectClassName() const throw() { return "EffectDenialMagic"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_DENIAL_MAGIC; }
+	virtual string getEffectClassName()  { return "EffectDenialMagic"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error) {}

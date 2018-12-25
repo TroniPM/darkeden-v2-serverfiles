@@ -221,7 +221,7 @@ void EffectPoisonStorm::unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Obje
 }
 
 string EffectPoisonStorm::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

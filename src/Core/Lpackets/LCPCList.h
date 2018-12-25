@@ -45,16 +45,16 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_LC_PC_LIST; }
+	PacketID_t getPacketID()  { return PACKET_LC_PC_LIST; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw();
+	PacketSize_t getPacketSize() ;
 	
 	// get packet's name
-	string getPacketName() const throw() { return "LCPCList"; }
+	string getPacketName()  { return "LCPCList"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 	
 public:
 
@@ -98,13 +98,13 @@ public:
 	Packet* createPacket() throw() { return new LCPCList(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "LCPCList"; }
+	string getPacketName()  { return "LCPCList"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_LC_PC_LIST; }
+	PacketID_t getPacketID()  { return Packet::PACKET_LC_PC_LIST; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		// 슬레이어 정보가 뱀파이어 정보보다 사이즈가 크기 때문에,
 		// 이 패킷의 최대 크기는 슬레이어 3 명일 경우이다.

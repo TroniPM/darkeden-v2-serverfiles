@@ -25,9 +25,9 @@ public:
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error); 
 
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_BERSERKER; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_BERSERKER; }
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	int getDefensePenalty(void) const { return m_DefensePenalty; }

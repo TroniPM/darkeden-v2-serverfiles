@@ -35,19 +35,19 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_SHOW_GUILD_REGIST; }
+	PacketID_t getPacketID()  { return PACKET_GC_SHOW_GUILD_REGIST; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szGold; }
+	PacketSize_t getPacketSize()  { return szGold; }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCShowGuildRegist"; }
+	string getPacketName()  { return "GCShowGuildRegist"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get/set Registration Fee
-	Gold_t getRegistrationFee() const throw() { return m_RegistrationFee; }
+	Gold_t getRegistrationFee()  { return m_RegistrationFee; }
 	void setRegistrationFee( Gold_t registrationFee ) throw() { m_RegistrationFee = registrationFee; }
 	
 
@@ -75,15 +75,15 @@ public :
 	Packet* createPacket() throw() { return new GCShowGuildRegist(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCShowGuildRegist"; }
+	string getPacketName()  { return "GCShowGuildRegist"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_SHOW_GUILD_REGIST; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_SHOW_GUILD_REGIST; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCSystemMessagePacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szGold; }
+	PacketSize_t getPacketMaxSize()  { return szGold; }
 
 };
 

@@ -21,7 +21,7 @@ public:
 	EffectMonsterTileStorm(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_MONSTER_TILE_STORM; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_MONSTER_TILE_STORM; }
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
@@ -29,7 +29,7 @@ public:
 	void unaffect() throw(Error);
 	void unaffect(Creature* pCreature) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	int getDamage(void) const { return m_Damage; }
@@ -66,8 +66,8 @@ private:
 class EffectMonsterTileStormLoader : public EffectLoader 
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_MONSTER_TILE_STORM; }
-	virtual string getEffectClassName() const throw() { return "EffectMonsterTileStorm"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_MONSTER_TILE_STORM; }
+	virtual string getEffectClassName()  { return "EffectMonsterTileStorm"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error) {}

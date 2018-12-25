@@ -20,8 +20,8 @@ public:
 	~SpitStream() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "SpitStream"; }
-	SkillType_t getSkillType() const throw() { return SKILL_SPIT_STREAM; }
+    string getSkillHandlerName()  { return "SpitStream"; }
+	SkillType_t getSkillType()  { return SKILL_SPIT_STREAM; }
 
 	void execute(Slayer* pSlayer, ObjectID_t targetObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Slayer* pSlayer, ZoneCoord_t X, ZoneCoord_t Y,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);

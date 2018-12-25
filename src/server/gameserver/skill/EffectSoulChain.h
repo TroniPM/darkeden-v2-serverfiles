@@ -22,7 +22,7 @@ public:
 	EffectSoulChain(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_SOUL_CHAIN; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_SOUL_CHAIN; }
 
 	void affect() throw(Error){}
 	void affect(Creature* pCreature) throw(Error);
@@ -30,7 +30,7 @@ public:
 	void unaffect() throw(Error);
 	void unaffect(Creature* pCreature) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 
@@ -41,7 +41,7 @@ public:
 	const string& getTargetName() const throw(Error) { return m_TargetName; }
 	void setTargetName( const string& targetName ) throw(Error) { m_TargetName = targetName; }
 
-	Zone* getZone() const throw() { return m_pZone; }
+	Zone* getZone()  { return m_pZone; }
 	void setZone( Zone* pZone ) throw() { m_pZone = pZone; }
 	
 private:

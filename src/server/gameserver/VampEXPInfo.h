@@ -22,15 +22,15 @@ public:
 
 public:
 	void setLevel(uint lev) throw() { m_Level = lev; }
-	uint getLevel() const throw() { return m_Level; }
+	uint getLevel()  { return m_Level; }
 
 	void setGoalExp(Exp_t sum) throw() { m_GoalExp = sum; }
-	uint getGoalExp() const throw() { return m_GoalExp; }
+	uint getGoalExp()  { return m_GoalExp; }
 
 	void setAccumExp(Exp_t accum) throw() { m_AccumExp = accum ; }
-	uint getAccumExp() const throw() { return m_AccumExp; }
+	uint getAccumExp()  { return m_AccumExp; }
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	Level_t m_Level;		// ·¹º§
@@ -56,7 +56,7 @@ public:
 	VampEXPInfo* getVampEXPInfo(uint VampEXPType) const throw(NoSuchElementException, OutOfBoundException, Error);
 	void addVampEXPInfo(VampEXPInfo* pVampEXPInfo) throw(DuplicatedException, Error);
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	uint          m_VampEXPCount;

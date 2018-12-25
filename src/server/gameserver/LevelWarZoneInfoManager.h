@@ -47,15 +47,15 @@ public:
 	Level_t					getMaxOustersLevel() const	{ return m_OustersLevelMax; }
 	void					setMaxOustersLevel(const Level_t level)	{ m_OustersLevelMax = level; }
 
-	const list<ZoneID_t>& 	getZoneIDList() const throw() { return m_LevelWarBonusZoneIDList; }
+	const list<ZoneID_t>& 	getZoneIDList()  { return m_LevelWarBonusZoneIDList; }
 	void					setZoneIDList( const string& zoneIDs )	throw();
 
 	bool 					isBonusZone(ZoneID_t targetZoneID) const throw (Error);
 
-	bool					isCreatureThisLevel(Creature* pCreature) const throw();
-	bool					isZoneThisLevel( ZoneID_t zoneID ) const throw();
+	bool					isCreatureThisLevel(Creature* pCreature) ;
+	bool					isZoneThisLevel( ZoneID_t zoneID ) ;
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 
@@ -108,7 +108,7 @@ public:
 //	void refreshSweeperBonusZonePlayer() throw(Error);
 	void broadcast( ZoneID_t zoneID, Packet* pPacket ) const throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 

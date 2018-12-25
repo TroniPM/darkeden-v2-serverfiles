@@ -24,10 +24,10 @@ public:
 	ActionTradeGiftBox();
 	~ActionTradeGiftBox();
 
-	virtual ActionType_t getActionType() const throw() { return ACTION_TRADE_GIFT_BOX; }
+	virtual ActionType_t getActionType()  { return ACTION_TRADE_GIFT_BOX; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	void						load() throw (Error);
 
@@ -49,9 +49,9 @@ private :
 class ActionTradeGiftBoxFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_TRADE_GIFT_BOX; }
-	virtual string getActionName() const throw() { return "TradeGiftBox"; }
-	virtual Action* createAction() const throw() { return new ActionTradeGiftBox(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_TRADE_GIFT_BOX; }
+	virtual string getActionName()  { return "TradeGiftBox"; }
+	virtual Action* createAction()  { return new ActionTradeGiftBox(); }
 };
 
 #endif

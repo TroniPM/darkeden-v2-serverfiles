@@ -131,7 +131,7 @@ void GCShowWaitGuildInfo::write ( SocketOutputStream & oStream ) const
 
 
 // get packet's body size
-PacketSize_t GCShowWaitGuildInfo::getPacketSize() const throw()
+PacketSize_t GCShowWaitGuildInfo::getPacketSize() 
 {
 	PacketSize_t PacketSize = szGuildID +
 							  szBYTE +

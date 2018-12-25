@@ -21,8 +21,8 @@ public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_ADD_BAT; }
-	PacketSize_t getPacketSize() const throw() 
+	PacketID_t getPacketID()  { return PACKET_GC_ADD_BAT; }
+	PacketSize_t getPacketSize()  
 	{ 
 		PacketSize_t PacketSize;
 		PacketSize = szObjectID 
@@ -47,63 +47,63 @@ public:
 		return PacketSize;
 	}
 
-	string getPacketName() const throw() { return "GCAddBat"; }
-	string toString() const throw();
+	string getPacketName()  { return "GCAddBat"; }
+	string toString() ;
 
 public:
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t creatureID) throw() { m_ObjectID = creatureID; }
 
-	string getName() const throw() { return m_Name; }
+	string getName()  { return m_Name; }
 	void setName(string name) throw() { m_Name = name; }
 
 	/*
 	// get/set sprite type
-	SpriteType_t getSpriteType() const throw() { return m_SpriteType; }
+	SpriteType_t getSpriteType()  { return m_SpriteType; }
 	void setSpriteType(SpriteType_t spriteType) throw() { m_SpriteType = spriteType; }
 
 	// get/set main color
-	Color_t getMainColor() const throw() { return m_MainColor; }
+	Color_t getMainColor()  { return m_MainColor; }
 	void setMainColor(Color_t color) throw() { m_MainColor = color; }
 
 	// get/set sub color
-	Color_t getSubColor() const throw() { return m_SubColor; }
+	Color_t getSubColor()  { return m_SubColor; }
 	void setSubColor(Color_t color) throw() { m_SubColor = color; }
 	*/
 
 	// get/set X
-	Coord_t getX() const throw() { return m_X; }
+	Coord_t getX()  { return m_X; }
 	void setXYDir(Coord_t x, Coord_t y, Dir_t Dir) throw() { m_X = x; m_Y = y; m_Dir = Dir;}
 	
 	// get/set Y
-	Coord_t getY() const throw() { return m_Y; }
+	Coord_t getY()  { return m_Y; }
 
 	// get/set Dir
-	Dir_t getDir() const throw() { return m_Dir; }
+	Dir_t getDir()  { return m_Dir; }
 
 	// get /set MaxHP
-	HP_t getMaxHP() const throw() { return m_MaxHP; }
+	HP_t getMaxHP()  { return m_MaxHP; }
 	void setMaxHP(HP_t MaxHP) throw() { m_MaxHP = MaxHP; }
 
 	// get /set CurrentHP
-	HP_t getCurrentHP() const throw() { return m_CurrentHP; }
+	HP_t getCurrentHP()  { return m_CurrentHP; }
 	void setCurrentHP(HP_t CurrentHP) throw() { m_CurrentHP = CurrentHP; }
 
 	// get / set ItemType
-    ItemType_t getItemType() const throw() { return m_ItemType; }
+    ItemType_t getItemType()  { return m_ItemType; }
     void setItemType(ItemType_t ItemType) throw() { m_ItemType = ItemType; }
 
 	// get/set GuildID
-	GuildID_t getGuildID() const throw() { return m_GuildID; }
+	GuildID_t getGuildID()  { return m_GuildID; }
 	void setGuildID(GuildID_t GuildID) throw() { m_GuildID = GuildID; }
 
-	Color_t getColor() const throw() { return m_Color; }
+	Color_t getColor()  { return m_Color; }
 	void setColor(Color_t color) throw() { m_Color = color; }
 
-	Level_t getLevel() const throw() { return m_Level; }
+	Level_t getLevel()  { return m_Level; }
 	void setLevel(Level_t CLevel) throw() { m_Level = CLevel; }
 
-	Color_t		getAdvanceBatColor() const throw() { return m_AdvanceBatColor; }
+	Color_t		getAdvanceBatColor()  { return m_AdvanceBatColor; }
 	void		setAdvanceBatColor(WORD set) { m_AdvanceBatColor = set; }
 
 	unsigned char getBatType() { return m_BatType; }
@@ -151,9 +151,9 @@ class GCAddBatFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCAddBat(); }
-	string getPacketName() const throw() { return "GCAddBat"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_ADD_BAT; }
-	PacketSize_t getPacketMaxSize() const throw() 
+	string getPacketName()  { return "GCAddBat"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_BAT; }
+	PacketSize_t getPacketMaxSize()  
 	{
 		return szObjectID 
 			+ szBYTE + 20 

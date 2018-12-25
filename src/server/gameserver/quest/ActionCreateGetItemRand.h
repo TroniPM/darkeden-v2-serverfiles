@@ -21,10 +21,10 @@
 class ActionCreateGetItemRand : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_CREATE_GETITEM_RAND; }
+	virtual ActionType_t getActionType()  { return ACTION_CREATE_GETITEM_RAND; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 private:
@@ -40,8 +40,8 @@ private:
 class ActionCreateGetItemRandFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_CREATE_GETITEM_RAND; }
-	virtual string getActionName() const throw() { return "CreateGetItemRand"; }
-	virtual Action* createAction() const throw() { return new ActionCreateGetItemRand(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_CREATE_GETITEM_RAND; }
+	virtual string getActionName()  { return "CreateGetItemRand"; }
+	virtual Action* createAction()  { return new ActionCreateGetItemRand(); }
 };
 #endif

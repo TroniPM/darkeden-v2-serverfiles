@@ -20,8 +20,8 @@ public:
 	~UltimateBlow() throw() {}
 
 public:
-    string getSkillHandlerName() const throw() { return "UltimateBlow"; }
-	SkillType_t getSkillType() const throw() { return SKILL_ULTIMATE_BLOW; }
+    string getSkillHandlerName()  { return "UltimateBlow"; }
+	SkillType_t getSkillType()  { return SKILL_ULTIMATE_BLOW; }
 
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

@@ -43,11 +43,11 @@ public:
 	void setRunTime() throw();
 	void setRunTime(Turn_t delay) throw();
 
-	string getName() const throw() { return m_Name; }
+	string getName()  { return m_Name; }
 	void setName(const string & Name) { m_Name = Name; }
 
 	// 다음 캐스팅이 가능할때까지 남은 시간
-	Turn_t getRemainTurn( Timeval currentTime ) const throw();
+	Turn_t getRemainTurn( Timeval currentTime ) ;
 
 private:
 	string       m_Name;

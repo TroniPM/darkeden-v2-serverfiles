@@ -51,27 +51,27 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_ADD_VAMPIRE_FROM_TRANSFORMATION; }
+	PacketID_t getPacketID()  { return PACKET_GC_ADD_VAMPIRE_FROM_TRANSFORMATION; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return m_VampireInfo.getSize() + m_pEffectInfo->getSize(); }
+	PacketSize_t getPacketSize()  { return m_VampireInfo.getSize() + m_pEffectInfo->getSize(); }
 
 	// get packet's name
-	string getPacketName() const throw() { return "GCAddVampireFromTransformation"; }
+	string getPacketName()  { return "GCAddVampireFromTransformation"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 
 public :
 
 	// get/set vampire info
 	PCVampireInfo3 & getVampireInfo() throw() { return m_VampireInfo; }
-	const PCVampireInfo3 & getVampireInfo() const throw() { return m_VampireInfo; }
+	const PCVampireInfo3 & getVampireInfo()  { return m_VampireInfo; }
 	void setVampireInfo(const PCVampireInfo3 & vampireInfo) throw() { m_VampireInfo = vampireInfo; }
 
 	// get /set Effect Info
-	EffectInfo* getEffectInfo() const throw() { return m_pEffectInfo; }
+	EffectInfo* getEffectInfo()  { return m_pEffectInfo; }
 	void setEffectInfo(EffectInfo* pEffectInfo) throw() { m_pEffectInfo = pEffectInfo; }
 
 
@@ -102,13 +102,13 @@ public :
 	Packet* createPacket() throw() { return new GCAddVampireFromTransformation(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCAddVampireFromTransformation"; }
+	string getPacketName()  { return "GCAddVampireFromTransformation"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_ADD_VAMPIRE_FROM_TRANSFORMATION; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_VAMPIRE_FROM_TRANSFORMATION; }
 
 	// get packet's body size
-	PacketSize_t getPacketMaxSize() const throw()
+	PacketSize_t getPacketMaxSize() 
 	{ 
 		return PCVampireInfo3::getMaxSize() + EffectInfo::getMaxSize();
 	}

@@ -20,11 +20,11 @@ public:
 	EffectTrying(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_TRYING; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_TRYING; }
 
 	void unaffect() throw(Error); 
 
-	string toString() const throw() { return "EffectTrying"; }
+	string toString()  { return "EffectTrying"; }
 
 private:
 };

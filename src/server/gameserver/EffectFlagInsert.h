@@ -21,7 +21,7 @@ public:
 	EffectFlagInsert(Item* pItem) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_FLAG_INSERT; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_FLAG_INSERT; }
 
 	void affect() throw(Error) {}
 	void affect(Creature* pCreature) throw(Error);
@@ -31,7 +31,7 @@ public:
 	void unaffect(Item* pItem) throw(Error);
 	void unaffect() throw(Error); 
 
-	string toString() const throw();
+	string toString() ;
 
 };
 

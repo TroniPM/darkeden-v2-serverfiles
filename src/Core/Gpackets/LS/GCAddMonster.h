@@ -25,8 +25,8 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_ADD_MONSTER; }
-	PacketSize_t getPacketSize() const throw() 
+	PacketID_t getPacketID()  { return PACKET_GC_ADD_MONSTER; }
+	PacketSize_t getPacketSize()  
 	{ 
 		return szObjectID +            // object id
 			szMonsterType +            // monster type
@@ -43,44 +43,44 @@ public:
 			szLevel +			//  Level
 			szBYTE;						// from Flag
 	}
-	string getPacketName() const throw() { return "GCAddMonster"; }
-	string toString() const throw();
+	string getPacketName()  { return "GCAddMonster"; }
+	string toString() ;
 
 public:
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t creatureID) throw() { m_ObjectID = creatureID; }
 
-	MonsterType_t getMonsterType() const throw() { return m_MonsterType; }
+	MonsterType_t getMonsterType()  { return m_MonsterType; }
 	void setMonsterType(MonsterType_t monsterType) throw() { m_MonsterType = monsterType; }
 
-	string getMonsterName() const throw() { return m_MonsterName; }
+	string getMonsterName()  { return m_MonsterName; }
 	void setMonsterName(string name) throw() { m_MonsterName = name; }
 
-	Color_t getMainColor() const throw() { return m_MainColor; }
+	Color_t getMainColor()  { return m_MainColor; }
 	void setMainColor(Color_t color) throw() { m_MainColor = color; }
 
-	Color_t getSubColor() const throw() { return m_SubColor; }
+	Color_t getSubColor()  { return m_SubColor; }
 	void setSubColor(Color_t color) throw() { m_SubColor = color; }
 
-	Coord_t getX() const throw() { return m_X; }
+	Coord_t getX()  { return m_X; }
 	void setX(Coord_t x) throw() { m_X = x; }
 	
-	Coord_t getY() const throw() { return m_Y; }
+	Coord_t getY()  { return m_Y; }
 	void setY(Coord_t y) throw() { m_Y = y; }
 
-	Dir_t getDir() const throw() { return m_Dir; }
+	Dir_t getDir()  { return m_Dir; }
 	void setDir(Dir_t dir) throw() { m_Dir = dir; }
 
-	EffectInfo* getEffectInfo() const throw() { return m_pEffectInfo; }
+	EffectInfo* getEffectInfo()  { return m_pEffectInfo; }
 	void setEffectInfo(EffectInfo* pEffectInfo) throw() { m_pEffectInfo = pEffectInfo; }
 
-	HP_t getMaxHP() const throw() { return m_MaxHP; }
+	HP_t getMaxHP()  { return m_MaxHP; }
 	void setMaxHP(HP_t MaxHP) throw() { m_MaxHP = MaxHP; }
 
-	HP_t getCurrentHP() const throw() { return m_CurrentHP; }
+	HP_t getCurrentHP()  { return m_CurrentHP; }
 	void setCurrentHP(HP_t CurrentHP) throw() { m_CurrentHP = CurrentHP; }
 
-	Level_t getLevel() const throw() { return m_Level; }
+	Level_t getLevel()  { return m_Level; }
 	void setLevel(Level_t CLevel) throw() { m_Level = CLevel; }
 
 	BYTE getFromFlag(void) const { return m_FromFlag; }
@@ -115,15 +115,15 @@ public :
 	Packet* createPacket() throw() { return new GCAddMonster(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCAddMonster"; }
+	string getPacketName()  { return "GCAddMonster"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_ADD_MONSTER; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_MONSTER; }
 
 	// get packet's body size
 	// *OPTIMIZATION HINT*
 	// const static GCAddMonsterPacketSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		return szObjectID +            // object id
 			szMonsterType +            // monster type

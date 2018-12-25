@@ -20,8 +20,8 @@ public:
 	~Evade() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Evade"; }
-	SkillType_t getSkillType() const throw() { return SKILL_EVADE; }
+    string getSkillHandlerName()  { return "Evade"; }
+	SkillType_t getSkillType()  { return SKILL_EVADE; }
 
 	void execute(Ousters* pOusters,  OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 

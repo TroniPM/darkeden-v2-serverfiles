@@ -47,24 +47,24 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_PORT_CHECK; }
+	PacketID_t getPacketID()  { return PACKET_CG_PORT_CHECK; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		return szBYTE + m_PCName.size();		// PC name
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "CGPortCheck"; }
+	string getPacketName()  { return "CGPortCheck"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public:
 
 	// get/set pcName
-	string getPCName() const throw() { return m_PCName; }
+	string getPCName()  { return m_PCName; }
 	void setPCName(const string& pcName) throw() { m_PCName = pcName; }
 
 private :
@@ -90,15 +90,15 @@ public:
 	Packet* createPacket() throw() { return new CGPortCheck(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGPortCheck"; }
+	string getPacketName()  { return "CGPortCheck"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_PORT_CHECK; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_PORT_CHECK; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static CGPortCheckPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		return szBYTE + 20;		// PC name
 	}

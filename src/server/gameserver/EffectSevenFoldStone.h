@@ -20,7 +20,7 @@ public:
 	EffectSevenFoldStone(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return (Effect::EffectClass)m_EffectLevel; }
+    EffectClass getEffectClass()  { return (Effect::EffectClass)m_EffectLevel; }
 
 	void affect() throw(Error) { }
 	void affect(Creature* pCreature) throw(Error);
@@ -35,16 +35,16 @@ public:
 	virtual void destroy(const string & ownerID) throw(Error);
 	virtual void save(const string & ownerID) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
-	Level_t getLevel() const throw() { return m_Level; }
+	Level_t getLevel()  { return m_Level; }
 	void setLevel(Level_t Level) throw() { m_Level = Level; }
 
-	EnchantLevel_t getHeroOption() const throw() { return m_Silver; }
+	EnchantLevel_t getHeroOption()  { return m_Silver; }
 	void setHeroOption(EnchantLevel_t Silver) throw() { m_Silver = Silver; }
 
-	int getEffectType() const throw() { return m_EffectLevel; }
+	int getEffectType()  { return m_EffectLevel; }
 	void setEffectType(int Level) throw() { m_EffectLevel = Level; }
 
 	VSDateTime&	getLastFeedTime() { return m_LastFeedTime; }
@@ -65,8 +65,8 @@ private:
 class EffectSevenFoldStoneLoader : public EffectLoader 
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return (Effect::EffectClass)getEffectClass(); }
-	virtual string getEffectClassName() const throw() { return "EffectSevenFoldStone"; }
+	virtual Effect::EffectClass getEffectClass()  { return (Effect::EffectClass)getEffectClass(); }
+	virtual string getEffectClassName()  { return "EffectSevenFoldStone"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

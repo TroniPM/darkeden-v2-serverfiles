@@ -34,23 +34,23 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_LG_INCOMING_CONNECTION_ERROR; }
+	PacketID_t getPacketID()  { return PACKET_LG_INCOMING_CONNECTION_ERROR; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szBYTE + m_Message.size(); }
+	PacketSize_t getPacketSize()  { return szBYTE + m_Message.size(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "LGIncomingConnectionError"; }
+	string getPacketName()  { return "LGIncomingConnectionError"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get/set error message
-	string getMessage() const throw() { return m_Message; }
+	string getMessage()  { return m_Message; }
 	void setMessage(string message) throw() { m_Message = message; }
 
 	// get/set player id
-	string getPlayerID() const throw() { return m_PlayerID; }
+	string getPlayerID()  { return m_PlayerID; }
 	void setPlayerID(string playerID) throw() { m_PlayerID = playerID; }
 
 private :
@@ -80,15 +80,15 @@ public:
 	Packet* createPacket() throw() { return new LGIncomingConnectionError(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "LGIncomingConnectionError"; }
+	string getPacketName()  { return "LGIncomingConnectionError"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_LG_INCOMING_CONNECTION_ERROR; }
+	PacketID_t getPacketID()  { return Packet::PACKET_LG_INCOMING_CONNECTION_ERROR; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static LGIncomingConnectionErrorPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + 128; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + 128; }
 
 };
 

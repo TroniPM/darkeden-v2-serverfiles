@@ -7,7 +7,7 @@ class EffectWithWarning : public Effect
 {
 public:
 	EffectWithWarning(EffectClass sE, EffectClass mE, Zone* pZone, ZoneCoord_t x, ZoneCoord_t y) : Effect(pZone, x, y, NULL, 99999999), m_SignEffect(sE), m_MainEffect(mE), m_SignDuration(15), m_MainDuration(20), m_State(false) { }
-	EffectClass	getEffectClass() const throw();
+	EffectClass	getEffectClass() ;
 
 	void affect() throw(Error);
 	void unaffect() throw(Error);
@@ -31,7 +31,7 @@ public:
 	EffectIcicle(EffectClass icicle, Zone* pZone, ZoneCoord_t x, ZoneCoord_t y) : EffectWithWarning( (EffectClass)(icicle + 1), icicle, pZone, x, y ) { }
 	void affect() throw(Error);
 
-	string toString() const throw() { return "EffectIcicle"; }
+	string toString()  { return "EffectIcicle"; }
 };
 
 class EffectLargeIcicle : public EffectWithWarning
@@ -40,7 +40,7 @@ public:
 	EffectLargeIcicle(EffectClass icicle, Zone* pZone, ZoneCoord_t x, ZoneCoord_t y) : EffectWithWarning( (EffectClass)(icicle + 1), icicle, pZone, x, y ) { }
 	void affect() throw(Error);
 
-	string toString() const throw() { return "EffectLargeIcicle"; }
+	string toString()  { return "EffectLargeIcicle"; }
 };
 
 class EffectSideTrap : public EffectWithWarning
@@ -51,7 +51,7 @@ public:
 
 	void setDir( Dir_t dir ) { m_Dir = dir; }
 
-	string toString() const throw() { return "EffectSideTrap"; }
+	string toString()  { return "EffectSideTrap"; }
 
 private:
 	Dir_t	m_Dir;

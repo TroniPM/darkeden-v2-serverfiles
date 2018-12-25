@@ -46,33 +46,33 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_SKILL_TO_SELF_OK_3; }
+	PacketID_t getPacketID()  { return PACKET_GC_SKILL_TO_SELF_OK_3; }
 	
 	// get packet's body size
 	// 최적화시, 미리 계산된 정수를 사용한다.
-	PacketSize_t getPacketSize() const throw() { return szCoord*2 + szSkillType + szDuration + szBYTE; }
+	PacketSize_t getPacketSize()  { return szCoord*2 + szSkillType + szDuration + szBYTE; }
 
 	// get packet's name
-	string getPacketName() const throw() { return "GCSkillToSelfOK3"; }
+	string getPacketName()  { return "GCSkillToSelfOK3"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get / set X,Y
-	Coord_t getX() const throw() { return m_X;}
-	Coord_t getY() const throw() { return m_Y;}
+	Coord_t getX()  { return m_X;}
+	Coord_t getY()  { return m_Y;}
 	void setXY(Coord_t X, Coord_t Y) throw() { m_X = X; m_Y = Y;}
 
 
 	// get / set SkillType
-	SkillType_t getSkillType() const throw() { return m_SkillType; }
+	SkillType_t getSkillType()  { return m_SkillType; }
 	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
 
 	// get / set Duration
-	Duration_t getDuration() const throw() { return m_Duration; }
+	Duration_t getDuration()  { return m_Duration; }
 	void setDuration(Duration_t Duration) throw() { m_Duration = Duration; }
 
-	BYTE getGrade() const throw() { return m_Grade; }
+	BYTE getGrade()  { return m_Grade; }
 	void setGrade( BYTE grade ) throw() { m_Grade = grade; }
 
 private :
@@ -116,13 +116,13 @@ public :
 	Packet* createPacket() throw() { return new GCSkillToSelfOK3(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCSkillToSelfOK3"; }
+	string getPacketName()  { return "GCSkillToSelfOK3"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_SKILL_TO_SELF_OK_3; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_SKILL_TO_SELF_OK_3; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szCoord*2 + szSkillType + szDuration + szBYTE; }
+	PacketSize_t getPacketMaxSize()  { return szCoord*2 + szSkillType + szDuration + szBYTE; }
 
 };
 

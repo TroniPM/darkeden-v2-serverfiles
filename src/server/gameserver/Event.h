@@ -46,19 +46,19 @@ public:
 	virtual ~Event() throw();
 			
 public:
-	virtual EventClass getEventClass() const throw() = 0;
+	virtual EventClass getEventClass()  = 0;
 
 	// get event life-cycle
 	// 기본적으로 모든 이벤트들은 1회용이다.
-	virtual bool isTemporary() const throw() { return true; }
-	virtual bool isPermanent() const throw() { return false; }
+	virtual bool isTemporary()  { return true; }
+	virtual bool isPermanent()  { return false; }
 
 	virtual void activate() throw(Error) = 0;
 	
-	Timeval getDeadline() const throw() { return m_Deadline; }
+	Timeval getDeadline()  { return m_Deadline; }
 	void setDeadline(Turn_t delay) throw();
 
-	virtual string toString() const throw() = 0;
+	virtual string toString()  = 0;
 
 protected:
 	GamePlayer* m_pGamePlayer; // 게임 플레이어 객체

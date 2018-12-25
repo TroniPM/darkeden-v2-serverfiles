@@ -65,7 +65,7 @@ void EffectKillTimer::unaffect()
 }
 
 string EffectKillTimer::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

@@ -27,17 +27,17 @@ public:
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error); 
 
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_SIMYUN_ENTER_LOOP; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_SIMYUN_ENTER_LOOP; }
 
     virtual void create(const string & ownerID) throw(Error);
     virtual void save(const string & ownerID) throw(Error);
     virtual void destroy(const string & ownerID) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void setTimeDate(int TimeDate) throw() { m_TimeDate = TimeDate; }
-	int getTimeDate() const throw() { return m_TimeDate; }
+	int getTimeDate()  { return m_TimeDate; }
 
 
 private:
@@ -51,8 +51,8 @@ private:
 class EffectSimyunEnterLoopLoader : public EffectLoader 
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_SIMYUN_ENTER_LOOP; }
-	virtual string getEffectClassName() const throw() { return "EffectSimyunEnterLoop"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_SIMYUN_ENTER_LOOP; }
+	virtual string getEffectClassName()  { return "EffectSimyunEnterLoop"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

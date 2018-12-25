@@ -24,15 +24,15 @@ public:
 	virtual ~EffectRecallMotorcycle() throw(Error);
 
 public:
-	virtual EffectClass getEffectClass() const throw() { return EFFECT_CLASS_TRANSPORT_ITEM; }
+	virtual EffectClass getEffectClass()  { return EFFECT_CLASS_TRANSPORT_ITEM; }
 
 	// OBJECT_PRIORITY_NONE 라는 뜻은, 타일에 들어가서는 안된다는 뜻이다.
-	virtual ObjectPriority getObjectPriority() const throw() { return OBJECT_PRIORITY_NONE; }
+	virtual ObjectPriority getObjectPriority()  { return OBJECT_PRIORITY_NONE; }
 
 	void unaffect() throw(Error);
 
 	// get debug string
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 private:
 	ZoneCoord_t m_StartX; 

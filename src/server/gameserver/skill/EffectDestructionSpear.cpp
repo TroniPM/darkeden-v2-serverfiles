@@ -112,7 +112,7 @@ void EffectDestructionSpear::unaffect( Creature* pCreature ) throw (Error)
 	__END_CATCH
 }
 
-string EffectDestructionSpear::toString() const throw()
+string EffectDestructionSpear::toString() 
 {
 	__BEGIN_TRY
 

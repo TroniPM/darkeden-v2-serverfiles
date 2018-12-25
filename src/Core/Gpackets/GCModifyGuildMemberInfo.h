@@ -37,27 +37,27 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_MODIFY_GUILD_MEMBER_INFO; }
+	PacketID_t getPacketID()  { return PACKET_GC_MODIFY_GUILD_MEMBER_INFO; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szGuildID + szBYTE + m_GuildName.size() + szGuildMemberRank; }
+	PacketSize_t getPacketSize()  { return szGuildID + szBYTE + m_GuildName.size() + szGuildMemberRank; }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCModifyGuildMemberInfo"; }
+	string getPacketName()  { return "GCModifyGuildMemberInfo"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get/set Guild ID
-	GuildID_t getGuildID() const throw() { return m_GuildID; }
+	GuildID_t getGuildID()  { return m_GuildID; }
 	void setGuildID( GuildID_t guildID ) throw() { m_GuildID = guildID; }
 
 	// get/set Guild Name
-	string getGuildName() const throw() { return m_GuildName; }
+	string getGuildName()  { return m_GuildName; }
 	void setGuildName(const string& guildName) throw() { m_GuildName = guildName; }
 
 	// get/set Guild ID
-	GuildMemberRank_t getGuildMemberRank() const throw() { return m_GuildMemberRank; }
+	GuildMemberRank_t getGuildMemberRank()  { return m_GuildMemberRank; }
 	void setGuildMemberRank( GuildMemberRank_t guildMemberRank ) throw() { m_GuildMemberRank = guildMemberRank; }
 
 private :
@@ -90,15 +90,15 @@ public :
 	Packet* createPacket() throw() { return new GCModifyGuildMemberInfo(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCModifyGuildMemberInfo"; }
+	string getPacketName()  { return "GCModifyGuildMemberInfo"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_MODIFY_GUILD_MEMBER_INFO; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_MODIFY_GUILD_MEMBER_INFO; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCModifyGuildMemberInfoPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szGuildID + szBYTE + 30 + szGuildMemberRank; }
+	PacketSize_t getPacketMaxSize()  { return szGuildID + szBYTE + 30 + szGuildMemberRank; }
 
 };
 

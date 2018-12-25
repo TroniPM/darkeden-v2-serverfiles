@@ -20,8 +20,8 @@ public:
 	~ViaCrucis() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "ViaCrucis"; }
-	SkillType_t getSkillType() const throw() { return SKILL_VIA_CRUCIS; }
+    string getSkillHandlerName()  { return "ViaCrucis"; }
+	SkillType_t getSkillType()  { return SKILL_VIA_CRUCIS; }
 
 	void execute(Slayer* pSlayer, ZoneCoord_t X, ZoneCoord_t Y, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);

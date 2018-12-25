@@ -25,7 +25,7 @@ public:
 public:
 	void load(ZoneID_t zoneID, int race=0xFF) throw(Error);	// 0xFF¿Ã∏È ALL.. -_-;
 	void processCreatures() throw(Error);
-	string toString() const throw();
+	string toString() ;
 };
 
 #endif

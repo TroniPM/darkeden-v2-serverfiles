@@ -36,16 +36,16 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_REQUEST_UNION_INFO; }
+	PacketID_t getPacketID()  { return PACKET_CG_REQUEST_UNION_INFO; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return 0; }
+	PacketSize_t getPacketSize()  { return 0; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGRequestUnionInfo"; }
+	string getPacketName()  { return "CGRequestUnionInfo"; }
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 
 };
@@ -76,13 +76,13 @@ public:
 	Packet* createPacket() throw() { return new CGRequestUnionInfo(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGRequestUnionInfo"; }
+	string getPacketName()  { return "CGRequestUnionInfo"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_REQUEST_UNION_INFO; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_REQUEST_UNION_INFO; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return 0; }
+	PacketSize_t getPacketMaxSize()  { return 0; }
 };
 
 

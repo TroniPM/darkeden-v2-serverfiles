@@ -22,7 +22,7 @@ public:
 	EffectTryingPosition(Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y, MonsterCorpse* pTower) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_TRYING_POSITION; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_TRYING_POSITION; }
 
 	void affect(Creature* pCreature) throw(Error);
 	void unaffect( Creature* pCreature ) throw(Error);
@@ -30,7 +30,7 @@ public:
 	void unaffect() throw(Error); 
 	MonsterCorpse* getTower() const { return m_pTower; }
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	MonsterCorpse* m_pTower;

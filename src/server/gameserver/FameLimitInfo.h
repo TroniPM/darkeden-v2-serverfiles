@@ -30,7 +30,7 @@ public:
 	void setFame( Fame_t fame ) { m_Fame = fame; }
 	Fame_t getFame() const { return m_Fame; }
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	SkillDomainType_t m_DomainType;
@@ -57,7 +57,7 @@ public:
 	FameLimitInfo* getFameLimitInfo(SkillDomainType_t domainType, uint level) const throw (Error);
 	void addFameLimitInfo(FameLimitInfo* pFameLimitInfo) throw();
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	FameLimitInfo** m_FameLimitInfoList[SKILL_DOMAIN_MAX];

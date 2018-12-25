@@ -35,16 +35,16 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_STORE_OPEN; }
+	PacketID_t getPacketID()  { return PACKET_CG_STORE_OPEN; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return 0; }
+	PacketSize_t getPacketSize()  { return 0; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGStoreOpen"; }
+	string getPacketName()  { return "CGStoreOpen"; }
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 };
 
@@ -74,13 +74,13 @@ public:
 	Packet* createPacket() throw() { return new CGStoreOpen(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGStoreOpen"; }
+	string getPacketName()  { return "CGStoreOpen"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_STORE_OPEN; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_STORE_OPEN; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return 0; }
+	PacketSize_t getPacketMaxSize()  { return 0; }
 };
 
 

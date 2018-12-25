@@ -184,41 +184,41 @@ public:
 	BYTE GetBatType() { return m_BatType; }
 	void SetBatType(uchar Type) { m_BatType = Type; }
 
-	ItemType_t getWingItemType() const throw() { return m_WingItemType; }
+	ItemType_t getWingItemType()  { return m_WingItemType; }
 	void setWingItemType(ItemType_t ItemType)  throw() { m_WingItemType = ItemType; }
 
 	Color_t getSkinColor () const throw () { return m_Colors[VAMPIRE_COLOR_SKIN]; }
 	void setSkinColor (Color_t skinColor) throw () { m_Colors[VAMPIRE_COLOR_SKIN] = skinColor; }
 
-	ItemType_t getCoatType() const throw() { return m_CoatType; }
+	ItemType_t getCoatType()  { return m_CoatType; }
    	 void setCoatType(ItemType_t CoatType) throw() { m_CoatType = CoatType; }
 
 	Color_t getCoatColor (ColorType colorType = MAIN_COLOR) const throw () { return m_Colors[VAMPIRE_COLOR_COAT1 + (int)colorType]; }
 	void setCoatColor (Color_t coatColor, ColorType colorType = MAIN_COLOR) throw () { m_Colors[VAMPIRE_COLOR_COAT1 + (int)colorType] = coatColor; }
 
 	// 2007 05 16
-	/*Color_t getArmColor () const throw() { return m_Colors[VAMPIRE_COLOR_ARM]; }
+	/*Color_t getArmColor ()  { return m_Colors[VAMPIRE_COLOR_ARM]; }
 	void setArmColor (Color_t armColor) throw() { m_Colors[VAMPIRE_COLOR_ARM] = armColor; }
 
-	VampireArmType getArmType() const throw() { return m_ArmType; }
+	VampireArmType getArmType()  { return m_ArmType; }
 	void setArmType(VampireArmType ArmType) throw() { m_ArmType = ArmType; }*/
 
 	BYTE getMasterEffectColor() const { return m_MasterEffectColor; }
 	void setMasterEffectColor( BYTE color ) { m_MasterEffectColor = color; }
 
-	HP_t getCurrentHP() const throw() { return m_CurrentHP; }
+	HP_t getCurrentHP()  { return m_CurrentHP; }
 	void setCurrentHP(HP_t CurrentHP) throw() { m_CurrentHP = CurrentHP; }
 
-	HP_t getMaxHP() const throw() { return m_MaxHP; }
+	HP_t getMaxHP()  { return m_MaxHP; }
 	void setMaxHP(HP_t MaxHP) throw() { m_MaxHP = MaxHP; }
 
-	Speed_t getAttackSpeed() const throw() { return m_AttackSpeed; }
+	Speed_t getAttackSpeed()  { return m_AttackSpeed; }
 	void setAttackSpeed(Speed_t AttackSpeed) throw() { m_AttackSpeed = AttackSpeed; }
 
-	Alignment_t getAlignment() const throw() { return m_Alignment; }
+	Alignment_t getAlignment()  { return m_Alignment; }
 	void setAlignment(Alignment_t Alignment)  throw() { m_Alignment = Alignment; }
 
-	Shape_t getShape() const throw() { return m_Shape; }
+	Shape_t getShape()  { return m_Shape; }
 	void setShape(Shape_t Shape)  throw() { m_Shape = Shape; }
 
 	BYTE getCompetence(void) const { return m_Competence; }

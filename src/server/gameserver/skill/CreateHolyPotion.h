@@ -20,8 +20,8 @@ public:
 	~CreateHolyPotion() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "CreateHolyPotion"; }
-	SkillType_t getSkillType() const throw() { return SKILL_CREATE_HOLY_POTION; }
+    string getSkillHandlerName()  { return "CreateHolyPotion"; }
+	SkillType_t getSkillType()  { return SKILL_CREATE_HOLY_POTION; }
 
 	void execute(Slayer* pSlayer, ObjectID_t, CoordInven_t X, CoordInven_t Y, CoordInven_t TargetX, CoordInven_t TargetY, SkillSlot* pSkillSlot) throw(Error);
 

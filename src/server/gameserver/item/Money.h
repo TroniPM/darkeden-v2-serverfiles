@@ -33,25 +33,25 @@ public:
 	static void initItemIDRegistry(void) throw();
 
 public:
-	virtual ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_MONEY; }
-	virtual string getObjectTableName() const throw() { return "MoneyObject"; }
+	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_MONEY; }
+	virtual string getObjectTableName()  { return "MoneyObject"; }
 
-	virtual ItemType_t getItemType() const throw() { return m_ItemType; }
+	virtual ItemType_t getItemType()  { return m_ItemType; }
 	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() const throw(Error);
 	virtual VolumeHeight_t getVolumeHeight() const throw(Error);
 	virtual Weight_t getWeight() const throw(Error);
 
-	virtual string toString() const throw();
+	virtual string toString() ;
 // add by sonic 2006.10.30
-	virtual ItemNum_t getNum() const throw() { return m_Num; }
+	virtual ItemNum_t getNum()  { return m_Num; }
 	virtual void setNum(ItemNum_t Num) throw() { m_Num = Num; }
 
-	bool    isStackable() const throw() { return true; }
+	bool    isStackable()  { return true; }
 // end 
 public:
-	DWORD getAmount() const throw() { return m_Amount; }
+	DWORD getAmount()  { return m_Amount; }
 	void setAmount(DWORD amount) throw() { m_Amount = amount; }
 
 public:
@@ -61,7 +61,7 @@ public:
 		return lowBits;
 	}
 
-	virtual Silver_t getSilver() const throw() 
+	virtual Silver_t getSilver()  
 	{ 
 		WORD highBits = m_Amount >> 16;
 		return highBits;
@@ -86,8 +86,8 @@ private:
 class MoneyInfo : public ItemInfo 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_MONEY; }
-	virtual string toString() const throw();
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_MONEY; }
+	virtual string toString() ;
 };
 
 
@@ -98,7 +98,7 @@ public:
 class MoneyInfoManager : public InfoClassManager 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_MONEY; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_MONEY; }
 	virtual void load() throw(Error);
 };
 
@@ -112,8 +112,8 @@ extern MoneyInfoManager* g_pMoneyInfoManager;
 class MoneyFactory : public ItemFactory 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_MONEY; }
-	virtual string getItemClassName() const throw() { return "Money"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_MONEY; }
+	virtual string getItemClassName()  { return "Money"; }
 	
 public:
 	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new Money(ItemType,OptionType,1); }
@@ -127,8 +127,8 @@ public:
 class MoneyLoader : public ItemLoader 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_MONEY; }
-	virtual string getItemClassName() const throw() { return "Money"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_MONEY; }
+	virtual string getItemClassName()  { return "Money"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

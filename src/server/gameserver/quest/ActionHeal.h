@@ -19,10 +19,10 @@
 class ActionHeal : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_HEAL; }
+	virtual ActionType_t getActionType()  { return ACTION_HEAL; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 };
 
@@ -34,9 +34,9 @@ public:
 class ActionHealFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_HEAL; }
-	virtual string getActionName() const throw() { return "Heal"; }
-	virtual Action* createAction() const throw() { return new ActionHeal(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_HEAL; }
+	virtual string getActionName()  { return "Heal"; }
+	virtual Action* createAction()  { return new ActionHeal(); }
 
 };
 

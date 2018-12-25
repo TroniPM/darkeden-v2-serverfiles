@@ -638,9 +638,9 @@ public:
 
 // methods from Object
 public:
-	virtual ObjectClass getObjectClass() const throw() { return OBJECT_CLASS_ITEM; }
+	virtual ObjectClass getObjectClass()  { return OBJECT_CLASS_ITEM; }
 	virtual ObjectPriority getObjectPriority() const throw(Error) { return OBJECT_PRIORITY_ITEM; }
-	virtual string toString() const throw() = 0;
+	virtual string toString()  = 0;
 
 
 // DB methods
@@ -657,39 +657,39 @@ public:
 // 이유는 역시 메모리 정렬 문제로 인한 낭비를 
 // 막기 위해서이다.
 public:
-	virtual ItemClass getItemClass() const throw() = 0;
-	string getItemClassName() const throw() { return ItemClass2String[getItemClass()]; }
-	virtual string getObjectTableName() const throw() = 0;
+	virtual ItemClass getItemClass()  = 0;
+	string getItemClassName()  { return ItemClass2String[getItemClass()]; }
+	virtual string getObjectTableName()  = 0;
 
-	virtual bool isSilverWeapon() const throw() { return false; }
-	virtual bool isGun() const throw() { return false; }
+	virtual bool isSilverWeapon()  { return false; }
+	virtual bool isGun()  { return false; }
 
-//	virtual Item* getTreasure() const throw() { return NULL; };
+//	virtual Item* getTreasure()  { return NULL; };
 
-	virtual ItemType_t getItemType() const throw() = 0;
+	virtual ItemType_t getItemType()  = 0;
 	virtual void setItemType(ItemType_t itemType) throw() = 0;
 
-	virtual bool hasOptionType() const throw() { return false; }
-	virtual int getOptionTypeSize() const throw() { return 0; }
-	virtual int getRandomOptionType() const throw() { return 0; }
-	virtual const list<OptionType_t>& getOptionTypeList() const throw() { static list<OptionType_t> nullList; return nullList; }
-	virtual OptionType_t getFirstOptionType() const throw() { return 0; }
+	virtual bool hasOptionType()  { return false; }
+	virtual int getOptionTypeSize()  { return 0; }
+	virtual int getRandomOptionType()  { return 0; }
+	virtual const list<OptionType_t>& getOptionTypeList()  { static list<OptionType_t> nullList; return nullList; }
+	virtual OptionType_t getFirstOptionType()  { return 0; }
 	virtual void removeOptionType(OptionType_t OptionType) throw() {}
 	virtual void changeOptionType(OptionType_t currentOptionType, OptionType_t newOptionType) throw() {}
 	virtual void addOptionType(OptionType_t OptionType) throw() {}
 	virtual void setOptionType(const list<OptionType_t>& OptionType) throw() {}
 
-	virtual bool hasOptionType2() const throw() { return false; }
-	virtual int getOptionTypeSize2() const throw() { return 0; }
-	virtual int getRandomOptionType2() const throw() { return 0; }
-	virtual const list<OptionType_t>& getOptionTypeList2() const throw() { static list<OptionType_t> nullList; return nullList; }
-	virtual OptionType_t getFirstOptionType2() const throw() { return 0; }
+	virtual bool hasOptionType2()  { return false; }
+	virtual int getOptionTypeSize2()  { return 0; }
+	virtual int getRandomOptionType2()  { return 0; }
+	virtual const list<OptionType_t>& getOptionTypeList2()  { static list<OptionType_t> nullList; return nullList; }
+	virtual OptionType_t getFirstOptionType2()  { return 0; }
 	virtual void removeOptionType2(OptionType_t OptionType) throw() {}
 	virtual void changeOptionType2(OptionType_t currentOptionType, OptionType_t newOptionType) throw() {}
 	virtual void addOptionType2(OptionType_t OptionType) throw() {}
 	virtual void setOptionType2(const list<OptionType_t>& OptionType) throw() {}
 
-	ItemID_t getItemID() const throw() { return m_ItemID; }
+	ItemID_t getItemID()  { return m_ItemID; }
 	void setItemID(ItemID_t itemID) throw() { m_ItemID = itemID; }
 
 	virtual VolumeWidth_t getVolumeWidth() const throw(Error) = 0;
@@ -713,24 +713,24 @@ public:
 
     virtual MP_t getMPBonus() const throw(Error) { return 0; }
 
-	virtual ItemNum_t getNum() const throw() { return 1; }
+	virtual ItemNum_t getNum()  { return 1; }
 	virtual void setNum(ItemNum_t Num) throw() {}
 
-	virtual bool isStackable() const throw() { 	return false; }
+	virtual bool isStackable()  { 	return false; }
 
-	virtual BYTE getBulletCount() const throw() { return 0; } 
+	virtual BYTE getBulletCount()  { return 0; } 
 	virtual void setBulletCount(BYTE bulletCount) throw() {}
 
-	virtual Silver_t getSilver() const throw() { return 0; }
+	virtual Silver_t getSilver()  { return 0; }
 	virtual void setSilver(Silver_t amount) throw() { }
 
-	virtual EnchantLevel_t getEnchantLevel() const throw() { return 0;}
+	virtual EnchantLevel_t getEnchantLevel()  { return 0;}
 	virtual void setEnchantLevel(EnchantLevel_t level) throw() { }
 
-	virtual Damage_t getBonusDamage() const throw() { return 0; }
+	virtual Damage_t getBonusDamage()  { return 0; }
 	virtual void setBonusDamage(Damage_t BonusDamage) throw() {}
 
-	virtual int getCriticalBonus(void) const throw() { return 0; }
+	virtual int getCriticalBonus(void)  { return 0; }
 
 	CoordInven_t getX() const { return m_X; }
 	void setX( CoordInven_t X ) { m_X  = X; }
@@ -746,10 +746,10 @@ public:
 
 	virtual Luck_t getLuck() const { return 0; }
 
-	virtual EnchantLevel_t getHeroOption() const throw() { return 0;}
+	virtual EnchantLevel_t getHeroOption()  { return 0;}
 	virtual void setHeroOption(EnchantLevel_t level) throw() { }
 
-	virtual EnchantLevel_t getHeroOptionAttr() const throw() { return 0;}
+	virtual EnchantLevel_t getHeroOptionAttr()  { return 0;}
 	virtual void setHeroOptionAttr(EnchantLevel_t level) throw() { }
 
 	EffectManager& getEffectManager() throw() { return m_EffectManager;}
@@ -759,7 +759,7 @@ public:
     void removeFlag(Effect::EffectClass Flag) throw() { m_Flag.reset(Flag); }
     bool isFlag(Effect::EffectClass Flag) throw() { return m_Flag.test(Flag); }
 
-	virtual const list<OptionType_t>& getDefaultOptions(void) const throw();
+	virtual const list<OptionType_t>& getDefaultOptions(void) ;
 
 	CreateType	getCreateType() const			 { return m_CreateType; }
 	void	setCreateType(CreateType createType) { m_CreateType = createType; }

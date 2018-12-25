@@ -20,13 +20,13 @@
 class ActionAskByQuestLevel : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_ASK_BY_QUEST_LEVEL; }
+	virtual ActionType_t getActionType()  { return ACTION_ASK_BY_QUEST_LEVEL; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
-	ScriptID_t getScriptID( int index ) const throw() { return m_ScriptID[index]; }
+	ScriptID_t getScriptID( int index )  { return m_ScriptID[index]; }
 	void setScriptID( int index, ScriptID_t scriptID ) throw() { m_ScriptID[index] = scriptID; }
 
 private:
@@ -41,8 +41,8 @@ private:
 class ActionAskByQuestLevelFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_ASK_BY_QUEST_LEVEL; }
-	virtual string getActionName() const throw() { return "AskByQuestLevel"; }
-	virtual Action* createAction() const throw() { return new ActionAskByQuestLevel(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_ASK_BY_QUEST_LEVEL; }
+	virtual string getActionName()  { return "AskByQuestLevel"; }
+	virtual Action* createAction()  { return new ActionAskByQuestLevel(); }
 };
 #endif

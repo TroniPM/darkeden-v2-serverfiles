@@ -20,13 +20,13 @@ public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_CG_REQUEST_NEWBIE_ITEM; }
-	PacketSize_t getPacketSize() const throw() { return szBYTE; }
-	string getPacketName() const throw() { return "CGRequestNewbieItem"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_CG_REQUEST_NEWBIE_ITEM; }
+	PacketSize_t getPacketSize()  { return szBYTE; }
+	string getPacketName()  { return "CGRequestNewbieItem"; }
+	string toString() ;
 	
 public:
-	BYTE getItemClass(void) const throw() { return m_ItemClass; }
+	BYTE getItemClass(void)  { return m_ItemClass; }
 	void setItemClass(BYTE itemClass) throw() { m_ItemClass = itemClass; }
 
 private:
@@ -42,9 +42,9 @@ class CGRequestNewbieItemFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new CGRequestNewbieItem(); }
-	string getPacketName() const throw() { return "CGRequestNewbieItem"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_REQUEST_NEWBIE_ITEM; }
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE; }
+	string getPacketName()  { return "CGRequestNewbieItem"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_REQUEST_NEWBIE_ITEM; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE; }
 };
 
 

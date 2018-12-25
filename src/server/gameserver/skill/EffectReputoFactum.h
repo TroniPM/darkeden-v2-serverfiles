@@ -20,7 +20,7 @@ public:
 	EffectReputoFactum(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_REPUTO_FACTUM_LAST; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_REPUTO_FACTUM_LAST; }
 
 	void affect() throw(Error) {}
 	void affect(Creature* pCreature) throw(Error);
@@ -28,7 +28,7 @@ public:
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error); 
 
-	string toString() const throw();
+	string toString() ;
 
 };
 

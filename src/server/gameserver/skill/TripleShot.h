@@ -20,8 +20,8 @@ public:
 	~TripleShot() throw() {}
 
 public:
-    string getSkillHandlerName() const throw() { return "TripleShot"; }
-	SkillType_t getSkillType() const throw() { return SKILL_TRIPLE_SHOT; }
+    string getSkillHandlerName()  { return "TripleShot"; }
+	SkillType_t getSkillType()  { return SKILL_TRIPLE_SHOT; }
 
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

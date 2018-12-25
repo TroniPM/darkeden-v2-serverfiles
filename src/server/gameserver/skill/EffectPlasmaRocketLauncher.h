@@ -20,20 +20,20 @@ public:
 	EffectPlasmaRocketLauncher(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_PLASMA_ROCKET_LAUNCHER; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_PLASMA_ROCKET_LAUNCHER; }
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
 
 	void unaffect() throw(Error);
-	string toString() const throw();
+	string toString() ;
 
 public:
-	HP_t getPoint() const throw() { return m_Point; }
+	HP_t getPoint()  { return m_Point; }
 	void setPoint(HP_t Point) throw() { m_Point = Point; }
 
 	void setUserObjectID(ObjectID_t oid) throw() { m_UserObjectID = oid; }
-	ObjectID_t getUserObjectID() const throw() { return m_UserObjectID; }
+	ObjectID_t getUserObjectID()  { return m_UserObjectID; }
 
 private:
 	HP_t    m_Point;

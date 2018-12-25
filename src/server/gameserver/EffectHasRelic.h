@@ -20,8 +20,8 @@ public:
 	EffectHasRelic(Item* pItem) throw(Error);
 
 public:
-    virtual EffectClass getEffectClass() const throw() = 0;
-    virtual EffectClass getSendEffectClass() const throw() { return (EffectClass)((int)getEffectClass() + m_Part); }
+    virtual EffectClass getEffectClass()  = 0;
+    virtual EffectClass getSendEffectClass()  { return (EffectClass)((int)getEffectClass() + m_Part); }
 
 	virtual void affect() throw(Error);
 	virtual void affect(Creature* pCreature) throw(Error) = 0;
@@ -31,7 +31,7 @@ public:
 	virtual void unaffect(Item* pItem) throw(Error);
 	virtual void unaffect() throw(Error);
 
-	virtual string toString() const throw() = 0;
+	virtual string toString()  = 0;
 
 public:
 	int 	getPart(void) const { return m_Part; }

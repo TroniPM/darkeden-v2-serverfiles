@@ -43,7 +43,7 @@ public:
 	void setGuestName(const string& name) { m_GuestName = name; }
 
 public:
-	string toString(void) const throw();
+	string toString(void) ;
 
 protected:
 	string m_HostName;
@@ -100,7 +100,7 @@ public:
 	Creature* getMember(const string& name) const throw (NoSuchElementException, Error);
 	void addMember(Creature* pCreature) throw (DuplicatedException, Error);
 	void deleteMember(const string& name) throw (NoSuchElementException, Error);
-	bool hasMember(const string& name) const throw();
+	bool hasMember(const string& name) ;
 
 	// 글로벌 파티 매니저에서만 사용한다.
 	// 파티를 해체하기 전에 파티 멤버들의 파티 ID를 0으로 만들고,
@@ -113,24 +113,24 @@ public:
 
 	// 새로운 파티원이 추가되었을 때 파티원들에게 날아가는
 	// GCPartyJoined 패킷을 구성한다.
-	void makeGCPartyJoined(GCPartyJoined* pGCPartyJoined) const throw();
+	void makeGCPartyJoined(GCPartyJoined* pGCPartyJoined) ;
 
 public:
-	int getSize(void) const throw();
+	int getSize(void) ;
 	hash_map<string, Creature*> getMemberMap(void) throw();
 
 	// 근접한 거리(8타일) 내에 있는 멤버들의 숫자를 리턴한다.
-	int getAdjacentMemberSize(Creature* pLeader) const throw();
-	int getAdjacentMemberSize_LOCKED(Creature* pLeader) const throw();
+	int getAdjacentMemberSize(Creature* pLeader) ;
+	int getAdjacentMemberSize_LOCKED(Creature* pLeader) ;
 
 	// 경험치를 부풀려서 나눈다.
-	int shareAttrExp(Creature* pLeader, int amount, int STRMultiplier, int DEXMultiplier, int INTMultiplier, ModifyInfo& LeaderModifyInfo) const throw();
-	int shareVampireExp(Creature* pLeader, int amount, ModifyInfo& LeaderModifyInfo) const throw();
-	int shareOustersExp(Creature* pLeader, int amount, ModifyInfo& LeaderModifyInfo) const throw();
-	int shareAttackBloodBurst(Creature* pLeader, Creature* pTargetCreature, int amount) const throw();
-	int shareDefenseBloodBurst(Creature* pLeader, Creature* pTargetCreature, int amount) const throw();
+	int shareAttrExp(Creature* pLeader, int amount, int STRMultiplier, int DEXMultiplier, int INTMultiplier, ModifyInfo& LeaderModifyInfo) ;
+	int shareVampireExp(Creature* pLeader, int amount, ModifyInfo& LeaderModifyInfo) ;
+	int shareOustersExp(Creature* pLeader, int amount, ModifyInfo& LeaderModifyInfo) ;
+	int shareAttackBloodBurst(Creature* pLeader, Creature* pTargetCreature, int amount) ;
+	int shareDefenseBloodBurst(Creature* pLeader, Creature* pTargetCreature, int amount) ;
 	// 돈을 나눠 같는다. 인던 또는 소환 몬스터 처치후.
-	int shareGold(Creature* pLeader, int amount) const throw();
+	int shareGold(Creature* pLeader, int amount) ;
 
 public:
 	void shareRevealer(Creature* pCaster, int Duration) throw (Error);
@@ -158,7 +158,7 @@ public:
 	void refreshFamilyPay();
 
 public:
-	string toString(void) const throw();
+	string toString(void) ;
 
 protected:
 	int                          m_ID;            // 파티 ID
@@ -186,7 +186,7 @@ public:
 	virtual Party* getParty(int ID) throw (NoSuchElementException, Error);
 
 public:
-	virtual string toString(void) const throw() = 0;
+	virtual string toString(void)  = 0;
 
 protected:
 	hash_map<int, Party*> m_PartyMap; // 파티 집합
@@ -206,13 +206,13 @@ public:
 
 public:
 	void heartbeat(void) throw (Error);
-	int getAdjacentMemberSize(int PartyID, Creature* pLeader) const throw();
-	int shareAttrExp(int PartyID, Creature* pLeader, int amount, int STRMultiplier, int DEXMultiplier, int INTMultiplier, ModifyInfo& LeaderModifyInfo) const throw();
-	int shareVampireExp(int PartyID, Creature* pLeader, int amount, ModifyInfo& LeaderModifyInfo) const throw();
-	int shareOustersExp(int PartyID, Creature* pLeader, int amount, ModifyInfo& LeaderModifyInfo) const throw();
-	int shareAttackBloodBurst(int PartyID, Creature* pLeader, Creature* pTargetCreature, int amount) const throw();
-	int shareDefenseBloodBurst(int PartyID, Creature* pLeader, Creature* pTargetCreature, int amount) const throw();
-	int shareGold(int PartyID, Creature* pLeader, int amount) const throw(); // 돈을 나눠가져요.
+	int getAdjacentMemberSize(int PartyID, Creature* pLeader) ;
+	int shareAttrExp(int PartyID, Creature* pLeader, int amount, int STRMultiplier, int DEXMultiplier, int INTMultiplier, ModifyInfo& LeaderModifyInfo) ;
+	int shareVampireExp(int PartyID, Creature* pLeader, int amount, ModifyInfo& LeaderModifyInfo) ;
+	int shareOustersExp(int PartyID, Creature* pLeader, int amount, ModifyInfo& LeaderModifyInfo) ;
+	int shareAttackBloodBurst(int PartyID, Creature* pLeader, Creature* pTargetCreature, int amount) ;
+	int shareDefenseBloodBurst(int PartyID, Creature* pLeader, Creature* pTargetCreature, int amount) ;
+	int shareGold(int PartyID, Creature* pLeader, int amount) ; // 돈을 나눠가져요.
 	void shareRevealer(int PartyID, Creature* pCaster, int Duration) throw (Error);
 	void shareDetectHidden(int PartyID, Creature* pCaster, int Duration) throw (Error);
 	void shareDetectInvisibility(int PartyID, Creature* pCaster, int Duration) throw (Error);
@@ -224,14 +224,14 @@ public:
 	bool shareWaterElementalHeal(int PartyID, Creature* pCaster, int HealPoint) throw (Error);
 	void shareGDRLairEnter(int PartyID, Creature* pLeader) throw(Error);
 	
-	int shareRankExp(int PartyID, Creature* pLeader, int amount) const throw();
-	int shareAdvancementExp(int PartyID, Creature* pLeader, int amount) const throw();
+	int shareRankExp(int PartyID, Creature* pLeader, int amount) ;
+	int shareAdvancementExp(int PartyID, Creature* pLeader, int amount) ;
 
 	// 인스턴트 던전을 입장한다.
 	void shareInstant(int PartyID, Creature* pLeader, int ZoneID, int X, int Y) throw(Error);
 
 public:
-	virtual string toString(void) const throw();
+	virtual string toString(void) ;
 };
 
 
@@ -256,7 +256,7 @@ public:
 	void refreshFamilyPay(int ID);
 
 public:
-	virtual string toString(void) const throw();
+	virtual string toString(void) ;
 
 protected:
 	int m_PartyIDRegistry; // 파티 ID 생성자

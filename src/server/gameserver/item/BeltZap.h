@@ -32,7 +32,7 @@ public:
 	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) throw(Error);
 	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
 	void tinysave(const char* field) const throw (Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	static void initItemIDRegistry(void) throw();
 
@@ -50,15 +50,15 @@ private:
 class BeltZapInfo : public ItemInfo 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_BELTZAP; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_BELTZAP; }
 	
-	Defense_t getDefenseBonus() const throw() { return m_DefenseBonus; }
+	Defense_t getDefenseBonus()  { return m_DefenseBonus; }
 	void setDefenseBonus(Defense_t acBonus) throw() { m_DefenseBonus = acBonus; }
 
-	Protection_t getProtectionBonus() const throw() { return m_ProtectionBonus; }
+	Protection_t getProtectionBonus()  { return m_ProtectionBonus; }
 	void setProtectionBonus(Protection_t acBonus) throw() { m_ProtectionBonus = acBonus; }
 
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 private:
 	Defense_t     m_DefenseBonus;    // defense bonus
@@ -73,7 +73,7 @@ private:
 class BeltZapInfoManager : public InfoClassManager 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_BELTZAP; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_BELTZAP; }
 	virtual void load() throw(Error);
 };
 
@@ -88,8 +88,8 @@ extern BeltZapInfoManager* g_pBeltZapInfoManager;
 class BeltZapFactory : public ItemFactory 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_BELTZAP; }
-	virtual string getItemClassName() const throw() { return "BeltZap"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_BELTZAP; }
+	virtual string getItemClassName()  { return "BeltZap"; }
 	
 public:
 	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new BeltZap(ItemType,OptionType); }
@@ -103,8 +103,8 @@ public:
 class BeltZapLoader : public ItemLoader 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_BELTZAP; }
-	virtual string getItemClassName() const throw() { return "BeltZap"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_BELTZAP; }
+	virtual string getItemClassName()  { return "BeltZap"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

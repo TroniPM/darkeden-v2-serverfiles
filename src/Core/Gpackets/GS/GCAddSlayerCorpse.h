@@ -42,27 +42,27 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_ADD_SLAYER_CORPSE; }
+	PacketID_t getPacketID()  { return PACKET_GC_ADD_SLAYER_CORPSE; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return m_SlayerInfo.getSize() + szBYTE; }
+	PacketSize_t getPacketSize()  { return m_SlayerInfo.getSize() + szBYTE; }
 
 	// get packet's name
-	string getPacketName() const throw() { return "GCAddSlayerCorpse"; }
+	string getPacketName()  { return "GCAddSlayerCorpse"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 
 public :
 
 	// get slayer info
 	PCSlayerInfo3 & getSlayerInfo() throw() { return m_SlayerInfo; }
-	const PCSlayerInfo3 & getSlayerInfo() const throw() { return m_SlayerInfo; }
+	const PCSlayerInfo3 & getSlayerInfo()  { return m_SlayerInfo; }
 	void setSlayerInfo(const PCSlayerInfo3 & slayerInfo) throw() { m_SlayerInfo = slayerInfo; }
 
 	// get/set Treasure Count
-	BYTE getTreasureCount() const throw() { return m_TreasureCount; }
+	BYTE getTreasureCount()  { return m_TreasureCount; }
 	void setTreasureCount(BYTE Count) throw() { m_TreasureCount = Count; }
 
 private :
@@ -92,15 +92,15 @@ public :
 	Packet* createPacket() throw() { return new GCAddSlayerCorpse(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCAddSlayerCorpse"; }
+	string getPacketName()  { return "GCAddSlayerCorpse"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_ADD_SLAYER_CORPSE; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_SLAYER_CORPSE; }
 
 	// get packet's body size
 	// *OPTIMIZATION HINT*
 	// const static GCAddSlayerCorpsePacketSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw()
+	PacketSize_t getPacketMaxSize() 
 	{ 
 		return PCSlayerInfo3::getMaxSize() + szBYTE;
 	}

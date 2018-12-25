@@ -20,9 +20,9 @@ public:
 	~DetectInvisibility() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "DetectInvisibility"; }
+    string getSkillHandlerName()  { return "DetectInvisibility"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_DETECT_INVISIBILITY; }
+	SkillType_t getSkillType()  { return SKILL_DETECT_INVISIBILITY; }
 
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

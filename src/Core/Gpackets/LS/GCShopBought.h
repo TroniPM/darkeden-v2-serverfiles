@@ -29,8 +29,8 @@ public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_SHOP_BOUGHT; }
-	PacketSize_t getPacketSize() const throw() 
+	PacketID_t getPacketID()  { return PACKET_GC_SHOP_BOUGHT; }
+	PacketSize_t getPacketSize()  
 	{ 
 		return szObjectID +   // NPC OID
 			szShopVersion +   // shop version
@@ -45,34 +45,34 @@ public:
 			szGrade +
 			szEnchantLevel;   // enchant level
 	}
-	string getPacketName() const throw() { return "GCShopBought"; }
-	string toString() const throw();
+	string getPacketName()  { return "GCShopBought"; }
+	string toString() ;
 
 
 public:
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t creatureID) throw() { m_ObjectID = creatureID; }
 
-	ShopVersion_t getShopVersion(void) const throw() { return m_Version;}
+	ShopVersion_t getShopVersion(void)  { return m_Version;}
 	void setShopVersion(const ShopVersion_t ver) throw() { m_Version = ver;}
 
-	ShopRackType_t getShopType(void) const throw() { return m_ShopType;}
+	ShopRackType_t getShopType(void)  { return m_ShopType;}
 	void setShopType(ShopRackType_t type) throw() { m_ShopType = type;}
 
-	BYTE getShopIndex(void) const throw() { return m_ShopIndex;}
+	BYTE getShopIndex(void)  { return m_ShopIndex;}
 	void setShopIndex(BYTE index) throw() { m_ShopIndex = index;}
 	
-	ObjectID_t getItemObjectID(void) const throw() { return m_ItemObjectID;}
+	ObjectID_t getItemObjectID(void)  { return m_ItemObjectID;}
 	void setItemObjectID(ObjectID_t oid) throw() { m_ItemObjectID = oid;}
 	
-	int getItemClass(void) const throw() { return m_ItemClass;}
+	int getItemClass(void)  { return m_ItemClass;}
 	void setItemClass(int iclass) throw() { m_ItemClass = iclass;}
 	
-	ItemType_t getItemType(void) const throw() { return m_ItemType;}
+	ItemType_t getItemType(void)  { return m_ItemType;}
 	void setItemType(ItemType_t type) throw() { m_ItemType = type;}
 	
-	int getOptionTypeSize(void) const throw() { return m_OptionType.size();}
-	const list<OptionType_t>& getOptionType() const throw() { return m_OptionType; }
+	int getOptionTypeSize(void)  { return m_OptionType.size();}
+	const list<OptionType_t>& getOptionType()  { return m_OptionType; }
 	OptionType_t popOptionType(void) throw()
 	{
 		if (m_OptionType.empty()) return 0;
@@ -83,16 +83,16 @@ public:
 	void addOptionType(OptionType_t type) throw() { m_OptionType.push_back( type ); }
 	void setOptionType(const list<OptionType_t>& OptionTypes) throw() { m_OptionType = OptionTypes; }
 	
-	Durability_t getDurability(void) const throw() { return m_Durability;}
+	Durability_t getDurability(void)  { return m_Durability;}
 	void setDurability(Durability_t dur) throw() { m_Durability = dur;}
 
-	Silver_t getSilver(void) const throw() { return m_Silver; }
+	Silver_t getSilver(void)  { return m_Silver; }
 	void setSilver(Silver_t silver) throw() { m_Silver = silver; }
 
-	Grade_t getGrade(void) const throw() { return m_Grade; }
+	Grade_t getGrade(void)  { return m_Grade; }
 	void setGrade(Grade_t grade) throw() { m_Grade = grade; }
 
-	EnchantLevel_t getEnchantLevel(void) const throw() { return m_EnchantLevel; }
+	EnchantLevel_t getEnchantLevel(void)  { return m_EnchantLevel; }
 	void setEnchantLevel(EnchantLevel_t level) throw() { m_EnchantLevel = level; }
 	
 
@@ -121,9 +121,9 @@ class GCShopBoughtFactory : public PacketFactory
 {
 public :
 	Packet* createPacket() throw() { return new GCShopBought(); }
-	string getPacketName() const throw() { return "GCShopBought"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_SHOP_BOUGHT; }
-	PacketSize_t getPacketMaxSize() const throw() 
+	string getPacketName()  { return "GCShopBought"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_SHOP_BOUGHT; }
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		return szObjectID +  // NPC OID
 			szShopVersion +  // shop version

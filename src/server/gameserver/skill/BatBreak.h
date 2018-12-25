@@ -20,8 +20,8 @@ public:
 	~BatBreak() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "BatBreak"; }
-	SkillType_t getSkillType() const throw() { return SKILL_BAT_BREAK; }
+    string getSkillHandlerName()  { return "BatBreak"; }
+	SkillType_t getSkillType()  { return SKILL_BAT_BREAK; }
 
 	void execute(Vampire* pVampire, ObjectID_t ObjectID,  VampireSkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

@@ -33,18 +33,18 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_LC_REGISTER_PLAYER_ERROR; }
+	PacketID_t getPacketID()  { return PACKET_LC_REGISTER_PLAYER_ERROR; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szBYTE; }
+	PacketSize_t getPacketSize()  { return szBYTE; }
 	
 	// get packet's name
-	string getPacketName() const throw() { return "LCRegisterPlayerError"; }
+	string getPacketName()  { return "LCRegisterPlayerError"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 	
-	BYTE getErrorID() const throw() { return m_ErrorID; }
+	BYTE getErrorID()  { return m_ErrorID; }
 	void setErrorID(BYTE ErrorID) throw() { m_ErrorID = ErrorID; }
 
 private : 
@@ -71,13 +71,13 @@ public:
 	Packet* createPacket() throw() { return new LCRegisterPlayerError(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "LCRegisterPlayerError"; }
+	string getPacketName()  { return "LCRegisterPlayerError"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_LC_REGISTER_PLAYER_ERROR; }
+	PacketID_t getPacketID()  { return Packet::PACKET_LC_REGISTER_PLAYER_ERROR; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE; }
 	
 };
 

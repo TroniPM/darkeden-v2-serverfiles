@@ -20,8 +20,8 @@ public:
 	~PoisonousHands() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "PoisonousHands"; }
-	SkillType_t getSkillType() const throw() { return SKILL_POISONOUS_HANDS; }
+    string getSkillHandlerName()  { return "PoisonousHands"; }
+	SkillType_t getSkillType()  { return SKILL_POISONOUS_HANDS; }
 
 	void execute(Vampire* pVampire, ObjectID_t targetObject, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Monster* pMonster, Creature* pEnemy) throw(Error);

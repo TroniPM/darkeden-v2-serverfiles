@@ -19,7 +19,7 @@ public:
 	EffectAcidEruption(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_ACID_ERUPTION; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_ACID_ERUPTION; }
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
@@ -27,7 +27,7 @@ public:
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error); 
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	Damage_t	getDamage() const { return m_Damage; }

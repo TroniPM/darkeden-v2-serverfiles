@@ -29,10 +29,10 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_PET_USE_SKILL; }
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szObjectID; }
-	string getPacketName() const throw() { return "GCPetUseSkill"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_PET_USE_SKILL; }
+	PacketSize_t getPacketSize()  { return szObjectID + szObjectID; }
+	string getPacketName()  { return "GCPetUseSkill"; }
+	string toString() ;
 
 public:
 	ObjectID_t	getAttacker() const { return m_Attacker; }
@@ -58,9 +58,9 @@ public :
 	
 public:
 	Packet* createPacket() throw() { return new GCPetUseSkill(); }
-	string getPacketName() const throw() { return "GCPetUseSkill"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_PET_USE_SKILL; }
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szObjectID; }
+	string getPacketName()  { return "GCPetUseSkill"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_PET_USE_SKILL; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szObjectID; }
 };
 
 //////////////////////////////////////////////////////////////////////////////

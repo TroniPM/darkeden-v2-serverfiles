@@ -20,19 +20,19 @@
 class ActionActivateMazeExit : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_ACTIVATE_MAZE_EXIT; }
+	virtual ActionType_t getActionType()  { return ACTION_ACTIVATE_MAZE_EXIT; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
-	ZoneID_t    getGoodZoneID(void) const throw() { return m_GoodZoneID; }
-	ZoneCoord_t getGoodX(void) const throw() { return m_GoodX; }
-	ZoneCoord_t getGoodY(void) const throw() { return m_GoodY; }
-	ZoneID_t    getBadZoneID(void) const throw() { return m_BadZoneID; }
-	ZoneCoord_t getBadX(void) const throw() { return m_BadX; }
-	ZoneCoord_t getBadY(void) const throw() { return m_BadY; }
-	int			getExitID() const throw() { return m_ExitID; }
+	ZoneID_t    getGoodZoneID(void)  { return m_GoodZoneID; }
+	ZoneCoord_t getGoodX(void)  { return m_GoodX; }
+	ZoneCoord_t getGoodY(void)  { return m_GoodY; }
+	ZoneID_t    getBadZoneID(void)  { return m_BadZoneID; }
+	ZoneCoord_t getBadX(void)  { return m_BadX; }
+	ZoneCoord_t getBadY(void)  { return m_BadY; }
+	int			getExitID()  { return m_ExitID; }
 
 private:
 	ZoneID_t    m_GoodZoneID;
@@ -52,8 +52,8 @@ private:
 class ActionActivateMazeExitFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_ACTIVATE_MAZE_EXIT; }
-	virtual string getActionName() const throw() { return "ActivateMazeExit"; }
-	virtual Action* createAction() const throw() { return new ActionActivateMazeExit(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_ACTIVATE_MAZE_EXIT; }
+	virtual string getActionName()  { return "ActivateMazeExit"; }
+	virtual Action* createAction()  { return new ActionActivateMazeExit(); }
 };
 #endif

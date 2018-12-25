@@ -19,12 +19,12 @@ public:
 	EffectTorrentialLife(Creature* pCreature) throw(Error);
 
 public:
-	EffectClass getEffectClass() const throw() { return EFFECT_CLASS_TORRENTIALLIFE; }
+	EffectClass getEffectClass()  { return EFFECT_CLASS_TORRENTIALLIFE; }
 
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error); 
 
-	string toString() const throw();
+	string toString() ;
 
 	int getBonus() const { return m_Bonus; }
 	void setBonus(int bonus) { m_Bonus = bonus; }

@@ -34,7 +34,7 @@ public:
 	void load(Ousters* pOusters) throw(Error);
 	void load(Zone* pZone) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	ItemLoader* m_pItemLoaders[Item::ITEM_CLASS_MAX];

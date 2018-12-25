@@ -20,9 +20,9 @@ public:
 	~SoulRebirth() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "SoulRebirth"; }
+    string getSkillHandlerName()  { return "SoulRebirth"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_SOUL_REBIRTH; }
+	SkillType_t getSkillType()  { return SKILL_SOUL_REBIRTH; }
 
 	void execute(Ousters* pOusters, ObjectID_t ObjectID, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 

@@ -20,10 +20,10 @@
 class ActionCheckPartnerName : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_CHECK_PARTNER_NAME; }
+	virtual ActionType_t getActionType()  { return ACTION_CHECK_PARTNER_NAME; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 };
 
 
@@ -34,8 +34,8 @@ public:
 class ActionCheckPartnerNameFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_CHECK_PARTNER_NAME; }
-	virtual string getActionName() const throw() { return "CheckPartnerName"; }
-	virtual Action* createAction() const throw() { return new ActionCheckPartnerName(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_CHECK_PARTNER_NAME; }
+	virtual string getActionName()  { return "CheckPartnerName"; }
+	virtual Action* createAction()  { return new ActionCheckPartnerName(); }
 };
 #endif

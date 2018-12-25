@@ -20,15 +20,15 @@ public:
 	EffectCyclingWarRock(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_CYCLING_WAR_ROCK; }
-	EffectClass getSendEffectClass() const throw() { return m_SendEffectClass; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_CYCLING_WAR_ROCK; }
+	EffectClass getSendEffectClass()  { return m_SendEffectClass; }
 
 	void affect() throw(Error);
 
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void setSendEffectClass(EffectClass eClass) throw() { m_SendEffectClass = eClass; }

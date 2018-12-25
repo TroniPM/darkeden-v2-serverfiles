@@ -34,20 +34,20 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_REAL_WEARING_INFO; }
+	PacketID_t getPacketID()  { return PACKET_GC_REAL_WEARING_INFO; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szDWORD; }
+	PacketSize_t getPacketSize()  { return szDWORD; }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCRealWearingInfo"; }
+	string getPacketName()  { return "GCRealWearingInfo"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 	
 public :
 
-	DWORD getInfo(void) const throw() { return m_Info;}
+	DWORD getInfo(void)  { return m_Info;}
 	void setInfo(DWORD info) throw() { m_Info = info;}
 
 private :
@@ -73,15 +73,15 @@ public :
 	Packet* createPacket() throw() { return new GCRealWearingInfo(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCRealWearingInfo"; }
+	string getPacketName()  { return "GCRealWearingInfo"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_REAL_WEARING_INFO; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_REAL_WEARING_INFO; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCRealWearingInfoPacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szDWORD; }
+	PacketSize_t getPacketMaxSize()  { return szDWORD; }
 
 };
 

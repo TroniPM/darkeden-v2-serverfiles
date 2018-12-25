@@ -18,11 +18,11 @@
 class ConditionCanEnterDynamicZone : public Condition 
 {
 public:
-	virtual ConditionType_t getConditionType() const throw() { return CONDITION_CAN_ENTER_DYNAMIC_ZONE; }
-	virtual bool isPassive() const throw() { return true; }
-	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) const throw();
+	virtual ConditionType_t getConditionType()  { return CONDITION_CAN_ENTER_DYNAMIC_ZONE; }
+	virtual bool isPassive()  { return true; }
+	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) ;
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 	ZoneID_t	m_DynamicZoneID;
@@ -35,9 +35,9 @@ public:
 class ConditionCanEnterDynamicZoneFactory : public ConditionFactory 
 {
 public:
-    virtual ConditionType_t getConditionType() const throw() { return Condition::CONDITION_CAN_ENTER_DYNAMIC_ZONE; }
-    virtual Condition* createCondition() const throw() { return new ConditionCanEnterDynamicZone(); }
-    virtual string getConditionName() const throw() { return "CanEnterDynamicZone"; }
+    virtual ConditionType_t getConditionType()  { return Condition::CONDITION_CAN_ENTER_DYNAMIC_ZONE; }
+    virtual Condition* createCondition()  { return new ConditionCanEnterDynamicZone(); }
+    virtual string getConditionName()  { return "CanEnterDynamicZone"; }
 };
 
 #endif

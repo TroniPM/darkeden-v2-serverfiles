@@ -20,9 +20,9 @@ public:
 	~WildWolf() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "WildWolf"; }
+    string getSkillHandlerName()  { return "WildWolf"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_WILD_WOLF; }
+	SkillType_t getSkillType()  { return SKILL_WILD_WOLF; }
 
 	void execute(Vampire* pVampire, ObjectID_t targetObject, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Monster* pMonster, Creature* pEnemy) throw(Error);

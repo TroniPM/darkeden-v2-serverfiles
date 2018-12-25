@@ -18,7 +18,7 @@
 #include "ZoneUtil.h"
 #include "Utility.h"
 
-Effect::EffectClass EffectWithWarning::getEffectClass() const throw()
+Effect::EffectClass EffectWithWarning::getEffectClass() 
 {
 	if ( m_State ) return m_MainEffect;
 	return m_SignEffect;

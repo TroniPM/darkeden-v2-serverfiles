@@ -45,23 +45,23 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_SAY; }
+	PacketID_t getPacketID()  { return PACKET_CG_SAY; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szuint + szBYTE + m_Message.size(); }
+	PacketSize_t getPacketSize()  { return szuint + szBYTE + m_Message.size(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGSay"; }
+	string getPacketName()  { return "CGSay"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get/set text color
-	uint getColor() const throw() { return m_Color; }
+	uint getColor()  { return m_Color; }
 	void setColor( uint color ) throw() { m_Color = color; }
 
 	// get/set chatting message
-	const string& getMessage() const throw() { return m_Message; }
+	const string& getMessage()  { return m_Message; }
 	void setMessage(const string & msg) throw() { m_Message = msg; }
 	
 
@@ -92,14 +92,14 @@ public:
 	Packet* createPacket() throw() { return new CGSay(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGSay"; }
+	string getPacketName()  { return "CGSay"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_SAY; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_SAY; }
 
 	// get packet's max body size
 	// message 의 최대 크기에 대한 설정이 필요하다.
-	PacketSize_t getPacketMaxSize() const throw() { return szuint + szBYTE + 128; }
+	PacketSize_t getPacketMaxSize()  { return szuint + szBYTE + 128; }
 
 };
 

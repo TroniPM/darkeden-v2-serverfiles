@@ -20,8 +20,8 @@ public:
 	~RemoveCurse() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "RemoveCurse"; }
-	SkillType_t getSkillType() const throw() { return SKILL_REMOVE_CURSE; }
+    string getSkillHandlerName()  { return "RemoveCurse"; }
+	SkillType_t getSkillType()  { return SKILL_REMOVE_CURSE; }
 
 	void execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);

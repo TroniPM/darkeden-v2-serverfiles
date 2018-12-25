@@ -31,15 +31,15 @@ public:
 	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) throw(Error);
 	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
 	void tinysave(const char* field) const throw (Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	static void initItemIDRegistry(void) throw();
 
 public:
-//	virtual ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_DYE_POTION; }
-//	virtual string getObjectTableName() const throw() { return "DyePotionObject"; }
+//	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_DYE_POTION; }
+//	virtual string getObjectTableName()  { return "DyePotionObject"; }
 
-/*	virtual ItemType_t getItemType() const throw() { return m_ItemType; }
+/*	virtual ItemType_t getItemType()  { return m_ItemType; }
 	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() const throw(Error);
@@ -47,10 +47,10 @@ public:
 	virtual Weight_t getWeight() const throw(Error);
 
 public:
-	virtual ItemNum_t getNum() const throw() { return m_Num; }
+	virtual ItemNum_t getNum()  { return m_Num; }
 	virtual void setNum(ItemNum_t Num) throw() { m_Num = Num; }
 
-	bool    isStackable() const throw() { return false; }
+	bool    isStackable()  { return false; }
 */
 private:
 //	ItemType_t m_ItemType;
@@ -85,14 +85,14 @@ public:
 	};
 
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_DYE_POTION; }
-	virtual string toString() const throw();
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_DYE_POTION; }
+	virtual string toString() ;
 
 public :
-	virtual BYTE getFunctionFlag() const throw() { return m_fFunction; }
+	virtual BYTE getFunctionFlag()  { return m_fFunction; }
 	virtual void setFunctionFlag(BYTE flag) throw() { m_fFunction = flag; }
 
-	virtual int getFunctionValue() const throw() { return m_FunctionValue; }
+	virtual int getFunctionValue()  { return m_FunctionValue; }
 	virtual void setFunctionValue(int value) throw() { m_FunctionValue = value; }
 
 
@@ -107,7 +107,7 @@ public :
 class DyePotionInfoManager : public InfoClassManager 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_DYE_POTION; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_DYE_POTION; }
 	virtual void load() throw(Error);
 };
 
@@ -120,8 +120,8 @@ extern DyePotionInfoManager* g_pDyePotionInfoManager;
 class DyePotionFactory : public ItemFactory 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_DYE_POTION; }
-	virtual string getItemClassName() const throw() { return "DyePotion"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_DYE_POTION; }
+	virtual string getItemClassName()  { return "DyePotion"; }
 	
 public:
 	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new DyePotion(ItemType,OptionType,1); }
@@ -134,8 +134,8 @@ public:
 class DyePotionLoader : public ItemLoader 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_DYE_POTION; }
-	virtual string getItemClassName() const throw() { return "DyePotion"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_DYE_POTION; }
+	virtual string getItemClassName()  { return "DyePotion"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

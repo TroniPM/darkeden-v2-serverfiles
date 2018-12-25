@@ -62,9 +62,9 @@ public: // memory related methods
 
 
 public: // misc methods
-	ushort getGuildSize() const throw() { return m_Guilds.size(); }
+	ushort getGuildSize()  { return m_Guilds.size(); }
 	HashMapGuild& getGuilds() throw() { return m_Guilds; }
-	const HashMapGuild& getGuilds_const() const throw() { return m_Guilds; }
+	const HashMapGuild& getGuilds_const()  { return m_Guilds; }
 
 #ifdef __SHARED_SERVER__
 public:
@@ -98,7 +98,7 @@ public:
 	bool hasActiveWar( GuildID_t guidlID ) throw(Error);
 
 public: // debug
-	string toString(void) const throw();
+	string toString(void) ;
 
 
 ///// Member data /////

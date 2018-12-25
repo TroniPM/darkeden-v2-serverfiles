@@ -33,7 +33,7 @@ public:
 	bool	isAnotherQuest() const { return true; }
 	QuestID_t	getQuestID() const { return m_QuestID; }
 
-	virtual string	toString() const throw();
+	virtual string	toString() ;
 
 private:
 	QuestID_t		m_QuestID;

@@ -29,7 +29,7 @@ GCShowUnionInfo::~GCShowUnionInfo()
     __END_CATCH
 }
 
-PacketSize_t GCShowUnionInfo::getPacketSize() const throw()
+PacketSize_t GCShowUnionInfo::getPacketSize() 
 {
 	PacketSize_t ret = m_MasterGuildInfo.getSize() + szBYTE;
 

@@ -83,7 +83,7 @@ void EffectExtreme::unaffect(Creature* pCreature)
 }
 
 string EffectExtreme::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

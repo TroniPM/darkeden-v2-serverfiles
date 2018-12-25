@@ -22,10 +22,10 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_CG_SELECT_TILE_EFFECT; }
-	PacketSize_t getPacketSize() const throw() { return szObjectID; }
-	string getPacketName() const throw() { return "CGSelectTileEffect"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_CG_SELECT_TILE_EFFECT; }
+	PacketSize_t getPacketSize()  { return szObjectID; }
+	string getPacketName()  { return "CGSelectTileEffect"; }
+	string toString() ;
 
 public:
 	ObjectID_t getEffectObjectID(void) const { return m_EffectObjectID; }
@@ -43,9 +43,9 @@ private:
 class CGSelectTileEffectFactory : public PacketFactory 
 {
 	Packet* createPacket() throw() { return new CGSelectTileEffect(); }
-	string getPacketName() const throw() { return "CGSelectTileEffect"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_SELECT_TILE_EFFECT; }
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID; }
+	string getPacketName()  { return "CGSelectTileEffect"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_SELECT_TILE_EFFECT; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID; }
 };
 
 

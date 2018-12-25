@@ -20,8 +20,8 @@ public:
 	~Sanctuary() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Sanctuary"; }
-	SkillType_t getSkillType() const throw() { return SKILL_SANCTUARY; }
+    string getSkillHandlerName()  { return "Sanctuary"; }
+	SkillType_t getSkillType()  { return SKILL_SANCTUARY; }
 
 	void execute(Slayer* pSlayer, ZoneCoord_t X, ZoneCoord_t Y, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Slayer* pSlayer, ObjectID_t, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);

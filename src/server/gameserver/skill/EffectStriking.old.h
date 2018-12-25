@@ -20,7 +20,7 @@ public:
 	EffectStriking(Item* pItem) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_STRIKING; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_STRIKING; }
 
 	void affect() throw(Error){}
 	void affect(Item* pItem) throw(Error);
@@ -31,7 +31,7 @@ public:
     void unaffect() throw(Error);
 	void unaffect(Creature* pCreature) throw(Error){};		
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void setIncDamage(Damage_t d) throw(Error) { m_incDamage = d;}

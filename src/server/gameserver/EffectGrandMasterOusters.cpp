@@ -24,7 +24,7 @@ EffectGrandMasterOusters::EffectGrandMasterOusters(Creature* pCreature)
 	__END_CATCH
 }
 
-Effect::EffectClass EffectGrandMasterOusters::getSendEffectClass() const throw()
+Effect::EffectClass EffectGrandMasterOusters::getSendEffectClass() 
 {
 	Ousters* pOusters = dynamic_cast<Ousters*>(m_pTarget);
 	if ( pOusters == NULL ) return getEffectClass();
@@ -108,7 +108,7 @@ void EffectGrandMasterOusters::unaffect(Creature* pCreature)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 string EffectGrandMasterOusters::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

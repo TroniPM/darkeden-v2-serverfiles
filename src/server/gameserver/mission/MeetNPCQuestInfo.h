@@ -23,7 +23,7 @@ public:
 
 public:
 
-	virtual string					toString() const throw();
+	virtual string					toString() ;
 
 	MeetNPCQuestStatus*	makeQuestStatus( PlayerCreature* pPC ) const throw(Error);
 

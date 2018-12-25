@@ -20,7 +20,7 @@ public:
 	EffectSnipingMode(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_SNIPING_MODE; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_SNIPING_MODE; }
 
 	void affect() throw(Error){}
 	void affect(Creature* pCreature) throw(Error);
@@ -31,7 +31,7 @@ public:
 	void unaffect(Item* pItem) throw(Error) {}
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	int getRevealRatio(void) const { return m_RevealRatio; }

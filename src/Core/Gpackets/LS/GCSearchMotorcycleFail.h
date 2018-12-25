@@ -26,10 +26,10 @@ public :
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_SEARCH_MOTORCYCLE_FAIL; }
-	PacketSize_t getPacketSize() const throw() { return 0; }
-	string getPacketName() const throw() { return "GCSearchMotorcycleFail"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_SEARCH_MOTORCYCLE_FAIL; }
+	PacketSize_t getPacketSize()  { return 0; }
+	string getPacketName()  { return "GCSearchMotorcycleFail"; }
+	string toString() ;
 };
 
 
@@ -47,9 +47,9 @@ class GCSearchMotorcycleFailFactory : public PacketFactory
 public :
 	
 	Packet* createPacket() throw() { return new GCSearchMotorcycleFail(); }
-	string getPacketName() const throw() { return "GCSearchMotorcycleFail"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_SEARCH_MOTORCYCLE_FAIL; }
-	PacketSize_t getPacketMaxSize() const throw() { return 0; }
+	string getPacketName()  { return "GCSearchMotorcycleFail"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_SEARCH_MOTORCYCLE_FAIL; }
+	PacketSize_t getPacketMaxSize()  { return 0; }
 
 };
 

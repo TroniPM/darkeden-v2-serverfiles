@@ -18,14 +18,14 @@
 class ConditionFlagOn : public Condition 
 {
 public:
-	virtual ConditionType_t getConditionType() const throw() { return CONDITION_FLAG_ON; }
-	virtual bool isPassive() const throw() { return true; }
-	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) const throw();
+	virtual ConditionType_t getConditionType()  { return CONDITION_FLAG_ON; }
+	virtual bool isPassive()  { return true; }
+	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) ;
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
-	int getIndex(void) const throw() { return m_Index; }
+	int getIndex(void)  { return m_Index; }
 	void setIndex(int index) throw() { m_Index = index; }
 
 private:
@@ -40,9 +40,9 @@ private:
 class ConditionFlagOnFactory : public ConditionFactory 
 {
 public:
-    virtual ConditionType_t getConditionType() const throw() { return Condition::CONDITION_FLAG_ON; }
-    virtual Condition* createCondition() const throw() { return new ConditionFlagOn(); }
-    virtual string getConditionName() const throw() { return "FlagOn"; }
+    virtual ConditionType_t getConditionType()  { return Condition::CONDITION_FLAG_ON; }
+    virtual Condition* createCondition()  { return new ConditionFlagOn(); }
+    virtual string getConditionName()  { return "FlagOn"; }
 };
 
 #endif

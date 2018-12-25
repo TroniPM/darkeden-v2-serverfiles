@@ -32,18 +32,18 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_NPC_TALK; }
+	PacketID_t getPacketID()  { return PACKET_CG_NPC_TALK; }
 	
 	// get packet's body size
 	// *OPTIMIZATION HINT*
 	// const static CGNPCTalkPacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketSize() const throw() { return szObjectID; }
+	PacketSize_t getPacketSize()  { return szObjectID; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGNPCTalk"; }
+	string getPacketName()  { return "CGNPCTalk"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 	
 public:
 
@@ -75,15 +75,15 @@ public:
 	Packet* createPacket() throw() { return new CGNPCTalk(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGNPCTalk"; }
+	string getPacketName()  { return "CGNPCTalk"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_NPC_TALK; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_NPC_TALK; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static CGNPCTalkPacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID; }
 
 };
 

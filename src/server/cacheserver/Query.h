@@ -32,23 +32,23 @@ class Query
 {
 public:
 	// Query Object ID 
-	QueryID_t getQueryID() const throw() { return m_QueryID; }
+	QueryID_t getQueryID()  { return m_QueryID; }
 	void setQueryID(QueryID_t QueryID) throw() { m_QueryID := QueryID; }
 
 	// Query Object Type
-	QueryType_t getQueryType() const throw() { return m_QueryType; }
+	QueryType_t getQueryType()  { return m_QueryType; }
 	void setQueryType(QueryType QueryType) throw() { m_QueryType := QueryType; }
 
 	// Query Owner
-	string getQueryOwnerID() const throw() { return m_QueryOwnerID; }
+	string getQueryOwnerID()  { return m_QueryOwnerID; }
 	void setQueryOwnerID(const string& ownerID) { m_QueryOwnerID := ownerID; }
 
 	// Query Relate
-	string getQueryRelateID() const throw() { return m_QueryRelateID; }
+	string getQueryRelateID()  { return m_QueryRelateID; }
 	void setQueryRelateID(const string& relateID) { m_QueryRelateID := relateID; }
 
 	// Query to String
-	string toString() const throw();
+	string toString() ;
 
 private:
 	QueryID_t  m_QueryID;

@@ -47,24 +47,24 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_PHONE_DISCONNECTED; }
+	PacketID_t getPacketID()  { return PACKET_GC_PHONE_DISCONNECTED; }
 	
 	// get packet's body size
 	// 최적화시, 미리 계산된 정수를 사용한다.
-	PacketSize_t getPacketSize() const throw() { return szPhoneNumber + szSlotID; }
+	PacketSize_t getPacketSize()  { return szPhoneNumber + szSlotID; }
 
 	// get packet's name
-	string getPacketName() const throw() { return "GCPhoneDisconnected"; }
+	string getPacketName()  { return "GCPhoneDisconnected"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get/set PhoneNumber
-	PhoneNumber_t getPhoneNumber() const throw() { return m_PhoneNumber; }
+	PhoneNumber_t getPhoneNumber()  { return m_PhoneNumber; }
 	void setPhoneNumber(PhoneNumber_t PhoneNumber) throw() { m_PhoneNumber = PhoneNumber; }
 
 	// get/set SlotID
-	SlotID_t getSlotID() const throw() { return m_SlotID; }
+	SlotID_t getSlotID()  { return m_SlotID; }
 	void setSlotID(SlotID_t SlotID) throw() { m_SlotID = SlotID; }
 
 private :
@@ -103,13 +103,13 @@ public :
 	Packet* createPacket() throw() { return new GCPhoneDisconnected(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCPhoneDisconnected"; }
+	string getPacketName()  { return "GCPhoneDisconnected"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_PHONE_DISCONNECTED; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_PHONE_DISCONNECTED; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szPhoneNumber + szSlotID; }
+	PacketSize_t getPacketMaxSize()  { return szPhoneNumber + szSlotID; }
 
 };
 

@@ -36,19 +36,19 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_REMOVE_INJURIOUS_CREATURE; }
+	PacketID_t getPacketID()  { return PACKET_GC_REMOVE_INJURIOUS_CREATURE; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szBYTE + m_Name.size(); }
+	PacketSize_t getPacketSize()  { return szBYTE + m_Name.size(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCRemoveInjuriousCreature"; }
+	string getPacketName()  { return "GCRemoveInjuriousCreature"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get/set Name
-	string getName() const throw() { return m_Name; }
+	string getName()  { return m_Name; }
 	void setName(const string & Name) throw() { m_Name = Name; }
 
 private :
@@ -74,14 +74,14 @@ public:
 	Packet* createPacket() throw() { return new GCRemoveInjuriousCreature(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCRemoveInjuriousCreature"; }
+	string getPacketName()  { return "GCRemoveInjuriousCreature"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_REMOVE_INJURIOUS_CREATURE; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_REMOVE_INJURIOUS_CREATURE; }
 
 	// get packet's max body size
 	// message 의 최대 크기에 대한 설정이 필요하다.
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + 10; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + 10; }
 
 };
 

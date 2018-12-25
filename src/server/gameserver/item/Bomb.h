@@ -29,15 +29,15 @@ public:
 	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) throw(Error);
 	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
 	void tinysave(const char* field) const throw (Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	static void initItemIDRegistry(void) throw();
 
 public:
-	virtual ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_BOMB; }
-	virtual string getObjectTableName() const throw() { return "BombObject"; }
+	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_BOMB; }
+	virtual string getObjectTableName()  { return "BombObject"; }
 
-	virtual ItemType_t getItemType() const throw() { return m_ItemType; }
+	virtual ItemType_t getItemType()  { return m_ItemType; }
 	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() const throw(Error);
@@ -53,10 +53,10 @@ public:
 	virtual Damage_t getMinDamage() const throw(Error);
 	virtual Damage_t getMaxDamage() const throw(Error);
 
-	virtual ItemNum_t getNum() const throw() { return m_Num; }
+	virtual ItemNum_t getNum()  { return m_Num; }
 	virtual void setNum(ItemNum_t Num) throw() { m_Num = Num; }
 
-	bool    isStackable() const throw() { return true; }
+	bool    isStackable()  { return true; }
 
 private:
 	ItemType_t m_ItemType;			// 아이템 타입
@@ -76,13 +76,13 @@ private:
 class BombInfo : public ItemInfo 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_BOMB; }
-	virtual string toString() const throw();
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_BOMB; }
+	virtual string toString() ;
 
-	virtual Damage_t getMinDamage() const throw() { return m_MinDamage; }
+	virtual Damage_t getMinDamage()  { return m_MinDamage; }
 	virtual void setMinDamage(Damage_t minDamage) throw() { m_MinDamage = minDamage; }
 
-	virtual Damage_t getMaxDamage() const throw() { return m_MaxDamage; }
+	virtual Damage_t getMaxDamage()  { return m_MaxDamage; }
 	virtual void setMaxDamage(Damage_t maxDamage) throw() { m_MaxDamage = maxDamage; }
 
 private:
@@ -98,7 +98,7 @@ private:
 class BombInfoManager : public InfoClassManager 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_BOMB; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_BOMB; }
 	virtual void load() throw(Error);
 };
 
@@ -112,8 +112,8 @@ extern BombInfoManager* g_pBombInfoManager;
 class BombFactory : public ItemFactory 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_BOMB; }
-	virtual string getItemClassName() const throw() { return "Bomb"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_BOMB; }
+	virtual string getItemClassName()  { return "Bomb"; }
 	
 public:
 	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new Bomb(ItemType,OptionType); }
@@ -127,8 +127,8 @@ public:
 class BombLoader : public ItemLoader 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_BOMB; }
-	virtual string getItemClassName() const throw() { return "Bomb"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_BOMB; }
+	virtual string getItemClassName()  { return "Bomb"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

@@ -28,8 +28,8 @@ public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_TRADE_ADD_ITEM; }
-	PacketSize_t getPacketSize() const throw() 
+	PacketID_t getPacketID()  { return PACKET_GC_TRADE_ADD_ITEM; }
+	PacketSize_t getPacketSize()  
 	{ 
 		PacketSize_t size = 0;
 		size += szObjectID;                           // m_TargetObjectID
@@ -51,30 +51,30 @@ public:
 		size +=(SubItemInfo::getSize()* m_ListNum); // list<SubItemInfo*> m_InfoList;
 		return size;
 	}
-	string getPacketName() const throw() { return "GCTradeAddItem"; }
-	string toString() const throw();
+	string getPacketName()  { return "GCTradeAddItem"; }
+	string toString() ;
 
 public:
-	ObjectID_t getTargetObjectID() const throw() { return m_TargetObjectID; }
+	ObjectID_t getTargetObjectID()  { return m_TargetObjectID; }
 	void setTargetObjectID(ObjectID_t id) throw() { m_TargetObjectID = id; }
 
-	CoordInven_t getX() const throw() { return m_X; }
+	CoordInven_t getX()  { return m_X; }
 	void setX(CoordInven_t x) throw() { m_X = x; }
 
-	CoordInven_t getY() const throw() { return m_Y; }
+	CoordInven_t getY()  { return m_Y; }
 	void setY(CoordInven_t y) throw() { m_Y = y; }
 
-	ObjectID_t getItemObjectID() const throw() { return m_ItemObjectID; }
+	ObjectID_t getItemObjectID()  { return m_ItemObjectID; }
 	void setItemObjectID(ObjectID_t id) throw() { m_ItemObjectID = id; }
 
-	BYTE getItemClass() const throw() { return m_ItemClass; }
+	BYTE getItemClass()  { return m_ItemClass; }
 	void setItemClass(BYTE IClass) throw() { m_ItemClass = IClass; }
 
-	ItemType_t getItemType() const throw() { return m_ItemType; }
+	ItemType_t getItemType()  { return m_ItemType; }
 	void setItemType(ItemType_t itemType) { m_ItemType = itemType; }
 
-	int getOptionTypeSize() const throw() { return m_OptionType.size(); }
-	const list<OptionType_t>& getOptionType() const throw() { return m_OptionType; }
+	int getOptionTypeSize()  { return m_OptionType.size(); }
+	const list<OptionType_t>& getOptionType()  { return m_OptionType; }
 	OptionType_t popOptionType() throw()
 	{
 		if (m_OptionType.empty()) return 0;
@@ -85,8 +85,8 @@ public:
 	void addOptionType(OptionType_t otype) { m_OptionType.push_back( otype ); }
 	void setOptionType(const list<OptionType_t>& OptionTypes) throw() { m_OptionType = OptionTypes; }
 
-	int getOptionTypeSize2() const throw() { return m_OptionType2.size(); }
-	const list<OptionType_t>& getOptionType2() const throw() { return m_OptionType2; }
+	int getOptionTypeSize2()  { return m_OptionType2.size(); }
+	const list<OptionType_t>& getOptionType2()  { return m_OptionType2; }
 	OptionType_t popOptionType2() throw()
 	{
 		if (m_OptionType2.empty()) return 0;
@@ -97,28 +97,28 @@ public:
 	void addOptionType2(OptionType_t otype) { m_OptionType2.push_back( otype ); }
 	void setOptionType2(const list<OptionType_t>& OptionTypes) throw() { m_OptionType2 = OptionTypes; }
 
-	Durability_t getDurability() const throw() { return m_Durability; }
+	Durability_t getDurability()  { return m_Durability; }
 	void setDurability(Durability_t dur) throw() { m_Durability = dur; }
 
-	ItemNum_t getItemNum() const throw() { return m_ItemNum; }
+	ItemNum_t getItemNum()  { return m_ItemNum; }
 	void setItemNum(ItemNum_t itemNum) { m_ItemNum = itemNum; }
 
-	Silver_t getSilver() const throw() { return m_Silver; }
+	Silver_t getSilver()  { return m_Silver; }
 	void setSilver(Silver_t amount) throw() { m_Silver = amount; }
 
-	Grade_t getGrade() const throw() { return m_Grade; }
+	Grade_t getGrade()  { return m_Grade; }
 	void setGrade(Grade_t grade) throw() { m_Grade = grade; }
 
-	EnchantLevel_t getEnchantLevel() const throw() { return m_EnchantLevel; }
+	EnchantLevel_t getEnchantLevel()  { return m_EnchantLevel; }
 	void setEnchantLevel(EnchantLevel_t level) throw() { m_EnchantLevel = level; }
 
-	EnchantLevel_t getHeroOption() const throw() { return m_HeroOption; }
+	EnchantLevel_t getHeroOption()  { return m_HeroOption; }
 	void setHeroOption(EnchantLevel_t level) throw() { m_HeroOption= level; }
 
-	EnchantLevel_t getHeroOptionAttr() const throw() { return m_HeroOptionAttr; }
+	EnchantLevel_t getHeroOptionAttr()  { return m_HeroOptionAttr; }
 	void setHeroOptionAttr(EnchantLevel_t level) throw() { m_HeroOptionAttr = level; }
 
-	BYTE getListNum() const throw() { return m_ListNum; }
+	BYTE getListNum()  { return m_ListNum; }
 	void setListNum(BYTE num) throw() { m_ListNum = num; }
 
 	void addListElement(SubItemInfo* pInfo) throw() { m_InfoList.push_back(pInfo); }
@@ -163,9 +163,9 @@ class GCTradeAddItemFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCTradeAddItem(); }
-	string getPacketName() const throw() { return "GCTradeAddItem"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_TRADE_ADD_ITEM; }
-	PacketSize_t getPacketMaxSize() const throw() 
+	string getPacketName()  { return "GCTradeAddItem"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_TRADE_ADD_ITEM; }
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		PacketSize_t size = 0;
 		size += szObjectID;                   // m_TargetObjectID

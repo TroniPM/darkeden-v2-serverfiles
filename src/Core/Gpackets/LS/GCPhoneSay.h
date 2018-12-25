@@ -38,23 +38,23 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_PHONE_SAY; }
+	PacketID_t getPacketID()  { return PACKET_GC_PHONE_SAY; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szSlotID + szBYTE + m_Message.size(); }
+	PacketSize_t getPacketSize()  { return szSlotID + szBYTE + m_Message.size(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCPhoneSay"; }
+	string getPacketName()  { return "GCPhoneSay"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get/set SlotID
-	SlotID_t getSlotID() const throw() { return m_SlotID; }
+	SlotID_t getSlotID()  { return m_SlotID; }
 	void setSlotID(SlotID_t SlotID) throw() { m_SlotID = SlotID; }
 
 	// get/set chatting message
-	string getMessage() const throw() { return m_Message; }
+	string getMessage()  { return m_Message; }
 	void setMessage(const string & msg) throw() { m_Message = msg; }
 	
 
@@ -85,15 +85,15 @@ public :
 	Packet* createPacket() throw() { return new GCPhoneSay(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCPhoneSay"; }
+	string getPacketName()  { return "GCPhoneSay"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_PHONE_SAY; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_PHONE_SAY; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCPhoneSayPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szSlotID + szBYTE + 128 ; }
+	PacketSize_t getPacketMaxSize()  { return szSlotID + szBYTE + 128 ; }
 
 };
 

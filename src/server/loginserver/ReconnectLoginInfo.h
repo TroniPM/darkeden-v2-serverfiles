@@ -42,7 +42,7 @@ public :
 	void setClientIP ( const string & clientIP ) throw () { m_ClientIP = clientIP; }
 
 	// get/set PlayerID
-	string getPlayerID() const throw() { return m_PlayerID; }
+	string getPlayerID()  { return m_PlayerID; }
 	void setPlayerID( const string & PlayerID ) throw() { m_PlayerID = PlayerID; }
 
 	// get/set expire time

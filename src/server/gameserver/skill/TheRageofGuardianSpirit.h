@@ -20,8 +20,8 @@ public:
 	~TheRageofGuardianSpirit() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "TheRageofGuardianSpirit"; }
-	SkillType_t getSkillType() const throw() { return SKILL_THE_RAGE_OF_GUARDIAN_SPIRIT; }
+    string getSkillHandlerName()  { return "TheRageofGuardianSpirit"; }
+	SkillType_t getSkillType()  { return SKILL_THE_RAGE_OF_GUARDIAN_SPIRIT; }
 
 	void execute(Ousters* pOusters,  OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 

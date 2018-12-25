@@ -20,9 +20,9 @@ public:
 	~FuryOfGnome() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "FuryOfGnome"; }
+    string getSkillHandlerName()  { return "FuryOfGnome"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_FURY_OF_GNOME; }
+	SkillType_t getSkillType()  { return SKILL_FURY_OF_GNOME; }
 
 	void execute(Ousters* pOusters, ObjectID_t targetObject, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Ousters* pOusters, ZoneCoord_t X, ZoneCoord_t Y, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);

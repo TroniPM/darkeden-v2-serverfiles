@@ -25,9 +25,9 @@ public:
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error); 
 
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_EXPANSION; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_EXPANSION; }
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	int getHPBonus() throw() { return m_HPBonus;}

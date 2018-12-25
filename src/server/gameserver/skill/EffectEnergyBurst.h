@@ -20,14 +20,14 @@ public:
 	EffectEnergyBurst(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_ENERGY_BURST; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_ENERGY_BURST; }
 
 	void affect() throw(Error){}
 
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 };
 
 //////////////////////////////////////////////////////////////////////////////
@@ -37,8 +37,8 @@ public:
 class EffectEnergyBurstLoader : public EffectLoader 
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_ENERGY_BURST; }
-	virtual string getEffectClassName() const throw() { return "EffectEnergyBurst"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_ENERGY_BURST; }
+	virtual string getEffectClassName()  { return "EffectEnergyBurst"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error) {}

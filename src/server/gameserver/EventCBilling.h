@@ -20,14 +20,14 @@ public:
 	virtual ~EventCBilling() throw();
 
 public:
-	virtual EventClass getEventClass() const throw() { return EVENT_CLASS_CBILLING; }
+	virtual EventClass getEventClass()  { return EVENT_CLASS_CBILLING; }
 
-	virtual bool isTemporary() const throw() { return false; }
-	virtual bool isPermanent() const throw() { return true; }
+	virtual bool isTemporary()  { return false; }
+	virtual bool isPermanent()  { return true; }
 
 	virtual void activate() throw(Error);
 	
-	virtual string toString() const throw() { return "CBilling Event"; }
+	virtual string toString()  { return "CBilling Event"; }
 
 private:
 	int		m_TrySendLoginCount;		// Login 패킷을 보내기 시도 회수

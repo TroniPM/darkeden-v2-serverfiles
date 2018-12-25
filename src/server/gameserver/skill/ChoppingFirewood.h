@@ -21,8 +21,8 @@ public:
 	~ChoppingFirewood() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "ChoppingFirewood"; }
-	SkillType_t getSkillType() const throw() { return SKILL_CHOPPING_FIREWOOD; }
+    string getSkillHandlerName()  { return "ChoppingFirewood"; }
+	SkillType_t getSkillType()  { return SKILL_CHOPPING_FIREWOOD; }
 
 	void execute(Monster*, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
 

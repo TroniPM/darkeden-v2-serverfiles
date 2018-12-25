@@ -20,8 +20,8 @@ public:
 	~HurricaneCombo() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "HurricaneCombo"; }
-	SkillType_t getSkillType() const throw() { return SKILL_HURRICANE_COMBO; }
+    string getSkillHandlerName()  { return "HurricaneCombo"; }
+	SkillType_t getSkillType()  { return SKILL_HURRICANE_COMBO; }
 
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

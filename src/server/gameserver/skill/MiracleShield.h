@@ -20,8 +20,8 @@ public:
 	~MiracleShield() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "MiracleShield"; }
-	SkillType_t getSkillType() const throw() { return SKILL_MIRACLE_SHIELD; }
+    string getSkillHandlerName()  { return "MiracleShield"; }
+	SkillType_t getSkillType()  { return SKILL_MIRACLE_SHIELD; }
 
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

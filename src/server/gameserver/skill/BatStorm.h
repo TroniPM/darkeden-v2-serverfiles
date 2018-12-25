@@ -20,8 +20,8 @@ public:
 	~BatStorm() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "BatStorm"; }
-	SkillType_t getSkillType() const throw() { return SKILL_BAT_STORM; }
+    string getSkillHandlerName()  { return "BatStorm"; }
+	SkillType_t getSkillType()  { return SKILL_BAT_STORM; }
 
 	void execute(Vampire* pVampire, ObjectID_t ObjectID, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Vampire* pVampire, ZoneCoord_t X, ZoneCoord_t Y, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);

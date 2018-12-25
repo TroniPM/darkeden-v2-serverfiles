@@ -83,7 +83,7 @@ void EffectMephisto::unaffect(Creature* pCreature)
 }
 
 string EffectMephisto::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

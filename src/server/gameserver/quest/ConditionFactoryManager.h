@@ -28,7 +28,7 @@ public:
 	Condition* createCondition(ConditionType_t conditionType) const throw(Error);
 	string getConditionName(ConditionType_t conditionType) const throw(Error);
 	ConditionType_t getConditionType(const string & contionname) const throw(Error);
-	string toString() const throw();
+	string toString() ;
 
 private:
 	ConditionFactory** m_Factories;

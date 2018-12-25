@@ -20,11 +20,11 @@ public:
 	EffectMagmaticEruption(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_MAGMATIC_EUPTION; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_MAGMATIC_EUPTION; }
 
 	void affect() throw(Error);
 	void unaffect() throw(Error);
-	string toString() const throw();
+	string toString() ;
 
 public:
 	int getDamage(void) const { return m_Damage; }

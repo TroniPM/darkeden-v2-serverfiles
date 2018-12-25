@@ -18,7 +18,7 @@ class PCCorpse : public Corpse
 {
 // methods from Object
 public:
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 // methods from Item
 public:

@@ -25,10 +25,10 @@ public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_BLOOD_BIBLE_LIST; }
-	PacketSize_t getPacketSize() const throw();
-	string getPacketName() const throw() { return "GCBloodBibleList"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_BLOOD_BIBLE_LIST; }
+	PacketSize_t getPacketSize() ;
+	string getPacketName()  { return "GCBloodBibleList"; }
+	string toString() ;
 
 public:
 	vector<ItemType_t>&	getList() { return m_BloodBibleList; }
@@ -46,9 +46,9 @@ class GCBloodBibleListFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCBloodBibleList(); }
-	string getPacketName() const throw() { return "GCBloodBibleList"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_BLOOD_BIBLE_LIST; }
-	PacketSize_t getPacketMaxSize() const throw()
+	string getPacketName()  { return "GCBloodBibleList"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_BLOOD_BIBLE_LIST; }
+	PacketSize_t getPacketMaxSize() 
 	{
 		return szBYTE
 			 + szItemType * 12;

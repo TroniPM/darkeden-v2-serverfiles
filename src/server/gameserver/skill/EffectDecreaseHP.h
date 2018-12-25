@@ -20,7 +20,7 @@ public:
 	EffectDecreaseHP(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_DECREASE_HP; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_DECREASE_HP; }
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
@@ -31,14 +31,14 @@ public:
 	void unaffect(Item* pItem) throw(Error) {}
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
-	HP_t getPoint() const throw() { return m_Point; }
+	HP_t getPoint()  { return m_Point; }
 	void setPoint(HP_t Point) throw() { m_Point = Point; }
 
 	void setUserObjectID(ObjectID_t oid) throw() { m_UserObjectID = oid; }
-	ObjectID_t getUserObjectID() const throw() { return m_UserObjectID; }
+	ObjectID_t getUserObjectID()  { return m_UserObjectID; }
 
 private:
 	HP_t    m_Point;

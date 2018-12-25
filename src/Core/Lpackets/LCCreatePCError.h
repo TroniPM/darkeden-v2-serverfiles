@@ -23,13 +23,13 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_LC_CREATE_PC_ERROR; }
-	PacketSize_t getPacketSize() const throw() { return szBYTE; }
-	string getPacketName() const throw() { return "LCCreatePCError"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_LC_CREATE_PC_ERROR; }
+	PacketSize_t getPacketSize()  { return szBYTE; }
+	string getPacketName()  { return "LCCreatePCError"; }
+	string toString() ;
 
 public:
-	BYTE getErrorID() const throw() { return m_ErrorID; }
+	BYTE getErrorID()  { return m_ErrorID; }
 	void setErrorID(BYTE ErrorID) throw() { m_ErrorID = ErrorID; }
 
 private: 
@@ -48,13 +48,13 @@ public:
 	Packet* createPacket() throw() { return new LCCreatePCError(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "LCCreatePCError"; }
+	string getPacketName()  { return "LCCreatePCError"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_LC_CREATE_PC_ERROR; }
+	PacketID_t getPacketID()  { return Packet::PACKET_LC_CREATE_PC_ERROR; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE; }
 	
 };
 

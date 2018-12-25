@@ -29,28 +29,28 @@ public:
 	virtual ~ShopTemplate() throw();
 
 public:
-	ShopTemplateID_t getID(void) const throw() { return m_ID; }
+	ShopTemplateID_t getID(void)  { return m_ID; }
 	void setID(ShopTemplateID_t id) throw() { m_ID = id; }
 	
-	ShopRackType_t getShopType(void) const throw() { return m_RackType; }
+	ShopRackType_t getShopType(void)  { return m_RackType; }
 	void setShopType(const ShopRackType_t type) throw() { m_RackType = type; }
 
-	int getItemClass(void) const throw() { return m_ItemClass; }
+	int getItemClass(void)  { return m_ItemClass; }
 	void setItemClass(int iclass) throw() { m_ItemClass = iclass; }
 	
-	ItemType_t getMinItemType(void) const throw() { return m_MinItemType; }
+	ItemType_t getMinItemType(void)  { return m_MinItemType; }
 	void setMinItemType(ItemType_t t) { m_MinItemType = t; }
 
-	ItemType_t getMaxItemType(void) const throw() { return m_MaxItemType; }
+	ItemType_t getMaxItemType(void)  { return m_MaxItemType; }
 	void setMaxItemType(ItemType_t t) { m_MaxItemType = t; }
 
-	uint getMinOptionLevel(void) const throw() { return m_MinOptionLevel; }
+	uint getMinOptionLevel(void)  { return m_MinOptionLevel; }
 	void setMinOptionLevel(uint o) { m_MinOptionLevel = o; }
 
-	uint getMaxOptionLevel(void) const throw() { return m_MaxOptionLevel;}
+	uint getMaxOptionLevel(void)  { return m_MaxOptionLevel;}
 	void setMaxOptionLevel(uint o) { m_MaxOptionLevel = o; }
 
-	string toString() const throw();
+	string toString() ;
 
 
 ///// Member data /////
@@ -89,7 +89,7 @@ public:
 	ShopTemplate* getTemplate(ShopTemplateID_t id) const throw(NoSuchElementException, Error);
 	void setTemplate(ShopTemplateID_t id, ShopTemplate* pEntry) throw();
 
-	string toString() const throw();
+	string toString() ;
 
 
 ///// Member data ///// 

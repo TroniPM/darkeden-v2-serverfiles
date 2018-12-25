@@ -20,8 +20,8 @@ public:
 	~GhostBlade() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "GhostBlade"; }
-	SkillType_t getSkillType() const throw() { return SKILL_GHOST_BLADE; }
+    string getSkillHandlerName()  { return "GhostBlade"; }
+	SkillType_t getSkillType()  { return SKILL_GHOST_BLADE; }
 
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

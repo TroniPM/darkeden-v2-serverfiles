@@ -24,14 +24,14 @@ public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_ADD_SYLPH; }
-	PacketSize_t getPacketSize() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_ADD_SYLPH; }
+	PacketSize_t getPacketSize() ;
 
-	string getPacketName() const throw() { return "GCAddSylph"; }
-	string toString() const throw();
+	string getPacketName()  { return "GCAddSylph"; }
+	string toString() ;
 
 public:
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t creatureID) throw() { m_ObjectID = creatureID; }
 
 	uchar getSylphType() { return m_SylphType; }
@@ -64,9 +64,9 @@ class GCAddSylphFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCAddSylph(); }
-	string getPacketName() const throw() { return "GCAddSlyph"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_ADD_SYLPH; }
-	PacketSize_t getPacketMaxSize() const throw();
+	string getPacketName()  { return "GCAddSlyph"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_SYLPH; }
+	PacketSize_t getPacketMaxSize() ;
 
 };
 

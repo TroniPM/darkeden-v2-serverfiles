@@ -21,7 +21,7 @@ public:
 	~EventTransport() throw();			
 
 public:
-	virtual EventClass getEventClass() const throw() { return EVENT_CLASS_TRANSPORT; }
+	virtual EventClass getEventClass()  { return EVENT_CLASS_TRANSPORT; }
 
 	virtual void activate() throw(Error);
 	void setTargetZone(ZoneID_t ZoneID, ZoneCoord_t ZoneX, ZoneCoord_t ZoneY) 
@@ -33,16 +33,16 @@ public:
 	void setZoneName(const string& zoneName) { m_ZoneName = zoneName; }
 	void sendMessage() throw (Error);
 	
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 	ZoneID_t getTransportZoneID() throw() { return m_ZoneID; }
 	void setTransportZoneID(ZoneID_t ZoneID) throw() { m_ZoneID = ZoneID; }
 
-	ZoneCoord_t getX() const throw() { return m_X; }
+	ZoneCoord_t getX()  { return m_X; }
 	void setX(ZoneCoord_t x) throw() { m_X = x; }
 
-	ZoneCoord_t getY() const throw() { return m_Y; }
+	ZoneCoord_t getY()  { return m_Y; }
 	void setY(ZoneCoord_t y) throw() { m_Y = y; }
 
  	void setXY(ZoneCoord_t x, ZoneCoord_t y) throw() { m_X = x; m_Y = y; }

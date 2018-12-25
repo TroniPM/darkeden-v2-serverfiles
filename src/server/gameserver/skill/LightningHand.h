@@ -20,8 +20,8 @@ public:
 	~LightningHand() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "LightningHand"; }
-	SkillType_t getSkillType() const throw() { return SKILL_LIGHTNING_HAND; }
+    string getSkillHandlerName()  { return "LightningHand"; }
+	SkillType_t getSkillType()  { return SKILL_LIGHTNING_HAND; }
 
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

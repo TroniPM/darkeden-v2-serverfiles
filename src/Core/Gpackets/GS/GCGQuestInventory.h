@@ -32,10 +32,10 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_GQUEST_INVENTORY; }
-	PacketSize_t getPacketSize() const throw() { return szBYTE + szItemType * m_ItemList.size(); }
-	string getPacketName() const throw() { return "GCGQuestInventory"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_GQUEST_INVENTORY; }
+	PacketSize_t getPacketSize()  { return szBYTE + szItemType * m_ItemList.size(); }
+	string getPacketName()  { return "GCGQuestInventory"; }
+	string toString() ;
 
 public:
 	list<ItemType_t>&	getItemList() { return m_ItemList; }
@@ -58,9 +58,9 @@ public :
 	
 public:
 	Packet* createPacket() throw() { return new GCGQuestInventory(); }
-	string getPacketName() const throw() { return "GCGQuestInventory"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_GQUEST_INVENTORY; }
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + szItemType * MAX_GQUEST_INVENTORY_ITEM_NUM; }
+	string getPacketName()  { return "GCGQuestInventory"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_GQUEST_INVENTORY; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + szItemType * MAX_GQUEST_INVENTORY_ITEM_NUM; }
 };
 
 //////////////////////////////////////////////////////////////////////////////

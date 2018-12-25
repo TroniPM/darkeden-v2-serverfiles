@@ -31,15 +31,15 @@ public:
 	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) throw(Error);
 	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
 	void tinysave(const char* field) const throw (Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	static void initItemIDRegistry(void) throw();
 
 public:
-	virtual ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_KEY; }
-	virtual string getObjectTableName() const throw() { return "KeyObject"; }
+	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_KEY; }
+	virtual string getObjectTableName()  { return "KeyObject"; }
 
-	virtual ItemType_t getItemType() const throw() { return m_ItemType; }
+	virtual ItemType_t getItemType()  { return m_ItemType; }
 	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() const throw(Error);
@@ -47,7 +47,7 @@ public:
 	virtual Weight_t getWeight() const throw(Error);
 
 public:
-	ItemID_t getTarget() const throw() { return m_Target; }
+	ItemID_t getTarget()  { return m_Target; }
 	void setTarget(ItemID_t target) throw() { m_Target = target; }
 
 	ItemID_t setNewMotorcycle(Slayer* pSlayer) throw(Error);
@@ -68,13 +68,13 @@ private:
 class KeyInfo : public ItemInfo 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_KEY; }
-	virtual string toString() const throw();
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_KEY; }
+	virtual string toString() ;
 
-	OptionType_t getOptionType() const throw() { return m_OptionType; }
+	OptionType_t getOptionType()  { return m_OptionType; }
 	void setOptionType( OptionType_t optionType ) { m_OptionType = optionType; }
 
-	ItemType_t getTargetType() const throw() { return m_TargetType; }
+	ItemType_t getTargetType()  { return m_TargetType; }
 	void setTargetType( ItemType_t target ) { m_TargetType = target; }
 
 private:
@@ -90,7 +90,7 @@ private:
 class KeyInfoManager : public InfoClassManager 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_KEY; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_KEY; }
 	virtual void load() throw(Error);
 };
 
@@ -105,8 +105,8 @@ extern KeyInfoManager* g_pKeyInfoManager;
 class KeyFactory : public ItemFactory 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_KEY; }
-	virtual string getItemClassName() const throw() { return "Key"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_KEY; }
+	virtual string getItemClassName()  { return "Key"; }
 	
 public:
 	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new Key(ItemType,OptionType); }
@@ -120,8 +120,8 @@ public:
 class KeyLoader : public ItemLoader 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_KEY; }
-	virtual string getItemClassName() const throw() { return "Key"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_KEY; }
+	virtual string getItemClassName()  { return "Key"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

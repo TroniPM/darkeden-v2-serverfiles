@@ -46,24 +46,24 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_DELETE_INVENTORY_ITEM; }
+	PacketID_t getPacketID()  { return PACKET_GC_DELETE_INVENTORY_ITEM; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		return szObjectID; 
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "GCDeleteInventoryItem"; }
+	string getPacketName()  { return "GCDeleteInventoryItem"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public :
 
 	// get/set object id
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t objectID) throw() { m_ObjectID = objectID; }
 
 private :
@@ -90,13 +90,13 @@ public :
 	Packet* createPacket() throw() { return new GCDeleteInventoryItem(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCDeleteInventoryItem"; }
+	string getPacketName()  { return "GCDeleteInventoryItem"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_DELETE_INVENTORY_ITEM; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_DELETE_INVENTORY_ITEM; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		return szObjectID; 
 	}

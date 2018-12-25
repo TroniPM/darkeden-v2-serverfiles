@@ -34,31 +34,31 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_UNBURROW; }
+	PacketID_t getPacketID()  { return PACKET_CG_UNBURROW; }
 	
 	// get packet's body size
 	// *OPTIMIZATION HINT*
 	// const static CGUnburrowPacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketSize() const throw() { return szCoord + szCoord + szDir; }
+	PacketSize_t getPacketSize()  { return szCoord + szCoord + szDir; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGUnburrow"; }
+	string getPacketName()  { return "CGUnburrow"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 	
 public:
 
 	// get/set X Coordicate
-	Coord_t getX() const throw() { return m_X; }
+	Coord_t getX()  { return m_X; }
 	void setX(Coord_t x) throw() { m_X = x; }
 
 	// get/set Y Coordicate
-	Coord_t getY() const throw() { return m_Y; }
+	Coord_t getY()  { return m_Y; }
 	void setY(Coord_t y) throw() { m_Y = y; }
 
 	// get/set Direction
-	Dir_t getDir() const throw() { return m_Dir; }
+	Dir_t getDir()  { return m_Dir; }
 	void setDir(Dir_t dir) throw() { m_Dir = dir; }
 	
 private :
@@ -86,15 +86,15 @@ public:
 	Packet* createPacket() throw() { return new CGUnburrow(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGUnburrow"; }
+	string getPacketName()  { return "CGUnburrow"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_UNBURROW; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_UNBURROW; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static CGUnburrowPacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szCoord + szCoord + szDir; }
+	PacketSize_t getPacketMaxSize()  { return szCoord + szCoord + szDir; }
 
 };
 

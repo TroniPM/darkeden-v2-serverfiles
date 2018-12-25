@@ -23,11 +23,11 @@ public:
 
 public:
 	// get/set volume width
-	VolumeWidth_t getVolumeWidth() const throw() { return m_VolumeWidth; }
+	VolumeWidth_t getVolumeWidth()  { return m_VolumeWidth; }
 	void setVolumeWidth(VolumeWidth_t volumeWidth) throw() { m_VolumeWidth = volumeWidth; }
 
 	// get/set volume height
-	VolumeHeight_t getVolumeHeight() const throw() { return m_VolumeHeight; }
+	VolumeHeight_t getVolumeHeight()  { return m_VolumeHeight; }
 	void setVolumeHeight(VolumeHeight_t volumeHeight) throw() { m_VolumeHeight = volumeHeight; }
 
 	// get debug string
@@ -53,7 +53,7 @@ public:
 	
 public:
 	void init() throw();
-	VolumeInfo* getVolumeInfo(VolumeType_t VolumeType) const throw() { return m_VolumeInfo[VolumeType]; }
+	VolumeInfo* getVolumeInfo(VolumeType_t VolumeType)  { return m_VolumeInfo[VolumeType]; }
 	string toString() throw();
 
 private:

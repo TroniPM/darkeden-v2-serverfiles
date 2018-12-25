@@ -83,7 +83,7 @@ void EffectChargingPower::unaffect(Creature* pCreature)
 }
 
 string EffectChargingPower::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

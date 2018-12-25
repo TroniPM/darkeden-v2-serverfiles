@@ -34,16 +34,16 @@ public:
 	void deleteEffect(Effect::EffectClass EClass) throw();
 	void deleteEffect(ObjectID_t ObjectID) throw();
 	void deleteEffect(Creature* pCreature, Effect::EffectClass EClass) throw();
-	Effect* findEffect(Effect::EffectClass EClass) const throw();
-	Effect* findEffect(ObjectID_t ObjectID) const throw();
+	Effect* findEffect(Effect::EffectClass EClass) ;
+	Effect* findEffect(ObjectID_t ObjectID) ;
 
 	// Enemy Erase 이펙트를 가려내기 위한 함수이다.
-	Effect* findEffect(Effect::EffectClass EClass, string EnemyName) const throw();
+	Effect* findEffect(Effect::EffectClass EClass, string EnemyName) ;
 
 	// priority_queue에 등록하고, affect한다.
 	void addEffect(Effect* pEffect) throw();
 
-	Effect* getEffect() const throw() { return m_Effects.front(); }
+	Effect* getEffect()  { return m_Effects.front(); }
 
 	// 현재 있는 모든 이펙트의 deadline 을 0으로 만든다.
 	void setTimeOutAllEffect() throw();

@@ -20,9 +20,9 @@ public:
 	~HitConvert() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "HitConvert"; }
+    string getSkillHandlerName()  { return "HitConvert"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_HIT_CONVERT; }
+	SkillType_t getSkillType()  { return SKILL_HIT_CONVERT; }
 
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

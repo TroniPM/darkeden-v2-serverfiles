@@ -21,7 +21,7 @@ public:
     void read (SocketInputStream & iStream);// throw (ProtocolException, Error);
     void write (SocketOutputStream & oStream);// const throw (ProtocolException, Error);
 
-	PacketSize_t 	getPacketSize () const throw()		{ return szBYTE + sizeof(T) * m_Values.size(); }
+	PacketSize_t 	getPacketSize () 		{ return szBYTE + sizeof(T) * m_Values.size(); }
 	static uint 	getPacketMaxSize() throw() 	{ return szBYTE + sizeof(T) * 255; }
 
 	string toString ();// constthrow ();

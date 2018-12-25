@@ -20,8 +20,8 @@ public:
 	~DragonTornado() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "DragonTornado"; }
-	SkillType_t getSkillType() const throw() { return SKILL_DRAGON_TORNADO; }
+    string getSkillHandlerName()  { return "DragonTornado"; }
+	SkillType_t getSkillType()  { return SKILL_DRAGON_TORNADO; }
 
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

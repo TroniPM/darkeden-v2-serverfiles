@@ -21,11 +21,11 @@ public:
 	~EventResurrect() throw();			
 
 public:
-	virtual EventClass getEventClass() const throw() { return EVENT_CLASS_RESURRECT; }
+	virtual EventClass getEventClass()  { return EVENT_CLASS_RESURRECT; }
 
 	virtual void activate() throw(Error);
 	
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 	/*
@@ -33,10 +33,10 @@ public:
 	void setResurrectZone(Zone* ResurrectZone) throw() { m_pResurrectZone = ResurrectZone; }
 
 	// 부활할 위치
-	ZoneCoord_t getX() const throw() { return m_X; }
+	ZoneCoord_t getX()  { return m_X; }
 	void setX(ZoneCoord_t x) throw() { m_X = x; }
 
-	ZoneCoord_t getY() const throw() { return m_Y; }
+	ZoneCoord_t getY()  { return m_Y; }
 	void setY(ZoneCoord_t y) throw() { m_Y = y; }
 
  	void setXY(ZoneCoord_t x, ZoneCoord_t y) throw() { m_X = x; m_Y = y; }

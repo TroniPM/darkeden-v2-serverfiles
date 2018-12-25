@@ -29,7 +29,7 @@ public:
 
 	virtual void create(const string & ownerID) throw(Error);
 
-	SkillType_t getSkillType() const throw() { return m_SkillType; }
+	SkillType_t getSkillType()  { return m_SkillType; }
 	void setSkillType(SkillType_t Type) throw() { m_SkillType = Type; }
 
 	void setExp(Exp_t Exp) throw() { m_Exp = Exp; }
@@ -48,17 +48,17 @@ public:
 	void setRunTime() throw();
 	void setRunTime(Turn_t delay, bool bSave=true) throw();
 
-	string getName() const throw() { return m_Name; }
+	string getName()  { return m_Name; }
 	void setName(const string & Name) { m_Name = Name; }
 
 	// 사용가능할 경우 true
 	// 사용 불가능할 경우 false
 	void setDisable() throw() { m_Enable = false; }
 	void setEnable() throw() { m_Enable = true; }
-	bool canUse() const throw() { return m_Enable; } 
+	bool canUse()  { return m_Enable; } 
 
 	// 다음 캐스팅이 가능할때까지 남은 시간
-	Turn_t getRemainTurn( Timeval currentTime ) const throw();
+	Turn_t getRemainTurn( Timeval currentTime ) ;
 
 protected :
 	string       m_Name;

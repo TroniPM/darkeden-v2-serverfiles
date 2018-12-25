@@ -29,15 +29,15 @@ public:
 	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) throw(Error);
 	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
 	void tinysave(const char* field) const throw (Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	static void initItemIDRegistry(void) throw();
 
 public:
-	virtual ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_RELIC; }
-	virtual string getObjectTableName() const throw() { return "RelicObject"; }
+	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_RELIC; }
+	virtual string getObjectTableName()  { return "RelicObject"; }
 
-	virtual ItemType_t getItemType() const throw() { return m_ItemType; }
+	virtual ItemType_t getItemType()  { return m_ItemType; }
 	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() const throw(Error);
@@ -51,7 +51,7 @@ public:
 	virtual Defense_t getDefenseBonus() const throw(Error);
 	virtual Protection_t getProtectionBonus() const throw(Error);
 
-	virtual EnchantLevel_t getEnchantLevel() const throw() { return m_EnchantLevel; }
+	virtual EnchantLevel_t getEnchantLevel()  { return m_EnchantLevel; }
 	virtual void setEnchantLevel(EnchantLevel_t level) throw() { m_EnchantLevel = level; }
 
 private:
@@ -97,21 +97,21 @@ public:
 	int             monsterType;
 
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_RELIC; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_RELIC; }
 
-	virtual Durability_t getDurability() const throw() { return m_Durability; }
+	virtual Durability_t getDurability()  { return m_Durability; }
 	virtual void setDurability(Durability_t durability) throw() { m_Durability = durability; }
 
-	Defense_t getDefenseBonus() const throw() { return m_DefenseBonus; }
+	Defense_t getDefenseBonus()  { return m_DefenseBonus; }
 	void setDefenseBonus(Defense_t acBonus) throw() { m_DefenseBonus = acBonus; }
 
-	Protection_t getProtectionBonus() const throw() { return m_ProtectionBonus; }
+	Protection_t getProtectionBonus()  { return m_ProtectionBonus; }
 	void setProtectionBonus(Protection_t acBonus) throw() { m_ProtectionBonus = acBonus; }
 
-	virtual uint getItemLevel(void) const throw() { return m_ItemLevel; }
+	virtual uint getItemLevel(void)  { return m_ItemLevel; }
 	virtual void setItemLevel(uint level) throw() { m_ItemLevel = level; }
 
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 private:
 	Durability_t		m_Durability;		// ³»±¸¼º
@@ -129,7 +129,7 @@ private:
 class RelicInfoManager : public InfoClassManager 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_RELIC; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_RELIC; }
 	virtual void load() throw(Error);
 };
 
@@ -144,8 +144,8 @@ extern RelicInfoManager* g_pRelicInfoManager;
 class RelicFactory : public ItemFactory 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_RELIC; }
-	virtual string getItemClassName() const throw() { return "Relic"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_RELIC; }
+	virtual string getItemClassName()  { return "Relic"; }
 	
 public:
 	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new Relic(ItemType,OptionType); }
@@ -159,8 +159,8 @@ public:
 class RelicLoader : public ItemLoader 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_RELIC; }
-	virtual string getItemClassName() const throw() { return "Relic"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_RELIC; }
+	virtual string getItemClassName()  { return "Relic"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

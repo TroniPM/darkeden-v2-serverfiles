@@ -76,9 +76,9 @@ public:
     virtual ~Creature() throw (Error);
 
 public:
-	virtual ObjectClass getObjectClass() const throw() { return OBJECT_CLASS_CREATURE; }
+	virtual ObjectClass getObjectClass()  { return OBJECT_CLASS_CREATURE; }
 	virtual ObjectPriority getObjectPriority() const throw(Error);
-	virtual string toString() const throw() = 0;
+	virtual string toString()  = 0;
 
 public:
 	virtual bool load() throw (InvalidProtocolException, Error) = 0; // load from DB
@@ -91,42 +91,42 @@ public:
 	void setPlayer(Player* pPlayer) throw() { m_pPlayer = pPlayer; }
 
 public:
-	virtual const string& getName() const throw() = 0;
+	virtual const string& getName()  = 0;
 
-	virtual CreatureClass getCreatureClass() const throw() = 0;
-	virtual string getCreatureClassString() const throw() = 0;
+	virtual CreatureClass getCreatureClass()  = 0;
+	virtual string getCreatureClassString()  = 0;
 
 	virtual Race_t getRace() const = 0;
 
-	EffectManager* getEffectManager() const throw() { return m_pEffectManager; }
+	EffectManager* getEffectManager()  { return m_pEffectManager; }
 
-	bool isSlayer() const throw()  { return getCreatureClass() == CREATURE_CLASS_SLAYER; }
-	bool isVampire() const throw() { return getCreatureClass() == CREATURE_CLASS_VAMPIRE; }
-	bool isOusters() const throw() { return getCreatureClass() == CREATURE_CLASS_OUSTERS; }
-	bool isNPC() const throw()     { return getCreatureClass() == CREATURE_CLASS_NPC; }
-	bool isMonster() const throw() { return getCreatureClass() == CREATURE_CLASS_MONSTER; }
-	bool isPC() const throw()      { return isSlayer() || isVampire() || isOusters(); }
+	bool isSlayer()   { return getCreatureClass() == CREATURE_CLASS_SLAYER; }
+	bool isVampire()  { return getCreatureClass() == CREATURE_CLASS_VAMPIRE; }
+	bool isOusters()  { return getCreatureClass() == CREATURE_CLASS_OUSTERS; }
+	bool isNPC()      { return getCreatureClass() == CREATURE_CLASS_NPC; }
+	bool isMonster()  { return getCreatureClass() == CREATURE_CLASS_MONSTER; }
+	bool isPC()       { return isSlayer() || isVampire() || isOusters(); }
 
-	bool isGOD() const throw()     { return getCompetence() == GOD; }
-	bool isDM() const throw()      { return getCompetence() == DM; }
-	bool isHELPER() const throw()  { return getCompetence() == HELPER; }
-	bool isPLAYER() const throw()  { return getCompetence() == PLAYER; }
+	bool isGOD()      { return getCompetence() == GOD; }
+	bool isDM()       { return getCompetence() == DM; }
+	bool isHELPER()   { return getCompetence() == HELPER; }
+	bool isPLAYER()   { return getCompetence() == PLAYER; }
 
-	virtual BYTE getCompetence() const throw() { return PLAYER; }
-	virtual BYTE getCompetenceShape() const throw() { return 1; }
+	virtual BYTE getCompetence()  { return PLAYER; }
+	virtual BYTE getCompetenceShape()  { return 1; }
 
-	virtual bool isDead() const throw() = 0;
-	virtual bool isAlive() const throw() = 0;
+	virtual bool isDead()  = 0;
+	virtual bool isAlive()  = 0;
 	void recoverHP(HP_t recoverAmount) throw();
 
 	void setFlag(Effect::EffectClass Flag) throw() { m_Flag.set(Flag); }
 	void removeFlag(Effect::EffectClass Flag) throw() { m_Flag.reset(Flag); }
-	bool isFlag(Effect::EffectClass Flag) const throw() { return m_Flag.test(Flag); } 
+	bool isFlag(Effect::EffectClass Flag)  { return m_Flag.test(Flag); } 
 
 	bool hasRelicItem() const;
 
 public:
-    virtual PhoneNumber_t getPhoneNumber() const throw() { return 0; }
+    virtual PhoneNumber_t getPhoneNumber()  { return 0; }
 
 public:
 	virtual void act(const Timeval& currentTime) throw(Error) = 0; // for monster & npc
@@ -148,26 +148,26 @@ public:
 	VisionState getVisionState(Coord_t x, Coord_t y, Sight_t sight) throw(Error);
 
 	// get/set zone
-	Zone* getZone() const throw() { return m_pZone; }
+	Zone* getZone()  { return m_pZone; }
 	void setZone(Zone* pZone) throw() { m_pZone = pZone; }
 
 	// get/set zone id
-	ZoneID_t getZoneID() const throw();
+	ZoneID_t getZoneID() ;
 	void setZoneID(ZoneID_t zoneID) throw(Error);
 
 	// get/set(x,y,dir)
-	ZoneCoord_t getX() const throw() { return m_X; }
+	ZoneCoord_t getX()  { return m_X; }
 	void setX(ZoneCoord_t x) throw() { m_X = x; }
 
-	ZoneCoord_t getY() const throw() { return m_Y; }
+	ZoneCoord_t getY()  { return m_Y; }
 	void setY(ZoneCoord_t y) throw() { m_Y = y; }
 
-	Dir_t getDir() const throw() { return m_Dir; }
+	Dir_t getDir()  { return m_Dir; }
 	void setDir(Dir_t dir) throw() { m_Dir = dir; }
 
-	ZoneCoord_t getViewportWidth() const throw() { return m_ViewportWidth; }
-	ZoneCoord_t getViewportUpperHeight() const throw() { return m_ViewportUpperHeight; }
-	ZoneCoord_t getViewportLowerHeight() const throw() { return m_ViewportLowerHeight; }
+	ZoneCoord_t getViewportWidth()  { return m_ViewportWidth; }
+	ZoneCoord_t getViewportUpperHeight()  { return m_ViewportUpperHeight; }
+	ZoneCoord_t getViewportLowerHeight()  { return m_ViewportLowerHeight; }
 
 	////////////////////////////////////////////////////////////
 	// *CAUTION*
@@ -184,42 +184,42 @@ public:
 	bool isBlockedByCreature(ZoneCoord_t nx , ZoneCoord_t ny) const throw(Error);
 
 	// get/set sight level
-	Sight_t getSight() const throw() { return m_Sight; }
+	Sight_t getSight()  { return m_Sight; }
 	void setSight(Sight_t sight) throw(Error) { m_Sight = sight; Assert(m_Sight <= maxSight); }
 
 	virtual Sight_t getEffectedSight() throw();
 
 	// get/set/test move mode
-	MoveMode getMoveMode() const throw() { return m_MoveMode; }
+	MoveMode getMoveMode()  { return m_MoveMode; }
 	void setMoveMode(MoveMode moveMode) throw() { m_MoveMode = moveMode; }
 
-	bool isWalking() const throw() { return m_MoveMode == MOVE_MODE_WALKING; }
-	bool isFlying() const throw() { return m_MoveMode == MOVE_MODE_FLYING; }
-	bool isBurrowing() const throw() { return m_MoveMode == MOVE_MODE_BURROWING; }
+	bool isWalking()  { return m_MoveMode == MOVE_MODE_WALKING; }
+	bool isFlying()  { return m_MoveMode == MOVE_MODE_FLYING; }
+	bool isBurrowing()  { return m_MoveMode == MOVE_MODE_BURROWING; }
 	
 	// get distance
-	Distance_t getDistance(ZoneCoord_t x1, ZoneCoord_t y1, ZoneCoord_t x2, ZoneCoord_t y2) const throw();
+	Distance_t getDistance(ZoneCoord_t x1, ZoneCoord_t y1, ZoneCoord_t x2, ZoneCoord_t y2) ;
 
 	// P(x1,y1)과 나의 위치사이의 거리를 측정한다.
-	Distance_t getDistance(ZoneCoord_t x1, ZoneCoord_t y1) const throw();
+	Distance_t getDistance(ZoneCoord_t x1, ZoneCoord_t y1) ;
 
 	// get/set EffectInfo
-	virtual EffectInfo* getEffectInfo() const throw() { return m_pEffectManager->getEffectInfo(); }
+	virtual EffectInfo* getEffectInfo()  { return m_pEffectManager->getEffectInfo(); }
 
 public :
 	// get/set zone
-	Zone* getNewZone() const throw() { return m_pNewZone; }
+	Zone* getNewZone()  { return m_pNewZone; }
 	void setNewZone(Zone* pZone) throw() { m_pNewZone = pZone; }
 
 	// get/set zone id
-	ZoneID_t getNewZoneID() const throw();
+	ZoneID_t getNewZoneID() ;
 	//void setNewZoneID(ZoneID_t zoneID) throw(Error);
 
 	// get/set(x,y,dir)
-	ZoneCoord_t getNewX() const throw() { return m_NewX; }
+	ZoneCoord_t getNewX()  { return m_NewX; }
 	void setNewX(ZoneCoord_t x) throw() { m_NewX = x; }
 
-	ZoneCoord_t getNewY() const throw() { return m_NewY; }
+	ZoneCoord_t getNewY()  { return m_NewY; }
 	void setNewY(ZoneCoord_t y) throw() { m_NewY = y; }
 
 	void setNewXY(ZoneCoord_t x, ZoneCoord_t y) throw() { m_NewX = x; m_NewY = y; }
@@ -231,7 +231,7 @@ public:
 	void addEffect(Effect* pEffect) throw (Error);
 
 public:
-	virtual Level_t getLevel() const throw() = 0;
+	virtual Level_t getLevel()  = 0;
 	virtual Steal_t getHPStealAmount(void) const { return 0; }
 	virtual void setHPStealAmount(Steal_t steal) {}
 
@@ -259,7 +259,7 @@ public:
 	int getPartyID(void) const { return m_PartyID; }
 	void setPartyID(int ID) { m_PartyID = ID; }
 
-	LocalPartyManager* getLocalPartyManager(void) const throw();
+	LocalPartyManager* getLocalPartyManager(void) ;
 
 	virtual ClanType_t getClanType(void) const { return 0; }
 	virtual void setClanType(ClanType_t clan) { }

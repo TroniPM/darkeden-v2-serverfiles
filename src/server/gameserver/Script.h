@@ -31,26 +31,26 @@ public:
 	ScriptID_t getScriptID(void) const { return m_ScriptID; }
 	void setScriptID(ScriptID_t id) { m_ScriptID = id; }
 
-	string getSubject(uint index) const throw();
+	string getSubject(uint index) ;
 	void addSubject(const string& subject, DWORD code=0) throw();
 
 	DWORD getSubjectCode(uint index) const 			{ return m_SubjectCodes[index]; }
 	void  setSubjectCode(uint index, DWORD code) 	{ m_SubjectCodes[index] = code; }
 
 
-	string getContent(uint index) const throw();
+	string getContent(uint index) ;
 	void addContent(const string& content, DWORD code=0) throw();
 	
 	// by sigi. 2002.12.3
 	DWORD getContentCode(uint index) const 			{ return m_ContentCodes[index]; }
 	void  setContentCode(uint index, DWORD code) 	{ m_ContentCodes[index] = code; }
 
-	string getRandomSubject(void) const throw();
+	string getRandomSubject(void) ;
 
-	uint getSubjectCount(void) const throw() { return m_SubjectCount; }
-	uint getContentCount(void) const throw() { return m_ContentCount; }
+	uint getSubjectCount(void)  { return m_SubjectCount; }
+	uint getContentCount(void)  { return m_ContentCount; }
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	ScriptID_t 	m_ScriptID;

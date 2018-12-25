@@ -262,16 +262,16 @@ public:
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
-	PacketID_t getPacketID() const throw() { return PACKET_GC_NPC_RESPONSE; }
-	PacketSize_t getPacketSize() const throw();
-	string getPacketName() const throw() { return "GCNPCResponse"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_NPC_RESPONSE; }
+	PacketSize_t getPacketSize() ;
+	string getPacketName()  { return "GCNPCResponse"; }
+	string toString() ;
 	
 public:
-	BYTE getCode(void) const throw() { return m_Code;}
+	BYTE getCode(void)  { return m_Code;}
 	void setCode(WORD code) throw() { m_Code = code;}
 
-	uint getParameter(void) const throw() { return m_Parameter; }
+	uint getParameter(void)  { return m_Parameter; }
 	void setParameter(uint parameter) throw() { m_Parameter = parameter; }
 
 private: 
@@ -289,9 +289,9 @@ class GCNPCResponseFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCNPCResponse(); }
-	string getPacketName() const throw() { return "GCNPCResponse"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_NPC_RESPONSE; }
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + szuint; }
+	string getPacketName()  { return "GCNPCResponse"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_NPC_RESPONSE; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + szuint; }
 };
 
 

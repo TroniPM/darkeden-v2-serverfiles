@@ -20,9 +20,9 @@ public:
 	~Demolisher() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Demolisher"; }
+    string getSkillHandlerName()  { return "Demolisher"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_DEMOLISHER; }
+	SkillType_t getSkillType()  { return SKILL_DEMOLISHER; }
 
 	void execute(Ousters* pOusters, ObjectID_t targetObject, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 

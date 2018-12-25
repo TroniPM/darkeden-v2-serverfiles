@@ -20,8 +20,8 @@ public:
 	~CureSeriousWounds() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "CureSeriousWounds"; }
-	SkillType_t getSkillType() const throw() { return SKILL_CURE_SERIOUS_WOUNDS; }
+    string getSkillHandlerName()  { return "CureSeriousWounds"; }
+	SkillType_t getSkillType()  { return SKILL_CURE_SERIOUS_WOUNDS; }
 
 	void execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);

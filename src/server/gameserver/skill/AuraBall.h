@@ -20,9 +20,9 @@ public:
 	~AuraBall() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "AuraBall"; }
+    string getSkillHandlerName()  { return "AuraBall"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_AURA_BALL; }
+	SkillType_t getSkillType()  { return SKILL_AURA_BALL; }
 
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Monster* pMonster, Creature* pEnemy) throw(Error);

@@ -20,8 +20,8 @@ public:
 	~Eternity() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Eternity"; }
-	SkillType_t getSkillType() const throw() { return SKILL_ETERNITY; }
+    string getSkillHandlerName()  { return "Eternity"; }
+	SkillType_t getSkillType()  { return SKILL_ETERNITY; }
 
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

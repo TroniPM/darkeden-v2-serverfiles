@@ -34,10 +34,10 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_LG_INCOMING_CONNECTION_OK; }
+	PacketID_t getPacketID()  { return PACKET_LG_INCOMING_CONNECTION_OK; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		return szBYTE + m_PlayerID.size() 
 				+ szuint
@@ -45,23 +45,23 @@ public:
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "LGIncomingConnectionOK"; }
+	string getPacketName()  { return "LGIncomingConnectionOK"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public:
 
 	// get/set player id
-	string getPlayerID() const throw() { return m_PlayerID; }
+	string getPlayerID()  { return m_PlayerID; }
 	void setPlayerID(string playerID) throw() { m_PlayerID = playerID; }
 
 	// get/set tcp port
-	uint getTCPPort() const throw() { return m_TCPPort; }
+	uint getTCPPort()  { return m_TCPPort; }
 	void setTCPPort(uint tcpPort) throw() { m_TCPPort = tcpPort; }
 
 	// get/set auth key
-	DWORD getKey() const throw() { return m_Key; }
+	DWORD getKey()  { return m_Key; }
 	void setKey(DWORD key) throw() { m_Key = key; }
 
 private :
@@ -95,15 +95,15 @@ public:
 	Packet* createPacket() throw() { return new LGIncomingConnectionOK(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "LGIncomingConnectionOK"; }
+	string getPacketName()  { return "LGIncomingConnectionOK"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_LG_INCOMING_CONNECTION_OK; }
+	PacketID_t getPacketID()  { return Packet::PACKET_LG_INCOMING_CONNECTION_OK; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static LGIncomingConnectionOKPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		return szBYTE + 20
 				+ szuint

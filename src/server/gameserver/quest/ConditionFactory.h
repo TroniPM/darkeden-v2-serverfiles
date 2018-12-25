@@ -17,9 +17,9 @@ class ConditionFactory
 {
 public:
 	virtual ~ConditionFactory() throw() {}
-	virtual ConditionType_t getConditionType() const throw() = 0;
-	virtual string getConditionName() const throw() = 0;
-	virtual Condition* createCondition() const throw() = 0;
+	virtual ConditionType_t getConditionType()  = 0;
+	virtual string getConditionName()  = 0;
+	virtual Condition* createCondition()  = 0;
 };
 
 #endif

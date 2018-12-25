@@ -35,16 +35,16 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_MODIFY_TAX_RATIO; }
+	PacketID_t getPacketID()  { return PACKET_CG_MODIFY_TAX_RATIO; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szuint; }
+	PacketSize_t getPacketSize()  { return szuint; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGModifyTaxRatio"; }
+	string getPacketName()  { return "CGModifyTaxRatio"; }
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get/set Ratio
 	uint getRatio() const { return m_Ratio; }
@@ -82,13 +82,13 @@ public:
 	Packet* createPacket() throw() { return new CGModifyTaxRatio(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGModifyTaxRatio"; }
+	string getPacketName()  { return "CGModifyTaxRatio"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_MODIFY_TAX_RATIO; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_MODIFY_TAX_RATIO; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szuint; }
+	PacketSize_t getPacketMaxSize()  { return szuint; }
 };
 
 

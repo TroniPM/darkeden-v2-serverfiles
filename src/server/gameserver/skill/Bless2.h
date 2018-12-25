@@ -20,8 +20,8 @@ public:
 	~Bless2() throw() {}
 	
 public :
-    string getSkillHandlerName() const throw() { return "Bless2"; }
-	SkillType_t getSkillType() const throw() { return SKILL_BLESS2; }
+    string getSkillHandlerName()  { return "Bless2"; }
+	SkillType_t getSkillType()  { return SKILL_BLESS2; }
 
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);

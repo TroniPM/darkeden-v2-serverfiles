@@ -34,18 +34,18 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_CANNOT_ADD; }
+	PacketID_t getPacketID()  { return PACKET_GC_CANNOT_ADD; }
 	
 	// get packet's body size
 	// *OPTIMIZATION HINT*
 	// const static GCCannotAddPacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketSize() const throw() { return szObjectID; }
+	PacketSize_t getPacketSize()  { return szObjectID; }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCCannotAdd"; }
+	string getPacketName()  { return "GCCannotAdd"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 	
 public :
 
@@ -77,15 +77,15 @@ public :
 	Packet* createPacket() throw() { return new GCCannotAdd(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCCannotAdd"; }
+	string getPacketName()  { return "GCCannotAdd"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_CANNOT_ADD; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_CANNOT_ADD; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCCannotAddPacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID; }
 
 };
 

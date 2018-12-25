@@ -46,19 +46,19 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_REQUEST_GUILD_LIST; }
+	PacketID_t getPacketID()  { return PACKET_CG_REQUEST_GUILD_LIST; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return sizeof(GuildType_t); }
+	PacketSize_t getPacketSize()  { return sizeof(GuildType_t); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGRequestGuildList"; }
+	string getPacketName()  { return "CGRequestGuildList"; }
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get/set GuildType
-	GuildType_t	getGuildType()	const throw() {	return m_GuildType; }
+	GuildType_t	getGuildType()	 {	return m_GuildType; }
 	void		setGuildType( GuildType_t GuildType )	throw()	{ m_GuildType = GuildType; }
 	
 	GuildType_t	m_GuildType;
@@ -92,13 +92,13 @@ public:
 	Packet* createPacket() throw() { return new CGRequestGuildList(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGRequestGuildList"; }
+	string getPacketName()  { return "CGRequestGuildList"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_REQUEST_GUILD_LIST; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_REQUEST_GUILD_LIST; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return sizeof(GuildType_t); }
+	PacketSize_t getPacketMaxSize()  { return sizeof(GuildType_t); }
 };
 
 

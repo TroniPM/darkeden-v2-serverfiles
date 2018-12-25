@@ -47,24 +47,24 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GG_COMMAND; }
+	PacketID_t getPacketID()  { return PACKET_GG_COMMAND; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		return szBYTE + m_Command.size();
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "GGCommand"; }
+	string getPacketName()  { return "GGCommand"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public :
 
 	// get/set playerID
-	const string& getCommand() const throw() { return m_Command; }
+	const string& getCommand()  { return m_Command; }
 	void setCommand(const string& command) throw() { m_Command = command; }
 	
 private :
@@ -89,15 +89,15 @@ public :
 	Packet* createPacket() throw() { return new GGCommand(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GGCommand"; }
+	string getPacketName()  { return "GGCommand"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GG_COMMAND; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GG_COMMAND; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GGCommandPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		return szBYTE + 80;
 	}

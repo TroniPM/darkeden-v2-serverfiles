@@ -31,7 +31,7 @@ public:
 	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) throw(Error);
 	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
 	void tinysave(const char* field) const throw (Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	static void initItemIDRegistry(void) throw();
 
@@ -48,21 +48,21 @@ private:
 class PersonaInfo : public ItemInfo 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_PERSONA; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_PERSONA; }
 
-	virtual Durability_t getDurability() const throw() { return m_Durability; }
+	virtual Durability_t getDurability()  { return m_Durability; }
 	virtual void setDurability(Durability_t durability) throw() { m_Durability = durability; }
 
-	Defense_t getDefenseBonus() const throw() { return m_DefenseBonus; }
+	Defense_t getDefenseBonus()  { return m_DefenseBonus; }
 	void setDefenseBonus(Defense_t acBonus) throw() { m_DefenseBonus = acBonus; }
 
-	Protection_t getProtectionBonus() const throw() { return m_ProtectionBonus; }
+	Protection_t getProtectionBonus()  { return m_ProtectionBonus; }
 	void setProtectionBonus(Protection_t acBonus) throw() { m_ProtectionBonus = acBonus; }
 
-	virtual uint getItemLevel(void) const throw() { return m_ItemLevel; }
+	virtual uint getItemLevel(void)  { return m_ItemLevel; }
 	virtual void setItemLevel(uint level) throw() { m_ItemLevel = level; }
 
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 private:
 	Durability_t	m_Durability;		// ³»±¸¼º
@@ -80,7 +80,7 @@ private:
 class PersonaInfoManager : public InfoClassManager 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_PERSONA; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_PERSONA; }
 	virtual void load() throw(Error);
 };
 
@@ -95,8 +95,8 @@ extern PersonaInfoManager* g_pPersonaInfoManager;
 class PersonaFactory : public ItemFactory 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_PERSONA; }
-	virtual string getItemClassName() const throw() { return "Persona"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_PERSONA; }
+	virtual string getItemClassName()  { return "Persona"; }
 	
 public:
 	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new Persona(ItemType,OptionType); }
@@ -109,8 +109,8 @@ public:
 class PersonaLoader : public ItemLoader 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_PERSONA; }
-	virtual string getItemClassName() const throw() { return "Persona"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_PERSONA; }
+	virtual string getItemClassName()  { return "Persona"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

@@ -19,10 +19,10 @@
 class ActionWarpToResurrectPosition : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_WARP_TO_RESURRECT_POSITION; }
+	virtual ActionType_t getActionType()  { return ACTION_WARP_TO_RESURRECT_POSITION; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 
@@ -37,8 +37,8 @@ private:
 class ActionWarpToResurrectPositionFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_WARP_TO_RESURRECT_POSITION; }
-	virtual string getActionName() const throw() { return "WarpToResurrectPosition"; }
-	virtual Action* createAction() const throw() { return new ActionWarpToResurrectPosition(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_WARP_TO_RESURRECT_POSITION; }
+	virtual string getActionName()  { return "WarpToResurrectPosition"; }
+	virtual Action* createAction()  { return new ActionWarpToResurrectPosition(); }
 };
 #endif

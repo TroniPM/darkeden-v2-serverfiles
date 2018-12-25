@@ -29,7 +29,7 @@ class GameServerInfo {
 public :
 
 	// get/set GameServerID
-	ServerID_t getServerID() const throw() { return m_ServerID; }
+	ServerID_t getServerID()  { return m_ServerID; }
 	void setServerID( ServerID_t ServerID ) throw() { m_ServerID = ServerID; }
 
 	// get/set host name
@@ -49,15 +49,15 @@ public :
 	void setUDPPort ( uint port ) throw () { m_UDPPort = port; }
 
 	// get/set GameServerGroupID
-	ServerGroupID_t getGroupID() const throw() { return m_GroupID; }
+	ServerGroupID_t getGroupID()  { return m_GroupID; }
 	void setGroupID( ServerGroupID_t GroupID ) { m_GroupID = GroupID; }
 
 	// get/set GameWorldID
-	WorldID_t getWorldID() const throw() { return m_WorldID; }
+	WorldID_t getWorldID()  { return m_WorldID; }
 	void setWorldID( WorldID_t WorldID ) { m_WorldID= WorldID; }
 
 	// get/set ServerStat
-	ServerStatus getServerStat() const throw() { return m_ServerStat; }
+	ServerStatus getServerStat()  { return m_ServerStat; }
 	void setServerStat( ServerStatus Stat ) throw() { m_ServerStat = Stat; }
 
 	// get debug string

@@ -21,7 +21,7 @@ public:
 	EffectDropBloodBible(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_DROP_BLOOD_BIBLE; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_DROP_BLOOD_BIBLE; }
 	EffectClass getSendEffectClass() throw() { return (EffectClass)((int)EFFECT_CLASS_BLOOD_BIBLE_ARMEGA + m_ItemType); }
 
 	ItemType_t	getPart() const { return m_ItemType; }
@@ -30,7 +30,7 @@ public:
 	void affect() throw(Error);
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	ItemType_t	m_ItemType;
@@ -43,8 +43,8 @@ private:
 class EffectDropBloodBibleLoader : public EffectLoader 
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_DROP_BLOOD_BIBLE; }
-	virtual string getEffectClassName() const throw() { return "EffectDropBloodBible"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_DROP_BLOOD_BIBLE; }
+	virtual string getEffectClassName()  { return "EffectDropBloodBible"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error) {}

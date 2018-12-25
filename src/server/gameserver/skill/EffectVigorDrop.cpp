@@ -169,7 +169,7 @@ void EffectVigorDrop::unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object
 }
 
 string EffectVigorDrop::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

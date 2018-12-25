@@ -21,7 +21,7 @@ public:
 	EffectYellowPoison(Zone*, ZoneCoord_t, ZoneCoord_t) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_YELLOW_POISON; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_YELLOW_POISON; }
 
 	void affect() throw(Error){}
 	void affect(Creature* pCreature) throw(Error); 
@@ -32,13 +32,13 @@ public:
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject) throw(Error);
 	void unaffect(Item*  pItem) throw(Error) {}
 
-	string toString() const throw();
+	string toString() ;
 
 public:
-	Duration_t getDuration() const throw() { return m_Duration; }
+	Duration_t getDuration()  { return m_Duration; }
 	void setDuration(Duration_t d) throw() { m_Duration = d; }
 	
-	Attr_t getLevel() const throw() { return m_Level; }
+	Attr_t getLevel()  { return m_Level; }
 	void setLevel(Attr_t l) throw() { m_Level = l; }
 
 	void setVampire( bool bVampire = true ) { m_bVampire = bVampire; }
@@ -60,8 +60,8 @@ private:
 class EffectYellowPoisonLoader : public EffectLoader
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_YELLOW_POISON; }
-	virtual string getEffectClassName() const throw() { return "EffectYellowPoison"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_YELLOW_POISON; }
+	virtual string getEffectClassName()  { return "EffectYellowPoison"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error) {}

@@ -33,18 +33,18 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_READY; }
+	PacketID_t getPacketID()  { return PACKET_CG_READY; }
 	
 	// get packet body size
 	// *OPTIMIZATION HINT*
 	// const static CGReadyPacketSize 를 정의, 리턴하라.
-	PacketSize_t getPacketSize() const throw() { return 0; }
+	PacketSize_t getPacketSize()  { return 0; }
 	
 	// get packet's name
-	string getPacketName() const throw() { return "CGReady"; }
+	string getPacketName()  { return "CGReady"; }
 	
 	// get packet's debug string
-	string toString() const throw() { return "CGReady"; }
+	string toString()  { return "CGReady"; }
 	
 };
 
@@ -65,13 +65,13 @@ public:
 	Packet* createPacket() throw() { return new CGReady(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGReady"; }
+	string getPacketName()  { return "CGReady"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_READY; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_READY; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw() { return 0; }
+	PacketSize_t getPacketMaxSize()  { return 0; }
 	
 };
 

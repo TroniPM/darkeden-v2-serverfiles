@@ -41,16 +41,16 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_COMMON_BILLING; }
+	PacketID_t getPacketID()  { return PACKET_COMMON_BILLING; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szBillingInfo; }
+	PacketSize_t getPacketSize()  { return szBillingInfo; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CommonBillingPacket"; }
+	string getPacketName()  { return "CommonBillingPacket"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
     void test();
 
@@ -90,14 +90,14 @@ public:
 	Packet* createPacket() throw() { return new CommonBillingPacket(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CommonBillingPacket"; }
+	string getPacketName()  { return "CommonBillingPacket"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_COMMON_BILLING; }
+	PacketID_t getPacketID()  { return Packet::PACKET_COMMON_BILLING; }
 
 	// get packet's max body size
 	// message 의 최대 크기에 대한 설정이 필요하다.
-	PacketSize_t getPacketMaxSize() const throw() { return szBillingInfo; }
+	PacketSize_t getPacketMaxSize()  { return szBillingInfo; }
 
 };
 

@@ -20,14 +20,14 @@ class Creature;
 class ConditionEffectFlag : public Condition 
 {
 public:
-	virtual ConditionType_t getConditionType() const throw() { return CONDITION_EFFECT_FLAG; }
-	virtual bool isPassive() const throw() { return true; }
-	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) const throw();
+	virtual ConditionType_t getConditionType()  { return CONDITION_EFFECT_FLAG; }
+	virtual bool isPassive()  { return true; }
+	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) ;
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
-	Effect::EffectClass getIndex(void) const throw() { return m_Index; }
+	Effect::EffectClass getIndex(void)  { return m_Index; }
 	void setIndex(Effect::EffectClass index) throw() { m_Index = index; }
 
 private:
@@ -42,9 +42,9 @@ private:
 class ConditionEffectFlagFactory : public ConditionFactory 
 {
 public:
-    virtual ConditionType_t getConditionType() const throw() { return Condition::CONDITION_EFFECT_FLAG; }
-    virtual Condition* createCondition() const throw() { return new ConditionEffectFlag(); }
-    virtual string getConditionName() const throw() { return "EffectFlag"; }
+    virtual ConditionType_t getConditionType()  { return Condition::CONDITION_EFFECT_FLAG; }
+    virtual Condition* createCondition()  { return new ConditionEffectFlag(); }
+    virtual string getConditionName()  { return "EffectFlag"; }
 };
 
 #endif

@@ -29,15 +29,15 @@ public:
 	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) throw(Error);
 	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
 	void tinysave(const char* field) const throw (Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	static void initItemIDRegistry(void) throw();
 
 public:
-	virtual ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_LEARNINGITEM; }
-	virtual string getObjectTableName() const throw() { return "LearningItemObject"; }
+	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_LEARNINGITEM; }
+	virtual string getObjectTableName()  { return "LearningItemObject"; }
 
-	virtual ItemType_t getItemType() const throw() { return m_ItemType; }
+	virtual ItemType_t getItemType()  { return m_ItemType; }
 	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() const throw(Error);
@@ -59,12 +59,12 @@ private:
 class LearningItemInfo : public ItemInfo 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_LEARNINGITEM; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_LEARNINGITEM; }
 
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
-	SkillType_t getSkillType() const throw() { return m_SkillType; }
+	SkillType_t getSkillType()  { return m_SkillType; }
 	void setSkillType(SkillType_t skillType) throw() { m_SkillType = skillType; }
 
 private:
@@ -79,7 +79,7 @@ private:
 class LearningItemInfoManager : public InfoClassManager 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_LEARNINGITEM; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_LEARNINGITEM; }
 	virtual void load() throw(Error);
 };
 
@@ -94,8 +94,8 @@ extern LearningItemInfoManager* g_pLearningItemInfoManager;
 class LearningItemFactory : public ItemFactory 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_LEARNINGITEM; }
-	virtual string getItemClassName() const throw() { return "LearningItem"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_LEARNINGITEM; }
+	virtual string getItemClassName()  { return "LearningItem"; }
 	
 public:
 	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new LearningItem(ItemType,OptionType); }
@@ -109,8 +109,8 @@ public:
 class LearningItemLoader : public ItemLoader 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_LEARNINGITEM; }
-	virtual string getItemClassName() const throw() { return "LearningItem"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_LEARNINGITEM; }
+	virtual string getItemClassName()  { return "LearningItem"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

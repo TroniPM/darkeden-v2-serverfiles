@@ -42,16 +42,16 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_MORPH_VAMPIRE_2; }
+	PacketID_t getPacketID()  { return PACKET_GC_MORPH_VAMPIRE_2; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return m_VampireInfo3.getSize(); }
+	PacketSize_t getPacketSize()  { return m_VampireInfo3.getSize(); }
 
 	// get packet's name
-	string getPacketName() const throw() { return "GCMorphVampire2"; }
+	string getPacketName()  { return "GCMorphVampire2"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 
 public :
@@ -85,13 +85,13 @@ public :
 	Packet* createPacket() throw() { return new GCMorphVampire2(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCMorphVampire2"; }
+	string getPacketName()  { return "GCMorphVampire2"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_MORPH_VAMPIRE_2; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_MORPH_VAMPIRE_2; }
 
 	// get packet's body size
-	PacketSize_t getPacketMaxSize() const throw()
+	PacketSize_t getPacketMaxSize() 
 	{ 
 		return PCVampireInfo3::getMaxSize();
 	}

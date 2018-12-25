@@ -36,8 +36,8 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_CG_TYPE_STRING_LIST; }
-	PacketSize_t getPacketSize() const throw()
+	PacketID_t getPacketID()  { return PACKET_CG_TYPE_STRING_LIST; }
+	PacketSize_t getPacketSize() 
 	{
 		PacketSize_t ret = szBYTE;
 
@@ -52,8 +52,8 @@ public:
 
 		return ret; 
 	}
-	string getPacketName() const throw() { return "CGTypeStringList"; }
-	string toString() const throw();
+	string getPacketName()  { return "CGTypeStringList"; }
+	string toString() ;
 	
 public:
 	void	setType( StringType type ) { m_StringType = type; }
@@ -81,9 +81,9 @@ class CGTypeStringListFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new CGTypeStringList(); }
-	string getPacketName() const throw() { return "CGTypeStringList"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_TYPE_STRING_LIST; }
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + szBYTE + ( szBYTE + MAX_STRING_LENGTH ) * MAX_STRING_NUM + szDWORD; }
+	string getPacketName()  { return "CGTypeStringList"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_TYPE_STRING_LIST; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + szBYTE + ( szBYTE + MAX_STRING_LENGTH ) * MAX_STRING_NUM + szDWORD; }
 };
 
 //////////////////////////////////////////////////////////////////////////////

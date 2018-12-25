@@ -62,9 +62,9 @@ public:
 public:
 
 	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
-	SkillType_t getSkillType() const throw() { return m_SkillType; }
+	SkillType_t getSkillType()  { return m_SkillType; }
 
-	string toString() const throw();
+	string toString() ;
 
 //--------------------------------------------------
 // data members
@@ -111,10 +111,10 @@ public:
 	void addSkillParentInfo(SkillParentInfo* pSkillParentInfo) throw(DuplicatedException, Error);
 
 	// get SkillCount
-	uint getSkillCount() const throw() { return m_SkillCount; }
+	uint getSkillCount()  { return m_SkillCount; }
 
 	// toString for Debug
-	string toString() const throw();
+	string toString() ;
 
 private:
 

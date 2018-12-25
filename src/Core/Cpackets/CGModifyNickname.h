@@ -26,10 +26,10 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_CG_MODIFY_NICKNAME; }
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szBYTE + m_Nickname.size(); }
-	string getPacketName() const throw() { return "CGModifyNickname"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_CG_MODIFY_NICKNAME; }
+	PacketSize_t getPacketSize()  { return szObjectID + szBYTE + m_Nickname.size(); }
+	string getPacketName()  { return "CGModifyNickname"; }
+	string toString() ;
 	
 public:
 	ObjectID_t	getItemObjectID() const { return m_ItemObjectID; }
@@ -50,9 +50,9 @@ class CGModifyNicknameFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new CGModifyNickname(); }
-	string getPacketName() const throw() { return "CGModifyNickname"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_MODIFY_NICKNAME; }
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szBYTE + MAX_NICKNAME_SIZE; }
+	string getPacketName()  { return "CGModifyNickname"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_MODIFY_NICKNAME; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szBYTE + MAX_NICKNAME_SIZE; }
 };
 
 //////////////////////////////////////////////////////////////////////////////

@@ -42,27 +42,27 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_REQUEST_INFO; }
+	PacketID_t getPacketID()  { return PACKET_CG_REQUEST_INFO; }
 	
 	// get packet's body size
 	// *OPTIMIZATION HINT*
 	// const static CGRequestInfoPacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketSize() const throw() { return szBYTE + szuint; }
+	PacketSize_t getPacketSize()  { return szBYTE + szuint; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGRequestInfo"; }
+	string getPacketName()  { return "CGRequestInfo"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 	
 public:
 
 	// get / set Code
-	BYTE getCode() const throw() { return m_Code; }
+	BYTE getCode()  { return m_Code; }
 	void setCode(BYTE code) throw() { m_Code = code; }
 
 	// get / set Code
-	uint getValue() const throw() { return m_Value; }
+	uint getValue()  { return m_Value; }
 	void setValue(uint value) throw() { m_Value = value; }
 
 private :
@@ -90,15 +90,15 @@ public:
 	Packet* createPacket() throw() { return new CGRequestInfo(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGRequestInfo"; }
+	string getPacketName()  { return "CGRequestInfo"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_REQUEST_INFO; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_REQUEST_INFO; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static CGRequestInfoPacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + szuint; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + szuint; }
 
 };
 

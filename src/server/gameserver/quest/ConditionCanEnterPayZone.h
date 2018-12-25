@@ -18,11 +18,11 @@
 class ConditionCanEnterPayZone : public Condition 
 {
 public:
-	virtual ConditionType_t getConditionType() const throw() { return CONDITION_CAN_ENTER_PAY_ZONE; }
-	virtual bool isPassive() const throw() { return true; }
-	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) const throw();
+	virtual ConditionType_t getConditionType()  { return CONDITION_CAN_ENTER_PAY_ZONE; }
+	virtual bool isPassive()  { return true; }
+	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) ;
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 
@@ -35,9 +35,9 @@ public:
 class ConditionCanEnterPayZoneFactory : public ConditionFactory 
 {
 public:
-    virtual ConditionType_t getConditionType() const throw() { return Condition::CONDITION_CAN_ENTER_PAY_ZONE; }
-    virtual Condition* createCondition() const throw() { return new ConditionCanEnterPayZone(); }
-    virtual string getConditionName() const throw() { return "CanEnterPayZone"; }
+    virtual ConditionType_t getConditionType()  { return Condition::CONDITION_CAN_ENTER_PAY_ZONE; }
+    virtual Condition* createCondition()  { return new ConditionCanEnterPayZone(); }
+    virtual string getConditionName()  { return "CanEnterPayZone"; }
 };
 
 #endif

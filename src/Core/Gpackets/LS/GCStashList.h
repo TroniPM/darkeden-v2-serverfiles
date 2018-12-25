@@ -75,25 +75,25 @@ public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_STASH_LIST; }
-	PacketSize_t getPacketSize() const throw();
-	string getPacketName() const throw() { return "GCStashList"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_STASH_LIST; }
+	PacketSize_t getPacketSize() ;
+	string getPacketName()  { return "GCStashList"; }
+	string toString() ;
 
 public:
-	bool isExist(BYTE rack, BYTE index) const throw();
+	bool isExist(BYTE rack, BYTE index) ;
 
-	STASHITEM getStashItem(BYTE rack, BYTE index) const throw();
+	STASHITEM getStashItem(BYTE rack, BYTE index) ;
 	void setStashItem(BYTE rack, BYTE index, Item* pItem) throw();
 
 	list<SubItemInfo*>& getSubItems(BYTE rack, BYTE index) throw();
 
 	BYTE getSubItemCount(BYTE rack, BYTE index) throw();
 
-	Gold_t getStashGold() const throw() { return m_StashGold; }
+	Gold_t getStashGold()  { return m_StashGold; }
 	void setStashGold(Gold_t gold) throw() { m_StashGold = gold; }
 
-	BYTE getStashNum() const throw() { return m_StashNum; }
+	BYTE getStashNum()  { return m_StashNum; }
 	void setStashNum(BYTE num) throw() { m_StashNum = num; }
 	
 private:
@@ -114,9 +114,9 @@ class GCStashListFactory : public PacketFactory
 {
 public :
 	Packet* createPacket() throw() { return new GCStashList(); }
-	string getPacketName() const throw() { return "GCStashList"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_STASH_LIST; }
-	PacketSize_t getPacketMaxSize() const throw() 
+	string getPacketName()  { return "GCStashList"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_STASH_LIST; }
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		PacketSize_t size = 0;
 		PacketSize_t unit_size = 

@@ -44,21 +44,21 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_SG_GUILD_INFO; }
+	PacketID_t getPacketID()  { return PACKET_SG_GUILD_INFO; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw(); 
+	PacketSize_t getPacketSize() ; 
 
 	// get packet name
-	string getPacketName() const throw() { return "SGGuildInfo"; }
+	string getPacketName()  { return "SGGuildInfo"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public:
 
 	// get guild info list num
-	WORD getGuildInfoListNum() const throw() { return m_GuildInfoList.size(); }
+	WORD getGuildInfoListNum()  { return m_GuildInfoList.size(); }
 
 	// add GuildInfo
 	void addGuildInfo( GuildInfo2* pGuildInfo ) throw() { m_GuildInfoList.push_front( pGuildInfo ); }
@@ -101,14 +101,14 @@ public:
 	Packet* createPacket() throw() { return new SGGuildInfo(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "SGGuildInfo"; }
+	string getPacketName()  { return "SGGuildInfo"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_SG_GUILD_INFO; }
+	PacketID_t getPacketID()  { return Packet::PACKET_SG_GUILD_INFO; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		return szWORD + GuildInfo2::getMaxSize() * 500;
 	}

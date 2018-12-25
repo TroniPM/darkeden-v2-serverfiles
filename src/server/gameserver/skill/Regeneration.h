@@ -20,8 +20,8 @@ public:
 	~Regeneration() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Regeneration"; }
-	SkillType_t getSkillType() const throw() { return SKILL_REGENERATION; }
+    string getSkillHandlerName()  { return "Regeneration"; }
+	SkillType_t getSkillType()  { return SKILL_REGENERATION; }
 
 	void execute( Slayer* pSlayer, ObjectID_t ObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID ) throw(Error);
 	void execute( Slayer* pSlayer, ZoneCoord_t X, ZoneCoord_t Y, SkillSlot* pSkillSlot, CEffectID_t CEffectID ) throw(Error);

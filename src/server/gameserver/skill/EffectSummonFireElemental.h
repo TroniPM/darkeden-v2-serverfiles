@@ -20,14 +20,14 @@ public:
 	EffectSummonFireElemental(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_FIRE_ELEMENTAL; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_FIRE_ELEMENTAL; }
 
 	void affect() throw(Error);
 
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void setDamage( uint bonus ) { m_Damage = bonus; }

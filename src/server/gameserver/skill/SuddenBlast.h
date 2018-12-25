@@ -20,8 +20,8 @@ public:
 	~SuddenBlast() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "SuddenBlast"; }
-	SkillType_t getSkillType() const throw() { return SKILL_SUDDEN_BLAST; }
+    string getSkillHandlerName()  { return "SuddenBlast"; }
+	SkillType_t getSkillType()  { return SKILL_SUDDEN_BLAST; }
 
 	void execute(Ousters* pOusters, ObjectID_t TargetObjectID, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 

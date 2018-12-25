@@ -79,11 +79,11 @@ private:
 class NoOption
 {
 public:
-	bool						hasOptionType() const throw() { return false; }
-	int							getOptionTypeSize() const throw() { return 0; }
-	int							getRandomOptionType() const throw() { return 0; }
-	const list<OptionType_t>&	getOptionTypeList() const throw() { static list<OptionType_t> nullList; return nullList; }
-	OptionType_t				getFirstOptionType() const throw() { return 0; }
+	bool						hasOptionType()  { return false; }
+	int							getOptionTypeSize()  { return 0; }
+	int							getRandomOptionType()  { return 0; }
+	const list<OptionType_t>&	getOptionTypeList()  { static list<OptionType_t> nullList; return nullList; }
+	OptionType_t				getFirstOptionType()  { return 0; }
 	void						removeOptionType(OptionType_t OptionType) throw() { }
 	void						changeOptionType(OptionType_t currentOptionType, OptionType_t newOptionType) throw() { }
 	void						addOptionType(OptionType_t OptionType) throw() { }
@@ -93,9 +93,9 @@ public:
 class HasOption
 {
 public:
-	bool						hasOptionType() const throw() { return !m_OptionType.empty(); }
-	int							getOptionTypeSize() const throw() { return m_OptionType.size(); }
-	int							getRandomOptionType() const throw()
+	bool						hasOptionType()  { return !m_OptionType.empty(); }
+	int							getOptionTypeSize()  { return m_OptionType.size(); }
+	int							getRandomOptionType() 
 	{
 		if (m_OptionType.empty())
 			return 0;
@@ -105,8 +105,8 @@ public:
 		return *itr;
 	}
 
-	const	list<OptionType_t>& getOptionTypeList() const throw() { return m_OptionType; }
-	OptionType_t				getFirstOptionType() const throw() { if (m_OptionType.empty()) return 0; return m_OptionType.front(); }
+	const	list<OptionType_t>& getOptionTypeList()  { return m_OptionType; }
+	OptionType_t				getFirstOptionType()  { if (m_OptionType.empty()) return 0; return m_OptionType.front(); }
 	void						removeOptionType(OptionType_t OptionType) throw() { list<OptionType_t>::iterator itr = find(m_OptionType.begin(), m_OptionType.end(), OptionType); if (itr!=m_OptionType.end()) m_OptionType.erase(itr); }
 	void						changeOptionType(OptionType_t currentOptionType, OptionType_t newOptionType) throw() { list<OptionType_t>::iterator itr = find(m_OptionType.begin(), m_OptionType.end(), currentOptionType); if (itr!=m_OptionType.end()) *itr=newOptionType; }
 	void						addOptionType(OptionType_t OptionType) throw() { m_OptionType.push_back(OptionType); }
@@ -188,16 +188,16 @@ public:
 class NoAttacking
 {
 public:
-	BYTE		getBulletCount() const throw() { return 0; }
+	BYTE		getBulletCount()  { return 0; }
 	void		setBulletCount(BYTE bulletCount) throw() { }
 
-	bool		isSilverWeapon() const throw() { return false; }
-	Silver_t	getSilver() const throw() { return 0; }
+	bool		isSilverWeapon()  { return false; }
+	Silver_t	getSilver()  { return 0; }
 	void		setSilver(Silver_t amount) throw() { }
 
-	bool		isGun() const throw() { return false; }
+	bool		isGun()  { return false; }
 
-	Damage_t	getBonusDamage() const throw() { return 0; }
+	Damage_t	getBonusDamage()  { return 0; }
 	void		setBonusDamage(Damage_t BonusDamage) throw() { }
 };
 
@@ -206,16 +206,16 @@ class Weapon
 public:
 	Weapon() : m_BonusDamage(0) { }
 
-	BYTE		getBulletCount() const throw() { return 0; }
+	BYTE		getBulletCount()  { return 0; }
 	void		setBulletCount(BYTE bulletCount) throw() { }
 
-	bool		isGun() const throw() { return false; }
+	bool		isGun()  { return false; }
 
-	bool		isSilverWeapon() const throw() { return false; }
-	Silver_t	getSilver() const throw() { return 0; }
+	bool		isSilverWeapon()  { return false; }
+	Silver_t	getSilver()  { return 0; }
 	void		setSilver(Silver_t amount) throw() { }
 
-	Damage_t	getBonusDamage() const throw() { return m_BonusDamage; }
+	Damage_t	getBonusDamage()  { return m_BonusDamage; }
 	void		setBonusDamage(Damage_t BonusDamage) throw() { m_BonusDamage = BonusDamage; }
 
 private:
@@ -227,8 +227,8 @@ class SlayerWeapon : public Weapon
 public:
 	SlayerWeapon() : m_Silver(0) { }
 
-	bool		isSilverWeapon() const throw() { return true; }
-	Silver_t	getSilver() const throw() { return m_Silver; }
+	bool		isSilverWeapon()  { return true; }
+	Silver_t	getSilver()  { return m_Silver; }
 	void		setSilver(Silver_t amount) throw() { m_Silver = amount; }
 
 private:
@@ -240,10 +240,10 @@ class SlayerGun : public SlayerWeapon
 public:
 	SlayerGun() : m_Bullet(0) { }
 
-	BYTE	getBulletCount() const throw() { return m_Bullet; }
+	BYTE	getBulletCount()  { return m_Bullet; }
 	void	setBulletCount(BYTE bulletCount) throw() { m_Bullet = bulletCount; }
 
-	bool	isGun() const throw() { return true; }
+	bool	isGun()  { return true; }
 
 private:
 	BYTE	m_Bullet;
@@ -256,11 +256,11 @@ typedef NoValuePolicy<EnchantLevel_t, 0> NoEnchantLevel;
 class NoOption2
 {
 public:
-	bool						hasOptionType2() const throw() { return false; }
-	int							getOptionTypeSize2() const throw() { return 0; }
-	int							getRandomOptionType2() const throw() { return 0; }
-	const list<OptionType_t>&	getOptionTypeList2() const throw() { static list<OptionType_t> nullList; return nullList; }
-	OptionType_t				getFirstOptionType2() const throw() { return 0; }
+	bool						hasOptionType2()  { return false; }
+	int							getOptionTypeSize2()  { return 0; }
+	int							getRandomOptionType2()  { return 0; }
+	const list<OptionType_t>&	getOptionTypeList2()  { static list<OptionType_t> nullList; return nullList; }
+	OptionType_t				getFirstOptionType2()  { return 0; }
 	void						removeOptionType2(OptionType_t OptionType) throw() { }
 	void						changeOptionType2(OptionType_t currentOptionType, OptionType_t newOptionType) throw() { }
 	void						addOptionType2(OptionType_t OptionType) throw() { }
@@ -270,9 +270,9 @@ public:
 class HasOption2
 {
 public:
-	bool						hasOptionType2() const throw() { return !m_OptionType2.empty(); }
-	int							getOptionTypeSize2() const throw() { return m_OptionType2.size(); }
-	int							getRandomOptionType2() const throw()
+	bool						hasOptionType2()  { return !m_OptionType2.empty(); }
+	int							getOptionTypeSize2()  { return m_OptionType2.size(); }
+	int							getRandomOptionType2() 
 	{
 		if (m_OptionType2.empty())
 			return 0;
@@ -282,8 +282,8 @@ public:
 		return *itr;
 	}
 
-	const	list<OptionType_t>& getOptionTypeList2() const throw() { return m_OptionType2; }
-	OptionType_t				getFirstOptionType2() const throw() { if (m_OptionType2.empty()) return 0; return m_OptionType2.front(); }
+	const	list<OptionType_t>& getOptionTypeList2()  { return m_OptionType2; }
+	OptionType_t				getFirstOptionType2()  { if (m_OptionType2.empty()) return 0; return m_OptionType2.front(); }
 	void						removeOptionType2(OptionType_t OptionType) throw() { list<OptionType_t>::iterator itr = find(m_OptionType2.begin(), m_OptionType2.end(), OptionType); if (itr!=m_OptionType2.end()) m_OptionType2.erase(itr); }
 	void						changeOptionType2(OptionType_t currentOptionType, OptionType_t newOptionType) throw() { list<OptionType_t>::iterator itr = find(m_OptionType2.begin(), m_OptionType2.end(), currentOptionType); if (itr!=m_OptionType2.end()) *itr=newOptionType; }
 	void						addOptionType2(OptionType_t OptionType) throw() { m_OptionType2.push_back(OptionType); }

@@ -20,8 +20,8 @@ public:
 	~MercyGround() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "MercyGround"; }
-	SkillType_t getSkillType() const throw() { return SKILL_MERCY_GROUND; }
+    string getSkillHandlerName()  { return "MercyGround"; }
+	SkillType_t getSkillType()  { return SKILL_MERCY_GROUND; }
 
 	void execute( Slayer* pSlayer, ObjectID_t ObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID ) throw(Error);
 	void execute( Slayer* pSlayer, ZoneCoord_t X, ZoneCoord_t Y, SkillSlot* pSkillSlot, CEffectID_t CEffectID ) throw(Error);

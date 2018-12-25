@@ -45,28 +45,28 @@ public :
 public :
 
 	// get / set SkillType
-	SkillType_t getSkillType() const throw() { return m_SkillType; }
+	SkillType_t getSkillType()  { return m_SkillType; }
 	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
 
 	// get / set Exp
-	Exp_t getSkillExp() const throw() { return m_Exp; }
+	Exp_t getSkillExp()  { return m_Exp; }
 	void setSkillExp(Exp_t Exp) throw() { m_Exp = Exp; }
 
 	// get / set ExpLevel
-	ExpLevel_t getSkillExpLevel() const throw() { return m_ExpLevel; }
+	ExpLevel_t getSkillExpLevel()  { return m_ExpLevel; }
 	void setSkillExpLevel(ExpLevel_t ExpLevel) throw() { m_ExpLevel = ExpLevel; }
 
 	// get / set Turn
-	Turn_t getSkillTurn() const throw() { return m_Interval ; }
+	Turn_t getSkillTurn()  { return m_Interval ; }
 	void setSkillTurn(Turn_t SkillTurn) throw() { m_Interval = SkillTurn; }
 
 	// get / set CastingTime
-	Turn_t getCastingTime() const throw() { return m_CastingTime; }
+	Turn_t getCastingTime()  { return m_CastingTime; }
 	void setCastingTime(Turn_t CastingTime) throw() { m_CastingTime = CastingTime; }
 
 	// get / set Enable
 	// true 일 경우 사용 가능, false일 경우 사용 불가능.
-	bool getEnable() const throw() { return m_Enable; }
+	bool getEnable()  { return m_Enable; }
 	void setEnable(bool Enable ) throw() { m_Enable = Enable; }
 
 private :

@@ -20,9 +20,9 @@ public:
 	~Destinies() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Destinies"; }
+    string getSkillHandlerName()  { return "Destinies"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_DESTINIES; }
+	SkillType_t getSkillType()  { return SKILL_DESTINIES; }
 
 	void execute(Ousters* pOusters, ObjectID_t targetObject, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 

@@ -34,7 +34,7 @@ public:
 	virtual QuestMessage	canGiveReward( PlayerCreature* pPC ) const throw(Error);
 
 	virtual RewardInfo*		selectReward( PlayerCreature* pPC ) const throw(Error) = 0;
-	virtual string	toString() const throw();
+	virtual string	toString() ;
 
 	virtual bool	anotherQuestReward() const { return false; }
 

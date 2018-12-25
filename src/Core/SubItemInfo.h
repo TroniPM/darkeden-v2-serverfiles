@@ -49,23 +49,23 @@ public :
 
 	// get/set ObjectID
 	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 
 	// get/set ItemClass
 	void setItemClass (BYTE IClass) throw() { m_IClass = IClass; }
-	BYTE getItemClass () const throw() { return m_IClass; }
+	BYTE getItemClass ()  { return m_IClass; }
 
 	// get/set ItemType
 	void setItemType (ItemType_t ItemType) throw() { m_ItemType = ItemType; }
-	ItemType_t getItemType() const throw() { return m_ItemType; }
+	ItemType_t getItemType()  { return m_ItemType; }
 
 	// get/set ItemNum
 	void setItemNum (ItemNum_t ItemNum) throw() { m_ItemNum = ItemNum; }
-	ItemNum_t getItemNum() const throw() { return m_ItemNum; }
+	ItemNum_t getItemNum()  { return m_ItemNum; }
 
 	// set/set SlotID
 	void setSlotID(SlotID_t SlotID) throw() { m_SlotID = SlotID; }
-	SlotID_t getSlotID() const throw() { return m_SlotID; }
+	SlotID_t getSlotID()  { return m_SlotID; }
 
 private :
 

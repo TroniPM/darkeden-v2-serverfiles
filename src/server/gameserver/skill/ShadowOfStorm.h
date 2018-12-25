@@ -20,8 +20,8 @@ public:
 	~ShadowOfStorm() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "ShadowOfStorm"; }
-	SkillType_t getSkillType() const throw() { return SKILL_SHADOW_OF_STORM; }
+    string getSkillHandlerName()  { return "ShadowOfStorm"; }
+	SkillType_t getSkillType()  { return SKILL_SHADOW_OF_STORM; }
 
 	void execute(Ousters* pOusters, ZoneCoord_t X, ZoneCoord_t Y, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Ousters* pOusters, ObjectID_t ObjectID,  OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);

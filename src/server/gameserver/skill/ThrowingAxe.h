@@ -20,8 +20,8 @@ public:
 	~ThrowingAxe() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "ThrowingAxe"; }
-	SkillType_t getSkillType() const throw() { return SKILL_THROWING_AXE; }
+    string getSkillHandlerName()  { return "ThrowingAxe"; }
+	SkillType_t getSkillType()  { return SKILL_THROWING_AXE; }
 
 	void execute(Monster*, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
 

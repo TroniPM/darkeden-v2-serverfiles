@@ -48,10 +48,10 @@ public:
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "CGConnectSetKey"; }
+	string getPacketName()  { return "CGConnectSetKey"; }
 	
 	// get packet's debug string
-	string toString() const throw() { return "CGConnectSetKey"; }
+	string toString()  { return "CGConnectSetKey"; }
 
 public:
 
@@ -88,13 +88,13 @@ public:
 	Packet * createPacket () throw () { return new CGConnectSetKey(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGConnectSetKey"; }
+	string getPacketName()  { return "CGConnectSetKey"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_ENCODE_KEY; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_ENCODE_KEY; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw() { return szWORD + szWORD;  }
+	PacketSize_t getPacketMaxSize()  { return szWORD + szWORD;  }
 
 };
 

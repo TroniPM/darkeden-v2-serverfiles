@@ -22,10 +22,10 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_CG_THROW_BOMB; }
-	PacketSize_t getPacketSize() const throw() { return szCoord * 4 + szBYTE; }
-	string getPacketName() const throw() { return "CGThrowBomb"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_CG_THROW_BOMB; }
+	PacketSize_t getPacketSize()  { return szCoord * 4 + szBYTE; }
+	string getPacketName()  { return "CGThrowBomb"; }
+	string toString() ;
 
 public:
 	Coord_t getZoneX(void) const { return m_ZoneX; }
@@ -60,9 +60,9 @@ class CGThrowBombFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new CGThrowBomb(); }
-	string getPacketName() const throw() { return "CGThrowBomb"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_THROW_BOMB; }
-	PacketSize_t getPacketMaxSize() const throw() { return szCoord * 4 + szBYTE; }
+	string getPacketName()  { return "CGThrowBomb"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_THROW_BOMB; }
+	PacketSize_t getPacketMaxSize()  { return szCoord * 4 + szBYTE; }
 };
 
 //////////////////////////////////////////////////////////////////////////////

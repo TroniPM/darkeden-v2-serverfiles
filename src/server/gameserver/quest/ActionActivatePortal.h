@@ -20,15 +20,15 @@
 class ActionActivatePortal : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_ACTIVATE_PORTAL; }
+	virtual ActionType_t getActionType()  { return ACTION_ACTIVATE_PORTAL; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
-	ZoneID_t    getZoneID(void) const throw() { return m_ZoneID; }
-	ZoneCoord_t getX(void) const throw() { return m_X; }
-	ZoneCoord_t getY(void) const throw() { return m_Y; }
+	ZoneID_t    getZoneID(void)  { return m_ZoneID; }
+	ZoneCoord_t getX(void)  { return m_X; }
+	ZoneCoord_t getY(void)  { return m_Y; }
 
 private:
 	ZoneID_t    m_ZoneID;
@@ -44,8 +44,8 @@ private:
 class ActionActivatePortalFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_ACTIVATE_PORTAL; }
-	virtual string getActionName() const throw() { return "ActivatePortal"; }
-	virtual Action* createAction() const throw() { return new ActionActivatePortal(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_ACTIVATE_PORTAL; }
+	virtual string getActionName()  { return "ActivatePortal"; }
+	virtual Action* createAction()  { return new ActionActivatePortal(); }
 };
 #endif

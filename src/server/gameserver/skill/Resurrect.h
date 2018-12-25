@@ -20,9 +20,9 @@ public:
 	~Resurrect() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Resurrect"; }
+    string getSkillHandlerName()  { return "Resurrect"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_RESURRECT; }
+	SkillType_t getSkillType()  { return SKILL_RESURRECT; }
 
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

@@ -48,37 +48,37 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_SKILL_TO_OBJECT_OK_6; }
+	PacketID_t getPacketID()  { return PACKET_GC_SKILL_TO_OBJECT_OK_6; }
 	
 	// get packet's body size
 	// 최적화시, 미리 계산된 정수를 사용한다.
-	PacketSize_t getPacketSize() const throw() { return szCoord*2 + szSkillType + szDuration + szBYTE + ModifyInfo::getPacketSize(); }
+	PacketSize_t getPacketSize()  { return szCoord*2 + szSkillType + szDuration + szBYTE + ModifyInfo::getPacketSize(); }
 
 	// get packet's name
-	string getPacketName() const throw() { return "GCSkillToObjectOK6"; }
+	string getPacketName()  { return "GCSkillToObjectOK6"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get / set ObjectID
-	Coord_t getX() const throw() { return m_X;}
-	Coord_t getY() const throw() { return m_Y;}
+	Coord_t getX()  { return m_X;}
+	Coord_t getY()  { return m_Y;}
 	void setXY(Coord_t X, Coord_t Y) throw() { m_X = X; m_Y = Y;}
 		
 
 	// get / set SkillType
-	SkillType_t getSkillType() const throw() { return m_SkillType; }
+	SkillType_t getSkillType()  { return m_SkillType; }
 	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
 
 	// get / set Duration
-	Duration_t getDuration() const throw() { return m_Duration; }
+	Duration_t getDuration()  { return m_Duration; }
 	void setDuration(Duration_t Duration) throw() { m_Duration = Duration; }
 	
 	// get / set CEffectID 
-//	CEffectID_t getCEffectID() const throw() { return m_CEffectID; }
+//	CEffectID_t getCEffectID()  { return m_CEffectID; }
 //	void setCEffectID(CEffectID_t e) throw() { m_CEffectID = e; }
 
-	BYTE getGrade() const throw() { return m_Grade; } 
+	BYTE getGrade()  { return m_Grade; } 
 	void setGrade( BYTE grade ) throw() { m_Grade = grade; }
 
 private :
@@ -124,13 +124,13 @@ public :
 	Packet* createPacket() throw() { return new GCSkillToObjectOK6(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCSkillToObjectOK6"; }
+	string getPacketName()  { return "GCSkillToObjectOK6"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_SKILL_TO_OBJECT_OK_6; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_SKILL_TO_OBJECT_OK_6; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szCoord*2+ szSkillType + szDuration + szBYTE + ModifyInfo::getPacketMaxSize(); }
+	PacketSize_t getPacketMaxSize()  { return szCoord*2+ szSkillType + szDuration + szBYTE + ModifyInfo::getPacketMaxSize(); }
 
 };
 

@@ -20,8 +20,8 @@ public:
 	~DoubleImpact() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "DoubleImpact"; }
-	SkillType_t getSkillType() const throw() { return SKILL_DOUBLE_IMPACT; }
+    string getSkillHandlerName()  { return "DoubleImpact"; }
+	SkillType_t getSkillType()  { return SKILL_DOUBLE_IMPACT; }
 
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

@@ -297,7 +297,7 @@ public:
 	MP_t getdecreaseConsumeMP(Attr_t INT) { return m_decreaseConsumeMP[INT]; }
 
 	// toString for Debug
-	string toString() const throw();
+	string toString() ;
 
 private:
 	uint         m_SkillCount;

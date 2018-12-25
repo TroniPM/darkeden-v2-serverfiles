@@ -20,15 +20,15 @@
 class ActionActivateMazeReturn : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_ACTIVATE_MAZE_RETURN; }
+	virtual ActionType_t getActionType()  { return ACTION_ACTIVATE_MAZE_RETURN; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
-	ZoneID_t    getZoneID(void) const throw() { return m_ZoneID; }
-	ZoneCoord_t getX(void) const throw() { return m_X; }
-	ZoneCoord_t getY(void) const throw() { return m_Y; }
+	ZoneID_t    getZoneID(void)  { return m_ZoneID; }
+	ZoneCoord_t getX(void)  { return m_X; }
+	ZoneCoord_t getY(void)  { return m_Y; }
 
 private:
 	ZoneID_t    m_ZoneID;
@@ -44,8 +44,8 @@ private:
 class ActionActivateMazeReturnFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_ACTIVATE_MAZE_RETURN; }
-	virtual string getActionName() const throw() { return "ActivateMazeReturn"; }
-	virtual Action* createAction() const throw() { return new ActionActivateMazeReturn(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_ACTIVATE_MAZE_RETURN; }
+	virtual string getActionName()  { return "ActivateMazeReturn"; }
+	virtual Action* createAction()  { return new ActionActivateMazeReturn(); }
 };
 #endif

@@ -33,24 +33,24 @@ public:
 
 // identity methods
 public:
-	string getOwner(void) const throw() { return m_Owner; }
+	string getOwner(void)  { return m_Owner; }
 	void setOwner(const string& owner) throw() { m_Owner = owner; }
 
-	CoordInven_t getWidth() const throw() { return m_Width; }
-	CoordInven_t getHeight() const throw() { return m_Height; }
+	CoordInven_t getWidth()  { return m_Width; }
+	CoordInven_t getHeight()  { return m_Height; }
 
-	ItemNum_t getItemNum() const throw() { return m_TotalNum; }
+	ItemNum_t getItemNum()  { return m_TotalNum; }
 	void increaseNum() throw() { m_TotalNum++; }
 	void increaseNum(ItemNum_t ItemNum) throw() { m_TotalNum += ItemNum; }
 	void decreaseItemNum() throw() { m_TotalNum--; }
 	void decreaseItemNum(ItemNum_t ItemNum) throw() { m_TotalNum -= ItemNum; }
 	void setItemNum(ItemNum_t ItemNum) throw() { m_TotalNum = ItemNum; }
 
-	Weight_t getWeight() const throw() { return m_TotalWeight; }
+	Weight_t getWeight()  { return m_TotalWeight; }
 	void increaseWeight(Weight_t Weight) throw() { m_TotalWeight += Weight; }
 	void decreaseWeight(Weight_t Weight) throw() { m_TotalWeight -= Weight; }
 
-	bool getDeleteAllFlag(void) const throw() { return m_bDeleteAll; }
+	bool getDeleteAllFlag(void)  { return m_bDeleteAll; }
 	void setDeleteAllFlag(bool value) throw() { m_bDeleteAll = value; }
 
 // check methods
@@ -109,9 +109,9 @@ public:
 
 // item manipulation related methods
 public:
-	Item* getItem(CoordInven_t X, CoordInven_t Y) const throw();
+	Item* getItem(CoordInven_t X, CoordInven_t Y) ;
 
-	InventorySlot& getInventorySlot(CoordInven_t X, CoordInven_t Y) const throw() { return m_pInventorySlot[X][Y]; }
+	InventorySlot& getInventorySlot(CoordInven_t X, CoordInven_t Y)  { return m_pInventorySlot[X][Y]; }
 
 protected:
 	void  setItem(CoordInven_t X, CoordInven_t Y, Item* pItem) throw();
@@ -119,13 +119,13 @@ protected:
 // packing related methods
 public:
 	void clear() throw(); 
-	list<Item*> getList() const throw();
-	int  calc2x2Item(void) const throw();
+	list<Item*> getList() ;
+	int  calc2x2Item(void) ;
 
 // misc methods
 public:
 	void   save(const string& owner) throw();
-	string toString() const throw();
+	string toString() ;
 
 
 //#ifdef __XMAS_EVENT_CODE__

@@ -20,7 +20,7 @@ public:
 	EffectBloodyWallBlocked(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_BLOODY_WALL_BLOCKED; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_BLOODY_WALL_BLOCKED; }
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
@@ -31,7 +31,7 @@ public:
 	void unaffect(Item* pItem) throw(Error) {}
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	string getCasterName(void) const { return m_CasterName; }
@@ -64,8 +64,8 @@ private:
 class EffectBloodyWallBlockedLoader : public EffectLoader 
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_BLOODY_WALL_BLOCKED; }
-	virtual string getEffectClassName() const throw() { return "EffectBloodyWallBlocked"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_BLOODY_WALL_BLOCKED; }
+	virtual string getEffectClassName()  { return "EffectBloodyWallBlocked"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error) {}

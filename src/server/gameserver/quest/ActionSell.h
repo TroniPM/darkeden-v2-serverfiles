@@ -22,10 +22,10 @@
 class ActionSell : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_SELL; }
+	virtual ActionType_t getActionType()  { return ACTION_SELL; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 };
 
 //////////////////////////////////////////////////////////////////////////////
@@ -35,9 +35,9 @@ public:
 class ActionSellFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_SELL; }
-	virtual string getActionName() const throw() { return "Sell"; }
-	virtual Action* createAction() const throw() { return new ActionSell(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_SELL; }
+	virtual string getActionName()  { return "Sell"; }
+	virtual Action* createAction()  { return new ActionSell(); }
 };
 
 #endif

@@ -52,7 +52,7 @@ public:
 
 	void setForceDisconnect( bool bForceDisconnect = true ) { m_bForceDisconnect = bForceDisconnect; }
 
-	int getVersionNumber() const throw();
+	int getVersionNumber() ;
 	int getMinusIntervalInt() const throw ();
 	string getMinusInterval() const throw ();
 

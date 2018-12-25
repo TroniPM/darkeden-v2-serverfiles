@@ -42,24 +42,24 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_LC_WORLD_LIST; }
+	PacketID_t getPacketID()  { return PACKET_LC_WORLD_LIST; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw();
+	PacketSize_t getPacketSize() ;
 	
 	// get packet's name
-	string getPacketName() const throw() { return "LCWorldList"; }
+	string getPacketName()  { return "LCWorldList"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 	
 public:
 
 	// 현재 월드
-	WorldID_t getCurrentWorldID() const throw() { return m_CurrentWorldID; }
+	WorldID_t getCurrentWorldID()  { return m_CurrentWorldID; }
 	void setCurrentWorldID( WorldID_t WorldID ) throw() { m_CurrentWorldID = WorldID; }
 
-    BYTE getListNum() const throw() { return m_WorldInfoList.size(); }
+    BYTE getListNum()  { return m_WorldInfoList.size(); }
 
 	// add / delete / clear S List
 	void addListElement(WorldInfo* pWorldInfo) throw() { m_WorldInfoList.push_back(pWorldInfo); }
@@ -99,13 +99,13 @@ public:
 	Packet* createPacket() throw() { return new LCWorldList(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "LCWorldList"; }
+	string getPacketName()  { return "LCWorldList"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_LC_WORLD_LIST; }
+	PacketID_t getPacketID()  { return Packet::PACKET_LC_WORLD_LIST; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		// 슬레이어 정보가 뱀파이어 정보보다 사이즈가 크기 때문에,
 		// 이 패킷의 최대 크기는 슬레이어 3 명일 경우이다.

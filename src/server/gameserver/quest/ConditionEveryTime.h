@@ -19,18 +19,18 @@
 class ConditionEveryTime : public Condition 
 {
 public:
-	virtual ConditionType_t getConditionType() const throw() { return CONDITION_EVERY_TIME; }
-	virtual bool isActive() const throw() { return true; }
-	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) const throw();
+	virtual ConditionType_t getConditionType()  { return CONDITION_EVERY_TIME; }
+	virtual bool isActive()  { return true; }
+	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) ;
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
-	Turn_t getTurn() const throw() { return m_Turn; }
+	Turn_t getTurn()  { return m_Turn; }
 	void setTurn(Turn_t turn) throw() { m_Turn = turn; }
 
 	Timeval & getNextTurn() throw() { return m_NextTurn; }
-	const Timeval & getNextTurn() const throw() { return m_NextTurn; }
+	const Timeval & getNextTurn()  { return m_NextTurn; }
 	void setNextTurn(Timeval tv) throw() { m_NextTurn = tv; }	
 
 private:
@@ -50,9 +50,9 @@ private:
 class ConditionEveryTimeFactory : public ConditionFactory 
 {
 public:
-    virtual ConditionType_t getConditionType() const throw() { return Condition::CONDITION_EVERY_TIME; }
-    virtual Condition* createCondition() const throw() { return new ConditionEveryTime(); }
-    virtual string getConditionName() const throw() { return "EveryTime"; }
+    virtual ConditionType_t getConditionType()  { return Condition::CONDITION_EVERY_TIME; }
+    virtual Condition* createCondition()  { return new ConditionEveryTime(); }
+    virtual string getConditionName()  { return "EveryTime"; }
 };
 
 #endif

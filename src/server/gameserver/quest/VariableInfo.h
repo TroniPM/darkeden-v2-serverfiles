@@ -29,7 +29,7 @@ public:
 
 	const string& getParameter( int index ) const throw(OutOfBoundException, Error);
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	void 	parse() throw (Error);

@@ -20,9 +20,9 @@ public:
 	~HandsOfNizie() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "HandsOfNizie"; }
+    string getSkillHandlerName()  { return "HandsOfNizie"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_HANDS_OF_NIZIE; }
+	SkillType_t getSkillType()  { return SKILL_HANDS_OF_NIZIE; }
 
 	void execute(Ousters* pOusters, ObjectID_t targetObject, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 

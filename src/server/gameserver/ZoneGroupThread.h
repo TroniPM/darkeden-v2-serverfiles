@@ -39,10 +39,10 @@ public:
 	void run() throw();
 
 	// get debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get thread's name
-	string getName() const throw() { return "ZoneGroupThread"; }
+	string getName()  { return "ZoneGroupThread"; }
 
 	ZoneGroup* getZoneGroup(){ return m_pZoneGroup; }
 

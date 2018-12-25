@@ -20,7 +20,7 @@ public:
 	EffectVigorDropToCreature(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_VIGOR_DROP_TO_CREATURE; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_VIGOR_DROP_TO_CREATURE; }
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
@@ -31,7 +31,7 @@ public:
 	void unaffect(Item* pItem) throw(Error) {}
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 //	string getCasterName(void) const { return m_CasterName; }
@@ -43,14 +43,14 @@ public:
 	ObjectID_t getUserObjectID() const { return m_UserObjectID; }
 	void setUserObjectID( ObjectID_t UserObjectID ) { m_UserObjectID = UserObjectID; }
 
-	Level_t getLevel() const throw() { return m_Level; }
+	Level_t getLevel()  { return m_Level; }
 	void setLevel(Level_t Level) throw() { m_Level = Level; }
 
-	HP_t getPoint() const throw() { return m_Point; }
+	HP_t getPoint()  { return m_Point; }
 	void setPoint(HP_t Point) throw() { m_Point = Point; }
 
 	void setTick(Turn_t Tick) throw() { m_Tick = Tick; }
-	Turn_t getTick() const throw() { return m_Tick; }
+	Turn_t getTick()  { return m_Tick; }
 
 private:
 //	string  m_CasterName;

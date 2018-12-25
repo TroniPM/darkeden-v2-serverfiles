@@ -47,27 +47,27 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_CROSS_COUNTER_OK_3; }
+	PacketID_t getPacketID()  { return PACKET_GC_CROSS_COUNTER_OK_3; }
 	
 	// get packet's body size
 	// 최적화시, 미리 계산된 정수를 사용한다.
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szObjectID + szSkillType; }
+	PacketSize_t getPacketSize()  { return szObjectID + szObjectID + szSkillType; }
 
 	// get packet's name
-	string getPacketName() const throw() { return "GCCrossCounterOK3"; }
+	string getPacketName()  { return "GCCrossCounterOK3"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get / set ObjectID
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
 
 	// get / set ObjectID
-	ObjectID_t getTargetObjectID() const throw() { return m_TargetObjectID; }
+	ObjectID_t getTargetObjectID()  { return m_TargetObjectID; }
 	void setTargetObjectID(ObjectID_t TargetObjectID) throw() { m_TargetObjectID = TargetObjectID; }
 
-	SkillType_t getSkillType() const throw() { return m_SkillType; }
+	SkillType_t getSkillType()  { return m_SkillType; }
 	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
 
 private :
@@ -109,13 +109,13 @@ public :
 	Packet* createPacket() throw() { return new GCCrossCounterOK3(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCCrossCounterOK3"; }
+	string getPacketName()  { return "GCCrossCounterOK3"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_CROSS_COUNTER_OK_3; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_CROSS_COUNTER_OK_3; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szObjectID + szSkillType; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szObjectID + szSkillType; }
 
 };
 

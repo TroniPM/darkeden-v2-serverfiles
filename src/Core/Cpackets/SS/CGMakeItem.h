@@ -41,24 +41,24 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_MAKE_ITEM; }
+	PacketID_t getPacketID()  { return PACKET_CG_MAKE_ITEM; }
 	
 	// get packet's body size
 	// *OPTIMIZATION HINT*
 	// const static CGMakeItemPacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketSize() const throw() { return szItemClass + szItemType; }
+	PacketSize_t getPacketSize()  { return szItemClass + szItemType; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGMakeItem"; }
+	string getPacketName()  { return "CGMakeItem"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 	
 public:
-	ItemType_t getItemType() const throw() { return m_ItemType;}
+	ItemType_t getItemType()  { return m_ItemType;}
 	void setItemType(ItemType_t c) throw() { m_ItemType = c;}
 
-	ItemClass_t getItemClass() const throw() { return m_ItemClass;}
+	ItemClass_t getItemClass()  { return m_ItemClass;}
 	void setItemClass(ItemClass_t c) throw() { m_ItemClass = c;}
 
 private :
@@ -84,15 +84,15 @@ public:
 	Packet* createPacket() throw() { return new CGMakeItem(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGMakeItem"; }
+	string getPacketName()  { return "CGMakeItem"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_MAKE_ITEM; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_MAKE_ITEM; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static CGMakeItemPacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szItemClass + szItemType; }
+	PacketSize_t getPacketMaxSize()  { return szItemClass + szItemType; }
 
 };
 

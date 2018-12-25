@@ -34,16 +34,16 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_LC_VERSION_CHECK_ERROR; }
+	PacketID_t getPacketID()  { return PACKET_LC_VERSION_CHECK_ERROR; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return 0; }
+	PacketSize_t getPacketSize()  { return 0; }
 	
 	// get packet's name
-	string getPacketName() const throw() { return "LCVersionCheckError"; }
+	string getPacketName()  { return "LCVersionCheckError"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 	
 };
 
@@ -64,13 +64,13 @@ public:
 	Packet* createPacket() throw() { return new LCVersionCheckError(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "LCVersionCheckError"; }
+	string getPacketName()  { return "LCVersionCheckError"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_LC_VERSION_CHECK_ERROR; }
+	PacketID_t getPacketID()  { return Packet::PACKET_LC_VERSION_CHECK_ERROR; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw() { return 0; }
+	PacketSize_t getPacketMaxSize()  { return 0; }
 	
 };
 

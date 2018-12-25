@@ -74,7 +74,7 @@ QuestMessage RewardClass::canGiveReward( PlayerCreature* pPC ) const
 	__END_CATCH
 }
 
-string RewardClass::toString() const throw()
+string RewardClass::toString() 
 {
 	StringStream msg;
 

@@ -20,7 +20,7 @@ public:
 	EffectPenetrateWheel(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_Penetrate_Wheel; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_Penetrate_Wheel; }
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
@@ -28,7 +28,7 @@ public:
 	void unaffect() throw(Error);
 	void unaffect(Creature* pCreature) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void		setCasterID( ObjectID_t objectID ) { m_CasterID = objectID; }

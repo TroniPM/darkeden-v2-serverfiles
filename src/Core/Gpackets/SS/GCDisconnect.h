@@ -33,19 +33,19 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_DISCONNECT; }
+	PacketID_t getPacketID()  { return PACKET_GC_DISCONNECT; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szBYTE + m_Message.size(); }
+	PacketSize_t getPacketSize()  { return szBYTE + m_Message.size(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCDisconnect"; }
+	string getPacketName()  { return "GCDisconnect"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get/set chatting message
-	string getMessage() const throw() { return m_Message; }
+	string getMessage()  { return m_Message; }
 	void setMessage(const string & msg) throw() { m_Message = msg; }
 
 private :
@@ -72,15 +72,15 @@ public :
 	Packet* createPacket() throw() { return new GCDisconnect(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCDisconnect"; }
+	string getPacketName()  { return "GCDisconnect"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_DISCONNECT; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_DISCONNECT; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCDisconnectPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + 128 ; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + 128 ; }
 
 };
 

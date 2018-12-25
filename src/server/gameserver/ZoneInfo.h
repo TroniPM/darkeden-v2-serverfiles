@@ -24,57 +24,57 @@ public:
 	void load( ZoneID_t zoneID ) throw(Error);
 
 public:
-	ZoneID_t getZoneID() const throw() { return m_ZoneID; }
+	ZoneID_t getZoneID()  { return m_ZoneID; }
 	void setZoneID(ZoneID_t zoneID) throw() { m_ZoneID = zoneID; }
 
-	ZoneGroupID_t getZoneGroupID() const throw() { return m_ZoneGroupID; }
+	ZoneGroupID_t getZoneGroupID()  { return m_ZoneGroupID; }
 	void setZoneGroupID(ZoneGroupID_t zoneGroupID) throw() { m_ZoneGroupID = zoneGroupID; }
 
-	ZoneType getZoneType() const throw() { return m_ZoneType; }
+	ZoneType getZoneType()  { return m_ZoneType; }
 	void setZoneType(ZoneType zoneType) throw() { m_ZoneType = zoneType; }
 	void setZoneType(const string & zoneType) throw(Error);
 
-	ZoneLevel_t getZoneLevel() const throw() { return m_ZoneLevel; }
+	ZoneLevel_t getZoneLevel()  { return m_ZoneLevel; }
 	void setZoneLevel(ZoneLevel_t zoneLevel) throw() { m_ZoneLevel = zoneLevel; }
 
-	ZoneAccessMode getZoneAccessMode() const throw() { return m_ZoneAccessMode; }
+	ZoneAccessMode getZoneAccessMode()  { return m_ZoneAccessMode; }
 	void setZoneAccessMode(ZoneAccessMode zoneAccessMode) throw() { m_ZoneAccessMode = zoneAccessMode; }
 	void setZoneAccessMode(const string & zoneAccessMode) throw(Error);
 
-	bool isPayPlay() const throw() { return m_bPayPlay; }
+	bool isPayPlay()  { return m_bPayPlay; }
 	void setPayPlay(bool bPayPlay=true) throw() { m_bPayPlay = bPayPlay; }
 
-	bool isPremiumZone() const throw() { return m_bPremiumZone; }
+	bool isPremiumZone()  { return m_bPremiumZone; }
 	void setPremiumZone(bool bPremiumZone=true) throw() { m_bPremiumZone = bPremiumZone; }
 
-	string getZoneOwnerID() const throw() { return m_OwnerID; }
+	string getZoneOwnerID()  { return m_OwnerID; }
 	void setZoneOwnerID(const string & ownerID) throw() { m_OwnerID = ownerID; }
 
-	string getSMPFilename(void) const throw() { return m_SMPFilename; }
+	string getSMPFilename(void)  { return m_SMPFilename; }
 	void setSMPFilename(const string& name) throw() { m_SMPFilename = name; }
 
-	string getSSIFilename(void) const throw() { return m_SSIFilename; }
+	string getSSIFilename(void)  { return m_SSIFilename; }
 	void setSSIFilename(const string& name) throw() { m_SSIFilename = name; }
 
-	string getFullName(void) const throw() { return m_FullName; }
+	string getFullName(void)  { return m_FullName; }
 	void setFullName(const string& name) throw() { m_FullName = name; }
 
-	string getShortName(void) const throw() { return m_ShortName; }
+	string getShortName(void)  { return m_ShortName; }
 	void setShortName(const string& name) throw() { m_ShortName = name; }
 
-	bool isPKZone() const throw() { return m_bPKZone; }
+	bool isPKZone()  { return m_bPKZone; }
 	void setPKZone(bool bPKZone=true) throw() { m_bPKZone = bPKZone; }
 
-	bool isNoPortalZone() const throw() { return m_bNoPortalZone; }
+	bool isNoPortalZone()  { return m_bNoPortalZone; }
 	void setNoPortalZone(bool bNoPortalZone=true) throw() { m_bNoPortalZone = bNoPortalZone; }
 
-	bool isMasterLair() const throw() { return m_bMasterLair; }
+	bool isMasterLair()  { return m_bMasterLair; }
 	void setMasterLair(bool bMasterLair=true) throw() { m_bMasterLair = bMasterLair; }
 
-	bool isCastle() const throw() { return m_bCastle; }
+	bool isCastle()  { return m_bCastle; }
 	void setCastle(bool bCastle=true) throw() { m_bCastle = bCastle; }
 
-	bool isHolyLand() const throw() { return m_bHolyLand; }
+	bool isHolyLand()  { return m_bHolyLand; }
 	void setHolyLand(bool bHolyLand=true) throw() { m_bHolyLand = bHolyLand; }
 
 	bool isLevelWarZone() const
@@ -97,13 +97,13 @@ public:
 		}
 	}
 
-	bool isAvailable() const throw() { return m_bAvailable; }
+	bool isAvailable()  { return m_bAvailable; }
 	void setAvailable(bool bAvailable=true) throw() { m_bAvailable = bAvailable; }
 
-	int getOpenLevel() const throw() { return m_OpenLevel; }
+	int getOpenLevel()  { return m_OpenLevel; }
 	void setOpenLevel(int OpenLevel) throw() { m_OpenLevel = OpenLevel; }
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	ZoneID_t       m_ZoneID;         // 존 아이디

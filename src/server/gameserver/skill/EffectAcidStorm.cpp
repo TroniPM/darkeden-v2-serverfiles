@@ -223,7 +223,7 @@ void EffectAcidStorm::unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object
 }
 
 string EffectAcidStorm::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

@@ -34,7 +34,7 @@ public:
 
 	Item::ItemClass getItemClassByName( const string & ClassName ) throw();
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	ItemFactory ** m_Factories; // 아이템팩토리의 배열

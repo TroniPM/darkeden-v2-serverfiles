@@ -20,8 +20,8 @@ public:
 	~VoodooRing() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "VoodooRing"; }
-	SkillType_t getSkillType() const throw() { return SKILL_Voodoo_Ring; }
+    string getSkillHandlerName()  { return "VoodooRing"; }
+	SkillType_t getSkillType()  { return SKILL_Voodoo_Ring; }
 
 	void execute(Vampire* pVampire,  VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
 

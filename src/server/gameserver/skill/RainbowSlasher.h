@@ -20,8 +20,8 @@ public:
 	~RainbowSlasher() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "RainbowSlasher"; }
-	SkillType_t getSkillType() const throw() { return SKILL_RAINBOW_SLASHER; }
+    string getSkillHandlerName()  { return "RainbowSlasher"; }
+	SkillType_t getSkillType()  { return SKILL_RAINBOW_SLASHER; }
 
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

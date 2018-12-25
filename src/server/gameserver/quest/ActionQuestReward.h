@@ -20,10 +20,10 @@
 class ActionQuestReward : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_QUEST_REWARD; }
+	virtual ActionType_t getActionType()  { return ACTION_QUEST_REWARD; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 private:
@@ -37,8 +37,8 @@ private:
 class ActionQuestRewardFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_QUEST_REWARD; }
-	virtual string getActionName() const throw() { return "QuestReward"; }
-	virtual Action* createAction() const throw() { return new ActionQuestReward(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_QUEST_REWARD; }
+	virtual string getActionName()  { return "QuestReward"; }
+	virtual Action* createAction()  { return new ActionQuestReward(); }
 };
 #endif

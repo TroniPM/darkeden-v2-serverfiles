@@ -109,7 +109,7 @@ void EffectEventQuestReset::unaffect (Creature* pCreature)
 }
 
 string EffectEventQuestReset::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

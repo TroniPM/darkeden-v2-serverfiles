@@ -193,25 +193,25 @@ public:
 	BYTE getMasterEffectColor() const { return m_MasterEffectColor; }
 	void setMasterEffectColor( BYTE color ) { m_MasterEffectColor = color; }
 
-	OustersCoatType getCoatType() const throw() { return m_CoatType; }
+	OustersCoatType getCoatType()  { return m_CoatType; }
     void setCoatType(OustersCoatType CoatType) throw() { m_CoatType = CoatType; }
 
-	OustersArmType getArmType() const throw() { return m_ArmType; }
+	OustersArmType getArmType()  { return m_ArmType; }
     void setArmType(OustersArmType ArmType) throw() { m_ArmType = ArmType; }
 
-	OustersSylphType getSylphType() const throw() { return m_SylphType; }
+	OustersSylphType getSylphType()  { return m_SylphType; }
     void setSylphType(OustersSylphType SylphType) throw() { m_SylphType = SylphType; }
 
-	HP_t getCurrentHP() const throw() { return m_CurrentHP; }
+	HP_t getCurrentHP()  { return m_CurrentHP; }
 	void setCurrentHP(HP_t CurrentHP) throw() { m_CurrentHP = CurrentHP; }
 
-	HP_t getMaxHP() const throw() { return m_MaxHP; }
+	HP_t getMaxHP()  { return m_MaxHP; }
 	void setMaxHP(HP_t MaxHP) throw() { m_MaxHP = MaxHP; }
 
-	Speed_t getAttackSpeed() const throw() { return m_AttackSpeed; }
+	Speed_t getAttackSpeed()  { return m_AttackSpeed; }
 	void setAttackSpeed(Speed_t AttackSpeed) throw() { m_AttackSpeed = AttackSpeed; }
 
-	Alignment_t getAlignment() const throw() { return m_Alignment; }
+	Alignment_t getAlignment()  { return m_Alignment; }
 	void setAlignment(Alignment_t Alignment)  throw() { m_Alignment = Alignment; }
 
 	BYTE getCompetence(void) const { return m_Competence; }

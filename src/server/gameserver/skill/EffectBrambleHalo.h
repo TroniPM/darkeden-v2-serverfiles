@@ -19,7 +19,7 @@ public:
 	EffectBrambleHalo(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return m_EffectClass; }
+    EffectClass getEffectClass()  { return m_EffectClass; }
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
@@ -27,7 +27,7 @@ public:
 	void unaffect() throw(Error);
 	void unaffect(Creature* pCreature) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 

@@ -42,40 +42,40 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CL_LOGIN; }
+	PacketID_t getPacketID()  { return PACKET_CL_LOGIN; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw();
+	PacketSize_t getPacketSize() ;
 
 	// get packet name
-	string getPacketName() const throw() { return "CLLogin"; }
+	string getPacketName()  { return "CLLogin"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public:
 
 	// get/set player's id
-	string getID() const throw() { return m_ID; }
+	string getID()  { return m_ID; }
 	void setID(string id) throw() { m_ID = id; }
 
 	// get/set player's password
-	string getPassword() const throw() { return m_Password; }
+	string getPassword()  { return m_Password; }
 	void setPassword(string password) throw() { m_Password = password; }
 
-	string getCpsso() const throw() { return m_Cpsso; }
+	string getCpsso()  { return m_Cpsso; }
 	void setCpsso(string cpsso) throw() { m_Cpsso = cpsso; }
 
 	// get/set Cpsso imformation
-	bool isNetmarble() const throw() { return m_bNetmarble; }
+	bool isNetmarble()  { return m_bNetmarble; }
 	void setNetmarble(bool netmarble) throw() { m_bNetmarble = netmarble; }
 
-	bool isAdult() const throw() { return m_bAdult; }
+	bool isAdult()  { return m_bAdult; }
 	void setAdult(bool adult) throw() { m_bAdult = adult; }
 
 	// add - inthesky
-	bool checkMacAddress(string currentMac) const throw();
-	string getMacAddress() const throw() { return m_strMacAddress; }
+	bool checkMacAddress(string currentMac) ;
+	string getMacAddress()  { return m_strMacAddress; }
 
 	const BYTE* getRareMacAddress() const { return m_cMacAddress; }
 
@@ -121,13 +121,13 @@ public:
 	Packet* createPacket() throw() { return new CLLogin(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CLLogin"; }
+	string getPacketName()  { return "CLLogin"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CL_LOGIN; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CL_LOGIN; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw() { return szint + 2048 + szBYTE + 30 + 6 + szBYTE; }
+	PacketSize_t getPacketMaxSize()  { return szint + 2048 + szBYTE + 30 + 6 + szBYTE; }
 
 };
 

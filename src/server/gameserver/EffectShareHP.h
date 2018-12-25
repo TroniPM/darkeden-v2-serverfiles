@@ -20,7 +20,7 @@ public:
 	EffectShareHP(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_SHARE_HP; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_SHARE_HP; }
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
@@ -31,7 +31,7 @@ public:
 	void unaffect(Item* pItem) throw(Error) {}
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 	list<ObjectID_t>&		getSharingCreatures() { return m_SharingCreatures; }
 	const list<ObjectID_t>&	getSharingCreatures() const { return m_SharingCreatures; }

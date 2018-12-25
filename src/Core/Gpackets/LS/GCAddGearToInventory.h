@@ -25,19 +25,19 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_ADD_GEAR_TO_INVENTORY; }
-	PacketSize_t getPacketSize() const throw() { return szSlotID + szCoordInven + szCoordInven; }
-	string getPacketName() const throw() { return "GCAddGearToInventory"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_ADD_GEAR_TO_INVENTORY; }
+	PacketSize_t getPacketSize()  { return szSlotID + szCoordInven + szCoordInven; }
+	string getPacketName()  { return "GCAddGearToInventory"; }
+	string toString() ;
 	
 public:
 	SlotID_t getSlotID() throw() { return m_SlotID; }
 	void setSlotID(SlotID_t SlotID) throw() { m_SlotID = SlotID; }
 
-	CoordInven_t getInvenX() const throw() { return m_InvenX; }
+	CoordInven_t getInvenX()  { return m_InvenX; }
 	void setInvenX(CoordInven_t InvenX) throw() { m_InvenX = InvenX; }
 
-	CoordInven_t getInvenY() const throw() { return m_InvenY; }
+	CoordInven_t getInvenY()  { return m_InvenY; }
 	void setInvenY(CoordInven_t InvenY) { m_InvenY = InvenY; }
 
 private:
@@ -54,9 +54,9 @@ class GCAddGearToInventoryFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCAddGearToInventory(); }
-	string getPacketName() const throw() { return "GCAddGearToInventory"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_ADD_GEAR_TO_INVENTORY; }
-	PacketSize_t getPacketMaxSize() const throw() { return szSlotID + szCoordInven + szCoordInven; }
+	string getPacketName()  { return "GCAddGearToInventory"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_GEAR_TO_INVENTORY; }
+	PacketSize_t getPacketMaxSize()  { return szSlotID + szCoordInven + szCoordInven; }
 };
 
 //////////////////////////////////////////////////////////////////////////////

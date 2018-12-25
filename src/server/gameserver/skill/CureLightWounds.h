@@ -20,8 +20,8 @@ public:
 	~CureLightWounds() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "CureLightWounds"; }
-	SkillType_t getSkillType() const throw() { return SKILL_CURE_LIGHT_WOUNDS; }
+    string getSkillHandlerName()  { return "CureLightWounds"; }
+	SkillType_t getSkillType()  { return SKILL_CURE_LIGHT_WOUNDS; }
 
 	void execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);

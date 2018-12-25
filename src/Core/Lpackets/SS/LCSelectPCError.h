@@ -46,19 +46,19 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_LC_SELECT_PC_ERROR; }
+	PacketID_t getPacketID()  { return PACKET_LC_SELECT_PC_ERROR; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szBYTE; }
+	PacketSize_t getPacketSize()  { return szBYTE; }
 	
 	// get packet's name
-	string getPacketName() const throw() { return "LCSelectPCError"; }
+	string getPacketName()  { return "LCSelectPCError"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 	
 	// get/set error message
-	BYTE getCode() const throw() { return m_Code; }
+	BYTE getCode()  { return m_Code; }
 	void setCode(BYTE code) throw() { m_Code = code; }
 
 private : 
@@ -85,13 +85,13 @@ public:
 	Packet* createPacket() throw() { return new LCSelectPCError(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "LCSelectPCError"; }
+	string getPacketName()  { return "LCSelectPCError"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_LC_SELECT_PC_ERROR; }
+	PacketID_t getPacketID()  { return Packet::PACKET_LC_SELECT_PC_ERROR; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE; }
 	
 };
 

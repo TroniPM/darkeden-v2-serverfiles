@@ -21,8 +21,8 @@ public:
 	EffectDragonTornado(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_DRAGON_TORNADO; }
-	EffectClass getSendEffectClass() const throw() { return (m_bCanSplit)?EFFECT_CLASS_DRAGON_TORNADO:EFFECT_CLASS_DRAGON_TORNADO_CHILD; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_DRAGON_TORNADO; }
+	EffectClass getSendEffectClass()  { return (m_bCanSplit)?EFFECT_CLASS_DRAGON_TORNADO:EFFECT_CLASS_DRAGON_TORNADO_CHILD; }
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
@@ -30,7 +30,7 @@ public:
 	void unaffect() throw(Error);
 	void unaffect(Creature* pCreature) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	ObjectID_t getUserOID(void) const { return m_UserOID; }

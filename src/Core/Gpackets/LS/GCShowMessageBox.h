@@ -35,19 +35,19 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_SHOW_MESSAGE_BOX; }
+	PacketID_t getPacketID()  { return PACKET_GC_SHOW_MESSAGE_BOX; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szBYTE + m_Message.size(); }
+	PacketSize_t getPacketSize()  { return szBYTE + m_Message.size(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCShowMessageBox"; }
+	string getPacketName()  { return "GCShowMessageBox"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get/set Message
-	string getMessage() const throw() { return m_Message; }
+	string getMessage()  { return m_Message; }
 	void setMessage( const string& message ) throw() { m_Message = message; }
 	
 
@@ -75,15 +75,15 @@ public :
 	Packet* createPacket() throw() { return new GCShowMessageBox(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCShowMessageBox"; }
+	string getPacketName()  { return "GCShowMessageBox"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_SHOW_MESSAGE_BOX; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_SHOW_MESSAGE_BOX; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCSystemMessagePacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + 256; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + 256; }
 
 };
 

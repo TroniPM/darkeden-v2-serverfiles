@@ -112,10 +112,10 @@ public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_GOODS_LIST; }
-	PacketSize_t getPacketSize() const throw();
-	string getPacketName() const throw() { return "GCGoodsList"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_GOODS_LIST; }
+	PacketSize_t getPacketSize() ;
+	string getPacketName()  { return "GCGoodsList"; }
+	string toString() ;
 
 public:
 	void		addGoodsInfo( GoodsInfo* pGI ) { m_GoodsList.push_back( pGI ); }
@@ -134,9 +134,9 @@ class GCGoodsListFactory : public PacketFactory
 {
 public :
 	Packet* createPacket() throw() { return new GCGoodsList(); }
-	string getPacketName() const throw() { return "GCGoodsList"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_GOODS_LIST; }
-	PacketSize_t getPacketMaxSize() const throw() 
+	string getPacketName()  { return "GCGoodsList"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_GOODS_LIST; }
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		PacketSize_t size = szBYTE;
 		size += GoodsInfo::getPacketMaxSize() * MAX_GOODS_LIST;

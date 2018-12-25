@@ -20,8 +20,8 @@ public:
 	~Untransform() throw() {}
 
 public:
-    string getSkillHandlerName() const throw() { return "Untransform"; }
-	SkillType_t getSkillType() const throw() { return SKILL_UN_TRANSFORM; }
+    string getSkillHandlerName()  { return "Untransform"; }
+	SkillType_t getSkillType()  { return SKILL_UN_TRANSFORM; }
 
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Vampire* pVampire) throw(Error);

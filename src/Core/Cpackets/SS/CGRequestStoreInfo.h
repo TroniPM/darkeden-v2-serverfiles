@@ -35,16 +35,16 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_REQUEST_STORE_INFO; }
+	PacketID_t getPacketID()  { return PACKET_CG_REQUEST_STORE_INFO; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szObjectID; }
+	PacketSize_t getPacketSize()  { return szObjectID; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGRequestStoreInfo"; }
+	string getPacketName()  { return "CGRequestStoreInfo"; }
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	ObjectID_t	getOwnerObjectID() const { return m_OwnerObjectID; }
 	void		setOwnerObjectID(ObjectID_t oid) { m_OwnerObjectID = oid; }
@@ -79,13 +79,13 @@ public:
 	Packet* createPacket() throw() { return new CGRequestStoreInfo(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGRequestStoreInfo"; }
+	string getPacketName()  { return "CGRequestStoreInfo"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_REQUEST_STORE_INFO; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_REQUEST_STORE_INFO; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID; }
 };
 
 

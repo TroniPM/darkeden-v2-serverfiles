@@ -19,14 +19,14 @@ public:
 	EffectHeavenGround(Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_HEAVEN_GROUND; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_HEAVEN_GROUND; }
 
 	void affect() throw(Error);
 	void affect(Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
 
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	int getDamage(void) const { return m_Damage; }
@@ -39,7 +39,7 @@ public:
 	void setLevel(int level) { m_Level = level; }
 
 	void setUserObjectID(ObjectID_t oid) throw() { m_UserObjectID = oid; }
-	ObjectID_t getUserObjectID() const throw() { return m_UserObjectID; }
+	ObjectID_t getUserObjectID()  { return m_UserObjectID; }
 
 	void setSlayer( bool bSlayer = true ) { m_bSlayer = bSlayer; }
 	bool isSlayer() const { return m_bSlayer; }

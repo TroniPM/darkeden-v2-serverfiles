@@ -19,13 +19,13 @@ public:
 	EffectSatelliteBombPoint2(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_SKILL_SATELLITE_BOMB_POINT2; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_SKILL_SATELLITE_BOMB_POINT2; }
 
 	void affect() throw(Error){}
 
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 };

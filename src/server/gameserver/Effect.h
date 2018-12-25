@@ -867,15 +867,15 @@ public:
 
 // methods from Object
 public:
-	virtual ObjectClass getObjectClass() const throw() { return OBJECT_CLASS_EFFECT; }
-	virtual ObjectPriority getObjectPriority() const throw() { return OBJECT_PRIORITY_EFFECT; }
-	virtual string toString() const throw() = 0;
+	virtual ObjectClass getObjectClass()  { return OBJECT_CLASS_EFFECT; }
+	virtual ObjectPriority getObjectPriority()  { return OBJECT_PRIORITY_EFFECT; }
+	virtual string toString()  = 0;
 
 
 // own methods
 public:
-	virtual EffectClass getEffectClass() const throw() = 0;
-	virtual EffectClass getSendEffectClass() const throw() { return getEffectClass(); }
+	virtual EffectClass getEffectClass()  = 0;
+	virtual EffectClass getSendEffectClass()  { return getEffectClass(); }
 
 	// Clientø° ª—∑¡¡‡æﬂ«œ¥¬ Effect¿Œ∞°? by sigi. 2002.11.14
 	bool isBroadcastingEffect() { return m_bBroadcastingEffect; }
@@ -894,29 +894,29 @@ public:
 
 // get/set methods
 public:
-	Zone* getZone() const throw() { return m_pZone; }
+	Zone* getZone()  { return m_pZone; }
 	void setZone(Zone* pZone) throw() { m_pZone = pZone; }
 
-	ZoneCoord_t getX() const throw() { return m_X; }
-	ZoneCoord_t getY() const throw() { return m_Y; }
+	ZoneCoord_t getX()  { return m_X; }
+	ZoneCoord_t getY()  { return m_Y; }
 	void setX(ZoneCoord_t x) throw() { m_X = x; }
 	void setY(ZoneCoord_t y) throw() { m_Y = y; }
 	void setXY(ZoneCoord_t x, ZoneCoord_t y) throw() { m_X = x; m_Y = y; }
 
-	Object* getTarget() const throw() { return m_pTarget; }
+	Object* getTarget()  { return m_pTarget; }
 	void setTarget(Object* pTarget) throw() { m_pTarget = pTarget; }
 
-	Timeval getNextTime() const throw() { return m_NextTime; }
+	Timeval getNextTime()  { return m_NextTime; }
 	void setNextTime(Timeval tv) throw() { m_NextTime = tv; }
 	void setNextTime(Turn_t delay) throw();
 
-	Timeval getDeadline() const throw() { return m_Deadline; }
+	Timeval getDeadline()  { return m_Deadline; }
 	void setDeadline(Turn_t delay) throw();
 
-	int getCustormEffect() const throw() { return m_CustormEffect; }
+	int getCustormEffect()  { return m_CustormEffect; }
 	void setCustormEffect(int Effect) throw();
 
-	virtual EffectClass getCustormEffectSendEffectClass() const throw() { return (Effect::EffectClass)getCustormEffect(); }
+	virtual EffectClass getCustormEffectSendEffectClass()  { return (Effect::EffectClass)getCustormEffect(); }
 
 	Duration_t getRemainDuration() throw();
 

@@ -32,15 +32,15 @@ public:
 	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
 	void tinysave(const char* field) const throw (Error);
 	void savePetInfo() const;
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	static void initItemIDRegistry(void) throw();
 
 public:
-	virtual ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_PET_ITEM; }
-	virtual string getObjectTableName() const throw() { return "PetItemObject"; }
+	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_PET_ITEM; }
+	virtual string getObjectTableName()  { return "PetItemObject"; }
 
-	virtual ItemType_t getItemType() const throw() { return m_ItemType; }
+	virtual ItemType_t getItemType()  { return m_ItemType; }
 	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() const throw(Error);
@@ -70,8 +70,8 @@ private:
 class PetItemInfo : public ItemInfo 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_PET_ITEM; }
-	virtual string toString() const throw();
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_PET_ITEM; }
+	virtual string toString() ;
 };
 
 //////////////////////////////////////////////////////////////////////////////
@@ -81,7 +81,7 @@ public:
 class PetItemInfoManager : public InfoClassManager 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_PET_ITEM; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_PET_ITEM; }
 	virtual void load() throw(Error);
 };
 
@@ -94,8 +94,8 @@ extern PetItemInfoManager* g_pPetItemInfoManager;
 class PetItemFactory : public ItemFactory 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_PET_ITEM; }
-	virtual string getItemClassName() const throw() { return "PetItem"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_PET_ITEM; }
+	virtual string getItemClassName()  { return "PetItem"; }
 	
 public:
 	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new PetItem(ItemType,OptionType); }
@@ -108,8 +108,8 @@ public:
 class PetItemLoader : public ItemLoader 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_PET_ITEM; }
-	virtual string getItemClassName() const throw() { return "PetItem"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_PET_ITEM; }
+	virtual string getItemClassName()  { return "PetItem"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

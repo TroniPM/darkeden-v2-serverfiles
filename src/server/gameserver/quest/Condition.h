@@ -134,17 +134,17 @@ public:
 
 public :
 	virtual ~Condition() throw(Error) {}
-	virtual ConditionType_t getConditionType() const throw() = 0;
+	virtual ConditionType_t getConditionType()  = 0;
 
-	virtual bool isActive() const throw() { return false; }
-	virtual bool isPassive() const throw() { return false; }
-	virtual bool isNeutral() const throw() { return false; }
+	virtual bool isActive()  { return false; }
+	virtual bool isPassive()  { return false; }
+	virtual bool isNeutral()  { return false; }
 
-	virtual bool isSatisfied(Creature* pCreature1, Creature* pCreature2 = NULL, void* pParam = NULL) const throw() = 0;
+	virtual bool isSatisfied(Creature* pCreature1, Creature* pCreature2 = NULL, void* pParam = NULL)  = 0;
 
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error) = 0;
 
-	virtual string toString() const throw() = 0;
+	virtual string toString()  = 0;
 
 };
 

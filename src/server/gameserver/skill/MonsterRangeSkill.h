@@ -20,8 +20,8 @@ public:
 	~MonsterRangeSkill() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "MonsterRangeSkill "; }
-	SkillType_t getSkillType() const throw() { return m_SkillType; }
+    string getSkillHandlerName()  { return "MonsterRangeSkill "; }
+	SkillType_t getSkillType()  { return m_SkillType; }
 
 	void execute(Monster* pMonster, Creature* pEnemy) throw(Error);
 

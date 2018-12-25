@@ -34,18 +34,18 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_VISIBLE; }
+	PacketID_t getPacketID()  { return PACKET_CG_VISIBLE; }
 	
 	// get packet's body size
 	// *OPTIMIZATION HINT*
 	// const static CGVisiblePacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketSize() const throw() { return 0; }
+	PacketSize_t getPacketSize()  { return 0; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGVisible"; }
+	string getPacketName()  { return "CGVisible"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 };
 
@@ -66,15 +66,15 @@ public:
 	Packet* createPacket() throw() { return new CGVisible(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGVisible"; }
+	string getPacketName()  { return "CGVisible"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_VISIBLE; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_VISIBLE; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static CGVisiblePacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return 0; }
+	PacketSize_t getPacketMaxSize()  { return 0; }
 
 };
 

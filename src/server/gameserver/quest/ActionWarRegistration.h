@@ -20,10 +20,10 @@
 class ActionWarRegistration : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_WAR_REGISTRATION; }
+	virtual ActionType_t getActionType()  { return ACTION_WAR_REGISTRATION; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 	ZoneID_t	getZoneID() const { return m_ZoneID; }
@@ -41,8 +41,8 @@ private:
 class ActionWarRegistrationFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_WAR_REGISTRATION; }
-	virtual string getActionName() const throw() { return "WarRegistration"; }
-	virtual Action* createAction() const throw() { return new ActionWarRegistration(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_WAR_REGISTRATION; }
+	virtual string getActionName()  { return "WarRegistration"; }
+	virtual Action* createAction()  { return new ActionWarRegistration(); }
 };
 #endif

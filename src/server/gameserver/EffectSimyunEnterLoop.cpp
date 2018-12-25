@@ -159,7 +159,7 @@ void EffectSimyunEnterLoop::save (const string & ownerID)
 }
 
 string EffectSimyunEnterLoop::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

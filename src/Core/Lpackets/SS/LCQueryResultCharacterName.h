@@ -41,29 +41,29 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_LC_QUERY_RESULT_CHARACTER_NAME; }
+	PacketID_t getPacketID()  { return PACKET_LC_QUERY_RESULT_CHARACTER_NAME; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		return szbool
 			+ szBYTE + m_CharacterName.size(); 
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "LCQueryResultCharacterName"; }
+	string getPacketName()  { return "LCQueryResultCharacterName"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public:
 
 	// get/set player id
-	string getCharacterName() const throw() { return m_CharacterName; }
+	string getCharacterName()  { return m_CharacterName; }
 	void setCharacterName(const string & playerID) throw() { m_CharacterName = playerID; }
 
 	// get/set player id's existence
-	bool isExist() const throw() { return m_bExist; }
+	bool isExist()  { return m_bExist; }
 	void setExist(bool bExist = true) throw() { m_bExist = bExist; }
 
 private :
@@ -93,13 +93,13 @@ public:
 	Packet* createPacket() throw() { return new LCQueryResultCharacterName(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "LCQueryResultCharacterName"; }
+	string getPacketName()  { return "LCQueryResultCharacterName"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_LC_QUERY_RESULT_CHARACTER_NAME; }
+	PacketID_t getPacketID()  { return Packet::PACKET_LC_QUERY_RESULT_CHARACTER_NAME; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw()
+	PacketSize_t getPacketMaxSize() 
 	{ 
 		return szbool
 			+ szBYTE + 20; 

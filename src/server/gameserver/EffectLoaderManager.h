@@ -34,7 +34,7 @@ public:
 
 	void load(Zone* pZone) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	EffectLoader* m_pEffectLoaders[Effect::EFFECT_CLASS_MAX];

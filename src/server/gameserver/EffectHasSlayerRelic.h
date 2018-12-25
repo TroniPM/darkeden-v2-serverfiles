@@ -20,12 +20,12 @@ public:
 	EffectHasSlayerRelic(Item* pItem) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_HAS_SLAYER_RELIC; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_HAS_SLAYER_RELIC; }
 
 	void affect(Creature* pCreature) throw(Error);
 	void affect(Item* pItem) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 };
 
 #endif // __EFFECT_DOOM__

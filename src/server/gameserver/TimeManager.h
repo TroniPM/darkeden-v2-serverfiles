@@ -44,21 +44,21 @@ class TimeManager
 public:
 	void init() throw(Error);
 
-	GameTime getGameTime() const throw();	
+	GameTime getGameTime() ;	
 
-	time_t getgametime() const throw();
+	time_t getgametime() ;
 
-	time_t getBaseGameTime() const throw() { return m_BaseGameTime; }
-	time_t getBaseRealTime() const throw() { return m_BaseRealTime; }
+	time_t getBaseGameTime()  { return m_BaseGameTime; }
+	time_t getBaseRealTime()  { return m_BaseRealTime; }
 
-	bool isDawnTime(void) const throw();
-	bool isDayTime(void) const throw();
-	bool isDuskTime(void) const throw();
-	bool isNightTime(void) const throw();
-	uint getTimeband(void) const throw();
+	bool isDawnTime(void) ;
+	bool isDayTime(void) ;
+	bool isDuskTime(void) ;
+	bool isNightTime(void) ;
+	uint getTimeband(void) ;
 
 	// get debug string
-	string toString() const throw();
+	string toString() ;
 
 private:
 	time_t m_BaseGameTime;

@@ -18,11 +18,11 @@
 class ConditionSameClan : public Condition 
 {
 public:
-	virtual ConditionType_t getConditionType() const throw() { return CONDITION_SAME_CLAN; }
-	virtual bool isPassive() const throw() { return true; }
-	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) const throw();
+	virtual ConditionType_t getConditionType()  { return CONDITION_SAME_CLAN; }
+	virtual bool isPassive()  { return true; }
+	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) ;
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 };
 
 //////////////////////////////////////////////////////////////////////////////
@@ -32,9 +32,9 @@ public:
 class ConditionSameClanFactory : public ConditionFactory 
 {
 public:
-    virtual ConditionType_t getConditionType() const throw() { return Condition::CONDITION_SAME_CLAN; }
-    virtual Condition* createCondition() const throw() { return new ConditionSameClan(); }
-    virtual string getConditionName() const throw() { return "SameClan"; }
+    virtual ConditionType_t getConditionType()  { return Condition::CONDITION_SAME_CLAN; }
+    virtual Condition* createCondition()  { return new ConditionSameClan(); }
+    virtual string getConditionName()  { return "SameClan"; }
 };
 
 #endif

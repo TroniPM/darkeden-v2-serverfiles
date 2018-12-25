@@ -29,14 +29,14 @@ public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_WAR_LIST; }
-	PacketSize_t getPacketSize() const throw();
-	string getPacketName() const throw() { return "GCWarList"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_WAR_LIST; }
+	PacketSize_t getPacketSize() ;
+	string getPacketName()  { return "GCWarList"; }
+	string toString() ;
 
 public:
-	int 	getSize() const throw() { return m_WarInfos.size(); }
-	bool 	isEmpty() const throw() { return m_WarInfos.empty(); }
+	int 	getSize()  { return m_WarInfos.size(); }
+	bool 	isEmpty()  { return m_WarInfos.empty(); }
 
 	void addWarInfo( WarInfo* pWarInfo ) throw() { m_WarInfos.push_back( pWarInfo ); }
 	WarInfo* popWarInfo() throw();
@@ -52,9 +52,9 @@ class GCWarListFactory : public PacketFactory {
 public :
 	
 	Packet* createPacket() throw() { return new GCWarList(); }
-	string getPacketName() const throw() { return "GCWarList"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_WAR_LIST; }
-	PacketSize_t getPacketMaxSize() const throw() { return (RaceWarInfo::getMaxSize() + GuildWarInfo::getMaxSize()) * 12; }
+	string getPacketName()  { return "GCWarList"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_WAR_LIST; }
+	PacketSize_t getPacketMaxSize()  { return (RaceWarInfo::getMaxSize() + GuildWarInfo::getMaxSize()) * 12; }
 };
 
 class GCWarListHandler {

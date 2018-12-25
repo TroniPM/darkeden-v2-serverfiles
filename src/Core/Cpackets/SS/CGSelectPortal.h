@@ -45,20 +45,20 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_SELECT_PORTAL; }
+	PacketID_t getPacketID()  { return PACKET_CG_SELECT_PORTAL; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szZoneID; }
+	PacketSize_t getPacketSize()  { return szZoneID; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGSelectPortal"; }
+	string getPacketName()  { return "CGSelectPortal"; }
 
 	// get / set ZoneID
-	ObjectID_t getZoneID() const throw()  { return m_ZoneID; }
+	ObjectID_t getZoneID()   { return m_ZoneID; }
 	void setZoneID(ZoneID_t ZoneID) throw() { m_ZoneID = ZoneID; }
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 private :
 
@@ -92,13 +92,13 @@ public:
 	Packet* createPacket() throw() { return new CGSelectPortal(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGSelectPortal"; }
+	string getPacketName()  { return "CGSelectPortal"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_SELECT_PORTAL; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_SELECT_PORTAL; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szZoneID; }
+	PacketSize_t getPacketMaxSize()  { return szZoneID; }
 };
 
 

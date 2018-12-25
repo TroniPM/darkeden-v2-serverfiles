@@ -20,9 +20,9 @@ public:
 	~Halo() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Halo"; }
+    string getSkillHandlerName()  { return "Halo"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_HALO; }
+	SkillType_t getSkillType()  { return SKILL_HALO; }
 
 	void execute(Ousters* pOusters, ObjectID_t targetObject, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 

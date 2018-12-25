@@ -54,7 +54,7 @@ public:
 	void clearOptionTypeList() { m_OptionTypeList.clear(); }
 	const OptionTypeList& getOptionTypeList() const { return m_OptionTypeList; }
 	void setOptionTypeList( const string& optionList ) { makeOptionList( optionList, m_OptionTypeList ); } 
-	string toString() const throw();
+	string toString() ;
 
 protected:
 	BloodBibleBonusType_t	m_Type;

@@ -42,19 +42,19 @@ public:
 	~TradeInfo() throw();
 
 public:
-	const string getMainName(void) const throw() { return m_MainName; }
+	const string getMainName(void)  { return m_MainName; }
 	void setMainName(const string & Name) throw() { m_MainName = Name; }
 
-	const string getTargetName(void) const throw() { return m_TargetName; }
+	const string getTargetName(void)  { return m_TargetName; }
 	void setTargetName(const string & Name) throw() { m_TargetName = Name; }
 
 	list<Item*> getItemList(void) throw() { return m_ItemList; }
 	void setItemList(list<Item*> itemList) throw() { m_ItemList = itemList; }
 
-	Gold_t getGold(void) const throw() { return m_Gold; }
+	Gold_t getGold(void)  { return m_Gold; }
 	void setGold(Gold_t gold) { m_Gold = gold; }
 
-	int getStatus(void) const throw() { return m_Status; }
+	int getStatus(void)  { return m_Status; }
 	void setStatus(int status) throw() { m_Status = status; }
 
 	bool hasItem(Item* pItem) throw();

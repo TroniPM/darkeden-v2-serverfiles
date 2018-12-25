@@ -137,7 +137,7 @@ public :
 	BYTE getMasterEffectColor () const throw () { return m_MasterEffectColor; }
 	void setMasterEffectColor (BYTE masterEffectColor) throw () { m_MasterEffectColor = masterEffectColor; }
 
-	Alignment_t getAlignment() const throw() { return m_Alignment; }
+	Alignment_t getAlignment()  { return m_Alignment; }
 	void setAlignment(Alignment_t Alignment) throw() { m_Alignment = Alignment; }
 
     Attr_t getSTR (AttrType attrType = ATTR_CURRENT) const throw (Error)
@@ -210,7 +210,7 @@ public :
 	Sight_t getSight () const throw () { return m_Sight; }
 	void setSight (Sight_t sight) throw () { m_Sight = sight; }
 
-	SkillType_t getHotKey(BYTE pos) const throw() { return m_HotKey[pos]; }
+	SkillType_t getHotKey(BYTE pos)  { return m_HotKey[pos]; }
 	void setHotKey(BYTE pos, SkillType_t SkillType) throw() { m_HotKey[pos] = SkillType; }
 
 	BYTE getCompetence(void) const { return m_Competence; }

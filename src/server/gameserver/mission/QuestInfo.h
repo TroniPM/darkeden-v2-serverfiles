@@ -40,7 +40,7 @@ public:
 	QuestClass		getQuestClass() const { return m_QuestClass; }
 
 	QuestID_t		getQuestID() const { return m_QuestID; }
-	virtual string	toString() const throw();
+	virtual string	toString() ;
 
 	virtual bool	canExecute( PlayerCreature* pPC ) const throw(Error);
 	virtual QuestStatus*	makeQuestStatus( PlayerCreature* pPC ) const throw(Error) = 0;

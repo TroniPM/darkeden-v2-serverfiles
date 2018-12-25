@@ -21,7 +21,7 @@ public:
 	EffectSanctuary(Zone* pZone, ZoneCoord_t ZoneX, ZoneCoord_t ZoneY, ZoneCoord_t CenterX, ZoneCoord_t CenterY) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_SANCTUARY; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_SANCTUARY; }
 
 	void affect() throw(Error){}
 	void affect(Creature* pCreature) throw(Error);
@@ -32,18 +32,18 @@ public:
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject ) throw(Error);
 	void unaffect(Item* pItem) throw(Error) {}
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 
 	void setCenterX(ZoneCoord_t x) throw(Error) { m_CenterX = x;}
-	ZoneCoord_t getCenterX() const throw() { return m_CenterX;}
+	ZoneCoord_t getCenterX()  { return m_CenterX;}
 
 	void setCenterY(ZoneCoord_t y) throw(Error) { m_CenterY = y;}
-	ZoneCoord_t getCenterY() const throw() { return m_CenterY;}
+	ZoneCoord_t getCenterY()  { return m_CenterY;}
 
 	void setLevel(Attr_t l) throw(Error) { m_Level = l;}
-	Attr_t getLevel() const throw() { return m_Level;}
+	Attr_t getLevel()  { return m_Level;}
 	
 	void setDuration(Duration_t d) throw(Error) { m_Duration = d; }
 	Duration_t getDuration() throw(Error) { return m_Duration;}

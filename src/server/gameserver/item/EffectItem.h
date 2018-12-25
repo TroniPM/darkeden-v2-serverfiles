@@ -31,7 +31,7 @@ public:
 	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) throw(Error);
 	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
 	void tinysave(const char* field) const throw (Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	static void initItemIDRegistry(void) throw();
 
@@ -49,8 +49,8 @@ private:
 class EffectItemInfo : public ItemInfo 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_EFFECT_ITEM; }
-	virtual string toString() const throw();
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_EFFECT_ITEM; }
+	virtual string toString() ;
 
 	Effect::EffectClass	getEffectClass() const { return m_EffectClass; }
 	void				setEffectClass( Effect::EffectClass eClass ) { m_EffectClass = eClass; }
@@ -58,7 +58,7 @@ public:
 	int		getDuration() const { return m_Duration; }
 	void	setDuration( int Duration ) { m_Duration = Duration; }
 
-	const string& getNotEffectClass() const throw() { return m_Name; }
+	const string& getNotEffectClass()  { return m_Name; }
 	void setNotEffectClass(const string & name) throw() { m_Name = name;}
 
 private:
@@ -75,7 +75,7 @@ private:
 class EffectItemInfoManager : public InfoClassManager 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_EFFECT_ITEM; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_EFFECT_ITEM; }
 	virtual void load() throw(Error);
 };
 
@@ -88,8 +88,8 @@ extern EffectItemInfoManager* g_pEffectItemInfoManager;
 class EffectItemFactory : public ItemFactory 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_EFFECT_ITEM; }
-	virtual string getItemClassName() const throw() { return "EffectItem"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_EFFECT_ITEM; }
+	virtual string getItemClassName()  { return "EffectItem"; }
 	
 public:
 	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new EffectItem(ItemType,OptionType,1); }
@@ -102,8 +102,8 @@ public:
 class EffectItemLoader : public ItemLoader 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_EFFECT_ITEM; }
-	virtual string getItemClassName() const throw() { return "EffectItem"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_EFFECT_ITEM; }
+	virtual string getItemClassName()  { return "EffectItem"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

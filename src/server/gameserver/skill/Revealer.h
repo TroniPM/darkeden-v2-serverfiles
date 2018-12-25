@@ -20,8 +20,8 @@ public:
 	~Revealer() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Revealer"; }
-	SkillType_t getSkillType() const throw() { return SKILL_REVEALER; }
+    string getSkillHandlerName()  { return "Revealer"; }
+	SkillType_t getSkillType()  { return SKILL_REVEALER; }
 
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

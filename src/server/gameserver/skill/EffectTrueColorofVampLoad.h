@@ -20,14 +20,14 @@ public:
 	EffectTrueColorofVampLoad(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_TRUE_COLOR_OF_VAMP_LOAD; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_TRUE_COLOR_OF_VAMP_LOAD; }
 
 	void affect() throw(Error){}
 
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 };
 
 #endif // __EFFECT_CONCEALMENT__

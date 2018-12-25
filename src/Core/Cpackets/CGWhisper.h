@@ -36,27 +36,27 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_WHISPER; }
+	PacketID_t getPacketID()  { return PACKET_CG_WHISPER; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szBYTE + m_Name.size() + szuint + szBYTE + m_Message.size(); }
+	PacketSize_t getPacketSize()  { return szBYTE + m_Name.size() + szuint + szBYTE + m_Message.size(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGWhisper"; }
+	string getPacketName()  { return "CGWhisper"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get/set Name
-	string getName() const throw() { return m_Name; }
+	string getName()  { return m_Name; }
 	void setName(const string & Name) throw() { m_Name = Name; }
 
 	// get/set text color
-	uint getColor() const throw() { return m_Color; }
+	uint getColor()  { return m_Color; }
 	void setColor( uint color ) throw() { m_Color = color; }
 
 	// get/set chatting message
-	string getMessage() const throw() { return m_Message; }
+	string getMessage()  { return m_Message; }
 	void setMessage(const string & msg) throw() { m_Message = msg; }
 	
 
@@ -89,14 +89,14 @@ public:
 	Packet* createPacket() throw() { return new CGWhisper(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGWhisper"; }
+	string getPacketName()  { return "CGWhisper"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_WHISPER; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_WHISPER; }
 
 	// get packet's max body size
 	// message 의 최대 크기에 대한 설정이 필요하다.
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + 10 + szuint + szBYTE + 128; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + 10 + szuint + szBYTE + 128; }
 
 };
 

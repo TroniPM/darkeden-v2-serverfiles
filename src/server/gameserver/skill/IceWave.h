@@ -20,8 +20,8 @@ public:
 	~IceWave() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "IceWave"; }
-	SkillType_t getSkillType() const throw() { return SKILL_ICE_WAVE; }
+    string getSkillHandlerName()  { return "IceWave"; }
+	SkillType_t getSkillType()  { return SKILL_ICE_WAVE; }
 
 	void execute(Monster* pMonster, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
 

@@ -19,10 +19,10 @@
 class ActionTurnOnFlag : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_TURN_ON_FLAG; }
+	virtual ActionType_t getActionType()  { return ACTION_TURN_ON_FLAG; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 private:
 	uint m_Index;
@@ -36,9 +36,9 @@ private:
 class ActionTurnOnFlagFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_TURN_ON_FLAG; }
-	virtual string getActionName() const throw() { return "TurnOnFlag"; }
-	virtual Action* createAction() const throw() { return new ActionTurnOnFlag(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_TURN_ON_FLAG; }
+	virtual string getActionName()  { return "TurnOnFlag"; }
+	virtual Action* createAction()  { return new ActionTurnOnFlag(); }
 };
 
 #endif

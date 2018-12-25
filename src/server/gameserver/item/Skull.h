@@ -33,23 +33,23 @@ public:
 	static void initItemIDRegistry(void) throw();
 
 public:
-	virtual ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_SKULL; }
-	virtual string getObjectTableName() const throw() { return "SkullObject"; }
+	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_SKULL; }
+	virtual string getObjectTableName()  { return "SkullObject"; }
 
-	virtual ItemType_t getItemType() const throw() { return m_ItemType; }
+	virtual ItemType_t getItemType()  { return m_ItemType; }
 	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() const throw(Error);
 	virtual VolumeHeight_t getVolumeHeight() const throw(Error);
 	virtual Weight_t getWeight() const throw(Error);
 
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
-	virtual ItemNum_t getNum() const throw() { return m_Num; }
+	virtual ItemNum_t getNum()  { return m_Num; }
 	virtual void setNum(ItemNum_t Num) throw() { m_Num = Num; }
 
-	bool    isStackable() const throw() { return true; }
+	bool    isStackable()  { return true; }
 	
 private:
 	ItemType_t m_ItemType; // 아이템 타입
@@ -69,12 +69,12 @@ private:
 class SkullInfo : public ItemInfo 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_SKULL; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_SKULL; }
 
-	virtual uint getItemLevel(void) const throw() { return m_ItemLevel; }
+	virtual uint getItemLevel(void)  { return m_ItemLevel; }
 	virtual void setItemLevel(uint level) throw() { m_ItemLevel = level; }
 
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 private:
 	uint m_ItemLevel;
@@ -90,7 +90,7 @@ private:
 class SkullInfoManager : public InfoClassManager 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_SKULL; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_SKULL; }
 	virtual void load() throw(Error);
 
 };
@@ -109,10 +109,10 @@ class SkullFactory : public ItemFactory {
 public:
 	
 	// get item class
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_SKULL; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_SKULL; }
 
 	// get item classname
-	virtual string getItemClassName() const throw() { return "Skull"; }
+	virtual string getItemClassName()  { return "Skull"; }
 	
 public:
 
@@ -133,10 +133,10 @@ class SkullLoader : public ItemLoader {
 public:
 
 	// get item class
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_SKULL; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_SKULL; }
 
 	// get item class name
-	virtual string getItemClassName() const throw() { return "Skull"; }
+	virtual string getItemClassName()  { return "Skull"; }
 
 public:
 

@@ -51,31 +51,31 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GTO_ACKNOWLEDGEMENT; }
+	PacketID_t getPacketID()  { return PACKET_GTO_ACKNOWLEDGEMENT; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		return szBYTE + szBYTE + m_Message.size() + szBYTE + m_ServerIP.size() + szuint;
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "GTOAcknowledgement"; }
+	string getPacketName()  { return "GTOAcknowledgement"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public:
 
-	string getServerIP() const throw() { return m_ServerIP; }
+	string getServerIP()  { return m_ServerIP; }
 	void setServerIP(const string& ServerIP) throw() { m_ServerIP = ServerIP; }
 	
 	string getMessage() const { return m_Message; }
 
-	BYTE getServerType() const throw() { return m_ServerType; }
+	BYTE getServerType()  { return m_ServerType; }
 	void setServerType(BYTE ServerType) throw() { m_ServerType = ServerType; }
 	
-	uint getUDPPort() const throw() { return m_udpPort; }
+	uint getUDPPort()  { return m_udpPort; }
 	void setUDPPort(uint port) throw() { m_udpPort = port; }
 	
 	
@@ -104,15 +104,15 @@ public:
 	Packet* createPacket() throw() { return new GTOAcknowledgement(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GTOAcknowledgement"; }
+	string getPacketName()  { return "GTOAcknowledgement"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GTO_ACKNOWLEDGEMENT; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GTO_ACKNOWLEDGEMENT; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GTOAcknowledgementPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		return szBYTE
 			+ szBYTE + 1024

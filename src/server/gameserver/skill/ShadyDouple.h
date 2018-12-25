@@ -20,8 +20,8 @@ public:
 	~ShadyDouple() throw() {}
 
 public :
-    string getSkillHandlerName() const throw() { return "ShadyDouple"; }
-	SkillType_t getSkillType() const throw() { return SKILL_SHADY_DOUPLE; }
+    string getSkillHandlerName()  { return "ShadyDouple"; }
+	SkillType_t getSkillType()  { return SKILL_SHADY_DOUPLE; }
 
 	void execute(Vampire * pVampire, ObjectID_t TargetObjectID, VampireSkillSlot * pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
 

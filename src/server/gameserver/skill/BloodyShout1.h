@@ -20,8 +20,8 @@ public:
 	~BloodyShout1() throw() {}
 	
 public:
-	string getSkillHandlerName() const throw() { return "BloodyShout1"; }
-	SkillType_t getSkillType() const throw() { return SKILL_BLOODY_SHOUT1; }
+	string getSkillHandlerName()  { return "BloodyShout1"; }
+	SkillType_t getSkillType()  { return SKILL_BLOODY_SHOUT1; }
 
 	void execute(Vampire* pSlayer,  VampireSkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

@@ -19,14 +19,14 @@ public:
 	EffectTurretLaser(Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_TURRET_LASER; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_TURRET_LASER; }
 
 	void affect() throw(Error);
 	void affect(Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
 
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 };
 
 #endif

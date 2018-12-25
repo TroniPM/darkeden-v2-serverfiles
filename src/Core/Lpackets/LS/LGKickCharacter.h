@@ -38,28 +38,28 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_LG_KICK_CHARACTER; }
+	PacketID_t getPacketID()  { return PACKET_LG_KICK_CHARACTER; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		return szBYTE + m_PCName.size()		// PC name
 				+ szuint;
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "LGKickCharacter"; }
+	string getPacketName()  { return "LGKickCharacter"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public:
 
 	// get/set pcName
-	string getPCName() const throw() { return m_PCName; }
+	string getPCName()  { return m_PCName; }
 	void setPCName(const string& pcName) throw() { m_PCName = pcName; }
 	
-	uint getID() const throw() { return m_ID; }
+	uint getID()  { return m_ID; }
 	void setID(uint id) throw() { m_ID = id; }
 
 private :
@@ -87,15 +87,15 @@ public:
 	Packet* createPacket() throw() { return new LGKickCharacter(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "LGKickCharacter"; }
+	string getPacketName()  { return "LGKickCharacter"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_LG_KICK_CHARACTER; }
+	PacketID_t getPacketID()  { return Packet::PACKET_LG_KICK_CHARACTER; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static LGKickCharacterPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		return szBYTE + 20		// PC name
 				+ szuint;

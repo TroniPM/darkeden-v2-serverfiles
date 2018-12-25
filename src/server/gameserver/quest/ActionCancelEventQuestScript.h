@@ -20,13 +20,13 @@
 class ActionCancelEventQuestScript : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_CANCEL_EVENT_QUEST_SCRIPT; }
+	virtual ActionType_t getActionType()  { return ACTION_CANCEL_EVENT_QUEST_SCRIPT; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
-	ScriptID_t getScriptID( int index ) const throw() { return m_ScriptID[index]; }
+	ScriptID_t getScriptID( int index )  { return m_ScriptID[index]; }
 	void setScriptID( int index, ScriptID_t scriptID ) throw() { m_ScriptID[index] = scriptID; }
 
 private:
@@ -43,8 +43,8 @@ private:
 class ActionCancelEventQuestScriptFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_CANCEL_EVENT_QUEST_SCRIPT; }
-	virtual string getActionName() const throw() { return "CancelEventQuestScript"; }
-	virtual Action* createAction() const throw() { return new ActionCancelEventQuestScript(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_CANCEL_EVENT_QUEST_SCRIPT; }
+	virtual string getActionName()  { return "CancelEventQuestScript"; }
+	virtual Action* createAction()  { return new ActionCancelEventQuestScript(); }
 };
 #endif

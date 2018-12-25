@@ -19,7 +19,7 @@ public:
 	EffectTheRoarOfAwakenWarrior(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_THE_ROAR_OF_AWAKEN_WARRIOR; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_THE_ROAR_OF_AWAKEN_WARRIOR; }
 
 	void affect() throw(Error) {}
 	void affect(Creature* pCreature) throw(Error);
@@ -30,7 +30,7 @@ public:
 	void unaffect() throw(Error); 
 	void unaffect(Item* pItem) throw(Error) {}
 
-	string toString() const throw();
+	string toString() ;
 };
 
 #endif // __EFFECT_BLESS__

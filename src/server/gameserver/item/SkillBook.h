@@ -31,15 +31,15 @@ public:
 	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) throw(Error);
 	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
 	void tinysave(const char* field) const throw (Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	static void initItemIDRegistry(void) throw();
 
 public:
-//	virtual ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_SKILLBOOK; }
-//	virtual string getObjectTableName() const throw() { return "SkillBookObject"; }
+//	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_SKILLBOOK; }
+//	virtual string getObjectTableName()  { return "SkillBookObject"; }
 
-/*	virtual ItemType_t getItemType() const throw() { return m_ItemType; }
+/*	virtual ItemType_t getItemType()  { return m_ItemType; }
 	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() const throw(Error);
@@ -47,10 +47,10 @@ public:
 	virtual Weight_t getWeight() const throw(Error);
 
 public:
-	virtual ItemNum_t getNum() const throw() { return m_Num; }
+	virtual ItemNum_t getNum()  { return m_Num; }
 	virtual void setNum(ItemNum_t Num) throw() { m_Num = Num; }
 
-	bool    isStackable() const throw() { return false; }
+	bool    isStackable()  { return false; }
 */
 private:
 //	ItemType_t m_ItemType;
@@ -67,15 +67,15 @@ private:
 class SkillBookInfo : public ItemInfo 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_SKILLBOOK; }
-	virtual string toString() const throw();
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_SKILLBOOK; }
+	virtual string toString() ;
 
 public :
 
-	virtual int getFunctionValue() const throw() { return m_FunctionValue; }
+	virtual int getFunctionValue()  { return m_FunctionValue; }
 	virtual void setFunctionValue(int value) throw() { m_FunctionValue = value; }
 
-	virtual int getRaceValue() const throw() { return m_RaceValue; }
+	virtual int getRaceValue()  { return m_RaceValue; }
 	virtual void setRaceValue(int Racevalue) throw() { m_RaceValue = Racevalue; }
 
 	int        m_FunctionValue;	// 기능과 관련된 값
@@ -89,7 +89,7 @@ public :
 class SkillBookInfoManager : public InfoClassManager 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_SKILLBOOK; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_SKILLBOOK; }
 	virtual void load() throw(Error);
 };
 
@@ -102,8 +102,8 @@ extern SkillBookInfoManager* g_pSkillBookInfoManager;
 class SkillBookFactory : public ItemFactory 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_SKILLBOOK; }
-	virtual string getItemClassName() const throw() { return "SkillBook"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_SKILLBOOK; }
+	virtual string getItemClassName()  { return "SkillBook"; }
 	
 public:
 	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new SkillBook(ItemType,OptionType,1); }
@@ -116,8 +116,8 @@ public:
 class SkillBookLoader : public ItemLoader 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_SKILLBOOK; }
-	virtual string getItemClassName() const throw() { return "SkillBook"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_SKILLBOOK; }
+	virtual string getItemClassName()  { return "SkillBook"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

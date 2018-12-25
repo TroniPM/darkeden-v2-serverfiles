@@ -35,16 +35,16 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_UNDISPLAY_ITEM; }
+	PacketID_t getPacketID()  { return PACKET_CG_UNDISPLAY_ITEM; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szCoordInven + szCoordInven + szObjectID + szBYTE; }
+	PacketSize_t getPacketSize()  { return szCoordInven + szCoordInven + szObjectID + szBYTE; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGUndisplayItem"; }
+	string getPacketName()  { return "CGUndisplayItem"; }
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	CoordInven_t	getX() const { return m_X; }
 	CoordInven_t	getY() const { return m_Y; }
@@ -88,13 +88,13 @@ public:
 	Packet* createPacket() throw() { return new CGUndisplayItem(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGUndisplayItem"; }
+	string getPacketName()  { return "CGUndisplayItem"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_UNDISPLAY_ITEM; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_UNDISPLAY_ITEM; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szCoordInven + szCoordInven + szObjectID + szBYTE; }
+	PacketSize_t getPacketMaxSize()  { return szCoordInven + szCoordInven + szObjectID + szBYTE; }
 };
 
 

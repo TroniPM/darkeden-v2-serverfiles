@@ -20,11 +20,11 @@ class ConcreteItem : public Item
 {
 public:
 	// 가상 함수 구체화
-	ItemClass	getItemClass() const throw() { return IClass; }
-	string		getObjectTableName() const throw() { return ItemObjectTableName[getItemClass()]; }
+	ItemClass	getItemClass()  { return IClass; }
+	string		getObjectTableName()  { return ItemObjectTableName[getItemClass()]; }
 	ItemInfo*	getItemInfo() const { return g_pItemInfoManager->getItemInfo( getItemClass(), getItemType() ); }
 
-	ItemType_t	getItemType() const throw() { return m_ItemType; }
+	ItemType_t	getItemType()  { return m_ItemType; }
 	void		setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
 
 	VolumeWidth_t	getVolumeWidth() const throw(Error) { return getItemInfo()->getVolumeWidth(); }
@@ -33,9 +33,9 @@ public:
 
 public:
 	// 아이템 쌓기 관련
-	bool	isStackable() const throw() { return m_Stack.hasValue(); }
+	bool	isStackable()  { return m_Stack.hasValue(); }
 
-	ItemNum_t	getNum() const throw() { return m_Stack.getValue(); }
+	ItemNum_t	getNum()  { return m_Stack.getValue(); }
 	void		setNum(ItemNum_t Num) throw() { m_Stack.setValue(Num); }
 
 public:
@@ -55,11 +55,11 @@ public:
 
 public:
 	// 옵션 관련
-	bool						hasOptionType() const throw() { return m_Option.hasOptionType(); }
-	int							getOptionTypeSize() const throw() { return m_Option.getOptionTypeSize(); }
-	int							getRandomOptionType() const throw() { return m_Option.getRandomOptionType(); }
-	const list<OptionType_t>&	getOptionTypeList() const throw() { return m_Option.getOptionTypeList(); }
-	OptionType_t				getFirstOptionType() const throw() { return m_Option.getFirstOptionType(); }
+	bool						hasOptionType()  { return m_Option.hasOptionType(); }
+	int							getOptionTypeSize()  { return m_Option.getOptionTypeSize(); }
+	int							getRandomOptionType()  { return m_Option.getRandomOptionType(); }
+	const list<OptionType_t>&	getOptionTypeList()  { return m_Option.getOptionTypeList(); }
+	OptionType_t				getFirstOptionType()  { return m_Option.getFirstOptionType(); }
 	void						removeOptionType(OptionType_t OptionType) throw() { m_Option.removeOptionType(OptionType); }
 	void						changeOptionType(OptionType_t currentOptionType, OptionType_t newOptionType) throw() { m_Option.changeOptionType(currentOptionType, newOptionType); }
 	void						addOptionType(OptionType_t OptionType) throw() { m_Option.addOptionType(OptionType); }
@@ -79,18 +79,18 @@ public:
 	Range_t		getRange() const throw(Error) { return getItemInfo()->getRange(); }
 	ToHit_t		getToHitBonus() const throw(Error) { return getItemInfo()->getToHitBonus(); }
 	Speed_t		getSpeed() const throw(Error) { return getItemInfo()->getSpeed(); }
-	int			getCriticalBonus() const throw() { return max(0,getItemInfo()->getCriticalBonus() + m_Grade.getCriticalOffset()); }
+	int			getCriticalBonus()  { return max(0,getItemInfo()->getCriticalBonus() + m_Grade.getCriticalOffset()); }
 
-	BYTE		getBulletCount() const throw() { return m_AttackingStat.getBulletCount(); }
+	BYTE		getBulletCount()  { return m_AttackingStat.getBulletCount(); }
 	void		setBulletCount(BYTE bulletCount) throw() { m_AttackingStat.setBulletCount(bulletCount); }
 
-	bool		isSilverWeapon() const throw() { return m_AttackingStat.isSilverWeapon(); }
-	Silver_t	getSilver() const throw() { return m_AttackingStat.getSilver(); }
+	bool		isSilverWeapon()  { return m_AttackingStat.isSilverWeapon(); }
+	Silver_t	getSilver()  { return m_AttackingStat.getSilver(); }
 	void		setSilver(Silver_t amount) throw() { m_AttackingStat.setSilver(amount); }
 
-	bool		isGun() const throw() { return m_AttackingStat.isGun(); }
+	bool		isGun()  { return m_AttackingStat.isGun(); }
 
-	Damage_t	getBonusDamage() const throw() { return m_AttackingStat.getBonusDamage(); }
+	Damage_t	getBonusDamage()  { return m_AttackingStat.getBonusDamage(); }
 	void		setBonusDamage(Damage_t BonusDamage) throw() { m_AttackingStat.setBonusDamage(BonusDamage); }
 
 public:
@@ -100,16 +100,16 @@ public:
 
 public:
 	// 인챈트 레벨
-	EnchantLevel_t	getEnchantLevel() const throw() { return m_EnchantLevel.getValue(); }
+	EnchantLevel_t	getEnchantLevel()  { return m_EnchantLevel.getValue(); }
 	void			setEnchantLevel(EnchantLevel_t level) throw() { m_EnchantLevel.setValue(level); }
 
 public:
 	// 옵션 관련
-	bool						hasOptionType2() const throw() { return m_Option2.hasOptionType2(); }
-	int							getOptionTypeSize2() const throw() { return m_Option2.getOptionTypeSize2(); }
-	int							getRandomOptionType2() const throw() { return m_Option2.getRandomOptionType2(); }
-	const list<OptionType_t>&	getOptionTypeList2() const throw() { return m_Option2.getOptionTypeList2(); }
-	OptionType_t				getFirstOptionType2() const throw() { return m_Option2.getFirstOptionType2(); }
+	bool						hasOptionType2()  { return m_Option2.hasOptionType2(); }
+	int							getOptionTypeSize2()  { return m_Option2.getOptionTypeSize2(); }
+	int							getRandomOptionType2()  { return m_Option2.getRandomOptionType2(); }
+	const list<OptionType_t>&	getOptionTypeList2()  { return m_Option2.getOptionTypeList2(); }
+	OptionType_t				getFirstOptionType2()  { return m_Option2.getFirstOptionType2(); }
 	void						removeOptionType2(OptionType_t OptionType) throw() { m_Option2.removeOptionType2(OptionType); }
 	void						changeOptionType2(OptionType_t currentOptionType, OptionType_t newOptionType) throw() { m_Option2.changeOptionType2(currentOptionType, newOptionType); }
 	void						addOptionType2(OptionType_t OptionType) throw() { m_Option2.addOptionType2(OptionType); }
@@ -117,10 +117,10 @@ public:
 
 public:
 
-	EnchantLevel_t	getHeroOption() const throw() { return m_HeroOption.getValue(); }
+	EnchantLevel_t	getHeroOption()  { return m_HeroOption.getValue(); }
 	void			setHeroOption(EnchantLevel_t level) throw() { m_HeroOption.setValue(level); }
 
-	EnchantLevel_t	getHeroOptionAttr() const throw() { return m_HeroOptionAttr.getValue(); }
+	EnchantLevel_t	getHeroOptionAttr()  { return m_HeroOptionAttr.getValue(); }
 	void			setHeroOptionAttr(EnchantLevel_t level) throw() { m_HeroOptionAttr.setValue(level); }
 
 private:

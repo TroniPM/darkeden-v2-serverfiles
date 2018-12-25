@@ -20,13 +20,13 @@ public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_CG_PARTY_LEAVE; }
-	PacketSize_t getPacketSize() const throw() { return szBYTE + m_TargetName.size(); }
-	string getPacketName() const throw() { return "CGPartyLeave"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_CG_PARTY_LEAVE; }
+	PacketSize_t getPacketSize()  { return szBYTE + m_TargetName.size(); }
+	string getPacketName()  { return "CGPartyLeave"; }
+	string toString() ;
 	
 public:
-	string getTargetName(void) const throw() { return m_TargetName; }
+	string getTargetName(void)  { return m_TargetName; }
 	void setTargetName(const string& name) { m_TargetName = name; }
 
 private:
@@ -42,9 +42,9 @@ class CGPartyLeaveFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new CGPartyLeave(); }
-	string getPacketName() const throw() { return "CGPartyLeave"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_PARTY_LEAVE; }
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + 10; }
+	string getPacketName()  { return "CGPartyLeave"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_PARTY_LEAVE; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + 10; }
 };
 
 

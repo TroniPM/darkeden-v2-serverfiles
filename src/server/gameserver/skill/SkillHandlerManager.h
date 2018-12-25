@@ -31,7 +31,7 @@ public:
 	SkillHandler* getSkillHandler(SkillType_t SkillType) throw(Error);
 
 	// toString
-	string toString() const throw();
+	string toString() ;
 	
 private:
 	SkillHandler** m_SkillHandlers;  // 스킬 핸들러 배열

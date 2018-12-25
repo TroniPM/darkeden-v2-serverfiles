@@ -50,13 +50,13 @@ class Creature;
 class PortalTargetInfo 
 {
 public:
-	ZoneID_t getZoneID() const throw() { return m_ZoneID; }
+	ZoneID_t getZoneID()  { return m_ZoneID; }
 	void setZoneID(ZoneID_t zoneID) throw() { m_ZoneID = zoneID; }
 
-	ZoneCoord_t getX() const throw() { return m_X; }
+	ZoneCoord_t getX()  { return m_X; }
 	void setX(ZoneCoord_t x) throw() { m_X = x; }
 
-	ZoneCoord_t getY() const throw() { return m_Y; }
+	ZoneCoord_t getY()  { return m_Y; }
 	void setY(ZoneCoord_t y) throw() { m_Y = y; }
 
 private:
@@ -78,15 +78,15 @@ public:
 	virtual ~Portal() throw() {}
 
 public:
-	virtual ObjectClass getObjectClass() const throw() { return OBJECT_CLASS_PORTAL; }
+	virtual ObjectClass getObjectClass()  { return OBJECT_CLASS_PORTAL; }
 	virtual ObjectPriority getObjectPriority() const throw(Error) { return OBJECT_PRIORITY_PORTAL; }
-	virtual PortalClass getPortalClass() const throw() = 0;
+	virtual PortalClass getPortalClass()  = 0;
 	virtual bool activate(Creature* pCreature) throw(Error) { return false; };
 	virtual bool activate(Creature* pCreature, ZoneID_t ZoneID) throw(Error) { return false; };
-	virtual string toString() const throw() = 0;
+	virtual string toString()  = 0;
 
 public:
-	PortalType_t getObjectType() const throw() { return m_PortalType; }
+	PortalType_t getObjectType()  { return m_PortalType; }
 	void setObjectType(PortalType_t portalType) throw() { m_PortalType = portalType; }
 
 protected:
@@ -104,22 +104,22 @@ public:
 	~PrivatePortal() throw();
 
 public:
-	PortalClass getPortalClass() const throw() { return PORTAL_CLASS_PRIVATE; }
+	PortalClass getPortalClass()  { return PORTAL_CLASS_PRIVATE; }
 
-	ZoneID_t getZoneID() const throw();
+	ZoneID_t getZoneID() ;
 	void setZoneID(ZoneID_t zoneID) throw();
 
-	ZoneCoord_t getX() const throw();
+	ZoneCoord_t getX() ;
 	void setX(ZoneCoord_t x) throw();
 
-	ZoneCoord_t getY() const throw();
+	ZoneCoord_t getY() ;
 	void setY(ZoneCoord_t y) throw();
 
 	bool activate(Creature* pCreature) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
-	string getName() const throw() { return m_Name; }
+	string getName()  { return m_Name; }
 	void setName(const string Name) throw() { m_Name = Name; }
 
 	bool isReturning() throw() { return m_Return; }
@@ -147,23 +147,23 @@ public:
 	}
 
 	// get Portal class
-	PortalClass getPortalClass() const throw() { return PORTAL_CLASS_NORMAL; }
+	PortalClass getPortalClass()  { return PORTAL_CLASS_NORMAL; }
 
 	// get/set zone id
-	ZoneID_t getZoneID() const throw() { return m_pTarget->getZoneID(); }
+	ZoneID_t getZoneID()  { return m_pTarget->getZoneID(); }
 	void setZoneID(ZoneID_t zoneID) throw() { m_pTarget->setZoneID(zoneID); }
 
-	ZoneCoord_t getX() const throw() { return m_pTarget->getX(); }
+	ZoneCoord_t getX()  { return m_pTarget->getX(); }
 	void setX(ZoneCoord_t x) throw() { m_pTarget->setX(x); }
 
-	ZoneCoord_t getY() const throw() { return m_pTarget->getY(); }
+	ZoneCoord_t getY()  { return m_pTarget->getY(); }
 	void setY(ZoneCoord_t y) throw() { m_pTarget->setY(y); }
 
 	// PC를 특정 위치로 이동시킨다.
 	bool activate(Creature* pCreature) throw(Error);
 
 	// get debug string
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 private:
 
@@ -188,23 +188,23 @@ public:
 	}
 
 	// get Portal class
-	PortalClass getPortalClass() const throw() { return PORTAL_CLASS_NORMAL; }
+	PortalClass getPortalClass()  { return PORTAL_CLASS_NORMAL; }
 
 	// get/set zone id
-	ZoneID_t getZoneID() const throw() { return m_pTarget->getZoneID(); }
+	ZoneID_t getZoneID()  { return m_pTarget->getZoneID(); }
 	void setZoneID(ZoneID_t zoneID) throw() { m_pTarget->setZoneID(zoneID); }
 
-	ZoneCoord_t getX() const throw() { return m_pTarget->getX(); }
+	ZoneCoord_t getX()  { return m_pTarget->getX(); }
 	void setX(ZoneCoord_t x) throw() { m_pTarget->setX(x); }
 
-	ZoneCoord_t getY() const throw() { return m_pTarget->getY(); }
+	ZoneCoord_t getY()  { return m_pTarget->getY(); }
 	void setY(ZoneCoord_t y) throw() { m_pTarget->setY(y); }
 
 	// PC를 특정 위치로 이동시킨다.
 	bool activate(Creature* pCreature) throw(Error);
 
 	// get debug string
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 private:
 
@@ -230,7 +230,7 @@ public:
 	}
 
 	// get Portal class
-	PortalClass getPortalClass() const throw() { return PORTAL_CLASS_MULTI; }
+	PortalClass getPortalClass()  { return PORTAL_CLASS_MULTI; }
 
 	void setPortalTargetInfo(PortalTargetInfo* pPortalTargetInfo) throw() { m_Targets.push_back(pPortalTargetInfo); }
 	void getPortalTargetInfo(ZoneID_t ZoneID) throw();
@@ -239,7 +239,7 @@ public:
 	bool activate(Creature* pCreature, ZoneID_t ZoneID) throw(Error);
 
 	// get debug string
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 private:
 	//  목표 좌표 Info
@@ -262,15 +262,15 @@ public: // constructor & destructor
 	~TriggeredPortal() throw() {}
 
 public: // methods from base class
-	PortalClass getPortalClass() const throw() { return PORTAL_CLASS_TRIGGERED; }
+	PortalClass getPortalClass()  { return PORTAL_CLASS_TRIGGERED; }
 	bool activate(Creature* pCreature) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public: // public methods
 	void load(ZoneID_t id, int left, int top, int right, int bottom) throw();
 
 	TriggerManager& getTriggerManager() throw() { return m_TriggerManager; }
-	const TriggerManager& getTriggerManager() const throw() { return m_TriggerManager; }
+	const TriggerManager& getTriggerManager()  { return m_TriggerManager; }
 
 
 ///// member data /////

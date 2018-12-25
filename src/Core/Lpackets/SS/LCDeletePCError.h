@@ -33,22 +33,22 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_LC_DELETE_PC_ERROR; }
+	PacketID_t getPacketID()  { return PACKET_LC_DELETE_PC_ERROR; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szBYTE; }
+	PacketSize_t getPacketSize()  { return szBYTE; }
 	
 	// get packet's name
-	string getPacketName() const throw() { return "LCDeletePCError"; }
+	string getPacketName()  { return "LCDeletePCError"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 	
 	// get/set error message
-//	string getMessage() const throw() { return m_Message; }
+//	string getMessage()  { return m_Message; }
 //	void setMessage(string message) throw() { m_Message = message; }
 	// get /set ErrorID
-	BYTE getErrorID() const throw() { return m_ErrorID; }
+	BYTE getErrorID()  { return m_ErrorID; }
 	void setErrorID(BYTE ErrorID) throw() { m_ErrorID = ErrorID; }
 
 private : 
@@ -75,13 +75,13 @@ public:
 	Packet* createPacket() throw() { return new LCDeletePCError(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "LCDeletePCError"; }
+	string getPacketName()  { return "LCDeletePCError"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_LC_DELETE_PC_ERROR; }
+	PacketID_t getPacketID()  { return Packet::PACKET_LC_DELETE_PC_ERROR; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE; }
 	
 };
 

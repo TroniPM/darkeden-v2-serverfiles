@@ -20,14 +20,14 @@ public:
 	EffectMagicShield1(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_MAGIC_SHIELD1; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_MAGIC_SHIELD1; }
 
 	void affect() throw(Error){}
 
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void setLevel( SkillLevel_t level ) { m_SkillLevel = level; }
@@ -44,8 +44,8 @@ private:
 class EffectMagicShield1Loader : public EffectLoader 
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_MAGIC_SHIELD1; }
-	virtual string getEffectClassName() const throw() { return "EffectMagicShield1"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_MAGIC_SHIELD1; }
+	virtual string getEffectClassName()  { return "EffectMagicShield1"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error) {}

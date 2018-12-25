@@ -35,16 +35,16 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_STORE_SIGN; }
+	PacketID_t getPacketID()  { return PACKET_CG_STORE_SIGN; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szBYTE + m_Sign.size(); }
+	PacketSize_t getPacketSize()  { return szBYTE + m_Sign.size(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGStoreSign"; }
+	string getPacketName()  { return "CGStoreSign"; }
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	string	getSign() const { return m_Sign; }
 	void	setSign(const string& sign) { m_Sign = sign; }
@@ -79,13 +79,13 @@ public:
 	Packet* createPacket() throw() { return new CGStoreSign(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGStoreSign"; }
+	string getPacketName()  { return "CGStoreSign"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_STORE_SIGN; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_STORE_SIGN; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + 80; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + 80; }
 };
 
 

@@ -20,14 +20,14 @@ public:
 	EffectRageOfBlood(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_RAGE_OF_BLOOD; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_RAGE_OF_BLOOD; }
 
 	void affect() throw(Error){}
 
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void setLevel( SkillLevel_t level ) { m_SkillLevel = level; }
@@ -44,8 +44,8 @@ private:
 class EffectRageOfBloodLoader : public EffectLoader 
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_RAGE_OF_BLOOD; }
-	virtual string getEffectClassName() const throw() { return "EffectRageOfBlood"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_RAGE_OF_BLOOD; }
+	virtual string getEffectClassName()  { return "EffectRageOfBlood"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error) {}

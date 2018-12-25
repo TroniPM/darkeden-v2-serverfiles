@@ -35,7 +35,7 @@ public:
 	int getCount() const { return m_VariableInfos.size(); }
 	VariableInfo* getVariableInfo( int index ) throw(OutOfBoundException, Error);
 
-	string toString() const throw();
+	string toString() ;
 	
 private:
 	void parse() throw (Error);

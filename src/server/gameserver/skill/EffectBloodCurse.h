@@ -20,7 +20,7 @@ public:
 	EffectBloodCurse(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY, bool bPlayer = false) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_BLOOD_CURSE; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_BLOOD_CURSE; }
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
@@ -28,7 +28,7 @@ public:
 	void unaffect() throw(Error);
 	void unaffect(Creature* pCreature) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	int getDamage(void) const { return m_Damage; }
@@ -61,8 +61,8 @@ private:
 class EffectBloodCurseLoader : public EffectLoader 
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_BLOOD_CURSE; }
-	virtual string getEffectClassName() const throw() { return "EffectBloodCurse"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_BLOOD_CURSE; }
+	virtual string getEffectClassName()  { return "EffectBloodCurse"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error) {}

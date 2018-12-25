@@ -50,21 +50,21 @@ public :
 
 	// get/set ObjectID
 	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 
 	// get/set ItemClass
 	void setItemClass (BYTE IClass) throw() { m_IClass = IClass; }
-	BYTE getItemClass () const throw() { return m_IClass; }
+	BYTE getItemClass ()  { return m_IClass; }
 
 	// get/set ItemType
 	void setItemType (ItemType_t ItemType) throw() { m_ItemType = ItemType; }
-	ItemType_t getItemType() const throw() { return m_ItemType; }
+	ItemType_t getItemType()  { return m_ItemType; }
 
 	// get/set OptionType
 	void addOptionType(OptionType_t OptionType) throw() { m_OptionType.push_back( OptionType ); }
 	void setOptionType(const list<OptionType_t>& OptionType) throw() { m_OptionType = OptionType; }
-	int getOptionTypeSize() const throw()	{ return m_OptionType.size(); }
-	const list<OptionType_t>& getOptionType() const throw() { return m_OptionType; }
+	int getOptionTypeSize() 	{ return m_OptionType.size(); }
+	const list<OptionType_t>& getOptionType()  { return m_OptionType; }
 	OptionType_t popOptionType() throw()
 	{
 		if (m_OptionType.empty()) return 0;
@@ -75,19 +75,19 @@ public :
 
 	// get/set InvenX
 	void setInvenX(CoordInven_t InvenX) throw() { m_InvenX = InvenX; }
-	CoordInven_t getInvenX() const throw() { return m_InvenX; }
+	CoordInven_t getInvenX()  { return m_InvenX; }
 
 	// get/set InvenY
 	void setInvenY(CoordInven_t InvenY) throw() { m_InvenY = InvenY; }
-	CoordInven_t getInvenY() const throw() { return m_InvenY; }
+	CoordInven_t getInvenY()  { return m_InvenY; }
 
 	// get/set ItemNum
 	void setItemNum (ItemNum_t ItemNum) throw() { m_ItemNum = ItemNum; }
-	ItemNum_t getItemNum() const throw() { return m_ItemNum; }
+	ItemNum_t getItemNum()  { return m_ItemNum; }
 
 	// get/set MainColor
 	void setMainColor(WORD MainColor) throw() { m_MainColor = MainColor; }
-	WORD getMainColor() const throw() { return m_MainColor; }
+	WORD getMainColor()  { return m_MainColor; }
 
 private :
 

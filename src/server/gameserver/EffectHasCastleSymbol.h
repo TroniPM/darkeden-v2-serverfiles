@@ -20,13 +20,13 @@ public:
 	EffectHasCastleSymbol(Item* pItem) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_HAS_CASTLE_SYMBOL; }
-	EffectClass getSendEffectClass() const throw() { return EffectClasses[m_Part]; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_HAS_CASTLE_SYMBOL; }
+	EffectClass getSendEffectClass()  { return EffectClasses[m_Part]; }
 
 	void affect(Creature* pCreature) throw(Error);
 	void affect(Item* pItem) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void   	setPart(int part) throw();

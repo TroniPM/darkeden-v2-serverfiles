@@ -20,8 +20,8 @@ public:
 	~MindControl() throw() {}
 	
 public :
-    string getSkillHandlerName() const throw() { return "MindControl"; }
-	SkillType_t getSkillType() const throw() { return SKILL_MIND_CONTROL; }
+    string getSkillHandlerName()  { return "MindControl"; }
+	SkillType_t getSkillType()  { return SKILL_MIND_CONTROL; }
 
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

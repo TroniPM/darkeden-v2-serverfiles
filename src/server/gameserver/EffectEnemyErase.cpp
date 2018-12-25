@@ -207,7 +207,7 @@ void EffectEnemyErase::save (const string & ownerID)
 }
 
 string EffectEnemyErase::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

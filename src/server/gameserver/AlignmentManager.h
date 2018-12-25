@@ -31,7 +31,7 @@ public:
 
 	BYTE getMoneyDropPenalty(Alignment_t Alignment) throw();
 
-	string toString() const throw();
+	string toString() ;
 };
 
 // global variable definition

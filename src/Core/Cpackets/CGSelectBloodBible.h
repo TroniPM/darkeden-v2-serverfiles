@@ -36,19 +36,19 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_SELECT_BLOOD_BIBLE; }
+	PacketID_t getPacketID()  { return PACKET_CG_SELECT_BLOOD_BIBLE; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szItemType; }
+	PacketSize_t getPacketSize()  { return szItemType; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGSelectBloodBible"; }
+	string getPacketName()  { return "CGSelectBloodBible"; }
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get/set BloodBibleID
-	ItemType_t getBloodBibleID() const throw() { return m_BloodBibleID; }
+	ItemType_t getBloodBibleID()  { return m_BloodBibleID; }
 	void setBloodBibleID( ItemType_t BloodBibleID ) throw() { m_BloodBibleID = BloodBibleID; }
 
 
@@ -85,13 +85,13 @@ public:
 	Packet* createPacket() throw() { return new CGSelectBloodBible(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGSelectBloodBible"; }
+	string getPacketName()  { return "CGSelectBloodBible"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_SELECT_BLOOD_BIBLE; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_SELECT_BLOOD_BIBLE; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szItemType; }
+	PacketSize_t getPacketMaxSize()  { return szItemType; }
 };
 
 

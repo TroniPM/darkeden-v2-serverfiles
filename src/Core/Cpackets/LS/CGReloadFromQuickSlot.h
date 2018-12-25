@@ -41,27 +41,27 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_RELOAD_FROM_QUICKSLOT; }
+	PacketID_t getPacketID()  { return PACKET_CG_RELOAD_FROM_QUICKSLOT; }
 	
 	// get packet's body size
 	// *OPTIMIZATION HINT*
 	// const static CGReloadFromQuickSlotPacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szSlotID; }
+	PacketSize_t getPacketSize()  { return szObjectID + szSlotID; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGReloadFromQuickSlot"; }
+	string getPacketName()  { return "CGReloadFromQuickSlot"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 	
 public:
 
 	// get / set ObjectID
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
 
 	// get / set QuickSlotID
-	SlotID_t getSlotID() const throw() { return m_SlotID; }
+	SlotID_t getSlotID()  { return m_SlotID; }
 	void setSlotID(SlotID_t SlotID) throw() { m_SlotID = SlotID; }
 
 
@@ -92,15 +92,15 @@ public:
 	Packet* createPacket() throw() { return new CGReloadFromQuickSlot(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGReloadFromQuickSlot"; }
+	string getPacketName()  { return "CGReloadFromQuickSlot"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_RELOAD_FROM_QUICKSLOT; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_RELOAD_FROM_QUICKSLOT; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static CGReloadFromQuickSlotPacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szSlotID; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szSlotID; }
 
 };
 

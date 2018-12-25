@@ -20,8 +20,8 @@ public:
 	~MagicShield1() throw() {}
 	
 public:
-	string getSkillHandlerName() const throw() { return "MagicShield1"; }
-	SkillType_t getSkillType() const throw() { return SKILL_MAGIC_SHIELD1; }
+	string getSkillHandlerName()  { return "MagicShield1"; }
+	SkillType_t getSkillType()  { return SKILL_MAGIC_SHIELD1; }
 
 	void execute(Slayer* pSlayer,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

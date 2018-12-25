@@ -133,7 +133,7 @@ void EffectStriking::unaffect(Zone* pZone , ZoneCoord_t x , ZoneCoord_t y , Obje
 }
 
 string EffectStriking::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

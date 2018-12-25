@@ -20,8 +20,8 @@ public:
 	~PotentialExplosion() throw() {}
 
 public:
-    string getSkillHandlerName() const throw() { return "PotentialExplosion"; }
-	SkillType_t getSkillType() const throw() { return SKILL_POTENTIAL_EXPLOSION; }
+    string getSkillHandlerName()  { return "PotentialExplosion"; }
+	SkillType_t getSkillType()  { return SKILL_POTENTIAL_EXPLOSION; }
 
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

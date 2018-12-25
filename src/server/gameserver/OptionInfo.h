@@ -306,7 +306,7 @@ public:
 	int	getGrade() const { return m_Grade; }
 	void setGrade( int grade ) { m_Grade = grade; }
 
-	string toString() const throw();
+	string toString() ;
 
 
 ///// Member data /////
@@ -360,7 +360,7 @@ public:
 
 	void clear()	{ m_OptionTypes.clear(); }
 
-	string toString(void) const throw();
+	string toString(void) ;
 
 private:
 	hash_map<uint, OptionType_t> m_OptionTypes;
@@ -376,10 +376,10 @@ public:
 	~PetEnchantOption() throw() {}
 
 	void setOptionType( OptionType_t type ) throw() { m_Type = type; }
-	OptionType_t getOptionType() const throw() { return m_Type; }
+	OptionType_t getOptionType()  { return m_Type; }
 
 	void setRatio( int ratio ) throw() { m_Ratio = ratio; }
-	int getRatio() const throw() { return m_Ratio; }
+	int getRatio()  { return m_Ratio; }
 
 private:
 	OptionType_t 	m_Type;
@@ -433,7 +433,7 @@ public:
 	void setTotalPetEnchantOption( int total ) throw() { m_ToTalPetEnchantOption = total; }
 	int getTotalPetEnchantOption() throw() { return m_ToTalPetEnchantOption; }
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	void addOptionClassInfo( OptionClassInfo* pInfo ) { m_OptionClassInfos[pInfo->getOptionClass()] = pInfo; }

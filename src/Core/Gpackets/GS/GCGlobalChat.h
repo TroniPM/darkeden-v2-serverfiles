@@ -38,27 +38,27 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_GLOBAL_CHAT; }
+	PacketID_t getPacketID()  { return PACKET_GC_GLOBAL_CHAT; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szuint + szBYTE + m_Message.size() + szBYTE; }
+	PacketSize_t getPacketSize()  { return szuint + szBYTE + m_Message.size() + szBYTE; }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCGlobalChat"; }
+	string getPacketName()  { return "GCGlobalChat"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	//get/set text color
-	uint getColor() const throw() { return m_Color; }
+	uint getColor()  { return m_Color; }
 	void setColor( uint color ) throw() { m_Color = color; }
 
 	// get/set chatting message
-	string getMessage() const throw() { return m_Message; }
+	string getMessage()  { return m_Message; }
 	void setMessage(const string & msg) throw() { m_Message = msg; }
 
 	// get/set chatting message
-	Race_t getRace() const throw() { return m_Race; }
+	Race_t getRace()  { return m_Race; }
 	void setRace(Race_t race) throw() { m_Race = race; }
 	
 
@@ -92,15 +92,15 @@ public :
 	Packet* createPacket() throw() { return new GCGlobalChat(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCGlobalChat"; }
+	string getPacketName()  { return "GCGlobalChat"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_GLOBAL_CHAT; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_GLOBAL_CHAT; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCGlobalChatPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szuint + szBYTE + 128 + szBYTE ; }
+	PacketSize_t getPacketMaxSize()  { return szuint + szBYTE + 128 + szBYTE ; }
 
 };
 

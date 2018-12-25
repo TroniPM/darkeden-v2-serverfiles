@@ -20,8 +20,8 @@ public:
 	~WideLightning() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "WideLightning"; }
-	SkillType_t getSkillType() const throw() { return SKILL_WIDE_LIGHTNING; }
+    string getSkillHandlerName()  { return "WideLightning"; }
+	SkillType_t getSkillType()  { return SKILL_WIDE_LIGHTNING; }
 
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Slayer* pSlayer, ZoneCoord_t X, ZoneCoord_t Y, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);

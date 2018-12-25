@@ -21,8 +21,8 @@ public:
 	EffectShrineHoly(Item* pItem) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_SHRINE_HOLY; }
-    EffectClass getSendEffectClass() const throw() { return (EffectClass)((int)EFFECT_CLASS_SHRINE_HOLY + m_ShrineID); }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_SHRINE_HOLY; }
+    EffectClass getSendEffectClass()  { return (EffectClass)((int)EFFECT_CLASS_SHRINE_HOLY + m_ShrineID); }
 
 	void affect() throw(Error) {}
 	void affect(Creature* pCreature) throw(Error);
@@ -32,7 +32,7 @@ public:
 	void unaffect(Item* pItem) throw(Error);
 	void unaffect() throw(Error); 
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	int getShrineID() const { return m_ShrineID; }

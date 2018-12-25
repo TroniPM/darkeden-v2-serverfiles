@@ -31,8 +31,8 @@ public:
 
 // 하위 클래스 상속 함수
 public:
-	virtual CreatureClass getCreatureClass() const throw() { return CREATURE_CLASS_MONSTER; }
-	virtual string getCreatureClassString() const throw() { return "CREATURE_CLASS_MONSTER"; }
+	virtual CreatureClass getCreatureClass()  { return CREATURE_CLASS_MONSTER; }
+	virtual string getCreatureClassString()  { return "CREATURE_CLASS_MONSTER"; }
 
 	virtual Race_t getRace() const;
 
@@ -41,7 +41,7 @@ public:
 	virtual bool load() throw (InvalidProtocolException, Error) { return true;}
 	virtual void save() const throw(Error) {}
 
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 // AI specific methods
 public:
@@ -64,8 +64,8 @@ public:
 	bool isRealEnemy(Creature* pEnemy) throw(Error);
 
 	// 이 몬스터에게 적이 하나이상 지정되어 있는가?
-	bool hasEnemy() const throw() { return m_Enemies.size() > 0; }
-	uint getMaxEnemies() const throw();
+	bool hasEnemy()  { return m_Enemies.size() > 0; }
+	uint getMaxEnemies() ;
 
 	list<ObjectID_t>& getEnemies(void) throw() { return m_Enemies;}
 
@@ -78,50 +78,50 @@ public:
 	bool canMove(ZoneCoord_t nx, ZoneCoord_t ny) const throw(Error);
 // get monster-class-level attributes
 public:
-	MonsterType_t getMonsterType() const throw() { return m_MonsterType; }
-	const string&        getName() const throw() { return m_Name; }
-	const string&        getMonsterName() const throw() { return m_Name; }
+	MonsterType_t getMonsterType()  { return m_MonsterType; }
+	const string&        getName()  { return m_Name; }
+	const string&        getMonsterName()  { return m_Name; }
 	void                 setName(const string name) { m_Name = name; }
 
 	void                 setLevel(const int level) { m_Level = level; }
 
-	SpriteType_t  getSpriteType() const throw();
-	Level_t       getLevel() const throw();
-	uint          getBodySize() const throw();
-	Color_t       getMainColor() const throw();
-	Color_t       getSubColor() const throw();
-	MAlignment    getAlignment() const throw();
-	//AttackOrder   getAttackOrder() const throw();
+	SpriteType_t  getSpriteType() ;
+	Level_t       getLevel() ;
+	uint          getBodySize() ;
+	Color_t       getMainColor() ;
+	Color_t       getSubColor() ;
+	MAlignment    getAlignment() ;
+	//AttackOrder   getAttackOrder() ;
 
 
 // get/set instance-level attributes
 public:
-	Attr_t getSTR() const throw() { return m_STR; }
+	Attr_t getSTR()  { return m_STR; }
 	void setSTR(Attr_t str) throw() { m_STR = str; }
 	
-	Attr_t getDEX() const throw() { return m_DEX; }
+	Attr_t getDEX()  { return m_DEX; }
 	void setDEX(Attr_t dex) throw() { m_DEX = dex; }
 
-	Attr_t getINT() const throw() { return m_INT; }
+	Attr_t getINT()  { return m_INT; }
 	void setINT(Attr_t inte) throw() { m_INT = inte; }
 
-	Exp_t getExp() const throw() { return m_Exp; }
+	Exp_t getExp()  { return m_Exp; }
 	void setExp(Exp_t str) throw() { m_Exp = str; }
 	
-	HP_t getHP(AttrType attrType = ATTR_CURRENT) const throw() { return m_HP[attrType]; }
+	HP_t getHP(AttrType attrType = ATTR_CURRENT)  { return m_HP[attrType]; }
 	void setHP(HP_t hp, AttrType attrType = ATTR_CURRENT) throw() { m_HP[attrType] = hp; }
 	void setHP(HP_t current, HP_t max) throw() { m_HP[ATTR_CURRENT] = current; m_HP[ATTR_MAX] = max; }
 
-	Defense_t getDefense() const throw() { return m_Defense; }
+	Defense_t getDefense()  { return m_Defense; }
 	void setDefense(Defense_t ac) throw() { m_Defense = ac; }
 
-	Protection_t getProtection() const throw() { return m_Protection; }
+	Protection_t getProtection()  { return m_Protection; }
 	void setProtection(Protection_t ac) throw() { m_Protection = ac; }
 
-	ToHit_t getToHit() const throw() { return m_ToHit; }
+	ToHit_t getToHit()  { return m_ToHit; }
 	void setToHit(ToHit_t tohit) throw() { m_ToHit = tohit; }
 
-	Damage_t getDamage(AttrType attrType = ATTR_CURRENT) const throw() { return m_Damage[attrType]; }
+	Damage_t getDamage(AttrType attrType = ATTR_CURRENT)  { return m_Damage[attrType]; }
 	void setDamage(Damage_t damage, AttrType attrType = ATTR_CURRENT) throw() { m_Damage[attrType] = damage; }
 	void setDamage(Damage_t current, Damage_t max) throw() { m_Damage[ATTR_CURRENT] = current; m_Damage[ATTR_MAX] = max; }
 
@@ -131,33 +131,33 @@ public:
 	int getMissileRange(void) const { return m_MissileRange; }
 	void setMissileRange(int range) { m_MissileRange = range; }
 
-	Moral_t getMoral(void) const throw() { return m_Moral;}
+	Moral_t getMoral(void)  { return m_Moral;}
 	void setMoral(Moral_t moral) throw() { m_Moral = moral;}
 				
-	Turn_t getDelay() const throw() { return m_Delay; }
+	Turn_t getDelay()  { return m_Delay; }
 	void setDelay(Turn_t delay) throw() { m_Delay = delay; }
 
-	Turn_t getAttackDelay() const throw() { return m_AttackDelay; }
+	Turn_t getAttackDelay()  { return m_AttackDelay; }
 	void setAttackDelay(Turn_t delay) throw() { m_AttackDelay = delay; }
 
-	Timeval getAccuDelay() const throw() { return m_AccuDelay; }
+	Timeval getAccuDelay()  { return m_AccuDelay; }
 	void setAccuDelay(Timeval delay) throw() { m_AccuDelay = delay; }
 	void addAccuDelay(Timeval delay) throw() { m_AccuDelay = m_AccuDelay + delay; }
 	void clearAccuDelay() throw() { m_AccuDelay.tv_sec = 0; m_AccuDelay.tv_usec = 0; }
 
 	void clearEnemyLimitTime() throw();
 
-	Timeval getNextTurn() const throw() { return m_NextTurn; }
+	Timeval getNextTurn()  { return m_NextTurn; }
 	void setNextTurn(Timeval NextTurn) throw() { m_NextTurn = NextTurn; }
 
 	void setDamaged(bool value=true) throw();
 
-	int getEffectClass() const throw() { return m_EffectClass; }
+	int getEffectClass()  { return m_EffectClass; }
 	void setEffectClass(int inte) throw() { m_EffectClass = inte; }
 
 	void initAllStat(void) throw();
 
-	Silver_t getSilverDamage(void) const throw() { return m_SilverDamage; }
+	Silver_t getSilverDamage(void)  { return m_SilverDamage; }
 	void setSilverDamage(Silver_t damage) throw() { m_SilverDamage = damage; }
 
 	MonsterAI* getBrain(void) const { return m_pBrain; }
@@ -191,11 +191,11 @@ public:
 
 // ..
 public:
-	bool isAlive() const throw() { return m_HP[ATTR_CURRENT] > 0; }
-	bool isDead() const throw() { return m_HP[ATTR_CURRENT] == 0; }
+	bool isAlive()  { return m_HP[ATTR_CURRENT] > 0; }
+	bool isDead()  { return m_HP[ATTR_CURRENT] == 0; }
 
 public:
-	bool hasRelic() const throw() { return m_RelicIndex; }
+	bool hasRelic()  { return m_RelicIndex; }
 	void setRelic(int relicIndex) { m_RelicIndex = relicIndex; }
 
 public:

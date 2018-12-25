@@ -26,8 +26,8 @@ public:
 public:
 	virtual void addCreature(Creature* pCreature) throw(DuplicatedException, Error);
 	virtual void deleteCreature(ObjectID_t objectID) throw();//NoSuchElementException, Error);
-	Creature* getCreature(ObjectID_t objectID) const throw();//NoSuchElementException, Error);
-	Creature* getCreature(const string& Name) const throw();//NoSuchElementException, Error);
+	Creature* getCreature(ObjectID_t objectID) ;//NoSuchElementException, Error);
+	Creature* getCreature(const string& Name) ;//NoSuchElementException, Error);
 
 	virtual void processCreatures() throw(Error);
 	virtual void killCreature(Creature* pDeadCreature) throw(Error);
@@ -36,12 +36,12 @@ public:
 	void broadcastDarkLightPacket(Packet* pPacket1, Packet* pPacket2, Creature* owner) throw(Error);
 	void broadcastLevelWarBonusPacket(Packet* pPacket, Creature* owner) throw(Error);
 
-	WORD getSize() const throw() { return m_Creatures.size(); }
+	WORD getSize()  { return m_Creatures.size(); }
 
 	hash_map< ObjectID_t, Creature* > & getCreatures() throw() { return m_Creatures; }
-	const hash_map< ObjectID_t, Creature* > & getCreatures() const throw() { return m_Creatures; }
+	const hash_map< ObjectID_t, Creature* > & getCreatures()  { return m_Creatures; }
 
-	string toString() const throw();
+	string toString() ;
 
 protected:
 	hash_map< ObjectID_t, Creature* > m_Creatures;

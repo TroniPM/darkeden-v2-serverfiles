@@ -21,7 +21,7 @@ public:
 	~EffectAftermath() throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_AFTERMATH; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_AFTERMATH; }
 
 	void affect() throw(Error) {}
 	void affect(Creature* pCreature) throw(Error);
@@ -36,7 +36,7 @@ public:
 	virtual void destroy(const string & ownerID) throw(Error);
 	virtual void save(const string & ownerID) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 };
 
 
@@ -47,8 +47,8 @@ public:
 class EffectAftermathLoader : public EffectLoader 
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_AFTERMATH; }
-	virtual string getEffectClassName() const throw() { return "EffectAftermath"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_AFTERMATH; }
+	virtual string getEffectClassName()  { return "EffectAftermath"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

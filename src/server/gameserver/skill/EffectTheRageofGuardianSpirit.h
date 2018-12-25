@@ -20,14 +20,14 @@ public:
 	EffectTheRageofGuardianSpirit(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_THE_RAGE_OF_GUARDIAN_SPIRIT; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_THE_RAGE_OF_GUARDIAN_SPIRIT; }
 
 	void affect() throw(Error){}
 
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 };
 
 #endif // __EFFECT_HANDS_OF_FIRE__

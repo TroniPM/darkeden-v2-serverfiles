@@ -22,22 +22,22 @@
 class ActionWander : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_WANDER; }
+	virtual ActionType_t getActionType()  { return ACTION_WANDER; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public :
-	ZoneCoord_t getX() const throw() { return m_X; }
+	ZoneCoord_t getX()  { return m_X; }
 	void setX(ZoneCoord_t x) throw() { m_X = x; }
 
-	ZoneCoord_t getY() const throw() { return m_Y; }
+	ZoneCoord_t getY()  { return m_Y; }
 	void setY(ZoneCoord_t y) throw() { m_Y = y; }
 
-	BYTE getRadius() const throw() { return m_Radius; }
+	BYTE getRadius()  { return m_Radius; }
 	void setRadius(BYTE radius) throw() { m_Radius = radius; }
 
-	BYTE getMovePercentage() const throw() { return m_MovePercentage; }
+	BYTE getMovePercentage()  { return m_MovePercentage; }
 	void setMovePercentage(BYTE movePercentage) throw() { m_MovePercentage = movePercentage; }
 
 private :
@@ -56,9 +56,9 @@ private :
 class ActionWanderFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_WANDER; }
-	virtual string getActionName() const throw() { return "Wander"; }
-	virtual Action* createAction() const throw() { return new ActionWander(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_WANDER; }
+	virtual string getActionName()  { return "Wander"; }
+	virtual Action* createAction()  { return new ActionWander(); }
 
 };
 

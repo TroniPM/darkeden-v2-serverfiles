@@ -18,11 +18,11 @@
 class ConditionExistReinforce : public Condition 
 {
 public:
-	virtual ConditionType_t getConditionType() const throw() { return CONDITION_EXIST_REINFORCE; }
-	virtual bool isPassive() const throw() { return true; }
-	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) const throw();
+	virtual ConditionType_t getConditionType()  { return CONDITION_EXIST_REINFORCE; }
+	virtual bool isPassive()  { return true; }
+	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) ;
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 
@@ -37,9 +37,9 @@ private:
 class ConditionExistReinforceFactory : public ConditionFactory 
 {
 public:
-    virtual ConditionType_t getConditionType() const throw() { return Condition::CONDITION_EXIST_REINFORCE; }
-    virtual Condition* createCondition() const throw() { return new ConditionExistReinforce(); }
-    virtual string getConditionName() const throw() { return "ExistReinforce"; }
+    virtual ConditionType_t getConditionType()  { return Condition::CONDITION_EXIST_REINFORCE; }
+    virtual Condition* createCondition()  { return new ConditionExistReinforce(); }
+    virtual string getConditionName()  { return "ExistReinforce"; }
 };
 
 #endif

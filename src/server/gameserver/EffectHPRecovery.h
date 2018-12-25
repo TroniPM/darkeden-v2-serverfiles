@@ -21,10 +21,10 @@ public:
 	virtual ~EffectHPRecovery() throw(Error);
 	
 public:
-	virtual EffectClass getEffectClass() const throw() { return EFFECT_CLASS_HP_RECOVERY; }
+	virtual EffectClass getEffectClass()  { return EFFECT_CLASS_HP_RECOVERY; }
 
 	// OBJECT_PRIORITY_NONE 라는 뜻은, 타일에 들어가서는 안된다는 뜻이다.
-	virtual ObjectPriority getObjectPriority() const throw() { return OBJECT_PRIORITY_NONE; }
+	virtual ObjectPriority getObjectPriority()  { return OBJECT_PRIORITY_NONE; }
 
 	virtual void affect() throw(Error);
 	virtual void affect(Creature* pCreature) throw(Error);
@@ -39,17 +39,17 @@ public:
 	void save(const string & ownerID) throw(Error) {}
 	void destroy(const string & ownerID) throw(Error) {}
 	
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 	void setDelay(Turn_t delay) throw() { m_Delay = delay; }
-	Turn_t getDelay() const throw() { return m_Delay; }
+	Turn_t getDelay()  { return m_Delay; }
 
 	void setHPQuantity(HP_t Quantity) throw() { m_HPQuantity = Quantity; }
-	HP_t getHPQuantity() const throw() { return m_HPQuantity; }
+	HP_t getHPQuantity()  { return m_HPQuantity; }
 
 	void setPeriod(Turn_t Period) throw() { m_Period = Period; }
-	Turn_t getPeriod() const throw() { return m_Period; }
+	Turn_t getPeriod()  { return m_Period; }
 
 private:
 	Turn_t m_Delay;      // 몇 초마다 TICK이 발동 되는가.

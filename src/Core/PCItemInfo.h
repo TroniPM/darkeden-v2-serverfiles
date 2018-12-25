@@ -31,22 +31,22 @@ public:
 	void read (SocketInputStream & iStream) throw (ProtocolException, Error);
 	void write (SocketOutputStream & oStream) const throw (ProtocolException, Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 
 	void setItemClass (BYTE IClass) throw() { m_IClass = IClass; }
-	BYTE getItemClass () const throw() { return m_IClass; }
+	BYTE getItemClass ()  { return m_IClass; }
 
 	void setItemType (ItemType_t ItemType) throw() { m_ItemType = ItemType; }
-	ItemType_t getItemType() const throw() { return m_ItemType; }
+	ItemType_t getItemType()  { return m_ItemType; }
 
 	void addOptionType(OptionType_t OptionType) throw() { m_OptionType.push_back( OptionType ); }
 	void setOptionType(const list<OptionType_t>& OptionType) throw() { m_OptionType = OptionType; }
-	int getOptionTypeSize() const throw() { return m_OptionType.size(); }
-	const list<OptionType_t>& getOptionType() const throw() { return m_OptionType; }
+	int getOptionTypeSize()  { return m_OptionType.size(); }
+	const list<OptionType_t>& getOptionType()  { return m_OptionType; }
 	OptionType_t popOptionType() throw() 
 	{ 
 		if (m_OptionType.empty()) return 0;
@@ -57,8 +57,8 @@ public:
 
 	void addOptionType2(OptionType_t OptionType) throw() { m_OptionType2.push_back( OptionType ); }
 	void setOptionType2(const list<OptionType_t>& OptionType) throw() { m_OptionType2 = OptionType; }
-	int getOptionTypeSize2() const throw() { return m_OptionType2.size(); }
-	const list<OptionType_t>& getOptionType2() const throw() { return m_OptionType2; }
+	int getOptionTypeSize2()  { return m_OptionType2.size(); }
+	const list<OptionType_t>& getOptionType2()  { return m_OptionType2; }
 	OptionType_t popOptionType2() throw() 
 	{ 
 		if (m_OptionType2.empty()) return 0;
@@ -68,13 +68,13 @@ public:
 	}
 
 	void setSilver(Silver_t amount) throw() { m_Silver = amount; }
-	Silver_t getSilver() const throw() { return m_Silver; }
+	Silver_t getSilver()  { return m_Silver; }
 
 	void setGrade(Grade_t grade) throw() { m_Grade = grade; }
-	Grade_t getGrade() const throw() { return m_Grade; }
+	Grade_t getGrade()  { return m_Grade; }
 
 	void setDurability(Durability_t Durability) throw() { m_Durability = Durability; }
-	Durability_t getDurability() const throw() { return m_Durability; }
+	Durability_t getDurability()  { return m_Durability; }
 
 	void setEnchantLevel(EnchantLevel_t level) throw() { m_EnchantLevel = level; }
 	EnchantLevel_t getEnchantLevel() throw() { return m_EnchantLevel; }
@@ -86,12 +86,12 @@ public:
 	EnchantLevel_t getHeroOptionAttr() throw() { return m_HeroOptionAttr; }
 
 	void setItemNum(ItemNum_t ItemNum) throw() { m_ItemNum = ItemNum; }
-	ItemNum_t getItemNum() const throw() { return m_ItemNum; }
+	ItemNum_t getItemNum()  { return m_ItemNum; }
 
 	void setMainColor(WORD MainColor) throw() { m_MainColor = MainColor; }
-	WORD getMainColor() const throw() { return m_MainColor; }
+	WORD getMainColor()  { return m_MainColor; }
 
-	BYTE getListNum() const throw() { return m_ListNum; }
+	BYTE getListNum()  { return m_ListNum; }
 	void setListNum(BYTE ListNum) throw() { m_ListNum = ListNum; }
 
 	void addListElement(SubItemInfo* pSubItemInfo) throw() 
@@ -110,7 +110,7 @@ public:
 	}
 
 public:
-	uint getSize() const throw()
+	uint getSize() 
 	{
 		return szObjectID +
 			szBYTE +

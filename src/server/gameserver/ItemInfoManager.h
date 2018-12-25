@@ -40,7 +40,7 @@ public:
 	uint getItemIDBase(void) const { return m_ItemIDBase; }
 	void setItemIDBase(uint base) { m_ItemIDBase = base; }
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	InfoClassManager* m_InfoClassManagers[Item::ITEM_CLASS_MAX];

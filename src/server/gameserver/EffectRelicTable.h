@@ -24,7 +24,7 @@ public:
 	void unaffect(Item* pItem) throw(Error);
 	void unaffect() throw(Error); 
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void   setSafeTime(const Timeval& tv)  { m_SafeTime = tv; }
@@ -43,7 +43,7 @@ class EffectSlayerRelicTable : public EffectRelicTable
 public:
 	EffectSlayerRelicTable(Item* pItem) throw(Error) : EffectRelicTable(pItem) {}
 
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_SLAYER_RELIC_TABLE; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_SLAYER_RELIC_TABLE; }
 };
 
 class EffectVampireRelicTable : public EffectRelicTable
@@ -51,7 +51,7 @@ class EffectVampireRelicTable : public EffectRelicTable
 public:
 	EffectVampireRelicTable(Item* pItem) throw(Error) : EffectRelicTable(pItem) {}
 
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_VAMPIRE_RELIC_TABLE; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_VAMPIRE_RELIC_TABLE; }
 };
 
 

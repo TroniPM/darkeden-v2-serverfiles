@@ -29,8 +29,8 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_CG_CRASH_REPORT; }
-	PacketSize_t getPacketSize() const throw() {
+	PacketID_t getPacketID()  { return PACKET_CG_CRASH_REPORT; }
+	PacketSize_t getPacketSize()  {
 		return
 			m_ExecutableTime.size()
 			+ szWORD
@@ -39,8 +39,8 @@ public:
 			+ szWORD + m_CallStack.size()
 			+ szWORD + m_Message.size();
 	}
-	string getPacketName() const throw() { return "CGCrashReport"; }
-	string toString() const throw();
+	string getPacketName()  { return "CGCrashReport"; }
+	string toString() ;
 	
 public:
 	const string&	getExecutableTime() const { return m_ExecutableTime; }
@@ -87,15 +87,15 @@ public:
 	Packet* createPacket() throw() { return new CGCrashReport(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGCrashReport"; }
+	string getPacketName()  { return "CGCrashReport"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_CRASH_REPORT; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_CRASH_REPORT; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static CGCrashReportPacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() {
+	PacketSize_t getPacketMaxSize()  {
 		return
 			19 + szWORD + 10 + szWORD + 100 + szWORD + 1024 + szWORD + 1024;
 	}

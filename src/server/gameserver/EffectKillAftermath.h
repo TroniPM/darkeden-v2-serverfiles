@@ -21,7 +21,7 @@ public:
 	~EffectKillAftermath() throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_KILL_AFTERMATH; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_KILL_AFTERMATH; }
 
 	void affect() throw(Error) {}
 	void affect(Creature* pCreature) throw(Error);
@@ -36,7 +36,7 @@ public:
 	virtual void destroy(const string & ownerID) throw(Error);
 	virtual void save(const string & ownerID) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 };
 
 
@@ -47,8 +47,8 @@ public:
 class EffectKillAftermathLoader : public EffectLoader 
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_KILL_AFTERMATH; }
-	virtual string getEffectClassName() const throw() { return "EffectKillAftermath"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_KILL_AFTERMATH; }
+	virtual string getEffectClassName()  { return "EffectKillAftermath"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

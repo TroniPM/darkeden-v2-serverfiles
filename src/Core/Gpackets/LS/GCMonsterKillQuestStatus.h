@@ -28,19 +28,19 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_MONSTER_KILL_QUEST_STATUS; }
-	PacketSize_t getPacketSize() const throw() { return szWORD + szWORD + szDWORD; }
-	string getPacketName() const throw() { return "GCMonsterKillQuestStatus"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_MONSTER_KILL_QUEST_STATUS; }
+	PacketSize_t getPacketSize()  { return szWORD + szWORD + szDWORD; }
+	string getPacketName()  { return "GCMonsterKillQuestStatus"; }
+	string toString() ;
 
 public:
-	WORD getQuestID() const throw() { return m_QuestID; }
+	WORD getQuestID()  { return m_QuestID; }
 	void setQuestID(WORD e) throw() { m_QuestID = e; }
 	
-	WORD getCurrentNum() const throw() { return m_CurrentNum; }
+	WORD getCurrentNum()  { return m_CurrentNum; }
 	void setCurrentNum(WORD n) throw() { m_CurrentNum = n; }
 
-	DWORD getRemainTime() const throw() { return m_Time; }
+	DWORD getRemainTime()  { return m_Time; }
 	void setRemainTime(DWORD d) throw() { m_Time = d; }
 	
 private :
@@ -62,9 +62,9 @@ public :
 	
 public:
 	Packet* createPacket() throw() { return new GCMonsterKillQuestStatus(); }
-	string getPacketName() const throw() { return "GCMonsterKillQuestStatus"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_MONSTER_KILL_QUEST_STATUS; }
-	PacketSize_t getPacketMaxSize() const throw() { return szWORD + szWORD + szDWORD; }
+	string getPacketName()  { return "GCMonsterKillQuestStatus"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_MONSTER_KILL_QUEST_STATUS; }
+	PacketSize_t getPacketMaxSize()  { return szWORD + szWORD + szDWORD; }
 };
 
 //////////////////////////////////////////////////////////////////////////////

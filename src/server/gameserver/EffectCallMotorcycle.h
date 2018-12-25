@@ -23,10 +23,10 @@ public:
 	virtual ~EffectCallMotorcycle() throw(Error);
 
 public:
-	virtual EffectClass getEffectClass() const throw() { return EFFECT_CLASS_DECAY_ITEM; }
+	virtual EffectClass getEffectClass()  { return EFFECT_CLASS_DECAY_ITEM; }
 
 	// OBJECT_PRIORITY_NONE 라는 뜻은, 타일에 들어가서는 안된다는 뜻이다.
-	virtual ObjectPriority getObjectPriority() const throw() { return OBJECT_PRIORITY_NONE; }
+	virtual ObjectPriority getObjectPriority()  { return OBJECT_PRIORITY_NONE; }
 
 	virtual void affect() throw(Error) { throw UnsupportedError(__PRETTY_FUNCTION__); }
 	virtual void affect(Creature* pCreature) throw(Error) { throw UnsupportedError(__PRETTY_FUNCTION__); }
@@ -43,7 +43,7 @@ public:
 	virtual void destroy(const string & ownerID) throw(Error) {}
 	
 	// get debug string
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 private:
 	ObjectID_t m_ObjectID;

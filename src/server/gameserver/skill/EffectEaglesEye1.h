@@ -20,14 +20,14 @@ public:
 	EffectEaglesEye1(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_EAGLES_EYE1; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_EAGLES_EYE1; }
 
 	void affect() throw(Error){}
 
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void setLevel( SkillLevel_t level ) { m_SkillLevel = level; }
@@ -44,8 +44,8 @@ private:
 class EffectEaglesEye1Loader : public EffectLoader 
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_EAGLES_EYE1; }
-	virtual string getEffectClassName() const throw() { return "EffectEaglesEye1"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_EAGLES_EYE1; }
+	virtual string getEffectClassName()  { return "EffectEaglesEye1"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error) {}

@@ -20,13 +20,13 @@
 class ActionMiniGame : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_MINI_GAME; }
+	virtual ActionType_t getActionType()  { return ACTION_MINI_GAME; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
-	int  getGameType() const throw() { return m_GameType; }
+	int  getGameType()  { return m_GameType; }
 	void setGameType(int gameType) throw() { m_GameType = gameType; }
 
 private:
@@ -41,8 +41,8 @@ private:
 class ActionMiniGameFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_MINI_GAME; }
-	virtual string getActionName() const throw() { return "MiniGame"; }
-	virtual Action* createAction() const throw() { return new ActionMiniGame(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_MINI_GAME; }
+	virtual string getActionName()  { return "MiniGame"; }
+	virtual Action* createAction()  { return new ActionMiniGame(); }
 };
 #endif

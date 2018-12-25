@@ -20,7 +20,7 @@ public:
     EffectSleep(Creature* pCreature) throw(Error);
 
 public:
-	EffectClass getEffectClass() const throw() { return EFFECT_CLASS_SLEEP; }
+	EffectClass getEffectClass()  { return EFFECT_CLASS_SLEEP; }
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
@@ -28,7 +28,7 @@ public:
 	void unaffect() throw(Error);
 	void unaffect(Creature* pCreature) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 };
 

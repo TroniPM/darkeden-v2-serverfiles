@@ -157,8 +157,8 @@ public:
 // 하위 클래스 상속 함수
 //////////////////////////////////////////////////////////////
 public:
-	virtual CreatureClass getCreatureClass() const throw() { return CREATURE_CLASS_SLAYER; }
-	virtual string getCreatureClassString() const throw() { return "CREATURE_CLASS_SLAYER"; }
+	virtual CreatureClass getCreatureClass()  { return CREATURE_CLASS_SLAYER; }
+	virtual string getCreatureClassString()  { return "CREATURE_CLASS_SLAYER"; }
 
 	virtual void registerObject() throw(Error);
 	virtual void registerInitObject() throw(Error);
@@ -175,7 +175,7 @@ public:
 
 	virtual void act(const Timeval& currentTime) throw(Error) {}
 
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	virtual Race_t getRace() const { return RACE_SLAYER; }
 	virtual GuildID_t getCommonGuildID() const { return SlayerCommon; }
@@ -191,23 +191,23 @@ public:
 // 상태 관련 함수(dead or alive)
 //////////////////////////////////////////////////////////////
 public:
-	virtual bool isDead() const throw() { return m_HP[ATTR_CURRENT] == 0; }
-	virtual bool isAlive() const throw() { return m_HP[ATTR_CURRENT] != 0; }
+	virtual bool isDead()  { return m_HP[ATTR_CURRENT] == 0; }
+	virtual bool isAlive()  { return m_HP[ATTR_CURRENT] != 0; }
 
 //////////////////////////////////////////////////////////////
 // 겉모습 관련 함수(이름, 권한, 성별, 머리, 피부, 전화번호)
 //////////////////////////////////////////////////////////////
 public:
-	const string& getName() const throw() { return m_Name; }
+	const string& getName()  { return m_Name; }
 	void setName(const string & name) throw() { m_Name = name; m_Owner = name; }
 
-	BYTE getCompetence() const throw() { return m_Competence; }
+	BYTE getCompetence()  { return m_Competence; }
 	void setCompetence(BYTE Competence) { m_Competence = Competence; }
 
-	BYTE getCompetenceShape() const throw() { return m_CompetenceShape; }
+	BYTE getCompetenceShape()  { return m_CompetenceShape; }
 	void setCompetenceShape(BYTE CompetenceShape) { m_CompetenceShape = CompetenceShape; }
 
-	Sex getSex() const throw() { return m_Sex; }
+	Sex getSex()  { return m_Sex; }
 	void setSex(Sex sex) throw() { m_Sex = sex; m_SlayerInfo.setSex(sex); }
 	void setSex(const string & sex) throw(InvalidProtocolException)
 	{
@@ -216,7 +216,7 @@ public:
 		else throw InvalidProtocolException("invalid sex value");
 	}
 
-	HairStyle getHairStyle() const throw() { return m_HairStyle; }
+	HairStyle getHairStyle()  { return m_HairStyle; }
 	void setHairStyle(HairStyle hairStyle) throw() { m_HairStyle = hairStyle; }
 	void setHairStyle(const string& hairStyle) throw(InvalidProtocolException)
 	{
@@ -226,23 +226,23 @@ public:
 		else throw InvalidProtocolException("invalid hairstyle value");
 	}
 
-	Color_t getHairColor() const throw() { return m_HairColor; }
+	Color_t getHairColor()  { return m_HairColor; }
 	void setHairColor(Color_t hairColor) throw() { m_HairColor = hairColor; }
 
-	Color_t getSkinColor() const throw() { return m_SkinColor; }
+	Color_t getSkinColor()  { return m_SkinColor; }
 	void setSkinColor(Color_t skinColor) throw() { m_SkinColor = skinColor; }
 
-	virtual Color_t getShopColor() const throw() { return m_ShopColor; }
+	virtual Color_t getShopColor()  { return m_ShopColor; }
 	virtual void setShopColor(Color_t ShopColor) throw() { m_ShopColor = ShopColor; }
 
-	virtual ItemType_t getJacketItemType() const throw() { return m_JacketItemType; }
+	virtual ItemType_t getJacketItemType()  { return m_JacketItemType; }
 	virtual void setJacketItemType(ItemType_t ItemType)  throw() { m_JacketItemType = ItemType; }
 
 //////////////////////////////////////////////////////////////
 // 전화 관련 함수
 //////////////////////////////////////////////////////////////
 public:
-	PhoneNumber_t getPhoneNumber() const throw() { return m_PhoneNumber; }
+	PhoneNumber_t getPhoneNumber()  { return m_PhoneNumber; }
 	void setPhoneNumber(PhoneNumber_t PhoneNumber) throw() { m_PhoneNumber = PhoneNumber; }
 	
 	PhoneNumber_t getPhoneSlotNumber(SlotID_t SlotID) throw();
@@ -257,28 +257,28 @@ public:
 //////////////////////////////////////////////////////////////
 public:
 
-	Bonus_t getBonus() const throw() { return m_AdvancedAttrBonus; }
+	Bonus_t getBonus()  { return m_AdvancedAttrBonus; }
 	void    setBonus(Bonus_t bonus) throw() { m_AdvancedAttrBonus = bonus; }
 
 	// 성향
-	Alignment_t getAlignment() const throw() { return m_Alignment; }
+	Alignment_t getAlignment()  { return m_Alignment; }
 	void setAlignment(Alignment_t Alignment) throw() { m_Alignment = Alignment; }
 	void saveAlignment(Alignment_t alignment) throw();
 
-	Attr_t  getSTR(AttrType attrType = ATTR_CURRENT) const throw() { return m_STR[attrType]; }
+	Attr_t  getSTR(AttrType attrType = ATTR_CURRENT)  { return m_STR[attrType]; }
 	void    setSTR(Attr_t attr, AttrType attrType = ATTR_CURRENT) throw() { m_STR[attrType] = attr; }
-	Exp_t   getSTRGoalExp() const throw() { return m_pAttrs[ATTR_KIND_STR]->getGoalExp(); }
+	Exp_t   getSTRGoalExp()  { return m_pAttrs[ATTR_KIND_STR]->getGoalExp(); }
 
-	Attr_t  getDEX(AttrType attrType = ATTR_CURRENT) const throw() { return m_DEX[attrType]; }
+	Attr_t  getDEX(AttrType attrType = ATTR_CURRENT)  { return m_DEX[attrType]; }
 	void    setDEX(Attr_t attr, AttrType attrType = ATTR_CURRENT) throw() { m_DEX[attrType] = attr; }
-	Exp_t   getDEXGoalExp() const throw() { return m_pAttrs[ATTR_KIND_DEX]->getGoalExp(); }
+	Exp_t   getDEXGoalExp()  { return m_pAttrs[ATTR_KIND_DEX]->getGoalExp(); }
 
-	Attr_t  getINT(AttrType attrType = ATTR_CURRENT) const throw() { return m_INT[attrType]; }
+	Attr_t  getINT(AttrType attrType = ATTR_CURRENT)  { return m_INT[attrType]; }
 	void    setINT(Attr_t attr, AttrType attrType = ATTR_CURRENT) throw() { m_INT[attrType] = attr; }
-	Exp_t   getINTGoalExp() const throw() { return m_pAttrs[ATTR_KIND_INT]->getGoalExp(); }
+	Exp_t   getINTGoalExp()  { return m_pAttrs[ATTR_KIND_INT]->getGoalExp(); }
 
-	Attr_t	getTotalAttr( AttrType attrType = ATTR_CURRENT ) const throw() { return getSTR( attrType ) + getDEX( attrType ) + getINT( attrType ); }
-	QuestGrade_t getQuestGrade() const throw();
+	Attr_t	getTotalAttr( AttrType attrType = ATTR_CURRENT )  { return getSTR( attrType ) + getDEX( attrType ) + getINT( attrType ); }
+	QuestGrade_t getQuestGrade() ;
 
 	void divideAttrExp(AttrKind kind, Damage_t damage, ModifyInfo& ModifyInfo);
 
@@ -292,11 +292,11 @@ public:
 // 능력치 관련 함수(HP, MP)
 //////////////////////////////////////////////////////////////
 public:
-	HP_t getHP(AttrType attrType = ATTR_CURRENT) const throw() { return m_HP[attrType]; }
+	HP_t getHP(AttrType attrType = ATTR_CURRENT)  { return m_HP[attrType]; }
 	void setHP(HP_t hp, AttrType attrType = ATTR_CURRENT) throw() { m_HP[attrType] = hp; }
 	void setHP(HP_t current, HP_t max) throw() { m_HP[ATTR_CURRENT] = current; m_HP[ATTR_MAX] = max; }
 
-	MP_t getMP(AttrType attrType = ATTR_CURRENT) const throw() { return m_MP[attrType]; }
+	MP_t getMP(AttrType attrType = ATTR_CURRENT)  { return m_MP[attrType]; }
 	void setMP(MP_t hp, AttrType attrType = ATTR_CURRENT) throw() { m_MP[attrType] = hp; }
 	void setMP(MP_t current, MP_t max) throw() { m_MP[ATTR_CURRENT] = current; m_MP[ATTR_MAX] = max; }
 
@@ -305,32 +305,32 @@ public:
 // 능력치 관련 함수(Damage, CC, Defense, ToHit)
 //////////////////////////////////////////////////////////////
 public:
-	Damage_t     getDamage(AttrType attrType = ATTR_CURRENT) const throw() { return m_Damage[attrType]; }
-	Protection_t getProtection(void) const throw() { return m_Protection[ATTR_CURRENT]; }
-	Defense_t    getDefense(void) const throw() { return m_Defense[ATTR_CURRENT]; }
-	ToHit_t      getToHit(void) const throw() { return m_ToHit[ATTR_CURRENT]; }
-	Speed_t      getAttackSpeed(void) const throw() { return m_AttackSpeed[ATTR_CURRENT]; }
+	Damage_t     getDamage(AttrType attrType = ATTR_CURRENT)  { return m_Damage[attrType]; }
+	Protection_t getProtection(void)  { return m_Protection[ATTR_CURRENT]; }
+	Defense_t    getDefense(void)  { return m_Defense[ATTR_CURRENT]; }
+	ToHit_t      getToHit(void)  { return m_ToHit[ATTR_CURRENT]; }
+	Speed_t      getAttackSpeed(void)  { return m_AttackSpeed[ATTR_CURRENT]; }
 
 	
 //////////////////////////////////////////////////////////////
 // 스킬 관련 함수
 //////////////////////////////////////////////////////////////
 public:
-	Exp_t getGoalExp(SkillDomainType_t Domain) const throw() { return m_GoalExp[Domain]; }
+	Exp_t getGoalExp(SkillDomainType_t Domain)  { return m_GoalExp[Domain]; }
 	void  setGoalExp(SkillDomainType_t Domain, Exp_t GoalExp) throw() { m_GoalExp[Domain] = GoalExp; }
 
-	SkillLevel_t getSkillDomainLevel(SkillDomainType_t skillDomain) const throw() { return m_SkillDomainLevels[skillDomain]; }
+	SkillLevel_t getSkillDomainLevel(SkillDomainType_t skillDomain)  { return m_SkillDomainLevels[skillDomain]; }
 	void         setSkillDomainLevel(SkillDomainType_t skillDomain, SkillLevel_t skillLevel) throw() { m_SkillDomainLevels[skillDomain] = skillLevel; }
-	SkillLevel_t getHighestSkillDomainLevel() const throw();
-	SkillDomainType_t getHighestSkillDomain() const throw();
+	SkillLevel_t getHighestSkillDomainLevel() ;
+	SkillDomainType_t getHighestSkillDomain() ;
 
-//	SkillExp_t getSkillDomainExp(SkillDomainType_t skillDomain) const throw() { return m_SkillDomainExps[skillDomain]; }
+//	SkillExp_t getSkillDomainExp(SkillDomainType_t skillDomain)  { return m_SkillDomainExps[skillDomain]; }
 //	void       setSkillDomainExp(SkillDomainType_t skillDomain, SkillExp_t skillExp) throw() { m_SkillDomainExps[skillDomain] = skillExp; }
 
 //	void setSkillDomain(SkillDomainType_t skillDomain, SkillLevel_t skillLevel, SkillExp_t skillExp) throw() { m_SkillDomainLevels[skillDomain] = skillLevel; m_SkillDomainExps[skillDomain] = skillExp; }
 
-	SkillLevel_t getSkillDomainLevelSum() const throw();
-	Level_t getLevel() const throw() { return (Level_t)getHighestSkillDomainLevel(); }
+	SkillLevel_t getSkillDomainLevelSum() ;
+	Level_t getLevel()  { return (Level_t)getHighestSkillDomainLevel(); }
 
 	int getQuestLevel() const { return getHighestSkillDomainLevel(); }
 
@@ -338,19 +338,19 @@ public:
 	void addSkill(SkillType_t SkillType) throw();
 	void removeCastleSkill(SkillType_t SkillType) throw();
 	void removeAllCastleSkill() throw();
-	SkillSlot* hasSkill(SkillType_t SkillType) const throw() { return getSkill(SkillType); }
-	SkillSlot* getSkill(SkillType_t SkillType) const throw();
+	SkillSlot* hasSkill(SkillType_t SkillType)  { return getSkill(SkillType); }
+	SkillSlot* getSkill(SkillType_t SkillType) ;
 
-	Exp_t getGunBonusExp() const throw() { return m_GunBonusExp; }
+	Exp_t getGunBonusExp()  { return m_GunBonusExp; }
 	void setGunBonusExp(Exp_t GunBonusExp) throw() { m_GunBonusExp = GunBonusExp; }
 
-	Exp_t getRifleBonusExp() const throw() { return m_RifleBonusExp; }
+	Exp_t getRifleBonusExp()  { return m_RifleBonusExp; }
 	void setRifleBonusExp(Exp_t RifleBonusExp) throw() { m_RifleBonusExp = RifleBonusExp; }
 	
 	// 지정된 domain에서 가장 높은 level의 기술의 타입을 되돌린다.
 	//SkillType_t getMaxLevelSkillType(SkillDomainType_t domain) throw();
 //	void setHotKey(BYTE pos, SkillType_t SkillType) throw() { m_HotKey[pos] = SkillType; }
-//	SkillType_t getHotKey(BYTE pos) const throw() { return m_HotKey[pos]; }
+//	SkillType_t getHotKey(BYTE pos)  { return m_HotKey[pos]; }
 
 
 //////////////////////////////////////////////////////////////
@@ -373,10 +373,10 @@ public:
 
 	void  destroyGears() throw();
 
-	bool  isRealWearing(WearPart part) const throw();
-	bool  isRealWearing(Item* pItem) const throw();
+	bool  isRealWearing(WearPart part) ;
+	bool  isRealWearing(Item* pItem) ;
 	bool  isRealWearingEx(WearPart part) const;
-	DWORD sendRealWearingInfo(void) const throw();
+	DWORD sendRealWearingInfo(void) ;
 	void  getShapeInfo (DWORD& flag, Color_t color[PCSlayerInfo::SLAYER_COLOR_MAX]) const;
 
 //////////////////////////////////////////////////////////////
@@ -385,8 +385,8 @@ public:
 public:
 	void initAllStat(int numPartyMember=-1) throw();
 	void initCastleSkill() throw();
-	void addModifyInfo(const SLAYER_RECORD& previous, ModifyInfo& pkt) const throw();
-	void sendModifyInfo(const SLAYER_RECORD& previous) const throw();
+	void addModifyInfo(const SLAYER_RECORD& previous, ModifyInfo& pkt) ;
+	void sendModifyInfo(const SLAYER_RECORD& previous) ;
 	void initAllStatAndSend();
 
 private:
@@ -422,41 +422,41 @@ public:
 // 모터 사이클 관련 함수
 //////////////////////////////////////////////////////////////
 public:
-	Motorcycle* getMotorcycle() const throw() { return m_pMotorcycle; }
+	Motorcycle* getMotorcycle()  { return m_pMotorcycle; }
 	void setMotorcycle(Motorcycle* pMotorcycle) throw();
 	void getOffMotorcycle() throw(Error);
 
-	RideMotorcycleInfo* getRideMotorcycleInfo() const throw();
-	bool hasRideMotorcycle() const throw() { return((m_pMotorcycle != NULL) ? true : false);}
+	RideMotorcycleInfo* getRideMotorcycleInfo() ;
+	bool hasRideMotorcycle()  { return((m_pMotorcycle != NULL) ? true : false);}
 
 
 //////////////////////////////////////////////////////////////
 // 인포 관련 함수
 //////////////////////////////////////////////////////////////
 public:
-	PCSlayerInfo2* getSlayerInfo2() const throw();
-	PCSlayerInfo3  getSlayerInfo3() const throw();
-	GearInfo*      getGearInfo() const throw();
-	InventoryInfo* getInventoryInfo() const throw();
-	InventoryInfo* getInventoryInfo2() const throw();
-	ExtraInfo*     getExtraInfo() const throw();
+	PCSlayerInfo2* getSlayerInfo2() ;
+	PCSlayerInfo3  getSlayerInfo3() ;
+	GearInfo*      getGearInfo() ;
+	InventoryInfo* getInventoryInfo() ;
+	InventoryInfo* getInventoryInfo2() ;
+	ExtraInfo*     getExtraInfo() ;
 	void sendSlayerSkillInfo() throw();
 
 	// get/set EffectInfo
-    EffectInfo* getEffectInfo() const throw();
+    EffectInfo* getEffectInfo() ;
 
 //////////////////////////////////////////////////////////////
 // 기타 함수
 //////////////////////////////////////////////////////////////
 public:
 
-	virtual Fame_t getFame() const throw() { return m_Fame; }
+	virtual Fame_t getFame()  { return m_Fame; }
 	virtual void   setFame(Fame_t fame) throw() { m_Fame = fame; }
 
-	virtual Fame_t getKillPoint() const throw() { return m_KillPoint; }
+	virtual Fame_t getKillPoint()  { return m_KillPoint; }
 	virtual void   setKillPoint(Fame_t Kill) throw() { m_KillPoint = Kill; }
 
-	virtual Gold_t getGold() const throw() { return m_Gold; }
+	virtual Gold_t getGold()  { return m_Gold; }
 	virtual void   setGold(Gold_t gold) throw();
 	virtual void   setGoldEx(Gold_t gold) throw();
 	virtual void   increaseGoldEx(Gold_t gold) throw();
@@ -477,9 +477,9 @@ public:
 
 	void heartbeat(const Timeval& currentTime) throw();
 
-	void getSlayerRecord(SLAYER_RECORD& record) const throw();
+	void getSlayerRecord(SLAYER_RECORD& record) ;
 
-	virtual ZoneID_t getResurrectZoneID(void) const throw() { return m_ResurrectZoneID; }
+	virtual ZoneID_t getResurrectZoneID(void)  { return m_ResurrectZoneID; }
 	virtual void setResurrectZoneID(ZoneID_t id) throw() { m_ResurrectZoneID = id; }
 	virtual void setResurrectZoneIDEx(ZoneID_t id) throw();
 
@@ -507,7 +507,7 @@ public:
 	virtual int getCriticalRatio(void) const { return m_CriticalRatio[ATTR_CURRENT]; }
 	virtual void setCriticalRatio(int ratio) { m_CriticalRatio[ATTR_CURRENT] = ratio; }
 
-	uint getSlayerLevel(void) const throw();
+	uint getSlayerLevel(void) ;
 	void saveInitialRank(void) throw();
 
 	virtual IP_t getIP(void) const;

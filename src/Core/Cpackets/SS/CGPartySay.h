@@ -45,16 +45,16 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_PARTY_SAY; }
+	PacketID_t getPacketID()  { return PACKET_CG_PARTY_SAY; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szDWORD + szBYTE + m_Message.size(); }
+	PacketSize_t getPacketSize()  { return szDWORD + szBYTE + m_Message.size(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGPartySay"; }
+	string getPacketName()  { return "CGPartySay"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void	setColor( DWORD color ) { m_Color = color; }
@@ -95,13 +95,13 @@ public:
 	Packet* createPacket() throw() { return new CGPartySay(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGPartySay"; }
+	string getPacketName()  { return "CGPartySay"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_PARTY_SAY; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_PARTY_SAY; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szDWORD + szBYTE + 128; }
+	PacketSize_t getPacketMaxSize()  { return szDWORD + szBYTE + 128; }
 
 };
 

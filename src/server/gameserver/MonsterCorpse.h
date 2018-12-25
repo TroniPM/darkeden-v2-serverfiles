@@ -33,30 +33,30 @@ public:
 	void tinysave(const string & field) const throw (Error) { tinysave(field.c_str()); }
     void tinysave(const char* field) const throw (Error) {}
 
-	virtual ItemClass getItemClass() const throw() { return ITEM_CLASS_CORPSE; }
+	virtual ItemClass getItemClass()  { return ITEM_CLASS_CORPSE; }
 
-	virtual ItemType_t getItemType() const throw() { return MONSTER_CORPSE; }
+	virtual ItemType_t getItemType()  { return MONSTER_CORPSE; }
 	virtual void setItemType(ItemType_t monsterType) throw() { throw UnsupportedError(__PRETTY_FUNCTION__); }
 
 	bool isNextTreasureHead() { return (!m_Treasures.empty() && m_Treasures.front()->getItemClass() == ITEM_CLASS_SKULL); }
 
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 // own methods
 public:
-	MonsterType_t getMonsterType() const throw() { return m_MonsterType; }
+	MonsterType_t getMonsterType()  { return m_MonsterType; }
 	void setMonsterType(MonsterType_t monsterType) throw() { m_MonsterType = monsterType; }
 
-	string getName() const throw() { return m_Name; }
+	string getName()  { return m_Name; }
 	void setName(string name) throw() { m_Name = name; }
 
-	string getMonsterName() const throw() { return m_Name; }
+	string getMonsterName()  { return m_Name; }
 	void setMonsterName(string name) throw() { m_Name = name; }
 
-	Dir_t getDir() const throw() { return m_Dir; }
+	Dir_t getDir()  { return m_Dir; }
 	void setDir(Dir_t dir) throw() { m_Dir = dir; }
 
-	bool gethasHead() const throw() { return m_bhasHead; }
+	bool gethasHead()  { return m_bhasHead; }
 	void addHead() throw() { m_bhasHead = true; }
 	void removeHead() throw() { m_bhasHead = false; }
 

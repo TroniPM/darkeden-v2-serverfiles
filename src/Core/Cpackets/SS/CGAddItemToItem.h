@@ -21,19 +21,19 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_CG_ADD_ITEM_TO_ITEM; }
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szCoordInven + szCoordInven; }
-	string getPacketName() const throw() { return "CGAddItemToItem"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_CG_ADD_ITEM_TO_ITEM; }
+	PacketSize_t getPacketSize()  { return szObjectID + szCoordInven + szCoordInven; }
+	string getPacketName()  { return "CGAddItemToItem"; }
+	string toString() ;
 
 public:
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
 
-	CoordInven_t getX() const throw() { return m_X; }
+	CoordInven_t getX()  { return m_X; }
 	void setX(Coord_t X) throw() { m_X = X; }
 
-	CoordInven_t getY() const throw() { return m_Y; }
+	CoordInven_t getY()  { return m_Y; }
 	void setY(Coord_t Y) throw() { m_Y = Y; }
 
 private :
@@ -50,9 +50,9 @@ class CGAddItemToItemFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new CGAddItemToItem(); }
-	string getPacketName() const throw() { return "CGAddItemToItem"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_ADD_ITEM_TO_ITEM; }
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szCoordInven + szCoordInven; }
+	string getPacketName()  { return "CGAddItemToItem"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_ADD_ITEM_TO_ITEM; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szCoordInven + szCoordInven; }
 };
 
 //////////////////////////////////////////////////////////////////////////////

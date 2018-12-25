@@ -18,11 +18,11 @@
 class ConditionCanEnterBeginnerZone : public Condition 
 {
 public:
-	virtual ConditionType_t getConditionType() const throw() { return CONDITION_CAN_ENTER_BEGINNER_ZONE; }
-	virtual bool isPassive() const throw() { return true; }
-	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) const throw();
+	virtual ConditionType_t getConditionType()  { return CONDITION_CAN_ENTER_BEGINNER_ZONE; }
+	virtual bool isPassive()  { return true; }
+	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) ;
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 
@@ -35,9 +35,9 @@ public:
 class ConditionCanEnterBeginnerZoneFactory : public ConditionFactory 
 {
 public:
-    virtual ConditionType_t getConditionType() const throw() { return Condition::CONDITION_CAN_ENTER_BEGINNER_ZONE; }
-    virtual Condition* createCondition() const throw() { return new ConditionCanEnterBeginnerZone(); }
-    virtual string getConditionName() const throw() { return "CanEnterBeginnerZone"; }
+    virtual ConditionType_t getConditionType()  { return Condition::CONDITION_CAN_ENTER_BEGINNER_ZONE; }
+    virtual Condition* createCondition()  { return new ConditionCanEnterBeginnerZone(); }
+    virtual string getConditionName()  { return "CanEnterBeginnerZone"; }
 };
 
 #endif

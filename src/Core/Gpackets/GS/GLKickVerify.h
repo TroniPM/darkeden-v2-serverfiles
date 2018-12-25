@@ -37,31 +37,31 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GL_KICK_VERIFY; }
+	PacketID_t getPacketID()  { return PACKET_GL_KICK_VERIFY; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		return szBYTE + szBYTE + m_PCName.size() + szuint;
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "GLKickVerify"; }
+	string getPacketName()  { return "GLKickVerify"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public :
 
 	// get/set playerID
-	bool isKicked() const throw() { return m_bKicked; }
+	bool isKicked()  { return m_bKicked; }
 	void setKicked(bool bKicked=true) throw() { m_bKicked = bKicked; }
 
   	// get/set pcName
-    string getPCName() const throw() { return m_PCName; }
+    string getPCName()  { return m_PCName; }
     void setPCName(const string& pcName) throw() { m_PCName = pcName; }
 
-    uint getID() const throw() { return m_ID; }
+    uint getID()  { return m_ID; }
     void setID(uint id) throw() { m_ID = id; }
 
 	
@@ -92,15 +92,15 @@ public :
 	Packet* createPacket() throw() { return new GLKickVerify(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GLKickVerify"; }
+	string getPacketName()  { return "GLKickVerify"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GL_KICK_VERIFY; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GL_KICK_VERIFY; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GLKickVerifyPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		return szBYTE + szBYTE + 20 + szuint;
 	}

@@ -41,7 +41,7 @@ public:
 
 	// 2x2 아이템의 갯수를 세팅해 준다.
 	void set2x2(int n) throw();
-	int  get2x2() const throw() { return m_Num2x2; }
+	int  get2x2()  { return m_Num2x2; }
 
 protected:
 	// 아이템을 맵에 넣기 위해 키를 구한다.

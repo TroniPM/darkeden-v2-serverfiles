@@ -20,8 +20,8 @@ public:
 	~Howl() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Howl"; }
-	SkillType_t getSkillType() const throw() { return SKILL_HOWL; }
+    string getSkillHandlerName()  { return "Howl"; }
+	SkillType_t getSkillType()  { return SKILL_HOWL; }
 
 	void execute(Vampire* pVampire, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
 

@@ -41,18 +41,18 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_PICKUP_MONEY; }
+	PacketID_t getPacketID()  { return PACKET_CG_PICKUP_MONEY; }
 	
 	// get packet's body size
 	// *OPTIMIZATION HINT*
 	// const static CGPickupMoneyPacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szCoord + szCoord; }
+	PacketSize_t getPacketSize()  { return szObjectID + szCoord + szCoord; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGPickupMoney"; }
+	string getPacketName()  { return "CGPickupMoney"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 	
 public:
 
@@ -61,11 +61,11 @@ public:
 	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
 
 	// get/set X Coordicate
-	Coord_t getZoneX() const throw() { return m_ZoneX; }
+	Coord_t getZoneX()  { return m_ZoneX; }
 	void setZoneX(Coord_t ZoneX) throw() { m_ZoneX = ZoneX; }
 
 	// get/set Y Coordicate
-	Coord_t getZoneY() const throw() { return m_ZoneY; }
+	Coord_t getZoneY()  { return m_ZoneY; }
 	void setZoneY(Coord_t ZoneY) throw() { m_ZoneY = ZoneY; }
 
 private :
@@ -96,15 +96,15 @@ public:
 	Packet* createPacket() throw() { return new CGPickupMoney(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGPickupMoney"; }
+	string getPacketName()  { return "CGPickupMoney"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_PICKUP_MONEY; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_PICKUP_MONEY; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static CGPickupMoneyPacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szCoord + szCoord; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szCoord + szCoord; }
 
 };
 

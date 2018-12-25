@@ -48,28 +48,28 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_SKILL_TO_INVENTORY_OK_2; }
+	PacketID_t getPacketID()  { return PACKET_GC_SKILL_TO_INVENTORY_OK_2; }
 	
 	// get packet's body size
 	// 최적화시, 미리 계산된 정수를 사용한다.
-	PacketSize_t getPacketSize() const throw() { return szSkillType + szObjectID + szDuration; }
+	PacketSize_t getPacketSize()  { return szSkillType + szObjectID + szDuration; }
 
 	// get packet's name
-	string getPacketName() const throw() { return "GCSkillToInventoryOK2"; }
+	string getPacketName()  { return "GCSkillToInventoryOK2"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get / set ObjectID 
-	CEffectID_t getObjectID() const throw() { return m_ObjectID; }
+	CEffectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
 
 	// get / set SkillType
-	SkillType_t getSkillType() const throw() { return m_SkillType; }
+	SkillType_t getSkillType()  { return m_SkillType; }
 	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
 
 	// get / set Duration
-	Duration_t getDuration() const throw() { return m_Duration; }
+	Duration_t getDuration()  { return m_Duration; }
 	void setDuration(Duration_t Duration) throw() { m_Duration = Duration; }
 
 private :
@@ -111,13 +111,13 @@ public :
 	Packet* createPacket() throw() { return new GCSkillToInventoryOK2(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCSkillToInventoryOK2"; }
+	string getPacketName()  { return "GCSkillToInventoryOK2"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_SKILL_TO_INVENTORY_OK_2; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_SKILL_TO_INVENTORY_OK_2; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szSkillType + szObjectID + szDuration; }
+	PacketSize_t getPacketMaxSize()  { return szSkillType + szObjectID + szDuration; }
 };
 
 

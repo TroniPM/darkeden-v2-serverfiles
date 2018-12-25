@@ -288,7 +288,7 @@ public:
 
 	void init();
 	void run() throw();
-	string getName() const throw() { return "GDRLairManager"; }
+	string getName()  { return "GDRLairManager"; }
 
 	static GDRLairManager& Instance() { static GDRLairManager theInstance; return theInstance; }
 	Zone* getZone(int index) const { return m_pZones[index]; }

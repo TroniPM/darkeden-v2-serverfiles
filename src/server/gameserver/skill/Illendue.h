@@ -20,9 +20,9 @@ public:
 	~Illendue() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Illendue"; }
+    string getSkillHandlerName()  { return "Illendue"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_ILLENDUE; }
+	SkillType_t getSkillType()  { return SKILL_ILLENDUE; }
 
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

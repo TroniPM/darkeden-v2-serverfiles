@@ -38,23 +38,23 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_ADD_OUSTERS; }
-	PacketSize_t getPacketSize() const throw();
-	string getPacketName() const throw() { return "GCAddOusters"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_ADD_OUSTERS; }
+	PacketSize_t getPacketSize() ;
+	string getPacketName()  { return "GCAddOusters"; }
+	string toString() ;
 
 public:
 	PCOustersInfo3 & getOustersInfo() throw() { return m_OustersInfo; }
-	const PCOustersInfo3 & getOustersInfo() const throw() { return m_OustersInfo; }
+	const PCOustersInfo3 & getOustersInfo()  { return m_OustersInfo; }
 	void setOustersInfo(const PCOustersInfo3 & slayerInfo) throw() { m_OustersInfo = slayerInfo; }
 
-	EffectInfo* getEffectInfo() const throw() { return m_pEffectInfo; }
+	EffectInfo* getEffectInfo()  { return m_pEffectInfo; }
 	void setEffectInfo(EffectInfo* pEffectInfo) throw() { m_pEffectInfo = pEffectInfo; }
 
-	PetInfo* getPetInfo() const throw() { return m_pPetInfo; }
+	PetInfo* getPetInfo()  { return m_pPetInfo; }
 	void setPetInfo(PetInfo* pPetInfo) throw() { m_pPetInfo = pPetInfo; }
 
-	NicknameInfo* getNicknameInfo() const throw() { return m_pNicknameInfo; }
+	NicknameInfo* getNicknameInfo()  { return m_pNicknameInfo; }
 	void setNicknameInfo(NicknameInfo* pNicknameInfo) throw() { m_pNicknameInfo = pNicknameInfo; }
 
 	StoreOutlook	getStoreOutlook() const { return m_StoreOutlook; }
@@ -76,9 +76,9 @@ class GCAddOustersFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCAddOusters(); }
-	string getPacketName() const throw() { return "GCAddOusters"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_ADD_OUSTERS; }
-	PacketSize_t getPacketMaxSize() const throw()
+	string getPacketName()  { return "GCAddOusters"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_OUSTERS; }
+	PacketSize_t getPacketMaxSize() 
 	{ 
 		return PCOustersInfo3::getMaxSize() + EffectInfo::getMaxSize() + PetInfo::getMaxSize() + NicknameInfo::getMaxSize() + StoreOutlook::getMaxSize();
 	}

@@ -20,8 +20,8 @@ public:
 	~Cabracam() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "Cabracam"; }
-	SkillType_t getSkillType() const throw() { return SKILL_CABRACAM; }
+    string getSkillHandlerName()  { return "Cabracam"; }
+	SkillType_t getSkillType()  { return SKILL_CABRACAM; }
 
 	void execute(Monster* pMonster, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
 

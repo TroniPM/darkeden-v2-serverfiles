@@ -22,25 +22,25 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_ADD_BURROWING_CREATURE; }
-	PacketSize_t getPacketSize() const throw() 
+	PacketID_t getPacketID()  { return PACKET_GC_ADD_BURROWING_CREATURE; }
+	PacketSize_t getPacketSize()  
 	{ 
 		return szObjectID + szBYTE + m_Name.size() + szCoord + szCoord; 
 	}
-	string getPacketName() const throw() { return "GCAddBurrowingCreature"; }
-	string toString() const throw();
+	string getPacketName()  { return "GCAddBurrowingCreature"; }
+	string toString() ;
 
 public:
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t creatureID) throw() { m_ObjectID = creatureID; }
 
-	string getName() const throw() { return m_Name; }
+	string getName()  { return m_Name; }
 	void setName(string name) throw() { m_Name = name; }
 
-	Coord_t getX() const throw() { return m_X; }
+	Coord_t getX()  { return m_X; }
 	void setX(Coord_t x) throw() { m_X = x; }
 	
-	Coord_t getY() const throw() { return m_Y; }
+	Coord_t getY()  { return m_Y; }
 	void setY(Coord_t y) throw() { m_Y = y; }
 
 private:
@@ -59,9 +59,9 @@ class GCAddBurrowingCreatureFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCAddBurrowingCreature(); }
-	string getPacketName() const throw() { return "GCAddBurrowingCreature"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_ADD_BURROWING_CREATURE; }
-	PacketSize_t getPacketMaxSize() const throw() 
+	string getPacketName()  { return "GCAddBurrowingCreature"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_BURROWING_CREATURE; }
+	PacketSize_t getPacketMaxSize()  
 	{
 		return szObjectID + szBYTE + 20 + szCoord + szCoord; 
 	}

@@ -20,18 +20,18 @@ public:
 	EffectBurningSolCharging(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_BURNING_SOL_CHARGE_1; }
-	EffectClass getSendEffectClass() const throw() { return (EffectClass)(EFFECT_CLASS_BURNING_SOL_CHARGE_1 + m_Level); }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_BURNING_SOL_CHARGE_1; }
+	EffectClass getSendEffectClass()  { return (EffectClass)(EFFECT_CLASS_BURNING_SOL_CHARGE_1 + m_Level); }
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
-	Level_t getLevel() const throw() { return m_Level; }
+	Level_t getLevel()  { return m_Level; }
 	void setLevel(Level_t Level) throw() { m_Level = Level; }
 
 private:

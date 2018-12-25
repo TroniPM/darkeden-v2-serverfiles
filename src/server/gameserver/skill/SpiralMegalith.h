@@ -20,8 +20,8 @@ public:
 	~SpiralMegalith() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "SpiralMegalith"; }
-	SkillType_t getSkillType() const throw() { return SKILL_SPIRAL_MEGALITH; }
+    string getSkillHandlerName()  { return "SpiralMegalith"; }
+	SkillType_t getSkillType()  { return SKILL_SPIRAL_MEGALITH; }
 
 	void execute(Ousters* pOusters, ObjectID_t ObjectID,  OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 

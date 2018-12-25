@@ -20,8 +20,8 @@ public:
 	~BogleH() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "BogleH"; }
-	SkillType_t getSkillType() const throw() { return SKILL_BOGLE_H; }
+    string getSkillHandlerName()  { return "BogleH"; }
+	SkillType_t getSkillType()  { return SKILL_BOGLE_H; }
 
 	void execute(Monster* pMonster, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
 

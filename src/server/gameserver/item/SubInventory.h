@@ -32,16 +32,16 @@ public:
 	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) throw(Error);
 	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
 	void tinysave(const char* field) const throw (Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	static void initItemIDRegistry(void) throw();
 
 public:
 /*
-	virtual ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_SUB_INVENTORY; }
-	virtual string getObjectTableName() const throw() { return "SubInventoryObject"; }
+	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_SUB_INVENTORY; }
+	virtual string getObjectTableName()  { return "SubInventoryObject"; }
 
-	virtual ItemType_t getItemType() const throw() { return m_ItemType; }
+	virtual ItemType_t getItemType()  { return m_ItemType; }
 	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() const throw(Error);
@@ -49,10 +49,10 @@ public:
 	virtual Weight_t getWeight() const throw(Error);*/
 
 	void setInventory(Inventory* pInventory) throw() { m_pInventory = pInventory; }
-	Inventory* getInventory() const throw() { return m_pInventory; }
+	Inventory* getInventory()  { return m_pInventory; }
 
-	PocketNum_t getPocketWidthCount(void) const throw();
-	PocketNum_t getPocketHeightCount(void) const throw();
+	PocketNum_t getPocketWidthCount(void) ;
+	PocketNum_t getPocketHeightCount(void) ;
 
 	void makePCItemInfo(PCItemInfo& result) const;
 
@@ -72,18 +72,18 @@ private:
 class SubInventoryInfo : public ItemInfo 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_SUB_INVENTORY; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_SUB_INVENTORY; }
 
-	uint getPocketWidthCount() const throw() { return m_PocketCount; }
+	uint getPocketWidthCount()  { return m_PocketCount; }
 	void setPocketWidthCount(uint pocketCount) throw() { m_PocketCount = pocketCount; }
 
-	uint getPocketHeightCount() const throw() { return m_PocketCount2; }
+	uint getPocketHeightCount()  { return m_PocketCount2; }
 	void setPocketHeightCount(uint pocketCount2) throw() { m_PocketCount2 = pocketCount2; }
 
-	virtual uint getItemLevel(void) const throw() { return m_ItemLevel; }
+	virtual uint getItemLevel(void)  { return m_ItemLevel; }
 	virtual void setItemLevel(uint level) throw() { m_ItemLevel = level; }
 
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 private:
 	Durability_t  m_Durability;      // ³»±¸¼º
@@ -101,7 +101,7 @@ private:
 class SubInventoryInfoManager : public InfoClassManager 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_SUB_INVENTORY; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_SUB_INVENTORY; }
 	virtual void load() throw(Error);
 };
 
@@ -115,8 +115,8 @@ extern SubInventoryInfoManager* g_pSubInventoryInfoManager;
 class SubInventoryFactory : public ItemFactory 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_SUB_INVENTORY; }
-	virtual string getItemClassName() const throw() { return "SubInventory"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_SUB_INVENTORY; }
+	virtual string getItemClassName()  { return "SubInventory"; }
 	
 public:
 	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new SubInventory(ItemType,OptionType); }
@@ -130,8 +130,8 @@ public:
 class SubInventoryLoader : public ItemLoader 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_SUB_INVENTORY; }
-	virtual string getItemClassName() const throw() { return "SubInventory"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_SUB_INVENTORY; }
+	virtual string getItemClassName()  { return "SubInventory"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

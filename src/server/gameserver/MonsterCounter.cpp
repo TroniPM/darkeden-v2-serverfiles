@@ -57,7 +57,7 @@ void MonsterCounter::deleteMonster()
 }
 
 // get debug string
-string MonsterCounter::toString() const throw()
+string MonsterCounter::toString() 
 {
 	__BEGIN_TRY
 

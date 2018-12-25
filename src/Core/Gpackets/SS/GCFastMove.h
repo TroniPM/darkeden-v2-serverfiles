@@ -50,24 +50,24 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_FAST_MOVE; }
+	PacketID_t getPacketID()  { return PACKET_GC_FAST_MOVE; }
 	
 	// get packet's body size
 	// *OPTIMIZATION HINT*
 	// const static GCFastMovePacketSize 를 정의, 리턴하라.
-	PacketSize_t getPacketSize() const throw() { return szObjectID + 4*szCoord + szSkillType; }
+	PacketSize_t getPacketSize()  { return szObjectID + 4*szCoord + szSkillType; }
 
 	// get packet's name
-	string getPacketName() const throw() { return "GCFastMove"; }
+	string getPacketName()  { return "GCFastMove"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 
 public :
 
 	// get/set Creature ID 
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t objectID) throw() { m_ObjectID = objectID; }
 
 	void setXY(Coord_t x, Coord_t y, Coord_t x2, Coord_t y2)
@@ -76,10 +76,10 @@ public :
 	}
 
 	// get
-	Coord_t getFromX() const throw() { return m_FromX; }
-	Coord_t getFromY() const throw() { return m_FromY; }
-	Coord_t getToX() const throw() { return m_ToX; }
-	Coord_t getToY() const throw() { return m_ToY; }
+	Coord_t getFromX()  { return m_FromX; }
+	Coord_t getFromY()  { return m_FromY; }
+	Coord_t getToX()  { return m_ToX; }
+	Coord_t getToY()  { return m_ToY; }
 	
 	SkillType_t getSkillType() const { return m_SkillType; }
 	void setSkillType( SkillType_t skillType ) { m_SkillType = skillType; }
@@ -109,15 +109,15 @@ public :
 	Packet* createPacket() throw() { return new GCFastMove(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCFastMove"; }
+	string getPacketName()  { return "GCFastMove"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_FAST_MOVE; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_FAST_MOVE; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCFastMovePacketSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + 4*szCoord + szSkillType; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + 4*szCoord + szSkillType; }
 
 };
 

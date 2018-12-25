@@ -42,16 +42,16 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_REQUEST_WEB_MARKET; }
+	PacketID_t getPacketID()  { return PACKET_CG_REQUEST_WEB_MARKET; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szBYTE; }
+	PacketSize_t getPacketSize()  { return szBYTE; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGRequestWebMarket"; }
+	string getPacketName()  { return "CGRequestWebMarket"; }
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 	// get/set code
 	BYTE getCode() const { return m_Code; }
@@ -88,13 +88,13 @@ public:
 	Packet* createPacket() throw() { return new CGRequestWebMarket(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGRequestWebMarket"; }
+	string getPacketName()  { return "CGRequestWebMarket"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_REQUEST_WEB_MARKET; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_REQUEST_WEB_MARKET; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE; }
 };
 
 

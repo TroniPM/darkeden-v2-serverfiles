@@ -54,21 +54,21 @@ public:
 	void heartbeat() throw(Error);
 
 	// 오늘의 날씨를 리턴한다.
-	Weather getTodayWeather() const throw() { return m_TodayWeather; }
+	Weather getTodayWeather()  { return m_TodayWeather; }
 
 	// 오늘 비나 눈이 올 확률을 리턴한다.
-	uint getProbability() const throw() { return m_Probability; }
+	uint getProbability()  { return m_Probability; }
 
 	// 현재의 날씨를 리턴한다.
-	Weather getCurrentWeather() const throw() { return m_CurrentWeather; }
+	Weather getCurrentWeather()  { return m_CurrentWeather; }
 
 	// 현재의 날씨 레벨을 리턴한다.
-	WeatherLevel_t getWeatherLevel() const throw() { return m_WeatherLevel; }
+	WeatherLevel_t getWeatherLevel()  { return m_WeatherLevel; }
 
 	void resetDarkLightInfo() throw() { m_Next10Min = time(0); }
 
 	// get debug string
-	string toString() const throw();
+	string toString() ;
 
 private:
 

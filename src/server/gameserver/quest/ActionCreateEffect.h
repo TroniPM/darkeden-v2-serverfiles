@@ -21,10 +21,10 @@
 class ActionCreateEffect : public Action 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_CREATE_EFFECT; }
+	virtual ActionType_t getActionType()  { return ACTION_CREATE_EFFECT; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 private:
@@ -39,8 +39,8 @@ private:
 class ActionCreateEffectFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_CREATE_EFFECT; }
-	virtual string getActionName() const throw() { return "CreateEffect"; }
-	virtual Action* createAction() const throw() { return new ActionCreateEffect(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_CREATE_EFFECT; }
+	virtual string getActionName()  { return "CreateEffect"; }
+	virtual Action* createAction()  { return new ActionCreateEffect(); }
 };
 #endif

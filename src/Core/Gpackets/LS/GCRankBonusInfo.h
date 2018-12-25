@@ -37,23 +37,23 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_RANK_BONUS_INFO; }
+	PacketID_t getPacketID()  { return PACKET_GC_RANK_BONUS_INFO; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szBYTE + ( szDWORD * m_RankBonusInfoList.size() ); }
+	PacketSize_t getPacketSize()  { return szBYTE + ( szDWORD * m_RankBonusInfoList.size() ); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCRankBonusInfo"; }
+	string getPacketName()  { return "GCRankBonusInfo"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 //--------------------------------------------------
 // methods
 //--------------------------------------------------
 public :
 
-	BYTE getListNum() const throw() { return m_RankBonusInfoList.size(); }
+	BYTE getListNum()  { return m_RankBonusInfoList.size(); }
 
     // add
 	void addListElement( DWORD rankBonusType ) throw() { m_RankBonusInfoList.push_back( rankBonusType ); }
@@ -95,15 +95,15 @@ public :
 	Packet* createPacket() throw() { return new GCRankBonusInfo(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCRankBonusInfo"; }
+	string getPacketName()  { return "GCRankBonusInfo"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_RANK_BONUS_INFO; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_RANK_BONUS_INFO; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCRankBonusInfoPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		return szBYTE + ( szDWORD * 100 );
 	}

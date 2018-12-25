@@ -36,29 +36,29 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CL_SELECT_PC; }
+	PacketID_t getPacketID()  { return PACKET_CL_SELECT_PC; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		return szBYTE + m_PCName.size() 	// pc name
 			+ szPCType; 					// pc type
 	}
 
 	// get packet's name
-	string getPacketName() const throw() { return "CLSelectPC"; }
+	string getPacketName()  { return "CLSelectPC"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public:
 
 	// get/set creature's name
-	string getPCName() const throw() { return m_PCName; }
+	string getPCName()  { return m_PCName; }
 	void setPCName(string pcName) throw() { m_PCName = pcName; }
 
 	// get/set pc type
-	PCType getPCType() const throw() { return m_PCType; }
+	PCType getPCType()  { return m_PCType; }
 	void setPCType(PCType pcType) throw() { m_PCType = pcType; }
 
 private :
@@ -88,13 +88,13 @@ public:
 	Packet* createPacket() throw() { return new CLSelectPC(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CLSelectPC"; }
+	string getPacketName()  { return "CLSelectPC"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CL_SELECT_PC; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CL_SELECT_PC; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw()
+	PacketSize_t getPacketMaxSize() 
 	{
 		return szBYTE + 20		 	// name
 			+ szPCType; 			// pc type

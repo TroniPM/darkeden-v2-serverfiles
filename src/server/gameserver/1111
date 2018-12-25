@@ -2,7 +2,7 @@ CombatMonsterManager.cpp:	if(!findPoistion(m_MonsterTypes[iType], x, y))
 CombatMonsterManager.cpp:		if(!findPosition(m_MonsterTypes[i], x, y)){
 CombatMonsterManager.cpp:	hash_map<ObjectID_t, Creature* >::iterator itr = m_Creatures.find(creatureID);
 CombatMonsterManager.cpp:				if(!findPosition(MType, x, y)){
-CombatMonsterManager.cpp:bool CombatMonsterManager::findPosition(MonsterType_t monsterType, ZoneCoord_t& RX, ZoneCoord_t& RY) const throw() {
+CombatMonsterManager.cpp:bool CombatMonsterManager::findPosition(MonsterType_t monsterType, ZoneCoord_t& RX, ZoneCoord_t& RY)  {
 ConnectionInfoManager.cpp:	HashMapConnectionInfo::iterator itr = m_ConnectionInfos.find(pConnectionInfo->getClientIP());
 ConnectionInfoManager.cpp:	HashMapConnectionInfo::iterator itr = m_ConnectionInfos.find(clientIP);
 ConnectionInfoManager.cpp:	HashMapConnectionInfo::iterator itr = m_ConnectionInfos.find(clientIP);

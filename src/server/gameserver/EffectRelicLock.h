@@ -20,7 +20,7 @@ public:
 	EffectRelicLock(Item* pItem) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_RELIC_LOCK; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_RELIC_LOCK; }
 
 	void affect() throw(Error) {}
 	void affect(Item* pItem) throw(Error);
@@ -28,7 +28,7 @@ public:
 	void unaffect(Item* pItem) throw(Error);
 	void unaffect() throw(Error); 
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	//bool   isLockTime() const;

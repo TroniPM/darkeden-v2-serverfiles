@@ -25,10 +25,10 @@ public:
 	ActionGiveAccountEventItem();
 	~ActionGiveAccountEventItem();
 
-	virtual ActionType_t getActionType() const throw() { return ACTION_GIVE_ACCOUNT_EVENT_ITEM; }
+	virtual ActionType_t getActionType()  { return ACTION_GIVE_ACCOUNT_EVENT_ITEM; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	void						load() throw (Error);
 
@@ -52,9 +52,9 @@ private :
 class ActionGiveAccountEventItemFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_GIVE_ACCOUNT_EVENT_ITEM; }
-	virtual string getActionName() const throw() { return "GiveAccountEventItem"; }
-	virtual Action* createAction() const throw() { return new ActionGiveAccountEventItem(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_GIVE_ACCOUNT_EVENT_ITEM; }
+	virtual string getActionName()  { return "GiveAccountEventItem"; }
+	virtual Action* createAction()  { return new ActionGiveAccountEventItem(); }
 };
 
 #endif

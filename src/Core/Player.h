@@ -79,7 +79,7 @@ public :
 	void setID (const string & id) throw () { m_ID = id; }
 
 	// get / set ServerGroupID
-	ServerGroupID_t getServerGroupID() const throw() { return m_ServerGroupID; }
+	ServerGroupID_t getServerGroupID()  { return m_ServerGroupID; }
 	void setServerGroupID(const ServerGroupID_t ServerGroupID) throw() { m_ServerGroupID = ServerGroupID; }
 
 	// get / set MAC Address

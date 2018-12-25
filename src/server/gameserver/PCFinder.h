@@ -37,14 +37,14 @@ public:
 	void deleteCreature(const string & name) throw();//NoSuchElementException, Error);
 
 	// get creature with PC-name
-	Creature* getCreature(const string & name) const throw(); //NoSuchElementException, Error);
+	Creature* getCreature(const string & name) ; //NoSuchElementException, Error);
 
 	// get creature with PC-name
-	Creature* getCreature_LOCKED(const string & name) const throw(); //NoSuchElementException, Error);
+	Creature* getCreature_LOCKED(const string & name) ; //NoSuchElementException, Error);
 
 	// PlayerID. for BillingServer. by sigi. 2002.11.18
-	Creature* getCreatureByID(const string & ID) const throw(); //NoSuchElementException, Error);
-	Creature* getCreatureByID_LOCKED(const string & ID) const throw(); //NoSuchElementException, Error);
+	Creature* getCreatureByID(const string & ID) ; //NoSuchElementException, Error);
+	Creature* getCreatureByID_LOCKED(const string & ID) ; //NoSuchElementException, Error);
 
 	// add NPC to hash_map
 	void addNPC(NPC *npc) throw(DuplicatedException, Error);
@@ -53,8 +53,8 @@ public:
 	void deleteNPC(const string & name) throw();
 
 	// get NPC 
-	NPC* getNPC(const string & name) const throw();
-	NPC* getNPC_LOCKED(const string & name) const throw();
+	NPC* getNPC(const string & name) ;
+	NPC* getNPC_LOCKED(const string & name) ;
 
 	// get creature's IP address
 	IP_t getIP(const string & name) const throw(NoSuchElementException, Error);

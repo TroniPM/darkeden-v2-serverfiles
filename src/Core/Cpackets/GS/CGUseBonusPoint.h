@@ -51,20 +51,20 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_USE_BONUS_POINT; }
+	PacketID_t getPacketID()  { return PACKET_CG_USE_BONUS_POINT; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szBYTE; }
+	PacketSize_t getPacketSize()  { return szBYTE; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGUseBonusPoint"; }
+	string getPacketName()  { return "CGUseBonusPoint"; }
 
 	// get/set which 
-	BYTE getWhich() const throw() { return m_Which;}
+	BYTE getWhich()  { return m_Which;}
 	void setWhich(BYTE w) throw() { m_Which = w;}
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 private :
 
@@ -99,13 +99,13 @@ public:
 	Packet* createPacket() throw() { return new CGUseBonusPoint(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGUseBonusPoint"; }
+	string getPacketName()  { return "CGUseBonusPoint"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_USE_BONUS_POINT; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_USE_BONUS_POINT; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE; }
 
 };
 

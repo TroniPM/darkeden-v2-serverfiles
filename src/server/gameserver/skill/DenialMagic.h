@@ -20,8 +20,8 @@ public:
 	~DenialMagic() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "DenialMagic"; }
-	SkillType_t getSkillType() const throw() { return SKILL_DENIAL_MAGIC; }
+    string getSkillHandlerName()  { return "DenialMagic"; }
+	SkillType_t getSkillType()  { return SKILL_DENIAL_MAGIC; }
 
 	void execute(Slayer* pSlayer,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

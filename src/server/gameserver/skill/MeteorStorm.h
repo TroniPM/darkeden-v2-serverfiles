@@ -20,8 +20,8 @@ public:
 	~MeteorStorm() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "MeteorStorm"; }
-	SkillType_t getSkillType() const throw() { return SKILL_METEOR_STORM; }
+    string getSkillHandlerName()  { return "MeteorStorm"; }
+	SkillType_t getSkillType()  { return SKILL_METEOR_STORM; }
 
 	void execute(Ousters* pOusters, ZoneCoord_t X, ZoneCoord_t Y, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Ousters* pOusters, ObjectID_t ObjectID,  OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);

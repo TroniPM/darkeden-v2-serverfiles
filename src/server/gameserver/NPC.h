@@ -63,56 +63,56 @@ public:
 	virtual ~NPC() throw (Error);
 
 public: 
-	virtual CreatureClass getCreatureClass() const throw() { return CREATURE_CLASS_NPC; }
-	virtual string getCreatureClassString() const throw() { return "CREATURE_CLASS_NPC"; }
+	virtual CreatureClass getCreatureClass()  { return CREATURE_CLASS_NPC; }
+	virtual string getCreatureClassString()  { return "CREATURE_CLASS_NPC"; }
 
 	virtual void registerObject() throw(Error);
 
 	virtual bool load() throw(Error);
 	virtual void save() const throw(Error) { throw UnsupportedError(__PRETTY_FUNCTION__); }
 
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 	void init() throw(Error);
 	void act(const Timeval& currentTime) throw(Error);
 
 public:
-	virtual Level_t getLevel() const throw() { return 1; }
+	virtual Level_t getLevel()  { return 1; }
 
 	Race_t getRace(void) const { return m_Race;}
 	void setRace(int race) { m_Race = race;}
 	
-	bool isSlayer() const throw() { return(m_Race == NPC_RACE_SLAYER) ? true : false;}
-	bool isVampire() const throw() { return(m_Race == NPC_RACE_VAMPIRE) ? true : false;}
-	bool isOusters() const throw() { return(m_Race == NPC_RACE_OUSTERS) ? true : false;}
+	bool isSlayer()  { return(m_Race == NPC_RACE_SLAYER) ? true : false;}
+	bool isVampire()  { return(m_Race == NPC_RACE_VAMPIRE) ? true : false;}
+	bool isOusters()  { return(m_Race == NPC_RACE_OUSTERS) ? true : false;}
 
-	SpriteType_t getSpriteType() const throw() { return m_SpriteType; } 
+	SpriteType_t getSpriteType()  { return m_SpriteType; } 
 	void setSpriteType(SpriteType_t spriteType) throw() { m_SpriteType = spriteType; }
 
-	const string& getName() const throw() { return m_Name; }
+	const string& getName()  { return m_Name; }
 	void setName(const string & name) throw() { m_Name = name; }
 
-	NPCID_t getNPCID() const throw() { return m_NPCID;}
+	NPCID_t getNPCID()  { return m_NPCID;}
 	void setNPCID(NPCID_t NPCID) throw() { m_NPCID = NPCID;}
 
-	Color_t getMainColor() const throw() { return m_MainColor; }
+	Color_t getMainColor()  { return m_MainColor; }
 	void setMainColor(Color_t color) throw() { m_MainColor = color; }
 
-	Color_t getSubColor() const throw() { return m_SubColor; }
+	Color_t getSubColor()  { return m_SubColor; }
 	void setSubColor(Color_t color) throw() { m_SubColor = color; }
 
 	Inventory* getInventory() throw() { return m_pInventory; }
 	void setInventory(Inventory* pInventory) throw() { m_pInventory = pInventory; }
 
 	TriggerManager & getTriggerManager() throw() { return m_TriggerManager; }
-	const TriggerManager & getTriggerManager() const throw() { return m_TriggerManager; }
+	const TriggerManager & getTriggerManager()  { return m_TriggerManager; }
 
 	bool isShowInMinimap(void) const { return m_bShowInMinimap; }
 	void setShowInMinimap(bool bShow) { m_bShowInMinimap = bShow; }
 
-	bool isDead() const throw() { return false; }
-	bool isAlive() const throw() { return true; }
+	bool isDead()  { return false; }
+	bool isAlive()  { return true; }
 
 ////////////////////////////////////////////////////////////
 // 상점 관련 인터페이스

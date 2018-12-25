@@ -20,8 +20,8 @@ public:
 	~AttackArms() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "AttackArms"; }
-	SkillType_t getSkillType() const throw() { return SKILL_ATTACK_ARMS; }
+    string getSkillHandlerName()  { return "AttackArms"; }
+	SkillType_t getSkillType()  { return SKILL_ATTACK_ARMS; }
 
 	void execute(Slayer* pPlayer, ObjectID_t ObjectID) throw(Error);
 	void execute(Monster* pPlayer, Creature* pEnemy) throw(Error);

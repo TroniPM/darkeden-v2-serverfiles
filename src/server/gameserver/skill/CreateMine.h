@@ -20,8 +20,8 @@ public:
 	~CreateMine() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "CreateMine"; }
-	SkillType_t getSkillType() const throw() { return SKILL_CREATE_MINE; }
+    string getSkillHandlerName()  { return "CreateMine"; }
+	SkillType_t getSkillType()  { return SKILL_CREATE_MINE; }
 
 	void execute(Slayer* pSlayer, ObjectID_t, CoordInven_t X, CoordInven_t Y, CoordInven_t TargetX, CoordInven_t TargetY, SkillSlot* pSkillSlot) throw(Error);
 

@@ -20,8 +20,8 @@ public:
 	~InstallTrap() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "InstallTrap"; }
-	SkillType_t getSkillType() const throw() { return SKILL_INSTALL_TRAP; }
+    string getSkillHandlerName()  { return "InstallTrap"; }
+	SkillType_t getSkillType()  { return SKILL_INSTALL_TRAP; }
 
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

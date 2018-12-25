@@ -28,7 +28,7 @@ public:
 	Action* createAction(ActionType_t conditionType) const throw(Error);
 	string getActionName(ActionType_t conditionType) const throw(Error);
 	ActionType_t getActionType(const string & actionname) const throw(Error);
-	string toString() const throw();
+	string toString() ;
 
 private:
 	ActionFactory** m_Factories;

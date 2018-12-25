@@ -39,7 +39,7 @@ public:
 	string toString () const throw ();
 	
 	// get MaxServerGroupID
-	int getMaxServerGroupID() const throw() { return m_MaxServerGroupID; }
+	int getMaxServerGroupID()  { return m_MaxServerGroupID; }
 
 private:
 	// hash map of GameServerInfo

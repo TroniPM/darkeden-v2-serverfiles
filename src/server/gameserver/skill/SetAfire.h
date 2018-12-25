@@ -20,9 +20,9 @@ public:
 	~SetAfire() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "SetAfire"; }
+    string getSkillHandlerName()  { return "SetAfire"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_SET_AFIRE; }
+	SkillType_t getSkillType()  { return SKILL_SET_AFIRE; }
 
 	void execute(Vampire* pVampire, ObjectID_t targetObject, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
 

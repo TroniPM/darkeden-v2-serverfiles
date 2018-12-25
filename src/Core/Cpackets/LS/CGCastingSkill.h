@@ -45,20 +45,20 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_CASTING_SKILL; }
+	PacketID_t getPacketID()  { return PACKET_CG_CASTING_SKILL; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szSkillType; }
+	PacketSize_t getPacketSize()  { return szSkillType; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGCastingSkill"; }
+	string getPacketName()  { return "CGCastingSkill"; }
 
 	// get/set SkillType
-	SkillType_t getSkillType() const throw()  { return m_SkillType; }
+	SkillType_t getSkillType()   { return m_SkillType; }
 	void setObjectID(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 private :
 
@@ -93,13 +93,13 @@ public:
 	Packet* createPacket() throw() { return new CGCastingSkill(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGCastingSkill"; }
+	string getPacketName()  { return "CGCastingSkill"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_CASTING_SKILL; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_CASTING_SKILL; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szSkillType; }
+	PacketSize_t getPacketMaxSize()  { return szSkillType; }
 
 };
 

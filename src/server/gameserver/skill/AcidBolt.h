@@ -20,8 +20,8 @@ public:
 	~AcidBolt() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "AcidBolt"; }
-	SkillType_t getSkillType() const throw() { return SKILL_ACID_BOLT; }
+    string getSkillHandlerName()  { return "AcidBolt"; }
+	SkillType_t getSkillType()  { return SKILL_ACID_BOLT; }
 
 	void execute(Vampire* pVampire, ObjectID_t ObjectID,  VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Monster* pMonster, Creature* pEnemy) throw(Error);

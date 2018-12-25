@@ -20,14 +20,14 @@ public:
 	EffectJabbingVein(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_JABBING_VEIN; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_JABBING_VEIN; }
 
 	void affect() throw(Error){}
 
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 };
 

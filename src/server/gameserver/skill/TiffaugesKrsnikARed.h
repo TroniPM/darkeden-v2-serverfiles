@@ -20,9 +20,9 @@ public:
 	~TiffaugesKrsnikARed() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "TiffaugesKrsnikARed"; }
+    string getSkillHandlerName()  { return "TiffaugesKrsnikARed"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_TIFFAUGES_KRSNIK_A_RED; }
+	SkillType_t getSkillType()  { return SKILL_TIFFAUGES_KRSNIK_A_RED; }
 
 	void execute(Monster* pMonster, Creature* pEnemy) throw(Error);
 

@@ -20,8 +20,8 @@ public:
 	~ThrowHolyWater() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "ThrowHolyWater"; }
-	SkillType_t getSkillType() const throw() { return SKILL_THROW_HOLY_WATER; }
+    string getSkillHandlerName()  { return "ThrowHolyWater"; }
+	SkillType_t getSkillType()  { return SKILL_THROW_HOLY_WATER; }
 
 	void execute(Slayer* pSlayer, ObjectID_t TargetObjectID, ObjectID_t ItemObjectID, CoordInven_t X, CoordInven_t Y) throw(Error);
 

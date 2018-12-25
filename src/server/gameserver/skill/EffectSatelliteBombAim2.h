@@ -19,7 +19,7 @@ public:
 	EffectSatelliteBombAim2(Creature* pCreature, Zone* pZone, ZoneCoord_t x, ZoneCoord_t y) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_SKILL_SATELLITE_BOMB_AIM2; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_SKILL_SATELLITE_BOMB_AIM2; }
 
 	void affect() throw(Error){}
 	void affect(Creature* pCreature) throw(Error);
@@ -27,7 +27,7 @@ public:
 	void unaffect() throw(Error);
 	void unaffect(Creature* pCreature) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	Damage_t getDamage() const { return m_Damage; }

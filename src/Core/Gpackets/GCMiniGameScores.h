@@ -39,10 +39,10 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_MINI_GAME_SCORES; }
-	PacketSize_t getPacketSize() const throw();
-	string getPacketName() const throw() { return "GCMiniGameScores"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_MINI_GAME_SCORES; }
+	PacketSize_t getPacketSize() ;
+	string getPacketName()  { return "GCMiniGameScores"; }
+	string toString() ;
 
 public:
 	BYTE getGameType() const { return m_GameType; }
@@ -74,9 +74,9 @@ public :
 	
 public:
 	Packet* createPacket() throw() { return new GCMiniGameScores(); }
-	string getPacketName() const throw() { return "GCMiniGameScores"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_MINI_GAME_SCORES; }
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + szBYTE + szBYTE + (szWORD+21) * 10; }
+	string getPacketName()  { return "GCMiniGameScores"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_MINI_GAME_SCORES; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + szBYTE + szBYTE + (szWORD+21) * 10; }
 };
 
 //////////////////////////////////////////////////////////////////////////////

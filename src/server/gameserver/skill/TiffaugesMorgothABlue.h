@@ -20,9 +20,9 @@ public:
 	~TiffaugesMorgothABlue() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "TiffaugesMorgothABlue"; }
+    string getSkillHandlerName()  { return "TiffaugesMorgothABlue"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_TIFFAUGES_MORGOTH_A_BLUE; }
+	SkillType_t getSkillType()  { return SKILL_TIFFAUGES_MORGOTH_A_BLUE; }
 
 	void execute(Monster* pMonster, Creature* pEnemy) throw(Error);
 

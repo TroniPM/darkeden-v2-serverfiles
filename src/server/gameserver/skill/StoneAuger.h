@@ -20,8 +20,8 @@ public:
 	~StoneAuger() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "StoneAuger"; }
-	SkillType_t getSkillType() const throw() { return SKILL_STONE_AUGER; }
+    string getSkillHandlerName()  { return "StoneAuger"; }
+	SkillType_t getSkillType()  { return SKILL_STONE_AUGER; }
 
 	void execute(Ousters* pOusters, ZoneCoord_t X, ZoneCoord_t Y, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Ousters* pOusters, ObjectID_t ObjectID,  OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);

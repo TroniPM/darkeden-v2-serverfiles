@@ -50,31 +50,31 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_ATTACK; }
+	PacketID_t getPacketID()  { return PACKET_CG_ATTACK; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szCoord + szCoord + szDir; }
+	PacketSize_t getPacketSize()  { return szObjectID + szCoord + szCoord + szDir; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGAttack"; }
+	string getPacketName()  { return "CGAttack"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 	
 	// get/set X Coordicate
-	Coord_t getX() const throw() { return m_X; }
+	Coord_t getX()  { return m_X; }
 	void setX(Coord_t x) throw() { m_X = x; }
 
 	// get/set Y Coordicate
-	Coord_t getY() const throw() { return m_Y; }
+	Coord_t getY()  { return m_Y; }
 	void setY(Coord_t y) throw() { m_Y = y; }
 
 	// get/set Direction
-	Dir_t getDir() const throw() { return m_Dir; }
+	Dir_t getDir()  { return m_Dir; }
 	void setDir(Dir_t dir) throw() { m_Dir = dir; }
 	
 	// get/set ObjectID
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
 	
 private :
@@ -112,13 +112,13 @@ public:
 	Packet* createPacket() throw() { return new CGAttack(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGAttack"; }
+	string getPacketName()  { return "CGAttack"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_ATTACK; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_ATTACK; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szCoord + szCoord + szDir; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szCoord + szCoord + szDir; }
 
 };
 

@@ -20,8 +20,8 @@ public:
 	~AbsorbSoul() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "AbsorbSoul"; }
-	SkillType_t getSkillType() const throw() { return SKILL_ABSORB_SOUL; }
+    string getSkillHandlerName()  { return "AbsorbSoul"; }
+	SkillType_t getSkillType()  { return SKILL_ABSORB_SOUL; }
 
 	void execute(Ousters* pOusters, ObjectID_t ObjectID, ZoneCoord_t TargetZoneX, ZoneCoord_t TargetZoneY, ObjectID_t ItemObjectID, CoordInven_t InvenX, CoordInven_t InvenY, CoordInven_t TargetInvenX, CoordInven_t TargetInvenY ) throw(Error);
 	

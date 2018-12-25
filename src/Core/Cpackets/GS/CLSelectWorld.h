@@ -33,20 +33,20 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CL_SELECT_WORLD; }
+	PacketID_t getPacketID()  { return PACKET_CL_SELECT_WORLD; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szWorldID; }
+	PacketSize_t getPacketSize()  { return szWorldID; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CLSelectWorld"; }
+	string getPacketName()  { return "CLSelectWorld"; }
 
 	// get / set WorldID
-	WorldID_t getWorldID() const throw() { return m_WorldID; }
+	WorldID_t getWorldID()  { return m_WorldID; }
 	void setWorldID(WorldID_t WorldID) throw() { m_WorldID = WorldID; }
 	
 	// get packet's debug string
-	string toString() const throw() { return "CLSelectWorld"; }
+	string toString()  { return "CLSelectWorld"; }
 
 private :
 
@@ -71,13 +71,13 @@ public:
 	Packet* createPacket() throw() { return new CLSelectWorld(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CLSelectWorld"; }
+	string getPacketName()  { return "CLSelectWorld"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CL_SELECT_WORLD; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CL_SELECT_WORLD; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw() { return szWorldID; }
+	PacketSize_t getPacketMaxSize()  { return szWorldID; }
 
 };
 

@@ -46,23 +46,23 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_LEARN_SKILL_OK; }
+	PacketID_t getPacketID()  { return PACKET_GC_LEARN_SKILL_OK; }
 	
 	// get packet size
-	PacketSize_t getPacketSize() const throw() { return szSkillType+szSkillDomainType; }
+	PacketSize_t getPacketSize()  { return szSkillType+szSkillDomainType; }
 	
 	// get packet's name
-	string getPacketName() const throw() { return "GCLearnSkillOK"; }
+	string getPacketName()  { return "GCLearnSkillOK"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 	
 	// get/set m_SkillType
-	SkillType_t getSkillType() const throw() { return m_SkillType; }
+	SkillType_t getSkillType()  { return m_SkillType; }
 	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
 
 	// get/set m_SkillDomainType
-	SkillDomainType_t getSkillDomainType() const throw() { return m_DomainType;}
+	SkillDomainType_t getSkillDomainType()  { return m_DomainType;}
 	void setSkillDomainType(SkillDomainType_t DomainType) throw() { m_DomainType = DomainType;}
 
 private : 
@@ -100,13 +100,13 @@ public :
 	Packet* createPacket() throw() { return new GCLearnSkillOK(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCLearnSkillOK"; }
+	string getPacketName()  { return "GCLearnSkillOK"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_LEARN_SKILL_OK; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_LEARN_SKILL_OK; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szSkillType+szSkillDomainType; }
+	PacketSize_t getPacketMaxSize()  { return szSkillType+szSkillDomainType; }
 
 };
 

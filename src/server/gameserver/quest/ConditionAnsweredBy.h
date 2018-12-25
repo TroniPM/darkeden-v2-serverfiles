@@ -19,17 +19,17 @@
 class ConditionAnsweredBy : public Condition 
 {
 public:
-	virtual ConditionType_t getConditionType() const throw() { return CONDITION_ANSWERED_BY; }
+	virtual ConditionType_t getConditionType()  { return CONDITION_ANSWERED_BY; }
 
-	virtual bool isActive() const throw() { return false;}
-	virtual bool isPassive() const throw() { return true; } // 패킷에 반응을 하니까... passive condition이다.
-	virtual bool isNeutral() const throw() { return false; }
+	virtual bool isActive()  { return false;}
+	virtual bool isPassive()  { return true; } // 패킷에 반응을 하니까... passive condition이다.
+	virtual bool isNeutral()  { return false; }
 
-	virtual bool isSatisfied(Creature* pCreature1, Creature* pCreature2 = NULL, void* pParam = NULL) const throw();
+	virtual bool isSatisfied(Creature* pCreature1, Creature* pCreature2 = NULL, void* pParam = NULL) ;
 
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public :
 	ScriptID_t getScriptID(void) const { return m_ScriptID;}
@@ -50,9 +50,9 @@ private :
 class ConditionAnsweredByFactory : public ConditionFactory 
 {
 public:
-    virtual ConditionType_t getConditionType() const throw() { return Condition::CONDITION_ANSWERED_BY; }
-    virtual Condition* createCondition() const throw() { return new ConditionAnsweredBy(); }
-    virtual string getConditionName() const throw() { return "AnsweredBy"; }
+    virtual ConditionType_t getConditionType()  { return Condition::CONDITION_ANSWERED_BY; }
+    virtual Condition* createCondition()  { return new ConditionAnsweredBy(); }
+    virtual string getConditionName()  { return "AnsweredBy"; }
 };
 
 #endif

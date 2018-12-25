@@ -20,14 +20,14 @@ public:
 	EffectHideSight(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_HIDE_SIGHT; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_HIDE_SIGHT; }
 
 	void affect() throw(Error){}
 
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void setBonus( uint bonus ) { m_Bonus = bonus; }
@@ -44,8 +44,8 @@ private:
 class EffectHideSightLoader : public EffectLoader 
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_HIDE_SIGHT; }
-	virtual string getEffectClassName() const throw() { return "EffectHideSight"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_HIDE_SIGHT; }
+	virtual string getEffectClassName()  { return "EffectHideSight"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error) {}

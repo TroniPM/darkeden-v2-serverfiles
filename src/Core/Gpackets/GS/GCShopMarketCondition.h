@@ -38,30 +38,30 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_SHOP_MARKET_CONDITION; }
+	PacketID_t getPacketID()  { return PACKET_GC_SHOP_MARKET_CONDITION; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szObjectID + szMarketCond*2; }
+	PacketSize_t getPacketSize()  { return szObjectID + szMarketCond*2; }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCShopMarketCondition"; }
+	string getPacketName()  { return "GCShopMarketCondition"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 
 public :
 
 	// get/set NPC's object id
-	ObjectID_t getObjectID() const throw() { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 	void setObjectID(ObjectID_t creatureID) throw() { m_ObjectID = creatureID; }
 
 	// get/set market condition buy
-	MarketCond_t getMarketCondBuy(void) const throw() { return m_MarketCondBuy;}
+	MarketCond_t getMarketCondBuy(void)  { return m_MarketCondBuy;}
 	void setMarketCondBuy(MarketCond_t cond) throw() { m_MarketCondBuy = cond;}
 
 	// get/set market condition sell
-	MarketCond_t getMarketCondSell(void) const throw() { return m_MarketCondSell;}
+	MarketCond_t getMarketCondSell(void)  { return m_MarketCondSell;}
 	void setMarketCondSell(MarketCond_t cond) throw() { m_MarketCondSell = cond;}
 
 private :
@@ -93,15 +93,15 @@ public :
 	Packet* createPacket() throw() { return new GCShopMarketCondition(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCShopMarketCondition"; }
+	string getPacketName()  { return "GCShopMarketCondition"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_SHOP_MARKET_CONDITION; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_SHOP_MARKET_CONDITION; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GCShopMarketConditionPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szMarketCond*2; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szMarketCond*2; }
 
 };
 

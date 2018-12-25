@@ -41,21 +41,21 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_DROP_MONEY; }
+	PacketID_t getPacketID()  { return PACKET_CG_DROP_MONEY; }
 	
 	// get packet's body size
 	// *OPTIMIZATION HINT*
 	// const static CGDropMoneyPacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketSize() const throw() { return szGold; }
+	PacketSize_t getPacketSize()  { return szGold; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGDropMoney"; }
+	string getPacketName()  { return "CGDropMoney"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 	
 public:
-	Gold_t getAmount(void) const throw() { return m_Amount;}
+	Gold_t getAmount(void)  { return m_Amount;}
 	void setAmount(Gold_t amount) throw() { m_Amount = amount;}
 
 private :
@@ -80,15 +80,15 @@ public:
 	Packet* createPacket() throw() { return new CGDropMoney(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGDropMoney"; }
+	string getPacketName()  { return "CGDropMoney"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_DROP_MONEY; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_DROP_MONEY; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static CGDropMoneyPacketSize 를 정의해서 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szGold; }
+	PacketSize_t getPacketMaxSize()  { return szGold; }
 
 };
 

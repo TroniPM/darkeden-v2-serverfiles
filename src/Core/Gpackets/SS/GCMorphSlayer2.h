@@ -42,16 +42,16 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_MORPH_SLAYER_2; }
+	PacketID_t getPacketID()  { return PACKET_GC_MORPH_SLAYER_2; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return m_SlayerInfo3.getSize(); }
+	PacketSize_t getPacketSize()  { return m_SlayerInfo3.getSize(); }
 
 	// get packet's name
-	string getPacketName() const throw() { return "GCMorphSlayer2"; }
+	string getPacketName()  { return "GCMorphSlayer2"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 
 public :
@@ -85,13 +85,13 @@ public :
 	Packet* createPacket() throw() { return new GCMorphSlayer2(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCMorphSlayer2"; }
+	string getPacketName()  { return "GCMorphSlayer2"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_MORPH_SLAYER_2; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_MORPH_SLAYER_2; }
 
 	// get packet's body size
-	PacketSize_t getPacketMaxSize() const throw()
+	PacketSize_t getPacketMaxSize() 
 	{ 
 		return PCSlayerInfo3::getMaxSize();
 	}

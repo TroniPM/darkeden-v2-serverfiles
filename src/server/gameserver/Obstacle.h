@@ -42,14 +42,14 @@ public:
 	
 // methods from Object
 public:
-	virtual ObjectClass getObjectClass() const throw() { return OBJECT_CLASS_OBSTACLE; }
+	virtual ObjectClass getObjectClass()  { return OBJECT_CLASS_OBSTACLE; }
 	virtual ObjectPriority getObjectPriority() const throw(Error) { return OBJECT_PRIORITY_OBSTACLE; }
-	virtual string toString() const throw() = 0;
+	virtual string toString()  = 0;
 
 // own methods
 public:
-	virtual ObstacleClass getObstacleClass() const throw() = 0;
-	virtual ObstacleType_t getObstacleType() const throw() = 0;
+	virtual ObstacleClass getObstacleClass()  = 0;
+	virtual ObstacleType_t getObstacleType()  = 0;
 };
 
 #endif

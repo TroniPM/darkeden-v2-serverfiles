@@ -28,15 +28,15 @@ public:
 	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) throw(Error);
 	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
 	void tinysave(const char* field) const throw (Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	static void initItemIDRegistry(void) throw();
 
 public:
-	virtual ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_EVENT_GIFT_BOX; }
-	virtual string getObjectTableName() const throw() { return "EventGiftBoxObject"; }
+	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_EVENT_GIFT_BOX; }
+	virtual string getObjectTableName()  { return "EventGiftBoxObject"; }
 
-	virtual ItemType_t getItemType() const throw() { return m_ItemType; }
+	virtual ItemType_t getItemType()  { return m_ItemType; }
 	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() const throw(Error);
@@ -56,8 +56,8 @@ private:
 class EventGiftBoxInfo : public ItemInfo 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_EVENT_GIFT_BOX; }
-	virtual string toString() const throw();
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_EVENT_GIFT_BOX; }
+	virtual string toString() ;
 
 private:
 };
@@ -68,7 +68,7 @@ private:
 class EventGiftBoxInfoManager : public InfoClassManager 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_EVENT_GIFT_BOX; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_EVENT_GIFT_BOX; }
 	virtual void load() throw(Error);
 };
 
@@ -80,8 +80,8 @@ extern EventGiftBoxInfoManager* g_pEventGiftBoxInfoManager;
 class EventGiftBoxFactory : public ItemFactory 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_EVENT_GIFT_BOX; }
-	virtual string getItemClassName() const throw() { return "EventGiftBox"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_EVENT_GIFT_BOX; }
+	virtual string getItemClassName()  { return "EventGiftBox"; }
 	
 public:
 	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new EventGiftBox(ItemType,OptionType); }
@@ -94,8 +94,8 @@ public:
 class EventGiftBoxLoader : public ItemLoader 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_EVENT_GIFT_BOX; }
-	virtual string getItemClassName() const throw() { return "EventGiftBox"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_EVENT_GIFT_BOX; }
+	virtual string getItemClassName()  { return "EventGiftBox"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

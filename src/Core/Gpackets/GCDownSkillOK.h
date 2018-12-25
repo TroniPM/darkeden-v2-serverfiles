@@ -46,19 +46,19 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_DOWN_SKILL_OK; }
+	PacketID_t getPacketID()  { return PACKET_GC_DOWN_SKILL_OK; }
 	
 	// get packet size
-	PacketSize_t getPacketSize() const throw() { return szSkillType; }
+	PacketSize_t getPacketSize()  { return szSkillType; }
 	
 	// get packet's name
-	string getPacketName() const throw() { return "GCDownSkillOK"; }
+	string getPacketName()  { return "GCDownSkillOK"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 	
 	// get/set m_SkillType
-	SkillType_t getSkillType() const throw() { return m_SkillType; }
+	SkillType_t getSkillType()  { return m_SkillType; }
 	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
 
 private : 
@@ -94,13 +94,13 @@ public :
 	Packet* createPacket() throw() { return new GCDownSkillOK(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCDownSkillOK"; }
+	string getPacketName()  { return "GCDownSkillOK"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_DOWN_SKILL_OK; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_DOWN_SKILL_OK; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szSkillType; }
+	PacketSize_t getPacketMaxSize()  { return szSkillType; }
 
 };
 

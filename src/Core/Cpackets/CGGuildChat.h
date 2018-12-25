@@ -33,10 +33,10 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_GUILD_CHAT; }
+	PacketID_t getPacketID()  { return PACKET_CG_GUILD_CHAT; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw()
+	PacketSize_t getPacketSize() 
 	{
 		return szBYTE +
 			   szuint +				// text color
@@ -45,20 +45,20 @@ public:
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "CGGuildChat"; }
+	string getPacketName()  { return "CGGuildChat"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
-	BYTE getType() const throw() { return m_Type; }
+	BYTE getType()  { return m_Type; }
 	void setType( BYTE type ) throw() { m_Type = type; }
 
 	// get/set text color
-	uint getColor() const throw() { return m_Color; }
+	uint getColor()  { return m_Color; }
 	void setColor( uint color ) throw() { m_Color = color; }
 
 	// get/set chatting message
-	string getMessage() const throw() { return m_Message; }
+	string getMessage()  { return m_Message; }
 	void setMessage(const string & msg) throw() { m_Message = msg; }
 	
 
@@ -90,14 +90,14 @@ public:
 	Packet* createPacket() throw() { return new CGGuildChat(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGGuildChat"; }
+	string getPacketName()  { return "CGGuildChat"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_GUILD_CHAT; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_GUILD_CHAT; }
 
 	// get packet's max body size
 	// message 의 최대 크기에 대한 설정이 필요하다.
-	PacketSize_t getPacketMaxSize() const throw()
+	PacketSize_t getPacketMaxSize() 
 	{
 		return szBYTE +
 			   szuint +			// text color

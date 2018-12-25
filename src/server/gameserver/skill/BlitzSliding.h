@@ -20,8 +20,8 @@ public:
 	~BlitzSliding() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "BlitzSliding"; }
-	SkillType_t getSkillType() const throw() { return SKILL_BLITZ_SLIDING; }
+    string getSkillHandlerName()  { return "BlitzSliding"; }
+	SkillType_t getSkillType()  { return SKILL_BLITZ_SLIDING; }
 
 	void execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

@@ -36,13 +36,13 @@ public:
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
-	PacketID_t getPacketID() const throw() { return PACKET_GC_PET_STASH_VERIFY; }
-	PacketSize_t getPacketSize() const throw() { return szBYTE; }
-	string getPacketName() const throw() { return "GCPetStashVerify"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_PET_STASH_VERIFY; }
+	PacketSize_t getPacketSize()  { return szBYTE; }
+	string getPacketName()  { return "GCPetStashVerify"; }
+	string toString() ;
 	
 public:
-	BYTE getCode(void) const throw() { return m_Code;}
+	BYTE getCode(void)  { return m_Code;}
 	void setCode(BYTE code) throw() { m_Code = code;}
 
 private: 
@@ -58,9 +58,9 @@ class GCPetStashVerifyFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCPetStashVerify(); }
-	string getPacketName() const throw() { return "GCPetStashVerify"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_PET_STASH_VERIFY; }
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE; }
+	string getPacketName()  { return "GCPetStashVerify"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_PET_STASH_VERIFY; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE; }
 };
 
 

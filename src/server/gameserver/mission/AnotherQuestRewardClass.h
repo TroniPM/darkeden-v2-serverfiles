@@ -21,7 +21,7 @@ public:
 	virtual QuestMessage	giveReward( PlayerCreature* pPC ) const throw(Error);
 	bool	anotherQuestReward() const { return true; }
 
-	virtual string	toString() const throw();
+	virtual string	toString() ;
 
 private:
 };

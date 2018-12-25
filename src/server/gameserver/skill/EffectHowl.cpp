@@ -83,7 +83,7 @@ void EffectHowl::unaffect(Creature* pCreature)
 }
 
 string EffectHowl::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

@@ -65,16 +65,16 @@ public:
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
-	PacketID_t getPacketID() const throw() { return PACKET_GC_ADD_ITEM_TO_ITEM_VERIFY; }
-	PacketSize_t getPacketSize() const throw();
-	string getPacketName() const throw() { return "GCAddItemToItemVerify"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_ADD_ITEM_TO_ITEM_VERIFY; }
+	PacketSize_t getPacketSize() ;
+	string getPacketName()  { return "GCAddItemToItemVerify"; }
+	string toString() ;
 	
 public:
-	BYTE getCode(void) const throw() { return m_Code;}
+	BYTE getCode(void)  { return m_Code;}
 	void setCode(BYTE code) throw() { m_Code = code;}
 
-	uint getParameter(void) const throw() { return m_Parameter; }
+	uint getParameter(void)  { return m_Parameter; }
 	void setParameter(uint parameter) throw() { m_Parameter = parameter; }
 
 	void setThirdOptionType(const list<OptionType_t>& optionType) throw() { m_ThirdOptionType = optionType; }
@@ -95,9 +95,9 @@ class GCAddItemToItemVerifyFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new GCAddItemToItemVerify(); }
-	string getPacketName() const throw() { return "GCAddItemToItemVerify"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_ADD_ITEM_TO_ITEM_VERIFY; }
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + szuint + 255; }
+	string getPacketName()  { return "GCAddItemToItemVerify"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_ITEM_TO_ITEM_VERIFY; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + szuint + 255; }
 };
 
 

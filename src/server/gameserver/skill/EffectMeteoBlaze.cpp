@@ -165,7 +165,7 @@ void EffectMeteoBlaze::unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Objec
 }
 
 string EffectMeteoBlaze::toString()
-	const throw()
+	
 {
 	__BEGIN_TRY
 

@@ -19,7 +19,7 @@ public:
 	EffectEternity(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_ETERNITY; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_ETERNITY; }
 
 	void affect() throw(Error) {}
 	void affect(Creature* pCreature) throw(Error);
@@ -27,7 +27,7 @@ public:
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error); 
 
-	string toString() const throw();
+	string toString() ;
 
 	void setHPPenalty( int pen ) { m_HPPenalty = pen; }
 	int getHPPenalty() const { return m_HPPenalty; }

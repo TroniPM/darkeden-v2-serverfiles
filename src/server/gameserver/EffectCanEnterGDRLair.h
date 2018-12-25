@@ -27,13 +27,13 @@ public:
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error); 
 
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_CAN_ENTER_GDR_LAIR; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_CAN_ENTER_GDR_LAIR; }
 
     virtual void create(const string & ownerID) throw(Error);
     virtual void save(const string & ownerID) throw(Error);
     virtual void destroy(const string & ownerID) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 };
@@ -45,8 +45,8 @@ private:
 class EffectCanEnterGDRLairLoader : public EffectLoader 
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_CAN_ENTER_GDR_LAIR; }
-	virtual string getEffectClassName() const throw() { return "EffectCanEnterGDRLair"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_CAN_ENTER_GDR_LAIR; }
+	virtual string getEffectClassName()  { return "EffectCanEnterGDRLair"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

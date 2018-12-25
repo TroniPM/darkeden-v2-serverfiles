@@ -23,22 +23,22 @@ public:
 	~ConnectionInfo() throw();
 
 public:
-	string getClientIP() const throw() { return m_ClientIP; }
+	string getClientIP()  { return m_ClientIP; }
 	void setClientIP(const string & clientIP) throw() { m_ClientIP = clientIP; }
 
-	string getPlayerID() const throw() { return m_PlayerID; }
+	string getPlayerID()  { return m_PlayerID; }
 	void setPlayerID(const string & PlayerID) throw() { m_PlayerID = PlayerID; }
 	
-	string getPCName() const throw() { return m_PCName; }
+	string getPCName()  { return m_PCName; }
 	void setPCName(const string & name) throw() { m_PCName = name; }
 
-	Timeval getExpireTime() const throw() { return m_ExpireTime; }
+	Timeval getExpireTime()  { return m_ExpireTime; }
 	void setExpireTime(Timeval tv) throw() { m_ExpireTime = tv; }
 	
-	DWORD getKey() const throw() { return m_Key; }
+	DWORD getKey()  { return m_Key; }
 	void setKey(DWORD key) throw() { m_Key = key; }
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	string  m_ClientIP;   // valid client's ip

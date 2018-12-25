@@ -48,7 +48,7 @@ public:
 	ObjectID_t		getObjectID() const				{ return m_ObjectID; }
 	void			setObjectID( ObjectID_t objectID ) { m_ObjectID = objectID; }
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	MonsterType_t	m_MonsterType;
@@ -69,7 +69,7 @@ public:
 	ItemID_t getBloodBibleItemID() const			{ return m_ItemID; }
 	void	 setBloodBibleItemID(ItemID_t itemID) 	{ m_ItemID = itemID; }
 
-	string toString() const throw();
+	string toString() ;
 
 	ShrineID_t		getShrineID() const				{ return m_ShrineID; }
 	void			setShrineID( ShrineID_t sid )	{ m_ShrineID = sid; }
@@ -139,7 +139,7 @@ public:
 	ShrineSet* getShrineSet( ShrineID_t shrineID ) const throw(Error);
 	int  size() const { return m_ShrineSets.size(); }
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	bool isMatchGuardShrine(Item* pItem, MonsterCorpse* pMonsterCorpse, PlayerCreature* pPC) const throw(Error);

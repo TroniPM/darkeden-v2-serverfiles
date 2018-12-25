@@ -32,34 +32,34 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_LOAD_GEAR; }
+	PacketID_t getPacketID()  { return PACKET_GC_LOAD_GEAR; }
 
 	// 사이즈 재 정리와 규칙 계열 정리
-	PacketSize_t getPacketSize() const throw() {
+	PacketSize_t getPacketSize()  {
 	return m_pGearInfo->getSize() + m_pBloodBibleSign->getSize();
 	}
 
-	string getPacketName() const throw() { return "GCLoadGear"; }
-	string toString() const throw();
+	string getPacketName()  { return "GCLoadGear"; }
+	string toString() ;
 
 public:
 	uchar getType() { return m_Type; }
 	void setType(uchar Type) { m_Type = Type; }
 
 	// get/set Inventory Info
-	InventoryInfo* getInventoryInfo() const throw() { return m_pInventoryInfo; }
+	InventoryInfo* getInventoryInfo()  { return m_pInventoryInfo; }
 	void setInventoryInfo(InventoryInfo* pInventoryInfo) throw(Error) { m_pInventoryInfo = pInventoryInfo; }
 
 	// get/set Gear Info
-	GearInfo* getGearInfo() const throw() { return m_pGearInfo; }
+	GearInfo* getGearInfo()  { return m_pGearInfo; }
 	void setGearInfo(GearInfo* pGearInfo) throw(Error) { m_pGearInfo = pGearInfo; }
 
 	// get/set ExtraInfo
-	ExtraInfo* getExtraInfo() const throw() { return m_pExtraInfo; }
+	ExtraInfo* getExtraInfo()  { return m_pExtraInfo; }
 	void setExtraInfo(ExtraInfo* pExtraInfo) throw(Error) { m_pExtraInfo = pExtraInfo; }
 
 	// get/set EffectInfo
-	EffectInfo* getEffectInfo() const throw() { return m_pEffectInfo; }
+	EffectInfo* getEffectInfo()  { return m_pEffectInfo; }
 	void setEffectInfo(EffectInfo* pEffectInfo) throw(Error) { m_pEffectInfo = pEffectInfo; }
 
 	BloodBibleSignInfo*	getBloodBibleSignInfo() { return m_pBloodBibleSign; }
@@ -87,10 +87,10 @@ public :
 	
 public:
 	Packet* createPacket() throw() { return new GCLoadGear(); }
-	string getPacketName() const throw() { return "GCLoadGear"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_LOAD_GEAR; }
+	string getPacketName()  { return "GCLoadGear"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_LOAD_GEAR; }
 
-	PacketSize_t getPacketMaxSize() const throw() { 
+	PacketSize_t getPacketMaxSize()  { 
 	return GearInfo::getMaxSize() + BloodBibleSignInfo::getMaxSize();
 	}
 };

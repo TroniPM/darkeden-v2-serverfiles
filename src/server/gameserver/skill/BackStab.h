@@ -20,9 +20,9 @@ public:
 	~BackStab() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "BackStab"; }
+    string getSkillHandlerName()  { return "BackStab"; }
 
-	SkillType_t getSkillType() const throw() { return SKILL_BACK_STAB; }
+	SkillType_t getSkillType()  { return SKILL_BACK_STAB; }
 
 	void execute(Ousters* pOusters, ObjectID_t targetObject, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 

@@ -20,8 +20,8 @@ public:
 	~MultiThrowingAxe() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "MultiThrowingAxe"; }
-	SkillType_t getSkillType() const throw() { return SKILL_MULTI_THROWING_AXE; }
+    string getSkillHandlerName()  { return "MultiThrowingAxe"; }
+	SkillType_t getSkillType()  { return SKILL_MULTI_THROWING_AXE; }
 
 	void execute(Monster*, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
 

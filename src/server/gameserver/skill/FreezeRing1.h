@@ -20,8 +20,8 @@ public:
 	~FreezeRing1() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "FreezeRing1"; }
-	SkillType_t getSkillType() const throw() { return SKILL_FREEZE_RING1; }
+    string getSkillHandlerName()  { return "FreezeRing1"; }
+	SkillType_t getSkillType()  { return SKILL_FREEZE_RING1; }
 
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

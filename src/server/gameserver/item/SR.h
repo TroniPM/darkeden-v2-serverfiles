@@ -33,15 +33,15 @@ public:
 	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
 	void tinysave(const char* field) const throw (Error);
 	virtual void saveBullet() throw (Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	static void initItemIDRegistry(void) throw();
 
 public:
-//	virtual ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_SR; }
-//	virtual string getObjectTableName() const throw() { return "SRObject"; }
+//	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_SR; }
+//	virtual string getObjectTableName()  { return "SRObject"; }
 
-/*	bool isSilverWeapon() const throw() { return true; }
+/*	bool isSilverWeapon()  { return true; }
 
 	virtual VolumeWidth_t getVolumeWidth() const throw(Error);
 	virtual VolumeHeight_t getVolumeHeight() const throw(Error);
@@ -54,7 +54,7 @@ public:
 
 	virtual ToHit_t getToHitBonus() const throw(Error);
 
-	virtual int getCriticalBonus(void) const throw();
+	virtual int getCriticalBonus(void) ;
 */
 	void makePCItemInfo(PCItemInfo& result) const;
 
@@ -72,33 +72,33 @@ private:
 class SRInfo : public ItemInfo 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_SR; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_SR; }
 
-	virtual Durability_t getDurability() const throw() { return m_Durability; }
+	virtual Durability_t getDurability()  { return m_Durability; }
 	virtual void setDurability(Durability_t durability) throw() { m_Durability = durability; }
 
-	virtual Damage_t getMinDamage() const throw() { return m_MinDamage; }
+	virtual Damage_t getMinDamage()  { return m_MinDamage; }
 	virtual void setMinDamage(Damage_t minDamage) throw() { m_MinDamage = minDamage; }
 
-	virtual Damage_t getMaxDamage() const throw() { return m_MaxDamage; }
+	virtual Damage_t getMaxDamage()  { return m_MaxDamage; }
 	virtual void setMaxDamage(Damage_t maxDamage) throw() { m_MaxDamage = maxDamage; }
 
-	Range_t getRange() const throw() { return m_Range; }
+	Range_t getRange()  { return m_Range; }
 	void setRange(Range_t range) throw() { m_Range = range; }
 
-	ToHit_t getToHitBonus() const throw() { return m_ToHitBonus; }
+	ToHit_t getToHitBonus()  { return m_ToHitBonus; }
 	void setToHitBonus(ToHit_t tohit) throw() { m_ToHitBonus = tohit; }
 
-	virtual Speed_t getSpeed(void) const throw() { return m_Speed; }
+	virtual Speed_t getSpeed(void)  { return m_Speed; }
 	virtual void setSpeed(Speed_t speed) throw() { m_Speed = speed; }
 
-	virtual uint getItemLevel(void) const throw() { return m_ItemLevel; }
+	virtual uint getItemLevel(void)  { return m_ItemLevel; }
 	virtual void setItemLevel(uint level) throw() { m_ItemLevel = level; }
 
-	virtual int getCriticalBonus(void) const throw() { return m_CriticalBonus; }
+	virtual int getCriticalBonus(void)  { return m_CriticalBonus; }
 	virtual void setCriticalBonus(int bonus) throw() { m_CriticalBonus = bonus; }
 
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 private:
 	Durability_t  m_Durability;
@@ -120,7 +120,7 @@ private:
 class SRInfoManager : public InfoClassManager 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_SR; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_SR; }
 	virtual void load() throw(Error);
 
 };
@@ -136,8 +136,8 @@ extern SRInfoManager* g_pSRInfoManager;
 class SRFactory : public ItemFactory 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_SR; }
-	virtual string getItemClassName() const throw() { return "SR"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_SR; }
+	virtual string getItemClassName()  { return "SR"; }
 	
 public:
 	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new SR(ItemType,OptionType); }
@@ -150,8 +150,8 @@ public:
 class SRLoader : public ItemLoader 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_SR; }
-	virtual string getItemClassName() const throw() { return "SR"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_SR; }
+	virtual string getItemClassName()  { return "SR"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

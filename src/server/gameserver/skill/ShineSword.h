@@ -20,8 +20,8 @@ public:
 	~ShineSword() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "ShineSword"; }
-	SkillType_t getSkillType() const throw() { return SKILL_SHINE_SWORD; }
+    string getSkillHandlerName()  { return "ShineSword"; }
+	SkillType_t getSkillType()  { return SKILL_SHINE_SWORD; }
 
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

@@ -71,7 +71,7 @@ void EffectChainOfDemon::unaffect( Creature* pCreature ) throw (Error)
 	__END_CATCH
 }
 
-string EffectChainOfDemon::toString() const throw()
+string EffectChainOfDemon::toString() 
 {
 	__BEGIN_TRY
 

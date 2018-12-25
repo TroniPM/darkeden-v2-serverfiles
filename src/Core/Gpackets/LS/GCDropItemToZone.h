@@ -29,7 +29,7 @@ public :
 	GCDropItemToZone() throw();
 	~GCDropItemToZone() throw();
 	
-	PacketSize_t getPacketSize() const throw() { return GCAddItemToZone::getPacketSize() + szObjectID; }
+	PacketSize_t getPacketSize()  { return GCAddItemToZone::getPacketSize() + szObjectID; }
 
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
@@ -38,13 +38,13 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GC_DROP_ITEM_TO_ZONE; }
+	PacketID_t getPacketID()  { return PACKET_GC_DROP_ITEM_TO_ZONE; }
 	
 	// get packet's name
-	string getPacketName() const throw() { return "GCDropItemToZone"; }
+	string getPacketName()  { return "GCDropItemToZone"; }
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public:
 	ObjectID_t getDropPetOID() const { return m_DropPetOID; }
@@ -71,15 +71,15 @@ public :
 	Packet* createPacket() throw() { return new GCDropItemToZone(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GCDropItemToZone"; }
+	string getPacketName()  { return "GCDropItemToZone"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_DROP_ITEM_TO_ZONE; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_DROP_ITEM_TO_ZONE; }
 
 	// get packet's body size
 	// *OPTIMIZATION HINT*
 	// const static GCDropItemToZonePacketSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID + szCoord + szCoord + szBYTE + szItemType + szBYTE + 255 + szDurability + szItemNum + szBYTE +(szObjectID + szBYTE + szItemType + szItemNum + szSlotID)* 12 + szObjectID; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID + szCoord + szCoord + szBYTE + szItemType + szBYTE + 255 + szDurability + szItemNum + szBYTE +(szObjectID + szBYTE + szItemType + szItemNum + szSlotID)* 12 + szObjectID; }
 
 };
 

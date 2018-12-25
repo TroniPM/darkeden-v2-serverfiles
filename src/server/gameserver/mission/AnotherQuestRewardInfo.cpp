@@ -37,7 +37,7 @@ QuestMessage AnotherQuestRewardInfo::giveReward( PlayerCreature *pPC ) const
 	__END_CATCH
 }
 
-string AnotherQuestRewardInfo::toString() const throw()
+string AnotherQuestRewardInfo::toString() 
 {
 	__BEGIN_TRY
 

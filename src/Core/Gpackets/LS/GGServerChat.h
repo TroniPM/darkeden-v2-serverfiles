@@ -35,10 +35,10 @@ public :
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_GG_SERVER_CHAT; }
+	PacketID_t getPacketID()  { return PACKET_GG_SERVER_CHAT; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() 
+	PacketSize_t getPacketSize()  
 	{ 
 		return szBYTE + m_Sender.size() +		// Sender
 			   szBYTE + m_Receiver.size() + 	// Receiver
@@ -48,32 +48,32 @@ public :
 	}
 
 	// get packet name
-	string getPacketName() const throw() { return "GGServerChat"; }
+	string getPacketName()  { return "GGServerChat"; }
 	
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public :
 
 	// get/set Sender
-	const string& getSender() const throw() { return m_Sender; }
+	const string& getSender()  { return m_Sender; }
 	void setSender( const string& sender ) throw() { m_Sender = sender; }
 
 	// get/set Receiver
-	const string& getReceiver() const throw() { return m_Receiver; }
+	const string& getReceiver()  { return m_Receiver; }
     void setReceiver( const string& receiver) throw() { m_Receiver= receiver; }
 
 	// get/set text color
-	uint getColor() const throw() { return m_Color; }
+	uint getColor()  { return m_Color; }
 	void setColor( uint color ) throw() { m_Color = color; }
 
 	// get/set message
-	const string& getMessage() const throw() { return m_Message; }
+	const string& getMessage()  { return m_Message; }
 	void setMessage( const string& message ) throw() { m_Message = message; }
 
 	// get/set race
 	// 
-	Race_t getRace() const throw() { return m_Race; }
+	Race_t getRace()  { return m_Race; }
 	void setRace(Race_t race) throw() { m_Race = race; }
 
 private :
@@ -113,15 +113,15 @@ public :
 	Packet* createPacket() throw() { return new GGServerChat(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "GGServerChat"; }
+	string getPacketName()  { return "GGServerChat"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GG_SERVER_CHAT; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GG_SERVER_CHAT; }
 
 	// get packet's max body size
 	// *OPTIMIZATION HINT*
 	// const static GGServerChatPacketMaxSize 를 정의, 리턴하라.
-	PacketSize_t getPacketMaxSize() const throw() 
+	PacketSize_t getPacketMaxSize()  
 	{ 
 		return szBYTE + 10 +					// Sender
 			   szBYTE + 10 + 					// Receiver

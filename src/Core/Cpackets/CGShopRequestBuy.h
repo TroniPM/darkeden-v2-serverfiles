@@ -25,28 +25,28 @@ public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_CG_SHOP_REQUEST_BUY; }
-	PacketSize_t getPacketSize() const throw() { return szObjectID+szShopRackType+szBYTE+szItemNum+szCoord*2; }
-	string getPacketName() const throw() { return "CGShopRequestBuy"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_CG_SHOP_REQUEST_BUY; }
+	PacketSize_t getPacketSize()  { return szObjectID+szShopRackType+szBYTE+szItemNum+szCoord*2; }
+	string getPacketName()  { return "CGShopRequestBuy"; }
+	string toString() ;
 	
 public:
 	ObjectID_t getObjectID() throw() { return m_ObjectID; }
 	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
 
-	ShopRackType_t getShopType(void) const throw() { return m_RackType; }
+	ShopRackType_t getShopType(void)  { return m_RackType; }
 	void setShopType(ShopRackType_t type) throw() { m_RackType = type; }
 	
-	BYTE getShopIndex(void) const throw() { return m_RackIndex; }
+	BYTE getShopIndex(void)  { return m_RackIndex; }
 	void setShopIndex(BYTE index) throw() { m_RackIndex = index;}
 
-	ItemNum_t getItemNum(void) const throw() { return m_Num;}
+	ItemNum_t getItemNum(void)  { return m_Num;}
 	void setItemNum(ItemNum_t num) throw() { m_Num = num;}
 
-	Coord_t getX(void) const throw() { return m_X; }
+	Coord_t getX(void)  { return m_X; }
 	void setX(Coord_t x) throw() { m_X = x;}
 
-	Coord_t getY(void) const throw() { return m_Y; }
+	Coord_t getY(void)  { return m_Y; }
 	void setY(Coord_t y) throw() { m_Y = y;}
 
 private:
@@ -70,9 +70,9 @@ class CGShopRequestBuyFactory : public PacketFactory
 {
 public:
 	Packet* createPacket() throw() { return new CGShopRequestBuy(); }
-	string getPacketName() const throw() { return "CGShopRequestBuy"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_SHOP_REQUEST_BUY; }
-	PacketSize_t getPacketMaxSize() const throw() { return szObjectID+szShopRackType+szBYTE+szItemNum+szCoord*2; }
+	string getPacketName()  { return "CGShopRequestBuy"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_SHOP_REQUEST_BUY; }
+	PacketSize_t getPacketMaxSize()  { return szObjectID+szShopRackType+szBYTE+szItemNum+szCoord*2; }
 };
 
 

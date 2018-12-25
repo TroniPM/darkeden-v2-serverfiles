@@ -46,7 +46,7 @@ public:
 	void transportPartyCreatures (ZoneID_t ZoneID, ZoneCoord_t ZoneX = 0xffff, ZoneCoord_t ZoneY = 0xffff, int PartyID=0, Turn_t delay=10) const throw (Error);
 	
 	// get debug string 
-	string toString() const throw();
+	string toString() ;
 
 	// Holy Land Race Bonus 변화에 따른 플레이어 refresh
 	void setRefreshHolyLandPlayer( bool bRefresh ) { m_bRefreshHolyLandPlayer = bRefresh; }

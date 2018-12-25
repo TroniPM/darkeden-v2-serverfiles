@@ -20,8 +20,8 @@ public:
 	~MassacreMenegroth() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "MassacreMenegroth"; }
-	SkillType_t getSkillType() const throw() { return SKILL_MASSACRE_MENEGROTH; }
+    string getSkillHandlerName()  { return "MassacreMenegroth"; }
+	SkillType_t getSkillType()  { return SKILL_MASSACRE_MENEGROTH; }
 
 	void execute(Monster* pMonster, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
 

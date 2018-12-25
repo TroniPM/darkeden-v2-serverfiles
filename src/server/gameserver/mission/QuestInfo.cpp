@@ -30,7 +30,7 @@ QuestInfo::~QuestInfo()
 {
 }
 
-string QuestInfo::toString() const throw()
+string QuestInfo::toString() 
 {
 	StringStream msg;
 

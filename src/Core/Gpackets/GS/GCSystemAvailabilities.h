@@ -28,10 +28,10 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_SYSTEM_AVAILABILITIES; }
-	PacketSize_t getPacketSize() const throw() { return szDWORD + szBYTE + szBYTE; }
-	string getPacketName() const throw() { return "GCSystemAvailabilities"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_SYSTEM_AVAILABILITIES; }
+	PacketSize_t getPacketSize()  { return szDWORD + szBYTE + szBYTE; }
+	string getPacketName()  { return "GCSystemAvailabilities"; }
+	string toString() ;
 
 public:
 	DWORD	getFlag() const { return m_Flag; }
@@ -62,9 +62,9 @@ public :
 	
 public:
 	Packet* createPacket() throw() { return new GCSystemAvailabilities(); }
-	string getPacketName() const throw() { return "GCSystemAvailabilities"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_SYSTEM_AVAILABILITIES; }
-	PacketSize_t getPacketMaxSize() const throw() { return szDWORD + szBYTE + szBYTE; }
+	string getPacketName()  { return "GCSystemAvailabilities"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_SYSTEM_AVAILABILITIES; }
+	PacketSize_t getPacketMaxSize()  { return szDWORD + szBYTE + szBYTE; }
 };
 
 //////////////////////////////////////////////////////////////////////////////

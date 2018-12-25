@@ -35,27 +35,27 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_LC_REGISTER_PLAYER_OK; }
+	PacketID_t getPacketID()  { return PACKET_LC_REGISTER_PLAYER_OK; }
 	
 	// get packet body size
 	// *OPTIMIZATION HINT*
 	// const static LCRegisterPlayerOKPacketSize 를 정의, 리턴하라.
-	PacketSize_t getPacketSize() const throw() { return szBYTE + m_GroupName.size() + szBYTE; }
+	PacketSize_t getPacketSize()  { return szBYTE + m_GroupName.size() + szBYTE; }
 	
 	// get packet's name
-	string getPacketName() const throw() { return "LCRegisterPlayerOK"; }
+	string getPacketName()  { return "LCRegisterPlayerOK"; }
 
     // get / set Groupname
-	string getGroupName() const throw() { return m_GroupName; }
+	string getGroupName()  { return m_GroupName; }
 	void setGroupName(const string & GroupName) throw() { m_GroupName = GroupName; }
 	
 	// get / set GoreLevel
-	bool isAdult() const throw() { return m_isAdult; }
+	bool isAdult()  { return m_isAdult; }
 	void setAdult(bool isAdult) throw() { m_isAdult = isAdult; }
 	
 	
 	// get packet's debug string
-	string toString() const throw() { return "LCRegisterPlayerOK"; }
+	string toString()  { return "LCRegisterPlayerOK"; }
 
 private :
 	// 서버 그룹 이름.
@@ -84,13 +84,13 @@ public:
 	Packet* createPacket() throw() { return new LCRegisterPlayerOK(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "LCRegisterPlayerOK"; }
+	string getPacketName()  { return "LCRegisterPlayerOK"; }
 	
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_LC_REGISTER_PLAYER_OK; }
+	PacketID_t getPacketID()  { return Packet::PACKET_LC_REGISTER_PLAYER_OK; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + 20 + szBYTE; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + 20 + szBYTE; }
 	
 };
 

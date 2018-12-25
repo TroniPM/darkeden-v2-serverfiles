@@ -20,8 +20,8 @@ public:
 	~Striking() throw() {}
 
 public:
-    string getSkillHandlerName() const throw() { return "Striking"; }
-	SkillType_t getSkillType() const throw() { return SKILL_STRIKING; }
+    string getSkillHandlerName()  { return "Striking"; }
+	SkillType_t getSkillType()  { return SKILL_STRIKING; }
 
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);

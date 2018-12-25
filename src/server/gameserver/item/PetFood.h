@@ -30,21 +30,21 @@ public:
 	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) throw(Error);
 	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
 	void tinysave(const char* field) const throw (Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 	static void initItemIDRegistry(void) throw();
 
 public:
-	virtual ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_PET_FOOD; }
-	virtual string getObjectTableName() const throw() { return "PetFoodObject"; }
+	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_PET_FOOD; }
+	virtual string getObjectTableName()  { return "PetFoodObject"; }
 
-	virtual ItemType_t getItemType() const throw() { return m_ItemType; }
+	virtual ItemType_t getItemType()  { return m_ItemType; }
 	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
 
-	virtual ItemNum_t getNum() const throw() { return m_Num; }
+	virtual ItemNum_t getNum()  { return m_Num; }
 	virtual void setNum(ItemNum_t Num) throw() { m_Num = Num; }
 
-	bool    isStackable() const throw() { return true; }
+	bool    isStackable()  { return true; }
 
 	virtual VolumeWidth_t getVolumeWidth() const throw(Error);
 	virtual VolumeHeight_t getVolumeHeight() const throw(Error);
@@ -65,8 +65,8 @@ private:
 class PetFoodInfo : public ItemInfo 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_PET_FOOD; }
-	virtual string toString() const throw();
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_PET_FOOD; }
+	virtual string toString() ;
 
 	PetHP_t getPetHP() const { return m_PetHP; }
 	void setPetHP( PetHP_t PetHP ) { m_PetHP = PetHP; }
@@ -90,7 +90,7 @@ private :
 class PetFoodInfoManager : public InfoClassManager 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_PET_FOOD; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_PET_FOOD; }
 	virtual void load() throw(Error);
 };
 
@@ -103,8 +103,8 @@ extern PetFoodInfoManager* g_pPetFoodInfoManager;
 class PetFoodFactory : public ItemFactory 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_PET_FOOD; }
-	virtual string getItemClassName() const throw() { return "PetFood"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_PET_FOOD; }
+	virtual string getItemClassName()  { return "PetFood"; }
 	
 public:
 	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new PetFood(ItemType,OptionType,1); }
@@ -117,8 +117,8 @@ public:
 class PetFoodLoader : public ItemLoader 
 {
 public:
-	virtual Item::ItemClass getItemClass() const throw() { return Item::ITEM_CLASS_PET_FOOD; }
-	virtual string getItemClassName() const throw() { return "PetFood"; }
+	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_PET_FOOD; }
+	virtual string getItemClassName()  { return "PetFood"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error);

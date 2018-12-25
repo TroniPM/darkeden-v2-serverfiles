@@ -20,8 +20,8 @@ public:
 	~ChargingPower() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "ChargingPower"; }
-	SkillType_t getSkillType() const throw() { return SKILL_CHARGING_POWER; }
+    string getSkillHandlerName()  { return "ChargingPower"; }
+	SkillType_t getSkillType()  { return SKILL_CHARGING_POWER; }
 
 	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 

@@ -20,8 +20,8 @@ public:
 	~PowerOfLand() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "PowerOfLand"; }
-	SkillType_t getSkillType() const throw() { return SKILL_POWER_OF_LAND; }
+    string getSkillHandlerName()  { return "PowerOfLand"; }
+	SkillType_t getSkillType()  { return SKILL_POWER_OF_LAND; }
 
 	void execute(Slayer* pSlayer, ObjectID_t ObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
 	void execute(Slayer* pSlayer, ZoneCoord_t X, ZoneCoord_t Y, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);

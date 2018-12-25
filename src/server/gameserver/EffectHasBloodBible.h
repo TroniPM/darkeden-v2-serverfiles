@@ -20,12 +20,12 @@ public:
 	EffectHasBloodBible(Item* pItem) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_HAS_BLOOD_BIBLE; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_HAS_BLOOD_BIBLE; }
 
 	void affect(Creature* pCreature) throw(Error);
 	void affect(Item* pItem) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void   	setPart(int part) throw();

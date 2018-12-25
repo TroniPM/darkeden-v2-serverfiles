@@ -19,18 +19,18 @@ public:
 	EffectGloryGround(Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_GLORYGROUND; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_GLORYGROUND; }
 
 	void affect() throw(Error);
 	void affect(Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
 
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void setUserObjectID(ObjectID_t oid) throw() { m_UserObjectID = oid; }
-	ObjectID_t getUserObjectID() const throw() { return m_UserObjectID; }
+	ObjectID_t getUserObjectID()  { return m_UserObjectID; }
 
 	void setSlayer( bool bVampire = true ) { m_bSlayer = bVampire; }
 	bool isSlayer() const { return m_bSlayer; }

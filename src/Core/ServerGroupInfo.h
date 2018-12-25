@@ -53,15 +53,15 @@ public :
 	string toString () const throw ();
 
 	// get / set GroupID
-	BYTE getGroupID() const throw() { return m_GroupID; }
+	BYTE getGroupID()  { return m_GroupID; }
 	void setGroupID(ServerGroupID_t GroupID) throw() { m_GroupID = GroupID; }
 
 	// get / set GroupName
-	string getGroupName() const throw() { return m_GroupName; }
+	string getGroupName()  { return m_GroupName; }
 	void setGroupName(string GroupName) throw() { m_GroupName = GroupName; }
 
 	// get / set Group Stat
-	BYTE getStat() const throw() { return m_Stat; }
+	BYTE getStat()  { return m_Stat; }
 	void setStat(BYTE Stat) throw() { m_Stat = Stat; }
 
 private :

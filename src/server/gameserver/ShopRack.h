@@ -21,7 +21,7 @@ public:
 	virtual ~ShopRack();
 
 public:
-	ShopVersion_t getVersion(void) const throw() { return m_Version; }
+	ShopVersion_t getVersion(void)  { return m_Version; }
 	void setVersion(const ShopVersion_t ver) throw() { m_Version = ver; }
 	void increaseVersion(void) throw() { m_Version++; }
 

@@ -20,7 +20,7 @@ public:
 	EffectGnomesWhisper(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_GNOMES_WHISPER; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_GNOMES_WHISPER; }
 
 	void affect() throw(Error){}
 
@@ -31,7 +31,7 @@ public:
 	bool canSeeInvisibility() const { return m_Level >= 15; }
 	bool canSeeSniping() const { return m_Level >= 25; }
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void setLevel( uint level ) { m_Level = level; }

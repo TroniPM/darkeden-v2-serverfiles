@@ -20,8 +20,8 @@ public:
 	~CrossGuard() throw() {}
 	
 public:
-    string getSkillHandlerName() const throw() { return "CrossGuard"; }
-	SkillType_t getSkillType() const throw() { return SKILL_CROSS_GUARD; }
+    string getSkillHandlerName()  { return "CrossGuard"; }
+	SkillType_t getSkillType()  { return SKILL_CROSS_GUARD; }
 
 	void execute(Ousters* pOusters,  OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
 

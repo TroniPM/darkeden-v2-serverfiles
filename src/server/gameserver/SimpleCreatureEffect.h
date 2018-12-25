@@ -19,14 +19,14 @@ public:
 	SimpleCreatureEffect(EffectClass eClass, Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return m_EffectClass; }
+    EffectClass getEffectClass()  { return m_EffectClass; }
 
 	void affect() throw(Error){}
 
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 private:
 	EffectClass	m_EffectClass;

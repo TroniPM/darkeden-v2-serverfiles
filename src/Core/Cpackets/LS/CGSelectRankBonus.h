@@ -30,19 +30,19 @@ public:
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return PACKET_CG_SELECT_RANK_BONUS; }
+	PacketID_t getPacketID()  { return PACKET_CG_SELECT_RANK_BONUS; }
 
 	// get packet's body size
-	PacketSize_t getPacketSize() const throw() { return szDWORD; }
+	PacketSize_t getPacketSize()  { return szDWORD; }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGSelectRankBonus"; }
+	string getPacketName()  { return "CGSelectRankBonus"; }
 
 	// get packet's debug string
-	string toString() const throw();
+	string toString() ;
 
 public:
-	DWORD getRankBonusType() const throw() { return m_RankBonusType; }
+	DWORD getRankBonusType()  { return m_RankBonusType; }
 	void setRankBonusType( DWORD rankBonusType ) throw() { m_RankBonusType = rankBonusType; }
 
 private:
@@ -60,13 +60,13 @@ public:
 	Packet* createPacket() throw() { return new CGSelectRankBonus(); }
 
 	// get packet name
-	string getPacketName() const throw() { return "CGSelectRankBonus"; }
+	string getPacketName()  { return "CGSelectRankBonus"; }
 
 	// get packet id
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_SELECT_RANK_BONUS; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_SELECT_RANK_BONUS; }
 
 	// get Packet Max Size
-	PacketSize_t getPacketMaxSize() const throw() { return szDWORD; }
+	PacketSize_t getPacketMaxSize()  { return szDWORD; }
 };
 
 

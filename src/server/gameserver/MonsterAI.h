@@ -68,7 +68,7 @@ public:
 
 public:
 	// 데이터 함수
-	bool getDamaged(void) const throw() { return m_bDamaged; }
+	bool getDamaged(void)  { return m_bDamaged; }
 	void setDamaged(bool value) throw() { m_bDamaged = value; }
 
 	// 다이렉티브 관련 함수

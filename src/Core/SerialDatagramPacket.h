@@ -77,7 +77,7 @@ public :
 	void setPort (uint port) throw () { m_Port = port; }
 
 	// get/set serial number
-	uint getSerial() const throw() { return m_Serial; }
+	uint getSerial()  { return m_Serial; }
 	void setSerial( uint serial ) throw() { m_Serial = serial; }
 	
 

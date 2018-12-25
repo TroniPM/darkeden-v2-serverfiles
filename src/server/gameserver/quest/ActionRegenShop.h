@@ -26,10 +26,10 @@ public:
 	virtual ~ActionRegenShop() throw();
 	
 public:
-	virtual ActionType_t getActionType() const throw() { return ACTION_REGEN_SHOP; }
+	virtual ActionType_t getActionType()  { return ACTION_REGEN_SHOP; }
 	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
 	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual string toString() const throw();
+	virtual string toString() ;
 
 public:
 	void addListElement(ShopTemplateID_t id) throw() { m_List.push_back(id); }
@@ -50,9 +50,9 @@ private :
 class ActionRegenShopFactory : public ActionFactory 
 {
 public:
-	virtual ActionType_t getActionType() const throw() { return Action::ACTION_REGEN_SHOP; }
-	virtual string getActionName() const throw() { return "RegenShop"; }
-	virtual Action* createAction() const throw() { return new ActionRegenShop(); }
+	virtual ActionType_t getActionType()  { return Action::ACTION_REGEN_SHOP; }
+	virtual string getActionName()  { return "RegenShop"; }
+	virtual Action* createAction()  { return new ActionRegenShop(); }
 
 };
 #endif

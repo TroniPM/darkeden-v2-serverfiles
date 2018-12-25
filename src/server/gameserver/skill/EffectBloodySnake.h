@@ -21,7 +21,7 @@ public:
 	EffectBloodySnake(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_BLOODY_SNAKE; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_BLOODY_SNAKE; }
 
 	void affect() throw(Error);
 	void affect(Creature* pCreature) throw(Error);
@@ -32,7 +32,7 @@ public:
 	void unaffect(Item* pItem) throw(Error) {}
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject) throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	string getCasterName(void) const { return m_CasterName; }
@@ -77,8 +77,8 @@ private:
 class EffectBloodySnakeLoader : public EffectLoader 
 {
 public:
-	virtual Effect::EffectClass getEffectClass() const throw() { return Effect::EFFECT_CLASS_BLOODY_SNAKE; }
-	virtual string getEffectClassName() const throw() { return "EffectBloodySnake"; }
+	virtual Effect::EffectClass getEffectClass()  { return Effect::EFFECT_CLASS_BLOODY_SNAKE; }
+	virtual string getEffectClassName()  { return "EffectBloodySnake"; }
 
 public:
 	virtual void load(Creature* pCreature) throw(Error) {}

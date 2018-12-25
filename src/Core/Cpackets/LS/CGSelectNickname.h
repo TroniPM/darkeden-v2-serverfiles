@@ -27,12 +27,12 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_CG_SELECT_NICKNAME; }
-	PacketSize_t getPacketSize() const throw() { return szWORD; }
-	string getPacketName() const throw() { return "CGSelectNickname"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_CG_SELECT_NICKNAME; }
+	PacketSize_t getPacketSize()  { return szWORD; }
+	string getPacketName()  { return "CGSelectNickname"; }
+	string toString() ;
 
-	WORD getNicknameID() const throw() { return m_NicknameID; }
+	WORD getNicknameID()  { return m_NicknameID; }
 	void setNicknameID( WORD NicknameID ) throw() { m_NicknameID = NicknameID; }
 
 private :
@@ -57,9 +57,9 @@ public:
 	
 public:
 	Packet* createPacket() throw() { return new CGSelectNickname(); }
-	string getPacketName() const throw() { return "CGSelectNickname"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_CG_SELECT_NICKNAME; }
-	PacketSize_t getPacketMaxSize() const throw() { return szWORD; }
+	string getPacketName()  { return "CGSelectNickname"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_CG_SELECT_NICKNAME; }
+	PacketSize_t getPacketMaxSize()  { return szWORD; }
 };
 
 

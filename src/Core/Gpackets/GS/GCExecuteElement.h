@@ -28,10 +28,10 @@ public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error) { iStream.read(m_QuestID); iStream.read(m_Condition); iStream.read(m_Index); }
     void write(SocketOutputStream & oStream) const throw(ProtocolException, Error) { oStream.write(m_QuestID); oStream.write(m_Condition); oStream.write(m_Index); }
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
-	PacketID_t getPacketID() const throw() { return PACKET_GC_EXECUTE_ELEMENT; }
-	PacketSize_t getPacketSize() const throw() { return szDWORD + szBYTE + szWORD; }
-	string getPacketName() const throw() { return "GCExecuteElement"; }
-	string toString() const throw();
+	PacketID_t getPacketID()  { return PACKET_GC_EXECUTE_ELEMENT; }
+	PacketSize_t getPacketSize()  { return szDWORD + szBYTE + szWORD; }
+	string getPacketName()  { return "GCExecuteElement"; }
+	string toString() ;
 
 public:
 	DWORD	getQuestID() const { return m_QuestID; }
@@ -62,9 +62,9 @@ public :
 	
 public:
 	Packet* createPacket() throw() { return new GCExecuteElement(); }
-	string getPacketName() const throw() { return "GCExecuteElement"; }
-	PacketID_t getPacketID() const throw() { return Packet::PACKET_GC_EXECUTE_ELEMENT; }
-	PacketSize_t getPacketMaxSize() const throw() { return szBYTE + szWORD; }
+	string getPacketName()  { return "GCExecuteElement"; }
+	PacketID_t getPacketID()  { return Packet::PACKET_GC_EXECUTE_ELEMENT; }
+	PacketSize_t getPacketMaxSize()  { return szBYTE + szWORD; }
 };
 
 //////////////////////////////////////////////////////////////////////////////

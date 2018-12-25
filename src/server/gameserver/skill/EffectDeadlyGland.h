@@ -20,15 +20,15 @@ public:
 	EffectDeadlyGland(Creature* pCreature) throw(Error);
 
 public:
-    EffectClass getEffectClass() const throw() { return EFFECT_CLASS_DEADLY_GLAND; }
-	EffectClass getSendEffectClass() const throw() { return m_SendEffectClass; }
+    EffectClass getEffectClass()  { return EFFECT_CLASS_DEADLY_GLAND; }
+	EffectClass getSendEffectClass()  { return m_SendEffectClass; }
 
 	void affect() throw(Error);
 
 	void unaffect(Creature* pCreature) throw(Error);
 	void unaffect() throw(Error);
 
-	string toString() const throw();
+	string toString() ;
 
 public:
 	void setSendEffectClass(EffectClass eClass) throw() { m_SendEffectClass = eClass; }
@@ -37,7 +37,7 @@ public:
 	uint getDamage() const { return m_Damage; }
 
 	void setUserObjectID(ObjectID_t oid) throw() { m_UserObjectID = oid; }
-	ObjectID_t getUserObjectID() const throw() { return m_UserObjectID; }
+	ObjectID_t getUserObjectID()  { return m_UserObjectID; }
 
 private:
 	EffectClass m_SendEffectClass;
