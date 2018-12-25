@@ -25,7 +25,7 @@ class ScriptManager
 {
 public:
 	void init() throw(Error) { load("PUBLIC"); }
-	void load(const string & name) throw(Error);
+	void load(const string & name);
 
 public:
 	Script* getScript(ScriptID_t scriptID) ;

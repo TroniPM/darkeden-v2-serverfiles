@@ -20,7 +20,7 @@
 class EventManager 
 {
 public:
-	EventManager() throw(Error);
+	EventManager();
 	virtual ~EventManager() throw();
 
 public:
@@ -28,7 +28,7 @@ public:
 	Event* getEvent(Event::EventClass EClass) throw();
 	void   deleteEvent(Event::EventClass EClass) throw();
 
-	void   heartbeat() throw(Error);
+	void   heartbeat();
 
 	bool	   isEmpty() const { return m_Events.empty(); }
 

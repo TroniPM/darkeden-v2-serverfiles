@@ -35,12 +35,12 @@ public:
 	typedef StringHashMap::const_iterator	StringHashMapConstItor;
 
 public:
-	StringPool() throw(Error);
-	~StringPool() throw(Error);
+	StringPool();
+	~StringPool();
 
 public:
-	void clear() throw(Error);
-	void load() throw(Error);
+	void clear();
+	void load();
 
 	void addString( uint strID, string sString ) throw( DuplicatedException, Error );
 	

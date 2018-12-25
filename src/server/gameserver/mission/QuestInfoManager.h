@@ -20,15 +20,15 @@ protected:
 
 public:
 	QuestInfoManager( NPC* pNPC ) { m_QuestInfos.clear(); m_pOwnerNPC = pNPC; }
-	virtual ~QuestInfoManager() throw(Error);
+	virtual ~QuestInfoManager();
 
 public:
-	void		clear() throw(Error);
+	void		clear();
 	virtual void		load( const string& name = "" ) throw(Error) = 0;
-	void		addQuestInfo(QuestInfo* pQI) throw(Error);
+	void		addQuestInfo(QuestInfo* pQI);
 
 	QuestMessage	canExecuteQuest( QuestID_t qID, PlayerCreature* pPC ) ;
-	QuestMessage	startQuest( QuestID_t qID, PlayerCreature* pPC ) throw(Error);
+	QuestMessage	startQuest( QuestID_t qID, PlayerCreature* pPC );
 	QuestStatus*	makeQuestStatus( QuestID_t qID, PlayerCreature* pPC ) ;
 
 	bool			isEventQuest( QuestID_t qID ) const;

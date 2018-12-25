@@ -77,7 +77,7 @@ public:
 class CGSkillToInventoryHandler 
 {
 public:
-	static void execute(CGSkillToInventory* pCGSkillToInventory, Player* pPlayer) throw(Error);
+	static void execute(CGSkillToInventory* pCGSkillToInventory, Player* pPlayer);
 };
 
 #endif

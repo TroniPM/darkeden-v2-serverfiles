@@ -187,7 +187,7 @@ public:
 
 	Creature::MoveMode getMoveMode() const { return m_MoveMode; }
 	void setMoveMode(Creature::MoveMode moveMode) { m_MoveMode = moveMode; }
-	void setMoveMode(const string & moveMode) throw(Error);
+	void setMoveMode(const string & moveMode);
 
 	uint getAIType(void) const { return m_AIType;}
 	void setAIType(uint aitype) { m_AIType = aitype;}
@@ -329,11 +329,11 @@ public:
 
 public:
 	// initialize
-	void init() throw(Error);
+	void init();
 
 	// load to database
-	void load() throw(Error);
-	void reload(MonsterType_t monsterType) throw(Error);
+	void load();
+	void reload(MonsterType_t monsterType);
 
 	// add monster info with monster type
 	void addMonsterInfo(MonsterType_t monsterType, MonsterInfo* pMonsterInfo) throw(DuplicatedException, OutOfBoundException, Error);
@@ -343,11 +343,11 @@ public:
 
 	// 임의의 스프라이트 타입을 가진 몬스터의 타입 리스트를 가져온다.
 	// (여러 몬스터가 하나의 스프라이트 타입을 가질 수 있기 때문에) 
-	const vector<MonsterType_t>& getMonsterTypeBySprite(SpriteType_t spriteType) const throw (NoSuchElementException, OutOfBoundException, Error);
+	const vector<MonsterType_t>& getMonsterTypeBySprite(SpriteType_t spriteType) ;
 	string	getNameBySpriteType(SpriteType_t spriteType) const;
 
-	SpriteType_t getSpriteTypeByName(const string& monsterName) const throw (NoSuchElementException, Error);
-	MonsterType_t getChiefMonsterTypeByName(const string& monsterName) const throw (NoSuchElementException, Error);
+	SpriteType_t getSpriteTypeByName(const string& monsterName) ;
+	MonsterType_t getChiefMonsterTypeByName(const string& monsterName) ;
 	vector<MonsterType_t>& getMonsterTypesByMonsterClass(int MonsterClass) { return m_MonsterClassMap[MonsterClass]; }
 
 	uint	getMaxMonsterType() const	{ return m_MaxMonsterType; }

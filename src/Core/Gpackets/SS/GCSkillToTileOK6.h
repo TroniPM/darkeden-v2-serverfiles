@@ -180,7 +180,7 @@ class GCSkillToTileOK6Handler {
 public :
 
 	// execute packet's handler
-	static void execute(GCSkillToTileOK6* pGCSkillToTileOK6, Player* pPlayer) throw(Error);
+	static void execute(GCSkillToTileOK6* pGCSkillToTileOK6, Player* pPlayer);
 
 };
 

@@ -17,15 +17,15 @@
 class EffectAllysterWind : public Effect 
 {
 public:
-	EffectAllysterWind(Creature* pCreature) throw(Error);
+	EffectAllysterWind(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_ALLYSTER_WIND; }
 
 	void affect() throw(Error){}
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect() throw(Error);
+	void unaffect(Creature* pCreature);
+	void unaffect();
 
 	string toString() ;
 

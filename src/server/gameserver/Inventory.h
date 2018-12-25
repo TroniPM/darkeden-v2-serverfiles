@@ -67,7 +67,7 @@ public:
 public:
 	bool  addItem(CoordInven_t X, CoordInven_t Y, Item* pItem) throw();
 	bool  CheckaddItem(CoordInven_t X, CoordInven_t Y, Item* pItem, Item* pItem2) throw();
-	Item* addItemEx(CoordInven_t X, CoordInven_t Y, Item* pItem) throw(Error);
+	Item* addItemEx(CoordInven_t X, CoordInven_t Y, Item* pItem);
 	bool  addItem(Item* pItem) throw(InventoryFullException,Error);
 	bool  addItem(Item* pItem, TPOINT& pt) throw(InventoryFullException,Error);
 	bool  getEmptySlot(Item* pItem, _TPOINT& p) throw()
@@ -76,18 +76,18 @@ public:
 		return getEmptySlot( pItem->getVolumeWidth(), pItem->getVolumeHeight(), p );
 	}
 	bool  getEmptySlot(VolumeWidth_t ItemWidth, VolumeHeight_t ItemHeight, _TPOINT& p) throw();
-	void  deleteItem(ObjectID_t ObjectID) throw(Error);
-	void  deleteItem(CoordInven_t X, CoordInven_t Y) throw(Error);
+	void  deleteItem(ObjectID_t ObjectID);
+	void  deleteItem(CoordInven_t X, CoordInven_t Y);
 	void DeleteKeyItem() throw();
 
-	void  reloadItem(ObjectID_t ObjectID) throw(Error);
+	void  reloadItem(ObjectID_t ObjectID);
 // find methods
 public:
 	Item* searchItem(CoordInven_t X, CoordInven_t Y, Item* pItem, TPOINT & pt) throw();
 
-	Item* getItemWithItemID(ItemID_t itemID) throw(Error);
-	Item* getBeltWithItemID(ItemID_t itemID) throw(Error);
-	Item* getItemWithObjectID(ObjectID_t objectID) throw(Error);
+	Item* getItemWithItemID(ItemID_t itemID);
+	Item* getBeltWithItemID(ItemID_t itemID);
+	Item* getItemWithObjectID(ObjectID_t objectID);
 
 	Item* findItemOID(ObjectID_t objectID, CoordInven_t& X, CoordInven_t& Y) throw();
 	Item* findItemIID(ItemID_t ItemID, CoordInven_t& X, CoordInven_t& Y) throw();
@@ -134,14 +134,14 @@ public:
 // 2002년 어린이날 스타 이벤트를 위해서 재사용(GiftBox는 사용하지 않음)
 // 이벤트 재사용을 위해서 XMAS_STAR를 STAR_EVENT로 바꾸는 것을 고려해야 함
 public:
-	bool hasEnoughStar(const XMAS_STAR& star) throw (Error);
-	void decreaseStar(const XMAS_STAR& star) throw (Error);
-	bool hasRedGiftBox(void) throw (Error);
-	bool hasGreenGiftBox(void) throw (Error);
+	bool hasEnoughStar(const XMAS_STAR& star);
+	void decreaseStar(const XMAS_STAR& star);
+	bool hasRedGiftBox(void);
+	bool hasGreenGiftBox(void);
 //#endif
 
 public:
-	void clearQuestItem(list<Item*>& iList) throw(Error);
+	void clearQuestItem(list<Item*>& iList);
 
 ////////////////////////////////////////
 // member data

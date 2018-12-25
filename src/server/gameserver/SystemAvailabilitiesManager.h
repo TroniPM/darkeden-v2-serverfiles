@@ -53,7 +53,7 @@ public:
 		SYSTEM_MAX
 	};
 
-	void load() throw(Error);
+	void load();
 
 	bool isAvailable( SystemKind kind ) const { return m_SystemFlags.test(kind); }
 	void setAvailable( SystemKind kind, bool avail = true ) {

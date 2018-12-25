@@ -268,13 +268,13 @@ public:
 public:
 
 	// initialize Manager
-	void init() throw(Error);
+	void init();
 
 	// void load() throw();
-	void load() throw(Error);
+	void load();
 	
 	// Save to DB
-	void save() throw(Error);
+	void save();
 
 	// get SkillInfo
 	SkillInfo* getSkillInfo(SkillType_t SkillType) ;

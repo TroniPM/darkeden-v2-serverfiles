@@ -16,14 +16,14 @@
 class SimpleTileEffect : public Effect 
 {
 public:
-	SimpleTileEffect(EffectClass eClass, Zone* pZone, ZoneCoord_t x, ZoneCoord_t y) throw(Error);
+	SimpleTileEffect(EffectClass eClass, Zone* pZone, ZoneCoord_t x, ZoneCoord_t y);
 
 public:
     EffectClass getEffectClass()  { return m_EffectClass; }
 
 	void affect() throw(Error){}
 
-	void unaffect() throw(Error);
+	void unaffect();
 
 	string toString() ;
 

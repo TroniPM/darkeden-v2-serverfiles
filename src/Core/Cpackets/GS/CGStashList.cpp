@@ -39,7 +39,7 @@ void CGStashList::execute (Player* pPlayer)
 }
 
 string CGStashList::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

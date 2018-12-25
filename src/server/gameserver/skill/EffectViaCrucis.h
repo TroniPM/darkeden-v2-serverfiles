@@ -17,13 +17,13 @@
 class EffectViaCrucis : public Effect 
 {
 public:
-	EffectViaCrucis(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY) throw(Error);
+	EffectViaCrucis(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_VIA_CRUCIS; }
 
-	void affect() throw(Error);
-	void unaffect() throw(Error);
+	void affect();
+	void unaffect();
 	string toString() ;
 
 public:

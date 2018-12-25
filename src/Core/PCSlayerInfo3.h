@@ -108,12 +108,12 @@ public:
 
 
 public:
-	PCType getPCType () const throw () { return PC_SLAYER; }
+	PCType getPCType ()  { return PC_SLAYER; }
 	
-    void read (SocketInputStream & iStream) throw (ProtocolException, Error);
-    void write (SocketOutputStream & oStream) const throw (ProtocolException, Error);
+    void read (SocketInputStream & iStream);
+    void write (SocketOutputStream & oStream) ;
 
-	uint getSize () const throw () 
+	uint getSize ()  
 	{ 
 		return szObjectID 					// 크리처 아이디
 			+ szBYTE + m_Name.size() 		// 이름
@@ -187,26 +187,26 @@ public:
 		return *this;
 	}
 
-	string toString () const throw ();
+	string toString () ;
 
 public:
-	ObjectID_t getObjectID () const throw () { return m_ObjectID; }
+	ObjectID_t getObjectID ()  { return m_ObjectID; }
 	void setObjectID (ObjectID_t creatureID) throw () { m_ObjectID = creatureID; }
 
-	string getName () const throw (Error) { Assert(m_Name != ""); return m_Name; }
+	string getName ()  { Assert(m_Name != ""); return m_Name; }
 	void setName (const string & name) throw (Error) { m_Name = name; Assert(m_Name != ""); }
 
-	Coord_t getX () const throw () { return m_X; }
+	Coord_t getX ()  { return m_X; }
 	void setX (Coord_t x) throw () { m_X = x; }
 	
-	Coord_t getY () const throw () { return m_Y; }
+	Coord_t getY ()  { return m_Y; }
 	void setY (Coord_t y) throw () { m_Y = y; }
 
-	Dir_t getDir () const throw () { return m_Dir; }
+	Dir_t getDir ()  { return m_Dir; }
 	void setDir (Dir_t dir) throw () { m_Dir = dir; }
 
 public:
-    Sex getSex () const throw () 
+    Sex getSex ()  
 	{ 
 		return m_Outlook.test(SLAYER_BIT_SEX)?MALE:FEMALE; 
 	}
@@ -215,7 +215,7 @@ public:
 		m_Outlook.set(SLAYER_BIT_SEX,(sex==MALE?true:false)); 
 	}
 
-	HairStyle getHairStyle () const throw () 
+	HairStyle getHairStyle ()  
 	{ 
 		return HairStyle((m_Outlook.to_ulong() >> SLAYER_BIT_HAIRSTYLE1) & 3); 
 	}
@@ -225,7 +225,7 @@ public:
 		m_Outlook |= bitset<SLAYER_BIT_MAX>(hairStyle << SLAYER_BIT_HAIRSTYLE1); 
 	}
 
-	HelmetType getHelmetType () const throw () 
+	HelmetType getHelmetType ()  
 	{ 
 		return HelmetType((m_Outlook.to_ulong() >> SLAYER_BIT_HELMET1) & 3); 
 	}
@@ -235,7 +235,7 @@ public:
 		m_Outlook |= bitset<SLAYER_BIT_MAX>(helmetType << SLAYER_BIT_HELMET1); 
 	}
 
-	JacketType getJacketType () const throw () 
+	JacketType getJacketType ()  
 	{ 
 		return JacketType((m_Outlook.to_ulong() >> SLAYER_BIT_JACKET1) & 7); 
 	}
@@ -245,7 +245,7 @@ public:
 		m_Outlook |= bitset<SLAYER_BIT_MAX>(jacketType << SLAYER_BIT_JACKET1); 
 	}
 
-	PantsType getPantsType () const throw () 
+	PantsType getPantsType ()  
 	{ 
 		return PantsType((m_Outlook.to_ulong() >> SLAYER_BIT_PANTS1) & 7); 
 	}
@@ -255,7 +255,7 @@ public:
 		m_Outlook |= bitset<SLAYER_BIT_MAX>(pantsType << SLAYER_BIT_PANTS1); 
 	}
 
-	WeaponType getWeaponType () const throw ()
+	WeaponType getWeaponType () 
 	{ 
 		return WeaponType((m_Outlook.to_ulong() >> SLAYER_BIT_WEAPON1) & 15); 
 	}
@@ -265,7 +265,7 @@ public:
 		m_Outlook |= bitset<SLAYER_BIT_MAX>(weaponType << SLAYER_BIT_WEAPON1); 
 	}
 
-	ShieldType getShieldType () const throw ()
+	ShieldType getShieldType () 
 	{
 		return ShieldType((m_Outlook.to_ulong() >> SLAYER_BIT_SHIELD1) & 3);
 	}
@@ -276,7 +276,7 @@ public:
 	}
 
 
-	MotorcycleType getMotorcycleType () const throw ()
+	MotorcycleType getMotorcycleType () 
 	{ 
 		return MotorcycleType((m_Outlook.to_ulong() >> SLAYER_BIT_MOTORCYCLE1) & 7); 
 	}
@@ -286,7 +286,7 @@ public:
 		m_Outlook |= bitset<SLAYER_BIT_MAX>(motorcycleType << SLAYER_BIT_MOTORCYCLE1); 
 	}
 
-	BYTE getShoulderType () const throw ()
+	BYTE getShoulderType () 
 	{
 		return BYTE((m_Outlook.to_ulong() >> SLAYER_BIT_SHOULDER1) & 3); 
 	}
@@ -297,7 +297,7 @@ public:
 	}
 
 public:
-	Color_t getHairColor () const throw () 
+	Color_t getHairColor ()  
 	{ 
 		return m_Colors[ SLAYER_COLOR_HAIR ]; 
 	}
@@ -306,7 +306,7 @@ public:
 		m_Colors[ SLAYER_COLOR_HAIR ] = color; 
 	}
 
-	Color_t getSkinColor () const throw () 
+	Color_t getSkinColor ()  
 	{ 
 		return m_Colors[ SLAYER_COLOR_SKIN ]; 
 	}
@@ -315,7 +315,7 @@ public:
 		m_Colors[ SLAYER_COLOR_SKIN ] = color; 
 	}
 
-	Color_t getHelmetColor (ColorType colorType = MAIN_COLOR) const throw () 
+	Color_t getHelmetColor (ColorType colorType = MAIN_COLOR)  
 	{ 
 		return m_Colors[ SLAYER_COLOR_HELMET + (uint)colorType ]; 
 	}
@@ -324,7 +324,7 @@ public:
 		m_Colors[ SLAYER_COLOR_HELMET + (uint)colorType ] = color; 
 	}
 
-	Color_t getJacketColor (ColorType colorType = MAIN_COLOR) const throw () 
+	Color_t getJacketColor (ColorType colorType = MAIN_COLOR)  
 	{ 
 		return m_Colors[ SLAYER_COLOR_JACKET + (uint)colorType ]; 
 	}
@@ -333,7 +333,7 @@ public:
 		m_Colors[ SLAYER_COLOR_JACKET + (uint)colorType ] = color; 
 	}
 
-	Color_t getPantsColor (ColorType colorType = MAIN_COLOR) const throw () 
+	Color_t getPantsColor (ColorType colorType = MAIN_COLOR)  
 	{ 
 		return m_Colors[ SLAYER_COLOR_PANTS + (uint)colorType ]; 
 	}
@@ -342,7 +342,7 @@ public:
 		m_Colors[ SLAYER_COLOR_PANTS + (uint)colorType ] = color; 
 	}
 
-	Color_t getWeaponColor (ColorType colorType = MAIN_COLOR) const throw () 
+	Color_t getWeaponColor (ColorType colorType = MAIN_COLOR)  
 	{ 
 		return m_Colors[ SLAYER_COLOR_WEAPON + (uint)colorType ]; 
 	}
@@ -351,7 +351,7 @@ public:
 		m_Colors[ SLAYER_COLOR_WEAPON + (uint)colorType ] = color; 
 	}
 
-	Color_t getShieldColor (ColorType colorType = MAIN_COLOR) const throw () 
+	Color_t getShieldColor (ColorType colorType = MAIN_COLOR)  
 	{ 
 		return m_Colors[ SLAYER_COLOR_SHIELD + (uint)colorType ]; 
 	}
@@ -360,7 +360,7 @@ public:
 		m_Colors[ SLAYER_COLOR_SHIELD + (uint)colorType ] = color; 
 	}
 
-	Color_t getMotorcycleColor (ColorType colorType = MAIN_COLOR) const throw () 
+	Color_t getMotorcycleColor (ColorType colorType = MAIN_COLOR)  
 	{ 
 		return m_Colors[ SLAYER_COLOR_MOTORCYCLE + (uint)colorType ]; 
 	}
@@ -369,7 +369,7 @@ public:
 		m_Colors[ SLAYER_COLOR_MOTORCYCLE + (uint)colorType ] = color; 
 	}
 
-	Color_t getShoulderColor () const throw () 
+	Color_t getShoulderColor ()  
 	{ 
 		return m_Colors[ SLAYER_COLOR_SHOULDER ]; 
 	}
@@ -402,7 +402,7 @@ public:
 	uint getUnionID(void) const { return m_UnionID; }
 	void setUnionID(uint UnionID ) { m_UnionID = UnionID; }
 
-	Rank_t getRank () const throw () { return m_Rank; }
+	Rank_t getRank ()  { return m_Rank; }
 	void setRank (Rank_t rank) throw () { m_Rank = rank; }
 
 	Level_t	getAdvancementLevel() const { return m_AdvancementLevel; }

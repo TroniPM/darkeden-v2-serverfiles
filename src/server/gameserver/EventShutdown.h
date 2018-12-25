@@ -21,7 +21,7 @@ public:
 			
 public:
 	virtual EventClass getEventClass()  { return EVENT_CLASS_SHUTDOWN; }
-	virtual void activate() throw(Error);
+	virtual void activate();
 	virtual string toString() ;
 
 private:

@@ -61,13 +61,13 @@ public:
 	~DarkLightInfoManager() throw();
 
 public:
-	void init() throw(Error);
-	void load() throw(Error);
+	void init();
+	void load();
 
 	DarkLightInfo* getDarkLightInfo(BYTE month, BYTE hour, BYTE minute) throw(OutOfBoundException, Error);
 	const DarkLightInfo* getDarkLightInfo(BYTE month, BYTE hour, BYTE minute) ;
 
-	DarkLightInfo* getCurrentDarkLightInfo( Zone* pZone ) throw(Error);
+	DarkLightInfo* getCurrentDarkLightInfo( Zone* pZone );
 	const DarkLightInfo* getCurrentDarkLightInfo( Zone* pZone ) ;
 
 	string toString() ;

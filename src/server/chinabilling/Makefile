@@ -782,7 +782,7 @@ CBillingPlayer.o: CBillingPlayer.cpp CBillingPlayer.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  /home/darkeden/vs/src/server/Mutex.h CBillingInfo.h \
  CBillingPacketHeader.h CBillingPacketErrorBody.h \
- /usr/include/bits/stdio_lim.h /usr/include/bits/signum.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/bits/signum.h \
  /usr/include/bits/siginfo.h /usr/include/bits/wordsize.h \
  /usr/include/bits/sigaction.h /usr/include/bits/sigcontext.h \
  /usr/include/asm/sigcontext.h /usr/include/bits/sigstack.h

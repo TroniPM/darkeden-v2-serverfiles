@@ -19,13 +19,13 @@ class Packet;
 class EffectPacketSend : public Effect 
 {
 public:
-	EffectPacketSend(Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
+	EffectPacketSend(Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y);
 
 public:
 	// ¾È ¾´´Ù -_-; KIN
     EffectClass getEffectClass()  { return EFFECT_CLASS_PK_ZONE_REGEN; }
 
-	void unaffect() throw(Error); 
+	void unaffect(); 
 
 	string toString() ;
 

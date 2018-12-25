@@ -17,7 +17,7 @@
 class EffectSummonSylph : public Effect 
 {
 public:
-	EffectSummonSylph(Creature* pCreature) throw(Error);
+	EffectSummonSylph(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_SUMMON_SYLPH; }
@@ -25,8 +25,8 @@ public:
 
 	void affect() throw(Error){}
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect() throw(Error);
+	void unaffect(Creature* pCreature);
+	void unaffect();
 
 	string toString() ;
 

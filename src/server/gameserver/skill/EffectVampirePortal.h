@@ -23,18 +23,18 @@ class VampirePortalItem;
 class EffectVampirePortal : public Effect 
 {
 public:
-	EffectVampirePortal(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y) throw(Error);
+	EffectVampirePortal(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_VAMPIRE_PORTAL; }
 
 	void affect() throw(Error){}
-	void affect(Creature* pCreature) throw(Error);
-	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject ) throw(Error);
+	void affect(Creature* pCreature);
+	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject );
 
-	void unaffect() throw(Error);
+	void unaffect();
 	void unaffect(Creature* pCreature) throw(Error) {};
-	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject ) throw(Error);
+	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject );
 	void unaffect(Item* pItem) throw(Error) {}
 
 	string toString() ;

@@ -116,15 +116,15 @@ public :
 public :
 
     // get/set host address and port of this socket
-    string getHost () const throw () { return m_Host; }
-	uint getPort () const throw () { return m_Port; }
-	IP_t getHostIP () const throw () { return (IP_t)(m_SockAddr.sin_addr.s_addr); }
+    string getHost ()  { return m_Host; }
+	uint getPort ()  { return m_Port; }
+	IP_t getHostIP ()  { return (IP_t)(m_SockAddr.sin_addr.s_addr); }
 
 	// check if socket is valid
-	bool isValid () const throw () { return m_SocketID != INVALID_SOCKET; }
+	bool isValid ()  { return m_SocketID != INVALID_SOCKET; }
 
 	// get socket descriptor
-	SOCKET getSOCKET () const throw () { return m_SocketID; }
+	SOCKET getSOCKET ()  { return m_SocketID; }
 
 	//add by viva
 	string getLocalHost();// ;
@@ -136,11 +136,11 @@ public :
 protected :
 
     // get/set host address from socket address structure
-    string _getHost ();// const throw ();
+    string _getHost ();// ;
     void _setHost (const string & host);// throw ();
 			    
     // get/set port from socket address structure
-	uint _getPort ();// const throw ();
+	uint _getPort ();// ;
 	void _setPort (uint port);// throw ();
 	
 	

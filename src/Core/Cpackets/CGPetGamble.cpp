@@ -49,7 +49,7 @@ void CGPetGamble::execute (Player* pPlayer)
 }
 
 string CGPetGamble::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

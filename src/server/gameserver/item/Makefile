@@ -349,7 +349,7 @@ AR.o: AR.cpp AR.h ../ConcreteItem.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -445,7 +445,7 @@ Belt.o: Belt.cpp Belt.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -541,7 +541,7 @@ Blade.o: Blade.cpp Blade.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -635,7 +635,7 @@ Bomb.o: Bomb.cpp Bomb.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -731,7 +731,7 @@ BombMaterial.o: BombMaterial.cpp BombMaterial.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -829,7 +829,7 @@ Bracelet.o: Bracelet.cpp Bracelet.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -925,7 +925,7 @@ Coat.o: Coat.cpp Coat.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -1021,7 +1021,7 @@ Cross.o: Cross.cpp Cross.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -1117,7 +1117,7 @@ Mace.o: Mace.cpp Mace.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -1211,7 +1211,7 @@ ETC.o: ETC.cpp ETC.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -1308,7 +1308,7 @@ Glove.o: Glove.cpp Glove.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -1404,7 +1404,7 @@ Sword.o: Sword.cpp Sword.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -1500,7 +1500,7 @@ Helm.o: Helm.cpp Helm.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -1595,7 +1595,7 @@ HolyWater.o: HolyWater.cpp HolyWater.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -1690,7 +1690,7 @@ Key.o: Key.cpp Key.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -1786,7 +1786,7 @@ LearningItem.o: LearningItem.cpp LearningItem.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -1882,7 +1882,7 @@ Magazine.o: Magazine.cpp Magazine.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -1977,7 +1977,7 @@ Mine.o: Mine.cpp Mine.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -2072,7 +2072,7 @@ Money.o: Money.cpp Money.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -2168,7 +2168,7 @@ Motorcycle.o: Motorcycle.cpp Motorcycle.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -2266,7 +2266,7 @@ Necklace.o: Necklace.cpp Necklace.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -2363,7 +2363,7 @@ Potion.o: Potion.cpp Potion.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -2464,7 +2464,7 @@ Ring.o: Ring.cpp Ring.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -2561,7 +2561,7 @@ SG.o: SG.cpp SG.h ../ConcreteItem.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -2658,7 +2658,7 @@ SMG.o: SMG.cpp SMG.h ../ConcreteItem.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -2755,7 +2755,7 @@ Shield.o: Shield.cpp Shield.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -2851,7 +2851,7 @@ Shoes.o: Shoes.cpp Shoes.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -2948,7 +2948,7 @@ SR.o: SR.cpp SR.h ../ConcreteItem.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -3045,7 +3045,7 @@ Trouser.o: Trouser.cpp Trouser.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -3142,7 +3142,7 @@ VampireBracelet.o: VampireBracelet.cpp VampireBracelet.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -3239,7 +3239,7 @@ VampireRing.o: VampireRing.cpp VampireRing.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -3336,7 +3336,7 @@ VampireNecklace.o: VampireNecklace.cpp VampireNecklace.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -3433,7 +3433,7 @@ VampireCoat.o: VampireCoat.cpp VampireCoat.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -3527,7 +3527,7 @@ Water.o: Water.cpp Water.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -3622,7 +3622,7 @@ Skull.o: Skull.cpp Skull.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -3721,7 +3721,7 @@ Serum.o: Serum.cpp Serum.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -3817,7 +3817,7 @@ VampireETC.o: VampireETC.cpp VampireETC.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -3913,7 +3913,7 @@ SlayerPortalItem.o: SlayerPortalItem.cpp SlayerPortalItem.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -4009,7 +4009,7 @@ VampirePortalItem.o: VampirePortalItem.cpp VampirePortalItem.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -4106,7 +4106,7 @@ EventGiftBox.o: EventGiftBox.cpp EventGiftBox.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -4206,7 +4206,7 @@ EventStar.o: EventStar.cpp EventStar.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -4308,7 +4308,7 @@ VampireEarring.o: VampireEarring.cpp VampireEarring.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -4402,7 +4402,7 @@ Relic.o: Relic.cpp Relic.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -4500,7 +4500,7 @@ VampireWeapon.o: VampireWeapon.cpp VampireWeapon.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -4597,7 +4597,7 @@ VampireAmulet.o: VampireAmulet.cpp VampireAmulet.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -4692,7 +4692,7 @@ QuestItem.o: QuestItem.cpp QuestItem.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -4848,7 +4848,7 @@ EventTree.o: EventTree.cpp EventTree.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -4948,7 +4948,7 @@ EventETC.o: EventETC.cpp EventETC.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -4969,7 +4969,7 @@ BloodBible.o: BloodBible.cpp /usr/include/stdio.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
  /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
- /usr/include/bits/stdio_lim.h BloodBible.h ../Item.h ../Object.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h BloodBible.h ../Item.h ../Object.h \
  ../../../Core/Types.h ../../../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
  /usr/include/c++/7/streambuf /usr/include/c++/7/fstream \
@@ -5065,7 +5065,7 @@ CastleSymbol.o: CastleSymbol.cpp /usr/include/stdio.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
  /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
- /usr/include/bits/stdio_lim.h CastleSymbol.h ../Item.h ../Object.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h CastleSymbol.h ../Item.h ../Object.h \
  ../../../Core/Types.h ../../../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
  /usr/include/c++/7/streambuf /usr/include/c++/7/fstream \
@@ -5240,7 +5240,7 @@ CoupleRing.o: CoupleRing.cpp CoupleRing.h CoupleRingBase.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -5337,7 +5337,7 @@ VampireCoupleRing.o: VampireCoupleRing.cpp VampireCoupleRing.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -5494,7 +5494,7 @@ EventItem.o: EventItem.cpp EventItem.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -5596,7 +5596,7 @@ DyePotion.o: DyePotion.cpp DyePotion.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -5695,7 +5695,7 @@ ResurrectItem.o: ResurrectItem.cpp ResurrectItem.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -5795,7 +5795,7 @@ MixingItem.o: MixingItem.cpp MixingItem.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -5897,7 +5897,7 @@ OustersArmsband.o: OustersArmsband.cpp OustersArmsband.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -5998,7 +5998,7 @@ OustersBoots.o: OustersBoots.cpp OustersBoots.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -6099,7 +6099,7 @@ OustersChakram.o: OustersChakram.cpp OustersChakram.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -6200,7 +6200,7 @@ OustersCirclet.o: OustersCirclet.cpp OustersCirclet.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -6301,7 +6301,7 @@ OustersCoat.o: OustersCoat.cpp OustersCoat.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -6402,7 +6402,7 @@ OustersPendent.o: OustersPendent.cpp OustersPendent.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -6503,7 +6503,7 @@ OustersRing.o: OustersRing.cpp OustersRing.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -6604,7 +6604,7 @@ OustersStone.o: OustersStone.cpp OustersStone.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -6705,7 +6705,7 @@ OustersWristlet.o: OustersWristlet.cpp OustersWristlet.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -6803,7 +6803,7 @@ Larva.o: Larva.cpp Larva.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -6906,7 +6906,7 @@ Pupa.o: Pupa.cpp Pupa.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -7012,7 +7012,7 @@ ComposMei.o: ComposMei.cpp ComposMei.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -7115,7 +7115,7 @@ OustersSummonItem.o: OustersSummonItem.cpp OustersSummonItem.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -7217,7 +7217,7 @@ EffectItem.o: EffectItem.cpp EffectItem.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -7316,7 +7316,7 @@ CodeSheet.o: CodeSheet.cpp CodeSheet.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -7416,7 +7416,7 @@ MoonCard.o: MoonCard.cpp MoonCard.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -7516,7 +7516,7 @@ CommonItem.o: CommonItem.cpp CommonItem.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -7536,7 +7536,7 @@ Sweeper.o: Sweeper.cpp /usr/include/stdio.h /usr/include/features.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
  /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
- /usr/include/bits/stdio_lim.h Sweeper.h ../Item.h ../Object.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h Sweeper.h ../Item.h ../Object.h \
  ../../../Core/Types.h ../../../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
  /usr/include/c++/7/streambuf /usr/include/c++/7/fstream \
@@ -7713,7 +7713,7 @@ PetItem.o: PetItem.cpp PetItem.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -7822,7 +7822,7 @@ PetFood.o: PetFood.cpp PetFood.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -7923,7 +7923,7 @@ PetEnchantItem.o: PetEnchantItem.cpp PetEnchantItem.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -8023,7 +8023,7 @@ LuckyBag.o: LuckyBag.cpp LuckyBag.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -8125,7 +8125,7 @@ SMSItem.o: SMSItem.cpp SMSItem.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -8225,7 +8225,7 @@ CoreZap.o: CoreZap.cpp CoreZap.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -8324,7 +8324,7 @@ TrapItem.o: TrapItem.cpp TrapItem.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -8344,7 +8344,7 @@ WarItem.o: WarItem.cpp /usr/include/stdio.h /usr/include/features.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
  /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
- /usr/include/bits/stdio_lim.h WarItem.h ../Item.h ../Object.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h WarItem.h ../Item.h ../Object.h \
  ../../../Core/Types.h ../../../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
  /usr/include/c++/7/streambuf /usr/include/c++/7/fstream \
@@ -8492,7 +8492,7 @@ CarryingReceiver.o: CarryingReceiver.cpp CarryingReceiver.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -8589,7 +8589,7 @@ ShoulderArmor.o: ShoulderArmor.cpp ShoulderArmor.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -8686,7 +8686,7 @@ Dermis.o: Dermis.cpp Dermis.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -8783,7 +8783,7 @@ Persona.o: Persona.cpp Persona.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -8880,7 +8880,7 @@ Fascia.o: Fascia.cpp Fascia.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -8981,7 +8981,7 @@ Mitten.o: Mitten.cpp Mitten.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -9082,7 +9082,7 @@ SubInventory.o: SubInventory.cpp SubInventory.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -9183,7 +9183,7 @@ SubInventory.o: SubInventory.cpp SubInventory.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -9284,7 +9284,7 @@ SubInventory.o: SubInventory.cpp SubInventory.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -9385,7 +9385,7 @@ StoneAbility.o: StoneAbility.cpp StoneAbility.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -9486,7 +9486,7 @@ StoneAbility.o: StoneAbility.cpp StoneAbility.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -9587,7 +9587,7 @@ CoatZap.o: CoatZap.cpp CoatZap.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -9688,7 +9688,7 @@ BootZap.o: BootZap.cpp BootZap.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -9789,7 +9789,7 @@ WeaponZap.o: WeaponZap.cpp WeaponZap.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -9890,7 +9890,7 @@ HelmZap.o: HelmZap.cpp HelmZap.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -9991,7 +9991,7 @@ BeltZap.o: BeltZap.cpp BeltZap.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -10092,7 +10092,7 @@ GloveZap.o: GloveZap.cpp GloveZap.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -10193,7 +10193,7 @@ ShoesZap.o: ShoesZap.cpp ShoesZap.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \

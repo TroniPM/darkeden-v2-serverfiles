@@ -32,10 +32,10 @@ class SBillingPlayer : public Player
 {
 public:
 	// constructor & destructor
-	SBillingPlayer() throw ( Error );
-	SBillingPlayer( Socket* pSocket ) throw ( Error );
+	SBillingPlayer();
+	SBillingPlayer( Socket* pSocket );
 
-	virtual ~SBillingPlayer() throw ( Error );
+	virtual ~SBillingPlayer();
 
 public:
 	
@@ -55,10 +55,10 @@ public:
 	// 반면, 정장하게 로그아웃을 한 경우에는 disconnect(UNDISCONNECTED) 를 사용해야한다.
 	virtual void disconnect( bool bDisconnected = DISCONNECTED ) throw ( InvalidProtocolException, Error );
 
-	void setSocket( Socket* pSocket ) throw ();
+	void setSocket( Socket* pSocket );
 
 	// get debug string
-	virtual string toString() const throw ( Error );
+	virtual string toString() ;
 
 public:
 	void sendIntervalValidation() throw ( ProtocolException, Error );

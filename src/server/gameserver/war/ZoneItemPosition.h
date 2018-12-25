@@ -13,11 +13,11 @@ public:
 	~ZoneItemPosition(){ }
 
 public:
-	virtual Item*	popItem( bool bLock = true ) throw(Error);
+	virtual Item*	popItem( bool bLock = true );
 	virtual Zone*	getZone() throw(Error) { return getZoneByZoneID( m_ZoneID ); }
 
-	Item*		getItem( bool isDel ) throw(Error);
-	Item*		getItem_LOCKED( bool isDel ) throw (Error);
+	Item*		getItem( bool isDel );
+	Item*		getItem_LOCKED( bool isDel );
 
 	ZoneID_t	getZoneID() const { return m_ZoneID; }
 	void		setZoneID( ZoneID_t zoneID ) { m_ZoneID = zoneID; }
@@ -32,8 +32,8 @@ public:
 	virtual string	toString() ;
 
 protected:
-	Item*		getItemFromZone( Zone* pZone ) throw(Error);
-	void		deleteItemFromZone( Zone* pZone, Item* pItem ) throw(Error);
+	Item*		getItemFromZone( Zone* pZone );
+	void		deleteItemFromZone( Zone* pZone, Item* pItem );
 
 private:
 	ZoneID_t	m_ZoneID;

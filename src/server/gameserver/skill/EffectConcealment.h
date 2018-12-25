@@ -17,15 +17,15 @@
 class EffectConcealment : public Effect 
 {
 public:
-	EffectConcealment(Creature* pCreature) throw(Error);
+	EffectConcealment(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_CONCEALMENT; }
 
 	void affect() throw(Error){}
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect() throw(Error);
+	void unaffect(Creature* pCreature);
+	void unaffect();
 
 	string toString() ;
 

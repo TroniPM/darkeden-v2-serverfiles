@@ -169,7 +169,7 @@ class GCThrowBombOK2Handler {
 public :
 
 	// execute packet's handler
-	static void execute(GCThrowBombOK2* pGCThrowBombOK2, Player* pPlayer) throw(Error);
+	static void execute(GCThrowBombOK2* pGCThrowBombOK2, Player* pPlayer);
 
 };
 

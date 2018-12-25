@@ -112,7 +112,7 @@ class CGTryJoinGuildHandler {
 public:
 
 	// execute packet's handler
-	static void execute(CGTryJoinGuild* pCGTryJoinGuild, Player* pPlayer) throw(Error);
+	static void execute(CGTryJoinGuild* pCGTryJoinGuild, Player* pPlayer);
 
 };
 

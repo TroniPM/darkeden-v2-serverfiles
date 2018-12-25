@@ -202,7 +202,7 @@ LogData.o: LogData.cpp /usr/include/i386-linux-gnu/sys/types.h \
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
  /usr/include/wchar.h /usr/include/gconv.h \
  /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
- /usr/include/bits/stdio_lim.h /usr/include/stdlib.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/stdlib.h \
  /usr/include/alloca.h /usr/include/string.h /usr/include/sys/stat.h \
  /usr/include/bits/stat.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
@@ -266,7 +266,7 @@ LogClient.o: LogClient.cpp /usr/include/i386-linux-gnu/sys/types.h \
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
  /usr/include/wchar.h /usr/include/gconv.h \
  /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
- /usr/include/bits/stdio_lim.h /usr/include/stdlib.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/stdlib.h \
  /usr/include/alloca.h /usr/include/string.h /usr/include/sys/stat.h \
  /usr/include/bits/stat.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
@@ -436,7 +436,7 @@ PlayerManager.o: PlayerManager.cpp PlayerManager.h ../Core/Types.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h database/Statement.h \
  database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h gameserver/skill/Skill.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h gameserver/skill/Skill.h \
  gameserver/skill/SkillSlot.h ../Core/Gpackets/GCModifyInformation.h
 GameWorldInfoManager.o: GameWorldInfoManager.cpp \
  GameWorldInfoManager.h ../Core/Types.h ../Core/types/SystemTypes.h \
@@ -787,7 +787,7 @@ Profile.o: Profile.cpp Profile.h ../Core/Types.h \
  ../Core/Packet.h ../Core/SocketInputStream.h ../Core/Socket.h \
  ../Core/SocketImpl.h ../Core/SocketAPI.h ../Core/SocketOutputStream.h \
  ../Core/Datagram.h ../Core/PacketFactory.h \
- /usr/include/bits/stdio_lim.h /usr/include/STL/iomanip.h
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/STL/iomanip.h
 PacketProfile.o: PacketProfile.cpp PacketProfile.h ../Core/Types.h \
  ../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
   /usr/include/c++/7/streambuf \
@@ -836,7 +836,7 @@ PacketProfile.o: PacketProfile.cpp PacketProfile.h ../Core/Types.h \
  /usr/include/getopt.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../Core/VSDateTime.h \
- /usr/include/STL/iomanip.h /usr/include/bits/stdio_lim.h
+ /usr/include/STL/iomanip.h /usr/include/i386-linux-gnu/bits/stdio_lim.h
 GameServerInfoManager.o: GameServerInfoManager.cpp \
  GameServerInfoManager.h ../Core/Types.h ../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \

@@ -41,7 +41,7 @@ void CGTradeMoney::execute (Player* pPlayer)
 }
 
 string CGTradeMoney::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

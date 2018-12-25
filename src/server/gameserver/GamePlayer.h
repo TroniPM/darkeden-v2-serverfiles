@@ -51,8 +51,8 @@ public:
 	const static BYTE nPacketHistorySize = 10;
 
 public:
-	GamePlayer (Socket * pSocket) throw ( Error );
-	~GamePlayer() throw(Error);
+	GamePlayer (Socket * pSocket);
+	~GamePlayer();
 
 public:
 	// read socket's receive buffer and fill input buffer
@@ -75,7 +75,7 @@ public:
 	virtual string toString() ;
 
 	// 스피드 체크
-	virtual bool verifySpeed(Packet* pPacket) throw(Error);
+	virtual bool verifySpeed(Packet* pPacket);
 	
 	// get creature pointer 
 	Creature* getCreature() throw() { return m_pCreature; }
@@ -99,9 +99,9 @@ public:
 	void setPlayerStatus(PlayerStatus playerStatus) throw() { m_PlayerStatus = playerStatus; }
 
 	//
-	void addEvent(Event* pEvent) throw(Error);
-	Event* getEvent(Event::EventClass EClass) throw(Error);
-	void deleteEvent(Event::EventClass EClass) throw(Error);
+	void addEvent(Event* pEvent);
+	Event* getEvent(Event::EventClass EClass);
+	void deleteEvent(Event::EventClass EClass);
 
 	// 패널티 Status 관련 함수
     //Set Flag
@@ -144,17 +144,17 @@ public :
 
 public :
 	void    setBillingSession() throw (Error)	{ BillingPlayerInfo::setBillingSession(this); }
-	bool    sendBillingLogin() throw (Error);
+	bool    sendBillingLogin();
 
-	void	sendCBillingPayInfo() throw ( Error );
+	void	sendCBillingPayInfo();
 
 	// 패킷 암호화 관련
 	// by sigi. 2002.11.27
-	void	setEncryptCode() throw (Error);
+	void	setEncryptCode();
 
 public :
 
-	void kickPlayer( uint nSeconds, uint KickMessageType ) throw (Error);
+	void kickPlayer( uint nSeconds, uint KickMessageType );
 
 	//////////////////////////////////////////////////
 	// PaySystem 관련

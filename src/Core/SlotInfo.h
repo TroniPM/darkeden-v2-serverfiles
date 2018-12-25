@@ -30,13 +30,13 @@ class SlotInfo {
 public :
 
 	// read data from socket input stream
-	void read (SocketInputStream & iStream) throw (ProtocolException, Error);
+	void read (SocketInputStream & iStream);
 
 	// write data to socket output stream
-	void write (SocketOutputStream & oStream) const throw (ProtocolException, Error);
+	void write (SocketOutputStream & oStream) ;
 
 	// get size of object
-	uint getSize () const throw ()
+	uint getSize () 
 	{ return 0; }
 
 	// get max size of object
@@ -44,7 +44,7 @@ public :
 	{ return 0; }
 
 	// get debug string
-	string toString () const throw ();
+	string toString () ;
 
 public :
 

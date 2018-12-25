@@ -23,7 +23,7 @@ public:
     string getSkillHandlerName()  { return "MistOfSoul2"; }
 	SkillType_t getSkillType()  { return SKILL_MIST_OF_SOUL2; }
 
-	void execute(Ousters* pOusters, OustersSkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
+	void execute(Ousters* pOusters, OustersSkillSlot* pSkillSlot, CEffectID_t CEffectID);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };

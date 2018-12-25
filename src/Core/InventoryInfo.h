@@ -21,21 +21,21 @@
 class InventoryInfo 
 {
 public:
-	InventoryInfo () throw ();
-	~InventoryInfo () throw ();
+	InventoryInfo ();
+	~InventoryInfo ();
 	
 public:
-    void read (SocketInputStream & iStream) throw (ProtocolException, Error);
-    void write (SocketOutputStream & oStream) const throw (ProtocolException, Error);
+    void read (SocketInputStream & iStream);
+    void write (SocketOutputStream & oStream) ;
 
-	PacketSize_t getSize () throw ();
+	PacketSize_t getSize ();
 
 	static uint getMaxSize() throw() 
 	{
 		return szBYTE + (InventorySlotInfo::getMaxSize()* 60);
 	}
 
-	string toString () const throw ();
+	string toString () ;
 
 public:
 	BYTE getListNum()  { return m_ListNum; }

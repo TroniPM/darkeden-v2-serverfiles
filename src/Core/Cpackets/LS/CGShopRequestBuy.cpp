@@ -50,7 +50,7 @@ void CGShopRequestBuy::execute (Player* pPlayer)
 }
 
 string CGShopRequestBuy::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

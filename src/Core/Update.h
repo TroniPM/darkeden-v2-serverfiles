@@ -71,34 +71,34 @@ public :
 	void load (ifstream & ifile) throw (IOException, Error);
 
 	// save to file
-	void save (ofstream & ofile) const throw (IOException, Error);
+	void save (ofstream & ofile) ;
 
 	// read from socket input stream
-	void read (SocketInputStream & iStream) throw (ProtocolException, Error);
+	void read (SocketInputStream & iStream);
 
 	// read from socket directly
 	void read (Socket* pSocket) throw (IOException, Error);
 
 	// write to socket output stream
-	void write (SocketOutputStream & oStream) const throw (ProtocolException, Error);
+	void write (SocketOutputStream & oStream) ;
 
 	// write to socket directly
-	void write (Socket* pSocket) const throw (IOException, Error);
+	void write (Socket* pSocket) ;
 
 	// get size
-	uint getSize () const throw ();
+	uint getSize () ;
 
 	// get max size
-	static uint getMaxSize () throw ();
+	static uint getMaxSize ();
 
 	// execute update
-	void execute () throw (Error);
+	void execute ();
 
 
 public :
 
 	// get/set update type
-	Version_t getVersion () const throw () { return m_Version; }
+	Version_t getVersion ()  { return m_Version; }
 	void setVersion (Version_t version) throw () { m_Version = version; }
 
 	// get update type
@@ -135,7 +135,7 @@ public :
 	}
 
 	// get debug string
-	string toString () const throw ();
+	string toString () ;
 
 
 private :

@@ -37,7 +37,7 @@ void CGStashWithdraw::execute (Player* pPlayer)
 }
 
 string CGStashWithdraw::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

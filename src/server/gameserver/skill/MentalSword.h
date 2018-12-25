@@ -23,8 +23,8 @@ public:
     string getSkillHandlerName()  { return "MentalSword"; }
 	SkillType_t getSkillType()  { return SKILL_MENTAL_SWORD; }
 
-	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
-	void execute(Monster* pMonster, Creature* pCreature) throw(Error);
+	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID);
+	void execute(Monster* pMonster, Creature* pCreature);
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };
 

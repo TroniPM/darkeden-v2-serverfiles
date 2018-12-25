@@ -23,8 +23,8 @@ public:
     string getSkillHandlerName()  { return "BrambleHalo"; }
 	SkillType_t getSkillType()  { return SKILL_Bramble_Halo; }
 
-	void execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
-	void execute(Slayer* pSlayer,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
+	void execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID);
+	void execute(Slayer* pSlayer,  SkillSlot* pSkillSlot, CEffectID_t CEffectID);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };

@@ -124,7 +124,7 @@ main.o: main.cpp ../../../Core/Types.h \
  ../../../Core/types/GuildTypes.h ../../../Core/types/WarTypes.h \
  ../../../Core/Utility.h ../../../Core/Exception.h \
  ../../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h /usr/include/bits/stdio_lim.h \
+ /home/darkeden/src/libs/stl_list.h /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ScheduleTest.h /usr/local/include/cppunit/extensions/HelperMacros.h \
  /usr/local/include/cppunit/Portability.h \
  /usr/local/include/cppunit/config-auto.h /usr/include/STL/strstream \

@@ -103,7 +103,7 @@ class CGWithdrawTaxHandler {
 public:
 
 	// execute packet's handler
-	static void execute(CGWithdrawTax* pCGWithdrawTax, Player* pPlayer) throw(Error);
+	static void execute(CGWithdrawTax* pCGWithdrawTax, Player* pPlayer);
 
 };
 

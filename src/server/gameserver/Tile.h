@@ -88,27 +88,27 @@ public:
 
 public:
 	void addEffect(Effect* pEffect) throw(DuplicatedException, Error);
-	bool canAddEffect() throw(Error);
+	bool canAddEffect();
 	void deleteEffect(ObjectID_t effectID) throw(NoSuchElementException, Error);
 	Effect* getEffect(ObjectID_t effectID) throw(NoSuchElementException, Error);
 	bool hasEffect()  { return FLAG_ISSET(m_wFlags, TILE_EFFECT) > 0; }
-	Effect* getEffect(Effect::EffectClass effectClass) throw(Error);
+	Effect* getEffect(Effect::EffectClass effectClass);
 
 public:
-	void addBuilding(BuildingID_t buildingID) throw(Error);
-	void deleteBuilding() throw(Error);
+	void addBuilding(BuildingID_t buildingID);
+	void deleteBuilding();
 	BuildingID_t getBuilding() ;
 	bool hasBuilding()  { return FLAG_ISSET(m_wFlags, TILE_BUILDING) > 0; }
 
 public:
-	void addPortal(Portal* pPortal) throw(Error);
-	void deletePortal() throw(Error);
+	void addPortal(Portal* pPortal);
+	void deletePortal();
 	Portal* getPortal() ;
 	bool hasPortal()  { return FLAG_ISSET(m_wFlags, TILE_PORTAL) > 0; }
 
 public:
-	void addTerrain(TerrainID_t terrainID) throw(Error);
-	void deleteTerrain() throw(Error);
+	void addTerrain(TerrainID_t terrainID);
+	void deleteTerrain();
 	TerrainID_t getTerrain() ;
 	bool isTerrain()  { return FLAG_ISSET(m_wFlags, TILE_TERRAIN) > 0; }
 

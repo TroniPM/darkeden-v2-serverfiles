@@ -69,7 +69,7 @@ public:
 	void clear() throw();
 
 	// void load() throw();
-	void load() throw(Error);
+	void load();
 	
 	// get MonsterItemDropOption
 	MonsterItemDropOption* getMonsterItemDropOption(int id) const;

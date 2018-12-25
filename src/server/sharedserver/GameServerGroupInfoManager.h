@@ -31,16 +31,16 @@ class GameServerGroupInfoManager {
 public :
 	
 	// constructor
-	GameServerGroupInfoManager () throw ();
+	GameServerGroupInfoManager ();
 	
 	// destructor
-	~GameServerGroupInfoManager () throw ();
+	~GameServerGroupInfoManager ();
 
 	// initialize manager
-	void init () throw ( Error );
+	void init ();
 
 	// load from database
-	void load () throw ( Error );
+	void load ();
 	
 	// add info
 	void addGameServerGroupInfo ( GameServerGroupInfo * pGameServerGroupInfo, WorldID_t WorldID ) throw ( DuplicatedException );
@@ -52,10 +52,10 @@ public :
 	GameServerGroupInfo * getGameServerGroupInfo ( const ServerGroupID_t ServerGroupID, WorldID_t WorldID ) ;
 
 	// get count of info
-	uint getSize ( WorldID_t WorldID ) const throw () { return m_GameServerGroupInfos[WorldID].size(); }
+	uint getSize ( WorldID_t WorldID )  { return m_GameServerGroupInfos[WorldID].size(); }
 
 	// get debug string
-	string toString () const throw ();
+	string toString () ;
 
 private :
 	

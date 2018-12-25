@@ -78,9 +78,9 @@ public:
 
 #ifdef __GAME_SERVER__
 public:
-	static void executeMix(CGMixItem* pPacket, Player* pPlayer, Item* pItem) throw(Error);
-	static void executeDetach(CGMixItem* pPacket, Player* pPlayer, Item* pItem) throw(Error);
-	static void executeClearOption(CGMixItem* pPacket, Player* pPlayer, Item* pItem) throw(Error);
+	static void executeMix(CGMixItem* pPacket, Player* pPlayer, Item* pItem);
+	static void executeDetach(CGMixItem* pPacket, Player* pPlayer, Item* pItem);
+	static void executeClearOption(CGMixItem* pPacket, Player* pPlayer, Item* pItem);
 #endif
 
 };

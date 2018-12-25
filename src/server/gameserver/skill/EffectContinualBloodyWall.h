@@ -19,8 +19,8 @@ class Corpse;
 class EffectContinualBloodyWall : public Effect 
 {
 public:
-	EffectContinualBloodyWall(Zone* pZone) throw(Error);
-	virtual ~EffectContinualBloodyWall() throw(Error);
+	EffectContinualBloodyWall(Zone* pZone);
+	virtual ~EffectContinualBloodyWall();
 
 public:
 
@@ -30,9 +30,9 @@ public:
 	// OBJECT_PRIORITY_NONE 라는 뜻은, 타일에 들어가서는 안된다는 뜻이다.
 //	virtual ObjectPriority getObjectPriority()  { return OBJECT_PRIORITY_NONE; }
 
-	virtual void affect() throw(Error);
+	virtual void affect();
 	
-	virtual void unaffect() throw(Error);
+	virtual void unaffect();
 
 	void create(const string & ownerID) throw(Error) {}
 	void save(const string & ownerID) throw(Error) {}
@@ -78,7 +78,7 @@ public:
 
 public:
     virtual void load(Creature* pCreature) throw(Error) {}
-    virtual void load(Zone* pZone) throw(Error);
+    virtual void load(Zone* pZone);
 };
 
 extern EffectContinualBloodyWallLoader* g_pEffectContinualBloodyWallLoader;

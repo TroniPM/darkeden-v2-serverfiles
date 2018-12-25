@@ -69,7 +69,7 @@ void GCChangeInventoryItemNum::read ( SocketInputStream & iStream )
 // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
 //////////////////////////////////////////////////////////////////////
 void GCChangeInventoryItemNum::write ( SocketOutputStream & oStream ) 
-     const throw ( ProtocolException , Error )
+     
 {
 	__BEGIN_TRY
 		
@@ -115,7 +115,7 @@ void GCChangeInventoryItemNum::addChangedItemListElement( ObjectID_t id, ItemNum
 //
 //////////////////////////////////////////////////////////////////////
 string GCChangeInventoryItemNum::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

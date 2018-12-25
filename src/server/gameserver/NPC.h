@@ -60,22 +60,22 @@ class NPC : public Creature
 public: 
 	NPC() throw();
 	NPC(const string & name) throw();
-	virtual ~NPC() throw (Error);
+	virtual ~NPC();
 
 public: 
 	virtual CreatureClass getCreatureClass()  { return CREATURE_CLASS_NPC; }
 	virtual string getCreatureClassString()  { return "CREATURE_CLASS_NPC"; }
 
-	virtual void registerObject() throw(Error);
+	virtual void registerObject();
 
-	virtual bool load() throw(Error);
+	virtual bool load();
 	virtual void save()  { throw UnsupportedError(__PRETTY_FUNCTION__); }
 
 	virtual string toString() ;
 
 public:
-	void init() throw(Error);
-	void act(const Timeval& currentTime) throw(Error);
+	void init();
+	void act(const Timeval& currentTime);
 
 public:
 	virtual Level_t getLevel()  { return 1; }
@@ -151,10 +151,10 @@ public:
 	virtual void setClanType(ClanType_t clan) { m_ClanType = clan; }
 	
 	// SimpleQuest by sigi. 2002.12.3
-//	bool regenSimpleQuest() throw (Error);
-//	bool giveSimpleQuest(Creature* pPC, QuestID_t qid) throw (Error);
-//	void setSimpleQuestListScript(Script* pScript) throw (Error);
-	//void sendSimpleQuestListPacket(Creature* pCreature) throw (Error);
+//	bool regenSimpleQuest();
+//	bool giveSimpleQuest(Creature* pPC, QuestID_t qid);
+//	void setSimpleQuestListScript(Script* pScript);
+	//void sendSimpleQuestListPacket(Creature* pCreature);
 	
 	void setCoupleRegisterManager( PartnerWaitingManager* pPWM ) 	{ m_pCoupleRegisterManager = pPWM; }
 	void setCoupleUnregisterManager( PartnerWaitingManager* pPWM ) 	{ m_pCoupleUnregisterManager = pPWM; }

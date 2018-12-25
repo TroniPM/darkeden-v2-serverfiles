@@ -29,21 +29,21 @@ public :
     void read ( Socket * pSocket ) throw ( ProtocolException , Error );
 		    
     // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
-    void write ( SocketOutputStream & oStream ) const throw ( ProtocolException , Error ) { throw UnsupportedError(__PRETTY_FUNCTION__); }
+    void write ( SocketOutputStream & oStream )  { throw UnsupportedError(__PRETTY_FUNCTION__); }
 
     // 소켓으로 직접 패킷의 바이너리 이미지를 보낸다.
-    void write ( Socket * pSocket ) const throw ( ProtocolException , Error );
+    void write ( Socket * pSocket ) ;
 
 	// execute packet's handler
 	void execute ( Player * pPlayer ) throw ( ProtocolException , Error );
 
 	// get packet id
-	PacketID_t getPacketID () const throw () { return PACKET_UC_REQUEST_LOGIN_MODE; }
+	PacketID_t getPacketID ()  { return PACKET_UC_REQUEST_LOGIN_MODE; }
 	
 	// get packet body size
 	// *OPTIMIZATION HINT*
 	// const static UCRequestLoginModePacketSize 를 정의, 리턴하라.
-	PacketSize_t getPacketSize () const throw () 
+	PacketSize_t getPacketSize ()  
 	{ 
 		return szBYTE;
 	}
@@ -55,10 +55,10 @@ public :
 	}
 
 	// get packet's name
-	string getPacketName () const throw () { return "UCRequestLoginMode"; }
+	string getPacketName ()  { return "UCRequestLoginMode"; }
 	
 	// get packet's debug string
-	string toString () const throw ();
+	string toString () ;
 
 
 public :
@@ -90,13 +90,13 @@ public :
 	Packet * createPacket () throw () { return new UCRequestLoginMode(); }
 
 	// get packet name
-	string getPacketName () const throw () { return "UCRequestLoginMode"; }
+	string getPacketName ()  { return "UCRequestLoginMode"; }
 	
 	// get packet id
-	PacketID_t getPacketID () const throw () { return Packet::PACKET_UC_REQUEST_LOGIN_MODE; }
+	PacketID_t getPacketID ()  { return Packet::PACKET_UC_REQUEST_LOGIN_MODE; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize () const throw () { return szBYTE; }
+	PacketSize_t getPacketMaxSize ()  { return szBYTE; }
 	
 };
 

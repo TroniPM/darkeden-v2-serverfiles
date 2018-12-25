@@ -22,13 +22,13 @@ class CBillingPacketResponseMinusPointBody : public CBillingPacketResponseMinusP
 {
 public:
 	// constructor
-	CBillingPacketResponseMinusPointBody() throw ();
+	CBillingPacketResponseMinusPointBody();
 
 public:
 	void read( SocketInputStream& iStream ) throw ( ProtocolException, Error );
 	void write( SocketOutputStream& oStream ) throw ( ProtocolException, Error );
 
-	string toString() const throw ();
+	string toString() ;
 };
 
 #endif

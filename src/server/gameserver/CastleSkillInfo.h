@@ -54,11 +54,11 @@ public:
 public:
 
 	// void load() throw();
-	void load() throw(Error);
+	void load();
 
-	void clear() throw(Error);
+	void clear();
 
-	void addCastleSkillInfo( CastleSkillInfo* pCastleSkillInfo ) throw(Error);
+	void addCastleSkillInfo( CastleSkillInfo* pCastleSkillInfo );
 	
 	SkillType_t getSkillType( ZoneID_t ZoneID ) const;
 	ZoneID_t getZoneID(SkillType_t SkillType) const;

@@ -35,14 +35,14 @@ public :
     virtual void read (SocketInputStream & iStream) throw (ProtocolException, Error) = 0;
 		    
     // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
-    virtual void write (SocketOutputStream & oStream) const throw (ProtocolException, Error) = 0;
+    virtual void write (SocketOutputStream & oStream) ;
 
 	// get packet's body size
 	// 최적화시, 미리 계산된 정수를 사용한다.
 	virtual PacketSize_t getSize () throw () = 0;
 
 	// get packet's debug string
-	virtual string toString () const throw () = 0;
+	virtual string toString ()  = 0;
 
 };
 

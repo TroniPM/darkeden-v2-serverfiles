@@ -28,7 +28,7 @@ OustersCorpse::~OustersCorpse()
 	__END_CATCH
 }
 string OustersCorpse::toString ()
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

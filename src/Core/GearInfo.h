@@ -21,21 +21,21 @@
 class GearInfo 
 {
 public:
-	GearInfo () throw ();
-	~GearInfo () throw ();
+	GearInfo ();
+	~GearInfo ();
 	
 public:
-    void read (SocketInputStream & iStream) throw (ProtocolException, Error);
-    void write (SocketOutputStream & oStream) const throw (ProtocolException, Error);
+    void read (SocketInputStream & iStream);
+    void write (SocketOutputStream & oStream) ;
 
-	PacketSize_t getSize () throw ();
+	PacketSize_t getSize ();
 
 	static uint getMaxSize () throw () 
 	{
 		return szBYTE + (GearSlotInfo::getMaxSize()* 13);
 	}
 
-	string toString () const throw ();
+	string toString () ;
 
 public:
 	BYTE getListNum()  { return m_ListNum; }

@@ -84,7 +84,7 @@ class GCAddNewItemToZoneHandler {
 public :
 
 	// execute packet's handler
-	static void execute(GCAddNewItemToZone* pPacket, Player* pPlayer) throw(Error);
+	static void execute(GCAddNewItemToZone* pPacket, Player* pPlayer);
 
 };
 

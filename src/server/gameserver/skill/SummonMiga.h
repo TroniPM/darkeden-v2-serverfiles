@@ -25,8 +25,8 @@ public:
     string getSkillHandlerName()  { return "SummonMiga"; }
 	SkillType_t getSkillType()  { return SKILL_SUMMON_MIGA; }
 
-	void execute(Ousters* pOusters, ZoneCoord_t X, ZoneCoord_t Y, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
-	void execute(Ousters* pOusters, ObjectID_t, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
+	void execute(Ousters* pOusters, ZoneCoord_t X, ZoneCoord_t Y, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID);
+	void execute(Ousters* pOusters, ObjectID_t, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID);
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 
 private:

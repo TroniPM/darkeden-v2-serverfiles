@@ -23,7 +23,7 @@ public:
     string getSkillHandlerName()  { return "ThrowHolyWater"; }
 	SkillType_t getSkillType()  { return SKILL_THROW_HOLY_WATER; }
 
-	void execute(Slayer* pSlayer, ObjectID_t TargetObjectID, ObjectID_t ItemObjectID, CoordInven_t X, CoordInven_t Y) throw(Error);
+	void execute(Slayer* pSlayer, ObjectID_t TargetObjectID, ObjectID_t ItemObjectID, CoordInven_t X, CoordInven_t Y);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output) {}
 };

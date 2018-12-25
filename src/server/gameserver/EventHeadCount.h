@@ -24,7 +24,7 @@ public:
 public:
 	virtual EventClass getEventClass()  { return EVENT_CLASS_HEAD_COUNT; }
 
-	virtual void activate() throw(Error);
+	virtual void activate();
 
 	virtual string toString() ;
 

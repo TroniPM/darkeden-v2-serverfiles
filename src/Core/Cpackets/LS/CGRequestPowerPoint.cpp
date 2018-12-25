@@ -45,7 +45,7 @@ void CGRequestPowerPoint::read ( SocketInputStream & iStream )
 }
 		    
 void CGRequestPowerPoint::write ( SocketOutputStream & oStream ) 
-     const throw ( ProtocolException , Error )
+     
 {
 	__BEGIN_TRY
 		
@@ -74,7 +74,7 @@ void CGRequestPowerPoint::execute ( Player * pPlayer )
 }
 
 string CGRequestPowerPoint::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

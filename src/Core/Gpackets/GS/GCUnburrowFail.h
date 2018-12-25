@@ -98,7 +98,7 @@ class  GCUnburrowFailHandler {
 public :
 
 	// execute packet's handler
-	static void execute(GCUnburrowFail* pPacket, Player* pPlayer) throw(Error);
+	static void execute(GCUnburrowFail* pPacket, Player* pPlayer);
 
 };
 

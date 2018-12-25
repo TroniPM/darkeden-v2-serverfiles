@@ -101,7 +101,7 @@ void ZoneInfo::setZoneAccessMode ( const string & zoneAccessMode ) throw ( Error
 	else if ( zoneAccessMode == "PRIVATE" ) m_ZoneAccessMode = PRIVATE;
 }
 
-string ZoneInfo::toString () const throw ()
+string ZoneInfo::toString () 
 {
 	StringStream msg;
 	msg << "ZoneInfo("

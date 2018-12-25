@@ -11963,7 +11963,7 @@ CGPortCheckHandler.o: CGPortCheckHandler.cpp CGPortCheck.h \
  /home/darkeden/sigitest/pt/src/Core/PacketFactory.h \
  /home/darkeden/sigitest/pt/src/Core/Properties.h /usr/include/STL/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
- /home/darkeden/src/libs/stl_multimap.h /usr/include/bits/stdio_lim.h
+ /home/darkeden/src/libs/stl_multimap.h /usr/include/i386-linux-gnu/bits/stdio_lim.h
 CGGuildChat.o: CGGuildChat.cpp CGGuildChat.h \
  /home/darkeden/sigitest/pt/src/Core/Packet.h \
  /home/darkeden/sigitest/pt/src/Core/Types.h \

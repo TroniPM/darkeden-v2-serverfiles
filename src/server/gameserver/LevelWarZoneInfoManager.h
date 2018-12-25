@@ -86,26 +86,26 @@ public:
 	~LevelWarZoneInfoManager();
 
 public:
-	void init() throw(Error);
-	void load() throw(Error);
+	void init();
+	void load();
 
 	void lock() throw(Error) { m_Mutex.lock(); }
 	void unlock() throw(Error) { m_Mutex.unlock(); }
 
-	void addLevelWarZoneInfo( LevelWarZoneInfo* pLevelWarZoneInfo ) throw(Error);
-	int getCreatureLevelGrade( Creature* pCreature ) throw(Error);
-	ZoneID_t getCreatureZoneID( Creature* pCreature ) throw(Error);
+	void addLevelWarZoneInfo( LevelWarZoneInfo* pLevelWarZoneInfo );
+	int getCreatureLevelGrade( Creature* pCreature );
+	ZoneID_t getCreatureZoneID( Creature* pCreature );
 	
 	bool isCreatureBonusZone( Creature* pCreature, ZoneID_t zoneID ) ;
 
 	LevelWarZoneInfo* getLevelWarZoneInfo( ZoneID_t zoneID ) ;
 
 public:
-	void clearLevelWarZoneIDs() throw(Error);
+	void clearLevelWarZoneIDs();
 	bool getLevelWarZoneID( ZoneID_t zoneID, ZoneID_t &levelWarZoneID ) ;
-	void setLevelWarZoneID( ZoneID_t zoneID, ZoneID_t levelWarZoneID ) throw (Error);
+	void setLevelWarZoneID( ZoneID_t zoneID, ZoneID_t levelWarZoneID );
 
-//	void refreshSweeperBonusZonePlayer() throw(Error);
+//	void refreshSweeperBonusZonePlayer();
 	void broadcast( ZoneID_t zoneID, Packet* pPacket ) ;
 
 	string toString() ;

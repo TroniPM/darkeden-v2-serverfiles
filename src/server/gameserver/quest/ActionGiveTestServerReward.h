@@ -25,11 +25,11 @@ public:
 	~ActionGiveTestServerReward();
 
 	virtual ActionType_t getActionType()  { return ACTION_GIVE_TEST_SERVER_REWARD; }
-	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
-	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
+	virtual void read(PropertyBuffer & propertyBuffer);
+	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL);
 	virtual string toString() ;
 
-	void						load() throw (Error);
+	void						load();
 
 private :
 	LuaState*					m_pLuaState;

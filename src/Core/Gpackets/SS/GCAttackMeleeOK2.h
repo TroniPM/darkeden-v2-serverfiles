@@ -121,7 +121,7 @@ class GCAttackMeleeOK2Handler {
 public :
 
 	// execute packet's handler
-	static void execute(GCAttackMeleeOK2* pGCAttackMeleeOK2, Player* pPlayer) throw(Error);
+	static void execute(GCAttackMeleeOK2* pGCAttackMeleeOK2, Player* pPlayer);
 
 };
 

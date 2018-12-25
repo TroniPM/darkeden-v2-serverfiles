@@ -32,8 +32,8 @@ public:
 public:
 	virtual Item::ItemClass getItemClass()  = 0;
 	
-	void init() throw(Error);
-	void reload() throw(Error);
+	void init();
+	void reload();
 
 	virtual void load() throw(Error) = 0;
 
@@ -41,7 +41,7 @@ public:
 	ItemInfo* getItemInfo(ItemType_t ItemType) ;
 	uint getInfoCount()  { return m_InfoCount + 1; }
 
-	void removeAllItemInfo() throw(Error);
+	void removeAllItemInfo();
 
 	// for Mysterious Item
 	ItemType_t  getRandomItemType() ;

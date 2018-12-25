@@ -73,16 +73,16 @@ public :
 	pthread_mutexattr_t * getAttr () throw () { return &m_Attr; }
 	
 	/*
-	bool isFastMutex () const throw ( MutexAttrException ) { return getMutexKind() == PTHREAD_MUTEX_FAST_NP; }
-	bool isRecursiveMutex () const throw ( MutexAttrException ) { return getMutexKind() == PTHREAD_MUTEX_RECURSIVE_NP; }
-	bool isErrorCheckMutex () const throw ( MutexAttrException ) { return getMutexKind() == PTHREAD_MUTEX_ERRORCHECK_NP; }
+	bool isFastMutex ()  { return getMutexKind() == PTHREAD_MUTEX_FAST_NP; }
+	bool isRecursiveMutex ()  { return getMutexKind() == PTHREAD_MUTEX_RECURSIVE_NP; }
+	bool isErrorCheckMutex ()  { return getMutexKind() == PTHREAD_MUTEX_ERRORCHECK_NP; }
 	
 	void setFastMutex () throw ( MutexAttrException ) { setMutexKind( PTHREAD_MUTEX_FAST_NP ); }
 	void setRecursiveMutex () throw ( MutexAttrException ) { setMutexKind( PTHREAD_MUTEX_RECURSIVE_NP ); }
 	void setErrorCheckMutex () throw ( MutexAttrException ) { setMutexKind( PTHREAD_MUTEX_ERRORCHECK_NP ); }
 
 	// get mutex kind
-	int getMutexKind () const throw ( MutexAttrException );
+	int getMutexKind () ;
 
 	// set mutex kind
 	void setMutexKind ( int Kind ) throw ( MutexAttrException );

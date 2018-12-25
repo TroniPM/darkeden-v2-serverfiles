@@ -50,9 +50,9 @@ public:
 	~FameLimitInfoManager() throw();
 
 public:
-	void init() throw(Error);
-	void load() throw(Error);
-	void clear() throw(Error);
+	void init();
+	void load();
+	void clear();
 
 	FameLimitInfo* getFameLimitInfo(SkillDomainType_t domainType, uint level) ;
 	void addFameLimitInfo(FameLimitInfo* pFameLimitInfo) throw();

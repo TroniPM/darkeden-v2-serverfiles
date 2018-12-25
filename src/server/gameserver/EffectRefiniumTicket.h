@@ -16,15 +16,15 @@
 class EffectRefiniumTicket : public Effect 
 {
 public:
-	EffectRefiniumTicket(Creature* pCreature) throw(Error);
+	EffectRefiniumTicket(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_REFINIUM_TICKET; }
 
 	void affect() throw(Error){}
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect() throw(Error);
+	void unaffect(Creature* pCreature);
+	void unaffect();
 
 	void setExit( uint exit ) { m_Exit = exit; }
 	uint getExit() const { return m_Exit; }

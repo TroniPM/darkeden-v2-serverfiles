@@ -74,7 +74,7 @@ public :
 	void resize (int size);// throw (IOException, Error);
 
 	// get buffer length
-	int capacity () const throw () { return m_BufferLen; }
+	int capacity ()  { return m_BufferLen; }
  
     // get data length in buffer
     uint length () const;//  throw ();
@@ -84,10 +84,10 @@ public :
 	char* getBuffer() const { return m_Buffer; }
  
     // check if buffer is empty
-    bool isEmpty () const throw () { return m_Head == m_Tail; }
+    bool isEmpty ()  { return m_Head == m_Tail; }
 
     // get debug string
-    string toString () const throw ()
+    string toString () 
     {
         StringStream msg;
         msg << "SocketOutputStream(m_BufferLen:"<<m_BufferLen<<",m_Head:"<<m_Head<<",m_Tail:"<<m_Tail

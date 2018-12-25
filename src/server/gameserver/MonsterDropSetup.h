@@ -112,7 +112,7 @@ public:
 	void clear() throw();
 
 	// void load() throw();
-	void load() throw(Error);
+	void load();
 	
 	// get MonsterDropSetup
 	MonsterDropSetup* getMonsterDropSetup(int id) const;

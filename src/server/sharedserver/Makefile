@@ -136,7 +136,7 @@ Guild.o: Guild.cpp /usr/include/c++/7/algorithm \
  ../../Core/GuildMemberInfo.h ../../Core/Properties.h \
  /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
- /usr/include/bits/stdio_lim.h
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h
 GuildManager.o: GuildManager.cpp Guild.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
   /usr/include/c++/7/streambuf \
@@ -477,7 +477,7 @@ GameServerManager.o: GameServerManager.cpp /usr/include/stdio.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
  /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
- /usr/include/bits/stdio_lim.h GameServerManager.h ../Thread.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h GameServerManager.h ../Thread.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
  /usr/include/c++/7/streambuf /usr/include/c++/7/fstream \

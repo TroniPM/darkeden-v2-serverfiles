@@ -22,13 +22,13 @@ class CBillingPacketHeader : public CBillingPacketHeaderInfo
 {
 public:
 	// constructor
-	CBillingPacketHeader() throw ();
+	CBillingPacketHeader();
 
 public:
 	void read( SocketInputStream& iStream ) throw ( ProtocolException, Error );
 	void write( SocketOutputStream& iStream ) throw ( ProtocolException, Error );
 
-	string toString() const throw ();
+	string toString() ;
 };
 
 #endif

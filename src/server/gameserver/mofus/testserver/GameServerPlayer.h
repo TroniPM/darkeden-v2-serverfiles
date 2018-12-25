@@ -27,11 +27,11 @@ class GameServerPlayer : public Player {
 public :
 
 	// constructor
-	GameServerPlayer () throw (Error);
-	GameServerPlayer (Socket * pSocket) throw ( Error );
+	GameServerPlayer ();
+	GameServerPlayer (Socket * pSocket);
 	
 	// destructor
-	virtual ~GameServerPlayer () throw (Error);
+	virtual ~GameServerPlayer ();
 
 	virtual void processInput () throw (IOException, Error);
 	
@@ -50,10 +50,10 @@ public :
 	
 	// get/set socket
 	//Socket* getSocket () throw () { return m_pSocket; }
-	void setSocket (Socket* pSocket) throw ();
+	void setSocket (Socket* pSocket);
 
 	// get/set player ID
-	//string getID () const throw () { return m_ID; }
+	//string getID ()  { return m_ID; }
 	//void setID (const string & id) throw () { m_ID = id; }
 
 	// get debug string

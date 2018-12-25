@@ -17,16 +17,16 @@
 class EffectDeleteTile : public Effect 
 {
 public:
-	EffectDeleteTile(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY) throw(Error);
+	EffectDeleteTile(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_DELETE_TILE; }
 
-	void affect() throw(Error);
-	void affect(Creature* pCreature) throw(Error);
+	void affect();
+	void affect(Creature* pCreature);
 
-	void unaffect() throw(Error);
-	void unaffect(Creature* pCreature) throw(Error);
+	void unaffect();
+	void unaffect(Creature* pCreature);
 
 	string toString() ;
 };

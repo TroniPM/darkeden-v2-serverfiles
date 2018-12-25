@@ -41,7 +41,7 @@ void CGMouseToStash::execute (Player* pPlayer)
 }
 
 string CGMouseToStash::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

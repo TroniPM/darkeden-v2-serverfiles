@@ -133,7 +133,7 @@ class GCHPRecoveryStartToSelfHandler {
 public :
 
 	// execute packet's handler
-	static void execute(GCHPRecoveryStartToSelf* pGCHPRecoveryStartToSelf, Player* pPlayer) throw(Error);
+	static void execute(GCHPRecoveryStartToSelf* pGCHPRecoveryStartToSelf, Player* pPlayer);
 
 };
 

@@ -23,7 +23,7 @@ public:
 	string getSkillHandlerName()  { return "SquallyBarrier1"; }
 	SkillType_t getSkillType()  { return SKILL_SQUALLY_BARRIER1; }
 
-	void execute(Ousters* pSlayer,  OustersSkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
+	void execute(Ousters* pSlayer,  OustersSkillSlot* pSkillSlot, CEffectID_t CEffectID);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };

@@ -110,7 +110,7 @@ class  GCMoveErrorHandler {
 public :
 
 	// execute packet's handler
-	static void execute(GCMoveError* pPacket, Player* pPlayer) throw(Error);
+	static void execute(GCMoveError* pPacket, Player* pPlayer);
 
 };
 

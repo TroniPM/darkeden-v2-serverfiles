@@ -24,7 +24,7 @@ public:
 	virtual ~Schedule() throw();
 
 public:
-	virtual bool 		heartbeat() throw(Error);
+	virtual bool 		heartbeat();
 
 	const VSDateTime& 	getScheduledTime() const 	{ return m_ScheduledTime; }
 	ScheduleType 		getType() const 			{ return m_ScheduleType; }

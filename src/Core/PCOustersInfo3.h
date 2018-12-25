@@ -54,12 +54,12 @@ public:
 	}
 	
 public:
-	PCType getPCType () const throw () { return PC_OUSTERS; }
+	PCType getPCType ()  { return PC_OUSTERS; }
 
-	void read (SocketInputStream & iStream) throw (ProtocolException, Error);
-	void write (SocketOutputStream & oStream) const throw (ProtocolException, Error);
+	void read (SocketInputStream & iStream);
+	void write (SocketOutputStream & oStream) ;
 
-	uint getSize () const throw ()
+	uint getSize () 
 	{
 		return szObjectID					// ObjectID
 			+ szBYTE + m_Name.size() 		// 뱀파이어 이름
@@ -136,25 +136,25 @@ public:
 		return *this;
 	}
 
-	string toString () const throw ();
+	string toString () ;
 
 public:
-	ObjectID_t getObjectID () const throw () { return m_ObjectID; }
+	ObjectID_t getObjectID ()  { return m_ObjectID; }
 	void setObjectID (ObjectID_t objectID) throw () { m_ObjectID = objectID; }
 
-    string getName () const throw () { return m_Name; }
+    string getName ()  { return m_Name; }
     void setName (const string & name) throw (Error) { m_Name = name; Assert(m_Name != ""); }
 
-	Coord_t getX () const throw () { return m_X; }
+	Coord_t getX ()  { return m_X; }
 	void setX (Coord_t x) throw () { m_X = x; }
 
-	Coord_t getY () const throw () { return m_Y; }
+	Coord_t getY ()  { return m_Y; }
 	void setY (Coord_t y) throw () { m_Y = y; }
 
-	Dir_t getDir () const throw () { return m_Dir; }
+	Dir_t getDir ()  { return m_Dir; }
 	void setDir (Dir_t dir) throw () { m_Dir = dir; }
 
-	Sex getSex () const throw () { return m_Sex; }
+	Sex getSex ()  { return m_Sex; }
 	void setSex (Sex sex) throw () { m_Sex = sex; }
 	void setSex (const string & sex) throw (InvalidProtocolException)
 	{
@@ -166,28 +166,28 @@ public:
 			throw InvalidProtocolException("invalid sex value");
 	}
 
-	Color_t getCoatColor () const throw () { return m_Colors[OUSTERS_COLOR_COAT]; }
+	Color_t getCoatColor ()  { return m_Colors[OUSTERS_COLOR_COAT]; }
 	void setCoatColor (Color_t coatColor) throw () { m_Colors[OUSTERS_COLOR_COAT] = coatColor; }
 
-	Color_t getHairColor () const throw () { return m_Colors[OUSTERS_COLOR_HAIR]; }
+	Color_t getHairColor ()  { return m_Colors[OUSTERS_COLOR_HAIR]; }
 	void setHairColor (Color_t hairColor) throw () { m_Colors[OUSTERS_COLOR_HAIR] = hairColor; }
 
-	Color_t getArmColor () const throw () { return m_Colors[OUSTERS_COLOR_ARM]; }
+	Color_t getArmColor ()  { return m_Colors[OUSTERS_COLOR_ARM]; }
 	void setArmColor (Color_t armColor) throw () { m_Colors[OUSTERS_COLOR_ARM] = armColor; }
 
-	Color_t getBootsColor () const throw () { return m_Colors[OUSTERS_COLOR_BOOTS]; }
+	Color_t getBootsColor ()  { return m_Colors[OUSTERS_COLOR_BOOTS]; }
 	void setBootsColor (Color_t bootsColor) throw () { m_Colors[OUSTERS_COLOR_BOOTS] = bootsColor; }
 
-	BYTE getWingSylphType() const throw (){ return m_WingSylphType; }
+	BYTE getWingSylphType() { return m_WingSylphType; }
 	void setWingSylphType(BYTE Type) throw (){ m_WingSylphType = Type; }
 
-	ItemType_t getWingItemType() const throw () { return m_WingItemType; }
+	ItemType_t getWingItemType()  { return m_WingItemType; }
 	void setWingItemType(ItemType_t ItemType) throw() { m_WingItemType = ItemType; }
 
-	Color_t getWingBodyColor() const throw () { return m_Colors[OUSTERS_COLOR_WINGBODY]; }
+	Color_t getWingBodyColor()  { return m_Colors[OUSTERS_COLOR_WINGBODY]; }
 	void setWingBodyColor(Color_t Color) throw () { m_Colors[OUSTERS_COLOR_WINGBODY] = Color; }
 
-	Color_t getWingEffectColor() const throw () { return m_Colors[OUSTERS_COLOR_WINGEFFECT]; }
+	Color_t getWingEffectColor()  { return m_Colors[OUSTERS_COLOR_WINGEFFECT]; }
 	void setWingEffectColor(Color_t Color) throw () { m_Colors[OUSTERS_COLOR_WINGEFFECT] = Color; }
 
 	BYTE getMasterEffectColor() const { return m_MasterEffectColor; }
@@ -223,7 +223,7 @@ public:
 	uint getUnionID(void) const { return m_UnionID; }
 	void setUnionID(uint UnionID ) { m_UnionID = UnionID; }
 
-	Rank_t getRank () const throw () { return m_Rank; }
+	Rank_t getRank ()  { return m_Rank; }
 	void setRank (Rank_t rank) throw () { m_Rank = rank; }
 
 	Level_t	getAdvancementLevel() const { return m_AdvancementLevel; }

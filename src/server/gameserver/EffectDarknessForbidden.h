@@ -17,12 +17,12 @@
 class EffectDarknessForbidden : public Effect 
 {
 public:
-	EffectDarknessForbidden(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY) throw(Error);
+	EffectDarknessForbidden(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_DARKNESS_FORBIDDEN; }
 
-	void unaffect() throw(Error);
+	void unaffect();
 
 	string toString() ;
 

@@ -16,13 +16,13 @@
 class EffectTrying : public Effect 
 {
 public:
-//	EffectTrying(Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
-	EffectTrying(Creature* pCreature) throw(Error);
+//	EffectTrying(Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y);
+	EffectTrying(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_TRYING; }
 
-	void unaffect() throw(Error); 
+	void unaffect(); 
 
 	string toString()  { return "EffectTrying"; }
 

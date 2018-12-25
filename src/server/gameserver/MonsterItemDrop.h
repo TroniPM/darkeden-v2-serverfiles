@@ -81,7 +81,7 @@ public:
 	void clear() throw();
 
 	// void load() throw();
-	void load() throw(Error);
+	void load();
 	
 	// get MonsterItemDrop
 	MonsterItemDrop* getMonsterItemDrop(int id) const;

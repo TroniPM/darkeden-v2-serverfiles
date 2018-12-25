@@ -61,16 +61,16 @@ public:
 public:
 
 	// initialize Manager
-	void init() throw(Error);
+	void init();
 
 	// void load() throw();
-	void load() throw(Error);
+	void load();
 	
 	// clear list
 	void clear() throw();
 
 	// Save to DB
-	void save() throw(Error);
+	void save();
 
 	// get RankBonusInfo
 	RankBonusInfo* getRankBonusInfo(DWORD rankBonusType) ;

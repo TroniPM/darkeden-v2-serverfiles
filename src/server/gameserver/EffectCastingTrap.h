@@ -16,7 +16,7 @@ public:
 	void setUnit(int unit) { m_Unit = unit; }
 	void setLarge(bool large) { m_bLarge = large; }
 
-	void affect() throw(Error);
+	void affect();
 	void unaffect() throw(Error) { }
 
 	string toString()  { return "EffectCastingIcicleTrap"; }
@@ -43,7 +43,7 @@ public:
 	void setTick(Turn_t tick) { m_Tick = tick; }
 	void setUnit(int unit) { m_Unit = unit; }
 
-	void affect() throw(Error);
+	void affect();
 	void unaffect() throw(Error) { }
 
 	string toString()  { return "EffectCastingSideTrap"; }
@@ -68,7 +68,7 @@ public:
 	void setWallLength(int len) { m_WallLength = len; }
 	void setTick(Turn_t tick) { m_Tick = tick; }
 
-	void affect() throw(Error);
+	void affect();
 	void unaffect() throw(Error) { }
 
 	string toString()  { return "EffectCastingSideTrap"; }

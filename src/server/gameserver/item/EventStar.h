@@ -27,9 +27,9 @@ public:
 	EventStar(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num) throw();
 	
 public:
-	virtual void create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID=0) throw(Error);
-	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) throw(Error);
-	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
+	virtual void create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID=0);
+	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y);
+	void tinysave(const string & field) 	{ tinysave(field.c_str()); }
 	void tinysave(const char* field) ;
 	virtual string toString() ;
 
@@ -118,7 +118,7 @@ class EventStarInfoManager : public InfoClassManager
 {
 public:
 	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_EVENT_STAR; }
-	virtual void load() throw(Error);
+	virtual void load();
 };
 
 extern EventStarInfoManager* g_pEventStarInfoManager;
@@ -148,9 +148,9 @@ public:
 	virtual string getItemClassName()  { return "EventStar"; }
 
 public:
-	virtual void load(Creature* pCreature) throw(Error);
-	virtual void load(Zone* pZone) throw(Error);
-	virtual void load(StorageID_t storageID, Inventory* pInventory) throw(Error);
+	virtual void load(Creature* pCreature);
+	virtual void load(Zone* pZone);
+	virtual void load(StorageID_t storageID, Inventory* pInventory);
 };
 
 extern EventStarLoader* g_pEventStarLoader;

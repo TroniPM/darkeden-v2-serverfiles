@@ -48,7 +48,7 @@ public:
 	void init() throw(Error) { load(); }
 
 	// load from database
-	void load() throw(Error);
+	void load();
 
 	// save to database
 	void save() throw(Error) { throw UnsupportedError(__PRETTY_FUNCTION__); }

@@ -23,7 +23,7 @@ public :
     string getSkillHandlerName()  { return "TheRoarOfAwakenWarrior"; }
 	SkillType_t getSkillType()  { return SKILL_THE_ROAR_OF_AWAKEN_WARRIOR; }
 
-	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
+	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };

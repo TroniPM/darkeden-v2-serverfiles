@@ -119,7 +119,7 @@ class GCAddSlayerCorpseHandler {
 public :
 
 	// execute packet's handler
-	static void execute(GCAddSlayerCorpse* pPacket, Player* pPlayer) throw(Error);
+	static void execute(GCAddSlayerCorpse* pPacket, Player* pPlayer);
 
 };
 

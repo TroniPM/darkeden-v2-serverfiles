@@ -102,7 +102,7 @@ public:
 class GCLoadGearHandler 
 {
 public:
-	static void execute(GCLoadGear* GCLoadGear, Player* pPlayer) throw(Error);
+	static void execute(GCLoadGear* GCLoadGear, Player* pPlayer);
 
 };
 

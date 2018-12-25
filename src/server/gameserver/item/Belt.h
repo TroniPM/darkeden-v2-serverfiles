@@ -24,14 +24,14 @@ class Belt : public ConcreteItem <Item::ITEM_CLASS_BELT, NoStack, HasDurability,
 {
 public:
 	Belt() throw();
-	Belt(ItemType_t itemType, const list<OptionType_t>& optionType) throw(Error);
+	Belt(ItemType_t itemType, const list<OptionType_t>& optionType);
 	~Belt() throw();
 
 public:
-	virtual void create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID=0) throw(Error);
-	virtual bool destroy() throw(Error);
-	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) throw(Error);
-	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
+	virtual void create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID=0);
+	virtual bool destroy();
+	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y);
+	void tinysave(const string & field) 	{ tinysave(field.c_str()); }
 	void tinysave(const char* field) ;
 	virtual string toString() ;
 
@@ -127,7 +127,7 @@ class BeltInfoManager : public InfoClassManager
 {
 public:
 	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_BELT; }
-	virtual void load() throw(Error);
+	virtual void load();
 };
 
 extern BeltInfoManager* g_pBeltInfoManager;
@@ -159,9 +159,9 @@ public:
 	virtual string getItemClassName()  { return "Belt"; }
 
 public:
-	virtual void load(Creature* pCreature) throw(Error);
-	virtual void load(Zone* pZone) throw(Error);
-	virtual void load(StorageID_t storageID, Inventory* pInventory) throw(Error);
+	virtual void load(Creature* pCreature);
+	virtual void load(Zone* pZone);
+	virtual void load(StorageID_t storageID, Inventory* pInventory);
 };
 
 extern BeltLoader* g_pBeltLoader;

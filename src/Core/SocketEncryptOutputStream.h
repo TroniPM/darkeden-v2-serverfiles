@@ -31,8 +31,8 @@ class SocketEncryptOutputStream : public SocketOutputStream {
 public :
 	
 	// constructor
-	SocketEncryptOutputStream (Socket* sock, uint BufferSize = DefaultSocketEncryptOutputBufferSize) throw (Error);
-	~SocketEncryptOutputStream () throw (Error);
+	SocketEncryptOutputStream (Socket* sock, uint BufferSize = DefaultSocketEncryptOutputBufferSize);
+	~SocketEncryptOutputStream ();
 	
 //////////////////////////////////////////////////
 // methods

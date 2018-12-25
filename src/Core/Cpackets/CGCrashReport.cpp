@@ -88,7 +88,7 @@ void CGCrashReport::execute (Player* pPlayer)
 }
 
 string CGCrashReport::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

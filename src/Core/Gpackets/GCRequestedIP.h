@@ -19,17 +19,17 @@
 class GCRequestedIP : public Packet
 {
 public:
-	GCRequestedIP () throw ();
-	~GCRequestedIP () throw ();
+	GCRequestedIP ();
+	~GCRequestedIP ();
 	
 public:
     void read ( SocketInputStream & iStream ) throw ( ProtocolException , Error );
-    void write ( SocketOutputStream & oStream ) const throw ( ProtocolException , Error );
+    void write ( SocketOutputStream & oStream ) ;
 	void execute ( Player * pPlayer ) throw ( ProtocolException , Error );
-    PacketID_t getPacketID () const throw () { return PACKET_GC_REQUESTED_IP; }
-	string getPacketName () const throw () { return "GCRequestedIP"; }
-	PacketSize_t getPacketSize () const throw () { return szBYTE + szuint + m_Name.size() + 4; }
-	string toString () const throw ();
+    PacketID_t getPacketID ()  { return PACKET_GC_REQUESTED_IP; }
+	string getPacketName ()  { return "GCRequestedIP"; }
+	PacketSize_t getPacketSize ()  { return szBYTE + szuint + m_Name.size() + 4; }
+	string toString () ;
 
 public:
 	string getName()  { return m_Name;}
@@ -55,9 +55,9 @@ class GCRequestedIPFactory : public PacketFactory
 {
 public:
 	Packet * createPacket () throw () { return new GCRequestedIP(); }
-	string getPacketName () const throw () { return "GCRequestedIP"; }
-	PacketID_t getPacketID () const throw () { return Packet::PACKET_GC_REQUESTED_IP; }
-	PacketSize_t getPacketMaxSize () const throw () { return szBYTE + szuint + 10 + 4;}
+	string getPacketName ()  { return "GCRequestedIP"; }
+	PacketID_t getPacketID ()  { return Packet::PACKET_GC_REQUESTED_IP; }
+	PacketSize_t getPacketMaxSize ()  { return szBYTE + szuint + 10 + 4;}
 };
 
 //////////////////////////////////////////////////////////////////////////////
@@ -67,7 +67,7 @@ public:
 class GCRequestedIPHandler 
 {
 public:
-	static void execute ( GCRequestedIP * pGCRequestedIP , Player * pPlayer ) throw ( Error );
+	static void execute ( GCRequestedIP * pGCRequestedIP , Player * pPlayer );
 };
 
 #endif

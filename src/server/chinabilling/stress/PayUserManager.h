@@ -15,9 +15,9 @@ public:
 	~PayUserManager();
 
 public:
-	void init() throw ( Error );
+	void init();
 	void stop() throw ( Error ) {}
-	void run() throw ();
+	void run();
 
 public:
 	PayUser* getUser( char* name );

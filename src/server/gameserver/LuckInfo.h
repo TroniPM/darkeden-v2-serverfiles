@@ -24,8 +24,8 @@ public:
 	~LuckInfoManager() throw();
 
 public:
-	void init() throw(Error);
-	void load() throw(Error);
+	void init();
+	void load();
 
 	const LuckInfo& getLuckInfo(int level) ;
 

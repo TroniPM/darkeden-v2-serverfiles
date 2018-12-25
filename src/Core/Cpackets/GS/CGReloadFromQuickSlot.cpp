@@ -53,7 +53,7 @@ void CGReloadFromQuickSlot::execute (Player* pPlayer)
 }
 
 string CGReloadFromQuickSlot::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

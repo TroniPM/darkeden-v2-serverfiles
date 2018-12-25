@@ -16,15 +16,15 @@
 class EffectHasCastleSymbol : public EffectHasRelic 
 {
 public:
-	EffectHasCastleSymbol(Creature* pCreature) throw(Error);
-	EffectHasCastleSymbol(Item* pItem) throw(Error);
+	EffectHasCastleSymbol(Creature* pCreature);
+	EffectHasCastleSymbol(Item* pItem);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_HAS_CASTLE_SYMBOL; }
 	EffectClass getSendEffectClass()  { return EffectClasses[m_Part]; }
 
-	void affect(Creature* pCreature) throw(Error);
-	void affect(Item* pItem) throw(Error);
+	void affect(Creature* pCreature);
+	void affect(Item* pItem);
 
 	string toString() ;
 

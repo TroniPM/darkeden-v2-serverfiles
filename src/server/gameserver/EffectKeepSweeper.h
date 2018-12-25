@@ -16,13 +16,13 @@
 class EffectKeepSweeper : public Effect
 {
 public:
-	EffectKeepSweeper(Item* pItem) throw(Error);
+	EffectKeepSweeper(Item* pItem);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_KEEP_SWEEPER; }
 	EffectClass getSendEffectClass()  { return (EffectClass)(EFFECT_CLASS_KEEP_SWEEPER + m_Part); }
 
-	void unaffect() throw(Error);
+	void unaffect();
 
 	string toString() ;
 

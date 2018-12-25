@@ -34,7 +34,7 @@ public:
 	virtual string	toString() ;
 
 public:
-//	static void		loadRewardClass( RewardClass& rClass ) throw(Error);
+//	static void		loadRewardClass( RewardClass& rClass );
 
 private:
 	Item::ItemClass			m_IClass;

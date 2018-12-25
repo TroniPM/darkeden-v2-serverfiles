@@ -97,7 +97,7 @@ void CGUseItemFromInventory::execute (Player* pPlayer)
 }
 
 string CGUseItemFromInventory::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

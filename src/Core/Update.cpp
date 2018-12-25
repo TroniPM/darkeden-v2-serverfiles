@@ -13,7 +13,7 @@
 // load from file
 //--------------------------------------------------------------------------------
 void Update::load ( ifstream & ifile ) 
-	throw ( IOException , Error )
+	
 {
 	__BEGIN_TRY
 
@@ -65,7 +65,7 @@ void Update::load ( ifstream & ifile )
 // save to file
 //--------------------------------------------------------------------------------
 void Update::save ( ofstream & ofile ) const 
-	throw ( IOException , Error )
+	
 {
 	__BEGIN_TRY
 
@@ -163,7 +163,7 @@ void Update::read ( SocketInputStream & iStream )
 // read from socket
 //--------------------------------------------------------------------------------
 void Update::read ( Socket * pSocket ) 
-	throw ( IOException , Error )
+	
 {
 	__BEGIN_TRY
 
@@ -264,7 +264,7 @@ void Update::write ( SocketOutputStream & oStream ) const
 // write to socket
 //--------------------------------------------------------------------------------
 void Update::write ( Socket * pSocket ) const 
-	throw ( IOException , Error )
+	
 {
 	__BEGIN_TRY
 

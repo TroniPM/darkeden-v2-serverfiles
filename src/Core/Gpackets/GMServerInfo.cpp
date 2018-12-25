@@ -78,7 +78,7 @@ void GMServerInfo::read ( Datagram & iDatagram )
 // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
 //////////////////////////////////////////////////////////////////////////////
 void GMServerInfo::write ( Datagram & oDatagram ) 
-     const throw ( ProtocolException , Error )
+     
 {
 	__BEGIN_TRY
 	
@@ -100,7 +100,7 @@ void GMServerInfo::write ( Datagram & oDatagram )
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 string GMServerInfo::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

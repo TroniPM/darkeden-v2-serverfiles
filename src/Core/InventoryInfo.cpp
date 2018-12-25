@@ -66,7 +66,7 @@ void InventoryInfo::read ( SocketInputStream & iStream )
 // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
 //////////////////////////////////////////////////////////////////////////////
 void InventoryInfo::write ( SocketOutputStream & oStream ) 
-     const throw ( ProtocolException , Error )
+     
 {
 	__BEGIN_TRY
 		
@@ -105,7 +105,7 @@ PacketSize_t InventoryInfo::getSize()
 // get packet's debug string
 //////////////////////////////////////////////////////////////////////////////
 string InventoryInfo::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

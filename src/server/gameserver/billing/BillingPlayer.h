@@ -28,11 +28,11 @@ class BillingPlayer : public Player {
 public :
 
 	// constructor
-	BillingPlayer () throw (Error);
-	BillingPlayer (Socket * pSocket) throw ( Error );
+	BillingPlayer ();
+	BillingPlayer (Socket * pSocket);
 	
 	// destructor
-	virtual ~BillingPlayer () throw (Error);
+	virtual ~BillingPlayer ();
 
 	virtual void processInput () throw (IOException, Error);
 	
@@ -42,7 +42,7 @@ public :
 	virtual void processCommand () throw (IOException, Error);
 	
 	// send packet to player's output buffer
-	virtual void sendPacket (Packet* pPacket) throw (ProtocolException, Error);
+	virtual void sendPacket (Packet* pPacket);
 
 	// disconnect
 	// 플레이어의 연결을 종료할 때, 상대편이 적절하게 로그아웃하지 않을 경우 소켓의 연결이 
@@ -50,7 +50,7 @@ public :
 	// 정당하게 로그아웃을 한 경우에는 disconnect(UNDISCONNECTED) 를 사용해야 한다.
 	virtual void disconnect (bool bDisconnected = DISCONNECTED) throw (InvalidProtocolException, Error);
 
-	void setSocket ( Socket * pSocket ) throw ();
+	void setSocket ( Socket * pSocket );
 	
 	// get debug string
 	virtual string toString () ;

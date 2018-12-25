@@ -25,7 +25,7 @@ public:
 	~ItemInfoManager() throw();
 
 public:
-	void init() throw(Error);
+	void init();
 	InfoClassManager* getInfoManager(Item::ItemClass Class) ;
 	ItemInfo* getItemInfo(Item::ItemClass Class, ItemType_t ItemType) ;
 	uint getItemCount(Item::ItemClass Class) ;

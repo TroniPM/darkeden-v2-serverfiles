@@ -24,7 +24,7 @@ public:
 
 	SkillType_t getSkillType()  { return SKILL_TIFFAUGES_MORGOTH_C_RED; }
 
-	void execute(Monster* pMonster, Creature* pEnemy) throw(Error);
+	void execute(Monster* pMonster, Creature* pEnemy);
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };
 

@@ -17,15 +17,15 @@
 class EffectHideSight : public Effect 
 {
 public:
-	EffectHideSight(Creature* pCreature) throw(Error);
+	EffectHideSight(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_HIDE_SIGHT; }
 
 	void affect() throw(Error){}
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect() throw(Error);
+	void unaffect(Creature* pCreature);
+	void unaffect();
 
 	string toString() ;
 

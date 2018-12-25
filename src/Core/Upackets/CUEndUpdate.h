@@ -30,25 +30,25 @@ public :
     void read ( Socket * pSocket ) throw ( ProtocolException , Error );
 		    
     // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
-    void write ( SocketOutputStream & oStream ) const throw ( ProtocolException , Error );
+    void write ( SocketOutputStream & oStream ) ;
 
 	// execute packet's handler
 	void execute ( Player * pPlayer ) throw ( ProtocolException , Error );
 
 	// get packet id
-	PacketID_t getPacketID () const throw () { return PACKET_CU_END_UPDATE; }
+	PacketID_t getPacketID ()  { return PACKET_CU_END_UPDATE; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize () const throw () { return 0; }
+	PacketSize_t getPacketSize ()  { return 0; }
 
 	//
 	static PacketSize_t getPacketMaxSize () throw () { return 0; }
 
 	// get packet name
-	string getPacketName () const throw () { return "CUEndUpdate"; }
+	string getPacketName ()  { return "CUEndUpdate"; }
 	
 	// get packet's debug string
-	string toString () const throw ();
+	string toString () ;
 
 };
 
@@ -69,13 +69,13 @@ public :
 	Packet * createPacket () throw () { return new CUEndUpdate(); }
 
 	// get packet name
-	string getPacketName () const throw () { return "CUEndUpdate"; }
+	string getPacketName ()  { return "CUEndUpdate"; }
 	
 	// get packet id
-	PacketID_t getPacketID () const throw () { return Packet::PACKET_CU_END_UPDATE; }
+	PacketID_t getPacketID ()  { return Packet::PACKET_CU_END_UPDATE; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize () const throw () { return 0; }
+	PacketSize_t getPacketMaxSize ()  { return 0; }
 
 };
 

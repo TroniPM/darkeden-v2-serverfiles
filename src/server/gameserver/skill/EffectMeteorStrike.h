@@ -17,16 +17,16 @@
 class EffectMeteorStrike : public Effect 
 {
 public:
-	EffectMeteorStrike(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY, bool bPlayer = false) throw(Error);
+	EffectMeteorStrike(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY, bool bPlayer = false);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_METEOR_STRIKE; }
 
-	void affect() throw(Error);
-	void affect(Creature* pCreature) throw(Error);
+	void affect();
+	void affect(Creature* pCreature);
 
-	void unaffect() throw(Error);
-	void unaffect(Creature* pCreature) throw(Error);
+	void unaffect();
+	void unaffect(Creature* pCreature);
 
 	string toString() ;
 

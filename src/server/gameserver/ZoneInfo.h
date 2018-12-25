@@ -21,7 +21,7 @@ public:
 	ZoneInfo();
 	~ZoneInfo();
 
-	void load( ZoneID_t zoneID ) throw(Error);
+	void load( ZoneID_t zoneID );
 
 public:
 	ZoneID_t getZoneID()  { return m_ZoneID; }
@@ -32,14 +32,14 @@ public:
 
 	ZoneType getZoneType()  { return m_ZoneType; }
 	void setZoneType(ZoneType zoneType) throw() { m_ZoneType = zoneType; }
-	void setZoneType(const string & zoneType) throw(Error);
+	void setZoneType(const string & zoneType);
 
 	ZoneLevel_t getZoneLevel()  { return m_ZoneLevel; }
 	void setZoneLevel(ZoneLevel_t zoneLevel) throw() { m_ZoneLevel = zoneLevel; }
 
 	ZoneAccessMode getZoneAccessMode()  { return m_ZoneAccessMode; }
 	void setZoneAccessMode(ZoneAccessMode zoneAccessMode) throw() { m_ZoneAccessMode = zoneAccessMode; }
-	void setZoneAccessMode(const string & zoneAccessMode) throw(Error);
+	void setZoneAccessMode(const string & zoneAccessMode);
 
 	bool isPayPlay()  { return m_bPayPlay; }
 	void setPayPlay(bool bPayPlay=true) throw() { m_bPayPlay = bPayPlay; }

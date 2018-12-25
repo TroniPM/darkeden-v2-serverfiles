@@ -30,10 +30,10 @@ class ReconnectLoginInfoManager {
 public :
 	
 	// constructor
-	ReconnectLoginInfoManager () throw ();
+	ReconnectLoginInfoManager ();
 	
 	// destructor
-	~ReconnectLoginInfoManager () throw ();
+	~ReconnectLoginInfoManager ();
 	
 
 public :
@@ -49,10 +49,10 @@ public :
 
 	// heartbeat method
 	// expire 된 ReconnectLoginInfo 를 삭제한다.
-	void heartbeat () throw ( Error );	
+	void heartbeat ();	
 
 	// get debug string
-	string toString () const throw ();
+	string toString () ;
 
 
 private :

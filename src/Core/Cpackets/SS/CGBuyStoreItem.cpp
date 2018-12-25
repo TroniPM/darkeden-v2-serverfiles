@@ -44,7 +44,7 @@ void CGBuyStoreItem::execute (Player* pPlayer)
 }
 
 string CGBuyStoreItem::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

@@ -23,7 +23,7 @@ public:
     string getSkillHandlerName()  { return "HolyArmor"; }
 	SkillType_t getSkillType()  { return SKILL_HOLY_ARMOR; }
 
-	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
+	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };

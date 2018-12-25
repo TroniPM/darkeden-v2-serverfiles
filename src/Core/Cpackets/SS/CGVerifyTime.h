@@ -38,22 +38,22 @@ public :
     void read ( SocketInputStream & iStream ) throw ( ProtocolException , Error );
 		    
     // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
-    void write ( SocketOutputStream & oStream ) const throw ( ProtocolException , Error );
+    void write ( SocketOutputStream & oStream ) ;
 
 	// execute packet's handler
 	void execute ( Player * pPlayer ) throw ( ProtocolException , Error );
 
 	// get packet id
-	PacketID_t getPacketID () const throw () { return PACKET_CG_VERIFY_TIME; }
+	PacketID_t getPacketID ()  { return PACKET_CG_VERIFY_TIME; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize () const throw () { return 0; }
+	PacketSize_t getPacketSize ()  { return 0; }
 
 	// get packet name
-	string getPacketName () const throw () { return "CGVerifyTime"; }
+	string getPacketName ()  { return "CGVerifyTime"; }
 	
 	// get packet's debug string
-	string toString () const throw ();
+	string toString () ;
 
 private :
 	
@@ -76,14 +76,14 @@ public :
 	Packet * createPacket () throw () { return new CGVerifyTime(); }
 
 	// get packet name
-	string getPacketName () const throw () { return "CGVerifyTime"; }
+	string getPacketName ()  { return "CGVerifyTime"; }
 	
 	// get packet id
-	PacketID_t getPacketID () const throw () { return Packet::PACKET_CG_VERIFY_TIME; }
+	PacketID_t getPacketID ()  { return Packet::PACKET_CG_VERIFY_TIME; }
 
 	// get packet's max body size
 	// message 의 최대 크기에 대한 설정이 필요하다.
-	PacketSize_t getPacketMaxSize () const throw () { return 0; }
+	PacketSize_t getPacketMaxSize ()  { return 0; }
 
 };
 

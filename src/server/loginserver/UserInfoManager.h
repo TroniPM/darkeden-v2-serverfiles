@@ -30,13 +30,13 @@ class UserInfoManager {
 public :
 	
 	// constructor
-	UserInfoManager () throw ();
+	UserInfoManager ();
 	
 	// destructor
-	~UserInfoManager () throw ();
+	~UserInfoManager ();
 
 	// initialize manager
-	void init () throw ( Error );
+	void init ();
 
 	// add info
 	void addUserInfo ( UserInfo * pUserInfo ) throw ( DuplicatedException );
@@ -45,16 +45,16 @@ public :
 	void deleteUserInfo ( ZoneGroupID_t ServerGroupID, WorldID_t WorldID ) throw ( NoSuchElementException );
 	
 	// get info
-	UserInfo * getUserInfo ( ZoneGroupID_t ServerGroupID, WorldID_t WorldID ) const throw ( NoSuchElementException );
+	UserInfo * getUserInfo ( ZoneGroupID_t ServerGroupID, WorldID_t WorldID ) ;
 
 	// get count of info
-	uint getSize ( WorldID_t WorldID ) const throw () { return m_UserInfos[WorldID].size(); }
+	uint getSize ( WorldID_t WorldID )  { return m_UserInfos[WorldID].size(); }
 
 	// get debug string
-	string toString () const throw ();
+	string toString () ;
 
 	// load from database
-	void load () throw ( Error );
+	void load ();
 	
 private :
 	

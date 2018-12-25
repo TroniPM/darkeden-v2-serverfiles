@@ -113,7 +113,7 @@ class GCMakeItemFailHandler {
 public :
 
 	// execute packet's handler
-	static void execute(GCMakeItemFail* pGCMakeItemFail, Player* pPlayer) throw(Error);
+	static void execute(GCMakeItemFail* pGCMakeItemFail, Player* pPlayer);
 
 };
 

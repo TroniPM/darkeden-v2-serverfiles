@@ -18,17 +18,17 @@
 class EffectDragonHurricane : public Effect 
 {
 public:
-	EffectDragonHurricane(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY) throw(Error);
+	EffectDragonHurricane(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_DRAGON_HURRICANE; }
 	EffectClass getSendEffectClass()  { return EFFECT_CLASS_DRAGON_HURRICANE; }
 
-	void affect() throw(Error);
-	void affect(Creature* pCreature) throw(Error);
+	void affect();
+	void affect(Creature* pCreature);
 
-	void unaffect() throw(Error);
-	void unaffect(Creature* pCreature) throw(Error);
+	void unaffect();
+	void unaffect(Creature* pCreature);
 
 	string toString() ;
 

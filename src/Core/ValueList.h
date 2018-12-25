@@ -19,7 +19,7 @@ class ValueList
 {
 public:
     void read (SocketInputStream & iStream);// throw (ProtocolException, Error);
-    void write (SocketOutputStream & oStream);// const throw (ProtocolException, Error);
+    void write (SocketOutputStream & oStream);// ;
 
 	PacketSize_t 	getPacketSize () 		{ return szBYTE + sizeof(T) * m_Values.size(); }
 	static uint 	getPacketMaxSize() throw() 	{ return szBYTE + sizeof(T) * 255; }
@@ -96,7 +96,7 @@ void ValueList<T>::read ( SocketInputStream & iStream )
 //////////////////////////////////////////////////////////////////////////////
 template <class T>
 void ValueList<T>::write ( SocketOutputStream & oStream ) 
-     //const throw ( ProtocolException , Error )
+     //
 {
 	__BEGIN_TRY
 		
@@ -118,7 +118,7 @@ void ValueList<T>::write ( SocketOutputStream & oStream )
 //////////////////////////////////////////////////////////////////////////////
 template <class T>
 string ValueList<T>::toString () 
-	//const throw ()
+	//
 {
 	__BEGIN_TRY
 

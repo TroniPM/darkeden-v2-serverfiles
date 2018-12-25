@@ -39,7 +39,7 @@ void CGTradeRemoveItem::execute (Player* pPlayer)
 }
 
 string CGTradeRemoveItem::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

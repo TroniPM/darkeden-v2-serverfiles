@@ -156,7 +156,7 @@ FlagManager.o: FlagManager.cpp FlagManager.h ../../../Core/Types.h \
  ../../../Core/Gpackets/GCDeleteInventoryItem.h \
  ../../../Core/Gpackets/GCAddEffect.h ../SystemAvailabilitiesManager.h \
  ../../../Core/Gpackets/GCSystemAvailabilities.h \
- /usr/include/bits/stdio_lim.h /usr/include/STL/cstdlib
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/STL/cstdlib
 FlagWar.o: FlagWar.cpp FlagWar.h ../war/Work.h \
  /usr/include/c++/7/iostream  \
  /usr/include/c++/7/streambuf /usr/include/libio.h \

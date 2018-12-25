@@ -17,13 +17,13 @@
 class EffectNuck : public Effect 
 {
 public:
-	EffectNuck(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY) throw(Error);
+	EffectNuck(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_PROMINENCE; }
 
-	void affect() throw(Error);
-	void unaffect() throw(Error);
+	void affect();
+	void unaffect();
 	string toString() ;
 
 public:

@@ -15,14 +15,14 @@
 class EffectRelicTable : public Effect 
 {
 public:
-	EffectRelicTable(Item* pItem) throw(Error);
+	EffectRelicTable(Item* pItem);
 
 public:
-	void affect() throw(Error);
-	void affect(Item* pItem) throw(Error);
+	void affect();
+	void affect(Item* pItem);
 
-	void unaffect(Item* pItem) throw(Error);
-	void unaffect() throw(Error); 
+	void unaffect(Item* pItem);
+	void unaffect(); 
 
 	string toString() ;
 

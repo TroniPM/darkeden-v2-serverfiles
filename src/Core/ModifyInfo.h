@@ -226,15 +226,15 @@ typedef struct _LONGDATA
 class ModifyInfo : public Packet
 {
 public:
-	ModifyInfo () throw ();
-	virtual ~ModifyInfo () throw ();
+	ModifyInfo ();
+	virtual ~ModifyInfo ();
 	
 public:
-    void read (SocketInputStream & iStream) throw (ProtocolException, Error);
-    void write (SocketOutputStream & oStream) const throw (ProtocolException, Error);
-	PacketSize_t getPacketSize () const throw () { return szBYTE*2 + m_ShortCount*(szBYTE+szshort) + m_LongCount*(szBYTE+szlong); }
+    void read (SocketInputStream & iStream);
+    void write (SocketOutputStream & oStream) ;
+	PacketSize_t getPacketSize ()  { return szBYTE*2 + m_ShortCount*(szBYTE+szshort) + m_LongCount*(szBYTE+szlong); }
 	static PacketSize_t getPacketMaxSize() throw() { return szBYTE*2 + 255*(szBYTE+szshort+szBYTE+szlong); }
-	string toString () const throw ();
+	string toString () ;
 
 public:
 	BYTE getShortCount(void)  { return m_ShortCount; }

@@ -110,7 +110,7 @@ class GCWhisperFailedHandler {
 public :
 
 	// execute packet's handler
-	static void execute(GCWhisperFailed* pGCWhisperFailed, Player* pPlayer) throw(Error);
+	static void execute(GCWhisperFailed* pGCWhisperFailed, Player* pPlayer);
 
 };
 

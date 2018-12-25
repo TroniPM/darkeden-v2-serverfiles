@@ -39,7 +39,7 @@ void CGPartyInvite::execute (Player* pPlayer)
 }
 
 string CGPartyInvite::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

@@ -28,7 +28,7 @@ VampireCorpse::~VampireCorpse()
 	__END_CATCH
 }
 string VampireCorpse::toString ()
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

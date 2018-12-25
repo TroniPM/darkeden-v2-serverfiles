@@ -22,13 +22,13 @@ class CBillingPacketRequestMinusMinuteBody : public CBillingPacketRequestMinusMi
 {
 public:
 	// constructor
-	CBillingPacketRequestMinusMinuteBody() throw ();
+	CBillingPacketRequestMinusMinuteBody();
 
 public:
 	void read( SocketInputStream& iStream ) throw ( ProtocolException, Error );
 	void write( SocketOutputStream& oStream ) throw ( ProtocolException, Error );
 
-	string toString() const throw ();
+	string toString() ;
 };
 
 #endif

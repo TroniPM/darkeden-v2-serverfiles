@@ -70,7 +70,7 @@ void GCMiniGameScores::read ( SocketInputStream & iStream )
 // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
 //////////////////////////////////////////////////////////////////////
 void GCMiniGameScores::write ( SocketOutputStream & oStream ) 
-     const throw ( ProtocolException , Error )
+     
 {
 	__BEGIN_TRY
 
@@ -132,7 +132,7 @@ void GCMiniGameScores::execute ( Player * pPlayer )
 //
 //////////////////////////////////////////////////////////////////////
 string GCMiniGameScores::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

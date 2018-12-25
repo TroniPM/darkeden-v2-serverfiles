@@ -61,7 +61,7 @@ public :
 	Quest() throw (Error) : m_QuestID(m_QuestIDRegistry++), m_State(STATE_NULL)  {}
 	virtual ~Quest() throw (Error) { if (m_State!=STATE_NULL) destroy(); }
 	
-	static void			initQuestIDRegistry() throw(Error);
+	static void			initQuestIDRegistry();
 	QuestID_t			getQuestID()					{ return m_QuestID; }
     void				setQuestID(QuestID_t QuestID)	{ m_QuestID = QuestID; }
 
@@ -82,7 +82,7 @@ public :
 
 	virtual void		heartbeat() throw (Error) = 0;
 
-	virtual string		toString() const throw (Error) = 0;
+	virtual string		toString()  = 0;
 
 protected :
 	void setState(QuestState qs)	{ m_State = qs; }

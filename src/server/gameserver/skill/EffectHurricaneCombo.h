@@ -16,18 +16,18 @@
 class EffectHurricaneCombo : public Effect 
 {
 public:
-	EffectHurricaneCombo(Creature* pCreature) throw(Error);
+	EffectHurricaneCombo(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_HURRICANECOMBO; }
 
 	void affect() throw(Error) {}
-	void affect(Creature* pCreature) throw(Error);
-	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject) throw(Error);
+	void affect(Creature* pCreature);
+	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject);
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject) throw(Error);
-	void unaffect() throw(Error); 
+	void unaffect(Creature* pCreature);
+	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject);
+	void unaffect(); 
 	void unaffect(Item* pItem) throw(Error) {}
 
 	string toString() ;

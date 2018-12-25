@@ -34,13 +34,13 @@ public:
 	};
 
 public:
-	PCType getPCType () const throw () { return PC_VAMPIRE; }
+	PCType getPCType ()  { return PC_VAMPIRE; }
 
-	void read (SocketInputStream & iStream) throw (ProtocolException, Error);
+	void read (SocketInputStream & iStream);
 
-	void write (SocketOutputStream & oStream) const throw (ProtocolException, Error);
+	void write (SocketOutputStream & oStream) ;
 
-	uint getSize () const throw ()
+	uint getSize () 
 	{
 		return szBYTE					// 이름길이
 			+ m_Name.size() 			// 뱀파이어 이름
@@ -84,13 +84,13 @@ public:
 			+ szLevel;
 	}
 
-	string toString () const throw ();
+	string toString () ;
 
 public:
-    string getName () const throw () { return m_Name; }
+    string getName ()  { return m_Name; }
     void setName (string name) throw () { m_Name = (name.size() > 20) ? name.substr(0,20) : name; }
 
-	Slot getSlot () const throw () { return m_Slot; }
+	Slot getSlot ()  { return m_Slot; }
 	void setSlot (Slot slot) throw () { m_Slot = slot; }
 	void setSlot (string slot) throw (InvalidProtocolException)
 	{
@@ -107,13 +107,13 @@ public:
 	Alignment_t getAlignment()  { return m_Alignment; }
 	void setAlignment(Alignment_t Alignment) throw() { m_Alignment = Alignment; }
 
-	Fame_t getFame () const throw () { return m_Fame; }
+	Fame_t getFame ()  { return m_Fame; }
 	void setFame (Fame_t f) throw () { m_Fame = f; }
 
-	Fame_t getKillPoint() const throw () { return m_KillPoint; }
+	Fame_t getKillPoint()  { return m_KillPoint; }
 	void setKillPoint(Fame_t f) throw () { m_KillPoint = f; }
 
-	Sex getSex () const throw () { return m_Sex; }
+	Sex getSex ()  { return m_Sex; }
 	void setSex (Sex sex) throw () { m_Sex = sex; }
 	void setSex (string sex) throw (InvalidProtocolException)
 	{
@@ -125,10 +125,10 @@ public:
 			throw InvalidProtocolException("invalid sex value");
 	}
 
-	Color_t getBatColor () const throw () { return m_BatColor; }
+	Color_t getBatColor ()  { return m_BatColor; }
 	void setBatColor (Color_t batColor) throw () { m_BatColor = batColor; }
 
-	Color_t getSkinColor () const throw () { return m_SkinColor; }
+	Color_t getSkinColor ()  { return m_SkinColor; }
 	void setSkinColor (Color_t skinColor) throw () { m_SkinColor = skinColor; }
 
 	ItemType_t getCoatType()  { return m_CoatType; }
@@ -137,37 +137,37 @@ public:
 	Color_t getCoatColor()  { return m_CoatColor; }
 	void setCoatColor(Color_t CoatColor) throw() { m_CoatColor = CoatColor; }
 
-    Attr_t getSTR () const throw (Error) { if (m_STR > maxVampireAttr) throw Error("STR out of range"); return m_STR; }
+    Attr_t getSTR ()  { if (m_STR > maxVampireAttr) throw Error("STR out of range"); return m_STR; }
 	void setSTR (Attr_t str) throw (Error) { if (str > maxVampireAttr) throw Error("STR out of range"); m_STR = str; }
 
-	Attr_t getDEX () const throw (Error) { if (m_DEX > maxVampireAttr) throw Error("DEX out of range"); return m_DEX; }
+	Attr_t getDEX ()  { if (m_DEX > maxVampireAttr) throw Error("DEX out of range"); return m_DEX; }
 	void setDEX (Attr_t dex) throw (Error) { if (dex > maxVampireAttr) throw Error("DEX out of range"); m_DEX = dex; }
 
-	Attr_t getINT () const throw (Error) { if (m_INT > maxVampireAttr) throw Error("INT out of range"); return m_INT; }
+	Attr_t getINT ()  { if (m_INT > maxVampireAttr) throw Error("INT out of range"); return m_INT; }
 	void setINT (Attr_t inte) throw (Error) { if (inte > maxVampireAttr) throw Error("INT out of range"); m_INT = inte; }
 
-	HP_t getHP (AttrType attrType = ATTR_CURRENT) const throw () { return m_HP[attrType]; }
+	HP_t getHP (AttrType attrType = ATTR_CURRENT)  { return m_HP[attrType]; }
 	void setHP (HP_t hp, AttrType attrType = ATTR_CURRENT) throw () { m_HP[attrType] = hp; }
 	void setHP (HP_t curHP, HP_t maxHP) throw () { m_HP[ATTR_CURRENT] = curHP; m_HP[ATTR_MAX] = maxHP; }
 
-	Level_t getLevel () const throw () { return m_Level; }
+	Level_t getLevel ()  { return m_Level; }
 	void setLevel (Level_t exp) throw () { m_Level = exp; }
 
-	Exp_t getExp () const throw () { return m_Exp; }
+	Exp_t getExp ()  { return m_Exp; }
 	void setExp (Exp_t exp) throw () { m_Exp = exp; }
 
-	Rank_t getRank () const throw () { return m_Rank; }
+	Rank_t getRank ()  { return m_Rank; }
 	void setRank (Rank_t rank) throw () { m_Rank = rank; }
 
 	// get/set gold
-	//Gold_t getGold () const throw () { return m_Gold; }
+	//Gold_t getGold ()  { return m_Gold; }
 	//void setGold (Gold_t gold) throw () { m_Gold = gold; }
 
 	// get/set zoneID
-	//ZoneID_t getZoneID () const throw () { return m_ZoneID; }
+	//ZoneID_t getZoneID ()  { return m_ZoneID; }
 	//void setZoneID (ZoneID_t zoneID) throw () { m_ZoneID = zoneID; }
 
-	Bonus_t getBonus() const throw () { return m_Bonus; }
+	Bonus_t getBonus()  { return m_Bonus; }
 	void setBonus(Bonus_t Bonus) throw () { m_Bonus = Bonus; }
 
 	void setShapeInfo(DWORD flag, Color_t color[VAMPIRE_COLOR_MAX]) throw();

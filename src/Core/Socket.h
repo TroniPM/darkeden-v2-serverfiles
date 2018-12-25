@@ -85,18 +85,18 @@ public :
     void setSendBufferSize (uint size);// throw (Error);
  
 	// get host & port
-	string getHost ();// const throw ();
-	uint getPort ();// const throw ();
-	IP_t getHostIP ();// const throw ();
+	string getHost ();// ;
+	uint getPort ();// ;
+	IP_t getHostIP ();// ;
 
 	// check if socket is valid
-	bool isValid ();// const throw ();
+	bool isValid ();// ;
 
 	// get socket descriptor
-	SOCKET getSOCKET ();// const throw ();
+	SOCKET getSOCKET ();// ;
 
 	// return debug string (FD, HOST, PORT)
-	string toString ();// const throw ();
+	string toString ();// ;
 	
 	//add by viva
 	string getLocalHost();//  { return m_pSocketImpl->getLocalHost(); }

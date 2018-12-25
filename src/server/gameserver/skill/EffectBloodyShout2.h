@@ -17,15 +17,15 @@
 class EffectBloodyShout2 : public Effect 
 {
 public:
-	EffectBloodyShout2(Creature* pCreature) throw(Error);
+	EffectBloodyShout2(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_BLOODY_SHOUT2; }
 
 	void affect() throw(Error){}
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect() throw(Error);
+	void unaffect(Creature* pCreature);
+	void unaffect();
 
 	string toString() ;
 

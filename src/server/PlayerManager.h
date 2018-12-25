@@ -47,13 +47,13 @@ public :
 public :
 
 	// constructor
-	PlayerManager () throw ();
+	PlayerManager ();
 
 	// destructor
-	virtual ~PlayerManager () throw ();
+	virtual ~PlayerManager ();
 
 	// broadcast message
-	virtual void broadcastPacket ( Packet * pPacket ) throw ( Error );
+	virtual void broadcastPacket ( Packet * pPacket );
 
 	// 특정 플레이어를 매니저에 추가한다.
 	virtual void addPlayer ( Player * pPlayer ) throw ( DuplicatedException , Error );
@@ -68,7 +68,7 @@ public :
 	virtual Player * getPlayerByPhoneNumber( PhoneNumber_t PhoneNumber ) throw( OutOfBoundException, NoSuchElementException, Error ) { return NULL; }
 
 	// 현재 관리중인 플레이어 숫자를 리턴한다.
-	uint size () const throw () { return m_nPlayers; }
+	uint size ()  { return m_nPlayers; }
 
 	// Copy Player
 	void copyPlayers() throw();

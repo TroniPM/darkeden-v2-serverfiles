@@ -18,18 +18,18 @@
 class EffectGreenPoison : public Effect 
 {
 public:
-	EffectGreenPoison(Zone*, ZoneCoord_t, ZoneCoord_t) throw(Error);
+	EffectGreenPoison(Zone*, ZoneCoord_t, ZoneCoord_t);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_GREEN_POISON; }
 
 	void affect() throw(Error){}
-	void affect(Creature* pCreature) throw(Error);
-	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject ) throw(Error);
+	void affect(Creature* pCreature);
+	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject );
 
-	void unaffect() throw(Error);
+	void unaffect();
 	void unaffect(Creature* pCreature) throw(Error) {};
-	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject ) throw(Error);
+	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject );
 	void unaffect(Item* pItem) throw(Error) {}
 
 	string toString() ;
@@ -46,7 +46,7 @@ public:
 	void setVampire( bool bVampire = true ) { m_bVampire = bVampire; }
 	bool isVampire() const { return m_bVampire; }
 
-	bool affectCreature(Creature* pCreature, bool bAffectByMove) throw(Error);
+	bool affectCreature(Creature* pCreature, bool bAffectByMove);
 
 private:
 	int        m_Level;    // ¸¶¹ýÀÇ MagicLevel
@@ -64,7 +64,7 @@ public:
 
 public:
 	virtual void load(Creature* pCreature) throw(Error) {}
-	virtual void load(Zone* pZone) throw(Error);
+	virtual void load(Zone* pZone);
 };
 
 extern EffectGreenPoisonLoader* g_pEffectGreenPoisonLoader;

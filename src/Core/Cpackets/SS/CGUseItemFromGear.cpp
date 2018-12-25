@@ -71,7 +71,7 @@ void CGUseItemFromGear::execute (Player* pPlayer)
 }
 
 string CGUseItemFromGear::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

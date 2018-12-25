@@ -129,7 +129,7 @@ public:
 	virtual Elemental_t getElemental() const { return 0; }
 	
 	// ItemType에 따른 기본 옵션
-	virtual void    setDefaultOptions(const string& options) throw(Error);
+	virtual void    setDefaultOptions(const string& options);
 	void			addDefaultOptions(OptionType_t optionType) throw();
 	void			clearDefaultOptions() throw();
 	bool			hasDefaultOptions() const { return m_bDefaultOptions; }

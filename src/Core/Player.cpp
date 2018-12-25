@@ -92,7 +92,7 @@ Player::~Player ()
 //
 //////////////////////////////////////////////////////////////////////
 void Player::processInput ()
-	throw ( IOException , Error )
+	
 {
 	__BEGIN_TRY
 
@@ -115,7 +115,7 @@ void Player::processInput ()
 //
 //////////////////////////////////////////////////////////////////////
 void Player::processCommand ( bool Option ) 
-     throw ( IOException , Error )
+     
 {
 	__BEGIN_TRY
 

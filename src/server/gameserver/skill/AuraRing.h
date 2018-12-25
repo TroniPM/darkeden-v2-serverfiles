@@ -24,8 +24,8 @@ public:
 
 	SkillType_t getSkillType()  { return SKILL_AURA_RING; }
 
-	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
-	void execute(Monster* pMonster, Creature* pEnemy) throw(Error);
+	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID);
+	void execute(Monster* pMonster, Creature* pEnemy);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };

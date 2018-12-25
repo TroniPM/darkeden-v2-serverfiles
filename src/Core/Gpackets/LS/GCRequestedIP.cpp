@@ -47,7 +47,7 @@ void GCRequestedIP::read (SocketInputStream & iStream)
 }
 		    
 void GCRequestedIP::write (SocketOutputStream & oStream) 
-     const throw (ProtocolException , Error)
+     
 {
 	__BEGIN_TRY
 		
@@ -76,7 +76,7 @@ void GCRequestedIP::execute (Player * pPlayer)
 }
 
 string GCRequestedIP::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

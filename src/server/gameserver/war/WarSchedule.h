@@ -17,20 +17,20 @@ struct WarInfo;
 class WarSchedule : public Schedule
 {
 public:
-	WarSchedule( Work* pWork, const VSDateTime& Time, ScheduleType type = SCHEDULE_TYPE_ONCE ) throw(Error);
-	virtual ~WarSchedule() throw (Error);
+	WarSchedule( Work* pWork, const VSDateTime& Time, ScheduleType type = SCHEDULE_TYPE_ONCE );
+	virtual ~WarSchedule();
 
 public:
-	void		create() throw(Error);
-	void		tinysave( const string& query ) throw(Error);
+	void		create();
+	void		tinysave( const string& query );
 #ifndef __OLD_GUILD_WAR__
-	void		save() throw(Error);
+	void		save();
 #endif
 	const War*	getWar() const 		{ return dynamic_cast<const War*>( getWork() ); }
 	War*		getWar() 			{ return dynamic_cast<War*>( getWork() ); }
 	WarID_t 	getWarID() const 	{ return getWar()->getWarID(); }
 
-	virtual bool heartbeat() throw(Error);
+	virtual bool heartbeat();
 
 public :
 	void	makeWarScheduleInfo( WarScheduleInfo* pWSI ) ;

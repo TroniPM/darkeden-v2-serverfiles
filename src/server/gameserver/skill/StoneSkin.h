@@ -23,7 +23,7 @@ public:
     string getSkillHandlerName()  { return "StoneSkin"; }
 	SkillType_t getSkillType()  { return SKILL_STONE_SKIN; }
 
-	void execute(Vampire* pVampire, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
+	void execute(Vampire* pVampire, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID);
 
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);

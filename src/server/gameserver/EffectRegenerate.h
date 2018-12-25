@@ -17,14 +17,14 @@
 class EffectRegenerate : public Effect 
 {
 public:
-	EffectRegenerate(Creature* pCreature) throw(Error);
-	~EffectRegenerate() throw(Error);
+	EffectRegenerate(Creature* pCreature);
+	~EffectRegenerate();
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_TRANSPORT_CREATURE; }
 
-	void affect() throw(Error);
-	void unaffect() throw(Error);
+	void affect();
+	void unaffect();
 
 	string toString() ;
 

@@ -18,16 +18,16 @@ class Zone;
 class EffectPKZoneRegen : public Effect 
 {
 public:
-	EffectPKZoneRegen(Zone* pZone, ZoneCoord_t left, ZoneCoord_t top, ZoneCoord_t right, ZoneCoord_t bottom) throw(Error);
+	EffectPKZoneRegen(Zone* pZone, ZoneCoord_t left, ZoneCoord_t top, ZoneCoord_t right, ZoneCoord_t bottom);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_PK_ZONE_REGEN; }
 
-	void affect() throw(Error);
-	void affect(Creature* pCreature) throw(Error);
+	void affect();
+	void affect(Creature* pCreature);
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect() throw(Error); 
+	void unaffect(Creature* pCreature);
+	void unaffect(); 
 
 	string toString() ;
 

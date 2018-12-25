@@ -101,28 +101,28 @@ public: // constructor & destructor
 	~Zone() throw();
 
 public:
-	void init() throw(Error);
-	void load(bool bOutput=false) throw(Error);
-	void reload(bool bOutput=false) throw(Error);
-	void loadItem() throw(Error);
-	void loadTriggeredPortal() throw(Error);
-	void initSpriteCount() throw(Error);
-	void save() throw(Error);
+	void init();
+	void load(bool bOutput=false);
+	void reload(bool bOutput=false);
+	void loadItem();
+	void loadTriggeredPortal();
+	void initSpriteCount();
+	void save();
 
 public:
-	void pushPC(Creature* pCreature) throw(Error);
+	void pushPC(Creature* pCreature);
 	void addPC(Creature* pCreature, ZoneCoord_t cx, ZoneCoord_t cy, Dir_t dir) throw(EmptyTileNotExistException, Error);
-	void addPC(Creature* pCreature) throw(Error);
+	void addPC(Creature* pCreature);
 	void addCreature(Creature* pCreature, ZoneCoord_t cx, ZoneCoord_t cy, Dir_t dir) throw(EmptyTileNotExistException, Error);
 	TPOINT addItem(Item* pItem, ZoneCoord_t cx, ZoneCoord_t cy, bool bAllowCreature=true, Turn_t decayTurn=0, ObjectID_t DropPetOID=0) throw(EmptyTileNotExistException, Error); 
 	Item* getItem(ObjectID_t id) ;
-	void addEffect(Effect* pEffect) throw(Error);	
-	void deleteEffect(ObjectID_t id) throw(Error);	
-	Effect* findEffect(Effect::EffectClass eid) throw(Error);	
+	void addEffect(Effect* pEffect);	
+	void deleteEffect(ObjectID_t id);	
+	Effect* findEffect(Effect::EffectClass eid);	
 
 	// by sigi. 2002.5.4
-	void addEffect_LOCKING(Effect* pEffect) throw(Error);	
-	void deleteEffect_LOCKING(ObjectID_t id) throw(Error);	
+	void addEffect_LOCKING(Effect* pEffect);	
+	void deleteEffect_LOCKING(ObjectID_t id);	
 
 	void deletePC(Creature* pCreature) throw();//NoSuchElementException, Error);
 	void deleteQueuePC(Creature* pCreature) throw(NoSuchElementException, Error);
@@ -130,12 +130,12 @@ public:
 	void deleteObject(Object* pObject, ZoneCoord_t x, ZoneCoord_t y) throw(NoSuchElementException, Error);
 	void deleteItem(Object* pObject, ZoneCoord_t x, ZoneCoord_t y) throw(NoSuchElementException, Error);
 
-	bool deleteNPC(Creature* pCreature) throw(Error);//NoSuchElementException, Error);
-	void deleteNPCs(Race_t race) throw(Error);//NoSuchElementException, Error);
-	void loadNPCs(Race_t race) throw(Error);//NoSuchElementException, Error);
-	void sendNPCInfo() throw(Error);
+	bool deleteNPC(Creature* pCreature);//NoSuchElementException, Error);
+	void deleteNPCs(Race_t race);//NoSuchElementException, Error);
+	void loadNPCs(Race_t race);//NoSuchElementException, Error);
+	void sendNPCInfo();
 
-	void loadEffect() throw(Error);
+	void loadEffect();
 
 
 public:
@@ -143,7 +143,7 @@ public:
 	void moveCreature(Creature* pCreature, ZoneCoord_t nx, ZoneCoord_t ny, Dir_t dir) ;
 
 	// 몬스터가 주변을 스캔한다.
-	void monsterScan(Monster* pMonster, ZoneCoord_t x, ZoneCoord_t y, Dir_t dir) throw(Error);
+	void monsterScan(Monster* pMonster, ZoneCoord_t x, ZoneCoord_t y, Dir_t dir);
 
 	void broadcastPacket(Packet* pPacket, Creature* owner = NULL) ;
 	void broadcastPacket(ZoneCoord_t x, ZoneCoord_t y, Packet* pPacket, Creature* owner = NULL, bool Plus = false, Range_t Range = 0) ;
@@ -160,7 +160,7 @@ public:
 	void updateScan(Creature* pPC, Sight_t oldSight, Sight_t newSight) ;
 
 	// 그곳을 볼 수 있는 넘들(Player)의 list를 돌려준다.�
-	list<Creature*>  getWatcherList(ZoneCoord_t, ZoneCoord_t, Creature* pTargetCreature = NULL) throw(Error);
+	list<Creature*>  getWatcherList(ZoneCoord_t, ZoneCoord_t, Creature* pTargetCreature = NULL);
 
 	// 리젠된 몬스터가 주변의 PC 들에게 GCAddXXX 패킷을 브로드캐스트하면서동시에 그들을 잠재적인 적으로 인식하도록 한다.
 	void scanPC(Creature* pCreature) ;
@@ -195,7 +195,7 @@ public:
 	void registerObject( Object* pObject ) throw() { getObjectRegistry().registerObject( pObject ); }
 
 public:
-	void heartbeat() throw(Error);
+	void heartbeat();
 
 	// 이름, 크리처 클래스, OID 등을 이용해서 존에 존재하는 크리쳐 객체에 접근
 	Creature* getCreature(const string& Name) ;//NoSuchElementException, Error);
@@ -287,16 +287,16 @@ public:
 	bool removeNPCInfo(NPC* pNPC);
 
 	// 존 전체의 NPC에게 MarketCondition을 설정한다. default(100, 25)
-	//void setNPCMarketCondition(MarketCond_t NPCSell, MarketCond_t NPCBuy) throw (Error);
+	//void setNPCMarketCondition(MarketCond_t NPCSell, MarketCond_t NPCBuy);
 
 	void addVampirePortal(ZoneCoord_t cx, ZoneCoord_t cy, Vampire* pVampire, const ZONE_COORD& ZoneCoord) throw();
-	void deleteMotorcycle(ZoneCoord_t cx, ZoneCoord_t cy, Motorcycle* pMotorcycle) throw(Error);
+	void deleteMotorcycle(ZoneCoord_t cx, ZoneCoord_t cy, Motorcycle* pMotorcycle);
 
-	void addItemDelayed(Item* pItem, ZoneCoord_t cx, ZoneCoord_t cy, bool bAllowCreature=true) throw(Error);
-	void addItemToCorpseDelayed(Item* pItem, ObjectID_t corpseObjectID) throw(Error);
-	void deleteItemDelayed(Object* pObject, ZoneCoord_t x, ZoneCoord_t y) throw(Error);
-	void transportItem(ZoneCoord_t x, ZoneCoord_t y, Item* pItem, Zone* pZone, ZoneCoord_t cx, ZoneCoord_t y) throw(Error);
-	void transportItemToCorpse(Item* pItem, Zone* pTargetZone, ObjectID_t corpseObjectID) throw(Error);
+	void addItemDelayed(Item* pItem, ZoneCoord_t cx, ZoneCoord_t cy, bool bAllowCreature=true);
+	void addItemToCorpseDelayed(Item* pItem, ObjectID_t corpseObjectID);
+	void deleteItemDelayed(Object* pObject, ZoneCoord_t x, ZoneCoord_t y);
+	void transportItem(ZoneCoord_t x, ZoneCoord_t y, Item* pItem, Zone* pZone, ZoneCoord_t cx, ZoneCoord_t y);
+	void transportItemToCorpse(Item* pItem, Zone* pTargetZone, ObjectID_t corpseObjectID);
 
 	LocalPartyManager* getLocalPartyManager(void) const { return m_pLocalPartyManager; }
 	PartyInviteInfoManager* getPartyInviteInfoManager(void) const { return m_pPartyInviteInfoManager; }
@@ -317,10 +317,10 @@ public:
 	WarScheduler* getWarScheduler(void) const { return m_pWarScheduler; }
 	LevelWarManager* getLevelWarManager() const { return m_pLevelWarManager; }
 
-	void	killAllMonsters() throw (Error);
-	void	killAllMonsters_UNLOCK() throw (Error);
+	void	killAllMonsters();
+	void	killAllMonsters_UNLOCK();
 
-	void	killAllPCs() throw(Error);
+	void	killAllPCs();
 
 	const PCManager*  getPCManager() const		{ return m_pPCManager; }             // PC Manager 
 	WORD getPCCount(void)  { return m_pPCManager->getSize(); }
@@ -360,16 +360,16 @@ public :
 	bool hasRelicTable()  { return m_bHasRelicTable; }
     void setRelicTable(bool bHasRelicTable=true) throw() { m_bHasRelicTable = bHasRelicTable; }
 
-	bool addRelicItem(int relicIndex) throw(Error); 
-	bool deleteRelicItem() throw(Error); 
+	bool addRelicItem(int relicIndex); 
+	bool deleteRelicItem(); 
 
 	// Holy Land Race Bonus 변화에 따른 플레이어 refresh
 	void setRefreshHolyLandPlayer( bool bRefresh ) { m_pPCManager->setRefreshHolyLandPlayer( bRefresh ); }
 //	void setRefreshLevelWarBonusZonePlayer( bool bRefresh ) { m_pPCManager->setRefreshLevelWarBonusZonePlayer( bRefresh ); }
 
-	void    remainRaceWarPlayers() throw(Error);
+	void    remainRaceWarPlayers();
 
-	void    remainPayPlayer() throw(Error);
+	void    remainPayPlayer();
 
 	bool isLevelWarZone() const;
 

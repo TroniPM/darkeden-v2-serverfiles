@@ -39,15 +39,15 @@ class Datagram {
 public :
 
 	// constructor
-	Datagram () throw ();
+	Datagram ();
 
 	// destructor
-	~Datagram () throw ();
+	~Datagram ();
 
 	// read DatagramPacket from datagram's internal buffer
-	void read (char* buf, uint len) throw (Error);
-	void read (string & str, uint len) throw (Error);
-	void read (DatagramPacket* & pPacket) throw (ProtocolException, Error);
+	void read (char* buf, uint len);
+	void read (string & str, uint len);
+	void read (DatagramPacket* & pPacket);
 
 	void read (char   & buf) throw (Error) { read((char*)&buf, szchar  ); }
     void read (uchar  & buf) throw (Error) { read((char*)&buf, szuchar ); }
@@ -59,9 +59,9 @@ public :
     void read (ulong  & buf) throw (Error) { read((char*)&buf, szulong ); }
 
 	// write DatagramPacket into datagram's internal buffer
-	void write (const char* buf, uint len) throw (Error);
-	void write (const string & buf) throw (Error);
-	void write (const DatagramPacket* pPacket) throw (ProtocolException, Error);
+	void write (const char* buf, uint len);
+	void write (const string & buf);
+	void write (const DatagramPacket* pPacket);
 
 	void write (char   buf) throw (Error) { write((char*)&buf, szchar  ); }
     void write (uchar  buf) throw (Error) { write((char*)&buf, szuchar ); }
@@ -76,31 +76,31 @@ public :
 	char* getData () throw () { return m_Data; }
 
 	// set data
-	void setData (char* data, uint len) throw (Error);
-	void setData (uint len) throw (Error); 
+	void setData (char* data, uint len);
+	void setData (uint len); 
 	
 	// get length
-	uint getLength () const throw () { return m_Length; }
+	uint getLength ()  { return m_Length; }
 
 	// get address
 	SOCKADDR* getAddress () throw () { return (SOCKADDR*)&m_SockAddr; }
 
 	// set address
-	void setAddress (SOCKADDR_IN* pSockAddr) throw (Error);
+	void setAddress (SOCKADDR_IN* pSockAddr);
 
 	// get host
-	string getHost () const throw () { return string(inet_ntoa(m_SockAddr.sin_addr)); }
+	string getHost ()  { return string(inet_ntoa(m_SockAddr.sin_addr)); }
 
 	// set host
 	void setHost (const string & host) throw () { m_SockAddr.sin_addr.s_addr = inet_addr(host.c_str()); }
 
 	// get port 
-	uint getPort () const throw () { return ntohs(m_SockAddr.sin_port); }
+	uint getPort ()  { return ntohs(m_SockAddr.sin_port); }
 
 	// set port
 	void setPort (uint port) throw () { m_SockAddr.sin_port = htons(port); }
 
-	string toString () const throw ();
+	string toString () ;
 
 	//判断是否是udp报文
 	bool isDatagram(PacketID_t packetID);

@@ -86,7 +86,7 @@ public:
 class GCMiniGameScoresHandler 
 {
 public:
-	static void execute(GCMiniGameScores* pGCMiniGameScores, Player* pPlayer) throw(Error);
+	static void execute(GCMiniGameScores* pGCMiniGameScores, Player* pPlayer);
 
 };
 

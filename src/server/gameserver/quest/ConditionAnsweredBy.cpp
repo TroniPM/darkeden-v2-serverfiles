@@ -9,7 +9,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 // is satisfied?
 ////////////////////////////////////////////////////////////////////////////////
-bool ConditionAnsweredBy::isSatisfied(Creature* pCreature1, Creature* pCreature2, void* pParam) const throw ()
+bool ConditionAnsweredBy::isSatisfied(Creature* pCreature1, Creature* pCreature2, void* pParam) 
 {
 	// check parameter
 	if (pParam == NULL) return false;

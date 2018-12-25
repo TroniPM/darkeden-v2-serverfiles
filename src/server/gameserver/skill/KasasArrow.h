@@ -23,7 +23,7 @@ public:
     string getSkillHandlerName()  { return "KasasArrow"; }
 	SkillType_t getSkillType()  { return SKILL_KASAS_ARROW; }
 
-	void execute(Ousters* pOusters, ObjectID_t ObjectID,  OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
+	void execute(Ousters* pOusters, ObjectID_t ObjectID,  OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };

@@ -23,8 +23,8 @@ public:
 	~ActionFactoryManager() throw();
 
 public:
-	void init() throw(Error);
-	void addFactory(ActionFactory* pFactory) throw(Error);
+	void init();
+	void addFactory(ActionFactory* pFactory);
 	Action* createAction(ActionType_t conditionType) ;
 	string getActionName(ActionType_t conditionType) ;
 	ActionType_t getActionType(const string & actionname) ;

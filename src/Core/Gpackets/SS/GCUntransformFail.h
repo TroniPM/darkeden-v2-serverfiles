@@ -98,7 +98,7 @@ class  GCUntransformFailHandler {
 public :
 
 	// execute packet's handler
-	static void execute(GCUntransformFail* pPacket, Player* pPlayer) throw(Error);
+	static void execute(GCUntransformFail* pPacket, Player* pPlayer);
 
 };
 

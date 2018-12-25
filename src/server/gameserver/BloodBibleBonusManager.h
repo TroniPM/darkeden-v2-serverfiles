@@ -32,16 +32,16 @@ public:
 public:
 
 	// initialize Manager
-	void init() throw(Error);
+	void init();
 
 	// void load() throw();
-	void load() throw(Error);
+	void load();
 	
 	// clear list
 	void clear() throw();
 
 	// Save to DB
-	void save() throw(Error);
+	void save();
 
 	// get BloodBibleBonus
 	BloodBibleBonus* getBloodBibleBonus(BloodBibleBonusType_t bloodBibleBonusType) ;
@@ -54,9 +54,9 @@ public:
 	string toString() ;
 
 public:
-	void setBloodBibleBonusRace( BloodBibleBonusType_t bloodBibleBonusType, Race_t race ) throw( Error );
+	void setBloodBibleBonusRace( BloodBibleBonusType_t bloodBibleBonusType, Race_t race );
 
-	void makeHolyLandBonusInfo( GCHolyLandBonusInfo& gcHolyLandBonusInfo ) throw( Error );
+	void makeHolyLandBonusInfo( GCHolyLandBonusInfo& gcHolyLandBonusInfo );
 
 	template <typename ITR> void getBloodBibleByRace(Race_t race, ITR oItr) const
 	{

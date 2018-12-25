@@ -17,13 +17,13 @@
 class EffectChakramHail : public Effect 
 {
 public:
-	EffectChakramHail(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY) throw(Error);
+	EffectChakramHail(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_CHAKRAM_HAIL; }
 
-	void affect() throw(Error);
-	void unaffect() throw(Error);
+	void affect();
+	void unaffect();
 	string toString() ;
 
 public:

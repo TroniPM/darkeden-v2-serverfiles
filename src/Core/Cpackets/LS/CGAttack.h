@@ -133,7 +133,7 @@ class CGAttackHandler {
 public:
 
 	// execute packet's handler
-	static void execute(CGAttack* pCGAttack, Player* player) throw(Error);
+	static void execute(CGAttack* pCGAttack, Player* player);
 };
 
 #endif

@@ -809,7 +809,7 @@ HitRoll.o: HitRoll.cpp HitRoll.h ../../../Core/ModifyInfo.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -908,7 +908,7 @@ SkillHandler.o: SkillHandler.cpp SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -1019,7 +1019,7 @@ SkillHandlerManager.o: SkillHandlerManager.cpp SkillHandlerManager.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -1364,7 +1364,7 @@ SkillFormula.o: SkillFormula.cpp SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -1537,7 +1537,7 @@ SkillUtil.o: SkillUtil.cpp SkillUtil.h ../../../Core/ModifyInfo.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -1739,7 +1739,7 @@ SimpleMeleeSkill.o: SimpleMeleeSkill.cpp SimpleMeleeSkill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -1849,7 +1849,7 @@ SimpleMissileSkill.o: SimpleMissileSkill.cpp SimpleMissileSkill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -1963,7 +1963,7 @@ SimpleTileMeleeSkill.o: SimpleTileMeleeSkill.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -2074,7 +2074,7 @@ SimpleLinearMeleeSkill.o: SimpleLinearMeleeSkill.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -2186,7 +2186,7 @@ SimpleCureSkill.o: SimpleCureSkill.cpp SimpleCureSkill.h SimpleSkill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -2303,7 +2303,7 @@ SimpleTileCureSkill.o: SimpleTileCureSkill.cpp SimpleTileCureSkill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -2426,7 +2426,7 @@ SimpleTileMissileSkill.o: SimpleTileMissileSkill.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -2539,7 +2539,7 @@ AttackMelee.o: AttackMelee.cpp AttackMelee.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -2652,7 +2652,7 @@ AttackArms.o: AttackArms.cpp AttackArms.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -2769,7 +2769,7 @@ DoubleImpact.o: DoubleImpact.cpp DoubleImpact.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -2876,7 +2876,7 @@ TripleSlasher.o: TripleSlasher.cpp TripleSlasher.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -2983,7 +2983,7 @@ RainbowSlasher.o: RainbowSlasher.cpp RainbowSlasher.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -3090,7 +3090,7 @@ ThunderSpark.o: ThunderSpark.cpp ThunderSpark.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -3197,7 +3197,7 @@ DancingSword.o: DancingSword.cpp DancingSword.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -3308,7 +3308,7 @@ CrossCounter.o: CrossCounter.cpp CrossCounter.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -3423,7 +3423,7 @@ FlashSliding.o: FlashSliding.cpp FlashSliding.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -3533,7 +3533,7 @@ LightningHand.o: LightningHand.cpp LightningHand.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -3643,7 +3643,7 @@ SwordWave.o: SwordWave.cpp SwordWave.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -3751,7 +3751,7 @@ SnakeCombo.o: SnakeCombo.cpp SnakeCombo.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -3858,7 +3858,7 @@ SingleBlow.o: SingleBlow.cpp SingleBlow.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -3965,7 +3965,7 @@ SpiralSlay.o: SpiralSlay.cpp SpiralSlay.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -4072,7 +4072,7 @@ TripleBreak.o: TripleBreak.cpp TripleBreak.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -4179,7 +4179,7 @@ WildSmash.o: WildSmash.cpp WildSmash.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -4286,7 +4286,7 @@ GhostBlade.o: GhostBlade.cpp GhostBlade.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -4397,7 +4397,7 @@ PotentialExplosion.o: PotentialExplosion.cpp PotentialExplosion.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -4508,7 +4508,7 @@ ShadowWalk.o: ShadowWalk.cpp ShadowWalk.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -4618,7 +4618,7 @@ ChargingPower.o: ChargingPower.cpp ChargingPower.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -4728,7 +4728,7 @@ HurricaneCombo.o: HurricaneCombo.cpp HurricaneCombo.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -4835,7 +4835,7 @@ TornadoSever.o: TornadoSever.cpp TornadoSever.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -4943,7 +4943,7 @@ QuickFire.o: QuickFire.cpp QuickFire.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -5055,7 +5055,7 @@ DoubleShot.o: DoubleShot.cpp DoubleShot.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -5167,7 +5167,7 @@ TripleShot.o: TripleShot.cpp TripleShot.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -5279,7 +5279,7 @@ MultiShot.o: MultiShot.cpp MultiShot.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -5391,7 +5391,7 @@ HeadShot.o: HeadShot.cpp HeadShot.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -5508,7 +5508,7 @@ Piercing.o: Piercing.cpp Piercing.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -5620,7 +5620,7 @@ Sniping.o: Sniping.cpp Sniping.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -5731,7 +5731,7 @@ CreateHolyWater.o: CreateHolyWater.cpp CreateHolyWater.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -5841,7 +5841,7 @@ Light.o: Light.cpp Light.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -5951,7 +5951,7 @@ DetectHidden.o: DetectHidden.cpp DetectHidden.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -6061,7 +6061,7 @@ AuraBall.o: AuraBall.cpp AuraBall.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -6168,7 +6168,7 @@ Bless.o: Bless.cpp Bless.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -6284,7 +6284,7 @@ ContinualLight.o: ContinualLight.cpp ContinualLight.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -6397,7 +6397,7 @@ Flare.o: Flare.cpp Flare.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -6512,7 +6512,7 @@ Purify.o: Purify.cpp Purify.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -6625,7 +6625,7 @@ AuraRing.o: AuraRing.cpp AuraRing.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -6732,7 +6732,7 @@ Striking.o: Striking.cpp Striking.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -6846,7 +6846,7 @@ DetectInvisibility.o: DetectInvisibility.cpp DetectInvisibility.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -6956,7 +6956,7 @@ AuraShield.o: AuraShield.cpp AuraShield.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -7066,7 +7066,7 @@ Visible.o: Visible.cpp Visible.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -7181,7 +7181,7 @@ CureLightWounds.o: CureLightWounds.cpp CureLightWounds.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -7288,7 +7288,7 @@ CurePoison.o: CurePoison.cpp CurePoison.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -7404,7 +7404,7 @@ ProtectionFromPoison.o: ProtectionFromPoison.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -7517,7 +7517,7 @@ CauseLightWounds.o: CauseLightWounds.cpp CauseLightWounds.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -7624,7 +7624,7 @@ CureSeriousWounds.o: CureSeriousWounds.cpp CureSeriousWounds.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -7731,7 +7731,7 @@ RemoveCurse.o: RemoveCurse.cpp RemoveCurse.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -7847,7 +7847,7 @@ ProtectionFromCurse.o: ProtectionFromCurse.cpp ProtectionFromCurse.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -7960,7 +7960,7 @@ CauseSeriousWounds.o: CauseSeriousWounds.cpp CauseSeriousWounds.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -8067,7 +8067,7 @@ CureCriticalWounds.o: CureCriticalWounds.cpp CureCriticalWounds.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -8177,7 +8177,7 @@ Sacrifice.o: Sacrifice.cpp Sacrifice.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -8288,7 +8288,7 @@ CauseCriticalWounds.o: CauseCriticalWounds.cpp CauseCriticalWounds.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -8403,7 +8403,7 @@ ProtectionFromAcid.o: ProtectionFromAcid.cpp ProtectionFromAcid.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -8516,7 +8516,7 @@ CureAll.o: CureAll.cpp CureAll.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -8635,7 +8635,7 @@ RegenerationSkill.o: RegenerationSkill.cpp RegenerationSkill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -8750,7 +8750,7 @@ BloodDrain.o: BloodDrain.cpp BloodDrain.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -8865,7 +8865,7 @@ PoisonousHands.o: PoisonousHands.cpp PoisonousHands.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -8972,7 +8972,7 @@ GreenPoison.o: GreenPoison.cpp GreenPoison.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -9086,7 +9086,7 @@ YellowPoison.o: YellowPoison.cpp YellowPoison.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -9200,7 +9200,7 @@ DarkBluePoison.o: DarkBluePoison.cpp DarkBluePoison.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -9319,7 +9319,7 @@ GreenStalker.o: GreenStalker.cpp GreenStalker.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -9438,7 +9438,7 @@ AcidTouch.o: AcidTouch.cpp AcidTouch.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -9545,7 +9545,7 @@ AcidBolt.o: AcidBolt.cpp AcidBolt.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -9652,7 +9652,7 @@ AcidBall.o: AcidBall.cpp AcidBall.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -9759,7 +9759,7 @@ AcidSwamp.o: AcidSwamp.cpp AcidSwamp.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -9873,7 +9873,7 @@ Paralyze.o: Paralyze.cpp Paralyze.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -9991,7 +9991,7 @@ Paralyze.o: Paralyze.cpp Paralyze.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -10109,7 +10109,7 @@ MistOfSoul1.o: MistOfSoul1.cpp MistOfSoul1.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -10227,7 +10227,7 @@ MistOfSoul1.o: MistOfSoul1.cpp MistOfSoul1.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -10345,7 +10345,7 @@ FreezeRing2.o: FreezeRing2.cpp FreezeRing2.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -10462,7 +10462,7 @@ Doom.o: Doom.cpp Doom.h SkillHandler.h Skill.h ../../../Core/Types.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -10577,7 +10577,7 @@ Hide.o: Hide.cpp Hide.h SkillHandler.h Skill.h ../../../Core/Types.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -10687,7 +10687,7 @@ Darkness.o: Darkness.cpp Darkness.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -10807,7 +10807,7 @@ Invisibility.o: Invisibility.cpp Invisibility.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -10917,7 +10917,7 @@ TransformToWolf.o: TransformToWolf.cpp TransformToWolf.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -11031,7 +11031,7 @@ TransformToBat.o: TransformToBat.cpp TransformToBat.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -11147,7 +11147,7 @@ Unburrow.o: Unburrow.cpp Unburrow.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -11255,7 +11255,7 @@ Untransform.o: Untransform.cpp Untransform.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -11367,7 +11367,7 @@ Uninvisibility.o: Uninvisibility.cpp Uninvisibility.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -11474,7 +11474,7 @@ EatCorpse.o: EatCorpse.cpp EatCorpse.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -11590,7 +11590,7 @@ Howl.o: Howl.cpp Howl.h SkillHandler.h Skill.h ../../../Core/Types.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -11701,7 +11701,7 @@ ThrowHolyWater.o: ThrowHolyWater.cpp ThrowHolyWater.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -11813,7 +11813,7 @@ Restore.o: Restore.cpp Restore.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -11932,7 +11932,7 @@ BloodyMarker.o: BloodyMarker.cpp BloodyMarker.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -12044,7 +12044,7 @@ BloodyTunnel.o: BloodyTunnel.cpp BloodyTunnel.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -12156,7 +12156,7 @@ Resurrect.o: Resurrect.cpp Resurrect.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -12273,7 +12273,7 @@ Resurrect.o: Resurrect.cpp Resurrect.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -12390,7 +12390,7 @@ Seduction.o: Seduction.cpp Seduction.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -12504,7 +12504,7 @@ WindDivider.o: WindDivider.cpp WindDivider.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -12612,7 +12612,7 @@ Earthquake.o: Earthquake.cpp Earthquake.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -12720,7 +12720,7 @@ MindControl.o: MindControl.cpp MindControl.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -12836,7 +12836,7 @@ BloodyNail.o: BloodyNail.cpp BloodyNail.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -12943,7 +12943,7 @@ BloodyKnife.o: BloodyKnife.cpp BloodyKnife.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -13050,7 +13050,7 @@ BloodyBall.o: BloodyBall.cpp BloodyBall.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -13158,7 +13158,7 @@ BloodySpear.o: BloodySpear.cpp BloodySpear.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -13265,7 +13265,7 @@ ThunderBolt.o: ThunderBolt.cpp ThunderBolt.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -13373,7 +13373,7 @@ Expansion.o: Expansion.cpp Expansion.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -13484,7 +13484,7 @@ MiracleShield.o: MiracleShield.cpp MiracleShield.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -13595,7 +13595,7 @@ ThunderFlash.o: ThunderFlash.cpp ThunderFlash.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -13705,7 +13705,7 @@ Berserker.o: Berserker.cpp Berserker.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -13816,7 +13816,7 @@ MoonlightSever.o: MoonlightSever.cpp MoonlightSever.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -13923,7 +13923,7 @@ ShadowDancing.o: ShadowDancing.cpp ShadowDancing.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -14030,7 +14030,7 @@ Typhoon.o: Typhoon.cpp Typhoon.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -14138,7 +14138,7 @@ PoisonStrike.o: PoisonStrike.cpp PoisonStrike.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -14245,7 +14245,7 @@ AcidStrike.o: AcidStrike.cpp AcidStrike.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -14352,7 +14352,7 @@ BloodyStrike.o: BloodyStrike.cpp BloodyStrike.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -14459,7 +14459,7 @@ PoisonStorm.o: PoisonStorm.cpp PoisonStorm.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -14574,7 +14574,7 @@ AcidStorm.o: AcidStorm.cpp AcidStorm.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -14689,7 +14689,7 @@ AcidStorm.o: AcidStorm.cpp AcidStorm.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -14804,7 +14804,7 @@ AcidStorm.o: AcidStorm.cpp AcidStorm.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -14919,7 +14919,7 @@ BloodyStorm.o: BloodyStorm.cpp BloodyStorm.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -15034,7 +15034,7 @@ InstallMine.o: InstallMine.cpp InstallMine.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -15147,7 +15147,7 @@ DisarmMine.o: DisarmMine.cpp DisarmMine.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -15261,7 +15261,7 @@ CreateBomb.o: CreateBomb.cpp CreateBomb.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -15371,7 +15371,7 @@ CreateMine.o: CreateMine.cpp CreateMine.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -15481,7 +15481,7 @@ Extreme.o: Extreme.cpp Extreme.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -15596,7 +15596,7 @@ Revealer.o: Revealer.cpp Revealer.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -15706,7 +15706,7 @@ VigorDrop.o: VigorDrop.cpp VigorDrop.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -15821,7 +15821,7 @@ EnergyDrop.o: EnergyDrop.cpp EnergyDrop.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -15936,7 +15936,7 @@ EnergyDrop.o: EnergyDrop.cpp EnergyDrop.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -16051,7 +16051,7 @@ CriticalGround.o: CriticalGround.cpp CriticalGround.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -16159,7 +16159,7 @@ ThunderStorm.o: ThunderStorm.cpp ThunderStorm.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -16267,7 +16267,7 @@ Peace.o: Peace.cpp Peace.h SimpleSkill.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -16381,7 +16381,7 @@ Activation.o: Activation.cpp Activation.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -16491,7 +16491,7 @@ HolyBlast.o: HolyBlast.cpp HolyBlast.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -16608,7 +16608,7 @@ Sanctuary.o: Sanctuary.cpp Sanctuary.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -16723,7 +16723,7 @@ Reflection.o: Reflection.cpp Reflection.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -16832,7 +16832,7 @@ Hymn.o: Hymn.cpp Hymn.h SkillHandler.h Skill.h ../../../Core/Types.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -16948,7 +16948,7 @@ Death.o: Death.cpp Death.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -17064,7 +17064,7 @@ Mephisto.o: Mephisto.cpp Mephisto.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -17179,7 +17179,7 @@ Transfusion.o: Transfusion.cpp Transfusion.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -17298,7 +17298,7 @@ MentalSword.o: MentalSword.cpp MentalSword.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -17405,7 +17405,7 @@ SummonCasket.o: SummonCasket.cpp SummonCasket.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -17517,7 +17517,7 @@ OpenCasket.o: OpenCasket.cpp OpenCasket.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -17632,7 +17632,7 @@ ObservingEye.o: ObservingEye.cpp ObservingEye.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -17748,7 +17748,7 @@ SummonMonsters.o: SummonMonsters.cpp SummonMonsters.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -17858,7 +17858,7 @@ BloodyWave.o: BloodyWave.cpp BloodyWave.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -17966,7 +17966,7 @@ BloodyMasterWave.o: BloodyMasterWave.cpp BloodyMasterWave.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -18074,7 +18074,7 @@ GroundAttack.o: GroundAttack.cpp GroundAttack.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -18188,7 +18188,7 @@ MeteorStrike.o: MeteorStrike.cpp MeteorStrike.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -18302,7 +18302,7 @@ Hallucination.o: Hallucination.cpp Hallucination.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -18418,7 +18418,7 @@ DuplicateSelf.o: DuplicateSelf.cpp DuplicateSelf.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -18528,7 +18528,7 @@ BloodyWall.o: BloodyWall.cpp BloodyWall.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -18643,7 +18643,7 @@ BloodySnake.o: BloodySnake.cpp BloodySnake.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -18759,7 +18759,7 @@ BloodyWarp.o: BloodyWarp.cpp BloodyWarp.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -18866,7 +18866,7 @@ SoulChain.o: SoulChain.cpp SoulChain.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -18985,7 +18985,7 @@ WideLightning.o: WideLightning.cpp WideLightning.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -19100,7 +19100,7 @@ SharpShield.o: SharpShield.cpp SharpShield.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -19210,7 +19210,7 @@ GunShotGuidance.o: GunShotGuidance.cpp GunShotGuidance.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -19326,7 +19326,7 @@ AirShield.o: AirShield.cpp AirShield.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -19436,7 +19436,7 @@ BulletOfLight.o: BulletOfLight.cpp BulletOfLight.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -19548,7 +19548,7 @@ HandsOfWisdom.o: HandsOfWisdom.cpp HandsOfWisdom.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -19655,7 +19655,7 @@ LightBall.o: LightBall.cpp LightBall.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -19762,7 +19762,7 @@ HolyArrow.o: HolyArrow.cpp HolyArrow.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -19869,7 +19869,7 @@ Rebuke.o: Rebuke.cpp Rebuke.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -19980,7 +19980,7 @@ SpiritGuard.o: SpiritGuard.cpp SpiritGuard.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -20090,7 +20090,7 @@ Regeneration.o: Regeneration.cpp Regeneration.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -20204,7 +20204,7 @@ PowerOfLand.o: PowerOfLand.cpp PowerOfLand.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -20319,7 +20319,7 @@ TurnUndead.o: TurnUndead.cpp TurnUndead.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -20431,7 +20431,7 @@ Armageddon.o: Armageddon.cpp Armageddon.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -20546,7 +20546,7 @@ BloodyBreaker.o: BloodyBreaker.cpp BloodyBreaker.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -20659,7 +20659,7 @@ RapidGliding.o: RapidGliding.cpp RapidGliding.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -20769,7 +20769,7 @@ MagicElusion.o: MagicElusion.cpp MagicElusion.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -20884,7 +20884,7 @@ PoisonMesh.o: PoisonMesh.cpp PoisonMesh.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -21002,7 +21002,7 @@ IllusionOfAvenge.o: IllusionOfAvenge.cpp IllusionOfAvenge.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -21114,7 +21114,7 @@ WillOfLife.o: WillOfLife.cpp WillOfLife.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -21230,7 +21230,7 @@ DenialMagic.o: DenialMagic.cpp DenialMagic.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -21340,7 +21340,7 @@ Requital.o: Requital.cpp Requital.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -21453,7 +21453,7 @@ Concealment.o: Concealment.cpp Concealment.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -21563,7 +21563,7 @@ Concealment.o: Concealment.cpp Concealment.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -21673,7 +21673,7 @@ Concealment.o: Concealment.cpp Concealment.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -21783,7 +21783,7 @@ Concealment.o: Concealment.cpp Concealment.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -21893,7 +21893,7 @@ Concealment.o: Concealment.cpp Concealment.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -22003,7 +22003,7 @@ SquallyBarrier1.o: SquallyBarrier1.cpp SquallyBarrier1.h SkillHandler.h Skill.h 
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -22113,7 +22113,7 @@ SquallyBarrier2.o: SquallyBarrier2.cpp SquallyBarrier2.h SkillHandler.h Skill.h 
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -22223,7 +22223,7 @@ SquallyBarrier2.o: SquallyBarrier2.cpp SquallyBarrier2.h SkillHandler.h Skill.h 
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -22333,7 +22333,7 @@ SquallyBarrier2.o: SquallyBarrier2.cpp SquallyBarrier2.h SkillHandler.h Skill.h 
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -22443,7 +22443,7 @@ SquallyBarrier2.o: SquallyBarrier2.cpp SquallyBarrier2.h SkillHandler.h Skill.h 
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -22553,7 +22553,7 @@ SwordRay.o: SwordRay.cpp SwordRay.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -22668,7 +22668,7 @@ MultiAmputate.o: MultiAmputate.cpp MultiAmputate.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -22775,7 +22775,7 @@ HitConvert.o: HitConvert.cpp HitConvert.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -22882,7 +22882,7 @@ WildTyphoon.o: WildTyphoon.cpp WildTyphoon.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -22990,7 +22990,7 @@ UltimateBlow.o: UltimateBlow.cpp UltimateBlow.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -23102,7 +23102,7 @@ Illendue.o: Illendue.cpp Illendue.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -23209,7 +23209,7 @@ Lightness.o: Lightness.cpp Lightness.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -23322,7 +23322,7 @@ Flourish.o: Flourish.cpp Flourish.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -23429,7 +23429,7 @@ Evade.o: Evade.cpp Evade.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -23539,7 +23539,7 @@ SharpRound.o: SharpRound.cpp SharpRound.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -23646,7 +23646,7 @@ BackStab.o: BackStab.cpp BackStab.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -23754,7 +23754,7 @@ Blunting.o: Blunting.cpp Blunting.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -23870,7 +23870,7 @@ GammaChop.o: GammaChop.cpp GammaChop.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -23977,7 +23977,7 @@ CrossGuard.o: CrossGuard.cpp CrossGuard.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -24087,7 +24087,7 @@ KasasArrow.o: KasasArrow.cpp KasasArrow.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -24194,7 +24194,7 @@ HandsOfFire.o: HandsOfFire.cpp HandsOfFire.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -24304,7 +24304,7 @@ Prominence.o: Prominence.cpp Prominence.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -24418,7 +24418,7 @@ RingOfFlare.o: RingOfFlare.cpp RingOfFlare.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -24528,7 +24528,7 @@ RingOfFlare.o: RingOfFlare.cpp RingOfFlare.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -24638,7 +24638,7 @@ BlazeBolt.o: BlazeBolt.cpp BlazeBolt.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -24745,7 +24745,7 @@ IceField.o: IceField.cpp IceField.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -24860,7 +24860,7 @@ WaterBarrier.o: WaterBarrier.cpp WaterBarrier.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -24970,7 +24970,7 @@ NymphRecovery.o: NymphRecovery.cpp NymphRecovery.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -25083,7 +25083,7 @@ Liberty.o: Liberty.cpp Liberty.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -25197,7 +25197,7 @@ Tendril.o: Tendril.cpp Tendril.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -25313,7 +25313,7 @@ StoneAuger.o: StoneAuger.cpp StoneAuger.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -25421,7 +25421,7 @@ EarthsTeeth.o: EarthsTeeth.cpp EarthsTeeth.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -25528,7 +25528,7 @@ GnomesWhisper.o: GnomesWhisper.cpp GnomesWhisper.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -25638,7 +25638,7 @@ AbsorbSoul.o: AbsorbSoul.cpp AbsorbSoul.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -25756,7 +25756,7 @@ HandsOfNizie.o: HandsOfNizie.cpp HandsOfNizie.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -25863,7 +25863,7 @@ RefusalEther.o: RefusalEther.cpp RefusalEther.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -25978,7 +25978,7 @@ EmissionWater.o: EmissionWater.cpp EmissionWater.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -26085,7 +26085,7 @@ BeatHead.o: BeatHead.cpp BeatHead.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -26192,7 +26192,7 @@ DivineSpirits.o: DivineSpirits.cpp DivineSpirits.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -26302,7 +26302,7 @@ BlitzSliding.o: BlitzSliding.cpp BlitzSliding.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -26416,7 +26416,7 @@ JabbingVein.o: JabbingVein.cpp JabbingVein.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -26529,7 +26529,7 @@ GreatHeal.o: GreatHeal.cpp GreatHeal.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -26636,7 +26636,7 @@ DivineGuidance.o: DivineGuidance.cpp DivineGuidance.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -26749,7 +26749,7 @@ BlazeWalk.o: BlazeWalk.cpp BlazeWalk.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -26863,7 +26863,7 @@ BloodyZenith.o: BloodyZenith.cpp BloodyZenith.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -26973,7 +26973,7 @@ Rediance.o: Rediance.cpp Rediance.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -27084,7 +27084,7 @@ LarSlash.o: LarSlash.cpp LarSlash.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -27194,7 +27194,7 @@ Trident.o: Trident.cpp Trident.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -27306,7 +27306,7 @@ HeartCatalyst.o: HeartCatalyst.cpp HeartCatalyst.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -27417,7 +27417,7 @@ ProtectionFromBlood.o: ProtectionFromBlood.cpp ProtectionFromBlood.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -27530,7 +27530,7 @@ MoleShot.o: MoleShot.cpp MoleShot.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -27642,7 +27642,7 @@ Eternity.o: Eternity.cpp Eternity.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -27751,7 +27751,7 @@ InstallTrap.o: InstallTrap.cpp InstallTrap.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -27863,7 +27863,7 @@ HolyArmor.o: HolyArmor.cpp HolyArmor.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -27974,7 +27974,7 @@ MercyGround.o: MercyGround.cpp MercyGround.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -28089,7 +28089,7 @@ CreateHolyPotion.o: CreateHolyPotion.cpp CreateHolyPotion.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -28200,7 +28200,7 @@ TransformToWerwolf.o: TransformToWerwolf.cpp TransformToWerwolf.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -28314,7 +28314,7 @@ GrayDarkness.o: GrayDarkness.cpp GrayDarkness.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -28434,7 +28434,7 @@ StoneSkin.o: StoneSkin.cpp StoneSkin.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -28549,7 +28549,7 @@ TalonOfCrow.o: TalonOfCrow.cpp TalonOfCrow.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -28656,7 +28656,7 @@ BiteOfDeath.o: BiteOfDeath.cpp BiteOfDeath.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -28770,7 +28770,7 @@ AcidEruption.o: AcidEruption.cpp AcidEruption.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -28883,7 +28883,7 @@ Teleport.o: Teleport.cpp Teleport.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -28993,7 +28993,7 @@ FirePiercing.o: FirePiercing.cpp FirePiercing.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -29106,7 +29106,7 @@ SoulRebirth.o: SoulRebirth.cpp SoulRebirth.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -29223,7 +29223,7 @@ IceLance.o: IceLance.cpp IceLance.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -29331,7 +29331,7 @@ ExplosionWater.o: ExplosionWater.cpp ExplosionWater.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -29445,7 +29445,7 @@ FrozenArmor.o: FrozenArmor.cpp FrozenArmor.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -29561,7 +29561,7 @@ MagnumSpear.o: MagnumSpear.cpp MagnumSpear.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -29674,7 +29674,7 @@ ReactiveArmor.o: ReactiveArmor.cpp ReactiveArmor.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -29790,7 +29790,7 @@ GroundBless.o: GroundBless.cpp GroundBless.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -29906,7 +29906,7 @@ HellFire.o: HellFire.cpp HellFire.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -30021,7 +30021,7 @@ SharpChakram.o: SharpChakram.cpp SharpChakram.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -30137,7 +30137,7 @@ DestructionSpear.o: DestructionSpear.cpp DestructionSpear.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -30246,7 +30246,7 @@ ShiftBreak.o: ShiftBreak.cpp ../../../Core/Utility.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -30355,7 +30355,7 @@ FatalSnick.o: FatalSnick.cpp FatalSnick.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -30462,7 +30462,7 @@ ChargingAttack.o: ChargingAttack.cpp ChargingAttack.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -30572,7 +30572,7 @@ DuckingWallop.o: DuckingWallop.cpp DuckingWallop.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -30685,7 +30685,7 @@ DistanceBlitz.o: DistanceBlitz.cpp DistanceBlitz.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -30793,7 +30793,7 @@ SummonGroundElemental.o: SummonGroundElemental.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -30909,7 +30909,7 @@ SummonFireElemental.o: SummonFireElemental.cpp SummonFireElemental.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -31019,7 +31019,7 @@ SummonWaterElemental.o: SummonWaterElemental.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -31129,7 +31129,7 @@ MeteorStorm.o: MeteorStorm.cpp MeteorStorm.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -31237,7 +31237,7 @@ WideIceField.o: WideIceField.cpp WideIceField.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -31351,7 +31351,7 @@ Glacier1.o: Glacier1.cpp Glacier1.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -31465,7 +31465,7 @@ Glacier2.o: Glacier2.cpp Glacier2.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -31578,7 +31578,7 @@ IceAuger.o: IceAuger.cpp IceAuger.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -31685,7 +31685,7 @@ IceHail.o: IceHail.cpp IceHail.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -31800,7 +31800,7 @@ WideIceHail.o: WideIceHail.cpp WideIceHail.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -31914,7 +31914,7 @@ IceWave.o: IceWave.cpp IceWave.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -32022,7 +32022,7 @@ LandMineExplosion.o: LandMineExplosion.cpp LandMineExplosion.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -32131,7 +32131,7 @@ ClaymoreExplosion.o: ClaymoreExplosion.cpp ClaymoreExplosion.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -32240,7 +32240,7 @@ PleasureExplosion.o: PleasureExplosion.cpp PleasureExplosion.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -32349,7 +32349,7 @@ DeleoEfficio.o: DeleoEfficio.cpp DeleoEfficio.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -32462,7 +32462,7 @@ ReputoFactum.o: ReputoFactum.cpp ReputoFactum.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -32578,7 +32578,7 @@ SwordOfThor.o: SwordOfThor.cpp SwordOfThor.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -32687,7 +32687,7 @@ BurningSolCharging.o: BurningSolCharging.cpp BurningSolCharging.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -32797,7 +32797,7 @@ BurningSolLaunch.o: BurningSolLaunch.cpp BurningSolLaunch.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -32906,7 +32906,7 @@ SweepVice.o: SweepVice.cpp SweepVice.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -33014,7 +33014,7 @@ Whitsuntide.o: Whitsuntide.cpp Whitsuntide.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -33134,7 +33134,7 @@ TorrentialLife.o: TorrentialLife.cpp TorrentialLife.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -33254,7 +33254,7 @@ ViolentPhantom.o: ViolentPhantom.cpp ViolentPhantom.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -33362,7 +33362,7 @@ ViolentPhantom.o: ViolentPhantom.cpp ViolentPhantom.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -33470,7 +33470,7 @@ InstallTurret.o: InstallTurret.cpp InstallTurret.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -33581,7 +33581,7 @@ TurretFire.o: TurretFire.cpp TurretFire.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -33689,7 +33689,7 @@ SummonGoreGland.o: SummonGoreGland.cpp SummonGoreGland.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -33803,7 +33803,7 @@ SummonGoreGland.o: SummonGoreGland.cpp SummonGoreGland.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -33917,7 +33917,7 @@ GoreGlandFire.o: GoreGlandFire.cpp GoreGlandFire.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -34025,7 +34025,7 @@ ThrowingAxe.o: ThrowingAxe.cpp ThrowingAxe.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -34139,7 +34139,7 @@ ChoppingFirewood.o: ChoppingFirewood.cpp ChoppingFirewood.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -34253,7 +34253,7 @@ ChainThrowingAxe.o: ChainThrowingAxe.cpp ChainThrowingAxe.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -34367,7 +34367,7 @@ MultiThrowingAxe.o: MultiThrowingAxe.cpp MultiThrowingAxe.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -34481,7 +34481,7 @@ PlayingWithFire.o: PlayingWithFire.cpp PlayingWithFire.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -34589,7 +34589,7 @@ InfinityThunderbolt.o: InfinityThunderbolt.cpp InfinityThunderbolt.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -34697,7 +34697,7 @@ SpitStream.o: SpitStream.cpp SpitStream.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -34805,7 +34805,7 @@ PlasmaRocketLauncher.o: PlasmaRocketLauncher.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -34919,7 +34919,7 @@ BombingStar.o: BombingStar.cpp BombingStar.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -35027,7 +35027,7 @@ IntimateGrail.o: IntimateGrail.cpp IntimateGrail.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -35143,7 +35143,7 @@ NooseOfWraith.o: NooseOfWraith.cpp NooseOfWraith.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -35251,7 +35251,7 @@ SetAfire.o: SetAfire.cpp SetAfire.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -35361,7 +35361,7 @@ SetAfire.o: SetAfire.cpp SetAfire.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -35471,7 +35471,7 @@ SharpHail.o: SharpHail.cpp SharpHail.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -35585,7 +35585,7 @@ SharpHail.o: SharpHail.cpp SharpHail.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -35699,7 +35699,7 @@ IceHorizon.o: IceHorizon.cpp IceHorizon.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -35814,7 +35814,7 @@ FuryOfGnome.o: FuryOfGnome.cpp FuryOfGnome.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -35924,7 +35924,7 @@ SummonMiga.o: SummonMiga.cpp SummonMiga.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -36039,7 +36039,7 @@ SummonMigaAttack.o: SummonMigaAttack.cpp SummonMigaAttack.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -36148,7 +36148,7 @@ Cannonade.o: Cannonade.cpp Cannonade.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -36261,7 +36261,7 @@ SelfDestruction.o: SelfDestruction.cpp SelfDestruction.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -36370,7 +36370,7 @@ ARAttack.o: ARAttack.cpp ARAttack.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -36477,7 +36477,7 @@ SMGAttack.o: SMGAttack.cpp SMGAttack.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -36584,7 +36584,7 @@ GrenadeAttack.o: GrenadeAttack.cpp GrenadeAttack.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -36696,7 +36696,7 @@ Halo.o: Halo.cpp Halo.h SkillHandler.h Skill.h ../../../Core/Types.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -36804,7 +36804,7 @@ Destinies.o: Destinies.cpp Destinies.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -36912,7 +36912,7 @@ FierceFlame.o: FierceFlame.cpp FierceFlame.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -37026,7 +37026,7 @@ ShadowOfStorm.o: ShadowOfStorm.cpp ShadowOfStorm.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -37140,7 +37140,7 @@ LightingShock.o: LightingShock.cpp LightingShock.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -37254,7 +37254,7 @@ SolaFlare.o: SolaFlare.cpp SolaFlare.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -37368,7 +37368,7 @@ SolaFlare.o: SolaFlare.cpp SolaFlare.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -37482,7 +37482,7 @@ SolaFlare.o: SolaFlare.cpp SolaFlare.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -37596,7 +37596,7 @@ WildWolf.o: WildWolf.cpp WildWolf.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -37710,7 +37710,7 @@ Aberration.o: Aberration.cpp Aberration.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -37826,7 +37826,7 @@ DragonTornado.o: DragonTornado.cpp DragonTornado.h SkillHandler.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -37935,7 +37935,7 @@ BikeCrash.o: BikeCrash.cpp BikeCrash.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -38043,7 +38043,7 @@ HarpoonBomb.o: HarpoonBomb.cpp HarpoonBomb.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -38157,7 +38157,7 @@ PassingHeal.o: PassingHeal.cpp PassingHeal.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -38270,7 +38270,7 @@ RottenApple.o: RottenApple.cpp RottenApple.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -38383,7 +38383,7 @@ MonsterRangeSkill.o: MonsterRangeSkill.cpp MonsterRangeSkill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -38491,7 +38491,7 @@ EffectAcidSwamp.o: EffectAcidSwamp.cpp ../../database/DB.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -38600,7 +38600,7 @@ EffectAuraShield.o: EffectAuraShield.cpp EffectAuraShield.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -38695,7 +38695,7 @@ EffectBless.o: EffectBless.cpp EffectBless.h ../Effect.h ../Object.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -38793,7 +38793,7 @@ EffectBloodDrain.o: EffectBloodDrain.cpp EffectBloodDrain.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -38901,7 +38901,7 @@ EffectCrossCounter.o: EffectCrossCounter.cpp EffectCrossCounter.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h \
  ../../../Core/Gpackets/GCRemoveEffect.h
 EffectDoom.o: EffectDoom.cpp EffectDoom.h ../Effect.h ../Object.h \
@@ -38990,7 +38990,7 @@ EffectDoom.o: EffectDoom.cpp EffectDoom.h ../Effect.h ../Object.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -39090,7 +39090,7 @@ EffectDarkBluePoison.o: EffectDarkBluePoison.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -39270,7 +39270,7 @@ EffectRevealer.o: EffectRevealer.cpp EffectRevealer.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -39365,7 +39365,7 @@ EffectDetectHidden.o: EffectDetectHidden.cpp EffectDetectHidden.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h \
  ../../../Core/Gpackets/GCRemoveEffect.h
 EffectDetectInvisibility.o: EffectDetectInvisibility.cpp \
@@ -39456,7 +39456,7 @@ EffectDetectInvisibility.o: EffectDetectInvisibility.cpp \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h \
  ../../../Core/Gpackets/GCRemoveEffect.h
@@ -39547,7 +39547,7 @@ EffectDetectMine.o: EffectDetectMine.cpp EffectDetectMine.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h
 EffectFadeOut.o: EffectFadeOut.cpp EffectFadeOut.h ../Effect.h \
@@ -39638,7 +39638,7 @@ EffectFadeOut.o: EffectFadeOut.cpp EffectFadeOut.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -39738,7 +39738,7 @@ EffectGreenPoison.o: EffectGreenPoison.cpp EffectGreenPoison.h \
  ../../../Core/RideMotorcycleSlotInfo.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/SubSlayerSkillInfo.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/SkillSlot.h ../Ousters.h ../../../Core/PCOustersInfo.h \
  ../../../Core/PCOustersInfo2.h ../../../Core/PCOustersInfo3.h \
  ../../../Core/OustersSkillInfo.h ../../../Core/SubOustersSkillInfo.h \
@@ -39843,7 +39843,7 @@ EffectGreenStalker.o: EffectGreenStalker.cpp EffectGreenStalker.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -39943,7 +39943,7 @@ EffectInvisibility.o: EffectInvisibility.cpp EffectInvisibility.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -40038,7 +40038,7 @@ EffectLight.o: EffectLight.cpp EffectLight.h ../Effect.h ../Object.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../../../Core/Player.h \
  ../../../Core/Gpackets/GCRemoveEffect.h
 EffectPoison.o: EffectPoison.cpp EffectPoison.h ../Effect.h \
@@ -40128,7 +40128,7 @@ EffectPoison.o: EffectPoison.cpp EffectPoison.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -40229,7 +40229,7 @@ EffectPotentialExplosion.o: EffectPotentialExplosion.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -40327,7 +40327,7 @@ EffectProtectionFromCurse.o: EffectProtectionFromCurse.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h \
  ../../../Core/Gpackets/GCRemoveEffect.h
 EffectProtectionFromPoison.o: EffectProtectionFromPoison.cpp \
@@ -40418,7 +40418,7 @@ EffectProtectionFromPoison.o: EffectProtectionFromPoison.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h \
  ../../../Core/Gpackets/GCRemoveEffect.h
 EffectParalyze.o: EffectParalyze.cpp EffectParalyze.h ../Effect.h \
@@ -40508,7 +40508,7 @@ EffectParalyze.o: EffectParalyze.cpp EffectParalyze.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -40618,7 +40618,7 @@ EffectParalyze.o: EffectParalyze.cpp EffectParalyze.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -40728,7 +40728,7 @@ EffectMistOfSoul1.o: EffectMistOfSoul1.cpp EffectMistOfSoul1.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -40838,7 +40838,7 @@ EffectRegeneration.o: EffectRegeneration.cpp EffectRegeneration.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -40954,7 +40954,7 @@ EffectReloadTimer.o: EffectReloadTimer.cpp EffectReloadTimer.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../../../Core/Player.h \
  ../../../Core/Gpackets/GCReloadOK.h ../ItemInfoManager.h \
  ../ItemInfo.h ../InfoClassManager.h ../ItemUtil.h ../item/Magazine.h \
@@ -41047,7 +41047,7 @@ EffectStriking.o: EffectStriking.cpp EffectStriking.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../../../Core/Player.h \
  ../../../Core/Gpackets/GCRemoveEffect.h
 EffectTransformToWolf.o: EffectTransformToWolf.cpp \
@@ -41136,7 +41136,7 @@ EffectTransformToWolf.o: EffectTransformToWolf.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -41234,7 +41234,7 @@ EffectTransformToBat.o: EffectTransformToBat.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -41335,7 +41335,7 @@ EffectYellowPoison.o: EffectYellowPoison.cpp EffectYellowPoison.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../../../Core/Player.h \
  SkillUtil.h ../Vampire.h ../../../Core/PCVampireInfo.h \
  ../../../Core/PCVampireInfo2.h ../../../Core/PCVampireInfo3.h \
@@ -41435,7 +41435,7 @@ EffectYellowPoisonToCreature.o: EffectYellowPoisonToCreature.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../../../Core/Player.h \
  ../DarkLightInfo.h ../../../Core/Gpackets/GCChangeDarkLight.h \
  ../../../Core/Gpackets/GCRemoveEffect.h
@@ -41527,7 +41527,7 @@ EffectFlare.o: EffectFlare.cpp EffectFlare.h ../Effect.h ../Object.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -41636,7 +41636,7 @@ EffectAuraShield.o: EffectAuraShield.cpp EffectAuraShield.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -41731,7 +41731,7 @@ EffectDancingSword.o: EffectDancingSword.cpp EffectDancingSword.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../../../Core/Player.h \
  ../../../Core/Gpackets/GCStatusCurrentHP.h \
  ../../../Core/Gpackets/GCRemoveEffect.h
@@ -41823,7 +41823,7 @@ EffectSnipingMode.o: EffectSnipingMode.cpp EffectSnipingMode.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../ZoneUtil.h \
  ../../../Core/VSDateTime.h
@@ -41913,7 +41913,7 @@ EffectChargingPower.o: EffectChargingPower.cpp EffectChargingPower.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -42008,7 +42008,7 @@ EffectGhostBlade.o: EffectGhostBlade.cpp EffectGhostBlade.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -42105,7 +42105,7 @@ EffectProtectionFromAcid.o: EffectProtectionFromAcid.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h \
  ../../../Core/Gpackets/GCRemoveEffect.h
 EffectSacrifice.o: EffectSacrifice.cpp EffectSacrifice.h ../Effect.h \
@@ -42194,7 +42194,7 @@ EffectSacrifice.o: EffectSacrifice.cpp EffectSacrifice.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -42297,7 +42297,7 @@ EffectVampirePortal.o: EffectVampirePortal.cpp EffectVampirePortal.h \
  ../../../Core/RideMotorcycleSlotInfo.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/SubSlayerSkillInfo.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/SkillSlot.h ../Ousters.h ../../../Core/PCOustersInfo.h \
  ../../../Core/PCOustersInfo2.h ../../../Core/PCOustersInfo3.h \
  ../../../Core/OustersSkillInfo.h ../../../Core/SubOustersSkillInfo.h \
@@ -42400,7 +42400,7 @@ EffectSeduction.o: EffectSeduction.cpp EffectSeduction.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -42499,7 +42499,7 @@ EffectMindControl.o: EffectMindControl.cpp EffectMindControl.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -42595,7 +42595,7 @@ EffectExpansion.o: EffectExpansion.cpp EffectExpansion.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -42691,7 +42691,7 @@ EffectMiracleShield.o: EffectMiracleShield.cpp EffectMiracleShield.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -42787,7 +42787,7 @@ EffectBerserker.o: EffectBerserker.cpp EffectBerserker.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../../../Core/Player.h \
  ../../../Core/Gpackets/GCStatusCurrentHP.h \
  ../../../Core/Gpackets/GCRemoveEffect.h
@@ -42877,7 +42877,7 @@ EffectTyphoon.o: EffectTyphoon.cpp EffectTyphoon.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -42974,7 +42974,7 @@ EffectCureCriticalWounds.o: EffectCureCriticalWounds.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -43077,7 +43077,7 @@ EffectRestore.o: EffectRestore.cpp EffectRestore.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -43257,7 +43257,7 @@ EffectAcidStorm.o: EffectAcidStorm.cpp EffectAcidStorm.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -43366,7 +43366,7 @@ EffectStormAcid.o: EffectStormAcid.cpp EffectStormAcid.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -43467,7 +43467,7 @@ EffectStormAcid.o: EffectStormAcid.cpp EffectStormAcid.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -43576,7 +43576,7 @@ EffectStormBat.o: EffectStormBat.cpp EffectStormBat.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -43677,7 +43677,7 @@ EffectBloodyStorm.o: EffectBloodyStorm.cpp EffectBloodyStorm.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -43786,7 +43786,7 @@ EffectStormBloody.o: EffectStormBloody.cpp EffectStormBloody.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -43887,7 +43887,7 @@ EffectPoisonStorm.o: EffectPoisonStorm.cpp EffectPoisonStorm.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -43997,7 +43997,7 @@ EffectEnergyDrop.o: EffectEnergyDrop.cpp EffectEnergyDrop.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -44107,7 +44107,7 @@ EffectEnergyDropToCreature.o: EffectEnergyDropToCreature.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -44208,7 +44208,7 @@ EffectEnergyDropToCreature.o: EffectEnergyDropToCreature.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -44318,7 +44318,7 @@ EffectMeteoBlazeToCreature.o: EffectMeteoBlazeToCreature.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -44419,7 +44419,7 @@ EffectVigorDrop.o: EffectVigorDrop.cpp EffectVigorDrop.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -44529,7 +44529,7 @@ EffectVigorDropToCreature.o: EffectVigorDropToCreature.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -44629,7 +44629,7 @@ EffectStormPoison.o: EffectStormPoison.cpp EffectStormPoison.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -44731,7 +44731,7 @@ EffectCauseCriticalWounds.o: EffectCauseCriticalWounds.cpp \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -44841,7 +44841,7 @@ EffectPeace.o: EffectPeace.cpp EffectPeace.h ../Effect.h ../Object.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -44950,7 +44950,7 @@ EffectActivation.o: EffectActivation.cpp EffectActivation.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h \
  ../../../Core/Gpackets/GCRemoveEffect.h
 EffectSanctuary.o: EffectSanctuary.cpp EffectSanctuary.h ../Effect.h \
@@ -45107,7 +45107,7 @@ EffectReflection.o: EffectReflection.cpp EffectReflection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -45201,7 +45201,7 @@ EffectHymn.o: EffectHymn.cpp EffectHymn.h ../Effect.h ../Object.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -45300,7 +45300,7 @@ EffectDeath.o: EffectDeath.cpp EffectDeath.h ../Effect.h ../Object.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -45570,7 +45570,7 @@ EffectObservingEye.o: EffectObservingEye.cpp EffectObservingEye.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -45668,7 +45668,7 @@ EffectGroundAttack.o: EffectGroundAttack.cpp EffectGroundAttack.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -45777,7 +45777,7 @@ EffectMeteorStrike.o: EffectMeteorStrike.cpp EffectMeteorStrike.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -45886,7 +45886,7 @@ EffectHallucination.o: EffectHallucination.cpp EffectHallucination.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -45982,7 +45982,7 @@ EffectDecreaseHP.o: EffectDecreaseHP.cpp EffectDecreaseHP.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -46082,7 +46082,7 @@ EffectBloodyWall.o: EffectBloodyWall.cpp ../../database/DB.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -46191,7 +46191,7 @@ EffectBloodySnake.o: EffectBloodySnake.cpp EffectBloodySnake.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -46301,7 +46301,7 @@ EffectBloodyWallBlocked.o: EffectBloodyWallBlocked.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -46409,7 +46409,7 @@ EffectSoulChain.o: EffectSoulChain.cpp EffectSoulChain.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -46521,7 +46521,7 @@ EffectSharpShield.o: EffectSharpShield.cpp EffectSharpShield.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -46617,7 +46617,7 @@ EffectGunShotGuidanceAim.o: EffectGunShotGuidanceAim.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -46734,7 +46734,7 @@ EffectGunShotGuidancePoint.o: EffectGunShotGuidancePoint.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -46848,7 +46848,7 @@ EffectAirShield.o: EffectAirShield.cpp EffectAirShield.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -46943,7 +46943,7 @@ EffectSleep.o: EffectSleep.cpp EffectSleep.h ../Effect.h ../Object.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -47052,7 +47052,7 @@ EffectSpiritGuard.o: EffectSpiritGuard.cpp EffectSpiritGuard.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -47167,7 +47167,7 @@ EffectArmageddon.o: EffectArmageddon.cpp EffectArmageddon.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -47267,7 +47267,7 @@ EffectTileStorm.o: EffectTileStorm.cpp EffectTileStorm.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -47376,7 +47376,7 @@ EffectMonsterTileStorm.o: EffectMonsterTileStorm.cpp EffectMonsterTileStorm.h ..
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -47553,7 +47553,7 @@ EffectPoisonMesh.o: EffectPoisonMesh.cpp EffectPoisonMesh.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -47734,7 +47734,7 @@ EffectDenialMagic.o: EffectDenialMagic.cpp EffectDenialMagic.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -47829,7 +47829,7 @@ EffectRequital.o: EffectRequital.cpp EffectRequital.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -47924,7 +47924,7 @@ EffectConcealment.o: EffectConcealment.cpp EffectConcealment.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -48019,7 +48019,7 @@ EffectConcealment.o: EffectConcealment.cpp EffectConcealment.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -48114,7 +48114,7 @@ EffectConcealment.o: EffectConcealment.cpp EffectConcealment.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -48209,7 +48209,7 @@ EffectConcealment.o: EffectConcealment.cpp EffectConcealment.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -48304,7 +48304,7 @@ EffectConcealment.o: EffectConcealment.cpp EffectConcealment.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -48399,7 +48399,7 @@ EffectSquallyBarrier1.o: EffectSquallyBarrier1.cpp EffectSquallyBarrier1.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -48494,7 +48494,7 @@ EffectSquallyBarrier1back.o: EffectSquallyBarrier1back.cpp EffectSquallyBarrier1
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -48589,7 +48589,7 @@ EffectMagicShield2.o: EffectMagicShield2.cpp EffectMagicShield2.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -48684,7 +48684,7 @@ EffectMagicShield2.o: EffectMagicShield2.cpp EffectMagicShield2.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -48779,7 +48779,7 @@ EffectMagicShield2.o: EffectMagicShield2.cpp EffectMagicShield2.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -49026,7 +49026,7 @@ EffectBlunting.o: EffectBlunting.cpp EffectBlunting.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -49293,7 +49293,7 @@ EffectProminence.o: EffectProminence.cpp ../../database/DB.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -49406,7 +49406,7 @@ EffectRingOfFlare.o: EffectRingOfFlare.cpp EffectRingOfFlare.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/SkillSlot.h ../Vampire.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/SkillSlot.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
  ../../../Core/SubVampireSkillInfo.h ../skill/VampireSkillSlot.h \
@@ -49522,7 +49522,7 @@ EffectRingOfFlare.o: EffectRingOfFlare.cpp EffectRingOfFlare.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/SkillSlot.h ../Vampire.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/SkillSlot.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
  ../../../Core/SubVampireSkillInfo.h ../skill/VampireSkillSlot.h \
@@ -49638,7 +49638,7 @@ EffectRingOfFlare.o: EffectRingOfFlare.cpp EffectRingOfFlare.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/SkillSlot.h ../Vampire.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/SkillSlot.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
  ../../../Core/SubVampireSkillInfo.h ../skill/VampireSkillSlot.h \
@@ -49750,7 +49750,7 @@ EffectIceField.o: EffectIceField.cpp ../../database/DB.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Ousters.h \
  ../../../Core/PCOustersInfo.h ../../../Core/PCOustersInfo2.h \
@@ -50515,7 +50515,7 @@ EffectContinualBloodyWall.o: EffectContinualBloodyWall.cpp \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -50696,7 +50696,7 @@ EffectDivineGuidance.o: EffectDivineGuidance.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -50796,7 +50796,7 @@ EffectBlazeWalk.o: EffectBlazeWalk.cpp EffectBlazeWalk.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -50895,7 +50895,7 @@ EffectRediance.o: EffectRediance.cpp EffectRediance.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../../../Core/Player.h \
  ../../../Core/Gpackets/GCStatusCurrentHP.h \
  ../../../Core/Gpackets/GCRemoveEffect.h
@@ -50986,7 +50986,7 @@ EffectHeartCatalyst.o: EffectHeartCatalyst.cpp EffectHeartCatalyst.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../../../Core/Player.h \
  ../ItemUtil.h ../../../Core/Gpackets/GCStatusCurrentHP.h \
  ../../../Core/Gpackets/GCRemoveEffect.h
@@ -51078,7 +51078,7 @@ EffectProtectionFromBlood.o: EffectProtectionFromBlood.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h \
  ../../../Core/Gpackets/GCRemoveEffect.h
 EffectEternity.o: EffectEternity.cpp EffectEternity.h ../Effect.h \
@@ -51168,7 +51168,7 @@ EffectEternity.o: EffectEternity.cpp EffectEternity.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../../../Core/Player.h \
  ../../../Core/Gpackets/GCStatusCurrentHP.h \
  ../../../Core/Gpackets/GCAddEffectToTile.h \
@@ -51264,7 +51264,7 @@ EffectTrapInstalled.o: EffectTrapInstalled.cpp EffectTrapInstalled.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -51362,7 +51362,7 @@ EffectTrapTriggered.o: EffectTrapTriggered.cpp EffectTrapTriggered.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../../../Core/Player.h \
  ../../../Core/Gpackets/GCStatusCurrentHP.h \
  ../../../Core/Gpackets/GCRemoveEffect.h
@@ -51453,7 +51453,7 @@ EffectHolyArmor.o: EffectHolyArmor.cpp EffectHolyArmor.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../../../Core/Player.h \
  ../../../Core/Gpackets/GCStatusCurrentHP.h \
  ../../../Core/Gpackets/GCRemoveEffect.h
@@ -51616,7 +51616,7 @@ EffectTransformToWerwolf.o: EffectTransformToWerwolf.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -51956,7 +51956,7 @@ EffectAcidEruption.o: EffectAcidEruption.cpp EffectAcidEruption.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../../../Core/Player.h \
  SkillUtil.h ../Vampire.h ../../../Core/PCVampireInfo.h \
  ../../../Core/PCVampireInfo2.h ../../../Core/PCVampireInfo3.h \
@@ -52055,7 +52055,7 @@ EffectExplosionWater.o: EffectExplosionWater.cpp \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -52247,7 +52247,7 @@ EffectMagnumSpear.o: EffectMagnumSpear.cpp EffectMagnumSpear.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../../../Core/Player.h \
  SkillUtil.h ../Vampire.h ../../../Core/PCVampireInfo.h \
  ../../../Core/PCVampireInfo2.h ../../../Core/PCVampireInfo3.h \
@@ -52512,7 +52512,7 @@ EffectHellFire.o: EffectHellFire.cpp ../../database/DB.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Ousters.h \
  ../../../Core/PCOustersInfo.h ../../../Core/PCOustersInfo2.h \
@@ -52628,7 +52628,7 @@ EffectHellFireToEnemy.o: EffectHellFireToEnemy.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/SkillSlot.h ../Vampire.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/SkillSlot.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
  ../../../Core/SubVampireSkillInfo.h ../skill/VampireSkillSlot.h \
@@ -52810,7 +52810,7 @@ EffectDestructionSpear.o: EffectDestructionSpear.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/SkillSlot.h ../Vampire.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/SkillSlot.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
  ../../../Core/SubVampireSkillInfo.h ../skill/VampireSkillSlot.h \
@@ -52978,7 +52978,7 @@ EffectGroundElemental.o: EffectGroundElemental.cpp \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -53083,7 +53083,7 @@ EffectSummonFireElemental.o: EffectSummonFireElemental.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/SkillSlot.h ../Vampire.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/SkillSlot.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
  ../../../Core/SubVampireSkillInfo.h ../skill/VampireSkillSlot.h \
@@ -53201,7 +53201,7 @@ EffectSummonWaterElemental.o: EffectSummonWaterElemental.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/SkillSlot.h ../Vampire.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/SkillSlot.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
  ../../../Core/SubVampireSkillInfo.h ../skill/VampireSkillSlot.h \
@@ -53318,7 +53318,7 @@ EffectBlindness.o: EffectBlindness.cpp EffectBlindness.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/SkillSlot.h ../Vampire.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/SkillSlot.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
  ../../../Core/SubVampireSkillInfo.h ../skill/VampireSkillSlot.h \
@@ -53410,7 +53410,7 @@ EffectIceHail.o: EffectIceHail.cpp EffectIceHail.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Ousters.h \
  ../../../Core/PCOustersInfo.h ../../../Core/PCOustersInfo2.h \
  ../../../Core/PCOustersInfo3.h ../../../Core/OustersSkillInfo.h \
@@ -53519,7 +53519,7 @@ EffectIceHailToTile.o: EffectIceHailToTile.cpp EffectIceHailToTile.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -53753,7 +53753,7 @@ EffectBurningSolCharging.o: EffectBurningSolCharging.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -53849,7 +53849,7 @@ EffectWhitsuntide.o: EffectWhitsuntide.cpp EffectWhitsuntide.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -53947,7 +53947,7 @@ EffectInstallTurret.o: EffectInstallTurret.cpp EffectInstallTurret.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -54046,7 +54046,7 @@ EffectPlasmaRocketLauncher.o: EffectPlasmaRocketLauncher.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -54146,7 +54146,7 @@ EffectIntimateGrail.o: EffectIntimateGrail.cpp EffectIntimateGrail.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -54244,7 +54244,7 @@ EffectSetAfire.o: EffectSetAfire.cpp EffectSetAfire.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../../../Core/Player.h \
  SkillUtil.h ../Vampire.h ../../../Core/PCVampireInfo.h \
  ../../../Core/PCVampireInfo2.h ../../../Core/PCVampireInfo3.h \
@@ -54343,7 +54343,7 @@ EffectSuddenBlast.o: EffectSuddenBlast.cpp EffectSuddenBlast.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../../../Core/Player.h \
  SkillUtil.h ../Vampire.h ../../../Core/PCVampireInfo.h \
  ../../../Core/PCVampireInfo2.h ../../../Core/PCVampireInfo3.h \
@@ -54443,7 +54443,7 @@ EffectIceHorizon.o: EffectIceHorizon.cpp ../../database/DB.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Ousters.h \
  ../../../Core/PCOustersInfo.h ../../../Core/PCOustersInfo2.h \
@@ -54554,7 +54554,7 @@ EffectFuryOfGnome.o: EffectFuryOfGnome.cpp ../../database/DB.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Ousters.h \
  ../../../Core/PCOustersInfo.h ../../../Core/PCOustersInfo2.h \
@@ -54664,7 +54664,7 @@ EffectFuryOfGnomeMark.o: EffectFuryOfGnomeMark.cpp ../../database/DB.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Ousters.h \
  ../../../Core/PCOustersInfo.h ../../../Core/PCOustersInfo2.h \
@@ -54775,7 +54775,7 @@ EffectSharpHail.o: EffectSharpHail.cpp ../../database/DB.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -54884,7 +54884,7 @@ EffectSharpHail.o: EffectSharpHail.cpp ../../database/DB.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -54992,7 +54992,7 @@ EffectCannonade.o: EffectCannonade.cpp EffectCannonade.h ../Effect.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -55107,7 +55107,7 @@ EffectHalo.o: EffectHalo.cpp ../../database/DB.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Ousters.h \
  ../../../Core/PCOustersInfo.h ../../../Core/PCOustersInfo2.h \
@@ -55226,7 +55226,7 @@ EffectDestinies.o: EffectDestinies.cpp ../../database/DB.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/SkillSlot.h ../../../Core/Gpackets/GCModifyInformation.h \
  ../Vampire.h ../../../Core/PCVampireInfo.h \
  ../../../Core/PCVampireInfo2.h ../../../Core/PCVampireInfo3.h \
@@ -55340,7 +55340,7 @@ EffectFierceFlame.o: EffectFierceFlame.cpp ../../database/DB.h \
  ../../../Core/RideMotorcycleSlotInfo.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/SubSlayerSkillInfo.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/SkillSlot.h ../Vampire.h ../../../Core/PCVampireInfo.h \
  ../../../Core/PCVampireInfo2.h ../../../Core/PCVampireInfo3.h \
  ../../../Core/VampireSkillInfo.h ../../../Core/SubVampireSkillInfo.h \
@@ -55435,7 +55435,7 @@ EffectShadowOfStorm.o: EffectShadowOfStorm.cpp ../Effect.h ../Object.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -55543,7 +55543,7 @@ EffectShadowOfStorm.o: EffectShadowOfStorm.cpp ../Effect.h ../Object.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -55651,7 +55651,7 @@ EffectShadowOfStorm.o: EffectShadowOfStorm.cpp ../Effect.h ../Object.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -55759,7 +55759,7 @@ EffectSolaFlare.o: EffectSolaFlare.cpp ../Effect.h ../Object.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -55867,7 +55867,7 @@ EffectSolaFlare.o: EffectSolaFlare.cpp ../Effect.h ../Object.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -55973,7 +55973,7 @@ EffectAberration.o: EffectAberration.cpp EffectAberration.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -56078,7 +56078,7 @@ EffectDragonTornado.o: EffectDragonTornado.cpp ../../database/DB.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/SkillSlot.h ../../../Core/Gpackets/GCModifyInformation.h \
  ../Vampire.h ../../../Core/PCVampireInfo.h \
  ../../../Core/PCVampireInfo2.h ../../../Core/PCVampireInfo3.h \
@@ -56178,7 +56178,7 @@ EffectHarpoonBomb.o: EffectHarpoonBomb.cpp EffectHarpoonBomb.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -56285,7 +56285,7 @@ EffectPassingHeal.o: EffectPassingHeal.cpp EffectPassingHeal.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../ZoneUtil.h \
  ../../../Core/VSDateTime.h ../../../Core/Gpackets/GCRemoveEffect.h \
  ../../../Core/Gpackets/GCChangeDarkLight.h \
@@ -56379,7 +56379,7 @@ EffectPassingHeal.o: EffectPassingHeal.cpp EffectPassingHeal.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -56493,7 +56493,7 @@ EffectPassingHeal.o: EffectPassingHeal.cpp EffectPassingHeal.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -56601,7 +56601,7 @@ ShineSword.o: ShineSword.cpp ShineSword.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -56708,7 +56708,7 @@ ShineSword.o: ShineSword.cpp ShineSword.h SkillHandler.h Skill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \

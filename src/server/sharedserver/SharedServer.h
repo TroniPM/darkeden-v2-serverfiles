@@ -31,19 +31,19 @@ class SharedServer {
 public :
 	
 	// constructor
-	SharedServer () throw ( Error );
+	SharedServer ();
 	
 	// destructor
-	~SharedServer () throw ( Error );
+	~SharedServer ();
 
 	// intialize game server
-	void init () throw ( Error );
+	void init ();
 
 	// start game server
-	void start () throw ( Error );
+	void start ();
 	
 	// stop game server
-	void stop () throw ( Error );
+	void stop ();
 
 };
 

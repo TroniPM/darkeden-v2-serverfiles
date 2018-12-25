@@ -101,7 +101,7 @@ class CGFailQuestHandler {
 public:
 
 	// execute packet's handler
-	static void execute(CGFailQuest* pCGFailQuest, Player* pPlayer) throw(Error);
+	static void execute(CGFailQuest* pCGFailQuest, Player* pPlayer);
 
 };
 

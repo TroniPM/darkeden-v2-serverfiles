@@ -79,8 +79,8 @@ bool canDropToZone( Creature* pCreature, Item* pItem );
 
 //void confirmGrandMaster(Creature* pCreature);
 
-bool getRaceFromDB(const string& name, Race_t& race) throw (Error);
-bool getGuildIDFromDB(const string& name, Race_t race, GuildID_t& guildID) throw (Error);
+bool getRaceFromDB(const string& name, Race_t& race);
+bool getGuildIDFromDB(const string& name, Race_t race, GuildID_t& guildID);
 
 bool canSee( const Creature* pSource, Creature* pTarget, EffectObservingEye* pEffectObservingEye = NULL, EffectGnomesWhisper* pEffectGnomesWhisper = NULL );
 
@@ -103,12 +103,12 @@ bool dropSweeperToZone( Creature* pPC, bool bSendPacket = true );
 
 Level_t getPCLevel( PlayerCreature* pPC );
 void sendPetInfo( GamePlayer* pGamePlayer, bool bBroadcast = false, bool bSummon = false );
-void giveGoldMedal( PlayerCreature* pPC ) throw(Error);
-void giveLotto( PlayerCreature* pPC, BYTE type, uint num ) throw(Error);
+void giveGoldMedal( PlayerCreature* pPC );
+void giveLotto( PlayerCreature* pPC, BYTE type, uint num );
 
-void addOlympicStat( PlayerCreature* pPC, BYTE type, uint num = 1 ) throw(Error);
+void addOlympicStat( PlayerCreature* pPC, BYTE type, uint num = 1 );
 
-void deletePC( PlayerCreature* pPC ) throw(Error);
+void deletePC( PlayerCreature* pPC );
 
 bool isAffectExp2X();
 

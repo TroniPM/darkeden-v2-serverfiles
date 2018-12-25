@@ -101,7 +101,7 @@ public :
 	virtual bool		leave(PlayerCreature* pPC) throw (Error) = 0;
 
 	int					getSize() const						{ return m_LimitInfos.size(); }
-	LimitInfo_t* 		getLimitInfoByIndex(int index) throw (Error);
+	LimitInfo_t* 		getLimitInfoByIndex(int index);
 
 protected :
 	void 				lock() throw(Error) 	{ m_Mutex.lock(); }

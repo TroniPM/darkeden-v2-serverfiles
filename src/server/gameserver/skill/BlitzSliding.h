@@ -23,7 +23,7 @@ public:
     string getSkillHandlerName()  { return "BlitzSliding"; }
 	SkillType_t getSkillType()  { return SKILL_BLITZ_SLIDING; }
 
-	void execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
+	void execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };

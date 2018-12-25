@@ -39,7 +39,7 @@ void CGTradeAddItem::execute (Player* pPlayer)
 }
 
 string CGTradeAddItem::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

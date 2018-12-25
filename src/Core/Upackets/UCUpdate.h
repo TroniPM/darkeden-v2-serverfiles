@@ -30,21 +30,21 @@ public :
     void read ( Socket * pSocket ) throw ( ProtocolException , Error );
 		    
     // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
-    void write ( SocketOutputStream & oStream ) const throw ( ProtocolException , Error ) { throw UnsupportedError(__PRETTY_FUNCTION__); }
+    void write ( SocketOutputStream & oStream )  { throw UnsupportedError(__PRETTY_FUNCTION__); }
 
     // 소켓으로 직접 패킷의 바이너리 이미지를 보낸다.
-    void write ( Socket * pSocket ) const throw ( ProtocolException , Error );
+    void write ( Socket * pSocket ) ;
 
 	// execute packet's handler
 	void execute ( Player * pPlayer ) throw ( ProtocolException , Error );
 
 	// get packet id
-	PacketID_t getPacketID () const throw () { return PACKET_UC_UPDATE; }
+	PacketID_t getPacketID ()  { return PACKET_UC_UPDATE; }
 	
 	// get packet body size
 	// *OPTIMIZATION HINT*
 	// const static UCUpdatePacketSize 를 정의, 리턴하라.
-	PacketSize_t getPacketSize () const throw () 
+	PacketSize_t getPacketSize ()  
 	{ 
 		return m_Resource.getSize();
 	}
@@ -56,16 +56,16 @@ public :
 	}
 
 	// get packet's name
-	string getPacketName () const throw () { return "UCUpdate"; }
+	string getPacketName ()  { return "UCUpdate"; }
 	
 	// get packet's debug string
-	string toString () const throw ();
+	string toString () ;
 
 
 public :
 
 	// get/set resource
-	const Resource & getResource () const throw () { return m_Resource; }
+	const Resource & getResource ()  { return m_Resource; }
 	void setResource ( const Resource & resource ) throw () { m_Resource = resource; }
 
 private :
@@ -91,13 +91,13 @@ public :
 	Packet * createPacket () throw () { return new UCUpdate(); }
 
 	// get packet name
-	string getPacketName () const throw () { return "UCUpdate"; }
+	string getPacketName ()  { return "UCUpdate"; }
 	
 	// get packet id
-	PacketID_t getPacketID () const throw () { return Packet::PACKET_UC_UPDATE; }
+	PacketID_t getPacketID ()  { return Packet::PACKET_UC_UPDATE; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize () const throw () { return Resource::getMaxSize(); }
+	PacketSize_t getPacketMaxSize ()  { return Resource::getMaxSize(); }
 	
 };
 

@@ -25,10 +25,10 @@ public:
     string getSkillHandlerName()  { return "BloodDrain"; }
 	SkillType_t getSkillType()  { return SKILL_BLOOD_DRAIN; }
 
-	void execute(Vampire* pCreature, ObjectID_t ObjectID) throw(Error);
-	void execute(Vampire* pCreature, Creature* pEnemy) throw(Error);
-	void execute(Monster* pMonster, Creature* pTargetCreature) throw(Error);
-	bool executeMonster(Monster* pMonster, Creature* pTargetCreature) throw(Error);
+	void execute(Vampire* pCreature, ObjectID_t ObjectID);
+	void execute(Vampire* pCreature, Creature* pEnemy);
+	void execute(Monster* pMonster, Creature* pTargetCreature);
+	bool executeMonster(Monster* pMonster, Creature* pTargetCreature);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output) {}
 };

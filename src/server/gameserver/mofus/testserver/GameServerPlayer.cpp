@@ -116,7 +116,7 @@ void GameServerPlayer::processOutput()
 //
 //////////////////////////////////////////////////////////////////////
 void GameServerPlayer::processCommand () 
-     throw ( IOException , Error )
+     
 {
 	__BEGIN_TRY
 

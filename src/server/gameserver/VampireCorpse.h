@@ -22,15 +22,15 @@ class Vampire;
 class VampireCorpse : public Corpse 
 {
 public:
-	VampireCorpse(Vampire* pVampire) throw(Error);
+	VampireCorpse(Vampire* pVampire);
 	virtual ~VampireCorpse() throw();
 
 public:
 	virtual void create(const string & ownerID, Storage storage, DWORD storageID, BYTE x, BYTE y, ItemID_t itemID=0) throw(Error) {}
 	virtual bool destroy() throw(Error) { return true; }
 	virtual void save(const string & ownerID, Storage storage, DWORD storageID, BYTE x, BYTE y) throw(Error) {}
-	void tinysave(const string & field) const throw (Error) { tinysave(field.c_str()); }
-    void tinysave(const char* field) const throw (Error) {}
+	void tinysave(const string & field)  { tinysave(field.c_str()); }
+    void tinysave(const char* field)  {}
 
 
 public:

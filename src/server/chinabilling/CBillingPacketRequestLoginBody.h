@@ -22,13 +22,13 @@ class CBillingPacketRequestLoginBody : public CBillingPacketRequestLoginBodyInfo
 {
 public:
 	// constructor
-	CBillingPacketRequestLoginBody() throw ();
+	CBillingPacketRequestLoginBody();
 
 public:
 	void read( SocketInputStream& iStream ) throw ( ProtocolException, Error );
 	void write( SocketOutputStream& oStream ) throw ( ProtocolException, Error );
 
-	string toString() const throw ();
+	string toString() ;
 };
 
 #endif

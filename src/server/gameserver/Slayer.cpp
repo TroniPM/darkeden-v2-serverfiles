@@ -1418,7 +1418,7 @@ void Slayer::save () const
 
 // tinysave
 void Slayer::tinysave(const string & field)
-    const throw (Error)
+    
 {
     __BEGIN_TRY
 

@@ -21,7 +21,7 @@ public:
 	virtual ConditionType_t getConditionType()  { return CONDITION_ENTER_MASTER_LAIR; }
 	virtual bool isPassive()  { return true; }
 	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) ;
-	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
+	virtual void read(PropertyBuffer & propertyBuffer);
 
 	ZoneID_t getTargetZoneID() const	{ return m_TargetZoneID; }
 

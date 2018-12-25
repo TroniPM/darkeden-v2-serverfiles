@@ -17,19 +17,19 @@
 class EffectFlagInsert : public Effect 
 {
 public:
-	EffectFlagInsert(Creature* pCreature) throw(Error);
-	EffectFlagInsert(Item* pItem) throw(Error);
+	EffectFlagInsert(Creature* pCreature);
+	EffectFlagInsert(Item* pItem);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_FLAG_INSERT; }
 
 	void affect() throw(Error) {}
-	void affect(Creature* pCreature) throw(Error);
-	void affect(Item* pItem) throw(Error);
+	void affect(Creature* pCreature);
+	void affect(Item* pItem);
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect(Item* pItem) throw(Error);
-	void unaffect() throw(Error); 
+	void unaffect(Creature* pCreature);
+	void unaffect(Item* pItem);
+	void unaffect(); 
 
 	string toString() ;
 

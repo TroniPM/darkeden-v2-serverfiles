@@ -287,26 +287,26 @@ TPOINT checkEventPuzzle( PlayerCreature* pPC, CoordInven_t iX, CoordInven_t iY, 
 void deleteInventoryItem( Inventory* pInventory, CoordInven_t invenX0, CoordInven_t invenY0, CoordInven_t invenX1, CoordInven_t invenY1 );
 
 // 인벤토리에 초보자용 아이템을 넣어준다.
-bool addNewbieItemToInventory( Slayer* pSlayer, bool sendPacket = false ) throw(Error);
-bool addNewbieGoldToInventory( Slayer* pSlayer, bool sendPacket = false ) throw(Error);
-bool addNewbieItemToGear( Slayer* pSlayer, bool sendPacket = false ) throw(Error);
+bool addNewbieItemToInventory( Slayer* pSlayer, bool sendPacket = false );
+bool addNewbieGoldToInventory( Slayer* pSlayer, bool sendPacket = false );
+bool addNewbieItemToGear( Slayer* pSlayer, bool sendPacket = false );
 
-bool addNewbieItemToInventory( Vampire* pVampire, bool sendPacket = false ) throw(Error);
-bool addNewbieGoldToInventory( Vampire* pVampire, bool sendPacket = false ) throw(Error);
-bool addNewbieItemToGear( Vampire* pVampire, bool sendPacket = false ) throw(Error);
+bool addNewbieItemToInventory( Vampire* pVampire, bool sendPacket = false );
+bool addNewbieGoldToInventory( Vampire* pVampire, bool sendPacket = false );
+bool addNewbieItemToGear( Vampire* pVampire, bool sendPacket = false );
 
-bool addNewbieItemToInventory( Ousters* pOusters, bool sendPacket = false ) throw(Error);
-bool addNewbieGoldToInventory( Ousters* pOusters, bool sendPacket = false ) throw(Error);
-bool addNewbieItemToGear( Ousters* pOusters, bool sendPacket = false ) throw(Error);
+bool addNewbieItemToInventory( Ousters* pOusters, bool sendPacket = false );
+bool addNewbieGoldToInventory( Ousters* pOusters, bool sendPacket = false );
+bool addNewbieItemToGear( Ousters* pOusters, bool sendPacket = false );
 
-Item::ItemClass getBestNewbieWeaponClass(Slayer* pSlayer) throw (Error);
+Item::ItemClass getBestNewbieWeaponClass(Slayer* pSlayer);
 
 // 옵션 string으로부터 옵션 list를 만든다.
-void makeOptionList(const string& options, list<OptionType_t>& optionList) throw (Error);
+void makeOptionList(const string& options, list<OptionType_t>& optionList);
 
-void saveDissectionItem(Creature* pCreature, Item* pTreasure, int x, int y) throw (Error);
+void saveDissectionItem(Creature* pCreature, Item* pTreasure, int x, int y);
 
-bool canDecreaseDurability( Item* pItem ) throw(Error);
+bool canDecreaseDurability( Item* pItem );
 
 bool canSell( Item* pItem );
 bool canPutInStash( Item* pItem );
@@ -323,11 +323,11 @@ void setItemGender( Item* pItem, GenderRestriction gender );
 bool bTraceLog( Item* pItem );
 
 // Item Trace Log 남기는 함수 
-void remainTraceLog ( Item* pItem, const string& preOwner, const string& owner, ItemTraceLogType logType, ItemTraceDetailType detailType ) throw (Error);
-void remainTraceLogNew ( Item* pItem, const string& owner, ITLType logType, ITLDType detailType, ZoneID_t zid=0, int x=0, int y=0 ) throw (Error);
+void remainTraceLog ( Item* pItem, const string& preOwner, const string& owner, ItemTraceLogType logType, ItemTraceDetailType detailType );
+void remainTraceLogNew ( Item* pItem, const string& owner, ITLType logType, ITLDType detailType, ZoneID_t zid=0, int x=0, int y=0 );
 
 // Meney Trace Log 남기는 함수
-void remainMoneyTraceLog ( const string& preOwner, const string& owner, ItemTraceLogType logType, ItemTraceDetailType detailType, int amount ) throw (Error);
+void remainMoneyTraceLog ( const string& preOwner, const string& owner, ItemTraceLogType logType, ItemTraceDetailType detailType, int amount );
 
 // Web 에서 산 아이템을 만드는 함수
 Item* createItemByGoodsID( DWORD goodsID );

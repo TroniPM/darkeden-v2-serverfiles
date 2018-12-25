@@ -94,7 +94,7 @@ UpdateServerPlayer::~UpdateServerPlayer ()
 //
 //--------------------------------------------------------------------------------
 void UpdateServerPlayer::processCommand () 
-     throw ( IOException , Error )
+     
 {
 	__BEGIN_TRY
 
@@ -369,7 +369,7 @@ INSUFFICIENT_DATA:
 // 출력을 버퍼링하지 않기 때문에, 아무 것도 하지 않아도 된다.
 //--------------------------------------------------------------------------------
 void UpdateServerPlayer::processOutput ()
-	throw ( IOException , Error )
+	
 {
 	__BEGIN_TRY
 

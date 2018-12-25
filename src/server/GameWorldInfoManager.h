@@ -31,19 +31,19 @@ class GameWorldInfoManager {
 public :
 	
 	// constructor
-	GameWorldInfoManager () throw ();
+	GameWorldInfoManager ();
 	
 	// destructor
-	~GameWorldInfoManager () throw ();
+	~GameWorldInfoManager ();
 
 	// initialize manager
-	void init () throw ( Error );
+	void init ();
 
 	// load from database
-	void load () throw ( Error );
+	void load ();
 
 	// clear GameWorldInfo objects
-	void clear() throw ( Error );
+	void clear();
 	
 	// add info
 	void addGameWorldInfo ( GameWorldInfo * pGameWorldInfo ) throw ( DuplicatedException );
@@ -55,10 +55,10 @@ public :
 	GameWorldInfo * getGameWorldInfo ( const WorldID_t WorldID ) ;
 
 	// get count of info
-	uint getSize () const throw () { return m_GameWorldInfos.size(); }
+	uint getSize ()  { return m_GameWorldInfos.size(); }
 
 	// get debug string
-	string toString () const throw ();
+	string toString () ;
 
 private :
 	

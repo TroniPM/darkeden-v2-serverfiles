@@ -23,7 +23,7 @@ public:
     string getSkillHandlerName()  { return "VoodooRing"; }
 	SkillType_t getSkillType()  { return SKILL_Voodoo_Ring; }
 
-	void execute(Vampire* pVampire,  VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
+	void execute(Vampire* pVampire,  VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 

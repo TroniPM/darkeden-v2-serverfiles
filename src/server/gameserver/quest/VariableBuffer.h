@@ -38,7 +38,7 @@ public:
 	string toString() ;
 	
 private:
-	void parse() throw (Error);
+	void parse();
 	
 	void clear();
 

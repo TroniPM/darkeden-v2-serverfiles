@@ -125,7 +125,7 @@ class GCBloodDrainOK3Handler {
 public :
 
 	// execute packet's handler
-	static void execute(GCBloodDrainOK3* pGCBloodDrainOK3, Player* pPlayer) throw(Error);
+	static void execute(GCBloodDrainOK3* pGCBloodDrainOK3, Player* pPlayer);
 
 };
 

@@ -16,12 +16,12 @@
 class EffectCurseOfBloodGround : public Effect 
 {
 public:
-	EffectCurseOfBloodGround(Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
+	EffectCurseOfBloodGround(Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_CURSE_OF_BLOOD_GROUND; }
 
-	void unaffect() throw(Error);
+	void unaffect();
 
 	string toString() ;
 

@@ -23,22 +23,22 @@ typedef hash_map<ServerID_t, GameServerInfo*> HashMapGameServerInfo;
 class GameServerInfoManager 
 {
 public:
-	GameServerInfoManager () throw ();
-	~GameServerInfoManager () throw ();
+	GameServerInfoManager ();
+	~GameServerInfoManager ();
 
 public:
-	void init () throw ( Error );
-	void load () throw ( Error );
+	void init ();
+	void load ();
 
 	// clear GameServerInfo objects
-	void clear() throw ( Error );
+	void clear();
 	
 	void addGameServerInfo ( GameServerInfo * pGameServerInfo, const ServerGroupID_t ServerGroupID, WorldID_t WorldID ) throw ( DuplicatedException );
 	void deleteGameServerInfo ( const ServerID_t ServerID, const ServerGroupID_t ServerGroupID, WorldID_t WorldID ) throw ( NoSuchElementException );
-	//GameServerInfo * getGameServerInfo ( const string & name ) const throw ( NoSuchElementException );
+	//GameServerInfo * getGameServerInfo ( const string & name ) ;
 	GameServerInfo * getGameServerInfo ( const ServerID_t ServerID, const ServerGroupID_t ServerGroupID, WorldID_t WorldID ) ;
-	uint getSize ( WorldID_t WorldID, const ServerGroupID_t ServerGroupID ) const throw () { return m_pGameServerInfos[WorldID][ServerGroupID].size(); }
-	string toString () const throw ();
+	uint getSize ( WorldID_t WorldID, const ServerGroupID_t ServerGroupID )  { return m_pGameServerInfos[WorldID][ServerGroupID].size(); }
+	string toString () ;
 
 	// by sigi. 2002.5.30
 	int						getMaxWorldID() const		{ return m_MaxWorldID; }

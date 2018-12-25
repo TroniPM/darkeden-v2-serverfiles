@@ -16,13 +16,13 @@
 class EffectHasSweeper : public Effect
 {
 public:
-	EffectHasSweeper(Creature* pCreature) throw(Error);
+	EffectHasSweeper(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_HAS_SWEEPER; }
 	EffectClass getSendEffectClass()  { return (EffectClass)(EFFECT_CLASS_HAS_SWEEPER + m_Part); }
 
-	void unaffect() throw(Error);
+	void unaffect();
 
 	string toString() ;
 

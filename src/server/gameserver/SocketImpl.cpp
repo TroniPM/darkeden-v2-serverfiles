@@ -25,7 +25,7 @@
 
 ////////////////////////////////////////////////////////////////////////
 // 
-// SocketImpl::SocketImpl () throw ( Error );
+// SocketImpl::SocketImpl ();
 // 
 // Parameters 
 //     none
@@ -66,7 +66,7 @@ SocketImpl::SocketImpl ( const string & host , uint port )
 
 ////////////////////////////////////////////////////////////////////////
 //
-// SocketImpl::SocketImpl ( const SocketImpl & impl ) throw ();
+// SocketImpl::SocketImpl ( const SocketImpl & impl );
 //
 // copy constructor 
 //
@@ -86,7 +86,7 @@ SocketImpl::SocketImpl ( const SocketImpl & impl )
 
 ////////////////////////////////////////////////////////////////////////
 //
-// SocketImpl::~SocketImpl () throw ( Error );
+// SocketImpl::~SocketImpl ();
 //
 // virtual destructor
 //
@@ -301,7 +301,7 @@ uint SocketImpl::send ( const void * buf , uint len , uint flags )
 // receive data from peer
 //////////////////////////////////////////////////////////////////////
 uint SocketImpl::receive ( void * buf , uint len , uint flags ) 
-     throw ( IOException , Error )
+     
 {
 	__BEGIN_TRY 
 
@@ -523,7 +523,7 @@ void SocketImpl::setSendBufferSize ( uint SendBufferSize )
 
 //////////////////////////////////////////////////////////////////////
 //
-// string SocketImpl::_getHost () const throw ();
+// string SocketImpl::_getHost () ;
 //
 // get host address of this socket
 //
@@ -569,7 +569,7 @@ void SocketImpl::_setHost ( const string & host )
 
 //////////////////////////////////////////////////////////////////////
 //
-// uint SocketImpl::_getPort () const throw ()
+// uint SocketImpl::_getPort () 
 //
 // get port of this socket
 //

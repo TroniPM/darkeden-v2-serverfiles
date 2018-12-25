@@ -19,16 +19,16 @@
 class EffectSoulChain : public Effect 
 {
 public:
-	EffectSoulChain(Creature* pCreature) throw(Error);
+	EffectSoulChain(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_SOUL_CHAIN; }
 
 	void affect() throw(Error){}
-	void affect(Creature* pCreature) throw(Error);
+	void affect(Creature* pCreature);
 
-	void unaffect() throw(Error);
-	void unaffect(Creature* pCreature) throw(Error);
+	void unaffect();
+	void unaffect(Creature* pCreature);
 
 	string toString() ;
 

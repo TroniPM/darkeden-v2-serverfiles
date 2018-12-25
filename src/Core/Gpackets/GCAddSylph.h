@@ -77,7 +77,7 @@ public:
 class GCAddSylphHandler 
 {
 public:
-	static void execute(GCAddSylph* pPacket, Player* pPlayer) throw(Error);
+	static void execute(GCAddSylph* pPacket, Player* pPlayer);
 
 };
 

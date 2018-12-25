@@ -17,7 +17,7 @@
 class EffectIceFieldToCreature : public Effect 
 {
 public:
-	EffectIceFieldToCreature(Creature* pCreature, bool byFrozenArmor = false) throw(Error);
+	EffectIceFieldToCreature(Creature* pCreature, bool byFrozenArmor = false);
 
 public:
 	EffectClass getEffectClass()  { return EFFECT_CLASS_ICE_FIELD_TO_CREATURE; }
@@ -25,8 +25,8 @@ public:
 
 	void affect() throw(Error){}
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect() throw(Error);
+	void unaffect(Creature* pCreature);
+	void unaffect();
 
 	string toString() ;
 

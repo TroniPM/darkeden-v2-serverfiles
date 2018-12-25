@@ -54,7 +54,7 @@ void GCGQuestStatusModify::execute ( Player * pPlayer )
 //
 //////////////////////////////////////////////////////////////////////
 string GCGQuestStatusModify::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

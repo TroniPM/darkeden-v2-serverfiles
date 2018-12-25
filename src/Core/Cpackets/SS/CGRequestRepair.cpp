@@ -37,7 +37,7 @@ void CGRequestRepair::execute (Player* pPlayer)
 }
 
 string CGRequestRepair::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

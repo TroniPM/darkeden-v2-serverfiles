@@ -29,9 +29,9 @@ public:
 	WORD getCurrentMonsters()  { return m_CurrentMonsters; }
 	void setCurrentMonsters(WORD n) throw() { m_CurrentMonsters = n; }
 
-	void addMonster() throw(Error);
+	void addMonster();
 	void addMonster(WORD Count) throw();
-	void deleteMonster() throw(Error);
+	void deleteMonster();
 
 	string toString() ;
 

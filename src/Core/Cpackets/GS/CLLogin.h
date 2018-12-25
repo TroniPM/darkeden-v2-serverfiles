@@ -146,7 +146,7 @@ public:
 	static void execute(CLLogin* pPacket, Player* pPlayer) ;
 
 private :
-	static bool checkFreePass(CLLogin* pPacket, Player* pPlayer) throw (ProtocolException, Error);
+	static bool checkFreePass(CLLogin* pPacket, Player* pPlayer);
 	static bool	checkNetMarbleClient (CLLogin* pPacket , Player* pPlayer) throw (ProtocolException , Error);
 	static bool checkWebLogin( CLLogin* pPacket, Player* pPlayer ) throw ( ProtocolException, Error );
 #if defined(__THAILAND_SERVER__)

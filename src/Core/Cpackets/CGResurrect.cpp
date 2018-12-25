@@ -31,7 +31,7 @@ void CGResurrect::execute (Player* pPlayer)
 }
 
 string CGResurrect::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

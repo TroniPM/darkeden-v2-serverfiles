@@ -22,16 +22,16 @@ class Monster;
 class MonsterCorpse : public Corpse 
 {
 public:
-	MonsterCorpse(Monster* pMonster) throw(Error);
-	MonsterCorpse (MonsterType_t MType, const string& name, Dir_t dir) throw (Error);
+	MonsterCorpse(Monster* pMonster);
+	MonsterCorpse (MonsterType_t MType, const string& name, Dir_t dir);
 	virtual ~MonsterCorpse() throw();
 
 public:
-	virtual void create(const string & ownerID, Storage storage, DWORD storageID, BYTE x, BYTE y, ItemID_t itemID=0) throw(Error);
-	virtual bool destroy() throw(Error);
-	virtual void save(const string & ownerID, Storage storage, DWORD storageID, BYTE x, BYTE y) throw(Error);
-	void tinysave(const string & field) const throw (Error) { tinysave(field.c_str()); }
-    void tinysave(const char* field) const throw (Error) {}
+	virtual void create(const string & ownerID, Storage storage, DWORD storageID, BYTE x, BYTE y, ItemID_t itemID=0);
+	virtual bool destroy();
+	virtual void save(const string & ownerID, Storage storage, DWORD storageID, BYTE x, BYTE y);
+	void tinysave(const string & field)  { tinysave(field.c_str()); }
+    void tinysave(const char* field)  {}
 
 	virtual ItemClass getItemClass()  { return ITEM_CLASS_CORPSE; }
 

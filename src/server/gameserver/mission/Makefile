@@ -182,7 +182,7 @@ QuestInfo.o: QuestInfo.cpp QuestInfo.h ../../../Core/Types.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -580,7 +580,7 @@ SlayerWeaponRewardClass.o: SlayerWeaponRewardClass.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Ousters.h \
  ../../../Core/PCOustersInfo.h ../../../Core/PCOustersInfo2.h \
  ../../../Core/PCOustersInfo3.h ../../../Core/OustersSkillInfo.h \
@@ -1769,7 +1769,7 @@ MiniGameQuestStatus.o: MiniGameQuestStatus.cpp MiniGameQuestStatus.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -1941,7 +1941,7 @@ EventQuestLootingManager.o: EventQuestLootingManager.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \

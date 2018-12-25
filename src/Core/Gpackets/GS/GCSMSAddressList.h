@@ -81,7 +81,7 @@ public:
 class GCSMSAddressListHandler 
 {
 public:
-	static void execute(GCSMSAddressList* pGCSMSAddressList, Player* pPlayer) throw(Error);
+	static void execute(GCSMSAddressList* pGCSMSAddressList, Player* pPlayer);
 
 };
 

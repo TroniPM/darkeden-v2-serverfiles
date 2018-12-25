@@ -62,7 +62,7 @@ public:
 class CGAddItemToCodeSheetHandler 
 {
 public:
-	static void execute(CGAddItemToCodeSheet* pCGAddItemToCodeSheet, Player* pPlayer) throw(Error);
+	static void execute(CGAddItemToCodeSheet* pCGAddItemToCodeSheet, Player* pPlayer);
 
 };
 

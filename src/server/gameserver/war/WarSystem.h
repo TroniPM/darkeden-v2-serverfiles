@@ -39,24 +39,24 @@ public :
 
 class WarSystem : public Scheduler {
 public :
-	WarSystem() throw (Error);
-	~WarSystem() throw (Error);
+	WarSystem();
+	~WarSystem();
 
-	void	init() throw (Error);
-	void	load() throw (Error);
+	void	init();
+	void	load();
 
-	bool	addWarDelayed(War* pWar) throw (Error);
-	bool	isEndCondition(Item* pItem, MonsterCorpse* pMonsterCorpse) throw (Error);
-	bool	endWar(PlayerCreature* pPC, ZoneID_t castleZoneID) throw (Error);
-	bool	removeWar(ZoneID_t castleZoneID) throw (Error);
-	bool	removeRaceWar() throw (Error);
+	bool	addWarDelayed(War* pWar);
+	bool	isEndCondition(Item* pItem, MonsterCorpse* pMonsterCorpse);
+	bool	endWar(PlayerCreature* pPC, ZoneID_t castleZoneID);
+	bool	removeWar(ZoneID_t castleZoneID);
+	bool	removeRaceWar();
 
-	bool	makeGCWarList() throw (Error);
-	bool	makeGCWarList_LOCKED() throw (Error);
-	void	sendGCWarList(Player* pPlayer) throw (Error);
-	bool	addRaceWarScheduleInfo(WarScheduleInfo* pWSI) throw (Error);
+	bool	makeGCWarList();
+	bool	makeGCWarList_LOCKED();
+	void	sendGCWarList(Player* pPlayer);
+	bool	addRaceWarScheduleInfo(WarScheduleInfo* pWSI);
 
-	virtual Work* heartbeat() throw(Error);
+	virtual Work* heartbeat();
 
 // public :
 //	void	lock() throw (Error)	{ m_Mutex.lock(); }
@@ -68,18 +68,18 @@ public :
 
 protected :
 	VSDateTime 		getWarEndTime(WarType_t warType) const;
-	bool			addQueuedWar() throw (Error);
-	bool			addWar(War* pWar) throw (Error);
+	bool			addQueuedWar();
+	bool			addWar(War* pWar);
 	War* 			getActiveRaceWarAtSameThread() ;
-	bool 			checkStartRaceWar() throw (Error);
+	bool 			checkStartRaceWar();
 
 public :
 	bool			hasCastleActiveWar( ZoneID_t zoneID ) ;
 	bool			getAttackGuildID( ZoneID_t zoneID, GuildID_t& guildID ) ;
 	War*			getActiveWar( ZoneID_t zoneID ) ;
-	WarSchedule*	getActiveWarSchedule_LOCKED( ZoneID_t zoneID ) throw (Error);
-	WarSchedule*	getActiveWarSchedule( ZoneID_t zoneID ) throw (Error);
-	bool			isModifyCastleOwner( ZoneID_t castleZoneID, PlayerCreature* pPC ) throw (Error);
+	WarSchedule*	getActiveWarSchedule_LOCKED( ZoneID_t zoneID );
+	WarSchedule*	getActiveWarSchedule( ZoneID_t zoneID );
+	bool			isModifyCastleOwner( ZoneID_t castleZoneID, PlayerCreature* pPC );
 
 	bool			hasActiveRaceWar() 	{ return m_bHasRaceWar; }
 	War*			getActiveRaceWar() ;
@@ -90,8 +90,8 @@ public :
 
 public :
 	void			broadcastWarList( GamePlayer* pGamePlayer ) ;
-	bool			startRaceWar() throw(Error);
-	void 			prepareRaceWar() throw (Error);
+	bool			startRaceWar();
+	void 			prepareRaceWar();
 
 	bool			canApplyBloodBibleSign() const { return !m_b20Minutes; }
 	bool			isSkyBlack() const { return m_b5Minutes; }

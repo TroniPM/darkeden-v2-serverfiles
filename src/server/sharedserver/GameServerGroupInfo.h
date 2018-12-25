@@ -37,11 +37,11 @@ public :
 	void setGroupID( ServerGroupID_t GroupID ) throw() { m_GroupID = GroupID; }
 
 	// get/set host name
-	string getGroupName() const throw () { return m_GroupName; }
+	string getGroupName()  { return m_GroupName; }
 	void setGroupName( string GroupName ) throw () { m_GroupName = GroupName; }
 	
 	// get debug string
-	string toString () const throw () 
+	string toString ()  
 	{
 		StringStream msg;
 		msg << "GameServerGroupInfo("

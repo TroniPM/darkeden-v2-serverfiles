@@ -17,16 +17,16 @@
 class EffectRelicLock : public Effect 
 {
 public:
-	EffectRelicLock(Item* pItem) throw(Error);
+	EffectRelicLock(Item* pItem);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_RELIC_LOCK; }
 
 	void affect() throw(Error) {}
-	void affect(Item* pItem) throw(Error);
+	void affect(Item* pItem);
 
-	void unaffect(Item* pItem) throw(Error);
-	void unaffect() throw(Error); 
+	void unaffect(Item* pItem);
+	void unaffect(); 
 
 	string toString() ;
 

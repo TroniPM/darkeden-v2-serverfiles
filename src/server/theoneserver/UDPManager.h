@@ -23,8 +23,8 @@
 class UDPManager 
 {
 public:
-	UDPManager() throw(Error);
-	~UDPManager() throw(Error);
+	UDPManager();
+	~UDPManager();
 
 public:
 	void sendDatagram(Datagram* pDatagram) ;

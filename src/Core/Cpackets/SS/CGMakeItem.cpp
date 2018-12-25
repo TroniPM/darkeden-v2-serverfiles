@@ -53,7 +53,7 @@ void CGMakeItem::execute (Player* pPlayer)
 }
 
 string CGMakeItem::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

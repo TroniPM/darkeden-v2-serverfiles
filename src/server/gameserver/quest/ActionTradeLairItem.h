@@ -24,8 +24,8 @@ class ActionTradeLairItem : public Action
 {
 public:
 	virtual ActionType_t getActionType()  { return ACTION_TRADE_LAIR_ITEM; }
-	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
-	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
+	virtual void read(PropertyBuffer & propertyBuffer);
+	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL);
 	virtual string toString() ;
 public:
 	int getType(void) const { return m_Type; }

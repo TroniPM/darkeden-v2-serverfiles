@@ -27,7 +27,7 @@ public:
 
 	virtual bool isSatisfied(Creature* pCreature1, Creature* pCreature2 = NULL, void* pParam = NULL) ;
 
-	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
+	virtual void read(PropertyBuffer & propertyBuffer);
 
 	virtual string toString() ;
 

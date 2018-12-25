@@ -31,19 +31,19 @@ class LoginServer {
 public :
 	
 	// constructor
-	LoginServer () throw ( Error );
+	LoginServer ();
 	
 	// destructor
-	~LoginServer () throw ( Error );
+	~LoginServer ();
 
 	// intialize game server
-	void init () throw ( Error );
+	void init ();
 
 	// start game server
-	void start () throw ( Error );
+	void start ();
 	
 	// stop game server
-	void stop () throw ( Error );
+	void stop ();
 
 };
 

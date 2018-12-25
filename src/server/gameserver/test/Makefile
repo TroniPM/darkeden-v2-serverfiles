@@ -196,7 +196,7 @@ GameServerTester.o: GameServerTester.cpp ../../../Core/Types.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
  ../../../Core/Properties.h /usr/include/STL/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
- /home/darkeden/src/libs/stl_multimap.h /usr/include/bits/stdio_lim.h \
+ /home/darkeden/src/libs/stl_multimap.h /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  GameServerTest.h /usr/local/include/cppunit/extensions/HelperMacros.h \
  /usr/local/include/cppunit/Portability.h \
  /usr/local/include/cppunit/config-auto.h /usr/include/STL/strstream \
@@ -334,7 +334,7 @@ GameServerSkillTest.o: GameServerSkillTest.cpp GameServerSkillTest.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h \
  ../skill/SkillHandlerManager.h ../skill/SkillHandler.h ../SkillInfo.h \
  ../Vampire.h ../../../Core/PCVampireInfo.h \
@@ -468,7 +468,7 @@ GameServerExpTest.o: GameServerExpTest.cpp GameServerExpTest.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -594,7 +594,7 @@ GameServerItemTest.o: GameServerItemTest.cpp GameServerItemTest.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/SkillSlot.h ../ZoneUtil.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/SkillSlot.h ../ZoneUtil.h \
  ../../../Core/VSDateTime.h ../ItemUtil.h
 GameServerWarTest.o: GameServerWarTest.cpp GameServerWarTest.h \
  GameServerTest.h /usr/local/include/cppunit/extensions/HelperMacros.h \

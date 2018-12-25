@@ -137,7 +137,7 @@ void BillingPlayer::processOutput()
 //
 //////////////////////////////////////////////////////////////////////
 void BillingPlayer::processCommand () 
-     throw ( IOException , Error )
+     
 {
 	__BEGIN_TRY
 

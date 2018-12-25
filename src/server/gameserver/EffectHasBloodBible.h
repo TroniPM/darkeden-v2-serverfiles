@@ -16,14 +16,14 @@
 class EffectHasBloodBible : public EffectHasRelic 
 {
 public:
-	EffectHasBloodBible(Creature* pCreature) throw(Error);
-	EffectHasBloodBible(Item* pItem) throw(Error);
+	EffectHasBloodBible(Creature* pCreature);
+	EffectHasBloodBible(Item* pItem);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_HAS_BLOOD_BIBLE; }
 
-	void affect(Creature* pCreature) throw(Error);
-	void affect(Item* pItem) throw(Error);
+	void affect(Creature* pCreature);
+	void affect(Item* pItem);
 
 	string toString() ;
 

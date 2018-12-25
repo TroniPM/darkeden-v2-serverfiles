@@ -54,8 +54,8 @@ public:
 	~OustersEXPInfoManager() throw();
 
 public:
-	void init() throw(Error);
-	void load() throw(Error);
+	void init();
+	void load();
 
 	OustersEXPInfo* getOustersEXPInfo(uint OustersEXPType) ;
 	void addOustersEXPInfo(OustersEXPInfo* pOustersEXPInfo) throw(DuplicatedException, Error);

@@ -19,16 +19,16 @@ class Zone;
 class EffectOnBridge : public Effect 
 {
 public:
-	EffectOnBridge(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y) throw(Error);
+	EffectOnBridge(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_ON_BRIDGE; }
 
-	void affect() throw(Error);
-	void affect(Creature* pCreature) throw(Error);
+	void affect();
+	void affect(Creature* pCreature);
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect() throw(Error); 
+	void unaffect(Creature* pCreature);
+	void unaffect(); 
 
 	string toString() ;
 
@@ -42,7 +42,7 @@ public:
 
 public:
 	virtual void load(Creature* pCreature) throw(Error) {}
-	virtual void load(Zone* pZone) throw(Error);
+	virtual void load(Zone* pZone);
 };
 
 extern EffectOnBridgeLoader* g_pEffectOnBridgeLoader;

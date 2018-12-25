@@ -32,7 +32,7 @@ public:
 	string toString() ;
 
 private:
-	void 	parse() throw (Error);
+	void 	parse();
 
 private:
 	string 			m_Name;

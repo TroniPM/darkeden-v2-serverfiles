@@ -51,7 +51,7 @@ void CGDeleteSMSAddress::execute (Player* pPlayer)
 }
 
 string CGDeleteSMSAddress::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

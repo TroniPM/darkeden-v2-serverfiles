@@ -31,15 +31,15 @@
 class IncomingPlayerManager : public PlayerManager 
 {
 public:
-	IncomingPlayerManager() throw(Error);
-	~IncomingPlayerManager() throw(Error);
+	IncomingPlayerManager();
+	~IncomingPlayerManager();
 
 public:
 	// initialize 
-	void init() throw(Error);
+	void init();
 
 	// broadcast packet to all players
-	void broadcast(Packet* pPacket) throw(Error);
+	void broadcast(Packet* pPacket);
 
 	// 다음의 메쏘드들은 ZoneThread에 의해서 호출된다.
 
@@ -59,7 +59,7 @@ public:
 	void processCommands() throw(IOException, Error);
 
 	// accept new connection
-	bool acceptNewConnection() throw(Error);
+	bool acceptNewConnection();
 
 	void copyPlayers() throw();
 
@@ -79,17 +79,17 @@ public:
 	void unlock() throw(Error) { m_Mutex.unlock(); }
 
     // push Player to queue
-    void pushPlayer(GamePlayer* pGamePlayer) throw(Error);
+    void pushPlayer(GamePlayer* pGamePlayer);
 
-    void pushOutPlayer(GamePlayer* pGamePlayer) throw(Error);
+    void pushOutPlayer(GamePlayer* pGamePlayer);
 
     // Queue's Player Add Manager
-	void heartbeat() throw(Error);
+	void heartbeat();
 
     void deleteQueuePlayer(GamePlayer* pGamePlayer) throw(NoSuchElementException, Error);
 
 	// 모든 플레이어를 정리한다.
-	void clearPlayers() throw(Error);
+	void clearPlayers();
 
 private:
 

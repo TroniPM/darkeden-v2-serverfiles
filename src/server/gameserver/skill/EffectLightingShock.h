@@ -17,13 +17,13 @@
 class EffectLightingShock : public Effect 
 {
 public:
-	EffectLightingShock(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY) throw(Error);
+	EffectLightingShock(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_LIGHTING_SHOCK; }
 
-	void affect() throw(Error);
-	void unaffect() throw(Error);
+	void affect();
+	void unaffect();
 	string toString() ;
 
 public:

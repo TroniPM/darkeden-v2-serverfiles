@@ -46,20 +46,20 @@ public:
 	GuildID_t		getReinforceGuildID() const { return m_ReinforceGuildID; }
 
 public:
-	bool			isModifyCastleOwner( PlayerCreature* pPC ) throw (Error);
-	GuildID_t		getWinnerGuildID( PlayerCreature* pPC ) throw (Error);
+	bool			isModifyCastleOwner( PlayerCreature* pPC );
+	GuildID_t		getWinnerGuildID( PlayerCreature* pPC );
 
-	//void			sendWarStartMessage() const throw (ProtocolException, Error);
-	void			sendWarEndMessage() const throw (ProtocolException, Error);
+	//void			sendWarStartMessage() ;
+	void			sendWarEndMessage() ;
 
-	bool 			endWar(PlayerCreature* pPC) throw(Error);
+	bool 			endWar(PlayerCreature* pPC);
 
 protected :
-	void 			executeStart() throw (Error);
-	void 			executeEnd() throw (Error);
+	void 			executeStart();
+	void 			executeEnd();
 
-	void 			recordSiegeWarStart() throw (Error);
-	void 			recordSiegeWarEnd() throw (Error);
+	void 			recordSiegeWarStart();
+	void 			recordSiegeWarEnd();
 
 public :
 	void    makeWarScheduleInfo( WarScheduleInfo* pWSI ) ;

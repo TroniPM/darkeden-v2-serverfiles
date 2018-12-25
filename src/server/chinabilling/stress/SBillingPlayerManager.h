@@ -26,13 +26,13 @@ class SBillingPlayer;
 class SBillingPlayerManager : public Thread
 {
 public:
-	SBillingPlayerManager() throw ( Error );
-	~SBillingPlayerManager() throw ( Error );
+	SBillingPlayerManager();
+	~SBillingPlayerManager();
 
 public:
 	void init() throw ( Error ) {}
-	void stop() throw ( Error );
-	void run() throw ();
+	void stop();
+	void run();
 
 	// 빌링 관련 패킷 보내기 함수
 	bool sendLogin( PayUser* pPayUser, int i ) throw ( ProtocolException, Error );
@@ -42,8 +42,8 @@ public:
 	void sendLogout( PayUser* pPayUser, int i ) throw ( ProtocolException, Error );
 
 	int getVersionNumber() ;
-	int getMinusIntervalInt() const throw ();
-	string getMinusInterval() const throw ();
+	int getMinusIntervalInt() ;
+	string getMinusInterval() ;
 
 private:
 	SBillingPlayer**	m_pSBillingPlayer;

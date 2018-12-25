@@ -42,7 +42,7 @@ public:
 public:
 
 	// SkillParentInfoType 을 사용해서, SkillParentInfoInfo 로부터 초기화하기
-	void init() throw(Error);
+	void init();
 
 	// enemy specific methods
 	void addParents(SkillType_t SkillType) throw(DuplicatedException, Error) {
@@ -95,14 +95,14 @@ public:
 	~SkillParentInfoManager() throw();
 
 	// initialize Manager
-	void init() throw(Error);
+	void init();
 
 	// void load() throw();
 	// Loading from Database to ParentInfoClass
-	void load() throw(Error);
+	void load();
 	
 	// Save to DB
-	void save() throw(Error);
+	void save();
 
 	// get SkillParentInfo
 	SkillParentInfo* getSkillParentInfo(SkillType_t SkillType) ;

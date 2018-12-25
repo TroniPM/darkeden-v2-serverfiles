@@ -98,7 +98,7 @@ class  GCVisibleFailHandler {
 public :
 
 	// execute packet's handler
-	static void execute(GCVisibleFail* pPacket, Player* pPlayer) throw(Error);
+	static void execute(GCVisibleFail* pPacket, Player* pPlayer);
 
 };
 

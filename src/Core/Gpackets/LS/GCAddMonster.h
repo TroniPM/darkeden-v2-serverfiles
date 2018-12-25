@@ -18,8 +18,8 @@
 class GCAddMonster : public Packet 
 {
 public:
-	GCAddMonster() throw(Error);
-	virtual ~GCAddMonster() throw(Error);
+	GCAddMonster();
+	virtual ~GCAddMonster();
 
 public:
     void read(SocketInputStream & iStream) ;
@@ -152,7 +152,7 @@ class GCAddMonsterHandler {
 public :
 
 	// execute packet's handler
-	static void execute(GCAddMonster* pPacket, Player* pPlayer) throw(Error);
+	static void execute(GCAddMonster* pPacket, Player* pPlayer);
 
 };
 

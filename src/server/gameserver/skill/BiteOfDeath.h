@@ -23,7 +23,7 @@ public:
     string getSkillHandlerName()  { return "BiteOfDeath"; }
 	SkillType_t getSkillType()  { return SKILL_BITE_OF_DEATH; }
 
-	void execute(Vampire* pVampire, ObjectID_t ObjectID, VampireSkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
+	void execute(Vampire* pVampire, ObjectID_t ObjectID, VampireSkillSlot* pSkillSlot, CEffectID_t CEffectID);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output) { }
 };

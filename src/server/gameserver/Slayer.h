@@ -151,7 +151,7 @@ public:
 //////////////////////////////////////////////////////////////
 public:
 	Slayer() throw();
-	virtual ~Slayer() throw (Error);
+	virtual ~Slayer();
 	
 //////////////////////////////////////////////////////////////
 // 하위 클래스 상속 함수
@@ -160,8 +160,8 @@ public:
 	virtual CreatureClass getCreatureClass()  { return CREATURE_CLASS_SLAYER; }
 	virtual string getCreatureClassString()  { return "CREATURE_CLASS_SLAYER"; }
 
-	virtual void registerObject() throw(Error);
-	virtual void registerInitObject() throw(Error);
+	virtual void registerObject();
+	virtual void registerInitObject();
 
 	virtual bool load() throw (InvalidProtocolException, Error);
 	void loadItem( bool checkTimeLimit = false ) throw (InvalidProtocolException, Error);
@@ -184,8 +184,8 @@ public:
 // 시간제한 아이템 관련 함수
 //////////////////////////////////////////////////////////////
 public:
-	void checkItemTimeLimit() throw (Error);
-	void updateEventItemTime( DWORD time ) throw(Error);
+	void checkItemTimeLimit();
+	void updateEventItemTime( DWORD time );
 
 //////////////////////////////////////////////////////////////
 // 상태 관련 함수(dead or alive)
@@ -361,9 +361,9 @@ public:
 	void  addWearItem(WearPart Part, Item* pItem) throw() { Assert(m_pWearItem[Part] = NULL); m_pWearItem[Part] = pItem;}
 	void  deleteWearItem(WearPart Part) throw(Error) { Assert(m_pWearItem[Part] != NULL); m_pWearItem[Part] = NULL; }
 	Item* getWearItem(WearPart Part) throw() { return m_pWearItem[Part]; }
-	void  wearItem(WearPart Part) throw(Error);
-	void  wearItem(WearPart Part, Item* pItem) throw(Error);
-	void  takeOffItem(WearPart Part, bool bAddOnMouse, bool bSendModifyInfo) throw(Error);
+	void  wearItem(WearPart Part);
+	void  wearItem(WearPart Part, Item* pItem);
+	void  takeOffItem(WearPart Part, bool bAddOnMouse, bool bSendModifyInfo);
 	WearPart getWearPart(Item::ItemClass IClass) const;
 	bool 	changeShape(Item* pItem, Color_t color, bool bSendPacket=true);
 	bool 	addShape(Item::ItemClass IClass, ItemType_t IType, Color_t color);
@@ -424,7 +424,7 @@ public:
 public:
 	Motorcycle* getMotorcycle()  { return m_pMotorcycle; }
 	void setMotorcycle(Motorcycle* pMotorcycle) throw();
-	void getOffMotorcycle() throw(Error);
+	void getOffMotorcycle();
 
 	RideMotorcycleInfo* getRideMotorcycleInfo() ;
 	bool hasRideMotorcycle()  { return((m_pMotorcycle != NULL) ? true : false);}
@@ -534,8 +534,8 @@ public:
 
 public :
 	// by sigi. 2002.11.19
-	virtual bool isPayPlayAvaiable() throw(Error);
-	virtual bool canPlayFree() throw(Error);
+	virtual bool isPayPlayAvaiable();
+	virtual bool canPlayFree();
 
 	virtual void setLastTarget(ObjectID_t value);
 

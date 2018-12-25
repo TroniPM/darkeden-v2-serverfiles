@@ -135,7 +135,7 @@ LoginPlayer::setExpireTimeForKickCharacter()
 //
 //////////////////////////////////////////////////////////////////////
 void LoginPlayer::processCommand ( bool Option ) 
-     throw ( IOException , Error )
+     
 {
 	__BEGIN_TRY
 

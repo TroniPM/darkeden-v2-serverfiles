@@ -129,7 +129,7 @@ class CGRideMotorCycleHandler {
 public:
 
 	// execute packet's handler
-	static void execute(CGRideMotorCycle* pCGRideMotorCycle, Player* pPlayer) throw(Error);
+	static void execute(CGRideMotorCycle* pCGRideMotorCycle, Player* pPlayer);
 
 };
 

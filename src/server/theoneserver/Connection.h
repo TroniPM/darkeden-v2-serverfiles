@@ -31,13 +31,13 @@ class Connection {
 public:
 	
 	// constructor
-    Connection() throw(Error);
+    Connection();
 
 	// constructor(1-time connection)
     Connection(string host, string db, string user, string password, uint port = 0) throw(SQLConnectException, Error);
     
 	// destructor
-	~Connection() throw(Error);
+	~Connection();
 
     // close the connection to database
 	void close() throw(SQLConnectException, Error);

@@ -77,7 +77,7 @@ public:
 class CGTameMonsterHandler {
 	
 public:
-	static void execute(CGTameMonster* pCGTameMonster, Player* player) throw(Error);
+	static void execute(CGTameMonster* pCGTameMonster, Player* player);
 };
 
 #endif

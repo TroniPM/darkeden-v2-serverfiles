@@ -17,17 +17,17 @@
 class CGUsePowerPoint : public Packet
 {
 public:
-	CGUsePowerPoint () throw ();
-	~CGUsePowerPoint () throw ();
+	CGUsePowerPoint ();
+	~CGUsePowerPoint ();
 	
 public:
     void read ( SocketInputStream & iStream ) throw ( ProtocolException , Error );
-    void write ( SocketOutputStream & oStream ) const throw ( ProtocolException , Error );
+    void write ( SocketOutputStream & oStream ) ;
 	void execute ( Player * pPlayer ) throw ( ProtocolException , Error );
-    PacketID_t getPacketID () const throw () { return PACKET_CG_USE_POWER_POINT; }
-	PacketSize_t getPacketSize () const throw () { return 0; }
-	string getPacketName () const throw () { return "CGUsePowerPoint"; }
-	string toString () const throw ();
+    PacketID_t getPacketID ()  { return PACKET_CG_USE_POWER_POINT; }
+	PacketSize_t getPacketSize ()  { return 0; }
+	string getPacketName ()  { return "CGUsePowerPoint"; }
+	string toString () ;
 };
 
 //////////////////////////////////////////////////////////////////////////////
@@ -38,9 +38,9 @@ class CGUsePowerPointFactory : public PacketFactory
 {
 public:
 	Packet * createPacket () throw () { return new CGUsePowerPoint(); }
-	string getPacketName () const throw () { return "CGUsePowerPoint"; }
-	PacketID_t getPacketID () const throw () { return Packet::PACKET_CG_USE_POWER_POINT; }
-	PacketSize_t getPacketMaxSize () const throw () { return 0; }
+	string getPacketName ()  { return "CGUsePowerPoint"; }
+	PacketID_t getPacketID ()  { return Packet::PACKET_CG_USE_POWER_POINT; }
+	PacketSize_t getPacketMaxSize ()  { return 0; }
 };
 
 //////////////////////////////////////////////////////////////////////////////
@@ -50,7 +50,7 @@ public:
 class CGUsePowerPointHandler 
 {
 public:
-	static void execute ( CGUsePowerPoint * pCGUsePowerPoint , Player * pPlayer ) throw (ProtocolException, Error);
+	static void execute ( CGUsePowerPoint * pCGUsePowerPoint , Player * pPlayer );
 };
 
 

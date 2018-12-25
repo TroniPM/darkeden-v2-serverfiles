@@ -43,14 +43,14 @@ public:
 
 //	void sendBloodBibleStatus() ;
 
-	void fixTimeband( uint timeband ) throw(Error);
-	void resumeTimeband() throw(Error);
+	void fixTimeband( uint timeband );
+	void resumeTimeband();
 
-	void    killAllMonsters() throw (Error);
+	void    killAllMonsters();
 
-	void	remainRaceWarPlayers() throw (Error);
+	void	remainRaceWarPlayers();
 
-	void refreshHolyLandPlayers() throw (Error);
+	void refreshHolyLandPlayers();
 
 private:
 	HashMapZone m_HolyLands;

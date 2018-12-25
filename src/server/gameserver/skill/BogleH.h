@@ -23,7 +23,7 @@ public:
     string getSkillHandlerName()  { return "BogleH"; }
 	SkillType_t getSkillType()  { return SKILL_BOGLE_H; }
 
-	void execute(Monster* pMonster, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
+	void execute(Monster* pMonster, ZoneCoord_t X, ZoneCoord_t Y);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 

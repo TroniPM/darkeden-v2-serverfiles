@@ -20,17 +20,17 @@
 class CGRequestIP : public Packet
 {
 public:
-	CGRequestIP () throw ();
-	~CGRequestIP () throw ();
+	CGRequestIP ();
+	~CGRequestIP ();
 	
 public:
     void read ( SocketInputStream & iStream ) throw ( ProtocolException , Error );
-    void write ( SocketOutputStream & oStream ) const throw ( ProtocolException , Error );
+    void write ( SocketOutputStream & oStream ) ;
 	void execute ( Player * pPlayer ) throw ( ProtocolException , Error );
-    PacketID_t getPacketID () const throw () { return PACKET_CG_REQUEST_IP; }
-	PacketSize_t getPacketSize () const throw () { return szBYTE + m_Name.size(); }
-	string getPacketName () const throw () { return "CGRequestIP"; }
-	string toString () const throw ();
+    PacketID_t getPacketID ()  { return PACKET_CG_REQUEST_IP; }
+	PacketSize_t getPacketSize ()  { return szBYTE + m_Name.size(); }
+	string getPacketName ()  { return "CGRequestIP"; }
+	string toString () ;
 
 public:
 	string getName()  { return m_Name; }
@@ -48,9 +48,9 @@ class CGRequestIPFactory : public PacketFactory
 {
 public:
 	Packet * createPacket () throw () { return new CGRequestIP(); }
-	string getPacketName () const throw () { return "CGRequestIP"; }
-	PacketID_t getPacketID () const throw () { return Packet::PACKET_CG_REQUEST_IP; }
-	PacketSize_t getPacketMaxSize () const throw () { return szBYTE + 10;}
+	string getPacketName ()  { return "CGRequestIP"; }
+	PacketID_t getPacketID ()  { return Packet::PACKET_CG_REQUEST_IP; }
+	PacketSize_t getPacketMaxSize ()  { return szBYTE + 10;}
 };
 
 //////////////////////////////////////////////////////////////////////////////
@@ -60,7 +60,7 @@ public:
 class CGRequestIPHandler 
 {
 public:
-	static void execute ( CGRequestIP * pCGRequestIP , Player * pPlayer ) throw (ProtocolException, Error);
+	static void execute ( CGRequestIP * pCGRequestIP , Player * pPlayer );
 };
 
 

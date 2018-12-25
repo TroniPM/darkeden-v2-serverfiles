@@ -86,8 +86,8 @@ public:
 	void resetFlagCounts();
 	bool isInPoleField( ZONE_COORD zc );
 
-	void recordPutFlag( PlayerCreature* pPC, Item* pItem ) throw(Error);
-	void recordFlagWarHistory() throw(Error);
+	void recordPutFlag( PlayerCreature* pPC, Item* pItem );
+	void recordFlagWarHistory();
 
 	void broadcastPacket( Packet* pPacket ) const;
 

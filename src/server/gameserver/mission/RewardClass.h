@@ -24,12 +24,12 @@ class RewardClass
 {
 public:
 	RewardClass( RewardClass_t rClass );
-	virtual ~RewardClass() throw (Error);
+	virtual ~RewardClass();
 
 public:
 	RewardClass_t	getRewardClass() const { return m_RewardClass; }
 
-	virtual void	addRewardInfo( RewardInfo* pRewardInfo ) throw(Error);
+	virtual void	addRewardInfo( RewardInfo* pRewardInfo );
 	virtual QuestMessage	giveReward( PlayerCreature* pPC ) ;
 	virtual QuestMessage	canGiveReward( PlayerCreature* pPC ) ;
 

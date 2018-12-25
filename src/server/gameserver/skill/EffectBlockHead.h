@@ -17,15 +17,15 @@
 class EffectBlockHead : public Effect 
 {
 public:
-	EffectBlockHead(Creature* pCreature) throw(Error);
+	EffectBlockHead(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_BLOCK_HEAD; }
 
 	void affect() throw(Error){}
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect() throw(Error);
+	void unaffect(Creature* pCreature);
+	void unaffect();
 
 	string toString() ;
 

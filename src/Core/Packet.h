@@ -1067,10 +1067,10 @@ public :
 	virtual void read (Socket* pSocket);// throw (ProtocolException, Error) { throw UnsupportedError(); }	
 
 	// 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
-	virtual void write (SocketOutputStream & oStream);// const throw (ProtocolException, Error) = 0;
+	virtual void write (SocketOutputStream & oStream);// ;
 
 	// 소켓으로 직접 패킷의 바이너리 이미지를 보낸다.
-	virtual void write (Socket* pSocket);// const throw (ProtocolException, Error) { throw UnsupportedError(); }	
+	virtual void write (Socket* pSocket);//  { throw UnsupportedError(); }	
 
 	// 출력 스트림에 패킷의 헤더와 바디를 모두 쓴다.
 	void writeHeaderNBody (SocketOutputStream& oStream ) //const
@@ -1086,17 +1086,17 @@ public :
 	virtual void execute (Player* pPlayer);// throw (ProtocolException, Error) = 0;
 	
 	// get packet's PacketID	
-	virtual PacketID_t getPacketID ();// const throw () = 0;
+	virtual PacketID_t getPacketID ();//  = 0;
 
 	// get packet's size
-	virtual PacketSize_t getPacketSize ();// const throw () = 0;
+	virtual PacketSize_t getPacketSize ();//  = 0;
 
 	#if !defined(__GAME_CLIENT__) || defined(__DEBUG_OUTPUT__)
 		// get packet's name
-		virtual string getPacketName () const throw () = 0;
+		virtual string getPacketName ()  = 0;
 		
 		// get packet's debug string
-		virtual string toString () const throw () = 0;
+		virtual string toString ()  = 0;
 	#endif
 	
 };

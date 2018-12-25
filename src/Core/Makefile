@@ -576,7 +576,7 @@ Datagram.o: Datagram.cpp Datagram.h Types.h Packet.h types/SystemTypes.h \
  /home/darkeden/src/libs/stl_list.h SocketAPI.h Assert.h \
  PacketFactoryManager.h Packet.h SocketInputStream.h Socket.h \
  SocketImpl.h SocketOutputStream.h PacketFactory.h DatagramPacket.h \
- /usr/include/bits/stdio_lim.h
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h
 SerialDatagram.o: SerialDatagram.cpp SerialDatagram.h Types.h \
  types/SystemTypes.h /usr/include/c++/7/iostream \
   /usr/include/c++/7/streambuf \
@@ -806,7 +806,7 @@ Player.o: Player.cpp /usr/include/stdio.h /usr/include/features.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
  /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
- /usr/include/bits/stdio_lim.h Player.h Types.h types/SystemTypes.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h Player.h Types.h types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
  /usr/include/c++/7/streambuf /usr/include/c++/7/fstream \
   /usr/include/c++/7/string \
@@ -1544,7 +1544,7 @@ StringStream.o: StringStream.cpp StringStream.h Types.h \
  types/ZoneTypes.h types/QuestTypes.h types/ShopTypes.h \
  types/GuildTypes.h types/WarTypes.h types/ServerType.h Utility.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/bits/stdio_lim.h
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h
 Update.o: Update.cpp Update.h Types.h types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
  /usr/include/c++/7/streambuf /usr/include/libio.h \
@@ -2430,7 +2430,7 @@ Utility.o: Utility.cpp Utility.h Types.h types/SystemTypes.h \
  types/ObjectTypes.h types/CreatureTypes.h types/ItemTypes.h \
  types/ZoneTypes.h types/QuestTypes.h types/ShopTypes.h \
  types/GuildTypes.h types/WarTypes.h types/ServerType.h \
- /usr/include/bits/stdio_lim.h Assert.h Exception.h StringStream.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h Assert.h Exception.h StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h VSDateTime.h
 VSDateTime.o: VSDateTime.cpp VSDateTime.h /usr/include/i386-linux-gnu/sys/types.h \
  /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
@@ -2467,7 +2467,7 @@ VSDateTime.o: VSDateTime.cpp VSDateTime.h /usr/include/i386-linux-gnu/sys/types.
  /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
  /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
  /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
- /home/darkeden/src/libs/stl_hash_fun.h /usr/include/bits/stdio_lim.h \
+ /home/darkeden/src/libs/stl_hash_fun.h /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
  /usr/include/sys/time.h
@@ -3444,7 +3444,7 @@ SXml.o: SXml.cpp SXml.h Types.h types/SystemTypes.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h /usr/include/STL/iosfwd \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  /usr/include/STL/cstdarg /usr/include/STL/ctime \
  /usr/lib/xerces-c/include/xercesc/sax/SAXParseException.hpp \
  /usr/lib/xerces-c/include/xercesc/sax/SAXException.hpp \

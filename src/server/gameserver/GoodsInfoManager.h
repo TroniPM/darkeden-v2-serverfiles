@@ -105,10 +105,10 @@ public:
 public:
 
 	// initialize Manager
-	void init() throw(Error);
+	void init();
 
 	// void load() throw();
-	void load() throw(Error);
+	void load();
 	
 	// clear list
 	void clear() throw();

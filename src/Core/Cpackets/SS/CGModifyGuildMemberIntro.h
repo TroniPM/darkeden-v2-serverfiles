@@ -114,7 +114,7 @@ class CGModifyGuildMemberIntroHandler {
 public:
 
 	// execute packet's handler
-	static void execute(CGModifyGuildMemberIntro* pCGModifyGuildMemberIntro, Player* pPlayer) throw(Error);
+	static void execute(CGModifyGuildMemberIntro* pCGModifyGuildMemberIntro, Player* pPlayer);
 
 };
 

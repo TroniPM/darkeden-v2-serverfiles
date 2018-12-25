@@ -39,7 +39,7 @@ void CGTradePrepare::execute (Player* pPlayer)
 }
 
 string CGTradePrepare::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

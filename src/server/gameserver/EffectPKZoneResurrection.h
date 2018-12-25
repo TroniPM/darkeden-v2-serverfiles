@@ -23,10 +23,10 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_PK_ZONE_RESURRECTION; }
 
-	void affect() throw(Error);
+	void affect();
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect() throw(Error); 
+	void unaffect(Creature* pCreature);
+	void unaffect(); 
 
 	string toString() ;
 

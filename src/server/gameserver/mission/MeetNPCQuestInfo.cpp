@@ -21,7 +21,7 @@ MeetNPCQuestInfo::~MeetNPCQuestInfo()
 {
 }
 
-string MeetNPCQuestInfo::toString () const throw ()
+string MeetNPCQuestInfo::toString () 
 {
 	StringStream msg;
 

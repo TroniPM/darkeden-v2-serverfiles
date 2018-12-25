@@ -39,7 +39,7 @@ void CGDepositPet::execute (Player* pPlayer)
 }
 
 string CGDepositPet::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

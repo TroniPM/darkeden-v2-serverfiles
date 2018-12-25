@@ -17,16 +17,16 @@
 class EffectMistOfSoul1: public Effect 
 {
 public:
-	EffectMistOfSoul1(Creature* pCreature) throw(Error);
+	EffectMistOfSoul1(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_MIST_OF_SOUL1; }
 
-	void affect() throw(Error);
-	void affect(Creature* pCreature) throw(Error);
+	void affect();
+	void affect(Creature* pCreature);
 
-	void unaffect() throw(Error);
-	void unaffect(Creature* pCreature) throw(Error);
+	void unaffect();
+	void unaffect(Creature* pCreature);
 
 	string toString() ;
 

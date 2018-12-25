@@ -50,8 +50,8 @@ public:
 	~VampEXPInfoManager() throw();
 
 public:
-	void init() throw(Error);
-	void load() throw(Error);
+	void init();
+	void load();
 
 	VampEXPInfo* getVampEXPInfo(uint VampEXPType) ;
 	void addVampEXPInfo(VampEXPInfo* pVampEXPInfo) throw(DuplicatedException, Error);

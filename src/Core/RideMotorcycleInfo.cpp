@@ -79,7 +79,7 @@ void RideMotorcycleInfo::read ( SocketInputStream & iStream )
 // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
 //////////////////////////////////////////////////////////////////////////////
 void RideMotorcycleInfo::write ( SocketOutputStream & oStream ) 
-     const throw ( ProtocolException , Error )
+     
 {
 	__BEGIN_TRY
 		
@@ -133,7 +133,7 @@ PacketSize_t RideMotorcycleInfo::getSize()
 // get packet's debug string
 //////////////////////////////////////////////////////////////////////////////
 string RideMotorcycleInfo::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

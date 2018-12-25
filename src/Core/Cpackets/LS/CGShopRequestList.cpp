@@ -42,7 +42,7 @@ void CGShopRequestList::execute (Player* pPlayer)
 }
 
 string CGShopRequestList::toString () 
-	const throw ()
+	
 {
 	StringStream msg;
 	msg << "CGShopRequestList(" 

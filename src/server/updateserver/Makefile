@@ -117,7 +117,7 @@ main.o: main.cpp ../../Core/Types.h ../../Core/types/SystemTypes.h \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../../Core/ServerSocket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h ../../Core/Socket.h \
- /usr/include/bits/stdio_lim.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
  /usr/include/getopt.h /usr/include/dirent.h \
  /usr/include/bits/dirent.h /usr/include/sys/stat.h \
@@ -144,7 +144,7 @@ UpdateServer.o: UpdateServer.cpp /usr/include/c++/7/fstream \
  /usr/include/bits/sigthread.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
  /usr/include/getopt.h /usr/include/stdio.h \
- /usr/include/bits/stdio_lim.h /usr/include/fcntl.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/fcntl.h \
  /usr/include/bits/fcntl.h /usr/include/i386-linux-gnu/sys/types.h \
  /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
  /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \

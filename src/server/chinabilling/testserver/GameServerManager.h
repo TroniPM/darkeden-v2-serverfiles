@@ -25,8 +25,8 @@
 class GameServerManager : public Thread
 {
 public:
-	GameServerManager() throw(Error);
-	~GameServerManager() throw(Error);
+	GameServerManager();
+	~GameServerManager();
 
 public:
 
@@ -34,13 +34,13 @@ public:
 	const static uint nMaxGameServers = 100;
 
 	// initialize 
-	void init() throw(Error);
+	void init();
 
-	void run() throw (Error);
+	void run();
 
 	// broadcast packet to all players
-	void broadcast(Packet* pPacket) throw(Error);
-	void broadcast(Packet* pPacket, Player* pPlayer) throw(Error);
+	void broadcast(Packet* pPacket);
+	void broadcast(Packet* pPacket, Player* pPlayer);
 
 
 	// select 
@@ -59,7 +59,7 @@ public:
 	void processCommands() throw(IOException, Error);
 
 	// accept new connection
-	void acceptNewConnection() throw(Error);
+	void acceptNewConnection();
 
 	// add/delete player
 	void addGameServerPlayer(GameServerPlayer* pGameServerPlayer) throw(DuplicatedException, Error);
@@ -69,7 +69,7 @@ public:
 	void lock() throw(Error) { m_Mutex.lock(); }
 	void unlock() throw(Error) { m_Mutex.unlock(); }
 
-	void heartbeat() throw(Error);
+	void heartbeat();
 
 private:
 

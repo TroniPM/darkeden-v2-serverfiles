@@ -20,8 +20,8 @@ class Item;
 class EffectRecallMotorcycle : public Effect 
 {
 public:
-	EffectRecallMotorcycle(Zone* pZone, ZoneCoord_t sx, ZoneCoord_t sy, Zone* pTargetZone, ZoneCoord_t x, ZoneCoord_t y, Item* pItem, ObjectID_t ownerOID, Turn_t delay) throw(Error);
-	virtual ~EffectRecallMotorcycle() throw(Error);
+	EffectRecallMotorcycle(Zone* pZone, ZoneCoord_t sx, ZoneCoord_t sy, Zone* pTargetZone, ZoneCoord_t x, ZoneCoord_t y, Item* pItem, ObjectID_t ownerOID, Turn_t delay);
+	virtual ~EffectRecallMotorcycle();
 
 public:
 	virtual EffectClass getEffectClass()  { return EFFECT_CLASS_TRANSPORT_ITEM; }
@@ -29,7 +29,7 @@ public:
 	// OBJECT_PRIORITY_NONE 라는 뜻은, 타일에 들어가서는 안된다는 뜻이다.
 	virtual ObjectPriority getObjectPriority()  { return OBJECT_PRIORITY_NONE; }
 
-	void unaffect() throw(Error);
+	void unaffect();
 
 	// get debug string
 	virtual string toString() ;

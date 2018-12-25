@@ -32,16 +32,16 @@ public:
     void read ( SocketInputStream & iStream ) throw ( ProtocolException , Error );
 		    
     // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
-    void write ( SocketOutputStream & oStream ) const throw ( ProtocolException , Error );
+    void write ( SocketOutputStream & oStream ) ;
 
 	// execute packet's handler
 	void execute ( Player * pPlayer ) throw ( ProtocolException , Error );
 
 	// get packet id
-	PacketID_t getPacketID () const throw () { return PACKET_CG_ENCODE_KEY; }
+	PacketID_t getPacketID ()  { return PACKET_CG_ENCODE_KEY; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize () const throw () 
+	PacketSize_t getPacketSize ()  
 	{ 
 		return szWORD 						// authentication key
 			+ szWORD; 						// Slayer or Vampire?
@@ -56,9 +56,9 @@ public:
 public:
 
 	// get/set key
-	WORD getEncryptKey () const throw () { return m_EncryptKey; }
+	WORD getEncryptKey ()  { return m_EncryptKey; }
 
-	WORD getHashKey () const throw () { return m_HashKey; }
+	WORD getHashKey ()  { return m_HashKey; }
 
 	void setEncryptKey ( WORD key ) throw () { m_EncryptKey = key; }
 

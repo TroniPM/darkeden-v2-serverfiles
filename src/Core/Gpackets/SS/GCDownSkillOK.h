@@ -116,7 +116,7 @@ class  GCDownSkillOKHandler {
 public :
 
 	// execute packet's handler
-	static void execute( GCDownSkillOK* pGCDownSkillOK, Player* pPlayer) throw(Error);
+	static void execute( GCDownSkillOK* pGCDownSkillOK, Player* pPlayer);
 
 };
 

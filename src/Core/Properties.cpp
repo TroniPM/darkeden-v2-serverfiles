@@ -55,7 +55,7 @@ Properties::~Properties ()
 // load from file
 //--------------------------------------------------------------------------------
 void Properties::load () 
-	throw ( IOException , Error )
+	
 {
 	__BEGIN_TRY
 		

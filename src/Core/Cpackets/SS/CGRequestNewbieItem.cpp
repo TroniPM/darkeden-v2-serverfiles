@@ -37,7 +37,7 @@ void CGRequestNewbieItem::execute (Player* pPlayer)
 }
 
 string CGRequestNewbieItem::toString () 
-	const throw ()
+	
 {
 	StringStream msg;
 	msg << "CGRequestNewbieItem(" 

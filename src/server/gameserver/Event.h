@@ -42,7 +42,7 @@ public:
 	};
 
 public:
-	Event(GamePlayer* pGamePlayer) throw(Error);
+	Event(GamePlayer* pGamePlayer);
 	virtual ~Event() throw();
 			
 public:

@@ -30,16 +30,16 @@ class ZoneInfoManager {
 public :
 	
 	// constructor
-	ZoneInfoManager () throw ();
+	ZoneInfoManager ();
 	
 	// destructor
-	~ZoneInfoManager () throw ();
+	~ZoneInfoManager ();
 
 	// initialize manager
-	void init () throw ( Error );
+	void init ();
 
 	// load from database
-	void load () throw ( Error );
+	void load ();
 	
 	// add info
 	void addZoneInfo ( ZoneInfo * pZoneInfo ) throw ( DuplicatedException );
@@ -48,13 +48,13 @@ public :
 	void deleteZoneInfo ( ZoneID_t zoneID ) throw ( NoSuchElementException );
 	
 	// get info
-	ZoneInfo * getZoneInfo ( ZoneID_t zoneID ) const throw ( NoSuchElementException );
+	ZoneInfo * getZoneInfo ( ZoneID_t zoneID ) ;
 
 	// get count of info
-	uint getSize () const throw () { return m_ZoneInfos.size(); }
+	uint getSize ()  { return m_ZoneInfos.size(); }
 
 	// get debug string
-	string toString () const throw ();
+	string toString () ;
 
 private :
 	

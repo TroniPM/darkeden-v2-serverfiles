@@ -17,15 +17,15 @@
 class EffectJabbingVein : public Effect 
 {
 public:
-	EffectJabbingVein(Creature* pCreature) throw(Error);
+	EffectJabbingVein(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_JABBING_VEIN; }
 
 	void affect() throw(Error){}
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect() throw(Error);
+	void unaffect(Creature* pCreature);
+	void unaffect();
 
 	string toString() ;
 

@@ -29,10 +29,10 @@ class SubItemInfo {
 public :
 
 	// read data from socket input stream
-	void read (SocketInputStream & iStream) throw (ProtocolException, Error);
+	void read (SocketInputStream & iStream);
 
 	// write data to socket output stream
-	void write (SocketOutputStream & oStream) const throw (ProtocolException, Error);
+	void write (SocketOutputStream & oStream) ;
 
 	// get size of object
 	static uint getSize () throw ()
@@ -43,7 +43,7 @@ public :
 	{ return szObjectID + szBYTE + szItemType + szItemNum + szSlotID; }
 
 	// get debug string
-	string toString () const throw ();
+	string toString () ;
 
 public :
 

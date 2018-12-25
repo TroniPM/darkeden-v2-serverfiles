@@ -23,7 +23,7 @@ public:
     string getSkillHandlerName()  { return "HurricaneCombo"; }
 	SkillType_t getSkillType()  { return SKILL_HURRICANE_COMBO; }
 
-	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
+	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };

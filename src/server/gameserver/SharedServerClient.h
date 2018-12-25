@@ -28,8 +28,8 @@ public:
 	const static BYTE nPacketHistorySize = 10;
 
 public:
-	SharedServerClient(Socket* pSocket) throw(Error);
-	~SharedServerClient() throw(Error);
+	SharedServerClient(Socket* pSocket);
+	~SharedServerClient();
 
 public:
 	// read socket's receive buffer and fill input buffer

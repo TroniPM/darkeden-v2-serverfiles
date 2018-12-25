@@ -25,10 +25,10 @@ public:
 	~ZoneInfoManager() throw();
 
 public:
-	void init() throw(Error);
-	void load() throw(Error);
+	void init();
+	void load();
 	
-	void addZoneInfo(ZoneInfo* pZoneInfo) throw(Error);
+	void addZoneInfo(ZoneInfo* pZoneInfo);
 	void deleteZoneInfo(ZoneID_t zoneID) throw(NoSuchElementException);
 	ZoneInfo* getZoneInfo(ZoneID_t zoneID) throw(NoSuchElementException);
 	ZoneInfo* getZoneInfoByName(const string & ZoneName);

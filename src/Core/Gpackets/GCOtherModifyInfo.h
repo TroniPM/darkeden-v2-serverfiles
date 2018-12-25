@@ -55,7 +55,7 @@ public:
 class GCOtherModifyInfoHandler 
 {
 public:
-	static void execute(GCOtherModifyInfo* pGCOtherModifyInfo, Player* pPlayer) throw(Error);
+	static void execute(GCOtherModifyInfo* pGCOtherModifyInfo, Player* pPlayer);
 };
 
 #endif

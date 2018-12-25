@@ -76,7 +76,7 @@ public:
 class GCAddBurrowingCreatureHandler 
 {
 public:
-	static void execute(GCAddBurrowingCreature* pPacket, Player* pPlayer) throw(Error);
+	static void execute(GCAddBurrowingCreature* pPacket, Player* pPlayer);
 };
 
 #endif

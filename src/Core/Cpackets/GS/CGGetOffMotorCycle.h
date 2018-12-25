@@ -114,7 +114,7 @@ class CGGetOffMotorCycleHandler {
 public:
 
 	// execute packet's handler
-	static void execute(CGGetOffMotorCycle* pCGGetOffMotorCycle, Player* pPlayer) throw(Error);
+	static void execute(CGGetOffMotorCycle* pCGGetOffMotorCycle, Player* pPlayer);
 
 };
 

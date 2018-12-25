@@ -16,15 +16,15 @@
 class SimpleCreatureEffect : public Effect 
 {
 public:
-	SimpleCreatureEffect(EffectClass eClass, Creature* pCreature) throw(Error);
+	SimpleCreatureEffect(EffectClass eClass, Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return m_EffectClass; }
 
 	void affect() throw(Error){}
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect() throw(Error);
+	void unaffect(Creature* pCreature);
+	void unaffect();
 
 	string toString() ;
 

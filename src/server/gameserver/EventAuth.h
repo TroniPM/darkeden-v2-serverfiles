@@ -16,7 +16,7 @@
 class EventAuth : public Event 
 {
 public:
-	EventAuth(GamePlayer* pGamePlayer) throw(Error);
+	EventAuth(GamePlayer* pGamePlayer);
 	virtual ~EventAuth() throw();
 
 public:
@@ -25,7 +25,7 @@ public:
 	virtual bool isTemporary()  { return false; }
 	virtual bool isPermanent()  { return true; }
 
-	virtual void activate() throw(Error);
+	virtual void activate();
 
 	virtual string toString()  { return "Auth Event"; }
 };

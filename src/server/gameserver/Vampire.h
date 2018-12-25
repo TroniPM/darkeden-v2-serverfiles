@@ -105,7 +105,7 @@ public:
 ////////////////////////////////////////////////////
 public:
 	Vampire() throw();
-	virtual ~Vampire() throw (Error);
+	virtual ~Vampire();
 
 ////////////////////////////////////////////////////
 // 하위 클래스(Creature) 상속 함수
@@ -114,8 +114,8 @@ public:
 	virtual CreatureClass getCreatureClass()  { return CREATURE_CLASS_VAMPIRE; }
 	virtual string getCreatureClassString()  { return "CREATURE_CLASS_VAMPIRE"; }
 
-	virtual void registerObject() throw(Error);
-	virtual void registerInitObject() throw(Error);
+	virtual void registerObject();
+	virtual void registerInitObject();
 
 	virtual bool load() throw (InvalidProtocolException, Error);
 	void loadItem( bool checkTimeLimit = false ) throw (InvalidProtocolException, Error);
@@ -139,8 +139,8 @@ public:
 // 시간제한 아이템 관련 함수
 //////////////////////////////////////////////////////////////
 public:
-	void checkItemTimeLimit() throw (Error);
-	void updateEventItemTime( DWORD time ) throw(Error);
+	void checkItemTimeLimit();
+	void updateEventItemTime( DWORD time );
 
 ////////////////////////////////////////////////////
 // 상태 관련 함수(Dead or Alive!)
@@ -177,7 +177,7 @@ public:
 	Color_t getBatColor()  { return m_BatColor; }
 	void setBatColor(Color_t batColor) throw() { m_BatColor = batColor; }
 
-	Color_t getAdvanceBatColor () const throw () { return m_AdvanceBatColor; }
+	Color_t getAdvanceBatColor ()  { return m_AdvanceBatColor; }
 	void setAdvanceBatColor (Color_t advanceBatColor) throw () { m_AdvanceBatColor = advanceBatColor; }
 
 	Color_t getSkinColor()  { return m_SkinColor; }
@@ -185,10 +185,10 @@ public:
 
 	// 신규 이동수단
 
-	virtual Color_t getWingColor() const throw () { return m_WingColor; }
+	virtual Color_t getWingColor()  { return m_WingColor; }
 	virtual void	setWingColor(Color_t batColor) throw () { m_WingColor = batColor; }
 	
-	virtual Color_t getWingEffectColor() const throw () { return m_WingEffectColor; }
+	virtual Color_t getWingEffectColor()  { return m_WingEffectColor; }
 	virtual void	setWingEffectColor(Color_t batColor) throw () { m_WingEffectColor = batColor; }
 
 	virtual BYTE GetBatType() { return m_BatType; }
@@ -450,8 +450,8 @@ public:
 
 public :
 	 // by sigi. 2002.11.19
-	virtual bool isPayPlayAvaiable() throw(Error);
-	virtual bool canPlayFree() throw(Error);
+	virtual bool isPayPlayAvaiable();
+	virtual bool canPlayFree();
 
 	void	initPetQuestTarget();
 	int		getBloodBibleSignOpenNum() const;

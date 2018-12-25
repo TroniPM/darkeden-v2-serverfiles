@@ -23,13 +23,13 @@
 class LoginServerManager : public Thread 
 {
 public:
-	LoginServerManager() throw(Error);
-	~LoginServerManager() throw(Error);
+	LoginServerManager();
+	~LoginServerManager();
 
 public:
 	void init() throw(Error) {}
 
-	void stop() throw(Error);
+	void stop();
 
 	void run() throw();
 

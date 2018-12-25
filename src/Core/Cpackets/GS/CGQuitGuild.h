@@ -105,7 +105,7 @@ class CGQuitGuildHandler {
 public:
 
 	// execute packet's handler
-	static void execute(CGQuitGuild* pCGQuitGuild, Player* pPlayer) throw(Error);
+	static void execute(CGQuitGuild* pCGQuitGuild, Player* pPlayer);
 
 };
 

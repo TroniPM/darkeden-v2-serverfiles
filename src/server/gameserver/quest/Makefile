@@ -357,7 +357,7 @@ TriggerManager.o: TriggerManager.cpp TriggerManager.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../../database/Statement.h ../../database/Result.h \
- /usr/include/sys/time.h /usr/include/bits/stdio_lim.h TriggerParser.h \
+ /usr/include/sys/time.h /usr/include/i386-linux-gnu/bits/stdio_lim.h TriggerParser.h \
  ../../../Core/SXml.h /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../../Core/Properties.h ../ScriptManager.h ../Script.h
@@ -956,7 +956,7 @@ ConditionAttrComp.o: ConditionAttrComp.cpp ConditionAttrComp.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -2129,7 +2129,7 @@ ConditionCanPetQuest.o: ConditionCanPetQuest.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -3372,7 +3372,7 @@ ActionPrepareShop.o: ActionPrepareShop.cpp ActionPrepareShop.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h ../../LogClient.h ../ItemFactoryManager.h \
- ../ItemFactory.h /usr/include/bits/stdio_lim.h /usr/include/math.h \
+ ../ItemFactory.h /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/math.h \
  /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h \
  /usr/include/bits/mathcalls.h
 ActionSell.o: ActionSell.cpp ActionSell.h ../../../Core/Types.h \
@@ -3628,7 +3628,7 @@ ActionRegenShop.o: ActionRegenShop.cpp ActionRegenShop.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h ../../LogClient.h ../ItemFactoryManager.h \
- ../ItemFactory.h /usr/include/bits/stdio_lim.h /usr/include/math.h \
+ ../ItemFactory.h /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/math.h \
  /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h \
  /usr/include/bits/mathcalls.h
 ActionTeachSkill.o: ActionTeachSkill.cpp ActionTeachSkill.h \
@@ -3729,7 +3729,7 @@ ActionTeachSkill.o: ActionTeachSkill.cpp ActionTeachSkill.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -3823,7 +3823,7 @@ ActionHeal.o: ActionHeal.cpp ActionHeal.h ../../../Core/Types.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -3939,7 +3939,7 @@ ActionRedeemMotorcycle.o: ActionRedeemMotorcycle.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -4047,7 +4047,7 @@ ActionSearchMotorcycle.o: ActionSearchMotorcycle.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../item/Key.h \
  ../ItemInfo.h ../InfoClassManager.h ../ItemFactory.h \
  ../../../Core/Gpackets/GCNPCResponse.h \
@@ -4211,7 +4211,7 @@ ActionStashSell.o: ActionStashSell.cpp ActionStashSell.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -4317,7 +4317,7 @@ ActionStashOpen.o: ActionStashOpen.cpp ActionStashOpen.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -4426,7 +4426,7 @@ ActionRestore.o: ActionRestore.cpp ActionRestore.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -4543,7 +4543,7 @@ ActionSetResurrectZone.o: ActionSetResurrectZone.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -5063,7 +5063,7 @@ ActionGiveNewbieItem.o: ActionGiveNewbieItem.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../FlagSet.h \
  ../ItemFactoryManager.h ../ItemFactory.h ../item/Magazine.h \
  ../ItemInfo.h ../InfoClassManager.h \
@@ -5171,7 +5171,7 @@ ActionActivatePortal.o: ActionActivatePortal.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo3.h \
  ../../../Core/VampireSkillInfo.h ../../../Core/SubVampireSkillInfo.h \
@@ -5499,7 +5499,7 @@ ActionTakeDonation.o: ActionTakeDonation.cpp ActionTakeDonation.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -5596,7 +5596,7 @@ ActionCallHelicopter.o: ActionCallHelicopter.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../GamePlayer.h \
  ../../../Core/Player.h ../../../Core/SocketEncryptOutputStream.h \
  ../../../Core/SocketEncryptInputStream.h /usr/include/STL/deque \
@@ -5695,7 +5695,7 @@ ActionRegenEventShop.o: ActionRegenEventShop.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h ../../LogClient.h ../ItemFactoryManager.h \
- ../ItemFactory.h /usr/include/bits/stdio_lim.h /usr/include/math.h \
+ ../ItemFactory.h /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/math.h \
  /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h \
  /usr/include/bits/mathcalls.h
 ActionAskDynamic.o: ActionAskDynamic.cpp ActionAskDynamic.h Action.h \
@@ -5928,7 +5928,7 @@ ActionGiveSpecialEventItem.o: ActionGiveSpecialEventItem.cpp \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h ../../Thread.h ../../pthreadAPI.h \
- ../StringPool.h /usr/include/bits/stdio_lim.h ../item/Key.h \
+ ../StringPool.h /usr/include/i386-linux-gnu/bits/stdio_lim.h ../item/Key.h \
  ../ItemInfo.h ../InfoClassManager.h ../ItemLoader.h \
  ../../../Core/Gpackets/GCCreateItem.h \
  ../../../Core/Gpackets/GCNPCResponse.h \
@@ -6029,7 +6029,7 @@ ActionRedistributeAttr.o: ActionRedistributeAttr.cpp \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h ../VariableManager.h ../StringPool.h \
- /usr/include/bits/stdio_lim.h ../../../Core/Gpackets/GCNPCResponse.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../../../Core/Gpackets/GCNPCResponse.h \
  ../../../Core/Gpackets/GCSystemMessage.h
 ActionTradeEventItem.o: ActionTradeEventItem.cpp \
  ActionTradeEventItem.h ../../../Core/Types.h \
@@ -6128,7 +6128,7 @@ ActionTradeEventItem.o: ActionTradeEventItem.cpp \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/SkillSlot.h ../../../Core/Gpackets/GCModifyInformation.h \
  ../Vampire.h ../../../Core/PCVampireInfo.h \
  ../../../Core/PCVampireInfo2.h ../../../Core/PCVampireInfo3.h \
@@ -6236,7 +6236,7 @@ ActionTradeLairItem.o: ActionTradeLairItem.cpp ActionTradeLairItem.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/SkillSlot.h ../../../Core/Gpackets/GCModifyInformation.h \
  ../Vampire.h ../../../Core/PCVampireInfo.h \
  ../../../Core/PCVampireInfo2.h ../../../Core/PCVampireInfo3.h \
@@ -6352,7 +6352,7 @@ ActionShowGuildDialog.o: ActionShowGuildDialog.cpp \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/SkillSlot.h ../../../Core/Gpackets/GCModifyInformation.h \
  ../Vampire.h ../../../Core/PCVampireInfo.h \
  ../../../Core/PCVampireInfo2.h ../../../Core/PCVampireInfo3.h \
@@ -6606,7 +6606,7 @@ ActionSimpleQuestRegen.o: ActionSimpleQuestRegen.cpp \
  ../../chinabilling/CBillingPlayerInfo.h \
  ../../chinabilling/CBillingInfo.h \
  ../../../Core/Gpackets/GCReconnectLogin.h ../gameguard/CSAuth.h \
- /usr/include/bits/stdio_lim.h /usr/include/math.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/math.h \
  /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h \
  /usr/include/bits/mathcalls.h
 ActionTradeGiftBox.o: ActionTradeGiftBox.cpp ActionTradeGiftBox.h \
@@ -6709,7 +6709,7 @@ ActionTradeGiftBox.o: ActionTradeGiftBox.cpp ActionTradeGiftBox.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/SkillSlot.h ../../../Core/Gpackets/GCModifyInformation.h \
  ../Vampire.h ../../../Core/PCVampireInfo.h \
  ../../../Core/PCVampireInfo2.h ../../../Core/PCVampireInfo3.h \
@@ -6818,7 +6818,7 @@ ActionGiveTestServerReward.o: ActionGiveTestServerReward.cpp \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/SkillSlot.h ../../../Core/Gpackets/GCModifyInformation.h \
  ../Vampire.h ../../../Core/PCVampireInfo.h \
  ../../../Core/PCVampireInfo2.h ../../../Core/PCVampireInfo3.h \
@@ -6920,7 +6920,7 @@ ActionEnterCastleWithFee.o: ActionEnterCastleWithFee.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo3.h \
  ../../../Core/VampireSkillInfo.h ../../../Core/SubVampireSkillInfo.h \
@@ -7131,7 +7131,7 @@ ActionAskVariable.o: ActionAskVariable.cpp ActionAskVariable.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -7519,7 +7519,7 @@ ActionGiveEventItem.o: ActionGiveEventItem.cpp ActionGiveEventItem.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/SkillSlot.h ../../../Core/Gpackets/GCModifyInformation.h \
  ../Vampire.h ../../../Core/PCVampireInfo.h \
  ../../../Core/PCVampireInfo2.h ../../../Core/PCVampireInfo3.h \
@@ -7628,7 +7628,7 @@ ActionGiveAccountEventItem.o: ActionGiveAccountEventItem.cpp \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/SkillSlot.h ../../../Core/Gpackets/GCModifyInformation.h \
  ../Vampire.h ../../../Core/PCVampireInfo.h \
  ../../../Core/PCVampireInfo2.h ../../../Core/PCVampireInfo3.h \
@@ -8240,7 +8240,7 @@ ActionEnterPKZone.o: ActionEnterPKZone.cpp ActionEnterPKZone.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo3.h \
  ../../../Core/VampireSkillInfo.h ../../../Core/SubVampireSkillInfo.h \
@@ -8618,7 +8618,7 @@ ActionWarpToNoviceZone.o: ActionWarpToNoviceZone.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo3.h \
  ../../../Core/VampireSkillInfo.h ../../../Core/SubVampireSkillInfo.h \
@@ -10159,7 +10159,7 @@ ActionClearRankBonus.o: ActionClearRankBonus.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -10593,7 +10593,7 @@ ActionActivateMazeExit.o: ActionActivateMazeExit.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo3.h \
  ../../../Core/VampireSkillInfo.h ../../../Core/SubVampireSkillInfo.h \
@@ -10709,7 +10709,7 @@ ActionActivateMazeEnter.o: ActionActivateMazeEnter.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo3.h \
  ../../../Core/VampireSkillInfo.h ../../../Core/SubVampireSkillInfo.h \
@@ -10825,7 +10825,7 @@ ActionActivateMazeReturn.o: ActionActivateMazeReturn.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo3.h \
  ../../../Core/VampireSkillInfo.h ../../../Core/SubVampireSkillInfo.h \
@@ -11099,7 +11099,7 @@ ActionCheckPartnerName.o: ActionCheckPartnerName.cpp \
  ../../../Core/Gpackets/GCReconnectLogin.h ../gameguard/CSAuth.h \
  ../../../Core/Gpackets/GCSystemMessage.h ../StringPool.h ../FlagSet.h \
  ../couple/CoupleManager.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h
 ActionStartPetQuest.o: ActionStartPetQuest.cpp ActionStartPetQuest.h \
  ../../../Core/Types.h ../../../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
@@ -11455,7 +11455,7 @@ ActionEnterEventZone.o: ActionEnterEventZone.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo3.h \
  ../../../Core/VampireSkillInfo.h ../../../Core/SubVampireSkillInfo.h \
@@ -11575,7 +11575,7 @@ ActionEnterGDRLair.o: ActionEnterGDRLair.cpp ActionEnterGDRLair.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo3.h \
  ../../../Core/VampireSkillInfo.h ../../../Core/SubVampireSkillInfo.h \
@@ -11700,7 +11700,7 @@ ActionTradeGQuestEventItem.o: ActionTradeGQuestEventItem.cpp \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/SkillSlot.h ../../../Core/Gpackets/GCModifyInformation.h \
  ../Vampire.h ../../../Core/PCVampireInfo.h \
  ../../../Core/PCVampireInfo2.h ../../../Core/PCVampireInfo3.h \
@@ -12169,7 +12169,7 @@ ActionEnterSiege.o: ActionEnterSiege.cpp ActionEnterSiege.h \
  ../../../Core/WarInfo.h ../../../Core/ValueList.h \
  ../../../Core/RaceWarInfo.h ../war/SiegeWar.h ../SiegeManager.h \
  ../GuildManager.h ../EventTransport.h ../CreatureUtil.h \
- /usr/include/bits/stdio_lim.h ../../../Core/Gpackets/GCUpdateInfo.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../../../Core/Gpackets/GCUpdateInfo.h \
  ../../../Core/GameTime.h ../../../Core/PCSlayerInfo2.h \
  ../../../Core/PCInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/InventoryInfo.h ../../../Core/InventorySlotInfo.h \
@@ -12270,7 +12270,7 @@ ActionRecallSiege.o: ActionRecallSiege.cpp ActionRecallSiege.h \
  ../war/WarSystem.h ../../../Core/Gpackets/GCWarList.h \
  ../../../Core/GuildWarInfo.h ../../../Core/WarInfo.h \
  ../../../Core/ValueList.h ../../../Core/RaceWarInfo.h \
- /usr/include/bits/stdio_lim.h ../../../Core/Gpackets/GCUpdateInfo.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../../../Core/Gpackets/GCUpdateInfo.h \
  ../../../Core/GameTime.h ../../../Core/PCSlayerInfo2.h \
  ../../../Core/PCInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/InventoryInfo.h ../../../Core/InventorySlotInfo.h \

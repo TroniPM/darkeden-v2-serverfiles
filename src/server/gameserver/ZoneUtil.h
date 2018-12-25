@@ -261,7 +261,7 @@ void transportCreature(
 // 특정 존ID를 가진 존을 찾아서 포인터를 리턴한다.
 // ZoneID_t ZID : 찾고자 하는 존 ID
 //////////////////////////////////////////////////////////////////////////////
-Zone* getZoneByZoneID(ZoneID_t ZID) throw(Error);
+Zone* getZoneByZoneID(ZoneID_t ZID);
 
 //////////////////////////////////////////////////////////////////////////////
 // 운영자 명령어로서, 특정 타입의 몬스터를 존에다 추가한다.
@@ -288,20 +288,20 @@ bool isValidZoneCoord(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, int offset=0);
 //////////////////////////////////////////////////////////////////////////////
 // master lair 에  pCreature가 들어갈 수 있는가?
 //////////////////////////////////////////////////////////////////////////////
-bool enterMasterLair(Zone* pZone, Creature* pCreature) throw (Error);
+bool enterMasterLair(Zone* pZone, Creature* pCreature);
 
 // 야전사령부에서 초보자들을 다른 곳으로 보낼때.. 목표 존의 정보
 void checkNewbieTransportToGuild(Slayer* pSlayer);
 void getNewbieTransportZoneInfo(Slayer* pSlayer, ZONE_COORD& zoneInfo);
 
 // Corpse를 Zone에 추가한다.
-bool addCorpseToZone(Corpse* pCorpse, Zone* pZone, ZoneCoord_t cx, ZoneCoord_t cy) throw (Error);
+bool addCorpseToZone(Corpse* pCorpse, Zone* pZone, ZoneCoord_t cx, ZoneCoord_t cy);
 
 // 범위 안에 특정한 몬스터 시체가 있는지 확인한다. 
 // 있으면 true, 없으면 false
 bool checkCorpse( Zone* pZone, MonsterType_t MType, ZoneCoord_t x1, ZoneCoord_t y1, ZoneCoord_t x2, ZoneCoord_t y2 ) throw();
 
-void makeZoneIDList(const string& zoneIDs, list<ZoneID_t>& zoneIDList ) throw(Error);
+void makeZoneIDList(const string& zoneIDs, list<ZoneID_t>& zoneIDList );
 
 uint getZoneTimeband( Zone* pZone );
 

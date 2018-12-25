@@ -16,20 +16,20 @@
 class EffectHasRelic : public Effect 
 {
 public:
-	EffectHasRelic(Creature* pCreature) throw(Error);
-	EffectHasRelic(Item* pItem) throw(Error);
+	EffectHasRelic(Creature* pCreature);
+	EffectHasRelic(Item* pItem);
 
 public:
     virtual EffectClass getEffectClass()  = 0;
     virtual EffectClass getSendEffectClass()  { return (EffectClass)((int)getEffectClass() + m_Part); }
 
-	virtual void affect() throw(Error);
+	virtual void affect();
 	virtual void affect(Creature* pCreature) throw(Error) = 0;
 	virtual void affect(Item* pItem) throw(Error) =0;
 
-	virtual void unaffect(Creature* pCreature) throw(Error);
-	virtual void unaffect(Item* pItem) throw(Error);
-	virtual void unaffect() throw(Error);
+	virtual void unaffect(Creature* pCreature);
+	virtual void unaffect(Item* pItem);
+	virtual void unaffect();
 
 	virtual string toString()  = 0;
 

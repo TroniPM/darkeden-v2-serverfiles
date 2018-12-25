@@ -18,18 +18,18 @@
 class EffectDarkness : public Effect 
 {
 public:
-	EffectDarkness(Zone* pZone, ZoneCoord_t ZoneX, ZoneCoord_t ZoneY) throw(Error);
+	EffectDarkness(Zone* pZone, ZoneCoord_t ZoneX, ZoneCoord_t ZoneY);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_DARKNESS; }
 
 	void affect() throw(Error){}
-	void affect(Creature* pCreature) throw(Error);
-	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject ) throw(Error);
+	void affect(Creature* pCreature);
+	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject );
 
-	void unaffect() throw(Error);
+	void unaffect();
 	void unaffect(Creature* pCreature) throw(Error) {};
-	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject ) throw(Error);
+	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject );
 	void unaffect(Item* pItem) throw(Error) {}
 
 	string toString() ;
@@ -58,8 +58,8 @@ public:
 		m_Deadline.tv_usec = m_StartTime.tv_usec +(m_Duration%10)* 100000;
 	}
 	
-	bool affectObject(Object*, bool bAffectByMove) throw(Error);
-	void unaffectObject(Object*, bool bUnaffectByMove) throw(Error);
+	bool affectObject(Object*, bool bAffectByMove);
+	void unaffectObject(Object*, bool bUnaffectByMove);
 	
 private :
 	Attr_t       m_Level;
@@ -76,7 +76,7 @@ public:
 
 public:
 	virtual void load(Creature* pCreature) throw(Error) {}
-	virtual void load(Zone* pZone) throw(Error);
+	virtual void load(Zone* pZone);
 };
 
 extern EffectDarknessLoader* g_pEffectDarknessLoader;

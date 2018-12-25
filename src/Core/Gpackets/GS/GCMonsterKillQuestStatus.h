@@ -74,7 +74,7 @@ public:
 class GCMonsterKillQuestStatusHandler 
 {
 public:
-	static void execute(GCMonsterKillQuestStatus* pGCMonsterKillQuestStatus, Player* pPlayer) throw(Error);
+	static void execute(GCMonsterKillQuestStatus* pGCMonsterKillQuestStatus, Player* pPlayer);
 
 };
 

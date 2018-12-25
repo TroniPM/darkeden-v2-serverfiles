@@ -162,7 +162,7 @@ public:
 class GCCreateItemHandler 
 {
 public:
-	static void execute(GCCreateItem* pPacket, Player* pPlayer) throw(Error);
+	static void execute(GCCreateItem* pPacket, Player* pPlayer);
 
 };
 

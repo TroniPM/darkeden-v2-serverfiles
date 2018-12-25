@@ -15,7 +15,7 @@
 #include "Gpackets/GCAddEffect.h"
 
 // ItemUtil.h에 이거 옮기고 지워도 된다.
-extern void saveItemInCorpse(Item* pItem, Corpse* pCorpse) throw (Error);
+extern void saveItemInCorpse(Item* pItem, Corpse* pCorpse);
 
 //////////////////////////////////////////////////////////////////////////////
 // class Corpse member methods

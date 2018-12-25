@@ -16,16 +16,16 @@
 class EffectDancingSword : public Effect 
 {
 public:
-	EffectDancingSword(Creature* pCreature) throw(Error);
+	EffectDancingSword(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_DANCING_SWORD; }
 
 	void affect() throw(Error) {}
-	void affect(Creature* pCreature) throw(Error);
+	void affect(Creature* pCreature);
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect() throw(Error); 
+	void unaffect(Creature* pCreature);
+	void unaffect(); 
 
 	string toString() ;
 

@@ -37,7 +37,7 @@ void CGNPCTalk::execute (Player* pPlayer)
 }
 
 string CGNPCTalk::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

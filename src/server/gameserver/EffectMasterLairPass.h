@@ -16,16 +16,16 @@
 class EffectMasterLairPass : public Effect 
 {
 public:
-	EffectMasterLairPass(Creature* pCreature, ZoneID_t zoneID) throw(Error);
+	EffectMasterLairPass(Creature* pCreature, ZoneID_t zoneID);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_MASTER_LAIR_PASS; }
 
-	void affect() throw(Error);
-	void affect(Creature* pCreature) throw(Error);
+	void affect();
+	void affect(Creature* pCreature);
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect() throw(Error); 
+	void unaffect(Creature* pCreature);
+	void unaffect(); 
 
 	string toString() ;
 

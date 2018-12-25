@@ -31,22 +31,22 @@ class HeartbeatManager {
 public :
 
 	// constructor
-	HeartbeatManager () throw ( Error );
+	HeartbeatManager ();
 
 	// destructor
-	~HeartbeatManager () throw ( Error );
+	~HeartbeatManager ();
 
 	// 클라이언트 매니저를 초기화한다.
-	void init () throw ( Error );
+	void init ();
 
 	// 클라이언트 매니저를 시작한다.
-	void start () throw ( Error );
+	void start ();
 
 	// 클라이언트 매니저를 중단한다.
-	void stop () throw ( Error );
+	void stop ();
 
 	// 클라이언트 매니저의 메인 메쏘드
-	void run () throw ( Error );
+	void run ();
 
 };
 

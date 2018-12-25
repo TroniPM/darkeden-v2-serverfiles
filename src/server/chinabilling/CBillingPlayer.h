@@ -37,10 +37,10 @@ class CBillingPlayer : public Player
 {
 public:
 	// constructor & destructor
-	CBillingPlayer() throw ( Error );
-	CBillingPlayer( Socket* pSocket ) throw ( Error );
+	CBillingPlayer();
+	CBillingPlayer( Socket* pSocket );
 
-	virtual ~CBillingPlayer() throw ( Error );
+	virtual ~CBillingPlayer();
 
 public:
 	
@@ -60,10 +60,10 @@ public:
 	// 반면, 정장하게 로그아웃을 한 경우에는 disconnect(UNDISCONNECTED) 를 사용해야한다.
 	virtual void disconnect( bool bDisconnected = DISCONNECTED ) throw ( InvalidProtocolException, Error );
 
-	void setSocket( Socket* pSocket ) throw ();
+	void setSocket( Socket* pSocket );
 
 	// get debug string
-	virtual string toString() const throw ( Error );
+	virtual string toString() ;
 
 public:
 
@@ -92,7 +92,7 @@ public:
 
 #ifdef __GAME_SERVER__
 	// DB에 packet 로그 남기기
-	void logPacket( CBillingPacketHeader* header, CBillingPacketResponseLoginBody* login, CBillingPacketResponseMinusPointBody* point, CBillingPacketResponseLogoutBody* logout, CBillingPacketErrorBody* error ) throw ( Error );
+	void logPacket( CBillingPacketHeader* header, CBillingPacketResponseLoginBody* login, CBillingPacketResponseMinusPointBody* point, CBillingPacketResponseLogoutBody* logout, CBillingPacketErrorBody* error );
 #endif
 
 public:

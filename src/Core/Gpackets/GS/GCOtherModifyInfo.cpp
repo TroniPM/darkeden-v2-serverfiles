@@ -18,7 +18,7 @@ void GCOtherModifyInfo::read ( SocketInputStream & iStream )
 }
 		    
 void GCOtherModifyInfo::write ( SocketOutputStream & oStream ) 
-     const throw ( ProtocolException , Error )
+     
 {
 	__BEGIN_TRY
 		

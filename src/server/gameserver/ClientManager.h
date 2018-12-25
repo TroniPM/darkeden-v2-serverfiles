@@ -20,17 +20,17 @@
 class ClientManager 
 {
 public:
-	ClientManager() throw(Error);
-	~ClientManager() throw(Error);
+	ClientManager();
+	~ClientManager();
 
 public:
-	void init() throw(Error);
+	void init();
 
 	void start() throw(Error) { run(); }
 
-	void stop() throw(Error);
+	void stop();
 
-	void run() throw(Error);
+	void run();
 
 	string toString() ;
 
@@ -38,9 +38,9 @@ public:
 	const Timeval&	getBalanceZoneGroupTime() const		{ return m_BalanceZoneGroupTime; }
 
 	// by sigi. 2002.9.26
-	void addEvent(Event* pEvent) throw (Error);
-	void addEvent_LOCKED(Event* pEvent) throw (Error);
-	bool deleteEvent(Event::EventClass EClass) throw (Error);
+	void addEvent(Event* pEvent);
+	void addEvent_LOCKED(Event* pEvent);
+	bool deleteEvent(Event::EventClass EClass);
 
 private :
 	Timeval	m_BalanceZoneGroupTime;	// test -_-;

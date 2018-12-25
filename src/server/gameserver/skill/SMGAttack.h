@@ -24,7 +24,7 @@ public:
     string getSkillHandlerName()  { return "SMGAttack"; }
 	SkillType_t getSkillType()  { return SKILL_SMG_ATTACK; }
 
-	void execute(Monster* pMonster, Creature* pEnemy) throw(Error);
+	void execute(Monster* pMonster, Creature* pEnemy);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };

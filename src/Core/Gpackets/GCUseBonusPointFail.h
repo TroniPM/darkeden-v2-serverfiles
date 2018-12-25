@@ -98,7 +98,7 @@ class  GCUseBonusPointFailHandler {
 public :
 
 	// execute packet's handler
-	static void execute(GCUseBonusPointFail* pPacket, Player* pPlayer) throw(Error);
+	static void execute(GCUseBonusPointFail* pPacket, Player* pPlayer);
 
 };
 

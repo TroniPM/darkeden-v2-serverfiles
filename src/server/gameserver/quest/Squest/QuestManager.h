@@ -19,21 +19,21 @@ public :
 	typedef list<Quest*>	QUEST_LIST;
 
 public :
-	QuestManager() throw (Error);
-	~QuestManager() throw (Error);
+	QuestManager();
+	~QuestManager();
 
-//	void		load(const string& name) throw (Error);
-	void		release() throw (Error);
+//	void		load(const string& name);
+	void		release();
 
 	int			isEmpty() const		{ return m_Quests.empty(); }
 	
-	bool		addQuest(Quest* pQuest) throw (Error);
+	bool		addQuest(Quest* pQuest);
 
-	Quest*		checkEvent(QuestEvent* pQuestEvent) throw (Error);
+	Quest*		checkEvent(QuestEvent* pQuestEvent);
 
-	Quest*		removeCompleteQuest() throw (Error);
+	Quest*		removeCompleteQuest();
 
-	void		heartbeat() throw (Error);
+	void		heartbeat();
 
 
 private :

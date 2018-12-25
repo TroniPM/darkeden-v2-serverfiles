@@ -18,13 +18,13 @@ public :
 	QuestBoard();
 	virtual ~QuestBoard();
 
-	void		init(int num) throw (Error);
-	void		release() throw (Error);
+	void		init(int num);
+	void		release();
 
-	void		regenerate(int num) throw (Error);
+	void		regenerate(int num);
 
-	bool		add(Quest* pQuest) throw (Error);	
-	Quest*		remove(QuestID_t qid) throw (Error);
+	bool		add(Quest* pQuest);	
+	Quest*		remove(QuestID_t qid);
 	
 	void		setScript(Script* pScript) ;
 	//void		makeNPCAskPacket(GCNPCAskDynamic& npcAskPacket) ;

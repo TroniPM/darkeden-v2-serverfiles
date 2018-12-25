@@ -33,13 +33,13 @@ public:
 	//Creature* getCreature(ObjectID_t objectID) ;
 
 	// 매니저에 소속된 크리처들(NPC,Monster)을 처리한다.
-	virtual void processCreatures() throw(Error);
+	virtual void processCreatures();
 
 	// 죽은 크리처를 처리한다.
-	virtual void killCreature(Creature* pDeadCreature) throw(Error);
+	virtual void killCreature(Creature* pDeadCreature);
 
 	// PC 매니저일 경우, 브로드캐스트한다.
-	//void broadcastPacket(Packet* pPacket, Creature* owner) throw(Error);
+	//void broadcastPacket(Packet* pPacket, Creature* owner);
 
 	// 모든 사용자들 다른 곳으로 이동시킨다.
 	void transportAllCreatures(ZoneID_t ZoneID, ZoneCoord_t ZoneX = 0xffff, ZoneCoord_t ZoneY = 0xffff, Race_t race=defaultRaceValue, Turn_t delay=10) ;

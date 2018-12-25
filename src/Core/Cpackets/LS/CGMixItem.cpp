@@ -52,7 +52,7 @@ void CGMixItem::execute (Player* pPlayer)
 }
 
 string CGMixItem::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

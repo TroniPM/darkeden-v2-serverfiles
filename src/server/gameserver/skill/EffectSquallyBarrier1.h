@@ -17,15 +17,15 @@
 class EffectSquallyBarrier1 : public Effect 
 {
 public:
-	EffectSquallyBarrier1(Creature* pCreature) throw(Error);
+	EffectSquallyBarrier1(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_SQUALLY_BARRIER1; }
 
 	void affect() throw(Error){}
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect() throw(Error);
+	void unaffect(Creature* pCreature);
+	void unaffect();
 
 	string toString() ;
 

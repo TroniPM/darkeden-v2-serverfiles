@@ -25,9 +25,9 @@ class GCStatusCurrentHP : public Packet {
 
 public :
 
-	GCStatusCurrentHP() throw(Error);
+	GCStatusCurrentHP();
 
-	virtual ~GCStatusCurrentHP() throw(Error);
+	virtual ~GCStatusCurrentHP();
 	
     // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
     void read(SocketInputStream & iStream) ;
@@ -119,7 +119,7 @@ class GCStatusCurrentHPHandler {
 public :
 
 	// execute packet's handler
-	static void execute(GCStatusCurrentHP* pPacket, Player* pPlayer) throw(Error);
+	static void execute(GCStatusCurrentHP* pPacket, Player* pPlayer);
 
 };
 

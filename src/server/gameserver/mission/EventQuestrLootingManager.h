@@ -47,7 +47,7 @@ public:
 	bool			isTargetMonster( PlayerCreature* pPC, Monster* pMonster ) const;
 	bool			killed( PlayerCreature* pPC, Monster* pMonster ) ;
 
-	void 			load() throw(Error);
+	void 			load();
 private:
 	map<ZoneID_t,vector<EventQuestLootingInfo*> >	m_ZoneLootingInfo;
 	map<MonsterType_t,vector<EventQuestLootingInfo*> >	m_MonsterLootingInfo;

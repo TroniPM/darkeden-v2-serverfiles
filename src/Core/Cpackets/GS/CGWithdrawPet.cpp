@@ -39,7 +39,7 @@ void CGWithdrawPet::execute (Player* pPlayer)
 }
 
 string CGWithdrawPet::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

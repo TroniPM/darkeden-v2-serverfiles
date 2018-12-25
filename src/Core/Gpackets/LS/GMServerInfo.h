@@ -60,7 +60,7 @@ public :
 	// get packet name
 	string getPacketName()  { return "GMServerInfo"; }
 	
-	PacketSize_t getPacketSize () const throw () { return szWorldID + szBYTE + m_ZoneCount*(szBYTE+szDWORD); }
+	PacketSize_t getPacketSize ()  { return szWorldID + szBYTE + m_ZoneCount*(szBYTE+szDWORD); }
 
 	// get packet's debug string
 	string toString() ;

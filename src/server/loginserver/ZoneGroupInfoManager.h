@@ -30,16 +30,16 @@ class ZoneGroupInfoManager {
 public :
 	
 	// constructor
-	ZoneGroupInfoManager () throw ();
+	ZoneGroupInfoManager ();
 	
 	// destructor
-	~ZoneGroupInfoManager () throw ();
+	~ZoneGroupInfoManager ();
 
 	// initialize manager
-	void init () throw ( Error );
+	void init ();
 
 	// load from database
-	void load () throw ( Error );
+	void load ();
 	
 	// add info
 	void addZoneGroupInfo ( ZoneGroupInfo * pZoneGroupInfo ) throw ( DuplicatedException );
@@ -48,13 +48,13 @@ public :
 	void deleteZoneGroupInfo ( ZoneGroupID_t zoneGroupID ) throw ( NoSuchElementException );
 	
 	// get info
-	ZoneGroupInfo * getZoneGroupInfo ( ZoneGroupID_t zoneGroupID ) const throw ( NoSuchElementException );
+	ZoneGroupInfo * getZoneGroupInfo ( ZoneGroupID_t zoneGroupID ) ;
 
 	// get count of info
-	uint getSize () const throw () { return m_ZoneGroupInfos.size(); }
+	uint getSize ()  { return m_ZoneGroupInfos.size(); }
 
 	// get debug string
-	string toString () const throw ();
+	string toString () ;
 
 private :
 	

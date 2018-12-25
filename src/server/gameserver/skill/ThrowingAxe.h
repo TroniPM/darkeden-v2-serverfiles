@@ -23,7 +23,7 @@ public:
     string getSkillHandlerName()  { return "ThrowingAxe"; }
 	SkillType_t getSkillType()  { return SKILL_THROWING_AXE; }
 
-	void execute(Monster*, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
+	void execute(Monster*, ZoneCoord_t X, ZoneCoord_t Y);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };

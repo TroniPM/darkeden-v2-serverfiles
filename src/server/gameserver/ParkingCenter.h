@@ -80,7 +80,7 @@ public:
 	MotorcycleBox* getMotorcycleBox(ItemID_t keyTargetID) ;
 
 	// 주로 RemoveMotorcycles를 처리해준다. by sigi. 2003.2.26
-	void	heartbeat() throw (Error);
+	void	heartbeat();
 
 private:
 	// 여기서 ItemID_t는 오토바이의 ItemID를 말한다.

@@ -31,7 +31,7 @@ void CGStashRequestBuy::execute (Player* pPlayer)
 }
 
 string CGStashRequestBuy::toString () 
-	const throw ()
+	
 {
 	StringStream msg;
 	msg << "CGStashRequestBuy(" 

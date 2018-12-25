@@ -92,7 +92,7 @@ void GCGQuestInventory::execute ( Player * pPlayer )
 //
 //////////////////////////////////////////////////////////////////////
 string GCGQuestInventory::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

@@ -27,7 +27,7 @@ class Monster : public Creature
 // 생성자/소멸자
 public:
 	Monster(MonsterType_t monsterType) throw();
-	virtual ~Monster() throw (Error);
+	virtual ~Monster();
 
 // 하위 클래스 상속 함수
 public:
@@ -36,7 +36,7 @@ public:
 
 	virtual Race_t getRace() const;
 
-	virtual void registerObject() throw(Error);
+	virtual void registerObject();
 
 	virtual bool load() throw (InvalidProtocolException, Error) { return true;}
 	virtual void save()  {}
@@ -47,21 +47,21 @@ public:
 public:
 
 	// AI 코드가 수행되는 메인 메쏘드이다.
-	void act(const Timeval& currentTime) throw(Error);
-	void actDeadAction(void) throw (Error);
+	void act(const Timeval& currentTime);
+	void actDeadAction(void);
 
 	// enemy specific methods
-	void addEnemy(Creature* pCreature) throw(Error);
-	void addPotentialEnemy(Creature* pCreature) throw(Error);
+	void addEnemy(Creature* pCreature);
+	void addPotentialEnemy(Creature* pCreature);
 	void deleteEnemy(ObjectID_t objectID) throw(NoSuchElementException, Error);
-	void deleteAllEnemy() throw(Error);
+	void deleteAllEnemy();
 	Creature* getPrimaryEnemy() ;
 	ObjectID_t getEnemy(EnemyPriority enemyPriority = ENEMY_PRIMARY) ;
 
 	// Enemy 리스트에서 로그아웃한 PC 를 삭제한다.
-	void verifyEnemies() throw(Error);
+	void verifyEnemies();
 
-	bool isRealEnemy(Creature* pEnemy) throw(Error);
+	bool isRealEnemy(Creature* pEnemy);
 
 	// 이 몬스터에게 적이 하나이상 지정되어 있는가?
 	bool hasEnemy()  { return m_Enemies.size() > 0; }
@@ -212,8 +212,8 @@ public:
 	void setTreasure(bool bTreasure=true) { m_bTreasure = m_bTreasure && bTreasure; }	// 원래 Treasure가 있는 애들만 Treasure가 있어야 된다.
 
 	// 몬스터가 소환하는 몬스터의 종류. by sigi. 2002.9.2
-	bool getMonsterSummonInfo(SUMMON_INFO2& summonInfo) throw (Error);
-	bool hasNextMonsterSummonInfo() throw (Error);
+	bool getMonsterSummonInfo(SUMMON_INFO2& summonInfo);
+	bool hasNextMonsterSummonInfo();
 	int  getMonsterSummonStep() const { return m_MonsterSummonStep; }
 	void setMonsterSummonStep(int ss) { m_MonsterSummonStep = ss; }
 

@@ -17,16 +17,16 @@
 class EffectPassingHeal2 : public Effect 
 {
 public:
-	EffectPassingHeal2(Creature* pCreature) throw(Error);
+	EffectPassingHeal2(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_PASSING_HEAL2; }
 
-	void affect() throw(Error);
-	void affect(Creature* pCreature) throw(Error);
+	void affect();
+	void affect(Creature* pCreature);
 
-	void unaffect() throw(Error);
-	void unaffect(Creature* pCreature) throw(Error);
+	void unaffect();
+	void unaffect(Creature* pCreature);
 
 	int getPassingCount() const { return m_PassingCount; }
 	void setPassingCount(int PassingCount) { m_PassingCount = PassingCount; }

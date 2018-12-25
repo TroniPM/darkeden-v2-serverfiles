@@ -54,7 +54,7 @@ class CGSelectRegenZoneFactory : public PacketFactory
 class CGSelectRegenZoneHandler 
 {
 public:
-	static void execute(CGSelectRegenZone* pCGSelectRegenZone, Player* pPlayer) throw(Error);
+	static void execute(CGSelectRegenZone* pCGSelectRegenZone, Player* pPlayer);
 };
 
 #endif

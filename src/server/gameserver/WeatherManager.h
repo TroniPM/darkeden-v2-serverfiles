@@ -45,13 +45,13 @@ public:
 	WeatherManager(Zone* pZone) throw(Error) : m_pZone(pZone) { Assert(m_pZone != NULL); }
 
 	// destructor
-	virtual ~WeatherManager() throw(Error);
+	virtual ~WeatherManager();
 
 	// initialize 
-	void init() throw(Error);
+	void init();
 
 	// 지정 시간이 되면 날씨를 알아서 바꿔준다. 존의 heartbeat 에서 호출되어야 한다.
-	void heartbeat() throw(Error);
+	void heartbeat();
 
 	// 오늘의 날씨를 리턴한다.
 	Weather getTodayWeather()  { return m_TodayWeather; }

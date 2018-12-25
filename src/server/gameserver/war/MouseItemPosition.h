@@ -15,8 +15,8 @@ public:
 	~MouseItemPosition(){ }
 
 public:
-	virtual Item*	popItem( bool bLock = true ) throw(Error);
-	virtual Zone*	getZone() throw(Error);
+	virtual Item*	popItem( bool bLock = true );
+	virtual Zone*	getZone();
 
 	string			getOwnerName() const { return m_OwnerName; }
 	void			setOwnerName( const string& ownerName ) { m_bSetZone = false; m_OwnerName = ownerName; }
@@ -25,11 +25,11 @@ public:
 	virtual string	toString() ;
 
 protected:
-	Item*			popItem_LOCKED() throw (Error);
-	Item*			popItem_UNLOCKED() throw (Error);
-	Creature*		findCreature() throw (Error);
-	Zone*			getZoneByCreature( Creature* pCreature ) throw (Error);
-	Item*			popItem_CORE( PlayerCreature* pPC ) throw (Error);
+	Item*			popItem_LOCKED();
+	Item*			popItem_UNLOCKED();
+	Creature*		findCreature();
+	Zone*			getZoneByCreature( Creature* pCreature );
+	Item*			popItem_CORE( PlayerCreature* pPC );
 
 private:
 	string			m_OwnerName;

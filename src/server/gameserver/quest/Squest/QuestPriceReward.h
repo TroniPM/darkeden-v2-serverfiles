@@ -17,7 +17,7 @@ public :
 
 	QuestPriceType	getQuestPriceType() const { return QUEST_PRICE_REWARD; }
 
-	virtual void	affect(Creature* pCreature) throw (Error);	
+	virtual void	affect(Creature* pCreature);	
 };
 
 #endif

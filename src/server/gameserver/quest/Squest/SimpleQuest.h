@@ -54,44 +54,44 @@
 
 class SimpleQuest : public Quest {
 public :
-	SimpleQuest() throw (Error);
-	virtual ~SimpleQuest() throw (Error);
+	SimpleQuest();
+	virtual ~SimpleQuest();
 
-	void 				setDeadline (Turn_t delay) throw ();
+	void 				setDeadline (Turn_t delay);
 	Duration_t		 	getRemainDuration() ;
 
 	//virtual void		create() throw (Error) = 0;
 	virtual void        save() throw (Error) = 0;
-	virtual void		destroy() throw (Error);
+	virtual void		destroy();
 
-	//virtual bool		checkSuccess(const QuestEvent* pQuestEvent) const throw (Error) = 0;
-	virtual bool		checkFail() throw (Error);
-	//virtual bool		checkComplete() const throw (Error) = 0;
+	//virtual bool		checkSuccess(const QuestEvent* pQuestEvent)  = 0;
+	virtual bool		checkFail();
+	//virtual bool		checkComplete()  = 0;
 
-	virtual void		take(Creature* pCreature, bool bNewQuest=true) throw (Error);
-	virtual void		giveReward() throw (Error);
-	virtual void		givePenalty() throw (Error);
+	virtual void		take(Creature* pCreature, bool bNewQuest=true);
+	virtual void		giveReward();
+	virtual void		givePenalty();
 
-	virtual void		heartbeat() throw (Error);
+	virtual void		heartbeat();
 
 	void				setOwner(Creature* pOwner) throw (Error)	{ m_pOwner = pOwner; }
 	void				setAvailableSecond(int sec) throw (Error)	{ m_AvailableSecond = sec; }
-	void				addReward(QuestPrice* pQuestPrice) throw (Error);
-	void				addPenalty(QuestPrice* pQuestPrice) throw (Error);
+	void				addReward(QuestPrice* pQuestPrice);
+	void				addPenalty(QuestPrice* pQuestPrice);
 
 public :
 	virtual void		setObjective(const string& text) throw (Error) = 0;
-	virtual string		getObjectiveToString() const throw (Error) = 0;
-	virtual void		addReward(const string& text) throw (Error);
-	virtual void		addPenalty(const string& text) throw (Error);
+	virtual string		getObjectiveToString()  = 0;
+	virtual void		addReward(const string& text);
+	virtual void		addPenalty(const string& text);
 	virtual string		getRewardToString() ;
 	virtual string		getPenaltyToString() ;
 
-	virtual string		toString() const throw (Error) = 0;
+	virtual string		toString()  = 0;
 
 protected :
-	virtual void		processActive() throw (Error);
-	virtual void		processFail() throw (Error);
+	virtual void		processActive();
+	virtual void		processFail();
 
 protected :
 	Creature*			m_pOwner;

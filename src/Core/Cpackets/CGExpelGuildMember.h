@@ -112,7 +112,7 @@ class CGExpelGuildMemberHandler {
 public:
 
 	// execute packet's handler
-	static void execute(CGExpelGuildMember* pCGExpelGuildMember, Player* pPlayer) throw(Error);
+	static void execute(CGExpelGuildMember* pCGExpelGuildMember, Player* pPlayer);
 
 };
 

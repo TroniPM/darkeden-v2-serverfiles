@@ -21,7 +21,7 @@ public :
 		return &QL;	
 	}
 
-	virtual void	load(Creature* pCreature) throw (Error);
+	virtual void	load(Creature* pCreature);
 };
 
 #endif

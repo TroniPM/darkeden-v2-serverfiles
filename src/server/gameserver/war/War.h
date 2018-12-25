@@ -33,7 +33,7 @@ public:
 
 	virtual WarType_t	getWarType() const = 0;
 	virtual string 		getWarType2DBString() const = 0;
-	virtual string		getWarName() const throw (Error) = 0;
+	virtual string		getWarName()  = 0;
 
 	WarID_t			getWarID()	const				{ return m_WarID; }
 	void			setWarID( WarID_t warID )		{ m_WarID = warID; }
@@ -48,14 +48,14 @@ public:
 public:
 	virtual bool	isModifyCastleOwner( PlayerCreature* pPC ) throw (Error) { return false; }
 
-	virtual void	sendWarStartMessage() const throw (ProtocolException, Error);
-	virtual void	sendWarEndMessage() const throw (ProtocolException, Error);
+	virtual void	sendWarStartMessage() ;
+	virtual void	sendWarEndMessage() ;
 
 public:
-	static void		initWarIDRegistry() throw (Error);
+	static void		initWarIDRegistry();
 
 public:
-	virtual void 	execute() throw (Error);
+	virtual void 	execute();
 	virtual bool    endWar(PlayerCreature* pPC) throw(Error) { return false; }
 
 protected :
@@ -64,10 +64,10 @@ protected :
 
 
 public :
-	virtual void	makeWarScheduleInfo( WarScheduleInfo* pWSI ) const throw (Error) = 0;
-	virtual void 	makeWarInfo(WarInfo* pWarInfo) const throw (Error) = 0;
+	virtual void	makeWarScheduleInfo( WarScheduleInfo* pWSI )  = 0;
+	virtual void 	makeWarInfo(WarInfo* pWarInfo)  = 0;
 
-	virtual string	toString() const throw (Error) = 0;
+	virtual string	toString()  = 0;
 
 private:
 	WarID_t				m_WarID;

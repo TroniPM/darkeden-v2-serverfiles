@@ -8,7 +8,7 @@ class ItemHeroOptionManager
 {
 public:
 	ItemHeroOptionManager() { m_HeroOptionRatios; }
-	void load() throw(Error);
+	void load();
 	int getRandomHeroOptionAttr(int Group) const;
 	int getRandomHeroOption() const;
 	int getRandomBeadHeroOption(int Group) const;

@@ -17,18 +17,18 @@
 class EffectStriking : public Effect 
 {
 public:
-	EffectStriking(Item* pItem) throw(Error);
+	EffectStriking(Item* pItem);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_STRIKING; }
 
 	void affect() throw(Error){}
-	void affect(Item* pItem) throw(Error);
-	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject) throw(Error);
+	void affect(Item* pItem);
+	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject);
 
-	void unaffect(Item* pItem) throw(Error);
-	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject) throw(Error);
-    void unaffect() throw(Error);
+	void unaffect(Item* pItem);
+	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject);
+    void unaffect();
 	void unaffect(Creature* pCreature) throw(Error){};		
 
 	string toString() ;

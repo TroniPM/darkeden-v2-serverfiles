@@ -21,8 +21,8 @@ class ActionWarRegistration : public Action
 {
 public:
 	virtual ActionType_t getActionType()  { return ACTION_WAR_REGISTRATION; }
-	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
-	virtual void execute(Creature* pCreature1, Creature* pCreature2) throw(Error);
+	virtual void read(PropertyBuffer & propertyBuffer);
+	virtual void execute(Creature* pCreature1, Creature* pCreature2);
 	virtual string toString() ;
 
 public:

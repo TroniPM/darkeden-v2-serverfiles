@@ -53,7 +53,7 @@ void CGUsePotionFromQuickSlot::execute (Player* pPlayer)
 }
 
 string CGUsePotionFromQuickSlot::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

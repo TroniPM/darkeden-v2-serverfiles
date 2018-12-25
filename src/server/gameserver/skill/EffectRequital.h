@@ -18,15 +18,15 @@
 class EffectRequital : public Effect 
 {
 public:
-	EffectRequital(Creature* pCreature) throw(Error);
+	EffectRequital(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_REQUITAL; }
 
 	void affect() throw(Error){}
 
-	void unaffect() throw(Error);
-	void unaffect(Creature* pCreature) throw(Error);
+	void unaffect();
+	void unaffect(Creature* pCreature);
 
 	string toString() ;
 

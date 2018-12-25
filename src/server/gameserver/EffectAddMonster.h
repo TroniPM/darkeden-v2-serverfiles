@@ -19,8 +19,8 @@ class Item;
 class EffectAddMonster : public Effect 
 {
 public:
-	EffectAddMonster(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Creature* pCreature, Turn_t delay) throw(Error);
-	virtual ~EffectAddMonster() throw(Error);
+	EffectAddMonster(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Creature* pCreature, Turn_t delay);
+	virtual ~EffectAddMonster();
 
 public:
 	virtual EffectClass getEffectClass()  { return EFFECT_CLASS_ADD_MONSTER; }
@@ -31,12 +31,12 @@ public:
 	virtual void affect() throw(Error) { throw UnsupportedError(__PRETTY_FUNCTION__); }
 	virtual void affect(Creature* pCreature) throw(Error) { throw UnsupportedError(__PRETTY_FUNCTION__); }
 	virtual void affect(Object* pObject) throw(Error) { throw UnsupportedError(__PRETTY_FUNCTION__);}
-	virtual void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Creature* pCreature) throw(Error);
+	virtual void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Creature* pCreature);
 	
-	virtual void unaffect() throw(Error);
-	virtual void unaffect(Object* pObject) throw(Error);
+	virtual void unaffect();
+	virtual void unaffect(Object* pObject);
 	virtual void unaffect(Creature* pCreature = NULL) throw(Error) { throw UnsupportedError(__PRETTY_FUNCTION__);}	
-	virtual void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Creature* pCreature) throw(Error);
+	virtual void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Creature* pCreature);
 
 	virtual void create(const string & ownerID) throw(Error) {}
 	virtual void save(const string & ownerID) throw(Error) {}

@@ -127,7 +127,7 @@ class GCAddVampireFromBurrowingHandler {
 public :
 
 	// execute packet's handler
-	static void execute(GCAddVampireFromBurrowing* pPacket, Player* pPlayer) throw(Error);
+	static void execute(GCAddVampireFromBurrowing* pPacket, Player* pPlayer);
 
 };
 

@@ -20,14 +20,14 @@
 class TriggerManager 
 {
 public:
-	TriggerManager() throw(Error);
-	~TriggerManager() throw(Error);
+	TriggerManager();
+	~TriggerManager();
 
 public:
-	void load(const string & name) throw(Error);
-	void load(ZoneID_t zoneid, int left, int top, int right, int bottom) throw(Error);
+	void load(const string & name);
+	void load(ZoneID_t zoneid, int left, int top, int right, int bottom);
 
-	void refresh() throw(Error);
+	void refresh();
 
 	void addTrigger(Trigger* pTrigger) throw(DuplicatedException, Error);
 

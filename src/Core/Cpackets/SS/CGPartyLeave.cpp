@@ -47,7 +47,7 @@ void CGPartyLeave::execute (Player* pPlayer)
 }
 
 string CGPartyLeave::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

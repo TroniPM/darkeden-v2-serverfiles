@@ -24,11 +24,11 @@ public:
 	~DatabaseManager() throw();
 	
 public:
-	void init() throw(Error);
+	void init();
 	void addConnection(int TID, Connection * pConnection) throw(DuplicatedException);
 
 	Connection* getConnection(const string& ip) throw(NoSuchElementException);
-	void	executeDummyQuery(Connection* pConnection) throw (Error);
+	void	executeDummyQuery(Connection* pConnection);
 
 private:
 	// 각 쓰레드별로 존재하는 DB 연결

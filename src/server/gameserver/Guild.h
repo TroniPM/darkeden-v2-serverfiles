@@ -380,7 +380,7 @@ public: // static
 	static void setMaxOustersZoneID( ZoneID_t zoneID ) throw() { m_MaxOustersZoneID = zoneID; }
 
 public:
-	void expireTimeOutWaitMember( VSDateTime currentDateTime, list<string>& mList ) throw(Error);
+	void expireTimeOutWaitMember( VSDateTime currentDateTime, list<string>& mList );
 
 public: // debug
 	string toString() ;

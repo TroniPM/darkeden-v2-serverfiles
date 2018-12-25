@@ -22,7 +22,7 @@ public:
 			
 public:
 	virtual EventClass getEventClass()  { return EVENT_CLASS_MORPH; }
-	virtual void activate() throw(Error);
+	virtual void activate();
 	virtual string toString() ;
 
 public:

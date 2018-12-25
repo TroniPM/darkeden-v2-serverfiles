@@ -110,7 +110,7 @@ class GCMorphSlayer2Handler {
 public :
 
 	// execute packet's handler
-	static void execute(GCMorphSlayer2* pPacket, Player* pPlayer) throw(Error);
+	static void execute(GCMorphSlayer2* pPacket, Player* pPlayer);
 
 };
 

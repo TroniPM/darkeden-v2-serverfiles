@@ -59,7 +59,7 @@ void CGModifyNickname::execute (Player* pPlayer)
 }
 
 string CGModifyNickname::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

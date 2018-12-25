@@ -42,7 +42,7 @@ public :
 public:
 
 	DWORD	getTimeLimit(ObjectID_t objectID) ;
-	void	addTimeLimit(ObjectID_t objectID, DWORD time) throw(Error);
+	void	addTimeLimit(ObjectID_t objectID, DWORD time);
 
 
 private :

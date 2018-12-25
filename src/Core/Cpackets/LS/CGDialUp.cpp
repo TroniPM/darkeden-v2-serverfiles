@@ -51,7 +51,7 @@ void CGDialUp::execute (Player* pPlayer)
 }
 
 string CGDialUp::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

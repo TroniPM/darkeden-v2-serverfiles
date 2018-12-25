@@ -116,7 +116,7 @@ class  GCCastingSkillHandler {
 public :
 
 	// execute packet's handler
-	static void execute( GCCastingSkill* pGCCastingSkill, Player* pPlayer) throw(Error);
+	static void execute( GCCastingSkill* pGCCastingSkill, Player* pPlayer);
 
 };
 

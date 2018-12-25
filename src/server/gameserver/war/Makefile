@@ -191,7 +191,7 @@ War.o: War.cpp /usr/include/stdio.h /usr/include/features.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
  /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
- /usr/include/bits/stdio_lim.h War.h ../../../Core/Types.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h War.h ../../../Core/Types.h \
  ../../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
   /usr/include/c++/7/streambuf \
  /usr/include/c++/7/fstream  \
@@ -278,7 +278,7 @@ RaceWar.o: RaceWar.cpp /usr/include/stdio.h /usr/include/features.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
  /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
- /usr/include/bits/stdio_lim.h RaceWar.h War.h ../../../Core/Types.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h RaceWar.h War.h ../../../Core/Types.h \
  ../../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
   /usr/include/c++/7/streambuf \
  /usr/include/c++/7/fstream  \
@@ -369,7 +369,7 @@ GuildWar.o: GuildWar.cpp /usr/include/stdio.h /usr/include/features.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
  /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
- /usr/include/bits/stdio_lim.h ../Guild.h ../../../Core/Types.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../Guild.h ../../../Core/Types.h \
  ../../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
   /usr/include/c++/7/streambuf \
  /usr/include/c++/7/fstream  \
@@ -459,7 +459,7 @@ SiegeWar.o: SiegeWar.cpp /usr/include/stdio.h /usr/include/features.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
  /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
- /usr/include/bits/stdio_lim.h ../Guild.h ../../../Core/Types.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../Guild.h ../../../Core/Types.h \
  ../../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
   /usr/include/c++/7/streambuf \
  /usr/include/c++/7/fstream  \
@@ -618,7 +618,7 @@ WarSchedule.o: WarSchedule.cpp WarSchedule.h ../../../Core/Types.h \
  ../PCManager.h ../CreatureManager.h ../../../Core/Encrypter.h \
  ../../../Core/EncryptUtility.h /usr/include/STL/queue \
  /home/darkeden/src/libs/stl_deque.h /home/darkeden/src/libs/stl_queue.h \
- /usr/include/bits/stdio_lim.h ../CastleInfoManager.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../CastleInfoManager.h \
  ../PlayerCreature.h ../InventorySlot.h ../Garbage.h ../RankBonus.h \
  ../ExpFwd.h ../../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../../Core/PacketFactory.h \
@@ -701,7 +701,7 @@ WarScheduler.o: WarScheduler.cpp WarSchedule.h ../../../Core/Types.h \
  ../../../Core/EncryptUtility.h ../../../Core/Properties.h \
  /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h GuildWar.h \
- SiegeWar.h ../VariableManager.h /usr/include/bits/stdio_lim.h \
+ SiegeWar.h ../VariableManager.h /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../../../Core/Gpackets/GCWarScheduleList.h \
  ../../../Core/PacketFactory.h WarSystem.h \
  ../../../Core/Gpackets/GCWarList.h ../../../Core/GuildWarInfo.h \
@@ -799,7 +799,7 @@ WarSystem.o: WarSystem.cpp WarSystem.h ../../../Core/Types.h \
  ../../../Core/Gpackets/GCNoticeEvent.h ../VariableManager.h \
  GuildWar.h SiegeWar.h ../EventRefreshHolyLandPlayer.h \
  ../ShrineInfoManager.h ../ClientManager.h ../HolyLandManager.h \
- ../StringPool.h /usr/include/bits/stdio_lim.h
+ ../StringPool.h /usr/include/i386-linux-gnu/bits/stdio_lim.h
 ZoneItemPosition.o: ZoneItemPosition.cpp ../../../Core/Assert.h \
  ../../../Core/Types.h ../../../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
@@ -1199,7 +1199,7 @@ RaceWarLimiter.o: RaceWarLimiter.cpp RaceWarLimiter.h ../PCLimiter.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/bits/stdio_lim.h \
+ /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -1280,4 +1280,4 @@ DragonEyeManager.o: DragonEyeManager.cpp DragonEyeManager.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
  /home/darkeden/src/libs/stl_queue.h ../GlobalItemPositionLoader.h \
  GlobalItemPosition.h ../EffectDragonEye.h ../EffectHasRelic.h \
- /usr/include/bits/stdio_lim.h
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h

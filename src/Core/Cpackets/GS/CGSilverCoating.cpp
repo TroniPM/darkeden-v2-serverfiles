@@ -37,7 +37,7 @@ void CGSilverCoating::execute (Player* pPlayer)
 }
 
 string CGSilverCoating::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

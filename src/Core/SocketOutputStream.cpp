@@ -309,7 +309,7 @@ uint SocketOutputStream::flush ()
 // resize buffer
 //////////////////////////////////////////////////////////////////////
 void SocketOutputStream::resize ( int size )
-	 throw ( IOException , Error )
+	 
 {
 	__BEGIN_TRY
 		

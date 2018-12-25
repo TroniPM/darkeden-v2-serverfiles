@@ -17,13 +17,13 @@
 class EffectMagmaticEruption : public Effect 
 {
 public:
-	EffectMagmaticEruption(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY) throw(Error);
+	EffectMagmaticEruption(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_MAGMATIC_EUPTION; }
 
-	void affect() throw(Error);
-	void unaffect() throw(Error);
+	void affect();
+	void unaffect();
 	string toString() ;
 
 public:

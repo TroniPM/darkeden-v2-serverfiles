@@ -58,7 +58,7 @@ void CGAddMouseToInventory::execute (Player* pPlayer)
 }
 
 string CGAddMouseToInventory::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

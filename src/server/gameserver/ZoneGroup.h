@@ -46,22 +46,22 @@ public:
 public:
 	
 	// initialize zone group
-	void init() throw(Error);
+	void init();
 	
 	// load sub zones from database
-	void load() throw(Error);
+	void load();
 	
 	// save sub zones to database
-	void save() throw(Error);
+	void save();
 
 	//
-	void processPlayers() throw(Error);
-	void heartbeat() throw(Error);	
+	void processPlayers();
+	void heartbeat();	
 	
 public:
 
 	// add zone to zone group
-	void addZone(Zone* pZone) throw(Error);
+	void addZone(Zone* pZone);
 	
 	// delete zone from zone group
 	void deleteZone(ZoneID_t zoneID) throw(NoSuchElementException);
@@ -91,7 +91,7 @@ public:
 	GameTime getGameTime()  { return m_GameTime; }
 	void setGameTime(const GameTime & gameTime) throw() { m_GameTime = gameTime; }
 
-	void makeZoneUserInfo ( GMServerInfo & gmServerInfo ) throw(Error);
+	void makeZoneUserInfo ( GMServerInfo & gmServerInfo );
 
 	const hash_map< ZoneID_t, Zone* >& getZones() const { return m_Zones; }
 

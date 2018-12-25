@@ -29,12 +29,12 @@ public:
 	typedef DequeMJob::const_iterator	DequeMJobConstItor;
 
 public:
-	MPlayerManager() throw(Error);
-	~MPlayerManager() throw(Error);
+	MPlayerManager();
+	~MPlayerManager();
 
 public:
 	void init() throw(Error) {}
-	void stop() throw(Error);
+	void stop();
 	void run() throw();
 
 public:

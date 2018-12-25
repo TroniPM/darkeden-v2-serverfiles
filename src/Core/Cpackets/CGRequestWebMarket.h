@@ -109,7 +109,7 @@ class CGRequestWebMarketHandler {
 public:
 
 	// execute packet's handler
-	static void execute(CGRequestWebMarket* pCGRequestWebMarket, Player* pPlayer) throw(Error);
+	static void execute(CGRequestWebMarket* pCGRequestWebMarket, Player* pPlayer);
 
 };
 

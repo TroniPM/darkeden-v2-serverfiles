@@ -68,16 +68,16 @@ public:
 public:
 	
 	// initialize zone group manager
-	void init() throw(Error);
+	void init();
 	
 	// load sub zone groups from database
-	void load() throw(Error);
+	void load();
 	
 	// save sub zone groups to database
-	void save() throw(Error);
+	void save();
 	
 	// add zone group to zone group manager
-	void addZoneGroup(ZoneGroup* pZoneGroup) throw(Error);
+	void addZoneGroup(ZoneGroup* pZoneGroup);
 	
 	// delete zone group from zone group manager
 	void deleteZoneGroup(ZoneGroupID_t zoneGroupID) throw(NoSuchElementException);
@@ -93,28 +93,28 @@ public:
 	// getZoneGroups
 	const hash_map<ZoneGroupID_t, ZoneGroup*>& getZoneGroups() const { return m_ZoneGroups; }
 
-	void   broadcast(Packet* pPacket) throw (Error); 
-	void   pushBroadcastPacket(Packet* pPacket, BroadcastFilter* pFilter=NULL) throw (Error); 
+	void   broadcast(Packet* pPacket); 
+	void   pushBroadcastPacket(Packet* pPacket, BroadcastFilter* pFilter=NULL); 
 
-	bool   makeBalancedLoadInfo(LOAD_INFOS& loadInfos, bool bForce=false) throw (Error); 
-	bool   makeDefaultLoadInfo(LOAD_INFOS& loadInfos) throw (Error); 
-	void   balanceZoneGroup(bool bForce=false, bool bDefault=false) throw (Error); 
+	bool   makeBalancedLoadInfo(LOAD_INFOS& loadInfos, bool bForce=false); 
+	bool   makeDefaultLoadInfo(LOAD_INFOS& loadInfos); 
+	void   balanceZoneGroup(bool bForce=false, bool bDefault=false); 
 
 
 	// get debug string
 	string toString() ;
 
-	void	outputLoadValue() throw (Error);
+	void	outputLoadValue();
 
 	void    lock() throw (Error)        { m_Mutex.lock(); }
     void    unlock() throw (Error)      { m_Mutex.unlock(); }
 
-	void	lockZoneGroups() throw( Error );
-	void	unlockZoneGroups() throw( Error );
+	void	lockZoneGroups();
+	void	unlockZoneGroups();
 
 	int 	getPlayerNum () ;
 
-	void 	removeFlag (Effect::EffectClass EC) throw(Error);
+	void 	removeFlag (Effect::EffectClass EC);
 
 private:
 	

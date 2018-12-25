@@ -30,35 +30,35 @@ public :
     void read ( Datagram & iDatagram ) throw ( ProtocolException , Error );
 		    
     // Datagram 객체로 패킷의 바이너리 이미지를 보낸다.
-    void write ( Datagram & oDatagram ) const throw ( ProtocolException , Error );
+    void write ( Datagram & oDatagram ) ;
 
 	// execute packet's handler
 	void execute ( Player * pPlayer ) throw ( ProtocolException , Error );
 
 	// get packet id
-	PacketID_t getPacketID () const throw () { return PACKET_RC_SAY; }
+	PacketID_t getPacketID ()  { return PACKET_RC_SAY; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize () const throw () 
+	PacketSize_t getPacketSize ()  
 	{ 
 		return szBYTE + m_Name.size()
 				+ szBYTE + m_Message.size();			
 	}
 
 		// get packet name
-		string getPacketName () const throw () { return "RCSay"; }
+		string getPacketName ()  { return "RCSay"; }
 		
 		// get packet's debug string
-		string toString () const throw ();
+		string toString () ;
 
 public :
 
 	// get/set Name
-	string getName () const throw () { return m_Name; }
+	string getName ()  { return m_Name; }
 	void setName ( string msg ) throw () { m_Name = msg; }
 
 	// get/set Message
-	string getMessage () const throw () { return m_Message; }
+	string getMessage ()  { return m_Message; }
 	void setMessage ( string msg ) throw () { m_Message = msg; }
 	
 	
@@ -84,12 +84,12 @@ public :
 	Packet * createPacket () throw () { return new RCSay(); }
 
 		// get packet name
-		string getPacketName () const throw () { return "RCSay"; }
+		string getPacketName ()  { return "RCSay"; }
 	
 	// get packet id
-	PacketID_t getPacketID () const throw () { return Packet::PACKET_RC_SAY; }
+	PacketID_t getPacketID ()  { return Packet::PACKET_RC_SAY; }
 
-	PacketSize_t getPacketMaxSize () const throw () 
+	PacketSize_t getPacketMaxSize ()  
 	{ 
 		return szBYTE + 128 + szBYTE + 20;			
 	}

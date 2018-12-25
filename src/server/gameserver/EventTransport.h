@@ -23,7 +23,7 @@ public:
 public:
 	virtual EventClass getEventClass()  { return EVENT_CLASS_TRANSPORT; }
 
-	virtual void activate() throw(Error);
+	virtual void activate();
 	void setTargetZone(ZoneID_t ZoneID, ZoneCoord_t ZoneX, ZoneCoord_t ZoneY) 
 	{
 		m_ZoneID = ZoneID;
@@ -31,7 +31,7 @@ public:
 		m_Y = ZoneY;
 	}
 	void setZoneName(const string& zoneName) { m_ZoneName = zoneName; }
-	void sendMessage() throw (Error);
+	void sendMessage();
 	
 	virtual string toString() ;
 

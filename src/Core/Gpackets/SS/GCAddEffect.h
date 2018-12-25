@@ -74,7 +74,7 @@ public:
 class GCAddEffectHandler 
 {
 public:
-	static void execute(GCAddEffect* pGCAddEffect, Player* pPlayer) throw(Error);
+	static void execute(GCAddEffect* pGCAddEffect, Player* pPlayer);
 
 };
 

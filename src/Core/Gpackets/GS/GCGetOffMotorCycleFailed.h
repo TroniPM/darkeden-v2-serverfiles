@@ -108,7 +108,7 @@ class GCGetOffMotorCycleFailedHandler {
 public :
 
 	// execute packet's handler
-	static void execute(GCGetOffMotorCycleFailed* pGCGetOffMotorCycleFailed, Player* pPlayer) throw(Error);
+	static void execute(GCGetOffMotorCycleFailed* pGCGetOffMotorCycleFailed, Player* pPlayer);
 
 };
 

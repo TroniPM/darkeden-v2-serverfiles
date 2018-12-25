@@ -17,16 +17,16 @@
 class EffectShadyDouple : public Effect 
 {
 public:
-	EffectShadyDouple(Creature* pCreature) throw(Error);
+	EffectShadyDouple(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_SHADY_DOUPLE; }
 
-	void affect() throw(Error);
-	void affect(Creature* pCreature) throw(Error);
+	void affect();
+	void affect(Creature* pCreature);
 
-	void unaffect() throw(Error);
-	void unaffect(Creature* pCreature) throw(Error);
+	void unaffect();
+	void unaffect(Creature* pCreature);
 
 	string toString() ;
 

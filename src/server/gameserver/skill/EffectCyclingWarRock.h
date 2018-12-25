@@ -17,16 +17,16 @@
 class EffectCyclingWarRock : public Effect 
 {
 public:
-	EffectCyclingWarRock(Creature* pCreature) throw(Error);
+	EffectCyclingWarRock(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_CYCLING_WAR_ROCK; }
 	EffectClass getSendEffectClass()  { return m_SendEffectClass; }
 
-	void affect() throw(Error);
+	void affect();
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect() throw(Error);
+	void unaffect(Creature* pCreature);
+	void unaffect();
 
 	string toString() ;
 

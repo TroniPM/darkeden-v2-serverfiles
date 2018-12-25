@@ -80,22 +80,22 @@ public:
 
 
 public:
-	void heartbeat() throw(Error);
+	void heartbeat();
 
 public:
-	bool isGuildMaster( GuildID_t guildID, PlayerCreature* pPC ) throw(Error);
+	bool isGuildMaster( GuildID_t guildID, PlayerCreature* pPC );
 
-	string getGuildName( GuildID_t guildID ) throw (Error);
+	string getGuildName( GuildID_t guildID );
 
 	// 길드가 성을 가졌나?
-	bool hasCastle( GuildID_t guildID ) throw(Error);
-	bool hasCastle( GuildID_t guildID, ServerID_t& serverID, ZoneID_t& zoneID ) throw(Error);
+	bool hasCastle( GuildID_t guildID );
+	bool hasCastle( GuildID_t guildID, ServerID_t& serverID, ZoneID_t& zoneID );
 
 	// 길드가 전쟁신청을 했나?
-	bool hasWarSchedule( GuildID_t guildID ) throw(Error);
+	bool hasWarSchedule( GuildID_t guildID );
 
 	// 현재 진행중인 전쟁이 있는가?
-	bool hasActiveWar( GuildID_t guidlID ) throw(Error);
+	bool hasActiveWar( GuildID_t guidlID );
 
 public: // debug
 	string toString(void) ;

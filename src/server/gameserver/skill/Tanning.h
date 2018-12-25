@@ -23,10 +23,10 @@ public:
     string getSkillHandlerName()  { return "Tanning"; }
 	SkillType_t getSkillType()  { return SKILL_TANNING; }
 
-	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
-	void execute(Vampire* pVampire, ObjectID_t ObjectID, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
-	void execute(Ousters* pOusters, ObjectID_t ObjectID, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
-	void execute(Slayer* pSlayer, Creature* pCreature) throw(Error);
+	void execute(Slayer* pSlayer, ObjectID_t ObjectID,  SkillSlot* pSkillSlot, CEffectID_t CEffectID);
+	void execute(Vampire* pVampire, ObjectID_t ObjectID, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID);
+	void execute(Ousters* pOusters, ObjectID_t ObjectID, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID);
+	void execute(Slayer* pSlayer, Creature* pCreature);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };

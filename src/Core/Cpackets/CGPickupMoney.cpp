@@ -91,7 +91,7 @@ void CGPickupMoney::execute (Player* pPlayer)
 }
 
 string CGPickupMoney::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

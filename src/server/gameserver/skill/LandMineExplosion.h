@@ -23,7 +23,7 @@ public:
     string getSkillHandlerName()  { return "LandMineExplosion"; }
 	SkillType_t getSkillType()  { return SKILL_LAND_MINE_EXPLOSION; }
 
-	void execute(Monster* pMonster) throw(Error);
+	void execute(Monster* pMonster);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 

@@ -16,15 +16,15 @@
 class EffectMagmaDetonation1 : public Effect 
 {
 public:
-	EffectMagmaDetonation1(Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
+	EffectMagmaDetonation1(Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_MAGMA_DETONATION1; }
 
-	void affect() throw(Error);
-	void affect(Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y) throw(Error);
+	void affect();
+	void affect(Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y);
 
-	void unaffect() throw(Error);
+	void unaffect();
 
 	string toString() ;
 

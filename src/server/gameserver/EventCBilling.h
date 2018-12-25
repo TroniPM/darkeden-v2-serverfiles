@@ -16,7 +16,7 @@
 class EventCBilling : public Event 
 {
 public:
-	EventCBilling(GamePlayer* pGamePlayer) throw(Error);
+	EventCBilling(GamePlayer* pGamePlayer);
 	virtual ~EventCBilling() throw();
 
 public:
@@ -25,7 +25,7 @@ public:
 	virtual bool isTemporary()  { return false; }
 	virtual bool isPermanent()  { return true; }
 
-	virtual void activate() throw(Error);
+	virtual void activate();
 	
 	virtual string toString()  { return "CBilling Event"; }
 

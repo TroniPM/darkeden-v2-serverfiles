@@ -17,8 +17,8 @@ public:
 	EffectClass	getEffectClass()  { return (EffectClass)(Effect::EFFECT_CLASS_SLAYER_TRYING_1 + (m_OwnerRace*3)); }
 	EffectClass	getSendEffectClass()  { return (EffectClass)(getEffectClass() + m_Progress); }
 
-	void affect() throw(Error);
-	void unaffect() throw(Error);
+	void affect();
+	void unaffect();
 
 	Race_t getOwnerRace() const { return m_OwnerRace; }
 	void setOwnerRace( Race_t race ) { m_OwnerRace = race; }

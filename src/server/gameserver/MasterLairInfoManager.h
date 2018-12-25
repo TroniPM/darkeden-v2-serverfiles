@@ -158,11 +158,11 @@ public:
 	~MasterLairInfoManager() throw();
 
 public:
-	void init() throw(Error);
-	void load() throw(Error);
-	void reload() throw(Error);
+	void init();
+	void load();
+	void reload();
 	
-	void addMasterLairInfo(MasterLairInfo* pMasterLairInfo) throw(Error);
+	void addMasterLairInfo(MasterLairInfo* pMasterLairInfo);
 	void deleteMasterLairInfo(ZoneID_t zoneID) throw(NoSuchElementException);
 	MasterLairInfo* getMasterLairInfo(ZoneID_t zoneID) throw(NoSuchElementException);
 	int  size() const	{ return m_MasterLairInfos.size(); }

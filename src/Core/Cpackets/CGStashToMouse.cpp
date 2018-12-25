@@ -41,7 +41,7 @@ void CGStashToMouse::execute (Player* pPlayer)
 }
 
 string CGStashToMouse::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

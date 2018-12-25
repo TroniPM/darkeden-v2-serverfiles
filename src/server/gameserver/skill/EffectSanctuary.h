@@ -18,18 +18,18 @@
 class EffectSanctuary : public Effect 
 {
 public:
-	EffectSanctuary(Zone* pZone, ZoneCoord_t ZoneX, ZoneCoord_t ZoneY, ZoneCoord_t CenterX, ZoneCoord_t CenterY) throw(Error);
+	EffectSanctuary(Zone* pZone, ZoneCoord_t ZoneX, ZoneCoord_t ZoneY, ZoneCoord_t CenterX, ZoneCoord_t CenterY);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_SANCTUARY; }
 
 	void affect() throw(Error){}
-	void affect(Creature* pCreature) throw(Error);
-	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject ) throw(Error);
+	void affect(Creature* pCreature);
+	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject );
 
-	void unaffect() throw(Error);
+	void unaffect();
 	void unaffect(Creature* pCreature) throw(Error) {};
-	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject ) throw(Error);
+	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject );
 	void unaffect(Item* pItem) throw(Error) {}
 
 	string toString() ;
@@ -65,8 +65,8 @@ public:
 		m_Deadline.tv_usec = m_StartTime.tv_usec +(m_Duration%10)* 100000;
 	}
 	
-	bool affectObject(Object*, bool bAffectByMove) throw(Error);
-	void unaffectObject(Object*, bool bUnaffectByMove) throw(Error);
+	bool affectObject(Object*, bool bAffectByMove);
+	void unaffectObject(Object*, bool bUnaffectByMove);
 	
 private :
 	// effect¿« ¡ﬂΩ…¡¬«•

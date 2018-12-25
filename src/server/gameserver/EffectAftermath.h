@@ -17,24 +17,24 @@
 class EffectAftermath : public Effect 
 {
 public:
-	EffectAftermath(Creature* pCreature) throw(Error);
-	~EffectAftermath() throw(Error);
+	EffectAftermath(Creature* pCreature);
+	~EffectAftermath();
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_AFTERMATH; }
 
 	void affect() throw(Error) {}
-	void affect(Creature* pCreature) throw(Error);
-	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject) throw(Error);
+	void affect(Creature* pCreature);
+	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject);
 
-	void unaffect() throw(Error);
+	void unaffect();
 	void unaffect(Item* pItem) throw(Error) {}
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject) throw(Error);
+	void unaffect(Creature* pCreature);
+	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject);
 
-	virtual void create(const string & ownerID) throw(Error);
-	virtual void destroy(const string & ownerID) throw(Error);
-	virtual void save(const string & ownerID) throw(Error);
+	virtual void create(const string & ownerID);
+	virtual void destroy(const string & ownerID);
+	virtual void save(const string & ownerID);
 
 	string toString() ;
 };
@@ -51,7 +51,7 @@ public:
 	virtual string getEffectClassName()  { return "EffectAftermath"; }
 
 public:
-	virtual void load(Creature* pCreature) throw(Error);
+	virtual void load(Creature* pCreature);
 };
 
 extern EffectAftermathLoader* g_pEffectAftermathLoader;

@@ -23,7 +23,7 @@ public:
     string getSkillHandlerName()  { return "TiffaugesBerithRed"; }
 	SkillType_t getSkillType()  { return SKILL_TIFFAUGES_BERITH_RED; }
 
-	void execute(Monster* pMonster, Creature* pCreature) throw(Error);
+	void execute(Monster* pMonster, Creature* pCreature);
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };
 

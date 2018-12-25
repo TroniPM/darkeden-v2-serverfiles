@@ -23,7 +23,7 @@ public:
     string getSkillHandlerName()  { return "DenialMagic"; }
 	SkillType_t getSkillType()  { return SKILL_DENIAL_MAGIC; }
 
-	void execute(Slayer* pSlayer,  SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
+	void execute(Slayer* pSlayer,  SkillSlot* pSkillSlot, CEffectID_t CEffectID);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };

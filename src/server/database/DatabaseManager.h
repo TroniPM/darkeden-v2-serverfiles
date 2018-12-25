@@ -24,7 +24,7 @@ public:
 	~DatabaseManager() throw();
 	
 public:
-	void init() throw(Error);
+	void init();
 	void addConnection(int TID, Connection * pConnection) throw(DuplicatedException);
 	void addDistConnection(int TID, Connection * pConnection) throw(DuplicatedException);
 	void addCBillingConnection(int TID, Connection * pConnection) throw(DuplicatedException);
@@ -35,7 +35,7 @@ public:
 	Connection* getCBillingConnection(const string& ip) throw(NoSuchElementException);
 //	Connection* getPCRoomConnection(const string& ip) throw(NoSuchElementException);
 	Connection* getUserInfoConnection(void) throw() { return m_pUserInfoConnection; }
-	void	executeDummyQuery(Connection* pConnection) throw (Error);
+	void	executeDummyQuery(Connection* pConnection);
 
 	//--------------------------------------------------------------------
 	// * elca's NOTE

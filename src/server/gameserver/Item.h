@@ -646,9 +646,9 @@ public:
 // DB methods
 public:
 	virtual void create(const string & ownerID, Storage storage, DWORD storageID, BYTE x, BYTE y, ItemID_t itemID=0) throw(Error) = 0;	// itemID=0 <-- 특정 ItemID로 생성. by sigi. 2002.10.28
-	virtual bool destroy() throw(Error);
+	virtual bool destroy();
 	virtual void save(const string & ownerID, Storage storage, DWORD storageID, BYTE x, BYTE y) throw(Error) = 0;
-	virtual void tinysave(const string & field) const throw (Error) = 0;
+	virtual void tinysave(const string & field)  = 0;
 	void waste( Storage storage = STORAGE_GARBAGE ) ;
 
 // own methods

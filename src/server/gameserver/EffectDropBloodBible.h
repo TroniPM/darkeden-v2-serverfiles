@@ -18,7 +18,7 @@
 class EffectDropBloodBible : public Effect 
 {
 public:
-	EffectDropBloodBible(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY) throw(Error);
+	EffectDropBloodBible(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_DROP_BLOOD_BIBLE; }
@@ -27,8 +27,8 @@ public:
 	ItemType_t	getPart() const { return m_ItemType; }
 	void		setPart( ItemType_t part ) { m_ItemType = part; }
 
-	void affect() throw(Error);
-	void unaffect() throw(Error);
+	void affect();
+	void unaffect();
 
 	string toString() ;
 

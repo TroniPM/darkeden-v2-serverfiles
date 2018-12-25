@@ -17,15 +17,15 @@
 class EffectEaglesEye1 : public Effect 
 {
 public:
-	EffectEaglesEye1(Creature* pCreature) throw(Error);
+	EffectEaglesEye1(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_EAGLES_EYE1; }
 
 	void affect() throw(Error){}
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect() throw(Error);
+	void unaffect(Creature* pCreature);
+	void unaffect();
 
 	string toString() ;
 

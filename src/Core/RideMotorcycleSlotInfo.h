@@ -20,8 +20,8 @@
 class RideMotorcycleSlotInfo : public PCItemInfo 
 {
 public:
-	void read (SocketInputStream & iStream) throw (ProtocolException, Error);
-	void write (SocketOutputStream & oStream) const throw (ProtocolException, Error);
+	void read (SocketInputStream & iStream);
+	void write (SocketOutputStream & oStream) ;
 
 	uint getSize () throw ()
 	{ 
@@ -33,7 +33,7 @@ public:
 		return PCItemInfo::getMaxSize() + szCoordInven*2;
 	}
 
-	string toString () const throw ();
+	string toString () ;
 
 public:
 	void setInvenX(CoordInven_t InvenX) throw() { m_InvenX = InvenX; }

@@ -92,7 +92,7 @@ void CGTypeStringList::execute (Player* pPlayer)
 }
 
 string CGTypeStringList::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

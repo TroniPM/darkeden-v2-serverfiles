@@ -54,7 +54,7 @@ void GCExecuteElement::execute ( Player * pPlayer )
 //
 //////////////////////////////////////////////////////////////////////
 string GCExecuteElement::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

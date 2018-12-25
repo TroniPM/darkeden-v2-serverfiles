@@ -28,12 +28,12 @@ class Statement;
 class Result 
 {
 public:
-	Result(T_RESULT *, const string& statement) throw(Error);
+	Result(T_RESULT *, const string& statement);
 	~Result() throw();
 
 public:
 	// 다음 row로 넘어간다.
-	bool next() throw(Error);
+	bool next();
 	
 	// 특정 필드(컬럼) 값을 가지고 온다.
 	char * getField(uint index) throw(OutOfBoundException, Error);

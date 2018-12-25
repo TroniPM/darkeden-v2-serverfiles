@@ -82,8 +82,8 @@ public:
 	~ShopTemplateManager() throw();
 
 public:
-	void init() throw(Error);
-	void load() throw(Error);
+	void init();
+	void load();
 
 public:
 	ShopTemplate* getTemplate(ShopTemplateID_t id) ;

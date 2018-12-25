@@ -75,7 +75,7 @@ public:
 class GCAddEffectToTileHandler 
 {
 public:
-	static void execute(GCAddEffectToTile* pGCAddEffectToTile, Player* pPlayer) throw(Error);
+	static void execute(GCAddEffectToTile* pGCAddEffectToTile, Player* pPlayer);
 };
 
 #endif

@@ -21,8 +21,8 @@ class ActionCreateGuild : public Action
 {
 public:
 	virtual ActionType_t getActionType()  { return ACTION_CREATE_GUILD; }
-	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
-	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
+	virtual void read(PropertyBuffer & propertyBuffer);
+	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL);
 	virtual string toString() ;
 };
 

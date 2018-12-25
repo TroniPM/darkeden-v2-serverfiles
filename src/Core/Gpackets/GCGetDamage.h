@@ -122,7 +122,7 @@ class  GCGetDamageHandler {
 public :
 
 	// execute packet's handler
-	static void execute( GCGetDamage* pGCGetDamage, Player* pPlayer) throw(Error);
+	static void execute( GCGetDamage* pGCGetDamage, Player* pPlayer);
 
 };
 

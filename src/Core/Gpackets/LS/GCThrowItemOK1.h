@@ -118,7 +118,7 @@ class GCThrowItemOK1Handler {
 public :
 
 	// execute packet's handler
-	static void execute(GCThrowItemOK1* pGCThrowItemOK1, Player* pPlayer) throw(Error);
+	static void execute(GCThrowItemOK1* pGCThrowItemOK1, Player* pPlayer);
 
 };
 

@@ -50,14 +50,14 @@ public:
 	const static char* SpaceTab;
 
 public:
-	Trigger() throw(Error);
-	~Trigger() throw(Error);
+	Trigger();
+	~Trigger();
 
 
 public:
-	void addCondition(Condition* pCondition) throw(Error);
-	void addAction(Action* pAction) throw(Error);
-	void addCounterAction(Action* pAction) throw(Error);
+	void addCondition(Condition* pCondition);
+	void addAction(Action* pAction);
+	void addCounterAction(Action* pAction);
 	bool hasCondition(ConditionType_t conditionType)  { return m_ConditionSet.test(conditionType); }
 	bool isAllSatisfied(TriggerMode triggerMode, Creature* pCreature1, Creature* pCreature2 = NULL, void* pParam = NULL) ;
 	bool activate(Creature* pCreature1, Creature* pCreature2 = NULL) ; 
@@ -87,9 +87,9 @@ public:
 	ConditionSet & getConditionSet() throw() { return m_ConditionSet; }
 	const ConditionSet & getConditionSet()  { return m_ConditionSet; }
 
-	void setConditions(const string & str) throw(Error);
-	void setActions(const string & str) throw(Error);
-	void setCounterActions(const string & str) throw(Error);
+	void setConditions(const string & str);
+	void setActions(const string & str);
+	void setCounterActions(const string & str);
 
 
 

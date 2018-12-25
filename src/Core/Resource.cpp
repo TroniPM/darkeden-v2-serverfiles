@@ -141,7 +141,7 @@ void Resource::save ( ofstream & ofile ) const
 // read from socket input stream
 //--------------------------------------------------------------------------------
 void Resource::read ( SocketInputStream & iStream ) 
-	throw ( IOException , Error )
+	
 {
 	__BEGIN_TRY
 
@@ -177,7 +177,7 @@ void Resource::read ( SocketInputStream & iStream )
 // read from socket
 //--------------------------------------------------------------------------------
 void Resource::read ( Socket * pSocket ) 
-	throw ( IOException , Error )
+	
 {
 	__BEGIN_TRY
 
@@ -217,7 +217,7 @@ void Resource::read ( Socket * pSocket )
 // write to socket output stream
 //--------------------------------------------------------------------------------
 void Resource::write ( SocketOutputStream & oStream ) const 
-	throw ( IOException , Error )
+	
 {
 	__BEGIN_TRY
 
@@ -254,7 +254,7 @@ void Resource::write ( SocketOutputStream & oStream ) const
 // write to socket
 //--------------------------------------------------------------------------------
 void Resource::write ( Socket * pSocket ) const 
-	throw ( IOException , Error )
+	
 {
 	__BEGIN_TRY
 

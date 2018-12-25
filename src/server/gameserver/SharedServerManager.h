@@ -26,13 +26,13 @@ class SharedServerClient;
 class SharedServerManager : public Thread 
 {
 public:
-	SharedServerManager() throw(Error);
-	~SharedServerManager() throw(Error);
+	SharedServerManager();
+	~SharedServerManager();
 
 public:
 	void init() throw(Error) {}
 
-	void stop() throw(Error);
+	void stop();
 
 	void run() throw();
 

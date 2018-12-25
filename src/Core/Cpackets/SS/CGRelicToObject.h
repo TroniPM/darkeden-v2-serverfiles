@@ -128,14 +128,14 @@ class CGRelicToObjectHandler {
 public:
 
 	// execute packet's handler
-	static void execute(CGRelicToObject* pCGRelicToObject, Player* pPlayer) throw(Error);
+	static void execute(CGRelicToObject* pCGRelicToObject, Player* pPlayer);
 
 private :
-	static void executeRelic(CGRelicToObject* pCGRelicToObject, Player* pPlayer) throw(Error);
-	static void executeBloodBible(CGRelicToObject* pCGRelicToObject, Player* pPlayer) throw(Error);
-	static void executeCastleSymbol(CGRelicToObject* pCGRelicToObject, Player* pPlayer) throw(Error);
-	static void executeFlag(CGRelicToObject* pCGRelicToObject, Player* pPlayer) throw(Error);
-	static void executeSweeper(CGRelicToObject* pCGRelicToObject, Player* pPlayer) throw(Error);
+	static void executeRelic(CGRelicToObject* pCGRelicToObject, Player* pPlayer);
+	static void executeBloodBible(CGRelicToObject* pCGRelicToObject, Player* pPlayer);
+	static void executeCastleSymbol(CGRelicToObject* pCGRelicToObject, Player* pPlayer);
+	static void executeFlag(CGRelicToObject* pCGRelicToObject, Player* pPlayer);
+	static void executeSweeper(CGRelicToObject* pCGRelicToObject, Player* pPlayer);
 
 };
 

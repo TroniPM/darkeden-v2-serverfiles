@@ -31,31 +31,31 @@ class UpdateServerPlayer : public Player {
 public :
 	
 	// constructor
-	UpdateServerPlayer ( Socket * pSocket ) throw ( Error );
+	UpdateServerPlayer ( Socket * pSocket );
 	
 	// destructor
-	~UpdateServerPlayer () throw ( Error );
+	~UpdateServerPlayer ();
 
 public :
 
 	// read socket's receive buffer and fill input buffer
-	// virtual void processInput () throw ( IOException , Error );
+	// virtual void processInput () ;
 	
 	// parse packet and execute handler for the packet
-	virtual void processCommand () throw ( IOException , Error );
+	virtual void processCommand () ;
 	
 	// flush output buffer to socket's send buffer
-	virtual void processOutput () throw ( IOException , Error );
+	virtual void processOutput () ;
 	
 	// send packet to player's output buffer
 	virtual void sendPacket ( Packet * packet ) throw ( ProtocolException , Error );
 
 	// disconnect
 	// 정식 로그아웃의 경우 disconnect(UNDISCONNECTED)
-	virtual void disconnect ( bool bDisconnected = DISCONNECTED ) throw ( Error );
+	virtual void disconnect ( bool bDisconnected = DISCONNECTED );
 	
 	// get debug string
-	virtual string toString () const throw ( Error );
+	virtual string toString () ;
 
 	void setPenaltyFlag(PenaltyType PenaltyFlag) throw() { m_PenaltyFlag.set(PenaltyFlag); }
 
@@ -71,7 +71,7 @@ public :
 public :
 
 	// get/set player's status
-	PlayerStatus getPlayerStatus () const throw () { return m_PlayerStatus; }
+	PlayerStatus getPlayerStatus ()  { return m_PlayerStatus; }
 	void setPlayerStatus ( PlayerStatus playerStatus ) throw () { m_PlayerStatus = playerStatus; }
 
 private :

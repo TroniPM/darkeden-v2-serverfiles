@@ -23,7 +23,7 @@ void GCKnockBack::read ( SocketInputStream & iStream )
 }
 		    
 void GCKnockBack::write ( SocketOutputStream & oStream )
-     const throw ( ProtocolException , Error )
+     
 {
 	__BEGIN_TRY
 		
@@ -47,7 +47,7 @@ void GCKnockBack::execute ( Player * pPlayer )
 }
 
 string GCKnockBack::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

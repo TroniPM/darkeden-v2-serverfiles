@@ -23,9 +23,9 @@ public:
     string getSkillHandlerName()  { return "PlayingWithFire"; }
 	SkillType_t getSkillType()  { return SKILL_PLAYING_WITH_FIRE; }
 
-	//void execute(Slayer* pSlayer, SlayerSkillSlot* pSlayerSkillSlot, CEffectID_t CEffectID) throw(Error);
-	//void execute(Vampire* pVampire, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
-	void execute(Monster* pMonster) throw(Error);
+	//void execute(Slayer* pSlayer, SlayerSkillSlot* pSlayerSkillSlot, CEffectID_t CEffectID);
+	//void execute(Vampire* pVampire, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID);
+	void execute(Monster* pMonster);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 

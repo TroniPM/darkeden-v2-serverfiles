@@ -25,9 +25,9 @@ public:
 	Bomb(ItemType_t itemType, const list<OptionType_t>& optionType) throw();
 	
 public:
-	virtual void create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID=0) throw(Error);
-	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) throw(Error);
-	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
+	virtual void create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID=0);
+	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y);
+	void tinysave(const string & field) 	{ tinysave(field.c_str()); }
 	void tinysave(const char* field) ;
 	virtual string toString() ;
 
@@ -99,7 +99,7 @@ class BombInfoManager : public InfoClassManager
 {
 public:
 	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_BOMB; }
-	virtual void load() throw(Error);
+	virtual void load();
 };
 
 extern BombInfoManager* g_pBombInfoManager;
@@ -131,9 +131,9 @@ public:
 	virtual string getItemClassName()  { return "Bomb"; }
 
 public:
-	virtual void load(Creature* pCreature) throw(Error);
-	virtual void load(Zone* pZone) throw(Error);
-	virtual void load(StorageID_t storageID, Inventory* pInventory) throw(Error);
+	virtual void load(Creature* pCreature);
+	virtual void load(Zone* pZone);
+	virtual void load(StorageID_t storageID, Inventory* pInventory);
 };
 
 extern BombLoader* g_pBombLoader;

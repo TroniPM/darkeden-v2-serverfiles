@@ -30,8 +30,8 @@ public:
 	void deleteObject(ObjectID_t id) throw (NoSuchElementException, Error);
 	Object* getObject(ObjectID_t id) throw (NoSuchElementException, Error);
 
-	Sector* getNearbySector(uint dir) throw (Error);
-	void setNearbySector(uint dir, Sector* pSector) throw (Error);
+	Sector* getNearbySector(uint dir);
+	void setNearbySector(uint dir, Sector* pSector);
 
 	const hash_map<ObjectID_t, Object*>& getObjects(void) const { return m_Objects; }
 	uint getSize(void)  { return m_Objects.size(); }

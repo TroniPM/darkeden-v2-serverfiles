@@ -37,7 +37,7 @@ void CGGetEventItem::execute (Player* pPlayer)
 }
 
 string CGGetEventItem::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

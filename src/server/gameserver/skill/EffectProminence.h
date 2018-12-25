@@ -17,14 +17,14 @@
 class EffectProminence : public Effect 
 {
 public:
-	EffectProminence(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY) throw(Error);
+	EffectProminence(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_PROMINENCE; }
 	EffectClass getSendEffectClass()  { return m_SendEffectClass; }
 
-	void affect() throw(Error);
-	void unaffect() throw(Error);
+	void affect();
+	void unaffect();
 	string toString() ;
 
 public:
@@ -64,7 +64,7 @@ public:
 
 public:
 	virtual void load(Creature* pCreature) throw(Error) {}
-	virtual void load(Zone* pZone) throw(Error);
+	virtual void load(Zone* pZone);
 };
 
 extern EffectProminenceLoader* g_pEffectProminenceLoader;

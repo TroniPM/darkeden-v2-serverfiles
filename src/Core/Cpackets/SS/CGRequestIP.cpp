@@ -42,7 +42,7 @@ void CGRequestIP::read ( SocketInputStream & iStream )
 }
 		    
 void CGRequestIP::write ( SocketOutputStream & oStream ) 
-     const throw ( ProtocolException , Error )
+     
 {
 	__BEGIN_TRY
 		
@@ -68,7 +68,7 @@ void CGRequestIP::execute ( Player * pPlayer )
 }
 
 string CGRequestIP::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

@@ -53,7 +53,7 @@ void CGAddMouseToGear::execute (Player* pPlayer)
 }
 
 string CGAddMouseToGear::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

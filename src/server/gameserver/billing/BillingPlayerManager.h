@@ -28,13 +28,13 @@ class CommonBillingPacket;
 class BillingPlayerManager : public Thread 
 {
 public:
-	BillingPlayerManager() throw(Error);
-	~BillingPlayerManager() throw(Error);
+	BillingPlayerManager();
+	~BillingPlayerManager();
 
 public:
 	void init() throw(Error) {}
 
-	void stop() throw(Error);
+	void stop();
 
 	void run() throw();
 

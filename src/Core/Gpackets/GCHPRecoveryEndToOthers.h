@@ -25,9 +25,9 @@ class GCHPRecoveryEndToOthers : public Packet {
 
 public :
 
-	GCHPRecoveryEndToOthers() throw(Error);
+	GCHPRecoveryEndToOthers();
 
-	virtual ~GCHPRecoveryEndToOthers() throw(Error);
+	virtual ~GCHPRecoveryEndToOthers();
 	
     // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
     void read(SocketInputStream & iStream) ;
@@ -119,7 +119,7 @@ class GCHPRecoveryEndToOthersHandler {
 public :
 
 	// execute packet's handler
-	static void execute(GCHPRecoveryEndToOthers* pPacket, Player* pPlayer) throw(Error);
+	static void execute(GCHPRecoveryEndToOthers* pPacket, Player* pPlayer);
 
 };
 

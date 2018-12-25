@@ -23,7 +23,7 @@ public:
     string getSkillHandlerName()  { return "Howl"; }
 	SkillType_t getSkillType()  { return SKILL_HOWL; }
 
-	void execute(Vampire* pVampire, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
+	void execute(Vampire* pVampire, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };

@@ -154,7 +154,7 @@ void SkillDomainInfoManager::init ()
 // get item info
 //--------------------------------------------------------------------------------
 DomainInfo* SkillDomainInfoManager::getDomainInfo (SkillDomain DomainType, Level_t Level)
-	const throw (Error)
+	
 {
 	__BEGIN_TRY
 

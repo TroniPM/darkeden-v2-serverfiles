@@ -53,31 +53,31 @@ public :
 public :
 	
 	// constructor
-	LoginPlayer (Socket * pSocket) throw ( Error );
+	LoginPlayer (Socket * pSocket);
 	
 	// destructor
-	~LoginPlayer () throw ( Error );
+	~LoginPlayer ();
 
 	// read socket's receive buffer and fill input buffer
-	//virtual void processInput () throw ( IOException , Error );
+	//virtual void processInput () ;
 	
 	// parse packet and execute handler for the packet
-	virtual void processCommand ( bool Option = true ) throw ( IOException , Error );
+	virtual void processCommand ( bool Option = true ) ;
 	
 	// flush output buffer to socket's send buffer
-	//virtual void processOutput () throw ( IOException , Error );
+	//virtual void processOutput () ;
 	
 	// send packet to player's output buffer
 	virtual void sendPacket ( Packet * packet ) throw ( ProtocolException , Error );
 
 	// disconnect
 	// 정식 로그아웃의 경우 disconnect(LOGOUT)
-	virtual void disconnect ( bool bDisconnected = DISCONNECTED ) throw ( Error );
-	virtual void disconnect_nolog ( bool bDisconnected = DISCONNECTED ) throw ( Error );
+	virtual void disconnect ( bool bDisconnected = DISCONNECTED );
+	virtual void disconnect_nolog ( bool bDisconnected = DISCONNECTED );
 
 	
 	// get debug string
-	virtual string toString () const throw ( Error );
+	virtual string toString () ;
 	
 public :
 
@@ -90,11 +90,11 @@ public :
 	Packet * getOldPacket ( PacketID_t packetID ) throw ( NoSuchElementException );
 
 	// get/set player's status
-	PlayerStatus getPlayerStatus () const throw () { return m_PlayerStatus; }
+	PlayerStatus getPlayerStatus ()  { return m_PlayerStatus; }
 	void setPlayerStatus ( PlayerStatus playerStatus ) throw () { m_PlayerStatus = playerStatus; }
 
 	// 실패한 회수
-	uint getFailureCount () const throw () { return m_FailureCount; }
+	uint getFailureCount ()  { return m_FailureCount; }
 	void setFailureCount ( uint nFailed ) throw () { m_FailureCount = nFailed; }
 
     // get / set GoreLevel
@@ -145,7 +145,7 @@ public :
 
 public :
 	void    setBillingSession() throw (Error)   { BillingPlayerInfo::setBillingSession(this); }
-	bool    sendBillingLogin() throw (Error);
+	bool    sendBillingLogin();
 
 
 private :

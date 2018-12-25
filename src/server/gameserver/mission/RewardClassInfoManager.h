@@ -26,7 +26,7 @@ public:
 
 	bool			hasReward( RewardClass_t rClass ) const { return m_RewardClasses.find(rClass) != m_RewardClasses.end(); }
 	QuestMessage	canGiveReward( RewardClass_t rClass, PlayerCreature* pPC ) ;
-//	QuestMessage	giveReward( RewardClass_t rClass, PlayerCreature* pPC ) throw(Error);
+//	QuestMessage	giveReward( RewardClass_t rClass, PlayerCreature* pPC );
 	RewardClass*	getRewardClass( RewardClass_t rClass ) ;
 
 protected:

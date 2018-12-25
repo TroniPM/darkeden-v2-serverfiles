@@ -17,16 +17,16 @@
 class EffectPenetrateWheel : public Effect 
 {
 public:
-	EffectPenetrateWheel(Creature* pCreature) throw(Error);
+	EffectPenetrateWheel(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_Penetrate_Wheel; }
 
-	void affect() throw(Error);
-	void affect(Creature* pCreature) throw(Error);
+	void affect();
+	void affect(Creature* pCreature);
 
-	void unaffect() throw(Error);
-	void unaffect(Creature* pCreature) throw(Error);
+	void unaffect();
+	void unaffect(Creature* pCreature);
 
 	string toString() ;
 

@@ -114,21 +114,21 @@ void makeGCOtherModifyInfo(GCOtherModifyInfo* pInfo, Vampire* pVampire, const VA
 void makeGCOtherModifyInfo(GCOtherModifyInfo* pInfo, Ousters* pOusters, const OUSTERS_RECORD* prev);
 
 // 요금 지불 관련 정보를 보여준다.
-void sendPayInfo(GamePlayer* pGamePlayer) throw(Error);
+void sendPayInfo(GamePlayer* pGamePlayer);
 
 // 아이템 생성
-void makeGCCreateItem(GCCreateItem* pGCCreateItem, Item* pItem, CoordInven_t x, CoordInven_t y) throw(Error);
+void makeGCCreateItem(GCCreateItem* pGCCreateItem, Item* pItem, CoordInven_t x, CoordInven_t y);
 
 // 레벨 업 이펙트를 보여준다.
-void sendEffectLevelUp(Creature* pCreature) throw (Error);
+void sendEffectLevelUp(Creature* pCreature);
 
 // GamePlayer에게 GCSystemMessage(msg)를 보낸다. incoming에 있는 경우는 zone에 가면 뿌려준다.
-void sendSystemMessage(GamePlayer* pGamePlayer, const string& msg) throw (Error);
+void sendSystemMessage(GamePlayer* pGamePlayer, const string& msg);
 
-bool makeGCWarScheduleList(GCWarScheduleList* pGCWarScheduleList, ZoneID_t zoneID) throw(Error);
+bool makeGCWarScheduleList(GCWarScheduleList* pGCWarScheduleList, ZoneID_t zoneID);
 
 // 이름이 붙는 아이템 정보를 보내주는 패킷
-//void makeGCItemNameInfoList(GCItemNameInfoList* pInfo, PlayerCreature* pPC) throw(Error);
+//void makeGCItemNameInfoList(GCItemNameInfoList* pInfo, PlayerCreature* pPC);
 
 void sendGCMiniGameScores( PlayerCreature* pPC, BYTE gameType, BYTE Level );
 

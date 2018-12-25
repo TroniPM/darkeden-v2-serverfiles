@@ -19,8 +19,8 @@ class MJob;
 class MPlayer : public Player
 {
 public:
-	MPlayer( MJob* pJob ) throw ( Error );
-	virtual ~MPlayer() throw ( Error );
+	MPlayer( MJob* pJob );
+	virtual ~MPlayer();
 
 public:
 	// network read / write

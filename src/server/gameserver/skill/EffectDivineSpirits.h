@@ -17,15 +17,15 @@
 class EffectDivineSpirits : public Effect 
 {
 public:
-	EffectDivineSpirits(Creature* pCreature) throw(Error);
+	EffectDivineSpirits(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_DIVINE_SPIRITS; }
 
 	void affect() throw(Error){}
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect() throw(Error);
+	void unaffect(Creature* pCreature);
+	void unaffect();
 
 	string toString() ;
 

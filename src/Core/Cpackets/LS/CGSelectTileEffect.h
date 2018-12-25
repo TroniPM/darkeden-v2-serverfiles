@@ -58,8 +58,8 @@ class Effect;
 class CGSelectTileEffectHandler 
 {
 public:
-	static void execute(CGSelectTileEffect* pCGSelectTileEffect, Player* pPlayer) throw(Error);
-	static void executeVampirePortal(CGSelectTileEffect* pCGSelectTileEffect, Player* pPlayer, Effect* pEffect) throw(Error);
+	static void execute(CGSelectTileEffect* pCGSelectTileEffect, Player* pPlayer);
+	static void executeVampirePortal(CGSelectTileEffect* pCGSelectTileEffect, Player* pPlayer, Effect* pEffect);
 };
 
 #endif

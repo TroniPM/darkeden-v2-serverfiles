@@ -57,10 +57,10 @@ public:
 	void processCommands() throw(IOException, Error);
 
 	// broadcast packet
-	void broadcastPacket(Packet* pPacket) throw(Error);
-	void broadcastPacket_NOBLOCKED(Packet* pPacket) throw(Error);
-	void pushBroadcastPacket(Packet* pPacket, BroadcastFilter* pFilter=NULL) throw(Error);
-	void flushBroadcastPacket() throw(Error);
+	void broadcastPacket(Packet* pPacket);
+	void broadcastPacket_NOBLOCKED(Packet* pPacket);
+	void pushBroadcastPacket(Packet* pPacket, BroadcastFilter* pFilter=NULL);
+	void flushBroadcastPacket();
 	
 	// add player to zone player manager
 	void addPlayer(GamePlayer* pGamePlayer) throw(DuplicatedException, Error);
@@ -81,28 +81,28 @@ public:
 	Player* getPlayerByPhoneNumber(PhoneNumber_t PhoneNumber) throw(OutOfBoundException, NoSuchElementException, Error);
 
 	// All Member Save
-	void save() throw(Error);
+	void save();
 
 	void copyPlayers() throw();
 
     // push Player to queue
-    void pushPlayer(GamePlayer* pGamePlayer) throw(Error);
-    void pushOutPlayer(GamePlayer* pGamePlayer) throw(Error);
-	void processPlayerListQueue() throw (Error);
+    void pushPlayer(GamePlayer* pGamePlayer);
+    void pushOutPlayer(GamePlayer* pGamePlayer);
+	void processPlayerListQueue();
 
 	// Queue's Player Add Manager
-    void heartbeat() throw(Error);
+    void heartbeat();
 
 	// delete Queue Player
 	void deleteQueuePlayer(GamePlayer* pGamePlayer) throw(NoSuchElementException, Error);
 
-	void    removeFlag (Effect::EffectClass EC) throw(Error);
+	void    removeFlag (Effect::EffectClass EC);
 
 	void lock() throw (Error) { m_Mutex.lock(); }	
 	void unlock() throw (Error) { m_Mutex.unlock(); }	
 
 	// 모든 플레이어를 정리한다.
-	void clearPlayers() throw (Error);
+	void clearPlayers();
 
 	void setZGID( ZoneGroupID_t id ) { m_ZGID = id; }
 	ZoneGroupID_t getZGID() const { return m_ZGID; }

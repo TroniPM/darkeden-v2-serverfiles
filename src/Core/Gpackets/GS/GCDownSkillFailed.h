@@ -118,7 +118,7 @@ class  GCDownSkillFailedHandler {
 public :
 
 	// execute packet's handler
-	static void execute( GCDownSkillFailed* pGCDownSkillFailed, Player* pPlayer) throw(Error);
+	static void execute( GCDownSkillFailed* pGCDownSkillFailed, Player* pPlayer);
 
 };
 

@@ -69,7 +69,7 @@ void CGUseMessageItemFromInventory::execute (Player* pPlayer)
 }
 
 string CGUseMessageItemFromInventory::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

@@ -240,7 +240,7 @@ Statement.o: Statement.cpp Statement.h \
  /home/darkeden/vs/src/server/Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- /usr/include/bits/stdio_lim.h /usr/include/sys/time.h Result.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/sys/time.h Result.h \
  /home/darkeden/vs/src/Core/Assert.h \
  /home/darkeden/vs/src/server/Profile.h \
  /home/darkeden/vs/src/server/Timeval.h /usr/include/unistd.h \
@@ -313,7 +313,7 @@ DatabaseManager.o: DatabaseManager.cpp /usr/include/stdio.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
  /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
- /usr/include/bits/stdio_lim.h DatabaseManager.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h DatabaseManager.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
@@ -493,7 +493,7 @@ Statement.o: Statement.cpp Statement.h \
  /home/darkeden/vs/src/server/Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- /usr/include/bits/stdio_lim.h /usr/include/sys/time.h Result.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/sys/time.h Result.h \
  /home/darkeden/vs/src/Core/Assert.h \
  /home/darkeden/vs/src/server/Profile.h \
  /home/darkeden/vs/src/server/Timeval.h /usr/include/unistd.h \
@@ -566,7 +566,7 @@ DatabaseManager.o: DatabaseManager.cpp /usr/include/stdio.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
  /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
- /usr/include/bits/stdio_lim.h DatabaseManager.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h DatabaseManager.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
@@ -746,7 +746,7 @@ Statement.o: Statement.cpp Statement.h \
  /home/darkeden/vs/src/server/Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- /usr/include/bits/stdio_lim.h /usr/include/sys/time.h Result.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/sys/time.h Result.h \
  /home/darkeden/vs/src/Core/Assert.h \
  /home/darkeden/vs/src/server/Profile.h \
  /home/darkeden/vs/src/server/Timeval.h /usr/include/unistd.h \
@@ -763,7 +763,7 @@ DatabaseManager.o: DatabaseManager.cpp /usr/include/stdio.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
  /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
- /usr/include/bits/stdio_lim.h DatabaseManager.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h DatabaseManager.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
@@ -943,7 +943,7 @@ Statement.o: Statement.cpp Statement.h \
  /home/darkeden/vs/src/server/Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- /usr/include/bits/stdio_lim.h /usr/include/sys/time.h Result.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/sys/time.h Result.h \
  /home/darkeden/vs/src/Core/Assert.h \
  /home/darkeden/vs/src/server/Profile.h \
  /home/darkeden/vs/src/server/Timeval.h /usr/include/unistd.h \
@@ -1016,7 +1016,7 @@ DatabaseManager.o: DatabaseManager.cpp /usr/include/stdio.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
  /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
- /usr/include/bits/stdio_lim.h DatabaseManager.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h DatabaseManager.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \

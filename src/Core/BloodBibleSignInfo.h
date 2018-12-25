@@ -23,14 +23,14 @@
 class BloodBibleSignInfo 
 {
 public:
-	BloodBibleSignInfo () throw ();
-	~BloodBibleSignInfo () throw ();
+	BloodBibleSignInfo ();
+	~BloodBibleSignInfo ();
 	
 public:
-    void read (SocketInputStream & iStream) throw (ProtocolException, Error);
-    void write (SocketOutputStream & oStream) const throw (ProtocolException, Error);
+    void read (SocketInputStream & iStream);
+    void write (SocketOutputStream & oStream) ;
 
-	PacketSize_t getSize () const throw () { return szuint + szBYTE + szItemType * m_SignList.size(); }
+	PacketSize_t getSize ()  { return szuint + szBYTE + szItemType * m_SignList.size(); }
 	static uint getMaxSize () throw () { return szuint + szBYTE + szItemType * BLOOD_BIBLE_SIGN_SLOT_NUM; }
 
 public:

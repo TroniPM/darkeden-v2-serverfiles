@@ -37,19 +37,19 @@ public :
 	void setServerID( ServerID_t ServerID ) throw() { m_ServerID = ServerID; }
 
 	// get/set host name
-	const string& getNickname () const throw () { return m_Nickname; }
+	const string& getNickname ()  { return m_Nickname; }
 	void setNickname ( const string &nickname ) throw () { m_Nickname = nickname; }
 	
 	// get/set ip address
-	const string& getIP () const throw () { return m_IP; }
+	const string& getIP ()  { return m_IP; }
 	void setIP ( const string &ip ) throw () { m_IP = ip; }
 
 	// get/set port
-	uint getTCPPort () const throw () { return m_TCPPort; }
+	uint getTCPPort ()  { return m_TCPPort; }
 	void setTCPPort ( uint port ) throw () { m_TCPPort = port; }
 
 	// get/set UDP port
-	uint getUDPPort () const throw () { return m_UDPPort; }
+	uint getUDPPort ()  { return m_UDPPort; }
 	void setUDPPort ( uint port ) throw () { m_UDPPort = port; }
 
 	// get/set GameServerGroupID
@@ -72,7 +72,7 @@ public :
 	void setCastleFollowingServerID( ServerID_t sID ) { m_CastleFollowingServerID = sID; }
 
 	// get debug string
-	string toString () const throw () 
+	string toString ()  
 	{
 		StringStream msg;
 		msg << "GameServerInfo("

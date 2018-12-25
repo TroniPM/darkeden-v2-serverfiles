@@ -17,17 +17,17 @@
 class CGRequestPowerPoint : public Packet
 {
 public:
-	CGRequestPowerPoint () throw ();
-	~CGRequestPowerPoint () throw ();
+	CGRequestPowerPoint ();
+	~CGRequestPowerPoint ();
 	
 public:
     void read ( SocketInputStream & iStream ) throw ( ProtocolException , Error );
-    void write ( SocketOutputStream & oStream ) const throw ( ProtocolException , Error );
+    void write ( SocketOutputStream & oStream ) ;
 	void execute ( Player * pPlayer ) throw ( ProtocolException , Error );
-    PacketID_t getPacketID () const throw () { return PACKET_CG_REQUEST_POWER_POINT; }
-	PacketSize_t getPacketSize () const throw () { return szBYTE + m_CellNum.size(); }
-	string getPacketName () const throw () { return "CGRequestPowerPoint"; }
-	string toString () const throw ();
+    PacketID_t getPacketID ()  { return PACKET_CG_REQUEST_POWER_POINT; }
+	PacketSize_t getPacketSize ()  { return szBYTE + m_CellNum.size(); }
+	string getPacketName ()  { return "CGRequestPowerPoint"; }
+	string toString () ;
 
 public:
 	// get / set cell number
@@ -46,9 +46,9 @@ class CGRequestPowerPointFactory : public PacketFactory
 {
 public:
 	Packet * createPacket () throw () { return new CGRequestPowerPoint(); }
-	string getPacketName () const throw () { return "CGRequestPowerPoint"; }
-	PacketID_t getPacketID () const throw () { return Packet::PACKET_CG_REQUEST_POWER_POINT; }
-	PacketSize_t getPacketMaxSize () const throw () { return szBYTE + 12;}
+	string getPacketName ()  { return "CGRequestPowerPoint"; }
+	PacketID_t getPacketID ()  { return Packet::PACKET_CG_REQUEST_POWER_POINT; }
+	PacketSize_t getPacketMaxSize ()  { return szBYTE + 12;}
 };
 
 //////////////////////////////////////////////////////////////////////////////
@@ -58,7 +58,7 @@ public:
 class CGRequestPowerPointHandler 
 {
 public:
-	static void execute ( CGRequestPowerPoint * pCGRequestPowerPoint , Player * pPlayer ) throw (ProtocolException, Error);
+	static void execute ( CGRequestPowerPoint * pCGRequestPowerPoint , Player * pPlayer );
 };
 
 

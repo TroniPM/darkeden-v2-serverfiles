@@ -23,8 +23,8 @@ public:
 public:
 	virtual EventClass getEventClass()  { return EVENT_CLASS_KICK; }
 
-	virtual void activate() throw(Error);
-	void sendMessage() throw (Error);
+	virtual void activate();
+	void sendMessage();
 
 	virtual string toString() ;
 };

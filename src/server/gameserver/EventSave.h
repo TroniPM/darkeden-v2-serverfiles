@@ -17,7 +17,7 @@
 class EventSave : public Event 
 {
 public:
-	EventSave(GamePlayer* pGamePlayer) throw(Error);
+	EventSave(GamePlayer* pGamePlayer);
 	virtual ~EventSave() throw();
 
 public:
@@ -28,7 +28,7 @@ public:
 	virtual bool isTemporary()  { return false; }
 	virtual bool isPermanent()  { return true; }
 
-	virtual void activate() throw(Error);
+	virtual void activate();
 	
 	virtual string toString()  { return "EventSave Event"; }
 };

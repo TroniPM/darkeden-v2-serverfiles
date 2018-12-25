@@ -64,8 +64,8 @@ class CGSelectWayPointFactory : public PacketFactory
 class CGSelectWayPointHandler 
 {
 public:
-	static void execute(CGSelectWayPoint* pCGSelectWayPoint, Player* pPlayer) throw(Error);
-	static void executeEnterQuestZone(CGSelectWayPoint* pCGSelectWayPoint, Player* pPlayer, int targetDynamicZoneType ) throw(Error);
+	static void execute(CGSelectWayPoint* pCGSelectWayPoint, Player* pPlayer);
+	static void executeEnterQuestZone(CGSelectWayPoint* pCGSelectWayPoint, Player* pPlayer, int targetDynamicZoneType );
 };
 
 #endif

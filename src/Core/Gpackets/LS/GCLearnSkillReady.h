@@ -117,7 +117,7 @@ class  GCLearnSkillReadyHandler {
 public :
 
 	// execute packet's handler
-	static void execute( GCLearnSkillReady* pGCLearnSkillReady, Player* pPlayer) throw(Error);
+	static void execute( GCLearnSkillReady* pGCLearnSkillReady, Player* pPlayer);
 
 };
 

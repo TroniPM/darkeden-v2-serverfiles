@@ -28,13 +28,13 @@ public :
 	// 나중에는 이거 인터페이스로 해결할 전망이다.
 
 	// read from socket input stream
-	void read (SocketInputStream & iStream) throw (ProtocolException, Error);
+	void read (SocketInputStream & iStream);
 
 	// write to socket output stream
-	void write (SocketOutputStream & oStream) const throw (ProtocolException, Error);
+	void write (SocketOutputStream & oStream) ;
 
 	// get size of object
-	uint getSize () const throw () { return szWORD + szBYTE* 5; }
+	uint getSize ()  { return szWORD + szBYTE* 5; }
 	static uint getMaxSize () throw () { return szWORD + szBYTE* 5; }
 
 
@@ -42,31 +42,31 @@ public :
 
 
 	// get/set year
-	WORD getYear () const throw () { return m_Year; }
+	WORD getYear ()  { return m_Year; }
 	void setYear (WORD year) throw () { m_Year = year; }
 
 	// get/set month
-	BYTE getMonth () const throw () { return m_Month; }
+	BYTE getMonth ()  { return m_Month; }
 	void setMonth (BYTE month) throw () { m_Month = month; }
 
 	// get/set day
-	BYTE getDay () const throw () { return m_Day; }
+	BYTE getDay ()  { return m_Day; }
 	void setDay (BYTE day) throw () { m_Day = day; }
 
 	// get/set hour
-	BYTE getHour () const throw () { return m_Hour; }
+	BYTE getHour ()  { return m_Hour; }
 	void setHour (BYTE hour) throw () { m_Hour = hour; }
 
 	// get/set minute
-	BYTE getMinute () const throw () { return m_Minute; }
+	BYTE getMinute ()  { return m_Minute; }
 	void setMinute (BYTE minute) throw () { m_Minute = minute; }
 
 	// get/set second
-	BYTE getSecond () const throw () { return m_Second; }
+	BYTE getSecond ()  { return m_Second; }
 	void setSecond (BYTE second) throw () { m_Second = second; }
 
 	// get english month string
-	string getMonthString () const throw ()
+	string getMonthString () 
 	{
 		switch (m_Month) {
 			case 1 : return "JAN";
@@ -86,7 +86,7 @@ public :
 	}
 
 	// get debug string
-	string toString () const throw ();
+	string toString () ;
 
 private :
 

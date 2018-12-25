@@ -47,7 +47,7 @@ public:
 	~ItemNumberManager() throw();
 
 public:
-	void 	init() throw(Error);
+	void 	init();
 	NUMBER_INFO* getItemNumber(Item::ItemClass Class, ItemType_t ItemType) ;
 	{
 		return m_ItemNumberInfos[Class][ItemType];

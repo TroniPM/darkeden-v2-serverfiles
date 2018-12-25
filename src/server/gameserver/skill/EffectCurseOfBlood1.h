@@ -16,16 +16,16 @@
 class EffectCurseOfBlood1 : public Effect 
 {
 public:
-	EffectCurseOfBlood1(Creature* pCreature) throw(Error);
+	EffectCurseOfBlood1(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_CURSE_OF_BLOOD1; }
 
-	void affect() throw(Error);
-	void affect(Creature* pCreature) throw(Error);
+	void affect();
+	void affect(Creature* pCreature);
 
-	void unaffect() throw(Error);
-	void unaffect(Creature* pCreature) throw(Error);
+	void unaffect();
+	void unaffect(Creature* pCreature);
 
 	string toString() ;
 

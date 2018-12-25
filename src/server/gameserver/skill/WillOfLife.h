@@ -23,7 +23,7 @@ public:
     string getSkillHandlerName()  { return "WillOfLife"; }
 	SkillType_t getSkillType()  { return SKILL_WILL_OF_LIFE; }
 
-	void execute(Vampire* pVampire, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
+	void execute(Vampire* pVampire, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };

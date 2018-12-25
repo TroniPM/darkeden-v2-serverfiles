@@ -50,8 +50,8 @@ public:
 	Gold_t increaseTaxBalance( Gold_t tax );
 	Gold_t decreaseTaxBalance( Gold_t tax );
 
-	Gold_t increaseTaxBalanceEx( Gold_t tax ) throw(Error);
-	Gold_t decreaseTaxBalanceEx( Gold_t tax ) throw(Error);
+	Gold_t increaseTaxBalanceEx( Gold_t tax );
+	Gold_t decreaseTaxBalanceEx( Gold_t tax );
 
 	const list<OptionType_t>& getOptionTypeList()  { return m_BonusOptionList; }
 	void setOptionTypeList( const string& options ) throw();
@@ -94,22 +94,22 @@ public:
 	CastleInfoManager();
 	~CastleInfoManager();
 public:
-	void init() throw(Error);
-	void load() throw(Error);
-	void save(ZoneID_t zoneID) throw(Error);
+	void init();
+	void load();
+	void save(ZoneID_t zoneID);
 
-	void addCastleInfo( CastleInfo* pCastleInfo ) throw(Error);
-	void deleteCastleInfo( ZoneID_t zoneID ) throw(Error);
+	void addCastleInfo( CastleInfo* pCastleInfo );
+	void deleteCastleInfo( ZoneID_t zoneID );
 	CastleInfo* getCastleInfo( ZoneID_t zoneID ) ;
 	int  size() const { return m_CastleInfos.size(); }
 
-	bool modifyCastleOwner(ZoneID_t zoneID, PlayerCreature* pPC ) throw(Error);
-	bool modifyCastleOwner(ZoneID_t zoneID, Race_t race, GuildID_t guildID ) throw (Error);
-	bool tinysave( ZoneID_t zoneID, const string& query ) throw(Error);
-	bool increaseTaxBalance( ZoneID_t zoneID, Gold_t tax ) throw(Error);
-	bool decreaseTaxBalance( ZoneID_t zoneID, Gold_t tax ) throw(Error);
+	bool modifyCastleOwner(ZoneID_t zoneID, PlayerCreature* pPC );
+	bool modifyCastleOwner(ZoneID_t zoneID, Race_t race, GuildID_t guildID );
+	bool tinysave( ZoneID_t zoneID, const string& query );
+	bool increaseTaxBalance( ZoneID_t zoneID, Gold_t tax );
+	bool decreaseTaxBalance( ZoneID_t zoneID, Gold_t tax );
 
-	bool setItemTaxRatio( Zone* pZone, int itemTaxRatio ) throw(Error);
+	bool setItemTaxRatio( Zone* pZone, int itemTaxRatio );
 	const hash_map<ZoneID_t, CastleInfo*>& getCastleInfos() const 	{ return m_CastleInfos; }
 
 	int getItemTaxRatio( const PlayerCreature* pPC, const NPC* pNPC = NULL ) ;
@@ -124,28 +124,28 @@ public:
 	CastleInfo* getGuildCastleInfo( GuildID_t guildID ) ;
 	list<CastleInfo*> getGuildCastleInfos( GuildID_t guildID ) ;
 
-	bool getResurrectPosition( PlayerCreature* pPC, ZONE_COORD& zoneCoord ) throw (Error);
+	bool getResurrectPosition( PlayerCreature* pPC, ZONE_COORD& zoneCoord );
 
 	//----------------------------------------------------------------------
 	// CastleZoneID 관련
 	//----------------------------------------------------------------------
 	bool 		isCastleZone(ZoneID_t castleZoneID, ZoneID_t targetZoneID) ;
 	bool		isCastleZone(ZoneID_t zoneID) const;
-	void		clearCastleZoneIDs() throw (Error);
+	void		clearCastleZoneIDs();
 	bool	 	getCastleZoneID(ZoneID_t zoneID, ZoneID_t &castleZoneID) ;
-	void 		setCastleZoneID(ZoneID_t zoneID, ZoneID_t castleZoneID) throw (Error);
+	void 		setCastleZoneID(ZoneID_t zoneID, ZoneID_t castleZoneID);
 	bool		isSameCastleZone(ZoneID_t zoneID1, ZoneID_t zoneID2) ;
 
 	//----------------------------------------------------------------------
 	// 모든 성에 적용 되는 것들
 	//----------------------------------------------------------------------
-	void	releaseAllSafeZone() throw (Error);
-	void    resetAllSafeZone() throw (Error);
+	void	releaseAllSafeZone();
+	void    resetAllSafeZone();
 
-	void	deleteAllNPCs() throw (Error);
-	void	loadAllNPCs() throw (Error);
+	void	deleteAllNPCs();
+	void	loadAllNPCs();
 
-	void	transportAllOtherRace() throw (Error);
+	void	transportAllOtherRace();
 
 	ZoneID_t 	getCastleZoneID(ShrineID_t shrineID) ;
 	void		broadcastShrinePacket(ShrineID_t shrineID, Packet* pPacket) ;

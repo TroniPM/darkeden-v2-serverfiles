@@ -21,7 +21,7 @@ public:
 	virtual ConditionType_t getConditionType()  { return CONDITION_PC_HAS_PARTY; }
 	virtual bool isPassive()  { return true; }
 	virtual bool isSatisfied(Creature* pNPC, Creature* pPC = NULL, void* pParam = NULL) ;
-	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
+	virtual void read(PropertyBuffer & propertyBuffer);
 	virtual string toString() ;
 private:
 	int m_Party;

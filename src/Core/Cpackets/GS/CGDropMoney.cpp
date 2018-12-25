@@ -79,7 +79,7 @@ void CGDropMoney::execute (Player* pPlayer)
 }
 
 string CGDropMoney::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

@@ -133,7 +133,7 @@ class GCMPRecoveryStartHandler {
 public :
 
 	// execute packet's handler
-	static void execute(GCMPRecoveryStart* pGCMPRecoveryStart, Player* pPlayer) throw(Error);
+	static void execute(GCMPRecoveryStart* pGCMPRecoveryStart, Player* pPlayer);
 
 };
 

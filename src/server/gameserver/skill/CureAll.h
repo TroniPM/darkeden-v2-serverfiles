@@ -23,10 +23,10 @@ public:
     string getSkillHandlerName()  { return "CureAll"; }
 	SkillType_t getSkillType()  { return SKILL_CURE_ALL; }
 
-	void execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
-	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
+	void execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID);
+	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID);
 
-	void execute(Monster* pMonster, Creature* pTargetCreature) throw(Error);
+	void execute(Monster* pMonster, Creature* pTargetCreature);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };

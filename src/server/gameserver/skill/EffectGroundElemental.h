@@ -17,13 +17,13 @@
 class EffectGroundElemental : public Effect 
 {
 public:
-	EffectGroundElemental(Creature* pCreature) throw(Error);
+	EffectGroundElemental(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_GROUND_ELEMENTAL_CENTER; }
 
-	void unaffect() throw(Error);
-	void unaffect(Creature* pCreature) throw(Error);
+	void unaffect();
+	void unaffect(Creature* pCreature);
 	string toString() ;
 
 public:

@@ -23,7 +23,7 @@ public:
     string getSkillHandlerName()  { return "IllusionOfAvenge"; }
 	SkillType_t getSkillType()  { return SKILL_ILLUSION_OF_AVENGE; }
 
-	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
+	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };

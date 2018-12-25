@@ -23,7 +23,7 @@ public:
     string getSkillHandlerName()  { return "SummonFireElemental"; }
 	SkillType_t getSkillType()  { return SKILL_SUMMON_FIRE_ELEMENTAL; }
 
-	void execute(Ousters* pOusters,  OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
+	void execute(Ousters* pOusters,  OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };

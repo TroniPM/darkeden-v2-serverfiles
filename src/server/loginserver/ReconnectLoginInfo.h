@@ -38,7 +38,7 @@ public :
 	~ReconnectLoginInfo () throw () {}
 
 	// get/set client ip
-	string getClientIP () const throw () { return m_ClientIP; }
+	string getClientIP ()  { return m_ClientIP; }
 	void setClientIP ( const string & clientIP ) throw () { m_ClientIP = clientIP; }
 
 	// get/set PlayerID
@@ -46,15 +46,15 @@ public :
 	void setPlayerID( const string & PlayerID ) throw() { m_PlayerID = PlayerID; }
 
 	// get/set expire time
-	Timeval getExpireTime () const throw () { return m_ExpireTime; }
+	Timeval getExpireTime ()  { return m_ExpireTime; }
 	void setExpireTime ( Timeval tv ) throw () { m_ExpireTime = tv; }
 	
 	// get/set validation key
-	DWORD getKey () const throw () { return m_Key; }
+	DWORD getKey ()  { return m_Key; }
 	void setKey ( DWORD key ) throw () { m_Key = key; }
 
 	// get debug string
-	string toString () const throw () 
+	string toString ()  
 	{
 		StringStream msg;
 		msg << "ReconnectLoginInfo(ClientIP:" << m_ClientIP 

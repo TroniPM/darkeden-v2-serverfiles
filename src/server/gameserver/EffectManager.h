@@ -21,11 +21,11 @@
 class EffectManager 
 {
 public:
-	EffectManager() throw(Error);
+	EffectManager();
 	virtual ~EffectManager() throw();
 
 public:
-	void save(const string & ownerID) throw(Error);
+	void save(const string & ownerID);
 
 	EffectInfo* getEffectInfo() throw();
 
@@ -50,10 +50,10 @@ public:
 
 	// 일정 시간마다 실행되어야 하는 이펙트를 찾아서 affect 시키거나, 
 	// expire 된 이펙트를 삭제한다.
-//	int heartbeat() throw(Error);
-	int heartbeat(const Timeval& currentTime) throw(Error);
+//	int heartbeat();
+	int heartbeat(const Timeval& currentTime);
 
-	void	sendEffectInfo(Creature* pCreature, Zone* pZone, ZoneCoord_t x, ZoneCoord_t y) throw(Error);
+	void	sendEffectInfo(Creature* pCreature, Zone* pZone, ZoneCoord_t x, ZoneCoord_t y);
 
 	// 현재 이펙트 개수 반환
 	uint getSize() const { return m_Effects.size(); }

@@ -23,7 +23,7 @@ public:
     string getSkillHandlerName()  { return "DivineSpirits"; }
 	SkillType_t getSkillType()  { return SKILL_DIVINE_SPIRITS; }
 
-	void execute(Ousters* pOusters,  OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
+	void execute(Ousters* pOusters,  OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };

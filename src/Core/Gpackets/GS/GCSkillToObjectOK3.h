@@ -148,7 +148,7 @@ class GCSkillToObjectOK3Handler {
 public :
 
 	// execute packet's handler
-	static void execute(GCSkillToObjectOK3* pGCSkillToObjectOK3, Player* pPlayer) throw(Error);
+	static void execute(GCSkillToObjectOK3* pGCSkillToObjectOK3, Player* pPlayer);
 
 };
 

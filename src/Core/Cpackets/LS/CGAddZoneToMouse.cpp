@@ -89,7 +89,7 @@ void CGAddZoneToMouse::execute (Player* pPlayer)
 }
 
 string CGAddZoneToMouse::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

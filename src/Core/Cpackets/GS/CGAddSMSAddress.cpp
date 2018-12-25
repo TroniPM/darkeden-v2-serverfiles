@@ -72,7 +72,7 @@ void CGAddSMSAddress::execute (Player* pPlayer)
 }
 
 string CGAddSMSAddress::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

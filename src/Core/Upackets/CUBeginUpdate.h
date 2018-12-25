@@ -40,37 +40,37 @@ public :
 	void read ( Socket * pSocket ) throw ( ProtocolException , Error );
 		    
     // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
-    void write ( SocketOutputStream & oStream ) const throw ( ProtocolException , Error );
+    void write ( SocketOutputStream & oStream ) ;
 
 	// execute packet's handler
 	void execute ( Player * pPlayer ) throw ( ProtocolException , Error );
 
 	// get packet id
-	PacketID_t getPacketID () const throw () { return PACKET_CU_BEGIN_UPDATE; }
+	PacketID_t getPacketID ()  { return PACKET_CU_BEGIN_UPDATE; }
 	
 	// get packet's body size
-	PacketSize_t getPacketSize () const throw () { return szWORD + szWORD + szWORD; }
+	PacketSize_t getPacketSize ()  { return szWORD + szWORD + szWORD; }
 
 	//
 	static PacketSize_t getPacketMaxSize () throw () { return szWORD + szWORD + szWORD; }
 
 	// get packet name
-	string getPacketName () const throw () { return "CUBeginUpdate"; }
+	string getPacketName ()  { return "CUBeginUpdate"; }
 	
 	// get packet's debug string
-	string toString () const throw ();
+	string toString () ;
 
 public :
 
 	// get/set client version
-	WORD getVersion () const throw () { return m_Version; }
+	WORD getVersion ()  { return m_Version; }
 	void setVersion ( WORD version ) throw () { m_Version = version; }
 
 	// get/set client version
-	WORD getGuildVersion () const throw () { return m_GuildVersion; }
+	WORD getGuildVersion ()  { return m_GuildVersion; }
 	void setGuildVersion ( WORD version ) throw () { m_GuildVersion = version; }
 
-	WORD getInfoVersion () const throw () { return m_InfoVersion; }
+	WORD getInfoVersion ()  { return m_InfoVersion; }
 	void setInfoVersion ( WORD version ) throw () { m_InfoVersion = version; }
 
 	TYPE getType() const { return m_Type; }
@@ -105,13 +105,13 @@ public :
 	Packet * createPacket () throw () { return new CUBeginUpdate(); }
 
 	// get packet name
-	string getPacketName () const throw () { return "CUBeginUpdate"; }
+	string getPacketName ()  { return "CUBeginUpdate"; }
 	
 	// get packet id
-	PacketID_t getPacketID () const throw () { return Packet::PACKET_CU_BEGIN_UPDATE; }
+	PacketID_t getPacketID ()  { return Packet::PACKET_CU_BEGIN_UPDATE; }
 
 	// get packet's max body size
-	PacketSize_t getPacketMaxSize () const throw () { return szWORD + szWORD + szWORD; }
+	PacketSize_t getPacketMaxSize ()  { return szWORD + szWORD + szWORD; }
 
 };
 

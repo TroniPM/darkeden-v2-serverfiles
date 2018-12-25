@@ -131,7 +131,7 @@ class GCRemoveEffectHandler {
 public :
 
 	// execute packet's handler
-	static void execute(GCRemoveEffect* pGCRemoveEffect, Player* pPlayer) throw(Error);
+	static void execute(GCRemoveEffect* pGCRemoveEffect, Player* pPlayer);
 
 };
 

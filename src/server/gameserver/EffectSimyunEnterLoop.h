@@ -17,21 +17,21 @@
 class EffectSimyunEnterLoop : public Effect 
 {
 public:
-	EffectSimyunEnterLoop(Creature* pCreature) throw(Error);
-	~EffectSimyunEnterLoop() throw(Error);
+	EffectSimyunEnterLoop(Creature* pCreature);
+	~EffectSimyunEnterLoop();
 
 public:
 	void affect() throw(Error) {}
-	void affect(Creature* pCreature) throw(Error);
+	void affect(Creature* pCreature);
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect() throw(Error); 
+	void unaffect(Creature* pCreature);
+	void unaffect(); 
 
     EffectClass getEffectClass()  { return EFFECT_CLASS_SIMYUN_ENTER_LOOP; }
 
-    virtual void create(const string & ownerID) throw(Error);
-    virtual void save(const string & ownerID) throw(Error);
-    virtual void destroy(const string & ownerID) throw(Error);
+    virtual void create(const string & ownerID);
+    virtual void save(const string & ownerID);
+    virtual void destroy(const string & ownerID);
 
 	string toString() ;
 
@@ -55,7 +55,7 @@ public:
 	virtual string getEffectClassName()  { return "EffectSimyunEnterLoop"; }
 
 public:
-	virtual void load(Creature* pCreature) throw(Error);
+	virtual void load(Creature* pCreature);
 };
 
 extern EffectSimyunEnterLoopLoader* g_pEffectSimyunEnterLoopLoader;

@@ -303,7 +303,7 @@ void SocketInputStream::skip ( uint len )
 //
 //////////////////////////////////////////////////////////////////////
 uint SocketInputStream::fill () 
-	throw ( IOException , Error )
+	
 {
 	__BEGIN_TRY
 
@@ -492,7 +492,7 @@ uint SocketInputStream::fill ()
 //
 //////////////////////////////////////////////////////////////////////
 uint SocketInputStream::fill_RAW ()
-	 throw ( IOException , Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -555,7 +555,7 @@ uint SocketInputStream::fill_RAW ()
 // resize buffer
 //////////////////////////////////////////////////////////////////////
 void SocketInputStream::resize ( int size )
-	 throw ( IOException , Error )
+	 
 {
 	__BEGIN_TRY
 		

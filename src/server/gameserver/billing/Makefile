@@ -130,7 +130,7 @@ CommonBillingPacket.o: CommonBillingPacket.cpp CommonBillingPacket.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
  /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
- /usr/include/bits/stdio_lim.h /home/darkeden/vs/src/Core/Packet.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
@@ -212,7 +212,7 @@ CommonBillingPacketHandler.o: CommonBillingPacketHandler.cpp \
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
  /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
- /usr/include/bits/stdio_lim.h /home/darkeden/vs/src/Core/Packet.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
@@ -332,7 +332,7 @@ BillingPlayer.o: BillingPlayer.cpp BillingPlayer.h \
  /home/darkeden/src/libs/stl_multimap.h \
  /home/darkeden/vs/src/Core/PacketFactoryManager.h \
  /home/darkeden/vs/src/Core/PacketFactory.h CommonBillingPacket.h \
- /usr/include/bits/stdio_lim.h
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h
 BillingPlayerManager.o: BillingPlayerManager.cpp \
  BillingPlayerManager.h /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
@@ -398,7 +398,7 @@ BillingPlayerManager.o: BillingPlayerManager.cpp \
  /home/darkeden/vs/src/Core/SocketOutputStream.h \
  /home/darkeden/vs/src/server/Mutex.h BillingInfo.h BillingPlayer.h \
  /home/darkeden/vs/src/Core/Player.h CommonBillingPacket.h \
- /usr/include/bits/stdio_lim.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  /home/darkeden/vs/src/Core/PacketFactory.h \
  /home/darkeden/vs/src/Core/Properties.h /usr/include/STL/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
@@ -425,7 +425,7 @@ BillingPlayerInfo.o: BillingPlayerInfo.cpp /usr/include/stdio.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
  /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
- /usr/include/bits/stdio_lim.h /home/darkeden/vs/src/Core/Assert.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h /home/darkeden/vs/src/Core/Assert.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \

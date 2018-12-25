@@ -119,7 +119,7 @@ class CGJoinGuildHandler {
 public:
 
 	// execute packet's handler
-	static void execute(CGJoinGuild* pCGJoinGuild, Player* pPlayer) throw(Error);
+	static void execute(CGJoinGuild* pCGJoinGuild, Player* pPlayer);
 
 };
 

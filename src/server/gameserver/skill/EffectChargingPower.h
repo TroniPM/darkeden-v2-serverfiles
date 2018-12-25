@@ -16,16 +16,16 @@
 class EffectChargingPower : public Effect 
 {
 public:
-	EffectChargingPower(Creature* pCreature) throw(Error);
+	EffectChargingPower(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_CHARGING_POWER; }
 
 	void affect() throw(Error) {}
-	void affect(Creature* pCreature) throw(Error);
+	void affect(Creature* pCreature);
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect() throw(Error); 
+	void unaffect(Creature* pCreature);
+	void unaffect(); 
 
 	string toString() ;
 

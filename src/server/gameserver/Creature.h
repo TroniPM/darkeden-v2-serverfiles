@@ -73,7 +73,7 @@ public:
 
 public:
     Creature(ObjectID_t objectID = 0, Player* pPlayer = NULL) throw();
-    virtual ~Creature() throw (Error);
+    virtual ~Creature();
 
 public:
 	virtual ObjectClass getObjectClass()  { return OBJECT_CLASS_CREATURE; }
@@ -144,8 +144,8 @@ public:
 	virtual void registerObject() throw(Error) = 0;
 
 	// 크리처에 대한 특정 좌표의 시야 상태를 리턴한다.
-	VisionState getVisionState(ZoneCoord_t x, ZoneCoord_t y) throw(Error); 
-	VisionState getVisionState(Coord_t x, Coord_t y, Sight_t sight) throw(Error);
+	VisionState getVisionState(ZoneCoord_t x, ZoneCoord_t y); 
+	VisionState getVisionState(Coord_t x, Coord_t y, Sight_t sight);
 
 	// get/set zone
 	Zone* getZone()  { return m_pZone; }
@@ -153,7 +153,7 @@ public:
 
 	// get/set zone id
 	ZoneID_t getZoneID() ;
-	void setZoneID(ZoneID_t zoneID) throw(Error);
+	void setZoneID(ZoneID_t zoneID);
 
 	// get/set(x,y,dir)
 	ZoneCoord_t getX()  { return m_X; }
@@ -213,7 +213,7 @@ public :
 
 	// get/set zone id
 	ZoneID_t getNewZoneID() ;
-	//void setNewZoneID(ZoneID_t zoneID) throw(Error);
+	//void setNewZoneID(ZoneID_t zoneID);
 
 	// get/set(x,y,dir)
 	ZoneCoord_t getNewX()  { return m_NewX; }
@@ -225,10 +225,10 @@ public :
 	void setNewXY(ZoneCoord_t x, ZoneCoord_t y) throw() { m_NewX = x; m_NewY = y; }
 
 public:
-	bool isEffect(Effect::EffectClass EClass) throw (Error);
-	void deleteEffect(Effect::EffectClass EClass) throw (Error);
+	bool isEffect(Effect::EffectClass EClass);
+	void deleteEffect(Effect::EffectClass EClass);
 	Effect* findEffect(Effect::EffectClass EClass) ;
-	void addEffect(Effect* pEffect) throw (Error);
+	void addEffect(Effect* pEffect);
 
 public:
 	virtual Level_t getLevel()  = 0;

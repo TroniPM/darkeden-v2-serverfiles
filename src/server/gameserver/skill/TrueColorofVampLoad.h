@@ -23,7 +23,7 @@ public:
 	string getSkillHandlerName()  { return "TrueColorofVampLoad"; }
 	SkillType_t getSkillType()  { return SKILL_TRUE_COLOR_OF_VAMP_LOAD; }
 
-	void execute(Vampire* pSlayer,  VampireSkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
+	void execute(Vampire* pSlayer,  VampireSkillSlot* pSkillSlot, CEffectID_t CEffectID);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };

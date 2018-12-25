@@ -31,15 +31,15 @@ public :
 
 	virtual QuestType	getQuestType() const 	{ return QUEST_MONSTER_KILL; }
 
-	virtual void		create() throw (Error);
-	virtual void        save() throw (Error);
+	virtual void		create();
+	virtual void        save();
 
-	virtual bool		checkSuccess(const QuestEvent* pQuestEvent) throw (Error);
-	virtual bool		checkComplete() throw (Error);
+	virtual bool		checkSuccess(const QuestEvent* pQuestEvent);
+	virtual bool		checkComplete();
 
 public :
 	virtual void        setObjective(const string& text) throw (Error)	{ MonsterSelector::setMonster(text); }
-	virtual string      getObjectiveToString() const throw (Error)		{ return MonsterSelector::toString(); }
+	virtual string      getObjectiveToString() 		{ return MonsterSelector::toString(); }
 
 	string				toString() ;
 

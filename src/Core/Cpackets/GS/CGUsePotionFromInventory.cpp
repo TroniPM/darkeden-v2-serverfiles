@@ -89,7 +89,7 @@ void CGUsePotionFromInventory::execute (Player* pPlayer)
 }
 
 string CGUsePotionFromInventory::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

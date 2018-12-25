@@ -16,16 +16,16 @@
 class EffectSatelliteBombAim2 : public Effect 
 {
 public:
-	EffectSatelliteBombAim2(Creature* pCreature, Zone* pZone, ZoneCoord_t x, ZoneCoord_t y) throw(Error);
+	EffectSatelliteBombAim2(Creature* pCreature, Zone* pZone, ZoneCoord_t x, ZoneCoord_t y);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_SKILL_SATELLITE_BOMB_AIM2; }
 
 	void affect() throw(Error){}
-	void affect(Creature* pCreature) throw(Error);
+	void affect(Creature* pCreature);
 
-	void unaffect() throw(Error);
-	void unaffect(Creature* pCreature) throw(Error);
+	void unaffect();
+	void unaffect(Creature* pCreature);
 
 	string toString() ;
 

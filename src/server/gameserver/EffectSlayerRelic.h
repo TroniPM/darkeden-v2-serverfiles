@@ -17,19 +17,19 @@
 class EffectSlayerRelic : public Effect 
 {
 public:
-	EffectSlayerRelic(Creature* pCreature) throw(Error);
-	EffectSlayerRelic(Item* pItem) throw(Error);
+	EffectSlayerRelic(Creature* pCreature);
+	EffectSlayerRelic(Item* pItem);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_SLAYER_RELIC; }
 
 	void affect() throw(Error) {}
-	void affect(Creature* pCreature) throw(Error);
-	void affect(Item* pItem) throw(Error);
+	void affect(Creature* pCreature);
+	void affect(Item* pItem);
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect(Item* pItem) throw(Error);
-	void unaffect() throw(Error); 
+	void unaffect(Creature* pCreature);
+	void unaffect(Item* pItem);
+	void unaffect(); 
 
 	string toString() ;
 

@@ -30,7 +30,7 @@ public:
 	void addConnectionInfo(ConnectionInfo* pConnectionInfo) throw(DuplicatedException, Error);
 	void deleteConnectionInfo(const string& ip) throw(NoSuchElementException, Error);
 	ConnectionInfo* getConnectionInfo(const string& ip) throw(NoSuchElementException, Error);
-	void heartbeat() throw(Error);	
+	void heartbeat();	
 	string toString() ;
 
 private:

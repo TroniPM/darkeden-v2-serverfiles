@@ -53,7 +53,7 @@ void CGAddQuickSlotToMouse::execute (Player* pPlayer)
 }
 
 string CGAddQuickSlotToMouse::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

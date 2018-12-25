@@ -110,7 +110,7 @@ class GCPhoneConnectionFailedHandler {
 public :
 
 	// execute packet's handler
-	static void execute(GCPhoneConnectionFailed* pGCPhoneConnectionFailed, Player* pPlayer) throw(Error);
+	static void execute(GCPhoneConnectionFailed* pGCPhoneConnectionFailed, Player* pPlayer);
 
 };
 

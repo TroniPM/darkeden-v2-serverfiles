@@ -74,7 +74,7 @@ public:
 class GCQuestStatusHandler 
 {
 public:
-	static void execute(GCQuestStatus* pGCQuestStatus, Player* pPlayer) throw(Error);
+	static void execute(GCQuestStatus* pGCQuestStatus, Player* pPlayer);
 
 };
 

@@ -23,9 +23,9 @@ public :
     string getSkillHandlerName()  { return "BlazeWalk2"; }
 	SkillType_t getSkillType()  { return SKILL_BLAZE_WALK2; }
 
-	void execute(Slayer* pSlayer, ObjectID_t ObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
-	void execute(Slayer* pSlayer, Creature* pTargetCreature, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
-	void execute(Slayer* pSlayer, ZoneCoord_t X, ZoneCoord_t Y, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
+	void execute(Slayer* pSlayer, ObjectID_t ObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID);
+	void execute(Slayer* pSlayer, Creature* pTargetCreature, SkillSlot* pSkillSlot, CEffectID_t CEffectID);
+	void execute(Slayer* pSlayer, ZoneCoord_t X, ZoneCoord_t Y, SkillSlot* pSkillSlot, CEffectID_t CEffectID);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };

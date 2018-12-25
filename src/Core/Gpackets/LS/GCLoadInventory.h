@@ -79,7 +79,7 @@ public:
 class GCLoadInventoryHandler 
 {
 public:
-	static void execute(GCLoadInventory* GCLoadInventory, Player* pPlayer) throw(Error);
+	static void execute(GCLoadInventory* GCLoadInventory, Player* pPlayer);
 
 };
 

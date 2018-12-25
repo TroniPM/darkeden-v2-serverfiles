@@ -55,7 +55,7 @@ void CGReloadFromInventory::execute (Player* pPlayer)
 }
 
 string CGReloadFromInventory::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

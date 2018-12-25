@@ -18,12 +18,12 @@ class InventorySlot
 {
 public: 
 	InventorySlot() throw()	: m_pItem(NULL) {}
-	~InventorySlot() throw(Error);
+	~InventorySlot();
 
 public:
 	Item* getItem() throw() { return m_pItem; }
 	void addItem(Item* pItem) throw();
-	void deleteItem() throw(Error);
+	void deleteItem();
 
 private: 
 	Item* m_pItem;

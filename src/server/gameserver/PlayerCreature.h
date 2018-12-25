@@ -70,8 +70,8 @@ public:
 	virtual ~PlayerCreature() throw();
 
 	virtual bool load() throw (InvalidProtocolException, Error);
-	virtual void tinysave(const string & field) const throw (Error) = 0;
-//	virtual void tinysave(const char* field) const throw (Error) = 0;
+	virtual void tinysave(const string & field)  = 0;
+//	virtual void tinysave(const char* field)  = 0;
 
 ////////////////////////////////////////////////////////////
 // OID 등록 관련 메쏘드
@@ -88,21 +88,21 @@ public:
 // 시간제한 아이템 관련 함수
 //////////////////////////////////////////////////////////////
 public:
-	bool wasteIfTimeLimitExpired(Item* pItem) throw (Error);
+	bool wasteIfTimeLimitExpired(Item* pItem);
 	virtual void checkItemTimeLimit() throw (Error) = 0;
-	void sendTimeLimitItemInfo() throw(Error);
-	void addTimeLimitItem(Item* pItem, DWORD time) throw(Error);
-	void sellItem( Item* pItem ) throw(Error);
-	void deleteItemByMorph( Item* pItem ) throw(Error);
-	void updateItemTimeLimit( Item* pItem, DWORD time ) throw(Error);
+	void sendTimeLimitItemInfo();
+	void addTimeLimitItem(Item* pItem, DWORD time);
+	void sellItem( Item* pItem );
+	void deleteItemByMorph( Item* pItem );
+	void updateItemTimeLimit( Item* pItem, DWORD time );
 	virtual void updateEventItemTime( DWORD time ) throw(Error) = 0;
-	void loadTimeLimitItem() throw(Error);
+	void loadTimeLimitItem();
 
 //////////////////////////////////////////////////////////////
 // 구매 상품 아이템 관련 함수
 //////////////////////////////////////////////////////////////
 public:
-	void loadGoods() throw(Error);
+	void loadGoods();
 
 //////////////////////////////////////////////////////////////
 // 퀘스트 매니저 관련 함수
@@ -240,7 +240,7 @@ public:
 // 성향 시스템 관련
 ////////////////////////////////////////////////////////////
 	// enemy specific methods
-	void addEnemy(const string& Name) throw(Error);
+	void addEnemy(const string& Name);
 	void deleteEnemy(const string& Name) throw(NoSuchElementException, Error);
 
 	// 이 특정 사용자가 이미 선공을 하였는가?
@@ -291,9 +291,9 @@ protected:
 
 public :
 	// by sigi. 2002.11.19
-	bool isBillingPlayAvaiable() throw(Error);
-	virtual bool isPayPlayAvaiable() throw(Error);
-	virtual bool canPlayFree() throw(Error);
+	bool isBillingPlayAvaiable();
+	virtual bool isPayPlayAvaiable();
+	virtual bool canPlayFree();
 
 public:
 	Item*	getQuestItem() const { return m_pQuestItem; }
@@ -301,11 +301,11 @@ public:
 
 public :
 	// by sigi. 2002.12.3
-/*	void	loadQuest() throw (Error);
+/*	void	loadQuest();
 	bool 	hasQuest() const 	{ return m_pQuestManager!=NULL && !m_pQuestManager->isEmpty(); }
-	bool 	addQuest(Quest* pQuest) throw (Error);
-	bool 	checkEvent(QuestEvent* pQuest) throw (Error);
-	Quest* 	removeCompleteQuest() throw (Error);
+	bool 	addQuest(Quest* pQuest);
+	bool 	checkEvent(QuestEvent* pQuest);
+	Quest* 	removeCompleteQuest();
 	void 	removeAllQuest() throw (Error)	{ if (m_pQuestManager!=NULL) m_pQuestManager->release(); }*/
 
 	virtual void initAllStatAndSend() = 0;
@@ -432,8 +432,8 @@ public:
 	void				clearItemNameInfoList() { m_ItemNameInfoList.clear(); }
 	const list<ItemNameInfo*>& getItemNameInfoList() const { return m_ItemNameInfoList; }
 	void				addItemNameInfoList( ItemNameInfo* itemNameInfo ) { m_ItemNameInfoList.push_back(itemNameInfo); }
-	bool				deleteItemNameInfoList( ObjectID_t objectID ) throw(Error);
-	string				getItemName( ObjectID_t objectID ) throw(Error);*/
+	bool				deleteItemNameInfoList( ObjectID_t objectID );
+	string				getItemName( ObjectID_t objectID );*/
 
 protected:
 	int						m_ConsumeMPRatio;

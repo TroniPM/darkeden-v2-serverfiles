@@ -154,7 +154,7 @@ class GCSkillToObjectOK5Handler {
 public :
 
 	// execute packet's handler
-	static void execute(GCSkillToObjectOK5* pGCSkillToObjectOK5, Player* pPlayer) throw(Error);
+	static void execute(GCSkillToObjectOK5* pGCSkillToObjectOK5, Player* pPlayer);
 
 };
 

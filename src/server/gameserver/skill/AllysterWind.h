@@ -23,7 +23,7 @@ public:
 	string getSkillHandlerName()  { return "AllysterWind"; }
 	SkillType_t getSkillType()  { return SKILL_ALLYSTER_WIND; }
 
-	void execute(Ousters* pSlayer,  OustersSkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
+	void execute(Ousters* pSlayer,  OustersSkillSlot* pSkillSlot, CEffectID_t CEffectID);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };

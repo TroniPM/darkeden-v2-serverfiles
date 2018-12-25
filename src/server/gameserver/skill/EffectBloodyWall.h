@@ -18,19 +18,19 @@
 class EffectBloodyWall : public Effect 
 {
 public:
-	EffectBloodyWall(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY) throw(Error);
+	EffectBloodyWall(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_BLOODY_WALL; }
 
-	void affect() throw(Error);
-	void affect(Creature* pCreature) throw(Error);
-	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject) throw(Error);
+	void affect();
+	void affect(Creature* pCreature);
+	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject);
 
-	void unaffect() throw(Error);
-	void unaffect(Creature* pCreature) throw(Error);
+	void unaffect();
+	void unaffect(Creature* pCreature);
 	void unaffect(Item* pItem) throw(Error) {}
-	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject) throw(Error);
+	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject);
 
 	string toString() ;
 
@@ -86,7 +86,7 @@ public:
 
 public:
 	virtual void load(Creature* pCreature) throw(Error) {}
-	virtual void load(Zone* pZone) throw(Error); 
+	virtual void load(Zone* pZone); 
 };
 
 extern EffectBloodyWallLoader* g_pEffectBloodyWallLoader;

@@ -42,7 +42,7 @@ public:
 	void		lock() throw(Error) { m_Mutex.lock(); }
 	void		unlock() throw(Error) { m_Mutex.unlock(); }
 
-	string		toString() throw(Error);
+	string		toString();
 
 protected:
 	void		setCurrentPCNum( int num ) { if ( num <= m_PCLimit && num >= 0 ) m_CurrentPCNum = num; }
@@ -68,15 +68,15 @@ public:
 	PKZoneInfoManager() { }
 	~PKZoneInfoManager() { }
 
-	void		load() throw(Error);
+	void		load();
 
-	void		addPKZoneInfo( PKZoneInfo* pPKZoneInfo ) throw(Error);
+	void		addPKZoneInfo( PKZoneInfo* pPKZoneInfo );
 	PKZoneInfo*	getPKZoneInfo( ZoneID_t	zoneID ) ;
 	bool		isPKZone( ZoneID_t zoneID ) ;
 
-	bool		canEnterPKZone( ZoneID_t zoneID ) throw(Error);
-	bool		enterPKZone( ZoneID_t zoneID ) throw(Error);
-	bool		leavePKZone( ZoneID_t zoneID ) throw(Error);
+	bool		canEnterPKZone( ZoneID_t zoneID );
+	bool		enterPKZone( ZoneID_t zoneID );
+	bool		leavePKZone( ZoneID_t zoneID );
 
 	bool		getResurrectPosition( ZoneID_t zoneID, ZONE_COORD& zoneCoord ) ;
 

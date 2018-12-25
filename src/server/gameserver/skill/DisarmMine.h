@@ -20,10 +20,10 @@ public :
 	~DisarmMine () throw () {}
 	
 public :
-    string getSkillHandlerName () const throw () { return "DisarmMine"; }
-	SkillType_t getSkillType () const throw () { return SKILL_DISARM_MINE; }
+    string getSkillHandlerName ()  { return "DisarmMine"; }
+	SkillType_t getSkillType ()  { return SKILL_DISARM_MINE; }
 
-	void execute(Slayer* pSlayer, ZoneCoord_t X, ZoneCoord_t Y, SkillSlot * pSkillSlot, CEffectID_t CEffectID) throw (Error);
+	void execute(Slayer* pSlayer, ZoneCoord_t X, ZoneCoord_t Y, SkillSlot * pSkillSlot, CEffectID_t CEffectID);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };

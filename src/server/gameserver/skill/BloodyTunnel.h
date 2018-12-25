@@ -23,7 +23,7 @@ public:
     string getSkillHandlerName()  { return "BloodyTunnel"; }
 	SkillType_t getSkillType()  { return SKILL_BLOODY_TUNNEL; }
 
-	void execute(Vampire* pVampire, ObjectID_t TargetObjectID, CoordInven_t X, CoordInven_t Y, CoordInven_t TargetX, CoordInven_t TargetY, VampireSkillSlot* pVampireSkillSlot) throw(Error);
+	void execute(Vampire* pVampire, ObjectID_t TargetObjectID, CoordInven_t X, CoordInven_t Y, CoordInven_t TargetX, CoordInven_t TargetY, VampireSkillSlot* pVampireSkillSlot);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };

@@ -97,7 +97,7 @@ void CGAddZoneToInventory::execute (Player* pPlayer)
 }
 
 string CGAddZoneToInventory::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

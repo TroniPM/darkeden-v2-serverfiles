@@ -16,14 +16,14 @@
 class EffectHasVampireRelic : public EffectHasRelic
 {
 public:
-	EffectHasVampireRelic(Creature* pCreature) throw(Error);
-	EffectHasVampireRelic(Item* pItem) throw(Error);
+	EffectHasVampireRelic(Creature* pCreature);
+	EffectHasVampireRelic(Item* pItem);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_HAS_VAMPIRE_RELIC; }
 
-	void affect(Creature* pCreature) throw(Error);
-	void affect(Item* pItem) throw(Error);
+	void affect(Creature* pCreature);
+	void affect(Item* pItem);
 
 	string toString() ;
 

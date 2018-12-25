@@ -53,7 +53,7 @@ void CGTakeOutGood::execute (Player* pPlayer)
 }
 
 string CGTakeOutGood::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

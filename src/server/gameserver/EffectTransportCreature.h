@@ -19,8 +19,8 @@ class Corpse;
 class EffectTransportCreature : public Effect 
 {
 public:
-	EffectTransportCreature(Creature* pCreature, ZoneID_t ZoneID, ZoneCoord_t x, ZoneCoord_t y, Turn_t delay) throw(Error);
-	virtual ~EffectTransportCreature() throw(Error);
+	EffectTransportCreature(Creature* pCreature, ZoneID_t ZoneID, ZoneCoord_t x, ZoneCoord_t y, Turn_t delay);
+	virtual ~EffectTransportCreature();
 
 public:
 	virtual EffectClass getEffectClass()  { return EFFECT_CLASS_TRANSPORT_CREATURE; }
@@ -28,11 +28,11 @@ public:
 	// OBJECT_PRIORITY_NONE 라는 뜻은, 타일에 들어가서는 안된다는 뜻이다.
 	virtual ObjectPriority getObjectPriority()  { return OBJECT_PRIORITY_NONE; }
 
-	virtual void affect() throw(Error);
-	virtual void affect(Creature* pCreature) throw(Error);
+	virtual void affect();
+	virtual void affect(Creature* pCreature);
 	
-	virtual void unaffect() throw(Error);
-	virtual void unaffect(Creature* pCreature) throw(Error);
+	virtual void unaffect();
+	virtual void unaffect(Creature* pCreature);
 
 	void create(const string & ownerID) throw(Error) {}
 	void save(const string & ownerID) throw(Error) {}

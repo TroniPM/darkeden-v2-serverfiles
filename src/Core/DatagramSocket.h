@@ -37,7 +37,7 @@ public :
 	DatagramSocket (uint port) throw (Error, BindException);
 
 	// destructor
-	~DatagramSocket () throw (Error);
+	~DatagramSocket ();
 
 	// send datagram to peer
 	uint send (Datagram* pDatagram) throw (ConnectException, Error);
@@ -46,7 +46,7 @@ public :
 	Datagram* receive () throw (ConnectException, Error);
 	
 	// get socket descriptor
-	SOCKET getSOCKET () const throw () { return m_SocketID; }
+	SOCKET getSOCKET ()  { return m_SocketID; }
 
 private :
 

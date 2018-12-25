@@ -32,8 +32,8 @@ class DatagramPacket;
 class GameServerManager
 {
 public :
-	GameServerManager () throw (Error);
-	~GameServerManager () throw (Error);
+	GameServerManager ();
+	~GameServerManager ();
 
 	void init () throw (Error) {}
 
@@ -41,7 +41,7 @@ public :
 	void stop() throw (Error) { m_bRunning = false; }
 
 	// main method
-	void run() throw (Error);
+	void run();
 
 	void sendDatagram ( Datagram * pDatagram ) throw ( ConnectException , Error );
 	void sendPacket ( string host , uint port , DatagramPacket * pPacket ) throw ( ConnectException , Error );

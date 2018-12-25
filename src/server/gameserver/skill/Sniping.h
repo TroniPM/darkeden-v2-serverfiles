@@ -23,7 +23,7 @@ public:
     string getSkillHandlerName()  { return "Sniping"; }
 	SkillType_t getSkillType()  { return SKILL_SNIPING; }
 
-	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
+	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 

@@ -58,7 +58,7 @@ public:
 public:
 
 	// void load() throw();
-	void load() throw(Error);
+	void load();
 	
 	// get CrystalOptionLoader
 	CrystalOptionLoader* getCrystalOptionLoader(int id) const;

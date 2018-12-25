@@ -122,7 +122,7 @@ void UpdateManager::save ( const string & filename ) const
 // read from socket 
 //--------------------------------------------------------------------------------
 void UpdateManager::read ( Socket * pSocket )
-	throw ( IOException , Error )
+	
 {
 	__BEGIN_TRY
 
@@ -152,7 +152,7 @@ void UpdateManager::read ( Socket * pSocket )
 // write to socket 
 //--------------------------------------------------------------------------------
 void UpdateManager::write ( Socket * pSocket ) const
-	throw ( IOException , Error )
+	
 {
 	__BEGIN_TRY
 

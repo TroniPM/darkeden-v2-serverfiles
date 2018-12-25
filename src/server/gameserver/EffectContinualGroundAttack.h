@@ -18,8 +18,8 @@ class Corpse;
 class EffectContinualGroundAttack : public Effect 
 {
 public:
-	EffectContinualGroundAttack(Zone* pZone, EffectClass attackEffect, Turn_t delay) throw(Error);
-	virtual ~EffectContinualGroundAttack() throw(Error);
+	EffectContinualGroundAttack(Zone* pZone, EffectClass attackEffect, Turn_t delay);
+	virtual ~EffectContinualGroundAttack();
 
 public:
 	virtual EffectClass getEffectClass()  { return EFFECT_CLASS_CONTINUAL_GROUND_ATTACK; }
@@ -27,9 +27,9 @@ public:
 	// OBJECT_PRIORITY_NONE 라는 뜻은, 타일에 들어가서는 안된다는 뜻이다.
 	virtual ObjectPriority getObjectPriority()  { return OBJECT_PRIORITY_NONE; }
 
-	virtual void affect() throw(Error);
+	virtual void affect();
 	
-	virtual void unaffect() throw(Error);
+	virtual void unaffect();
 
 	void create(const string & ownerID) throw(Error) {}
 	void save(const string & ownerID) throw(Error) {}

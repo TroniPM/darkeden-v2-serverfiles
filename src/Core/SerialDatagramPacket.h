@@ -45,35 +45,35 @@ public :
 	
 	// 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
 	// 데이터그램 패킷을 TCP 소켓으로 출력할 수 없다.
-	virtual void write (SocketOutputStream & oStream) const throw (ProtocolException, Error)
+	virtual void write (SocketOutputStream & oStream) 
 	{ 
 		throw Error("cannot write datagram-packet to TCP-socket-stream"); 
 	}
 
 	// SerialDatagram 객체로 패킷의 바이너리 이미지를 보낸다.
-	virtual void write (SerialDatagram & oDatagram) const throw (ProtocolException, Error) = 0;
+	virtual void write (SerialDatagram & oDatagram) ;
 	
 	// execute packet's handler
 	virtual void execute (Player* pPlayer) throw (ProtocolException, Error) = 0;
 	
 	// get packet's SerialDatagramPacketID	
-	virtual PacketID_t getPacketID () const throw () = 0;
+	virtual PacketID_t getPacketID ()  = 0;
 
 	// get packet's body size
-	virtual PacketSize_t getPacketSize () const throw () = 0;
+	virtual PacketSize_t getPacketSize ()  = 0;
 
 	// get packet's name
-	virtual string getPacketName () const throw () = 0;
+	virtual string getPacketName ()  = 0;
 	
 	// get packet's debug string
-	virtual string toString () const throw () = 0;
+	virtual string toString ()  = 0;
 
 	// get/set host
-	string getHost () const throw () { return m_Host; }
+	string getHost ()  { return m_Host; }
 	void setHost (string host) throw () { m_Host = host; }
 
 	// get/set port
-	uint getPort () const throw () { return m_Port; }
+	uint getPort ()  { return m_Port; }
 	void setPort (uint port) throw () { m_Port = port; }
 
 	// get/set serial number

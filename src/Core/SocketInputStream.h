@@ -92,14 +92,14 @@ public :
 	uint capacity () const { return m_BufferLen; }
 	
 	// get data length in buffer
-	uint length ();// const throw ();
+	uint length ();// ;
 	uint size () { return length(); }
 
 	// check if buffer is empty
 	bool isEmpty () { return m_Head == m_Tail; }
 
 	// get debug string
-	string toString ();// const throw ();
+	string toString ();// ;
 
 
 //////////////////////////////////////////////////

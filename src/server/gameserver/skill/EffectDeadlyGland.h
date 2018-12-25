@@ -17,16 +17,16 @@
 class EffectDeadlyGland : public Effect 
 {
 public:
-	EffectDeadlyGland(Creature* pCreature) throw(Error);
+	EffectDeadlyGland(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_DEADLY_GLAND; }
 	EffectClass getSendEffectClass()  { return m_SendEffectClass; }
 
-	void affect() throw(Error);
+	void affect();
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect() throw(Error);
+	void unaffect(Creature* pCreature);
+	void unaffect();
 
 	string toString() ;
 

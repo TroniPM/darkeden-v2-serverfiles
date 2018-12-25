@@ -39,7 +39,7 @@ void CGUseItemFromGQuestInventory::execute (Player* pPlayer)
 }
 
 string CGUseItemFromGQuestInventory::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

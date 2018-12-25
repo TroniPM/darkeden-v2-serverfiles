@@ -16,7 +16,7 @@
 class EventRegeneration : public Event 
 {
 public:
-	EventRegeneration(GamePlayer* pGamePlayer) throw(Error);
+	EventRegeneration(GamePlayer* pGamePlayer);
 	virtual ~EventRegeneration() throw();
 
 public:
@@ -25,7 +25,7 @@ public:
 	virtual bool isTemporary()  { return false; }
 	virtual bool isPermanent()  { return true; }
 
-	virtual void activate() throw(Error);
+	virtual void activate();
 	
 	virtual string toString()  { return "Regeneration Event"; }
 

@@ -73,7 +73,7 @@ public:
 	~DomainInfoManager() throw();
 
 	// initialize manager
-	void init() throw(Error);
+	void init();
 
 	// get sub info class manager
 	DomainInfoManager* getInfoManager(Domain DomainType) ;
@@ -105,7 +105,7 @@ public:
 
 public:
 	// initialize manager
-	void init() throw(Error);
+	void init();
 
 	// get item info
 	DomainInfo* getDomainInfo(SkillDomain DomainType, Level_t Level) ;

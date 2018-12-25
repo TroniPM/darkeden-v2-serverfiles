@@ -43,10 +43,10 @@ public :
 public :
 
 	// constructor
-	PacketIDSet (PlayerStatus playerStatus, PacketIDSetType packetIDSetType = PIST_NORMAL) throw ();
+	PacketIDSet (PlayerStatus playerStatus, PacketIDSetType packetIDSetType = PIST_NORMAL);
 
 	// destructor
-	~PacketIDSet () throw ();
+	~PacketIDSet ();
 
 	// add packet id to set
 	void addPacketID (PacketID_t packetID) throw (DuplicatedException);
@@ -55,13 +55,13 @@ public :
 	void deletePacketID (PacketID_t packetID) throw (NoSuchElementException);
 
 	// has packet id?
-	bool hasPacketID (PacketID_t packetID) const throw (NoSuchElementException, IgnorePacketException);
+	bool hasPacketID (PacketID_t packetID) ;
 
 	// get player status 
-	PlayerStatus getPlayerStatus () const throw () { return m_PlayerStatus; }
+	PlayerStatus getPlayerStatus ()  { return m_PlayerStatus; }
 
 	// get debug string
-	string toString () const throw ();
+	string toString () ;
 
 private :
 

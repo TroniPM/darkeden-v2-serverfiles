@@ -311,7 +311,7 @@ WaitForMeet.o: WaitForMeet.cpp ../../../Core/Assert.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -411,7 +411,7 @@ WaitForApart.o: WaitForApart.cpp ../../../Core/Assert.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
  ../../database/Result.h /usr/include/STL/cstdio \
- /usr/include/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \

@@ -19,8 +19,8 @@
 class CGUseItemFromInventory : public Packet 
 {
 public:
-	CGUseItemFromInventory () throw ();
-	~CGUseItemFromInventory () throw ();
+	CGUseItemFromInventory ();
+	~CGUseItemFromInventory ();
 	
    	 void read(SocketInputStream & iStream) ;
    	 void write(SocketOutputStream & oStream) ;

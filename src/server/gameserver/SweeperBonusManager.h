@@ -30,18 +30,18 @@ public:
 public:
 
 	// initialize Manager
-	void init() throw(Error);
+	void init();
 
 	// void load() throw();
-	void load() throw(Error);
+	void load();
 
-	void reloadOwner(int level) throw(Error);
+	void reloadOwner(int level);
 
 	// clear list
 	void clear() throw();
 
 	// Save to DB
-	void save() throw(Error);
+	void save();
 
 	// get SweeperBonus
 	SweeperBonus* getSweeperBonus(SweeperBonusType_t sweeperBonusType) ;
@@ -56,10 +56,10 @@ public:
 	string toString() ;
 
 public:
-	void setSweeperBonusRace( SweeperBonusType_t sweeperBonusType, Race_t race ) throw( Error );
+	void setSweeperBonusRace( SweeperBonusType_t sweeperBonusType, Race_t race );
 
-	void makeSweeperBonusInfo( GCSweeperBonusInfo& gcSweeperBonusInfo ) throw( Error );
-	void makeVoidSweeperBonusInfo( GCSweeperBonusInfo& gcSweeperBonusInfo ) throw( Error );
+	void makeSweeperBonusInfo( GCSweeperBonusInfo& gcSweeperBonusInfo );
+	void makeVoidSweeperBonusInfo( GCSweeperBonusInfo& gcSweeperBonusInfo );
 
 
 private:

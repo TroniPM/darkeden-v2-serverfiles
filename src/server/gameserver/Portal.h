@@ -115,7 +115,7 @@ public:
 	ZoneCoord_t getY() ;
 	void setY(ZoneCoord_t y) throw();
 
-	bool activate(Creature* pCreature) throw(Error);
+	bool activate(Creature* pCreature);
 	virtual string toString() ;
 
 public:
@@ -160,7 +160,7 @@ public:
 	void setY(ZoneCoord_t y) throw() { m_pTarget->setY(y); }
 
 	// PC를 특정 위치로 이동시킨다.
-	bool activate(Creature* pCreature) throw(Error);
+	bool activate(Creature* pCreature);
 
 	// get debug string
 	virtual string toString() ;
@@ -201,7 +201,7 @@ public:
 	void setY(ZoneCoord_t y) throw() { m_pTarget->setY(y); }
 
 	// PC를 특정 위치로 이동시킨다.
-	bool activate(Creature* pCreature) throw(Error);
+	bool activate(Creature* pCreature);
 
 	// get debug string
 	virtual string toString() ;
@@ -236,7 +236,7 @@ public:
 	void getPortalTargetInfo(ZoneID_t ZoneID) throw();
 
 	// PC를 특정 위치로 이동시킨다.
-	bool activate(Creature* pCreature, ZoneID_t ZoneID) throw(Error);
+	bool activate(Creature* pCreature, ZoneID_t ZoneID);
 
 	// get debug string
 	virtual string toString() ;
@@ -263,7 +263,7 @@ public: // constructor & destructor
 
 public: // methods from base class
 	PortalClass getPortalClass()  { return PORTAL_CLASS_TRIGGERED; }
-	bool activate(Creature* pCreature) throw(Error);
+	bool activate(Creature* pCreature);
 	virtual string toString() ;
 
 public: // public methods

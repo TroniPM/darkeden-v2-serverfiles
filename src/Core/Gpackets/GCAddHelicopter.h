@@ -60,7 +60,7 @@ public:
 class GCAddHelicopterHandler 
 {
 public:
-	static void execute(GCAddHelicopter* pGCAddHelicopter, Player* pPlayer) throw(Error);
+	static void execute(GCAddHelicopter* pGCAddHelicopter, Player* pPlayer);
 };
 
 #endif

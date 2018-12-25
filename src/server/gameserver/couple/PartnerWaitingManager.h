@@ -23,7 +23,7 @@ public:
 	virtual ~PartnerWaitInfo() { }
 
 	// Factory Method
-	static PartnerWaitInfo*	getPartnerWaitInfo(PlayerCreature* pWaitingPC, string RequestedPCName, WaitType waitType) throw(Error);
+	static PartnerWaitInfo*	getPartnerWaitInfo(PlayerCreature* pWaitingPC, string RequestedPCName, WaitType waitType);
 
 public:
 	virtual uint			waitPartner( PlayerCreature* pTargetPC ) throw(Error) = 0;
@@ -65,14 +65,14 @@ public:
 	WaitType	getWaitType() const { return m_WaitType; }
 
 public:
-	uint		waitForPartner( PlayerCreature* pWaitingPC, string RequestedPCName ) throw(Error);
-	bool		stopWaitForPartner( PlayerCreature* pWaitingPC ) throw(Error);
-	uint		acceptPartner( PlayerCreature* pRequestedPC ) throw(Error);
-	bool		isWaitForPartner( PlayerCreature* pRequestedPC ) throw(Error);
-	PlayerCreature* getWaitingPartner( PlayerCreature* pRequestedPC ) throw(Error);
+	uint		waitForPartner( PlayerCreature* pWaitingPC, string RequestedPCName );
+	bool		stopWaitForPartner( PlayerCreature* pWaitingPC );
+	uint		acceptPartner( PlayerCreature* pRequestedPC );
+	bool		isWaitForPartner( PlayerCreature* pRequestedPC );
+	PlayerCreature* getWaitingPartner( PlayerCreature* pRequestedPC );
 
 public:
-	void		heartbeat() throw(Error);
+	void		heartbeat();
 
 private:
 	WaitInfoHashMap	m_WaitInfos;

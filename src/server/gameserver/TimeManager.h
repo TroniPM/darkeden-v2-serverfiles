@@ -42,7 +42,7 @@ enum Timeband
 class TimeManager 
 {
 public:
-	void init() throw(Error);
+	void init();
 
 	GameTime getGameTime() ;	
 

@@ -57,11 +57,11 @@ public :
 public :
 	
 	// constructor
-	Properties () throw ();
-	Properties (const string & filename) throw ();
+	Properties ();
+	Properties (const string & filename);
 	
 	// destructor
-	~Properties () throw ();
+	~Properties ();
 	
 
 public :
@@ -75,14 +75,14 @@ public :
 	void save (const string & filename) throw (IOException) { m_Filename = filename; save(); }
 
 	// get/set property
-	string getProperty (string key) const throw (NoSuchElementException);
-	int getPropertyInt (string key) const throw (NoSuchElementException);
-	void setProperty (string key, string value) throw ();
+	string getProperty (string key) ;
+	int getPropertyInt (string key) ;
+	void setProperty (string key, string value);
 
 	bool hasKey(const string& key) const { return m_Properties.find(key) != m_Properties.end(); }
 
 	// get debug string
-	string toString () const throw ();
+	string toString () ;
 	
 private :
 	

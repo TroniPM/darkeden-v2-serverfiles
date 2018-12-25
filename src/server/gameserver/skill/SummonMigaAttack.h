@@ -23,7 +23,7 @@ public:
     string getSkillHandlerName()  { return "SummonMigaAttack"; }
 	SkillType_t getSkillType()  { return SKILL_SUMMON_MIGA_ATTACK; }
 
-	void execute(Monster* pMonster) throw(Error);
+	void execute(Monster* pMonster);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 

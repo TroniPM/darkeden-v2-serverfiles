@@ -51,10 +51,10 @@ public:
 	~RankEXPInfoManager() throw();
 
 public:
-	void init(RankType rankType) throw(Error);
-	void load(RankType rankType) throw(Error);
+	void init(RankType rankType);
+	void load(RankType rankType);
 
-	RankEXPInfo* getRankEXPInfo(uint value) const throw (InvalidProtocolException);
+	RankEXPInfo* getRankEXPInfo(uint value) ;
 	void addRankEXPInfo(RankEXPInfo* pRankEXPInfo) throw();
 
 	string toString() ;

@@ -25,7 +25,7 @@ public:
     string getSkillHandlerName()  { return "Regeneration"; }
 	SkillType_t getSkillType()  { return SKILL_REGENERATION; }
 
-	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error);
+	void execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };

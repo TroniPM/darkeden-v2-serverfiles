@@ -57,7 +57,7 @@ void GCAddEffect::read ( SocketInputStream & iStream )
 // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
 //////////////////////////////////////////////////////////////////////
 void GCAddEffect::write ( SocketOutputStream & oStream ) 
-     const throw ( ProtocolException , Error )
+     
 {
 	__BEGIN_TRY
 		
@@ -92,7 +92,7 @@ void GCAddEffect::execute ( Player * pPlayer )
 //
 //////////////////////////////////////////////////////////////////////
 string GCAddEffect::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

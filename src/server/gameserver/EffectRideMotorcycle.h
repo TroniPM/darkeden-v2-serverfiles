@@ -21,8 +21,8 @@ class Item;
 class EffectRideMotorcycle : public Effect 
 {
 public:
-	EffectRideMotorcycle(Slayer* pOwner, Item* pMotorcycle, ZoneCoord_t motorX, ZoneCoord_t motorY) throw(Error);
-	virtual ~EffectRideMotorcycle() throw(Error);
+	EffectRideMotorcycle(Slayer* pOwner, Item* pMotorcycle, ZoneCoord_t motorX, ZoneCoord_t motorY);
+	virtual ~EffectRideMotorcycle();
 
 public:
 	EffectClass getEffectClass()  { return EFFECT_CLASS_TRANSPORT_ITEM; }
@@ -30,7 +30,7 @@ public:
 	// OBJECT_PRIORITY_NONE 라는 뜻은, 타일에 들어가서는 안된다는 뜻이다.
 	ObjectPriority getObjectPriority()  { return OBJECT_PRIORITY_NONE; }
 
-	void unaffect() throw(Error);
+	void unaffect();
 
 	// get debug string
 	string toString() ;

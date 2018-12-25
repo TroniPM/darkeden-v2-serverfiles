@@ -17,8 +17,8 @@ public:
 	~InventoryItemPosition(){ }
 
 public:
-	virtual Item*	popItem( bool bLock = true ) throw(Error);
-	virtual Zone*	getZone() throw(Error);
+	virtual Item*	popItem( bool bLock = true );
+	virtual Zone*	getZone();
 
 public:
 	string			getOwnerName() const { return m_OwnerName; }
@@ -33,11 +33,11 @@ public:
 	string			toString() ;
 
 protected:
-	Creature*		findCreature() throw(Error);
-	Zone*			getZoneByCreature( Creature* pCreature ) throw(Error);
-	Item*			popItem_CORE( PlayerCreature* pPC ) throw(Error);
-	Item*			popItem_LOCKED() throw(Error);
-	Item*			popItem_UNLOCKED() throw(Error);
+	Creature*		findCreature();
+	Zone*			getZoneByCreature( Creature* pCreature );
+	Item*			popItem_CORE( PlayerCreature* pPC );
+	Item*			popItem_LOCKED();
+	Item*			popItem_UNLOCKED();
 
 private:
 	string			m_OwnerName;

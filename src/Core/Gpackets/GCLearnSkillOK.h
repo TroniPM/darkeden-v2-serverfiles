@@ -122,7 +122,7 @@ class  GCLearnSkillOKHandler {
 public :
 
 	// execute packet's handler
-	static void execute( GCLearnSkillOK* pGCLearnSkillOK, Player* pPlayer) throw(Error);
+	static void execute( GCLearnSkillOK* pGCLearnSkillOK, Player* pPlayer);
 
 };
 

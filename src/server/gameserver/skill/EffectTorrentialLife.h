@@ -16,13 +16,13 @@
 class EffectTorrentialLife : public Effect 
 {
 public:
-	EffectTorrentialLife(Creature* pCreature) throw(Error);
+	EffectTorrentialLife(Creature* pCreature);
 
 public:
 	EffectClass getEffectClass()  { return EFFECT_CLASS_TORRENTIALLIFE; }
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect() throw(Error); 
+	void unaffect(Creature* pCreature);
+	void unaffect(); 
 
 	string toString() ;
 

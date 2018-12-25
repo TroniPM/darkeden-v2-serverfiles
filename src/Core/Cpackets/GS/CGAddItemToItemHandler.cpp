@@ -58,39 +58,39 @@
 
 	#include "SystemAvailabilitiesManager.h"
 
-	void executeUpGrade(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem) throw(Error);
-	void executeTypeGrade(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem) throw(Error);
-	void executeEnchantOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, CoordInven_t invenX, CoordInven_t invenY) throw(Error);
-	void executeEnchantRareOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, CoordInven_t invenX, CoordInven_t invenY) throw(Error);
-	void executeEnchantRareThreeOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, CoordInven_t invenX, CoordInven_t invenY) throw(Error);
-	void executeEnchantSetOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, CoordInven_t invenX, CoordInven_t invenY) throw(Error);
-	void executeEnchantSetRareOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, CoordInven_t invenX, CoordInven_t invenY) throw(Error);
-	void executeEnchantSetThreeOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, CoordInven_t invenX, CoordInven_t invenY) throw(Error);
-	void executeAddOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, OptionType_t addOptionType) throw(Error);
-	void executeAddCoralOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, int addOptionType) throw(Error);
-	void executeAddSetOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, OptionType_t addOptionType) throw(Error);
-	void executeTransKit(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem) throw(Error);
-	void executeRedSunCore(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem) throw(Error);
-	void executeVampireTuningItem(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem) throw(Error);
-	void executeOustersTuningItem(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem) throw(Error);
+	void executeUpGrade(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem);
+	void executeTypeGrade(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem);
+	void executeEnchantOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, CoordInven_t invenX, CoordInven_t invenY);
+	void executeEnchantRareOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, CoordInven_t invenX, CoordInven_t invenY);
+	void executeEnchantRareThreeOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, CoordInven_t invenX, CoordInven_t invenY);
+	void executeEnchantSetOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, CoordInven_t invenX, CoordInven_t invenY);
+	void executeEnchantSetRareOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, CoordInven_t invenX, CoordInven_t invenY);
+	void executeEnchantSetThreeOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, CoordInven_t invenX, CoordInven_t invenY);
+	void executeAddOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, OptionType_t addOptionType);
+	void executeAddCoralOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, int addOptionType);
+	void executeAddSetOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, OptionType_t addOptionType);
+	void executeTransKit(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem);
+	void executeRedSunCore(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem);
+	void executeVampireTuningItem(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem);
+	void executeOustersTuningItem(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem);
 	extern bool isPossibleOptionItemClass(Item::ItemClass IClass);
 
 	OptionInfo* getOptionInfo(OptionType_t optionType);
 
-	void    	processUpgradeOptionType(Item* pItem, OptionType_t currentOptionType, OptionInfo* pOptionInfo) throw (Error);
-	void    	processUpgradeSetOptionType(Item* pItem, OptionType_t currentOptionType, OptionInfo* pOptionInfo) throw (Error);
-	void		crashItem(Item* pItem, Inventory* pInventory, CoordInven_t invenX, CoordInven_t invenY) throw (Error);
-	void    	downgradeOptionType(Item* pItem, OptionType_t currentOptionType, OptionInfo* pOptionInfo) throw (Error);
-	void    	downgradeSetOptionType(Item* pItem, OptionType_t currentOptionType, OptionInfo* pOptionInfo) throw (Error);
-	void		sendEnchantImpossible(GamePlayer* pGamePlayer) throw (Error);
-	void		sendEnchantOK(GamePlayer* pGamePlayer, DWORD optionChange) throw (Error);
-	void		sendSetEnchantOK(GamePlayer* pGamePlayer, DWORD optionChange) throw (Error);
+	void    	processUpgradeOptionType(Item* pItem, OptionType_t currentOptionType, OptionInfo* pOptionInfo);
+	void    	processUpgradeSetOptionType(Item* pItem, OptionType_t currentOptionType, OptionInfo* pOptionInfo);
+	void		crashItem(Item* pItem, Inventory* pInventory, CoordInven_t invenX, CoordInven_t invenY);
+	void    	downgradeOptionType(Item* pItem, OptionType_t currentOptionType, OptionInfo* pOptionInfo);
+	void    	downgradeSetOptionType(Item* pItem, OptionType_t currentOptionType, OptionInfo* pOptionInfo);
+	void		sendEnchantImpossible(GamePlayer* pGamePlayer);
+	void		sendEnchantOK(GamePlayer* pGamePlayer, DWORD optionChange);
+	void		sendSetEnchantOK(GamePlayer* pGamePlayer, DWORD optionChange);
 	// add by sonic ≥Â»˝ Ù–‘∑µªÿµƒ∑‚∞¸
-	void		sendEnchantOK(GamePlayer* pGamePlayer, DWORD optionChange, DWORD optionCHange2) throw (Error);
+	void		sendEnchantOK(GamePlayer* pGamePlayer, DWORD optionChange, DWORD optionCHange2);
 
 	// PET ¡∂«’ ¿Œ√¶∆Æ æ∆¿Ã≈€¿« ∞·∞˙¥Ÿ.
-	void    	processUpgradePetOptionType(PetInfo* pPetInfo, Item* pItem, OptionType_t currentOptionType, OptionInfo* pOptionInfo) throw (Error);
-	void    	downgradePetOptionType(PetInfo* pPetInfo, Item* pItem, OptionType_t currentOptionType, OptionInfo* pOptionInfo) throw (Error);
+	void    	processUpgradePetOptionType(PetInfo* pPetInfo, Item* pItem, OptionType_t currentOptionType, OptionInfo* pOptionInfo);
+	void    	downgradePetOptionType(PetInfo* pPetInfo, Item* pItem, OptionType_t currentOptionType, OptionInfo* pOptionInfo);
 #endif	// __GAME_SERVER__
 
 //////////////////////////////////////////////////////////////////////////////

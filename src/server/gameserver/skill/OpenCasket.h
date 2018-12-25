@@ -23,7 +23,7 @@ public:
     string getSkillHandlerName()  { return "OpenCasket"; }
 	SkillType_t getSkillType()  { return SKILL_OPEN_CASKET; }
 
-	void execute(Vampire* pVampire, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID) throw(Error);
+	void execute(Vampire* pVampire, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID);
 
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);

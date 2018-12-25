@@ -24,14 +24,14 @@
 class RideMotorcycleInfo 
 {
 public:
-	RideMotorcycleInfo () throw ();
-	~RideMotorcycleInfo () throw ();
+	RideMotorcycleInfo ();
+	~RideMotorcycleInfo ();
 	
 public:
-    void read (SocketInputStream & iStream) throw (ProtocolException, Error);
-    void write (SocketOutputStream & oStream) const throw (ProtocolException, Error);
+    void read (SocketInputStream & iStream);
+    void write (SocketOutputStream & oStream) ;
 
-	PacketSize_t getSize() throw ();
+	PacketSize_t getSize();
 
 	static uint getMaxSize() throw() 
 	{
@@ -42,7 +42,7 @@ public:
 			RideMotorcycleSlotInfo::getMaxSize()* 60;
 	}
 
-	string toString () const throw ();
+	string toString () ;
 
 public:
 	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }

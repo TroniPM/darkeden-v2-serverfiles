@@ -22,7 +22,7 @@ MonsterKillQuestInfo::~MonsterKillQuestInfo()
 {
 }
 
-string MonsterKillQuestInfo::toString () const throw ()
+string MonsterKillQuestInfo::toString () 
 {
 	StringStream msg;
 

@@ -33,7 +33,7 @@ public:
 	Statement() throw(); 
 
 	// constructor
-    Statement(char * fmt, ...) throw(Error);
+    Statement(char * fmt, ...);
 
 	// destructor
 	~Statement() throw();
@@ -51,7 +51,7 @@ public:
 	string getStatement()  { return m_Statement; }
 
 	// SQL 문을 지정한다.
-	void setStatement(char * fmt, ...) throw(Error);
+	void setStatement(char * fmt, ...);
 
 	// get connection object
 	Connection * getConnection()  { return m_pConnection; }

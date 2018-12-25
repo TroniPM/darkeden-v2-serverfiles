@@ -31,23 +31,23 @@ class GuildInfo2 {
 public :
 	
 	// constructor
-	GuildInfo2 () throw ();
+	GuildInfo2 ();
 	
 	// destructor
-	~GuildInfo2 () throw ();
+	~GuildInfo2 ();
 
 public :
 	
 	
     // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
-    void read (SocketInputStream & iStream) throw (ProtocolException, Error);
+    void read (SocketInputStream & iStream);
 		    
     // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
-    void write (SocketOutputStream & oStream) const throw (ProtocolException, Error);
+    void write (SocketOutputStream & oStream) ;
 
 	// get packet's body size
 	// 최적화시, 미리 계산된 정수를 사용한다.
-	PacketSize_t getSize () throw ();
+	PacketSize_t getSize ();
 
 	static uint getMaxSize() throw() {
 		return ( szGuildID
@@ -64,7 +64,7 @@ public :
 	}
 
 	// get packet's debug string
-	string toString () const throw ();
+	string toString () ;
 
 	// get/set GuildID
 	GuildID_t getID()  { return m_ID; }

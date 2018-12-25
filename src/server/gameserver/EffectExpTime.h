@@ -18,15 +18,15 @@ class Corpse;
 class EffectExpTime : public Effect 
 {
 public:
-	EffectExpTime(Zone* pZone) throw(Error);
-	virtual ~EffectExpTime() throw(Error);
+	EffectExpTime(Zone* pZone);
+	virtual ~EffectExpTime();
 
 public:
 	virtual EffectClass getEffectClass()  { return EFFECT_CLASS_EXP_TIME; }
 
-	virtual void affect() throw(Error);
+	virtual void affect();
 	
-	virtual void unaffect() throw(Error);
+	virtual void unaffect();
 
 	void create(const string & ownerID) throw(Error) {}
 	void save(const string & ownerID) throw(Error) {}

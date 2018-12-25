@@ -17,15 +17,15 @@
 class EffectRageOfBlood : public Effect 
 {
 public:
-	EffectRageOfBlood(Creature* pCreature) throw(Error);
+	EffectRageOfBlood(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_RAGE_OF_BLOOD; }
 
 	void affect() throw(Error){}
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect() throw(Error);
+	void unaffect(Creature* pCreature);
+	void unaffect();
 
 	string toString() ;
 

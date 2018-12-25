@@ -62,7 +62,7 @@ void GCSkillToSelfOK1::read ( SocketInputStream & iStream )
 // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
 //////////////////////////////////////////////////////////////////////
 void GCSkillToSelfOK1::write ( SocketOutputStream & oStream ) 
-     const throw ( ProtocolException , Error )
+     
 {
 	__BEGIN_TRY
 		
@@ -99,7 +99,7 @@ void GCSkillToSelfOK1::execute ( Player * pPlayer )
 //
 //////////////////////////////////////////////////////////////////////
 string GCSkillToSelfOK1::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

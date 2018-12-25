@@ -38,7 +38,7 @@ void GCAddVampirePortal::read ( SocketInputStream & iStream )
 }
 		    
 void GCAddVampirePortal::write ( SocketOutputStream & oStream ) 
-     const throw ( ProtocolException , Error )
+     
 {
 	__BEGIN_TRY
 
@@ -74,7 +74,7 @@ void GCAddVampirePortal::execute ( Player * pPlayer )
 }
 
 string GCAddVampirePortal::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

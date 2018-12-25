@@ -43,7 +43,7 @@ public :
 	Fame_t			getFame() const				{ return m_Fame; }
 	void			setFame(Fame_t fame)		{ m_Fame = fame; }
 
-	virtual void	setPrice(const string& text) throw (Error);
+	virtual void	setPrice(const string& text);
 
 	string			toString() ;
 

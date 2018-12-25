@@ -73,7 +73,7 @@ public:
 public:
 
 	// void load() throw();
-	void load() throw(Error);
+	void load();
 	
 	// get InstantDungeonMonster
 	InstantDungeonMonster* getInstantDungeonMonster(int id) const;

@@ -22,8 +22,8 @@ public:
 	uint getSize()  { return szBYTE + ((m_ItemExist)?(PCItemInfo::getSize() + szGold):0); }
 	static uint getMaxSize() throw() { return szBYTE + PCItemInfo::getMaxSize() + szGold; }
 
-	void read (SocketInputStream & iStream) throw (ProtocolException, Error);
-	void write (SocketOutputStream & oStream) const throw (ProtocolException, Error);
+	void read (SocketInputStream & iStream);
+	void write (SocketOutputStream & oStream) ;
 
 	BYTE	isItemExist() const { return m_ItemExist; }
 	void	setItemExist(BYTE exist) { m_ItemExist = exist; }

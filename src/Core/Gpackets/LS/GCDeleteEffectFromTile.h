@@ -130,7 +130,7 @@ class GCDeleteEffectFromTileHandler {
 public :
 
 	// execute packet's handler
-	static void execute(GCDeleteEffectFromTile* pGCDeleteEffectFromTile, Player* pPlayer) throw(Error);
+	static void execute(GCDeleteEffectFromTile* pGCDeleteEffectFromTile, Player* pPlayer);
 
 };
 

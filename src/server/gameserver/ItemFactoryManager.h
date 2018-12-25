@@ -24,9 +24,9 @@ public:
 	~ItemFactoryManager() throw();
 
 public:
-	void init() throw(Error);
+	void init();
 
-	void addFactory(ItemFactory* pFactory) throw(Error);
+	void addFactory(ItemFactory* pFactory);
 
 	Item* createItem(Item::ItemClass IClass, ItemType_t ItemType, const list<OptionType_t>& OptionType) throw(NoSuchElementException, Error);
 

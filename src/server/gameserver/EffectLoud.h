@@ -16,15 +16,15 @@
 class EffectLoud : public Effect 
 {
 public:
-	EffectLoud(Creature* pCreature) throw(Error);
+	EffectLoud(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_LOUD; }
 
 	void affect() throw(Error){}
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect() throw(Error);
+	void unaffect(Creature* pCreature);
+	void unaffect();
 
 	string toString() ;
 

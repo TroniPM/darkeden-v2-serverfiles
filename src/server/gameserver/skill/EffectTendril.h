@@ -16,16 +16,16 @@
 class EffectTendril : public Effect 
 {
 public:
-	EffectTendril(Creature* pCreature) throw(Error);
+	EffectTendril(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_TENDRIL; }
 
 	void affect() throw(Error) {}
-	void affect(Creature* pCreature) throw(Error);
+	void affect(Creature* pCreature);
 
-	void unaffect(Creature* pCreature) throw(Error);
-	void unaffect() throw(Error); 
+	void unaffect(Creature* pCreature);
+	void unaffect(); 
 
 	string toString() ;
 

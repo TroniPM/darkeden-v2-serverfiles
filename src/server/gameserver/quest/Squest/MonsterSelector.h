@@ -44,7 +44,7 @@ public :
 		return false;
 	}
 
-	void				setMonster(const string& text) throw (Error);
+	void				setMonster(const string& text);
 	string				toString() ;
 
 private :

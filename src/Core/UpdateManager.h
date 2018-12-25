@@ -41,34 +41,34 @@ class UpdateManager{
 public :
 
 	// constructor
-	UpdateManager () throw ();
+	UpdateManager ();
 
 	// destructor
-	~UpdateManager () throw ();
+	~UpdateManager ();
 	
 
 public :
 
 	// load from update file
-	void load (const string & filename) throw (Error);
+	void load (const string & filename);
 
 	// save to update file
 	void save (const string & filename) ;
 
 	// read from socket input stream
-	void read (SocketInputStream & iStream) throw (ProtocolException, Error);
+	void read (SocketInputStream & iStream);
 
 	// read from socket
 	void read (Socket* pSocket) throw (IOException, Error);
 
 	// write to socket output stream
-	void write (SocketOutputStream & oStream) const throw (ProtocolException, Error);
+	void write (SocketOutputStream & oStream) ;
 
 	// write to socket
-	void write (Socket* pSocket) const throw (IOException, Error);
+	void write (Socket* pSocket) ;
 
 	// get size
-	uint getSize () const throw ();
+	uint getSize () ;
 
 	// get max size
 	static uint getMaxSize () throw () { return Update::getMaxSize()* maxUpdates; }
@@ -79,14 +79,14 @@ public :
 	// list methods
 	void push_back (Update* pUpdate) throw (Error) { Assert(pUpdate != NULL); m_Updates.push_back(pUpdate); }
 	void pop_front () throw (Error) { Assert(!m_Updates.empty()); m_Updates.pop_front(); }
-	Update* front () const throw (Error) { Assert(!m_Updates.empty()); return m_Updates.front(); }
-	bool empty () const throw () { return m_Updates.empty(); }
+	Update* front ()  { Assert(!m_Updates.empty()); return m_Updates.front(); }
+	bool empty ()  { return m_Updates.empty(); }
 
 	// get resource manager
-	ResourceManager* getResourceManager () throw (Error);
+	ResourceManager* getResourceManager ();
 
 	// get debug string
-	string toString () const throw ();
+	string toString () ;
 
 
 private :

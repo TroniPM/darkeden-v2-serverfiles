@@ -15,7 +15,7 @@ public:
 	}
 	~GatherItemQuestStatus() { }
 
-//	bool			got( Item* pItem ) throw(Error);
+//	bool			got( Item* pItem );
 	bool			isTarget( Item* pItem ) ;
 	void			reset() { m_CurrentNum = 0; }
 

@@ -51,7 +51,7 @@ void CGPhoneDisconnect::execute (Player* pPlayer)
 }
 
 string CGPhoneDisconnect::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

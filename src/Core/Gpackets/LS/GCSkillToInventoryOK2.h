@@ -132,7 +132,7 @@ class GCSkillToInventoryOK2Handler {
 public :
 
 	// execute packet's handler
-	static void execute(GCSkillToInventoryOK2* pGCSkillToInventoryOK2, Player* pPlayer) throw(Error);
+	static void execute(GCSkillToInventoryOK2* pGCSkillToInventoryOK2, Player* pPlayer);
 
 };
 

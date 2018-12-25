@@ -91,7 +91,7 @@ public:
 class GCAddOustersHandler 
 {
 public:
-	static void execute(GCAddOusters* pPacket, Player* pPlayer) throw(Error);
+	static void execute(GCAddOusters* pPacket, Player* pPlayer);
 };
 
 #endif

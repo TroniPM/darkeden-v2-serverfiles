@@ -63,16 +63,16 @@ public:
 public:
 
 	// get pc type
-	PCType getPCType () const throw () { return PC_SLAYER; }
+	PCType getPCType ()  { return PC_SLAYER; }
 
 	// read data from socket input stream
-	void read (SocketInputStream & iStream) throw (ProtocolException, Error);
+	void read (SocketInputStream & iStream);
 
 	// write data to socket output stream
-	void write (SocketOutputStream & oStream) const throw (ProtocolException, Error);
+	void write (SocketOutputStream & oStream) ;
 
 	// get size of object
-	uint getSize () const throw ()
+	uint getSize () 
 	{
 		return szBYTE + m_Name.size() 
 			+ szSlot
@@ -114,15 +114,15 @@ public:
 	}
 
 	// get debug string
-	string toString () const throw ();
+	string toString () ;
 
 public:
     // get/set PC's name
-    string getName () const throw () { return m_Name; }
+    string getName ()  { return m_Name; }
     void setName (const string& name) throw () { m_Name = (name.size() > 20) ? name.substr(0,20) : name; }
 
 	// get/set Slot
-	Slot getSlot () const throw () { return m_Slot; }
+	Slot getSlot ()  { return m_Slot; }
 	void setSlot (Slot slot) throw () { m_Slot = slot; }
 	void setSlot (string slot) throw (InvalidProtocolException) 
 	{
@@ -151,15 +151,15 @@ public:
 	// get/set STR
 	// *CAUTION*
 	// Assert()로 할 경우, NDEBUG 모드에서는 disable 되므로 if 로 체크해야 한다. 
-	Attr_t getSTR () const throw (Error) { if (m_STR > maxSlayerAttr) throw Error("STR out of range"); return m_STR; }
+	Attr_t getSTR ()  { if (m_STR > maxSlayerAttr) throw Error("STR out of range"); return m_STR; }
 	void setSTR (Attr_t str) throw (Error) { if (str > maxSlayerAttr) throw Error("STR out of range"); m_STR = str; }
 
 	// get/set DEX
-	Attr_t getDEX () const throw (Error) { if (m_DEX > maxSlayerAttr) throw Error("DEX out of range"); return m_DEX; }
+	Attr_t getDEX ()  { if (m_DEX > maxSlayerAttr) throw Error("DEX out of range"); return m_DEX; }
 	void setDEX (Attr_t dex) throw (Error) { if (dex > maxSlayerAttr) throw Error("DEX out of range"); m_DEX = dex; }
 
 	// get/set INT
-	Attr_t getINT () const throw (Error) { if (m_INT > maxSlayerAttr) throw Error("INT out of range"); return m_INT; }
+	Attr_t getINT ()  { if (m_INT > maxSlayerAttr) throw Error("INT out of range"); return m_INT; }
 	void setINT (Attr_t inte) throw (Error) { if (inte > maxSlayerAttr) throw Error("INT out of range"); m_INT = inte; }
 
 	// get/set STR Exp
@@ -175,38 +175,38 @@ public:
 	void setINTExp(Exp_t INTExp) throw(Error) { m_INTExp = INTExp; }
 
 
-	Rank_t getRank () const throw () { return m_Rank; }
+	Rank_t getRank ()  { return m_Rank; }
 	void setRank (Rank_t rank) throw () { m_Rank = rank; }
 
 
 	// get/set HP
-	HP_t getHP (AttrType attrType = ATTR_CURRENT) const throw () { return m_HP[attrType]; }
+	HP_t getHP (AttrType attrType = ATTR_CURRENT)  { return m_HP[attrType]; }
 	void setHP (HP_t hp, AttrType attrType = ATTR_CURRENT) throw () { m_HP[attrType] = hp; }
 	void setHP (HP_t curHP, HP_t maxHP) throw () { m_HP[ATTR_CURRENT] = curHP; m_HP[ATTR_MAX] = maxHP; }
 
 	// get/set MP
-	MP_t getMP (AttrType attrType = ATTR_CURRENT) const throw () { return m_MP[attrType]; }
+	MP_t getMP (AttrType attrType = ATTR_CURRENT)  { return m_MP[attrType]; }
 	void setMP (MP_t mp, AttrType attrType = ATTR_CURRENT) throw () { m_MP[attrType] = mp; }
 	void setMP (MP_t curMP, MP_t maxMP) throw () { m_MP[ATTR_CURRENT] = curMP; m_MP[ATTR_MAX] = maxMP; }
 
 	// get/set fame
-	Fame_t getFame () const throw () { return m_Fame; }
+	Fame_t getFame ()  { return m_Fame; }
 	void setFame (Fame_t fame) throw () { m_Fame = fame; }
 
 	// get/set fame
-	Fame_t getKillPoint () const throw () { return m_KillPoint; }
+	Fame_t getKillPoint ()  { return m_KillPoint; }
 	void setKillPoint (Fame_t KillPoint) throw () { m_KillPoint = KillPoint; }
 
 	// get/set gold
-	//Gold_t getGold () const throw () { return m_Gold; }
+	//Gold_t getGold ()  { return m_Gold; }
 	//void setGold (Gold_t gold) throw () { m_Gold = gold; }
 
 	  // get/set skill domain level
-	SkillLevel_t getSkillDomainLevel (SkillDomain domain) const throw () { return m_DomainLevels[ domain ]; }
+	SkillLevel_t getSkillDomainLevel (SkillDomain domain)  { return m_DomainLevels[ domain ]; }
 	void setSkillDomainLevel (SkillDomain domain, SkillLevel_t skillLevel) throw () { m_DomainLevels[ domain ] = skillLevel; }
 
 	  // get/set zoneID
-	//ZoneID_t getZoneID () const throw () { return m_ZoneID; }
+	//ZoneID_t getZoneID ()  { return m_ZoneID; }
 	//void setZoneID (ZoneID_t zoneID) throw () { m_ZoneID = zoneID; }
 
 	Level_t getAdvancementLevel() const { return m_AdvancementLevel; }
@@ -215,7 +215,7 @@ public:
 // get/set outlook
 public:
 	// get/set sex
-    Sex getSex () const throw () 
+    Sex getSex ()  
 	{ 
 		return m_Outlook.test(SLAYER_BIT_SEX)?MALE:FEMALE; 
 	}
@@ -235,7 +235,7 @@ public:
 	}
 
 	// get/set hair style
-	HairStyle getHairStyle () const throw () 
+	HairStyle getHairStyle ()  
 	{ 
 		return HairStyle((m_Outlook.to_ulong() >> SLAYER_BIT_HAIRSTYLE1) & 3); 
 	}
@@ -267,7 +267,7 @@ public:
 	}
 
 	// get/set helmet
-	HelmetType getHelmetType () const throw () 
+	HelmetType getHelmetType ()  
 	{ 
 		return HelmetType((m_Outlook.to_ulong() >> SLAYER_BIT_HELMET1) & 3); 
 	}
@@ -278,7 +278,7 @@ public:
 	}
 
 	// get/set jacket
-	JacketType getJacketType () const throw () 
+	JacketType getJacketType ()  
 	{ 
 		return JacketType((m_Outlook.to_ulong() >> SLAYER_BIT_JACKET1) & 7); 
 	}
@@ -289,7 +289,7 @@ public:
 	}
 
 	// get/set pants
-	PantsType getPantsType () const throw ()
+	PantsType getPantsType () 
 	{
 		return PantsType((m_Outlook.to_ulong() >> SLAYER_BIT_PANTS1) & 7);
 	}
@@ -300,7 +300,7 @@ public:
 	}
 
 	// get/set weapon
-	WeaponType getWeaponType () const throw ()
+	WeaponType getWeaponType () 
 	{ 
 		return WeaponType((m_Outlook.to_ulong() >> SLAYER_BIT_WEAPON1) & 31);
 	}
@@ -311,7 +311,7 @@ public:
 	}
 
 	// get/set Shield Type
-	ShieldType getShieldType () const throw () 
+	ShieldType getShieldType ()  
 	{ 
 		return ShieldType((m_Outlook.to_ulong() >> SLAYER_BIT_SHIELD1) & 3); 
 	}
@@ -327,7 +327,7 @@ public:
 public:
 
 	// get/set hair color
-	Color_t getHairColor () const throw () 
+	Color_t getHairColor ()  
 	{ 
 		return m_Colors[ SLAYER_COLOR_HAIR ]; 
 	}
@@ -337,7 +337,7 @@ public:
 	}
 
 	// get/set skin color
-	Color_t getSkinColor () const throw () 
+	Color_t getSkinColor ()  
 	{ 
 		return m_Colors[ SLAYER_COLOR_SKIN ]; 
 	}
@@ -347,7 +347,7 @@ public:
 	}
 
 	// get/set helmet color
-	Color_t getHelmetColor (ColorType colorType = MAIN_COLOR) const throw () 
+	Color_t getHelmetColor (ColorType colorType = MAIN_COLOR)  
 	{ 
 		return m_Colors[ SLAYER_COLOR_HELMET + (uint)colorType ]; 
 	}
@@ -357,7 +357,7 @@ public:
 	}
 
 	// get/set jacket color
-	Color_t getJacketColor (ColorType colorType = MAIN_COLOR) const throw () 
+	Color_t getJacketColor (ColorType colorType = MAIN_COLOR)  
 	{ 
 		return m_Colors[ SLAYER_COLOR_JACKET + (uint)colorType ]; 
 	}
@@ -367,7 +367,7 @@ public:
 	}
 
 	// get/set pants color
-	Color_t getPantsColor (ColorType colorType = MAIN_COLOR) const throw () 
+	Color_t getPantsColor (ColorType colorType = MAIN_COLOR)  
 	{ 
 		return m_Colors[ SLAYER_COLOR_PANTS + (uint)colorType ]; 
 	}
@@ -377,7 +377,7 @@ public:
 	}
 
 	// get/set weapon color
-	Color_t getWeaponColor (ColorType colorType = MAIN_COLOR) const throw () 
+	Color_t getWeaponColor (ColorType colorType = MAIN_COLOR)  
 	{ 
 		return m_Colors[ SLAYER_COLOR_WEAPON + (uint)colorType ]; 
 	}
@@ -387,7 +387,7 @@ public:
 	}
 
 	// get/set shield color
-	Color_t getShieldColor (ColorType colorType = MAIN_COLOR) const throw () 
+	Color_t getShieldColor (ColorType colorType = MAIN_COLOR)  
 	{ 
 		return m_Colors[ SLAYER_COLOR_SHIELD + (uint)colorType ]; 
 	}

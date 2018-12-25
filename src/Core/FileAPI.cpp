@@ -38,7 +38,7 @@ extern int errno;
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 int FileAPI::open_ex ( const char * filename , int flags ) 
-    throw ( IOException , Error )
+    
 {
 	__BEGIN_TRY
 
@@ -99,7 +99,7 @@ int FileAPI::open_ex ( const char * filename , int flags )
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 int FileAPI::open_ex ( const char * filename , int flags , int mode ) 
-    throw ( IOException , Error )
+    
 {
 	__BEGIN_TRY
 
@@ -161,7 +161,7 @@ int FileAPI::open_ex ( const char * filename , int flags , int mode )
 //////////////////////////////////////////////////////////////////////
 //
 // uint FileAPI::read_ex ( int fd , void * buf , uint len ) 
-//      throw ( IOException , Error );
+//      ;
 //
 // exception version of read()
 //
@@ -178,7 +178,7 @@ int FileAPI::open_ex ( const char * filename , int flags , int mode )
 //
 //////////////////////////////////////////////////////////////////////
 uint FileAPI::read_ex ( int fd , void * buf , uint len ) 
-	throw ( IOException , Error )
+	
 {
 	__BEGIN_TRY
 
@@ -243,7 +243,7 @@ uint FileAPI::read_ex ( int fd , void * buf , uint len )
 //
 //////////////////////////////////////////////////////////////////////
 uint FileAPI::write_ex ( int fd , const void * buf , uint len ) 
-     throw ( IOException , Error )
+     
 {
 	__BEGIN_TRY
 

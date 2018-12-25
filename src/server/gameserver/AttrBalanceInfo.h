@@ -50,10 +50,10 @@ public:
 	~STRBalanceInfoManager() throw();
 
 public:
-	void init() throw(Error);
-	void load() throw(Error);
+	void init();
+	void load();
 
-	STRBalanceInfo* getSTRBalanceInfo(uint value) const throw (InvalidProtocolException);
+	STRBalanceInfo* getSTRBalanceInfo(uint value) ;
 	void addSTRBalanceInfo(STRBalanceInfo* pSTRBalanceInfo) throw();
 
 	string toString() ;
@@ -104,10 +104,10 @@ public:
 	~DEXBalanceInfoManager() throw();
 
 public:
-	void init() throw(Error);
-	void load() throw(Error);
+	void init();
+	void load();
 
-	DEXBalanceInfo* getDEXBalanceInfo(uint value) const throw (InvalidProtocolException);
+	DEXBalanceInfo* getDEXBalanceInfo(uint value) ;
 	void addDEXBalanceInfo(DEXBalanceInfo* pDEXBalanceInfo) throw();
 
 	string toString() ;
@@ -159,10 +159,10 @@ public:
 	~INTBalanceInfoManager() throw();
 
 public:
-	void init() throw(Error);
-	void load() throw(Error);
+	void init();
+	void load();
 
-	INTBalanceInfo* getINTBalanceInfo(uint value) const throw (InvalidProtocolException);
+	INTBalanceInfo* getINTBalanceInfo(uint value) ;
 	void addINTBalanceInfo(INTBalanceInfo* pINTBalanceInfo) throw();
 
 	string toString() ;

@@ -37,7 +37,7 @@ void CGStashDeposit::execute (Player* pPlayer)
 }
 
 string CGStashDeposit::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 		

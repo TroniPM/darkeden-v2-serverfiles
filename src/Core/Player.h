@@ -43,11 +43,11 @@ class Player {
 public :
 
 	// constructor
-	Player () throw (Error);
-	Player (Socket * pSocket) throw ( Error );
+	Player ();
+	Player (Socket * pSocket);
 	
 	// destructor
-	virtual ~Player () throw (Error);
+	virtual ~Player ();
 
 	// read socket's receive buffer and fill input buffer
 	virtual void processInput () throw (IOException, Error);
@@ -59,10 +59,10 @@ public :
 	virtual void processOutput () throw (IOException, Error, ProtocolException);
 	
 	// send packet to player's output buffer
-	virtual void sendPacket (Packet* pPacket) throw (ProtocolException, Error);
+	virtual void sendPacket (Packet* pPacket);
 
 	// send stream to player's output buffer
-	virtual void sendStream( SocketOutputStream* pOutputStream ) throw (ProtocolException, Error);
+	virtual void sendStream( SocketOutputStream* pOutputStream );
 
 	// disconnect
 	// 플레이어의 연결을 종료할 때, 상대편이 적절하게 로그아웃하지 않을 경우 소켓의 연결이 
@@ -72,10 +72,10 @@ public :
 	
 	// get/set socket
 	Socket* getSocket () throw () { return m_pSocket; }
-	void setSocket (Socket* pSocket) throw ();
+	void setSocket (Socket* pSocket);
 
 	// get/set player ID
-	string getID () const throw () { return m_ID; }
+	string getID ()  { return m_ID; }
 	void setID (const string & id) throw () { m_ID = id; }
 
 	// get / set ServerGroupID

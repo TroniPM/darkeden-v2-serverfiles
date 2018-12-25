@@ -16,8 +16,8 @@
 class EffectPrecedence : public Effect 
 {
 public:
-	EffectPrecedence(Creature* pCreature) throw(Error);
-	EffectPrecedence(Item* pItem) throw(Error);
+	EffectPrecedence(Creature* pCreature);
+	EffectPrecedence(Item* pItem);
 	
 public:
 	virtual EffectClass getEffectClass()  { return EFFECT_CLASS_PRECEDENCE; }
@@ -25,13 +25,13 @@ public:
 	// OBJECT_PRIORITY_NONE 라는 뜻은, 타일에 들어가서는 안된다는 뜻이다.
 	virtual ObjectPriority getObjectPriority()  { return OBJECT_PRIORITY_NONE; }
 
-	virtual void affect() throw(Error);
-	virtual void affect(Creature* pCreature) throw(Error);
-	virtual void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pTarget) throw(Error);
+	virtual void affect();
+	virtual void affect(Creature* pCreature);
+	virtual void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pTarget);
 	
-	virtual void unaffect() throw(Error);
-	virtual void unaffect(Creature* pCreature) throw(Error);
-	virtual void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pTarget) throw(Error);
+	virtual void unaffect();
+	virtual void unaffect(Creature* pCreature);
+	virtual void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pTarget);
 	void unaffect(Item* pItem) throw(Error) {}
 
 	void create(const string & ownerID) throw(Error) {}

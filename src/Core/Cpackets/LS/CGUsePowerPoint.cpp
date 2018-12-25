@@ -32,7 +32,7 @@ void CGUsePowerPoint::read ( SocketInputStream & iStream )
 }
 		    
 void CGUsePowerPoint::write ( SocketOutputStream & oStream ) 
-     const throw ( ProtocolException , Error )
+     
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -49,7 +49,7 @@ void CGUsePowerPoint::execute ( Player * pPlayer )
 }
 
 string CGUsePowerPoint::toString () 
-	const throw ()
+	
 {
 	__BEGIN_TRY
 

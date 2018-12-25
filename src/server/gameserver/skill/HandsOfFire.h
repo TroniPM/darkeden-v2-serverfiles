@@ -23,7 +23,7 @@ public:
     string getSkillHandlerName()  { return "HandsOfFire"; }
 	SkillType_t getSkillType()  { return SKILL_HANDS_OF_FIRE; }
 
-	void execute(Ousters* pOusters,  OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error);
+	void execute(Ousters* pOusters,  OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID);
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 };

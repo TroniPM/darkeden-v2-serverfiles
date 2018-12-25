@@ -15,16 +15,16 @@
 class EffectRelicPosition : public Effect 
 {
 public:
-	EffectRelicPosition(Item* pItem) throw(Error);
+	EffectRelicPosition(Item* pItem);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_RELIC_POSITION; }
 
-	void affect() throw(Error);
-	void affect(Item* pItem) throw(Error);
+	void affect();
+	void affect(Item* pItem);
 
-	void unaffect() throw(Error); 
-	void unaffect(Item* pItem) throw(Error);
+	void unaffect(); 
+	void unaffect(Item* pItem);
 
 	string toString() ;
 

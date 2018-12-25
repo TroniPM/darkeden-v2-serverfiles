@@ -29,12 +29,12 @@ public:
 	Creature* getCreature(ObjectID_t objectID) ;//NoSuchElementException, Error);
 	Creature* getCreature(const string& Name) ;//NoSuchElementException, Error);
 
-	virtual void processCreatures() throw(Error);
-	virtual void killCreature(Creature* pDeadCreature) throw(Error);
+	virtual void processCreatures();
+	virtual void killCreature(Creature* pDeadCreature);
 
-	void broadcastPacket(Packet* pPacket, Creature* owner) throw(Error);
-	void broadcastDarkLightPacket(Packet* pPacket1, Packet* pPacket2, Creature* owner) throw(Error);
-	void broadcastLevelWarBonusPacket(Packet* pPacket, Creature* owner) throw(Error);
+	void broadcastPacket(Packet* pPacket, Creature* owner);
+	void broadcastDarkLightPacket(Packet* pPacket1, Packet* pPacket2, Creature* owner);
+	void broadcastLevelWarBonusPacket(Packet* pPacket, Creature* owner);
 
 	WORD getSize()  { return m_Creatures.size(); }
 

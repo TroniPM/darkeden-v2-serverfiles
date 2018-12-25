@@ -23,8 +23,8 @@ public:
 	~ConditionFactoryManager() throw();
 
 public:
-	void init() throw(Error);
-	void addFactory(ConditionFactory* pFactory) throw(Error);
+	void init();
+	void addFactory(ConditionFactory* pFactory);
 	Condition* createCondition(ConditionType_t conditionType) ;
 	string getConditionName(ConditionType_t conditionType) ;
 	ConditionType_t getConditionType(const string & contionname) ;

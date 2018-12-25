@@ -26,13 +26,13 @@ class ActionTeachSkill : public Action
 {
 public:
 	virtual ActionType_t getActionType()  { return ACTION_TEACH_SKILL; }
-	virtual void read(PropertyBuffer & propertyBuffer) throw(Error);
-	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
+	virtual void read(PropertyBuffer & propertyBuffer);
+	virtual void execute(Creature* pCreature1, Creature* pCreature2 = NULL);
 	virtual string toString() ;
 
 public:
-	virtual void executeSlayer(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
-	virtual void executeVampire(Creature* pCreature1, Creature* pCreature2 = NULL) throw(Error);
+	virtual void executeSlayer(Creature* pCreature1, Creature* pCreature2 = NULL);
+	virtual void executeVampire(Creature* pCreature1, Creature* pCreature2 = NULL);
 
 	SkillDomainType_t getDomainType(void)  { return m_DomainType;}
 	void setDomainType(SkillDomainType_t domain) throw() { m_DomainType = domain;}

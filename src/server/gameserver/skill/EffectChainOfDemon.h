@@ -17,16 +17,16 @@
 class EffectChainOfDemon : public Effect 
 {
 public:
-	EffectChainOfDemon(Creature* pCreature) throw(Error);
+	EffectChainOfDemon(Creature* pCreature);
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_CHAIN_OF_DEMON; }
 
-	void affect() throw(Error);
-	void affect(Creature* pCreature) throw(Error);
+	void affect();
+	void affect(Creature* pCreature);
 
-	void unaffect() throw(Error);
-	void unaffect(Creature* pCreature) throw(Error);
+	void unaffect();
+	void unaffect(Creature* pCreature);
 
 	string toString() ;
 

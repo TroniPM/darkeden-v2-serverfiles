@@ -31,13 +31,13 @@ class CBillingPlayer;
 class CBillingPlayerManager : public Thread
 {
 public:
-	CBillingPlayerManager() throw ( Error );
-	~CBillingPlayerManager() throw ( Error );
+	CBillingPlayerManager();
+	~CBillingPlayerManager();
 
 public:
 	void init() throw ( Error ) {}
-	void stop() throw ( Error );
-	void run() throw ();
+	void stop();
+	void run();
 
 	// 빌링 관련 패킷 보내기 함수
 #ifdef __LOGIN_SERVER__
@@ -53,8 +53,8 @@ public:
 	void setForceDisconnect( bool bForceDisconnect = true ) { m_bForceDisconnect = bForceDisconnect; }
 
 	int getVersionNumber() ;
-	int getMinusIntervalInt() const throw ();
-	string getMinusInterval() const throw ();
+	int getMinusIntervalInt() ;
+	string getMinusInterval() ;
 
 private:
 	CBillingPlayer*		m_pCBillingPlayer;

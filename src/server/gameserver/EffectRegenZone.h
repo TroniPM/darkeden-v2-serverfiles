@@ -17,7 +17,7 @@ public:
 	EffectClass	getSendEffectClass()  { return (EffectClass)(getEffectClass() + m_OwnerRace); }
 	void setOwner( RegenZoneInfo::RegenZoneIndex Owner ) { m_OwnerRace = Owner; }
 
-	void unaffect() throw(Error);
+	void unaffect();
 
 	string toString()  { return "EffectRegenZone"; }
 

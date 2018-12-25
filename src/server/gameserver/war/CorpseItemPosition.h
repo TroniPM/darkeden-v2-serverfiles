@@ -14,9 +14,9 @@ public:
 	~CorpseItemPosition(){ }
 
 public:
-	virtual Item*	popItem( bool bLock = true ) throw(Error);
-	virtual Item*	getItem_LOCKED( bool isDel ) throw(Error);
-	virtual Item*	getItem_UNLOCKED( bool isDel ) throw(Error);
+	virtual Item*	popItem( bool bLock = true );
+	virtual Item*	getItem_LOCKED( bool isDel );
+	virtual Item*	getItem_UNLOCKED( bool isDel );
 
 	Zone*   getZone() throw(Error)	{ return m_pZone; }
 
@@ -33,7 +33,7 @@ public:
 	virtual string	toString() ;
 
 protected:
-	Item*			getItem_CORE(Zone* pZone, bool isDel) throw(Error);
+	Item*			getItem_CORE(Zone* pZone, bool isDel);
 
 private:
 	ZoneID_t	m_ZoneID;
