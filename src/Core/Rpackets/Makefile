@@ -107,91 +107,91 @@ dep :
 
 # DO NOT DELETE
 RCSay.o: RCSay.cpp RCSay.h ../DatagramPacket.h ../Packet.h ../Types.h \
- ../types/SystemTypes.h /usr/include/STL/iostream \
- /usr/include/STL/iostream.h /usr/include/STL/streambuf.h \
+ ../types/SystemTypes.h /usr/include/c++/7/iostream \
+  /usr/include/c++/7/streambuf \
  /usr/include/libio.h /usr/include/_G_config.h \
- /usr/include/bits/types.h /usr/include/features.h \
- /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/i386-linux-gnu/bits/types.h /usr/include/features.h \
+ /usr/include/i386-linux-gnu/sys/cdefs.h /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h ../types/PlayerTypes.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h ../types/PlayerTypes.h \
  ../types/ObjectTypes.h ../types/CreatureTypes.h ../types/ItemTypes.h \
  ../types/ZoneTypes.h ../types/QuestTypes.h ../types/ShopTypes.h \
  ../types/GuildTypes.h ../Utility.h ../Exception.h ../StringStream.h \
- /usr/include/STL/list /usr/include/STL/stl_list.h \
+ /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
  ../SocketInputStream.h ../Socket.h ../SocketImpl.h ../SocketAPI.h \
  ../SocketOutputStream.h ../Datagram.h ../PacketFactory.h
 RCSayHandler.o: RCSayHandler.cpp RCSay.h ../DatagramPacket.h \
  ../Packet.h ../Types.h ../types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h ../types/PlayerTypes.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h ../types/PlayerTypes.h \
  ../types/ObjectTypes.h ../types/CreatureTypes.h ../types/ItemTypes.h \
  ../types/ZoneTypes.h ../types/QuestTypes.h ../types/ShopTypes.h \
  ../types/GuildTypes.h ../Utility.h ../Exception.h ../StringStream.h \
- /usr/include/STL/list /usr/include/STL/stl_list.h \
+ /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
  ../SocketInputStream.h ../Socket.h ../SocketImpl.h ../SocketAPI.h \
  ../SocketOutputStream.h ../Datagram.h ../PacketFactory.h

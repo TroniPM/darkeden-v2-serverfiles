@@ -46,10 +46,10 @@ class SocketInputStream {
 public :
 	
 	// constructor
-	SocketInputStream (Socket* sock, uint BufferSize = DefaultSocketInputBufferSize) throw (Error);
+	SocketInputStream (Socket* sock, uint BufferSize = DefaultSocketInputBufferSize);// throw (Error);
 	
 	// destructor
-	virtual ~SocketInputStream () throw (Error);
+	virtual ~SocketInputStream ();// throw (Error);
 
 	
 //////////////////////////////////////////////////
@@ -58,12 +58,12 @@ public :
 public :
 	
 	// read data from stream (input buffer)
-	uint read (char* buf, uint len) throw (ProtocolException, Error);
-	uint read (string & str, uint len) throw (ProtocolException, Error);
-	void readPacket (Packet* p) throw (ProtocolException, Error);
+	uint read (char* buf, uint len);// throw (ProtocolException, Error);
+	uint read (string & str, uint len);// throw (ProtocolException, Error);
+	void readPacket (Packet* p);// throw (ProtocolException, Error);
 
 	template<typename T>
-		uint read( T& buf ) throw (ProtocolException, Error);
+		uint read( T& buf );// throw (ProtocolException, Error);
 
 /*	uint read (bool   & buf) throw (ProtocolException, Error) { return read((char*)&buf, szbool  ); }
 	uint read (char   & buf) throw (ProtocolException, Error) { return read((char*)&buf, szchar  ); }
@@ -76,30 +76,30 @@ public :
 	uint read (ulong  & buf) throw (ProtocolException, Error) { return read((char*)&buf, szulong ); }
 */
 	// peek data from stream (input buffer)
-	bool peek (char* buf, uint len) throw (ProtocolException, Error);
+	bool peek (char* buf, uint len);// throw (ProtocolException, Error);
 	
 	// skip data from stream (input buffer)
-	void skip (uint len) throw (ProtocolException, Error);
+	void skip (uint len);// throw (ProtocolException, Error);
 	
 	// fill stream (input buffer) from socket
-	uint fill () throw (IOException, Error);
-	uint fill_RAW () throw (IOException, Error);
+	uint fill ();// throw (IOException, Error);
+	uint fill_RAW ();// throw (IOException, Error);
 
 	// resize buffer
-	void resize (int size) throw (IOException, Error);
+	void resize (int size);// throw (IOException, Error);
 	
 	// get buffer length
-	uint capacity () const throw () { return m_BufferLen; }
+	uint capacity () const { return m_BufferLen; }
 	
 	// get data length in buffer
-	uint length () const throw ();
-	uint size () const throw () { return length(); }
+	uint length ();// const throw ();
+	uint size () { return length(); }
 
 	// check if buffer is empty
-	bool isEmpty () const throw () { return m_Head == m_Tail; }
+	bool isEmpty () { return m_Head == m_Tail; }
 
 	// get debug string
-	string toString () const throw ();
+	string toString ();// const throw ();
 
 
 //////////////////////////////////////////////////
@@ -136,7 +136,7 @@ private :
 //////////////////////////////////////////////////////////////////////
 template<typename T>
 uint SocketInputStream::read ( T& buf ) 
-	throw ( ProtocolException , Error )
+	//throw ( ProtocolException , Error )
 {
 	uint len = (uint)sizeof(T);
 

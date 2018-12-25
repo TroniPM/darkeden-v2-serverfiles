@@ -74,43 +74,43 @@ LCCreatePCError.o: LCCreatePCError.cpp LCCreatePCError.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -122,8 +122,8 @@ LCCreatePCError.o: LCCreatePCError.cpp LCCreatePCError.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -134,43 +134,43 @@ LCCreatePCErrorHandler.o: LCCreatePCErrorHandler.cpp LCCreatePCError.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -182,8 +182,8 @@ LCCreatePCErrorHandler.o: LCCreatePCErrorHandler.cpp LCCreatePCError.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -194,43 +194,43 @@ LCCreatePCOK.o: LCCreatePCOK.cpp LCCreatePCOK.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -242,8 +242,8 @@ LCCreatePCOK.o: LCCreatePCOK.cpp LCCreatePCOK.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -254,43 +254,43 @@ LCCreatePCOKHandler.o: LCCreatePCOKHandler.cpp LCCreatePCOK.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -302,8 +302,8 @@ LCCreatePCOKHandler.o: LCCreatePCOKHandler.cpp LCCreatePCOK.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -314,43 +314,43 @@ LCDeletePCError.o: LCDeletePCError.cpp LCDeletePCError.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -362,8 +362,8 @@ LCDeletePCError.o: LCDeletePCError.cpp LCDeletePCError.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -374,43 +374,43 @@ LCDeletePCErrorHandler.o: LCDeletePCErrorHandler.cpp LCDeletePCError.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -422,8 +422,8 @@ LCDeletePCErrorHandler.o: LCDeletePCErrorHandler.cpp LCDeletePCError.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -434,43 +434,43 @@ LCDeletePCOK.o: LCDeletePCOK.cpp LCDeletePCOK.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -482,8 +482,8 @@ LCDeletePCOK.o: LCDeletePCOK.cpp LCDeletePCOK.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -494,43 +494,43 @@ LCDeletePCOKHandler.o: LCDeletePCOKHandler.cpp LCDeletePCOK.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -542,8 +542,8 @@ LCDeletePCOKHandler.o: LCDeletePCOKHandler.cpp LCDeletePCOK.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -554,43 +554,43 @@ LCLoginError.o: LCLoginError.cpp LCLoginError.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -602,8 +602,8 @@ LCLoginError.o: LCLoginError.cpp LCLoginError.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -614,43 +614,43 @@ LCLoginErrorHandler.o: LCLoginErrorHandler.cpp LCLoginError.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -662,8 +662,8 @@ LCLoginErrorHandler.o: LCLoginErrorHandler.cpp LCLoginError.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -674,43 +674,43 @@ LCLoginOK.o: LCLoginOK.cpp LCLoginOK.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -722,8 +722,8 @@ LCLoginOK.o: LCLoginOK.cpp LCLoginOK.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -734,43 +734,43 @@ LCLoginOKHandler.o: LCLoginOKHandler.cpp LCLoginOK.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -782,8 +782,8 @@ LCLoginOKHandler.o: LCLoginOKHandler.cpp LCLoginOK.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -794,43 +794,43 @@ LCPCList.o: LCPCList.cpp LCPCList.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -842,8 +842,8 @@ LCPCList.o: LCPCList.cpp LCPCList.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -857,43 +857,43 @@ LCPCListHandler.o: LCPCListHandler.cpp LCPCList.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -905,8 +905,8 @@ LCPCListHandler.o: LCPCListHandler.cpp LCPCList.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -920,43 +920,43 @@ LCQueryResultPlayerID.o: LCQueryResultPlayerID.cpp \
  LCQueryResultPlayerID.h /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -968,8 +968,8 @@ LCQueryResultPlayerID.o: LCQueryResultPlayerID.cpp \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -980,43 +980,43 @@ LCQueryResultPlayerIDHandler.o: LCQueryResultPlayerIDHandler.cpp \
  LCQueryResultPlayerID.h /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -1028,8 +1028,8 @@ LCQueryResultPlayerIDHandler.o: LCQueryResultPlayerIDHandler.cpp \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -1040,43 +1040,43 @@ LCQueryResultCharacterName.o: LCQueryResultCharacterName.cpp \
  LCQueryResultCharacterName.h /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -1088,8 +1088,8 @@ LCQueryResultCharacterName.o: LCQueryResultCharacterName.cpp \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -1101,43 +1101,43 @@ LCQueryResultCharacterNameHandler.o: \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -1149,8 +1149,8 @@ LCQueryResultCharacterNameHandler.o: \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -1161,43 +1161,43 @@ LCReconnect.o: LCReconnect.cpp LCReconnect.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -1209,8 +1209,8 @@ LCReconnect.o: LCReconnect.cpp LCReconnect.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -1221,43 +1221,43 @@ LCReconnectHandler.o: LCReconnectHandler.cpp LCReconnect.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -1269,8 +1269,8 @@ LCReconnectHandler.o: LCReconnectHandler.cpp LCReconnect.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -1281,43 +1281,43 @@ LCRegisterPlayerError.o: LCRegisterPlayerError.cpp \
  LCRegisterPlayerError.h /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -1329,8 +1329,8 @@ LCRegisterPlayerError.o: LCRegisterPlayerError.cpp \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -1341,43 +1341,43 @@ LCRegisterPlayerErrorHandler.o: LCRegisterPlayerErrorHandler.cpp \
  LCRegisterPlayerError.h /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -1389,8 +1389,8 @@ LCRegisterPlayerErrorHandler.o: LCRegisterPlayerErrorHandler.cpp \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -1401,43 +1401,43 @@ LCRegisterPlayerOK.o: LCRegisterPlayerOK.cpp LCRegisterPlayerOK.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -1449,8 +1449,8 @@ LCRegisterPlayerOK.o: LCRegisterPlayerOK.cpp LCRegisterPlayerOK.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -1461,43 +1461,43 @@ LCRegisterPlayerOKHandler.o: LCRegisterPlayerOKHandler.cpp \
  LCRegisterPlayerOK.h /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -1509,8 +1509,8 @@ LCRegisterPlayerOKHandler.o: LCRegisterPlayerOKHandler.cpp \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -1521,43 +1521,43 @@ LCSelectPCError.o: LCSelectPCError.cpp LCSelectPCError.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -1569,8 +1569,8 @@ LCSelectPCError.o: LCSelectPCError.cpp LCSelectPCError.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -1581,43 +1581,43 @@ LCSelectPCErrorHandler.o: LCSelectPCErrorHandler.cpp LCSelectPCError.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -1629,8 +1629,8 @@ LCSelectPCErrorHandler.o: LCSelectPCErrorHandler.cpp LCSelectPCError.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -1641,43 +1641,43 @@ LCServerList.o: LCServerList.cpp LCServerList.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -1689,8 +1689,8 @@ LCServerList.o: LCServerList.cpp LCServerList.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -1705,43 +1705,43 @@ LCServerListHandler.o: LCServerListHandler.cpp LCServerList.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -1753,8 +1753,8 @@ LCServerListHandler.o: LCServerListHandler.cpp LCServerList.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -1766,43 +1766,43 @@ LCWorldList.o: LCWorldList.cpp LCWorldList.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -1814,8 +1814,8 @@ LCWorldList.o: LCWorldList.cpp LCWorldList.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -1830,43 +1830,43 @@ LCWorldListHandler.o: LCWorldListHandler.cpp LCWorldList.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -1878,8 +1878,8 @@ LCWorldListHandler.o: LCWorldListHandler.cpp LCWorldList.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -1891,43 +1891,43 @@ LCVersionCheckOK.o: LCVersionCheckOK.cpp LCVersionCheckOK.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -1939,8 +1939,8 @@ LCVersionCheckOK.o: LCVersionCheckOK.cpp LCVersionCheckOK.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -1951,43 +1951,43 @@ LCVersionCheckOKHandler.o: LCVersionCheckOKHandler.cpp \
  LCVersionCheckOK.h /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -1999,8 +1999,8 @@ LCVersionCheckOKHandler.o: LCVersionCheckOKHandler.cpp \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -2011,43 +2011,43 @@ LCVersionCheckError.o: LCVersionCheckError.cpp LCVersionCheckError.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -2059,8 +2059,8 @@ LCVersionCheckError.o: LCVersionCheckError.cpp LCVersionCheckError.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -2071,43 +2071,43 @@ LCVersionCheckErrorHandler.o: LCVersionCheckErrorHandler.cpp \
  LCVersionCheckError.h /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -2119,8 +2119,8 @@ LCVersionCheckErrorHandler.o: LCVersionCheckErrorHandler.cpp \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -2132,43 +2132,43 @@ LGIncomingConnection.o: LGIncomingConnection.cpp \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -2180,8 +2180,8 @@ LGIncomingConnection.o: LGIncomingConnection.cpp \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -2194,43 +2194,43 @@ LGIncomingConnectionHandler.o: LGIncomingConnectionHandler.cpp \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -2242,8 +2242,8 @@ LGIncomingConnectionHandler.o: LGIncomingConnectionHandler.cpp \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -2252,50 +2252,50 @@ LGIncomingConnectionHandler.o: LGIncomingConnectionHandler.cpp \
  /home/darkeden/vs/src/Core/Datagram.h \
  /home/darkeden/vs/src/Core/PacketFactory.h \
  /home/darkeden/vs/src/Core/Properties.h /usr/include/STL/map \
- /usr/include/STL/stl_tree.h /usr/include/STL/stl_map.h \
- /usr/include/STL/stl_multimap.h
+ /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
+ /home/darkeden/src/libs/stl_multimap.h
 LGIncomingConnectionOK.o: LGIncomingConnectionOK.cpp \
  LGIncomingConnectionOK.h /home/darkeden/vs/src/Core/DatagramPacket.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -2307,8 +2307,8 @@ LGIncomingConnectionOK.o: LGIncomingConnectionOK.cpp \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -2321,43 +2321,43 @@ LGIncomingConnectionOKHandler.o: LGIncomingConnectionOKHandler.cpp \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -2369,8 +2369,8 @@ LGIncomingConnectionOKHandler.o: LGIncomingConnectionOKHandler.cpp \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -2384,43 +2384,43 @@ LGIncomingConnectionError.o: LGIncomingConnectionError.cpp \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -2432,8 +2432,8 @@ LGIncomingConnectionError.o: LGIncomingConnectionError.cpp \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -2447,43 +2447,43 @@ LGIncomingConnectionErrorHandler.o: \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -2495,8 +2495,8 @@ LGIncomingConnectionErrorHandler.o: \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -2509,43 +2509,43 @@ LGKickCharacter.o: LGKickCharacter.cpp LGKickCharacter.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -2557,8 +2557,8 @@ LGKickCharacter.o: LGKickCharacter.cpp LGKickCharacter.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
@@ -2571,43 +2571,43 @@ LGKickCharacterHandler.o: LGKickCharacterHandler.cpp LGKickCharacter.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
- /usr/include/STL/iostream /usr/include/STL/iostream.h \
- /usr/include/STL/streambuf.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/bits/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stddef.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/stdarg.h \
- /usr/include/STL/fstream /usr/include/STL/fstream.h \
- /usr/include/STL/string /usr/include/STL/stl_config.h \
- /usr/include/STL/stl_string_fwd.h /usr/include/STL/stl_alloc.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/exception \
- /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/c++/7/iostream  \
+ /usr/include/c++/7/streambuf /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
+ /usr/include/wchar.h /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/gconv.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
+ /usr/include/c++/7/fstream  \
+ /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
+ /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
+ /usr/include/c++/7/new \
+ /usr/include/c++/7/exception \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
  /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h \
- /usr/include/STL/functional /usr/include/STL/stl_function.h \
- /usr/include/STL/stdexcept /usr/include/STL/stl_exception.h \
- /usr/include/STL/stl_iterator_base.h /usr/include/STL/memory \
- /usr/include/STL/stl_algobase.h /usr/include/STL/stl_relops.h \
- /usr/include/STL/stl_pair.h /usr/include/STL/type_traits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/limits.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h \
- /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/new.h \
- /usr/include/STL/stl_iterator.h /usr/include/STL/stl_construct.h \
- /usr/include/STL/stl_tempbuf.h /usr/include/STL/stl_uninitialized.h \
- /usr/include/STL/stl_raw_storage_iter.h /usr/include/STL/algorithm \
- /usr/include/STL/stl_algo.h /usr/include/STL/stl_heap.h \
- /usr/include/STL/char_traits.h /usr/include/stdio.h \
- /usr/include/STL/stl_hash_fun.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
+ /home/darkeden/src/libs/stl_iterator_base.h /usr/include/c++/7/memory \
+ /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_relops.h \
+ /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
+ /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h \
+ /home/darkeden/src/libs/new.h \
+ /home/darkeden/src/libs/stl_iterator.h /home/darkeden/src/libs/stl_construct.h \
+ /home/darkeden/src/libs/stl_tempbuf.h /home/darkeden/src/libs/stl_uninitialized.h \
+ /home/darkeden/src/libs/stl_raw_storage_iter.h /usr/include/c++/7/algorithm \
+ /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
+ /home/darkeden/src/libs/stl_hash_fun.h \
  /home/darkeden/vs/src/Core/types/PlayerTypes.h \
  /home/darkeden/vs/src/Core/types/ObjectTypes.h \
  /home/darkeden/vs/src/Core/types/CreatureTypes.h \
@@ -2619,8 +2619,8 @@ LGKickCharacterHandler.o: LGKickCharacterHandler.cpp LGKickCharacter.h \
  /home/darkeden/vs/src/Core/types/WarTypes.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
- /home/darkeden/vs/src/Core/StringStream.h /usr/include/STL/list \
- /usr/include/STL/stl_list.h \
+ /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
+ /home/darkeden/src/libs/stl_list.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \

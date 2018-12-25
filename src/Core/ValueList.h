@@ -18,17 +18,17 @@ template <class T>
 class ValueList 
 {
 public:
-    void read (SocketInputStream & iStream) throw (ProtocolException, Error);
-    void write (SocketOutputStream & oStream) const throw (ProtocolException, Error);
+    void read (SocketInputStream & iStream);// throw (ProtocolException, Error);
+    void write (SocketOutputStream & oStream);// const throw (ProtocolException, Error);
 
 	PacketSize_t 	getPacketSize () const throw()		{ return szBYTE + sizeof(T) * m_Values.size(); }
 	static uint 	getPacketMaxSize() throw() 	{ return szBYTE + sizeof(T) * 255; }
 
-	string toString () const throw ();
+	string toString ();// constthrow ();
 
 public:
-	int 	getSize() const throw() 			{ return m_Values.size(); }
-	bool 	isEmpty() const throw() 			{ return m_Values.empty(); }
+	int 	getSize() const { return m_Values.size(); }
+	bool 	isEmpty() const { return m_Values.empty(); }
 
 	void addValue(const T& info) throw() 	{ m_Values.push_back(info); }
 
@@ -43,7 +43,7 @@ public:
 	{
 		m_Values.clear();
 
-		list<T>::const_iterator itr = VL.m_Values.begin();
+		typename list<T>::const_iterator itr = VL.m_Values.begin();
 
 		for (; itr!=VL.m_Values.end(); itr++)
 		{
@@ -72,7 +72,7 @@ private:
 //////////////////////////////////////////////////////////////////////////////
 template <class T>
 void ValueList<T>::read ( SocketInputStream & iStream ) 
-	 throw ( ProtocolException , Error )
+	 //throw ( ProtocolException , Error )
 {
 	__BEGIN_TRY
 		
@@ -96,14 +96,14 @@ void ValueList<T>::read ( SocketInputStream & iStream )
 //////////////////////////////////////////////////////////////////////////////
 template <class T>
 void ValueList<T>::write ( SocketOutputStream & oStream ) 
-     const throw ( ProtocolException , Error )
+     //const throw ( ProtocolException , Error )
 {
 	__BEGIN_TRY
 		
 	BYTE numValue = m_Values.size();
 	oStream.write( numValue );
 
-	list<T>::const_iterator itr = m_Values.begin();
+	typename list<T>::const_iterator itr = m_Values.begin();
     for (; itr!= m_Values.end(); itr++) 
 	{
 		oStream.write( *itr );
@@ -118,7 +118,7 @@ void ValueList<T>::write ( SocketOutputStream & oStream )
 //////////////////////////////////////////////////////////////////////////////
 template <class T>
 string ValueList<T>::toString () 
-	const throw ()
+	//const throw ()
 {
 	__BEGIN_TRY
 
@@ -126,7 +126,7 @@ string ValueList<T>::toString ()
 
 	msg << "Values(";
 
-	list<T>::const_iterator itr = m_Values.begin();
+	typename list<T>::const_iterator itr = m_Values.begin();
 
 	for ( ; itr!= m_Values.end() ; itr++ ) {
 		const T& info = *itr;

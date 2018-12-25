@@ -1061,19 +1061,19 @@ public :
 	virtual ~Packet () throw () {}
 
 	// 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
-	virtual void read (SocketInputStream & iStream) throw (ProtocolException, Error) = 0;
+	virtual void read (SocketInputStream & iStream);// throw (ProtocolException, Error) = 0;
 
 	// 소켓으로부터 직접 데이터를 읽어서 패킷을 초기화한다.
-	virtual void read (Socket* pSocket) throw (ProtocolException, Error) { throw UnsupportedError(); }	
+	virtual void read (Socket* pSocket);// throw (ProtocolException, Error) { throw UnsupportedError(); }	
 
 	// 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
-	virtual void write (SocketOutputStream & oStream) const throw (ProtocolException, Error) = 0;
+	virtual void write (SocketOutputStream & oStream);// const throw (ProtocolException, Error) = 0;
 
 	// 소켓으로 직접 패킷의 바이너리 이미지를 보낸다.
-	virtual void write (Socket* pSocket) const throw (ProtocolException, Error) { throw UnsupportedError(); }	
+	virtual void write (Socket* pSocket);// const throw (ProtocolException, Error) { throw UnsupportedError(); }	
 
 	// 출력 스트림에 패킷의 헤더와 바디를 모두 쓴다.
-	void writeHeaderNBody (SocketOutputStream& oStream ) const
+	void writeHeaderNBody (SocketOutputStream& oStream ) //const
 	{
 		oStream.write( getPacketID() );
 		oStream.write( getPacketSize() );
@@ -1083,13 +1083,13 @@ public :
 	}
 	
 	// execute packet's handler
-	virtual void execute (Player* pPlayer) throw (ProtocolException, Error) = 0;
+	virtual void execute (Player* pPlayer);// throw (ProtocolException, Error) = 0;
 	
 	// get packet's PacketID	
-	virtual PacketID_t getPacketID () const throw () = 0;
+	virtual PacketID_t getPacketID ();// const throw () = 0;
 
 	// get packet's size
-	virtual PacketSize_t getPacketSize () const throw () = 0;
+	virtual PacketSize_t getPacketSize ();// const throw () = 0;
 
 	#if !defined(__GAME_CLIENT__) || defined(__DEBUG_OUTPUT__)
 		// get packet's name

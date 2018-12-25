@@ -34,10 +34,10 @@ class SocketOutputStream {
 public :
 	
 	// constructor
-	SocketOutputStream (Socket* sock, uint BufferSize = DefaultSocketOutputBufferSize) throw (Error);
+	SocketOutputStream (Socket* sock, uint BufferSize = DefaultSocketOutputBufferSize);// throw (Error);
 	
 	// destructor
-	virtual ~SocketOutputStream () throw (Error);
+	virtual ~SocketOutputStream ();// throw (Error);
 
 	
 //////////////////////////////////////////////////
@@ -51,12 +51,12 @@ public :
 	// 그러나, string 의 크기를 BYTE/WORD 중 어느 것으로 할 건지는 의문이다.
 	// 패킷의 크기는 작을 수록 좋다는 정책하에서 필요에 따라서 string size 값을
 	// BYTE 또는 WORD 를 수동으로 사용하도록 한다.
-	uint write (const char* buf, uint len) throw (Error);
-	uint write (const string & buf) throw (Error) { return write(buf.c_str(),buf.size()); }
-	void writePacket (const Packet* pPacket) throw (ProtocolException, Error);
+	uint write (const char* buf, uint len);// throw (Error);
+	uint write (const string & buf) { return write(buf.c_str(),buf.size()); }
+	void writePacket (const Packet* pPacket);// throw (ProtocolException, Error);
 	
 	template<typename T>
-		uint write( T buf ) throw (Error);
+		uint write( T buf );// throw (Error);
 /*	uint write (bool   buf) throw (ProtocolException, Error) { return write((const char*)&buf, szbool  ); }
 	uint write (char   buf) throw (ProtocolException, Error) { return write((const char*)&buf, szchar  ); }
 	uint write (uchar  buf) throw (ProtocolException, Error) { return write((const char*)&buf, szuchar ); }
@@ -68,17 +68,17 @@ public :
 	uint write (ulong  buf) throw (ProtocolException, Error) { return write((const char*)&buf, szulong ); }
 */
 	// flush stream (output buffer) to socket
-	uint flush () throw (IOException, ProtocolException, InvalidProtocolException, Error);
+	uint flush ();// throw (IOException, ProtocolException, InvalidProtocolException, Error);
 
 	// resize buffer 
-	void resize (int size) throw (IOException, Error);
+	void resize (int size);// throw (IOException, Error);
 
 	// get buffer length
 	int capacity () const throw () { return m_BufferLen; }
  
     // get data length in buffer
-    uint length () const throw ();
-    uint size () const throw () { return length(); }
+    uint length () const;//  throw ();
+    uint size () { return length(); }
 
 	// get data in buffer
 	char* getBuffer() const { return m_Buffer; }
@@ -140,7 +140,7 @@ private :
 //////////////////////////////////////////////////////////////////////
 template<typename T>
 uint SocketOutputStream::write ( T buf ) 
-     throw ( Error )
+     //throw ( Error )
 {
 	__BEGIN_TRY
 
