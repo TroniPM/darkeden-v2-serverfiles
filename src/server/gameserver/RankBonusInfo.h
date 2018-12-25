@@ -73,7 +73,7 @@ public:
 	void save() throw(Error);
 
 	// get RankBonusInfo
-	RankBonusInfo* getRankBonusInfo(DWORD rankBonusType) const throw(NoSuchElementException, OutOfBoundException, Error);
+	RankBonusInfo* getRankBonusInfo(DWORD rankBonusType) ;
 
 	// add RankBonusInfo
 	void addRankBonusInfo(RankBonusInfo* pRankBonusInfo) throw(DuplicatedException, Error);

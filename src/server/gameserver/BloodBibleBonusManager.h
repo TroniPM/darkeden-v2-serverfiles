@@ -44,7 +44,7 @@ public:
 	void save() throw(Error);
 
 	// get BloodBibleBonus
-	BloodBibleBonus* getBloodBibleBonus(BloodBibleBonusType_t bloodBibleBonusType) const throw(NoSuchElementException, Error);
+	BloodBibleBonus* getBloodBibleBonus(BloodBibleBonusType_t bloodBibleBonusType) ;
 	const BloodBibleBonusHashMap& getBloodBibleBonuses() const { return m_BloodBibleBonuses; }
 
 	// add BloodBibleBonus

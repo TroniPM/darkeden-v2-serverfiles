@@ -77,7 +77,7 @@ public:
 	bool hasMotorcycleBox(ItemID_t keyTargetID) throw(NoSuchElementException, Error);
 
 	// 여기서 keyID는 열쇠의 TargetID를 뜻한다. 또한 Motorcycle의 ItemID이기도 하다.
-	MotorcycleBox* getMotorcycleBox(ItemID_t keyTargetID) const throw(NoSuchElementException, Error);
+	MotorcycleBox* getMotorcycleBox(ItemID_t keyTargetID) ;
 
 	// 주로 RemoveMotorcycles를 처리해준다. by sigi. 2003.2.26
 	void	heartbeat() throw (Error);

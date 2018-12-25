@@ -200,7 +200,7 @@ public:
 	// 이름, 크리처 클래스, OID 등을 이용해서 존에 존재하는 크리쳐 객체에 접근
 	Creature* getCreature(const string& Name) ;//NoSuchElementException, Error);
 	Creature* getCreature(ObjectID_t objectID) ;//NoSuchElementException, Error);
-	Creature* getCreature(Creature::CreatureClass creatureClass, ObjectID_t objectID) const throw(NoSuchElementException, Error);
+	Creature* getCreature(Creature::CreatureClass creatureClass, ObjectID_t objectID) ;
 
 
 public:

@@ -56,7 +56,7 @@ public:
 	void deleteEnemy(ObjectID_t objectID) throw(NoSuchElementException, Error);
 	void deleteAllEnemy() throw(Error);
 	Creature* getPrimaryEnemy() ;
-	ObjectID_t getEnemy(EnemyPriority enemyPriority = ENEMY_PRIMARY) const throw(NoSuchElementException, Error);
+	ObjectID_t getEnemy(EnemyPriority enemyPriority = ENEMY_PRIMARY) ;
 
 	// Enemy 리스트에서 로그아웃한 PC 를 삭제한다.
 	void verifyEnemies() throw(Error);

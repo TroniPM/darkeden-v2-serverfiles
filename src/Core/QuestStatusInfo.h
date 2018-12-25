@@ -43,7 +43,7 @@ struct MissionInfo
 		iStream.read(m_NumArg);
 	}
 
-	void write(SocketOutputStream& oStream) const throw(ProtocolException, Error)
+	void write(SocketOutputStream& oStream) 
 	{
 		oStream.write(m_Condition);
 		oStream.write(m_Index);

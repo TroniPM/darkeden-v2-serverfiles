@@ -26,7 +26,7 @@ public:
 	
 public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error) { iStream.read(m_QuestID); iStream.read(m_Condition); iStream.read(m_Index); }
-    void write(SocketOutputStream & oStream) const throw(ProtocolException, Error) { oStream.write(m_QuestID); oStream.write(m_Condition); oStream.write(m_Index); }
+    void write(SocketOutputStream & oStream)  { oStream.write(m_QuestID); oStream.write(m_Condition); oStream.write(m_Index); }
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 	PacketID_t getPacketID()  { return PACKET_GC_EXECUTE_ELEMENT; }
 	PacketSize_t getPacketSize()  { return szDWORD + szBYTE + szWORD; }

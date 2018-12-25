@@ -59,7 +59,7 @@ public:
 public:
 
 	// get/set pc info
-	PCInfo* getPCInfo(Slot slot) const throw(NoSuchElementException) 
+	PCInfo* getPCInfo(Slot slot)  
 	{ 
 		if(m_pPCInfos[ slot ] == NULL)
 			throw NoSuchElementException("no such PC exist in that slot");

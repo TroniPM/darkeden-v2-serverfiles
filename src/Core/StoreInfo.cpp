@@ -15,7 +15,7 @@ void StoreItemInfo::read(SocketInputStream& iStream) throw(ProtocolException, Er
 	__END_CATCH
 }
 
-void StoreItemInfo::write(SocketOutputStream& oStream) const throw(ProtocolException, Error)
+void StoreItemInfo::write(SocketOutputStream& oStream) 
 {
 	__BEGIN_TRY
 
@@ -76,7 +76,7 @@ void StoreInfo::read(SocketInputStream& iStream, bool toOther) throw(ProtocolExc
 	__END_CATCH
 }
 
-void StoreInfo::write(SocketOutputStream& oStream, bool toOther) const throw(ProtocolException, Error)
+void StoreInfo::write(SocketOutputStream& oStream, bool toOther) 
 {
 	__BEGIN_TRY
 
@@ -119,7 +119,7 @@ void StoreOutlook::read(SocketInputStream& iStream) throw(ProtocolException, Err
 	__END_CATCH
 }
 
-void StoreOutlook::write(SocketOutputStream& oStream) const throw(ProtocolException, Error)
+void StoreOutlook::write(SocketOutputStream& oStream) 
 {
 	__BEGIN_TRY
 

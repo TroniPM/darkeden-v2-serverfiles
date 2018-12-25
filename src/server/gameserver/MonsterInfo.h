@@ -339,7 +339,7 @@ public:
 	void addMonsterInfo(MonsterType_t monsterType, MonsterInfo* pMonsterInfo) throw(DuplicatedException, OutOfBoundException, Error);
 
 	// get monster info with monster type
-	const MonsterInfo* getMonsterInfo(MonsterType_t monsterType) const throw(NoSuchElementException, OutOfBoundException, Error);
+	const MonsterInfo* getMonsterInfo(MonsterType_t monsterType) ;
 
 	// 임의의 스프라이트 타입을 가진 몬스터의 타입 리스트를 가져온다.
 	// (여러 몬스터가 하나의 스프라이트 타입을 가질 수 있기 때문에) 

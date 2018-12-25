@@ -44,7 +44,7 @@ public:
 	void save() throw(Error);
 
 	// get SweeperBonus
-	SweeperBonus* getSweeperBonus(SweeperBonusType_t sweeperBonusType) const throw(NoSuchElementException, Error);
+	SweeperBonus* getSweeperBonus(SweeperBonusType_t sweeperBonusType) ;
 	const SweeperBonusHashMap& getSweeperBonuses() const { return m_SweeperBonuses; }
 
 	// add SweeperBonus

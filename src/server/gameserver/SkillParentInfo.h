@@ -50,11 +50,11 @@ public:
 	}
 	void deleteParents(SkillType_t SkillType) throw(NoSuchElementException, Error);
 
-	SkillType_t getParents(SkillType_t SkillType) const throw(NoSuchElementException, Error);
+	SkillType_t getParents(SkillType_t SkillType) ;
 
 
 	bool hasParent(SkillType_t ParentSkillType) throw(NoSuchElementException, Error);
-	bool hasParent() const throw(NoSuchElementException, Error) { return m_Parents.size() > 0; }
+	bool hasParent()  { return m_Parents.size() > 0; }
 
 //--------------------------------------------------
 // get monster-class-level attributes
@@ -105,7 +105,7 @@ public:
 	void save() throw(Error);
 
 	// get SkillParentInfo
-	SkillParentInfo* getSkillParentInfo(SkillType_t SkillType) const throw(NoSuchElementException, OutOfBoundException, Error);
+	SkillParentInfo* getSkillParentInfo(SkillType_t SkillType) ;
 
 	// add SkillParentInfo
 	void addSkillParentInfo(SkillParentInfo* pSkillParentInfo) throw(DuplicatedException, Error);

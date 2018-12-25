@@ -49,7 +49,7 @@ void GCGQuestInventory::read(SocketInputStream & iStream) throw(ProtocolExceptio
 	__END_CATCH
 }
 
-void GCGQuestInventory::write(SocketOutputStream & oStream) const throw(ProtocolException, Error)
+void GCGQuestInventory::write(SocketOutputStream & oStream) 
 {
 	__BEGIN_TRY
 

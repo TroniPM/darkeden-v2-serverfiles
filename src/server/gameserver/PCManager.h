@@ -30,7 +30,7 @@ public:
 	//virtual void deleteCreature(ObjectID_t objectID) throw(NoSuchElementException, Error);
 	
 	// 크리처 매니저에 들어있는 특정 크리처 객체를 리턴한다.
-	//Creature* getCreature(ObjectID_t objectID) const throw(NoSuchElementException, Error);
+	//Creature* getCreature(ObjectID_t objectID) ;
 
 	// 매니저에 소속된 크리처들(NPC,Monster)을 처리한다.
 	virtual void processCreatures() throw(Error);

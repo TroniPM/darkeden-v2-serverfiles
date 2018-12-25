@@ -14,7 +14,7 @@ void QuestStatusInfo::read(SocketInputStream& iStream) throw(ProtocolException, 
 	}
 }
 
-void QuestStatusInfo::write(SocketOutputStream& oStream) const throw(ProtocolException, Error)
+void QuestStatusInfo::write(SocketOutputStream& oStream) 
 {
 	oStream.write(m_QuestID);
 	oStream.write(m_Status);

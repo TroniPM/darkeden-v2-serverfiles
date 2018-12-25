@@ -57,7 +57,7 @@ public:
 	void init() throw(Error);
 	void load() throw(Error);
 
-	OustersEXPInfo* getOustersEXPInfo(uint OustersEXPType) const throw(NoSuchElementException, OutOfBoundException, Error);
+	OustersEXPInfo* getOustersEXPInfo(uint OustersEXPType) ;
 	void addOustersEXPInfo(OustersEXPInfo* pOustersEXPInfo) throw(DuplicatedException, Error);
 
 	string toString() ;

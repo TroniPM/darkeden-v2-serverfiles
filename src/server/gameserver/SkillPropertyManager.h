@@ -76,7 +76,7 @@ public:
 	void initDefaultSkillProperty() throw();
 
 	// get SkillProperty
-	SkillProperty* getSkillProperty(SkillType_t SkillType) const throw(NoSuchElementException, OutOfBoundException, Error);
+	SkillProperty* getSkillProperty(SkillType_t SkillType) ;
 
 	// add SkillProperty
 	void addSkillProperty(SkillProperty* pSkillProperty) throw(DuplicatedException, OutOfBoundException, Error);

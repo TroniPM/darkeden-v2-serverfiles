@@ -89,7 +89,7 @@ void PetInfo::read(SocketInputStream& iStream) throw(ProtocolException, Error)
 	__END_CATCH
 }
 
-void PetInfo::write(SocketOutputStream& oStream) const throw(ProtocolException, Error)
+void PetInfo::write(SocketOutputStream& oStream) 
 {
 	__BEGIN_TRY
 

@@ -57,7 +57,7 @@ public:
 	NPC* getNPC_LOCKED(const string & name) ;
 
 	// get creature's IP address
-	IP_t getIP(const string & name) const throw(NoSuchElementException, Error);
+	IP_t getIP(const string & name) ;
 
 	list<Creature*>	getGuildCreatures(GuildID_t gID, uint Num);
 

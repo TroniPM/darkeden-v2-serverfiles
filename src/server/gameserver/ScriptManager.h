@@ -28,7 +28,7 @@ public:
 	void load(const string & name) throw(Error);
 
 public:
-	Script* getScript(ScriptID_t scriptID) const throw(NoSuchElementException, Error);
+	Script* getScript(ScriptID_t scriptID) ;
 	void setScript(ScriptID_t scriptID, Script* pScript) throw(DuplicatedException, Error);
 
 	string toString() ;

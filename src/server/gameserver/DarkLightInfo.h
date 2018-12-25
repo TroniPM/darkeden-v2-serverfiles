@@ -65,7 +65,7 @@ public:
 	void load() throw(Error);
 
 	DarkLightInfo* getDarkLightInfo(BYTE month, BYTE hour, BYTE minute) throw(OutOfBoundException, Error);
-	const DarkLightInfo* getDarkLightInfo(BYTE month, BYTE hour, BYTE minute) const throw(OutOfBoundException, Error);
+	const DarkLightInfo* getDarkLightInfo(BYTE month, BYTE hour, BYTE minute) ;
 
 	DarkLightInfo* getCurrentDarkLightInfo( Zone* pZone ) throw(Error);
 	const DarkLightInfo* getCurrentDarkLightInfo( Zone* pZone ) ;

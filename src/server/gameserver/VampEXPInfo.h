@@ -53,7 +53,7 @@ public:
 	void init() throw(Error);
 	void load() throw(Error);
 
-	VampEXPInfo* getVampEXPInfo(uint VampEXPType) const throw(NoSuchElementException, OutOfBoundException, Error);
+	VampEXPInfo* getVampEXPInfo(uint VampEXPType) ;
 	void addVampEXPInfo(VampEXPInfo* pVampEXPInfo) throw(DuplicatedException, Error);
 
 	string toString() ;

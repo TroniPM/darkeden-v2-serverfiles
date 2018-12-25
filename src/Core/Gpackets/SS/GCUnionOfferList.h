@@ -84,7 +84,7 @@ public:
 		__END_CATCH
 	}
 		    
-    void write(SocketOutputStream & oStream) const throw(ProtocolException, Error)
+    void write(SocketOutputStream & oStream) 
 	{
 		__BEGIN_TRY
 			

@@ -27,7 +27,7 @@ public:
 	const string& getName() const { return m_Name; }
 	const string& getKeyword() const { return m_Keyword; }
 
-	const string& getParameter( int index ) const throw(OutOfBoundException, Error);
+	const string& getParameter( int index ) ;
 
 	string toString() ;
 

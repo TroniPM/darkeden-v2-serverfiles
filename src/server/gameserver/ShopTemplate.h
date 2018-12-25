@@ -86,7 +86,7 @@ public:
 	void load() throw(Error);
 
 public:
-	ShopTemplate* getTemplate(ShopTemplateID_t id) const throw(NoSuchElementException, Error);
+	ShopTemplate* getTemplate(ShopTemplateID_t id) ;
 	void setTemplate(ShopTemplateID_t id, ShopTemplate* pEntry) throw();
 
 	string toString() ;

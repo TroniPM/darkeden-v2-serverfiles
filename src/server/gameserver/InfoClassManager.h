@@ -38,7 +38,7 @@ public:
 	virtual void load() throw(Error) = 0;
 
 	void addItemInfo(ItemInfo* pItemInfo) throw(DuplicatedException, Error);
-	ItemInfo* getItemInfo(ItemType_t ItemType) const throw(NoSuchElementException, Error);
+	ItemInfo* getItemInfo(ItemType_t ItemType) ;
 	uint getInfoCount()  { return m_InfoCount + 1; }
 
 	void removeAllItemInfo() throw(Error);

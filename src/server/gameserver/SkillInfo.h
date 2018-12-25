@@ -277,7 +277,7 @@ public:
 	void save() throw(Error);
 
 	// get SkillInfo
-	SkillInfo* getSkillInfo(SkillType_t SkillType) const throw(NoSuchElementException, OutOfBoundException, Error);
+	SkillInfo* getSkillInfo(SkillType_t SkillType) ;
 
 	// add SkillInfo
 	void addSkillInfo(SkillInfo* pSkillInfo) throw(DuplicatedException, Error);

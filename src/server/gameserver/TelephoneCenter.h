@@ -35,7 +35,7 @@ public:
 	void deleteSlayer(PhoneNumber_t PhoneNumber) throw(NoSuchElementException, Error);
 
 	// get creature with PC-name
-	Slayer* getSlayer(PhoneNumber_t PhoneNumber) const throw(NoSuchElementException, Error);
+	Slayer* getSlayer(PhoneNumber_t PhoneNumber) ;
 
 private:
 
