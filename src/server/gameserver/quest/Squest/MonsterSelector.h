@@ -45,7 +45,7 @@ public :
 	}
 
 	void				setMonster(const string& text) throw (Error);
-	string				toString() const throw(Error);
+	string				toString() ;
 
 private :
 	MonsterType_t		m_MonsterType;

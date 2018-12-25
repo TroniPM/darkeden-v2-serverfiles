@@ -30,7 +30,7 @@ public:
 	virtual void create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID=0) throw(Error);
 	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) throw(Error);
 	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
-	void tinysave(const char* field) const throw (Error);
+	void tinysave(const char* field) ;
 	virtual string toString() ;
 
 	static void initItemIDRegistry(void) throw();
@@ -54,15 +54,15 @@ public:
 	virtual void addOptionType(OptionType_t OptionType) throw() { m_OptionType.push_back(OptionType); }
 	virtual void setOptionType(const list<OptionType_t>& OptionType) throw() { m_OptionType = OptionType; }*/
 
-/*	virtual VolumeWidth_t getVolumeWidth() const throw(Error);
-	virtual VolumeHeight_t getVolumeHeight() const throw(Error);
-	virtual Weight_t getWeight() const throw(Error);
+/*	virtual VolumeWidth_t getVolumeWidth() ;
+	virtual VolumeHeight_t getVolumeHeight() ;
+	virtual Weight_t getWeight() ;
 
 	virtual Durability_t getDurability() const throw(Error) { return m_Durability; }
 	void setDurability(Durability_t durability) throw(Error) { m_Durability = durability; }*/
 
-/*	virtual Damage_t getMinDamage() const throw(Error);
-	virtual Damage_t getMaxDamage() const throw(Error);
+/*	virtual Damage_t getMinDamage() ;
+	virtual Damage_t getMaxDamage() ;
 
 	Damage_t getBonusDamage()  { return m_BonusDamage;}
 	void setBonusDamage(Damage_t damage) throw() { m_BonusDamage = damage;}

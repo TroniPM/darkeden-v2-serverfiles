@@ -30,7 +30,7 @@ public:
 	virtual void create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID=0) throw(Error);
 	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) throw(Error);
 	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
-	void tinysave(const char* field) const throw (Error);
+	void tinysave(const char* field) ;
 	virtual string toString() ;
 
 	static void initItemIDRegistry(void) throw();
@@ -55,21 +55,21 @@ public:
 	virtual void setOptionType(const list<OptionType_t>& OptionType) throw() { m_OptionType = OptionType; }
 
 	// get width
-	virtual VolumeWidth_t getVolumeWidth() const throw(Error);
+	virtual VolumeWidth_t getVolumeWidth() ;
 	
 	// get height
-	virtual VolumeHeight_t getVolumeHeight() const throw(Error);
+	virtual VolumeHeight_t getVolumeHeight() ;
 	
 	// get weight
-	virtual Weight_t getWeight() const throw(Error);
+	virtual Weight_t getWeight() ;
 
 	// get/set item's durability
 	virtual Durability_t getDurability() const throw(Error) { return m_Durability; }
 	void setDurability(Durability_t durability) throw(Error) { m_Durability = durability; }
 
 	// get/set armor's Defense Bonus
-	virtual Defense_t getDefenseBonus() const throw(Error);
-	virtual Protection_t getProtectionBonus() const throw(Error);
+	virtual Defense_t getDefenseBonus() ;
+	virtual Protection_t getProtectionBonus() ;
 */
 
 private:

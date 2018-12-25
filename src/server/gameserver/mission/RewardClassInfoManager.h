@@ -25,9 +25,9 @@ public:
 	virtual void load( const string& name = "" ) throw(Error) = 0;
 
 	bool			hasReward( RewardClass_t rClass ) const { return m_RewardClasses.find(rClass) != m_RewardClasses.end(); }
-	QuestMessage	canGiveReward( RewardClass_t rClass, PlayerCreature* pPC ) const throw(Error);
+	QuestMessage	canGiveReward( RewardClass_t rClass, PlayerCreature* pPC ) ;
 //	QuestMessage	giveReward( RewardClass_t rClass, PlayerCreature* pPC ) throw(Error);
-	RewardClass*	getRewardClass( RewardClass_t rClass ) const throw(Error);
+	RewardClass*	getRewardClass( RewardClass_t rClass ) ;
 
 protected:
 	NPC*				m_pOwnerNPC;

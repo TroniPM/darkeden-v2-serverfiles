@@ -87,7 +87,7 @@ public :
 	void setMacAddress(const BYTE* ma) { copy( ma, ma+6, (BYTE*)m_MacAddress ); }
 
 	// get debug string
-	virtual string toString () const throw (Error);
+	virtual string toString () ;
 
 	//add by viva
 	//void setKey(WORD EncryptKey, WORD HashKey) throw(); 

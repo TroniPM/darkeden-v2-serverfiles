@@ -42,8 +42,8 @@ public:
 	//void broadcastPacket(Packet* pPacket, Creature* owner) throw(Error);
 
 	// 모든 사용자들 다른 곳으로 이동시킨다.
-	void transportAllCreatures(ZoneID_t ZoneID, ZoneCoord_t ZoneX = 0xffff, ZoneCoord_t ZoneY = 0xffff, Race_t race=defaultRaceValue, Turn_t delay=10) const throw (Error);
-	void transportPartyCreatures (ZoneID_t ZoneID, ZoneCoord_t ZoneX = 0xffff, ZoneCoord_t ZoneY = 0xffff, int PartyID=0, Turn_t delay=10) const throw (Error);
+	void transportAllCreatures(ZoneID_t ZoneID, ZoneCoord_t ZoneX = 0xffff, ZoneCoord_t ZoneY = 0xffff, Race_t race=defaultRaceValue, Turn_t delay=10) ;
+	void transportPartyCreatures (ZoneID_t ZoneID, ZoneCoord_t ZoneX = 0xffff, ZoneCoord_t ZoneY = 0xffff, int PartyID=0, Turn_t delay=10) ;
 	
 	// get debug string 
 	string toString() ;

@@ -30,8 +30,8 @@ public:
 	RewardClass_t	getRewardClass() const { return m_RewardClass; }
 
 	virtual void	addRewardInfo( RewardInfo* pRewardInfo ) throw(Error);
-	virtual QuestMessage	giveReward( PlayerCreature* pPC ) const throw(Error);
-	virtual QuestMessage	canGiveReward( PlayerCreature* pPC ) const throw(Error);
+	virtual QuestMessage	giveReward( PlayerCreature* pPC ) ;
+	virtual QuestMessage	canGiveReward( PlayerCreature* pPC ) ;
 
 	virtual RewardInfo*		selectReward( PlayerCreature* pPC ) const throw(Error) = 0;
 	virtual string	toString() ;

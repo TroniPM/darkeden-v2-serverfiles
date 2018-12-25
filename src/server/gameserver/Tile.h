@@ -97,19 +97,19 @@ public:
 public:
 	void addBuilding(BuildingID_t buildingID) throw(Error);
 	void deleteBuilding() throw(Error);
-	BuildingID_t getBuilding() const throw(Error);
+	BuildingID_t getBuilding() ;
 	bool hasBuilding()  { return FLAG_ISSET(m_wFlags, TILE_BUILDING) > 0; }
 
 public:
 	void addPortal(Portal* pPortal) throw(Error);
 	void deletePortal() throw(Error);
-	Portal* getPortal() const throw(Error);
+	Portal* getPortal() ;
 	bool hasPortal()  { return FLAG_ISSET(m_wFlags, TILE_PORTAL) > 0; }
 
 public:
 	void addTerrain(TerrainID_t terrainID) throw(Error);
 	void deleteTerrain() throw(Error);
-	TerrainID_t getTerrain() const throw(Error);
+	TerrainID_t getTerrain() ;
 	bool isTerrain()  { return FLAG_ISSET(m_wFlags, TILE_TERRAIN) > 0; }
 
 public:

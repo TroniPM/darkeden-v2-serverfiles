@@ -71,14 +71,14 @@ public:
 	void		load() throw(Error);
 
 	void		addPKZoneInfo( PKZoneInfo* pPKZoneInfo ) throw(Error);
-	PKZoneInfo*	getPKZoneInfo( ZoneID_t	zoneID ) const throw(Error);
-	bool		isPKZone( ZoneID_t zoneID ) const throw(Error);
+	PKZoneInfo*	getPKZoneInfo( ZoneID_t	zoneID ) ;
+	bool		isPKZone( ZoneID_t zoneID ) ;
 
 	bool		canEnterPKZone( ZoneID_t zoneID ) throw(Error);
 	bool		enterPKZone( ZoneID_t zoneID ) throw(Error);
 	bool		leavePKZone( ZoneID_t zoneID ) throw(Error);
 
-	bool		getResurrectPosition( ZoneID_t zoneID, ZONE_COORD& zoneCoord ) const throw(Error);
+	bool		getResurrectPosition( ZoneID_t zoneID, ZONE_COORD& zoneCoord ) ;
 
 private:
 	PKZoneInfoMap m_PKZoneInfos;

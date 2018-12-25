@@ -19,7 +19,7 @@ public:
 
 	GCQuestStatus* makeStatusPacket() const;
 
-	string			toString() const throw(Error);
+	string			toString() ;
 
 private:
 	NPCID_t			m_TargetNPCID[2];

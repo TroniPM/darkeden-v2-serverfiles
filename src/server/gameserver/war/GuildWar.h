@@ -21,7 +21,7 @@ public:
 
 	WarType_t		getWarType() const				{ return WAR_GUILD; }
 	string 			getWarType2DBString() const		{ return "GUILD"; }
-	string			getWarName() const throw (Error); 
+	string			getWarName() ; 
 
 	GuildID_t		getChallangerGuildID() const	{ return m_ChallangerGuildID; }
 
@@ -45,9 +45,9 @@ protected :
 	void 			recordGuildWarEnd() throw (Error);
 
 public :
-	void    makeWarScheduleInfo( WarScheduleInfo* pWSI ) const throw (Error);
-	void    makeWarInfo( WarInfo* pWarInfo ) const throw (Error);
-	virtual string	toString() const throw (Error);
+	void    makeWarScheduleInfo( WarScheduleInfo* pWSI ) ;
+	void    makeWarInfo( WarInfo* pWarInfo ) ;
+	virtual string	toString() ;
 
 private:
 	ZoneID_t			m_CastleZoneID;			// 傈里苞 包访等 己狼 ZoneID

@@ -26,9 +26,9 @@ public:
 
 public:
 	void init() throw(Error);
-	InfoClassManager* getInfoManager(Item::ItemClass Class) const throw(Error);
-	ItemInfo* getItemInfo(Item::ItemClass Class, ItemType_t ItemType) const throw(Error);
-	uint getItemCount(Item::ItemClass Class) const throw(Error);
+	InfoClassManager* getInfoManager(Item::ItemClass Class) ;
+	ItemInfo* getItemInfo(Item::ItemClass Class, ItemType_t ItemType) ;
+	uint getItemCount(Item::ItemClass Class) ;
 
 	vector<ItemType_t> getPossibleItemTypes(Item::ItemClass IClass, uint minLevel, uint maxLevel) throw();
 

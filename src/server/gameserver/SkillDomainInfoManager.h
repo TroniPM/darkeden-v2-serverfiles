@@ -76,12 +76,12 @@ public:
 	void init() throw(Error);
 
 	// get sub info class manager
-	DomainInfoManager* getInfoManager(Domain DomainType) const throw(Error);
+	DomainInfoManager* getInfoManager(Domain DomainType) ;
 
 	// get item info
-	SkillDomainInfo* getSkillDomainInfo(Level_t Level) const throw(Error);
+	SkillDomainInfo* getSkillDomainInfo(Level_t Level) ;
 
-	uint getDomainCount() const throw(Error);
+	uint getDomainCount() ;
 
 	// toString for debug
 	string toString() ;
@@ -108,10 +108,10 @@ public:
 	void init() throw(Error);
 
 	// get item info
-	DomainInfo* getDomainInfo(SkillDomain DomainType, Level_t Level) const throw(Error);
+	DomainInfo* getDomainInfo(SkillDomain DomainType, Level_t Level) ;
 
 	// addDomainInfo
-	void addDomainInfo(DomainInfo* pDomainInfo) const throw(Error);
+	void addDomainInfo(DomainInfo* pDomainInfo) ;
 
 	// toString for debug
 	string toString() ;

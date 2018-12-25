@@ -25,9 +25,9 @@ public:
 public:
 	void init() throw(Error);
 	void addFactory(ConditionFactory* pFactory) throw(Error);
-	Condition* createCondition(ConditionType_t conditionType) const throw(Error);
-	string getConditionName(ConditionType_t conditionType) const throw(Error);
-	ConditionType_t getConditionType(const string & contionname) const throw(Error);
+	Condition* createCondition(ConditionType_t conditionType) ;
+	string getConditionName(ConditionType_t conditionType) ;
+	ConditionType_t getConditionType(const string & contionname) ;
 	string toString() ;
 
 private:

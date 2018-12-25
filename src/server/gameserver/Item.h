@@ -649,7 +649,7 @@ public:
 	virtual bool destroy() throw(Error);
 	virtual void save(const string & ownerID, Storage storage, DWORD storageID, BYTE x, BYTE y) throw(Error) = 0;
 	virtual void tinysave(const string & field) const throw (Error) = 0;
-	void waste( Storage storage = STORAGE_GARBAGE ) const throw (Error);
+	void waste( Storage storage = STORAGE_GARBAGE ) ;
 
 // own methods
 // *CAUTION*

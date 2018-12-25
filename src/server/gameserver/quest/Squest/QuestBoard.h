@@ -26,8 +26,8 @@ public :
 	bool		add(Quest* pQuest) throw (Error);	
 	Quest*		remove(QuestID_t qid) throw (Error);
 	
-	void		setScript(Script* pScript) const throw (Error);
-	//void		makeNPCAskPacket(GCNPCAskDynamic& npcAskPacket) const throw (Error);
+	void		setScript(Script* pScript) ;
+	//void		makeNPCAskPacket(GCNPCAskDynamic& npcAskPacket) ;
 
 	const QUESTS& getQuests() const	throw (Error) { return m_Quests; }
 

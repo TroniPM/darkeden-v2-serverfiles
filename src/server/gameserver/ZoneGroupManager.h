@@ -112,7 +112,7 @@ public:
 	void	lockZoneGroups() throw( Error );
 	void	unlockZoneGroups() throw( Error );
 
-	int 	getPlayerNum () const throw(Error);
+	int 	getPlayerNum () ;
 
 	void 	removeFlag (Effect::EffectClass EC) throw(Error);
 

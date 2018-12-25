@@ -25,9 +25,9 @@ public:
 public:
 	void init() throw(Error);
 	void addFactory(ActionFactory* pFactory) throw(Error);
-	Action* createAction(ActionType_t conditionType) const throw(Error);
-	string getActionName(ActionType_t conditionType) const throw(Error);
-	ActionType_t getActionType(const string & actionname) const throw(Error);
+	Action* createAction(ActionType_t conditionType) ;
+	string getActionName(ActionType_t conditionType) ;
+	ActionType_t getActionType(const string & actionname) ;
 	string toString() ;
 
 private:

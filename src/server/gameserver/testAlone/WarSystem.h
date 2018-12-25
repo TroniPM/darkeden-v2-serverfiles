@@ -70,24 +70,24 @@ protected :
 	VSDateTime 		getWarEndTime(WarType_t warType) const;
 	bool			addQueuedWar() throw (Error);
 	bool			addWar(War* pWar) throw (Error);
-	War* 			getActiveRaceWarAtSameThread() const throw(Error);
+	War* 			getActiveRaceWarAtSameThread() ;
 	bool 			checkStartRaceWar() throw (Error);
 
 public :
-	bool			hasCastleActiveWar( ZoneID_t zoneID ) const throw(Error);
-	bool			getAttackGuildID( ZoneID_t zoneID, GuildID_t& guildID ) const throw(Error);
-	War*			getActiveWar( ZoneID_t zoneID ) const throw(Error);
+	bool			hasCastleActiveWar( ZoneID_t zoneID ) ;
+	bool			getAttackGuildID( ZoneID_t zoneID, GuildID_t& guildID ) ;
+	War*			getActiveWar( ZoneID_t zoneID ) ;
 	WarSchedule*	getActiveWarSchedule_LOCKED( ZoneID_t zoneID ) throw (Error);
 	WarSchedule*	getActiveWarSchedule( ZoneID_t zoneID ) throw (Error);
 	bool			isModifyCastleOwner( ZoneID_t castleZoneID, PlayerCreature* pPC ) throw (Error);
 
 	bool			hasActiveRaceWar() const throw(Error)	{ return m_bHasRaceWar; }
-	War*			getActiveRaceWar() const throw(Error);
+	War*			getActiveRaceWar() ;
 
 	bool			isWarActive() const { return !isEmpty(); }
 
 public :
-	void			broadcastWarList( GamePlayer* pGamePlayer ) const throw (Error);
+	void			broadcastWarList( GamePlayer* pGamePlayer ) ;
 	bool			startRaceWar() throw(Error);
 	void 			prepareRaceWar() throw (Error);
 

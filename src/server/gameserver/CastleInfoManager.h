@@ -56,7 +56,7 @@ public:
 	const list<OptionType_t>& getOptionTypeList()  { return m_BonusOptionList; }
 	void setOptionTypeList( const string& options ) throw();
 
-	bool isCastleZone(ZoneID_t targetZoneID) const throw (Error);
+	bool isCastleZone(ZoneID_t targetZoneID) ;
 	const list<ZoneID_t>& getZoneIDList()  { return m_CastleZoneIDList; }
 	void setZoneIDList( const string& zoneIDs ) throw();
 
@@ -68,7 +68,7 @@ public:
 
 	bool isCommon() const { return ( m_GuildID == SlayerCommon || m_GuildID == VampireCommon || m_GuildID == OustersCommon ); }
 
-	void	broadcast(Packet* pPacket) const throw (Error);
+	void	broadcast(Packet* pPacket) ;
 
 	string toString() ;
 
@@ -100,7 +100,7 @@ public:
 
 	void addCastleInfo( CastleInfo* pCastleInfo ) throw(Error);
 	void deleteCastleInfo( ZoneID_t zoneID ) throw(Error);
-	CastleInfo* getCastleInfo( ZoneID_t zoneID ) const throw(Error);
+	CastleInfo* getCastleInfo( ZoneID_t zoneID ) ;
 	int  size() const { return m_CastleInfos.size(); }
 
 	bool modifyCastleOwner(ZoneID_t zoneID, PlayerCreature* pPC ) throw(Error);
@@ -112,29 +112,29 @@ public:
 	bool setItemTaxRatio( Zone* pZone, int itemTaxRatio ) throw(Error);
 	const hash_map<ZoneID_t, CastleInfo*>& getCastleInfos() const 	{ return m_CastleInfos; }
 
-	int getItemTaxRatio( const PlayerCreature* pPC, const NPC* pNPC = NULL ) const throw(Error);
+	int getItemTaxRatio( const PlayerCreature* pPC, const NPC* pNPC = NULL ) ;
 	Gold_t getEntranceFee( ZoneID_t zoneID, PlayerCreature* pPC ) const  throw(Error);
 
-	bool isCastleMember( PlayerCreature* pPC ) const throw(Error);
-	bool isCastleMember( ZoneID_t zoneID, PlayerCreature* pPC ) const throw(Error);
-	bool isPossibleEnter( ZoneID_t zoneID, PlayerCreature* pPC ) const throw(Error);
-	bool canPortalActivate( ZoneID_t zoneID, PlayerCreature* pPC ) const throw(Error);
-	bool hasOtherBloodBible( ZoneID_t zoneID, PlayerCreature* pPC ) const throw(Error);
+	bool isCastleMember( PlayerCreature* pPC ) ;
+	bool isCastleMember( ZoneID_t zoneID, PlayerCreature* pPC ) ;
+	bool isPossibleEnter( ZoneID_t zoneID, PlayerCreature* pPC ) ;
+	bool canPortalActivate( ZoneID_t zoneID, PlayerCreature* pPC ) ;
+	bool hasOtherBloodBible( ZoneID_t zoneID, PlayerCreature* pPC ) ;
 
-	CastleInfo* getGuildCastleInfo( GuildID_t guildID ) const throw(Error);
-	list<CastleInfo*> getGuildCastleInfos( GuildID_t guildID ) const throw(Error);
+	CastleInfo* getGuildCastleInfo( GuildID_t guildID ) ;
+	list<CastleInfo*> getGuildCastleInfos( GuildID_t guildID ) ;
 
 	bool getResurrectPosition( PlayerCreature* pPC, ZONE_COORD& zoneCoord ) throw (Error);
 
 	//----------------------------------------------------------------------
 	// CastleZoneID 관련
 	//----------------------------------------------------------------------
-	bool 		isCastleZone(ZoneID_t castleZoneID, ZoneID_t targetZoneID) const throw (Error);
+	bool 		isCastleZone(ZoneID_t castleZoneID, ZoneID_t targetZoneID) ;
 	bool		isCastleZone(ZoneID_t zoneID) const;
 	void		clearCastleZoneIDs() throw (Error);
-	bool	 	getCastleZoneID(ZoneID_t zoneID, ZoneID_t &castleZoneID) const throw (Error);
+	bool	 	getCastleZoneID(ZoneID_t zoneID, ZoneID_t &castleZoneID) ;
 	void 		setCastleZoneID(ZoneID_t zoneID, ZoneID_t castleZoneID) throw (Error);
-	bool		isSameCastleZone(ZoneID_t zoneID1, ZoneID_t zoneID2) const throw (Error);
+	bool		isSameCastleZone(ZoneID_t zoneID1, ZoneID_t zoneID2) ;
 
 	//----------------------------------------------------------------------
 	// 모든 성에 적용 되는 것들
@@ -147,10 +147,10 @@ public:
 
 	void	transportAllOtherRace() throw (Error);
 
-	ZoneID_t 	getCastleZoneID(ShrineID_t shrineID) const throw (Error);
-	void		broadcastShrinePacket(ShrineID_t shrineID, Packet* pPacket) const throw (Error);
+	ZoneID_t 	getCastleZoneID(ShrineID_t shrineID) ;
+	void		broadcastShrinePacket(ShrineID_t shrineID, Packet* pPacket) ;
 
-	SkillType_t getCastleSkillType( ZoneID_t zoneID, GuildID_t guildID ) const throw (Error);
+	SkillType_t getCastleSkillType( ZoneID_t zoneID, GuildID_t guildID ) ;
 
 	string toString() ;
 

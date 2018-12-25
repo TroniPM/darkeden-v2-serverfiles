@@ -63,7 +63,7 @@ public :
 	//void setID (const string & id) throw () { m_ID = id; }
 
 	// get debug string
-	virtual string toString () const throw (Error);
+	virtual string toString () ;
 
 public:
 	void executeIntervalValidation( CBillingPacketHeader& header, CBillingPacketRequestIntervalValidationBody& body ) throw ( IOException, Error );

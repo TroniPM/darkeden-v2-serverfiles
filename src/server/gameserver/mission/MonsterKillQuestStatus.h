@@ -19,7 +19,7 @@ public:
 
 	GCQuestStatus* makeStatusPacket() const;
 
-	string			toString() const throw(Error);
+	string			toString() ;
 
 private:
 	SpriteType_t	m_TargetMonsterSpriteType;

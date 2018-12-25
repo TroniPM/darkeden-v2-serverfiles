@@ -25,7 +25,7 @@ public:
 
 	virtual string					toString() ;
 
-	virtual MonsterKillQuestStatus*	makeQuestStatus( PlayerCreature* pPC ) const throw(Error);
+	virtual MonsterKillQuestStatus*	makeQuestStatus( PlayerCreature* pPC ) ;
 	bool	isMonsterKillQuest() const { return true; }
 
 	int		getGoalNum() const { return m_GoalNum; }

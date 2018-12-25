@@ -109,9 +109,9 @@ public:
 //////////////////////////////////////////////////////////////
 public:
 	QuestManager*	getQuestManager() const { return m_pQuestManager; }
-	void			sendCurrentQuestInfo() const throw(Error);
+	void			sendCurrentQuestInfo() ;
 
-	int findEffection(int EffectClass) const throw(Error);
+	int findEffection(int EffectClass) ;
 
 	virtual	int		getQuestLevel() const = 0;
 	virtual void	whenQuestLevelUpgrade();

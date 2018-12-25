@@ -27,9 +27,9 @@ public:
 	virtual void		load( const string& name = "" ) throw(Error) = 0;
 	void		addQuestInfo(QuestInfo* pQI) throw(Error);
 
-	QuestMessage	canExecuteQuest( QuestID_t qID, PlayerCreature* pPC ) const throw(Error);
+	QuestMessage	canExecuteQuest( QuestID_t qID, PlayerCreature* pPC ) ;
 	QuestMessage	startQuest( QuestID_t qID, PlayerCreature* pPC ) throw(Error);
-	QuestStatus*	makeQuestStatus( QuestID_t qID, PlayerCreature* pPC ) const throw(Error);
+	QuestStatus*	makeQuestStatus( QuestID_t qID, PlayerCreature* pPC ) ;
 
 	bool			isEventQuest( QuestID_t qID ) const;
 

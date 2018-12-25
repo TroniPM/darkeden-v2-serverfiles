@@ -18,7 +18,7 @@ public:
 
 	WarType_t		getWarType() const				{ return WAR_RACE; }
 	string 			getWarType2DBString() const		{ return "RACE"; }
-	string			getWarName() const throw (Error); 
+	string			getWarName() ; 
 
 public:
 	//void			sendWarStartMessage() const throw (ProtocolException, Error);
@@ -32,10 +32,10 @@ protected :
 	void 			recordRaceWarEnd() throw (Error);
 
 public :
-	void    makeWarScheduleInfo( WarScheduleInfo* pWSI ) const throw (Error);
-	void 	makeWarInfo(WarInfo* pWarInfo) const throw (Error);
+	void    makeWarScheduleInfo( WarScheduleInfo* pWSI ) ;
+	void 	makeWarInfo(WarInfo* pWarInfo) ;
 
-	virtual string	toString() const throw (Error);
+	virtual string	toString() ;
 
 private:
 };

@@ -39,9 +39,9 @@ public:
 	void lock() throw(Error) { m_Mutex.lock(); }
 	void unlock() throw(Error) { m_Mutex.unlock(); }
 
-	void broadcast( Packet* pPacket ) const throw(Error);
+	void broadcast( Packet* pPacket ) ;
 
-//	void sendBloodBibleStatus() const throw (Error);
+//	void sendBloodBibleStatus() ;
 
 	void fixTimeband( uint timeband ) throw(Error);
 	void resumeTimeband() throw(Error);

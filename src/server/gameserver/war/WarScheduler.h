@@ -47,7 +47,7 @@ protected :
 
 public :
 	static VSDateTime 		getNextWarDateTime( WarType_t warType, const VSDateTime& dt );
-	bool 	makeGCWarScheduleList(GCWarScheduleList* pGCWarScheduleList) const throw (Error);
+	bool 	makeGCWarScheduleList(GCWarScheduleList* pGCWarScheduleList) ;
 
 
 public :

@@ -33,7 +33,7 @@ public :
 	virtual ~BillingPlayerInfo () throw (Error);
 
 	// get debug string
-	virtual string toString () const throw (Error);
+	virtual string toString () ;
 
 public :
 	void            setBillingUserKey(int buid) { m_BillingUserKey = buid; }

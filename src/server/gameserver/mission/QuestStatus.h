@@ -50,7 +50,7 @@ public:
 
 	virtual Packet*	makeStatusPacket() const = 0;
 
-	virtual string	toString() const throw(Error);
+	virtual string	toString() ;
 	virtual void	executeWhenStart() { }
 	virtual void	executeWhenCancel() { }
 	virtual void	executeWhenFail() { }

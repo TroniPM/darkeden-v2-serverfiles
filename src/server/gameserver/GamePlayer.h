@@ -72,7 +72,7 @@ public:
 	virtual void disconnect(bool bDisconnected = DISCONNECTED) throw (InvalidProtocolException, Error);
 	
 	// get debug string
-	virtual string toString() const throw(Error);
+	virtual string toString() ;
 
 	// 스피드 체크
 	virtual bool verifySpeed(Packet* pPacket) throw(Error);

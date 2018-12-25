@@ -30,7 +30,7 @@ public:
 	virtual void create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID=0) throw(Error);
 	virtual void save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) throw(Error);
 	void tinysave(const string & field) const throw (Error)	{ tinysave(field.c_str()); }
-	void tinysave(const char* field) const throw (Error);
+	void tinysave(const char* field) ;
 	virtual string toString() ;
 
 	static void initItemIDRegistry(void) throw();
@@ -45,9 +45,9 @@ public:
 	virtual ItemNum_t getNum()  { return m_Num; }
 	virtual void setNum(ItemNum_t Num) throw() { m_Num = Num; }
 
-	virtual VolumeWidth_t getVolumeWidth() const throw(Error);
-	virtual VolumeHeight_t getVolumeHeight() const throw(Error);
-	virtual Weight_t getWeight() const throw(Error);
+	virtual VolumeWidth_t getVolumeWidth() ;
+	virtual VolumeHeight_t getVolumeHeight() ;
+	virtual Weight_t getWeight() ;
 
 private:
 	ItemType_t m_ItemType;

@@ -50,7 +50,7 @@ public:
 	const list<ZoneID_t>& 	getZoneIDList()  { return m_LevelWarBonusZoneIDList; }
 	void					setZoneIDList( const string& zoneIDs )	throw();
 
-	bool 					isBonusZone(ZoneID_t targetZoneID) const throw (Error);
+	bool 					isBonusZone(ZoneID_t targetZoneID) ;
 
 	bool					isCreatureThisLevel(Creature* pCreature) ;
 	bool					isZoneThisLevel( ZoneID_t zoneID ) ;
@@ -96,17 +96,17 @@ public:
 	int getCreatureLevelGrade( Creature* pCreature ) throw(Error);
 	ZoneID_t getCreatureZoneID( Creature* pCreature ) throw(Error);
 	
-	bool isCreatureBonusZone( Creature* pCreature, ZoneID_t zoneID ) const throw(Error);
+	bool isCreatureBonusZone( Creature* pCreature, ZoneID_t zoneID ) ;
 
-	LevelWarZoneInfo* getLevelWarZoneInfo( ZoneID_t zoneID ) const throw(Error);
+	LevelWarZoneInfo* getLevelWarZoneInfo( ZoneID_t zoneID ) ;
 
 public:
 	void clearLevelWarZoneIDs() throw(Error);
-	bool getLevelWarZoneID( ZoneID_t zoneID, ZoneID_t &levelWarZoneID ) const throw(Error);
+	bool getLevelWarZoneID( ZoneID_t zoneID, ZoneID_t &levelWarZoneID ) ;
 	void setLevelWarZoneID( ZoneID_t zoneID, ZoneID_t levelWarZoneID ) throw (Error);
 
 //	void refreshSweeperBonusZonePlayer() throw(Error);
-	void broadcast( ZoneID_t zoneID, Packet* pPacket ) const throw(Error);
+	void broadcast( ZoneID_t zoneID, Packet* pPacket ) ;
 
 	string toString() ;
 

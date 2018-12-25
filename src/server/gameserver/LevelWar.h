@@ -24,7 +24,7 @@ class LevelWar : public Work
 public:
 	LevelWar(LevelWarManager* pManager) : m_pManager(pManager) { m_State = READY; }
 	virtual void	execute() throw(Error);
-	virtual string toString() const throw(Error);
+	virtual string toString() ;
 };
 
 #endif// __LEVEL_WAR_H__

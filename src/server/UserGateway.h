@@ -58,9 +58,9 @@ public :
 	void 	clear() throw (Error);
 
 	void	passUser(UserGatewayType ugt) throw (Error);
-	int		getInfo(UserGatewayType ugt) const throw (Error);
+	int		getInfo(UserGatewayType ugt) ;
 
-	int		getTotalInfo() const throw (Error);
+	int		getTotalInfo() ;
 
 	string	toString() throw (Error);
 

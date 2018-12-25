@@ -41,8 +41,8 @@ public:
 	bool getOustersPosition(ZoneID_t id, ZONE_COORD& zoneCoord) ;//NoSuchElementException);
 	bool getRaceDefaultPosition(Race_t, ZONE_COORD& zoneCoord) ;
 
-	bool getPosition(PlayerCreature* pPC, ZONE_COORD& zondCoord) const throw(Error);
-	bool getBasicPosition(PlayerCreature* pPC, ZONE_COORD& zondCoord) const throw(Error);
+	bool getPosition(PlayerCreature* pPC, ZONE_COORD& zondCoord) ;
+	bool getBasicPosition(PlayerCreature* pPC, ZONE_COORD& zondCoord) ;
 
 	void addSlayerPosition(ZoneID_t id, const ZONE_COORD& coord) throw(DuplicatedException, Error);
 	void addVampirePosition(ZoneID_t id, const ZONE_COORD& coord) throw(DuplicatedException, Error);

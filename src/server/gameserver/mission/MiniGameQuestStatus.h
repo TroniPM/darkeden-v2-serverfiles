@@ -19,7 +19,7 @@ public:
 	int		getGameType() const { return m_GameType; }
 	bool	setScore( uint score ) { if ( m_bScoreSet ) return false; m_GameScore = score; return m_bScoreSet = true; }
 	GCQuestStatus*	makeStatusPacket() const;
-	string	toStrong() const throw(Error);
+	string	toStrong() ;
 
 	void	executeWhenStart();
 	void	executeWhenFail();

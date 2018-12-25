@@ -38,14 +38,14 @@ public:
 
 public:
 	bool			isTargetMonster( PlayerCreautre* pPC, Monster* pMonster ) const;
-	Item*			getLootingItem() const throw(Error);
+	Item*			getLootingItem() ;
 };
 
 class EventQuestLootingManager
 {
 public:
 	bool			isTargetMonster( PlayerCreature* pPC, Monster* pMonster ) const;
-	bool			killed( PlayerCreature* pPC, Monster* pMonster ) const throw(Error);
+	bool			killed( PlayerCreature* pPC, Monster* pMonster ) ;
 
 	void 			load() throw(Error);
 private:

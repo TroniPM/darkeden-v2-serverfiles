@@ -42,7 +42,7 @@ public:
 	QuestID_t		getQuestID() const { return m_QuestID; }
 	virtual string	toString() ;
 
-	virtual bool	canExecute( PlayerCreature* pPC ) const throw(Error);
+	virtual bool	canExecute( PlayerCreature* pPC ) ;
 	virtual QuestStatus*	makeQuestStatus( PlayerCreature* pPC ) const throw(Error) = 0;
 
 	bool			isMonsterKillQuest() const { return m_QuestClass == QUEST_CLASS_MONSTER_KILL; }

@@ -82,7 +82,7 @@ void ItemNumberManager::init()
 	}
 
 }
-int 	getItemNumber(Item::ItemClass Class, ItemType_t ItemType) const throw(Error);
+int 	getItemNumber(Item::ItemClass Class, ItemType_t ItemType) ;
 
 string toString() ;
 

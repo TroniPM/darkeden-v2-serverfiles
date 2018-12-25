@@ -30,7 +30,7 @@ public:
 	void			setCorpseObjectID( ObjectID_t objectID ) { m_CorpseObjectID = objectID; }
 
 public:
-	virtual string	toString() const throw(Error);
+	virtual string	toString() ;
 
 protected:
 	Item*			getItem_CORE(Zone* pZone, bool isDel) throw(Error);

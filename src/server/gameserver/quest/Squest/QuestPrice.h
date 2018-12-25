@@ -45,7 +45,7 @@ public :
 
 	virtual void	setPrice(const string& text) throw (Error);
 
-	string			toString() const throw (Error);
+	string			toString() ;
 
 private :
 	Gold_t			m_Gold;

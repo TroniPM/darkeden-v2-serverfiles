@@ -30,7 +30,7 @@ public:
 	void unaffect() throw(Error); 
 	void unaffect(Item* pItem) throw(Error) {}
 
-	bool canSeeInvisibility( Creature* pTarget ) const throw(Error);
+	bool canSeeInvisibility( Creature* pTarget ) ;
 
 	string toString() ;
 

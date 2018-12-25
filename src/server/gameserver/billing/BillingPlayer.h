@@ -53,7 +53,7 @@ public :
 	void setSocket ( Socket * pSocket ) throw ();
 	
 	// get debug string
-	virtual string toString () const throw (Error);
+	virtual string toString () ;
 
 public :
 	void sendPayInit() throw( ProtocolException, Error );

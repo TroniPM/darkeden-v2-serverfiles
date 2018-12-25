@@ -55,7 +55,7 @@ public:
 	void addPotentialEnemy(Creature* pCreature) throw(Error);
 	void deleteEnemy(ObjectID_t objectID) throw(NoSuchElementException, Error);
 	void deleteAllEnemy() throw(Error);
-	Creature* getPrimaryEnemy() const throw(Error);
+	Creature* getPrimaryEnemy() ;
 	ObjectID_t getEnemy(EnemyPriority enemyPriority = ENEMY_PRIMARY) const throw(NoSuchElementException, Error);
 
 	// Enemy 리스트에서 로그아웃한 PC 를 삭제한다.
@@ -75,7 +75,7 @@ public:
 	bool isEnemyToAttack(Vampire* pVampire) const;
 	bool isEnemyToAttack(Monster* pMonster) const;
 
-	bool canMove(ZoneCoord_t nx, ZoneCoord_t ny) const throw(Error);
+	bool canMove(ZoneCoord_t nx, ZoneCoord_t ny) ;
 // get monster-class-level attributes
 public:
 	MonsterType_t getMonsterType()  { return m_MonsterType; }

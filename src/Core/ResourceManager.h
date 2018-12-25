@@ -38,7 +38,7 @@ public :
 	void load (const string & filename) throw (Error);
 
 	// save to resource file
-	void save (const string & filename) const throw (Error);
+	void save (const string & filename) ;
 
 
 public :

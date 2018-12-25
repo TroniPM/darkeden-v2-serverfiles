@@ -44,7 +44,7 @@ public:
 public:
 	void		load() throw(Error);
 
-	bool		makeTimeLimitItemInfo( GCTimeLimitItemInfo& gcTimeLimitItemInfo ) const throw(Error);
+	bool		makeTimeLimitItemInfo( GCTimeLimitItemInfo& gcTimeLimitItemInfo ) ;
 	bool		registerItem( Item* pItem ) throw(Error);
 	bool		checkTimeLimit( Item* pItem ) throw(Error);
 	bool		wasteIfTimeOver( Item* pItem ) throw(Error);

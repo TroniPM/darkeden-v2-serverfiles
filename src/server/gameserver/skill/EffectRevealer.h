@@ -40,9 +40,9 @@ public:
 public:
 	void setSkillLevel( ExpLevel_t level ) throw() { m_SkillLevel = level; }
 
-	bool canSeeHide( Creature* pTarget ) const throw(Error);
-	bool canSeeSniping( Creature* pTarget ) const throw(Error);
-	bool canSeeInvisibility( Creature* pTarget ) const throw(Error);
+	bool canSeeHide( Creature* pTarget ) ;
+	bool canSeeSniping( Creature* pTarget ) ;
+	bool canSeeInvisibility( Creature* pTarget ) ;
 
 
 private:

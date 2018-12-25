@@ -27,7 +27,7 @@ public :
 	bool 	join(PlayerCreature* pPC) throw (Error);
 	bool	leave(PlayerCreature* pPC) throw (Error);
 
-	void    saveCurrent(const LevelLimitInfo* pLI) const throw (Error);
+	void    saveCurrent(const LevelLimitInfo* pLI) ;
 };
 
 

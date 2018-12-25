@@ -77,7 +77,7 @@ public:
 
 public:
 	virtual ObjectClass getObjectClass()  { return OBJECT_CLASS_CREATURE; }
-	virtual ObjectPriority getObjectPriority() const throw(Error);
+	virtual ObjectPriority getObjectPriority() ;
 	virtual string toString()  = 0;
 
 public:
@@ -180,8 +180,8 @@ public:
 	void setXYDir(ZoneCoord_t x, ZoneCoord_t y, Dir_t dir) throw() { m_X = x; m_Y = y; m_Dir = dir; }
 
 	//(nx,ny)로 움직일 수 있는가?
-	bool canMove(ZoneCoord_t nx, ZoneCoord_t ny) const throw(Error);
-	bool isBlockedByCreature(ZoneCoord_t nx , ZoneCoord_t ny) const throw(Error);
+	bool canMove(ZoneCoord_t nx, ZoneCoord_t ny) ;
+	bool isBlockedByCreature(ZoneCoord_t nx , ZoneCoord_t ny) ;
 
 	// get/set sight level
 	Sight_t getSight()  { return m_Sight; }
@@ -227,7 +227,7 @@ public :
 public:
 	bool isEffect(Effect::EffectClass EClass) throw (Error);
 	void deleteEffect(Effect::EffectClass EClass) throw (Error);
-	Effect* findEffect(Effect::EffectClass EClass) const throw (Error);
+	Effect* findEffect(Effect::EffectClass EClass) ;
 	void addEffect(Effect* pEffect) throw (Error);
 
 public:

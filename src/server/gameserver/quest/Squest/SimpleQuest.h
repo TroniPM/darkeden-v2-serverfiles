@@ -84,8 +84,8 @@ public :
 	virtual string		getObjectiveToString() const throw (Error) = 0;
 	virtual void		addReward(const string& text) throw (Error);
 	virtual void		addPenalty(const string& text) throw (Error);
-	virtual string		getRewardToString() const throw (Error);
-	virtual string		getPenaltyToString() const throw (Error);
+	virtual string		getRewardToString() ;
+	virtual string		getPenaltyToString() ;
 
 	virtual string		toString() const throw (Error) = 0;
 

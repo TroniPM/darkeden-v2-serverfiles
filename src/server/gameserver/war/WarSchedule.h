@@ -33,8 +33,8 @@ public:
 	virtual bool heartbeat() throw(Error);
 
 public :
-	void	makeWarScheduleInfo( WarScheduleInfo* pWSI ) const throw (Error);
-	void	makeWarInfo( WarInfo* pWarInfo ) const throw (Error);
+	void	makeWarScheduleInfo( WarScheduleInfo* pWSI ) ;
+	void	makeWarInfo( WarInfo* pWarInfo ) ;
 
 private:
 };

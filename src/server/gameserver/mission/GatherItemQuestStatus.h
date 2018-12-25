@@ -16,10 +16,10 @@ public:
 	~GatherItemQuestStatus() { }
 
 //	bool			got( Item* pItem ) throw(Error);
-	bool			isTarget( Item* pItem ) const throw(Error);
+	bool			isTarget( Item* pItem ) ;
 	void			reset() { m_CurrentNum = 0; }
 
-	bool			isSuccess() const throw(Error);
+	bool			isSuccess() ;
 	GCQuestStatus*	makeStatusPacket() const;
 
 private:

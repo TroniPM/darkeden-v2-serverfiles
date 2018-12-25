@@ -30,7 +30,7 @@ public:
 	CoordInven_t	getInventoryY() const { return m_InvenY; }
 	void			setInventoryY( CoordInven_t invenY ) { m_bSetZone = false; m_InvenY = invenY; }
 
-	string			toString() const throw (Error);
+	string			toString() ;
 
 protected:
 	Creature*		findCreature() throw(Error);

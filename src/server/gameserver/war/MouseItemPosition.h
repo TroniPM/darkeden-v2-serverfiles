@@ -22,7 +22,7 @@ public:
 	void			setOwnerName( const string& ownerName ) { m_bSetZone = false; m_OwnerName = ownerName; }
 
 public:
-	virtual string	toString() const throw(Error);
+	virtual string	toString() ;
 
 protected:
 	Item*			popItem_LOCKED() throw (Error);

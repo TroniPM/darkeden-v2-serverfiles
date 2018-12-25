@@ -115,7 +115,7 @@ public:
 	void addPC(Creature* pCreature) throw(Error);
 	void addCreature(Creature* pCreature, ZoneCoord_t cx, ZoneCoord_t cy, Dir_t dir) throw(EmptyTileNotExistException, Error);
 	TPOINT addItem(Item* pItem, ZoneCoord_t cx, ZoneCoord_t cy, bool bAllowCreature=true, Turn_t decayTurn=0, ObjectID_t DropPetOID=0) throw(EmptyTileNotExistException, Error); 
-	Item* getItem(ObjectID_t id) const throw(Error);
+	Item* getItem(ObjectID_t id) ;
 	void addEffect(Effect* pEffect) throw(Error);	
 	void deleteEffect(ObjectID_t id) throw(Error);	
 	Effect* findEffect(Effect::EffectClass eid) throw(Error);	

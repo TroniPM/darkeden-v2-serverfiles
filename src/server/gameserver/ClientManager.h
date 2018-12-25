@@ -32,7 +32,7 @@ public:
 
 	void run() throw(Error);
 
-	string toString() const throw(Error);
+	string toString() ;
 
 	void			setBalanceZoneGroup(int afterMinutes, bool bForce=false, bool bDefault=false);
 	const Timeval&	getBalanceZoneGroupTime() const		{ return m_BalanceZoneGroupTime; }

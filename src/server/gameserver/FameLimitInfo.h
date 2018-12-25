@@ -54,7 +54,7 @@ public:
 	void load() throw(Error);
 	void clear() throw(Error);
 
-	FameLimitInfo* getFameLimitInfo(SkillDomainType_t domainType, uint level) const throw (Error);
+	FameLimitInfo* getFameLimitInfo(SkillDomainType_t domainType, uint level) ;
 	void addFameLimitInfo(FameLimitInfo* pFameLimitInfo) throw();
 
 	string toString() ;

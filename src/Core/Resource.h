@@ -46,7 +46,7 @@ public :
 	void load (ifstream & ifile) throw (Error);
 
 	// save to file
-	void save (ofstream & ofile) const throw (Error);
+	void save (ofstream & ofile) ;
 
 	// read from socket input stream
 	void read (SocketInputStream & iStream) throw (IOException, Error);

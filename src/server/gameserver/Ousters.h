@@ -133,12 +133,12 @@ public:
 	virtual bool load() throw (InvalidProtocolException, Error);
 	void loadItem( bool checkTimeLimit = false ) throw (InvalidProtocolException, Error);
 
-	virtual void save() const throw (Error);
-	virtual void tinysave(const string & field) const throw (Error);
-//	virtual void tinysave(const char* field) const throw (Error);
-	void saveSkills(void) const throw (Error);
-	void saveGears(void) const throw (Error);
-	void saveExps(void) const throw (Error);
+	virtual void save() ;
+	virtual void tinysave(const string & field) ;
+//	virtual void tinysave(const char* field) ;
+	void saveSkills(void) ;
+	void saveGears(void) ;
+	void saveExps(void) ;
 
 	virtual void act(const Timeval& currentTime) throw(Error) {}
 

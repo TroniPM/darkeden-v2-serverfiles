@@ -38,7 +38,7 @@ public:
 	friend class Scheduler;
 
 public:
-	virtual string		toString() const throw(Error);
+	virtual string		toString() ;
 
 protected:
 	ScheduleType 	m_ScheduleType;

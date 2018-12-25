@@ -53,7 +53,7 @@ public :
 	void load (const string & filename) throw (Error);
 
 	// save to update file
-	void save (const string & filename) const throw (Error);
+	void save (const string & filename) ;
 
 	// read from socket input stream
 	void read (SocketInputStream & iStream) throw (ProtocolException, Error);

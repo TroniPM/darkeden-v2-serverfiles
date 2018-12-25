@@ -45,7 +45,7 @@ public:
 	virtual void sendPacket(Packet* packet) throw(ProtocolException, Error);
 
 	// get debug string
-	virtual string toString() const throw(Error);
+	virtual string toString() ;
 
 
 private:

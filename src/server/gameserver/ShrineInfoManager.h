@@ -136,22 +136,22 @@ public:
 
 	void addShrineSet( ShrineSet* pShrineSet ) throw(Error);
 	void deleteShrineSet( ShrineID_t shrineID ) throw(Error);
-	ShrineSet* getShrineSet( ShrineID_t shrineID ) const throw(Error);
+	ShrineSet* getShrineSet( ShrineID_t shrineID ) ;
 	int  size() const { return m_ShrineSets.size(); }
 
 	string toString() ;
 
 public:
-	bool isMatchGuardShrine(Item* pItem, MonsterCorpse* pMonsterCorpse, PlayerCreature* pPC) const throw(Error);
-	bool isMatchHolyShrine(Item* pItem, MonsterCorpse* pMonsterCorpse) const throw(Error);
-	bool isDefenderOfGuardShrine( PlayerCreature* pPC, MonsterCorpse* pShrine ) const throw(Error);
-	bool canPickupBloodBible( Race_t race, BloodBible* pBloodBible ) const throw (Error);
-	bool getMatchGuardShrinePosition(Item* pItem, ZoneItemPosition& zip) const throw(Error);
+	bool isMatchGuardShrine(Item* pItem, MonsterCorpse* pMonsterCorpse, PlayerCreature* pPC) ;
+	bool isMatchHolyShrine(Item* pItem, MonsterCorpse* pMonsterCorpse) ;
+	bool isDefenderOfGuardShrine( PlayerCreature* pPC, MonsterCorpse* pShrine ) ;
+	bool canPickupBloodBible( Race_t race, BloodBible* pBloodBible ) ;
+	bool getMatchGuardShrinePosition(Item* pItem, ZoneItemPosition& zip) ;
 
-//	bool returnCastleBloodBible( ZoneID_t castleZoneID ) const throw (Error);
-	bool returnAllBloodBible() const throw (Error);
-	bool returnBloodBible( ShrineID_t shrineID, bool bLock = true ) const throw (Error);
-	bool returnBloodBible( Zone* pZone, BloodBible* pBloodBible ) const throw (Error);
+//	bool returnCastleBloodBible( ZoneID_t castleZoneID ) ;
+	bool returnAllBloodBible() ;
+	bool returnBloodBible( ShrineID_t shrineID, bool bLock = true ) ;
+	bool returnBloodBible( Zone* pZone, BloodBible* pBloodBible ) ;
 
 //	bool removeShrineShield( Zone* pZone ) throw(Error);
 	bool removeShrineShield( ShrineInfo* pShrineInfo ) throw(Error);
@@ -159,7 +159,7 @@ public:
 	//bool addShrineShield_LOCKED( Zone* pZone ) throw(Error);
 	bool addShrineShield( ShrineInfo &shrineInfo ) throw(Error);
 
-	bool putBloodBible(PlayerCreature* pPC, Item* pItem, MonsterCorpse* pCorpse) const throw (Error);
+	bool putBloodBible(PlayerCreature* pPC, Item* pItem, MonsterCorpse* pCorpse) ;
 
 public :
 	void addAllShrineShield() throw(Error);

@@ -41,7 +41,7 @@ public :
 	virtual void        setObjective(const string& text) throw (Error)	{ MonsterSelector::setMonster(text); }
 	virtual string      getObjectiveToString() const throw (Error)		{ return MonsterSelector::toString(); }
 
-	string				toString() const throw (Error);
+	string				toString() ;
 
 };
 
@@ -51,7 +51,7 @@ public :
 class MonsterKillQuestFactory : public QuestFactory {
 public :
 	virtual Quest::QuestType	getQuestType() const { return Quest::QUEST_MONSTER_KILL; }
-	virtual Quest*				create(const QuestCreateInfo* qcInfo=NULL) const throw (Error);	
+	virtual Quest*				create(const QuestCreateInfo* qcInfo=NULL) ;	
 
 	static void		initMonsterTypeInfos();
 	

@@ -41,7 +41,7 @@ public :
 
 public:
 
-	DWORD	getTimeLimit(ObjectID_t objectID) const throw(Error);
+	DWORD	getTimeLimit(ObjectID_t objectID) ;
 	void	addTimeLimit(ObjectID_t objectID, DWORD time) throw(Error);
 
 

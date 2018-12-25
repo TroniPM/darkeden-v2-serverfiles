@@ -78,7 +78,7 @@ public :
 	uint receive (void* buf, uint len, uint flags = 0);// throw (IOException, Error);
 	
 	// how much available?
-	uint available ();// const throw (Error);
+	uint available ();// ;
 	
 
 //////////////////////////////////////////////////
@@ -87,26 +87,26 @@ public :
 public :
 
 	// get/set socket's linger status
-	uint getLinger ();// const throw (Error);
+	uint getLinger ();// ;
 	void setLinger (uint lingertime);// throw (Error);
 	
 	// get/set socket's reuse address status
-	bool isReuseAddr ();// const throw (Error);
+	bool isReuseAddr ();// ;
 	void setReuseAddr (bool on = true);// throw (Error);
 	
 	// get error
-	bool isSockError();// const throw (Error);
+	bool isSockError();// ;
 
 	// get/set socket's nonblocking status
-	bool isNonBlocking ();// const throw (Error);
+	bool isNonBlocking ();// ;
 	void setNonBlocking (bool on = true);// throw (Error);
 	
 	// get/set receive buffer size
-	uint getReceiveBufferSize ();// const throw (Error);
+	uint getReceiveBufferSize ();// ;
 	void setReceiveBufferSize (uint size);// throw (Error);
 	
 	// get/set send buffer size
-	uint getSendBufferSize ();// const throw (Error);
+	uint getSendBufferSize ();// ;
 	void setSendBufferSize (uint size);// throw (Error);
 	
 

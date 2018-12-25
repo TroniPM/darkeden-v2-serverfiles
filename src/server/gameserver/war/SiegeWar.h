@@ -21,7 +21,7 @@ public:
 
 	WarType_t		getWarType() const				{ return WAR_GUILD; }
 	string 			getWarType2DBString() const		{ return "GUILD"; }
-	string			getWarName() const throw (Error); 
+	string			getWarName() ; 
 
 	int				getGuildSide(GuildID_t guildID) const;
 
@@ -62,9 +62,9 @@ protected :
 	void 			recordSiegeWarEnd() throw (Error);
 
 public :
-	void    makeWarScheduleInfo( WarScheduleInfo* pWSI ) const throw (Error);
-	void    makeWarInfo( WarInfo* pWarInfo ) const throw (Error);
-	virtual string	toString() const throw (Error);
+	void    makeWarScheduleInfo( WarScheduleInfo* pWSI ) ;
+	void    makeWarInfo( WarInfo* pWarInfo ) ;
+	virtual string	toString() ;
 
 public:
 	BYTE			canReinforce(GuildID_t gID);

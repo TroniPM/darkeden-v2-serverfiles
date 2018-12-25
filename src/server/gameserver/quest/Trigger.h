@@ -59,9 +59,9 @@ public:
 	void addAction(Action* pAction) throw(Error);
 	void addCounterAction(Action* pAction) throw(Error);
 	bool hasCondition(ConditionType_t conditionType) const throw(Error) { return m_ConditionSet.test(conditionType); }
-	bool isAllSatisfied(TriggerMode triggerMode, Creature* pCreature1, Creature* pCreature2 = NULL, void* pParam = NULL) const throw(Error);
-	bool activate(Creature* pCreature1, Creature* pCreature2 = NULL) const throw(Error); 
-	bool activateCounter(Creature* pCreature1, Creature* pCreature2 = NULL) const throw(Error); 
+	bool isAllSatisfied(TriggerMode triggerMode, Creature* pCreature1, Creature* pCreature2 = NULL, void* pParam = NULL) ;
+	bool activate(Creature* pCreature1, Creature* pCreature2 = NULL) ; 
+	bool activateCounter(Creature* pCreature1, Creature* pCreature2 = NULL) ; 
 	string toString() ;
 
 public:

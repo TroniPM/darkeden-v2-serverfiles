@@ -35,7 +35,7 @@ public:
 	void				addQuest( QuestStatus* pQS ) throw(Error);
 	void				questRewarded( QuestID_t qID ) { m_Quests.erase( qID ); }
 
-	QuestMessage		isQuestComplete( QuestID_t qID ) const throw(Error);
+	QuestMessage		isQuestComplete( QuestID_t qID ) ;
 
 	QuestStatus*		getQuestStatus( QuestID_t qID ) throw(Error);
 	void				sendQuestInfo() throw(Error);
@@ -62,7 +62,7 @@ public:
 	bool				successEventQuest( int questLevel, QuestID_t& qID ) const;
 	RewardClass_t		getEventQuestReward( int questLevel ) const;
 
-	QuestStatus*		getQuestStatusByQuestClass( QuestClass qClass ) const throw(Error);
+	QuestStatus*		getQuestStatusByQuestClass( QuestClass qClass ) ;
 	EventQuestAdvanceManager*	getEventQuestAdvanceManager() const { return m_pEventQuestAdvanceManager; }
 
 public:

@@ -56,7 +56,7 @@ public:
 	void lock() throw(Error) { m_Mutex.lock(); }
     void ulnock() throw(Error) { m_Mutex.unlock(); }
 
-	string toString() const throw(Error);
+	string toString() ;
 
 protected :
 	void processEventWaitingPlayer() throw (Error);

@@ -29,7 +29,7 @@ public:
 	void		setZoneY( ZoneCoord_t zoneY ) { m_ZoneY = zoneY; }
 
 public:
-	virtual string	toString() const throw(Error);
+	virtual string	toString() ;
 
 protected:
 	Item*		getItemFromZone( Zone* pZone ) throw(Error);

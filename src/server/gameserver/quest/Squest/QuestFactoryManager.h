@@ -33,7 +33,7 @@ public :
 		return &QPFM;	
 	}
 
-	Quest*		create(Quest::QuestType qptype, const QuestCreateInfo* qcInfo=NULL) const throw(Error);
+	Quest*		create(Quest::QuestType qptype, const QuestCreateInfo* qcInfo=NULL) ;
 
 	
 protected :
