@@ -20,7 +20,7 @@ class CGThrowBomb : public Packet
 {
 public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
-    void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
+    void write(SocketOutputStream & oStream) ;
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 	PacketID_t getPacketID()  { return PACKET_CG_THROW_BOMB; }
 	PacketSize_t getPacketSize()  { return szCoord * 4 + szBYTE; }

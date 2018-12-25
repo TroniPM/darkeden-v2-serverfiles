@@ -33,7 +33,7 @@ public :
     virtual void read(SocketInputStream & iStream);// throw(ProtocolException, Error);
 		    
     // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
-    virtual void write(SocketOutputStream & oStream);// const throw(ProtocolException, Error);
+    virtual void write(SocketOutputStream & oStream);// ;
 
 	virtual PacketSize_t getSize()//  
 	{ 

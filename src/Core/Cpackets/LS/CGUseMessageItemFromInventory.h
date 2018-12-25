@@ -21,7 +21,7 @@ class CGUseMessageItemFromInventory : public CGUseItemFromInventory
 {
 public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
-    void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
+    void write(SocketOutputStream & oStream) ;
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 	PacketID_t getPacketID()  { return PACKET_CG_USE_MESSAGE_ITEM_FROM_INVENTORY; }
 	PacketSize_t getPacketSize()  

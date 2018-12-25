@@ -41,7 +41,7 @@ public:
     void read(Datagram & iDatagram) throw(ProtocolException, Error);
 		    
     // Datagram 객체로 패킷의 바이너리 이미지를 보낸다.
-    void write(Datagram & oDatagram) const throw(ProtocolException, Error);
+    void write(Datagram & oDatagram) ;
 
 	// execute packet's handler
 	void execute(Player* pPlayer) throw(ProtocolException, Error);

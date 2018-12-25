@@ -32,7 +32,7 @@ public:
     void read(SocketInputStream& iStream) throw(ProtocolException, Error);
 		    
     // Datagram 객체로 패킷의 바이너리 이미지를 보낸다.
-    void write(SocketOutputStream& oStream) const throw(ProtocolException, Error);
+    void write(SocketOutputStream& oStream) ;
 
 	// execute packet's handler
 	void execute(Player* pPlayer) throw(ProtocolException, Error);

@@ -32,7 +32,7 @@ struct AddressUnit
 	static PacketSize_t getMaxPacketSize() { return szDWORD + szBYTE + 20 + szBYTE + 40 + szBYTE + 11; }
 
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
-	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
+	void write(SocketOutputStream & oStream) ;
 };
 
 class GCSMSAddressList : public Packet 
@@ -43,7 +43,7 @@ public:
 	
 public:
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
-	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
+	void write(SocketOutputStream & oStream) ;
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 	PacketID_t getPacketID()  { return PACKET_GC_SMS_ADDRESS_LIST; }
 	PacketSize_t getPacketSize() ;

@@ -18,7 +18,7 @@ class CGSkillToInventory : public Packet
 {
 public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
-    void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
+    void write(SocketOutputStream & oStream) ;
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 	PacketID_t getPacketID()  { return PACKET_CG_SKILL_TO_INVENTORY; }
 	PacketSize_t getPacketSize()  { return szSkillType + szObjectID + szObjectID+ szCoordInven*4; }

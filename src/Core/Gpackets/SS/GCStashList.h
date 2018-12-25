@@ -73,7 +73,7 @@ public:
 	virtual ~GCStashList() throw();
 
 	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
-	void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
+	void write(SocketOutputStream & oStream) ;
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 	PacketID_t getPacketID()  { return PACKET_GC_STASH_LIST; }
 	PacketSize_t getPacketSize() ;

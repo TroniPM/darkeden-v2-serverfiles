@@ -25,7 +25,7 @@ public:
 	
 public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
-    void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
+    void write(SocketOutputStream & oStream) ;
 	PacketSize_t getPacketSize()  { return szObjectID + szCoord + szCoord + szBYTE + szItemType + szBYTE + m_OptionType.size() + szDurability; }
 	string getPacketName()  { return "GCAddItemToInventory"; }
 	string toString() ;

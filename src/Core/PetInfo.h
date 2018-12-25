@@ -20,7 +20,7 @@ public:
 	virtual ~PetInfo() { }
 
 	virtual void read(SocketInputStream& iStream) throw(ProtocolException, Error);
-	virtual void write(SocketOutputStream& oStream) const throw(ProtocolException, Error);
+	virtual void write(SocketOutputStream& oStream) ;
 
 	virtual PacketSize_t getSize() const
 	{

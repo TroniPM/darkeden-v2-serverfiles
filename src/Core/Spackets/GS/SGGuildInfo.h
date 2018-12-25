@@ -38,7 +38,7 @@ public:
 	
     void read(SocketInputStream& iStream) throw(ProtocolException, Error);
 		    
-    void write(SocketOutputStream& oStream) const throw(ProtocolException, Error);
+    void write(SocketOutputStream& oStream) ;
 
 	// execute packet's handler
 	void execute(Player* pPlayer) throw(ProtocolException, Error);

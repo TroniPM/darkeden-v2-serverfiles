@@ -32,7 +32,7 @@ public :
 	PacketSize_t getPacketSize()  { return GCAddItemToZone::getPacketSize() + szObjectID; }
 
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
-    void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
+    void write(SocketOutputStream & oStream) ;
 
 	// execute packet's handler
 	void execute(Player* pPlayer) throw(ProtocolException, Error);

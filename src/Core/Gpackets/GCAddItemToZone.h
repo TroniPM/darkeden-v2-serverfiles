@@ -24,7 +24,7 @@ public:
 
 public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
-    void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
+    void write(SocketOutputStream & oStream) ;
 	PacketSize_t getPacketSize()  
 	{ 
 		PacketSize_t rValue = 0;

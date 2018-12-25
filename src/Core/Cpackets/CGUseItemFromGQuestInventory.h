@@ -20,7 +20,7 @@ class CGUseItemFromGQuestInventory : public Packet
 {
 public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
-    void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
+    void write(SocketOutputStream & oStream) ;
 	void execute(Player* pPlayer) throw(ProtocolException, Error);
 	PacketID_t getPacketID()  { return PACKET_CG_USE_ITEM_FROM_GQUEST_INVENTORY; }
 	PacketSize_t getPacketSize()  { return szBYTE; }

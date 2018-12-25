@@ -41,7 +41,7 @@ public :
     void read(SocketInputStream & iStream) throw(ProtocolException, Error);
 		    
     // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
-    void write(SocketOutputStream & oStream) const throw(ProtocolException, Error);
+    void write(SocketOutputStream & oStream) ;
 
 	PacketSize_t getPacketSize()  { return szBYTE + szObjectID* m_ChangedItemListNum + szItemNum*m_ChangedItemListNum;} 
 
