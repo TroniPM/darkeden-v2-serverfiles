@@ -58,7 +58,7 @@ public:
 	void addCondition(Condition* pCondition) throw(Error);
 	void addAction(Action* pAction) throw(Error);
 	void addCounterAction(Action* pAction) throw(Error);
-	bool hasCondition(ConditionType_t conditionType) const throw(Error) { return m_ConditionSet.test(conditionType); }
+	bool hasCondition(ConditionType_t conditionType)  { return m_ConditionSet.test(conditionType); }
 	bool isAllSatisfied(TriggerMode triggerMode, Creature* pCreature1, Creature* pCreature2 = NULL, void* pParam = NULL) ;
 	bool activate(Creature* pCreature1, Creature* pCreature2 = NULL) ; 
 	bool activateCounter(Creature* pCreature1, Creature* pCreature2 = NULL) ; 

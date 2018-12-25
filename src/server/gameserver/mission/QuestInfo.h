@@ -43,7 +43,7 @@ public:
 	virtual string	toString() ;
 
 	virtual bool	canExecute( PlayerCreature* pPC ) ;
-	virtual QuestStatus*	makeQuestStatus( PlayerCreature* pPC ) const throw(Error) = 0;
+	virtual QuestStatus*	makeQuestStatus( PlayerCreature* pPC ) ;
 
 	bool			isMonsterKillQuest() const { return m_QuestClass == QUEST_CLASS_MONSTER_KILL; }
 	DWORD			getTimeLimit() const { return m_TimeLimitSec; }

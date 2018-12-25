@@ -16,7 +16,7 @@ public:
 
 public:
 	virtual void execute() throw (Error) = 0;
-	virtual string toString() const throw(Error) = 0;
+	virtual string toString() ;
 };
 
 #endif // __WORK_H__

@@ -41,9 +41,9 @@ public:
 	virtual ItemType_t getItemType()  = 0;
 	virtual void setItemType(ItemType_t monsterType) throw() = 0;
 
-    virtual VolumeWidth_t getVolumeWidth() const throw(Error) { return 0; }
-    virtual VolumeHeight_t getVolumeHeight() const throw(Error) { return 0; }
-    virtual Weight_t getWeight() const throw(Error) { return 0; }
+    virtual VolumeWidth_t getVolumeWidth()  { return 0; }
+    virtual VolumeHeight_t getVolumeHeight()  { return 0; }
+    virtual Weight_t getWeight()  { return 0; }
 
 	virtual string toString()  = 0;
 

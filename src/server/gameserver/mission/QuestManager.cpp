@@ -71,7 +71,7 @@ void QuestManager::addQuest( QuestStatus* pQS ) throw(Error)
 	__END_CATCH
 }
 
-QuestMessage QuestManager::isQuestComplete( QuestID_t qID ) const throw(Error)
+QuestMessage QuestManager::isQuestComplete( QuestID_t qID ) 
 {
 	__BEGIN_TRY
 

@@ -34,7 +34,7 @@ public:
 	~SkillParentInfo() throw();
 	
 	void load() throw(SQLQueryException, Error) {}
-	void save() const throw(SQLQueryException, Error) {}
+	void save()  {}
 
 //--------------------------------------------------
 // AI specific methods

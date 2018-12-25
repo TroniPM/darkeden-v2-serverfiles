@@ -69,7 +69,7 @@ public:
 	// id 가 중복될 우려가 있어서 범위를 존 레벨로 축소했다. 
 	// 이렇게 하면 초당 1000 개의 객체가 새로 생긴다고 할지라도 4M 초,
 	// 즉 40-50일동안 안전하다는 뜻이다.
-	ObjectID_t getObjectID() const throw(Error) { Assert(m_ObjectID != 0); return m_ObjectID; };
+	ObjectID_t getObjectID()  { Assert(m_ObjectID != 0); return m_ObjectID; };
 	void setObjectID(ObjectID_t objectID) throw(Error) { Assert(objectID != 0); m_ObjectID = objectID; }
 
 	// get object class(virtual)
@@ -83,7 +83,7 @@ public:
 	virtual ObjectClass getObjectClass()  = 0;
 
 	// get object priority(virtual)
-	virtual ObjectPriority getObjectPriority() const throw(Error) = 0;
+	virtual ObjectPriority getObjectPriority() ;
 
 	// get debug string
 	virtual string toString()  = 0;

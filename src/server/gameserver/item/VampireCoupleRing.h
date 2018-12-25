@@ -49,8 +49,8 @@ public:
 	virtual void addOptionType(OptionType_t OptionType) throw() { m_OptionType.push_back(OptionType); }
 	virtual void setOptionType(const list<OptionType_t>& OptionType) throw() { m_OptionType = OptionType; }
 
-	Defense_t getDefenseBonus() const throw(Error) { return 8; }
-	Protection_t getProtectionBonus() const throw(Error) { return 3; }
+	Defense_t getDefenseBonus()  { return 8; }
+	Protection_t getProtectionBonus()  { return 3; }
 
 	virtual VolumeWidth_t getVolumeWidth() ;
 	virtual VolumeHeight_t getVolumeHeight() ;

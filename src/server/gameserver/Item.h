@@ -639,7 +639,7 @@ public:
 // methods from Object
 public:
 	virtual ObjectClass getObjectClass()  { return OBJECT_CLASS_ITEM; }
-	virtual ObjectPriority getObjectPriority() const throw(Error) { return OBJECT_PRIORITY_ITEM; }
+	virtual ObjectPriority getObjectPriority()  { return OBJECT_PRIORITY_ITEM; }
 	virtual string toString()  = 0;
 
 
@@ -692,26 +692,26 @@ public:
 	ItemID_t getItemID()  { return m_ItemID; }
 	void setItemID(ItemID_t itemID) throw() { m_ItemID = itemID; }
 
-	virtual VolumeWidth_t getVolumeWidth() const throw(Error) = 0;
-	virtual VolumeHeight_t getVolumeHeight() const throw(Error) = 0;
-	virtual Weight_t getWeight() const throw(Error) = 0;
+	virtual VolumeWidth_t getVolumeWidth() ;
+	virtual VolumeHeight_t getVolumeHeight() ;
+	virtual Weight_t getWeight() ;
 
-	virtual Durability_t getDurability() const throw(Error) { return 1; }
+	virtual Durability_t getDurability()  { return 1; }
 	virtual void setDurability(Durability_t durability) throw(Error) {}
 
 	virtual Durability_t getMaxDurability() const { return 1; }
 
-	virtual Damage_t getMinDamage() const throw(Error) { return 0; }
-	virtual Damage_t getMaxDamage() const throw(Error) { return 0; }
+	virtual Damage_t getMinDamage()  { return 0; }
+	virtual Damage_t getMaxDamage()  { return 0; }
 
-	virtual Range_t getRange() const throw(Error) { return 0; }
+	virtual Range_t getRange()  { return 0; }
 
-	virtual ToHit_t getToHitBonus() const throw(Error) { return 0; }
+	virtual ToHit_t getToHitBonus()  { return 0; }
 
-	virtual Defense_t getDefenseBonus() const throw(Error) { return 0; }
-	virtual Protection_t getProtectionBonus() const throw(Error) { return 0; }
+	virtual Defense_t getDefenseBonus()  { return 0; }
+	virtual Protection_t getProtectionBonus()  { return 0; }
 
-    virtual MP_t getMPBonus() const throw(Error) { return 0; }
+    virtual MP_t getMPBonus()  { return 0; }
 
 	virtual ItemNum_t getNum()  { return 1; }
 	virtual void setNum(ItemNum_t Num) throw() {}

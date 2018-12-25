@@ -300,7 +300,7 @@ void SkillParentInfoManager::addSkillParentInfo(SkillParentInfo* pSkillParentInf
 //
 //--------------------------------------------------------------------
 SkillParentInfo* SkillParentInfoManager::getSkillParentInfo(SkillType_t SkillType)
-	const throw(NoSuchElementException , OutOfBoundException, Error)
+	
 {
 	__BEGIN_TRY
 

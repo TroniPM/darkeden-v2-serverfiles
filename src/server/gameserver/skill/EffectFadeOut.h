@@ -36,7 +36,7 @@ public:
 	string toString() ;
 
 public:
-	Duration_t getDuration() const throw(Error) { return m_Duration;}
+	Duration_t getDuration()  { return m_Duration;}
 	void setDuration(Duration_t d) throw(Error) { m_Duration = d;}
 
 	bool isSniping(void) const { return m_isSniping; }

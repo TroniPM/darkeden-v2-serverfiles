@@ -23,7 +23,7 @@ GCQuestStatus* DummyQuestStatus::makeStatusPacket() const
 	return pPacket;
 }
 
-string DummyQuestStatus::toString() const throw(Error)
+string DummyQuestStatus::toString() 
 {
 	__BEGIN_TRY
 

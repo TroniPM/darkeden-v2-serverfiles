@@ -39,7 +39,7 @@ public:
 	virtual void setOptionType(const list<OptionType_t>& OptionType) throw() { m_OptionType = OptionType; }
 
 
-	virtual Durability_t getDurability() const throw(Error) { return m_Durability; }
+	virtual Durability_t getDurability()  { return m_Durability; }
 	void setDurability(Durability_t durability) throw(Error) { m_Durability = durability; }
 
 	BYTE getBulletCount()  { return m_BulletCount; }

@@ -162,7 +162,7 @@ void OustersEXPInfoManager::addOustersEXPInfo(OustersEXPInfo* pOustersEXPInfo)
 }
 
 OustersEXPInfo* OustersEXPInfoManager::getOustersEXPInfo(uint  OustersEXPType)
-	const throw(NoSuchElementException , OutOfBoundException, Error)
+	
 {
 	__BEGIN_TRY
 

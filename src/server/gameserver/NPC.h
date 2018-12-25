@@ -69,7 +69,7 @@ public:
 	virtual void registerObject() throw(Error);
 
 	virtual bool load() throw(Error);
-	virtual void save() const throw(Error) { throw UnsupportedError(__PRETTY_FUNCTION__); }
+	virtual void save()  { throw UnsupportedError(__PRETTY_FUNCTION__); }
 
 	virtual string toString() ;
 

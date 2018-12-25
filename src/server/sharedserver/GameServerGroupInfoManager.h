@@ -49,7 +49,7 @@ public :
 	void deleteGameServerGroupInfo ( const ServerGroupID_t ServerGroupID, WorldID_t WorldID ) throw ( NoSuchElementException );
 	
 	// get GameServerGroupInfo by ServerGroupID
-	GameServerGroupInfo * getGameServerGroupInfo ( const ServerGroupID_t ServerGroupID, WorldID_t WorldID ) const throw( NoSuchElementException );
+	GameServerGroupInfo * getGameServerGroupInfo ( const ServerGroupID_t ServerGroupID, WorldID_t WorldID ) ;
 
 	// get count of info
 	uint getSize ( WorldID_t WorldID ) const throw () { return m_GameServerGroupInfos[WorldID].size(); }

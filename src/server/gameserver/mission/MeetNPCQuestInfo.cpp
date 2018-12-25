@@ -32,7 +32,7 @@ string MeetNPCQuestInfo::toString () const throw ()
 	return msg.toString();
 }
 
-MeetNPCQuestStatus* MeetNPCQuestInfo::makeQuestStatus( PlayerCreature* pPC ) const throw(Error)
+MeetNPCQuestStatus* MeetNPCQuestInfo::makeQuestStatus( PlayerCreature* pPC ) 
 {
 	__BEGIN_TRY
 

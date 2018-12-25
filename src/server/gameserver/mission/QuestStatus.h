@@ -30,8 +30,8 @@ public:
 	QuestID_t		getQuestID() const { return m_QuestID; }
 	bool			timeExpired() const { return m_bTimeLimit && m_Deadline < VSDateTime::currentDateTime(); }
 
-	virtual bool	isSuccess() const throw(Error) { return m_State == QUEST_SUCCESS && !timeExpired(); }
-	virtual bool	isRewarded() const throw(Error) { return m_State == QUEST_REWARDED; }
+	virtual bool	isSuccess()  { return m_State == QUEST_SUCCESS && !timeExpired(); }
+	virtual bool	isRewarded()  { return m_State == QUEST_REWARDED; }
 
 	void	setSuccess() const { Assert( m_State == QUEST_STARTED ); m_State = QUEST_SUCCESS; }
 	void	setRewarded() const { Assert( m_State == QUEST_SUCCESS ); m_State = QUEST_REWARDED; }

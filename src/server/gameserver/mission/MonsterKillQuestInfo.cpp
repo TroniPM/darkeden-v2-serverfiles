@@ -35,7 +35,7 @@ string MonsterKillQuestInfo::toString () const throw ()
 	return msg.toString();
 }
 
-MonsterKillQuestStatus* MonsterKillQuestInfo::makeQuestStatus( PlayerCreature* pPC ) const throw(Error)
+MonsterKillQuestStatus* MonsterKillQuestInfo::makeQuestStatus( PlayerCreature* pPC ) 
 {
 	__BEGIN_TRY
 

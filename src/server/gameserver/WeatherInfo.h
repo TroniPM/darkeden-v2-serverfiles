@@ -54,7 +54,7 @@ public:
 	void save() throw(Error) { throw UnsupportedError(__PRETTY_FUNCTION__); }
 
 	// get vision info
-	const WeatherInfo & getWeatherInfo(int month) const throw(OutOfBoundException)
+	const WeatherInfo & getWeatherInfo(int month) 
 	{
 		if(month > 12) throw OutOfBoundException("too large month value");
 		return m_WeatherInfos[ month - 1 ];

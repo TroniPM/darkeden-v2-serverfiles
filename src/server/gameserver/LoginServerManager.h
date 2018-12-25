@@ -37,8 +37,8 @@ public:
 
 	void sendPacket(const string& host, uint port, DatagramPacket* pPacket) throw(ProtocolException, Error);
 
-	void lock() const throw(Error) { m_Mutex.lock(); }
-	void unlock() const throw(Error) { m_Mutex.unlock(); }
+	void lock()  { m_Mutex.lock(); }
+	void unlock()  { m_Mutex.unlock(); }
 
 private:
 	DatagramSocket* m_pDatagramSocket; // UDP 서버 소켓

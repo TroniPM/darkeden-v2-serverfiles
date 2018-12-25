@@ -1084,7 +1084,7 @@ void Ousters::save () const
 // tinysave
 //----------------------------------------------------------------------
 void Ousters::tinysave(const string & field)	// by sigi. 2002.5.15
-	    const throw(Error)
+	    
 {
     __BEGIN_TRY
 

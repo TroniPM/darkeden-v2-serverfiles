@@ -2,7 +2,7 @@
 #include "RewardInfo.h"
 #include "Assert.h"
 
-RewardInfo*	RandomRewardClass::selectReward( PlayerCreature* pPC ) const throw(Error)
+RewardInfo*	RandomRewardClass::selectReward( PlayerCreature* pPC ) 
 {
 	__BEGIN_TRY
 

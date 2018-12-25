@@ -34,7 +34,7 @@ public:
 	
 	void addGameServerInfo ( GameServerInfo * pGameServerInfo, const ServerGroupID_t ServerGroupID ) throw ( DuplicatedException );
 	void deleteGameServerInfo ( const ServerID_t ServerID, const ServerGroupID_t ServerGroupID ) throw ( NoSuchElementException );
-	GameServerInfo * getGameServerInfo ( const ServerID_t ServerID, const ServerGroupID_t ServerGroupID ) const throw( NoSuchElementException );
+	GameServerInfo * getGameServerInfo ( const ServerID_t ServerID, const ServerGroupID_t ServerGroupID ) ;
 	uint getSize ( const ServerGroupID_t ServerGroupID ) const throw () { return m_pGameServerInfos[ServerGroupID].size(); }
 	string toString () const throw ();
 	

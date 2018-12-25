@@ -51,10 +51,10 @@ public :
 
 public:
 	void setObjectID( ObjectID_t objectID ) throw(Error) { m_ObjectID = objectID; }
-	ObjectID_t getObjectID() const throw(Error) { return m_ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
 
 	void setName( string name ) throw(Error) { m_Name = name; }
-	string getName() const throw(Error) { return m_Name; }
+	string getName()  { return m_Name; }
 
 protected :
 	ObjectID_t		m_ObjectID;

@@ -52,7 +52,7 @@ public :
 	void deleteGameWorldInfo ( const WorldID_t WorldID ) throw ( NoSuchElementException );
 	
 	// get GameWorldInfo by WorldID
-	GameWorldInfo * getGameWorldInfo ( const WorldID_t WorldID ) const throw( NoSuchElementException );
+	GameWorldInfo * getGameWorldInfo ( const WorldID_t WorldID ) ;
 
 	// get count of info
 	uint getSize () const throw () { return m_GameWorldInfos.size(); }

@@ -27,9 +27,9 @@ public:
 	ItemType_t	getItemType()  { return m_ItemType; }
 	void		setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
 
-	VolumeWidth_t	getVolumeWidth() const throw(Error) { return getItemInfo()->getVolumeWidth(); }
-	VolumeHeight_t	getVolumeHeight() const throw(Error) { return getItemInfo()->getVolumeHeight(); }
-	Weight_t		getWeight() const throw(Error) { return getItemInfo()->getWeight(); }
+	VolumeWidth_t	getVolumeWidth()  { return getItemInfo()->getVolumeWidth(); }
+	VolumeHeight_t	getVolumeHeight()  { return getItemInfo()->getVolumeHeight(); }
+	Weight_t		getWeight()  { return getItemInfo()->getWeight(); }
 
 public:
 	// 아이템 쌓기 관련
@@ -40,7 +40,7 @@ public:
 
 public:
 	// 내구도 관련
-	Durability_t	getDurability() const throw(Error) { return m_Durability.getValue(); }
+	Durability_t	getDurability()  { return m_Durability.getValue(); }
 	void			setDurability(Durability_t durability) throw(Error) { m_Durability.setValue(durability); }
 	Durability_t	getMaxDurability() const {
 		if ( m_Durability.hasValue() )
@@ -74,11 +74,11 @@ public:
 
 public:
 	// 공격력 관련 속성
-	Damage_t	getMinDamage() const throw(Error) { return max(1,((int)getItemInfo()->getMinDamage()) + ((int)getBonusDamage()) + m_Grade.getDamageOffset()); }
-	Damage_t	getMaxDamage() const throw(Error) { return max(1,((int)getItemInfo()->getMaxDamage()) + ((int)getBonusDamage()) + m_Grade.getDamageOffset()); }
-	Range_t		getRange() const throw(Error) { return getItemInfo()->getRange(); }
-	ToHit_t		getToHitBonus() const throw(Error) { return getItemInfo()->getToHitBonus(); }
-	Speed_t		getSpeed() const throw(Error) { return getItemInfo()->getSpeed(); }
+	Damage_t	getMinDamage()  { return max(1,((int)getItemInfo()->getMinDamage()) + ((int)getBonusDamage()) + m_Grade.getDamageOffset()); }
+	Damage_t	getMaxDamage()  { return max(1,((int)getItemInfo()->getMaxDamage()) + ((int)getBonusDamage()) + m_Grade.getDamageOffset()); }
+	Range_t		getRange()  { return getItemInfo()->getRange(); }
+	ToHit_t		getToHitBonus()  { return getItemInfo()->getToHitBonus(); }
+	Speed_t		getSpeed()  { return getItemInfo()->getSpeed(); }
 	int			getCriticalBonus()  { return max(0,getItemInfo()->getCriticalBonus() + m_Grade.getCriticalOffset()); }
 
 	BYTE		getBulletCount()  { return m_AttackingStat.getBulletCount(); }
@@ -95,8 +95,8 @@ public:
 
 public:
 	// 방어력 관련 속성
-	Defense_t	getDefenseBonus() const throw(Error) { return max(0,((int)getItemInfo()->getDefenseBonus()) + m_Grade.getDefenseOffset()); }
-	Protection_t	getProtectionBonus() const throw(Error) { return max(0,((int)getItemInfo()->getProtectionBonus()) + m_Grade.getProtectionOffset()); }
+	Defense_t	getDefenseBonus()  { return max(0,((int)getItemInfo()->getDefenseBonus()) + m_Grade.getDefenseOffset()); }
+	Protection_t	getProtectionBonus()  { return max(0,((int)getItemInfo()->getProtectionBonus()) + m_Grade.getProtectionOffset()); }
 
 public:
 	// 인챈트 레벨

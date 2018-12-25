@@ -1233,7 +1233,7 @@ void Vampire::save () const
 // tinysave
 //----------------------------------------------------------------------
 void Vampire::tinysave(const string & field)	// by sigi. 2002.5.15
-	    const throw(Error)
+	    
 {
     __BEGIN_TRY
 

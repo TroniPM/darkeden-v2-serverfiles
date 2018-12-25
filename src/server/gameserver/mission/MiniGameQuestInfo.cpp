@@ -1,6 +1,6 @@
 #include "MiniGameQuestInfo.h"
 
-MiniGameQuestStatus* MiniGameQuestInfo::makeQuestStatus( PlayerCreature *pPC ) const throw(Error)
+MiniGameQuestStatus* MiniGameQuestInfo::makeQuestStatus( PlayerCreature *pPC ) 
 {
 	__BEGIN_TRY
 

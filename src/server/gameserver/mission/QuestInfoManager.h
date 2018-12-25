@@ -35,7 +35,7 @@ public:
 
 	// OutITR은 container<QuestID_t>::output_iterator 타입이어야 한다.
 	template <class OutITR>
-	void		getEventQuestIDs( int questLevel, PlayerCreature* pPC, OutITR outItr ) const throw(Error)
+	void		getEventQuestIDs( int questLevel, PlayerCreature* pPC, OutITR outItr ) 
 	{
 		__BEGIN_TRY
 
@@ -51,7 +51,7 @@ public:
 
 	// OutITR은 container<QuestID_t>::output_iterator 타입이어야 한다.
 	template <class OutITR>
-	void		getPossibleQuestIDs( PlayerCreature* pPC, OutITR outItr ) const throw(Error)
+	void		getPossibleQuestIDs( PlayerCreature* pPC, OutITR outItr ) 
 	{
 		__BEGIN_TRY
 

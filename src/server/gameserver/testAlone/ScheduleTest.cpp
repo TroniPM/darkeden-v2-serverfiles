@@ -19,7 +19,7 @@ public:
 	TestWork() { test = false; }
 	void execute() { test = true; }
 
-	string toString() const throw(Error) { return "TestWork"; }
+	string toString()  { return "TestWork"; }
 };
 
 void

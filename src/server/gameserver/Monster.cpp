@@ -1863,7 +1863,7 @@ bool Monster::isEnemyToAttack(Monster* pMonster) const
 	return true;
 }
 
-bool Monster::canMove(ZoneCoord_t nx, ZoneCoord_t ny) const throw(Error)
+bool Monster::canMove(ZoneCoord_t nx, ZoneCoord_t ny) 
 {
 	return (Creature::canMove(nx, ny) && !(m_pZone->getZoneLevel(nx, ny) & SAFE_ZONE));
 }

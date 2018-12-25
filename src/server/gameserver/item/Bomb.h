@@ -44,10 +44,10 @@ public:
 	virtual VolumeHeight_t getVolumeHeight() ;
 	virtual Weight_t getWeight() ;
 
-	Damage_t getDamage() const throw(Error) { return m_Damage;}
+	Damage_t getDamage()  { return m_Damage;}
 	void setDamage(Damage_t D) throw(Error) { m_Damage = D;}
 
-	//Dir_t getDir() const throw(Error) { return m_Dir;}
+	//Dir_t getDir()  { return m_Dir;}
 	//void setDir(Dir_t R) throw(Error) { m_Dir = R;}
 
 	virtual Damage_t getMinDamage() ;

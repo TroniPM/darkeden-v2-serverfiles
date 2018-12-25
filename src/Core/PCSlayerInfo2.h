@@ -173,13 +173,13 @@ public :
 		m_INT[attrType] = inte; 
 	}
 
-	Exp_t getSTRExp () const throw(Error) { return m_STRExp; };
+	Exp_t getSTRExp ()  { return m_STRExp; };
 	void setSTRExp(Exp_t STRExp) throw(Error) { m_STRExp = STRExp; }
 
-	Exp_t getDEXExp () const throw(Error) { return m_DEXExp; };
+	Exp_t getDEXExp ()  { return m_DEXExp; };
 	void setDEXExp(Exp_t DEXExp) throw(Error) { m_DEXExp = DEXExp; }
 
-	Exp_t getINTExp () const throw(Error) { return m_INTExp; };
+	Exp_t getINTExp ()  { return m_INTExp; };
 	void setINTExp(Exp_t INTExp) throw(Error) { m_INTExp = INTExp; }
 
 	HP_t getHP (AttrType attrType = ATTR_CURRENT) const throw () { return m_HP[attrType]; }

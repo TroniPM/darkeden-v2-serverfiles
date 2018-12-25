@@ -26,8 +26,8 @@ public:
 	virtual ~RewardInfo();
 
 public:
-	virtual QuestMessage	canGiveReward(PlayerCreature* pPC) const throw(Error) = 0;
-	virtual QuestMessage	giveReward(PlayerCreature* pPC) const throw(Error) = 0;
+	virtual QuestMessage	canGiveReward(PlayerCreature* pPC) ;
+	virtual QuestMessage	giveReward(PlayerCreature* pPC) ;
 
 	virtual string	toString() ;
 

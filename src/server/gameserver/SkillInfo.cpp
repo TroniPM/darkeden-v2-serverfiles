@@ -498,7 +498,7 @@ void SkillInfoManager::addSkillInfo(SkillInfo* pSkillInfo)
 }
 
 SkillInfo* SkillInfoManager::getSkillInfo(SkillType_t SkillType)
-	const throw(NoSuchElementException , OutOfBoundException, Error)
+	
 {
 	__BEGIN_TRY
 

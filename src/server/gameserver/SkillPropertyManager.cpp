@@ -139,7 +139,7 @@ void SkillPropertyManager::initDefaultSkillProperty()
 }
 
 SkillProperty* SkillPropertyManager::getSkillProperty(SkillType_t SkillType)
-	const throw(NoSuchElementException , OutOfBoundException, Error)
+	
 {
 	__BEGIN_TRY
 

@@ -163,7 +163,7 @@ void QuestInfoManager::addQuestInfo(QuestInfo* pQI)
 	__END_CATCH
 }
 
-QuestMessage QuestInfoManager::canExecuteQuest( QuestID_t qID, PlayerCreature* pPC ) const throw(Error)
+QuestMessage QuestInfoManager::canExecuteQuest( QuestID_t qID, PlayerCreature* pPC ) 
 {
 	__BEGIN_TRY
 
@@ -210,7 +210,7 @@ QuestMessage QuestInfoManager::startQuest( QuestID_t qID, PlayerCreature* pPC ) 
 	__END_CATCH
 }
 
-QuestStatus* QuestInfoManager::makeQuestStatus( QuestID_t qID, PlayerCreature* pPC ) const throw(Error)
+QuestStatus* QuestInfoManager::makeQuestStatus( QuestID_t qID, PlayerCreature* pPC ) 
 {
 	__BEGIN_TRY
 
@@ -231,7 +231,7 @@ QuestStatus* QuestInfoManager::makeQuestStatus( QuestID_t qID, PlayerCreature* p
 	__END_CATCH
 }
 
-/*bool QuestInfoManager::canGiveReward( QuestID_t qID, PlayerCreature* pPC ) const throw(Error)
+/*bool QuestInfoManager::canGiveReward( QuestID_t qID, PlayerCreature* pPC ) 
 { 
 	__BEGIN_TRY
 
@@ -244,7 +244,7 @@ QuestStatus* QuestInfoManager::makeQuestStatus( QuestID_t qID, PlayerCreature* p
 	__END_CATCH
 }
 
-bool QuestInfoManager::giveReward( QuestID_t qID, PlayerCreature* pPC ) const throw(Error)
+bool QuestInfoManager::giveReward( QuestID_t qID, PlayerCreature* pPC ) 
 {
 	__BEGIN_TRY
 

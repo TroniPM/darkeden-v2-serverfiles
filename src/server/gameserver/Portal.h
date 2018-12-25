@@ -79,7 +79,7 @@ public:
 
 public:
 	virtual ObjectClass getObjectClass()  { return OBJECT_CLASS_PORTAL; }
-	virtual ObjectPriority getObjectPriority() const throw(Error) { return OBJECT_PRIORITY_PORTAL; }
+	virtual ObjectPriority getObjectPriority()  { return OBJECT_PRIORITY_PORTAL; }
 	virtual PortalClass getPortalClass()  = 0;
 	virtual bool activate(Creature* pCreature) throw(Error) { return false; };
 	virtual bool activate(Creature* pCreature, ZoneID_t ZoneID) throw(Error) { return false; };

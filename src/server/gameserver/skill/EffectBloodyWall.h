@@ -58,7 +58,7 @@ public:
 	int getClanID() const			{ return m_ClanID; }
 
 	void setForce( bool force ) throw(Error) { m_bForce = force; }
-	bool isForce() const throw(Error) { return m_bForce; }
+	bool isForce()  { return m_bForce; }
 
 private:
 	string m_CasterName;

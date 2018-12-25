@@ -58,7 +58,7 @@ public:
 	virtual Weight_t getWeight() ;
 
 public:
-	virtual Durability_t getDurability() const throw(Error) { return m_Durability; }
+	virtual Durability_t getDurability()  { return m_Durability; }
 	void setDurability(Durability_t durability) throw(Error) { m_Durability = durability; }
 
 	virtual Defense_t getDefenseBonus() ;

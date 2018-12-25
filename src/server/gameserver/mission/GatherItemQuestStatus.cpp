@@ -30,7 +30,7 @@ GCQuestStatus* GatherItemQuestStatus::makeStatusPacket() const
 	__END_CATCH
 }
 */
-bool GatherItemQuestStatus::isTarget( Item* pItem ) const throw(Error)
+bool GatherItemQuestStatus::isTarget( Item* pItem ) 
 {
 	__BEGIN_TRY
 
@@ -41,7 +41,7 @@ bool GatherItemQuestStatus::isTarget( Item* pItem ) const throw(Error)
 	__END_CATCH
 }
 
-bool GatherItemQuestStatus::isSuccess() const throw(Error)
+bool GatherItemQuestStatus::isSuccess() 
 {
 	__BEGIN_TRY
 

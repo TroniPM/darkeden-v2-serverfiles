@@ -38,7 +38,7 @@ public:
 	void setLevel(Attr_t l) throw(Error) { m_Level = l;}
 	void setDamage(Damage_t d) throw(Error) { m_Damage = d;}
 	void setDuration(Duration_t d) throw(Error) { m_Duration = d;}
-	Duration_t getDuration() const throw(Error) { return m_Duration;}
+	Duration_t getDuration()  { return m_Duration;}
 
 	void setUserObjectID(ObjectID_t oid) throw() { m_UserObjectID = oid; }
 	ObjectID_t getUserObjectID()  { return m_UserObjectID; }

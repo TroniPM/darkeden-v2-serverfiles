@@ -35,7 +35,7 @@ public:
 	virtual Zone*	getZone() throw(Error) = 0;
 
 public:
-	virtual string	toString() const throw(Error) = 0;
+	virtual string	toString() ;
 
 private:
 	PositionType	m_ItemPosType;

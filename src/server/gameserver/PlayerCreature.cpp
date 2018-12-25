@@ -484,12 +484,12 @@ void PlayerCreature::updateItemTimeLimit( Item* pItem, DWORD time ) throw(Error)
 	__END_CATCH
 }
 
-void PlayerCreature::sendCurrentQuestInfo() const throw(Error)
+void PlayerCreature::sendCurrentQuestInfo() 
 {
 	m_pQuestManager->sendQuestInfo();
 }
 
-int PlayerCreature::findEffection(int EffectClass) const throw(Error)
+int PlayerCreature::findEffection(int EffectClass) 
 {
 	__BEGIN_TRY
 

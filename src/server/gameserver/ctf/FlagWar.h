@@ -34,7 +34,7 @@ protected:
 
 	void addFlagsRandom( ZoneID_t zoneID, uint no );
 
-	string toString() const throw(Error) { return "FlagWar"; }
+	string toString()  { return "FlagWar"; }
 
 private:
 	enum State

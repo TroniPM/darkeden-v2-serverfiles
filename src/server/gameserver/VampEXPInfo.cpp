@@ -160,7 +160,7 @@ void VampEXPInfoManager::addVampEXPInfo(VampEXPInfo* pVampEXPInfo)
 }
 
 VampEXPInfo* VampEXPInfoManager::getVampEXPInfo(uint  VampEXPType)
-	const throw(NoSuchElementException , OutOfBoundException, Error)
+	
 {
 	__BEGIN_TRY
 

@@ -81,7 +81,7 @@ public :
 	WarSchedule*	getActiveWarSchedule( ZoneID_t zoneID ) throw (Error);
 	bool			isModifyCastleOwner( ZoneID_t castleZoneID, PlayerCreature* pPC ) throw (Error);
 
-	bool			hasActiveRaceWar() const throw(Error)	{ return m_bHasRaceWar; }
+	bool			hasActiveRaceWar() 	{ return m_bHasRaceWar; }
 	War*			getActiveRaceWar() ;
 
 	bool			isWarActive() const { return !isEmpty(); }

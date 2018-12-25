@@ -213,7 +213,7 @@ public:
 public:
 	ObjectRegistry & getObjectRegistry() throw() { return m_ObjectRegistry; }
 
-	const Tile & getTile(ZoneCoord_t x, ZoneCoord_t y) const throw(OutOfBoundException);
+	const Tile & getTile(ZoneCoord_t x, ZoneCoord_t y) ;
 	Tile & getTile(ZoneCoord_t x, ZoneCoord_t y) throw(OutOfBoundException);
 
 	Sector* getSector(ZoneCoord_t x, ZoneCoord_t y) throw(OutOfBoundException);
@@ -229,7 +229,7 @@ public:
 
 	ZoneLevel_t getZoneLevel()  { return m_ZoneLevel; }
 	void setZoneLevel(ZoneLevel_t zoneLevel) throw() { m_ZoneLevel = zoneLevel; }
-    ZoneLevel_t getZoneLevel(ZoneCoord_t x, ZoneCoord_t y) const throw(OutOfBoundException);
+    ZoneLevel_t getZoneLevel(ZoneCoord_t x, ZoneCoord_t y) ;
 
 	ZoneAccessMode getZoneAccessMode()  { return m_ZoneAccessMode; }
 	void setZoneAccessMode(ZoneAccessMode zoneAccessMode) throw() { m_ZoneAccessMode = zoneAccessMode; }

@@ -39,7 +39,7 @@ public:
 	virtual void registerObject() throw(Error);
 
 	virtual bool load() throw (InvalidProtocolException, Error) { return true;}
-	virtual void save() const throw(Error) {}
+	virtual void save()  {}
 
 	virtual string toString() ;
 

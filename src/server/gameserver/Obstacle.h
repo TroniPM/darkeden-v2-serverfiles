@@ -43,7 +43,7 @@ public:
 // methods from Object
 public:
 	virtual ObjectClass getObjectClass()  { return OBJECT_CLASS_OBSTACLE; }
-	virtual ObjectPriority getObjectPriority() const throw(Error) { return OBJECT_PRIORITY_OBSTACLE; }
+	virtual ObjectPriority getObjectPriority()  { return OBJECT_PRIORITY_OBSTACLE; }
 	virtual string toString()  = 0;
 
 // own methods

@@ -55,7 +55,7 @@ public:
 	void setAmount(DWORD amount) throw() { m_Amount = amount; }
 
 public:
-	virtual Durability_t getDurability() const throw(Error) 
+	virtual Durability_t getDurability()  
 	{ 
 		WORD lowBits  = (m_Amount & 0x0000FFFF);
 		return lowBits;

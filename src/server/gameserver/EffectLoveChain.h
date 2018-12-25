@@ -34,7 +34,7 @@ public:
 public:
 
 	// get/set Target Name
-	const string& getTargetName() const throw(Error) { return m_TargetName; }
+	const string& getTargetName()  { return m_TargetName; }
 	void setTargetName( const string& targetName ) throw(Error) { m_TargetName = targetName; }
 
 	Zone* getZone()  { return m_pZone; }

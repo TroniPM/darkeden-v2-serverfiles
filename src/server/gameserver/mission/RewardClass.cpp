@@ -39,7 +39,7 @@ void RewardClass::addRewardInfo( RewardInfo* pRewardInfo )
 	__END_CATCH
 }
 
-QuestMessage RewardClass::giveReward( PlayerCreature* pPC ) const throw(Error)
+QuestMessage RewardClass::giveReward( PlayerCreature* pPC ) 
 {
 	__BEGIN_TRY
 

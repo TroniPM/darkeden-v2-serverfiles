@@ -82,12 +82,12 @@ public:
 
 public:
 	virtual bool load() throw (InvalidProtocolException, Error) = 0; // load from DB
-	virtual void save() const throw(Error) = 0; // save to DB
+	virtual void save() ; // save to DB
 	
 public:
 	// 크리처에서 플레이어로 접근한다.
 	// 현재 크리처에 대해서 isPC()를 체크해보고 true 인 경우에만 호출해야 한다.
-	Player* getPlayer() const throw(Error) { Assert(m_pPlayer != NULL); return m_pPlayer; }
+	Player* getPlayer()  { Assert(m_pPlayer != NULL); return m_pPlayer; }
 	void setPlayer(Player* pPlayer) throw() { m_pPlayer = pPlayer; }
 
 public:
