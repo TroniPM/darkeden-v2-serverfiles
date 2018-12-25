@@ -29,13 +29,13 @@ class GSGuildMemberLogOn : public Packet {
 public:
 	
     // Datagram 객체에서부터 데이타를 읽어서 패킷을 초기화한다.
-    void read(SocketInputStream& iStream) throw(ProtocolException, Error);
+    void read(SocketInputStream& iStream) ;
 		    
     // Datagram 객체로 패킷의 바이너리 이미지를 보낸다.
     void write(SocketOutputStream& oStream) ;
 
 	// execute packet's handler
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 
 	// get packet id
 	PacketID_t getPacketID()  { return PACKET_GS_GUILDMEMBER_LOGON; }
@@ -138,7 +138,7 @@ class GSGuildMemberLogOnHandler {
 public:
 
 	// execute packet's handler
-	static void execute(GSGuildMemberLogOn* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute(GSGuildMemberLogOn* pPacket, Player* pPlayer) ;
 
 };
 

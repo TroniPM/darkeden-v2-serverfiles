@@ -36,12 +36,12 @@ public:
 	// destructor
 	~SGGuildInfo() throw();
 	
-    void read(SocketInputStream& iStream) throw(ProtocolException, Error);
+    void read(SocketInputStream& iStream) ;
 		    
     void write(SocketOutputStream& oStream) ;
 
 	// execute packet's handler
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 
 	// get packet id
 	PacketID_t getPacketID()  { return PACKET_SG_GUILD_INFO; }
@@ -127,7 +127,7 @@ class SGGuildInfoHandler {
 public:
 
 	// execute packet's handler
-	static void execute(SGGuildInfo* pPacket) throw(ProtocolException, Error);
+	static void execute(SGGuildInfo* pPacket) ;
 
 };
 

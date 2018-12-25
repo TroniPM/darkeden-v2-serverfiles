@@ -121,9 +121,9 @@ public:
 	virtual ~GCNoticeEvent() throw() {}
 
 public:
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 
 	PacketID_t getPacketID()  { return PACKET_GC_NOTICE_EVENT; }
 	PacketSize_t getPacketSize() ;
@@ -169,7 +169,7 @@ public:
 class GCNoticeEventHandler 
 {
 public:
-	static void execute( GCNoticeEvent* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute( GCNoticeEvent* pPacket, Player* pPlayer) ;
 };
 
 #endif

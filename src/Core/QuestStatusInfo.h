@@ -78,7 +78,7 @@ public:
 
 	QuestStatusInfo(DWORD qID) : m_QuestID(qID), m_Status(CANNOT) { }
 
-	void read(SocketInputStream& iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream& iStream) ;
 	void write(SocketOutputStream& oStream) ;
 	PacketSize_t getSize() const;
 	static PacketSize_t getMaxSize();

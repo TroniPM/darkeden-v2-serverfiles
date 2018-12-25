@@ -124,7 +124,7 @@ Dir_t knockbackCreature
 (
 	Zone* pZone, Creature* pCreature, 
 	ZoneCoord_t originX, ZoneCoord_t originY
-) throw(ProtocolException, Error);
+) ;
 
 
 //////////////////////////////////////////////////////////////////////////////

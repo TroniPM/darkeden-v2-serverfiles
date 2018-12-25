@@ -23,9 +23,9 @@
 class GCSearchMotorcycleOK : public Packet 
 {
 public :
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_GC_SEARCH_MOTORCYCLE_OK; }
 	PacketSize_t getPacketSize()  { return szZoneID+szCoord*2; }
 	string getPacketName()  { return "GCSearchMotorcycleOK"; }
@@ -89,7 +89,7 @@ class GCSearchMotorcycleOKHandler
 public :
 	
 	// execute packet's handler
-	static void execute(GCSearchMotorcycleOK* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute(GCSearchMotorcycleOK* pPacket, Player* pPlayer) ;
 
 };
 

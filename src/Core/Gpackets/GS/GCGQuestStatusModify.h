@@ -37,7 +37,7 @@ public:
 public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error) { iStream.read(m_Type); m_pInfo = new QuestStatusInfo(0); m_pInfo->read(iStream); }
     void write(SocketOutputStream & oStream)  { oStream.write(m_Type); m_pInfo->write(oStream); }
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_GC_GQUEST_STATUS_MODIFY; }
 	PacketSize_t getPacketSize()  { return szBYTE + m_pInfo->getSize(); }
 	string getPacketName()  { return "GCGQuestStatusModify"; }

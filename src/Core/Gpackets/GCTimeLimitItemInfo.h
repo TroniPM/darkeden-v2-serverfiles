@@ -29,9 +29,9 @@ public :
 	GCTimeLimitItemInfo() throw();
 	~GCTimeLimitItemInfo() throw();
 
-    void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+    void read(SocketInputStream & iStream) ;
     void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 
 	PacketID_t getPacketID()  { return PACKET_GC_TIME_LIMIT_ITEM_INFO; }
 	PacketSize_t getPacketSize() ;
@@ -81,7 +81,7 @@ class GCTimeLimitItemInfoHandler {
 public :
 	
 	// execute packet's handler
-	static void execute(GCTimeLimitItemInfo* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute(GCTimeLimitItemInfo* pPacket, Player* pPlayer) ;
 
 };
 

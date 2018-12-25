@@ -23,9 +23,9 @@ public:
 	virtual ~GCAddStoreItem() throw();
 
 public:
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_GC_ADD_STORE_ITEM; }
 	PacketSize_t getPacketSize()  { return szObjectID + szBYTE + m_Item.getSize(); }
 	string getPacketName()  { return "GCAddStoreItem"; }
@@ -68,7 +68,7 @@ public:
 class GCAddStoreItemHandler 
 {
 public:
-	static void execute(GCAddStoreItem* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute(GCAddStoreItem* pPacket, Player* pPlayer) ;
 };
 
 #endif

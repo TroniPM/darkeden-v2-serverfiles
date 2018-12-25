@@ -38,9 +38,9 @@ public:
 
 
 public:
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_CG_SHOP_REQUEST_SELL; }
 	PacketSize_t getPacketSize()  { return szObjectID+szObjectID+szBYTE; }
 	string getPacketName()  { return "CGShopRequestSell"; }
@@ -90,14 +90,14 @@ public:
 class CGShopRequestSellHandler 
 {
 public:
-	static void execute(CGShopRequestSell* pPacket, Player* player) throw(ProtocolException, Error);
+	static void execute(CGShopRequestSell* pPacket, Player* player) ;
 
-	static void executeNormal(CGShopRequestSell* pPacket, Player* player) throw(ProtocolException, Error);
-	static void executeMotorcycle(CGShopRequestSell* pPacket, Player* player) throw(ProtocolException, Error);
-	static void executeOpAllSkull(CGShopRequestSell* pPacket, Player* player) throw(ProtocolException, Error);
-	static void executeOpSwapAdvancementItem(CGShopRequestSell* pPacket, Player* player) throw(ProtocolException, Error);
+	static void executeNormal(CGShopRequestSell* pPacket, Player* player) ;
+	static void executeMotorcycle(CGShopRequestSell* pPacket, Player* player) ;
+	static void executeOpAllSkull(CGShopRequestSell* pPacket, Player* player) ;
+	static void executeOpSwapAdvancementItem(CGShopRequestSell* pPacket, Player* player) ;
 
-	static void sendFailPacket(CGShopRequestSell* pPacket, Player* player) throw(ProtocolException, Error);
+	static void sendFailPacket(CGShopRequestSell* pPacket, Player* player) ;
 };
 
 #endif

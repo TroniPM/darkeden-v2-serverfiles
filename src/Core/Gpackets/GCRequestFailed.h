@@ -24,9 +24,9 @@ class GCRequestFailed : public Packet
 {
 public:
 	GCRequestFailed()	{ m_Code = REQUEST_FAILED_NULL; }
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_GC_REQUEST_FAILED; }
 	PacketSize_t getPacketSize()  { return szBYTE + szBYTE + m_Name.size(); }
 	string getPacketName()  { return "GCRequestFailed"; }
@@ -65,7 +65,7 @@ public:
 class GCRequestFailedHandler 
 {
 public:
-	static void execute( GCRequestFailed* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute( GCRequestFailed* pPacket, Player* pPlayer) ;
 };
 
 #endif

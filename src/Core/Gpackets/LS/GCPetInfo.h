@@ -20,9 +20,9 @@ public:
 	virtual ~GCPetInfo() throw();
 
 public:
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_GC_PET_INFO; }
 	PacketSize_t getPacketSize()  { return szObjectID + ((m_pPetInfo!=NULL)?(m_pPetInfo->getSize()):szPetType); }
 	string getPacketName()  { return "GCPetInfo"; }
@@ -56,7 +56,7 @@ public :
 class GCPetInfoHandler {
 	
 public :
-	static void execute(GCPetInfo* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute(GCPetInfo* pPacket, Player* pPlayer) ;
 
 };
 

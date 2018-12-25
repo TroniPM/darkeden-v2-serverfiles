@@ -20,7 +20,7 @@
 class GCModifyInformation : public ModifyInfo
 {
 public:
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_GC_MODIFY_INFORMATION; }
 	string getPacketName()  { return "GCModifyInformation"; }
 };

@@ -23,7 +23,7 @@ public:
 	~GCAddItemToZone() throw();
 
 public:
-    void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+    void read(SocketInputStream & iStream) ;
     void write(SocketOutputStream & oStream) ;
 	PacketSize_t getPacketSize()  
 	{ 

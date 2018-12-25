@@ -21,9 +21,9 @@
 class CGStashRequestBuy : public Packet 
 {
 public:
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_CG_STASH_REQUEST_BUY; }
 	PacketSize_t getPacketSize()  { return 0; }
 	string getPacketName()  { return "CGStashRequestBuy"; }
@@ -60,7 +60,7 @@ public:
 class CGStashRequestBuyHandler 
 {
 public:
-	static void execute(CGStashRequestBuy* pPacket, Player* player) throw(ProtocolException, Error);
+	static void execute(CGStashRequestBuy* pPacket, Player* player) ;
 };
 
 #endif

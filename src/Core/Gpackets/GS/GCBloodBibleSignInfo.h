@@ -22,9 +22,9 @@ public:
 	virtual ~GCBloodBibleSignInfo() throw();
 
 public:
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_GC_BLOOD_BIBLE_SIGN_INFO; }
 	PacketSize_t getPacketSize()  { return m_pInfo->getSize(); }
 	string getPacketName()  { return "GCBloodBibleSignInfo"; }
@@ -61,7 +61,7 @@ public:
 class GCBloodBibleSignInfoHandler 
 {
 public:
-	static void execute(GCBloodBibleSignInfo* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute(GCBloodBibleSignInfo* pPacket, Player* pPlayer) ;
 };
 
 #endif

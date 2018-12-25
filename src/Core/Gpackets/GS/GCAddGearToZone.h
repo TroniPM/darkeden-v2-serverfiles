@@ -21,9 +21,9 @@ public:
 	~GCAddGearToZone() throw();
 
 public :
-    void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+    void read(SocketInputStream & iStream) ;
     void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_GC_ADD_GEAR_TO_ZONE; }
 	PacketSize_t getPacketSize()  { return szSlotID; }
 	string getPacketName()  { return "GCAddGearToZone"; }
@@ -58,7 +58,7 @@ public:
 class GCAddGearToZoneHandler 
 {
 public:
-	static void execute(GCAddGearToZone* pPacket, Player* player) throw(ProtocolException, Error);
+	static void execute(GCAddGearToZone* pPacket, Player* player) ;
 };
 
 #endif

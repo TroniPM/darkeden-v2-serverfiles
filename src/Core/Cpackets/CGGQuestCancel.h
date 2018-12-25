@@ -19,9 +19,9 @@
 class CGGQuestCancel : public Packet 
 {
 public:
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_CG_GQUEST_CANCEL; }
 	PacketSize_t getPacketSize()  { return szDWORD; }
 	string getPacketName()  { return "CGGQuestCancel"; }
@@ -56,7 +56,7 @@ public:
 class CGGQuestCancelHandler 
 {
 public:
-	static void execute(CGGQuestCancel* pCGGQuestCancel, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute(CGGQuestCancel* pCGGQuestCancel, Player* pPlayer) ;
 };
 
 #endif

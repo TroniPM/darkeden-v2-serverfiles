@@ -22,9 +22,9 @@ public:
 	virtual ~GCGuildResponse() throw() {}
 
 public:
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 
 	PacketID_t getPacketID()  { return PACKET_GC_GUILD_RESPONSE; }
 	PacketSize_t getPacketSize() ;
@@ -66,7 +66,7 @@ public:
 class GCGuildResponseHandler 
 {
 public:
-	static void execute( GCGuildResponse* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute( GCGuildResponse* pPacket, Player* pPlayer) ;
 };
 
 #endif

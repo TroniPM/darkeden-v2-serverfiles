@@ -25,13 +25,13 @@ class LGIncomingConnectionOK : public DatagramPacket {
 public:
 	
     // Datagram 객체에서부터 데이타를 읽어서 패킷을 초기화한다.
-    void read(Datagram & iDatagram) throw(ProtocolException, Error);
+    void read(Datagram & iDatagram) ;
 		    
     // Datagram 객체로 패킷의 바이너리 이미지를 보낸다.
     void write(Datagram & oDatagram) ;
 
 	// execute packet's handler
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 
 	// get packet id
 	PacketID_t getPacketID()  { return PACKET_LG_INCOMING_CONNECTION_OK; }
@@ -124,7 +124,7 @@ class LGIncomingConnectionOKHandler {
 public:
 
 	// execute packet's handler
-	static void execute(LGIncomingConnectionOK* pPacket) throw(ProtocolException, Error);
+	static void execute(LGIncomingConnectionOK* pPacket) ;
 
 };
 

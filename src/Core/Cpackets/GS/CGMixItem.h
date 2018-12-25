@@ -20,9 +20,9 @@
 class CGMixItem : public Packet 
 {
 public:
-    void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+    void read(SocketInputStream & iStream) ;
     void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_CG_MIX_ITEM; }
 	PacketSize_t getPacketSize()  { return szObjectID + szCoordInven + szCoordInven + ( szObjectID * 2 ); }
 	string getPacketName()  { return "CGMixItem"; }
@@ -74,7 +74,7 @@ class Item;
 class CGMixItemHandler 
 {
 public:
-	static void execute(CGMixItem* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute(CGMixItem* pPacket, Player* pPlayer) ;
 
 #ifdef __GAME_SERVER__
 public:

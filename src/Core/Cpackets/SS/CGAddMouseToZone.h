@@ -21,9 +21,9 @@ public:
 	~CGAddMouseToZone() throw();
 
 public:
-    void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+    void read(SocketInputStream & iStream) ;
     void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_CG_ADD_MOUSE_TO_ZONE; }
 	PacketSize_t getPacketSize()  { return szObjectID; }
 	string getPacketName()  { return "CGAddMouseToZone"; }
@@ -57,7 +57,7 @@ public:
 class CGAddMouseToZoneHandler 
 {
 public:
-	static void execute(CGAddMouseToZone* pPacket, Player* player) throw(ProtocolException, Error);
+	static void execute(CGAddMouseToZone* pPacket, Player* player) ;
 };
 
 #endif

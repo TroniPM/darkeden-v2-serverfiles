@@ -38,13 +38,13 @@ public :
 	~GCMorph1() throw();
 	
     // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
-    void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+    void read(SocketInputStream & iStream) ;
 		    
     // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
     void write(SocketOutputStream & oStream) ;
 
 	// execute packet's handler
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 
 	// get packet id
 	PacketID_t getPacketID()  { return PACKET_GC_MORPH_1; }
@@ -177,7 +177,7 @@ class GCMorph1Handler {
 public :
 
 	// execute packet's handler
-	static void execute(GCMorph1* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute(GCMorph1* pPacket, Player* pPlayer) ;
 
 };
 

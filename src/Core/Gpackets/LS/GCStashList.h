@@ -72,9 +72,9 @@ public:
 	GCStashList() throw();
 	virtual ~GCStashList() throw();
 
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_GC_STASH_LIST; }
 	PacketSize_t getPacketSize() ;
 	string getPacketName()  { return "GCStashList"; }
@@ -144,7 +144,7 @@ public :
 class GCStashListHandler 
 {
 public :
-	static void execute(GCStashList* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute(GCStashList* pPacket, Player* pPlayer) ;
 
 };
 

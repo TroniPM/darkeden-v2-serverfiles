@@ -19,7 +19,7 @@ public:
 	PetInfo();
 	virtual ~PetInfo() { }
 
-	virtual void read(SocketInputStream& iStream) throw(ProtocolException, Error);
+	virtual void read(SocketInputStream& iStream) ;
 	virtual void write(SocketOutputStream& oStream) ;
 
 	virtual PacketSize_t getSize() const

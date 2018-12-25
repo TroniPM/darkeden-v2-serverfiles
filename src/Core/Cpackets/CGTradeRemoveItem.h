@@ -19,9 +19,9 @@
 class CGTradeRemoveItem : public Packet 
 {
 public:
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_CG_TRADE_REMOVE_ITEM; }
 	PacketSize_t getPacketSize()  { return szObjectID*2; }
 	string getPacketName()  { return "CGTradeRemoveItem"; }
@@ -66,11 +66,11 @@ public:
 class CGTradeRemoveItemHandler 
 {
 public:
-	static void execute(CGTradeRemoveItem* pPacket, Player* player) throw(ProtocolException, Error);
-	static void executeSlayer(CGTradeRemoveItem* pPacket, Player* player) throw(ProtocolException, Error);
-	static void executeVampire(CGTradeRemoveItem* pPacket, Player* player) throw(ProtocolException, Error);
-	static void executeOusters(CGTradeRemoveItem* pPacket, Player* player) throw(ProtocolException, Error);
-	static void executeError(CGTradeRemoveItem* pPacket, Player* player, BYTE ErrorCode) throw(ProtocolException, Error);
+	static void execute(CGTradeRemoveItem* pPacket, Player* player) ;
+	static void executeSlayer(CGTradeRemoveItem* pPacket, Player* player) ;
+	static void executeVampire(CGTradeRemoveItem* pPacket, Player* player) ;
+	static void executeOusters(CGTradeRemoveItem* pPacket, Player* player) ;
+	static void executeError(CGTradeRemoveItem* pPacket, Player* player, BYTE ErrorCode) ;
 };
 
 #endif

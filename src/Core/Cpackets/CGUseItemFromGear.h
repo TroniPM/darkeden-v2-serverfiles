@@ -19,9 +19,9 @@ class GamePlayer;
 class CGUseItemFromGear : public Packet 
 {
 public:
-    void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+    void read(SocketInputStream & iStream) ;
     void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_CG_USE_ITEM_FROM_GEAR; }
 	PacketSize_t getPacketSize()  { return szObjectID + szBYTE; }
 	string getPacketName()  { return "CGUseItemFromGear"; }
@@ -63,10 +63,10 @@ class Item;
 class CGUseItemFromGearHandler 
 {
 public:
-	static void execute(CGUseItemFromGear* pPacket, Player* player) throw(ProtocolException, Error);
+	static void execute(CGUseItemFromGear* pPacket, Player* player) ;
 
 protected:
-	static void executeCoupleRing(CGUseItemFromGear* pPacket, GamePlayer* pGamePlayer) throw(ProtocolException, Error);
+	static void executeCoupleRing(CGUseItemFromGear* pPacket, GamePlayer* pGamePlayer) ;
 };
 
 #endif

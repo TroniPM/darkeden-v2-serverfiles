@@ -22,9 +22,9 @@ public:
 	~GCAddGearToInventory() throw();
 
 public:
-    void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+    void read(SocketInputStream & iStream) ;
     void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_GC_ADD_GEAR_TO_INVENTORY; }
 	PacketSize_t getPacketSize()  { return szSlotID + szCoordInven + szCoordInven; }
 	string getPacketName()  { return "GCAddGearToInventory"; }
@@ -66,7 +66,7 @@ public:
 class GCAddGearToInventoryHandler 
 {
 public:
-	static void execute(GCAddGearToInventory* pPacket, Player* player) throw(ProtocolException, Error);
+	static void execute(GCAddGearToInventory* pPacket, Player* player) ;
 };
 
 

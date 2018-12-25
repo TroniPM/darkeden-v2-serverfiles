@@ -17,9 +17,9 @@
 class CGResurrect : public Packet 
 {
 public:
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_CG_RESURRECT; }
 	PacketSize_t getPacketSize()  { return 0; }
 	string getPacketName()  { return "CGResurrect"; }
@@ -46,7 +46,7 @@ public:
 class CGResurrectHandler 
 {
 public:
-	static void execute(CGResurrect* pPacket, Player* player) throw(ProtocolException, Error);
+	static void execute(CGResurrect* pPacket, Player* player) ;
 };
 
 #endif

@@ -63,9 +63,9 @@ public:
 	~GCShopBuyFail();
 
 public:
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_GC_SHOP_BUY_FAIL; }
 	PacketSize_t getPacketSize()  { return szObjectID;}
 	string getPacketName()  { return "GCShopBuyFail"; }
@@ -105,7 +105,7 @@ public:
 class GCShopBuyFailHandler 
 {
 public:
-	static void execute(GCShopBuyFail* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute(GCShopBuyFail* pPacket, Player* pPlayer) ;
 };
 
 #endif

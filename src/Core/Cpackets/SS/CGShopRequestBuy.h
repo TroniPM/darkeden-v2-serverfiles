@@ -22,9 +22,9 @@
 class CGShopRequestBuy : public Packet 
 {
 public:
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_CG_SHOP_REQUEST_BUY; }
 	PacketSize_t getPacketSize()  { return szObjectID+szShopRackType+szBYTE+szItemNum+szCoord*2; }
 	string getPacketName()  { return "CGShopRequestBuy"; }
@@ -85,10 +85,10 @@ public:
 class CGShopRequestBuyHandler 
 {
 public:
-	static void execute(CGShopRequestBuy* pPacket, Player* player) throw(ProtocolException, Error);
-	static void executeNormal(CGShopRequestBuy* pPacket, Player* player) throw(ProtocolException, Error);
-	static void executeMotorcycle(CGShopRequestBuy* pPacket, Player* player) throw(ProtocolException, Error);
-	static void executeEvent(CGShopRequestBuy* pPacket, Player* player) throw(ProtocolException, Error);
+	static void execute(CGShopRequestBuy* pPacket, Player* player) ;
+	static void executeNormal(CGShopRequestBuy* pPacket, Player* player) ;
+	static void executeMotorcycle(CGShopRequestBuy* pPacket, Player* player) ;
+	static void executeEvent(CGShopRequestBuy* pPacket, Player* player) ;
 };
 
 #endif

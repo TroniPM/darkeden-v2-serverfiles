@@ -27,9 +27,9 @@ public:
 	~UDPManager() throw(Error);
 
 public:
-	void sendDatagram(Datagram* pDatagram) throw(ProtocolException, Error);
+	void sendDatagram(Datagram* pDatagram) ;
 
-	void sendPacket(const string& host, uint port, DatagramPacket* pPacket) throw(ProtocolException, Error);
+	void sendPacket(const string& host, uint port, DatagramPacket* pPacket) ;
 
 
 private:

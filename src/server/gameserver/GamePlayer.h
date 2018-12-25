@@ -65,7 +65,7 @@ public:
 	virtual void processOutput() throw(IOException, Error);
 	
 	// send packet to player's output buffer
-	virtual void sendPacket(Packet* packet) throw(ProtocolException, Error);
+	virtual void sendPacket(Packet* packet) ;
 
 	// disconnect
 	// 정식 로그아웃의 경우 disconnect(LOGOUT)

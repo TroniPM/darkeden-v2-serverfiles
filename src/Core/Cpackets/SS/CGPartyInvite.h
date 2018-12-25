@@ -31,9 +31,9 @@ enum
 class CGPartyInvite : public Packet 
 {
 public:
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_CG_PARTY_INVITE; }
 	PacketSize_t getPacketSize()  { return szObjectID + szBYTE; }
 	string getPacketName()  { return "CGPartyInvite"; }
@@ -74,8 +74,8 @@ public:
 class CGPartyInviteHandler 
 {
 public:
-	static void execute(CGPartyInvite* pPacket, Player* player) throw(ProtocolException, Error);
-	static void executeError(CGPartyInvite* pPacket, Player* player, BYTE ErrorCode) throw(ProtocolException, Error);
+	static void execute(CGPartyInvite* pPacket, Player* player) ;
+	static void executeError(CGPartyInvite* pPacket, Player* player, BYTE ErrorCode) ;
 };
 
 #endif

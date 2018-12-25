@@ -30,7 +30,7 @@ public :
 	~GCAddNewItemToZone() throw();
 	
 	// execute packet's handler
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 
 	// get packet id
 	PacketID_t getPacketID()  { return PACKET_GC_ADD_NEW_ITEM_TO_ZONE; }

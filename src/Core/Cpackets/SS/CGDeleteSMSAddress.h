@@ -21,9 +21,9 @@ public:
 	~CGDeleteSMSAddress() throw();
 
 public:
-    void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+    void read(SocketInputStream & iStream) ;
     void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_CG_DELETE_SMS_ADDRESS; }
 	PacketSize_t getPacketSize()  { return szDWORD; }
 	string getPacketName()  { return "CGDeleteSMSAddress"; }
@@ -57,7 +57,7 @@ public:
 class CGDeleteSMSAddressHandler 
 {
 public:
-	static void execute(CGDeleteSMSAddress* pPacket, Player* player) throw(ProtocolException, Error);
+	static void execute(CGDeleteSMSAddress* pPacket, Player* player) ;
 };
 
 #endif

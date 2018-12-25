@@ -20,9 +20,9 @@ public:
 	virtual ~GCSubInventoryInfo() throw();
 
 public:
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_GC_SUB_INVENTORY_INFO; }
 	PacketSize_t getPacketSize()  { return szObjectID + m_pInventoryInfo->getSize(); }	
 	string getPacketName()  { return "GCSubInventoryInfo"; }
@@ -51,7 +51,7 @@ public :
 class GCSubInventoryInfoHandler {
 	
 public :
-	static void execute(GCSubInventoryInfo* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute(GCSubInventoryInfo* pPacket, Player* pPlayer) ;
 
 };
 

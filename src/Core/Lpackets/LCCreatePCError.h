@@ -20,9 +20,9 @@
 class LCCreatePCError : public Packet 
 {
 public:
-    void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+    void read(SocketInputStream & iStream) ;
     void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_LC_CREATE_PC_ERROR; }
 	PacketSize_t getPacketSize()  { return szBYTE; }
 	string getPacketName()  { return "LCCreatePCError"; }
@@ -70,7 +70,7 @@ class LCCreatePCErrorHandler {
 public:
 
 	// execute packet's handler
-	static void execute(LCCreatePCError* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute(LCCreatePCError* pPacket, Player* pPlayer) ;
 
 };
 

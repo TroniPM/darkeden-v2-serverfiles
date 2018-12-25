@@ -20,9 +20,9 @@
 class GCTeachSkillInfo : public Packet 
 {
 public:
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_GC_TEACH_SKILL_INFO; }
 	PacketSize_t getPacketSize()  { return szSkillDomainType+szSkillLevel; }
 	string getPacketName()  { return "GCTeachSkillInfo"; }
@@ -60,7 +60,7 @@ public:
 class GCTeachSkillInfoHandler 
 {
 public :
-	static void execute(GCTeachSkillInfo* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute(GCTeachSkillInfo* pPacket, Player* pPlayer) ;
 };
 
 #endif

@@ -42,9 +42,9 @@ public:
 	virtual ~GCShopList() throw();
 
 public:
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_GC_SHOP_LIST; }
 	PacketSize_t getPacketSize() ;
 	string getPacketName()  { return "GCShopList"; }
@@ -131,7 +131,7 @@ public:
 class GCShopListHandler 
 {
 public:
-	static void execute(GCShopList* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute(GCShopList* pPacket, Player* pPlayer) ;
 
 };
 

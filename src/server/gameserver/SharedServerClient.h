@@ -42,7 +42,7 @@ public:
 	virtual void processOutput() throw(IOException, Error);
 	
 	// send packet to player's output buffer
-	virtual void sendPacket(Packet* packet) throw(ProtocolException, Error);
+	virtual void sendPacket(Packet* packet) ;
 
 	// get debug string
 	virtual string toString() ;

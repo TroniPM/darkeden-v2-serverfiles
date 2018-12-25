@@ -49,9 +49,9 @@ enum
 class GCPartyError : public Packet 
 {
 public:
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_GC_PARTY_ERROR; }
 	PacketSize_t getPacketSize()  { return szBYTE + szObjectID; }
 	string getPacketName()  { return "GCPartyError"; }
@@ -91,7 +91,7 @@ public:
 class GCPartyErrorHandler 
 {
 public:
-	static void execute(GCPartyError* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute(GCPartyError* pPacket, Player* pPlayer) ;
 };
 
 #endif

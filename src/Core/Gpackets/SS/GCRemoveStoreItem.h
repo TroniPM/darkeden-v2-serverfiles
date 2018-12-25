@@ -22,9 +22,9 @@ public:
 	virtual ~GCRemoveStoreItem() throw();
 
 public:
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_GC_REMOVE_STORE_ITEM; }
 	PacketSize_t getPacketSize()  { return szObjectID + szBYTE; }
 	string getPacketName()  { return "GCRemoveStoreItem"; }
@@ -64,7 +64,7 @@ public:
 class GCRemoveStoreItemHandler 
 {
 public:
-	static void execute(GCRemoveStoreItem* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute(GCRemoveStoreItem* pPacket, Player* pPlayer) ;
 };
 
 #endif

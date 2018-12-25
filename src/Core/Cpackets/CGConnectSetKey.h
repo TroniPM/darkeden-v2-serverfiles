@@ -110,7 +110,7 @@ class CGConnectSetKeyHandler {
 public:
 
 	// execute packet's handler
-	static void execute(CGConnectSetKey* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute(CGConnectSetKey* pPacket, Player* pPlayer) ;
 };
 
 #endif

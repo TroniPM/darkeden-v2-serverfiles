@@ -25,9 +25,9 @@ public:
 	~GCAddEffectToTile() throw();
 	
 public:
-    void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+    void read(SocketInputStream & iStream) ;
     void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_GC_ADD_EFFECT_TO_TILE; }
 	PacketSize_t getPacketSize()  { return szObjectID + szCoord*2 + szEffectID + szTurn; }
 	string getPacketName()  { return "GCAddEffectToTile"; }

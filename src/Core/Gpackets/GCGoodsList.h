@@ -109,9 +109,9 @@ public:
 	GCGoodsList() throw();
 	virtual ~GCGoodsList() throw();
 
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_GC_GOODS_LIST; }
 	PacketSize_t getPacketSize() ;
 	string getPacketName()  { return "GCGoodsList"; }
@@ -153,7 +153,7 @@ public :
 class GCGoodsListHandler 
 {
 public :
-	static void execute(GCGoodsList* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute(GCGoodsList* pPacket, Player* pPlayer) ;
 
 };
 

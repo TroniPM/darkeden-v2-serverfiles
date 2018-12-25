@@ -33,9 +33,9 @@ public:
 	~CGTypeStringList() throw();
 
 public:
-    void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+    void read(SocketInputStream & iStream) ;
     void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_CG_TYPE_STRING_LIST; }
 	PacketSize_t getPacketSize() 
 	{
@@ -93,12 +93,12 @@ public:
 class CGTypeStringListHandler 
 {
 public:
-	static void execute(CGTypeStringList* pPacket, Player* player) throw(ProtocolException, Error);
+	static void execute(CGTypeStringList* pPacket, Player* player) ;
 
 private:
-	static void executeWaitForMeet(CGTypeStringList* pPacket, Player* player) throw(ProtocolException, Error);
-	static void executeWaitForApart(CGTypeStringList* pPacket, Player* player) throw(ProtocolException, Error);
-	static void	executeApartForce(CGTypeStringList* pPacket, Player* pPlayer ) throw(ProtocolException, Error);
+	static void executeWaitForMeet(CGTypeStringList* pPacket, Player* player) ;
+	static void executeWaitForApart(CGTypeStringList* pPacket, Player* player) ;
+	static void	executeApartForce(CGTypeStringList* pPacket, Player* pPlayer ) ;
 };
 
 #endif

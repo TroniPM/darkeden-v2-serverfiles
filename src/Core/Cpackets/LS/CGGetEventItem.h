@@ -30,9 +30,9 @@ enum EventType
 class CGGetEventItem : public Packet 
 {
 public:
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_CG_GET_EVENT_ITEM; }
 	PacketSize_t getPacketSize()  { return szBYTE; }
 	string getPacketName()  { return "CGGetEventItem"; }
@@ -72,12 +72,12 @@ public:
 class CGGetEventItemHandler 
 {
 public:
-	static void execute(CGGetEventItem* pPacket, Player* player) throw(ProtocolException, Error);
+	static void execute(CGGetEventItem* pPacket, Player* player) ;
 
 #ifdef __GAME_SERVER__
-	static void executeCombackItem(CGGetEventItem* pPacket, Player* pPlayer) throw(ProtocolException, Error);
-	static void executeCombackPremiumItem(CGGetEventItem* pPacket, Player* pPlayer) throw(ProtocolException, Error);
-	static void executeCombackRecommendItem(CGGetEventItem* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void executeCombackItem(CGGetEventItem* pPacket, Player* pPlayer) ;
+	static void executeCombackPremiumItem(CGGetEventItem* pPacket, Player* pPlayer) ;
+	static void executeCombackRecommendItem(CGGetEventItem* pPacket, Player* pPlayer) ;
 #endif
 };
 

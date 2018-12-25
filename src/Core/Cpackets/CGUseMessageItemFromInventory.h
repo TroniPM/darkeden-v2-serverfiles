@@ -20,9 +20,9 @@
 class CGUseMessageItemFromInventory : public CGUseItemFromInventory 
 {
 public:
-    void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+    void read(SocketInputStream & iStream) ;
     void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_CG_USE_MESSAGE_ITEM_FROM_INVENTORY; }
 	PacketSize_t getPacketSize()  
 	{ 
@@ -66,12 +66,12 @@ public:
 class CGUseMessageItemFromInventoryHandler 
 {
 public:
-	static void execute(CGUseMessageItemFromInventory* pPacket, Player* player) throw(ProtocolException, Error);
+	static void execute(CGUseMessageItemFromInventory* pPacket, Player* player) ;
 
 protected:
-	static void executeEventTree(CGUseMessageItemFromInventory* pPacket, Player* player) throw(ProtocolException, Error);
+	static void executeEventTree(CGUseMessageItemFromInventory* pPacket, Player* player) ;
 	// add by Coffee
-	static void executeEventFromMessage(CGUseMessageItemFromInventory* pPacket, Player* player) throw(ProtocolException, Error);
+	static void executeEventFromMessage(CGUseMessageItemFromInventory* pPacket, Player* player) ;
 };
 
 #endif

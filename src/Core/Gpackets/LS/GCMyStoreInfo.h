@@ -22,9 +22,9 @@ public:
 	virtual ~GCMyStoreInfo() throw();
 
 public:
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_GC_MY_STORE_INFO; }
 	PacketSize_t getPacketSize()  { return szBYTE + m_pInfo->getSize(false); }
 	string getPacketName()  { return "GCMyStoreInfo"; }
@@ -65,7 +65,7 @@ public:
 class GCMyStoreInfoHandler 
 {
 public:
-	static void execute(GCMyStoreInfo* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute(GCMyStoreInfo* pPacket, Player* pPlayer) ;
 };
 
 #endif

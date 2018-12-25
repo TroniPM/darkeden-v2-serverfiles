@@ -22,9 +22,9 @@
 class CGStashList : public Packet 
 {
 public:
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_CG_STASH_LIST; }
 	PacketSize_t getPacketSize()  { return szObjectID; }
 	string getPacketName()  { return "CGStashList"; }
@@ -68,7 +68,7 @@ public:
 class CGStashListHandler 
 {
 public:
-	static void execute(CGStashList* pPacket, Player* player) throw(ProtocolException, Error);
+	static void execute(CGStashList* pPacket, Player* player) ;
 
 };
 

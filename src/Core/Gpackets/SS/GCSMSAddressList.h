@@ -31,7 +31,7 @@ struct AddressUnit
 	PacketSize_t getPacketSize() const { return szDWORD + szBYTE + CharacterName.size() + szBYTE + CustomName.size() + szBYTE + Number.size(); }
 	static PacketSize_t getMaxPacketSize() { return szDWORD + szBYTE + 20 + szBYTE + 40 + szBYTE + 11; }
 
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
 };
 
@@ -42,9 +42,9 @@ public:
 	~GCSMSAddressList() throw();
 	
 public:
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_GC_SMS_ADDRESS_LIST; }
 	PacketSize_t getPacketSize() ;
 	string getPacketName()  { return "GCSMSAddressList"; }

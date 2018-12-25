@@ -20,9 +20,9 @@ public:
 	virtual ~GCModifyNickname() throw();
 
 public:
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_GC_MODIFY_NICKNAME; }
 	PacketSize_t getPacketSize()  { return szObjectID + m_pNicknameInfo->getSize(); }
 	string getPacketName()  { return "GCModifyNickname"; }
@@ -53,7 +53,7 @@ public :
 class GCModifyNicknameHandler {
 	
 public :
-	static void execute(GCModifyNickname* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute(GCModifyNickname* pPacket, Player* pPlayer) ;
 
 };
 

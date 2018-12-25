@@ -32,7 +32,7 @@ public:
     void write(SocketOutputStream & oStream)  {}
 
 	// execute packet's handler
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 
 	// get packet id
 	PacketID_t getPacketID()  { return PACKET_LC_CREATE_PC_OK; }
@@ -89,7 +89,7 @@ class LCCreatePCOKHandler {
 public:
 
 	// execute packet's handler
-	static void execute(LCCreatePCOK* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute(LCCreatePCOK* pPacket, Player* pPlayer) ;
 
 };
 

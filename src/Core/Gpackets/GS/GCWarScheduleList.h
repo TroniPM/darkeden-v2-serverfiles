@@ -37,9 +37,9 @@ public:
 	virtual ~GCWarScheduleList() throw();
 
 public:
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_GC_WAR_SCHEDULE_LIST; }
 	PacketSize_t getPacketSize() ;
 	string getPacketName()  { return "GCWarScheduleList"; }
@@ -70,7 +70,7 @@ public :
 
 class GCWarScheduleListHandler {
 public :
-	static void execute(GCWarScheduleList* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute(GCWarScheduleList* pPacket, Player* pPlayer) ;
 };
 
 #endif // __GC_WAR_SCHEDULE_LIST_H__

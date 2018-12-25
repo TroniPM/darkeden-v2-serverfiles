@@ -17,9 +17,9 @@
 class CGRequestNewbieItem : public Packet 
 {
 public:
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_CG_REQUEST_NEWBIE_ITEM; }
 	PacketSize_t getPacketSize()  { return szBYTE; }
 	string getPacketName()  { return "CGRequestNewbieItem"; }
@@ -55,7 +55,7 @@ public:
 class CGRequestNewbieItemHandler 
 {
 public:
-	static void execute(CGRequestNewbieItem* pPacket, Player* player) throw(ProtocolException, Error);
+	static void execute(CGRequestNewbieItem* pPacket, Player* player) ;
 };
 
 #endif

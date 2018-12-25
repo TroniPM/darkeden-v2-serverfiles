@@ -32,9 +32,9 @@ enum
 class CGTradeMoney : public Packet 
 {
 public:
-	void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_CG_TRADE_MONEY; }
 	PacketSize_t getPacketSize()  { return szObjectID + szGold + szBYTE; }
 	string getPacketName()  { return "CGTradeMoney"; }
@@ -83,11 +83,11 @@ public:
 class CGTradeMoneyHandler 
 {
 public:
-	static void execute(CGTradeMoney* pPacket, Player* player) throw(ProtocolException, Error);
-	static void executeSlayer(CGTradeMoney* pPacket, Player* player) throw(ProtocolException, Error);
-	static void executeVampire(CGTradeMoney* pPacket, Player* player) throw(ProtocolException, Error);
-	static void executeOusters(CGTradeMoney* pPacket, Player* player) throw(ProtocolException, Error);
-	static void executeError(CGTradeMoney* pPacket, Player* player, BYTE ErrorCode) throw(ProtocolException, Error);
+	static void execute(CGTradeMoney* pPacket, Player* player) ;
+	static void executeSlayer(CGTradeMoney* pPacket, Player* player) ;
+	static void executeVampire(CGTradeMoney* pPacket, Player* player) ;
+	static void executeOusters(CGTradeMoney* pPacket, Player* player) ;
+	static void executeError(CGTradeMoney* pPacket, Player* player, BYTE ErrorCode) ;
 };
 
 #endif

@@ -22,9 +22,9 @@ public:
 	CGUseItemFromInventory () throw ();
 	~CGUseItemFromInventory () throw ();
 	
-   	 void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+   	 void read(SocketInputStream & iStream) ;
    	 void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_CG_USE_ITEM_FROM_INVENTORY; }
 	PacketSize_t getPacketSize()  { return szObjectID + szObjectID + szCoordInven + szCoordInven; }
 	string getPacketName()  { return "CGUseItemFromInventory"; }
@@ -75,29 +75,29 @@ class Item;
 class CGUseItemFromInventoryHandler 
 {
 public:
-	static void execute(CGUseItemFromInventory* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void execute(CGUseItemFromInventory* pPacket, Player* pPlayer) ;
 
 protected:
-	static void executePotion(CGUseItemFromInventory* pPacket, Player* pPlayer) throw(ProtocolException, Error);
-	static void executeMagazine(CGUseItemFromInventory* pPacket, Player* pPlayer) throw(ProtocolException, Error);
-	static void executeETC(CGUseItemFromInventory* pPacket, Player* pPlayer) throw(ProtocolException, Error);
-	static void executeSerum(CGUseItemFromInventory* pPacket, Player* pPlayer) throw(ProtocolException, Error);
-	static void executeVampireETC(CGUseItemFromInventory* pPacket, Player* pPlayer) throw(ProtocolException, Error);
-	static void executeSlayerPortalItem(CGUseItemFromInventory* pPacket, Player* pPlayer) throw(ProtocolException, Error);
-	static void executeOustersSummonItem(CGUseItemFromInventory* pPacket, Player* pPlayer) throw(ProtocolException, Error);
-	static void executeKeyItem(CGUseItemFromInventory* pPacket, Player* pPlayer) throw(ProtocolException, Error);
-	static void executeFirecraker(CGUseItemFromInventory* pPacket, Player* pPlayer) throw(ProtocolException, Error);
-	static void executeDyePotion(CGUseItemFromInventory* pPacket, Player* pPlayer) throw(ProtocolException, Error);
-	static void executeResurrectItem(CGUseItemFromInventory* pPacket, Player* pPlayer) throw(ProtocolException, Error);
-	static void executeTranslator(CGUseItemFromInventory* pPacket, Player* pPlayer) throw(ProtocolException, Error);
-	static void executeEffectItem(CGUseItemFromInventory* pPacket, Player* pPlayer) throw(ProtocolException, Error);
-	static void executePetItem(CGUseItemFromInventory* pPacket, Player* pPlayer) throw(ProtocolException, Error);
-	static void executePetFood(CGUseItemFromInventory* pPacket, Player* pPlayer) throw(ProtocolException, Error);
-	static void executeEventGiftBox(CGUseItemFromInventory* pPacket, Player* pPlayer) throw(ProtocolException, Error);
-	static void executeTrapItem(CGUseItemFromInventory* pPacket, Player* pPlayer) throw(ProtocolException, Error);
-	static void executeSubInventory(CGUseItemFromInventory* pPacket, Player* pPlayer) throw(ProtocolException, Error);
-	static void executeSkillBook(CGUseItemFromInventory* pPacket, Player* pPlayer) throw(ProtocolException, Error);
-	static void executeOustersWingItem(CGUseItemFromInventory* pPacket, Player* pPlayer) throw(ProtocolException, Error);
+	static void executePotion(CGUseItemFromInventory* pPacket, Player* pPlayer) ;
+	static void executeMagazine(CGUseItemFromInventory* pPacket, Player* pPlayer) ;
+	static void executeETC(CGUseItemFromInventory* pPacket, Player* pPlayer) ;
+	static void executeSerum(CGUseItemFromInventory* pPacket, Player* pPlayer) ;
+	static void executeVampireETC(CGUseItemFromInventory* pPacket, Player* pPlayer) ;
+	static void executeSlayerPortalItem(CGUseItemFromInventory* pPacket, Player* pPlayer) ;
+	static void executeOustersSummonItem(CGUseItemFromInventory* pPacket, Player* pPlayer) ;
+	static void executeKeyItem(CGUseItemFromInventory* pPacket, Player* pPlayer) ;
+	static void executeFirecraker(CGUseItemFromInventory* pPacket, Player* pPlayer) ;
+	static void executeDyePotion(CGUseItemFromInventory* pPacket, Player* pPlayer) ;
+	static void executeResurrectItem(CGUseItemFromInventory* pPacket, Player* pPlayer) ;
+	static void executeTranslator(CGUseItemFromInventory* pPacket, Player* pPlayer) ;
+	static void executeEffectItem(CGUseItemFromInventory* pPacket, Player* pPlayer) ;
+	static void executePetItem(CGUseItemFromInventory* pPacket, Player* pPlayer) ;
+	static void executePetFood(CGUseItemFromInventory* pPacket, Player* pPlayer) ;
+	static void executeEventGiftBox(CGUseItemFromInventory* pPacket, Player* pPlayer) ;
+	static void executeTrapItem(CGUseItemFromInventory* pPacket, Player* pPlayer) ;
+	static void executeSubInventory(CGUseItemFromInventory* pPacket, Player* pPlayer) ;
+	static void executeSkillBook(CGUseItemFromInventory* pPacket, Player* pPlayer) ;
+	static void executeOustersWingItem(CGUseItemFromInventory* pPacket, Player* pPlayer) ;
 };
 
 #endif

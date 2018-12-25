@@ -43,7 +43,7 @@ public:
 	PacketSize_t getSize() const { return szBYTE + ( (m_Open==0)?0:(szBYTE+m_Sign.size() + szWORD) ); }
 	static PacketSize_t getMaxSize() { return szBYTE + szBYTE + MAX_SIGN_SIZE; }
 
-	void read(SocketInputStream& iStream) throw(ProtocolException, Error);
+	void read(SocketInputStream& iStream) ;
 	void write(SocketOutputStream& oStream) ;
 
 	BYTE	isOpen() const { return m_Open; }
@@ -70,7 +70,7 @@ public:
 	PacketSize_t		getSize(bool toOther) const;
 	static PacketSize_t	getMaxSize() { return szBYTE + szBYTE + MAX_SIGN_SIZE + szBYTE + MAX_ITEM_NUM * StoreItemInfo::getMaxSize() + szWORD; }
 
-	void read(SocketInputStream& iStream, bool toOther) throw(ProtocolException, Error);
+	void read(SocketInputStream& iStream, bool toOther) ;
 	void write(SocketOutputStream& oStream, bool toOther) ;
 
 	BYTE	isOpen() const { return m_Open; }

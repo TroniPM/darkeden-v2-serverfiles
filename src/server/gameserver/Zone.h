@@ -139,53 +139,53 @@ public:
 
 
 public:
-	void movePC(Creature* pCreature, ZoneCoord_t nx, ZoneCoord_t ny, Dir_t dir) throw(ProtocolException, Error);
-	void moveCreature(Creature* pCreature, ZoneCoord_t nx, ZoneCoord_t ny, Dir_t dir) throw(ProtocolException, Error);
+	void movePC(Creature* pCreature, ZoneCoord_t nx, ZoneCoord_t ny, Dir_t dir) ;
+	void moveCreature(Creature* pCreature, ZoneCoord_t nx, ZoneCoord_t ny, Dir_t dir) ;
 
 	// 몬스터가 주변을 스캔한다.
 	void monsterScan(Monster* pMonster, ZoneCoord_t x, ZoneCoord_t y, Dir_t dir) throw(Error);
 
-	void broadcastPacket(Packet* pPacket, Creature* owner = NULL) throw(ProtocolException, Error);
-	void broadcastPacket(ZoneCoord_t x, ZoneCoord_t y, Packet* pPacket, Creature* owner = NULL, bool Plus = false, Range_t Range = 0) throw(ProtocolException, Error);
-	void broadcastPacket(ZoneCoord_t x, ZoneCoord_t y, Packet* pPacket, const list<Creature *> & creatureList, bool Plus = false, Range_t Range = 0) throw(ProtocolException, Error);
-	void broadcastDarkLightPacket(Packet* pPacket1, Packet* pPacket2, Creature* owner = NULL) throw(ProtocolException, Error);
-	void broadcastSayPacket(ZoneCoord_t x, ZoneCoord_t y, Packet* pPacket, Creature* owner = NULL, bool isVampire = false) throw(ProtocolException, Error);
-	void broadcastLevelWarBonusPacket(Packet* pPacket, Creature* owner = NULL) throw(ProtocolException, Error);
-	list<Creature*> broadcastSkillPacket(ZoneCoord_t x1, ZoneCoord_t y1, ZoneCoord_t x2, ZoneCoord_t y2, Packet* pPacket, list<Creature*> creatureList, bool bConcernDarkness = true) throw(ProtocolException, Error);
+	void broadcastPacket(Packet* pPacket, Creature* owner = NULL) ;
+	void broadcastPacket(ZoneCoord_t x, ZoneCoord_t y, Packet* pPacket, Creature* owner = NULL, bool Plus = false, Range_t Range = 0) ;
+	void broadcastPacket(ZoneCoord_t x, ZoneCoord_t y, Packet* pPacket, const list<Creature *> & creatureList, bool Plus = false, Range_t Range = 0) ;
+	void broadcastDarkLightPacket(Packet* pPacket1, Packet* pPacket2, Creature* owner = NULL) ;
+	void broadcastSayPacket(ZoneCoord_t x, ZoneCoord_t y, Packet* pPacket, Creature* owner = NULL, bool isVampire = false) ;
+	void broadcastLevelWarBonusPacket(Packet* pPacket, Creature* owner = NULL) ;
+	list<Creature*> broadcastSkillPacket(ZoneCoord_t x1, ZoneCoord_t y1, ZoneCoord_t x2, ZoneCoord_t y2, Packet* pPacket, list<Creature*> creatureList, bool bConcernDarkness = true) ;
 
 	//(x,y) 타일 위에 있는 PC 에게 주변 정보를 읽어서 전송한다. pPacket 이 NULL 이 아니라면, 동시에 브로드캐스트도 담당한다.
-	void scan(Creature* pPC, ZoneCoord_t x, ZoneCoord_t y, Packet* pPacket) throw(ProtocolException, Error);
+	void scan(Creature* pPC, ZoneCoord_t x, ZoneCoord_t y, Packet* pPacket) ;
 	
 	// 제자리에서 시야가 변경된 경우 주변 정보를 다시 보내준다.
-	void updateScan(Creature* pPC, Sight_t oldSight, Sight_t newSight) throw(ProtocolException, Error);
+	void updateScan(Creature* pPC, Sight_t oldSight, Sight_t newSight) ;
 
 	// 그곳을 볼 수 있는 넘들(Player)의 list를 돌려준다.�
 	list<Creature*>  getWatcherList(ZoneCoord_t, ZoneCoord_t, Creature* pTargetCreature = NULL) throw(Error);
 
 	// 리젠된 몬스터가 주변의 PC 들에게 GCAddXXX 패킷을 브로드캐스트하면서동시에 그들을 잠재적인 적으로 인식하도록 한다.
-	void scanPC(Creature* pCreature) throw(ProtocolException, Error);
+	void scanPC(Creature* pCreature) ;
 
 	// 제자리에서 hidden creature에 대한 update가 필요한 경우.
-	void updateHiddenScan(Creature* pCreature) throw(ProtocolException, Error);
+	void updateHiddenScan(Creature* pCreature) ;
 	
 	// 제자리에서 install mine에 대한 update가 필요한 경우.
-	void updateMineScan(Creature* pCreature) throw(ProtocolException, Error);
+	void updateMineScan(Creature* pCreature) ;
 	
     // 제자리에서 invisible creature에 대한 update가 필요한 경우.
-	void updateInvisibleScan(Creature* pCreature) throw(ProtocolException, Error);
+	void updateInvisibleScan(Creature* pCreature) ;
 
     // 제자리에서 hide,invisible creature에 대한 update가 필요한 경우.
-	void updateDetectScan(Creature* pCreature) throw(ProtocolException, Error);
+	void updateDetectScan(Creature* pCreature) ;
 
 	// PC 가 P(x1,y1)에서 Q(x2,y2)로 이동했음을 주변에 브로드캐스트한다.
-	void movePCBroadcast(Creature* pPC, ZoneCoord_t x1, ZoneCoord_t y1, ZoneCoord_t x2, ZoneCoord_t y2, bool bSendMove = true, bool bKnockback=false) throw(ProtocolException, Error);
+	void movePCBroadcast(Creature* pPC, ZoneCoord_t x1, ZoneCoord_t y1, ZoneCoord_t x2, ZoneCoord_t y2, bool bSendMove = true, bool bKnockback=false) ;
 
 	// !PC 가 P(x1,y1)에서 Q(x2,y2)로 이동했음을 주변에 브로드캐스트한다.
-	void moveCreatureBroadcast(Creature* pCreature, ZoneCoord_t x1, ZoneCoord_t y1, ZoneCoord_t x2, ZoneCoord_t y2, bool bSendMove = true, bool bKnockback=false) throw(ProtocolException, Error);
+	void moveCreatureBroadcast(Creature* pCreature, ZoneCoord_t x1, ZoneCoord_t y1, ZoneCoord_t x2, ZoneCoord_t y2, bool bSendMove = true, bool bKnockback=false) ;
 	
 	// PC 가 P(x1,y1)에서 Q(x2,y2)로 이동했음을 주변에 브로드캐스트한다.
-	bool moveFastPC(Creature* pPC, ZoneCoord_t x1, ZoneCoord_t y1, ZoneCoord_t x2, ZoneCoord_t y2, SkillType_t skillType) throw(ProtocolException, Error);
-	bool moveFastMonster(Monster* pMonster, ZoneCoord_t x1, ZoneCoord_t y1, ZoneCoord_t x2, ZoneCoord_t y2, SkillType_t skillType) throw(ProtocolException, Error);
+	bool moveFastPC(Creature* pPC, ZoneCoord_t x1, ZoneCoord_t y1, ZoneCoord_t x2, ZoneCoord_t y2, SkillType_t skillType) ;
+	bool moveFastMonster(Monster* pMonster, ZoneCoord_t x1, ZoneCoord_t y1, ZoneCoord_t x2, ZoneCoord_t y2, SkillType_t skillType) ;
 
 	// 전쟁시 성 안은 안전지대가 되었다가 말았다가 한다. 존을 세이프존이 아니게 만들거나 원상복구시킨다.
 	void releaseSafeZone() throw();

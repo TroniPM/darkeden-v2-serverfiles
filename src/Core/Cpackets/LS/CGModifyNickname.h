@@ -23,9 +23,9 @@ public:
 	~CGModifyNickname() throw();
 
 public:
-    void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+    void read(SocketInputStream & iStream) ;
     void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_CG_MODIFY_NICKNAME; }
 	PacketSize_t getPacketSize()  { return szObjectID + szBYTE + m_Nickname.size(); }
 	string getPacketName()  { return "CGModifyNickname"; }
@@ -62,7 +62,7 @@ public:
 class CGModifyNicknameHandler 
 {
 public:
-	static void execute(CGModifyNickname* pPacket, Player* player) throw(ProtocolException, Error);
+	static void execute(CGModifyNickname* pPacket, Player* player) ;
 };
 
 #endif

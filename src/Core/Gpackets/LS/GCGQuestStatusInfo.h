@@ -31,9 +31,9 @@ public:
 	~GCGQuestStatusInfo() throw();
 	
 public:
-    void read(SocketInputStream & iStream) throw(ProtocolException, Error);
+    void read(SocketInputStream & iStream) ;
     void write(SocketOutputStream & oStream) ;
-	void execute(Player* pPlayer) throw(ProtocolException, Error);
+	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_GQUEST_STATUS_INFO; }
 	PacketSize_t getPacketSize()  { return accumulate( m_Infos.begin(), m_Infos.end(), szBYTE, addSize ); }
 	string getPacketName()  { return "GCGQuestStatusInfo"; }
