@@ -12,8 +12,7 @@
 //////////////////////////////////////////////////////////////////////
 // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
 //////////////////////////////////////////////////////////////////////
-void GuildWarInfo::read ( SocketInputStream & iStream ) 
-	 throw ( ProtocolException , Error )
+void GuildWarInfo::read ( SocketInputStream & iStream )
 {
 	__BEGIN_TRY
 
@@ -38,8 +37,7 @@ void GuildWarInfo::read ( SocketInputStream & iStream )
 //////////////////////////////////////////////////////////////////////
 // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
 //////////////////////////////////////////////////////////////////////
-void GuildWarInfo::write ( SocketOutputStream & oStream ) const 
-     throw ( ProtocolException , Error )
+void GuildWarInfo::write ( SocketOutputStream & oStream )
 {
 	__BEGIN_TRY
 
@@ -62,8 +60,7 @@ void GuildWarInfo::write ( SocketOutputStream & oStream ) const
 //////////////////////////////////////////////////////////////////////
 // get debug string
 //////////////////////////////////////////////////////////////////////
-string GuildWarInfo::toString () const
-	throw ()
+string GuildWarInfo::toString ()
 {
 	StringStream msg;
 
