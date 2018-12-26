@@ -28,10 +28,10 @@ class SkillParentInfo {
 public:
 
 	// constructor
-	SkillParentInfo(SkillType_t SkillType) throw();
+	SkillParentInfo(SkillType_t SkillType) ;
 
 	// destructor
-	~SkillParentInfo() throw();
+	~SkillParentInfo() ;
 	
 	void load() throw(SQLQueryException, Error) {}
 	void save()  {}
@@ -89,15 +89,15 @@ class SkillParentInfoManager {
 public:
 
 	// constructor
-	SkillParentInfoManager() throw();
+	SkillParentInfoManager() ;
 
 	// destructor
-	~SkillParentInfoManager() throw();
+	~SkillParentInfoManager() ;
 
 	// initialize Manager
 	void init();
 
-	// void load() throw();
+	// void load() ;
 	// Loading from Database to ParentInfoClass
 	void load();
 	

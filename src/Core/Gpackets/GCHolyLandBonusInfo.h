@@ -28,10 +28,10 @@ class GCHolyLandBonusInfo : public Packet {
 public :
 
 	// constructor
-	GCHolyLandBonusInfo() throw();
+	GCHolyLandBonusInfo() ;
 
 	// destructor
-	~GCHolyLandBonusInfo() throw();
+	~GCHolyLandBonusInfo() ;
 	
     // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
     void read(SocketInputStream & iStream) ;
@@ -60,7 +60,7 @@ public:
 
 	void addBloodBibleBonusInfo( BloodBibleBonusInfo* pBloodBibleBonusInfo ) throw() { m_BloodBibleBonusInfoList.push_back( pBloodBibleBonusInfo ); }
 
-	void clearBloodBibleBonusInfoList() throw();
+	void clearBloodBibleBonusInfoList() ;
 
 	BloodBibleBonusInfo* popFrontBloodBibleBonusInfoList() throw()
 	{

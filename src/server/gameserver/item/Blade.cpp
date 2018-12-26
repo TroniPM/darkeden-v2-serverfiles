@@ -55,7 +55,7 @@ Blade::Blade(ItemType_t itemType, const list<OptionType_t>& optionType)
 // create item
 //--------------------------------------------------------------------------------
 void Blade::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -105,7 +105,7 @@ void Blade::create(const string & ownerID, Storage storage, StorageID_t storageI
 // save item
 //--------------------------------------------------------------------------------
 void Blade::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -129,7 +129,7 @@ void Blade::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void Blade::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -199,7 +199,7 @@ string Blade::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t Blade::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -213,7 +213,7 @@ VolumeWidth_t Blade::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t Blade::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -227,7 +227,7 @@ VolumeHeight_t Blade::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t Blade::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -241,7 +241,7 @@ Weight_t Blade::getWeight() const
 // get/set weapon's minDamage
 //--------------------------------------------------------------------------------
 Damage_t Blade::getMinDamage() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -255,7 +255,7 @@ Damage_t Blade::getMinDamage() const
 // get/set weapon's maxDamage
 //--------------------------------------------------------------------------------
 Damage_t Blade::getMaxDamage() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -307,7 +307,7 @@ string BladeInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void BladeInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -375,7 +375,7 @@ void BladeInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void BladeLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -578,7 +578,7 @@ void BladeLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void BladeLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -661,7 +661,7 @@ void BladeLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void BladeLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

@@ -11,7 +11,7 @@ RewardClass::RewardClass( RewardClass_t rClass )
 }
 
 RewardClass::~RewardClass()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -29,7 +29,7 @@ RewardClass::~RewardClass()
 }
 
 void RewardClass::addRewardInfo( RewardInfo* pRewardInfo )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -50,7 +50,7 @@ QuestMessage RewardClass::giveReward( PlayerCreature* pPC )
 }
 
 QuestMessage RewardClass::canGiveReward( PlayerCreature* pPC ) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

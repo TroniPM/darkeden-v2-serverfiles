@@ -34,25 +34,25 @@ public:
 	
 	virtual void unaffect();
 
-	void create(const string & ownerID) throw(Error) {}
-	void save(const string & ownerID) throw(Error) {}
-	void destroy(const string & ownerID) throw(Error) {}
+	void create(const string & ownerID)  {}
+	void save(const string & ownerID)  {}
+	void destroy(const string & ownerID)  {}
 
 	virtual string toString() ;
 
 
 public:
 	
-	void setDamage(Damage_t damage) throw(Error) { m_Damage = damage; }
+	void setDamage(Damage_t damage)  { m_Damage = damage; }
 	Damage_t getDamage()  { return m_Damage; }
   
-	void setTick( Turn_t tick ) throw(Error) { m_Tick = tick; }
+	void setTick( Turn_t tick )  { m_Tick = tick; }
 	Turn_t getTick()  { return m_Tick; }
 
-	void setDuration( Turn_t duration ) throw(Error) { m_Duration = duration; }
+	void setDuration( Turn_t duration )  { m_Duration = duration; }
 	Turn_t getDuration()  { return m_Duration; }
 
-	void setRect(ZoneCoord_t left, ZoneCoord_t right, ZoneCoord_t top, ZoneCoord_t bottom) throw(Error) { m_Left = left; m_Right = right; m_Top = top; m_Bottom = bottom; }
+	void setRect(ZoneCoord_t left, ZoneCoord_t right, ZoneCoord_t top, ZoneCoord_t bottom)  { m_Left = left; m_Right = right; m_Top = top; m_Bottom = bottom; }
 
 private:
 	Damage_t 	m_Damage;
@@ -77,7 +77,7 @@ public:
     virtual string getEffectClassName()  { return "EffectContinualBloodyWall"; }
 
 public:
-    virtual void load(Creature* pCreature) throw(Error) {}
+    virtual void load(Creature* pCreature)  {}
     virtual void load(Zone* pZone);
 };
 

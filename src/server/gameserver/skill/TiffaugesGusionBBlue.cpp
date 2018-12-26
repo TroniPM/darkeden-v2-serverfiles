@@ -10,7 +10,7 @@
 #include "RankBonus.h"
 	
 void TiffaugesGusionBBlue::execute(Monster* pMonster, Creature* pEnemy)
-	throw(Error)
+	
 {
 
 	__BEGIN_TRY

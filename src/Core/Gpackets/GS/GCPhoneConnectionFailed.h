@@ -29,10 +29,10 @@ class GCPhoneConnectionFailed : public Packet {
 public :
 	
 	// constructor
-	GCPhoneConnectionFailed() throw();
+	GCPhoneConnectionFailed() ;
 	
 	// destructor
-	~GCPhoneConnectionFailed() throw();
+	~GCPhoneConnectionFailed() ;
 
 	
 public :

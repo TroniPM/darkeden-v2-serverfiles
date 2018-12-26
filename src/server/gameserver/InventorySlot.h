@@ -22,7 +22,7 @@ public:
 
 public:
 	Item* getItem() throw() { return m_pItem; }
-	void addItem(Item* pItem) throw();
+	void addItem(Item* pItem) ;
 	void deleteItem();
 
 private: 

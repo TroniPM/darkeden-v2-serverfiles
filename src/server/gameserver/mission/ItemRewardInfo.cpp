@@ -37,7 +37,7 @@ ItemRewardInfo::~ItemRewardInfo()
 }
 
 QuestMessage ItemRewardInfo::canGiveReward( PlayerCreature* pPC ) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -56,7 +56,7 @@ QuestMessage ItemRewardInfo::canGiveReward( PlayerCreature* pPC ) const
 }
 
 QuestMessage ItemRewardInfo::giveReward( PlayerCreature *pPC ) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -142,7 +142,7 @@ QuestMessage ItemRewardInfo::giveReward( PlayerCreature *pPC ) const
 }
 
 /*void ItemRewardInfo::loadRewardClass( RewardClass& rClass )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

@@ -106,8 +106,8 @@ class Item;
 class GCGoodsList : public Packet 
 {
 public:
-	GCGoodsList() throw();
-	virtual ~GCGoodsList() throw();
+	GCGoodsList() ;
+	virtual ~GCGoodsList() ;
 
 	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;

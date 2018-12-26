@@ -21,8 +21,8 @@
 class ActionRegenEventShop : public Action 
 {
 public:
-	ActionRegenEventShop() throw();
-	virtual ~ActionRegenEventShop() throw();
+	ActionRegenEventShop() ;
+	virtual ~ActionRegenEventShop() ;
 	
 public:
 	virtual ActionType_t getActionType()  { return ACTION_REGEN_EVENT_SHOP; }

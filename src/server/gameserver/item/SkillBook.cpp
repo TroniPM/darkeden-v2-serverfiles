@@ -46,7 +46,7 @@ SkillBook::SkillBook(ItemType_t itemType, const list<OptionType_t>& optionType, 
 }
 
 void SkillBook::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -91,7 +91,7 @@ void SkillBook::create(const string & ownerID, Storage storage, StorageID_t stor
 // save item
 //--------------------------------------------------------------------------------
 void SkillBook::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -112,7 +112,7 @@ void SkillBook::tinysave(const char* field) const
 }
 
 void SkillBook::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -148,7 +148,7 @@ string SkillBook::toString() const
 }
 
 /*VolumeWidth_t SkillBook::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -158,7 +158,7 @@ string SkillBook::toString() const
 }
 	
 VolumeHeight_t SkillBook::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -168,7 +168,7 @@ VolumeHeight_t SkillBook::getVolumeHeight() const
 }
 	
 Weight_t SkillBook::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -199,7 +199,7 @@ string SkillBookInfo::toString() const
 }
 
 void SkillBookInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -256,7 +256,7 @@ void SkillBookInfoManager::load()
 //////////////////////////////////////////////////////////////////////////////
 
 void SkillBookLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -413,7 +413,7 @@ void SkillBookLoader::load(Creature* pCreature)
 }
 
 void SkillBookLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -477,7 +477,7 @@ void SkillBookLoader::load(Zone* pZone)
 }
 
 void SkillBookLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

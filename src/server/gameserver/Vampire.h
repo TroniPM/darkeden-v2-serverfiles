@@ -104,7 +104,7 @@ public:
 // 생성자/소멸자
 ////////////////////////////////////////////////////
 public:
-	Vampire() throw();
+	Vampire() ;
 	virtual ~Vampire();
 
 ////////////////////////////////////////////////////
@@ -117,8 +117,8 @@ public:
 	virtual void registerObject();
 	virtual void registerInitObject();
 
-	virtual bool load() throw (InvalidProtocolException, Error);
-	void loadItem( bool checkTimeLimit = false ) throw (InvalidProtocolException, Error);
+	virtual bool load() ;
+	void loadItem( bool checkTimeLimit = false ) ;
 
 	virtual void save() ;
 	virtual void tinysave(const string & field) ;
@@ -127,7 +127,7 @@ public:
 	void saveGears(void) ;
 	void saveExps(void) ;
 
-	virtual void act(const Timeval& currentTime) throw(Error) {}
+	virtual void act(const Timeval& currentTime)  {}
 
 	virtual string toString() ;
 
@@ -206,7 +206,7 @@ public:
 
 	Alignment_t getAlignment()  { return m_Alignment; }
 	void setAlignment(Alignment_t Alignment) throw() { m_Alignment = Alignment; }
-	void saveAlignment(Alignment_t alignment) throw();
+	void saveAlignment(Alignment_t alignment) ;
 
 	Attr_t getSTR(AttrType attrType = ATTR_CURRENT)  { return m_STR[attrType]; }
 	void setSTR(Attr_t attr, AttrType attrType = ATTR_CURRENT) throw() { m_STR[attrType] = attr; }
@@ -271,10 +271,10 @@ public:
 // 스킬 관련 함수
 ////////////////////////////////////////////////////
 public:
-	void addSkill(SkillType_t SkillType) throw();
-    void addSkill(VampireSkillSlot* pSkillSlot) throw();
-	void removeCastleSkill(SkillType_t SkillType) throw();
-	void removeAllCastleSkill() throw();
+	void addSkill(SkillType_t SkillType) ;
+    void addSkill(VampireSkillSlot* pSkillSlot) ;
+	void removeCastleSkill(SkillType_t SkillType) ;
+	void removeAllCastleSkill() ;
 	VampireSkillSlot* hasSkill(SkillType_t SkillType)  { return getSkill(SkillType); }
 	VampireSkillSlot* getSkill(SkillType_t SkillType) ;
 
@@ -291,9 +291,9 @@ public:
 	void  deleteWearItem(WearPart Part) throw() { m_pWearItem[Part] = NULL; }
 	Item* getWearItem(WearPart Part) throw() { return m_pWearItem[Part]; }
 
-	void wearItem(WearPart Part) throw();
-	void wearItem(WearPart Part, Item* pItem) throw();
-	void takeOffItem(WearPart Part, bool bAddOnMouse, bool bSendModifyInfo) throw();
+	void wearItem(WearPart Part) ;
+	void wearItem(WearPart Part, Item* pItem) ;
+	void takeOffItem(WearPart Part, bool bAddOnMouse, bool bSendModifyInfo) ;
 	//WearPart getWearPart(Item::ItemClass IClass) const;
 	//bool    changeShape(Item* pItem, Color_t color);
 	bool    addShape(Item::ItemClass IClass, ItemType_t IType, Color_t color);
@@ -301,7 +301,7 @@ public:
 	Color_t getItemShapeColor(Item* pItem, OptionInfo* pOptionInfo=NULL) const;
 
 
-	void destroyGears() throw();
+	void destroyGears() ;
 
 	bool isRealWearing(WearPart Part) ;
 	bool isRealWearing(Item* pItem) ;
@@ -314,19 +314,19 @@ public:
 // 아이템 착/탈시 능력치 수정 관련 함수
 ////////////////////////////////////////////////////
 public:
-	void initAllStat(int numPartyMember=-1) throw();
-	void initCastleSkill() throw();
+	void initAllStat(int numPartyMember=-1) ;
+	void initCastleSkill() ;
 	void sendModifyInfo(const VAMPIRE_RECORD& previous) ;
 	void addModifyInfo(const VAMPIRE_RECORD& previous, ModifyInfo& pkt) ;
 	void initAllStatAndSend();
 	
 private:
-	void computeStatOffset(void) throw();
-	void computeItemStat(Item* pItem) throw();
-	void computeOptionStat(Item* pItem) throw();
-	void computeSetItemStat(Item* pItem) throw();
-	void computePetItemOptionTypeStat(PetInfo* pPetInfo) throw();
-	void computeOptionStat(OptionType_t optionType) throw();
+	void computeStatOffset(void) ;
+	void computeItemStat(Item* pItem) ;
+	void computeOptionStat(Item* pItem) ;
+	void computeSetItemStat(Item* pItem) ;
+	void computePetItemOptionTypeStat(PetInfo* pPetInfo) ;
+	void computeOptionStat(OptionType_t optionType) ;
 	void computeOptionClassStat(OptionClass OClass, int PlusPoint);
 
 
@@ -355,13 +355,13 @@ public:
 ////////////////////////////////////////////////////
 public:
 
-	PCVampireInfo2* getVampireInfo2() throw();
+	PCVampireInfo2* getVampireInfo2() ;
 	PCVampireInfo3  getVampireInfo3() ;
 	InventoryInfo*  getInventoryInfo() ;
 	InventoryInfo*  getInventoryInfo2() ;
 	GearInfo*       getGearInfo() ;
 	ExtraInfo*      getExtraInfo() ;
-	void sendVampireSkillInfo() throw();
+	void sendVampireSkillInfo() ;
 
 
 ////////////////////////////////////////////////////
@@ -370,16 +370,16 @@ public:
 public:
 
 	virtual Gold_t getGold()  { return m_Gold; }
-	virtual void setGold(Gold_t gold) throw();
-	virtual void setGoldEx(Gold_t gold) throw();
-	virtual void   increaseGoldEx(Gold_t gold) throw();
-    virtual void   decreaseGoldEx(Gold_t gold) throw();
+	virtual void setGold(Gold_t gold) ;
+	virtual void setGoldEx(Gold_t gold) ;
+	virtual void   increaseGoldEx(Gold_t gold) ;
+    virtual void   decreaseGoldEx(Gold_t gold) ;
 	virtual bool checkGoldIntegrity();
 	virtual bool checkStashGoldIntegrity();
 
 	void setInMagics(const string & blob) throw() {}
 
-	void heartbeat(const Timeval& currentTime) throw();
+	void heartbeat(const Timeval& currentTime) ;
 
 	void getVampireRecord(VAMPIRE_RECORD& record) ;
 
@@ -400,11 +400,11 @@ public:
 
 	virtual ZoneID_t getResurrectZoneID(void)  { return m_ResurrectZoneID; }
 	virtual void setResurrectZoneID(ZoneID_t id) throw() { m_ResurrectZoneID = id; }
-	virtual void setResurrectZoneIDEx(ZoneID_t id) throw();
+	virtual void setResurrectZoneIDEx(ZoneID_t id) ;
 
 	Silver_t getSilverDamage()  { return m_SilverDamage; }
 	void setSilverDamage(Silver_t damage) throw() { m_SilverDamage = damage; }
-	void saveSilverDamage(Silver_t damage) throw();
+	void saveSilverDamage(Silver_t damage) ;
 
 	virtual Steal_t getHPStealAmount(void) const { return m_HPStealAmount; }
 	virtual void setHPStealAmount(Steal_t steal) { m_HPStealAmount = steal; }
@@ -446,7 +446,7 @@ public:
 //	void increaseVampExp(Exp_t Point);
 //	void increaseRankExp(RankExp_t Point);
 
-	void saveInitialRank(void) throw();
+	void saveInitialRank(void) ;
 
 public :
 	 // by sigi. 2002.11.19

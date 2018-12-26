@@ -49,7 +49,7 @@ NecklaceZap::NecklaceZap(ItemType_t itemType, const list<OptionType_t>& optionTy
 // create item
 //--------------------------------------------------------------------------------
 void NecklaceZap::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -101,7 +101,7 @@ void NecklaceZap::create(const string & ownerID, Storage storage, StorageID_t st
 // save item
 //--------------------------------------------------------------------------------
 void NecklaceZap::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -125,7 +125,7 @@ void NecklaceZap::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void NecklaceZap::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -188,7 +188,7 @@ string NecklaceZap::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t NecklaceZap::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -202,7 +202,7 @@ VolumeWidth_t NecklaceZap::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t NecklaceZap::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -216,7 +216,7 @@ VolumeHeight_t NecklaceZap::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t NecklaceZap::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -230,7 +230,7 @@ Weight_t NecklaceZap::getWeight() const
 // get/set armor's Defense Bonus
 //--------------------------------------------------------------------------------
 Defense_t NecklaceZap::getDefenseBonus() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -239,7 +239,7 @@ Defense_t NecklaceZap::getDefenseBonus() const
 	__END_CATCH
 }
 Protection_t NecklaceZap::getProtectionBonus() const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -275,7 +275,7 @@ string NecklaceZapInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void NecklaceZapInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -331,7 +331,7 @@ void NecklaceZapInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void NecklaceZapLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -547,7 +547,7 @@ void NecklaceZapLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void NecklaceZapLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -620,7 +620,7 @@ void NecklaceZapLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void NecklaceZapLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

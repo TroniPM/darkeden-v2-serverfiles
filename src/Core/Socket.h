@@ -28,12 +28,12 @@ class Socket
 public :
 	
 	// constructor
-	Socket ();// throw ();
-	Socket (const string & host, uint port);// throw ();
-	Socket (SocketImpl* impl);// throw ();
+	Socket ();
+	Socket (const string & host, uint port);
+	Socket (SocketImpl* impl);
 	
 	// destructor
-	virtual ~Socket ();// throw (Error);
+	virtual ~Socket ();
 
 	
 //////////////////////////////////////////////////
@@ -42,20 +42,20 @@ public :
 public :
 	
 	// close connection
-	void close ();// throw (Error);
+	void close ();
 	
 	// try connect to remote host
-	void connect ();// throw (ConnectException, Error);
-	void connect (const string & host, uint port);// throw (ConnectException, Error);
+	void connect ();
+	void connect (const string & host, uint port);
 
 	// close previous connection and connect to another socket
-	void reconnect (const string & host, uint port);// throw (ConnectException, Error);
+	void reconnect (const string & host, uint port);
 	
 	// send data to peer
-	uint send (const void* buf, uint len, uint flags = 0);// throw (IOException, Error);
+	uint send (const void* buf, uint len, uint flags = 0);
 	
 	// receive data from peer
-	uint receive (void* buf, uint len, uint flags = 0);// throw (IOException, ConnectException, Error);
+	uint receive (void* buf, uint len, uint flags = 0);
 	
 	uint available ();// ;
 
@@ -66,37 +66,37 @@ public :
 public :
  
     // get/set socket's linger status
-    uint getLinger ();// ;
-    void setLinger (uint lingertime);// throw (Error);
+    uint getLinger ();
+    void setLinger (uint lingertime);
 
 	// get is Error
-    uint getSockError();// ;
+    uint getSockError();
  
     // get/set socket's nonblocking status
-    bool isNonBlocking ();// ;
-    void setNonBlocking (bool on = true);// throw (Error);
+    bool isNonBlocking ();
+    void setNonBlocking (bool on = true);
  
     // get/set receive buffer size
-    uint getReceiveBufferSize ();// ;
-    void setReceiveBufferSize (uint size);// throw (Error);
+    uint getReceiveBufferSize ();
+    void setReceiveBufferSize (uint size);
  
     // get/set send buffer size
-    uint getSendBufferSize ();// ;
-    void setSendBufferSize (uint size);// throw (Error);
+    uint getSendBufferSize ();
+    void setSendBufferSize (uint size);
  
 	// get host & port
-	string getHost ();// ;
-	uint getPort ();// ;
-	IP_t getHostIP ();// ;
+	string getHost ();
+	uint getPort ();
+	IP_t getHostIP ();
 
 	// check if socket is valid
-	bool isValid ();// ;
+	bool isValid ();
 
 	// get socket descriptor
-	SOCKET getSOCKET ();// ;
+	SOCKET getSOCKET ();
 
 	// return debug string (FD, HOST, PORT)
-	string toString ();// ;
+	string toString ();
 	
 	//add by viva
 	string getLocalHost();//  { return m_pSocketImpl->getLocalHost(); }

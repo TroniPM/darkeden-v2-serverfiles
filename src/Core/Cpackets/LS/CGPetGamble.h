@@ -18,8 +18,8 @@
 class CGPetGamble : public Packet 
 {
 public:
-	CGPetGamble() throw();
-	~CGPetGamble() throw();
+	CGPetGamble() ;
+	~CGPetGamble() ;
 
 public:
     void read(SocketInputStream & iStream) ;

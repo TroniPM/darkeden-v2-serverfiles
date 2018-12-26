@@ -52,7 +52,7 @@ bool ConditionCanEnterGDRLair::isSatisfied (Creature * pCreature1 , Creature * p
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionCanEnterGDRLair::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 }
 

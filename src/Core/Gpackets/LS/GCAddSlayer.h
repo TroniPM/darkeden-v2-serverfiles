@@ -31,7 +31,7 @@ class GCAddSlayer : public Packet
 public:
 	GCAddSlayer();
 	GCAddSlayer(const PCSlayerInfo3 & slayerInfo);
-	virtual ~GCAddSlayer() throw();
+	virtual ~GCAddSlayer() ;
 
 public:
     void read(SocketInputStream & iStream) ;

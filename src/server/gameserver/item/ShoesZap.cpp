@@ -49,7 +49,7 @@ ShoesZap::ShoesZap(ItemType_t itemType, const list<OptionType_t>& optionType)
 // create item
 //--------------------------------------------------------------------------------
 void ShoesZap::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -101,7 +101,7 @@ void ShoesZap::create(const string & ownerID, Storage storage, StorageID_t stora
 // save item
 //--------------------------------------------------------------------------------
 void ShoesZap::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -125,7 +125,7 @@ void ShoesZap::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void ShoesZap::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -188,7 +188,7 @@ string ShoesZap::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t ShoesZap::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -202,7 +202,7 @@ VolumeWidth_t ShoesZap::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t ShoesZap::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -216,7 +216,7 @@ VolumeHeight_t ShoesZap::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t ShoesZap::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -230,7 +230,7 @@ Weight_t ShoesZap::getWeight() const
 // get/set armor's Defense Bonus
 //--------------------------------------------------------------------------------
 Defense_t ShoesZap::getDefenseBonus() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -239,7 +239,7 @@ Defense_t ShoesZap::getDefenseBonus() const
 	__END_CATCH
 }
 Protection_t ShoesZap::getProtectionBonus() const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -275,7 +275,7 @@ string ShoesZapInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void ShoesZapInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -331,7 +331,7 @@ void ShoesZapInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void ShoesZapLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -546,7 +546,7 @@ void ShoesZapLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void ShoesZapLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -619,7 +619,7 @@ void ShoesZapLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void ShoesZapLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

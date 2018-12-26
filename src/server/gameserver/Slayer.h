@@ -150,7 +150,7 @@ public:
 // 생성자/소멸자
 //////////////////////////////////////////////////////////////
 public:
-	Slayer() throw();
+	Slayer() ;
 	virtual ~Slayer();
 	
 //////////////////////////////////////////////////////////////
@@ -163,8 +163,8 @@ public:
 	virtual void registerObject();
 	virtual void registerInitObject();
 
-	virtual bool load() throw (InvalidProtocolException, Error);
-	void loadItem( bool checkTimeLimit = false ) throw (InvalidProtocolException, Error);
+	virtual bool load() ;
+	void loadItem( bool checkTimeLimit = false ) ;
 
 	virtual void save() ;
 	virtual void tinysave(const string & field) ;
@@ -173,7 +173,7 @@ public:
 	void saveGears(void) ;
 	void saveExps(void) ;
 
-	virtual void act(const Timeval& currentTime) throw(Error) {}
+	virtual void act(const Timeval& currentTime)  {}
 
 	virtual string toString() ;
 
@@ -245,12 +245,12 @@ public:
 	PhoneNumber_t getPhoneNumber()  { return m_PhoneNumber; }
 	void setPhoneNumber(PhoneNumber_t PhoneNumber) throw() { m_PhoneNumber = PhoneNumber; }
 	
-	PhoneNumber_t getPhoneSlotNumber(SlotID_t SlotID) throw();
-	void setPhoneSlotNumber(SlotID_t SlotID, PhoneNumber_t PhoneNumber) throw();
-	SlotID_t getSlotWithPhoneNumber(PhoneNumber_t PhoneNumber) throw();
-	SlotID_t findEmptyPhoneSlot() throw();
-	bool isEmptyPhoneSlot() throw();
-	bool isSlotByPhoneNumber(PhoneNumber_t PhoneNumber) throw();
+	PhoneNumber_t getPhoneSlotNumber(SlotID_t SlotID) ;
+	void setPhoneSlotNumber(SlotID_t SlotID, PhoneNumber_t PhoneNumber) ;
+	SlotID_t getSlotWithPhoneNumber(PhoneNumber_t PhoneNumber) ;
+	SlotID_t findEmptyPhoneSlot() ;
+	bool isEmptyPhoneSlot() ;
+	bool isSlotByPhoneNumber(PhoneNumber_t PhoneNumber) ;
 
 //////////////////////////////////////////////////////////////
 // 능력치 관련 함수(STR, DEX, INT)
@@ -263,7 +263,7 @@ public:
 	// 성향
 	Alignment_t getAlignment()  { return m_Alignment; }
 	void setAlignment(Alignment_t Alignment) throw() { m_Alignment = Alignment; }
-	void saveAlignment(Alignment_t alignment) throw();
+	void saveAlignment(Alignment_t alignment) ;
 
 	Attr_t  getSTR(AttrType attrType = ATTR_CURRENT)  { return m_STR[attrType]; }
 	void    setSTR(Attr_t attr, AttrType attrType = ATTR_CURRENT) throw() { m_STR[attrType] = attr; }
@@ -334,10 +334,10 @@ public:
 
 	int getQuestLevel() const { return getHighestSkillDomainLevel(); }
 
-	void addSkill(SkillSlot* pSkillSlot) throw();
-	void addSkill(SkillType_t SkillType) throw();
-	void removeCastleSkill(SkillType_t SkillType) throw();
-	void removeAllCastleSkill() throw();
+	void addSkill(SkillSlot* pSkillSlot) ;
+	void addSkill(SkillType_t SkillType) ;
+	void removeCastleSkill(SkillType_t SkillType) ;
+	void removeAllCastleSkill() ;
 	SkillSlot* hasSkill(SkillType_t SkillType)  { return getSkill(SkillType); }
 	SkillSlot* getSkill(SkillType_t SkillType) ;
 
@@ -348,7 +348,7 @@ public:
 	void setRifleBonusExp(Exp_t RifleBonusExp) throw() { m_RifleBonusExp = RifleBonusExp; }
 	
 	// 지정된 domain에서 가장 높은 level의 기술의 타입을 되돌린다.
-	//SkillType_t getMaxLevelSkillType(SkillDomainType_t domain) throw();
+	//SkillType_t getMaxLevelSkillType(SkillDomainType_t domain) ;
 //	void setHotKey(BYTE pos, SkillType_t SkillType) throw() { m_HotKey[pos] = SkillType; }
 //	SkillType_t getHotKey(BYTE pos)  { return m_HotKey[pos]; }
 
@@ -359,7 +359,7 @@ public:
 public:
 	bool  isWear(WearPart Part) throw() { return m_pWearItem[Part] != NULL ? true : false; }
 	void  addWearItem(WearPart Part, Item* pItem) throw() { Assert(m_pWearItem[Part] = NULL); m_pWearItem[Part] = pItem;}
-	void  deleteWearItem(WearPart Part) throw(Error) { Assert(m_pWearItem[Part] != NULL); m_pWearItem[Part] = NULL; }
+	void  deleteWearItem(WearPart Part)  { Assert(m_pWearItem[Part] != NULL); m_pWearItem[Part] = NULL; }
 	Item* getWearItem(WearPart Part) throw() { return m_pWearItem[Part]; }
 	void  wearItem(WearPart Part);
 	void  wearItem(WearPart Part, Item* pItem);
@@ -371,7 +371,7 @@ public:
 	Color_t getItemShapeColor(Item* pItem, OptionInfo* pOptionInfo=NULL) const;
 
 
-	void  destroyGears() throw();
+	void  destroyGears() ;
 
 	bool  isRealWearing(WearPart part) ;
 	bool  isRealWearing(Item* pItem) ;
@@ -383,19 +383,19 @@ public:
 // 아이템 착/탈 시 능력치 수정 관련 함수
 //////////////////////////////////////////////////////////////
 public:
-	void initAllStat(int numPartyMember=-1) throw();
-	void initCastleSkill() throw();
+	void initAllStat(int numPartyMember=-1) ;
+	void initCastleSkill() ;
 	void addModifyInfo(const SLAYER_RECORD& previous, ModifyInfo& pkt) ;
 	void sendModifyInfo(const SLAYER_RECORD& previous) ;
 	void initAllStatAndSend();
 
 private:
-	void computeStatOffset(void) throw();
-	void computeItemStat(Item* pItem) throw();
-	void computeSetItemStat(Item* pItem) throw();
-	void computePetItemOptionTypeStat(PetInfo* pPetInfo) throw();
-	void computeOptionStat(Item* pItem) throw();
-	void computeOptionStat(OptionType_t optionType) throw();
+	void computeStatOffset(void) ;
+	void computeItemStat(Item* pItem) ;
+	void computeSetItemStat(Item* pItem) ;
+	void computePetItemOptionTypeStat(PetInfo* pPetInfo) ;
+	void computeOptionStat(Item* pItem) ;
+	void computeOptionStat(OptionType_t optionType) ;
 	void computeOptionClassStat( OptionClass OClass, int PlusPoint );
 
 //////////////////////////////////////////////////////////////
@@ -423,7 +423,7 @@ public:
 //////////////////////////////////////////////////////////////
 public:
 	Motorcycle* getMotorcycle()  { return m_pMotorcycle; }
-	void setMotorcycle(Motorcycle* pMotorcycle) throw();
+	void setMotorcycle(Motorcycle* pMotorcycle) ;
 	void getOffMotorcycle();
 
 	RideMotorcycleInfo* getRideMotorcycleInfo() ;
@@ -440,7 +440,7 @@ public:
 	InventoryInfo* getInventoryInfo() ;
 	InventoryInfo* getInventoryInfo2() ;
 	ExtraInfo*     getExtraInfo() ;
-	void sendSlayerSkillInfo() throw();
+	void sendSlayerSkillInfo() ;
 
 	// get/set EffectInfo
     EffectInfo* getEffectInfo() ;
@@ -457,10 +457,10 @@ public:
 	virtual void   setKillPoint(Fame_t Kill) throw() { m_KillPoint = Kill; }
 
 	virtual Gold_t getGold()  { return m_Gold; }
-	virtual void   setGold(Gold_t gold) throw();
-	virtual void   setGoldEx(Gold_t gold) throw();
-	virtual void   increaseGoldEx(Gold_t gold) throw();
-	virtual void   decreaseGoldEx(Gold_t gold) throw();
+	virtual void   setGold(Gold_t gold) ;
+	virtual void   setGoldEx(Gold_t gold) ;
+	virtual void   increaseGoldEx(Gold_t gold) ;
+	virtual void   decreaseGoldEx(Gold_t gold) ;
 	virtual bool checkGoldIntegrity();
 	virtual bool checkStashGoldIntegrity();
 
@@ -475,13 +475,13 @@ public:
 
 	void setInMagics(const string & blob) throw() {}
 
-	void heartbeat(const Timeval& currentTime) throw();
+	void heartbeat(const Timeval& currentTime) ;
 
 	void getSlayerRecord(SLAYER_RECORD& record) ;
 
 	virtual ZoneID_t getResurrectZoneID(void)  { return m_ResurrectZoneID; }
 	virtual void setResurrectZoneID(ZoneID_t id) throw() { m_ResurrectZoneID = id; }
-	virtual void setResurrectZoneIDEx(ZoneID_t id) throw();
+	virtual void setResurrectZoneIDEx(ZoneID_t id) ;
 
 	virtual Steal_t getHPStealAmount(void) const { return m_HPStealAmount; }
 	virtual void setHPStealAmount(Steal_t steal) { m_HPStealAmount = steal; }
@@ -508,7 +508,7 @@ public:
 	virtual void setCriticalRatio(int ratio) { m_CriticalRatio[ATTR_CURRENT] = ratio; }
 
 	uint getSlayerLevel(void) ;
-	void saveInitialRank(void) throw();
+	void saveInitialRank(void) ;
 
 	virtual IP_t getIP(void) const;
 

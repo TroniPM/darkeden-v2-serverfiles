@@ -33,7 +33,7 @@
 //
 //////////////////////////////////////////////////////////////////////
 ClientManager::ClientManager () 
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -52,7 +52,7 @@ ClientManager::ClientManager ()
 //
 //////////////////////////////////////////////////////////////////////
 ClientManager::~ClientManager () 
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -72,7 +72,7 @@ ClientManager::~ClientManager ()
 //
 //////////////////////////////////////////////////////////////////////
 void ClientManager::init ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -88,7 +88,7 @@ void ClientManager::init ()
 //
 //////////////////////////////////////////////////////////////////////
 void ClientManager::start ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -104,7 +104,7 @@ void ClientManager::start ()
 //
 //////////////////////////////////////////////////////////////////////
 void ClientManager::stop ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -118,7 +118,7 @@ void ClientManager::stop ()
 // 클라이언트 매니저의 메인 루프이다.
 //////////////////////////////////////////////////////////////////////
 void ClientManager::run ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 

@@ -29,10 +29,10 @@ class GCRing : public Packet {
 public :
 	
 	// constructor
-	GCRing() throw();
+	GCRing() ;
 	
 	// destructor
-	~GCRing() throw();
+	~GCRing() ;
 
 	
 public :

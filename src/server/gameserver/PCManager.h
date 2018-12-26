@@ -18,8 +18,8 @@ const BYTE defaultRaceValue = 0xFF;
 class PCManager : public CreatureManager 
 {
 public:
-	PCManager() throw();
-	virtual ~PCManager() throw();
+	PCManager() ;
+	virtual ~PCManager() ;
 	
 public:
 

@@ -118,8 +118,8 @@ enum BodySize
 class MonsterInfo 
 {
 public:
-	MonsterInfo() throw();
-	~MonsterInfo() throw();
+	MonsterInfo() ;
+	~MonsterInfo() ;
 
 public:
 	MonsterType_t getMonsterType() const { return m_MonsterType; }
@@ -204,22 +204,22 @@ public:
 	int getEnhancePhyDamage(void) const { return m_EnhancePhyDamage; }
 	int getEnhanceMagicProtection(void) const { return m_EnhanceMagicProtection; }
 	int getEnhancePhyProtection(void) const { return m_EnhancePhyProtection; }
-	void parseEnhanceAttr(const string& enhance) throw();
+	void parseEnhanceAttr(const string& enhance) ;
 
-	void parseSlayerTreasureString(const string& text) throw();
+	void parseSlayerTreasureString(const string& text) ;
 	TreasureList* getSlayerTreasureList(void) const { return m_pSlayerTreasureList; }
 	TreasureList* getSlayerTreasureList(void) { return m_pSlayerTreasureList; }
-	void setSlayerTreasureList(TreasureList* pTreasureList) throw();
+	void setSlayerTreasureList(TreasureList* pTreasureList) ;
 
-	void parseVampireTreasureString(const string& text) throw();
+	void parseVampireTreasureString(const string& text) ;
 	TreasureList* getVampireTreasureList(void) const { return m_pVampireTreasureList; }
 	TreasureList* getVampireTreasureList(void) { return m_pVampireTreasureList; }
-	void setVampireTreasureList(TreasureList* pTreasureList) throw();
+	void setVampireTreasureList(TreasureList* pTreasureList) ;
 
-	void parseOustersTreasureString(const string& text) throw();
+	void parseOustersTreasureString(const string& text) ;
 	TreasureList* getOustersTreasureList(void) const { return m_pOustersTreasureList; }
 	TreasureList* getOustersTreasureList(void) { return m_pOustersTreasureList; }
-	void setOustersTreasureList(TreasureList* pTreasureList) throw();
+	void setOustersTreasureList(TreasureList* pTreasureList) ;
 
 	RegenType selectRegenType() const;
 	int getRegenType(RegenType rt) const				{ return m_RegenType[rt]; }
@@ -324,8 +324,8 @@ private:
 class MonsterInfoManager 
 {
 public:
-	MonsterInfoManager() throw();
-	~MonsterInfoManager() throw();
+	MonsterInfoManager() ;
+	~MonsterInfoManager() ;
 
 public:
 	// initialize

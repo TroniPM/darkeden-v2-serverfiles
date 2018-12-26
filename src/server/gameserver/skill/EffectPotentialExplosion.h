@@ -21,22 +21,22 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_POTENTIAL_EXPLOSION; }
 
-	void affect() throw(Error) {}
+	void affect()  {}
 	void affect(Creature* pCreature);
 	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject);
 
 	void unaffect(Creature* pCreature);
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject);
 	void unaffect(); 
-	void unaffect(Item* pItem) throw(Error) {}
+	void unaffect(Item* pItem)  {}
 
 	string toString() ;
 
 public:
 	int getDiffSTR(void) throw() { return m_diffSTR;}
 	int getDiffDEX(void) throw() { return m_diffDEX;}
-	void setDiffSTR(int diffSTR) throw(Error) { m_diffSTR = diffSTR;}
-	void setDiffDEX(int diffDEX) throw(Error) { m_diffDEX = diffDEX;}
+	void setDiffSTR(int diffSTR)  { m_diffSTR = diffSTR;}
+	void setDiffDEX(int diffDEX)  { m_diffDEX = diffDEX;}
 
 private :
 	int m_diffSTR;

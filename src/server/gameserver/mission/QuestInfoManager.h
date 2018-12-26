@@ -24,7 +24,7 @@ public:
 
 public:
 	void		clear();
-	virtual void		load( const string& name = "" ) throw(Error) = 0;
+	virtual void		load( const string& name = "" )  = 0;
 	void		addQuestInfo(QuestInfo* pQI);
 
 	QuestMessage	canExecuteQuest( QuestID_t qID, PlayerCreature* pPC ) ;

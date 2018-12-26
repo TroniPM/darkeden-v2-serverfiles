@@ -62,7 +62,7 @@ public:
 	virtual string getEffectClassName()  { return "EffectGroundAttack"; }
 
 public:
-	virtual void load(Creature* pCreature) throw(Error) {}
+	virtual void load(Creature* pCreature)  {}
 };
 
 extern EffectGroundAttackLoader* g_pEffectGroundAttackLoader;

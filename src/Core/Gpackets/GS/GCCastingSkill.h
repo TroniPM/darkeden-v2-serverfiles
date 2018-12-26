@@ -27,10 +27,10 @@ class GCCastingSkill : public Packet {
 public :
 	
 	// constructor
-	GCCastingSkill() throw();
+	GCCastingSkill() ;
 	
 	// destructor
-	~GCCastingSkill() throw();
+	~GCCastingSkill() ;
 
 	
 public :

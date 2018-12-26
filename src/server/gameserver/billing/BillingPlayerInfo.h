@@ -47,7 +47,7 @@ public :
 
 	bool			isBillingPlayAvaiable() const	{ return !m_BillingUserStatus.empty(); }
 
-	virtual bool	sendBillingLogin() throw (Error) = 0;
+	virtual bool	sendBillingLogin()  = 0;
 	int				getBillingLoginRequestCount() const	{ return m_BillingLoginRequestCount; }
 
 	void			setBillingLoginVerified(bool bVerified=true)	{ m_BillingLoginVerified = bVerified; }

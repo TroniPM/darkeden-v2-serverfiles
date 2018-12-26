@@ -69,8 +69,8 @@ class Item;
 class GCStashList : public Packet 
 {
 public:
-	GCStashList() throw();
-	virtual ~GCStashList() throw();
+	GCStashList() ;
+	virtual ~GCStashList() ;
 
 	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
@@ -84,11 +84,11 @@ public:
 	bool isExist(BYTE rack, BYTE index) ;
 
 	STASHITEM getStashItem(BYTE rack, BYTE index) ;
-	void setStashItem(BYTE rack, BYTE index, Item* pItem) throw();
+	void setStashItem(BYTE rack, BYTE index, Item* pItem) ;
 
-	list<SubItemInfo*>& getSubItems(BYTE rack, BYTE index) throw();
+	list<SubItemInfo*>& getSubItems(BYTE rack, BYTE index) ;
 
-	BYTE getSubItemCount(BYTE rack, BYTE index) throw();
+	BYTE getSubItemCount(BYTE rack, BYTE index) ;
 
 	Gold_t getStashGold()  { return m_StashGold; }
 	void setStashGold(Gold_t gold) throw() { m_StashGold = gold; }

@@ -28,10 +28,10 @@ class GCAttackArmsOK5 : public Packet {
 public :
 	
 	// constructor
-	GCAttackArmsOK5() throw();
+	GCAttackArmsOK5() ;
 	
 	// destructor
-	~GCAttackArmsOK5() throw();
+	~GCAttackArmsOK5() ;
 
 	
 public :

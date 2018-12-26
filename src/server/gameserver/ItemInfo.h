@@ -18,8 +18,8 @@ class ItemInfo
 {
 // constructor & destructor
 public:
-	ItemInfo() throw();
-	virtual ~ItemInfo() throw();
+	ItemInfo() ;
+	virtual ~ItemInfo() ;
 
 
 // 공통 정보
@@ -76,7 +76,7 @@ public:
 	// 새로 추가
 	virtual void    setReqDomainType(SkillDomainType_t req) throw()      { m_ReqDomainType = req; }
 	virtual void    setReqSkillLearn(SkillType_t req) throw()      { m_ReqSkillLearn = req; }
-	virtual void    setReqAbility(const string& req) throw();
+	virtual void    setReqAbility(const string& req) ;
 
 	virtual string toString()  = 0;
 
@@ -130,8 +130,8 @@ public:
 	
 	// ItemType에 따른 기본 옵션
 	virtual void    setDefaultOptions(const string& options);
-	void			addDefaultOptions(OptionType_t optionType) throw();
-	void			clearDefaultOptions() throw();
+	void			addDefaultOptions(OptionType_t optionType) ;
+	void			clearDefaultOptions() ;
 	bool			hasDefaultOptions() const { return m_bDefaultOptions; }
 	const list<OptionType_t>& getDefaultOptions() const { return m_DefaultOptions; }
 

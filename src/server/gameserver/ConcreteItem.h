@@ -41,7 +41,7 @@ public:
 public:
 	// 내구도 관련
 	Durability_t	getDurability()  { return m_Durability.getValue(); }
-	void			setDurability(Durability_t durability) throw(Error) { m_Durability.setValue(durability); }
+	void			setDurability(Durability_t durability)  { m_Durability.setValue(durability); }
 	Durability_t	getMaxDurability() const {
 		if ( m_Durability.hasValue() )
 		{

@@ -29,7 +29,7 @@ bool ConditionFlagOn::isSatisfied (Creature * pCreature1 , Creature * pCreature2
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionFlagOn::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 	try
 	{

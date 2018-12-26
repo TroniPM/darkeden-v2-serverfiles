@@ -39,7 +39,7 @@ public :
 	~GameServerManager ();
 
 	//
-	void init () throw ( Error ) {}
+	void init ()  {}
 
 	// stop thread
 	void stop ();

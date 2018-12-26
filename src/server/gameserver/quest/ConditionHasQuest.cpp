@@ -54,7 +54,7 @@ bool ConditionHasQuest::isSatisfied (Creature * pCreature1 , Creature * pCreatur
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionHasQuest::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 	try
 	{

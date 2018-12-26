@@ -29,10 +29,10 @@ class GCRemoveFromGear : public Packet {
 public :
 	
 	// constructor
-	GCRemoveFromGear() throw();
+	GCRemoveFromGear() ;
 	
 	// destructor
-	~GCRemoveFromGear() throw();
+	~GCRemoveFromGear() ;
 
 	
 public :

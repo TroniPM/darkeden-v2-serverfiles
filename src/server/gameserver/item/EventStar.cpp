@@ -48,7 +48,7 @@ EventStar::EventStar(ItemType_t itemType, const list<OptionType_t>& optionType, 
 }
 
 void EventStar::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -93,7 +93,7 @@ void EventStar::create(const string & ownerID, Storage storage, StorageID_t stor
 // save item
 //--------------------------------------------------------------------------------
 void EventStar::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -114,7 +114,7 @@ void EventStar::tinysave(const char* field) const
 }
 
 void EventStar::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -167,7 +167,7 @@ string EventStar::toString() const
 }
 
 VolumeWidth_t EventStar::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -177,7 +177,7 @@ VolumeWidth_t EventStar::getVolumeWidth() const
 }
 	
 VolumeHeight_t EventStar::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -187,7 +187,7 @@ VolumeHeight_t EventStar::getVolumeHeight() const
 }
 	
 Weight_t EventStar::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -238,7 +238,7 @@ string EventStarInfo::toString() const
 }
 
 void EventStarInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -294,7 +294,7 @@ void EventStarInfoManager::load()
 //////////////////////////////////////////////////////////////////////////////
 
 void EventStarLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -468,7 +468,7 @@ void EventStarLoader::load(Creature* pCreature)
 }
 
 void EventStarLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -534,7 +534,7 @@ void EventStarLoader::load(Zone* pZone)
 }
 
 void EventStarLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

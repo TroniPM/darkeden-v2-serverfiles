@@ -24,7 +24,7 @@ class MonsterCorpse : public Corpse
 public:
 	MonsterCorpse(Monster* pMonster);
 	MonsterCorpse (MonsterType_t MType, const string& name, Dir_t dir);
-	virtual ~MonsterCorpse() throw();
+	virtual ~MonsterCorpse() ;
 
 public:
 	virtual void create(const string & ownerID, Storage storage, DWORD storageID, BYTE x, BYTE y, ItemID_t itemID=0);

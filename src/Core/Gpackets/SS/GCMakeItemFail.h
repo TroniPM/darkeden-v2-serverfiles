@@ -30,10 +30,10 @@ class GCMakeItemFail : public GCChangeInventoryItemNum, public ModifyInfo {
 public :
 	
 	// constructor
-	GCMakeItemFail() throw();
+	GCMakeItemFail() ;
 	
 	// destructor
-	~GCMakeItemFail() throw();
+	~GCMakeItemFail() ;
 
 	
 public :

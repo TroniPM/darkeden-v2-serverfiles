@@ -21,8 +21,8 @@
 class Water : public Item 
 {
 public:
-	Water() throw();
-	Water(ItemType_t itemType, const list<OptionType_t>& optionType) throw();
+	Water() ;
+	Water(ItemType_t itemType, const list<OptionType_t>& optionType) ;
 	
 public:
 	virtual void create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID=0);
@@ -32,7 +32,7 @@ public:
 
 	virtual string toString() ;
 
-	static void initItemIDRegistry(void) throw();
+	static void initItemIDRegistry(void) ;
 
 public:
 	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_WATER; }

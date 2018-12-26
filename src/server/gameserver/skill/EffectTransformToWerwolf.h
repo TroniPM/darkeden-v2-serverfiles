@@ -21,14 +21,14 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_TRANSFORM_TO_WERWOLF; }
 
-	void affect() throw(Error) {}
+	void affect()  {}
 	void affect(Creature* pCreature);
 	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject);
 
 	void unaffect(Creature* pCreature);
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject);
 	void unaffect(); 
-	void unaffect(Item* pItem) throw(Error) {}
+	void unaffect(Item* pItem)  {}
 
 	string toString() ;
 };

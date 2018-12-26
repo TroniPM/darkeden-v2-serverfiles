@@ -21,7 +21,7 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_CHARGING_POWER; }
 
-	void affect() throw(Error) {}
+	void affect()  {}
 	void affect(Creature* pCreature);
 
 	void unaffect(Creature* pCreature);
@@ -31,7 +31,7 @@ public:
 
 public:
 	int getDamageBonus() throw() { return m_DamageBonus;}
-	void setDamageBonus(ToHit_t DamageBonus) throw(Error) { m_DamageBonus = DamageBonus;}
+	void setDamageBonus(ToHit_t DamageBonus)  { m_DamageBonus = DamageBonus;}
 
 private:
 	Damage_t m_DamageBonus;

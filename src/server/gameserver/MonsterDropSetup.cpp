@@ -81,7 +81,7 @@ void MonsterDropSetupManager::clear()
 }
 
 void MonsterDropSetupManager::load()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

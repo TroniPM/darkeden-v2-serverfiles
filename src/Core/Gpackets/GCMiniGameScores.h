@@ -32,8 +32,8 @@ enum GameType
 class GCMiniGameScores : public Packet 
 {
 public:
-	GCMiniGameScores() throw();
-	~GCMiniGameScores() throw();
+	GCMiniGameScores() ;
+	~GCMiniGameScores() ;
 	
 public:
     void read(SocketInputStream & iStream) ;

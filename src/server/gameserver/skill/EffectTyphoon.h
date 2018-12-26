@@ -19,7 +19,7 @@ public:
 	EffectTyphoon(Creature* pCreature);
 
 public:
-	void affect() throw(Error) {}
+	void affect()  {}
 	void affect(Creature* pCreature);
 
 	void unaffect(Creature* pCreature);

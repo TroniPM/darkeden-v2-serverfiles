@@ -29,10 +29,10 @@ class GCSkillToTileOK3 : public Packet {
 public :
 	
 	// constructor
-	GCSkillToTileOK3() throw();
+	GCSkillToTileOK3() ;
 	
 	// destructor
-	~GCSkillToTileOK3() throw();
+	~GCSkillToTileOK3() ;
 
 	
 public :
@@ -87,7 +87,7 @@ public :
 //	void setCListNum(BYTE CListNum) throw() { m_CListNum = CListNum; }
 
 	// add / delete  Creature List
-//	void addCListElement(ObjectID_t ObjectID) throw();
+//	void addCListElement(ObjectID_t ObjectID) ;
 
 	// Clear CreatureList
 //	void clearCList() throw() { m_CList.clear(); m_CListNum = 0; }

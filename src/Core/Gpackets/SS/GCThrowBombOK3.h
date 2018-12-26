@@ -28,10 +28,10 @@ class GCThrowBombOK3 : public Packet {
 public :
 	
 	// constructor
-	GCThrowBombOK3() throw();
+	GCThrowBombOK3() ;
 	
 	// destructor
-	~GCThrowBombOK3() throw();
+	~GCThrowBombOK3() ;
 
 	
 public :
@@ -89,7 +89,7 @@ public :
 
 
     // add / delete  Creature List
-    void addCListElement(ObjectID_t ObjectID) throw();
+    void addCListElement(ObjectID_t ObjectID) ;
 
 	// Clear Creature List
     void clearCList() throw() { m_CList.clear(); m_CListNum = 0; }

@@ -26,10 +26,10 @@ class CGCastingSkill : public Packet {
 public:
 	
 	// constructor
-	CGCastingSkill() throw();
+	CGCastingSkill() ;
 	
 	// destructor
-	~CGCastingSkill() throw();
+	~CGCastingSkill() ;
 
 	
 public:

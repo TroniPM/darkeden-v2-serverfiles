@@ -19,8 +19,8 @@
 class ActionFactoryManager 
 {
 public:
-	ActionFactoryManager() throw();
-	~ActionFactoryManager() throw();
+	ActionFactoryManager() ;
+	~ActionFactoryManager() ;
 
 public:
 	void init();

@@ -30,10 +30,10 @@ class GCRemoveEffect : public Packet
 public :
 	
 	// constructor
-	GCRemoveEffect() throw();
+	GCRemoveEffect() ;
 	
 	// destructor
-	~GCRemoveEffect() throw();
+	~GCRemoveEffect() ;
 	
 public :
     PacketID_t getPacketID()  { return PACKET_GC_REMOVE_EFFECT; }
@@ -65,7 +65,7 @@ public :
 	void setObjectID(ObjectID_t id) throw() { m_ObjectID = id;}
 
 	// add / delete / clear S List
-	void addEffectList(EffectID_t id) throw(); 
+	void addEffectList(EffectID_t id) ; 
 
 	// ClearList
 	void clearList() throw() { m_EffectList.clear(); m_ListNum = 0; }

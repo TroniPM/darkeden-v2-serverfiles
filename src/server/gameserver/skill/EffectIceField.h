@@ -63,7 +63,7 @@ public:
     virtual string getEffectClassName()  { return "EffectIceField"; }
 
 public:
-    virtual void load(Creature* pCreature) throw(Error) {}
+    virtual void load(Creature* pCreature)  {}
     virtual void load(Zone* pZone);
 };
 

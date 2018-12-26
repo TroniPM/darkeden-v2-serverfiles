@@ -112,9 +112,9 @@ public:
 	};
 
 public:
-	RankBonus() throw();
-	RankBonus( DWORD type, DWORD point, Rank_t rank ) throw();
-	~RankBonus() throw();
+	RankBonus() ;
+	RankBonus( DWORD type, DWORD point, Rank_t rank ) ;
+	~RankBonus() ;
 
 public:
 	DWORD getType()  { return m_Type; }

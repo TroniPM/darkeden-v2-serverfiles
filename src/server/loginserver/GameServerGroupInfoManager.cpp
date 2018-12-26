@@ -37,7 +37,7 @@ GameServerGroupInfoManager::~GameServerGroupInfoManager ()
 // clear GameServerGroupInfos
 //----------------------------------------------------------------------
 void GameServerGroupInfoManager::clear()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -67,7 +67,7 @@ void GameServerGroupInfoManager::clear()
 // initialize GSIM
 //----------------------------------------------------------------------
 void GameServerGroupInfoManager::init ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -84,7 +84,7 @@ void GameServerGroupInfoManager::init ()
 // load data from database
 //----------------------------------------------------------------------
 void GameServerGroupInfoManager::load ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 

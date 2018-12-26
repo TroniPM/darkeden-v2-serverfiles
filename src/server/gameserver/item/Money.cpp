@@ -46,7 +46,7 @@ Money::Money(ItemType_t itemType, const list<OptionType_t>& optionType ,ItemNum_
 // create item
 //--------------------------------------------------------------------------------
 void Money::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -99,7 +99,7 @@ void Money::create(const string & ownerID, Storage storage, StorageID_t storageI
 // save item
 //--------------------------------------------------------------------------------
 void Money::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -123,7 +123,7 @@ void Money::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void Money::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -183,7 +183,7 @@ string Money::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t Money::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -197,7 +197,7 @@ VolumeWidth_t Money::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t Money::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -211,7 +211,7 @@ VolumeHeight_t Money::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t Money::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -247,7 +247,7 @@ string MoneyInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void MoneyInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -301,7 +301,7 @@ void MoneyInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void MoneyLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -443,7 +443,7 @@ void MoneyLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void MoneyLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -510,7 +510,7 @@ void MoneyLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void MoneyLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

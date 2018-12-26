@@ -27,10 +27,10 @@ class CGPartyPosition : public Packet {
 public:
 	
 	// constructor
-	CGPartyPosition() throw();
+	CGPartyPosition() ;
 	
 	// destructor
-	~CGPartyPosition() throw();
+	~CGPartyPosition() ;
 
 	
 public:

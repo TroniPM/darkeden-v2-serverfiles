@@ -23,8 +23,8 @@
 class GCAddNickname : public Packet 
 {
 public:
-	GCAddNickname() throw();
-	~GCAddNickname() throw();
+	GCAddNickname() ;
+	~GCAddNickname() ;
 	
 public:
     void read(SocketInputStream & iStream) ;

@@ -35,13 +35,13 @@ const int defaultGameServerPlayerOutputStreamSize = 163840;
 //
 //////////////////////////////////////////////////////////////////////
 GameServerPlayer::GameServerPlayer ()
-	 throw ( Error )
+	 
 {
 }
 
 
 GameServerPlayer::GameServerPlayer (Socket * pSocket)
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -68,7 +68,7 @@ GameServerPlayer::GameServerPlayer (Socket * pSocket)
 //
 //////////////////////////////////////////////////////////////////////
 GameServerPlayer::~GameServerPlayer ()
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -258,7 +258,7 @@ void GameServerPlayer::setSocket ( Socket * pSocket )
 //
 //////////////////////////////////////////////////////////////////////
 string GameServerPlayer::toString () const
-       throw ( Error )
+       
 {
 	__BEGIN_TRY
 		

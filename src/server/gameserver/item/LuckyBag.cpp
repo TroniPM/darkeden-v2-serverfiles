@@ -45,7 +45,7 @@ LuckyBag::LuckyBag(ItemType_t itemType, const list<OptionType_t>& optionType, It
 }
 
 void LuckyBag::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -90,7 +90,7 @@ void LuckyBag::create(const string & ownerID, Storage storage, StorageID_t stora
 // save item
 //--------------------------------------------------------------------------------
 void LuckyBag::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -111,7 +111,7 @@ void LuckyBag::tinysave(const char* field) const
 }
 
 void LuckyBag::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -164,7 +164,7 @@ string LuckyBag::toString() const
 }
 
 VolumeWidth_t LuckyBag::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -174,7 +174,7 @@ VolumeWidth_t LuckyBag::getVolumeWidth() const
 }
 	
 VolumeHeight_t LuckyBag::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -184,7 +184,7 @@ VolumeHeight_t LuckyBag::getVolumeHeight() const
 }
 	
 Weight_t LuckyBag::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -213,7 +213,7 @@ string LuckyBagInfo::toString() const
 }
 
 void LuckyBagInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -267,7 +267,7 @@ void LuckyBagInfoManager::load()
 //////////////////////////////////////////////////////////////////////////////
 
 void LuckyBagLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -438,7 +438,7 @@ void LuckyBagLoader::load(Creature* pCreature)
 }
 
 void LuckyBagLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -502,7 +502,7 @@ void LuckyBagLoader::load(Zone* pZone)
 }
 
 void LuckyBagLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

@@ -63,7 +63,7 @@ Relic::Relic(ItemType_t itemType, const list<OptionType_t>& optionType)
 // create item
 //--------------------------------------------------------------------------------
 void Relic::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -112,7 +112,7 @@ void Relic::create(const string & ownerID, Storage storage, StorageID_t storageI
 // save item
 //--------------------------------------------------------------------------------
 void Relic::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -136,7 +136,7 @@ void Relic::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void Relic::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -199,7 +199,7 @@ string Relic::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t Relic::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -213,7 +213,7 @@ VolumeWidth_t Relic::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t Relic::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -227,7 +227,7 @@ VolumeHeight_t Relic::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t Relic::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -241,7 +241,7 @@ Weight_t Relic::getWeight() const
 // get/set armor's Defense Bonus
 //--------------------------------------------------------------------------------
 Defense_t Relic::getDefenseBonus() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -250,7 +250,7 @@ Defense_t Relic::getDefenseBonus() const
 	__END_CATCH
 }
 Protection_t Relic::getProtectionBonus() const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -288,7 +288,7 @@ string RelicInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void RelicInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -353,7 +353,7 @@ void RelicInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void RelicLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -511,7 +511,7 @@ void RelicLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void RelicLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -580,7 +580,7 @@ void RelicLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void RelicLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

@@ -26,8 +26,8 @@ class GCDropItemToZone : public GCAddItemToZone {
 
 public :
 
-	GCDropItemToZone() throw();
-	~GCDropItemToZone() throw();
+	GCDropItemToZone() ;
+	~GCDropItemToZone() ;
 	
 	PacketSize_t getPacketSize()  { return GCAddItemToZone::getPacketSize() + szObjectID; }
 

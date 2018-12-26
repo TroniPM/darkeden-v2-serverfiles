@@ -18,16 +18,16 @@
 //--------------------------------------------------------------------------------
 class MonsterKillQuest : public SimpleQuest, public MonsterSelector {
 public :
-	MonsterKillQuest(const MonsterSelector& mtc) throw (Error)
+	MonsterKillQuest(const MonsterSelector& mtc) 
 	: MonsterSelector(mtc)
 	{
 	}
-	MonsterKillQuest(MonsterType_t monsterType, SpriteType_t spriteType, int number) throw (Error)
+	MonsterKillQuest(MonsterType_t monsterType, SpriteType_t spriteType, int number) 
 	: MonsterSelector(monsterType, spriteType, number)
 	{
 	}
 
-	virtual ~MonsterKillQuest() throw (Error) {}
+	virtual ~MonsterKillQuest()  {}
 
 	virtual QuestType	getQuestType() const 	{ return QUEST_MONSTER_KILL; }
 
@@ -38,7 +38,7 @@ public :
 	virtual bool		checkComplete();
 
 public :
-	virtual void        setObjective(const string& text) throw (Error)	{ MonsterSelector::setMonster(text); }
+	virtual void        setObjective(const string& text) 	{ MonsterSelector::setMonster(text); }
 	virtual string      getObjectiveToString() 		{ return MonsterSelector::toString(); }
 
 	string				toString() ;

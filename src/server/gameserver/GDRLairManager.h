@@ -287,7 +287,7 @@ public:
 	};
 
 	void init();
-	void run() throw();
+	void run() ;
 	string getName()  { return "GDRLairManager"; }
 
 	static GDRLairManager& Instance() { static GDRLairManager theInstance; return theInstance; }

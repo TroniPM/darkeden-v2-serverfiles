@@ -58,8 +58,8 @@ class ShopRack;
 class NPC : public Creature 
 {
 public: 
-	NPC() throw();
-	NPC(const string & name) throw();
+	NPC() ;
+	NPC(const string & name) ;
 	virtual ~NPC();
 
 public: 

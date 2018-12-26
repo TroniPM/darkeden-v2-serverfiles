@@ -107,5 +107,7 @@ string BloodBibleBonusInfo::toString ()
 	return msg.toString();
 
 	__END_CATCH
+
+	return NULL;
 }
 

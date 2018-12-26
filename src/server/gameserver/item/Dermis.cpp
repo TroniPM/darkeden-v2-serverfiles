@@ -47,7 +47,7 @@ Dermis::Dermis(ItemType_t itemType, const list<OptionType_t>& optionType)
 // create item
 //--------------------------------------------------------------------------------
 void Dermis::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -98,7 +98,7 @@ void Dermis::create(const string & ownerID, Storage storage, StorageID_t storage
 // save item
 //--------------------------------------------------------------------------------
 void Dermis::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -122,7 +122,7 @@ void Dermis::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void Dermis::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -192,7 +192,7 @@ string DermisInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void DermisInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -256,7 +256,7 @@ void DermisInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void DermisLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -439,7 +439,7 @@ pDermis->setHeroOptionAttr(pResult->getInt(++i));
 // load to zone
 //--------------------------------------------------------------------------------
 void DermisLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -451,7 +451,7 @@ void DermisLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void DermisLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

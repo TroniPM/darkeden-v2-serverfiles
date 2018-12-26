@@ -50,7 +50,7 @@ Shoes::Shoes(ItemType_t itemType, const list<OptionType_t>& optionType)
 // create item
 //--------------------------------------------------------------------------------
 void Shoes::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -102,7 +102,7 @@ void Shoes::create(const string & ownerID, Storage storage, StorageID_t storageI
 // save item
 //--------------------------------------------------------------------------------
 void Shoes::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -126,7 +126,7 @@ void Shoes::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void Shoes::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -194,7 +194,7 @@ string Shoes::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t Shoes::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -208,7 +208,7 @@ VolumeWidth_t Shoes::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t Shoes::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -222,7 +222,7 @@ VolumeHeight_t Shoes::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t Shoes::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -236,7 +236,7 @@ Weight_t Shoes::getWeight() const
 // get/set armor's Defense Bonus
 //--------------------------------------------------------------------------------
 Defense_t Shoes::getDefenseBonus() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -246,7 +246,7 @@ Defense_t Shoes::getDefenseBonus() const
 }
 
 Defense_t Shoes::getProtectionBonus() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -284,7 +284,7 @@ string ShoesInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void ShoesInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -349,7 +349,7 @@ void ShoesInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void ShoesLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -546,7 +546,7 @@ pShoes->setHeroOptionAttr(pResult->getInt(++i));
 // load to zone
 //--------------------------------------------------------------------------------
 void ShoesLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -628,7 +628,7 @@ pShoes->setHeroOptionAttr(pResult->getInt(++i));
 // load to inventory
 //--------------------------------------------------------------------------------
 void ShoesLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

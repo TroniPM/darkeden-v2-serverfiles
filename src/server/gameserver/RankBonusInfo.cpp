@@ -68,7 +68,7 @@ RankBonusInfoManager::~RankBonusInfoManager()
 }
 
 void RankBonusInfoManager::init()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -96,7 +96,7 @@ void RankBonusInfoManager::clear()
 }
 
 void RankBonusInfoManager::load()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -153,7 +153,7 @@ void RankBonusInfoManager::load()
 }
 
 void RankBonusInfoManager::save()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

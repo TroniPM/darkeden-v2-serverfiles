@@ -32,7 +32,7 @@ class SMSServiceThread : public Thread
 public:
 	static SMSServiceThread& Instance() { static SMSServiceThread theInstance; return theInstance; }
 
-	void run() throw();
+	void run() ;
 	string	getName()  { return "SMSServiceThread"; }
 
 	void pushMessage( SMSMessage* pMsg );

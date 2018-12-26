@@ -53,7 +53,7 @@ Coat::Coat(ItemType_t itemType, const list<OptionType_t>& optionType)
 // create item
 //--------------------------------------------------------------------------------
 void Coat::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -104,7 +104,7 @@ void Coat::create(const string & ownerID, Storage storage, StorageID_t storageID
 // save item
 //--------------------------------------------------------------------------------
 void Coat::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -128,7 +128,7 @@ void Coat::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void Coat::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -196,7 +196,7 @@ string Coat::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t Coat::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -210,7 +210,7 @@ VolumeWidth_t Coat::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t Coat::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -224,7 +224,7 @@ VolumeHeight_t Coat::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t Coat::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -238,7 +238,7 @@ Weight_t Coat::getWeight() const
 // get/set armor's Defense Bonus
 //--------------------------------------------------------------------------------
 Defense_t Coat::getDefenseBonus() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -247,7 +247,7 @@ Defense_t Coat::getDefenseBonus() const
 	__END_CATCH
 }
 Protection_t Coat::getProtectionBonus() const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -285,7 +285,7 @@ string CoatInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void CoatInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -350,7 +350,7 @@ void CoatInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void CoatLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -548,7 +548,7 @@ void CoatLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void CoatLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -630,7 +630,7 @@ void CoatLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void CoatLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

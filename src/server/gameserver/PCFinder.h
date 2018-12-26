@@ -24,8 +24,8 @@
 class PCFinder 
 {
 public:
-	PCFinder() throw();
-	~PCFinder() throw();
+	PCFinder() ;
+	~PCFinder() ;
 
 public:
 	// add creature to hash_map
@@ -34,7 +34,7 @@ public:
 
 	// delete creature from hash_map
 	// execute just once at PC's logout
-	void deleteCreature(const string & name) throw();//NoSuchElementException, Error);
+	void deleteCreature(const string & name) ;//NoSuchElementException, Error);
 
 	// get creature with PC-name
 	Creature* getCreature(const string & name) ; //NoSuchElementException, Error);
@@ -50,7 +50,7 @@ public:
 	void addNPC(NPC *npc) throw(DuplicatedException, Error);
 	
 	// delete NPC from hash_map
-	void deleteNPC(const string & name) throw();
+	void deleteNPC(const string & name) ;
 
 	// get NPC 
 	NPC* getNPC(const string & name) ;
@@ -64,8 +64,8 @@ public:
 /*	pair<multimap< GuildID_t, Creature* >::const_iterator, multimap< GuildID_t, Creature* >::const_iterator>
 		getGuildRange(GuildID_t gID) const { return m_GuildMap.equal_range(gID); }*/
 
-	void lock() throw(Error) { m_Mutex.lock(); }
-	void unlock() throw(Error) { m_Mutex.unlock(); }
+	void lock()  { m_Mutex.lock(); }
+	void unlock()  { m_Mutex.unlock(); }
 
 private:
 	hash_map< string, Creature* > 	m_PCs;

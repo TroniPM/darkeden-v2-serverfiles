@@ -22,7 +22,7 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_ICE_OF_SOUL_STONE; }
 
-	void affect() throw(Error){}
+	void affect() {}
 
 	void unaffect(Creature* pCreature);
 	void unaffect();

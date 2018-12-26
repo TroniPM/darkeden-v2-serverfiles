@@ -262,15 +262,15 @@ private:
 class SkillInfoManager 
 {
 public:
-	SkillInfoManager() throw();
-	~SkillInfoManager() throw();
+	SkillInfoManager() ;
+	~SkillInfoManager() ;
 
 public:
 
 	// initialize Manager
 	void init();
 
-	// void load() throw();
+	// void load() ;
 	void load();
 	
 	// Save to DB

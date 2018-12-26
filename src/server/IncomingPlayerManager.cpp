@@ -43,7 +43,7 @@
 //////////////////////////////////////////////////////////////////////////////
 
 IncomingPlayerManager::IncomingPlayerManager () 
-	throw (Error)
+	
 : m_pServerSocket(NULL), m_SocketID(INVALID_SOCKET), m_MinFD(-1), m_MaxFD(-1)
 {
 	__BEGIN_TRY
@@ -92,7 +92,7 @@ IncomingPlayerManager::IncomingPlayerManager ()
 //////////////////////////////////////////////////////////////////////////////
 
 IncomingPlayerManager::~IncomingPlayerManager () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -107,7 +107,7 @@ IncomingPlayerManager::~IncomingPlayerManager ()
 //////////////////////////////////////////////////////////////////////////////
 
 void IncomingPlayerManager::init ()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -257,7 +257,7 @@ void IncomingPlayerManager::copyPlayers()
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void IncomingPlayerManager::broadcast (Packet* pPacket)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -794,7 +794,7 @@ void IncomingPlayerManager::processExceptions ()
 // select 기반에서는 nonblocking 소켓을 사용하지 않는다.
 //////////////////////////////////////////////////////////////////////////////
 bool IncomingPlayerManager::acceptNewConnection ()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1250,7 +1250,7 @@ GamePlayer* IncomingPlayerManager::getReadyPlayer (const string & id)
 }
 
 void IncomingPlayerManager::pushPlayer(GamePlayer* pGamePlayer)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1264,7 +1264,7 @@ void IncomingPlayerManager::pushPlayer(GamePlayer* pGamePlayer)
 }
 
 void IncomingPlayerManager::pushOutPlayer(GamePlayer* pGamePlayer)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1278,7 +1278,7 @@ void IncomingPlayerManager::pushOutPlayer(GamePlayer* pGamePlayer)
 }
 
 void IncomingPlayerManager::heartbeat()
-	throw(Error) 
+	 
 {
 	__BEGIN_TRY
 
@@ -1596,7 +1596,7 @@ void IncomingPlayerManager::deleteQueuePlayer(GamePlayer* pGamePlayer)
 // IncomingPlayerManager 에 있는 모든 사용자를 정리한다.
 ////////////////////////////////////////////////////////////////////////
 void IncomingPlayerManager::clearPlayers()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

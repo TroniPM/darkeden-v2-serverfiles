@@ -36,15 +36,15 @@ class SocketImpl {
 public :
 	
 	// constructor
-	SocketImpl ();// throw ();
-	SocketImpl (uint port);// throw ();
-	SocketImpl (const string & host, uint port);// throw ();
+	SocketImpl ();
+	SocketImpl (uint port);
+	SocketImpl (const string & host, uint port);
 
 	// copy constructor
-	SocketImpl (const SocketImpl & impl);// throw ();
+	SocketImpl (const SocketImpl & impl);
 
 	// virtual destructor
-	virtual ~SocketImpl ();// throw (Error);
+	virtual ~SocketImpl ();
 
 //////////////////////////////////////////////////
 // methods
@@ -52,30 +52,30 @@ public :
 public :
 	
 	// create socket
-	void create ();// throw (Error);
+	void create ();
 	
 	// close connection
-	void close ();// throw (Error);
+	void close ();
 	
 	// bind socket
-	void bind ();// throw (BindException, Error);
-	void bind (uint port);// throw (BindException, Error);
+	void bind ();
+	void bind (uint port);
 	
 	// listen
-	void listen (uint backlog);// throw (Error);
+	void listen (uint backlog);
 	
 	// connect to remote host
-	void connect ();// throw (ConnectException, Error);
-	void connect (const string & host, uint port);// throw (ConnectException, Error);
+	void connect ();
+	void connect (const string & host, uint port);
 	
 	// accept new connection 
-	SocketImpl* accept ();// throw (NonBlockingIOException, ConnectException, Error);
+	SocketImpl* accept ();
 	
 	// send data to peer
-	uint send (const void* buf, uint len, uint flags = 0);// throw (IOException, InvalidProtocolException, Error);
+	uint send (const void* buf, uint len, uint flags = 0);
 	
 	// receive data from peer
-	uint receive (void* buf, uint len, uint flags = 0);// throw (IOException, Error);
+	uint receive (void* buf, uint len, uint flags = 0);
 	
 	// how much available?
 	uint available ();// ;
@@ -87,27 +87,27 @@ public :
 public :
 
 	// get/set socket's linger status
-	uint getLinger ();// ;
-	void setLinger (uint lingertime);// throw (Error);
+	uint getLinger ();
+	void setLinger (uint lingertime);
 	
 	// get/set socket's reuse address status
-	bool isReuseAddr ();// ;
-	void setReuseAddr (bool on = true);// throw (Error);
+	bool isReuseAddr ();
+	void setReuseAddr (bool on = true);
 	
 	// get error
-	bool isSockError();// ;
+	bool isSockError();
 
 	// get/set socket's nonblocking status
-	bool isNonBlocking ();// ;
-	void setNonBlocking (bool on = true);// throw (Error);
+	bool isNonBlocking ();
+	void setNonBlocking (bool on = true);
 	
 	// get/set receive buffer size
-	uint getReceiveBufferSize ();// ;
-	void setReceiveBufferSize (uint size);// throw (Error);
+	uint getReceiveBufferSize ();
+	void setReceiveBufferSize (uint size);
 	
 	// get/set send buffer size
-	uint getSendBufferSize ();// ;
-	void setSendBufferSize (uint size);// throw (Error);
+	uint getSendBufferSize ();
+	void setSendBufferSize (uint size);
 	
 
 //////////////////////////////////////////////////
@@ -136,12 +136,12 @@ public :
 protected :
 
     // get/set host address from socket address structure
-    string _getHost ();// ;
-    void _setHost (const string & host);// throw ();
+    string _getHost ();
+    void _setHost (const string & host);
 			    
     // get/set port from socket address structure
-	uint _getPort ();// ;
-	void _setPort (uint port);// throw ();
+	uint _getPort ();
+	void _setPort (uint port);
 	
 	
 //////////////////////////////////////////////////

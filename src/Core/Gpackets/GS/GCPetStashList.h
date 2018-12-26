@@ -30,8 +30,8 @@ struct PetStashItemInfo
 class GCPetStashList : public Packet 
 {
 public:
-	GCPetStashList() throw();
-	virtual ~GCPetStashList() throw();
+	GCPetStashList() ;
+	virtual ~GCPetStashList() ;
 
 	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;

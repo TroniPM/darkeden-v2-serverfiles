@@ -34,10 +34,10 @@ class SocketOutputStream {
 public :
 	
 	// constructor
-	SocketOutputStream (Socket* sock, uint BufferSize = DefaultSocketOutputBufferSize);// throw (Error);
+	SocketOutputStream (Socket* sock, uint BufferSize = DefaultSocketOutputBufferSize);// ;
 	
 	// destructor
-	virtual ~SocketOutputStream ();// throw (Error);
+	virtual ~SocketOutputStream ();// ;
 
 	
 //////////////////////////////////////////////////
@@ -51,21 +51,21 @@ public :
 	// 그러나, string 의 크기를 BYTE/WORD 중 어느 것으로 할 건지는 의문이다.
 	// 패킷의 크기는 작을 수록 좋다는 정책하에서 필요에 따라서 string size 값을
 	// BYTE 또는 WORD 를 수동으로 사용하도록 한다.
-	uint write (const char* buf, uint len);// throw (Error);
+	uint write (const char* buf, uint len);// ;
 	uint write (const string & buf) { return write(buf.c_str(),buf.size()); }
-	void writePacket (const Packet* pPacket);// throw (ProtocolException, Error);
+	void writePacket (const Packet* pPacket);// ;
 	
 	template<typename T>
-		uint write( T buf );// throw (Error);
-/*	uint write (bool   buf) throw (ProtocolException, Error) { return write((const char*)&buf, szbool  ); }
-	uint write (char   buf) throw (ProtocolException, Error) { return write((const char*)&buf, szchar  ); }
-	uint write (uchar  buf) throw (ProtocolException, Error) { return write((const char*)&buf, szuchar ); }
-	uint write (short  buf) throw (ProtocolException, Error) { return write((const char*)&buf, szshort ); }
-	uint write (ushort buf) throw (ProtocolException, Error) { return write((const char*)&buf, szushort); }
-	uint write (int    buf) throw (ProtocolException, Error) { return write((const char*)&buf, szint   ); }
-	uint write (uint   buf) throw (ProtocolException, Error) { return write((const char*)&buf, szuint  ); }
-	uint write (long   buf) throw (ProtocolException, Error) { return write((const char*)&buf, szlong  ); }
-	uint write (ulong  buf) throw (ProtocolException, Error) { return write((const char*)&buf, szulong ); }
+		uint write( T buf );// ;
+/*	uint write (bool   buf)  { return write((const char*)&buf, szbool  ); }
+	uint write (char   buf)  { return write((const char*)&buf, szchar  ); }
+	uint write (uchar  buf)  { return write((const char*)&buf, szuchar ); }
+	uint write (short  buf)  { return write((const char*)&buf, szshort ); }
+	uint write (ushort buf)  { return write((const char*)&buf, szushort); }
+	uint write (int    buf)  { return write((const char*)&buf, szint   ); }
+	uint write (uint   buf)  { return write((const char*)&buf, szuint  ); }
+	uint write (long   buf)  { return write((const char*)&buf, szlong  ); }
+	uint write (ulong  buf)  { return write((const char*)&buf, szulong ); }
 */
 	// flush stream (output buffer) to socket
 	uint flush ();// throw (IOException, ProtocolException, InvalidProtocolException, Error);
@@ -77,7 +77,7 @@ public :
 	int capacity ()  { return m_BufferLen; }
  
     // get data length in buffer
-    uint length () const;//  throw ();
+    uint length ();
     uint size () { return length(); }
 
 	// get data in buffer
@@ -120,7 +120,7 @@ private :
 //	WORD m_EncryptKey;
 //	BYTE* m_HashTable;
 //	void setKey(WORD EncryptKey, BYTE* HashTable) throw() { m_EncryptKey = EncryptKey; m_HashTable = HashTable;};
-//	WORD EncryptData(WORD EncryptKey, char* buf, int len) throw();
+//	WORD EncryptData(WORD EncryptKey, char* buf, int len) ;
 //end
 };
 
@@ -140,7 +140,7 @@ private :
 //////////////////////////////////////////////////////////////////////
 template<typename T>
 uint SocketOutputStream::write ( T buf ) 
-     //throw ( Error )
+     //
 {
 	__BEGIN_TRY
 
@@ -200,6 +200,8 @@ uint SocketOutputStream::write ( T buf )
 	return len;
 	
 	__END_CATCH
+
+	return 0;
 }
 
 #endif

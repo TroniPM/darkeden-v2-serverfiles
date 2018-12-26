@@ -25,8 +25,8 @@ class ShopTemplate
 ///// Member methods /////
 	
 public:
-	ShopTemplate() throw();
-	virtual ~ShopTemplate() throw();
+	ShopTemplate() ;
+	virtual ~ShopTemplate() ;
 
 public:
 	ShopTemplateID_t getID(void)  { return m_ID; }
@@ -78,8 +78,8 @@ class ShopTemplateManager
 ///// Member methods /////
 	
 public:
-	ShopTemplateManager() throw();
-	~ShopTemplateManager() throw();
+	ShopTemplateManager() ;
+	~ShopTemplateManager() ;
 
 public:
 	void init();
@@ -87,7 +87,7 @@ public:
 
 public:
 	ShopTemplate* getTemplate(ShopTemplateID_t id) ;
-	void setTemplate(ShopTemplateID_t id, ShopTemplate* pEntry) throw();
+	void setTemplate(ShopTemplateID_t id, ShopTemplate* pEntry) ;
 
 	string toString() ;
 

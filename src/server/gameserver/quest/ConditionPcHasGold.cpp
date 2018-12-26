@@ -63,7 +63,7 @@ bool ConditionPcHasGold::isSatisfied (Creature * pCreature1 , Creature * pCreatu
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionPcHasGold::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 	try
 	{

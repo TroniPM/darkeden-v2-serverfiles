@@ -32,7 +32,7 @@ class GCAddOusters : public Packet
 public:
 	GCAddOusters();
 	GCAddOusters(const PCOustersInfo3 & slayerInfo);
-	virtual ~GCAddOusters() throw();
+	virtual ~GCAddOusters() ;
 
 public:
     void read(SocketInputStream & iStream) ;

@@ -16,7 +16,7 @@
 class LifeAquaofRadchia : public SkillHandler 
 {
 public:
-	LifeAquaofRadchia() throw();
+	LifeAquaofRadchia() ;
 	~LifeAquaofRadchia() throw() {}
 	
 public:

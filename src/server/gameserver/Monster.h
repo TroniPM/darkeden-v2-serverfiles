@@ -26,7 +26,7 @@ class Monster : public Creature
 {
 // 생성자/소멸자
 public:
-	Monster(MonsterType_t monsterType) throw();
+	Monster(MonsterType_t monsterType) ;
 	virtual ~Monster();
 
 // 하위 클래스 상속 함수
@@ -145,17 +145,17 @@ public:
 	void addAccuDelay(Timeval delay) throw() { m_AccuDelay = m_AccuDelay + delay; }
 	void clearAccuDelay() throw() { m_AccuDelay.tv_sec = 0; m_AccuDelay.tv_usec = 0; }
 
-	void clearEnemyLimitTime() throw();
+	void clearEnemyLimitTime() ;
 
 	Timeval getNextTurn()  { return m_NextTurn; }
 	void setNextTurn(Timeval NextTurn) throw() { m_NextTurn = NextTurn; }
 
-	void setDamaged(bool value=true) throw();
+	void setDamaged(bool value=true) ;
 
 	int getEffectClass()  { return m_EffectClass; }
 	void setEffectClass(int inte) throw() { m_EffectClass = inte; }
 
-	void initAllStat(void) throw();
+	void initAllStat(void) ;
 
 	Silver_t getSilverDamage(void)  { return m_SilverDamage; }
 	void setSilverDamage(Silver_t damage) throw() { m_SilverDamage = damage; }

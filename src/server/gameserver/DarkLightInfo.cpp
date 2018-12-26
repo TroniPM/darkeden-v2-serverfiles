@@ -89,7 +89,7 @@ DarkLightInfoManager::~DarkLightInfoManager ()
 }
 
 void DarkLightInfoManager::init () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -99,7 +99,7 @@ void DarkLightInfoManager::init ()
 }
 
 void DarkLightInfoManager::load () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -191,7 +191,7 @@ const DarkLightInfo* DarkLightInfoManager::getDarkLightInfo (BYTE month , BYTE h
 }
 
 const DarkLightInfo* DarkLightInfoManager::getCurrentDarkLightInfo ( Zone* pZone ) const
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -210,7 +210,7 @@ const DarkLightInfo* DarkLightInfoManager::getCurrentDarkLightInfo ( Zone* pZone
 }
 
 DarkLightInfo* DarkLightInfoManager::getCurrentDarkLightInfo ( Zone* pZone ) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

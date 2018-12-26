@@ -56,7 +56,7 @@ ZoneGroup::~ZoneGroup ()
 // initialize zone group
 //////////////////////////////////////////////////////////////////////////////
 void ZoneGroup::init () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -70,7 +70,7 @@ void ZoneGroup::init ()
 // load from database
 //////////////////////////////////////////////////////////////////////////////
 void ZoneGroup::load ()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -84,7 +84,7 @@ void ZoneGroup::load ()
 // save to database
 //////////////////////////////////////////////////////////////////////////////
 void ZoneGroup::save ()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -98,7 +98,7 @@ void ZoneGroup::save ()
 // process all players in zone player manager
 //////////////////////////////////////////////////////////////////////////////
 void ZoneGroup::processPlayers ()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -188,7 +188,7 @@ void ZoneGroup::processPlayers ()
 // process all npc, monsters, ... in zones
 //////////////////////////////////////////////////////////////////////////////
 void ZoneGroup::heartbeat()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -216,7 +216,7 @@ void ZoneGroup::heartbeat()
 // process all npc, monsters, ... in zones
 //////////////////////////////////////////////////////////////////////////////
 void ZoneGroup::makeZoneUserInfo(GMServerInfo & gmServerInfo )
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -242,7 +242,7 @@ void ZoneGroup::makeZoneUserInfo(GMServerInfo & gmServerInfo )
 // add zone to zone group
 //////////////////////////////////////////////////////////////////////////////
 void ZoneGroup::addZone (Zone* pZone) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -353,7 +353,7 @@ Zone* ZoneGroup::getZone (ZoneID_t zoneID) const
 
 //#ifdef __NO_COMBAT__
 Zone* ZoneGroup::getCombatZone (ZoneID_t zoneID) const
-	throw (Error)
+	
 {
 	Zone* pZone = NULL;
 

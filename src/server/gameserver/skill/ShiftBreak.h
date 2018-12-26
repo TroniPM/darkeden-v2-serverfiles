@@ -15,7 +15,7 @@
 class ShiftBreak : public SkillHandler 
 {
 public:
-	ShiftBreak() throw();
+	ShiftBreak() ;
 	~ShiftBreak() throw() {}
 	
 public:

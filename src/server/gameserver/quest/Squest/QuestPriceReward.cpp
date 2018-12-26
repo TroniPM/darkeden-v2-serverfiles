@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 void	
 QuestPriceReward::affect(Creature* pCreature) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

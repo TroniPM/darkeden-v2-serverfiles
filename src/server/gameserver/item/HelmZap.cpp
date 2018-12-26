@@ -49,7 +49,7 @@ HelmZap::HelmZap(ItemType_t itemType, const list<OptionType_t>& optionType)
 // create item
 //--------------------------------------------------------------------------------
 void HelmZap::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -101,7 +101,7 @@ void HelmZap::create(const string & ownerID, Storage storage, StorageID_t storag
 // save item
 //--------------------------------------------------------------------------------
 void HelmZap::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -125,7 +125,7 @@ void HelmZap::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void HelmZap::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -188,7 +188,7 @@ string HelmZap::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t HelmZap::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -202,7 +202,7 @@ VolumeWidth_t HelmZap::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t HelmZap::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -216,7 +216,7 @@ VolumeHeight_t HelmZap::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t HelmZap::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -230,7 +230,7 @@ Weight_t HelmZap::getWeight() const
 // get/set armor's Defense Bonus
 //--------------------------------------------------------------------------------
 Defense_t HelmZap::getDefenseBonus() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -239,7 +239,7 @@ Defense_t HelmZap::getDefenseBonus() const
 	__END_CATCH
 }
 Protection_t HelmZap::getProtectionBonus() const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -275,7 +275,7 @@ string HelmZapInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void HelmZapInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -331,7 +331,7 @@ void HelmZapInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void HelmZapLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -546,7 +546,7 @@ void HelmZapLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void HelmZapLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -619,7 +619,7 @@ void HelmZapLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void HelmZapLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

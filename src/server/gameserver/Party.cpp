@@ -104,7 +104,7 @@ PartyInviteInfoManager::~PartyInviteInfoManager()
 }
 
 bool PartyInviteInfoManager::hasInviteInfo(const string& HostName) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -120,7 +120,7 @@ bool PartyInviteInfoManager::hasInviteInfo(const string& HostName)
 }
 
 bool PartyInviteInfoManager::canInvite(Creature* pHost, Creature* pGuest) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -146,7 +146,7 @@ bool PartyInviteInfoManager::canInvite(Creature* pHost, Creature* pGuest)
 }
 
 bool PartyInviteInfoManager::isInviting(Creature* pHost, Creature* pGuest) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -170,7 +170,7 @@ bool PartyInviteInfoManager::isInviting(Creature* pHost, Creature* pGuest)
 }
 
 void PartyInviteInfoManager::initInviteInfo(Creature* pHost, Creature* pGuest) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -206,7 +206,7 @@ void PartyInviteInfoManager::initInviteInfo(Creature* pHost, Creature* pGuest)
 }
 
 void PartyInviteInfoManager::cancelInvite(Creature* pHost, Creature* pGuest) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -234,7 +234,7 @@ void PartyInviteInfoManager::cancelInvite(Creature* pHost, Creature* pGuest)
 }
 
 void PartyInviteInfoManager::cancelInvite(Creature* pCreature) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -292,7 +292,7 @@ void PartyInviteInfoManager::cancelInvite(Creature* pCreature)
 }
 
 bool PartyInviteInfoManager::addInviteInfo(PartyInviteInfo* pInfo) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -560,7 +560,7 @@ void Party::destroyParty(void)
 
 // 파티 멤버들에게 패킷을 날린다.
 void Party::broadcastPacket(Packet* pPacket, Creature* pOwner) 
-	throw (ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1687,7 +1687,7 @@ void Party::shareAdvancementExp(Creature* pLeader, int amount)
 }
 
 void Party::shareRevealer(Creature* pCaster, int Duration) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1765,7 +1765,7 @@ void Party::shareRevealer(Creature* pCaster, int Duration)
 }
 
 void Party::shareActivation(Creature* pCaster, int Duration) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1827,7 +1827,7 @@ void Party::shareActivation(Creature* pCaster, int Duration)
 
 
 void Party::shareGnomesWhisper(Creature* pCaster, int Duration, int SkillLevel )
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1890,7 +1890,7 @@ void Party::shareGnomesWhisper(Creature* pCaster, int Duration, int SkillLevel )
 }
 
 void Party::shareHolyArmor(Creature* pCaster, int DefBonus, int SkillLevel )
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1957,7 +1957,7 @@ void Party::shareHolyArmor(Creature* pCaster, int DefBonus, int SkillLevel )
 }
 
 void Party::shareHolyArmor2(Creature* pCaster, int DefBonus, int SkillLevel )
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -2025,7 +2025,7 @@ void Party::shareHolyArmor2(Creature* pCaster, int DefBonus, int SkillLevel )
 
 	
 bool Party::shareWaterElementalHeal(Creature* pCaster, int HealPoint)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -2108,7 +2108,7 @@ bool Party::shareWaterElementalHeal(Creature* pCaster, int HealPoint)
 }
 
 void Party::shareGDRLairEnter(Creature* pLeader)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -2171,7 +2171,7 @@ void Party::shareGDRLairEnter(Creature* pLeader)
 
 
 void Party::shareDetectHidden(Creature* pCaster, int Duration) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -2234,7 +2234,7 @@ void Party::shareDetectHidden(Creature* pCaster, int Duration)
 }
 
 void Party::shareDetectInvisibility(Creature* pCaster, int Duration) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -2297,7 +2297,7 @@ void Party::shareDetectInvisibility(Creature* pCaster, int Duration)
 }
 
 void Party::shareExpansion(Creature* pCaster, int Duration, int Percent) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -2376,7 +2376,7 @@ void Party::shareExpansion(Creature* pCaster, int Duration, int Percent)
 	__END_CATCH
 }
 
-void Party::dissectCorpse(Creature* pDissecter, MonsterCorpse* pCorpse) throw(Error)
+void Party::dissectCorpse(Creature* pDissecter, MonsterCorpse* pCorpse) 
 {
 	__BEGIN_TRY
 
@@ -2427,7 +2427,7 @@ void Party::dissectCorpse(Creature* pDissecter, MonsterCorpse* pCorpse) throw(Er
 	__END_CATCH
 }
 
-void Party::eventPartyCrash() throw(Error)
+void Party::eventPartyCrash() 
 {
 	__BEGIN_TRY
 
@@ -2451,7 +2451,7 @@ void Party::eventPartyCrash() throw(Error)
 // 인스턴트 던전 입장을 위한 프로모션
 // 리더 또는 개인파티의 기점으로하여 입장 기준을 정함.
 void Party::shareInstant(Creature* pLeader, int ZoneID, int X, int Y)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -2747,7 +2747,7 @@ LocalPartyManager::~LocalPartyManager()
 }
 
 void LocalPartyManager::heartbeat(void)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -3025,7 +3025,7 @@ int LocalPartyManager::shareRankExp(int PartyID, Creature* pLeader, int amount) 
 }
 
 void LocalPartyManager::shareRevealer(int PartyID, Creature* pCaster, int Duration) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -3050,7 +3050,7 @@ void LocalPartyManager::shareRevealer(int PartyID, Creature* pCaster, int Durati
 }
 
 void LocalPartyManager::shareDetectHidden(int PartyID, Creature* pCaster, int Duration) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -3075,7 +3075,7 @@ void LocalPartyManager::shareDetectHidden(int PartyID, Creature* pCaster, int Du
 }
 
 void LocalPartyManager::shareDetectInvisibility(int PartyID, Creature* pCaster, int Duration) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -3100,7 +3100,7 @@ void LocalPartyManager::shareDetectInvisibility(int PartyID, Creature* pCaster, 
 }
 
 void LocalPartyManager::shareExpansion(int PartyID, Creature* pCaster, int Duration, int percent) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -3125,7 +3125,7 @@ void LocalPartyManager::shareExpansion(int PartyID, Creature* pCaster, int Durat
 }
 
 void LocalPartyManager::shareActivation(int PartyID, Creature* pCaster, int Duration) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -3150,7 +3150,7 @@ void LocalPartyManager::shareActivation(int PartyID, Creature* pCaster, int Dura
 }
 
 void LocalPartyManager::shareGnomesWhisper(int PartyID, Creature* pCaster, int Duration, int SkillLevel)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -3175,7 +3175,7 @@ void LocalPartyManager::shareGnomesWhisper(int PartyID, Creature* pCaster, int D
 }
 
 void LocalPartyManager::shareHolyArmor(int PartyID, Creature* pCaster, int DefBonus, int SkillLevel)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -3200,7 +3200,7 @@ void LocalPartyManager::shareHolyArmor(int PartyID, Creature* pCaster, int DefBo
 }
 
 void LocalPartyManager::shareHolyArmor2(int PartyID, Creature* pCaster, int DefBonus, int SkillLevel)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -3226,7 +3226,7 @@ void LocalPartyManager::shareHolyArmor2(int PartyID, Creature* pCaster, int DefB
 
 
 bool LocalPartyManager::shareWaterElementalHeal(int PartyID, Creature* pCaster, int HealPoint)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -3255,7 +3255,7 @@ bool LocalPartyManager::shareWaterElementalHeal(int PartyID, Creature* pCaster, 
 }
 
 void LocalPartyManager::shareGDRLairEnter(int PartyID, Creature* pLeader)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -3309,7 +3309,7 @@ int LocalPartyManager::shareAdvancementExp(int PartyID, Creature* pLeader, int a
 
 // 인스턴트 던전을 입장시켜야 하는 프로모션
 void LocalPartyManager::shareInstant(int PartyID, Creature* pLeader, int ZoneID, int X, int Y)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -3747,7 +3747,7 @@ void GlobalPartyManager::refreshFamilyPay( int ID )
 }
 
 int GlobalPartyManager::registerParty(void) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

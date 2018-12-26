@@ -346,7 +346,7 @@ Vampire::Vampire ()
 }
 
 Vampire::~Vampire() 
-    throw (Error)
+    
 {
 	__BEGIN_TRY
 
@@ -417,7 +417,7 @@ Vampire::~Vampire()
 // Zone에 종속된 ObjectRegistry를 사용해서, Vampire 와 소유아이템들의
 // ObjectID를 할당받는다.
 void Vampire::registerObject ()
-    throw (Error)
+    
 {
     __BEGIN_TRY
 
@@ -482,7 +482,7 @@ void Vampire::registerObject ()
 // Zone에 종속된 ObjectRegistry를 사용해서, Vampire 와 소유아이템들의
 // ObjectID를 할당받는다. ItemTrace 를 남길지 여부 결정을 위해 따로 뺐다
 void Vampire::registerInitObject ()
-    throw (Error)
+    
 {
     __BEGIN_TRY
 
@@ -547,7 +547,7 @@ void Vampire::registerInitObject ()
 
 // 시간제한 아이템을 체크한다.
 // 모든 아이템이 이미 register 되어있어야 한다.
-void Vampire::checkItemTimeLimit() throw (Error)
+void Vampire::checkItemTimeLimit() 
 {
 	__BEGIN_TRY
 
@@ -631,7 +631,7 @@ void Vampire::checkItemTimeLimit() throw (Error)
 	__END_CATCH
 }
 
-void Vampire::updateEventItemTime( DWORD time ) throw(Error)
+void Vampire::updateEventItemTime( DWORD time ) 
 {
 	__BEGIN_TRY
 
@@ -1152,7 +1152,7 @@ bool Vampire::load ()
 //----------------------------------------------------------------------
 //----------------------------------------------------------------------
 void Vampire::save () const
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -3254,7 +3254,7 @@ string Vampire::toString () const
 }
 
 void Vampire::saveSkills(void) const 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -3283,7 +3283,7 @@ IP_t Vampire::getIP(void) const
 }
 
 void Vampire::saveGears(void) const
-    throw (Error)
+    
 {
 	__BEGIN_TRY
 
@@ -3311,7 +3311,7 @@ void Vampire::saveGears(void) const
 
 
 void Vampire::saveExps(void) const
-    throw (Error)
+    
 {
 	__BEGIN_TRY
 
@@ -3553,7 +3553,7 @@ Vampire::getItemShapeColor(Item* pItem, OptionInfo* pOptionInfo) const
 }
 
 bool Vampire::canPlayFree()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -3564,7 +3564,7 @@ bool Vampire::canPlayFree()
 
 
 bool Vampire::isPayPlayAvaiable() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

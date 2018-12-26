@@ -46,7 +46,7 @@ Water::Water(ItemType_t itemType, const list<OptionType_t>& optionType)
 // create item
 //--------------------------------------------------------------------------------
 void Water::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -91,7 +91,7 @@ void Water::create(const string & ownerID, Storage storage, StorageID_t storageI
 // save item
 //--------------------------------------------------------------------------------
 void Water::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -115,7 +115,7 @@ void Water::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void Water::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -173,7 +173,7 @@ string Water::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t Water::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -187,7 +187,7 @@ VolumeWidth_t Water::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t Water::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -201,7 +201,7 @@ VolumeHeight_t Water::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t Water::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -237,7 +237,7 @@ string WaterInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void WaterInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -291,7 +291,7 @@ void WaterInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void WaterLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -456,7 +456,7 @@ void WaterLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void WaterLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -523,7 +523,7 @@ void WaterLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void WaterLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

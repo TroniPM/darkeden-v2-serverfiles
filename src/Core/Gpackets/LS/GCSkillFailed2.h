@@ -27,10 +27,10 @@ class GCSkillFailed2 : public Packet {
 public :
 	
 	// constructor
-	GCSkillFailed2() throw();
+	GCSkillFailed2() ;
 	
 	// destructor
-	~GCSkillFailed2() throw();
+	~GCSkillFailed2() ;
 
 	
 public :

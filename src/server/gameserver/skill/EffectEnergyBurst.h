@@ -22,7 +22,7 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_ENERGY_BURST; }
 
-	void affect() throw(Error){}
+	void affect() {}
 
 	void unaffect(Creature* pCreature);
 	void unaffect();
@@ -41,7 +41,7 @@ public:
 	virtual string getEffectClassName()  { return "EffectEnergyBurst"; }
 
 public:
-	virtual void load(Creature* pCreature) throw(Error) {}
+	virtual void load(Creature* pCreature)  {}
 };
 
 

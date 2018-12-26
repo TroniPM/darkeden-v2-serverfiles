@@ -73,7 +73,7 @@ public:
 	static void executeSlayer(CGTradeAddItem* pPacket, Player* player) ;
 	static void executeVampire(CGTradeAddItem* pPacket, Player* player) ;
 	static void executeOusters(CGTradeAddItem* pPacket, Player* player) ;
-	static void makeGCTradeAddItemPacket(GCTradeAddItem* pPacket, ObjectID_t Sender, Item* pItem, CoordInven_t X, CoordInven_t Y) throw();
+	static void makeGCTradeAddItemPacket(GCTradeAddItem* pPacket, ObjectID_t Sender, Item* pItem, CoordInven_t X, CoordInven_t Y) ;
 	static void executeError(CGTradeAddItem* pPacket, Player* player, BYTE ErrorCode) ;
 };
 

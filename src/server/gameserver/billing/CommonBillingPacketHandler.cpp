@@ -515,7 +515,7 @@ void CommonBillingPacketHandler::executeBillingCheck(CommonBillingPacket* pPacke
 }
 
 void CommonBillingPacketHandler::disconnectGamePlayer(GamePlayer* pGamePlayer, Turn_t delay)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -539,7 +539,7 @@ void CommonBillingPacketHandler::disconnectGamePlayer(GamePlayer* pGamePlayer, T
 }
 
 void CommonBillingPacketHandler::sendBillingRemainMessage(CommonBillingPacket* pPacket, GamePlayer* pGamePlayer)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

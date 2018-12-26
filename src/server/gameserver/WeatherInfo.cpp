@@ -56,7 +56,7 @@ string WeatherInfo::toString() const
 ////////////////////////////////////////////////////////////////////////////////
 
 void WeatherInfoManager::load () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

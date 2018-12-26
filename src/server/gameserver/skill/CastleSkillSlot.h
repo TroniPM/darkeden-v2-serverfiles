@@ -20,7 +20,7 @@ public:
 		: SkillSlot() {}
 	CastleSkillSlot(SkillType_t SkillType, DWORD Exp, ulong Interval) throw()
 		: SkillSlot( SkillType, Exp, Interval ) {}
-	~CastleSkillSlot() throw();
+	~CastleSkillSlot() ;
 
 public:
 	virtual void save(const string & ownerID);

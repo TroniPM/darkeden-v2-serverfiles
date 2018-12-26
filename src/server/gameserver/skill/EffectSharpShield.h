@@ -23,19 +23,19 @@ public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_SHARP_SHIELD_1; }
 	EffectClass getSendEffectClass()  { return m_ClientEffectClass; }
 
-	void affect() throw(Error){}
+	void affect() {}
 	void affect(Creature* pCreature);
 	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject);
 
 	void unaffect(Creature* pCreature);
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject);
-	void unaffect(Item* pItem) throw(Error) {}
+	void unaffect(Item* pItem)  {}
 	void unaffect();
 
 	string toString() ;
 
 public:
-	void setLevel(Level_t Level) throw();
+	void setLevel(Level_t Level) ;
 
 	Damage_t getDamage()  { return m_Damage; }
 	void setDamage(Damage_t Damage) throw() { m_Damage = Damage; }
@@ -59,7 +59,7 @@ public:
 	virtual string getEffectClassName()  { return "EffectSharpShield"; }
 
 public:
-	virtual void load(Creature* pCreature) throw(Error) {}
+	virtual void load(Creature* pCreature)  {}
 };
 
 

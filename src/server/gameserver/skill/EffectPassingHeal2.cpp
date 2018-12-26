@@ -61,7 +61,7 @@ TPOINT PassingHealSearchTiles2[] =
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 EffectPassingHeal2::EffectPassingHeal2(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -74,7 +74,7 @@ EffectPassingHeal2::EffectPassingHeal2(Creature* pCreature)
 }
 
 void EffectPassingHeal2::affect()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -85,7 +85,7 @@ void EffectPassingHeal2::affect()
 }
 
 void EffectPassingHeal2::affect(Creature* pTargetCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -379,7 +379,7 @@ void EffectPassingHeal2::affect(Creature* pTargetCreature)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void EffectPassingHeal2::unaffect(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -388,7 +388,7 @@ void EffectPassingHeal2::unaffect(Creature* pCreature)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void EffectPassingHeal2::unaffect()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG

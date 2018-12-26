@@ -35,7 +35,7 @@ public:
 	~CBillingPlayerManager();
 
 public:
-	void init() throw ( Error ) {}
+	void init()  {}
 	void stop();
 	void run();
 

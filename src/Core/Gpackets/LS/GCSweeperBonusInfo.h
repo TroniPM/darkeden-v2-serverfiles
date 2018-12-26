@@ -28,10 +28,10 @@ class GCSweeperBonusInfo : public Packet {
 public :
 
 	// constructor
-	GCSweeperBonusInfo() throw();
+	GCSweeperBonusInfo() ;
 
 	// destructor
-	~GCSweeperBonusInfo() throw();
+	~GCSweeperBonusInfo() ;
 	
     // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
     void read(SocketInputStream & iStream) ;
@@ -60,7 +60,7 @@ public:
 
 	void addSweeperBonusInfo( SweeperBonusInfo* pSweeperBonusInfo ) throw() { m_SweeperBonusInfoList.push_back( pSweeperBonusInfo ); }
 
-	void clearSweeperBonusInfoList() throw();
+	void clearSweeperBonusInfoList() ;
 
 	SweeperBonusInfo* popFrontSweeperBonusInfoList() throw()
 	{

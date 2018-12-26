@@ -55,7 +55,7 @@ OustersPendent::OustersPendent(ItemType_t itemType, const list<OptionType_t>& op
 // create item
 //--------------------------------------------------------------------------------
 void OustersPendent::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -106,7 +106,7 @@ void OustersPendent::create(const string & ownerID, Storage storage, StorageID_t
 // save item
 //--------------------------------------------------------------------------------
 void OustersPendent::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -130,7 +130,7 @@ void OustersPendent::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void OustersPendent::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -197,7 +197,7 @@ string OustersPendent::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t OustersPendent::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -211,7 +211,7 @@ VolumeWidth_t OustersPendent::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t OustersPendent::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -225,7 +225,7 @@ VolumeHeight_t OustersPendent::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t OustersPendent::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -239,7 +239,7 @@ Weight_t OustersPendent::getWeight() const
 // get/set armor's Defense Bonus
 //--------------------------------------------------------------------------------
 Defense_t OustersPendent::getDefenseBonus() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -248,7 +248,7 @@ Defense_t OustersPendent::getDefenseBonus() const
 	__END_CATCH
 }
 Protection_t OustersPendent::getProtectionBonus() const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -286,7 +286,7 @@ string OustersPendentInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void OustersPendentInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -351,7 +351,7 @@ void OustersPendentInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void OustersPendentLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -556,7 +556,7 @@ pOustersPendent->setHeroOptionAttr(pResult->getInt(++i));
 // load to zone
 //--------------------------------------------------------------------------------
 void OustersPendentLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -639,7 +639,7 @@ pOustersPendent->setHeroOptionAttr(pResult->getInt(++i));
 // load to inventory
 //--------------------------------------------------------------------------------
 void OustersPendentLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

@@ -13,7 +13,7 @@
 
 void	
 SimpleQuestLoader::load(Creature* pCreature) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

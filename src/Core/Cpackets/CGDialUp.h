@@ -24,10 +24,10 @@ class CGDialUp : public Packet {
 public:
 
 	// constructor
-	CGDialUp() throw();
+	CGDialUp() ;
 
 	// destructor
-	~CGDialUp() throw();
+	~CGDialUp() ;
 
 public:
 	

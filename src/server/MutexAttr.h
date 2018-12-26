@@ -48,10 +48,10 @@ class MutexAttr {
 public :
 	
 	// constructor
-	MutexAttr () throw ( Error ) { pthread_mutexattr_init( &m_Attr ); }
+	MutexAttr ()  { pthread_mutexattr_init( &m_Attr ); }
 
 	// destructor
-	~MutexAttr () throw ( Error ) { pthread_mutexattr_destroy( &m_Attr ); }
+	~MutexAttr ()  { pthread_mutexattr_destroy( &m_Attr ); }
 	
 
 //////////////////////////////////////////////////

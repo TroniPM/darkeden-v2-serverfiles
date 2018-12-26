@@ -31,7 +31,7 @@ public:
 
 public:
 	int getBonus() throw() { return m_Bonus;}
-	void setBonus(int Bonus) throw(Error) { m_Bonus = Bonus;}
+	void setBonus(int Bonus)  { m_Bonus = Bonus;}
 
 private:
 	int m_Bonus;

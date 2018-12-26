@@ -28,10 +28,10 @@ class GCThrowItemOK3 : public Packet {
 public :
 	
 	// constructor
-	GCThrowItemOK3() throw();
+	GCThrowItemOK3() ;
 	
 	// destructor
-	~GCThrowItemOK3() throw();
+	~GCThrowItemOK3() ;
 
 	
 public :

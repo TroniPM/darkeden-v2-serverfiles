@@ -17,8 +17,8 @@
 class CGAddGearToMouse : public Packet 
 {
 public:
-	CGAddGearToMouse() throw();
-	~CGAddGearToMouse() throw();
+	CGAddGearToMouse() ;
+	~CGAddGearToMouse() ;
 
 public:
     void read(SocketInputStream & iStream) ;

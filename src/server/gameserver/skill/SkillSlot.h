@@ -19,9 +19,9 @@
 class SkillSlot 
 {
 public:
-	SkillSlot() throw();
-	SkillSlot(SkillType_t SkillType, DWORD Exp, ulong Interval) throw();
-	virtual ~SkillSlot() throw();
+	SkillSlot() ;
+	SkillSlot(SkillType_t SkillType, DWORD Exp, ulong Interval) ;
+	virtual ~SkillSlot() ;
 
 public:
 	virtual void save(const string & ownerID);
@@ -45,8 +45,8 @@ public:
 	void setCastingTime(Turn_t CastingTime) throw() { m_CastingTime = CastingTime; }
 
 	Timeval getRunTime() throw() { return m_runTime; }
-	void setRunTime() throw();
-	void setRunTime(Turn_t delay, bool bSave=true) throw();
+	void setRunTime() ;
+	void setRunTime(Turn_t delay, bool bSave=true) ;
 
 	string getName()  { return m_Name; }
 	void setName(const string & Name) { m_Name = Name; }

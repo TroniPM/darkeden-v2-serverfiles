@@ -21,7 +21,7 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_REDIANCE; }
 
-	void affect() throw(Error) {}
+	void affect()  {}
 	void affect(Creature* pCreature);
 
 	void unaffect(Creature* pCreature);
@@ -31,7 +31,7 @@ public:
 
 public:
 	int getDexBonus() throw() { return m_DexBonus;}
-	void setDexBonus(Attr_t DexBonus) throw(Error) { m_DexBonus = DexBonus;}
+	void setDexBonus(Attr_t DexBonus)  { m_DexBonus = DexBonus;}
 
 	bool canGiveExp() { return m_GiveExp=!m_GiveExp; }
 

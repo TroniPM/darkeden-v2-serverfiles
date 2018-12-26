@@ -16,7 +16,7 @@
 class SelfDestruction: public SkillHandler 
 {
 public:
-	SelfDestruction() throw();
+	SelfDestruction() ;
 	~SelfDestruction() throw() {}
 	
 public:

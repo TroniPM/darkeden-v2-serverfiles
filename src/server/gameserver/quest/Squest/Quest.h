@@ -58,8 +58,8 @@ public :
 	};
 
 public :
-	Quest() throw (Error) : m_QuestID(m_QuestIDRegistry++), m_State(STATE_NULL)  {}
-	virtual ~Quest() throw (Error) { if (m_State!=STATE_NULL) destroy(); }
+	Quest()  : m_QuestID(m_QuestIDRegistry++), m_State(STATE_NULL)  {}
+	virtual ~Quest()  { if (m_State!=STATE_NULL) destroy(); }
 	
 	static void			initQuestIDRegistry();
 	QuestID_t			getQuestID()					{ return m_QuestID; }
@@ -68,19 +68,19 @@ public :
 	virtual QuestType	getQuestType() const = 0;
 	QuestState			getState() const	{ return m_State; }	
 
-	virtual void		create() throw (Error) = 0;
-	virtual void		save() throw (Error) = 0;
-	virtual void		destroy() throw (Error) {}
+	virtual void		create()  = 0;
+	virtual void		save()  = 0;
+	virtual void		destroy()  {}
 	
-	virtual bool		checkSuccess(const QuestEvent* pQuestEvent) throw (Error) = 0;
-	virtual bool		checkFail() throw (Error) = 0;
-	virtual bool		checkComplete() throw (Error) = 0;
+	virtual bool		checkSuccess(const QuestEvent* pQuestEvent)  = 0;
+	virtual bool		checkFail()  = 0;
+	virtual bool		checkComplete()  = 0;
 
-	virtual void		take(Creature* pCreature, bool bNewQuest=true) throw (Error) = 0;
-	virtual void		giveReward() throw (Error) = 0;
-	virtual void		givePenalty() throw (Error) = 0;
+	virtual void		take(Creature* pCreature, bool bNewQuest=true)  = 0;
+	virtual void		giveReward()  = 0;
+	virtual void		givePenalty()  = 0;
 
-	virtual void		heartbeat() throw (Error) = 0;
+	virtual void		heartbeat()  = 0;
 
 	virtual string		toString()  = 0;
 

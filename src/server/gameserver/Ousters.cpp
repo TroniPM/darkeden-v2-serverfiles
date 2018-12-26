@@ -346,7 +346,7 @@ Ousters::Ousters ()
 }
 
 Ousters::~Ousters() 
-    throw (Error)
+    
 {
 	__BEGIN_TRY
 
@@ -402,7 +402,7 @@ Ousters::~Ousters()
 // Zone에 종속된 ObjectRegistry를 사용해서, Ousters 와 소유아이템들의
 // ObjectID를 할당받는다.
 void Ousters::registerObject ()
-    throw (Error)
+    
 {
     __BEGIN_TRY
 
@@ -467,7 +467,7 @@ void Ousters::registerObject ()
 // Zone에 종속된 ObjectRegistry를 사용해서, Ousters 와 소유아이템들의
 // ObjectID를 할당받는다. ItemTrace 를 남길지 여부 결정을 위해 따로 뺐다
 void Ousters::registerInitObject ()
-    throw (Error)
+    
 {
     __BEGIN_TRY
 
@@ -532,7 +532,7 @@ void Ousters::registerInitObject ()
 
 // 시간제한 아이템을 체크한다.
 // 모든 아이템이 이미 register 되어있어야 한다.
-void Ousters::checkItemTimeLimit() throw (Error)
+void Ousters::checkItemTimeLimit() 
 {
 	__BEGIN_TRY
 
@@ -616,7 +616,7 @@ void Ousters::checkItemTimeLimit() throw (Error)
 	__END_CATCH
 }
 
-void Ousters::updateEventItemTime( DWORD time ) throw (Error)
+void Ousters::updateEventItemTime( DWORD time ) 
 {
 	__BEGIN_TRY
 
@@ -1038,7 +1038,7 @@ bool Ousters::load ()
 //----------------------------------------------------------------------
 //----------------------------------------------------------------------
 void Ousters::save () const
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -2946,7 +2946,7 @@ string Ousters::toString () const
 }
 
 void Ousters::saveSkills(void) const 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -2994,7 +2994,7 @@ IP_t Ousters::getIP(void) const
 }
 
 void Ousters::saveGears(void) const
-    throw (Error)
+    
 {
 	__BEGIN_TRY
 
@@ -3022,7 +3022,7 @@ void Ousters::saveGears(void) const
 
 
 void Ousters::saveExps(void) const
-    throw (Error)
+    
 {
 	__BEGIN_TRY
 
@@ -3229,7 +3229,7 @@ Ousters::getItemShapeColor(Item* pItem, OptionInfo* pOptionInfo) const
 }
 
 bool Ousters::canPlayFree()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -3344,7 +3344,7 @@ SkillBonus_t Ousters::getSkillPointCount( ElementalDomain eDomain )
 }
 
 bool Ousters::isPayPlayAvaiable() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

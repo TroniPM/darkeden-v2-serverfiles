@@ -16,7 +16,7 @@
 class SummonMonsters: public SkillHandler 
 {
 public:
-	SummonMonsters() throw();
+	SummonMonsters() ;
 	~SummonMonsters() throw() {}
 	
 public:

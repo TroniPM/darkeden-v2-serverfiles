@@ -25,8 +25,8 @@
 class GCLoadInventory : public Packet 
 {
 public:
-	GCLoadInventory() throw();
-	~GCLoadInventory() throw();
+	GCLoadInventory() ;
+	~GCLoadInventory() ;
 	
 public:
     void read(SocketInputStream & iStream) ;
@@ -45,7 +45,7 @@ public:
 public:
 	// get/set Inventory Info
 	InventoryInfo* getInventoryInfo()  { return m_pInventoryInfo; }
-	void setInventoryInfo(InventoryInfo* pInventoryInfo) throw(Error) { m_pInventoryInfo = pInventoryInfo; }
+	void setInventoryInfo(InventoryInfo* pInventoryInfo)  { m_pInventoryInfo = pInventoryInfo; }
 	
 private :
 	InventoryInfo* m_pInventoryInfo;

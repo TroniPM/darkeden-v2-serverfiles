@@ -16,8 +16,8 @@
 class GCPetInfo : public Packet
 {
 public:
-	GCPetInfo() throw();
-	virtual ~GCPetInfo() throw();
+	GCPetInfo() ;
+	virtual ~GCPetInfo() ;
 
 public:
 	void read(SocketInputStream & iStream) ;

@@ -185,7 +185,7 @@ ActionFactoryManager::~ActionFactoryManager ()
 // 정의된 모든 액션팩토리들을 여기에 추가한다.
 ////////////////////////////////////////////////////////////////////////////////
 void ActionFactoryManager::init ()
-	 throw (Error)
+	 
 {
 	__BEGIN_TRY
 		
@@ -325,7 +325,7 @@ void ActionFactoryManager::init ()
 // add condition factory to factories array
 ////////////////////////////////////////////////////////////////////////////////
 void ActionFactoryManager::addFactory (ActionFactory * pFactory) 
-	 throw (Error)
+	 
 {
 	__BEGIN_TRY
 		
@@ -348,7 +348,7 @@ void ActionFactoryManager::addFactory (ActionFactory * pFactory)
 // create condition object with condition type
 ////////////////////////////////////////////////////////////////////////////////
 Action * ActionFactoryManager::createAction (ActionType_t actionType) const
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -372,7 +372,7 @@ Action * ActionFactoryManager::createAction (ActionType_t actionType) const
 // get condition name with condition type
 ////////////////////////////////////////////////////////////////////////////////
 string ActionFactoryManager::getActionName (ActionType_t actionType) const
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -396,7 +396,7 @@ string ActionFactoryManager::getActionName (ActionType_t actionType) const
 // get action type with action type name
 ////////////////////////////////////////////////////////////////////////////////
 ActionType_t ActionFactoryManager::getActionType (const string & actionname) const
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

@@ -42,7 +42,7 @@ public:
 
 	HP_t getHP() const { return m_HP; }
 	void setHP( HP_t hp ) { m_HP = hp; }
-	void decreaseHP( Damage_t damage ) throw();
+	void decreaseHP( Damage_t damage ) ;
 
 	Damage_t getDamage() const { return m_Damage; }
 	void setDamage( Damage_t damage ) { m_Damage = damage; }
@@ -71,7 +71,7 @@ public:
 	virtual string getEffectClassName()  { return "EffectArmageddon"; }
 
 public:
-	virtual void load(Creature* pCreature) throw(Error) {}
+	virtual void load(Creature* pCreature)  {}
 };
 
 

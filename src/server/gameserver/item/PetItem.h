@@ -22,8 +22,8 @@
 class PetItem : public Item 
 {
 public:
-	PetItem() throw();
-	PetItem(ItemType_t itemType, const list<OptionType_t>& optionType) throw();
+	PetItem() ;
+	PetItem(ItemType_t itemType, const list<OptionType_t>& optionType) ;
 	~PetItem() { SAFE_DELETE( m_pPetInfo ); }
 	
 public:
@@ -34,7 +34,7 @@ public:
 	void savePetInfo() const;
 	virtual string toString() ;
 
-	static void initItemIDRegistry(void) throw();
+	static void initItemIDRegistry(void) ;
 
 public:
 	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_PET_ITEM; }

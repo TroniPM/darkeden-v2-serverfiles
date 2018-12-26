@@ -67,7 +67,7 @@ GoodsInfoManager::~GoodsInfoManager()
 }
 
 void GoodsInfoManager::init()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -94,7 +94,7 @@ void GoodsInfoManager::clear()
 }
 
 void GoodsInfoManager::load()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG

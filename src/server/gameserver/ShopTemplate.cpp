@@ -90,7 +90,7 @@ ShopTemplateManager::~ShopTemplateManager()
 }
 
 void ShopTemplateManager::init() 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -100,7 +100,7 @@ void ShopTemplateManager::init()
 }
 
 void ShopTemplateManager::load() 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

@@ -41,7 +41,7 @@ void convertCommaString( string& str );
 // 
 ////////////////////////////////////////////////////////////////////////////////
 void ActionAskVariable::read (PropertyBuffer & propertyBuffer)
-    throw (Error)
+    
 {
     __BEGIN_TRY
 
@@ -69,7 +69,7 @@ void ActionAskVariable::read (PropertyBuffer & propertyBuffer)
 // 액션을 실행한다.
 ////////////////////////////////////////////////////////////////////////////////
 void ActionAskVariable::execute (Creature * pCreature1 , Creature * pCreature2) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

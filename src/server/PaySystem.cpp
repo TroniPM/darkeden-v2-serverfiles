@@ -79,7 +79,7 @@ PaySystem::~PaySystem()
 // set Pay PlayAvailable DateTime
 //---------------------------------------------------------------------------
 void PaySystem::setPayPlayAvailableDateTime(const string& pat) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -113,7 +113,7 @@ void PaySystem::setPayPlayAvailableDateTime(const string& pat)
 // set Family Pay PlayAvailable DateTime
 //---------------------------------------------------------------------------
 void PaySystem::setFamilyPayPlayAvailableDateTime(const string& pat) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -146,7 +146,7 @@ void PaySystem::setFamilyPayPlayAvailableDateTime(const string& pat)
 // set Pay StartAvailable DateTime
 //---------------------------------------------------------------------------
 void PaySystem::setPayStartAvailableDateTime(const string& pat) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -268,7 +268,7 @@ void PaySystem::setPayPlayValue(PayType payType,
 // update Pay PlayTime
 //---------------------------------------------------------------------------
 bool PaySystem::updatePayPlayTime(const string& playerID, const VSDateTime& currentDateTime, const Timeval& currentTime)
-	throw (ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -387,7 +387,7 @@ bool PaySystem::updatePayPlayTime(const string& playerID, const VSDateTime& curr
 // 그 정보를 읽어들인다.
 //---------------------------------------------------------------------------
 bool PaySystem::loginPayPlayPCRoom(const string& ip, const string& playerID)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -542,7 +542,7 @@ bool PaySystem::loginPayPlayPCRoom(const string& ip, const string& playerID)
 // logout Pay PlayPCRoomIP
 //---------------------------------------------------------------------------
 void PaySystem::logoutPayPlayPCRoom(const string& playerID)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -579,7 +579,7 @@ void PaySystem::logoutPayPlayPCRoom(const string& playerID)
 bool PaySystem::loginPayPlay(PayType payType, 
 							const string& payPlayDate, int payPlayHours, uint payPlayFlag,
 							const string& ip, const string& playerID)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -680,7 +680,7 @@ bool PaySystem::loginPayPlay(PayType payType,
 // login PayPlay
 //---------------------------------------------------------------------------
 bool PaySystem::loginPayPlay(const string& ip, const string& playerID)
-	throw (Error)
+	
 {
 
 	Statement* pStmt = NULL;
@@ -821,7 +821,7 @@ bool PaySystem::loginPayPlay(const string& ip, const string& playerID)
 // logout PayPlay
 //---------------------------------------------------------------------------
 void PaySystem::logoutPayPlay(const string& playerID, bool bClear, bool bDecreaseTime)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -894,7 +894,7 @@ void PaySystem::logoutPayPlay(const string& playerID, bool bClear, bool bDecreas
 //---------------------------------------------------------------------------
 // DB에서 사용시간을 제거한다.
 void PaySystem::clearPayPlayDateTime(const string& playerID)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -923,7 +923,7 @@ void PaySystem::clearPayPlayDateTime(const string& playerID)
 //---------------------------------------------------------------------------
 // DB에서 사용시간을 빼준다. 
 void PaySystem::decreasePayPlayTime(const string& playerID, uint mm)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -951,7 +951,7 @@ void PaySystem::decreasePayPlayTime(const string& playerID, uint mm)
 // decrease PayPlayTime PCRoom
 //---------------------------------------------------------------------------
 void PaySystem::decreasePayPlayTimePCRoom(uint mm)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -988,7 +988,7 @@ void PaySystem::decreasePayPlayTimePCRoom(uint mm)
 // increase PayPlayTime PCRoom
 //---------------------------------------------------------------------------
 void PaySystem::increasePayPlayTimePCRoom(uint mm)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1027,7 +1027,7 @@ void PaySystem::increasePayPlayTimePCRoom(uint mm)
 }
 
 bool PaySystem::isPayPlayingPeriodPersonal(const string& PlayerID)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1072,7 +1072,7 @@ bool PaySystem::isPayPlayingPeriodPersonal(const string& PlayerID)
 // 개인 정액제일 경우 loginPayPlayPCRoom() 을 호출하지 않기 때문에 따로 확인을 한다.
 //---------------------------------------------------------------------------
 bool PaySystem::isPlayInPayPCRoom(const string& ip, const string& playerID)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

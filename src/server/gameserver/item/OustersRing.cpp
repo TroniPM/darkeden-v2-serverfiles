@@ -55,7 +55,7 @@ OustersRing::OustersRing(ItemType_t itemType, const list<OptionType_t>& optionTy
 // create item
 //--------------------------------------------------------------------------------
 void OustersRing::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -106,7 +106,7 @@ void OustersRing::create(const string & ownerID, Storage storage, StorageID_t st
 // save item
 //--------------------------------------------------------------------------------
 void OustersRing::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -130,7 +130,7 @@ void OustersRing::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void OustersRing::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -197,7 +197,7 @@ string OustersRing::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t OustersRing::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -211,7 +211,7 @@ VolumeWidth_t OustersRing::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t OustersRing::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -225,7 +225,7 @@ VolumeHeight_t OustersRing::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t OustersRing::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -239,7 +239,7 @@ Weight_t OustersRing::getWeight() const
 // get/set armor's Defense Bonus
 //--------------------------------------------------------------------------------
 Defense_t OustersRing::getDefenseBonus() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -248,7 +248,7 @@ Defense_t OustersRing::getDefenseBonus() const
 	__END_CATCH
 }
 Protection_t OustersRing::getProtectionBonus() const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -286,7 +286,7 @@ string OustersRingInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void OustersRingInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -351,7 +351,7 @@ void OustersRingInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void OustersRingLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -556,7 +556,7 @@ pOustersRing->setHeroOptionAttr(pResult->getInt(++i));
 // load to zone
 //--------------------------------------------------------------------------------
 void OustersRingLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -638,7 +638,7 @@ pOustersRing->setHeroOptionAttr(pResult->getInt(++i));
 // load to inventory
 //--------------------------------------------------------------------------------
 void OustersRingLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

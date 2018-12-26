@@ -6,7 +6,7 @@
 #include "DB.h"
 
 StringPool::StringPool()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -14,7 +14,7 @@ StringPool::StringPool()
 }
 
 StringPool::~StringPool()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	
@@ -24,7 +24,7 @@ StringPool::~StringPool()
 }
 
 void StringPool::clear()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -34,7 +34,7 @@ void StringPool::clear()
 }
 
 void StringPool::load()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	

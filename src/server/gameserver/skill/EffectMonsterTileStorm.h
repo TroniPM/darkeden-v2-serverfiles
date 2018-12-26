@@ -70,7 +70,7 @@ public:
 	virtual string getEffectClassName()  { return "EffectMonsterTileStorm"; }
 
 public:
-	virtual void load(Creature* pCreature) throw(Error) {}
+	virtual void load(Creature* pCreature)  {}
 };
 
 extern EffectMonsterTileStormLoader* g_pEffectMonsterTileStormLoader;

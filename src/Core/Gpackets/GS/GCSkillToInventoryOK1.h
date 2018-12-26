@@ -29,10 +29,10 @@ class GCSkillToInventoryOK1 : public ModifyInfo {
 public :
 	
 	// constructor
-	GCSkillToInventoryOK1() throw();
+	GCSkillToInventoryOK1() ;
 	
 	// destructor
-	~GCSkillToInventoryOK1() throw();
+	~GCSkillToInventoryOK1() ;
 
 	
 public :

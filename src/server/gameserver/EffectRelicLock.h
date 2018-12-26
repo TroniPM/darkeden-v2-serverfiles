@@ -22,7 +22,7 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_RELIC_LOCK; }
 
-	void affect() throw(Error) {}
+	void affect()  {}
 	void affect(Item* pItem);
 
 	void unaffect(Item* pItem);

@@ -26,10 +26,10 @@ class CGDissectionCorpse : public Packet {
 public:
 	
 	// constructor
-	CGDissectionCorpse() throw();
+	CGDissectionCorpse() ;
 	
 	// destructor
-	~CGDissectionCorpse() throw();
+	~CGDissectionCorpse() ;
 
 	
 public:

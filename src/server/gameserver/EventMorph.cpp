@@ -56,7 +56,7 @@ EventMorph::~EventMorph()
 }
 
 void EventMorph::activate () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG

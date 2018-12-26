@@ -17,7 +17,7 @@
 //////////////////////////////////////////////////////////////////////////////
 
 EffectFlameSight::EffectFlameSight(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -27,21 +27,21 @@ EffectFlameSight::EffectFlameSight(Creature* pCreature)
 }
 
 void EffectFlameSight::affect(Zone* pZone , ZoneCoord_t x , ZoneCoord_t y , Object* pObject)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void EffectFlameSight::affect(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void EffectFlameSight::unaffect(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -95,7 +95,7 @@ void EffectFlameSight::unaffect(Creature* pCreature)
 }
 
 void EffectFlameSight::unaffect()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -106,14 +106,14 @@ void EffectFlameSight::unaffect()
 }
 
 void EffectFlameSight::unaffect(Zone* pZone , ZoneCoord_t x , ZoneCoord_t y , Object* pObject)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void EffectFlameSight::create(const string & ownerID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -149,7 +149,7 @@ void EffectFlameSight::create(const string & ownerID)
 }
 
 void EffectFlameSight::destroy(const string & ownerID)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -171,7 +171,7 @@ void EffectFlameSight::destroy(const string & ownerID)
 }
 
 void EffectFlameSight::save(const string & ownerID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -218,7 +218,7 @@ string EffectFlameSight::toString() const
 }
 
 void EffectFlameSightLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

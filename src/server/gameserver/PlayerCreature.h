@@ -66,10 +66,10 @@ class PlayerCreature : public Creature
 // 생성자 및 소멸자
 ////////////////////////////////////////////////////////////
 public:
-	PlayerCreature(ObjectID_t objectID = 0, Player* pPlayer = NULL) throw();
-	virtual ~PlayerCreature() throw();
+	PlayerCreature(ObjectID_t objectID = 0, Player* pPlayer = NULL) ;
+	virtual ~PlayerCreature() ;
 
-	virtual bool load() throw (InvalidProtocolException, Error);
+	virtual bool load() ;
 	virtual void tinysave(const string & field)  = 0;
 //	virtual void tinysave(const char* field)  = 0;
 
@@ -77,25 +77,25 @@ public:
 // OID 등록 관련 메쏘드
 ////////////////////////////////////////////////////////////
 public:
-	virtual void registerItem(Item* pItem, ObjectRegistry& OR) throw();
-	virtual void registerInventory(ObjectRegistry& OR) throw();
-	virtual void registerInitInventory(ObjectRegistry& OR) throw();
-	virtual void registerStash(void) throw();
+	virtual void registerItem(Item* pItem, ObjectRegistry& OR) ;
+	virtual void registerInventory(ObjectRegistry& OR) ;
+	virtual void registerInitInventory(ObjectRegistry& OR) ;
+	virtual void registerStash(void) ;
 
-	virtual void registerGoodsInventory(ObjectRegistry& OR) throw();
+	virtual void registerGoodsInventory(ObjectRegistry& OR) ;
 
 //////////////////////////////////////////////////////////////
 // 시간제한 아이템 관련 함수
 //////////////////////////////////////////////////////////////
 public:
 	bool wasteIfTimeLimitExpired(Item* pItem);
-	virtual void checkItemTimeLimit() throw (Error) = 0;
+	virtual void checkItemTimeLimit()  = 0;
 	void sendTimeLimitItemInfo();
 	void addTimeLimitItem(Item* pItem, DWORD time);
 	void sellItem( Item* pItem );
 	void deleteItemByMorph( Item* pItem );
 	void updateItemTimeLimit( Item* pItem, DWORD time );
-	virtual void updateEventItemTime( DWORD time ) throw(Error) = 0;
+	virtual void updateEventItemTime( DWORD time )  = 0;
 	void loadTimeLimitItem();
 
 //////////////////////////////////////////////////////////////
@@ -124,12 +124,12 @@ public:
 	virtual void setInventory(Inventory* pInventory) throw() { m_pInventory = pInventory; }
 
 	virtual InventorySlot* getExtraInventorySlot() throw() { return m_pExtraInventorySlot; }
-	virtual Item* getExtraInventorySlotItem() throw(Error) { return m_pExtraInventorySlot->getItem(); }
-	virtual void deleteItemFromExtraInventorySlot() throw(Error) { m_pExtraInventorySlot->deleteItem(); }
-	virtual void addItemToExtraInventorySlot(Item* pItem) throw(Error) { m_pExtraInventorySlot->addItem(pItem); }
+	virtual Item* getExtraInventorySlotItem()  { return m_pExtraInventorySlot->getItem(); }
+	virtual void deleteItemFromExtraInventorySlot()  { m_pExtraInventorySlot->deleteItem(); }
+	virtual void addItemToExtraInventorySlot(Item* pItem)  { m_pExtraInventorySlot->addItem(pItem); }
 
 	// 2003.04.04. by Sequoia
-	virtual void loadItem() throw (InvalidProtocolException, Error);
+	virtual void loadItem() ;
 
 	virtual GoodsInventory* getGoodsInventory()  { return m_pGoodsInventory; }
 
@@ -142,19 +142,19 @@ public:
 
 	virtual BYTE getStashNum(void)  { return m_StashNum; }
 	virtual void setStashNum(BYTE num) throw() { m_StashNum = num; }
-	virtual void setStashNumEx(BYTE num) throw();
+	virtual void setStashNumEx(BYTE num) ;
 
 	virtual Gold_t getStashGold(void)  { return m_StashGold; }
 	virtual void setStashGold(Gold_t gold) throw() { m_StashGold = gold; }
-	virtual void setStashGoldEx(Gold_t gold) throw();
-	virtual void increaseStashGoldEx(Gold_t gold) throw();
-	virtual void decreaseStashGoldEx(Gold_t gold) throw();
+	virtual void setStashGoldEx(Gold_t gold) ;
+	virtual void increaseStashGoldEx(Gold_t gold) ;
+	virtual void decreaseStashGoldEx(Gold_t gold) ;
 	virtual bool checkStashGoldIntegrity() = 0;
 
 	virtual bool getStashStatus(void)  { return m_bStashStatus; }
 	virtual void setStashStatus(bool s) throw() { m_bStashStatus = s; }
 
-	virtual void deleteStash(void) throw();
+	virtual void deleteStash(void) ;
 
 
 ////////////////////////////////////////////////////////////
@@ -193,7 +193,7 @@ public:
 public:
 	FlagSet* getFlagSet(void)  { return m_pFlagSet; }
 	void setFlagSet(FlagSet* pSet) throw() { m_pFlagSet = pSet; } 
-	void deleteFlagSet(void) throw();
+	void deleteFlagSet(void) ;
 
 
 ////////////////////////////////////////////////////////////
@@ -275,19 +275,19 @@ public:
 ////////////////////////////////////////////////////////////
 // Rank Bonus 관련
 ////////////////////////////////////////////////////////////
-	void loadRankBonus() throw();
+	void loadRankBonus() ;
 	bool hasRankBonus( RankBonus::RankBonusType type ) throw() { return m_RankBonusFlag.test(type); }
 	RankBonus* getRankBonus( RankBonus::RankBonusType type ) ;
 	RankBonus* getRankBonusByRank( Rank_t rank ) ;
-	bool learnRankBonus( DWORD type ) throw();
-	void clearRankBonus() throw();
-	void clearRankBonus( Rank_t rank ) throw();
+	bool learnRankBonus( DWORD type ) ;
+	void clearRankBonus() ;
+	void clearRankBonus( Rank_t rank ) ;
 	HashMapRankBonus& getRankBonuses() { return m_RankBonuses; }
 
-	void sendRankBonusInfo() throw();
+	void sendRankBonusInfo() ;
 
 protected:
-	void addRankBonus( RankBonus* rankBonus ) throw();
+	void addRankBonus( RankBonus* rankBonus ) ;
 
 public :
 	// by sigi. 2002.11.19
@@ -306,7 +306,7 @@ public :
 	bool 	addQuest(Quest* pQuest);
 	bool 	checkEvent(QuestEvent* pQuest);
 	Quest* 	removeCompleteQuest();
-	void 	removeAllQuest() throw (Error)	{ if (m_pQuestManager!=NULL) m_pQuestManager->release(); }*/
+	void 	removeAllQuest() 	{ if (m_pQuestManager!=NULL) m_pQuestManager->release(); }*/
 
 	virtual void initAllStatAndSend() = 0;
 	virtual void initAllStat(int numPartyMember) throw() = 0;
@@ -317,7 +317,7 @@ public :
 	virtual void computeOptionStat(OptionType_t optionType) throw() = 0;
 	virtual void computeOptionClassStat( OptionClass OClass, int PlusPoint ) = 0;
 
-	void heartbeat(const Timeval& currentTime) throw();
+	void heartbeat(const Timeval& currentTime) ;
 
 	virtual bool canSee( Object* pObject ) const;
 
@@ -480,8 +480,8 @@ protected:
 	// Default Option Set Info
 	//////////////////////////////////////////////
 public:
-	void	addDefaultOptionSet( DefaultOptionSetType_t type ) throw();
-	void	removeDefaultOptionSet( DefaultOptionSetType_t type ) throw();
+	void	addDefaultOptionSet( DefaultOptionSetType_t type ) ;
+	void	removeDefaultOptionSet( DefaultOptionSetType_t type ) ;
 
 protected:
 	slist<DefaultOptionSetType_t>		m_DefaultOptionSet;

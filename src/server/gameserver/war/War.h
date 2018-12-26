@@ -46,7 +46,7 @@ public:
 	void				setWarStartTime(VSDateTime dt) { m_StartTime = dt; }
 
 public:
-	virtual bool	isModifyCastleOwner( PlayerCreature* pPC ) throw (Error) { return false; }
+	virtual bool	isModifyCastleOwner( PlayerCreature* pPC )  { return false; }
 
 	virtual void	sendWarStartMessage() ;
 	virtual void	sendWarEndMessage() ;
@@ -56,11 +56,11 @@ public:
 
 public:
 	virtual void 	execute();
-	virtual bool    endWar(PlayerCreature* pPC) throw(Error) { return false; }
+	virtual bool    endWar(PlayerCreature* pPC)  { return false; }
 
 protected :
-	virtual void 	executeStart() throw (Error) = 0;
-	virtual void 	executeEnd() throw (Error) = 0;
+	virtual void 	executeStart()  = 0;
+	virtual void 	executeEnd()  = 0;
 
 
 public :

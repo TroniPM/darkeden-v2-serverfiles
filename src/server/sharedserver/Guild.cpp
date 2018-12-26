@@ -997,7 +997,7 @@ void Guild::makeMemberInfo( GCGuildMemberList& gcGuildMemberList )
 
 
 void Guild::expireTimeOutWaitMember( VSDateTime currentDateTime, list<string>& mList )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

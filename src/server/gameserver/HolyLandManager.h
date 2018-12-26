@@ -26,8 +26,8 @@ typedef hash_map<ZoneID_t, Zone*>::const_iterator HashMapZoneConstItor;
 class HolyLandManager 
 {
 public:
-	HolyLandManager() throw();
-	~HolyLandManager() throw();
+	HolyLandManager() ;
+	~HolyLandManager() ;
 
 	void clear() { lock(); m_HolyLands.clear(); unlock(); }
 
@@ -36,8 +36,8 @@ public:
 
 	const HashMapZone& getHolyLands() const { return m_HolyLands; }
 
-	void lock() throw(Error) { m_Mutex.lock(); }
-	void unlock() throw(Error) { m_Mutex.unlock(); }
+	void lock()  { m_Mutex.lock(); }
+	void unlock()  { m_Mutex.unlock(); }
 
 	void broadcast( Packet* pPacket ) ;
 

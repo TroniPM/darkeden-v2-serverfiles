@@ -26,7 +26,7 @@ UserGateway::s_UserGatewayTypeToString[MAX_USER_GATEWAY_TYPE] =
 };
 
 UserGateway::UserGateway()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -38,7 +38,7 @@ UserGateway::UserGateway()
 }
 
 UserGateway::~UserGateway()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -47,7 +47,7 @@ UserGateway::~UserGateway()
 
 void 	
 UserGateway::clear()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -67,7 +67,7 @@ UserGateway::clear()
 }
 
 void    UserGateway::passUser(UserGatewayType ugt)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -81,7 +81,7 @@ void    UserGateway::passUser(UserGatewayType ugt)
 }
 
 int     UserGateway::getInfo(UserGatewayType ugt) const 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -99,7 +99,7 @@ int     UserGateway::getInfo(UserGatewayType ugt) const
 }
 
 int     UserGateway::getTotalInfo() const 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -122,7 +122,7 @@ int     UserGateway::getTotalInfo() const
 
 string	
 UserGateway::toString()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

@@ -330,7 +330,7 @@ void FileAPI::close_ex ( int fd )
 //////////////////////////////////////////////////////////////////////
 //
 // int FileAPI::fcntl_ex ( int fd , int cmd ) 
-//     throw ( Error );
+//     ;
 //
 // Parameters
 //     fd  - file descriptor
@@ -344,7 +344,7 @@ void FileAPI::close_ex ( int fd )
 //
 //////////////////////////////////////////////////////////////////////
 int FileAPI::fcntl_ex ( int fd , int cmd ) 
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -381,7 +381,7 @@ int FileAPI::fcntl_ex ( int fd , int cmd )
 //////////////////////////////////////////////////////////////////////
 //
 // int FileAPI::fcntl_ex ( int fd , int cmd , long arg ) 
-//     throw ( Error );
+//     ;
 //
 // Parameters
 //     fd  - file descriptor
@@ -396,7 +396,7 @@ int FileAPI::fcntl_ex ( int fd , int cmd )
 //
 //////////////////////////////////////////////////////////////////////
 int FileAPI::fcntl_ex ( int fd , int cmd , long arg ) 
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -436,7 +436,7 @@ int FileAPI::fcntl_ex ( int fd , int cmd , long arg )
 //////////////////////////////////////////////////////////////////////
 //
 // bool getfilenonblocking_ex ( int fd ) 
-//      throw ( Error );
+//      ;
 //
 // check if this file is nonblocking mode
 //
@@ -451,7 +451,7 @@ int FileAPI::fcntl_ex ( int fd , int cmd , long arg )
 //
 //////////////////////////////////////////////////////////////////////
 bool FileAPI::getfilenonblocking_ex ( int fd ) 
-     throw ( Error )
+     
 {
 	__BEGIN_TRY
 
@@ -468,7 +468,7 @@ bool FileAPI::getfilenonblocking_ex ( int fd )
 //////////////////////////////////////////////////////////////////////
 //
 // void setfilenonblocking_ex ( int fd , bool on ) 
-//      throw ( Error );
+//      ;
 //
 // make this file blocking/nonblocking
 //
@@ -484,7 +484,7 @@ bool FileAPI::getfilenonblocking_ex ( int fd )
 //
 //////////////////////////////////////////////////////////////////////
 void FileAPI::setfilenonblocking_ex ( int fd , bool on ) 
-     throw ( Error )
+     
 {
 	__BEGIN_TRY
 
@@ -509,7 +509,7 @@ void FileAPI::setfilenonblocking_ex ( int fd , bool on )
 //////////////////////////////////////////////////////////////////////
 //
 // void FileAPI::ioctl_ex ( int fd , int request , void * argp )
-//     throw ( Error )
+//     
 //
 // exception version of ioctl()
 //
@@ -526,7 +526,7 @@ void FileAPI::setfilenonblocking_ex ( int fd , bool on )
 //
 //////////////////////////////////////////////////////////////////////
 void FileAPI::ioctl_ex ( int fd , int request , void * argp )
-    throw ( Error )
+    
 {
 	__BEGIN_TRY
 
@@ -555,7 +555,7 @@ void FileAPI::ioctl_ex ( int fd , int request , void * argp )
 //////////////////////////////////////////////////////////////////////
 //
 // void FileAPI::setfilenonblocking_ex2 ( int fd , bool on )
-//      throw ( Error )
+//      
 //
 // make this stream blocking/nonblocking using ioctl_ex()
 //
@@ -571,7 +571,7 @@ void FileAPI::ioctl_ex ( int fd , int request , void * argp )
 //
 //////////////////////////////////////////////////////////////////////
 void FileAPI::setfilenonblocking_ex2 ( int fd , bool on )
-     throw ( Error )
+     
 {
 	__BEGIN_TRY
 
@@ -589,7 +589,7 @@ void FileAPI::setfilenonblocking_ex2 ( int fd , bool on )
 //////////////////////////////////////////////////////////////////////
 //
 // uint FileAPI::available_ex ( int fd )
-//      throw ( Error )
+//      
 //
 // how much bytes available in this stream? using ioctl_ex()
 //
@@ -604,7 +604,7 @@ void FileAPI::setfilenonblocking_ex2 ( int fd , bool on )
 //
 //////////////////////////////////////////////////////////////////////
 uint FileAPI::availablefile_ex ( int fd )
-     throw ( Error )
+     
 {
 	__BEGIN_TRY
 
@@ -625,11 +625,11 @@ uint FileAPI::availablefile_ex ( int fd )
 //////////////////////////////////////////////////////////////////////
 //
 // int FileAPI::dup_ex ( int fd )
-//     throw ( Error )
+//     
 //
 //////////////////////////////////////////////////////////////////////
 int FileAPI::dup_ex ( int fd )
-    throw ( Error )
+    
 {
 	__BEGIN_TRY
 
@@ -662,11 +662,11 @@ int FileAPI::dup_ex ( int fd )
 //////////////////////////////////////////////////////////////////////
 //
 // long FileAPI::lseek_ex ( int fd , long offset , int whence )
-//      throw ( Error );
+//      ;
 //
 //////////////////////////////////////////////////////////////////////
 long FileAPI::lseek_ex ( int fd , long offset , int whence )
-     throw ( Error )
+     
 {
 	__BEGIN_TRY
 

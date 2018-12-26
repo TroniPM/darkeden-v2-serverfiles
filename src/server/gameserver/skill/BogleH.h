@@ -16,7 +16,7 @@
 class BogleH : public SkillHandler 
 {
 public:
-	BogleH() throw();
+	BogleH() ;
 	~BogleH() throw() {}
 	
 public:

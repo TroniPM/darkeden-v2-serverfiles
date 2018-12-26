@@ -48,7 +48,7 @@ VampireWingItem::VampireWingItem(ItemType_t itemType, const list<OptionType_t>& 
 // create item
 //--------------------------------------------------------------------------------
 void VampireWingItem::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -93,7 +93,7 @@ void VampireWingItem::create(const string & ownerID, Storage storage, StorageID_
 // save item
 //--------------------------------------------------------------------------------
 void VampireWingItem::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -117,7 +117,7 @@ void VampireWingItem::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void VampireWingItem::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -176,7 +176,7 @@ string VampireWingItem::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t VampireWingItem::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -190,7 +190,7 @@ VolumeWidth_t VampireWingItem::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t VampireWingItem::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -204,7 +204,7 @@ VolumeHeight_t VampireWingItem::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t VampireWingItem::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -240,7 +240,7 @@ string VampireWingItemInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void VampireWingItemInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -297,7 +297,7 @@ void VampireWingItemInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void VampireWingItemLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -464,7 +464,7 @@ void VampireWingItemLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void VampireWingItemLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -532,7 +532,7 @@ void VampireWingItemLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void VampireWingItemLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

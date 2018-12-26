@@ -23,13 +23,13 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_PROTECTION_FROM_BLOOD; }
 
-	void affect() throw(Error){}
+	void affect() {}
 	void affect(Creature* pCreature);
 	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject);
 
 	void unaffect();
 	void unaffect(Creature* pCreature);
-	void unaffect(Item* pItem) throw(Error) {}
+	void unaffect(Item* pItem)  {}
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject);
 
 	string toString() ;

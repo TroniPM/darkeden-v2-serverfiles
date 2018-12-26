@@ -19,8 +19,8 @@
 class GCAddItemToZone : public Packet 
 {
 public:
-	GCAddItemToZone() throw();
-	~GCAddItemToZone() throw();
+	GCAddItemToZone() ;
+	~GCAddItemToZone() ;
 
 public:
     void read(SocketInputStream & iStream) ;

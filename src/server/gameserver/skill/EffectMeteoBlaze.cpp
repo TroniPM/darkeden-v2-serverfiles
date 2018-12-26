@@ -29,7 +29,7 @@
 #include "Gpackets/GCAddEffect.h"
 
 EffectMeteoBlaze::EffectMeteoBlaze(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY)
-	throw(Error)
+	
 {
 
 	__BEGIN_TRY
@@ -44,7 +44,7 @@ EffectMeteoBlaze::EffectMeteoBlaze(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t z
 
 
 bool EffectMeteoBlaze::affectCreature(Creature* pTargetCreature, bool bAffectByMove)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -118,7 +118,7 @@ bool EffectMeteoBlaze::affectCreature(Creature* pTargetCreature, bool bAffectByM
 
 
 void EffectMeteoBlaze::affect()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -126,28 +126,28 @@ void EffectMeteoBlaze::affect()
 }
 
 void EffectMeteoBlaze::affect(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void EffectMeteoBlaze::affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void EffectMeteoBlaze::unaffect(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void EffectMeteoBlaze::unaffect()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -158,7 +158,7 @@ void EffectMeteoBlaze::unaffect()
 }
 
 void EffectMeteoBlaze::unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObjbect)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH

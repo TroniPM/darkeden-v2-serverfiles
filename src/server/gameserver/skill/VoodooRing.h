@@ -16,7 +16,7 @@
 class VoodooRing : public SkillHandler 
 {
 public:
-	VoodooRing() throw();
+	VoodooRing() ;
 	~VoodooRing() throw() {}
 	
 public:

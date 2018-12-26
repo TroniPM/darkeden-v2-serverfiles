@@ -48,7 +48,7 @@ GameWorldInfoManager::~GameWorldInfoManager ()
 // initialize GSIM
 //----------------------------------------------------------------------
 void GameWorldInfoManager::init ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -65,7 +65,7 @@ void GameWorldInfoManager::init ()
 // load data from database
 //----------------------------------------------------------------------
 void GameWorldInfoManager::load ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 

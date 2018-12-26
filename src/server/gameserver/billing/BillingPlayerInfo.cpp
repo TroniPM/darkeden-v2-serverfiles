@@ -19,7 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////
 BillingPlayerInfo::BillingPlayerInfo ()
-	 throw ( Error )
+	 
 : m_BillingLoginRequestCount(0), m_BillingLoginVerified(false),
 	m_BillingUserKey(0), m_BillingUserStatus("")
 {
@@ -33,14 +33,14 @@ BillingPlayerInfo::BillingPlayerInfo ()
 //
 //////////////////////////////////////////////////////////////////////
 BillingPlayerInfo::~BillingPlayerInfo ()
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void BillingPlayerInfo::setBillingSession (Player* pPlayer)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -90,7 +90,7 @@ void BillingPlayerInfo::setBillingSession (Player* pPlayer)
 //
 //////////////////////////////////////////////////////////////////////
 string BillingPlayerInfo::toString () const
-       throw ( Error )
+       
 {
 	__BEGIN_TRY
 		

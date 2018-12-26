@@ -5,7 +5,7 @@
 #include "CoupleManager.h"
 
 bool CoupleManager::isCouple( PlayerCreature* pPC1, string name2 )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	
@@ -38,7 +38,7 @@ bool CoupleManager::isCouple( PlayerCreature* pPC1, string name2 )
 }
 
 bool CoupleManager::isCouple( PlayerCreature* pPC1, PlayerCreature* pPC2 )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	
@@ -74,7 +74,7 @@ bool CoupleManager::isCouple( PlayerCreature* pPC1, PlayerCreature* pPC2 )
 }
 
 bool CoupleManager::hasCouple( PlayerCreature* pPC )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -106,7 +106,7 @@ bool CoupleManager::hasCouple( PlayerCreature* pPC )
 }
 
 bool CoupleManager::getPartnerName( PlayerCreature* pPC, string& partnerName )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -139,7 +139,7 @@ bool CoupleManager::getPartnerName( PlayerCreature* pPC, string& partnerName )
 }
 
 void CoupleManager::makeCouple( PlayerCreature* pPC1, PlayerCreature* pPC2 )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -167,7 +167,7 @@ void CoupleManager::makeCouple( PlayerCreature* pPC1, PlayerCreature* pPC2 )
 }
 
 void CoupleManager::removeCouple( PlayerCreature* pPC1, PlayerCreature* pPC2 ) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -196,7 +196,7 @@ void CoupleManager::removeCouple( PlayerCreature* pPC1, PlayerCreature* pPC2 )
 }
 
 void CoupleManager::removeCoupleForce( PlayerCreature* pPC1, string strPC2 )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -218,7 +218,7 @@ void CoupleManager::removeCoupleForce( PlayerCreature* pPC1, string strPC2 )
 	__END_CATCH
 }
 
-void CoupleManager::removeCoupleForce( PlayerCreature* pPC1 ) throw(Error)
+void CoupleManager::removeCoupleForce( PlayerCreature* pPC1 ) 
 {
 	__BEGIN_TRY
 

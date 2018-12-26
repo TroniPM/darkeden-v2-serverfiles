@@ -55,7 +55,7 @@ OustersCoat::OustersCoat(ItemType_t itemType, const list<OptionType_t>& optionTy
 // create item
 //--------------------------------------------------------------------------------
 void OustersCoat::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -106,7 +106,7 @@ void OustersCoat::create(const string & ownerID, Storage storage, StorageID_t st
 // save item
 //--------------------------------------------------------------------------------
 void OustersCoat::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -130,7 +130,7 @@ void OustersCoat::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void OustersCoat::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -197,7 +197,7 @@ string OustersCoat::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t OustersCoat::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -211,7 +211,7 @@ VolumeWidth_t OustersCoat::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t OustersCoat::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -225,7 +225,7 @@ VolumeHeight_t OustersCoat::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t OustersCoat::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -239,7 +239,7 @@ Weight_t OustersCoat::getWeight() const
 // get/set armor's Defense Bonus
 //--------------------------------------------------------------------------------
 Defense_t OustersCoat::getDefenseBonus() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -248,7 +248,7 @@ Defense_t OustersCoat::getDefenseBonus() const
 	__END_CATCH
 }
 Protection_t OustersCoat::getProtectionBonus() const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -286,7 +286,7 @@ string OustersCoatInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void OustersCoatInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -351,7 +351,7 @@ void OustersCoatInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void OustersCoatLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -556,7 +556,7 @@ pOustersCoat->setHeroOptionAttr(pResult->getInt(++i));
 // load to zone
 //--------------------------------------------------------------------------------
 void OustersCoatLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -638,7 +638,7 @@ pOustersCoat->setHeroOptionAttr(pResult->getInt(++i));
 // load to inventory
 //--------------------------------------------------------------------------------
 void OustersCoatLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

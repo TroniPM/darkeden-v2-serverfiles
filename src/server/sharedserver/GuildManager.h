@@ -41,23 +41,23 @@ class GuildManager
 ///// Member methods /////
 	
 public: // constructor & destructor 
-	GuildManager() throw();
-	~GuildManager() throw();
+	GuildManager() ;
+	~GuildManager() ;
 
 
 public: // initializing related methods
-	void init() throw();
-	void load() throw();
+	void init() ;
+	void load() ;
 
 
 public: // memory related methods
 	void addGuild(Guild* pGuild) throw(DuplicatedException);
 	void addGuild_NOBLOCKED(Guild* pGuild) throw(DuplicatedException);
 	void deleteGuild(GuildID_t id) throw(NoSuchElementException);
-	Guild* getGuild(GuildID_t id) throw();
-	Guild* getGuild_NOBLOCKED(GuildID_t id) throw();
+	Guild* getGuild(GuildID_t id) ;
+	Guild* getGuild_NOBLOCKED(GuildID_t id) ;
 
-	void clear() throw();
+	void clear() ;
 	void clear_NOBLOCKED();
 
 
@@ -68,11 +68,11 @@ public: // misc methods
 
 #ifdef __SHARED_SERVER__
 public:
-	void makeSGGuildInfo( SGGuildInfo& sgGuildInfo ) throw();
+	void makeSGGuildInfo( SGGuildInfo& sgGuildInfo ) ;
 #endif
 
-	void makeWaitGuildList( GCWaitGuildList& gcWaitGuildList, GuildRace_t race ) throw();
-	void makeActiveGuildList( GCActiveGuildList& gcWaitGuildList, GuildRace_t race ) throw();
+	void makeWaitGuildList( GCWaitGuildList& gcWaitGuildList, GuildRace_t race ) ;
+	void makeActiveGuildList( GCActiveGuildList& gcWaitGuildList, GuildRace_t race ) ;
 
 public:
 	void lock() { m_Mutex.lock(); }

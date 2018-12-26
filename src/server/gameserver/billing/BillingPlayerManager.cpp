@@ -38,7 +38,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 BillingPlayerManager::BillingPlayerManager () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -55,7 +55,7 @@ BillingPlayerManager::BillingPlayerManager ()
 // destructor
 //////////////////////////////////////////////////////////////////////
 BillingPlayerManager::~BillingPlayerManager () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -68,7 +68,7 @@ BillingPlayerManager::~BillingPlayerManager ()
 // stop thread
 //////////////////////////////////////////////////////////////////////
 void BillingPlayerManager::stop () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

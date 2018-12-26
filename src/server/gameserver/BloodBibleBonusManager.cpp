@@ -35,7 +35,7 @@ BloodBibleBonusManager::~BloodBibleBonusManager()
 }
 
 void BloodBibleBonusManager::init()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -61,7 +61,7 @@ void BloodBibleBonusManager::clear()
 }
 
 void BloodBibleBonusManager::load()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -112,7 +112,7 @@ void BloodBibleBonusManager::load()
 }
 
 void BloodBibleBonusManager::save()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

@@ -25,7 +25,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 SocketInputStream::SocketInputStream ( Socket * sock , uint BufferLen ) 
-	throw ( Error )
+	
 : m_pSocket(sock), m_Buffer(NULL), m_BufferLen(BufferLen), m_Head(0), m_Tail(0)
 {
 	__BEGIN_TRY
@@ -47,7 +47,7 @@ SocketInputStream::SocketInputStream ( Socket * sock , uint BufferLen )
 // destructor
 //////////////////////////////////////////////////////////////////////
 SocketInputStream::~SocketInputStream () 
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 		

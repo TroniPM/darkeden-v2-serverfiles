@@ -22,7 +22,7 @@
 //
 //////////////////////////////////////////////////////////////////////
 TheOneServer::TheOneServer ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 	
@@ -48,7 +48,7 @@ TheOneServer::TheOneServer ()
 //
 //////////////////////////////////////////////////////////////////////
 TheOneServer::~TheOneServer ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 		
@@ -66,7 +66,7 @@ TheOneServer::~TheOneServer ()
 //
 //////////////////////////////////////////////////////////////////////
 void TheOneServer::init ()
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 
@@ -90,7 +90,7 @@ void TheOneServer::init ()
 //
 //////////////////////////////////////////////////////////////////////
 void TheOneServer::start ()
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 
@@ -111,7 +111,7 @@ void TheOneServer::start ()
 //
 //////////////////////////////////////////////////////////////////////
 void TheOneServer::stop ()
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 

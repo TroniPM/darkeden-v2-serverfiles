@@ -81,7 +81,7 @@ VampEXPInfoManager::~VampEXPInfoManager()
 }
 
 void VampEXPInfoManager::init()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -91,7 +91,7 @@ void VampEXPInfoManager::init()
 }
 
 void VampEXPInfoManager::load()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG

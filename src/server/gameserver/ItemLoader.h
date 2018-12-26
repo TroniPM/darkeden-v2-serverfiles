@@ -31,13 +31,13 @@ public:
 	virtual string getItemClassName()  = 0;
 
 	// load to creature
-	virtual void load(Creature* pCreature) throw(Error) = 0;
+	virtual void load(Creature* pCreature)  = 0;
 
 	// load to zone
-	virtual void load(Zone* pZone) throw(Error) = 0;
+	virtual void load(Zone* pZone)  = 0;
 
 	// load to inventory
-	virtual void load(DWORD StorageID, Inventory* pInventory) throw(Error) = 0;
+	virtual void load(DWORD StorageID, Inventory* pInventory)  = 0;
 
 };
 

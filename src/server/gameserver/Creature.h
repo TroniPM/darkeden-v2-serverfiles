@@ -72,7 +72,7 @@ public:
 	};
 
 public:
-    Creature(ObjectID_t objectID = 0, Player* pPlayer = NULL) throw();
+    Creature(ObjectID_t objectID = 0, Player* pPlayer = NULL) ;
     virtual ~Creature();
 
 public:
@@ -117,7 +117,7 @@ public:
 
 	virtual bool isDead()  = 0;
 	virtual bool isAlive()  = 0;
-	void recoverHP(HP_t recoverAmount) throw();
+	void recoverHP(HP_t recoverAmount) ;
 
 	void setFlag(Effect::EffectClass Flag) throw() { m_Flag.set(Flag); }
 	void removeFlag(Effect::EffectClass Flag) throw() { m_Flag.reset(Flag); }
@@ -129,7 +129,7 @@ public:
     virtual PhoneNumber_t getPhoneNumber()  { return 0; }
 
 public:
-	virtual void act(const Timeval& currentTime) throw(Error) = 0; // for monster & npc
+	virtual void act(const Timeval& currentTime)  = 0; // for monster & npc
 
 public:
 
@@ -141,7 +141,7 @@ public:
 	// 따라서, Creature에 등록 메쏘드를 두고 여기서 Zone에 접근해서 
 	// 스스로를 등록하도록 한 것이다. 
 	////////////////////////////////////////////////////////////
-	virtual void registerObject() throw(Error) = 0;
+	virtual void registerObject()  = 0;
 
 	// 크리처에 대한 특정 좌표의 시야 상태를 리턴한다.
 	VisionState getVisionState(ZoneCoord_t x, ZoneCoord_t y); 
@@ -185,9 +185,9 @@ public:
 
 	// get/set sight level
 	Sight_t getSight()  { return m_Sight; }
-	void setSight(Sight_t sight) throw(Error) { m_Sight = sight; Assert(m_Sight <= maxSight); }
+	void setSight(Sight_t sight)  { m_Sight = sight; Assert(m_Sight <= maxSight); }
 
-	virtual Sight_t getEffectedSight() throw();
+	virtual Sight_t getEffectedSight() ;
 
 	// get/set/test move mode
 	MoveMode getMoveMode()  { return m_MoveMode; }

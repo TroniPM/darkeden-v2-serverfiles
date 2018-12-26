@@ -27,7 +27,7 @@ GameServerInfoManager::~GameServerInfoManager ()
 
 
 void GameServerInfoManager::clear()
-	throw (Error)
+	
 {
 	// hashmap 안의 각 pair 의 second, 즉 GameServerInfo 객체만을 삭제하고
 	// pair 자체는 그대로 둔다. (GameServerInfo가 힙에 생성되어 있다는 것에
@@ -56,7 +56,7 @@ void GameServerInfoManager::clear()
 
 
 void GameServerInfoManager::init ()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -70,7 +70,7 @@ void GameServerInfoManager::init ()
 }
 
 void GameServerInfoManager::load ()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

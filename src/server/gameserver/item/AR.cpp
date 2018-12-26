@@ -67,7 +67,7 @@ AR::~AR()
 // create item
 //--------------------------------------------------------------------------------
 void AR::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -127,7 +127,7 @@ void AR::create(const string & ownerID, Storage storage, StorageID_t storageID, 
 // save item
 //--------------------------------------------------------------------------------
 void AR::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -151,7 +151,7 @@ void AR::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void AR::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -198,7 +198,7 @@ void AR::save(const string & ownerID, Storage storage, StorageID_t storageID, BY
 //--------------------------------------------------------------------------------
 // save item
 //--------------------------------------------------------------------------------
-void AR::saveBullet() throw (Error)
+void AR::saveBullet() 
 {
 	__BEGIN_TRY
 
@@ -248,7 +248,7 @@ string AR::toString() const
 // get width
 //--------------------------------------------------------------------------------
 /*VolumeWidth_t AR::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -262,7 +262,7 @@ string AR::toString() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t AR::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -276,7 +276,7 @@ VolumeHeight_t AR::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t AR::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -290,7 +290,7 @@ Weight_t AR::getWeight() const
 // get/set weapon's minDamage
 //--------------------------------------------------------------------------------
 Damage_t AR::getMinDamage() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -304,7 +304,7 @@ Damage_t AR::getMinDamage() const
 // get/set weapon's maxDamage
 //--------------------------------------------------------------------------------
 Damage_t AR::getMaxDamage() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -318,7 +318,7 @@ Damage_t AR::getMaxDamage() const
 // get/set weapon's range
 //--------------------------------------------------------------------------------
 Range_t AR::getRange() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -332,7 +332,7 @@ Range_t AR::getRange() const
 // get/set weapon's ToHit Bonus
 //--------------------------------------------------------------------------------
 ToHit_t AR::getToHitBonus() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -383,7 +383,7 @@ string ARInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void ARInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -454,7 +454,7 @@ void ARInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void ARLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -652,7 +652,7 @@ void ARLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void ARLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -737,7 +737,7 @@ void ARLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void ARLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

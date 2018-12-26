@@ -22,8 +22,8 @@ class Object;
 class Sector
 {
 public:
-	Sector() throw();
-	~Sector() throw();
+	Sector() ;
+	~Sector() ;
 
 public:
 	void addObject(Object* pObject) throw (DuplicatedException, Error);

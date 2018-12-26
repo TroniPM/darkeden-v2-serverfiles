@@ -28,10 +28,10 @@ class GCKnocksTargetBackOK4 : public Packet {
 public :
 	
 	// constructor
-	GCKnocksTargetBackOK4() throw();
+	GCKnocksTargetBackOK4() ;
 	
 	// destructor
-	~GCKnocksTargetBackOK4() throw();
+	~GCKnocksTargetBackOK4() ;
 
 	
 public :

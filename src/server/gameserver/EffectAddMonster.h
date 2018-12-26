@@ -28,19 +28,19 @@ public:
 	// OBJECT_PRIORITY_NONE 라는 뜻은, 타일에 들어가서는 안된다는 뜻이다.
 	virtual ObjectPriority getObjectPriority()  { return OBJECT_PRIORITY_NONE; }
 
-	virtual void affect() throw(Error) { throw UnsupportedError(__PRETTY_FUNCTION__); }
-	virtual void affect(Creature* pCreature) throw(Error) { throw UnsupportedError(__PRETTY_FUNCTION__); }
-	virtual void affect(Object* pObject) throw(Error) { throw UnsupportedError(__PRETTY_FUNCTION__);}
+	virtual void affect()  { throw UnsupportedError(__PRETTY_FUNCTION__); }
+	virtual void affect(Creature* pCreature)  { throw UnsupportedError(__PRETTY_FUNCTION__); }
+	virtual void affect(Object* pObject)  { throw UnsupportedError(__PRETTY_FUNCTION__);}
 	virtual void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Creature* pCreature);
 	
 	virtual void unaffect();
 	virtual void unaffect(Object* pObject);
-	virtual void unaffect(Creature* pCreature = NULL) throw(Error) { throw UnsupportedError(__PRETTY_FUNCTION__);}	
+	virtual void unaffect(Creature* pCreature = NULL)  { throw UnsupportedError(__PRETTY_FUNCTION__);}	
 	virtual void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Creature* pCreature);
 
-	virtual void create(const string & ownerID) throw(Error) {}
-	virtual void save(const string & ownerID) throw(Error) {}
-	virtual void destroy(const string & ownerID) throw(Error) {}
+	virtual void create(const string & ownerID)  {}
+	virtual void save(const string & ownerID)  {}
+	virtual void destroy(const string & ownerID)  {}
 	
 	// get debug string
 	virtual string toString() ;

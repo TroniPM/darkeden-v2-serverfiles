@@ -25,8 +25,8 @@
 class GCGQuestInventory : public Packet 
 {
 public:
-	GCGQuestInventory() throw();
-	~GCGQuestInventory() throw();
+	GCGQuestInventory() ;
+	~GCGQuestInventory() ;
 	
 public:
     void read(SocketInputStream & iStream) ;

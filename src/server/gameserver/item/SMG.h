@@ -23,9 +23,9 @@
 class SMG : public ConcreteItem<Item::ITEM_CLASS_SMG, NoStack, HasDurability, HasOption, WeaponGrade, SlayerGun, NoEnchantLevel, HasOption2, HasHeroOption, HasHeroOptionAttr> 
 {
 public:
-	SMG() throw();
-	SMG(ItemType_t itemType, const list<OptionType_t>& optionType) throw();
-	~SMG() throw();
+	SMG() ;
+	SMG(ItemType_t itemType, const list<OptionType_t>& optionType) ;
+	~SMG() ;
 	
 public:
 	virtual void create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID=0);
@@ -35,7 +35,7 @@ public:
 	virtual void saveBullet();
 	virtual string toString() ;
 
-	static void initItemIDRegistry(void) throw();
+	static void initItemIDRegistry(void) ;
 
 public:
 //	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_SMG; }

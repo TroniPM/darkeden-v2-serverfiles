@@ -172,7 +172,7 @@ Slayer::Slayer ()
 }
 
 Slayer::~Slayer() 
-    throw (Error)
+    
 {
 	__BEGIN_TRY
 
@@ -267,7 +267,7 @@ Slayer::~Slayer()
 // Zone에 종속된 ObjectRegistry를 사용해서, Slayer 와 소유아이템들의
 // ObjectID를 할당받는다.
 void Slayer::registerObject ()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -336,7 +336,7 @@ void Slayer::registerObject ()
 // Zone에 종속된 ObjectRegistry를 사용해서, Slayer 와 소유아이템들의
 // ObjectID를 할당받는다. 초기에 ItemTrace 를 위해 따로 뺌
 void Slayer::registerInitObject ()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -406,7 +406,7 @@ void Slayer::registerInitObject ()
 
 // 시간제한 아이템을 체크한다.
 // 모든 아이템이 이미 register 되어있어야 한다.
-void Slayer::checkItemTimeLimit() throw (Error)
+void Slayer::checkItemTimeLimit() 
 {
 	__BEGIN_TRY
 
@@ -496,7 +496,7 @@ void Slayer::checkItemTimeLimit() throw (Error)
 	__END_CATCH
 }
 
-void Slayer::updateEventItemTime( DWORD time ) throw(Error)
+void Slayer::updateEventItemTime( DWORD time ) 
 {
 	__BEGIN_TRY
 
@@ -1302,7 +1302,7 @@ bool Slayer::load()
 }
 
 void Slayer::save () const
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1695,7 +1695,7 @@ void Slayer::removeAllCastleSkill()
 // 이 메소드는 접속할때 Item을 Loading 하면서 쓰는 wearItem이다.
 // 이 메소드 안에선 Broadcast를 하지 않는 것이 좋다.
 void Slayer::wearItem(WearPart Part, Item* pItem)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -1918,7 +1918,7 @@ void Slayer::wearItem(WearPart Part, Item* pItem)
 // Slayer::wearItem()
 // Item을 장착창에 장착시키고 능력치를 계산한다.
 void Slayer::wearItem(WearPart Part)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -2272,7 +2272,7 @@ void Slayer::wearItem(WearPart Part)
 // *NOTE : 임시로 bool 타입의 parameter를 넣어 둔다.
 //         코드가 구질구질 해지기 때문에 나중에 바꾸도록 한다.. 필수!
 void Slayer::takeOffItem(WearPart Part, bool bAddOnMouse, bool bSendModifyInfo)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -2733,7 +2733,7 @@ void Slayer::setMotorcycle(Motorcycle* pMotorcycle)
 }
 
 void Slayer::getOffMotorcycle()
-	throw(Error)
+	
 {
 	__BEGIN_DEBUG
 	
@@ -3918,7 +3918,7 @@ SkillDomainType_t Slayer::getHighestSkillDomain() const
 }
 	
 void Slayer::saveSkills(void) const 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -3992,7 +3992,7 @@ IP_t Slayer::getIP(void) const
 }
 
 void Slayer::saveGears(void) const
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -4044,7 +4044,7 @@ void Slayer::saveGears(void) const
 }
 
 void Slayer::saveExps(void) const 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -4674,7 +4674,7 @@ Slayer::getItemShapeColor(Item* pItem, OptionInfo* pOptionInfo) const
  
 
 bool Slayer::canPlayFree()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -4684,7 +4684,7 @@ bool Slayer::canPlayFree()
 }
 
 bool Slayer::isPayPlayAvaiable() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

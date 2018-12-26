@@ -53,7 +53,7 @@ public:
 	bool operator !()  { return m_bConnected == false; }
 	
 	// Statement 객체를 생성해서 리턴한다.
-	Statement * createStatement() throw();	
+	Statement * createStatement() ;	
 	
 	// get the MYSQL object
 	MYSQL * getMYSQL() throw() { return &m_Mysql; }
@@ -87,8 +87,8 @@ public:
 	string getError() throw() { return mysql_error(&m_Mysql); }
 
 	// lock/unlock
-	void lock() throw(Error) { m_Mutex.lock(); }
-	void unlock() throw(Error) { m_Mutex.unlock(); }
+	void lock()  { m_Mutex.lock(); }
+	void unlock()  { m_Mutex.unlock(); }
 	
 private:
 	

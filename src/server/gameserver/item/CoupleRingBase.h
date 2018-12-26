@@ -16,7 +16,7 @@ class ItemInfo;
 class CoupleRingBase : public Item 
 {
 public:
-	CoupleRingBase() throw();
+	CoupleRingBase() ;
 	virtual ~CoupleRingBase() {}
 	
 public:
@@ -27,7 +27,7 @@ public:
 	void 		setPartnerItemID( ItemID_t partnerItemID );
 
 public:
-	virtual bool	hasPartnerItem() throw(Error) = 0;
+	virtual bool	hasPartnerItem()  = 0;
 
 public:
 	static ItemInfo*	getItemInfo( ItemType_t itemType, Race_t race );

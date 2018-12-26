@@ -43,7 +43,7 @@ void HolyLandManager::addHolyLand( Zone* pZone )
 }
 
 void HolyLandManager::broadcast( Packet* pPacket ) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -65,7 +65,7 @@ void HolyLandManager::broadcast( Packet* pPacket ) const
 }
 
 /*void HolyLandManager::sendBloodBibleStatus() const 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -104,7 +104,7 @@ void HolyLandManager::broadcast( Packet* pPacket ) const
 }
 */
 void HolyLandManager::fixTimeband( uint timeband )
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -128,7 +128,7 @@ void HolyLandManager::fixTimeband( uint timeband )
 }
 
 void HolyLandManager::resumeTimeband()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -152,7 +152,7 @@ void HolyLandManager::resumeTimeband()
 
 
 void    HolyLandManager::killAllMonsters() 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -175,7 +175,7 @@ void    HolyLandManager::killAllMonsters()
 }
 
 void	HolyLandManager::remainRaceWarPlayers()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -197,7 +197,7 @@ void	HolyLandManager::remainRaceWarPlayers()
 }
 
 void HolyLandManager::refreshHolyLandPlayers()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

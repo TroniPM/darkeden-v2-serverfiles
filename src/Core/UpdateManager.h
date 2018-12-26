@@ -77,8 +77,8 @@ public :
 public :
 
 	// list methods
-	void push_back (Update* pUpdate) throw (Error) { Assert(pUpdate != NULL); m_Updates.push_back(pUpdate); }
-	void pop_front () throw (Error) { Assert(!m_Updates.empty()); m_Updates.pop_front(); }
+	void push_back (Update* pUpdate)  { Assert(pUpdate != NULL); m_Updates.push_back(pUpdate); }
+	void pop_front ()  { Assert(!m_Updates.empty()); m_Updates.pop_front(); }
 	Update* front ()  { Assert(!m_Updates.empty()); return m_Updates.front(); }
 	bool empty ()  { return m_Updates.empty(); }
 

@@ -20,7 +20,7 @@ class NPCManager : public CreatureManager
 {
 public:
 	NPCManager();
-	~NPCManager() throw();
+	~NPCManager() ;
 	
 public:
 	void load(ZoneID_t zoneID, int race=0xFF);	// 0xFF¿Ã∏È ALL.. -_-;

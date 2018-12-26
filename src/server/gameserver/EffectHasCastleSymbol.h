@@ -29,7 +29,7 @@ public:
 	string toString() ;
 
 public:
-	void   	setPart(int part) throw();
+	void   	setPart(int part) ;
 
 private:
 	string		m_PartName;	// 성의 상징 이름

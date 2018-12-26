@@ -47,7 +47,7 @@ Socket::Socket ( SocketImpl * impl )
 }
 
 Socket::~Socket () 
-	throw ( Error ) 
+	 
 { 
 	__BEGIN_TRY
 
@@ -80,7 +80,7 @@ void Socket::reconnect ( const string & host , uint port )
 }
 
 void Socket::close () 
-	throw (Error) 
+	 
 { 
 	__BEGIN_TRY
 
@@ -130,7 +130,7 @@ uint Socket::receive (void* buf, uint len, uint flags)
 }
 
 uint Socket::available () const
-	throw (Error) 
+	 
 { 
 	__BEGIN_TRY
 
@@ -140,7 +140,7 @@ uint Socket::available () const
 }
 
 uint Socket::getLinger () const 
-	throw (Error) 
+	 
 { 
 	__BEGIN_TRY
 
@@ -150,7 +150,7 @@ uint Socket::getLinger () const
 }
 
 void Socket::setLinger (uint lingertime) 
-	throw (Error) 
+	 
 {
 	__BEGIN_TRY
 
@@ -160,7 +160,7 @@ void Socket::setLinger (uint lingertime)
 }
 
 uint Socket::getSockError() const 
-	throw (Error) 
+	 
 { 
 	__BEGIN_TRY
 
@@ -170,7 +170,7 @@ uint Socket::getSockError() const
 }
 
 bool Socket::isNonBlocking () const 
-	throw (Error) 
+	 
 { 
 	__BEGIN_TRY
 
@@ -180,7 +180,7 @@ bool Socket::isNonBlocking () const
 }
 
 void Socket::setNonBlocking (bool on = true) 
-	throw (Error) 
+	 
 { 
 	__BEGIN_TRY
 
@@ -190,7 +190,7 @@ void Socket::setNonBlocking (bool on = true)
 }
 
 uint Socket::getReceiveBufferSize () const 
-	throw (Error) 
+	 
 { 
 	__BEGIN_TRY
 
@@ -200,7 +200,7 @@ uint Socket::getReceiveBufferSize () const
 }
 
 void Socket::setReceiveBufferSize (uint size)
-	throw (Error) 
+	 
 { 
 	__BEGIN_TRY
 
@@ -210,7 +210,7 @@ void Socket::setReceiveBufferSize (uint size)
 }
 
 uint Socket::getSendBufferSize () const 
-	throw (Error) 
+	 
 { 
 	__BEGIN_TRY
 
@@ -220,7 +220,7 @@ uint Socket::getSendBufferSize () const
 }
 
 void Socket::setSendBufferSize (uint size)
-	throw (Error) 
+	 
 { 
 	__BEGIN_TRY
 

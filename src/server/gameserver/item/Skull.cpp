@@ -49,7 +49,7 @@ Skull::Skull(ItemType_t itemType, const list<OptionType_t>& optionType)
 // create item
 //--------------------------------------------------------------------------------
 void Skull::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -99,7 +99,7 @@ void Skull::create(const string & ownerID, Storage storage, StorageID_t storageI
 // save item
 //--------------------------------------------------------------------------------
 void Skull::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -123,7 +123,7 @@ void Skull::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void Skull::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -181,7 +181,7 @@ string Skull::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t Skull::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -195,7 +195,7 @@ VolumeWidth_t Skull::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t Skull::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -209,7 +209,7 @@ VolumeHeight_t Skull::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t Skull::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -246,7 +246,7 @@ string SkullInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void SkullInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -301,7 +301,7 @@ void SkullInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void SkullLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -474,7 +474,7 @@ void SkullLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void SkullLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -541,7 +541,7 @@ void SkullLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void SkullLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

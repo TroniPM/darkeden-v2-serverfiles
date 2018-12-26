@@ -31,10 +31,10 @@ class CGAttack : public Packet {
 public:
 	
 	// constructor
-	CGAttack() throw();
+	CGAttack() ;
 	
 	// destructor
-	~CGAttack() throw();
+	~CGAttack() ;
 
 	
 public:

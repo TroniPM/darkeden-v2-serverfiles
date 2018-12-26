@@ -16,7 +16,7 @@
 class ClaymoreExplosion: public SkillHandler 
 {
 public:
-	ClaymoreExplosion() throw();
+	ClaymoreExplosion() ;
 	~ClaymoreExplosion() throw() {}
 	
 public:

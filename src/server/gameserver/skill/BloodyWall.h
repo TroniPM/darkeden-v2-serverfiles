@@ -16,7 +16,7 @@
 class BloodyWall : public SkillHandler 
 {
 public:
-	BloodyWall() throw();
+	BloodyWall() ;
 	~BloodyWall() throw() {}
 	
 public:

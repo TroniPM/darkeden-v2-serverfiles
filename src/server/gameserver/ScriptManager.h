@@ -24,7 +24,7 @@ class XMLTree;
 class ScriptManager 
 {
 public:
-	void init() throw(Error) { load("PUBLIC"); }
+	void init()  { load("PUBLIC"); }
 	void load(const string & name);
 
 public:

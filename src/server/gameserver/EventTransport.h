@@ -17,8 +17,8 @@
 class EventTransport : public Event 
 {
 public:
-	EventTransport(GamePlayer* pGamePlayer) throw();
-	~EventTransport() throw();			
+	EventTransport(GamePlayer* pGamePlayer) ;
+	~EventTransport() ;			
 
 public:
 	virtual EventClass getEventClass()  { return EVENT_CLASS_TRANSPORT; }

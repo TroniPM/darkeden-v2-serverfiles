@@ -48,7 +48,7 @@ PacketValidator::~PacketValidator ()
 // initialize packet validators
 //----------------------------------------------------------------------
 void PacketValidator::init ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 

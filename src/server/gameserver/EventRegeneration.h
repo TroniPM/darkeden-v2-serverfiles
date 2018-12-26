@@ -17,7 +17,7 @@ class EventRegeneration : public Event
 {
 public:
 	EventRegeneration(GamePlayer* pGamePlayer);
-	virtual ~EventRegeneration() throw();
+	virtual ~EventRegeneration() ;
 
 public:
 	virtual EventClass getEventClass()  { return EVENT_CLASS_REGENERATION; }

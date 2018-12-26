@@ -28,10 +28,10 @@ class GCMineExplosionOK1 : public ModifyInfo {
 public :
 	
 	// constructor
-	GCMineExplosionOK1() throw();
+	GCMineExplosionOK1() ;
 	
 	// destructor
-	~GCMineExplosionOK1() throw();
+	~GCMineExplosionOK1() ;
 
 	
 public :
@@ -84,7 +84,7 @@ public :
     void setCListNum(BYTE CListNum) throw() { m_CListNum = CListNum; }
 
     // add / delete  Creature List
-    void addCListElement(ObjectID_t ObjectID) throw();
+    void addCListElement(ObjectID_t ObjectID) ;
 
 	// Clear Creature List
     void clearCList() throw() { m_CList.clear(); m_CListNum = 0; }

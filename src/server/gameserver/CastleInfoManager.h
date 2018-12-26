@@ -54,11 +54,11 @@ public:
 	Gold_t decreaseTaxBalanceEx( Gold_t tax );
 
 	const list<OptionType_t>& getOptionTypeList()  { return m_BonusOptionList; }
-	void setOptionTypeList( const string& options ) throw();
+	void setOptionTypeList( const string& options ) ;
 
 	bool isCastleZone(ZoneID_t targetZoneID) ;
 	const list<ZoneID_t>& getZoneIDList()  { return m_CastleZoneIDList; }
-	void setZoneIDList( const string& zoneIDs ) throw();
+	void setZoneIDList( const string& zoneIDs ) ;
 
 	Race_t getRace() const { return m_Race; }
 	void   setRace( Race_t race ) { m_Race = race; }
@@ -113,7 +113,7 @@ public:
 	const hash_map<ZoneID_t, CastleInfo*>& getCastleInfos() const 	{ return m_CastleInfos; }
 
 	int getItemTaxRatio( const PlayerCreature* pPC, const NPC* pNPC = NULL ) ;
-	Gold_t getEntranceFee( ZoneID_t zoneID, PlayerCreature* pPC ) const  throw(Error);
+	Gold_t getEntranceFee( ZoneID_t zoneID, PlayerCreature* pPC );
 
 	bool isCastleMember( PlayerCreature* pPC ) ;
 	bool isCastleMember( ZoneID_t zoneID, PlayerCreature* pPC ) ;

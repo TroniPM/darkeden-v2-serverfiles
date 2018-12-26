@@ -72,14 +72,14 @@ public:
 
 public:
 
-	// void load() throw();
+	// void load() ;
 	void load();
 	
 	// get InstantDungeonMonster
 	InstantDungeonMonster* getInstantDungeonMonster(int id) const;
 
 	// add InstantDungeonMonster
-	void addInstantDungeonMonster(InstantDungeonMonster* pInstantDungeonMonster) throw(DuplicatedException, Error);
+	void addInstantDungeonMonster(InstantDungeonMonster* pInstantDungeonMonster);
 
 	int getGroupBoss(int ID, int Boss) const;
 	int getCountSum(int Count) const;
@@ -87,7 +87,7 @@ public:
 	int getMaxInt(int Count) const;
 	int getTowerMinInt(int Count, int Statge) const;
 	int getTowerEndStatge(int Count) const;
-	list<WORD> getTowerMonsterList(int Count, int Statge) const  throw();
+	list<WORD> getTowerMonsterList(int Count, int Statge);
 	//const list<MonsterType_t>& getTowerMaxInt(int Count, int Statge) const;
 	int getBossCount(int Counts) const;
 	// toString for Debug

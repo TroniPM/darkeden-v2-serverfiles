@@ -29,7 +29,7 @@ class Result
 {
 public:
 	Result(T_RESULT *, const string& statement);
-	~Result() throw();
+	~Result() ;
 
 public:
 	// 다음 row로 넘어간다.

@@ -17,8 +17,8 @@
 class CGAddMouseToZone : public Packet 
 {
 public:
-	CGAddMouseToZone() throw();
-	~CGAddMouseToZone() throw();
+	CGAddMouseToZone() ;
+	~CGAddMouseToZone() ;
 
 public:
     void read(SocketInputStream & iStream) ;

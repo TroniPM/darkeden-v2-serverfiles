@@ -20,10 +20,10 @@ typedef WarInfoList::const_iterator 	WarInfoListItor;
 class GCWarList : public Packet
 {
 public:
-	GCWarList() throw();
-	virtual ~GCWarList() throw();
+	GCWarList() ;
+	virtual ~GCWarList() ;
 
-	void	clear() throw();
+	void	clear() ;
 
 public:
 	void read(SocketInputStream & iStream) ;
@@ -39,7 +39,7 @@ public:
 	bool 	isEmpty()  { return m_WarInfos.empty(); }
 
 	void addWarInfo( WarInfo* pWarInfo ) throw() { m_WarInfos.push_back( pWarInfo ); }
-	WarInfo* popWarInfo() throw();
+	WarInfo* popWarInfo() ;
 
 	void	operator = (const GCWarList& WL);
 

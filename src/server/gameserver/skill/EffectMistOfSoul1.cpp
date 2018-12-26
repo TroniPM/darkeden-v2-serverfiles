@@ -18,7 +18,7 @@
 #include "Gpackets/GCRemoveEffect.h"
 
 EffectMistOfSoul1::EffectMistOfSoul1(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -28,7 +28,7 @@ EffectMistOfSoul1::EffectMistOfSoul1(Creature* pCreature)
 }
 
 void EffectMistOfSoul1::affect()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -40,14 +40,14 @@ void EffectMistOfSoul1::affect()
 }
 
 void EffectMistOfSoul1::affect(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void EffectMistOfSoul1::unaffect(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -70,7 +70,7 @@ void EffectMistOfSoul1::unaffect(Creature* pCreature)
 }
 
 void EffectMistOfSoul1::unaffect()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

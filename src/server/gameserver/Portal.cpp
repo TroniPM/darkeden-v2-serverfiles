@@ -153,7 +153,7 @@ void PrivatePortal::setY(ZoneCoord_t y)
 
 
 bool PrivatePortal::activate (Creature* pCreature) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -195,7 +195,7 @@ string PrivatePortal::toString () const
 //////////////////////////////////////////////////////////////////////////////
 
 bool NormalPortal::activate (Creature* pCreature) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -254,7 +254,7 @@ string NormalPortal::toString () const
 //////////////////////////////////////////////////////////////////////////////
 
 bool GuildPortal::activate (Creature* pCreature) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -325,7 +325,7 @@ string GuildPortal::toString () const
 //////////////////////////////////////////////////////////////////////////////
 
 bool MultiPortal::activate (Creature* pCreature, ZoneID_t ZoneID) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -383,7 +383,7 @@ string MultiPortal::toString () const
 //////////////////////////////////////////////////////////////////////////////
 
 bool TriggeredPortal::activate(Creature* pCreature) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

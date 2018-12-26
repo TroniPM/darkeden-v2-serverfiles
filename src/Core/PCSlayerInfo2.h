@@ -98,7 +98,7 @@ public :
 
 	Sex getSex ()  { return m_Sex; }
 	void setSex (Sex sex) throw () { m_Sex = sex; }
-	void setSex (string sex) throw (InvalidProtocolException)
+	void setSex (string sex) 
 	{
 		if (sex == Sex2String[MALE]) 
 			m_Sex = MALE;
@@ -110,7 +110,7 @@ public :
 
 	HairStyle getHairStyle ()  { return m_HairStyle; }
 	void setHairStyle (HairStyle hairStyle) throw () { m_HairStyle = hairStyle; }
-	void setHairStyle (string hairStyle) throw (InvalidProtocolException)
+	void setHairStyle (string hairStyle) 
 	{
 		if (hairStyle == HairStyle2String[HAIR_STYLE1])
 			m_HairStyle = HAIR_STYLE1;
@@ -145,7 +145,7 @@ public :
 		if (m_STR[attrType] > maxSlayerAttr) throw Error("STR out of range"); 
 		return m_STR[attrType]; 
 	}
-    void setSTR (Attr_t str, AttrType attrType = ATTR_CURRENT) throw (Error)
+    void setSTR (Attr_t str, AttrType attrType = ATTR_CURRENT) 
 	{ 
 		if (str > maxSlayerAttr) throw Error("STR out of range"); 
 		m_STR[attrType] = str; 
@@ -156,7 +156,7 @@ public :
 		if (m_DEX[attrType] > maxSlayerAttr) throw Error("DEX out of range"); 
 		return m_DEX[attrType]; 
 	}
-	void setDEX (Attr_t dex, AttrType attrType = ATTR_CURRENT) throw (Error)
+	void setDEX (Attr_t dex, AttrType attrType = ATTR_CURRENT) 
 	{ 
 		if (dex > maxSlayerAttr) throw Error("DEX out of range"); 
 		m_DEX[attrType] = dex; 
@@ -167,20 +167,20 @@ public :
 		if (m_INT[attrType] > maxSlayerAttr) throw Error("INT out of range"); 
 		return m_INT[attrType]; 
 	}
-	void setINT (Attr_t inte, AttrType attrType = ATTR_CURRENT) throw (Error)
+	void setINT (Attr_t inte, AttrType attrType = ATTR_CURRENT) 
 	{ 
 		if (inte > maxSlayerAttr) throw Error("INT out of range"); 
 		m_INT[attrType] = inte; 
 	}
 
 	Exp_t getSTRExp ()  { return m_STRExp; };
-	void setSTRExp(Exp_t STRExp) throw(Error) { m_STRExp = STRExp; }
+	void setSTRExp(Exp_t STRExp)  { m_STRExp = STRExp; }
 
 	Exp_t getDEXExp ()  { return m_DEXExp; };
-	void setDEXExp(Exp_t DEXExp) throw(Error) { m_DEXExp = DEXExp; }
+	void setDEXExp(Exp_t DEXExp)  { m_DEXExp = DEXExp; }
 
 	Exp_t getINTExp ()  { return m_INTExp; };
-	void setINTExp(Exp_t INTExp) throw(Error) { m_INTExp = INTExp; }
+	void setINTExp(Exp_t INTExp)  { m_INTExp = INTExp; }
 
 	HP_t getHP (AttrType attrType = ATTR_CURRENT)  { return m_HP[attrType]; }
 	void setHP (HP_t hp, AttrType attrType = ATTR_CURRENT) throw () { m_HP[attrType] = hp; }

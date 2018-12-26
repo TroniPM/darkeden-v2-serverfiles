@@ -12,7 +12,7 @@
 //--------------------------------------------------------------------------------
 void	
 QuestPrice::setPrice(const string& text)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -65,7 +65,7 @@ QuestPrice::setPrice(const string& text)
 
 string	
 QuestPrice::toString() const 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

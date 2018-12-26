@@ -37,7 +37,7 @@ Belt::Belt()
 }
 
 Belt::Belt(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw(Error)
+	
 //: m_ItemType(itemType), m_OptionType(optionType), m_Durability(0), m_pInventory(NULL)
 {
 	__BEGIN_TRY
@@ -76,7 +76,7 @@ Belt::~Belt()
 // create item
 //--------------------------------------------------------------------------------
 void Belt::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -132,7 +132,7 @@ void Belt::create(const string & ownerID, Storage storage, StorageID_t storageID
 // destroy item
 //--------------------------------------------------------------------------------
 bool Belt::destroy()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -182,7 +182,7 @@ bool Belt::destroy()
 // save item
 //--------------------------------------------------------------------------------
 void Belt::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -206,7 +206,7 @@ void Belt::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void Belt::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -312,7 +312,7 @@ string Belt::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t Belt::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -326,7 +326,7 @@ VolumeWidth_t Belt::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t Belt::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -340,7 +340,7 @@ VolumeHeight_t Belt::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t Belt::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -365,7 +365,7 @@ PocketNum_t Belt::getPocketCount(void) const
 }
 
 /*Defense_t Belt::getDefenseBonus() const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -375,7 +375,7 @@ PocketNum_t Belt::getPocketCount(void) const
 }
 
 Protection_t Belt::getProtectionBonus() const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -414,7 +414,7 @@ string BeltInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void BeltInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -482,7 +482,7 @@ void BeltInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void BeltLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -690,7 +690,7 @@ void BeltLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void BeltLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -772,7 +772,7 @@ void BeltLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void BeltLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

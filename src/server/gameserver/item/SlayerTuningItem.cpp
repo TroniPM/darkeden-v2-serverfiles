@@ -48,7 +48,7 @@ SlayerTuningItem::SlayerTuningItem(ItemType_t itemType, const list<OptionType_t>
 }
 
 void SlayerTuningItem::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -87,7 +87,7 @@ void SlayerTuningItem::create(const string & ownerID, Storage storage, StorageID
 // save item
 //--------------------------------------------------------------------------------
 void SlayerTuningItem::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -108,7 +108,7 @@ void SlayerTuningItem::tinysave(const char* field) const
 }
 
 void SlayerTuningItem::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -159,7 +159,7 @@ string SlayerTuningItem::toString() const
 }
 
 VolumeWidth_t SlayerTuningItem::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -169,7 +169,7 @@ VolumeWidth_t SlayerTuningItem::getVolumeWidth() const
 }
 	
 VolumeHeight_t SlayerTuningItem::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -179,7 +179,7 @@ VolumeHeight_t SlayerTuningItem::getVolumeHeight() const
 }
 		
 Weight_t SlayerTuningItem::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -209,7 +209,7 @@ string SlayerTuningItemInfo::toString() const
 }
 
 void SlayerTuningItemInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -264,7 +264,7 @@ void SlayerTuningItemInfoManager::load()
 //////////////////////////////////////////////////////////////////////////////
 
 void SlayerTuningItemLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -435,7 +435,7 @@ void SlayerTuningItemLoader::load(Creature* pCreature)
 }
 
 void SlayerTuningItemLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -496,7 +496,7 @@ void SlayerTuningItemLoader::load(Zone* pZone)
 }
 
 void SlayerTuningItemLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

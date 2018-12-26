@@ -24,7 +24,7 @@
 #include "RankBonus.h"
 
 void CurseOfBlood2::execute(Vampire* pSlayer, VampireSkillSlot* pSkillSlot, CEffectID_t CEffectID)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

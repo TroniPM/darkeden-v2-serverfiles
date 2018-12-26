@@ -28,10 +28,10 @@ class GCSkillToSelfOK1 : public ModifyInfo {
 public :
 	
 	// constructor
-	GCSkillToSelfOK1() throw();
+	GCSkillToSelfOK1() ;
 	
 	// destructor
-	~GCSkillToSelfOK1() throw();
+	~GCSkillToSelfOK1() ;
 
 	
 public :

@@ -32,10 +32,10 @@ class CGUseBonusPoint : public Packet {
 public:
 	
 	// constructor
-	CGUseBonusPoint() throw();
+	CGUseBonusPoint() ;
 	
 	// destructor
-	~CGUseBonusPoint() throw();
+	~CGUseBonusPoint() ;
 
 	
 public:

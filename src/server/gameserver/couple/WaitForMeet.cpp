@@ -33,7 +33,7 @@ static const char* CoupleRingOptions[2][4] =
 	{ "STR+4", "DEX+4", "DAM+3", "ASPD+4" } };
 
 uint WaitForMeet::waitPartner( PlayerCreature* pTargetPC )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -64,7 +64,7 @@ uint WaitForMeet::waitPartner( PlayerCreature* pTargetPC )
 }
 
 uint WaitForMeet::acceptPartner( PlayerCreature* pRequestedPC )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -149,7 +149,7 @@ uint WaitForMeet::acceptPartner( PlayerCreature* pRequestedPC )
 }
 
 void WaitForMeet::timeExpired()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -165,7 +165,7 @@ void WaitForMeet::timeExpired()
 }
 
 Gold_t WaitForMeet::getCoupleRegisterFee( PlayerCreature* pPC )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -201,7 +201,7 @@ Gold_t WaitForMeet::getCoupleRegisterFee( PlayerCreature* pPC )
 }
 
 void WaitForMeet::receiveCoupleRegisterFee( PlayerCreature* pPC ) 
-	throw(Error)
+	
 { 
 	__BEGIN_TRY
 
@@ -238,7 +238,7 @@ OptionType_t WaitForMeet::getRandomOptionType( PlayerCreature* pPC )
 }
 
 CoupleRingBase* WaitForMeet::giveCoupleRing( PlayerCreature* pPC, string partnerName, _TPOINT* pPt )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -283,7 +283,7 @@ bool WaitForMeet::canGetCoupleRing( PlayerCreature* pPC, _TPOINT& pt )
 }
 
 uint WaitForMeet::canHavePartner( PlayerCreature* pPC )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

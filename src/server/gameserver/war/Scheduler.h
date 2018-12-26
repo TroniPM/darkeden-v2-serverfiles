@@ -33,8 +33,8 @@ public :
 class Scheduler 
 {
 public:
-	Scheduler() throw();
-	virtual ~Scheduler() throw();
+	Scheduler() ;
+	virtual ~Scheduler() ;
 
 	void			clear();
 

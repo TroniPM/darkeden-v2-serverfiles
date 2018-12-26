@@ -153,7 +153,7 @@ ItemInfoManager::~ItemInfoManager()
 // ItemInfoManager::init()
 //////////////////////////////////////////////////////////////////////////////
 void ItemInfoManager::init ()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -782,7 +782,7 @@ void ItemInfoManager::init ()
 // get sub info class manager
 //////////////////////////////////////////////////////////////////////////////
 InfoClassManager* ItemInfoManager::getInfoManager (Item::ItemClass Class) const
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -799,7 +799,7 @@ InfoClassManager* ItemInfoManager::getInfoManager (Item::ItemClass Class) const
 // get item info
 //////////////////////////////////////////////////////////////////////////////
 ItemInfo* ItemInfoManager::getItemInfo (Item::ItemClass Class, ItemType_t ItemType) const 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -816,7 +816,7 @@ ItemInfo* ItemInfoManager::getItemInfo (Item::ItemClass Class, ItemType_t ItemTy
 // get #item-info
 //////////////////////////////////////////////////////////////////////////////
 uint ItemInfoManager::getItemCount (Item::ItemClass Class) const 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

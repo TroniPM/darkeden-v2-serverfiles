@@ -51,7 +51,7 @@ ActionRegenEventShop::~ActionRegenEventShop()
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 void ActionRegenEventShop::read (PropertyBuffer & propertyBuffer)
-    throw (Error)
+    
 {
 	__BEGIN_TRY
 
@@ -100,7 +100,7 @@ void ActionRegenEventShop::read (PropertyBuffer & propertyBuffer)
 // NOTE : ShopTemplate은 이 액션이 실행되기 전에 모두 로드되어 있어야 한다.
 ////////////////////////////////////////////////////////////////////////////////
 void ActionRegenEventShop::execute (Creature * pCreature1 , Creature * pCreature2) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

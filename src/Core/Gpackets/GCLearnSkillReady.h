@@ -27,10 +27,10 @@ class GCLearnSkillReady : public Packet {
 public :
 	
 	// constructor
-	GCLearnSkillReady() throw();
+	GCLearnSkillReady() ;
 	
 	// destructor
-	~GCLearnSkillReady() throw();
+	~GCLearnSkillReady() ;
 
 	
 public :

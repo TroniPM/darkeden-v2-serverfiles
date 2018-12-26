@@ -4,7 +4,7 @@
 #include "Zone.h"
 #include "Gpackets/GCRemoveEffect.h"
 
-EffectHasSweeper::EffectHasSweeper(Creature* pCreature) throw(Error)
+EffectHasSweeper::EffectHasSweeper(Creature* pCreature) 
 {
 	__BEGIN_TRY
 
@@ -14,7 +14,7 @@ EffectHasSweeper::EffectHasSweeper(Creature* pCreature) throw(Error)
 	__END_CATCH
 }
 
-void EffectHasSweeper::unaffect() throw(Error)
+void EffectHasSweeper::unaffect() 
 {
 	__BEGIN_TRY
 

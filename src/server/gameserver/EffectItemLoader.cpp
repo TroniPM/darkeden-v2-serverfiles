@@ -16,7 +16,7 @@
 #include "DB.h"
 
 EffectItemLoader::EffectItemLoader(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -26,21 +26,21 @@ EffectItemLoader::EffectItemLoader(Creature* pCreature)
 }
 
 EffectItemLoader::~EffectItemLoader()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void EffectItemLoader::affect (Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void EffectItemLoader::unaffect()
-	    throw(Error)
+	    
 {
     __BEGIN_TRY
 
@@ -51,7 +51,7 @@ void EffectItemLoader::unaffect()
 }
 
 void EffectItemLoader::unaffect (Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -75,7 +75,7 @@ void EffectItemLoader::unaffect (Creature* pCreature)
 }
 
 void EffectItemLoader::create (const string & ownerID) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -114,7 +114,7 @@ void EffectItemLoader::create (const string & ownerID)
 }
 
 void EffectItemLoader::destroy (const string & ownerID)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -136,7 +136,7 @@ void EffectItemLoader::destroy (const string & ownerID)
 }
 
 void EffectItemLoader::save (const string & ownerID) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -174,7 +174,7 @@ string EffectItemLoader::toString()
 }
 
 void EffectItemLoaderLoader::load (Creature* pCreature) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

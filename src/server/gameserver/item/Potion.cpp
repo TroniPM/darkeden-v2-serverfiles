@@ -53,7 +53,7 @@ Potion::Potion(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNu
 // create item
 //--------------------------------------------------------------------------------
 void Potion::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -106,7 +106,7 @@ void Potion::create(const string & ownerID, Storage storage, StorageID_t storage
 // destroy
 //--------------------------------------------------------------------------------
 bool Potion::destroy() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -140,7 +140,7 @@ bool Potion::destroy()
 // save item
 //--------------------------------------------------------------------------------
 void Potion::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -165,7 +165,7 @@ void Potion::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void Potion::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -227,7 +227,7 @@ string Potion::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t Potion::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -241,7 +241,7 @@ VolumeWidth_t Potion::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t Potion::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -255,7 +255,7 @@ VolumeHeight_t Potion::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t Potion::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -438,7 +438,7 @@ string PotionInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void PotionInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -494,7 +494,7 @@ void PotionInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void PotionLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -703,7 +703,7 @@ void PotionLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void PotionLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -770,7 +770,7 @@ void PotionLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void PotionLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

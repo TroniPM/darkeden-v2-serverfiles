@@ -19,9 +19,9 @@
 class VampireSkillSlot 
 {
 public:
-    VampireSkillSlot() throw();
-    VampireSkillSlot(SkillType_t SkillType, ulong Interval, ulong CastingTime) throw();
-    virtual ~VampireSkillSlot() throw();
+    VampireSkillSlot() ;
+    VampireSkillSlot(SkillType_t SkillType, ulong Interval, ulong CastingTime) ;
+    virtual ~VampireSkillSlot() ;
 
 public:
 	virtual void save(const string & ownerID);
@@ -40,8 +40,8 @@ public:
 	void setCastingTime(Turn_t CastingTime) throw() { m_CastingTime = CastingTime; }
 
     Timeval getRunTime() throw() { return m_runTime; }
-	void setRunTime() throw();
-	void setRunTime(Turn_t delay) throw();
+	void setRunTime() ;
+	void setRunTime(Turn_t delay) ;
 
 	string getName()  { return m_Name; }
 	void setName(const string & Name) { m_Name = Name; }

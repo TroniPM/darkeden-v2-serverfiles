@@ -24,10 +24,10 @@ class CGUsePotionFromQuickSlot : public Packet {
 public:
 
 	// constructor
-	CGUsePotionFromQuickSlot() throw();
+	CGUsePotionFromQuickSlot() ;
 
 	// destructor
-	~CGUsePotionFromQuickSlot() throw();
+	~CGUsePotionFromQuickSlot() ;
 
 public:
 	

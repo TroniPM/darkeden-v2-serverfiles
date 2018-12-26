@@ -45,8 +45,8 @@ const string RELIC4NAME = "역십자가";
 
 class CombatSystemManager {
 	public:
-		CombatSystemManager() throw();
-		~CombatSystemManager() throw();
+		CombatSystemManager() ;
+		~CombatSystemManager() ;
 
 		void CheckCombat(); // 전투 활성화 여부 체크하여 생성/파괴 실시
 

@@ -18,7 +18,7 @@
 class SummonMiga : public SkillHandler 
 {
 public:
-	SummonMiga() throw();
+	SummonMiga() ;
 	~SummonMiga() throw() {}
 	
 public:

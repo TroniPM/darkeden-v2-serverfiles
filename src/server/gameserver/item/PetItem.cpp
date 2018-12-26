@@ -53,7 +53,7 @@ PetItem::PetItem(ItemType_t itemType, const list<OptionType_t>& optionType)
 }
 
 void PetItem::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -126,7 +126,7 @@ void PetItem::create(const string & ownerID, Storage storage, StorageID_t storag
 // save item
 //--------------------------------------------------------------------------------
 void PetItem::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -147,7 +147,7 @@ void PetItem::tinysave(const char* field) const
 }
 
 void PetItem::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -335,7 +335,7 @@ string PetItem::toString() const
 }
 
 VolumeWidth_t PetItem::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -345,7 +345,7 @@ VolumeWidth_t PetItem::getVolumeWidth() const
 }
 	
 VolumeHeight_t PetItem::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -355,7 +355,7 @@ VolumeHeight_t PetItem::getVolumeHeight() const
 }
 	
 Weight_t PetItem::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -387,7 +387,7 @@ string PetItemInfo::toString() const
 }
 
 void PetItemInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -441,7 +441,7 @@ void PetItemInfoManager::load()
 //////////////////////////////////////////////////////////////////////////////
 
 void PetItemLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -718,7 +718,7 @@ void PetItemLoader::load(Creature* pCreature)
 }
 
 void PetItemLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -781,7 +781,7 @@ void PetItemLoader::load(Zone* pZone)
 }
 
 void PetItemLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

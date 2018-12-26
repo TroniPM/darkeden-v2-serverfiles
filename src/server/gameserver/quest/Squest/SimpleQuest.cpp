@@ -12,7 +12,7 @@
 //--------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------
 SimpleQuest::SimpleQuest()
-	throw (Error)
+	
 : m_pOwner(NULL), m_AvailableSecond(0), m_pReward(NULL), m_pPenalty(NULL)
 {
 	//m_Deadline.tv_sec = m_Deadline.tv_usec = 0;
@@ -20,7 +20,7 @@ SimpleQuest::SimpleQuest()
 }
 
 SimpleQuest::~SimpleQuest()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -72,7 +72,7 @@ SimpleQuest::getRemainDuration() const
 //--------------------------------------------------------------------------------
 void
 SimpleQuest::destroy() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -110,7 +110,7 @@ SimpleQuest::destroy()
 //--------------------------------------------------------------------------------
 bool		
 SimpleQuest::checkFail() 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -127,7 +127,7 @@ SimpleQuest::checkFail()
 //--------------------------------------------------------------------------------
 void		
 SimpleQuest::heartbeat()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -144,7 +144,7 @@ SimpleQuest::heartbeat()
 //--------------------------------------------------------------------------------
 void		
 SimpleQuest::processActive() 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -161,7 +161,7 @@ SimpleQuest::processActive()
 //--------------------------------------------------------------------------------
 void
 SimpleQuest::processFail()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -178,7 +178,7 @@ SimpleQuest::processFail()
 //--------------------------------------------------------------------------------
 void		
 SimpleQuest::take(Creature* pCreature, bool bNewQuest) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -203,7 +203,7 @@ SimpleQuest::take(Creature* pCreature, bool bNewQuest)
 //--------------------------------------------------------------------------------
 void		
 SimpleQuest::giveReward() 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -220,7 +220,7 @@ SimpleQuest::giveReward()
 //--------------------------------------------------------------------------------
 void		
 SimpleQuest::givePenalty() 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -237,7 +237,7 @@ SimpleQuest::givePenalty()
 //--------------------------------------------------------------------------------
 void				
 SimpleQuest::addReward(QuestPrice* pQuestPrice) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -252,7 +252,7 @@ SimpleQuest::addReward(QuestPrice* pQuestPrice)
 //--------------------------------------------------------------------------------
 void				
 SimpleQuest::addPenalty(QuestPrice* pQuestPrice) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -265,7 +265,7 @@ SimpleQuest::addPenalty(QuestPrice* pQuestPrice)
 //
 void        
 SimpleQuest::addReward(const string& text) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -280,7 +280,7 @@ SimpleQuest::addReward(const string& text)
 
 void        
 SimpleQuest::addPenalty(const string& text) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -295,7 +295,7 @@ SimpleQuest::addPenalty(const string& text)
 
 string
 SimpleQuest::getRewardToString() const 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -309,7 +309,7 @@ SimpleQuest::getRewardToString() const
 
 string      
 SimpleQuest::getPenaltyToString() const 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

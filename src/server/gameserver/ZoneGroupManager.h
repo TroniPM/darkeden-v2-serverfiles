@@ -59,10 +59,10 @@ class ZoneGroupManager {
 public:
 	
 	// constructor
-	ZoneGroupManager() throw();
+	ZoneGroupManager() ;
 	
 	// destructor
-	~ZoneGroupManager() throw();
+	~ZoneGroupManager() ;
 	
 
 public:
@@ -106,8 +106,8 @@ public:
 
 	void	outputLoadValue();
 
-	void    lock() throw (Error)        { m_Mutex.lock(); }
-    void    unlock() throw (Error)      { m_Mutex.unlock(); }
+	void    lock()         { m_Mutex.lock(); }
+    void    unlock()       { m_Mutex.unlock(); }
 
 	void	lockZoneGroups();
 	void	unlockZoneGroups();

@@ -41,7 +41,7 @@
 #endif	// __GAME_SERVER__
 
 void CGLotterySelectHandler::execute (CGLotterySelect* pPacket , Player* pPlayer)
-	 throw (Error)
+	 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 		

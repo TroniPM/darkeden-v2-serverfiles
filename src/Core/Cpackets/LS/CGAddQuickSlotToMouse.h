@@ -17,8 +17,8 @@
 class CGAddQuickSlotToMouse : public Packet 
 {
 public:
-	CGAddQuickSlotToMouse() throw();
-	~CGAddQuickSlotToMouse() throw();
+	CGAddQuickSlotToMouse() ;
+	~CGAddQuickSlotToMouse() ;
 
 public:
     void read(SocketInputStream & iStream) ;

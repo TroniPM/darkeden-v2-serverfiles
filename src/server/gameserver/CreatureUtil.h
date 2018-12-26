@@ -23,23 +23,23 @@ class GamePlayer;
 ////////////////////////////////////////////////////////////////////////////////
 // 같은 크리쳐 클래스인가? 
 ////////////////////////////////////////////////////////////////////////////////
-bool isSameRace(Creature* pCreature1, Creature* pCreature2) throw();
+bool isSameRace(Creature* pCreature1, Creature* pCreature2) ;
 
 ////////////////////////////////////////////////////////////////////////////////
 // ObjectID로 아이템 찾기
 ////////////////////////////////////////////////////////////////////////////////
-Item* findItemOID(Creature* pCreature, ObjectID_t objectID) throw();
-Item* findItemOID(Creature* pCreature, ObjectID_t objectID, Item::ItemClass IClass) throw();
-Item* findItemOID(Creature* pCreature, ObjectID_t objectID, int& storage, int& x, int& y) throw();
-Item* findItemOID(Creature* pCreature, ObjectID_t objectID, Item::ItemClass IClass, int& storage, int& x, int& y) throw();
+Item* findItemOID(Creature* pCreature, ObjectID_t objectID) ;
+Item* findItemOID(Creature* pCreature, ObjectID_t objectID, Item::ItemClass IClass) ;
+Item* findItemOID(Creature* pCreature, ObjectID_t objectID, int& storage, int& x, int& y) ;
+Item* findItemOID(Creature* pCreature, ObjectID_t objectID, Item::ItemClass IClass, int& storage, int& x, int& y) ;
 
 ////////////////////////////////////////////////////////////////////////////////
 // ItemID로 아이템 찾기
 ////////////////////////////////////////////////////////////////////////////////
-Item* findItemIID(Creature* pCreature, ItemID_t itemID) throw();
-Item* findItemIID(Creature* pCreature, ItemID_t itemID, Item::ItemClass IClass) throw();
-Item* findItemIID(Creature* pCreature, ItemID_t itemID, int& storage, int& x, int& y) throw();
-Item* findItemIID(Creature* pCreature, ItemID_t itemID, Item::ItemClass IClass, int& storage, int& x, int& y) throw();
+Item* findItemIID(Creature* pCreature, ItemID_t itemID) ;
+Item* findItemIID(Creature* pCreature, ItemID_t itemID, Item::ItemClass IClass) ;
+Item* findItemIID(Creature* pCreature, ItemID_t itemID, int& storage, int& x, int& y) ;
+Item* findItemIID(Creature* pCreature, ItemID_t itemID, Item::ItemClass IClass, int& storage, int& x, int& y) ;
 
 ////////////////////////////////////////////////////////////////////////////////
 // 경험치 계산하기
@@ -50,13 +50,13 @@ Item* findItemIID(Creature* pCreature, ItemID_t itemID, Item::ItemClass IClass, 
 const int BLOODDRAIN_EXP = 70; // 흡혈했을 경우는 70%
 const int KILL_EXP       = 30; // 죽였을 경우는 30%
 
-int computeCreatureExp(Creature* pCreature, int percent, Ousters* pOusters = NULL) throw();
-int computeBloodDrainHealPoint(Creature* pCreature, int percent) throw();
+int computeCreatureExp(Creature* pCreature, int percent, Ousters* pOusters = NULL) ;
+int computeBloodDrainHealPoint(Creature* pCreature, int percent) ;
 
 ////////////////////////////////////////////////////////////////////////////////
 // 이벤트용 몹인지 검사하기...
 ////////////////////////////////////////////////////////////////////////////////
-bool isEventMonster(Creature* pCreature) throw();
+bool isEventMonster(Creature* pCreature) ;
 
 ////////////////////////////////////////////////////////////////////////////////
 // 임의의 크리쳐가 현재 움직일 수 있는 상태인가를 검사하는 함수

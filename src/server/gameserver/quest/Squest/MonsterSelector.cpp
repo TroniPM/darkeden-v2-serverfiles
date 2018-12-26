@@ -7,7 +7,7 @@
 // MType=11, SType=33, Num=10
 void        
 MonsterSelector::setMonster(const string& text) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -62,7 +62,7 @@ MonsterSelector::setMonster(const string& text)
 
 string
 MonsterSelector::toString() const
-    throw (Error)
+    
 {
 	__BEGIN_TRY
 

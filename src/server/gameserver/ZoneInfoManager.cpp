@@ -47,7 +47,7 @@ ZoneInfoManager::~ZoneInfoManager ()
 // initialize zone info manager
 //////////////////////////////////////////////////////////////////////////////
 void ZoneInfoManager::init () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -64,7 +64,7 @@ void ZoneInfoManager::init ()
 // load from database
 //////////////////////////////////////////////////////////////////////////////
 void ZoneInfoManager::load ()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -173,7 +173,7 @@ void ZoneInfoManager::load ()
 // add zone info to zone info manager
 //////////////////////////////////////////////////////////////////////////////
 void ZoneInfoManager::addZoneInfo (ZoneInfo* pZoneInfo) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

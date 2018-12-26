@@ -19,7 +19,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////////////
 EventRegeneration::EventRegeneration (GamePlayer* pGamePlayer) 
-	throw (Error)
+	
 : Event(pGamePlayer)
 {
 }
@@ -38,7 +38,7 @@ EventRegeneration::~EventRegeneration ()
 // activate
 //////////////////////////////////////////////////////////////////////////////
 void EventRegeneration::activate () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

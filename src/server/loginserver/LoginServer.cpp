@@ -40,7 +40,7 @@
 //
 //////////////////////////////////////////////////////////////////////
 LoginServer::LoginServer ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 	
@@ -104,7 +104,7 @@ LoginServer::LoginServer ()
 //
 //////////////////////////////////////////////////////////////////////
 LoginServer::~LoginServer ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 		
@@ -198,7 +198,7 @@ LoginServer::~LoginServer ()
 //
 //////////////////////////////////////////////////////////////////////
 void LoginServer::init ()
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 
@@ -255,7 +255,7 @@ void LoginServer::init ()
 //
 //////////////////////////////////////////////////////////////////////
 void LoginServer::start ()
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 
@@ -299,7 +299,7 @@ void LoginServer::start ()
 //
 //////////////////////////////////////////////////////////////////////
 void LoginServer::stop ()
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 

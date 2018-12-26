@@ -26,7 +26,7 @@
 // 뱀파이어 오브젝트 핸들러
 //////////////////////////////////////////////////////////////////////////////
 void BlazeWalk2::execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID)
-    throw(Error)
+    
 {
     __BEGIN_TRY
 
@@ -71,7 +71,7 @@ void BlazeWalk2::execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* 
     __END_CATCH
 }
 
-void BlazeWalk2::execute(Slayer* pSlayer, Creature* pTargetCreature, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error)
+void BlazeWalk2::execute(Slayer* pSlayer, Creature* pTargetCreature, SkillSlot* pSkillSlot, CEffectID_t CEffectID) 
 {
 	__BEGIN_TRY
 	//cout << "TID[" << Thread::self() << "]" << getSkillHandlerName() << " Begin" << endl;
@@ -260,7 +260,7 @@ void BlazeWalk2::execute(Slayer* pSlayer, Creature* pTargetCreature, SkillSlot* 
 }
 
 void BlazeWalk2::execute(Slayer * pSlayer, ZoneCoord_t X, ZoneCoord_t Y, SkillSlot * pSkillSlot, CEffectID_t CEffectID)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

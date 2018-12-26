@@ -47,7 +47,7 @@ OustersTuningItem::OustersTuningItem(ItemType_t itemType, const list<OptionType_
 }
 
 void OustersTuningItem::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -92,7 +92,7 @@ void OustersTuningItem::create(const string & ownerID, Storage storage, StorageI
 // save item
 //--------------------------------------------------------------------------------
 void OustersTuningItem::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -113,7 +113,7 @@ void OustersTuningItem::tinysave(const char* field) const
 }
 
 void OustersTuningItem::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -164,7 +164,7 @@ string OustersTuningItem::toString() const
 }
 
 VolumeWidth_t OustersTuningItem::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -174,7 +174,7 @@ VolumeWidth_t OustersTuningItem::getVolumeWidth() const
 }
 	
 VolumeHeight_t OustersTuningItem::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -184,7 +184,7 @@ VolumeHeight_t OustersTuningItem::getVolumeHeight() const
 }
 		
 Weight_t OustersTuningItem::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -214,7 +214,7 @@ string OustersTuningItemInfo::toString() const
 }
 
 void OustersTuningItemInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -268,7 +268,7 @@ void OustersTuningItemInfoManager::load()
 //////////////////////////////////////////////////////////////////////////////
 
 void OustersTuningItemLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -439,7 +439,7 @@ void OustersTuningItemLoader::load(Creature* pCreature)
 }
 
 void OustersTuningItemLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -502,7 +502,7 @@ void OustersTuningItemLoader::load(Zone* pZone)
 }
 
 void OustersTuningItemLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

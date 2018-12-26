@@ -18,8 +18,8 @@
 class GCAddGearToInventory : public Packet 
 {
 public:
-	GCAddGearToInventory() throw();
-	~GCAddGearToInventory() throw();
+	GCAddGearToInventory() ;
+	~GCAddGearToInventory() ;
 
 public:
     void read(SocketInputStream & iStream) ;

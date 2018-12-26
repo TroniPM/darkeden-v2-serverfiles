@@ -37,7 +37,7 @@ EventHeadCount::~EventHeadCount()
 }
 
 void EventHeadCount::activate () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG

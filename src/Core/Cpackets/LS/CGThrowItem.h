@@ -26,10 +26,10 @@ class CGThrowItem : public Packet {
 public:
 	
 	// constructor
-	CGThrowItem() throw();
+	CGThrowItem() ;
 	
 	// destructor
-	~CGThrowItem() throw();
+	~CGThrowItem() ;
 
 	
 public:

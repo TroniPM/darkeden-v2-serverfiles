@@ -29,10 +29,10 @@ class GCSkillToObjectOK2 : public ModifyInfo {
 public :
 	
 	// constructor
-	GCSkillToObjectOK2() throw();
+	GCSkillToObjectOK2() ;
 	
 	// destructor
-	~GCSkillToObjectOK2() throw();
+	~GCSkillToObjectOK2() ;
 
 	
 public :

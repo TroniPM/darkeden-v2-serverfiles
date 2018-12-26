@@ -21,7 +21,7 @@ ItemDestroyer::ItemDestroyer ()
 // destroy all item whose owner is ...
 //--------------------------------------------------------------------------------
 void ItemDestroyer::destroyAll ( const string & ownerID ) 
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 

@@ -51,7 +51,7 @@ DatabaseManager::~DatabaseManager ()
 }
 
 void DatabaseManager::init ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -507,7 +507,7 @@ Connection * DatabaseManager::getConnection ( int TID )
 }
 
 void DatabaseManager::executeDummyQuery(Connection* pConnection)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

@@ -21,8 +21,8 @@
 class GCAddEffectToTile : public Packet 
 {
 public:
-	GCAddEffectToTile() throw();
-	~GCAddEffectToTile() throw();
+	GCAddEffectToTile() ;
+	~GCAddEffectToTile() ;
 	
 public:
     void read(SocketInputStream & iStream) ;

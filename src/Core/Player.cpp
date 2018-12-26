@@ -21,7 +21,7 @@
 //
 //////////////////////////////////////////////////////////////////////
 Player::Player ()
-	 throw ( Error )
+	 
 : m_pSocket(NULL), m_pInputStream(NULL), m_pOutputStream(NULL)
 {
 //add by viva
@@ -29,7 +29,7 @@ Player::Player ()
 }
 
 Player::Player ( Socket * pSocket )
-	 throw ( Error )
+	 
 : m_pSocket(pSocket), m_pInputStream(NULL), m_pOutputStream(NULL)
 {
 	__BEGIN_TRY
@@ -58,7 +58,7 @@ Player::Player ( Socket * pSocket )
 //
 //////////////////////////////////////////////////////////////////////
 Player::~Player ()
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -318,7 +318,7 @@ void Player::setSocket ( Socket * pSocket )
 //
 //////////////////////////////////////////////////////////////////////
 string Player::toString () const
-       throw ( Error )
+       
 {
 	__BEGIN_TRY
 		

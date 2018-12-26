@@ -46,7 +46,7 @@ OustersSummonItem::OustersSummonItem(ItemType_t itemType, const list<OptionType_
 }
 
 void OustersSummonItem::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -89,7 +89,7 @@ void OustersSummonItem::create(const string & ownerID, Storage storage, StorageI
 // save item
 //--------------------------------------------------------------------------------
 void OustersSummonItem::tinysave(const char* field) const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -110,7 +110,7 @@ void OustersSummonItem::tinysave(const char* field) const
 }
 
 void OustersSummonItem::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -147,7 +147,7 @@ void OustersSummonItem::save(const string & ownerID, Storage storage, StorageID_
 }
 
 VolumeWidth_t OustersSummonItem::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -157,7 +157,7 @@ VolumeWidth_t OustersSummonItem::getVolumeWidth() const
 }
 	
 VolumeHeight_t OustersSummonItem::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -167,7 +167,7 @@ VolumeHeight_t OustersSummonItem::getVolumeHeight() const
 }
 	
 Weight_t OustersSummonItem::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -210,7 +210,7 @@ int OustersSummonItem::getMaxCharge(void) const
 //////////////////////////////////////////////////////////////////////////////
 
 void OustersSummonItemInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -286,7 +286,7 @@ string OustersSummonItemInfo::toString() const
 //////////////////////////////////////////////////////////////////////////////
 
 void OustersSummonItemLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -457,7 +457,7 @@ void OustersSummonItemLoader::load(Creature* pCreature)
 }
 
 void OustersSummonItemLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -514,7 +514,7 @@ void OustersSummonItemLoader::load(Zone* pZone)
 }
 
 void OustersSummonItemLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH

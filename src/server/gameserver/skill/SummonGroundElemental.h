@@ -18,7 +18,7 @@
 class SummonGroundElemental : public SkillHandler 
 {
 public:
-	SummonGroundElemental() throw();
+	SummonGroundElemental() ;
 	~SummonGroundElemental() throw() {}
 	
 public:

@@ -26,10 +26,10 @@ class CGRelicToObject : public Packet {
 public:
 	
 	// constructor
-	CGRelicToObject() throw();
+	CGRelicToObject() ;
 	
 	// destructor
-	~CGRelicToObject() throw();
+	~CGRelicToObject() ;
 
 	
 public:

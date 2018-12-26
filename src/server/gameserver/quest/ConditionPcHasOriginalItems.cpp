@@ -35,7 +35,7 @@ bool ConditionPcHasOriginalItems::isSatisfied (Creature * pCreature1 , Creature 
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionPcHasOriginalItems::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 	try
 	{

@@ -36,8 +36,8 @@ public:
 		CONNECT_ERROR,		// 게임코드 확인 실패 및 패킷 오류
 	};
 public:
-	GCRequestPowerPointResult() throw();
-	~GCRequestPowerPointResult() throw();
+	GCRequestPowerPointResult() ;
+	~GCRequestPowerPointResult() ;
 
 public :
     // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.

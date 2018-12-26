@@ -24,7 +24,7 @@ public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_SHRINE_GUARD; }
     EffectClass getSendEffectClass()  { return (EffectClass)((int)EFFECT_CLASS_SHRINE_GUARD + m_ShrineID); }
 
-	void affect() throw(Error) {}
+	void affect()  {}
 	void affect(Creature* pCreature);
 	void affect(Item* pItem);
 

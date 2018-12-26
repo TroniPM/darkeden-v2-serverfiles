@@ -17,8 +17,8 @@
 class STRBalanceInfo 
 {
 public:
-	STRBalanceInfo() throw();
-	~STRBalanceInfo() throw();
+	STRBalanceInfo() ;
+	~STRBalanceInfo() ;
 
 public:
 	void setLevel(uint lev) throw() { m_Level = lev; }
@@ -46,15 +46,15 @@ private:
 class STRBalanceInfoManager 
 {
 public:
-	STRBalanceInfoManager() throw();
-	~STRBalanceInfoManager() throw();
+	STRBalanceInfoManager() ;
+	~STRBalanceInfoManager() ;
 
 public:
 	void init();
 	void load();
 
 	STRBalanceInfo* getSTRBalanceInfo(uint value) ;
-	void addSTRBalanceInfo(STRBalanceInfo* pSTRBalanceInfo) throw();
+	void addSTRBalanceInfo(STRBalanceInfo* pSTRBalanceInfo) ;
 
 	string toString() ;
 
@@ -71,8 +71,8 @@ private:
 class DEXBalanceInfo 
 {
 public:
-	DEXBalanceInfo() throw();
-	~DEXBalanceInfo() throw();
+	DEXBalanceInfo() ;
+	~DEXBalanceInfo() ;
 
 public:
 	void setLevel(uint lev) throw() { m_Level = lev; }
@@ -100,15 +100,15 @@ private:
 class DEXBalanceInfoManager 
 {
 public:
-	DEXBalanceInfoManager() throw();
-	~DEXBalanceInfoManager() throw();
+	DEXBalanceInfoManager() ;
+	~DEXBalanceInfoManager() ;
 
 public:
 	void init();
 	void load();
 
 	DEXBalanceInfo* getDEXBalanceInfo(uint value) ;
-	void addDEXBalanceInfo(DEXBalanceInfo* pDEXBalanceInfo) throw();
+	void addDEXBalanceInfo(DEXBalanceInfo* pDEXBalanceInfo) ;
 
 	string toString() ;
 
@@ -126,8 +126,8 @@ private:
 class INTBalanceInfo 
 {
 public:
-	INTBalanceInfo() throw();
-	~INTBalanceInfo() throw();
+	INTBalanceInfo() ;
+	~INTBalanceInfo() ;
 
 public:
 	void setLevel(uint lev) throw() { m_Level = lev; }
@@ -155,15 +155,15 @@ private:
 class INTBalanceInfoManager 
 {
 public:
-	INTBalanceInfoManager() throw();
-	~INTBalanceInfoManager() throw();
+	INTBalanceInfoManager() ;
+	~INTBalanceInfoManager() ;
 
 public:
 	void init();
 	void load();
 
 	INTBalanceInfo* getINTBalanceInfo(uint value) ;
-	void addINTBalanceInfo(INTBalanceInfo* pINTBalanceInfo) throw();
+	void addINTBalanceInfo(INTBalanceInfo* pINTBalanceInfo) ;
 
 	string toString() ;
 

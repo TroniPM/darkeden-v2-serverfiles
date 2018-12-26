@@ -48,7 +48,7 @@ Fascia::Fascia(ItemType_t itemType, const list<OptionType_t>& optionType)
 // create item
 //--------------------------------------------------------------------------------
 void Fascia::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -99,7 +99,7 @@ void Fascia::create(const string & ownerID, Storage storage, StorageID_t storage
 // save item
 //--------------------------------------------------------------------------------
 void Fascia::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -123,7 +123,7 @@ void Fascia::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void Fascia::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -192,7 +192,7 @@ string FasciaInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void FasciaInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -256,7 +256,7 @@ void FasciaInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void FasciaLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -445,7 +445,7 @@ pFascia->setHeroOptionAttr(pResult->getInt(++i));
 // load to zone
 //--------------------------------------------------------------------------------
 void FasciaLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -457,7 +457,7 @@ void FasciaLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void FasciaLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

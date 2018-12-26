@@ -55,7 +55,7 @@ Necklace::Necklace(ItemType_t itemType, const list<OptionType_t>& optionType)
 // create item
 //--------------------------------------------------------------------------------
 void Necklace::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -108,7 +108,7 @@ void Necklace::create(const string & ownerID, Storage storage, StorageID_t stora
 // save item
 //--------------------------------------------------------------------------------
 void Necklace::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -132,7 +132,7 @@ void Necklace::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void Necklace::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -200,7 +200,7 @@ string Necklace::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t Necklace::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -214,7 +214,7 @@ VolumeWidth_t Necklace::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t Necklace::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -228,7 +228,7 @@ VolumeHeight_t Necklace::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t Necklace::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -242,7 +242,7 @@ Weight_t Necklace::getWeight() const
 // get/set armor's Defense Bonus
 //--------------------------------------------------------------------------------
 Defense_t Necklace::getDefenseBonus() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -251,7 +251,7 @@ Defense_t Necklace::getDefenseBonus() const
 	__END_CATCH
 }
 Protection_t Necklace::getProtectionBonus() const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -289,7 +289,7 @@ string NecklaceInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void NecklaceInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -354,7 +354,7 @@ void NecklaceInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void NecklaceLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -552,7 +552,7 @@ pNecklace->setHeroOptionAttr(pResult->getInt(++i));
 // load to zone
 //--------------------------------------------------------------------------------
 void NecklaceLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -634,7 +634,7 @@ pNecklace->setHeroOptionAttr(pResult->getInt(++i));
 // load to inventory
 //--------------------------------------------------------------------------------
 void NecklaceLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

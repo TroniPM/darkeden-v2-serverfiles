@@ -1184,7 +1184,7 @@ bool isPossibleNextOption(ITEM_TEMPLATE* pTemplate)
 // 갬블 아이템 생성
 //////////////////////////////////////////////////////////////////////////////
 Item* getRandomMysteriousItem(Creature* pCreature, Item::ItemClass itemClass, int maxLevel)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -2201,7 +2201,7 @@ const NewbieItem OustersNewbieItems[maxOustersNewbieItemNum] =
 
 // 인벤토리에 초보자용 아이템을 넣어준다.
 bool addNewbieItemToInventory( Slayer* pSlayer, bool sendPacket )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -2261,7 +2261,7 @@ bool addNewbieItemToInventory( Slayer* pSlayer, bool sendPacket )
 }
 
 bool addNewbieGoldToInventory( Slayer* pSlayer, bool sendPacket )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -2282,7 +2282,7 @@ bool addNewbieGoldToInventory( Slayer* pSlayer, bool sendPacket )
 }
 
 bool addNewbieItemToGear( Slayer* pSlayer, bool sendPacket )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -2542,7 +2542,7 @@ bool addNewbieItemToGear( Slayer* pSlayer, bool sendPacket )
 	__END_CATCH
 }
 bool addNewbieItemToGear( Vampire* pVampire, bool sendPacket )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -2732,7 +2732,7 @@ bool addNewbieItemToGear( Vampire* pVampire, bool sendPacket )
 
 // 인벤토리에 초보자용 아이템을 넣어준다.
 bool addNewbieItemToInventory( Vampire* pVampire, bool sendPacket )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -2792,7 +2792,7 @@ bool addNewbieItemToInventory( Vampire* pVampire, bool sendPacket )
 }
 
 bool addNewbieGoldToInventory( Vampire* pVampire, bool sendPacket )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -2812,7 +2812,7 @@ bool addNewbieGoldToInventory( Vampire* pVampire, bool sendPacket )
 	__END_CATCH
 }
 
-bool addNewbieGoldToInventory( Ousters* pOusters, bool sendPacket = false ) throw(Error)
+bool addNewbieGoldToInventory( Ousters* pOusters, bool sendPacket = false ) 
 {
 	__BEGIN_TRY
 
@@ -2832,7 +2832,7 @@ bool addNewbieGoldToInventory( Ousters* pOusters, bool sendPacket = false ) thro
 	__END_CATCH
 }
 
-bool addNewbieItemToInventory( Ousters* pOusters, bool sendPacket = false ) throw(Error)
+bool addNewbieItemToInventory( Ousters* pOusters, bool sendPacket = false ) 
 {
 	__BEGIN_TRY
 
@@ -2904,7 +2904,7 @@ bool addNewbieItemToInventory( Ousters* pOusters, bool sendPacket = false ) thro
 	__END_CATCH
 }
 
-bool addNewbieItemToGear( Ousters* pOusters, bool sendPacket = false ) throw(Error)
+bool addNewbieItemToGear( Ousters* pOusters, bool sendPacket = false ) 
 {
 	__BEGIN_TRY
 
@@ -3041,7 +3041,7 @@ bool addNewbieItemToGear( Ousters* pOusters, bool sendPacket = false ) throw(Err
 }
 
 Item::ItemClass getBestNewbieWeaponClass(Slayer* pSlayer)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -3070,7 +3070,7 @@ Item::ItemClass getBestNewbieWeaponClass(Slayer* pSlayer)
 }
 
 void makeOptionList(const string& options, list<OptionType_t>& optionList)
-	throw(Error)
+	
 {
 	uint a = 0, b = 0;
 
@@ -3104,7 +3104,7 @@ void makeOptionList(const string& options, list<OptionType_t>& optionList)
 
 void
 saveDissectionItem(Creature* pCreature, Item* pTreasure, int x, int y)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -3167,7 +3167,7 @@ saveDissectionItem(Creature* pCreature, Item* pTreasure, int x, int y)
 }
 
 bool canDecreaseDurability( Item* pItem )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -3451,7 +3451,7 @@ bool bTraceLog( Item* pItem )
 }
 
 void remainTraceLog ( Item* pItem, const string& preOwner, const string& owner, ItemTraceLogType logType, ItemTraceDetailType detailType )
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -3485,7 +3485,7 @@ void remainTraceLog ( Item* pItem, const string& preOwner, const string& owner, 
 }
 
 void remainTraceLogNew ( Item* pItem, const string& owner, ITLType logType, ITLDType detailType, ZoneID_t zid=0, int x=0, int y=0)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -3521,7 +3521,7 @@ void remainTraceLogNew ( Item* pItem, const string& owner, ITLType logType, ITLD
 }
 
 void remainMoneyTraceLog ( const string& preOwner, const string& owner, ItemTraceLogType logType, ItemTraceDetailType detailType, int amount )
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

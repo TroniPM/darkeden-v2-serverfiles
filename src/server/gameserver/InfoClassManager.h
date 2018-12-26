@@ -26,8 +26,8 @@ struct OPTION_RATIO
 class InfoClassManager 
 {
 public:
-	InfoClassManager() throw();
-	virtual ~InfoClassManager() throw();
+	InfoClassManager() ;
+	virtual ~InfoClassManager() ;
 
 public:
 	virtual Item::ItemClass getItemClass()  = 0;
@@ -35,7 +35,7 @@ public:
 	void init();
 	void reload();
 
-	virtual void load() throw(Error) = 0;
+	virtual void load()  = 0;
 
 	void addItemInfo(ItemInfo* pItemInfo) throw(DuplicatedException, Error);
 	ItemInfo* getItemInfo(ItemType_t ItemType) ;

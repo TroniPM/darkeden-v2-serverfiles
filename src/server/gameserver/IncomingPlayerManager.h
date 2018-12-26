@@ -61,7 +61,7 @@ public:
 	// accept new connection
 	bool acceptNewConnection();
 
-	void copyPlayers() throw();
+	void copyPlayers() ;
 
 	// add/delete player
 	void addPlayer(Player* pGamePlayer) throw(DuplicatedException, Error);
@@ -75,8 +75,8 @@ public:
 	GamePlayer* getReadyPlayer(const string & id) throw(NoSuchElementException, Error);
 
 	// lock/unlock
-	void lock() throw(Error) { m_Mutex.lock(); }
-	void unlock() throw(Error) { m_Mutex.unlock(); }
+	void lock()  { m_Mutex.lock(); }
+	void unlock()  { m_Mutex.unlock(); }
 
     // push Player to queue
     void pushPlayer(GamePlayer* pGamePlayer);

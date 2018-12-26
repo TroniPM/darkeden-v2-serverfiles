@@ -35,13 +35,13 @@ public :
 
 	// 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
 	// 데이터그램 패킷이 TCP 소켓으로 전송되어 왔다면 프로토콜 에러로 간주한다.
-	virtual void read (SocketInputStream & iStream) throw (ProtocolException, Error) 
+	virtual void read (SocketInputStream & iStream)  
 	{ 
 		throw ProtocolException("datagram packet from TCP socket"); 
 	}
 
 	// Datagram 객체에서 데이터를 읽어서 패킷을 초기화한다.
-	virtual void read (Datagram & iDatagram) throw (ProtocolException, Error) = 0;
+	virtual void read (Datagram & iDatagram) ;
 	
 	// 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
 	// 데이터그램 패킷을 TCP 소켓으로 출력할 수 없다.
@@ -54,7 +54,7 @@ public :
 	virtual void write (Datagram & oDatagram) ;
 	
 	// execute packet's handler
-	virtual void execute (Player* pPlayer) throw (ProtocolException, Error) = 0;
+	virtual void execute (Player* pPlayer) ;
 	
 	// get packet's DatagramPacketID	
 	virtual PacketID_t getPacketID ()  = 0;

@@ -49,7 +49,7 @@ WeaponZap::WeaponZap(ItemType_t itemType, const list<OptionType_t>& optionType)
 // create item
 //--------------------------------------------------------------------------------
 void WeaponZap::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -101,7 +101,7 @@ void WeaponZap::create(const string & ownerID, Storage storage, StorageID_t stor
 // save item
 //--------------------------------------------------------------------------------
 void WeaponZap::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -125,7 +125,7 @@ void WeaponZap::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void WeaponZap::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -188,7 +188,7 @@ string WeaponZap::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t WeaponZap::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -202,7 +202,7 @@ VolumeWidth_t WeaponZap::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t WeaponZap::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -216,7 +216,7 @@ VolumeHeight_t WeaponZap::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t WeaponZap::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -230,7 +230,7 @@ Weight_t WeaponZap::getWeight() const
 // get/set armor's Defense Bonus
 //--------------------------------------------------------------------------------
 Defense_t WeaponZap::getDefenseBonus() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -239,7 +239,7 @@ Defense_t WeaponZap::getDefenseBonus() const
 	__END_CATCH
 }
 Protection_t WeaponZap::getProtectionBonus() const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -275,7 +275,7 @@ string WeaponZapInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void WeaponZapInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -331,7 +331,7 @@ void WeaponZapInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void WeaponZapLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -545,7 +545,7 @@ void WeaponZapLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void WeaponZapLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -618,7 +618,7 @@ void WeaponZapLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void WeaponZapLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

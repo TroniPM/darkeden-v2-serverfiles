@@ -29,8 +29,8 @@ public:
 		STRING_TYPE_FORCE_APART_COUPLE
 	};
 public:
-	CGTypeStringList() throw();
-	~CGTypeStringList() throw();
+	CGTypeStringList() ;
+	~CGTypeStringList() ;
 
 public:
     void read(SocketInputStream & iStream) ;

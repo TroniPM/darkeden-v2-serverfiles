@@ -39,7 +39,7 @@ SweeperBonusManager::~SweeperBonusManager()
 }
 
 void SweeperBonusManager::init()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -65,7 +65,7 @@ void SweeperBonusManager::clear()
 }
 
 void SweeperBonusManager::load()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -117,7 +117,7 @@ void SweeperBonusManager::load()
 }
 
 void SweeperBonusManager::reloadOwner(int level)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -167,7 +167,7 @@ void SweeperBonusManager::reloadOwner(int level)
 }
 
 void SweeperBonusManager::save()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

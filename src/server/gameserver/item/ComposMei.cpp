@@ -53,7 +53,7 @@ ComposMei::ComposMei(ItemType_t itemType, const list<OptionType_t>& optionType, 
 // create item
 //--------------------------------------------------------------------------------
 void ComposMei::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -106,7 +106,7 @@ void ComposMei::create(const string & ownerID, Storage storage, StorageID_t stor
 // destroy
 //--------------------------------------------------------------------------------
 bool ComposMei::destroy() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -138,7 +138,7 @@ bool ComposMei::destroy()
 // save item
 //--------------------------------------------------------------------------------
 void ComposMei::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -162,7 +162,7 @@ void ComposMei::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void ComposMei::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -206,7 +206,7 @@ string ComposMei::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t ComposMei::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -220,7 +220,7 @@ VolumeWidth_t ComposMei::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t ComposMei::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -234,7 +234,7 @@ VolumeHeight_t ComposMei::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t ComposMei::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -412,7 +412,7 @@ string ComposMeiInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void ComposMeiInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -467,7 +467,7 @@ void ComposMeiInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void ComposMeiLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -692,7 +692,7 @@ void ComposMeiLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void ComposMeiLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -759,7 +759,7 @@ void ComposMeiLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void ComposMeiLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

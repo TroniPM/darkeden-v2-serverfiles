@@ -26,10 +26,10 @@ class CGSelectPortal : public Packet {
 public:
 	
 	// constructor
-	CGSelectPortal() throw();
+	CGSelectPortal() ;
 	
 	// destructor
-	~CGSelectPortal() throw();
+	~CGSelectPortal() ;
 
 	
 public:

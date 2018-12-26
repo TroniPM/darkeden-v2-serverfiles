@@ -29,7 +29,7 @@ public:
 	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject );
 
 	void unaffect();
-	void unaffect(Creature* pCreature) throw(Error) {};
+	void unaffect(Creature* pCreature)  {};
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject );
 
 	string toString() ;

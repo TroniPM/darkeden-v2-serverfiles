@@ -27,7 +27,7 @@ bool ConditionSameClan::isSatisfied (Creature * pCreature1 , Creature * pCreatur
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionSameClan::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 }
 

@@ -466,7 +466,7 @@ bool Inventory::addItem(CoordInven_t X, CoordInven_t Y, Item* pItem)
 // 지정된 위치에 아이템을 더한다.
 ////////////////////////////////////////////////////////////
 Item* Inventory::addItemEx(CoordInven_t X, CoordInven_t Y, Item* pItem)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -645,7 +645,7 @@ bool Inventory::getEmptySlot(VolumeWidth_t ItemWidth, VolumeHeight_t ItemHeight,
 // 지정된 아이템을 찾아서 지운다.
 ////////////////////////////////////////////////////////////
 void Inventory::deleteItem(ObjectID_t ObjectID)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -669,7 +669,7 @@ void Inventory::deleteItem(ObjectID_t ObjectID)
 // 지정된 아이템을 찾아서 지우고 다시 추가한다.
 ////////////////////////////////////////////////////////////
 void Inventory::reloadItem(ObjectID_t ObjectID)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -699,7 +699,7 @@ void Inventory::reloadItem(ObjectID_t ObjectID)
 // 않으면 끔찍한 결과가 발생할 수 있다.
 ////////////////////////////////////////////////////////////
 void Inventory::deleteItem(CoordInven_t X, CoordInven_t Y)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -860,7 +860,7 @@ Item* Inventory::searchItem2(Item* pItem2, TPOINT & pt)
 // 지정된 아이템을 찾아서 포인터를 리턴한다.
 ////////////////////////////////////////////////////////////
 Item* Inventory::getItemWithItemID (ItemID_t itemID)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -874,7 +874,7 @@ Item* Inventory::getItemWithItemID (ItemID_t itemID)
 // 지정된 벨트를 찾아서 포인터를 리턴한다.
 ////////////////////////////////////////////////////////////
 Item* Inventory::getBeltWithItemID(ItemID_t itemID)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -888,7 +888,7 @@ Item* Inventory::getBeltWithItemID(ItemID_t itemID)
 // 지정된 아이템을 찾아서 포인터를 리턴한다.
 ////////////////////////////////////////////////////////////
 Item* Inventory::getItemWithObjectID(ObjectID_t objectID)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1442,7 +1442,7 @@ string Inventory::toString () const
 //#ifdef __XMAS_EVENT_CODE__
 // 인벤토리를 검색하면서 색깔별로 이벤트 별 숫자를 헤아린다.
 bool Inventory::hasEnoughStar(const XMAS_STAR& star)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1493,7 +1493,7 @@ bool Inventory::hasEnoughStar(const XMAS_STAR& star)
 
 //#ifdef __XMAS_EVENT_CODE__
 void Inventory::decreaseStar(const XMAS_STAR& star)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1567,7 +1567,7 @@ void Inventory::decreaseStar(const XMAS_STAR& star)
 ///*
 //#ifdef __XMAS_EVENT_CODE__
 bool Inventory::hasRedGiftBox(void) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1599,7 +1599,7 @@ bool Inventory::hasRedGiftBox(void)
 ///*
 //#ifdef __XMAS_EVENT_CODE__
 bool Inventory::hasGreenGiftBox(void) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1628,7 +1628,7 @@ bool Inventory::hasGreenGiftBox(void)
 //#endif
 //*/
 
-void Inventory::clearQuestItem(list<Item*>& iList) throw(Error)
+void Inventory::clearQuestItem(list<Item*>& iList) 
 {
 	{
 		list<Item*> ItemList;

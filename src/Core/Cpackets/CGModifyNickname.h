@@ -19,8 +19,8 @@
 class CGModifyNickname : public Packet 
 {
 public:
-	CGModifyNickname() throw();
-	~CGModifyNickname() throw();
+	CGModifyNickname() ;
+	~CGModifyNickname() ;
 
 public:
     void read(SocketInputStream & iStream) ;

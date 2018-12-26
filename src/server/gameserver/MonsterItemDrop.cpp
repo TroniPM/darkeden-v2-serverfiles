@@ -234,7 +234,7 @@ void MonsterItemDropManager::clear()
 }
 
 void MonsterItemDropManager::load()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

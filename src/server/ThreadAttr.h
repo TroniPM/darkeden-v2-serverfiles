@@ -73,13 +73,13 @@ public :
 	bool isDetached ()  { return getDetachState() == PTHREAD_CREATE_DETACHED; }
 	
 	// set thread attribute detached state
-	void setDetached () throw ( Error ) { setDetachState(PTHREAD_CREATE_DETACHED); }
+	void setDetached ()  { setDetachState(PTHREAD_CREATE_DETACHED); }
 
 	// is thread attribute joinable state?
 	bool isJoinable ()  { return getDetachState() == PTHREAD_CREATE_JOINABLE; }
 	
 	// set thread attribute joinable state
-	void setJoinable () throw ( Error ) { setDetachState(PTHREAD_CREATE_JOINABLE); }
+	void setJoinable ()  { setDetachState(PTHREAD_CREATE_JOINABLE); }
 
 
 //////////////////////////////////////////////////

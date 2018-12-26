@@ -185,7 +185,7 @@ Creature* CreatureManager::getCreature (const string& Name) const
 // 크리처 매니저에 종속된 몬스터/NPC 들의 AI에 의한 액션을 실행한다.
 //////////////////////////////////////////////////////////////////////////////
 void CreatureManager::processCreatures ()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -229,7 +229,7 @@ void CreatureManager::processCreatures ()
 // 죽은 크리처를 처리한다.
 //////////////////////////////////////////////////////////////////////////////
 void CreatureManager::killCreature (Creature* pDeadCreature)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -242,7 +242,7 @@ void CreatureManager::killCreature (Creature* pDeadCreature)
 // broadcast packet
 //////////////////////////////////////////////////////////////////////////////
 void CreatureManager::broadcastPacket (Packet* pPacket , Creature* pCreature)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -274,7 +274,7 @@ void CreatureManager::broadcastPacket (Packet* pPacket , Creature* pCreature)
 // broadcast DarkLight packet
 //////////////////////////////////////////////////////////////////////////////
 void CreatureManager::broadcastDarkLightPacket (Packet* pPacket1, Packet* pPacket2 , Creature* pCreature)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -328,7 +328,7 @@ void CreatureManager::broadcastDarkLightPacket (Packet* pPacket1, Packet* pPacke
 }
 
 void CreatureManager::broadcastLevelWarBonusPacket (Packet* pPacket , Creature* pCreature)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

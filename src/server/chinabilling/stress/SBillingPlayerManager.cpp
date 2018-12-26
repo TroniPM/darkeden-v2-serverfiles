@@ -16,7 +16,7 @@
 
 // constructor
 SBillingPlayerManager::SBillingPlayerManager()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -46,7 +46,7 @@ SBillingPlayerManager::SBillingPlayerManager()
 
 // destructor
 SBillingPlayerManager::~SBillingPlayerManager()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -62,7 +62,7 @@ SBillingPlayerManager::~SBillingPlayerManager()
 
 // stop thread. unsupport
 void SBillingPlayerManager::stop()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 

@@ -21,8 +21,8 @@
 class ZoneInfoManager 
 {
 public:
-	ZoneInfoManager() throw();
-	~ZoneInfoManager() throw();
+	ZoneInfoManager() ;
+	~ZoneInfoManager() ;
 
 public:
 	void init();

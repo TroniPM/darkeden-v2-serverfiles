@@ -47,7 +47,7 @@ ZoneInfoManager::~ZoneInfoManager ()
 // initialize GSIM
 //----------------------------------------------------------------------
 void ZoneInfoManager::init ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -64,7 +64,7 @@ void ZoneInfoManager::init ()
 // load data from database
 //----------------------------------------------------------------------
 void ZoneInfoManager::load ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 

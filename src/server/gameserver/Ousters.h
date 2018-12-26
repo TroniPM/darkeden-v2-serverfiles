@@ -117,7 +117,7 @@ public:
 // 생성자/소멸자
 ////////////////////////////////////////////////////
 public:
-	Ousters() throw();
+	Ousters() ;
 	virtual ~Ousters();
 
 ////////////////////////////////////////////////////
@@ -130,8 +130,8 @@ public:
 	virtual void registerObject();
 	virtual void registerInitObject();
 
-	virtual bool load() throw (InvalidProtocolException, Error);
-	void loadItem( bool checkTimeLimit = false ) throw (InvalidProtocolException, Error);
+	virtual bool load() ;
+	void loadItem( bool checkTimeLimit = false ) ;
 
 	virtual void save() ;
 	virtual void tinysave(const string & field) ;
@@ -140,7 +140,7 @@ public:
 	void saveGears(void) ;
 	void saveExps(void) ;
 
-	virtual void act(const Timeval& currentTime) throw(Error) {}
+	virtual void act(const Timeval& currentTime)  {}
 
 	virtual string toString() ;
 
@@ -211,7 +211,7 @@ public:
 
 	Alignment_t getAlignment()  { return m_Alignment; }
 	void setAlignment(Alignment_t Alignment) throw() { m_Alignment = Alignment; }
-	void saveAlignment(Alignment_t alignment) throw();
+	void saveAlignment(Alignment_t alignment) ;
 
 	Attr_t getSTR(AttrType attrType = ATTR_CURRENT)  { return m_STR[attrType]; }
 	void setSTR(Attr_t attr, AttrType attrType = ATTR_CURRENT) throw() { m_STR[attrType] = attr; }
@@ -285,11 +285,11 @@ public:
 // 스킬 관련 함수
 ////////////////////////////////////////////////////
 public:
-	void addSkill(SkillType_t SkillType) throw();
-    void addSkill(OustersSkillSlot* pSkillSlot) throw();
-	void removeSkill(SkillType_t SkillType) throw();
-	void removeCastleSkill(SkillType_t SkillType) throw();
-	void removeAllCastleSkill() throw();
+	void addSkill(SkillType_t SkillType) ;
+    void addSkill(OustersSkillSlot* pSkillSlot) ;
+	void removeSkill(SkillType_t SkillType) ;
+	void removeCastleSkill(SkillType_t SkillType) ;
+	void removeAllCastleSkill() ;
 	OustersSkillSlot* hasSkill(SkillType_t SkillType)  { return getSkill(SkillType); }
 	OustersSkillSlot* getSkill(SkillType_t SkillType) ;
 
@@ -303,15 +303,15 @@ public:
 	void  deleteWearItem(WearPart Part) throw() { m_pWearItem[Part] = NULL; }
 	Item* getWearItem(WearPart Part) throw() { return m_pWearItem[Part]; }
 
-	void wearItem(WearPart Part) throw();
-	void wearItem(WearPart Part, Item* pItem) throw();
-	void takeOffItem(WearPart Part, bool bAddOnMouse, bool bSendModifyInfo) throw();
+	void wearItem(WearPart Part) ;
+	void wearItem(WearPart Part, Item* pItem) ;
+	void takeOffItem(WearPart Part, bool bAddOnMouse, bool bSendModifyInfo) ;
 	bool    addShape(Item::ItemClass IClass, ItemType_t IType, Color_t color);
     bool    removeShape(Item::ItemClass IClass, bool bSendPacket=true);
 	Color_t getItemShapeColor(Item* pItem, OptionInfo* pOptionInfo=NULL) const;
 
 
-	void destroyGears() throw();
+	void destroyGears() ;
 
 	bool isRealWearing(WearPart Part) ;
 	bool isRealWearing(Item* pItem) ;
@@ -324,19 +324,19 @@ public:
 // 아이템 착/탈시 능력치 수정 관련 함수
 ////////////////////////////////////////////////////
 public:
-	void initAllStat(int numPartyMember=-1) throw();
-	void initCastleSkill() throw();
+	void initAllStat(int numPartyMember=-1) ;
+	void initCastleSkill() ;
 	void sendModifyInfo(const OUSTERS_RECORD& previous) ;
 	void addModifyInfo(const OUSTERS_RECORD& previous, ModifyInfo& pkt) ;
 	void initAllStatAndSend();
 	
 private:
-	void computeStatOffset(void) throw();
-	void computeItemStat(Item* pItem) throw();
-	void computeOptionStat(Item* pItem) throw();
-	void computePetItemOptionTypeStat(PetInfo* pPetInfo) throw();
-	void computeSetItemStat(Item* pItem) throw();
-	void computeOptionStat(OptionType_t optionType) throw();
+	void computeStatOffset(void) ;
+	void computeItemStat(Item* pItem) ;
+	void computeOptionStat(Item* pItem) ;
+	void computePetItemOptionTypeStat(PetInfo* pPetInfo) ;
+	void computeSetItemStat(Item* pItem) ;
+	void computeOptionStat(OptionType_t optionType) ;
 	void computeOptionClassStat(OptionClass OClass, int PlusPoint);
 
 
@@ -366,13 +366,13 @@ public:
 ////////////////////////////////////////////////////
 public:
 
-	PCOustersInfo2* getOustersInfo2() throw();
+	PCOustersInfo2* getOustersInfo2() ;
 	PCOustersInfo3  getOustersInfo3() ;
 	InventoryInfo*  getInventoryInfo() ;
 	InventoryInfo*  getInventoryInfo2() ;
 	GearInfo*       getGearInfo() ;
 	ExtraInfo*      getExtraInfo() ;
-	void sendOustersSkillInfo() throw();
+	void sendOustersSkillInfo() ;
 
 
 ////////////////////////////////////////////////////
@@ -381,15 +381,15 @@ public:
 public:
 
 	virtual Gold_t getGold()  { return m_Gold; }
-	virtual void setGold(Gold_t gold) throw();
-	virtual void setGoldEx(Gold_t gold) throw();
-	virtual void   increaseGoldEx(Gold_t gold) throw();
-    virtual void   decreaseGoldEx(Gold_t gold) throw();
+	virtual void setGold(Gold_t gold) ;
+	virtual void setGoldEx(Gold_t gold) ;
+	virtual void   increaseGoldEx(Gold_t gold) ;
+    virtual void   decreaseGoldEx(Gold_t gold) ;
 
 	virtual bool checkGoldIntegrity();
 	virtual bool checkStashGoldIntegrity();
 
-	void heartbeat(const Timeval& currentTime) throw();
+	void heartbeat(const Timeval& currentTime) ;
 
 	void getOustersRecord(OUSTERS_RECORD& record) ;
 
@@ -410,11 +410,11 @@ public:
 
 	virtual ZoneID_t getResurrectZoneID(void)  { return m_ResurrectZoneID; }
 	virtual void setResurrectZoneID(ZoneID_t id) throw() { m_ResurrectZoneID = id; }
-	virtual void setResurrectZoneIDEx(ZoneID_t id) throw();
+	virtual void setResurrectZoneIDEx(ZoneID_t id) ;
 
 	Silver_t getSilverDamage()  { return m_SilverDamage; }
 	void setSilverDamage(Silver_t damage) throw() { m_SilverDamage = damage; }
-	void saveSilverDamage(Silver_t damage) throw();
+	void saveSilverDamage(Silver_t damage) ;
 
 	virtual Steal_t getHPStealAmount(void) const { return m_HPStealAmount; }
 	virtual void setHPStealAmount(Steal_t steal) { m_HPStealAmount = steal; }
@@ -440,7 +440,7 @@ public:
 	virtual int getCriticalRatio(void) const { return m_CriticalRatio[ATTR_CURRENT]; }
 	virtual void setCriticalRatio(int ratio) { m_CriticalRatio[ATTR_CURRENT] = ratio; }
 
-	virtual Sight_t getEffectedSight() throw();
+	virtual Sight_t getEffectedSight() ;
 
 	virtual IP_t getIP(void) const;
 
@@ -459,7 +459,7 @@ public:
 //	void increaseOustersExp(Exp_t Point);
 //	void increaseRankExp(RankExp_t Point);
 
-	void saveInitialRank(void) throw();
+	void saveInitialRank(void) ;
 
 //////////////////////////////
 // 정령 속성 관련 함수

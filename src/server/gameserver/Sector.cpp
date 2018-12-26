@@ -86,7 +86,7 @@ Object* Sector::getObject(ObjectID_t id)
 }
 
 Sector* Sector::getNearbySector(uint dir) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -97,7 +97,7 @@ Sector* Sector::getNearbySector(uint dir)
 }
 
 void Sector::setNearbySector(uint dir, Sector* pSector) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

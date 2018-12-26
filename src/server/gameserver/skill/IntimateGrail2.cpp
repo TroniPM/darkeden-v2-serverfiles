@@ -22,7 +22,7 @@
 // 슬레이어 오브젝트 핸들러
 //////////////////////////////////////////////////////////////////////////////
 void IntimateGrail2::execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -187,7 +187,7 @@ void IntimateGrail2::execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSl
 // 슬레이어 셀프 핸들러
 //////////////////////////////////////////////////////////////////////////////
 void IntimateGrail2::execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

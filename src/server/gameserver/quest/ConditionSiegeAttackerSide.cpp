@@ -39,7 +39,7 @@ bool ConditionSiegeAttackerSide::isSatisfied (Creature * pCreature1 , Creature *
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionSiegeAttackerSide::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 }
 

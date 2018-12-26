@@ -23,7 +23,7 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_STRIKING2; }
 
-	void affect() throw(Error){}
+	void affect() {}
 	void affect(Creature* pCreature);
 	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject);
 

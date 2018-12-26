@@ -36,7 +36,7 @@ public :
 	GCAddVampireFromTransformation() throw() : m_pEffectInfo(NULL) {}
 	GCAddVampireFromTransformation(const PCVampireInfo3 & vampireInfo) throw() : m_VampireInfo(vampireInfo), m_pEffectInfo(NULL) {}
 
-	virtual ~GCAddVampireFromTransformation() throw();
+	virtual ~GCAddVampireFromTransformation() ;
 
 	
 public :

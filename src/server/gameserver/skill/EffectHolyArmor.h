@@ -21,7 +21,7 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_HOLY_ARMOR; }
 
-	void affect() throw(Error) {}
+	void affect()  {}
 	void affect(Creature* pCreature);
 
 	void unaffect(Creature* pCreature);
@@ -31,7 +31,7 @@ public:
 
 public:
 	int getDefBonus() throw() { return m_DefBonus;}
-	void setDefBonus(Attr_t DefBonus) throw(Error) { m_DefBonus = DefBonus;}
+	void setDefBonus(Attr_t DefBonus)  { m_DefBonus = DefBonus;}
 
 private :
 	Defense_t m_DefBonus;

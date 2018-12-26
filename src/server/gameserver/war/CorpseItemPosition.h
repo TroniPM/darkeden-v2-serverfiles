@@ -18,7 +18,7 @@ public:
 	virtual Item*	getItem_LOCKED( bool isDel );
 	virtual Item*	getItem_UNLOCKED( bool isDel );
 
-	Zone*   getZone() throw(Error)	{ return m_pZone; }
+	Zone*   getZone() 	{ return m_pZone; }
 
 	ZoneID_t		getZoneID() const { return m_ZoneID; }
 	void			setZoneID( ZoneID_t zoneID ) { m_ZoneID = zoneID; }

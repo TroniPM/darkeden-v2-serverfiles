@@ -27,8 +27,8 @@ class GCSelectRankBonusFailed : public Packet
 
 public: 
 
-	GCSelectRankBonusFailed() throw();
-	virtual ~GCSelectRankBonusFailed() throw();
+	GCSelectRankBonusFailed() ;
+	virtual ~GCSelectRankBonusFailed() ;
 
 	
 public:

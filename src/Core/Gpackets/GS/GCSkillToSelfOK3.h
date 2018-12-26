@@ -27,10 +27,10 @@ class GCSkillToSelfOK3 : public Packet {
 public :
 	
 	// constructor
-	GCSkillToSelfOK3() throw();
+	GCSkillToSelfOK3() ;
 	
 	// destructor
-	~GCSkillToSelfOK3() throw();
+	~GCSkillToSelfOK3() ;
 
 	
 public :

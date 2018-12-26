@@ -62,7 +62,7 @@ Resource::Resource ( const Resource & resource )
 // load from resource file
 //--------------------------------------------------------------------------------
 void Resource::load ( ifstream & ifile ) 
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -104,7 +104,7 @@ void Resource::load ( ifstream & ifile )
 // save to resource file
 //--------------------------------------------------------------------------------
 void Resource::save ( ofstream & ofile ) const 
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 

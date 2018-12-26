@@ -17,7 +17,7 @@ GCQuestStatus* GatherItemQuestStatus::makeStatusPacket() const
 	return pPacket;
 }
 
-/*bool GatherItemQuestStatus::got( Item* pItem ) throw(Error)
+/*bool GatherItemQuestStatus::got( Item* pItem ) 
 {
 	__BEGIN_TRY
 

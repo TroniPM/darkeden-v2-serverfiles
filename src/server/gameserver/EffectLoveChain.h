@@ -23,7 +23,7 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_LOVE_CHAIN; }
 
-	void affect() throw(Error){}
+	void affect() {}
 	void affect(Creature* pCreature);
 
 	void unaffect();
@@ -35,7 +35,7 @@ public:
 
 	// get/set Target Name
 	const string& getTargetName()  { return m_TargetName; }
-	void setTargetName( const string& targetName ) throw(Error) { m_TargetName = targetName; }
+	void setTargetName( const string& targetName )  { m_TargetName = targetName; }
 
 	Zone* getZone()  { return m_pZone; }
 	void setZone( Zone* pZone ) throw() { m_pZone = pZone; }

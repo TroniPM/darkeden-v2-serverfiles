@@ -27,10 +27,10 @@ class GCLearnSkillOK : public Packet {
 public :
 	
 	// constructor
-	GCLearnSkillOK() throw();
+	GCLearnSkillOK() ;
 	
 	// destructor
-	~GCLearnSkillOK() throw();
+	~GCLearnSkillOK() ;
 
 	
 public :

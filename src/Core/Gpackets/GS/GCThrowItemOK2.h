@@ -28,10 +28,10 @@ class GCThrowItemOK2 : public ModifyInfo {
 public :
 	
 	// constructor
-	GCThrowItemOK2() throw();
+	GCThrowItemOK2() ;
 	
 	// destructor
-	~GCThrowItemOK2() throw();
+	~GCThrowItemOK2() ;
 
 	
 public :

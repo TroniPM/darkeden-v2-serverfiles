@@ -26,11 +26,11 @@ public:
 
 	// constructor
 	// PCInfo* 배열에 각각 NULL을 지정한다.
-	LCWorldList() throw();
+	LCWorldList() ;
 
 	// destructor
 	// PCInfo* 배열에 할당된 객체를 삭제한다.
-	~LCWorldList() throw();
+	~LCWorldList() ;
 	
     // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
     void read(SocketInputStream & iStream) ;

@@ -29,7 +29,7 @@ EventShutdown::EventShutdown( GamePlayer* pGamePlayer )
 }
 
 void EventShutdown::activate () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

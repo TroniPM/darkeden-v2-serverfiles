@@ -22,7 +22,7 @@ public:
 	virtual ConditionType_t getConditionType()  { return CONDITION_AT_FIRST; }
 	virtual bool isActive()  { return true; }
 	virtual bool isSatisfied(Creature* pCreature1, Creature* pCreature2 = NULL, void* pParam = NULL)  { return true; }
-	virtual void read(PropertyBuffer & propertyBuffer) throw(Error) {}
+	virtual void read(PropertyBuffer & propertyBuffer)  {}
 	virtual string toString()  { return "AtFirst"; }
 
 };

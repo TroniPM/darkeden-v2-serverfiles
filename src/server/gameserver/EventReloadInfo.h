@@ -41,8 +41,8 @@ public :
 	};
 
 public:
-	EventReloadInfo(GamePlayer* pGamePlayer, InfoType infoType, int infoValue=0) throw();
-	~EventReloadInfo() throw();			
+	EventReloadInfo(GamePlayer* pGamePlayer, InfoType infoType, int infoValue=0) ;
+	~EventReloadInfo() ;			
 
 public:
 	virtual EventClass getEventClass()  { return EVENT_CLASS_RELOAD_INFO; }

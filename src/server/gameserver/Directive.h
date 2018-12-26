@@ -187,12 +187,12 @@ class Directive
 ///// Member methods /////
 	
 public:
-	Directive() throw();
-	~Directive() throw();
+	Directive() ;
+	~Directive() ;
 
 public:
 	list<int>& getConditions(void) throw() { return m_Conditions; }
-	void addCondition(int condition) throw();
+	void addCondition(int condition) ;
 
 	int getAction(void)  { return m_Action; }
 	void setAction(int action) throw() { m_Action = action; }
@@ -206,7 +206,7 @@ public:
 	int getWeight(void)  { return m_Weight; }
 	void setWeight(int weight) throw() { m_Weight = weight; }
 
-	string toString(void) throw();
+	string toString(void) ;
 
 	bool hasCondition( int condition ) const { return find(m_Conditions.begin(), m_Conditions.end(), condition)!=m_Conditions.end(); }
 
@@ -237,17 +237,17 @@ class DirectiveSet
 ///// Member methods /////
 	
 public:
-	DirectiveSet() throw();
-	~DirectiveSet() throw();
+	DirectiveSet() ;
+	~DirectiveSet() ;
 
 public:
 	const list<Directive*>& getDirectives(void)  { return m_Directives; }
 	const list<Directive*>& getDeadDirectives(void)  { return m_DeadDirectives; }
 
-	void addDirective(Directive* pDirective) throw();
-	void addDeadDirective(Directive* pDirective) throw();
+	void addDirective(Directive* pDirective) ;
+	void addDeadDirective(Directive* pDirective) ;
 
-	void clear() throw();
+	void clear() ;
 
 	string getName(void)  { return m_Name; }
 	void setName(const string& name) throw() { m_Name = name; }
@@ -278,37 +278,37 @@ class DirectiveSetManager
 {
 ///// Member methods /////
 public:
-	DirectiveSetManager() throw();
-	~DirectiveSetManager() throw();
+	DirectiveSetManager() ;
+	~DirectiveSetManager() ;
 
 public:
 	// 객체를 초기화한다.
-	void init() throw();
+	void init() ;
 
 	// DB로부터 directive set을 로드한다.
-	void load() throw();
+	void load() ;
 
 	// 지정된 타입의 directive set 포인터를 반환한다.
-	DirectiveSet* getDirectiveSet(uint index) throw();
+	DirectiveSet* getDirectiveSet(uint index) ;
 
 protected:
 	// 문자열을 파싱해서 지정된 인덱스에 directive set을 생성한다.
-	void createDirectiveSet(uint index, const string& name, const string& text, const string& deadtext) throw();
+	void createDirectiveSet(uint index, const string& name, const string& text, const string& deadtext) ;
 
 	// directive에 딸려오는 파라미터들을 파싱한다.
-	void parseDirectiveParameter(Directive* pDirective, const string& text, int mode) throw();
+	void parseDirectiveParameter(Directive* pDirective, const string& text, int mode) ;
 
 	// 문자열로부터 condition 값을 리턴한다.
-	int  getCondition(const string& token) throw();
+	int  getCondition(const string& token) ;
 
 	// 문자열로부터 action 값을 리턴한다.
-	int  getAction(const string& token) throw();
+	int  getAction(const string& token) ;
 
 	// 문자열로부터 파라미터 값을 리턴한다.
-	int  getParameter(const string& token) throw();
+	int  getParameter(const string& token) ;
 
 	// 문자열로부터 확률을 리턴한다.
-	int  getRatio(const string& token) throw();
+	int  getRatio(const string& token) ;
 
 
 ///// Member data /////

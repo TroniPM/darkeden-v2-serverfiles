@@ -86,7 +86,7 @@ STRBalanceInfoManager::~STRBalanceInfoManager()
 }
 
 void STRBalanceInfoManager::init()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -96,7 +96,7 @@ void STRBalanceInfoManager::init()
 }
 
 void STRBalanceInfoManager::load()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -164,7 +164,7 @@ void STRBalanceInfoManager::addSTRBalanceInfo(STRBalanceInfo * pSTRBalanceInfo)
 }
 
 STRBalanceInfo * STRBalanceInfoManager::getSTRBalanceInfo(uint value) const 
-	throw (InvalidProtocolException)
+	
 {
 	__BEGIN_TRY
 
@@ -292,7 +292,7 @@ DEXBalanceInfoManager::~DEXBalanceInfoManager()
 }
 
 void DEXBalanceInfoManager::init()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -302,7 +302,7 @@ void DEXBalanceInfoManager::init()
 }
 
 void DEXBalanceInfoManager::load()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -370,7 +370,7 @@ void DEXBalanceInfoManager::addDEXBalanceInfo(DEXBalanceInfo * pDEXBalanceInfo)
 }
 
 DEXBalanceInfo * DEXBalanceInfoManager::getDEXBalanceInfo(uint value) const 
-	throw (InvalidProtocolException)
+	
 {
 	__BEGIN_TRY
 
@@ -498,7 +498,7 @@ INTBalanceInfoManager::~INTBalanceInfoManager()
 }
 
 void INTBalanceInfoManager::init()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -508,7 +508,7 @@ void INTBalanceInfoManager::init()
 }
 
 void INTBalanceInfoManager::load()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -579,7 +579,7 @@ void INTBalanceInfoManager::addINTBalanceInfo(INTBalanceInfo * pINTBalanceInfo)
 }
 
 INTBalanceInfo * INTBalanceInfoManager::getINTBalanceInfo(uint value) const 
-	throw (InvalidProtocolException)
+	
 {
 	__BEGIN_TRY
 

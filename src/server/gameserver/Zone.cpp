@@ -739,7 +739,7 @@ Zone::~Zone ()
 // initialize zone
 //////////////////////////////////////////////////////////////////////////////
 void Zone::init ()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -821,7 +821,7 @@ void Zone::init ()
 // 존 파일에서 존 정보를 읽어서 로딩한다.
 //////////////////////////////////////////////////////////////////////////////
 void Zone::load(bool bOutput)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -1658,7 +1658,7 @@ try {
 // 존 파일에서 존 정보를 읽어서 로딩한다.
 //////////////////////////////////////////////////////////////////////////////
 void Zone::reload(bool bOutput)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -2325,7 +2325,7 @@ try {
 // 현재 바닥에 떨어진 아이템은 서버가 재시작되어도 로딩하지 않는다.
 //////////////////////////////////////////////////////////////////////////////
 void Zone::loadItem () 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -2364,7 +2364,7 @@ void Zone::loadItem ()
 // 현재 존에 트리거드 포탈을 로드한다.
 //////////////////////////////////////////////////////////////////////////////
 void Zone::loadTriggeredPortal ()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -2434,7 +2434,7 @@ void Zone::loadTriggeredPortal ()
 // 이 존에서 나타나는 NPC와 몬스터의 스프라이트갯수를 계산해둔다.
 //////////////////////////////////////////////////////////////////////////////
 void Zone::initSpriteCount () 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -2553,7 +2553,7 @@ Sector* Zone::getSector(ZoneCoord_t x, ZoneCoord_t y)
 // 추가해야 하며, 아래 메소드에 locking 을 걸어줘야 한다.
 //////////////////////////////////////////////////////////////////////////////
 void Zone::pushPC(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY 
 
@@ -3809,7 +3809,7 @@ void Zone::addPC(Creature* pCreature, ZoneCoord_t cx, ZoneCoord_t cy, Dir_t dir)
 // delete한다. 또는 안보인는 넘이 보이게 될 경우등..
 //////////////////////////////////////////////////////////////////////////////
 void Zone::updateInvisibleScan(Creature* pCreature)
-	throw (ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -4026,7 +4026,7 @@ void Zone::updateHiddenScan(Creature* pCreature)
 // 아우스터스 용
 //////////////////////////////////////////////////////////////////////////////
 void Zone::updateDetectScan(Creature* pCreature)
-	throw (ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -4709,7 +4709,7 @@ TPOINT Zone::addItem(Item* pItem, ZoneCoord_t cx, ZoneCoord_t cy, bool bAllowCre
 //--------------------------------------------------------------------------------
 Item*
 Zone::getItem(ObjectID_t id) const
-	throw (Error)
+	
 {
     hash_map<ObjectID_t, Item*>::const_iterator iItem = m_Items.find(id);
 
@@ -4725,7 +4725,7 @@ Zone::getItem(ObjectID_t id) const
 //--------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------
 void Zone::addEffect(Effect* pEffect)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -4737,7 +4737,7 @@ void Zone::addEffect(Effect* pEffect)
 }
 
 void Zone::deleteEffect(ObjectID_t id) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -4747,7 +4747,7 @@ void Zone::deleteEffect(ObjectID_t id)
 }
 
 Effect* Zone::findEffect(Effect::EffectClass eid) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -4759,7 +4759,7 @@ Effect* Zone::findEffect(Effect::EffectClass eid)
 //--------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------
 void Zone::addEffect_LOCKING(Effect* pEffect)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -4775,7 +4775,7 @@ void Zone::addEffect_LOCKING(Effect* pEffect)
 }
 
 void Zone::deleteEffect_LOCKING(ObjectID_t id) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -4836,7 +4836,7 @@ void Zone::deleteQueuePC(Creature* pCreature)
 // Add PC to PC Manager (only do this)
 //--------------------------------------------------------------------------------
 void Zone::addPC(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -5277,7 +5277,7 @@ void Zone::broadcastLevelWarBonusPacket(Packet* pPacket, Creature* owner)
 //
 //--------------------------------------------------------------------------------
 void Zone::updateScan (Creature* pPC, Sight_t oldSight, Sight_t newSight)
-	throw (ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -5885,7 +5885,7 @@ void Zone::broadcastPacket(ZoneCoord_t cx, ZoneCoord_t cy, Packet* pPacket, cons
 // (x,y)에서 시야 영역안에 존재하는 모든 객체들의 정보를 받아온다.
 //////////////////////////////////////////////////////////////////////////////
 void Zone::scan (Creature* pPC, ZoneCoord_t cx, ZoneCoord_t cy, Packet* pPacket)
-	throw (ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -6304,7 +6304,7 @@ void Zone::scan (Creature* pPC, ZoneCoord_t cx, ZoneCoord_t cy, Packet* pPacket)
 // GCAddXXX 패킷을 보내면서, 동시에 그 PC 를 잠재적인 적으로 간주한다.
 //////////////////////////////////////////////////////////////////////////////
 void Zone::scanPC (Creature* pCreature)
-	throw (ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -6448,7 +6448,7 @@ void Zone::scanPC (Creature* pCreature)
 // for Skill FlashSliding, ShadowWalk
 //////////////////////////////////////////////////////////////////////////////
 bool Zone::moveFastPC(Creature* pPC, ZoneCoord_t x1, ZoneCoord_t y1, ZoneCoord_t x2, ZoneCoord_t y2, SkillType_t skillType)
-	throw (ProtocolException, Error)
+	
 {
 	__BEGIN_TRY 
 	__BEGIN_DEBUG
@@ -7178,7 +7178,7 @@ bool Zone::moveFastPC(Creature* pPC, ZoneCoord_t x1, ZoneCoord_t y1, ZoneCoord_t
 // for Skill FlashSliding, ShadowWalk
 //////////////////////////////////////////////////////////////////////////////
 bool Zone::moveFastMonster(Monster* pMonster, ZoneCoord_t x1, ZoneCoord_t y1, ZoneCoord_t x2, ZoneCoord_t y2, SkillType_t skillType)
-	throw (ProtocolException, Error)
+	
 {
 	__BEGIN_TRY 
 	__BEGIN_DEBUG
@@ -7576,7 +7576,7 @@ bool Zone::moveFastMonster(Monster* pMonster, ZoneCoord_t x1, ZoneCoord_t y1, Zo
 // 의한 강제적인 움직임인가??나타내는 변수
 //////////////////////////////////////////////////////////////////////////////
 void Zone::movePCBroadcast (Creature* pPC, ZoneCoord_t x1, ZoneCoord_t y1, ZoneCoord_t x2, ZoneCoord_t y2, bool bSendMove, bool bKnockback)
-	throw (ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -8409,7 +8409,7 @@ void Zone::moveCreatureBroadcast(Creature* pCreature, ZoneCoord_t x1, ZoneCoord_
 // 일정 주기마다 해줘야 하는 기능들을 여기에 추가하도록 한다.
 //////////////////////////////////////////////////////////////////////////////
 void Zone::heartbeat ()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -8862,7 +8862,7 @@ string Zone::toString () const
 // **********************************
 //////////////////////////////////////////////////////////////////////////////
 list<Creature*> Zone::getWatcherList(ZoneCoord_t x, ZoneCoord_t y, Creature* pTargetCreature)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -8986,7 +8986,7 @@ void Zone::addVampirePortal(ZoneCoord_t cx, ZoneCoord_t cy, Vampire* pVampire, c
 // EffectDecayItem을 붙여둔다.
 //-------------------------------------------------------------
 void Zone::deleteMotorcycle(ZoneCoord_t cx, ZoneCoord_t cy, Motorcycle* pMotorcycle)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -9031,7 +9031,7 @@ void Zone::decayMotorcycle(ZoneCoord_t cx, ZoneCoord_t cy, Motorcycle* pMotorcyc
 // EffectTransportItem을 붙여서 옮긴다.
 //-------------------------------------------------------------
 void Zone::transportItemToCorpse(Item* pItem, Zone* pTargetZone, ObjectID_t corpseObjectID)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -9090,7 +9090,7 @@ void Zone::transportItemToCorpse(Item* pItem, Zone* pTargetZone, ObjectID_t corp
 //-------------------------------------------------------------
 void Zone::transportItem(ZoneCoord_t x, ZoneCoord_t y, Item* pItem, 
 						Zone* pZone, ZoneCoord_t cx, ZoneCoord_t cy)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -9135,7 +9135,7 @@ void Zone::transportItem(ZoneCoord_t x, ZoneCoord_t y, Item* pItem,
 // 다른 heartbeat에서 추가된다.
 //-------------------------------------------------------------
 void Zone::addItemToCorpseDelayed(Item* pItem, ObjectID_t corpseItemID)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -9156,7 +9156,7 @@ void Zone::addItemToCorpseDelayed(Item* pItem, ObjectID_t corpseItemID)
 // 다른 heartbeat에서 추가된다.
 //-------------------------------------------------------------
 void Zone::addItemDelayed(Item* pItem, ZoneCoord_t cx, ZoneCoord_t cy, bool bAllowCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -9173,7 +9173,7 @@ void Zone::addItemDelayed(Item* pItem, ZoneCoord_t cx, ZoneCoord_t cy, bool bAll
 
 // 아직 테스트 안 해본 코드.
 void Zone::deleteItemDelayed(Object* pObject, ZoneCoord_t x, ZoneCoord_t y)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	
@@ -9195,7 +9195,7 @@ void Zone::deleteItemDelayed(Object* pObject, ZoneCoord_t x, ZoneCoord_t y)
 // 다른 heartbeat에서 추가된다.
 //-------------------------------------------------------------
 bool Zone::addRelicItem(int relicIndex)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -9330,7 +9330,7 @@ bool Zone::addRelicItem(int relicIndex)
 // 다른 heartbeat에서 삭제된다.
 //-------------------------------------------------------------
 bool Zone::deleteRelicItem()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -9508,7 +9508,7 @@ DWORD Zone::getLoadValue() const
 }
 
 void Zone::monsterScan(Monster* pMonster, ZoneCoord_t x, ZoneCoord_t y, Dir_t dir) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -9622,7 +9622,7 @@ void Zone::monsterScan(Monster* pMonster, ZoneCoord_t x, ZoneCoord_t y, Dir_t di
 
 /*
 void Zone::setNPCMarketCondition(MarketCond_t NPCSell, MarketCond_t NPCBuy) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -9643,7 +9643,7 @@ void Zone::setNPCMarketCondition(MarketCond_t NPCSell, MarketCond_t NPCBuy)
 
 
 bool Zone::deleteNPC(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -9674,7 +9674,7 @@ bool Zone::deleteNPC(Creature* pCreature)
 }
 
 void Zone::sendNPCInfo()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -9695,7 +9695,7 @@ void Zone::sendNPCInfo()
 
 
 void Zone::loadNPCs(Race_t race) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -9707,7 +9707,7 @@ void Zone::loadNPCs(Race_t race)
 }
 
 void Zone::deleteNPCs(Race_t race) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -9773,7 +9773,7 @@ bool Zone::removeNPCInfo(NPC* pNPC)
 }
 
 void Zone::loadEffect()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -9912,7 +9912,7 @@ void Zone::resetDarkLightInfo()
 
 void
 Zone::killAllMonsters() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -9939,7 +9939,7 @@ Zone::killAllMonsters()
 
 void
 Zone::killAllMonsters_UNLOCK() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -9960,7 +9960,7 @@ Zone::killAllMonsters_UNLOCK()
 	__END_CATCH
 }
 
-void Zone::killAllPCs() throw(Error)
+void Zone::killAllPCs() 
 {
 	__BEGIN_TRY
 
@@ -9990,7 +9990,7 @@ void Zone::killAllPCs() throw(Error)
 
 // 종족 전쟁에 참가하는 사람만 남긴다. 나머지는 kick한다.
 void    Zone::remainRaceWarPlayers() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -10078,7 +10078,7 @@ bool Zone::isLevelWarZone() const
 }
 
 void    Zone::remainPayPlayer()
-    throw(Error)
+    
 {
 	__BEGIN_TRY
 

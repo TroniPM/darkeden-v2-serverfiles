@@ -28,7 +28,7 @@
 //
 //--------------------------------------------------------------------------------
 UpdateServer::UpdateServer ()
-	throw ( Error )
+	
 : m_pServerSocket(NULL)
 {
 	__BEGIN_TRY
@@ -54,7 +54,7 @@ UpdateServer::UpdateServer ()
 //
 //--------------------------------------------------------------------------------
 UpdateServer::~UpdateServer ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -73,7 +73,7 @@ UpdateServer::~UpdateServer ()
 //
 //--------------------------------------------------------------------------------
 void UpdateServer::init ()
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 
@@ -89,7 +89,7 @@ void UpdateServer::init ()
 //
 //--------------------------------------------------------------------------------
 void UpdateServer::start ()
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 
@@ -105,7 +105,7 @@ void UpdateServer::start ()
 //
 //--------------------------------------------------------------------------------
 void UpdateServer::stop ()
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -364,7 +364,7 @@ void UpdateServer::run ()
 //
 //--------------------------------------------------------------------------------
 void UpdateServer::sysinit()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -383,7 +383,7 @@ void UpdateServer::sysinit()
 // 
 //--------------------------------------------------------------------------------
 void UpdateServer::goBackground ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 

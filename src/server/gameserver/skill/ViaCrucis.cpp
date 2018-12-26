@@ -20,7 +20,7 @@
 // 아우스터즈 오브젝트 핸들러
 //////////////////////////////////////////////////////////////////////////////
 void ViaCrucis::execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID)
-    throw(Error)
+    
 {
     __BEGIN_TRY
 
@@ -65,7 +65,7 @@ void ViaCrucis::execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* p
 // 아우스터즈 타일 핸들러
 //////////////////////////////////////////////////////////////////////////////
 void ViaCrucis::execute(Slayer* pSlayer, ZoneCoord_t X, ZoneCoord_t Y, SkillSlot* pSkillSlot, CEffectID_t CEffectID)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

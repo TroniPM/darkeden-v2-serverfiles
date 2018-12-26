@@ -21,8 +21,8 @@
 class GCFlagWarStatus : public Packet 
 {
 public:
-	GCFlagWarStatus() throw();
-	~GCFlagWarStatus() throw();
+	GCFlagWarStatus() ;
+	~GCFlagWarStatus() ;
 	
 public:
     void read(SocketInputStream & iStream) ;

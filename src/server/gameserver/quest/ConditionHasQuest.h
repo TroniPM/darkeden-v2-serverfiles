@@ -17,8 +17,8 @@
 class ConditionHasQuest : public Condition 
 {
 public:
-	ConditionHasQuest() throw();
-	virtual ~ConditionHasQuest() throw();
+	ConditionHasQuest() ;
+	virtual ~ConditionHasQuest() ;
 
 public:
 	virtual ConditionType_t getConditionType()  { return CONDITION_HAS_QUEST; }

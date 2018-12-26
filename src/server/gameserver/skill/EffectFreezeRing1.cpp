@@ -18,7 +18,7 @@
 #include "Gpackets/GCRemoveEffect.h"
 
 EffectFreezeRing1::EffectFreezeRing1(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -28,7 +28,7 @@ EffectFreezeRing1::EffectFreezeRing1(Creature* pCreature)
 }
 
 void EffectFreezeRing1::affect()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -40,14 +40,14 @@ void EffectFreezeRing1::affect()
 }
 
 void EffectFreezeRing1::affect(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void EffectFreezeRing1::unaffect(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -70,7 +70,7 @@ void EffectFreezeRing1::unaffect(Creature* pCreature)
 }
 
 void EffectFreezeRing1::unaffect()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

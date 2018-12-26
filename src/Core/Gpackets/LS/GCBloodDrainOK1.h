@@ -28,10 +28,10 @@ class GCBloodDrainOK1 : public ModifyInfo {
 public :
 	
 	// constructor
-	GCBloodDrainOK1() throw();
+	GCBloodDrainOK1() ;
 	
 	// destructor
-	~GCBloodDrainOK1() throw();
+	~GCBloodDrainOK1() ;
 
 	
 public :

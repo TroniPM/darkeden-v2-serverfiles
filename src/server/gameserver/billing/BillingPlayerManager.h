@@ -32,11 +32,11 @@ public:
 	~BillingPlayerManager();
 
 public:
-	void init() throw(Error) {}
+	void init()  {}
 
 	void stop();
 
-	void run() throw();
+	void run() ;
 
 	void sendPacket( Packet* pPacket ) throw( ProtocolException, Error );
 

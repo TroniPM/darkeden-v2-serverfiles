@@ -15,7 +15,7 @@
 // 뱀파이어 오브젝트 핸들러
 //////////////////////////////////////////////////////////////////////////////
 void CrushingStorm::execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID)
-    throw(Error)
+    
 {
     __BEGIN_TRY
 
@@ -59,7 +59,7 @@ void CrushingStorm::execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlo
 // 뱀파이어 타일 핸들러
 //////////////////////////////////////////////////////////////////////////////
 void CrushingStorm::execute(Slayer* pSlayer, ZoneCoord_t X, ZoneCoord_t Y, SkillSlot* pSkillSlot, CEffectID_t CEffectID)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

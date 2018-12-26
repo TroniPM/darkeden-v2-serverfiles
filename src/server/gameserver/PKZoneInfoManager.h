@@ -39,8 +39,8 @@ public:
 	bool		enterZone() { if ( canEnter() ) m_CurrentPCNum++; else return false; return true; }
 	bool		leaveZone() { if ( m_CurrentPCNum > 0 ) m_CurrentPCNum--; else return false; return true; }
 
-	void		lock() throw(Error) { m_Mutex.lock(); }
-	void		unlock() throw(Error) { m_Mutex.unlock(); }
+	void		lock()  { m_Mutex.lock(); }
+	void		unlock()  { m_Mutex.unlock(); }
 
 	string		toString();
 

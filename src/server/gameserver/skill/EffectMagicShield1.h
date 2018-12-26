@@ -22,7 +22,7 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_MAGIC_SHIELD1; }
 
-	void affect() throw(Error){}
+	void affect() {}
 
 	void unaffect(Creature* pCreature);
 	void unaffect();
@@ -48,7 +48,7 @@ public:
 	virtual string getEffectClassName()  { return "EffectMagicShield1"; }
 
 public:
-	virtual void load(Creature* pCreature) throw(Error) {}
+	virtual void load(Creature* pCreature)  {}
 };
 
 

@@ -113,7 +113,7 @@ public :
 	void addGuildMemberInfo( GuildMemberInfo2* pGuildMemberInfo ) throw() { m_GuildMemberInfoList.push_front( pGuildMemberInfo ); }
 
 	// clear GuildMemberInfoList
-	void clearGuildMemberInfoList() throw();
+	void clearGuildMemberInfoList() ;
 
 	// pop front element in GuildMemberInfoList
 	GuildMemberInfo2* popFrontGuildMemberInfoList() throw()

@@ -45,13 +45,13 @@ class WeatherInfoManager
 {
 public:
 	// init vision info
-	void init() throw(Error) { load(); }
+	void init()  { load(); }
 
 	// load from database
 	void load();
 
 	// save to database
-	void save() throw(Error) { throw UnsupportedError(__PRETTY_FUNCTION__); }
+	void save()  { throw UnsupportedError(__PRETTY_FUNCTION__); }
 
 	// get vision info
 	const WeatherInfo & getWeatherInfo(int month) 

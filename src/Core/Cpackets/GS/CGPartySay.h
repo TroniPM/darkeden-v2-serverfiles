@@ -26,10 +26,10 @@ class CGPartySay : public Packet {
 public:
 	
 	// constructor
-	CGPartySay() throw();
+	CGPartySay() ;
 	
 	// destructor
-	~CGPartySay() throw();
+	~CGPartySay() ;
 
 	
 public:

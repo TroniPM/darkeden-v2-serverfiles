@@ -69,7 +69,7 @@ public:
 
 	// disconnect
 	// 정식 로그아웃의 경우 disconnect(LOGOUT)
-	virtual void disconnect(bool bDisconnected = DISCONNECTED) throw (InvalidProtocolException, Error);
+	virtual void disconnect(bool bDisconnected = DISCONNECTED) ;
 	
 	// get debug string
 	virtual string toString() ;
@@ -116,8 +116,8 @@ public:
 public:
 	uint getSpecialEventCount(void) const { return m_SpecialEventCount; }
 	void setSpecialEventCount(uint count) { m_SpecialEventCount = count; }
-	void loadSpecialEventCount(void) throw();
-	void saveSpecialEventCount(void) throw();
+	void loadSpecialEventCount(void) ;
+	void saveSpecialEventCount(void) ;
 	
 public :	// '이미 접속 중'인 경우. 강제 종료를 위해서. by sigi.
 	bool isKickForLogin() 						{ return m_bKickForLogin; }
@@ -139,11 +139,11 @@ public :
 	void setFreePass(bool bFreePass=true) { m_bFreePass = bFreePass; }
 
 public :
-	void lock() throw(Error) { m_Mutex.lock(); }
-    void unlock() throw(Error) { m_Mutex.unlock(); }
+	void lock()  { m_Mutex.lock(); }
+    void unlock()  { m_Mutex.unlock(); }
 
 public :
-	void    setBillingSession() throw (Error)	{ BillingPlayerInfo::setBillingSession(this); }
+	void    setBillingSession() 	{ BillingPlayerInfo::setBillingSession(this); }
 	bool    sendBillingLogin();
 
 	void	sendCBillingPayInfo();
@@ -163,10 +163,10 @@ public:
 	bool	loginPayPlay( PayType payType,
 						const string& PayPlayDate, int PayPlayHours, uint payPlayFlag,
 						const string& ip, const string& playerID )
-				throw (Error);
+				;
 
 	bool	loginPayPlay( const string& ip, const string& playerID )
-				throw (Error);
+				;
 
 	bool	updatePayPlayTime( const string& playerID,
 							const VSDateTime& currentDateTime,
@@ -174,7 +174,7 @@ public:
 				throw (ProtocolException, Error );
 
 	void	logoutPayPlay( const string& playerID, bool bClear=false, bool bDecreaseTime=true )
-				throw (Error);
+				;
 
 	bool	isPayPlaying() const;
 

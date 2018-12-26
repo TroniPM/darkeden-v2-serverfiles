@@ -44,7 +44,7 @@ TrapItem::TrapItem(ItemType_t itemType, const list<OptionType_t>& optionType)
 }
 
 void TrapItem::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -89,7 +89,7 @@ void TrapItem::create(const string & ownerID, Storage storage, StorageID_t stora
 // save item
 //--------------------------------------------------------------------------------
 void TrapItem::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -110,7 +110,7 @@ void TrapItem::tinysave(const char* field) const
 }
 
 void TrapItem::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -161,7 +161,7 @@ string TrapItem::toString() const
 }
 
 VolumeWidth_t TrapItem::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -171,7 +171,7 @@ VolumeWidth_t TrapItem::getVolumeWidth() const
 }
 	
 VolumeHeight_t TrapItem::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -181,7 +181,7 @@ VolumeHeight_t TrapItem::getVolumeHeight() const
 }
 		
 Weight_t TrapItem::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -211,7 +211,7 @@ string TrapItemInfo::toString() const
 }
 
 void TrapItemInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -267,7 +267,7 @@ void TrapItemInfoManager::load()
 //////////////////////////////////////////////////////////////////////////////
 
 void TrapItemLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -412,7 +412,7 @@ void TrapItemLoader::load(Creature* pCreature)
 }
 
 void TrapItemLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -475,7 +475,7 @@ void TrapItemLoader::load(Zone* pZone)
 }
 
 void TrapItemLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

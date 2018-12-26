@@ -94,11 +94,11 @@ public:
 	int  getLairAttackMaxNumber()  { return m_LairAttackMaxNumber; }
 	void setLairAttackMaxNumber(int t) throw() { m_LairAttackMaxNumber = t; }
 
-	void setSayText(vector<string>& sayWords, const string& text) throw();
-	void setMasterSummonSay(const string& text) throw();
-	void setMasterDeadSlayerSay(const string& text) throw();
-	void setMasterDeadVampireSay(const string& text) throw();
-	void setMasterNotDeadSay(const string& text) throw();
+	void setSayText(vector<string>& sayWords, const string& text) ;
+	void setMasterSummonSay(const string& text) ;
+	void setMasterDeadSlayerSay(const string& text) ;
+	void setMasterDeadVampireSay(const string& text) ;
+	void setMasterNotDeadSay(const string& text) ;
 
 	const string& getRandomMasterSummonSay() ;
 	const string& getRandomMasterDeadSlayerSay() ;
@@ -154,8 +154,8 @@ private:
 class MasterLairInfoManager 
 {
 public:
-	MasterLairInfoManager() throw();
-	~MasterLairInfoManager() throw();
+	MasterLairInfoManager() ;
+	~MasterLairInfoManager() ;
 
 public:
 	void init();

@@ -38,7 +38,7 @@ class MonsterManager : public CreatureManager
 {
 public:
 	MonsterManager(Zone* pZone);
-	~MonsterManager() throw();
+	~MonsterManager() ;
 	
 public:
 	// load from database
@@ -51,7 +51,7 @@ public:
 	void addMonsters(ZoneCoord_t x, ZoneCoord_t y, MonsterType_t monsterType, int num, const SUMMON_INFO& summonInfo, list<Monster*>* pSummonedMonsters=NULL);
 
 	// delete monster
-	void deleteCreature(ObjectID_t objectID) throw();//NoSuchElementException, Error);
+	void deleteCreature(ObjectID_t objectID) ;//NoSuchElementException, Error);
 
 	// 概聪历俊 家加等 农府贸甸(NPC,Monster)阑 贸府茄促.
 	void processCreatures();
@@ -89,7 +89,7 @@ public:
 	int upgradeItemTypeByLuck(int luckLevel, Creature::CreatureClass ownerCreatureClass, ITEM_TEMPLATE& it);
 	int upgradeOptionByLuck(int luckLevel, Creature::CreatureClass ownerCreatureClass, ITEM_TEMPLATE& it);
 
-	void MonsterItemDrop(Monster* pMonster) throw();
+	void MonsterItemDrop(Monster* pMonster) ;
 
 protected :
 	void parseMonsterList(const string& text, bool bReload=false);

@@ -45,7 +45,7 @@ CommonItem::CommonItem(ItemType_t itemType, const list<OptionType_t>& optionType
 }
 
 void CommonItem::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -90,7 +90,7 @@ void CommonItem::create(const string & ownerID, Storage storage, StorageID_t sto
 // save item
 //--------------------------------------------------------------------------------
 void CommonItem::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -111,7 +111,7 @@ void CommonItem::tinysave(const char* field) const
 }
 
 void CommonItem::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -164,7 +164,7 @@ string CommonItem::toString() const
 }
 
 VolumeWidth_t CommonItem::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -174,7 +174,7 @@ VolumeWidth_t CommonItem::getVolumeWidth() const
 }
 	
 VolumeHeight_t CommonItem::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -184,7 +184,7 @@ VolumeHeight_t CommonItem::getVolumeHeight() const
 }
 	
 Weight_t CommonItem::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -213,7 +213,7 @@ string CommonItemInfo::toString() const
 }
 
 void CommonItemInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -267,7 +267,7 @@ void CommonItemInfoManager::load()
 //////////////////////////////////////////////////////////////////////////////
 
 void CommonItemLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -440,7 +440,7 @@ void CommonItemLoader::load(Creature* pCreature)
 }
 
 void CommonItemLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -504,7 +504,7 @@ void CommonItemLoader::load(Zone* pZone)
 }
 
 void CommonItemLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

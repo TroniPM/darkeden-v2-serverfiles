@@ -16,7 +16,7 @@
 class ViolentPhantom : public SkillHandler 
 {
 public:
-	ViolentPhantom() throw();
+	ViolentPhantom() ;
 	~ViolentPhantom() throw() {}
 	
 public:

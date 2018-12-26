@@ -17,7 +17,7 @@ public:
 	void setLarge(bool large) { m_bLarge = large; }
 
 	void affect();
-	void unaffect() throw(Error) { }
+	void unaffect()  { }
 
 	string toString()  { return "EffectCastingIcicleTrap"; }
 
@@ -44,7 +44,7 @@ public:
 	void setUnit(int unit) { m_Unit = unit; }
 
 	void affect();
-	void unaffect() throw(Error) { }
+	void unaffect()  { }
 
 	string toString()  { return "EffectCastingSideTrap"; }
 
@@ -69,7 +69,7 @@ public:
 	void setTick(Turn_t tick) { m_Tick = tick; }
 
 	void affect();
-	void unaffect() throw(Error) { }
+	void unaffect()  { }
 
 	string toString()  { return "EffectCastingSideTrap"; }
 

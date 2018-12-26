@@ -23,7 +23,7 @@ bool ConditionCanWarpGate::isSatisfied (Creature * pCreature1 , Creature * pCrea
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionCanWarpGate::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 }
 

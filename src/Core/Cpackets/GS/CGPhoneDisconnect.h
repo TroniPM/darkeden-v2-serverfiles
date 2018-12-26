@@ -24,10 +24,10 @@ class CGPhoneDisconnect : public Packet {
 public:
 
 	// constructor
-	CGPhoneDisconnect() throw();
+	CGPhoneDisconnect() ;
 
 	// destructor
-	~CGPhoneDisconnect() throw();
+	~CGPhoneDisconnect() ;
 
 public:
 	

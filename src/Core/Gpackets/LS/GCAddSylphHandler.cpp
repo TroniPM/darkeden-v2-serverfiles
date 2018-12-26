@@ -6,7 +6,7 @@
 #include "GCAddSylph.h"
 
 void GCAddSylphHandler ::execute ( GCAddSylph* pPacket , Player * pPlayer )
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 	__END_CATCH

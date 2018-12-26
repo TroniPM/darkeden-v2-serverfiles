@@ -27,8 +27,8 @@ class GCDownSkillFailed : public Packet
 
 public: 
 
-	GCDownSkillFailed() throw();
-	virtual ~GCDownSkillFailed() throw();
+	GCDownSkillFailed() ;
+	virtual ~GCDownSkillFailed() ;
 
 	
 public:

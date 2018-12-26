@@ -19,8 +19,8 @@
 class ConditionFactoryManager 
 {
 public:
-	ConditionFactoryManager() throw();
-	~ConditionFactoryManager() throw();
+	ConditionFactoryManager() ;
+	~ConditionFactoryManager() ;
 
 public:
 	void init();

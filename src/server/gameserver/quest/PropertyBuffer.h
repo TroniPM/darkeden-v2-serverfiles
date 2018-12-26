@@ -29,8 +29,8 @@ public:
 	static const char* SpaceTab;
 	
 public:
-	PropertyBuffer(const string & buffer) throw();
-	~PropertyBuffer() throw();
+	PropertyBuffer(const string & buffer) ;
+	~PropertyBuffer() ;
 	
 public:
 	string getProperty(string key) throw(NoSuchElementException, Error);

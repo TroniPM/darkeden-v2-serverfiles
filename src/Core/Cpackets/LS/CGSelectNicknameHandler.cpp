@@ -18,7 +18,7 @@
 #endif	// __GAME_SERVER__
 
 void CGSelectNicknameHandler::execute (CGSelectNickname* pPacket , Player* pPlayer)
-	 throw (Error)
+	 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 		

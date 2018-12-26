@@ -9,7 +9,7 @@
 #include "Vampire.h"
 
 VampireCorpse::VampireCorpse (Vampire* pVampire)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

@@ -22,18 +22,18 @@ class EffectManager
 {
 public:
 	EffectManager();
-	virtual ~EffectManager() throw();
+	virtual ~EffectManager() ;
 
 public:
 	void save(const string & ownerID);
 
-	EffectInfo* getEffectInfo() throw();
+	EffectInfo* getEffectInfo() ;
 
-	bool isEffect(Effect::EffectClass EClass) throw();
+	bool isEffect(Effect::EffectClass EClass) ;
 
-	void deleteEffect(Effect::EffectClass EClass) throw();
-	void deleteEffect(ObjectID_t ObjectID) throw();
-	void deleteEffect(Creature* pCreature, Effect::EffectClass EClass) throw();
+	void deleteEffect(Effect::EffectClass EClass) ;
+	void deleteEffect(ObjectID_t ObjectID) ;
+	void deleteEffect(Creature* pCreature, Effect::EffectClass EClass) ;
 	Effect* findEffect(Effect::EffectClass EClass) ;
 	Effect* findEffect(ObjectID_t ObjectID) ;
 
@@ -41,12 +41,12 @@ public:
 	Effect* findEffect(Effect::EffectClass EClass, string EnemyName) ;
 
 	// priority_queue에 등록하고, affect한다.
-	void addEffect(Effect* pEffect) throw();
+	void addEffect(Effect* pEffect) ;
 
 	Effect* getEffect()  { return m_Effects.front(); }
 
 	// 현재 있는 모든 이펙트의 deadline 을 0으로 만든다.
-	void setTimeOutAllEffect() throw();
+	void setTimeOutAllEffect() ;
 
 	// 일정 시간마다 실행되어야 하는 이펙트를 찾아서 affect 시키거나, 
 	// expire 된 이펙트를 삭제한다.

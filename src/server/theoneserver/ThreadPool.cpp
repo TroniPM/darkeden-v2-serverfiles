@@ -114,7 +114,7 @@ ThreadPool::~ThreadPool ()
 // 쓰레드풀안에 등록된 쓰레드들을 RUNNING 상태로 만든다. 
 //////////////////////////////////////////////////////////////////////
 void ThreadPool::start () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 		
@@ -150,7 +150,7 @@ void ThreadPool::start ()
 // (이는 singal 혹은 cancellation 으로 구현해야 하겠다.)
 //////////////////////////////////////////////////////////////////////
 void ThreadPool::stop () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 		
@@ -164,7 +164,7 @@ void ThreadPool::stop ()
 // 쓰레드풀에 쓰레드 객체를 등록한다.
 //////////////////////////////////////////////////////////////////////
 void ThreadPool::addThread (Thread* thread) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 		

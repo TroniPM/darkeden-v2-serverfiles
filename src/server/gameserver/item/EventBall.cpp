@@ -44,7 +44,7 @@ EventBall::EventBall(ItemType_t itemType, OptionType_t optionType, ItemNum_t Num
 }
 
 void EventBall::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -89,7 +89,7 @@ void EventBall::create(const string & ownerID, Storage storage, StorageID_t stor
 // save item
 //--------------------------------------------------------------------------------
 void EventBall::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -110,7 +110,7 @@ void EventBall::tinysave(const char* field) const
 }
 
 void EventBall::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -163,7 +163,7 @@ string EventBall::toString() const
 }
 
 VolumeWidth_t EventBall::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -173,7 +173,7 @@ VolumeWidth_t EventBall::getVolumeWidth() const
 }
 	
 VolumeHeight_t EventBall::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -183,7 +183,7 @@ VolumeHeight_t EventBall::getVolumeHeight() const
 }
 	
 Weight_t EventBall::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -213,7 +213,7 @@ string EventBallInfo::toString() const
 }
 
 void EventBallInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -267,7 +267,7 @@ void EventBallInfoManager::load()
 //////////////////////////////////////////////////////////////////////////////
 
 void EventBallLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -404,7 +404,7 @@ void EventBallLoader::load(Creature* pCreature)
 }
 
 void EventBallLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -467,7 +467,7 @@ void EventBallLoader::load(Zone* pZone)
 }
 
 void EventBallLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

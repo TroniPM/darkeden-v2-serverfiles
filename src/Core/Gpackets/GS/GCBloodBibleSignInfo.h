@@ -19,7 +19,7 @@ class GCBloodBibleSignInfo : public Packet
 {
 public:
 	GCBloodBibleSignInfo() throw() { }
-	virtual ~GCBloodBibleSignInfo() throw();
+	virtual ~GCBloodBibleSignInfo() ;
 
 public:
 	void read(SocketInputStream & iStream) ;

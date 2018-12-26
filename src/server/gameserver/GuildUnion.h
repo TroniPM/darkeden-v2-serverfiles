@@ -48,7 +48,7 @@ public:
 	GuildUnionManager();
 	~GuildUnionManager();
 
-	void	reload()	throw(Error);
+	void	reload()	;
 	void	load();
 	void	addGuildUnion( GuildUnion* pUnion );
 	GuildUnion*	getGuildUnion( GuildID_t gID ) { return m_GuildUnionMap[gID]; }
@@ -58,8 +58,8 @@ public:
 	bool 	removeMasterGuild(GuildID_t gID);
 	bool	removeGuild( uint uID, GuildID_t gID );
 
-	void	sendRefreshCommand()	throw(Error);
-	void	sendModifyUnionInfo(uint gID)	throw(Error);
+	void	sendRefreshCommand()	;
+	void	sendModifyUnionInfo(uint gID)	;
 	
 	static GuildUnionManager& Instance()
 	{

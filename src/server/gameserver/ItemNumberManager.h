@@ -43,8 +43,8 @@ private :
 class ItemNumberManager 
 {
 public:
-	ItemNumberManager() throw();
-	~ItemNumberManager() throw();
+	ItemNumberManager() ;
+	~ItemNumberManager() ;
 
 public:
 	void 	init();
@@ -74,7 +74,7 @@ ItemNumberManager::~ItemNumberManager()
 }
 
 void ItemNumberManager::init() 
-	throw(Error)
+	
 {
 	for (int i=0; i<Item::ITEM_CLASS_MAX; i++)
 	{

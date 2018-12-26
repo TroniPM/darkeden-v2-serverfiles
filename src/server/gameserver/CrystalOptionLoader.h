@@ -57,7 +57,7 @@ public:
 
 public:
 
-	// void load() throw();
+	// void load() ;
 	void load();
 	
 	// get CrystalOptionLoader

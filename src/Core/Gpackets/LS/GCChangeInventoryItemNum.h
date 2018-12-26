@@ -28,10 +28,10 @@ class GCChangeInventoryItemNum {
 public :
 	
 	// constructor
-	GCChangeInventoryItemNum() throw();
+	GCChangeInventoryItemNum() ;
 	
 	// destructor
-	~GCChangeInventoryItemNum() throw();
+	~GCChangeInventoryItemNum() ;
 
 	
 public :
@@ -53,7 +53,7 @@ public :
 	void setChangedItemListNum(BYTE ListNum) throw() { m_ChangedItemListNum = ListNum; }
 
 	// add / delete / clear S List
-	void addChangedItemListElement(ObjectID_t objectID, BYTE itemNum) throw(); 
+	void addChangedItemListElement(ObjectID_t objectID, BYTE itemNum) ; 
 
 	// ClearList
 	void clearChangedItemList() throw() { m_ChangedItemList.clear(); m_ChangedItemNumList.clear(); m_ChangedItemListNum = 0; }

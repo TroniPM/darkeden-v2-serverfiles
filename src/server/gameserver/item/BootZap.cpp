@@ -49,7 +49,7 @@ BootZap::BootZap(ItemType_t itemType, const list<OptionType_t>& optionType)
 // create item
 //--------------------------------------------------------------------------------
 void BootZap::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -101,7 +101,7 @@ void BootZap::create(const string & ownerID, Storage storage, StorageID_t storag
 // save item
 //--------------------------------------------------------------------------------
 void BootZap::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -125,7 +125,7 @@ void BootZap::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void BootZap::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -188,7 +188,7 @@ string BootZap::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t BootZap::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -202,7 +202,7 @@ VolumeWidth_t BootZap::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t BootZap::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -216,7 +216,7 @@ VolumeHeight_t BootZap::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t BootZap::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -230,7 +230,7 @@ Weight_t BootZap::getWeight() const
 // get/set armor's Defense Bonus
 //--------------------------------------------------------------------------------
 Defense_t BootZap::getDefenseBonus() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -239,7 +239,7 @@ Defense_t BootZap::getDefenseBonus() const
 	__END_CATCH
 }
 Protection_t BootZap::getProtectionBonus() const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -275,7 +275,7 @@ string BootZapInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void BootZapInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -331,7 +331,7 @@ void BootZapInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void BootZapLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -546,7 +546,7 @@ void BootZapLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void BootZapLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -619,7 +619,7 @@ void BootZapLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void BootZapLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

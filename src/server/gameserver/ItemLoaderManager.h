@@ -23,8 +23,8 @@ class Zone;
 class ItemLoaderManager 
 {
 public:
-	ItemLoaderManager() throw();
-	~ItemLoaderManager() throw();
+	ItemLoaderManager() ;
+	~ItemLoaderManager() ;
 
 public:
 	void init();

@@ -22,7 +22,7 @@ public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_TRAP_TRIGGERED; }
 	EffectClass getSendEffectClass()  { return EFFECT_CLASS_TRAPPED; }
 
-	void affect() throw(Error) {}
+	void affect()  {}
 	void affect(Creature* pCreature);
 
 	void unaffect(Creature* pCreature);

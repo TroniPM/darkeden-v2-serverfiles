@@ -22,7 +22,7 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_TRUE_COLOR_OF_VAMP_LOAD; }
 
-	void affect() throw(Error){}
+	void affect() {}
 
 	void unaffect(Creature* pCreature);
 	void unaffect();

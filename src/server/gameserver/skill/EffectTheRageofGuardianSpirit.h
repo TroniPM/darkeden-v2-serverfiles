@@ -22,7 +22,7 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_THE_RAGE_OF_GUARDIAN_SPIRIT; }
 
-	void affect() throw(Error){}
+	void affect() {}
 
 	void unaffect(Creature* pCreature);
 	void unaffect();

@@ -21,8 +21,8 @@
 class ActionPrepareShop : public Action 
 {
 public:
-	ActionPrepareShop() throw();
-	virtual ~ActionPrepareShop() throw();
+	ActionPrepareShop() ;
+	virtual ~ActionPrepareShop() ;
 	
 public:
 	virtual ActionType_t getActionType()  { return ACTION_PREPARE_SHOP; }
@@ -34,7 +34,7 @@ public:
 	BYTE getListNum()  { return m_ListNum;}
 	void setListNum(BYTE num) throw() { m_ListNum = num;}
 
-	void addListElement(ShopTemplateID_t id) throw();
+	void addListElement(ShopTemplateID_t id) ;
 	void clearList() throw() { m_List.clear(); m_ListNum = 0; }
 
 private :

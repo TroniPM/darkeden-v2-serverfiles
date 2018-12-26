@@ -13,7 +13,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 SocketEncryptInputStream::SocketEncryptInputStream ( Socket * sock , uint BufferLen ) 
-	throw ( Error )
+	
 : SocketInputStream(sock, BufferLen)
 {
 	__BEGIN_TRY
@@ -22,7 +22,7 @@ SocketEncryptInputStream::SocketEncryptInputStream ( Socket * sock , uint Buffer
 
 
 SocketEncryptInputStream::~SocketEncryptInputStream ()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH

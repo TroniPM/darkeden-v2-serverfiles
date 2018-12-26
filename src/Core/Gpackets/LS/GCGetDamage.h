@@ -31,10 +31,10 @@ class GCGetDamage : public Packet {
 public :
 	
 	// constructor
-	GCGetDamage() throw();
+	GCGetDamage() ;
 	
 	// destructor
-	~GCGetDamage() throw();
+	~GCGetDamage() ;
 
 	
 public :

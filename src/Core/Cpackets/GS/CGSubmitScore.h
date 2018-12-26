@@ -27,10 +27,10 @@ class CGSubmitScore : public Packet {
 public:
 	
 	// constructor
-	CGSubmitScore() throw();
+	CGSubmitScore() ;
 	
 	// destructor
-	~CGSubmitScore() throw();
+	~CGSubmitScore() ;
 
 	
 public:

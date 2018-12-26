@@ -33,7 +33,7 @@ public:
 
 public:
 	string getName()  { return m_Name;}
-	void setName( const char* pName) throw(Error) { m_Name = pName;}
+	void setName( const char* pName)  { m_Name = pName;}
 
 	void setIP(IP_t ip) throw() { m_IP = ip; }
 	IP_t getIP()  { return m_IP; }

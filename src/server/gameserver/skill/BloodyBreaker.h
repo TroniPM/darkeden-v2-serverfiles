@@ -17,7 +17,7 @@ class VampireSkillSlot;
 class BloodyBreaker : public SkillHandler 
 {
 public:
-	BloodyBreaker() throw();
+	BloodyBreaker() ;
 	~BloodyBreaker() throw() {}
 	
 public:

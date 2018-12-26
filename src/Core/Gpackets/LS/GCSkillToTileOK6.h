@@ -26,10 +26,10 @@ class GCSkillToTileOK6 : public ModifyInfo {
 public :
 	
 	// constructor
-	GCSkillToTileOK6() throw();
+	GCSkillToTileOK6() ;
 	
 	// destructor
-	~GCSkillToTileOK6() throw();
+	~GCSkillToTileOK6() ;
 
 	
 public :
@@ -92,7 +92,7 @@ public :
 
 
     // add / delete  Creature List
-    void addCListElement(ObjectID_t ObjectID) throw();
+    void addCListElement(ObjectID_t ObjectID) ;
 
 	// Clear Creature List
     void clearCList() throw() { m_CList.clear(); m_CListNum = 0; }

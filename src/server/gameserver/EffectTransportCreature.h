@@ -34,9 +34,9 @@ public:
 	virtual void unaffect();
 	virtual void unaffect(Creature* pCreature);
 
-	void create(const string & ownerID) throw(Error) {}
-	void save(const string & ownerID) throw(Error) {}
-	void destroy(const string & ownerID) throw(Error) {}
+	void create(const string & ownerID)  {}
+	void save(const string & ownerID)  {}
+	void destroy(const string & ownerID)  {}
 
 	virtual string toString() ;
 

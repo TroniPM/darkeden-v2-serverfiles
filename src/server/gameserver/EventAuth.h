@@ -17,7 +17,7 @@ class EventAuth : public Event
 {
 public:
 	EventAuth(GamePlayer* pGamePlayer);
-	virtual ~EventAuth() throw();
+	virtual ~EventAuth() ;
 
 public:
 	virtual EventClass getEventClass()  { return EVENT_CLASS_AUTH; }

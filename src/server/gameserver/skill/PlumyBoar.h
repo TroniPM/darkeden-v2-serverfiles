@@ -16,7 +16,7 @@
 class PlumyBoar : public SkillHandler 
 {
 public:
-	PlumyBoar() throw();
+	PlumyBoar() ;
 	~PlumyBoar() throw() {}
 	
 public:

@@ -54,8 +54,8 @@ public:
 	};
 
 public:
-	Tile(WORD m_Flag = 0, WORD m_Opt = 0) throw();
-	~Tile() throw();
+	Tile(WORD m_Flag = 0, WORD m_Opt = 0) ;
+	~Tile() ;
 
 public:
 	bool addCreature(Creature* pCreature, bool bCheckEffect=true, bool bCheckPortal=true) throw(GameException, DuplicatedException, Error);

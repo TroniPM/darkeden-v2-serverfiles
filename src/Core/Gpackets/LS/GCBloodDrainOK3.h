@@ -28,10 +28,10 @@ class GCBloodDrainOK3 : public Packet {
 public :
 	
 	// constructor
-	GCBloodDrainOK3() throw();
+	GCBloodDrainOK3() ;
 	
 	// destructor
-	~GCBloodDrainOK3() throw();
+	~GCBloodDrainOK3() ;
 
 	
 public :

@@ -16,7 +16,7 @@
 class DuplicateSelf: public SkillHandler 
 {
 public:
-	DuplicateSelf() throw();
+	DuplicateSelf() ;
 	~DuplicateSelf() throw() {}
 	
 public:

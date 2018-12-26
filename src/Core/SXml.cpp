@@ -75,8 +75,8 @@ public:
 	StrX(const XMLCh* const toTranscode) { m_pCSTR = XMLString::transcode(toTranscode); }
 	~StrX() { XMLString::release(&m_pCSTR); }
 
-	const char* c_str() const { return m_pCSTR; }
-	string	toString() const { return m_pCSTR; }
+	char* c_str()  { return m_pCSTR; }
+	string	toString()  { return m_pCSTR; }
 };
 
 //////////////////////////////////////////////////////////////////////////////

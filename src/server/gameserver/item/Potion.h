@@ -23,8 +23,8 @@
 class Potion : public ConcreteItem<Item::ITEM_CLASS_POTION, Stackable, NoDurability, NoOption, NoGrade, NoAttacking, NoEnchantLevel>
 {
 public:
-	Potion() throw();
-	Potion(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num) throw();
+	Potion() ;
+	Potion(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num) ;
 	
 public:
 	virtual void create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID=0);
@@ -36,7 +36,7 @@ public:
 	// get debug string
 	virtual string toString() ;
 
-	static void initItemIDRegistry(void) throw();
+	static void initItemIDRegistry(void) ;
 
 public:
 //	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_POTION; }
@@ -105,7 +105,7 @@ public:
 	virtual uint getItemLevel(void)  { return m_ItemLevel; }
 	virtual void setItemLevel(uint level) throw() { m_ItemLevel = level; }
 
-	void parseEffect(const string& effect) throw();
+	void parseEffect(const string& effect) ;
 
 	// toString
 	virtual string toString() ;

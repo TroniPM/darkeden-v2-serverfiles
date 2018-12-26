@@ -15,7 +15,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 SocketOutputStream::SocketOutputStream ( Socket * sock , uint BufferLen ) 
-	throw ( Error )
+	
 : m_Socket(sock), m_Buffer(NULL), m_BufferLen(BufferLen), m_Head(0), m_Tail(0), m_Sequence(0)
 {
 	__BEGIN_TRY
@@ -38,7 +38,7 @@ SocketOutputStream::SocketOutputStream ( Socket * sock , uint BufferLen )
 // destructor
 //////////////////////////////////////////////////////////////////////
 SocketOutputStream::~SocketOutputStream () 
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -68,7 +68,7 @@ SocketOutputStream::~SocketOutputStream ()
 //
 //////////////////////////////////////////////////////////////////////
 uint SocketOutputStream::write ( const char * buf , uint len ) 
-     throw ( Error )
+     
 {
 	__BEGIN_TRY
 		

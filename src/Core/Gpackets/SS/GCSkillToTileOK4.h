@@ -28,10 +28,10 @@ class GCSkillToTileOK4 : public Packet {
 public :
 	
 	// constructor
-	GCSkillToTileOK4() throw();
+	GCSkillToTileOK4() ;
 	
 	// destructor
-	~GCSkillToTileOK4() throw();
+	~GCSkillToTileOK4() ;
 
 	
 public :
@@ -91,7 +91,7 @@ public :
 
 
     // add / delete  Creature List
-    void addCListElement(ObjectID_t ObjectID) throw();
+    void addCListElement(ObjectID_t ObjectID) ;
 
 	// Clear Creature List
     void clearCList() throw() { m_CList.clear(); m_CListNum = 0; }

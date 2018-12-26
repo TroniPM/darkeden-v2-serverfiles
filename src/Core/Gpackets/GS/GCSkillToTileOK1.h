@@ -30,10 +30,10 @@ class GCSkillToTileOK1 : public ModifyInfo {
 public :
 	
 	// constructor
-	GCSkillToTileOK1() throw();
+	GCSkillToTileOK1() ;
 	
 	// destructor
-	~GCSkillToTileOK1() throw();
+	~GCSkillToTileOK1() ;
 
 	
 public :
@@ -89,7 +89,7 @@ public :
 	void setCListNum(BYTE CListNum) throw() { m_CListNum = CListNum; }
 
 	// add / delete  Creature List
-	void addCListElement(ObjectID_t ObjectID) throw();
+	void addCListElement(ObjectID_t ObjectID) ;
 	void clearCList() throw() { m_CList.clear(); m_CListNum = 0; }
 
 	// pop front Element in Status List

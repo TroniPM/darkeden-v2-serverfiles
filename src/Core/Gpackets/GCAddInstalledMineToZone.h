@@ -21,8 +21,8 @@
 class GCAddInstalledMineToZone : public GCAddItemToZone 
 {
 public:
-	GCAddInstalledMineToZone() throw();
-	~GCAddInstalledMineToZone() throw();
+	GCAddInstalledMineToZone() ;
+	~GCAddInstalledMineToZone() ;
 public:
 	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_GC_ADD_INSTALLED_MINE_TO_ZONE; }

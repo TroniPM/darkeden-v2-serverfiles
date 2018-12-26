@@ -41,7 +41,7 @@ public :
 	//----------------------------------------------------------------------
 
 	// read data from socket input stream
-	virtual void read (SocketInputStream & iStream) throw (ProtocolException, Error) = 0;
+	virtual void read (SocketInputStream & iStream) ;
 
 	// write data to socket output stream
 	virtual void write (SocketOutputStream & oStream) ;

@@ -30,7 +30,7 @@ public:
 	static const int szQuestInfo;
 	
 	GCMonsterKillQuestInfo() throw() { }
-	virtual ~GCMonsterKillQuestInfo() throw();
+	virtual ~GCMonsterKillQuestInfo() ;
 
 public:
 	void read(SocketInputStream & iStream) ;

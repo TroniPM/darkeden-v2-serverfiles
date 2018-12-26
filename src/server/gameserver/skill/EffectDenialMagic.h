@@ -22,13 +22,13 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_DENIAL_MAGIC; }
 
-	void affect() throw(Error){}
+	void affect() {}
 	void affect(Creature* pCreature);
 	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject);
 
 	void unaffect(Creature* pCreature);
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject);
-	void unaffect(Item* pItem) throw(Error) {}
+	void unaffect(Item* pItem)  {}
 	void unaffect();
 
 	string toString() ;
@@ -49,7 +49,7 @@ public:
 	virtual string getEffectClassName()  { return "EffectDenialMagic"; }
 
 public:
-	virtual void load(Creature* pCreature) throw(Error) {}
+	virtual void load(Creature* pCreature)  {}
 };
 
 

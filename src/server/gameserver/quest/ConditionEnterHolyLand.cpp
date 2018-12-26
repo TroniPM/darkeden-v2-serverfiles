@@ -96,7 +96,7 @@ bool ConditionEnterHolyLand::isSatisfied (Creature * pCreature1 , Creature * pCr
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionEnterHolyLand::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 	try
 	{

@@ -67,7 +67,7 @@ public:
 public:
 	TriggerType getTriggerType()  { return m_TriggerType; }
 	void setTriggerType(TriggerType triggerType) throw() { m_TriggerType = triggerType; }
-	void setTriggerType(const string & triggerType) throw(Error) 
+	void setTriggerType(const string & triggerType)  
 	{ 
 		if(triggerType == "NPC") m_TriggerType = NPC_TRIGGER; 
 		else if(triggerType == "QUEST") m_TriggerType = QUEST_TRIGGER; 

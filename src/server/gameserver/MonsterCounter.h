@@ -17,7 +17,7 @@
 class MonsterCounter 
 {
 public:
-	MonsterCounter(SpriteType_t spriteType = 0, WORD maxMonsters = 0, WORD currentMonsters = 0) throw();
+	MonsterCounter(SpriteType_t spriteType = 0, WORD maxMonsters = 0, WORD currentMonsters = 0) ;
 
 public:
 	SpriteType_t getSpriteType()  { return m_SpriteType; }
@@ -30,7 +30,7 @@ public:
 	void setCurrentMonsters(WORD n) throw() { m_CurrentMonsters = n; }
 
 	void addMonster();
-	void addMonster(WORD Count) throw();
+	void addMonster(WORD Count) ;
 	void deleteMonster();
 
 	string toString() ;

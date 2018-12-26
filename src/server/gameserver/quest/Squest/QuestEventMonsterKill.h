@@ -16,7 +16,7 @@
 //--------------------------------------------------------------------------------
 class QuestEventMonsterKill : public QuestEvent, public MonsterSelector {
 public :
-	QuestEventMonsterKill(MonsterType_t monsterType, SpriteType_t spriteType)	throw (Error)
+	QuestEventMonsterKill(MonsterType_t monsterType, SpriteType_t spriteType)	
 	: MonsterSelector(monsterType, spriteType, 1)
 	{
 	}

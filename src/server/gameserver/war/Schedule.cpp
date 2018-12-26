@@ -42,7 +42,7 @@ Schedule::popWork()
 }
 
 bool Schedule::heartbeat()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -69,7 +69,7 @@ bool Schedule::heartbeat()
 }
 
 string Schedule::toString() const
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

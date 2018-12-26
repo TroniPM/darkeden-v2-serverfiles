@@ -35,7 +35,7 @@ VariableInfo::~VariableInfo()
 //
 /////////////////////////////////////////////////////////
 void VariableInfo::parse()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

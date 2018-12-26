@@ -21,7 +21,7 @@
 // constructor
 //----------------------------------------------------------------------
 EffectExpTime::EffectExpTime (Zone* pZone) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -40,14 +40,14 @@ EffectExpTime::EffectExpTime (Zone* pZone)
 // destructor
 //----------------------------------------------------------------------
 EffectExpTime::~EffectExpTime () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void EffectExpTime::affect()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -77,7 +77,7 @@ void EffectExpTime::affect()
 // unaffect()
 //--------------------------------------------------------------------
 void EffectExpTime::unaffect()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

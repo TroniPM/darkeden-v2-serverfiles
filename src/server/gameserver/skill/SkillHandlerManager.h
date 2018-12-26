@@ -17,8 +17,8 @@
 class SkillHandlerManager 
 {
 public :
-	SkillHandlerManager() throw();
-	~SkillHandlerManager() throw();
+	SkillHandlerManager() ;
+	~SkillHandlerManager() ;
 	
 public:
 	// 게임서버객체의 init()에서 호출된다.

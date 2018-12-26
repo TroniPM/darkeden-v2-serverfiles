@@ -116,11 +116,11 @@ public :
 	bool 			loginPayPlay(PayType payType,
 								const string& payPlayDate, int payPlayHours, uint payPlayFlag,
 								const string& ip, const string& playerID)
-											throw (Error);
+											;
 
 	// pay시작
 	bool 			loginPayPlay(const string& ip, const string& playerID)
-											throw (Error);
+											;
 	
 	// pay 시간 update 등..
 	bool			updatePayPlayTime(const string& playerID,

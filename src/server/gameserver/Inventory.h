@@ -27,9 +27,9 @@ class Inventory
 {
 // constructor & destructor
 public:
-	Inventory(CoordInven_t X,CoordInven_t Y, bool bDeleteAll=true) throw();
-	Inventory(const Inventory* pInventory) throw();
-	~Inventory() throw();
+	Inventory(CoordInven_t X,CoordInven_t Y, bool bDeleteAll=true) ;
+	Inventory(const Inventory* pInventory) ;
+	~Inventory() ;
 
 // identity methods
 public:
@@ -55,18 +55,18 @@ public:
 
 // check methods
 public: 
-	bool hasItem(CoordInven_t X, CoordInven_t Y) throw();
-	bool hasItem(ObjectID_t ObjectID) throw();
-	bool hasItemWithItemID(ItemID_t ItemID) throw();
-	bool hasKey(ItemID_t TargetItemID) throw();
+	bool hasItem(CoordInven_t X, CoordInven_t Y) ;
+	bool hasItem(ObjectID_t ObjectID) ;
+	bool hasItemWithItemID(ItemID_t ItemID) ;
+	bool hasKey(ItemID_t TargetItemID) ;
 
-	bool canAdding(CoordInven_t X, CoordInven_t Y, Item* pItem) throw();
-	bool canAddingEx(CoordInven_t X, CoordInven_t Y, Item* pItem) throw();
+	bool canAdding(CoordInven_t X, CoordInven_t Y, Item* pItem) ;
+	bool canAddingEx(CoordInven_t X, CoordInven_t Y, Item* pItem) ;
 
 // addition & deletion related methods
 public:
-	bool  addItem(CoordInven_t X, CoordInven_t Y, Item* pItem) throw();
-	bool  CheckaddItem(CoordInven_t X, CoordInven_t Y, Item* pItem, Item* pItem2) throw();
+	bool  addItem(CoordInven_t X, CoordInven_t Y, Item* pItem) ;
+	bool  CheckaddItem(CoordInven_t X, CoordInven_t Y, Item* pItem, Item* pItem2) ;
 	Item* addItemEx(CoordInven_t X, CoordInven_t Y, Item* pItem);
 	bool  addItem(Item* pItem) throw(InventoryFullException,Error);
 	bool  addItem(Item* pItem, TPOINT& pt) throw(InventoryFullException,Error);
@@ -75,37 +75,37 @@ public:
 		Assert (pItem != NULL);
 		return getEmptySlot( pItem->getVolumeWidth(), pItem->getVolumeHeight(), p );
 	}
-	bool  getEmptySlot(VolumeWidth_t ItemWidth, VolumeHeight_t ItemHeight, _TPOINT& p) throw();
+	bool  getEmptySlot(VolumeWidth_t ItemWidth, VolumeHeight_t ItemHeight, _TPOINT& p) ;
 	void  deleteItem(ObjectID_t ObjectID);
 	void  deleteItem(CoordInven_t X, CoordInven_t Y);
-	void DeleteKeyItem() throw();
+	void DeleteKeyItem() ;
 
 	void  reloadItem(ObjectID_t ObjectID);
 // find methods
 public:
-	Item* searchItem(CoordInven_t X, CoordInven_t Y, Item* pItem, TPOINT & pt) throw();
+	Item* searchItem(CoordInven_t X, CoordInven_t Y, Item* pItem, TPOINT & pt) ;
 
 	Item* getItemWithItemID(ItemID_t itemID);
 	Item* getBeltWithItemID(ItemID_t itemID);
 	Item* getItemWithObjectID(ObjectID_t objectID);
 
-	Item* findItemOID(ObjectID_t objectID, CoordInven_t& X, CoordInven_t& Y) throw();
-	Item* findItemIID(ItemID_t ItemID, CoordInven_t& X, CoordInven_t& Y) throw();
+	Item* findItemOID(ObjectID_t objectID, CoordInven_t& X, CoordInven_t& Y) ;
+	Item* findItemIID(ItemID_t ItemID, CoordInven_t& X, CoordInven_t& Y) ;
 
-	Item* findItemOID(ObjectID_t objectID, Item::ItemClass IClass, CoordInven_t& X, CoordInven_t& Y) throw();
-	Item* findItemIID(ItemID_t ItemID, Item::ItemClass IClass, CoordInven_t& X, CoordInven_t& Y) throw();
+	Item* findItemOID(ObjectID_t objectID, Item::ItemClass IClass, CoordInven_t& X, CoordInven_t& Y) ;
+	Item* findItemIID(ItemID_t ItemID, Item::ItemClass IClass, CoordInven_t& X, CoordInven_t& Y) ;
 
 	// 아이템 재료 및 좌표 추적을 위한 것
-	Item* SerchItemCall(Item::ItemClass IClass, ItemType_t ItemType, ItemNum_t num) throw();
-	bool  SerchItemCalls(Item::ItemClass IClass, ItemType_t ItemType, ItemNum_t num) throw();
-	Item* findSubInventoryID(ItemID_t ItemID, Item::ItemClass IClass) throw();
-	Item* findSubInventoryItem(ItemID_t ItemID, CoordInven_t X, CoordInven_t Y) throw();
+	Item* SerchItemCall(Item::ItemClass IClass, ItemType_t ItemType, ItemNum_t num) ;
+	bool  SerchItemCalls(Item::ItemClass IClass, ItemType_t ItemType, ItemNum_t num) ;
+	Item* findSubInventoryID(ItemID_t ItemID, Item::ItemClass IClass) ;
+	Item* findSubInventoryItem(ItemID_t ItemID, CoordInven_t X, CoordInven_t Y) ;
 
-	Item* findItem(Item::ItemClass IClass, ItemType_t itemType=0xFFFF) throw();
-	Item* findItem(Item::ItemClass IClass, ItemType_t itemType, CoordInven_t& X, CoordInven_t& Y) throw();
+	Item* findItem(Item::ItemClass IClass, ItemType_t itemType=0xFFFF) ;
+	Item* findItem(Item::ItemClass IClass, ItemType_t itemType, CoordInven_t& X, CoordInven_t& Y) ;
 
-	Item* SerchStoneItem(CoordInven_t X, CoordInven_t Y) throw();
-	Item* searchItem2(Item* pItem, TPOINT & pt) throw();
+	Item* SerchStoneItem(CoordInven_t X, CoordInven_t Y) ;
+	Item* searchItem2(Item* pItem, TPOINT & pt) ;
 
 // item manipulation related methods
 public:
@@ -114,17 +114,17 @@ public:
 	InventorySlot& getInventorySlot(CoordInven_t X, CoordInven_t Y)  { return m_pInventorySlot[X][Y]; }
 
 protected:
-	void  setItem(CoordInven_t X, CoordInven_t Y, Item* pItem) throw();
+	void  setItem(CoordInven_t X, CoordInven_t Y, Item* pItem) ;
 
 // packing related methods
 public:
-	void clear() throw(); 
+	void clear() ; 
 	list<Item*> getList() ;
 	int  calc2x2Item(void) ;
 
 // misc methods
 public:
-	void   save(const string& owner) throw();
+	void   save(const string& owner) ;
 	string toString() ;
 
 

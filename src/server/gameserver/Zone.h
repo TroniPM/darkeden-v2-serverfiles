@@ -96,9 +96,9 @@ enum ZoneAccessMode
 class Zone 
 {
 public: // constructor & destructor
-	Zone(ZoneID_t zoneID) throw();
-	Zone(ZoneID_t zoneID, ZoneCoord_t width, ZoneCoord_t height) throw();
-	~Zone() throw();
+	Zone(ZoneID_t zoneID) ;
+	Zone(ZoneID_t zoneID, ZoneCoord_t width, ZoneCoord_t height) ;
+	~Zone() ;
 
 public:
 	void init();
@@ -124,7 +124,7 @@ public:
 	void addEffect_LOCKING(Effect* pEffect);	
 	void deleteEffect_LOCKING(ObjectID_t id);	
 
-	void deletePC(Creature* pCreature) throw();//NoSuchElementException, Error);
+	void deletePC(Creature* pCreature) ;//NoSuchElementException, Error);
 	void deleteQueuePC(Creature* pCreature) throw(NoSuchElementException, Error);
 	void deleteCreature(Creature* pCreature, ZoneCoord_t x, ZoneCoord_t y) throw(NoSuchElementException, Error);
 	void deleteObject(Object* pObject, ZoneCoord_t x, ZoneCoord_t y) throw(NoSuchElementException, Error);
@@ -188,8 +188,8 @@ public:
 	bool moveFastMonster(Monster* pMonster, ZoneCoord_t x1, ZoneCoord_t y1, ZoneCoord_t x2, ZoneCoord_t y2, SkillType_t skillType) ;
 
 	// 전쟁시 성 안은 안전지대가 되었다가 말았다가 한다. 존을 세이프존이 아니게 만들거나 원상복구시킨다.
-	void releaseSafeZone() throw();
-	void resetSafeZone() throw();
+	void releaseSafeZone() ;
+	void resetSafeZone() ;
 
 	// 오브젝트 등록
 	void registerObject( Object* pObject ) throw() { getObjectRegistry().registerObject( pObject ); }
@@ -204,8 +204,8 @@ public:
 
 
 public:
-	void lock() throw(Error) { m_Mutex.lock(); }
-	void unlock() throw(Error) { m_Mutex.unlock(); }
+	void lock()  { m_Mutex.lock(); }
+	void unlock()  { m_Mutex.unlock(); }
 
 	// get debug string
 	string toString() ;
@@ -246,13 +246,13 @@ public:
 	const WeatherManager* getWeatherManager()  { return m_pWeatherManager; }
 
 	uint getNPCCount()  { return m_NPCCount; }
-	void setNPCCount(uint n) throw(Error) { Assert(n <= maxNPCPerZone); m_NPCCount = n; }
+	void setNPCCount(uint n)  { Assert(n <= maxNPCPerZone); m_NPCCount = n; }
 
 	NPCType_t getNPCType(uint n)  { Assert(n < maxNPCPerZone); return m_NPCTypes[n]; }
 	void setNPCType(uint n, NPCType_t npcType) throw() { Assert(n < maxNPCPerZone); m_NPCTypes[n] = npcType; }
 
 	uint getMonsterCount()  { return m_MonsterCount; }
-	void setMonsterCount(uint n) throw(Error) { Assert(n <= maxMonsterPerZone); m_MonsterCount = n; }
+	void setMonsterCount(uint n)  { Assert(n <= maxMonsterPerZone); m_MonsterCount = n; }
 
 	MonsterType_t getMonsterType(uint n)  { Assert(n < maxMonsterPerZone); return m_MonsterTypes[n]; }
 	void setMonsterType(uint n, MonsterType_t npcType) throw() { Assert(n < maxMonsterPerZone); m_MonsterTypes[n] = npcType; }
@@ -267,11 +267,11 @@ public:
 	void stopTime() { m_bTimeStop = true; }
 	void resumeTime() { m_bTimeStop = false; }
 
-	void resetDarkLightInfo() throw();
+	void resetDarkLightInfo() ;
 
 	// ABCD add item to item hash map
-	void addToItemList(Item* pItem) throw();
-	void deleteFromItemList(ObjectID_t id) throw();
+	void addToItemList(Item* pItem) ;
+	void deleteFromItemList(ObjectID_t id) ;
 	hash_map<ObjectID_t, Item*> getItems(void) throw() { return m_Items; }
 
 	EffectManager* getEffectManager() throw() { return m_pEffectManager; }
@@ -289,7 +289,7 @@ public:
 	// 존 전체의 NPC에게 MarketCondition을 설정한다. default(100, 25)
 	//void setNPCMarketCondition(MarketCond_t NPCSell, MarketCond_t NPCBuy);
 
-	void addVampirePortal(ZoneCoord_t cx, ZoneCoord_t cy, Vampire* pVampire, const ZONE_COORD& ZoneCoord) throw();
+	void addVampirePortal(ZoneCoord_t cx, ZoneCoord_t cy, Vampire* pVampire, const ZONE_COORD& ZoneCoord) ;
 	void deleteMotorcycle(ZoneCoord_t cx, ZoneCoord_t cy, Motorcycle* pMotorcycle);
 
 	void addItemDelayed(Item* pItem, ZoneCoord_t cx, ZoneCoord_t cy, bool bAllowCreature=true);

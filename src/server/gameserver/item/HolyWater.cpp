@@ -48,7 +48,7 @@ HolyWater::HolyWater(ItemType_t itemType, const list<OptionType_t>& optionType)
 // create item
 //--------------------------------------------------------------------------------
 void HolyWater::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -101,7 +101,7 @@ void HolyWater::create(const string & ownerID, Storage storage, StorageID_t stor
 // save item
 //--------------------------------------------------------------------------------
 void HolyWater::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -125,7 +125,7 @@ void HolyWater::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void HolyWater::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -164,7 +164,7 @@ void HolyWater::save(const string & ownerID, Storage storage, StorageID_t storag
 }
 
 Damage_t HolyWater::getMinDamage() const
-    throw(Error)
+    
 {
 	__BEGIN_TRY
 
@@ -174,7 +174,7 @@ Damage_t HolyWater::getMinDamage() const
 }
 
 Damage_t HolyWater::getMaxDamage() const
-    throw(Error)
+    
 {
 	__BEGIN_TRY
 
@@ -203,7 +203,7 @@ string HolyWater::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t HolyWater::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -217,7 +217,7 @@ VolumeWidth_t HolyWater::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t HolyWater::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -231,7 +231,7 @@ VolumeHeight_t HolyWater::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t HolyWater::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -267,7 +267,7 @@ string HolyWaterInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void HolyWaterInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -323,7 +323,7 @@ void HolyWaterInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void HolyWaterLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -489,7 +489,7 @@ void HolyWaterLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void HolyWaterLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -556,7 +556,7 @@ void HolyWaterLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void HolyWaterLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

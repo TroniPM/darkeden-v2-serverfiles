@@ -31,7 +31,7 @@ WarID_t WarSystem::s_WarIDSuccessor = 0;
 WarSystem* g_pWarSystem = NULL;
 
 WarSystem::WarSystem()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -48,7 +48,7 @@ WarSystem::WarSystem()
 }
 
 WarSystem::~WarSystem()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -58,7 +58,7 @@ WarSystem::~WarSystem()
 }
 
 void WarSystem::init()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -70,7 +70,7 @@ void WarSystem::init()
 }
 
 void WarSystem::prepareRaceWar()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -90,7 +90,7 @@ void WarSystem::prepareRaceWar()
 
 
 void WarSystem::load()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -123,7 +123,7 @@ VSDateTime WarSystem::getWarEndTime(WarType_t warType) const
 }
 
 bool WarSystem::addWarDelayed(War* pWar)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -146,7 +146,7 @@ bool WarSystem::addWarDelayed(War* pWar)
 }
 
 bool WarSystem::addQueuedWar()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -171,7 +171,7 @@ bool WarSystem::addQueuedWar()
 
 // WarSystem 안에서만 호출되는 함수이므로 LOCK필요없다.
 bool WarSystem::addWar(War* pWar)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -247,7 +247,7 @@ bool WarSystem::addWar(War* pWar)
 
 
 bool WarSystem::makeGCWarList_LOCKED()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -296,7 +296,7 @@ bool WarSystem::makeGCWarList_LOCKED()
 }
 
 bool WarSystem::makeGCWarList()
-    throw (Error)
+    
 {
     __BEGIN_TRY
 
@@ -316,7 +316,7 @@ bool WarSystem::makeGCWarList()
 }
 
 void WarSystem::sendGCWarList(Player* pPlayer)
-    throw (Error)
+    
 {
     __BEGIN_TRY
 
@@ -334,7 +334,7 @@ void WarSystem::sendGCWarList(Player* pPlayer)
 }
 
 Work* WarSystem::heartbeat() 
-	throw(Error)
+	
 {
     __BEGIN_TRY
 
@@ -411,7 +411,7 @@ Work* WarSystem::heartbeat()
 
 bool
 WarSystem::checkStartRaceWar()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -434,7 +434,7 @@ WarSystem::checkStartRaceWar()
 }
 
 bool WarSystem::getAttackGuildID( ZoneID_t zoneID, GuildID_t& guildID ) const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	
@@ -458,7 +458,7 @@ bool WarSystem::getAttackGuildID( ZoneID_t zoneID, GuildID_t& guildID ) const
 }
 
 bool WarSystem::hasCastleActiveWar( ZoneID_t zoneID ) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	
@@ -504,7 +504,7 @@ bool WarSystem::hasCastleActiveWar( ZoneID_t zoneID ) const
 }
 
 WarSchedule* WarSystem::getActiveWarSchedule( ZoneID_t zoneID )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -523,7 +523,7 @@ WarSchedule* WarSystem::getActiveWarSchedule( ZoneID_t zoneID )
 
  
 WarSchedule* WarSystem::getActiveWarSchedule_LOCKED( ZoneID_t zoneID )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -560,7 +560,7 @@ WarSchedule* WarSystem::getActiveWarSchedule_LOCKED( ZoneID_t zoneID )
 }
 
 War* WarSystem::getActiveWar( ZoneID_t zoneID ) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -595,7 +595,7 @@ War* WarSystem::getActiveWar( ZoneID_t zoneID ) const
 }
 
 bool    WarSystem::isEndCondition(Item* pItem, MonsterCorpse* pMonsterCorpse) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -611,7 +611,7 @@ bool    WarSystem::isEndCondition(Item* pItem, MonsterCorpse* pMonsterCorpse)
 }
 
 bool	WarSystem::isModifyCastleOwner( ZoneID_t castleZoneID, PlayerCreature* pPC )
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -625,7 +625,7 @@ bool	WarSystem::isModifyCastleOwner( ZoneID_t castleZoneID, PlayerCreature* pPC 
 
 // pPC가 castleZoneID와 관련된 전쟁에 승리했다.
 bool    WarSystem::endWar(PlayerCreature* pPC, ZoneID_t castleZoneID) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -666,7 +666,7 @@ bool    WarSystem::endWar(PlayerCreature* pPC, ZoneID_t castleZoneID)
 
 // castleZoneID의 진행중인 전쟁을 제거한다.
 bool    WarSystem::removeWar(ZoneID_t castleZoneID) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -696,7 +696,7 @@ bool    WarSystem::removeWar(ZoneID_t castleZoneID)
 
 // castleZoneID의 진행중인 전쟁을 제거한다.
 bool    WarSystem::removeRaceWar()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -734,7 +734,7 @@ bool    WarSystem::removeRaceWar()
 
 // 특정한 플레이어에게 현재 진행중인 전쟁의 리스트를 보내준다.
 void WarSystem::broadcastWarList( GamePlayer* pGamePlayer ) const
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -789,7 +789,7 @@ void WarSystem::broadcastWarList( GamePlayer* pGamePlayer ) const
 }
 
 War* WarSystem::getActiveRaceWar() const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -807,7 +807,7 @@ War* WarSystem::getActiveRaceWar() const
 }
 
 bool WarSystem::startRaceWar()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -830,7 +830,7 @@ bool WarSystem::startRaceWar()
 }
 
 War* WarSystem::getActiveRaceWarAtSameThread() const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -853,7 +853,7 @@ War* WarSystem::getActiveRaceWarAtSameThread() const
 }
 
 bool    WarSystem::addRaceWarScheduleInfo(WarScheduleInfo* pWSI) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

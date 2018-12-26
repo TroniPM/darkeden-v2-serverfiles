@@ -12,7 +12,7 @@
 #include "Item.h"
 
 void TiffaugesValkyrjaBlue::execute(Monster* pMonster, Creature* pEnemy)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

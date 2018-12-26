@@ -37,10 +37,10 @@ class ZoneGroup {
 public:
 	
 	// constructor
-	ZoneGroup(ZoneGroupID_t zoneGroupID) throw();
+	ZoneGroup(ZoneGroupID_t zoneGroupID) ;
 	
 	// destructor
-	~ZoneGroup() throw();
+	~ZoneGroup() ;
 	
 
 public:
@@ -99,8 +99,8 @@ public:
 	string toString() ;
 
 public :
-	void 	lock() throw (Error)		{ m_Mutex.lock(); }
-	void 	unlock() throw (Error)		{ m_Mutex.unlock(); }
+	void 	lock() 		{ m_Mutex.lock(); }
+	void 	unlock() 		{ m_Mutex.unlock(); }
 
 	  void   initLoadValue();
       DWORD  getLoadValue() const;

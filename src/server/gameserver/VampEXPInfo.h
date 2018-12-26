@@ -17,8 +17,8 @@
 class VampEXPInfo 
 {
 public:
-	VampEXPInfo() throw();
-	~VampEXPInfo() throw();
+	VampEXPInfo() ;
+	~VampEXPInfo() ;
 
 public:
 	void setLevel(uint lev) throw() { m_Level = lev; }
@@ -46,8 +46,8 @@ private:
 class VampEXPInfoManager 
 {
 public:
-	VampEXPInfoManager() throw();
-	~VampEXPInfoManager() throw();
+	VampEXPInfoManager() ;
+	~VampEXPInfoManager() ;
 
 public:
 	void init();

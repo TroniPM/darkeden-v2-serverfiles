@@ -44,8 +44,8 @@ public :
 public :
 
 	// list methods
-	void push_back (Resource* pResource) throw (Error) { Assert(pResource != NULL); m_Resources.push_back(pResource); }
-	void pop_front () throw (Error) { Assert(!m_Resources.empty()); m_Resources.pop_front(); }
+	void push_back (Resource* pResource)  { Assert(pResource != NULL); m_Resources.push_back(pResource); }
+	void pop_front ()  { Assert(!m_Resources.empty()); m_Resources.pop_front(); }
 	Resource* front ()  { Assert(!m_Resources.empty()); return m_Resources.front(); }
 	bool empty ()  { return m_Resources.empty(); }
 

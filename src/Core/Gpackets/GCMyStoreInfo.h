@@ -19,7 +19,7 @@ class GCMyStoreInfo : public Packet
 {
 public:
 	GCMyStoreInfo() throw() : m_OpenUI(1) { }
-	virtual ~GCMyStoreInfo() throw();
+	virtual ~GCMyStoreInfo() ;
 
 public:
 	void read(SocketInputStream & iStream) ;

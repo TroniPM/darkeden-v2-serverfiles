@@ -35,7 +35,7 @@ BogleH::BogleH()
 // 몬스터 타일 핸들러
 //////////////////////////////////////////////////////////////////////////////
 void BogleH::execute(Monster* pMonster, ZoneCoord_t X, ZoneCoord_t Y)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

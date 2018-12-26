@@ -16,7 +16,7 @@
 class HellFire : public SkillHandler 
 {
 public:
-	HellFire() throw();
+	HellFire() ;
 	~HellFire() throw() {}
 	
 public:

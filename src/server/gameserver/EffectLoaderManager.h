@@ -22,8 +22,8 @@ class Ousters;
 class EffectLoaderManager 
 {
 public:
-	EffectLoaderManager() throw();
-	~EffectLoaderManager() throw();
+	EffectLoaderManager() ;
+	~EffectLoaderManager() ;
 
 public:
 	void init();

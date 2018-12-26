@@ -21,7 +21,7 @@ public:
 	~EffectEnemyErase();
 
 public:
-	void affect() throw(Error) {}
+	void affect()  {}
 	void affect(Creature* pCreature);
 
 	void unaffect(Creature* pCreature);
@@ -30,7 +30,7 @@ public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_ENEMY_ERASE; }
 
 	string getEnemyName()  { return m_EnemyName ;}
-	void setEnemyName(const string & EnemyName) throw(Error) { m_EnemyName = EnemyName;}
+	void setEnemyName(const string & EnemyName)  { m_EnemyName = EnemyName;}
 
     virtual void create(const string & ownerID);
     virtual void save(const string & ownerID);

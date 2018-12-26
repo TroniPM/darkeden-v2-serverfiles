@@ -45,7 +45,7 @@ SkillParentInfo::~SkillParentInfo ()
 //
 //----------------------------------------------------------------------
 void SkillParentInfo::init ()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -174,7 +174,7 @@ SkillParentInfoManager::~SkillParentInfoManager()
 //
 //--------------------------------------------------------------------
 void SkillParentInfoManager::init()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -190,7 +190,7 @@ void SkillParentInfoManager::init()
 //
 //--------------------------------------------------------------------
 void SkillParentInfoManager::load()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -264,7 +264,7 @@ void SkillParentInfoManager::load()
 //
 //--------------------------------------------------------------------
 void SkillParentInfoManager::save()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

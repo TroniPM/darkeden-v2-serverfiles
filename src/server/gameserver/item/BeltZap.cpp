@@ -49,7 +49,7 @@ BeltZap::BeltZap(ItemType_t itemType, const list<OptionType_t>& optionType)
 // create item
 //--------------------------------------------------------------------------------
 void BeltZap::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -101,7 +101,7 @@ void BeltZap::create(const string & ownerID, Storage storage, StorageID_t storag
 // save item
 //--------------------------------------------------------------------------------
 void BeltZap::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -125,7 +125,7 @@ void BeltZap::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void BeltZap::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -188,7 +188,7 @@ string BeltZap::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t BeltZap::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -202,7 +202,7 @@ VolumeWidth_t BeltZap::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t BeltZap::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -216,7 +216,7 @@ VolumeHeight_t BeltZap::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t BeltZap::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -230,7 +230,7 @@ Weight_t BeltZap::getWeight() const
 // get/set armor's Defense Bonus
 //--------------------------------------------------------------------------------
 Defense_t BeltZap::getDefenseBonus() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -239,7 +239,7 @@ Defense_t BeltZap::getDefenseBonus() const
 	__END_CATCH
 }
 Protection_t BeltZap::getProtectionBonus() const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -275,7 +275,7 @@ string BeltZapInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void BeltZapInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -331,7 +331,7 @@ void BeltZapInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void BeltZapLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -547,7 +547,7 @@ void BeltZapLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void BeltZapLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -620,7 +620,7 @@ void BeltZapLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void BeltZapLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

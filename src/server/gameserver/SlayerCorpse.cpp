@@ -9,7 +9,7 @@
 #include "Slayer.h"
 
 SlayerCorpse::SlayerCorpse (Slayer* pSlayer)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

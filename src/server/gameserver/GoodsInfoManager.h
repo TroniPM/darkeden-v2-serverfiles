@@ -99,19 +99,19 @@ public:
 	typedef HashMapGoodsInfo::const_iterator	HashMapGoodsInfoConstItr;
 
 public:
-	GoodsInfoManager() throw();
-	~GoodsInfoManager() throw();
+	GoodsInfoManager() ;
+	~GoodsInfoManager() ;
 
 public:
 
 	// initialize Manager
 	void init();
 
-	// void load() throw();
+	// void load() ;
 	void load();
 	
 	// clear list
-	void clear() throw();
+	void clear() ;
 
 	// add GoodsInfo
 	void addGoodsInfo(GoodsInfo* pGoodsInfo) throw(DuplicatedException, Error);

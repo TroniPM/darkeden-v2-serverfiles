@@ -23,8 +23,8 @@
 class GCShopBought : public Packet 
 {
 public:
-	GCShopBought() throw();
-	virtual ~GCShopBought() throw();
+	GCShopBought() ;
+	virtual ~GCShopBought() ;
 	
 	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;

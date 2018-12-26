@@ -476,7 +476,7 @@ bool canUnburrow(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y)
 // ZoneCoord_t originY   : pCreature를 물러나게 한 상대방의 좌표 y
 //////////////////////////////////////////////////////////////////////////////
 Dir_t knockbackCreature(Zone* pZone, Creature* pCreature, ZoneCoord_t originX, ZoneCoord_t originY)
-	throw (ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -2444,7 +2444,7 @@ void transportCreature(Creature* pCreature, ZoneID_t TargetZoneID, ZoneCoord_t T
 // ZoneID_t ZID : 찾고자 하는 존 ID
 //////////////////////////////////////////////////////////////////////////////
 Zone* getZoneByZoneID(ZoneID_t ZID) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -2656,7 +2656,7 @@ bool isValidZoneCoord(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, int offset)
 }
 
 bool enterMasterLair(Zone* pZone, Creature* pCreature)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -2831,7 +2831,7 @@ checkNewbieTransportToGuild(Slayer* pSlayer)
 // Corpse가 
 bool
 addCorpseToZone(Corpse* pCorpse, Zone* pZone, ZoneCoord_t cx, ZoneCoord_t cy)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -2955,7 +2955,7 @@ bool checkCorpse( Zone* pZone, MonsterType_t MType, ZoneCoord_t x1, ZoneCoord_t 
 
 // 몇개의 Zone 에만 메세지를 뿌리기 위해서 성에 속한 ZoneIDList가 필요함
 void makeZoneIDList(const string& zoneIDs, list<ZoneID_t>& zoneIDList ) 
-	throw(Error)
+	
 {
 
 	__BEGIN_TRY

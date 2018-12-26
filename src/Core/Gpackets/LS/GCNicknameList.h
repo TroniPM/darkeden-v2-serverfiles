@@ -26,8 +26,8 @@
 class GCNicknameList : public Packet 
 {
 public:
-	GCNicknameList() throw();
-	~GCNicknameList() throw();
+	GCNicknameList() ;
+	~GCNicknameList() ;
 	
 public:
 	void read(SocketInputStream & iStream) ;

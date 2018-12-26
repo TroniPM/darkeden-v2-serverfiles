@@ -16,7 +16,7 @@
 //////////////////////////////////////////////////////////////////////////////
 
 NPCManager::NPCManager () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -30,7 +30,7 @@ NPCManager::~NPCManager ()
 }
 
 void NPCManager::load (ZoneID_t zoneID, int race) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -109,7 +109,7 @@ void NPCManager::load (ZoneID_t zoneID, int race)
 }
 	
 void NPCManager::processCreatures () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG

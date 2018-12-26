@@ -55,7 +55,7 @@ OustersWristlet::OustersWristlet(ItemType_t itemType, const list<OptionType_t>& 
 // create item
 //--------------------------------------------------------------------------------
 void OustersWristlet::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -105,7 +105,7 @@ void OustersWristlet::create(const string & ownerID, Storage storage, StorageID_
 // save item
 //--------------------------------------------------------------------------------
 void OustersWristlet::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -129,7 +129,7 @@ void OustersWristlet::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void OustersWristlet::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -197,7 +197,7 @@ string OustersWristlet::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t OustersWristlet::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -211,7 +211,7 @@ VolumeWidth_t OustersWristlet::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t OustersWristlet::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -225,7 +225,7 @@ VolumeHeight_t OustersWristlet::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t OustersWristlet::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -239,7 +239,7 @@ Weight_t OustersWristlet::getWeight() const
 // get/set weapon's minDamage
 //--------------------------------------------------------------------------------
 Damage_t OustersWristlet::getMinDamage() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -253,7 +253,7 @@ Damage_t OustersWristlet::getMinDamage() const
 // get/set weapon's maxDamage
 //--------------------------------------------------------------------------------
 Damage_t OustersWristlet::getMaxDamage() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -330,7 +330,7 @@ string OustersWristletInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void OustersWristletInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -400,7 +400,7 @@ void OustersWristletInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void OustersWristletLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -610,7 +610,7 @@ pOustersWristlet->setHeroOptionAttr(pResult->getInt(++i));
 // load to zone
 //--------------------------------------------------------------------------------
 void OustersWristletLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -692,7 +692,7 @@ pOustersWristlet->setHeroOptionAttr(pResult->getInt(++i));
 // load to inventory
 //--------------------------------------------------------------------------------
 void OustersWristletLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

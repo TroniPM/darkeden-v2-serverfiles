@@ -16,7 +16,7 @@
 class Cabracam : public SkillHandler 
 {
 public:
-	Cabracam() throw();
+	Cabracam() ;
 	~Cabracam() throw() {}
 	
 public:

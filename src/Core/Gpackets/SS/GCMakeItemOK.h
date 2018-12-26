@@ -31,10 +31,10 @@ class GCMakeItemOK : public GCChangeInventoryItemNum, public GCAddItemToInventor
 public :
 	
 	// constructor
-	GCMakeItemOK() throw();
+	GCMakeItemOK() ;
 	
 	// destructor
-	~GCMakeItemOK() throw();
+	~GCMakeItemOK() ;
 
 	
 public :

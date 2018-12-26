@@ -18,7 +18,7 @@ class EventSave : public Event
 {
 public:
 	EventSave(GamePlayer* pGamePlayer);
-	virtual ~EventSave() throw();
+	virtual ~EventSave() ;
 
 public:
 	virtual EventClass getEventClass()  { return EVENT_SAVE; }

@@ -19,7 +19,7 @@ public:
 	EffectExpansion(Creature* pCreature);
 
 public:
-	void affect() throw(Error) {}
+	void affect()  {}
 	void affect(Creature* pCreature);
 
 	void unaffect(Creature* pCreature);
@@ -31,7 +31,7 @@ public:
 
 public:
 	int getHPBonus() throw() { return m_HPBonus;}
-	void setHPBonus(HP_t HPBonus) throw(Error) { m_HPBonus = HPBonus;}
+	void setHPBonus(HP_t HPBonus)  { m_HPBonus = HPBonus;}
 
 private :
 	HP_t m_HPBonus;

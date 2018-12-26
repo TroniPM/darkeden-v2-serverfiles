@@ -56,7 +56,7 @@ bool ConditionPayPlay::isSatisfied (Creature * pCreature1 , Creature * pCreature
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionPayPlay::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 	/*
 	try

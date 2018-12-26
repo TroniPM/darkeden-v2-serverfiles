@@ -20,8 +20,8 @@ public:
 	};
 
 public:
-	Schedule( Work* pWork, const VSDateTime& Time, ScheduleType type = SCHEDULE_TYPE_ONCE ) throw();
-	virtual ~Schedule() throw();
+	Schedule( Work* pWork, const VSDateTime& Time, ScheduleType type = SCHEDULE_TYPE_ONCE ) ;
+	virtual ~Schedule() ;
 
 public:
 	virtual bool 		heartbeat();

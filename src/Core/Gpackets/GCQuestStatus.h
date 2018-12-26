@@ -21,8 +21,8 @@
 class GCQuestStatus : public Packet 
 {
 public:
-	GCQuestStatus() throw();
-	~GCQuestStatus() throw();
+	GCQuestStatus() ;
+	~GCQuestStatus() ;
 	
 public:
     void read(SocketInputStream & iStream) ;

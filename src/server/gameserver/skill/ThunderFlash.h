@@ -16,7 +16,7 @@
 class ThunderFlash : public SkillHandler 
 {
 public:
-	ThunderFlash() throw();
+	ThunderFlash() ;
 	~ThunderFlash() throw() {}
 	
 public:

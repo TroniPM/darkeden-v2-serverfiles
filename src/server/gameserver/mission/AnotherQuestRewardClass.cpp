@@ -3,7 +3,7 @@
 #include "Assert.h"
 
 QuestMessage AnotherQuestRewardClass::giveReward( PlayerCreature* pPC ) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

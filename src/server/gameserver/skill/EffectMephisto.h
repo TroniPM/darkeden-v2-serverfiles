@@ -21,7 +21,7 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_MEPHISTO; }
 
-	void affect() throw(Error) {}
+	void affect()  {}
 	void affect(Creature* pCreature);
 
 	void unaffect(Creature* pCreature);
@@ -31,7 +31,7 @@ public:
 
 public:
 	int getBonus() throw() { return m_Bonus;}
-	void setBonus(int Bonus) throw(Error) { m_Bonus = Bonus;}
+	void setBonus(int Bonus)  { m_Bonus = Bonus;}
 
 private:
 	int m_Bonus;

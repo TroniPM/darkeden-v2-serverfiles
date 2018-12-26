@@ -33,7 +33,7 @@ bool ConditionHasInvenSpace::isSatisfied (Creature * pCreature1 , Creature * pCr
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionHasInvenSpace::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 	try
 	{

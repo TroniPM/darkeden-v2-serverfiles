@@ -67,7 +67,7 @@ DatagramSocket::DatagramSocket ( uint port )
 // destructor
 //////////////////////////////////////////////////////////////////////
 DatagramSocket::~DatagramSocket ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 	

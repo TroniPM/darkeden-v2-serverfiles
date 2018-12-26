@@ -29,7 +29,7 @@ bool ConditionIsGuildMember::isSatisfied (Creature * pCreature1 , Creature * pCr
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionIsGuildMember::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 }
 

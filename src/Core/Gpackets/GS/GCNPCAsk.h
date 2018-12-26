@@ -18,8 +18,8 @@
 class GCNPCAsk : public Packet 
 {
 public:
-	GCNPCAsk() throw();
-	virtual ~GCNPCAsk() throw();
+	GCNPCAsk() ;
+	virtual ~GCNPCAsk() ;
 
 public:
 	void read(SocketInputStream & iStream) ;

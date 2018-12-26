@@ -17,8 +17,8 @@
 class EventSystemMessage : public Event 
 {
 public:
-	EventSystemMessage(GamePlayer* pGamePlayer) throw();
-	~EventSystemMessage() throw();			
+	EventSystemMessage(GamePlayer* pGamePlayer) ;
+	~EventSystemMessage() ;			
 
 public:
 	virtual EventClass getEventClass()  { return EVENT_CLASS_SYSTEM_MESSAGE; }

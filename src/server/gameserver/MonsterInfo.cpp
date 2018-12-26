@@ -228,7 +228,7 @@ RegenType MonsterInfo::selectRegenType() const
 }
 
 void MonsterInfo::setMoveMode(const string& moveMode)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -561,7 +561,7 @@ MonsterInfoManager::~MonsterInfoManager ()
 }
 
 void MonsterInfoManager::init ()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -578,7 +578,7 @@ void MonsterInfoManager::clearTreasures()
 }
 
 void MonsterInfoManager::load () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -856,7 +856,7 @@ void MonsterInfoManager::load ()
 
 
 void MonsterInfoManager::reload (MonsterType_t monsterType) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG

@@ -27,7 +27,7 @@ private :
 // constructor
 ////////////////////////////////////////////////////////////////////////////////
 TriggerManager::TriggerManager () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -38,7 +38,7 @@ TriggerManager::TriggerManager ()
 // destructor
 ////////////////////////////////////////////////////////////////////////////////
 TriggerManager::~TriggerManager () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -49,7 +49,7 @@ TriggerManager::~TriggerManager ()
 // NPC 이름을 파라미터로 주면, NPC와 관련된 트리거들을 DB에서 로딩한다.
 ////////////////////////////////////////////////////////////////////////////////
 void TriggerManager::load (const string & name)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -105,7 +105,7 @@ void TriggerManager::load (const string & name)
 // 존 좌표를 파라미터로 주면, 그 좌표와 관련된 트리거들을 DB에서 로딩한다.
 ////////////////////////////////////////////////////////////////////////////////
 void TriggerManager::load (ZoneID_t zoneid, int left, int top, int right, int bottom)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -150,7 +150,7 @@ void TriggerManager::load (ZoneID_t zoneid, int left, int top, int right, int bo
 // refresh condition set
 ////////////////////////////////////////////////////////////////////////////////
 void TriggerManager::refresh ()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

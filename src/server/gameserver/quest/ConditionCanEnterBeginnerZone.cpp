@@ -24,7 +24,7 @@ bool ConditionCanEnterBeginnerZone::isSatisfied (Creature * pCreature1 , Creatur
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionCanEnterBeginnerZone::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 }
 

@@ -77,7 +77,7 @@ ItemMineInfoManager::~ItemMineInfoManager()
 }
 
 void ItemMineInfoManager::load()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

@@ -36,7 +36,7 @@ QuestBoard::~QuestBoard()
 //--------------------------------------------------------------------------------
 void		
 QuestBoard::init(int num) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -50,7 +50,7 @@ QuestBoard::init(int num)
 //--------------------------------------------------------------------------------
 void		
 QuestBoard::release() 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -74,7 +74,7 @@ QuestBoard::release()
 //--------------------------------------------------------------------------------
 void		
 QuestBoard::regenerate(int num) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -113,7 +113,7 @@ QuestBoard::regenerate(int num)
 //--------------------------------------------------------------------------------
 bool        
 QuestBoard::add(Quest* pQuest) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -141,7 +141,7 @@ QuestBoard::add(Quest* pQuest)
 //--------------------------------------------------------------------------------
 Quest*		
 QuestBoard::remove(QuestID_t qid) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -167,7 +167,7 @@ QuestBoard::remove(QuestID_t qid)
 //--------------------------------------------------------------------------------
 void		
 QuestBoard::setScript(Script* pScript) const 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -197,7 +197,7 @@ QuestBoard::setScript(Script* pScript) const
 /*
 void		
 QuestBoard::makeNPCAskPacket(GCNPCAskDynamic& gcNPCAskDynamic) const 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

@@ -217,8 +217,8 @@ class OptionInfo
 ///// Member methods /////
 	
 public:
-	OptionInfo() throw();
-	~OptionInfo() throw();
+	OptionInfo() ;
+	~OptionInfo() ;
 
 public:
 	OptionType_t getType(void) const { return m_OptionType; }
@@ -257,7 +257,7 @@ public:
 	int getReqLevel(void) const  { return m_ReqLevel; }
 	void setReqLevel(int req) { m_ReqLevel = req; }
 
-	void setReqAbility(const string& text) throw();
+	void setReqAbility(const string& text) ;
 
 	int getLevel(void) const { return m_Level; }
 	void setLevel(int level) { m_Level = level; }
@@ -350,13 +350,13 @@ class OptionInfoSet
 {
 
 public:
-	OptionInfoSet() throw();
-	~OptionInfoSet() throw();
+	OptionInfoSet() ;
+	~OptionInfoSet() ;
 
 public:
 	void addOptionType(uint level, OptionType_t type) throw(DuplicatedException, Error);
 
-	void getPossibleOptionTypes(uint minLevel, uint maxLevel, vector<OptionType_t>& rOptionVector) throw();
+	void getPossibleOptionTypes(uint minLevel, uint maxLevel, vector<OptionType_t>& rOptionVector) ;
 
 	void clear()	{ m_OptionTypes.clear(); }
 
@@ -398,14 +398,14 @@ class OptionInfoManager
 ///// Member methods /////
 	
 public:
-	OptionInfoManager() throw();
-	~OptionInfoManager() throw();
+	OptionInfoManager() ;
+	~OptionInfoManager() ;
 
 public:
-	void init() throw();
-	void load() throw();
+	void init() ;
+	void load() ;
 
-	void release() throw();
+	void release() ;
 	
 	OptionInfo* getOptionInfo(OptionType_t OptionType) throw(NoSuchElementException, Error);
 	OptionInfo* getOptionInfo(const string& nickname) throw(NoSuchElementException, Error);
@@ -414,7 +414,7 @@ public:
 
 	list<OptionType_t> getMixOptionInfo(int OptionType) throw(NoSuchElementException, Error);
 
-	vector<OptionType_t> getPossibleOptionVector(Item::ItemClass IClass, uint minLevel, uint maxLevel) throw();
+	vector<OptionType_t> getPossibleOptionVector(Item::ItemClass IClass, uint minLevel, uint maxLevel) ;
 
 	void addOptionInfo(OptionInfo* pOptionInfo) throw(DuplicatedException, Error);
 
@@ -427,7 +427,7 @@ public:
 	int getRareUpgradeRatio( OptionType_t optionType, bool success );
 	const OptionClassInfo* getOptionClassInfo( OptionClass oc ) { return m_OptionClassInfos[oc]; }
 
-	void addPetEnchantOption(PetEnchantOption* pPetEnchantOption) throw();
+	void addPetEnchantOption(PetEnchantOption* pPetEnchantOption) ;
 	const list<PetEnchantOption*>& getPetEnchantOptionList() const { return m_PetEnchantOptionList; }
 
 	void setTotalPetEnchantOption( int total ) throw() { m_ToTalPetEnchantOption = total; }

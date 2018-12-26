@@ -53,7 +53,7 @@
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGRelicToObjectHandler::execute (CGRelicToObject* pPacket , Player* pPlayer)
-	 throw (Error)
+	 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 		
@@ -248,7 +248,7 @@ void CGRelicToObjectHandler::execute (CGRelicToObject* pPacket , Player* pPlayer
 }
 
 void CGRelicToObjectHandler::executeRelic(CGRelicToObject* pPacket , Player* pPlayer)
-	 throw (Error)
+	 
 {
 	__BEGIN_TRY
 
@@ -550,7 +550,7 @@ void CGRelicToObjectHandler::executeRelic(CGRelicToObject* pPacket , Player* pPl
 }
 
 void CGRelicToObjectHandler::executeBloodBible(CGRelicToObject* pPacket , Player* pPlayer)
-	 throw (Error)
+	 
 {
 	__BEGIN_TRY
 
@@ -618,7 +618,7 @@ void CGRelicToObjectHandler::executeBloodBible(CGRelicToObject* pPacket , Player
 }
 
 void CGRelicToObjectHandler::executeCastleSymbol(CGRelicToObject* pPacket , Player* pPlayer)
-	 throw (Error)
+	 
 {
 	__BEGIN_TRY
 
@@ -697,7 +697,7 @@ void CGRelicToObjectHandler::executeCastleSymbol(CGRelicToObject* pPacket , Play
 }
 	
 void CGRelicToObjectHandler::executeFlag(CGRelicToObject* pPacket , Player* pPlayer)
-	 throw (Error)
+	 
 {
 	__BEGIN_TRY
 
@@ -775,7 +775,7 @@ void CGRelicToObjectHandler::executeFlag(CGRelicToObject* pPacket , Player* pPla
 }
 
 void CGRelicToObjectHandler::executeSweeper(CGRelicToObject* pPacket , Player* pPlayer)
-	 throw (Error)
+	 
 {
 	__BEGIN_TRY
 

@@ -18,8 +18,8 @@
 class VolumeInfo 
 {
 public:
-	VolumeInfo(VolumeType_t volumeType, VolumeWidth_t volumeWidth, VolumeHeight_t volumeHeight) throw();
-	~VolumeInfo() throw();
+	VolumeInfo(VolumeType_t volumeType, VolumeWidth_t volumeWidth, VolumeHeight_t volumeHeight) ;
+	~VolumeInfo() ;
 
 public:
 	// get/set volume width
@@ -31,7 +31,7 @@ public:
 	void setVolumeHeight(VolumeHeight_t volumeHeight) throw() { m_VolumeHeight = volumeHeight; }
 
 	// get debug string
-	string toString() throw();
+	string toString() ;
 
 private:
 	VolumeType_t   m_VolumeType;
@@ -48,13 +48,13 @@ private:
 class VolumeInfoManager 
 {
 public:
-	VolumeInfoManager() throw();
-	~VolumeInfoManager() throw();
+	VolumeInfoManager() ;
+	~VolumeInfoManager() ;
 	
 public:
-	void init() throw();
+	void init() ;
 	VolumeInfo* getVolumeInfo(VolumeType_t VolumeType)  { return m_VolumeInfo[VolumeType]; }
-	string toString() throw();
+	string toString() ;
 
 private:
 	VolumeInfo* m_VolumeInfo[MAX_VOLUME_TYPE];

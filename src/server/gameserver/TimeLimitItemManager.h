@@ -48,11 +48,11 @@ public:
 	bool		registerItem( Item* pItem );
 	bool		checkTimeLimit( Item* pItem );
 	bool		wasteIfTimeOver( Item* pItem );
-	bool		itemSold( Item* pItem ) throw(Error) { return changeStatus( pItem, SOLD ); }
-	bool		deleteItemByMorph( Item* pItem ) throw(Error) { return changeStatus( pItem, MORPH ); }
+	bool		itemSold( Item* pItem )  { return changeStatus( pItem, SOLD ); }
+	bool		deleteItemByMorph( Item* pItem )  { return changeStatus( pItem, MORPH ); }
 	bool		updateItemTimeLimit( Item* pItem, DWORD time );
 
-	void		clear() throw(Error) { m_ItemTimeLimits.clear(); }
+	void		clear()  { m_ItemTimeLimits.clear(); }
 
 	void		addTimeLimitItem( Item* pItem, DWORD time );
 

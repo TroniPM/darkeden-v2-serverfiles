@@ -35,7 +35,7 @@ bool ConditionHasEnoughCastleEntranceFee::isSatisfied (Creature * pCreature1 , C
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionHasEnoughCastleEntranceFee::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 	try
 	{

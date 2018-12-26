@@ -16,7 +16,7 @@
 class DeadlyClaw : public SkillHandler 
 {
 public:
-	DeadlyClaw() throw();
+	DeadlyClaw() ;
 	~DeadlyClaw() throw() {}
 	
 public:

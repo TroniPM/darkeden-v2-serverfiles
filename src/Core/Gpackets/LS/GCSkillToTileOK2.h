@@ -28,10 +28,10 @@ class GCSkillToTileOK2 : public ModifyInfo {
 public :
 	
 	// constructor
-	GCSkillToTileOK2() throw();
+	GCSkillToTileOK2() ;
 	
 	// destructor
-	~GCSkillToTileOK2() throw();
+	~GCSkillToTileOK2() ;
 
 	
 public :
@@ -91,7 +91,7 @@ public :
 
 
     // add / delete  Creature List
-    void addCListElement(ObjectID_t ObjectID) throw();
+    void addCListElement(ObjectID_t ObjectID) ;
 
 	// Clear Creature List
     void clearCList() throw() { m_CList.clear(); m_CListNum = 0; }

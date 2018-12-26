@@ -48,7 +48,7 @@ bool ConditionExistReinforce::isSatisfied (Creature * pCreature1 , Creature * pC
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionExistReinforce::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 	m_ZoneID = propertyBuffer.getPropertyInt("ZoneID");
 }

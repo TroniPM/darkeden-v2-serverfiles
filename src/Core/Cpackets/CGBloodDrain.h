@@ -31,10 +31,10 @@ class CGBloodDrain : public Packet {
 public:
 	
 	// constructor
-	CGBloodDrain() throw();
+	CGBloodDrain() ;
 	
 	// destructor
-	~CGBloodDrain() throw();
+	~CGBloodDrain() ;
 
 	
 public:

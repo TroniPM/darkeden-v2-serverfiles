@@ -16,7 +16,7 @@ public:
 	WaitType getWaitType() { return WAIT_FOR_APART; }
 
 	static bool removeCoupleItem( PlayerCreature* pPC );
-	static bool hasCoupleItem( PlayerCreature* pPC ) throw(Error) { return getCoupleItem( pPC ) != NULL; }
+	static bool hasCoupleItem( PlayerCreature* pPC )  { return getCoupleItem( pPC ) != NULL; }
 	static Item* getCoupleItem( PlayerCreature* pPC );
 };
 

@@ -238,7 +238,7 @@ void ResurrectLocationManager::addOustersPosition(ZoneID_t id, const ZONE_COORD&
 }
 
 bool ResurrectLocationManager::getPosition( PlayerCreature* pPC, ZONE_COORD& zoneCoord ) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -380,7 +380,7 @@ bool ResurrectLocationManager::getPosition( PlayerCreature* pPC, ZONE_COORD& zon
 }
 
 bool ResurrectLocationManager::getBasicPosition( PlayerCreature* pPC, ZONE_COORD& zoneCoord ) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

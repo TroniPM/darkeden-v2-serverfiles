@@ -26,9 +26,9 @@ public:
 	static PartnerWaitInfo*	getPartnerWaitInfo(PlayerCreature* pWaitingPC, string RequestedPCName, WaitType waitType);
 
 public:
-	virtual uint			waitPartner( PlayerCreature* pTargetPC ) throw(Error) = 0;
-	virtual uint			acceptPartner( PlayerCreature* pPC ) throw(Error) = 0;
-	virtual void			timeExpired() throw(Error) = 0;
+	virtual uint			waitPartner( PlayerCreature* pTargetPC )  = 0;
+	virtual uint			acceptPartner( PlayerCreature* pPC )  = 0;
+	virtual void			timeExpired()  = 0;
 	virtual WaitType		getWaitType() = 0;
 
 public:

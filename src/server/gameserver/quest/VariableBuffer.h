@@ -28,8 +28,8 @@ public:
 	static const char* SpaceTab;
 	
 public:
-	VariableBuffer(const string & buffer) throw();
-	~VariableBuffer() throw();
+	VariableBuffer(const string & buffer) ;
+	~VariableBuffer() ;
 	
 public:
 	int getCount() const { return m_VariableInfos.size(); }

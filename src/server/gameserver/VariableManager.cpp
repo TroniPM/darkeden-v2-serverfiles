@@ -10,7 +10,7 @@ extern void strlwr(char* str);
 // constructor
 //////////////////////////////////////////////////////////////////////////////
 VariableManager::VariableManager()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -227,14 +227,14 @@ VariableManager::VariableManager()
 // destructor
 //////////////////////////////////////////////////////////////////////////////
 VariableManager::~VariableManager() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void VariableManager::init()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -278,7 +278,7 @@ void VariableManager::init()
 
 
 void VariableManager::load()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

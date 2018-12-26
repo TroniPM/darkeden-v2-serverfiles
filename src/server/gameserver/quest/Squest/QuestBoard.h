@@ -29,7 +29,7 @@ public :
 	void		setScript(Script* pScript) ;
 	//void		makeNPCAskPacket(GCNPCAskDynamic& npcAskPacket) ;
 
-	const QUESTS& getQuests() const	throw (Error) { return m_Quests; }
+	const QUESTS& getQuests() const	 { return m_Quests; }
 
 private :
 	NPC*	m_pNPC;

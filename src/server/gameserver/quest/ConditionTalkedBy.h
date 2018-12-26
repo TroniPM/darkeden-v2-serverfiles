@@ -28,7 +28,7 @@ public:
 		return pNPC != NULL && pNPC->isNPC() && pPC != NULL && pPC->isPC(); 
 	}
 
-	virtual void read(PropertyBuffer & propertyBuffer) throw(Error) { }
+	virtual void read(PropertyBuffer & propertyBuffer)  { }
 
 	virtual string toString()  { return "ConditionTalkedBy"; }
 

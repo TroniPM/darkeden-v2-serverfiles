@@ -34,8 +34,8 @@ class Item;
 class GCShopListMysterious : public Packet 
 {
 public:
-	GCShopListMysterious() throw();
-	virtual ~GCShopListMysterious() throw();
+	GCShopListMysterious() ;
+	virtual ~GCShopListMysterious() ;
 
 public:
 	void read(SocketInputStream & iStream) ;
@@ -57,7 +57,7 @@ public:
 	void setShopType(const ShopRackType_t type) { m_RackType = type;}
 	
 	SHOPLISTITEM_MYSTERIOUS getShopItem(BYTE index) ;
-	void setShopItem(BYTE index, const Item* pItem) throw();
+	void setShopItem(BYTE index, const Item* pItem) ;
 
 	MarketCond_t getMarketCondBuy(void)  { return m_MarketCondBuy;}
 	MarketCond_t getMarketCondSell(void)  { return m_MarketCondSell;}

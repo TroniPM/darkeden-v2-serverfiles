@@ -24,10 +24,10 @@ class CGReloadFromInventory : public Packet {
 public:
 
 	// constructor
-	CGReloadFromInventory() throw();
+	CGReloadFromInventory() ;
 
 	// destructor
-	~CGReloadFromInventory() throw();
+	~CGReloadFromInventory() ;
 
 public:
 	

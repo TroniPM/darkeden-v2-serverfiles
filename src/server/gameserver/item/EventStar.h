@@ -23,8 +23,8 @@
 class EventStar : public ConcreteItem<Item::ITEM_CLASS_EVENT_STAR, Stackable, NoDurability, NoOption, NoGrade, NoAttacking, HasEnchantLevel, NoOption2, HasHeroOption, HasHeroOptionAttr>
 {
 public:
-	EventStar() throw();
-	EventStar(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num) throw();
+	EventStar() ;
+	EventStar(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num) ;
 	
 public:
 	virtual void create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID=0);
@@ -33,7 +33,7 @@ public:
 	void tinysave(const char* field) ;
 	virtual string toString() ;
 
-	static void initItemIDRegistry(void) throw();
+	static void initItemIDRegistry(void) ;
 
 public:
 	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_EVENT_STAR; }

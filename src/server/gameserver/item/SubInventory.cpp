@@ -35,7 +35,7 @@ SubInventory::SubInventory()
 }
 
 SubInventory::SubInventory(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw(Error)
+	
 //: m_ItemType(itemType), m_OptionType(optionType), m_Durability(0), m_pInventory(NULL)
 {
 	__BEGIN_TRY
@@ -71,7 +71,7 @@ SubInventory::~SubInventory()
 // create item
 //--------------------------------------------------------------------------------
 void SubInventory::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -110,7 +110,7 @@ void SubInventory::create(const string & ownerID, Storage storage, StorageID_t s
 // destroy item
 //--------------------------------------------------------------------------------
 bool SubInventory::destroy()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -160,7 +160,7 @@ bool SubInventory::destroy()
 // save item
 //--------------------------------------------------------------------------------
 void SubInventory::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -184,7 +184,7 @@ void SubInventory::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void SubInventory::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -290,7 +290,7 @@ string SubInventory::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t SubInventory::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -304,7 +304,7 @@ VolumeWidth_t SubInventory::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t SubInventory::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -318,7 +318,7 @@ VolumeHeight_t SubInventory::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t SubInventory::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -381,7 +381,7 @@ string SubInventoryInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void SubInventoryInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -438,7 +438,7 @@ void SubInventoryInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void SubInventoryLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -611,7 +611,7 @@ void SubInventoryLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void SubInventoryLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -679,7 +679,7 @@ void SubInventoryLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void SubInventoryLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

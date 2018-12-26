@@ -16,12 +16,12 @@
 class Gun : public Item 
 {
 public:
-	Gun() throw();
-	Gun(ItemType_t itemType, const list<OptionType_t>& optionType) throw();
-	virtual ~Gun() throw();
+	Gun() ;
+	Gun(ItemType_t itemType, const list<OptionType_t>& optionType) ;
+	virtual ~Gun() ;
 	
 public:
-	virtual void saveBullet() throw(Error) = 0;
+	virtual void saveBullet()  = 0;
 	bool isGun()  { return true; }
 
 public:
@@ -40,7 +40,7 @@ public:
 
 
 	virtual Durability_t getDurability()  { return m_Durability; }
-	void setDurability(Durability_t durability) throw(Error) { m_Durability = durability; }
+	void setDurability(Durability_t durability)  { m_Durability = durability; }
 
 	BYTE getBulletCount()  { return m_BulletCount; }
 	void setBulletCount(BYTE bulletCount) throw() { m_BulletCount = bulletCount; }

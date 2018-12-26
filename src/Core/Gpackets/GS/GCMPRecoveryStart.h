@@ -28,10 +28,10 @@ class GCMPRecoveryStart : public Packet {
 public :
 	
 	// constructor
-	GCMPRecoveryStart() throw();
+	GCMPRecoveryStart() ;
 	
 	// destructor
-	~GCMPRecoveryStart() throw();
+	~GCMPRecoveryStart() ;
 
 	
 public :

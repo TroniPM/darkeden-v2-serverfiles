@@ -48,7 +48,7 @@ OustersWingItem::OustersWingItem(ItemType_t itemType, const list<OptionType_t>& 
 // create item
 //--------------------------------------------------------------------------------
 void OustersWingItem::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -93,7 +93,7 @@ void OustersWingItem::create(const string & ownerID, Storage storage, StorageID_
 // save item
 //--------------------------------------------------------------------------------
 void OustersWingItem::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -117,7 +117,7 @@ void OustersWingItem::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void OustersWingItem::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -176,7 +176,7 @@ string OustersWingItem::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t OustersWingItem::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -190,7 +190,7 @@ VolumeWidth_t OustersWingItem::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t OustersWingItem::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -204,7 +204,7 @@ VolumeHeight_t OustersWingItem::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t OustersWingItem::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -240,7 +240,7 @@ string OustersWingItemInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void OustersWingItemInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -297,7 +297,7 @@ void OustersWingItemInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void OustersWingItemLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -464,7 +464,7 @@ void OustersWingItemLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void OustersWingItemLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -532,7 +532,7 @@ void OustersWingItemLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void OustersWingItemLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

@@ -67,7 +67,7 @@ EffectLoaderManager::~EffectLoaderManager ()
 }
 
 void EffectLoaderManager::init () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -96,7 +96,7 @@ void EffectLoaderManager::init ()
 }
 
 void EffectLoaderManager::load (Slayer* pSlayer) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -114,7 +114,7 @@ void EffectLoaderManager::load (Slayer* pSlayer)
 }
 
 void EffectLoaderManager::load (Vampire* pVampire) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -134,7 +134,7 @@ void EffectLoaderManager::load (Vampire* pVampire)
 }
 
 void EffectLoaderManager::load (Ousters* pOusters) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -151,7 +151,7 @@ void EffectLoaderManager::load (Ousters* pOusters)
 }
 
 void EffectLoaderManager::load (Zone* pZone)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

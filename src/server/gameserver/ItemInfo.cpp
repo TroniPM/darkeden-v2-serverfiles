@@ -107,7 +107,7 @@ void ItemInfo::setReqAbility(const string& req)
 }
 
 void ItemInfo::setDefaultOptions(const string& options)
-	throw(Error)
+	
 {
 	//////////////////////////////////////////////
 	// DEX+1,INT+2

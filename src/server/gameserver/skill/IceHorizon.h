@@ -16,7 +16,7 @@
 class IceHorizon : public SkillHandler 
 {
 public:
-	IceHorizon() throw();
+	IceHorizon() ;
 	~IceHorizon() throw() {}
 	
 public:

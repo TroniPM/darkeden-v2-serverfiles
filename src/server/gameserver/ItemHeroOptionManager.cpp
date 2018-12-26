@@ -2,7 +2,7 @@
 #include "DB.h"
 #include "Assert.h"
 
-void ItemHeroOptionManager::load() throw(Error)
+void ItemHeroOptionManager::load() 
 {
 	__BEGIN_TRY
 

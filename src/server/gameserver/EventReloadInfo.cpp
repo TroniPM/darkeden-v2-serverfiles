@@ -51,7 +51,7 @@ EventReloadInfo::~EventReloadInfo()
 }
 
 void EventReloadInfo::activate () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG

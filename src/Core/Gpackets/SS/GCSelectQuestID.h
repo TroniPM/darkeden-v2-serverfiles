@@ -33,7 +33,7 @@ public:
 	}
 #endif
 	GCSelectQuestID() throw() { }
-	virtual ~GCSelectQuestID() throw();
+	virtual ~GCSelectQuestID() ;
 
 public:
 	void read(SocketInputStream & iStream) ;

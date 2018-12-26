@@ -23,8 +23,8 @@
 class Fascia : public ConcreteItem<Item::ITEM_CLASS_FASCIA, NoStack, NoDurability, HasOption, GroceryGrade, NoAttacking, NoEnchantLevel, HasOption2, HasHeroOption, HasHeroOptionAttr>
 {
 public:
-	Fascia() throw();
-	Fascia(ItemType_t itemType, const list<OptionType_t>& optionType) throw();
+	Fascia() ;
+	Fascia(ItemType_t itemType, const list<OptionType_t>& optionType) ;
 	
 public:
 	virtual void create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID=0);
@@ -33,7 +33,7 @@ public:
 	void tinysave(const char* field) ;
 	virtual string toString() ;
 
-	static void initItemIDRegistry(void) throw();
+	static void initItemIDRegistry(void) ;
 
 private:
 	static Mutex    m_Mutex;          // 아이템 ID 관련 락

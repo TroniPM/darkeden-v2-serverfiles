@@ -33,9 +33,9 @@ public:
 	~MPlayerManager();
 
 public:
-	void init() throw(Error) {}
+	void init()  {}
 	void stop();
-	void run() throw();
+	void run() ;
 
 public:
 	void addJob( const string& userID, const string& name, const string& cellnum );

@@ -23,7 +23,7 @@ VoodooRing::VoodooRing()
 //////////////////////////////////////////////////////////////////////////////
 
 void VoodooRing::execute(Vampire* pVampire, VampireSkillSlot* pVampireSkillSlot, CEffectID_t CEffectID)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -205,7 +205,7 @@ void VoodooRing::execute(Vampire* pVampire, VampireSkillSlot* pVampireSkillSlot,
 }
 /*
 void VoodooRing::execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

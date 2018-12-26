@@ -23,7 +23,7 @@ PayUserManager::~PayUserManager()
 }
 
 void PayUserManager::init()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 

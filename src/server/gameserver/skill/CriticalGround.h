@@ -16,7 +16,7 @@
 class CriticalGround: public SkillHandler 
 {
 public:
-	CriticalGround() throw();
+	CriticalGround() ;
 	~CriticalGround() throw() {}
 	
 public:

@@ -21,7 +21,7 @@
 // 슬레이어 오브젝트 핸들러
 //////////////////////////////////////////////////////////////////////////////
 void BloodyWings::execute(Vampire* pSlayer, ObjectID_t TargetObjectID, VampireSkillSlot * pSkillSlot, CEffectID_t CEffectID)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

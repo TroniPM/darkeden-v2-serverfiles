@@ -29,10 +29,10 @@ class GCWhisperFailed : public Packet {
 public :
 	
 	// constructor
-	GCWhisperFailed() throw();
+	GCWhisperFailed() ;
 	
 	// destructor
-	~GCWhisperFailed() throw();
+	~GCWhisperFailed() ;
 
 	
 public :

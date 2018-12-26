@@ -632,8 +632,8 @@ public:
 
 // constructor/destructor
 public:
-	Item() throw();
-	virtual ~Item() throw();
+	Item() ;
+	virtual ~Item() ;
 
 
 // methods from Object
@@ -645,9 +645,9 @@ public:
 
 // DB methods
 public:
-	virtual void create(const string & ownerID, Storage storage, DWORD storageID, BYTE x, BYTE y, ItemID_t itemID=0) throw(Error) = 0;	// itemID=0 <-- 특정 ItemID로 생성. by sigi. 2002.10.28
+	virtual void create(const string & ownerID, Storage storage, DWORD storageID, BYTE x, BYTE y, ItemID_t itemID=0)  = 0;	// itemID=0 <-- 특정 ItemID로 생성. by sigi. 2002.10.28
 	virtual bool destroy();
-	virtual void save(const string & ownerID, Storage storage, DWORD storageID, BYTE x, BYTE y) throw(Error) = 0;
+	virtual void save(const string & ownerID, Storage storage, DWORD storageID, BYTE x, BYTE y)  = 0;
 	virtual void tinysave(const string & field)  = 0;
 	void waste( Storage storage = STORAGE_GARBAGE ) ;
 
@@ -697,7 +697,7 @@ public:
 	virtual Weight_t getWeight() ;
 
 	virtual Durability_t getDurability()  { return 1; }
-	virtual void setDurability(Durability_t durability) throw(Error) {}
+	virtual void setDurability(Durability_t durability)  {}
 
 	virtual Durability_t getMaxDurability() const { return 1; }
 

@@ -71,7 +71,7 @@ public :
 	uint size ()  { return m_nPlayers; }
 
 	// Copy Player
-	void copyPlayers() throw();
+	void copyPlayers() ;
 
 protected :
 

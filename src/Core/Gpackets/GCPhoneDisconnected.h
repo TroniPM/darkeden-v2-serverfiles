@@ -29,10 +29,10 @@ class GCPhoneDisconnected : public Packet {
 public :
 	
 	// constructor
-	GCPhoneDisconnected() throw();
+	GCPhoneDisconnected() ;
 	
 	// destructor
-	~GCPhoneDisconnected() throw();
+	~GCPhoneDisconnected() ;
 
 	
 public :

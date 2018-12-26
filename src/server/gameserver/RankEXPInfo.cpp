@@ -84,7 +84,7 @@ RankEXPInfoManager::~RankEXPInfoManager()
 }
 
 void RankEXPInfoManager::init(RankType rankType)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -94,7 +94,7 @@ void RankEXPInfoManager::init(RankType rankType)
 }
 
 void RankEXPInfoManager::load(RankType rankType)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -162,7 +162,7 @@ void RankEXPInfoManager::addRankEXPInfo(RankEXPInfo * pRankEXPInfo)
 }
 
 RankEXPInfo * RankEXPInfoManager::getRankEXPInfo(uint value) const 
-	throw (InvalidProtocolException)
+	
 {
 	__BEGIN_TRY
 

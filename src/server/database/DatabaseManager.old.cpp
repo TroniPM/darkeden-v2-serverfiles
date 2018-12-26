@@ -46,7 +46,7 @@ DatabaseManager::~DatabaseManager ()
 }
 
 void DatabaseManager::init ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 

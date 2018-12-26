@@ -32,10 +32,10 @@ class GCChangeShape : public Packet {
 public :
 	
 	// constructor
-	GCChangeShape() throw();
+	GCChangeShape() ;
 	
 	// destructor
-	~GCChangeShape() throw();
+	~GCChangeShape() ;
 
 	
 public :

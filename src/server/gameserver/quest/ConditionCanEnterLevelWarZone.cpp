@@ -30,7 +30,7 @@ bool ConditionCanEnterLevelWarZone::isSatisfied (Creature * pCreature1 , Creatur
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionCanEnterLevelWarZone::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 }
 

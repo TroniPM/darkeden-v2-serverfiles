@@ -17,8 +17,8 @@
 class EventKick : public Event 
 {
 public:
-	EventKick(GamePlayer* pGamePlayer) throw();
-	~EventKick() throw();			
+	EventKick(GamePlayer* pGamePlayer) ;
+	~EventKick() ;			
 
 public:
 	virtual EventClass getEventClass()  { return EVENT_CLASS_KICK; }

@@ -34,13 +34,13 @@ const int defaultSBillingPlayerOutputStreamSize = 10240;
 
 // constructor
 SBillingPlayer::SBillingPlayer()
-	throw ( Error )
+	
 {
 }
 
 // constructor
 SBillingPlayer::SBillingPlayer( Socket* pSocket )
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -60,7 +60,7 @@ SBillingPlayer::SBillingPlayer( Socket* pSocket )
 
 // destructor
 SBillingPlayer::~SBillingPlayer()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -626,7 +626,7 @@ void SBillingPlayer::executeLogout( CBillingPacketHeader& header, CBillingPacket
 
 // get debug string
 string SBillingPlayer::toString() const
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 

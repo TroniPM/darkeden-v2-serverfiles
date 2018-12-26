@@ -18,8 +18,8 @@
 class RankEXPInfo 
 {
 public:
-	RankEXPInfo() throw();
-	~RankEXPInfo() throw();
+	RankEXPInfo() ;
+	~RankEXPInfo() ;
 
 public:
 	void setLevel(uint lev) throw() { m_Level = lev; }
@@ -47,15 +47,15 @@ private:
 class RankEXPInfoManager 
 {
 public:
-	RankEXPInfoManager() throw();
-	~RankEXPInfoManager() throw();
+	RankEXPInfoManager() ;
+	~RankEXPInfoManager() ;
 
 public:
 	void init(RankType rankType);
 	void load(RankType rankType);
 
 	RankEXPInfo* getRankEXPInfo(uint value) ;
-	void addRankEXPInfo(RankEXPInfo* pRankEXPInfo) throw();
+	void addRankEXPInfo(RankEXPInfo* pRankEXPInfo) ;
 
 	string toString() ;
 

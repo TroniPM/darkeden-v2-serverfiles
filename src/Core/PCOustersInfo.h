@@ -86,7 +86,7 @@ public:
 
 	Slot getSlot ()  { return m_Slot; }
 	void setSlot (Slot slot) throw () { m_Slot = slot; }
-	void setSlot (string slot) throw (InvalidProtocolException)
+	void setSlot (string slot) 
 	{
 		if (slot == Slot2String[SLOT1])
 			m_Slot = SLOT1;
@@ -109,7 +109,7 @@ public:
 
 	Sex getSex ()  { return m_Sex; }
 	void setSex (Sex sex) throw () { m_Sex = sex; }
-	void setSex (string sex) throw (InvalidProtocolException)
+	void setSex (string sex) 
 	{
 		if (sex == Sex2String[MALE]) 
 			m_Sex = MALE;
@@ -138,13 +138,13 @@ public:
 	void setArmType( OustersArmType armType ) throw() { m_ArmType = armType; }
 
     Attr_t getSTR ()  { if (m_STR > maxOustersAttr) throw Error("STR out of range"); return m_STR; }
-	void setSTR (Attr_t str) throw (Error) { if (str > maxOustersAttr) throw Error("STR out of range"); m_STR = str; }
+	void setSTR (Attr_t str)  { if (str > maxOustersAttr) throw Error("STR out of range"); m_STR = str; }
 
 	Attr_t getDEX ()  { if (m_DEX > maxOustersAttr) throw Error("DEX out of range"); return m_DEX; }
-	void setDEX (Attr_t dex) throw (Error) { if (dex > maxOustersAttr) throw Error("DEX out of range"); m_DEX = dex; }
+	void setDEX (Attr_t dex)  { if (dex > maxOustersAttr) throw Error("DEX out of range"); m_DEX = dex; }
 
 	Attr_t getINT ()  { if (m_INT > maxOustersAttr) throw Error("INT out of range"); return m_INT; }
-	void setINT (Attr_t inte) throw (Error) { if (inte > maxOustersAttr) throw Error("INT out of range"); m_INT = inte; }
+	void setINT (Attr_t inte)  { if (inte > maxOustersAttr) throw Error("INT out of range"); m_INT = inte; }
 
 	HP_t getHP (AttrType attrType = ATTR_CURRENT)  { return m_HP[attrType]; }
 	void setHP (HP_t hp, AttrType attrType = ATTR_CURRENT) throw () { m_HP[attrType] = hp; }

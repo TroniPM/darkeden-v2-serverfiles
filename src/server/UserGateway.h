@@ -42,7 +42,7 @@ public :
 
 public :
 	UserGateway();
-	~UserGateway()  throw (Error);
+	~UserGateway()  ;
 
 	static UserGateway* getInstance()
 	{

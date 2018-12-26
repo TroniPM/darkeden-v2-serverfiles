@@ -54,7 +54,7 @@
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGAddZoneToInventoryHandler::execute (CGAddZoneToInventory* pPacket , Player* pPlayer)
-	throw (ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 	__BEGIN_DEBUG	
@@ -498,7 +498,7 @@ ERROR:
 //////////////////////////////////////////////////////////////////////////////
 /*
 void CGAddZoneToInventoryHandler::execute (CGAddZoneToInventory* pPacket , Player* pPlayer)
-	throw (ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 	__BEGIN_DEBUG	

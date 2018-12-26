@@ -16,7 +16,7 @@
 #include "DB.h"
 
 QuestInfoManager::~QuestInfoManager()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -25,7 +25,7 @@ QuestInfoManager::~QuestInfoManager()
 	__END_CATCH
 }
 
-void QuestInfoManager::clear() throw(Error)
+void QuestInfoManager::clear() 
 {
 	__BEGIN_TRY
 
@@ -53,7 +53,7 @@ bool QuestInfoManager::isEventQuest( QuestID_t qID ) const
 }
 
 /*void QuestInfoManager::load( const string& name )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -150,7 +150,7 @@ bool QuestInfoManager::isEventQuest( QuestID_t qID ) const
 */
 
 void QuestInfoManager::addQuestInfo(QuestInfo* pQI)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -185,7 +185,7 @@ QuestMessage QuestInfoManager::canExecuteQuest( QuestID_t qID, PlayerCreature* p
 	__END_CATCH
 }
 
-QuestMessage QuestInfoManager::startQuest( QuestID_t qID, PlayerCreature* pPC ) throw(Error)
+QuestMessage QuestInfoManager::startQuest( QuestID_t qID, PlayerCreature* pPC ) 
 {
 	__BEGIN_TRY
 

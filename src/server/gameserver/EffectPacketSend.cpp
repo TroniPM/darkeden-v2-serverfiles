@@ -11,7 +11,7 @@
 
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
-EffectPacketSend::EffectPacketSend(Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y) throw(Error)
+EffectPacketSend::EffectPacketSend(Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y) 
 {
 	__BEGIN_TRY
 
@@ -23,7 +23,7 @@ EffectPacketSend::EffectPacketSend(Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y) th
 }
 
 void EffectPacketSend::unaffect() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY	
 

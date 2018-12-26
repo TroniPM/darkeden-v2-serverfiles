@@ -81,8 +81,8 @@ public:
 	virtual ObjectClass getObjectClass()  { return OBJECT_CLASS_PORTAL; }
 	virtual ObjectPriority getObjectPriority()  { return OBJECT_PRIORITY_PORTAL; }
 	virtual PortalClass getPortalClass()  = 0;
-	virtual bool activate(Creature* pCreature) throw(Error) { return false; };
-	virtual bool activate(Creature* pCreature, ZoneID_t ZoneID) throw(Error) { return false; };
+	virtual bool activate(Creature* pCreature)  { return false; };
+	virtual bool activate(Creature* pCreature, ZoneID_t ZoneID)  { return false; };
 	virtual string toString()  = 0;
 
 public:
@@ -100,20 +100,20 @@ protected:
 class PrivatePortal : public Portal 
 {
 public:
-	PrivatePortal(ObjectID_t objectID = 0) throw();
-	~PrivatePortal() throw();
+	PrivatePortal(ObjectID_t objectID = 0) ;
+	~PrivatePortal() ;
 
 public:
 	PortalClass getPortalClass()  { return PORTAL_CLASS_PRIVATE; }
 
 	ZoneID_t getZoneID() ;
-	void setZoneID(ZoneID_t zoneID) throw();
+	void setZoneID(ZoneID_t zoneID) ;
 
 	ZoneCoord_t getX() ;
-	void setX(ZoneCoord_t x) throw();
+	void setX(ZoneCoord_t x) ;
 
 	ZoneCoord_t getY() ;
-	void setY(ZoneCoord_t y) throw();
+	void setY(ZoneCoord_t y) ;
 
 	bool activate(Creature* pCreature);
 	virtual string toString() ;
@@ -233,7 +233,7 @@ public:
 	PortalClass getPortalClass()  { return PORTAL_CLASS_MULTI; }
 
 	void setPortalTargetInfo(PortalTargetInfo* pPortalTargetInfo) throw() { m_Targets.push_back(pPortalTargetInfo); }
-	void getPortalTargetInfo(ZoneID_t ZoneID) throw();
+	void getPortalTargetInfo(ZoneID_t ZoneID) ;
 
 	// PC를 특정 위치로 이동시킨다.
 	bool activate(Creature* pCreature, ZoneID_t ZoneID);
@@ -267,7 +267,7 @@ public: // methods from base class
 	virtual string toString() ;
 
 public: // public methods
-	void load(ZoneID_t id, int left, int top, int right, int bottom) throw();
+	void load(ZoneID_t id, int left, int top, int right, int bottom) ;
 
 	TriggerManager& getTriggerManager() throw() { return m_TriggerManager; }
 	const TriggerManager& getTriggerManager()  { return m_TriggerManager; }

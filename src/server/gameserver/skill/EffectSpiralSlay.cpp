@@ -15,7 +15,7 @@
 #include "Gpackets/GCOtherModifyInfo.h"
 
 EffectSpiralSlay::EffectSpiralSlay(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -25,21 +25,21 @@ EffectSpiralSlay::EffectSpiralSlay(Creature* pCreature)
 }
 
 void EffectSpiralSlay::affect(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void EffectSpiralSlay::affect(Zone* pZone , ZoneCoord_t x , ZoneCoord_t y , Object* pObject)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void EffectSpiralSlay::unaffect() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY	
 
@@ -50,7 +50,7 @@ void EffectSpiralSlay::unaffect()
 }
 
 void EffectSpiralSlay::unaffect(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -89,7 +89,7 @@ void EffectSpiralSlay::unaffect(Creature* pCreature)
 }
 
 void EffectSpiralSlay::unaffect(Zone* pZone , ZoneCoord_t x , ZoneCoord_t y , Object* pObject)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH

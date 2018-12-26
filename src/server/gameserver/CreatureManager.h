@@ -20,12 +20,12 @@ class Packet;
 class CreatureManager 
 {
 public:
-	CreatureManager() throw();
-	virtual ~CreatureManager() throw();
+	CreatureManager() ;
+	virtual ~CreatureManager() ;
 	
 public:
 	virtual void addCreature(Creature* pCreature) throw(DuplicatedException, Error);
-	virtual void deleteCreature(ObjectID_t objectID) throw();//NoSuchElementException, Error);
+	virtual void deleteCreature(ObjectID_t objectID) ;//NoSuchElementException, Error);
 	Creature* getCreature(ObjectID_t objectID) ;//NoSuchElementException, Error);
 	Creature* getCreature(const string& Name) ;//NoSuchElementException, Error);
 

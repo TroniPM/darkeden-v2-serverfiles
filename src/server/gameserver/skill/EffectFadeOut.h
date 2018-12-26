@@ -24,12 +24,12 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_FADE_OUT; }
 
-	void affect() throw(Error){}
+	void affect() {}
 	void affect(Creature* pCreature);
 	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject);
 
 	void unaffect();
-	void unaffect(Item* pItem) throw(Error){}
+	void unaffect(Item* pItem) {}
 	void unaffect(Creature* pCreature);
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject);
 
@@ -37,7 +37,7 @@ public:
 
 public:
 	Duration_t getDuration()  { return m_Duration;}
-	void setDuration(Duration_t d) throw(Error) { m_Duration = d;}
+	void setDuration(Duration_t d)  { m_Duration = d;}
 
 	bool isSniping(void) const { return m_isSniping; }
 	void setSniping() throw() { m_isSniping = true; }

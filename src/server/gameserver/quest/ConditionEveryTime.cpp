@@ -37,7 +37,7 @@ bool ConditionEveryTime::isSatisfied (Creature * pCreature1 , Creature * pCreatu
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionEveryTime::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 	try
 	{

@@ -31,10 +31,10 @@ class GCWaitGuildList : public Packet {
 public :
 
 	// constructor
-	GCWaitGuildList() throw();
+	GCWaitGuildList() ;
 
 	// destructor
-	~GCWaitGuildList() throw();
+	~GCWaitGuildList() ;
 	
     // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
     void read(SocketInputStream & iStream) ;
@@ -65,7 +65,7 @@ public:
 	void addGuildInfo( GuildInfo* pGuildInfo ) throw() { m_GuildInfoList.push_front( pGuildInfo ); }
 
 	// clear GuildInfoList
-	void clearGuildInfoList() throw();
+	void clearGuildInfoList() ;
 
 	// pop front Element in GuildInfoList
 	GuildInfo* popFrontGuildInfoList() throw()

@@ -20,7 +20,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 GameServerManager::GameServerManager () 
-	throw ( Error )
+	
 : m_pDatagramSocket(NULL)
 {
 	__BEGIN_TRY
@@ -49,7 +49,7 @@ GameServerManager::GameServerManager ()
 // destructor
 //////////////////////////////////////////////////////////////////////
 GameServerManager::~GameServerManager () 
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -62,7 +62,7 @@ GameServerManager::~GameServerManager ()
 // main method
 //////////////////////////////////////////////////////////////////////
 void GameServerManager::run () 
-	throw (Error)
+	
 {
 	try 
 	{

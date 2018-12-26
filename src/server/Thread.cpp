@@ -111,7 +111,7 @@ void Thread::start ()
 //
 ////////////////////////////////////////////////////////////////////////////////
 void Thread::stop ()
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -182,7 +182,7 @@ void Thread::join ( const Thread * t, void * status )
 //
 ////////////////////////////////////////////////////////////////////////////////
 void Thread::detach () 
-     throw ( Error )
+     
 {
 	__BEGIN_TRY
 

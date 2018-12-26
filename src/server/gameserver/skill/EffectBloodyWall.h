@@ -29,7 +29,7 @@ public:
 
 	void unaffect();
 	void unaffect(Creature* pCreature);
-	void unaffect(Item* pItem) throw(Error) {}
+	void unaffect(Item* pItem)  {}
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject);
 
 	string toString() ;
@@ -57,7 +57,7 @@ public:
 	Creature::CreatureClass getCreatureClass() const	{ return m_CreatureClass; }
 	int getClanID() const			{ return m_ClanID; }
 
-	void setForce( bool force ) throw(Error) { m_bForce = force; }
+	void setForce( bool force )  { m_bForce = force; }
 	bool isForce()  { return m_bForce; }
 
 private:
@@ -85,7 +85,7 @@ public:
 	virtual string getEffectClassName()  { return "EffectBloodyWall"; }
 
 public:
-	virtual void load(Creature* pCreature) throw(Error) {}
+	virtual void load(Creature* pCreature)  {}
 	virtual void load(Zone* pZone); 
 };
 

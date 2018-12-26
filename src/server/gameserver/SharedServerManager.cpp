@@ -26,7 +26,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 SharedServerManager::SharedServerManager () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -41,7 +41,7 @@ SharedServerManager::SharedServerManager ()
 // destructor
 //////////////////////////////////////////////////////////////////////
 SharedServerManager::~SharedServerManager () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -54,7 +54,7 @@ SharedServerManager::~SharedServerManager ()
 // stop thread
 //////////////////////////////////////////////////////////////////////
 void SharedServerManager::stop () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

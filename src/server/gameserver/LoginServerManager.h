@@ -27,11 +27,11 @@ public:
 	~LoginServerManager();
 
 public:
-	void init() throw(Error) {}
+	void init()  {}
 
 	void stop();
 
-	void run() throw();
+	void run() ;
 
 	void sendDatagram(Datagram* pDatagram) ;
 

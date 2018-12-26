@@ -11,7 +11,7 @@
 //////////////////////////////////////////////////////////////////////////////
 // 슬레이어 오브젝트 핸들러
 //////////////////////////////////////////////////////////////////////////////
-void FireMeteor::execute(Ousters* pOusters, ObjectID_t targetObjectID, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) throw(Error)
+void FireMeteor::execute(Ousters* pOusters, ObjectID_t targetObjectID, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID) 
 {
 	__BEGIN_TRY
 
@@ -34,7 +34,7 @@ void FireMeteor::execute(Ousters* pOusters, ObjectID_t targetObjectID, OustersSk
 }
 	
 void FireMeteor::execute(Ousters* pOusters, ZoneCoord_t X, ZoneCoord_t Y, OustersSkillSlot * pOustersSkillSlot, CEffectID_t CEffectID)
-	throw(Error)
+	
 {
 
 	__BEGIN_TRY

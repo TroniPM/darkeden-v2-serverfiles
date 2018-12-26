@@ -60,8 +60,8 @@ public :
 	void 				setDeadline (Turn_t delay);
 	Duration_t		 	getRemainDuration() ;
 
-	//virtual void		create() throw (Error) = 0;
-	virtual void        save() throw (Error) = 0;
+	//virtual void		create()  = 0;
+	virtual void        save()  = 0;
 	virtual void		destroy();
 
 	//virtual bool		checkSuccess(const QuestEvent* pQuestEvent)  = 0;
@@ -74,13 +74,13 @@ public :
 
 	virtual void		heartbeat();
 
-	void				setOwner(Creature* pOwner) throw (Error)	{ m_pOwner = pOwner; }
-	void				setAvailableSecond(int sec) throw (Error)	{ m_AvailableSecond = sec; }
+	void				setOwner(Creature* pOwner) 	{ m_pOwner = pOwner; }
+	void				setAvailableSecond(int sec) 	{ m_AvailableSecond = sec; }
 	void				addReward(QuestPrice* pQuestPrice);
 	void				addPenalty(QuestPrice* pQuestPrice);
 
 public :
-	virtual void		setObjective(const string& text) throw (Error) = 0;
+	virtual void		setObjective(const string& text)  = 0;
 	virtual string		getObjectiveToString()  = 0;
 	virtual void		addReward(const string& text);
 	virtual void		addPenalty(const string& text);

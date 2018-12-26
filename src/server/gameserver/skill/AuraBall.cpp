@@ -12,7 +12,7 @@
 // 슬레이어 오브젝트 핸들러
 //////////////////////////////////////////////////////////////////////////////
 void AuraBall::execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot * pSkillSlot, CEffectID_t CEffectID)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -53,7 +53,7 @@ void AuraBall::execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot * p
 }
 
 void AuraBall::execute(Monster* pMonster, Creature* pTargetCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

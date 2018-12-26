@@ -21,8 +21,8 @@
 class GCSystemAvailabilities : public Packet 
 {
 public:
-	GCSystemAvailabilities() throw();
-	~GCSystemAvailabilities() throw();
+	GCSystemAvailabilities() ;
+	~GCSystemAvailabilities() ;
 	
 public:
     void read(SocketInputStream & iStream) ;

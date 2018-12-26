@@ -133,7 +133,7 @@ public:
 	};
 
 public :
-	virtual ~Condition() throw(Error) {}
+	virtual ~Condition()  {}
 	virtual ConditionType_t getConditionType()  = 0;
 
 	virtual bool isActive()  { return false; }
@@ -142,7 +142,7 @@ public :
 
 	virtual bool isSatisfied(Creature* pCreature1, Creature* pCreature2 = NULL, void* pParam = NULL)  = 0;
 
-	virtual void read(PropertyBuffer & propertyBuffer) throw(Error) = 0;
+	virtual void read(PropertyBuffer & propertyBuffer)  = 0;
 
 	virtual string toString()  = 0;
 

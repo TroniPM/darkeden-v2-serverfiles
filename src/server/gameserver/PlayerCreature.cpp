@@ -381,7 +381,7 @@ void PlayerCreature::registerGoodsInventory(ObjectRegistry& OR)
 }
 
 
-void PlayerCreature::loadTimeLimitItem() throw(Error)
+void PlayerCreature::loadTimeLimitItem() 
 {
 	__BEGIN_TRY
 
@@ -420,7 +420,7 @@ void PlayerCreature::loadItem()
 }
 
 bool PlayerCreature::wasteIfTimeLimitExpired(Item* pItem)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -438,7 +438,7 @@ bool PlayerCreature::wasteIfTimeLimitExpired(Item* pItem)
 }
 
 void PlayerCreature::sendTimeLimitItemInfo()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -452,12 +452,12 @@ void PlayerCreature::sendTimeLimitItemInfo()
 	__END_CATCH
 }
 
-void PlayerCreature::addTimeLimitItem(Item* pItem, DWORD time) throw(Error)
+void PlayerCreature::addTimeLimitItem(Item* pItem, DWORD time) 
 {
 	m_pTimeLimitItemManager->addTimeLimitItem( pItem, time );
 } 
 
-void PlayerCreature::sellItem( Item* pItem ) throw(Error)
+void PlayerCreature::sellItem( Item* pItem ) 
 {
 	__BEGIN_TRY
 
@@ -466,7 +466,7 @@ void PlayerCreature::sellItem( Item* pItem ) throw(Error)
 	__END_CATCH
 }
 
-void PlayerCreature::deleteItemByMorph( Item* pItem ) throw(Error)
+void PlayerCreature::deleteItemByMorph( Item* pItem ) 
 {
 	__BEGIN_TRY
 
@@ -475,7 +475,7 @@ void PlayerCreature::deleteItemByMorph( Item* pItem ) throw(Error)
 	__END_CATCH
 }
 
-void PlayerCreature::updateItemTimeLimit( Item* pItem, DWORD time ) throw(Error)
+void PlayerCreature::updateItemTimeLimit( Item* pItem, DWORD time ) 
 {
 	__BEGIN_TRY
 
@@ -822,7 +822,7 @@ void PlayerCreature::deleteFlagSet(void)
 // 선공자의 리스트에 선공자를 추가하는 함수
 //----------------------------------------------------------------------
 void PlayerCreature::addEnemy(const string& Name)
-	throw(Error)
+	
 {
 	__BEGIN_DEBUG
 
@@ -1216,7 +1216,7 @@ void PlayerCreature::increaseRankExp(RankExp_t Point)
 }
 
 bool PlayerCreature::isBillingPlayAvaiable() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1233,7 +1233,7 @@ bool PlayerCreature::isBillingPlayAvaiable()
 
 
 bool PlayerCreature::isPayPlayAvaiable() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1248,13 +1248,13 @@ bool PlayerCreature::isPayPlayAvaiable()
 
 
 bool PlayerCreature::canPlayFree()
-	throw(Error)
+	
 {
 	return false;
 }
 
 void PlayerCreature::loadGoods()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	
@@ -1301,7 +1301,7 @@ void PlayerCreature::loadGoods()
 
 
 /*void	PlayerCreature::loadQuest() 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1315,7 +1315,7 @@ void PlayerCreature::loadGoods()
 }
 
 bool    PlayerCreature::addQuest(Quest* pQuest) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1339,7 +1339,7 @@ bool    PlayerCreature::addQuest(Quest* pQuest)
 }
 
 bool    PlayerCreature::checkEvent(QuestEvent* pQuestEvent) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1364,7 +1364,7 @@ bool    PlayerCreature::checkEvent(QuestEvent* pQuestEvent)
 }
 
 Quest*  PlayerCreature::removeCompleteQuest() 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1385,7 +1385,7 @@ Quest*  PlayerCreature::removeCompleteQuest()
 }*/
 /*
 bool PlayerCreature::deleteItemNameInfoList( ObjectID_t objectID ) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1409,7 +1409,7 @@ bool PlayerCreature::deleteItemNameInfoList( ObjectID_t objectID )
 }
 
 string PlayerCreature::getItemName( ObjectID_t objectID ) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

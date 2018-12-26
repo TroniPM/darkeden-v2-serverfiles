@@ -42,7 +42,7 @@ class WeatherManager {
 public:
 
 	// constructor
-	WeatherManager(Zone* pZone) throw(Error) : m_pZone(pZone) { Assert(m_pZone != NULL); }
+	WeatherManager(Zone* pZone)  : m_pZone(pZone) { Assert(m_pZone != NULL); }
 
 	// destructor
 	virtual ~WeatherManager();

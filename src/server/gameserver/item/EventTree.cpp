@@ -45,7 +45,7 @@ EventTree::EventTree(ItemType_t itemType, const list<OptionType_t>& optionType, 
 }
 
 void EventTree::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -90,7 +90,7 @@ void EventTree::create(const string & ownerID, Storage storage, StorageID_t stor
 // save item
 //--------------------------------------------------------------------------------
 void EventTree::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -111,7 +111,7 @@ void EventTree::tinysave(const char* field) const
 }
 
 void EventTree::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -164,7 +164,7 @@ string EventTree::toString() const
 }
 
 VolumeWidth_t EventTree::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -174,7 +174,7 @@ VolumeWidth_t EventTree::getVolumeWidth() const
 }
 	
 VolumeHeight_t EventTree::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -184,7 +184,7 @@ VolumeHeight_t EventTree::getVolumeHeight() const
 }
 	
 Weight_t EventTree::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -214,7 +214,7 @@ string EventTreeInfo::toString() const
 }
 
 void EventTreeInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -268,7 +268,7 @@ void EventTreeInfoManager::load()
 //////////////////////////////////////////////////////////////////////////////
 
 void EventTreeLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -441,7 +441,7 @@ void EventTreeLoader::load(Creature* pCreature)
 }
 
 void EventTreeLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -505,7 +505,7 @@ void EventTreeLoader::load(Zone* pZone)
 }
 
 void EventTreeLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

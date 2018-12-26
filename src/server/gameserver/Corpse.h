@@ -31,8 +31,8 @@ enum CorpseType
 class Corpse : public Item 
 {
 public:
-	Corpse() throw();
-	virtual ~Corpse() throw();
+	Corpse() ;
+	virtual ~Corpse() ;
 
 public:
 	virtual ItemClass getItemClass()  { return ITEM_CLASS_CORPSE; }
@@ -48,10 +48,10 @@ public:
 	virtual string toString()  = 0;
 
 public:
-	void addTreasure(Item* pItem) throw();
-	Item* getTreasure() throw();
+	void addTreasure(Item* pItem) ;
+	Item* getTreasure() ;
 	Item* getTreasure( ObjectID_t objectID ) ;
-	Item* popTreasure( ObjectID_t objectID ) throw();
+	Item* popTreasure( ObjectID_t objectID ) ;
 
 	BYTE getTreasureCount()  { return m_TreasureCount; }
 	void setTreasureCount(BYTE Count) throw() { m_TreasureCount = Count; }

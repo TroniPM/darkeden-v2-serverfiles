@@ -31,7 +31,7 @@ public:
 
 	void computeOutput(const SkillInput& input, SkillOutput& output);
 
-	POINT getWarpPosition(int myX, int myY, int targetX, int targetY) throw();
+	POINT getWarpPosition(int myX, int myY, int targetX, int targetY) ;
 };
 
 // global variable declaration

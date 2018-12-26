@@ -312,7 +312,7 @@ void Update::write ( Socket * pSocket ) const
 // execute update
 //--------------------------------------------------------------------------------
 void Update::execute () 
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG

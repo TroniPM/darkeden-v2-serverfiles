@@ -21,8 +21,8 @@
 class GCExecuteElement : public Packet 
 {
 public:
-	GCExecuteElement() throw();
-	~GCExecuteElement() throw();
+	GCExecuteElement() ;
+	~GCExecuteElement() ;
 	
 public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error) { iStream.read(m_QuestID); iStream.read(m_Condition); iStream.read(m_Index); }

@@ -23,8 +23,8 @@
 class Trouser : public ConcreteItem<Item::ITEM_CLASS_TROUSER, NoStack, HasDurability, HasOption, ClothGrade, NoAttacking, NoEnchantLevel, HasOption2, HasHeroOption, HasHeroOptionAttr>
 {
 public:
-	Trouser() throw();
-	Trouser(ItemType_t itemType, const list<OptionType_t>& optionType) throw();
+	Trouser() ;
+	Trouser(ItemType_t itemType, const list<OptionType_t>& optionType) ;
 	
 public:
 	virtual void create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID=0);
@@ -33,7 +33,7 @@ public:
 	void tinysave(const char* field) ;
 	virtual string toString() ;
 
-	static void initItemIDRegistry(void) throw();
+	static void initItemIDRegistry(void) ;
 
 public:
 //	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_TROUSER; }
@@ -57,7 +57,7 @@ public:
 	virtual Weight_t getWeight() ;
 
 	virtual Durability_t getDurability()  { return m_Durability; }
-	void setDurability(Durability_t durability) throw(Error) { m_Durability = durability; }
+	void setDurability(Durability_t durability)  { m_Durability = durability; }
 
 	virtual Defense_t getDefenseBonus() ;
 	virtual Protection_t getProtectionBonus() ;

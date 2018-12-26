@@ -83,7 +83,7 @@ PacketFactoryManager::~PacketFactoryManager ()
 //
 //////////////////////////////////////////////////////////////////////
 void PacketFactoryManager::init ()
-	 throw (Error)
+	 
 {
 	__BEGIN_TRY
 		
@@ -102,7 +102,7 @@ void PacketFactoryManager::init ()
 //
 //////////////////////////////////////////////////////////////////////
 void PacketFactoryManager::addFactory (PacketFactory * pFactory) 
-	 throw (Error)
+	 
 {
 	__BEGIN_TRY
 		

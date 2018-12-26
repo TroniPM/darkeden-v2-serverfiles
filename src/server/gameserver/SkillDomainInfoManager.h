@@ -17,8 +17,8 @@
 class DomainInfo 
 {
 public:
-	DomainInfo() throw();
-	~DomainInfo() throw();
+	DomainInfo() ;
+	~DomainInfo() ;
 
 public:
 	SkillDomainType_t getType()  { return m_Type; }
@@ -67,10 +67,10 @@ class DomainInfoManager {
 public:
 
 	// constructor
-	DomainInfoManager() throw();
+	DomainInfoManager() ;
 
 	// destructor
-	~DomainInfoManager() throw();
+	~DomainInfoManager() ;
 
 	// initialize manager
 	void init();
@@ -100,8 +100,8 @@ private:
 class SkillDomainInfoManager 
 {
 public:
-	SkillDomainInfoManager() throw();
-	~SkillDomainInfoManager() throw();
+	SkillDomainInfoManager() ;
+	~SkillDomainInfoManager() ;
 
 public:
 	// initialize manager

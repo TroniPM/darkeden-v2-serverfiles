@@ -24,7 +24,7 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_SOUL_CHAIN; }
 
-	void affect() throw(Error){}
+	void affect() {}
 	void affect(Creature* pCreature);
 
 	void unaffect();
@@ -35,11 +35,11 @@ public:
 public:
 
 	Duration_t getDuration()  { return m_Duration;}
-	void setDuration(Duration_t d) throw(Error) { m_Duration = d;}
+	void setDuration(Duration_t d)  { m_Duration = d;}
 
 	// get/set Target Name
 	const string& getTargetName()  { return m_TargetName; }
-	void setTargetName( const string& targetName ) throw(Error) { m_TargetName = targetName; }
+	void setTargetName( const string& targetName )  { m_TargetName = targetName; }
 
 	Zone* getZone()  { return m_pZone; }
 	void setZone( Zone* pZone ) throw() { m_pZone = pZone; }

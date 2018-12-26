@@ -23,9 +23,9 @@
 class SubInventory : public ConcreteItem <Item::ITEM_CLASS_SUB_INVENTORY, NoStack, HasDurability, NoOption, GroceryGrade, NoAttacking, HasEnchantLevel>
 {
 public:
-	SubInventory() throw();
+	SubInventory() ;
 	SubInventory(ItemType_t itemType, const list<OptionType_t>& optionType);
-	~SubInventory() throw();
+	~SubInventory() ;
 public:
 	virtual void create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID=0);
 	virtual bool destroy();
@@ -34,7 +34,7 @@ public:
 	void tinysave(const char* field) ;
 	virtual string toString() ;
 
-	static void initItemIDRegistry(void) throw();
+	static void initItemIDRegistry(void) ;
 
 public:
 /*

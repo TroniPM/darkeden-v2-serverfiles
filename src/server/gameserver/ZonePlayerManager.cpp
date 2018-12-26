@@ -129,7 +129,7 @@ ZonePlayerManager::~ZonePlayerManager ()
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void ZonePlayerManager::broadcastPacket (Packet* pPacket)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -145,7 +145,7 @@ void ZonePlayerManager::broadcastPacket (Packet* pPacket)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void ZonePlayerManager::broadcastPacket_NOBLOCKED (Packet* pPacket)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -157,7 +157,7 @@ void ZonePlayerManager::broadcastPacket_NOBLOCKED (Packet* pPacket)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void ZonePlayerManager::pushBroadcastPacket( Packet* pPacket, BroadcastFilter* pFilter )
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -183,7 +183,7 @@ void ZonePlayerManager::pushBroadcastPacket( Packet* pPacket, BroadcastFilter* p
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void ZonePlayerManager::flushBroadcastPacket()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1486,7 +1486,7 @@ Player* ZonePlayerManager::getPlayerByPhoneNumber(PhoneNumber_t PhoneNumber)
 // ZonePlayerManager:: save()
 //////////////////////////////////////////////////////////////////////
 void ZonePlayerManager::save()
-	throw(Error)
+	
 {
 
 	__BEGIN_TRY
@@ -1515,7 +1515,7 @@ void ZonePlayerManager::save()
 }
 
 void ZonePlayerManager::pushPlayer(GamePlayer* pGamePlayer)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1529,7 +1529,7 @@ void ZonePlayerManager::pushPlayer(GamePlayer* pGamePlayer)
 }
 
 void ZonePlayerManager::pushOutPlayer(GamePlayer* pGamePlayer)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1539,7 +1539,7 @@ void ZonePlayerManager::pushOutPlayer(GamePlayer* pGamePlayer)
 }
 
 void ZonePlayerManager::processPlayerListQueue()
-	throw(Error) 
+	 
 {
 	__BEGIN_TRY
 
@@ -1593,7 +1593,7 @@ void ZonePlayerManager::processPlayerListQueue()
 }
 
 void ZonePlayerManager::heartbeat()
-	throw(Error) 
+	 
 {
 	__BEGIN_TRY
 
@@ -1648,7 +1648,7 @@ void ZonePlayerManager::deleteQueuePlayer(GamePlayer* pGamePlayer)
 }
 
 void    ZonePlayerManager::removeFlag (Effect::EffectClass EC) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1679,7 +1679,7 @@ void    ZonePlayerManager::removeFlag (Effect::EffectClass EC)
 // ZonePlayerManager 에 있는 모든 사용자를 정리한다.
 ////////////////////////////////////////////////////////////////////////
 void ZonePlayerManager::clearPlayers()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

@@ -23,7 +23,7 @@ InventorySlot::InventorySlot()
 */
 
 InventorySlot::~InventorySlot() 
-	throw(Error) 
+	 
 { 
 	__BEGIN_TRY
 
@@ -56,7 +56,7 @@ void InventorySlot::addItem(Item* pItem)
 }
 
 void InventorySlot::deleteItem() 
-	throw(Error) 
+	 
 { 
 	__BEGIN_TRY
 

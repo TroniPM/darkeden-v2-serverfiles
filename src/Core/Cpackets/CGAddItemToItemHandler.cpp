@@ -86,7 +86,7 @@
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGAddItemToItemHandler::execute (CGAddItemToItem* pPacket , Player* pPlayer)
-	 throw (Error)
+	 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 		
@@ -589,7 +589,7 @@ void CGAddItemToItemHandler::execute (CGAddItemToItem* pPacket , Player* pPlayer
 
 #ifdef __GAME_SERVER__
 	void executeUpGrade(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem)
-		throw(Error)
+		
 	{
 		__BEGIN_TRY
 
@@ -669,7 +669,7 @@ void CGAddItemToItemHandler::execute (CGAddItemToItem* pPacket , Player* pPlayer
 		__END_CATCH
 	}
 	void executeTypeGrade(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem)
-		throw(Error)
+		
 	{
 		__BEGIN_TRY
 
@@ -733,7 +733,7 @@ void CGAddItemToItemHandler::execute (CGAddItemToItem* pPacket , Player* pPlayer
 		__END_CATCH
 	}
 	void executeEnchantRareThreeOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, CoordInven_t invenX, CoordInven_t invenY)
-		throw (Error)
+		
 	{
 		__BEGIN_TRY
 
@@ -974,7 +974,7 @@ EnOK:
 		__END_CATCH
 	}
 	void executeEnchantRareOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, CoordInven_t invenX, CoordInven_t invenY)
-		throw (Error)
+		
 	{
 		__BEGIN_TRY
 
@@ -1362,7 +1362,7 @@ EnOK:
 	}
 
 	void executeEnchantSetRareOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, CoordInven_t invenX, CoordInven_t invenY)
-		throw (Error)
+		
 	{
 		__BEGIN_TRY
 
@@ -1652,7 +1652,7 @@ EnOK:
 	}
 
 	void executeEnchantSetThreeOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, CoordInven_t invenX, CoordInven_t invenY)
-		throw (Error)
+		
 	{
 		__BEGIN_TRY
 
@@ -2055,7 +2055,7 @@ EnOK:
 
 
 	void executeEnchantOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, CoordInven_t invenX, CoordInven_t invenY)
-		throw (Error)
+		
 	{
 		__BEGIN_TRY
 
@@ -2213,7 +2213,7 @@ EnOK:
 	}
 
 	void executeEnchantSetOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, CoordInven_t invenX, CoordInven_t invenY)
-		throw (Error)
+		
 	{
 		__BEGIN_TRY
 
@@ -2372,7 +2372,7 @@ EnOK:
 
 	// 세트 옵션을 생성할수 있다.
 	void executeAddSetOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, OptionType_t addOptionType)
-		throw (Error)
+		
 	{
 		__BEGIN_TRY
 
@@ -2558,7 +2558,7 @@ EnOK:
 
 	// 무옵 아이템에 옵션을 추가시킨다.
 	void executeAddOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, OptionType_t addOptionType)
-		throw (Error)
+		
 	{
 		__BEGIN_TRY
 
@@ -2632,7 +2632,7 @@ EnOK:
 	// 무옵션 아이템에 코랄을 바를수 있다.
 
 	void executeAddCoralOption(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem, int addOptionType)
-		throw (Error)
+		
 	{
 		__BEGIN_TRY
 
@@ -2752,7 +2752,7 @@ EnOK:
 		__END_CATCH
 	}
 
-	void executeRedSunCore(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem) throw(Error)
+	void executeRedSunCore(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem) 
 	{
 		__BEGIN_TRY
 
@@ -2860,7 +2860,7 @@ EnOK:
 
 		__END_CATCH
 	}
-	void executeTransKit(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem) throw(Error)
+	void executeTransKit(GamePlayer* pGamePlayer, Item* pMouseItem, Item* pItem) 
 	{
 		__BEGIN_TRY
 
@@ -2926,7 +2926,7 @@ EnOK:
 					Item* pItem,
 					OptionType_t currentOptionType,
 					OptionInfo* pOptionInfo)
-		throw (Error)
+		
 	{
 		__BEGIN_TRY
 
@@ -2958,7 +2958,7 @@ EnOK:
 					Item* pItem,
 					OptionType_t currentOptionType,
 					OptionInfo* pOptionInfo)
-		throw (Error)
+		
 	{
 		__BEGIN_TRY
 
@@ -2987,7 +2987,7 @@ EnOK:
 	}
 
 	void	crashItem(Item* pItem, Inventory* pInventory, CoordInven_t invenX, CoordInven_t invenY)
-		throw (Error)
+		
 	{
 		__BEGIN_TRY
 
@@ -3007,7 +3007,7 @@ EnOK:
 					Item* pItem,
 					OptionType_t currentOptionType,
 					OptionInfo* pOptionInfo)
-		throw (Error)
+		
 	{
 		__BEGIN_TRY
 
@@ -3047,7 +3047,7 @@ EnOK:
 					Item* pItem,
 					OptionType_t currentOptionType,
 					OptionInfo* pOptionInfo)
-		throw (Error)
+		
 	{
 		__BEGIN_TRY
 
@@ -3085,7 +3085,7 @@ EnOK:
 
 
 	void	sendEnchantImpossible(GamePlayer* pGamePlayer)
-		throw (Error)
+		
 	{
 		__BEGIN_TRY
 
@@ -3097,7 +3097,7 @@ EnOK:
 	}
 
 	void	sendEnchantOK(GamePlayer* pGamePlayer, DWORD optionChange)
-		throw (Error)
+		
 	{
 		__BEGIN_TRY
 
@@ -3110,7 +3110,7 @@ EnOK:
 	}
 
 	void	sendSetEnchantOK(GamePlayer* pGamePlayer, DWORD optionChange)
-		throw (Error)
+		
 	{
 		__BEGIN_TRY
 
@@ -3123,7 +3123,7 @@ EnOK:
 	}
 
 	void	sendEnchantOK(GamePlayer* pGamePlayer, DWORD optionChange , DWORD optionChange2)
-		throw (Error)
+		
 	{
 		__BEGIN_TRY
 

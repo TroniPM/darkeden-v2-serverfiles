@@ -26,8 +26,8 @@ class GCAddNewItemToZone : public GCAddItemToZone {
 
 public :
 
-	GCAddNewItemToZone() throw();
-	~GCAddNewItemToZone() throw();
+	GCAddNewItemToZone() ;
+	~GCAddNewItemToZone() ;
 	
 	// execute packet's handler
 	void execute(Player* pPlayer) ;

@@ -1764,7 +1764,7 @@ bool canDropToZone( Creature* pCreature, Item* pItem )
 
 bool
 getRaceFromDB(const string& Name, Race_t& race)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1806,7 +1806,7 @@ getRaceFromDB(const string& Name, Race_t& race)
 
 bool
 getGuildIDFromDB(const string& Name, Race_t race, GuildID_t& guildID)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -2032,7 +2032,7 @@ void deleteCreatureEffect( Creature* pCreature, Effect::EffectClass eClass)
 }
 
 bool dropFlagToZone(PlayerCreature* pPC, Item* pItem)
-	throw (Error)
+	
 {
 	Zone* pZone = pPC->getZone();
 	Assert(pZone!=NULL);
@@ -2296,7 +2296,7 @@ void giveUnderworldGift( Creature* pCreature )
 #endif
 
 bool dropSweeperToZone(PlayerCreature* pPC, Item* pItem)
-	throw (Error)
+	
 {
 	Zone* pZone = pPC->getZone();
 	Assert(pZone!=NULL);
@@ -2431,7 +2431,7 @@ void sendPetInfo( GamePlayer* pGamePlayer, bool bBroadcast, bool bSummon )
 	}
 }
 
-void giveGoldMedal( PlayerCreature* pPC ) throw(Error)
+void giveGoldMedal( PlayerCreature* pPC ) 
 {
 	__BEGIN_TRY
 
@@ -2477,7 +2477,7 @@ void giveGoldMedal( PlayerCreature* pPC ) throw(Error)
 	__END_CATCH
 }
 
-void giveLotto( PlayerCreature* pPC, BYTE type, uint num ) throw(Error)
+void giveLotto( PlayerCreature* pPC, BYTE type, uint num ) 
 {
 	__BEGIN_TRY
 
@@ -2525,7 +2525,7 @@ void giveLotto( PlayerCreature* pPC, BYTE type, uint num ) throw(Error)
 	__END_CATCH
 }
 
-void addOlympicStat( PlayerCreature* pPC, BYTE type, uint num ) throw(Error)
+void addOlympicStat( PlayerCreature* pPC, BYTE type, uint num ) 
 {
 	__BEGIN_TRY
 
@@ -2570,7 +2570,7 @@ void addOlympicStat( PlayerCreature* pPC, BYTE type, uint num ) throw(Error)
 	__END_CATCH
 }
 
-void deletePC( PlayerCreature* pPC ) throw(Error)
+void deletePC( PlayerCreature* pPC ) 
 {
 	__BEGIN_TRY
 

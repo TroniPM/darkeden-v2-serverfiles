@@ -9,7 +9,7 @@
 // constructor / destructor
 //--------------------------------------------------------------------------------
 QuestManager::QuestManager() 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 		
@@ -17,7 +17,7 @@ QuestManager::QuestManager()
 }
 
 QuestManager::~QuestManager()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 		
@@ -31,7 +31,7 @@ QuestManager::~QuestManager()
 //--------------------------------------------------------------------------------
 void
 QuestManager::release()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -51,7 +51,7 @@ QuestManager::release()
 //--------------------------------------------------------------------------------
 bool		
 QuestManager::addQuest(Quest* pQuest) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -67,7 +67,7 @@ QuestManager::addQuest(Quest* pQuest)
 //--------------------------------------------------------------------------------
 Quest*		
 QuestManager::checkEvent(QuestEvent* pQuestEvent) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -93,7 +93,7 @@ QuestManager::checkEvent(QuestEvent* pQuestEvent)
 //--------------------------------------------------------------------------------
 Quest*      
 QuestManager::removeCompleteQuest() 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -119,7 +119,7 @@ QuestManager::removeCompleteQuest()
 //--------------------------------------------------------------------------------
 void		
 QuestManager::heartbeat() 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

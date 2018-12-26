@@ -54,7 +54,7 @@ VampireCoat::VampireCoat(ItemType_t itemType, const list<OptionType_t>& optionTy
 // create item
 //--------------------------------------------------------------------------------
 void VampireCoat::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -106,7 +106,7 @@ void VampireCoat::create(const string & ownerID, Storage storage, StorageID_t st
 // save item
 //--------------------------------------------------------------------------------
 void VampireCoat::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -130,7 +130,7 @@ void VampireCoat::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void VampireCoat::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -198,7 +198,7 @@ string VampireCoat::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t VampireCoat::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -212,7 +212,7 @@ VolumeWidth_t VampireCoat::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t VampireCoat::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -226,7 +226,7 @@ VolumeHeight_t VampireCoat::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t VampireCoat::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -240,7 +240,7 @@ Weight_t VampireCoat::getWeight() const
 // get/set armor's Defense Bonus
 //--------------------------------------------------------------------------------
 Defense_t VampireCoat::getDefenseBonus() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -249,7 +249,7 @@ Defense_t VampireCoat::getDefenseBonus() const
 	__END_CATCH
 }
 Protection_t VampireCoat::getProtectionBonus() const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -287,7 +287,7 @@ string VampireCoatInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void VampireCoatInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -350,7 +350,7 @@ void VampireCoatInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void VampireCoatLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -548,7 +548,7 @@ pVampireCoat->setHeroOptionAttr(pResult->getInt(++i));
 // load to zone
 //--------------------------------------------------------------------------------
 void VampireCoatLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -630,7 +630,7 @@ pVampireCoat->setHeroOptionAttr(pResult->getInt(++i));
 // load to inventory
 //--------------------------------------------------------------------------------
 void VampireCoatLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

@@ -20,8 +20,8 @@ const int MAX_LUCK_LEVEL = 140;
 class LuckInfoManager 
 {
 public:
-	LuckInfoManager() throw();
-	~LuckInfoManager() throw();
+	LuckInfoManager() ;
+	~LuckInfoManager() ;
 
 public:
 	void init();

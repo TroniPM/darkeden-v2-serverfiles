@@ -27,10 +27,10 @@ class GCGetOffMotorCycleOK : public Packet {
 public :
 	
 	// constructor
-	GCGetOffMotorCycleOK() throw();
+	GCGetOffMotorCycleOK() ;
 	
 	// destructor
-	~GCGetOffMotorCycleOK() throw();
+	~GCGetOffMotorCycleOK() ;
 
 	
 public :

@@ -24,7 +24,7 @@ bool ConditionEffectFlag::isSatisfied (Creature * pCreature1 , Creature * pCreat
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionEffectFlag::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 	try
 	{

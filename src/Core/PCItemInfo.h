@@ -24,8 +24,8 @@
 class PCItemInfo 
 {
 public:
-	PCItemInfo() throw();
-	virtual ~PCItemInfo() throw();
+	PCItemInfo() ;
+	virtual ~PCItemInfo() ;
 
 public:
 	void read (SocketInputStream & iStream);

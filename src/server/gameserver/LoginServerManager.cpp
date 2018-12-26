@@ -27,7 +27,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 LoginServerManager::LoginServerManager () 
-	throw (Error)
+	
 : m_pDatagramSocket(NULL)
 {
 	__BEGIN_TRY
@@ -59,7 +59,7 @@ LoginServerManager::LoginServerManager ()
 // destructor
 //////////////////////////////////////////////////////////////////////
 LoginServerManager::~LoginServerManager () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -72,7 +72,7 @@ LoginServerManager::~LoginServerManager ()
 // stop thread
 //////////////////////////////////////////////////////////////////////
 void LoginServerManager::stop () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

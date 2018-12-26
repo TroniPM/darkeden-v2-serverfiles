@@ -18,7 +18,7 @@
 class GCCreateItem : public Packet 
 {
 public:
-	GCCreateItem() throw();
+	GCCreateItem() ;
 
 public:
     void read(SocketInputStream & iStream) ;

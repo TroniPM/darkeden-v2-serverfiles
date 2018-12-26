@@ -23,30 +23,30 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_SANCTUARY; }
 
-	void affect() throw(Error){}
+	void affect() {}
 	void affect(Creature* pCreature);
 	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject );
 
 	void unaffect();
-	void unaffect(Creature* pCreature) throw(Error) {};
+	void unaffect(Creature* pCreature)  {};
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject );
-	void unaffect(Item* pItem) throw(Error) {}
+	void unaffect(Item* pItem)  {}
 
 	string toString() ;
 
 public:
 
-	void setCenterX(ZoneCoord_t x) throw(Error) { m_CenterX = x;}
+	void setCenterX(ZoneCoord_t x)  { m_CenterX = x;}
 	ZoneCoord_t getCenterX()  { return m_CenterX;}
 
-	void setCenterY(ZoneCoord_t y) throw(Error) { m_CenterY = y;}
+	void setCenterY(ZoneCoord_t y)  { m_CenterY = y;}
 	ZoneCoord_t getCenterY()  { return m_CenterY;}
 
-	void setLevel(Attr_t l) throw(Error) { m_Level = l;}
+	void setLevel(Attr_t l)  { m_Level = l;}
 	Attr_t getLevel()  { return m_Level;}
 	
-	void setDuration(Duration_t d) throw(Error) { m_Duration = d; }
-	Duration_t getDuration() throw(Error) { return m_Duration;}
+	void setDuration(Duration_t d)  { m_Duration = d; }
+	Duration_t getDuration()  { return m_Duration;}
 	
 	void setStartTime() throw() { getCurrentTime(m_StartTime);}
 	bool isHalfTimePassed() 

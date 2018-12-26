@@ -59,8 +59,8 @@ public :
 	virtual Work* heartbeat();
 
 // public :
-//	void	lock() throw (Error)	{ m_Mutex.lock(); }
-//	void	unlock() throw (Error)	{ m_Mutex.unlock(); }
+//	void	lock() 	{ m_Mutex.lock(); }
+//	void	unlock() 	{ m_Mutex.unlock(); }
 
 public :
 	static WarID_t		getWarIDSuccessor()	{ return s_WarIDSuccessor; }

@@ -49,7 +49,7 @@ EtheReal::EtheReal(ItemType_t itemType, const list<OptionType_t>& optionType)
 // create item
 //--------------------------------------------------------------------------------
 void EtheReal::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -101,7 +101,7 @@ void EtheReal::create(const string & ownerID, Storage storage, StorageID_t stora
 // save item
 //--------------------------------------------------------------------------------
 void EtheReal::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -125,7 +125,7 @@ void EtheReal::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void EtheReal::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -188,7 +188,7 @@ string EtheReal::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t EtheReal::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -202,7 +202,7 @@ VolumeWidth_t EtheReal::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t EtheReal::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -216,7 +216,7 @@ VolumeHeight_t EtheReal::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t EtheReal::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -230,7 +230,7 @@ Weight_t EtheReal::getWeight() const
 // get/set armor's Defense Bonus
 //--------------------------------------------------------------------------------
 Defense_t EtheReal::getDefenseBonus() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -239,7 +239,7 @@ Defense_t EtheReal::getDefenseBonus() const
 	__END_CATCH
 }
 Protection_t EtheReal::getProtectionBonus() const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -275,7 +275,7 @@ string EtheRealInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void EtheRealInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -331,7 +331,7 @@ void EtheRealInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void EtheRealLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -546,7 +546,7 @@ void EtheRealLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void EtheRealLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -619,7 +619,7 @@ void EtheRealLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void EtheRealLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

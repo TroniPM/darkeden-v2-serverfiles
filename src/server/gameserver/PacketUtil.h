@@ -61,52 +61,52 @@ class GCLoadGear;
 //////////////////////////////////////////////////////////////////////////////
 
 // MOdifyInformation 에 길드연합정보를 만들어 넣는다.
-void makeGCModifyInfoGuildUnion(GCModifyInformation* pModifyInformation, Creature* pCreature) throw();
-void makeGCOtherModifyInfoGuildUnion(GCOtherModifyInfo* pModifyInformation, Creature* pCreature) throw();
-void sendGCOtherModifyInfoGuildUnion(Creature* pTargetCreature) throw();
-void sendGCOtherModifyInfoGuildUnionByGuildID(uint gID) throw();
+void makeGCModifyInfoGuildUnion(GCModifyInformation* pModifyInformation, Creature* pCreature) ;
+void makeGCOtherModifyInfoGuildUnion(GCOtherModifyInfo* pModifyInformation, Creature* pCreature) ;
+void sendGCOtherModifyInfoGuildUnion(Creature* pTargetCreature) ;
+void sendGCOtherModifyInfoGuildUnionByGuildID(uint gID) ;
 	
 	
 // 포탈이나, 죽어서 맵 사이를 이동할 때 쓰는, GCUpdateInfo 정보를 구성한다.
-void makeGCUpdateInfo(GCUpdateInfo* pUpdateInfo, Creature* pCreature) throw();
+void makeGCUpdateInfo(GCUpdateInfo* pUpdateInfo, Creature* pCreature) ;
 // 패킷 분활 인벤토리 구성
-void makeGCLoadInventory(GCLoadInventory* pUpdateInfo, Creature* pCreature, int Type) throw();
+void makeGCLoadInventory(GCLoadInventory* pUpdateInfo, Creature* pCreature, int Type) ;
 
 // 패킷 분활 기어 구성
-void makeGCLoadGear(GCLoadGear* pUpdateInfo, Creature* pCreature, int Type) throw();
+void makeGCLoadGear(GCLoadGear* pUpdateInfo, Creature* pCreature, int Type) ;
 
 // 슬레이어 추가 패킷을 구성한다.
-void makeGCAddSlayer(GCAddSlayer* pAddSlayer, Slayer* pSlayer) throw();
+void makeGCAddSlayer(GCAddSlayer* pAddSlayer, Slayer* pSlayer) ;
 
 // 뱀파이어 추가 패킷을 구성한다.
-void makeGCAddVampire(GCAddVampire* pAddVampire, Vampire* pVampire) throw();
+void makeGCAddVampire(GCAddVampire* pAddVampire, Vampire* pVampire) ;
 
 // 아우스터스 추가 패킷을 구성한다.
-void makeGCAddOusters(GCAddOusters* pAddOusters, Ousters* pOusters) throw();
+void makeGCAddOusters(GCAddOusters* pAddOusters, Ousters* pOusters) ;
 
 // 몬스터 추가 패킷을 구성한다.
-void makeGCAddMonster(GCAddMonster* pAddMonster, Monster* pMonster) throw();
+void makeGCAddMonster(GCAddMonster* pAddMonster, Monster* pMonster) ;
 
 // NPc 추가 패킷을 구성한다.
-void makeGCAddNPC(GCAddNPC* pAddNPC, NPC* pNPC) throw();
+void makeGCAddNPC(GCAddNPC* pAddNPC, NPC* pNPC) ;
 
 // 새로운 아이템을 존에다 추가할 때 보내는 GCAddNewItemToZone을 구성한다.
-void makeGCAddNewItemToZone(GCAddNewItemToZone* pAddItem, Item* pItem, int X, int Y) throw();
+void makeGCAddNewItemToZone(GCAddNewItemToZone* pAddItem, Item* pItem, int X, int Y) ;
 
 // 새로운 아이템을 존에다 추가할 때 보내는 GCAddNewItemToZone을 구성한다.
-void makeGCDropItemToZone(GCDropItemToZone* pAddItem, Item* pItem, int X, int Y) throw();
+void makeGCDropItemToZone(GCDropItemToZone* pAddItem, Item* pItem, int X, int Y) ;
 
 // 존에다 슬레이어 시체를 추가할 때 보내는 패킷을 구성한다.
-void makeGCAddSlayerCorpse(GCAddSlayerCorpse* pAddSlayerCorpse, SlayerCorpse* pSlayerCorpse) throw();
+void makeGCAddSlayerCorpse(GCAddSlayerCorpse* pAddSlayerCorpse, SlayerCorpse* pSlayerCorpse) ;
 
 // 존에다 뱀파이어 시체를 추가할 때 보내는 패킷을 구성한다.
-void makeGCAddVampireCorpse(GCAddVampireCorpse* pAddVampireCorpse, VampireCorpse* pVampireCorpse) throw();
+void makeGCAddVampireCorpse(GCAddVampireCorpse* pAddVampireCorpse, VampireCorpse* pVampireCorpse) ;
 
 // 존에다 몬스터 시체를 추가할 때 보내는 패킷을 구성한다.
-void makeGCAddMonsterCorpse(GCAddMonsterCorpse* pAddMonsterCorpse, MonsterCorpse* pMonsterCorpse, int X, int Y) throw();
+void makeGCAddMonsterCorpse(GCAddMonsterCorpse* pAddMonsterCorpse, MonsterCorpse* pMonsterCorpse, int X, int Y) ;
 
 // 존에다 아우스터즈 시체를 추가할 때 보내는 패킷을 구성한다.
-void makeGCAddOustersCorpse(GCAddOustersCorpse* pAddOustersCorpse, OustersCorpse* pOustersCorpse) throw();
+void makeGCAddOustersCorpse(GCAddOustersCorpse* pAddOustersCorpse, OustersCorpse* pOustersCorpse) ;
 
 // 다른 사람의 최대 체력 같은 것이 변경되었을 경우에 날아가는 GCOtherModifyInfo를 구성한다.
 void makeGCOtherModifyInfo(GCOtherModifyInfo* pInfo, Slayer* pSlayer, const SLAYER_RECORD* prev);

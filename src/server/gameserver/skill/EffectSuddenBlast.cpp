@@ -15,7 +15,7 @@
 #include "Gpackets/GCRemoveEffect.h"
 
 EffectSuddenBlast::EffectSuddenBlast(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -25,7 +25,7 @@ EffectSuddenBlast::EffectSuddenBlast(Creature* pCreature)
 	__END_CATCH
 }
 
-void EffectSuddenBlast::affect() throw(Error)
+void EffectSuddenBlast::affect() 
 {
 	__BEGIN_TRY
 
@@ -40,7 +40,7 @@ void EffectSuddenBlast::affect() throw(Error)
 }
 
 void EffectSuddenBlast::affect(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -100,7 +100,7 @@ void EffectSuddenBlast::affect(Creature* pCreature)
 }
 
 void EffectSuddenBlast::unaffect()
-	    throw(Error)
+	    
 {
     __BEGIN_TRY
 
@@ -115,7 +115,7 @@ void EffectSuddenBlast::unaffect()
 }
 
 void EffectSuddenBlast::unaffect(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG

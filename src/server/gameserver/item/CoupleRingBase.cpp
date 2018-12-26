@@ -21,7 +21,7 @@ CoupleRingBase::CoupleRingBase()
 }
 
 void CoupleRingBase::setPartnerItemID( ItemID_t partnerItemID )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -35,7 +35,7 @@ void CoupleRingBase::setPartnerItemID( ItemID_t partnerItemID )
 }
 
 ItemInfo* CoupleRingBase::getItemInfo( ItemType_t itemType, Race_t race )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

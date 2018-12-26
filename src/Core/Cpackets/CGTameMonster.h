@@ -24,8 +24,8 @@
 class CGTameMonster : public Packet {
 
 public:
-	CGTameMonster() throw();
-	~CGTameMonster() throw();
+	CGTameMonster() ;
+	~CGTameMonster() ;
 	
 public:
     void read(SocketInputStream & iStream) ;

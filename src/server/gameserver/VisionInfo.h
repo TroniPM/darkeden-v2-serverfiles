@@ -53,7 +53,7 @@ private:
 	// viewport rectangle
 	VisionState m_Rect[maxVisionWidth][maxVisionHeight];
 	// deprecated. 이 클래스는 더이상 안 쓴다.
-	VisionInfo(Sight_t sight, Dir_t dir) throw();
+	VisionInfo(Sight_t sight, Dir_t dir) ;
 	~VisionInfo();
 };
 */
@@ -67,12 +67,12 @@ class VisionInfoManager
 {
 public:
 	VisionInfoManager() throw() {}
-	~VisionInfoManager() throw();
+	~VisionInfoManager() ;
 
 public:
 
 	// init vision info
-	void init() throw();
+	void init() ;
 
 	// get vision info
 /*	VisionInfo* getVisionInfo(Sight_t sight, Dir_t dir) //throw(OutOfBoundException)

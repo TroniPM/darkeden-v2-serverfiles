@@ -28,10 +28,10 @@ class GCCrossCounterOK3 : public Packet {
 public :
 	
 	// constructor
-	GCCrossCounterOK3() throw();
+	GCCrossCounterOK3() ;
 	
 	// destructor
-	~GCCrossCounterOK3() throw();
+	~GCCrossCounterOK3() ;
 
 	
 public :

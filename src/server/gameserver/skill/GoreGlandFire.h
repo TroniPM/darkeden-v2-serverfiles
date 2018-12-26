@@ -16,7 +16,7 @@
 class GoreGlandFire : public SkillHandler 
 {
 public:
-	GoreGlandFire() throw();
+	GoreGlandFire() ;
 	~GoreGlandFire() throw() {}
 	
 public:

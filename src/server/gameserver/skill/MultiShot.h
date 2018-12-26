@@ -16,7 +16,7 @@
 class MultiShot : public SkillHandler 
 {
 public:
-	MultiShot() throw();
+	MultiShot() ;
 	~MultiShot() throw() {}
 	
 public:

@@ -45,7 +45,7 @@ LearningItem::LearningItem(ItemType_t itemType, const list<OptionType_t>& option
 // create item
 //--------------------------------------------------------------------------------
 void LearningItem::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -93,7 +93,7 @@ void LearningItem::create(const string & ownerID, Storage storage, StorageID_t s
 // save item
 //--------------------------------------------------------------------------------
 void LearningItem::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -117,7 +117,7 @@ void LearningItem::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void LearningItem::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -176,7 +176,7 @@ string LearningItem::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t LearningItem::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -190,7 +190,7 @@ VolumeWidth_t LearningItem::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t LearningItem::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -204,7 +204,7 @@ VolumeHeight_t LearningItem::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t LearningItem::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -241,7 +241,7 @@ string LearningItemInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void LearningItemInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -296,7 +296,7 @@ void LearningItemInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void LearningItemLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -460,7 +460,7 @@ void LearningItemLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void LearningItemLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -525,7 +525,7 @@ void LearningItemLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void LearningItemLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

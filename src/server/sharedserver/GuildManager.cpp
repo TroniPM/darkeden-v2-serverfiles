@@ -576,7 +576,7 @@ void GuildManager::makeActiveGuildList( GCActiveGuildList& gcActiveGuildList, Gu
 }
 
 void GuildManager::heartbeat()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -637,7 +637,7 @@ string GuildManager::toString() const
 }
 
 bool GuildManager::isGuildMaster( GuildID_t guildID, PlayerCreature* pPC )
-	throw(Error)
+	
 {
 #ifdef __GAME_SERVER__
 	__BEGIN_TRY
@@ -657,7 +657,7 @@ bool GuildManager::isGuildMaster( GuildID_t guildID, PlayerCreature* pPC )
 
 // 길드가 성을 가졌나?
 bool GuildManager::hasCastle( GuildID_t guildID ) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -696,7 +696,7 @@ bool GuildManager::hasCastle( GuildID_t guildID )
 
 // 길드가 성을 가졌나?
 bool GuildManager::hasCastle( GuildID_t guildID, ServerID_t& serverID, ZoneID_t& zoneID ) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -733,7 +733,7 @@ bool GuildManager::hasCastle( GuildID_t guildID, ServerID_t& serverID, ZoneID_t&
 
 // 길드가 전쟁신청을 했나?
 bool GuildManager::hasWarSchedule( GuildID_t guildID ) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -792,7 +792,7 @@ bool GuildManager::hasWarSchedule( GuildID_t guildID )
 }
 
 bool GuildManager::hasActiveWar( GuildID_t guildID )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -863,7 +863,7 @@ bool GuildManager::hasActiveWar( GuildID_t guildID )
 
 
 string GuildManager::getGuildName( GuildID_t guildID )
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

@@ -24,7 +24,7 @@ MonsterCounter::MonsterCounter(SpriteType_t spriteType, WORD maxMonsters, WORD c
 }
 
 void MonsterCounter::addMonster() 
-	throw(Error) 
+	 
 { 
 	__BEGIN_TRY
 
@@ -46,7 +46,7 @@ void MonsterCounter::addMonster(WORD Count)
 }
 
 void MonsterCounter::deleteMonster() 
-	throw(Error) 
+	 
 { 
 	__BEGIN_TRY
 

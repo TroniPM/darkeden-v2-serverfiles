@@ -11,7 +11,7 @@
 //////////////////////////////////////////////////////////////////////////////
 // 슬레이어 오브젝트 핸들러
 //////////////////////////////////////////////////////////////////////////////
-void SacredStamp::execute(Slayer* pSlayer, ObjectID_t targetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error)
+void SacredStamp::execute(Slayer* pSlayer, ObjectID_t targetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) 
 {
 	__BEGIN_TRY
 
@@ -34,7 +34,7 @@ void SacredStamp::execute(Slayer* pSlayer, ObjectID_t targetObjectID, SkillSlot*
 }
 	
 void SacredStamp::execute(Slayer * pSlayer, ZoneCoord_t X, ZoneCoord_t Y, SkillSlot * pSkillSlot, CEffectID_t CEffectID)
-	throw(Error)
+	
 {
 
 	__BEGIN_TRY

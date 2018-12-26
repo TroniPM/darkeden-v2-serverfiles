@@ -92,7 +92,7 @@ bool ConditionEnterMasterLair::isSatisfied (Creature * pCreature1 , Creature * p
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionEnterMasterLair::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 	try
 	{

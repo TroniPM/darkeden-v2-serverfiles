@@ -21,7 +21,7 @@
 //
 //////////////////////////////////////////////////////////////////////
 CondVar::CondVar ( CondVarAttr * attr ) 
-	throw ( Error )
+	
 //: m_Cond(PTHREAD_COND_INITIALIZER)
 {
 	__BEGIN_TRY
@@ -55,7 +55,7 @@ CondVar::~CondVar ()
 //
 //////////////////////////////////////////////////////////////////////
 void CondVar::signal () 
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 	
@@ -75,7 +75,7 @@ void CondVar::signal ()
 //
 //////////////////////////////////////////////////////////////////////
 void CondVar::wait ( Mutex & mutex ) 
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -118,7 +118,7 @@ void CondVar::timedwait ( Mutex & mutex , const struct timespec * timeout )
 //
 //////////////////////////////////////////////////////////////////////
 void CondVar::broadcast () 
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 		

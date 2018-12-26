@@ -23,7 +23,7 @@ public:
 	EffectClass getEffectClass()  { return EFFECT_CLASS_ICE_FIELD_TO_CREATURE; }
 	EffectClass getSendEffectClass()  { return (m_bFrozenArmor)?EFFECT_CLASS_FROZEN_ARMOR_TO_ENEMY:EFFECT_CLASS_ICE_FIELD_TO_CREATURE; }
 
-	void affect() throw(Error){}
+	void affect() {}
 
 	void unaffect(Creature* pCreature);
 	void unaffect();

@@ -22,8 +22,8 @@
 
 class CGCrashReport : public Packet {
 public:
-	CGCrashReport() throw();
-	~CGCrashReport() throw();
+	CGCrashReport() ;
+	~CGCrashReport() ;
 
 public:
     void read(SocketInputStream & iStream) ;

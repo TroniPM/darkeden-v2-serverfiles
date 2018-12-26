@@ -29,10 +29,10 @@ class GCSkillToObjectOK3 : public Packet {
 public :
 	
 	// constructor
-	GCSkillToObjectOK3() throw();
+	GCSkillToObjectOK3() ;
 	
 	// destructor
-	~GCSkillToObjectOK3() throw();
+	~GCSkillToObjectOK3() ;
 
 	
 public :

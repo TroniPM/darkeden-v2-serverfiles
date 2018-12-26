@@ -98,7 +98,7 @@ SocketImpl::SocketImpl ( const SocketImpl & impl )
 //
 ////////////////////////////////////////////////////////////////////////
 SocketImpl::~SocketImpl () 
-	throw ( Error )
+	
 {
 	__BEGIN_TRY 
 
@@ -110,7 +110,7 @@ SocketImpl::~SocketImpl ()
 //////////////////////////////////////////////////////////////////////
 // create connection
 //////////////////////////////////////////////////////////////////////
-void SocketImpl::create () throw ( Error )
+void SocketImpl::create () 
 {
 	__BEGIN_TRY
 		
@@ -129,7 +129,7 @@ void SocketImpl::create () throw ( Error )
 //////////////////////////////////////////////////////////////////////
 // close connection
 //////////////////////////////////////////////////////////////////////
-void SocketImpl::close () throw ( Error )
+void SocketImpl::close () 
 {
 	__BEGIN_TRY 
 
@@ -185,7 +185,7 @@ void SocketImpl::bind ( uint port )
 // bind address to socket
 //////////////////////////////////////////////////////////////////////
 void SocketImpl::listen ( uint backlog )
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -318,7 +318,7 @@ uint SocketImpl::receive ( void * buf , uint len , uint flags )
 // how much available?
 //////////////////////////////////////////////////////////////////////
 uint SocketImpl::available () const 
-     throw ( Error )
+     
 {
 	__BEGIN_TRY 
 		
@@ -331,7 +331,7 @@ uint SocketImpl::available () const
 // get socket's linger status
 //////////////////////////////////////////////////////////////////////
 uint SocketImpl::getLinger () const
-     throw ( Error )
+     
 {
 	__BEGIN_TRY 
 
@@ -350,7 +350,7 @@ uint SocketImpl::getLinger () const
 // set socket's linger status
 //////////////////////////////////////////////////////////////////////
 void SocketImpl::setLinger ( uint lingertime )
-     throw ( Error )
+     
 {
 	__BEGIN_TRY 
 
@@ -369,7 +369,7 @@ void SocketImpl::setLinger ( uint lingertime )
 // get socket's reuse address status
 //////////////////////////////////////////////////////////////////////
 bool SocketImpl::isReuseAddr () const
-     throw ( Error )
+     
 {
 	__BEGIN_TRY 
 		
@@ -387,7 +387,7 @@ bool SocketImpl::isReuseAddr () const
 // get socket's reuse address status
 //////////////////////////////////////////////////////////////////////
 bool SocketImpl::isSockError () const
-     throw ( Error )
+     
 {
 	__BEGIN_TRY 
 		
@@ -406,7 +406,7 @@ bool SocketImpl::isSockError () const
 // set socket's reuse address status
 //////////////////////////////////////////////////////////////////////
 void SocketImpl::setReuseAddr ( bool on )
-     throw ( Error )
+     
 {
 	__BEGIN_TRY 
 
@@ -422,7 +422,7 @@ void SocketImpl::setReuseAddr ( bool on )
 // get socket's nonblocking status
 //////////////////////////////////////////////////////////////////////
 bool SocketImpl::isNonBlocking () const 
-     throw ( Error )
+     
 {
 	__BEGIN_TRY 
 
@@ -436,7 +436,7 @@ bool SocketImpl::isNonBlocking () const
 // set socket's nonblocking status
 //////////////////////////////////////////////////////////////////////
 void SocketImpl::setNonBlocking ( bool on ) 
-     throw ( Error )
+     
 {
 	__BEGIN_TRY 
 
@@ -450,7 +450,7 @@ void SocketImpl::setNonBlocking ( bool on )
 // get receive buffer size
 //////////////////////////////////////////////////////////////////////
 uint SocketImpl::getReceiveBufferSize () const 
-     throw ( Error )
+     
 {
 	__BEGIN_TRY 
 
@@ -469,7 +469,7 @@ uint SocketImpl::getReceiveBufferSize () const
 // set receive buffer size
 //////////////////////////////////////////////////////////////////////
 void SocketImpl::setReceiveBufferSize ( uint ReceiveBufferSize ) 
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY 
 
@@ -482,7 +482,7 @@ void SocketImpl::setReceiveBufferSize ( uint ReceiveBufferSize )
 // get send buffer size
 //////////////////////////////////////////////////////////////////////
 uint SocketImpl::getSendBufferSize () const 
-     throw ( Error )
+     
 {
 	__BEGIN_TRY 
 		
@@ -498,7 +498,7 @@ uint SocketImpl::getSendBufferSize () const
 
 //////////////////////////////////////////////////////////////////////
 //
-// void SocketImpl::setSendBufferSize ( uint SendBufferSize ) throw ( Error )
+// void SocketImpl::setSendBufferSize ( uint SendBufferSize ) 
 //
 // set send buffer size
 //
@@ -511,7 +511,7 @@ uint SocketImpl::getSendBufferSize () const
 //
 //////////////////////////////////////////////////////////////////////
 void SocketImpl::setSendBufferSize ( uint SendBufferSize ) 
-     throw ( Error )
+     
 {
 	__BEGIN_TRY 
 		

@@ -43,7 +43,7 @@ public:
 
 public:
 	Event(GamePlayer* pGamePlayer);
-	virtual ~Event() throw();
+	virtual ~Event() ;
 			
 public:
 	virtual EventClass getEventClass()  = 0;
@@ -53,10 +53,10 @@ public:
 	virtual bool isTemporary()  { return true; }
 	virtual bool isPermanent()  { return false; }
 
-	virtual void activate() throw(Error) = 0;
+	virtual void activate()  = 0;
 	
 	Timeval getDeadline()  { return m_Deadline; }
-	void setDeadline(Turn_t delay) throw();
+	void setDeadline(Turn_t delay) ;
 
 	virtual string toString()  = 0;
 

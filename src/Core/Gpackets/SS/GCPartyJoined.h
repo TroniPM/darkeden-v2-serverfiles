@@ -45,10 +45,10 @@ public:
 public:
 	BYTE getMemberInfoCount(void) { return m_MemberCount; }
 
-	void addMemberInfo(PARTY_MEMBER_INFO* pInfo) throw();
-	PARTY_MEMBER_INFO* popMemberInfo(void) throw();
+	void addMemberInfo(PARTY_MEMBER_INFO* pInfo) ;
+	PARTY_MEMBER_INFO* popMemberInfo(void) ;
 
-	void clear(void) throw();
+	void clear(void) ;
 
 private:
 	BYTE                     m_MemberCount;

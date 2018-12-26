@@ -64,7 +64,7 @@ public:
 	void sendGCWarList(Player* pPlayer);
 	void broadcastGCWarList();
 
-	bool canEnterFreeUser() throw(Error) { return m_bCanEnterFreeUser; }
+	bool canEnterFreeUser()  { return m_bCanEnterFreeUser; }
 	void freeUserTimeCheck();
 	void ExpTimeCheck();
 

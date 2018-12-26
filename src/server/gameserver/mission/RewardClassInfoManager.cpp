@@ -50,7 +50,7 @@ RewardClass* RewardClassInfoManager::getRewardClass( RewardClass_t rClass )
 	__END_CATCH
 }
 
-/*void RewardClassInfoManager::load( const string& name ) throw(Error)
+/*void RewardClassInfoManager::load( const string& name ) 
 {
 	__BEGIN_TRY
 

@@ -28,10 +28,10 @@ class GCMineExplosionOK2 : public Packet {
 public :
 	
 	// constructor
-	GCMineExplosionOK2() throw();
+	GCMineExplosionOK2() ;
 	
 	// destructor
-	~GCMineExplosionOK2() throw();
+	~GCMineExplosionOK2() ;
 
 	
 public :
@@ -85,7 +85,7 @@ public :
 
 
     // add / delete  Creature List
-    void addCListElement(ObjectID_t ObjectID) throw();
+    void addCListElement(ObjectID_t ObjectID) ;
 
 	// Clear Creature List
     void clearCList() throw() { m_CList.clear(); m_CListNum = 0; }

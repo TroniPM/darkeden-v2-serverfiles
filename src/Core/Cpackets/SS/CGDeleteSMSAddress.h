@@ -17,8 +17,8 @@
 class CGDeleteSMSAddress : public Packet 
 {
 public:
-	CGDeleteSMSAddress() throw();
-	~CGDeleteSMSAddress() throw();
+	CGDeleteSMSAddress() ;
+	~CGDeleteSMSAddress() ;
 
 public:
     void read(SocketInputStream & iStream) ;

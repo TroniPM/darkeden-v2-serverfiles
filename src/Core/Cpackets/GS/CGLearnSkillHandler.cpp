@@ -41,7 +41,7 @@
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGLearnSkillHandler::execute (CGLearnSkill* pPacket , Player* pPlayer)
-	 throw (ProtocolException, Error)
+	 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 		
@@ -497,7 +497,7 @@ void CGLearnSkillHandler::execute (CGLearnSkill* pPacket , Player* pPlayer)
 // 슬레이어 기술 습득을 처리
 //////////////////////////////////////////////////////////////////////////////
 void CGLearnSkillHandler::executeSlayerSkill (CGLearnSkill* pPacket , Player* pPlayer)
-	 throw (ProtocolException, Error)
+	 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -616,7 +616,7 @@ void CGLearnSkillHandler::executeSlayerSkill (CGLearnSkill* pPacket , Player* pP
 // 뱀파이어 기술 습득을 처리
 //////////////////////////////////////////////////////////////////////////////
 void CGLearnSkillHandler::executeVampireSkill (CGLearnSkill* pPacket , Player* pPlayer)
-	 throw (ProtocolException, Error)
+	 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 

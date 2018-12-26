@@ -24,10 +24,10 @@ class CGDropMoney : public Packet {
 public:
 
 	// constructor
-	CGDropMoney() throw();
+	CGDropMoney() ;
 
 	// destructor
-	~CGDropMoney() throw();
+	~CGDropMoney() ;
 
 public:
 	

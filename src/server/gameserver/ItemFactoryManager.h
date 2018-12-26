@@ -20,8 +20,8 @@
 class ItemFactoryManager 
 {
 public:
-	ItemFactoryManager() throw();
-	~ItemFactoryManager() throw();
+	ItemFactoryManager() ;
+	~ItemFactoryManager() ;
 
 public:
 	void init();
@@ -30,9 +30,9 @@ public:
 
 	Item* createItem(Item::ItemClass IClass, ItemType_t ItemType, const list<OptionType_t>& OptionType) throw(NoSuchElementException, Error);
 
-	string getItemName(Item::ItemClass IClass) throw();
+	string getItemName(Item::ItemClass IClass) ;
 
-	Item::ItemClass getItemClassByName( const string & ClassName ) throw();
+	Item::ItemClass getItemClassByName( const string & ClassName ) ;
 
 	string toString() ;
 

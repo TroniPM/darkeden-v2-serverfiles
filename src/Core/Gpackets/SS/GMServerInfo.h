@@ -42,8 +42,8 @@ typedef struct _ZONEUSERDATA
 class GMServerInfo : public DatagramPacket {
 
 public :
-	GMServerInfo() throw();
-	~GMServerInfo() throw();
+	GMServerInfo() ;
+	~GMServerInfo() ;
 	
     // Datagram 객체에서부터 데이타를 읽어서 패킷을 초기화한다.
     void read(Datagram & iDatagram) ;
@@ -77,9 +77,9 @@ public:
 	
 	BYTE getZoneUserCount(void)  { return m_ZoneCount; }
 
-	void addZoneUserData(ZoneID_t ZoneID, DWORD value) throw();
+	void addZoneUserData(ZoneID_t ZoneID, DWORD value) ;
 
-	void popZoneUserData(ZONEUSERDATA& rData) throw();
+	void popZoneUserData(ZONEUSERDATA& rData) ;
 
 	void clearList(void) throw() { m_ZoneCount = 0; m_ZoneUserList.clear(); }
 

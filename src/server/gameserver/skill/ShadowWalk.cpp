@@ -15,7 +15,7 @@
 #include "Gpackets/GCSkillToObjectOK6.h"
 #include "Gpackets/GCStatusCurrentHP.h"
 
-void ShadowWalk::execute(Slayer* pSlayer, ObjectID_t ObjectID, SkillSlot*  pSkillSlot, CEffectID_t CEffectID)	throw(Error)
+void ShadowWalk::execute(Slayer* pSlayer, ObjectID_t ObjectID, SkillSlot*  pSkillSlot, CEffectID_t CEffectID)	
 {
 	__BEGIN_TRY
 

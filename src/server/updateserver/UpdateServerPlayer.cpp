@@ -40,7 +40,7 @@ static int maxIdleSec         = 30; // 20√ 
 const int clientBufferSize = 1024;	
 
 UpdateServerPlayer::UpdateServerPlayer ( Socket * pSocket )
-	 throw ( Error )
+	 
 //: m_pSocket(pSocket), m_PlayerStatus(USPS_NONE)
 : m_PlayerStatus(USPS_NONE)
 {
@@ -74,7 +74,7 @@ UpdateServerPlayer::UpdateServerPlayer ( Socket * pSocket )
 //
 //--------------------------------------------------------------------------------
 UpdateServerPlayer::~UpdateServerPlayer ()
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -412,7 +412,7 @@ void UpdateServerPlayer::sendPacket ( Packet * pPacket )
 // disconnect player
 //--------------------------------------------------------------------------------
 void UpdateServerPlayer::disconnect ( bool bDisconnected )
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -440,7 +440,7 @@ void UpdateServerPlayer::disconnect ( bool bDisconnected )
 //
 //--------------------------------------------------------------------------------
 string UpdateServerPlayer::toString () const
-       throw ( Error )
+       
 {
 	__BEGIN_TRY
 		

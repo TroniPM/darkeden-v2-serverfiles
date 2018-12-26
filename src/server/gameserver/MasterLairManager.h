@@ -37,7 +37,7 @@ public :
 
 public:
 	MasterLairManager(Zone* pZone);
-	~MasterLairManager() throw();
+	~MasterLairManager() ;
 
 	MasterLairEvent getCurrentEvent() const { return m_Event; }
 
@@ -53,8 +53,8 @@ public:
 	void startEvent();
 	void stopEvent();
 
-	void lock() throw(Error) { m_Mutex.lock(); }
-    void ulnock() throw(Error) { m_Mutex.unlock(); }
+	void lock()  { m_Mutex.lock(); }
+    void ulnock()  { m_Mutex.unlock(); }
 
 	string toString() ;
 

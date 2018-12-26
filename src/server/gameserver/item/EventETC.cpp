@@ -46,7 +46,7 @@ EventETC::EventETC(ItemType_t itemType, const list<OptionType_t>& optionType, It
 }
 
 void EventETC::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -91,7 +91,7 @@ void EventETC::create(const string & ownerID, Storage storage, StorageID_t stora
 // save item
 //--------------------------------------------------------------------------------
 void EventETC::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -112,7 +112,7 @@ void EventETC::tinysave(const char* field) const
 }
 
 void EventETC::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -165,7 +165,7 @@ string EventETC::toString() const
 }
 
 VolumeWidth_t EventETC::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -175,7 +175,7 @@ VolumeWidth_t EventETC::getVolumeWidth() const
 }
 	
 VolumeHeight_t EventETC::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -185,7 +185,7 @@ VolumeHeight_t EventETC::getVolumeHeight() const
 }
 	
 Weight_t EventETC::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -215,7 +215,7 @@ string EventETCInfo::toString() const
 }
 
 void EventETCInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -270,7 +270,7 @@ void EventETCInfoManager::load()
 //////////////////////////////////////////////////////////////////////////////
 
 void EventETCLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -509,7 +509,7 @@ void EventETCLoader::load(Creature* pCreature)
 }
 
 void EventETCLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -573,7 +573,7 @@ void EventETCLoader::load(Zone* pZone)
 }
 
 void EventETCLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

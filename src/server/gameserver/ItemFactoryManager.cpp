@@ -170,7 +170,7 @@ ItemFactoryManager::~ItemFactoryManager ()
 //
 //////////////////////////////////////////////////////////////////////
 void ItemFactoryManager::init ()
-	 throw (Error)
+	 
 {
 	__BEGIN_TRY
 		

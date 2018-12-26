@@ -36,7 +36,7 @@ bool ConditionPcHasItems::isSatisfied (Creature * pCreature1 , Creature * pCreat
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionPcHasItems::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 	try
 	{

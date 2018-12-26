@@ -9,7 +9,7 @@
 #include "SimpleTileMissileSkill.h"
 #include "RankBonus.h"
 
-void RottenApple::execute(Slayer* pSlayer, ObjectID_t targetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) throw(Error)
+void RottenApple::execute(Slayer* pSlayer, ObjectID_t targetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID) 
 {
 	__BEGIN_TRY
 
@@ -32,7 +32,7 @@ void RottenApple::execute(Slayer* pSlayer, ObjectID_t targetObjectID, SkillSlot*
 }
 	
 void RottenApple::execute(Slayer * pSlayer, ZoneCoord_t X, ZoneCoord_t Y, SkillSlot * pSkillSlot, CEffectID_t CEffectID)
-	throw(Error)
+	
 {
 
 	__BEGIN_TRY

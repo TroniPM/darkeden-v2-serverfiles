@@ -105,7 +105,7 @@ void CommonBillingPacket::test ()
 }
 
 void CommonBillingPacket::setUser_CC() 
-	throw (Error)
+	
 { 
 	__BEGIN_TRY
 
@@ -236,7 +236,7 @@ void CommonBillingPacket::execute (Player* pPlayer)
 }
 
 void  CommonBillingPacket::setExpire_Date(const string& PlayerID)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	

@@ -26,12 +26,12 @@
 class ResurrectLocationManager
 {
 public:
-	ResurrectLocationManager() throw();
-	~ResurrectLocationManager() throw();
+	ResurrectLocationManager() ;
+	~ResurrectLocationManager() ;
 
 public:
-	void init() throw();
-	void load() throw();
+	void init() ;
+	void load() ;
 
 public:
 	bool getSlayerPosition(ZoneID_t id, ZONE_COORD& zoneCoord) ;//NoSuchElementException);

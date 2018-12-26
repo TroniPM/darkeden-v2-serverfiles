@@ -23,7 +23,7 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_SLAYER_RELIC; }
 
-	void affect() throw(Error) {}
+	void affect()  {}
 	void affect(Creature* pCreature);
 	void affect(Item* pItem);
 

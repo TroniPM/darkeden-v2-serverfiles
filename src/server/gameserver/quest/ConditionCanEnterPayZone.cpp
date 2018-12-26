@@ -54,7 +54,7 @@ bool ConditionCanEnterPayZone::isSatisfied (Creature * pCreature1 , Creature * p
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionCanEnterPayZone::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 }
 

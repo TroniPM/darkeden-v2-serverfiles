@@ -30,13 +30,13 @@ class ZoneGroupThread : public Thread {
 public:
 
 	// constructor
-	ZoneGroupThread(ZoneGroup* pZoneGroup) throw();
+	ZoneGroupThread(ZoneGroup* pZoneGroup) ;
 
 	// destructor
-	~ZoneGroupThread() throw();
+	~ZoneGroupThread() ;
 
 	// main method
-	void run() throw();
+	void run() ;
 
 	// get debug string
 	string toString() ;

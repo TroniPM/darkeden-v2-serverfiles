@@ -29,10 +29,10 @@ class GCSkillToInventoryOK2 : public Packet {
 public :
 	
 	// constructor
-	GCSkillToInventoryOK2() throw();
+	GCSkillToInventoryOK2() ;
 	
 	// destructor
-	~GCSkillToInventoryOK2() throw();
+	~GCSkillToInventoryOK2() ;
 
 	
 public :

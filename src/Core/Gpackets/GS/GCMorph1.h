@@ -32,10 +32,10 @@ class GCMorph1 : public Packet {
 public :
 
 	// constructor
-	GCMorph1() throw();
+	GCMorph1() ;
 
 	// destructor
-	~GCMorph1() throw();
+	~GCMorph1() ;
 	
     // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
     void read(SocketInputStream & iStream) ;
@@ -76,19 +76,19 @@ public :
 
 	// get/set PC info
 	PCInfo* getPCInfo2()  { return m_pPCInfo; }
-	void setPCInfo2(PCInfo* pPCInfo) throw(Error) { m_pPCInfo = pPCInfo; }
+	void setPCInfo2(PCInfo* pPCInfo)  { m_pPCInfo = pPCInfo; }
 
 	// get/set Inventory Info
 	InventoryInfo* getInventoryInfo()  { return m_pInventoryInfo; }
-	void setInventoryInfo(InventoryInfo* pInventoryInfo) throw(Error) { m_pInventoryInfo = pInventoryInfo; }
+	void setInventoryInfo(InventoryInfo* pInventoryInfo)  { m_pInventoryInfo = pInventoryInfo; }
 
 	// get/set Gear Info
 	GearInfo* getGearInfo()  { return m_pGearInfo; }
-	void setGearInfo(GearInfo* pGearInfo) throw(Error) { m_pGearInfo = pGearInfo; }
+	void setGearInfo(GearInfo* pGearInfo)  { m_pGearInfo = pGearInfo; }
 
 	// get/set ExtraInfo
 	ExtraInfo* getExtraInfo()  { return m_pExtraInfo; }
-	void setExtraInfo(ExtraInfo* pExtraInfo) throw(Error) { m_pExtraInfo = pExtraInfo; }
+	void setExtraInfo(ExtraInfo* pExtraInfo)  { m_pExtraInfo = pExtraInfo; }
 
 //--------------------------------------------------
 // data members

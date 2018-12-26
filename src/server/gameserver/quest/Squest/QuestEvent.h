@@ -19,8 +19,8 @@ public :
 	};
 
 public :
-	QuestEvent() throw (Error) {}
-	virtual ~QuestEvent() throw (Error) {}
+	QuestEvent()  {}
+	virtual ~QuestEvent()  {}
 
 	virtual QuestEventType	getQuestEventType() const = 0;
 };

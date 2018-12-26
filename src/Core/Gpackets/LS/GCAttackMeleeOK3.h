@@ -28,10 +28,10 @@ class GCAttackMeleeOK3 : public Packet {
 public :
 	
 	// constructor
-	GCAttackMeleeOK3() throw();
+	GCAttackMeleeOK3() ;
 	
 	// destructor
-	~GCAttackMeleeOK3() throw();
+	~GCAttackMeleeOK3() ;
 
 	
 public :

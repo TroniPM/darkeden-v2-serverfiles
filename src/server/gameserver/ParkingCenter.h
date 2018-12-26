@@ -22,8 +22,8 @@
 class MotorcycleBox 
 {
 public:
-	MotorcycleBox(Motorcycle* pMotorcycle, Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y) throw();
-	virtual ~MotorcycleBox() throw();
+	MotorcycleBox(Motorcycle* pMotorcycle, Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y) ;
+	virtual ~MotorcycleBox() ;
 
 public:
 	Motorcycle* getMotorcycle() throw() { return m_pMotorcycle; }
@@ -64,8 +64,8 @@ private:
 class ParkingCenter 
 {
 public: 
-	ParkingCenter() throw();
-	virtual ~ParkingCenter() throw();
+	ParkingCenter() ;
+	virtual ~ParkingCenter() ;
 	
 public:
 	void addMotorcycleBox(MotorcycleBox* pMotorcycleBox) throw(DuplicatedException, Error);

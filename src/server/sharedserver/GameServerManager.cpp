@@ -23,7 +23,7 @@
 //////////////////////////////////////////////////////////////////////////////
 
 GameServerManager::GameServerManager () 
-	throw (Error)
+	
 : m_pServerSocket(NULL), m_SocketID(INVALID_SOCKET), m_MinFD(-1), m_MaxFD(-1)
 {
 	__BEGIN_TRY
@@ -68,7 +68,7 @@ GameServerManager::GameServerManager ()
 //////////////////////////////////////////////////////////////////////////////
 
 GameServerManager::~GameServerManager () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -80,7 +80,7 @@ GameServerManager::~GameServerManager ()
 //////////////////////////////////////////////////////////////////////////////
 
 void GameServerManager::init ()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -161,7 +161,7 @@ void GameServerManager::run()
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void GameServerManager::broadcast (Packet* pPacket)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -188,7 +188,7 @@ void GameServerManager::broadcast (Packet* pPacket)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void GameServerManager::broadcast (Packet* pPacket, Player* pPlayer)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -584,7 +584,7 @@ void GameServerManager::processExceptions ()
 // select 기반에서는 nonblocking 소켓을 사용하지 않는다.
 //////////////////////////////////////////////////////////////////////////////
 void GameServerManager::acceptNewConnection ()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -775,7 +775,7 @@ void GameServerManager::deleteGameServerPlayer(SOCKET fd)
 }
 
 void GameServerManager::heartbeat()
-	throw(Error) 
+	 
 {
 	__BEGIN_TRY
 

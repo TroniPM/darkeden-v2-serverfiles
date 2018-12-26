@@ -53,7 +53,7 @@ Creature::Creature (ObjectID_t objectID , Player* pPlayer)
 // Destructor
 //////////////////////////////////////////////////////////////////////////////
 Creature::~Creature () 
-    throw (Error)
+    
 {
 	__BEGIN_TRY
 
@@ -77,7 +77,7 @@ Creature::~Creature ()
 // 크리처의 경우, 이동 모드에 따라서 이 우선순위가 결정된다.
 //////////////////////////////////////////////////////////////////////////////
 ObjectPriority Creature::getObjectPriority () const
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -96,7 +96,7 @@ ObjectPriority Creature::getObjectPriority () const
 // vision state 관련 메쏘드
 //////////////////////////////////////////////////////////////////////////////
 VisionState Creature::getVisionState (ZoneCoord_t x , ZoneCoord_t y) 
-	throw (Error)
+	
 {
 	__BEGIN_DEBUG
 
@@ -110,7 +110,7 @@ VisionState Creature::getVisionState (ZoneCoord_t x , ZoneCoord_t y)
 }
 
 VisionState Creature::getVisionState (Coord_t x , Coord_t y, Sight_t sight) 
-	throw (Error)
+	
 {
 	__BEGIN_DEBUG
 
@@ -144,7 +144,7 @@ ZoneID_t Creature::getNewZoneID () const
 // (4) ZoneGroup 에서 ZoneID 를 사용해서 Zone 에 접근한다.
 //////////////////////////////////////////////////////////////////////////////
 void Creature::setZoneID (ZoneID_t zoneID)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -178,7 +178,7 @@ void Creature::setZoneID (ZoneID_t zoneID)
 // (nx,ny)로 이동할 수 있는가?
 //////////////////////////////////////////////////////////////////////////////
 bool Creature::canMove (ZoneCoord_t nx , ZoneCoord_t ny) const
-	throw (Error)
+	
 {
 	Assert(m_pZone != NULL);
 
@@ -236,7 +236,7 @@ bool Creature::canMove (ZoneCoord_t nx , ZoneCoord_t ny) const
 // (nx,ny)이 맵에 의해 막히는가?
 //////////////////////////////////////////////////////////////////////////////
 bool Creature::isBlockedByCreature (ZoneCoord_t nx , ZoneCoord_t ny) const
-	throw (Error)
+	
 {
 	Assert(m_pZone != NULL);
 
@@ -306,7 +306,7 @@ Distance_t Creature::getDistance (ZoneCoord_t x1 , ZoneCoord_t y1) const
 }
 
 bool Creature::isEffect(Effect::EffectClass EClass) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	
@@ -317,7 +317,7 @@ bool Creature::isEffect(Effect::EffectClass EClass)
 }
 
 void Creature::deleteEffect(Effect::EffectClass EClass) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -328,7 +328,7 @@ void Creature::deleteEffect(Effect::EffectClass EClass)
 }
 
 Effect* Creature::findEffect(Effect::EffectClass EClass) const
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -339,7 +339,7 @@ Effect* Creature::findEffect(Effect::EffectClass EClass) const
 }
 
 void Creature::addEffect(Effect* pEffect) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

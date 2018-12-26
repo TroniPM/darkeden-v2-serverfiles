@@ -17,8 +17,8 @@
 class OustersEXPInfo 
 {
 public:
-	OustersEXPInfo() throw();
-	~OustersEXPInfo() throw();
+	OustersEXPInfo() ;
+	~OustersEXPInfo() ;
 
 public:
 	void setLevel(uint lev) throw() { m_Level = lev; }
@@ -50,8 +50,8 @@ private:
 class OustersEXPInfoManager 
 {
 public:
-	OustersEXPInfoManager() throw();
-	~OustersEXPInfoManager() throw();
+	OustersEXPInfoManager() ;
+	~OustersEXPInfoManager() ;
 
 public:
 	void init();

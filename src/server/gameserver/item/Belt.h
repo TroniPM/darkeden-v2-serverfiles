@@ -23,9 +23,9 @@
 class Belt : public ConcreteItem <Item::ITEM_CLASS_BELT, NoStack, HasDurability, HasOption, GroceryGrade, NoAttacking, HasEnchantLevel,HasOption2, HasHeroOption, HasHeroOptionAttr>
 {
 public:
-	Belt() throw();
+	Belt() ;
 	Belt(ItemType_t itemType, const list<OptionType_t>& optionType);
-	~Belt() throw();
+	~Belt() ;
 
 public:
 	virtual void create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID=0);
@@ -35,7 +35,7 @@ public:
 	void tinysave(const char* field) ;
 	virtual string toString() ;
 
-	static void initItemIDRegistry(void) throw();
+	static void initItemIDRegistry(void) ;
 
 public:
 //	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_BELT; }
@@ -60,7 +60,7 @@ public:
 	virtual Weight_t getWeight() ;
 
 	virtual Durability_t getDurability()  { return m_Durability; }
-	void setDurability(Durability_t durability) throw(Error) { m_Durability = durability; }
+	void setDurability(Durability_t durability)  { m_Durability = durability; }
 */
 	void setInventory(Inventory* pInventory) throw() { m_pInventory = pInventory; }
 	Inventory* getInventory()  { return m_pInventory; }

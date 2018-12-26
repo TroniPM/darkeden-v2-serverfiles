@@ -231,7 +231,7 @@ MotorcycleBox* ParkingCenter::getMotorcycleBox (ItemID_t keyTargetID) const
 
 // 이건  ClientManager thread에서 돌아간다.
 void ParkingCenter::heartbeat()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

@@ -11,7 +11,7 @@
 // constructor / destructor
 //--------------------------------------------------------------------------------
 QuestFactoryManager::QuestFactoryManager() 
-	throw (Error)
+	
 {
 	for (int i=0; i<Quest::QUEST_MAX; i++)
 		m_pQuestFactories[i] = NULL;
@@ -20,7 +20,7 @@ QuestFactoryManager::QuestFactoryManager()
 }
 
 QuestFactoryManager::~QuestFactoryManager() 
-	throw (Error)
+	
 {
 	for (int i=0; i<Quest::QUEST_MAX; i++)
 		SAFE_DELETE(m_pQuestFactories[i]);
@@ -31,7 +31,7 @@ QuestFactoryManager::~QuestFactoryManager()
 //--------------------------------------------------------------------------------
 void			
 QuestFactoryManager::addFactory(QuestFactory* pQuestFactory) 
-	throw (Error)
+	
 {
 	Assert(pQuestFactory!=NULL);
 	Assert(pQuestFactory->getQuestType() < Quest::QUEST_MAX);
@@ -45,7 +45,7 @@ QuestFactoryManager::addFactory(QuestFactory* pQuestFactory)
 //--------------------------------------------------------------------------------
 Quest*		
 QuestFactoryManager::create(Quest::QuestType qptype, const QuestCreateInfo* qcInfo) const 
-	throw(Error)
+	
 {
 	Assert(qptype<Quest::QUEST_MAX);
 

@@ -21,7 +21,7 @@ public:
 public:
     EffectClass getEffectClass()  { return m_EffectClass; }
 
-	void affect() throw(Error){}
+	void affect() {}
 
 	void unaffect(Creature* pCreature);
 	void unaffect();

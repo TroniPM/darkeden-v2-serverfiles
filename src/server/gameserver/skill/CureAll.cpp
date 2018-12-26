@@ -33,7 +33,7 @@ const uint CureAllBloodDrainLevel = 75;
 // 슬레이어 오브젝트 핸들러
 //////////////////////////////////////////////////////////////////////////////
 void CureAll::execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -404,7 +404,7 @@ void CureAll::execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSk
 // 슬레이어 셀프 핸들러
 //////////////////////////////////////////////////////////////////////////////
 void CureAll::execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -722,7 +722,7 @@ void CureAll::execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffec
 }
 
 void CureAll::execute(Monster* pMonster, Creature* pTargetCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

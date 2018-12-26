@@ -94,7 +94,7 @@ SkillDomainInfoManager::~SkillDomainInfoManager()
 //
 //--------------------------------------------------------------------
 void SkillDomainInfoManager::init ()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -172,7 +172,7 @@ DomainInfo* SkillDomainInfoManager::getDomainInfo (SkillDomain DomainType, Level
 // get item info
 //--------------------------------------------------------------------------------
 void SkillDomainInfoManager::addDomainInfo(DomainInfo* pDomainInfo) const 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

@@ -46,7 +46,7 @@ Key::Key(ItemType_t itemType, const list<OptionType_t>& optionType)
 // create item
 //--------------------------------------------------------------------------------
 void Key::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -94,7 +94,7 @@ void Key::create(const string & ownerID, Storage storage, StorageID_t storageID,
 // save item
 //--------------------------------------------------------------------------------
 void Key::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -118,7 +118,7 @@ void Key::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void Key::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -155,7 +155,7 @@ void Key::save(const string & ownerID, Storage storage, StorageID_t storageID, B
 	__END_CATCH
 }
 
-ItemID_t Key::setNewMotorcycle(Slayer* pSlayer) throw(Error)
+ItemID_t Key::setNewMotorcycle(Slayer* pSlayer) 
 {
 	__BEGIN_TRY
 
@@ -232,7 +232,7 @@ string Key::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t Key::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -246,7 +246,7 @@ VolumeWidth_t Key::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t Key::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -260,7 +260,7 @@ VolumeHeight_t Key::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t Key::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -296,7 +296,7 @@ string KeyInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void KeyInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -353,7 +353,7 @@ void KeyInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void KeyLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -540,7 +540,7 @@ void KeyLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void KeyLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -607,7 +607,7 @@ void KeyLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void KeyLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

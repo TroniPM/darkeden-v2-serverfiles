@@ -21,8 +21,8 @@
 class Larva : public Item 
 {
 public:
-	Larva() throw();
-	Larva(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num) throw();
+	Larva() ;
+	Larva(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num) ;
 	
 public:
 	virtual void create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID=0);
@@ -35,7 +35,7 @@ public:
 	// get debug string
 	virtual string toString() ;
 
-	static void initItemIDRegistry(void) throw();
+	static void initItemIDRegistry(void) ;
 
 public:
 	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_LARVA; }
@@ -101,7 +101,7 @@ public:
 	int getHPRecoveryUnit(void)  { return m_HPRecoveryUnit; }
 	int getMPRecoveryUnit(void)  { return m_MPRecoveryUnit; }
 
-	void parseEffect(const string& effect) throw();
+	void parseEffect(const string& effect) ;
 
 	// toString
 	virtual string toString() ;

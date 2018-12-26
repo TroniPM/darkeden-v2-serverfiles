@@ -18,8 +18,8 @@
 class EventHeadCount : public Event 
 {
 public:
-	EventHeadCount(GamePlayer* pGamePlayer) throw();
-	~EventHeadCount() throw();			
+	EventHeadCount(GamePlayer* pGamePlayer) ;
+	~EventHeadCount() ;			
 
 public:
 	virtual EventClass getEventClass()  { return EVENT_CLASS_HEAD_COUNT; }

@@ -49,7 +49,7 @@ CoatZap::CoatZap(ItemType_t itemType, const list<OptionType_t>& optionType)
 // create item
 //--------------------------------------------------------------------------------
 void CoatZap::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -101,7 +101,7 @@ void CoatZap::create(const string & ownerID, Storage storage, StorageID_t storag
 // save item
 //--------------------------------------------------------------------------------
 void CoatZap::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -125,7 +125,7 @@ void CoatZap::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void CoatZap::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -188,7 +188,7 @@ string CoatZap::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t CoatZap::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -202,7 +202,7 @@ VolumeWidth_t CoatZap::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t CoatZap::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -216,7 +216,7 @@ VolumeHeight_t CoatZap::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t CoatZap::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -230,7 +230,7 @@ Weight_t CoatZap::getWeight() const
 // get/set armor's Defense Bonus
 //--------------------------------------------------------------------------------
 Defense_t CoatZap::getDefenseBonus() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -239,7 +239,7 @@ Defense_t CoatZap::getDefenseBonus() const
 	__END_CATCH
 }
 Protection_t CoatZap::getProtectionBonus() const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -275,7 +275,7 @@ string CoatZapInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void CoatZapInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -332,7 +332,7 @@ void CoatZapInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void CoatZapLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -546,7 +546,7 @@ void CoatZapLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void CoatZapLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -619,7 +619,7 @@ void CoatZapLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void CoatZapLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

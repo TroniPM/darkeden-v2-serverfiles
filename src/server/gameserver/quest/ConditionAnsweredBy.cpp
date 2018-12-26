@@ -25,7 +25,7 @@ bool ConditionAnsweredBy::isSatisfied(Creature* pCreature1, Creature* pCreature2
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionAnsweredBy::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 	try
 	{

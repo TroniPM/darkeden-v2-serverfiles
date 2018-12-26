@@ -21,8 +21,8 @@
 class GCAddEffect : public Packet 
 {
 public:
-	GCAddEffect() throw();
-	~GCAddEffect() throw();
+	GCAddEffect() ;
+	~GCAddEffect() ;
 	
 public:
     void read(SocketInputStream & iStream) ;

@@ -21,8 +21,8 @@
 class GCTradeAddItem : public Packet 
 {
 public:
-	GCTradeAddItem() throw();
-	~GCTradeAddItem() throw();
+	GCTradeAddItem() ;
+	~GCTradeAddItem() ;
 	
 public:
 	void read(SocketInputStream & iStream) ;

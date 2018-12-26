@@ -33,7 +33,7 @@ EventKick::~EventKick()
 // affect
 //----------------------------------------------------------------------
 void EventKick::sendMessage()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -60,7 +60,7 @@ void EventKick::sendMessage()
 
 
 void EventKick::activate () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG

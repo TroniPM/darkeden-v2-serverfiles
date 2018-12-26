@@ -51,23 +51,23 @@ public :
 
 	// get/set socket's linger status
     uint getLinger ()  { return m_Impl->getLinger(); }
-    void setLinger (uint lingertime) throw (Error) { m_Impl->setLinger(lingertime); }
+    void setLinger (uint lingertime)  { m_Impl->setLinger(lingertime); }
  
     // get/set socket's reuse address status
     bool isReuseAddr ()  { return m_Impl->isReuseAddr(); }
-    void setReuseAddr (bool on = true) throw (Error) { m_Impl->setReuseAddr(on); }
+    void setReuseAddr (bool on = true)  { m_Impl->setReuseAddr(on); }
  
     // get/set socket's nonblocking status
     bool isNonBlocking ()  { return m_Impl->isNonBlocking(); }
-    void setNonBlocking (bool on = true) throw (Error) { m_Impl->setNonBlocking(on); }
+    void setNonBlocking (bool on = true)  { m_Impl->setNonBlocking(on); }
  
     // get/set receive buffer size
     uint getReceiveBufferSize ()  { return m_Impl->getReceiveBufferSize(); }
-    void setReceiveBufferSize (uint size) throw (Error) { m_Impl->setReceiveBufferSize(size); }
+    void setReceiveBufferSize (uint size)  { m_Impl->setReceiveBufferSize(size); }
  
     // get/set send buffer size
     uint getSendBufferSize ()  { return m_Impl->getSendBufferSize(); }
-    void setSendBufferSize (uint size) throw (Error) { m_Impl->setSendBufferSize(size); }
+    void setSendBufferSize (uint size)  { m_Impl->setSendBufferSize(size); }
  
 	SOCKET getSOCKET () throw () { return m_Impl->getSOCKET(); }
 

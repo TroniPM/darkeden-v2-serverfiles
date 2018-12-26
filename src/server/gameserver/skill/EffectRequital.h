@@ -23,7 +23,7 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_REQUITAL; }
 
-	void affect() throw(Error){}
+	void affect() {}
 
 	void unaffect();
 	void unaffect(Creature* pCreature);
@@ -49,7 +49,7 @@ public:
 	virtual string getEffectClassName()  { return "EffectRequital"; }
 
 public:
-	virtual void load(Creature* pCreature) throw(Error) {}
+	virtual void load(Creature* pCreature)  {}
 };
 
 

@@ -16,7 +16,7 @@
 class TornadoSever : public SkillHandler 
 {
 public:
-	TornadoSever() throw();
+	TornadoSever() ;
 	~TornadoSever() throw() {}
 	
 public:

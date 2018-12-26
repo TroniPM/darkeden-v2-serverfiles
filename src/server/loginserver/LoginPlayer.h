@@ -103,7 +103,7 @@ public :
 
 public :
 	int		getKickCharacterCount() 	{ return m_KickCharacterCount; }	
-	void 	setExpireTimeForKickCharacter() throw();
+	void 	setExpireTimeForKickCharacter() ;
 
 	// 현재 월드의 ID
 	WorldID_t getWorldID()  { return m_WorldID; }
@@ -140,11 +140,11 @@ public :
 	void makePCList( LCPCList& lcPCList ) throw( DisconnectException );
 
 public :
-	void sendLGKickCharacter() throw();
-	void sendLCLoginOK() throw();
+	void sendLGKickCharacter() ;
+	void sendLCLoginOK() ;
 
 public :
-	void    setBillingSession() throw (Error)   { BillingPlayerInfo::setBillingSession(this); }
+	void    setBillingSession()    { BillingPlayerInfo::setBillingSession(this); }
 	bool    sendBillingLogin();
 
 

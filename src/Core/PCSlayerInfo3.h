@@ -194,7 +194,7 @@ public:
 	void setObjectID (ObjectID_t creatureID) throw () { m_ObjectID = creatureID; }
 
 	string getName ()  { Assert(m_Name != ""); return m_Name; }
-	void setName (const string & name) throw (Error) { m_Name = name; Assert(m_Name != ""); }
+	void setName (const string & name)  { m_Name = name; Assert(m_Name != ""); }
 
 	Coord_t getX ()  { return m_X; }
 	void setX (Coord_t x) throw () { m_X = x; }

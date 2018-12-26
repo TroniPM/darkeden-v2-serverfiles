@@ -32,7 +32,7 @@ class GCAddVampire : public Packet
 public:
 	GCAddVampire() throw() : m_pEffectInfo(NULL), m_pPetInfo(NULL), m_pNicknameInfo(NULL) { m_FromFlag = 0; }
 	GCAddVampire(const PCVampireInfo3 & vampireInfo) throw() : m_VampireInfo(vampireInfo), m_pEffectInfo(NULL), m_pPetInfo(NULL), m_pNicknameInfo(NULL) { m_FromFlag = 0; }
-	virtual ~GCAddVampire() throw();
+	virtual ~GCAddVampire() ;
 	
 public:
     void read(SocketInputStream & iStream) ;

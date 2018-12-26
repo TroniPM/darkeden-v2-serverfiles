@@ -21,8 +21,8 @@
 class Bomb : public Item 
 {
 public:
-	Bomb() throw();
-	Bomb(ItemType_t itemType, const list<OptionType_t>& optionType) throw();
+	Bomb() ;
+	Bomb(ItemType_t itemType, const list<OptionType_t>& optionType) ;
 	
 public:
 	virtual void create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID=0);
@@ -31,7 +31,7 @@ public:
 	void tinysave(const char* field) ;
 	virtual string toString() ;
 
-	static void initItemIDRegistry(void) throw();
+	static void initItemIDRegistry(void) ;
 
 public:
 	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_BOMB; }
@@ -45,10 +45,10 @@ public:
 	virtual Weight_t getWeight() ;
 
 	Damage_t getDamage()  { return m_Damage;}
-	void setDamage(Damage_t D) throw(Error) { m_Damage = D;}
+	void setDamage(Damage_t D)  { m_Damage = D;}
 
 	//Dir_t getDir()  { return m_Dir;}
-	//void setDir(Dir_t R) throw(Error) { m_Dir = R;}
+	//void setDir(Dir_t R)  { m_Dir = R;}
 
 	virtual Damage_t getMinDamage() ;
 	virtual Damage_t getMaxDamage() ;

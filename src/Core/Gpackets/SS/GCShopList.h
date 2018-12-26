@@ -38,8 +38,8 @@ class Item;
 class GCShopList : public Packet 
 {
 public:
-	GCShopList() throw();
-	virtual ~GCShopList() throw();
+	GCShopList() ;
+	virtual ~GCShopList() ;
 
 public:
 	void read(SocketInputStream & iStream) ;
@@ -69,7 +69,7 @@ public:
 	SHOPLISTITEM getShopItem(BYTE index) ;
 
 #ifndef __GAME_CLIENT__
-	void setShopItem(BYTE index, const Item* pItem) throw();
+	void setShopItem(BYTE index, const Item* pItem) ;
 #endif
 
 	BYTE getNPCShopType(void) const { return m_ShopType; }

@@ -30,13 +30,13 @@ class Statement {
 public:
 	
 	// constructor
-	Statement() throw(); 
+	Statement() ; 
 
 	// constructor
     Statement(char * fmt, ...);
 
 	// destructor
-	~Statement() throw();
+	~Statement() ;
 
 public:
     

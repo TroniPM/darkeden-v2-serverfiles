@@ -36,7 +36,7 @@ public :
 	GCAddVampireFromBurrowing() throw() : m_pEffectInfo(NULL) {}
 	GCAddVampireFromBurrowing(const PCVampireInfo3 & vampireInfo) throw() : m_VampireInfo(vampireInfo), m_pEffectInfo(NULL) {}
 
-	virtual ~GCAddVampireFromBurrowing() throw();
+	virtual ~GCAddVampireFromBurrowing() ;
 
 	
 public :

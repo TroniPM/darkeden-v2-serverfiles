@@ -22,7 +22,7 @@
 // 슬레이어 셀프 핸들러
 //////////////////////////////////////////////////////////////////////////////
 void EaglesEye2::execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -166,7 +166,7 @@ void EaglesEye2::execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* 
 // 슬레이어 셀프 핸들러
 //////////////////////////////////////////////////////////////////////////////
 void EaglesEye2::execute(Slayer* pSlayer, SkillSlot* pSkillSlot, CEffectID_t CEffectID)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

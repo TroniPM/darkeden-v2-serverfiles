@@ -46,7 +46,7 @@ GameServerInfoManager::~GameServerInfoManager ()
 
 
 void GameServerInfoManager::init ()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -60,7 +60,7 @@ void GameServerInfoManager::init ()
 }
 
 void GameServerInfoManager::load ()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

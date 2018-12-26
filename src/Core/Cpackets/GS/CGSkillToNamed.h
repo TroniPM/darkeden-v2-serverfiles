@@ -26,10 +26,10 @@ class CGSkillToNamed : public Packet {
 public:
 	
 	// constructor
-	CGSkillToNamed() throw();
+	CGSkillToNamed() ;
 	
 	// destructor
-	~CGSkillToNamed() throw();
+	~CGSkillToNamed() ;
 
 	
 public:

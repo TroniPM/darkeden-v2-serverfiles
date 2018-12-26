@@ -29,10 +29,10 @@ class GCKnocksTargetBackOK1 : public ModifyInfo {
 public :
 	
 	// constructor
-	GCKnocksTargetBackOK1() throw();
+	GCKnocksTargetBackOK1() ;
 	
 	// destructor
-	~GCKnocksTargetBackOK1() throw();
+	~GCKnocksTargetBackOK1() ;
 
 	
 public :

@@ -22,7 +22,7 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_LIGHTNESS; }
 
-	void affect() throw(Error){}
+	void affect() {}
 
 	void unaffect();
 	void unaffect(Creature* pCreature);

@@ -23,12 +23,12 @@ class SlayerCorpse : public Corpse
 {
 public:
 	SlayerCorpse(Slayer* pSlayer);
-	virtual ~SlayerCorpse() throw();
+	virtual ~SlayerCorpse() ;
 
 public:
-	virtual void create(const string & ownerID, Storage storage, DWORD storageID, BYTE x, BYTE y, ItemID_t itemID=0) throw(Error) {}
-	virtual bool destroy() throw(Error) { return true; }
-	virtual void save(const string & ownerID, Storage storage, DWORD storageID, BYTE x, BYTE y) throw(Error) {}
+	virtual void create(const string & ownerID, Storage storage, DWORD storageID, BYTE x, BYTE y, ItemID_t itemID=0)  {}
+	virtual bool destroy()  { return true; }
+	virtual void save(const string & ownerID, Storage storage, DWORD storageID, BYTE x, BYTE y)  {}
 	void tinysave(const string & field)  { tinysave(field.c_str()); }
     void tinysave(const char* field)  {}
 

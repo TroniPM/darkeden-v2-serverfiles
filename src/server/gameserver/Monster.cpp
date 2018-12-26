@@ -99,7 +99,7 @@ const int RudolfSpeechMax = 10;
 // 몬스터 적 인식 관련 함수
 //////////////////////////////////////////////////////////////////////////////
 bool Monster::isRealEnemy(Creature* pEnemy)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -473,7 +473,7 @@ Monster::Monster (MonsterType_t monsterType)
 // destructor
 //////////////////////////////////////////////////////////////////////////////
 Monster::~Monster() 
-    throw (Error)
+    
 {
 	__BEGIN_TRY
 
@@ -546,7 +546,7 @@ MAlignment Monster::getAlignment () const
 // registerObject 
 //////////////////////////////////////////////////////////////////////////////
 void Monster::registerObject ()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -569,7 +569,7 @@ void Monster::registerObject ()
 // 하는 모든 몬스터를 iterating 해가면서 Monster::act() 메쏘드를 호출한다.
 //////////////////////////////////////////////////////////////////////////////
 void Monster::act(const Timeval& currentTime)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -834,7 +834,7 @@ void Monster::act(const Timeval& currentTime)
 }
 
 void Monster::actDeadAction(void) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -889,7 +889,7 @@ void Monster::actDeadAction(void)
 // PC가 몬스터를 공격할 때, 주변의 몬스터들에게도 addEnemy()를 호출해준다.
 //////////////////////////////////////////////////////////////////////////////
 void Monster::addEnemy (Creature* pCreature)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -1315,7 +1315,7 @@ void Monster::addEnemy (Creature* pCreature)
 // PC의 이동, 로그인시 설정된다.
 //////////////////////////////////////////////////////////////////////////////
 void Monster::addPotentialEnemy (Creature* pCreature)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1388,7 +1388,7 @@ void Monster::deleteEnemy (ObjectID_t enemyID)
 // Enemy 중에서 로그아웃한 PC 를 삭제한다.
 //////////////////////////////////////////////////////////////////////////////
 void Monster::verifyEnemies ()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1448,7 +1448,7 @@ void Monster::verifyEnemies ()
 // PRIMARY ENEMY 를 리턴한다.
 //////////////////////////////////////////////////////////////////////////////
 Creature* Monster::getPrimaryEnemy () const
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -1715,7 +1715,7 @@ void Monster::clearEnemyLimitTime() throw()
 }
 
 bool Monster::hasNextMonsterSummonInfo()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1733,7 +1733,7 @@ bool Monster::hasNextMonsterSummonInfo()
 }
 
 bool Monster::getMonsterSummonInfo(SUMMON_INFO2& summonInfo) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1881,7 +1881,7 @@ void Monster::removeBrain()
 }
 
 void Monster::deleteAllEnemy() 
-	throw(Error)
+	
 {
 	m_Enemies.clear();
 }

@@ -49,7 +49,7 @@ Larva::Larva(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_
 // create item
 //--------------------------------------------------------------------------------
 void Larva::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -102,7 +102,7 @@ void Larva::create(const string & ownerID, Storage storage, StorageID_t storageI
 // destroy
 //--------------------------------------------------------------------------------
 bool Larva::destroy() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -134,7 +134,7 @@ bool Larva::destroy()
 // save item
 //--------------------------------------------------------------------------------
 void Larva::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -158,7 +158,7 @@ void Larva::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void Larva::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -202,7 +202,7 @@ string Larva::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t Larva::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -216,7 +216,7 @@ VolumeWidth_t Larva::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t Larva::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -230,7 +230,7 @@ VolumeHeight_t Larva::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t Larva::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -408,7 +408,7 @@ string LarvaInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void LarvaInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -463,7 +463,7 @@ void LarvaInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void LarvaLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -685,7 +685,7 @@ void LarvaLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void LarvaLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -752,7 +752,7 @@ void LarvaLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void LarvaLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

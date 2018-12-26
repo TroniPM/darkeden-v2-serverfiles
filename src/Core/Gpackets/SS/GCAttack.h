@@ -29,10 +29,10 @@ class GCAttack : public Packet {
 public :
 	
 	// constructor
-	GCAttack() throw();
+	GCAttack() ;
 	
 	// destructor
-	~GCAttack() throw();
+	~GCAttack() ;
 
 	
 public :

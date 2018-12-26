@@ -13,7 +13,7 @@
 #include "GCSMSAddressList.h"
 
 void AddressUnit::read( SocketInputStream& iStream )
-	throw (ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -31,7 +31,7 @@ void AddressUnit::read( SocketInputStream& iStream )
 }
 
 void AddressUnit::write( SocketOutputStream& oStream ) const
-	throw (ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 

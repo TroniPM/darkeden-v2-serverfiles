@@ -92,8 +92,8 @@ public:
 	void broadcastPacket( Packet* pPacket ) const;
 
 public:
-	void	lock() throw (Error)		{ m_Mutex.lock(); }
-	void	unlock() throw (Error)		{ m_Mutex.unlock(); }
+	void	lock() 		{ m_Mutex.lock(); }
+	void	unlock() 		{ m_Mutex.unlock(); }
 
 protected:
 	void addPoleField( Zone* pZone, ZoneCoord_t left, ZoneCoord_t top, uint width, uint height, Race_t race, MonsterType_t type );

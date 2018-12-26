@@ -44,8 +44,8 @@ private:
 class CastleSkillInfoManager 
 {
 public:
-	CastleSkillInfoManager() throw();
-	~CastleSkillInfoManager() throw();
+	CastleSkillInfoManager() ;
+	~CastleSkillInfoManager() ;
 
 	typedef hash_map<SkillType_t, CastleSkillInfo*>		HashMapCastleSkillInfo;
 	typedef HashMapCastleSkillInfo::iterator			HashMapCastleSkillInfoItor;
@@ -53,7 +53,7 @@ public:
 
 public:
 
-	// void load() throw();
+	// void load() ;
 	void load();
 
 	void clear();

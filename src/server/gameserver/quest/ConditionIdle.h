@@ -30,7 +30,7 @@ public:
 		return pCreature1 != NULL && !pCreature1->isPC() && pCreature2 == NULL;
 	}
 
-	virtual void read(PropertyBuffer & propertyBuffer) throw(Error) {}
+	virtual void read(PropertyBuffer & propertyBuffer)  {}
 
 	virtual string toString()  { return "ConditionIdle"; }
 

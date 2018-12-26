@@ -14,7 +14,7 @@
 // load from database with NPC ID
 //////////////////////////////////////////////////////////////////////////////
 void ScriptManager::load (const string & ownerID) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	

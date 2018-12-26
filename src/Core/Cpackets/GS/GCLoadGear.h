@@ -25,8 +25,8 @@
 class GCLoadGear : public Packet 
 {
 public:
-	GCLoadGear() throw();
-	~GCLoadGear() throw();
+	GCLoadGear() ;
+	~GCLoadGear() ;
 	
 public:
     void read(SocketInputStream & iStream) ;
@@ -48,19 +48,19 @@ public:
 
 	// get/set Inventory Info
 	InventoryInfo* getInventoryInfo()  { return m_pInventoryInfo; }
-	void setInventoryInfo(InventoryInfo* pInventoryInfo) throw(Error) { m_pInventoryInfo = pInventoryInfo; }
+	void setInventoryInfo(InventoryInfo* pInventoryInfo)  { m_pInventoryInfo = pInventoryInfo; }
 
 	// get/set Gear Info
 	GearInfo* getGearInfo()  { return m_pGearInfo; }
-	void setGearInfo(GearInfo* pGearInfo) throw(Error) { m_pGearInfo = pGearInfo; }
+	void setGearInfo(GearInfo* pGearInfo)  { m_pGearInfo = pGearInfo; }
 
 	// get/set ExtraInfo
 	ExtraInfo* getExtraInfo()  { return m_pExtraInfo; }
-	void setExtraInfo(ExtraInfo* pExtraInfo) throw(Error) { m_pExtraInfo = pExtraInfo; }
+	void setExtraInfo(ExtraInfo* pExtraInfo)  { m_pExtraInfo = pExtraInfo; }
 
 	// get/set EffectInfo
 	EffectInfo* getEffectInfo()  { return m_pEffectInfo; }
-	void setEffectInfo(EffectInfo* pEffectInfo) throw(Error) { m_pEffectInfo = pEffectInfo; }
+	void setEffectInfo(EffectInfo* pEffectInfo)  { m_pEffectInfo = pEffectInfo; }
 
 	BloodBibleSignInfo*	getBloodBibleSignInfo() { return m_pBloodBibleSign; }
 	void	setBloodBibleSignInfo( BloodBibleSignInfo* pInfo ) { m_pBloodBibleSign = pInfo; }

@@ -22,7 +22,7 @@
 //
 //////////////////////////////////////////////////////////////////////
 CBillingServer::CBillingServer ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 	
@@ -41,7 +41,7 @@ CBillingServer::CBillingServer ()
 //
 //////////////////////////////////////////////////////////////////////
 CBillingServer::~CBillingServer ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 		
@@ -57,7 +57,7 @@ CBillingServer::~CBillingServer ()
 //
 //////////////////////////////////////////////////////////////////////
 void CBillingServer::init ()
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 
@@ -76,7 +76,7 @@ void CBillingServer::init ()
 //
 //////////////////////////////////////////////////////////////////////
 void CBillingServer::start ()
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 
@@ -103,7 +103,7 @@ void CBillingServer::start ()
 //
 //////////////////////////////////////////////////////////////////////
 void CBillingServer::stop ()
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 

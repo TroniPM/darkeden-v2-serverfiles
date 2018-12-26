@@ -109,9 +109,9 @@ public:
 public:
 
 	// clear list
-	void clear() throw();
+	void clear() ;
 
-	// void load() throw();
+	// void load() ;
 	void load();
 	
 	// get MonsterDropSetup

@@ -48,28 +48,28 @@ public :
 	void read (string & str, uint len);
 	void read (SerialDatagramPacket* & pPacket);
 
-	void read (char   & buf) throw (Error) { read((char*)&buf, szchar  ); }
-    void read (uchar  & buf) throw (Error) { read((char*)&buf, szuchar ); }
-    void read (short  & buf) throw (Error) { read((char*)&buf, szshort ); }
-    void read (ushort & buf) throw (Error) { read((char*)&buf, szushort); }
-    void read (int    & buf) throw (Error) { read((char*)&buf, szint   ); }
-    void read (uint   & buf) throw (Error) { read((char*)&buf, szuint  ); }
-    void read (long   & buf) throw (Error) { read((char*)&buf, szlong  ); }
-    void read (ulong  & buf) throw (Error) { read((char*)&buf, szulong ); }
+	void read (char   & buf)  { read((char*)&buf, szchar  ); }
+    void read (uchar  & buf)  { read((char*)&buf, szuchar ); }
+    void read (short  & buf)  { read((char*)&buf, szshort ); }
+    void read (ushort & buf)  { read((char*)&buf, szushort); }
+    void read (int    & buf)  { read((char*)&buf, szint   ); }
+    void read (uint   & buf)  { read((char*)&buf, szuint  ); }
+    void read (long   & buf)  { read((char*)&buf, szlong  ); }
+    void read (ulong  & buf)  { read((char*)&buf, szulong ); }
 
 	// write SerialDatagramPacket into datagram's internal buffer
 	void write (const char* buf, uint len);
 	void write (const string & buf);
 	void write (const SerialDatagramPacket* pPacket);
 
-	void write (char   buf) throw (Error) { write((char*)&buf, szchar  ); }
-    void write (uchar  buf) throw (Error) { write((char*)&buf, szuchar ); }
-    void write (short  buf) throw (Error) { write((char*)&buf, szshort ); }
-    void write (ushort buf) throw (Error) { write((char*)&buf, szushort); }
-    void write (int    buf) throw (Error) { write((char*)&buf, szint   ); }
-    void write (uint   buf) throw (Error) { write((char*)&buf, szuint  ); }
-    void write (long   buf) throw (Error) { write((char*)&buf, szlong  ); }
-    void write (ulong  buf) throw (Error) { write((char*)&buf, szulong ); }
+	void write (char   buf)  { write((char*)&buf, szchar  ); }
+    void write (uchar  buf)  { write((char*)&buf, szuchar ); }
+    void write (short  buf)  { write((char*)&buf, szshort ); }
+    void write (ushort buf)  { write((char*)&buf, szushort); }
+    void write (int    buf)  { write((char*)&buf, szint   ); }
+    void write (uint   buf)  { write((char*)&buf, szuint  ); }
+    void write (long   buf)  { write((char*)&buf, szlong  ); }
+    void write (ulong  buf)  { write((char*)&buf, szulong ); }
 
 	// get data
 	char* getData () throw () { return m_Data; }

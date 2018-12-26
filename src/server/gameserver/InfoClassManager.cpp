@@ -40,7 +40,7 @@ InfoClassManager::~InfoClassManager()
 // init
 //--------------------------------------------------------------------------------
 void InfoClassManager::init () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -153,7 +153,7 @@ void InfoClassManager::removeAllItemInfo()
 // get Random ItemType
 //--------------------------------------------------------------------------------
 ItemType_t  InfoClassManager::getRandomItemType() const
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

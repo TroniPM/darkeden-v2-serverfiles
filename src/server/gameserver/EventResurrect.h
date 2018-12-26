@@ -17,8 +17,8 @@
 class EventResurrect : public Event 
 {
 public:
-	EventResurrect(GamePlayer* pGamePlayer) throw();
-	~EventResurrect() throw();			
+	EventResurrect(GamePlayer* pGamePlayer) ;
+	~EventResurrect() ;			
 
 public:
 	virtual EventClass getEventClass()  { return EVENT_CLASS_RESURRECT; }

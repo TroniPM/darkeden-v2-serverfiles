@@ -29,10 +29,10 @@ class GCAttackArmsOK1 : public ModifyInfo {
 public :
 	
 	// constructor
-	GCAttackArmsOK1() throw();
+	GCAttackArmsOK1() ;
 	
 	// destructor
-	~GCAttackArmsOK1() throw();
+	~GCAttackArmsOK1() ;
 
 	
 public :

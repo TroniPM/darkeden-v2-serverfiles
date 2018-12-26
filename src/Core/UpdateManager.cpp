@@ -46,7 +46,7 @@ UpdateManager::~UpdateManager ()
 // load from update file
 //--------------------------------------------------------------------------------
 void UpdateManager::load ( const string & filename ) 
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -87,7 +87,7 @@ void UpdateManager::load ( const string & filename )
 // save to update file
 //--------------------------------------------------------------------------------
 void UpdateManager::save ( const string & filename ) const 
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -185,7 +185,7 @@ void UpdateManager::write ( Socket * pSocket ) const
 // get resource manager
 //--------------------------------------------------------------------------------
 ResourceManager * UpdateManager::getResourceManager ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 

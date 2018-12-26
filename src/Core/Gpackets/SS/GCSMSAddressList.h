@@ -38,8 +38,8 @@ struct AddressUnit
 class GCSMSAddressList : public Packet 
 {
 public:
-	GCSMSAddressList() throw();
-	~GCSMSAddressList() throw();
+	GCSMSAddressList() ;
+	~GCSMSAddressList() ;
 	
 public:
 	void read(SocketInputStream & iStream) ;

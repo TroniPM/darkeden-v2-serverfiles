@@ -27,10 +27,10 @@ class GCSelectRankBonusOK : public Packet {
 public :
 	
 	// constructor
-	GCSelectRankBonusOK() throw();
+	GCSelectRankBonusOK() ;
 	
 	// destructor
-	~GCSelectRankBonusOK() throw();
+	~GCSelectRankBonusOK() ;
 
 	
 public :

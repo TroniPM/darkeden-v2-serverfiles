@@ -17,8 +17,8 @@
 class EventMorph : public Event 
 {
 public:
-	EventMorph(GamePlayer* pGamePlayer) throw();
-	~EventMorph() throw();
+	EventMorph(GamePlayer* pGamePlayer) ;
+	~EventMorph() ;
 			
 public:
 	virtual EventClass getEventClass()  { return EVENT_CLASS_MORPH; }

@@ -48,7 +48,7 @@ public:
 	void					setMaxOustersLevel(const Level_t level)	{ m_OustersLevelMax = level; }
 
 	const list<ZoneID_t>& 	getZoneIDList()  { return m_LevelWarBonusZoneIDList; }
-	void					setZoneIDList( const string& zoneIDs )	throw();
+	void					setZoneIDList( const string& zoneIDs )	;
 
 	bool 					isBonusZone(ZoneID_t targetZoneID) ;
 
@@ -89,8 +89,8 @@ public:
 	void init();
 	void load();
 
-	void lock() throw(Error) { m_Mutex.lock(); }
-	void unlock() throw(Error) { m_Mutex.unlock(); }
+	void lock()  { m_Mutex.lock(); }
+	void unlock()  { m_Mutex.unlock(); }
 
 	void addLevelWarZoneInfo( LevelWarZoneInfo* pLevelWarZoneInfo );
 	int getCreatureLevelGrade( Creature* pCreature );

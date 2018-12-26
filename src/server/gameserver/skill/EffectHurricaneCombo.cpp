@@ -15,7 +15,7 @@
 #include "Gpackets/GCOtherModifyInfo.h"
 
 EffectHurricaneCombo::EffectHurricaneCombo(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -25,21 +25,21 @@ EffectHurricaneCombo::EffectHurricaneCombo(Creature* pCreature)
 }
 
 void EffectHurricaneCombo::affect(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void EffectHurricaneCombo::affect(Zone* pZone , ZoneCoord_t x , ZoneCoord_t y , Object* pObject)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void EffectHurricaneCombo::unaffect() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY	
 
@@ -50,7 +50,7 @@ void EffectHurricaneCombo::unaffect()
 }
 
 void EffectHurricaneCombo::unaffect(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -89,7 +89,7 @@ void EffectHurricaneCombo::unaffect(Creature* pCreature)
 }
 
 void EffectHurricaneCombo::unaffect(Zone* pZone , ZoneCoord_t x , ZoneCoord_t y , Object* pObject)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH

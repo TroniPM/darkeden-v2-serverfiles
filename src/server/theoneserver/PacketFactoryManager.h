@@ -38,13 +38,13 @@ public :
 	void addFactory (PacketFactory* pFactory);
 	
 	// 패킷아이디로 패킷객체를 생성한다.
-	Packet* createPacket (PacketID_t packetID) throw (InvalidProtocolException, Error);
+	Packet* createPacket (PacketID_t packetID) ;
 
 	// 특정 패킷의 최대 크기를 리턴한다.
-	string getPacketName (PacketID_t packetID) throw (InvalidProtocolException, Error);
+	string getPacketName (PacketID_t packetID) ;
 
 	// 특정 패킷의 최대 크기를 리턴한다.
-	PacketSize_t getPacketMaxSize (PacketID_t packetID) throw (InvalidProtocolException, Error);
+	PacketSize_t getPacketMaxSize (PacketID_t packetID) ;
 
 	// get debug string
 	string toString () ;

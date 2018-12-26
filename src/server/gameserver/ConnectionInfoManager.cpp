@@ -176,7 +176,7 @@ ConnectionInfo* ConnectionInfoManager::getConnectionInfo (const string& clientIP
 // expire 된 Connection Info 객체를 삭제한다.
 //////////////////////////////////////////////////////////////////////////////
 void ConnectionInfoManager::heartbeat ()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

@@ -50,7 +50,7 @@ Pupa::Pupa(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t 
 // create item
 //--------------------------------------------------------------------------------
 void Pupa::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -103,7 +103,7 @@ void Pupa::create(const string & ownerID, Storage storage, StorageID_t storageID
 // destroy
 //--------------------------------------------------------------------------------
 bool Pupa::destroy() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -135,7 +135,7 @@ bool Pupa::destroy()
 // save item
 //--------------------------------------------------------------------------------
 void Pupa::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -159,7 +159,7 @@ void Pupa::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void Pupa::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -203,7 +203,7 @@ string Pupa::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t Pupa::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -217,7 +217,7 @@ VolumeWidth_t Pupa::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t Pupa::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -231,7 +231,7 @@ VolumeHeight_t Pupa::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t Pupa::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -409,7 +409,7 @@ string PupaInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void PupaInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -464,7 +464,7 @@ void PupaInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void PupaLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -689,7 +689,7 @@ void PupaLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void PupaLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -756,7 +756,7 @@ void PupaLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void PupaLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

@@ -45,7 +45,7 @@ SlayerPortalItem::SlayerPortalItem(ItemType_t itemType, const list<OptionType_t>
 }
 
 void SlayerPortalItem::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -88,7 +88,7 @@ void SlayerPortalItem::create(const string & ownerID, Storage storage, StorageID
 // save item
 //--------------------------------------------------------------------------------
 void SlayerPortalItem::tinysave(const char* field) const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -109,7 +109,7 @@ void SlayerPortalItem::tinysave(const char* field) const
 }
 
 void SlayerPortalItem::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -146,7 +146,7 @@ void SlayerPortalItem::save(const string & ownerID, Storage storage, StorageID_t
 }
 
 VolumeWidth_t SlayerPortalItem::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -156,7 +156,7 @@ VolumeWidth_t SlayerPortalItem::getVolumeWidth() const
 }
 	
 VolumeHeight_t SlayerPortalItem::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -166,7 +166,7 @@ VolumeHeight_t SlayerPortalItem::getVolumeHeight() const
 }
 	
 Weight_t SlayerPortalItem::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -209,7 +209,7 @@ int SlayerPortalItem::getMaxCharge(void) const
 //////////////////////////////////////////////////////////////////////////////
 
 void SlayerPortalItemInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -285,7 +285,7 @@ string SlayerPortalItemInfo::toString() const
 //////////////////////////////////////////////////////////////////////////////
 
 void SlayerPortalItemLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -448,7 +448,7 @@ void SlayerPortalItemLoader::load(Creature* pCreature)
 }
 
 void SlayerPortalItemLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -505,7 +505,7 @@ void SlayerPortalItemLoader::load(Zone* pZone)
 }
 
 void SlayerPortalItemLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH

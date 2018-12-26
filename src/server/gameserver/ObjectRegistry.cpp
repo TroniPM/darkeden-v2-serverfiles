@@ -34,13 +34,13 @@ void ObjectRegistry::registerObject_NOLOCKED(Object* pObject)
 }
 
 void ObjectRegistry::lock() 
-	throw(Error) 
+	 
 { 
 	m_Mutex.lock(); 
 }
 
 void ObjectRegistry::unlock() 
-	throw(Error) 
+	 
 { 
 	m_Mutex.unlock(); 
 }

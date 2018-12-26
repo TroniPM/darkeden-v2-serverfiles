@@ -31,8 +31,8 @@ public:
 		FAIL,			// 퀘스트가 실패했음
 	};
 
-	GCGQuestStatusModify() throw();
-	~GCGQuestStatusModify() throw();
+	GCGQuestStatusModify() ;
+	~GCGQuestStatusModify() ;
 	
 public:
     void read(SocketInputStream & iStream) throw(ProtocolException, Error) { iStream.read(m_Type); m_pInfo = new QuestStatusInfo(0); m_pInfo->read(iStream); }

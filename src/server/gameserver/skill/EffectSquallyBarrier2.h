@@ -22,7 +22,7 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_SQUALLY_BARRIER2; }
 
-	void affect() throw(Error){}
+	void affect() {}
 
 	void unaffect(Creature* pCreature);
 	void unaffect();
@@ -31,7 +31,7 @@ public:
 
 public:
 	Level_t getLevel()  { return m_Level; }
-	void setLevel(Level_t Level) throw();
+	void setLevel(Level_t Level) ;
 
 	EffectClass getClientEffectClass()  { return m_ClientEffectClass; }
 	void setClientEffectClass(EffectClass effectClass) throw() { m_ClientEffectClass = effectClass; }
@@ -53,7 +53,7 @@ public:
 	virtual string getEffectClassName()  { return "EffectSquallyBarrier2"; }
 
 public:
-	virtual void load(Creature* pCreature) throw(Error) {}
+	virtual void load(Creature* pCreature)  {}
 };
 
 

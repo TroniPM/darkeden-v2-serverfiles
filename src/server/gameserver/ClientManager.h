@@ -26,7 +26,7 @@ public:
 public:
 	void init();
 
-	void start() throw(Error) { run(); }
+	void start()  { run(); }
 
 	void stop();
 

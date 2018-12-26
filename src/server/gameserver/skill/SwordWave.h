@@ -16,7 +16,7 @@
 class SwordWave : public SkillHandler 
 {
 public:
-	SwordWave() throw();
+	SwordWave() ;
 	~SwordWave() throw() {}
 	
 public:

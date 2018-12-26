@@ -21,7 +21,7 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_SKILL_SATELLITE_BOMB_POINT2; }
 
-	void affect() throw(Error){}
+	void affect() {}
 
 	void unaffect();
 

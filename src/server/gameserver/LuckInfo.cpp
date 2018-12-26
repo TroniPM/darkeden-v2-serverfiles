@@ -42,7 +42,7 @@ LuckInfoManager::~LuckInfoManager()
 }
 
 void LuckInfoManager::init()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

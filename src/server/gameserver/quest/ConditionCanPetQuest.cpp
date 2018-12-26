@@ -46,7 +46,7 @@ bool ConditionCanPetQuest::isSatisfied (Creature * pCreature1 , Creature * pCrea
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionCanPetQuest::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 }
 

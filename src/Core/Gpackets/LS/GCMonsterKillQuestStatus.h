@@ -21,8 +21,8 @@
 class GCMonsterKillQuestStatus : public Packet 
 {
 public:
-	GCMonsterKillQuestStatus() throw();
-	~GCMonsterKillQuestStatus() throw();
+	GCMonsterKillQuestStatus() ;
+	~GCMonsterKillQuestStatus() ;
 	
 public:
     void read(SocketInputStream & iStream) ;

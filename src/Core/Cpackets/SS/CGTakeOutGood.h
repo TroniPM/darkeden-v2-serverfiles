@@ -17,8 +17,8 @@
 class CGTakeOutGood : public Packet 
 {
 public:
-	CGTakeOutGood() throw();
-	~CGTakeOutGood() throw();
+	CGTakeOutGood() ;
+	~CGTakeOutGood() ;
 
 public:
     void read(SocketInputStream & iStream) ;

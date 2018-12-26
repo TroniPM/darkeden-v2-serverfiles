@@ -23,8 +23,8 @@
 class StoneAbility : public ConcreteItem<Item::ITEM_CLASS_STONE_ABILITY, NoStack, HasDurability, HasOption, ClothGrade, NoAttacking,  NoEnchantLevel, HasOption2, HasHeroOption, HasHeroOptionAttr>
 {
 public:
-	StoneAbility() throw();
-	StoneAbility(ItemType_t itemType, const list<OptionType_t>& optionType) throw();
+	StoneAbility() ;
+	StoneAbility(ItemType_t itemType, const list<OptionType_t>& optionType) ;
 	
 public:
 	virtual void create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID=0);
@@ -33,7 +33,7 @@ public:
 	void tinysave(const char* field) ;
 	virtual string toString() ;
 
-	static void initItemIDRegistry(void) throw();
+	static void initItemIDRegistry(void) ;
 
 public:
 	virtual ElementalType getElementalType() const;

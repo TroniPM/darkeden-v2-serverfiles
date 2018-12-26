@@ -19,7 +19,7 @@
 
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
-EffectPenetrateWheel::EffectPenetrateWheel(Creature* pCreature) throw(Error)
+EffectPenetrateWheel::EffectPenetrateWheel(Creature* pCreature) 
 {
 	__BEGIN_TRY
 
@@ -29,7 +29,7 @@ EffectPenetrateWheel::EffectPenetrateWheel(Creature* pCreature) throw(Error)
 	__END_CATCH
 }
 
-void EffectPenetrateWheel::affect() throw(Error)
+void EffectPenetrateWheel::affect() 
 {
 	__BEGIN_TRY
 
@@ -45,7 +45,7 @@ void EffectPenetrateWheel::affect() throw(Error)
 
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
-void EffectPenetrateWheel::affect(Creature* pCreature) throw(Error)
+void EffectPenetrateWheel::affect(Creature* pCreature) 
 {
 	__BEGIN_TRY
 
@@ -95,7 +95,7 @@ void EffectPenetrateWheel::affect(Creature* pCreature) throw(Error)
 	__END_CATCH
 }
 
-void EffectPenetrateWheel::unaffect() throw(Error)
+void EffectPenetrateWheel::unaffect() 
 {
 	__BEGIN_TRY
 
@@ -110,7 +110,7 @@ void EffectPenetrateWheel::unaffect() throw(Error)
 
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
-void EffectPenetrateWheel::unaffect( Creature* pCreature ) throw (Error)
+void EffectPenetrateWheel::unaffect( Creature* pCreature ) 
 {
 	__BEGIN_TRY
 

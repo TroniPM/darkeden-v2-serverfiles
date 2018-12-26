@@ -240,11 +240,11 @@ public:
 	BYTE getShortCount(void)  { return m_ShortCount; }
 	BYTE getLongCount(void)  { return m_LongCount; }
 
-	void addShortData(ModifyType type, ushort value) throw();
-	void addLongData(ModifyType type, ulong value) throw();
+	void addShortData(ModifyType type, ushort value) ;
+	void addLongData(ModifyType type, ulong value) ;
 
-	void popShortData(SHORTDATA& rData) throw();
-	void popLongData(LONGDATA& rData) throw();
+	void popShortData(SHORTDATA& rData) ;
+	void popLongData(LONGDATA& rData) ;
 
 	void clearList(void) throw() { m_ShortCount = 0; m_LongCount = 0; m_ShortList.clear(); m_LongList.clear(); }
 

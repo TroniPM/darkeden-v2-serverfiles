@@ -24,10 +24,10 @@ class CGMakeItem : public Packet {
 public:
 
 	// constructor
-	CGMakeItem() throw();
+	CGMakeItem() ;
 
 	// destructor
-	~CGMakeItem() throw();
+	~CGMakeItem() ;
 
 public:
 	

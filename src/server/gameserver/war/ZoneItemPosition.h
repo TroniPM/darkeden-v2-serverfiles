@@ -14,7 +14,7 @@ public:
 
 public:
 	virtual Item*	popItem( bool bLock = true );
-	virtual Zone*	getZone() throw(Error) { return getZoneByZoneID( m_ZoneID ); }
+	virtual Zone*	getZone()  { return getZoneByZoneID( m_ZoneID ); }
 
 	Item*		getItem( bool isDel );
 	Item*		getItem_LOCKED( bool isDel );

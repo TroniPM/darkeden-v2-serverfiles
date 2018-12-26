@@ -22,7 +22,7 @@ public :
 
 	void	load();
 
-	virtual LevelLimitInfo* getLimitInfo(PlayerCreature* pPC) throw (Error) = 0;
+	virtual LevelLimitInfo* getLimitInfo(PlayerCreature* pPC)  = 0;
 
 	bool 	join(PlayerCreature* pPC);
 	bool	leave(PlayerCreature* pPC);

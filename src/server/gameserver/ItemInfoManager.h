@@ -21,8 +21,8 @@
 class ItemInfoManager 
 {
 public:
-	ItemInfoManager() throw();
-	~ItemInfoManager() throw();
+	ItemInfoManager() ;
+	~ItemInfoManager() ;
 
 public:
 	void init();
@@ -30,9 +30,9 @@ public:
 	ItemInfo* getItemInfo(Item::ItemClass Class, ItemType_t ItemType) ;
 	uint getItemCount(Item::ItemClass Class) ;
 
-	vector<ItemType_t> getPossibleItemTypes(Item::ItemClass IClass, uint minLevel, uint maxLevel) throw();
+	vector<ItemType_t> getPossibleItemTypes(Item::ItemClass IClass, uint minLevel, uint maxLevel) ;
 
-	bool isPossibleItem(Item::ItemClass IClass, ItemType_t IType, const list<OptionType_t>& OType) throw();
+	bool isPossibleItem(Item::ItemClass IClass, ItemType_t IType, const list<OptionType_t>& OType) ;
 
 	uint getItemIDSuccessor(void) const { return m_ItemIDSuccessor; }
 	void setItemIDSuccessor(uint suc) { m_ItemIDSuccessor = suc; }

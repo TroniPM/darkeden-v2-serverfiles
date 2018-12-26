@@ -19,8 +19,8 @@ class Zone;
 class DarkLightInfo 
 {
 public:
-	DarkLightInfo() throw();
-	DarkLightInfo(const DarkLightInfo & dli) throw();
+	DarkLightInfo() ;
+	DarkLightInfo(const DarkLightInfo & dli) ;
 
 public:
 	DarkLevel_t getDarkLevel()  { return m_DarkLevel; }
@@ -57,8 +57,8 @@ const uint nDarkLightInfos = 12* 24* 6;
 class DarkLightInfoManager 
 {
 public:
-	DarkLightInfoManager() throw();
-	~DarkLightInfoManager() throw();
+	DarkLightInfoManager() ;
+	~DarkLightInfoManager() ;
 
 public:
 	void init();

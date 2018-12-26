@@ -24,7 +24,7 @@
 #include "Gpackets/GCModifyInformation.h"
 #include "Gpackets/GCStatusCurrentHP.h"
 EffectCurseOfBloodGround::EffectCurseOfBloodGround( Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -38,7 +38,7 @@ EffectCurseOfBloodGround::EffectCurseOfBloodGround( Zone* pZone, ZoneCoord_t X, 
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void EffectCurseOfBloodGround::unaffect()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -67,7 +67,7 @@ string EffectCurseOfBloodGround::toString() const
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 EffectCurseOfBloodGround::EffectCurseOfBloodGround( Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -83,7 +83,7 @@ EffectCurseOfBloodGround::EffectCurseOfBloodGround( Zone* pZone, ZoneCoord_t X, 
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void EffectCurseOfBloodGround::affect()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -218,7 +218,7 @@ void EffectCurseOfBloodGround::affect()
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void EffectCurseOfBloodGround::affect(Zone* pZone, ZoneCoord_t Cx, ZoneCoord_t Cy)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -230,7 +230,7 @@ void EffectCurseOfBloodGround::affect(Zone* pZone, ZoneCoord_t Cx, ZoneCoord_t C
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void EffectCurseOfBloodGround::unaffect()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

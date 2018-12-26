@@ -122,7 +122,7 @@ public:
 
 	Sex getSex ()  { return m_Sex; }
 	void setSex (Sex sex) throw () { m_Sex = sex; }
-	void setSex (string sex) throw (InvalidProtocolException)
+	void setSex (string sex) 
 	{
 		if (sex == Sex2String[MALE]) 
 			m_Sex = MALE;
@@ -164,7 +164,7 @@ public:
 		if (m_STR[attrType] > maxOustersAttr) throw Error("STR out of range"); 
 		return m_STR[attrType]; 
 	}
-	void setSTR (Attr_t str, AttrType attrType = ATTR_CURRENT) throw (Error)
+	void setSTR (Attr_t str, AttrType attrType = ATTR_CURRENT) 
 	{ 
 		if (str > maxOustersAttr) throw Error("STR out of range"); 
 		m_STR[attrType] = str; 
@@ -175,7 +175,7 @@ public:
 		if (m_DEX[attrType] > maxOustersAttr) throw Error("DEX out of range"); 
 		return m_DEX[attrType]; 
 	}
-	void setDEX (Attr_t dex, AttrType attrType = ATTR_CURRENT) throw (Error)
+	void setDEX (Attr_t dex, AttrType attrType = ATTR_CURRENT) 
 	{ 
 		if (dex > maxOustersAttr) throw Error("DEX out of range"); 
 		m_DEX[attrType] = dex; 
@@ -186,7 +186,7 @@ public:
 		if (m_INT[attrType] > maxOustersAttr) throw Error("INT out of range"); 
 		return m_INT[attrType]; 
 	}
-	void setINT (Attr_t inte, AttrType attrType = ATTR_CURRENT) throw (Error)
+	void setINT (Attr_t inte, AttrType attrType = ATTR_CURRENT) 
 	{
 		if (inte > maxOustersAttr) throw Error("INT out of range"); 
 		m_INT[attrType] = inte; 

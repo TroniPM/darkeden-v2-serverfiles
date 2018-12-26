@@ -16,7 +16,7 @@
 class NooseOfWraith : public SkillHandler 
 {
 public:
-	NooseOfWraith() throw();
+	NooseOfWraith() ;
 	~NooseOfWraith() throw() {}
 	
 public:

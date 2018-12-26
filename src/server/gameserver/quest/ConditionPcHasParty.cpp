@@ -40,7 +40,7 @@ bool ConditionPcHasParty::isSatisfied (Creature * pCreature1 , Creature * pCreat
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionPcHasParty::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 	try
 	{

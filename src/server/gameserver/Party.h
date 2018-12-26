@@ -58,8 +58,8 @@ protected:
 class PartyInviteInfoManager
 {
 public:
-	PartyInviteInfoManager() throw();
-	~PartyInviteInfoManager() throw();
+	PartyInviteInfoManager() ;
+	~PartyInviteInfoManager() ;
 
 public:
 	bool hasInviteInfo(const string& HostName);
@@ -87,8 +87,8 @@ protected:
 class Party
 {
 public:
-	Party(Creature::CreatureClass CClass) throw();
-	~Party() throw();
+	Party(Creature::CreatureClass CClass) ;
+	~Party() ;
 
 public:
 	int getID(void) const { return m_ID; }
@@ -105,7 +105,7 @@ public:
 	// 글로벌 파티 매니저에서만 사용한다.
 	// 파티를 해체하기 전에 파티 멤버들의 파티 ID를 0으로 만들고,
 	// 로컬 파티 매니저에서 해당 ID를 가진 파티를 삭제한다.
-	void destroyParty(void) throw();
+	void destroyParty(void) ;
 
 public:
 	// 파티 멤버들에게 패킷을 날린다.
@@ -117,7 +117,7 @@ public:
 
 public:
 	int getSize(void) ;
-	hash_map<string, Creature*> getMemberMap(void) throw();
+	hash_map<string, Creature*> getMemberMap(void) ;
 
 	// 근접한 거리(8타일) 내에 있는 멤버들의 숫자를 리턴한다.
 	int getAdjacentMemberSize(Creature* pLeader) ;
@@ -145,7 +145,7 @@ public:
 	void shareGDRLairEnter(Creature* pLeader);
 
 	void shareRankExp(Creature* pLeader, int amount);
-	void shareAdvancementExp(Creature* pLeader, int amount) throw();
+	void shareAdvancementExp(Creature* pLeader, int amount) ;
 
 	void dissectCorpse(Creature* pDissecter, MonsterCorpse* pCorpse);
 	void eventPartyCrash();
@@ -176,8 +176,8 @@ protected:
 class PartyManager
 {
 public:
-	PartyManager() throw();
-	virtual ~PartyManager() throw();
+	PartyManager() ;
+	virtual ~PartyManager() ;
 
 public:
 	virtual bool createParty(int ID, Creature::CreatureClass) throw (DuplicatedException, Error);
@@ -201,8 +201,8 @@ protected:
 class LocalPartyManager : public PartyManager
 {
 public:
-	LocalPartyManager() throw();
-	virtual ~LocalPartyManager() throw();
+	LocalPartyManager() ;
+	virtual ~LocalPartyManager() ;
 
 public:
 	void heartbeat(void);
@@ -242,8 +242,8 @@ public:
 class GlobalPartyManager : public PartyManager
 {
 public:
-	GlobalPartyManager() throw();
-	virtual ~GlobalPartyManager() throw();
+	GlobalPartyManager() ;
+	virtual ~GlobalPartyManager() ;
 
 public:
 	bool canAddMember(int ID) throw (NoSuchElementException, Error);
@@ -268,7 +268,7 @@ extern GlobalPartyManager* g_pGlobalPartyManager;
 //////////////////////////////////////////////////////////////////////////////
 // 편의를 위한 전역 함수들...
 //////////////////////////////////////////////////////////////////////////////
-void deleteAllPartyInfo(Creature* pCreature) throw();
+void deleteAllPartyInfo(Creature* pCreature) ;
 
 
 #endif

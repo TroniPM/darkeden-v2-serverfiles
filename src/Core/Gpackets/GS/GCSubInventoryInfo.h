@@ -16,8 +16,8 @@
 class GCSubInventoryInfo : public Packet
 {
 public:
-	GCSubInventoryInfo() throw();
-	~GCSubInventoryInfo() throw();
+	GCSubInventoryInfo() ;
+	~GCSubInventoryInfo() ;
 
 public:
 	void read(SocketInputStream & iStream) ;

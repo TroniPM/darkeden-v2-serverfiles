@@ -18,7 +18,7 @@ const int maxBloodyWaveMask = 12;
 class BloodyWave : public SkillHandler 
 {
 public:
-	BloodyWave() throw();
+	BloodyWave() ;
 	~BloodyWave() throw() {}
 	
 public:

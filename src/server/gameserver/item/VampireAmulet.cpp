@@ -54,7 +54,7 @@ VampireAmulet::VampireAmulet(ItemType_t itemType, const list<OptionType_t>& opti
 // create item
 //--------------------------------------------------------------------------------
 void VampireAmulet::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -106,7 +106,7 @@ void VampireAmulet::create(const string & ownerID, Storage storage, StorageID_t 
 // save item
 //--------------------------------------------------------------------------------
 void VampireAmulet::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -130,7 +130,7 @@ void VampireAmulet::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void VampireAmulet::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -196,7 +196,7 @@ string VampireAmulet::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t VampireAmulet::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -210,7 +210,7 @@ VolumeWidth_t VampireAmulet::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t VampireAmulet::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -224,7 +224,7 @@ VolumeHeight_t VampireAmulet::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t VampireAmulet::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -238,7 +238,7 @@ Weight_t VampireAmulet::getWeight() const
 // get/set armor's Defense Bonus
 //--------------------------------------------------------------------------------
 Defense_t VampireAmulet::getDefenseBonus() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -247,7 +247,7 @@ Defense_t VampireAmulet::getDefenseBonus() const
 	__END_CATCH
 }
 Protection_t VampireAmulet::getProtectionBonus() const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -285,7 +285,7 @@ string VampireAmuletInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void VampireAmuletInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -350,7 +350,7 @@ void VampireAmuletInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void VampireAmuletLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -547,7 +547,7 @@ pVampireAmulet->setHeroOptionAttr(pResult->getInt(++i));
 // load to zone
 //--------------------------------------------------------------------------------
 void VampireAmuletLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -629,7 +629,7 @@ pVampireAmulet->setHeroOptionAttr(pResult->getInt(++i));
 // load to inventory
 //--------------------------------------------------------------------------------
 void VampireAmuletLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

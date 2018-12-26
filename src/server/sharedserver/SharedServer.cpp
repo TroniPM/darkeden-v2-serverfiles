@@ -36,7 +36,7 @@
 //
 //////////////////////////////////////////////////////////////////////
 SharedServer::SharedServer ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 	
@@ -85,7 +85,7 @@ SharedServer::SharedServer ()
 //
 //////////////////////////////////////////////////////////////////////
 SharedServer::~SharedServer ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 		
@@ -115,7 +115,7 @@ SharedServer::~SharedServer ()
 //
 //////////////////////////////////////////////////////////////////////
 void SharedServer::init ()
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 
@@ -163,7 +163,7 @@ void SharedServer::init ()
 //
 //////////////////////////////////////////////////////////////////////
 void SharedServer::start ()
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 
@@ -202,7 +202,7 @@ void SharedServer::start ()
 //
 //////////////////////////////////////////////////////////////////////
 void SharedServer::stop ()
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 

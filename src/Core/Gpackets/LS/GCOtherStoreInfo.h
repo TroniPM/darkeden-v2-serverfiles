@@ -19,7 +19,7 @@ class GCOtherStoreInfo : public Packet
 {
 public:
 	GCOtherStoreInfo() throw() { }
-	virtual ~GCOtherStoreInfo() throw();
+	virtual ~GCOtherStoreInfo() ;
 
 public:
 	void read(SocketInputStream & iStream) ;

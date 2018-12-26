@@ -24,10 +24,10 @@ class CGUsePotionFromInventory : public Packet {
 public:
 
 	// constructor
-	CGUsePotionFromInventory() throw();
+	CGUsePotionFromInventory() ;
 
 	// destructor
-	~CGUsePotionFromInventory() throw();
+	~CGUsePotionFromInventory() ;
 
 public:
 	

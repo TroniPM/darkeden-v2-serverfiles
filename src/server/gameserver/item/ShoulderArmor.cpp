@@ -49,7 +49,7 @@ ShoulderArmor::ShoulderArmor(ItemType_t itemType, const list<OptionType_t>& opti
 // create item
 //--------------------------------------------------------------------------------
 void ShoulderArmor::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -100,7 +100,7 @@ void ShoulderArmor::create(const string & ownerID, Storage storage, StorageID_t 
 // save item
 //--------------------------------------------------------------------------------
 void ShoulderArmor::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -124,7 +124,7 @@ void ShoulderArmor::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void ShoulderArmor::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -197,7 +197,7 @@ string ShoulderArmorInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void ShoulderArmorInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -262,7 +262,7 @@ void ShoulderArmorInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void ShoulderArmorLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -449,7 +449,7 @@ pShoulderArmor->setHeroOptionAttr(pResult->getInt(++i));
 // load to zone
 //--------------------------------------------------------------------------------
 void ShoulderArmorLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -461,7 +461,7 @@ void ShoulderArmorLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void ShoulderArmorLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

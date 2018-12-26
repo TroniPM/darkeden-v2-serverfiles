@@ -18,7 +18,7 @@
 class SummonClay : public SkillHandler 
 {
 public:
-	SummonClay() throw();
+	SummonClay() ;
 	~SummonClay() throw() {}
 	
 public:

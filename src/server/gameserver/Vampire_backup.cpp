@@ -175,7 +175,7 @@ Vampire::Vampire ()
 }
 
 Vampire::~Vampire() 
-    throw (Error)
+    
 {
 	__BEGIN_TRY
 
@@ -235,7 +235,7 @@ Vampire::~Vampire()
 // Zone에 종속된 ObjectRegistry를 사용해서, Vampire 와 소유아이템들의
 // ObjectID를 할당받는다.
 void Vampire::registerObject ()
-    throw (Error)
+    
 {
     __BEGIN_TRY
 
@@ -565,7 +565,7 @@ bool Vampire::load ()
 //----------------------------------------------------------------------
 //----------------------------------------------------------------------
 void Vampire::save () const
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1941,7 +1941,7 @@ string Vampire::toString () const
 }
 
 void Vampire::saveSkills(void) const 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1970,7 +1970,7 @@ IP_t Vampire::getIP(void) const
 }
 
 void Vampire::saveGears(void) const
-    throw (Error)
+    
 {
 	__BEGIN_TRY
 
@@ -1998,7 +1998,7 @@ void Vampire::saveGears(void) const
 
 
 void Vampire::saveExps(void) const
-    throw (Error)
+    
 {
 	__BEGIN_TRY
 

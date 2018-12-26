@@ -20,8 +20,8 @@
 class DatabaseManager 
 {
 public:
-	DatabaseManager() throw();
-	~DatabaseManager() throw();
+	DatabaseManager() ;
+	~DatabaseManager() ;
 	
 public:
 	void init();

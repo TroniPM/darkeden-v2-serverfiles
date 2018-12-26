@@ -23,9 +23,9 @@
 class OustersArmsband : public ConcreteItem<Item::ITEM_CLASS_OUSTERS_ARMSBAND, NoStack, HasDurability, HasOption, GroceryGrade, NoAttacking, NoEnchantLevel, HasOption2, HasHeroOption, HasHeroOptionAttr> 
 {
 public:
-	OustersArmsband() throw();
-	OustersArmsband(ItemType_t itemType, const list<OptionType_t>& optionType) throw();
-	~OustersArmsband() throw();
+	OustersArmsband() ;
+	OustersArmsband(ItemType_t itemType, const list<OptionType_t>& optionType) ;
+	~OustersArmsband() ;
 	
 public:
 	virtual void create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID=0);
@@ -35,7 +35,7 @@ public:
 	void tinysave(const char* field) ;
 	virtual string toString() ;
 
-	static void initItemIDRegistry(void) throw();
+	static void initItemIDRegistry(void) ;
 
 public:
 //	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_OUSTERS_ARMSBAND; }
@@ -60,7 +60,7 @@ public:
 
 public:
 	virtual Durability_t getDurability()  { return m_Durability; }
-	void setDurability(Durability_t durability) throw(Error) { m_Durability = durability; }
+	void setDurability(Durability_t durability)  { m_Durability = durability; }
 */
 	void setInventory(Inventory* pInventory) throw() { m_pInventory = pInventory; }
 	Inventory* getInventory()  { return m_pInventory; }

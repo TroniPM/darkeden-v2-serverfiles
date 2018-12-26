@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////
 
 Connection::Connection ()
-	throw ( Error )
+	
 : m_bConnected(false), m_bBusy(false)
 {
 	__BEGIN_TRY
@@ -70,7 +70,7 @@ Connection::Connection ( string host , string db , string user , string password
 //////////////////////////////////////////////////////////////////////
 
 Connection::~Connection() 
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 		

@@ -103,7 +103,7 @@ public :
 
 	// get update type
 	UPDATETYPE getUpdateType () const 
-		throw (Error) 
+		 
 	{ 
 		Assert(m_UpdateType < UPDATETYPE_MAX); 
 		return m_UpdateType; 
@@ -111,7 +111,7 @@ public :
 
 	// set update type
 	void setUpdateType (UPDATETYPE updateType) 
-		throw (Error) 
+		 
 	{ 
 		Assert(updateType < UPDATETYPE_MAX); 
 		m_UpdateType = updateType; 
@@ -119,7 +119,7 @@ public :
 
 	// get parameter
 	string getParam (uint i) const 
-		throw (Error) 
+		 
 	{ 
 		Assert(i < maxParams); 
 		return m_Params[i]; 
@@ -127,7 +127,7 @@ public :
 
 	// set parameter
 	void setParam (uint i, const string & param) 
-		throw (Error) 
+		 
 	{ 
 		Assert(i < maxParams); 
 		Assert(param.size() < maxParameterLen);

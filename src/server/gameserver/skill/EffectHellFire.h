@@ -66,7 +66,7 @@ public:
     virtual string getEffectClassName()  { return "EffectHellFire"; }
 
 public:
-    virtual void load(Creature* pCreature) throw(Error) {}
+    virtual void load(Creature* pCreature)  {}
 };
 
 extern EffectHellFireLoader* g_pEffectHellFireLoader;

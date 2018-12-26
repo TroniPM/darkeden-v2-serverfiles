@@ -28,7 +28,7 @@ public:
 	string toString() ;
 
 public:
-	void   	setPart(int part) throw();
+	void   	setPart(int part) ;
 
 private:
 	string	m_PartName;	// 피의 성서 조각 이름

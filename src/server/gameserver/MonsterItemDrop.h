@@ -26,20 +26,20 @@ public:
 	~MonsterItemDrop();
 
 public:
-	void parseSlayerTreasureString(const string& text) throw();
+	void parseSlayerTreasureString(const string& text) ;
 	TreasureList* getSlayerTreasureList(void) const { return m_pSlayerTreasureList; }
 	TreasureList* getSlayerTreasureList(void) { return m_pSlayerTreasureList; }
-	void setSlayerTreasureList(TreasureList* pTreasureList) throw();
+	void setSlayerTreasureList(TreasureList* pTreasureList) ;
 
-	void parseVampireTreasureString(const string& text) throw();
+	void parseVampireTreasureString(const string& text) ;
 	TreasureList* getVampireTreasureList(void) const { return m_pVampireTreasureList; }
 	TreasureList* getVampireTreasureList(void) { return m_pVampireTreasureList; }
-	void setVampireTreasureList(TreasureList* pTreasureList) throw();
+	void setVampireTreasureList(TreasureList* pTreasureList) ;
 
-	void parseOustersTreasureString(const string& text) throw();
+	void parseOustersTreasureString(const string& text) ;
 	TreasureList* getOustersTreasureList(void) const { return m_pOustersTreasureList; }
 	TreasureList* getOustersTreasureList(void) { return m_pOustersTreasureList; }
-	void setOustersTreasureList(TreasureList* pTreasureList) throw();
+	void setOustersTreasureList(TreasureList* pTreasureList) ;
 
 	int getID() const { return m_ID; }
 	void setID( int id ) { m_ID = id; }
@@ -78,9 +78,9 @@ public:
 public:
 
 	// clear list
-	void clear() throw();
+	void clear() ;
 
-	// void load() throw();
+	// void load() ;
 	void load();
 	
 	// get MonsterItemDrop

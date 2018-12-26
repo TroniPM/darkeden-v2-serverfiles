@@ -50,10 +50,10 @@ public :
 	string toString() ;
 
 public:
-	void setObjectID( ObjectID_t objectID ) throw(Error) { m_ObjectID = objectID; }
+	void setObjectID( ObjectID_t objectID )  { m_ObjectID = objectID; }
 	ObjectID_t getObjectID()  { return m_ObjectID; }
 
-	void setName( string name ) throw(Error) { m_Name = name; }
+	void setName( string name )  { m_Name = name; }
 	string getName()  { return m_Name; }
 
 protected :

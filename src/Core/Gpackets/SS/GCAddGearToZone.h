@@ -17,8 +17,8 @@
 class GCAddGearToZone : public Packet 
 {
 public:
-	GCAddGearToZone() throw();
-	~GCAddGearToZone() throw();
+	GCAddGearToZone() ;
+	~GCAddGearToZone() ;
 
 public :
     void read(SocketInputStream & iStream) ;

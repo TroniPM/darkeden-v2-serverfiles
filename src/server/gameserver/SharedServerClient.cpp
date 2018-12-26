@@ -26,7 +26,7 @@
 //////////////////////////////////////////////////////////////////////////////
 
 SharedServerClient::SharedServerClient (Socket* pSocket)
-	 throw (Error)
+	 
 : Player(pSocket)
 {
 	__BEGIN_TRY
@@ -42,7 +42,7 @@ SharedServerClient::SharedServerClient (Socket* pSocket)
 //////////////////////////////////////////////////////////////////////////////
 
 SharedServerClient::~SharedServerClient ()
-	 throw (Error)
+	 
 {
 	__BEGIN_TRY
 
@@ -218,7 +218,7 @@ void SharedServerClient::sendPacket (Packet* pPacket)
 //
 //////////////////////////////////////////////////////////////////////
 string SharedServerClient::toString () const
-       throw (Error)
+       
 {
 	__BEGIN_TRY
 		

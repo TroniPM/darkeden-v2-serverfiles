@@ -27,8 +27,8 @@ class GCLearnSkillFailed : public Packet
 
 public: 
 
-	GCLearnSkillFailed() throw();
-	virtual ~GCLearnSkillFailed() throw();
+	GCLearnSkillFailed() ;
+	virtual ~GCLearnSkillFailed() ;
 
 	
 public:

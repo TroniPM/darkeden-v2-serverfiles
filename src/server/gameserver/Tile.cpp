@@ -539,7 +539,7 @@ Obstacle* Tile::getObstacle ()
 }
 
 bool Tile::canAddEffect() 
-	throw(Error)
+	
 {
 	return !(hasObstacle() || hasBuilding() || hasPortal());
 }
@@ -638,7 +638,7 @@ Effect* Tile::getEffect (ObjectID_t effectID)
 // EffectClass를 가진 마법 효과를 리턴한다.
 //////////////////////////////////////////////////////////////
 Effect* Tile::getEffect (Effect::EffectClass effectClass) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -672,7 +672,7 @@ Effect* Tile::getEffect (Effect::EffectClass effectClass)
 // 현재 타일을 건물로 설정한다. 
 //////////////////////////////////////////////////////////////
 void Tile::addBuilding (BuildingID_t buildingID) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -697,7 +697,7 @@ void Tile::addBuilding (BuildingID_t buildingID)
 // 현재 타일에서 건물을 삭제한다. 어차피 하나이므로 특별히 지정할 필요는 없다.
 //////////////////////////////////////////////////////////////
 void Tile::deleteBuilding () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -714,7 +714,7 @@ void Tile::deleteBuilding ()
 // 현재 타일에 해당하는 건물 아이디를 리턴한다.
 //////////////////////////////////////////////////////////////
 BuildingID_t Tile::getBuilding () const 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -729,7 +729,7 @@ BuildingID_t Tile::getBuilding () const
 // 포탈을 타일에 추가한다.
 //////////////////////////////////////////////////////////////
 void Tile::addPortal (Portal* pPortal) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -758,7 +758,7 @@ void Tile::addPortal (Portal* pPortal)
 // 포탈을 타일에서 삭제한다. 어차피 하나이므로 특별히 지정할 필요가 없다.
 //////////////////////////////////////////////////////////////
 void Tile::deletePortal () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -775,7 +775,7 @@ void Tile::deletePortal ()
 // 포탈 객체를 리턴한다.
 //////////////////////////////////////////////////////////////
 Portal* Tile::getPortal () const 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -790,7 +790,7 @@ Portal* Tile::getPortal () const
 // terrain 을 타일에 추가한다. 
 //////////////////////////////////////////////////////////////
 void Tile::addTerrain (TerrainID_t terrainID) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -813,7 +813,7 @@ void Tile::addTerrain (TerrainID_t terrainID)
 // terrain 을 타일에서 삭제한다.
 //////////////////////////////////////////////////////////////
 void Tile::deleteTerrain () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -832,7 +832,7 @@ void Tile::deleteTerrain ()
 // terrain 아이디를 리턴한다.
 //////////////////////////////////////////////////////////////
 TerrainID_t Tile::getTerrain () const 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

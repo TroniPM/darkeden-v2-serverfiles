@@ -61,7 +61,7 @@ ZoneGroupManager::~ZoneGroupManager ()
 // initialize zone manager
 //--------------------------------------------------------------------------------
 void ZoneGroupManager::init () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -79,7 +79,7 @@ void ZoneGroupManager::init ()
 //
 //--------------------------------------------------------------------------------
 void ZoneGroupManager::load ()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -241,7 +241,7 @@ void ZoneGroupManager::load ()
 // save data to database
 //--------------------------------------------------------------------------------
 void ZoneGroupManager::save ()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -255,7 +255,7 @@ void ZoneGroupManager::save ()
 // add zone to zone manager
 //--------------------------------------------------------------------------------
 void ZoneGroupManager::addZoneGroup (ZoneGroup* pZoneGroup) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -363,7 +363,7 @@ ZoneGroup* ZoneGroupManager::getZoneGroup (ZoneGroupID_t zoneID) const
 }
 
 void   ZoneGroupManager::broadcast(Packet* pPacket) 
-	throw (Error)
+	
 {
 	ZoneGroup* pZoneGroup = NULL;
 
@@ -378,7 +378,7 @@ void   ZoneGroupManager::broadcast(Packet* pPacket)
 }
 
 void   ZoneGroupManager::pushBroadcastPacket(Packet* pPacket, BroadcastFilter* pFilter) 
-	throw (Error)
+	
 {
 	ZoneGroup* pZoneGroup = NULL;
 
@@ -393,7 +393,7 @@ void   ZoneGroupManager::pushBroadcastPacket(Packet* pPacket, BroadcastFilter* p
 }
 
 void ZoneGroupManager::outputLoadValue()
-	throw (Error)
+	
 {
 	//------------------------------------------------------------------
 	// ZoneGroup load
@@ -449,7 +449,7 @@ void ZoneGroupManager::outputLoadValue()
 //
 //---------------------------------------------------------------------------
 bool 	ZoneGroupManager::makeBalancedLoadInfo(LOAD_INFOS& loadInfos, bool bForce)
-	throw (Error)
+	
 {
 	const int maxGroup  		= m_ZoneGroups.size();	// zoneGroup 수
 	//const int loadMultiplier 	= 5;					// load 가중치 - 느린 애들을 더 느리다...라고 하기 위한 것.
@@ -632,7 +632,7 @@ bool 	ZoneGroupManager::makeBalancedLoadInfo(LOAD_INFOS& loadInfos, bool bForce)
 // DB에 설정된 기본 ZoneGroup으로 설정한다.
 //---------------------------------------------------------------------------
 bool	ZoneGroupManager::makeDefaultLoadInfo( LOAD_INFOS& loadInfos )
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -718,7 +718,7 @@ bool	ZoneGroupManager::makeDefaultLoadInfo( LOAD_INFOS& loadInfos )
 //
 //---------------------------------------------------------------------------
 void   ZoneGroupManager::balanceZoneGroup(bool bForce, bool bDefault) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -987,7 +987,7 @@ void ZoneGroupManager::unlockZoneGroups()
 // get PlayerNum. by sigi. 2002.12.30
 //--------------------------------------------------------------------------------
 int ZoneGroupManager::getPlayerNum () const
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1009,7 +1009,7 @@ int ZoneGroupManager::getPlayerNum () const
 }
 
 void   ZoneGroupManager::removeFlag(Effect::EffectClass EC)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

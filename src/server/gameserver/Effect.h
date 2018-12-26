@@ -860,9 +860,9 @@ public:
 
 // constructor/destructor
 public:
-	Effect() throw();
-	Effect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pTarget, Turn_t delay) throw();
-	virtual ~Effect() throw();
+	Effect() ;
+	Effect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pTarget, Turn_t delay) ;
+	virtual ~Effect() ;
 			
 
 // methods from Object
@@ -881,15 +881,15 @@ public:
 	bool isBroadcastingEffect() { return m_bBroadcastingEffect; }
 	void setBroadcastingEffect(bool bBroadcasting=true) { m_bBroadcastingEffect = bBroadcasting; }
 
-	virtual void affect() throw(Error) { throw UnsupportedError(__PRETTY_FUNCTION__); }
-	virtual void affect(Creature* pCreature) throw(Error) { throw UnsupportedError(__PRETTY_FUNCTION__); }
-	virtual void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pTarget) throw(Error) { throw UnsupportedError(__PRETTY_FUNCTION__); }
-	virtual void affect(Item* pItem) throw(Error) { throw UnsupportedError(__PRETTY_FUNCTION__);}
+	virtual void affect()  { throw UnsupportedError(__PRETTY_FUNCTION__); }
+	virtual void affect(Creature* pCreature)  { throw UnsupportedError(__PRETTY_FUNCTION__); }
+	virtual void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pTarget)  { throw UnsupportedError(__PRETTY_FUNCTION__); }
+	virtual void affect(Item* pItem)  { throw UnsupportedError(__PRETTY_FUNCTION__);}
 	
-	virtual void unaffect(Item* pItem) throw(Error) { throw UnsupportedError(__PRETTY_FUNCTION__); }
-	virtual void unaffect() throw(Error) = 0;
-	virtual void unaffect(Creature* pCreature) throw(Error) { throw UnsupportedError(__PRETTY_FUNCTION__); } // 원래는 pure virtual이었는데 EffectRelicTable때메 바꿨다. by sigi
-	virtual void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pTarget) throw(Error) { throw UnsupportedError(__PRETTY_FUNCTION__); }
+	virtual void unaffect(Item* pItem)  { throw UnsupportedError(__PRETTY_FUNCTION__); }
+	virtual void unaffect()  = 0;
+	virtual void unaffect(Creature* pCreature)  { throw UnsupportedError(__PRETTY_FUNCTION__); } // 원래는 pure virtual이었는데 EffectRelicTable때메 바꿨다. by sigi
+	virtual void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pTarget)  { throw UnsupportedError(__PRETTY_FUNCTION__); }
 	
 
 // get/set methods
@@ -908,24 +908,24 @@ public:
 
 	Timeval getNextTime()  { return m_NextTime; }
 	void setNextTime(Timeval tv) throw() { m_NextTime = tv; }
-	void setNextTime(Turn_t delay) throw();
+	void setNextTime(Turn_t delay) ;
 
 	Timeval getDeadline()  { return m_Deadline; }
-	void setDeadline(Turn_t delay) throw();
+	void setDeadline(Turn_t delay) ;
 
 	int getCustormEffect()  { return m_CustormEffect; }
-	void setCustormEffect(int Effect) throw();
+	void setCustormEffect(int Effect) ;
 
 	virtual EffectClass getCustormEffectSendEffectClass()  { return (Effect::EffectClass)getCustormEffect(); }
 
-	Duration_t getRemainDuration() throw();
+	Duration_t getRemainDuration() ;
 
 
 // save/load members
 public:
-	virtual void create(const string & ownerID) throw(Error) {}
-	virtual void save(const string & ownerID) throw(Error) {}
-	virtual void destroy(const string & ownerID) throw(Error) {}
+	virtual void create(const string & ownerID)  {}
+	virtual void save(const string & ownerID)  {}
+	virtual void destroy(const string & ownerID)  {}
 
 
 ////////////////////////////////////////////////////////////

@@ -17,8 +17,8 @@
 class CGAddZoneToInventory : public Packet 
 {
 public:
-	CGAddZoneToInventory() throw();
-	~CGAddZoneToInventory() throw();
+	CGAddZoneToInventory() ;
+	~CGAddZoneToInventory() ;
 
 public:
     void read(SocketInputStream & iStream) ;

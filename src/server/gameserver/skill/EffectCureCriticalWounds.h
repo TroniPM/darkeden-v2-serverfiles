@@ -29,7 +29,7 @@ public:
 	// unaffect method
 	void unaffect();
 	void unaffect(Creature* pCreature);
-	void unaffect(Item* pItem) throw(Error) {}
+	void unaffect(Item* pItem)  {}
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject);
 
 	string toString() ;

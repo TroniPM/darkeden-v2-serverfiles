@@ -26,10 +26,10 @@ class CGRideMotorCycle : public Packet {
 public:
 	
 	// constructor
-	CGRideMotorCycle() throw();
+	CGRideMotorCycle() ;
 	
 	// destructor
-	~CGRideMotorCycle() throw();
+	~CGRideMotorCycle() ;
 
 	
 public:

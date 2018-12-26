@@ -19,7 +19,7 @@
 // 아우스터즈 오브젝트 핸들러
 //////////////////////////////////////////////////////////////////////////////
 void ExplosionWater::execute(Ousters* pOusters, ObjectID_t TargetObjectID, OustersSkillSlot* pOustersSkillSlot, CEffectID_t CEffectID)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -212,7 +212,7 @@ void ExplosionWater::execute(Ousters* pOusters, ObjectID_t TargetObjectID, Ouste
 // 몬스터 오브젝트 핸들러
 //////////////////////////////////////////////////////////////////////////////
 void ExplosionWater::execute(Monster* pMonster, Creature* pEnemy)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -275,7 +275,7 @@ void ExplosionWater::execute(Monster* pMonster, Creature* pEnemy)
 // 아우스터즈 오브젝트 핸들러
 //////////////////////////////////////////////////////////////////////////////
 void ExplosionWater::executeMonster(Zone* pZone, Monster* pMonster, Creature* pEnemy)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

@@ -23,7 +23,7 @@
 // 人类 卫星轰击技能 180级
 //////////////////////////////////////////////////////////////////////////////
 void SatelliteBomb2::execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSkillSlot, CEffectID_t CEffectID)
-    throw(Error)
+    
 {
     __BEGIN_TRY
 
@@ -66,7 +66,7 @@ void SatelliteBomb2::execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSl
 // 技能运行函数 pSlayer->使用技能对象  X,Y->坐标 pSkillSlot->技能信息  CEffectID->效果ID
 //////////////////////////////////////////////////////////////////////////////
 void SatelliteBomb2::execute(Slayer* pSlayer, ZoneCoord_t X, ZoneCoord_t Y, SkillSlot* pSkillSlot, CEffectID_t CEffectID)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -245,7 +245,7 @@ void SatelliteBomb2::execute(Slayer* pSlayer, ZoneCoord_t X, ZoneCoord_t Y, Skil
 	__END_CATCH
 }
 
-void SatelliteBomb2::execute(Monster* pMonster, ZoneCoord_t X, ZoneCoord_t Y) throw(Error)
+void SatelliteBomb2::execute(Monster* pMonster, ZoneCoord_t X, ZoneCoord_t Y) 
 {
 	__BEGIN_TRY
 

@@ -28,10 +28,10 @@ class GCCrossCounterOK1 : public ModifyInfo {
 public :
 	
 	// constructor
-	GCCrossCounterOK1() throw();
+	GCCrossCounterOK1() ;
 	
 	// destructor
-	~GCCrossCounterOK1() throw();
+	~GCCrossCounterOK1() ;
 
 	
 public :

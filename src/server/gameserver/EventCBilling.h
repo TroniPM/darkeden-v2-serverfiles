@@ -17,7 +17,7 @@ class EventCBilling : public Event
 {
 public:
 	EventCBilling(GamePlayer* pGamePlayer);
-	virtual ~EventCBilling() throw();
+	virtual ~EventCBilling() ;
 
 public:
 	virtual EventClass getEventClass()  { return EVENT_CLASS_CBILLING; }

@@ -47,7 +47,7 @@ VampireTuningItem::VampireTuningItem(ItemType_t itemType, const list<OptionType_
 }
 
 void VampireTuningItem::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -92,7 +92,7 @@ void VampireTuningItem::create(const string & ownerID, Storage storage, StorageI
 // save item
 //--------------------------------------------------------------------------------
 void VampireTuningItem::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -113,7 +113,7 @@ void VampireTuningItem::tinysave(const char* field) const
 }
 
 void VampireTuningItem::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -164,7 +164,7 @@ string VampireTuningItem::toString() const
 }
 
 VolumeWidth_t VampireTuningItem::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -174,7 +174,7 @@ VolumeWidth_t VampireTuningItem::getVolumeWidth() const
 }
 	
 VolumeHeight_t VampireTuningItem::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -184,7 +184,7 @@ VolumeHeight_t VampireTuningItem::getVolumeHeight() const
 }
 		
 Weight_t VampireTuningItem::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -214,7 +214,7 @@ string VampireTuningItemInfo::toString() const
 }
 
 void VampireTuningItemInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -268,7 +268,7 @@ void VampireTuningItemInfoManager::load()
 //////////////////////////////////////////////////////////////////////////////
 
 void VampireTuningItemLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -439,7 +439,7 @@ void VampireTuningItemLoader::load(Creature* pCreature)
 }
 
 void VampireTuningItemLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -502,7 +502,7 @@ void VampireTuningItemLoader::load(Zone* pZone)
 }
 
 void VampireTuningItemLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

@@ -223,7 +223,7 @@ SkillInfoManager::~SkillInfoManager()
 }
 
 void SkillInfoManager::init()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -355,7 +355,7 @@ void SkillInfoManager::init()
 }
 
 void SkillInfoManager::load()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -455,7 +455,7 @@ void SkillInfoManager::load()
 }
 
 void SkillInfoManager::save()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

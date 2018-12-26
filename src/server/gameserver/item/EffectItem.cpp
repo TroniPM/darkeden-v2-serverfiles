@@ -45,7 +45,7 @@ EffectItem::EffectItem(ItemType_t itemType, const list<OptionType_t>& optionType
 }
 
 void EffectItem::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -90,7 +90,7 @@ void EffectItem::create(const string & ownerID, Storage storage, StorageID_t sto
 // save item
 //--------------------------------------------------------------------------------
 void EffectItem::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -111,7 +111,7 @@ void EffectItem::tinysave(const char* field) const
 }
 
 void EffectItem::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -164,7 +164,7 @@ string EffectItem::toString() const
 }
 
 /*VolumeWidth_t EffectItem::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -174,7 +174,7 @@ string EffectItem::toString() const
 }
 	
 VolumeHeight_t EffectItem::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -184,7 +184,7 @@ VolumeHeight_t EffectItem::getVolumeHeight() const
 }
 	
 Weight_t EffectItem::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -214,7 +214,7 @@ string EffectItemInfo::toString() const
 }
 
 void EffectItemInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -271,7 +271,7 @@ void EffectItemInfoManager::load()
 //////////////////////////////////////////////////////////////////////////////
 
 void EffectItemLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -443,7 +443,7 @@ void EffectItemLoader::load(Creature* pCreature)
 }
 
 void EffectItemLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -507,7 +507,7 @@ void EffectItemLoader::load(Zone* pZone)
 }
 
 void EffectItemLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

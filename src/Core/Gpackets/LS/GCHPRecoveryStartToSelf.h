@@ -28,10 +28,10 @@ class GCHPRecoveryStartToSelf : public Packet {
 public :
 	
 	// constructor
-	GCHPRecoveryStartToSelf() throw();
+	GCHPRecoveryStartToSelf() ;
 	
 	// destructor
-	~GCHPRecoveryStartToSelf() throw();
+	~GCHPRecoveryStartToSelf() ;
 
 	
 public :

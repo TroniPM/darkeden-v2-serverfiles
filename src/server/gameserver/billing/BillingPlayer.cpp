@@ -34,14 +34,14 @@ const int defaultBillingPlayerOutputStreamSize = 10240;
 //
 //////////////////////////////////////////////////////////////////////
 BillingPlayer::BillingPlayer ()
-	 throw ( Error )
+	 
 //: m_pSocket(NULL), m_pInputStream(NULL), m_pOutputStream(NULL)
 {
 }
 
 
 BillingPlayer::BillingPlayer (Socket * pSocket)
-	 throw ( Error )
+	 
 //: Player( pSocket )//m_pSocket(pSocket), m_pInputStream(NULL), m_pOutputStream(NULL)
 {
 	__BEGIN_TRY
@@ -72,7 +72,7 @@ BillingPlayer::BillingPlayer (Socket * pSocket)
 //
 //////////////////////////////////////////////////////////////////////
 BillingPlayer::~BillingPlayer ()
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -552,7 +552,7 @@ void BillingPlayer::sendPayLogout( Player* pPlayer )
 //
 //////////////////////////////////////////////////////////////////////
 string BillingPlayer::toString () const
-       throw ( Error )
+       
 {
 	__BEGIN_TRY
 		

@@ -28,10 +28,10 @@ class GCAttackMeleeOK2 : public ModifyInfo {
 public :
 	
 	// constructor
-	GCAttackMeleeOK2() throw();
+	GCAttackMeleeOK2() ;
 	
 	// destructor
-	~GCAttackMeleeOK2() throw();
+	~GCAttackMeleeOK2() ;
 
 	
 public :

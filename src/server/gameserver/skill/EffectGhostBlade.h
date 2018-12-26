@@ -19,7 +19,7 @@ public:
 	EffectGhostBlade(Creature* pCreature);
 
 public:
-	void affect() throw(Error) {}
+	void affect()  {}
 	void affect(Creature* pCreature);
 
 	void unaffect(Creature* pCreature);
@@ -31,7 +31,7 @@ public:
 
 public:
 	int getToHitBonus() throw() { return m_ToHitBonus;}
-	void setToHitBonus(ToHit_t ToHitBonus) throw(Error) { m_ToHitBonus = ToHitBonus;}
+	void setToHitBonus(ToHit_t ToHitBonus)  { m_ToHitBonus = ToHitBonus;}
 
 private :
 	ToHit_t m_ToHitBonus;

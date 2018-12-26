@@ -21,12 +21,12 @@ class EventManager
 {
 public:
 	EventManager();
-	virtual ~EventManager() throw();
+	virtual ~EventManager() ;
 
 public:
-	void   addEvent(Event* pEvent) throw();
-	Event* getEvent(Event::EventClass EClass) throw();
-	void   deleteEvent(Event::EventClass EClass) throw();
+	void   addEvent(Event* pEvent) ;
+	Event* getEvent(Event::EventClass EClass) ;
+	void   deleteEvent(Event::EventClass EClass) ;
 
 	void   heartbeat();
 

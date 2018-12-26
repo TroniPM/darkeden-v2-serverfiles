@@ -17,8 +17,8 @@
 class CGAddInventoryToMouse : public Packet 
 {
 public:
-	CGAddInventoryToMouse() throw();
-	~CGAddInventoryToMouse() throw();
+	CGAddInventoryToMouse() ;
+	~CGAddInventoryToMouse() ;
 
 public:
     void read(SocketInputStream & iStream) ;

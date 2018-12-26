@@ -13,7 +13,7 @@
 
 // constructor
 NetmarbleGuildRegisterThread::NetmarbleGuildRegisterThread()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -24,19 +24,19 @@ NetmarbleGuildRegisterThread::NetmarbleGuildRegisterThread()
 
 // destructor
 NetmarbleGuildRegisterThread::~NetmarbleGuildRegisterThread()
-	throw ( Error )
+	
 {
 }
 
 // initialize
 void NetmarbleGuildRegisterThread::init()
-	throw ( Error )
+	
 {
 }
 
 // thread main loop
 void NetmarbleGuildRegisterThread::run()
-	throw ( Error )
+	
 {
 	__BEGIN_DEBUG
 

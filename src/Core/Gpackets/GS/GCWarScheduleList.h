@@ -33,8 +33,8 @@ typedef WarScheduleInfoList::const_iterator WarScheduleInfoListItor;
 class GCWarScheduleList : public Packet
 {
 public:
-	GCWarScheduleList() throw();
-	virtual ~GCWarScheduleList() throw();
+	GCWarScheduleList() ;
+	virtual ~GCWarScheduleList() ;
 
 public:
 	void read(SocketInputStream & iStream) ;
@@ -47,7 +47,7 @@ public:
 
 public:
 	void addWarScheduleInfo( WarScheduleInfo* warInfo ) throw() { m_WarScheduleList.push_back( warInfo ); }
-	WarScheduleInfo* popWarScheduleInfo() throw();
+	WarScheduleInfo* popWarScheduleInfo() ;
 
 private:
 	WarScheduleInfoList m_WarScheduleList;

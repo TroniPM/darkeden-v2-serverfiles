@@ -11,7 +11,7 @@
 #include "GameServerWarTest.h"
 
 void testGameServer()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_TEST

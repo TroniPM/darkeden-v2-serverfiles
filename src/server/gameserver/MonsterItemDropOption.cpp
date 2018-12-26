@@ -79,7 +79,7 @@ void MonsterItemDropOptionManager::clear()
 }
 
 void MonsterItemDropOptionManager::load()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

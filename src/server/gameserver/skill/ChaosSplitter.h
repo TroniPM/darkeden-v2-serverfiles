@@ -16,7 +16,7 @@
 class ChaosSplitter : public SkillHandler 
 {
 public:
-	ChaosSplitter() throw();
+	ChaosSplitter() ;
 	~ChaosSplitter() throw() {}
 	
 public:

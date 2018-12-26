@@ -13,7 +13,7 @@ AnotherQuestRewardInfo::~AnotherQuestRewardInfo()
 }
 
 QuestMessage AnotherQuestRewardInfo::canGiveReward( PlayerCreature* pPC ) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -23,7 +23,7 @@ QuestMessage AnotherQuestRewardInfo::canGiveReward( PlayerCreature* pPC ) const
 }
 
 QuestMessage AnotherQuestRewardInfo::giveReward( PlayerCreature *pPC ) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

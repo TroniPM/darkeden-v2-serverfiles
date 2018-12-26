@@ -84,7 +84,7 @@ PacketSize_t GCTimeLimitItemInfo::getPacketSize() const
 }
 
 DWORD GCTimeLimitItemInfo::getTimeLimit(ObjectID_t objectID) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -98,7 +98,7 @@ DWORD GCTimeLimitItemInfo::getTimeLimit(ObjectID_t objectID) const
 }
 
 void GCTimeLimitItemInfo::addTimeLimit(ObjectID_t objectID, DWORD time)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

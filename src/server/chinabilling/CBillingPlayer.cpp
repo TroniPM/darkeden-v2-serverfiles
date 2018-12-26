@@ -49,13 +49,13 @@ const int defaultCBillingPlayerOutputStreamSize = 10240;
 
 // constructor
 CBillingPlayer::CBillingPlayer()
-	throw ( Error )
+	
 {
 }
 
 // constructor
 CBillingPlayer::CBillingPlayer( Socket* pSocket )
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -75,7 +75,7 @@ CBillingPlayer::CBillingPlayer( Socket* pSocket )
 
 // destructor
 CBillingPlayer::~CBillingPlayer()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -916,7 +916,7 @@ void CBillingPlayer::checkSessionID( CBillingPacketHeader& header, GamePlayer* p
 #ifdef __GAME_SERVER__
 	// DB에 packet 로그 남기기
 void CBillingPlayer::logPacket( CBillingPacketHeader* header, CBillingPacketResponseLoginBody* login, CBillingPacketResponseMinusPointBody* point, CBillingPacketResponseLogoutBody* logout, CBillingPacketErrorBody* error )
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -1158,7 +1158,7 @@ void CBillingPlayer::logPacket( CBillingPacketHeader* header, CBillingPacketResp
 
 // get debug string
 string CBillingPlayer::toString() const
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 

@@ -55,19 +55,19 @@ private:
 class RankBonusInfoManager 
 {
 public:
-	RankBonusInfoManager() throw();
-	~RankBonusInfoManager() throw();
+	RankBonusInfoManager() ;
+	~RankBonusInfoManager() ;
 
 public:
 
 	// initialize Manager
 	void init();
 
-	// void load() throw();
+	// void load() ;
 	void load();
 	
 	// clear list
-	void clear() throw();
+	void clear() ;
 
 	// Save to DB
 	void save();

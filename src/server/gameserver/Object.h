@@ -70,7 +70,7 @@ public:
 	// 이렇게 하면 초당 1000 개의 객체가 새로 생긴다고 할지라도 4M 초,
 	// 즉 40-50일동안 안전하다는 뜻이다.
 	ObjectID_t getObjectID()  { Assert(m_ObjectID != 0); return m_ObjectID; };
-	void setObjectID(ObjectID_t objectID) throw(Error) { Assert(objectID != 0); m_ObjectID = objectID; }
+	void setObjectID(ObjectID_t objectID)  { Assert(objectID != 0); m_ObjectID = objectID; }
 
 	// get object class(virtual)
 	// Object* pObject 에 대해서 이 객체가 크리처인지, 아이템인지, 아니면

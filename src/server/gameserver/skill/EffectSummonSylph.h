@@ -23,7 +23,7 @@ public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_SUMMON_SYLPH; }
     EffectClass getSendEffectClass()  { return m_EClass; }
 
-	void affect() throw(Error){}
+	void affect() {}
 
 	void unaffect(Creature* pCreature);
 	void unaffect();

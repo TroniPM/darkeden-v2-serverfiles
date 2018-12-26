@@ -23,8 +23,8 @@
 class Persona : public ConcreteItem<Item::ITEM_CLASS_PERSONA, NoStack, HasDurability, HasOption, GroceryGrade, NoAttacking, NoEnchantLevel, HasOption2, HasHeroOption, HasHeroOptionAttr>
 {
 public:
-	Persona() throw();
-	Persona(ItemType_t itemType, const list<OptionType_t>& optionType) throw();
+	Persona() ;
+	Persona(ItemType_t itemType, const list<OptionType_t>& optionType) ;
 	
 public:
 	virtual void create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID=0);
@@ -33,7 +33,7 @@ public:
 	void tinysave(const char* field) ;
 	virtual string toString() ;
 
-	static void initItemIDRegistry(void) throw();
+	static void initItemIDRegistry(void) ;
 
 private:
 	static Mutex    m_Mutex;          // 아이템 ID 관련 락

@@ -18,7 +18,7 @@
 #include "time.h"
 
 EffectSimyunEnterLoop::EffectSimyunEnterLoop(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -28,21 +28,21 @@ EffectSimyunEnterLoop::EffectSimyunEnterLoop(Creature* pCreature)
 }
 
 EffectSimyunEnterLoop::~EffectSimyunEnterLoop()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void EffectSimyunEnterLoop::affect (Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void EffectSimyunEnterLoop::unaffect()
-	    throw(Error)
+	    
 {
     __BEGIN_TRY
 
@@ -53,7 +53,7 @@ void EffectSimyunEnterLoop::unaffect()
 }
 
 void EffectSimyunEnterLoop::unaffect (Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -77,7 +77,7 @@ void EffectSimyunEnterLoop::unaffect (Creature* pCreature)
 }
 
 void EffectSimyunEnterLoop::create (const string & ownerID) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -112,7 +112,7 @@ void EffectSimyunEnterLoop::create (const string & ownerID)
 }
 
 void EffectSimyunEnterLoop::destroy (const string & ownerID)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -134,7 +134,7 @@ void EffectSimyunEnterLoop::destroy (const string & ownerID)
 }
 
 void EffectSimyunEnterLoop::save (const string & ownerID) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -172,7 +172,7 @@ string EffectSimyunEnterLoop::toString()
 }
 
 void EffectSimyunEnterLoopLoader::load (Creature* pCreature) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

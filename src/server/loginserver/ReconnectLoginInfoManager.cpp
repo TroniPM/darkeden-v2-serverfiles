@@ -134,7 +134,7 @@ ReconnectLoginInfo * ReconnectLoginInfoManager::getReconnectLoginInfo ( string c
 // expire 된 ReconnectLogin Info 객체를 삭제한다.
 //----------------------------------------------------------------------
 void ReconnectLoginInfoManager::heartbeat ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 

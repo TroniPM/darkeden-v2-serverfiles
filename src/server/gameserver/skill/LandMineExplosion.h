@@ -16,7 +16,7 @@
 class LandMineExplosion: public SkillHandler 
 {
 public:
-	LandMineExplosion() throw();
+	LandMineExplosion() ;
 	~LandMineExplosion() throw() {}
 	
 public:

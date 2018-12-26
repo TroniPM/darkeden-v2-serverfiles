@@ -19,8 +19,8 @@
 class GCSkillFailed1 : public ModifyInfo 
 {
 public:
-	GCSkillFailed1() throw();
-	~GCSkillFailed1() throw();
+	GCSkillFailed1() ;
+	~GCSkillFailed1() ;
 	
 public:
     void read(SocketInputStream & iStream) ;

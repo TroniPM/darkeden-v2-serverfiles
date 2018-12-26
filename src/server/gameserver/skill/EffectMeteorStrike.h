@@ -65,7 +65,7 @@ public:
 	virtual string getEffectClassName()  { return "EffectMeteorStrike"; }
 
 public:
-	virtual void load(Creature* pCreature) throw(Error) {}
+	virtual void load(Creature* pCreature)  {}
 };
 
 extern EffectMeteorStrikeLoader* g_pEffectMeteorStrikeLoader;

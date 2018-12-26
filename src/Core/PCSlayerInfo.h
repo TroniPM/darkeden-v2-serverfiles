@@ -124,7 +124,7 @@ public:
 	// get/set Slot
 	Slot getSlot ()  { return m_Slot; }
 	void setSlot (Slot slot) throw () { m_Slot = slot; }
-	void setSlot (string slot) throw (InvalidProtocolException) 
+	void setSlot (string slot)  
 	{
 		if (slot == Slot2String[SLOT1]) 
 		{
@@ -152,27 +152,27 @@ public:
 	// *CAUTION*
 	// Assert()로 할 경우, NDEBUG 모드에서는 disable 되므로 if 로 체크해야 한다. 
 	Attr_t getSTR ()  { if (m_STR > maxSlayerAttr) throw Error("STR out of range"); return m_STR; }
-	void setSTR (Attr_t str) throw (Error) { if (str > maxSlayerAttr) throw Error("STR out of range"); m_STR = str; }
+	void setSTR (Attr_t str)  { if (str > maxSlayerAttr) throw Error("STR out of range"); m_STR = str; }
 
 	// get/set DEX
 	Attr_t getDEX ()  { if (m_DEX > maxSlayerAttr) throw Error("DEX out of range"); return m_DEX; }
-	void setDEX (Attr_t dex) throw (Error) { if (dex > maxSlayerAttr) throw Error("DEX out of range"); m_DEX = dex; }
+	void setDEX (Attr_t dex)  { if (dex > maxSlayerAttr) throw Error("DEX out of range"); m_DEX = dex; }
 
 	// get/set INT
 	Attr_t getINT ()  { if (m_INT > maxSlayerAttr) throw Error("INT out of range"); return m_INT; }
-	void setINT (Attr_t inte) throw (Error) { if (inte > maxSlayerAttr) throw Error("INT out of range"); m_INT = inte; }
+	void setINT (Attr_t inte)  { if (inte > maxSlayerAttr) throw Error("INT out of range"); m_INT = inte; }
 
 	// get/set STR Exp
 	Exp_t getSTRExp ()  { return m_STRExp; };
-	void setSTRExp(Exp_t STRExp) throw(Error) { m_STRExp = STRExp; }
+	void setSTRExp(Exp_t STRExp)  { m_STRExp = STRExp; }
 
 	// get/set DEX Exp
 	Exp_t getDEXExp ()  { return m_DEXExp; };
-	void setDEXExp(Exp_t DEXExp) throw(Error) { m_DEXExp = DEXExp; }
+	void setDEXExp(Exp_t DEXExp)  { m_DEXExp = DEXExp; }
 
 	// get/set INT Exp
 	Exp_t getINTExp ()  { return m_INTExp; };
-	void setINTExp(Exp_t INTExp) throw(Error) { m_INTExp = INTExp; }
+	void setINTExp(Exp_t INTExp)  { m_INTExp = INTExp; }
 
 
 	Rank_t getRank ()  { return m_Rank; }
@@ -245,7 +245,7 @@ public:
 		m_Outlook |= bitset<SLAYER_BIT_MAX>(hairStyle << SLAYER_BIT_HAIRSTYLE1); 
 	}
 
-	void setHairStyle (string hairStyle) throw (InvalidProtocolException)
+	void setHairStyle (string hairStyle) 
 	{
 		if (hairStyle == HairStyle2String[HAIR_STYLE1]) 
 		{
@@ -321,7 +321,7 @@ public:
 		m_Outlook |= bitset<SLAYER_BIT_MAX>(shieldType << SLAYER_BIT_SHIELD1); 
 	}
 
-	void setShapeInfo(DWORD flag, Color_t color[SLAYER_COLOR_MAX]) throw();
+	void setShapeInfo(DWORD flag, Color_t color[SLAYER_COLOR_MAX]) ;
 
 // get/set color
 public:

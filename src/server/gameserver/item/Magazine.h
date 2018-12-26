@@ -20,8 +20,8 @@
 class Magazine : public Item 
 {
 public:
-	Magazine() throw();
-	Magazine(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num) throw();
+	Magazine() ;
+	Magazine(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num) ;
 	
 public:
 	virtual void create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID=0);
@@ -30,7 +30,7 @@ public:
 	void tinysave(const char* field) ;
 	virtual string toString() ;
 
-	static void initItemIDRegistry(void) throw();
+	static void initItemIDRegistry(void) ;
 
 public:
 	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_MAGAZINE; }

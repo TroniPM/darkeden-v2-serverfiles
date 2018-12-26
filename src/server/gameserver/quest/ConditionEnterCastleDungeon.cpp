@@ -99,7 +99,7 @@ bool ConditionEnterCastleDungeon::isSatisfied (Creature * pCreature1 , Creature 
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionEnterCastleDungeon::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 	try
 	{

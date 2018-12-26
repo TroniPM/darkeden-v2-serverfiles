@@ -23,9 +23,9 @@
 class SG : public ConcreteItem<Item::ITEM_CLASS_SG, NoStack, HasDurability, HasOption, WeaponGrade, SlayerGun, NoEnchantLevel, HasOption2, NoHeroOption, NoHeroOptionAttr>
 {
 public:
-	SG() throw();
-	SG(ItemType_t itemType, const list<OptionType_t>& optionType) throw();
-	~SG() throw();
+	SG() ;
+	SG(ItemType_t itemType, const list<OptionType_t>& optionType) ;
+	~SG() ;
 	
 public:
 	virtual void create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID=0);
@@ -35,7 +35,7 @@ public:
 	virtual void saveBullet();
 	virtual string toString() ;
 
-	static void initItemIDRegistry(void) throw();
+	static void initItemIDRegistry(void) ;
 
 public:
 //	virtual ItemClass getItemClass()  { return Item::ITEM_CLASS_SG; }

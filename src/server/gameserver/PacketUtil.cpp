@@ -1182,7 +1182,7 @@ void makeGCOtherModifyInfo(GCOtherModifyInfo* pInfo, Ousters* pOusters, const OU
 }
 
 void makeGCCreateItem(GCCreateItem* pGCCreateItem, Item* pItem, CoordInven_t x, CoordInven_t y) 
-	throw(Error)
+	
 {
 	pGCCreateItem->setObjectID(pItem->getObjectID());
 	pGCCreateItem->setItemClass((BYTE)pItem->getItemClass());
@@ -1239,7 +1239,7 @@ void makeGCCreateItem(GCCreateItem* pGCCreateItem, Item* pItem, CoordInven_t x, 
 }
 
 void sendPayInfo(GamePlayer* pGamePlayer)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1288,7 +1288,7 @@ void sendPayInfo(GamePlayer* pGamePlayer)
 
 // 주위에 LevelUp effect를 뿌려준다.
 void sendEffectLevelUp(Creature* pCreature)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1321,7 +1321,7 @@ void sendEffectLevelUp(Creature* pCreature)
 }
 
 void sendSystemMessage(GamePlayer* pGamePlayer, const string& msg)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1364,7 +1364,7 @@ void sendSystemMessage(GamePlayer* pGamePlayer, const string& msg)
 }
 
 bool makeGCWarScheduleList(GCWarScheduleList* pGCWarScheduleList, ZoneID_t zoneID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1383,7 +1383,7 @@ bool makeGCWarScheduleList(GCWarScheduleList* pGCWarScheduleList, ZoneID_t zoneI
 }
 
 /*void makeGCItemNameInfoList(GCItemNameInfoList* pInfo, PlayerCreature* pPC)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

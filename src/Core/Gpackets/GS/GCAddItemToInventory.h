@@ -20,8 +20,8 @@
 class GCAddItemToInventory 
 {
 public:
-	GCAddItemToInventory() throw();
-	~GCAddItemToInventory() throw();
+	GCAddItemToInventory() ;
+	~GCAddItemToInventory() ;
 	
 public:
     void read(SocketInputStream & iStream) ;

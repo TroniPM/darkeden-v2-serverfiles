@@ -68,7 +68,7 @@ OustersArmsband::~OustersArmsband()
 // create item
 //--------------------------------------------------------------------------------
 void OustersArmsband::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -120,7 +120,7 @@ void OustersArmsband::create(const string & ownerID, Storage storage, StorageID_
 // destroy item
 //--------------------------------------------------------------------------------
 bool OustersArmsband::destroy()
-    throw(Error)
+    
 {
     __BEGIN_TRY
 
@@ -170,7 +170,7 @@ bool OustersArmsband::destroy()
 // save item
 //--------------------------------------------------------------------------------
 void OustersArmsband::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -194,7 +194,7 @@ void OustersArmsband::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void OustersArmsband::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -301,7 +301,7 @@ string OustersArmsband::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t OustersArmsband::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -315,7 +315,7 @@ VolumeWidth_t OustersArmsband::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t OustersArmsband::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -329,7 +329,7 @@ VolumeHeight_t OustersArmsband::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t OustersArmsband::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -358,7 +358,7 @@ PocketNum_t OustersArmsband::getPocketCount(void) const
 // get/set armor's Defense Bonus
 //--------------------------------------------------------------------------------
 Defense_t OustersArmsband::getDefenseBonus() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -367,7 +367,7 @@ Defense_t OustersArmsband::getDefenseBonus() const
 	__END_CATCH
 }
 Protection_t OustersArmsband::getProtectionBonus() const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -405,7 +405,7 @@ string OustersArmsbandInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void OustersArmsbandInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -471,7 +471,7 @@ void OustersArmsbandInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void OustersArmsbandLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -681,7 +681,7 @@ pOustersArmsband->setHeroOptionAttr(pResult->getInt(++i));
 // load to zone
 //--------------------------------------------------------------------------------
 void OustersArmsbandLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -763,7 +763,7 @@ pOustersArmsband->setHeroOptionAttr(pResult->getInt(++i));
 // load to inventory
 //--------------------------------------------------------------------------------
 void OustersArmsbandLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

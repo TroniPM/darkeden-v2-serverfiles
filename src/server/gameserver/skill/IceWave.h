@@ -16,7 +16,7 @@
 class IceWave: public SkillHandler 
 {
 public:
-	IceWave() throw();
+	IceWave() ;
 	~IceWave() throw() {}
 	
 public:

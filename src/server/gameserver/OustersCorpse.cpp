@@ -9,7 +9,7 @@
 #include "Ousters.h"
 
 OustersCorpse::OustersCorpse (Ousters* pOusters)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

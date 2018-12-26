@@ -143,7 +143,7 @@ public:
 	void setObjectID (ObjectID_t objectID) throw () { m_ObjectID = objectID; }
 
     string getName ()  { return m_Name; }
-    void setName (const string & name) throw (Error) { m_Name = name; Assert(m_Name != ""); }
+    void setName (const string & name)  { m_Name = name; Assert(m_Name != ""); }
 
 	Coord_t getX ()  { return m_X; }
 	void setX (Coord_t x) throw () { m_X = x; }
@@ -156,7 +156,7 @@ public:
 
 	Sex getSex ()  { return m_Sex; }
 	void setSex (Sex sex) throw () { m_Sex = sex; }
-	void setSex (const string & sex) throw (InvalidProtocolException)
+	void setSex (const string & sex) 
 	{
 		if (sex == Sex2String[MALE]) 
 			m_Sex = MALE;

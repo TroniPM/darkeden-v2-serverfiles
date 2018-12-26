@@ -65,7 +65,7 @@ public:
 	virtual string getEffectClassName()  { return "EffectBloodCurse"; }
 
 public:
-	virtual void load(Creature* pCreature) throw(Error) {}
+	virtual void load(Creature* pCreature)  {}
 };
 
 extern EffectBloodCurseLoader* g_pEffectBloodCurseLoader;

@@ -23,10 +23,10 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_MAGIC_ELUSION; }
 
-	void affect() throw(Error){}
+	void affect() {}
 
 	void unaffect();
-	void unaffect(Creature* pCreature) throw(Error) {};
+	void unaffect(Creature* pCreature)  {};
 
 	string toString() ;
 };

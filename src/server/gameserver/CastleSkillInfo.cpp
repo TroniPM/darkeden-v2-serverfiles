@@ -63,7 +63,7 @@ CastleSkillInfoManager::~CastleSkillInfoManager()
 }
 
 void CastleSkillInfoManager::clear()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -80,7 +80,7 @@ void CastleSkillInfoManager::clear()
 }
 
 void CastleSkillInfoManager::load()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -115,7 +115,7 @@ void CastleSkillInfoManager::load()
 }
 
 void CastleSkillInfoManager::addCastleSkillInfo( CastleSkillInfo* pCastleSkillInfo )
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

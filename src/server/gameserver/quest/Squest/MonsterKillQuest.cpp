@@ -28,7 +28,7 @@ MonsterKillQuestFactory::MonsterTypeInfos	MonsterKillQuestFactory::m_MonsterType
 //--------------------------------------------------------------------------------
 void		
 MonsterKillQuest::create() 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -64,7 +64,7 @@ MonsterKillQuest::create()
 //--------------------------------------------------------------------------------
 void		
 MonsterKillQuest::save() 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -88,7 +88,7 @@ MonsterKillQuest::save()
 //--------------------------------------------------------------------------------
 bool		
 MonsterKillQuest::checkSuccess(const QuestEvent* pQuestEvent)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -125,7 +125,7 @@ MonsterKillQuest::checkSuccess(const QuestEvent* pQuestEvent)
 //--------------------------------------------------------------------------------
 bool		
 MonsterKillQuest::checkComplete() 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -139,7 +139,7 @@ MonsterKillQuest::checkComplete()
 //--------------------------------------------------------------------------------
 Quest*				
 MonsterKillQuestFactory::create(const QuestCreateInfo* qcInfo) const 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -233,7 +233,7 @@ MonsterKillQuestFactory::initMonsterTypeInfos()
 
 string
 MonsterKillQuest::toString() const
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	

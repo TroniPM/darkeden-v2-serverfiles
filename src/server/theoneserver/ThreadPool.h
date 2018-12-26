@@ -43,11 +43,11 @@ class ThreadPool {
 public:
 	
 	// constructor
-	ThreadPool() throw();
+	ThreadPool() ;
 	
 	// destructor
 	// 포함하고 있는 모든 쓰레드 객체를 삭제해야 한다.
-	virtual ~ThreadPool() throw();
+	virtual ~ThreadPool() ;
 
 	
 //////////////////////////////////////////////////

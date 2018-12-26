@@ -55,7 +55,7 @@ public :
 	void setListNum(BYTE ListNum) throw() { m_ListNum = ListNum; }
 
 	// add / delete / clear S List
-	void addListElement(EffectID_t EffectID, DWORD Value) throw(); 
+	void addListElement(EffectID_t EffectID, DWORD Value) ; 
 
 	// ClearList
 	void clearList() throw() { m_EList.clear(); m_ListNum = 0; }

@@ -54,7 +54,7 @@ Helm::Helm(ItemType_t itemType, const list<OptionType_t>& optionType)
 // create item
 //--------------------------------------------------------------------------------
 void Helm::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -107,7 +107,7 @@ void Helm::create(const string & ownerID, Storage storage, StorageID_t storageID
 // save item
 //--------------------------------------------------------------------------------
 void Helm::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -131,7 +131,7 @@ void Helm::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void Helm::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -199,7 +199,7 @@ string Helm::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t Helm::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -213,7 +213,7 @@ VolumeWidth_t Helm::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t Helm::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -227,7 +227,7 @@ VolumeHeight_t Helm::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t Helm::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -241,7 +241,7 @@ Weight_t Helm::getWeight() const
 // get/set armor's Defense Bonus
 //--------------------------------------------------------------------------------
 Defense_t Helm::getDefenseBonus() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -250,7 +250,7 @@ Defense_t Helm::getDefenseBonus() const
 	__END_CATCH
 }
 Protection_t Helm::getProtectionBonus() const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -288,7 +288,7 @@ string HelmInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void HelmInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -353,7 +353,7 @@ void HelmInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void HelmLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -551,7 +551,7 @@ pHelm->setHeroOptionAttr(pResult->getInt(++i));
 // load to zone
 //--------------------------------------------------------------------------------
 void HelmLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -634,7 +634,7 @@ pHelm->setHeroOptionAttr(pResult->getInt(++i));
 // load to inventory
 //--------------------------------------------------------------------------------
 void HelmLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

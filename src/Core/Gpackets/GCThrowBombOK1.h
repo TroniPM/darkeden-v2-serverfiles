@@ -30,10 +30,10 @@ class GCThrowBombOK1 : public ModifyInfo {
 public :
 	
 	// constructor
-	GCThrowBombOK1() throw();
+	GCThrowBombOK1() ;
 	
 	// destructor
-	~GCThrowBombOK1() throw();
+	~GCThrowBombOK1() ;
 
 	
 public :
@@ -83,7 +83,7 @@ public :
 	void setCListNum(BYTE CListNum) throw() { m_CListNum = CListNum; }
 
 	// add / delete  Creature List
-	void addCListElement(ObjectID_t ObjectID) throw();
+	void addCListElement(ObjectID_t ObjectID) ;
 	void clearCList() throw() { m_CList.clear(); m_CListNum = 0; }
 
 	// pop front Element in Status List

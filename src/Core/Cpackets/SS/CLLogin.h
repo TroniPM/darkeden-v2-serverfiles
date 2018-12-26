@@ -147,7 +147,7 @@ public:
 
 private :
 	static bool checkFreePass(CLLogin* pPacket, Player* pPlayer);
-	static bool	checkNetMarbleClient (CLLogin* pPacket , Player* pPlayer) throw (ProtocolException , Error);
+	static bool	checkNetMarbleClient (CLLogin* pPacket , Player* pPlayer) ;
 	static bool checkWebLogin( CLLogin* pPacket, Player* pPlayer ) throw ( ProtocolException, Error );
 #if defined(__THAILAND_SERVER__)
 	static bool onChildGuardTimeArea(int pm, int am, string enable);

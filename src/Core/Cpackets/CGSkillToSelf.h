@@ -26,10 +26,10 @@ class CGSkillToSelf : public Packet {
 public:
 	
 	// constructor
-	CGSkillToSelf() throw();
+	CGSkillToSelf() ;
 	
 	// destructor
-	~CGSkillToSelf() throw();
+	~CGSkillToSelf() ;
 
 	
 public:

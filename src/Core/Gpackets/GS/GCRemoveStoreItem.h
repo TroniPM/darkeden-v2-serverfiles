@@ -19,7 +19,7 @@ class GCRemoveStoreItem : public Packet
 {
 public:
 	GCRemoveStoreItem() throw() { }
-	virtual ~GCRemoveStoreItem() throw();
+	virtual ~GCRemoveStoreItem() ;
 
 public:
 	void read(SocketInputStream & iStream) ;

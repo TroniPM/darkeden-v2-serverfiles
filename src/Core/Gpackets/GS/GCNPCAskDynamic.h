@@ -18,8 +18,8 @@
 class GCNPCAskDynamic : public Packet 
 {
 public:
-	GCNPCAskDynamic() throw();
-	virtual ~GCNPCAskDynamic() throw();
+	GCNPCAskDynamic() ;
+	virtual ~GCNPCAskDynamic() ;
 
 public:
 	void read(SocketInputStream & iStream) ;
@@ -55,8 +55,8 @@ public:
 
 	BYTE getContentsCount(void)  { return m_ContentsCount; }
 
-	void addContent(string content) throw();
-	string popContent(void) throw();
+	void addContent(string content) ;
+	string popContent(void) ;
 
 private:
 	ObjectID_t   m_ObjectID;       // NPC's object id

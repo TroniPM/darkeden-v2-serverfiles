@@ -22,7 +22,7 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 void ActionHeightTeachSkill::read (PropertyBuffer & propertyBuffer)
-    throw (Error)
+    
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -33,7 +33,7 @@ void ActionHeightTeachSkill::read (PropertyBuffer & propertyBuffer)
 // 액션을 실행한다.
 ////////////////////////////////////////////////////////////////////////////////
 void ActionHeightTeachSkill::execute (Creature * pCreature1 , Creature * pCreature2) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

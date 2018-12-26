@@ -82,7 +82,7 @@ OustersEXPInfoManager::~OustersEXPInfoManager()
 }
 
 void OustersEXPInfoManager::init()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -92,7 +92,7 @@ void OustersEXPInfoManager::init()
 }
 
 void OustersEXPInfoManager::load()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG

@@ -16,7 +16,7 @@
 class MassacreMenegroth : public SkillHandler 
 {
 public:
-	MassacreMenegroth() throw();
+	MassacreMenegroth() ;
 	~MassacreMenegroth() throw() {}
 	
 public:

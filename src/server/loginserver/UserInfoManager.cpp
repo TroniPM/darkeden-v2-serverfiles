@@ -53,7 +53,7 @@ UserInfoManager::~UserInfoManager ()
 // initialize GSIM
 //----------------------------------------------------------------------
 void UserInfoManager::init ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -69,7 +69,7 @@ void UserInfoManager::init ()
 // load data from database
 //----------------------------------------------------------------------
 void UserInfoManager::load ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 

@@ -16,7 +16,7 @@
 class DuckingWallop: public SkillHandler 
 {
 public:
-	DuckingWallop() throw();
+	DuckingWallop() ;
 	~DuckingWallop() throw() {}
 	
 public:

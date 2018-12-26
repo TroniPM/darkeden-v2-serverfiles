@@ -22,8 +22,8 @@
 class ActionSimpleQuestRegen : public Action 
 {
 public:
-	ActionSimpleQuestRegen() throw();
-	virtual ~ActionSimpleQuestRegen() throw();
+	ActionSimpleQuestRegen() ;
+	virtual ~ActionSimpleQuestRegen() ;
 	
 public:
 	virtual ActionType_t getActionType()  { return ACTION_SIMPLE_QUEST_REGEN; }

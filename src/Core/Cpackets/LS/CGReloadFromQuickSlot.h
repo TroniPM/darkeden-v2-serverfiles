@@ -24,10 +24,10 @@ class CGReloadFromQuickSlot : public Packet {
 public:
 
 	// constructor
-	CGReloadFromQuickSlot() throw();
+	CGReloadFromQuickSlot() ;
 
 	// destructor
-	~CGReloadFromQuickSlot() throw();
+	~CGReloadFromQuickSlot() ;
 
 public:
 	

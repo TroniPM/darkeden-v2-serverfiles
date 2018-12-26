@@ -18,7 +18,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 UDPManager::UDPManager () 
-	throw (Error)
+	
 : m_pDatagramSocket(NULL)
 {
 	__BEGIN_TRY
@@ -33,7 +33,7 @@ UDPManager::UDPManager ()
 // destructor
 //////////////////////////////////////////////////////////////////////
 UDPManager::~UDPManager () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

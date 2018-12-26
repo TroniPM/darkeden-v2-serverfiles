@@ -31,10 +31,10 @@ class SGGuildInfo : public Packet {
 public:
 
 	// constructor
-	SGGuildInfo() throw();
+	SGGuildInfo() ;
 
 	// destructor
-	~SGGuildInfo() throw();
+	~SGGuildInfo() ;
 	
     void read(SocketInputStream& iStream) ;
 		    
@@ -64,7 +64,7 @@ public:
 	void addGuildInfo( GuildInfo2* pGuildInfo ) throw() { m_GuildInfoList.push_front( pGuildInfo ); }
 
 	// clear GuildInfoList
-	void clearGuildInfoList() throw();
+	void clearGuildInfoList() ;
 
 	// pop front element in GuildInfoList
 	GuildInfo2* popFrontGuildInfoList() throw()

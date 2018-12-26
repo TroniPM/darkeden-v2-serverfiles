@@ -52,7 +52,7 @@ void VariableBuffer::clear()
 }
 
 void VariableBuffer::parse()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

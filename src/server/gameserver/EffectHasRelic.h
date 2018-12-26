@@ -24,8 +24,8 @@ public:
     virtual EffectClass getSendEffectClass()  { return (EffectClass)((int)getEffectClass() + m_Part); }
 
 	virtual void affect();
-	virtual void affect(Creature* pCreature) throw(Error) = 0;
-	virtual void affect(Item* pItem) throw(Error) =0;
+	virtual void affect(Creature* pCreature)  = 0;
+	virtual void affect(Item* pItem)  =0;
 
 	virtual void unaffect(Creature* pCreature);
 	virtual void unaffect(Item* pItem);

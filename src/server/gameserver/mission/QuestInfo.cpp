@@ -49,7 +49,7 @@ string QuestInfo::toString()
 }
 
 bool QuestInfo::canExecute( PlayerCreature* pPC ) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

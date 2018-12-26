@@ -18,13 +18,13 @@ template <class T>
 class ValueList 
 {
 public:
-    void read (SocketInputStream & iStream);// throw (ProtocolException, Error);
+    void read (SocketInputStream & iStream);// ;
     void write (SocketOutputStream & oStream);// ;
 
 	PacketSize_t 	getPacketSize () 		{ return szBYTE + sizeof(T) * m_Values.size(); }
 	static uint 	getPacketMaxSize() throw() 	{ return szBYTE + sizeof(T) * 255; }
 
-	string toString ();// constthrow ();
+	string toString ();
 
 public:
 	int 	getSize() const { return m_Values.size(); }
@@ -72,7 +72,6 @@ private:
 //////////////////////////////////////////////////////////////////////////////
 template <class T>
 void ValueList<T>::read ( SocketInputStream & iStream ) 
-	 //throw ( ProtocolException , Error )
 {
 	__BEGIN_TRY
 		
@@ -96,7 +95,6 @@ void ValueList<T>::read ( SocketInputStream & iStream )
 //////////////////////////////////////////////////////////////////////////////
 template <class T>
 void ValueList<T>::write ( SocketOutputStream & oStream ) 
-     //
 {
 	__BEGIN_TRY
 		
@@ -118,7 +116,6 @@ void ValueList<T>::write ( SocketOutputStream & oStream )
 //////////////////////////////////////////////////////////////////////////////
 template <class T>
 string ValueList<T>::toString () 
-	//
 {
 	__BEGIN_TRY
 
@@ -138,6 +135,8 @@ string ValueList<T>::toString ()
 	return msg.toString();
 
 	__END_CATCH
+
+	return NULL;
 }
 
 #endif

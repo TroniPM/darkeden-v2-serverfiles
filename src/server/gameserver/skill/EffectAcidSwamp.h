@@ -28,7 +28,7 @@ public:
 
 	void unaffect();
 	void unaffect(Creature* pCreature);
-	void unaffect(Item* pItem) throw(Error) {}
+	void unaffect(Item* pItem)  {}
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject);
 
 	string toString() ;
@@ -80,7 +80,7 @@ public:
 	virtual string getEffectClassName()  { return "EffectAcidSwamp"; }
 
 public:
-	virtual void load(Creature* pCreature) throw(Error) {}
+	virtual void load(Creature* pCreature)  {}
 	virtual void load(Zone* pZone);
 };
 

@@ -26,19 +26,19 @@ typedef BloodBibleBonusHashMap::const_iterator 				BloodBibleBonusHashMapConstIt
 class BloodBibleBonusManager 
 {
 public:
-	BloodBibleBonusManager() throw();
-	~BloodBibleBonusManager() throw();
+	BloodBibleBonusManager() ;
+	~BloodBibleBonusManager() ;
 
 public:
 
 	// initialize Manager
 	void init();
 
-	// void load() throw();
+	// void load() ;
 	void load();
 	
 	// clear list
-	void clear() throw();
+	void clear() ;
 
 	// Save to DB
 	void save();

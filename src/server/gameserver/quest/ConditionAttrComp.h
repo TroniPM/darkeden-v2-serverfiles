@@ -36,8 +36,8 @@ const string ConditionAttrCompOperator2String[] =
 class ConditionAttrComp : public Condition 
 {
 public:
-	ConditionAttrComp() throw();
-	virtual ~ConditionAttrComp() throw();
+	ConditionAttrComp() ;
+	virtual ~ConditionAttrComp() ;
 
 public:
 	virtual ConditionType_t getConditionType()  { return CONDITION_ATTR_COMP; }
@@ -47,7 +47,7 @@ public:
 	virtual string toString() ;
 
 public:
-	void parseOperator(string& op, uint& var) throw();
+	void parseOperator(string& op, uint& var) ;
 	bool satisfy(uint op, uint current, uint restriction) ;
 
 private:

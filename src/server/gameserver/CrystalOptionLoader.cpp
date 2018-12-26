@@ -62,7 +62,7 @@ CrystalOptionLoaderManager::~CrystalOptionLoaderManager()
 }
 
 void CrystalOptionLoaderManager::load()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

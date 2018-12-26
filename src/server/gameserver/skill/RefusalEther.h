@@ -16,7 +16,7 @@
 class RefusalEther : public SkillHandler 
 {
 public:
-	RefusalEther() throw();
+	RefusalEther() ;
 	~RefusalEther() throw() {}
 	
 public:

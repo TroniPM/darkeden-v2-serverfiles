@@ -47,7 +47,7 @@ bool ConditionCanEnterQuestZone::isSatisfied (Creature * pCreature1 , Creature *
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionCanEnterQuestZone::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 	m_QuestZoneID = propertyBuffer.getPropertyInt("ZoneID");
 }

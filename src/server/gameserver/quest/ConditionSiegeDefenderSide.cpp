@@ -36,7 +36,7 @@ bool ConditionSiegeDefenderSide::isSatisfied (Creature * pCreature1 , Creature *
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionSiegeDefenderSide::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 }
 

@@ -24,21 +24,21 @@ typedef SweeperBonusHashMap::const_iterator 			SweeperBonusHashMapConstItor;
 class SweeperBonusManager 
 {
 public:
-	SweeperBonusManager() throw();
-	~SweeperBonusManager() throw();
+	SweeperBonusManager() ;
+	~SweeperBonusManager() ;
 
 public:
 
 	// initialize Manager
 	void init();
 
-	// void load() throw();
+	// void load() ;
 	void load();
 
 	void reloadOwner(int level);
 
 	// clear list
-	void clear() throw();
+	void clear() ;
 
 	// Save to DB
 	void save();

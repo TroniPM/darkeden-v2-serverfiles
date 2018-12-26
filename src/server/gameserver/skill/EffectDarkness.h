@@ -23,23 +23,23 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_DARKNESS; }
 
-	void affect() throw(Error){}
+	void affect() {}
 	void affect(Creature* pCreature);
 	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject );
 
 	void unaffect();
-	void unaffect(Creature* pCreature) throw(Error) {};
+	void unaffect(Creature* pCreature)  {};
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject );
-	void unaffect(Item* pItem) throw(Error) {}
+	void unaffect(Item* pItem)  {}
 
 	string toString() ;
 
 public:
-	void setLevel(Attr_t l) throw(Error) { m_Level = l;}
+	void setLevel(Attr_t l)  { m_Level = l;}
 	Attr_t getLevel()  { return m_Level;}
 	
-	void setDuration(Duration_t d) throw(Error) { m_Duration = d; }
-	Duration_t getDuration() throw(Error) { return m_Duration;}
+	void setDuration(Duration_t d)  { m_Duration = d; }
+	Duration_t getDuration()  { return m_Duration;}
 	
 	void setStartTime() throw() { getCurrentTime(m_StartTime);}
 	bool isHalfTimePassed() 
@@ -75,7 +75,7 @@ public:
 	virtual string getEffectClassName()  { return "EffectDarkness"; }
 
 public:
-	virtual void load(Creature* pCreature) throw(Error) {}
+	virtual void load(Creature* pCreature)  {}
 	virtual void load(Zone* pZone);
 };
 

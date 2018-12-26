@@ -153,7 +153,7 @@ class GuildMember
 {
 
 public:
-	GuildMember() throw();
+	GuildMember() ;
 
 ///// Member constants /////
 
@@ -173,14 +173,14 @@ public:
 
 	
 public: // DB methods
-	void create() throw();
-	bool load() throw();
-	void save() throw();
-	void destroy() throw();
-	void expire() throw();
-	void leave() throw();
+	void create() ;
+	bool load() ;
+	void save() ;
+	void destroy() ;
+	void expire() ;
+	void leave() ;
 	
-	void saveIntro( const string& intro ) throw();
+	void saveIntro( const string& intro ) ;
 	string getIntro() ;
 
 	
@@ -192,7 +192,7 @@ public: // identity methods
 	void setName(const string& name) throw() { m_Name = name; }
 
 	GuildMemberRank_t getRank()  { return m_Rank; }
-	void setRank(GuildMemberRank_t rank) throw();		// Guild class 에서 처리한다.
+	void setRank(GuildMemberRank_t rank) ;		// Guild class 에서 처리한다.
 
 	bool getLogOn()  { return m_bLogOn; }
 	void setLogOn( bool logOn ) throw() { m_bLogOn = logOn; }
@@ -202,7 +202,7 @@ public: // identity methods
 	
 	string getRequestDateTime() ;
 	void setRequestDateTime( const VSDateTime& vsdatetime ) throw() { m_RequestDateTime = vsdatetime; }
-	void setRequestDateTime( const string& rdatetime ) throw();
+	void setRequestDateTime( const string& rdatetime ) ;
 	bool isRequestDateTimeOut( const VSDateTime& currentDateTime ) ;
 
 public: // debug
@@ -289,15 +289,15 @@ public:
 	};
 
 public: // constructor & destructor
-	Guild() throw();
-	virtual ~Guild() throw();
+	Guild() ;
+	virtual ~Guild() ;
 
 
 public: // DB methods
-	void create() throw();
-	bool load() throw();
-	void save() throw();
-	void destroy() throw();
+	void create() ;
+	bool load() ;
+	void save() ;
+	void destroy() ;
 
 	
 public: // identity methods
@@ -332,7 +332,7 @@ public: // identity methods
 	void setIntro( const string& intro ) throw() { m_Intro = intro; }
 
 #ifdef __SHARED_SERVER__
-	void saveIntro( const string& intro ) throw();
+	void saveIntro( const string& intro ) ;
 	void tinysave( const char* field ) ;
 	void saveCount() ;
 #endif
@@ -342,10 +342,10 @@ public: // identity methods
 	GuildMember* getMember( const string& name ) ;
 	GuildMember* getMember_NOLOCKED( const string& name ) ;
 	void addMember( GuildMember* pMember ) throw( DuplicatedException, Error );
-	void deleteMember( const string& name ) throw();
-	void modifyMember( GuildMember& Member ) throw();
+	void deleteMember( const string& name ) ;
+	void modifyMember( GuildMember& Member ) ;
 
-	void modifyMemberRank( const string& name, GuildMemberRank_t rank ) throw();
+	void modifyMemberRank( const string& name, GuildMemberRank_t rank ) ;
 
 	HashMapGuildMember& getMembers() throw() { return m_Members; }
 
@@ -355,15 +355,15 @@ public: // identity methods
 #ifdef __GAME_SERVER__
 	void addCurrentMember( const string& name ) throw( DuplicatedException, Error );
 	void deleteCurrentMember( const string& name ) throw( NoSuchElementException );
-	list<string> getCurrentMembers() throw();
+	list<string> getCurrentMembers() ;
 #endif
 
 #ifdef __SHARED_SERVER__
-	void makeInfo( GuildInfo2* pGulidInfo ) throw();
+	void makeInfo( GuildInfo2* pGulidInfo ) ;
 #endif
 
-	void makeInfo( GuildInfo* pGuildInfo ) throw();
-	void makeMemberInfo( GCGuildMemberList& gcGuildMemberList ) throw();
+	void makeInfo( GuildInfo* pGuildInfo ) ;
+	void makeMemberInfo( GCGuildMemberList& gcGuildMemberList ) ;
 
 
 public: // static
@@ -385,7 +385,7 @@ public:
 public: // debug
 	string toString() ;
 
-	static string correctString( const string& str ) throw();
+	static string correctString( const string& str ) ;
 
 
 ///// Member data /////

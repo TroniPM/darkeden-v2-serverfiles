@@ -22,8 +22,8 @@
 class GCPetUseSkill : public Packet 
 {
 public:
-	GCPetUseSkill() throw();
-	~GCPetUseSkill() throw();
+	GCPetUseSkill() ;
+	~GCPetUseSkill() ;
 	
 public:
     void read(SocketInputStream & iStream) ;

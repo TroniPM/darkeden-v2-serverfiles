@@ -29,7 +29,7 @@ bool ConditionFlagOff::isSatisfied (Creature * pCreature1 , Creature * pCreature
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionFlagOff::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 	try
 	{

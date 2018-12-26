@@ -16,7 +16,7 @@
 class PleasureExplosion: public SkillHandler 
 {
 public:
-	PleasureExplosion() throw();
+	PleasureExplosion() ;
 	~PleasureExplosion() throw() {}
 	
 public:

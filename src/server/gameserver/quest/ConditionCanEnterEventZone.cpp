@@ -29,7 +29,7 @@ bool ConditionCanEnterEventZone::isSatisfied (Creature * pCreature1 , Creature *
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionCanEnterEventZone::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 	m_EventID = propertyBuffer.getPropertyInt("EventID");
 }

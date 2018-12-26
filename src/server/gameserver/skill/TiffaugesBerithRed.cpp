@@ -8,7 +8,7 @@
 #include "SimpleMeleeSkill.h"
 
 void TiffaugesBerithRed::execute(Monster* pMonster, Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

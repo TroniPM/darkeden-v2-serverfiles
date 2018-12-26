@@ -24,8 +24,8 @@ public:
 public:
 	virtual Effect::EffectClass getEffectClass()  = 0;
 	virtual string getEffectClassName()  = 0;
-	virtual void load(Creature* pCreature) throw(Error) = 0;
-	virtual void load(Zone* pZone) throw(Error) { }
+	virtual void load(Creature* pCreature)  = 0;
+	virtual void load(Zone* pZone)  { }
 };
 
 #endif

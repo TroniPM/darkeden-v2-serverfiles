@@ -65,7 +65,7 @@ SR::~SR()
 // create item
 //--------------------------------------------------------------------------------
 void SR::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -117,7 +117,7 @@ void SR::create(const string & ownerID, Storage storage, StorageID_t storageID, 
 // save item
 //--------------------------------------------------------------------------------
 void SR::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -141,7 +141,7 @@ void SR::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void SR::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -189,7 +189,7 @@ void SR::save(const string & ownerID, Storage storage, StorageID_t storageID, BY
 //--------------------------------------------------------------------------------
 // save item
 //--------------------------------------------------------------------------------
-void SR::saveBullet() throw (Error)
+void SR::saveBullet() 
 {
 	__BEGIN_TRY
 
@@ -241,7 +241,7 @@ string SR::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t SR::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -255,7 +255,7 @@ VolumeWidth_t SR::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t SR::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -269,7 +269,7 @@ VolumeHeight_t SR::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t SR::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -283,7 +283,7 @@ Weight_t SR::getWeight() const
 // get/set weapon's minDamage
 //--------------------------------------------------------------------------------
 Damage_t SR::getMinDamage() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -297,7 +297,7 @@ Damage_t SR::getMinDamage() const
 // get/set weapon's maxDamage
 //--------------------------------------------------------------------------------
 Damage_t SR::getMaxDamage() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -311,7 +311,7 @@ Damage_t SR::getMaxDamage() const
 // get/set weapon's range
 //--------------------------------------------------------------------------------
 Range_t SR::getRange() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -325,7 +325,7 @@ Range_t SR::getRange() const
 // get/set weapon's ToHit Bonus
 //--------------------------------------------------------------------------------
 ToHit_t SR::getToHitBonus() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -379,7 +379,7 @@ string SRInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void SRInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -448,7 +448,7 @@ void SRInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void SRLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -647,7 +647,7 @@ pSR->setHeroOptionAttr(pResult->getInt(++i));
 // load to zone
 //--------------------------------------------------------------------------------
 void SRLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -731,7 +731,7 @@ pSR->setHeroOptionAttr(pResult->getInt(++i));
 // load to inventory
 //--------------------------------------------------------------------------------
 void SRLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

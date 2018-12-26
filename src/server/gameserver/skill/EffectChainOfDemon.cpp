@@ -7,7 +7,7 @@
 #include "Gpackets/GCModifyInformation.h"
 #include "Gpackets/GCRemoveEffect.h"
 
-EffectChainOfDemon::EffectChainOfDemon(Creature* pCreature) throw(Error)
+EffectChainOfDemon::EffectChainOfDemon(Creature* pCreature) 
 {
 	__BEGIN_TRY
 
@@ -17,7 +17,7 @@ EffectChainOfDemon::EffectChainOfDemon(Creature* pCreature) throw(Error)
 	__END_CATCH
 }
 
-void EffectChainOfDemon::affect() throw(Error)
+void EffectChainOfDemon::affect() 
 {
 	__BEGIN_TRY
 
@@ -31,7 +31,7 @@ void EffectChainOfDemon::affect() throw(Error)
 	__END_CATCH
 }
 
-void EffectChainOfDemon::affect(Creature* pCreature) throw(Error)
+void EffectChainOfDemon::affect(Creature* pCreature) 
 {
 	__BEGIN_TRY
 
@@ -41,7 +41,7 @@ void EffectChainOfDemon::affect(Creature* pCreature) throw(Error)
 	__END_CATCH
 }
 
-void EffectChainOfDemon::unaffect() throw(Error)
+void EffectChainOfDemon::unaffect() 
 {
 	__BEGIN_TRY
 
@@ -53,7 +53,7 @@ void EffectChainOfDemon::unaffect() throw(Error)
 	__END_CATCH
 }
 
-void EffectChainOfDemon::unaffect( Creature* pCreature ) throw (Error)
+void EffectChainOfDemon::unaffect( Creature* pCreature ) 
 {
 	__BEGIN_TRY
 

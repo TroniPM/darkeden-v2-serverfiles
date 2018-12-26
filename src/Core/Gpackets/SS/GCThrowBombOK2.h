@@ -28,10 +28,10 @@ class GCThrowBombOK2 : public ModifyInfo {
 public :
 	
 	// constructor
-	GCThrowBombOK2() throw();
+	GCThrowBombOK2() ;
 	
 	// destructor
-	~GCThrowBombOK2() throw();
+	~GCThrowBombOK2() ;
 
 	
 public :
@@ -89,7 +89,7 @@ public :
 
 
     // add / delete  Creature List
-    void addCListElement(ObjectID_t ObjectID) throw();
+    void addCListElement(ObjectID_t ObjectID) ;
 
 	// Clear Creature List
     void clearCList() throw() { m_CList.clear(); m_CListNum = 0; }

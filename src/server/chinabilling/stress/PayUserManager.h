@@ -16,7 +16,7 @@ public:
 
 public:
 	void init();
-	void stop() throw ( Error ) {}
+	void stop()  {}
 	void run();
 
 public:

@@ -19,8 +19,8 @@
 class GCShopBuyOK : public Packet 
 {
 public:
-	GCShopBuyOK() throw();
-	virtual ~GCShopBuyOK() throw();
+	GCShopBuyOK() ;
+	virtual ~GCShopBuyOK() ;
 	
 	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;

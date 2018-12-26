@@ -19,7 +19,7 @@ class GCBloodBibleList : public Packet
 {
 public:
 	GCBloodBibleList() throw() { }
-	virtual ~GCBloodBibleList() throw();
+	virtual ~GCBloodBibleList() ;
 
 public:
 	void read(SocketInputStream & iStream) ;

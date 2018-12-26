@@ -36,10 +36,10 @@ public:
 public:
 
 	// constructor
-	ZonePlayerManager() throw();
+	ZonePlayerManager() ;
 
 	// destructor
-	~ZonePlayerManager() throw();
+	~ZonePlayerManager() ;
 
 	// select 
 	void select() throw(TimeoutException, InterruptedException, Error);
@@ -83,7 +83,7 @@ public:
 	// All Member Save
 	void save();
 
-	void copyPlayers() throw();
+	void copyPlayers() ;
 
     // push Player to queue
     void pushPlayer(GamePlayer* pGamePlayer);
@@ -98,8 +98,8 @@ public:
 
 	void    removeFlag (Effect::EffectClass EC);
 
-	void lock() throw (Error) { m_Mutex.lock(); }	
-	void unlock() throw (Error) { m_Mutex.unlock(); }	
+	void lock()  { m_Mutex.lock(); }	
+	void unlock()  { m_Mutex.unlock(); }	
 
 	// 모든 플레이어를 정리한다.
 	void clearPlayers();

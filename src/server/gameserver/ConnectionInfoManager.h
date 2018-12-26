@@ -23,8 +23,8 @@ typedef hash_map< string, ConnectionInfo* > HashMapConnectionInfo;
 class ConnectionInfoManager 
 {
 public:
-	ConnectionInfoManager() throw();
-	~ConnectionInfoManager() throw();
+	ConnectionInfoManager() ;
+	~ConnectionInfoManager() ;
 
 public:
 	void addConnectionInfo(ConnectionInfo* pConnectionInfo) throw(DuplicatedException, Error);

@@ -28,7 +28,7 @@
 */
 // constructor
 CBillingPlayerManager::CBillingPlayerManager()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -44,7 +44,7 @@ CBillingPlayerManager::CBillingPlayerManager()
 
 // destructor
 CBillingPlayerManager::~CBillingPlayerManager()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -55,7 +55,7 @@ CBillingPlayerManager::~CBillingPlayerManager()
 
 // stop thread. unsupport
 void CBillingPlayerManager::stop()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 

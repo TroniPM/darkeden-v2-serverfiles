@@ -61,19 +61,19 @@ private:
 class SkillPropertyManager 
 {
 public:
-	SkillPropertyManager() throw();
-	~SkillPropertyManager() throw();
+	SkillPropertyManager() ;
+	~SkillPropertyManager() ;
 
 public:
 
 	// init SkillProperties
-	void init() throw();
+	void init() ;
 
 	// clear SkillProperties
-	void clear() throw();
+	void clear() ;
 
 	// init default SkillProperty
-	void initDefaultSkillProperty() throw();
+	void initDefaultSkillProperty() ;
 
 	// get SkillProperty
 	SkillProperty* getSkillProperty(SkillType_t SkillType) ;

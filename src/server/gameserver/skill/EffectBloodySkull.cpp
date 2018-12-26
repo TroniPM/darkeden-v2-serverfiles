@@ -12,7 +12,7 @@
 #include "Gpackets/GCAddEffect.h"
 
 EffectBloodySkull::EffectBloodySkull(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY)
-	throw(Error)
+	
 {
 
 	__BEGIN_TRY
@@ -30,7 +30,7 @@ EffectBloodySkull::EffectBloodySkull(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t
 
 
 bool EffectBloodySkull::affectCreature(Creature* pTargetCreature, bool bAffectByMove)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -82,7 +82,7 @@ bool EffectBloodySkull::affectCreature(Creature* pTargetCreature, bool bAffectBy
 
 
 void EffectBloodySkull::affect()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 /*	
@@ -184,28 +184,28 @@ void EffectBloodySkull::affect()
 }
 
 void EffectBloodySkull::affect(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void EffectBloodySkull::affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void EffectBloodySkull::unaffect(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void EffectBloodySkull::unaffect()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -216,7 +216,7 @@ void EffectBloodySkull::unaffect()
 }
 
 void EffectBloodySkull::unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObjbect)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH

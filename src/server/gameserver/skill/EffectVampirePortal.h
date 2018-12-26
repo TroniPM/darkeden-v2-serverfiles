@@ -28,14 +28,14 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_VAMPIRE_PORTAL; }
 
-	void affect() throw(Error){}
+	void affect() {}
 	void affect(Creature* pCreature);
 	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject );
 
 	void unaffect();
-	void unaffect(Creature* pCreature) throw(Error) {};
+	void unaffect(Creature* pCreature)  {};
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject );
-	void unaffect(Item* pItem) throw(Error) {}
+	void unaffect(Item* pItem)  {}
 
 	string toString() ;
 

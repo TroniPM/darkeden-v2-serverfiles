@@ -64,7 +64,7 @@ SG::~SG()
 // create item
 //--------------------------------------------------------------------------------
 void SG::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -117,7 +117,7 @@ void SG::create(const string & ownerID, Storage storage, StorageID_t storageID, 
 // save item
 //--------------------------------------------------------------------------------
 void SG::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -141,7 +141,7 @@ void SG::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void SG::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -188,7 +188,7 @@ void SG::save(const string & ownerID, Storage storage, StorageID_t storageID, BY
 //--------------------------------------------------------------------------------
 // save item
 //--------------------------------------------------------------------------------
-void SG::saveBullet() throw (Error)
+void SG::saveBullet() 
 {
 	__BEGIN_TRY
 
@@ -239,7 +239,7 @@ string SG::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t SG::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -253,7 +253,7 @@ VolumeWidth_t SG::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t SG::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -267,7 +267,7 @@ VolumeHeight_t SG::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t SG::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -281,7 +281,7 @@ Weight_t SG::getWeight() const
 // get/set weapon's minDamage
 //--------------------------------------------------------------------------------
 Damage_t SG::getMinDamage() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -295,7 +295,7 @@ Damage_t SG::getMinDamage() const
 // get/set weapon's maxDamage
 //--------------------------------------------------------------------------------
 Damage_t SG::getMaxDamage() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -309,7 +309,7 @@ Damage_t SG::getMaxDamage() const
 // get/set weapon's range
 //--------------------------------------------------------------------------------
 Range_t SG::getRange() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -323,7 +323,7 @@ Range_t SG::getRange() const
 // get/set weapon's ToHit Bonus
 //--------------------------------------------------------------------------------
 ToHit_t SG::getToHitBonus() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -377,7 +377,7 @@ string SGInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void SGInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -446,7 +446,7 @@ void SGInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void SGLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -643,7 +643,7 @@ void SGLoader::load(Creature* pCreature)
 // load to zone
 //--------------------------------------------------------------------------------
 void SGLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -725,7 +725,7 @@ void SGLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void SGLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

@@ -27,8 +27,8 @@
 class GCGQuestStatusInfo : public Packet 
 {
 public:
-	GCGQuestStatusInfo() throw();
-	~GCGQuestStatusInfo() throw();
+	GCGQuestStatusInfo() ;
+	~GCGQuestStatusInfo() ;
 	
 public:
     void read(SocketInputStream & iStream) ;

@@ -26,8 +26,8 @@ public:
 	typedef map<ObjectID_t,DWORD> ItemTimeLimitMap;
 
 public :
-	GCTimeLimitItemInfo() throw();
-	~GCTimeLimitItemInfo() throw();
+	GCTimeLimitItemInfo() ;
+	~GCTimeLimitItemInfo() ;
 
     void read(SocketInputStream & iStream) ;
     void write(SocketOutputStream & oStream) ;

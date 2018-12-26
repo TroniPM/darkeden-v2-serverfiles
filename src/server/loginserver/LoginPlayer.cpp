@@ -46,7 +46,7 @@ void addLogoutPlayerData(Player* pPlayer);
 //
 //////////////////////////////////////////////////////////////////////
 LoginPlayer::LoginPlayer (Socket * pSocket)
-	 throw ( Error )
+	 
 : //Player(pSocket), 
 	m_PlayerStatus(LPS_NONE), m_FailureCount(0)
 {
@@ -96,7 +96,7 @@ LoginPlayer::LoginPlayer (Socket * pSocket)
 //
 //////////////////////////////////////////////////////////////////////
 LoginPlayer::~LoginPlayer ()
-	 throw ( Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -318,7 +318,7 @@ void LoginPlayer::processCommand ( bool Option )
 // disconnect player
 //--------------------------------------------------------------------------------
 void LoginPlayer::disconnect ( bool bDisconnected )
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -396,7 +396,7 @@ void LoginPlayer::disconnect ( bool bDisconnected )
 // DB 에 로그를 쌓지 않게 한다.
 //--------------------------------------------------------------------------------
 void LoginPlayer::disconnect_nolog ( bool bDisconnected )
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -764,7 +764,7 @@ LoginPlayer::sendLCLoginOK()
 
 
 bool    LoginPlayer::sendBillingLogin() 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -798,7 +798,7 @@ bool    LoginPlayer::sendBillingLogin()
 //
 //////////////////////////////////////////////////////////////////////
 string LoginPlayer::toString () const
-       throw ( Error )
+       
 {
 	__BEGIN_TRY
 		

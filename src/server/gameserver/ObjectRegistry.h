@@ -20,11 +20,11 @@
 class ObjectRegistry 
 {
 public:
-	ObjectRegistry() throw();
+	ObjectRegistry() ;
 
 public:
-	void registerObject(Object* pObject) throw();
-	void registerObject_NOLOCKED(Object* pObject) throw();
+	void registerObject(Object* pObject) ;
+	void registerObject_NOLOCKED(Object* pObject) ;
 	void lock();
 	void unlock();
 

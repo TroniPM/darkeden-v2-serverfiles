@@ -24,7 +24,7 @@ EventRefreshHolyLandPlayer::EventRefreshHolyLandPlayer( GamePlayer* pGamePlayer 
 }
 
 void EventRefreshHolyLandPlayer::activate () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

@@ -12,7 +12,7 @@
 #include "Gpackets/GCAddEffect.h"
 
 EffectBatStorm::EffectBatStorm(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY)
-	throw(Error)
+	
 {
 
 	__BEGIN_TRY
@@ -30,7 +30,7 @@ EffectBatStorm::EffectBatStorm(Zone* pZone, ZoneCoord_t zoneX, ZoneCoord_t zoneY
 
 
 bool EffectBatStorm::affectCreature(Creature* pTargetCreature, bool bAffectByMove)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -82,7 +82,7 @@ bool EffectBatStorm::affectCreature(Creature* pTargetCreature, bool bAffectByMov
 
 
 void EffectBatStorm::affect()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 /*	
@@ -184,28 +184,28 @@ void EffectBatStorm::affect()
 }
 
 void EffectBatStorm::affect(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void EffectBatStorm::affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void EffectBatStorm::unaffect(Creature* pCreature)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void EffectBatStorm::unaffect()
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -216,7 +216,7 @@ void EffectBatStorm::unaffect()
 }
 
 void EffectBatStorm::unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObjbect)
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 	__END_CATCH

@@ -100,7 +100,7 @@ ConditionFactoryManager::~ConditionFactoryManager ()
 // 정의된 모든 컨디션팩토리들을 여기에 추가한다.
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionFactoryManager::init ()
-	 throw (Error)
+	 
 {
 	__BEGIN_TRY
 		
@@ -150,7 +150,7 @@ void ConditionFactoryManager::init ()
 // add condition factory to factories array
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionFactoryManager::addFactory (ConditionFactory * pFactory) 
-	 throw (Error)
+	 
 {
 	__BEGIN_TRY
 		
@@ -175,7 +175,7 @@ void ConditionFactoryManager::addFactory (ConditionFactory * pFactory)
 // create condition object with condition type
 ////////////////////////////////////////////////////////////////////////////////
 Condition * ConditionFactoryManager::createCondition (ConditionType_t conditionType) const
-   throw (Error)
+   
 {
 	__BEGIN_TRY
 
@@ -197,7 +197,7 @@ Condition * ConditionFactoryManager::createCondition (ConditionType_t conditionT
 // get condition name with condition type
 ////////////////////////////////////////////////////////////////////////////////
 string ConditionFactoryManager::getConditionName (ConditionType_t conditionType) const
-   throw (Error)
+   
 {
 	__BEGIN_TRY
 
@@ -221,7 +221,7 @@ string ConditionFactoryManager::getConditionName (ConditionType_t conditionType)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 ConditionType_t ConditionFactoryManager::getConditionType (const string & conditionname) const
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

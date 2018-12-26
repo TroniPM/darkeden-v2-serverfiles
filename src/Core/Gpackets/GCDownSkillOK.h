@@ -27,10 +27,10 @@ class GCDownSkillOK : public Packet {
 public :
 	
 	// constructor
-	GCDownSkillOK() throw();
+	GCDownSkillOK() ;
 	
 	// destructor
-	~GCDownSkillOK() throw();
+	~GCDownSkillOK() ;
 
 	
 public :

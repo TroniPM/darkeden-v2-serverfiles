@@ -28,10 +28,10 @@ class GCDeleteEffectFromTile : public Packet {
 public :
 	
 	// constructor
-	GCDeleteEffectFromTile() throw();
+	GCDeleteEffectFromTile() ;
 	
 	// destructor
-	~GCDeleteEffectFromTile() throw();
+	~GCDeleteEffectFromTile() ;
 
 	
 public :

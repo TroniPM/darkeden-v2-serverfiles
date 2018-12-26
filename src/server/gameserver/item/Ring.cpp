@@ -56,7 +56,7 @@ Ring::Ring(ItemType_t itemType, const list<OptionType_t>& optionType)
 // create item
 //--------------------------------------------------------------------------------
 void Ring::create(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y, ItemID_t itemID) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -108,7 +108,7 @@ void Ring::create(const string & ownerID, Storage storage, StorageID_t storageID
 // save item
 //--------------------------------------------------------------------------------
 void Ring::tinysave(const char* field) const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -132,7 +132,7 @@ void Ring::tinysave(const char* field) const
 // save item
 //--------------------------------------------------------------------------------
 void Ring::save(const string & ownerID, Storage storage, StorageID_t storageID, BYTE x, BYTE y) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -199,7 +199,7 @@ string Ring::toString() const
 // get width
 //--------------------------------------------------------------------------------
 VolumeWidth_t Ring::getVolumeWidth() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -213,7 +213,7 @@ VolumeWidth_t Ring::getVolumeWidth() const
 // get height
 //--------------------------------------------------------------------------------
 VolumeHeight_t Ring::getVolumeHeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -227,7 +227,7 @@ VolumeHeight_t Ring::getVolumeHeight() const
 // get weight
 //--------------------------------------------------------------------------------
 Weight_t Ring::getWeight() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -241,7 +241,7 @@ Weight_t Ring::getWeight() const
 // get/set armor's Defense Bonus
 //--------------------------------------------------------------------------------
 Defense_t Ring::getDefenseBonus() const 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -250,7 +250,7 @@ Defense_t Ring::getDefenseBonus() const
 	__END_CATCH
 }
 Protection_t Ring::getProtectionBonus() const
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -288,7 +288,7 @@ string RingInfo::toString() const
 // load from DB
 //--------------------------------------------------------------------------------
 void RingInfoManager::load() 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -353,7 +353,7 @@ void RingInfoManager::load()
 // load to creature
 //--------------------------------------------------------------------------------
 void RingLoader::load(Creature* pCreature) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -550,7 +550,7 @@ pRing->setHeroOption(pResult->getInt(++i));
 // load to zone
 //--------------------------------------------------------------------------------
 void RingLoader::load(Zone* pZone) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 
@@ -632,7 +632,7 @@ void RingLoader::load(Zone* pZone)
 // load to inventory
 //--------------------------------------------------------------------------------
 void RingLoader::load(StorageID_t storageID, Inventory* pInventory) 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

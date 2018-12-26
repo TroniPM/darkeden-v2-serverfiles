@@ -28,7 +28,7 @@ EventSystemMessage::~EventSystemMessage()
 }
 
 void EventSystemMessage::addMessage (const string& msg) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -41,7 +41,7 @@ void EventSystemMessage::addMessage (const string& msg)
 // affect
 //----------------------------------------------------------------------
 void EventSystemMessage::activate () 
-	throw(Error)
+	
 {
 	__BEGIN_TRY
 

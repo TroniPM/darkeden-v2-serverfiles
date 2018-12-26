@@ -26,10 +26,10 @@ class CGGetOffMotorCycle : public Packet {
 public:
 	
 	// constructor
-	CGGetOffMotorCycle() throw();
+	CGGetOffMotorCycle() ;
 	
 	// destructor
-	~CGGetOffMotorCycle() throw();
+	~CGGetOffMotorCycle() ;
 
 	
 public:

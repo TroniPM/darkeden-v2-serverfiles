@@ -24,8 +24,8 @@ typedef HashMapScriptParameter::const_iterator	HashMapScriptParameterConstItor;
 class GCNPCAskVariable : public Packet
 {
 public:
-	GCNPCAskVariable() throw();
-	virtual ~GCNPCAskVariable() throw();
+	GCNPCAskVariable() ;
+	virtual ~GCNPCAskVariable() ;
 
 public:
 	void read(SocketInputStream & iStream) ;
@@ -44,7 +44,7 @@ public:
 	void setScriptID(ScriptID_t id) throw() { m_ScriptID = id; }
 
 	void addScriptParameter( ScriptParameter* pParam ) throw(DuplicatedException);
-	void clearScriptParameters() throw();
+	void clearScriptParameters() ;
 	HashMapScriptParameter& getScriptParameters() { return m_ScriptParameters; }
 	string getValue( const string& name ) ;
 

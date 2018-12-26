@@ -25,7 +25,7 @@ void sendCannotUse(CGMixItem* pPacket, Player* pPlayer);
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGMixItemHandler::execute(CGMixItem* pPacket, Player* pPlayer)
-	throw (ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -127,7 +127,7 @@ void CGMixItemHandler::execute(CGMixItem* pPacket, Player* pPlayer)
 }
 
 #ifdef __GAME_SERVER__
-void CGMixItemHandler::executeMix(CGMixItem* pPacket, Player* pPlayer, Item* pItem) throw(Error)
+void CGMixItemHandler::executeMix(CGMixItem* pPacket, Player* pPlayer, Item* pItem) 
 {
 	__BEGIN_TRY
 
@@ -387,7 +387,7 @@ void CGMixItemHandler::executeMix(CGMixItem* pPacket, Player* pPlayer, Item* pIt
 	__END_CATCH
 }
 
-void CGMixItemHandler::executeDetach(CGMixItem* pPacket, Player* pPlayer, Item* pItem) throw(Error)
+void CGMixItemHandler::executeDetach(CGMixItem* pPacket, Player* pPlayer, Item* pItem) 
 {
 	__BEGIN_TRY
 
@@ -588,7 +588,7 @@ void CGMixItemHandler::executeDetach(CGMixItem* pPacket, Player* pPlayer, Item* 
 	__END_CATCH
 }
 
-void CGMixItemHandler::executeClearOption(CGMixItem* pPacket, Player* pPlayer, Item* pItem) throw(Error)
+void CGMixItemHandler::executeClearOption(CGMixItem* pPacket, Player* pPlayer, Item* pItem) 
 {
 	__BEGIN_TRY
 

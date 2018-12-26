@@ -210,7 +210,7 @@ MasterLairInfoManager::~MasterLairInfoManager ()
 // initialize zone info manager
 //////////////////////////////////////////////////////////////////////////////
 void MasterLairInfoManager::init () 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -227,7 +227,7 @@ void MasterLairInfoManager::init ()
 // load from database
 //////////////////////////////////////////////////////////////////////////////
 void MasterLairInfoManager::load ()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
@@ -341,7 +341,7 @@ void MasterLairInfoManager::load ()
 // reload from database
 //////////////////////////////////////////////////////////////////////////////
 void MasterLairInfoManager::reload ()
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 	
@@ -436,7 +436,7 @@ void MasterLairInfoManager::reload ()
 // add zone info to zone info manager
 //////////////////////////////////////////////////////////////////////////////
 void MasterLairInfoManager::addMasterLairInfo (MasterLairInfo* pMasterLairInfo) 
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 

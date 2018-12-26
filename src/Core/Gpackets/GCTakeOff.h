@@ -29,10 +29,10 @@ class GCTakeOff : public Packet {
 public :
 	
 	// constructor
-	GCTakeOff() throw();
+	GCTakeOff() ;
 	
 	// destructor
-	~GCTakeOff() throw();
+	~GCTakeOff() ;
 
 	
 public :

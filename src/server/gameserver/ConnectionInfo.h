@@ -19,8 +19,8 @@
 class ConnectionInfo 
 {
 public:
-	ConnectionInfo() throw();
-	~ConnectionInfo() throw();
+	ConnectionInfo() ;
+	~ConnectionInfo() ;
 
 public:
 	string getClientIP()  { return m_ClientIP; }

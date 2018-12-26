@@ -26,10 +26,10 @@ class CGSkillToTile : public Packet {
 public:
 	
 	// constructor
-	CGSkillToTile() throw();
+	CGSkillToTile() ;
 	
 	// destructor
-	~CGSkillToTile() throw();
+	~CGSkillToTile() ;
 
 	
 public:

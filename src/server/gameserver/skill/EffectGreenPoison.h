@@ -23,21 +23,21 @@ public:
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_GREEN_POISON; }
 
-	void affect() throw(Error){}
+	void affect() {}
 	void affect(Creature* pCreature);
 	void affect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject );
 
 	void unaffect();
-	void unaffect(Creature* pCreature) throw(Error) {};
+	void unaffect(Creature* pCreature)  {};
 	void unaffect(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Object* pObject );
-	void unaffect(Item* pItem) throw(Error) {}
+	void unaffect(Item* pItem)  {}
 
 	string toString() ;
 
 public:
-	void setLevel(Attr_t l) throw(Error) { m_Level = l;}
-	void setDamage(Damage_t d) throw(Error) { m_Damage = d;}
-	void setDuration(Duration_t d) throw(Error) { m_Duration = d;}
+	void setLevel(Attr_t l)  { m_Level = l;}
+	void setDamage(Damage_t d)  { m_Damage = d;}
+	void setDuration(Duration_t d)  { m_Duration = d;}
 	Duration_t getDuration()  { return m_Duration;}
 
 	void setUserObjectID(ObjectID_t oid) throw() { m_UserObjectID = oid; }
@@ -63,7 +63,7 @@ public:
 	virtual string getEffectClassName()  { return "EffectGreenPoison"; }
 
 public:
-	virtual void load(Creature* pCreature) throw(Error) {}
+	virtual void load(Creature* pCreature)  {}
 	virtual void load(Zone* pZone);
 };
 

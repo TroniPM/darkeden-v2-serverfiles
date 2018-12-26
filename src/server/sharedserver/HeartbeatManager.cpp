@@ -19,7 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////
 HeartbeatManager::HeartbeatManager () 
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -35,7 +35,7 @@ HeartbeatManager::HeartbeatManager ()
 //
 //////////////////////////////////////////////////////////////////////
 HeartbeatManager::~HeartbeatManager () 
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -49,7 +49,7 @@ HeartbeatManager::~HeartbeatManager ()
 //
 //////////////////////////////////////////////////////////////////////
 void HeartbeatManager::init ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -63,7 +63,7 @@ void HeartbeatManager::init ()
 //
 //////////////////////////////////////////////////////////////////////
 void HeartbeatManager::start ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -79,7 +79,7 @@ void HeartbeatManager::start ()
 //
 //////////////////////////////////////////////////////////////////////
 void HeartbeatManager::stop ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -93,7 +93,7 @@ void HeartbeatManager::stop ()
 // 클라이언트 매니저의 메인 루프이다.
 //////////////////////////////////////////////////////////////////////
 void HeartbeatManager::run ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 

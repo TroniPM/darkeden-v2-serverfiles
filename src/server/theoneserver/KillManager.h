@@ -35,10 +35,10 @@ public :
 	GameServerManager ();
 	~GameServerManager ();
 
-	void init () throw (Error) {}
+	void init ()  {}
 
-	void start() throw (Error) { m_bRunning = true; run(); }
-	void stop() throw (Error) { m_bRunning = false; }
+	void start()  { m_bRunning = true; run(); }
+	void stop()  { m_bRunning = false; }
 
 	// main method
 	void run();

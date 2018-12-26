@@ -36,7 +36,7 @@ bool ConditionCanEnterDynamicZone::isSatisfied (Creature * pCreature1 , Creature
 //
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionCanEnterDynamicZone::read (PropertyBuffer & propertyBuffer) 
-	throw (Error)
+	
 {
 	m_DynamicZoneID = propertyBuffer.getPropertyInt("ZoneID");
 }

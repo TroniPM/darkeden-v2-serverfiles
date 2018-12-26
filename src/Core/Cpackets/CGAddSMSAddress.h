@@ -17,8 +17,8 @@
 class CGAddSMSAddress : public Packet 
 {
 public:
-	CGAddSMSAddress() throw();
-	~CGAddSMSAddress() throw();
+	CGAddSMSAddress() ;
+	~CGAddSMSAddress() ;
 
 public:
     void read(SocketInputStream & iStream) ;

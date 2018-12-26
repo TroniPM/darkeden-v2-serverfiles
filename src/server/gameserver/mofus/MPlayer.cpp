@@ -30,7 +30,7 @@ const int defaultMPlayerOutputStreamSize = 10240;
 
 // constructor
 MPlayer::MPlayer( MJob* pJob )
-	throw ( Error )
+	
 {
 	Assert( pJob != NULL );
 
@@ -43,7 +43,7 @@ MPlayer::MPlayer( MJob* pJob )
 
 // destructor
 MPlayer::~MPlayer()
-	throw ( Error )
+	
 {
 	// delete socket input stream
 	SAFE_DELETE( m_pInputStream );

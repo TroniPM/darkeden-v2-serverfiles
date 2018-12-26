@@ -27,10 +27,10 @@ class CGAbsorbSoul : public Packet {
 public:
 	
 	// constructor
-	CGAbsorbSoul() throw();
+	CGAbsorbSoul() ;
 	
 	// destructor
-	~CGAbsorbSoul() throw();
+	~CGAbsorbSoul() ;
 
 	
 public:

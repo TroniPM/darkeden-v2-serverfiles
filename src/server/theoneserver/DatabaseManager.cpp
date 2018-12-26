@@ -47,7 +47,7 @@ DatabaseManager::~DatabaseManager ()
 }
 
 void DatabaseManager::init ()
-	throw ( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -177,7 +177,7 @@ Connection * DatabaseManager::getConnection ( const string& connName )
 }
 
 void DatabaseManager::executeDummyQuery(Connection* pConnection)
-	throw (Error)
+	
 {
 	__BEGIN_TRY
 
