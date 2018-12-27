@@ -471,7 +471,7 @@ CBillingPacketRequestIntervalValidationBody.o: \
  CBillingPlayerManager.h /home/darkeden/vs/src/server/Thread.h \
  /home/darkeden/vs/src/server/pthreadAPI.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /home/darkeden/vs/src/server/Mutex.h
 CBillingPacketResponseMinusMinuteBody.o: \
  CBillingPacketResponseMinusMinuteBody.cpp \
@@ -779,11 +779,11 @@ CBillingPlayer.o: CBillingPlayer.cpp CBillingPlayer.h \
  /home/darkeden/vs/src/server/Thread.h \
  /home/darkeden/vs/src/server/pthreadAPI.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /home/darkeden/vs/src/server/Mutex.h CBillingInfo.h \
  CBillingPacketHeader.h CBillingPacketErrorBody.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/bits/signum.h \
- /usr/include/bits/siginfo.h /usr/include/bits/wordsize.h \
+ /usr/include/bits/siginfo.h /usr/include/i386-linux-gnu/bits/wordsize.h \
  /usr/include/bits/sigaction.h /usr/include/bits/sigcontext.h \
  /usr/include/asm/sigcontext.h /usr/include/bits/sigstack.h
 CBillingPacketRequestMinusMinuteBody.o: \
@@ -901,8 +901,8 @@ CBillingPlayerInfo.o: CBillingPlayerInfo.cpp CBillingPlayerInfo.h \
  /home/darkeden/vs/src/Core/Exception.h \
  /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h /home/darkeden/vs/src/server/Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h CBillingInfo.h \
  /home/darkeden/vs/src/Core/VSDateTime.h
 CBillingPacketRequestMinusPointBody.o: \
@@ -1022,7 +1022,7 @@ CBillingPlayerManager.o: CBillingPlayerManager.cpp \
  /home/darkeden/src/libs/stl_list.h /home/darkeden/vs/src/server/Thread.h \
  /home/darkeden/vs/src/server/pthreadAPI.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
  /home/darkeden/vs/src/Core/SocketAPI.h \
@@ -1032,7 +1032,7 @@ CBillingPlayerManager.o: CBillingPlayerManager.cpp \
  /home/darkeden/vs/src/Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h /home/darkeden/vs/src/server/database/DB.h \
  /home/darkeden/vs/src/server/database/DatabaseManager.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
@@ -1042,7 +1042,7 @@ CBillingPlayerManager.o: CBillingPlayerManager.cpp \
  /usr/local/include/mysql/mysql_version.h \
  /home/darkeden/vs/src/server/database/Statement.h \
  /home/darkeden/vs/src/server/database/Result.h \
- /usr/include/sys/time.h /home/darkeden/vs/src/server/Timeval.h
+ /usr/include/i386-linux-gnu/sys/time.h /home/darkeden/vs/src/server/Timeval.h
 CBillingPacketResponseIntervalValidationBody.o: \
  CBillingPacketResponseIntervalValidationBody.cpp \
  CBillingPacketResponseIntervalValidationBody.h \

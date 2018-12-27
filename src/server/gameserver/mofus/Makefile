@@ -171,10 +171,10 @@ Mofus.o: Mofus.cpp Mofus.h /home/darkeden/vs/src/Core/Types.h \
  /usr/local/include/mysql/mysql_version.h \
  /home/darkeden/vs/src/server/Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /home/darkeden/vs/src/server/database/Statement.h \
  /home/darkeden/vs/src/server/database/Result.h \
- /usr/include/sys/time.h
+ /usr/include/i386-linux-gnu/sys/time.h
 MPacketManager.o: MPacketManager.cpp Mofus.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
@@ -301,8 +301,8 @@ MPlayer.o: MPlayer.cpp Mofus.h /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h PKTConnectAsk.h PKTLogout.h \
  PKTUserInfo.h PKTReceiveOK.h PKTResult.h PKTSError.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h
 MPlayerManager.o: MPlayerManager.cpp Mofus.h \
  /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/types/SystemTypes.h \
@@ -359,7 +359,7 @@ MPlayerManager.o: MPlayerManager.cpp Mofus.h \
  /home/darkeden/src/libs/stl_list.h /home/darkeden/vs/src/server/Thread.h \
  /home/darkeden/vs/src/server/pthreadAPI.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
  /home/darkeden/vs/src/Core/SocketAPI.h \
@@ -375,9 +375,9 @@ MPlayerManager.o: MPlayerManager.cpp Mofus.h \
  /home/darkeden/vs/src/server/gameserver/Object.h \
  /home/darkeden/vs/src/server/gameserver/EffectManager.h \
  /home/darkeden/vs/src/server/gameserver/Effect.h \
- /home/darkeden/vs/src/server/Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ /home/darkeden/vs/src/server/Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  /home/darkeden/vs/src/Core/EffectInfo.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
@@ -396,7 +396,7 @@ MPlayerManager.o: MPlayerManager.cpp Mofus.h \
  /home/darkeden/vs/src/Core/Gpackets/GCSelectQuestID.h \
  /home/darkeden/vs/src/server/gameserver/OptionInfo.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
- /home/darkeden/src/libs/stl_hash_map.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_hash_map.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h \
  /home/darkeden/vs/src/server/gameserver/PCFinder.h \
  /home/darkeden/vs/src/server/gameserver/NPC.h \

@@ -24,60 +24,95 @@
 //
 //----------------------------------------------------------------------
 
-class SubItemInfo {
+class SubItemInfo
+{
 
 public :
 
-	// read data from socket input stream
-	void read (SocketInputStream & iStream);
+    // read data from socket input stream
+    void read (SocketInputStream &iStream);
 
-	// write data to socket output stream
-	void write (SocketOutputStream & oStream) ;
+    // write data to socket output stream
+    void write (SocketOutputStream &oStream) ;
 
-	// get size of object
-	static uint getSize () 
-	{ return szObjectID + szBYTE + szItemType + szItemNum + szSlotID; }
+    // get size of object
+    static uint getSize ()
+    {
+        return szObjectID + szBYTE + szItemType + szItemNum + szSlotID;
+    }
 
-	// get max size of object
-	static uint getMaxSize () 
-	{ return szObjectID + szBYTE + szItemType + szItemNum + szSlotID; }
+    // get max size of object
+    static uint getMaxSize ()
+    {
+        return szObjectID + szBYTE + szItemType + szItemNum + szSlotID;
+    }
 
-	// get debug string
-	string toString () ;
+    // get debug string
+    string toString () ;
 
 public :
 
-	// get/set ObjectID
-	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
-	ObjectID_t getObjectID()  { return m_ObjectID; }
+    // get/set ObjectID
+    void setObjectID(ObjectID_t ObjectID)
+    {
+        m_ObjectID = ObjectID;
+    }
+    ObjectID_t getObjectID()
+    {
+        return m_ObjectID;
+    }
 
-	// get/set ItemClass
-	void setItemClass (BYTE IClass)  { m_IClass = IClass; }
-	BYTE getItemClass ()  { return m_IClass; }
+    // get/set ItemClass
+    void setItemClass (BYTE IClass)
+    {
+        m_IClass = IClass;
+    }
+    BYTE getItemClass ()
+    {
+        return m_IClass;
+    }
 
-	// get/set ItemType
-	void setItemType (ItemType_t ItemType)  { m_ItemType = ItemType; }
-	ItemType_t getItemType()  { return m_ItemType; }
+    // get/set ItemType
+    void setItemType (ItemType_t ItemType)
+    {
+        m_ItemType = ItemType;
+    }
+    ItemType_t getItemType()
+    {
+        return m_ItemType;
+    }
 
-	// get/set ItemNum
-	void setItemNum (ItemNum_t ItemNum)  { m_ItemNum = ItemNum; }
-	ItemNum_t getItemNum()  { return m_ItemNum; }
+    // get/set ItemNum
+    void setItemNum (ItemNum_t ItemNum)
+    {
+        m_ItemNum = ItemNum;
+    }
+    ItemNum_t getItemNum()
+    {
+        return m_ItemNum;
+    }
 
-	// set/set SlotID
-	void setSlotID(SlotID_t SlotID)  { m_SlotID = SlotID; }
-	SlotID_t getSlotID()  { return m_SlotID; }
+    // set/set SlotID
+    void setSlotID(SlotID_t SlotID)
+    {
+        m_SlotID = SlotID;
+    }
+    SlotID_t getSlotID()
+    {
+        return m_SlotID;
+    }
 
 private :
 
-	ObjectID_t m_ObjectID; 
+    ObjectID_t m_ObjectID;
 
-	BYTE m_IClass;
+    BYTE m_IClass;
 
-	ItemType_t m_ItemType;
+    ItemType_t m_ItemType;
 
-	ItemNum_t m_ItemNum;
+    ItemNum_t m_ItemNum;
 
-	SlotID_t m_SlotID;
+    SlotID_t m_SlotID;
 
 };
 

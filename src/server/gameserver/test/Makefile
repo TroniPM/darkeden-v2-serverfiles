@@ -296,22 +296,22 @@ GameServerSkillTest.o: GameServerSkillTest.cpp GameServerSkillTest.h \
  ../../../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h TestDef.h ../Slayer.h ../PlayerCreature.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
- ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ ../Effect.h ../../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
  ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../InventorySlot.h ../Item.h ../Garbage.h ../RankBonus.h ../ExpFwd.h \
  ../../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../../Core/PacketFactory.h \
  ../../../Core/Gpackets/GCSelectQuestID.h ../OptionInfo.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
- /home/darkeden/src/libs/stl_hash_map.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_hash_map.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h ../Zone.h ../Tile.h ../Obstacle.h \
  ../Portal.h ../quest/TriggerManager.h ../quest/Trigger.h \
  ../quest/Condition.h ../quest/PropertyBuffer.h ../Sector.h ../Party.h \
@@ -433,19 +433,19 @@ GameServerExpTest.o: GameServerExpTest.cpp GameServerExpTest.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
  ../../../Core/SocketOutputStream.h ../Slayer.h ../PlayerCreature.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
- ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ ../Effect.h ../../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../InventorySlot.h ../Item.h ../Garbage.h ../RankBonus.h ../ExpFwd.h \
  ../../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../../Core/PacketFactory.h \
  ../../../Core/Gpackets/GCSelectQuestID.h ../OptionInfo.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
- /home/darkeden/src/libs/stl_hash_map.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_hash_map.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h ../Zone.h ../Tile.h ../Obstacle.h \
  ../Portal.h ../quest/TriggerManager.h ../quest/Trigger.h \
  ../quest/Condition.h ../quest/PropertyBuffer.h ../Sector.h ../Party.h \
@@ -550,8 +550,8 @@ GameServerItemTest.o: GameServerItemTest.cpp GameServerItemTest.h \
  ../../../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h TestDef.h ../Item.h ../Object.h \
  ../../../Core/Assert.h ../Effect.h ../../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../EffectManager.h ../../../Core/EffectInfo.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
@@ -562,12 +562,12 @@ GameServerItemTest.o: GameServerItemTest.cpp GameServerItemTest.h \
  ../ItemFactory.h ../Vampire.h ../PlayerCreature.h ../Creature.h \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../InventorySlot.h ../Garbage.h ../RankBonus.h ../ExpFwd.h \
  ../../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../../Core/PacketFactory.h \
  ../../../Core/Gpackets/GCSelectQuestID.h ../OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Inventory.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h ../Inventory.h \
  ../VolumeInfo.h ../Zone.h ../Tile.h ../Obstacle.h ../Portal.h \
  ../quest/TriggerManager.h ../quest/Trigger.h ../quest/Condition.h \
  ../quest/PropertyBuffer.h ../Sector.h ../Party.h \
@@ -748,11 +748,11 @@ GameServerSpeedCheckTest.o: GameServerSpeedCheckTest.cpp \
  ../../../Core/SocketEncryptInputStream.h \
  ../../../Core/SocketInputStream.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/STL/deque /home/darkeden/src/libs/stl_deque.h \
- ../../../Core/Packet.h ../../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ ../../../Core/Packet.h ../../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../../Core/PlayerStatus.h ../EventManager.h ../Event.h \
  ../skill/Skill.h ../../PaySystem.h ../../../Core/VSDateTime.h \
  ../billing/BillingPlayerInfo.h \

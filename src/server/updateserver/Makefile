@@ -118,7 +118,7 @@ main.o: main.cpp ../../Core/Types.h ../../Core/types/SystemTypes.h \
  /home/darkeden/src/libs/stl_multimap.h ../../Core/ServerSocket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h ../../Core/Socket.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h /usr/include/dirent.h \
  /usr/include/bits/dirent.h /usr/include/sys/stat.h \
  /usr/include/bits/stat.h /usr/include/sys/resource.h \
@@ -138,11 +138,11 @@ UpdateServer.o: UpdateServer.cpp /usr/include/c++/7/fstream \
  /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
  /usr/include/time.h /usr/include/i386-linux-gnu/bits/time.h /usr/include/signal.h \
  /home/darkeden/src/libs/sigset.h /usr/include/bits/signum.h \
- /usr/include/bits/siginfo.h /usr/include/bits/wordsize.h \
+ /usr/include/bits/siginfo.h /usr/include/i386-linux-gnu/bits/wordsize.h \
  /usr/include/bits/sigaction.h /usr/include/bits/sigcontext.h \
  /usr/include/asm/sigcontext.h /usr/include/bits/sigstack.h \
- /usr/include/bits/sigthread.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h /usr/include/stdio.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/fcntl.h \
  /usr/include/bits/fcntl.h /usr/include/i386-linux-gnu/sys/types.h \
@@ -190,7 +190,7 @@ UpdateServer.o: UpdateServer.cpp /usr/include/c++/7/fstream \
  ../../Core/Player.h ../../Core/PlayerStatus.h /usr/include/STL/deque \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_deque.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
- ../../Core/SocketOutputStream.h ../Timeval.h /usr/include/sys/time.h \
+ ../../Core/SocketOutputStream.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
  /usr/include/c++/7/bitset
 UpdateServerPlayer.o: UpdateServerPlayer.cpp UpdateServerPlayer.h \
  ../../Core/Player.h ../../Core/Types.h ../../Core/types/SystemTypes.h \
@@ -242,9 +242,9 @@ UpdateServerPlayer.o: UpdateServerPlayer.cpp UpdateServerPlayer.h \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_deque.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ ../../Core/SocketOutputStream.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  /usr/include/c++/7/bitset ../../Core/Assert.h \
  ../../Core/Upackets/CUBeginUpdate.h ../../Core/PacketFactory.h \
  ../../Core/UpdateManager.h ../../Core/Update.h ../../Core/UpdateDef.h \

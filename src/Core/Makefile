@@ -1455,8 +1455,8 @@ SocketInputStream.o: SocketInputStream.cpp SocketInputStream.h Types.h \
  types/GuildTypes.h types/WarTypes.h types/ServerType.h Utility.h \
  Exception.h StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h Socket.h SocketImpl.h SocketAPI.h \
- /usr/include/errno.h /usr/include/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/asm/errno.h Assert.h Packet.h \
+ /usr/include/errno.h /usr/include/i386-linux-gnu/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/i386-linux-gnu/asm/errno.h Assert.h Packet.h \
  SocketOutputStream.h
 SocketOutputStream.o: SocketOutputStream.cpp SocketOutputStream.h \
  Types.h types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -2468,9 +2468,9 @@ VSDateTime.o: VSDateTime.cpp VSDateTime.h /usr/include/i386-linux-gnu/sys/types.
  /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
  /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
  /home/darkeden/src/libs/stl_hash_fun.h /usr/include/i386-linux-gnu/bits/stdio_lim.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
- /usr/include/sys/time.h
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
+ /usr/include/i386-linux-gnu/sys/time.h
 ServerGroupInfo.o: ServerGroupInfo.cpp ServerGroupInfo.h Types.h \
  types/SystemTypes.h /usr/include/c++/7/iostream \
   /usr/include/c++/7/streambuf \
@@ -2552,8 +2552,8 @@ TimeChecker.o: TimeChecker.cpp TimeChecker.h VSDateTime.h \
  /home/darkeden/src/libs/stl_algo.h /home/darkeden/src/libs/stl_heap.h \
  /usr/include/c++/7/bits/char_traits.h /usr/include/stdio.h \
  /home/darkeden/src/libs/stl_hash_fun.h ../server/Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Properties.h Types.h types/SystemTypes.h \
  /usr/include/c++/7/iostream /usr/include/c++/7/fstream \
   types/PlayerTypes.h types/ObjectTypes.h \
@@ -2868,7 +2868,7 @@ GuildInfo2.o: GuildInfo2.cpp GuildInfo2.h Types.h types/SystemTypes.h \
  Exception.h StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h Packet.h SocketInputStream.h Socket.h \
  SocketImpl.h SocketAPI.h SocketOutputStream.h GuildMemberInfo2.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h
 GuildMemberInfo2.o: GuildMemberInfo2.cpp GuildMemberInfo2.h Types.h \
  types/SystemTypes.h /usr/include/c++/7/iostream \
   /usr/include/c++/7/streambuf \
@@ -3965,7 +3965,7 @@ PacketFactoryManager.o: PacketFactoryManager.cpp Assert.h Types.h \
  Gpackets/GCRequestedIP.h Gpackets/GCRequestFailed.h \
  Gpackets/GCOtherModifyInfo.h Gpackets/GGCommand.h \
  Cpackets/CGRegistGuild.h Gpackets/GCWaitGuildList.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h GuildInfo.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h GuildInfo.h \
  Gpackets/GCShowWaitGuildInfo.h Gpackets/GCShowGuildInfo.h \
  Cpackets/CGSelectGuild.h Cpackets/CGTryJoinGuild.h \
  Gpackets/GCShowGuildJoin.h Cpackets/CGJoinGuild.h \
@@ -4341,7 +4341,7 @@ PacketFactoryManager.o: PacketFactoryManager.cpp Assert.h Types.h \
  Gpackets/GCRequestedIP.h Gpackets/GCRequestFailed.h \
  Gpackets/GCOtherModifyInfo.h Gpackets/GGCommand.h \
  Cpackets/CGRegistGuild.h Gpackets/GCWaitGuildList.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h GuildInfo.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h GuildInfo.h \
  Gpackets/GCShowWaitGuildInfo.h Gpackets/GCShowGuildInfo.h \
  Cpackets/CGSelectGuild.h Cpackets/CGTryJoinGuild.h \
  Gpackets/GCShowGuildJoin.h Cpackets/CGJoinGuild.h \
@@ -4717,7 +4717,7 @@ PacketFactoryManager.o: PacketFactoryManager.cpp Assert.h Types.h \
  Gpackets/GCRequestedIP.h Gpackets/GCRequestFailed.h \
  Gpackets/GCOtherModifyInfo.h Gpackets/GGCommand.h \
  Cpackets/CGRegistGuild.h Gpackets/GCWaitGuildList.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h GuildInfo.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h GuildInfo.h \
  Gpackets/GCShowWaitGuildInfo.h Gpackets/GCShowGuildInfo.h \
  Cpackets/CGSelectGuild.h Cpackets/CGTryJoinGuild.h \
  Gpackets/GCShowGuildJoin.h Cpackets/CGJoinGuild.h \
@@ -5093,7 +5093,7 @@ PacketFactoryManager.o: PacketFactoryManager.cpp Assert.h Types.h \
  Gpackets/GCRequestedIP.h Gpackets/GCRequestFailed.h \
  Gpackets/GCOtherModifyInfo.h Gpackets/GGCommand.h \
  Cpackets/CGRegistGuild.h Gpackets/GCWaitGuildList.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h GuildInfo.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h GuildInfo.h \
  Gpackets/GCShowWaitGuildInfo.h Gpackets/GCShowGuildInfo.h \
  Cpackets/CGSelectGuild.h Cpackets/CGTryJoinGuild.h \
  Gpackets/GCShowGuildJoin.h Cpackets/CGJoinGuild.h \

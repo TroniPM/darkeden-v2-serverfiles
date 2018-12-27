@@ -1,7 +1,7 @@
 //////////////////////////////////////////////////////////////////////////////
 // Filename    : Utility.h
 // Written by  : 김성민
-// Description : 
+// Description :
 // 여러 곳에서 사용되는 매크로 및 간단한 함수를 정의한 파일이다.
 //////////////////////////////////////////////////////////////////////////////
 
@@ -9,7 +9,9 @@
 #define __UTILITY_H__
 
 #include "Types.h"
+#include "string"
 #include "string.h"
+
 //#include "Assert.h"
 
 //////////////////////////////////////////////////////////////////////////////
@@ -23,25 +25,33 @@
 //////////////////////////////////////////////////////////////////////////////
 // 포인트 클래스
 //////////////////////////////////////////////////////////////////////////////
-class POINT 
+class POINT
 {
 public:
-	POINT(int _x=0, int _y=0) : x(_x), y(_y) {}
-	void set(int _x, int _y) { x = _x; y = _y; }
-	int x;
-	int y;
+    POINT(int _x = 0, int _y = 0) : x(_x), y(_y) {}
+    void set(int _x, int _y)
+    {
+        x = _x;
+        y = _y;
+    }
+    int x;
+    int y;
 };
 
 //////////////////////////////////////////////////////////////////////////////
 // 포인트 클래스
 //////////////////////////////////////////////////////////////////////////////
-class BPOINT 
+class BPOINT
 {
 public:
-	BPOINT(BYTE _x=0, BYTE _y=0) : x(_x), y(_y) {}
-	void set(BYTE _x, BYTE _y) { x = _x; y = _y; }
-	BYTE x;
-	BYTE y;
+    BPOINT(BYTE _x = 0, BYTE _y = 0) : x(_x), y(_y) {}
+    void set(BYTE _x, BYTE _y)
+    {
+        x = _x;
+        y = _y;
+    }
+    BYTE x;
+    BYTE y;
 };
 
 //////////////////////////////////////////////////////////////////////////////
@@ -50,44 +60,44 @@ public:
 class VSRect
 {
 public:
-	VSRect(int l=0, int t=0, int r=0, int b=0)
-	{
-		//Assert(l <= r && t <= b);
+    VSRect(int l = 0, int t = 0, int r = 0, int b = 0)
+    {
+        //Assert(l <= r && t <= b);
 
-		left   = l;
-		top    = t;
-		right  = r;
-		bottom = b;
-	}
+        left   = l;
+        top    = t;
+        right  = r;
+        bottom = b;
+    }
 
-	bool ptInRect(const POINT& pt) const
-	{
-	    if(left <= pt.x && pt.x <= right && top <= pt.y && pt.y <= bottom) return true;
-		    return false;
-	}
+    bool ptInRect(const POINT &pt) const
+    {
+        if(left <= pt.x && pt.x <= right && top <= pt.y && pt.y <= bottom) return true;
+        return false;
+    }
 
-	bool ptInRect(const int x, const int y) const
-	{
-	    if(left <= x && x <= right && top <= y && y <= bottom) return true;
-		    return false;
-	}
+    bool ptInRect(const int x, const int y) const
+    {
+        if(left <= x && x <= right && top <= y && y <= bottom) return true;
+        return false;
+    }
 
-	void set(int l, int t, int r, int b)
-	{
-		//Assert(l <= r && t <= b);
+    void set(int l, int t, int r, int b)
+    {
+        //Assert(l <= r && t <= b);
 
-		left   = l;
-		top    = t;
-		right  = r;
-		bottom = b;
-	}
+        left   = l;
+        top    = t;
+        right  = r;
+        bottom = b;
+    }
 
 
 public:
-	int left;
-	int top;
-	int right;
-	int bottom;
+    int left;
+    int top;
+    int right;
+    int bottom;
 };
 
 //////////////////////////////////////////////////////////////////////////////
@@ -102,12 +112,12 @@ Dir_t computeDirection(int originX, int originY, int destX, int destY);
 
 inline Dir_t calcDirection(int originX, int originY, int destX, int destY)
 {
-	return computeDirection(originX, originY, destX, destY);
+    return computeDirection(originX, originY, destX, destY);
 }
 
 inline Dir_t getDirection(int originX, int originY, int destX, int destY)
 {
-	return computeDirection(originX, originY, destX, destY);
+    return computeDirection(originX, originY, destX, destY);
 }
 
 
@@ -116,8 +126,8 @@ inline Dir_t getDirection(int originX, int originY, int destX, int destY)
 //////////////////////////////////////////////////////////////////////////////
 inline int Random(int Min, int Max)
 {
-   if(Max == 0 || Min > Max) return  0;
-       return ((rand() %(int)((Max) -(Min) + 1)) +(Min));
+    if(Max == 0 || Min > Max) return  0;
+    return ((rand() % (int)((Max) - (Min) + 1)) + (Min));
 }
 
 
@@ -126,7 +136,7 @@ inline int Random(int Min, int Max)
 //////////////////////////////////////////////////////////////////////////////
 inline int Round(float f)
 {
-	return f - 0.5 >(int)f ?(int)f + 1 :(int)f; 
+    return f - 0.5 > (int)f ? (int)f + 1 : (int)f;
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -135,54 +145,54 @@ inline int Round(float f)
 inline uint Dice(uint num, uint dice)
 {
     uint result = 0;
-	for(uint i = 0 ; i < num ; i ++)
-		result += rand() % dice + 1;
-	return result;
+    for(uint i = 0 ; i < num ; i ++)
+        result += rand() % dice + 1;
+    return result;
 }
 
 
 //////////////////////////////////////////////////////////////////////////////
 // 긴 문자열에서 한 라인 가져오기
 //////////////////////////////////////////////////////////////////////////////
-string getline(const string & str, uint & pos) ;
+string getline(const string &str, uint &pos) ;
 
 //////////////////////////////////////////////////////////////////////////////
 // 문자열 앞 뒤의 공백 제거하기
 //////////////////////////////////////////////////////////////////////////////
-string trim(const string & str) ;
+string trim(const string &str) ;
 
 //////////////////////////////////////////////////////////////////////////////
 // 현재 시간 얻어내기
 //////////////////////////////////////////////////////////////////////////////
-void getCurrentTimeEx(int& year, int& month, int& day, int& hour, int& minute, int& sec) ;
+void getCurrentTimeEx(int &year, int &month, int &day, int &hour, int &minute, int &sec) ;
 string getCurrentTimeStringEx(void) ;
 
 //////////////////////////////////////////////////////////////////////////////
 // 워드 상위바이트와 하위 바이트로 분리시키기
 //////////////////////////////////////////////////////////////////////////////
-inline void splitWord(WORD value, int& high, int& low) 
+inline void splitWord(WORD value, int &high, int &low)
 {
-	 high = value >> 8;
-     low  = value & 0xFF;
+    high = value >> 8;
+    low  = value & 0xFF;
 }
 
 
 //////////////////////////////////////////////////////////////////////////////
 // 0으로 초기화시키기
 //////////////////////////////////////////////////////////////////////////////
-inline void zerofill(void* pointer, size_t size) 
+inline void zerofill(void *pointer, size_t size)
 {
-	memset(pointer, 0, size);
+    memset(pointer, 0, size);
 }
 
 
 //////////////////////////////////////////////////////////////////////////////
 // range 내에 있는지 검사하기
 //////////////////////////////////////////////////////////////////////////////
-inline bool isInRange(int value, int min, int max) 
+inline bool isInRange(int value, int min, int max)
 {
-  	if(min <= value && value <= max) return true;
-		return false;
+    if(min <= value && value <= max) return true;
+    return false;
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -190,7 +200,7 @@ inline bool isInRange(int value, int min, int max)
 //////////////////////////////////////////////////////////////////////////////
 inline int getPercentValue(int value, int percent)
 {
-	return (int)((long long)(value) * (long long)(percent) / 100);
+    return (int)((long long)(value) * (long long)(percent) / 100);
 }
 
 
@@ -204,22 +214,22 @@ int getPercentValueEx( int value, int percent );
 // 파일에다 로그 남기기
 //////////////////////////////////////////////////////////////////////////////
 
-void filelog(const char* szFilename, const char* fmt, ...) ;
+void filelog(const char *szFilename, const char *fmt, ...) ;
 
 //////////////////////////////////////////////////////////////////////////////
 // 방향별 움직임을 위한 마스크
 //////////////////////////////////////////////////////////////////////////////
 const POINT dirMoveMask[] =
 {
-	POINT(-1,  0), // 0 == LEFT
-	POINT(-1,  1), // 1 == LEFTDOWN
-	POINT( 0,  1), // 2 == DOWN
-	POINT( 1,  1), // 3 == RIGHTDOWN
-	POINT( 1,  0), // 4 == RIGHT
-	POINT( 1, -1), // 5 == RIGHTUP
-	POINT( 0, -1), // 6 == UP
-	POINT(-1, -1), // 7 == LEFTUP
-	POINT( 0,  0)  // 8 == DIR_MAX, NONE
+    POINT(-1,  0), // 0 == LEFT
+    POINT(-1,  1), // 1 == LEFTDOWN
+    POINT( 0,  1), // 2 == DOWN
+    POINT( 1,  1), // 3 == RIGHTDOWN
+    POINT( 1,  0), // 4 == RIGHT
+    POINT( 1, -1), // 5 == RIGHTUP
+    POINT( 0, -1), // 6 == UP
+    POINT(-1, -1), // 7 == LEFTUP
+    POINT( 0,  0)  // 8 == DIR_MAX, NONE
 };
 
 //////////////////////////////////////////////////////////////////////////////
@@ -235,7 +245,7 @@ WORD getLOWORD( DWORD dwValue );
 
 inline int getDistance( int sx, int sy, int tx, int ty )
 {
-	return max(abs(sx-tx),abs(sy-ty));
+    return max(abs(sx - tx), abs(sy - ty));
 }
 
 #endif

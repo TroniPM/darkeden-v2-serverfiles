@@ -8,4 +8,6 @@ sudo docker build -t YOUR_NAME_HERE .
 sudo docker run -it YOUR_NAME_HERE
 ```
 
-Copy "src/" folder to container (runtime) ```sudo docker cp src/ CONTAINERID:/home/darkeden```.
+Copy "src/" folder to container (runtime) ```sudo docker cp src/ 89c0eef99caa:/home/darkeden```.
+
+Ignore warnings ```#pragma GCC diagnostic ignored "-WARNING-TYPE"```

@@ -6,6 +6,7 @@
 //
 ////////////////////////////////////////////////////////////////////////
 
+#pragma GCC diagnostic ignored "-Wreturn-type"
 #ifndef __SOCKET_IMPL_H__
 #define __SOCKET_IMPL_H__
 

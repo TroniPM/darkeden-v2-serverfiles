@@ -132,7 +132,7 @@ uint SocketOutputStream::write ( const char * buf , uint len )
 //////////////////////////////////////////////////////////////////////
 // write packet to stream (output buffer)
 //////////////////////////////////////////////////////////////////////
-void SocketOutputStream::writePacket ( const Packet * pPacket )
+void SocketOutputStream::writePacket (  Packet * pPacket )
 	 
 {
 	__BEGIN_TRY
@@ -173,7 +173,7 @@ void SocketOutputStream::writePacket ( const Packet * pPacket )
 // flush stream (output buffer) to socket
 //////////////////////////////////////////////////////////////////////
 uint SocketOutputStream::flush () 
-     throw (IOException, ProtocolException, InvalidProtocolException, Error)
+     
 {
 	__BEGIN_TRY
 
@@ -390,7 +390,7 @@ void SocketOutputStream::resize ( int size )
 //////////////////////////////////////////////////////////////////////
 // get data's size in buffer
 //////////////////////////////////////////////////////////////////////
-uint SocketOutputStream::length () const
+uint SocketOutputStream::length ()  
      
 {
     if ( m_Head < m_Tail )

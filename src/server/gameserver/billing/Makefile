@@ -186,10 +186,10 @@ CommonBillingPacket.o: CommonBillingPacket.cpp CommonBillingPacket.h \
  /home/darkeden/vs/src/Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h /usr/include/netinet/in.h \
- /usr/include/stdint.h /usr/include/bits/wordsize.h \
- /usr/include/bits/socket.h /usr/include/bits/sockaddr.h \
+ /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wordsize.h \
+ /usr/include/i386-linux-gnu/bits/socket.h /usr/include/i386-linux-gnu/bits/sockaddr.h \
  /usr/include/asm/socket.h /usr/include/asm/sockios.h \
- /usr/include/bits/in.h /usr/include/bits/byteswap.h \
+ /usr/include/i386-linux-gnu/bits/in.h /usr/include/i386-linux-gnu/bits/byteswap.h \
  /home/darkeden/vs/src/server/database/DB.h \
  /home/darkeden/vs/src/server/database/DatabaseManager.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
@@ -199,10 +199,10 @@ CommonBillingPacket.o: CommonBillingPacket.cpp CommonBillingPacket.h \
  /usr/local/include/mysql/mysql_version.h \
  /home/darkeden/vs/src/server/Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /home/darkeden/vs/src/server/database/Statement.h \
  /home/darkeden/vs/src/server/database/Result.h \
- /usr/include/sys/time.h /home/darkeden/vs/src/Core/VSDateTime.h
+ /usr/include/i386-linux-gnu/sys/time.h /home/darkeden/vs/src/Core/VSDateTime.h
 CommonBillingPacketHandler.o: CommonBillingPacketHandler.cpp \
  CommonBillingPacket.h /usr/include/stdio.h /usr/include/features.h \
  /usr/include/i386-linux-gnu/sys/cdefs.h /usr/include/i386-linux-gnu/gnu/stubs.h \
@@ -389,7 +389,7 @@ BillingPlayerManager.o: BillingPlayerManager.cpp \
  /home/darkeden/src/libs/stl_list.h /home/darkeden/vs/src/server/Thread.h \
  /home/darkeden/vs/src/server/pthreadAPI.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
  /home/darkeden/vs/src/Core/SocketAPI.h \
@@ -405,7 +405,7 @@ BillingPlayerManager.o: BillingPlayerManager.cpp \
  /home/darkeden/src/libs/stl_multimap.h \
  /home/darkeden/vs/src/server/LogClient.h \
  /home/darkeden/vs/src/Core/Assert.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h /home/darkeden/vs/src/server/database/DB.h \
  /home/darkeden/vs/src/server/database/DatabaseManager.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
@@ -415,7 +415,7 @@ BillingPlayerManager.o: BillingPlayerManager.cpp \
  /usr/local/include/mysql/mysql_version.h \
  /home/darkeden/vs/src/server/database/Statement.h \
  /home/darkeden/vs/src/server/database/Result.h \
- /usr/include/sys/time.h /home/darkeden/vs/src/server/Timeval.h
+ /usr/include/i386-linux-gnu/sys/time.h /home/darkeden/vs/src/server/Timeval.h
 BillingPlayerInfo.o: BillingPlayerInfo.cpp /usr/include/stdio.h \
  /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
  /usr/include/i386-linux-gnu/gnu/stubs.h \
@@ -474,6 +474,6 @@ BillingPlayerInfo.o: BillingPlayerInfo.cpp /usr/include/stdio.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
  /home/darkeden/vs/src/Core/SocketAPI.h BillingPlayerInfo.h \
- /home/darkeden/vs/src/server/Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h
+ /home/darkeden/vs/src/server/Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h

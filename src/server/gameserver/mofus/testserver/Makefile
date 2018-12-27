@@ -119,10 +119,10 @@ main.o: main.cpp  \
  ../../../../Core/Exception.h ../../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
  ../../../pthreadAPI.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h ../../../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph ../../../Timeval.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h GameServerPlayer.h ../../../../Core/Player.h \
  ../../../../Core/ServerSocket.h ../../../../Core/SocketImpl.h \
  ../../../../Core/SocketAPI.h ../../../../Core/Socket.h \
@@ -180,10 +180,10 @@ GameServerManager.o: GameServerManager.cpp /usr/include/stdio.h \
  ../../../../Core/Exception.h ../../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
  ../../../pthreadAPI.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h ../../../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph ../../../Timeval.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h GameServerPlayer.h ../../../../Core/Player.h \
  ../../../../Core/ServerSocket.h ../../../../Core/SocketImpl.h \
  ../../../../Core/SocketAPI.h ../../../../Core/Socket.h \

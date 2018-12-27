@@ -277,8 +277,8 @@ main.o: main.cpp ../../Core/Types.h ../../Core/types/SystemTypes.h \
  ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../LogClient.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
- /usr/include/getopt.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
+ /usr/include/getopt.h /usr/include/i386-linux-gnu/sys/time.h \
  /usr/include/sys/resource.h /usr/include/bits/resource.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h
 Zone.o: Zone.cpp Zone.h ../../Core/Types.h \
@@ -326,10 +326,10 @@ Zone.o: Zone.cpp Zone.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Object.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Object.h \
  ../../Core/Assert.h Creature.h EffectManager.h Effect.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -341,7 +341,7 @@ Zone.o: Zone.cpp Zone.h ../../Core/Types.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -519,11 +519,11 @@ Slayer.o: Slayer.cpp ../database/DB.h ../database/DatabaseManager.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  Slayer.h PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
  EffectManager.h Effect.h ../Timeval.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -533,7 +533,7 @@ Slayer.o: Slayer.cpp ../database/DB.h ../database/DatabaseManager.h \
  Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ OptionInfo.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  Zone.h Tile.h Obstacle.h Portal.h quest/TriggerManager.h \
  quest/Trigger.h quest/Condition.h quest/PropertyBuffer.h Sector.h \
  Party.h ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -599,11 +599,11 @@ Slayer.o: Slayer.cpp ../database/DB.h ../database/DatabaseManager.h \
  ../../Core/Gpackets/GCPetStashList.h ../../Core/PetInfo.h \
  ../../Core/types/PetTypes.h /usr/include/sys/socket.h \
  /usr/include/sys/uio.h /usr/include/bits/uio.h \
- /usr/include/bits/socket.h /usr/include/bits/sockaddr.h \
+ /usr/include/i386-linux-gnu/bits/socket.h /usr/include/i386-linux-gnu/bits/sockaddr.h \
  /usr/include/asm/socket.h /usr/include/asm/sockios.h \
  /usr/include/netinet/in.h /usr/include/stdint.h \
- /usr/include/bits/wordsize.h /usr/include/bits/in.h \
- /usr/include/bits/byteswap.h /usr/include/arpa/inet.h \
+ /usr/include/i386-linux-gnu/bits/wordsize.h /usr/include/i386-linux-gnu/bits/in.h \
+ /usr/include/i386-linux-gnu/bits/byteswap.h /usr/include/arpa/inet.h \
  ../../Core/Rpackets/RCSay.h ../../Core/DatagramPacket.h \
  ../../Core/Datagram.h LoginServerManager.h \
  ../../Core/DatagramSocket.h ../../Core/Properties.h \
@@ -660,16 +660,16 @@ Vampire.o: Vampire.cpp Vampire.h PlayerCreature.h Creature.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -677,7 +677,7 @@ Vampire.o: Vampire.cpp Vampire.h PlayerCreature.h Creature.h Object.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Inventory.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Inventory.h \
  VolumeInfo.h Zone.h Tile.h Obstacle.h Portal.h quest/TriggerManager.h \
  quest/Trigger.h quest/Condition.h quest/PropertyBuffer.h Sector.h \
  Party.h ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -786,16 +786,16 @@ Ousters.o: Ousters.cpp Ousters.h PlayerCreature.h Creature.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -803,7 +803,7 @@ Ousters.o: Ousters.cpp Ousters.h PlayerCreature.h Creature.h Object.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Inventory.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Inventory.h \
  VolumeInfo.h Zone.h Tile.h Obstacle.h Portal.h quest/TriggerManager.h \
  quest/Trigger.h quest/Condition.h quest/PropertyBuffer.h Sector.h \
  Party.h ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -919,8 +919,8 @@ OustersEXPInfo.o: OustersEXPInfo.cpp OustersEXPInfo.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  /usr/include/STL/algo.h /usr/include/STL/algobase.h \
  /usr/include/STL/pair.h /usr/include/STL/iterator.h \
  /usr/include/STL/function.h /usr/include/STL/tempbuf.h \
@@ -970,11 +970,11 @@ ClientManager.o: ClientManager.cpp ClientManager.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EventManager.h Event.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ThreadManager.h ../../Core/Assert.h ThreadPool.h ../Thread.h \
  ../pthreadAPI.h ../../Core/ServerSocket.h ../../Core/Properties.h \
@@ -997,7 +997,7 @@ ClientManager.o: ClientManager.cpp ClientManager.h ../../Core/Types.h \
  /home/darkeden/src/libs/stl_hash_map.h ConnectionInfo.h ZonePlayerManager.h \
  Effect.h Object.h ZoneGroupManager.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_bvector.h ZoneGroup.h Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h Item.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h Party.h \
@@ -1063,17 +1063,17 @@ ConnectionInfoManager.o: ConnectionInfoManager.cpp \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- ConnectionInfo.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ ConnectionInfo.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/Assert.h ../database/DB.h ../database/DatabaseManager.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h ZoneGroup.h Zone.h Tile.h /usr/include/STL/slist \
+ ../database/Result.h ZoneGroup.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h Creature.h EffectManager.h \
  Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -1140,14 +1140,14 @@ Creature.o: Creature.cpp Creature.h Object.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ZoneInfo.h \
- Zone.h Tile.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ Zone.h Tile.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -1155,7 +1155,7 @@ Creature.o: Creature.cpp Creature.h Object.h ../../Core/Types.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -1231,15 +1231,15 @@ CreatureManager.o: CreatureManager.cpp CreatureManager.h Creature.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  GamePlayer.h ../../Core/Player.h \
@@ -1254,7 +1254,7 @@ CreatureManager.o: CreatureManager.cpp CreatureManager.h Creature.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_bvector.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
- ZoneGroup.h Zone.h Tile.h /usr/include/STL/slist \
+ ZoneGroup.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Item.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h Party.h \
@@ -1343,12 +1343,12 @@ DarkLightInfo.o: DarkLightInfo.cpp DarkLightInfo.h ../../Core/Types.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
- Zone.h Tile.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
+ Zone.h Tile.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  Object.h Creature.h EffectManager.h Effect.h ../Timeval.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h /usr/include/c++/7/bitset \
  Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
@@ -1403,23 +1403,23 @@ Corpse.o: Corpse.cpp Corpse.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Item.h Object.h \
- ../../Core/Assert.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h EffectManager.h \
+ ../../Core/Assert.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
- ItemFactory.h Zone.h Tile.h /usr/include/STL/slist \
+ ItemFactory.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -1477,11 +1477,11 @@ GamePlayer.o: GamePlayer.cpp GamePlayer.h ../../Core/Types.h \
  ../../Core/EncryptUtility.h ../../Core/SocketEncryptInputStream.h \
  ../../Core/SocketInputStream.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/STL/deque /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_deque.h ../../Core/Packet.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/PlayerStatus.h EventManager.h \
  Event.h skill/Skill.h ../PaySystem.h ../../Core/VSDateTime.h \
  billing/BillingPlayerInfo.h ../chinabilling/CBillingPlayerInfo.h \
@@ -1495,7 +1495,7 @@ GamePlayer.o: GamePlayer.cpp GamePlayer.h ../../Core/Types.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
- /home/darkeden/src/libs/stl_hash_map.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_hash_map.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h Party.h ../../Core/ModifyInfo.h \
@@ -1546,11 +1546,11 @@ GameServer.o: GameServer.cpp /usr/include/time.h \
  /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
  /usr/include/signal.h /home/darkeden/src/libs/sigset.h \
  /usr/include/bits/signum.h /usr/include/bits/siginfo.h \
- /usr/include/bits/wordsize.h /usr/include/bits/sigaction.h \
+ /usr/include/i386-linux-gnu/bits/wordsize.h /usr/include/bits/sigaction.h \
  /usr/include/bits/sigcontext.h /usr/include/asm/sigcontext.h \
- /usr/include/bits/sigstack.h /usr/include/bits/sigthread.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h GameServer.h \
+ /usr/include/bits/sigstack.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h GameServer.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
  /usr/include/c++/7/streambuf /usr/include/libio.h \
@@ -1594,9 +1594,9 @@ GameServer.o: GameServer.cpp /usr/include/time.h \
  ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../../Core/Assert.h ThreadManager.h \
- ClientManager.h ../Timeval.h /usr/include/sys/time.h EventManager.h \
+ ClientManager.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h EventManager.h \
  Event.h ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/bits/initspin.h ObjectManager.h LoginServerManager.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h ObjectManager.h LoginServerManager.h \
  ../Thread.h ../pthreadAPI.h ../../Core/DatagramSocket.h \
  ../../Core/SocketAPI.h ../../Core/Datagram.h SharedServerManager.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/Packet.h \
@@ -1666,11 +1666,11 @@ IncomingPlayerManager.o: IncomingPlayerManager.cpp \
  ../../Core/types/WarTypes.h ../../Core/types/ServerType.h \
  ../../Core/Utility.h ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../PlayerManager.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/SocketAPI.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  GamePlayer.h ../../Core/Player.h \
  ../../Core/SocketEncryptOutputStream.h \
  ../../Core/SocketOutputStream.h ../../Core/Socket.h \
@@ -1691,7 +1691,7 @@ IncomingPlayerManager.o: IncomingPlayerManager.cpp \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  LoginServerManager.h ../Thread.h ../pthreadAPI.h PacketUtil.h \
- ZoneInfoManager.h Zone.h Tile.h /usr/include/STL/slist \
+ ZoneInfoManager.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h Creature.h EffectManager.h \
  Effect.h ../../Core/EffectInfo.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
@@ -1769,8 +1769,8 @@ SharedServerClient.o: SharedServerClient.cpp SharedServerClient.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Player.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h ../../Core/Packet.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/Assert.h \
@@ -1779,8 +1779,8 @@ SharedServerClient.o: SharedServerClient.cpp SharedServerClient.h \
  ../../Core/PlayerStatus.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h GuildManager.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  Guild.h ../../Core/VSDateTime.h
@@ -1830,9 +1830,9 @@ InfoClassManager.o: InfoClassManager.cpp InfoClassManager.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Item.h Object.h \
- ../../Core/Assert.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h EffectManager.h \
+ ../../Core/Assert.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -1886,8 +1886,8 @@ Inventory.o: Inventory.cpp Inventory.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h Item.h Object.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -1896,13 +1896,13 @@ Inventory.o: Inventory.cpp Inventory.h ../../Core/Types.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  VolumeInfo.h InventorySlot.h ItemInfoManager.h ItemInfo.h \
  InfoClassManager.h ParkingCenter.h Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -1963,16 +1963,16 @@ LoginServerManager.o: LoginServerManager.cpp LoginServerManager.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Thread.h \
  ../pthreadAPI.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h ../../Core/DatagramSocket.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph ../../Core/DatagramSocket.h \
  ../../Core/SocketAPI.h ../../Core/Datagram.h ../Mutex.h \
  ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../LogClient.h ../../Core/Assert.h \
  ../../Core/TimeChecker.h ../../Core/VSDateTime.h \
- ../../Core/../server/Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h ThreadManager.h \
+ ../../Core/../server/Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h ThreadManager.h \
  ThreadPool.h ../../Core/DatagramPacket.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketOutputStream.h \
@@ -2030,8 +2030,8 @@ SharedServerManager.o: SharedServerManager.cpp SharedServerManager.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Thread.h \
  ../pthreadAPI.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h ../../Core/Socket.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/SocketOutputStream.h \
  ../Mutex.h SharedServerClient.h ../../Core/Player.h \
@@ -2039,14 +2039,14 @@ SharedServerManager.o: SharedServerManager.cpp SharedServerManager.h \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../LogClient.h ../../Core/Assert.h \
  ThreadManager.h ThreadPool.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../database/DB.h ../database/DatabaseManager.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/sys/time.h ../Timeval.h \
+ ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h ../Timeval.h \
  ../../Core/Gpackets/GSRequestGuildInfo.h ../../Core/PacketFactory.h
 NPC.o: NPC.cpp NPC.h Creature.h Object.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -2093,14 +2093,14 @@ NPC.o: NPC.cpp NPC.h Creature.h Object.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Item.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -2108,7 +2108,7 @@ NPC.o: NPC.cpp NPC.h Creature.h Object.h ../../Core/Types.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -2165,22 +2165,22 @@ NPCManager.o: NPCManager.cpp NPCManager.h CreatureManager.h Creature.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/DB.h ../database/DatabaseManager.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h NPC.h Zone.h Tile.h /usr/include/STL/slist \
+ ../database/Result.h NPC.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -2245,22 +2245,22 @@ ResurrectLocationManager.o: ResurrectLocationManager.cpp \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  Slayer.h PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ OptionInfo.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  Zone.h Tile.h Obstacle.h Portal.h quest/TriggerManager.h \
  quest/Trigger.h quest/Condition.h quest/PropertyBuffer.h Sector.h \
  Party.h ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -2344,13 +2344,13 @@ PCFinder.o: PCFinder.cpp PCFinder.h ../../Core/Types.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Creature.h Object.h \
  ../../Core/Assert.h EffectManager.h Effect.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset NPC.h Zone.h \
- Tile.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Item.h \
+ Tile.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -2358,7 +2358,7 @@ PCFinder.o: PCFinder.cpp PCFinder.h ../../Core/Types.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -2416,16 +2416,16 @@ TelephoneCenter.o: TelephoneCenter.cpp TelephoneCenter.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Slayer.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -2433,7 +2433,7 @@ TelephoneCenter.o: TelephoneCenter.cpp TelephoneCenter.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -2501,10 +2501,10 @@ ParkingCenter.o: ParkingCenter.cpp ParkingCenter.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Object.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Object.h \
  ../../Core/Assert.h Creature.h EffectManager.h Effect.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -2516,7 +2516,7 @@ ParkingCenter.o: ParkingCenter.cpp ParkingCenter.h ../../Core/Types.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -2570,14 +2570,14 @@ PCManager.o: PCManager.cpp /usr/include/c++/7/algorithm \
  ../../Core/Utility.h ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h PCManager.h \
  CreatureManager.h Creature.h Object.h EffectManager.h Effect.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
@@ -2593,7 +2593,7 @@ PCManager.o: PCManager.cpp /usr/include/c++/7/algorithm \
  Item.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Slayer.h Zone.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Slayer.h Zone.h \
  Tile.h Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h /usr/include/STL/queue \
@@ -2702,10 +2702,10 @@ Portal.o: Portal.cpp Portal.h Object.h ../../Core/Types.h \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h quest/Condition.h \
  /usr/include/c++/7/bitset quest/PropertyBuffer.h Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -2713,7 +2713,7 @@ Portal.o: Portal.cpp Portal.h Object.h ../../Core/Types.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -2855,8 +2855,8 @@ ScriptManager.o: ScriptManager.cpp ScriptManager.h ../../Core/Types.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  ../../Core/SXml.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  ../../Core/Properties.h /usr/include/c++/7/map \
@@ -2909,14 +2909,14 @@ ThreadManager.o: ThreadManager.cpp ThreadManager.h ../../Core/Types.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ThreadPool.h \
  ../Thread.h ../pthreadAPI.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h ../Mutex.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph ../Mutex.h \
  ZoneGroupThread.h ZoneGroup.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
- /home/darkeden/src/libs/stl_hash_map.h Zone.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_hash_map.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -2985,10 +2985,10 @@ ThreadPool.o: ThreadPool.cpp /usr/include/c++/7/algorithm \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h ../Thread.h \
  ../pthreadAPI.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h ../Mutex.h ../../Core/Assert.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph ../Mutex.h ../../Core/Assert.h \
  ../LogClient.h
-Tile.o: Tile.cpp Tile.h /usr/include/STL/slist \
+Tile.o: Tile.cpp Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_config.h \
  /home/darkeden/src/libs/stl_relops.h /home/darkeden/src/libs/stl_pair.h \
  /usr/include/c++/7/ext/type_traits.h /usr/include/string.h \
@@ -3036,8 +3036,8 @@ Tile.o: Tile.cpp Tile.h /usr/include/STL/slist \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Object.h \
  ../../Core/Assert.h Creature.h EffectManager.h Effect.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -3050,7 +3050,7 @@ Tile.o: Tile.cpp Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_hash_map.h ../../Core/Player.h Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
@@ -3232,8 +3232,8 @@ GoodsInventory.o: GoodsInventory.cpp GoodsInventory.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h Item.h Object.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -3246,7 +3246,7 @@ GoodsInventory.o: GoodsInventory.cpp GoodsInventory.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/Statement.h ../database/Result.h
 GoodsInfoManager.o: GoodsInfoManager.cpp GoodsInfoManager.h \
  ../../Core/Exception.h ../../Core/Types.h \
@@ -3294,8 +3294,8 @@ GoodsInfoManager.o: GoodsInfoManager.cpp GoodsInfoManager.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h Item.h Object.h ../../Core/Assert.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -3308,7 +3308,7 @@ GoodsInfoManager.o: GoodsInfoManager.cpp GoodsInfoManager.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/Statement.h ../database/Result.h ItemFactoryManager.h \
  ItemFactory.h ItemInfoManager.h ItemInfo.h InfoClassManager.h \
  ItemUtil.h
@@ -3409,8 +3409,8 @@ WeatherInfo.o: WeatherInfo.cpp WeatherInfo.h ../../Core/Types.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  ../../Core/Assert.h
 WeatherManager.o: WeatherManager.cpp WeatherManager.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
@@ -3461,10 +3461,10 @@ WeatherManager.o: WeatherManager.cpp WeatherManager.h \
  ../../Core/GameTime.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h TimeManager.h WeatherInfo.h \
- ../LogClient.h DarkLightInfo.h Zone.h Tile.h /usr/include/STL/slist \
+ ../LogClient.h DarkLightInfo.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h Creature.h EffectManager.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  /usr/include/c++/7/bitset Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
@@ -3474,7 +3474,7 @@ WeatherManager.o: WeatherManager.cpp WeatherManager.h \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -3528,10 +3528,10 @@ ZoneInfo.o: ZoneInfo.cpp ZoneInfo.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Object.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Object.h \
  ../../Core/Assert.h Creature.h EffectManager.h Effect.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -3543,7 +3543,7 @@ ZoneInfo.o: ZoneInfo.cpp ZoneInfo.h ../../Core/Types.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -3599,10 +3599,10 @@ ZoneGroup.o: ZoneGroup.cpp ZoneGroup.h ../../Core/Types.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h Zone.h \
- Tile.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Object.h \
+ Tile.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Object.h \
  ../../Core/Assert.h Creature.h EffectManager.h Effect.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -3612,7 +3612,7 @@ ZoneGroup.o: ZoneGroup.cpp ZoneGroup.h ../../Core/Types.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -3673,10 +3673,10 @@ ZoneGroupManager.o: ZoneGroupManager.cpp ZoneGroupManager.h \
  /home/darkeden/src/libs/stl_bvector.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ZoneGroup.h Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Object.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Object.h \
  ../../Core/Assert.h Creature.h EffectManager.h Effect.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -3684,8 +3684,8 @@ ZoneGroupManager.o: ZoneGroupManager.cpp ZoneGroupManager.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h Party.h ../../Core/ModifyInfo.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h ../../Core/ModifyInfo.h \
  PCManager.h CreatureManager.h ../../Core/Encrypter.h \
  ../../Core/EncryptUtility.h /usr/include/STL/queue \
  /home/darkeden/src/libs/stl_deque.h /home/darkeden/src/libs/stl_queue.h \
@@ -3753,10 +3753,10 @@ ZoneInfoManager.o: ZoneInfoManager.cpp ZoneInfoManager.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Object.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Object.h \
  ../../Core/Assert.h Creature.h EffectManager.h Effect.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -3768,7 +3768,7 @@ ZoneInfoManager.o: ZoneInfoManager.cpp ZoneInfoManager.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -3826,11 +3826,11 @@ ZonePlayerManager.o: ZonePlayerManager.cpp /usr/include/stdio.h \
  ../../Core/types/WarTypes.h ../../Core/types/ServerType.h \
  ../../Core/Utility.h ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../PlayerManager.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/SocketAPI.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../Core/Player.h ../../Core/Socket.h ../../Core/SocketImpl.h \
  Effect.h Object.h ../../Core/Assert.h IncomingPlayerManager.h \
  GamePlayer.h ../../Core/SocketEncryptOutputStream.h \
@@ -3852,7 +3852,7 @@ ZonePlayerManager.o: ZonePlayerManager.cpp /usr/include/stdio.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_bvector.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -3926,14 +3926,14 @@ ZoneGroupThread.o: ZoneGroupThread.cpp ZoneGroupThread.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Thread.h \
  ../pthreadAPI.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h ZoneGroup.h /usr/include/STL/hash_map \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph ZoneGroup.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
- /home/darkeden/src/libs/stl_hash_map.h Zone.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_hash_map.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -4003,14 +4003,14 @@ ObjectManager.o: ObjectManager.cpp ObjectManager.h ../../Core/Types.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
  CreatureManager.h Creature.h Object.h EffectManager.h Effect.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../LogClient.h ../PlayerManager.h MonsterInfo.h MonsterSummonInfo.h \
@@ -4020,7 +4020,7 @@ ObjectManager.o: ObjectManager.cpp ObjectManager.h ../../Core/Types.h \
  VisionInfo.h WeatherInfo.h ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ZoneGroup.h Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Obstacle.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Obstacle.h \
  Portal.h quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h ../../Core/Encrypter.h \
@@ -4145,16 +4145,16 @@ AbilityBalance.o: AbilityBalance.cpp AbilityBalance.h Creature.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -4162,7 +4162,7 @@ AbilityBalance.o: AbilityBalance.cpp AbilityBalance.h Creature.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -4239,16 +4239,16 @@ PlayerCreature.o: PlayerCreature.cpp PlayerCreature.h Creature.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -4256,7 +4256,7 @@ PlayerCreature.o: PlayerCreature.cpp PlayerCreature.h Creature.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Stash.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Stash.h \
  ../database/DB.h ../database/DatabaseManager.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -4360,8 +4360,8 @@ ZoneUtil.o: ZoneUtil.cpp ZoneUtil.h ../../Core/Types.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Creature.h Object.h \
  ../../Core/Assert.h EffectManager.h Effect.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -4373,14 +4373,14 @@ ZoneUtil.o: ZoneUtil.cpp ZoneUtil.h ../../Core/Types.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/Statement.h ../database/Result.h ../../Core/Properties.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h item/Relic.h ItemInfo.h \
  InfoClassManager.h ItemFactory.h ItemLoader.h Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Obstacle.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Obstacle.h \
  Portal.h quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -4508,9 +4508,9 @@ Treasure.o: Treasure.cpp Treasure.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Item.h Object.h \
- ../../Core/Assert.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h EffectManager.h \
+ ../../Core/Assert.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -4575,11 +4575,11 @@ PacketUtil.o: PacketUtil.cpp PacketUtil.h ../../Core/Types.h \
  ../../Core/EncryptUtility.h ../../Core/SocketEncryptInputStream.h \
  ../../Core/SocketInputStream.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/STL/deque /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_deque.h ../../Core/Packet.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/PlayerStatus.h EventManager.h \
  Event.h skill/Skill.h ../PaySystem.h ../../Core/VSDateTime.h \
  billing/BillingPlayerInfo.h ../chinabilling/CBillingPlayerInfo.h \
@@ -4593,7 +4593,7 @@ PacketUtil.o: PacketUtil.cpp PacketUtil.h ../../Core/Types.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
- /home/darkeden/src/libs/stl_hash_map.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_hash_map.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h Party.h ../../Core/ModifyInfo.h \
@@ -4702,8 +4702,8 @@ ConnectionInfo.o: ConnectionInfo.cpp ConnectionInfo.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h
 InventorySlot.o: InventorySlot.cpp InventorySlot.h Item.h Object.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
@@ -4751,8 +4751,8 @@ InventorySlot.o: InventorySlot.cpp InventorySlot.h Item.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -4807,7 +4807,7 @@ ObjectRegistry.o: ObjectRegistry.cpp ObjectRegistry.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Object.h \
  ../../Core/Assert.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph
 WayPoint.o: WayPoint.cpp WayPoint.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
   /usr/include/c++/7/streambuf \
@@ -4855,10 +4855,10 @@ WayPoint.o: WayPoint.cpp WayPoint.h ../../Core/Types.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h Zone.h \
- Tile.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Object.h \
+ Tile.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Object.h \
  ../../Core/Assert.h Creature.h EffectManager.h Effect.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -4870,7 +4870,7 @@ WayPoint.o: WayPoint.cpp WayPoint.h ../../Core/Types.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -4926,8 +4926,8 @@ OptionInfo.o: OptionInfo.cpp OptionInfo.h ../../Core/Exception.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h Item.h Object.h ../../Core/Assert.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -4940,7 +4940,7 @@ OptionInfo.o: OptionInfo.cpp OptionInfo.h ../../Core/Exception.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/Statement.h ../database/Result.h /usr/include/STL/algo.h \
  /usr/include/STL/algobase.h /usr/include/STL/pair.h \
  /usr/include/STL/iterator.h /usr/include/STL/function.h \
@@ -4949,7 +4949,7 @@ OptionInfo.o: OptionInfo.cpp OptionInfo.h ../../Core/Exception.h \
  Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -5071,8 +5071,8 @@ VampEXPInfo.o: VampEXPInfo.cpp VampEXPInfo.h ../../Core/Exception.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  /usr/include/STL/algo.h /usr/include/STL/algobase.h \
  /usr/include/STL/pair.h /usr/include/STL/iterator.h \
  /usr/include/STL/function.h /usr/include/STL/tempbuf.h \
@@ -5122,23 +5122,23 @@ ItemRack.o: ItemRack.cpp ../../Core/Assert.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ItemRack.h Item.h \
- Object.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h EffectManager.h \
+ Object.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
- ParkingCenter.h Zone.h Tile.h /usr/include/STL/slist \
+ ParkingCenter.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -5234,8 +5234,8 @@ Stash.o: Stash.cpp Stash.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h Item.h Object.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -5290,9 +5290,9 @@ Garbage.o: Garbage.cpp Garbage.h ObjectRegistry.h ../../Core/Types.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Object.h \
  ../../Core/Assert.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Item.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Item.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -5357,8 +5357,8 @@ ShopTemplate.o: ShopTemplate.cpp ShopTemplate.h ../../Core/Types.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h
 PriceManager.o: PriceManager.cpp PriceManager.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
   /usr/include/c++/7/streambuf \
@@ -5404,9 +5404,9 @@ PriceManager.o: PriceManager.cpp PriceManager.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Item.h Object.h \
- ../../Core/Assert.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h EffectManager.h \
+ ../../Core/Assert.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -5418,11 +5418,11 @@ PriceManager.o: PriceManager.cpp PriceManager.h ../../Core/Types.h \
  /home/darkeden/src/libs/stl_hash_map.h ItemUtil.h Creature.h Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -5506,9 +5506,9 @@ CreatureUtil.o: CreatureUtil.cpp CreatureUtil.h Creature.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -5517,13 +5517,13 @@ CreatureUtil.o: CreatureUtil.cpp CreatureUtil.h Creature.h Object.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -5636,8 +5636,8 @@ ItemMap.o: ItemMap.cpp ItemMap.h Item.h Object.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -5692,8 +5692,8 @@ TradeManager.o: TradeManager.cpp TradeManager.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Creature.h Object.h \
@@ -5703,13 +5703,13 @@ TradeManager.o: TradeManager.cpp TradeManager.h ../../Core/Types.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ OptionInfo.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  Zone.h Tile.h Obstacle.h Portal.h quest/TriggerManager.h \
  quest/Trigger.h quest/Condition.h quest/PropertyBuffer.h Sector.h \
  Party.h ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -5800,8 +5800,8 @@ FlagSet.o: FlagSet.cpp FlagSet.h ../../Core/Types.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  ../../Core/Assert.h
 AlignmentManager.o: AlignmentManager.cpp AlignmentManager.h \
  ../../Core/Exception.h ../../Core/Types.h \
@@ -5855,8 +5855,8 @@ AlignmentManager.o: AlignmentManager.cpp AlignmentManager.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  /usr/include/STL/algo.h /usr/include/STL/algobase.h \
  /usr/include/STL/pair.h /usr/include/STL/iterator.h \
  /usr/include/STL/function.h /usr/include/STL/tempbuf.h \
@@ -5908,15 +5908,15 @@ SkillInfo.o: SkillInfo.cpp SkillInfo.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h Slayer.h PlayerCreature.h Creature.h \
  Object.h ../../Core/Assert.h EffectManager.h Effect.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -5924,7 +5924,7 @@ SkillInfo.o: SkillInfo.cpp SkillInfo.h ../../Core/Exception.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -6010,8 +6010,8 @@ SkillDomainInfoManager.o: SkillDomainInfoManager.cpp \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h
 SkillParentInfo.o: SkillParentInfo.cpp SkillParentInfo.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
@@ -6064,8 +6064,8 @@ SkillParentInfo.o: SkillParentInfo.cpp SkillParentInfo.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  ../../Core/Assert.h /usr/include/STL/algo.h \
  /usr/include/STL/algobase.h /usr/include/STL/pair.h \
  /usr/include/STL/iterator.h /usr/include/STL/function.h \
@@ -6116,16 +6116,16 @@ InitAllStat.o: InitAllStat.cpp Slayer.h PlayerCreature.h Creature.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -6133,7 +6133,7 @@ InitAllStat.o: InitAllStat.cpp Slayer.h PlayerCreature.h Creature.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -6249,8 +6249,8 @@ PrecedenceTable.o: PrecedenceTable.cpp PrecedenceTable.h \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Creature.h Object.h \
@@ -6314,8 +6314,8 @@ VariableManager.o: VariableManager.cpp VariableManager.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h SystemAvailabilitiesManager.h \
@@ -6373,10 +6373,10 @@ CombatInfoManager.o: CombatInfoManager.cpp StringPool.h \
  /home/darkeden/src/libs/stl_hash_map.h CombatInfoManager.h \
  ../../Core/Assert.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  item/Relic.h Item.h Object.h Effect.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -6387,7 +6387,7 @@ CombatInfoManager.o: CombatInfoManager.cpp StringPool.h \
  ../../Core/PacketFactory.h ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ZoneGroup.h Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h ObjectRegistry.h \
  Party.h ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -6442,8 +6442,8 @@ UniqueItemManager.o: UniqueItemManager.cpp UniqueItemManager.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h Item.h Object.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -6457,7 +6457,7 @@ UniqueItemManager.o: UniqueItemManager.cpp UniqueItemManager.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/Statement.h ../database/Result.h
 MasterLairInfoManager.o: MasterLairInfoManager.cpp \
  MasterLairInfoManager.h ../../Core/Types.h \
@@ -6508,20 +6508,20 @@ MasterLairInfoManager.o: MasterLairInfoManager.cpp \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  MonsterInfo.h ../../Core/Assert.h Creature.h Object.h EffectManager.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  MonsterSummonInfo.h MonsterInfoTypes.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
- Treasure.h Item.h ZoneInfo.h Zone.h Tile.h /usr/include/STL/slist \
+ Treasure.h Item.h ZoneInfo.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -6576,9 +6576,9 @@ MasterLairManager.o: MasterLairManager.cpp MasterLairManager.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Item.h Object.h \
- ../../Core/Assert.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h EffectManager.h \
+ ../../Core/Assert.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -6586,10 +6586,10 @@ MasterLairManager.o: MasterLairManager.cpp MasterLairManager.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h /usr/include/STL/hash_map \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- MasterLairInfoManager.h Zone.h Tile.h /usr/include/STL/slist \
+ MasterLairInfoManager.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h Party.h \
@@ -6662,9 +6662,9 @@ MonsterSummonInfo.o: MonsterSummonInfo.cpp ../../Core/Types.h \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h MonsterInfo.h ../../Core/Exception.h \
  ../../Core/StringStream.h ../../Core/Assert.h Creature.h Object.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -6725,8 +6725,8 @@ LuckInfo.o: LuckInfo.cpp LuckInfo.h ../../Core/Exception.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  /usr/include/STL/algo.h /usr/include/STL/algobase.h \
  /usr/include/STL/pair.h /usr/include/STL/iterator.h \
  /usr/include/STL/function.h /usr/include/STL/tempbuf.h \
@@ -6783,8 +6783,8 @@ LogNameManager.o: LogNameManager.cpp LogNameManager.h NameManager.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h
 RankBonusInfo.o: RankBonusInfo.cpp RankBonusInfo.h \
  ../../Core/Exception.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -6837,8 +6837,8 @@ RankBonusInfo.o: RankBonusInfo.cpp RankBonusInfo.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  /usr/include/STL/algo.h /usr/include/STL/algobase.h \
  /usr/include/STL/pair.h /usr/include/STL/iterator.h \
  /usr/include/STL/function.h /usr/include/STL/tempbuf.h \
@@ -6937,22 +6937,22 @@ CastleInfoManager.o: CastleInfoManager.cpp CastleInfoManager.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ OptionInfo.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  ItemUtil.h /usr/include/i386-linux-gnu/bits/stdio_lim.h ../../Core/Properties.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
@@ -7035,22 +7035,22 @@ HolyLandRaceBonus.o: HolyLandRaceBonus.cpp HolyLandRaceBonus.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h
+ OptionInfo.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h
 ShrineInfoManager.o: ShrineInfoManager.cpp /usr/include/stdio.h \
  /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
  /usr/include/i386-linux-gnu/gnu/stubs.h \
@@ -7100,21 +7100,21 @@ ShrineInfoManager.o: ShrineInfoManager.cpp /usr/include/stdio.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h ../database/DB.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/sys/time.h war/ZoneItemPosition.h \
+ ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h war/ZoneItemPosition.h \
  war/GlobalItemPosition.h ZoneUtil.h Creature.h Object.h \
  ../../Core/Assert.h EffectManager.h Effect.h ../Timeval.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- ../../Core/VSDateTime.h Zone.h Tile.h /usr/include/STL/slist \
+ ../../Core/VSDateTime.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -7192,8 +7192,8 @@ GlobalItemPositionLoader.o: GlobalItemPositionLoader.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -7207,13 +7207,13 @@ GlobalItemPositionLoader.o: GlobalItemPositionLoader.cpp \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/Statement.h ../database/Result.h \
  war/InventoryItemPosition.h PlayerCreature.h Creature.h \
  ObjectRegistry.h InventorySlot.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ OptionInfo.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  war/MouseItemPosition.h war/ZoneItemPosition.h ZoneUtil.h \
  ../../Core/VSDateTime.h war/CorpseItemPosition.h
 RelicUtil.o: RelicUtil.cpp RelicUtil.h ../../Core/Exception.h \
@@ -7262,21 +7262,21 @@ RelicUtil.o: RelicUtil.cpp RelicUtil.h ../../Core/Exception.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h Effect.h Object.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Item.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h Zone.h \
- Tile.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
+ Tile.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -7348,13 +7348,13 @@ HolyLandManager.o: HolyLandManager.cpp HolyLandManager.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  PCManager.h CreatureManager.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -7364,7 +7364,7 @@ HolyLandManager.o: HolyLandManager.cpp HolyLandManager.h \
  InventorySlot.h Item.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ OptionInfo.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  ShrineInfoManager.h Zone.h Tile.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h Party.h ../../Core/ModifyInfo.h \
@@ -7417,8 +7417,8 @@ BloodBibleBonus.o: BloodBibleBonus.cpp BloodBibleBonus.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ItemUtil.h Item.h \
  Object.h ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -7471,8 +7471,8 @@ BloodBibleBonusManager.o: BloodBibleBonusManager.cpp BloodBibleBonus.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ItemUtil.h Item.h \
  Object.h ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -7486,7 +7486,7 @@ BloodBibleBonusManager.o: BloodBibleBonusManager.cpp BloodBibleBonus.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/Statement.h ../database/Result.h \
  ../../Core/Gpackets/GCHolyLandBonusInfo.h ../../Core/PacketFactory.h \
  ../../Core/BloodBibleBonusInfo.h
@@ -7540,21 +7540,21 @@ CastleShrineInfoManager.o: CastleShrineInfoManager.cpp \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h ../database/DB.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/sys/time.h war/ZoneItemPosition.h \
+ ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h war/ZoneItemPosition.h \
  war/GlobalItemPosition.h ZoneUtil.h Creature.h Object.h \
  ../../Core/Assert.h EffectManager.h Effect.h ../Timeval.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- ../../Core/VSDateTime.h Zone.h Tile.h /usr/include/STL/slist \
+ ../../Core/VSDateTime.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -7630,15 +7630,15 @@ SkillPropertyManager.o: SkillPropertyManager.cpp \
  ../../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h SkillInfo.h Slayer.h PlayerCreature.h \
  Creature.h Object.h ../../Core/Assert.h EffectManager.h Effect.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -7646,7 +7646,7 @@ SkillPropertyManager.o: SkillPropertyManager.cpp \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -7721,8 +7721,8 @@ StringPool.o: StringPool.cpp StringPool.h ../../Core/Exception.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h
 PKZoneInfoManager.o: PKZoneInfoManager.cpp ../database/DB.h \
  ../database/DatabaseManager.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -7775,12 +7775,12 @@ PKZoneInfoManager.o: PKZoneInfoManager.cpp ../database/DB.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
- Zone.h Tile.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
+ Zone.h Tile.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  Object.h ../../Core/Assert.h Creature.h EffectManager.h Effect.h \
- ../Timeval.h /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ ../Timeval.h /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -7848,8 +7848,8 @@ GameServerGroupInfoManager.o: GameServerGroupInfoManager.cpp \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  ../database/DB.h
 DefaultOptionSetInfo.o: DefaultOptionSetInfo.cpp \
  DefaultOptionSetInfo.h ../../Core/Exception.h ../../Core/Types.h \
@@ -7897,9 +7897,9 @@ DefaultOptionSetInfo.o: DefaultOptionSetInfo.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h OptionInfo.h Item.h Object.h \
- ../../Core/Assert.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h EffectManager.h \
+ ../../Core/Assert.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -7912,7 +7912,7 @@ DefaultOptionSetInfo.o: DefaultOptionSetInfo.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/Statement.h ../database/Result.h ItemUtil.h
 CastleSkillInfo.o: CastleSkillInfo.cpp CastleSkillInfo.h \
  ../../Core/Exception.h ../../Core/Types.h \
@@ -7967,8 +7967,8 @@ CastleSkillInfo.o: CastleSkillInfo.cpp CastleSkillInfo.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h
 TimeLimitItemManager.o: TimeLimitItemManager.cpp \
  TimeLimitItemManager.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -8016,8 +8016,8 @@ TimeLimitItemManager.o: TimeLimitItemManager.cpp \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
  ../../Core/VSDateTime.h Item.h Object.h ../../Core/Assert.h Effect.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -8030,12 +8030,12 @@ TimeLimitItemManager.o: TimeLimitItemManager.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/Statement.h ../database/Result.h PlayerCreature.h \
  Creature.h ObjectRegistry.h InventorySlot.h Garbage.h RankBonus.h \
  ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ OptionInfo.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  ../../Core/Gpackets/GCTimeLimitItemInfo.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h
@@ -8085,8 +8085,8 @@ ItemMineInfo.o: ItemMineInfo.cpp ItemUtil.h Item.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -8100,7 +8100,7 @@ ItemMineInfo.o: ItemMineInfo.cpp ItemUtil.h Item.h Object.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/Statement.h ../database/Result.h Treasure.h
 MonsterItemDrop.o: MonsterItemDrop.cpp ItemUtil.h Item.h Object.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
@@ -8148,8 +8148,8 @@ MonsterItemDrop.o: MonsterItemDrop.cpp ItemUtil.h Item.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -8163,7 +8163,7 @@ MonsterItemDrop.o: MonsterItemDrop.cpp ItemUtil.h Item.h Object.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/Statement.h ../database/Result.h Treasure.h
 InstantDungeonMonster.o: InstantDungeonMonster.cpp ItemUtil.h Item.h Object.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
@@ -8211,8 +8211,8 @@ InstantDungeonMonster.o: InstantDungeonMonster.cpp ItemUtil.h Item.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -8226,7 +8226,7 @@ InstantDungeonMonster.o: InstantDungeonMonster.cpp ItemUtil.h Item.h Object.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/Statement.h ../database/Result.h Treasure.h
 CrystalOptionLoader.o: CrystalOptionLoader.cpp ItemUtil.h Item.h Object.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
@@ -8274,8 +8274,8 @@ CrystalOptionLoader.o: CrystalOptionLoader.cpp ItemUtil.h Item.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -8289,7 +8289,7 @@ CrystalOptionLoader.o: CrystalOptionLoader.cpp ItemUtil.h Item.h Object.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/Statement.h ../database/Result.h Treasure.h
 MonsterItemDropOption.o: MonsterItemDropOption.cpp ItemUtil.h Item.h Object.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
@@ -8337,8 +8337,8 @@ MonsterItemDropOption.o: MonsterItemDropOption.cpp ItemUtil.h Item.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -8352,7 +8352,7 @@ MonsterItemDropOption.o: MonsterItemDropOption.cpp ItemUtil.h Item.h Object.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/Statement.h ../database/Result.h Treasure.h
 MonsterDropSetup.o: MonsterDropSetup.cpp ItemUtil.h Item.h Object.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
@@ -8400,8 +8400,8 @@ MonsterDropSetup.o: MonsterDropSetup.cpp ItemUtil.h Item.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -8415,7 +8415,7 @@ MonsterDropSetup.o: MonsterDropSetup.cpp ItemUtil.h Item.h Object.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/Statement.h ../database/Result.h Treasure.h
 EventItemUtil.o: EventItemUtil.cpp EventItemUtil.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -8462,9 +8462,9 @@ EventItemUtil.o: EventItemUtil.cpp EventItemUtil.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Item.h Object.h \
- ../../Core/Assert.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h EffectManager.h \
+ ../../Core/Assert.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -8473,13 +8473,13 @@ EventItemUtil.o: EventItemUtil.cpp EventItemUtil.h ../../Core/Types.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h Slayer.h \
  PlayerCreature.h Creature.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -8557,8 +8557,8 @@ SweeperSet.o: SweeperSet.cpp SweeperSet.h ../../Core/Types.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h MonsterCorpse.h \
  Item.h Object.h ../../Core/Assert.h Effect.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -8570,13 +8570,13 @@ SweeperSet.o: SweeperSet.cpp SweeperSet.h ../../Core/Types.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  item/Sweeper.h ItemInfo.h InfoClassManager.h ItemLoader.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/DB.h ../database/DatabaseManager.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h Zone.h Tile.h /usr/include/STL/slist \
+ ../database/Result.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h Party.h \
@@ -8640,11 +8640,11 @@ SweeperBonus.o: SweeperBonus.cpp ../database/DB.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  SweeperBonus.h ItemUtil.h Item.h Object.h ../../Core/Assert.h \
  Effect.h ../Timeval.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -8697,10 +8697,10 @@ SweeperBonusManager.o: SweeperBonusManager.cpp Zone.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Object.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Object.h \
  ../../Core/Assert.h Creature.h EffectManager.h Effect.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -8712,7 +8712,7 @@ SweeperBonusManager.o: SweeperBonusManager.cpp Zone.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -8779,7 +8779,7 @@ LevelWar.o: LevelWar.cpp LevelWar.h ../../Core/Types.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h war/Work.h \
  LevelWarManager.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  war/Scheduler.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h /usr/include/STL/queue \
@@ -8787,9 +8787,9 @@ LevelWar.o: LevelWar.cpp LevelWar.h ../../Core/Types.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h war/Schedule.h \
  ../../Core/VSDateTime.h SweeperSet.h MonsterCorpse.h Item.h Object.h \
- ../../Core/Assert.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h EffectManager.h \
+ ../../Core/Assert.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -8854,14 +8854,14 @@ LevelWarManager.o: LevelWarManager.cpp /usr/include/stdio.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../../Core/Player.h PlayerCreature.h \
  Creature.h Object.h ../../Core/Assert.h EffectManager.h Effect.h \
- ../Timeval.h /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ ../Timeval.h /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -8871,7 +8871,7 @@ LevelWarManager.o: LevelWarManager.cpp /usr/include/stdio.h \
  Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ OptionInfo.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  ZoneGroupManager.h ZoneGroup.h Zone.h Tile.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h Party.h ../../Core/ModifyInfo.h \
@@ -8944,11 +8944,11 @@ LevelWarZoneInfoManager.o: LevelWarZoneInfoManager.cpp \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  Slayer.h PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
  EffectManager.h Effect.h ../Timeval.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -8958,7 +8958,7 @@ LevelWarZoneInfoManager.o: LevelWarZoneInfoManager.cpp \
  Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ OptionInfo.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  Zone.h Tile.h Obstacle.h Portal.h quest/TriggerManager.h \
  quest/Trigger.h quest/Condition.h quest/PropertyBuffer.h Sector.h \
  Party.h ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -9031,8 +9031,8 @@ RegenZoneManager.o: RegenZoneManager.cpp RegenZoneManager.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h MonsterCorpse.h \
  Item.h Object.h ../../Core/Assert.h Effect.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -9041,8 +9041,8 @@ RegenZoneManager.o: RegenZoneManager.cpp RegenZoneManager.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemFactory.h Inventory.h VolumeInfo.h InventorySlot.h Corpse.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h /usr/include/c++/7/map \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../database/DB.h \
  ../database/DatabaseManager.h /usr/include/STL/hash_map \
@@ -9050,7 +9050,7 @@ RegenZoneManager.o: RegenZoneManager.cpp RegenZoneManager.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h Zone.h Tile.h /usr/include/STL/slist \
+ ../database/Result.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h Party.h \
@@ -9144,8 +9144,8 @@ PetTypeInfo.o: PetTypeInfo.cpp PetTypeInfo.h ../../Core/Types.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h
 PetUtil.o: PetUtil.cpp PetUtil.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
   /usr/include/c++/7/streambuf \
@@ -9198,13 +9198,13 @@ PetUtil.o: PetUtil.cpp PetUtil.h ../../Core/Types.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  item/PetItem.h Item.h Object.h ../../Core/Assert.h Effect.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  /usr/include/c++/7/bitset ItemInfo.h InfoClassManager.h ItemFactory.h \
  ItemLoader.h ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h PetTypeInfo.h PetAttrInfo.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph PetTypeInfo.h PetAttrInfo.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../Core/ModifyInfo.h GamePlayer.h \
  ../../Core/Player.h ../../Core/SocketEncryptOutputStream.h \
@@ -9270,8 +9270,8 @@ PetAttrInfo.o: PetAttrInfo.cpp PetAttrInfo.h ../../Core/Types.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  ../../Core/PetInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -9330,8 +9330,8 @@ PetExpInfo.o: PetExpInfo.cpp PetExpInfo.h ../../Core/Types.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h
 RankExpTable.o: RankExpTable.cpp RankExpTable.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
   /usr/include/c++/7/streambuf \
@@ -9384,8 +9384,8 @@ RankExpTable.o: RankExpTable.cpp RankExpTable.h ../../Core/Types.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  ../../Core/Assert.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h
@@ -9442,8 +9442,8 @@ SlayerAttrExpTable.o: SlayerAttrExpTable.cpp SlayerAttrExpTable.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  ../../Core/Assert.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h
@@ -9493,16 +9493,16 @@ Pet.o: Pet.cpp Pet.h Slayer.h PlayerCreature.h Creature.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -9510,7 +9510,7 @@ Pet.o: Pet.cpp Pet.h Slayer.h PlayerCreature.h Creature.h Object.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -9605,8 +9605,8 @@ SystemAvailabilitiesManager.o: SystemAvailabilitiesManager.cpp \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  ../../Core/Assert.h
 LocalIP.o: LocalIP.cpp /usr/include/stdio.h /usr/include/features.h \
  /usr/include/i386-linux-gnu/sys/cdefs.h /usr/include/i386-linux-gnu/gnu/stubs.h \
@@ -9622,25 +9622,25 @@ LocalIP.o: LocalIP.cpp /usr/include/stdio.h /usr/include/features.h \
  /usr/include/i386-linux-gnu/bits/select.h /home/darkeden/src/libs/sigset.h \
  /usr/include/i386-linux-gnu/bits/time.h /usr/include/i386-linux-gnu/sys/sysmacros.h \
  /usr/include/alloca.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h /usr/include/string.h /usr/include/errno.h \
- /usr/include/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/asm/errno.h /usr/include/sys/socket.h \
+ /usr/include/i386-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/i386-linux-gnu/asm/errno.h /usr/include/sys/socket.h \
  /usr/include/sys/uio.h /usr/include/bits/uio.h \
- /usr/include/bits/socket.h \
+ /usr/include/i386-linux-gnu/bits/socket.h \
  /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
  /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
  /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
  /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/i386-linux-gnu/bits/posix2_lim.h /usr/include/bits/sockaddr.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h /usr/include/i386-linux-gnu/bits/sockaddr.h \
  /usr/include/asm/socket.h /usr/include/asm/sockios.h \
  /usr/include/net/if.h /usr/include/sys/ioctl.h \
  /usr/include/bits/ioctls.h /usr/include/asm/ioctls.h \
  /usr/include/asm/ioctl.h /usr/include/bits/ioctl-types.h \
  /usr/include/sys/ttydefaults.h /usr/include/net/if_arp.h \
  /usr/include/arpa/inet.h /usr/include/netinet/in.h \
- /usr/include/stdint.h /usr/include/bits/wordsize.h \
- /usr/include/bits/in.h /usr/include/bits/byteswap.h \
+ /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wordsize.h \
+ /usr/include/i386-linux-gnu/bits/in.h /usr/include/i386-linux-gnu/bits/byteswap.h \
  /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
  /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
  /usr/include/c++/7/new \
@@ -9713,8 +9713,8 @@ ItemGradeManager.o: ItemGradeManager.cpp ItemGradeManager.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  ../../Core/Assert.h
 ItemHeroOptionManager.o: ItemHeroOptionManager.cpp ItemHeroOptionManager.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
@@ -9770,8 +9770,8 @@ ItemHeroOptionManager.o: ItemHeroOptionManager.cpp ItemHeroOptionManager.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  ../../Core/Assert.h
 EventZoneInfo.o: EventZoneInfo.cpp EventZoneInfo.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -9821,11 +9821,11 @@ EventZoneInfo.o: EventZoneInfo.cpp EventZoneInfo.h ../../Core/Types.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
- /home/darkeden/src/libs/stl_hash_map.h Zone.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_hash_map.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -9833,8 +9833,8 @@ EventZoneInfo.o: EventZoneInfo.cpp EventZoneInfo.h ../../Core/Types.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h Party.h ../../Core/ModifyInfo.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h ../../Core/ModifyInfo.h \
  PCManager.h CreatureManager.h ../../Core/Encrypter.h \
  ../../Core/EncryptUtility.h /usr/include/STL/queue \
  /home/darkeden/src/libs/stl_deque.h /home/darkeden/src/libs/stl_queue.h ZoneUtil.h \
@@ -9890,19 +9890,19 @@ SMSServiceThread.o: SMSServiceThread.cpp SMSServiceThread.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Thread.h \
  ../pthreadAPI.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h ../database/DB.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph ../database/DB.h \
  ../database/DatabaseManager.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../../Core/Assert.h ../Timeval.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h
 SMSAddressBook.o: SMSAddressBook.cpp SMSAddressBook.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
@@ -9961,16 +9961,16 @@ SMSAddressBook.o: SMSAddressBook.cpp SMSAddressBook.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
  EffectManager.h Effect.h ../Timeval.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  ObjectRegistry.h InventorySlot.h Item.h Garbage.h RankBonus.h \
  ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  ../../Core/Gpackets/GCAddressListVerify.h
 FiniteStateMachine.o: FiniteStateMachine.cpp FiniteStateMachine.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
@@ -10016,8 +10016,8 @@ FiniteStateMachine.o: FiniteStateMachine.cpp FiniteStateMachine.h \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../Core/Assert.h \
@@ -10068,9 +10068,9 @@ GDRLairManager.o: GDRLairManager.cpp GDRLairManager.h \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
- FiniteStateMachine.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ FiniteStateMachine.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../Core/Assert.h ../../Core/Exception.h ../../Core/StringStream.h \
@@ -10078,12 +10078,12 @@ GDRLairManager.o: GDRLairManager.cpp GDRLairManager.h \
  ../../Core/VSDateTime.h GDRLairAbstractStates.h Effect.h Object.h \
  ../Thread.h ../pthreadAPI.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h ZoneUtil.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph ZoneUtil.h \
  Creature.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Item.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -10158,8 +10158,8 @@ GDRLairAbstractStates.o: GDRLairAbstractStates.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../Core/Assert.h \
@@ -10171,14 +10171,14 @@ GDRLairAbstractStates.o: GDRLairAbstractStates.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  ../../Core/Gpackets/GCGlobalChat.h Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -10240,18 +10240,18 @@ NicknameBook.o: NicknameBook.cpp NicknameBook.h ../../Core/Types.h \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h PlayerCreature.h Creature.h Object.h \
  ../../Core/Assert.h EffectManager.h Effect.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ OptionInfo.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  ../../Core/Gpackets/GCNicknameList.h ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
@@ -10312,11 +10312,11 @@ LevelNickInfoManager.o: LevelNickInfoManager.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  Creature.h Object.h ../../Core/Assert.h EffectManager.h Effect.h \
- ../Timeval.h /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ ../Timeval.h /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -10366,10 +10366,10 @@ SiegeManager.o: SiegeManager.cpp SiegeManager.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Object.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Object.h \
  ../../Core/Assert.h Creature.h EffectManager.h Effect.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -10381,7 +10381,7 @@ SiegeManager.o: SiegeManager.cpp SiegeManager.h ../../Core/Types.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -10461,11 +10461,11 @@ BroadcastFilter.o: BroadcastFilter.cpp BroadcastFilter.h \
  ../../Core/EncryptUtility.h ../../Core/SocketEncryptInputStream.h \
  ../../Core/SocketInputStream.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/STL/deque /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_deque.h ../../Core/Packet.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/PlayerStatus.h EventManager.h \
  Event.h skill/Skill.h ../PaySystem.h ../../Core/VSDateTime.h \
  billing/BillingPlayerInfo.h ../chinabilling/CBillingPlayerInfo.h \
@@ -10525,8 +10525,8 @@ Store.o: Store.cpp Store.h ../../Core/Types.h \
  ../../Core/SubItemInfo.h ../../Core/Assert.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Item.h Object.h Effect.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  /usr/include/c++/7/bitset
 AdvancementClassExpTable.o: AdvancementClassExpTable.cpp \
@@ -10582,8 +10582,8 @@ AdvancementClassExpTable.o: AdvancementClassExpTable.cpp \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  ../../Core/Assert.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h
@@ -10632,7 +10632,7 @@ DynamicZoneManager.o: DynamicZoneManager.cpp DynamicZoneManager.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
@@ -10729,14 +10729,14 @@ DynamicZone.o: DynamicZone.cpp DynamicZone.h ../../Core/Types.h \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ZoneInfoManager.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Object.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Object.h \
  ../../Core/Assert.h Creature.h EffectManager.h Effect.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -10747,7 +10747,7 @@ DynamicZone.o: DynamicZone.cpp DynamicZone.h ../../Core/Types.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -10803,12 +10803,12 @@ DynamicZoneGroup.o: DynamicZoneGroup.cpp DynamicZoneGroup.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- DynamicZone.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ DynamicZone.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  DynamicZoneManager.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
  DynamicZoneFactoryManager.h DynamicZoneInfo.h ../../Core/Assert.h
@@ -10856,8 +10856,8 @@ DynamicZoneGateOfAlter.o: DynamicZoneGateOfAlter.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h DynamicZone.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h PlayerCreature.h Creature.h Object.h \
@@ -10869,13 +10869,13 @@ DynamicZoneGateOfAlter.o: DynamicZoneGateOfAlter.cpp \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ OptionInfo.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  Zone.h Tile.h Obstacle.h Portal.h quest/TriggerManager.h \
  quest/Trigger.h quest/Condition.h quest/PropertyBuffer.h Sector.h \
  Party.h ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -10936,13 +10936,13 @@ DynamicZoneAlterOfBlood.o: DynamicZoneAlterOfBlood.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_list.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -10953,7 +10953,7 @@ DynamicZoneAlterOfBlood.o: DynamicZoneAlterOfBlood.cpp \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -11012,13 +11012,13 @@ DynamicZoneAsylion.o: DynamicZoneAsylion.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_list.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -11029,7 +11029,7 @@ DynamicZoneAsylion.o: DynamicZoneAsylion.cpp \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -11088,13 +11088,13 @@ DynamicZoneTimeOfDungeon.o: DynamicZoneTimeOfDungeon.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_list.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -11105,7 +11105,7 @@ DynamicZoneTimeOfDungeon.o: DynamicZoneTimeOfDungeon.cpp \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -11166,8 +11166,8 @@ DynamicZoneFactoryManager.o: DynamicZoneFactoryManager.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h DynamicZone.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../Core/Assert.h \
@@ -11218,13 +11218,13 @@ DynamicZoneCastleOfDefense.o: DynamicZoneCastleOfDefense.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_list.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -11235,7 +11235,7 @@ DynamicZoneCastleOfDefense.o: DynamicZoneCastleOfDefense.cpp \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -11315,13 +11315,13 @@ DynamicZoneSlayerMirrorOfAbyss.o: DynamicZoneSlayerMirrorOfAbyss.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_list.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -11332,7 +11332,7 @@ DynamicZoneSlayerMirrorOfAbyss.o: DynamicZoneSlayerMirrorOfAbyss.cpp \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -11412,13 +11412,13 @@ DynamicZoneVampireMirrorOfAbyss.o: DynamicZoneVampireMirrorOfAbyss.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_list.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -11429,7 +11429,7 @@ DynamicZoneVampireMirrorOfAbyss.o: DynamicZoneVampireMirrorOfAbyss.cpp \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -11509,13 +11509,13 @@ DynamicZonePartyOfDungeon.o: DynamicZonePartyOfDungeon.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_list.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -11526,7 +11526,7 @@ DynamicZonePartyOfDungeon.o: DynamicZonePartyOfDungeon.cpp \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -11606,13 +11606,13 @@ DynamicZonePartyOfDungeon2.o: DynamicZonePartyOfDungeon2.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_list.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -11623,7 +11623,7 @@ DynamicZonePartyOfDungeon2.o: DynamicZonePartyOfDungeon2.cpp \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -11703,13 +11703,13 @@ DynamicZonePartyOfDungeon3.o: DynamicZonePartyOfDungeon3.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_list.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -11720,7 +11720,7 @@ DynamicZonePartyOfDungeon3.o: DynamicZonePartyOfDungeon3.cpp \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -11800,13 +11800,13 @@ DynamicZonePartyOfDungeon4.o: DynamicZonePartyOfDungeon4.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_list.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -11817,7 +11817,7 @@ DynamicZonePartyOfDungeon4.o: DynamicZonePartyOfDungeon4.cpp \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -11897,13 +11897,13 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_list.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -11914,7 +11914,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -11994,13 +11994,13 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_list.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -12011,7 +12011,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -12091,13 +12091,13 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_list.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -12108,7 +12108,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -12188,13 +12188,13 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_list.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -12205,7 +12205,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -12285,13 +12285,13 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_list.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -12302,7 +12302,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -12382,13 +12382,13 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_list.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -12399,7 +12399,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -12479,13 +12479,13 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_list.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -12496,7 +12496,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -12576,13 +12576,13 @@ DynamicZoneTiffagues_2_1.o:  DynamicZoneTiffagues_2_1.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_list.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -12593,7 +12593,7 @@ DynamicZoneTiffagues_2_1.o:  DynamicZoneTiffagues_2_1.cpp \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -12673,13 +12673,13 @@ DynamicZoneTiffagues_2_2.o:  DynamicZoneTiffagues_2_2.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_list.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -12690,7 +12690,7 @@ DynamicZoneTiffagues_2_2.o:  DynamicZoneTiffagues_2_2.cpp \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -12770,13 +12770,13 @@ DynamicZoneTiffagues_1.o:  DynamicZoneTiffagues_1.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_list.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -12787,7 +12787,7 @@ DynamicZoneTiffagues_1.o:  DynamicZoneTiffagues_1.cpp \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -12867,13 +12867,13 @@ DynamicZoneBossRoom.o: DynamicZoneBossRoom.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_list.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -12884,7 +12884,7 @@ DynamicZoneBossRoom.o: DynamicZoneBossRoom.cpp \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -12964,13 +12964,13 @@ DynamicZoneMiniGame2.o: DynamicZoneMiniGame2.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_list.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -12981,7 +12981,7 @@ DynamicZoneMiniGame2.o: DynamicZoneMiniGame2.cpp \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -13061,13 +13061,13 @@ DynamicZoneMiniGame.o: DynamicZoneMiniGame.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_list.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -13078,7 +13078,7 @@ DynamicZoneMiniGame.o: DynamicZoneMiniGame.cpp \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -13158,13 +13158,13 @@ DynamicZoneIkLab.o: DynamicZoneIkLab.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_list.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -13175,7 +13175,7 @@ DynamicZoneIkLab.o: DynamicZoneIkLab.cpp \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -13255,13 +13255,13 @@ DynamicZoneIkLabSercet.o: DynamicZoneIkLabSercet.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_list.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -13272,7 +13272,7 @@ DynamicZoneIkLabSercet.o: DynamicZoneIkLabSercet.cpp \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -13352,13 +13352,13 @@ DynamicZoneBossRoom2.o: DynamicZoneBossRoom2.cpp \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_list.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -13369,7 +13369,7 @@ DynamicZoneBossRoom2.o: DynamicZoneBossRoom2.cpp \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -13451,9 +13451,9 @@ NewYear2005ItemUtil.o: NewYear2005ItemUtil.cpp EventItemUtil.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Item.h Object.h \
- ../../Core/Assert.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h EffectManager.h \
+ ../../Core/Assert.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -13462,13 +13462,13 @@ NewYear2005ItemUtil.o: NewYear2005ItemUtil.cpp EventItemUtil.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h Slayer.h \
  PlayerCreature.h Creature.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -13546,9 +13546,9 @@ Monster.o: Monster.cpp Monster.h Creature.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -13560,12 +13560,12 @@ Monster.o: Monster.cpp Monster.h Creature.h Object.h \
  /home/darkeden/src/libs/stl_hash_map.h PrecedenceTable.h MonsterManager.h \
  CreatureManager.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  MonsterCounter.h Slayer.h PlayerCreature.h ObjectRegistry.h \
  InventorySlot.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ OptionInfo.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  Zone.h Tile.h Obstacle.h Portal.h quest/TriggerManager.h \
  quest/Trigger.h quest/Condition.h quest/PropertyBuffer.h Sector.h \
  Party.h ../../Core/ModifyInfo.h PCManager.h ../../Core/Encrypter.h \
@@ -13658,8 +13658,8 @@ MonsterInfo.o: MonsterInfo.cpp MonsterInfoTypes.h MonsterInfo.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
  Creature.h Object.h EffectManager.h Effect.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -13673,7 +13673,7 @@ MonsterInfo.o: MonsterInfo.cpp MonsterInfoTypes.h MonsterInfo.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/Statement.h ../database/Result.h ../../Core/Properties.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
@@ -13725,15 +13725,15 @@ MonsterManager.o: MonsterManager.cpp MonsterManager.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  MonsterCounter.h Item.h /usr/include/STL/vector \
@@ -13749,7 +13749,7 @@ MonsterManager.o: MonsterManager.cpp MonsterManager.h \
  ../chinabilling/CBillingPlayerInfo.h ../chinabilling/CBillingInfo.h \
  ../../Core/Gpackets/GCReconnectLogin.h ../../Core/PacketFactory.h \
  gameguard/CSAuth.h MonsterCorpse.h ItemFactory.h Inventory.h \
- VolumeInfo.h InventorySlot.h Corpse.h Tile.h /usr/include/STL/slist \
+ VolumeInfo.h InventorySlot.h Corpse.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h Zone.h ObjectRegistry.h Party.h \
@@ -13844,14 +13844,14 @@ MonsterAI.o: MonsterAI.cpp MonsterAI.h Creature.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Item.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -13859,7 +13859,7 @@ MonsterAI.o: MonsterAI.cpp MonsterAI.h Creature.h Object.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -13953,8 +13953,8 @@ Directive.o: Directive.cpp Directive.h ../../Core/Types.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  ../../Core/Assert.h /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h
 MonsterNameManager.o: MonsterNameManager.cpp MonsterNameManager.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
@@ -14005,8 +14005,8 @@ MonsterNameManager.o: MonsterNameManager.cpp MonsterNameManager.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  Monster.h Creature.h Object.h ../../Core/Assert.h EffectManager.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -14018,7 +14018,7 @@ MonsterNameManager.o: MonsterNameManager.cpp MonsterNameManager.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/Statement.h ../database/Result.h
 MonsterCounter.o: MonsterCounter.cpp MonsterCounter.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
@@ -14111,8 +14111,8 @@ Item.o: Item.cpp Item.h Object.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -14125,14 +14125,14 @@ Item.o: Item.cpp Item.h Object.h ../../Core/Types.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/Statement.h ../database/Result.h ItemInfoManager.h \
  ItemInfo.h InfoClassManager.h ../../Core/PCItemInfo.h \
  ../../Core/SubItemInfo.h PlayerCreature.h Creature.h ObjectRegistry.h \
  InventorySlot.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ OptionInfo.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  Store.h ../../Core/StoreInfo.h \
  ../../Core/Cpackets/CGRequestStoreInfo.h /usr/include/STL/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h
@@ -14181,8 +14181,8 @@ ItemInfo.o: ItemInfo.cpp ItemInfo.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h Item.h Object.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -14243,11 +14243,11 @@ ItemUtil.o: ItemUtil.cpp ../database/DB.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  ItemUtil.h Item.h Object.h ../../Core/Assert.h Effect.h ../Timeval.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h EffectManager.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -14258,7 +14258,7 @@ ItemUtil.o: ItemUtil.cpp ../database/DB.h \
  Creature.h ObjectRegistry.h InventorySlot.h Garbage.h RankBonus.h \
  ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Inventory.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Inventory.h \
  VolumeInfo.h ../../Core/VSDateTime.h Slayer.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
@@ -14341,8 +14341,8 @@ ItemFactoryManager.o: ItemFactoryManager.cpp Item.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -14354,7 +14354,7 @@ ItemFactoryManager.o: ItemFactoryManager.cpp Item.h Object.h \
  /home/darkeden/src/libs/stl_hash_map.h ItemInfoManager.h ItemInfo.h \
  InfoClassManager.h item/Motorcycle.h ItemLoader.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  item/Potion.h ConcreteItem.h ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
@@ -14431,9 +14431,9 @@ ItemInfoManager.o: ItemInfoManager.cpp ../../Core/Exception.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h ItemInfoManager.h Item.h Object.h \
- ../../Core/Assert.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h EffectManager.h \
+ ../../Core/Assert.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -14447,7 +14447,7 @@ ItemInfoManager.o: ItemInfoManager.cpp ../../Core/Exception.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/Statement.h ../database/Result.h ItemPolicies.h \
  ItemFactory.h ItemLoader.h item/Belt.h item/Blade.h item/Bomb.h \
  item/BombMaterial.h item/Bracelet.h item/Coat.h item/Cross.h \
@@ -14523,8 +14523,8 @@ ItemLoaderManager.o: ItemLoaderManager.cpp ItemLoaderManager.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h Item.h Object.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -14533,13 +14533,13 @@ ItemLoaderManager.o: ItemLoaderManager.cpp ItemLoaderManager.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemLoader.h Slayer.h PlayerCreature.h Creature.h ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h InventorySlot.h Garbage.h RankBonus.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Garbage.h RankBonus.h \
  ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -14641,8 +14641,8 @@ SlayerCorpse.o: SlayerCorpse.cpp SlayerCorpse.h Item.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -14652,13 +14652,13 @@ SlayerCorpse.o: SlayerCorpse.cpp SlayerCorpse.h Item.h Object.h \
  ItemFactory.h ../../Core/PCSlayerInfo3.h ../../Core/PCInfo.h Corpse.h \
  Creature.h Slayer.h PlayerCreature.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -14726,8 +14726,8 @@ VampireCorpse.o: VampireCorpse.cpp VampireCorpse.h Item.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -14738,13 +14738,13 @@ VampireCorpse.o: VampireCorpse.cpp VampireCorpse.h Item.h Object.h \
  ../../Core/PCInfo.h Creature.h Vampire.h PlayerCreature.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Inventory.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Inventory.h \
  VolumeInfo.h Zone.h Tile.h Obstacle.h Portal.h quest/TriggerManager.h \
  quest/Trigger.h quest/Condition.h quest/PropertyBuffer.h Sector.h \
  Party.h ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -14805,8 +14805,8 @@ OustersCorpse.o: OustersCorpse.cpp OustersCorpse.h Item.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -14817,13 +14817,13 @@ OustersCorpse.o: OustersCorpse.cpp OustersCorpse.h Item.h Object.h \
  ../../Core/PCInfo.h Creature.h Ousters.h PlayerCreature.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Inventory.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Inventory.h \
  VolumeInfo.h Zone.h Tile.h Obstacle.h Portal.h quest/TriggerManager.h \
  quest/Trigger.h quest/Condition.h quest/PropertyBuffer.h Sector.h \
  Party.h ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -14884,8 +14884,8 @@ MonsterCorpse.o: MonsterCorpse.cpp MonsterCorpse.h Item.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -14901,7 +14901,7 @@ MonsterCorpse.o: MonsterCorpse.cpp MonsterCorpse.h Item.h Object.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/Statement.h ../database/Result.h
 Party.o: Party.cpp Party.h Creature.h Object.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -14948,15 +14948,15 @@ Party.o: Party.cpp Party.h Creature.h Object.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../Core/ModifyInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h CreatureUtil.h Item.h \
@@ -14969,7 +14969,7 @@ Party.o: Party.cpp Party.h Creature.h Object.h ../../Core/Types.h \
  ../PaySystem.h ../../Core/VSDateTime.h billing/BillingPlayerInfo.h \
  ../chinabilling/CBillingPlayerInfo.h ../chinabilling/CBillingInfo.h \
  ../../Core/Gpackets/GCReconnectLogin.h ../../Core/PacketFactory.h \
- gameguard/CSAuth.h Zone.h Tile.h /usr/include/STL/slist \
+ gameguard/CSAuth.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h PCManager.h \
@@ -15060,18 +15060,18 @@ Guild.o: Guild.cpp /usr/include/c++/7/algorithm \
  ../../Core/Assert.h ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../Core/VSDateTime.h ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/sys/time.h ../../Core/GuildInfo.h \
+ ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h ../../Core/GuildInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h \
- ../../Core/Gpackets/GCGuildMemberList.h /usr/include/STL/slist \
+ ../../Core/Gpackets/GCGuildMemberList.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h ../../Core/PacketFactory.h \
  ../../Core/GuildMemberInfo.h ../../Core/Properties.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
@@ -15123,12 +15123,12 @@ GuildManager.o: GuildManager.cpp Guild.h ../../Core/Types.h \
  ../../Core/Assert.h ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../Core/VSDateTime.h GuildManager.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../database/DB.h ../database/DatabaseManager.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -15136,7 +15136,7 @@ GuildManager.o: GuildManager.cpp Guild.h ../../Core/Types.h \
  ../database/Result.h ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../../Core/Gpackets/GCWaitGuildList.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
@@ -15193,12 +15193,12 @@ GuildUnion.o: GuildUnion.cpp GuildUnion.h ../../Core/Types.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/DB.h ../database/DatabaseManager.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/sys/time.h \
+ ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  ../../Core/Gpackets/GGCommand.h ../../Core/DatagramPacket.h \
  ../../Core/Datagram.h LoginServerManager.h ../Thread.h \
  ../pthreadAPI.h ../../Core/DatagramSocket.h GameServer.h \
@@ -15208,10 +15208,10 @@ GuildUnion.o: GuildUnion.cpp GuildUnion.h ../../Core/Types.h \
  ../GameServerInfo.h PacketUtil.h /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../../Core/Player.h PCFinder.h Creature.h Object.h \
  ../../Core/Assert.h EffectManager.h Effect.h ../Timeval.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset NPC.h Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Item.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -15270,8 +15270,8 @@ Effect.o: Effect.cpp Effect.h Object.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h
 EffectManager.o: EffectManager.cpp EffectManager.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -15318,15 +15318,15 @@ EffectManager.o: EffectManager.cpp EffectManager.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Effect.h Object.h \
- ../../Core/Assert.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ ../../Core/Assert.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h EffectEnemyErase.h EffectLoader.h \
  Creature.h /usr/include/c++/7/bitset Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Item.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -15334,7 +15334,7 @@ EffectManager.o: EffectManager.cpp EffectManager.h ../../Core/Types.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -15388,14 +15388,14 @@ EffectSchedule.o: EffectSchedule.cpp EffectSchedule.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Effect.h \
- Object.h ../../Core/Assert.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h EffectManager.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Effect.h \
+ Object.h ../../Core/Assert.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h Zone.h Tile.h /usr/include/STL/slist \
+ ../../Core/SocketOutputStream.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h /usr/include/c++/7/bitset \
  Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -15455,8 +15455,8 @@ EffectLoaderManager.o: EffectLoaderManager.cpp EffectLoaderManager.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h Effect.h Object.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectLoader.h Slayer.h PlayerCreature.h \
  Creature.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
@@ -15464,7 +15464,7 @@ EffectLoaderManager.o: EffectLoaderManager.cpp EffectLoaderManager.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -15472,7 +15472,7 @@ EffectLoaderManager.o: EffectLoaderManager.cpp EffectLoaderManager.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -15554,14 +15554,14 @@ EffectShutDown.o: EffectShutDown.cpp ../../Core/Assert.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h EffectShutDown.h \
- Effect.h Object.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ Effect.h Object.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/Gpackets/GCSystemMessage.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Zone.h \
- Tile.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
+ Tile.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -15570,12 +15570,12 @@ EffectShutDown.o: EffectShutDown.cpp ../../Core/Assert.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
  /home/darkeden/src/libs/stl_queue.h /usr/include/bits/signum.h \
- /usr/include/bits/siginfo.h /usr/include/bits/wordsize.h \
+ /usr/include/bits/siginfo.h /usr/include/i386-linux-gnu/bits/wordsize.h \
  /usr/include/bits/sigaction.h /usr/include/bits/sigcontext.h \
  /usr/include/asm/sigcontext.h /usr/include/bits/sigstack.h \
  ../database/DB.h ../database/DatabaseManager.h \
@@ -15636,9 +15636,9 @@ EffectHPRecovery.o: EffectHPRecovery.cpp EffectHPRecovery.h Effect.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
- /usr/include/getopt.h Zone.h Tile.h /usr/include/STL/slist \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
+ /usr/include/getopt.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -15651,7 +15651,7 @@ EffectHPRecovery.o: EffectHPRecovery.cpp EffectHPRecovery.h Effect.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -15730,14 +15730,14 @@ EffectMPRecovery.o: EffectMPRecovery.cpp ../../Core/Assert.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h EffectMPRecovery.h \
- Effect.h Object.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ Effect.h Object.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/Gpackets/GCMPRecoveryEnd.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
- ../../Core/EffectInfo.h Zone.h Tile.h /usr/include/STL/slist \
+ ../../Core/EffectInfo.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h EffectManager.h \
  /usr/include/c++/7/bitset Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
@@ -15747,7 +15747,7 @@ EffectMPRecovery.o: EffectMPRecovery.cpp ../../Core/Assert.h \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -15822,9 +15822,9 @@ EffectAlignmentRecovery.o: EffectAlignmentRecovery.cpp \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
  EffectAlignmentRecovery.h Effect.h Object.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
- /usr/include/getopt.h Zone.h Tile.h /usr/include/STL/slist \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
+ /usr/include/getopt.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -15837,7 +15837,7 @@ EffectAlignmentRecovery.o: EffectAlignmentRecovery.cpp \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -15916,8 +15916,8 @@ EffectEnemyErase.o: EffectEnemyErase.cpp EffectEnemyErase.h Effect.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectLoader.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -15925,7 +15925,7 @@ EffectEnemyErase.o: EffectEnemyErase.cpp EffectEnemyErase.h Effect.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -15933,7 +15933,7 @@ EffectEnemyErase.o: EffectEnemyErase.cpp EffectEnemyErase.h Effect.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -16011,14 +16011,14 @@ EffectDecayCorpse.o: EffectDecayCorpse.cpp ../../Core/Assert.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h EffectDecayCorpse.h \
- Effect.h Object.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ Effect.h Object.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/Gpackets/GCDeleteObject.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -16027,7 +16027,7 @@ EffectDecayCorpse.o: EffectDecayCorpse.cpp ../../Core/Assert.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -16081,14 +16081,14 @@ EffectDecayItem.o: EffectDecayItem.cpp ../../Core/Assert.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h EffectDecayItem.h \
- Effect.h Object.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ Effect.h Object.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/Gpackets/GCDeleteObject.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -16097,7 +16097,7 @@ EffectDecayItem.o: EffectDecayItem.cpp ../../Core/Assert.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -16151,8 +16151,8 @@ EffectAftermath.o: EffectAftermath.cpp EffectAftermath.h Effect.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectLoader.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -16160,7 +16160,7 @@ EffectAftermath.o: EffectAftermath.cpp EffectAftermath.h Effect.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -16168,7 +16168,7 @@ EffectAftermath.o: EffectAftermath.cpp EffectAftermath.h Effect.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -16247,8 +16247,8 @@ EffectComa.o: EffectComa.cpp EffectComa.h Effect.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectLoader.h Slayer.h PlayerCreature.h \
  Creature.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
@@ -16256,7 +16256,7 @@ EffectComa.o: EffectComa.cpp EffectComa.h Effect.h Object.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -16264,7 +16264,7 @@ EffectComa.o: EffectComa.cpp EffectComa.h Effect.h Object.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -16358,9 +16358,9 @@ EffectPrecedence.o: EffectPrecedence.cpp EffectPrecedence.h Effect.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
- /usr/include/getopt.h Zone.h Tile.h /usr/include/STL/slist \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
+ /usr/include/getopt.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -16373,7 +16373,7 @@ EffectPrecedence.o: EffectPrecedence.cpp EffectPrecedence.h Effect.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -16429,13 +16429,13 @@ EffectTransportItem.o: EffectTransportItem.cpp ../../Core/Assert.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
  EffectTransportItem.h Effect.h Object.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/Gpackets/GCDeleteObject.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -16444,7 +16444,7 @@ EffectTransportItem.o: EffectTransportItem.cpp ../../Core/Assert.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -16495,14 +16495,14 @@ EffectAddItem.o: EffectAddItem.cpp ../../Core/Assert.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h EffectAddItem.h \
- Effect.h Object.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ Effect.h Object.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/Gpackets/GCDeleteObject.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -16511,7 +16511,7 @@ EffectAddItem.o: EffectAddItem.cpp ../../Core/Assert.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -16564,8 +16564,8 @@ EffectRelicTable.o: EffectRelicTable.cpp EffectRelicTable.h Effect.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Item.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -16574,13 +16574,13 @@ EffectRelicTable.o: EffectRelicTable.cpp EffectRelicTable.h Effect.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h Slayer.h \
  PlayerCreature.h Creature.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -16657,8 +16657,8 @@ EffectHasSlayerRelic.o: EffectHasSlayerRelic.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -16666,7 +16666,7 @@ EffectHasSlayerRelic.o: EffectHasSlayerRelic.cpp \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -16674,7 +16674,7 @@ EffectHasSlayerRelic.o: EffectHasSlayerRelic.cpp \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -16758,10 +16758,10 @@ EffectHasVampireRelic.o: EffectHasVampireRelic.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ZoneInfoManager.h Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -16773,7 +16773,7 @@ EffectHasVampireRelic.o: EffectHasVampireRelic.cpp \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -16858,8 +16858,8 @@ EffectIncreaseAttr.o: EffectIncreaseAttr.cpp EffectIncreaseAttr.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Slayer.h PlayerCreature.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -16867,7 +16867,7 @@ EffectIncreaseAttr.o: EffectIncreaseAttr.cpp EffectIncreaseAttr.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -16875,7 +16875,7 @@ EffectIncreaseAttr.o: EffectIncreaseAttr.cpp EffectIncreaseAttr.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -16955,14 +16955,14 @@ EffectDeleteItem.o: EffectDeleteItem.cpp ../../Core/Assert.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h EffectDeleteItem.h \
- Effect.h Object.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ Effect.h Object.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/Gpackets/GCDeleteObject.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -16971,7 +16971,7 @@ EffectDeleteItem.o: EffectDeleteItem.cpp ../../Core/Assert.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -17022,8 +17022,8 @@ EffectSlayerRelic.o: EffectSlayerRelic.cpp EffectSlayerRelic.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -17031,7 +17031,7 @@ EffectSlayerRelic.o: EffectSlayerRelic.cpp EffectSlayerRelic.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -17039,7 +17039,7 @@ EffectSlayerRelic.o: EffectSlayerRelic.cpp EffectSlayerRelic.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -17122,15 +17122,15 @@ EffectVampireRelic.o: EffectVampireRelic.cpp EffectVampireRelic.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ZoneGroupManager.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
- ZoneGroup.h Zone.h Tile.h /usr/include/STL/slist \
+ ZoneGroup.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -17139,8 +17139,8 @@ EffectVampireRelic.o: EffectVampireRelic.cpp EffectVampireRelic.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h Party.h ../../Core/ModifyInfo.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h ../../Core/ModifyInfo.h \
  PCManager.h CreatureManager.h ../../Core/Encrypter.h \
  ../../Core/EncryptUtility.h /usr/include/STL/queue \
  /home/darkeden/src/libs/stl_deque.h /home/darkeden/src/libs/stl_queue.h \
@@ -17222,8 +17222,8 @@ EffectRelicPosition.o: EffectRelicPosition.cpp EffectRelicPosition.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ZoneUtil.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -17235,12 +17235,12 @@ EffectRelicPosition.o: EffectRelicPosition.cpp EffectRelicPosition.h \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
- ZoneGroup.h Zone.h Tile.h /usr/include/STL/slist \
+ ZoneGroup.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Item.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -17301,8 +17301,8 @@ EffectRelicLock.o: EffectRelicLock.cpp EffectRelicLock.h Effect.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -17310,7 +17310,7 @@ EffectRelicLock.o: EffectRelicLock.cpp EffectRelicLock.h Effect.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -17318,7 +17318,7 @@ EffectRelicLock.o: EffectRelicLock.cpp EffectRelicLock.h Effect.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -17399,15 +17399,15 @@ EffectMasterLairPass.o: EffectMasterLairPass.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../../Core/Player.h ZoneInfoManager.h Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Item.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -17415,7 +17415,7 @@ EffectMasterLairPass.o: EffectMasterLairPass.cpp \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -17469,8 +17469,8 @@ EffectContinualGroundAttack.o: EffectContinualGroundAttack.cpp \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
  EffectContinualGroundAttack.h Effect.h Object.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h skill/EffectGroundAttack.h EffectLoader.h \
  skill/EffectMeteorStrike.h MonsterManager.h CreatureManager.h \
  Creature.h EffectManager.h ../../Core/EffectInfo.h \
@@ -17478,12 +17478,12 @@ EffectContinualGroundAttack.o: EffectContinualGroundAttack.cpp \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  MonsterCounter.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
- PCManager.h Zone.h Tile.h /usr/include/STL/slist \
+ PCManager.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h Party.h \
@@ -17564,15 +17564,15 @@ EffectGhost.o: EffectGhost.cpp EffectGhost.h Effect.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../../Core/Player.h ZoneInfoManager.h Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Item.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -17580,7 +17580,7 @@ EffectGhost.o: EffectGhost.cpp EffectGhost.h Effect.h Object.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -17634,8 +17634,8 @@ EffectTransportCreature.o: EffectTransportCreature.cpp \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
  EffectTransportCreature.h Effect.h Object.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/Gpackets/GCSystemMessage.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -17644,13 +17644,13 @@ EffectTransportCreature.o: EffectTransportCreature.cpp \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
- Zone.h Tile.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ Zone.h Tile.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  Creature.h EffectManager.h ../../Core/EffectInfo.h \
  /usr/include/c++/7/bitset Item.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -17721,8 +17721,8 @@ EffectGrandMasterSlayer.o: EffectGrandMasterSlayer.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -17730,7 +17730,7 @@ EffectGrandMasterSlayer.o: EffectGrandMasterSlayer.cpp \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -17738,7 +17738,7 @@ EffectGrandMasterSlayer.o: EffectGrandMasterSlayer.cpp \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -17809,8 +17809,8 @@ EffectMonsterMasterEffect1.o: EffectMonsterMasterEffect1.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -17818,7 +17818,7 @@ EffectMonsterMasterEffect1.o: EffectMonsterMasterEffect1.cpp \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -17826,7 +17826,7 @@ EffectMonsterMasterEffect1.o: EffectMonsterMasterEffect1.cpp \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -17897,14 +17897,14 @@ EffectGrandMasterVampire.o: EffectGrandMasterVampire.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- ../../Core/Player.h Zone.h Tile.h /usr/include/STL/slist \
+ ../../Core/Player.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
@@ -17913,7 +17913,7 @@ EffectGrandMasterVampire.o: EffectGrandMasterVampire.cpp \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -17979,8 +17979,8 @@ EffectKillAftermath.o: EffectKillAftermath.cpp EffectKillAftermath.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectLoader.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -17988,7 +17988,7 @@ EffectKillAftermath.o: EffectKillAftermath.cpp EffectKillAftermath.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -17996,7 +17996,7 @@ EffectKillAftermath.o: EffectKillAftermath.cpp EffectKillAftermath.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -18078,8 +18078,8 @@ EffectHasBloodBible.o: EffectHasBloodBible.cpp EffectHasBloodBible.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -18087,7 +18087,7 @@ EffectHasBloodBible.o: EffectHasBloodBible.cpp EffectHasBloodBible.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -18095,7 +18095,7 @@ EffectHasBloodBible.o: EffectHasBloodBible.cpp EffectHasBloodBible.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -18184,8 +18184,8 @@ EffectShrineHoly.o: EffectShrineHoly.cpp EffectShrineHoly.h Effect.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -18193,7 +18193,7 @@ EffectShrineHoly.o: EffectShrineHoly.cpp EffectShrineHoly.h Effect.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -18201,7 +18201,7 @@ EffectShrineHoly.o: EffectShrineHoly.cpp EffectShrineHoly.h Effect.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -18283,8 +18283,8 @@ EffectShrineGuard.o: EffectShrineGuard.cpp EffectShrineGuard.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -18292,7 +18292,7 @@ EffectShrineGuard.o: EffectShrineGuard.cpp EffectShrineGuard.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -18300,7 +18300,7 @@ EffectShrineGuard.o: EffectShrineGuard.cpp EffectShrineGuard.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -18382,8 +18382,8 @@ EffectShrineShield.o: EffectShrineShield.cpp EffectShrineShield.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -18391,7 +18391,7 @@ EffectShrineShield.o: EffectShrineShield.cpp EffectShrineShield.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -18399,7 +18399,7 @@ EffectShrineShield.o: EffectShrineShield.cpp EffectShrineShield.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -18482,13 +18482,13 @@ EffectTransportItemToCorpse.o: EffectTransportItemToCorpse.cpp \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
  EffectTransportItemToCorpse.h Effect.h Object.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/Gpackets/GCDeleteObject.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -18497,7 +18497,7 @@ EffectTransportItemToCorpse.o: EffectTransportItemToCorpse.cpp \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -18550,13 +18550,13 @@ EffectAddItemToCorpse.o: EffectAddItemToCorpse.cpp ../../Core/Assert.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
  EffectAddItemToCorpse.h Effect.h Object.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/Gpackets/GCDeleteObject.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -18565,7 +18565,7 @@ EffectAddItemToCorpse.o: EffectAddItemToCorpse.cpp ../../Core/Assert.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -18618,8 +18618,8 @@ EffectHasRelic.o: EffectHasRelic.cpp EffectHasRelic.h Effect.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -18627,7 +18627,7 @@ EffectHasRelic.o: EffectHasRelic.cpp EffectHasRelic.h Effect.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -18635,7 +18635,7 @@ EffectHasRelic.o: EffectHasRelic.cpp EffectHasRelic.h Effect.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -18722,8 +18722,8 @@ EffectHasCastleSymbol.o: EffectHasCastleSymbol.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ZoneUtil.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -18731,8 +18731,8 @@ EffectHasCastleSymbol.o: EffectHasCastleSymbol.cpp \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../../Core/VSDateTime.h Slayer.h PlayerCreature.h ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h InventorySlot.h Item.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Garbage.h RankBonus.h ExpFwd.h \
@@ -18740,7 +18740,7 @@ EffectHasCastleSymbol.o: EffectHasCastleSymbol.cpp \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -18827,8 +18827,8 @@ EffectLoveChain.o: EffectLoveChain.cpp EffectLoveChain.h Effect.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Slayer.h PlayerCreature.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -18836,7 +18836,7 @@ EffectLoveChain.o: EffectLoveChain.cpp EffectLoveChain.h Effect.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -18844,7 +18844,7 @@ EffectLoveChain.o: EffectLoveChain.cpp EffectLoveChain.h Effect.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -18932,9 +18932,9 @@ EffectPKZoneRegen.o: EffectPKZoneRegen.cpp EffectPKZoneRegen.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
- /usr/include/getopt.h Zone.h Tile.h /usr/include/STL/slist \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
+ /usr/include/getopt.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -18947,7 +18947,7 @@ EffectPKZoneRegen.o: EffectPKZoneRegen.cpp EffectPKZoneRegen.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -19029,9 +19029,9 @@ EffectPKZoneResurrection.o: EffectPKZoneResurrection.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
- /usr/include/getopt.h Zone.h Tile.h /usr/include/STL/slist \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
+ /usr/include/getopt.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -19044,7 +19044,7 @@ EffectPKZoneResurrection.o: EffectPKZoneResurrection.cpp \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -19099,14 +19099,14 @@ EffectGrandMasterOusters.o: EffectGrandMasterOusters.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- ../../Core/Player.h Zone.h Tile.h /usr/include/STL/slist \
+ ../../Core/Player.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
@@ -19115,7 +19115,7 @@ EffectGrandMasterOusters.o: EffectGrandMasterOusters.cpp \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -19181,14 +19181,14 @@ EffectTranslation.o: EffectTranslation.cpp EffectTranslation.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- ../../Core/Player.h Zone.h Tile.h /usr/include/STL/slist \
+ ../../Core/Player.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
@@ -19197,7 +19197,7 @@ EffectTranslation.o: EffectTranslation.cpp EffectTranslation.h \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -19249,8 +19249,8 @@ EffectLoud.o: EffectLoud.cpp EffectLoud.h Effect.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Ousters.h PlayerCreature.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -19258,7 +19258,7 @@ EffectLoud.o: EffectLoud.cpp EffectLoud.h Effect.h Object.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -19266,7 +19266,7 @@ EffectLoud.o: EffectLoud.cpp EffectLoud.h Effect.h Object.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Inventory.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Inventory.h \
  VolumeInfo.h Zone.h Tile.h Obstacle.h Portal.h quest/TriggerManager.h \
  quest/Trigger.h quest/Condition.h quest/PropertyBuffer.h Sector.h \
  Party.h ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -19329,8 +19329,8 @@ EffectMute.o: EffectMute.cpp EffectMute.h Effect.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectLoader.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -19338,7 +19338,7 @@ EffectMute.o: EffectMute.cpp EffectMute.h Effect.h Object.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -19346,7 +19346,7 @@ EffectMute.o: EffectMute.cpp EffectMute.h Effect.h Object.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -19433,8 +19433,8 @@ SimpleCreatureEffect.o: SimpleCreatureEffect.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Ousters.h PlayerCreature.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -19442,7 +19442,7 @@ SimpleCreatureEffect.o: SimpleCreatureEffect.cpp \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -19450,7 +19450,7 @@ SimpleCreatureEffect.o: SimpleCreatureEffect.cpp \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Inventory.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Inventory.h \
  VolumeInfo.h Zone.h Tile.h Obstacle.h Portal.h quest/TriggerManager.h \
  quest/Trigger.h quest/Condition.h quest/PropertyBuffer.h Sector.h \
  Party.h ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -19513,8 +19513,8 @@ EffectRefiniumTicket.o: EffectRefiniumTicket.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Ousters.h PlayerCreature.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -19522,7 +19522,7 @@ EffectRefiniumTicket.o: EffectRefiniumTicket.cpp \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -19530,7 +19530,7 @@ EffectRefiniumTicket.o: EffectRefiniumTicket.cpp \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Inventory.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Inventory.h \
  VolumeInfo.h Zone.h Tile.h Obstacle.h Portal.h quest/TriggerManager.h \
  quest/Trigger.h quest/Condition.h quest/PropertyBuffer.h Sector.h \
  Party.h ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -19593,8 +19593,8 @@ EffectFlagInsert.o: EffectFlagInsert.cpp EffectFlagInsert.h Effect.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -19602,7 +19602,7 @@ EffectFlagInsert.o: EffectFlagInsert.cpp EffectFlagInsert.h Effect.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -19610,7 +19610,7 @@ EffectFlagInsert.o: EffectFlagInsert.cpp EffectFlagInsert.h Effect.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -19693,14 +19693,14 @@ EffectHasSweeper.o: EffectHasSweeper.cpp EffectHasSweeper.h Effect.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Item.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -19708,7 +19708,7 @@ EffectHasSweeper.o: EffectHasSweeper.cpp EffectHasSweeper.h Effect.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -19760,8 +19760,8 @@ EffectKeepSweeper.o: EffectKeepSweeper.cpp EffectKeepSweeper.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Item.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -19815,9 +19815,9 @@ EffectRegenZone.o: EffectRegenZone.cpp EffectRegenZone.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Effect.h Object.h \
- ../../Core/Assert.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h RegenZoneManager.h \
+ ../../Core/Assert.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h RegenZoneManager.h \
  MonsterCorpse.h Item.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -19826,10 +19826,10 @@ EffectRegenZone.o: EffectRegenZone.cpp EffectRegenZone.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemFactory.h Inventory.h VolumeInfo.h InventorySlot.h Corpse.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h /usr/include/c++/7/map \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
- /home/darkeden/src/libs/stl_multimap.h Zone.h Tile.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_multimap.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h /usr/include/STL/hash_map \
@@ -19885,9 +19885,9 @@ EffectTryingPosition.o: EffectTryingPosition.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
- /usr/include/getopt.h Zone.h Tile.h /usr/include/STL/slist \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
+ /usr/include/getopt.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -19900,7 +19900,7 @@ EffectTryingPosition.o: EffectTryingPosition.cpp \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -19981,14 +19981,14 @@ EffectTrying.o: EffectTrying.cpp EffectTrying.h Effect.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Item.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -19996,7 +19996,7 @@ EffectTrying.o: EffectTrying.cpp EffectTrying.h Effect.h Object.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -20049,9 +20049,9 @@ EffectTryRegenZone.o: EffectTryRegenZone.cpp EffectTryRegenZone.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Effect.h Object.h \
- ../../Core/Assert.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h RegenZoneManager.h \
+ ../../Core/Assert.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h RegenZoneManager.h \
  MonsterCorpse.h Item.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -20060,11 +20060,11 @@ EffectTryRegenZone.o: EffectTryRegenZone.cpp EffectTryRegenZone.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemFactory.h Inventory.h VolumeInfo.h InventorySlot.h Corpse.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h /usr/include/c++/7/map \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h Creature.h Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Obstacle.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Obstacle.h \
  Portal.h quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
@@ -20125,12 +20125,12 @@ EffectOnBridge.o: EffectOnBridge.cpp ../database/DB.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  EffectOnBridge.h Effect.h Object.h ../../Core/Assert.h ../Timeval.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h EffectLoader.h \
- Zone.h Tile.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h EffectLoader.h \
+ Zone.h Tile.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  Creature.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -20216,8 +20216,8 @@ EffectHasPet.o: EffectHasPet.cpp EffectHasPet.h Effect.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h PlayerCreature.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -20225,7 +20225,7 @@ EffectHasPet.o: EffectHasPet.cpp EffectHasPet.h Effect.h Object.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -20233,7 +20233,7 @@ EffectHasPet.o: EffectHasPet.cpp EffectHasPet.h Effect.h Object.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h GamePlayer.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h GamePlayer.h \
  ../../Core/Player.h ../../Core/SocketEncryptOutputStream.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  ../../Core/SocketEncryptInputStream.h /usr/include/STL/deque \
@@ -20298,8 +20298,8 @@ EffectHasPet.o: EffectHasPet.cpp EffectHasPet.h Effect.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h PlayerCreature.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -20307,7 +20307,7 @@ EffectHasPet.o: EffectHasPet.cpp EffectHasPet.h Effect.h Object.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -20315,7 +20315,7 @@ EffectHasPet.o: EffectHasPet.cpp EffectHasPet.h Effect.h Object.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h GamePlayer.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h GamePlayer.h \
  ../../Core/Player.h ../../Core/SocketEncryptOutputStream.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  ../../Core/SocketEncryptInputStream.h /usr/include/STL/deque \
@@ -20380,8 +20380,8 @@ EffectHasPet.o: EffectHasPet.cpp EffectHasPet.h Effect.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h PlayerCreature.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -20389,7 +20389,7 @@ EffectHasPet.o: EffectHasPet.cpp EffectHasPet.h Effect.h Object.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -20397,7 +20397,7 @@ EffectHasPet.o: EffectHasPet.cpp EffectHasPet.h Effect.h Object.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h GamePlayer.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h GamePlayer.h \
  ../../Core/Player.h ../../Core/SocketEncryptOutputStream.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  ../../Core/SocketEncryptInputStream.h /usr/include/STL/deque \
@@ -20462,9 +20462,9 @@ EffectPacketSend.o: EffectPacketSend.cpp EffectPacketSend.h Effect.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
- /usr/include/getopt.h Zone.h Tile.h /usr/include/STL/slist \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
+ /usr/include/getopt.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -20477,7 +20477,7 @@ EffectPacketSend.o: EffectPacketSend.cpp EffectPacketSend.h Effect.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -20528,9 +20528,9 @@ EffectDarknessForbidden.o: EffectDarknessForbidden.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
- /usr/include/getopt.h EffectLoader.h Tile.h /usr/include/STL/slist \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
+ /usr/include/getopt.h EffectLoader.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -20543,7 +20543,7 @@ EffectDarknessForbidden.o: EffectDarknessForbidden.cpp \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -20596,14 +20596,14 @@ EffectCastingTrap.o: EffectCastingTrap.cpp EffectCastingTrap.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectWithWarning.h ZoneUtil.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- ../../Core/VSDateTime.h Tile.h /usr/include/STL/slist \
+ ../../Core/VSDateTime.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
@@ -20612,7 +20612,7 @@ EffectCastingTrap.o: EffectCastingTrap.cpp EffectCastingTrap.h \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  Zone.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -20663,8 +20663,8 @@ EffectWithWarning.o: EffectWithWarning.cpp EffectWithWarning.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/Gpackets/GCAddEffectToTile.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -20673,7 +20673,7 @@ EffectWithWarning.o: EffectWithWarning.cpp EffectWithWarning.h \
  ../../Core/Gpackets/GCModifyInformation.h ../../Core/ModifyInfo.h \
  ../../Core/Gpackets/GCStatusCurrentHP.h ../../Core/EffectInfo.h \
  ../../Core/Gpackets/GCAddEffect.h skill/EffectIceFieldToCreature.h \
- EffectLoader.h Zone.h Tile.h /usr/include/STL/slist \
+ EffectLoader.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h EffectManager.h \
  /usr/include/c++/7/bitset Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
@@ -20683,7 +20683,7 @@ EffectWithWarning.o: EffectWithWarning.cpp EffectWithWarning.h \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  PCManager.h CreatureManager.h ../../Core/Encrypter.h \
  ../../Core/EncryptUtility.h /usr/include/STL/queue \
  /home/darkeden/src/libs/stl_deque.h /home/darkeden/src/libs/stl_queue.h Slayer.h \
@@ -20758,9 +20758,9 @@ EffectKickOut.o: EffectKickOut.cpp EffectKickOut.h Effect.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
- /usr/include/getopt.h Zone.h Tile.h /usr/include/STL/slist \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
+ /usr/include/getopt.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -20773,7 +20773,7 @@ EffectKickOut.o: EffectKickOut.cpp EffectKickOut.h Effect.h Object.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -20826,15 +20826,15 @@ EffectGDRLairClose.o: EffectGDRLairClose.cpp EffectGDRLairClose.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h GDRLairManager.h FiniteStateMachine.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../Core/VSDateTime.h GDRLairAbstractStates.h ../Thread.h \
  ../pthreadAPI.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h ../../Core/Gpackets/GCSystemMessage.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph ../../Core/Gpackets/GCSystemMessage.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
@@ -20842,7 +20842,7 @@ EffectGDRLairClose.o: EffectGDRLairClose.cpp EffectGDRLairClose.h \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
- ZoneGroup.h Zone.h Tile.h /usr/include/STL/slist \
+ ZoneGroup.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset Item.h Obstacle.h \
  Portal.h quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -20900,8 +20900,8 @@ EffectEventQuestReset.o: EffectEventQuestReset.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectLoader.h PlayerCreature.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -20909,7 +20909,7 @@ EffectEventQuestReset.o: EffectEventQuestReset.cpp \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -20917,7 +20917,7 @@ EffectEventQuestReset.o: EffectEventQuestReset.cpp \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  ../../Core/Player.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h \
  ../../Core/Gpackets/GCSystemMessage.h /usr/include/STL/cstdio \
@@ -20968,8 +20968,8 @@ EffectShareHP.o: EffectShareHP.cpp EffectShareHP.h Effect.h Object.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Slayer.h PlayerCreature.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -20977,7 +20977,7 @@ EffectShareHP.o: EffectShareHP.cpp EffectShareHP.h Effect.h Object.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -20985,7 +20985,7 @@ EffectShareHP.o: EffectShareHP.cpp EffectShareHP.h Effect.h Object.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -21063,8 +21063,8 @@ EffectCanEnterGDRLair.o: EffectCanEnterGDRLair.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectLoader.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -21072,7 +21072,7 @@ EffectCanEnterGDRLair.o: EffectCanEnterGDRLair.cpp \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -21080,7 +21080,7 @@ EffectCanEnterGDRLair.o: EffectCanEnterGDRLair.cpp \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -21158,8 +21158,8 @@ EffectSimyunEnterLoop.o: EffectSimyunEnterLoop.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectLoader.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -21167,7 +21167,7 @@ EffectSimyunEnterLoop.o: EffectSimyunEnterLoop.cpp \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -21175,7 +21175,7 @@ EffectSimyunEnterLoop.o: EffectSimyunEnterLoop.cpp \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -21253,10 +21253,10 @@ EffectAutoTurret.o: EffectAutoTurret.cpp EffectAutoTurret.h Effect.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectLoader.h Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -21268,7 +21268,7 @@ EffectAutoTurret.o: EffectAutoTurret.cpp EffectAutoTurret.h Effect.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -21319,10 +21319,10 @@ EffectTiffaugesRealWorldLeftUP.o: EffectTiffaugesRealWorldLeftUP.cpp EffectTiffa
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectLoader.h Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -21334,7 +21334,7 @@ EffectTiffaugesRealWorldLeftUP.o: EffectTiffaugesRealWorldLeftUP.cpp EffectTiffa
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -21385,10 +21385,10 @@ EffectTurretLaser.o: EffectTurretLaser.cpp EffectTurretLaser.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectLoader.h Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
@@ -21400,7 +21400,7 @@ EffectTurretLaser.o: EffectTurretLaser.cpp EffectTurretLaser.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -21478,8 +21478,8 @@ EffectKillTimer.o: EffectKillTimer.cpp EffectKillTimer.h Effect.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectLoader.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -21490,12 +21490,12 @@ EffectKillTimer.o: EffectKillTimer.cpp EffectKillTimer.h Effect.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Treasure.h Item.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- PrecedenceTable.h Zone.h Tile.h /usr/include/STL/slist \
+ PrecedenceTable.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -21546,8 +21546,8 @@ EffectDragonEye.o: EffectDragonEye.cpp EffectDragonEye.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Slayer.h PlayerCreature.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -21555,7 +21555,7 @@ EffectDragonEye.o: EffectDragonEye.cpp EffectDragonEye.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -21563,7 +21563,7 @@ EffectDragonEye.o: EffectDragonEye.cpp EffectDragonEye.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -21638,8 +21638,8 @@ EffectRegenerate.o: EffectRegenerate.cpp EffectRegenerate.h Effect.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectLoader.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -21650,12 +21650,12 @@ EffectRegenerate.o: EffectRegenerate.cpp EffectRegenerate.h Effect.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Treasure.h Item.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- PrecedenceTable.h Zone.h Tile.h /usr/include/STL/slist \
+ PrecedenceTable.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -21708,13 +21708,13 @@ EffectRecallMotorcycle.o: EffectRecallMotorcycle.cpp \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
  EffectRecallMotorcycle.h Effect.h Object.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/Gpackets/GCDeleteObject.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -21723,7 +21723,7 @@ EffectRecallMotorcycle.o: EffectRecallMotorcycle.cpp \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -21795,13 +21795,13 @@ EffectRideMotorcycle.o: EffectRideMotorcycle.cpp ../../Core/Assert.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
  EffectRideMotorcycle.h Effect.h Object.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/Gpackets/GCDeleteObject.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
- ../../Core/Cpackets/CGRideMotorCycle.h Tile.h /usr/include/STL/slist \
+ ../../Core/Cpackets/CGRideMotorCycle.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
@@ -21811,7 +21811,7 @@ EffectRideMotorcycle.o: EffectRideMotorcycle.cpp ../../Core/Assert.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -21887,8 +21887,8 @@ EffectDonation200501.o: EffectDonation200501.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -21896,7 +21896,7 @@ EffectDonation200501.o: EffectDonation200501.cpp \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
@@ -21904,7 +21904,7 @@ EffectDonation200501.o: EffectDonation200501.cpp \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -21975,9 +21975,9 @@ SimpleTileEffect.o: SimpleTileEffect.cpp SimpleTileEffect.h Effect.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
- /usr/include/getopt.h EffectLoader.h Tile.h /usr/include/STL/slist \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
+ /usr/include/getopt.h EffectLoader.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -21990,7 +21990,7 @@ SimpleTileEffect.o: SimpleTileEffect.cpp SimpleTileEffect.h Effect.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -22042,13 +22042,13 @@ EffectDeleteTile.o: EffectDeleteTile.cpp EffectDeleteTile.h Effect.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectLoader.h skill/HitRoll.h \
  ../../Core/ModifyInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h Zone.h Tile.h /usr/include/STL/slist \
+ ../../Core/SocketOutputStream.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
@@ -22058,7 +22058,7 @@ EffectDeleteTile.o: EffectDeleteTile.cpp EffectDeleteTile.h Effect.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  PCManager.h CreatureManager.h ../../Core/Encrypter.h \
  ../../Core/EncryptUtility.h /usr/include/STL/queue \
  /home/darkeden/src/libs/stl_deque.h /home/darkeden/src/libs/stl_queue.h \
@@ -22109,8 +22109,8 @@ Event.o: Event.cpp Event.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/Assert.h
 EventManager.o: EventManager.cpp EventManager.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -22157,8 +22157,8 @@ EventManager.o: EventManager.cpp EventManager.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Event.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/Assert.h
 EventShutdown.o: EventShutdown.cpp EventShutdown.h Event.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
@@ -22206,15 +22206,15 @@ EventShutdown.o: EventShutdown.cpp EventShutdown.h Event.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ZoneGroupManager.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
- ZoneGroup.h Zone.h Tile.h /usr/include/STL/slist \
+ ZoneGroup.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -22223,8 +22223,8 @@ EventShutdown.o: EventShutdown.cpp EventShutdown.h Event.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h Party.h ../../Core/ModifyInfo.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h ../../Core/ModifyInfo.h \
  PCManager.h CreatureManager.h ../../Core/Encrypter.h \
  ../../Core/EncryptUtility.h /usr/include/STL/queue \
  /home/darkeden/src/libs/stl_deque.h /home/darkeden/src/libs/stl_queue.h \
@@ -22241,7 +22241,7 @@ EventShutdown.o: EventShutdown.cpp EventShutdown.h Event.h \
  ../../Core/ServerSocket.h ../../Core/DatagramSocket.h \
  ConnectionInfoManager.h ConnectionInfo.h billing/BillingInfo.h \
  VariableManager.h /usr/include/bits/signum.h \
- /usr/include/bits/siginfo.h /usr/include/bits/wordsize.h \
+ /usr/include/bits/siginfo.h /usr/include/i386-linux-gnu/bits/wordsize.h \
  /usr/include/bits/sigaction.h /usr/include/bits/sigcontext.h \
  /usr/include/asm/sigcontext.h /usr/include/bits/sigstack.h \
  ../database/DB.h ../database/DatabaseManager.h \
@@ -22295,8 +22295,8 @@ EventRegeneration.o: EventRegeneration.cpp EventRegeneration.h Event.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h GamePlayer.h ../../Core/Player.h \
  ../../Core/SocketEncryptOutputStream.h \
  ../../Core/SocketOutputStream.h ../../Core/Socket.h \
@@ -22304,7 +22304,7 @@ EventRegeneration.o: EventRegeneration.cpp EventRegeneration.h Event.h \
  ../../Core/EncryptUtility.h ../../Core/SocketEncryptInputStream.h \
  ../../Core/SocketInputStream.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/STL/deque /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_deque.h ../../Core/Packet.h \
  ../../Core/PlayerStatus.h EventManager.h skill/Skill.h ../PaySystem.h \
@@ -22319,7 +22319,7 @@ EventRegeneration.o: EventRegeneration.cpp EventRegeneration.h Event.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
- /home/darkeden/src/libs/stl_hash_map.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_hash_map.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h Party.h ../../Core/ModifyInfo.h \
@@ -22393,8 +22393,8 @@ EventSave.o: EventSave.cpp EventSave.h Event.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h GamePlayer.h ../../Core/Player.h \
  ../../Core/SocketEncryptOutputStream.h \
  ../../Core/SocketOutputStream.h ../../Core/Socket.h \
@@ -22402,7 +22402,7 @@ EventSave.o: EventSave.cpp EventSave.h Event.h ../../Core/Types.h \
  ../../Core/EncryptUtility.h ../../Core/SocketEncryptInputStream.h \
  ../../Core/SocketInputStream.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/STL/deque /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_deque.h ../../Core/Packet.h \
  ../../Core/PlayerStatus.h EventManager.h skill/Skill.h ../PaySystem.h \
@@ -22417,7 +22417,7 @@ EventSave.o: EventSave.cpp EventSave.h Event.h ../../Core/Types.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
- /home/darkeden/src/libs/stl_hash_map.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_hash_map.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h Party.h ../../Core/ModifyInfo.h \
@@ -22490,8 +22490,8 @@ EventMorph.o: EventMorph.cpp EventMorph.h Event.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h Creature.h Object.h ../../Core/Assert.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -22501,14 +22501,14 @@ EventMorph.o: EventMorph.cpp EventMorph.h Event.h ../../Core/Types.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  ../../Core/SocketEncryptInputStream.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/STL/deque /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_deque.h ../../Core/PlayerStatus.h EventManager.h \
  skill/Skill.h ../PaySystem.h ../../Core/VSDateTime.h \
  billing/BillingPlayerInfo.h ../chinabilling/CBillingPlayerInfo.h \
  ../chinabilling/CBillingInfo.h ../../Core/Gpackets/GCReconnectLogin.h \
  ../../Core/PacketFactory.h gameguard/CSAuth.h PCFinder.h NPC.h Zone.h \
- Tile.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Item.h \
+ Tile.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -22599,9 +22599,9 @@ EventResurrect.o: EventResurrect.cpp EventResurrect.h Event.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
- /usr/include/getopt.h Zone.h Tile.h /usr/include/STL/slist \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
+ /usr/include/getopt.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -22614,7 +22614,7 @@ EventResurrect.o: EventResurrect.cpp EventResurrect.h Event.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -22707,9 +22707,9 @@ EventReloadInfo.o: EventReloadInfo.cpp EventReloadInfo.h Event.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
- /usr/include/getopt.h Zone.h Tile.h /usr/include/STL/slist \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
+ /usr/include/getopt.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -22722,7 +22722,7 @@ EventReloadInfo.o: EventReloadInfo.cpp EventReloadInfo.h Event.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -22797,9 +22797,9 @@ EventTransport.o: EventTransport.cpp EventTransport.h Event.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
- /usr/include/getopt.h Zone.h Tile.h /usr/include/STL/slist \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
+ /usr/include/getopt.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -22812,7 +22812,7 @@ EventTransport.o: EventTransport.cpp EventTransport.h Event.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -22876,9 +22876,9 @@ EventKick.o: EventKick.cpp EventKick.h Event.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
- /usr/include/getopt.h Zone.h Tile.h /usr/include/STL/slist \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
+ /usr/include/getopt.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -22891,7 +22891,7 @@ EventKick.o: EventKick.cpp EventKick.h Event.h ../../Core/Types.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -22950,9 +22950,9 @@ EventSystemMessage.o: EventSystemMessage.cpp EventSystemMessage.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
- /usr/include/getopt.h Zone.h Tile.h /usr/include/STL/slist \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
+ /usr/include/getopt.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -22965,7 +22965,7 @@ EventSystemMessage.o: EventSystemMessage.cpp EventSystemMessage.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -23023,14 +23023,14 @@ EventRefreshHolyLandPlayer.o: EventRefreshHolyLandPlayer.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h HolyLandManager.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h Zone.h \
- Tile.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Object.h \
+ Tile.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Object.h \
  ../../Core/Assert.h Creature.h EffectManager.h Effect.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -23094,9 +23094,9 @@ EventHeadCount.o: EventHeadCount.cpp EventHeadCount.h Event.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
- /usr/include/getopt.h Zone.h Tile.h /usr/include/STL/slist \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
+ /usr/include/getopt.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -23109,7 +23109,7 @@ EventHeadCount.o: EventHeadCount.cpp EventHeadCount.h Event.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -23192,8 +23192,8 @@ EventCBilling.o: EventCBilling.cpp EventCBilling.h Event.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h GamePlayer.h ../../Core/Player.h \
  ../../Core/SocketEncryptOutputStream.h \
  ../../Core/SocketOutputStream.h ../../Core/Socket.h \
@@ -23201,7 +23201,7 @@ EventCBilling.o: EventCBilling.cpp EventCBilling.h Event.h \
  ../../Core/EncryptUtility.h ../../Core/SocketEncryptInputStream.h \
  ../../Core/SocketInputStream.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/STL/deque /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_deque.h ../../Core/Packet.h \
  ../../Core/PlayerStatus.h EventManager.h skill/Skill.h ../PaySystem.h \
@@ -23256,8 +23256,8 @@ EventAuth.o: EventAuth.cpp EventAuth.h Event.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h GamePlayer.h ../../Core/Player.h \
  ../../Core/SocketEncryptOutputStream.h \
  ../../Core/SocketOutputStream.h ../../Core/Socket.h \
@@ -23265,7 +23265,7 @@ EventAuth.o: EventAuth.cpp EventAuth.h Event.h ../../Core/Types.h \
  ../../Core/EncryptUtility.h ../../Core/SocketEncryptInputStream.h \
  ../../Core/SocketInputStream.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/STL/deque /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_deque.h ../../Core/Packet.h \
  ../../Core/PlayerStatus.h EventManager.h skill/Skill.h ../PaySystem.h \
@@ -23280,7 +23280,7 @@ EventAuth.o: EventAuth.cpp EventAuth.h Event.h ../../Core/Types.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
- /home/darkeden/src/libs/stl_hash_map.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_hash_map.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h Party.h ../../Core/ModifyInfo.h \
@@ -23424,16 +23424,16 @@ GQuestManager.o: GQuestManager.cpp GQuestManager.h ../../Core/Types.h \
  GQuestElement.h /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Item.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  ../../Core/Gpackets/GCGQuestStatusInfo.h /usr/include/STL/numeric \
  /home/darkeden/src/libs/stl_numeric.h \
  ../../Core/Gpackets/GCGQuestStatusModify.h \
@@ -23531,8 +23531,8 @@ GQuestElement.o: GQuestElement.cpp GQuestElement.h ../../Core/Types.h \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h GQuestGiveVampireExpElement.h \
  GQuestLevelElement.h GQuestSayNPCElement.h GQuestTimeElement.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h GQuestTamePetElement.h GQuestExecuteElement.h \
  GQuestGiveItemElement.h Item.h Object.h ../../Core/Assert.h Effect.h \
  EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
@@ -23554,11 +23554,11 @@ GQuestElement.o: GQuestElement.cpp GQuestElement.h ../../Core/Types.h \
  GQuestAdvanceClassElement.h GQuestWarpElement.h PlayerCreature.h \
  Creature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h
 GQuestStatus.o: GQuestStatus.cpp GQuestStatus.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
   /usr/include/c++/7/streambuf \
@@ -23618,16 +23618,16 @@ GQuestStatus.o: GQuestStatus.cpp GQuestStatus.h ../../Core/Types.h \
  /home/darkeden/src/libs/stl_multimap.h \
  ../../Core/Gpackets/GCGQuestStatusModify.h PlayerCreature.h \
  Creature.h Object.h ../../Core/Assert.h EffectManager.h Effect.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  ../../Core/Player.h ../database/DB.h ../database/DatabaseManager.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -23690,8 +23690,8 @@ GQuestInventory.o: GQuestInventory.cpp GQuestInventory.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h
 GQuestLevelElement.o: GQuestLevelElement.cpp GQuestLevelElement.h \
  GQuestElement.h ../../Core/Types.h ../../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
@@ -23750,16 +23750,16 @@ GQuestLevelElement.o: GQuestLevelElement.cpp GQuestLevelElement.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Item.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h
 GQuestTimeElement.o: GQuestTimeElement.cpp GQuestTimeElement.h \
  GQuestElement.h ../../Core/Types.h ../../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
@@ -23817,8 +23817,8 @@ GQuestTimeElement.o: GQuestTimeElement.cpp GQuestTimeElement.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/Assert.h
 GQuestGiveVampireExpElement.o: GQuestGiveVampireExpElement.cpp \
  GQuestGiveVampireExpElement.h GQuestElement.h ../../Core/Types.h \
@@ -23875,16 +23875,16 @@ GQuestGiveVampireExpElement.o: GQuestGiveVampireExpElement.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Item.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Vampire.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Vampire.h \
  Inventory.h VolumeInfo.h Zone.h Tile.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h Party.h ../../Core/ModifyInfo.h \
@@ -24086,16 +24086,16 @@ GQuestExecuteElement.o: GQuestExecuteElement.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Item.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h GQuestInfo.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h GQuestInfo.h \
  ../../Core/Gpackets/GCExecuteElement.h ../../Core/Player.h
 GQuestGiveQuestItemElement.o: GQuestGiveQuestItemElement.cpp \
  GQuestGiveQuestItemElement.h GQuestElement.h ../../Core/Types.h \
@@ -24152,16 +24152,16 @@ GQuestGiveQuestItemElement.o: GQuestGiveQuestItemElement.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Item.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  ../../Core/Player.h ../../Core/Gpackets/GCSystemMessage.h \
  ../database/DB.h ../database/DatabaseManager.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
@@ -24223,16 +24223,16 @@ GQuestLoseQuestItemElement.o: GQuestLoseQuestItemElement.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Item.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  ../../Core/Player.h ../../Core/Gpackets/GCSystemMessage.h
 GQuestGiveItemElement.o: GQuestGiveItemElement.cpp \
  GQuestGiveItemElement.h GQuestElement.h ../../Core/Types.h \
@@ -24289,16 +24289,16 @@ GQuestGiveItemElement.o: GQuestGiveItemElement.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Item.h \
  Object.h ../../Core/Assert.h Effect.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  /usr/include/c++/7/bitset PlayerCreature.h Creature.h ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h InventorySlot.h Garbage.h RankBonus.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Garbage.h RankBonus.h \
  ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  ../../Core/Player.h Treasure.h ItemUtil.h ItemFactoryManager.h \
  ItemFactory.h Inventory.h VolumeInfo.h \
  ../../Core/Gpackets/GCCreateItem.h \
@@ -24425,16 +24425,16 @@ GQuestRaceElement.o: GQuestRaceElement.cpp GQuestRaceElement.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Item.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h
 GQuestKilledElement.o: GQuestKilledElement.cpp GQuestKilledElement.h \
  GQuestElement.h ../../Core/Types.h ../../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
@@ -24548,16 +24548,16 @@ GQuestGiveDomainExpElement.o: GQuestGiveDomainExpElement.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Item.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Slayer.h Zone.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Slayer.h Zone.h \
  Tile.h Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -24642,16 +24642,16 @@ GQuestGiveMoneyElement.o: GQuestGiveMoneyElement.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Item.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  ../../Core/Gpackets/GCModifyInformation.h ../../Core/ModifyInfo.h \
  ../../Core/Gpackets/GCSystemMessage.h ../../Core/Player.h \
  /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h
@@ -24713,16 +24713,16 @@ GQuestSkillLevelElement.o: GQuestSkillLevelElement.cpp \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Item.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h skill/SkillSlot.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h skill/SkillSlot.h \
  skill/Skill.h
 GQuestRideMotorcycleElement.o: GQuestRideMotorcycleElement.cpp \
  GQuestRideMotorcycleElement.h GQuestElement.h ../../Core/Types.h \
@@ -24837,16 +24837,16 @@ GQuestGiveOustersExpElement.o: GQuestGiveOustersExpElement.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Item.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Ousters.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Ousters.h \
  Inventory.h VolumeInfo.h Zone.h Tile.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h Party.h ../../Core/ModifyInfo.h \
@@ -24935,16 +24935,16 @@ GQuestTouchWayPointElement.o: GQuestTouchWayPointElement.cpp \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  MonsterCorpse.h Item.h Object.h ../../Core/Assert.h Effect.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  /usr/include/c++/7/bitset ItemFactory.h Inventory.h VolumeInfo.h \
- InventorySlot.h Corpse.h Zone.h Tile.h /usr/include/STL/slist \
+ InventorySlot.h Corpse.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -25007,16 +25007,16 @@ GQuestHasQuestItemElement.o: GQuestHasQuestItemElement.cpp \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Item.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h
 GQuestPartyDissectElement.o: GQuestPartyDissectElement.cpp \
  GQuestPartyDissectElement.h GQuestElement.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -25075,16 +25075,16 @@ GQuestPartyDissectElement.o: GQuestPartyDissectElement.cpp \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../Core/Assert.h PlayerCreature.h Creature.h Object.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Item.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h MonsterInfo.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h MonsterInfo.h \
  MonsterSummonInfo.h MonsterInfoTypes.h Treasure.h
 GQuestKillMonsterElement.o: GQuestKillMonsterElement.cpp \
  GQuestKillMonsterElement.h GQuestElement.h ../../Core/Types.h \
@@ -25199,16 +25199,16 @@ GQuestGiveEventQuestItemElement.o: GQuestGiveEventQuestItemElement.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Item.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  ../../Core/Player.h ../../Core/Gpackets/GCSystemMessage.h \
  CreatureUtil.h skill/SkillUtil.h ../../Core/ModifyInfo.h Slayer.h \
  Zone.h Tile.h Obstacle.h Portal.h quest/TriggerManager.h \
@@ -25296,16 +25296,16 @@ GQuestEventPartyElement.o: GQuestEventPartyElement.cpp \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h Party.h \
  Creature.h Object.h ../../Core/Assert.h EffectManager.h Effect.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h ../../Core/ModifyInfo.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph ../../Core/ModifyInfo.h \
  PlayerCreature.h ObjectRegistry.h InventorySlot.h Item.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h
 GQuestEventPartyCrashElement.o: GQuestEventPartyCrashElement.cpp \
  GQuestEventPartyCrashElement.h GQuestElement.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -25422,16 +25422,16 @@ GQuestCompleteQuestElement.o: GQuestCompleteQuestElement.cpp \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Item.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h
 GQuestFastMoveElement.o: GQuestFastMoveElement.cpp \
  GQuestFastMoveElement.h GQuestElement.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -25599,20 +25599,20 @@ GQuestCheckPoint.o: GQuestCheckPoint.cpp GQuestCheckPoint.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  MonsterCorpse.h Item.h Object.h Effect.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ItemFactory.h \
  Inventory.h VolumeInfo.h InventorySlot.h Corpse.h Zone.h Tile.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h Party.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
@@ -25678,16 +25678,16 @@ GQuestTravelElement.o: GQuestTravelElement.cpp GQuestTravelElement.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  GQuestCheckPoint.h ../../Core/Assert.h PlayerCreature.h Creature.h \
  Object.h EffectManager.h Effect.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h MonsterInfo.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h MonsterInfo.h \
  MonsterSummonInfo.h MonsterInfoTypes.h Treasure.h
 GQuestORElement.o: GQuestORElement.cpp GQuestORElement.h \
  GQuestElement.h ../../Core/Types.h ../../Core/types/SystemTypes.h \
@@ -25747,16 +25747,16 @@ GQuestORElement.o: GQuestORElement.cpp GQuestORElement.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Item.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h
 GQuestNOTElement.o: GQuestNOTElement.cpp GQuestNOTElement.h \
  GQuestElement.h ../../Core/Types.h ../../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
@@ -25815,16 +25815,16 @@ GQuestNOTElement.o: GQuestNOTElement.cpp GQuestNOTElement.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Item.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h
 GQuestRandomElement.o: GQuestRandomElement.cpp GQuestRandomElement.h \
  GQuestElement.h ../../Core/Types.h ../../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
@@ -25883,16 +25883,16 @@ GQuestRandomElement.o: GQuestRandomElement.cpp GQuestRandomElement.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Item.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h
 GQuestAdvancementClassLevelElement.o: \
  GQuestAdvancementClassLevelElement.cpp \
  GQuestAdvancementClassLevelElement.h GQuestElement.h \
@@ -25953,16 +25953,16 @@ GQuestAdvancementClassLevelElement.o: \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Item.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h
 GQuestClearDynamicZoneElement.o: GQuestClearDynamicZoneElement.cpp \
  GQuestClearDynamicZoneElement.h GQuestElement.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -26075,17 +26075,17 @@ GQuestAddEffectElement.o: GQuestAddEffectElement.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Effect.h \
- Object.h ../../Core/Assert.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h PlayerCreature.h \
+ Object.h ../../Core/Assert.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h PlayerCreature.h \
  Creature.h EffectManager.h ../../Core/EffectInfo.h \
  /usr/include/c++/7/bitset ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -26146,17 +26146,17 @@ GQuestRemoveEffectElement.o: GQuestRemoveEffectElement.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Effect.h \
- Object.h ../../Core/Assert.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h PlayerCreature.h \
+ Object.h ../../Core/Assert.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h PlayerCreature.h \
  Creature.h EffectManager.h ../../Core/EffectInfo.h \
  /usr/include/c++/7/bitset ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -26218,17 +26218,17 @@ GQuestSetEnterDynamicZoneElement.o: \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Effect.h \
- Object.h ../../Core/Assert.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h PlayerCreature.h \
+ Object.h ../../Core/Assert.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h PlayerCreature.h \
  Creature.h EffectManager.h ../../Core/EffectInfo.h \
  /usr/include/c++/7/bitset ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  InventorySlot.h Item.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -26348,16 +26348,16 @@ GQuestStartOtherQuestElement.o: GQuestStartOtherQuestElement.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Item.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h
 GQuestGiveAdvancementClassExpElement.o: \
  GQuestGiveAdvancementClassExpElement.cpp \
  GQuestGiveAdvancementClassExpElement.h GQuestElement.h \
@@ -26415,16 +26415,16 @@ GQuestGiveAdvancementClassExpElement.o: \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Item.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Slayer.h Zone.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Slayer.h Zone.h \
  Tile.h Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -26509,16 +26509,16 @@ GQuestAdvanceClassElement.o: GQuestAdvanceClassElement.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Item.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Slayer.h Zone.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Slayer.h Zone.h \
  Tile.h Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -26604,16 +26604,16 @@ GQuestWarpElement.o: GQuestWarpElement.cpp GQuestWarpElement.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
- EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Item.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h GamePlayer.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h GamePlayer.h \
  ../../Core/Player.h ../../Core/SocketEncryptOutputStream.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  ../../Core/SocketEncryptInputStream.h /usr/include/STL/deque \

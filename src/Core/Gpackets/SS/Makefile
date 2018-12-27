@@ -740,16 +740,16 @@ GCAddGearToInventory.o: GCAddGearToInventory.cpp \
  /home/darkeden/vs/src/Core/Assert.h \
  /home/darkeden/vs/src/server/gameserver/EffectManager.h \
  /home/darkeden/vs/src/server/gameserver/Effect.h \
- /home/darkeden/vs/src/server/Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ /home/darkeden/vs/src/server/Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  /home/darkeden/vs/src/Core/EffectInfo.h \
  /home/darkeden/vs/src/server/gameserver/VisionInfo.h \
  /usr/include/c++/7/bitset \
  /home/darkeden/vs/src/server/gameserver/ObjectRegistry.h \
  /home/darkeden/vs/src/server/Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /home/darkeden/vs/src/server/gameserver/InventorySlot.h \
  /home/darkeden/vs/src/server/gameserver/Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
@@ -762,7 +762,7 @@ GCAddGearToInventory.o: GCAddGearToInventory.cpp \
  /home/darkeden/vs/src/server/gameserver/Inventory.h \
  /home/darkeden/vs/src/server/gameserver/VolumeInfo.h \
  /home/darkeden/vs/src/server/gameserver/Zone.h \
- /home/darkeden/vs/src/server/gameserver/Tile.h /usr/include/STL/slist \
+ /home/darkeden/vs/src/server/gameserver/Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h \
  /home/darkeden/vs/src/server/gameserver/Obstacle.h \
  /home/darkeden/vs/src/server/gameserver/Portal.h \
@@ -16923,9 +16923,9 @@ GCShopList.o: GCShopList.cpp GCShopList.h \
  /home/darkeden/vs/src/server/gameserver/Item.h \
  /home/darkeden/vs/src/server/gameserver/Object.h \
  /home/darkeden/vs/src/server/gameserver/Effect.h \
- /home/darkeden/vs/src/server/Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ /home/darkeden/vs/src/server/Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  /home/darkeden/vs/src/server/gameserver/EffectManager.h \
  /home/darkeden/vs/src/Core/EffectInfo.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
@@ -17054,9 +17054,9 @@ GCShopListMysterious.o: GCShopListMysterious.cpp \
  /home/darkeden/vs/src/server/gameserver/Item.h \
  /home/darkeden/vs/src/server/gameserver/Object.h \
  /home/darkeden/vs/src/server/gameserver/Effect.h \
- /home/darkeden/vs/src/server/Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ /home/darkeden/vs/src/server/Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  /home/darkeden/vs/src/server/gameserver/EffectManager.h \
  /home/darkeden/vs/src/Core/EffectInfo.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
@@ -22907,7 +22907,7 @@ GCShowGuildRegistHandler.o: GCShowGuildRegistHandler.cpp \
  /home/darkeden/vs/src/Core/SocketOutputStream.h \
  /home/darkeden/vs/src/Core/PacketFactory.h
 GCWaitGuildList.o: GCWaitGuildList.cpp GCWaitGuildList.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_algobase.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_algobase.h \
  /home/darkeden/src/libs/stl_config.h /home/darkeden/src/libs/stl_relops.h \
  /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
  /usr/include/string.h /usr/include/features.h \
@@ -22968,7 +22968,7 @@ GCWaitGuildList.o: GCWaitGuildList.cpp GCWaitGuildList.h \
  /home/darkeden/vs/src/Core/PacketFactory.h \
  /home/darkeden/vs/src/Core/GuildInfo.h
 GCWaitGuildListHandler.o: GCWaitGuildListHandler.cpp GCWaitGuildList.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_algobase.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_algobase.h \
  /home/darkeden/src/libs/stl_config.h /home/darkeden/src/libs/stl_relops.h \
  /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
  /usr/include/string.h /usr/include/features.h \
@@ -23207,7 +23207,7 @@ GCShowWaitGuildInfo.o: GCShowWaitGuildInfo.cpp GCShowWaitGuildInfo.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
  /home/darkeden/vs/src/Core/SocketAPI.h \
  /home/darkeden/vs/src/Core/SocketOutputStream.h \
- /home/darkeden/vs/src/Core/PacketFactory.h /usr/include/STL/slist \
+ /home/darkeden/vs/src/Core/PacketFactory.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h
 GCShowWaitGuildInfoHandler.o: GCShowWaitGuildInfoHandler.cpp \
  GCShowWaitGuildInfo.h /home/darkeden/vs/src/Core/Packet.h \
@@ -23268,7 +23268,7 @@ GCShowWaitGuildInfoHandler.o: GCShowWaitGuildInfoHandler.cpp \
  /home/darkeden/vs/src/Core/SocketImpl.h \
  /home/darkeden/vs/src/Core/SocketAPI.h \
  /home/darkeden/vs/src/Core/SocketOutputStream.h \
- /home/darkeden/vs/src/Core/PacketFactory.h /usr/include/STL/slist \
+ /home/darkeden/vs/src/Core/PacketFactory.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h
 GGCommand.o: GGCommand.cpp GGCommand.h \
  /home/darkeden/vs/src/Core/DatagramPacket.h \
@@ -23877,7 +23877,7 @@ GCModifyMoneyHandler.o: GCModifyMoneyHandler.cpp GCModifyMoney.h \
  /home/darkeden/vs/src/Core/SocketOutputStream.h \
  /home/darkeden/vs/src/Core/PacketFactory.h
 GCActiveGuildList.o: GCActiveGuildList.cpp GCActiveGuildList.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_algobase.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_algobase.h \
  /home/darkeden/src/libs/stl_config.h /home/darkeden/src/libs/stl_relops.h \
  /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
  /usr/include/string.h /usr/include/features.h \
@@ -23938,7 +23938,7 @@ GCActiveGuildList.o: GCActiveGuildList.cpp GCActiveGuildList.h \
  /home/darkeden/vs/src/Core/PacketFactory.h \
  /home/darkeden/vs/src/Core/GuildInfo.h
 GCActiveGuildListHandler.o: GCActiveGuildListHandler.cpp \
- GCActiveGuildList.h /usr/include/STL/slist \
+ GCActiveGuildList.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_config.h \
  /home/darkeden/src/libs/stl_relops.h /home/darkeden/src/libs/stl_pair.h \
  /usr/include/c++/7/ext/type_traits.h /usr/include/string.h \
@@ -24241,7 +24241,7 @@ GSQuitGuildHandler.o: GSQuitGuildHandler.cpp GSQuitGuild.h \
  /home/darkeden/vs/src/Core/PacketFactory.h \
  /home/darkeden/vs/src/Core/Assert.h
 GCGuildMemberList.o: GCGuildMemberList.cpp GCGuildMemberList.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_algobase.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_algobase.h \
  /home/darkeden/src/libs/stl_config.h /home/darkeden/src/libs/stl_relops.h \
  /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \
  /usr/include/string.h /usr/include/features.h \
@@ -24302,7 +24302,7 @@ GCGuildMemberList.o: GCGuildMemberList.cpp GCGuildMemberList.h \
  /home/darkeden/vs/src/Core/PacketFactory.h \
  /home/darkeden/vs/src/Core/GuildMemberInfo.h
 GCGuildMemberListHandler.o: GCGuildMemberListHandler.cpp \
- GCGuildMemberList.h /usr/include/STL/slist \
+ GCGuildMemberList.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_config.h \
  /home/darkeden/src/libs/stl_relops.h /home/darkeden/src/libs/stl_pair.h \
  /usr/include/c++/7/ext/type_traits.h /usr/include/string.h \

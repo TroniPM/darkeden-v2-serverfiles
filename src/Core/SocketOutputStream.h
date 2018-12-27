@@ -53,7 +53,7 @@ public :
 	// BYTE 또는 WORD 를 수동으로 사용하도록 한다.
 	uint write (const char* buf, uint len);// ;
 	uint write (const string & buf) { return write(buf.c_str(),buf.size()); }
-	void writePacket (const Packet* pPacket);// ;
+	void writePacket ( Packet* pPacket);// ;
 	
 	template<typename T>
 		uint write( T buf );// ;
@@ -68,7 +68,7 @@ public :
 	uint write (ulong  buf)  { return write((const char*)&buf, szulong ); }
 */
 	// flush stream (output buffer) to socket
-	uint flush ();// throw (IOException, ProtocolException, InvalidProtocolException, Error);
+	uint flush ();// ;
 
 	// resize buffer 
 	void resize (int size);// ;

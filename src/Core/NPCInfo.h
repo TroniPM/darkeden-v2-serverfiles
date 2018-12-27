@@ -1,7 +1,7 @@
 //////////////////////////////////////////////////////////////////////////////
 // Filename    : NPCInfo.h
 // Written by  : excel96
-// Description : 
+// Description :
 //////////////////////////////////////////////////////////////////////////////
 
 #ifndef __NPCINFO_H__
@@ -19,47 +19,74 @@
 class NPCInfo
 {
 
-///// member methods /////
+    ///// member methods /////
 
 public:
-	NPCInfo();
-	~NPCInfo();
+    NPCInfo();
+    ~NPCInfo();
 
 public:
-	string getName(void) const { return m_Name; }
-	void setName(string name) { m_Name = name; }
+    string getName(void) const
+    {
+        return m_Name;
+    }
+    void setName(string name)
+    {
+        m_Name = name;
+    }
 
-	NPCID_t getNPCID(void) const { return m_NPCID; }
-	void setNPCID(NPCID_t id) { m_NPCID = id; }
+    NPCID_t getNPCID(void) const
+    {
+        return m_NPCID;
+    }
+    void setNPCID(NPCID_t id)
+    {
+        m_NPCID = id;
+    }
 
-	ZoneCoord_t getX(void) const { return m_X; }
-	void setX(ZoneCoord_t x) { m_X = x; }
+    ZoneCoord_t getX(void) const
+    {
+        return m_X;
+    }
+    void setX(ZoneCoord_t x)
+    {
+        m_X = x;
+    }
 
-	ZoneCoord_t getY(void) const { return m_Y; }
-	void setY(ZoneCoord_t y) { m_Y = y; }
+    ZoneCoord_t getY(void) const
+    {
+        return m_Y;
+    }
+    void setY(ZoneCoord_t y)
+    {
+        m_Y = y;
+    }
 
-	uint getSize(void) 
-	{ 
-		return szBYTE + 
-			m_Name.size() + 
-			szNPCID + 
-			szZoneCoord + szZoneCoord; 
-	}
-	
-	void read(SocketInputStream& iStream);
-	void write(SocketOutputStream& oStream) ;
+    uint getSize(void)
+    {
+        return szBYTE +
+               m_Name.size() +
+               szNPCID +
+               szZoneCoord + szZoneCoord;
+    }
 
-	static uint getMaxSize(void) { return szBYTE + 30 + szNPCID + szZoneCoord + szZoneCoord; }
+    void read(SocketInputStream &iStream);
+    void write(SocketOutputStream &oStream) ;
 
-	string toString(void) ;
+    static uint getMaxSize(void)
+    {
+        return szBYTE + 30 + szNPCID + szZoneCoord + szZoneCoord;
+    }
 
-///// member data /////
+    string toString(void) ;
+
+    ///// member data /////
 
 protected:
-	string      m_Name;
-	NPCID_t     m_NPCID;
-	ZoneCoord_t m_X;
-	ZoneCoord_t m_Y;
+    string      m_Name;
+    NPCID_t     m_NPCID;
+    ZoneCoord_t m_X;
+    ZoneCoord_t m_Y;
 };
 
 

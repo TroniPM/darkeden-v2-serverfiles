@@ -14,12 +14,12 @@
 
 #if __WINDOWS__
 #elif __LINUX__
-#include <sys/types.h>			// for accept()
+#include <sys/types.h>          // for accept()
 #include <sys/socket.h>
 #include <sys/time.h>
-#include <arpa/inet.h>			// for inet_xxx()
+#include <arpa/inet.h>          // for inet_xxx()
 #include <netinet/in.h>
-#include <errno.h>				// for errno
+#include <errno.h>              // for errno
 #endif
 
 #include "FileAPI.h"
@@ -43,7 +43,7 @@ using namespace FileAPI;
 //
 // Parameters
 //     domain - AF_INET(internet socket), AF_UNIX(internal socket), ...
-//	   type  - SOCK_STREAM(TCP), SOCK_DGRAM(UDP), ...
+//     type  - SOCK_STREAM(TCP), SOCK_DGRAM(UDP), ...
 //     protocol - 0
 //
 // Return
@@ -108,6 +108,8 @@ SOCKET SocketAPI::socket_ex ( int domain, int type, int protocol )
     return s;
 
     __END_CATCH
+
+    return 0;
 }
 
 
@@ -465,33 +467,34 @@ SOCKET SocketAPI::accept_ex ( SOCKET s, struct sockaddr *addr, uint *addrlen )
     else
     {
         /*
-        		struct timeval tm;
-        		struct timeval tm2;
+                struct timeval tm;
+                struct timeval tm2;
 
-        //		int time = getsockopt( client, SOL_SOCKET, SO_SNDTIMEO, &tm, &socklen );
-        //		int time2 = getsockopt( client, SOL_SOCKET, SO_RCVTIMEO, &tm2, &socklen2 );
+        //      int time = getsockopt( client, SOL_SOCKET, SO_SNDTIMEO, &tm, &socklen );
+        //      int time2 = getsockopt( client, SOL_SOCKET, SO_RCVTIMEO, &tm2, &socklen2 );
 
-        //		cout << "Socket Option Time Out Sec Value : " << tm.tv_sec << endl;
-        //		cout << "Socket Option Time Out Usec Value : " << tm.tv_usec << endl;
-        		// Send Time out
-        //		tm.tv_sec = 0;
-        //		tm.tv_usec = 20;
-        //		socklen_t socklen = sizeof( tm );
+        //      cout << "Socket Option Time Out Sec Value : " << tm.tv_sec << endl;
+        //      cout << "Socket Option Time Out Usec Value : " << tm.tv_usec << endl;
+                // Send Time out
+        //      tm.tv_sec = 0;
+        //      tm.tv_usec = 20;
+        //      socklen_t socklen = sizeof( tm );
 
-        		// Recv Time out
-        		tm2.tv_sec = 0;
-        		tm2.tv_usec = 10000;
-        		socklen_t socklen2 = sizeof( tm2 );
+                // Recv Time out
+                tm2.tv_sec = 0;
+                tm2.tv_usec = 10000;
+                socklen_t socklen2 = sizeof( tm2 );
 
-        		socklen2 = sizeof( tm2 );
-        //		setsockopt( client, SOL_SOCKET, SO_SNDTIMEO, &tm, socklen );
-        		setsockopt( client, SOL_SOCKET, SO_RCVTIMEO, &tm2, socklen2 );
+                socklen2 = sizeof( tm2 );
+        //      setsockopt( client, SOL_SOCKET, SO_SNDTIMEO, &tm, socklen );
+                setsockopt( client, SOL_SOCKET, SO_RCVTIMEO, &tm2, socklen2 );
         */
     }
 
     return client;
 
     __END_CATCH
+    return 0;
 }
 
 
@@ -673,7 +676,7 @@ void SocketAPI::setsockopt_ex ( SOCKET s, int level, int optname, const void *op
 //////////////////////////////////////////////////////////////////////
 //
 // uint SocketAPI::send_ex ( SOCKET s , const void * buf , uint len , uint flags )
-//      throw ( NonBlockingIOException , ConnectException , Error )
+//
 //
 // exception version of send()
 //
@@ -795,6 +798,7 @@ uint SocketAPI::send_ex ( SOCKET s, const void *buf, uint len, uint flags )
     return nSent;
 
     __END_CATCH
+    return 0;
 }
 
 
@@ -845,13 +849,14 @@ uint SocketAPI::sendto_ex ( SOCKET s, const void *buf, int len, unsigned int fla
     return nSent;
 
     __END_CATCH
+    return 0;
 }
 
 
 //////////////////////////////////////////////////////////////////////
 //
 // uint SocketAPI::recv_ex ( SOCKET s , void * buf , uint len , uint flags )
-//      throw ( NonBlockingIOException , ConnectException , Error )
+//
 //
 // exception version of recv()
 //
@@ -955,6 +960,7 @@ uint SocketAPI::recv_ex ( SOCKET s, void *buf, uint len, uint flags )
     return nrecv;
 
     __END_CATCH
+    return 0;
 }
 
 
@@ -1008,6 +1014,7 @@ uint SocketAPI::recvfrom_ex ( SOCKET s, void *buf, int len, uint flags, struct s
     return nReceived;
 
     __END_CATCH
+    return 0;
 }
 
 
@@ -1131,6 +1138,7 @@ bool SocketAPI::getsocketnonblocking_ex ( SOCKET s )
 #endif
 
     __END_CATCH
+    return NULL;
 }
 
 
@@ -1198,6 +1206,7 @@ uint SocketAPI::availablesocket_ex ( SOCKET s )
 #endif
 
     __END_CATCH
+    return 0;
 }
 
 
@@ -1305,18 +1314,18 @@ int SocketAPI::select_ex ( int maxfdp1, fd_set *readset, fd_set *writeset, fd_se
         /*
         // 주석처리 by sigi. 2002.5.17
         if ( result < 0 ) {
-        	switch ( errno ) {
-        	case EINTR :
-        		throw InterruptedException("A non blocked signal was caught.");
-        	case EBADF :
-        		throw Error("An invalid file descriptor was given in one of the sets.");
-        	case EINVAL :
-        		throw Error("parameter maxfdp1 is negative.");
-        	case ENOMEM :
-        		throw Error("select was unable to allocate memory for internal tables.");
-        	default :
-        		throw UnknownError(strerror(errno),errno);
-        	}
+            switch ( errno ) {
+            case EINTR :
+                throw InterruptedException("A non blocked signal was caught.");
+            case EBADF :
+                throw Error("An invalid file descriptor was given in one of the sets.");
+            case EINVAL :
+                throw Error("parameter maxfdp1 is negative.");
+            case ENOMEM :
+                throw Error("select was unable to allocate memory for internal tables.");
+            default :
+                throw UnknownError(strerror(errno),errno);
+            }
         }
         */
 
@@ -1324,8 +1333,8 @@ int SocketAPI::select_ex ( int maxfdp1, fd_set *readset, fd_set *writeset, fd_se
     catch ( Throwable &t )
     {
         // 어떤 에러가 나든 무시한다.
-        //		cout << "셀렉트에서 이상한 에러가 난당.." << endl;
-        //		throw TimeoutException();
+        //      cout << "셀렉트에서 이상한 에러가 난당.." << endl;
+        //      throw TimeoutException();
     }
 
     return result;
@@ -1337,4 +1346,5 @@ int SocketAPI::select_ex ( int maxfdp1, fd_set *readset, fd_set *writeset, fd_se
 #endif
 
     __END_CATCH
+    return 0;
 }

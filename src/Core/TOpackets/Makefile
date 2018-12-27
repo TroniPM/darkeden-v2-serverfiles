@@ -114,7 +114,7 @@ GTOAcknowledgement.o: GTOAcknowledgement.cpp GTOAcknowledgement.h \
  /usr/include/stdlib.h /usr/include/alloca.h /usr/include/string.h \
  /usr/include/assert.h /home/darkeden/src/libs/stl_threads.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/ctype.h /usr/include/c++/7/functional \
  /usr/include/c++/7/bits/stl_function.h /usr/include/c++/7/stdexcept \
  /home/darkeden/src/libs/stl_exception.h /home/darkeden/src/libs/stl_iterator_base.h \
@@ -151,10 +151,10 @@ GTOAcknowledgement.o: GTOAcknowledgement.cpp GTOAcknowledgement.h \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
  /home/darkeden/vs/src/Core/SocketAPI.h /usr/include/netinet/in.h \
- /usr/include/stdint.h /usr/include/bits/wordsize.h \
- /usr/include/bits/socket.h /usr/include/bits/sockaddr.h \
+ /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wordsize.h \
+ /usr/include/i386-linux-gnu/bits/socket.h /usr/include/i386-linux-gnu/bits/sockaddr.h \
  /usr/include/asm/socket.h /usr/include/asm/sockios.h \
- /usr/include/bits/in.h /usr/include/bits/byteswap.h \
+ /usr/include/i386-linux-gnu/bits/in.h /usr/include/i386-linux-gnu/bits/byteswap.h \
  /usr/include/sys/socket.h /usr/include/sys/uio.h \
  /usr/include/bits/uio.h \
  /home/darkeden/vs/src/Core/SocketOutputStream.h \
@@ -186,7 +186,7 @@ GTOAcknowledgementHandler.o: GTOAcknowledgementHandler.cpp \
  /usr/include/stdlib.h /usr/include/alloca.h /usr/include/string.h \
  /usr/include/assert.h /home/darkeden/src/libs/stl_threads.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/ctype.h /usr/include/c++/7/functional \
  /usr/include/c++/7/bits/stl_function.h /usr/include/c++/7/stdexcept \
  /home/darkeden/src/libs/stl_exception.h /home/darkeden/src/libs/stl_iterator_base.h \
@@ -223,10 +223,10 @@ GTOAcknowledgementHandler.o: GTOAcknowledgementHandler.cpp \
  /home/darkeden/vs/src/Core/Socket.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
  /home/darkeden/vs/src/Core/SocketAPI.h /usr/include/netinet/in.h \
- /usr/include/stdint.h /usr/include/bits/wordsize.h \
- /usr/include/bits/socket.h /usr/include/bits/sockaddr.h \
+ /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wordsize.h \
+ /usr/include/i386-linux-gnu/bits/socket.h /usr/include/i386-linux-gnu/bits/sockaddr.h \
  /usr/include/asm/socket.h /usr/include/asm/sockios.h \
- /usr/include/bits/in.h /usr/include/bits/byteswap.h \
+ /usr/include/i386-linux-gnu/bits/in.h /usr/include/i386-linux-gnu/bits/byteswap.h \
  /usr/include/sys/socket.h /usr/include/sys/uio.h \
  /usr/include/bits/uio.h \
  /home/darkeden/vs/src/Core/SocketOutputStream.h \
@@ -245,12 +245,12 @@ GTOAcknowledgementHandler.o: GTOAcknowledgementHandler.cpp \
  /home/darkeden/vs/src/server/Mutex.h \
  /home/darkeden/vs/src/server/theoneserver/Statement.h \
  /home/darkeden/vs/src/server/theoneserver/Result.h \
- /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/sys/time.h \
  /home/darkeden/vs/src/Core/Gpackets/GGCommand.h \
  /home/darkeden/vs/src/server/theoneserver/GameServerManager.h \
  /home/darkeden/vs/src/server/Thread.h \
  /home/darkeden/vs/src/server/pthreadAPI.h \
  /home/darkeden/vs/src/Core/DatagramSocket.h \
  /home/darkeden/vs/src/server/Timeval.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h

@@ -20,33 +20,33 @@ ExtraSlotInfo::~ExtraSlotInfo()
 
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
-void ExtraSlotInfo::read ( SocketInputStream & iStream ) 
-	
+void ExtraSlotInfo::read ( SocketInputStream &iStream )
+
 {
-	__BEGIN_TRY
+    __BEGIN_TRY
 
-	PCItemInfo::read(iStream);
+    PCItemInfo::read(iStream);
 
-	__END_CATCH
+    __END_CATCH
 }
 
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
-void ExtraSlotInfo::write ( SocketOutputStream & oStream ) const 
-	
+void ExtraSlotInfo::write ( SocketOutputStream &oStream )
+
 {
-	__BEGIN_TRY
+    __BEGIN_TRY
 
-	PCItemInfo::write(oStream);
+    PCItemInfo::write(oStream);
 
-	__END_CATCH
+    __END_CATCH
 }
 
 //////////////////////////////////////////////////////////////////////////////
 // get debug string
 //////////////////////////////////////////////////////////////////////////////
-string ExtraSlotInfo::toString () const 
-	
+string ExtraSlotInfo::toString ()
+
 {
-	return PCItemInfo::toString();
+    return PCItemInfo::toString();
 }

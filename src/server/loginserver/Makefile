@@ -124,11 +124,11 @@ ClientManager.o: ClientManager.cpp ../database/DatabaseManager.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ClientManager.h ../../Core/Assert.h LoginPlayerManager.h \
- ../PlayerManager.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ ../PlayerManager.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/SocketAPI.h ../../Core/ServerSocket.h \
  ../../Core/SocketImpl.h ../../Core/Socket.h \
  ReconnectLoginInfoManager.h ReconnectLoginInfo.h ../Profile.h \
@@ -188,8 +188,8 @@ UserInfoManager.o: UserInfoManager.cpp UserInfoManager.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  ../database/DB.h
 GameServerGroupInfoManager.o: GameServerGroupInfoManager.cpp \
  GameServerGroupInfoManager.h ../../Core/Types.h \
@@ -244,8 +244,8 @@ GameServerGroupInfoManager.o: GameServerGroupInfoManager.cpp \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  ../database/DB.h
 GameServerManager.o: GameServerManager.cpp GameServerManager.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
@@ -294,22 +294,22 @@ GameServerManager.o: GameServerManager.cpp GameServerManager.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Thread.h \
  ../pthreadAPI.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h ../../Core/DatagramSocket.h \
+ /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph ../../Core/DatagramSocket.h \
  ../../Core/SocketAPI.h ../../Core/Datagram.h ../../Core/Properties.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../Core/DatagramPacket.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketOutputStream.h \
- ../LogClient.h /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h ../database/DB.h \
+ ../LogClient.h /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h ../database/DB.h \
  ../database/DatabaseManager.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  ../../Core/Lpackets/LGKickCharacter.h ../../Core/PacketFactory.h
 LoginPlayer.o: LoginPlayer.cpp LoginPlayer.h ../../Core/Player.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
@@ -358,11 +358,11 @@ LoginPlayer.o: LoginPlayer.cpp LoginPlayer.h ../../Core/Player.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../Core/PlayerStatus.h /usr/include/STL/deque \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_deque.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../PaySystem.h ../../Core/VSDateTime.h \
  ../gameserver/billing/BillingPlayerInfo.h \
  ../chinabilling/CBillingPlayerInfo.h ../chinabilling/CBillingInfo.h \
@@ -435,11 +435,11 @@ LoginPlayerManager.o: LoginPlayerManager.cpp /usr/include/stdio.h \
  ../../Core/types/WarTypes.h ../../Core/types/ServerType.h \
  ../../Core/Utility.h ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../PlayerManager.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/SocketAPI.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../Core/ServerSocket.h ../../Core/SocketImpl.h ../../Core/Socket.h \
  ../../Core/Assert.h LoginPlayer.h ../../Core/Player.h \
  ../../Core/PlayerStatus.h /usr/include/STL/deque \
@@ -511,7 +511,7 @@ LoginServer.o: LoginServer.cpp LoginServer.h ../../Core/Types.h \
  GameServerGroupInfoManager.h GameServerGroupInfo.h \
  GameServerManager.h ../Thread.h ../pthreadAPI.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../Core/DatagramSocket.h ../../Core/SocketAPI.h \
  ../../Core/Datagram.h ClientManager.h ZoneInfoManager.h ZoneInfo.h \
  ZoneGroupInfoManager.h ZoneGroupInfo.h ../database/DatabaseManager.h \
@@ -525,13 +525,13 @@ LoginServer.o: LoginServer.cpp LoginServer.h ../../Core/Types.h \
  ../../Core/PacketIDSet.h ../../Core/PlayerStatus.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h ItemDestroyer.h ../database/DB.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  UserInfoManager.h UserInfo.h ../GameWorldInfoManager.h \
  ../GameWorldInfo.h ../chinabilling/CBillingPlayerManager.h \
  ../chinabilling/CBillingInfo.h LoginPlayer.h ../../Core/Player.h \
  /usr/include/STL/deque /home/darkeden/src/libs/stl_deque.h ../Timeval.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h ../PaySystem.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h ../PaySystem.h \
  ../../Core/VSDateTime.h ../gameserver/billing/BillingPlayerInfo.h \
  ../chinabilling/CBillingPlayerInfo.h \
  ../../Core/Gpackets/GCReconnectLogin.h ../LogClient.h
@@ -587,8 +587,8 @@ ZoneGroupInfoManager.o: ZoneGroupInfoManager.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h
 ZoneInfoManager.o: ZoneInfoManager.cpp ZoneInfoManager.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
@@ -641,8 +641,8 @@ ZoneInfoManager.o: ZoneInfoManager.cpp ZoneInfoManager.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h
 main.o: main.cpp ../../Core/Types.h ../../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
  /usr/include/c++/7/streambuf /usr/include/libio.h \
@@ -691,9 +691,9 @@ main.o: main.cpp ../../Core/Types.h ../../Core/types/SystemTypes.h \
  ../LogClient.h ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h /usr/include/i386-linux-gnu/bits/stdio_lim.h \
- /usr/include/sys/time.h /usr/include/sys/resource.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/sys/resource.h \
  /usr/include/bits/resource.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h
 ItemDestroyer.o: ItemDestroyer.cpp ItemDestroyer.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -746,8 +746,8 @@ ItemDestroyer.o: ItemDestroyer.cpp ItemDestroyer.h ../../Core/Types.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h
 ReconnectLoginInfoManager.o: ReconnectLoginInfoManager.cpp \
  ReconnectLoginInfoManager.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -796,7 +796,7 @@ ReconnectLoginInfoManager.o: ReconnectLoginInfoManager.cpp \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- ReconnectLoginInfo.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ ReconnectLoginInfo.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/Assert.h

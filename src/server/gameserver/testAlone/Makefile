@@ -325,5 +325,5 @@ ScheduleTest.o: ScheduleTest.cpp ScheduleTest.h \
  /home/darkeden/src/libs/stl_deque.h /home/darkeden/src/libs/stl_queue.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h

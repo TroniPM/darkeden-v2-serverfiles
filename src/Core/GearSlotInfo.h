@@ -17,30 +17,36 @@
 // Inventory 정보를 담고 있는 객체.
 //////////////////////////////////////////////////////////////////////////////
 
-class GearSlotInfo : public PCItemInfo 
+class GearSlotInfo : public PCItemInfo
 {
 public:
-	void read (SocketInputStream & iStream);
-	void write (SocketOutputStream & oStream) ;
+    void read (SocketInputStream &iStream);
+    void write (SocketOutputStream &oStream) ;
 
-	uint getSize () 
-	{ 
-		return PCItemInfo::getSize() + szSlotID;
-	}
+    uint getSize ()
+    {
+        return PCItemInfo::getSize() + szSlotID;
+    }
 
-	static uint getMaxSize () 
-	{ 
-		return PCItemInfo::getMaxSize() + szSlotID;
-	}
+    static uint getMaxSize ()
+    {
+        return PCItemInfo::getMaxSize() + szSlotID;
+    }
 
-	string toString () ;
+    string toString () ;
 
 public:
-	void setSlotID(SlotID_t SlotID)  { m_SlotID = SlotID; }
-	SlotID_t getSlotID()  { return m_SlotID; }
+    void setSlotID(SlotID_t SlotID)
+    {
+        m_SlotID = SlotID;
+    }
+    SlotID_t getSlotID()
+    {
+        return m_SlotID;
+    }
 
 private:
-	SlotID_t m_SlotID;
+    SlotID_t m_SlotID;
 };
 
 #endif

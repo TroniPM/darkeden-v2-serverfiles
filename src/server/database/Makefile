@@ -179,7 +179,7 @@ Connection.o: Connection.cpp Connection.h \
  /usr/local/include/mysql/mysql_version.h \
  /home/darkeden/vs/src/server/Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  Statement.h
 Statement.o: Statement.cpp Statement.h \
  /home/darkeden/vs/src/Core/Types.h \
@@ -239,12 +239,12 @@ Statement.o: Statement.cpp Statement.h \
  /usr/local/include/mysql/mysql_version.h \
  /home/darkeden/vs/src/server/Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/sys/time.h Result.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/i386-linux-gnu/sys/time.h Result.h \
  /home/darkeden/vs/src/Core/Assert.h \
  /home/darkeden/vs/src/server/Profile.h \
  /home/darkeden/vs/src/server/Timeval.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h
@@ -300,7 +300,7 @@ Result.o: Result.cpp Result.h /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
  /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h /usr/include/sys/time.h \
+ /home/darkeden/src/libs/stl_list.h /usr/include/i386-linux-gnu/sys/time.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h \
  /home/darkeden/vs/src/Core/Assert.h
@@ -365,14 +365,14 @@ DatabaseManager.o: DatabaseManager.cpp /usr/include/stdio.h \
  /usr/local/include/mysql/mysql_version.h \
  /home/darkeden/vs/src/server/Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /home/darkeden/vs/src/Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h /home/darkeden/vs/src/server/Thread.h \
  /home/darkeden/vs/src/server/pthreadAPI.h \
- /home/darkeden/vs/src/server/Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h Result.h \
+ /home/darkeden/vs/src/server/Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h Result.h \
  Statement.h /home/darkeden/vs/src/Core/Assert.h DB.h
 Connection.o: Connection.cpp Connection.h \
  /home/darkeden/vs/src/Core/Types.h \
@@ -432,7 +432,7 @@ Connection.o: Connection.cpp Connection.h \
  /usr/local/include/mysql/mysql_version.h \
  /home/darkeden/vs/src/server/Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  Statement.h
 Statement.o: Statement.cpp Statement.h \
  /home/darkeden/vs/src/Core/Types.h \
@@ -492,12 +492,12 @@ Statement.o: Statement.cpp Statement.h \
  /usr/local/include/mysql/mysql_version.h \
  /home/darkeden/vs/src/server/Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/sys/time.h Result.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/i386-linux-gnu/sys/time.h Result.h \
  /home/darkeden/vs/src/Core/Assert.h \
  /home/darkeden/vs/src/server/Profile.h \
  /home/darkeden/vs/src/server/Timeval.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h
@@ -553,7 +553,7 @@ Result.o: Result.cpp Result.h /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
  /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h /usr/include/sys/time.h \
+ /home/darkeden/src/libs/stl_list.h /usr/include/i386-linux-gnu/sys/time.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h \
  /home/darkeden/vs/src/Core/Assert.h
@@ -618,14 +618,14 @@ DatabaseManager.o: DatabaseManager.cpp /usr/include/stdio.h \
  /usr/local/include/mysql/mysql_version.h \
  /home/darkeden/vs/src/server/Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /home/darkeden/vs/src/Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h /home/darkeden/vs/src/server/Thread.h \
  /home/darkeden/vs/src/server/pthreadAPI.h \
- /home/darkeden/vs/src/server/Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h Result.h \
+ /home/darkeden/vs/src/server/Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h Result.h \
  Statement.h /home/darkeden/vs/src/Core/Assert.h DB.h
 Connection.o: Connection.cpp Connection.h \
  /home/darkeden/vs/src/Core/Types.h \
@@ -685,7 +685,7 @@ Connection.o: Connection.cpp Connection.h \
  /usr/local/include/mysql/mysql_version.h \
  /home/darkeden/vs/src/server/Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  Statement.h
 Statement.o: Statement.cpp Statement.h \
  /home/darkeden/vs/src/Core/Types.h \
@@ -745,12 +745,12 @@ Statement.o: Statement.cpp Statement.h \
  /usr/local/include/mysql/mysql_version.h \
  /home/darkeden/vs/src/server/Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/sys/time.h Result.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/i386-linux-gnu/sys/time.h Result.h \
  /home/darkeden/vs/src/Core/Assert.h \
  /home/darkeden/vs/src/server/Profile.h \
  /home/darkeden/vs/src/server/Timeval.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h
@@ -815,14 +815,14 @@ DatabaseManager.o: DatabaseManager.cpp /usr/include/stdio.h \
  /usr/local/include/mysql/mysql_version.h \
  /home/darkeden/vs/src/server/Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /home/darkeden/vs/src/Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h /home/darkeden/vs/src/server/Thread.h \
  /home/darkeden/vs/src/server/pthreadAPI.h \
- /home/darkeden/vs/src/server/Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h Result.h \
+ /home/darkeden/vs/src/server/Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h Result.h \
  Statement.h /home/darkeden/vs/src/Core/Assert.h DB.h
 Connection.o: Connection.cpp Connection.h \
  /home/darkeden/vs/src/Core/Types.h \
@@ -882,7 +882,7 @@ Connection.o: Connection.cpp Connection.h \
  /usr/local/include/mysql/mysql_version.h \
  /home/darkeden/vs/src/server/Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  Statement.h
 Statement.o: Statement.cpp Statement.h \
  /home/darkeden/vs/src/Core/Types.h \
@@ -942,12 +942,12 @@ Statement.o: Statement.cpp Statement.h \
  /usr/local/include/mysql/mysql_version.h \
  /home/darkeden/vs/src/server/Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/sys/time.h Result.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/i386-linux-gnu/sys/time.h Result.h \
  /home/darkeden/vs/src/Core/Assert.h \
  /home/darkeden/vs/src/server/Profile.h \
  /home/darkeden/vs/src/server/Timeval.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h
@@ -1003,7 +1003,7 @@ Result.o: Result.cpp Result.h /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
  /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h /usr/include/sys/time.h \
+ /home/darkeden/src/libs/stl_list.h /usr/include/i386-linux-gnu/sys/time.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h \
  /home/darkeden/vs/src/Core/Assert.h
@@ -1068,12 +1068,12 @@ DatabaseManager.o: DatabaseManager.cpp /usr/include/stdio.h \
  /usr/local/include/mysql/mysql_version.h \
  /home/darkeden/vs/src/server/Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /home/darkeden/vs/src/Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h /home/darkeden/vs/src/server/Thread.h \
  /home/darkeden/vs/src/server/pthreadAPI.h \
- /home/darkeden/vs/src/server/Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h Result.h \
+ /home/darkeden/vs/src/server/Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h Result.h \
  Statement.h /home/darkeden/vs/src/Core/Assert.h DB.h

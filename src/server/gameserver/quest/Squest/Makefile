@@ -148,8 +148,8 @@ MonsterKillQuest.o: MonsterKillQuest.cpp ../../MonsterInfo.h \
  ../../../../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h ../../../../Core/Assert.h \
  ../../Creature.h ../../Object.h ../../EffectManager.h ../../Effect.h \
- ../../../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../../../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../../../Core/EffectInfo.h \
  ../../../../Core/Packet.h ../../../../Core/SocketInputStream.h \
  ../../../../Core/Socket.h ../../../../Core/SocketImpl.h \
@@ -167,7 +167,7 @@ MonsterKillQuest.o: MonsterKillQuest.cpp ../../MonsterInfo.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../../database/Statement.h ../../../database/Result.h
 QuestFactoryManager.o: QuestFactoryManager.cpp QuestFactoryManager.h \
  ../../../../Core/Types.h ../../../../Core/types/SystemTypes.h \
@@ -217,8 +217,8 @@ QuestFactoryManager.o: QuestFactoryManager.cpp QuestFactoryManager.h \
  ../../../../Core/Utility.h ../../../../Core/Exception.h \
  ../../../../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h Quest.h MonsterKillQuest.h SimpleQuest.h \
- ../../../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../../../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Creature.h ../../Object.h \
  ../../../../Core/Assert.h ../../EffectManager.h ../../Effect.h \
  ../../../../Core/EffectInfo.h ../../../../Core/Packet.h \
@@ -473,8 +473,8 @@ QuestPriceReward.o: QuestPriceReward.cpp QuestPriceReward.h \
  ../../../../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h ../../Creature.h ../../Object.h \
  ../../../../Core/Assert.h ../../EffectManager.h ../../Effect.h \
- ../../../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../../../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../../../Core/EffectInfo.h \
  ../../../../Core/Packet.h ../../../../Core/SocketInputStream.h \
  ../../../../Core/Socket.h ../../../../Core/SocketImpl.h \
@@ -529,8 +529,8 @@ QuestPricePenalty.o: QuestPricePenalty.cpp QuestPricePenalty.h \
  ../../../../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h ../../Creature.h ../../Object.h \
  ../../../../Core/Assert.h ../../EffectManager.h ../../Effect.h \
- ../../../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ ../../../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../../../Core/EffectInfo.h \
  ../../../../Core/Packet.h ../../../../Core/SocketInputStream.h \
  ../../../../Core/Socket.h ../../../../Core/SocketImpl.h \
@@ -583,8 +583,8 @@ SimpleQuest.o: SimpleQuest.cpp SimpleQuest.h ../../../../Core/Types.h \
  ../../../../Core/Utility.h ../../../../Core/Exception.h \
  ../../../../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h Quest.h ../../../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Creature.h ../../Object.h \
  ../../../../Core/Assert.h ../../EffectManager.h ../../Effect.h \
  ../../../../Core/EffectInfo.h ../../../../Core/Packet.h \
@@ -599,7 +599,7 @@ SimpleQuest.o: SimpleQuest.cpp SimpleQuest.h ../../../../Core/Types.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../../database/Statement.h ../../../database/Result.h
 SimpleQuestLoader.o: SimpleQuestLoader.cpp SimpleQuestLoader.h \
  ../../../../Core/Types.h ../../../../Core/types/SystemTypes.h \
@@ -656,12 +656,12 @@ SimpleQuestLoader.o: SimpleQuestLoader.cpp SimpleQuestLoader.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../../database/Statement.h ../../../database/Result.h \
- /usr/include/sys/time.h ../../Creature.h ../../Object.h \
+ /usr/include/i386-linux-gnu/sys/time.h ../../Creature.h ../../Object.h \
  ../../EffectManager.h ../../Effect.h ../../../Timeval.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../../../Core/EffectInfo.h ../../../../Core/Packet.h \
  ../../../../Core/SocketInputStream.h ../../../../Core/Socket.h \
  ../../../../Core/SocketImpl.h ../../../../Core/SocketAPI.h \

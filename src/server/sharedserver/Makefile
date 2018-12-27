@@ -120,18 +120,18 @@ Guild.o: Guild.cpp /usr/include/c++/7/algorithm \
  ../../Core/Assert.h ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../Core/VSDateTime.h ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/sys/time.h ../../Core/GuildInfo.h \
+ ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h ../../Core/GuildInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h \
- ../../Core/Gpackets/GCGuildMemberList.h /usr/include/STL/slist \
+ ../../Core/Gpackets/GCGuildMemberList.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h ../../Core/PacketFactory.h \
  ../../Core/GuildMemberInfo.h ../../Core/Properties.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
@@ -183,12 +183,12 @@ GuildManager.o: GuildManager.cpp Guild.h ../../Core/Types.h \
  ../../Core/Assert.h ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../Core/VSDateTime.h GuildManager.h ../Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../database/DB.h ../database/DatabaseManager.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -196,7 +196,7 @@ GuildManager.o: GuildManager.cpp Guild.h ../../Core/Types.h \
  ../database/Result.h ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../../Core/Gpackets/GCWaitGuildList.h \
- /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
+ /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
@@ -254,8 +254,8 @@ ResurrectLocationManager.o: ResurrectLocationManager.cpp \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h
 GameServerPlayer.o: GameServerPlayer.cpp GameServerPlayer.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
@@ -352,8 +352,8 @@ HeartbeatManager.o: HeartbeatManager.cpp HeartbeatManager.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h
 GameServerInfoManager.o: GameServerInfoManager.cpp \
  GameServerInfoManager.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -407,8 +407,8 @@ GameServerInfoManager.o: GameServerInfoManager.cpp \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h
@@ -465,8 +465,8 @@ GameServerGroupInfoManager.o: GameServerGroupInfoManager.cpp \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
  ../database/DB.h
 GameServerManager.o: GameServerManager.cpp /usr/include/stdio.h \
  /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
@@ -516,9 +516,9 @@ GameServerManager.o: GameServerManager.cpp /usr/include/stdio.h \
  ../../Core/Utility.h ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../pthreadAPI.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h GameServerPlayer.h ../../Core/Player.h \
  ../../Core/ServerSocket.h ../../Core/SocketImpl.h \
  ../../Core/SocketAPI.h ../../Core/Socket.h ../Mutex.h \
@@ -583,9 +583,9 @@ SharedServer.o: SharedServer.cpp SharedServer.h ../../Core/Types.h \
  /home/darkeden/src/libs/stl_hash_map.h GameServerGroupInfoManager.h \
  GameServerGroupInfo.h GameServerManager.h ../Thread.h ../pthreadAPI.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h GameServerPlayer.h ../../Core/Player.h \
  ../../Core/ServerSocket.h ../../Core/SocketImpl.h \
  ../../Core/SocketAPI.h ../../Core/Socket.h ../Mutex.h \
@@ -702,5 +702,5 @@ StringPool.o: StringPool.cpp StringPool.h ../../Core/Exception.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- ../database/Statement.h ../database/Result.h /usr/include/sys/time.h
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h

@@ -17,34 +17,46 @@
 // RideMotorcycle 정보를 담고 있는 객체.
 /////////////////////////////////////////////////////////////////////////////
 
-class RideMotorcycleSlotInfo : public PCItemInfo 
+class RideMotorcycleSlotInfo : public PCItemInfo
 {
 public:
-	void read (SocketInputStream & iStream);
-	void write (SocketOutputStream & oStream) ;
+    void read (SocketInputStream &iStream);
+    void write (SocketOutputStream &oStream) ;
 
-	uint getSize () 
-	{ 
-		return PCItemInfo::getSize() + szCoordInven*2;
-	}
+    uint getSize ()
+    {
+        return PCItemInfo::getSize() + szCoordInven * 2;
+    }
 
-	static uint getMaxSize () 
-	{ 
-		return PCItemInfo::getMaxSize() + szCoordInven*2;
-	}
+    static uint getMaxSize ()
+    {
+        return PCItemInfo::getMaxSize() + szCoordInven * 2;
+    }
 
-	string toString () ;
+    string toString () ;
 
 public:
-	void setInvenX(CoordInven_t InvenX)  { m_InvenX = InvenX; }
-	CoordInven_t getInvenX()  { return m_InvenX; }
+    void setInvenX(CoordInven_t InvenX)
+    {
+        m_InvenX = InvenX;
+    }
+    CoordInven_t getInvenX()
+    {
+        return m_InvenX;
+    }
 
-	void setInvenY(CoordInven_t InvenY)  { m_InvenY = InvenY; }
-	CoordInven_t getInvenY()  { return m_InvenY; }
+    void setInvenY(CoordInven_t InvenY)
+    {
+        m_InvenY = InvenY;
+    }
+    CoordInven_t getInvenY()
+    {
+        return m_InvenY;
+    }
 
 private:
-	CoordInven_t m_InvenX;
-	CoordInven_t m_InvenY;
+    CoordInven_t m_InvenX;
+    CoordInven_t m_InvenY;
 
 };
 

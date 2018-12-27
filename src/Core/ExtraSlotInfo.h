@@ -19,17 +19,17 @@
 // class ExtraSlotInfo
 //////////////////////////////////////////////////////////////////////////////
 
-class ExtraSlotInfo : public PCItemInfo 
+class ExtraSlotInfo : public PCItemInfo
 {
 public:
-	ExtraSlotInfo();
-	virtual ~ExtraSlotInfo();
+    ExtraSlotInfo();
+    virtual ~ExtraSlotInfo();
 
 public:
-	void read (SocketInputStream & iStream);
-	void write (SocketOutputStream & oStream) ;
+    void read (SocketInputStream &iStream);
+    void write (SocketOutputStream &oStream) ;
 
-	string toString () ;
+    string toString () ;
 };
 
 #endif

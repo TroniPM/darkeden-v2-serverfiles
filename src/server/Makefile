@@ -129,8 +129,8 @@ CondVar.o: CondVar.cpp CondVar.h CondVarAttr.h /usr/include/pthread.h \
  /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
  /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
  /usr/include/time.h /usr/include/i386-linux-gnu/bits/time.h /usr/include/signal.h \
- /home/darkeden/src/libs/sigset.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h pthreadAPI.h ../Core/Exception.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph pthreadAPI.h ../Core/Exception.h \
  ../Core/Types.h ../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
   /usr/include/c++/7/streambuf \
  /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
@@ -180,32 +180,32 @@ LogData.o: LogData.cpp /usr/include/i386-linux-gnu/sys/types.h \
  /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
  /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/sys/socket.h \
  /usr/include/sys/uio.h /usr/include/bits/uio.h \
- /usr/include/bits/socket.h \
+ /usr/include/i386-linux-gnu/bits/socket.h \
  /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
  /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
  /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
  /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/i386-linux-gnu/bits/posix2_lim.h /usr/include/bits/sockaddr.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h /usr/include/i386-linux-gnu/bits/sockaddr.h \
  /usr/include/asm/socket.h /usr/include/asm/sockios.h \
- /usr/include/sys/time.h /usr/include/netinet/in.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/netinet/in.h \
  /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wchar.h \
- /usr/include/bits/wordsize.h /usr/include/bits/in.h \
- /usr/include/bits/byteswap.h /usr/include/arpa/inet.h \
- /usr/include/errno.h /usr/include/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/asm/errno.h \
+ /usr/include/i386-linux-gnu/bits/wordsize.h /usr/include/i386-linux-gnu/bits/in.h \
+ /usr/include/i386-linux-gnu/bits/byteswap.h /usr/include/arpa/inet.h \
+ /usr/include/errno.h /usr/include/i386-linux-gnu/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/i386-linux-gnu/asm/errno.h \
  /usr/include/fcntl.h /usr/include/bits/fcntl.h /usr/include/netdb.h \
  /usr/include/rpc/netdb.h /usr/include/bits/netdb.h \
  /usr/include/signal.h /usr/include/bits/signum.h \
  /usr/include/bits/siginfo.h /usr/include/bits/sigaction.h \
  /usr/include/bits/sigcontext.h /usr/include/asm/sigcontext.h \
- /usr/include/bits/sigstack.h /usr/include/bits/sigthread.h \
+ /usr/include/bits/sigstack.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
  /usr/include/wchar.h /usr/include/gconv.h \
  /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/stdlib.h \
  /usr/include/alloca.h /usr/include/string.h /usr/include/sys/stat.h \
  /usr/include/bits/stat.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h /usr/include/sys/wait.h \
  /usr/include/sys/resource.h /usr/include/bits/resource.h \
  /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
@@ -244,32 +244,32 @@ LogClient.o: LogClient.cpp /usr/include/i386-linux-gnu/sys/types.h \
  /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/time.h \
  /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/sys/socket.h \
  /usr/include/sys/uio.h /usr/include/bits/uio.h \
- /usr/include/bits/socket.h \
+ /usr/include/i386-linux-gnu/bits/socket.h \
  /usr/lib/gcc/i686-linux-gnu/7/include-fixed/limits.h \
  /usr/lib/gcc/i686-linux-gnu/7/include-fixed/syslimits.h \
  /usr/include/limits.h /usr/include/i386-linux-gnu/bits/posix1_lim.h \
  /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/i386-linux-gnu/bits/posix2_lim.h /usr/include/bits/sockaddr.h \
+ /usr/include/i386-linux-gnu/bits/posix2_lim.h /usr/include/i386-linux-gnu/bits/sockaddr.h \
  /usr/include/asm/socket.h /usr/include/asm/sockios.h \
- /usr/include/sys/time.h /usr/include/netinet/in.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/netinet/in.h \
  /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wchar.h \
- /usr/include/bits/wordsize.h /usr/include/bits/in.h \
- /usr/include/bits/byteswap.h /usr/include/arpa/inet.h \
- /usr/include/errno.h /usr/include/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/asm/errno.h \
+ /usr/include/i386-linux-gnu/bits/wordsize.h /usr/include/i386-linux-gnu/bits/in.h \
+ /usr/include/i386-linux-gnu/bits/byteswap.h /usr/include/arpa/inet.h \
+ /usr/include/errno.h /usr/include/i386-linux-gnu/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/i386-linux-gnu/asm/errno.h \
  /usr/include/fcntl.h /usr/include/bits/fcntl.h /usr/include/netdb.h \
  /usr/include/rpc/netdb.h /usr/include/bits/netdb.h \
  /usr/include/signal.h /usr/include/bits/signum.h \
  /usr/include/bits/siginfo.h /usr/include/bits/sigaction.h \
  /usr/include/bits/sigcontext.h /usr/include/asm/sigcontext.h \
- /usr/include/bits/sigstack.h /usr/include/bits/sigthread.h \
+ /usr/include/bits/sigstack.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
  /usr/include/wchar.h /usr/include/gconv.h \
  /usr/lib/gcc/i686-linux-gnu/7/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h /usr/include/stdlib.h \
  /usr/include/alloca.h /usr/include/string.h /usr/include/sys/stat.h \
  /usr/include/bits/stat.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h /usr/include/sys/wait.h \
  /usr/include/sys/resource.h /usr/include/bits/resource.h \
  /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
@@ -306,8 +306,8 @@ Mutex.o: Mutex.cpp Mutex.h /usr/include/pthread.h \
  /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
  /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
  /usr/include/time.h /usr/include/i386-linux-gnu/bits/time.h /usr/include/signal.h \
- /home/darkeden/src/libs/sigset.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h ../Core/Types.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph ../Core/Types.h \
  ../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
   /usr/include/c++/7/streambuf \
  /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
@@ -392,12 +392,12 @@ PlayerManager.o: PlayerManager.cpp PlayerManager.h ../Core/Types.h \
  ../Core/types/GuildTypes.h ../Core/types/WarTypes.h \
  ../Core/types/ServerType.h ../Core/Utility.h ../Core/Exception.h \
  ../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
+ /home/darkeden/src/libs/stl_list.h Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../Core/SocketAPI.h Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../Core/Assert.h ../Core/Socket.h ../Core/SocketImpl.h \
  ../Core/Player.h gameserver/Creature.h gameserver/Object.h \
  gameserver/EffectManager.h gameserver/Effect.h ../Core/EffectInfo.h \
@@ -412,7 +412,7 @@ PlayerManager.o: PlayerManager.cpp PlayerManager.h ../Core/Types.h \
  ../Core/Gpackets/GCMonsterKillQuestInfo.h ../Core/PacketFactory.h \
  ../Core/Gpackets/GCSelectQuestID.h gameserver/OptionInfo.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
- /home/darkeden/src/libs/stl_hash_map.h /usr/include/STL/slist \
+ /home/darkeden/src/libs/stl_hash_map.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h gameserver/Zone.h gameserver/Tile.h \
  gameserver/Obstacle.h gameserver/Portal.h \
  gameserver/quest/TriggerManager.h gameserver/quest/Trigger.h \
@@ -490,8 +490,8 @@ GameWorldInfoManager.o: GameWorldInfoManager.cpp \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- database/Statement.h database/Result.h /usr/include/sys/time.h
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ database/Statement.h database/Result.h /usr/include/i386-linux-gnu/sys/time.h
 SystemAPI.o: SystemAPI.cpp ../Core/Types.h ../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
  /usr/include/c++/7/streambuf /usr/include/libio.h \
@@ -537,8 +537,8 @@ SystemAPI.o: SystemAPI.cpp ../Core/Types.h ../Core/types/SystemTypes.h \
  ../Core/types/ServerType.h ../Core/Utility.h SystemAPI.h \
  ../Core/Exception.h ../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h /usr/include/errno.h \
- /usr/include/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/asm/errno.h
+ /usr/include/i386-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/i386-linux-gnu/asm/errno.h
 Thread.o: Thread.cpp Thread.h ../Core/Types.h \
  ../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
   /usr/include/c++/7/streambuf \
@@ -585,7 +585,7 @@ Thread.o: Thread.cpp Thread.h ../Core/Types.h \
  ../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h pthreadAPI.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ThreadAttr.h
 ThreadAttr.o: ThreadAttr.cpp ThreadAttr.h /usr/include/pthread.h \
  /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
@@ -594,8 +594,8 @@ ThreadAttr.o: ThreadAttr.cpp ThreadAttr.h /usr/include/pthread.h \
  /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
  /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
  /usr/include/time.h /usr/include/i386-linux-gnu/bits/time.h /usr/include/signal.h \
- /home/darkeden/src/libs/sigset.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h ../Core/Types.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph ../Core/Types.h \
  ../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
   /usr/include/c++/7/streambuf \
  /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
@@ -635,7 +635,7 @@ ThreadAttr.o: ThreadAttr.cpp ThreadAttr.h /usr/include/pthread.h \
  ../Core/types/ServerType.h ../Core/Utility.h ../Core/Exception.h \
  ../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h pthreadAPI.h
-Timeval.o: Timeval.cpp Timeval.h /usr/include/sys/time.h \
+Timeval.o: Timeval.cpp Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
  /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
  /usr/include/i386-linux-gnu/gnu/stubs.h /usr/include/i386-linux-gnu/bits/types.h \
  /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
@@ -643,7 +643,7 @@ Timeval.o: Timeval.cpp Timeval.h /usr/include/sys/time.h \
  /usr/include/time.h /usr/include/i386-linux-gnu/bits/time.h \
  /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
  /home/darkeden/src/libs/sigset.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h /usr/include/stdlib.h /usr/include/i386-linux-gnu/sys/types.h \
  /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
  /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
@@ -689,8 +689,8 @@ pthreadAPI.o: pthreadAPI.cpp pthreadAPI.h /usr/include/pthread.h \
  /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
  /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/i386-linux-gnu/bits/sched.h \
  /usr/include/time.h /usr/include/i386-linux-gnu/bits/time.h /usr/include/signal.h \
- /home/darkeden/src/libs/sigset.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h ../Core/Exception.h ../Core/Types.h \
+ /home/darkeden/src/libs/sigset.h /usr/include/i386-linux-gnu/bits/initspin.h \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph ../Core/Exception.h ../Core/Types.h \
  ../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
   /usr/include/c++/7/streambuf \
  /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
@@ -729,8 +729,8 @@ pthreadAPI.o: pthreadAPI.cpp pthreadAPI.h /usr/include/pthread.h \
  ../Core/types/GuildTypes.h ../Core/types/WarTypes.h \
  ../Core/types/ServerType.h ../Core/Utility.h ../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/errno.h /usr/include/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/asm/errno.h
+ /usr/include/errno.h /usr/include/i386-linux-gnu/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/i386-linux-gnu/asm/errno.h
 Profile.o: Profile.cpp Profile.h ../Core/Types.h \
  ../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
   /usr/include/c++/7/streambuf \
@@ -775,11 +775,11 @@ Profile.o: Profile.cpp Profile.h ../Core/Types.h \
  ../Core/types/GuildTypes.h ../Core/types/WarTypes.h \
  ../Core/types/ServerType.h ../Core/Utility.h ../Core/Exception.h \
  ../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h Timeval.h /usr/include/sys/time.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h Mutex.h \
+ /home/darkeden/src/libs/stl_list.h Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
+ /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../Core/Assert.h Thread.h pthreadAPI.h ../Core/VSDateTime.h \
@@ -831,8 +831,8 @@ PacketProfile.o: PacketProfile.cpp PacketProfile.h ../Core/Types.h \
  ../Core/types/QuestTypes.h ../Core/types/ShopTypes.h \
  ../Core/types/GuildTypes.h ../Core/types/WarTypes.h \
  ../Core/types/ServerType.h ../Core/Utility.h Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../Core/VSDateTime.h \
@@ -889,8 +889,8 @@ GameServerInfoManager.o: GameServerInfoManager.cpp \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- database/Statement.h database/Result.h /usr/include/sys/time.h
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
+ database/Statement.h database/Result.h /usr/include/i386-linux-gnu/sys/time.h
 PaySystem.o: PaySystem.cpp PaySystem.h ../Core/Types.h \
  ../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
   /usr/include/c++/7/streambuf \
@@ -934,8 +934,8 @@ PaySystem.o: PaySystem.cpp PaySystem.h ../Core/Types.h \
  ../Core/types/QuestTypes.h ../Core/types/ShopTypes.h \
  ../Core/types/GuildTypes.h ../Core/types/WarTypes.h \
  ../Core/types/ServerType.h ../Core/Utility.h Timeval.h \
- /usr/include/sys/time.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../Core/VSDateTime.h ../Core/Exception.h \
  ../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h database/DB.h database/DatabaseManager.h \
@@ -945,7 +945,7 @@ PaySystem.o: PaySystem.cpp PaySystem.h ../Core/Types.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  database/Statement.h database/Result.h Thread.h pthreadAPI.h \
  ../Core/Properties.h /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h

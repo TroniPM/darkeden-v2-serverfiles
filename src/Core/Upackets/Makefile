@@ -120,7 +120,7 @@ CUBeginUpdate.o: CUBeginUpdate.cpp CUBeginUpdate.h ../Packet.h \
  /usr/include/stdlib.h /usr/include/alloca.h /usr/include/string.h \
  /usr/include/assert.h /home/darkeden/src/libs/stl_threads.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/ctype.h /usr/include/c++/7/functional \
  /usr/include/c++/7/bits/stl_function.h /usr/include/c++/7/stdexcept \
  /home/darkeden/src/libs/stl_exception.h /home/darkeden/src/libs/stl_iterator_base.h \
@@ -145,10 +145,10 @@ CUBeginUpdate.o: CUBeginUpdate.cpp CUBeginUpdate.h ../Packet.h \
  ../Utility.h ../Exception.h ../StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h ../SocketInputStream.h ../Socket.h \
  ../SocketImpl.h ../SocketAPI.h /usr/include/netinet/in.h \
- /usr/include/stdint.h /usr/include/bits/wordsize.h \
- /usr/include/bits/socket.h /usr/include/bits/sockaddr.h \
+ /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wordsize.h \
+ /usr/include/i386-linux-gnu/bits/socket.h /usr/include/i386-linux-gnu/bits/sockaddr.h \
  /usr/include/asm/socket.h /usr/include/asm/sockios.h \
- /usr/include/bits/in.h /usr/include/bits/byteswap.h \
+ /usr/include/i386-linux-gnu/bits/in.h /usr/include/i386-linux-gnu/bits/byteswap.h \
  /usr/include/sys/socket.h /usr/include/sys/uio.h \
  /usr/include/bits/uio.h ../SocketOutputStream.h ../PacketFactory.h \
  ../UpdateManager.h ../Update.h ../UpdateDef.h ../Assert.h \
@@ -178,7 +178,7 @@ CUBeginUpdateHandler.o: CUBeginUpdateHandler.cpp CUBeginUpdate.h \
  /usr/include/stdlib.h /usr/include/alloca.h /usr/include/string.h \
  /usr/include/assert.h /home/darkeden/src/libs/stl_threads.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/ctype.h /usr/include/c++/7/functional \
  /usr/include/c++/7/bits/stl_function.h /usr/include/c++/7/stdexcept \
  /home/darkeden/src/libs/stl_exception.h /home/darkeden/src/libs/stl_iterator_base.h \
@@ -203,10 +203,10 @@ CUBeginUpdateHandler.o: CUBeginUpdateHandler.cpp CUBeginUpdate.h \
  ../Utility.h ../Exception.h ../StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h ../SocketInputStream.h ../Socket.h \
  ../SocketImpl.h ../SocketAPI.h /usr/include/netinet/in.h \
- /usr/include/stdint.h /usr/include/bits/wordsize.h \
- /usr/include/bits/socket.h /usr/include/bits/sockaddr.h \
+ /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wordsize.h \
+ /usr/include/i386-linux-gnu/bits/socket.h /usr/include/i386-linux-gnu/bits/sockaddr.h \
  /usr/include/asm/socket.h /usr/include/asm/sockios.h \
- /usr/include/bits/in.h /usr/include/bits/byteswap.h \
+ /usr/include/i386-linux-gnu/bits/in.h /usr/include/i386-linux-gnu/bits/byteswap.h \
  /usr/include/sys/socket.h /usr/include/sys/uio.h \
  /usr/include/bits/uio.h ../SocketOutputStream.h ../PacketFactory.h \
  ../UpdateManager.h ../Update.h ../UpdateDef.h ../Assert.h \
@@ -233,7 +233,7 @@ CURequest.o: CURequest.cpp CURequest.h ../Packet.h ../Types.h \
  /usr/include/stdlib.h /usr/include/alloca.h /usr/include/string.h \
  /usr/include/assert.h /home/darkeden/src/libs/stl_threads.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/ctype.h /usr/include/c++/7/functional \
  /usr/include/c++/7/bits/stl_function.h /usr/include/c++/7/stdexcept \
  /home/darkeden/src/libs/stl_exception.h /home/darkeden/src/libs/stl_iterator_base.h \
@@ -258,10 +258,10 @@ CURequest.o: CURequest.cpp CURequest.h ../Packet.h ../Types.h \
  ../Utility.h ../Exception.h ../StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h ../SocketInputStream.h ../Socket.h \
  ../SocketImpl.h ../SocketAPI.h /usr/include/netinet/in.h \
- /usr/include/stdint.h /usr/include/bits/wordsize.h \
- /usr/include/bits/socket.h /usr/include/bits/sockaddr.h \
+ /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wordsize.h \
+ /usr/include/i386-linux-gnu/bits/socket.h /usr/include/i386-linux-gnu/bits/sockaddr.h \
  /usr/include/asm/socket.h /usr/include/asm/sockios.h \
- /usr/include/bits/in.h /usr/include/bits/byteswap.h \
+ /usr/include/i386-linux-gnu/bits/in.h /usr/include/i386-linux-gnu/bits/byteswap.h \
  /usr/include/sys/socket.h /usr/include/sys/uio.h \
  /usr/include/bits/uio.h ../SocketOutputStream.h ../PacketFactory.h \
  ../Resource.h ../UpdateDef.h
@@ -287,7 +287,7 @@ CURequestHandler.o: CURequestHandler.cpp CURequest.h ../Packet.h \
  /usr/include/stdlib.h /usr/include/alloca.h /usr/include/string.h \
  /usr/include/assert.h /home/darkeden/src/libs/stl_threads.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/ctype.h /usr/include/c++/7/functional \
  /usr/include/c++/7/bits/stl_function.h /usr/include/c++/7/stdexcept \
  /home/darkeden/src/libs/stl_exception.h /home/darkeden/src/libs/stl_iterator_base.h \
@@ -312,10 +312,10 @@ CURequestHandler.o: CURequestHandler.cpp CURequest.h ../Packet.h \
  ../Utility.h ../Exception.h ../StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h ../SocketInputStream.h ../Socket.h \
  ../SocketImpl.h ../SocketAPI.h /usr/include/netinet/in.h \
- /usr/include/stdint.h /usr/include/bits/wordsize.h \
- /usr/include/bits/socket.h /usr/include/bits/sockaddr.h \
+ /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wordsize.h \
+ /usr/include/i386-linux-gnu/bits/socket.h /usr/include/i386-linux-gnu/bits/sockaddr.h \
  /usr/include/asm/socket.h /usr/include/asm/sockios.h \
- /usr/include/bits/in.h /usr/include/bits/byteswap.h \
+ /usr/include/i386-linux-gnu/bits/in.h /usr/include/i386-linux-gnu/bits/byteswap.h \
  /usr/include/sys/socket.h /usr/include/sys/uio.h \
  /usr/include/bits/uio.h ../SocketOutputStream.h ../PacketFactory.h \
  ../Resource.h ../UpdateDef.h
@@ -341,7 +341,7 @@ CUEndUpdate.o: CUEndUpdate.cpp CUEndUpdate.h ../Packet.h ../Types.h \
  /usr/include/stdlib.h /usr/include/alloca.h /usr/include/string.h \
  /usr/include/assert.h /home/darkeden/src/libs/stl_threads.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/ctype.h /usr/include/c++/7/functional \
  /usr/include/c++/7/bits/stl_function.h /usr/include/c++/7/stdexcept \
  /home/darkeden/src/libs/stl_exception.h /home/darkeden/src/libs/stl_iterator_base.h \
@@ -366,10 +366,10 @@ CUEndUpdate.o: CUEndUpdate.cpp CUEndUpdate.h ../Packet.h ../Types.h \
  ../Utility.h ../Exception.h ../StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h ../SocketInputStream.h ../Socket.h \
  ../SocketImpl.h ../SocketAPI.h /usr/include/netinet/in.h \
- /usr/include/stdint.h /usr/include/bits/wordsize.h \
- /usr/include/bits/socket.h /usr/include/bits/sockaddr.h \
+ /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wordsize.h \
+ /usr/include/i386-linux-gnu/bits/socket.h /usr/include/i386-linux-gnu/bits/sockaddr.h \
  /usr/include/asm/socket.h /usr/include/asm/sockios.h \
- /usr/include/bits/in.h /usr/include/bits/byteswap.h \
+ /usr/include/i386-linux-gnu/bits/in.h /usr/include/i386-linux-gnu/bits/byteswap.h \
  /usr/include/sys/socket.h /usr/include/sys/uio.h \
  /usr/include/bits/uio.h ../SocketOutputStream.h ../PacketFactory.h
 CUEndUpdateHandler.o: CUEndUpdateHandler.cpp CUEndUpdate.h ../Packet.h \
@@ -394,7 +394,7 @@ CUEndUpdateHandler.o: CUEndUpdateHandler.cpp CUEndUpdate.h ../Packet.h \
  /usr/include/stdlib.h /usr/include/alloca.h /usr/include/string.h \
  /usr/include/assert.h /home/darkeden/src/libs/stl_threads.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/ctype.h /usr/include/c++/7/functional \
  /usr/include/c++/7/bits/stl_function.h /usr/include/c++/7/stdexcept \
  /home/darkeden/src/libs/stl_exception.h /home/darkeden/src/libs/stl_iterator_base.h \
@@ -419,10 +419,10 @@ CUEndUpdateHandler.o: CUEndUpdateHandler.cpp CUEndUpdate.h ../Packet.h \
  ../Utility.h ../Exception.h ../StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h ../SocketInputStream.h ../Socket.h \
  ../SocketImpl.h ../SocketAPI.h /usr/include/netinet/in.h \
- /usr/include/stdint.h /usr/include/bits/wordsize.h \
- /usr/include/bits/socket.h /usr/include/bits/sockaddr.h \
+ /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wordsize.h \
+ /usr/include/i386-linux-gnu/bits/socket.h /usr/include/i386-linux-gnu/bits/sockaddr.h \
  /usr/include/asm/socket.h /usr/include/asm/sockios.h \
- /usr/include/bits/in.h /usr/include/bits/byteswap.h \
+ /usr/include/i386-linux-gnu/bits/in.h /usr/include/i386-linux-gnu/bits/byteswap.h \
  /usr/include/sys/socket.h /usr/include/sys/uio.h \
  /usr/include/bits/uio.h ../SocketOutputStream.h ../PacketFactory.h
 CURequestLoginMode.o: CURequestLoginMode.cpp CURequestLoginMode.h \
@@ -448,7 +448,7 @@ CURequestLoginMode.o: CURequestLoginMode.cpp CURequestLoginMode.h \
  /usr/include/stdlib.h /usr/include/alloca.h /usr/include/string.h \
  /usr/include/assert.h /home/darkeden/src/libs/stl_threads.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/ctype.h /usr/include/c++/7/functional \
  /usr/include/c++/7/bits/stl_function.h /usr/include/c++/7/stdexcept \
  /home/darkeden/src/libs/stl_exception.h /home/darkeden/src/libs/stl_iterator_base.h \
@@ -473,10 +473,10 @@ CURequestLoginMode.o: CURequestLoginMode.cpp CURequestLoginMode.h \
  ../Utility.h ../Exception.h ../StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h ../SocketInputStream.h ../Socket.h \
  ../SocketImpl.h ../SocketAPI.h /usr/include/netinet/in.h \
- /usr/include/stdint.h /usr/include/bits/wordsize.h \
- /usr/include/bits/socket.h /usr/include/bits/sockaddr.h \
+ /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wordsize.h \
+ /usr/include/i386-linux-gnu/bits/socket.h /usr/include/i386-linux-gnu/bits/sockaddr.h \
  /usr/include/asm/socket.h /usr/include/asm/sockios.h \
- /usr/include/bits/in.h /usr/include/bits/byteswap.h \
+ /usr/include/i386-linux-gnu/bits/in.h /usr/include/i386-linux-gnu/bits/byteswap.h \
  /usr/include/sys/socket.h /usr/include/sys/uio.h \
  /usr/include/bits/uio.h ../SocketOutputStream.h ../PacketFactory.h
 CURequestLoginModeHandler.o: CURequestLoginModeHandler.cpp \
@@ -502,7 +502,7 @@ CURequestLoginModeHandler.o: CURequestLoginModeHandler.cpp \
  /usr/include/stdlib.h /usr/include/alloca.h /usr/include/string.h \
  /usr/include/assert.h /home/darkeden/src/libs/stl_threads.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/ctype.h /usr/include/c++/7/functional \
  /usr/include/c++/7/bits/stl_function.h /usr/include/c++/7/stdexcept \
  /home/darkeden/src/libs/stl_exception.h /home/darkeden/src/libs/stl_iterator_base.h \
@@ -527,10 +527,10 @@ CURequestLoginModeHandler.o: CURequestLoginModeHandler.cpp \
  ../Utility.h ../Exception.h ../StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h ../SocketInputStream.h ../Socket.h \
  ../SocketImpl.h ../SocketAPI.h /usr/include/netinet/in.h \
- /usr/include/stdint.h /usr/include/bits/wordsize.h \
- /usr/include/bits/socket.h /usr/include/bits/sockaddr.h \
+ /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wordsize.h \
+ /usr/include/i386-linux-gnu/bits/socket.h /usr/include/i386-linux-gnu/bits/sockaddr.h \
  /usr/include/asm/socket.h /usr/include/asm/sockios.h \
- /usr/include/bits/in.h /usr/include/bits/byteswap.h \
+ /usr/include/i386-linux-gnu/bits/in.h /usr/include/i386-linux-gnu/bits/byteswap.h \
  /usr/include/sys/socket.h /usr/include/sys/uio.h \
  /usr/include/bits/uio.h ../SocketOutputStream.h ../PacketFactory.h
 UCUpdate.o: UCUpdate.cpp UCUpdate.h ../Packet.h ../Types.h \
@@ -555,7 +555,7 @@ UCUpdate.o: UCUpdate.cpp UCUpdate.h ../Packet.h ../Types.h \
  /usr/include/stdlib.h /usr/include/alloca.h /usr/include/string.h \
  /usr/include/assert.h /home/darkeden/src/libs/stl_threads.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/ctype.h /usr/include/c++/7/functional \
  /usr/include/c++/7/bits/stl_function.h /usr/include/c++/7/stdexcept \
  /home/darkeden/src/libs/stl_exception.h /home/darkeden/src/libs/stl_iterator_base.h \
@@ -580,10 +580,10 @@ UCUpdate.o: UCUpdate.cpp UCUpdate.h ../Packet.h ../Types.h \
  ../Utility.h ../Exception.h ../StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h ../SocketInputStream.h ../Socket.h \
  ../SocketImpl.h ../SocketAPI.h /usr/include/netinet/in.h \
- /usr/include/stdint.h /usr/include/bits/wordsize.h \
- /usr/include/bits/socket.h /usr/include/bits/sockaddr.h \
+ /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wordsize.h \
+ /usr/include/i386-linux-gnu/bits/socket.h /usr/include/i386-linux-gnu/bits/sockaddr.h \
  /usr/include/asm/socket.h /usr/include/asm/sockios.h \
- /usr/include/bits/in.h /usr/include/bits/byteswap.h \
+ /usr/include/i386-linux-gnu/bits/in.h /usr/include/i386-linux-gnu/bits/byteswap.h \
  /usr/include/sys/socket.h /usr/include/sys/uio.h \
  /usr/include/bits/uio.h ../SocketOutputStream.h ../PacketFactory.h \
  ../Resource.h ../UpdateDef.h
@@ -609,7 +609,7 @@ UCUpdateHandler.o: UCUpdateHandler.cpp UCUpdate.h ../Packet.h \
  /usr/include/stdlib.h /usr/include/alloca.h /usr/include/string.h \
  /usr/include/assert.h /home/darkeden/src/libs/stl_threads.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/ctype.h /usr/include/c++/7/functional \
  /usr/include/c++/7/bits/stl_function.h /usr/include/c++/7/stdexcept \
  /home/darkeden/src/libs/stl_exception.h /home/darkeden/src/libs/stl_iterator_base.h \
@@ -634,10 +634,10 @@ UCUpdateHandler.o: UCUpdateHandler.cpp UCUpdate.h ../Packet.h \
  ../Utility.h ../Exception.h ../StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h ../SocketInputStream.h ../Socket.h \
  ../SocketImpl.h ../SocketAPI.h /usr/include/netinet/in.h \
- /usr/include/stdint.h /usr/include/bits/wordsize.h \
- /usr/include/bits/socket.h /usr/include/bits/sockaddr.h \
+ /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wordsize.h \
+ /usr/include/i386-linux-gnu/bits/socket.h /usr/include/i386-linux-gnu/bits/sockaddr.h \
  /usr/include/asm/socket.h /usr/include/asm/sockios.h \
- /usr/include/bits/in.h /usr/include/bits/byteswap.h \
+ /usr/include/i386-linux-gnu/bits/in.h /usr/include/i386-linux-gnu/bits/byteswap.h \
  /usr/include/sys/socket.h /usr/include/sys/uio.h \
  /usr/include/bits/uio.h ../SocketOutputStream.h ../PacketFactory.h \
  ../Resource.h ../UpdateDef.h
@@ -663,7 +663,7 @@ UCUpdateList.o: UCUpdateList.cpp UCUpdateList.h ../Packet.h ../Types.h \
  /usr/include/stdlib.h /usr/include/alloca.h /usr/include/string.h \
  /usr/include/assert.h /home/darkeden/src/libs/stl_threads.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/ctype.h /usr/include/c++/7/functional \
  /usr/include/c++/7/bits/stl_function.h /usr/include/c++/7/stdexcept \
  /home/darkeden/src/libs/stl_exception.h /home/darkeden/src/libs/stl_iterator_base.h \
@@ -688,10 +688,10 @@ UCUpdateList.o: UCUpdateList.cpp UCUpdateList.h ../Packet.h ../Types.h \
  ../Utility.h ../Exception.h ../StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h ../SocketInputStream.h ../Socket.h \
  ../SocketImpl.h ../SocketAPI.h /usr/include/netinet/in.h \
- /usr/include/stdint.h /usr/include/bits/wordsize.h \
- /usr/include/bits/socket.h /usr/include/bits/sockaddr.h \
+ /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wordsize.h \
+ /usr/include/i386-linux-gnu/bits/socket.h /usr/include/i386-linux-gnu/bits/sockaddr.h \
  /usr/include/asm/socket.h /usr/include/asm/sockios.h \
- /usr/include/bits/in.h /usr/include/bits/byteswap.h \
+ /usr/include/i386-linux-gnu/bits/in.h /usr/include/i386-linux-gnu/bits/byteswap.h \
  /usr/include/sys/socket.h /usr/include/sys/uio.h \
  /usr/include/bits/uio.h ../SocketOutputStream.h ../PacketFactory.h \
  ../UpdateManager.h ../Update.h ../UpdateDef.h ../Assert.h \
@@ -719,7 +719,7 @@ UCUpdateListHandler.o: UCUpdateListHandler.cpp UCUpdateList.h \
  /usr/include/stdlib.h /usr/include/alloca.h /usr/include/string.h \
  /usr/include/assert.h /home/darkeden/src/libs/stl_threads.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/ctype.h /usr/include/c++/7/functional \
  /usr/include/c++/7/bits/stl_function.h /usr/include/c++/7/stdexcept \
  /home/darkeden/src/libs/stl_exception.h /home/darkeden/src/libs/stl_iterator_base.h \
@@ -744,10 +744,10 @@ UCUpdateListHandler.o: UCUpdateListHandler.cpp UCUpdateList.h \
  ../Utility.h ../Exception.h ../StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h ../SocketInputStream.h ../Socket.h \
  ../SocketImpl.h ../SocketAPI.h /usr/include/netinet/in.h \
- /usr/include/stdint.h /usr/include/bits/wordsize.h \
- /usr/include/bits/socket.h /usr/include/bits/sockaddr.h \
+ /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wordsize.h \
+ /usr/include/i386-linux-gnu/bits/socket.h /usr/include/i386-linux-gnu/bits/sockaddr.h \
  /usr/include/asm/socket.h /usr/include/asm/sockios.h \
- /usr/include/bits/in.h /usr/include/bits/byteswap.h \
+ /usr/include/i386-linux-gnu/bits/in.h /usr/include/i386-linux-gnu/bits/byteswap.h \
  /usr/include/sys/socket.h /usr/include/sys/uio.h \
  /usr/include/bits/uio.h ../SocketOutputStream.h ../PacketFactory.h \
  ../UpdateManager.h ../Update.h ../UpdateDef.h ../Assert.h \
@@ -775,7 +775,7 @@ UCRequestLoginMode.o: UCRequestLoginMode.cpp UCRequestLoginMode.h \
  /usr/include/stdlib.h /usr/include/alloca.h /usr/include/string.h \
  /usr/include/assert.h /home/darkeden/src/libs/stl_threads.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/ctype.h /usr/include/c++/7/functional \
  /usr/include/c++/7/bits/stl_function.h /usr/include/c++/7/stdexcept \
  /home/darkeden/src/libs/stl_exception.h /home/darkeden/src/libs/stl_iterator_base.h \
@@ -800,10 +800,10 @@ UCRequestLoginMode.o: UCRequestLoginMode.cpp UCRequestLoginMode.h \
  ../Utility.h ../Exception.h ../StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h ../SocketInputStream.h ../Socket.h \
  ../SocketImpl.h ../SocketAPI.h /usr/include/netinet/in.h \
- /usr/include/stdint.h /usr/include/bits/wordsize.h \
- /usr/include/bits/socket.h /usr/include/bits/sockaddr.h \
+ /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wordsize.h \
+ /usr/include/i386-linux-gnu/bits/socket.h /usr/include/i386-linux-gnu/bits/sockaddr.h \
  /usr/include/asm/socket.h /usr/include/asm/sockios.h \
- /usr/include/bits/in.h /usr/include/bits/byteswap.h \
+ /usr/include/i386-linux-gnu/bits/in.h /usr/include/i386-linux-gnu/bits/byteswap.h \
  /usr/include/sys/socket.h /usr/include/sys/uio.h \
  /usr/include/bits/uio.h ../SocketOutputStream.h ../PacketFactory.h
 UCRequestLoginModeHandler.o: UCRequestLoginModeHandler.cpp \
@@ -829,7 +829,7 @@ UCRequestLoginModeHandler.o: UCRequestLoginModeHandler.cpp \
  /usr/include/stdlib.h /usr/include/alloca.h /usr/include/string.h \
  /usr/include/assert.h /home/darkeden/src/libs/stl_threads.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
- /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
+ /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /usr/include/ctype.h /usr/include/c++/7/functional \
  /usr/include/c++/7/bits/stl_function.h /usr/include/c++/7/stdexcept \
  /home/darkeden/src/libs/stl_exception.h /home/darkeden/src/libs/stl_iterator_base.h \
@@ -854,9 +854,9 @@ UCRequestLoginModeHandler.o: UCRequestLoginModeHandler.cpp \
  ../Utility.h ../Exception.h ../StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h ../SocketInputStream.h ../Socket.h \
  ../SocketImpl.h ../SocketAPI.h /usr/include/netinet/in.h \
- /usr/include/stdint.h /usr/include/bits/wordsize.h \
- /usr/include/bits/socket.h /usr/include/bits/sockaddr.h \
+ /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wordsize.h \
+ /usr/include/i386-linux-gnu/bits/socket.h /usr/include/i386-linux-gnu/bits/sockaddr.h \
  /usr/include/asm/socket.h /usr/include/asm/sockios.h \
- /usr/include/bits/in.h /usr/include/bits/byteswap.h \
+ /usr/include/i386-linux-gnu/bits/in.h /usr/include/i386-linux-gnu/bits/byteswap.h \
  /usr/include/sys/socket.h /usr/include/sys/uio.h \
  /usr/include/bits/uio.h ../SocketOutputStream.h ../PacketFactory.h
