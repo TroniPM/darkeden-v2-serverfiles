@@ -27,28 +27,28 @@ namespace FileAPI {
 // exception version of open ()
 //
 int open_ex (const char* filename, int flags)
-    throw (IOException, Error);
+    ;
 
 int open_ex (const char* filename, int flags, int mode)
-    throw (IOException, Error);
+    ;
 
 //
 // exception version of close ()
 //
 void close_ex (int fd) 
-	throw (FileNotOpenedException, Error);
+	;
 
 //
 // exception version of read ()
 //
 uint read_ex (int fd, void* buf, uint len) 
-     throw (IOException, Error);
+     ;
 
 //
 // exception version of write ()
 //
 uint write_ex (int fd, const void* buf, uint len) 
-     throw (IOException, Error);
+     ;
 
 //
 // exception version of fcntl ()

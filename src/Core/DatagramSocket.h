@@ -31,19 +31,19 @@ class DatagramSocket {
 public :
 
 	// constructor for UDP Client Socket
-	DatagramSocket () throw (Error, BindException);
+	DatagramSocket () ;
 
 	// constructor for UDP Server Socket
-	DatagramSocket (uint port) throw (Error, BindException);
+	DatagramSocket (uint port) ;
 
 	// destructor
 	~DatagramSocket ();
 
 	// send datagram to peer
-	uint send (Datagram* pDatagram) throw (ConnectException, Error);
+	uint send (Datagram* pDatagram) ;
 
 	// receive datagram from peer
-	Datagram* receive () throw (ConnectException, Error);
+	Datagram* receive () ;
 	
 	// get socket descriptor
 	SOCKET getSOCKET ()  { return m_SocketID; }

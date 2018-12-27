@@ -49,10 +49,10 @@ public :
 	void save (ofstream & ofile) ;
 
 	// read from socket input stream
-	void read (SocketInputStream & iStream) throw (IOException, Error);
+	void read (SocketInputStream & iStream) ;
 
 	// read from socket
-	void read (Socket* pSocket) throw (IOException, Error);
+	void read (Socket* pSocket) ;
 
 	// write to socket output stream
 	void write (SocketOutputStream & oStream) ;

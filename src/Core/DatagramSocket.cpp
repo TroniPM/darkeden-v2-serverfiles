@@ -100,6 +100,8 @@ uint DatagramSocket::send ( Datagram * pDatagram )
 	}
 
 	__END_CATCH
+
+	return NULL;
 }
 
 
@@ -135,4 +137,5 @@ Datagram * DatagramSocket::receive ()
 	return pDatagram;
 
 	__END_CATCH
+	return NULL;
 }

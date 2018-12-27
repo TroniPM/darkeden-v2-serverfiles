@@ -59,7 +59,7 @@ public :
 	void read (SocketInputStream & iStream);
 
 	// read from socket
-	void read (Socket* pSocket) throw (IOException, Error);
+	void read (Socket* pSocket) ;
 
 	// write to socket output stream
 	void write (SocketOutputStream & oStream) ;

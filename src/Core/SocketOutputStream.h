@@ -71,7 +71,7 @@ public :
 	uint flush ();// throw (IOException, ProtocolException, InvalidProtocolException, Error);
 
 	// resize buffer 
-	void resize (int size);// throw (IOException, Error);
+	void resize (int size);// ;
 
 	// get buffer length
 	int capacity ()  { return m_BufferLen; }

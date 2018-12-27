@@ -58,24 +58,24 @@ public :
 	void close ();
 	
 	// bind socket
-	void bind () throw (BindException, Error);
-	void bind (uint port) throw (BindException, Error);
+	void bind () ;
+	void bind (uint port) ;
 	
 	// listen
 	void listen (uint backlog);
 	
 	// connect to remote host
-	void connect () throw (ConnectException, Error);
-	void connect (const string & host, uint port) throw (ConnectException, Error);
+	void connect () ;
+	void connect (const string & host, uint port) ;
 	
 	// accept new connection 
-	SocketImpl* accept () throw (NonBlockingIOException, ConnectException, Error);
+	SocketImpl* accept () ;
 	
 	// send data to peer
-	uint send (const void* buf, uint len, uint flags = 0) throw (IOException, InvalidProtocolException, Error);
+	uint send (const void* buf, uint len, uint flags = 0) ;
 	
 	// receive data from peer
-	uint receive (void* buf, uint len, uint flags = 0) throw (IOException, Error);
+	uint receive (void* buf, uint len, uint flags = 0) ;
 	
 	// how much available?
 	uint available () ;

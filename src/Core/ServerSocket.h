@@ -32,7 +32,7 @@ class ServerSocket {
 public :
 	
 	// constructor
-	ServerSocket (uint port, uint backlog = 5) throw (BindException, Error);
+	ServerSocket (uint port, uint backlog = 5) ;
 	
 	// destructor
 	~ServerSocket ();

@@ -60,7 +60,7 @@ SOCKET socket_ex (int domain, int type, int protocol);
 // exception version of bind ()
 //
 void bind_ex (SOCKET s, const struct sockaddr* name, uint namelen);
-	//throw (BindException, Error);
+	//;
 
 
 //
@@ -80,7 +80,7 @@ void listen_ex (SOCKET s, uint backlog);
 // exception version of accept ()
 //
 SOCKET accept_ex (SOCKET s, struct sockaddr* addr, uint* addrlen);
-	//throw (NonBlockingIOException, ConnectException, Error);
+	//;
 
 
 //
@@ -109,20 +109,20 @@ uint send_ex (SOCKET s, const void* buf, uint len, uint flags);
 // exception version of sendto()
 //
 uint sendto_ex (SOCKET s, const void* buf, int len, unsigned int flags, const struct sockaddr* to, int tolen);
-	//throw (NonBlockingIOException, ConnectException, Error);
+	//;
 
 //
 // exception version of recv()
 //
 uint recv_ex (SOCKET s, void* buf, uint len, uint flags);
-	//throw (NonBlockingIOException, ConnectException, Error);
+	//;
 
 
 //
 // exception version of recvfrom()
 //
 uint recvfrom_ex (SOCKET s, void* buf, int len, uint flags, struct sockaddr* from, uint* fromlen);
-	//throw (NonBlockingIOException, ConnectException, Error);
+	//;
  
 
 //
@@ -133,7 +133,7 @@ uint recvfrom_ex (SOCKET s, void* buf, int len, uint flags, struct sockaddr* fro
 // in UNIX, close() used instead
 //
 void closesocket_ex (SOCKET s);
-	//throw (FileNotOpenedException, Error);
+	//;
 
 
 //

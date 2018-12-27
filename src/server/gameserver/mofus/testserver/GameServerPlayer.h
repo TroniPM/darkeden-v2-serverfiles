@@ -33,12 +33,12 @@ public :
 	// destructor
 	virtual ~GameServerPlayer ();
 
-	virtual void processInput () throw (IOException, Error);
+	virtual void processInput () ;
 	
-	virtual void processOutput () throw (IOException, Error);
+	virtual void processOutput () ;
 	
 	// parse packet and execute handler for the packet
-	virtual void processCommand () throw (IOException, Error);
+	virtual void processCommand () ;
 	
 	// disconnect
 	// 플레이어의 연결을 종료할 때, 상대편이 적절하게 로그아웃하지 않을 경우 소켓의 연결이 

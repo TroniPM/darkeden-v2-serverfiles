@@ -68,7 +68,7 @@ class Update {
 public :
 
 	// load from file
-	void load (ifstream & ifile) throw (IOException, Error);
+	void load (ifstream & ifile) ;
 
 	// save to file
 	void save (ofstream & ofile) ;
@@ -77,7 +77,7 @@ public :
 	void read (SocketInputStream & iStream);
 
 	// read from socket directly
-	void read (Socket* pSocket) throw (IOException, Error);
+	void read (Socket* pSocket) ;
 
 	// write to socket output stream
 	void write (SocketOutputStream & oStream) ;

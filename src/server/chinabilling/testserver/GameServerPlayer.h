@@ -38,12 +38,12 @@ public :
 	// destructor
 	virtual ~GameServerPlayer ();
 
-	virtual void processInput () throw (IOException, Error);
+	virtual void processInput () ;
 	
-	virtual void processOutput () throw (IOException, Error);
+	virtual void processOutput () ;
 	
 	// parse packet and execute handler for the packet
-	virtual void processCommand () throw (IOException, Error);
+	virtual void processCommand () ;
 	
 	// send packet to player's output buffer
 	virtual void sendPacket (Packet* pPacket);

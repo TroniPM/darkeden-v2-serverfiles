@@ -50,10 +50,10 @@ public :
 	virtual ~Player ();
 
 	// read socket's receive buffer and fill input buffer
-	virtual void processInput () throw (IOException, Error);
+	virtual void processInput () ;
 	
 	// parse packet and execute handler for the packet
-	virtual void processCommand (bool Option = true) throw (IOException, Error);
+	virtual void processCommand (bool Option = true) ;
 	
 	// flush output buffer to socket's send buffer
 	virtual void processOutput () throw (IOException, Error, ProtocolException);

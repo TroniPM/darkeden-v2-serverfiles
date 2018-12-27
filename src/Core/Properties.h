@@ -67,7 +67,7 @@ public :
 public :
 	
 	// load from file
-	void load () throw (IOException, Error);
+	void load () ;
 	void load (const string & filename) throw (IOException, Error) { m_Filename = filename; load(); }
 
 	// save to file

@@ -15,8 +15,7 @@
 //////////////////////////////////////////////////////////////////////
 // constructor
 //////////////////////////////////////////////////////////////////////
-SerialDatagram::SerialDatagram () 
-	throw () 
+SerialDatagram::SerialDatagram ()
 : m_Length(0), m_InputOffset(0), m_OutputOffset(0), m_Data(NULL) 
 {
 	__BEGIN_TRY
@@ -32,7 +31,6 @@ SerialDatagram::SerialDatagram ()
 // destructor
 //////////////////////////////////////////////////////////////////////
 SerialDatagram::~SerialDatagram () 
-	throw () 
 { 
 	__BEGIN_TRY
 
@@ -101,7 +99,6 @@ void SerialDatagram::read ( string & str , uint len )
 // 
 //////////////////////////////////////////////////////////////////////
 void SerialDatagram::read ( SerialDatagramPacket * & pPacket )
-	throw ( ProtocolException , Error )
 {
 	__BEGIN_TRY
 
@@ -185,7 +182,7 @@ void SerialDatagram::write ( const char * buf , uint len )
 // 을 변경해줄 필요는 없다.
 //
 //////////////////////////////////////////////////////////////////////
-void SerialDatagram::write ( const string & str )
+void SerialDatagram::write (  string & str )
 	
 {
 	__BEGIN_TRY
@@ -210,8 +207,7 @@ void SerialDatagram::write ( const string & str )
 // 되어야 한다.
 //
 //////////////////////////////////////////////////////////////////////
-void SerialDatagram::write ( const SerialDatagramPacket * pPacket )
-	throw ( ProtocolException , Error )
+void SerialDatagram::write (  SerialDatagramPacket * pPacket )
 {
 	__BEGIN_TRY
 
@@ -292,8 +288,7 @@ void SerialDatagram::setAddress ( SOCKADDR_IN * pSockAddr )
 //////////////////////////////////////////////////////////////////////
 // get debug string
 //////////////////////////////////////////////////////////////////////
-string SerialDatagram::toString () const
-	throw ()
+string SerialDatagram::toString () 
 {
 	StringStream msg;
 	msg << "SerialDatagram("

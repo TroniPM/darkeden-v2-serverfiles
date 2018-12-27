@@ -82,11 +82,11 @@ public :
 	void skip (uint len);// ;
 	
 	// fill stream (input buffer) from socket
-	uint fill ();// throw (IOException, Error);
-	uint fill_RAW ();// throw (IOException, Error);
+	uint fill ();// ;
+	uint fill_RAW ();// ;
 
 	// resize buffer
-	void resize (int size);// throw (IOException, Error);
+	void resize (int size);// ;
 	
 	// get buffer length
 	uint capacity () const { return m_BufferLen; }

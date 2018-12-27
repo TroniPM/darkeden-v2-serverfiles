@@ -59,8 +59,8 @@ public :
 
 	// write SerialDatagramPacket into datagram's internal buffer
 	void write (const char* buf, uint len);
-	void write (const string & buf);
-	void write (const SerialDatagramPacket* pPacket);
+	void write (string & buf);
+	void write (SerialDatagramPacket* pPacket);
 
 	void write (char   buf)  { write((char*)&buf, szchar  ); }
     void write (uchar  buf)  { write((char*)&buf, szuchar ); }
@@ -72,7 +72,7 @@ public :
     void write (ulong  buf)  { write((char*)&buf, szulong ); }
 
 	// get data
-	char* getData () throw () { return m_Data; }
+	char* getData ()  { return m_Data; }
 
 	// set data
 	void setData (char* data, uint len);
@@ -82,7 +82,7 @@ public :
 	uint getLength ()  { return m_Length; }
 
 	// get address
-	SOCKADDR* getAddress () throw () { return (SOCKADDR*)&m_SockAddr; }
+	SOCKADDR* getAddress () { return (SOCKADDR*)&m_SockAddr; }
 
 	// set address
 	void setAddress (SOCKADDR_IN* pSockAddr);
@@ -97,7 +97,7 @@ public :
 	uint getPort ()  { return ntohs(m_SockAddr.sin_port); }
 
 	// set port
-	void setPort (uint port) throw () { m_SockAddr.sin_port = htons(port); }
+	void setPort (uint port)  { m_SockAddr.sin_port = htons(port); }
 
 	string toString () ;
 
