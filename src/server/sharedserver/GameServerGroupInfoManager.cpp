@@ -19,7 +19,7 @@
 // constructor
 //----------------------------------------------------------------------
 GameServerGroupInfoManager::GameServerGroupInfoManager () 
-	throw ()
+	
 {
 }
 	
@@ -27,7 +27,7 @@ GameServerGroupInfoManager::GameServerGroupInfoManager ()
 // destructor
 //----------------------------------------------------------------------
 GameServerGroupInfoManager::~GameServerGroupInfoManager () 
-	throw ()
+	
 {
 	// hashmap 안의 각 pair 의 second, 즉 GameServerGroupInfo 객체만을 삭제하고
 	// pair 자체는 그대로 둔다. (GameServerGroupInfo가 힙에 생성되어 있다는 것에
@@ -136,7 +136,7 @@ void GameServerGroupInfoManager::load ()
 // add info 
 //----------------------------------------------------------------------
 void GameServerGroupInfoManager::addGameServerGroupInfo ( GameServerGroupInfo * pGameServerGroupInfo, WorldID_t WorldID ) 
-	throw ( DuplicatedException )
+	
 {
 	__BEGIN_TRY
 
@@ -154,7 +154,7 @@ void GameServerGroupInfoManager::addGameServerGroupInfo ( GameServerGroupInfo * 
 // delete info
 //----------------------------------------------------------------------
 void GameServerGroupInfoManager::deleteGameServerGroupInfo ( const ServerGroupID_t GroupID, WorldID_t WorldID ) 
-	throw ( NoSuchElementException )
+	
 {
 	__BEGIN_TRY
 		
@@ -182,7 +182,7 @@ void GameServerGroupInfoManager::deleteGameServerGroupInfo ( const ServerGroupID
 // get GameServerGroupinfo by ServerGroupID
 //----------------------------------------------------------------------
 GameServerGroupInfo * GameServerGroupInfoManager::getGameServerGroupInfo ( const ServerGroupID_t GroupID, WorldID_t WorldID ) const
-	throw ( NoSuchElementException )
+	
 {
 	__BEGIN_TRY
 
@@ -211,7 +211,7 @@ GameServerGroupInfo * GameServerGroupInfoManager::getGameServerGroupInfo ( const
 // get debug string
 //----------------------------------------------------------------------
 string GameServerGroupInfoManager::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 

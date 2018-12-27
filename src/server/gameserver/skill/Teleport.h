@@ -16,8 +16,8 @@
 class Teleport : public SkillHandler 
 {
 public:
-	Teleport() throw() {}
-	~Teleport() throw() {}
+	Teleport()  {}
+	~Teleport()  {}
 	
 public:
     string getSkillHandlerName()  { return "Teleport"; }

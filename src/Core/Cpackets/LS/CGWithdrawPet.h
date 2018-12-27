@@ -53,7 +53,7 @@ private:
 class CGWithdrawPetFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGWithdrawPet(); }
+	Packet* createPacket()  { return new CGWithdrawPet(); }
 	string getPacketName()  { return "CGWithdrawPet"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_WITHDRAW_PET; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + szBYTE; }

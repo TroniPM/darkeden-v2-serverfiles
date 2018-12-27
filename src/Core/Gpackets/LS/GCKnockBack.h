@@ -19,8 +19,8 @@
 class GCKnockBack : public Packet 
 {
 public:
-	GCKnockBack()  throw() {}
-	~GCKnockBack() throw() {}
+	GCKnockBack()   {}
+	~GCKnockBack()  {}
 
 public:
     void read(SocketInputStream & iStream) ;
@@ -47,8 +47,8 @@ public:
 	void setTargetY(ZoneCoord_t y) { m_TargetY = y; }
 	ZoneCoord_t getTargetY(void) const { return m_TargetY; }
 
-	void setOrigin(ZoneCoord_t x, ZoneCoord_t y) throw() { setOriginX(x); setOriginY(y); }
-	void setTarget(ZoneCoord_t x, ZoneCoord_t y) throw() { setTargetX(x); setTargetY(y); }
+	void setOrigin(ZoneCoord_t x, ZoneCoord_t y)  { setOriginX(x); setOriginY(y); }
+	void setTarget(ZoneCoord_t x, ZoneCoord_t y)  { setTargetX(x); setTargetY(y); }
 
 private:
 	ObjectID_t  m_ObjectID;
@@ -65,7 +65,7 @@ private:
 class GCKnockBackFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCKnockBack(); }
+	Packet* createPacket()  { return new GCKnockBack(); }
 	string getPacketName()  { return "GCKnockBack"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_KNOCK_BACK; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + szZoneCoord*4; }

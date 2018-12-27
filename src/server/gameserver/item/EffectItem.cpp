@@ -26,13 +26,13 @@ Mutex    EffectItem::m_Mutex;
 //////////////////////////////////////////////////////////////////////////////
 
 EffectItem::EffectItem()
-	throw()
+	
 {
 	setItemType(0);
 }
 
 EffectItem::EffectItem(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num)
-	throw()
+	
 {
 	setItemType(itemType);
 	setNum(Num);
@@ -150,7 +150,7 @@ void EffectItem::save(const string & ownerID, Storage storage, StorageID_t stora
 }
 
 string EffectItem::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -198,7 +198,7 @@ Weight_t EffectItem::getWeight() const
 //////////////////////////////////////////////////////////////////////////////
 
 string EffectItemInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "EffectItemInfo("

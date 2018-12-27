@@ -76,16 +76,16 @@ class CGRequestWebMarketFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGRequestWebMarketFactory() throw() {}
+	CGRequestWebMarketFactory()  {}
 	
 	// destructor
-	virtual ~CGRequestWebMarketFactory() throw() {}
+	virtual ~CGRequestWebMarketFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGRequestWebMarket(); }
+	Packet* createPacket()  { return new CGRequestWebMarket(); }
 
 	// get packet name
 	string getPacketName()  { return "CGRequestWebMarket"; }

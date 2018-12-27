@@ -16,8 +16,8 @@
 class AttackArms : public SkillHandler 
 {
 public:
-	AttackArms() throw() {}
-	~AttackArms() throw() {}
+	AttackArms()  {}
+	~AttackArms()  {}
 	
 public:
     string getSkillHandlerName()  { return "AttackArms"; }

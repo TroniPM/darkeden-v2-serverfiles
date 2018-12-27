@@ -59,7 +59,7 @@ private:
 class CGThrowBombFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGThrowBomb(); }
+	Packet* createPacket()  { return new CGThrowBomb(); }
 	string getPacketName()  { return "CGThrowBomb"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_THROW_BOMB; }
 	PacketSize_t getPacketMaxSize()  { return szCoord * 4 + szBYTE; }

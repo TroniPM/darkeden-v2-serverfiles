@@ -16,8 +16,8 @@
 class RapidFreeze : public SkillHandler 
 {
 public:
-	RapidFreeze() throw() {}
-	~RapidFreeze() throw() {}
+	RapidFreeze()  {}
+	~RapidFreeze()  {}
 	
 public:
     string getSkillHandlerName()  { return "RapidFreeze"; }

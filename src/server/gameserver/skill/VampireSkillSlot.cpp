@@ -8,7 +8,7 @@
 #include "DB.h"
 
 VampireSkillSlot::VampireSkillSlot()
-	throw()
+	
 {
 	__BEGIN_TRY
 	m_SkillType = 0;
@@ -18,7 +18,7 @@ VampireSkillSlot::VampireSkillSlot()
 }
 
 VampireSkillSlot::VampireSkillSlot(SkillType_t SkillType, ulong Interval, ulong CastingTime)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -30,7 +30,7 @@ VampireSkillSlot::VampireSkillSlot(SkillType_t SkillType, ulong Interval, ulong 
 }
 
 VampireSkillSlot::~VampireSkillSlot()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -144,7 +144,7 @@ void VampireSkillSlot::save()
 }
 
 Turn_t VampireSkillSlot::getRemainTurn( Timeval currentTime ) const
-	throw()
+	
 {
 	Turn_t remainTurn = ( m_runTime.tv_sec - currentTime.tv_sec ) * 10
 					  + ( m_runTime.tv_usec - currentTime.tv_usec ) / 100000;
@@ -153,7 +153,7 @@ Turn_t VampireSkillSlot::getRemainTurn( Timeval currentTime ) const
 }
 
 void VampireSkillSlot::setRunTime()
-	throw()
+	
 {
 	// 현재 시간을 받아온다.
 	getCurrentTime(m_runTime);
@@ -164,7 +164,7 @@ void VampireSkillSlot::setRunTime()
 }
 
 void VampireSkillSlot::setRunTime(Turn_t delay)
-	throw()
+	
 {
 	// 현재 시간을 받아온다.
 	getCurrentTime(m_runTime);

@@ -46,7 +46,7 @@ Connection::Connection ()
 //////////////////////////////////////////////////////////////////////
 
 Connection::Connection ( string host , string db , string user , string password , uint port )
-	throw ( SQLConnectException , Error )
+	
 : m_bConnected(false), m_Host(host), m_Port(port), m_Database(db), m_User(user), m_Password(password)
 {
 	__BEGIN_TRY
@@ -104,7 +104,7 @@ Connection::~Connection()
 //////////////////////////////////////////////////////////////////////
 
 void Connection::connect ( string host , string db , string user , string password , uint port )
-	throw ( SQLConnectException )
+	
 {
 	__BEGIN_TRY
 
@@ -129,7 +129,7 @@ void Connection::connect ( string host , string db , string user , string passwo
 //////////////////////////////////////////////////////////////////////
 
 void Connection::connect ()
-	throw ( SQLConnectException )
+	
 {
 	__BEGIN_TRY
 		
@@ -166,7 +166,7 @@ void Connection::connect ()
 //////////////////////////////////////////////////////////////////////
 
 void Connection::close () 
-	throw ( SQLConnectException , Error )
+	
 {
 	__BEGIN_TRY
 		
@@ -192,7 +192,7 @@ void Connection::close ()
 //////////////////////////////////////////////////////////////////////
 
 Statement * Connection::createStatement ()
-	throw ()
+	
 {
 	__BEGIN_TRY
 		

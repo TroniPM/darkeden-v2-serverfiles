@@ -38,7 +38,7 @@ DefaultOptionSetInfoManager::~DefaultOptionSetInfoManager()
 }
 
 void DefaultOptionSetInfoManager::load()
-	throw()
+	
 {
 	Statement* pStmt = NULL;
 	Result* pResult = NULL;

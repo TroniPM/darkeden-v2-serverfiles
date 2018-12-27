@@ -16,8 +16,8 @@
 class SpiralMegalith : public SkillHandler 
 {
 public:
-	SpiralMegalith() throw() {}
-	~SpiralMegalith() throw() {}
+	SpiralMegalith()  {}
+	~SpiralMegalith()  {}
 	
 public:
     string getSkillHandlerName()  { return "SpiralMegalith"; }

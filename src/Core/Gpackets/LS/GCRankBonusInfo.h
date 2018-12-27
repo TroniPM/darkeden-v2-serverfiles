@@ -56,10 +56,10 @@ public :
 	BYTE getListNum()  { return m_RankBonusInfoList.size(); }
 
     // add
-	void addListElement( DWORD rankBonusType ) throw() { m_RankBonusInfoList.push_back( rankBonusType ); }
+	void addListElement( DWORD rankBonusType )  { m_RankBonusInfoList.push_back( rankBonusType ); }
 	
 	// pop front Element in Status List
-	DWORD popFrontListElement() throw()
+	DWORD popFrontListElement() 
 	{
 		if ( !m_RankBonusInfoList.empty() )
 		{
@@ -92,7 +92,7 @@ class GCRankBonusInfoFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCRankBonusInfo(); }
+	Packet* createPacket()  { return new GCRankBonusInfo(); }
 
 	// get packet name
 	string getPacketName()  { return "GCRankBonusInfo"; }

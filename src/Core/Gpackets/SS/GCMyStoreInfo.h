@@ -18,7 +18,7 @@
 class GCMyStoreInfo : public Packet
 {
 public:
-	GCMyStoreInfo() throw() : m_OpenUI(1) { }
+	GCMyStoreInfo()  : m_OpenUI(1) { }
 	virtual ~GCMyStoreInfo() ;
 
 public:
@@ -49,7 +49,7 @@ private:
 class GCMyStoreInfoFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCMyStoreInfo(); }
+	Packet* createPacket()  { return new GCMyStoreInfo(); }
 	string getPacketName()  { return "GCMyStoreInfo"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_MY_STORE_INFO; }
 	PacketSize_t getPacketMaxSize() 

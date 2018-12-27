@@ -84,7 +84,7 @@ class CGCrashReportFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGCrashReport(); }
+	Packet* createPacket()  { return new CGCrashReport(); }
 
 	// get packet name
 	string getPacketName()  { return "CGCrashReport"; }

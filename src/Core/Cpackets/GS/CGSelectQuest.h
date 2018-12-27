@@ -48,7 +48,7 @@ public:
 
 	// get/set QuestID
 	QuestID_t getQuestID()  { return m_QuestID; }
-	void setQuestID( QuestID_t QuestID ) throw() { m_QuestID = QuestID; }
+	void setQuestID( QuestID_t QuestID )  { m_QuestID = QuestID; }
 
 	ObjectID_t	getNPCObjectID() const { return m_NPCOID; }
 	void		setNPCObjectID(ObjectID_t oid) { m_NPCOID = oid; }
@@ -77,16 +77,16 @@ class CGSelectQuestFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGSelectQuestFactory() throw() {}
+	CGSelectQuestFactory()  {}
 	
 	// destructor
-	virtual ~CGSelectQuestFactory() throw() {}
+	virtual ~CGSelectQuestFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGSelectQuest(); }
+	Packet* createPacket()  { return new CGSelectQuest(); }
 
 	// get packet name
 	string getPacketName()  { return "CGSelectQuest"; }

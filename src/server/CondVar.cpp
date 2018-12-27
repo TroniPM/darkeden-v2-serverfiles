@@ -38,7 +38,7 @@ CondVar::CondVar ( CondVarAttr * attr )
 //
 //////////////////////////////////////////////////////////////////////
 CondVar::~CondVar () 
-	throw ( CondVarException , Error )
+	
 {
 	__BEGIN_TRY
 

@@ -17,7 +17,7 @@ class PlumyBoar : public SkillHandler
 {
 public:
 	PlumyBoar() ;
-	~PlumyBoar() throw() {}
+	~PlumyBoar()  {}
 	
 public:
     string getSkillHandlerName()  { return "PlumyBoar"; }

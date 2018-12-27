@@ -16,8 +16,8 @@
 class RingOfFlare : public SkillHandler 
 {
 public:
-	RingOfFlare() throw() {}
-	~RingOfFlare() throw() {}
+	RingOfFlare()  {}
+	~RingOfFlare()  {}
 	
 public:
     string getSkillHandlerName()  { return "RingOfFlare"; }

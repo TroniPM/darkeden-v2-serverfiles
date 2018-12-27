@@ -38,7 +38,7 @@ public:
 
 	WORD getSize()  { return m_Creatures.size(); }
 
-	hash_map< ObjectID_t, Creature* > & getCreatures() throw() { return m_Creatures; }
+	hash_map< ObjectID_t, Creature* > & getCreatures()  { return m_Creatures; }
 	const hash_map< ObjectID_t, Creature* > & getCreatures()  { return m_Creatures; }
 
 	string toString() ;

@@ -38,7 +38,7 @@ public:
 	virtual string toString() ;
 
 public:
-	void setDelay(Turn_t delay) throw() { m_Delay = delay; }
+	void setDelay(Turn_t delay)  { m_Delay = delay; }
 	Turn_t getDelay()  { return m_Delay; }
 
 	EffectClass getAttackEffectClass()  { return m_AttackEffect; }

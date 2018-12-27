@@ -26,10 +26,10 @@ public:
 
 public:
 	ScriptID_t getStartScriptID()  { return m_StartScriptID; }
-	void setStartScriptID(ScriptID_t scriptID) throw() { m_StartScriptID = scriptID; }
+	void setStartScriptID(ScriptID_t scriptID)  { m_StartScriptID = scriptID; }
 
 	ScriptID_t getEndScriptID()  { return m_EndScriptID; }
-	void setEndScriptID(ScriptID_t scriptID) throw() { m_EndScriptID = scriptID; }
+	void setEndScriptID(ScriptID_t scriptID)  { m_EndScriptID = scriptID; }
 
 private:
 	ScriptID_t m_StartScriptID; // 말할 대사 아이디 시작 ID

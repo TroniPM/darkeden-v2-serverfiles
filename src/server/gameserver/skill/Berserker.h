@@ -16,8 +16,8 @@
 class Berserker : public SkillHandler 
 {
 public:
-	Berserker() throw() {}
-	~Berserker() throw() {}
+	Berserker()  {}
+	~Berserker()  {}
 	
 public:
     string getSkillHandlerName()  { return "Berserker"; }

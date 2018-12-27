@@ -24,7 +24,7 @@ Mutex    VampireBracelet::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 VampireBracelet::VampireBracelet()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
@@ -33,7 +33,7 @@ VampireBracelet::VampireBracelet()
 }
 
 VampireBracelet::VampireBracelet(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_ItemType(itemType), m_OptionType(optionType), m_Durability(0)
 {
 	setItemType(itemType);
@@ -177,7 +177,7 @@ void VampireBracelet::save(const string & ownerID, Storage storage, StorageID_t 
 // get debug string
 //--------------------------------------------------------------------------------
 string VampireBracelet::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -262,7 +262,7 @@ Protection_t VampireBracelet::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string VampireBraceletInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

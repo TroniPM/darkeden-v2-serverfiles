@@ -43,7 +43,7 @@ public:
 
 	// get / set WorldID
 	WorldID_t getWorldID()  { return m_WorldID; }
-	void setWorldID(WorldID_t WorldID) throw() { m_WorldID = WorldID; }
+	void setWorldID(WorldID_t WorldID)  { m_WorldID = WorldID; }
 	
 	// get packet's debug string
 	string toString()  { return "CLSelectWorld"; }
@@ -68,7 +68,7 @@ class CLSelectWorldFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CLSelectWorld(); }
+	Packet* createPacket()  { return new CLSelectWorld(); }
 
 	// get packet name
 	string getPacketName()  { return "CLSelectWorld"; }

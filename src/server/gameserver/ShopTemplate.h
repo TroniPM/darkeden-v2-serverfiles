@@ -30,13 +30,13 @@ public:
 
 public:
 	ShopTemplateID_t getID(void)  { return m_ID; }
-	void setID(ShopTemplateID_t id) throw() { m_ID = id; }
+	void setID(ShopTemplateID_t id)  { m_ID = id; }
 	
 	ShopRackType_t getShopType(void)  { return m_RackType; }
-	void setShopType(const ShopRackType_t type) throw() { m_RackType = type; }
+	void setShopType(const ShopRackType_t type)  { m_RackType = type; }
 
 	int getItemClass(void)  { return m_ItemClass; }
-	void setItemClass(int iclass) throw() { m_ItemClass = iclass; }
+	void setItemClass(int iclass)  { m_ItemClass = iclass; }
 	
 	ItemType_t getMinItemType(void)  { return m_MinItemType; }
 	void setMinItemType(ItemType_t t) { m_MinItemType = t; }

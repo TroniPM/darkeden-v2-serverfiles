@@ -39,10 +39,10 @@ public:
 	void setLevel(Level_t Level) ;
 
 	EffectClass getClientEffectClass()  { return m_ClientEffectClass; }
-	void setClientEffectClass(EffectClass effectClass) throw() { m_ClientEffectClass = effectClass; }
+	void setClientEffectClass(EffectClass effectClass)  { m_ClientEffectClass = effectClass; }
 
 	Damage_t getDamage()  { return m_Damage; }
-	void setDamage(Damage_t Damage) throw() { m_Damage = Damage; }
+	void setDamage(Damage_t Damage)  { m_Damage = Damage; }
 
 private:
 	Level_t 		m_Level;				// 스킬 레벨

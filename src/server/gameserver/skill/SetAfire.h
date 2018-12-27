@@ -16,8 +16,8 @@
 class SetAfire: public SkillHandler 
 {
 public:
-	SetAfire() throw() {}
-	~SetAfire() throw() {}
+	SetAfire()  {}
+	~SetAfire()  {}
 	
 public:
     string getSkillHandlerName()  { return "SetAfire"; }

@@ -30,7 +30,7 @@ public:
 
 public:
 	ZoneID_t getZoneID()   { return m_ZoneID; }
-	void setZoneID(ZoneID_t ZoneID) throw() { m_ZoneID = ZoneID; }
+	void setZoneID(ZoneID_t ZoneID)  { m_ZoneID = ZoneID; }
 
 	Coord_t getX(void) const { return m_X; }
 	void setX(Coord_t X) { m_X = X; }
@@ -51,7 +51,7 @@ private:
 
 class CGSelectWayPointFactory : public PacketFactory 
 {
-	Packet* createPacket() throw() { return new CGSelectWayPoint(); }
+	Packet* createPacket()  { return new CGSelectWayPoint(); }
 	string getPacketName()  { return "CGSelectWayPoint"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_SELECT_WAYPOINT; }
 	PacketSize_t getPacketMaxSize()  { return szZoneID + szCoord*2; }

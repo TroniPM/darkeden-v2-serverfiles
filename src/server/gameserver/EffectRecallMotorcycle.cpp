@@ -143,7 +143,7 @@ void EffectRecallMotorcycle::unaffect ()
 // get debug string
 //----------------------------------------------------------------------
 string EffectRecallMotorcycle::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 

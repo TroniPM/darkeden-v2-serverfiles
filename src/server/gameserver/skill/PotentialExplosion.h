@@ -16,8 +16,8 @@
 class PotentialExplosion : public SkillHandler 
 {
 public:
-	PotentialExplosion() throw() {}
-	~PotentialExplosion() throw() {}
+	PotentialExplosion()  {}
+	~PotentialExplosion()  {}
 
 public:
     string getSkillHandlerName()  { return "PotentialExplosion"; }

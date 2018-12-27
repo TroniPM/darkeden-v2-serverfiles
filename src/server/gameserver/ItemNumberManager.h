@@ -64,12 +64,12 @@ extern ItemNumberManager* g_pItemNumberManager;
 #endif
 
 ItemNumberManager::ItemNumberManager() 
-	throw()
+	
 {
 }
 
 ItemNumberManager::~ItemNumberManager() 
-	throw()
+	
 {
 }
 

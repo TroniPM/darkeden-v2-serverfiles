@@ -25,14 +25,14 @@ Mutex    BeltZap::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 BeltZap::BeltZap()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
 }
 
 BeltZap::BeltZap(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	setItemType(itemType);
 	setOptionType(optionType);
@@ -170,7 +170,7 @@ void BeltZap::save(const string & ownerID, Storage storage, StorageID_t storageI
 // get debug string
 //--------------------------------------------------------------------------------
 string BeltZap::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -253,7 +253,7 @@ Protection_t BeltZap::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string BeltZapInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

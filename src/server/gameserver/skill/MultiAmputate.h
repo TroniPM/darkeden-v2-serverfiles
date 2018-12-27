@@ -16,8 +16,8 @@
 class MultiAmputate : public SkillHandler 
 {
 public:
-	MultiAmputate() throw() {}
-	~MultiAmputate() throw() {}
+	MultiAmputate()  {}
+	~MultiAmputate()  {}
 	
 public:
     string getSkillHandlerName()  { return "MultiAmputate"; }

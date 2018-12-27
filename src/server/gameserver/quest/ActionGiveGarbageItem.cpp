@@ -113,7 +113,7 @@ void ActionGiveGarbageEventItem::execute (Creature * pCreature1 , Creature * pCr
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionGiveGarbageEventItem::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

@@ -16,8 +16,8 @@
 class EmissionWater : public SkillHandler 
 {
 public:
-	EmissionWater() throw() {}
-	~EmissionWater() throw() {}
+	EmissionWater()  {}
+	~EmissionWater()  {}
 	
 public:
     string getSkillHandlerName()  { return "EmissionWater"; }

@@ -16,8 +16,8 @@
 class ChargingAttack : public SkillHandler 
 {
 public:
-	ChargingAttack() throw() {}
-	~ChargingAttack() throw() {}
+	ChargingAttack()  {}
+	~ChargingAttack()  {}
 	
 public:
     string getSkillHandlerName()  { return "ChargingAttack"; }

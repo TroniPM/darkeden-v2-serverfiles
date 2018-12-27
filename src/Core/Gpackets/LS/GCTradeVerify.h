@@ -72,7 +72,7 @@ public:
 
 public:
 	BYTE getCode()  { return m_Code; }
-	void setCode(BYTE code) throw() { m_Code = code; }
+	void setCode(BYTE code)  { m_Code = code; }
 
 private:
 	BYTE       m_Code;           // ÄÚµå
@@ -89,7 +89,7 @@ private:
 class GCTradeVerifyFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCTradeVerify(); }
+	Packet* createPacket()  { return new GCTradeVerify(); }
 	string getPacketName()  { return "GCTradeVerify"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_TRADE_VERIFY; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE; }

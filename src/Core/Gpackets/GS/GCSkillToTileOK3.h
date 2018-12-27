@@ -64,15 +64,15 @@ public :
 
 	// get / set ObjectID 
 	CEffectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 	// get / set SkillType
 	SkillType_t getSkillType()  { return m_SkillType; }
-	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
+	void setSkillType(SkillType_t SkillType)  { m_SkillType = SkillType; }
 
 	// get / set Duration
 //	Duration_t getDuration()  { return m_Duration; }
-//	void setDuration(Duration_t Duration) throw() { m_Duration = Duration; }
+//	void setDuration(Duration_t Duration)  { m_Duration = Duration; }
 
 	// get / set X, Y
 	Coord_t getX() { return m_X; }
@@ -84,16 +84,16 @@ public :
 	// get / set Creature List Number
 //	BYTE getCListNum()  { return m_CListNum; }
 
-//	void setCListNum(BYTE CListNum) throw() { m_CListNum = CListNum; }
+//	void setCListNum(BYTE CListNum)  { m_CListNum = CListNum; }
 
 	// add / delete  Creature List
 //	void addCListElement(ObjectID_t ObjectID) ;
 
 	// Clear CreatureList
-//	void clearCList() throw() { m_CList.clear(); m_CListNum = 0; }
+//	void clearCList()  { m_CList.clear(); m_CListNum = 0; }
 
 	// pop front Element in Status List
-//	ObjectID_t popCListElement() throw() { ObjectID_t CreatureList = m_CList.front(); m_CList.pop_front(); return CreatureList; }
+//	ObjectID_t popCListElement()  { ObjectID_t CreatureList = m_CList.front(); m_CList.pop_front(); return CreatureList; }
 
 	BYTE getGrade() const { return m_Grade; }
 	void setGrade( BYTE grade ) { m_Grade = grade; }
@@ -137,16 +137,16 @@ class GCSkillToTileOK3Factory : public PacketFactory {
 public :
 	
 	// constructor
-	GCSkillToTileOK3Factory() throw() {}
+	GCSkillToTileOK3Factory()  {}
 	
 	// destructor
-	virtual ~GCSkillToTileOK3Factory() throw() {}
+	virtual ~GCSkillToTileOK3Factory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCSkillToTileOK3(); }
+	Packet* createPacket()  { return new GCSkillToTileOK3(); }
 
 	// get packet name
 	string getPacketName()  { return "GCSkillToTileOK3"; }

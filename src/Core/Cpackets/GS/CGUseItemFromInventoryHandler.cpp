@@ -1129,7 +1129,7 @@ void CGUseItemFromInventoryHandler::executeSlayerPortalItem(CGUseItemFromInvento
 }
 
 void CGUseItemFromInventoryHandler::executeOustersSummonItem(CGUseItemFromInventory* pPacket, Player* pPlayer)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_DEBUG_EX __BEGIN_TRY
 
@@ -1277,7 +1277,7 @@ void CGUseItemFromInventoryHandler::executeOustersSummonItem(CGUseItemFromInvent
 }
 
 void CGUseItemFromInventoryHandler::executeOustersWingItem(CGUseItemFromInventory* pPacket, Player* pPlayer)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_DEBUG_EX __BEGIN_TRY
 
@@ -1759,7 +1759,7 @@ static const Effect::EffectClass FirecrackerEffects[] =
 #endif
 
 void CGUseItemFromInventoryHandler::executeFirecraker(CGUseItemFromInventory* pPacket, Player* pPlayer)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -1974,7 +1974,7 @@ void CGUseItemFromInventoryHandler::executeFirecraker(CGUseItemFromInventory* pP
 }
 
 void CGUseItemFromInventoryHandler::executeDyePotion(CGUseItemFromInventory* pPacket, Player* pPlayer) 
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -2976,7 +2976,7 @@ bool sendCannotUse( CGUseItemFromInventory* pPacket, Player* pPlayer )
 
 #endif
 
-void CGUseItemFromInventoryHandler::executeResurrectItem(CGUseItemFromInventory* pPacket, Player* pPlayer) throw(ProtocolException, Error)
+void CGUseItemFromInventoryHandler::executeResurrectItem(CGUseItemFromInventory* pPacket, Player* pPlayer) 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -3188,7 +3188,7 @@ void CGUseItemFromInventoryHandler::executeResurrectItem(CGUseItemFromInventory*
 }
 
 
-void CGUseItemFromInventoryHandler::executeTranslator(CGUseItemFromInventory* pPacket, Player* pPlayer) throw(ProtocolException, Error)
+void CGUseItemFromInventoryHandler::executeTranslator(CGUseItemFromInventory* pPacket, Player* pPlayer) 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -3270,7 +3270,7 @@ void CGUseItemFromInventoryHandler::executeTranslator(CGUseItemFromInventory* pP
     __END_DEBUG_EX __END_CATCH
 }
 
-void CGUseItemFromInventoryHandler::executeEffectItem(CGUseItemFromInventory* pPacket, Player* pPlayer) throw(ProtocolException, Error)
+void CGUseItemFromInventoryHandler::executeEffectItem(CGUseItemFromInventory* pPacket, Player* pPlayer) 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -3415,7 +3415,7 @@ void CGUseItemFromInventoryHandler::executeEffectItem(CGUseItemFromInventory* pP
 }
 
 void CGUseItemFromInventoryHandler::executePetItem(CGUseItemFromInventory* pPacket, Player* pPlayer)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -3516,7 +3516,7 @@ void CGUseItemFromInventoryHandler::executePetItem(CGUseItemFromInventory* pPack
 }
 	
 void CGUseItemFromInventoryHandler::executePetFood(CGUseItemFromInventory* pPacket, Player* pPlayer)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -4015,7 +4015,7 @@ void CGUseItemFromInventoryHandler::executeEventGiftBox(CGUseItemFromInventory* 
 }
 
 void CGUseItemFromInventoryHandler::executeTrapItem(CGUseItemFromInventory* pPacket, Player* pPlayer)
-	throw(ProtocolException, Error)
+	
 {
 #ifdef __GAME_SERVER__
 	Assert(pPacket != NULL);
@@ -4142,7 +4142,7 @@ void CGUseItemFromInventoryHandler::executeTrapItem(CGUseItemFromInventory* pPac
 
 }
 void CGUseItemFromInventoryHandler::executeSubInventory(CGUseItemFromInventory* pPacket, Player* pPlayer)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -4224,7 +4224,7 @@ void CGUseItemFromInventoryHandler::executeSubInventory(CGUseItemFromInventory* 
 	__END_CATCH
 }
 void CGUseItemFromInventoryHandler::executeSkillBook(CGUseItemFromInventory* pPacket, Player* pPlayer)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 

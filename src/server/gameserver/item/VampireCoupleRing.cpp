@@ -29,13 +29,13 @@ Mutex    VampireCoupleRing::m_Mutex;
 //////////////////////////////////////////////////////////////////////////////
 
 VampireCoupleRing::VampireCoupleRing()
-	throw()
+	
 {
 	m_ItemType = 0;
 }
 
 VampireCoupleRing::VampireCoupleRing(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 : m_ItemType(itemType), m_OptionType( optionType )
 {
 	__BEGIN_TRY
@@ -154,7 +154,7 @@ void VampireCoupleRing::save(const string & ownerID, Storage storage, StorageID_
 }
 
 string VampireCoupleRing::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "VampireCoupleRing("
@@ -239,7 +239,7 @@ bool VampireCoupleRing::hasPartnerItem()
 //////////////////////////////////////////////////////////////////////////////
 
 string VampireCoupleRingInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "VampireCoupleRingInfo("

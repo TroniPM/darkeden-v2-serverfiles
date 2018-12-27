@@ -16,8 +16,8 @@
 class TheRoarOfAwakenWarrior : public SkillHandler 
 {
 public:
-	TheRoarOfAwakenWarrior() throw() {}
-	~TheRoarOfAwakenWarrior() throw() {}
+	TheRoarOfAwakenWarrior()  {}
+	~TheRoarOfAwakenWarrior()  {}
 	
 public :
     string getSkillHandlerName()  { return "TheRoarOfAwakenWarrior"; }

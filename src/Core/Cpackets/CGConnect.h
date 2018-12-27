@@ -57,15 +57,15 @@ public:
 
 	// get/set key
 	DWORD getKey()  { return m_Key; }
-	void setKey(DWORD key) throw() { m_Key = key; }
+	void setKey(DWORD key)  { m_Key = key; }
 
 	// get/set PCType
 	PCType getPCType()  { return m_PCType; }
-	void setPCType(PCType pcType) throw() { m_PCType = pcType; }
+	void setPCType(PCType pcType)  { m_PCType = pcType; }
 	
 	// get/set pc name
 	string getPCName()  { return m_PCName; }
-	void setPCName(string pcName) throw() { m_PCName = pcName; }
+	void setPCName(string pcName)  { m_PCName = pcName; }
 
 	const BYTE* getMacAddress() const { return m_MacAddress; }
 
@@ -97,7 +97,7 @@ class CGConnectFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGConnect(); }
+	Packet* createPacket()  { return new CGConnect(); }
 
 	// get packet name
 	string getPacketName()  { return "CGConnect"; }

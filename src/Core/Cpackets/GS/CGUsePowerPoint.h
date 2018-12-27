@@ -21,9 +21,9 @@ public:
 	~CGUsePowerPoint ();
 	
 public:
-    void read ( SocketInputStream & iStream ) throw ( ProtocolException , Error );
+    void read ( SocketInputStream & iStream ) ;
     void write ( SocketOutputStream & oStream ) ;
-	void execute ( Player * pPlayer ) throw ( ProtocolException , Error );
+	void execute ( Player * pPlayer ) ;
     PacketID_t getPacketID ()  { return PACKET_CG_USE_POWER_POINT; }
 	PacketSize_t getPacketSize ()  { return 0; }
 	string getPacketName ()  { return "CGUsePowerPoint"; }
@@ -37,7 +37,7 @@ public:
 class CGUsePowerPointFactory : public PacketFactory 
 {
 public:
-	Packet * createPacket () throw () { return new CGUsePowerPoint(); }
+	Packet * createPacket ()  { return new CGUsePowerPoint(); }
 	string getPacketName ()  { return "CGUsePowerPoint"; }
 	PacketID_t getPacketID ()  { return Packet::PACKET_CG_USE_POWER_POINT; }
 	PacketSize_t getPacketMaxSize ()  { return 0; }

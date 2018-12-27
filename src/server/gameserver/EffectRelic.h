@@ -31,10 +31,10 @@ public:
 
 public:
 	HP_t getPoint()  { return m_Point; }
-	void setPoint(HP_t Point) throw() { m_Point = Point; }
+	void setPoint(HP_t Point)  { m_Point = Point; }
 
 	Turn_t getTick()  { return m_Tick; }
-	void   setTick(Turn_t Tick) throw() { m_Tick = Tick; }
+	void   setTick(Turn_t Tick)  { m_Tick = Tick; }
 
 private:
 	HP_t   m_Point;  // 회복 에너지량

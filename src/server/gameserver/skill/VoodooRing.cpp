@@ -12,7 +12,7 @@
 #include "Gpackets/GCAddEffect.h"
 #include "Gpackets/GCStatusCurrentHP.h"
 VoodooRing::VoodooRing()
-	throw()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH

@@ -67,7 +67,7 @@ void SharedServerManager::stop ()
 // main method
 //////////////////////////////////////////////////////////////////////
 void SharedServerManager::run () 
-	throw ()
+	
 {
 	try {
 
@@ -202,7 +202,7 @@ void SharedServerManager::run ()
 // send packet to shared server
 //////////////////////////////////////////////////////////////////////
 void SharedServerManager::sendPacket ( Packet* pPacket )
-	throw (ProtocolException , Error)
+	
 {
 	__ENTER_CRITICAL_SECTION(m_Mutex)
 		

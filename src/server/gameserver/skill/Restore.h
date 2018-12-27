@@ -18,8 +18,8 @@ class NPC;
 class Restore: public SkillHandler 
 {
 public:
-	Restore() throw() {}
-	~Restore() throw() {}
+	Restore()  {}
+	~Restore()  {}
 	
 public:
     string getSkillHandlerName()  { return "Restore"; }

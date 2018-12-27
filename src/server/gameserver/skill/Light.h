@@ -16,8 +16,8 @@
 class Light: public SkillHandler 
 {
 public:
-	Light() throw() {}
-	~Light() throw() {}
+	Light()  {}
+	~Light()  {}
 	
 public:
     string getSkillHandlerName()  { return "Light"; }

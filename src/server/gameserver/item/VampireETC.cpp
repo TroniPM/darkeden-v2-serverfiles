@@ -24,13 +24,13 @@ Mutex    VampireETC::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 VampireETC::VampireETC()
-	throw()
+	
 {
 	m_ItemType = 0;
 }
 
 VampireETC::VampireETC(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	m_ItemType = itemType;
 	m_Num = 1;
@@ -158,7 +158,7 @@ void VampireETC::save(const string & ownerID, Storage storage, StorageID_t stora
 // get debug string
 //--------------------------------------------------------------------------------
 string VampireETC::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "VampireETC("
@@ -216,7 +216,7 @@ Weight_t VampireETC::getWeight() const
 // get debug string
 //--------------------------------------------------------------------------------
 string VampireETCInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

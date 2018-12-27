@@ -23,7 +23,7 @@ void PCCorpse::transportItems (Creature* pCreature)
 // get debug string
 //----------------------------------------------------------------------
 string PCCorpse::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 

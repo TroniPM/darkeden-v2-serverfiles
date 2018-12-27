@@ -11,7 +11,7 @@
 //////////////////////////////////////////////////////////////////////
 
 GCRequestedIP::GCRequestedIP () 
-     throw ()
+     
 {
 	__BEGIN_TRY
 
@@ -21,14 +21,14 @@ GCRequestedIP::GCRequestedIP ()
 }
 
 GCRequestedIP::~GCRequestedIP () 
-    throw ()
+    
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void GCRequestedIP::read (SocketInputStream & iStream) 
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY
 
@@ -66,7 +66,7 @@ void GCRequestedIP::write (SocketOutputStream & oStream)
 }
 
 void GCRequestedIP::execute (Player * pPlayer) 
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY
 		

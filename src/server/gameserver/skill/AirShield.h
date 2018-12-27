@@ -16,8 +16,8 @@
 class AirShield : public SkillHandler 
 {
 public:
-	AirShield() throw() {}
-	~AirShield() throw() {}
+	AirShield()  {}
+	~AirShield()  {}
 	
 public:
     string getSkillHandlerName()  { return "AirShield"; }

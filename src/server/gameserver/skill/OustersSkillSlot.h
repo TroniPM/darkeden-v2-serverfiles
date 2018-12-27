@@ -29,19 +29,19 @@ public:
 	virtual void create(const string & ownerID);
 	virtual void destroy(const string & ownerID);
 
-    SkillType_t getSkillType() throw() { return m_SkillType; }
-    void setSkillType(SkillType_t Type) throw() { m_SkillType = Type; }
+    SkillType_t getSkillType()  { return m_SkillType; }
+    void setSkillType(SkillType_t Type)  { m_SkillType = Type; }
 
 	ExpLevel_t getExpLevel()  { return m_ExpLevel; }
-	void setExpLevel( ExpLevel_t ExpLevel ) throw() { m_ExpLevel = ExpLevel; }
+	void setExpLevel( ExpLevel_t ExpLevel )  { m_ExpLevel = ExpLevel; }
 
-    ulong getInterval() throw() { return m_Interval; }
-    void setInterval(ulong Interval) throw() { m_Interval = Interval; }
+    ulong getInterval()  { return m_Interval; }
+    void setInterval(ulong Interval)  { m_Interval = Interval; }
 
-	Turn_t getCastingTime() throw() { return m_CastingTime; }
-	void setCastingTime(Turn_t CastingTime) throw() { m_CastingTime = CastingTime; }
+	Turn_t getCastingTime()  { return m_CastingTime; }
+	void setCastingTime(Turn_t CastingTime)  { m_CastingTime = CastingTime; }
 
-    Timeval getRunTime() throw() { return m_runTime; }
+    Timeval getRunTime()  { return m_runTime; }
 	void setRunTime() ;
 	void setRunTime(Turn_t delay) ;
 

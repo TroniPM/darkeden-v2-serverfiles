@@ -27,14 +27,14 @@ Mutex    VampireTuningItem::m_Mutex;
 //////////////////////////////////////////////////////////////////////////////
 
 VampireTuningItem::VampireTuningItem()
-	throw()
+	
 {
 	m_ItemType = 0;
 	m_Num = 1;
 }
 
 VampireTuningItem::VampireTuningItem(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num)
-	throw()
+	
 {
 	m_ItemType = itemType;
 	m_Num = Num;
@@ -151,7 +151,7 @@ void VampireTuningItem::save(const string & ownerID, Storage storage, StorageID_
 }
 
 string VampireTuningItem::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -198,7 +198,7 @@ Weight_t VampireTuningItem::getWeight() const
 //////////////////////////////////////////////////////////////////////////////
 
 string VampireTuningItemInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "VampireTuningItemInfo("

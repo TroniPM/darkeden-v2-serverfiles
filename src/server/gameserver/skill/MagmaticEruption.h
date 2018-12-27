@@ -16,8 +16,8 @@
 class MagmaticEruption : public SkillHandler 
 {
 public:
-	MagmaticEruption() throw() {}
-	~MagmaticEruption() throw() {}
+	MagmaticEruption()  {}
+	~MagmaticEruption()  {}
 	
 public:
     string getSkillHandlerName()  { return "MagmaticEruption"; }

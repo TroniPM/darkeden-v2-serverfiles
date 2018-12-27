@@ -90,7 +90,7 @@ void ActionGiveEventQuestScript::execute (Creature * pCreature1 , Creature * pCr
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionGiveEventQuestScript::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

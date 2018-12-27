@@ -152,7 +152,7 @@ QuestInfo.o: QuestInfo.cpp QuestInfo.h ../../../Core/Types.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../../Core/EffectInfo.h /usr/include/STL/bitset \
+ ../../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -312,7 +312,7 @@ GatherItemQuestInfo.o: GatherItemQuestInfo.cpp GatherItemQuestStatus.h \
  ../../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
  /usr/include/getopt.h ../EffectManager.h ../../../Core/EffectInfo.h \
- /usr/include/STL/bitset ../../../Core/Gpackets/GCQuestStatus.h \
+ /usr/include/c++/7/bitset ../../../Core/Gpackets/GCQuestStatus.h \
  GatherItemQuestInfo.h ../PlayerCreature.h ../Creature.h \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
@@ -549,7 +549,7 @@ SlayerWeaponRewardClass.o: SlayerWeaponRewardClass.cpp \
  /usr/include/sys/time.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
  /usr/include/getopt.h ../../../Core/EffectInfo.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h ../Garbage.h ../RankBonus.h ../ExpFwd.h \
@@ -743,7 +743,7 @@ ItemRewardInfo.o: ItemRewardInfo.cpp ItemRewardInfo.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h RewardInfo.h \
  ../../../Core/Gpackets/GCNPCResponse.h ../../../Core/PacketFactory.h \
@@ -826,7 +826,7 @@ QuestAdvanceRewardInfo.o: QuestAdvanceRewardInfo.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h RewardInfo.h \
  ../../../Core/Gpackets/GCNPCResponse.h ../../../Core/PacketFactory.h \
@@ -894,7 +894,7 @@ AnotherQuestRewardInfo.o: AnotherQuestRewardInfo.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h RewardInfo.h \
  ../../../Core/Gpackets/GCNPCResponse.h ../../../Core/PacketFactory.h \
@@ -1021,7 +1021,7 @@ QuestInfoManager.o: QuestInfoManager.cpp QuestInfoManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h ../EffectManager.h \
- ../../../Core/EffectInfo.h /usr/include/STL/bitset RewardInfo.h \
+ ../../../Core/EffectInfo.h /usr/include/c++/7/bitset RewardInfo.h \
  MonsterKillQuestInfo.h MonsterKillQuestStatus.h QuestStatus.h \
  ../../../Core/VSDateTime.h ../../../Core/Gpackets/GCQuestStatus.h \
  GatherItemQuestInfo.h GatherItemQuestStatus.h QuestManager.h \
@@ -1172,7 +1172,7 @@ EventQuestInfoManager.o: EventQuestInfoManager.cpp \
  ../../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
  /usr/include/getopt.h ../EffectManager.h ../../../Core/EffectInfo.h \
- /usr/include/STL/bitset GatherItemQuestStatus.h MeetNPCQuestInfo.h \
+ /usr/include/c++/7/bitset GatherItemQuestStatus.h MeetNPCQuestInfo.h \
  MeetNPCQuestStatus.h MiniGameQuestInfo.h MiniGameQuestStatus.h \
  ../../database/DB.h ../../database/DatabaseManager.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
@@ -1240,7 +1240,7 @@ RewardClassInfoManager.o: RewardClassInfoManager.cpp \
  /usr/include/sys/time.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
  /usr/include/getopt.h ../EffectManager.h ../../../Core/EffectInfo.h \
- /usr/include/STL/bitset RewardInfo.h ../../database/DB.h \
+ /usr/include/c++/7/bitset RewardInfo.h ../../database/DB.h \
  ../../database/DatabaseManager.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../Mutex.h \
@@ -1311,7 +1311,7 @@ SimpleQuestRewardManager.o: SimpleQuestRewardManager.cpp \
  ../Effect.h ../../Timeval.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
  /usr/include/getopt.h ../EffectManager.h ../../../Core/EffectInfo.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  RandomRewardClass.h RewardClass.h SlayerWeaponRewardClass.h \
  ItemRewardInfo.h RewardInfo.h
@@ -1374,7 +1374,7 @@ QuestManager.o: QuestManager.cpp QuestManager.h ../../../Core/Types.h \
  ../../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
  /usr/include/getopt.h ../EffectManager.h ../../../Core/EffectInfo.h \
- /usr/include/STL/bitset MeetNPCQuestStatus.h MiniGameQuestStatus.h \
+ /usr/include/c++/7/bitset MeetNPCQuestStatus.h MiniGameQuestStatus.h \
  QuestInfoManager.h EventQuestAdvance.h ../PlayerCreature.h \
  ../Creature.h ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
@@ -1559,7 +1559,7 @@ GatherItemQuestStatus.o: GatherItemQuestStatus.cpp \
  ../../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
  /usr/include/getopt.h ../EffectManager.h ../../../Core/EffectInfo.h \
- /usr/include/STL/bitset ../../../Core/Gpackets/GCQuestStatus.h \
+ /usr/include/c++/7/bitset ../../../Core/Gpackets/GCQuestStatus.h \
  QuestInfoManager.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../PlayerCreature.h ../Creature.h ../ObjectRegistry.h ../../Mutex.h \
@@ -1569,7 +1569,7 @@ GatherItemQuestStatus.o: GatherItemQuestStatus.cpp \
  ../../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../../Core/Gpackets/GCSelectQuestID.h ../OptionInfo.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Inventory.h \
- ../VolumeInfo.h /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ ../VolumeInfo.h /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h
 DummyQuestStatus.o: DummyQuestStatus.cpp DummyQuestStatus.h \
  QuestStatus.h ../../../Core/Types.h ../../../Core/types/SystemTypes.h \
@@ -1737,7 +1737,7 @@ MiniGameQuestStatus.o: MiniGameQuestStatus.cpp MiniGameQuestStatus.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../../Core/EffectInfo.h /usr/include/STL/bitset \
+ ../../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -1843,7 +1843,7 @@ EventQuestAdvance.o: EventQuestAdvance.cpp EventQuestAdvance.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../InventorySlot.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../InventorySlot.h \
  ../Item.h ../Garbage.h ../RankBonus.h ../ExpFwd.h \
  ../../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../../Core/PacketFactory.h \
@@ -1902,9 +1902,9 @@ EventQuestLootingManager.o: EventQuestLootingManager.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
- /home/darkeden/src/libs/stl_bvector.h /usr/include/STL/map \
+ /home/darkeden/src/libs/stl_bvector.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../Monster.h ../Creature.h \
  ../MonsterInfo.h ../MonsterSummonInfo.h ../MonsterInfoTypes.h \

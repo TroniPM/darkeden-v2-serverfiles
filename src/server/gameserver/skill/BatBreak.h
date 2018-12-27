@@ -16,8 +16,8 @@
 class BatBreak : public SkillHandler 
 {
 public:
-	BatBreak() throw() {}
-	~BatBreak() throw() {}
+	BatBreak()  {}
+	~BatBreak()  {}
 	
 public:
     string getSkillHandlerName()  { return "BatBreak"; }

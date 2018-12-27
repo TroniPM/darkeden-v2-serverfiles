@@ -61,19 +61,19 @@ public :
 	// get / set X,Y
 	Coord_t getX()  { return m_X;}
 	Coord_t getY()  { return m_Y;}
-	void setXY(Coord_t X, Coord_t Y) throw() { m_X = X; m_Y = Y;}
+	void setXY(Coord_t X, Coord_t Y)  { m_X = X; m_Y = Y;}
 
 
 	// get / set SkillType
 	SkillType_t getSkillType()  { return m_SkillType; }
-	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
+	void setSkillType(SkillType_t SkillType)  { m_SkillType = SkillType; }
 
 	// get / set Duration
 	Duration_t getDuration()  { return m_Duration; }
-	void setDuration(Duration_t Duration) throw() { m_Duration = Duration; }
+	void setDuration(Duration_t Duration)  { m_Duration = Duration; }
 
 	BYTE getGrade()  { return m_Grade; }
-	void setGrade( BYTE grade ) throw() { m_Grade = grade; }
+	void setGrade( BYTE grade )  { m_Grade = grade; }
 
 private :
 	
@@ -104,16 +104,16 @@ class GCSkillToSelfOK3Factory : public PacketFactory {
 public :
 	
 	// constructor
-	GCSkillToSelfOK3Factory() throw() {}
+	GCSkillToSelfOK3Factory()  {}
 	
 	// destructor
-	virtual ~GCSkillToSelfOK3Factory() throw() {}
+	virtual ~GCSkillToSelfOK3Factory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCSkillToSelfOK3(); }
+	Packet* createPacket()  { return new GCSkillToSelfOK3(); }
 
 	// get packet name
 	string getPacketName()  { return "GCSkillToSelfOK3"; }

@@ -16,8 +16,8 @@
 class Death : public SkillHandler 
 {
 public:
-	Death() throw() {}
-	~Death() throw() {}
+	Death()  {}
+	~Death()  {}
 	
 public:
     string getSkillHandlerName()  { return "Death"; }

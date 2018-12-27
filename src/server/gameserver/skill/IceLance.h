@@ -16,8 +16,8 @@
 class IceLance : public SkillHandler 
 {
 public:
-	IceLance() throw() {}
-	~IceLance() throw() {}
+	IceLance()  {}
+	~IceLance()  {}
 	
 public:
     string getSkillHandlerName()  { return "IceLance"; }

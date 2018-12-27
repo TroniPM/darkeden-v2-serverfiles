@@ -180,14 +180,14 @@ public :
 
 	// get/set RideMotorcycleInfo
 	RideMotorcycleInfo* getRideMotorcycleInfo()  { return m_pRideMotorcycleInfo; }
-	void setRideMotorcycleInfo(RideMotorcycleInfo* pRideMotorcycleInfo) throw() {
+	void setRideMotorcycleInfo(RideMotorcycleInfo* pRideMotorcycleInfo)  {
 		m_pRideMotorcycleInfo = pRideMotorcycleInfo;
 		m_hasMotorcycle = true;
 	}
 
 	// get/set ZoneID
 	ZoneID_t getZoneID()  { return m_ZoneID; }
-	void setZoneID(const ZoneID_t & zoneID) throw() { m_ZoneID = zoneID; }
+	void setZoneID(const ZoneID_t & zoneID)  { m_ZoneID = zoneID; }
 
 	// get / set ZoneX
 	Coord_t getZoneX()  { return m_ZoneX; }
@@ -199,23 +199,23 @@ public :
 
 	// get/set GameTime
 	GameTime getGameTime()  { return m_GameTime; }
-	void setGameTime(const GameTime & gameTime) throw() { m_GameTime = gameTime; }
+	void setGameTime(const GameTime & gameTime)  { m_GameTime = gameTime; }
 
 	// get/set weather
 	Weather getWeather()  { return m_Weather; }
-	void setWeather(Weather weather) throw() { m_Weather = weather; }
+	void setWeather(Weather weather)  { m_Weather = weather; }
 
 	// get/set weather level
 	WeatherLevel_t getWeatherLevel()  { return m_WeatherLevel; }
-	void setWeatherLevel(WeatherLevel_t weatherLevel) throw() { m_WeatherLevel = weatherLevel; }
+	void setWeatherLevel(WeatherLevel_t weatherLevel)  { m_WeatherLevel = weatherLevel; }
 
 	// get/set darklevel
 	DarkLevel_t getDarkLevel()  { return m_DarkLevel; }
-	void setDarkLevel(DarkLevel_t darkLevel) throw() { m_DarkLevel = darkLevel; }
+	void setDarkLevel(DarkLevel_t darkLevel)  { m_DarkLevel = darkLevel; }
 
 	// get/set lightlevel
 	LightLevel_t getLightLevel()  { return m_LightLevel; }
-	void setLightLevel(LightLevel_t lightLevel) throw() { m_LightLevel = lightLevel; }
+	void setLightLevel(LightLevel_t lightLevel)  { m_LightLevel = lightLevel; }
 
 	// get/set # of NPC
 	uint getNPCCount()  { return m_nNPCs; }
@@ -223,7 +223,7 @@ public :
 
 	// get/set NPC type
 	NPCType_t getNPCType(uint n)  { Assert(n < maxNPCPerZone); return m_NPCTypes[n]; }
-	void setNPCType(uint n, NPCType_t npcType) throw() { Assert(n < maxNPCPerZone); m_NPCTypes[n] = npcType; }
+	void setNPCType(uint n, NPCType_t npcType)  { Assert(n < maxNPCPerZone); m_NPCTypes[n] = npcType; }
 
 	// get/set # of monster
 	uint getMonsterCount()  { return m_nMonsters; }
@@ -231,14 +231,14 @@ public :
 
 	// get/set Monster type
 	MonsterType_t getMonsterType(uint n)  { Assert(n < maxMonsterPerZone); return m_MonsterTypes[n]; }
-	void setMonsterType(uint n, MonsterType_t npcType) throw() { Assert(n < maxMonsterPerZone); m_MonsterTypes[n] = npcType; }
+	void setMonsterType(uint n, MonsterType_t npcType)  { Assert(n < maxMonsterPerZone); m_MonsterTypes[n] = npcType; }
 
 	// get/set npc info
 	void addNPCInfo(NPCInfo* pInfo) { m_NPCInfos.push_back(pInfo);}
 	NPCInfo* popNPCInfo(void) { if (m_NPCInfos.empty()) return NULL; NPCInfo* pInfo = m_NPCInfos.front(); m_NPCInfos.pop_front(); return pInfo; }
 
 	// get/set ServerStat
-	void setServerStat( BYTE ServerStat ) throw() { m_ServerStat = ServerStat; }
+	void setServerStat( BYTE ServerStat )  { m_ServerStat = ServerStat; }
 	BYTE getServerStat()  { return m_ServerStat; }
 
 	// premium play ฐüทร
@@ -387,7 +387,7 @@ class GCUpdateInfoFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCUpdateInfo(); }
+	Packet* createPacket()  { return new GCUpdateInfo(); }
 
 	// get packet name
 	string getPacketName()  { return "GCUpdateInfo"; }

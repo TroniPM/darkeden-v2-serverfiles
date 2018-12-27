@@ -25,14 +25,14 @@ Mutex    HelmZap::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 HelmZap::HelmZap()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
 }
 
 HelmZap::HelmZap(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	setItemType(itemType);
 	setOptionType(optionType);
@@ -170,7 +170,7 @@ void HelmZap::save(const string & ownerID, Storage storage, StorageID_t storageI
 // get debug string
 //--------------------------------------------------------------------------------
 string HelmZap::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -253,7 +253,7 @@ Protection_t HelmZap::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string HelmZapInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

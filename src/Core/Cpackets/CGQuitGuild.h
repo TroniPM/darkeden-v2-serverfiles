@@ -48,7 +48,7 @@ public:
 
 	// get/set GuildID
 	GuildID_t getGuildID()  { return m_GuildID; }
-	void setGuildID( GuildID_t guildID ) throw() { m_GuildID = guildID; }
+	void setGuildID( GuildID_t guildID )  { m_GuildID = guildID; }
 
 
 private :
@@ -72,16 +72,16 @@ class CGQuitGuildFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGQuitGuildFactory() throw() {}
+	CGQuitGuildFactory()  {}
 	
 	// destructor
-	virtual ~CGQuitGuildFactory() throw() {}
+	virtual ~CGQuitGuildFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGQuitGuild(); }
+	Packet* createPacket()  { return new CGQuitGuild(); }
 
 	// get packet name
 	string getPacketName()  { return "CGQuitGuild"; }

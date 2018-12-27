@@ -16,8 +16,8 @@
 class Earthquake : public SkillHandler 
 {
 public:
-	Earthquake() throw() {}
-	~Earthquake() throw() {}
+	Earthquake()  {}
+	~Earthquake()  {}
 	
 public:
     string getSkillHandlerName()  { return "Earthquake"; }

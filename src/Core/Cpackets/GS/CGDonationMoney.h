@@ -61,7 +61,7 @@ private:
 class CGDonationMoneyFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGDonationMoney(); }
+	Packet* createPacket()  { return new CGDonationMoney(); }
 	string getPacketName()  { return "CGDonationMoney"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_DONATION_MONEY; }
 	PacketSize_t getPacketMaxSize()  { return szGold + szBYTE; }

@@ -18,8 +18,8 @@
 class BloodDrain : public SkillHandler 
 {
 public:
-	BloodDrain() throw() {}
-	~BloodDrain() throw() {}
+	BloodDrain()  {}
+	~BloodDrain()  {}
 	
 public:
     string getSkillHandlerName()  { return "BloodDrain"; }

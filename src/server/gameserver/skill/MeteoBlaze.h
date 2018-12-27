@@ -16,8 +16,8 @@
 class MeteoBlaze : public SkillHandler 
 {
 public:
-	MeteoBlaze() throw() {}
-	~MeteoBlaze() throw() {}
+	MeteoBlaze()  {}
+	~MeteoBlaze()  {}
 	
 public:
     string getSkillHandlerName()  { return "MeteoBlaze"; }

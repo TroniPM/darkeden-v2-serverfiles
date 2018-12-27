@@ -17,7 +17,7 @@ ShopTemplateManager* g_pShopTemplateManager = NULL;
 ////////////////////////////////////////////////////////////////////////////////
 
 ShopTemplate::ShopTemplate()
-	throw()
+	
 {
 	__BEGIN_TRY
 	
@@ -33,14 +33,14 @@ ShopTemplate::ShopTemplate()
 }
 
 ShopTemplate::~ShopTemplate()
-	throw()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 string ShopTemplate::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -65,7 +65,7 @@ string ShopTemplate::toString () const
 ////////////////////////////////////////////////////////////////////////////////
 
 ShopTemplateManager::ShopTemplateManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -73,7 +73,7 @@ ShopTemplateManager::ShopTemplateManager()
 }
 
 ShopTemplateManager::~ShopTemplateManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 		
@@ -153,7 +153,7 @@ ShopTemplate* ShopTemplateManager::getTemplate(ShopTemplateID_t id) const
 }
 
 void ShopTemplateManager::setTemplate(ShopTemplateID_t id, ShopTemplate* pTemplate) 
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -167,7 +167,7 @@ void ShopTemplateManager::setTemplate(ShopTemplateID_t id, ShopTemplate* pTempla
 }
 
 string ShopTemplateManager::toString() const
-	throw ()
+	
 {
 	__BEGIN_TRY
 

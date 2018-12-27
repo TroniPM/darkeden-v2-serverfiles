@@ -17,7 +17,7 @@ class MultiShot : public SkillHandler
 {
 public:
 	MultiShot() ;
-	~MultiShot() throw() {}
+	~MultiShot()  {}
 	
 public:
     string getSkillHandlerName()  { return "MultiShot"; }

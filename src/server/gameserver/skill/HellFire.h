@@ -17,7 +17,7 @@ class HellFire : public SkillHandler
 {
 public:
 	HellFire() ;
-	~HellFire() throw() {}
+	~HellFire()  {}
 	
 public:
     string getSkillHandlerName()  { return "HellFire"; }

@@ -49,11 +49,11 @@ public:
 
 	// get/set SlotID
 	SlotID_t getSlotID()  { return m_SlotID; }
-	void setSlotID(SlotID_t SlotID) throw() { m_SlotID = SlotID; }
+	void setSlotID(SlotID_t SlotID)  { m_SlotID = SlotID; }
 
 	// get/set chatting message
 	string getMessage()  { return m_Message; }
-	void setMessage(const string & msg) throw() { m_Message = msg; }
+	void setMessage(const string & msg)  { m_Message = msg; }
 	
 
 private :
@@ -80,7 +80,7 @@ class CGPhoneSayFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGPhoneSay(); }
+	Packet* createPacket()  { return new CGPhoneSay(); }
 
 	// get packet name
 	string getPacketName()  { return "CGPhoneSay"; }

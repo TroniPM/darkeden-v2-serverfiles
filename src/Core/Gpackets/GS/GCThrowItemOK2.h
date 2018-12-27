@@ -61,7 +61,7 @@ public :
 
 	// get / set TargetObjectID
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 private :
 	
@@ -84,16 +84,16 @@ class GCThrowItemOK2Factory : public PacketFactory {
 public :
 	
 	// constructor
-	GCThrowItemOK2Factory() throw() {}
+	GCThrowItemOK2Factory()  {}
 	
 	// destructor
-	virtual ~GCThrowItemOK2Factory() throw() {}
+	virtual ~GCThrowItemOK2Factory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCThrowItemOK2(); }
+	Packet* createPacket()  { return new GCThrowItemOK2(); }
 
 	// get packet name
 	string getPacketName()  { return "GCThrowItemOK2"; }

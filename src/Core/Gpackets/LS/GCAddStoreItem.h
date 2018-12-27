@@ -19,7 +19,7 @@
 class GCAddStoreItem : public Packet
 {
 public:
-	GCAddStoreItem() throw() { }
+	GCAddStoreItem()  { }
 	virtual ~GCAddStoreItem() ;
 
 public:
@@ -52,7 +52,7 @@ private:
 class GCAddStoreItemFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCAddStoreItem(); }
+	Packet* createPacket()  { return new GCAddStoreItem(); }
 	string getPacketName()  { return "GCAddStoreItem"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_STORE_ITEM; }
 	PacketSize_t getPacketMaxSize() 

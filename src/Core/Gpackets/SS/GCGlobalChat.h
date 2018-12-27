@@ -51,15 +51,15 @@ public :
 
 	//get/set text color
 	uint getColor()  { return m_Color; }
-	void setColor( uint color ) throw() { m_Color = color; }
+	void setColor( uint color )  { m_Color = color; }
 
 	// get/set chatting message
 	string getMessage()  { return m_Message; }
-	void setMessage(const string & msg) throw() { m_Message = msg; }
+	void setMessage(const string & msg)  { m_Message = msg; }
 
 	// get/set chatting message
 	Race_t getRace()  { return m_Race; }
-	void setRace(Race_t race) throw() { m_Race = race; }
+	void setRace(Race_t race)  { m_Race = race; }
 	
 
 private :
@@ -89,7 +89,7 @@ class GCGlobalChatFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCGlobalChat(); }
+	Packet* createPacket()  { return new GCGlobalChat(); }
 
 	// get packet name
 	string getPacketName()  { return "GCGlobalChat"; }

@@ -16,8 +16,8 @@
 class CutStorm : public SkillHandler 
 {
 public:
-	CutStorm() throw() {}
-	~CutStorm() throw() {}
+	CutStorm()  {}
+	~CutStorm()  {}
 	
 public:
     string getSkillHandlerName()  { return "CutStorm"; }

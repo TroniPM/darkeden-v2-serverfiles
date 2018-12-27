@@ -35,13 +35,13 @@ public:
 
 public:
 	WORD getQuestID()  { return m_QuestID; }
-	void setQuestID(WORD e) throw() { m_QuestID = e; }
+	void setQuestID(WORD e)  { m_QuestID = e; }
 	
 	WORD getCurrentNum()  { return m_CurrentNum; }
-	void setCurrentNum(WORD n) throw() { m_CurrentNum = n; }
+	void setCurrentNum(WORD n)  { m_CurrentNum = n; }
 
 	DWORD getRemainTime()  { return m_Time; }
-	void setRemainTime(DWORD d) throw() { m_Time = d; }
+	void setRemainTime(DWORD d)  { m_Time = d; }
 	
 private :
 	WORD m_QuestID;
@@ -57,11 +57,11 @@ private :
 class GCMonsterKillQuestStatusFactory : public PacketFactory 
 {
 public :
-	GCMonsterKillQuestStatusFactory() throw() {}
-	virtual ~GCMonsterKillQuestStatusFactory() throw() {}
+	GCMonsterKillQuestStatusFactory()  {}
+	virtual ~GCMonsterKillQuestStatusFactory()  {}
 	
 public:
-	Packet* createPacket() throw() { return new GCMonsterKillQuestStatus(); }
+	Packet* createPacket()  { return new GCMonsterKillQuestStatus(); }
 	string getPacketName()  { return "GCMonsterKillQuestStatus"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_MONSTER_KILL_QUEST_STATUS; }
 	PacketSize_t getPacketMaxSize()  { return szWORD + szWORD + szDWORD; }

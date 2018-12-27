@@ -30,14 +30,14 @@ public:
 	string toString() ;
 	
 public:
-	ObjectID_t getObjectID() throw() { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
-	ObjectID_t getInventoryItemObjectID() throw() { return m_InventoryItemObjectID; }
-	void setInventoryItemObjectID(ObjectID_t InventoryItemObjectID) throw() { m_InventoryItemObjectID = InventoryItemObjectID; }
+	ObjectID_t getInventoryItemObjectID()  { return m_InventoryItemObjectID; }
+	void setInventoryItemObjectID(ObjectID_t InventoryItemObjectID)  { m_InventoryItemObjectID = InventoryItemObjectID; }
 
 	CoordInven_t getInvenX()  { return m_InvenX; }
-	void setInvenX(CoordInven_t InvenX) throw() { m_InvenX = InvenX; }
+	void setInvenX(CoordInven_t InvenX)  { m_InvenX = InvenX; }
 
 	CoordInven_t getInvenY()  { return m_InvenY; }
 	void setInvenY(CoordInven_t InvenY) { m_InvenY = InvenY; }
@@ -59,7 +59,7 @@ private:
 class CGAddMouseToInventoryFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGAddMouseToInventory(); }
+	Packet* createPacket()  { return new CGAddMouseToInventory(); }
 	string getPacketName()  { return "CGAddMouseToInventory"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_ADD_MOUSE_TO_INVENTORY; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + szObjectID + szCoordInven + szCoordInven; }

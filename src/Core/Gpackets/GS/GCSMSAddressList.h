@@ -64,11 +64,11 @@ private :
 class GCSMSAddressListFactory : public PacketFactory 
 {
 public :
-	GCSMSAddressListFactory() throw() {}
-	virtual ~GCSMSAddressListFactory() throw() {}
+	GCSMSAddressListFactory()  {}
+	virtual ~GCSMSAddressListFactory()  {}
 	
 public:
-	Packet* createPacket() throw() { return new GCSMSAddressList(); }
+	Packet* createPacket()  { return new GCSMSAddressList(); }
 	string getPacketName()  { return "GCSMSAddressList"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_SMS_ADDRESS_LIST; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE + AddressUnit::getMaxPacketSize() * MAX_ADDRESS_NUM; }

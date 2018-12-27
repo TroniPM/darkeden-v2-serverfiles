@@ -26,14 +26,14 @@ OustersSummonItemLoader*      g_pOustersSummonItemLoader = NULL;
 //////////////////////////////////////////////////////////////////////////////
 
 OustersSummonItem::OustersSummonItem()
-	throw()
+	
 {
 	m_ItemType = 0;
 	m_Charge   = 0;
 }
 
 OustersSummonItem::OustersSummonItem(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	m_ItemType = itemType;
 	m_Charge   = getMaxCharge();
@@ -177,7 +177,7 @@ Weight_t OustersSummonItem::getWeight() const
 }
 
 string OustersSummonItem::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -194,7 +194,7 @@ string OustersSummonItem::toString() const
 }
 
 int OustersSummonItem::getMaxCharge(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -260,7 +260,7 @@ void OustersSummonItemInfoManager::load()
 }
 
 string OustersSummonItemInfo::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

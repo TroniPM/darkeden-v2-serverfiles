@@ -26,13 +26,13 @@ Mutex    DyePotion::m_Mutex;
 //////////////////////////////////////////////////////////////////////////////
 
 DyePotion::DyePotion()
-	throw()
+	
 {
 	setItemType(0);
 }
 
 DyePotion::DyePotion(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num)
-	throw()
+	
 {
 	setItemType(itemType);
 	setNum(Num);
@@ -133,7 +133,7 @@ void DyePotion::save(const string & ownerID, Storage storage, StorageID_t storag
 }
 
 string DyePotion::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -181,7 +181,7 @@ Weight_t DyePotion::getWeight() const
 //////////////////////////////////////////////////////////////////////////////
 
 string DyePotionInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "DyePotionInfo("

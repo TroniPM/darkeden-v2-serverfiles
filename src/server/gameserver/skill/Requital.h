@@ -16,8 +16,8 @@
 class Requital: public SkillHandler 
 {
 public:
-	Requital() throw() {}
-	~Requital() throw() {}
+	Requital()  {}
+	~Requital()  {}
 	
 public:
     string getSkillHandlerName()  { return "Requital"; }

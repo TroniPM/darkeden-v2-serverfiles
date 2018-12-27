@@ -429,7 +429,7 @@ void Trigger::setCounterActions (const string & str)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string Trigger::toString () const
-	throw ()
+	
 {
 
 	__BEGIN_TRY

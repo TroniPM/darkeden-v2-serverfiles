@@ -17,7 +17,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 EffectInfo::EffectInfo () 
-     throw ()
+     
 {
 	__BEGIN_TRY
 	m_ListNum = 0;
@@ -29,7 +29,7 @@ EffectInfo::EffectInfo ()
 // destructor
 //////////////////////////////////////////////////////////////////////
 EffectInfo::~EffectInfo () 
-    throw ()
+    
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -40,7 +40,7 @@ EffectInfo::~EffectInfo ()
 // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
 //////////////////////////////////////////////////////////////////////
 void EffectInfo::read ( SocketInputStream & iStream ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -95,7 +95,7 @@ void EffectInfo::write ( SocketOutputStream & oStream )
 //
 //////////////////////////////////////////////////////////////////////
 void EffectInfo::addListElement( EffectID_t EffectID , DWORD Value )
-	throw()
+	
 {
 	__BEGIN_TRY
 

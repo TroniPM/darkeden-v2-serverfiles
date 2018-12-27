@@ -16,8 +16,8 @@
 class SolaFlare : public SkillHandler 
 {
 public:
-	SolaFlare() throw() {}
-	~SolaFlare() throw() {}
+	SolaFlare()  {}
+	~SolaFlare()  {}
 	
 public:
     string getSkillHandlerName()  { return "SolaFlare"; }

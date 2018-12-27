@@ -11,7 +11,7 @@
 //////////////////////////////////////////////////////////////////////////////
 
 void GCAddSylph::read ( SocketInputStream & iStream ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -35,7 +35,7 @@ void GCAddSylph::read ( SocketInputStream & iStream )
 }
 
 void GCAddSylph::write ( SocketOutputStream & oStream ) const 
-     throw ( ProtocolException , Error )
+     
 {
 	__BEGIN_TRY
 		
@@ -80,7 +80,7 @@ PacketSize_t GCAddSylph::getPacketSize()
 }
 
 void GCAddSylph::execute ( Player * pPlayer ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -89,7 +89,7 @@ void GCAddSylph::execute ( Player * pPlayer )
 	__END_CATCH
 }
 string GCAddSylph::toString () const
-       throw ()
+       
 {
 	__BEGIN_TRY
 

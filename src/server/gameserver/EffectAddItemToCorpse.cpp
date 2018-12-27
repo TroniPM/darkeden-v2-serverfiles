@@ -129,7 +129,7 @@ void EffectAddItemToCorpse::unaffect (Creature* pCreature)
 // get debug string
 //----------------------------------------------------------------------
 string EffectAddItemToCorpse::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 

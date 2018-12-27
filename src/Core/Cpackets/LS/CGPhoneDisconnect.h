@@ -58,7 +58,7 @@ public:
 
 	// get / set phoneNumber
 	SlotID_t getSlotID()  { return m_SlotID; }
-	void setSlotID(SlotID_t SlotID) throw() { m_SlotID = SlotID; }
+	void setSlotID(SlotID_t SlotID)  { m_SlotID = SlotID; }
 
 private :
 	
@@ -81,7 +81,7 @@ class CGPhoneDisconnectFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGPhoneDisconnect(); }
+	Packet* createPacket()  { return new CGPhoneDisconnect(); }
 
 	// get packet name
 	string getPacketName()  { return "CGPhoneDisconnect"; }

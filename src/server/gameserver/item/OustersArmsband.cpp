@@ -25,7 +25,7 @@ Mutex    OustersArmsband::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 OustersArmsband::OustersArmsband()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0), m_pInventory(NULL)
 {
 	setItemType(0);
@@ -35,7 +35,7 @@ OustersArmsband::OustersArmsband()
 }
 
 OustersArmsband::OustersArmsband(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_ItemType(itemType), m_OptionType(optionType), m_Durability(0), m_pInventory(NULL)
 {
 	setItemType(itemType);
@@ -59,7 +59,7 @@ OustersArmsband::OustersArmsband(ItemType_t itemType, const list<OptionType_t>& 
 // destructor
 //--------------------------------------------------------------------------------
 OustersArmsband::~OustersArmsband()
-	throw()
+	
 {
 	SAFE_DELETE(m_pInventory);
 }
@@ -281,7 +281,7 @@ void OustersArmsband::makePCItemInfo(PCItemInfo& result) const
 // get debug string
 //--------------------------------------------------------------------------------
 string OustersArmsband::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -343,7 +343,7 @@ Weight_t OustersArmsband::getWeight() const
 // get pocket count
 //--------------------------------------------------------------------------------
 PocketNum_t OustersArmsband::getPocketCount(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -381,7 +381,7 @@ Protection_t OustersArmsband::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string OustersArmsbandInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

@@ -37,14 +37,14 @@ ResurrectLocationManager* g_pResurrectLocationManager = NULL;
 //////////////////////////////////////////////////////////////////////////////
 
 ResurrectLocationManager::ResurrectLocationManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 ResurrectLocationManager::~ResurrectLocationManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -55,7 +55,7 @@ ResurrectLocationManager::~ResurrectLocationManager()
 }
 
 void ResurrectLocationManager::init() 
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -65,7 +65,7 @@ void ResurrectLocationManager::init()
 }
 
 void ResurrectLocationManager::load() 
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -114,7 +114,7 @@ void ResurrectLocationManager::load()
 }
 
 bool ResurrectLocationManager::getSlayerPosition(ZoneID_t id, ZONE_COORD& zoneCoord) const 
-	throw ()//NoSuchElementException)
+	//NoSuchElementException)
 {
 	__BEGIN_TRY
 
@@ -157,7 +157,7 @@ void ResurrectLocationManager::addSlayerPosition(ZoneID_t id, const ZONE_COORD& 
 }
 
 bool ResurrectLocationManager::getVampirePosition(ZoneID_t id, ZONE_COORD& zoneCoord) const 
-	throw ()//NoSuchElementException)
+	//NoSuchElementException)
 {
 	__BEGIN_TRY
 
@@ -201,7 +201,7 @@ void ResurrectLocationManager::addVampirePosition(ZoneID_t id, const ZONE_COORD&
 
 
 bool ResurrectLocationManager::getOustersPosition(ZoneID_t id, ZONE_COORD& zoneCoord) const 
-	throw ()//NoSuchElementException)
+	//NoSuchElementException)
 {
 	__BEGIN_TRY
 
@@ -440,7 +440,7 @@ bool ResurrectLocationManager::getBasicPosition( PlayerCreature* pPC, ZONE_COORD
 }
 
 bool ResurrectLocationManager::getRaceDefaultPosition( Race_t race, ZONE_COORD& zoneCoord ) const
-	throw()
+	
 {
 	__BEGIN_TRY
 

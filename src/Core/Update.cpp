@@ -112,7 +112,7 @@ void Update::save ( ofstream & ofile ) const
 // read from socket input stream
 //--------------------------------------------------------------------------------
 void Update::read ( SocketInputStream & iStream ) 
-	throw ( ProtocolException , Error )
+	
 {
 	__BEGIN_TRY
 
@@ -217,7 +217,7 @@ void Update::read ( Socket * pSocket )
 // write to socket output stream
 //--------------------------------------------------------------------------------
 void Update::write ( SocketOutputStream & oStream ) const 
-	throw ( ProtocolException , Error )
+	
 {
 	__BEGIN_TRY
 
@@ -383,7 +383,7 @@ void Update::execute ()
 // get size
 //--------------------------------------------------------------------------------
 uint Update::getSize () const
-	throw ()
+	
 {
 	// [Version] [UpdateType] 
 	uint size = szVersion + szBYTE;
@@ -400,7 +400,7 @@ uint Update::getSize () const
 // get max size
 //--------------------------------------------------------------------------------
 uint Update::getMaxSize ()
-	throw ()
+	
 {
 	// [Version] [UpdateType] [ParameterLen] [Parameter0] ... [ParameterLen] [Parameter5]
 	return szVersion + szBYTE + ( szParameterLen + maxParameterLen ) * maxParams;
@@ -411,7 +411,7 @@ uint Update::getMaxSize ()
 // get debug string
 //--------------------------------------------------------------------------------
 string Update::toString () const
-	throw ()
+	
 {
 	StringStream msg;
 

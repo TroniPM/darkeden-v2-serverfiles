@@ -64,11 +64,11 @@ public :
 
 	// get/set Kick Message Type
 	BYTE getType()  { return m_Type; }
-	void setType( BYTE type ) throw() { m_Type = (KickMessageType)type; }
+	void setType( BYTE type )  { m_Type = (KickMessageType)type; }
 
 	// get/set seconds
 	uint getSeconds()  { return m_Seconds; }
-	void setSeconds( uint seconds ) throw() { m_Seconds = seconds; }
+	void setSeconds( uint seconds )  { m_Seconds = seconds; }
 
 private :
 	
@@ -92,7 +92,7 @@ class GCKickMessageFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCKickMessage(); }
+	Packet* createPacket()  { return new GCKickMessage(); }
 
 	// get packet name
 	string getPacketName()  { return "GCKickMessage"; }

@@ -85,7 +85,7 @@ public :
 	isSameName ( string Name ) : m_Name(Name) {}
 
 
-	bool operator () ( VersionInfo * pVersionInfo ) throw ()
+	bool operator () ( VersionInfo * pVersionInfo ) 
 	{
 		// 이름이 같다.
 		if( strcasecmp( m_Name.c_str(), pVersionInfo->getName().c_str() ) == 0 ) {
@@ -110,7 +110,7 @@ public :
 	isSource ( string Name ) : m_Name(Name) {}
 
 
-	bool operator () ( SourceInfo * pSourceInfo ) throw ()
+	bool operator () ( SourceInfo * pSourceInfo ) 
 	{
 		// 이름이 같다.
 		if( strcasecmp( m_Name.c_str(), pSourceInfo->getName().c_str() ) == 0 ) {
@@ -429,7 +429,7 @@ void create_Index() {
 
 		char filename[256];
 		sprintf(filename,"%s/v%05d/index.dat", g_pConfig->getProperty("PatchDirectory").c_str() , i );
-		ifstream ifile( filename, ios::in | ios::binary | ios::nocreate );
+		ifstream ifile( filename, ios::in | ios::binary  );
 		// 파일이 없으면 빈 인덱스를 생성한다.
 		if ( !ifile ) {
 			int Count = 0;

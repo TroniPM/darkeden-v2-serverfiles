@@ -16,8 +16,8 @@
 class Trident : public SkillHandler 
 {
 public:
-	Trident() throw() {}
-	~Trident() throw() {}
+	Trident()  {}
+	~Trident()  {}
 
 public:
     string getSkillHandlerName()  { return "Trident"; }

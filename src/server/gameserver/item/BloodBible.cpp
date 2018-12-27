@@ -25,14 +25,14 @@ Mutex    BloodBible::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 BloodBible::BloodBible()
-	throw()
+	
 : m_ItemType(0), m_Durability(0)
 {
 	m_EnchantLevel = 0;
 }
 
 BloodBible::BloodBible(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 : m_ItemType(itemType), m_Durability(0)
 {
 	try {
@@ -177,7 +177,7 @@ void BloodBible::save(const string & ownerID, Storage storage, StorageID_t stora
 // get debug string
 //--------------------------------------------------------------------------------
 string BloodBible::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -261,7 +261,7 @@ Protection_t BloodBible::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string BloodBibleInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

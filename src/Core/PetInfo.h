@@ -113,20 +113,20 @@ public:
 
 	// Æê ¿É¼Ç
 
-	void						setOptionType(const list<OptionType_t>& OptionType) throw() { m_OptionType = OptionType; }
+	void						setOptionType(const list<OptionType_t>& OptionType)  { m_OptionType = OptionType; }
 	int							getOptionTypeSize()  { return m_OptionType.size(); }
 	const list<OptionType_t>&	getOptionType()  { return m_OptionType; }
 	OptionType_t				getFirstOptionType()  { if (m_OptionType.empty()) return 0; return m_OptionType.front(); }
-	void						removeOptionType(OptionType_t OptionType) throw() { std::list<OptionType_t>::iterator itr = std::find(m_OptionType.begin(), m_OptionType.end(), OptionType); if (itr!=m_OptionType.end()) m_OptionType.erase(itr); }
-	void						addOptionType(OptionType_t OptionType) throw() { m_OptionType.push_back(OptionType); }
+	void						removeOptionType(OptionType_t OptionType)  { std::list<OptionType_t>::iterator itr = std::find(m_OptionType.begin(), m_OptionType.end(), OptionType); if (itr!=m_OptionType.end()) m_OptionType.erase(itr); }
+	void						addOptionType(OptionType_t OptionType)  { m_OptionType.push_back(OptionType); }
 
-	void						setMixOptionType(const list<OptionType_t>& mixOptionType) throw() { m_MixOptionType = mixOptionType; }
+	void						setMixOptionType(const list<OptionType_t>& mixOptionType)  { m_MixOptionType = mixOptionType; }
 	int							getMixOptionTypeSize()  { return m_MixOptionType.size(); }
 	const list<OptionType_t>&	getMixOptionType()  { return m_MixOptionType; }
 	OptionType_t				getMixFirstOptionType()  { if (m_MixOptionType.empty()) return 0; return m_MixOptionType.front(); }
-	void						removeMixOptionType(OptionType_t mixOptionType) throw() { std::list<OptionType_t>::iterator itr = std::find(m_MixOptionType.begin(), m_MixOptionType.end(), mixOptionType); if (itr!=m_MixOptionType.end()) m_MixOptionType.erase(itr); }
-	void						addMixOptionType(OptionType_t mixOptionType) throw() { m_MixOptionType.push_back(mixOptionType); }
-	void						changeMixOptionType(OptionType_t currentOptionType, OptionType_t newOptionType) throw() { list<OptionType_t>::iterator itr = find(m_MixOptionType.begin(), m_MixOptionType.end(), currentOptionType); if (itr!=m_MixOptionType.end()) *itr=newOptionType; }
+	void						removeMixOptionType(OptionType_t mixOptionType)  { std::list<OptionType_t>::iterator itr = std::find(m_MixOptionType.begin(), m_MixOptionType.end(), mixOptionType); if (itr!=m_MixOptionType.end()) m_MixOptionType.erase(itr); }
+	void						addMixOptionType(OptionType_t mixOptionType)  { m_MixOptionType.push_back(mixOptionType); }
+	void						changeMixOptionType(OptionType_t currentOptionType, OptionType_t newOptionType)  { list<OptionType_t>::iterator itr = find(m_MixOptionType.begin(), m_MixOptionType.end(), currentOptionType); if (itr!=m_MixOptionType.end()) *itr=newOptionType; }
 
 
 	string		toString() const;

@@ -16,7 +16,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 SweeperBonusInfo::SweeperBonusInfo () 
-     throw ()
+     
 {
 	__BEGIN_TRY
 	
@@ -31,7 +31,7 @@ SweeperBonusInfo::SweeperBonusInfo ()
 // destructor
 //////////////////////////////////////////////////////////////////////
 SweeperBonusInfo::~SweeperBonusInfo () 
-    throw ()
+    
 {
 	__BEGIN_TRY
 
@@ -45,7 +45,7 @@ SweeperBonusInfo::~SweeperBonusInfo ()
 // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
 //////////////////////////////////////////////////////////////////////
 void SweeperBonusInfo::read ( SocketInputStream & iStream ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		

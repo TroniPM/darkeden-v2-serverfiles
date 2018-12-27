@@ -16,7 +16,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 GCNicknameList::GCNicknameList () 
-	 throw ()
+	 
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -27,7 +27,7 @@ GCNicknameList::GCNicknameList ()
 // destructor
 //////////////////////////////////////////////////////////////////////
 GCNicknameList::~GCNicknameList () 
-	throw ()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -37,7 +37,7 @@ GCNicknameList::~GCNicknameList ()
 // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
 //////////////////////////////////////////////////////////////////////
 void GCNicknameList::read ( SocketInputStream & iStream ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 
@@ -104,7 +104,7 @@ PacketSize_t GCNicknameList::getPacketSize()
 //
 //////////////////////////////////////////////////////////////////////
 void GCNicknameList::execute ( Player * pPlayer ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		

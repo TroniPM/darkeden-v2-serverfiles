@@ -46,7 +46,7 @@ public :
 	// 최적화시, 미리 계산된 정수를 사용한다.
 	PacketSize_t getSize ();
 
-	static uint getMaxSize () throw () { 
+	static uint getMaxSize ()  { 
 		return szBYTE + szBYTE + (SubVampireSkillInfo::getMaxSize()* 120);
 	}
 
@@ -55,20 +55,20 @@ public :
 
 	// get / set New Skill
 	bool isLearnNewSkill()  { return m_bLearnNewSkill; }
-	void setLearnNewSkill(bool NewSkill) throw() { m_bLearnNewSkill = NewSkill; }
+	void setLearnNewSkill(bool NewSkill)  { m_bLearnNewSkill = NewSkill; }
 
 	// get / set ListNumber
 	BYTE getListNum()  { return m_ListNum; }
-	void setListNum(BYTE ListNum) throw() { m_ListNum = ListNum; }
+	void setListNum(BYTE ListNum)  { m_ListNum = ListNum; }
 
 	// add / delete / clear S List
-	void addListElement(SubVampireSkillInfo* pSubVampireSkillInfo) throw() { m_SubVampireSkillInfoList.push_back(pSubVampireSkillInfo); }
+	void addListElement(SubVampireSkillInfo* pSubVampireSkillInfo)  { m_SubVampireSkillInfoList.push_back(pSubVampireSkillInfo); }
 
 	// ClearList
-	void clearList() throw() { m_SubVampireSkillInfoList.clear(); m_ListNum = 0; }
+	void clearList()  { m_SubVampireSkillInfoList.clear(); m_ListNum = 0; }
 
 	// pop front Element in Status List
-	SubVampireSkillInfo* popFrontListElement() throw() 
+	SubVampireSkillInfo* popFrontListElement()  
 	{ 
 		SubVampireSkillInfo* TempSubVampireSkillInfo = m_SubVampireSkillInfoList.front(); m_SubVampireSkillInfoList.pop_front(); return TempSubVampireSkillInfo; 
 	}

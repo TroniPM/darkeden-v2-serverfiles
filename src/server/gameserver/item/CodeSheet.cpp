@@ -29,13 +29,13 @@ Mutex    CodeSheet::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 CodeSheet::CodeSheet()
-	throw()
+	
 : m_ItemType(0)
 {
 }
 
 CodeSheet::CodeSheet(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 : m_ItemType(itemType), m_OptionType(optionType)
 {
 	if ( m_OptionType.size() == 0 )
@@ -194,7 +194,7 @@ void CodeSheet::save(const string & ownerID, Storage storage, StorageID_t storag
 // get debug string
 //--------------------------------------------------------------------------------
 string CodeSheet::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -253,7 +253,7 @@ Weight_t CodeSheet::getWeight() const
 // get debug string
 //--------------------------------------------------------------------------------
 string CodeSheetInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

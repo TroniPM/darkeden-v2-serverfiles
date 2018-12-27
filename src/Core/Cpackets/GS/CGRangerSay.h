@@ -47,7 +47,7 @@ public:
 
 	// get/set chatting message
 	string getMessage()  { return m_Message; }
-	void setMessage(const string & msg) throw() { m_Message = msg; }
+	void setMessage(const string & msg)  { m_Message = msg; }
 	
 
 private :
@@ -68,7 +68,7 @@ class CGRangerSayFactory : public PacketFactory
 {
 public:
 	// create packet
-	Packet* createPacket() throw() { return new CGRangerSay(); }
+	Packet* createPacket()  { return new CGRangerSay(); }
 
 	// get packet name
 	string getPacketName()  { return "CGRangerSay"; }

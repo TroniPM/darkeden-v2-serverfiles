@@ -26,13 +26,13 @@ Mutex    QuestItem::m_Mutex;
 //////////////////////////////////////////////////////////////////////////////
 
 QuestItem::QuestItem()
-	throw()
+	
 {
 	m_ItemType = 0;
 }
 
 QuestItem::QuestItem(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	m_ItemType = itemType;
 
@@ -148,7 +148,7 @@ void QuestItem::save(const string & ownerID, Storage storage, StorageID_t storag
 }
 
 string QuestItem::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -195,7 +195,7 @@ Weight_t QuestItem::getWeight() const
 //////////////////////////////////////////////////////////////////////////////
 
 string QuestItemInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "QuestItemInfo("

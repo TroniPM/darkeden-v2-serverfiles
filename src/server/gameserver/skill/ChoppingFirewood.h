@@ -17,8 +17,8 @@
 class ChoppingFirewood : public SkillHandler 
 {
 public:
-	ChoppingFirewood() throw() {}
-	~ChoppingFirewood() throw() {}
+	ChoppingFirewood()  {}
+	~ChoppingFirewood()  {}
 	
 public:
     string getSkillHandlerName()  { return "ChoppingFirewood"; }

@@ -36,7 +36,7 @@ public:
 
 	void run() ;
 
-	void sendPacket( Packet* pPacket ) throw( ProtocolException, Error );
+	void sendPacket( Packet* pPacket ) ;
 
 private:
 

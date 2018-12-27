@@ -16,8 +16,8 @@
 class GnomesWhisper : public SkillHandler 
 {
 public:
-	GnomesWhisper() throw() {}
-	~GnomesWhisper() throw() {}
+	GnomesWhisper()  {}
+	~GnomesWhisper()  {}
 	
 public:
     string getSkillHandlerName()  { return "GnomesWhisper"; }

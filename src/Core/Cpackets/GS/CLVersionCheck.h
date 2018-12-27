@@ -51,10 +51,10 @@ public:
 
 	// get/set Client Version
 	DWORD getVersion()  { return m_Version; }
-	void setVersion(DWORD Version) throw() { m_Version = Version; }
+	void setVersion(DWORD Version)  { m_Version = Version; }
 
 	DWORD getServerVersion()  { return m_ServerVersion; }
-	void setServerVersion(DWORD ServerVersion) throw() { m_ServerVersion= ServerVersion; }
+	void setServerVersion(DWORD ServerVersion)  { m_ServerVersion= ServerVersion; }
 
 private :
 
@@ -77,7 +77,7 @@ class CLVersionCheckFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CLVersionCheck(); }
+	Packet* createPacket()  { return new CLVersionCheck(); }
 
 	// get packet name
 	string getPacketName()  { return "CLVersionCheck"; }

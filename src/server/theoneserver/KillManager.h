@@ -43,8 +43,8 @@ public :
 	// main method
 	void run();
 
-	void sendDatagram ( Datagram * pDatagram ) throw ( ConnectException , Error );
-	void sendPacket ( string host , uint port , DatagramPacket * pPacket ) throw ( ConnectException , Error );
+	void sendDatagram ( Datagram * pDatagram ) ;
+	void sendPacket ( string host , uint port , DatagramPacket * pPacket ) ;
 
 private :
 

@@ -34,24 +34,24 @@ public:
 // identity methods
 public:
 	string getOwner(void)  { return m_Owner; }
-	void setOwner(const string& owner) throw() { m_Owner = owner; }
+	void setOwner(const string& owner)  { m_Owner = owner; }
 
 	CoordInven_t getWidth()  { return m_Width; }
 	CoordInven_t getHeight()  { return m_Height; }
 
 	ItemNum_t getItemNum()  { return m_TotalNum; }
-	void increaseNum() throw() { m_TotalNum++; }
-	void increaseNum(ItemNum_t ItemNum) throw() { m_TotalNum += ItemNum; }
-	void decreaseItemNum() throw() { m_TotalNum--; }
-	void decreaseItemNum(ItemNum_t ItemNum) throw() { m_TotalNum -= ItemNum; }
-	void setItemNum(ItemNum_t ItemNum) throw() { m_TotalNum = ItemNum; }
+	void increaseNum()  { m_TotalNum++; }
+	void increaseNum(ItemNum_t ItemNum)  { m_TotalNum += ItemNum; }
+	void decreaseItemNum()  { m_TotalNum--; }
+	void decreaseItemNum(ItemNum_t ItemNum)  { m_TotalNum -= ItemNum; }
+	void setItemNum(ItemNum_t ItemNum)  { m_TotalNum = ItemNum; }
 
 	Weight_t getWeight()  { return m_TotalWeight; }
-	void increaseWeight(Weight_t Weight) throw() { m_TotalWeight += Weight; }
-	void decreaseWeight(Weight_t Weight) throw() { m_TotalWeight -= Weight; }
+	void increaseWeight(Weight_t Weight)  { m_TotalWeight += Weight; }
+	void decreaseWeight(Weight_t Weight)  { m_TotalWeight -= Weight; }
 
 	bool getDeleteAllFlag(void)  { return m_bDeleteAll; }
-	void setDeleteAllFlag(bool value) throw() { m_bDeleteAll = value; }
+	void setDeleteAllFlag(bool value)  { m_bDeleteAll = value; }
 
 // check methods
 public: 
@@ -70,7 +70,7 @@ public:
 	Item* addItemEx(CoordInven_t X, CoordInven_t Y, Item* pItem);
 	bool  addItem(Item* pItem) throw(InventoryFullException,Error);
 	bool  addItem(Item* pItem, TPOINT& pt) throw(InventoryFullException,Error);
-	bool  getEmptySlot(Item* pItem, _TPOINT& p) throw()
+	bool  getEmptySlot(Item* pItem, _TPOINT& p) 
 	{
 		Assert (pItem != NULL);
 		return getEmptySlot( pItem->getVolumeWidth(), pItem->getVolumeHeight(), p );

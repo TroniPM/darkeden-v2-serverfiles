@@ -18,7 +18,7 @@ class BloodyBreaker : public SkillHandler
 {
 public:
 	BloodyBreaker() ;
-	~BloodyBreaker() throw() {}
+	~BloodyBreaker()  {}
 	
 public:
     string getSkillHandlerName()  { return "BloodyBreaker"; }

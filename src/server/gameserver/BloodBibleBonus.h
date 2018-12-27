@@ -38,8 +38,8 @@ public:
 	};
 
 public:
-	BloodBibleBonus() throw() {}
-	~BloodBibleBonus() throw() { clearOptionTypeList(); }
+	BloodBibleBonus()  {}
+	~BloodBibleBonus()  { clearOptionTypeList(); }
 
 public:
 	BloodBibleBonusType_t getType() const { return m_Type; }

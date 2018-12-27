@@ -75,28 +75,28 @@ public:
 	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_SR; }
 
 	virtual Durability_t getDurability()  { return m_Durability; }
-	virtual void setDurability(Durability_t durability) throw() { m_Durability = durability; }
+	virtual void setDurability(Durability_t durability)  { m_Durability = durability; }
 
 	virtual Damage_t getMinDamage()  { return m_MinDamage; }
-	virtual void setMinDamage(Damage_t minDamage) throw() { m_MinDamage = minDamage; }
+	virtual void setMinDamage(Damage_t minDamage)  { m_MinDamage = minDamage; }
 
 	virtual Damage_t getMaxDamage()  { return m_MaxDamage; }
-	virtual void setMaxDamage(Damage_t maxDamage) throw() { m_MaxDamage = maxDamage; }
+	virtual void setMaxDamage(Damage_t maxDamage)  { m_MaxDamage = maxDamage; }
 
 	Range_t getRange()  { return m_Range; }
-	void setRange(Range_t range) throw() { m_Range = range; }
+	void setRange(Range_t range)  { m_Range = range; }
 
 	ToHit_t getToHitBonus()  { return m_ToHitBonus; }
-	void setToHitBonus(ToHit_t tohit) throw() { m_ToHitBonus = tohit; }
+	void setToHitBonus(ToHit_t tohit)  { m_ToHitBonus = tohit; }
 
 	virtual Speed_t getSpeed(void)  { return m_Speed; }
-	virtual void setSpeed(Speed_t speed) throw() { m_Speed = speed; }
+	virtual void setSpeed(Speed_t speed)  { m_Speed = speed; }
 
 	virtual uint getItemLevel(void)  { return m_ItemLevel; }
-	virtual void setItemLevel(uint level) throw() { m_ItemLevel = level; }
+	virtual void setItemLevel(uint level)  { m_ItemLevel = level; }
 
 	virtual int getCriticalBonus(void)  { return m_CriticalBonus; }
-	virtual void setCriticalBonus(int bonus) throw() { m_CriticalBonus = bonus; }
+	virtual void setCriticalBonus(int bonus)  { m_CriticalBonus = bonus; }
 
 	virtual string toString() ;
 
@@ -140,7 +140,7 @@ public:
 	virtual string getItemClassName()  { return "SR"; }
 	
 public:
-	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new SR(ItemType,OptionType); }
+	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType)  { return new SR(ItemType,OptionType); }
 };
 
 //////////////////////////////////////////////////////////////////////////////

@@ -62,7 +62,7 @@ public :
 
 	// get/set SlotID
 	SlotID_t getSlotID()  { return m_SlotID; }
-	void setSlotID(SlotID_t SlotID) throw() { m_SlotID = SlotID; }
+	void setSlotID(SlotID_t SlotID)  { m_SlotID = SlotID; }
 
 private :
 
@@ -85,16 +85,16 @@ class GCRemoveFromGearFactory : public PacketFactory {
 public :
 	
 	// constructor
-	GCRemoveFromGearFactory() throw() {}
+	GCRemoveFromGearFactory()  {}
 	
 	// destructor
-	virtual ~GCRemoveFromGearFactory() throw() {}
+	virtual ~GCRemoveFromGearFactory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCRemoveFromGear(); }
+	Packet* createPacket()  { return new GCRemoveFromGear(); }
 
 	// get packet name
 	string getPacketName()  { return "GCRemoveFromGear"; }

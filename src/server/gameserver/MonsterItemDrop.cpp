@@ -33,7 +33,7 @@ MonsterItemDrop::~MonsterItemDrop()
 	__END_CATCH
 }
 void MonsterItemDrop::setSlayerTreasureList(TreasureList* pTreasureList)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -44,7 +44,7 @@ void MonsterItemDrop::setSlayerTreasureList(TreasureList* pTreasureList)
 	__END_CATCH
 }
 void MonsterItemDrop::parseSlayerTreasureString(const string& text)
-	throw()
+	
 {
 	__BEGIN_TRY
 	string newtext = trim(text);
@@ -55,7 +55,7 @@ void MonsterItemDrop::parseSlayerTreasureString(const string& text)
 	__END_CATCH
 }
 void MonsterItemDrop::setVampireTreasureList(TreasureList* pTreasureList)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -66,7 +66,7 @@ void MonsterItemDrop::setVampireTreasureList(TreasureList* pTreasureList)
 	__END_CATCH
 }
 void MonsterItemDrop::parseVampireTreasureString(const string& text)
-	throw()
+	
 {
 	__BEGIN_TRY
 	string newtext = trim(text);
@@ -77,7 +77,7 @@ void MonsterItemDrop::parseVampireTreasureString(const string& text)
 	__END_CATCH
 }
 void MonsterItemDrop::setOustersTreasureList(TreasureList* pTreasureList)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -88,7 +88,7 @@ void MonsterItemDrop::setOustersTreasureList(TreasureList* pTreasureList)
 	__END_CATCH
 }
 void MonsterItemDrop::parseOustersTreasureString(const string& text)
-	throw()
+	
 {
 	__BEGIN_TRY
 	string newtext = trim(text);
@@ -217,7 +217,7 @@ MonsterItemDropManager::~MonsterItemDropManager()
 }
 
 void MonsterItemDropManager::clear()
-	throw()
+	
 {
 	__BEGIN_TRY
 

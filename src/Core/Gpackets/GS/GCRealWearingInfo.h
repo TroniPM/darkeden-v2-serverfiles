@@ -48,7 +48,7 @@ public :
 public :
 
 	DWORD getInfo(void)  { return m_Info;}
-	void setInfo(DWORD info) throw() { m_Info = info;}
+	void setInfo(DWORD info)  { m_Info = info;}
 
 private :
 	
@@ -70,7 +70,7 @@ class GCRealWearingInfoFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCRealWearingInfo(); }
+	Packet* createPacket()  { return new GCRealWearingInfo(); }
 
 	// get packet name
 	string getPacketName()  { return "GCRealWearingInfo"; }

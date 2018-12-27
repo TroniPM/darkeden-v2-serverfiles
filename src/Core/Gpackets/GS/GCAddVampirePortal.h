@@ -81,7 +81,7 @@ private:
 class GCAddVampirePortalFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCAddVampirePortal(); }
+	Packet* createPacket()  { return new GCAddVampirePortal(); }
 	string getPacketName()  { return "GCAddVampirePortal"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_VAMPIRE_PORTAL; }
 	PacketSize_t getPacketMaxSize() 

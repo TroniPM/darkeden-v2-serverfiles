@@ -17,8 +17,8 @@
 class Cannonade : public SkillHandler 
 {
 public:
-	Cannonade() throw() {}
-	~Cannonade() throw() {}
+	Cannonade()  {}
+	~Cannonade()  {}
 	
 public:
     string getSkillHandlerName()  { return "Cannonade"; }

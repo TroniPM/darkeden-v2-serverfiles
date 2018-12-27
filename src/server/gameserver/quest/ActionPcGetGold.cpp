@@ -65,7 +65,7 @@ void ActionPcGetGold::execute (Creature * pCreature1 , Creature * pCreature2)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionPcGetGold::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

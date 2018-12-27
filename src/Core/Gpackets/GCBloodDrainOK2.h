@@ -61,7 +61,7 @@ public :
 
 	// get / set CEffectID
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 private :
 	
@@ -86,16 +86,16 @@ class GCBloodDrainOK2Factory : public PacketFactory {
 public :
 	
 	// constructor
-	GCBloodDrainOK2Factory() throw() {}
+	GCBloodDrainOK2Factory()  {}
 	
 	// destructor
-	virtual ~GCBloodDrainOK2Factory() throw() {}
+	virtual ~GCBloodDrainOK2Factory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCBloodDrainOK2(); }
+	Packet* createPacket()  { return new GCBloodDrainOK2(); }
 
 	// get packet name
 	string getPacketName()  { return "GCBloodDrainOK2"; }

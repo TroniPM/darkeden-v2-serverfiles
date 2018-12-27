@@ -26,7 +26,7 @@ Mutex    OustersStone::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 OustersStone::OustersStone()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
@@ -35,7 +35,7 @@ OustersStone::OustersStone()
 }
 
 OustersStone::OustersStone(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_ItemType(itemType), m_OptionType(optionType), m_Durability(0)
 {
 	setItemType(itemType);
@@ -178,7 +178,7 @@ void OustersStone::save(const string & ownerID, Storage storage, StorageID_t sto
 // get debug string
 //--------------------------------------------------------------------------------
 string OustersStone::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -289,7 +289,7 @@ Elemental_t OustersStone::getElemental(void) const
 // get debug string
 //--------------------------------------------------------------------------------
 string OustersStoneInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

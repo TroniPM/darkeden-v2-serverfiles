@@ -17,7 +17,7 @@ class CriticalGround: public SkillHandler
 {
 public:
 	CriticalGround() ;
-	~CriticalGround() throw() {}
+	~CriticalGround()  {}
 	
 public:
     string getSkillHandlerName()  { return "CriticalGround"; }

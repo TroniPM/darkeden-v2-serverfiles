@@ -16,8 +16,8 @@
 class SharpShield : public SkillHandler 
 {
 public:
-	SharpShield() throw() {}
-	~SharpShield() throw() {}
+	SharpShield()  {}
+	~SharpShield()  {}
 	
 public:
     string getSkillHandlerName()  { return "SharpShield"; }

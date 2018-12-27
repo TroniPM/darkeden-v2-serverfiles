@@ -85,7 +85,7 @@ void EffectFreezeRing1::unaffect()
 }
 
 string EffectFreezeRing1::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

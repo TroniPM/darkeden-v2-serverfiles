@@ -16,8 +16,8 @@
 class TiffaugesKrsnikARed: public SkillHandler 
 {
 public:
-	TiffaugesKrsnikARed() throw() {}
-	~TiffaugesKrsnikARed() throw() {}
+	TiffaugesKrsnikARed()  {}
+	~TiffaugesKrsnikARed()  {}
 	
 public:
     string getSkillHandlerName()  { return "TiffaugesKrsnikARed"; }

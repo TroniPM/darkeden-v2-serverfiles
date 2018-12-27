@@ -39,7 +39,7 @@ public:
 
 public:
 	Sight_t getOldSight()  { return m_OldSight; }
-	void setOldSight(Sight_t OldSight) throw() { m_OldSight = OldSight; }
+	void setOldSight(Sight_t OldSight)  { m_OldSight = OldSight; }
 
 private:
 	Sight_t m_OldSight;

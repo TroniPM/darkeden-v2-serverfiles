@@ -38,7 +38,7 @@ public:
 	virtual string getObjectTableName()  { return "CastleSymbolObject"; }
 
 	virtual ItemType_t getItemType()  { return m_ItemType; }
-	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
+	virtual void setItemType(ItemType_t itemType)  { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() ;
 	virtual VolumeHeight_t getVolumeHeight() ;
@@ -52,7 +52,7 @@ public:
 	virtual Protection_t getProtectionBonus() ;
 
 	virtual EnchantLevel_t getEnchantLevel()  { return m_EnchantLevel; }
-	virtual void setEnchantLevel(EnchantLevel_t level) throw() { m_EnchantLevel = level; }
+	virtual void setEnchantLevel(EnchantLevel_t level)  { m_EnchantLevel = level; }
 
 private:
 	ItemType_t			m_ItemType;			// 아이템 타입
@@ -72,16 +72,16 @@ public:
 	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_CASTLE_SYMBOL; }
 
 	virtual Durability_t getDurability()  { return m_Durability; }
-	virtual void setDurability(Durability_t durability) throw() { m_Durability = durability; }
+	virtual void setDurability(Durability_t durability)  { m_Durability = durability; }
 
 	Defense_t getDefenseBonus()  { return m_DefenseBonus; }
-	void setDefenseBonus(Defense_t acBonus) throw() { m_DefenseBonus = acBonus; }
+	void setDefenseBonus(Defense_t acBonus)  { m_DefenseBonus = acBonus; }
 
 	Protection_t getProtectionBonus()  { return m_ProtectionBonus; }
-	void setProtectionBonus(Protection_t acBonus) throw() { m_ProtectionBonus = acBonus; }
+	void setProtectionBonus(Protection_t acBonus)  { m_ProtectionBonus = acBonus; }
 
 	virtual uint getItemLevel(void)  { return m_ItemLevel; }
-	virtual void setItemLevel(uint level) throw() { m_ItemLevel = level; }
+	virtual void setItemLevel(uint level)  { m_ItemLevel = level; }
 
 	virtual string toString() ;
 
@@ -120,7 +120,7 @@ public:
 	virtual string getItemClassName()  { return "CastleSymbol"; }
 	
 public:
-	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new CastleSymbol(ItemType,OptionType); }
+	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType)  { return new CastleSymbol(ItemType,OptionType); }
 };
 
 

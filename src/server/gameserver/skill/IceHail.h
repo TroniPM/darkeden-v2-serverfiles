@@ -16,8 +16,8 @@
 class IceHail : public SkillHandler 
 {
 public:
-	IceHail() throw() { }
-	~IceHail() throw() {}
+	IceHail()  { }
+	~IceHail()  {}
 	
 public:
     string getSkillHandlerName()  { return "IceHail"; }

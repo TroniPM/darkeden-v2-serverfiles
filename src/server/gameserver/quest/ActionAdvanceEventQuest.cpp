@@ -151,7 +151,7 @@ void ActionAdvanceEventQuest::execute (Creature * pCreature1 , Creature * pCreat
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionAdvanceEventQuest::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

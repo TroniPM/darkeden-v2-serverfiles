@@ -118,7 +118,7 @@ string EffectRevealer::toString()
 }
 
 bool EffectRevealer::canSeeHide( Creature* pTarget ) const
-	throw( Error )
+	
 {
 	if ( !pTarget->isFlag( Effect::EFFECT_CLASS_HIDE ) )
 		return true;
@@ -151,7 +151,7 @@ bool EffectRevealer::canSeeHide( Creature* pTarget ) const
 }
 
 bool EffectRevealer::canSeeSniping( Creature* pTarget ) const
-	throw( Error )
+	
 {
 	if ( !pTarget->isFlag( Effect::EFFECT_CLASS_SNIPING_MODE ) )
 		return true;
@@ -173,7 +173,7 @@ bool EffectRevealer::canSeeSniping( Creature* pTarget ) const
 }
 
 bool EffectRevealer::canSeeInvisibility( Creature* pTarget ) const
-	throw( Error )
+	
 {
 	if ( !pTarget->isFlag( Effect::EFFECT_CLASS_INVISIBILITY ) )
 		return true;

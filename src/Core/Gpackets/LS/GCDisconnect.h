@@ -46,7 +46,7 @@ public :
 
 	// get/set chatting message
 	string getMessage()  { return m_Message; }
-	void setMessage(const string & msg) throw() { m_Message = msg; }
+	void setMessage(const string & msg)  { m_Message = msg; }
 
 private :
 	
@@ -69,7 +69,7 @@ class GCDisconnectFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCDisconnect(); }
+	Packet* createPacket()  { return new GCDisconnect(); }
 
 	// get packet name
 	string getPacketName()  { return "GCDisconnect"; }

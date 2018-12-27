@@ -17,7 +17,7 @@ class LifeAquaofRadchia : public SkillHandler
 {
 public:
 	LifeAquaofRadchia() ;
-	~LifeAquaofRadchia() throw() {}
+	~LifeAquaofRadchia()  {}
 	
 public:
     string getSkillHandlerName()  { return "LifeAquaofRadchia"; }

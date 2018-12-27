@@ -14,7 +14,7 @@
 // Datagram 객체로부터 데이타를 읽어서 패킷을 초기화한다.
 //////////////////////////////////////////////////////////////////////
 void GTOAcknowledgement::read ( Datagram & iDatagram ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 
@@ -45,7 +45,7 @@ void GTOAcknowledgement::read ( Datagram & iDatagram )
 // Datagram 객체로 패킷의 바이너리 이미지를 보낸다.
 //////////////////////////////////////////////////////////////////////
 void GTOAcknowledgement::write ( Datagram & oDatagram ) const 
-     throw ( ProtocolException , Error )
+     
 {
 	__BEGIN_TRY
 
@@ -70,7 +70,7 @@ void GTOAcknowledgement::write ( Datagram & oDatagram ) const
 // execute packet's handler
 //////////////////////////////////////////////////////////////////////
 void GTOAcknowledgement::execute ( Player * pPlayer ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -83,7 +83,7 @@ void GTOAcknowledgement::execute ( Player * pPlayer )
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 string GTOAcknowledgement::toString () const
-    throw ()
+    
 {
 	StringStream msg;
 

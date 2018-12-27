@@ -10,7 +10,7 @@
 # Directories Setting
 #----------------------------------------------------------------------
 VSHOME = ../..
-STLDIR = /usr/include/STL
+STLDIR = /usr/include/c++/7
 BINDIR = $(VSHOME)/bin
 LIBDIR = $(VSHOME)/lib
 LOGDIR = $(VSHOME)/log
@@ -886,7 +886,7 @@ PCSlayerInfo.o: PCSlayerInfo.cpp PCSlayerInfo.h PCInfo.h Types.h \
  types/GuildTypes.h types/WarTypes.h types/ServerType.h Utility.h \
  Exception.h StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h SocketInputStream.h Socket.h SocketImpl.h \
- SocketAPI.h SocketOutputStream.h /usr/include/STL/bitset
+ SocketAPI.h SocketOutputStream.h /usr/include/c++/7/bitset
 PCVampireInfo.o: PCVampireInfo.cpp PCVampireInfo.h PCInfo.h Types.h \
  types/SystemTypes.h /usr/include/c++/7/iostream \
   /usr/include/c++/7/streambuf \
@@ -1062,7 +1062,7 @@ PCSlayerInfo3.o: PCSlayerInfo3.cpp PCSlayerInfo3.h PCInfo.h Types.h \
  types/GuildTypes.h types/WarTypes.h types/ServerType.h Utility.h \
  Exception.h StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h SocketInputStream.h Socket.h SocketImpl.h \
- SocketAPI.h SocketOutputStream.h Assert.h /usr/include/STL/bitset
+ SocketAPI.h SocketOutputStream.h Assert.h /usr/include/c++/7/bitset
 PCVampireInfo3.o: PCVampireInfo3.cpp PCVampireInfo3.h PCInfo.h Types.h \
  types/SystemTypes.h /usr/include/c++/7/iostream \
   /usr/include/c++/7/streambuf \
@@ -1149,7 +1149,7 @@ Properties.o: Properties.cpp Properties.h Types.h types/SystemTypes.h \
  types/ZoneTypes.h types/QuestTypes.h types/ShopTypes.h \
  types/GuildTypes.h types/WarTypes.h types/ServerType.h Utility.h \
  Exception.h StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h /usr/include/STL/map \
+ /home/darkeden/src/libs/stl_list.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h
 Resource.o: Resource.cpp Resource.h Types.h types/SystemTypes.h \
@@ -2561,7 +2561,7 @@ TimeChecker.o: TimeChecker.cpp TimeChecker.h VSDateTime.h \
  types/QuestTypes.h types/ShopTypes.h types/GuildTypes.h \
  types/WarTypes.h types/ServerType.h Utility.h Exception.h \
  StringStream.h /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h Assert.h
 NPCInfo.o: NPCInfo.cpp NPCInfo.h Types.h types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
@@ -3828,7 +3828,7 @@ PacketFactoryManager.o: PacketFactoryManager.cpp Assert.h Types.h \
  Cpackets/CGVisible.h Cpackets/CGVerifyTime.h \
  Cpackets/CGRequestNewbieItem.h Cpackets/CGWithdrawTax.h \
  Cpackets/CGTypeStringList.h Cpackets/CGUseItemFromGear.h \
- Cpackets/CLCreatePC.h /usr/include/STL/bitset Cpackets/CLDeletePC.h \
+ Cpackets/CLCreatePC.h /usr/include/c++/7/bitset Cpackets/CLDeletePC.h \
  Cpackets/CLGetPCList.h Cpackets/CLLogin.h Cpackets/CLLogout.h \
  Cpackets/CLQueryPlayerID.h Cpackets/CLQueryCharacterName.h \
  Cpackets/CLRegisterPlayer.h Cpackets/CLSelectPC.h Player.h \
@@ -3993,7 +3993,7 @@ PacketFactoryManager.o: PacketFactoryManager.cpp Assert.h Types.h \
  Cpackets/CGSkillToNamed.h Cpackets/CGUseMessageItemFromInventory.h \
  Gpackets/GCHolyLandBonusInfo.h BloodBibleBonusInfo.h \
  Gpackets/GCBloodBibleStatus.h Gpackets/GCKickMessage.h \
- Gpackets/GCTimeLimitItemInfo.h /usr/include/STL/map \
+ Gpackets/GCTimeLimitItemInfo.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h Gpackets/GCSelectQuestID.h \
  Cpackets/CGSelectQuest.h Gpackets/GCQuestStatus.h \
@@ -4204,7 +4204,7 @@ PacketFactoryManager.o: PacketFactoryManager.cpp Assert.h Types.h \
  Cpackets/CGVisible.h Cpackets/CGVerifyTime.h \
  Cpackets/CGRequestNewbieItem.h Cpackets/CGWithdrawTax.h \
  Cpackets/CGTypeStringList.h Cpackets/CGUseItemFromGear.h \
- Cpackets/CLCreatePC.h /usr/include/STL/bitset Cpackets/CLDeletePC.h \
+ Cpackets/CLCreatePC.h /usr/include/c++/7/bitset Cpackets/CLDeletePC.h \
  Cpackets/CLGetPCList.h Cpackets/CLLogin.h Cpackets/CLLogout.h \
  Cpackets/CLQueryPlayerID.h Cpackets/CLQueryCharacterName.h \
  Cpackets/CLRegisterPlayer.h Cpackets/CLSelectPC.h Player.h \
@@ -4369,7 +4369,7 @@ PacketFactoryManager.o: PacketFactoryManager.cpp Assert.h Types.h \
  Cpackets/CGSkillToNamed.h Cpackets/CGUseMessageItemFromInventory.h \
  Gpackets/GCHolyLandBonusInfo.h BloodBibleBonusInfo.h \
  Gpackets/GCBloodBibleStatus.h Gpackets/GCKickMessage.h \
- Gpackets/GCTimeLimitItemInfo.h /usr/include/STL/map \
+ Gpackets/GCTimeLimitItemInfo.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h Gpackets/GCSelectQuestID.h \
  Cpackets/CGSelectQuest.h Gpackets/GCQuestStatus.h \
@@ -4580,7 +4580,7 @@ PacketFactoryManager.o: PacketFactoryManager.cpp Assert.h Types.h \
  Cpackets/CGVisible.h Cpackets/CGVerifyTime.h \
  Cpackets/CGRequestNewbieItem.h Cpackets/CGWithdrawTax.h \
  Cpackets/CGTypeStringList.h Cpackets/CGUseItemFromGear.h \
- Cpackets/CLCreatePC.h /usr/include/STL/bitset Cpackets/CLDeletePC.h \
+ Cpackets/CLCreatePC.h /usr/include/c++/7/bitset Cpackets/CLDeletePC.h \
  Cpackets/CLGetPCList.h Cpackets/CLLogin.h Cpackets/CLLogout.h \
  Cpackets/CLQueryPlayerID.h Cpackets/CLQueryCharacterName.h \
  Cpackets/CLRegisterPlayer.h Cpackets/CLSelectPC.h Player.h \
@@ -4745,7 +4745,7 @@ PacketFactoryManager.o: PacketFactoryManager.cpp Assert.h Types.h \
  Cpackets/CGSkillToNamed.h Cpackets/CGUseMessageItemFromInventory.h \
  Gpackets/GCHolyLandBonusInfo.h BloodBibleBonusInfo.h \
  Gpackets/GCBloodBibleStatus.h Gpackets/GCKickMessage.h \
- Gpackets/GCTimeLimitItemInfo.h /usr/include/STL/map \
+ Gpackets/GCTimeLimitItemInfo.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h Gpackets/GCSelectQuestID.h \
  Cpackets/CGSelectQuest.h Gpackets/GCQuestStatus.h \
@@ -4956,7 +4956,7 @@ PacketFactoryManager.o: PacketFactoryManager.cpp Assert.h Types.h \
  Cpackets/CGVisible.h Cpackets/CGVerifyTime.h \
  Cpackets/CGRequestNewbieItem.h Cpackets/CGWithdrawTax.h \
  Cpackets/CGTypeStringList.h Cpackets/CGUseItemFromGear.h \
- Cpackets/CLCreatePC.h /usr/include/STL/bitset Cpackets/CLDeletePC.h \
+ Cpackets/CLCreatePC.h /usr/include/c++/7/bitset Cpackets/CLDeletePC.h \
  Cpackets/CLGetPCList.h Cpackets/CLLogin.h Cpackets/CLLogout.h \
  Cpackets/CLQueryPlayerID.h Cpackets/CLQueryCharacterName.h \
  Cpackets/CLRegisterPlayer.h Cpackets/CLSelectPC.h Player.h \
@@ -5121,7 +5121,7 @@ PacketFactoryManager.o: PacketFactoryManager.cpp Assert.h Types.h \
  Cpackets/CGSkillToNamed.h Cpackets/CGUseMessageItemFromInventory.h \
  Gpackets/GCHolyLandBonusInfo.h BloodBibleBonusInfo.h \
  Gpackets/GCBloodBibleStatus.h Gpackets/GCKickMessage.h \
- Gpackets/GCTimeLimitItemInfo.h /usr/include/STL/map \
+ Gpackets/GCTimeLimitItemInfo.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h Gpackets/GCSelectQuestID.h \
  Cpackets/CGSelectQuest.h Gpackets/GCQuestStatus.h \

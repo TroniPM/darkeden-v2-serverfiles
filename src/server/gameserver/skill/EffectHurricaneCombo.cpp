@@ -96,7 +96,7 @@ void EffectHurricaneCombo::unaffect(Zone* pZone , ZoneCoord_t x , ZoneCoord_t y 
 }
 
 string EffectHurricaneCombo::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

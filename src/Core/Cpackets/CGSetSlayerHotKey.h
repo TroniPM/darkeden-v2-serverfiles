@@ -51,7 +51,7 @@ public:
 
 	// get/set X Coordicate
 	SkillType_t getHotKey(BYTE pos)  { return m_HotKey[pos]; }
-	void setHotKey(BYTE pos, SkillType_t SkillType) throw() { m_HotKey[pos] = SkillType; }
+	void setHotKey(BYTE pos, SkillType_t SkillType)  { m_HotKey[pos] = SkillType; }
 
 private :
 
@@ -73,7 +73,7 @@ class CGSetSlayerHotKeyFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGSetSlayerHotKey(); }
+	Packet* createPacket()  { return new CGSetSlayerHotKey(); }
 
 	// get packet name
 	string getPacketName()  { return "CGSetSlayerHotKey"; }

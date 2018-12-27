@@ -13,7 +13,7 @@
 // read data from socket input stream
 //----------------------------------------------------------------------
 void SlotInfo::read ( SocketInputStream & iStream ) 
-	throw ( ProtocolException , Error )
+	
 {
 	__BEGIN_TRY
 	try {
@@ -48,7 +48,7 @@ void SlotInfo::read ( SocketInputStream & iStream )
 // write data to socket output stream
 //----------------------------------------------------------------------
 void SlotInfo::write ( SocketOutputStream & oStream ) const 
-	throw ( ProtocolException , Error )
+	
 {
 	__BEGIN_TRY
 
@@ -84,7 +84,7 @@ void SlotInfo::write ( SocketOutputStream & oStream ) const
 // get debug string
 //----------------------------------------------------------------------
 string SlotInfo::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 

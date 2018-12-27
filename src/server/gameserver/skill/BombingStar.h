@@ -16,8 +16,8 @@
 class BombingStar : public SkillHandler 
 {
 public:
-	BombingStar() throw() {}
-	~BombingStar() throw() {}
+	BombingStar()  {}
+	~BombingStar()  {}
 	
 public:
     string getSkillHandlerName()  { return "BombingStar"; }

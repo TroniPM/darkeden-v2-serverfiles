@@ -27,12 +27,12 @@ public:
 #ifdef __GAME_SERVER__
 	// inItr은 container<QuestID_t>::input_iterator 여야 한다.
 	template<class inItr>
-	explicit GCSelectQuestID( inItr b, inItr e ) throw()
+	explicit GCSelectQuestID( inItr b, inItr e ) 
 	{
 		copy( b, e, back_inserter( m_QuestIDList ) );
 	}
 #endif
-	GCSelectQuestID() throw() { }
+	GCSelectQuestID()  { }
 	virtual ~GCSelectQuestID() ;
 
 public:
@@ -59,7 +59,7 @@ private:
 class GCSelectQuestIDFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCSelectQuestID(); }
+	Packet* createPacket()  { return new GCSelectQuestID(); }
 	string getPacketName()  { return "GCSelectQuestID"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_SELECT_QUEST_ID; }
 	PacketSize_t getPacketMaxSize() 

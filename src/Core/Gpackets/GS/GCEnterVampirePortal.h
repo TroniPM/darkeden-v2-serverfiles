@@ -29,7 +29,7 @@ public:
 
 public:
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(const ObjectID_t & creatureID) throw() { m_ObjectID = creatureID; }
+	void setObjectID(const ObjectID_t & creatureID)  { m_ObjectID = creatureID; }
 
 	Coord_t getX(void) const { return m_X; }
 	void setX(Coord_t X) { m_X = X; }
@@ -50,7 +50,7 @@ private:
 class GCEnterVampirePortalFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCEnterVampirePortal(); }
+	Packet* createPacket()  { return new GCEnterVampirePortal(); }
 	string getPacketName()  { return "GCEnterVampirePortal"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_ENTER_VAMPIRE_PORTAL; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + szCoord*2; }

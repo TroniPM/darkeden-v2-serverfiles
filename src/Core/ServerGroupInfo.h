@@ -45,7 +45,7 @@ public :
 	// 최적화시, 미리 계산된 정수를 사용한다.
 	PacketSize_t getSize ();
 
-	static uint getMaxSize() throw() {
+	static uint getMaxSize()  {
 		return (szBYTE + szBYTE + 20 + szBYTE)* 37;
 	}
 
@@ -54,15 +54,15 @@ public :
 
 	// get / set GroupID
 	BYTE getGroupID()  { return m_GroupID; }
-	void setGroupID(ServerGroupID_t GroupID) throw() { m_GroupID = GroupID; }
+	void setGroupID(ServerGroupID_t GroupID)  { m_GroupID = GroupID; }
 
 	// get / set GroupName
 	string getGroupName()  { return m_GroupName; }
-	void setGroupName(string GroupName) throw() { m_GroupName = GroupName; }
+	void setGroupName(string GroupName)  { m_GroupName = GroupName; }
 
 	// get / set Group Stat
 	BYTE getStat()  { return m_Stat; }
-	void setStat(BYTE Stat) throw() { m_Stat = Stat; }
+	void setStat(BYTE Stat)  { m_Stat = Stat; }
 
 private :
 

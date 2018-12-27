@@ -32,7 +32,7 @@
 // 
 //--------------------------------------------------------------------------------
 void LGIncomingConnectionOKHandler::execute ( LGIncomingConnectionOK * pPacket )
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 

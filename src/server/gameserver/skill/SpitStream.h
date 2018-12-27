@@ -16,8 +16,8 @@
 class SpitStream : public SkillHandler 
 {
 public:
-	SpitStream() throw() {}
-	~SpitStream() throw() {}
+	SpitStream()  {}
+	~SpitStream()  {}
 	
 public:
     string getSkillHandlerName()  { return "SpitStream"; }

@@ -58,11 +58,11 @@ public:
 
 	BYTE getListNum()  { return m_BloodBibleBonusInfoList.size(); }
 
-	void addBloodBibleBonusInfo( BloodBibleBonusInfo* pBloodBibleBonusInfo ) throw() { m_BloodBibleBonusInfoList.push_back( pBloodBibleBonusInfo ); }
+	void addBloodBibleBonusInfo( BloodBibleBonusInfo* pBloodBibleBonusInfo )  { m_BloodBibleBonusInfoList.push_back( pBloodBibleBonusInfo ); }
 
 	void clearBloodBibleBonusInfoList() ;
 
-	BloodBibleBonusInfo* popFrontBloodBibleBonusInfoList() throw()
+	BloodBibleBonusInfo* popFrontBloodBibleBonusInfoList() 
 	{
 		if ( !m_BloodBibleBonusInfoList.empty() )
 		{
@@ -93,7 +93,7 @@ class GCHolyLandBonusInfoFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCHolyLandBonusInfo(); }
+	Packet* createPacket()  { return new GCHolyLandBonusInfo(); }
 
 	// get packet name
 	string getPacketName()  { return "GCHolyLandBonusInfo"; }

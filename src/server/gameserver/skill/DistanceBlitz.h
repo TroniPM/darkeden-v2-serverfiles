@@ -16,8 +16,8 @@
 class DistanceBlitz : public SkillHandler 
 {
 public:
-	DistanceBlitz() throw() {}
-	~DistanceBlitz() throw() {}
+	DistanceBlitz()  {}
+	~DistanceBlitz()  {}
 	
 public:
     string getSkillHandlerName()  { return "DistanceBlitz"; }

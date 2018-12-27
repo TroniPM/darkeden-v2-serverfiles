@@ -32,7 +32,7 @@ public:
 
 public:
 	ScriptID_t getScriptID()  { return m_ScriptID; }
-	void setScriptID(ScriptID_t scriptID) throw() { m_ScriptID = scriptID; }
+	void setScriptID(ScriptID_t scriptID)  { m_ScriptID = scriptID; }
 
 private:
 	ScriptID_t m_ScriptID;   // 말할 대사 아이디

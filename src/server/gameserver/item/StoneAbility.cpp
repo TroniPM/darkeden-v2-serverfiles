@@ -25,7 +25,7 @@ Mutex    StoneAbility::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 StoneAbility::StoneAbility()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
@@ -34,7 +34,7 @@ StoneAbility::StoneAbility()
 }
 
 StoneAbility::StoneAbility(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_ItemType(itemType), m_OptionType(optionType), m_Durability(0)
 {
 	setItemType(itemType);
@@ -178,7 +178,7 @@ void StoneAbility::save(const string & ownerID, Storage storage, StorageID_t sto
 // get debug string
 //--------------------------------------------------------------------------------
 string StoneAbility::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -289,7 +289,7 @@ Elemental_t StoneAbility::getElemental(void) const
 // get debug string
 //--------------------------------------------------------------------------------
 string StoneAbilityInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

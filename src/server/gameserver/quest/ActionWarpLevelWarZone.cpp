@@ -111,7 +111,7 @@ void ActionWarpLevelWarZone::execute (Creature * pCreature1 , Creature * pCreatu
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionWarpLevelWarZone::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 

@@ -63,45 +63,45 @@ public :
 	Coord_t getOrgX()  { return m_OrgX;}
 	Coord_t getOrgY()  { return m_OrgY;}
 	// set origin x, y
-	void setOrgXY(Coord_t X, Coord_t Y) throw() { m_OrgX = X; m_OrgY = Y;}
+	void setOrgXY(Coord_t X, Coord_t Y)  { m_OrgX = X; m_OrgY = Y;}
 	
 
 	// get / set SkillType
 	SkillType_t getSkillType()  { return m_SkillType; }
-	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
+	void setSkillType(SkillType_t SkillType)  { m_SkillType = SkillType; }
 
 	// get / set X
 	Coord_t getX()  { return m_X; }
-	void setX(Coord_t X) throw() { m_X = X; }
+	void setX(Coord_t X)  { m_X = X; }
 
 	// get / set Y
 	Coord_t getY()  { return m_Y; }
-	void setY(Coord_t Y) throw() { m_Y = Y; }
+	void setY(Coord_t Y)  { m_Y = Y; }
 	
 	// get / set Range
 	Range_t getRange()  { return m_Range; }
-	void setRange(Range_t r) throw() { m_Range = r; }
+	void setRange(Range_t r)  { m_Range = r; }
 
 	// get / set Duration
 	Duration_t getDuration()  { return m_Duration; }
-	void setDuration(Duration_t Duration) throw() { m_Duration = Duration; }
+	void setDuration(Duration_t Duration)  { m_Duration = Duration; }
 
     // get / set Creature List Number
     BYTE getCListNum()  { return m_CListNum; }
-    void setCListNum(BYTE CListNum) throw() { m_CListNum = CListNum; }
+    void setCListNum(BYTE CListNum)  { m_CListNum = CListNum; }
 
 
     // add / delete  Creature List
     void addCListElement(ObjectID_t ObjectID) ;
 
 	// Clear Creature List
-    void clearCList() throw() { m_CList.clear(); m_CListNum = 0; }
+    void clearCList()  { m_CList.clear(); m_CListNum = 0; }
 
     // pop front Element in Status List
-    ObjectID_t popCListElement() throw() { ObjectID_t CreatureList = m_CList.front(); m_CList.pop_front(); return CreatureList; }
+    ObjectID_t popCListElement()  { ObjectID_t CreatureList = m_CList.front(); m_CList.pop_front(); return CreatureList; }
 
 	BYTE getGrade()  { return m_Grade; }
-	void setGrade( BYTE grade ) throw() { m_Grade = grade; }
+	void setGrade( BYTE grade )  { m_Grade = grade; }
 
 
 private :
@@ -146,16 +146,16 @@ class GCSkillToTileOK6Factory : public PacketFactory {
 public :
 	
 	// constructor
-	GCSkillToTileOK6Factory() throw() {}
+	GCSkillToTileOK6Factory()  {}
 	
 	// destructor
-	virtual ~GCSkillToTileOK6Factory() throw() {}
+	virtual ~GCSkillToTileOK6Factory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCSkillToTileOK6(); }
+	Packet* createPacket()  { return new GCSkillToTileOK6(); }
 
 	// get packet name
 	string getPacketName()  { return "GCSkillToTileOK6"; }

@@ -25,7 +25,7 @@ Mutex    Blade::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Blade::Blade()
-	throw()
+	
 {
 	setItemType(0);
 	setDurability(0);
@@ -34,7 +34,7 @@ Blade::Blade()
 }
 
 Blade::Blade(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_OptionType(optionType)
 {
 	setItemType(itemType);
@@ -178,7 +178,7 @@ void Blade::save(const string & ownerID, Storage storage, StorageID_t storageID,
 // get debug string
 //--------------------------------------------------------------------------------
 string Blade::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -267,7 +267,7 @@ Damage_t Blade::getMaxDamage() const
 //--------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------
 int Blade::getCriticalBonus(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -281,7 +281,7 @@ int Blade::getCriticalBonus(void) const
 // get debug string
 //--------------------------------------------------------------------------------
 string BladeInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

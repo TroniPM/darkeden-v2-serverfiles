@@ -24,7 +24,7 @@ Mutex    VampireRing::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 VampireRing::VampireRing()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
@@ -33,7 +33,7 @@ VampireRing::VampireRing()
 }
 
 VampireRing::VampireRing(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_ItemType(itemType), m_OptionType(optionType), m_Durability(0)
 {
 	setItemType(itemType);
@@ -177,7 +177,7 @@ void VampireRing::save(const string & ownerID, Storage storage, StorageID_t stor
 // get debug string
 //--------------------------------------------------------------------------------
 string VampireRing::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -262,7 +262,7 @@ Protection_t VampireRing::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string VampireRingInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

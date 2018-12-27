@@ -24,14 +24,14 @@ Mutex    Bomb::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Bomb::Bomb()
-	throw()
+	
 : m_ItemType(0), m_Damage(0)//, m_Dir(0)
 {
 	m_Num = 1;
 }
 
 Bomb::Bomb(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 : m_ItemType(itemType)
 {
 	if (!g_pItemInfoManager->isPossibleItem(getItemClass(), m_ItemType, optionType))
@@ -163,7 +163,7 @@ void Bomb::save(const string & ownerID, Storage storage, StorageID_t storageID, 
 // get debug string
 //--------------------------------------------------------------------------------
 string Bomb::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -244,7 +244,7 @@ Damage_t Bomb::getMaxDamage() const
 // get debug string
 //--------------------------------------------------------------------------------
 string BombInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

@@ -47,7 +47,7 @@ class GCPetInfoFactory : public PacketFactory {
 
 public :
 	
-	Packet* createPacket() throw() { return new GCPetInfo(); }
+	Packet* createPacket()  { return new GCPetInfo(); }
 	string getPacketName()  { return "GCPetInfo"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_PET_INFO; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + PetInfo::getMaxSize(); }

@@ -31,14 +31,14 @@
 //#include "EffectItemLoader.h"
 #include "EffectSevenFoldStone.h"
 EffectLoaderManager::EffectLoaderManager () 
-	throw ()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 EffectLoaderManager::~EffectLoaderManager () 
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -168,7 +168,7 @@ void EffectLoaderManager::load (Zone* pZone)
 }
 
 string EffectLoaderManager::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 

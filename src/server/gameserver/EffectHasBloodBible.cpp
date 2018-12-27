@@ -174,7 +174,7 @@ void EffectHasBloodBible::affect(Item* pItem)
 }
 
 void EffectHasBloodBible::setPart( int part )
-	throw()
+	
 {
 	__BEGIN_TRY
 

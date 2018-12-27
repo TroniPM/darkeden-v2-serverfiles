@@ -62,7 +62,7 @@ class CGUntransformFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGUntransform(); }
+	Packet* createPacket()  { return new CGUntransform(); }
 
 	// get packet name
 	string getPacketName()  { return "CGUntransform"; }

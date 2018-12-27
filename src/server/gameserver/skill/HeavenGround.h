@@ -16,8 +16,8 @@
 class HeavenGround : public SkillHandler 
 {
 public:
-	HeavenGround() throw() {}
-	~HeavenGround() throw() {}
+	HeavenGround()  {}
+	~HeavenGround()  {}
 	
 public:
     string getSkillHandlerName()  { return "HeavenGround"; }

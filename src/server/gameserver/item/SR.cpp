@@ -26,7 +26,7 @@ Mutex    SR::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 SR::SR()
-	throw()
+	
 {
 	setItemType(0);
 	setDurability(0);
@@ -37,7 +37,7 @@ SR::SR()
 }
 
 SR::SR(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: Gun(itemType, optionType)
 {
 	setItemType(itemType);
@@ -56,7 +56,7 @@ SR::SR(ItemType_t itemType, const list<OptionType_t>& optionType)
 // destructor
 //--------------------------------------------------------------------------------
 SR::~SR()
-	throw()
+	
 {
 }
 
@@ -219,7 +219,7 @@ void SR::makePCItemInfo(PCItemInfo& result) const
 // get debug string
 //--------------------------------------------------------------------------------
 string SR::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -337,7 +337,7 @@ ToHit_t SR::getToHitBonus() const
 //--------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------
 int SR::getCriticalBonus(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -351,7 +351,7 @@ int SR::getCriticalBonus(void) const
 // get debug string
 //--------------------------------------------------------------------------------
 string SRInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

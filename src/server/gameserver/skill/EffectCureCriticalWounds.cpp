@@ -237,7 +237,7 @@ void EffectCureCriticalWounds::unaffect(Zone* pZone , ZoneCoord_t x , ZoneCoord_
 }
 
 string EffectCureCriticalWounds::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

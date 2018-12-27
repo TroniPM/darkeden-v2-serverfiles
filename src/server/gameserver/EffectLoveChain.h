@@ -38,10 +38,10 @@ public:
 	void setTargetName( const string& targetName )  { m_TargetName = targetName; }
 
 	Zone* getZone()  { return m_pZone; }
-	void setZone( Zone* pZone ) throw() { m_pZone = pZone; }
+	void setZone( Zone* pZone )  { m_pZone = pZone; }
 
 	ObjectID_t getItemObjectID()  { return m_ItemObjectID; }
-	void setItemObjectID( ObjectID_t itemObjectID ) throw() { m_ItemObjectID = itemObjectID; }
+	void setItemObjectID( ObjectID_t itemObjectID )  { m_ItemObjectID = itemObjectID; }
 	
 private:
 

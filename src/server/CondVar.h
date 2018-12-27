@@ -39,7 +39,7 @@ public :
 	CondVar ( CondVarAttr * attr = NULL );
 	
 	// destructor
-	virtual ~CondVar () throw ( CondVarException , Error );
+	virtual ~CondVar () ;
 
 	
 //////////////////////////////////////////////////
@@ -66,7 +66,7 @@ public :
 	void broadcast ();
 	
 	// get raw conditional-variable object
-	pthread_cond_t * getCondVar () throw () { return &m_Cond; }
+	pthread_cond_t * getCondVar ()  { return &m_Cond; }
 
 
 //////////////////////////////////////////////////

@@ -47,8 +47,8 @@ public:
 public:
 
 	// get/set ObjectID
-	ObjectID_t getObjectID() throw() { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 private :
 	
@@ -71,7 +71,7 @@ class CGRequestRepairFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGRequestRepair(); }
+	Packet* createPacket()  { return new CGRequestRepair(); }
 
 	// get packet name
 	string getPacketName()  { return "CGRequestRepair"; }

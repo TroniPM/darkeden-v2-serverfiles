@@ -18,7 +18,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 GCRideMotorCycleFailed::GCRideMotorCycleFailed () 
-     throw ()
+     
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -29,7 +29,7 @@ GCRideMotorCycleFailed::GCRideMotorCycleFailed ()
 // destructor
 //////////////////////////////////////////////////////////////////////
 GCRideMotorCycleFailed::~GCRideMotorCycleFailed () 
-    throw ()
+    
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -40,7 +40,7 @@ GCRideMotorCycleFailed::~GCRideMotorCycleFailed ()
 // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
 //////////////////////////////////////////////////////////////////////
 void GCRideMotorCycleFailed::read ( SocketInputStream & iStream ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -72,7 +72,7 @@ void GCRideMotorCycleFailed::write ( SocketOutputStream & oStream )
 //
 //////////////////////////////////////////////////////////////////////
 void GCRideMotorCycleFailed::execute ( Player * pPlayer ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		

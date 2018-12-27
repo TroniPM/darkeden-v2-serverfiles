@@ -189,7 +189,7 @@ void EffectContinualGroundAttack::unaffect()
 // get debug string
 //----------------------------------------------------------------------
 string EffectContinualGroundAttack::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 

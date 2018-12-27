@@ -41,13 +41,13 @@ public:
 
 	// 빌링 관련 패킷 보내기 함수
 #ifdef __LOGIN_SERVER__
-	void sendLogin( LoginPlayer* pLoginPlayer ) throw ( ProtocolException, Error );
+	void sendLogin( LoginPlayer* pLoginPlayer ) ;
 #elif defined(__GAME_SERVER__)
-	bool sendLogin( GamePlayer* pGamePlayer ) throw ( ProtocolException, Error );
-	void sendIntervalValidation() throw ( ProtocolException, Error );
-	bool sendMinusPoint( GamePlayer* pGamePlayer ) throw ( ProtocolException, Error );
-	void sendMinusMinute( GamePlayer* pGamePlayer ) throw ( ProtocolException, Error );
-	void sendLogout( GamePlayer* pGamePlayer ) throw ( ProtocolException, Error );
+	bool sendLogin( GamePlayer* pGamePlayer ) ;
+	void sendIntervalValidation() ;
+	bool sendMinusPoint( GamePlayer* pGamePlayer ) ;
+	void sendMinusMinute( GamePlayer* pGamePlayer ) ;
+	void sendLogout( GamePlayer* pGamePlayer ) ;
 #endif
 
 	void setForceDisconnect( bool bForceDisconnect = true ) { m_bForceDisconnect = bForceDisconnect; }

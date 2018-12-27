@@ -27,7 +27,7 @@ class LCQueryResultCharacterName : public Packet {
 public:
 
 	// constructor
-	LCQueryResultCharacterName() throw() : m_bExist(false) {}
+	LCQueryResultCharacterName()  : m_bExist(false) {}
 
 public:
 
@@ -60,11 +60,11 @@ public:
 
 	// get/set player id
 	string getCharacterName()  { return m_CharacterName; }
-	void setCharacterName(const string & playerID) throw() { m_CharacterName = playerID; }
+	void setCharacterName(const string & playerID)  { m_CharacterName = playerID; }
 
 	// get/set player id's existence
 	bool isExist()  { return m_bExist; }
-	void setExist(bool bExist = true) throw() { m_bExist = bExist; }
+	void setExist(bool bExist = true)  { m_bExist = bExist; }
 
 private :
 
@@ -90,7 +90,7 @@ class LCQueryResultCharacterNameFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new LCQueryResultCharacterName(); }
+	Packet* createPacket()  { return new LCQueryResultCharacterName(); }
 
 	// get packet name
 	string getPacketName()  { return "LCQueryResultCharacterName"; }

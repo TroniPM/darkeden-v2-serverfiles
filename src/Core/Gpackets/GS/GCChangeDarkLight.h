@@ -50,11 +50,11 @@ public :
 
 	// get/set dark level
 	DarkLevel_t getDarkLevel()  { return m_DarkLevel; }
-	void setDarkLevel(DarkLevel_t darkLevel) throw() { m_DarkLevel = darkLevel; }
+	void setDarkLevel(DarkLevel_t darkLevel)  { m_DarkLevel = darkLevel; }
 
 	// get/set light level
 	LightLevel_t getLightLevel()  { return m_LightLevel; }
-	void setLightLevel(LightLevel_t lightLevel) throw() { m_LightLevel = lightLevel; }
+	void setLightLevel(LightLevel_t lightLevel)  { m_LightLevel = lightLevel; }
 
 
 public :
@@ -81,7 +81,7 @@ class GCChangeDarkLightFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCChangeDarkLight(); }
+	Packet* createPacket()  { return new GCChangeDarkLight(); }
 
 	// get packet name
 	string getPacketName()  { return "GCChangeDarkLight"; }

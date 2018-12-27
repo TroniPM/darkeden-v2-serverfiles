@@ -71,7 +71,7 @@ void ActionSell::execute (Creature * pCreature1 , Creature * pCreature2)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionSell::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

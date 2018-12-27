@@ -15,14 +15,14 @@
 #include "DB.h"
 
 DomainInfo::DomainInfo()
-	throw()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 DomainInfo::~DomainInfo()
-	throw()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -32,7 +32,7 @@ DomainInfo::~DomainInfo()
 // get debug string
 //--------------------------------------------------------------------------------
 string DomainInfo::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 	StringStream msg;
@@ -56,7 +56,7 @@ string DomainInfo::toString () const
 //
 //--------------------------------------------------------------------
 SkillDomainInfoManager::SkillDomainInfoManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -77,7 +77,7 @@ SkillDomainInfoManager::SkillDomainInfoManager()
 //
 //--------------------------------------------------------------------
 SkillDomainInfoManager::~SkillDomainInfoManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -192,7 +192,7 @@ void SkillDomainInfoManager::addDomainInfo(DomainInfo* pDomainInfo) const
 // get debug string
 //--------------------------------------------------------------------------------
 string SkillDomainInfoManager::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 	StringStream msg;

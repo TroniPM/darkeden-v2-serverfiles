@@ -16,8 +16,8 @@
 class FuryOfGnome: public SkillHandler 
 {
 public:
-	FuryOfGnome() throw() {}
-	~FuryOfGnome() throw() {}
+	FuryOfGnome()  {}
+	~FuryOfGnome()  {}
 	
 public:
     string getSkillHandlerName()  { return "FuryOfGnome"; }

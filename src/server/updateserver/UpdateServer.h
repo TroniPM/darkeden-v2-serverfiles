@@ -54,8 +54,8 @@ private :
 	// update client
 	void updateClient ( Socket * pClient );
 
-	int getGuildMarkVersion() throw() { return m_GuildMarkVersion; }
-	int getLastGuildMarkVersion() throw() { return m_LastGuildMarkVersion; }
+	int getGuildMarkVersion()  { return m_GuildMarkVersion; }
+	int getLastGuildMarkVersion()  { return m_LastGuildMarkVersion; }
 
 private :
 

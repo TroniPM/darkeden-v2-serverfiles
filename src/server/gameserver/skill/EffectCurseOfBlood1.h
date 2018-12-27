@@ -31,7 +31,7 @@ public:
 
 public:
 	Level_t getLevel()  { return m_Level; }
-	void setLevel(Level_t level) throw() { m_Level = level; }
+	void setLevel(Level_t level)  { m_Level = level; }
 	
 private:
 	Level_t  m_Level;

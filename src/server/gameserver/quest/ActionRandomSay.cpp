@@ -75,7 +75,7 @@ void ActionRandomSay::execute (Creature * pCreature1 , Creature * pCreature2)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionRandomSay::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 

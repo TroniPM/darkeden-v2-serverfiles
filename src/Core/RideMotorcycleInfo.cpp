@@ -12,7 +12,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////////////
 RideMotorcycleInfo::RideMotorcycleInfo () 
-     throw ()
+     
 {
 	__BEGIN_TRY
 
@@ -27,7 +27,7 @@ RideMotorcycleInfo::RideMotorcycleInfo ()
 // destructor
 //////////////////////////////////////////////////////////////////////////////
 RideMotorcycleInfo::~RideMotorcycleInfo () 
-    throw ()
+    
 {
 	__BEGIN_TRY
 
@@ -45,7 +45,7 @@ RideMotorcycleInfo::~RideMotorcycleInfo ()
 // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
 //////////////////////////////////////////////////////////////////////////////
 void RideMotorcycleInfo::read ( SocketInputStream & iStream ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 	
@@ -111,7 +111,7 @@ void RideMotorcycleInfo::write ( SocketOutputStream & oStream )
 // getSize
 //////////////////////////////////////////////////////////////////////////////
 PacketSize_t RideMotorcycleInfo::getSize()
-	throw()
+	
 {
 	PacketSize_t PacketSize = 0;
 

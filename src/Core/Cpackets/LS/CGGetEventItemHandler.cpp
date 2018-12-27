@@ -26,7 +26,7 @@
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGGetEventItemHandler::execute (CGGetEventItem* pPacket , Player* pPlayer)
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY
 
@@ -57,7 +57,7 @@ void CGGetEventItemHandler::execute (CGGetEventItem* pPacket , Player* pPlayer)
 #ifdef __GAME_SERVER__
 
 void CGGetEventItemHandler::executeCombackItem( CGGetEventItem* pPacket, Player* pPlayer )
-	throw ( ProtocolException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -262,7 +262,7 @@ void CGGetEventItemHandler::executeCombackItem( CGGetEventItem* pPacket, Player*
 
 
 void CGGetEventItemHandler::executeCombackPremiumItem( CGGetEventItem* pPacket, Player* pPlayer )
-	throw ( ProtocolException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -475,7 +475,7 @@ void CGGetEventItemHandler::executeCombackPremiumItem( CGGetEventItem* pPacket, 
 
 
 void CGGetEventItemHandler::executeCombackRecommendItem( CGGetEventItem* pPacket, Player* pPlayer )
-	throw ( ProtocolException, Error )
+	
 {
 	__BEGIN_TRY
 

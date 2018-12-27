@@ -31,11 +31,11 @@ public:
 	string toString() ;
 	
 public:
-	SlotID_t getSlotID() throw() { return m_SlotID; }
-	void setSlotID(SlotID_t SlotID) throw() { m_SlotID = SlotID; }
+	SlotID_t getSlotID()  { return m_SlotID; }
+	void setSlotID(SlotID_t SlotID)  { m_SlotID = SlotID; }
 
 	CoordInven_t getInvenX()  { return m_InvenX; }
-	void setInvenX(CoordInven_t InvenX) throw() { m_InvenX = InvenX; }
+	void setInvenX(CoordInven_t InvenX)  { m_InvenX = InvenX; }
 
 	CoordInven_t getInvenY()  { return m_InvenY; }
 	void setInvenY(CoordInven_t InvenY) { m_InvenY = InvenY; }
@@ -53,7 +53,7 @@ private:
 class GCAddGearToInventoryFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCAddGearToInventory(); }
+	Packet* createPacket()  { return new GCAddGearToInventory(); }
 	string getPacketName()  { return "GCAddGearToInventory"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_GEAR_TO_INVENTORY; }
 	PacketSize_t getPacketMaxSize()  { return szSlotID + szCoordInven + szCoordInven; }

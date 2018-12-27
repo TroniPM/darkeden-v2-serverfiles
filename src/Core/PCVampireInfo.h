@@ -63,7 +63,7 @@ public:
 	}
 
 	// get max size of object
-	static uint getMaxSize () throw ()
+	static uint getMaxSize () 
 	{
 		return szBYTE + 20				// ¹ìÆÄÀÌ¾î ÀÌ¸§
 			+ szSlot					// ½½·Ô
@@ -88,10 +88,10 @@ public:
 
 public:
     string getName ()  { return m_Name; }
-    void setName (string name) throw () { m_Name = (name.size() > 20) ? name.substr(0,20) : name; }
+    void setName (string name)  { m_Name = (name.size() > 20) ? name.substr(0,20) : name; }
 
 	Slot getSlot ()  { return m_Slot; }
-	void setSlot (Slot slot) throw () { m_Slot = slot; }
+	void setSlot (Slot slot)  { m_Slot = slot; }
 	void setSlot (string slot) 
 	{
 		if (slot == Slot2String[SLOT1])
@@ -105,16 +105,16 @@ public:
 	}
 
 	Alignment_t getAlignment()  { return m_Alignment; }
-	void setAlignment(Alignment_t Alignment) throw() { m_Alignment = Alignment; }
+	void setAlignment(Alignment_t Alignment)  { m_Alignment = Alignment; }
 
 	Fame_t getFame ()  { return m_Fame; }
-	void setFame (Fame_t f) throw () { m_Fame = f; }
+	void setFame (Fame_t f)  { m_Fame = f; }
 
 	Fame_t getKillPoint()  { return m_KillPoint; }
-	void setKillPoint(Fame_t f) throw () { m_KillPoint = f; }
+	void setKillPoint(Fame_t f)  { m_KillPoint = f; }
 
 	Sex getSex ()  { return m_Sex; }
-	void setSex (Sex sex) throw () { m_Sex = sex; }
+	void setSex (Sex sex)  { m_Sex = sex; }
 	void setSex (string sex) 
 	{
 		if (sex == Sex2String[MALE]) 
@@ -126,16 +126,16 @@ public:
 	}
 
 	Color_t getBatColor ()  { return m_BatColor; }
-	void setBatColor (Color_t batColor) throw () { m_BatColor = batColor; }
+	void setBatColor (Color_t batColor)  { m_BatColor = batColor; }
 
 	Color_t getSkinColor ()  { return m_SkinColor; }
-	void setSkinColor (Color_t skinColor) throw () { m_SkinColor = skinColor; }
+	void setSkinColor (Color_t skinColor)  { m_SkinColor = skinColor; }
 
 	ItemType_t getCoatType()  { return m_CoatType; }
-	void setCoatType(ItemType_t CoatType) throw() { m_CoatType = CoatType; }
+	void setCoatType(ItemType_t CoatType)  { m_CoatType = CoatType; }
 	
 	Color_t getCoatColor()  { return m_CoatColor; }
-	void setCoatColor(Color_t CoatColor) throw() { m_CoatColor = CoatColor; }
+	void setCoatColor(Color_t CoatColor)  { m_CoatColor = CoatColor; }
 
     Attr_t getSTR ()  { if (m_STR > maxVampireAttr) throw Error("STR out of range"); return m_STR; }
 	void setSTR (Attr_t str)  { if (str > maxVampireAttr) throw Error("STR out of range"); m_STR = str; }
@@ -147,28 +147,28 @@ public:
 	void setINT (Attr_t inte)  { if (inte > maxVampireAttr) throw Error("INT out of range"); m_INT = inte; }
 
 	HP_t getHP (AttrType attrType = ATTR_CURRENT)  { return m_HP[attrType]; }
-	void setHP (HP_t hp, AttrType attrType = ATTR_CURRENT) throw () { m_HP[attrType] = hp; }
-	void setHP (HP_t curHP, HP_t maxHP) throw () { m_HP[ATTR_CURRENT] = curHP; m_HP[ATTR_MAX] = maxHP; }
+	void setHP (HP_t hp, AttrType attrType = ATTR_CURRENT)  { m_HP[attrType] = hp; }
+	void setHP (HP_t curHP, HP_t maxHP)  { m_HP[ATTR_CURRENT] = curHP; m_HP[ATTR_MAX] = maxHP; }
 
 	Level_t getLevel ()  { return m_Level; }
-	void setLevel (Level_t exp) throw () { m_Level = exp; }
+	void setLevel (Level_t exp)  { m_Level = exp; }
 
 	Exp_t getExp ()  { return m_Exp; }
-	void setExp (Exp_t exp) throw () { m_Exp = exp; }
+	void setExp (Exp_t exp)  { m_Exp = exp; }
 
 	Rank_t getRank ()  { return m_Rank; }
-	void setRank (Rank_t rank) throw () { m_Rank = rank; }
+	void setRank (Rank_t rank)  { m_Rank = rank; }
 
 	// get/set gold
 	//Gold_t getGold ()  { return m_Gold; }
-	//void setGold (Gold_t gold) throw () { m_Gold = gold; }
+	//void setGold (Gold_t gold)  { m_Gold = gold; }
 
 	// get/set zoneID
 	//ZoneID_t getZoneID ()  { return m_ZoneID; }
-	//void setZoneID (ZoneID_t zoneID) throw () { m_ZoneID = zoneID; }
+	//void setZoneID (ZoneID_t zoneID)  { m_ZoneID = zoneID; }
 
 	Bonus_t getBonus()  { return m_Bonus; }
-	void setBonus(Bonus_t Bonus) throw () { m_Bonus = Bonus; }
+	void setBonus(Bonus_t Bonus)  { m_Bonus = Bonus; }
 
 	void setShapeInfo(DWORD flag, Color_t color[VAMPIRE_COLOR_MAX]) ;
 

@@ -220,7 +220,7 @@ void EffectMPRecovery::unaffect (Zone* pZone , ZoneCoord_t x , ZoneCoord_t y , O
 }
 
 string EffectMPRecovery::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 

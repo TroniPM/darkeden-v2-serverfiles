@@ -10,7 +10,7 @@
 #include "CGShopRequestBuy.h"
 
 void CGShopRequestBuy::read (SocketInputStream & iStream) 
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY
 		
@@ -25,7 +25,7 @@ void CGShopRequestBuy::read (SocketInputStream & iStream)
 }
 
 void CGShopRequestBuy::write (SocketOutputStream & oStream) const 
-     throw (ProtocolException , Error)
+     
 {
 	__BEGIN_TRY
 
@@ -40,7 +40,7 @@ void CGShopRequestBuy::write (SocketOutputStream & oStream) const
 }
 
 void CGShopRequestBuy::execute (Player* pPlayer) 
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY
 

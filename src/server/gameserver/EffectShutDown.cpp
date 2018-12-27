@@ -264,7 +264,7 @@ void EffectShutDown::unaffect (Zone* pZone , ZoneCoord_t x , ZoneCoord_t y , Obj
 // get debug string
 //----------------------------------------------------------------------
 string EffectShutDown::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 

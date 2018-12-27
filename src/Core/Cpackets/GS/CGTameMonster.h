@@ -39,7 +39,7 @@ public:
 public:
 	// get/set ObjectID
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 	
 private :
 	
@@ -58,11 +58,11 @@ private :
 class CGTameMonsterFactory : public PacketFactory {
 
 public:
-	CGTameMonsterFactory() throw() {}
-	virtual ~CGTameMonsterFactory() throw() {}
+	CGTameMonsterFactory()  {}
+	virtual ~CGTameMonsterFactory()  {}
 
 public:
-	Packet* createPacket() throw() { return new CGTameMonster(); }
+	Packet* createPacket()  { return new CGTameMonster(); }
 	string getPacketName()  { return "CGTameMonster"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_TAME_MONSTER; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID; }

@@ -290,7 +290,7 @@ void WeatherManager::heartbeat ()
 // get debug string
 //--------------------------------------------------------------------------------
 string WeatherManager::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 

@@ -53,11 +53,11 @@ private:
 class GCPetUseSkillFactory : public PacketFactory 
 {
 public :
-	GCPetUseSkillFactory() throw() {}
-	virtual ~GCPetUseSkillFactory() throw() {}
+	GCPetUseSkillFactory()  {}
+	virtual ~GCPetUseSkillFactory()  {}
 	
 public:
-	Packet* createPacket() throw() { return new GCPetUseSkill(); }
+	Packet* createPacket()  { return new GCPetUseSkill(); }
 	string getPacketName()  { return "GCPetUseSkill"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_PET_USE_SKILL; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + szObjectID; }

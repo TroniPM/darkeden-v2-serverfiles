@@ -42,14 +42,14 @@ public:
 	virtual string getObjectTableName()  { return "LarvaObject"; }
 
 	virtual ItemType_t getItemType()  { return m_ItemType; }
-	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
+	virtual void setItemType(ItemType_t itemType)  { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() ;
 	virtual VolumeHeight_t getVolumeHeight() ;
 	virtual Weight_t getWeight() ;
 
 	virtual ItemNum_t getNum()  { return m_Num; }
-	virtual void setNum(ItemNum_t Num) throw() { m_Num = Num; }
+	virtual void setNum(ItemNum_t Num)  { m_Num = Num; }
 
 	bool    isStackable()  { return true; }
 
@@ -156,7 +156,7 @@ public:
 public:
 
 	// create item
-	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new Larva(ItemType,OptionType,1); }
+	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType)  { return new Larva(ItemType,OptionType,1); }
 
 };
 

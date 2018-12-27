@@ -27,11 +27,11 @@ public:
 
 public:
 	Turn_t getTurn()  { return m_Turn; }
-	void setTurn(Turn_t turn) throw() { m_Turn = turn; }
+	void setTurn(Turn_t turn)  { m_Turn = turn; }
 
-	Timeval & getNextTurn() throw() { return m_NextTurn; }
+	Timeval & getNextTurn()  { return m_NextTurn; }
 	const Timeval & getNextTurn()  { return m_NextTurn; }
-	void setNextTurn(Timeval tv) throw() { m_NextTurn = tv; }	
+	void setNextTurn(Timeval tv)  { m_NextTurn = tv; }	
 
 private:
 	Turn_t m_Turn;

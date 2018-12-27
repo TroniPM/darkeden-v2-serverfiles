@@ -86,7 +86,7 @@ void ActionAskByQuestLevel::execute (Creature * pCreature1 , Creature * pCreatur
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionAskByQuestLevel::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

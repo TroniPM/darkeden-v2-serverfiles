@@ -383,7 +383,7 @@ void UpdateServerPlayer::processOutput ()
 // send packet to socket
 //--------------------------------------------------------------------------------
 void UpdateServerPlayer::sendPacket ( Packet * pPacket )
-	throw ( ProtocolException , Error )
+	
 {
 	__BEGIN_TRY
 

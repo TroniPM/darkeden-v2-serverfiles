@@ -16,8 +16,8 @@
 class Transfusion : public SkillHandler 
 {
 public:
-	Transfusion() throw() {}
-	~Transfusion() throw() {}
+	Transfusion()  {}
+	~Transfusion()  {}
 
 public:
     string getSkillHandlerName()  { return "Transfusion"; }

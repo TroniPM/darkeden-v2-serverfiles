@@ -59,7 +59,7 @@ public:
 	
 	// get/set error message
 	BYTE getCode()  { return m_Code; }
-	void setCode(BYTE code) throw() { m_Code = code; }
+	void setCode(BYTE code)  { m_Code = code; }
 
 private : 
 
@@ -82,7 +82,7 @@ class LCSelectPCErrorFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new LCSelectPCError(); }
+	Packet* createPacket()  { return new LCSelectPCError(); }
 
 	// get packet name
 	string getPacketName()  { return "LCSelectPCError"; }

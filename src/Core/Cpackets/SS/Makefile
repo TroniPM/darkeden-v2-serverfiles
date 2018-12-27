@@ -4583,7 +4583,7 @@ CLCreatePC.o: CLCreatePC.cpp CLCreatePC.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
  /home/darkeden/vs/src/Core/SocketAPI.h \
  /home/darkeden/vs/src/Core/SocketOutputStream.h \
- /home/darkeden/vs/src/Core/PacketFactory.h /usr/include/STL/bitset
+ /home/darkeden/vs/src/Core/PacketFactory.h /usr/include/c++/7/bitset
 CLCreatePCHandler.o: CLCreatePCHandler.cpp CLCreatePC.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
@@ -4643,7 +4643,7 @@ CLCreatePCHandler.o: CLCreatePCHandler.cpp CLCreatePC.h \
  /home/darkeden/vs/src/Core/SocketImpl.h \
  /home/darkeden/vs/src/Core/SocketAPI.h \
  /home/darkeden/vs/src/Core/SocketOutputStream.h \
- /home/darkeden/vs/src/Core/PacketFactory.h /usr/include/STL/bitset
+ /home/darkeden/vs/src/Core/PacketFactory.h /usr/include/c++/7/bitset
 CLDeletePC.o: CLDeletePC.cpp CLDeletePC.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
@@ -12095,7 +12095,7 @@ CGPortCheckHandler.o: CGPortCheckHandler.cpp CGPortCheck.h \
  /home/darkeden/vs/src/Core/SocketOutputStream.h \
  /home/darkeden/vs/src/Core/Datagram.h \
  /home/darkeden/vs/src/Core/PacketFactory.h \
- /home/darkeden/vs/src/Core/Properties.h /usr/include/STL/map \
+ /home/darkeden/vs/src/Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h /usr/include/i386-linux-gnu/bits/stdio_lim.h
 CGGuildChat.o: CGGuildChat.cpp CGGuildChat.h \

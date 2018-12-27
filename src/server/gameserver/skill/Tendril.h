@@ -16,8 +16,8 @@
 class Tendril : public SkillHandler 
 {
 public:
-	Tendril() throw() {}
-	~Tendril() throw() {}
+	Tendril()  {}
+	~Tendril()  {}
 	
 public:
     string getSkillHandlerName()  { return "Tendril"; }

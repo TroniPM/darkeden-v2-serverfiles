@@ -35,11 +35,11 @@ public:
 	void run();
 
 	// 빌링 관련 패킷 보내기 함수
-	bool sendLogin( PayUser* pPayUser, int i ) throw ( ProtocolException, Error );
-	void sendIntervalValidation( int i ) throw ( ProtocolException, Error );
-	bool sendMinusPoint( PayUser* pPayUser, int i ) throw ( ProtocolException, Error );
-	void sendMinusMinute( PayUser* pPayUser, int i ) throw ( ProtocolException, Error );
-	void sendLogout( PayUser* pPayUser, int i ) throw ( ProtocolException, Error );
+	bool sendLogin( PayUser* pPayUser, int i ) ;
+	void sendIntervalValidation( int i ) ;
+	bool sendMinusPoint( PayUser* pPayUser, int i ) ;
+	void sendMinusMinute( PayUser* pPayUser, int i ) ;
+	void sendLogout( PayUser* pPayUser, int i ) ;
 
 	int getVersionNumber() ;
 	int getMinusIntervalInt() ;

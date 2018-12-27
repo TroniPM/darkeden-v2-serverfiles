@@ -16,8 +16,8 @@
 class Armageddon: public SkillHandler 
 {
 public:
-	Armageddon() throw() {}
-	~Armageddon() throw() {}
+	Armageddon()  {}
+	~Armageddon()  {}
 	
 public:
     string getSkillHandlerName()  { return "Armageddon"; }

@@ -61,7 +61,7 @@ void NPCInfo::write(SocketOutputStream& oStream) const
 }
 
 string NPCInfo::toString(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 

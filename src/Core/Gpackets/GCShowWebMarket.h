@@ -98,7 +98,7 @@ class GCShowWebMarketFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCShowWebMarket(); }
+	Packet* createPacket()  { return new GCShowWebMarket(); }
 
 	// get packet name
 	string getPacketName()  { return "GCShowWebMarket"; }

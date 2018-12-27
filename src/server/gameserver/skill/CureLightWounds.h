@@ -16,8 +16,8 @@
 class CureLightWounds: public SkillHandler 
 {
 public:
-	CureLightWounds() throw() {}
-	~CureLightWounds() throw() {}
+	CureLightWounds()  {}
+	~CureLightWounds()  {}
 	
 public:
     string getSkillHandlerName()  { return "CureLightWounds"; }

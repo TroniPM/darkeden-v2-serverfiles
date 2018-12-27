@@ -28,30 +28,30 @@ public:
 	string getItemClassName()  { return ItemClass2String[getItemClass()]; }
 
 	ItemType_t getItemType()  { return m_ItemType; }
-    void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
+    void setItemType(ItemType_t itemType)  { m_ItemType = itemType; }
  
 	string getName()  { return m_Name; }
-	void setName(const string & name) throw() { m_Name = name; }
+	void setName(const string & name)  { m_Name = name; }
 
 	string getEName()  { return m_EName; }
-	void setEName(const string & ename) throw() { m_EName = ename; }
+	void setEName(const string & ename)  { m_EName = ename; }
 	
 	Price_t getPrice()  { return m_Price; }
-	void setPrice(Price_t Price) throw(){ m_Price = Price; }
+	void setPrice(Price_t Price) { m_Price = Price; }
 
 	VolumeType_t getVolumeType()  { return m_VolumeType; }
-	void setVolumeType(VolumeType_t VolumeType) throw() { m_VolumeType = VolumeType; }
+	void setVolumeType(VolumeType_t VolumeType)  { m_VolumeType = VolumeType; }
 	VolumeWidth_t getVolumeWidth() ;
 	VolumeHeight_t getVolumeHeight() ;
 
 	Weight_t getWeight()  { return m_Weight; }
-	void setWeight(Weight_t weight) throw() { m_Weight = weight; }
+	void setWeight(Weight_t weight)  { m_Weight = weight; }
 
 	Ratio_t getRatio()  { return m_Ratio; }
-	void setRatio(Ratio_t Ratio) throw() { m_Ratio = Ratio; }
+	void setRatio(Ratio_t Ratio)  { m_Ratio = Ratio; }
 	
 	string getDescription()  { return m_Description; }
-	void setDescription(const string& description) throw() { m_Description = description ; }
+	void setDescription(const string& description)  { m_Description = description ; }
 	
 	virtual Attr_t  getReqSTR(void)     { return m_ReqSTR; }
 	virtual Attr_t  getReqDEX(void)     { return m_ReqDEX; }
@@ -65,17 +65,17 @@ public:
 	virtual SkillDomainType_t  getReqDomainType(void)     { return m_ReqDomainType; }
 	virtual SkillType_t getSkillLearn(void)   { return m_ReqSkillLearn; }
 
-	virtual void    setReqSTR(Attr_t req) throw()      { m_ReqSTR = req; }
-	virtual void    setReqDEX(Attr_t req) throw()      { m_ReqDEX = req; }
-	virtual void    setReqINT(Attr_t req) throw()      { m_ReqINT = req; }
-	virtual void    setReqSum(Attr_t req) throw()      { m_ReqSum = req; }
-	virtual void    setReqLevel(Level_t req) throw()   { m_ReqLevel = req; }
-	virtual void    setReqAdvanceLevel(Level_t req) throw()   { m_ReqAdvanceLevel = req; }
-	virtual void    setReqGender(Attr_t req) throw()   { m_ReqGender = req; }
+	virtual void    setReqSTR(Attr_t req)       { m_ReqSTR = req; }
+	virtual void    setReqDEX(Attr_t req)       { m_ReqDEX = req; }
+	virtual void    setReqINT(Attr_t req)       { m_ReqINT = req; }
+	virtual void    setReqSum(Attr_t req)       { m_ReqSum = req; }
+	virtual void    setReqLevel(Level_t req)    { m_ReqLevel = req; }
+	virtual void    setReqAdvanceLevel(Level_t req)    { m_ReqAdvanceLevel = req; }
+	virtual void    setReqGender(Attr_t req)    { m_ReqGender = req; }
 
 	// 새로 추가
-	virtual void    setReqDomainType(SkillDomainType_t req) throw()      { m_ReqDomainType = req; }
-	virtual void    setReqSkillLearn(SkillType_t req) throw()      { m_ReqSkillLearn = req; }
+	virtual void    setReqDomainType(SkillDomainType_t req)       { m_ReqDomainType = req; }
+	virtual void    setReqSkillLearn(SkillType_t req)       { m_ReqSkillLearn = req; }
 	virtual void    setReqAbility(const string& req) ;
 
 	virtual string toString()  = 0;
@@ -84,46 +84,46 @@ public:
 // 개별 정보. 편의상 베이스 클래스에 정의해준다.
 public:
 	virtual Durability_t getDurability()  { return 1; }
-	virtual void setDurability(Durability_t durability) throw() {}
+	virtual void setDurability(Durability_t durability)  {}
 
 	virtual Damage_t getMinDamage()  { return 0; }
-	virtual void setMinDamage(Damage_t damage) throw() {}
+	virtual void setMinDamage(Damage_t damage)  {}
 
 	virtual Damage_t getMaxDamage()  { return 0; }
-	virtual void setMaxDamage(Damage_t damage) throw() {}
+	virtual void setMaxDamage(Damage_t damage)  {}
 
 	virtual Range_t getRange()  { return 0; }
-	virtual void setRange(Range_t range) throw() {}
+	virtual void setRange(Range_t range)  {}
 
 	virtual ToHit_t getToHitBonus()  { return 0; }
-	virtual void setToHitBonus(ToHit_t tohit) throw() {}
+	virtual void setToHitBonus(ToHit_t tohit)  {}
 
 	virtual Defense_t getDefenseBonus()  { return 0; }
-	virtual void setDefenseBonus(Defense_t defense) throw() {}
+	virtual void setDefenseBonus(Defense_t defense)  {}
 
 	virtual Protection_t getProtectionBonus()  { return 0; }
-	virtual void setProtectionBonus(Protection_t defense) throw() {}
+	virtual void setProtectionBonus(Protection_t defense)  {}
 
 	virtual MP_t getMPBonus()  { return 0;}
-	virtual void setMPBonus(MP_t bonus) throw() { }
+	virtual void setMPBonus(MP_t bonus)  { }
 
 	virtual Silver_t getMaxSilver()  { return 0; }
-	virtual void setMaxSilver(Silver_t amount) throw() { }
+	virtual void setMaxSilver(Silver_t amount)  { }
 
 	virtual Speed_t getSpeed(void)  { return 0; }
-	virtual void setSpeed(Speed_t speed) throw() { } 
+	virtual void setSpeed(Speed_t speed)  { } 
 
 	virtual uint getItemLevel(void)  { return 99; }
-	virtual void setItemLevel(uint level) throw() { }
+	virtual void setItemLevel(uint level)  { }
 
 	virtual int getCriticalBonus(void)  { return 0; }
-	virtual void setCriticalBonus(int bonus) throw() { };
+	virtual void setCriticalBonus(int bonus)  { };
 
 	virtual int getDefaulBodyColor(void)  { return 0; }
-	virtual void setDefaulBodyColor(int DefaulBodyColor) throw() { };
+	virtual void setDefaulBodyColor(int DefaulBodyColor)  { };
 
 	virtual int getDefaulEffectColor(void)  { return 0; }
-	virtual void setDefaulEffectColor(int DefaulEffectColor) throw() { };
+	virtual void setDefaulEffectColor(int DefaulEffectColor)  { };
 
 	virtual ElementalType getElementalType() const { return ELEMENTAL_MAX; }
 	virtual Elemental_t getElemental() const { return 0; }

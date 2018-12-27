@@ -16,8 +16,8 @@
 class UltimateBlow : public SkillHandler 
 {
 public:
-	UltimateBlow() throw() {}
-	~UltimateBlow() throw() {}
+	UltimateBlow()  {}
+	~UltimateBlow()  {}
 
 public:
     string getSkillHandlerName()  { return "UltimateBlow"; }

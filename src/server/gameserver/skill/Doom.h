@@ -16,8 +16,8 @@
 class Doom : public SkillHandler 
 {
 public:
-	Doom() throw() {}
-	~Doom() throw() {}
+	Doom()  {}
+	~Doom()  {}
 	
 public:
     string getSkillHandlerName()  { return "Doom"; }

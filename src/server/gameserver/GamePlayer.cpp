@@ -657,7 +657,7 @@ void GamePlayer::processOutput ()
 //
 //////////////////////////////////////////////////////////////////////
 void GamePlayer::sendPacket (Packet* pPacket) 
-	 throw (ProtocolException , Error)
+	 
 {	
 	__BEGIN_TRY
 	
@@ -930,7 +930,7 @@ Packet* GamePlayer::getOldPacket (uint prev)
 //
 //////////////////////////////////////////////////////////////////////
 Packet* GamePlayer::getOldPacket (PacketID_t packetID)
-	throw (NoSuchElementException)
+	
 {
 	__BEGIN_TRY
 
@@ -1416,7 +1416,7 @@ bool GamePlayer::verifySpeed(Packet* pPacket)
 }
 
 void GamePlayer::loadSpecialEventCount(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1450,7 +1450,7 @@ void GamePlayer::loadSpecialEventCount(void)
 }
 
 void GamePlayer::saveSpecialEventCount(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1643,7 +1643,7 @@ bool GamePlayer::loginPayPlay( const string& ip, const string& playerID )
 }
 
 bool GamePlayer::updatePayPlayTime( const string& playerID, const VSDateTime& currentDateTime, const Timeval& currentTime )
-    throw ( ProtocolException, Error )
+    
 {
 	__BEGIN_TRY
 #ifdef __CONNECT_BILLING_SYSTEM__

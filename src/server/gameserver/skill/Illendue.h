@@ -16,8 +16,8 @@
 class Illendue : public SkillHandler 
 {
 public:
-	Illendue() throw() {}
-	~Illendue() throw() {}
+	Illendue()  {}
+	~Illendue()  {}
 	
 public:
     string getSkillHandlerName()  { return "Illendue"; }

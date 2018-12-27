@@ -16,8 +16,8 @@
 class WillOfLife : public SkillHandler 
 {
 public:
-	WillOfLife() throw() {}
-	~WillOfLife() throw() {}
+	WillOfLife()  {}
+	~WillOfLife()  {}
 	
 public:
     string getSkillHandlerName()  { return "WillOfLife"; }

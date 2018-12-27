@@ -851,7 +851,7 @@ LCPCList.o: LCPCList.cpp LCPCList.h \
  /home/darkeden/vs/src/Core/SocketOutputStream.h \
  /home/darkeden/vs/src/Core/PacketFactory.h \
  /home/darkeden/vs/src/Core/PCInfo.h \
- /home/darkeden/vs/src/Core/PCSlayerInfo.h /usr/include/STL/bitset \
+ /home/darkeden/vs/src/Core/PCSlayerInfo.h /usr/include/c++/7/bitset \
  /home/darkeden/vs/src/Core/PCVampireInfo.h
 LCPCListHandler.o: LCPCListHandler.cpp LCPCList.h \
  /home/darkeden/vs/src/Core/Packet.h \
@@ -914,7 +914,7 @@ LCPCListHandler.o: LCPCListHandler.cpp LCPCList.h \
  /home/darkeden/vs/src/Core/SocketOutputStream.h \
  /home/darkeden/vs/src/Core/PacketFactory.h \
  /home/darkeden/vs/src/Core/PCInfo.h \
- /home/darkeden/vs/src/Core/PCSlayerInfo.h /usr/include/STL/bitset \
+ /home/darkeden/vs/src/Core/PCSlayerInfo.h /usr/include/c++/7/bitset \
  /home/darkeden/vs/src/Core/PCVampireInfo.h
 LCQueryResultPlayerID.o: LCQueryResultPlayerID.cpp \
  LCQueryResultPlayerID.h /home/darkeden/vs/src/Core/Packet.h \
@@ -1699,7 +1699,7 @@ LCServerList.o: LCServerList.cpp LCServerList.h \
  /home/darkeden/vs/src/Core/PacketFactory.h \
  /home/darkeden/vs/src/Core/ServerGroupInfo.h \
  /home/darkeden/vs/src/Core/PCSlayerInfo.h \
- /home/darkeden/vs/src/Core/PCInfo.h /usr/include/STL/bitset \
+ /home/darkeden/vs/src/Core/PCInfo.h /usr/include/c++/7/bitset \
  /home/darkeden/vs/src/Core/PCVampireInfo.h
 LCServerListHandler.o: LCServerListHandler.cpp LCServerList.h \
  /home/darkeden/vs/src/Core/Packet.h \
@@ -1824,7 +1824,7 @@ LCWorldList.o: LCWorldList.cpp LCWorldList.h \
  /home/darkeden/vs/src/Core/PacketFactory.h \
  /home/darkeden/vs/src/Core/WorldInfo.h \
  /home/darkeden/vs/src/Core/PCSlayerInfo.h \
- /home/darkeden/vs/src/Core/PCInfo.h /usr/include/STL/bitset \
+ /home/darkeden/vs/src/Core/PCInfo.h /usr/include/c++/7/bitset \
  /home/darkeden/vs/src/Core/PCVampireInfo.h
 LCWorldListHandler.o: LCWorldListHandler.cpp LCWorldList.h \
  /home/darkeden/vs/src/Core/Packet.h \
@@ -2251,7 +2251,7 @@ LGIncomingConnectionHandler.o: LGIncomingConnectionHandler.cpp \
  /home/darkeden/vs/src/Core/SocketOutputStream.h \
  /home/darkeden/vs/src/Core/Datagram.h \
  /home/darkeden/vs/src/Core/PacketFactory.h \
- /home/darkeden/vs/src/Core/Properties.h /usr/include/STL/map \
+ /home/darkeden/vs/src/Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h
 LGIncomingConnectionOK.o: LGIncomingConnectionOK.cpp \

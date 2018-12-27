@@ -34,10 +34,10 @@ public:
 	string toString() ;
 
 public:
-	void setFromInventory(bool b) throw() { m_bFromInventory = b; }
+	void setFromInventory(bool b)  { m_bFromInventory = b; }
 	void setSlotID(SlotID_t id)  { m_SlotID = id; }
 	void setObjectID(ObjectID_t id)  { m_ObjectID = id; }
-	void setInventoryXY(CoordInven_t x, CoordInven_t y) throw() { m_invenX = x; m_invenY = y; }
+	void setInventoryXY(CoordInven_t x, CoordInven_t y)  { m_invenX = x; m_invenY = y; }
 
 private:
 	CoordInven_t m_invenX;         // 인벤토리에서 리로드할 때의 좌표

@@ -22,7 +22,7 @@
 
 #include "MonsterAI.h"
 
-SummonGroundElemental::SummonGroundElemental() throw()
+SummonGroundElemental::SummonGroundElemental() 
 {
 	m_MaskIndex[0] = 4;
 	m_ElementalMask[0][0] = POINT(0,1);

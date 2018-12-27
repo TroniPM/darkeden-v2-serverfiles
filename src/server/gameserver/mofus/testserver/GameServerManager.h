@@ -42,16 +42,16 @@ public:
 	void select() throw(TimeoutException, InterruptedException, Error);
 
 	// process all inputs
-	void processInputs() throw(IOException, Error);
+	void processInputs() ;
 
 	// process all outputs
-	void processOutputs() throw(IOException, Error);
+	void processOutputs() ;
 
 	// process all exceptions
-	void processExceptions() throw(IOException, Error);
+	void processExceptions() ;
 	
 	// process all commands
-	void processCommands() throw(IOException, Error);
+	void processCommands() ;
 
 	// accept new connection
 	void acceptNewConnection();

@@ -52,7 +52,7 @@
 // constructor
 ////////////////////////////////////////////////////////////////////////////////
 ConditionFactoryManager::ConditionFactoryManager () 
-	throw ()
+	
 : m_Factories(NULL) , m_Size(Condition::CONDITION_MAX)
 {
 	__BEGIN_TRY
@@ -74,7 +74,7 @@ ConditionFactoryManager::ConditionFactoryManager ()
 // destructor
 ////////////////////////////////////////////////////////////////////////////////
 ConditionFactoryManager::~ConditionFactoryManager () 
-	throw ()
+	
 {
 	__BEGIN_TRY
 		
@@ -252,7 +252,7 @@ ConditionType_t ConditionFactoryManager::getConditionType (const string & condit
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ConditionFactoryManager::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 

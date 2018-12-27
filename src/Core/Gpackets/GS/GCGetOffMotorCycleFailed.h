@@ -75,16 +75,16 @@ class GCGetOffMotorCycleFailedFactory : public PacketFactory {
 public :
 	
 	// constructor
-	GCGetOffMotorCycleFailedFactory() throw() {}
+	GCGetOffMotorCycleFailedFactory()  {}
 	
 	// destructor
-	virtual ~GCGetOffMotorCycleFailedFactory() throw() {}
+	virtual ~GCGetOffMotorCycleFailedFactory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCGetOffMotorCycleFailed(); }
+	Packet* createPacket()  { return new GCGetOffMotorCycleFailed(); }
 
 	// get packet name
 	string getPacketName()  { return "GCGetOffMotorCycleFailed"; }

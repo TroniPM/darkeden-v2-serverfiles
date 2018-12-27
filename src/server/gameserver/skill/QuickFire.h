@@ -16,8 +16,8 @@
 class QuickFire : public SkillHandler 
 {
 public:
-	QuickFire() throw() {}
-	~QuickFire() throw() {}
+	QuickFire()  {}
+	~QuickFire()  {}
 
 public:
     string getSkillHandlerName()  { return "QuickFire"; }

@@ -62,34 +62,34 @@ public :
 
 	// get/set creature ID 
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t creatureID) throw() { m_ObjectID = creatureID; }
+	void setObjectID(ObjectID_t creatureID)  { m_ObjectID = creatureID; }
 
 	// get/set monster type
 	MonsterType_t getMonsterType()  { return m_MonsterType; }
-	void setMonsterType(MonsterType_t monsterType) throw() { m_MonsterType = monsterType; }
+	void setMonsterType(MonsterType_t monsterType)  { m_MonsterType = monsterType; }
 
 	// get/set monster name
 	string getMonsterName()  { return m_MonsterName; }
-	void setMonsterName(string name) throw() { m_MonsterName = name; }
+	void setMonsterName(string name)  { m_MonsterName = name; }
 
 	// get/set X
 	Coord_t getX()  { return m_X; }
-	void setX(Coord_t x) throw() { m_X = x; }
+	void setX(Coord_t x)  { m_X = x; }
 	
 	// get/set Y
 	Coord_t getY()  { return m_Y; }
-	void setY(Coord_t y) throw() { m_Y = y; }
+	void setY(Coord_t y)  { m_Y = y; }
 
 	// get/set Dir
 	Dir_t getDir()  { return m_Dir; }
-	void setDir(Dir_t dir) throw() { m_Dir = dir; }
+	void setDir(Dir_t dir)  { m_Dir = dir; }
 
 	bool gethasHead()  { return m_bhasHead; }
-	void sethasHead(bool bhasHead) throw() { m_bhasHead = bhasHead; }
+	void sethasHead(bool bhasHead)  { m_bhasHead = bhasHead; }
 
 	// get/set Treasure Count
 	BYTE getTreasureCount()  { return m_TreasureCount; }
-	void setTreasureCount(BYTE Count) throw() { m_TreasureCount = Count; }
+	void setTreasureCount(BYTE Count)  { m_TreasureCount = Count; }
 
 	ObjectID_t getLastKiller() const { return m_LastKiller; }
 	void setLastKiller( ObjectID_t id ) { m_LastKiller = id; }
@@ -127,7 +127,7 @@ class GCAddMonsterCorpseFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCAddMonsterCorpse(); }
+	Packet* createPacket()  { return new GCAddMonsterCorpse(); }
 
 	// get packet name
 	string getPacketName()  { return "GCAddMonsterCorpse"; }

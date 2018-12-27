@@ -61,15 +61,15 @@ public :
 
 	// get / set Delay
 	BYTE getDelay()  { return m_Delay; }
-	void setDelay(BYTE Delay) throw() { m_Delay = Delay; }
+	void setDelay(BYTE Delay)  { m_Delay = Delay; }
 
 	// get / set Period
 	MP_t getPeriod()  { return m_Period; }
-	void setPeriod(MP_t Period) throw() { m_Period = Period; }
+	void setPeriod(MP_t Period)  { m_Period = Period; }
 
 	// get / set Quantity
 	MP_t getQuantity()  { return m_Quantity; }
-	void setQuantity(MP_t Quantity) throw() { m_Quantity = Quantity; }
+	void setQuantity(MP_t Quantity)  { m_Quantity = Quantity; }
 
 private :
 	
@@ -99,16 +99,16 @@ class GCMPRecoveryStartFactory : public PacketFactory {
 public :
 	
 	// constructor
-	GCMPRecoveryStartFactory() throw() {}
+	GCMPRecoveryStartFactory()  {}
 	
 	// destructor
-	virtual ~GCMPRecoveryStartFactory() throw() {}
+	virtual ~GCMPRecoveryStartFactory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCMPRecoveryStart(); }
+	Packet* createPacket()  { return new GCMPRecoveryStart(); }
 
 	// get packet name
 	string getPacketName()  { return "GCMPRecoveryStart"; }

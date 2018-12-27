@@ -26,13 +26,13 @@ Mutex    PetEnchantItem::m_Mutex;
 //////////////////////////////////////////////////////////////////////////////
 
 PetEnchantItem::PetEnchantItem()
-	throw()
+	
 {
 	m_ItemType = 0;
 }
 
 PetEnchantItem::PetEnchantItem(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num)
-	throw()
+	
 {
 	m_ItemType = itemType;
 	m_Num = Num;
@@ -165,7 +165,7 @@ void PetEnchantItem::makePCItemInfo(PCItemInfo& result) const
 }
 
 string PetEnchantItem::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -213,7 +213,7 @@ Weight_t PetEnchantItem::getWeight() const
 //////////////////////////////////////////////////////////////////////////////
 
 string PetEnchantItemInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "PetEnchantItemInfo("

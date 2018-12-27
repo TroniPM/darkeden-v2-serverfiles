@@ -47,11 +47,11 @@ public:
 
     // get / set Groupname
 	string getGroupName()  { return m_GroupName; }
-	void setGroupName(const string & GroupName) throw() { m_GroupName = GroupName; }
+	void setGroupName(const string & GroupName)  { m_GroupName = GroupName; }
 	
 	// get / set GoreLevel
 	bool isAdult()  { return m_isAdult; }
-	void setAdult(bool isAdult) throw() { m_isAdult = isAdult; }
+	void setAdult(bool isAdult)  { m_isAdult = isAdult; }
 	
 	
 	// get packet's debug string
@@ -81,7 +81,7 @@ class LCRegisterPlayerOKFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new LCRegisterPlayerOK(); }
+	Packet* createPacket()  { return new LCRegisterPlayerOK(); }
 
 	// get packet name
 	string getPacketName()  { return "LCRegisterPlayerOK"; }

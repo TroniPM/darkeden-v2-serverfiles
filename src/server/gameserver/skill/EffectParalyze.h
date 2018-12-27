@@ -32,7 +32,7 @@ public:
 
 public:
 	Level_t getLevel()  { return m_Level; }
-	void setLevel(Level_t level) throw() { m_Level = level; }
+	void setLevel(Level_t level)  { m_Level = level; }
 
 //	int getDefensePenalty(void)  { return m_DefensePenalty; }
 //	void setDefensePenalty(int penalty) { m_DefensePenalty = penalty; }

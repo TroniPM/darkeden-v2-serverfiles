@@ -41,7 +41,7 @@ public:
 	void setDuration(Duration_t d)  { m_Duration = d; }
 	Duration_t getDuration()  { return m_Duration;}
 	
-	void setStartTime() throw() { getCurrentTime(m_StartTime);}
+	void setStartTime()  { getCurrentTime(m_StartTime);}
 	bool isHalfTimePassed() 
 	{
 		Timeval currentTime;

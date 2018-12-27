@@ -42,7 +42,7 @@ class GCSubInventoryInfoFactory : public PacketFactory {
 
 public :
 	
-	Packet* createPacket() throw() { return new GCSubInventoryInfo(); }	
+	Packet* createPacket()  { return new GCSubInventoryInfo(); }	
 	string getPacketName()  { return "GCSubInventoryInfo"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_SUB_INVENTORY_INFO; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + InventoryInfo::getMaxSize(); }

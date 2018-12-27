@@ -25,7 +25,7 @@ const int DLIndexByTimeband[4] =
 //////////////////////////////////////////////////////////////////////////////
 
 DarkLightInfo::DarkLightInfo() 
-	throw() 
+	 
 { 
 	__BEGIN_TRY
 
@@ -36,7 +36,7 @@ DarkLightInfo::DarkLightInfo()
 }
 
 DarkLightInfo::DarkLightInfo(const DarkLightInfo & dli) 
-	throw() 
+	 
 { 
 	__BEGIN_TRY
 
@@ -47,7 +47,7 @@ DarkLightInfo::DarkLightInfo(const DarkLightInfo & dli)
 }
 
 string DarkLightInfo::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -67,7 +67,7 @@ string DarkLightInfo::toString() const
 //////////////////////////////////////////////////////////////////////////////
 
 DarkLightInfoManager::DarkLightInfoManager ()
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -78,7 +78,7 @@ DarkLightInfoManager::DarkLightInfoManager ()
 }
 
 DarkLightInfoManager::~DarkLightInfoManager ()
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -229,7 +229,7 @@ DarkLightInfo* DarkLightInfoManager::getCurrentDarkLightInfo ( Zone* pZone )
 }
 
 string DarkLightInfoManager::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 	StringStream msg;

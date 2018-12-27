@@ -16,8 +16,8 @@
 class FlameSpike : public SkillHandler 
 {
 public:
-	FlameSpike() throw() {}
-	~FlameSpike() throw() {}
+	FlameSpike()  {}
+	~FlameSpike()  {}
 	
 public:
     string getSkillHandlerName()  { return "FlameSpike"; }

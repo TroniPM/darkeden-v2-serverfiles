@@ -45,7 +45,7 @@ public :
 	// 최적화시, 미리 계산된 정수를 사용한다.
 	PacketSize_t getSize ();
 
-	static uint getMaxSize() throw() {
+	static uint getMaxSize()  {
 		return szGuildID + szBYTE + 20 + szGuildMemberRank + szbool;
 	}
 
@@ -54,15 +54,15 @@ public :
 
 	// get/set guild ID
 	GuildID_t getGuildID()  { return m_GuildID; }
-	void setGuildID( GuildID_t guildID ) throw() { m_GuildID = guildID; }
+	void setGuildID( GuildID_t guildID )  { m_GuildID = guildID; }
 
 	// get/set Name
 	string getName()  { return m_Name; }
-	void setName( const string& Name ) throw() { m_Name = Name; }
+	void setName( const string& Name )  { m_Name = Name; }
 
 	// get/set GuildMemberRank
 	GuildMemberRank_t getRank()  { return m_Rank; }
-	void setRank( GuildMemberRank_t rank ) throw() { m_Rank = rank; }
+	void setRank( GuildMemberRank_t rank )  { m_Rank = rank; }
 
 	// get/set logon
 	bool getLogOn() const { return m_bLogOn; }

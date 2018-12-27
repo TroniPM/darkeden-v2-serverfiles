@@ -16,8 +16,8 @@
 class RainbowSlasher : public SkillHandler 
 {
 public:
-	RainbowSlasher() throw() {}
-	~RainbowSlasher() throw() {}
+	RainbowSlasher()  {}
+	~RainbowSlasher()  {}
 	
 public:
     string getSkillHandlerName()  { return "RainbowSlasher"; }

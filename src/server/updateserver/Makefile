@@ -113,7 +113,7 @@ main.o: main.cpp ../../Core/Types.h ../../Core/types/SystemTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h UpdateServer.h \
- ../../Core/Properties.h /usr/include/STL/map \
+ ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../../Core/ServerSocket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h ../../Core/Socket.h \
@@ -182,7 +182,7 @@ UpdateServer.o: UpdateServer.cpp /usr/include/c++/7/fstream \
  ../../Core/types/WarTypes.h ../../Core/types/ServerType.h \
  ../../Core/Utility.h ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- ../../Core/Properties.h /usr/include/STL/map \
+ ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../../Core/ServerSocket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h ../../Core/Socket.h \
@@ -191,7 +191,7 @@ UpdateServer.o: UpdateServer.cpp /usr/include/c++/7/fstream \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_deque.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/SocketOutputStream.h ../Timeval.h /usr/include/sys/time.h \
- /usr/include/STL/bitset
+ /usr/include/c++/7/bitset
 UpdateServerPlayer.o: UpdateServerPlayer.cpp UpdateServerPlayer.h \
  ../../Core/Player.h ../../Core/Types.h ../../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
@@ -245,7 +245,7 @@ UpdateServerPlayer.o: UpdateServerPlayer.cpp UpdateServerPlayer.h \
  ../../Core/SocketOutputStream.h ../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- /usr/include/STL/bitset ../../Core/Assert.h \
+ /usr/include/c++/7/bitset ../../Core/Assert.h \
  ../../Core/Upackets/CUBeginUpdate.h ../../Core/PacketFactory.h \
  ../../Core/UpdateManager.h ../../Core/Update.h ../../Core/UpdateDef.h \
  ../../Core/Resource.h ../../Core/ResourceManager.h \

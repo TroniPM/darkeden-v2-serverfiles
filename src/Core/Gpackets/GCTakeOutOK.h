@@ -50,8 +50,8 @@ public :
 public :
 
 	// get / set ObjectID
-	ObjectID_t getObjectID() throw() { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 private :
 	
@@ -74,7 +74,7 @@ class GCTakeOutOKFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCTakeOutOK(); }
+	Packet* createPacket()  { return new GCTakeOutOK(); }
 
 	// get packet name
 	string getPacketName()  { return "GCTakeOutOK"; }

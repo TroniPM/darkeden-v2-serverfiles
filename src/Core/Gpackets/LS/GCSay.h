@@ -51,15 +51,15 @@ public :
 
 	// get/set sender's creature id
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(const ObjectID_t & creatureID) throw() { m_ObjectID = creatureID; }
+	void setObjectID(const ObjectID_t & creatureID)  { m_ObjectID = creatureID; }
 
 	//get/set text color
 	uint getColor()  { return m_Color; }
-	void setColor( uint color ) throw() { m_Color = color; }
+	void setColor( uint color )  { m_Color = color; }
 
 	// get/set chatting message
 	string getMessage()  { return m_Message; }
-	void setMessage(const string & msg) throw() { m_Message = msg; }
+	void setMessage(const string & msg)  { m_Message = msg; }
 	
 
 private :
@@ -89,7 +89,7 @@ class GCSayFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCSay(); }
+	Packet* createPacket()  { return new GCSay(); }
 
 	// get packet name
 	string getPacketName()  { return "GCSay"; }

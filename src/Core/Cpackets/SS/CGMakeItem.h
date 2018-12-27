@@ -56,10 +56,10 @@ public:
 	
 public:
 	ItemType_t getItemType()  { return m_ItemType;}
-	void setItemType(ItemType_t c) throw() { m_ItemType = c;}
+	void setItemType(ItemType_t c)  { m_ItemType = c;}
 
 	ItemClass_t getItemClass()  { return m_ItemClass;}
-	void setItemClass(ItemClass_t c) throw() { m_ItemClass = c;}
+	void setItemClass(ItemClass_t c)  { m_ItemClass = c;}
 
 private :
 
@@ -81,7 +81,7 @@ class CGMakeItemFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGMakeItem(); }
+	Packet* createPacket()  { return new CGMakeItem(); }
 
 	// get packet name
 	string getPacketName()  { return "CGMakeItem"; }

@@ -30,10 +30,10 @@ public:
 	string toString() ;
 
 public:
-	int getDefenseBonus() throw() { return m_DefenseBonus;}
+	int getDefenseBonus()  { return m_DefenseBonus;}
 	void setDefenseBonus(Defense_t DefenseBonus)  { m_DefenseBonus = DefenseBonus;}
 
-	int getProtectionBonus() throw() { return m_ProtectionBonus;}
+	int getProtectionBonus()  { return m_ProtectionBonus;}
 	void setProtectionBonus(Protection_t ProtectionBonus)  { m_ProtectionBonus = ProtectionBonus;}
 
 private :

@@ -30,9 +30,9 @@ public:
 
 public:
 	HP_t getPoint()  { return m_Point; }
-	void setPoint(HP_t Point) throw() { m_Point = Point; }
+	void setPoint(HP_t Point)  { m_Point = Point; }
 
-	void setUserObjectID(ObjectID_t oid) throw() { m_UserObjectID = oid; }
+	void setUserObjectID(ObjectID_t oid)  { m_UserObjectID = oid; }
 	ObjectID_t getUserObjectID()  { return m_UserObjectID; }
 
 private:

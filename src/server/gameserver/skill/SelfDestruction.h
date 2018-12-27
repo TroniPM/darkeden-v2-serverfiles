@@ -17,7 +17,7 @@ class SelfDestruction: public SkillHandler
 {
 public:
 	SelfDestruction() ;
-	~SelfDestruction() throw() {}
+	~SelfDestruction()  {}
 	
 public:
     string getSkillHandlerName()  { return "SelfDestruction"; }

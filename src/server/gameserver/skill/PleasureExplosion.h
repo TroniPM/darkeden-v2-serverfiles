@@ -17,7 +17,7 @@ class PleasureExplosion: public SkillHandler
 {
 public:
 	PleasureExplosion() ;
-	~PleasureExplosion() throw() {}
+	~PleasureExplosion()  {}
 	
 public:
     string getSkillHandlerName()  { return "PleasureExplosion"; }

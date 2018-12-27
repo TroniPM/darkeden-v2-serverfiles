@@ -25,9 +25,9 @@ public:
 	
 public:
 	void init();
-	void addConnection(int TID, Connection * pConnection) throw(DuplicatedException);
+	void addConnection(int TID, Connection * pConnection) ;
 
-	Connection* getConnection(const string& ip) throw(NoSuchElementException);
+	Connection* getConnection(const string& ip) ;
 	void	executeDummyQuery(Connection* pConnection);
 
 private:

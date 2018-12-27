@@ -54,7 +54,7 @@ public:
 
 	// get/set player's id
 	string getCharacterName()  { return m_CharacterName; }
-	void setCharacterName(const string & playerID) throw() { m_CharacterName = playerID; }
+	void setCharacterName(const string & playerID)  { m_CharacterName = playerID; }
 
 private :
 
@@ -77,7 +77,7 @@ class CLQueryCharacterNameFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CLQueryCharacterName(); }
+	Packet* createPacket()  { return new CLQueryCharacterName(); }
 
 	// get packet name
 	string getPacketName()  { return "CLQueryCharacterName"; }

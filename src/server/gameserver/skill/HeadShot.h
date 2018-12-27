@@ -16,8 +16,8 @@
 class HeadShot : public SkillHandler 
 {
 public:
-	HeadShot() throw() {}
-	~HeadShot() throw() {}
+	HeadShot()  {}
+	~HeadShot()  {}
 
 public:
     string getSkillHandlerName()  { return "HeadShot"; }

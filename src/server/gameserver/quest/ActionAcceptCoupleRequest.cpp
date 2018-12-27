@@ -87,7 +87,7 @@ void ActionAcceptCoupleRequest::execute (Creature * pCreature1 , Creature * pCre
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionAcceptCoupleRequest::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

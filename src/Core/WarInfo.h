@@ -40,7 +40,7 @@ public :
 		return szDWORD + szDWORD;
 	}
 
-	static PacketSize_t getMaxSize()// throw() 
+	static PacketSize_t getMaxSize()//  
 	{ 
 		return szDWORD + szDWORD;
 	}

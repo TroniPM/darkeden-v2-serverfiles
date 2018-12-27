@@ -16,8 +16,8 @@
 class MagicElusion : public SkillHandler 
 {
 public:
-	MagicElusion() throw() {}
-	~MagicElusion() throw() {}
+	MagicElusion()  {}
+	~MagicElusion()  {}
 	
 public:
     string getSkillHandlerName()  { return "MagicElusion"; }

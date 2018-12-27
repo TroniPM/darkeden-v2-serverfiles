@@ -35,7 +35,7 @@
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGTradeAddItemHandler::execute (CGTradeAddItem* pPacket , Player* pPlayer)
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -146,7 +146,7 @@ void CGTradeAddItemHandler::execute (CGTradeAddItem* pPacket , Player* pPlayer)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGTradeAddItemHandler::executeSlayer (CGTradeAddItem* pPacket , Player* pPlayer)
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -326,7 +326,7 @@ void CGTradeAddItemHandler::executeSlayer (CGTradeAddItem* pPacket , Player* pPl
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGTradeAddItemHandler::executeVampire (CGTradeAddItem* pPacket , Player* pPlayer)
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -488,7 +488,7 @@ void CGTradeAddItemHandler::executeVampire (CGTradeAddItem* pPacket , Player* pP
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGTradeAddItemHandler::executeOusters (CGTradeAddItem* pPacket , Player* pPlayer)
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -648,7 +648,7 @@ void CGTradeAddItemHandler::executeOusters (CGTradeAddItem* pPacket , Player* pP
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGTradeAddItemHandler::makeGCTradeAddItemPacket (GCTradeAddItem* pPacket, ObjectID_t Sender, Item* pItem, CoordInven_t X, CoordInven_t Y) 
-	throw ()
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -780,7 +780,7 @@ void CGTradeAddItemHandler::makeGCTradeAddItemPacket (GCTradeAddItem* pPacket, O
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGTradeAddItemHandler::executeError(CGTradeAddItem* pPacket, Player* pPlayer, BYTE ErrorCode)
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 

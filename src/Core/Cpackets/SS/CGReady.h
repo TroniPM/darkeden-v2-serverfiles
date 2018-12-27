@@ -62,7 +62,7 @@ class CGReadyFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGReady(); }
+	Packet* createPacket()  { return new CGReady(); }
 
 	// get packet name
 	string getPacketName()  { return "CGReady"; }

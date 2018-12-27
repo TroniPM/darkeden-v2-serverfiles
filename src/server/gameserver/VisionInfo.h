@@ -66,7 +66,7 @@ private:
 class VisionInfoManager 
 {
 public:
-	VisionInfoManager() throw() {}
+	VisionInfoManager()  {}
 	~VisionInfoManager() ;
 
 public:

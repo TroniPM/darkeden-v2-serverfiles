@@ -143,7 +143,7 @@ void PlayerCreature::applyBloodBibleSign()
 //
 //////////////////////////////////////////////////////////////////////////////
 
-void Slayer::initCastleSkill() throw()
+void Slayer::initCastleSkill() 
 {
 	__BEGIN_TRY
 
@@ -182,7 +182,7 @@ void Slayer::initCastleSkill() throw()
 	__END_CATCH
 }
 
-void Slayer::initAllStat(int numPartyMember) throw()
+void Slayer::initAllStat(int numPartyMember) 
 {
 	__BEGIN_TRY
 
@@ -2010,7 +2010,7 @@ int Slayer::getBloodBibleSignOpenNum() const
 // MAX     = Max 데미지
 // BASIC   = 아이템에 의한 변화 수치
 //////////////////////////////////////////////////////////////////////////////
-void Slayer::computeStatOffset(void) throw()
+void Slayer::computeStatOffset(void) 
 {
 	__BEGIN_TRY
 
@@ -2057,7 +2057,7 @@ void Slayer::computeStatOffset(void) throw()
 	__END_CATCH
 }
 
-void Slayer::computeItemStat(Item* pItem) throw()
+void Slayer::computeItemStat(Item* pItem) 
 {
 	__BEGIN_TRY
 
@@ -2125,7 +2125,7 @@ void Slayer::computeItemStat(Item* pItem) throw()
 	__END_CATCH
 }
 
-void Slayer::computeSetItemStat(Item* pItem) throw()
+void Slayer::computeSetItemStat(Item* pItem) 
 {
 	__BEGIN_TRY
 
@@ -2140,7 +2140,7 @@ void Slayer::computeSetItemStat(Item* pItem) throw()
 	__END_CATCH
 }
 
-void Slayer::computePetItemOptionTypeStat(PetInfo* pPetInfo) throw()
+void Slayer::computePetItemOptionTypeStat(PetInfo* pPetInfo) 
 {
 	__BEGIN_TRY
 
@@ -2162,7 +2162,7 @@ void Slayer::computePetItemOptionTypeStat(PetInfo* pPetInfo) throw()
 	__END_CATCH
 }
 
-void Slayer::computeOptionStat(Item* pItem) throw()
+void Slayer::computeOptionStat(Item* pItem) 
 {
 	__BEGIN_TRY
 
@@ -2471,7 +2471,7 @@ void Slayer::computeOptionClassStat( OptionClass OClass, int PlusPoint )
 
 }
 
-void Slayer::computeOptionStat(OptionType_t optionType) throw()
+void Slayer::computeOptionStat(OptionType_t optionType) 
 {
 	__BEGIN_TRY
 
@@ -2685,7 +2685,7 @@ void Slayer::computeOptionStat(OptionType_t optionType) throw()
 }
 
 void Slayer::addModifyInfo(const SLAYER_RECORD& prev, ModifyInfo& pkt) const
-	throw()
+	
 {
 	__BEGIN_TRY
     	Statement* pStmt = NULL;
@@ -2742,7 +2742,7 @@ void Slayer::addModifyInfo(const SLAYER_RECORD& prev, ModifyInfo& pkt) const
 }
 
 void Slayer::sendModifyInfo(const SLAYER_RECORD& prev) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2773,7 +2773,7 @@ void Slayer::initAllStatAndSend()
 //
 //////////////////////////////////////////////////////////////////////////////
 
-void Vampire::initCastleSkill() throw()
+void Vampire::initCastleSkill() 
 {
 	__BEGIN_TRY
 
@@ -2811,7 +2811,7 @@ void Vampire::initCastleSkill() throw()
 }
 
 void Vampire::initAllStat(int numPartyMember)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -3909,7 +3909,7 @@ int	Vampire::getBloodBibleSignOpenNum() const
 // BASIC   = 아이템에 의한 변화 수치
 //////////////////////////////////////////////////////////////////////////////
 void Vampire::computeStatOffset()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -3951,7 +3951,7 @@ void Vampire::computeStatOffset()
 }
 
 void Vampire::computeItemStat(Item* pItem)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -4018,7 +4018,7 @@ void Vampire::computeItemStat(Item* pItem)
 }
 
 void Vampire::computeOptionStat(Item* pItem)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -4046,7 +4046,7 @@ void Vampire::computeOptionStat(Item* pItem)
 	__END_CATCH
 }
 
-void Vampire::computePetItemOptionTypeStat(PetInfo* pPetInfo) throw()
+void Vampire::computePetItemOptionTypeStat(PetInfo* pPetInfo) 
 {
 	__BEGIN_TRY
 
@@ -4068,7 +4068,7 @@ void Vampire::computePetItemOptionTypeStat(PetInfo* pPetInfo) throw()
 	__END_CATCH
 }
 
-void Vampire::computeSetItemStat(Item* pItem) throw()
+void Vampire::computeSetItemStat(Item* pItem) 
 {
 	__BEGIN_TRY
 
@@ -4248,7 +4248,7 @@ void Vampire::computeOptionClassStat(OptionClass OClass, int PlusPoint)
 }
 
 void Vampire::computeOptionStat(OptionType_t OptionType)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -4384,7 +4384,7 @@ void Vampire::computeOptionStat(OptionType_t OptionType)
 }
 
 void Vampire::addModifyInfo(const VAMPIRE_RECORD& prev, ModifyInfo& pkt) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -4439,7 +4439,7 @@ void Vampire::addModifyInfo(const VAMPIRE_RECORD& prev, ModifyInfo& pkt) const
 }
 
 void Vampire::sendModifyInfo(const VAMPIRE_RECORD& prev) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -4470,7 +4470,7 @@ void Vampire::initAllStatAndSend()
 //
 //////////////////////////////////////////////////////////////////////////////
 void Monster::initAllStat(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -4607,7 +4607,7 @@ void Monster::initAllStat(void)
 //
 //////////////////////////////////////////////////////////////////////////////
 
-void Ousters::initCastleSkill() throw()
+void Ousters::initCastleSkill() 
 {
 	__BEGIN_TRY
 
@@ -4646,7 +4646,7 @@ void Ousters::initCastleSkill() throw()
 }
 
 void Ousters::initAllStat(int numPartyMember)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -5996,7 +5996,7 @@ int	Ousters::getBloodBibleSignOpenNum() const
 // BASIC   = 아이템에 의한 변화 수치
 //////////////////////////////////////////////////////////////////////////////
 void Ousters::computeStatOffset()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -6041,7 +6041,7 @@ void Ousters::computeStatOffset()
 }
 
 void Ousters::computeItemStat(Item* pItem)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -6140,7 +6140,7 @@ void Ousters::computeItemStat(Item* pItem)
 
 	__END_CATCH
 }
-void Ousters::computePetItemOptionTypeStat(PetInfo* pPetInfo) throw()
+void Ousters::computePetItemOptionTypeStat(PetInfo* pPetInfo) 
 {
 	__BEGIN_TRY
 
@@ -6162,7 +6162,7 @@ void Ousters::computePetItemOptionTypeStat(PetInfo* pPetInfo) throw()
 	__END_CATCH
 }
 
-void Ousters::computeSetItemStat(Item* pItem) throw()
+void Ousters::computeSetItemStat(Item* pItem) 
 {
 	__BEGIN_TRY
 
@@ -6178,7 +6178,7 @@ void Ousters::computeSetItemStat(Item* pItem) throw()
 }
 
 void Ousters::computeOptionStat(Item* pItem)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -6371,7 +6371,7 @@ void Ousters::computeOptionClassStat(OptionClass OClass, int PlusPoint)
 }
 
 void Ousters::computeOptionStat(OptionType_t OptionType)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -6508,7 +6508,7 @@ void Ousters::computeOptionStat(OptionType_t OptionType)
 }
 
 void Ousters::addModifyInfo(const OUSTERS_RECORD& prev, ModifyInfo& pkt) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -6566,7 +6566,7 @@ void Ousters::addModifyInfo(const OUSTERS_RECORD& prev, ModifyInfo& pkt) const
 }
 
 void Ousters::sendModifyInfo(const OUSTERS_RECORD& prev) const
-	throw()
+	
 {
 	__BEGIN_TRY
 

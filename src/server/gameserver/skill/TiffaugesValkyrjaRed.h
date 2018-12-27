@@ -16,8 +16,8 @@
 class TiffaugesValkyrjaRed : public SkillHandler 
 {
 public:
-	TiffaugesValkyrjaRed() throw() {}
-	~TiffaugesValkyrjaRed() throw() {}
+	TiffaugesValkyrjaRed()  {}
+	~TiffaugesValkyrjaRed()  {}
 	
 public:
     string getSkillHandlerName()  { return "TiffaugesValkyrjaRed"; }

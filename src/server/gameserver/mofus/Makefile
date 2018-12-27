@@ -297,7 +297,7 @@ MPlayer.o: MPlayer.cpp Mofus.h /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/Core/SocketAPI.h \
  /home/darkeden/vs/src/Core/SocketOutputStream.h MPacketManager.h \
  /home/darkeden/vs/src/Core/Assert.h MJob.h \
- /home/darkeden/vs/src/Core/Properties.h /usr/include/STL/map \
+ /home/darkeden/vs/src/Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h PKTConnectAsk.h PKTLogout.h \
  PKTUserInfo.h PKTReceiveOK.h PKTResult.h PKTSError.h \
@@ -367,7 +367,7 @@ MPlayerManager.o: MPlayerManager.cpp Mofus.h \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_deque.h \
  MPlayer.h /home/darkeden/vs/src/Core/Player.h \
  /home/darkeden/vs/src/Core/Assert.h \
- /home/darkeden/vs/src/Core/Properties.h /usr/include/STL/map \
+ /home/darkeden/vs/src/Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h \
  /home/darkeden/vs/src/server/gameserver/PlayerCreature.h \
@@ -382,7 +382,7 @@ MPlayerManager.o: MPlayerManager.cpp Mofus.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/SocketInputStream.h \
  /home/darkeden/vs/src/Core/SocketOutputStream.h \
- /usr/include/STL/bitset \
+ /usr/include/c++/7/bitset \
  /home/darkeden/vs/src/server/gameserver/ObjectRegistry.h \
  /home/darkeden/vs/src/server/gameserver/InventorySlot.h \
  /home/darkeden/vs/src/server/gameserver/Item.h \
@@ -910,7 +910,7 @@ PKTPowerPointHandler.o: PKTPowerPointHandler.cpp Mofus.h \
  /home/darkeden/vs/src/Core/SocketOutputStream.h PKTPowerPoint.h \
  /home/darkeden/vs/src/Core/Assert.h PKTError.h PKTSError.h MPlayer.h \
  /home/darkeden/vs/src/Core/Player.h MJob.h \
- /home/darkeden/vs/src/Core/Properties.h /usr/include/STL/map \
+ /home/darkeden/vs/src/Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h
 PKTReceiveOK.o: PKTReceiveOK.cpp PKTReceiveOK.h MPacket.h \

@@ -73,7 +73,7 @@ void SBillingPlayerManager::stop()
 
 // main method
 void SBillingPlayerManager::run()
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -225,7 +225,7 @@ void SBillingPlayerManager::run()
 }
 
 void SBillingPlayerManager::sendIntervalValidation( int i )
-	throw ( ProtocolException, Error )
+	
 {
 	__BEGIN_TRY
 	__ENTER_CRITICAL_SECTION( m_Mutex[i] )
@@ -243,7 +243,7 @@ void SBillingPlayerManager::sendIntervalValidation( int i )
 }
 
 bool SBillingPlayerManager::sendLogin( PayUser* pPayUser, int i )
-	throw ( ProtocolException, Error )
+	
 {
 	bool ret = true;
 
@@ -267,7 +267,7 @@ bool SBillingPlayerManager::sendLogin( PayUser* pPayUser, int i )
 }
 
 bool SBillingPlayerManager::sendMinusPoint( PayUser* pPayUser, int i )
-	throw ( ProtocolException, Error )
+	
 {
 	bool ret = true;
 
@@ -291,7 +291,7 @@ bool SBillingPlayerManager::sendMinusPoint( PayUser* pPayUser, int i )
 }
 
 void SBillingPlayerManager::sendMinusMinute( PayUser* pPayUser, int i )
-	throw ( ProtocolException, Error )
+	
 {
 	__BEGIN_TRY
 	__ENTER_CRITICAL_SECTION( m_Mutex[i] )
@@ -306,7 +306,7 @@ void SBillingPlayerManager::sendMinusMinute( PayUser* pPayUser, int i )
 }
 
 void SBillingPlayerManager::sendLogout( PayUser* pPayUser, int i )
-	throw ( ProtocolException, Error )
+	
 {
 	__BEGIN_TRY
 	__ENTER_CRITICAL_SECTION( m_Mutex[i] )
@@ -321,7 +321,7 @@ void SBillingPlayerManager::sendLogout( PayUser* pPayUser, int i )
 }
 
 int SBillingPlayerManager::getVersionNumber() const
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -333,7 +333,7 @@ int SBillingPlayerManager::getVersionNumber() const
 }
 
 int SBillingPlayerManager::getMinusIntervalInt() const
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -345,7 +345,7 @@ int SBillingPlayerManager::getMinusIntervalInt() const
 }
 
 string SBillingPlayerManager::getMinusInterval() const
-	throw ()
+	
 {
 	__BEGIN_TRY
 

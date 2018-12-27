@@ -19,7 +19,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 ExtraInfo::ExtraInfo () 
-     throw ()
+     
 {
 	__BEGIN_TRY
 	m_ListNum = 0;
@@ -31,7 +31,7 @@ ExtraInfo::ExtraInfo ()
 // destructor
 //////////////////////////////////////////////////////////////////////
 ExtraInfo::~ExtraInfo () 
-    throw ()
+    
 {
 	__BEGIN_TRY
 
@@ -51,7 +51,7 @@ ExtraInfo::~ExtraInfo ()
 // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
 //////////////////////////////////////////////////////////////////////
 void ExtraInfo::read ( SocketInputStream & iStream ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -92,7 +92,7 @@ void ExtraInfo::write ( SocketOutputStream & oStream )
 // getSize
 //--------------------------------------------------------------------
 PacketSize_t ExtraInfo::getSize()
-	throw()
+	
 {
 
 	PacketSize_t PacketSize = szBYTE;

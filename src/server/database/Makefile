@@ -366,7 +366,7 @@ DatabaseManager.o: DatabaseManager.cpp /usr/include/stdio.h \
  /home/darkeden/vs/src/server/Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- /home/darkeden/vs/src/Core/Properties.h /usr/include/STL/map \
+ /home/darkeden/vs/src/Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h /home/darkeden/vs/src/server/Thread.h \
  /home/darkeden/vs/src/server/pthreadAPI.h \
@@ -619,7 +619,7 @@ DatabaseManager.o: DatabaseManager.cpp /usr/include/stdio.h \
  /home/darkeden/vs/src/server/Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- /home/darkeden/vs/src/Core/Properties.h /usr/include/STL/map \
+ /home/darkeden/vs/src/Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h /home/darkeden/vs/src/server/Thread.h \
  /home/darkeden/vs/src/server/pthreadAPI.h \
@@ -816,7 +816,7 @@ DatabaseManager.o: DatabaseManager.cpp /usr/include/stdio.h \
  /home/darkeden/vs/src/server/Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- /home/darkeden/vs/src/Core/Properties.h /usr/include/STL/map \
+ /home/darkeden/vs/src/Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h /home/darkeden/vs/src/server/Thread.h \
  /home/darkeden/vs/src/server/pthreadAPI.h \
@@ -1069,7 +1069,7 @@ DatabaseManager.o: DatabaseManager.cpp /usr/include/stdio.h \
  /home/darkeden/vs/src/server/Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
- /home/darkeden/vs/src/Core/Properties.h /usr/include/STL/map \
+ /home/darkeden/vs/src/Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h /home/darkeden/vs/src/server/Thread.h \
  /home/darkeden/vs/src/server/pthreadAPI.h \

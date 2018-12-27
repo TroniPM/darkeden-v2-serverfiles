@@ -16,8 +16,8 @@
 class MercyGround : public SkillHandler 
 {
 public:
-	MercyGround() throw() {}
-	~MercyGround() throw() {}
+	MercyGround()  {}
+	~MercyGround()  {}
 	
 public:
     string getSkillHandlerName()  { return "MercyGround"; }

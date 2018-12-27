@@ -48,15 +48,15 @@ public:
 
 	// get/set name
 	string getName()  { return m_Name; }
-	void setName(string name) throw() { m_Name = name; }
+	void setName(string name)  { m_Name = name; }
 
 	// get/set Slot
 	Slot getSlot()  { return m_Slot; }
-	void setSlot(Slot slot) throw() { m_Slot = slot; }
+	void setSlot(Slot slot)  { m_Slot = slot; }
 
 	// get/set SSN
 	string getSSN()  { return m_SSN; }
-	void setSSN(const string & SSN) throw() { m_SSN = SSN; }
+	void setSSN(const string & SSN)  { m_SSN = SSN; }
 
 private :
 	
@@ -85,7 +85,7 @@ class CLDeletePCFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CLDeletePC(); }
+	Packet* createPacket()  { return new CLDeletePC(); }
 
 	// get packet name
 	string getPacketName()  { return "CLDeletePC"; }

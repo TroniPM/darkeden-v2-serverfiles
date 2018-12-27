@@ -41,7 +41,7 @@ public:
 	int getLevel(void) const { return m_Level; }
 	void setLevel(int l) { m_Level = l;}
 
-	void setTick(Turn_t Tick) throw() { m_Tick = Tick; }
+	void setTick(Turn_t Tick)  { m_Tick = Tick; }
 	Turn_t getTick()  { return m_Tick; }
 	
 	Duration_t getDuration() { return m_Duration;}

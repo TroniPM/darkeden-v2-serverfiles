@@ -79,7 +79,7 @@ void ActionShowWarSchedule::execute (Creature * pCreature1 , Creature * pCreatur
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionShowWarSchedule::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

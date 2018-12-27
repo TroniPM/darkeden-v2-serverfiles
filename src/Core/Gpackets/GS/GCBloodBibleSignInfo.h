@@ -18,7 +18,7 @@
 class GCBloodBibleSignInfo : public Packet
 {
 public:
-	GCBloodBibleSignInfo() throw() { }
+	GCBloodBibleSignInfo()  { }
 	virtual ~GCBloodBibleSignInfo() ;
 
 public:
@@ -45,7 +45,7 @@ private:
 class GCBloodBibleSignInfoFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCBloodBibleSignInfo(); }
+	Packet* createPacket()  { return new GCBloodBibleSignInfo(); }
 	string getPacketName()  { return "GCBloodBibleSignInfo"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_BLOOD_BIBLE_SIGN_INFO; }
 	PacketSize_t getPacketMaxSize() 

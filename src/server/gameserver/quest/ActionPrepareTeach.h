@@ -29,7 +29,7 @@ public:
 
 public:
 	SkillLevel_t getMaxLevel(void)  { return m_MaxLevel;}
-	void setMaxLevel(SkillLevel_t level) throw() { m_MaxLevel = level;}
+	void setMaxLevel(SkillLevel_t level)  { m_MaxLevel = level;}
 
 private:
 	SkillLevel_t m_MaxLevel; // 가르쳐 줄 스킬의 맥스 레벨

@@ -23,7 +23,7 @@
 // is satisfied?
 ////////////////////////////////////////////////////////////////////////////////
 bool ConditionEnterMasterLair::isSatisfied (Creature * pCreature1 , Creature * pCreature2, void* pParam) const 
-	throw () 
+	 
 { 
 	if (!g_pVariableManager->isActiveMasterLair())
 	{
@@ -109,7 +109,7 @@ void ConditionEnterMasterLair::read (PropertyBuffer & propertyBuffer)
 	// get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ConditionEnterMasterLair::toString () const 
-	throw () 
+	 
 { 
 	__BEGIN_TRY
 

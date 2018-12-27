@@ -380,7 +380,7 @@ void EffectAlignmentRecovery::unaffect (Zone* pZone , ZoneCoord_t x , ZoneCoord_
 }
 
 string EffectAlignmentRecovery::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

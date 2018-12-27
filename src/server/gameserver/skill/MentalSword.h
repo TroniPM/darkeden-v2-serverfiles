@@ -16,8 +16,8 @@
 class MentalSword : public SkillHandler 
 {
 public:
-	MentalSword() throw() {}
-	~MentalSword() throw() {}
+	MentalSword()  {}
+	~MentalSword()  {}
 	
 public:
     string getSkillHandlerName()  { return "MentalSword"; }

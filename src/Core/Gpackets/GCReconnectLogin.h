@@ -57,15 +57,15 @@ public :
 
 	// get/set game server's ip
 	string getLoginServerIP()  { return m_LoginServerIP; }
-	void setLoginServerIP(const string & ip) throw() { m_LoginServerIP = ip; }
+	void setLoginServerIP(const string & ip)  { m_LoginServerIP = ip; }
 
 	// get/set game server's port
 	uint getLoginServerPort()  { return m_LoginServerPort; }
-	void setLoginServerPort(uint port) throw() { m_LoginServerPort = port; }
+	void setLoginServerPort(uint port)  { m_LoginServerPort = port; }
 
 	// get/set key
 	DWORD getKey()  { return m_Key; }
-	void setKey(DWORD key) throw() { m_Key = key; }
+	void setKey(DWORD key)  { m_Key = key; }
 
 private :
 	
@@ -94,7 +94,7 @@ class GCReconnectLoginFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCReconnectLogin(); }
+	Packet* createPacket()  { return new GCReconnectLogin(); }
 
 	// get packet name
 	string getPacketName()  { return "GCReconnectLogin"; }

@@ -27,14 +27,14 @@ Mutex    PetFood::m_Mutex;
 //////////////////////////////////////////////////////////////////////////////
 
 PetFood::PetFood()
-	throw()
+	
 {
 	m_ItemType = 0;
 	m_Num = 1;
 }
 
 PetFood::PetFood(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num)
-	throw()
+	
 {
 	m_ItemType = itemType;
 	m_Num = Num;
@@ -151,7 +151,7 @@ void PetFood::save(const string & ownerID, Storage storage, StorageID_t storageI
 }
 
 string PetFood::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -198,7 +198,7 @@ Weight_t PetFood::getWeight() const
 //////////////////////////////////////////////////////////////////////////////
 
 string PetFoodInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "PetFoodInfo("

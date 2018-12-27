@@ -14,7 +14,7 @@
 
 class isSameTriggerID {
 public :
-	isSameTriggerID(TriggerID_t triggerID) throw () : m_TriggerID(triggerID) {}
+	isSameTriggerID(TriggerID_t triggerID)  : m_TriggerID(triggerID) {}
 	bool operator () (Trigger * pTrigger)
 	{
 		return pTrigger->getTriggerID() == m_TriggerID;
@@ -236,7 +236,7 @@ Trigger * TriggerManager::getTrigger (TriggerID_t triggerID)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string TriggerManager::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 

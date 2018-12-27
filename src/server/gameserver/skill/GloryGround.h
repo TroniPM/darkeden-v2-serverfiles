@@ -16,8 +16,8 @@
 class GloryGround : public SkillHandler 
 {
 public:
-	GloryGround() throw() {}
-	~GloryGround() throw() {}
+	GloryGround()  {}
+	~GloryGround()  {}
 	
 public:
     string getSkillHandlerName()  { return "GloryGround"; }

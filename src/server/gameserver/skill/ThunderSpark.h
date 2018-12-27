@@ -16,8 +16,8 @@
 class ThunderSpark : public SkillHandler 
 {
 public:
-	ThunderSpark() throw() {}
-	~ThunderSpark() throw() {}
+	ThunderSpark()  {}
+	~ThunderSpark()  {}
 	
 public:
     string getSkillHandlerName()  { return "ThunderSpark"; }

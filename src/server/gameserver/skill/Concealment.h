@@ -16,8 +16,8 @@
 class Concealment : public SkillHandler 
 {
 public:
-	Concealment() throw() {}
-	~Concealment() throw() {}
+	Concealment()  {}
+	~Concealment()  {}
 	
 public:
     string getSkillHandlerName()  { return "Concealment"; }

@@ -73,21 +73,21 @@ public :
 	void setDir(Dir_t r) { m_Dir = r;}
 
 	ItemType_t getItemType()  { return m_ItemType;}
-	void setItemType(ItemType_t i) throw() { m_ItemType = i;}
+	void setItemType(ItemType_t i)  { m_ItemType = i;}
 	
 
 	void setXYDir(Coord_t X, Coord_t Y, Dir_t R) { m_X = X; m_Y = Y; m_Dir = R;}
 
 	// get / set Creature List Number
 	BYTE getCListNum()  { return m_CListNum; }
-	void setCListNum(BYTE CListNum) throw() { m_CListNum = CListNum; }
+	void setCListNum(BYTE CListNum)  { m_CListNum = CListNum; }
 
 	// add / delete  Creature List
 	void addCListElement(ObjectID_t ObjectID) ;
-	void clearCList() throw() { m_CList.clear(); m_CListNum = 0; }
+	void clearCList()  { m_CList.clear(); m_CListNum = 0; }
 
 	// pop front Element in Status List
-	ObjectID_t popCListElement() throw() { ObjectID_t CreatureList = m_CList.front(); m_CList.pop_front(); return CreatureList; }
+	ObjectID_t popCListElement()  { ObjectID_t CreatureList = m_CList.front(); m_CList.pop_front(); return CreatureList; }
 
 private :
 	
@@ -122,16 +122,16 @@ class GCThrowBombOK1Factory : public PacketFactory {
 public :
 	
 	// constructor
-	GCThrowBombOK1Factory() throw() {}
+	GCThrowBombOK1Factory()  {}
 	
 	// destructor
-	virtual ~GCThrowBombOK1Factory() throw() {}
+	virtual ~GCThrowBombOK1Factory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCThrowBombOK1(); }
+	Packet* createPacket()  { return new GCThrowBombOK1(); }
 
 	// get packet name
 	string getPacketName()  { return "GCThrowBombOK1"; }

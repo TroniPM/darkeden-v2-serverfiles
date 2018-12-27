@@ -16,8 +16,8 @@
 class InfinityThunderbolt : public SkillHandler 
 {
 public:
-	InfinityThunderbolt() throw() {}
-	~InfinityThunderbolt() throw() {}
+	InfinityThunderbolt()  {}
+	~InfinityThunderbolt()  {}
 	
 public:
     string getSkillHandlerName()  { return "InfinityThunderbolt"; }

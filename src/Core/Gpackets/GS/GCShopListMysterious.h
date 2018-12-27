@@ -48,10 +48,10 @@ public:
 
 public:
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t creatureID) throw() { m_ObjectID = creatureID; }
+	void setObjectID(ObjectID_t creatureID)  { m_ObjectID = creatureID; }
 
 	ShopVersion_t getShopVersion(void)  { return m_Version;}
-	void setShopVersion(ShopVersion_t ver) throw() { m_Version = ver;}
+	void setShopVersion(ShopVersion_t ver)  { m_Version = ver;}
 	
 	ShopRackType_t getShopType(void)  { return m_RackType;}
 	void setShopType(const ShopRackType_t type) { m_RackType = type;}
@@ -61,8 +61,8 @@ public:
 
 	MarketCond_t getMarketCondBuy(void)  { return m_MarketCondBuy;}
 	MarketCond_t getMarketCondSell(void)  { return m_MarketCondSell;}
-	void setMarketCondBuy(MarketCond_t cond) throw() { m_MarketCondBuy = cond;}
-	void setMarketCondSell(MarketCond_t cond) throw() { m_MarketCondSell = cond;}
+	void setMarketCondBuy(MarketCond_t cond)  { m_MarketCondBuy = cond;}
+	void setMarketCondSell(MarketCond_t cond)  { m_MarketCondSell = cond;}
 	
 private:
 	ObjectID_t              m_ObjectID;                     // NPC's object id
@@ -81,7 +81,7 @@ private:
 class GCShopListMysteriousFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCShopListMysterious(); }
+	Packet* createPacket()  { return new GCShopListMysterious(); }
 	string getPacketName()  { return "GCShopListMysterious"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_SHOP_LIST_MYSTERIOUS; }
 	PacketSize_t getPacketMaxSize()  

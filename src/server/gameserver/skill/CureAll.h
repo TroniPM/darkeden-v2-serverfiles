@@ -16,8 +16,8 @@
 class CureAll: public SkillHandler 
 {
 public:
-	CureAll() throw() {}
-	~CureAll() throw() {}
+	CureAll()  {}
+	~CureAll()  {}
 	
 public:
     string getSkillHandlerName()  { return "CureAll"; }

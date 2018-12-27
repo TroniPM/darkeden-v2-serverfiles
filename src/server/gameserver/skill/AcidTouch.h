@@ -16,8 +16,8 @@
 class AcidTouch: public SkillHandler 
 {
 public:
-	AcidTouch() throw() {}
-	~AcidTouch() throw() {}
+	AcidTouch()  {}
+	~AcidTouch()  {}
 	
 public:
     string getSkillHandlerName()  { return "AcidTouch"; }

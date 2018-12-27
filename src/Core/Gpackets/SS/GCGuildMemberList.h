@@ -62,13 +62,13 @@ public:
 	BYTE getListNum()  { return m_GuildMemberInfoList.size(); }
 
 	// add GuildMemberInfoList
-	void addGuildMemberInfo( GuildMemberInfo* pGuildMemberInfo ) throw() { m_GuildMemberInfoList.push_front( pGuildMemberInfo ); }
+	void addGuildMemberInfo( GuildMemberInfo* pGuildMemberInfo )  { m_GuildMemberInfoList.push_front( pGuildMemberInfo ); }
 
 	// clear GuildMemberInfoList
 	void clearGuildMemberInfoList() ;
 
 	// pop front Element in GuildMemberInfoList
-	GuildMemberInfo* popFrontGuildMemberInfoList() throw()
+	GuildMemberInfo* popFrontGuildMemberInfoList() 
 	{
 		if ( !m_GuildMemberInfoList.empty() )
 		{
@@ -102,7 +102,7 @@ class GCGuildMemberListFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCGuildMemberList(); }
+	Packet* createPacket()  { return new GCGuildMemberList(); }
 
 	// get packet name
 	string getPacketName()  { return "GCGuildMemberList"; }

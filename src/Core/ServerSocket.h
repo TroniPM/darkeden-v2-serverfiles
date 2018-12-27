@@ -69,7 +69,7 @@ public :
     uint getSendBufferSize ()  { return m_Impl->getSendBufferSize(); }
     void setSendBufferSize (uint size)  { m_Impl->setSendBufferSize(size); }
  
-	SOCKET getSOCKET () throw () { return m_Impl->getSOCKET(); }
+	SOCKET getSOCKET ()  { return m_Impl->getSOCKET(); }
 
 //////////////////////////////////////////////////
 // attributes

@@ -120,7 +120,7 @@ void ActionRedeemMotorcycle::execute (Creature * pCreature1 , Creature* pCreatur
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 bool ActionRedeemMotorcycle::load(Item* pItem, Slayer* pSlayer, Zone* pZone, ZoneCoord_t x, ZoneCoord_t y) const
-	throw()
+	
 {
 	bool bFound = false;
 
@@ -355,7 +355,7 @@ bool ActionRedeemMotorcycle::load(Item* pItem, Slayer* pSlayer, Zone* pZone, Zon
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionRedeemMotorcycle::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

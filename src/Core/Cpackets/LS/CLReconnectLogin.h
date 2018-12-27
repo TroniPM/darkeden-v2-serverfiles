@@ -55,7 +55,7 @@ public:
 
 	// get/set key
 	DWORD getKey()  { return m_Key; }
-	void setKey(DWORD key) throw() { m_Key = key; }
+	void setKey(DWORD key)  { m_Key = key; }
 
 	// Web login
 	void setWebLogin() { m_LoginMode = LOGIN_MODE_WEBLOGIN; }
@@ -85,7 +85,7 @@ class CLReconnectLoginFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CLReconnectLogin(); }
+	Packet* createPacket()  { return new CLReconnectLogin(); }
 
 	// get packet name
 	string getPacketName()  { return "CLReconnectLogin"; }

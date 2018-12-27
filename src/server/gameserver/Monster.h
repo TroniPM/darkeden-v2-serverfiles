@@ -67,7 +67,7 @@ public:
 	bool hasEnemy()  { return m_Enemies.size() > 0; }
 	uint getMaxEnemies() ;
 
-	list<ObjectID_t>& getEnemies(void) throw() { return m_Enemies;}
+	list<ObjectID_t>& getEnemies(void)  { return m_Enemies;}
 
 	// 선제 공격 Enemy판별. by sigi. 2002.9.23
 	bool isEnemyToAttack(Creature* pCreature) const;
@@ -97,33 +97,33 @@ public:
 // get/set instance-level attributes
 public:
 	Attr_t getSTR()  { return m_STR; }
-	void setSTR(Attr_t str) throw() { m_STR = str; }
+	void setSTR(Attr_t str)  { m_STR = str; }
 	
 	Attr_t getDEX()  { return m_DEX; }
-	void setDEX(Attr_t dex) throw() { m_DEX = dex; }
+	void setDEX(Attr_t dex)  { m_DEX = dex; }
 
 	Attr_t getINT()  { return m_INT; }
-	void setINT(Attr_t inte) throw() { m_INT = inte; }
+	void setINT(Attr_t inte)  { m_INT = inte; }
 
 	Exp_t getExp()  { return m_Exp; }
-	void setExp(Exp_t str) throw() { m_Exp = str; }
+	void setExp(Exp_t str)  { m_Exp = str; }
 	
 	HP_t getHP(AttrType attrType = ATTR_CURRENT)  { return m_HP[attrType]; }
-	void setHP(HP_t hp, AttrType attrType = ATTR_CURRENT) throw() { m_HP[attrType] = hp; }
-	void setHP(HP_t current, HP_t max) throw() { m_HP[ATTR_CURRENT] = current; m_HP[ATTR_MAX] = max; }
+	void setHP(HP_t hp, AttrType attrType = ATTR_CURRENT)  { m_HP[attrType] = hp; }
+	void setHP(HP_t current, HP_t max)  { m_HP[ATTR_CURRENT] = current; m_HP[ATTR_MAX] = max; }
 
 	Defense_t getDefense()  { return m_Defense; }
-	void setDefense(Defense_t ac) throw() { m_Defense = ac; }
+	void setDefense(Defense_t ac)  { m_Defense = ac; }
 
 	Protection_t getProtection()  { return m_Protection; }
-	void setProtection(Protection_t ac) throw() { m_Protection = ac; }
+	void setProtection(Protection_t ac)  { m_Protection = ac; }
 
 	ToHit_t getToHit()  { return m_ToHit; }
-	void setToHit(ToHit_t tohit) throw() { m_ToHit = tohit; }
+	void setToHit(ToHit_t tohit)  { m_ToHit = tohit; }
 
 	Damage_t getDamage(AttrType attrType = ATTR_CURRENT)  { return m_Damage[attrType]; }
-	void setDamage(Damage_t damage, AttrType attrType = ATTR_CURRENT) throw() { m_Damage[attrType] = damage; }
-	void setDamage(Damage_t current, Damage_t max) throw() { m_Damage[ATTR_CURRENT] = current; m_Damage[ATTR_MAX] = max; }
+	void setDamage(Damage_t damage, AttrType attrType = ATTR_CURRENT)  { m_Damage[attrType] = damage; }
+	void setDamage(Damage_t current, Damage_t max)  { m_Damage[ATTR_CURRENT] = current; m_Damage[ATTR_MAX] = max; }
 
 	int getMeleeRange(void) const { return m_MeleeRange; }
 	void setMeleeRange(int range) { m_MeleeRange = range; }
@@ -132,33 +132,33 @@ public:
 	void setMissileRange(int range) { m_MissileRange = range; }
 
 	Moral_t getMoral(void)  { return m_Moral;}
-	void setMoral(Moral_t moral) throw() { m_Moral = moral;}
+	void setMoral(Moral_t moral)  { m_Moral = moral;}
 				
 	Turn_t getDelay()  { return m_Delay; }
-	void setDelay(Turn_t delay) throw() { m_Delay = delay; }
+	void setDelay(Turn_t delay)  { m_Delay = delay; }
 
 	Turn_t getAttackDelay()  { return m_AttackDelay; }
-	void setAttackDelay(Turn_t delay) throw() { m_AttackDelay = delay; }
+	void setAttackDelay(Turn_t delay)  { m_AttackDelay = delay; }
 
 	Timeval getAccuDelay()  { return m_AccuDelay; }
-	void setAccuDelay(Timeval delay) throw() { m_AccuDelay = delay; }
-	void addAccuDelay(Timeval delay) throw() { m_AccuDelay = m_AccuDelay + delay; }
-	void clearAccuDelay() throw() { m_AccuDelay.tv_sec = 0; m_AccuDelay.tv_usec = 0; }
+	void setAccuDelay(Timeval delay)  { m_AccuDelay = delay; }
+	void addAccuDelay(Timeval delay)  { m_AccuDelay = m_AccuDelay + delay; }
+	void clearAccuDelay()  { m_AccuDelay.tv_sec = 0; m_AccuDelay.tv_usec = 0; }
 
 	void clearEnemyLimitTime() ;
 
 	Timeval getNextTurn()  { return m_NextTurn; }
-	void setNextTurn(Timeval NextTurn) throw() { m_NextTurn = NextTurn; }
+	void setNextTurn(Timeval NextTurn)  { m_NextTurn = NextTurn; }
 
 	void setDamaged(bool value=true) ;
 
 	int getEffectClass()  { return m_EffectClass; }
-	void setEffectClass(int inte) throw() { m_EffectClass = inte; }
+	void setEffectClass(int inte)  { m_EffectClass = inte; }
 
 	void initAllStat(void) ;
 
 	Silver_t getSilverDamage(void)  { return m_SilverDamage; }
-	void setSilverDamage(Silver_t damage) throw() { m_SilverDamage = damage; }
+	void setSilverDamage(Silver_t damage)  { m_SilverDamage = damage; }
 
 	MonsterAI* getBrain(void) const { return m_pBrain; }
 	void	   setBrain(MonsterAI* pBrain);

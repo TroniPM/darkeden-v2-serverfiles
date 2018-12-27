@@ -17,8 +17,8 @@
 class Peace: public SkillHandler 
 {
 public:
-	Peace() throw() {}
-	~Peace() throw() {}
+	Peace()  {}
+	~Peace()  {}
 	
 public:
     string getSkillHandlerName()  { return "Peace"; }

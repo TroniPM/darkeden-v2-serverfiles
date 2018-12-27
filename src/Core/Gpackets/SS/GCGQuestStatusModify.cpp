@@ -16,7 +16,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 GCGQuestStatusModify::GCGQuestStatusModify () 
-     throw ()
+     
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -26,7 +26,7 @@ GCGQuestStatusModify::GCGQuestStatusModify ()
 // destructor
 //////////////////////////////////////////////////////////////////////
 GCGQuestStatusModify::~GCGQuestStatusModify () 
-    throw ()
+    
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -38,7 +38,7 @@ GCGQuestStatusModify::~GCGQuestStatusModify ()
 //
 //////////////////////////////////////////////////////////////////////
 void GCGQuestStatusModify::execute ( Player * pPlayer ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		

@@ -27,13 +27,13 @@ Mutex    SkillBook::m_Mutex;
 //////////////////////////////////////////////////////////////////////////////
 
 SkillBook::SkillBook()
-	throw()
+	
 {
 	setItemType(0);
 }
 
 SkillBook::SkillBook(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num)
-	throw()
+	
 {
 	setItemType(itemType);
 	setNum(Num);
@@ -134,7 +134,7 @@ void SkillBook::save(const string & ownerID, Storage storage, StorageID_t storag
 }
 
 string SkillBook::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -182,7 +182,7 @@ Weight_t SkillBook::getWeight() const
 //////////////////////////////////////////////////////////////////////////////
 
 string SkillBookInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "SkillBookInfo("

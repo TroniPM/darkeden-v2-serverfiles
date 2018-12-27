@@ -36,7 +36,7 @@ public:
 	string toString() ;
 
 public:
-	void setTimeDate(int TimeDate) throw() { m_TimeDate = TimeDate; }
+	void setTimeDate(int TimeDate)  { m_TimeDate = TimeDate; }
 	int getTimeDate()  { return m_TimeDate; }
 
 

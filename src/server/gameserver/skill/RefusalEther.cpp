@@ -20,7 +20,7 @@
 #include "Gpackets/GCSkillFailed1.h"
 
 RefusalEther::RefusalEther()
-	throw()
+	
 {
 };
 

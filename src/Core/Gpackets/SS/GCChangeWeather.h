@@ -49,10 +49,10 @@ public :
 public :
 
 	Weather getWeather()  { return m_Weather; }
-	void setWeather(Weather weather) throw() { m_Weather = weather; }
+	void setWeather(Weather weather)  { m_Weather = weather; }
 
 	WeatherLevel_t getWeatherLevel()  { return m_WeatherLevel; }
-	void setWeatherLevel(WeatherLevel_t weatherLevel) throw() { m_WeatherLevel = weatherLevel; }
+	void setWeatherLevel(WeatherLevel_t weatherLevel)  { m_WeatherLevel = weatherLevel; }
 
 public :
 
@@ -76,7 +76,7 @@ class GCChangeWeatherFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCChangeWeather(); }
+	Packet* createPacket()  { return new GCChangeWeather(); }
 
 	// get packet name
 	string getPacketName()  { return "GCChangeWeather"; }

@@ -33,7 +33,7 @@
 #include "CastleSymbol.h"
 
 string CastleShrineSet::toString() const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -811,7 +811,7 @@ bool CastleShrineInfoManager::addShrineShield_LOCKED( Zone *pZone )
 }
 
 string CastleShrineInfoManager::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

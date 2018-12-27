@@ -70,16 +70,16 @@ class CGWithdrawTaxFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGWithdrawTaxFactory() throw() {}
+	CGWithdrawTaxFactory()  {}
 	
 	// destructor
-	virtual ~CGWithdrawTaxFactory() throw() {}
+	virtual ~CGWithdrawTaxFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGWithdrawTax(); }
+	Packet* createPacket()  { return new CGWithdrawTax(); }
 
 	// get packet name
 	string getPacketName()  { return "CGWithdrawTax"; }

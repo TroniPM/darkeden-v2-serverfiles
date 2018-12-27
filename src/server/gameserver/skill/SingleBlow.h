@@ -16,8 +16,8 @@
 class SingleBlow : public SkillHandler 
 {
 public:
-	SingleBlow() throw() {}
-	~SingleBlow() throw() {}
+	SingleBlow()  {}
+	~SingleBlow()  {}
 	
 public:
     string getSkillHandlerName()  { return "SingleBlow"; }

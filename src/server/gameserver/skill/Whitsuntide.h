@@ -16,8 +16,8 @@
 class Whitsuntide : public SkillHandler 
 {
 public:
-	Whitsuntide() throw() {}
-	~Whitsuntide() throw() {}
+	Whitsuntide()  {}
+	~Whitsuntide()  {}
 	
 public:
     string getSkillHandlerName()  { return "Whitsuntide"; }

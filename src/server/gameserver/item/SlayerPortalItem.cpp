@@ -25,14 +25,14 @@ SlayerPortalItemLoader*      g_pSlayerPortalItemLoader = NULL;
 //////////////////////////////////////////////////////////////////////////////
 
 SlayerPortalItem::SlayerPortalItem()
-	throw()
+	
 {
 	m_ItemType = 0;
 	m_Charge   = 0;
 }
 
 SlayerPortalItem::SlayerPortalItem(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	m_ItemType = itemType;
 	m_Charge   = getMaxCharge();
@@ -176,7 +176,7 @@ Weight_t SlayerPortalItem::getWeight() const
 }
 
 string SlayerPortalItem::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -193,7 +193,7 @@ string SlayerPortalItem::toString() const
 }
 
 int SlayerPortalItem::getMaxCharge(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -260,7 +260,7 @@ void SlayerPortalItemInfoManager::load()
 }
 
 string SlayerPortalItemInfo::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

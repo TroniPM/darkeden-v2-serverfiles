@@ -24,8 +24,8 @@ class GCMoveError : public Packet {
 public :
 
 	// constructor
-	GCMoveError() throw() {}
-	GCMoveError(Coord_t x, Coord_t y) throw() : m_X(x), m_Y(y) {}
+	GCMoveError()  {}
+	GCMoveError(Coord_t x, Coord_t y)  : m_X(x), m_Y(y) {}
 	
 
 public :
@@ -56,13 +56,13 @@ public :
 
 	// get/set X
 	Coord_t getX()  { return m_X; }
-	void setX(Coord_t x) throw() { m_X = x; }
+	void setX(Coord_t x)  { m_X = x; }
 	
 	// get/set Y
 	Coord_t getY()  { return m_Y; }
-	void setY(Coord_t y) throw() { m_Y = y ; }
+	void setY(Coord_t y)  { m_Y = y ; }
 
-	void setXY(Coord_t x, Coord_t y) throw() { m_X = x; m_Y = y ; }
+	void setXY(Coord_t x, Coord_t y)  { m_X = x; m_Y = y ; }
 
 private : 
 
@@ -85,7 +85,7 @@ class  GCMoveErrorFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCMoveError(); }
+	Packet* createPacket()  { return new GCMoveError(); }
 
 	// get packet name
 	string getPacketName()  { return "GCMoveError"; }

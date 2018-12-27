@@ -46,9 +46,9 @@ public:
 	string toString() ;
 	
 //	string getMessage()  { return m_Message; }
-//	void setMessage(string message) throw() { m_Message = message; }
+//	void setMessage(string message)  { m_Message = message; }
 	BYTE getErrorID()  { return m_ErrorID; }
-	void setErrorID(BYTE ErrorID) throw() { m_ErrorID = ErrorID; }
+	void setErrorID(BYTE ErrorID)  { m_ErrorID = ErrorID; }
 
 private : 
 
@@ -73,7 +73,7 @@ class LCLoginErrorFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new LCLoginError(); }
+	Packet* createPacket()  { return new LCLoginError(); }
 
 	// get packet name
 	string getPacketName()  { return "LCLoginError"; }

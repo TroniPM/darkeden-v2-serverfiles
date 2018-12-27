@@ -18,7 +18,7 @@
 // constructor
 //----------------------------------------------------------------------
 UserInfoManager::UserInfoManager () 
-	throw ()
+	
 {
 }
 	
@@ -26,7 +26,7 @@ UserInfoManager::UserInfoManager ()
 // destructor
 //----------------------------------------------------------------------
 UserInfoManager::~UserInfoManager () 
-	throw ()
+	
 {
 	// hashmap 안의 각 pair 의 second, 즉 UserInfo 객체만을 삭제하고
 	// pair 자체는 그대로 둔다. (UserInfo가 힙에 생성되어 있다는 것에
@@ -131,7 +131,7 @@ void UserInfoManager::load ()
 // add info 
 //----------------------------------------------------------------------
 void UserInfoManager::addUserInfo ( UserInfo * pUserInfo ) 
-	throw ( DuplicatedException )
+	
 {
 	__BEGIN_TRY
 
@@ -149,7 +149,7 @@ void UserInfoManager::addUserInfo ( UserInfo * pUserInfo )
 // delete info
 //----------------------------------------------------------------------
 void UserInfoManager::deleteUserInfo ( ZoneGroupID_t ServerGroupID, WorldID_t WorldID )
-	throw ( NoSuchElementException )
+	
 {
 	__BEGIN_TRY
 		
@@ -178,7 +178,7 @@ void UserInfoManager::deleteUserInfo ( ZoneGroupID_t ServerGroupID, WorldID_t Wo
 // get info
 //----------------------------------------------------------------------
 UserInfo * UserInfoManager::getUserInfo ( ZoneGroupID_t ServerGroupID, WorldID_t WorldID ) const
-	throw ( NoSuchElementException )
+	
 {
 	__BEGIN_TRY
 		
@@ -208,7 +208,7 @@ UserInfo * UserInfoManager::getUserInfo ( ZoneGroupID_t ServerGroupID, WorldID_t
 // get debug string
 //----------------------------------------------------------------------
 string UserInfoManager::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 

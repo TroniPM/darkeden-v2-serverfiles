@@ -25,8 +25,8 @@ class GCAddOustersCorpse : public Packet {
 public :
 
 	// constructor
-	GCAddOustersCorpse() throw() { m_TreasureCount = 0; }
-	GCAddOustersCorpse(const PCOustersInfo3 & oustersInfo) throw() : m_OustersInfo(oustersInfo) {}
+	GCAddOustersCorpse()  { m_TreasureCount = 0; }
+	GCAddOustersCorpse(const PCOustersInfo3 & oustersInfo)  : m_OustersInfo(oustersInfo) {}
 
 	
 public :
@@ -56,13 +56,13 @@ public :
 public :
 
 	// get ousters info
-	PCOustersInfo3 & getOustersInfo() throw() { return m_OustersInfo; }
+	PCOustersInfo3 & getOustersInfo()  { return m_OustersInfo; }
 	const PCOustersInfo3 & getOustersInfo()  { return m_OustersInfo; }
-	void setOustersInfo(const PCOustersInfo3 & oustersInfo) throw() { m_OustersInfo = oustersInfo; }
+	void setOustersInfo(const PCOustersInfo3 & oustersInfo)  { m_OustersInfo = oustersInfo; }
 
 	// get/set Treasure Count
 	BYTE getTreasureCount()  { return m_TreasureCount; }
-	void setTreasureCount(BYTE Count) throw() { m_TreasureCount = Count; }
+	void setTreasureCount(BYTE Count)  { m_TreasureCount = Count; }
 	
 private :
 	
@@ -86,7 +86,7 @@ class GCAddOustersCorpseFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCAddOustersCorpse(); }
+	Packet* createPacket()  { return new GCAddOustersCorpse(); }
 
 	// get packet name
 	string getPacketName()  { return "GCAddOustersCorpse"; }

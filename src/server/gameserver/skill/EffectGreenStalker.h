@@ -35,15 +35,15 @@ public:
 
 public:
 	HP_t getDamage()  { return m_Damage; }
-	void setDamage(HP_t Damage) throw() { m_Damage = Damage; }
+	void setDamage(HP_t Damage)  { m_Damage = Damage; }
 
-	void setTick(Turn_t Tick) throw() { m_Tick = Tick; }
+	void setTick(Turn_t Tick)  { m_Tick = Tick; }
 	Turn_t getTick()  { return m_Tick; }
 
 	Level_t getLevel()  { return m_Level; }
-	void setLevel(Level_t Level) throw() { m_Level = Level; }
+	void setLevel(Level_t Level)  { m_Level = Level; }
 
-	void setUserObjectID(ObjectID_t oid) throw() { m_UserObjectID = oid; }
+	void setUserObjectID(ObjectID_t oid)  { m_UserObjectID = oid; }
 	ObjectID_t getUserObjectID()  { return m_UserObjectID; }
 
 	void setVampire( bool bVampire = true ) { m_bVampire = bVampire; }

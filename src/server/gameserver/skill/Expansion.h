@@ -16,8 +16,8 @@
 class Expansion : public SkillHandler 
 {
 public:
-	Expansion() throw() {}
-	~Expansion() throw() {}
+	Expansion()  {}
+	~Expansion()  {}
 	
 public:
     string getSkillHandlerName()  { return "Expansion"; }

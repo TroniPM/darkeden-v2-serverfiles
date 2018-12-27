@@ -27,13 +27,13 @@ Mutex    ResurrectItem::m_Mutex;
 //////////////////////////////////////////////////////////////////////////////
 
 ResurrectItem::ResurrectItem()
-	throw()
+	
 {
 	m_ItemType = 0;
 }
 
 ResurrectItem::ResurrectItem(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num)
-	throw()
+	
 {
 	m_ItemType = itemType;
 	m_Num      = Num;
@@ -151,7 +151,7 @@ void ResurrectItem::save(const string & ownerID, Storage storage, StorageID_t st
 }
 
 string ResurrectItem::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -199,7 +199,7 @@ Weight_t ResurrectItem::getWeight() const
 //////////////////////////////////////////////////////////////////////////////
 
 string ResurrectItemInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "ResurrectItemInfo("

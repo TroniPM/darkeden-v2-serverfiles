@@ -49,35 +49,35 @@ public :
 
 	// get/set Guild ID
 	GuildID_t getGuildID()  { return m_GuildID; }
-	void setGuildID( GuildID_t GuildID ) throw() { m_GuildID = GuildID; }
+	void setGuildID( GuildID_t GuildID )  { m_GuildID = GuildID; }
 
 	// get/set Guild Name
 	const string& getGuildName()  { return m_GuildName; }
-	void setGuildName( const string& GuildName ) throw() { m_GuildName = GuildName; }
+	void setGuildName( const string& GuildName )  { m_GuildName = GuildName; }
 
 	// get/set Guild State
 	GuildState_t getGuildState()  { return m_GuildState; }
-	void setGuildState( GuildState_t GuildState ) throw() { m_GuildState = GuildState; }
+	void setGuildState( GuildState_t GuildState )  { m_GuildState = GuildState; }
 
 	// get/set Guild Master
 	const string& getGuildMaster()  { return m_GuildMaster; }
-	void setGuildMaster( const string& GuildMaster ) throw() { m_GuildMaster = GuildMaster; }
+	void setGuildMaster( const string& GuildMaster )  { m_GuildMaster = GuildMaster; }
 
 	// get/set Guild Member Count
 	BYTE getGuildMemberCount()  { return m_GuildMemberCount; }
-	void setGuildMemberCount( BYTE GuildMemberCount ) throw() { m_GuildMemberCount = GuildMemberCount; }
+	void setGuildMemberCount( BYTE GuildMemberCount )  { m_GuildMemberCount = GuildMemberCount; }
 
 	// get/set Guild Intro
 	const string& getGuildIntro()  { return m_GuildIntro; }
-	void setGuildIntro( const string& GuildIntro ) throw() { m_GuildIntro = GuildIntro; }
+	void setGuildIntro( const string& GuildIntro )  { m_GuildIntro = GuildIntro; }
 
 	// get/set Join Fee
 	Gold_t getJoinFee()  { return m_JoinFee; }
-	void setJoinFee( Gold_t JoinFee ) throw() { m_JoinFee = JoinFee; }
+	void setJoinFee( Gold_t JoinFee )  { m_JoinFee = JoinFee; }
 
 	// Starting Member List
-	void addMember( const string& member ) throw() { m_MemberList.push_front( member ); }
-	string popMember() throw() {
+	void addMember( const string& member )  { m_MemberList.push_front( member ); }
+	string popMember()  {
 		if ( !m_MemberList.empty() )
 		{
 			string member = m_MemberList.front();
@@ -131,7 +131,7 @@ class GCShowWaitGuildInfoFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCShowWaitGuildInfo(); }
+	Packet* createPacket()  { return new GCShowWaitGuildInfo(); }
 
 	// get packet name
 	string getPacketName()  { return "GCShowWaitGuildInfo"; }

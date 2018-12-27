@@ -32,10 +32,10 @@ public:
 
 public:
 	BYTE getListNum()  { return m_ListNum;}
-	void setListNum(BYTE num) throw() { m_ListNum = num;}
+	void setListNum(BYTE num)  { m_ListNum = num;}
 
 	void addListElement(ShopTemplateID_t id) ;
-	void clearList() throw() { m_List.clear(); m_ListNum = 0; }
+	void clearList()  { m_List.clear(); m_ListNum = 0; }
 
 private :
 	BYTE                   m_ListNum;

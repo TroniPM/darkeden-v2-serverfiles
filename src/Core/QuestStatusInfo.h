@@ -30,7 +30,7 @@ struct MissionInfo
 
 	MissionInfo() : m_StrArg(""), m_NumArg(0) { }
 
-	void read(SocketInputStream& iStream) throw(ProtocolException, Error)
+	void read(SocketInputStream& iStream) 
 	{
 		iStream.read(m_Condition);
 		iStream.read(m_Index);

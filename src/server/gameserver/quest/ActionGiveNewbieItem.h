@@ -26,7 +26,7 @@ public:
 
 public:
 	uint getItemClass(void)  { return m_ItemClass; }
-	void setItemClass(uint IClass) throw() { m_ItemClass = IClass; }
+	void setItemClass(uint IClass)  { m_ItemClass = IClass; }
 
 private:
 	uint m_ItemClass;

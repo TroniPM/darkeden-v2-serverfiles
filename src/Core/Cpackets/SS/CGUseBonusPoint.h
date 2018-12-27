@@ -61,7 +61,7 @@ public:
 
 	// get/set which 
 	BYTE getWhich()  { return m_Which;}
-	void setWhich(BYTE w) throw() { m_Which = w;}
+	void setWhich(BYTE w)  { m_Which = w;}
 
 	// get packet's debug string
 	string toString() ;
@@ -87,16 +87,16 @@ class CGUseBonusPointFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGUseBonusPointFactory() throw() {}
+	CGUseBonusPointFactory()  {}
 	
 	// destructor
-	virtual ~CGUseBonusPointFactory() throw() {}
+	virtual ~CGUseBonusPointFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGUseBonusPoint(); }
+	Packet* createPacket()  { return new CGUseBonusPoint(); }
 
 	// get packet name
 	string getPacketName()  { return "CGUseBonusPoint"; }

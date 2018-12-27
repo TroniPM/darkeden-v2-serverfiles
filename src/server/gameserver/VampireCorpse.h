@@ -37,14 +37,14 @@ public:
 	virtual ItemClass getItemClass()  { return ITEM_CLASS_CORPSE; }
 
 	virtual ItemType_t getItemType()  { return VAMPIRE_CORPSE; }
-	virtual void setItemType(ItemType_t itemType) throw() { throw UnsupportedError(__PRETTY_FUNCTION__); }
+	virtual void setItemType(ItemType_t itemType)  { throw UnsupportedError(__PRETTY_FUNCTION__); }
 
 	virtual string toString() ;
 
 public:
-	PCVampireInfo3 & getVampireInfo() throw() { return m_VampireInfo; }
+	PCVampireInfo3 & getVampireInfo()  { return m_VampireInfo; }
 	const PCVampireInfo3 & getVampireInfo()  { return m_VampireInfo; }
-	void setVampireInfo(const PCVampireInfo3 & slayerInfo) throw() { m_VampireInfo = slayerInfo; }
+	void setVampireInfo(const PCVampireInfo3 & slayerInfo)  { m_VampireInfo = slayerInfo; }
 
 	void setXY(ZoneCoord_t X, ZoneCoord_t Y) { m_VampireInfo.setX(X); m_VampireInfo.setY(Y); }
 

@@ -32,16 +32,16 @@ public:
 
 public:
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t creatureID) throw() { m_ObjectID = creatureID; }
+	void setObjectID(ObjectID_t creatureID)  { m_ObjectID = creatureID; }
 
 	string getName()  { return m_Name; }
-	void setName(string name) throw() { m_Name = name; }
+	void setName(string name)  { m_Name = name; }
 
 	Coord_t getX()  { return m_X; }
-	void setX(Coord_t x) throw() { m_X = x; }
+	void setX(Coord_t x)  { m_X = x; }
 	
 	Coord_t getY()  { return m_Y; }
-	void setY(Coord_t y) throw() { m_Y = y; }
+	void setY(Coord_t y)  { m_Y = y; }
 
 private:
     ObjectID_t m_ObjectID;
@@ -58,7 +58,7 @@ private:
 class GCAddBurrowingCreatureFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCAddBurrowingCreature(); }
+	Packet* createPacket()  { return new GCAddBurrowingCreature(); }
 	string getPacketName()  { return "GCAddBurrowingCreature"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_BURROWING_CREATURE; }
 	PacketSize_t getPacketMaxSize()  

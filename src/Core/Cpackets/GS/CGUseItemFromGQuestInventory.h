@@ -29,7 +29,7 @@ public:
 	
 public:
 	BYTE getIndex()  { return m_Index; }
-	void setIndex(BYTE Index) throw() { m_Index = Index; }
+	void setIndex(BYTE Index)  { m_Index = Index; }
 
 private:
 	BYTE   m_Index; // 아이템의 index
@@ -43,7 +43,7 @@ private:
 class CGUseItemFromGQuestInventoryFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGUseItemFromGQuestInventory(); }
+	Packet* createPacket()  { return new CGUseItemFromGQuestInventory(); }
 	string getPacketName()  { return "CGUseItemFromGQuestInventory"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_USE_ITEM_FROM_GQUEST_INVENTORY; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE; }

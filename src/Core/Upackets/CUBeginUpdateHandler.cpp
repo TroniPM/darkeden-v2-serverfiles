@@ -36,7 +36,7 @@
 //
 //--------------------------------------------------------------------------------
 void CUBeginUpdateHandler::execute ( CUBeginUpdate * pPacket , Player * pPlayer )
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -150,7 +150,7 @@ void CUBeginUpdateHandler::execute ( CUBeginUpdate * pPacket , Player * pPlayer 
 */
 
 void CUBeginUpdateHandler::scan_Dir( const string Directory, CUBeginUpdate* pPacket, UpdateManager * pUpdateManager, bool bHttpPatch, bool bUpdaterPatch )
-	throw( ProtocolException, Error )
+	
 {
 
 #ifdef __UPDATE_SERVER__
@@ -270,7 +270,7 @@ void CUBeginUpdateHandler::scan_Dir( const string Directory, CUBeginUpdate* pPac
 //
 //--------------------------------------------------------------------------------
 void CUBeginUpdateHandler::execute ( CUBeginUpdate * pPacket , Player * pPlayer )
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		

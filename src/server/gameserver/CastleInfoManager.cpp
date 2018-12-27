@@ -114,7 +114,7 @@ Gold_t CastleInfo::decreaseTaxBalanceEx( Gold_t tax )
 }
 
 void CastleInfo::setOptionTypeList( const string& options )
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -124,7 +124,7 @@ void CastleInfo::setOptionTypeList( const string& options )
 }
 
 void CastleInfo::setZoneIDList( const string& zoneIDs ) 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -183,7 +183,7 @@ bool CastleInfo::isCastleZone(ZoneID_t targetZoneID) const
 
 
 string CastleInfo::toString() const
-	throw()
+	
 {
 	__BEGIN_TRY
 	
@@ -457,7 +457,7 @@ CastleInfo* CastleInfoManager::getCastleInfo (ZoneID_t zoneID) const
 // get debug string
 //////////////////////////////////////////////////////////////////////////////
 string CastleInfoManager::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 

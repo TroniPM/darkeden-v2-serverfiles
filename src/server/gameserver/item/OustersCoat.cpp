@@ -25,7 +25,7 @@ Mutex    OustersCoat::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 OustersCoat::OustersCoat()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
@@ -34,7 +34,7 @@ OustersCoat::OustersCoat()
 }
 
 OustersCoat::OustersCoat(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_ItemType(itemType), m_OptionType(optionType), m_Durability(0)
 {
 	setItemType(itemType);
@@ -177,7 +177,7 @@ void OustersCoat::save(const string & ownerID, Storage storage, StorageID_t stor
 // get debug string
 //--------------------------------------------------------------------------------
 string OustersCoat::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -262,7 +262,7 @@ Protection_t OustersCoat::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string OustersCoatInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

@@ -55,19 +55,19 @@ public:
 
 	// get/set SkillType
 	SkillType_t getSkillType()   { return m_SkillType; }
-	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
+	void setSkillType(SkillType_t SkillType)  { m_SkillType = SkillType; }
 
 	// get/set CEffectID
 	CEffectID_t getCEffectID()  { return m_CEffectID; }
-	void setCEffectID(CEffectID_t CEffectID) throw() { m_CEffectID = CEffectID; }
+	void setCEffectID(CEffectID_t CEffectID)  { m_CEffectID = CEffectID; }
 
 	// get/set X
 	Coord_t getX()  { return m_X; }
-	void setX(Coord_t X) throw() { m_X = X; }
+	void setX(Coord_t X)  { m_X = X; }
 
 	// get/set Y
 	Coord_t getY()  { return m_Y; }
-	void setY(Coord_t Y) throw() { m_Y = Y; }
+	void setY(Coord_t Y)  { m_Y = Y; }
 	
 	// get packet's debug string
 	string toString() ;
@@ -102,16 +102,16 @@ class CGSkillToTileFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGSkillToTileFactory() throw() {}
+	CGSkillToTileFactory()  {}
 	
 	// destructor
-	virtual ~CGSkillToTileFactory() throw() {}
+	virtual ~CGSkillToTileFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGSkillToTile(); }
+	Packet* createPacket()  { return new CGSkillToTile(); }
 
 	// get packet name
 	string getPacketName()  { return "CGSkillToTile"; }

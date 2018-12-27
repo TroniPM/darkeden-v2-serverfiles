@@ -108,7 +108,7 @@ void EffectEternity::unaffect(Creature* pCreature)
 }
 
 string EffectEternity::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

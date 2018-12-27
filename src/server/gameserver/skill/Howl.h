@@ -16,8 +16,8 @@
 class Howl: public SkillHandler 
 {
 public:
-	Howl() throw() {}
-	~Howl() throw() {}
+	Howl()  {}
+	~Howl()  {}
 	
 public:
     string getSkillHandlerName()  { return "Howl"; }

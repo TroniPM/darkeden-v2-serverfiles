@@ -26,13 +26,13 @@ Mutex    MoonCard::m_Mutex;
 //////////////////////////////////////////////////////////////////////////////
 
 MoonCard::MoonCard()
-	throw()
+	
 {
 	m_ItemType = 0;
 }
 
 MoonCard::MoonCard(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num)
-	throw()
+	
 {
 	m_ItemType = itemType;
 	m_Num      = Num;
@@ -150,7 +150,7 @@ void MoonCard::save(const string & ownerID, Storage storage, StorageID_t storage
 }
 
 string MoonCard::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -198,7 +198,7 @@ Weight_t MoonCard::getWeight() const
 //////////////////////////////////////////////////////////////////////////////
 
 string MoonCardInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "MoonCardInfo("

@@ -69,11 +69,11 @@ public:
 
 	// get/set playerID
 	WorldID_t getWorldID()  { return m_WorldID; }
-	void setWorldID(WorldID_t WorldID) throw() { m_WorldID= WorldID; }
+	void setWorldID(WorldID_t WorldID)  { m_WorldID= WorldID; }
 	
 	// get/set playerID
 	BYTE getServerID()  { return m_ServerID; }
-	void setServerID(BYTE ServerID) throw() { m_ServerID= ServerID; }
+	void setServerID(BYTE ServerID)  { m_ServerID= ServerID; }
 	
 	BYTE getZoneUserCount(void)  { return m_ZoneCount; }
 
@@ -81,7 +81,7 @@ public:
 
 	void popZoneUserData(ZONEUSERDATA& rData) ;
 
-	void clearList(void) throw() { m_ZoneCount = 0; m_ZoneUserList.clear(); }
+	void clearList(void)  { m_ZoneCount = 0; m_ZoneUserList.clear(); }
 
 private :
 
@@ -112,7 +112,7 @@ class GMServerInfoFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GMServerInfo(); }
+	Packet* createPacket()  { return new GMServerInfo(); }
 
 	// get packet name
 	string getPacketName()  { return "GMServerInfo"; }

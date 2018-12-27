@@ -61,7 +61,7 @@ public:
 //--------------------------------------------------
 public:
 
-	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
+	void setSkillType(SkillType_t SkillType)  { m_SkillType = SkillType; }
 	SkillType_t getSkillType()  { return m_SkillType; }
 
 	string toString() ;

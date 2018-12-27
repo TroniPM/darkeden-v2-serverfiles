@@ -343,7 +343,7 @@ class isSameCreature
 public:
 	isSameCreature(Creature* pCreature) : m_Creature(pCreature) {}
 
-	bool operator () (Creature* pCreature) throw ()
+	bool operator () (Creature* pCreature) 
 	{
 		return pCreature->getName() == m_Creature->getName();
 	}
@@ -589,7 +589,7 @@ sendRelicEffect( MonsterCorpse* pMonsterCorpse, Zone* pZone, ZoneCoord_t x, Zone
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 Zone::Zone(ZoneID_t zoneID)
-	throw ()
+	
 {
 	m_Mutex.setName("Zone");
 	m_MutexEffect.setName("ZoneEffect");
@@ -643,7 +643,7 @@ Zone::Zone(ZoneID_t zoneID)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 Zone::Zone(ZoneID_t zoneID, ZoneCoord_t width, ZoneCoord_t height)
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -694,7 +694,7 @@ Zone::Zone(ZoneID_t zoneID, ZoneCoord_t width, ZoneCoord_t height)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 Zone::~Zone ()
-	throw ()
+	
 {
 	__BEGIN_TRY
 		
@@ -2577,7 +2577,7 @@ void Zone::pushPC(Creature* pCreature)
 // PC가 아닌 크리처(NPC,Monster)의 이동은 moveCreature를 사용한다.
 //////////////////////////////////////////////////////////////////////////////
 void Zone::movePC(Creature* pCreature, ZoneCoord_t cx, ZoneCoord_t cy, Dir_t dir)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -3090,7 +3090,7 @@ void Zone::movePC(Creature* pCreature, ZoneCoord_t cx, ZoneCoord_t cy, Dir_t dir
 // 그리고, 이 좌표에 아무 것도 없다는 검증이 먼저 이루어져야 한다. (길찾기 루틴)
 //////////////////////////////////////////////////////////////////////////////
 void Zone::moveCreature(Creature* pCreature, ZoneCoord_t nx, ZoneCoord_t ny, Dir_t dir)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -3950,7 +3950,7 @@ void Zone::updateInvisibleScan(Creature* pCreature)
 // ABCD
 //--------------------------------------------------------------------------------
 void Zone::updateHiddenScan(Creature* pCreature)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -4163,7 +4163,7 @@ void Zone::updateDetectScan(Creature* pCreature)
 // pCreature에게 GCDeleteObject를 보내준다.
 //--------------------------------------------------------------------------------
 void Zone::updateMineScan(Creature* pCreature)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -4795,7 +4795,7 @@ void Zone::deleteEffect_LOCKING(ObjectID_t id)
 // Delete PC from PC Manager (only do this)
 //--------------------------------------------------------------------------------
 void Zone::deletePC(Creature* pCreature) 
-	throw()//NoSuchElementException, Error)
+	//NoSuchElementException, Error)
 {
 	__BEGIN_TRY
 
@@ -5041,7 +5041,7 @@ void Zone::deleteItem(Object* pObject, ZoneCoord_t x, ZoneCoord_t y)
 //
 //--------------------------------------------------------------------------------
 void Zone::broadcastPacket(Packet* pPacket, Creature* owner)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -5053,7 +5053,7 @@ void Zone::broadcastPacket(Packet* pPacket, Creature* owner)
 }
 
 void Zone::broadcastDarkLightPacket(Packet* pPacket1, Packet* pPacket2, Creature* owner)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -5071,7 +5071,7 @@ void Zone::broadcastDarkLightPacket(Packet* pPacket1, Packet* pPacket2, Creature
 //
 //--------------------------------------------------------------------
 void Zone::broadcastSayPacket(ZoneCoord_t cx, ZoneCoord_t cy, Packet* pPacket, Creature* owner, bool isVampire)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -5175,7 +5175,7 @@ void Zone::broadcastSayPacket(ZoneCoord_t cx, ZoneCoord_t cy, Packet* pPacket, C
 //
 //--------------------------------------------------------------------------------
 void Zone::broadcastPacket(ZoneCoord_t cx, ZoneCoord_t cy, Packet* pPacket, Creature* owner, bool Plus, Range_t Range)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -5258,7 +5258,7 @@ void Zone::broadcastPacket(ZoneCoord_t cx, ZoneCoord_t cy, Packet* pPacket, Crea
 }
 
 void Zone::broadcastLevelWarBonusPacket(Packet* pPacket, Creature* owner)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -5664,7 +5664,7 @@ void Zone::updateScan (Creature* pPC, Sight_t oldSight, Sight_t newSight)
 //--------------------------------------------------------------------------------
 list<Creature*> Zone::broadcastSkillPacket(ZoneCoord_t x1, ZoneCoord_t y1, ZoneCoord_t x2, ZoneCoord_t y2, 
 		Packet* pPacket ,list<Creature*> creatureList, bool bConcernDarkness)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -5785,7 +5785,7 @@ list<Creature*> Zone::broadcastSkillPacket(ZoneCoord_t x1, ZoneCoord_t y1, ZoneC
 // unsigned char 를 ZoneCoord_t 로 사용할 때, overflow 및 underflow 를 주의할 것
 //////////////////////////////////////////////////////////////////////////////
 void Zone::broadcastPacket(ZoneCoord_t cx, ZoneCoord_t cy, Packet* pPacket, const list<Creature *> & creatureList, bool Plus, Range_t Range)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -8219,7 +8219,7 @@ void Zone::movePCBroadcast (Creature* pPC, ZoneCoord_t x1, ZoneCoord_t y1, ZoneC
 // 이 메쏘드를 호출하기 전에, 3 가지 패킷은 만들어둬야만 한다.
 //////////////////////////////////////////////////////////////////////////////
 void Zone::moveCreatureBroadcast(Creature* pCreature, ZoneCoord_t x1, ZoneCoord_t y1, ZoneCoord_t x2, ZoneCoord_t y2, bool bSendMove, bool bKnockback)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -8608,7 +8608,7 @@ for(int i=0; i < 3; i++){
 // 메쏘드를 사용하도록 한다.
 //////////////////////////////////////////////////////////////////////////////
 Creature* Zone::getCreature(ObjectID_t objectID) const
-	throw()//NoSuchElementException, Error)
+	//NoSuchElementException, Error)
 {
 	__BEGIN_TRY
 
@@ -8690,7 +8690,7 @@ Creature* Zone::getCreature(ObjectID_t objectID) const
 // 메쏘드를 사용하도록 한다.
 //////////////////////////////////////////////////////////////////////////////
 Creature* Zone::getCreature(const string& Name) const
-	throw()//NoSuchElementException, Error)
+	//NoSuchElementException, Error)
 {
 	__BEGIN_TRY
 
@@ -8821,7 +8821,7 @@ Creature* Zone::getCreature(Creature::CreatureClass creatureClass, ObjectID_t ob
 // get debug string
 //////////////////////////////////////////////////////////////////////////////
 string Zone::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -8923,7 +8923,7 @@ list<Creature*> Zone::getWatcherList(ZoneCoord_t x, ZoneCoord_t y, Creature* pTa
 	__END_CATCH
 }
 
-void Zone::addToItemList(Item* pItem) throw()
+void Zone::addToItemList(Item* pItem) 
 {
 	__BEGIN_TRY
 
@@ -8932,7 +8932,7 @@ void Zone::addToItemList(Item* pItem) throw()
 	__END_CATCH
 }
 
-void Zone::deleteFromItemList(ObjectID_t id) throw()
+void Zone::deleteFromItemList(ObjectID_t id) 
 {
 	__BEGIN_TRY
 
@@ -8951,7 +8951,7 @@ void Zone::deleteFromItemList(ObjectID_t id) throw()
 }
 
 void Zone::addVampirePortal(ZoneCoord_t cx, ZoneCoord_t cy, Vampire* pVampire, const ZONE_COORD& ZoneCoord) 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -9004,7 +9004,7 @@ void Zone::deleteMotorcycle(ZoneCoord_t cx, ZoneCoord_t cy, Motorcycle* pMotorcy
 
 /*
 void Zone::decayMotorcycle(ZoneCoord_t cx, ZoneCoord_t cy, Motorcycle* pMotorcycle, Slayer* pSlayer)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -9367,7 +9367,7 @@ bool Zone::deleteRelicItem()
 // monster의 상태에 따라서 GCAddXXX packet을 생성한다. by sigi
 //-------------------------------------------------------------
 Packet* Zone::createMonsterAddPacket(Monster* pMonster, Creature* pPC) const
-	throw()
+	
 {
 	Assert( pMonster != NULL );
 
@@ -9871,7 +9871,7 @@ void Zone::loadEffect()
 }
 
 void Zone::releaseSafeZone()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -9886,7 +9886,7 @@ void Zone::releaseSafeZone()
 }
 
 void Zone::resetSafeZone()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -9901,7 +9901,7 @@ void Zone::resetSafeZone()
 }
 
 void Zone::resetDarkLightInfo()
-	throw()
+	
 {
 	__BEGIN_TRY
 

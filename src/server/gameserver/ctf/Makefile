@@ -128,14 +128,14 @@ FlagManager.o: FlagManager.cpp FlagManager.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- ../../../Core/PacketFactory.h /usr/include/STL/map \
+ ../../../Core/PacketFactory.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h FlagWar.h NewbieFlagWar.h \
  ../PlayerCreature.h ../Creature.h ../Object.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../../Core/EffectInfo.h /usr/include/STL/bitset \
+ ../../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../InventorySlot.h ../Item.h ../Garbage.h \
  ../RankBonus.h ../ExpFwd.h \
  ../../../Core/Gpackets/GCMonsterKillQuestInfo.h \
@@ -216,13 +216,13 @@ FlagWar.o: FlagWar.cpp FlagWar.h ../war/Work.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- ../../../Core/PacketFactory.h /usr/include/STL/map \
+ ../../../Core/PacketFactory.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../ItemFactoryManager.h ../Item.h \
  ../Object.h ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h ../EffectManager.h \
- ../../../Core/EffectInfo.h /usr/include/STL/bitset ../ItemFactory.h \
+ ../../../Core/EffectInfo.h /usr/include/c++/7/bitset ../ItemFactory.h \
  ../Zone.h ../Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h ../Creature.h ../Obstacle.h ../Portal.h \
  ../quest/TriggerManager.h ../quest/Trigger.h ../quest/Condition.h \
@@ -292,7 +292,7 @@ NewbieFlagWar.o: NewbieFlagWar.cpp NewbieFlagWar.h FlagWar.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../MonsterSummonInfo.h ../MonsterInfoTypes.h \
+ /usr/include/c++/7/bitset ../MonsterSummonInfo.h ../MonsterInfoTypes.h \
  ../Zone.h ../Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h ../Item.h ../Obstacle.h ../Portal.h \
  ../quest/TriggerManager.h ../quest/Trigger.h ../quest/Condition.h \
@@ -307,6 +307,6 @@ NewbieFlagWar.o: NewbieFlagWar.cpp NewbieFlagWar.h FlagWar.h \
  /home/darkeden/src/libs/stl_queue.h ../ZoneInfoManager.h ../ZoneInfo.h \
  FlagManager.h ../war/Scheduler.h ../war/Schedule.h \
  ../../../Core/Gpackets/GCFlagWarStatus.h \
- ../../../Core/PacketFactory.h /usr/include/STL/map \
+ ../../../Core/PacketFactory.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h

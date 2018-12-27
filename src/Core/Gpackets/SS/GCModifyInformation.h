@@ -33,7 +33,7 @@ public:
 class GCModifyInformationFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCModifyInformation(); }
+	Packet* createPacket()  { return new GCModifyInformation(); }
 	string getPacketName()  { return "GCModifyInformation"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_MODIFY_INFORMATION; }
 	PacketSize_t getPacketMaxSize()  { return ModifyInfo::getPacketMaxSize(); }

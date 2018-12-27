@@ -36,7 +36,7 @@ public:
 class CGSMSAddressListFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGSMSAddressList(); }
+	Packet* createPacket()  { return new CGSMSAddressList(); }
 	string getPacketName()  { return "CGSMSAddressList"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_SMS_ADDRESS_LIST; }
 	PacketSize_t getPacketMaxSize()  { return 0; }

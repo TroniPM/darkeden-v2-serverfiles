@@ -133,7 +133,7 @@ public :
 
 	// 쓰레드에서 독립적으로 실행되는 코드가 들어가는 부분이다. Thread 
 	// 클래스를 상속받은 하위 클래스는 항상 이 함수를 재정의해줘야 한다.
-	virtual void run () throw () {};
+	virtual void run ()  {};
 
 
 //////////////////////////////////////////////////
@@ -152,7 +152,7 @@ public :
 	
 	// get/set thread's status
 	ThreadStatus getStatus ()  { return m_Status; }
-	void setStatus ( ThreadStatus status ) throw () { m_Status = status; }
+	void setStatus ( ThreadStatus status )  { m_Status = status; }
 	
 	// get thread name
 	virtual string getName ()  { return "Thread"; }

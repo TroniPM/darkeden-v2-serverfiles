@@ -61,10 +61,10 @@ public :
 
 	// get / set CEffectID
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 	SkillType_t getSkillType()  { return m_SkillType; }
-	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
+	void setSkillType(SkillType_t SkillType)  { m_SkillType = SkillType; }
 	
 
 private :
@@ -90,16 +90,16 @@ class GCCrossCounterOK2Factory : public PacketFactory {
 public :
 	
 	// constructor
-	GCCrossCounterOK2Factory() throw() {}
+	GCCrossCounterOK2Factory()  {}
 	
 	// destructor
-	virtual ~GCCrossCounterOK2Factory() throw() {}
+	virtual ~GCCrossCounterOK2Factory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCCrossCounterOK2(); }
+	Packet* createPacket()  { return new GCCrossCounterOK2(); }
 
 	// get packet name
 	string getPacketName()  { return "GCCrossCounterOK2"; }

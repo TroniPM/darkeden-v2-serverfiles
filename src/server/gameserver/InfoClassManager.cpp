@@ -14,7 +14,7 @@
 // constructor
 //--------------------------------------------------------------------------------
 InfoClassManager::InfoClassManager () 
-	throw ()
+	
 : m_InfoCount(0), m_pItemInfos(NULL), m_TotalRatio(0), m_AveragePrice(0)
 {
 }
@@ -24,7 +24,7 @@ InfoClassManager::InfoClassManager ()
 // destructor
 //--------------------------------------------------------------------------------
 InfoClassManager::~InfoClassManager() 
-	throw ()
+	
 {
 	if (m_pItemInfos != NULL) 
 	{
@@ -87,7 +87,7 @@ void InfoClassManager::init ()
 // reload item infos
 //--------------------------------------------------------------------------------
 void InfoClassManager::reload()
-	throw( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -136,7 +136,7 @@ ItemInfo* InfoClassManager::getItemInfo (ItemType_t itemType) const
 // remove all item infos
 //--------------------------------------------------------------------------------
 void InfoClassManager::removeAllItemInfo()
-	throw( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -218,7 +218,7 @@ ItemType_t  InfoClassManager::getRandomItemType() const
 // toString for debug
 //--------------------------------------------------------------------------------
 string InfoClassManager::toString() const 
-	throw ()
+	
 {
 	StringStream msg;
 

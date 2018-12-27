@@ -63,7 +63,7 @@ private:
 
 class CGSMSSendFactory : public PacketFactory {
 public:
-	Packet* createPacket() throw() { return new CGSMSSend(); }
+	Packet* createPacket()  { return new CGSMSSend(); }
 	string getPacketName()  { return "CGSMSSend"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_SMS_SEND; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE + (szBYTE + MAX_NUMBER_LENGTH)*MAX_RECEVIER_NUM + szBYTE + MAX_RECEVIER_NUM + szBYTE + MAX_MESSAGE_LENGTH; }

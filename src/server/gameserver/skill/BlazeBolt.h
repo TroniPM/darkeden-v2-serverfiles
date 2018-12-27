@@ -16,8 +16,8 @@
 class BlazeBolt : public SkillHandler 
 {
 public:
-	BlazeBolt() throw() {}
-	~BlazeBolt() throw() {}
+	BlazeBolt()  {}
+	~BlazeBolt()  {}
 	
 public:
     string getSkillHandlerName()  { return "BlazeBolt"; }

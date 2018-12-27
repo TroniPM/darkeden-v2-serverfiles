@@ -132,7 +132,7 @@ ClientManager.o: ClientManager.cpp ../database/DatabaseManager.h \
  ../../Core/SocketAPI.h ../../Core/ServerSocket.h \
  ../../Core/SocketImpl.h ../../Core/Socket.h \
  ReconnectLoginInfoManager.h ReconnectLoginInfo.h ../Profile.h \
- ../PacketProfile.h ../../Core/Properties.h /usr/include/STL/map \
+ ../PacketProfile.h ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../GameWorldInfoManager.h \
  ../GameWorldInfo.h GameServerGroupInfoManager.h GameServerGroupInfo.h
@@ -297,7 +297,7 @@ GameServerManager.o: GameServerManager.cpp GameServerManager.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h ../../Core/DatagramSocket.h \
  ../../Core/SocketAPI.h ../../Core/Datagram.h ../../Core/Properties.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../Core/DatagramPacket.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -387,7 +387,7 @@ LoginPlayer.o: LoginPlayer.cpp LoginPlayer.h ../../Core/Player.h \
  ../../Core/Lpackets/LCLoginError.h \
  ../../Core/Lpackets/LGKickCharacter.h ../../Core/DatagramPacket.h \
  ../../Core/Lpackets/LCPCList.h ../../Core/PCInfo.h \
- ../../Core/PCSlayerInfo.h /usr/include/STL/bitset \
+ ../../Core/PCSlayerInfo.h /usr/include/c++/7/bitset \
  ../../Core/PCVampireInfo.h ../../Core/PCOustersInfo.h
 LoginPlayerManager.o: LoginPlayerManager.cpp /usr/include/stdio.h \
  /usr/include/features.h /usr/include/i386-linux-gnu/sys/cdefs.h \
@@ -450,7 +450,7 @@ LoginPlayerManager.o: LoginPlayerManager.cpp /usr/include/stdio.h \
  ../../Core/Gpackets/GCReconnectLogin.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/SocketOutputStream.h \
  ../../Core/PacketFactory.h ../LogClient.h ../../Core/Properties.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ReconnectLoginInfoManager.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
@@ -688,7 +688,7 @@ main.o: main.cpp ../../Core/Types.h ../../Core/types/SystemTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h LoginServer.h \
- ../LogClient.h ../../Core/Properties.h /usr/include/STL/map \
+ ../LogClient.h ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  /usr/include/sys/time.h /usr/include/sys/resource.h \

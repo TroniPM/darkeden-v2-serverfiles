@@ -177,7 +177,7 @@ void ActionEnterCastleWithFee::execute (Creature * pNPC , Creature * pCreature)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionEnterCastleWithFee::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

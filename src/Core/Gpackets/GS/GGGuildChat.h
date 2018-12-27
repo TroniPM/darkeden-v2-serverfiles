@@ -55,23 +55,23 @@ public :
 public :
 
 	BYTE getType()  { return m_Type; }
-	void setType( BYTE type ) throw() { m_Type = type; }
+	void setType( BYTE type )  { m_Type = type; }
 
 	// get/set Guild ID
 	GuildID_t getGuildID()  { return m_GuildID; }
-	void setGuildID( GuildID_t guildID ) throw() { m_GuildID = guildID; }
+	void setGuildID( GuildID_t guildID )  { m_GuildID = guildID; }
 
 	// get/set Sender
 	const string& getSender()  { return m_Sender; }
-	void setSender( const string& sender ) throw() { m_Sender = sender; }
+	void setSender( const string& sender )  { m_Sender = sender; }
 
 	// get/set text color
 	uint getColor()  { return m_Color; }
-	void setColor( uint color ) throw() { m_Color = color; }
+	void setColor( uint color )  { m_Color = color; }
 
 	// get/set message
 	const string& getMessage()  { return m_Message; }
-	void setMessage( const string& message ) throw() { m_Message = message; }
+	void setMessage( const string& message )  { m_Message = message; }
 
 private :
 
@@ -104,7 +104,7 @@ class GGGuildChatFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GGGuildChat(); }
+	Packet* createPacket()  { return new GGGuildChat(); }
 
 	// get packet name
 	string getPacketName()  { return "GGGuildChat"; }

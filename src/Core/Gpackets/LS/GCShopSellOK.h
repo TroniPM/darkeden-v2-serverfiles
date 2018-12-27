@@ -61,15 +61,15 @@ public :
 
 	// get/set NPC's object id
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t creatureID) throw() { m_ObjectID = creatureID; }
+	void setObjectID(ObjectID_t creatureID)  { m_ObjectID = creatureID; }
 
 	// get/set shop version	
 	ShopVersion_t getShopVersion(void)  { return m_Version;}
-	void setShopVersion(const ShopVersion_t ver) throw() { m_Version = ver;}
+	void setShopVersion(const ShopVersion_t ver)  { m_Version = ver;}
 
 	// get/set item object id
 	ObjectID_t getItemObjectID()  { return m_ItemObjectID;}
-	void setItemObjectID(ObjectID_t id) throw() { m_ItemObjectID = id;}
+	void setItemObjectID(ObjectID_t id)  { m_ItemObjectID = id;}
 
 	// get/set price
 	Price_t getPrice()  { return m_Price;}
@@ -107,7 +107,7 @@ class GCShopSellOKFactory : public PacketFactory
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCShopSellOK(); }
+	Packet* createPacket()  { return new GCShopSellOK(); }
 
 	// get packet name
 	string getPacketName()  { return "GCShopSellOK"; }

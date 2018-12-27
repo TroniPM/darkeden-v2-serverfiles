@@ -28,30 +28,30 @@ class ReconnectLoginInfo {
 public :
 
 	// constructor
-	ReconnectLoginInfo () throw () : m_Key(0) 
+	ReconnectLoginInfo ()  : m_Key(0) 
 	{ 
 		m_ExpireTime.tv_sec = 0; 
 		m_ExpireTime.tv_usec = 0; 
 	}
 
 	// destructor
-	~ReconnectLoginInfo () throw () {}
+	~ReconnectLoginInfo ()  {}
 
 	// get/set client ip
 	string getClientIP ()  { return m_ClientIP; }
-	void setClientIP ( const string & clientIP ) throw () { m_ClientIP = clientIP; }
+	void setClientIP ( const string & clientIP )  { m_ClientIP = clientIP; }
 
 	// get/set PlayerID
 	string getPlayerID()  { return m_PlayerID; }
-	void setPlayerID( const string & PlayerID ) throw() { m_PlayerID = PlayerID; }
+	void setPlayerID( const string & PlayerID )  { m_PlayerID = PlayerID; }
 
 	// get/set expire time
 	Timeval getExpireTime ()  { return m_ExpireTime; }
-	void setExpireTime ( Timeval tv ) throw () { m_ExpireTime = tv; }
+	void setExpireTime ( Timeval tv )  { m_ExpireTime = tv; }
 	
 	// get/set validation key
 	DWORD getKey ()  { return m_Key; }
-	void setKey ( DWORD key ) throw () { m_Key = key; }
+	void setKey ( DWORD key )  { m_Key = key; }
 
 	// get debug string
 	string toString ()  

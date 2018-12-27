@@ -64,7 +64,7 @@ MonsterDropSetupManager::~MonsterDropSetupManager()
 }
 
 void MonsterDropSetupManager::clear()
-	throw()
+	
 {
 	__BEGIN_TRY
 

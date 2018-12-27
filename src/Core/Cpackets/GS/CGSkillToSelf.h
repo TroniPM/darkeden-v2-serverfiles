@@ -55,11 +55,11 @@ public:
 
 	// get SkillType
 	SkillType_t getSkillType()   { return m_SkillType; }
-	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
+	void setSkillType(SkillType_t SkillType)  { m_SkillType = SkillType; }
 
 	// get CEffectID
 	CEffectID_t getCEffectID()  { return m_CEffectID; }
-	void setCEffectID(CEffectID_t CEffectID) throw() { m_CEffectID = CEffectID; }
+	void setCEffectID(CEffectID_t CEffectID)  { m_CEffectID = CEffectID; }
 
 	// get packet's debug string
 	string toString() ;
@@ -88,16 +88,16 @@ class CGSkillToSelfFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGSkillToSelfFactory() throw() {}
+	CGSkillToSelfFactory()  {}
 	
 	// destructor
-	virtual ~CGSkillToSelfFactory() throw() {}
+	virtual ~CGSkillToSelfFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGSkillToSelf(); }
+	Packet* createPacket()  { return new CGSkillToSelf(); }
 
 	// get packet name
 	string getPacketName()  { return "CGSkillToSelf"; }

@@ -160,7 +160,7 @@ uint Dice(uint num , uint dice)
 // pos 값은 \n 의 인덱스값이 된다.
 //////////////////////////////////////////////////////////////////////////////
 string getline(const string & str , uint & pos)
-	throw()
+	
 {
 	if(pos > str.size()) return "";
 
@@ -184,7 +184,7 @@ string getline(const string & str , uint & pos)
 // 문자열 앞 뒤의 공백 제거하기
 //////////////////////////////////////////////////////////////////////////////
 string trim(const string & str)
-	throw()
+	
 {
 	if(str.size() == 0) return "";
 
@@ -202,7 +202,7 @@ string trim(const string & str)
 // 현재 시간 얻어내기
 //////////////////////////////////////////////////////////////////////////////
 void getCurrentTimeEx(int& year, int& month, int& day, int& hour, int& minute, int& sec) 
-	throw()
+	
 {
 	time_t cur_time = time(NULL);
 	tm     cur_tm;
@@ -218,7 +218,7 @@ void getCurrentTimeEx(int& year, int& month, int& day, int& hour, int& minute, i
 }
 
 string getCurrentTimeStringEx(void) 
-	throw()
+	
 {
 	int year, month, day, hour, minute, second;
 
@@ -239,7 +239,7 @@ string getCurrentTimeStringEx(void)
 //////////////////////////////////////////////////////////////////////////////
 /*
 void splitWord(WORD value, int& high, int& low) 
-	throw()
+	
 {
 	high = value >> 8;
 	low  = value & 0xFF;
@@ -249,7 +249,7 @@ void splitWord(WORD value, int& high, int& low)
 // 0으로 초기화시키기
 //////////////////////////////////////////////////////////////////////////////
 void zerofill(void* pointer, size_t size)
-	throw()
+	
 {
 	memset(pointer, 0, size);
 }
@@ -258,7 +258,7 @@ void zerofill(void* pointer, size_t size)
 // range 내에 있는지 검사하기
 //////////////////////////////////////////////////////////////////////////////
 bool isInRange(int value, int min, int max)
-	throw()
+	
 {
 	if(min <= value && value <= max) return true;
 	return false;
@@ -293,7 +293,7 @@ int getPercentValueEx( int value, int percent )
 // 파일에다 로그하기
 //////////////////////////////////////////////////////////////////////////////
 void filelog(const char* szFilename, const char* fmt, ...)
-    throw()
+    
 {
     __BEGIN_TRY
 

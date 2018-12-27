@@ -32,7 +32,7 @@ public:
 	int getLevel(void) const { return m_Level; }
 	void setLevel(int level) { m_Level = level; }
 
-	void setUserObjectID(ObjectID_t oid) throw() { m_UserObjectID = oid; }
+	void setUserObjectID(ObjectID_t oid)  { m_UserObjectID = oid; }
 	ObjectID_t getUserObjectID()  { return m_UserObjectID; }
 
 	void setVampire( bool bVampire = true ) { m_bVampire = bVampire; }

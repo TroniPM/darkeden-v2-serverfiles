@@ -106,7 +106,7 @@ void GameServerManager::init ()
 
 
 void GameServerManager::run()
-	throw ()
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG

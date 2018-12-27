@@ -30,15 +30,15 @@ public :
 
 	// get/set GameWorldID
 	WorldID_t getID()  { return m_ID; }
-	void setID( WorldID_t ID ) throw() { m_ID = ID; }
+	void setID( WorldID_t ID )  { m_ID = ID; }
 
 	// get/set host name
 	string getName()  { return m_Name; }
-	void setName( string Name ) throw () { m_Name = Name; }
+	void setName( string Name )  { m_Name = Name; }
 	
 	// get/set World Status
 	WorldStatus getStatus()  { return m_Status; }
-	void setStatus( WorldStatus status ) throw() { m_Status = status; } 
+	void setStatus( WorldStatus status )  { m_Status = status; } 
 	
 	// get debug string
 	string toString ()  

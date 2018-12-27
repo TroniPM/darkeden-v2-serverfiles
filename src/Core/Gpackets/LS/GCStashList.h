@@ -91,10 +91,10 @@ public:
 	BYTE getSubItemCount(BYTE rack, BYTE index) ;
 
 	Gold_t getStashGold()  { return m_StashGold; }
-	void setStashGold(Gold_t gold) throw() { m_StashGold = gold; }
+	void setStashGold(Gold_t gold)  { m_StashGold = gold; }
 
 	BYTE getStashNum()  { return m_StashNum; }
-	void setStashNum(BYTE num) throw() { m_StashNum = num; }
+	void setStashNum(BYTE num)  { m_StashNum = num; }
 	
 private:
 	bool               m_bExist[STASH_RACK_MAX][STASH_INDEX_MAX];
@@ -113,7 +113,7 @@ private:
 class GCStashListFactory : public PacketFactory 
 {
 public :
-	Packet* createPacket() throw() { return new GCStashList(); }
+	Packet* createPacket()  { return new GCStashList(); }
 	string getPacketName()  { return "GCStashList"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_STASH_LIST; }
 	PacketSize_t getPacketMaxSize()  

@@ -70,7 +70,7 @@ void ActionSelectBloodBible::execute (Creature * pCreature1 , Creature * pCreatu
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionSelectBloodBible::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

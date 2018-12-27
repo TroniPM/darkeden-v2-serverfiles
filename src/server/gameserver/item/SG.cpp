@@ -25,7 +25,7 @@ Mutex    SG::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 SG::SG()
-	throw()
+	
 {
 	setItemType(0);
 	setDurability(0);
@@ -36,7 +36,7 @@ SG::SG()
 }
 
 SG::SG(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: Gun(itemType, optionType)
 {
 	setItemType(itemType);
@@ -55,7 +55,7 @@ SG::SG(ItemType_t itemType, const list<OptionType_t>& optionType)
 // destructor
 //--------------------------------------------------------------------------------
 SG::~SG()
-	throw()
+	
 {
 }
 
@@ -218,7 +218,7 @@ void SG::makePCItemInfo(PCItemInfo& result) const
 // get debug string
 //--------------------------------------------------------------------------------
 string SG::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -335,7 +335,7 @@ ToHit_t SG::getToHitBonus() const
 //--------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------
 int SG::getCriticalBonus(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -349,7 +349,7 @@ int SG::getCriticalBonus(void) const
 // get debug string
 //--------------------------------------------------------------------------------
 string SGInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

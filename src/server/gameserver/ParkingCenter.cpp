@@ -11,7 +11,7 @@
 // class MotorcycleBox member methods
 //////////////////////////////////////////////////////////////////////////////
 MotorcycleBox::MotorcycleBox(Motorcycle* pMotorcycle, Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -25,7 +25,7 @@ MotorcycleBox::MotorcycleBox(Motorcycle* pMotorcycle, Zone* pZone, ZoneCoord_t X
 }
 
 MotorcycleBox::~MotorcycleBox()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -66,7 +66,7 @@ MotorcycleBox::~MotorcycleBox()
 //////////////////////////////////////////////////////////////////////////////
 
 ParkingCenter::ParkingCenter()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -77,7 +77,7 @@ ParkingCenter::ParkingCenter()
 }
 
 ParkingCenter::~ParkingCenter()
-	throw()
+	
 {
 	__BEGIN_TRY
 

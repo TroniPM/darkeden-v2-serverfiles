@@ -129,7 +129,7 @@ void EffectFireMeteor::unaffect(Creature* pCreature)
 }
 
 string EffectFireMeteor::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

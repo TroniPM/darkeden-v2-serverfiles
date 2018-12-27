@@ -42,10 +42,10 @@ public :
 	void load ();
 	
 	// add info
-	void addZoneInfo ( ZoneInfo * pZoneInfo ) throw ( DuplicatedException );
+	void addZoneInfo ( ZoneInfo * pZoneInfo ) ;
 	
 	// delete info
-	void deleteZoneInfo ( ZoneID_t zoneID ) throw ( NoSuchElementException );
+	void deleteZoneInfo ( ZoneID_t zoneID ) ;
 	
 	// get info
 	ZoneInfo * getZoneInfo ( ZoneID_t zoneID ) ;

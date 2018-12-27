@@ -243,7 +243,7 @@ War.o: War.cpp /usr/include/stdio.h /usr/include/features.h \
  ../../../Core/SocketOutputStream.h ../../../Core/PacketFactory.h \
  ../../../Core/GuildWarInfo.h ../../../Core/WarInfo.h \
  ../../../Core/ValueList.h ../../../Core/RaceWarInfo.h \
- ../../../Core/Properties.h /usr/include/STL/map \
+ ../../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../../database/DB.h \
  ../../database/DatabaseManager.h ../../database/Connection.h \
@@ -255,7 +255,7 @@ War.o: War.cpp /usr/include/stdio.h /usr/include/features.h \
  ../Object.h ../Creature.h ../EffectManager.h ../Effect.h \
  ../../Timeval.h /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../../Core/EffectInfo.h /usr/include/STL/bitset ../Item.h \
+ ../../../Core/EffectInfo.h /usr/include/c++/7/bitset ../Item.h \
  ../Obstacle.h ../Portal.h ../quest/TriggerManager.h \
  ../quest/Trigger.h ../quest/Condition.h ../quest/PropertyBuffer.h \
  ../Sector.h ../ObjectRegistry.h ../Party.h ../../../Core/ModifyInfo.h \
@@ -330,7 +330,7 @@ RaceWar.o: RaceWar.cpp /usr/include/stdio.h /usr/include/features.h \
  ../../../Core/SocketOutputStream.h ../../../Core/PacketFactory.h \
  ../../../Core/GuildWarInfo.h ../../../Core/WarInfo.h \
  ../../../Core/ValueList.h ../../../Core/RaceWarInfo.h \
- ../../../Core/Properties.h /usr/include/STL/map \
+ ../../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../../database/DB.h \
  ../../database/DatabaseManager.h ../../database/Connection.h \
@@ -342,7 +342,7 @@ RaceWar.o: RaceWar.cpp /usr/include/stdio.h /usr/include/features.h \
  ../Object.h ../Creature.h ../EffectManager.h ../Effect.h \
  ../../Timeval.h /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../../Core/EffectInfo.h /usr/include/STL/bitset ../Item.h \
+ ../../../Core/EffectInfo.h /usr/include/c++/7/bitset ../Item.h \
  ../Obstacle.h ../Portal.h ../quest/TriggerManager.h \
  ../quest/Trigger.h ../quest/Condition.h ../quest/PropertyBuffer.h \
  ../Sector.h ../ObjectRegistry.h ../Party.h ../../../Core/ModifyInfo.h \
@@ -424,7 +424,7 @@ GuildWar.o: GuildWar.cpp /usr/include/stdio.h /usr/include/features.h \
  ../../../Core/SocketOutputStream.h ../../../Core/PacketFactory.h \
  ../../../Core/GuildWarInfo.h ../../../Core/WarInfo.h \
  ../../../Core/ValueList.h ../../../Core/RaceWarInfo.h \
- ../../../Core/Properties.h /usr/include/STL/map \
+ ../../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../../database/DB.h \
  ../../database/DatabaseManager.h ../../database/Connection.h \
@@ -434,7 +434,7 @@ GuildWar.o: GuildWar.cpp /usr/include/stdio.h /usr/include/features.h \
  ../Zone.h ../Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h ../Object.h ../Creature.h \
  ../EffectManager.h ../Effect.h ../../../Core/EffectInfo.h \
- /usr/include/STL/bitset ../Item.h ../Obstacle.h ../Portal.h \
+ /usr/include/c++/7/bitset ../Item.h ../Obstacle.h ../Portal.h \
  ../quest/TriggerManager.h ../quest/Trigger.h ../quest/Condition.h \
  ../quest/PropertyBuffer.h ../Sector.h ../ObjectRegistry.h ../Party.h \
  ../../../Core/ModifyInfo.h ../PCManager.h ../CreatureManager.h \
@@ -514,7 +514,7 @@ SiegeWar.o: SiegeWar.cpp /usr/include/stdio.h /usr/include/features.h \
  ../../../Core/SocketOutputStream.h ../../../Core/PacketFactory.h \
  ../../../Core/GuildWarInfo.h ../../../Core/WarInfo.h \
  ../../../Core/ValueList.h ../../../Core/RaceWarInfo.h \
- ../../../Core/Properties.h /usr/include/STL/map \
+ ../../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../../database/DB.h \
  ../../database/DatabaseManager.h ../../database/Connection.h \
@@ -524,7 +524,7 @@ SiegeWar.o: SiegeWar.cpp /usr/include/stdio.h /usr/include/features.h \
  ../Zone.h ../Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h ../Object.h ../Creature.h \
  ../EffectManager.h ../Effect.h ../../../Core/EffectInfo.h \
- /usr/include/STL/bitset ../Item.h ../Obstacle.h ../Portal.h \
+ /usr/include/c++/7/bitset ../Item.h ../Obstacle.h ../Portal.h \
  ../quest/TriggerManager.h ../quest/Trigger.h ../quest/Condition.h \
  ../quest/PropertyBuffer.h ../Sector.h ../ObjectRegistry.h ../Party.h \
  ../../../Core/ModifyInfo.h ../PCManager.h ../CreatureManager.h \
@@ -598,7 +598,7 @@ WarSchedule.o: WarSchedule.cpp WarSchedule.h ../../../Core/Types.h \
  /usr/include/getopt.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../../Core/Properties.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../database/DB.h ../../database/DatabaseManager.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
@@ -610,7 +610,7 @@ WarSchedule.o: WarSchedule.cpp WarSchedule.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  ../Obstacle.h ../Portal.h ../quest/TriggerManager.h \
  ../quest/Trigger.h ../quest/Condition.h ../quest/PropertyBuffer.h \
@@ -693,13 +693,13 @@ WarScheduler.o: WarScheduler.cpp WarSchedule.h ../../../Core/Types.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset ../Item.h \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Item.h \
  ../Obstacle.h ../Portal.h ../quest/TriggerManager.h \
  ../quest/Trigger.h ../quest/Condition.h ../quest/PropertyBuffer.h \
  ../Sector.h ../ObjectRegistry.h ../Party.h ../../../Core/ModifyInfo.h \
  ../PCManager.h ../CreatureManager.h ../../../Core/Encrypter.h \
  ../../../Core/EncryptUtility.h ../../../Core/Properties.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h GuildWar.h \
  SiegeWar.h ../VariableManager.h /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../../../Core/Gpackets/GCWarScheduleList.h \
@@ -778,8 +778,8 @@ WarSystem.o: WarSystem.cpp WarSystem.h ../../../Core/Types.h \
  ../billing/BillingPlayerInfo.h \
  ../../chinabilling/CBillingPlayerInfo.h \
  ../../chinabilling/CBillingInfo.h \
- ../../../Core/Gpackets/GCReconnectLogin.h /usr/include/STL/bitset \
- ../gameguard/CSAuth.h ../ZoneGroupManager.h /usr/include/STL/map \
+ ../../../Core/Gpackets/GCReconnectLogin.h /usr/include/c++/7/bitset \
+ ../gameguard/CSAuth.h ../ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../ZoneGroup.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Object.h \
@@ -852,7 +852,7 @@ ZoneItemPosition.o: ZoneItemPosition.cpp ../../../Core/Assert.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../Corpse.h ../ItemFactory.h ../Zone.h ../Tile.h \
@@ -925,7 +925,7 @@ InventoryItemPosition.o: InventoryItemPosition.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../PlayerCreature.h ../Creature.h ../ObjectRegistry.h ../../Mutex.h \
@@ -945,7 +945,7 @@ InventoryItemPosition.o: InventoryItemPosition.cpp \
  ../../../Core/Encrypter.h ../../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
  /home/darkeden/src/libs/stl_queue.h ../Inventory.h ../VolumeInfo.h \
- ../couple/PartnerWaitingManager.h /usr/include/STL/map \
+ ../couple/PartnerWaitingManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../ZoneGroup.h \
  ../../../Core/GameTime.h ../../../Core/Gpackets/GMServerInfo.h \
@@ -1006,7 +1006,7 @@ MouseItemPosition.o: MouseItemPosition.cpp ../../../Core/Assert.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -1025,7 +1025,7 @@ MouseItemPosition.o: MouseItemPosition.cpp ../../../Core/Assert.h \
  ../../../Core/Encrypter.h ../../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
  /home/darkeden/src/libs/stl_queue.h ../Inventory.h ../VolumeInfo.h \
- ../couple/PartnerWaitingManager.h /usr/include/STL/map \
+ ../couple/PartnerWaitingManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../ZoneGroup.h \
  ../../../Core/GameTime.h ../../../Core/Gpackets/GMServerInfo.h \
@@ -1088,7 +1088,7 @@ CorpseItemPosition.o: CorpseItemPosition.cpp ../../../Core/Assert.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Obstacle.h ../Portal.h \
  ../quest/TriggerManager.h ../quest/Trigger.h ../quest/Condition.h \
@@ -1109,7 +1109,7 @@ CorpseItemPosition.o: CorpseItemPosition.cpp ../../../Core/Assert.h \
  CorpseItemPosition.h GlobalItemPosition.h \
  ../../../Core/Gpackets/GCAddEffectToTile.h ../ctf/FlagManager.h \
  ../war/Work.h ../war/Scheduler.h ../war/Schedule.h \
- ../../../Core/Gpackets/GCFlagWarStatus.h /usr/include/STL/map \
+ ../../../Core/Gpackets/GCFlagWarStatus.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h
 RaceWarLimiter.o: RaceWarLimiter.cpp RaceWarLimiter.h ../PCLimiter.h \
@@ -1175,7 +1175,7 @@ RaceWarLimiter.o: RaceWarLimiter.cpp RaceWarLimiter.h ../PCLimiter.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../InventorySlot.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../InventorySlot.h \
  ../Item.h ../Garbage.h ../RankBonus.h ../ExpFwd.h \
  ../../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../../Core/PacketFactory.h \
@@ -1264,7 +1264,7 @@ DragonEyeManager.o: DragonEyeManager.cpp DragonEyeManager.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ItemInfo.h ../InfoClassManager.h ../ItemFactory.h ../ItemLoader.h \
  ../../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \

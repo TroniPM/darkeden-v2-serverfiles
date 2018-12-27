@@ -30,7 +30,7 @@ public:
 	string toString() ;
 
 public:
-	int getDefBonus() throw() { return m_DefBonus;}
+	int getDefBonus()  { return m_DefBonus;}
 	void setDefBonus(Attr_t DefBonus)  { m_DefBonus = DefBonus;}
 
 private :

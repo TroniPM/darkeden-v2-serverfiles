@@ -54,7 +54,7 @@ public:
 			+ szAttr;
 	}
 
-	static uint getMaxSize () throw ()
+	static uint getMaxSize () 
 	{
 		return szObjectID
 			+ szBYTE + 20
@@ -91,13 +91,13 @@ public:
 
 public :
 	ObjectID_t getObjectID ()  { return m_ObjectID; }
-	void setObjectID (ObjectID_t objectID) throw () { m_ObjectID = objectID; }
+	void setObjectID (ObjectID_t objectID)  { m_ObjectID = objectID; }
 
     string getName ()  { return m_Name; }
-    void setName (string name) throw () { m_Name = (name.size() > 20) ? name.substr(0,20) : name; }
+    void setName (string name)  { m_Name = (name.size() > 20) ? name.substr(0,20) : name; }
 
 	Sex getSex ()  { return m_Sex; }
-	void setSex (Sex sex) throw () { m_Sex = sex; }
+	void setSex (Sex sex)  { m_Sex = sex; }
 	void setSex (string sex) 
 	{
 		if (sex == Sex2String[MALE]) 
@@ -109,7 +109,7 @@ public :
 	}
 
 	HairStyle getHairStyle ()  { return m_HairStyle; }
-	void setHairStyle (HairStyle hairStyle) throw () { m_HairStyle = hairStyle; }
+	void setHairStyle (HairStyle hairStyle)  { m_HairStyle = hairStyle; }
 	void setHairStyle (string hairStyle) 
 	{
 		if (hairStyle == HairStyle2String[HAIR_STYLE1])
@@ -123,22 +123,22 @@ public :
 	}
 
 	Rank_t getRank ()  { return m_Rank; }
-	void setRank (Rank_t rank) throw () { m_Rank = rank; }
+	void setRank (Rank_t rank)  { m_Rank = rank; }
 
 	RankExp_t getRankExp ()  { return m_RankExp; }
-	void setRankExp (RankExp_t rankExp) throw () { m_RankExp = rankExp; }
+	void setRankExp (RankExp_t rankExp)  { m_RankExp = rankExp; }
 
 	Color_t getHairColor ()  { return m_HairColor; }
-	void setHairColor (Color_t hairColor) throw () { m_HairColor = hairColor; }
+	void setHairColor (Color_t hairColor)  { m_HairColor = hairColor; }
 
 	Color_t getSkinColor ()  { return m_SkinColor; }
-	void setSkinColor (Color_t skinColor) throw () { m_SkinColor = skinColor; }
+	void setSkinColor (Color_t skinColor)  { m_SkinColor = skinColor; }
 
 	BYTE getMasterEffectColor ()  { return m_MasterEffectColor; }
-	void setMasterEffectColor (BYTE masterEffectColor) throw () { m_MasterEffectColor = masterEffectColor; }
+	void setMasterEffectColor (BYTE masterEffectColor)  { m_MasterEffectColor = masterEffectColor; }
 
 	Alignment_t getAlignment()  { return m_Alignment; }
-	void setAlignment(Alignment_t Alignment) throw() { m_Alignment = Alignment; }
+	void setAlignment(Alignment_t Alignment)  { m_Alignment = Alignment; }
 
     Attr_t getSTR (AttrType attrType = ATTR_CURRENT) 
 	{ 
@@ -183,35 +183,35 @@ public :
 	void setINTExp(Exp_t INTExp)  { m_INTExp = INTExp; }
 
 	HP_t getHP (AttrType attrType = ATTR_CURRENT)  { return m_HP[attrType]; }
-	void setHP (HP_t hp, AttrType attrType = ATTR_CURRENT) throw () { m_HP[attrType] = hp; }
-	void setHP (HP_t curHP, HP_t maxHP) throw () { m_HP[ATTR_CURRENT] = curHP; m_HP[ATTR_MAX] = maxHP; }
+	void setHP (HP_t hp, AttrType attrType = ATTR_CURRENT)  { m_HP[attrType] = hp; }
+	void setHP (HP_t curHP, HP_t maxHP)  { m_HP[ATTR_CURRENT] = curHP; m_HP[ATTR_MAX] = maxHP; }
 
 	MP_t getMP (AttrType attrType = ATTR_CURRENT)  { return m_MP[attrType]; }
-	void setMP (MP_t mp, AttrType attrType = ATTR_CURRENT) throw () { m_MP[attrType] = mp; }
-	void setMP (MP_t curMP, MP_t maxMP) throw () { m_MP[ATTR_CURRENT] = curMP; m_MP[ATTR_MAX] = maxMP; }
+	void setMP (MP_t mp, AttrType attrType = ATTR_CURRENT)  { m_MP[attrType] = mp; }
+	void setMP (MP_t curMP, MP_t maxMP)  { m_MP[ATTR_CURRENT] = curMP; m_MP[ATTR_MAX] = maxMP; }
 
 	Fame_t getFame ()  { return m_Fame; }
-	void setFame (Fame_t fame) throw () { m_Fame = fame; }
+	void setFame (Fame_t fame)  { m_Fame = fame; }
 
 	Fame_t getKillPoint ()  { return m_KillPoint ; }
-	void setKillPoint (Fame_t KillPoint) throw () { m_KillPoint = KillPoint ; }
+	void setKillPoint (Fame_t KillPoint)  { m_KillPoint = KillPoint ; }
 
 	Gold_t getGold ()  { return m_Gold; }
-	void setGold (Gold_t gold) throw () { m_Gold = gold; }
+	void setGold (Gold_t gold)  { m_Gold = gold; }
 
 	SkillLevel_t getSkillDomainLevel (SkillDomain domain)  { return m_DomainLevels[ domain ]; }
-	void setSkillDomainLevel (SkillDomain domain, SkillLevel_t skillLevel) throw () { m_DomainLevels[ domain ] = skillLevel; }
+	void setSkillDomainLevel (SkillDomain domain, SkillLevel_t skillLevel)  { m_DomainLevels[ domain ] = skillLevel; }
 
 	SkillExp_t getSkillDomainExp (SkillDomain domain)  { return m_DomainExps[ domain ]; }
-	void setSkillDomainExp (SkillDomain domain, SkillExp_t skillExp) throw () { m_DomainExps[ domain ] = skillExp; }
+	void setSkillDomainExp (SkillDomain domain, SkillExp_t skillExp)  { m_DomainExps[ domain ] = skillExp; }
 
-	void setSkillDomain (SkillDomain domain, SkillLevel_t skillLevel, SkillExp_t skillExp) throw () { m_DomainLevels[ domain ] = skillLevel; m_DomainExps[ domain ] = skillExp; }
+	void setSkillDomain (SkillDomain domain, SkillLevel_t skillLevel, SkillExp_t skillExp)  { m_DomainLevels[ domain ] = skillLevel; m_DomainExps[ domain ] = skillExp; }
 
 	Sight_t getSight ()  { return m_Sight; }
-	void setSight (Sight_t sight) throw () { m_Sight = sight; }
+	void setSight (Sight_t sight)  { m_Sight = sight; }
 
 	SkillType_t getHotKey(BYTE pos)  { return m_HotKey[pos]; }
-	void setHotKey(BYTE pos, SkillType_t SkillType) throw() { m_HotKey[pos] = SkillType; }
+	void setHotKey(BYTE pos, SkillType_t SkillType)  { m_HotKey[pos] = SkillType; }
 
 	BYTE getCompetence(void) const { return m_Competence; }
 	void setCompetence(BYTE competence) { m_Competence = competence; }

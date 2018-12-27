@@ -16,8 +16,8 @@
 class MoonlightSever : public SkillHandler 
 {
 public:
-	MoonlightSever() throw() {}
-	~MoonlightSever() throw() {}
+	MoonlightSever()  {}
+	~MoonlightSever()  {}
 	
 public:
     string getSkillHandlerName()  { return "MoonlightSever"; }

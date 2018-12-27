@@ -17,7 +17,7 @@ class SummonMonsters: public SkillHandler
 {
 public:
 	SummonMonsters() ;
-	~SummonMonsters() throw() {}
+	~SummonMonsters()  {}
 	
 public:
     string getSkillHandlerName()  { return "SummonMonsters"; }

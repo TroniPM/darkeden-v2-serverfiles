@@ -117,7 +117,7 @@
 #define ITEMIDREGISTRY(CLASS,TABLE) \
 \
 void CLASS::initItemIDRegistry(void) \
-	throw() \
+	 \
 { \
 	__BEGIN_TRY \
 \
@@ -178,7 +178,7 @@ ITEMIDREGISTRY(OustersWingItem,"OustersWingItemObject");
 ITEMIDREGISTRY(VampireTuningItem,"VampireTuningItemObject");
 ITEMIDREGISTRY(OustersTuningItem,"OustersTuningItemObject");
 void Motorcycle::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -215,7 +215,7 @@ void Motorcycle::initItemIDRegistry(void)
 }
 
 void Potion::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -254,7 +254,7 @@ void Potion::initItemIDRegistry(void)
 }
 
 void Water::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -291,7 +291,7 @@ void Water::initItemIDRegistry(void)
 }
 
 void HolyWater::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -328,7 +328,7 @@ void HolyWater::initItemIDRegistry(void)
 }
 
 void Magazine::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -365,7 +365,7 @@ void Magazine::initItemIDRegistry(void)
 }
 
 void BombMaterial::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -402,7 +402,7 @@ void BombMaterial::initItemIDRegistry(void)
 }
 
 void ETC::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -439,7 +439,7 @@ void ETC::initItemIDRegistry(void)
 }
 
 void Key::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -476,7 +476,7 @@ void Key::initItemIDRegistry(void)
 }
 
 void Ring::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -513,7 +513,7 @@ void Ring::initItemIDRegistry(void)
 }
 
 void Bracelet::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -550,7 +550,7 @@ void Bracelet::initItemIDRegistry(void)
 }
 
 void Necklace::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -587,7 +587,7 @@ void Necklace::initItemIDRegistry(void)
 }
 
 void Coat::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -624,7 +624,7 @@ void Coat::initItemIDRegistry(void)
 }
 
 void Trouser::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -661,7 +661,7 @@ void Trouser::initItemIDRegistry(void)
 }
 
 void Shoes::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -698,7 +698,7 @@ void Shoes::initItemIDRegistry(void)
 }
 
 void Sword::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -735,7 +735,7 @@ void Sword::initItemIDRegistry(void)
 }
 
 void Blade::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -772,7 +772,7 @@ void Blade::initItemIDRegistry(void)
 }
 
 void Shield::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -809,7 +809,7 @@ void Shield::initItemIDRegistry(void)
 }
 
 void Cross::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -846,7 +846,7 @@ void Cross::initItemIDRegistry(void)
 }
 
 void Mace::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -883,7 +883,7 @@ void Mace::initItemIDRegistry(void)
 }
 
 void Glove::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -920,7 +920,7 @@ void Glove::initItemIDRegistry(void)
 }
 
 void Helm::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -957,7 +957,7 @@ void Helm::initItemIDRegistry(void)
 }
 
 void SG::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -994,7 +994,7 @@ void SG::initItemIDRegistry(void)
 }
 
 void SMG::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1031,7 +1031,7 @@ void SMG::initItemIDRegistry(void)
 }
 
 void AR::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1068,7 +1068,7 @@ void AR::initItemIDRegistry(void)
 }
 
 void SR::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1105,7 +1105,7 @@ void SR::initItemIDRegistry(void)
 }
 
 void Bomb::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1142,7 +1142,7 @@ void Bomb::initItemIDRegistry(void)
 }
 
 void Mine::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1179,7 +1179,7 @@ void Mine::initItemIDRegistry(void)
 }
 
 void Belt::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1216,7 +1216,7 @@ void Belt::initItemIDRegistry(void)
 }
 
 void LearningItem::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1253,7 +1253,7 @@ void LearningItem::initItemIDRegistry(void)
 }
 
 void Money::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1290,7 +1290,7 @@ void Money::initItemIDRegistry(void)
 }
 
 void VampireRing::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1328,7 +1328,7 @@ void VampireRing::initItemIDRegistry(void)
 
 
 void VampireBracelet::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1365,7 +1365,7 @@ void VampireBracelet::initItemIDRegistry(void)
 }
 
 void VampireNecklace::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1402,7 +1402,7 @@ void VampireNecklace::initItemIDRegistry(void)
 }
 
 void VampireCoat::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1439,7 +1439,7 @@ void VampireCoat::initItemIDRegistry(void)
 }
 
 void Skull::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1476,7 +1476,7 @@ void Skull::initItemIDRegistry(void)
 }
 
 void Serum::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1513,7 +1513,7 @@ void Serum::initItemIDRegistry(void)
 }
 
 void VampireETC::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1550,7 +1550,7 @@ void VampireETC::initItemIDRegistry(void)
 }
 
 void SlayerPortalItem::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1587,7 +1587,7 @@ void SlayerPortalItem::initItemIDRegistry(void)
 }
 
 void VampirePortalItem::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1624,7 +1624,7 @@ void VampirePortalItem::initItemIDRegistry(void)
 }
 
 void EventGiftBox::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1661,7 +1661,7 @@ void EventGiftBox::initItemIDRegistry(void)
 }
 
 void EventStar::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1698,7 +1698,7 @@ void EventStar::initItemIDRegistry(void)
 }
 
 void VampireEarring::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1735,7 +1735,7 @@ void VampireEarring::initItemIDRegistry(void)
 }
 
 void Relic::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1772,7 +1772,7 @@ void Relic::initItemIDRegistry(void)
 }
 
 void VampireWeapon::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1809,7 +1809,7 @@ void VampireWeapon::initItemIDRegistry(void)
 }
 
 void VampireAmulet::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1846,7 +1846,7 @@ void VampireAmulet::initItemIDRegistry(void)
 }
 
 void QuestItem::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1883,7 +1883,7 @@ void QuestItem::initItemIDRegistry(void)
 }
 
 void EventTree::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1920,7 +1920,7 @@ void EventTree::initItemIDRegistry(void)
 }
 
 void EventETC::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1957,7 +1957,7 @@ void EventETC::initItemIDRegistry(void)
 }
 
 void BloodBible::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1994,7 +1994,7 @@ void BloodBible::initItemIDRegistry(void)
 }
 
 void CastleSymbol::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2031,7 +2031,7 @@ void CastleSymbol::initItemIDRegistry(void)
 }
 
 void CoupleRing::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2068,7 +2068,7 @@ void CoupleRing::initItemIDRegistry(void)
 }
 
 void VampireCoupleRing::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2105,7 +2105,7 @@ void VampireCoupleRing::initItemIDRegistry(void)
 }
 
 void EventItem::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2142,7 +2142,7 @@ void EventItem::initItemIDRegistry(void)
 }
 
 void DyePotion::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2179,7 +2179,7 @@ void DyePotion::initItemIDRegistry(void)
 }
 	
 void ResurrectItem::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2216,7 +2216,7 @@ void ResurrectItem::initItemIDRegistry(void)
 }
 
 void MixingItem::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2253,7 +2253,7 @@ void MixingItem::initItemIDRegistry(void)
 }
 
 void OustersArmsband::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2290,7 +2290,7 @@ void OustersArmsband::initItemIDRegistry(void)
 }
 
 void OustersBoots::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2327,7 +2327,7 @@ void OustersBoots::initItemIDRegistry(void)
 }
 
 void OustersChakram::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2364,7 +2364,7 @@ void OustersChakram::initItemIDRegistry(void)
 }
 
 void OustersCirclet::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2401,7 +2401,7 @@ void OustersCirclet::initItemIDRegistry(void)
 }
 
 void OustersCoat::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2438,7 +2438,7 @@ void OustersCoat::initItemIDRegistry(void)
 }
 
 void OustersPendent::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2475,7 +2475,7 @@ void OustersPendent::initItemIDRegistry(void)
 }
 
 void OustersRing::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2512,7 +2512,7 @@ void OustersRing::initItemIDRegistry(void)
 }
 
 void OustersStone::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2549,7 +2549,7 @@ void OustersStone::initItemIDRegistry(void)
 }
 
 void OustersWristlet::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2586,7 +2586,7 @@ void OustersWristlet::initItemIDRegistry(void)
 }
 
 void Larva::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2623,7 +2623,7 @@ void Larva::initItemIDRegistry(void)
 }
 
 void Pupa::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2660,7 +2660,7 @@ void Pupa::initItemIDRegistry(void)
 }
 
 void ComposMei::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2697,7 +2697,7 @@ void ComposMei::initItemIDRegistry(void)
 }
 
 void OustersSummonItem::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2734,7 +2734,7 @@ void OustersSummonItem::initItemIDRegistry(void)
 }
 
 void EffectItem::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2771,7 +2771,7 @@ void EffectItem::initItemIDRegistry(void)
 }
 	
 void CodeSheet::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2808,7 +2808,7 @@ void CodeSheet::initItemIDRegistry(void)
 }
 
 void MoonCard::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2845,7 +2845,7 @@ void MoonCard::initItemIDRegistry(void)
 }
 
 void Sweeper::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2882,7 +2882,7 @@ void Sweeper::initItemIDRegistry(void)
 }
 
 void PetItem::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2919,7 +2919,7 @@ void PetItem::initItemIDRegistry(void)
 }
 
 void PetFood::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2956,7 +2956,7 @@ void PetFood::initItemIDRegistry(void)
 }
 
 void PetEnchantItem::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2993,7 +2993,7 @@ void PetEnchantItem::initItemIDRegistry(void)
 }
 
 void LuckyBag::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -3030,7 +3030,7 @@ void LuckyBag::initItemIDRegistry(void)
 }
 
 void SMSItem::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -3067,7 +3067,7 @@ void SMSItem::initItemIDRegistry(void)
 }
 
 void CoreZap::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -3104,7 +3104,7 @@ void CoreZap::initItemIDRegistry(void)
 }
 
 void TrapItem::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -3141,7 +3141,7 @@ void TrapItem::initItemIDRegistry(void)
 }
 
 void WarItem::initItemIDRegistry(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 

@@ -16,8 +16,8 @@
 class TripleSlasher : public SkillHandler 
 {
 public:
-	TripleSlasher() throw() {}
-	~TripleSlasher() throw() {}
+	TripleSlasher()  {}
+	~TripleSlasher()  {}
 	
 public:
     string getSkillHandlerName()  { return "TripleSlasher"; }

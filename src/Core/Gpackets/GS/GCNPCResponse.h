@@ -254,8 +254,8 @@ class GCNPCResponse : public Packet
 {
 
 public:
-	GCNPCResponse() throw() { m_Code = NPC_RESPONSE_MAX; m_Parameter = 0;}
-	virtual ~GCNPCResponse() throw() {}
+	GCNPCResponse()  { m_Code = NPC_RESPONSE_MAX; m_Parameter = 0;}
+	virtual ~GCNPCResponse()  {}
 
 public:
 	void read(SocketInputStream & iStream) ;
@@ -269,10 +269,10 @@ public:
 	
 public:
 	BYTE getCode(void)  { return m_Code;}
-	void setCode(WORD code) throw() { m_Code = code;}
+	void setCode(WORD code)  { m_Code = code;}
 
 	uint getParameter(void)  { return m_Parameter; }
-	void setParameter(uint parameter) throw() { m_Parameter = parameter; }
+	void setParameter(uint parameter)  { m_Parameter = parameter; }
 
 private: 
 	WORD m_Code;
@@ -288,7 +288,7 @@ private:
 class GCNPCResponseFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCNPCResponse(); }
+	Packet* createPacket()  { return new GCNPCResponse(); }
 	string getPacketName()  { return "GCNPCResponse"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_NPC_RESPONSE; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE + szuint; }

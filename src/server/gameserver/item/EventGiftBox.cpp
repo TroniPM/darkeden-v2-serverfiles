@@ -25,13 +25,13 @@ Mutex    EventGiftBox::m_Mutex;
 //////////////////////////////////////////////////////////////////////////////
 
 EventGiftBox::EventGiftBox()
-	throw()
+	
 {
 	m_ItemType = 0;
 }
 
 EventGiftBox::EventGiftBox(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 : m_ItemType(itemType)
 {
 	if (!g_pItemInfoManager->isPossibleItem(getItemClass(), m_ItemType, optionType))
@@ -142,7 +142,7 @@ void EventGiftBox::save(const string & ownerID, Storage storage, StorageID_t sto
 }
 
 string EventGiftBox::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "EventGiftBox("
@@ -187,7 +187,7 @@ Weight_t EventGiftBox::getWeight() const
 //////////////////////////////////////////////////////////////////////////////
 
 string EventGiftBoxInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "EventGiftBoxInfo("

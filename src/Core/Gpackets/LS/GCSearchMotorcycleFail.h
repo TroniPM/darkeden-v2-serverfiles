@@ -46,7 +46,7 @@ class GCSearchMotorcycleFailFactory : public PacketFactory
 
 public :
 	
-	Packet* createPacket() throw() { return new GCSearchMotorcycleFail(); }
+	Packet* createPacket()  { return new GCSearchMotorcycleFail(); }
 	string getPacketName()  { return "GCSearchMotorcycleFail"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_SEARCH_MOTORCYCLE_FAIL; }
 	PacketSize_t getPacketMaxSize()  { return 0; }

@@ -62,7 +62,7 @@ void ActionPetWithdraw::execute (Creature * pCreature1 , Creature * pCreature2)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionPetWithdraw::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

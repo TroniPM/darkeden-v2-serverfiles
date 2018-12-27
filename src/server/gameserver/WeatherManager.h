@@ -65,7 +65,7 @@ public:
 	// 현재의 날씨 레벨을 리턴한다.
 	WeatherLevel_t getWeatherLevel()  { return m_WeatherLevel; }
 
-	void resetDarkLightInfo() throw() { m_Next10Min = time(0); }
+	void resetDarkLightInfo()  { m_Next10Min = time(0); }
 
 	// get debug string
 	string toString() ;

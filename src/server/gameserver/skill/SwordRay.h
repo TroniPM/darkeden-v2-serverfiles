@@ -16,8 +16,8 @@
 class SwordRay : public SkillHandler 
 {
 public:
-	SwordRay() throw() {}
-	~SwordRay() throw() {}
+	SwordRay()  {}
+	~SwordRay()  {}
 	
 public:
     string getSkillHandlerName()  { return "SwordRay"; }

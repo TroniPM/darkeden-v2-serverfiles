@@ -16,8 +16,8 @@
 class SummonSylph : public SkillHandler 
 {
 public:
-	SummonSylph() throw() {}
-	~SummonSylph() throw() {}
+	SummonSylph()  {}
+	~SummonSylph()  {}
 	
 public:
     string getSkillHandlerName()  { return "SummonSylph"; }

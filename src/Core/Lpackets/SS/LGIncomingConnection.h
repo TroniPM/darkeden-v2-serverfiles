@@ -67,15 +67,15 @@ public:
 
 	// get/set playerID
 	string getPlayerID()  { return m_PlayerID; }
-	void setPlayerID(const string& playerID) throw() { m_PlayerID = playerID; }
+	void setPlayerID(const string& playerID)  { m_PlayerID = playerID; }
 	
 	// get/set pcName
 	string getPCName()  { return m_PCName; }
-	void setPCName(const string& pcName) throw() { m_PCName = pcName; }
+	void setPCName(const string& pcName)  { m_PCName = pcName; }
 	
 	// get/set client ip
 	string getClientIP()  { return m_ClientIP; }
-	void setClientIP(const string& ip) throw() { m_ClientIP = ip; }
+	void setClientIP(const string& ip)  { m_ClientIP = ip; }
 	
 private :
 
@@ -104,7 +104,7 @@ class LGIncomingConnectionFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new LGIncomingConnection(); }
+	Packet* createPacket()  { return new LGIncomingConnection(); }
 
 	// get packet name
 	string getPacketName()  { return "LGIncomingConnection"; }

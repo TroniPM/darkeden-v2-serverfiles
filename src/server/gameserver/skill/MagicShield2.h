@@ -16,8 +16,8 @@
 class MagicShield2 : public SkillHandler 
 {
 public:
-	MagicShield2() throw() {}
-	~MagicShield2() throw() {}
+	MagicShield2()  {}
+	~MagicShield2()  {}
 	
 public:
 	string getSkillHandlerName()  { return "MagicShield2"; }

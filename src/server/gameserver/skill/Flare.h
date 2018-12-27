@@ -17,8 +17,8 @@
 class Flare : public SkillHandler 
 {
 public:
-	Flare() throw() {}
-	~Flare() throw() {}
+	Flare()  {}
+	~Flare()  {}
 	
 public:
     string getSkillHandlerName()  { return "Flare"; }

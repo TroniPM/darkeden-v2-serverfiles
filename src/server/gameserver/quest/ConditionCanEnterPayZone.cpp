@@ -17,7 +17,7 @@
 // is satisfied?
 ////////////////////////////////////////////////////////////////////////////////
 bool ConditionCanEnterPayZone::isSatisfied (Creature * pCreature1 , Creature * pCreature2, void* pParam) const 
-	throw () 
+	 
 { 
 	Assert(pCreature2 != NULL);
 	Assert(pCreature2->isPC());
@@ -62,7 +62,7 @@ void ConditionCanEnterPayZone::read (PropertyBuffer & propertyBuffer)
 	// get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ConditionCanEnterPayZone::toString () const 
-	throw () 
+	 
 { 
 	__BEGIN_TRY
 

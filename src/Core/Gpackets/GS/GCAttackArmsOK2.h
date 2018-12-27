@@ -63,7 +63,7 @@ public :
 	void setSkillType( SkillType_t skillType ) { m_SkillType = skillType; }
 	// get / set CEffectID
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 private :
 	
@@ -87,16 +87,16 @@ class GCAttackArmsOK2Factory : public PacketFactory {
 public :
 	
 	// constructor
-	GCAttackArmsOK2Factory() throw() {}
+	GCAttackArmsOK2Factory()  {}
 	
 	// destructor
-	virtual ~GCAttackArmsOK2Factory() throw() {}
+	virtual ~GCAttackArmsOK2Factory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCAttackArmsOK2(); }
+	Packet* createPacket()  { return new GCAttackArmsOK2(); }
 
 	// get packet name
 	string getPacketName()  { return "GCAttackArmsOK2"; }

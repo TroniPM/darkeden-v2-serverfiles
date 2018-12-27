@@ -16,8 +16,8 @@
 class GroundBless : public SkillHandler 
 {
 public:
-	GroundBless() throw() {}
-	~GroundBless() throw() {}
+	GroundBless()  {}
+	~GroundBless()  {}
 	
 public:
     string getSkillHandlerName()  { return "GroundBless"; }

@@ -26,7 +26,7 @@ Mutex    VampireWeapon::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 VampireWeapon::VampireWeapon()
-	throw()
+	
 {
 	setItemType(0);
 	setDurability(0);
@@ -34,7 +34,7 @@ VampireWeapon::VampireWeapon()
 }
 
 VampireWeapon::VampireWeapon(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_OptionType( optionType )
 {
 	setItemType(itemType);
@@ -178,7 +178,7 @@ void VampireWeapon::save(const string & ownerID, Storage storage, StorageID_t st
 // get debug string
 //--------------------------------------------------------------------------------
 string VampireWeapon::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -266,7 +266,7 @@ Damage_t VampireWeapon::getMaxDamage() const
 //--------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------
 int VampireWeapon::getCriticalBonus(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -280,7 +280,7 @@ int VampireWeapon::getCriticalBonus(void) const
 // get debug string
 //--------------------------------------------------------------------------------
 string VampireWeaponInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

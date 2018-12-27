@@ -74,7 +74,7 @@ void EffectTrapTriggered::unaffect(Creature* pCreature)
 }
 
 string EffectTrapTriggered::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

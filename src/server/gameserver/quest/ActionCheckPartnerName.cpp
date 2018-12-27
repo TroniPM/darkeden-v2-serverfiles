@@ -79,7 +79,7 @@ void ActionCheckPartnerName::execute (Creature * pCreature1 , Creature * pCreatu
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionCheckPartnerName::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

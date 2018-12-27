@@ -16,8 +16,8 @@
 class Unburrow: public SkillHandler 
 {
 public:
-	Unburrow() throw() {}
-	~Unburrow() throw() {}
+	Unburrow()  {}
+	~Unburrow()  {}
 	
 public:
     string getSkillHandlerName()  { return "Unburrow"; }

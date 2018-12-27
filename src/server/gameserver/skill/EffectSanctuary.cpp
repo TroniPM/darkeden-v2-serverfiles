@@ -132,7 +132,7 @@ void EffectSanctuary::unaffect(Zone* pZone , ZoneCoord_t x , ZoneCoord_t y , Obj
 }
 
 string EffectSanctuary::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

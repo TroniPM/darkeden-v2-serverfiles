@@ -62,13 +62,13 @@ public:
 	BYTE getListNum()  { return m_GuildInfoList.size(); }
 
 	// add GuildInfo
-	void addGuildInfo( GuildInfo* pGuildInfo ) throw() { m_GuildInfoList.push_front( pGuildInfo ); }
+	void addGuildInfo( GuildInfo* pGuildInfo )  { m_GuildInfoList.push_front( pGuildInfo ); }
 
 	// clear GuildInfoList
 	void clearGuildInfoList() ;
 
 	// pop front Element in GuildInfoList
-	GuildInfo* popFrontGuildInfoList() throw()
+	GuildInfo* popFrontGuildInfoList() 
 	{
 		if ( !m_GuildInfoList.empty() )
 		{
@@ -99,7 +99,7 @@ class GCActiveGuildListFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCActiveGuildList(); }
+	Packet* createPacket()  { return new GCActiveGuildList(); }
 
 	// get packet name
 	string getPacketName()  { return "GCActiveGuildList"; }

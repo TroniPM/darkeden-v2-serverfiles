@@ -40,7 +40,7 @@ public:
 //	virtual string getObjectTableName()  { return "SkillBookObject"; }
 
 /*	virtual ItemType_t getItemType()  { return m_ItemType; }
-	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
+	virtual void setItemType(ItemType_t itemType)  { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() ;
 	virtual VolumeHeight_t getVolumeHeight() ;
@@ -48,7 +48,7 @@ public:
 
 public:
 	virtual ItemNum_t getNum()  { return m_Num; }
-	virtual void setNum(ItemNum_t Num) throw() { m_Num = Num; }
+	virtual void setNum(ItemNum_t Num)  { m_Num = Num; }
 
 	bool    isStackable()  { return false; }
 */
@@ -73,10 +73,10 @@ public:
 public :
 
 	virtual int getFunctionValue()  { return m_FunctionValue; }
-	virtual void setFunctionValue(int value) throw() { m_FunctionValue = value; }
+	virtual void setFunctionValue(int value)  { m_FunctionValue = value; }
 
 	virtual int getRaceValue()  { return m_RaceValue; }
-	virtual void setRaceValue(int Racevalue) throw() { m_RaceValue = Racevalue; }
+	virtual void setRaceValue(int Racevalue)  { m_RaceValue = Racevalue; }
 
 	int        m_FunctionValue;	// 기능과 관련된 값
 	int 	m_RaceValue; // 어떤 종족이 사용가능한가.
@@ -106,7 +106,7 @@ public:
 	virtual string getItemClassName()  { return "SkillBook"; }
 	
 public:
-	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new SkillBook(ItemType,OptionType,1); }
+	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType)  { return new SkillBook(ItemType,OptionType,1); }
 };
 
 //////////////////////////////////////////////////////////////////////////////

@@ -5,14 +5,14 @@
 #include "Zone.h"
 
 HolyLandManager::HolyLandManager()
-	throw ()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 HolyLandManager::~HolyLandManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 

@@ -23,14 +23,14 @@ Mutex    Serum::m_Mutex;
 // constructor
 //////////////////////////////////////////////////////////////////////////////
 Serum::Serum()
-	throw()
+	
 {
 	m_ItemType = 0;
 	m_Num = 1;
 }
 
 Serum::Serum(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	m_ItemType = itemType;
 	m_Num = 1;
@@ -158,7 +158,7 @@ void Serum::save(const string & ownerID, Storage storage, StorageID_t storageID,
 // get debug string
 //////////////////////////////////////////////////////////////////////////////
 string Serum::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "Serum("
@@ -212,21 +212,21 @@ Weight_t Serum::getWeight() const
 }
 
 int Serum::getHPAmount(void) const 
-	throw()
+	
 {
 	SerumInfo* pInfo = dynamic_cast<SerumInfo*>(g_pSerumInfoManager->getItemInfo(m_ItemType));
 	return pInfo->getHPAmount();
 }
 
 int Serum::getPeriod(void) const 
-	throw()
+	
 {
 	SerumInfo* pInfo = dynamic_cast<SerumInfo*>(g_pSerumInfoManager->getItemInfo(m_ItemType));
 	return pInfo->getPeriod();
 }
 
 int Serum::getCount(void) const 
-	throw()
+	
 {
 	SerumInfo* pInfo = dynamic_cast<SerumInfo*>(g_pSerumInfoManager->getItemInfo(m_ItemType));
 	return pInfo->getCount();
@@ -239,7 +239,7 @@ int Serum::getCount(void) const
 // parse effect string
 //////////////////////////////////////////////////////////////////////////////
 void SerumInfo::parseEffect(const string& effect)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -275,7 +275,7 @@ void SerumInfo::parseEffect(const string& effect)
 // get debug string
 //////////////////////////////////////////////////////////////////////////////
 string SerumInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "SerumInfo("

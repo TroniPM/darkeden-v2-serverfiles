@@ -16,8 +16,8 @@
 class Reflection : public SkillHandler 
 {
 public:
-	Reflection() throw() {}
-	~Reflection() throw() {}
+	Reflection()  {}
+	~Reflection()  {}
 	
 public:
     string getSkillHandlerName()  { return "Reflection"; }

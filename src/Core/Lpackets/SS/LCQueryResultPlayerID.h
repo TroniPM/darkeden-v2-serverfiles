@@ -27,7 +27,7 @@ class LCQueryResultPlayerID : public Packet {
 public:
 
 	// constructor
-	LCQueryResultPlayerID() throw() : m_bExist(false) {}
+	LCQueryResultPlayerID()  : m_bExist(false) {}
 
 public:
 
@@ -60,11 +60,11 @@ public:
 
 	// get/set player id
 	string getPlayerID()  { return m_PlayerID; }
-	void setPlayerID(const string & playerID) throw() { m_PlayerID = playerID; }
+	void setPlayerID(const string & playerID)  { m_PlayerID = playerID; }
 
 	// get/set player id's existence
 	bool isExist()  { return m_bExist; }
-	void setExist(bool bExist = true) throw() { m_bExist = bExist; }
+	void setExist(bool bExist = true)  { m_bExist = bExist; }
 
 private :
 
@@ -90,7 +90,7 @@ class LCQueryResultPlayerIDFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new LCQueryResultPlayerID(); }
+	Packet* createPacket()  { return new LCQueryResultPlayerID(); }
 
 	// get packet name
 	string getPacketName()  { return "LCQueryResultPlayerID"; }

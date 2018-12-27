@@ -53,11 +53,11 @@ private:
 class GCGQuestInventoryFactory : public PacketFactory 
 {
 public :
-	GCGQuestInventoryFactory() throw() {}
-	virtual ~GCGQuestInventoryFactory() throw() {}
+	GCGQuestInventoryFactory()  {}
+	virtual ~GCGQuestInventoryFactory()  {}
 	
 public:
-	Packet* createPacket() throw() { return new GCGQuestInventory(); }
+	Packet* createPacket()  { return new GCGQuestInventory(); }
 	string getPacketName()  { return "GCGQuestInventory"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_GQUEST_INVENTORY; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE + szItemType * MAX_GQUEST_INVENTORY_ITEM_NUM; }

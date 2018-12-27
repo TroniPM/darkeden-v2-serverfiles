@@ -17,7 +17,7 @@ class ClaymoreExplosion: public SkillHandler
 {
 public:
 	ClaymoreExplosion() ;
-	~ClaymoreExplosion() throw() {}
+	~ClaymoreExplosion()  {}
 	
 public:
     string getSkillHandlerName()  { return "ClaymoreExplosion"; }

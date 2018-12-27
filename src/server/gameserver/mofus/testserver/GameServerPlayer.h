@@ -46,15 +46,15 @@ public :
 	// 정당하게 로그아웃을 한 경우에는 disconnect(UNDISCONNECTED) 를 사용해야 한다.
 	virtual void disconnect (bool bDisconnected = DISCONNECTED) ;
 
-	void sendPacket( MPacket* pPacket ) throw( ProtocolException, Error );
+	void sendPacket( MPacket* pPacket ) ;
 	
 	// get/set socket
-	//Socket* getSocket () throw () { return m_pSocket; }
+	//Socket* getSocket ()  { return m_pSocket; }
 	void setSocket (Socket* pSocket);
 
 	// get/set player ID
 	//string getID ()  { return m_ID; }
-	//void setID (const string & id) throw () { m_ID = id; }
+	//void setID (const string & id)  { m_ID = id; }
 
 	// get debug string
 	virtual string toString () ;

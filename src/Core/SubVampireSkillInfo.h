@@ -37,7 +37,7 @@ public :
 	// get size of object
 	uint getSize ()  { return szSkillType + szTurn + szTurn; }
 	// get max size of object
-	static uint getMaxSize () throw () { return szSkillType + szTurn + szTurn; }
+	static uint getMaxSize ()  { return szSkillType + szTurn + szTurn; }
 
 	// get debug string
 	string toString () ;
@@ -46,15 +46,15 @@ public :
 
 	// get / set SkillType
 	SkillType_t getSkillType()  { return m_SkillType; }
-	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
+	void setSkillType(SkillType_t SkillType)  { m_SkillType = SkillType; }
 
 	// get / set Turn
 	Turn_t getSkillTurn()  { return m_Interval ; }
-	void setSkillTurn(Turn_t SkillTurn) throw() { m_Interval = SkillTurn; }
+	void setSkillTurn(Turn_t SkillTurn)  { m_Interval = SkillTurn; }
 
 	// get / set CastingTime
 	Turn_t getCastingTime()  { return m_CastingTime; }
-	void setCastingTime(Turn_t CastingTime) throw() { m_CastingTime = CastingTime; }
+	void setCastingTime(Turn_t CastingTime)  { m_CastingTime = CastingTime; }
 
 private :
 

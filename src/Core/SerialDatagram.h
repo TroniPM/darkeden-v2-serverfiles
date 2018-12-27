@@ -91,7 +91,7 @@ public :
 	string getHost ()  { return string(inet_ntoa(m_SockAddr.sin_addr)); }
 
 	// set host
-	void setHost (const string & host) throw () { m_SockAddr.sin_addr.s_addr = inet_addr(host.c_str()); }
+	void setHost (const string & host)  { m_SockAddr.sin_addr.s_addr = inet_addr(host.c_str()); }
 
 	// get port 
 	uint getPort ()  { return ntohs(m_SockAddr.sin_port); }

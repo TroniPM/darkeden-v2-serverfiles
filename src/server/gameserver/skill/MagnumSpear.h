@@ -16,8 +16,8 @@
 class MagnumSpear : public SkillHandler 
 {
 public:
-	MagnumSpear() throw() {}
-	~MagnumSpear() throw() {}
+	MagnumSpear()  {}
+	~MagnumSpear()  {}
 	
 public:
     string getSkillHandlerName()  { return "MagnumSpear"; }

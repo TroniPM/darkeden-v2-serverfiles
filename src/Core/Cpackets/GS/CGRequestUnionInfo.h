@@ -64,16 +64,16 @@ class CGRequestUnionInfoFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGRequestUnionInfoFactory() throw() {}
+	CGRequestUnionInfoFactory()  {}
 	
 	// destructor
-	virtual ~CGRequestUnionInfoFactory() throw() {}
+	virtual ~CGRequestUnionInfoFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGRequestUnionInfo(); }
+	Packet* createPacket()  { return new CGRequestUnionInfo(); }
 
 	// get packet name
 	string getPacketName()  { return "CGRequestUnionInfo"; }

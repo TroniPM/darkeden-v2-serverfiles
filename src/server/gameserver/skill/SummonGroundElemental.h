@@ -19,7 +19,7 @@ class SummonGroundElemental : public SkillHandler
 {
 public:
 	SummonGroundElemental() ;
-	~SummonGroundElemental() throw() {}
+	~SummonGroundElemental()  {}
 	
 public:
     string getSkillHandlerName()  { return "SummonGroundElemental"; }

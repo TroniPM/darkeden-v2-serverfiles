@@ -66,35 +66,35 @@ public:
 
 	// get/set guildID
 	GuildID_t getGuildID()  { return m_GuildID; }
-	void setGuildID( GuildID_t guildID ) throw() { m_GuildID = guildID; }
+	void setGuildID( GuildID_t guildID )  { m_GuildID = guildID; }
 
 	// get/set guild name
 	const string& getGuildName()  { return m_GuildName; }
-	void setGuildName( const string& name ) throw() { m_GuildName = name; }
+	void setGuildName( const string& name )  { m_GuildName = name; }
 
 	// get/set guild race
 	GuildRace_t getGuildRace()  { return m_GuildRace; }
-	void setGuildRace( GuildRace_t guildRace ) throw() { m_GuildRace = guildRace; }
+	void setGuildRace( GuildRace_t guildRace )  { m_GuildRace = guildRace; }
 
 	// get/set guild state
 	GuildState_t getGuildState()  { return m_GuildState; }
-	void setGuildState( GuildState_t guildState ) throw() { m_GuildState = guildState; }
+	void setGuildState( GuildState_t guildState )  { m_GuildState = guildState; }
 
 	// get/set server group ID
 	ServerGroupID_t getServerGroupID()  { return m_ServerGroupID; }
-	void setServerGroupID( ServerGroupID_t serverGroupID ) throw() { m_ServerGroupID = serverGroupID; }
+	void setServerGroupID( ServerGroupID_t serverGroupID )  { m_ServerGroupID = serverGroupID; }
 
 	// get/set guild zone ID
 	ZoneID_t getGuildZoneID()  { return m_GuildZoneID; }
-	void setGuildZoneID( ZoneID_t guildZoneID ) throw() { m_GuildZoneID = guildZoneID; }
+	void setGuildZoneID( ZoneID_t guildZoneID )  { m_GuildZoneID = guildZoneID; }
 
 	// get/set guild master
 	const string& getGuildMaster()  { return m_GuildMaster; }
-	void setGuildMaster( const string& master ) throw() { m_GuildMaster = master; }
+	void setGuildMaster( const string& master )  { m_GuildMaster = master; }
 
 	// get/set guild intro
 	const string& getGuildIntro()  { return m_GuildIntro; }
-	void setGuildIntro( const string& intro ) throw() { m_GuildIntro = intro; }
+	void setGuildIntro( const string& intro )  { m_GuildIntro = intro; }
 
 private :
 
@@ -138,7 +138,7 @@ class SGAddGuildOKFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new SGAddGuildOK(); }
+	Packet* createPacket()  { return new SGAddGuildOK(); }
 
 	// get packet name
 	string getPacketName()  { return "SGAddGuildOK"; }

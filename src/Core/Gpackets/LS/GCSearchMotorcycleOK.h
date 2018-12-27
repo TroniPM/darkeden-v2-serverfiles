@@ -35,9 +35,9 @@ public :
 	ZoneID_t getZoneID(void)   { return m_ZoneID;}
 	Coord_t  getX(void)        { return m_ZoneX;}
 	Coord_t  getY(void)        { return m_ZoneY;}
-	void     setZoneID(ZoneID_t id) throw() { m_ZoneID = id;}
-	void     setX(Coord_t x) throw()        { m_ZoneX = x;}
-	void     setY(Coord_t y) throw()        { m_ZoneY = y;}
+	void     setZoneID(ZoneID_t id)  { m_ZoneID = id;}
+	void     setX(Coord_t x)         { m_ZoneX = x;}
+	void     setY(Coord_t y)         { m_ZoneY = y;}
 
 private :
 	ZoneID_t m_ZoneID;
@@ -61,7 +61,7 @@ class GCSearchMotorcycleOKFactory : public PacketFactory
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCSearchMotorcycleOK(); }
+	Packet* createPacket()  { return new GCSearchMotorcycleOK(); }
 
 	// get packet name
 	string getPacketName()  { return "GCSearchMotorcycleOK"; }

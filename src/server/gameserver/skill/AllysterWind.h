@@ -16,8 +16,8 @@
 class AllysterWind : public SkillHandler 
 {
 public:
-	AllysterWind() throw() {}
-	~AllysterWind() throw() {}
+	AllysterWind()  {}
+	~AllysterWind()  {}
 	
 public:
 	string getSkillHandlerName()  { return "AllysterWind"; }

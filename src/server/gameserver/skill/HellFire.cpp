@@ -19,7 +19,7 @@
 #include "Gpackets/GCSkillFailed1.h"
 
 HellFire::HellFire()
-	throw()
+	
 {
 	m_HellFireMask[0][0].set( 0, 0 );
 	m_MaskNum[0] = 1;

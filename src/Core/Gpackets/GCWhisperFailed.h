@@ -76,16 +76,16 @@ class GCWhisperFailedFactory : public PacketFactory {
 public :
 	
 	// constructor
-	GCWhisperFailedFactory() throw() {}
+	GCWhisperFailedFactory()  {}
 	
 	// destructor
-	virtual ~GCWhisperFailedFactory() throw() {}
+	virtual ~GCWhisperFailedFactory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCWhisperFailed(); }
+	Packet* createPacket()  { return new GCWhisperFailed(); }
 
 	// get packet name
 	string getPacketName()  { return "GCWhisperFailed"; }

@@ -17,7 +17,7 @@ class NooseOfWraith : public SkillHandler
 {
 public:
 	NooseOfWraith() ;
-	~NooseOfWraith() throw() {}
+	~NooseOfWraith()  {}
 	
 public:
     string getSkillHandlerName()  { return "NooseOfWraith"; }

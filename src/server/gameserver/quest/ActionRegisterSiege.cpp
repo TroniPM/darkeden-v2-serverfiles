@@ -213,7 +213,7 @@ void ActionRegisterSiege::execute (Creature * pCreature1 , Creature * pCreature2
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionRegisterSiege::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

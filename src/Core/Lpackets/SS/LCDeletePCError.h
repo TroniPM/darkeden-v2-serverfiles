@@ -46,10 +46,10 @@ public:
 	
 	// get/set error message
 //	string getMessage()  { return m_Message; }
-//	void setMessage(string message) throw() { m_Message = message; }
+//	void setMessage(string message)  { m_Message = message; }
 	// get /set ErrorID
 	BYTE getErrorID()  { return m_ErrorID; }
-	void setErrorID(BYTE ErrorID) throw() { m_ErrorID = ErrorID; }
+	void setErrorID(BYTE ErrorID)  { m_ErrorID = ErrorID; }
 
 private : 
 
@@ -72,7 +72,7 @@ class LCDeletePCErrorFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new LCDeletePCError(); }
+	Packet* createPacket()  { return new LCDeletePCError(); }
 
 	// get packet name
 	string getPacketName()  { return "LCDeletePCError"; }

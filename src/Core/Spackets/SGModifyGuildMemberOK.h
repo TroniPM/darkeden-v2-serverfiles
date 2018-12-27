@@ -61,19 +61,19 @@ public:
 
 	// get/set guildID
 	GuildID_t getGuildID()  { return m_GuildID; }
-	void setGuildID( GuildID_t guildID ) throw() { m_GuildID = guildID; }
+	void setGuildID( GuildID_t guildID )  { m_GuildID = guildID; }
 
 	// get/set guild name
 	const string& getName()  { return m_Name; }
-	void setName( const string& name ) throw() { m_Name = name; }
+	void setName( const string& name )  { m_Name = name; }
 
 	// get/set guild member rank
 	GuildMemberRank_t getGuildMemberRank()  { return m_GuildMemberRank; }
-	void setGuildMemberRank( GuildMemberRank_t GuildMemberRank ) throw() { m_GuildMemberRank = GuildMemberRank; }
+	void setGuildMemberRank( GuildMemberRank_t GuildMemberRank )  { m_GuildMemberRank = GuildMemberRank; }
 
 	// get/set sender
 	const string& getSender()  { return m_Sender; }
-	void setSender( const string& sender ) throw() { m_Sender = sender; }
+	void setSender( const string& sender )  { m_Sender = sender; }
 
 private :
 
@@ -105,7 +105,7 @@ class SGModifyGuildMemberOKFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new SGModifyGuildMemberOK(); }
+	Packet* createPacket()  { return new SGModifyGuildMemberOK(); }
 
 	// get packet name
 	string getPacketName()  { return "SGModifyGuildMemberOK"; }

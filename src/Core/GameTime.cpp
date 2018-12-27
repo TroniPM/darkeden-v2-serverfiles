@@ -13,7 +13,6 @@
 // read from socket input stream
 //--------------------------------------------------------------------------------
 void GameTime::read ( SocketInputStream & iStream ) 
-	throw ( ProtocolException , Error )
 {
 	__BEGIN_TRY
 
@@ -31,8 +30,7 @@ void GameTime::read ( SocketInputStream & iStream )
 //--------------------------------------------------------------------------------
 // write to socket output stream
 //--------------------------------------------------------------------------------
-void GameTime::write ( SocketOutputStream & oStream ) const
-	throw ( ProtocolException , Error )
+void GameTime::write ( SocketOutputStream & oStream ) 
 {
 	__BEGIN_TRY
 
@@ -50,8 +48,7 @@ void GameTime::write ( SocketOutputStream & oStream ) const
 //--------------------------------------------------------------------------------
 // get debug string
 //--------------------------------------------------------------------------------
-string GameTime::toString () const 
-	throw () 
+string GameTime::toString () 
 {
 	StringStream msg;
 	msg << (int)m_Year << "년 " << (int)m_Month << "월 " << (int)m_Day << "일 " << (int)m_Hour << "시 " << (int)m_Minute << "분 " << (int)m_Second << "초";

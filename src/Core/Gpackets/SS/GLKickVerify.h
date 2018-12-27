@@ -55,14 +55,14 @@ public :
 
 	// get/set playerID
 	bool isKicked()  { return m_bKicked; }
-	void setKicked(bool bKicked=true) throw() { m_bKicked = bKicked; }
+	void setKicked(bool bKicked=true)  { m_bKicked = bKicked; }
 
   	// get/set pcName
     string getPCName()  { return m_PCName; }
-    void setPCName(const string& pcName) throw() { m_PCName = pcName; }
+    void setPCName(const string& pcName)  { m_PCName = pcName; }
 
     uint getID()  { return m_ID; }
-    void setID(uint id) throw() { m_ID = id; }
+    void setID(uint id)  { m_ID = id; }
 
 	
 private :
@@ -89,7 +89,7 @@ class GLKickVerifyFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GLKickVerify(); }
+	Packet* createPacket()  { return new GLKickVerify(); }
 
 	// get packet name
 	string getPacketName()  { return "GLKickVerify"; }

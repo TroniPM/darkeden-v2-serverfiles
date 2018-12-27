@@ -37,7 +37,7 @@ public:
 	virtual string getObjectTableName()  { return "MagazineObject"; }
 
 	virtual ItemType_t getItemType()  { return m_ItemType; }
-	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
+	virtual void setItemType(ItemType_t itemType)  { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() ;
 	virtual VolumeHeight_t getVolumeHeight() ;
@@ -45,7 +45,7 @@ public:
 
 public:
 	ItemNum_t getNum()  { return m_Num; }
-	void setNum(ItemNum_t Num) throw() { m_Num = Num; }
+	void setNum(ItemNum_t Num)  { m_Num = Num; }
 
 	bool    isStackable()  { return true; }
 
@@ -75,13 +75,13 @@ public:
 
 public:
 	uint getMaxBullets()  { return m_MaxBullets; }
-	void setMaxBullets(uint maxBullets) throw() { m_MaxBullets = maxBullets; }
+	void setMaxBullets(uint maxBullets)  { m_MaxBullets = maxBullets; }
 
 	Silver_t getMaxSilver(void)  { return m_MaxSilver; }
-	void setMaxSilver(Silver_t silver) throw() { m_MaxSilver = silver; }
+	void setMaxSilver(Silver_t silver)  { m_MaxSilver = silver; }
 
 	virtual uint getItemLevel(void)  { return m_ItemLevel; }
-	virtual void setItemLevel(uint level) throw() { m_ItemLevel = level; }
+	virtual void setItemLevel(uint level)  { m_ItemLevel = level; }
 
 	bool isVivid() const { return m_bVivid; }
 	void setVivid( bool vivid=true ) { m_bVivid = vivid; }
@@ -124,7 +124,7 @@ public:
 	virtual string getItemClassName()  { return "Magazine"; }
 	
 public:
-	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new Magazine(ItemType,OptionType,1); }
+	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType)  { return new Magazine(ItemType,OptionType,1); }
 };
 
 

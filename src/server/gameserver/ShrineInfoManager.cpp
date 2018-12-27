@@ -54,7 +54,7 @@ bool AddBible[] =
 };
 
 string ShrineInfo::toString() const
-	throw()
+	
 {
 	StringStream msg;
 
@@ -189,7 +189,7 @@ void ShrineSet::broadcastBloodBibleStatus()
 }
 
 string ShrineSet::toString() const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1259,7 +1259,7 @@ void ShrineInfoManager::broadcastBloodBibleStatus()
 }
 
 string ShrineInfoManager::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

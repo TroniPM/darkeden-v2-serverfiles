@@ -16,8 +16,8 @@
 class Sniping: public SkillHandler 
 {
 public:
-	Sniping() throw() {}
-	~Sniping() throw() {}
+	Sniping()  {}
+	~Sniping()  {}
 
 public:
     string getSkillHandlerName()  { return "Sniping"; }

@@ -49,7 +49,7 @@ void ActionRepair::execute (Creature * pCreature1 , Creature * pCreature2)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionRepair::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

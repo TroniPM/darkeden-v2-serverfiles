@@ -30,7 +30,7 @@ public:
 	string toString() ;
 
 public:
-	int getHPBonus() throw() { return m_HPBonus;}
+	int getHPBonus()  { return m_HPBonus;}
 	void setHPBonus(HP_t HPBonus)  { m_HPBonus = HPBonus;}
 
 private :

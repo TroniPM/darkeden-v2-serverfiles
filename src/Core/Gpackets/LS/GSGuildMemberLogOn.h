@@ -60,19 +60,19 @@ public:
 
 	// get/set Guild ID
 	GuildID_t getGuildID()  { return m_GuildID; }
-	void setGuildID( GuildID_t guildID ) throw() { m_GuildID = guildID; }
+	void setGuildID( GuildID_t guildID )  { m_GuildID = guildID; }
 
 	// get/set Name
 	const string& getName()  { return m_Name; }
-	void setName( const string& name ) throw() { m_Name = name; }
+	void setName( const string& name )  { m_Name = name; }
 
 	// get/set logon
 	bool getLogOn()  { return m_bLogOn; }
-	void setLogOn( bool logOn ) throw() { m_bLogOn = logOn; }
+	void setLogOn( bool logOn )  { m_bLogOn = logOn; }
 
 	// get/set ServerID
 	ServerID_t	getServerID()		{ return m_ServerID; }
-	void		setServerID( ServerID_t ServerID ) throw() { m_ServerID = ServerID; }
+	void		setServerID( ServerID_t ServerID )  { m_ServerID = ServerID; }
 	
 	
 private :
@@ -105,7 +105,7 @@ class GSGuildMemberLogOnFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new GSGuildMemberLogOn(); }
+	Packet* createPacket()  { return new GSGuildMemberLogOn(); }
 
 	// get packet name
 	string getPacketName()  { return "GSGuildMemberLogOn"; }

@@ -296,7 +296,7 @@ Trigger.o: Trigger.cpp Trigger.h ../../../Core/Types.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
- Condition.h /usr/include/STL/bitset PropertyBuffer.h \
+ Condition.h /usr/include/c++/7/bitset PropertyBuffer.h \
  ConditionFactoryManager.h ConditionFactory.h Action.h \
  ActionFactoryManager.h ActionFactory.h ../../../Core/Assert.h
 TriggerManager.o: TriggerManager.cpp TriggerManager.h \
@@ -347,7 +347,7 @@ TriggerManager.o: TriggerManager.cpp TriggerManager.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Trigger.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
- Condition.h /usr/include/STL/bitset PropertyBuffer.h \
+ Condition.h /usr/include/c++/7/bitset PropertyBuffer.h \
  ../../../Core/Assert.h ../../database/DB.h \
  ../../database/DatabaseManager.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
@@ -358,7 +358,7 @@ TriggerManager.o: TriggerManager.cpp TriggerManager.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../../database/Statement.h ../../database/Result.h \
  /usr/include/sys/time.h /usr/include/i386-linux-gnu/bits/stdio_lim.h TriggerParser.h \
- ../../../Core/SXml.h /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ ../../../Core/SXml.h /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../../Core/Properties.h ../ScriptManager.h ../Script.h
 PropertyBuffer.o: PropertyBuffer.cpp PropertyBuffer.h \
@@ -551,7 +551,7 @@ TriggerParser.o: TriggerParser.cpp TriggerParser.h \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../../Core/Assert.h ../../../Core/Exception.h \
  ../../../Core/StringStream.h /usr/include/c++/7/list \
@@ -602,7 +602,7 @@ ConditionFactoryManager.o: ConditionFactoryManager.cpp \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- ConditionFactoryManager.h Condition.h /usr/include/STL/bitset \
+ ConditionFactoryManager.h Condition.h /usr/include/c++/7/bitset \
  PropertyBuffer.h ConditionFactory.h ConditionAnsweredBy.h \
  ../Creature.h ../Object.h ../EffectManager.h ../Effect.h \
  ../../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
@@ -670,7 +670,7 @@ ConditionEveryTime.o: ConditionEveryTime.cpp ConditionEveryTime.h \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -725,7 +725,7 @@ ConditionAnsweredBy.o: ConditionAnsweredBy.cpp ConditionAnsweredBy.h \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -780,7 +780,7 @@ ConditionFlagOn.o: ConditionFlagOn.cpp ConditionFlagOn.h Condition.h \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -847,7 +847,7 @@ ConditionFlagOff.o: ConditionFlagOff.cpp ConditionFlagOff.h \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -914,7 +914,7 @@ ConditionAttrComp.o: ConditionAttrComp.cpp ConditionAttrComp.h \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -1011,7 +1011,7 @@ ConditionRaceComp.o: ConditionRaceComp.cpp ConditionRaceComp.h \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -1066,7 +1066,7 @@ ConditionPcHasOriginalGold.o: ConditionPcHasOriginalGold.cpp ConditionPcHasOrigi
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -1121,7 +1121,7 @@ ConditionPcHasOriginalItems.o: ConditionPcHasOriginalItems.cpp ConditionPcHasOri
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -1176,7 +1176,7 @@ ConditionSameClan.o: ConditionSameClan.cpp ConditionSameClan.h \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -1243,7 +1243,7 @@ ConditionPayPlay.o: ConditionPayPlay.cpp ConditionPayPlay.h \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -1325,7 +1325,7 @@ ConditionEnterMasterLair.o: ConditionEnterMasterLair.cpp \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -1362,7 +1362,7 @@ ConditionEnterMasterLair.o: ConditionEnterMasterLair.cpp \
  ../../chinabilling/CBillingInfo.h \
  ../../../Core/Gpackets/GCReconnectLogin.h ../gameguard/CSAuth.h \
  ../PacketUtil.h ../ZoneInfoManager.h ../ZoneInfo.h \
- ../ZoneGroupManager.h /usr/include/STL/map \
+ ../ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../ZoneGroup.h \
  ../../../Core/GameTime.h ../../../Core/Gpackets/GMServerInfo.h \
@@ -1418,7 +1418,7 @@ ConditionEnterCastle.o: ConditionEnterCastle.cpp \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -1454,7 +1454,7 @@ ConditionEnterCastle.o: ConditionEnterCastle.cpp \
  ../../chinabilling/CBillingInfo.h \
  ../../../Core/Gpackets/GCReconnectLogin.h ../gameguard/CSAuth.h \
  ../PacketUtil.h ../ZoneInfoManager.h ../ZoneInfo.h \
- ../ZoneGroupManager.h /usr/include/STL/map \
+ ../ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../ZoneGroup.h \
  ../../../Core/GameTime.h ../../../Core/Gpackets/GMServerInfo.h \
@@ -1510,7 +1510,7 @@ ConditionEnterHolyLand.o: ConditionEnterHolyLand.cpp \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -1549,7 +1549,7 @@ ConditionEnterHolyLand.o: ConditionEnterHolyLand.cpp \
  ../../chinabilling/CBillingInfo.h \
  ../../../Core/Gpackets/GCReconnectLogin.h ../gameguard/CSAuth.h \
  ../PacketUtil.h ../ZoneInfoManager.h ../ZoneInfo.h \
- ../ZoneGroupManager.h /usr/include/STL/map \
+ ../ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../ZoneGroup.h \
  ../../../Core/GameTime.h ../../../Core/Gpackets/GMServerInfo.h \
@@ -1605,7 +1605,7 @@ ConditionEnterCastleDungeon.o: ConditionEnterCastleDungeon.cpp \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -1691,7 +1691,7 @@ ConditionHasQuest.o: ConditionHasQuest.cpp ConditionHasQuest.h \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../PlayerCreature.h ../Creature.h ../Object.h ../../../Core/Assert.h \
  ../EffectManager.h ../Effect.h ../../Timeval.h \
  /usr/include/sys/time.h /usr/include/unistd.h \
@@ -1761,7 +1761,7 @@ ConditionHasInvenSpace.o: ConditionHasInvenSpace.cpp \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -1829,7 +1829,7 @@ ConditionCanEnterPayZone.o: ConditionCanEnterPayZone.cpp \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -1911,7 +1911,7 @@ ConditionCanEnterBeginnerZone.o: ConditionCanEnterBeginnerZone.cpp \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -1968,7 +1968,7 @@ ConditionCanWarpGate.o: ConditionCanWarpGate.cpp \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -2025,7 +2025,7 @@ ConditionCanEnterLevelWarZone.o: ConditionCanEnterLevelWarZone.cpp \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -2087,7 +2087,7 @@ ConditionCanPetQuest.o: ConditionCanPetQuest.cpp \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -2184,7 +2184,7 @@ ConditionCanEnterEventZone.o: ConditionCanEnterEventZone.cpp \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -2243,7 +2243,7 @@ ConditionEffectFlag.o: ConditionEffectFlag.cpp ConditionEffectFlag.h \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Effect.h ../Object.h ../../../Core/Assert.h ../../Timeval.h \
  /usr/include/sys/time.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
@@ -2298,7 +2298,7 @@ ConditionCanEnterGDRLair.o: ConditionCanEnterGDRLair.cpp \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -2361,7 +2361,7 @@ ConditionExistReinforce.o: ConditionExistReinforce.cpp \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -2432,7 +2432,7 @@ ConditionSiegeDefenderSide.o: ConditionSiegeDefenderSide.cpp \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -2495,7 +2495,7 @@ ConditionSiegeAttackerSide.o: ConditionSiegeAttackerSide.cpp \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -2558,7 +2558,7 @@ ConditionNotGuildMember.o: ConditionNotGuildMember.cpp \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -2625,7 +2625,7 @@ ConditionIsGuildMember.o: ConditionIsGuildMember.cpp \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -2692,7 +2692,7 @@ ConditionCanEnterQuestZone.o: ConditionCanEnterQuestZone.cpp \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/bitset PropertyBuffer.h ConditionFactory.h \
+ /usr/include/c++/7/bitset PropertyBuffer.h ConditionFactory.h \
  ../Creature.h ../Object.h ../../../Core/Assert.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -2769,7 +2769,7 @@ ActionFactoryManager.o: ActionFactoryManager.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ActionWander.h ActionSay.h ActionRandomSay.h ActionAsk.h \
  ActionQuitDialogue.h ActionPrepareShop.h ActionSell.h ActionBuy.h \
  ActionRegenShop.h ActionTeachSkill.h ActionHeal.h \
@@ -2872,7 +2872,7 @@ ActionSetPosition.o: ActionSetPosition.cpp ActionSetPosition.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Zone.h ../Tile.h /usr/include/STL/slist \
+ /usr/include/c++/7/bitset ../Zone.h ../Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Obstacle.h ../Portal.h \
@@ -2945,7 +2945,7 @@ ActionWander.o: ActionWander.cpp ActionWander.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -3018,7 +3018,7 @@ ActionSay.o: ActionSay.cpp ActionSay.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -3103,7 +3103,7 @@ ActionRandomSay.o: ActionRandomSay.cpp ActionRandomSay.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -3186,7 +3186,7 @@ ActionAsk.o: ActionAsk.cpp ActionAsk.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -3270,7 +3270,7 @@ ActionQuitDialogue.o: ActionQuitDialogue.cpp ActionQuitDialogue.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../../../Core/Gpackets/GCNPCResponse.h \
+ /usr/include/c++/7/bitset ../../../Core/Gpackets/GCNPCResponse.h \
  ../../../Core/PacketFactory.h ../GamePlayer.h ../../../Core/Player.h \
  ../../../Core/SocketEncryptOutputStream.h ../../../Core/Encrypter.h \
  ../../../Core/EncryptUtility.h \
@@ -3338,7 +3338,7 @@ ActionPrepareShop.o: ActionPrepareShop.cpp ActionPrepareShop.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -3428,7 +3428,7 @@ ActionSell.o: ActionSell.cpp ActionSell.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -3510,7 +3510,7 @@ ActionBuy.o: ActionBuy.cpp ActionBuy.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -3594,7 +3594,7 @@ ActionRegenShop.o: ActionRegenShop.cpp ActionRegenShop.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset ../NPC.h \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../NPC.h \
  ../Zone.h ../Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
@@ -3685,7 +3685,7 @@ ActionTeachSkill.o: ActionTeachSkill.cpp ActionTeachSkill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -3789,7 +3789,7 @@ ActionHeal.o: ActionHeal.cpp ActionHeal.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Slayer.h ../PlayerCreature.h \
+ /usr/include/c++/7/bitset ../Slayer.h ../PlayerCreature.h \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -3898,7 +3898,7 @@ ActionRedeemMotorcycle.o: ActionRedeemMotorcycle.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../GamePlayer.h ../../../Core/Player.h \
+ /usr/include/c++/7/bitset ../GamePlayer.h ../../../Core/Player.h \
  ../../../Core/SocketEncryptOutputStream.h ../../../Core/Encrypter.h \
  ../../../Core/EncryptUtility.h \
  ../../../Core/SocketEncryptInputStream.h ../../Mutex.h \
@@ -4003,7 +4003,7 @@ ActionSearchMotorcycle.o: ActionSearchMotorcycle.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Creature.h ../NPC.h ../Zone.h \
  ../Tile.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
@@ -4108,7 +4108,7 @@ ActionRepair.o: ActionRepair.cpp ActionRepair.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../GamePlayer.h ../../../Core/Player.h \
+ /usr/include/c++/7/bitset ../GamePlayer.h ../../../Core/Player.h \
  ../../../Core/SocketEncryptOutputStream.h ../../../Core/Encrypter.h \
  ../../../Core/EncryptUtility.h \
  ../../../Core/SocketEncryptInputStream.h ../../Mutex.h \
@@ -4177,7 +4177,7 @@ ActionStashSell.o: ActionStashSell.cpp ActionStashSell.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Slayer.h ../PlayerCreature.h \
+ /usr/include/c++/7/bitset ../Slayer.h ../PlayerCreature.h \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -4283,7 +4283,7 @@ ActionStashOpen.o: ActionStashOpen.cpp ActionStashOpen.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Slayer.h ../PlayerCreature.h \
+ /usr/include/c++/7/bitset ../Slayer.h ../PlayerCreature.h \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -4389,7 +4389,7 @@ ActionRestore.o: ActionRestore.cpp ActionRestore.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -4501,7 +4501,7 @@ ActionSetResurrectZone.o: ActionSetResurrectZone.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset Trigger.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset Trigger.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Condition.h ../GamePlayer.h \
  ../../../Core/Player.h ../../../Core/SocketEncryptOutputStream.h \
@@ -4608,7 +4608,7 @@ ActionSilverCoating.o: ActionSilverCoating.cpp ActionSilverCoating.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../GamePlayer.h ../../../Core/Player.h \
+ /usr/include/c++/7/bitset ../GamePlayer.h ../../../Core/Player.h \
  ../../../Core/SocketEncryptOutputStream.h ../../../Core/Encrypter.h \
  ../../../Core/EncryptUtility.h \
  ../../../Core/SocketEncryptInputStream.h ../../Mutex.h \
@@ -4677,7 +4677,7 @@ ActionCreateGuild.o: ActionCreateGuild.cpp ActionCreateGuild.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../GamePlayer.h ../../../Core/Player.h \
+ /usr/include/c++/7/bitset ../GamePlayer.h ../../../Core/Player.h \
  ../../../Core/SocketEncryptOutputStream.h ../../../Core/Encrypter.h \
  ../../../Core/EncryptUtility.h \
  ../../../Core/SocketEncryptInputStream.h ../../Mutex.h \
@@ -4748,7 +4748,7 @@ ActionCreateEffect.o: ActionCreateEffect.cpp ActionCreateEffect.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../GamePlayer.h ../../../Core/Player.h \
+ /usr/include/c++/7/bitset ../GamePlayer.h ../../../Core/Player.h \
  ../../../Core/SocketEncryptOutputStream.h ../../../Core/Encrypter.h \
  ../../../Core/EncryptUtility.h \
  ../../../Core/SocketEncryptInputStream.h ../../Mutex.h \
@@ -4819,7 +4819,7 @@ ActionCreateNotEffect.o: ActionCreateNotEffect.cpp ActionCreateNotEffect.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../GamePlayer.h ../../../Core/Player.h \
+ /usr/include/c++/7/bitset ../GamePlayer.h ../../../Core/Player.h \
  ../../../Core/SocketEncryptOutputStream.h ../../../Core/Encrypter.h \
  ../../../Core/EncryptUtility.h \
  ../../../Core/SocketEncryptInputStream.h ../../Mutex.h \
@@ -4890,7 +4890,7 @@ ActionDestroyGuild.o: ActionDestroyGuild.cpp ActionDestroyGuild.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../GamePlayer.h ../../../Core/Player.h \
+ /usr/include/c++/7/bitset ../GamePlayer.h ../../../Core/Player.h \
  ../../../Core/SocketEncryptOutputStream.h ../../../Core/Encrypter.h \
  ../../../Core/EncryptUtility.h \
  ../../../Core/SocketEncryptInputStream.h ../../Mutex.h \
@@ -4961,7 +4961,7 @@ ActionTutorial.o: ActionTutorial.cpp ActionTutorial.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../../../Core/Gpackets/GCNPCResponse.h \
+ /usr/include/c++/7/bitset ../../../Core/Gpackets/GCNPCResponse.h \
  ../../../Core/PacketFactory.h ../GamePlayer.h ../../../Core/Player.h \
  ../../../Core/SocketEncryptOutputStream.h ../../../Core/Encrypter.h \
  ../../../Core/EncryptUtility.h \
@@ -5029,7 +5029,7 @@ ActionGiveNewbieItem.o: ActionGiveNewbieItem.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -5132,7 +5132,7 @@ ActionActivatePortal.o: ActionActivatePortal.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Obstacle.h ../Portal.h \
  ../quest/TriggerManager.h ../quest/Trigger.h ../quest/Condition.h \
@@ -5147,7 +5147,7 @@ ActionActivatePortal.o: ActionActivatePortal.cpp \
  /home/darkeden/src/libs/stl_queue.h ../ZoneGroup.h ../../../Core/GameTime.h \
  ../../../Core/Gpackets/GMServerInfo.h ../../../Core/DatagramPacket.h \
  ../../../Core/Datagram.h ../../../Core/PacketFactory.h \
- ../ZoneGroupManager.h /usr/include/STL/map \
+ ../ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../ZoneInfo.h ../ZoneInfoManager.h \
  ../ZonePlayerManager.h ../../PlayerManager.h ../../../Core/Player.h \
@@ -5252,7 +5252,7 @@ ActionTurnOnFlag.o: ActionTurnOnFlag.cpp ActionTurnOnFlag.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -5318,7 +5318,7 @@ ActionTurnOffFlag.o: ActionTurnOffFlag.cpp ActionTurnOffFlag.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -5384,7 +5384,7 @@ ActionSystemMessage.o: ActionSystemMessage.cpp ActionSystemMessage.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../GamePlayer.h ../../../Core/Player.h \
+ /usr/include/c++/7/bitset ../GamePlayer.h ../../../Core/Player.h \
  ../../../Core/SocketEncryptOutputStream.h ../../../Core/Encrypter.h \
  ../../../Core/EncryptUtility.h \
  ../../../Core/SocketEncryptInputStream.h ../../Mutex.h \
@@ -5455,7 +5455,7 @@ ActionTakeDonation.o: ActionTakeDonation.cpp ActionTakeDonation.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -5562,7 +5562,7 @@ ActionCallHelicopter.o: ActionCallHelicopter.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Zone.h ../Tile.h /usr/include/STL/slist \
+ /usr/include/c++/7/bitset ../Zone.h ../Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Obstacle.h ../Portal.h \
@@ -5661,7 +5661,7 @@ ActionRegenEventShop.o: ActionRegenEventShop.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset ../NPC.h \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../NPC.h \
  ../Zone.h ../Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
@@ -5752,7 +5752,7 @@ ActionAskDynamic.o: ActionAskDynamic.cpp ActionAskDynamic.h Action.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../GamePlayer.h ../../../Core/Player.h \
+ /usr/include/c++/7/bitset ../GamePlayer.h ../../../Core/Player.h \
  ../../../Core/SocketEncryptOutputStream.h ../../../Core/Encrypter.h \
  ../../../Core/EncryptUtility.h \
  ../../../Core/SocketEncryptInputStream.h ../../Mutex.h \
@@ -5824,7 +5824,7 @@ ActionSayDynamic.o: ActionSayDynamic.cpp ActionSayDynamic.h Action.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../GamePlayer.h ../../../Core/Player.h \
+ /usr/include/c++/7/bitset ../GamePlayer.h ../../../Core/Player.h \
  ../../../Core/SocketEncryptOutputStream.h ../../../Core/Encrypter.h \
  ../../../Core/EncryptUtility.h \
  ../../../Core/SocketEncryptInputStream.h ../../Mutex.h \
@@ -5896,7 +5896,7 @@ ActionGiveSpecialEventItem.o: ActionGiveSpecialEventItem.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -5987,7 +5987,7 @@ ActionRedistributeAttr.o: ActionRedistributeAttr.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -6085,7 +6085,7 @@ ActionTradeEventItem.o: ActionTradeEventItem.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -6192,7 +6192,7 @@ ActionTradeLairItem.o: ActionTradeLairItem.cpp ActionTradeLairItem.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -6316,7 +6316,7 @@ ActionShowGuildDialog.o: ActionShowGuildDialog.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset ../NPC.h \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../NPC.h \
  ../Zone.h ../Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
@@ -6422,7 +6422,7 @@ ActionSimpleQuestList.o: ActionSimpleQuestList.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../GamePlayer.h ../../../Core/Player.h \
+ /usr/include/c++/7/bitset ../GamePlayer.h ../../../Core/Player.h \
  ../../../Core/SocketEncryptOutputStream.h ../../../Core/Encrypter.h \
  ../../../Core/EncryptUtility.h \
  ../../../Core/SocketEncryptInputStream.h ../../Mutex.h \
@@ -6505,7 +6505,7 @@ ActionSimpleQuestComplete.o: ActionSimpleQuestComplete.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../GamePlayer.h ../../../Core/Player.h \
+ /usr/include/c++/7/bitset ../GamePlayer.h ../../../Core/Player.h \
  ../../../Core/SocketEncryptOutputStream.h ../../../Core/Encrypter.h \
  ../../../Core/EncryptUtility.h \
  ../../../Core/SocketEncryptInputStream.h ../../Mutex.h \
@@ -6577,7 +6577,7 @@ ActionSimpleQuestRegen.o: ActionSimpleQuestRegen.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset ../NPC.h \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../NPC.h \
  ../Zone.h ../Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
@@ -6665,7 +6665,7 @@ ActionTradeGiftBox.o: ActionTradeGiftBox.cpp ActionTradeGiftBox.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h luaScript/LuaTradeEventVampireItem.h \
  ../PlayerCreature.h ../Creature.h ../ObjectRegistry.h ../../Mutex.h \
@@ -6774,7 +6774,7 @@ ActionGiveTestServerReward.o: ActionGiveTestServerReward.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h luaScript/LuaTradeEventVampireItem.h \
  ../PlayerCreature.h ../Creature.h ../ObjectRegistry.h ../../Mutex.h \
@@ -6881,7 +6881,7 @@ ActionEnterCastleWithFee.o: ActionEnterCastleWithFee.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Obstacle.h ../Portal.h \
  ../quest/TriggerManager.h ../quest/Trigger.h ../quest/Condition.h \
@@ -6896,7 +6896,7 @@ ActionEnterCastleWithFee.o: ActionEnterCastleWithFee.cpp \
  /home/darkeden/src/libs/stl_queue.h ../ZoneGroup.h ../../../Core/GameTime.h \
  ../../../Core/Gpackets/GMServerInfo.h ../../../Core/DatagramPacket.h \
  ../../../Core/Datagram.h ../../../Core/PacketFactory.h \
- ../ZoneGroupManager.h /usr/include/STL/map \
+ ../ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../ZoneInfo.h ../ZoneInfoManager.h \
  ../ZonePlayerManager.h ../../PlayerManager.h ../../../Core/Player.h \
@@ -6996,7 +6996,7 @@ ActionShowTaxBalance.o: ActionShowTaxBalance.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -7081,7 +7081,7 @@ ActionAskVariable.o: ActionAskVariable.cpp ActionAskVariable.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -7198,7 +7198,7 @@ ActionWarRegistration.o: ActionWarRegistration.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -7230,7 +7230,7 @@ ActionWarRegistration.o: ActionWarRegistration.cpp \
  ../war/GuildWar.h ../war/War.h ../war/Work.h ../war/WarScheduler.h \
  ../war/Scheduler.h ../war/Schedule.h ../GuildManager.h ../Guild.h \
  ../ZoneUtil.h ../VariableManager.h ../../../Core/Properties.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../CastleInfoManager.h ../../../Core/Gpackets/GCNPCResponse.h \
  ../../../Core/Gpackets/GCModifyInformation.h \
@@ -7290,7 +7290,7 @@ ActionShowWarSchedule.o: ActionShowWarSchedule.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -7378,7 +7378,7 @@ ActionJoinRaceWar.o: ActionJoinRaceWar.cpp ActionJoinRaceWar.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -7412,7 +7412,7 @@ ActionJoinRaceWar.o: ActionJoinRaceWar.cpp ActionJoinRaceWar.h \
  ../../../Core/Gpackets/GCWarList.h ../../../Core/GuildWarInfo.h \
  ../../../Core/WarInfo.h ../../../Core/ValueList.h \
  ../../../Core/RaceWarInfo.h ../../../Core/Properties.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../../Core/Gpackets/GCNPCResponse.h \
  ../../../Core/Gpackets/GCSystemMessage.h \
@@ -7474,7 +7474,7 @@ ActionGiveEventItem.o: ActionGiveEventItem.cpp ActionGiveEventItem.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h luaScript/LuaTradeEventVampireItem.h \
  ../FlagSet.h ../PlayerCreature.h ../Creature.h ../ObjectRegistry.h \
@@ -7583,7 +7583,7 @@ ActionGiveAccountEventItem.o: ActionGiveAccountEventItem.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h luaScript/LuaTradeEventVampireItem.h \
  ../SpecialEventFlag.h ../PlayerCreature.h ../Creature.h \
@@ -7683,7 +7683,7 @@ ActionInitPartnerWaitingManager.o: ActionInitPartnerWaitingManager.cpp \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Action.h \
  PropertyBuffer.h ActionFactory.h ../SystemAvailabilitiesManager.h \
- /usr/include/STL/bitset \
+ /usr/include/c++/7/bitset \
  ../../../Core/Gpackets/GCSystemAvailabilities.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
@@ -7767,7 +7767,7 @@ ActionWaitForMeetCouple.o: ActionWaitForMeetCouple.cpp \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Action.h \
  PropertyBuffer.h ActionFactory.h ../SystemAvailabilitiesManager.h \
- /usr/include/STL/bitset \
+ /usr/include/c++/7/bitset \
  ../../../Core/Gpackets/GCSystemAvailabilities.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
@@ -7852,7 +7852,7 @@ ActionWaitForApartCouple.o: ActionWaitForApartCouple.cpp \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Action.h \
  PropertyBuffer.h ActionFactory.h ../SystemAvailabilitiesManager.h \
- /usr/include/STL/bitset \
+ /usr/include/c++/7/bitset \
  ../../../Core/Gpackets/GCSystemAvailabilities.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
@@ -7937,7 +7937,7 @@ ActionAcceptCoupleRequest.o: ActionAcceptCoupleRequest.cpp \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Action.h \
  PropertyBuffer.h ActionFactory.h ../SystemAvailabilitiesManager.h \
- /usr/include/STL/bitset \
+ /usr/include/c++/7/bitset \
  ../../../Core/Gpackets/GCSystemAvailabilities.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
@@ -8022,7 +8022,7 @@ ActionAcceptApartCouple.o: ActionAcceptApartCouple.cpp \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Action.h \
  PropertyBuffer.h ActionFactory.h ../SystemAvailabilitiesManager.h \
- /usr/include/STL/bitset \
+ /usr/include/c++/7/bitset \
  ../../../Core/Gpackets/GCSystemAvailabilities.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
@@ -8107,7 +8107,7 @@ ActionForceApartCouple.o: ActionForceApartCouple.cpp \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Action.h \
  PropertyBuffer.h ActionFactory.h ../SystemAvailabilitiesManager.h \
- /usr/include/STL/bitset \
+ /usr/include/c++/7/bitset \
  ../../../Core/Gpackets/GCSystemAvailabilities.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
@@ -8200,7 +8200,7 @@ ActionEnterPKZone.o: ActionEnterPKZone.cpp ActionEnterPKZone.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Obstacle.h ../Portal.h \
  ../quest/TriggerManager.h ../quest/Trigger.h ../quest/Condition.h \
@@ -8215,7 +8215,7 @@ ActionEnterPKZone.o: ActionEnterPKZone.cpp ActionEnterPKZone.h \
  /home/darkeden/src/libs/stl_queue.h ../ZoneGroup.h ../../../Core/GameTime.h \
  ../../../Core/Gpackets/GMServerInfo.h ../../../Core/DatagramPacket.h \
  ../../../Core/Datagram.h ../../../Core/PacketFactory.h \
- ../ZoneGroupManager.h /usr/include/STL/map \
+ ../ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../ZoneInfo.h ../ZoneInfoManager.h \
  ../ZonePlayerManager.h ../../PlayerManager.h ../../../Core/Player.h \
@@ -8324,7 +8324,7 @@ ActionWarpToResurrectPosition.o: ActionWarpToResurrectPosition.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -8409,7 +8409,7 @@ ActionSelectQuest.o: ActionSelectQuest.cpp ActionSelectQuest.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../PlayerCreature.h ../ObjectRegistry.h \
+ /usr/include/c++/7/bitset ../PlayerCreature.h ../ObjectRegistry.h \
  ../../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h ../InventorySlot.h ../Item.h \
@@ -8499,7 +8499,7 @@ ActionQuestReward.o: ActionQuestReward.cpp ActionQuestReward.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../PlayerCreature.h ../ObjectRegistry.h \
+ /usr/include/c++/7/bitset ../PlayerCreature.h ../ObjectRegistry.h \
  ../../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h ../InventorySlot.h ../Item.h \
@@ -8579,7 +8579,7 @@ ActionWarpToNoviceZone.o: ActionWarpToNoviceZone.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Obstacle.h ../Portal.h \
  ../quest/TriggerManager.h ../quest/Trigger.h ../quest/Condition.h \
@@ -8594,7 +8594,7 @@ ActionWarpToNoviceZone.o: ActionWarpToNoviceZone.cpp \
  /home/darkeden/src/libs/stl_queue.h ../ZoneGroup.h ../../../Core/GameTime.h \
  ../../../Core/Gpackets/GMServerInfo.h ../../../Core/DatagramPacket.h \
  ../../../Core/Datagram.h ../../../Core/PacketFactory.h \
- ../ZoneGroupManager.h /usr/include/STL/map \
+ ../ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../ZoneInfo.h ../ZoneInfoManager.h \
  ../ZonePlayerManager.h ../../PlayerManager.h ../../../Core/Player.h \
@@ -8694,7 +8694,7 @@ ActionCancelQuest.o: ActionCancelQuest.cpp ActionCancelQuest.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../PlayerCreature.h ../ObjectRegistry.h \
+ /usr/include/c++/7/bitset ../PlayerCreature.h ../ObjectRegistry.h \
  ../../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h ../InventorySlot.h ../Item.h \
@@ -8783,7 +8783,7 @@ ActionInitSimpleQuest.o: ActionInitSimpleQuest.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Zone.h ../Tile.h /usr/include/STL/slist \
+ /usr/include/c++/7/bitset ../Zone.h ../Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Obstacle.h ../Portal.h \
@@ -8860,7 +8860,7 @@ ActionWanderZone.o: ActionWanderZone.cpp ActionWanderZone.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -8934,7 +8934,7 @@ ActionInitEventQuest.o: ActionInitEventQuest.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Zone.h ../Tile.h /usr/include/STL/slist \
+ /usr/include/c++/7/bitset ../Zone.h ../Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Obstacle.h ../Portal.h \
@@ -9011,7 +9011,7 @@ ActionAskByQuestLevel.o: ActionAskByQuestLevel.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -9098,7 +9098,7 @@ ActionGiveEventQuest.o: ActionGiveEventQuest.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../PlayerCreature.h ../ObjectRegistry.h \
+ /usr/include/c++/7/bitset ../PlayerCreature.h ../ObjectRegistry.h \
  ../../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h ../InventorySlot.h ../Item.h \
@@ -9187,7 +9187,7 @@ ActionAdvanceEventQuest.o: ActionAdvanceEventQuest.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../PlayerCreature.h ../ObjectRegistry.h \
+ /usr/include/c++/7/bitset ../PlayerCreature.h ../ObjectRegistry.h \
  ../../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h ../InventorySlot.h ../Item.h \
@@ -9267,7 +9267,7 @@ ActionCancelEventQuestScript.o: ActionCancelEventQuestScript.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -9354,7 +9354,7 @@ ActionRewardEventQuest.o: ActionRewardEventQuest.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -9442,7 +9442,7 @@ ActionGiveLotto.o: ActionGiveLotto.cpp ActionGiveLotto.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -9471,7 +9471,7 @@ ActionGiveLotto.o: ActionGiveLotto.cpp ActionGiveLotto.h \
  ../../chinabilling/CBillingPlayerInfo.h \
  ../../chinabilling/CBillingInfo.h \
  ../../../Core/Gpackets/GCReconnectLogin.h ../gameguard/CSAuth.h \
- ../../../Core/Properties.h /usr/include/STL/map \
+ ../../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../mission/QuestManager.h \
  ../mission/QuestInfo.h ../mission/RewardClass.h \
@@ -9534,7 +9534,7 @@ ActionGiveEventQuestScript.o: ActionGiveEventQuestScript.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -9621,7 +9621,7 @@ ActionStartEventQuest.o: ActionStartEventQuest.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../PlayerCreature.h ../ObjectRegistry.h \
+ /usr/include/c++/7/bitset ../PlayerCreature.h ../ObjectRegistry.h \
  ../../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h ../InventorySlot.h ../Item.h \
@@ -9700,7 +9700,7 @@ ActionWarpInZone.o: ActionWarpInZone.cpp ActionWarpInZone.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -9776,7 +9776,7 @@ ActionEventMeet.o: ActionEventMeet.cpp ActionEventMeet.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -9863,7 +9863,7 @@ ActionGiveFinalLottoScript.o: ActionGiveFinalLottoScript.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -9952,7 +9952,7 @@ ActionGiveQuestItem.o: ActionGiveQuestItem.cpp ActionGiveQuestItem.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -10041,7 +10041,7 @@ ActionTakeOutGoods.o: ActionTakeOutGoods.cpp ActionTakeOutGoods.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -10125,7 +10125,7 @@ ActionClearRankBonus.o: ActionClearRankBonus.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -10233,7 +10233,7 @@ ActionContractGnomesHorn.o: ActionContractGnomesHorn.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -10317,7 +10317,7 @@ ActionDownSkill.o: ActionDownSkill.cpp ActionDownSkill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../GamePlayer.h ../../../Core/Player.h \
+ /usr/include/c++/7/bitset ../GamePlayer.h ../../../Core/Player.h \
  ../../../Core/SocketEncryptOutputStream.h ../../../Core/Encrypter.h \
  ../../../Core/EncryptUtility.h \
  ../../../Core/SocketEncryptInputStream.h ../../Mutex.h \
@@ -10386,7 +10386,7 @@ ActionMiniGame.o: ActionMiniGame.cpp ActionMiniGame.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -10470,7 +10470,7 @@ ActionGiveItem.o: ActionGiveItem.cpp ActionGiveItem.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Creature.h ../PlayerCreature.h \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
@@ -10554,7 +10554,7 @@ ActionActivateMazeExit.o: ActionActivateMazeExit.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Obstacle.h ../Portal.h \
  ../quest/TriggerManager.h ../quest/Trigger.h ../quest/Condition.h \
@@ -10569,7 +10569,7 @@ ActionActivateMazeExit.o: ActionActivateMazeExit.cpp \
  /home/darkeden/src/libs/stl_queue.h ../ZoneGroup.h ../../../Core/GameTime.h \
  ../../../Core/Gpackets/GMServerInfo.h ../../../Core/DatagramPacket.h \
  ../../../Core/Datagram.h ../../../Core/PacketFactory.h \
- ../ZoneGroupManager.h /usr/include/STL/map \
+ ../ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../ZoneInfo.h ../ZoneInfoManager.h \
  ../ZonePlayerManager.h ../../PlayerManager.h ../../../Core/Player.h \
@@ -10670,7 +10670,7 @@ ActionActivateMazeEnter.o: ActionActivateMazeEnter.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Obstacle.h ../Portal.h \
  ../quest/TriggerManager.h ../quest/Trigger.h ../quest/Condition.h \
@@ -10685,7 +10685,7 @@ ActionActivateMazeEnter.o: ActionActivateMazeEnter.cpp \
  /home/darkeden/src/libs/stl_queue.h ../ZoneGroup.h ../../../Core/GameTime.h \
  ../../../Core/Gpackets/GMServerInfo.h ../../../Core/DatagramPacket.h \
  ../../../Core/Datagram.h ../../../Core/PacketFactory.h \
- ../ZoneGroupManager.h /usr/include/STL/map \
+ ../ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../ZoneInfo.h ../ZoneInfoManager.h \
  ../ZonePlayerManager.h ../../PlayerManager.h ../../../Core/Player.h \
@@ -10786,7 +10786,7 @@ ActionActivateMazeReturn.o: ActionActivateMazeReturn.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Obstacle.h ../Portal.h \
  ../quest/TriggerManager.h ../quest/Trigger.h ../quest/Condition.h \
@@ -10801,7 +10801,7 @@ ActionActivateMazeReturn.o: ActionActivateMazeReturn.cpp \
  /home/darkeden/src/libs/stl_queue.h ../ZoneGroup.h ../../../Core/GameTime.h \
  ../../../Core/Gpackets/GMServerInfo.h ../../../Core/DatagramPacket.h \
  ../../../Core/Datagram.h ../../../Core/PacketFactory.h \
- ../ZoneGroupManager.h /usr/include/STL/map \
+ ../ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../ZoneInfo.h ../ZoneInfoManager.h \
  ../ZonePlayerManager.h ../../PlayerManager.h ../../../Core/Player.h \
@@ -10901,7 +10901,7 @@ ActionSystemMessagePerRace.o: ActionSystemMessagePerRace.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../GamePlayer.h ../../../Core/Player.h \
+ /usr/include/c++/7/bitset ../GamePlayer.h ../../../Core/Player.h \
  ../../../Core/SocketEncryptOutputStream.h ../../../Core/Encrypter.h \
  ../../../Core/EncryptUtility.h \
  ../../../Core/SocketEncryptInputStream.h ../../Mutex.h \
@@ -10972,7 +10972,7 @@ ActionWarpLevelWarZone.o: ActionWarpLevelWarZone.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../GamePlayer.h ../../../Core/Player.h \
+ /usr/include/c++/7/bitset ../GamePlayer.h ../../../Core/Player.h \
  ../../../Core/SocketEncryptOutputStream.h ../../../Core/Encrypter.h \
  ../../../Core/EncryptUtility.h \
  ../../../Core/SocketEncryptInputStream.h ../../Mutex.h \
@@ -11001,7 +11001,7 @@ ActionWarpLevelWarZone.o: ActionWarpLevelWarZone.cpp \
  ../../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../../Core/Gpackets/GCSelectQuestID.h ../OptionInfo.h \
  ../ZoneInfo.h ../ZoneUtil.h ../PacketUtil.h \
- ../../../Core/Properties.h /usr/include/STL/map \
+ ../../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../StringPool.h ../VariableManager.h \
  ../ZoneInfoManager.h ../LevelWarManager.h ../war/Scheduler.h \
@@ -11068,7 +11068,7 @@ ActionCheckPartnerName.o: ActionCheckPartnerName.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -11154,7 +11154,7 @@ ActionStartPetQuest.o: ActionStartPetQuest.cpp ActionStartPetQuest.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -11244,7 +11244,7 @@ ActionPetWithdraw.o: ActionPetWithdraw.cpp ActionPetWithdraw.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -11329,7 +11329,7 @@ ActionPetDeposit.o: ActionPetDeposit.cpp ActionQuitDialogue.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -11415,7 +11415,7 @@ ActionEnterEventZone.o: ActionEnterEventZone.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Obstacle.h ../Portal.h \
  ../quest/TriggerManager.h ../quest/Trigger.h ../quest/Condition.h \
@@ -11430,7 +11430,7 @@ ActionEnterEventZone.o: ActionEnterEventZone.cpp \
  /home/darkeden/src/libs/stl_queue.h ../ZoneGroup.h ../../../Core/GameTime.h \
  ../../../Core/Gpackets/GMServerInfo.h ../../../Core/DatagramPacket.h \
  ../../../Core/Datagram.h ../../../Core/PacketFactory.h \
- ../ZoneGroupManager.h /usr/include/STL/map \
+ ../ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../ZoneInfo.h ../ZoneInfoManager.h \
  ../ZonePlayerManager.h ../../PlayerManager.h ../../../Core/Player.h \
@@ -11535,7 +11535,7 @@ ActionEnterGDRLair.o: ActionEnterGDRLair.cpp ActionEnterGDRLair.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Obstacle.h ../Portal.h \
  ../quest/TriggerManager.h ../quest/Trigger.h ../quest/Condition.h \
@@ -11550,7 +11550,7 @@ ActionEnterGDRLair.o: ActionEnterGDRLair.cpp ActionEnterGDRLair.h \
  /home/darkeden/src/libs/stl_queue.h ../ZoneGroup.h ../../../Core/GameTime.h \
  ../../../Core/Gpackets/GMServerInfo.h ../../../Core/DatagramPacket.h \
  ../../../Core/Datagram.h ../../../Core/PacketFactory.h \
- ../ZoneGroupManager.h /usr/include/STL/map \
+ ../ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../ZoneInfo.h ../ZoneInfoManager.h \
  ../ZonePlayerManager.h ../../PlayerManager.h ../../../Core/Player.h \
@@ -11656,7 +11656,7 @@ ActionTradeGQuestEventItem.o: ActionTradeGQuestEventItem.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -11764,7 +11764,7 @@ ActionRegisterSiege.o: ActionRegisterSiege.cpp ActionRegisterSiege.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -11796,7 +11796,7 @@ ActionRegisterSiege.o: ActionRegisterSiege.cpp ActionRegisterSiege.h \
  ../war/GuildWar.h ../war/War.h ../war/Work.h ../war/SiegeWar.h \
  ../war/WarScheduler.h ../war/Scheduler.h ../war/Schedule.h \
  ../war/WarSchedule.h ../GuildManager.h ../Guild.h ../ZoneUtil.h \
- ../VariableManager.h ../../../Core/Properties.h /usr/include/STL/map \
+ ../VariableManager.h ../../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../CastleInfoManager.h \
  ../../../Core/Gpackets/GCNPCResponse.h \
@@ -11857,7 +11857,7 @@ ActionRegisterReinforce.o: ActionRegisterReinforce.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -11889,7 +11889,7 @@ ActionRegisterReinforce.o: ActionRegisterReinforce.cpp \
  ../war/GuildWar.h ../war/War.h ../war/Work.h ../war/SiegeWar.h \
  ../war/WarScheduler.h ../war/Scheduler.h ../war/Schedule.h \
  ../war/WarSchedule.h ../GuildManager.h ../Guild.h ../ZoneUtil.h \
- ../VariableManager.h ../../../Core/Properties.h /usr/include/STL/map \
+ ../VariableManager.h ../../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../CastleInfoManager.h \
  ../../../Core/Gpackets/GCNPCResponse.h \
@@ -11950,7 +11950,7 @@ ActionAcceptReinforce.o: ActionAcceptReinforce.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -11982,7 +11982,7 @@ ActionAcceptReinforce.o: ActionAcceptReinforce.cpp \
  ../war/GuildWar.h ../war/War.h ../war/Work.h ../war/SiegeWar.h \
  ../war/WarScheduler.h ../war/Scheduler.h ../war/Schedule.h \
  ../war/WarSchedule.h ../GuildManager.h ../Guild.h ../ZoneUtil.h \
- ../VariableManager.h ../../../Core/Properties.h /usr/include/STL/map \
+ ../VariableManager.h ../../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../CastleInfoManager.h \
  ../../../Core/Gpackets/GCNPCResponse.h \
@@ -12043,7 +12043,7 @@ ActionDenyReinforce.o: ActionDenyReinforce.cpp ActionDenyReinforce.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -12075,7 +12075,7 @@ ActionDenyReinforce.o: ActionDenyReinforce.cpp ActionDenyReinforce.h \
  ../war/GuildWar.h ../war/War.h ../war/Work.h ../war/SiegeWar.h \
  ../war/WarScheduler.h ../war/Scheduler.h ../war/Schedule.h \
  ../war/WarSchedule.h ../GuildManager.h ../Guild.h ../ZoneUtil.h \
- ../VariableManager.h ../../../Core/Properties.h /usr/include/STL/map \
+ ../VariableManager.h ../../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../CastleInfoManager.h \
  ../../../Core/Gpackets/GCNPCResponse.h \
@@ -12136,7 +12136,7 @@ ActionEnterSiege.o: ActionEnterSiege.cpp ActionEnterSiege.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -12237,7 +12237,7 @@ ActionRecallSiege.o: ActionRecallSiege.cpp ActionRecallSiege.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -12340,7 +12340,7 @@ ActionSelectBloodBible.o: ActionSelectBloodBible.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../PlayerCreature.h ../ObjectRegistry.h \
+ /usr/include/c++/7/bitset ../PlayerCreature.h ../ObjectRegistry.h \
  ../../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h ../InventorySlot.h ../Item.h \
@@ -12425,7 +12425,7 @@ ActionClearBloodBible.o: ActionClearBloodBible.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../PlayerCreature.h ../ObjectRegistry.h \
+ /usr/include/c++/7/bitset ../PlayerCreature.h ../ObjectRegistry.h \
  ../../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h ../InventorySlot.h ../Item.h \
@@ -12512,7 +12512,7 @@ ActionModifyTaxRatio.o: ActionModifyTaxRatio.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -12597,7 +12597,7 @@ ActionOriginalDeleteGetItem.o: ActionOriginalDeleteGetItem.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -12682,7 +12682,7 @@ ActionOriginalDeleteGetGold.o: ActionOriginalDeleteGetGold.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -12767,7 +12767,7 @@ ActionSwapAdvancementItem.o: ActionSwapAdvancementItem.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../NPC.h ../Zone.h ../Tile.h \
+ /usr/include/c++/7/bitset ../NPC.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -12852,7 +12852,7 @@ ActionShowDonationDialog.o: ActionShowDonationDialog.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../../../Core/Player.h \
+ /usr/include/c++/7/bitset ../../../Core/Player.h \
  ../../../Core/Cpackets/CGDonationMoney.h \
  ../../../Core/PacketFactory.h ../../../Core/Gpackets/GCNPCResponse.h
 ActionEnterQuestZone.o: ActionEnterQuestZone.cpp \
@@ -12902,7 +12902,7 @@ ActionEnterQuestZone.o: ActionEnterQuestZone.cpp \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Action.h \
  PropertyBuffer.h ActionFactory.h ../../../Core/Properties.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../StringPool.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
@@ -12915,7 +12915,7 @@ ActionEnterQuestZone.o: ActionEnterQuestZone.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  ../Obstacle.h ../Portal.h ../quest/TriggerManager.h \
  ../quest/Trigger.h ../quest/Condition.h ../quest/PropertyBuffer.h \
@@ -13001,6 +13001,6 @@ ActionShowConfirmGetEventItemDialog.o: \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../../../Core/Player.h \
+ /usr/include/c++/7/bitset ../../../Core/Player.h \
  ../../../Core/Cpackets/CGGetEventItem.h ../../../Core/PacketFactory.h \
  ../../../Core/Gpackets/GCNPCResponse.h

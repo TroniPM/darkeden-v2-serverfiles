@@ -56,19 +56,19 @@ public :
 
 	// get/set Guild ID
 	GuildID_t getGuildID()  { return m_GuildID; }
-	void setGuildID( GuildID_t GuildID ) throw() { m_GuildID = GuildID; }
+	void setGuildID( GuildID_t GuildID )  { m_GuildID = GuildID; }
 
 	// get/set Name
 	const string& getName()  { return m_Name; }
-	void setName( const string& name ) throw() { m_Name = name; }
+	void setName( const string& name )  { m_Name = name; }
 
 	// get/set Guild Member Rank
 	GuildMemberRank_t getGuildMemberRank()  { return m_GuildMemberRank; }
-	void setGuildMemberRank( GuildMemberRank_t guildMemberRank ) throw() { m_GuildMemberRank = guildMemberRank; }
+	void setGuildMemberRank( GuildMemberRank_t guildMemberRank )  { m_GuildMemberRank = guildMemberRank; }
 
 	// get/set Guild Member Intro
 	const string& getGuildMemberIntro()  { return m_GuildMemberIntro; }
-	void setGuildMemberIntro( const string& intro ) throw() { m_GuildMemberIntro = intro; }
+	void setGuildMemberIntro( const string& intro )  { m_GuildMemberIntro = intro; }
 
 private :
 	
@@ -100,7 +100,7 @@ class GCShowGuildMemberInfoFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCShowGuildMemberInfo(); }
+	Packet* createPacket()  { return new GCShowGuildMemberInfo(); }
 
 	// get packet name
 	string getPacketName()  { return "GCShowGuildMemberInfo"; }

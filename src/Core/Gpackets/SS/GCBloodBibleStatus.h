@@ -65,35 +65,35 @@ public :
 
 	// get/set text color
 	ItemType_t getItemType()  { return m_ItemType; }
-	void setItemType( ItemType_t itemType ) throw() { m_ItemType = itemType; }
+	void setItemType( ItemType_t itemType )  { m_ItemType = itemType; }
 
 	// get/set text color
 	ZoneID_t getZoneID()  { return m_ZoneID; }
-	void setZoneID( ZoneID_t zoneID ) throw() { m_ZoneID = zoneID; }
+	void setZoneID( ZoneID_t zoneID )  { m_ZoneID = zoneID; }
 
 	// get/set text color
 	Storage_t getStorage()  { return m_Storage; }
-	void setStorage( Storage_t storage ) throw() { m_Storage = storage; }
+	void setStorage( Storage_t storage )  { m_Storage = storage; }
 
 	// get/set chatting message
 	const string& getOwnerName()  { return m_OwnerName; }
-	void setOwnerName(const string & OwnerName) throw() { m_OwnerName = OwnerName; }
+	void setOwnerName(const string & OwnerName)  { m_OwnerName = OwnerName; }
 
 	// get/set text color
 	Race_t getRace()  { return m_Race; }
-	void setRace( Race_t race ) throw() { m_Race = race; }
+	void setRace( Race_t race )  { m_Race = race; }
 
 	// get/set text color
 	Race_t getShrineRace()  { return m_ShrineRace; }
-	void setShrineRace( Race_t race ) throw() { m_ShrineRace = race; }
+	void setShrineRace( Race_t race )  { m_ShrineRace = race; }
 
 	// get/set text color
 	ZoneCoord_t getX()  { return m_X; }
-	void setX( ZoneCoord_t x ) throw() { m_X = x; }
+	void setX( ZoneCoord_t x )  { m_X = x; }
 
 	// get/set text color
 	ZoneCoord_t getY()  { return m_Y; }
-	void setY( ZoneCoord_t y ) throw() { m_Y = y; }
+	void setY( ZoneCoord_t y )  { m_Y = y; }
 
 private :
 	
@@ -123,7 +123,7 @@ class GCBloodBibleStatusFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCBloodBibleStatus(); }
+	Packet* createPacket()  { return new GCBloodBibleStatus(); }
 
 	// get packet name
 	string getPacketName()  { return "GCBloodBibleStatus"; }

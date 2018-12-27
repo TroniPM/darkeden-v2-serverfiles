@@ -62,7 +62,7 @@ class CGLoadingGearReadyFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGLoadingGearReady(); }
+	Packet* createPacket()  { return new CGLoadingGearReady(); }
 
 	// get packet name
 	string getPacketName()  { return "CGLoadingGearReady"; }

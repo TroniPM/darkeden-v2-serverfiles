@@ -43,7 +43,7 @@ public:
 
 	// get / set ServerGroupID
 	ServerGroupID_t getServerGroupID()  { return m_ServerGroupID; }
-	void setServerGroupID(ServerGroupID_t ServerGroupID) throw() { m_ServerGroupID = ServerGroupID; }
+	void setServerGroupID(ServerGroupID_t ServerGroupID)  { m_ServerGroupID = ServerGroupID; }
 	
 	// get packet's debug string
 	string toString()  { return "CLSelectServer"; }
@@ -68,7 +68,7 @@ class CLSelectServerFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CLSelectServer(); }
+	Packet* createPacket()  { return new CLSelectServer(); }
 
 	// get packet name
 	string getPacketName()  { return "CLSelectServer"; }

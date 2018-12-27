@@ -16,8 +16,8 @@
 class AuraShield : public SkillHandler 
 {
 public:
-	AuraShield() throw() {}
-	~AuraShield() throw() {}
+	AuraShield()  {}
+	~AuraShield()  {}
 	
 public:
     string getSkillHandlerName()  { return "AuraShield"; }

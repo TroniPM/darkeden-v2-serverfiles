@@ -80,16 +80,16 @@ class CGDisplayItemFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGDisplayItemFactory() throw() {}
+	CGDisplayItemFactory()  {}
 	
 	// destructor
-	virtual ~CGDisplayItemFactory() throw() {}
+	virtual ~CGDisplayItemFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGDisplayItem(); }
+	Packet* createPacket()  { return new CGDisplayItem(); }
 
 	// get packet name
 	string getPacketName()  { return "CGDisplayItem"; }

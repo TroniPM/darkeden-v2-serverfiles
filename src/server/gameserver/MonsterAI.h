@@ -69,7 +69,7 @@ public:
 public:
 	// 데이터 함수
 	bool getDamaged(void)  { return m_bDamaged; }
-	void setDamaged(bool value) throw() { m_bDamaged = value; }
+	void setDamaged(bool value)  { m_bDamaged = value; }
 
 	// 다이렉티브 관련 함수
 	void addDirective(Directive* pDirective) ;
@@ -81,7 +81,7 @@ public:
 	// 행동 함수 
 	bool move(ZoneCoord_t ex, ZoneCoord_t ey) ;
 	bool move(Creature* pEnemy, bool bRetreat=false) ;
-	bool approach(Creature* pEnemy) throw() { return move(pEnemy, false); }
+	bool approach(Creature* pEnemy)  { return move(pEnemy, false); }
 	bool flee(Creature* pEnemy) ;
 	int  useSkill(Creature* pEnemy, SkillType_t SkillType, int ratio) ;
 

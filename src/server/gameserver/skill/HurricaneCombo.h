@@ -16,8 +16,8 @@
 class HurricaneCombo : public SkillHandler 
 {
 public:
-	HurricaneCombo() throw() {}
-	~HurricaneCombo() throw() {}
+	HurricaneCombo()  {}
+	~HurricaneCombo()  {}
 	
 public:
     string getSkillHandlerName()  { return "HurricaneCombo"; }

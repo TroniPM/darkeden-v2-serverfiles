@@ -126,7 +126,7 @@ main.o: main.cpp  \
  /usr/include/getopt.h GameServerPlayer.h ../../../../Core/Player.h \
  ../../../../Core/ServerSocket.h ../../../../Core/SocketImpl.h \
  ../../../../Core/SocketAPI.h ../../../../Core/Socket.h \
- ../../../Mutex.h ../../../../Core/Properties.h /usr/include/STL/map \
+ ../../../Mutex.h ../../../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h
 GameServerManager.o: GameServerManager.cpp /usr/include/stdio.h \
@@ -188,7 +188,7 @@ GameServerManager.o: GameServerManager.cpp /usr/include/stdio.h \
  ../../../../Core/ServerSocket.h ../../../../Core/SocketImpl.h \
  ../../../../Core/SocketAPI.h ../../../../Core/Socket.h \
  ../../../Mutex.h ../../../../Core/Assert.h \
- ../../../../Core/Properties.h /usr/include/STL/map \
+ ../../../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../../../../Core/Packet.h \
  ../../../../Core/SocketInputStream.h \

@@ -29,70 +29,70 @@ public:
 
 public:
 	ZoneID_t getZoneID()  { return m_ZoneID; }
-	void setZoneID(ZoneID_t zoneID) throw() { m_ZoneID = zoneID; }
+	void setZoneID(ZoneID_t zoneID)  { m_ZoneID = zoneID; }
 
 	MonsterType_t getMasterNotReadyMonsterType()  { return m_MasterNotReadyMonsterType; }
-	void setMasterNotReadyMonsterType(MonsterType_t mt) throw() { m_MasterNotReadyMonsterType = mt; }
+	void setMasterNotReadyMonsterType(MonsterType_t mt)  { m_MasterNotReadyMonsterType = mt; }
 
 	MonsterType_t getMasterMonsterType()  { return m_MasterMonsterType; }
-	void setMasterMonsterType(MonsterType_t mt) throw() { m_MasterMonsterType = mt; }
+	void setMasterMonsterType(MonsterType_t mt)  { m_MasterMonsterType = mt; }
 	
 	bool isMasterRemainNotReady()  { return m_MasterRemainNotReady; }
-	void setMasterRemainNotReady(bool toCorpse=true) throw() { m_MasterRemainNotReady = toCorpse; }
+	void setMasterRemainNotReady(bool toCorpse=true)  { m_MasterRemainNotReady = toCorpse; }
 
 	ZoneCoord_t getMasterX()  { return m_MasterX; }
-	void setMasterX(ZoneCoord_t x) throw() { m_MasterX = x; }
+	void setMasterX(ZoneCoord_t x)  { m_MasterX = x; }
 
 	ZoneCoord_t getMasterY()  { return m_MasterY; }
-	void setMasterY(ZoneCoord_t y) throw() { m_MasterY = y; }
+	void setMasterY(ZoneCoord_t y)  { m_MasterY = y; }
 
 	Dir_t getMasterDir()  { return m_MasterDir; }
-	void setMasterDir(Dir_t dir) throw() { m_MasterDir = dir; }
+	void setMasterDir(Dir_t dir)  { m_MasterDir = dir; }
 
 	int  getMaxPassPlayer()  { return m_MaxPassPlayer; }
-	void setMaxPassPlayer(int mp) throw() { m_MaxPassPlayer = mp; }
+	void setMaxPassPlayer(int mp)  { m_MaxPassPlayer = mp; }
 
 	//int  getMaxSummonMonster()  { return m_MasterMonsterType; }
-	//void setMaxSummonMonster(int mt) throw() { m_MasterMonsterType = mt; }
+	//void setMaxSummonMonster(int mt)  { m_MasterMonsterType = mt; }
 
 	ZoneCoord_t  getSummonX()  { return m_SummonX; }
-	void setSummonX(ZoneCoord_t x) throw() { m_SummonX = x; }
+	void setSummonX(ZoneCoord_t x)  { m_SummonX = x; }
 
 	ZoneCoord_t  getSummonY()  { return m_SummonY; }
-	void setSummonY(ZoneCoord_t y) throw() { m_SummonY = y; }
+	void setSummonY(ZoneCoord_t y)  { m_SummonY = y; }
 
 	int  getFirstRegenDelay()  { return m_FirstRegenDelay; }
-	void setFirstRegenDelay(int delay) throw() { m_FirstRegenDelay = delay; }
+	void setFirstRegenDelay(int delay)  { m_FirstRegenDelay = delay; }
 
 	int  getRegenDelay()  { return m_RegenDelay; }
-	void setRegenDelay(int delay) throw() { m_RegenDelay = delay; }
+	void setRegenDelay(int delay)  { m_RegenDelay = delay; }
 
 	int  getStartDelay()  { return m_StartDelay; }
-	void setStartDelay(int delay) throw() { m_StartDelay = delay; }
+	void setStartDelay(int delay)  { m_StartDelay = delay; }
 
 	int  getEndDelay()  { return m_EndDelay; }
-	void setEndDelay(int delay) throw() { m_EndDelay = delay; }
+	void setEndDelay(int delay)  { m_EndDelay = delay; }
 
 	int  getKickOutDelay()  { return m_KickOutDelay; }
-	void setKickOutDelay(int delay) throw() { m_KickOutDelay = delay; }
+	void setKickOutDelay(int delay)  { m_KickOutDelay = delay; }
 
 	ZoneID_t  getKickZoneID()  { return m_KickZoneID; }
-	void setKickZoneID(ZoneID_t zoneID) throw() { m_KickZoneID = zoneID; }
+	void setKickZoneID(ZoneID_t zoneID)  { m_KickZoneID = zoneID; }
 
 	ZoneCoord_t  getKickZoneX()  { return m_KickZoneX; }
-	void setKickZoneX(ZoneCoord_t x) throw() { m_KickZoneX = x; }
+	void setKickZoneX(ZoneCoord_t x)  { m_KickZoneX = x; }
 
 	ZoneCoord_t  getKickZoneY()  { return m_KickZoneY; }
-	void setKickZoneY(ZoneCoord_t y) throw() { m_KickZoneY = y; }
+	void setKickZoneY(ZoneCoord_t y)  { m_KickZoneY = y; }
 
 	int  getLairAttackTick()  { return m_LairAttackTick; }
-	void setLairAttackTick(int t) throw() { m_LairAttackTick = t; }
+	void setLairAttackTick(int t)  { m_LairAttackTick = t; }
 
 	int  getLairAttackMinNumber()  { return m_LairAttackMinNumber; }
-	void setLairAttackMinNumber(int t) throw() { m_LairAttackMinNumber = t; }
+	void setLairAttackMinNumber(int t)  { m_LairAttackMinNumber = t; }
 
 	int  getLairAttackMaxNumber()  { return m_LairAttackMaxNumber; }
-	void setLairAttackMaxNumber(int t) throw() { m_LairAttackMaxNumber = t; }
+	void setLairAttackMaxNumber(int t)  { m_LairAttackMaxNumber = t; }
 
 	void setSayText(vector<string>& sayWords, const string& text) ;
 	void setMasterSummonSay(const string& text) ;
@@ -163,8 +163,8 @@ public:
 	void reload();
 	
 	void addMasterLairInfo(MasterLairInfo* pMasterLairInfo);
-	void deleteMasterLairInfo(ZoneID_t zoneID) throw(NoSuchElementException);
-	MasterLairInfo* getMasterLairInfo(ZoneID_t zoneID) throw(NoSuchElementException);
+	void deleteMasterLairInfo(ZoneID_t zoneID) ;
+	MasterLairInfo* getMasterLairInfo(ZoneID_t zoneID) ;
 	int  size() const	{ return m_MasterLairInfos.size(); }
 
 	string toString() ;

@@ -17,7 +17,7 @@ class ThunderFlash : public SkillHandler
 {
 public:
 	ThunderFlash() ;
-	~ThunderFlash() throw() {}
+	~ThunderFlash()  {}
 	
 public:
     string getSkillHandlerName()  { return "ThunderFlash"; }

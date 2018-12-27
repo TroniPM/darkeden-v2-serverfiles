@@ -19,7 +19,7 @@ class SummonMiga : public SkillHandler
 {
 public:
 	SummonMiga() ;
-	~SummonMiga() throw() {}
+	~SummonMiga()  {}
 	
 public:
     string getSkillHandlerName()  { return "SummonMiga"; }

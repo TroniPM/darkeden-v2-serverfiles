@@ -16,9 +16,9 @@
 class CastleSkillSlot : public SkillSlot
 {
 public:
-	CastleSkillSlot() throw()
+	CastleSkillSlot() 
 		: SkillSlot() {}
-	CastleSkillSlot(SkillType_t SkillType, DWORD Exp, ulong Interval) throw()
+	CastleSkillSlot(SkillType_t SkillType, DWORD Exp, ulong Interval) 
 		: SkillSlot( SkillType, Exp, Interval ) {}
 	~CastleSkillSlot() ;
 

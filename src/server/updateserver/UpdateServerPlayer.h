@@ -48,7 +48,7 @@ public :
 	virtual void processOutput () ;
 	
 	// send packet to player's output buffer
-	virtual void sendPacket ( Packet * packet ) throw ( ProtocolException , Error );
+	virtual void sendPacket ( Packet * packet ) ;
 
 	// disconnect
 	// 정식 로그아웃의 경우 disconnect(UNDISCONNECTED)
@@ -57,22 +57,22 @@ public :
 	// get debug string
 	virtual string toString () ;
 
-	void setPenaltyFlag(PenaltyType PenaltyFlag) throw() { m_PenaltyFlag.set(PenaltyFlag); }
+	void setPenaltyFlag(PenaltyType PenaltyFlag)  { m_PenaltyFlag.set(PenaltyFlag); }
 
 	// remove Flag
-	void removePenaltyFlag(PenaltyType PenaltyFlag) throw() { m_PenaltyFlag.reset(PenaltyFlag); }
+	void removePenaltyFlag(PenaltyType PenaltyFlag)  { m_PenaltyFlag.reset(PenaltyFlag); }
 
 	// Is Flag?
-	bool isPenaltyFlag(PenaltyType PenaltyFlag) throw() { return m_PenaltyFlag.test(PenaltyFlag); }
+	bool isPenaltyFlag(PenaltyType PenaltyFlag)  { return m_PenaltyFlag.test(PenaltyFlag); }
 
-	void setExpiredTime ( int t ) throw() { getCurrentTime(m_ExpireTime); m_ExpireTime.tv_sec += 5; }
+	void setExpiredTime ( int t )  { getCurrentTime(m_ExpireTime); m_ExpireTime.tv_sec += 5; }
 
 	
 public :
 
 	// get/set player's status
 	PlayerStatus getPlayerStatus ()  { return m_PlayerStatus; }
-	void setPlayerStatus ( PlayerStatus playerStatus ) throw () { m_PlayerStatus = playerStatus; }
+	void setPlayerStatus ( PlayerStatus playerStatus )  { m_PlayerStatus = playerStatus; }
 
 private :
 

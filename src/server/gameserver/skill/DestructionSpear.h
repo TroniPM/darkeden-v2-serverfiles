@@ -16,8 +16,8 @@
 class DestructionSpear: public SkillHandler 
 {
 public:
-	DestructionSpear() throw() {}
-	~DestructionSpear() throw() {}
+	DestructionSpear()  {}
+	~DestructionSpear()  {}
 	
 public:
     string getSkillHandlerName()  { return "DestructionSpear"; }

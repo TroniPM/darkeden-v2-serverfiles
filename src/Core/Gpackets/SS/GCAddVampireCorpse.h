@@ -33,8 +33,8 @@ class GCAddVampireCorpse : public Packet {
 public :
 
 	// constructor
-	GCAddVampireCorpse() throw() { m_TreasureCount = 0; }
-	GCAddVampireCorpse(const PCVampireInfo3 & vampireInfo) throw() : m_VampireInfo(vampireInfo) {}
+	GCAddVampireCorpse()  { m_TreasureCount = 0; }
+	GCAddVampireCorpse(const PCVampireInfo3 & vampireInfo)  : m_VampireInfo(vampireInfo) {}
 
 	
 public :
@@ -64,13 +64,13 @@ public :
 public :
 
 	// get vampire info
-	PCVampireInfo3 & getVampireInfo() throw() { return m_VampireInfo; }
+	PCVampireInfo3 & getVampireInfo()  { return m_VampireInfo; }
 	const PCVampireInfo3 & getVampireInfo()  { return m_VampireInfo; }
-	void setVampireInfo(const PCVampireInfo3 & vampireInfo) throw() { m_VampireInfo = vampireInfo; }
+	void setVampireInfo(const PCVampireInfo3 & vampireInfo)  { m_VampireInfo = vampireInfo; }
 
 	// get/set Treasure Count
 	BYTE getTreasureCount()  { return m_TreasureCount; }
-	void setTreasureCount(BYTE Count) throw() { m_TreasureCount = Count; }
+	void setTreasureCount(BYTE Count)  { m_TreasureCount = Count; }
 	
 private :
 	
@@ -95,7 +95,7 @@ class GCAddVampireCorpseFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCAddVampireCorpse(); }
+	Packet* createPacket()  { return new GCAddVampireCorpse(); }
 
 	// get packet name
 	string getPacketName()  { return "GCAddVampireCorpse"; }

@@ -16,8 +16,8 @@
 class GreenPoison : public SkillHandler 
 {
 public:
-	GreenPoison() throw() {}
-	~GreenPoison() throw() {}
+	GreenPoison()  {}
+	~GreenPoison()  {}
 
 public:
     string getSkillHandlerName()  { return "GreenPoison"; }

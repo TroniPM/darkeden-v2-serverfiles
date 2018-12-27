@@ -58,11 +58,11 @@ public:
 
 	BYTE getListNum()  { return m_SweeperBonusInfoList.size(); }
 
-	void addSweeperBonusInfo( SweeperBonusInfo* pSweeperBonusInfo ) throw() { m_SweeperBonusInfoList.push_back( pSweeperBonusInfo ); }
+	void addSweeperBonusInfo( SweeperBonusInfo* pSweeperBonusInfo )  { m_SweeperBonusInfoList.push_back( pSweeperBonusInfo ); }
 
 	void clearSweeperBonusInfoList() ;
 
-	SweeperBonusInfo* popFrontSweeperBonusInfoList() throw()
+	SweeperBonusInfo* popFrontSweeperBonusInfoList() 
 	{
 		if ( !m_SweeperBonusInfoList.empty() )
 		{
@@ -93,7 +93,7 @@ class GCSweeperBonusInfoFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCSweeperBonusInfo(); }
+	Packet* createPacket()  { return new GCSweeperBonusInfo(); }
 
 	// get packet name
 	string getPacketName()  { return "GCSweeperBonusInfo"; }

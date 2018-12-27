@@ -10,7 +10,7 @@
 // read data from socket input stream
 //////////////////////////////////////////////////////////////////////////////
 void PCOustersInfo2::read ( SocketInputStream & iStream ) 
-	throw ( ProtocolException , Error )
+	
 {
 	__BEGIN_TRY
 
@@ -153,7 +153,7 @@ void PCOustersInfo2::read ( SocketInputStream & iStream )
 // write data to socket output stream
 //////////////////////////////////////////////////////////////////////////////
 void PCOustersInfo2::write ( SocketOutputStream & oStream ) const 
-	throw ( ProtocolException , Error )
+	
 {
 	__BEGIN_TRY
 
@@ -297,7 +297,7 @@ void PCOustersInfo2::write ( SocketOutputStream & oStream ) const
 // get debug string
 //////////////////////////////////////////////////////////////////////////////
 string PCOustersInfo2::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 

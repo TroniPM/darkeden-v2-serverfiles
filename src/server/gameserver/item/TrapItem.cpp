@@ -26,13 +26,13 @@ Mutex    TrapItem::m_Mutex;
 //////////////////////////////////////////////////////////////////////////////
 
 TrapItem::TrapItem()
-	throw()
+	
 {
 	m_ItemType = 0;
 }
 
 TrapItem::TrapItem(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	m_ItemType = itemType;
 
@@ -148,7 +148,7 @@ void TrapItem::save(const string & ownerID, Storage storage, StorageID_t storage
 }
 
 string TrapItem::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -195,7 +195,7 @@ Weight_t TrapItem::getWeight() const
 //////////////////////////////////////////////////////////////////////////////
 
 string TrapItemInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "TrapItemInfo("

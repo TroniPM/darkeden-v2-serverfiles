@@ -66,7 +66,7 @@ public:
 
 public:
 	TriggerType getTriggerType()  { return m_TriggerType; }
-	void setTriggerType(TriggerType triggerType) throw() { m_TriggerType = triggerType; }
+	void setTriggerType(TriggerType triggerType)  { m_TriggerType = triggerType; }
 	void setTriggerType(const string & triggerType)  
 	{ 
 		if(triggerType == "NPC") m_TriggerType = NPC_TRIGGER; 
@@ -76,15 +76,15 @@ public:
 	}
 
 	TriggerID_t getTriggerID()  { return m_TriggerID; }
-	void setTriggerID(TriggerID_t triggerID) throw() { m_TriggerID = triggerID; }
+	void setTriggerID(TriggerID_t triggerID)  { m_TriggerID = triggerID; }
 
 	QuestID_t getQuestID()  { return m_QuestID; }
-	void setQuestID(QuestID_t questID) throw() { m_QuestID = questID; }
+	void setQuestID(QuestID_t questID)  { m_QuestID = questID; }
 
 	string getComment()  { return m_Comment; }
-	void setComment(string comment) throw() { m_Comment = comment; }
+	void setComment(string comment)  { m_Comment = comment; }
 
-	ConditionSet & getConditionSet() throw() { return m_ConditionSet; }
+	ConditionSet & getConditionSet()  { return m_ConditionSet; }
 	const ConditionSet & getConditionSet()  { return m_ConditionSet; }
 
 	void setConditions(const string & str);

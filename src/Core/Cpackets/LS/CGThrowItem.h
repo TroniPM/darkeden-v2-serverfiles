@@ -55,19 +55,19 @@ public:
 
 	// get/set ItemObjectID
 	ObjectID_t getObjectID()   { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 	// get / set TargetObjectID
 	ObjectID_t getTargetObjectID()   { return m_TargetObjectID; }
-	void setTargetObjectID(ObjectID_t TargetObjectID) throw() { m_TargetObjectID = TargetObjectID; }
+	void setTargetObjectID(ObjectID_t TargetObjectID)  { m_TargetObjectID = TargetObjectID; }
 
 	// get/set InvenX
 	CoordInven_t getX()  { return m_InvenX; }
-	void setX(CoordInven_t InvenX) throw() { m_InvenX = InvenX; }
+	void setX(CoordInven_t InvenX)  { m_InvenX = InvenX; }
 
 	// get/set InvenY
 	CoordInven_t getY()  { return m_InvenY; }
-	void setY(CoordInven_t InvenY) throw() { m_InvenY = InvenY; }
+	void setY(CoordInven_t InvenY)  { m_InvenY = InvenY; }
 
 	// get packet's debug string
 	string toString() ;
@@ -100,16 +100,16 @@ class CGThrowItemFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGThrowItemFactory() throw() {}
+	CGThrowItemFactory()  {}
 	
 	// destructor
-	virtual ~CGThrowItemFactory() throw() {}
+	virtual ~CGThrowItemFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGThrowItem(); }
+	Packet* createPacket()  { return new CGThrowItem(); }
 
 	// get packet name
 	string getPacketName()  { return "CGThrowItem"; }

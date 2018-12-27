@@ -16,8 +16,8 @@
 class RemoveCurse: public SkillHandler 
 {
 public:
-	RemoveCurse() throw() {}
-	~RemoveCurse() throw() {}
+	RemoveCurse()  {}
+	~RemoveCurse()  {}
 	
 public:
     string getSkillHandlerName()  { return "RemoveCurse"; }

@@ -58,11 +58,11 @@ public:
 
 	// get/set text color
 	uint getColor()  { return m_Color; }
-	void setColor( uint color ) throw() { m_Color = color; }
+	void setColor( uint color )  { m_Color = color; }
 
 	// get/set chatting message
 	const string& getMessage()  { return m_Message; }
-	void setMessage(const string & msg) throw() { m_Message = msg; }
+	void setMessage(const string & msg)  { m_Message = msg; }
 	
 
 private :
@@ -89,7 +89,7 @@ class CGSayFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGSay(); }
+	Packet* createPacket()  { return new CGSay(); }
 
 	// get packet name
 	string getPacketName()  { return "CGSay"; }
@@ -122,7 +122,7 @@ public:
 	static void opExecute( Creature* pCreature, GamePlayer* pPlayer, string msg, int i ) ;
 
 	// for guild test
-	static void opzone( string msg, int i ) throw( ProtocolException, Error );
+	static void opzone( string msg, int i ) ;
 	static void opguild( string msg, int i, Creature* pCreature ) ;
 
 	// 전쟁 시스템 관련 

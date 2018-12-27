@@ -24,7 +24,7 @@ Mutex    Helm::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Helm::Helm()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
@@ -33,7 +33,7 @@ Helm::Helm()
 }
 
 Helm::Helm(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_ItemType(itemType), m_OptionType(optionType), m_Durability(0)
 {
 	setItemType(itemType);
@@ -179,7 +179,7 @@ void Helm::save(const string & ownerID, Storage storage, StorageID_t storageID, 
 // get debug string
 //--------------------------------------------------------------------------------
 string Helm::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -264,7 +264,7 @@ Protection_t Helm::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string HelmInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

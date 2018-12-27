@@ -73,7 +73,7 @@ public:
 
 public:
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t creatureID) throw() { m_ObjectID = creatureID; }
+	void setObjectID(ObjectID_t creatureID)  { m_ObjectID = creatureID; }
 
 	BYTE getCode(void) const { return m_Code; }
 	void setCode(BYTE code) { m_Code = code; }
@@ -93,7 +93,7 @@ private :
 class GCShopBuyFailFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCShopBuyFail(); }
+	Packet* createPacket()  { return new GCShopBuyFail(); }
 	string getPacketName()  { return "GCShopBuyFail"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_SHOP_BUY_FAIL; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID; }

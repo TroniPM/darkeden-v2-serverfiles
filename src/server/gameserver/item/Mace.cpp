@@ -24,7 +24,7 @@ Mutex    Mace::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Mace::Mace()
-	throw()
+	
 {
 	setItemType(0);
 	setDurability(0);
@@ -34,7 +34,7 @@ Mace::Mace()
 }
 
 Mace::Mace(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_OptionType( optionType )
 {
 	setItemType(itemType);
@@ -181,7 +181,7 @@ void Mace::save(const string & ownerID, Storage storage, StorageID_t storageID, 
 // get debug string
 //--------------------------------------------------------------------------------
 string Mace::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -269,7 +269,7 @@ Damage_t Mace::getMaxDamage() const
 
 */
 MP_t Mace::getMPBonus() const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -281,7 +281,7 @@ MP_t Mace::getMPBonus() const
 //--------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------
 int Mace::getCriticalBonus(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -294,7 +294,7 @@ int Mace::getCriticalBonus(void) const
 // get debug string
 //--------------------------------------------------------------------------------
 string MaceInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

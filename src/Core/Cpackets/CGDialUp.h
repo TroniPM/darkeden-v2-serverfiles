@@ -58,7 +58,7 @@ public:
 
 	// get / set phoneNumber
 	PhoneNumber_t getPhoneNumber()  { return m_PhoneNumber; }
-	void setPhoneNumber(PhoneNumber_t PhoneNumber) throw() { m_PhoneNumber = PhoneNumber; }
+	void setPhoneNumber(PhoneNumber_t PhoneNumber)  { m_PhoneNumber = PhoneNumber; }
 
 private :
 	
@@ -81,7 +81,7 @@ class CGDialUpFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGDialUp(); }
+	Packet* createPacket()  { return new CGDialUp(); }
 
 	// get packet name
 	string getPacketName()  { return "CGDialUp"; }

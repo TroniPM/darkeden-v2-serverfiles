@@ -55,18 +55,18 @@ public:
 
 	// get/set Corpse's X
 	Coord_t getX()  { return m_X; }
-	void setX(Coord_t X) throw() { m_X = X; }
+	void setX(Coord_t X)  { m_X = X; }
 
 	// get/set Corpse's Y
 	Coord_t getY()  { return m_Y; }
-	void setY(Coord_t Y) throw() { m_Y = Y; }
+	void setY(Coord_t Y)  { m_Y = Y; }
 
 	// get/set ObjectID
 	ObjectID_t getObjectID()  { return m_ObjectID; }
 	ObjectID_t getItemObjectID()  { return m_ItemObjectID; }
 
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
-	void setItemObjectID(ObjectID_t ItemObjectID) throw() { m_ItemObjectID = ItemObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
+	void setItemObjectID(ObjectID_t ItemObjectID)  { m_ItemObjectID = ItemObjectID; }
 
 	// get packet's debug string
 	string toString() ;
@@ -95,16 +95,16 @@ class CGRelicToObjectFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGRelicToObjectFactory() throw() {}
+	CGRelicToObjectFactory()  {}
 	
 	// destructor
-	virtual ~CGRelicToObjectFactory() throw() {}
+	virtual ~CGRelicToObjectFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGRelicToObject(); }
+	Packet* createPacket()  { return new CGRelicToObject(); }
 
 	// get packet name
 	string getPacketName()  { return "CGRelicToObject"; }

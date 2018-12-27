@@ -40,10 +40,10 @@ public:
 	void setDuration(Duration_t d)  { m_Duration = d;}
 
 	bool isSniping(void) const { return m_isSniping; }
-	void setSniping() throw() { m_isSniping = true; }
+	void setSniping()  { m_isSniping = true; }
 	
 	bool isInvisibility(void) const { return !m_isSniping; }
-	void setInvisibility() throw() { m_isSniping = false; }
+	void setInvisibility()  { m_isSniping = false; }
 
 private:
 	Duration_t  m_Duration;

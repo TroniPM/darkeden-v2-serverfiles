@@ -19,7 +19,7 @@ class BloodyWave : public SkillHandler
 {
 public:
 	BloodyWave() ;
-	~BloodyWave() throw() {}
+	~BloodyWave()  {}
 	
 public:
     string getSkillHandlerName()  { return "BloodyWave"; }

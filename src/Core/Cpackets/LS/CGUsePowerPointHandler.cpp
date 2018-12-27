@@ -45,7 +45,7 @@ const POWER_POINT_ITEM_TEMPLATE PowerPointItemTemplate[7] =
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGUsePowerPointHandler::execute (CGUsePowerPoint* pPacket , Player* pPlayer)
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 

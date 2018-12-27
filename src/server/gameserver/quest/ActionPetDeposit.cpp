@@ -69,7 +69,7 @@ void ActionPetDeposit::execute (Creature * pCreature1 , Creature * pCreature2)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionPetDeposit::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

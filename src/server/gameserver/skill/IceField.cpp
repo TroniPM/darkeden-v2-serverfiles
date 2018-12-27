@@ -19,7 +19,7 @@
 #include "Gpackets/GCSkillFailed1.h"
 
 IceField::IceField()
-	throw()
+	
 {
 	m_IceFieldMask[0][0].set( 0, 0 );
 	m_MaskNum[0] = 1;

@@ -132,7 +132,7 @@ void EffectHeartCatalyst::unaffect(Creature* pCreature)
 }
 
 string EffectHeartCatalyst::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

@@ -16,8 +16,8 @@
 class BrambleHalo : public SkillHandler 
 {
 public:
-	BrambleHalo() throw() {}
-	~BrambleHalo() throw() {}
+	BrambleHalo()  {}
+	~BrambleHalo()  {}
 	
 public:
     string getSkillHandlerName()  { return "BrambleHalo"; }

@@ -25,7 +25,7 @@ Mutex    OustersPendent::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 OustersPendent::OustersPendent()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
@@ -34,7 +34,7 @@ OustersPendent::OustersPendent()
 }
 
 OustersPendent::OustersPendent(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_ItemType(itemType), m_OptionType(optionType), m_Durability(0)
 {
 	setItemType(itemType);
@@ -177,7 +177,7 @@ void OustersPendent::save(const string & ownerID, Storage storage, StorageID_t s
 // get debug string
 //--------------------------------------------------------------------------------
 string OustersPendent::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -262,7 +262,7 @@ Protection_t OustersPendent::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string OustersPendentInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

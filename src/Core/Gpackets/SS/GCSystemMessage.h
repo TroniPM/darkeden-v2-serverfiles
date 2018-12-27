@@ -67,14 +67,14 @@ public :
 
 	// get/set chatting message
 	string getMessage()  { return m_Message; }
-	void setMessage(const string & msg) throw() { m_Message = msg; }
+	void setMessage(const string & msg)  { m_Message = msg; }
 
 	// get/set text color
 	uint getColor()  { return m_Color; }
-	void setColor( uint color ) throw() { m_Color = color; }
+	void setColor( uint color )  { m_Color = color; }
 
 	SystemMessageType getType()  { return m_Type; }
-	void setType( SystemMessageType Type ) throw() { m_Type = Type; }
+	void setType( SystemMessageType Type )  { m_Type = Type; }
 
 	// get/set race
 	Race_t getRace() const { return m_Race; }
@@ -109,7 +109,7 @@ class GCSystemMessageFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCSystemMessage(); }
+	Packet* createPacket()  { return new GCSystemMessage(); }
 
 	// get packet name
 	string getPacketName()  { return "GCSystemMessage"; }

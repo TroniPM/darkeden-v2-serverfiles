@@ -64,7 +64,7 @@ class CGLogoutFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGLogout(); }
+	Packet* createPacket()  { return new CGLogout(); }
 
 	// get packet name
 	string getPacketName()  { return "CGLogout"; }

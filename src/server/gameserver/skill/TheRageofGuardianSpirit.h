@@ -16,8 +16,8 @@
 class TheRageofGuardianSpirit : public SkillHandler 
 {
 public:
-	TheRageofGuardianSpirit() throw() {}
-	~TheRageofGuardianSpirit() throw() {}
+	TheRageofGuardianSpirit()  {}
+	~TheRageofGuardianSpirit()  {}
 	
 public:
     string getSkillHandlerName()  { return "TheRageofGuardianSpirit"; }

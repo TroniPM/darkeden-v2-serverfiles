@@ -16,8 +16,8 @@
 class TransformToWerwolf: public SkillHandler 
 {
 public:
-	TransformToWerwolf() throw() {}
-	~TransformToWerwolf() throw() {}
+	TransformToWerwolf()  {}
+	~TransformToWerwolf()  {}
 	
 public:
     string getSkillHandlerName()  { return "TransformToWerwolf"; }

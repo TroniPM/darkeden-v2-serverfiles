@@ -70,7 +70,7 @@ void ActionSimpleQuestComplete::execute (Creature * pCreature1 , Creature * pCre
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionSimpleQuestComplete::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

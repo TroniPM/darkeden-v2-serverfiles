@@ -21,7 +21,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 PlayerManager::PlayerManager () 
-	throw ()
+	
 : m_nPlayers(0)
 {
 	__BEGIN_TRY
@@ -42,7 +42,7 @@ PlayerManager::PlayerManager ()
 // destructor
 //////////////////////////////////////////////////////////////////////
 PlayerManager::~PlayerManager () 
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -166,7 +166,7 @@ Player * PlayerManager::getPlayer ( SOCKET fd )
 // 플레이어를 복사한다.
 //////////////////////////////////////////////////////////////////////
 void PlayerManager::copyPlayers()
-	throw()
+	
 {
 	__BEGIN_TRY
 

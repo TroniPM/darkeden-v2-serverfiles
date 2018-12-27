@@ -38,7 +38,7 @@ public:
 	virtual string getObjectTableName()  { return "BombObject"; }
 
 	virtual ItemType_t getItemType()  { return m_ItemType; }
-	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
+	virtual void setItemType(ItemType_t itemType)  { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() ;
 	virtual VolumeHeight_t getVolumeHeight() ;
@@ -54,7 +54,7 @@ public:
 	virtual Damage_t getMaxDamage() ;
 
 	virtual ItemNum_t getNum()  { return m_Num; }
-	virtual void setNum(ItemNum_t Num) throw() { m_Num = Num; }
+	virtual void setNum(ItemNum_t Num)  { m_Num = Num; }
 
 	bool    isStackable()  { return true; }
 
@@ -80,10 +80,10 @@ public:
 	virtual string toString() ;
 
 	virtual Damage_t getMinDamage()  { return m_MinDamage; }
-	virtual void setMinDamage(Damage_t minDamage) throw() { m_MinDamage = minDamage; }
+	virtual void setMinDamage(Damage_t minDamage)  { m_MinDamage = minDamage; }
 
 	virtual Damage_t getMaxDamage()  { return m_MaxDamage; }
-	virtual void setMaxDamage(Damage_t maxDamage) throw() { m_MaxDamage = maxDamage; }
+	virtual void setMaxDamage(Damage_t maxDamage)  { m_MaxDamage = maxDamage; }
 
 private:
 	Damage_t m_MinDamage;     // 최소 데미지
@@ -116,7 +116,7 @@ public:
 	virtual string getItemClassName()  { return "Bomb"; }
 	
 public:
-	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new Bomb(ItemType,OptionType); }
+	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType)  { return new Bomb(ItemType,OptionType); }
 };
 
 

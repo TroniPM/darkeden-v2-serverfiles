@@ -17,7 +17,7 @@ class BloodyWall : public SkillHandler
 {
 public:
 	BloodyWall() ;
-	~BloodyWall() throw() {}
+	~BloodyWall()  {}
 	
 public:
     string getSkillHandlerName()  { return "BloodyWall"; }

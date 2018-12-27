@@ -137,7 +137,7 @@
 // constructor
 ////////////////////////////////////////////////////////////////////////////////
 ActionFactoryManager::ActionFactoryManager () 
-	throw ()
+	
 : m_Factories(NULL) , m_Size(Action::ACTION_MAX)
 {
 	__BEGIN_TRY
@@ -159,7 +159,7 @@ ActionFactoryManager::ActionFactoryManager ()
 // destructor
 ////////////////////////////////////////////////////////////////////////////////
 ActionFactoryManager::~ActionFactoryManager () 
-	throw ()
+	
 {
 	__BEGIN_TRY
 		
@@ -427,7 +427,7 @@ ActionType_t ActionFactoryManager::getActionType (const string & actionname) con
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionFactoryManager::toString () const
-	throw ()
+	
 {
 
 	__BEGIN_TRY

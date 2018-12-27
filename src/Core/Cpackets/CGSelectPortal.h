@@ -55,7 +55,7 @@ public:
 
 	// get / set ZoneID
 	ObjectID_t getZoneID()   { return m_ZoneID; }
-	void setZoneID(ZoneID_t ZoneID) throw() { m_ZoneID = ZoneID; }
+	void setZoneID(ZoneID_t ZoneID)  { m_ZoneID = ZoneID; }
 
 	// get packet's debug string
 	string toString() ;
@@ -80,16 +80,16 @@ class CGSelectPortalFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGSelectPortalFactory() throw() {}
+	CGSelectPortalFactory()  {}
 	
 	// destructor
-	virtual ~CGSelectPortalFactory() throw() {}
+	virtual ~CGSelectPortalFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGSelectPortal(); }
+	Packet* createPacket()  { return new CGSelectPortal(); }
 
 	// get packet name
 	string getPacketName()  { return "CGSelectPortal"; }

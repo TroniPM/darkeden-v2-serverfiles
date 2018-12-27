@@ -36,7 +36,7 @@ public:
 	
 public:
 	ObjectID_t getPeaceCreatureID()  { return m_PeaceCreatureID; }
-	void setPeaceCreatureID(ObjectID_t PeaceCreatureID) throw() { m_PeaceCreatureID = PeaceCreatureID; }
+	void setPeaceCreatureID(ObjectID_t PeaceCreatureID)  { m_PeaceCreatureID = PeaceCreatureID; }
 
 private:
 	ObjectID_t m_PeaceCreatureID;

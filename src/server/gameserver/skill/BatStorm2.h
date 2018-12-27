@@ -16,8 +16,8 @@
 class BatStorm2 : public SkillHandler 
 {
 public:
-	BatStorm2() throw() {}
-	~BatStorm2() throw() {}
+	BatStorm2()  {}
+	~BatStorm2()  {}
 	
 public:
     string getSkillHandlerName()  { return "BatStorm2"; }

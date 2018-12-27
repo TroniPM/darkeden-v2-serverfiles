@@ -16,8 +16,8 @@
 class WindDivider : public SkillHandler 
 {
 public:
-	WindDivider() throw() {}
-	~WindDivider() throw() {}
+	WindDivider()  {}
+	~WindDivider()  {}
 	
 public:
     string getSkillHandlerName()  { return "WindDivider"; }

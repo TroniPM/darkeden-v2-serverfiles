@@ -30,19 +30,19 @@ public :
 
 	// get/set GameWorldID
 	WorldID_t getWorldID()  { return m_WorldID; }
-	void setWorldID( WorldID_t WorldID ) throw() { m_WorldID = WorldID; }
+	void setWorldID( WorldID_t WorldID )  { m_WorldID = WorldID; }
 
 	// get/set GameServerGroupID
 	ServerGroupID_t getGroupID()  { return m_GroupID; }
-	void setGroupID( ServerGroupID_t GroupID ) throw() { m_GroupID = GroupID; }
+	void setGroupID( ServerGroupID_t GroupID )  { m_GroupID = GroupID; }
 
 	// get/set host name
 	string getGroupName()  { return m_GroupName; }
-	void setGroupName( string GroupName ) throw () { m_GroupName = GroupName; }
+	void setGroupName( string GroupName )  { m_GroupName = GroupName; }
 	
 	// get/set host name
 	BYTE getStat()  { return m_Stat; }
-	void setStat( BYTE stat ) throw () { m_Stat = stat; }
+	void setStat( BYTE stat )  { m_Stat = stat; }
 
 	// get debug string
 	string toString ()  

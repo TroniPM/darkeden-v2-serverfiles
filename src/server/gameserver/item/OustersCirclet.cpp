@@ -25,7 +25,7 @@ Mutex    OustersCirclet::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 OustersCirclet::OustersCirclet()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
@@ -34,7 +34,7 @@ OustersCirclet::OustersCirclet()
 }
 
 OustersCirclet::OustersCirclet(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_ItemType(itemType), m_OptionType(optionType), m_Durability(0)
 {
 	setItemType(itemType);
@@ -177,7 +177,7 @@ void OustersCirclet::save(const string & ownerID, Storage storage, StorageID_t s
 // get debug string
 //--------------------------------------------------------------------------------
 string OustersCirclet::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -262,7 +262,7 @@ Protection_t OustersCirclet::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string OustersCircletInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

@@ -62,7 +62,7 @@ MPlayer::~MPlayer()
 }
 
 void MPlayer::processInput()
-	throw ( IOException, Error )
+	
 {
 	try
 	{
@@ -74,7 +74,7 @@ void MPlayer::processInput()
 }
 
 void MPlayer::processOutput()
-	throw ( IOException, Error )
+	
 {
 	try
 	{
@@ -87,7 +87,7 @@ void MPlayer::processOutput()
 }
 
 void MPlayer::processCommand()
-	throw ( IOException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -147,7 +147,7 @@ void MPlayer::processCommand()
 }
 
 void MPlayer::sendPacket( MPacket* pPacket )
-	throw ( ProtocolException, Error )
+	
 {
 	Assert( pPacket != NULL );
 
@@ -207,7 +207,7 @@ void MPlayer::connect()
 }
 
 void MPlayer::disconnect( bool bDisconnected )
-	throw ( InvalidProtocolException, Error )
+	
 {
 	__BEGIN_TRY
 

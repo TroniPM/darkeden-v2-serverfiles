@@ -10,7 +10,7 @@
 DWORD MonsterCounter::s_MonsterCounter = 0;
 
 MonsterCounter::MonsterCounter(SpriteType_t spriteType, WORD maxMonsters, WORD currentMonsters) 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -35,7 +35,7 @@ void MonsterCounter::addMonster()
 }
 
 void MonsterCounter::addMonster(WORD Count) 
-	throw() 
+	 
 { 
 	__BEGIN_TRY
 

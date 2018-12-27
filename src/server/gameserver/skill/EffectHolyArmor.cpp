@@ -81,7 +81,7 @@ void EffectHolyArmor::unaffect(Creature* pCreature)
 }
 
 string EffectHolyArmor::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

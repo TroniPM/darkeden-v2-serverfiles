@@ -24,7 +24,7 @@ Mutex    Bracelet::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Bracelet::Bracelet()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
@@ -33,7 +33,7 @@ Bracelet::Bracelet()
 }
 
 Bracelet::Bracelet(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_ItemType(itemType), m_OptionType(optionType), m_Durability(0)
 {
 	setItemType(itemType);
@@ -178,7 +178,7 @@ void Bracelet::save(const string & ownerID, Storage storage, StorageID_t storage
 // get debug string
 //--------------------------------------------------------------------------------
 string Bracelet::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -263,7 +263,7 @@ Protection_t Bracelet::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string BraceletInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

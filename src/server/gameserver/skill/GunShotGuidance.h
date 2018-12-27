@@ -16,8 +16,8 @@
 class GunShotGuidance : public SkillHandler 
 {
 public:
-	GunShotGuidance() throw() {}
-	~GunShotGuidance() throw() {}
+	GunShotGuidance()  {}
+	~GunShotGuidance()  {}
 	
 public:
     string getSkillHandlerName()  { return "GunShotGuidance"; }

@@ -16,8 +16,8 @@
 class SoulChain: public SkillHandler 
 {
 public:
-	SoulChain() throw() {}
-	~SoulChain() throw() {}
+	SoulChain()  {}
+	~SoulChain()  {}
 	
 public:
     string getSkillHandlerName()  { return "SoulChain"; }

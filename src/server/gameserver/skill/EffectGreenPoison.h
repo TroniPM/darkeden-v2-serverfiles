@@ -40,7 +40,7 @@ public:
 	void setDuration(Duration_t d)  { m_Duration = d;}
 	Duration_t getDuration()  { return m_Duration;}
 
-	void setUserObjectID(ObjectID_t oid) throw() { m_UserObjectID = oid; }
+	void setUserObjectID(ObjectID_t oid)  { m_UserObjectID = oid; }
 	ObjectID_t getUserObjectID()  { return m_UserObjectID; }
 
 	void setVampire( bool bVampire = true ) { m_bVampire = bVampire; }

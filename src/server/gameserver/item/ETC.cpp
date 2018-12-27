@@ -25,13 +25,13 @@ Mutex    ETC::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 ETC::ETC()
-	throw()
+	
 : m_ItemType(0)
 {
 }
 
 ETC::ETC(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t num)
-	throw()
+	
 : m_ItemType(itemType), m_Num(num)
 {
 	if (!g_pItemInfoManager->isPossibleItem(getItemClass(), m_ItemType, optionType))
@@ -157,7 +157,7 @@ void ETC::save(const string & ownerID, Storage storage, StorageID_t storageID, B
 // get debug string
 //--------------------------------------------------------------------------------
 string ETC::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -217,7 +217,7 @@ Weight_t ETC::getWeight() const
 // get debug string
 //--------------------------------------------------------------------------------
 string ETCInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

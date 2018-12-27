@@ -42,17 +42,17 @@ public:
 //	virtual string getObjectTableName()  { return "OustersArmsbandObject"; }
 
 /*	virtual ItemType_t getItemType()  { return m_ItemType; }
-	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
+	virtual void setItemType(ItemType_t itemType)  { m_ItemType = itemType; }
 
 	virtual bool hasOptionType()  { return !m_OptionType.empty(); }
 	virtual int getOptionTypeSize()  { return m_OptionType.size(); }
 	virtual int getRandomOptionType()  { if (m_OptionType.empty()) return 0; int pos = rand()%m_OptionType.size(); list<OptionType_t>::const_iterator itr = m_OptionType.begin(); for (int i=0; i<pos; i++) itr++; return *itr; }
 	virtual const list<OptionType_t>& getOptionTypeList()  { return m_OptionType; }
 	virtual OptionType_t getFirstOptionType()  { if (m_OptionType.empty()) return 0; return m_OptionType.front(); }
-	virtual void removeOptionType(OptionType_t OptionType) throw() { list<OptionType_t>::iterator itr = find(m_OptionType.begin(), m_OptionType.end(), OptionType); if (itr!=m_OptionType.end()) m_OptionType.erase(itr); }
-	virtual void changeOptionType(OptionType_t currentOptionType, OptionType_t newOptionType) throw() { list<OptionType_t>::iterator itr = find(m_OptionType.begin(), m_OptionType.end(), currentOptionType); if (itr!=m_OptionType.end()) *itr=newOptionType; }
-	virtual void addOptionType(OptionType_t OptionType) throw() { m_OptionType.push_back(OptionType); }
-	virtual void setOptionType(const list<OptionType_t>& OptionType) throw() { m_OptionType = OptionType; }
+	virtual void removeOptionType(OptionType_t OptionType)  { list<OptionType_t>::iterator itr = find(m_OptionType.begin(), m_OptionType.end(), OptionType); if (itr!=m_OptionType.end()) m_OptionType.erase(itr); }
+	virtual void changeOptionType(OptionType_t currentOptionType, OptionType_t newOptionType)  { list<OptionType_t>::iterator itr = find(m_OptionType.begin(), m_OptionType.end(), currentOptionType); if (itr!=m_OptionType.end()) *itr=newOptionType; }
+	virtual void addOptionType(OptionType_t OptionType)  { m_OptionType.push_back(OptionType); }
+	virtual void setOptionType(const list<OptionType_t>& OptionType)  { m_OptionType = OptionType; }
 
 	virtual VolumeWidth_t getVolumeWidth() ;
 	virtual VolumeHeight_t getVolumeHeight() ;
@@ -62,7 +62,7 @@ public:
 	virtual Durability_t getDurability()  { return m_Durability; }
 	void setDurability(Durability_t durability)  { m_Durability = durability; }
 */
-	void setInventory(Inventory* pInventory) throw() { m_pInventory = pInventory; }
+	void setInventory(Inventory* pInventory)  { m_pInventory = pInventory; }
 	Inventory* getInventory()  { return m_pInventory; }
 
 	PocketNum_t getPocketCount(void) ;
@@ -93,19 +93,19 @@ public:
 	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_OUSTERS_ARMSBAND; }
 
 	virtual Durability_t getDurability()  { return m_Durability; }
-	virtual void setDurability(Durability_t durability) throw() { m_Durability = durability; }
+	virtual void setDurability(Durability_t durability)  { m_Durability = durability; }
 
 	uint getPocketCount()  { return m_PocketCount; }
-	void setPocketCount(uint pocketCount) throw() { m_PocketCount = pocketCount; }
+	void setPocketCount(uint pocketCount)  { m_PocketCount = pocketCount; }
 
 	Defense_t getDefenseBonus()  { return m_DefenseBonus; }
-	void setDefenseBonus(Defense_t acBonus) throw() { m_DefenseBonus = acBonus; }
+	void setDefenseBonus(Defense_t acBonus)  { m_DefenseBonus = acBonus; }
 
 	Protection_t getProtectionBonus()  { return m_ProtectionBonus; }
-	void setProtectionBonus(Protection_t acBonus) throw() { m_ProtectionBonus = acBonus; }
+	void setProtectionBonus(Protection_t acBonus)  { m_ProtectionBonus = acBonus; }
 
 	virtual uint getItemLevel(void)  { return m_ItemLevel; }
-	virtual void setItemLevel(uint level) throw() { m_ItemLevel = level; }
+	virtual void setItemLevel(uint level)  { m_ItemLevel = level; }
 
 	virtual string toString() ;
 
@@ -144,7 +144,7 @@ public:
 	virtual string getItemClassName()  { return "OustersArmsband"; }
 
 public:
-	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new OustersArmsband(ItemType,OptionType); }
+	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType)  { return new OustersArmsband(ItemType,OptionType); }
 };
 
 

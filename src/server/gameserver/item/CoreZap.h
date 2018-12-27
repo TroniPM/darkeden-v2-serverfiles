@@ -88,7 +88,7 @@ public:
 	virtual string getItemClassName()  { return "CoreZap"; }
 	
 public:
-	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new CoreZap(ItemType,OptionType); }
+	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType)  { return new CoreZap(ItemType,OptionType); }
 };
 
 

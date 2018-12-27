@@ -66,7 +66,7 @@ class GCRegenZoneStatusFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCRegenZoneStatus(); }
+	Packet* createPacket()  { return new GCRegenZoneStatus(); }
 
 	// get packet name
 	string getPacketName()  { return "GCRegenZoneStatus"; }

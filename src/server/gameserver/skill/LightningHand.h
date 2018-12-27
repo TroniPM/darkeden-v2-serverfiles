@@ -16,8 +16,8 @@
 class LightningHand : public SkillHandler 
 {
 public:
-	LightningHand() throw() {}
-	~LightningHand() throw() {}
+	LightningHand()  {}
+	~LightningHand()  {}
 	
 public:
     string getSkillHandlerName()  { return "LightningHand"; }

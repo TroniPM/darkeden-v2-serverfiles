@@ -22,7 +22,7 @@ VampireCorpse::VampireCorpse (Vampire* pVampire)
 }
 
 VampireCorpse::~VampireCorpse()
-	throw()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH

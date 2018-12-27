@@ -59,11 +59,11 @@ private :
 class GCLoadInventoryFactory : public PacketFactory 
 {
 public :
-	GCLoadInventoryFactory() throw() {}
-	virtual ~GCLoadInventoryFactory() throw() {}
+	GCLoadInventoryFactory()  {}
+	virtual ~GCLoadInventoryFactory()  {}
 	
 public:
-	Packet* createPacket() throw() { return new GCLoadInventory(); }
+	Packet* createPacket()  { return new GCLoadInventory(); }
 	string getPacketName()  { return "GCLoadInventory"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_LOAD_INVENTORY; }
 

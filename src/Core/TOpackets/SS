@@ -68,15 +68,15 @@ public:
 public:
 
 	string getServerIP()  { return m_ServerIP; }
-	void setServerIP(const string& ServerIP) throw() { m_ServerIP = ServerIP; }
+	void setServerIP(const string& ServerIP)  { m_ServerIP = ServerIP; }
 	
 	string getMessage() const { return m_Message; }
 
 	BYTE getServerType()  { return m_ServerType; }
-	void setServerType(BYTE ServerType) throw() { m_ServerType = ServerType; }
+	void setServerType(BYTE ServerType)  { m_ServerType = ServerType; }
 	
 	uint getUDPPort()  { return m_udpPort; }
-	void setUDPPort(uint port) throw() { m_udpPort = port; }
+	void setUDPPort(uint port)  { m_udpPort = port; }
 	
 	
 private :
@@ -101,7 +101,7 @@ class GTOAcknowledgementFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new GTOAcknowledgement(); }
+	Packet* createPacket()  { return new GTOAcknowledgement(); }
 
 	// get packet name
 	string getPacketName()  { return "GTOAcknowledgement"; }

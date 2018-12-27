@@ -129,7 +129,7 @@ void EffectAcidEruption::unaffect(Creature* pCreature)
 }
 
 string EffectAcidEruption::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

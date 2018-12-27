@@ -30,7 +30,7 @@ public:
 	string toString() ;
 
 public:
-	int getHealPoint() throw() { return m_HealPoint;}
+	int getHealPoint()  { return m_HealPoint;}
 	void setHealPoint(HP_t HealPoint)  { m_HealPoint = HealPoint; }
 
 	int getTick() const { return m_Tick; }

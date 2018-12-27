@@ -25,14 +25,14 @@ Mutex    BootZap::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 BootZap::BootZap()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
 }
 
 BootZap::BootZap(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	setItemType(itemType);
 	setOptionType(optionType);
@@ -170,7 +170,7 @@ void BootZap::save(const string & ownerID, Storage storage, StorageID_t storageI
 // get debug string
 //--------------------------------------------------------------------------------
 string BootZap::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -253,7 +253,7 @@ Protection_t BootZap::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string BootZapInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

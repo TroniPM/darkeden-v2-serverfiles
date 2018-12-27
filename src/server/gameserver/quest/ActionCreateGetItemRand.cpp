@@ -103,7 +103,7 @@ void ActionCreateGetItemRand::execute (Creature * pCreature1 , Creature * pCreat
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionCreateGetItemRand::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

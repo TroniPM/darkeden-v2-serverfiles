@@ -236,7 +236,7 @@ ItemIDRegistry.o: ItemIDRegistry.cpp ../../database/DB.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  Motorcycle.h ../ItemFactory.h ../ItemLoader.h Potion.h \
@@ -312,7 +312,7 @@ AR.o: AR.cpp AR.h ../ConcreteItem.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../ItemInfoManager.h \
  ../InfoClassManager.h ../../database/DB.h \
@@ -408,7 +408,7 @@ Belt.o: Belt.cpp Belt.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -504,7 +504,7 @@ Blade.o: Blade.cpp Blade.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -600,7 +600,7 @@ Bomb.o: Bomb.cpp Bomb.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -696,7 +696,7 @@ BombMaterial.o: BombMaterial.cpp BombMaterial.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -792,7 +792,7 @@ Bracelet.o: Bracelet.cpp Bracelet.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -888,7 +888,7 @@ Coat.o: Coat.cpp Coat.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -984,7 +984,7 @@ Cross.o: Cross.cpp Cross.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -1080,7 +1080,7 @@ Mace.o: Mace.cpp Mace.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -1176,7 +1176,7 @@ ETC.o: ETC.cpp ETC.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -1271,7 +1271,7 @@ Glove.o: Glove.cpp Glove.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -1367,7 +1367,7 @@ Sword.o: Sword.cpp Sword.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -1463,7 +1463,7 @@ Helm.o: Helm.cpp Helm.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -1560,7 +1560,7 @@ HolyWater.o: HolyWater.cpp HolyWater.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -1655,7 +1655,7 @@ Key.o: Key.cpp Key.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -1751,7 +1751,7 @@ LearningItem.o: LearningItem.cpp LearningItem.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -1847,7 +1847,7 @@ Magazine.o: Magazine.cpp Magazine.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -1942,7 +1942,7 @@ Mine.o: Mine.cpp Mine.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -2037,7 +2037,7 @@ Money.o: Money.cpp Money.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -2133,7 +2133,7 @@ Motorcycle.o: Motorcycle.cpp Motorcycle.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -2229,7 +2229,7 @@ Necklace.o: Necklace.cpp Necklace.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -2326,7 +2326,7 @@ Potion.o: Potion.cpp Potion.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -2370,7 +2370,7 @@ Potion.o: Potion.cpp Potion.h ../Item.h ../Object.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
  ../../../Core/SubVampireSkillInfo.h ../skill/VampireSkillSlot.h \
  Belt.h Motorcycle.h ../Stash.h ../ItemUtil.h ../ZoneGroupManager.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../ZoneGroup.h ../../../Core/GameTime.h \
  ../../../Core/Gpackets/GMServerInfo.h ../../../Core/DatagramPacket.h \
@@ -2427,7 +2427,7 @@ Ring.o: Ring.cpp Ring.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -2524,7 +2524,7 @@ SG.o: SG.cpp SG.h ../ConcreteItem.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../ItemInfoManager.h \
  ../InfoClassManager.h ../../database/DB.h \
@@ -2621,7 +2621,7 @@ SMG.o: SMG.cpp SMG.h ../ConcreteItem.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../ItemInfoManager.h \
  ../InfoClassManager.h ../../database/DB.h \
@@ -2718,7 +2718,7 @@ Shield.o: Shield.cpp Shield.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -2814,7 +2814,7 @@ Shoes.o: Shoes.cpp Shoes.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -2911,7 +2911,7 @@ SR.o: SR.cpp SR.h ../ConcreteItem.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../ItemInfoManager.h \
  ../InfoClassManager.h ../../database/DB.h \
@@ -3008,7 +3008,7 @@ Trouser.o: Trouser.cpp Trouser.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -3105,7 +3105,7 @@ VampireBracelet.o: VampireBracelet.cpp VampireBracelet.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -3202,7 +3202,7 @@ VampireRing.o: VampireRing.cpp VampireRing.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -3299,7 +3299,7 @@ VampireNecklace.o: VampireNecklace.cpp VampireNecklace.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -3396,7 +3396,7 @@ VampireCoat.o: VampireCoat.cpp VampireCoat.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -3492,7 +3492,7 @@ Water.o: Water.cpp Water.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -3587,7 +3587,7 @@ Skull.o: Skull.cpp Skull.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -3686,7 +3686,7 @@ Serum.o: Serum.cpp Serum.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -3782,7 +3782,7 @@ VampireETC.o: VampireETC.cpp VampireETC.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -3878,7 +3878,7 @@ SlayerPortalItem.o: SlayerPortalItem.cpp SlayerPortalItem.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -3974,7 +3974,7 @@ VampirePortalItem.o: VampirePortalItem.cpp VampirePortalItem.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -4071,7 +4071,7 @@ EventGiftBox.o: EventGiftBox.cpp EventGiftBox.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -4171,7 +4171,7 @@ EventStar.o: EventStar.cpp EventStar.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -4271,7 +4271,7 @@ VampireEarring.o: VampireEarring.cpp VampireEarring.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -4367,7 +4367,7 @@ Relic.o: Relic.cpp Relic.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -4463,7 +4463,7 @@ VampireWeapon.o: VampireWeapon.cpp VampireWeapon.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -4560,7 +4560,7 @@ VampireAmulet.o: VampireAmulet.cpp VampireAmulet.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -4657,7 +4657,7 @@ QuestItem.o: QuestItem.cpp QuestItem.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -4756,7 +4756,7 @@ Gun.o: Gun.cpp Gun.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemUtil.h \
  ../../../Core/PCItemInfo.h ../../../Core/SubItemInfo.h
@@ -4813,7 +4813,7 @@ EventTree.o: EventTree.cpp EventTree.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -4913,7 +4913,7 @@ EventETC.o: EventETC.cpp EventETC.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -5014,7 +5014,7 @@ BloodBible.o: BloodBible.cpp /usr/include/stdio.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -5110,7 +5110,7 @@ CastleSymbol.o: CastleSymbol.cpp /usr/include/stdio.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -5205,7 +5205,7 @@ CoupleRing.o: CoupleRing.cpp CoupleRing.h CoupleRingBase.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -5302,7 +5302,7 @@ VampireCoupleRing.o: VampireCoupleRing.cpp VampireCoupleRing.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -5399,7 +5399,7 @@ CoupleRingBase.o: CoupleRingBase.cpp CoupleRingBase.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h CoupleRing.h ../ItemInfo.h \
  ../InfoClassManager.h ../ItemFactory.h ../ItemLoader.h ../../Mutex.h \
@@ -5459,7 +5459,7 @@ EventItem.o: EventItem.cpp EventItem.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -5559,7 +5559,7 @@ DyePotion.o: DyePotion.cpp DyePotion.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -5660,7 +5660,7 @@ ResurrectItem.o: ResurrectItem.cpp ResurrectItem.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -5760,7 +5760,7 @@ MixingItem.o: MixingItem.cpp MixingItem.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -5860,7 +5860,7 @@ OustersArmsband.o: OustersArmsband.cpp OustersArmsband.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -5961,7 +5961,7 @@ OustersBoots.o: OustersBoots.cpp OustersBoots.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -6062,7 +6062,7 @@ OustersChakram.o: OustersChakram.cpp OustersChakram.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -6163,7 +6163,7 @@ OustersCirclet.o: OustersCirclet.cpp OustersCirclet.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -6264,7 +6264,7 @@ OustersCoat.o: OustersCoat.cpp OustersCoat.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -6365,7 +6365,7 @@ OustersPendent.o: OustersPendent.cpp OustersPendent.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -6466,7 +6466,7 @@ OustersRing.o: OustersRing.cpp OustersRing.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -6567,7 +6567,7 @@ OustersStone.o: OustersStone.cpp OustersStone.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -6668,7 +6668,7 @@ OustersWristlet.o: OustersWristlet.cpp OustersWristlet.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -6768,7 +6768,7 @@ Larva.o: Larva.cpp Larva.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -6814,7 +6814,7 @@ Larva.o: Larva.cpp Larva.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/OustersSkillInfo.h ../../../Core/SubOustersSkillInfo.h \
  ../skill/OustersSkillSlot.h Belt.h ../ConcreteItem.h \
  ../ItemInfoManager.h ../ItemPolicies.h Motorcycle.h ../Stash.h \
- ../ItemUtil.h ../ZoneGroupManager.h /usr/include/STL/map \
+ ../ItemUtil.h ../ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../ZoneGroup.h \
  ../../../Core/GameTime.h ../../../Core/Gpackets/GMServerInfo.h \
@@ -6871,7 +6871,7 @@ Pupa.o: Pupa.cpp Pupa.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -6917,7 +6917,7 @@ Pupa.o: Pupa.cpp Pupa.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/OustersSkillInfo.h ../../../Core/SubOustersSkillInfo.h \
  ../skill/OustersSkillSlot.h Belt.h ../ConcreteItem.h \
  ../ItemInfoManager.h ../ItemPolicies.h OustersArmsband.h Motorcycle.h \
- ../Stash.h ../ItemUtil.h ../ZoneGroupManager.h /usr/include/STL/map \
+ ../Stash.h ../ItemUtil.h ../ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../ZoneGroup.h \
  ../../../Core/GameTime.h ../../../Core/Gpackets/GMServerInfo.h \
@@ -6975,7 +6975,7 @@ ComposMei.o: ComposMei.cpp ComposMei.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -7022,7 +7022,7 @@ ComposMei.o: ComposMei.cpp ComposMei.h ../Item.h ../Object.h \
  ../../../Core/PCOustersInfo2.h ../../../Core/PCOustersInfo3.h \
  ../../../Core/OustersSkillInfo.h ../../../Core/SubOustersSkillInfo.h \
  ../skill/OustersSkillSlot.h Belt.h OustersArmsband.h Motorcycle.h \
- ../Stash.h ../ItemUtil.h ../ZoneGroupManager.h /usr/include/STL/map \
+ ../Stash.h ../ItemUtil.h ../ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../ZoneGroup.h \
  ../../../Core/GameTime.h ../../../Core/Gpackets/GMServerInfo.h \
@@ -7080,7 +7080,7 @@ OustersSummonItem.o: OustersSummonItem.cpp OustersSummonItem.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -7180,7 +7180,7 @@ EffectItem.o: EffectItem.cpp EffectItem.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -7281,7 +7281,7 @@ CodeSheet.o: CodeSheet.cpp CodeSheet.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -7381,7 +7381,7 @@ MoonCard.o: MoonCard.cpp MoonCard.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -7481,7 +7481,7 @@ CommonItem.o: CommonItem.cpp CommonItem.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -7581,7 +7581,7 @@ Sweeper.o: Sweeper.cpp /usr/include/stdio.h /usr/include/features.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -7676,7 +7676,7 @@ PetItem.o: PetItem.cpp PetItem.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -7786,7 +7786,7 @@ PetFood.o: PetFood.cpp PetFood.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -7887,7 +7887,7 @@ PetEnchantItem.o: PetEnchantItem.cpp PetEnchantItem.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -7988,7 +7988,7 @@ LuckyBag.o: LuckyBag.cpp LuckyBag.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -8088,7 +8088,7 @@ SMSItem.o: SMSItem.cpp SMSItem.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -8189,7 +8189,7 @@ CoreZap.o: CoreZap.cpp CoreZap.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -8289,7 +8289,7 @@ TrapItem.o: TrapItem.cpp TrapItem.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -8389,7 +8389,7 @@ WarItem.o: WarItem.cpp /usr/include/stdio.h /usr/include/features.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -8455,7 +8455,7 @@ CarryingReceiver.o: CarryingReceiver.cpp CarryingReceiver.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -8552,7 +8552,7 @@ ShoulderArmor.o: ShoulderArmor.cpp ShoulderArmor.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -8649,7 +8649,7 @@ Dermis.o: Dermis.cpp Dermis.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -8746,7 +8746,7 @@ Persona.o: Persona.cpp Persona.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -8843,7 +8843,7 @@ Fascia.o: Fascia.cpp Fascia.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -8944,7 +8944,7 @@ Mitten.o: Mitten.cpp Mitten.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -9045,7 +9045,7 @@ SubInventory.o: SubInventory.cpp SubInventory.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -9146,7 +9146,7 @@ SubInventory.o: SubInventory.cpp SubInventory.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -9247,7 +9247,7 @@ SubInventory.o: SubInventory.cpp SubInventory.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -9348,7 +9348,7 @@ StoneAbility.o: StoneAbility.cpp StoneAbility.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -9449,7 +9449,7 @@ StoneAbility.o: StoneAbility.cpp StoneAbility.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -9550,7 +9550,7 @@ CoatZap.o: CoatZap.cpp CoatZap.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -9651,7 +9651,7 @@ BootZap.o: BootZap.cpp BootZap.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -9752,7 +9752,7 @@ WeaponZap.o: WeaponZap.cpp WeaponZap.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -9853,7 +9853,7 @@ HelmZap.o: HelmZap.cpp HelmZap.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -9954,7 +9954,7 @@ BeltZap.o: BeltZap.cpp BeltZap.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -10055,7 +10055,7 @@ GloveZap.o: GloveZap.cpp GloveZap.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
@@ -10156,7 +10156,7 @@ ShoesZap.o: ShoesZap.cpp ShoesZap.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \

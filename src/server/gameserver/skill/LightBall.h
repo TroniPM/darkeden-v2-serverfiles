@@ -16,8 +16,8 @@
 class LightBall : public SkillHandler 
 {
 public:
-	LightBall() throw() {}
-	~LightBall() throw() {}
+	LightBall()  {}
+	~LightBall()  {}
 	
 public:
     string getSkillHandlerName()  { return "LightBall"; }

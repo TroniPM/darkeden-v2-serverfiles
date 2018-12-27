@@ -100,7 +100,7 @@ class GCRequestPowerPointResultFactory : public PacketFactory
 {
 public :
 	// create packet
-	Packet* createPacket() throw() { return new GCRequestPowerPointResult(); }
+	Packet* createPacket()  { return new GCRequestPowerPointResult(); }
 
 	// get packet name
 	string getPacketName()  { return "GCRequestPowerPointResult"; }

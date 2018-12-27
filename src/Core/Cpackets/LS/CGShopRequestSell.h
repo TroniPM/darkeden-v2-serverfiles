@@ -47,10 +47,10 @@ public:
 	string toString() ;
 	
 public:
-	ObjectID_t getObjectID() throw() { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
-	ObjectID_t getItemObjectID() throw() { return m_ItemObjectID;}
+	ObjectID_t getItemObjectID()  { return m_ItemObjectID;}
 	void setItemObjectID(ObjectID_t oid) { m_ItemObjectID = oid;}
 
 	BYTE getOpCode(void) const { return m_OpCode; }
@@ -73,7 +73,7 @@ private:
 class CGShopRequestSellFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGShopRequestSell(); }
+	Packet* createPacket()  { return new CGShopRequestSell(); }
 	string getPacketName()  { return "CGShopRequestSell"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_SHOP_REQUEST_SELL; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID+szObjectID+szBYTE; }

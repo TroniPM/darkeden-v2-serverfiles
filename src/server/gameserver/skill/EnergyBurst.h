@@ -16,8 +16,8 @@
 class EnergyBurst : public SkillHandler 
 {
 public:
-	EnergyBurst() throw() {}
-	~EnergyBurst() throw() {}
+	EnergyBurst()  {}
+	~EnergyBurst()  {}
 	
 public:
 	string getSkillHandlerName()  { return "EnergyBurst"; }

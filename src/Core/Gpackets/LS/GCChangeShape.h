@@ -65,26 +65,26 @@ public :
 
 	// get Object ID 
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t objectID) throw() { m_ObjectID = objectID; }
+	void setObjectID(ObjectID_t objectID)  { m_ObjectID = objectID; }
 
 	// get/set ItemClass
 	BYTE getItemClass()  { return m_ItemClass; }
-	void setItemClass(BYTE ItemClass) throw() { m_ItemClass = ItemClass; }
+	void setItemClass(BYTE ItemClass)  { m_ItemClass = ItemClass; }
 
 	// get / set ItemType
 	ItemType_t getItemType()  { return m_ItemType; }
-	void setItemType(ItemType_t ItemType) throw() { m_ItemType = ItemType ; }
+	void setItemType(ItemType_t ItemType)  { m_ItemType = ItemType ; }
 
 	// get / set OptionType
-	void setOptionType(OptionType_t optionType) throw() { m_OptionType = optionType; }
+	void setOptionType(OptionType_t optionType)  { m_OptionType = optionType; }
 	OptionType_t getOptionType()  { return m_OptionType; }
 
 	// get / set AttackSpeed
 	Speed_t getAttackSpeed()  { return m_AttackSpeed; }
-	void setAttackSpeed(Speed_t AttackSpeed) throw() { m_AttackSpeed = AttackSpeed; }
+	void setAttackSpeed(Speed_t AttackSpeed)  { m_AttackSpeed = AttackSpeed; }
 
 	BYTE getFlag()  { return m_Flag; }
-	void setFlag( BYTE flag ) throw() { m_Flag = flag; }
+	void setFlag( BYTE flag )  { m_Flag = flag; }
 
 private :
 
@@ -120,16 +120,16 @@ class GCChangeShapeFactory : public PacketFactory {
 public :
 	
 	// constructor
-	GCChangeShapeFactory() throw() {}
+	GCChangeShapeFactory()  {}
 	
 	// destructor
-	virtual ~GCChangeShapeFactory() throw() {}
+	virtual ~GCChangeShapeFactory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCChangeShape(); }
+	Packet* createPacket()  { return new GCChangeShape(); }
 
 	// get packet name
 	string getPacketName()  { return "GCChangeShape"; }

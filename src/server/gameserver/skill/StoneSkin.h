@@ -16,8 +16,8 @@
 class StoneSkin : public SkillHandler 
 {
 public:
-	StoneSkin() throw() {}
-	~StoneSkin() throw() {}
+	StoneSkin()  {}
+	~StoneSkin()  {}
 	
 public:
     string getSkillHandlerName()  { return "StoneSkin"; }

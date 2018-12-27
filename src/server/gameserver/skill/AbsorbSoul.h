@@ -16,8 +16,8 @@
 class AbsorbSoul : public SkillHandler 
 {
 public:
-	AbsorbSoul() throw() {}
-	~AbsorbSoul() throw() {}
+	AbsorbSoul()  {}
+	~AbsorbSoul()  {}
 	
 public:
     string getSkillHandlerName()  { return "AbsorbSoul"; }

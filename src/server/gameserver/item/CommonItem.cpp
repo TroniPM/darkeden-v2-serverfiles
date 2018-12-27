@@ -26,13 +26,13 @@ Mutex    CommonItem::m_Mutex;
 //////////////////////////////////////////////////////////////////////////////
 
 CommonItem::CommonItem()
-	throw()
+	
 {
 	m_ItemType = 0;
 }
 
 CommonItem::CommonItem(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num)
-	throw()
+	
 {
 	m_ItemType = itemType;
 	m_Num      = Num;
@@ -150,7 +150,7 @@ void CommonItem::save(const string & ownerID, Storage storage, StorageID_t stora
 }
 
 string CommonItem::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -198,7 +198,7 @@ Weight_t CommonItem::getWeight() const
 //////////////////////////////////////////////////////////////////////////////
 
 string CommonItemInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "CommonItemInfo("

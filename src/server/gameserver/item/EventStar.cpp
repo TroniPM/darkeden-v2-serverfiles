@@ -26,7 +26,7 @@ Mutex    EventStar::m_Mutex;
 //////////////////////////////////////////////////////////////////////////////
 
 EventStar::EventStar()
-	throw()
+	
 {
 	m_ItemType = 0;
 	setEnchantLevel(0);
@@ -35,7 +35,7 @@ EventStar::EventStar()
 }
 
 EventStar::EventStar(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num)
-	throw()
+	
 {
 	m_ItemType = itemType;
 	m_Num      = Num;
@@ -153,7 +153,7 @@ void EventStar::save(const string & ownerID, Storage storage, StorageID_t storag
 }
 
 string EventStar::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -220,7 +220,7 @@ void EventStar::makePCItemInfo(PCItemInfo& result) const
 //////////////////////////////////////////////////////////////////////////////
 
 string EventStarInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "EventStarInfo("

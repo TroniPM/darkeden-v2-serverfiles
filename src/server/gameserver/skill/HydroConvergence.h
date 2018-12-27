@@ -16,8 +16,8 @@
 class HydroConvergence: public SkillHandler 
 {
 public:
-	HydroConvergence() throw() {}
-	~HydroConvergence() throw() {}
+	HydroConvergence()  {}
+	~HydroConvergence()  {}
 	
 public:
     string getSkillHandlerName()  { return "HydroConvergence"; }

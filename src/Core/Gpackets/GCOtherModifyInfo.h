@@ -27,7 +27,7 @@ public:
 
 public:
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 private:
 	ObjectID_t m_ObjectID;
@@ -41,7 +41,7 @@ private:
 class GCOtherModifyInfoFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCOtherModifyInfo(); }
+	Packet* createPacket()  { return new GCOtherModifyInfo(); }
 	string getPacketName()  { return "GCOtherModifyInfo"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_OTHER_MODIFY_INFO; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + ModifyInfo::getPacketMaxSize(); }

@@ -745,7 +745,7 @@ GCAddGearToInventory.o: GCAddGearToInventory.cpp \
  /usr/include/bits/confname.h /usr/include/getopt.h \
  /home/darkeden/vs/src/Core/EffectInfo.h \
  /home/darkeden/vs/src/server/gameserver/VisionInfo.h \
- /usr/include/STL/bitset \
+ /usr/include/c++/7/bitset \
  /home/darkeden/vs/src/server/gameserver/ObjectRegistry.h \
  /home/darkeden/vs/src/server/Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
@@ -2017,7 +2017,7 @@ GCAddSlayer.o: GCAddSlayer.cpp GCAddSlayer.h \
  /home/darkeden/vs/src/Core/PacketFactory.h \
  /home/darkeden/vs/src/Core/PCSlayerInfo3.h \
  /home/darkeden/vs/src/Core/PCInfo.h \
- /home/darkeden/vs/src/Core/Assert.h /usr/include/STL/bitset \
+ /home/darkeden/vs/src/Core/Assert.h /usr/include/c++/7/bitset \
  /home/darkeden/vs/src/Core/EffectInfo.h
 GCAddSlayerHandler.o: GCAddSlayerHandler.cpp GCAddSlayer.h \
  /home/darkeden/vs/src/Core/Packet.h \
@@ -2081,7 +2081,7 @@ GCAddSlayerHandler.o: GCAddSlayerHandler.cpp GCAddSlayer.h \
  /home/darkeden/vs/src/Core/PacketFactory.h \
  /home/darkeden/vs/src/Core/PCSlayerInfo3.h \
  /home/darkeden/vs/src/Core/PCInfo.h \
- /home/darkeden/vs/src/Core/Assert.h /usr/include/STL/bitset \
+ /home/darkeden/vs/src/Core/Assert.h /usr/include/c++/7/bitset \
  /home/darkeden/vs/src/Core/EffectInfo.h
 GCAddSlayerCorpse.o: GCAddSlayerCorpse.cpp GCAddSlayerCorpse.h \
  /home/darkeden/vs/src/Core/Packet.h \
@@ -2145,7 +2145,7 @@ GCAddSlayerCorpse.o: GCAddSlayerCorpse.cpp GCAddSlayerCorpse.h \
  /home/darkeden/vs/src/Core/PacketFactory.h \
  /home/darkeden/vs/src/Core/PCSlayerInfo3.h \
  /home/darkeden/vs/src/Core/PCInfo.h \
- /home/darkeden/vs/src/Core/Assert.h /usr/include/STL/bitset
+ /home/darkeden/vs/src/Core/Assert.h /usr/include/c++/7/bitset
 GCAddSlayerCorpseHandler.o: GCAddSlayerCorpseHandler.cpp \
  GCAddSlayerCorpse.h /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
@@ -2208,7 +2208,7 @@ GCAddSlayerCorpseHandler.o: GCAddSlayerCorpseHandler.cpp \
  /home/darkeden/vs/src/Core/PacketFactory.h \
  /home/darkeden/vs/src/Core/PCSlayerInfo3.h \
  /home/darkeden/vs/src/Core/PCInfo.h \
- /home/darkeden/vs/src/Core/Assert.h /usr/include/STL/bitset
+ /home/darkeden/vs/src/Core/Assert.h /usr/include/c++/7/bitset
 GCAddVampire.o: GCAddVampire.cpp GCAddVampire.h \
  /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
@@ -9914,7 +9914,7 @@ GCMorphVampire2.o: GCMorphVampire2.cpp GCMorphVampire2.h \
  /home/darkeden/vs/src/Core/PacketFactory.h \
  /home/darkeden/vs/src/Core/PCSlayerInfo3.h \
  /home/darkeden/vs/src/Core/PCInfo.h \
- /home/darkeden/vs/src/Core/Assert.h /usr/include/STL/bitset \
+ /home/darkeden/vs/src/Core/Assert.h /usr/include/c++/7/bitset \
  /home/darkeden/vs/src/Core/PCVampireInfo3.h
 GCMorphVampire2Handler.o: GCMorphVampire2Handler.cpp GCMorphVampire2.h \
  /home/darkeden/vs/src/Core/Packet.h \
@@ -9978,7 +9978,7 @@ GCMorphVampire2Handler.o: GCMorphVampire2Handler.cpp GCMorphVampire2.h \
  /home/darkeden/vs/src/Core/PacketFactory.h \
  /home/darkeden/vs/src/Core/PCSlayerInfo3.h \
  /home/darkeden/vs/src/Core/PCInfo.h \
- /home/darkeden/vs/src/Core/Assert.h /usr/include/STL/bitset \
+ /home/darkeden/vs/src/Core/Assert.h /usr/include/c++/7/bitset \
  /home/darkeden/vs/src/Core/PCVampireInfo3.h
 GCMorphSlayer2.o: GCMorphSlayer2.cpp GCMorphSlayer2.h \
  /home/darkeden/vs/src/Core/Packet.h \
@@ -10042,7 +10042,7 @@ GCMorphSlayer2.o: GCMorphSlayer2.cpp GCMorphSlayer2.h \
  /home/darkeden/vs/src/Core/PacketFactory.h \
  /home/darkeden/vs/src/Core/PCSlayerInfo3.h \
  /home/darkeden/vs/src/Core/PCInfo.h \
- /home/darkeden/vs/src/Core/Assert.h /usr/include/STL/bitset \
+ /home/darkeden/vs/src/Core/Assert.h /usr/include/c++/7/bitset \
  /home/darkeden/vs/src/Core/PCVampireInfo3.h
 GCMorphSlayer2Handler.o: GCMorphSlayer2Handler.cpp GCMorphSlayer2.h \
  /home/darkeden/vs/src/Core/Packet.h \
@@ -10106,7 +10106,7 @@ GCMorphSlayer2Handler.o: GCMorphSlayer2Handler.cpp GCMorphSlayer2.h \
  /home/darkeden/vs/src/Core/PacketFactory.h \
  /home/darkeden/vs/src/Core/PCSlayerInfo3.h \
  /home/darkeden/vs/src/Core/PCInfo.h \
- /home/darkeden/vs/src/Core/Assert.h /usr/include/STL/bitset \
+ /home/darkeden/vs/src/Core/Assert.h /usr/include/c++/7/bitset \
  /home/darkeden/vs/src/Core/PCVampireInfo3.h
 GCMove.o: GCMove.cpp GCMove.h /home/darkeden/vs/src/Core/Packet.h \
  /home/darkeden/vs/src/Core/Types.h \
@@ -16245,7 +16245,7 @@ GLIncomingConnectionHandler.o: GLIncomingConnectionHandler.cpp \
  /home/darkeden/vs/src/Core/SocketOutputStream.h \
  /home/darkeden/vs/src/Core/Datagram.h \
  /home/darkeden/vs/src/Core/PacketFactory.h \
- /home/darkeden/vs/src/Core/Properties.h /usr/include/STL/map \
+ /home/darkeden/vs/src/Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h
 GLIncomingConnectionError.o: GLIncomingConnectionError.cpp \
@@ -16927,7 +16927,7 @@ GCShopList.o: GCShopList.cpp GCShopList.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
  /home/darkeden/vs/src/server/gameserver/EffectManager.h \
- /home/darkeden/vs/src/Core/EffectInfo.h /usr/include/STL/bitset \
+ /home/darkeden/vs/src/Core/EffectInfo.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h
 GCShopListHandler.o: GCShopListHandler.cpp GCShopList.h \
@@ -17058,7 +17058,7 @@ GCShopListMysterious.o: GCShopListMysterious.cpp \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
  /home/darkeden/vs/src/server/gameserver/EffectManager.h \
- /home/darkeden/vs/src/Core/EffectInfo.h /usr/include/STL/bitset \
+ /home/darkeden/vs/src/Core/EffectInfo.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h
 GCShopListMysteriousHandler.o: GCShopListMysteriousHandler.cpp \
@@ -22418,7 +22418,7 @@ GMServerInfoHandler.o: GMServerInfoHandler.cpp GMServerInfo.h \
  /home/darkeden/vs/src/Core/SocketOutputStream.h \
  /home/darkeden/vs/src/Core/Datagram.h \
  /home/darkeden/vs/src/Core/PacketFactory.h \
- /home/darkeden/vs/src/Core/Properties.h /usr/include/STL/map \
+ /home/darkeden/vs/src/Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h
 GCOtherModifyInfo.o: GCOtherModifyInfo.cpp GCOtherModifyInfo.h \

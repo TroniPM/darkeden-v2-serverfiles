@@ -17,7 +17,7 @@ class GoreGlandFire : public SkillHandler
 {
 public:
 	GoreGlandFire() ;
-	~GoreGlandFire() throw() {}
+	~GoreGlandFire()  {}
 	
 public:
     string getSkillHandlerName()  { return "GoreGlandFire"; }

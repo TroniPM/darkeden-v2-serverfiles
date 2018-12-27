@@ -17,7 +17,7 @@ class ViolentPhantom : public SkillHandler
 {
 public:
 	ViolentPhantom() ;
-	~ViolentPhantom() throw() {}
+	~ViolentPhantom()  {}
 	
 public:
     string getSkillHandlerName()  { return "ViolentPhantom"; }

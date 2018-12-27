@@ -24,7 +24,7 @@ Mutex    Glove::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Glove::Glove()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
@@ -33,7 +33,7 @@ Glove::Glove()
 }
 
 Glove::Glove(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_ItemType(itemType), m_OptionType(optionType), m_Durability(0)
 {
 	setItemType(itemType);
@@ -176,7 +176,7 @@ void Glove::save(const string & ownerID, Storage storage, StorageID_t storageID,
 // get debug string
 //--------------------------------------------------------------------------------
 string Glove::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -261,7 +261,7 @@ Protection_t Glove::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string GloveInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

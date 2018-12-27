@@ -165,7 +165,7 @@ void ActionEnterSiege::execute (Creature * pNPC , Creature * pCreature)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionEnterSiege::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

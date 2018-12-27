@@ -35,7 +35,7 @@ SimpleQuest::~SimpleQuest()
 // setDeadline
 //--------------------------------------------------------------------------------
 void SimpleQuest::setDeadline (Turn_t delay) 
-	throw ()
+	
 {
     __BEGIN_TRY
 
@@ -53,7 +53,7 @@ void SimpleQuest::setDeadline (Turn_t delay)
 // 남은 duration(1/10초 단위)
 Duration_t 
 SimpleQuest::getRemainDuration() const
-	throw()
+	
 {
 	__BEGIN_TRY
 

@@ -2,7 +2,7 @@
 //
 // Filename    : Properties.h
 // Written By  : reiot@ewestsoft.com
-// Description : 
+// Description :
 //
 //////////////////////////////////////////////////////////////////////
 
@@ -15,12 +15,13 @@
 #include <map>
 
 // help class
-class StringCompare {
+class StringCompare
+{
 public :
-	bool operator () (const string & left, const string & right) const
-	{
-		return left.compare(right) < 0;
-	}
+    bool operator () (const string &left, const string &right) const
+    {
+        return left.compare(right) < 0;
+    }
 };
 
 //////////////////////////////////////////////////////////////////////
@@ -29,7 +30,7 @@ public :
 //
 // 파일로부터 (key,value) pair 를 읽어서 map 의 형태로 가지고 있는다.
 // 주로 환경이나 옵션등을 담은 파일에 사용한다. 객체를 생성해서 각종
-// 옵션을 설정하고 저장하면 새 파일이 만들어진다. 
+// 옵션을 설정하고 저장하면 새 파일이 만들어진다.
 //
 // *Usage*
 //
@@ -46,58 +47,70 @@ public :
 //
 //////////////////////////////////////////////////////////////////////
 
-class Properties {
-	
-public :
-	
-	static const char Comment;
-	static const char Separator;
-	static const char* WhiteSpaces;
-	
-public :
-	
-	// constructor
-	Properties ();
-	Properties (const string & filename);
-	
-	// destructor
-	~Properties ();
-	
+class Properties
+{
 
 public :
-	
-	// load from file
-	void load () ;
-	void load (const string & filename) throw (IOException, Error) { m_Filename = filename; load(); }
 
-	// save to file
-	void save () throw (IOException);
-	void save (const string & filename) throw (IOException) { m_Filename = filename; save(); }
+    static const char Comment;
+    static const char Separator;
+    static const char *WhiteSpaces;
 
-	// get/set property
-	string getProperty (string key) ;
-	int getPropertyInt (string key) ;
-	void setProperty (string key, string value);
+public :
 
-	bool hasKey(const string& key) const { return m_Properties.find(key) != m_Properties.end(); }
+    // constructor
+    Properties ();
+    Properties (const string &filename);
 
-	// get debug string
-	string toString () ;
-	
+    // destructor
+    ~Properties ();
+
+
+public :
+
+    // load from file
+    void load () ;
+    void load (const string &filename)
+    {
+        m_Filename = filename;
+        load();
+    }
+
+    // save to file
+    void save () ;
+    void save (const string &filename)
+    {
+        m_Filename = filename;
+        save();
+    }
+
+    // get/set property
+    string getProperty (string key) ;
+    int getPropertyInt (string key) ;
+    void setProperty (string key, string value);
+
+    bool hasKey(const string &key) const
+    {
+        return m_Properties.find(key) != m_Properties.end();
+    }
+
+    // get debug string
+    string toString () ;
+
 private :
-	
-	// key 가 string 이고, value 역시 string 인 map 이다.
-	map< string, string, StringCompare > m_Properties;
 
-	// load/save target file's name
-	string m_Filename;
-	
+    // key 가 string 이고, value 역시 string 인 map 이다.
+    map< string, string, StringCompare > m_Properties;
+
+    // load/save target file's name
+    string m_Filename;
+
 };
 
 //////////////////////////////////////////////////
 // global variable declaration
 //////////////////////////////////////////////////
-extern Properties* g_pConfig;
-extern Properties* g_pTestConfig;	// by sigi. 2002.12.26
+extern Properties *g_pConfig;
+extern Properties *g_pTestConfig;	// by sigi. 2002.12.26
 
 #endif

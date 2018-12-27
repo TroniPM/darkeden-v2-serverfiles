@@ -16,8 +16,8 @@
 class MultiThrowingAxe : public SkillHandler 
 {
 public:
-	MultiThrowingAxe() throw() {}
-	~MultiThrowingAxe() throw() {}
+	MultiThrowingAxe()  {}
+	~MultiThrowingAxe()  {}
 	
 public:
     string getSkillHandlerName()  { return "MultiThrowingAxe"; }

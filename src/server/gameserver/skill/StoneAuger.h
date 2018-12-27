@@ -16,8 +16,8 @@
 class StoneAuger : public SkillHandler 
 {
 public:
-	StoneAuger() throw() {}
-	~StoneAuger() throw() {}
+	StoneAuger()  {}
+	~StoneAuger()  {}
 	
 public:
     string getSkillHandlerName()  { return "StoneAuger"; }

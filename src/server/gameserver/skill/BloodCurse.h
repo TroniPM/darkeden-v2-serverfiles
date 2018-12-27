@@ -16,8 +16,8 @@
 class BloodCurse : public SkillHandler 
 {
 public:
-	BloodCurse() throw() {}
-	~BloodCurse() throw() {}
+	BloodCurse()  {}
+	~BloodCurse()  {}
 	
 public:
     string getSkillHandlerName()  { return "BloodCurse"; }

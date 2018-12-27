@@ -27,7 +27,7 @@ public:
 
 public:
 	int  getGameType()  { return m_GameType; }
-	void setGameType(int gameType) throw() { m_GameType = gameType; }
+	void setGameType(int gameType)  { m_GameType = gameType; }
 
 private:
 	int m_GameType;   // 말할 대사 아이디

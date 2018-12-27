@@ -52,7 +52,7 @@ void MPlayerManager::stop()
 
 // main method
 void MPlayerManager::run()
-	throw()
+	
 {
 	__BEGIN_TRY
 

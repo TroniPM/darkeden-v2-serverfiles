@@ -54,15 +54,15 @@ public:
 
 	// get/set player id
 	string getPlayerID()  { return m_PlayerID; }
-	void setPlayerID(string playerID) throw() { m_PlayerID = playerID; }
+	void setPlayerID(string playerID)  { m_PlayerID = playerID; }
 
 	// get/set tcp port
 	uint getTCPPort()  { return m_TCPPort; }
-	void setTCPPort(uint tcpPort) throw() { m_TCPPort = tcpPort; }
+	void setTCPPort(uint tcpPort)  { m_TCPPort = tcpPort; }
 
 	// get/set auth key
 	DWORD getKey()  { return m_Key; }
-	void setKey(DWORD key) throw() { m_Key = key; }
+	void setKey(DWORD key)  { m_Key = key; }
 
 private :
 
@@ -92,7 +92,7 @@ class LGIncomingConnectionOKFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new LGIncomingConnectionOK(); }
+	Packet* createPacket()  { return new LGIncomingConnectionOK(); }
 
 	// get packet name
 	string getPacketName()  { return "LGIncomingConnectionOK"; }

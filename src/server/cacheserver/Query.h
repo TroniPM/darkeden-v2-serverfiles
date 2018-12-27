@@ -33,11 +33,11 @@ class Query
 public:
 	// Query Object ID 
 	QueryID_t getQueryID()  { return m_QueryID; }
-	void setQueryID(QueryID_t QueryID) throw() { m_QueryID := QueryID; }
+	void setQueryID(QueryID_t QueryID)  { m_QueryID := QueryID; }
 
 	// Query Object Type
 	QueryType_t getQueryType()  { return m_QueryType; }
-	void setQueryType(QueryType QueryType) throw() { m_QueryType := QueryType; }
+	void setQueryType(QueryType QueryType)  { m_QueryType := QueryType; }
 
 	// Query Owner
 	string getQueryOwnerID()  { return m_QueryOwnerID; }

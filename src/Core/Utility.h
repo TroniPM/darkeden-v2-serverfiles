@@ -160,7 +160,7 @@ string getCurrentTimeStringEx(void) ;
 //////////////////////////////////////////////////////////////////////////////
 // 워드 상위바이트와 하위 바이트로 분리시키기
 //////////////////////////////////////////////////////////////////////////////
-inline void splitWord(WORD value, int& high, int& low) throw()
+inline void splitWord(WORD value, int& high, int& low) 
 {
 	 high = value >> 8;
      low  = value & 0xFF;
@@ -170,7 +170,7 @@ inline void splitWord(WORD value, int& high, int& low) throw()
 //////////////////////////////////////////////////////////////////////////////
 // 0으로 초기화시키기
 //////////////////////////////////////////////////////////////////////////////
-inline void zerofill(void* pointer, size_t size) throw()
+inline void zerofill(void* pointer, size_t size) 
 {
 	memset(pointer, 0, size);
 }
@@ -179,7 +179,7 @@ inline void zerofill(void* pointer, size_t size) throw()
 //////////////////////////////////////////////////////////////////////////////
 // range 내에 있는지 검사하기
 //////////////////////////////////////////////////////////////////////////////
-inline bool isInRange(int value, int min, int max) throw()
+inline bool isInRange(int value, int min, int max) 
 {
   	if(min <= value && value <= max) return true;
 		return false;

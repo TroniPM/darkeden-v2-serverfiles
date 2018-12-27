@@ -30,7 +30,7 @@ public:
 
 	PacketSize_t getSize ();
 
-	static uint getMaxSize() throw() 
+	static uint getMaxSize()  
 	{
 		return szBYTE + (InventorySlotInfo::getMaxSize()* 60);
 	}
@@ -39,13 +39,13 @@ public:
 
 public:
 	BYTE getListNum()  { return m_ListNum; }
-	void setListNum(BYTE ListNum) throw() { m_ListNum = ListNum; }
+	void setListNum(BYTE ListNum)  { m_ListNum = ListNum; }
 
-	void addListElement(InventorySlotInfo* pInventorySlotInfo) throw() { m_InventorySlotInfoList.push_back(pInventorySlotInfo); }
+	void addListElement(InventorySlotInfo* pInventorySlotInfo)  { m_InventorySlotInfoList.push_back(pInventorySlotInfo); }
 
-	void clearList() throw() { m_InventorySlotInfoList.clear(); m_ListNum = 0; }
+	void clearList()  { m_InventorySlotInfoList.clear(); m_ListNum = 0; }
 
-	InventorySlotInfo* popFrontListElement() throw() 
+	InventorySlotInfo* popFrontListElement()  
 	{ 
 		InventorySlotInfo* TempInventorySlotInfo = m_InventorySlotInfoList.front(); m_InventorySlotInfoList.pop_front(); return TempInventorySlotInfo; 
 	}

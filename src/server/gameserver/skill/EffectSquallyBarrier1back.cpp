@@ -79,7 +79,7 @@ void EffectSquallyBarrier1back::unaffect()
 }
 
 void EffectSquallyBarrier1back::setLevel(Level_t Level) 
-	throw()
+	
 {
 	m_Level 			= Level;
 

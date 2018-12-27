@@ -24,14 +24,14 @@ Mutex    Persona::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Persona::Persona()
-	throw()
+	
 {
 	setItemType(0);
 	setDurability(0);
 }
 
 Persona::Persona(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	setItemType(itemType);
 	setOptionType(optionType);
@@ -154,7 +154,7 @@ void Persona::save(const string & ownerID, Storage storage, StorageID_t storageI
 // get debug string
 //--------------------------------------------------------------------------------
 string Persona::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -173,7 +173,7 @@ string Persona::toString() const
 // get debug string
 //--------------------------------------------------------------------------------
 string PersonaInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

@@ -56,11 +56,11 @@ public:
 	
 	// get/set skill type
 	DWORD getRankBonusType()  { return m_RankBonusType; }
-	void setRankBonusType(DWORD rankBonusType) throw() { m_RankBonusType = rankBonusType; }
+	void setRankBonusType(DWORD rankBonusType)  { m_RankBonusType = rankBonusType; }
 
 	// get/set description
 	BYTE getDesc(void)  { return m_Desc;}
-	void setDesc(BYTE desc) throw() { m_Desc = desc;}
+	void setDesc(BYTE desc)  { m_Desc = desc;}
 
 private:
 
@@ -83,16 +83,16 @@ class  GCSelectRankBonusFailedFactory : public PacketFactory {
 public :
 	
 	// constructor
-	 GCSelectRankBonusFailedFactory() throw() {}
+	 GCSelectRankBonusFailedFactory()  {}
 	
 	// destructor
-	virtual ~GCSelectRankBonusFailedFactory() throw() {}
+	virtual ~GCSelectRankBonusFailedFactory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCSelectRankBonusFailed(); }
+	Packet* createPacket()  { return new GCSelectRankBonusFailed(); }
 
 	// get packet name
 	string getPacketName()  { return "GCSelectRankBonusFailed"; }

@@ -23,7 +23,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////////////
 ZoneGroup::ZoneGroup (ZoneGroupID_t zoneGroupID) 
-	throw ()
+	
 : m_ZoneGroupID(zoneGroupID), m_pZonePlayerManager(NULL)
 {
 	__BEGIN_TRY
@@ -42,7 +42,7 @@ ZoneGroup::ZoneGroup (ZoneGroupID_t zoneGroupID)
 // destructor
 //////////////////////////////////////////////////////////////////////////////
 ZoneGroup::~ZoneGroup () 
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -262,7 +262,7 @@ void ZoneGroup::addZone (Zone* pZone)
 // Delete zone from zone group
 //////////////////////////////////////////////////////////////////////////////
 void ZoneGroup::deleteZone (ZoneID_t zoneID) 
-	throw (NoSuchElementException)
+	
 {
 	__BEGIN_TRY
 		
@@ -292,7 +292,7 @@ void ZoneGroup::deleteZone (ZoneID_t zoneID)
 // delete하지 않고 node만 지워준다.
 //////////////////////////////////////////////////////////////////////////////
 Zone* ZoneGroup::removeZone (ZoneID_t zoneID) 
-	throw (NoSuchElementException)
+	
 {
 	__BEGIN_TRY
 		
@@ -326,7 +326,7 @@ Zone* ZoneGroup::removeZone (ZoneID_t zoneID)
 // get zone from zone group
 //////////////////////////////////////////////////////////////////////////////
 Zone* ZoneGroup::getZone (ZoneID_t zoneID) const
-	throw (NoSuchElementException)
+	
 {
 	__BEGIN_TRY
 		
@@ -422,7 +422,7 @@ ZoneGroup::getLoadValue() const
 // get debug string
 //////////////////////////////////////////////////////////////////////////////
 string ZoneGroup::toString () const
-	throw ()
+	
 {
 	StringStream msg;
 	msg << "ZoneGroup("

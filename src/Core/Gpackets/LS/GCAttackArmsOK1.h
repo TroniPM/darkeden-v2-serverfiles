@@ -64,11 +64,11 @@ public :
 	void setSkillType( SkillType_t skillType ) { m_SkillType = skillType; }
 	// get / set Success
 	bool getSkillSuccess()  { return m_bSuccess; }
-	void setSkillSuccess(bool Success) throw() { m_bSuccess = Success; }
+	void setSkillSuccess(bool Success)  { m_bSuccess = Success; }
 	
 	// get / set ObjectID
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 	// get / set Bullet Num
 	Bullet_t getBullet()  { return m_BulletNum; }
@@ -102,16 +102,16 @@ class GCAttackArmsOK1Factory : public PacketFactory {
 public :
 	
 	// constructor
-	GCAttackArmsOK1Factory() throw() {}
+	GCAttackArmsOK1Factory()  {}
 	
 	// destructor
-	virtual ~GCAttackArmsOK1Factory() throw() {}
+	virtual ~GCAttackArmsOK1Factory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCAttackArmsOK1(); }
+	Packet* createPacket()  { return new GCAttackArmsOK1(); }
 
 	// get packet name
 	string getPacketName()  { return "GCAttackArmsOK1"; }

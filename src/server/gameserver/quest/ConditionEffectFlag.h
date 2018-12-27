@@ -28,7 +28,7 @@ public:
 
 public:
 	Effect::EffectClass getIndex(void)  { return m_Index; }
-	void setIndex(Effect::EffectClass index) throw() { m_Index = index; }
+	void setIndex(Effect::EffectClass index)  { m_Index = index; }
 
 private:
 	Effect::EffectClass m_Index; // 플래그의 값

@@ -46,7 +46,7 @@ UDPManager::~UDPManager ()
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 void UDPManager::sendDatagram (Datagram* pDatagram)
-	throw (ProtocolException , Error)
+	
 {
 	__BEGIN_TRY
 
@@ -59,7 +59,7 @@ void UDPManager::sendDatagram (Datagram* pDatagram)
 // send datagram packet to login server
 //////////////////////////////////////////////////////////////////////
 void UDPManager::sendPacket (const string& host , uint port , DatagramPacket* pPacket)
-	throw (ProtocolException , Error)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG

@@ -29,10 +29,10 @@ public:
 	
 public:
 	ObjectID_t getTargetObjectID()  { return m_TargetObjectID; }
-	void setTargetObjectID(ObjectID_t id) throw() { m_TargetObjectID = id; }
+	void setTargetObjectID(ObjectID_t id)  { m_TargetObjectID = id; }
 
 	ObjectID_t getItemObjectID()  { return m_ItemObjectID; }
-	void setItemObjectID(ObjectID_t id) throw() { m_ItemObjectID = id; }
+	void setItemObjectID(ObjectID_t id)  { m_ItemObjectID = id; }
 
 private:
 	ObjectID_t m_TargetObjectID; // 교환을 원하는 상대방의 ObjectID
@@ -50,7 +50,7 @@ private:
 class CGTradeRemoveItemFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGTradeRemoveItem(); }
+	Packet* createPacket()  { return new CGTradeRemoveItem(); }
 	string getPacketName()  { return "CGTradeRemoveItem"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_TRADE_REMOVE_ITEM; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID*2; }

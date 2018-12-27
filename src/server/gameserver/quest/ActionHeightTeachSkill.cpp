@@ -79,7 +79,7 @@ void ActionHeightTeachSkill::execute (Creature * pCreature1 , Creature * pCreatu
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionHeightTeachSkill::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

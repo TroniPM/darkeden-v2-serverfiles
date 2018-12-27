@@ -16,8 +16,8 @@
 class DenialMagic : public SkillHandler 
 {
 public:
-	DenialMagic() throw() {}
-	~DenialMagic() throw() {}
+	DenialMagic()  {}
+	~DenialMagic()  {}
 	
 public:
     string getSkillHandlerName()  { return "DenialMagic"; }

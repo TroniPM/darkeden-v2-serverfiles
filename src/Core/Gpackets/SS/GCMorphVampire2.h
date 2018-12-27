@@ -27,8 +27,8 @@ class GCMorphVampire2 : public Packet {
 public :
 
 	// constructor
-	GCMorphVampire2() throw() {}
-	GCMorphVampire2(PCVampireInfo3 info) throw() : m_VampireInfo3(info) {}
+	GCMorphVampire2()  {}
+	GCMorphVampire2(PCVampireInfo3 info)  : m_VampireInfo3(info) {}
 	
 public :
 
@@ -57,8 +57,8 @@ public :
 public :
 
 	// get/set vampire info
-	const PCVampireInfo3& getSlayerInfo() throw() { return m_VampireInfo3; }
-	void setVampireInfo(PCVampireInfo3 info) throw() { m_VampireInfo3 = info; }
+	const PCVampireInfo3& getSlayerInfo()  { return m_VampireInfo3; }
+	void setVampireInfo(PCVampireInfo3 info)  { m_VampireInfo3 = info; }
 
 
 private :
@@ -82,7 +82,7 @@ class GCMorphVampire2Factory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCMorphVampire2(); }
+	Packet* createPacket()  { return new GCMorphVampire2(); }
 
 	// get packet name
 	string getPacketName()  { return "GCMorphVampire2"; }

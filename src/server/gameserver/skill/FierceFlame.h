@@ -16,8 +16,8 @@
 class FierceFlame: public SkillHandler 
 {
 public:
-	FierceFlame() throw() {}
-	~FierceFlame() throw() {}
+	FierceFlame()  {}
+	~FierceFlame()  {}
 	
 public:
     string getSkillHandlerName()  { return "FierceFlame"; }

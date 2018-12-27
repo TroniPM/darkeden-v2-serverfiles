@@ -16,8 +16,8 @@
 class Visible: public SkillHandler 
 {
 public:
-	Visible() throw() {}
-	~Visible() throw() {}
+	Visible()  {}
+	~Visible()  {}
 	
 public:
     string getSkillHandlerName()  { return "Visible"; }

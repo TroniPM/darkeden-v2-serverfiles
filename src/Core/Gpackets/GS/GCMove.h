@@ -28,11 +28,11 @@ class GCMove : public Packet {
 public :
 
 	// constructor
-	GCMove() throw()
+	GCMove() 
 	{
 	}
 
-	GCMove(ObjectID_t objectID, Coord_t x, Coord_t y, Dir_t dir) throw()
+	GCMove(ObjectID_t objectID, Coord_t x, Coord_t y, Dir_t dir) 
 		: m_ObjectID(objectID), m_X(x), m_Y(y), m_Dir(dir)
 	{
 	}
@@ -68,19 +68,19 @@ public :
 
 	// get/set Creature ID 
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t objectID) throw() { m_ObjectID = objectID; }
+	void setObjectID(ObjectID_t objectID)  { m_ObjectID = objectID; }
 
 	// get/set X
 	Coord_t getX()  { return m_X; }
-	void setX(Coord_t x) throw() { m_X = x; }
+	void setX(Coord_t x)  { m_X = x; }
 	
 	// get/set Y
 	Coord_t getY()  { return m_Y; }
-	void setY(Coord_t y) throw() { m_Y = y; }
+	void setY(Coord_t y)  { m_Y = y; }
 
 	// get/set Dir
 	Dir_t getDir()  { return m_Dir; }
-	void setDir(Dir_t dir) throw() { m_Dir = dir; }
+	void setDir(Dir_t dir)  { m_Dir = dir; }
 
 
 private :
@@ -106,7 +106,7 @@ class GCMoveFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCMove(); }
+	Packet* createPacket()  { return new GCMove(); }
 
 	// get packet name
 	string getPacketName()  { return "GCMove"; }

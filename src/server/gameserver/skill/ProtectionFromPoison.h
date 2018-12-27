@@ -16,8 +16,8 @@
 class ProtectionFromPoison: public SkillHandler 
 {
 public:
-	ProtectionFromPoison() throw() {}
-	~ProtectionFromPoison() throw() {}
+	ProtectionFromPoison()  {}
+	~ProtectionFromPoison()  {}
 
 public:
     string getSkillHandlerName()  { return "ProtectionFromPoison"; }

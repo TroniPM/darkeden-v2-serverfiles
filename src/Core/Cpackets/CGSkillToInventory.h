@@ -27,25 +27,25 @@ public:
 
 public:
 	SkillType_t getSkillType()   { return m_SkillType; }
-	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
+	void setSkillType(SkillType_t SkillType)  { m_SkillType = SkillType; }
 
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
-	ObjectID_t getInventoryItemObjectID() throw() { return m_InventoryItemObjectID; }
-	void setInventoryItemObjectID(ObjectID_t InventoryItemObjectID) throw() { m_InventoryItemObjectID = InventoryItemObjectID; }
+	ObjectID_t getInventoryItemObjectID()  { return m_InventoryItemObjectID; }
+	void setInventoryItemObjectID(ObjectID_t InventoryItemObjectID)  { m_InventoryItemObjectID = InventoryItemObjectID; }
 
 	CoordInven_t getX()  { return m_X; }
-	void setX(Coord_t X) throw() { m_X = X; }
+	void setX(Coord_t X)  { m_X = X; }
 
 	CoordInven_t getY()  { return m_Y; }
-	void setY(Coord_t Y) throw() { m_Y = Y; }
+	void setY(Coord_t Y)  { m_Y = Y; }
 
 	CoordInven_t getTargetX()  { return m_TargetX; }
-	void setTargetX(Coord_t TargetX) throw() { m_TargetX = TargetX; }
+	void setTargetX(Coord_t TargetX)  { m_TargetX = TargetX; }
 
 	CoordInven_t getTargetY()  { return m_TargetY; }
-	void setTargetY(Coord_t TargetY) throw() { m_TargetY = TargetY; }
+	void setTargetY(Coord_t TargetY)  { m_TargetY = TargetY; }
 
 private :
 	SkillType_t  m_SkillType;	// SkillType
@@ -64,7 +64,7 @@ private :
 class CGSkillToInventoryFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGSkillToInventory(); }
+	Packet* createPacket()  { return new CGSkillToInventory(); }
 	string getPacketName()  { return "CGSkillToInventory"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_SKILL_TO_INVENTORY; }
 	PacketSize_t getPacketMaxSize()  { return szSkillType + szObjectID + szObjectID + szCoordInven*4; }

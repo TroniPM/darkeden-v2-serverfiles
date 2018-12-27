@@ -16,8 +16,8 @@
 class Glacier1: public SkillHandler 
 {
 public:
-	Glacier1() throw() {}
-	~Glacier1() throw() {}
+	Glacier1()  {}
+	~Glacier1()  {}
 	
 public:
     string getSkillHandlerName()  { return "Glacier1"; }

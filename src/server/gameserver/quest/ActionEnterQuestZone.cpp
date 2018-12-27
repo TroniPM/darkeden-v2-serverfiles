@@ -159,7 +159,7 @@ void ActionEnterQuestZone::execute (Creature * pNPC , Creature * pCreature)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionEnterQuestZone::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

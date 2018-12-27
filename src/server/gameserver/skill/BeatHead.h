@@ -16,8 +16,8 @@
 class BeatHead : public SkillHandler 
 {
 public:
-	BeatHead() throw() {}
-	~BeatHead() throw() {}
+	BeatHead()  {}
+	~BeatHead()  {}
 	
 public:
     string getSkillHandlerName()  { return "BeatHead"; }

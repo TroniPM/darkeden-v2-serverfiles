@@ -77,7 +77,7 @@ private :
 class GCPartyErrorFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCPartyError(); }
+	Packet* createPacket()  { return new GCPartyError(); }
 	string getPacketName()  { return "GCPartyError"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_PARTY_ERROR; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE + szObjectID; }

@@ -42,7 +42,7 @@ private:
 
 class CGSelectTileEffectFactory : public PacketFactory 
 {
-	Packet* createPacket() throw() { return new CGSelectTileEffect(); }
+	Packet* createPacket()  { return new CGSelectTileEffect(); }
 	string getPacketName()  { return "CGSelectTileEffect"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_SELECT_TILE_EFFECT; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID; }

@@ -16,8 +16,8 @@
 class BloodyShout2 : public SkillHandler 
 {
 public:
-	BloodyShout2() throw() {}
-	~BloodyShout2() throw() {}
+	BloodyShout2()  {}
+	~BloodyShout2()  {}
 	
 public:
 	string getSkillHandlerName()  { return "BloodyShout2"; }

@@ -62,7 +62,7 @@ void ActionMiniGame::execute (Creature * pCreature1 , Creature * pCreature2)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionMiniGame::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

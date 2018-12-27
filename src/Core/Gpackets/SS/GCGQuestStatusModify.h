@@ -35,7 +35,7 @@ public:
 	~GCGQuestStatusModify() ;
 	
 public:
-    void read(SocketInputStream & iStream) throw(ProtocolException, Error) { iStream.read(m_Type); m_pInfo = new QuestStatusInfo(0); m_pInfo->read(iStream); }
+    void read(SocketInputStream & iStream)  { iStream.read(m_Type); m_pInfo = new QuestStatusInfo(0); m_pInfo->read(iStream); }
     void write(SocketOutputStream & oStream)  { oStream.write(m_Type); m_pInfo->write(oStream); }
 	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_GC_GQUEST_STATUS_MODIFY; }
@@ -63,11 +63,11 @@ private:
 class GCGQuestStatusModifyFactory : public PacketFactory 
 {
 public :
-	GCGQuestStatusModifyFactory() throw() {}
-	virtual ~GCGQuestStatusModifyFactory() throw() {}
+	GCGQuestStatusModifyFactory()  {}
+	virtual ~GCGQuestStatusModifyFactory()  {}
 	
 public:
-	Packet* createPacket() throw() { return new GCGQuestStatusModify(); }
+	Packet* createPacket()  { return new GCGQuestStatusModify(); }
 	string getPacketName()  { return "GCGQuestStatusModify"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_GQUEST_STATUS_MODIFY; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE + QuestStatusInfo::getMaxSize(); }

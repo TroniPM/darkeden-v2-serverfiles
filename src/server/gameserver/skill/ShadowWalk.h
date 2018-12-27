@@ -16,8 +16,8 @@
 class ShadowWalk : public SkillHandler 
 {
 public:
-	ShadowWalk() throw() {}
-	~ShadowWalk() throw() {}
+	ShadowWalk()  {}
+	~ShadowWalk()  {}
 
 public :
     string getSkillHandlerName()  { return "ShadowWalk"; }

@@ -53,11 +53,11 @@ private :
 class GCFlagWarStatusFactory : public PacketFactory 
 {
 public :
-	GCFlagWarStatusFactory() throw() {}
-	virtual ~GCFlagWarStatusFactory() throw() {}
+	GCFlagWarStatusFactory()  {}
+	virtual ~GCFlagWarStatusFactory()  {}
 	
 public:
-	Packet* createPacket() throw() { return new GCFlagWarStatus(); }
+	Packet* createPacket()  { return new GCFlagWarStatus(); }
 	string getPacketName()  { return "GCFlagWarStatus"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_FLAG_WAR_STATUS; }
 	PacketSize_t getPacketMaxSize()  { return szWORD + szBYTE * 3; }

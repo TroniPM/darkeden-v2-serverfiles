@@ -70,21 +70,21 @@ public :
 
 	// get/set sender's creature id
 	DWORD getCommand()  { return m_Command; }
-	void setCommand(const DWORD & Command) throw() { m_Command = Command; }
+	void setCommand(const DWORD & Command)  { m_Command = Command; }
 
 	//get/set text color
 	string getPlayerName()  { return m_PlayerName; }
-	void setPlayerName(const string& PlayerName ) throw() { m_PlayerName = PlayerName; }
+	void setPlayerName(const string& PlayerName )  { m_PlayerName = PlayerName; }
 
 	// get/set chatting message
 	string getMessage()  { return m_Message; }
-	void setMessage(const string & msg) throw() { m_Message = msg; }
+	void setMessage(const string & msg)  { m_Message = msg; }
 	
 	BYTE getIsBlack()  { return m_IsBlack; }
-	void setIsBlack(const BYTE& IsBlack) throw() { m_IsBlack = IsBlack; };
+	void setIsBlack(const BYTE& IsBlack)  { m_IsBlack = IsBlack; };
 
 	BYTE getIsOnLine()  { return m_IsOnLine; }
-	void setIsOnLine(const BYTE& IsOnLine) throw() { m_IsOnLine = IsOnLine; };
+	void setIsOnLine(const BYTE& IsOnLine)  { m_IsOnLine = IsOnLine; };
 
 private :
 	
@@ -117,7 +117,7 @@ class GCFriendChattingFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCFriendChatting(); }
+	Packet* createPacket()  { return new GCFriendChatting(); }
 
 	// get packet name
 	string getPacketName()  { return "GCFriendChatting"; }

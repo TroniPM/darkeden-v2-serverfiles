@@ -29,8 +29,8 @@ public:
 	void load();
 	
 	void addZoneInfo(ZoneInfo* pZoneInfo);
-	void deleteZoneInfo(ZoneID_t zoneID) throw(NoSuchElementException);
-	ZoneInfo* getZoneInfo(ZoneID_t zoneID) throw(NoSuchElementException);
+	void deleteZoneInfo(ZoneID_t zoneID) ;
+	ZoneInfo* getZoneInfo(ZoneID_t zoneID) ;
 	ZoneInfo* getZoneInfoByName(const string & ZoneName);
 	int  size() const	{ return m_ZoneInfos.size(); }
 

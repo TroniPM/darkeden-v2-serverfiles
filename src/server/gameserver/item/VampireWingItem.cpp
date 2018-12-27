@@ -24,13 +24,13 @@ Mutex    VampireWingItem::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 VampireWingItem::VampireWingItem()
-	throw()
+	
 {
 	m_ItemType = 0;
 }
 
 VampireWingItem::VampireWingItem(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	m_ItemType = itemType;
 	m_BodyColor = 0;
@@ -159,7 +159,7 @@ void VampireWingItem::save(const string & ownerID, Storage storage, StorageID_t 
 // get debug string
 //--------------------------------------------------------------------------------
 string VampireWingItem::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "VampireWingItem("
@@ -218,7 +218,7 @@ Weight_t VampireWingItem::getWeight() const
 // get debug string
 //--------------------------------------------------------------------------------
 string VampireWingItemInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

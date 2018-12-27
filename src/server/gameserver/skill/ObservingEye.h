@@ -16,8 +16,8 @@
 class ObservingEye : public SkillHandler 
 {
 public:
-	ObservingEye() throw() {}
-	~ObservingEye() throw() {}
+	ObservingEye()  {}
+	~ObservingEye()  {}
 	
 public :
     string getSkillHandlerName()  { return "ObservingEye"; }

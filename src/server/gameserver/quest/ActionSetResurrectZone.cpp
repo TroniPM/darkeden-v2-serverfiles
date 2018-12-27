@@ -82,7 +82,7 @@ void ActionSetResurrectZone::execute (Creature * pCreature1 , Creature * pCreatu
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionSetResurrectZone::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

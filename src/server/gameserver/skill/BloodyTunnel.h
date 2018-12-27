@@ -16,8 +16,8 @@
 class BloodyTunnel: public SkillHandler 
 {
 public:
-	BloodyTunnel() throw() {}
-	~BloodyTunnel() throw() {}
+	BloodyTunnel()  {}
+	~BloodyTunnel()  {}
 	
 public:
     string getSkillHandlerName()  { return "BloodyTunnel"; }

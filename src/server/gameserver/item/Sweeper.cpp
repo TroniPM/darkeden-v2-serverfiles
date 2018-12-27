@@ -24,14 +24,14 @@ Mutex    Sweeper::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Sweeper::Sweeper()
-	throw()
+	
 : m_ItemType(0), m_Durability(0)
 {
 	m_EnchantLevel = 0;
 }
 
 Sweeper::Sweeper(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 : m_ItemType(itemType), m_Durability(0)
 {
 	try {
@@ -176,7 +176,7 @@ void Sweeper::save(const string & ownerID, Storage storage, StorageID_t storageI
 // get debug string
 //--------------------------------------------------------------------------------
 string Sweeper::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -260,7 +260,7 @@ Protection_t Sweeper::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string SweeperInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

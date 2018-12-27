@@ -203,7 +203,7 @@ void ActionRegisterReinforce::execute (Creature * pCreature1 , Creature * pCreat
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionRegisterReinforce::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

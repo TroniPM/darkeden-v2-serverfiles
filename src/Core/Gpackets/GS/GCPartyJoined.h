@@ -63,7 +63,7 @@ private:
 class GCPartyJoinedFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCPartyJoined(); }
+	Packet* createPacket()  { return new GCPartyJoined(); }
 	string getPacketName()  { return "GCPartyJoined"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_PARTY_JOINED; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE + PARTY_MEMBER_INFO_MAX_SIZE * 6; }

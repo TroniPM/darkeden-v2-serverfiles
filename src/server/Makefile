@@ -402,7 +402,7 @@ PlayerManager.o: PlayerManager.cpp PlayerManager.h ../Core/Types.h \
  ../Core/Player.h gameserver/Creature.h gameserver/Object.h \
  gameserver/EffectManager.h gameserver/Effect.h ../Core/EffectInfo.h \
  ../Core/Packet.h ../Core/SocketInputStream.h \
- ../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  gameserver/Slayer.h gameserver/PlayerCreature.h \
  gameserver/ObjectRegistry.h gameserver/InventorySlot.h \
  gameserver/Item.h /usr/include/STL/vector \
@@ -947,5 +947,5 @@ PaySystem.o: PaySystem.cpp PaySystem.h ../Core/Types.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  database/Statement.h database/Result.h Thread.h pthreadAPI.h \
- ../Core/Properties.h /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ ../Core/Properties.h /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h

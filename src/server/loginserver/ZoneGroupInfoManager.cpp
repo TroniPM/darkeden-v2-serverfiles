@@ -17,7 +17,7 @@
 // constructor
 //----------------------------------------------------------------------
 ZoneGroupInfoManager::ZoneGroupInfoManager () 
-	throw ()
+	
 {
 }
 	
@@ -25,7 +25,7 @@ ZoneGroupInfoManager::ZoneGroupInfoManager ()
 // destructor
 //----------------------------------------------------------------------
 ZoneGroupInfoManager::~ZoneGroupInfoManager () 
-	throw ()
+	
 {
 	// hashmap 안의 각 pair 의 second, 즉 ZoneGroupInfo 객체만을 삭제하고
 	// pair 자체는 그대로 둔다. (ZoneGroupInfo가 힙에 생성되어 있다는 것에
@@ -102,7 +102,7 @@ void ZoneGroupInfoManager::load ()
 // add info 
 //----------------------------------------------------------------------
 void ZoneGroupInfoManager::addZoneGroupInfo ( ZoneGroupInfo * pZoneGroupInfo ) 
-	throw ( DuplicatedException )
+	
 {
 	__BEGIN_TRY
 
@@ -120,7 +120,7 @@ void ZoneGroupInfoManager::addZoneGroupInfo ( ZoneGroupInfo * pZoneGroupInfo )
 // delete info
 //----------------------------------------------------------------------
 void ZoneGroupInfoManager::deleteZoneGroupInfo ( ZoneGroupID_t zoneGroupID )
-	throw ( NoSuchElementException )
+	
 {
 	__BEGIN_TRY
 		
@@ -149,7 +149,7 @@ void ZoneGroupInfoManager::deleteZoneGroupInfo ( ZoneGroupID_t zoneGroupID )
 // get info
 //----------------------------------------------------------------------
 ZoneGroupInfo * ZoneGroupInfoManager::getZoneGroupInfo ( ZoneGroupID_t zoneGroupID ) const
-	throw ( NoSuchElementException )
+	
 {
 	__BEGIN_TRY
 		
@@ -179,7 +179,7 @@ ZoneGroupInfo * ZoneGroupInfoManager::getZoneGroupInfo ( ZoneGroupID_t zoneGroup
 // get debug string
 //----------------------------------------------------------------------
 string ZoneGroupInfoManager::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 

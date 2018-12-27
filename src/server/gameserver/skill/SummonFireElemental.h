@@ -16,8 +16,8 @@
 class SummonFireElemental : public SkillHandler 
 {
 public:
-	SummonFireElemental() throw() {}
-	~SummonFireElemental() throw() {}
+	SummonFireElemental()  {}
+	~SummonFireElemental()  {}
 	
 public:
     string getSkillHandlerName()  { return "SummonFireElemental"; }

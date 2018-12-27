@@ -16,8 +16,8 @@
 class SummonCasket: public SkillHandler 
 {
 public:
-	SummonCasket() throw() {}
-	~SummonCasket() throw() {}
+	SummonCasket()  {}
+	~SummonCasket()  {}
 	
 public:
     string getSkillHandlerName()  { return "SummonCasket"; }

@@ -35,11 +35,11 @@ public :
 	void write (SocketOutputStream & oStream) ;
 
 	// get size of object
-	static uint getSize () throw ()
+	static uint getSize () 
 	{ return szObjectID + szBYTE + szItemType + szItemNum + szSlotID; }
 
 	// get max size of object
-	static uint getMaxSize () throw ()
+	static uint getMaxSize () 
 	{ return szObjectID + szBYTE + szItemType + szItemNum + szSlotID; }
 
 	// get debug string
@@ -48,23 +48,23 @@ public :
 public :
 
 	// get/set ObjectID
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 	ObjectID_t getObjectID()  { return m_ObjectID; }
 
 	// get/set ItemClass
-	void setItemClass (BYTE IClass) throw() { m_IClass = IClass; }
+	void setItemClass (BYTE IClass)  { m_IClass = IClass; }
 	BYTE getItemClass ()  { return m_IClass; }
 
 	// get/set ItemType
-	void setItemType (ItemType_t ItemType) throw() { m_ItemType = ItemType; }
+	void setItemType (ItemType_t ItemType)  { m_ItemType = ItemType; }
 	ItemType_t getItemType()  { return m_ItemType; }
 
 	// get/set ItemNum
-	void setItemNum (ItemNum_t ItemNum) throw() { m_ItemNum = ItemNum; }
+	void setItemNum (ItemNum_t ItemNum)  { m_ItemNum = ItemNum; }
 	ItemNum_t getItemNum()  { return m_ItemNum; }
 
 	// set/set SlotID
-	void setSlotID(SlotID_t SlotID) throw() { m_SlotID = SlotID; }
+	void setSlotID(SlotID_t SlotID)  { m_SlotID = SlotID; }
 	SlotID_t getSlotID()  { return m_SlotID; }
 
 private :

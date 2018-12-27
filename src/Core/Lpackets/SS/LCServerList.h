@@ -57,18 +57,18 @@ public:
 
 	// 현재 서버 그룹
 	ServerGroupID_t getCurrentServerGroupID()  { return m_CurrentServerGroupID; }
-	void setCurrentServerGroupID( ServerGroupID_t ServerGroupID ) throw() { m_CurrentServerGroupID = ServerGroupID; }
+	void setCurrentServerGroupID( ServerGroupID_t ServerGroupID )  { m_CurrentServerGroupID = ServerGroupID; }
 
     BYTE getListNum()  { return m_ServerGroupInfoList.size(); }
 
 	// add / delete / clear S List
-	void addListElement(ServerGroupInfo* pServerGroupInfo) throw() { m_ServerGroupInfoList.push_back(pServerGroupInfo); }
+	void addListElement(ServerGroupInfo* pServerGroupInfo)  { m_ServerGroupInfoList.push_back(pServerGroupInfo); }
 
 	// ClearList
-	void clearList() throw() { m_ServerGroupInfoList.clear(); }
+	void clearList()  { m_ServerGroupInfoList.clear(); }
 
 	// pop front Element in Status List
-	ServerGroupInfo* popFrontListElement() throw()
+	ServerGroupInfo* popFrontListElement() 
 	{
 		ServerGroupInfo* TempServerGroupInfo = m_ServerGroupInfoList.front(); m_ServerGroupInfoList.pop_front(); return TempServerGroupInfo;
 	}
@@ -96,7 +96,7 @@ class LCServerListFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new LCServerList(); }
+	Packet* createPacket()  { return new LCServerList(); }
 
 	// get packet name
 	string getPacketName()  { return "LCServerList"; }

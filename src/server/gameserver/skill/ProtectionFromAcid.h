@@ -16,8 +16,8 @@
 class ProtectionFromAcid: public SkillHandler 
 {
 public:
-	ProtectionFromAcid() throw() {}
-	~ProtectionFromAcid() throw() {}
+	ProtectionFromAcid()  {}
+	~ProtectionFromAcid()  {}
 
 public:
     string getSkillHandlerName()  { return "ProtectionFromAcid"; }

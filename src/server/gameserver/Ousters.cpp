@@ -281,7 +281,7 @@ const Level_t MAX_OUSTERS_LEVEL = 150;
 
 
 Ousters::Ousters () 
-	throw () 
+	 
 : PlayerCreature(0, NULL)
 {
 	__BEGIN_TRY
@@ -1105,7 +1105,7 @@ void Ousters::tinysave(const string & field)	// by sigi. 2002.5.15
 // 사용한 skill bonus 포인트를 리턴한다.
 ////////////////////////////////////////////////////////////////////////////////
 SkillBonus_t Ousters::getSumOfUsedSkillBonus() const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1124,7 +1124,7 @@ SkillBonus_t Ousters::getSumOfUsedSkillBonus() const
 
 // 특정 Skill을 리턴한다.
 OustersSkillSlot* Ousters::getSkill (SkillType_t SkillType) const 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1141,7 +1141,7 @@ OustersSkillSlot* Ousters::getSkill (SkillType_t SkillType) const
 
 // 특정 Skill을 add 한다
 void Ousters::addSkill(SkillType_t SkillType)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1184,7 +1184,7 @@ void Ousters::addSkill(SkillType_t SkillType)
 
 // 특정 SkillSlot을 자동으로 빈 슬랏을 찾아 넣는다.
 void Ousters::addSkill(OustersSkillSlot* pOustersSkillSlot)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1220,7 +1220,7 @@ void Ousters::addSkill(OustersSkillSlot* pOustersSkillSlot)
 }
 
 void Ousters::removeSkill(SkillType_t SkillType)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1240,7 +1240,7 @@ void Ousters::removeSkill(SkillType_t SkillType)
 
 // 성지스킬을 지워주는 함수다.
 void Ousters::removeCastleSkill(SkillType_t SkillType)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1263,7 +1263,7 @@ void Ousters::removeCastleSkill(SkillType_t SkillType)
 
 // 갖고 있는 모든 성지스킬을 지워주는 함수이다.
 void Ousters::removeAllCastleSkill()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1315,7 +1315,7 @@ void Ousters::removeAllCastleSkill()
 //
 //----------------------------------------------------------------------
 void Ousters::wearItem(WearPart Part, Item* pItem)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1476,7 +1476,7 @@ void Ousters::wearItem(WearPart Part, Item* pItem)
 // Item을 장착창에 장착시키고 능력치를 계산한다.
 //----------------------------------------------------------------------
 void Ousters::wearItem(WearPart Part)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1699,7 +1699,7 @@ void Ousters::wearItem(WearPart Part)
 //
 //----------------------------------------------------------------------
 void Ousters::takeOffItem(WearPart Part, bool bAddOnMouse, bool bSendModifyInfo)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1828,7 +1828,7 @@ void Ousters::takeOffItem(WearPart Part, bool bAddOnMouse, bool bSendModifyInfo)
 // 장착 아이템을 Delete 한다.
 //----------------------------------------------------------------------
 void Ousters::destroyGears() 
-	throw ()
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -1877,7 +1877,7 @@ void Ousters::destroyGears()
 //----------------------------------------------------------------------
 //----------------------------------------------------------------------
 bool Ousters::isRealWearing(WearPart part) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1940,7 +1940,7 @@ bool Ousters::isRealWearing(WearPart part) const
 //----------------------------------------------------------------------
 //----------------------------------------------------------------------
 bool Ousters::isRealWearing(Item* pItem) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2042,7 +2042,7 @@ bool Ousters::isRealWearingEx(WearPart part) const
 }
 
 DWORD Ousters::sendRealWearingInfo(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2073,7 +2073,7 @@ DWORD Ousters::sendRealWearingInfo(void) const
 ////////////////////////////////////////////////////////////////////////////////
 
 PCOustersInfo2* Ousters::getOustersInfo2 ()
-	throw ()
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -2147,7 +2147,7 @@ PCOustersInfo2* Ousters::getOustersInfo2 ()
 // Ousters Outlook Information
 //----------------------------------------------------------------------
 PCOustersInfo3 Ousters::getOustersInfo3 () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -2190,7 +2190,7 @@ PCOustersInfo3 Ousters::getOustersInfo3 () const
 //
 //----------------------------------------------------------------------
 ExtraInfo* Ousters::getExtraInfo() const
-	throw()
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -2271,7 +2271,7 @@ ExtraInfo* Ousters::getExtraInfo() const
 //
 //----------------------------------------------------------------------
 GearInfo* Ousters::getGearInfo() const
-	throw()
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -2358,7 +2358,7 @@ GearInfo* Ousters::getGearInfo() const
 // get Inventory Info
 //////////////////////////////////////////////////////////////////////////////
 InventoryInfo* Ousters::getInventoryInfo() const
-    throw()
+    
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -2452,7 +2452,7 @@ InventoryInfo* Ousters::getInventoryInfo() const
 }
 
 InventoryInfo* Ousters::getInventoryInfo2() const
-    throw()
+    
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -2549,7 +2549,7 @@ InventoryInfo* Ousters::getInventoryInfo2() const
 // getSkillInfo
 //----------------------------------------------------------------------
 void Ousters::sendOustersSkillInfo()
-	throw()
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -2617,7 +2617,7 @@ void Ousters::sendOustersSkillInfo()
 //
 ////////////////////////////////////////////////////////////////////////////////
 void Ousters::setGold(Gold_t gold)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2629,7 +2629,7 @@ void Ousters::setGold(Gold_t gold)
 }
 
 void Ousters::setGoldEx(Gold_t gold)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2644,7 +2644,7 @@ void Ousters::setGoldEx(Gold_t gold)
 }
 
 void Ousters::increaseGoldEx(Gold_t gold)
-	throw()
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -2672,7 +2672,7 @@ void Ousters::increaseGoldEx(Gold_t gold)
 }
 
 void Ousters::decreaseGoldEx(Gold_t gold)
-	throw()
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -2699,7 +2699,7 @@ void Ousters::decreaseGoldEx(Gold_t gold)
 }
 
 void Ousters::saveSilverDamage(Silver_t damage)
-	    throw()
+	    
 {
 	__BEGIN_TRY
 
@@ -2770,7 +2770,7 @@ bool Ousters::checkStashGoldIntegrity()
 // 소유 아이템 hearbeat
 //////////////////////////////////////////////////////////////////////////////
 void Ousters::heartbeat(const Timeval& currentTime)
-    throw()
+    
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -2840,7 +2840,7 @@ void Ousters::heartbeat(const Timeval& currentTime)
 }
 
 void Ousters::getOustersRecord(OUSTERS_RECORD& record) const
-	throw()
+	
 {
     __BEGIN_TRY
 
@@ -2876,7 +2876,7 @@ void Ousters::getOustersRecord(OUSTERS_RECORD& record) const
 }
 
 void Ousters::setResurrectZoneIDEx(ZoneID_t id)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2892,7 +2892,7 @@ void Ousters::setResurrectZoneIDEx(ZoneID_t id)
 }
 
 void Ousters::saveAlignment(Alignment_t alignment)
-	    throw()
+	    
 {
 	__BEGIN_TRY
 
@@ -2911,7 +2911,7 @@ void Ousters::saveAlignment(Alignment_t alignment)
 // get debug string
 //----------------------------------------------------------------------
 string Ousters::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -2966,7 +2966,7 @@ void Ousters::saveSkills(void) const
 	__END_CATCH
 }
 
-Sight_t Ousters::getEffectedSight() throw()
+Sight_t Ousters::getEffectedSight() 
 {
 	__BEGIN_TRY
 
@@ -3067,7 +3067,7 @@ void Ousters::saveExps(void) const
 // colors[1]은 coatColor만 있기 때문이다.
 //----------------------------------------------------------------------
 /*void Ousters::getShapeInfo (DWORD& flag, Color_t colors[PCOustersInfo::OUSTERS_COLOR_MAX]) const
-//	throw ()
+//	
 {
 	__BEGIN_DEBUG
 
@@ -3113,7 +3113,7 @@ void Ousters::saveExps(void) const
 // Rank, RankExp, RankGoalExp의 초기값을 저장한다.
 //----------------------------------------------------------------------
 void Ousters::saveInitialRank(void)
-	throw()
+	
 {
 	OUSTERS_RECORD prev;
 	getOustersRecord(prev);

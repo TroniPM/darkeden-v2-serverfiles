@@ -49,11 +49,11 @@ public:
 
 	// get/set text color
 	uint getColor()  { return m_Color; }
-	void setColor( uint color ) throw() { m_Color = color; }
+	void setColor( uint color )  { m_Color = color; }
 
 	// get/set chatting message
 	string getMessage()  { return m_Message; }
-	void setMessage(const string & msg) throw() { m_Message = msg; }
+	void setMessage(const string & msg)  { m_Message = msg; }
 	
 
 private :
@@ -80,7 +80,7 @@ class CGGlobalChatFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGGlobalChat(); }
+	Packet* createPacket()  { return new CGGlobalChat(); }
 
 	// get packet name
 	string getPacketName()  { return "CGGlobalChat"; }

@@ -16,8 +16,8 @@
 class Activation: public SkillHandler 
 {
 public:
-	Activation() throw() {}
-	~Activation() throw() {}
+	Activation()  {}
+	~Activation()  {}
 	
 public:
     string getSkillHandlerName()  { return "Activation"; }

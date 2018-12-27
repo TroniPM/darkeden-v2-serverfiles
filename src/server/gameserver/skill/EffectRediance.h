@@ -30,7 +30,7 @@ public:
 	string toString() ;
 
 public:
-	int getDexBonus() throw() { return m_DexBonus;}
+	int getDexBonus()  { return m_DexBonus;}
 	void setDexBonus(Attr_t DexBonus)  { m_DexBonus = DexBonus;}
 
 	bool canGiveExp() { return m_GiveExp=!m_GiveExp; }

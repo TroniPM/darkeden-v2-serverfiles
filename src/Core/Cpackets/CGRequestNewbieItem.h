@@ -27,7 +27,7 @@ public:
 	
 public:
 	BYTE getItemClass(void)  { return m_ItemClass; }
-	void setItemClass(BYTE itemClass) throw() { m_ItemClass = itemClass; }
+	void setItemClass(BYTE itemClass)  { m_ItemClass = itemClass; }
 
 private:
 	BYTE m_ItemClass;
@@ -41,7 +41,7 @@ private:
 class CGRequestNewbieItemFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGRequestNewbieItem(); }
+	Packet* createPacket()  { return new CGRequestNewbieItem(); }
 	string getPacketName()  { return "CGRequestNewbieItem"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_REQUEST_NEWBIE_ITEM; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE; }

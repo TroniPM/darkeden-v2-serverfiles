@@ -18,7 +18,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 GCCrossCounterOK3::GCCrossCounterOK3 ()
-     throw ()
+     
 {
 	__BEGIN_TRY
 
@@ -30,7 +30,7 @@ GCCrossCounterOK3::GCCrossCounterOK3 ()
 // destructor
 //////////////////////////////////////////////////////////////////////
 GCCrossCounterOK3::~GCCrossCounterOK3 ()
-    throw ()
+    
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -41,7 +41,7 @@ GCCrossCounterOK3::~GCCrossCounterOK3 ()
 // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
 //////////////////////////////////////////////////////////////////////
 void GCCrossCounterOK3::read ( SocketInputStream & iStream )
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -76,7 +76,7 @@ void GCCrossCounterOK3::write ( SocketOutputStream & oStream )
 //
 //////////////////////////////////////////////////////////////////////
 void GCCrossCounterOK3::execute ( Player * pPlayer ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		

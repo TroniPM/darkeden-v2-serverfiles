@@ -41,7 +41,7 @@ private :
 class CGPetGambleFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGPetGamble(); }
+	Packet* createPacket()  { return new CGPetGamble(); }
 	string getPacketName()  { return "CGPetGamble"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_PET_GAMBLE; }
 	PacketSize_t getPacketMaxSize()  { return 0; }

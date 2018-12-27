@@ -57,7 +57,7 @@ public:
 	Connection * getConnection()  { return m_pConnection; }
 
 	// set connection object
-	void setConnection(Connection * pConnection) throw() { m_pConnection = pConnection; }
+	void setConnection(Connection * pConnection)  { m_pConnection = pConnection; }
 
 	// get warning/error string
 	string getError()  

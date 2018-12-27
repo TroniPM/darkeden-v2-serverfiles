@@ -30,8 +30,8 @@ class GCNicknameVerify : public Packet
 {
 
 public:
-	GCNicknameVerify() throw() { m_Code = NICKNAME_VERIFY_MAX; m_Parameter = 0;}
-	virtual ~GCNicknameVerify() throw() {}
+	GCNicknameVerify()  { m_Code = NICKNAME_VERIFY_MAX; m_Parameter = 0;}
+	virtual ~GCNicknameVerify()  {}
 
 public:
 	void read(SocketInputStream & iStream) ;
@@ -45,10 +45,10 @@ public:
 	
 public:
 	BYTE getCode(void)  { return m_Code;}
-	void setCode(BYTE code) throw() { m_Code = code;}
+	void setCode(BYTE code)  { m_Code = code;}
 
 	uint getParameter(void)  { return m_Parameter; }
-	void setParameter(uint parameter) throw() { m_Parameter = parameter; }
+	void setParameter(uint parameter)  { m_Parameter = parameter; }
 
 private: 
 	BYTE m_Code;
@@ -63,7 +63,7 @@ private:
 class GCNicknameVerifyFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCNicknameVerify(); }
+	Packet* createPacket()  { return new GCNicknameVerify(); }
 	string getPacketName()  { return "GCNicknameVerify"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_NICKNAME_VERIFY; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE + szuint; }

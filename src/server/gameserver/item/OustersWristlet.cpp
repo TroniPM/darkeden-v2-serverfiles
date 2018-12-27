@@ -26,7 +26,7 @@ Mutex    OustersWristlet::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 OustersWristlet::OustersWristlet()
-	throw()
+	
 {
 	setItemType(0);
 	setDurability(0);
@@ -34,7 +34,7 @@ OustersWristlet::OustersWristlet()
 }
 
 OustersWristlet::OustersWristlet(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_OptionType( optionType )
 {
 	setItemType(itemType);
@@ -177,7 +177,7 @@ void OustersWristlet::save(const string & ownerID, Storage storage, StorageID_t 
 // get debug string
 //--------------------------------------------------------------------------------
 string OustersWristlet::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -265,7 +265,7 @@ Damage_t OustersWristlet::getMaxDamage() const
 //--------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------
 int OustersWristlet::getCriticalBonus(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -304,7 +304,7 @@ Elemental_t OustersWristlet::getElemental(void) const
 // get debug string
 //--------------------------------------------------------------------------------
 string OustersWristletInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

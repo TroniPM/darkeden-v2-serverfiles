@@ -24,7 +24,7 @@ Mutex    Coat::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Coat::Coat()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
@@ -33,7 +33,7 @@ Coat::Coat()
 }
 
 Coat::Coat(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_ItemType(itemType), m_OptionType(optionType), m_Durability(0)
 {
 	setItemType(itemType);
@@ -176,7 +176,7 @@ void Coat::save(const string & ownerID, Storage storage, StorageID_t storageID, 
 // get debug string
 //--------------------------------------------------------------------------------
 string Coat::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -261,7 +261,7 @@ Protection_t Coat::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string CoatInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

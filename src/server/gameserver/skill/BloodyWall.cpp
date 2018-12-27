@@ -19,7 +19,7 @@
 #include "Gpackets/GCSkillFailed1.h"
 
 BloodyWall::BloodyWall()
-	throw()
+	
 {
 	// LEFT
 	m_BloodyWallMask[0][0].set( 0, -2 );

@@ -54,7 +54,7 @@ public:
 
 	// get/set player's id
 	string getPlayerID()  { return m_PlayerID; }
-	void setPlayerID(const string & playerID) throw() { m_PlayerID = playerID; }
+	void setPlayerID(const string & playerID)  { m_PlayerID = playerID; }
 
 private :
 
@@ -77,7 +77,7 @@ class CLQueryPlayerIDFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CLQueryPlayerID(); }
+	Packet* createPacket()  { return new CLQueryPlayerID(); }
 
 	// get packet name
 	string getPacketName()  { return "CLQueryPlayerID"; }

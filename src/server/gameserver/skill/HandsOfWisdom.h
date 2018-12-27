@@ -16,8 +16,8 @@
 class HandsOfWisdom: public SkillHandler 
 {
 public:
-	HandsOfWisdom() throw() {}
-	~HandsOfWisdom() throw() {}
+	HandsOfWisdom()  {}
+	~HandsOfWisdom()  {}
 	
 public:
     string getSkillHandlerName()  { return "HandsOfWisdom"; }

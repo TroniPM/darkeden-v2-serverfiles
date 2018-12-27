@@ -16,8 +16,8 @@
 class RottenApple : public SkillHandler 
 {
 public:
-	RottenApple() throw() {}
-	~RottenApple() throw() {}
+	RottenApple()  {}
+	~RottenApple()  {}
 	
 public :
     string getSkillHandlerName()  { return "RottenApple"; }

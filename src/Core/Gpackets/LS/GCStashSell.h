@@ -31,7 +31,7 @@ public:
 
 public:
 	Gold_t getPrice(void)  { return m_Price; }
-	void  setPrice(Gold_t price) throw() { m_Price = price; }
+	void  setPrice(Gold_t price)  { m_Price = price; }
 
 private:
 	Gold_t m_Price;
@@ -48,7 +48,7 @@ private:
 class GCStashSellFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCStashSell(); }
+	Packet* createPacket()  { return new GCStashSell(); }
 	string getPacketName()  { return "GCStashSell"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_STASH_SELL; }
 	PacketSize_t getPacketMaxSize()  { return szGold; }

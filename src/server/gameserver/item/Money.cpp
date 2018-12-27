@@ -24,13 +24,13 @@ Mutex    Money::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Money::Money()
-	throw()
+	
 : m_ItemType(0), m_Amount(0)
 {
 }
 
 Money::Money(ItemType_t itemType, const list<OptionType_t>& optionType ,ItemNum_t Num)
-	throw()
+	
 : m_ItemType(itemType), m_Amount(0)
 {
 	m_Num      = Num;
@@ -165,7 +165,7 @@ void Money::save(const string & ownerID, Storage storage, StorageID_t storageID,
 // get debug string
 //--------------------------------------------------------------------------------
 string Money::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -225,7 +225,7 @@ Weight_t Money::getWeight() const
 // get debug string
 //--------------------------------------------------------------------------------
 string MoneyInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

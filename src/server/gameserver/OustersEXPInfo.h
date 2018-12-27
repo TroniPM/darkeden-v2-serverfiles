@@ -21,16 +21,16 @@ public:
 	~OustersEXPInfo() ;
 
 public:
-	void setLevel(uint lev) throw() { m_Level = lev; }
+	void setLevel(uint lev)  { m_Level = lev; }
 	uint getLevel()  { return m_Level; }
 
-	void setGoalExp(Exp_t sum) throw() { m_GoalExp = sum; }
+	void setGoalExp(Exp_t sum)  { m_GoalExp = sum; }
 	uint getGoalExp()  { return m_GoalExp; }
 
-	void setAccumExp(Exp_t accum) throw() { m_AccumExp = accum ; }
+	void setAccumExp(Exp_t accum)  { m_AccumExp = accum ; }
 	uint getAccumExp()  { return m_AccumExp; }
 
-	void setSkillPointBonus(SkillBonus_t SkillBonus) throw() { m_SkillPointBonus = SkillBonus; }
+	void setSkillPointBonus(SkillBonus_t SkillBonus)  { m_SkillPointBonus = SkillBonus; }
 	SkillBonus_t getSkillPointBonus()  { return m_SkillPointBonus; }
 
 	string toString() ;

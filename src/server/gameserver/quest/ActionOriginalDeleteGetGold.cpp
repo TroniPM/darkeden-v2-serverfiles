@@ -68,7 +68,7 @@ void ActionOriginalDeleteGetGold::execute (Creature * pCreature1 , Creature * pC
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionOriginalDeleteGetGold::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

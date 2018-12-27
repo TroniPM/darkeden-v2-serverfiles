@@ -60,39 +60,39 @@ public :
 
 	// get/set object id
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t creatureID) throw() { m_ObjectID = creatureID; }
+	void setObjectID(ObjectID_t creatureID)  { m_ObjectID = creatureID; }
 
 	// get/set name
 	string getName()  { return m_Name; }
-	void setName(string name) throw() { m_Name = name; }
+	void setName(string name)  { m_Name = name; }
 
 	// get/set NPC id
 	NPCID_t getNPCID(void)  { return m_NPCID;}
-	void setNPCID(NPCID_t NPCID) throw() { m_NPCID = NPCID;}
+	void setNPCID(NPCID_t NPCID)  { m_NPCID = NPCID;}
 
 	// get/set sprite type
 	SpriteType_t getSpriteType()  { return m_SpriteType; }
-	void setSpriteType(SpriteType_t spriteType) throw() { m_SpriteType = spriteType; }
+	void setSpriteType(SpriteType_t spriteType)  { m_SpriteType = spriteType; }
 
 	// get/set main color
 	Color_t getMainColor()  { return m_MainColor; }
-	void setMainColor(Color_t color) throw() { m_MainColor = color; }
+	void setMainColor(Color_t color)  { m_MainColor = color; }
 
 	// get/set sub color
 	Color_t getSubColor()  { return m_SubColor; }
-	void setSubColor(Color_t color) throw() { m_SubColor = color; }
+	void setSubColor(Color_t color)  { m_SubColor = color; }
 
 	// get/set X
 	Coord_t getX()  { return m_X; }
-	void setX(Coord_t x) throw() { m_X = x; }
+	void setX(Coord_t x)  { m_X = x; }
 	
 	// get/set Y
 	Coord_t getY()  { return m_Y; }
-	void setY(Coord_t y) throw() { m_Y = y; }
+	void setY(Coord_t y)  { m_Y = y; }
 
 	// get/set Dir
 	Dir_t getDir()  { return m_Dir; }
-	void setDir(Dir_t dir) throw() { m_Dir = dir; }
+	void setDir(Dir_t dir)  { m_Dir = dir; }
 
 private :
 	
@@ -133,7 +133,7 @@ class GCAddNPCFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCAddNPC(); }
+	Packet* createPacket()  { return new GCAddNPC(); }
 
 	// get packet name
 	string getPacketName()  { return "GCAddNPC"; }

@@ -25,7 +25,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 GCLoadGear::GCLoadGear () 
-     throw ()
+     
 : m_pGearInfo(NULL)
 {
 }
@@ -35,7 +35,7 @@ GCLoadGear::GCLoadGear ()
 // destructor
 //////////////////////////////////////////////////////////////////////
 GCLoadGear::~GCLoadGear () 
-    throw ()
+    
 {
 	SAFE_DELETE(m_pGearInfo);
 }
@@ -45,7 +45,7 @@ GCLoadGear::~GCLoadGear ()
 // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
 //////////////////////////////////////////////////////////////////////
 void GCLoadGear::read ( SocketInputStream & iStream ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 	m_pGearInfo = new GearInfo();
@@ -75,7 +75,7 @@ void GCLoadGear::write ( SocketOutputStream & oStream )
 //
 //////////////////////////////////////////////////////////////////////
 void GCLoadGear::execute ( Player * pPlayer ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		

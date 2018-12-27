@@ -33,8 +33,8 @@ public:
 	string toString() ;
 
 public:
-	int getDiffSTR(void) throw() { return m_diffSTR;}
-	int getDiffDEX(void) throw() { return m_diffDEX;}
+	int getDiffSTR(void)  { return m_diffSTR;}
+	int getDiffDEX(void)  { return m_diffDEX;}
 	void setDiffSTR(int diffSTR)  { m_diffSTR = diffSTR;}
 	void setDiffDEX(int diffDEX)  { m_diffDEX = diffDEX;}
 

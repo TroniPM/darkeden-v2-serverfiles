@@ -73,59 +73,59 @@ public:
 
     // get/set player's id
 	string getID()  { return m_ID; }
-	void setID(string id) throw() { m_ID =(id.size() > maxIDLength) ? id.substr(0,maxIDLength) : id; }
+	void setID(string id)  { m_ID =(id.size() > maxIDLength) ? id.substr(0,maxIDLength) : id; }
 
     // get/set player's password
     string getPassword()  { return m_Password; }
-    void setPassword(string password) throw() { m_Password =(password.size() > maxPasswordLength) ? password.substr(0,maxPasswordLength) : password; }
+    void setPassword(string password)  { m_Password =(password.size() > maxPasswordLength) ? password.substr(0,maxPasswordLength) : password; }
 
     // get/set player's name
     string getName()  { return m_Name; }
-    void setName(string name) throw() { m_Name =(name.size() > maxNameLength) ? name.substr(0,maxNameLength) : name; }
+    void setName(string name)  { m_Name =(name.size() > maxNameLength) ? name.substr(0,maxNameLength) : name; }
 
     // get/set player's sex
     Sex getSex()  { return m_Sex; }
-    void setSex(Sex sex) throw() { m_Sex = sex; }
+    void setSex(Sex sex)  { m_Sex = sex; }
 
     // get/set player's ssn
     string getSSN()  { return m_SSN; }
-    void setSSN(string ssn) throw() { m_SSN =(ssn.size() > maxSSNLength) ? ssn.substr(0,maxSSNLength) : ssn; }
+    void setSSN(string ssn)  { m_SSN =(ssn.size() > maxSSNLength) ? ssn.substr(0,maxSSNLength) : ssn; }
 
     // get/set player's telephone
     string getTelephone()  { return m_Telephone; }
-    void setTelephone(string telephone) throw() { m_Telephone =(telephone.size() > maxTelephoneLength) ? telephone.substr(0,maxTelephoneLength) : telephone; }
+    void setTelephone(string telephone)  { m_Telephone =(telephone.size() > maxTelephoneLength) ? telephone.substr(0,maxTelephoneLength) : telephone; }
 
     // get/set player's cellular
     string getCellular()  { return m_Cellular; }
-    void setCellular(string cellular) throw() { m_Cellular =(cellular.size() > maxCellularLength) ? cellular.substr(0,maxCellularLength) : cellular; }
+    void setCellular(string cellular)  { m_Cellular =(cellular.size() > maxCellularLength) ? cellular.substr(0,maxCellularLength) : cellular; }
 
     // get/set player's zipcode
     string getZipCode()  { return m_ZipCode; }
-    void setZipCode(string zipcode) throw() { m_ZipCode =(zipcode.size() > maxZipCodeLength) ? zipcode.substr(0,maxZipCodeLength) : zipcode; }
+    void setZipCode(string zipcode)  { m_ZipCode =(zipcode.size() > maxZipCodeLength) ? zipcode.substr(0,maxZipCodeLength) : zipcode; }
 
     // get/set player's address
     string getAddress()  { return m_Address; }
-    void setAddress(string address) throw() { m_Address =(address.size() > maxAddressLength) ? address.substr(0,maxAddressLength) : address; }
+    void setAddress(string address)  { m_Address =(address.size() > maxAddressLength) ? address.substr(0,maxAddressLength) : address; }
 
     // get/set player's nation
     Nation getNation()  { return m_Nation; }
-    void setNation(Nation nation) throw() { m_Nation = nation; }
+    void setNation(Nation nation)  { m_Nation = nation; }
 
     // get/set player's email
     string getEmail()  { return m_Email; }
-    void setEmail(string email) throw() { m_Email =(email.size() > maxEmailLength) ? email.substr(0,maxEmailLength) : email; }
+    void setEmail(string email)  { m_Email =(email.size() > maxEmailLength) ? email.substr(0,maxEmailLength) : email; }
 
     // get/set player's homepage
     string getHomepage()  { return m_Homepage; }
-    void setHomepage(string homepage) throw() { m_Homepage =(homepage.size() > maxHomepageLength) ? homepage.substr(0,maxHomepageLength) : homepage; }
+    void setHomepage(string homepage)  { m_Homepage =(homepage.size() > maxHomepageLength) ? homepage.substr(0,maxHomepageLength) : homepage; }
 
     // get/set player's profile
     string getProfile()  { return m_Profile; }
-    void setProfile(string profile) throw() { m_Profile =(profile.size() > maxProfileLength) ? profile.substr(0,maxProfileLength) : profile; }
+    void setProfile(string profile)  { m_Profile =(profile.size() > maxProfileLength) ? profile.substr(0,maxProfileLength) : profile; }
 
 	// get/set player info's publicability(?) 
 	bool getPublic()  { return m_bPublic; }
-	void setPublic(bool bPublic) throw() { m_bPublic = bPublic; }
+	void setPublic(bool bPublic)  { m_bPublic = bPublic; }
 
 private :
 
@@ -175,7 +175,7 @@ class CLRegisterPlayerFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CLRegisterPlayer(); }
+	Packet* createPacket()  { return new CLRegisterPlayer(); }
 
 	// get packet name
 	string getPacketName()  { return "CLRegisterPlayer"; }

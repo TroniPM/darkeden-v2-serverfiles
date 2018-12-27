@@ -22,7 +22,7 @@ extern void saveItemInCorpse(Item* pItem, Corpse* pCorpse);
 //////////////////////////////////////////////////////////////////////////////
 
 Corpse::Corpse()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -36,7 +36,7 @@ Corpse::Corpse()
 }
 
 Corpse::~Corpse()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -51,7 +51,7 @@ Corpse::~Corpse()
 }
 
 Item* Corpse::getTreasure() 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -76,7 +76,7 @@ Item* Corpse::getTreasure()
 }
 
 void Corpse::addTreasure(Item* pItem)
-	throw()
+	
 {
 	__BEGIN_TRY
 	
@@ -105,7 +105,7 @@ void Corpse::addTreasure(Item* pItem)
 }
 
 Item* Corpse::getTreasure( ObjectID_t objectID ) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -123,7 +123,7 @@ Item* Corpse::getTreasure( ObjectID_t objectID ) const
 
 
 Item* Corpse::popTreasure( ObjectID_t objectID )
-	throw()
+	
 {
 	__BEGIN_TRY
 

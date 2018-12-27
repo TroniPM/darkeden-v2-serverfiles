@@ -16,8 +16,8 @@
 class BikeCrash : public SkillHandler 
 {
 public:
-	BikeCrash() throw() {}
-	~BikeCrash() throw() {}
+	BikeCrash()  {}
+	~BikeCrash()  {}
 	
 public:
     string getSkillHandlerName()  { return "BikeCrash"; }

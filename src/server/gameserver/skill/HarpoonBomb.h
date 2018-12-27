@@ -16,8 +16,8 @@
 class HarpoonBomb : public SkillHandler 
 {
 public:
-	HarpoonBomb() throw() {}
-	~HarpoonBomb() throw() {}
+	HarpoonBomb()  {}
+	~HarpoonBomb()  {}
 
 public:
     string getSkillHandlerName()  { return "HarpoonBomb"; }

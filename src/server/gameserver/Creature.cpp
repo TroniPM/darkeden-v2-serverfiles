@@ -24,7 +24,7 @@
 // Constructor
 //////////////////////////////////////////////////////////////////////////////
 Creature::Creature (ObjectID_t objectID , Player* pPlayer) 
-	throw () 
+	 
 : Object(objectID)
 {
 	__BEGIN_TRY
@@ -124,13 +124,13 @@ VisionState Creature::getVisionState (Coord_t x , Coord_t y, Sight_t sight)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 ZoneID_t Creature::getZoneID () const
-	throw ()
+	
 {
 	return (m_pZone) ? m_pZone->getZoneID() : 0 ;
 }
 
 ZoneID_t Creature::getNewZoneID () const
-	throw ()
+	
 {
 	return (m_pNewZone) ? m_pNewZone->getZoneID() : 0 ;
 }
@@ -250,7 +250,7 @@ bool Creature::isBlockedByCreature (ZoneCoord_t nx , ZoneCoord_t ny) const
 
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
-void Creature::recoverHP(HP_t addHP) throw()
+void Creature::recoverHP(HP_t addHP) 
 {
 /*
     if (isSlayer())
@@ -286,7 +286,7 @@ void Creature::recoverHP(HP_t addHP) throw()
 // 거리 계산 함수
 //////////////////////////////////////////////////////////////////////////////
 Distance_t Creature::getDistance (ZoneCoord_t x1 , ZoneCoord_t y1 , ZoneCoord_t x2 , ZoneCoord_t y2) const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -296,7 +296,7 @@ Distance_t Creature::getDistance (ZoneCoord_t x1 , ZoneCoord_t y1 , ZoneCoord_t 
 }
 
 Distance_t Creature::getDistance (ZoneCoord_t x1 , ZoneCoord_t y1) const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -350,7 +350,7 @@ void Creature::addEffect(Effect* pEffect)
 }
 
 LocalPartyManager* Creature::getLocalPartyManager(void) const 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -374,7 +374,7 @@ bool Creature::hasRelicItem() const
 }
 
 Sight_t Creature::getEffectedSight()
-	throw()
+	
 {
 	if ( isFlag( Effect::EFFECT_CLASS_LIGHTNESS ) )
 		return LIGHTNESS_SIGHT;

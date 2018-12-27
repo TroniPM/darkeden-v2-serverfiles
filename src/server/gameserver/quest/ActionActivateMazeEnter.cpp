@@ -133,7 +133,7 @@ void ActionActivateMazeEnter::execute (Creature * pNPC , Creature * pCreature)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionActivateMazeEnter::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

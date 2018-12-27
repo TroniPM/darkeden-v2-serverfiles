@@ -13,7 +13,7 @@
 // constructor
 //----------------------------------------------------------------------
 PacketValidator::PacketValidator () 
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -30,7 +30,7 @@ PacketValidator::PacketValidator ()
 // destructor
 //----------------------------------------------------------------------
 PacketValidator::~PacketValidator () 
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -375,7 +375,7 @@ bool PacketValidator::isValidPacketID ( PlayerStatus playerStatus , PacketID_t p
 // get debug string
 //----------------------------------------------------------------------
 string PacketValidator::toString () const
-	throw ()
+	
 {
 	StringStream msg;
 

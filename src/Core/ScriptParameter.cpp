@@ -16,8 +16,7 @@
 //////////////////////////////////////////////////////////////////////
 // constructor
 //////////////////////////////////////////////////////////////////////
-ScriptParameter::ScriptParameter()
-     throw ()
+ScriptParameter::ScriptParameter() 
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -27,8 +26,7 @@ ScriptParameter::ScriptParameter()
 //////////////////////////////////////////////////////////////////////
 // destructor
 //////////////////////////////////////////////////////////////////////
-ScriptParameter::~ScriptParameter() 
-    throw ()
+ScriptParameter::~ScriptParameter()  
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -39,7 +37,6 @@ ScriptParameter::~ScriptParameter()
 // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
 //////////////////////////////////////////////////////////////////////
 void ScriptParameter::read ( SocketInputStream & iStream ) 
-	 throw ( ProtocolException , Error )
 {
 	__BEGIN_TRY
 
@@ -64,7 +61,6 @@ void ScriptParameter::read ( SocketInputStream & iStream )
 // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
 //////////////////////////////////////////////////////////////////////
 void ScriptParameter::write ( SocketOutputStream & oStream ) 
-     
 {
 	__BEGIN_TRY
 		
@@ -87,8 +83,7 @@ void ScriptParameter::write ( SocketOutputStream & oStream )
 //--------------------------------------------------------------------
 // getSize
 //--------------------------------------------------------------------
-PacketSize_t ScriptParameter::getSize()
-	throw()
+PacketSize_t ScriptParameter::getSize() 
 {
 	__BEGIN_TRY
 
@@ -108,7 +103,6 @@ PacketSize_t ScriptParameter::getSize()
 //
 //////////////////////////////////////////////////////////////////////
 string ScriptParameter::toString () 
-	
 {
 	__BEGIN_TRY
 
@@ -122,5 +116,7 @@ string ScriptParameter::toString ()
 	return msg.toString();
 
 	__END_CATCH
+
+	return NULL;
 }
 

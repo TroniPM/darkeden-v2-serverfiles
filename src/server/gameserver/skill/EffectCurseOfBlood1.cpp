@@ -84,7 +84,7 @@ void EffectCurseOfBlood1::unaffect()
 }
 
 string EffectCurseOfBlood1::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

@@ -27,7 +27,7 @@ public:
 	string toString() ;
 
 public:
-	void   	setPart(int part) throw() { m_Part = part; }
+	void   	setPart(int part)  { m_Part = part; }
 
 private:
 	ItemType_t	m_Part;	

@@ -64,27 +64,27 @@ public:
 
 	// get/set guild Name
 	const string& getGuildName()  { return m_GuildName; }
-	void setGuildName( const string& name ) throw() { m_GuildName = name; }
+	void setGuildName( const string& name )  { m_GuildName = name; }
 
 	// get/set guild master
 	const string& getGuildMaster()  { return m_GuildMaster; }
-	void setGuildMaster( const string& master ) throw() { m_GuildMaster = master; }
+	void setGuildMaster( const string& master )  { m_GuildMaster = master; }
 	
 	// get/set guild intro
 	const string& getGuildIntro()  { return m_GuildIntro; }
-	void setGuildIntro( const string& intro ) throw() { m_GuildIntro = intro; }
+	void setGuildIntro( const string& intro )  { m_GuildIntro = intro; }
 
 	// get/set guild state
 	GuildState_t getGuildState()  { return m_GuildState; }
-	void setGuildState( GuildState_t state ) throw() { m_GuildState = state; }
+	void setGuildState( GuildState_t state )  { m_GuildState = state; }
 
 	// get/set guild race
 	GuildRace_t getGuildRace()  { return m_GuildRace; }
-	void setGuildRace( GuildRace_t race ) throw() { m_GuildRace = race; }
+	void setGuildRace( GuildRace_t race )  { m_GuildRace = race; }
 
 	// get/set server group ID
 	ServerGroupID_t getServerGroupID()  { return m_ServerGroupID; }
-	void setServerGroupID( ServerGroupID_t serverGroupID ) throw() { m_ServerGroupID = serverGroupID; }
+	void setServerGroupID( ServerGroupID_t serverGroupID )  { m_ServerGroupID = serverGroupID; }
 
 
 private :
@@ -123,7 +123,7 @@ class GSAddGuildFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new GSAddGuild(); }
+	Packet* createPacket()  { return new GSAddGuild(); }
 
 	// get packet name
 	string getPacketName()  { return "GSAddGuild"; }

@@ -58,11 +58,11 @@ public:
 
 	// get / set ObjectID
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 	// get / set QuickSlotID
 	SlotID_t getSlotID()  { return m_SlotID; }
-	void setSlotID(SlotID_t SlotID) throw() { m_SlotID = SlotID; }
+	void setSlotID(SlotID_t SlotID)  { m_SlotID = SlotID; }
 
 
 private :
@@ -89,7 +89,7 @@ class CGReloadFromQuickSlotFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGReloadFromQuickSlot(); }
+	Packet* createPacket()  { return new CGReloadFromQuickSlot(); }
 
 	// get packet name
 	string getPacketName()  { return "CGReloadFromQuickSlot"; }

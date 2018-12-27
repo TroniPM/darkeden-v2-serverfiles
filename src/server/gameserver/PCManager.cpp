@@ -79,7 +79,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////////////
 PCManager::PCManager () 
-	throw ()
+	
 {
     __BEGIN_TRY
 
@@ -95,7 +95,7 @@ PCManager::PCManager ()
 // 컨테이너의 모든 객체들을 DB에 저장한 후, 삭제한다.
 //////////////////////////////////////////////////////////////////////////////
 PCManager::~PCManager () 
-	throw ()
+	
 {
     __BEGIN_TRY
     __END_CATCH
@@ -1932,7 +1932,7 @@ vector<uint> PCManager::getPCNumByRace() const
 // get debug string
 //////////////////////////////////////////////////////////////////////////////
 string PCManager::toString () const
-       throw ()
+       
 {
 	__BEGIN_TRY
 

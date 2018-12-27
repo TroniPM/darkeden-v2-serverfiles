@@ -75,7 +75,7 @@ void EffectDetectMine::unaffect(Zone* pZone , ZoneCoord_t x , ZoneCoord_t y , Ob
 }
 
 string EffectDetectMine::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

@@ -7,7 +7,7 @@
 #include "GCNotifyWin.h"
 
 void GCNotifyWin::read ( SocketInputStream & iStream ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -29,7 +29,7 @@ void GCNotifyWin::read ( SocketInputStream & iStream )
 }
 		    
 void GCNotifyWin::write ( SocketOutputStream & oStream ) const 
-     throw ( ProtocolException , Error )
+     
 {
 	__BEGIN_TRY
 		
@@ -51,7 +51,7 @@ void GCNotifyWin::write ( SocketOutputStream & oStream ) const
 }
 
 void GCNotifyWin::execute ( Player * pPlayer ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -61,7 +61,7 @@ void GCNotifyWin::execute ( Player * pPlayer )
 }
 
 string GCNotifyWin::toString () const
-       throw ()
+       
 {
 	__BEGIN_TRY
 		

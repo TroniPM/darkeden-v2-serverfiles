@@ -26,8 +26,8 @@ class GCMoveOK : public Packet {
 public :
 
 	// constructor
-	GCMoveOK() throw() {}
-	GCMoveOK(Coord_t x, Coord_t y, Dir_t dir) throw() : m_X(x), m_Y(y), m_Dir(dir) {}
+	GCMoveOK()  {}
+	GCMoveOK(Coord_t x, Coord_t y, Dir_t dir)  : m_X(x), m_Y(y), m_Dir(dir) {}
 
 
 public :
@@ -60,17 +60,17 @@ public :
 
 	// get/set X
 	Coord_t getX()  { return m_X; }
-	void setX(Coord_t x) throw() { m_X = x; }
+	void setX(Coord_t x)  { m_X = x; }
 	
 	// get/set Y
 	Coord_t getY()  { return m_Y; }
-	void setY(Coord_t y) throw() { m_Y = y ; }
+	void setY(Coord_t y)  { m_Y = y ; }
 
 	// get/set Dir
 	Dir_t getDir()  { return m_Dir; }
-	void setDir(Dir_t dir) throw() { m_Dir = dir; }
+	void setDir(Dir_t dir)  { m_Dir = dir; }
 
-	void setXYDir(Coord_t x, Coord_t y, Dir_t dir) throw() { m_X=x; m_Y=y; m_Dir=dir; }
+	void setXYDir(Coord_t x, Coord_t y, Dir_t dir)  { m_X=x; m_Y=y; m_Dir=dir; }
 	
 
 private : 
@@ -95,7 +95,7 @@ class  GCMoveOKFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCMoveOK(); }
+	Packet* createPacket()  { return new GCMoveOK(); }
 
 	// get packet name
 	string getPacketName()  { return "GCMoveOK"; }

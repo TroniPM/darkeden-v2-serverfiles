@@ -65,28 +65,28 @@ public :
 
 	// get/set object id
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t creatureID) throw() { m_ObjectID = creatureID; }
+	void setObjectID(ObjectID_t creatureID)  { m_ObjectID = creatureID; }
 
 	// get/set name
 	string getName()  { return m_Name; }
-	void setName(string name) throw() { m_Name = name; }
+	void setName(string name)  { m_Name = name; }
 
 /*
 	// get/set sprite type
 	SpriteType_t getSpriteType()  { return m_SpriteType; }
-	void setSpriteType(SpriteType_t spriteType) throw() { m_SpriteType = spriteType; }
+	void setSpriteType(SpriteType_t spriteType)  { m_SpriteType = spriteType; }
 
 	// get/set sub color
 	Color_t getSubColor()  { return m_SubColor; }
-	void setSubColor(Color_t color) throw() { m_SubColor = color; }
+	void setSubColor(Color_t color)  { m_SubColor = color; }
 */
 	// get/set main color
 	Color_t getMainColor()  { return m_MainColor; }
-	void setMainColor(Color_t color) throw() { m_MainColor = color; }
+	void setMainColor(Color_t color)  { m_MainColor = color; }
 
 	// get/set X
 	Coord_t getX()  { return m_X; }
-	void setXYDir(Coord_t x, Coord_t y, Dir_t Dir) throw() { m_X = x; m_Y = y; m_Dir = Dir; }
+	void setXYDir(Coord_t x, Coord_t y, Dir_t Dir)  { m_X = x; m_Y = y; m_Dir = Dir; }
 	
 	// get/set Y
 	Coord_t getY()  { return m_Y; }
@@ -96,22 +96,22 @@ public :
 
 	// get /set MaxHP
 	HP_t getMaxHP()  { return m_MaxHP; }
-	void setMaxHP(HP_t MaxHP) throw() { m_MaxHP = MaxHP; }
+	void setMaxHP(HP_t MaxHP)  { m_MaxHP = MaxHP; }
 
 	// get /set CurrentHP
 	HP_t getCurrentHP()  { return m_CurrentHP; }
-	void setCurrentHP(HP_t CurrentHP) throw() { m_CurrentHP = CurrentHP; }
+	void setCurrentHP(HP_t CurrentHP)  { m_CurrentHP = CurrentHP; }
 
 	// get/set ItemType
 	ItemType_t getItemType()  { return m_ItemType; }
-	void setItemType(ItemType_t ItemType) throw() { m_ItemType = ItemType; }
+	void setItemType(ItemType_t ItemType)  { m_ItemType = ItemType; }
 
 	// get/set GuildID
 	GuildID_t getGuildID()  { return m_GuildID; }
-	void setGuildID(GuildID_t GuildID) throw() { m_GuildID = GuildID; }
+	void setGuildID(GuildID_t GuildID)  { m_GuildID = GuildID; }
 
 	Level_t getLevel()  { return m_Level; }
-	void setLevel(Level_t CLevel) throw() { m_Level = CLevel; }
+	void setLevel(Level_t CLevel)  { m_Level = CLevel; }
 
 private :
 	
@@ -159,7 +159,7 @@ class GCAddWolfFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCAddWolf(); }
+	Packet* createPacket()  { return new GCAddWolf(); }
 
 	// get packet name
 	string getPacketName()  { return "GCAddWolf"; }

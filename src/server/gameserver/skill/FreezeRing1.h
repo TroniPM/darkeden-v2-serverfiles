@@ -16,8 +16,8 @@
 class FreezeRing1: public SkillHandler 
 {
 public:
-	FreezeRing1() throw() {}
-	~FreezeRing1() throw() {}
+	FreezeRing1()  {}
+	~FreezeRing1()  {}
 	
 public:
     string getSkillHandlerName()  { return "FreezeRing1"; }

@@ -372,13 +372,13 @@ private:
 class PetEnchantOption
 {
 public:
-	PetEnchantOption() throw() { m_Type = 0; m_Ratio = 0; }
-	~PetEnchantOption() throw() {}
+	PetEnchantOption()  { m_Type = 0; m_Ratio = 0; }
+	~PetEnchantOption()  {}
 
-	void setOptionType( OptionType_t type ) throw() { m_Type = type; }
+	void setOptionType( OptionType_t type )  { m_Type = type; }
 	OptionType_t getOptionType()  { return m_Type; }
 
-	void setRatio( int ratio ) throw() { m_Ratio = ratio; }
+	void setRatio( int ratio )  { m_Ratio = ratio; }
 	int getRatio()  { return m_Ratio; }
 
 private:
@@ -420,8 +420,8 @@ public:
 
 	// gamble 관련
 	void addGambleOption(Item::ItemClass itemClass, uint level, OptionType_t optionType) throw(DuplicatedException, Error);
-	const vector<OptionType_t>& getPossibleGambleOptionVector(Item::ItemClass itemClass, uint level) throw()	{ return m_GambleOptions[itemClass][level]; }
-	int	getTotalGambleRatio(Item::ItemClass itemClass, uint level) throw()	{ return m_TotalGambleRatio[itemClass][level]; }
+	const vector<OptionType_t>& getPossibleGambleOptionVector(Item::ItemClass itemClass, uint level) 	{ return m_GambleOptions[itemClass][level]; }
+	int	getTotalGambleRatio(Item::ItemClass itemClass, uint level) 	{ return m_TotalGambleRatio[itemClass][level]; }
 
 	// rare enchant 관련
 	int getRareUpgradeRatio( OptionType_t optionType, bool success );
@@ -430,8 +430,8 @@ public:
 	void addPetEnchantOption(PetEnchantOption* pPetEnchantOption) ;
 	const list<PetEnchantOption*>& getPetEnchantOptionList() const { return m_PetEnchantOptionList; }
 
-	void setTotalPetEnchantOption( int total ) throw() { m_ToTalPetEnchantOption = total; }
-	int getTotalPetEnchantOption() throw() { return m_ToTalPetEnchantOption; }
+	void setTotalPetEnchantOption( int total )  { m_ToTalPetEnchantOption = total; }
+	int getTotalPetEnchantOption()  { return m_ToTalPetEnchantOption; }
 
 	string toString() ;
 

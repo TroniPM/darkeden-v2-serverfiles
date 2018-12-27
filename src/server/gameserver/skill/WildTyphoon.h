@@ -16,8 +16,8 @@
 class WildTyphoon : public SkillHandler 
 {
 public:
-	WildTyphoon() throw() {}
-	~WildTyphoon() throw() {}
+	WildTyphoon()  {}
+	~WildTyphoon()  {}
 	
 public:
     string getSkillHandlerName()  { return "WildTyphoon"; }

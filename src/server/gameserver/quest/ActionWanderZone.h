@@ -29,7 +29,7 @@ public:
 
 public :
 	BYTE getMovePercentage()  { return m_MovePercentage; }
-	void setMovePercentage(BYTE movePercentage) throw() { m_MovePercentage = movePercentage; }
+	void setMovePercentage(BYTE movePercentage)  { m_MovePercentage = movePercentage; }
 
 private :
 	BYTE        m_MovePercentage;	

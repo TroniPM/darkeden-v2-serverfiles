@@ -55,7 +55,7 @@ public:
 
 	// get/set ObjectID
 	ObjectID_t getObjectID()   { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 	// get packet's debug string
 	string toString() ;
@@ -80,16 +80,16 @@ class CGGetOffMotorCycleFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGGetOffMotorCycleFactory() throw() {}
+	CGGetOffMotorCycleFactory()  {}
 	
 	// destructor
-	virtual ~CGGetOffMotorCycleFactory() throw() {}
+	virtual ~CGGetOffMotorCycleFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGGetOffMotorCycle(); }
+	Packet* createPacket()  { return new CGGetOffMotorCycle(); }
 
 	// get packet name
 	string getPacketName()  { return "CGGetOffMotorCycle"; }

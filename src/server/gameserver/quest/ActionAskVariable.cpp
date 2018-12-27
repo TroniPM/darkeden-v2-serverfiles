@@ -907,7 +907,7 @@ void ActionAskVariable::execute (Creature * pCreature1 , Creature * pCreature2)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionAskVariable::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

@@ -113,7 +113,7 @@ void EffectDecayCorpse::unaffect (Creature* pCreature)
 }
 
 string EffectDecayCorpse::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 

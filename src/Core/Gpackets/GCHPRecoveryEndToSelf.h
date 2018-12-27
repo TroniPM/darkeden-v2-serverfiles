@@ -59,7 +59,7 @@ public :
 
 	// get /set CurrentHP
 	HP_t getCurrentHP()  { return m_CurrentHP; }
-	void setCurrentHP(HP_t CurrentHP) throw() { m_CurrentHP = CurrentHP; }
+	void setCurrentHP(HP_t CurrentHP)  { m_CurrentHP = CurrentHP; }
 
 private :
 	
@@ -82,7 +82,7 @@ class GCHPRecoveryEndToSelfFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCHPRecoveryEndToSelf(); }
+	Packet* createPacket()  { return new GCHPRecoveryEndToSelf(); }
 
 	// get packet name
 	string getPacketName()  { return "GCHPRecoveryEndToSelf"; }

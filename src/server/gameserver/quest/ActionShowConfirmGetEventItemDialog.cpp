@@ -69,7 +69,7 @@ void ActionShowConfirmGetEventItemDialog::execute (Creature * pCreature1, Creatu
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionShowConfirmGetEventItemDialog::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 

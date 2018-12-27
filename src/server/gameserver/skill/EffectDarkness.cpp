@@ -137,7 +137,7 @@ void EffectDarkness::unaffect(Zone* pZone , ZoneCoord_t x , ZoneCoord_t y , Obje
 }
 
 string EffectDarkness::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

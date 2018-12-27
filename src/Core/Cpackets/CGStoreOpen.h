@@ -62,16 +62,16 @@ class CGStoreOpenFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGStoreOpenFactory() throw() {}
+	CGStoreOpenFactory()  {}
 	
 	// destructor
-	virtual ~CGStoreOpenFactory() throw() {}
+	virtual ~CGStoreOpenFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGStoreOpen(); }
+	Packet* createPacket()  { return new CGStoreOpen(); }
 
 	// get packet name
 	string getPacketName()  { return "CGStoreOpen"; }

@@ -34,7 +34,7 @@ public:
 	~GoodsInventory() ;
 
 public:
-	ListItem& getGoods() throw() { return m_Goods; }
+	ListItem& getGoods()  { return m_Goods; }
 
 	// 아이템 추가
 	void addItem( string ID, Item* pItem ) ;
@@ -46,7 +46,7 @@ public:
 	Item* getItem( ObjectID_t oid ) ;
 
 	// 인벤토리가 비었나?
-	bool empty() throw() { return m_Goods.empty(); }
+	bool empty()  { return m_Goods.empty(); }
 
 	void clear() ;
 

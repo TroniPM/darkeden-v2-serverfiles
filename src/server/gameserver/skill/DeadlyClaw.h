@@ -17,7 +17,7 @@ class DeadlyClaw : public SkillHandler
 {
 public:
 	DeadlyClaw() ;
-	~DeadlyClaw() throw() {}
+	~DeadlyClaw()  {}
 	
 public:
     string getSkillHandlerName()  { return "DeadlyClaw"; }

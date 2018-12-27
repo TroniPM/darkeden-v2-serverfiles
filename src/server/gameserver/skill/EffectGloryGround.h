@@ -29,7 +29,7 @@ public:
 	string toString() ;
 
 public:
-	void setUserObjectID(ObjectID_t oid) throw() { m_UserObjectID = oid; }
+	void setUserObjectID(ObjectID_t oid)  { m_UserObjectID = oid; }
 	ObjectID_t getUserObjectID()  { return m_UserObjectID; }
 
 	void setSlayer( bool bVampire = true ) { m_bSlayer = bVampire; }

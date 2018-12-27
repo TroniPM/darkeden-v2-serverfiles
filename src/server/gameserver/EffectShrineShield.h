@@ -35,7 +35,7 @@ public:
 
 public:
 	int getTick(void) const { return m_Tick; }
-	void   setTick(Turn_t Tick) throw() { m_Tick = Tick; }
+	void   setTick(Turn_t Tick)  { m_Tick = Tick; }
 
 	int getShrineID() const { return m_ShrineID; }
 	void setShrineID(int id) { m_ShrineID = id; }

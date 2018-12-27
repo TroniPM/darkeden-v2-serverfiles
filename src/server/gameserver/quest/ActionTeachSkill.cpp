@@ -190,7 +190,7 @@ void ActionTeachSkill::executeVampire (Creature * pCreature1 , Creature * pCreat
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionTeachSkill::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

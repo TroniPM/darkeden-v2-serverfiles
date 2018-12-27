@@ -45,7 +45,7 @@ public :
 	// 최적화시, 미리 계산된 정수를 사용한다.
 	PacketSize_t getSize ();
 
-	static uint getMaxSize () throw () { 
+	static uint getMaxSize ()  { 
 		return szBYTE + (ExtraSlotInfo::getMaxSize()* 1);
 	}
 
@@ -54,16 +54,16 @@ public :
 
 	// get / set ListNumber
 	BYTE getListNum()  { return m_ListNum; }
-	void setListNum(BYTE ListNum) throw() { m_ListNum = ListNum; }
+	void setListNum(BYTE ListNum)  { m_ListNum = ListNum; }
 
 	// add / delete / clear S List
-	void addListElement(ExtraSlotInfo* pExtraSlotInfo) throw() { m_ExtraSlotInfoList.push_back(pExtraSlotInfo); }
+	void addListElement(ExtraSlotInfo* pExtraSlotInfo)  { m_ExtraSlotInfoList.push_back(pExtraSlotInfo); }
 
 	// ClearList
-	void clearList() throw() { m_ExtraSlotInfoList.clear(); m_ListNum = 0; }
+	void clearList()  { m_ExtraSlotInfoList.clear(); m_ListNum = 0; }
 
 	// pop front Element in Status List
-	ExtraSlotInfo* popFrontListElement() throw() 
+	ExtraSlotInfo* popFrontListElement()  
 	{ 
 		ExtraSlotInfo* TempExtraSlotInfo = m_ExtraSlotInfoList.front(); m_ExtraSlotInfoList.pop_front(); return TempExtraSlotInfo; 
 	}

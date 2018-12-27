@@ -102,7 +102,7 @@ void ActionJoinRaceWar::execute (Creature * pCreature1 , Creature * pCreature2)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionJoinRaceWar::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

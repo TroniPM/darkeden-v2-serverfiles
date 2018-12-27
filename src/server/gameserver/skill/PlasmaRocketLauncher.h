@@ -16,8 +16,8 @@
 class PlasmaRocketLauncher: public SkillHandler 
 {
 public:
-	PlasmaRocketLauncher() throw() {}
-	~PlasmaRocketLauncher() throw() {}
+	PlasmaRocketLauncher()  {}
+	~PlasmaRocketLauncher()  {}
 
 public:
     string getSkillHandlerName()  { return "PlasmaRocketLauncher"; }

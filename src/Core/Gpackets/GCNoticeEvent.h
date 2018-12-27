@@ -117,8 +117,8 @@ class GCNoticeEvent : public Packet
 {
 
 public:
-	GCNoticeEvent() throw() { m_Code = NOTICE_EVENT_MAX; m_Parameter = 0;}
-	virtual ~GCNoticeEvent() throw() {}
+	GCNoticeEvent()  { m_Code = NOTICE_EVENT_MAX; m_Parameter = 0;}
+	virtual ~GCNoticeEvent()  {}
 
 public:
 	void read(SocketInputStream & iStream) ;
@@ -132,13 +132,13 @@ public:
 	
 public:
 	BYTE getCode(void)  { return m_Code;}
-	void setCode(WORD code) throw() { m_Code = code;}
+	void setCode(WORD code)  { m_Code = code;}
 
 	uint getParameter(void)  { return m_Parameter; }
-	void setParameter(uint parameter) throw() { m_Parameter = parameter; }
+	void setParameter(uint parameter)  { m_Parameter = parameter; }
 
 #ifndef __GAME_CLIENT__
-	void setParameter(WORD hiWord, WORD loWord) throw() { m_Code = makeDWORD(hiWord, loWord); }
+	void setParameter(WORD hiWord, WORD loWord)  { m_Code = makeDWORD(hiWord, loWord); }
 #endif
 
 private: 
@@ -155,7 +155,7 @@ private:
 class GCNoticeEventFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCNoticeEvent(); }
+	Packet* createPacket()  { return new GCNoticeEvent(); }
 	string getPacketName()  { return "GCNoticeEvent"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_NOTICE_EVENT; }
 	PacketSize_t getPacketMaxSize()  { return szWORD + szuint; }

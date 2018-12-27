@@ -16,8 +16,8 @@
 class DeleoEfficio : public SkillHandler 
 {
 public:
-	DeleoEfficio() throw() {}
-	~DeleoEfficio() throw() {}
+	DeleoEfficio()  {}
+	~DeleoEfficio()  {}
 	
 public:
     string getSkillHandlerName()  { return "DeleoEfficio"; }

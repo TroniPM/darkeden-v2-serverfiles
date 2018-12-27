@@ -776,7 +776,7 @@ HitRoll.o: HitRoll.cpp HitRoll.h ../../../Core/ModifyInfo.h \
  ../../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
  /usr/include/getopt.h ../../../Core/EffectInfo.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -875,7 +875,7 @@ SkillHandler.o: SkillHandler.cpp SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -985,7 +985,7 @@ SkillHandlerManager.o: SkillHandlerManager.cpp SkillHandlerManager.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -1331,7 +1331,7 @@ SkillFormula.o: SkillFormula.cpp SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -1504,7 +1504,7 @@ SkillUtil.o: SkillUtil.cpp SkillUtil.h ../../../Core/ModifyInfo.h \
  /usr/include/sys/time.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
  /usr/include/getopt.h ../../../Core/EffectInfo.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -1581,7 +1581,7 @@ SkillUtil.o: SkillUtil.cpp SkillUtil.h ../../../Core/ModifyInfo.h \
  ../GDRLairManager.h ../FiniteStateMachine.h \
  ../GDRLairAbstractStates.h SummonGroundElemental.h SkillHandler.h \
  Skill.h ../EventHeadCount.h ../../../Core/Properties.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../GameServerInfoManager.h ../../GameServerInfo.h \
  ../mission/QuestManager.h ../mission/QuestInfo.h \
@@ -1706,7 +1706,7 @@ SimpleMeleeSkill.o: SimpleMeleeSkill.cpp SimpleMeleeSkill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -1816,7 +1816,7 @@ SimpleMissileSkill.o: SimpleMissileSkill.cpp SimpleMissileSkill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -1930,7 +1930,7 @@ SimpleTileMeleeSkill.o: SimpleTileMeleeSkill.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -2041,7 +2041,7 @@ SimpleLinearMeleeSkill.o: SimpleLinearMeleeSkill.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -2153,7 +2153,7 @@ SimpleCureSkill.o: SimpleCureSkill.cpp SimpleCureSkill.h SimpleSkill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -2270,7 +2270,7 @@ SimpleTileCureSkill.o: SimpleTileCureSkill.cpp SimpleTileCureSkill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -2393,7 +2393,7 @@ SimpleTileMissileSkill.o: SimpleTileMissileSkill.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -2506,7 +2506,7 @@ AttackMelee.o: AttackMelee.cpp AttackMelee.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -2619,7 +2619,7 @@ AttackArms.o: AttackArms.cpp AttackArms.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -2736,7 +2736,7 @@ DoubleImpact.o: DoubleImpact.cpp DoubleImpact.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -2843,7 +2843,7 @@ TripleSlasher.o: TripleSlasher.cpp TripleSlasher.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -2950,7 +2950,7 @@ RainbowSlasher.o: RainbowSlasher.cpp RainbowSlasher.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -3057,7 +3057,7 @@ ThunderSpark.o: ThunderSpark.cpp ThunderSpark.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -3164,7 +3164,7 @@ DancingSword.o: DancingSword.cpp DancingSword.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -3275,7 +3275,7 @@ CrossCounter.o: CrossCounter.cpp CrossCounter.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -3390,7 +3390,7 @@ FlashSliding.o: FlashSliding.cpp FlashSliding.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -3500,7 +3500,7 @@ LightningHand.o: LightningHand.cpp LightningHand.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -3610,7 +3610,7 @@ SwordWave.o: SwordWave.cpp SwordWave.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -3718,7 +3718,7 @@ SnakeCombo.o: SnakeCombo.cpp SnakeCombo.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -3825,7 +3825,7 @@ SingleBlow.o: SingleBlow.cpp SingleBlow.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -3932,7 +3932,7 @@ SpiralSlay.o: SpiralSlay.cpp SpiralSlay.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -4039,7 +4039,7 @@ TripleBreak.o: TripleBreak.cpp TripleBreak.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -4146,7 +4146,7 @@ WildSmash.o: WildSmash.cpp WildSmash.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -4253,7 +4253,7 @@ GhostBlade.o: GhostBlade.cpp GhostBlade.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -4364,7 +4364,7 @@ PotentialExplosion.o: PotentialExplosion.cpp PotentialExplosion.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -4475,7 +4475,7 @@ ShadowWalk.o: ShadowWalk.cpp ShadowWalk.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -4585,7 +4585,7 @@ ChargingPower.o: ChargingPower.cpp ChargingPower.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -4695,7 +4695,7 @@ HurricaneCombo.o: HurricaneCombo.cpp HurricaneCombo.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -4802,7 +4802,7 @@ TornadoSever.o: TornadoSever.cpp TornadoSever.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -4910,7 +4910,7 @@ QuickFire.o: QuickFire.cpp QuickFire.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -5022,7 +5022,7 @@ DoubleShot.o: DoubleShot.cpp DoubleShot.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -5134,7 +5134,7 @@ TripleShot.o: TripleShot.cpp TripleShot.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -5246,7 +5246,7 @@ MultiShot.o: MultiShot.cpp MultiShot.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -5358,7 +5358,7 @@ HeadShot.o: HeadShot.cpp HeadShot.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -5475,7 +5475,7 @@ Piercing.o: Piercing.cpp Piercing.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -5587,7 +5587,7 @@ Sniping.o: Sniping.cpp Sniping.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -5698,7 +5698,7 @@ CreateHolyWater.o: CreateHolyWater.cpp CreateHolyWater.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -5808,7 +5808,7 @@ Light.o: Light.cpp Light.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -5918,7 +5918,7 @@ DetectHidden.o: DetectHidden.cpp DetectHidden.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -6028,7 +6028,7 @@ AuraBall.o: AuraBall.cpp AuraBall.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -6135,7 +6135,7 @@ Bless.o: Bless.cpp Bless.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -6251,7 +6251,7 @@ ContinualLight.o: ContinualLight.cpp ContinualLight.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -6364,7 +6364,7 @@ Flare.o: Flare.cpp Flare.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -6479,7 +6479,7 @@ Purify.o: Purify.cpp Purify.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -6592,7 +6592,7 @@ AuraRing.o: AuraRing.cpp AuraRing.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -6699,7 +6699,7 @@ Striking.o: Striking.cpp Striking.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -6813,7 +6813,7 @@ DetectInvisibility.o: DetectInvisibility.cpp DetectInvisibility.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -6923,7 +6923,7 @@ AuraShield.o: AuraShield.cpp AuraShield.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -7033,7 +7033,7 @@ Visible.o: Visible.cpp Visible.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -7148,7 +7148,7 @@ CureLightWounds.o: CureLightWounds.cpp CureLightWounds.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -7255,7 +7255,7 @@ CurePoison.o: CurePoison.cpp CurePoison.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -7371,7 +7371,7 @@ ProtectionFromPoison.o: ProtectionFromPoison.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -7484,7 +7484,7 @@ CauseLightWounds.o: CauseLightWounds.cpp CauseLightWounds.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -7591,7 +7591,7 @@ CureSeriousWounds.o: CureSeriousWounds.cpp CureSeriousWounds.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -7698,7 +7698,7 @@ RemoveCurse.o: RemoveCurse.cpp RemoveCurse.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -7814,7 +7814,7 @@ ProtectionFromCurse.o: ProtectionFromCurse.cpp ProtectionFromCurse.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -7927,7 +7927,7 @@ CauseSeriousWounds.o: CauseSeriousWounds.cpp CauseSeriousWounds.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -8034,7 +8034,7 @@ CureCriticalWounds.o: CureCriticalWounds.cpp CureCriticalWounds.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -8144,7 +8144,7 @@ Sacrifice.o: Sacrifice.cpp Sacrifice.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -8255,7 +8255,7 @@ CauseCriticalWounds.o: CauseCriticalWounds.cpp CauseCriticalWounds.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -8370,7 +8370,7 @@ ProtectionFromAcid.o: ProtectionFromAcid.cpp ProtectionFromAcid.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -8483,7 +8483,7 @@ CureAll.o: CureAll.cpp CureAll.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -8602,7 +8602,7 @@ RegenerationSkill.o: RegenerationSkill.cpp RegenerationSkill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -8717,7 +8717,7 @@ BloodDrain.o: BloodDrain.cpp BloodDrain.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -8832,7 +8832,7 @@ PoisonousHands.o: PoisonousHands.cpp PoisonousHands.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -8939,7 +8939,7 @@ GreenPoison.o: GreenPoison.cpp GreenPoison.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -9053,7 +9053,7 @@ YellowPoison.o: YellowPoison.cpp YellowPoison.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -9167,7 +9167,7 @@ DarkBluePoison.o: DarkBluePoison.cpp DarkBluePoison.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -9286,7 +9286,7 @@ GreenStalker.o: GreenStalker.cpp GreenStalker.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -9405,7 +9405,7 @@ AcidTouch.o: AcidTouch.cpp AcidTouch.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -9512,7 +9512,7 @@ AcidBolt.o: AcidBolt.cpp AcidBolt.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -9619,7 +9619,7 @@ AcidBall.o: AcidBall.cpp AcidBall.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -9726,7 +9726,7 @@ AcidSwamp.o: AcidSwamp.cpp AcidSwamp.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -9840,7 +9840,7 @@ Paralyze.o: Paralyze.cpp Paralyze.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -9958,7 +9958,7 @@ Paralyze.o: Paralyze.cpp Paralyze.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -10076,7 +10076,7 @@ MistOfSoul1.o: MistOfSoul1.cpp MistOfSoul1.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -10194,7 +10194,7 @@ MistOfSoul1.o: MistOfSoul1.cpp MistOfSoul1.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -10312,7 +10312,7 @@ FreezeRing2.o: FreezeRing2.cpp FreezeRing2.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -10429,7 +10429,7 @@ Doom.o: Doom.cpp Doom.h SkillHandler.h Skill.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -10544,7 +10544,7 @@ Hide.o: Hide.cpp Hide.h SkillHandler.h Skill.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -10654,7 +10654,7 @@ Darkness.o: Darkness.cpp Darkness.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -10709,7 +10709,7 @@ Darkness.o: Darkness.cpp Darkness.h SkillHandler.h Skill.h \
  ../../Thread.h ../../pthreadAPI.h EffectDarkness.h ../EffectLoader.h \
  ../MonsterCorpse.h ../ItemFactory.h ../Corpse.h ../ctf/FlagManager.h \
  ../war/Work.h ../war/Scheduler.h ../war/Schedule.h \
- ../../../Core/Gpackets/GCFlagWarStatus.h /usr/include/STL/map \
+ ../../../Core/Gpackets/GCFlagWarStatus.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h \
  ../../../Core/Gpackets/GCSkillToTileOK1.h \
@@ -10774,7 +10774,7 @@ Invisibility.o: Invisibility.cpp Invisibility.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -10884,7 +10884,7 @@ TransformToWolf.o: TransformToWolf.cpp TransformToWolf.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -10998,7 +10998,7 @@ TransformToBat.o: TransformToBat.cpp TransformToBat.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -11114,7 +11114,7 @@ Unburrow.o: Unburrow.cpp Unburrow.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -11222,7 +11222,7 @@ Untransform.o: Untransform.cpp Untransform.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -11334,7 +11334,7 @@ Uninvisibility.o: Uninvisibility.cpp Uninvisibility.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -11441,7 +11441,7 @@ EatCorpse.o: EatCorpse.cpp EatCorpse.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -11557,7 +11557,7 @@ Howl.o: Howl.cpp Howl.h SkillHandler.h Skill.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -11668,7 +11668,7 @@ ThrowHolyWater.o: ThrowHolyWater.cpp ThrowHolyWater.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -11780,7 +11780,7 @@ Restore.o: Restore.cpp Restore.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -11833,7 +11833,7 @@ Restore.o: Restore.cpp Restore.h SkillHandler.h Skill.h \
  ../../chinabilling/CBillingInfo.h \
  ../../../Core/Gpackets/GCReconnectLogin.h ../gameguard/CSAuth.h \
  ../../Thread.h ../../pthreadAPI.h ../PCFinder.h ../NPC.h \
- ../couple/PartnerWaitingManager.h /usr/include/STL/map \
+ ../couple/PartnerWaitingManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../TradeManager.h ../GuildManager.h \
  ../Guild.h EffectBloodDrain.h ../EffectLoader.h EffectRestore.h \
@@ -11899,7 +11899,7 @@ BloodyMarker.o: BloodyMarker.cpp BloodyMarker.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -12011,7 +12011,7 @@ BloodyTunnel.o: BloodyTunnel.cpp BloodyTunnel.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -12123,7 +12123,7 @@ Resurrect.o: Resurrect.cpp Resurrect.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -12177,7 +12177,7 @@ Resurrect.o: Resurrect.cpp Resurrect.h SkillHandler.h Skill.h \
  ../../../Core/Gpackets/GCReconnectLogin.h ../gameguard/CSAuth.h \
  ../../Thread.h ../../pthreadAPI.h ../EffectComa.h ../EffectLoader.h \
  ../EffectKillAftermath.h ../../../Core/Properties.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../../Core/Gpackets/GCSkillToObjectOK1.h \
  ../../../Core/Gpackets/GCSkillToObjectOK2.h \
@@ -12240,7 +12240,7 @@ Resurrect.o: Resurrect.cpp Resurrect.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -12294,7 +12294,7 @@ Resurrect.o: Resurrect.cpp Resurrect.h SkillHandler.h Skill.h \
  ../../../Core/Gpackets/GCReconnectLogin.h ../gameguard/CSAuth.h \
  ../../Thread.h ../../pthreadAPI.h ../EffectComa.h ../EffectLoader.h \
  ../EffectKillAftermath.h ../../../Core/Properties.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../../Core/Gpackets/GCSkillToObjectOK1.h \
  ../../../Core/Gpackets/GCSkillToObjectOK2.h \
@@ -12357,7 +12357,7 @@ Seduction.o: Seduction.cpp Seduction.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -12471,7 +12471,7 @@ WindDivider.o: WindDivider.cpp WindDivider.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -12579,7 +12579,7 @@ Earthquake.o: Earthquake.cpp Earthquake.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -12687,7 +12687,7 @@ MindControl.o: MindControl.cpp MindControl.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -12803,7 +12803,7 @@ BloodyNail.o: BloodyNail.cpp BloodyNail.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -12910,7 +12910,7 @@ BloodyKnife.o: BloodyKnife.cpp BloodyKnife.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -13017,7 +13017,7 @@ BloodyBall.o: BloodyBall.cpp BloodyBall.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -13125,7 +13125,7 @@ BloodySpear.o: BloodySpear.cpp BloodySpear.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -13232,7 +13232,7 @@ ThunderBolt.o: ThunderBolt.cpp ThunderBolt.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -13340,7 +13340,7 @@ Expansion.o: Expansion.cpp Expansion.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -13451,7 +13451,7 @@ MiracleShield.o: MiracleShield.cpp MiracleShield.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -13562,7 +13562,7 @@ ThunderFlash.o: ThunderFlash.cpp ThunderFlash.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -13672,7 +13672,7 @@ Berserker.o: Berserker.cpp Berserker.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -13783,7 +13783,7 @@ MoonlightSever.o: MoonlightSever.cpp MoonlightSever.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -13890,7 +13890,7 @@ ShadowDancing.o: ShadowDancing.cpp ShadowDancing.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -13997,7 +13997,7 @@ Typhoon.o: Typhoon.cpp Typhoon.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -14105,7 +14105,7 @@ PoisonStrike.o: PoisonStrike.cpp PoisonStrike.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -14212,7 +14212,7 @@ AcidStrike.o: AcidStrike.cpp AcidStrike.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -14319,7 +14319,7 @@ BloodyStrike.o: BloodyStrike.cpp BloodyStrike.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -14426,7 +14426,7 @@ PoisonStorm.o: PoisonStorm.cpp PoisonStorm.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -14541,7 +14541,7 @@ AcidStorm.o: AcidStorm.cpp AcidStorm.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -14656,7 +14656,7 @@ AcidStorm.o: AcidStorm.cpp AcidStorm.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -14771,7 +14771,7 @@ AcidStorm.o: AcidStorm.cpp AcidStorm.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -14886,7 +14886,7 @@ BloodyStorm.o: BloodyStorm.cpp BloodyStorm.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -15001,7 +15001,7 @@ InstallMine.o: InstallMine.cpp InstallMine.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -15114,7 +15114,7 @@ DisarmMine.o: DisarmMine.cpp DisarmMine.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -15228,7 +15228,7 @@ CreateBomb.o: CreateBomb.cpp CreateBomb.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -15338,7 +15338,7 @@ CreateMine.o: CreateMine.cpp CreateMine.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -15448,7 +15448,7 @@ Extreme.o: Extreme.cpp Extreme.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -15563,7 +15563,7 @@ Revealer.o: Revealer.cpp Revealer.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -15673,7 +15673,7 @@ VigorDrop.o: VigorDrop.cpp VigorDrop.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -15788,7 +15788,7 @@ EnergyDrop.o: EnergyDrop.cpp EnergyDrop.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -15903,7 +15903,7 @@ EnergyDrop.o: EnergyDrop.cpp EnergyDrop.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -16018,7 +16018,7 @@ CriticalGround.o: CriticalGround.cpp CriticalGround.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -16126,7 +16126,7 @@ ThunderStorm.o: ThunderStorm.cpp ThunderStorm.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -16234,7 +16234,7 @@ Peace.o: Peace.cpp Peace.h SimpleSkill.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -16348,7 +16348,7 @@ Activation.o: Activation.cpp Activation.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -16458,7 +16458,7 @@ HolyBlast.o: HolyBlast.cpp HolyBlast.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -16575,7 +16575,7 @@ Sanctuary.o: Sanctuary.cpp Sanctuary.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -16690,7 +16690,7 @@ Reflection.o: Reflection.cpp Reflection.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -16799,7 +16799,7 @@ Hymn.o: Hymn.cpp Hymn.h SkillHandler.h Skill.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -16915,7 +16915,7 @@ Death.o: Death.cpp Death.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -17031,7 +17031,7 @@ Mephisto.o: Mephisto.cpp Mephisto.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -17146,7 +17146,7 @@ Transfusion.o: Transfusion.cpp Transfusion.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -17200,7 +17200,7 @@ Transfusion.o: Transfusion.cpp Transfusion.h SkillHandler.h Skill.h \
  ../../../Core/Gpackets/GCReconnectLogin.h ../gameguard/CSAuth.h \
  ../../Thread.h ../../pthreadAPI.h ../EffectComa.h ../EffectLoader.h \
  ../EffectKillAftermath.h ../../../Core/Properties.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../../Core/Gpackets/GCSkillToTileOK1.h \
  ../../../Core/Gpackets/GCSkillToTileOK2.h \
@@ -17265,7 +17265,7 @@ MentalSword.o: MentalSword.cpp MentalSword.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -17372,7 +17372,7 @@ SummonCasket.o: SummonCasket.cpp SummonCasket.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -17484,7 +17484,7 @@ OpenCasket.o: OpenCasket.cpp OpenCasket.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -17599,7 +17599,7 @@ ObservingEye.o: ObservingEye.cpp ObservingEye.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -17715,7 +17715,7 @@ SummonMonsters.o: SummonMonsters.cpp SummonMonsters.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -17825,7 +17825,7 @@ BloodyWave.o: BloodyWave.cpp BloodyWave.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -17933,7 +17933,7 @@ BloodyMasterWave.o: BloodyMasterWave.cpp BloodyMasterWave.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -18041,7 +18041,7 @@ GroundAttack.o: GroundAttack.cpp GroundAttack.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -18155,7 +18155,7 @@ MeteorStrike.o: MeteorStrike.cpp MeteorStrike.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -18269,7 +18269,7 @@ Hallucination.o: Hallucination.cpp Hallucination.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -18385,7 +18385,7 @@ DuplicateSelf.o: DuplicateSelf.cpp DuplicateSelf.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -18495,7 +18495,7 @@ BloodyWall.o: BloodyWall.cpp BloodyWall.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -18610,7 +18610,7 @@ BloodySnake.o: BloodySnake.cpp BloodySnake.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -18726,7 +18726,7 @@ BloodyWarp.o: BloodyWarp.cpp BloodyWarp.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -18833,7 +18833,7 @@ SoulChain.o: SoulChain.cpp SoulChain.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -18887,7 +18887,7 @@ SoulChain.o: SoulChain.cpp SoulChain.h SkillHandler.h Skill.h \
  ../../../Core/Gpackets/GCReconnectLogin.h ../gameguard/CSAuth.h \
  ../../Thread.h ../../pthreadAPI.h EffectSoulChain.h ../EffectLoader.h \
  ../PCFinder.h ../NPC.h ../couple/PartnerWaitingManager.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../ZoneInfoManager.h ../ZoneInfo.h ../PKZoneInfoManager.h \
  ../../../Core/Cpackets/CGSay.h \
@@ -18952,7 +18952,7 @@ WideLightning.o: WideLightning.cpp WideLightning.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -19067,7 +19067,7 @@ SharpShield.o: SharpShield.cpp SharpShield.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -19177,7 +19177,7 @@ GunShotGuidance.o: GunShotGuidance.cpp GunShotGuidance.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -19293,7 +19293,7 @@ AirShield.o: AirShield.cpp AirShield.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -19403,7 +19403,7 @@ BulletOfLight.o: BulletOfLight.cpp BulletOfLight.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -19515,7 +19515,7 @@ HandsOfWisdom.o: HandsOfWisdom.cpp HandsOfWisdom.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -19622,7 +19622,7 @@ LightBall.o: LightBall.cpp LightBall.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -19729,7 +19729,7 @@ HolyArrow.o: HolyArrow.cpp HolyArrow.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -19836,7 +19836,7 @@ Rebuke.o: Rebuke.cpp Rebuke.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -19947,7 +19947,7 @@ SpiritGuard.o: SpiritGuard.cpp SpiritGuard.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -20057,7 +20057,7 @@ Regeneration.o: Regeneration.cpp Regeneration.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -20171,7 +20171,7 @@ PowerOfLand.o: PowerOfLand.cpp PowerOfLand.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -20286,7 +20286,7 @@ TurnUndead.o: TurnUndead.cpp TurnUndead.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -20398,7 +20398,7 @@ Armageddon.o: Armageddon.cpp Armageddon.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -20513,7 +20513,7 @@ BloodyBreaker.o: BloodyBreaker.cpp BloodyBreaker.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -20626,7 +20626,7 @@ RapidGliding.o: RapidGliding.cpp RapidGliding.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -20736,7 +20736,7 @@ MagicElusion.o: MagicElusion.cpp MagicElusion.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -20851,7 +20851,7 @@ PoisonMesh.o: PoisonMesh.cpp PoisonMesh.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -20969,7 +20969,7 @@ IllusionOfAvenge.o: IllusionOfAvenge.cpp IllusionOfAvenge.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -21081,7 +21081,7 @@ WillOfLife.o: WillOfLife.cpp WillOfLife.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -21197,7 +21197,7 @@ DenialMagic.o: DenialMagic.cpp DenialMagic.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -21307,7 +21307,7 @@ Requital.o: Requital.cpp Requital.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -21420,7 +21420,7 @@ Concealment.o: Concealment.cpp Concealment.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -21530,7 +21530,7 @@ Concealment.o: Concealment.cpp Concealment.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -21640,7 +21640,7 @@ Concealment.o: Concealment.cpp Concealment.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -21750,7 +21750,7 @@ Concealment.o: Concealment.cpp Concealment.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -21860,7 +21860,7 @@ Concealment.o: Concealment.cpp Concealment.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -21970,7 +21970,7 @@ SquallyBarrier1.o: SquallyBarrier1.cpp SquallyBarrier1.h SkillHandler.h Skill.h 
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -22080,7 +22080,7 @@ SquallyBarrier2.o: SquallyBarrier2.cpp SquallyBarrier2.h SkillHandler.h Skill.h 
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -22190,7 +22190,7 @@ SquallyBarrier2.o: SquallyBarrier2.cpp SquallyBarrier2.h SkillHandler.h Skill.h 
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -22300,7 +22300,7 @@ SquallyBarrier2.o: SquallyBarrier2.cpp SquallyBarrier2.h SkillHandler.h Skill.h 
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -22410,7 +22410,7 @@ SquallyBarrier2.o: SquallyBarrier2.cpp SquallyBarrier2.h SkillHandler.h Skill.h 
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -22520,7 +22520,7 @@ SwordRay.o: SwordRay.cpp SwordRay.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -22635,7 +22635,7 @@ MultiAmputate.o: MultiAmputate.cpp MultiAmputate.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -22742,7 +22742,7 @@ HitConvert.o: HitConvert.cpp HitConvert.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -22849,7 +22849,7 @@ WildTyphoon.o: WildTyphoon.cpp WildTyphoon.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -22957,7 +22957,7 @@ UltimateBlow.o: UltimateBlow.cpp UltimateBlow.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -23069,7 +23069,7 @@ Illendue.o: Illendue.cpp Illendue.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -23176,7 +23176,7 @@ Lightness.o: Lightness.cpp Lightness.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -23289,7 +23289,7 @@ Flourish.o: Flourish.cpp Flourish.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -23396,7 +23396,7 @@ Evade.o: Evade.cpp Evade.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -23506,7 +23506,7 @@ SharpRound.o: SharpRound.cpp SharpRound.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -23613,7 +23613,7 @@ BackStab.o: BackStab.cpp BackStab.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -23721,7 +23721,7 @@ Blunting.o: Blunting.cpp Blunting.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -23837,7 +23837,7 @@ GammaChop.o: GammaChop.cpp GammaChop.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -23944,7 +23944,7 @@ CrossGuard.o: CrossGuard.cpp CrossGuard.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -24054,7 +24054,7 @@ KasasArrow.o: KasasArrow.cpp KasasArrow.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -24161,7 +24161,7 @@ HandsOfFire.o: HandsOfFire.cpp HandsOfFire.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -24271,7 +24271,7 @@ Prominence.o: Prominence.cpp Prominence.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -24385,7 +24385,7 @@ RingOfFlare.o: RingOfFlare.cpp RingOfFlare.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -24495,7 +24495,7 @@ RingOfFlare.o: RingOfFlare.cpp RingOfFlare.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -24605,7 +24605,7 @@ BlazeBolt.o: BlazeBolt.cpp BlazeBolt.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -24712,7 +24712,7 @@ IceField.o: IceField.cpp IceField.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -24827,7 +24827,7 @@ WaterBarrier.o: WaterBarrier.cpp WaterBarrier.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -24937,7 +24937,7 @@ NymphRecovery.o: NymphRecovery.cpp NymphRecovery.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -25050,7 +25050,7 @@ Liberty.o: Liberty.cpp Liberty.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -25164,7 +25164,7 @@ Tendril.o: Tendril.cpp Tendril.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -25280,7 +25280,7 @@ StoneAuger.o: StoneAuger.cpp StoneAuger.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -25388,7 +25388,7 @@ EarthsTeeth.o: EarthsTeeth.cpp EarthsTeeth.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -25495,7 +25495,7 @@ GnomesWhisper.o: GnomesWhisper.cpp GnomesWhisper.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -25605,7 +25605,7 @@ AbsorbSoul.o: AbsorbSoul.cpp AbsorbSoul.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -25660,7 +25660,7 @@ AbsorbSoul.o: AbsorbSoul.cpp AbsorbSoul.h SkillHandler.h Skill.h \
  ../../Thread.h ../../pthreadAPI.h ../item/Larva.h ../ItemInfo.h \
  ../InfoClassManager.h ../ItemFactory.h ../item/Pupa.h ../Corpse.h \
  ../OustersCorpse.h ../ItemFactoryManager.h ../ItemUtil.h \
- ../../../Core/Properties.h /usr/include/STL/map \
+ ../../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../GQuestManager.h \
  ../GQuestInventory.h ../../../Core/Gpackets/GCGQuestInventory.h \
@@ -25723,7 +25723,7 @@ HandsOfNizie.o: HandsOfNizie.cpp HandsOfNizie.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -25830,7 +25830,7 @@ RefusalEther.o: RefusalEther.cpp RefusalEther.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -25945,7 +25945,7 @@ EmissionWater.o: EmissionWater.cpp EmissionWater.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -26052,7 +26052,7 @@ BeatHead.o: BeatHead.cpp BeatHead.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -26159,7 +26159,7 @@ DivineSpirits.o: DivineSpirits.cpp DivineSpirits.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -26269,7 +26269,7 @@ BlitzSliding.o: BlitzSliding.cpp BlitzSliding.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -26383,7 +26383,7 @@ JabbingVein.o: JabbingVein.cpp JabbingVein.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -26496,7 +26496,7 @@ GreatHeal.o: GreatHeal.cpp GreatHeal.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -26603,7 +26603,7 @@ DivineGuidance.o: DivineGuidance.cpp DivineGuidance.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -26716,7 +26716,7 @@ BlazeWalk.o: BlazeWalk.cpp BlazeWalk.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -26830,7 +26830,7 @@ BloodyZenith.o: BloodyZenith.cpp BloodyZenith.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -26940,7 +26940,7 @@ Rediance.o: Rediance.cpp Rediance.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -27051,7 +27051,7 @@ LarSlash.o: LarSlash.cpp LarSlash.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -27161,7 +27161,7 @@ Trident.o: Trident.cpp Trident.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -27273,7 +27273,7 @@ HeartCatalyst.o: HeartCatalyst.cpp HeartCatalyst.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -27384,7 +27384,7 @@ ProtectionFromBlood.o: ProtectionFromBlood.cpp ProtectionFromBlood.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -27497,7 +27497,7 @@ MoleShot.o: MoleShot.cpp MoleShot.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -27609,7 +27609,7 @@ Eternity.o: Eternity.cpp Eternity.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -27718,7 +27718,7 @@ InstallTrap.o: InstallTrap.cpp InstallTrap.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -27830,7 +27830,7 @@ HolyArmor.o: HolyArmor.cpp HolyArmor.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -27941,7 +27941,7 @@ MercyGround.o: MercyGround.cpp MercyGround.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -28056,7 +28056,7 @@ CreateHolyPotion.o: CreateHolyPotion.cpp CreateHolyPotion.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -28167,7 +28167,7 @@ TransformToWerwolf.o: TransformToWerwolf.cpp TransformToWerwolf.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -28281,7 +28281,7 @@ GrayDarkness.o: GrayDarkness.cpp GrayDarkness.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -28337,7 +28337,7 @@ GrayDarkness.o: GrayDarkness.cpp GrayDarkness.h SkillHandler.h Skill.h \
  ../EffectLoader.h ../MonsterCorpse.h ../ItemFactory.h ../Corpse.h \
  ../ctf/FlagManager.h ../war/Work.h ../war/Scheduler.h \
  ../war/Schedule.h ../../../Core/Gpackets/GCFlagWarStatus.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../../Core/Gpackets/GCSkillToTileOK1.h \
  ../../../Core/Gpackets/GCSkillToTileOK2.h \
@@ -28401,7 +28401,7 @@ StoneSkin.o: StoneSkin.cpp StoneSkin.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -28516,7 +28516,7 @@ TalonOfCrow.o: TalonOfCrow.cpp TalonOfCrow.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -28623,7 +28623,7 @@ BiteOfDeath.o: BiteOfDeath.cpp BiteOfDeath.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -28737,7 +28737,7 @@ AcidEruption.o: AcidEruption.cpp AcidEruption.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -28850,7 +28850,7 @@ Teleport.o: Teleport.cpp Teleport.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -28960,7 +28960,7 @@ FirePiercing.o: FirePiercing.cpp FirePiercing.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -29073,7 +29073,7 @@ SoulRebirth.o: SoulRebirth.cpp SoulRebirth.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -29127,7 +29127,7 @@ SoulRebirth.o: SoulRebirth.cpp SoulRebirth.h SkillHandler.h Skill.h \
  ../../../Core/Gpackets/GCReconnectLogin.h ../gameguard/CSAuth.h \
  ../../Thread.h ../../pthreadAPI.h ../EffectComa.h ../EffectLoader.h \
  ../EffectKillAftermath.h ../../../Core/Properties.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../../Core/Gpackets/GCSkillToObjectOK1.h \
  ../../../Core/Gpackets/GCSkillToObjectOK2.h \
@@ -29190,7 +29190,7 @@ IceLance.o: IceLance.cpp IceLance.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -29298,7 +29298,7 @@ ExplosionWater.o: ExplosionWater.cpp ExplosionWater.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -29412,7 +29412,7 @@ FrozenArmor.o: FrozenArmor.cpp FrozenArmor.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -29528,7 +29528,7 @@ MagnumSpear.o: MagnumSpear.cpp MagnumSpear.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -29641,7 +29641,7 @@ ReactiveArmor.o: ReactiveArmor.cpp ReactiveArmor.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -29757,7 +29757,7 @@ GroundBless.o: GroundBless.cpp GroundBless.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -29873,7 +29873,7 @@ HellFire.o: HellFire.cpp HellFire.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -29988,7 +29988,7 @@ SharpChakram.o: SharpChakram.cpp SharpChakram.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -30104,7 +30104,7 @@ DestructionSpear.o: DestructionSpear.cpp DestructionSpear.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -30213,7 +30213,7 @@ ShiftBreak.o: ShiftBreak.cpp ../../../Core/Utility.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -30322,7 +30322,7 @@ FatalSnick.o: FatalSnick.cpp FatalSnick.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -30429,7 +30429,7 @@ ChargingAttack.o: ChargingAttack.cpp ChargingAttack.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -30539,7 +30539,7 @@ DuckingWallop.o: DuckingWallop.cpp DuckingWallop.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -30652,7 +30652,7 @@ DistanceBlitz.o: DistanceBlitz.cpp DistanceBlitz.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -30760,7 +30760,7 @@ SummonGroundElemental.o: SummonGroundElemental.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -30876,7 +30876,7 @@ SummonFireElemental.o: SummonFireElemental.cpp SummonFireElemental.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -30986,7 +30986,7 @@ SummonWaterElemental.o: SummonWaterElemental.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -31096,7 +31096,7 @@ MeteorStorm.o: MeteorStorm.cpp MeteorStorm.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -31204,7 +31204,7 @@ WideIceField.o: WideIceField.cpp WideIceField.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -31318,7 +31318,7 @@ Glacier1.o: Glacier1.cpp Glacier1.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -31432,7 +31432,7 @@ Glacier2.o: Glacier2.cpp Glacier2.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -31545,7 +31545,7 @@ IceAuger.o: IceAuger.cpp IceAuger.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -31652,7 +31652,7 @@ IceHail.o: IceHail.cpp IceHail.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -31767,7 +31767,7 @@ WideIceHail.o: WideIceHail.cpp WideIceHail.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -31881,7 +31881,7 @@ IceWave.o: IceWave.cpp IceWave.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -31989,7 +31989,7 @@ LandMineExplosion.o: LandMineExplosion.cpp LandMineExplosion.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -32098,7 +32098,7 @@ ClaymoreExplosion.o: ClaymoreExplosion.cpp ClaymoreExplosion.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -32207,7 +32207,7 @@ PleasureExplosion.o: PleasureExplosion.cpp PleasureExplosion.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -32316,7 +32316,7 @@ DeleoEfficio.o: DeleoEfficio.cpp DeleoEfficio.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -32429,7 +32429,7 @@ ReputoFactum.o: ReputoFactum.cpp ReputoFactum.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -32545,7 +32545,7 @@ SwordOfThor.o: SwordOfThor.cpp SwordOfThor.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -32654,7 +32654,7 @@ BurningSolCharging.o: BurningSolCharging.cpp BurningSolCharging.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -32764,7 +32764,7 @@ BurningSolLaunch.o: BurningSolLaunch.cpp BurningSolLaunch.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -32873,7 +32873,7 @@ SweepVice.o: SweepVice.cpp SweepVice.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -32981,7 +32981,7 @@ Whitsuntide.o: Whitsuntide.cpp Whitsuntide.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -33035,7 +33035,7 @@ Whitsuntide.o: Whitsuntide.cpp Whitsuntide.h SkillHandler.h Skill.h \
  ../../../Core/Gpackets/GCReconnectLogin.h ../gameguard/CSAuth.h \
  ../../Thread.h ../../pthreadAPI.h ../EffectComa.h ../EffectLoader.h \
  ../EffectKillAftermath.h EffectWhitsuntide.h \
- ../../../Core/Properties.h /usr/include/STL/map \
+ ../../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h \
  ../../../Core/Gpackets/GCSkillToTileOK1.h \
@@ -33101,7 +33101,7 @@ TorrentialLife.o: TorrentialLife.cpp TorrentialLife.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -33155,7 +33155,7 @@ TorrentialLife.o: TorrentialLife.cpp TorrentialLife.h SkillHandler.h Skill.h \
  ../../../Core/Gpackets/GCReconnectLogin.h ../gameguard/CSAuth.h \
  ../../Thread.h ../../pthreadAPI.h ../EffectComa.h ../EffectLoader.h \
  ../EffectKillAftermath.h EffectTorrentialLife.h \
- ../../../Core/Properties.h /usr/include/STL/map \
+ ../../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h \
  ../../../Core/Gpackets/GCSkillToTileOK1.h \
@@ -33221,7 +33221,7 @@ ViolentPhantom.o: ViolentPhantom.cpp ViolentPhantom.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -33329,7 +33329,7 @@ ViolentPhantom.o: ViolentPhantom.cpp ViolentPhantom.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -33437,7 +33437,7 @@ InstallTurret.o: InstallTurret.cpp InstallTurret.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -33548,7 +33548,7 @@ TurretFire.o: TurretFire.cpp TurretFire.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -33656,7 +33656,7 @@ SummonGoreGland.o: SummonGoreGland.cpp SummonGoreGland.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -33770,7 +33770,7 @@ SummonGoreGland.o: SummonGoreGland.cpp SummonGoreGland.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -33884,7 +33884,7 @@ GoreGlandFire.o: GoreGlandFire.cpp GoreGlandFire.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -33992,7 +33992,7 @@ ThrowingAxe.o: ThrowingAxe.cpp ThrowingAxe.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -34106,7 +34106,7 @@ ChoppingFirewood.o: ChoppingFirewood.cpp ChoppingFirewood.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -34220,7 +34220,7 @@ ChainThrowingAxe.o: ChainThrowingAxe.cpp ChainThrowingAxe.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -34334,7 +34334,7 @@ MultiThrowingAxe.o: MultiThrowingAxe.cpp MultiThrowingAxe.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -34448,7 +34448,7 @@ PlayingWithFire.o: PlayingWithFire.cpp PlayingWithFire.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -34556,7 +34556,7 @@ InfinityThunderbolt.o: InfinityThunderbolt.cpp InfinityThunderbolt.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -34664,7 +34664,7 @@ SpitStream.o: SpitStream.cpp SpitStream.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -34772,7 +34772,7 @@ PlasmaRocketLauncher.o: PlasmaRocketLauncher.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -34886,7 +34886,7 @@ BombingStar.o: BombingStar.cpp BombingStar.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -34994,7 +34994,7 @@ IntimateGrail.o: IntimateGrail.cpp IntimateGrail.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -35110,7 +35110,7 @@ NooseOfWraith.o: NooseOfWraith.cpp NooseOfWraith.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -35218,7 +35218,7 @@ SetAfire.o: SetAfire.cpp SetAfire.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -35328,7 +35328,7 @@ SetAfire.o: SetAfire.cpp SetAfire.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -35438,7 +35438,7 @@ SharpHail.o: SharpHail.cpp SharpHail.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -35552,7 +35552,7 @@ SharpHail.o: SharpHail.cpp SharpHail.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -35666,7 +35666,7 @@ IceHorizon.o: IceHorizon.cpp IceHorizon.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -35781,7 +35781,7 @@ FuryOfGnome.o: FuryOfGnome.cpp FuryOfGnome.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -35891,7 +35891,7 @@ SummonMiga.o: SummonMiga.cpp SummonMiga.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -36006,7 +36006,7 @@ SummonMigaAttack.o: SummonMigaAttack.cpp SummonMigaAttack.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -36115,7 +36115,7 @@ Cannonade.o: Cannonade.cpp Cannonade.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -36228,7 +36228,7 @@ SelfDestruction.o: SelfDestruction.cpp SelfDestruction.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -36337,7 +36337,7 @@ ARAttack.o: ARAttack.cpp ARAttack.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -36444,7 +36444,7 @@ SMGAttack.o: SMGAttack.cpp SMGAttack.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -36551,7 +36551,7 @@ GrenadeAttack.o: GrenadeAttack.cpp GrenadeAttack.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -36663,7 +36663,7 @@ Halo.o: Halo.cpp Halo.h SkillHandler.h Skill.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -36771,7 +36771,7 @@ Destinies.o: Destinies.cpp Destinies.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -36879,7 +36879,7 @@ FierceFlame.o: FierceFlame.cpp FierceFlame.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -36993,7 +36993,7 @@ ShadowOfStorm.o: ShadowOfStorm.cpp ShadowOfStorm.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -37107,7 +37107,7 @@ LightingShock.o: LightingShock.cpp LightingShock.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -37221,7 +37221,7 @@ SolaFlare.o: SolaFlare.cpp SolaFlare.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -37335,7 +37335,7 @@ SolaFlare.o: SolaFlare.cpp SolaFlare.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -37449,7 +37449,7 @@ SolaFlare.o: SolaFlare.cpp SolaFlare.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -37563,7 +37563,7 @@ WildWolf.o: WildWolf.cpp WildWolf.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -37677,7 +37677,7 @@ Aberration.o: Aberration.cpp Aberration.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -37793,7 +37793,7 @@ DragonTornado.o: DragonTornado.cpp DragonTornado.h SkillHandler.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -37902,7 +37902,7 @@ BikeCrash.o: BikeCrash.cpp BikeCrash.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -38010,7 +38010,7 @@ HarpoonBomb.o: HarpoonBomb.cpp HarpoonBomb.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -38124,7 +38124,7 @@ PassingHeal.o: PassingHeal.cpp PassingHeal.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -38237,7 +38237,7 @@ RottenApple.o: RottenApple.cpp RottenApple.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -38350,7 +38350,7 @@ MonsterRangeSkill.o: MonsterRangeSkill.cpp MonsterRangeSkill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -38465,7 +38465,7 @@ EffectAcidSwamp.o: EffectAcidSwamp.cpp ../../database/DB.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../InventorySlot.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h ../Garbage.h ../RankBonus.h \
@@ -38566,7 +38566,7 @@ EffectAuraShield.o: EffectAuraShield.cpp EffectAuraShield.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -38661,7 +38661,7 @@ EffectBless.o: EffectBless.cpp EffectBless.h ../Effect.h ../Object.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -38759,7 +38759,7 @@ EffectBloodDrain.o: EffectBloodDrain.cpp EffectBloodDrain.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Slayer.h ../PlayerCreature.h \
+ /usr/include/c++/7/bitset ../Slayer.h ../PlayerCreature.h \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -38811,7 +38811,7 @@ EffectBloodDrain.o: EffectBloodDrain.cpp EffectBloodDrain.h \
  ../../../Core/Gpackets/GCMorph1.h ../../../Core/GameTime.h \
  ../../../Core/Gpackets/GCMorphVampire2.h \
  ../../../Core/Gpackets/GCChangeDarkLight.h ../PCFinder.h ../NPC.h \
- ../couple/PartnerWaitingManager.h /usr/include/STL/map \
+ ../couple/PartnerWaitingManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../EventRegeneration.h
 EffectCrossCounter.o: EffectCrossCounter.cpp EffectCrossCounter.h \
@@ -38867,7 +38867,7 @@ EffectCrossCounter.o: EffectCrossCounter.cpp EffectCrossCounter.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -38956,7 +38956,7 @@ EffectDoom.o: EffectDoom.cpp EffectDoom.h ../Effect.h ../Object.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Slayer.h ../PlayerCreature.h ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -39057,7 +39057,7 @@ EffectDarkBluePoison.o: EffectDarkBluePoison.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Obstacle.h ../Portal.h \
  ../quest/TriggerManager.h ../quest/Trigger.h ../quest/Condition.h \
@@ -39166,7 +39166,7 @@ EffectDarkness.o: EffectDarkness.cpp EffectDarkness.h ../Effect.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Obstacle.h ../Portal.h \
  ../quest/TriggerManager.h ../quest/Trigger.h ../quest/Condition.h \
@@ -39236,7 +39236,7 @@ EffectRevealer.o: EffectRevealer.cpp EffectRevealer.h ../Effect.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -39331,7 +39331,7 @@ EffectDetectHidden.o: EffectDetectHidden.cpp EffectDetectHidden.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -39422,7 +39422,7 @@ EffectDetectInvisibility.o: EffectDetectInvisibility.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../../database/DB.h \
+ /usr/include/c++/7/bitset ../../database/DB.h \
  ../../database/DatabaseManager.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
@@ -39513,7 +39513,7 @@ EffectDetectMine.o: EffectDetectMine.cpp EffectDetectMine.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../../database/DB.h \
+ /usr/include/c++/7/bitset ../../database/DB.h \
  ../../database/DatabaseManager.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
@@ -39604,7 +39604,7 @@ EffectFadeOut.o: EffectFadeOut.cpp EffectFadeOut.h ../Effect.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -39699,7 +39699,7 @@ EffectGreenPoison.o: EffectGreenPoison.cpp EffectGreenPoison.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Obstacle.h ../Portal.h \
  ../quest/TriggerManager.h ../quest/Trigger.h ../quest/Condition.h \
@@ -39809,7 +39809,7 @@ EffectGreenStalker.o: EffectGreenStalker.cpp EffectGreenStalker.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -39909,7 +39909,7 @@ EffectInvisibility.o: EffectInvisibility.cpp EffectInvisibility.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../../database/DB.h \
+ /usr/include/c++/7/bitset ../../database/DB.h \
  ../../database/DatabaseManager.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
@@ -40004,7 +40004,7 @@ EffectLight.o: EffectLight.cpp EffectLight.h ../Effect.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Slayer.h ../PlayerCreature.h \
+ /usr/include/c++/7/bitset ../Slayer.h ../PlayerCreature.h \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -40094,7 +40094,7 @@ EffectPoison.o: EffectPoison.cpp EffectPoison.h ../Effect.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -40195,7 +40195,7 @@ EffectPotentialExplosion.o: EffectPotentialExplosion.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -40293,7 +40293,7 @@ EffectProtectionFromCurse.o: EffectProtectionFromCurse.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Slayer.h ../PlayerCreature.h \
+ /usr/include/c++/7/bitset ../Slayer.h ../PlayerCreature.h \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -40384,7 +40384,7 @@ EffectProtectionFromPoison.o: EffectProtectionFromPoison.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Slayer.h ../PlayerCreature.h \
+ /usr/include/c++/7/bitset ../Slayer.h ../PlayerCreature.h \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -40474,7 +40474,7 @@ EffectParalyze.o: EffectParalyze.cpp EffectParalyze.h ../Effect.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Slayer.h ../PlayerCreature.h \
+ /usr/include/c++/7/bitset ../Slayer.h ../PlayerCreature.h \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -40584,7 +40584,7 @@ EffectParalyze.o: EffectParalyze.cpp EffectParalyze.h ../Effect.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Slayer.h ../PlayerCreature.h \
+ /usr/include/c++/7/bitset ../Slayer.h ../PlayerCreature.h \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -40694,7 +40694,7 @@ EffectMistOfSoul1.o: EffectMistOfSoul1.cpp EffectMistOfSoul1.h ../Effect.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Slayer.h ../PlayerCreature.h \
+ /usr/include/c++/7/bitset ../Slayer.h ../PlayerCreature.h \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -40804,7 +40804,7 @@ EffectRegeneration.o: EffectRegeneration.cpp EffectRegeneration.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -40855,7 +40855,7 @@ EffectRegeneration.o: EffectRegeneration.cpp EffectRegeneration.h \
  ../../chinabilling/CBillingInfo.h \
  ../../../Core/Gpackets/GCReconnectLogin.h ../gameguard/CSAuth.h \
  ../PCFinder.h ../NPC.h ../couple/PartnerWaitingManager.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../ZoneUtil.h ../ZoneInfoManager.h ../ZoneInfo.h SkillUtil.h \
  ../Ousters.h ../../../Core/PCOustersInfo.h \
@@ -40919,7 +40919,7 @@ EffectReloadTimer.o: EffectReloadTimer.cpp EffectReloadTimer.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../Creature.h ../Slayer.h ../PlayerCreature.h ../ObjectRegistry.h \
@@ -41013,7 +41013,7 @@ EffectStriking.o: EffectStriking.cpp EffectStriking.h ../Effect.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Slayer.h ../PlayerCreature.h \
  ../Creature.h ../ObjectRegistry.h ../../Mutex.h \
@@ -41102,7 +41102,7 @@ EffectTransformToWolf.o: EffectTransformToWolf.cpp \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Slayer.h ../PlayerCreature.h ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -41200,7 +41200,7 @@ EffectTransformToBat.o: EffectTransformToBat.cpp \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Slayer.h ../PlayerCreature.h ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -41300,7 +41300,7 @@ EffectYellowPoison.o: EffectYellowPoison.cpp EffectYellowPoison.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Obstacle.h ../Portal.h \
  ../quest/TriggerManager.h ../quest/Trigger.h ../quest/Condition.h \
@@ -41401,7 +41401,7 @@ EffectYellowPoisonToCreature.o: EffectYellowPoisonToCreature.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -41493,7 +41493,7 @@ EffectFlare.o: EffectFlare.cpp EffectFlare.h ../Effect.h ../Object.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -41602,7 +41602,7 @@ EffectAuraShield.o: EffectAuraShield.cpp EffectAuraShield.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -41697,7 +41697,7 @@ EffectDancingSword.o: EffectDancingSword.cpp EffectDancingSword.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -41797,7 +41797,7 @@ EffectSnipingMode.o: EffectSnipingMode.cpp EffectSnipingMode.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../InventorySlot.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h ../Garbage.h ../RankBonus.h \
@@ -41879,7 +41879,7 @@ EffectChargingPower.o: EffectChargingPower.cpp EffectChargingPower.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Slayer.h ../PlayerCreature.h ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -41974,7 +41974,7 @@ EffectGhostBlade.o: EffectGhostBlade.cpp EffectGhostBlade.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Slayer.h ../PlayerCreature.h ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -42071,7 +42071,7 @@ EffectProtectionFromAcid.o: EffectProtectionFromAcid.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Slayer.h ../PlayerCreature.h \
+ /usr/include/c++/7/bitset ../Slayer.h ../PlayerCreature.h \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -42160,7 +42160,7 @@ EffectSacrifice.o: EffectSacrifice.cpp EffectSacrifice.h ../Effect.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Slayer.h ../PlayerCreature.h ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -42257,7 +42257,7 @@ EffectVampirePortal.o: EffectVampirePortal.cpp EffectVampirePortal.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Obstacle.h ../Portal.h \
  ../quest/TriggerManager.h ../quest/Trigger.h ../quest/Condition.h \
@@ -42366,7 +42366,7 @@ EffectSeduction.o: EffectSeduction.cpp EffectSeduction.h ../Effect.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Slayer.h ../PlayerCreature.h ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -42465,7 +42465,7 @@ EffectMindControl.o: EffectMindControl.cpp EffectMindControl.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Slayer.h ../PlayerCreature.h ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -42561,7 +42561,7 @@ EffectExpansion.o: EffectExpansion.cpp EffectExpansion.h ../Effect.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -42657,7 +42657,7 @@ EffectMiracleShield.o: EffectMiracleShield.cpp EffectMiracleShield.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Slayer.h ../PlayerCreature.h ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -42753,7 +42753,7 @@ EffectBerserker.o: EffectBerserker.cpp EffectBerserker.h ../Effect.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -42843,7 +42843,7 @@ EffectTyphoon.o: EffectTyphoon.cpp EffectTyphoon.h ../Effect.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Slayer.h ../PlayerCreature.h ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -42940,7 +42940,7 @@ EffectCureCriticalWounds.o: EffectCureCriticalWounds.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -43043,7 +43043,7 @@ EffectRestore.o: EffectRestore.cpp EffectRestore.h ../Effect.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -43136,7 +43136,7 @@ EffectExtreme.o: EffectExtreme.cpp EffectExtreme.h ../Effect.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Vampire.h ../PlayerCreature.h ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -43223,7 +43223,7 @@ EffectAcidStorm.o: EffectAcidStorm.cpp EffectAcidStorm.h ../Effect.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset ../Item.h \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../Obstacle.h ../Portal.h ../quest/TriggerManager.h \
@@ -43332,7 +43332,7 @@ EffectStormAcid.o: EffectStormAcid.cpp EffectStormAcid.h ../Effect.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -43433,7 +43433,7 @@ EffectStormAcid.o: EffectStormAcid.cpp EffectStormAcid.h ../Effect.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset ../Item.h \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../Obstacle.h ../Portal.h ../quest/TriggerManager.h \
@@ -43542,7 +43542,7 @@ EffectStormBat.o: EffectStormBat.cpp EffectStormBat.h ../Effect.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -43643,7 +43643,7 @@ EffectBloodyStorm.o: EffectBloodyStorm.cpp EffectBloodyStorm.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset ../Item.h \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../Obstacle.h ../Portal.h ../quest/TriggerManager.h \
@@ -43752,7 +43752,7 @@ EffectStormBloody.o: EffectStormBloody.cpp EffectStormBloody.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -43853,7 +43853,7 @@ EffectPoisonStorm.o: EffectPoisonStorm.cpp EffectPoisonStorm.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset ../Item.h \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../Obstacle.h ../Portal.h ../quest/TriggerManager.h \
@@ -43963,7 +43963,7 @@ EffectEnergyDrop.o: EffectEnergyDrop.cpp EffectEnergyDrop.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset ../Item.h \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../Obstacle.h ../Portal.h ../quest/TriggerManager.h \
@@ -44073,7 +44073,7 @@ EffectEnergyDropToCreature.o: EffectEnergyDropToCreature.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -44174,7 +44174,7 @@ EffectEnergyDropToCreature.o: EffectEnergyDropToCreature.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset ../Item.h \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../Obstacle.h ../Portal.h ../quest/TriggerManager.h \
@@ -44284,7 +44284,7 @@ EffectMeteoBlazeToCreature.o: EffectMeteoBlazeToCreature.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -44385,7 +44385,7 @@ EffectVigorDrop.o: EffectVigorDrop.cpp EffectVigorDrop.h ../Effect.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset ../Item.h \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../Obstacle.h ../Portal.h ../quest/TriggerManager.h \
@@ -44495,7 +44495,7 @@ EffectVigorDropToCreature.o: EffectVigorDropToCreature.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -44595,7 +44595,7 @@ EffectStormPoison.o: EffectStormPoison.cpp EffectStormPoison.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -44705,7 +44705,7 @@ EffectCauseCriticalWounds.o: EffectCauseCriticalWounds.cpp \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../InventorySlot.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h ../Garbage.h ../RankBonus.h \
@@ -44807,7 +44807,7 @@ EffectPeace.o: EffectPeace.cpp EffectPeace.h ../Effect.h ../Object.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -44916,7 +44916,7 @@ EffectActivation.o: EffectActivation.cpp EffectActivation.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -45007,7 +45007,7 @@ EffectSanctuary.o: EffectSanctuary.cpp EffectSanctuary.h ../Effect.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Obstacle.h ../Portal.h \
  ../quest/TriggerManager.h ../quest/Trigger.h ../quest/Condition.h \
@@ -45073,7 +45073,7 @@ EffectReflection.o: EffectReflection.cpp EffectReflection.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -45167,7 +45167,7 @@ EffectHymn.o: EffectHymn.cpp EffectHymn.h ../Effect.h ../Object.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Slayer.h ../PlayerCreature.h ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -45266,7 +45266,7 @@ EffectDeath.o: EffectDeath.cpp EffectDeath.h ../Effect.h ../Object.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Slayer.h ../PlayerCreature.h ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -45365,7 +45365,7 @@ EffectSummonCasket.o: EffectSummonCasket.cpp EffectSummonCasket.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Vampire.h ../PlayerCreature.h ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -45450,7 +45450,7 @@ EffectMephisto.o: EffectMephisto.cpp EffectMephisto.h ../Effect.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Vampire.h ../PlayerCreature.h ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -45536,7 +45536,7 @@ EffectObservingEye.o: EffectObservingEye.cpp EffectObservingEye.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -45634,7 +45634,7 @@ EffectGroundAttack.o: EffectGroundAttack.cpp EffectGroundAttack.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -45743,7 +45743,7 @@ EffectMeteorStrike.o: EffectMeteorStrike.cpp EffectMeteorStrike.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -45852,7 +45852,7 @@ EffectHallucination.o: EffectHallucination.cpp EffectHallucination.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Slayer.h ../PlayerCreature.h ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -45948,7 +45948,7 @@ EffectDecreaseHP.o: EffectDecreaseHP.cpp EffectDecreaseHP.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -46055,7 +46055,7 @@ EffectBloodyWall.o: EffectBloodyWall.cpp ../../database/DB.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Slayer.h ../PlayerCreature.h ../ObjectRegistry.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
@@ -46157,7 +46157,7 @@ EffectBloodySnake.o: EffectBloodySnake.cpp EffectBloodySnake.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Slayer.h ../PlayerCreature.h \
+ /usr/include/c++/7/bitset ../Slayer.h ../PlayerCreature.h \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -46267,7 +46267,7 @@ EffectBloodyWallBlocked.o: EffectBloodyWallBlocked.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -46375,7 +46375,7 @@ EffectSoulChain.o: EffectSoulChain.cpp EffectSoulChain.h ../Effect.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -46424,7 +46424,7 @@ EffectSoulChain.o: EffectSoulChain.cpp EffectSoulChain.h ../Effect.h \
  ../../chinabilling/CBillingInfo.h \
  ../../../Core/Gpackets/GCReconnectLogin.h ../gameguard/CSAuth.h \
  ../PCFinder.h ../NPC.h ../couple/PartnerWaitingManager.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../ZoneUtil.h ../ZoneInfoManager.h ../ZoneInfo.h \
  ../../../Core/Gpackets/GCRemoveEffect.h \
@@ -46487,7 +46487,7 @@ EffectSharpShield.o: EffectSharpShield.cpp EffectSharpShield.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -46583,7 +46583,7 @@ EffectGunShotGuidanceAim.o: EffectGunShotGuidanceAim.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -46634,7 +46634,7 @@ EffectGunShotGuidanceAim.o: EffectGunShotGuidanceAim.cpp \
  ../../chinabilling/CBillingInfo.h \
  ../../../Core/Gpackets/GCReconnectLogin.h ../gameguard/CSAuth.h \
  ../PCFinder.h ../NPC.h ../couple/PartnerWaitingManager.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../ZoneUtil.h ../ZoneInfoManager.h ../ZoneInfo.h ../SkillInfo.h \
  SkillUtil.h ../Ousters.h ../../../Core/PCOustersInfo.h \
@@ -46700,7 +46700,7 @@ EffectGunShotGuidancePoint.o: EffectGunShotGuidancePoint.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -46751,7 +46751,7 @@ EffectGunShotGuidancePoint.o: EffectGunShotGuidancePoint.cpp \
  ../../chinabilling/CBillingInfo.h \
  ../../../Core/Gpackets/GCReconnectLogin.h ../gameguard/CSAuth.h \
  ../PCFinder.h ../NPC.h ../couple/PartnerWaitingManager.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../ZoneUtil.h ../ZoneInfoManager.h ../ZoneInfo.h SkillUtil.h \
  ../Ousters.h ../../../Core/PCOustersInfo.h \
@@ -46814,7 +46814,7 @@ EffectAirShield.o: EffectAirShield.cpp EffectAirShield.h ../Effect.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -46909,7 +46909,7 @@ EffectSleep.o: EffectSleep.cpp EffectSleep.h ../Effect.h ../Object.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -47018,7 +47018,7 @@ EffectSpiritGuard.o: EffectSpiritGuard.cpp EffectSpiritGuard.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -47069,7 +47069,7 @@ EffectSpiritGuard.o: EffectSpiritGuard.cpp EffectSpiritGuard.h \
  ../../chinabilling/CBillingInfo.h \
  ../../../Core/Gpackets/GCReconnectLogin.h ../gameguard/CSAuth.h \
  ../PCFinder.h ../NPC.h ../couple/PartnerWaitingManager.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../ZoneUtil.h ../ZoneInfoManager.h ../ZoneInfo.h SkillUtil.h \
  ../Ousters.h ../../../Core/PCOustersInfo.h \
@@ -47133,7 +47133,7 @@ EffectArmageddon.o: EffectArmageddon.cpp EffectArmageddon.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -47234,7 +47234,7 @@ EffectTileStorm.o: EffectTileStorm.cpp EffectTileStorm.h ../Effect.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
  ../../../Core/SocketOutputStream.h ../Slayer.h ../PlayerCreature.h \
  ../Creature.h ../EffectManager.h ../../../Core/EffectInfo.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -47343,7 +47343,7 @@ EffectMonsterTileStorm.o: EffectMonsterTileStorm.cpp EffectMonsterTileStorm.h ..
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
  ../../../Core/SocketOutputStream.h ../Slayer.h ../PlayerCreature.h \
  ../Creature.h ../EffectManager.h ../../../Core/EffectInfo.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -47452,7 +47452,7 @@ EffectMagicElusion.o: EffectMagicElusion.cpp EffectMagicElusion.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Obstacle.h ../Portal.h \
  ../quest/TriggerManager.h ../quest/Trigger.h ../quest/Condition.h \
@@ -47518,7 +47518,7 @@ EffectPoisonMesh.o: EffectPoisonMesh.cpp EffectPoisonMesh.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../PlayerCreature.h ../ObjectRegistry.h \
+ /usr/include/c++/7/bitset ../PlayerCreature.h ../ObjectRegistry.h \
  ../../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h ../InventorySlot.h ../Item.h \
@@ -47614,7 +47614,7 @@ EffectWillOfLife.o: EffectWillOfLife.cpp EffectWillOfLife.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Vampire.h ../PlayerCreature.h ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -47700,7 +47700,7 @@ EffectDenialMagic.o: EffectDenialMagic.cpp EffectDenialMagic.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -47795,7 +47795,7 @@ EffectRequital.o: EffectRequital.cpp EffectRequital.h ../Effect.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -47890,7 +47890,7 @@ EffectConcealment.o: EffectConcealment.cpp EffectConcealment.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -47985,7 +47985,7 @@ EffectConcealment.o: EffectConcealment.cpp EffectConcealment.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -48080,7 +48080,7 @@ EffectConcealment.o: EffectConcealment.cpp EffectConcealment.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -48175,7 +48175,7 @@ EffectConcealment.o: EffectConcealment.cpp EffectConcealment.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -48270,7 +48270,7 @@ EffectConcealment.o: EffectConcealment.cpp EffectConcealment.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -48365,7 +48365,7 @@ EffectSquallyBarrier1.o: EffectSquallyBarrier1.cpp EffectSquallyBarrier1.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -48460,7 +48460,7 @@ EffectSquallyBarrier1back.o: EffectSquallyBarrier1back.cpp EffectSquallyBarrier1
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -48555,7 +48555,7 @@ EffectMagicShield2.o: EffectMagicShield2.cpp EffectMagicShield2.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -48650,7 +48650,7 @@ EffectMagicShield2.o: EffectMagicShield2.cpp EffectMagicShield2.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -48745,7 +48745,7 @@ EffectMagicShield2.o: EffectMagicShield2.cpp EffectMagicShield2.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -48839,7 +48839,7 @@ EffectLightness.o: EffectLightness.cpp EffectLightness.h ../Effect.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset ../Zone.h \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Zone.h \
  ../Tile.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
  ../Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -48910,7 +48910,7 @@ EffectEvade.o: EffectEvade.cpp EffectEvade.h ../Effect.h ../Object.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -48992,7 +48992,7 @@ EffectBlunting.o: EffectBlunting.cpp EffectBlunting.h ../Effect.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Slayer.h ../PlayerCreature.h ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -49092,7 +49092,7 @@ EffectCrossGuard.o: EffectCrossGuard.cpp EffectCrossGuard.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -49175,7 +49175,7 @@ EffectHandsOfFire.o: EffectHandsOfFire.cpp EffectHandsOfFire.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -49267,7 +49267,7 @@ EffectProminence.o: EffectProminence.cpp ../../database/DB.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../InventorySlot.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h ../Garbage.h ../RankBonus.h \
@@ -49367,7 +49367,7 @@ EffectRingOfFlare.o: EffectRingOfFlare.cpp EffectRingOfFlare.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -49422,7 +49422,7 @@ EffectRingOfFlare.o: EffectRingOfFlare.cpp EffectRingOfFlare.h \
  ../../chinabilling/CBillingInfo.h \
  ../../../Core/Gpackets/GCReconnectLogin.h ../gameguard/CSAuth.h \
  ../PCFinder.h ../NPC.h ../couple/PartnerWaitingManager.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../ZoneUtil.h ../ZoneInfoManager.h ../ZoneInfo.h SkillUtil.h \
  ../../../Core/Gpackets/GCRemoveEffect.h \
@@ -49483,7 +49483,7 @@ EffectRingOfFlare.o: EffectRingOfFlare.cpp EffectRingOfFlare.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -49538,7 +49538,7 @@ EffectRingOfFlare.o: EffectRingOfFlare.cpp EffectRingOfFlare.h \
  ../../chinabilling/CBillingInfo.h \
  ../../../Core/Gpackets/GCReconnectLogin.h ../gameguard/CSAuth.h \
  ../PCFinder.h ../NPC.h ../couple/PartnerWaitingManager.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../ZoneUtil.h ../ZoneInfoManager.h ../ZoneInfo.h SkillUtil.h \
  ../../../Core/Gpackets/GCRemoveEffect.h \
@@ -49599,7 +49599,7 @@ EffectRingOfFlare.o: EffectRingOfFlare.cpp EffectRingOfFlare.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -49654,7 +49654,7 @@ EffectRingOfFlare.o: EffectRingOfFlare.cpp EffectRingOfFlare.h \
  ../../chinabilling/CBillingInfo.h \
  ../../../Core/Gpackets/GCReconnectLogin.h ../gameguard/CSAuth.h \
  ../PCFinder.h ../NPC.h ../couple/PartnerWaitingManager.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../ZoneUtil.h ../ZoneInfoManager.h ../ZoneInfo.h SkillUtil.h \
  ../../../Core/Gpackets/GCRemoveEffect.h \
@@ -49723,7 +49723,7 @@ EffectIceField.o: EffectIceField.cpp ../../database/DB.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Slayer.h ../PlayerCreature.h ../ObjectRegistry.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
@@ -49827,7 +49827,7 @@ EffectIceFieldToCreature.o: EffectIceFieldToCreature.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -49910,7 +49910,7 @@ EffectWaterBarrier.o: EffectWaterBarrier.cpp EffectWaterBarrier.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -49992,7 +49992,7 @@ EffectTendril.o: EffectTendril.cpp EffectTendril.h ../Effect.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Monster.h ../MonsterInfo.h ../MonsterSummonInfo.h \
  ../MonsterInfoTypes.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
@@ -50063,7 +50063,7 @@ EffectGnomesWhisper.o: EffectGnomesWhisper.cpp EffectGnomesWhisper.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -50146,7 +50146,7 @@ EffectSummonSylph.o: EffectSummonSylph.cpp EffectSummonSylph.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -50229,7 +50229,7 @@ EffectIceOfSoulStone.o: EffectIceOfSoulStone.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -50312,7 +50312,7 @@ EffectBlockHead.o: EffectBlockHead.cpp EffectBlockHead.h ../Effect.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -50395,7 +50395,7 @@ EffectDivineSpirits.o: EffectDivineSpirits.cpp EffectDivineSpirits.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -50487,7 +50487,7 @@ EffectContinualBloodyWall.o: EffectContinualBloodyWall.cpp \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  EffectContinualBloodyWall.h ../Zone.h ../Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
@@ -50579,7 +50579,7 @@ EffectJabbingVein.o: EffectJabbingVein.cpp EffectJabbingVein.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -50662,7 +50662,7 @@ EffectDivineGuidance.o: EffectDivineGuidance.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -50762,7 +50762,7 @@ EffectBlazeWalk.o: EffectBlazeWalk.cpp EffectBlazeWalk.h ../Effect.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -50861,7 +50861,7 @@ EffectRediance.o: EffectRediance.cpp EffectRediance.h ../Effect.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -50952,7 +50952,7 @@ EffectHeartCatalyst.o: EffectHeartCatalyst.cpp EffectHeartCatalyst.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -51044,7 +51044,7 @@ EffectProtectionFromBlood.o: EffectProtectionFromBlood.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Slayer.h ../PlayerCreature.h \
+ /usr/include/c++/7/bitset ../Slayer.h ../PlayerCreature.h \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -51134,7 +51134,7 @@ EffectEternity.o: EffectEternity.cpp EffectEternity.h ../Effect.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -51227,7 +51227,7 @@ EffectTrapInstalled.o: EffectTrapInstalled.cpp EffectTrapInstalled.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset ../Item.h \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../Obstacle.h ../Portal.h ../quest/TriggerManager.h \
@@ -51328,7 +51328,7 @@ EffectTrapTriggered.o: EffectTrapTriggered.cpp EffectTrapTriggered.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -51419,7 +51419,7 @@ EffectHolyArmor.o: EffectHolyArmor.cpp EffectHolyArmor.h ../Effect.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -51511,7 +51511,7 @@ EffectMercyGround.o: EffectMercyGround.cpp EffectMercyGround.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset ../Item.h \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../Obstacle.h ../Portal.h ../quest/TriggerManager.h \
@@ -51582,7 +51582,7 @@ EffectTransformToWerwolf.o: EffectTransformToWerwolf.cpp \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Slayer.h ../PlayerCreature.h ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -51682,7 +51682,7 @@ EffectGrayDarkness.o: EffectGrayDarkness.cpp EffectGrayDarkness.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Obstacle.h ../Portal.h \
  ../quest/TriggerManager.h ../quest/Trigger.h ../quest/Condition.h \
@@ -51751,7 +51751,7 @@ EffectStoneSkin.o: EffectStoneSkin.cpp EffectStoneSkin.h ../Effect.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Vampire.h ../PlayerCreature.h ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -51836,7 +51836,7 @@ EffectHowl.o: EffectHowl.cpp EffectHowl.h ../Effect.h ../Object.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Vampire.h ../PlayerCreature.h ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -51922,7 +51922,7 @@ EffectAcidEruption.o: EffectAcidEruption.cpp EffectAcidEruption.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -52029,7 +52029,7 @@ EffectExplosionWater.o: EffectExplosionWater.cpp \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../InventorySlot.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h ../Garbage.h ../RankBonus.h \
@@ -52130,7 +52130,7 @@ EffectFrozenArmor.o: EffectFrozenArmor.cpp EffectFrozenArmor.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -52213,7 +52213,7 @@ EffectMagnumSpear.o: EffectMagnumSpear.cpp EffectMagnumSpear.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -52311,7 +52311,7 @@ EffectReactiveArmor.o: EffectReactiveArmor.cpp EffectReactiveArmor.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -52394,7 +52394,7 @@ EffectGroundBless.o: EffectGroundBless.cpp EffectGroundBless.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -52485,7 +52485,7 @@ EffectHellFire.o: EffectHellFire.cpp ../../database/DB.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Slayer.h ../PlayerCreature.h ../ObjectRegistry.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
@@ -52588,7 +52588,7 @@ EffectHellFireToEnemy.o: EffectHellFireToEnemy.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -52686,7 +52686,7 @@ EffectSharpChakram.o: EffectSharpChakram.cpp EffectSharpChakram.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -52770,7 +52770,7 @@ EffectDestructionSpear.o: EffectDestructionSpear.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../PlayerCreature.h ../ObjectRegistry.h \
+ /usr/include/c++/7/bitset ../PlayerCreature.h ../ObjectRegistry.h \
  ../../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h ../InventorySlot.h ../Item.h \
@@ -52870,7 +52870,7 @@ EffectSummonGroundElemental.o: EffectSummonGroundElemental.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset ../Item.h \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../Obstacle.h ../Portal.h ../quest/TriggerManager.h \
@@ -52941,7 +52941,7 @@ EffectGroundElemental.o: EffectGroundElemental.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../MonsterInfo.h ../MonsterSummonInfo.h ../MonsterInfoTypes.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -53044,7 +53044,7 @@ EffectSummonFireElemental.o: EffectSummonFireElemental.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -53099,7 +53099,7 @@ EffectSummonFireElemental.o: EffectSummonFireElemental.cpp \
  ../../chinabilling/CBillingInfo.h \
  ../../../Core/Gpackets/GCReconnectLogin.h ../gameguard/CSAuth.h \
  ../PCFinder.h ../NPC.h ../couple/PartnerWaitingManager.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../ZoneUtil.h ../ZoneInfoManager.h ../ZoneInfo.h SkillUtil.h \
  HitRoll.h ../SkillInfo.h ../../../Core/Gpackets/GCRemoveEffect.h \
@@ -53162,7 +53162,7 @@ EffectSummonWaterElemental.o: EffectSummonWaterElemental.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -53217,7 +53217,7 @@ EffectSummonWaterElemental.o: EffectSummonWaterElemental.cpp \
  ../../chinabilling/CBillingInfo.h \
  ../../../Core/Gpackets/GCReconnectLogin.h ../gameguard/CSAuth.h \
  ../PCFinder.h ../NPC.h ../couple/PartnerWaitingManager.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../ZoneUtil.h ../ZoneInfoManager.h ../ZoneInfo.h SkillUtil.h \
  HitRoll.h ../SkillInfo.h ../../../Core/Gpackets/GCRemoveEffect.h \
@@ -53278,7 +53278,7 @@ EffectBlindness.o: EffectBlindness.cpp EffectBlindness.h ../Effect.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../PlayerCreature.h ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -53376,7 +53376,7 @@ EffectIceHail.o: EffectIceHail.cpp EffectIceHail.h ../Effect.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Slayer.h ../PlayerCreature.h \
+ /usr/include/c++/7/bitset ../Slayer.h ../PlayerCreature.h \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -53486,7 +53486,7 @@ EffectIceHailToTile.o: EffectIceHailToTile.cpp EffectIceHailToTile.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
  ../../../Core/SocketOutputStream.h ../../../Core/PacketFactory.h \
  ../../../Core/EffectInfo.h ../Slayer.h ../PlayerCreature.h \
- ../Creature.h ../EffectManager.h /usr/include/STL/bitset \
+ ../Creature.h ../EffectManager.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -53580,7 +53580,7 @@ EffectReputoFactum.o: EffectReputoFactum.cpp EffectReputoFactum.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Monster.h ../MonsterInfo.h ../MonsterSummonInfo.h \
  ../MonsterInfoTypes.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
@@ -53652,7 +53652,7 @@ EffectSwordOfThor.o: EffectSwordOfThor.cpp EffectSwordOfThor.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Obstacle.h ../Portal.h \
  ../quest/TriggerManager.h ../quest/Trigger.h ../quest/Condition.h \
@@ -53719,7 +53719,7 @@ EffectBurningSolCharging.o: EffectBurningSolCharging.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -53815,7 +53815,7 @@ EffectWhitsuntide.o: EffectWhitsuntide.cpp EffectWhitsuntide.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -53913,7 +53913,7 @@ EffectInstallTurret.o: EffectInstallTurret.cpp EffectInstallTurret.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -54012,7 +54012,7 @@ EffectPlasmaRocketLauncher.o: EffectPlasmaRocketLauncher.cpp \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -54112,7 +54112,7 @@ EffectIntimateGrail.o: EffectIntimateGrail.cpp EffectIntimateGrail.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -54210,7 +54210,7 @@ EffectSetAfire.o: EffectSetAfire.cpp EffectSetAfire.h ../Effect.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -54309,7 +54309,7 @@ EffectSuddenBlast.o: EffectSuddenBlast.cpp EffectSuddenBlast.h ../Effect.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -54416,7 +54416,7 @@ EffectIceHorizon.o: EffectIceHorizon.cpp ../../database/DB.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Slayer.h ../PlayerCreature.h ../ObjectRegistry.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
@@ -54527,7 +54527,7 @@ EffectFuryOfGnome.o: EffectFuryOfGnome.cpp ../../database/DB.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Slayer.h ../PlayerCreature.h ../ObjectRegistry.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
@@ -54638,7 +54638,7 @@ EffectFuryOfGnomeMark.o: EffectFuryOfGnomeMark.cpp ../../database/DB.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../Slayer.h ../PlayerCreature.h \
+ /usr/include/c++/7/bitset ../Slayer.h ../PlayerCreature.h \
  ../ObjectRegistry.h ../InventorySlot.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h ../Garbage.h ../RankBonus.h \
@@ -54749,7 +54749,7 @@ EffectSharpHail.o: EffectSharpHail.cpp ../../database/DB.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../InventorySlot.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h ../Garbage.h ../RankBonus.h \
@@ -54858,7 +54858,7 @@ EffectSharpHail.o: EffectSharpHail.cpp ../../database/DB.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../InventorySlot.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h ../Garbage.h ../RankBonus.h \
@@ -54958,7 +54958,7 @@ EffectCannonade.o: EffectCannonade.cpp EffectCannonade.h ../Effect.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -55009,7 +55009,7 @@ EffectCannonade.o: EffectCannonade.cpp EffectCannonade.h ../Effect.h \
  ../../chinabilling/CBillingInfo.h \
  ../../../Core/Gpackets/GCReconnectLogin.h ../gameguard/CSAuth.h \
  ../PCFinder.h ../NPC.h ../couple/PartnerWaitingManager.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../ZoneUtil.h ../ZoneInfoManager.h ../ZoneInfo.h ../SkillInfo.h \
  SkillUtil.h ../Ousters.h ../../../Core/PCOustersInfo.h \
@@ -55080,7 +55080,7 @@ EffectHalo.o: EffectHalo.cpp ../../database/DB.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Slayer.h ../PlayerCreature.h ../ObjectRegistry.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
@@ -55191,7 +55191,7 @@ EffectDestinies.o: EffectDestinies.cpp ../../database/DB.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Monster.h ../MonsterInfo.h ../MonsterSummonInfo.h \
  ../MonsterInfoTypes.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
@@ -55298,7 +55298,7 @@ EffectFierceFlame.o: EffectFierceFlame.cpp ../../database/DB.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Monster.h ../MonsterInfo.h ../MonsterSummonInfo.h \
  ../MonsterInfoTypes.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
@@ -55403,7 +55403,7 @@ EffectShadowOfStorm.o: EffectShadowOfStorm.cpp ../Effect.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -55511,7 +55511,7 @@ EffectShadowOfStorm.o: EffectShadowOfStorm.cpp ../Effect.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -55619,7 +55619,7 @@ EffectShadowOfStorm.o: EffectShadowOfStorm.cpp ../Effect.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -55727,7 +55727,7 @@ EffectSolaFlare.o: EffectSolaFlare.cpp ../Effect.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -55835,7 +55835,7 @@ EffectSolaFlare.o: EffectSolaFlare.cpp ../Effect.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -55939,7 +55939,7 @@ EffectAberration.o: EffectAberration.cpp EffectAberration.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../Slayer.h ../PlayerCreature.h ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -56043,7 +56043,7 @@ EffectDragonTornado.o: EffectDragonTornado.cpp ../../database/DB.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../PlayerCreature.h ../ObjectRegistry.h ../InventorySlot.h ../Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h ../Garbage.h ../RankBonus.h \
@@ -56144,7 +56144,7 @@ EffectHarpoonBomb.o: EffectHarpoonBomb.cpp EffectHarpoonBomb.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -56246,7 +56246,7 @@ EffectPassingHeal.o: EffectPassingHeal.cpp EffectPassingHeal.h \
  ../EffectManager.h ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset ../Zone.h \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Zone.h \
  ../Tile.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
  ../Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -56346,7 +56346,7 @@ EffectPassingHeal.o: EffectPassingHeal.cpp EffectPassingHeal.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -56460,7 +56460,7 @@ EffectPassingHeal.o: EffectPassingHeal.cpp EffectPassingHeal.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -56568,7 +56568,7 @@ ShineSword.o: ShineSword.cpp ShineSword.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -56675,7 +56675,7 @@ ShineSword.o: ShineSword.cpp ShineSword.h SkillHandler.h Skill.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \

@@ -60,7 +60,7 @@ private:
 class GCPetStashListFactory : public PacketFactory 
 {
 public :
-	Packet* createPacket() throw() { return new GCPetStashList(); }
+	Packet* createPacket()  { return new GCPetStashList(); }
 	string getPacketName()  { return "GCPetStashList"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_PET_STASH_LIST; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE + PetStashItemInfo::getPacketMaxSize() * MAX_PET_STASH; }

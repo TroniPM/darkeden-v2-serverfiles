@@ -16,8 +16,8 @@
 class MindControl : public SkillHandler 
 {
 public:
-	MindControl() throw() {}
-	~MindControl() throw() {}
+	MindControl()  {}
+	~MindControl()  {}
 	
 public :
     string getSkillHandlerName()  { return "MindControl"; }

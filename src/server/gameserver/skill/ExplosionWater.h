@@ -16,8 +16,8 @@
 class ExplosionWater : public SkillHandler 
 {
 public:
-	ExplosionWater() throw() {}
-	~ExplosionWater() throw() {}
+	ExplosionWater()  {}
+	~ExplosionWater()  {}
 	
 public:
     string getSkillHandlerName()  { return "ExplosionWater"; }

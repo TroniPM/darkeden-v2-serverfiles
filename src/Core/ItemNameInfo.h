@@ -41,7 +41,7 @@ public :
 
 	virtual PacketSize_t getSize() ;
 
-	static PacketSize_t getMaxSize() throw()
+	static PacketSize_t getMaxSize() 
 	{
 		return (szObjectID + szBYTE + (szBYTE * 20));
 	}

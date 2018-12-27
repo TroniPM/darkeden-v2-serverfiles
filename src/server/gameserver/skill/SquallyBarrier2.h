@@ -16,8 +16,8 @@
 class SquallyBarrier2 : public SkillHandler 
 {
 public:
-	SquallyBarrier2() throw() {}
-	~SquallyBarrier2() throw() {}
+	SquallyBarrier2()  {}
+	~SquallyBarrier2()  {}
 	
 public:
 	string getSkillHandlerName()  { return "SquallyBarrier2"; }

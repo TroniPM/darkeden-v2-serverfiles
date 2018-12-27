@@ -137,7 +137,7 @@ void ActionRewardEventQuest::execute (Creature * pCreature1 , Creature * pCreatu
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionRewardEventQuest::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

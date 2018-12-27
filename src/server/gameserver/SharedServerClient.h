@@ -33,13 +33,13 @@ public:
 
 public:
 	// read socket's receive buffer and fill input buffer
-	// virtual void processInput() throw(IOException, Error);
+	// virtual void processInput() ;
 	
 	// parse packet and execute handler for the packet
-	virtual void processCommand() throw(IOException, Error);
+	virtual void processCommand() ;
 	
 	// flush output buffer to socket's send buffer
-	virtual void processOutput() throw(IOException, Error);
+	virtual void processOutput() ;
 	
 	// send packet to player's output buffer
 	virtual void sendPacket(Packet* packet) ;

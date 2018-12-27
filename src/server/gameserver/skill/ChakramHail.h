@@ -16,8 +16,8 @@
 class ChakramHail : public SkillHandler 
 {
 public:
-	ChakramHail() throw() {}
-	~ChakramHail() throw() {}
+	ChakramHail()  {}
+	~ChakramHail()  {}
 	
 public:
     string getSkillHandlerName()  { return "ChakramHail"; }

@@ -16,8 +16,8 @@
 class EatCorpse : public SkillHandler 
 {
 public:
-	EatCorpse() throw() {}
-	~EatCorpse() throw() {}
+	EatCorpse()  {}
+	~EatCorpse()  {}
 	
 public:
     string getSkillHandlerName()  { return "EatCorpse"; }

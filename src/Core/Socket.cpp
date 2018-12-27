@@ -1,293 +1,305 @@
 //////////////////////////////////////////////////////////////////////
-// 
+//
 // Socket.cpp
-// 
+//
 // by Reiot
-// 
+//
 //////////////////////////////////////////////////////////////////////
 
 #include "Socket.h"
 #include "Assert.h"
 
-Socket::Socket () 
-	throw () 
-: m_pSocketImpl(NULL) 
-{ 
-	__BEGIN_TRY
+Socket::Socket ()
 
-	m_pSocketImpl = new SocketImpl(); 
-	m_pSocketImpl->create();
-	
-	__END_CATCH
+    : m_pSocketImpl(NULL)
+{
+    __BEGIN_TRY
+
+    m_pSocketImpl = new SocketImpl();
+    m_pSocketImpl->create();
+
+    __END_CATCH
 }
 
-Socket::Socket ( const string & host , uint port ) 
-	throw () 
-: m_pSocketImpl(NULL) 
-{ 
-	__BEGIN_TRY
+Socket::Socket ( const string &host, uint port )
 
-	m_pSocketImpl = new SocketImpl(host,port); 
-	m_pSocketImpl->create();
-	
-	__END_CATCH
+    : m_pSocketImpl(NULL)
+{
+    __BEGIN_TRY
+
+    m_pSocketImpl = new SocketImpl(host, port);
+    m_pSocketImpl->create();
+
+    __END_CATCH
 }
 
-Socket::Socket ( SocketImpl * impl ) 
-	throw () 
-: m_pSocketImpl(NULL) 
-{ 
-	__BEGIN_TRY
+Socket::Socket ( SocketImpl *impl )
 
-	Assert( impl != NULL );
+    : m_pSocketImpl(NULL)
+{
+    __BEGIN_TRY
 
-	m_pSocketImpl = impl;
-	
-	__END_CATCH
+    Assert( impl != NULL );
+
+    m_pSocketImpl = impl;
+
+    __END_CATCH
 }
 
-Socket::~Socket () 
-	 
-{ 
-	__BEGIN_TRY
+Socket::~Socket ()
 
-	if ( m_pSocketImpl != NULL ) { 
-		delete m_pSocketImpl; 
-		m_pSocketImpl = NULL; 
-	} 
-	
-	__END_CATCH
+{
+    __BEGIN_TRY
+
+    if ( m_pSocketImpl != NULL )
+    {
+        delete m_pSocketImpl;
+        m_pSocketImpl = NULL;
+    }
+
+    __END_CATCH
 }
 
 // close previous connection and connect to another server socket
-void Socket::reconnect ( const string & host , uint port )
-	throw ( ConnectException , Error )
+void Socket::reconnect ( const string &host, uint port )
+
 {
-	__BEGIN_TRY
+    __BEGIN_TRY
 
-	// delete old socket impl object
-	m_pSocketImpl->close();
-	delete m_pSocketImpl;
+    // delete old socket impl object
+    m_pSocketImpl->close();
+    delete m_pSocketImpl;
 
-	// create new socket impl object
-	m_pSocketImpl = new SocketImpl( host , port );
-	m_pSocketImpl->create();
+    // create new socket impl object
+    m_pSocketImpl = new SocketImpl( host, port );
+    m_pSocketImpl->create();
 
-	// try to connect
-	m_pSocketImpl->connect();	
+    // try to connect
+    m_pSocketImpl->connect();
 
-	__END_CATCH
+    __END_CATCH
 }
 
-void Socket::close () 
-	 
-{ 
-	__BEGIN_TRY
+void Socket::close ()
 
-	m_pSocketImpl->close(); 
-
-	__END_CATCH
-}
-	
-void Socket::connect () 
-	throw (ConnectException, Error) 
-{ 
-	__BEGIN_TRY
-
-	m_pSocketImpl->connect(); 
-
-	__END_CATCH
-}
-
-void Socket::connect (const string & host, uint port) 
-	throw (ConnectException, Error)
-{ 
-	__BEGIN_TRY
-
-	m_pSocketImpl->connect(host,port); 
-
-	__END_CATCH
-}
-
-uint Socket::send (const void* buf, uint len, uint flags) 
-	throw (IOException, Error)
-{ 
-	__BEGIN_TRY
-
-	return m_pSocketImpl->send(buf,len,flags); 
-
-	__END_CATCH
-}
-
-uint Socket::receive (void* buf, uint len, uint flags) 
-	throw (IOException, ConnectException, Error) 
-{ 
-	__BEGIN_TRY
-
-	return m_pSocketImpl->receive(buf,len,flags); 
-
-	__END_CATCH
-}
-
-uint Socket::available () const
-	 
-{ 
-	__BEGIN_TRY
-
-	return m_pSocketImpl->available(); 
-
-	__END_CATCH
-}
-
-uint Socket::getLinger () const 
-	 
-{ 
-	__BEGIN_TRY
-
-	return m_pSocketImpl->getLinger(); 
-
-	__END_CATCH
-}
-
-void Socket::setLinger (uint lingertime) 
-	 
 {
-	__BEGIN_TRY
+    __BEGIN_TRY
 
-	m_pSocketImpl->setLinger(lingertime); 
+    m_pSocketImpl->close();
 
-	__END_CATCH
+    __END_CATCH
 }
 
-uint Socket::getSockError() const 
-	 
-{ 
-	__BEGIN_TRY
+void Socket::connect ()
 
-	return m_pSocketImpl->isSockError(); 
+{
+    __BEGIN_TRY
 
-	__END_CATCH
+    m_pSocketImpl->connect();
+
+    __END_CATCH
 }
 
-bool Socket::isNonBlocking () const 
-	 
-{ 
-	__BEGIN_TRY
+void Socket::connect (const string &host, uint port)
 
-	return m_pSocketImpl->isNonBlocking(); 
+{
+    __BEGIN_TRY
 
-	__END_CATCH
+    m_pSocketImpl->connect(host, port);
+
+    __END_CATCH
 }
 
-void Socket::setNonBlocking (bool on = true) 
-	 
-{ 
-	__BEGIN_TRY
+uint Socket::send (const void *buf, uint len, uint flags)
 
-	m_pSocketImpl->setNonBlocking(on); 
+{
+    __BEGIN_TRY
 
-	__END_CATCH
+    return m_pSocketImpl->send(buf, len, flags);
+
+    __END_CATCH
+    return 0;
 }
 
-uint Socket::getReceiveBufferSize () const 
-	 
-{ 
-	__BEGIN_TRY
+uint Socket::receive (void *buf, uint len, uint flags)
 
-	return m_pSocketImpl->getReceiveBufferSize(); 
+{
+    __BEGIN_TRY
 
-	__END_CATCH
+    return m_pSocketImpl->receive(buf, len, flags);
+
+    __END_CATCH
+    return 0;
+}
+
+uint Socket::available ()
+
+{
+    __BEGIN_TRY
+
+    return m_pSocketImpl->available();
+
+    __END_CATCH
+    return 0;
+}
+
+uint Socket::getLinger ()
+
+{
+    __BEGIN_TRY
+
+    return m_pSocketImpl->getLinger();
+
+    __END_CATCH
+    return 0;
+}
+
+void Socket::setLinger (uint lingertime)
+
+{
+    __BEGIN_TRY
+
+    m_pSocketImpl->setLinger(lingertime);
+
+    __END_CATCH
+}
+
+uint Socket::getSockError()
+
+{
+    __BEGIN_TRY
+
+    return m_pSocketImpl->isSockError();
+
+    __END_CATCH
+    return 0;
+}
+
+bool Socket::isNonBlocking ()
+
+{
+    __BEGIN_TRY
+
+    return m_pSocketImpl->isNonBlocking();
+
+    __END_CATCH
+    return false;
+}
+
+void Socket::setNonBlocking (bool on = true)
+
+{
+    __BEGIN_TRY
+
+    m_pSocketImpl->setNonBlocking(on);
+
+    __END_CATCH
+}
+
+uint Socket::getReceiveBufferSize ()
+
+{
+    __BEGIN_TRY
+
+    return m_pSocketImpl->getReceiveBufferSize();
+
+    __END_CATCH
+    return 0;
 }
 
 void Socket::setReceiveBufferSize (uint size)
-	 
-{ 
-	__BEGIN_TRY
 
-	m_pSocketImpl->setReceiveBufferSize(size); 
+{
+    __BEGIN_TRY
 
-	__END_CATCH
+    m_pSocketImpl->setReceiveBufferSize(size);
+
+    __END_CATCH
 }
 
-uint Socket::getSendBufferSize () const 
-	 
-{ 
-	__BEGIN_TRY
+uint Socket::getSendBufferSize ()
 
-	return m_pSocketImpl->getSendBufferSize(); 
+{
+    __BEGIN_TRY
 
-	__END_CATCH
+    return m_pSocketImpl->getSendBufferSize();
+
+    __END_CATCH
+    return 0;
 }
 
 void Socket::setSendBufferSize (uint size)
-	 
-{ 
-	__BEGIN_TRY
 
-	m_pSocketImpl->setSendBufferSize(size); 
-
-	__END_CATCH
-}
-
-string Socket::getHost () const 
-	throw () 
-{ 
-	__BEGIN_TRY
-
-	return m_pSocketImpl->getHost(); 
-
-	__END_CATCH
-}
-
-uint Socket::getPort () const 
-	throw () 
-{ 
-	__BEGIN_TRY
-
-	return m_pSocketImpl->getPort(); 
-
-	__END_CATCH
-}
-
-IP_t Socket::getHostIP () const 
-	throw () 
-{ 
-	__BEGIN_TRY
-
-	return m_pSocketImpl->getHostIP(); 
-
-	__END_CATCH
-}
-
-bool Socket::isValid () const 
-	throw () 
 {
-	__BEGIN_TRY
+    __BEGIN_TRY
 
-	return m_pSocketImpl->isValid(); 
+    m_pSocketImpl->setSendBufferSize(size);
 
-	__END_CATCH
+    __END_CATCH
 }
 
-SOCKET Socket::getSOCKET () const 
-	throw () 
-{ 
-	__BEGIN_TRY
+string Socket::getHost ()
 
-	return m_pSocketImpl->getSOCKET(); 
+{
+    __BEGIN_TRY
 
-	__END_CATCH
+    return m_pSocketImpl->getHost();
+
+    __END_CATCH
+    return NULL;
+}
+
+uint Socket::getPort ()
+
+{
+    __BEGIN_TRY
+
+    return m_pSocketImpl->getPort();
+
+    __END_CATCH
+    return 0;
+}
+
+IP_t Socket::getHostIP ()
+
+{
+    __BEGIN_TRY
+
+    return m_pSocketImpl->getHostIP();
+
+    __END_CATCH
+}
+
+bool Socket::isValid ()
+
+{
+    __BEGIN_TRY
+
+    return m_pSocketImpl->isValid();
+
+    __END_CATCH
+}
+
+SOCKET Socket::getSOCKET ()
+
+{
+    __BEGIN_TRY
+
+    return m_pSocketImpl->getSOCKET();
+
+    __END_CATCH
 }
 
 // return debug string
-string Socket::toString () const
-       throw ()
-{
-	__BEGIN_TRY
-		
-	StringStream msg;
-	msg << "Socket(FD:" << getSOCKET() << ",HOST:" << getHost() << ",PORT:" << getPort() << ")" ;
-	return msg.toString();
+string Socket::toString ()
 
-	__END_CATCH
+{
+    __BEGIN_TRY
+
+    StringStream msg;
+    msg << "Socket(FD:" << getSOCKET() << ",HOST:" << getHost() << ",PORT:" << getPort() << ")" ;
+    return msg.toString();
+
+    __END_CATCH
+    return NULL;
 }

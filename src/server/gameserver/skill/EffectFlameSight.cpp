@@ -203,7 +203,7 @@ void EffectFlameSight::save(const string & ownerID)
 }
 
 string EffectFlameSight::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

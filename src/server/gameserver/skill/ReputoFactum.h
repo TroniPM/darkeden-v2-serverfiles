@@ -16,8 +16,8 @@
 class ReputoFactum : public SkillHandler 
 {
 public:
-	ReputoFactum() throw() {}
-	~ReputoFactum() throw() {}
+	ReputoFactum()  {}
+	~ReputoFactum()  {}
 	
 public:
     string getSkillHandlerName()  { return "ReputoFactum"; }

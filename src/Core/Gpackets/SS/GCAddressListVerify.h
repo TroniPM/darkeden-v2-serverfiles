@@ -41,8 +41,8 @@ public:
 		SMS_SEND_FAIL_NOT_ENOUGH_CHARGE,
 	};
 
-	GCAddressListVerify() throw() { m_Code = ADDRESS_LIST_VERIFY_MAX; m_Parameter = 0;}
-	virtual ~GCAddressListVerify() throw() {}
+	GCAddressListVerify()  { m_Code = ADDRESS_LIST_VERIFY_MAX; m_Parameter = 0;}
+	virtual ~GCAddressListVerify()  {}
 
 public:
 	void read(SocketInputStream & iStream) ;
@@ -56,10 +56,10 @@ public:
 	
 public:
 	BYTE getCode(void)  { return m_Code;}
-	void setCode(BYTE code) throw() { m_Code = code;}
+	void setCode(BYTE code)  { m_Code = code;}
 
 	DWORD getParameter(void)  { return m_Parameter; }
-	void setParameter(uint parameter) throw() { m_Parameter = parameter; }
+	void setParameter(uint parameter)  { m_Parameter = parameter; }
 
 private: 
 	BYTE m_Code;
@@ -74,7 +74,7 @@ private:
 class GCAddressListVerifyFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCAddressListVerify(); }
+	Packet* createPacket()  { return new GCAddressListVerify(); }
 	string getPacketName()  { return "GCAddressListVerify"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADDRESS_LIST_VERIFY; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE + szDWORD; }

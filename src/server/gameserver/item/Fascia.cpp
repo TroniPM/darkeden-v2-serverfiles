@@ -25,13 +25,13 @@ Mutex    Fascia::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Fascia::Fascia()
-	throw()
+	
 {
 	setItemType(0);
 }
 
 Fascia::Fascia(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	setItemType(itemType);
 	setOptionType(optionType);
@@ -151,7 +151,7 @@ void Fascia::save(const string & ownerID, Storage storage, StorageID_t storageID
 // get debug string
 //--------------------------------------------------------------------------------
 string Fascia::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -169,7 +169,7 @@ string Fascia::toString() const
 // get debug string
 //--------------------------------------------------------------------------------
 string FasciaInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

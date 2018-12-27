@@ -25,16 +25,16 @@ class CURequestLoginMode : public Packet {
 public :
 	
     // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
-    void read ( SocketInputStream & iStream ) throw ( ProtocolException , Error );
+    void read ( SocketInputStream & iStream ) ;
 
 	// 소켓으로부터 직접 데이터를 읽어서 패킷을 초기화한다.
-	void read ( Socket * pSocket ) throw ( ProtocolException , Error );
+	void read ( Socket * pSocket ) ;
 		    
     // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
     void write ( SocketOutputStream & oStream ) ;
 
 	// execute packet's handler
-	void execute ( Player * pPlayer ) throw ( ProtocolException , Error );
+	void execute ( Player * pPlayer ) ;
 
 	// get packet id
 	PacketID_t getPacketID ()  { return PACKET_CU_REQUEST_LOGIN_MODE; }
@@ -42,7 +42,7 @@ public :
 	// get packet's body size
 	PacketSize_t getPacketSize ()  { return 0; }
 	//
-	static PacketSize_t getPacketMaxSize () throw () { return 0; }
+	static PacketSize_t getPacketMaxSize ()  { return 0; }
 
 	// get packet name
 	string getPacketName ()  { return "CURequestLoginMode"; }
@@ -65,7 +65,7 @@ class CURequestLoginModeFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet * createPacket () throw () { return new CURequestLoginMode(); }
+	Packet * createPacket ()  { return new CURequestLoginMode(); }
 
 	// get packet name
 	string getPacketName ()  { return "CURequestLoginMode"; }
@@ -90,7 +90,7 @@ class CURequestLoginModeHandler {
 public :
 
 	// execute packet's handler
-	static void execute ( CURequestLoginMode * pPacket , Player * pPlayer ) throw ( ProtocolException , Error );
+	static void execute ( CURequestLoginMode * pPacket , Player * pPlayer ) ;
 };
 
 #endif

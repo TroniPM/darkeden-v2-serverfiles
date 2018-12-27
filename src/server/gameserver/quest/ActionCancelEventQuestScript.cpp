@@ -81,7 +81,7 @@ void ActionCancelEventQuestScript::execute (Creature * pCreature1 , Creature * p
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionCancelEventQuestScript::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

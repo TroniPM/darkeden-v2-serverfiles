@@ -16,8 +16,8 @@
 class HandsOfNizie: public SkillHandler 
 {
 public:
-	HandsOfNizie() throw() {}
-	~HandsOfNizie() throw() {}
+	HandsOfNizie()  {}
+	~HandsOfNizie()  {}
 	
 public:
     string getSkillHandlerName()  { return "HandsOfNizie"; }

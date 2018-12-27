@@ -16,8 +16,8 @@
 class SuddenBlast : public SkillHandler 
 {
 public:
-	SuddenBlast() throw() {}
-	~SuddenBlast() throw() {}
+	SuddenBlast()  {}
+	~SuddenBlast()  {}
 	
 public:
     string getSkillHandlerName()  { return "SuddenBlast"; }

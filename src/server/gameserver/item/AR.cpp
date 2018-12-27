@@ -25,7 +25,7 @@ Mutex    AR::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 AR::AR()
-	throw()
+	
 {
 	setItemType(0);
 	setDurability(0);
@@ -38,7 +38,7 @@ AR::AR()
 }
 
 AR::AR(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: Gun(itemType, optionType)
 {
 	setItemType(itemType);
@@ -58,7 +58,7 @@ AR::AR(ItemType_t itemType, const list<OptionType_t>& optionType)
 // destructor
 //--------------------------------------------------------------------------------
 AR::~AR()
-	throw()
+	
 {
 }
 
@@ -228,7 +228,7 @@ void AR::makePCItemInfo(PCItemInfo& result) const
 // get debug string
 //--------------------------------------------------------------------------------
 string AR::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "AR("
@@ -344,7 +344,7 @@ ToHit_t AR::getToHitBonus() const
 //--------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------
 int AR::getCriticalBonus(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -358,7 +358,7 @@ int AR::getCriticalBonus(void) const
 // get debug string
 //--------------------------------------------------------------------------------
 string ARInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "ARInfo("

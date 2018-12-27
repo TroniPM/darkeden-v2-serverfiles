@@ -12,7 +12,7 @@
 //////////////////////////////////////////////////////////////////////////////
 
 Sector::Sector() 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -23,7 +23,7 @@ Sector::Sector()
 }
 
 Sector::~Sector() 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -108,7 +108,7 @@ void Sector::setNearbySector(uint dir, Sector* pSector)
 }
 
 string Sector::toString(void) const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

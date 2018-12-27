@@ -16,8 +16,8 @@
 class CreateBomb : public SkillHandler 
 {
 public:
-	CreateBomb() throw() {}
-	~CreateBomb() throw() {}
+	CreateBomb()  {}
+	~CreateBomb()  {}
 	
 public:
     string getSkillHandlerName()  { return "CreateBomb"; }

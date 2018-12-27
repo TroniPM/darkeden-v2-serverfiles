@@ -57,7 +57,7 @@ private:
 class CGGetEventItemFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGGetEventItem(); }
+	Packet* createPacket()  { return new CGGetEventItem(); }
 	string getPacketName()  { return "CGGetEventItem"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_GET_EVENT_ITEM; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE; }

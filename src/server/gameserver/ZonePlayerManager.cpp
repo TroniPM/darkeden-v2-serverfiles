@@ -63,7 +63,7 @@ bool checkZonePlayerManager( GamePlayer* pGamePlayer, ZonePlayerManager* pZPM, c
 // 하위 매니저 객체를 생성한다.
 //////////////////////////////////////////////////////////////////////////////
 ZonePlayerManager::ZonePlayerManager () 
-	throw ()
+	
 : m_MinFD(-1), m_MaxFD(-1)
 {
 	__BEGIN_TRY
@@ -116,7 +116,7 @@ ZonePlayerManager::ZonePlayerManager ()
 // destructor
 //////////////////////////////////////////////////////////////////////////////
 ZonePlayerManager::~ZonePlayerManager () 
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -302,7 +302,7 @@ void ZonePlayerManager::flushBroadcastPacket()
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void ZonePlayerManager::copyPlayers()
-	throw()
+	
 {
 	__BEGIN_TRY
 

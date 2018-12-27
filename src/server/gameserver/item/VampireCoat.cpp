@@ -24,7 +24,7 @@ Mutex    VampireCoat::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 VampireCoat::VampireCoat()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
@@ -33,7 +33,7 @@ VampireCoat::VampireCoat()
 }
 
 VampireCoat::VampireCoat(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_ItemType(itemType), m_OptionType(optionType), m_Durability(0)
 {
 	setItemType(itemType);
@@ -178,7 +178,7 @@ void VampireCoat::save(const string & ownerID, Storage storage, StorageID_t stor
 // get debug string
 //--------------------------------------------------------------------------------
 string VampireCoat::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -263,7 +263,7 @@ Protection_t VampireCoat::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string VampireCoatInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

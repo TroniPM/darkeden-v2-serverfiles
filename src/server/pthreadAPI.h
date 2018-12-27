@@ -142,7 +142,7 @@ void pthread_cond_init_ex ( pthread_cond_t * cond , pthread_condattr_t * cond_at
 // exception version of pthread_cond_destroy()
 //
 void pthread_cond_destroy_ex ( pthread_cond_t * cond )
-	 throw ( CondVarException , Error );
+	 ;
 
 //
 // exception version of pthread_cond_signal()
@@ -172,13 +172,13 @@ void pthread_cond_broadcast_ex ( pthread_cond_t * cond )
 // exception version of pthread_condattr_init()
 //
 void pthread_condattr_init_ex ( pthread_condattr_t * attr )
-	 throw ();
+	 ;
 
 //
 // exception version of pthread_condattr_destroy()
 //
 void pthread_condattr_destroy_ex ( pthread_condattr_t * attr )
-	 throw ();
+	 ;
 
 }//end of namespace pthreadAPI
 

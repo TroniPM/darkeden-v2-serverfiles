@@ -57,7 +57,7 @@ class GCAddNewItemToZoneFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCAddNewItemToZone(); }
+	Packet* createPacket()  { return new GCAddNewItemToZone(); }
 
 	// get packet name
 	string getPacketName()  { return "GCAddNewItemToZone"; }

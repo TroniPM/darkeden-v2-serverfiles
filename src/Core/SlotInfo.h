@@ -40,7 +40,7 @@ public :
 	{ return 0; }
 
 	// get max size of object
-	static uint getMaxSize () throw ()
+	static uint getMaxSize () 
 	{ return 0; }
 
 	// get debug string
@@ -49,23 +49,23 @@ public :
 public :
 
 	// get/set ObjectID
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 	ObjectID_t getObjectID()  { return m_ObjectID; }
 
 	// get/set ItemClass
-	void setItemClass (BYTE IClass) throw() { m_IClass = IClass; }
+	void setItemClass (BYTE IClass)  { m_IClass = IClass; }
 	BYTE getItemClass ()  { return m_IClass; }
 
 	// get/set ItemType
-	void setItemType (ItemType_t ItemType) throw() { m_ItemType = ItemType; }
+	void setItemType (ItemType_t ItemType)  { m_ItemType = ItemType; }
 	ItemType_t getItemType()  { return m_ItemType; }
 
 	// get/set OptionType
-	void addOptionType(OptionType_t OptionType) throw() { m_OptionType.push_back( OptionType ); }
-	void setOptionType(const list<OptionType_t>& OptionType) throw() { m_OptionType = OptionType; }
+	void addOptionType(OptionType_t OptionType)  { m_OptionType.push_back( OptionType ); }
+	void setOptionType(const list<OptionType_t>& OptionType)  { m_OptionType = OptionType; }
 	int getOptionTypeSize() 	{ return m_OptionType.size(); }
 	const list<OptionType_t>& getOptionType()  { return m_OptionType; }
-	OptionType_t popOptionType() throw()
+	OptionType_t popOptionType() 
 	{
 		if (m_OptionType.empty()) return 0;
 		OptionType_t optionType = m_OptionType.front();
@@ -74,19 +74,19 @@ public :
 	}
 
 	// get/set InvenX
-	void setInvenX(CoordInven_t InvenX) throw() { m_InvenX = InvenX; }
+	void setInvenX(CoordInven_t InvenX)  { m_InvenX = InvenX; }
 	CoordInven_t getInvenX()  { return m_InvenX; }
 
 	// get/set InvenY
-	void setInvenY(CoordInven_t InvenY) throw() { m_InvenY = InvenY; }
+	void setInvenY(CoordInven_t InvenY)  { m_InvenY = InvenY; }
 	CoordInven_t getInvenY()  { return m_InvenY; }
 
 	// get/set ItemNum
-	void setItemNum (ItemNum_t ItemNum) throw() { m_ItemNum = ItemNum; }
+	void setItemNum (ItemNum_t ItemNum)  { m_ItemNum = ItemNum; }
 	ItemNum_t getItemNum()  { return m_ItemNum; }
 
 	// get/set MainColor
-	void setMainColor(WORD MainColor) throw() { m_MainColor = MainColor; }
+	void setMainColor(WORD MainColor)  { m_MainColor = MainColor; }
 	WORD getMainColor()  { return m_MainColor; }
 
 private :

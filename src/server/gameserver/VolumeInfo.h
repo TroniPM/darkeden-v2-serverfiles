@@ -24,11 +24,11 @@ public:
 public:
 	// get/set volume width
 	VolumeWidth_t getVolumeWidth()  { return m_VolumeWidth; }
-	void setVolumeWidth(VolumeWidth_t volumeWidth) throw() { m_VolumeWidth = volumeWidth; }
+	void setVolumeWidth(VolumeWidth_t volumeWidth)  { m_VolumeWidth = volumeWidth; }
 
 	// get/set volume height
 	VolumeHeight_t getVolumeHeight()  { return m_VolumeHeight; }
-	void setVolumeHeight(VolumeHeight_t volumeHeight) throw() { m_VolumeHeight = volumeHeight; }
+	void setVolumeHeight(VolumeHeight_t volumeHeight)  { m_VolumeHeight = volumeHeight; }
 
 	// get debug string
 	string toString() ;

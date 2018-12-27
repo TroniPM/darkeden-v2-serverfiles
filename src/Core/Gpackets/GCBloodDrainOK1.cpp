@@ -18,7 +18,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 GCBloodDrainOK1::GCBloodDrainOK1 ()
-     throw ()
+     
 {
 	__BEGIN_TRY
 
@@ -30,7 +30,7 @@ GCBloodDrainOK1::GCBloodDrainOK1 ()
 // destructor
 //////////////////////////////////////////////////////////////////////
 GCBloodDrainOK1::~GCBloodDrainOK1 ()
-    throw ()
+    
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -41,7 +41,7 @@ GCBloodDrainOK1::~GCBloodDrainOK1 ()
 // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
 //////////////////////////////////////////////////////////////////////
 void GCBloodDrainOK1::read ( SocketInputStream & iStream )
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -75,7 +75,7 @@ void GCBloodDrainOK1::write ( SocketOutputStream & oStream )
 //
 //////////////////////////////////////////////////////////////////////
 void GCBloodDrainOK1::execute ( Player * pPlayer ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		

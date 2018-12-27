@@ -16,8 +16,8 @@
 class EaglesEye1 : public SkillHandler 
 {
 public:
-	EaglesEye1() throw() {}
-	~EaglesEye1() throw() {}
+	EaglesEye1()  {}
+	~EaglesEye1()  {}
 	
 public:
 	string getSkillHandlerName()  { return "EaglesEye1"; }

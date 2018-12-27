@@ -27,7 +27,7 @@ VampirePortalItemLoader*      g_pVampirePortalItemLoader = NULL;
 //////////////////////////////////////////////////////////////////////////////
 
 VampirePortalItem::VampirePortalItem()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -43,7 +43,7 @@ VampirePortalItem::VampirePortalItem()
 }
 
 VampirePortalItem::VampirePortalItem(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -93,7 +93,7 @@ VampirePortalItem::VampirePortalItem(ItemType_t itemType, const list<OptionType_
 }
 
 VampirePortalItem::~VampirePortalItem()
-	throw()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -232,7 +232,7 @@ Weight_t VampirePortalItem::getWeight() const
 }
 
 string VampirePortalItem::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -252,7 +252,7 @@ string VampirePortalItem::toString() const
 }
 
 int VampirePortalItem::getMaxCharge(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -276,7 +276,7 @@ Durability_t VampirePortalItem::getDurability() const
 }
 
 Silver_t VampirePortalItem::getSilver() const 
-	throw() 
+	 
 { 
 	__BEGIN_TRY
 
@@ -286,7 +286,7 @@ Silver_t VampirePortalItem::getSilver() const
 }
 
 EnchantLevel_t VampirePortalItem::getEnchantLevel() const 
-	throw() 
+	 
 { 
 	__BEGIN_TRY
 
@@ -351,7 +351,7 @@ void VampirePortalItemInfoManager::load()
 }
 
 string VampirePortalItemInfo::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

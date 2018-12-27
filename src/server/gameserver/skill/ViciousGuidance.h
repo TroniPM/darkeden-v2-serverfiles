@@ -16,8 +16,8 @@
 class ViciousGuidance: public SkillHandler 
 {
 public:
-	ViciousGuidance() throw() {}
-	~ViciousGuidance() throw() {}
+	ViciousGuidance()  {}
+	~ViciousGuidance()  {}
 
 public:
     string getSkillHandlerName()  { return "ViciousGuidance"; }

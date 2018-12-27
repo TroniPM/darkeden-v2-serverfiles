@@ -61,13 +61,13 @@ public:
 	WORD getGuildInfoListNum()  { return m_GuildInfoList.size(); }
 
 	// add GuildInfo
-	void addGuildInfo( GuildInfo2* pGuildInfo ) throw() { m_GuildInfoList.push_front( pGuildInfo ); }
+	void addGuildInfo( GuildInfo2* pGuildInfo )  { m_GuildInfoList.push_front( pGuildInfo ); }
 
 	// clear GuildInfoList
 	void clearGuildInfoList() ;
 
 	// pop front element in GuildInfoList
-	GuildInfo2* popFrontGuildInfoList() throw()
+	GuildInfo2* popFrontGuildInfoList() 
 	{
 		if ( m_GuildInfoList.empty() )
 			return NULL;
@@ -98,7 +98,7 @@ class SGGuildInfoFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new SGGuildInfo(); }
+	Packet* createPacket()  { return new SGGuildInfo(); }
 
 	// get packet name
 	string getPacketName()  { return "SGGuildInfo"; }

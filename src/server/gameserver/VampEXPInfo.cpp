@@ -20,21 +20,21 @@ VampEXPInfoManager* g_pVampEXPInfoManager = NULL;
 ////////////////////////////////////////////////////////////////////////////////
 
 VampEXPInfo::VampEXPInfo()
-	throw()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 VampEXPInfo::~VampEXPInfo()
-	throw()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 string VampEXPInfo::toString() const
-	throw()
+	
 {
 	__BEGIN_TRY
 	
@@ -54,7 +54,7 @@ string VampEXPInfo::toString() const
 ////////////////////////////////////////////////////////////////////////////////
 
 VampEXPInfoManager::VampEXPInfoManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -65,7 +65,7 @@ VampEXPInfoManager::VampEXPInfoManager()
 }
 
 VampEXPInfoManager::~VampEXPInfoManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -173,7 +173,7 @@ VampEXPInfo* VampEXPInfoManager::getVampEXPInfo(uint  VampEXPType)
 }
 
 string VampEXPInfoManager::toString() const
-	throw()
+	
 {
 	__BEGIN_TRY
 

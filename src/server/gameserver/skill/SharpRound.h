@@ -16,8 +16,8 @@
 class SharpRound: public SkillHandler 
 {
 public:
-	SharpRound() throw() {}
-	~SharpRound() throw() {}
+	SharpRound()  {}
+	~SharpRound()  {}
 	
 public:
     string getSkillHandlerName()  { return "SharpRound"; }

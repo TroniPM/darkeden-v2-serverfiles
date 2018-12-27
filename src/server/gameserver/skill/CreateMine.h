@@ -16,8 +16,8 @@
 class CreateMine : public SkillHandler 
 {
 public:
-	CreateMine() throw() {}
-	~CreateMine() throw() {}
+	CreateMine()  {}
+	~CreateMine()  {}
 	
 public:
     string getSkillHandlerName()  { return "CreateMine"; }

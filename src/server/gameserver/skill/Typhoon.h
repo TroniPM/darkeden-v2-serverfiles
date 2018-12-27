@@ -16,8 +16,8 @@
 class Typhoon : public SkillHandler 
 {
 public:
-	Typhoon() throw() {}
-	~Typhoon() throw() {}
+	Typhoon()  {}
+	~Typhoon()  {}
 	
 public:
     string getSkillHandlerName()  { return "Typhoon"; }

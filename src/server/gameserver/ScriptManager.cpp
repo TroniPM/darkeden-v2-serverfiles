@@ -171,7 +171,7 @@ void ScriptManager::setScript (ScriptID_t scriptID , Script* pScript)
 // get debug string
 //////////////////////////////////////////////////////////////////////////////
 string ScriptManager::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 

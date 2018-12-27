@@ -52,7 +52,7 @@ private:
 class CGAddSMSAddressFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGAddSMSAddress(); }
+	Packet* createPacket()  { return new CGAddSMSAddress(); }
 	string getPacketName()  { return "CGAddSMSAddress"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_ADD_SMS_ADDRESS; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE + 20 + szBYTE + 40 + szBYTE + 11; }

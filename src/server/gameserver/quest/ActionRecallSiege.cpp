@@ -128,7 +128,7 @@ void ActionRecallSiege::execute (Creature * pNPC , Creature * pCreature)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionRecallSiege::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

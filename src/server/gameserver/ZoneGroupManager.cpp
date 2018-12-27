@@ -27,7 +27,7 @@
 // constructor
 //--------------------------------------------------------------------------------
 ZoneGroupManager::ZoneGroupManager () 
-	throw ()
+	
 : m_ZoneGroups(10)
 {
 	__BEGIN_TRY
@@ -39,7 +39,7 @@ ZoneGroupManager::ZoneGroupManager ()
 // destructor
 //--------------------------------------------------------------------------------
 ZoneGroupManager::~ZoneGroupManager () 
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -275,7 +275,7 @@ void ZoneGroupManager::addZoneGroup (ZoneGroup* pZoneGroup)
 // get zone from zone manager
 //--------------------------------------------------------------------------------
 ZoneGroup* ZoneGroupManager::getZoneGroupByGroupID (ZoneGroupID_t ZoneGroupID) const
-	throw (NoSuchElementException)
+	
 {
 	__BEGIN_TRY
 		
@@ -306,7 +306,7 @@ ZoneGroup* ZoneGroupManager::getZoneGroupByGroupID (ZoneGroupID_t ZoneGroupID) c
 // Delete zone from zone manager
 //--------------------------------------------------------------------------------
 void ZoneGroupManager::deleteZoneGroup (ZoneGroupID_t zoneID) 
-	throw (NoSuchElementException)
+	
 {
 	__BEGIN_TRY
 		
@@ -336,7 +336,7 @@ void ZoneGroupManager::deleteZoneGroup (ZoneGroupID_t zoneID)
 // get zone from zone manager
 //--------------------------------------------------------------------------------
 ZoneGroup* ZoneGroupManager::getZoneGroup (ZoneGroupID_t zoneID) const
-	throw (NoSuchElementException)
+	
 {
 	__BEGIN_TRY
 		
@@ -926,7 +926,7 @@ void   ZoneGroupManager::balanceZoneGroup(bool bForce, bool bDefault)
 // lock all ZoneGroup and LoginServerManager
 //--------------------------------------------------------------------------------
 void ZoneGroupManager::lockZoneGroups()
-	throw( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -956,7 +956,7 @@ void ZoneGroupManager::lockZoneGroups()
 // lock all ZoneGroup and LoginServerManager
 //--------------------------------------------------------------------------------
 void ZoneGroupManager::unlockZoneGroups()
-	throw( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -1031,7 +1031,7 @@ void   ZoneGroupManager::removeFlag(Effect::EffectClass EC)
 // get debug string
 //--------------------------------------------------------------------------------
 string ZoneGroupManager::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 

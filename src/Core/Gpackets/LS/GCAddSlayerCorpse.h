@@ -26,8 +26,8 @@ class GCAddSlayerCorpse : public Packet {
 public :
 
 	// constructor
-	GCAddSlayerCorpse() throw() { m_TreasureCount = 0; }
-	GCAddSlayerCorpse(const PCSlayerInfo3 & slayerInfo) throw() : m_SlayerInfo(slayerInfo) {}
+	GCAddSlayerCorpse()  { m_TreasureCount = 0; }
+	GCAddSlayerCorpse(const PCSlayerInfo3 & slayerInfo)  : m_SlayerInfo(slayerInfo) {}
 
 
 public :
@@ -57,13 +57,13 @@ public :
 public :
 
 	// get slayer info
-	PCSlayerInfo3 & getSlayerInfo() throw() { return m_SlayerInfo; }
+	PCSlayerInfo3 & getSlayerInfo()  { return m_SlayerInfo; }
 	const PCSlayerInfo3 & getSlayerInfo()  { return m_SlayerInfo; }
-	void setSlayerInfo(const PCSlayerInfo3 & slayerInfo) throw() { m_SlayerInfo = slayerInfo; }
+	void setSlayerInfo(const PCSlayerInfo3 & slayerInfo)  { m_SlayerInfo = slayerInfo; }
 
 	// get/set Treasure Count
 	BYTE getTreasureCount()  { return m_TreasureCount; }
-	void setTreasureCount(BYTE Count) throw() { m_TreasureCount = Count; }
+	void setTreasureCount(BYTE Count)  { m_TreasureCount = Count; }
 
 private :
 	
@@ -89,7 +89,7 @@ class GCAddSlayerCorpseFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCAddSlayerCorpse(); }
+	Packet* createPacket()  { return new GCAddSlayerCorpse(); }
 
 	// get packet name
 	string getPacketName()  { return "GCAddSlayerCorpse"; }

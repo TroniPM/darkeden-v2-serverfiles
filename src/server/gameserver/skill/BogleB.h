@@ -16,8 +16,8 @@
 class BogleB: public SkillHandler 
 {
 public:
-	BogleB() throw() {}
-	~BogleB() throw() {}
+	BogleB()  {}
+	~BogleB()  {}
 	
 public:
     string getSkillHandlerName()  { return "BogleB"; }

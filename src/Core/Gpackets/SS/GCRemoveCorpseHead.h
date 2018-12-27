@@ -39,11 +39,11 @@ class GCRemoveCorpseHead : public Packet {
 public :
 
 	// constructor
-	GCRemoveCorpseHead() throw()
+	GCRemoveCorpseHead() 
 	{
 	}
 
-	GCRemoveCorpseHead(ObjectID_t objectID) throw()
+	GCRemoveCorpseHead(ObjectID_t objectID) 
 		: m_ObjectID(objectID)
 	{
 	}
@@ -79,7 +79,7 @@ public :
 
 	// get/set object id
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t objectID) throw() { m_ObjectID = objectID; }
+	void setObjectID(ObjectID_t objectID)  { m_ObjectID = objectID; }
 
 private :
 
@@ -102,7 +102,7 @@ class GCRemoveCorpseHeadFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCRemoveCorpseHead(); }
+	Packet* createPacket()  { return new GCRemoveCorpseHead(); }
 
 	// get packet name
 	string getPacketName()  { return "GCRemoveCorpseHead"; }

@@ -37,7 +37,7 @@ public :
 	// get size of object
 	uint getSize ()  { return szSkillType + szExp + szExpLevel + szTurn + szTurn + szBYTE; }
 	// get max size of object
-	static uint getMaxSize () throw () { return szSkillType + szExp + szExpLevel + szTurn + szTurn + szBYTE; }
+	static uint getMaxSize ()  { return szSkillType + szExp + szExpLevel + szTurn + szTurn + szBYTE; }
 
 	// get debug string
 	string toString () ;
@@ -46,28 +46,28 @@ public :
 
 	// get / set SkillType
 	SkillType_t getSkillType()  { return m_SkillType; }
-	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
+	void setSkillType(SkillType_t SkillType)  { m_SkillType = SkillType; }
 
 	// get / set Exp
 	Exp_t getSkillExp()  { return m_Exp; }
-	void setSkillExp(Exp_t Exp) throw() { m_Exp = Exp; }
+	void setSkillExp(Exp_t Exp)  { m_Exp = Exp; }
 
 	// get / set ExpLevel
 	ExpLevel_t getSkillExpLevel()  { return m_ExpLevel; }
-	void setSkillExpLevel(ExpLevel_t ExpLevel) throw() { m_ExpLevel = ExpLevel; }
+	void setSkillExpLevel(ExpLevel_t ExpLevel)  { m_ExpLevel = ExpLevel; }
 
 	// get / set Turn
 	Turn_t getSkillTurn()  { return m_Interval ; }
-	void setSkillTurn(Turn_t SkillTurn) throw() { m_Interval = SkillTurn; }
+	void setSkillTurn(Turn_t SkillTurn)  { m_Interval = SkillTurn; }
 
 	// get / set CastingTime
 	Turn_t getCastingTime()  { return m_CastingTime; }
-	void setCastingTime(Turn_t CastingTime) throw() { m_CastingTime = CastingTime; }
+	void setCastingTime(Turn_t CastingTime)  { m_CastingTime = CastingTime; }
 
 	// get / set Enable
 	// true 일 경우 사용 가능, false일 경우 사용 불가능.
 	bool getEnable()  { return m_Enable; }
-	void setEnable(bool Enable ) throw() { m_Enable = Enable; }
+	void setEnable(bool Enable )  { m_Enable = Enable; }
 
 private :
 

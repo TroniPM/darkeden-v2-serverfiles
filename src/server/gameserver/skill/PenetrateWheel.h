@@ -16,8 +16,8 @@
 class PenetrateWheel : public SkillHandler 
 {
 public:
-	PenetrateWheel() throw() {}
-	~PenetrateWheel() throw() {}
+	PenetrateWheel()  {}
+	~PenetrateWheel()  {}
 	
 public:
     string getSkillHandlerName()  { return "PenetrateWheel"; }

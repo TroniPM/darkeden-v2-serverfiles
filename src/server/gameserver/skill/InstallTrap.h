@@ -16,8 +16,8 @@
 class InstallTrap : public SkillHandler 
 {
 public:
-	InstallTrap() throw() {}
-	~InstallTrap() throw() {}
+	InstallTrap()  {}
+	~InstallTrap()  {}
 	
 public:
     string getSkillHandlerName()  { return "InstallTrap"; }

@@ -25,14 +25,14 @@ Mutex    Skull::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Skull::Skull()
-	throw()
+	
 {
 	m_ItemType = 0;
 	m_Num = 1;
 }
 
 Skull::Skull(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	m_ItemType = itemType;
 	m_Num = 1;
@@ -165,7 +165,7 @@ void Skull::save(const string & ownerID, Storage storage, StorageID_t storageID,
 // get debug string
 //--------------------------------------------------------------------------------
 string Skull::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "Skull("
@@ -223,7 +223,7 @@ Weight_t Skull::getWeight() const
 // get debug string
 //--------------------------------------------------------------------------------
 string SkullInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

@@ -35,10 +35,10 @@ public:
 
 public:
 	int 	getPart(void) const { return m_Part; }
-	virtual void   	setPart(int part) throw() { m_Part = part; }
+	virtual void   	setPart(int part)  { m_Part = part; }
 
 	int 	getTick(void) const { return m_Tick; }
-	void   	setTick(Turn_t Tick) throw() { m_Tick = Tick; }
+	void   	setTick(Turn_t Tick)  { m_Tick = Tick; }
 
 protected:
 	int		m_Part;		// 피의 성서 조각 번호

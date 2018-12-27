@@ -31,7 +31,7 @@ EventAuth::EventAuth (GamePlayer* pGamePlayer)
 // destructor
 //////////////////////////////////////////////////////////////////////////////
 EventAuth::~EventAuth () 
-	throw ()
+	
 {
 }
 

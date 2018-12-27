@@ -118,7 +118,7 @@ void ActionOriginalDeleteGetItem::execute (Creature * pCreature1 , Creature * pC
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionOriginalDeleteGetItem::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

@@ -31,8 +31,8 @@ public:
 	virtual string toString() ;
 
 public:
-	void addListElement(ShopTemplateID_t id) throw() { m_List.push_back(id); }
-	void clearList() throw() { m_List.clear(); }
+	void addListElement(ShopTemplateID_t id)  { m_List.push_back(id); }
+	void clearList()  { m_List.clear(); }
 
 private :
 	list<ShopTemplateID_t> m_List;      // Shop template ID list

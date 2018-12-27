@@ -27,13 +27,13 @@ Mutex    Larva::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Larva::Larva()
-	throw()
+	
 : m_ItemType(0)
 {
 }
 
 Larva::Larva(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num)
-	throw()
+	
 : m_ItemType(itemType), m_Num(Num)
 {
 	//cout << "Larva::Larva(" << getOptionTypeToString(optionType).c_str() << ")" << endl;
@@ -184,7 +184,7 @@ void Larva::save(const string & ownerID, Storage storage, StorageID_t storageID,
 // get debug string
 //--------------------------------------------------------------------------------
 string Larva::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -240,7 +240,7 @@ Weight_t Larva::getWeight() const
 }
 
 int Larva::getHPAmount(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -251,7 +251,7 @@ int Larva::getHPAmount(void) const
 }
 
 int Larva::getMPAmount(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -262,7 +262,7 @@ int Larva::getMPAmount(void) const
 }
 
 int Larva::getHPDelay(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -273,7 +273,7 @@ int Larva::getHPDelay(void) const
 }
 
 int Larva::getMPDelay(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -284,7 +284,7 @@ int Larva::getMPDelay(void) const
 }
 
 int Larva::getHPQuantity(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -295,7 +295,7 @@ int Larva::getHPQuantity(void) const
 }
 
 int Larva::getMPQuantity(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -306,7 +306,7 @@ int Larva::getMPQuantity(void) const
 }
 
 int Larva::getHPRecoveryUnit(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -317,7 +317,7 @@ int Larva::getHPRecoveryUnit(void) const
 }
 
 int Larva::getMPRecoveryUnit(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -331,7 +331,7 @@ int Larva::getMPRecoveryUnit(void) const
 // parse effect string
 //--------------------------------------------------------------------------------
 void LarvaInfo::parseEffect(const string& effect)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -386,7 +386,7 @@ void LarvaInfo::parseEffect(const string& effect)
 // get debug string
 //--------------------------------------------------------------------------------
 string LarvaInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "LarvaInfo("

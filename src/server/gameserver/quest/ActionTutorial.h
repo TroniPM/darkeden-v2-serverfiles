@@ -27,7 +27,7 @@ public:
 
 public:
 	string getInterface(void)  { return m_Interface; }
-	void setInterface(string interface) throw() { m_Interface = interface; }
+	void setInterface(string interface)  { m_Interface = interface; }
 
 private:
 	string m_Interface;

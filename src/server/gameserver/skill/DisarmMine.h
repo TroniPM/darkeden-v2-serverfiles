@@ -16,8 +16,8 @@
 class DisarmMine: public SkillHandler 
 {
 public :
-	DisarmMine () throw () {}
-	~DisarmMine () throw () {}
+	DisarmMine ()  {}
+	~DisarmMine ()  {}
 	
 public :
     string getSkillHandlerName ()  { return "DisarmMine"; }

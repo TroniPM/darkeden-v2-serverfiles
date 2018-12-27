@@ -31,9 +31,9 @@
 //////////////////////////////////////////////////
 #if __LINUX__
 
-	typedef int SOCKET;
-	static const int INVALID_SOCKET = -1;
-	static const int SOCKET_ERROR = -1;
+typedef int SOCKET;
+static const int INVALID_SOCKET = -1;
+static const int SOCKET_ERROR = -1;
 
 #endif
 
@@ -47,141 +47,142 @@ static const uint szSOCKADDR_IN = sizeof(SOCKADDR_IN);
 //
 //////////////////////////////////////////////////////////////////////
 
-namespace SocketAPI {
+namespace SocketAPI
+{
 
-//
-// exception version of socket ()
-//
-SOCKET socket_ex (int domain, int type, int protocol);
-	//;
-
-
-//
-// exception version of bind ()
-//
-void bind_ex (SOCKET s, const struct sockaddr* name, uint namelen);
-	//;
+    //
+    // exception version of socket ()
+    //
+    SOCKET socket_ex (int domain, int type, int protocol);
+    //;
 
 
-//
-// exception version of connect ()
-//
-void connect_ex (SOCKET s, const struct sockaddr* name, uint namelen);
-	//throw (ConnectException, NonBlockingIOException, Error);
-
-//
-// exception version of listen ()
-//
-void listen_ex (SOCKET s, uint backlog);
-	//;
+    //
+    // exception version of bind ()
+    //
+    void bind_ex (SOCKET s, const struct sockaddr *name, uint namelen);
+    //;
 
 
-//
-// exception version of accept ()
-//
-SOCKET accept_ex (SOCKET s, struct sockaddr* addr, uint* addrlen);
-	//;
+    //
+    // exception version of connect ()
+    //
+    void connect_ex (SOCKET s, const struct sockaddr *name, uint namelen);
+    //throw (ConnectException, NonBlockingIOException, Error);
+
+    //
+    // exception version of listen ()
+    //
+    void listen_ex (SOCKET s, uint backlog);
+    //;
 
 
-//
-// exception version of getsockopt ()
-//
-void getsockopt_ex (SOCKET s, int level, int optname, void* optval, uint* optlen);
-	//;
-
-uint getsockopt_ex2 (SOCKET s, int level, int optname, void* optval, uint* optlen);
-	//;
-
-//
-// exception version of setsockopt ()
-//
-void setsockopt_ex (SOCKET s, int level, int optname, const void* optval, uint optlen);
-	//;
-
-//
-// exception version of send()
-//
-uint send_ex (SOCKET s, const void* buf, uint len, uint flags);
-	//throw (NonBlockingIOException, ConnectException, Error, ProtocolException);
+    //
+    // exception version of accept ()
+    //
+    SOCKET accept_ex (SOCKET s, struct sockaddr *addr, uint *addrlen);
+    //;
 
 
-//
-// exception version of sendto()
-//
-uint sendto_ex (SOCKET s, const void* buf, int len, unsigned int flags, const struct sockaddr* to, int tolen);
-	//;
+    //
+    // exception version of getsockopt ()
+    //
+    void getsockopt_ex (SOCKET s, int level, int optname, void *optval, uint *optlen);
+    //;
 
-//
-// exception version of recv()
-//
-uint recv_ex (SOCKET s, void* buf, uint len, uint flags);
-	//;
+    uint getsockopt_ex2 (SOCKET s, int level, int optname, void *optval, uint *optlen);
+    //;
 
+    //
+    // exception version of setsockopt ()
+    //
+    void setsockopt_ex (SOCKET s, int level, int optname, const void *optval, uint optlen);
+    //;
 
-//
-// exception version of recvfrom()
-//
-uint recvfrom_ex (SOCKET s, void* buf, int len, uint flags, struct sockaddr* from, uint* fromlen);
-	//;
- 
-
-//
-// exception version of closesocket() 
-//
-// *CAUTION*
-//
-// in UNIX, close() used instead
-//
-void closesocket_ex (SOCKET s);
-	//;
+    //
+    // exception version of send()
+    //
+    uint send_ex (SOCKET s, const void *buf, uint len, uint flags);
+    //throw (NonBlockingIOException, ConnectException, Error, ProtocolException);
 
 
-//
-// exception version of ioctlsocket()
-//
-// *CAUTION*
-//
-// in UNIX, ioctl() used instead
-//
-void ioctlsocket_ex (SOCKET s, long cmd, ulong* argp);
-	//;
+    //
+    // exception version of sendto()
+    //
+    uint sendto_ex (SOCKET s, const void *buf, int len, unsigned int flags, const struct sockaddr *to, int tolen);
+    //;
+
+    //
+    // exception version of recv()
+    //
+    uint recv_ex (SOCKET s, void *buf, uint len, uint flags);
+    //;
 
 
-//
-// check if socket is nonblocking mode
-//
-bool getsocketnonblocking_ex (SOCKET s);
-	//;
+    //
+    // exception version of recvfrom()
+    //
+    uint recvfrom_ex (SOCKET s, void *buf, int len, uint flags, struct sockaddr *from, uint *fromlen);
+    //;
 
 
-//
-// make socket nonblocking mode
-//
-void setsocketnonblocking_ex (SOCKET s, bool on);
-	//;
+    //
+    // exception version of closesocket()
+    //
+    // *CAUTION*
+    //
+    // in UNIX, close() used instead
+    //
+    void closesocket_ex (SOCKET s);
+    //;
 
 
-//
-// get amount of data in socket input buffer
-//
-uint availablesocket_ex (SOCKET s);
-	//;
+    //
+    // exception version of ioctlsocket()
+    //
+    // *CAUTION*
+    //
+    // in UNIX, ioctl() used instead
+    //
+    void ioctlsocket_ex (SOCKET s, long cmd, ulong *argp);
+    //;
 
 
-//
-// exception version of shutdown()
-//
-void shutdown_ex (SOCKET s, uint how);
-	//;
+    //
+    // check if socket is nonblocking mode
+    //
+    bool getsocketnonblocking_ex (SOCKET s);
+    //;
 
 
-//
-// exception version of select()
-//
-int select_ex (int maxfdp1, fd_set* readset, fd_set* writeset, fd_set* exceptset, struct timeval* timeout);
-	//throw (TimeoutException, InterruptedException, Error);
+    //
+    // make socket nonblocking mode
+    //
+    void setsocketnonblocking_ex (SOCKET s, bool on);
+    //;
 
 
-};//end of namespace 
+    //
+    // get amount of data in socket input buffer
+    //
+    uint availablesocket_ex (SOCKET s);
+    //;
+
+
+    //
+    // exception version of shutdown()
+    //
+    void shutdown_ex (SOCKET s, uint how);
+    //;
+
+
+    //
+    // exception version of select()
+    //
+    int select_ex (int maxfdp1, fd_set *readset, fd_set *writeset, fd_set *exceptset, struct timeval *timeout);
+    //throw (TimeoutException, InterruptedException, Error);
+
+
+};//end of namespace
 
 #endif

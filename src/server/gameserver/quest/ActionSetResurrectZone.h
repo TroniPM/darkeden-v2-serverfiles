@@ -26,7 +26,7 @@ public:
 
 public:
 	ZoneID_t getZoneID(void)  { return m_ZoneID; }
-	void setZoneID(ZoneID_t id) throw() { m_ZoneID = id; }
+	void setZoneID(ZoneID_t id)  { m_ZoneID = id; }
 
 private:
 	ZoneID_t m_ZoneID;

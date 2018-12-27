@@ -302,7 +302,7 @@ void ActionTradeGiftBox::execute(Creature * pCreature1 , Creature * pCreature2)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionTradeGiftBox::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

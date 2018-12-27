@@ -61,14 +61,14 @@ public :
 
 	// get / set ObjectID
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 	// get / set ObjectID
 	ObjectID_t getTargetObjectID()  { return m_TargetObjectID; }
-	void setTargetObjectID(ObjectID_t TargetObjectID) throw() { m_TargetObjectID = TargetObjectID; }
+	void setTargetObjectID(ObjectID_t TargetObjectID)  { m_TargetObjectID = TargetObjectID; }
 
 	SkillType_t getSkillType()  { return m_SkillType; }
-	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
+	void setSkillType(SkillType_t SkillType)  { m_SkillType = SkillType; }
 
 private :
 	
@@ -97,16 +97,16 @@ class GCCrossCounterOK3Factory : public PacketFactory {
 public :
 	
 	// constructor
-	GCCrossCounterOK3Factory() throw() {}
+	GCCrossCounterOK3Factory()  {}
 	
 	// destructor
-	virtual ~GCCrossCounterOK3Factory() throw() {}
+	virtual ~GCCrossCounterOK3Factory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCCrossCounterOK3(); }
+	Packet* createPacket()  { return new GCCrossCounterOK3(); }
 
 	// get packet name
 	string getPacketName()  { return "GCCrossCounterOK3"; }

@@ -69,11 +69,11 @@ private:
 class GCMiniGameScoresFactory : public PacketFactory 
 {
 public :
-	GCMiniGameScoresFactory() throw() {}
-	virtual ~GCMiniGameScoresFactory() throw() {}
+	GCMiniGameScoresFactory()  {}
+	virtual ~GCMiniGameScoresFactory()  {}
 	
 public:
-	Packet* createPacket() throw() { return new GCMiniGameScores(); }
+	Packet* createPacket()  { return new GCMiniGameScores(); }
 	string getPacketName()  { return "GCMiniGameScores"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_MINI_GAME_SCORES; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE + szBYTE + szBYTE + (szWORD+21) * 10; }

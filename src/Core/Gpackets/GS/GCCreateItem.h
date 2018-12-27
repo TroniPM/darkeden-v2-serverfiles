@@ -47,64 +47,64 @@ public:
 
 public:
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 	BYTE getItemClass()  { return m_ItemClass; }
-	void setItemClass(BYTE ItemClass) throw() { m_ItemClass = ItemClass; }
+	void setItemClass(BYTE ItemClass)  { m_ItemClass = ItemClass; }
 
 	ItemType_t getItemType()  { return m_ItemType; }
-	void setItemType(ItemType_t ItemType) throw() { m_ItemType = ItemType; }
+	void setItemType(ItemType_t ItemType)  { m_ItemType = ItemType; }
 
 	int getOptionTypeSize()  { return m_OptionType.size(); }
 	const list<OptionType_t>& getOptionType()  { return m_OptionType; }
-	OptionType_t popOptionType() throw()
+	OptionType_t popOptionType() 
 	{
 		if (m_OptionType.empty()) return 0;
 		OptionType_t optionType = m_OptionType.front();
 		m_OptionType.pop_front();
 		return optionType;
 	}
-	void addOptionType(OptionType_t OptionType) throw() { m_OptionType.push_back( OptionType ); }
-	void setOptionType(const list<OptionType_t>& OptionTypes) throw() { m_OptionType = OptionTypes; }
+	void addOptionType(OptionType_t OptionType)  { m_OptionType.push_back( OptionType ); }
+	void setOptionType(const list<OptionType_t>& OptionTypes)  { m_OptionType = OptionTypes; }
 
 	int getOptionTypeSize2()  { return m_OptionType2.size(); }
 	const list<OptionType_t>& getOptionType2()  { return m_OptionType2; }
-	OptionType_t popOptionType2() throw()
+	OptionType_t popOptionType2() 
 	{
 		if (m_OptionType2.empty()) return 0;
 		OptionType_t optionType2 = m_OptionType2.front();
 		m_OptionType2.pop_front();
 		return optionType2;
 	}
-	void addOptionType2(OptionType_t OptionType) throw() { m_OptionType2.push_back( OptionType ); }
-	void setOptionType2(const list<OptionType_t>& OptionTypes) throw() { m_OptionType2 = OptionTypes; }
+	void addOptionType2(OptionType_t OptionType)  { m_OptionType2.push_back( OptionType ); }
+	void setOptionType2(const list<OptionType_t>& OptionTypes)  { m_OptionType2 = OptionTypes; }
 
 	Durability_t getDurability()  { return m_Durability; }
-	void setDurability(Durability_t Durability) throw() { m_Durability = Durability; }
+	void setDurability(Durability_t Durability)  { m_Durability = Durability; }
 
 	Silver_t getSilver()  { return m_Silver; }
-	void setSilver(Silver_t silver) throw() { m_Silver = silver; }
+	void setSilver(Silver_t silver)  { m_Silver = silver; }
 
 	Grade_t getGrade()  { return m_Grade; }
-	void setGrade(Grade_t silver) throw() { m_Grade = silver; }
+	void setGrade(Grade_t silver)  { m_Grade = silver; }
 
 	EnchantLevel_t getEnchantLevel()  { return m_EnchantLevel; }
-	void setEnchantLevel(EnchantLevel_t level) throw() { m_EnchantLevel = level; }
+	void setEnchantLevel(EnchantLevel_t level)  { m_EnchantLevel = level; }
 
 	EnchantLevel_t getHeroOption()  { return m_HeroOption; }
-	void setHeroOption(EnchantLevel_t level) throw() { m_HeroOption= level; }
+	void setHeroOption(EnchantLevel_t level)  { m_HeroOption= level; }
 
 	EnchantLevel_t getHeroOptionAttr()  { return m_HeroOptionAttr; }
-	void setHeroOptionAttr(EnchantLevel_t level) throw() { m_HeroOptionAttr = level; }
+	void setHeroOptionAttr(EnchantLevel_t level)  { m_HeroOptionAttr = level; }
 
 	ItemNum_t getItemNum()  { return m_ItemNum; }
-	void setItemNum(ItemNum_t num) throw() { m_ItemNum = num; }
+	void setItemNum(ItemNum_t num)  { m_ItemNum = num; }
 
 	CoordInven_t getInvenX()  { return m_InvenX; }
-	void setInvenX(CoordInven_t InvenX) throw() { m_InvenX = InvenX; }
+	void setInvenX(CoordInven_t InvenX)  { m_InvenX = InvenX; }
 
 	CoordInven_t getInvenY()  { return m_InvenY; }
-	void setInvenY(CoordInven_t InvenY) throw() { m_InvenY = InvenY; }
+	void setInvenY(CoordInven_t InvenY)  { m_InvenY = InvenY; }
 
 private:
 	ObjectID_t     		m_ObjectID;     // 오브젝트 ID
@@ -132,7 +132,7 @@ private:
 class GCCreateItemFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCCreateItem(); }
+	Packet* createPacket()  { return new GCCreateItem(); }
 	string getPacketName()  { return "GCCreateItem"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_CREATE_ITEM; }
 	PacketSize_t getPacketMaxSize()  

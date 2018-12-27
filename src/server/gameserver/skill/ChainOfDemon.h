@@ -16,8 +16,8 @@
 class ChainOfDemon: public SkillHandler 
 {
 public:
-	ChainOfDemon() throw() {}
-	~ChainOfDemon() throw() {}
+	ChainOfDemon()  {}
+	~ChainOfDemon()  {}
 	
 public:
     string getSkillHandlerName()  { return "ChainOfDemon"; }

@@ -88,7 +88,7 @@ public:
 	// 크리처에서 플레이어로 접근한다.
 	// 현재 크리처에 대해서 isPC()를 체크해보고 true 인 경우에만 호출해야 한다.
 	Player* getPlayer()  { Assert(m_pPlayer != NULL); return m_pPlayer; }
-	void setPlayer(Player* pPlayer) throw() { m_pPlayer = pPlayer; }
+	void setPlayer(Player* pPlayer)  { m_pPlayer = pPlayer; }
 
 public:
 	virtual const string& getName()  = 0;
@@ -119,8 +119,8 @@ public:
 	virtual bool isAlive()  = 0;
 	void recoverHP(HP_t recoverAmount) ;
 
-	void setFlag(Effect::EffectClass Flag) throw() { m_Flag.set(Flag); }
-	void removeFlag(Effect::EffectClass Flag) throw() { m_Flag.reset(Flag); }
+	void setFlag(Effect::EffectClass Flag)  { m_Flag.set(Flag); }
+	void removeFlag(Effect::EffectClass Flag)  { m_Flag.reset(Flag); }
 	bool isFlag(Effect::EffectClass Flag)  { return m_Flag.test(Flag); } 
 
 	bool hasRelicItem() const;
@@ -149,7 +149,7 @@ public:
 
 	// get/set zone
 	Zone* getZone()  { return m_pZone; }
-	void setZone(Zone* pZone) throw() { m_pZone = pZone; }
+	void setZone(Zone* pZone)  { m_pZone = pZone; }
 
 	// get/set zone id
 	ZoneID_t getZoneID() ;
@@ -157,13 +157,13 @@ public:
 
 	// get/set(x,y,dir)
 	ZoneCoord_t getX()  { return m_X; }
-	void setX(ZoneCoord_t x) throw() { m_X = x; }
+	void setX(ZoneCoord_t x)  { m_X = x; }
 
 	ZoneCoord_t getY()  { return m_Y; }
-	void setY(ZoneCoord_t y) throw() { m_Y = y; }
+	void setY(ZoneCoord_t y)  { m_Y = y; }
 
 	Dir_t getDir()  { return m_Dir; }
-	void setDir(Dir_t dir) throw() { m_Dir = dir; }
+	void setDir(Dir_t dir)  { m_Dir = dir; }
 
 	ZoneCoord_t getViewportWidth()  { return m_ViewportWidth; }
 	ZoneCoord_t getViewportUpperHeight()  { return m_ViewportUpperHeight; }
@@ -176,8 +176,8 @@ public:
 	//  ex> setXY(pResult->getInt(++i), pResult->getInt(++i)); 는 실제로 setXY(y,x)
 	//      를 실행하게 된당... -_-;
 	////////////////////////////////////////////////////////////
-	void setXY(ZoneCoord_t x, ZoneCoord_t y) throw() { m_X = x; m_Y = y; }
-	void setXYDir(ZoneCoord_t x, ZoneCoord_t y, Dir_t dir) throw() { m_X = x; m_Y = y; m_Dir = dir; }
+	void setXY(ZoneCoord_t x, ZoneCoord_t y)  { m_X = x; m_Y = y; }
+	void setXYDir(ZoneCoord_t x, ZoneCoord_t y, Dir_t dir)  { m_X = x; m_Y = y; m_Dir = dir; }
 
 	//(nx,ny)로 움직일 수 있는가?
 	bool canMove(ZoneCoord_t nx, ZoneCoord_t ny) ;
@@ -191,7 +191,7 @@ public:
 
 	// get/set/test move mode
 	MoveMode getMoveMode()  { return m_MoveMode; }
-	void setMoveMode(MoveMode moveMode) throw() { m_MoveMode = moveMode; }
+	void setMoveMode(MoveMode moveMode)  { m_MoveMode = moveMode; }
 
 	bool isWalking()  { return m_MoveMode == MOVE_MODE_WALKING; }
 	bool isFlying()  { return m_MoveMode == MOVE_MODE_FLYING; }
@@ -209,7 +209,7 @@ public:
 public :
 	// get/set zone
 	Zone* getNewZone()  { return m_pNewZone; }
-	void setNewZone(Zone* pZone) throw() { m_pNewZone = pZone; }
+	void setNewZone(Zone* pZone)  { m_pNewZone = pZone; }
 
 	// get/set zone id
 	ZoneID_t getNewZoneID() ;
@@ -217,12 +217,12 @@ public :
 
 	// get/set(x,y,dir)
 	ZoneCoord_t getNewX()  { return m_NewX; }
-	void setNewX(ZoneCoord_t x) throw() { m_NewX = x; }
+	void setNewX(ZoneCoord_t x)  { m_NewX = x; }
 
 	ZoneCoord_t getNewY()  { return m_NewY; }
-	void setNewY(ZoneCoord_t y) throw() { m_NewY = y; }
+	void setNewY(ZoneCoord_t y)  { m_NewY = y; }
 
-	void setNewXY(ZoneCoord_t x, ZoneCoord_t y) throw() { m_NewX = x; m_NewY = y; }
+	void setNewXY(ZoneCoord_t x, ZoneCoord_t y)  { m_NewX = x; m_NewY = y; }
 
 public:
 	bool isEffect(Effect::EffectClass EClass);

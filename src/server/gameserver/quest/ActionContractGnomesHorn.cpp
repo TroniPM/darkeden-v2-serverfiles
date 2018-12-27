@@ -69,7 +69,7 @@ void ActionContractGnomesHorn::execute (Creature * pCreature1 , Creature * pCrea
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionContractGnomesHorn::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

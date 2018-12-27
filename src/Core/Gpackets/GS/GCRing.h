@@ -61,11 +61,11 @@ public :
 
 	// get/set PhoneNumber
 	PhoneNumber_t getPhoneNumber()  { return m_PhoneNumber; }
-	void setPhoneNumber(PhoneNumber_t PhoneNumber) throw() { m_PhoneNumber = PhoneNumber; }
+	void setPhoneNumber(PhoneNumber_t PhoneNumber)  { m_PhoneNumber = PhoneNumber; }
 
 	// get/set SlotID
 	SlotID_t getSlotID()  { return m_SlotID; }
-	void setSlotID(SlotID_t SlotID) throw() { m_SlotID = SlotID; }
+	void setSlotID(SlotID_t SlotID)  { m_SlotID = SlotID; }
 
 	// get / set Name 
 	string getName()  { return m_Name; }
@@ -98,16 +98,16 @@ class GCRingFactory : public PacketFactory {
 public :
 	
 	// constructor
-	GCRingFactory() throw() {}
+	GCRingFactory()  {}
 	
 	// destructor
-	virtual ~GCRingFactory() throw() {}
+	virtual ~GCRingFactory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCRing(); }
+	Packet* createPacket()  { return new GCRing(); }
 
 	// get packet name
 	string getPacketName()  { return "GCRing"; }

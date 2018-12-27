@@ -30,7 +30,7 @@ public:
 	string toString() ;
 
 public:
-	int getBonus() throw() { return m_Bonus;}
+	int getBonus()  { return m_Bonus;}
 	void setBonus(int Bonus)  { m_Bonus = Bonus;}
 
 private:

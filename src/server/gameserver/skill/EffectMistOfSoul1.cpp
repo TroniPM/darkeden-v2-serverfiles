@@ -85,7 +85,7 @@ void EffectMistOfSoul1::unaffect()
 }
 
 string EffectMistOfSoul1::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

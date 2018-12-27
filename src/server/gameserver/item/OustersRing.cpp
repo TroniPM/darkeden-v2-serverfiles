@@ -25,7 +25,7 @@ Mutex    OustersRing::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 OustersRing::OustersRing()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
@@ -34,7 +34,7 @@ OustersRing::OustersRing()
 }
 
 OustersRing::OustersRing(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_ItemType(itemType), m_OptionType(optionType), m_Durability(0)
 {
 	setItemType(itemType);
@@ -177,7 +177,7 @@ void OustersRing::save(const string & ownerID, Storage storage, StorageID_t stor
 // get debug string
 //--------------------------------------------------------------------------------
 string OustersRing::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -262,7 +262,7 @@ Protection_t OustersRing::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string OustersRingInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

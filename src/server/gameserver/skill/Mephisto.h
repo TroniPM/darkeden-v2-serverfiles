@@ -16,8 +16,8 @@
 class Mephisto : public SkillHandler 
 {
 public:
-	Mephisto() throw() {}
-	~Mephisto() throw() {}
+	Mephisto()  {}
+	~Mephisto()  {}
 	
 public:
     string getSkillHandlerName()  { return "Mephisto"; }

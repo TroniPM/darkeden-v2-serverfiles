@@ -19,7 +19,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 BloodBibleSignInfo::BloodBibleSignInfo () 
-     throw ()
+     
 {
 	__BEGIN_TRY
 
@@ -33,7 +33,7 @@ BloodBibleSignInfo::BloodBibleSignInfo ()
 // destructor
 //////////////////////////////////////////////////////////////////////
 BloodBibleSignInfo::~BloodBibleSignInfo () 
-    throw ()
+    
 {
 	__BEGIN_TRY
 
@@ -45,7 +45,7 @@ BloodBibleSignInfo::~BloodBibleSignInfo ()
 // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
 //////////////////////////////////////////////////////////////////////
 void BloodBibleSignInfo::read ( SocketInputStream & iStream ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		

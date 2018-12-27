@@ -29,10 +29,10 @@ public:
 	
 public:
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 	BYTE getPart()  { return m_Part; }
-	void setPart( BYTE part ) throw() { m_Part = part; }
+	void setPart( BYTE part )  { m_Part = part; }
 
 private:
 	ObjectID_t   m_ObjectID; // 아이템의 object id 
@@ -47,7 +47,7 @@ private:
 class CGUseItemFromGearFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGUseItemFromGear(); }
+	Packet* createPacket()  { return new CGUseItemFromGear(); }
 	string getPacketName()  { return "CGUseItemFromGear"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_USE_ITEM_FROM_GEAR; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + szBYTE; }

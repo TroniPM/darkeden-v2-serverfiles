@@ -30,8 +30,8 @@ public:
 	string toString() ;
 	
 public:
-	ObjectID_t getObjectID() throw() { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 private :
 	ObjectID_t m_ObjectID;
@@ -44,7 +44,7 @@ private :
 class CGAddMouseToZoneFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGAddMouseToZone(); }
+	Packet* createPacket()  { return new CGAddMouseToZone(); }
 	string getPacketName()  { return "CGAddMouseToZone"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_ADD_MOUSE_TO_ZONE; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID; }

@@ -16,8 +16,8 @@
 class SkyFire : public SkillHandler 
 {
 public:
-	SkyFire() throw() {}
-	~SkyFire() throw() {}
+	SkyFire()  {}
+	~SkyFire()  {}
 	
 public:
     string getSkillHandlerName()  { return "SkyFire"; }

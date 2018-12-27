@@ -746,7 +746,7 @@ void LoginPlayerManager::sendPacket ( const string & id , Packet * pPacket )
 // get debug string
 //////////////////////////////////////////////////////////////////////
 string LoginPlayerManager::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 

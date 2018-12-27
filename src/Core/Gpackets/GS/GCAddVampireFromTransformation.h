@@ -33,8 +33,8 @@ class GCAddVampireFromTransformation : public Packet {
 public :
 
 	// constructor
-	GCAddVampireFromTransformation() throw() : m_pEffectInfo(NULL) {}
-	GCAddVampireFromTransformation(const PCVampireInfo3 & vampireInfo) throw() : m_VampireInfo(vampireInfo), m_pEffectInfo(NULL) {}
+	GCAddVampireFromTransformation()  : m_pEffectInfo(NULL) {}
+	GCAddVampireFromTransformation(const PCVampireInfo3 & vampireInfo)  : m_VampireInfo(vampireInfo), m_pEffectInfo(NULL) {}
 
 	virtual ~GCAddVampireFromTransformation() ;
 
@@ -66,13 +66,13 @@ public :
 public :
 
 	// get/set vampire info
-	PCVampireInfo3 & getVampireInfo() throw() { return m_VampireInfo; }
+	PCVampireInfo3 & getVampireInfo()  { return m_VampireInfo; }
 	const PCVampireInfo3 & getVampireInfo()  { return m_VampireInfo; }
-	void setVampireInfo(const PCVampireInfo3 & vampireInfo) throw() { m_VampireInfo = vampireInfo; }
+	void setVampireInfo(const PCVampireInfo3 & vampireInfo)  { m_VampireInfo = vampireInfo; }
 
 	// get /set Effect Info
 	EffectInfo* getEffectInfo()  { return m_pEffectInfo; }
-	void setEffectInfo(EffectInfo* pEffectInfo) throw() { m_pEffectInfo = pEffectInfo; }
+	void setEffectInfo(EffectInfo* pEffectInfo)  { m_pEffectInfo = pEffectInfo; }
 
 
 private :
@@ -99,7 +99,7 @@ class GCAddVampireFromTransformationFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCAddVampireFromTransformation(); }
+	Packet* createPacket()  { return new GCAddVampireFromTransformation(); }
 
 	// get packet name
 	string getPacketName()  { return "GCAddVampireFromTransformation"; }

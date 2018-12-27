@@ -83,7 +83,7 @@ SBillingPlayer::~SBillingPlayer()
 }
 
 void SBillingPlayer::processInput()
-	throw ( IOException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -99,7 +99,7 @@ void SBillingPlayer::processInput()
 }
 
 void SBillingPlayer::processOutput()
-	throw ( IOException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -117,7 +117,7 @@ void SBillingPlayer::processOutput()
 
 // parse packet and execute packet handler
 void SBillingPlayer::processCommand()
-	throw ( IOException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -274,7 +274,7 @@ void SBillingPlayer::processCommand()
 
 // send packet to player's output buffer
 void SBillingPlayer::sendPacket( Packet* pPacket )
-	throw ( ProtocolException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -285,7 +285,7 @@ void SBillingPlayer::sendPacket( Packet* pPacket )
 
 // disconnect
 void SBillingPlayer::disconnect( bool bDisconnected )
-	throw ( InvalidProtocolException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -310,7 +310,7 @@ void SBillingPlayer::disconnect( bool bDisconnected )
 
 // set socket
 void SBillingPlayer::setSocket( Socket* pSocket )
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -327,7 +327,7 @@ void SBillingPlayer::setSocket( Socket* pSocket )
 
 // send interval validation packet
 void SBillingPlayer::sendIntervalValidation()
-	throw ( ProtocolException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -356,7 +356,7 @@ void SBillingPlayer::sendIntervalValidation()
 
 // send login packet
 void SBillingPlayer::sendLogin( PayUser* pPayUser )
-	throw ( ProtocolException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -390,7 +390,7 @@ void SBillingPlayer::sendLogin( PayUser* pPayUser )
 
 // send minus point packet
 void SBillingPlayer::sendMinusPoint( PayUser* pPayUser )
-	throw ( ProtocolException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -422,7 +422,7 @@ void SBillingPlayer::sendMinusPoint( PayUser* pPayUser )
 
 // send minus minute packet
 void SBillingPlayer::sendMinusMinute( PayUser* pPayUser )
-	throw ( ProtocolException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -454,7 +454,7 @@ void SBillingPlayer::sendMinusMinute( PayUser* pPayUser )
 
 // send logout packet
 void SBillingPlayer::sendLogout( PayUser* pPayUser )
-	throw ( ProtocolException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -485,7 +485,7 @@ void SBillingPlayer::sendLogout( PayUser* pPayUser )
 }
 
 void SBillingPlayer::executeError( CBillingPacketHeader& header, CBillingPacketErrorBody& body )
-	throw ( IOException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -507,7 +507,7 @@ void SBillingPlayer::executeError( CBillingPacketHeader& header, CBillingPacketE
 }
 
 void SBillingPlayer::executeIntervalValidation( CBillingPacketHeader& header, CBillingPacketResponseIntervalValidationBody& body )
-	throw ( IOException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -537,7 +537,7 @@ void SBillingPlayer::executeIntervalValidation( CBillingPacketHeader& header, CB
 }
 
 void SBillingPlayer::executeLogin( CBillingPacketHeader& header, CBillingPacketResponseLoginBody& body )
-	throw ( IOException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -568,7 +568,7 @@ void SBillingPlayer::executeLogin( CBillingPacketHeader& header, CBillingPacketR
 }
 
 void SBillingPlayer::executeMinusPoint( CBillingPacketHeader& header, CBillingPacketResponseMinusPointBody& body )
-	throw ( IOException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -587,7 +587,7 @@ void SBillingPlayer::executeMinusPoint( CBillingPacketHeader& header, CBillingPa
 }
 
 void SBillingPlayer::executeMinusMinute( CBillingPacketHeader& header, CBillingPacketResponseMinusMinuteBody& body )
-	throw ( IOException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -606,7 +606,7 @@ void SBillingPlayer::executeMinusMinute( CBillingPacketHeader& header, CBillingP
 }
 
 void SBillingPlayer::executeLogout( CBillingPacketHeader& header, CBillingPacketResponseLogoutBody& body )
-	throw ( IOException, Error )
+	
 {
 	__BEGIN_TRY
 

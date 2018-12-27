@@ -33,7 +33,7 @@ public:
 	string toString() ;
 
 	WORD getNicknameID()  { return m_NicknameID; }
-	void setNicknameID( WORD NicknameID ) throw() { m_NicknameID = NicknameID; }
+	void setNicknameID( WORD NicknameID )  { m_NicknameID = NicknameID; }
 
 private :
 	WORD m_NicknameID;
@@ -51,12 +51,12 @@ private :
 class CGSelectNicknameFactory : public PacketFactory {
 
 public:
-	CGSelectNicknameFactory() throw() {}
-	virtual ~CGSelectNicknameFactory() throw() {}
+	CGSelectNicknameFactory()  {}
+	virtual ~CGSelectNicknameFactory()  {}
 
 	
 public:
-	Packet* createPacket() throw() { return new CGSelectNickname(); }
+	Packet* createPacket()  { return new CGSelectNickname(); }
 	string getPacketName()  { return "CGSelectNickname"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_SELECT_NICKNAME; }
 	PacketSize_t getPacketMaxSize()  { return szWORD; }

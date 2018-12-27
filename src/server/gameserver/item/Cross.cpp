@@ -25,7 +25,7 @@ Mutex    Cross::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Cross::Cross()
-	throw()
+	
 {
 	setItemType(0);
 	setDurability(0);
@@ -35,7 +35,7 @@ Cross::Cross()
 }
 
 Cross::Cross(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_OptionType( optionType )
 {
 	setItemType(itemType);
@@ -183,7 +183,7 @@ void Cross::save(const string & ownerID, Storage storage, StorageID_t storageID,
 // get debug string
 //--------------------------------------------------------------------------------
 string Cross::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -271,7 +271,7 @@ Damage_t Cross::getMaxDamage() const
 */
 
 MP_t Cross::getMPBonus() const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -283,7 +283,7 @@ MP_t Cross::getMPBonus() const
 /*//--------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------
 int Cross::getCriticalBonus(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -296,7 +296,7 @@ int Cross::getCriticalBonus(void) const
 // get debug string
 //--------------------------------------------------------------------------------
 string CrossInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

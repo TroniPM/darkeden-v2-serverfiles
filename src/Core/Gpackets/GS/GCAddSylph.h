@@ -20,7 +20,7 @@
 class GCAddSylph : public Packet 
 {
 public:
-	virtual ~GCAddSylph() throw() {}
+	virtual ~GCAddSylph()  {}
 	void read(SocketInputStream & iStream) ;
 	void write(SocketOutputStream & oStream) ;
 	void execute(Player* pPlayer) ;
@@ -32,7 +32,7 @@ public:
 
 public:
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t creatureID) throw() { m_ObjectID = creatureID; }
+	void setObjectID(ObjectID_t creatureID)  { m_ObjectID = creatureID; }
 
 	uchar getSylphType() { return m_SylphType; }
 	void setSylphType(uchar Type) { m_SylphType = Type; }
@@ -63,7 +63,7 @@ private:
 class GCAddSylphFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCAddSylph(); }
+	Packet* createPacket()  { return new GCAddSylph(); }
 	string getPacketName()  { return "GCAddSlyph"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_SYLPH; }
 	PacketSize_t getPacketMaxSize() ;

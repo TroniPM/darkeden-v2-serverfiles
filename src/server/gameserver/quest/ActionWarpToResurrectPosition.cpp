@@ -63,7 +63,7 @@ void ActionWarpToResurrectPosition::execute (Creature * pCreature1 , Creature * 
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionWarpToResurrectPosition::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

@@ -50,11 +50,11 @@ private :
 class GCAddNicknameFactory : public PacketFactory 
 {
 public :
-	GCAddNicknameFactory() throw() {}
-	virtual ~GCAddNicknameFactory() throw() {}
+	GCAddNicknameFactory()  {}
+	virtual ~GCAddNicknameFactory()  {}
 	
 public:
-	Packet* createPacket() throw() { return new GCAddNickname(); }
+	Packet* createPacket()  { return new GCAddNickname(); }
 	string getPacketName()  { return "GCAddNickname"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_NICKNAME; }
 	PacketSize_t getPacketMaxSize()  { return NicknameInfo::getMaxSize(); }

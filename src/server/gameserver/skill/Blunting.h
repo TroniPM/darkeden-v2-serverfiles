@@ -16,8 +16,8 @@
 class Blunting : public SkillHandler 
 {
 public:
-	Blunting() throw() {}
-	~Blunting() throw() {}
+	Blunting()  {}
+	~Blunting()  {}
 	
 public:
     string getSkillHandlerName()  { return "Blunting"; }

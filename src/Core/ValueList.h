@@ -22,7 +22,7 @@ public:
     void write (SocketOutputStream & oStream);// ;
 
 	PacketSize_t 	getPacketSize () 		{ return szBYTE + sizeof(T) * m_Values.size(); }
-	static uint 	getPacketMaxSize() throw() 	{ return szBYTE + sizeof(T) * 255; }
+	static uint 	getPacketMaxSize()  	{ return szBYTE + sizeof(T) * 255; }
 
 	string toString ();
 
@@ -30,9 +30,9 @@ public:
 	int 	getSize() const { return m_Values.size(); }
 	bool 	isEmpty() const { return m_Values.empty(); }
 
-	void addValue(const T& info) throw() 	{ m_Values.push_back(info); }
+	void addValue(const T& info)  	{ m_Values.push_back(info); }
 
-	T popValue() throw() 
+	T popValue()  
 	{ 
 		const T info = m_Values.front(); 
 		m_Values.pop_front(); 

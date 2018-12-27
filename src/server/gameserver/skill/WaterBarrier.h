@@ -16,8 +16,8 @@
 class WaterBarrier : public SkillHandler 
 {
 public:
-	WaterBarrier() throw() {}
-	~WaterBarrier() throw() {}
+	WaterBarrier()  {}
+	~WaterBarrier()  {}
 	
 public:
     string getSkillHandlerName()  { return "WaterBarrier"; }

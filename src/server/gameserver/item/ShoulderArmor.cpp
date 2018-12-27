@@ -24,14 +24,14 @@ Mutex    ShoulderArmor::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 ShoulderArmor::ShoulderArmor()
-	throw()
+	
 {
 	setItemType(0);
 	setDurability(0);
 }
 
 ShoulderArmor::ShoulderArmor(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	setItemType(itemType);
 	setOptionType(optionType);
@@ -153,7 +153,7 @@ void ShoulderArmor::save(const string & ownerID, Storage storage, StorageID_t st
 // get debug string
 //--------------------------------------------------------------------------------
 string ShoulderArmor::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -173,7 +173,7 @@ string ShoulderArmor::toString() const
 // get debug string
 //--------------------------------------------------------------------------------
 string ShoulderArmorInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

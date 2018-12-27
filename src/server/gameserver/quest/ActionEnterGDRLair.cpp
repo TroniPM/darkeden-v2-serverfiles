@@ -191,7 +191,7 @@ void ActionEnterGDRLair::execute (Creature * pNPC , Creature * pCreature)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionEnterGDRLair::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

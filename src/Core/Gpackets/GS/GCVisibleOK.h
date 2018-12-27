@@ -26,7 +26,7 @@ class GCVisibleOK : public Packet {
 public :
 
 	// constructor
-	GCVisibleOK() throw() {}
+	GCVisibleOK()  {}
 
 
 public :
@@ -72,7 +72,7 @@ class  GCVisibleOKFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCVisibleOK(); }
+	Packet* createPacket()  { return new GCVisibleOK(); }
 
 	// get packet name
 	string getPacketName()  { return "GCVisibleOK"; }

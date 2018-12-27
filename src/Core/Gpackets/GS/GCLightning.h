@@ -53,7 +53,7 @@ public :
 
 	// get/set delay
 	BYTE getDelay()  { return m_Delay; }
-	void setDelay(BYTE delay) throw() { m_Delay = delay; }
+	void setDelay(BYTE delay)  { m_Delay = delay; }
 
 
 private :
@@ -78,7 +78,7 @@ class GCLightningFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCLightning(); }
+	Packet* createPacket()  { return new GCLightning(); }
 
 	// get packet name
 	string getPacketName()  { return "GCLightning"; }

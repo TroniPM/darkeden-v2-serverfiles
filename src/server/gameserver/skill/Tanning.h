@@ -16,8 +16,8 @@
 class Tanning : public SkillHandler 
 {
 public:
-	Tanning() throw() {}
-	~Tanning() throw() {}
+	Tanning()  {}
+	~Tanning()  {}
 	
 public:
     string getSkillHandlerName()  { return "Tanning"; }

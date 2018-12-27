@@ -16,8 +16,8 @@
 class TiffaugesMorgothBRed : public SkillHandler 
 {
 public:
-	TiffaugesMorgothBRed() throw() { }
-	~TiffaugesMorgothBRed() throw() {}
+	TiffaugesMorgothBRed()  { }
+	~TiffaugesMorgothBRed()  {}
 	
 public:
     string getSkillHandlerName()  { return "TiffaugesMorgothBRed"; }

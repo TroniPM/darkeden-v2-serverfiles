@@ -35,7 +35,7 @@ public :
 
 	// get size of object
 	uint getSize ()  { return szWORD + szBYTE* 5; }
-	static uint getMaxSize () throw () { return szWORD + szBYTE* 5; }
+	static uint getMaxSize () { return szWORD + szBYTE* 5; }
 
 
 public :
@@ -43,27 +43,27 @@ public :
 
 	// get/set year
 	WORD getYear ()  { return m_Year; }
-	void setYear (WORD year) throw () { m_Year = year; }
+	void setYear (WORD year) { m_Year = year; }
 
 	// get/set month
 	BYTE getMonth ()  { return m_Month; }
-	void setMonth (BYTE month) throw () { m_Month = month; }
+	void setMonth (BYTE month) { m_Month = month; }
 
 	// get/set day
 	BYTE getDay ()  { return m_Day; }
-	void setDay (BYTE day) throw () { m_Day = day; }
+	void setDay (BYTE day) { m_Day = day; }
 
 	// get/set hour
 	BYTE getHour ()  { return m_Hour; }
-	void setHour (BYTE hour) throw () { m_Hour = hour; }
+	void setHour (BYTE hour) { m_Hour = hour; }
 
 	// get/set minute
 	BYTE getMinute ()  { return m_Minute; }
-	void setMinute (BYTE minute) throw () { m_Minute = minute; }
+	void setMinute (BYTE minute) { m_Minute = minute; }
 
 	// get/set second
 	BYTE getSecond ()  { return m_Second; }
-	void setSecond (BYTE second) throw () { m_Second = second; }
+	void setSecond (BYTE second) { m_Second = second; }
 
 	// get english month string
 	string getMonthString () 

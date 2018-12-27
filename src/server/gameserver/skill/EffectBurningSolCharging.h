@@ -32,7 +32,7 @@ public:
 
 public:
 	Level_t getLevel()  { return m_Level; }
-	void setLevel(Level_t Level) throw() { m_Level = Level; }
+	void setLevel(Level_t Level)  { m_Level = Level; }
 
 private:
 	Level_t 		m_Level;				// 스킬 레벨

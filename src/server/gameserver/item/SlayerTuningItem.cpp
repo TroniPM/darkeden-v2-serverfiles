@@ -29,13 +29,13 @@ Mutex    SlayerTuningItem::m_Mutex;
 //////////////////////////////////////////////////////////////////////////////
 
 SlayerTuningItem::SlayerTuningItem()
-	throw()
+	
 {
 	setItemType(0);
 }
 
 SlayerTuningItem::SlayerTuningItem(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num)
-	throw()
+	
 {
 	setItemType(itemType);
 	setNum(Num);
@@ -146,7 +146,7 @@ void SlayerTuningItem::save(const string & ownerID, Storage storage, StorageID_t
 }
 
 string SlayerTuningItem::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -193,7 +193,7 @@ Weight_t SlayerTuningItem::getWeight() const
 //////////////////////////////////////////////////////////////////////////////
 
 string SlayerTuningItemInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "SlayerTuningItemInfo("

@@ -61,7 +61,7 @@ public :
 
 	// get / set CEffectID
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 	
 
 private :
@@ -87,16 +87,16 @@ class GCAttackMeleeOK2Factory : public PacketFactory {
 public :
 	
 	// constructor
-	GCAttackMeleeOK2Factory() throw() {}
+	GCAttackMeleeOK2Factory()  {}
 	
 	// destructor
-	virtual ~GCAttackMeleeOK2Factory() throw() {}
+	virtual ~GCAttackMeleeOK2Factory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCAttackMeleeOK2(); }
+	Packet* createPacket()  { return new GCAttackMeleeOK2(); }
 
 	// get packet name
 	string getPacketName()  { return "GCAttackMeleeOK2"; }

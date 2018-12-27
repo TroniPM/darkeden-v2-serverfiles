@@ -25,14 +25,14 @@ Mutex    BombMaterial::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 BombMaterial::BombMaterial()
-	throw()
+	
 : m_ItemType(0)
 {
 	m_Num = 1;
 }
 
 BombMaterial::BombMaterial(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 : m_ItemType(itemType)
 {
 	if (!g_pItemInfoManager->isPossibleItem(getItemClass(), m_ItemType, optionType))
@@ -163,7 +163,7 @@ void BombMaterial::save(const string & ownerID, Storage storage, StorageID_t sto
 // get debug string
 //--------------------------------------------------------------------------------
 string BombMaterial::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -223,7 +223,7 @@ Weight_t BombMaterial::getWeight() const
 // get debug string
 //--------------------------------------------------------------------------------
 string BombMaterialInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

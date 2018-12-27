@@ -1,6 +1,6 @@
 #include "StoreInfo.h"
 
-void StoreItemInfo::read(SocketInputStream& iStream) throw(ProtocolException, Error)
+void StoreItemInfo::read(SocketInputStream& iStream) 
 {
 	__BEGIN_TRY
 
@@ -48,7 +48,7 @@ PacketSize_t StoreInfo::getSize(bool toOther) const
 	return ret;
 }
 
-void StoreInfo::read(SocketInputStream& iStream, bool toOther) throw(ProtocolException, Error)
+void StoreInfo::read(SocketInputStream& iStream, bool toOther) 
 {
 	__BEGIN_TRY
 
@@ -103,7 +103,7 @@ void StoreInfo::write(SocketOutputStream& oStream, bool toOther)
 	__END_CATCH
 }
 
-void StoreOutlook::read(SocketInputStream& iStream) throw(ProtocolException, Error)
+void StoreOutlook::read(SocketInputStream& iStream) 
 {
 	__BEGIN_TRY
 

@@ -68,7 +68,7 @@ public :
 	//virtual void processOutput () ;
 	
 	// send packet to player's output buffer
-	virtual void sendPacket ( Packet * packet ) throw ( ProtocolException , Error );
+	virtual void sendPacket ( Packet * packet ) ;
 
 	// disconnect
 	// 정식 로그아웃의 경우 disconnect(LOGOUT)
@@ -87,19 +87,19 @@ public :
 
 	// return recent packet which has packetID
 	// 특정 ID를 가진 패킷 중 가장 최근의 패킷을 리턴한다.
-	Packet * getOldPacket ( PacketID_t packetID ) throw ( NoSuchElementException );
+	Packet * getOldPacket ( PacketID_t packetID ) ;
 
 	// get/set player's status
 	PlayerStatus getPlayerStatus ()  { return m_PlayerStatus; }
-	void setPlayerStatus ( PlayerStatus playerStatus ) throw () { m_PlayerStatus = playerStatus; }
+	void setPlayerStatus ( PlayerStatus playerStatus )  { m_PlayerStatus = playerStatus; }
 
 	// 실패한 회수
 	uint getFailureCount ()  { return m_FailureCount; }
-	void setFailureCount ( uint nFailed ) throw () { m_FailureCount = nFailed; }
+	void setFailureCount ( uint nFailed )  { m_FailureCount = nFailed; }
 
     // get / set GoreLevel
     bool isAdult()  { return m_isAdult; }
-    void setAdult(bool isAdult) throw() { m_isAdult = isAdult; }
+    void setAdult(bool isAdult)  { m_isAdult = isAdult; }
 
 public :
 	int		getKickCharacterCount() 	{ return m_KickCharacterCount; }	
@@ -107,29 +107,29 @@ public :
 
 	// 현재 월드의 ID
 	WorldID_t getWorldID()  { return m_WorldID; }
-	void setWorldID( WorldID_t WorldID ) throw() { m_WorldID = WorldID; }
+	void setWorldID( WorldID_t WorldID )  { m_WorldID = WorldID; }
 
 	// 현재 서버의 ID
 	WorldID_t getGroupID()  { return m_ServerGroupID; }
-	void setGroupID( ServerGroupID_t ServerGroupID ) throw() { m_ServerGroupID = ServerGroupID; }
+	void setGroupID( ServerGroupID_t ServerGroupID )  { m_ServerGroupID = ServerGroupID; }
 
 	// 현재 서버의 ID
 	uint getLastSlot()  { return m_LastSlot; }
-	void setLastSlot( uint lastSlot ) throw() { m_LastSlot = lastSlot; }
+	void setLastSlot( uint lastSlot )  { m_LastSlot = lastSlot; }
 
     // WorldID, GroupID가 설정되었나?
     bool isSetWorldGroupID()  { return m_bSetWorldGroupID; }
-    void setWorldGroupID(bool bSet) throw() { m_bSetWorldGroupID = bSet; }
+    void setWorldGroupID(bool bSet)  { m_bSetWorldGroupID = bSet; }
 
     // 마지막으로 접속한 캐릭터의 이름
 	const string& getLastCharacterName()  { return m_LastCharacterName; }
-	void setLastCharacterName( const string& name ) throw() { m_LastCharacterName = name; }
+	void setLastCharacterName( const string& name )  { m_LastCharacterName = name; }
 
 	const string& getZipcode()  { return m_Zipcode; }
-	void setZipcode( const string& zipcode ) throw() { m_Zipcode = zipcode; }
+	void setZipcode( const string& zipcode )  { m_Zipcode = zipcode; }
 
 	const string& getSSN()  { return m_SSN; }
-	void setSSN( const string& ssn ) throw() { m_SSN = ssn; }
+	void setSSN( const string& ssn )  { m_SSN = ssn; }
 
 	bool isFreePass() const	{ return m_bFreePass; }
 	void setFreePass(bool bFreePass=true) { m_bFreePass = bFreePass; }

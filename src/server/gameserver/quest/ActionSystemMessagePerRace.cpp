@@ -53,7 +53,7 @@ void ActionSystemMessagePerRace::execute (Creature * pCreature1, Creature * pCre
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionSystemMessagePerRace::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 

@@ -16,8 +16,8 @@
 class GhostBlade : public SkillHandler 
 {
 public:
-	GhostBlade() throw() {}
-	~GhostBlade() throw() {}
+	GhostBlade()  {}
+	~GhostBlade()  {}
 	
 public:
     string getSkillHandlerName()  { return "GhostBlade"; }

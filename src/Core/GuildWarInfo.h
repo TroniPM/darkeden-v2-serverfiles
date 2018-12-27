@@ -46,7 +46,7 @@ public :
 				+ m_GuildIDs.getPacketSize();
 	}
 
-	static PacketSize_t getMaxSize() throw() 
+	static PacketSize_t getMaxSize()  
 	{ 
 		return WarInfo::getMaxSize() 
 				+ szZoneID 

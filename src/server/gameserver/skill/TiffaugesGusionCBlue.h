@@ -16,8 +16,8 @@
 class TiffaugesGusionCBlue : public SkillHandler 
 {
 public:
-	TiffaugesGusionCBlue() throw() { }
-	~TiffaugesGusionCBlue() throw() {}
+	TiffaugesGusionCBlue()  { }
+	~TiffaugesGusionCBlue()  {}
 	
 public:
     string getSkillHandlerName()  { return "TiffaugesGusionCBlue"; }

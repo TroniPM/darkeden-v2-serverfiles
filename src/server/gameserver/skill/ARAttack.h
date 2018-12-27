@@ -16,8 +16,8 @@
 class ARAttack : public SkillHandler 
 {
 public:
-	ARAttack() throw() {}
-	~ARAttack() throw() {}
+	ARAttack()  {}
+	~ARAttack()  {}
 	
 public:
     string getSkillHandlerName()  { return "ARAttack"; }

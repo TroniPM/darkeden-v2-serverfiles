@@ -57,11 +57,11 @@ private:
 class GCGQuestStatusInfoFactory : public PacketFactory 
 {
 public :
-	GCGQuestStatusInfoFactory() throw() {}
-	virtual ~GCGQuestStatusInfoFactory() throw() {}
+	GCGQuestStatusInfoFactory()  {}
+	virtual ~GCGQuestStatusInfoFactory()  {}
 	
 public:
-	Packet* createPacket() throw() { return new GCGQuestStatusInfo(); }
+	Packet* createPacket()  { return new GCGQuestStatusInfo(); }
 	string getPacketName()  { return "GCGQuestStatusInfo"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_GQUEST_STATUS_INFO; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE + QuestStatusInfo::getMaxSize() * MAX_QUEST_NUM; }

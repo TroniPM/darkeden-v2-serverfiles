@@ -45,31 +45,31 @@ public :
 	// get packet's body size
 	// 최적화시, 미리 계산된 정수를 사용한다.
 	PacketSize_t getSize ()  { return szBYTE + (szWORD+szDWORD) * m_ListNum; }
-	static PacketSize_t getMaxSize() throw() { return szBYTE + (szWORD+szDWORD) * 255; }
+	static PacketSize_t getMaxSize()  { return szBYTE + (szWORD+szDWORD) * 255; }
 
 	// get packet's debug string
 	string toString () ;
 
 	// get / set ListNumber
 	BYTE getListNum()  { return m_ListNum; }
-	void setListNum(BYTE ListNum) throw() { m_ListNum = ListNum; }
+	void setListNum(BYTE ListNum)  { m_ListNum = ListNum; }
 
 	// add / delete / clear S List
 	void addListElement(EffectID_t EffectID, DWORD Value) ; 
 
 	// ClearList
-	void clearList() throw() { m_EList.clear(); m_ListNum = 0; }
+	void clearList()  { m_EList.clear(); m_ListNum = 0; }
 
 
 	// pop front Element in Status List
-	//DWORD popFrontListElement() throw() { DWORD EffectList = m_EList.front(); m_EList.pop_front(); return EffectList; }
-	const pair<WORD,DWORD> popFrontListElement() throw() { pair<WORD,DWORD> ret = m_EList.front(); m_EList.pop_front(); return ret; }
+	//DWORD popFrontListElement()  { DWORD EffectList = m_EList.front(); m_EList.pop_front(); return EffectList; }
+	const pair<WORD,DWORD> popFrontListElement()  { pair<WORD,DWORD> ret = m_EList.front(); m_EList.pop_front(); return ret; }
 
 	list<pair<WORD,DWORD> >& GetList() { return m_EList; }
 
 
 	// pop front Element in Status List
-	//WORD popFrontListElement() throw() { WORD EffectList = m_EList.front(); m_EList.pop_front(); return EffectList; }
+	//WORD popFrontListElement()  { WORD EffectList = m_EList.front(); m_EList.pop_front(); return EffectList; }
 
 protected :
 	

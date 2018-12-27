@@ -16,8 +16,8 @@
 class Purify: public SkillHandler 
 {
 public:
-	Purify() throw() {}
-	~Purify() throw() {}
+	Purify()  {}
+	~Purify()  {}
 	
 public:
     string getSkillHandlerName()  { return "Purify"; }

@@ -55,7 +55,7 @@ public :
 
 	// get/set NPC's object id
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t creatureID) throw() { m_ObjectID = creatureID; }
+	void setObjectID(ObjectID_t creatureID)  { m_ObjectID = creatureID; }
 
 
 private :
@@ -80,7 +80,7 @@ class GCShopSellFailFactory : public PacketFactory
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCShopSellFail(); }
+	Packet* createPacket()  { return new GCShopSellFail(); }
 
 	// get packet name
 	string getPacketName()  { return "GCShopSellFail"; }

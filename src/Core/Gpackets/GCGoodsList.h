@@ -133,7 +133,7 @@ private:
 class GCGoodsListFactory : public PacketFactory 
 {
 public :
-	Packet* createPacket() throw() { return new GCGoodsList(); }
+	Packet* createPacket()  { return new GCGoodsList(); }
 	string getPacketName()  { return "GCGoodsList"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_GOODS_LIST; }
 	PacketSize_t getPacketMaxSize()  

@@ -16,8 +16,8 @@
 class SummonGoreGland : public SkillHandler 
 {
 public:
-	SummonGoreGland() throw() {}
-	~SummonGoreGland() throw() {}
+	SummonGoreGland()  {}
+	~SummonGoreGland()  {}
 	
 public:
     string getSkillHandlerName()  { return "SummonGoreGland"; }

@@ -70,16 +70,16 @@ class CGModifyTaxRatioFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGModifyTaxRatioFactory() throw() {}
+	CGModifyTaxRatioFactory()  {}
 	
 	// destructor
-	virtual ~CGModifyTaxRatioFactory() throw() {}
+	virtual ~CGModifyTaxRatioFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGModifyTaxRatio(); }
+	Packet* createPacket()  { return new CGModifyTaxRatio(); }
 
 	// get packet name
 	string getPacketName()  { return "CGModifyTaxRatio"; }

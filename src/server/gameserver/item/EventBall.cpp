@@ -25,13 +25,13 @@ Mutex    EventBall::m_Mutex;
 //////////////////////////////////////////////////////////////////////////////
 
 EventBall::EventBall()
-	throw()
+	
 {
 	m_ItemType = 0;
 }
 
 EventBall::EventBall(ItemType_t itemType, OptionType_t optionType, ItemNum_t Num)
-	throw()
+	
 {
 	m_ItemType = itemType;
 	m_Num      = Num;
@@ -149,7 +149,7 @@ void EventBall::save(const string & ownerID, Storage storage, StorageID_t storag
 }
 
 string EventBall::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -197,7 +197,7 @@ Weight_t EventBall::getWeight() const
 //////////////////////////////////////////////////////////////////////////////
 
 string EventBallInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "EventBallInfo("

@@ -895,19 +895,19 @@ public:
 // get/set methods
 public:
 	Zone* getZone()  { return m_pZone; }
-	void setZone(Zone* pZone) throw() { m_pZone = pZone; }
+	void setZone(Zone* pZone)  { m_pZone = pZone; }
 
 	ZoneCoord_t getX()  { return m_X; }
 	ZoneCoord_t getY()  { return m_Y; }
-	void setX(ZoneCoord_t x) throw() { m_X = x; }
-	void setY(ZoneCoord_t y) throw() { m_Y = y; }
-	void setXY(ZoneCoord_t x, ZoneCoord_t y) throw() { m_X = x; m_Y = y; }
+	void setX(ZoneCoord_t x)  { m_X = x; }
+	void setY(ZoneCoord_t y)  { m_Y = y; }
+	void setXY(ZoneCoord_t x, ZoneCoord_t y)  { m_X = x; m_Y = y; }
 
 	Object* getTarget()  { return m_pTarget; }
-	void setTarget(Object* pTarget) throw() { m_pTarget = pTarget; }
+	void setTarget(Object* pTarget)  { m_pTarget = pTarget; }
 
 	Timeval getNextTime()  { return m_NextTime; }
-	void setNextTime(Timeval tv) throw() { m_NextTime = tv; }
+	void setNextTime(Timeval tv)  { m_NextTime = tv; }
 	void setNextTime(Turn_t delay) ;
 
 	Timeval getDeadline()  { return m_Deadline; }

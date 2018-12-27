@@ -24,13 +24,13 @@ Mutex    OustersWingItem::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 OustersWingItem::OustersWingItem()
-	throw()
+	
 {
 	m_ItemType = 0;
 }
 
 OustersWingItem::OustersWingItem(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	m_ItemType = itemType;
 	m_BodyColor = 0;
@@ -159,7 +159,7 @@ void OustersWingItem::save(const string & ownerID, Storage storage, StorageID_t 
 // get debug string
 //--------------------------------------------------------------------------------
 string OustersWingItem::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "OustersWingItem("
@@ -218,7 +218,7 @@ Weight_t OustersWingItem::getWeight() const
 // get debug string
 //--------------------------------------------------------------------------------
 string OustersWingItemInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

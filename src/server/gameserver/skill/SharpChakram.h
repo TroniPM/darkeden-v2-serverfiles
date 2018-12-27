@@ -16,8 +16,8 @@
 class SharpChakram : public SkillHandler 
 {
 public:
-	SharpChakram() throw() {}
-	~SharpChakram() throw() {}
+	SharpChakram()  {}
+	~SharpChakram()  {}
 	
 public:
     string getSkillHandlerName()  { return "SharpChakram"; }

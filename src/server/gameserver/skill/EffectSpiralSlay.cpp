@@ -96,7 +96,7 @@ void EffectSpiralSlay::unaffect(Zone* pZone , ZoneCoord_t x , ZoneCoord_t y , Ob
 }
 
 string EffectSpiralSlay::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

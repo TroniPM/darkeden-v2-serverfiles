@@ -19,7 +19,7 @@ class SummonClay : public SkillHandler
 {
 public:
 	SummonClay() ;
-	~SummonClay() throw() {}
+	~SummonClay()  {}
 	
 public:
     string getSkillHandlerName()  { return "SummonClay"; }

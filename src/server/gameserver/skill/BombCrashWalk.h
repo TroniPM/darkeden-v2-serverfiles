@@ -16,8 +16,8 @@
 class BombCrashWalk : public SkillHandler 
 {
 public:
-	BombCrashWalk() throw() {}
-	~BombCrashWalk() throw() {}
+	BombCrashWalk()  {}
+	~BombCrashWalk()  {}
 	
 public:
     string getSkillHandlerName()  { return "BombCrashWalk"; }

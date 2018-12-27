@@ -16,8 +16,8 @@
 class Hide: public SkillHandler 
 {
 public:
-	Hide() throw() {}
-	~Hide() throw() {}
+	Hide()  {}
+	~Hide()  {}
 	
 public:
     string getSkillHandlerName()  { return "Hide"; }

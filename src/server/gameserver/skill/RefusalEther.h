@@ -17,7 +17,7 @@ class RefusalEther : public SkillHandler
 {
 public:
 	RefusalEther() ;
-	~RefusalEther() throw() {}
+	~RefusalEther()  {}
 	
 public:
     string getSkillHandlerName()  { return "RefusalEther"; }

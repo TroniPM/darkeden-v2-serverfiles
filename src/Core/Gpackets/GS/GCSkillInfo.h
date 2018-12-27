@@ -65,16 +65,16 @@ public :
 
 	// get / set PCType
 	BYTE getPCType()  { return m_PCType; }
-	void setPCType(BYTE PCType) throw() { m_PCType = PCType; }
+	void setPCType(BYTE PCType)  { m_PCType = PCType; }
 
     // add / delete / clear Skill List
-	void addListElement(PCSkillInfo* pPCSkillInfo) throw() { m_pPCSkillInfoList.push_back(pPCSkillInfo); }
+	void addListElement(PCSkillInfo* pPCSkillInfo)  { m_pPCSkillInfoList.push_back(pPCSkillInfo); }
 	
 	// ClearList
-	void clearList() throw() { m_pPCSkillInfoList.clear(); }
+	void clearList()  { m_pPCSkillInfoList.clear(); }
 	
 	// pop front Element in Status List
-	PCSkillInfo* popFrontListElement() throw()
+	PCSkillInfo* popFrontListElement() 
 	{
 		PCSkillInfo* TempPCSkillInfo = m_pPCSkillInfoList.front(); m_pPCSkillInfoList.pop_front(); return TempPCSkillInfo;
 	}
@@ -105,7 +105,7 @@ class GCSkillInfoFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCSkillInfo(); }
+	Packet* createPacket()  { return new GCSkillInfo(); }
 
 	// get packet name
 	string getPacketName()  { return "GCSkillInfo"; }

@@ -16,8 +16,8 @@
 class CauseCriticalWounds : public SkillHandler 
 {
 public:
-	CauseCriticalWounds() throw() {}
-	~CauseCriticalWounds() throw() {}
+	CauseCriticalWounds()  {}
+	~CauseCriticalWounds()  {}
 	
 public:
     string getSkillHandlerName()  { return "CauseCriticalWounds"; }

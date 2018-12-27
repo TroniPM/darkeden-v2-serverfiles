@@ -58,11 +58,11 @@ public:
 
 	// get/set guildID
 	GuildID_t getGuildID()  { return m_GuildID; }
-	void setGuildID( GuildID_t guildID ) throw() { m_GuildID = guildID; }
+	void setGuildID( GuildID_t guildID )  { m_GuildID = guildID; }
 
 	// get/set guild intro
 	const string& getGuildIntro()  { return m_GuildIntro; }
-	void setGuildIntro( const string& intro ) throw() { m_GuildIntro = intro; }
+	void setGuildIntro( const string& intro )  { m_GuildIntro = intro; }
 
 private :
 
@@ -88,7 +88,7 @@ class SGModifyGuildIntroOKFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new SGModifyGuildIntroOK(); }
+	Packet* createPacket()  { return new SGModifyGuildIntroOK(); }
 
 	// get packet name
 	string getPacketName()  { return "SGModifyGuildIntroOK"; }

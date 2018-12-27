@@ -129,7 +129,7 @@ void EffectMagnumSpear::unaffect(Creature* pCreature)
 }
 
 string EffectMagnumSpear::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

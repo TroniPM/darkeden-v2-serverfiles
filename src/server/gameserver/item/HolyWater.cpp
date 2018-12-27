@@ -24,14 +24,14 @@ Mutex    HolyWater::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 HolyWater::HolyWater()
-	throw()
+	
 {
 	m_ItemType = 0;
 	m_Num = 1;
 }
 
 HolyWater::HolyWater(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	m_ItemType = itemType;
 	m_Num = 1;
@@ -187,7 +187,7 @@ Damage_t HolyWater::getMaxDamage() const
 // get debug string
 //--------------------------------------------------------------------------------
 string HolyWater::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "HolyWater("
@@ -245,7 +245,7 @@ Weight_t HolyWater::getWeight() const
 // get debug string
 //--------------------------------------------------------------------------------
 string HolyWaterInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

@@ -157,7 +157,7 @@ void GameServerManager::run ()
 // send datagram to datagram-socket
 //////////////////////////////////////////////////////////////////////
 void GameServerManager::sendDatagram ( Datagram * pDatagram )
-	throw ( ConnectException , Error )
+	
 {
 	__BEGIN_TRY
 
@@ -180,7 +180,7 @@ void GameServerManager::sendDatagram ( Datagram * pDatagram )
 // send datagram-packet to datagram-socket
 //////////////////////////////////////////////////////////////////////
 void GameServerManager::sendPacket ( string host , uint port , DatagramPacket * pPacket )
-	throw ( ConnectException , Error )
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG

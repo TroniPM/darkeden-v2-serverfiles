@@ -32,8 +32,8 @@ public:
 	void init ();
 	void load ();
 	
-	void addGameServerInfo ( GameServerInfo * pGameServerInfo, const ServerGroupID_t ServerGroupID ) throw ( DuplicatedException );
-	void deleteGameServerInfo ( const ServerID_t ServerID, const ServerGroupID_t ServerGroupID ) throw ( NoSuchElementException );
+	void addGameServerInfo ( GameServerInfo * pGameServerInfo, const ServerGroupID_t ServerGroupID ) ;
+	void deleteGameServerInfo ( const ServerID_t ServerID, const ServerGroupID_t ServerGroupID ) ;
 	GameServerInfo * getGameServerInfo ( const ServerID_t ServerID, const ServerGroupID_t ServerGroupID ) ;
 	uint getSize ( const ServerGroupID_t ServerGroupID )  { return m_pGameServerInfos[ServerGroupID].size(); }
 	string toString () ;

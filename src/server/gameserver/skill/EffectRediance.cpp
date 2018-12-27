@@ -83,7 +83,7 @@ void EffectRediance::unaffect(Creature* pCreature)
 }
 
 string EffectRediance::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

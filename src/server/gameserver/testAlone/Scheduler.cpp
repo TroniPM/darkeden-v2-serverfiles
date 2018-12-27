@@ -6,11 +6,11 @@
 #include "Assert.h"
 
 Scheduler::Scheduler()
-	throw()
+	
 {
 }
 Scheduler::~Scheduler()
-	throw()
+	
 {
 	clear();
 }

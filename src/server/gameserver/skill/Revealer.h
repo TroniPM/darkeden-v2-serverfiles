@@ -16,8 +16,8 @@
 class Revealer: public SkillHandler 
 {
 public:
-	Revealer() throw() {}
-	~Revealer() throw() {}
+	Revealer()  {}
+	~Revealer()  {}
 	
 public:
     string getSkillHandlerName()  { return "Revealer"; }

@@ -112,7 +112,7 @@ void ActionGiveFinalLottoScript::execute (Creature * pCreature1 , Creature * pCr
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionGiveFinalLottoScript::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

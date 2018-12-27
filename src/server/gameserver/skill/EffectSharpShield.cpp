@@ -98,7 +98,7 @@ void EffectSharpShield::unaffect(Zone* pZone , ZoneCoord_t x , ZoneCoord_t y , O
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void EffectSharpShield::setLevel(Level_t Level) 
-	throw()
+	
 {
 //	m_ClientEffectClass = EFFECT_CLASS_SHARP_SHIELD_1;
 	if( Level <= GRADE_ADEPT_LIMIT_LEVEL ) m_ClientEffectClass = EFFECT_CLASS_SHARP_SHIELD_1;

@@ -16,8 +16,8 @@
 class ContinualLight: public SkillHandler 
 {
 public:
-	ContinualLight() throw() {}
-	~ContinualLight() throw() {}
+	ContinualLight()  {}
+	~ContinualLight()  {}
 	
 public:
     string getSkillHandlerName()  { return "ContinualLight"; }

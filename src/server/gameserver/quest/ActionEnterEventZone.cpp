@@ -195,7 +195,7 @@ void ActionEnterEventZone::execute (Creature * pNPC , Creature * pCreature)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionEnterEventZone::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

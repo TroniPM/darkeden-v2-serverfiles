@@ -61,11 +61,11 @@ public :
 
 	// get/set PhoneNumber
 	PhoneNumber_t getPhoneNumber()  { return m_PhoneNumber; }
-	void setPhoneNumber(PhoneNumber_t PhoneNumber) throw() { m_PhoneNumber = PhoneNumber; }
+	void setPhoneNumber(PhoneNumber_t PhoneNumber)  { m_PhoneNumber = PhoneNumber; }
 
 	// get/set SlotID
 	SlotID_t getSlotID()  { return m_SlotID; }
-	void setSlotID(SlotID_t SlotID) throw() { m_SlotID = SlotID; }
+	void setSlotID(SlotID_t SlotID)  { m_SlotID = SlotID; }
 
 private :
 
@@ -91,16 +91,16 @@ class GCPhoneDisconnectedFactory : public PacketFactory {
 public :
 	
 	// constructor
-	GCPhoneDisconnectedFactory() throw() {}
+	GCPhoneDisconnectedFactory()  {}
 	
 	// destructor
-	virtual ~GCPhoneDisconnectedFactory() throw() {}
+	virtual ~GCPhoneDisconnectedFactory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCPhoneDisconnected(); }
+	Packet* createPacket()  { return new GCPhoneDisconnected(); }
 
 	// get packet name
 	string getPacketName()  { return "GCPhoneDisconnected"; }

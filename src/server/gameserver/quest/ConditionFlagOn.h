@@ -26,7 +26,7 @@ public:
 
 public:
 	int getIndex(void)  { return m_Index; }
-	void setIndex(int index) throw() { m_Index = index; }
+	void setIndex(int index)  { m_Index = index; }
 
 private:
 	int m_Index; // 플래그의 값

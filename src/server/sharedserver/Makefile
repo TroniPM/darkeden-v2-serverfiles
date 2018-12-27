@@ -134,7 +134,7 @@ Guild.o: Guild.cpp /usr/include/c++/7/algorithm \
  ../../Core/Gpackets/GCGuildMemberList.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h ../../Core/PacketFactory.h \
  ../../Core/GuildMemberInfo.h ../../Core/Properties.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h
 GuildManager.o: GuildManager.cpp Guild.h ../../Core/Types.h \
@@ -193,7 +193,7 @@ GuildManager.o: GuildManager.cpp Guild.h ../../Core/Types.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h ../../Core/Properties.h /usr/include/STL/map \
+ ../database/Result.h ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../../Core/Gpackets/GCWaitGuildList.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
@@ -409,7 +409,7 @@ GameServerInfoManager.o: GameServerInfoManager.cpp \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
- ../../Core/Properties.h /usr/include/STL/map \
+ ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h
 GameServerGroupInfoManager.o: GameServerGroupInfoManager.cpp \
@@ -522,7 +522,7 @@ GameServerManager.o: GameServerManager.cpp /usr/include/stdio.h \
  /usr/include/getopt.h GameServerPlayer.h ../../Core/Player.h \
  ../../Core/ServerSocket.h ../../Core/SocketImpl.h \
  ../../Core/SocketAPI.h ../../Core/Socket.h ../Mutex.h \
- ../../Core/Assert.h ../../Core/Properties.h /usr/include/STL/map \
+ ../../Core/Assert.h ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h Guild.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
@@ -646,7 +646,7 @@ main.o: main.cpp ../../Core/Types.h ../../Core/types/SystemTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h SharedServer.h \
- ../LogClient.h ../../Core/Properties.h /usr/include/STL/map \
+ ../LogClient.h ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h /usr/include/sys/resource.h \
  /usr/include/bits/resource.h

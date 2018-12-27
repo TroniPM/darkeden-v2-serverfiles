@@ -16,8 +16,8 @@
 class ChainThrowingAxe : public SkillHandler 
 {
 public:
-	ChainThrowingAxe() throw() {}
-	~ChainThrowingAxe() throw() {}
+	ChainThrowingAxe()  {}
+	~ChainThrowingAxe()  {}
 	
 public:
     string getSkillHandlerName()  { return "ChainThrowingAxe"; }

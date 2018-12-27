@@ -18,7 +18,7 @@
 class GCOtherStoreInfo : public Packet
 {
 public:
-	GCOtherStoreInfo() throw() { }
+	GCOtherStoreInfo()  { }
 	virtual ~GCOtherStoreInfo() ;
 
 public:
@@ -53,7 +53,7 @@ private:
 class GCOtherStoreInfoFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCOtherStoreInfo(); }
+	Packet* createPacket()  { return new GCOtherStoreInfo(); }
 	string getPacketName()  { return "GCOtherStoreInfo"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_OTHER_STORE_INFO; }
 	PacketSize_t getPacketMaxSize() 

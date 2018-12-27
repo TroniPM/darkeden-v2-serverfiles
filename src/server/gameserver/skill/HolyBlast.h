@@ -17,8 +17,8 @@
 class HolyBlast: public SkillHandler 
 {
 public:
-	HolyBlast() throw() {}
-	~HolyBlast() throw() {}
+	HolyBlast()  {}
+	~HolyBlast()  {}
 	
 public:
     string getSkillHandlerName()  { return "HolyBlast"; }

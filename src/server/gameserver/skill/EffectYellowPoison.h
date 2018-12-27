@@ -36,10 +36,10 @@ public:
 
 public:
 	Duration_t getDuration()  { return m_Duration; }
-	void setDuration(Duration_t d) throw() { m_Duration = d; }
+	void setDuration(Duration_t d)  { m_Duration = d; }
 	
 	Attr_t getLevel()  { return m_Level; }
-	void setLevel(Attr_t l) throw() { m_Level = l; }
+	void setLevel(Attr_t l)  { m_Level = l; }
 
 	void setVampire( bool bVampire = true ) { m_bVampire = bVampire; }
 	bool isVampire() { return m_bVampire; }

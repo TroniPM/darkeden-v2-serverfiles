@@ -14,7 +14,7 @@
 // Datagram 객체로부터 데이타를 읽어서 패킷을 초기화한다.
 //////////////////////////////////////////////////////////////////////
 void GSAddGuild::read ( SocketInputStream & iStream ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 
@@ -60,7 +60,7 @@ void GSAddGuild::read ( SocketInputStream & iStream )
 // Datagram 객체로 패킷의 바이너리 이미지를 보낸다.
 //////////////////////////////////////////////////////////////////////
 void GSAddGuild::write ( SocketOutputStream & oStream ) const 
-     throw ( ProtocolException , Error )
+     
 {
 	__BEGIN_TRY
 
@@ -102,7 +102,7 @@ void GSAddGuild::write ( SocketOutputStream & oStream ) const
 // execute packet's handler
 //////////////////////////////////////////////////////////////////////
 void GSAddGuild::execute ( Player * pPlayer ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -115,7 +115,7 @@ void GSAddGuild::execute ( Player * pPlayer )
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 string GSAddGuild::toString () const
-    throw ()
+    
 {
 	StringStream msg;
 

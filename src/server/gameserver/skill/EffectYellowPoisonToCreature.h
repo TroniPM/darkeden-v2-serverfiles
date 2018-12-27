@@ -39,10 +39,10 @@ public:
 
 public:
 	Sight_t getOldSight()  { return m_OldSight; }
-	void setOldSight(Sight_t OldSight) throw() { m_OldSight = OldSight; }
+	void setOldSight(Sight_t OldSight)  { m_OldSight = OldSight; }
 
 	Level_t getLevel()  { return m_Level; }
-	void setLevel(Level_t Level) throw() { m_Level = Level; }
+	void setLevel(Level_t Level)  { m_Level = Level; }
 
 private:
 	Level_t m_Level;

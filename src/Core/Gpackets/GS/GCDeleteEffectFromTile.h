@@ -61,17 +61,17 @@ public :
 
 	// get / set EffectID 
 	EffectID_t getEffectID()  { return m_EffectID; }
-	void setEffectID(EffectID_t e) throw() { m_EffectID = e; }
+	void setEffectID(EffectID_t e)  { m_EffectID = e; }
 	
 
 	// get / set ObjectID 
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t d) throw() { m_ObjectID = d; }
+	void setObjectID(ObjectID_t d)  { m_ObjectID = d; }
 
 	// get & set X, Y
 	Coord_t getX()  { return m_X;}
 	Coord_t getY()  { return m_Y;}
-	void setXY(Coord_t x, Coord_t y) throw() { m_X = x; m_Y = y;}
+	void setXY(Coord_t x, Coord_t y)  { m_X = x; m_Y = y;}
 	
 private :
 	
@@ -95,16 +95,16 @@ class GCDeleteEffectFromTileFactory : public PacketFactory {
 public :
 	
 	// constructor
-	GCDeleteEffectFromTileFactory() throw() {}
+	GCDeleteEffectFromTileFactory()  {}
 	
 	// destructor
-	virtual ~GCDeleteEffectFromTileFactory() throw() {}
+	virtual ~GCDeleteEffectFromTileFactory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCDeleteEffectFromTile(); }
+	Packet* createPacket()  { return new GCDeleteEffectFromTile(); }
 
 	// get packet name
 	string getPacketName()  { return "GCDeleteEffectFromTile"; }

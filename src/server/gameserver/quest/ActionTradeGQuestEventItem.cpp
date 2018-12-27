@@ -195,7 +195,7 @@ void ActionTradeGQuestEventItem::execute(Creature * pCreature1 , Creature * pCre
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionTradeGQuestEventItem::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

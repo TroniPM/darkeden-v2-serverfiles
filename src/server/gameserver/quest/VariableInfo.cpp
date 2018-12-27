@@ -90,7 +90,7 @@ void VariableInfo::parse()
 }
 
 const string& VariableInfo::getParameter( int index ) const
-	throw(OutOfBoundException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -103,7 +103,7 @@ const string& VariableInfo::getParameter( int index ) const
 }
 
 string VariableInfo::toString() const
-	throw()
+	
 {
 	__BEGIN_TRY
 

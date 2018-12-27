@@ -21,9 +21,9 @@ public:
 	~CGRequestPowerPoint ();
 	
 public:
-    void read ( SocketInputStream & iStream ) throw ( ProtocolException , Error );
+    void read ( SocketInputStream & iStream ) ;
     void write ( SocketOutputStream & oStream ) ;
-	void execute ( Player * pPlayer ) throw ( ProtocolException , Error );
+	void execute ( Player * pPlayer ) ;
     PacketID_t getPacketID ()  { return PACKET_CG_REQUEST_POWER_POINT; }
 	PacketSize_t getPacketSize ()  { return szBYTE + m_CellNum.size(); }
 	string getPacketName ()  { return "CGRequestPowerPoint"; }
@@ -45,7 +45,7 @@ protected:
 class CGRequestPowerPointFactory : public PacketFactory 
 {
 public:
-	Packet * createPacket () throw () { return new CGRequestPowerPoint(); }
+	Packet * createPacket ()  { return new CGRequestPowerPoint(); }
 	string getPacketName ()  { return "CGRequestPowerPoint"; }
 	PacketID_t getPacketID ()  { return Packet::PACKET_CG_REQUEST_POWER_POINT; }
 	PacketSize_t getPacketMaxSize ()  { return szBYTE + 12;}

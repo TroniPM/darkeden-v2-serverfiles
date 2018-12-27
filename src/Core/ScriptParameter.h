@@ -45,7 +45,7 @@ public :
 	// 최적화시, 미리 계산된 정수를 사용한다.
 	PacketSize_t getSize ();
 
-	static uint getMaxSize() throw() {
+	static uint getMaxSize() {
 		return szBYTE + 255 + szBYTE + 255;
 	}
 
@@ -54,11 +54,11 @@ public :
 
 	// get/set Name
 	string getName()  { return m_Name; }
-	void setName( const string& name ) throw() { m_Name = name; }
+	void setName( const string& name ) { m_Name = name; }
 
 	// get/set Value
 	string getValue()  { return m_Value; }
-	void setValue( const string& value ) throw() { m_Value = value; }
+	void setValue( const string& value ) { m_Value = value; }
 
 private :
 

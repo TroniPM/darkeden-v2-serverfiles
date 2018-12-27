@@ -45,7 +45,7 @@ public :
 	// 최적화시, 미리 계산된 정수를 사용한다.
 	PacketSize_t getSize ();
 
-	static uint getMaxSize() throw() {
+	static uint getMaxSize()  {
 //		return ( szGuildID + szBYTE + 30 + szBYTE + 20 + szBYTE + szBYTE + 11 ) * 256 + szBYTE;
 		return szGuildID + szBYTE + 30 + szBYTE + 20 + szBYTE + szBYTE + 11;
 	}
@@ -55,23 +55,23 @@ public :
 
 	// get/set GuildID
 	GuildID_t getGuildID()  { return m_GuildID; }
-	void setGuildID( GuildID_t GuildID ) throw() { m_GuildID = GuildID; }
+	void setGuildID( GuildID_t GuildID )  { m_GuildID = GuildID; }
 
 	// get/set Guild Name
 	string getGuildName()  { return m_GuildName; }
-	void setGuildName( const string& GuildName ) throw() { m_GuildName = GuildName; }
+	void setGuildName( const string& GuildName )  { m_GuildName = GuildName; }
 
 	// get/set Guild Master
 	string getGuildMaster()  { return m_GuildMaster; }
-	void setGuildMaster( const string& GuildMaster ) throw() { m_GuildMaster = GuildMaster; }
+	void setGuildMaster( const string& GuildMaster )  { m_GuildMaster = GuildMaster; }
 
 	// get/set Guild Member Count
 	BYTE getGuildMemberCount()  { return m_GuildMemberCount; }
-	void setGuildMemberCount( BYTE GuildMemberCount ) throw() { m_GuildMemberCount = GuildMemberCount; }
+	void setGuildMemberCount( BYTE GuildMemberCount )  { m_GuildMemberCount = GuildMemberCount; }
 
 	// get/set Guild Expire Date
 	string getGuildExpireDate()  { return m_GuildExpireDate; }
-	void setGuildExpireDate( const string& GuildExpireDate ) throw() { m_GuildExpireDate = GuildExpireDate; }
+	void setGuildExpireDate( const string& GuildExpireDate )  { m_GuildExpireDate = GuildExpireDate; }
 
 
 private :

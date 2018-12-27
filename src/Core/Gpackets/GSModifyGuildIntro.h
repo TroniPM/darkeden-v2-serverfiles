@@ -58,11 +58,11 @@ public:
 
 	// get/set Guild ID
 	GuildID_t getGuildID()  { return m_GuildID; }
-	void setGuildID( GuildID_t guildID ) throw() { m_GuildID = guildID; }
+	void setGuildID( GuildID_t guildID )  { m_GuildID = guildID; }
 
 	// get/set Guild Intro
 	const string& getGuildIntro()  { return m_GuildIntro; }
-	void setGuildIntro( const string& intro ) throw() { m_GuildIntro = intro; }
+	void setGuildIntro( const string& intro )  { m_GuildIntro = intro; }
 
 private :
 
@@ -88,7 +88,7 @@ class GSModifyGuildIntroFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new GSModifyGuildIntro(); }
+	Packet* createPacket()  { return new GSModifyGuildIntro(); }
 
 	// get packet name
 	string getPacketName()  { return "GSModifyGuildIntro"; }

@@ -16,8 +16,8 @@
 class SoulRebirth : public SkillHandler 
 {
 public:
-	SoulRebirth() throw() {}
-	~SoulRebirth() throw() {}
+	SoulRebirth()  {}
+	~SoulRebirth()  {}
 	
 public:
     string getSkillHandlerName()  { return "SoulRebirth"; }

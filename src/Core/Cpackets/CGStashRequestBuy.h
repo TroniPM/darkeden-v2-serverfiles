@@ -43,7 +43,7 @@ public:
 class CGStashRequestBuyFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGStashRequestBuy(); }
+	Packet* createPacket()  { return new CGStashRequestBuy(); }
 	string getPacketName()  { return "CGStashRequestBuy"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_STASH_REQUEST_BUY; }
 	PacketSize_t getPacketMaxSize()  { return 0; }

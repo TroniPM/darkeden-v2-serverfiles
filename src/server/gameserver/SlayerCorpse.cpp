@@ -22,14 +22,14 @@ SlayerCorpse::SlayerCorpse (Slayer* pSlayer)
 }
 
 SlayerCorpse::~SlayerCorpse()
-	throw()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 string SlayerCorpse::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

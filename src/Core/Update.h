@@ -99,7 +99,7 @@ public :
 
 	// get/set update type
 	Version_t getVersion ()  { return m_Version; }
-	void setVersion (Version_t version) throw () { m_Version = version; }
+	void setVersion (Version_t version)  { m_Version = version; }
 
 	// get update type
 	UPDATETYPE getUpdateType () const 

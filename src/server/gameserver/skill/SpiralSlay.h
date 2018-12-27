@@ -16,8 +16,8 @@
 class SpiralSlay : public SkillHandler 
 {
 public:
-	SpiralSlay() throw() {}
-	~SpiralSlay() throw() {}
+	SpiralSlay()  {}
+	~SpiralSlay()  {}
 
 public:
     string getSkillHandlerName()  { return "SpiralSlay"; }

@@ -204,7 +204,7 @@ void CreateBomb::execute(Slayer * pSlayer , ObjectID_t InvenObjectID, CoordInven
 }
 
 bool CreateBomb::canMake(ItemType_t BombType, int DomainLevel, int SkillLevel)
-	throw()
+	
 {
 	__BEGIN_TRY
 

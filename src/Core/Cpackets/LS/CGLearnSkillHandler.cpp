@@ -690,7 +690,7 @@ void CGLearnSkillHandler::executeVampireSkill (CGLearnSkill* pPacket , Player* p
 }
 
 void CGLearnSkillHandler::executeOustersSkill(CGLearnSkill* pPacket, Player* pPlayer)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_DEBUG_EX __BEGIN_TRY
 #ifdef __GAME_SERVER__

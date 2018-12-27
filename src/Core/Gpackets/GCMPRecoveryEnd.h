@@ -59,7 +59,7 @@ public :
 
 	// get /set CurrentMP
 	MP_t getCurrentMP()  { return m_CurrentMP; }
-	void setCurrentMP(MP_t CurrentMP) throw() { m_CurrentMP = CurrentMP; }
+	void setCurrentMP(MP_t CurrentMP)  { m_CurrentMP = CurrentMP; }
 
 private :
 	
@@ -82,7 +82,7 @@ class GCMPRecoveryEndFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCMPRecoveryEnd(); }
+	Packet* createPacket()  { return new GCMPRecoveryEnd(); }
 
 	// get packet name
 	string getPacketName()  { return "GCMPRecoveryEnd"; }

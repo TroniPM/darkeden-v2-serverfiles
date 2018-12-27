@@ -14,7 +14,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////////////
 PCItemInfo::PCItemInfo () 
-     throw ()
+     
 {
 	__BEGIN_TRY
 
@@ -39,7 +39,7 @@ PCItemInfo::PCItemInfo ()
 // destructor
 //////////////////////////////////////////////////////////////////////////////
 PCItemInfo::~PCItemInfo () 
-    throw ()
+    
 {
 	__BEGIN_TRY
 
@@ -58,7 +58,7 @@ PCItemInfo::~PCItemInfo ()
 // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
 //////////////////////////////////////////////////////////////////////////////
 void PCItemInfo::read ( SocketInputStream & iStream ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -166,7 +166,7 @@ void PCItemInfo::write ( SocketOutputStream & oStream )
 // debug string
 //////////////////////////////////////////////////////////////////////////////
 string PCItemInfo::toString() const
-	throw()
+	
 {
 	StringStream msg;
 	msg << "PCItemInfo("

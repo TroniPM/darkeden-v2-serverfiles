@@ -17,8 +17,8 @@
 class GrayDarkness : public SkillHandler 
 {
 public:
-	GrayDarkness() throw() {}
-	~GrayDarkness() throw() {}
+	GrayDarkness()  {}
+	~GrayDarkness()  {}
 	
 public:
     string getSkillHandlerName()  { return "GrayDarkness"; }

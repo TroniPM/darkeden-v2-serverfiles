@@ -27,7 +27,7 @@ class PCSkillInfo {
 public :
 	
 	// destructor
-	virtual ~PCSkillInfo () throw () {}
+	virtual ~PCSkillInfo ()  {}
 
 public :
 
@@ -39,7 +39,7 @@ public :
 
 	// get packet's body size
 	// 최적화시, 미리 계산된 정수를 사용한다.
-	virtual PacketSize_t getSize () throw () = 0;
+	virtual PacketSize_t getSize ()  = 0;
 
 	// get packet's debug string
 	virtual string toString ()  = 0;

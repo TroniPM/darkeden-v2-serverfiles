@@ -30,10 +30,10 @@ public:
 
 public :
 	SkillDomainType_t getDomainType(void)  { return m_DomainType;}
-	void setDomainType(SkillDomainType_t type) throw()  { m_DomainType = type;}
+	void setDomainType(SkillDomainType_t type)   { m_DomainType = type;}
 
 	SkillLevel_t getTargetLevel(void)  { return m_TargetLevel;}
-	void setTargetLevel(SkillLevel_t level) throw() { m_TargetLevel = level;}
+	void setTargetLevel(SkillLevel_t level)  { m_TargetLevel = level;}
 
 private:
 	SkillDomainType_t m_DomainType;  // NPC가 가르쳐주는 기술의 도메인 타입
@@ -47,7 +47,7 @@ private:
 class GCTeachSkillInfoFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCTeachSkillInfo(); }
+	Packet* createPacket()  { return new GCTeachSkillInfo(); }
 	string getPacketName()  { return "GCTeachSkillInfo"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_TEACH_SKILL_INFO; }
 	PacketSize_t getPacketMaxSize()  { return szSkillDomainType+szSkillLevel; }

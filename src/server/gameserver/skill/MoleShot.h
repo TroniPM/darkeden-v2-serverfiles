@@ -16,8 +16,8 @@
 class MoleShot : public SkillHandler 
 {
 public:
-	MoleShot() throw() { }
-	~MoleShot() throw() {}
+	MoleShot()  { }
+	~MoleShot()  {}
 
 public:
     string getSkillHandlerName()  { return "MoleShot"; }

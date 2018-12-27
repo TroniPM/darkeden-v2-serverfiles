@@ -29,11 +29,11 @@ public :
 
 	// get/set zone group id
 	ZoneGroupID_t getZoneGroupID ()  { return m_ZoneGroupID; }
-	void setZoneGroupID ( ZoneGroupID_t zoneGroupID ) throw () { m_ZoneGroupID = zoneGroupID; }
+	void setZoneGroupID ( ZoneGroupID_t zoneGroupID )  { m_ZoneGroupID = zoneGroupID; }
 
 	// get/set game server's nick name
 	ServerID_t getServerID ()  { return m_ServerID; }
-	void setServerID ( const ServerID_t ServerID ) throw () { m_ServerID = ServerID; }
+	void setServerID ( const ServerID_t ServerID )  { m_ServerID = ServerID; }
 
 	// get debug string
 	string toString () 

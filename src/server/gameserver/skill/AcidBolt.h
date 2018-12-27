@@ -16,8 +16,8 @@
 class AcidBolt : public SkillHandler 
 {
 public:
-	AcidBolt() throw() {}
-	~AcidBolt() throw() {}
+	AcidBolt()  {}
+	~AcidBolt()  {}
 	
 public:
     string getSkillHandlerName()  { return "AcidBolt"; }

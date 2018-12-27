@@ -37,7 +37,7 @@ public:
 	virtual string getObjectTableName()  { return "MoneyObject"; }
 
 	virtual ItemType_t getItemType()  { return m_ItemType; }
-	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
+	virtual void setItemType(ItemType_t itemType)  { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() ;
 	virtual VolumeHeight_t getVolumeHeight() ;
@@ -46,13 +46,13 @@ public:
 	virtual string toString() ;
 // add by sonic 2006.10.30
 	virtual ItemNum_t getNum()  { return m_Num; }
-	virtual void setNum(ItemNum_t Num) throw() { m_Num = Num; }
+	virtual void setNum(ItemNum_t Num)  { m_Num = Num; }
 
 	bool    isStackable()  { return true; }
 // end 
 public:
 	DWORD getAmount()  { return m_Amount; }
-	void setAmount(DWORD amount) throw() { m_Amount = amount; }
+	void setAmount(DWORD amount)  { m_Amount = amount; }
 
 public:
 	virtual Durability_t getDurability()  
@@ -116,7 +116,7 @@ public:
 	virtual string getItemClassName()  { return "Money"; }
 	
 public:
-	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new Money(ItemType,OptionType,1); }
+	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType)  { return new Money(ItemType,OptionType,1); }
 };
 
 

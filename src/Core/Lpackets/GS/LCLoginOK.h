@@ -49,16 +49,16 @@ public:
 
 	// get / set GoreLevel
 	bool isAdult()  { return m_isAdult; }
-	void setAdult(bool isAdult) throw() { m_isAdult = isAdult; }
+	void setAdult(bool isAdult)  { m_isAdult = isAdult; }
 
 	bool isFamily()  { return m_bFamily; }
-	void setFamily(bool isFamily) throw() { m_bFamily = isFamily; }
+	void setFamily(bool isFamily)  { m_bFamily = isFamily; }
 
 	BYTE getStat()  { return m_Stat; }
-	void setStat(BYTE Stat) throw() { m_Stat = Stat; }
+	void setStat(BYTE Stat)  { m_Stat = Stat; }
 
 	WORD getLastDays()  { return m_LastDays; }
-	void setLastDays(WORD LastDays) throw() { m_LastDays = LastDays; }
+	void setLastDays(WORD LastDays)  { m_LastDays = LastDays; }
 
 	// get packet's debug string
 	string toString()  { return "LCLoginOK"; }
@@ -94,7 +94,7 @@ class LCLoginOKFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new LCLoginOK(); }
+	Packet* createPacket()  { return new LCLoginOK(); }
 
 	// get packet name
 	string getPacketName()  { return "LCLoginOK"; }

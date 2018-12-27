@@ -21,13 +21,13 @@ public:
 	~STRBalanceInfo() ;
 
 public:
-	void setLevel(uint lev) throw() { m_Level = lev; }
+	void setLevel(uint lev)  { m_Level = lev; }
 	uint getLevel()  { return m_Level; }
 
-	void setGoalExp(uint sum) throw() { m_GoalExp = sum; }
+	void setGoalExp(uint sum)  { m_GoalExp = sum; }
 	uint getGoalExp()  { return m_GoalExp; }
 
-	void setAccumExp(uint accum) throw() { m_AccumExp = accum ; }
+	void setAccumExp(uint accum)  { m_AccumExp = accum ; }
 	uint getAccumExp()  { return m_AccumExp; }
 
 	string toString() ;
@@ -75,13 +75,13 @@ public:
 	~DEXBalanceInfo() ;
 
 public:
-	void setLevel(uint lev) throw() { m_Level = lev; }
+	void setLevel(uint lev)  { m_Level = lev; }
 	uint getLevel()  { return m_Level; }
 
-	void setGoalExp(uint sum) throw() { m_GoalExp = sum; }
+	void setGoalExp(uint sum)  { m_GoalExp = sum; }
 	uint getGoalExp()  { return m_GoalExp; }
 
-	void setAccumExp(uint accum) throw() { m_AccumExp = accum ; }
+	void setAccumExp(uint accum)  { m_AccumExp = accum ; }
 	uint getAccumExp()  { return m_AccumExp; }
 
 	string toString() ;
@@ -130,13 +130,13 @@ public:
 	~INTBalanceInfo() ;
 
 public:
-	void setLevel(uint lev) throw() { m_Level = lev; }
+	void setLevel(uint lev)  { m_Level = lev; }
 	uint getLevel()  { return m_Level; }
 
-	void setGoalExp(uint sum) throw() { m_GoalExp = sum; }
+	void setGoalExp(uint sum)  { m_GoalExp = sum; }
 	uint getGoalExp()  { return m_GoalExp; }
 
-	void setAccumExp(uint accum) throw() { m_AccumExp = accum ; }
+	void setAccumExp(uint accum)  { m_AccumExp = accum ; }
 	uint getAccumExp()  { return m_AccumExp; }
 
 	string toString() ;

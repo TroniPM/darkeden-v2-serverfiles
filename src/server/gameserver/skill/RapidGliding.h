@@ -16,8 +16,8 @@
 class RapidGliding : public SkillHandler 
 {
 public:
-	RapidGliding() throw() {}
-	~RapidGliding() throw() {}
+	RapidGliding()  {}
+	~RapidGliding()  {}
 	
 public:
     string getSkillHandlerName()  { return "RapidGliding"; }

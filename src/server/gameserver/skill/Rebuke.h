@@ -16,8 +16,8 @@
 class Rebuke : public SkillHandler 
 {
 public:
-	Rebuke() throw() {}
-	~Rebuke() throw() {}
+	Rebuke()  {}
+	~Rebuke()  {}
 	
 public:
     string getSkillHandlerName()  { return "Rebuke"; }

@@ -56,13 +56,13 @@ public:
 
 public:
 	// read socket's receive buffer and fill input buffer
-	// virtual void processInput() throw(IOException, Error);
+	// virtual void processInput() ;
 	
 	// parse packet and execute handler for the packet
-	virtual void processCommand(bool Option = true) throw(IOException, Error);
+	virtual void processCommand(bool Option = true) ;
 	
 	// flush output buffer to socket's send buffer
-	virtual void processOutput() throw(IOException, Error);
+	virtual void processOutput() ;
 	
 	// send packet to player's output buffer
 	virtual void sendPacket(Packet* packet) ;
@@ -78,11 +78,11 @@ public:
 	virtual bool verifySpeed(Packet* pPacket);
 	
 	// get creature pointer 
-	Creature* getCreature() throw() { return m_pCreature; }
+	Creature* getCreature()  { return m_pCreature; }
 	const Creature* getCreature()  { return m_pCreature; }
 
 	// set creature pointer
-	void setCreature(Creature* pCreature) throw() { m_pCreature = pCreature; }
+	void setCreature(Creature* pCreature)  { m_pCreature = pCreature; }
 
 	// return recent N-th packet
 	// 최근 전송된 N 번째 패킷을 리턴한다.
@@ -90,13 +90,13 @@ public:
 
 	// return recent packet which has packetID
 	// 특정 ID를 가진 패킷 중 가장 최근의 패킷을 리턴한다.
-	Packet* getOldPacket(PacketID_t packetID) throw(NoSuchElementException);
+	Packet* getOldPacket(PacketID_t packetID) ;
 
 	// get player's status
 	PlayerStatus getPlayerStatus()  { return m_PlayerStatus; }
 
 	// set player's status
-	void setPlayerStatus(PlayerStatus playerStatus) throw() { m_PlayerStatus = playerStatus; }
+	void setPlayerStatus(PlayerStatus playerStatus)  { m_PlayerStatus = playerStatus; }
 
 	//
 	void addEvent(Event* pEvent);
@@ -105,13 +105,13 @@ public:
 
 	// 패널티 Status 관련 함수
     //Set Flag
-	void setPenaltyFlag(PenaltyType PenaltyFlag) throw() { m_PenaltyFlag.set(PenaltyFlag); }
+	void setPenaltyFlag(PenaltyType PenaltyFlag)  { m_PenaltyFlag.set(PenaltyFlag); }
 	
 	// remove Flag
-	void removePenaltyFlag(PenaltyType PenaltyFlag) throw() { m_PenaltyFlag.reset(PenaltyFlag); }
+	void removePenaltyFlag(PenaltyType PenaltyFlag)  { m_PenaltyFlag.reset(PenaltyFlag); }
 	
 	// Is Flag?
-	bool isPenaltyFlag(PenaltyType PenaltyFlag) throw() { return m_PenaltyFlag.test(PenaltyFlag); }
+	bool isPenaltyFlag(PenaltyType PenaltyFlag)  { return m_PenaltyFlag.test(PenaltyFlag); }
 
 public:
 	uint getSpecialEventCount(void) const { return m_SpecialEventCount; }
@@ -121,17 +121,17 @@ public:
 	
 public :	// '이미 접속 중'인 경우. 강제 종료를 위해서. by sigi.
 	bool isKickForLogin() 						{ return m_bKickForLogin; }
-	void setKickForLogin(bool bKickForLogin=true) throw() 	{ m_bKickForLogin = bKickForLogin; }
+	void setKickForLogin(bool bKickForLogin=true)  	{ m_bKickForLogin = bKickForLogin; }
 
 	const string& 	getKickRequestHost() 		{ return m_KickRequestHost; }
 	uint  			getKickRequestPort() 		{ return m_KickRequestPort; }
 
-	void			setKickRequestHost(const string& host) throw()	{ m_KickRequestHost = host; }
-	void			setKickRequestPort(uint port) throw()			{ m_KickRequestPort = port; }
+	void			setKickRequestHost(const string& host) 	{ m_KickRequestHost = host; }
+	void			setKickRequestPort(uint port) 			{ m_KickRequestPort = port; }
 
 public :
 	// 쩝. 
-	void	setReconnectPacket(GCReconnectLogin* pPacket) throw() 	{ SAFE_DELETE(m_pReconnectPacket); m_pReconnectPacket = pPacket; }
+	void	setReconnectPacket(GCReconnectLogin* pPacket)  	{ SAFE_DELETE(m_pReconnectPacket); m_pReconnectPacket = pPacket; }
 	GCReconnectLogin* getReconnectPacket() 			{ return m_pReconnectPacket; }
 
 	// by sigi. 2002.10.23
@@ -277,7 +277,7 @@ class isSamePlayer
 {
 public:
 	isSamePlayer(GamePlayer* pGamePlayer) : m_pGamePlayer(pGamePlayer) {}
-	bool operator()(GamePlayer* pGamePlayer) throw()
+	bool operator()(GamePlayer* pGamePlayer) 
 	{
 		return pGamePlayer->getID() == m_pGamePlayer->getID();
 	}
@@ -293,7 +293,7 @@ class isSamePlayerbyID
 {
 public:
 	isSamePlayerbyID(const string & ID) : m_ID(ID) {}
-	bool operator()(GamePlayer* pGamePlayer) throw()
+	bool operator()(GamePlayer* pGamePlayer) 
 	{
 		return pGamePlayer->getID() == m_ID;
 	}

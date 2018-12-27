@@ -129,7 +129,7 @@ void ActionSearchMotorcycle::execute (Creature * pCreature1 , Creature* pCreatur
 }
 
 bool ActionSearchMotorcycle::search(Item* pItem, uint& zoneid, uint& x, uint& y) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -163,7 +163,7 @@ bool ActionSearchMotorcycle::search(Item* pItem, uint& zoneid, uint& x, uint& y)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionSearchMotorcycle::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

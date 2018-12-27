@@ -121,9 +121,9 @@ public:
 ////////////////////////////////////////////////////////////
 public:
 	virtual Inventory* getInventory()  { return m_pInventory; }
-	virtual void setInventory(Inventory* pInventory) throw() { m_pInventory = pInventory; }
+	virtual void setInventory(Inventory* pInventory)  { m_pInventory = pInventory; }
 
-	virtual InventorySlot* getExtraInventorySlot() throw() { return m_pExtraInventorySlot; }
+	virtual InventorySlot* getExtraInventorySlot()  { return m_pExtraInventorySlot; }
 	virtual Item* getExtraInventorySlotItem()  { return m_pExtraInventorySlot->getItem(); }
 	virtual void deleteItemFromExtraInventorySlot()  { m_pExtraInventorySlot->deleteItem(); }
 	virtual void addItemToExtraInventorySlot(Item* pItem)  { m_pExtraInventorySlot->addItem(pItem); }
@@ -138,21 +138,21 @@ public:
 ////////////////////////////////////////////////////////////
 public:
 	virtual Stash* getStash(void)  { return m_pStash; }
-	virtual void setStash(Stash* pStash) throw() { m_pStash = pStash; }
+	virtual void setStash(Stash* pStash)  { m_pStash = pStash; }
 
 	virtual BYTE getStashNum(void)  { return m_StashNum; }
-	virtual void setStashNum(BYTE num) throw() { m_StashNum = num; }
+	virtual void setStashNum(BYTE num)  { m_StashNum = num; }
 	virtual void setStashNumEx(BYTE num) ;
 
 	virtual Gold_t getStashGold(void)  { return m_StashGold; }
-	virtual void setStashGold(Gold_t gold) throw() { m_StashGold = gold; }
+	virtual void setStashGold(Gold_t gold)  { m_StashGold = gold; }
 	virtual void setStashGoldEx(Gold_t gold) ;
 	virtual void increaseStashGoldEx(Gold_t gold) ;
 	virtual void decreaseStashGoldEx(Gold_t gold) ;
 	virtual bool checkStashGoldIntegrity() = 0;
 
 	virtual bool getStashStatus(void)  { return m_bStashStatus; }
-	virtual void setStashStatus(bool s) throw() { m_bStashStatus = s; }
+	virtual void setStashStatus(bool s)  { m_bStashStatus = s; }
 
 	virtual void deleteStash(void) ;
 
@@ -171,20 +171,20 @@ public:
 // 아이템 검색 함수
 ////////////////////////////////////////////////////////////
 public:
-	virtual Item* findItemOID(ObjectID_t id) throw() = 0;
-	virtual Item* findItemOID(ObjectID_t id, int& storage, int& x, int& y) throw() = 0;
+	virtual Item* findItemOID(ObjectID_t id)  = 0;
+	virtual Item* findItemOID(ObjectID_t id, int& storage, int& x, int& y)  = 0;
 
-	virtual Item* findItemIID(ItemID_t id) throw() = 0;
-	virtual Item* findItemIID(ItemID_t id, int& storage, int& x, int& y) throw() = 0;
+	virtual Item* findItemIID(ItemID_t id)  = 0;
+	virtual Item* findItemIID(ItemID_t id, int& storage, int& x, int& y)  = 0;
 
-	virtual Item* findBeltOID(ObjectID_t id) throw() = 0;
-	virtual Item* findBeltOID(ObjectID_t id, int& storage, int& x, int& y) throw() = 0;
+	virtual Item* findBeltOID(ObjectID_t id)  = 0;
+	virtual Item* findBeltOID(ObjectID_t id, int& storage, int& x, int& y)  = 0;
 
-	virtual Item* findBeltIID(ItemID_t id) throw() = 0;
-	virtual Item* findBeltIID(ItemID_t id, int& storage, int& x, int& y) throw() = 0;
+	virtual Item* findBeltIID(ItemID_t id)  = 0;
+	virtual Item* findBeltIID(ItemID_t id, int& storage, int& x, int& y)  = 0;
 
-	virtual Item* findSubInventoryID(ItemID_t id) throw() = 0;
-	virtual Item* findSubInventoryID(ItemID_t id, int& storage, int& x, int& y) throw() = 0;
+	virtual Item* findSubInventoryID(ItemID_t id)  = 0;
+	virtual Item* findSubInventoryID(ItemID_t id, int& storage, int& x, int& y)  = 0;
 
 
 ////////////////////////////////////////////////////////////
@@ -192,7 +192,7 @@ public:
 ////////////////////////////////////////////////////////////
 public:
 	FlagSet* getFlagSet(void)  { return m_pFlagSet; }
-	void setFlagSet(FlagSet* pSet) throw() { m_pFlagSet = pSet; } 
+	void setFlagSet(FlagSet* pSet)  { m_pFlagSet = pSet; } 
 	void deleteFlagSet(void) ;
 
 
@@ -201,13 +201,13 @@ public:
 ////////////////////////////////////////////////////////////
 public:
 	virtual Fame_t getFame()  = 0;
-	virtual void setFame(Fame_t fame) throw() = 0;
+	virtual void setFame(Fame_t fame)  = 0;
 
 	virtual Gold_t getGold()  = 0;
-	virtual void setGold(Gold_t gold) throw() = 0;
-	virtual void setGoldEx(Gold_t gold) throw() = 0;
-	virtual void   increaseGoldEx(Gold_t gold) throw() = 0;
-    virtual void   decreaseGoldEx(Gold_t gold) throw() = 0;
+	virtual void setGold(Gold_t gold)  = 0;
+	virtual void setGoldEx(Gold_t gold)  = 0;
+	virtual void   increaseGoldEx(Gold_t gold)  = 0;
+    virtual void   decreaseGoldEx(Gold_t gold)  = 0;
 	virtual bool checkGoldIntegrity() = 0;
 	bool checkDBGold( Gold_t gold )
 	{
@@ -219,16 +219,16 @@ public:
 	}
 
 	virtual Fame_t getKillPoint()  = 0;
-	virtual void setKillPoint(Fame_t fame) throw() = 0;
+	virtual void setKillPoint(Fame_t fame)  = 0;
 
 	virtual Color_t getShopColor()  = 0;
-	virtual void setShopColor(Color_t ShopColor) throw() = 0;
+	virtual void setShopColor(Color_t ShopColor)  = 0;
 
 	virtual Sex	getSex()  = 0;
 
 	virtual ZoneID_t getResurrectZoneID(void)  = 0;
-	virtual void setResurrectZoneID(ZoneID_t id) throw() = 0;
-	virtual void setResurrectZoneIDEx(ZoneID_t id) throw() = 0;
+	virtual void setResurrectZoneID(ZoneID_t id)  = 0;
+	virtual void setResurrectZoneIDEx(ZoneID_t id)  = 0;
 
 	//virtual Race_t getRace() const = 0; - Creature로 올렸다.
 	virtual GuildID_t getCommonGuildID() const = 0;
@@ -247,13 +247,13 @@ public:
 	bool hasEnemy(const string& Name) ;
 	uint getMaxEnemies() ;
 
-	list<string>& getEnemies(void) throw() { return m_Enemies;}
+	list<string>& getEnemies(void)  { return m_Enemies;}
 
-	bool isPK() throw() { return m_isPK; }
+	bool isPK()  { return m_isPK; }
 
-	void setPK(bool isPK) throw() { m_isPK = isPK; }
+	void setPK(bool isPK)  { m_isPK = isPK; }
 
-	void setGuildID( GuildID_t GuildID ) throw() { m_GuildID = GuildID; }
+	void setGuildID( GuildID_t GuildID )  { m_GuildID = GuildID; }
 	GuildID_t getGuildID()  { return m_GuildID; }
 
 	string getGuildName() ;
@@ -270,13 +270,13 @@ public:
 	void setRankExpSaveCount(WORD count) { m_RankExpSaveCount = count; }
 
 	virtual Alignment_t getAlignment() =0;
-	virtual void setAlignment(Alignment_t Alignment) throw()=0;
+	virtual void setAlignment(Alignment_t Alignment) =0;
 
 ////////////////////////////////////////////////////////////
 // Rank Bonus 관련
 ////////////////////////////////////////////////////////////
 	void loadRankBonus() ;
-	bool hasRankBonus( RankBonus::RankBonusType type ) throw() { return m_RankBonusFlag.test(type); }
+	bool hasRankBonus( RankBonus::RankBonusType type )  { return m_RankBonusFlag.test(type); }
 	RankBonus* getRankBonus( RankBonus::RankBonusType type ) ;
 	RankBonus* getRankBonusByRank( Rank_t rank ) ;
 	bool learnRankBonus( DWORD type ) ;
@@ -309,12 +309,12 @@ public :
 	void 	removeAllQuest() 	{ if (m_pQuestManager!=NULL) m_pQuestManager->release(); }*/
 
 	virtual void initAllStatAndSend() = 0;
-	virtual void initAllStat(int numPartyMember) throw() = 0;
+	virtual void initAllStat(int numPartyMember)  = 0;
 
-	virtual void computeStatOffset(void) throw() = 0;
-	virtual void computeItemStat(Item* pItem) throw() = 0;
-	virtual void computeOptionStat(Item* pItem) throw() = 0;
-	virtual void computeOptionStat(OptionType_t optionType) throw() = 0;
+	virtual void computeStatOffset(void)  = 0;
+	virtual void computeItemStat(Item* pItem)  = 0;
+	virtual void computeOptionStat(Item* pItem)  = 0;
+	virtual void computeOptionStat(OptionType_t optionType)  = 0;
 	virtual void computeOptionClassStat( OptionClass OClass, int PlusPoint ) = 0;
 
 	void heartbeat(const Timeval& currentTime) ;
@@ -585,7 +585,7 @@ public:
 	bool				deputAdvancedBonusToINT();
 
 	virtual Bonus_t getBonus()  = 0;
-	virtual void    setBonus(Bonus_t bonus) throw() = 0;
+	virtual void    setBonus(Bonus_t bonus)  = 0;
 
 protected:
 	Attr_t				m_AdvancedSTR;

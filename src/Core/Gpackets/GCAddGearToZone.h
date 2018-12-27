@@ -30,8 +30,8 @@ public :
 	string toString() ;
 	
 public:
-	SlotID_t getSlotID() throw() { return m_SlotID; }
-	void setSlotID(SlotID_t SlotID) throw() { m_SlotID = SlotID; }
+	SlotID_t getSlotID()  { return m_SlotID; }
+	void setSlotID(SlotID_t SlotID)  { m_SlotID = SlotID; }
 
 private:
 	SlotID_t m_SlotID; // SlotID
@@ -45,7 +45,7 @@ private:
 class GCAddGearToZoneFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCAddGearToZone(); }
+	Packet* createPacket()  { return new GCAddGearToZone(); }
 	string getPacketName()  { return "GCAddGearToZone"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_GEAR_TO_ZONE; }
 	PacketSize_t getPacketMaxSize()  { return szSlotID; }

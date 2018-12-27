@@ -343,7 +343,7 @@ CBillingPacketHeader.o: CBillingPacketHeader.cpp \
  /home/darkeden/vs/src/Core/SocketImpl.h \
  /home/darkeden/vs/src/Core/SocketAPI.h \
  /home/darkeden/vs/src/Core/SocketOutputStream.h \
- /home/darkeden/vs/src/Core/Properties.h /usr/include/STL/map \
+ /home/darkeden/vs/src/Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h
 CBillingPacketResponseLogoutBody.o: \
@@ -1029,7 +1029,7 @@ CBillingPlayerManager.o: CBillingPlayerManager.cpp \
  /home/darkeden/vs/src/server/Mutex.h CBillingInfo.h CBillingPlayer.h \
  /home/darkeden/vs/src/Core/Player.h \
  /home/darkeden/vs/src/Core/Assert.h \
- /home/darkeden/vs/src/Core/Properties.h /usr/include/STL/map \
+ /home/darkeden/vs/src/Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \

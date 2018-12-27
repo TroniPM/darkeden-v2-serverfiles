@@ -16,8 +16,8 @@
 class GammaChop: public SkillHandler 
 {
 public:
-	GammaChop() throw() {}
-	~GammaChop() throw() {}
+	GammaChop()  {}
+	~GammaChop()  {}
 	
 public:
     string getSkillHandlerName()  { return "GammaChop"; }

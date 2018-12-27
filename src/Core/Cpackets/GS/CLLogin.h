@@ -57,21 +57,21 @@ public:
 
 	// get/set player's id
 	string getID()  { return m_ID; }
-	void setID(string id) throw() { m_ID = id; }
+	void setID(string id)  { m_ID = id; }
 
 	// get/set player's password
 	string getPassword()  { return m_Password; }
-	void setPassword(string password) throw() { m_Password = password; }
+	void setPassword(string password)  { m_Password = password; }
 
 	string getCpsso()  { return m_Cpsso; }
-	void setCpsso(string cpsso) throw() { m_Cpsso = cpsso; }
+	void setCpsso(string cpsso)  { m_Cpsso = cpsso; }
 
 	// get/set Cpsso imformation
 	bool isNetmarble()  { return m_bNetmarble; }
-	void setNetmarble(bool netmarble) throw() { m_bNetmarble = netmarble; }
+	void setNetmarble(bool netmarble)  { m_bNetmarble = netmarble; }
 
 	bool isAdult()  { return m_bAdult; }
-	void setAdult(bool adult) throw() { m_bAdult = adult; }
+	void setAdult(bool adult)  { m_bAdult = adult; }
 
 	// add - inthesky
 	bool checkMacAddress(string currentMac) ;
@@ -118,7 +118,7 @@ class CLLoginFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CLLogin(); }
+	Packet* createPacket()  { return new CLLogin(); }
 
 	// get packet name
 	string getPacketName()  { return "CLLogin"; }
@@ -148,7 +148,7 @@ public:
 private :
 	static bool checkFreePass(CLLogin* pPacket, Player* pPlayer);
 	static bool	checkNetMarbleClient (CLLogin* pPacket , Player* pPlayer) ;
-	static bool checkWebLogin( CLLogin* pPacket, Player* pPlayer ) throw ( ProtocolException, Error );
+	static bool checkWebLogin( CLLogin* pPacket, Player* pPlayer ) ;
 #if defined(__THAILAND_SERVER__)
 	static bool onChildGuardTimeArea(int pm, int am, string enable);
 #endif

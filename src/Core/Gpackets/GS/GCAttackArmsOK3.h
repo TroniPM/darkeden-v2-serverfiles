@@ -64,18 +64,18 @@ public :
 	void setSkillType( SkillType_t skillType ) { m_SkillType = skillType; }
 	// get / set ObjectID
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 	// get / set ObjectID
 //	ObjectID_t getTargetObjectID()  { return m_TargetObjectID; }
-//	void setTargetObjectID(ObjectID_t TargetObjectID) throw() { m_TargetObjectID = TargetObjectID; }
+//	void setTargetObjectID(ObjectID_t TargetObjectID)  { m_TargetObjectID = TargetObjectID; }
 	Coord_t getTargetX()  { return m_X;}
 	Coord_t getTargetY()  { return m_Y;}
-	void setTargetXY(Coord_t X, Coord_t Y) throw() { m_X = X; m_Y = Y;}
+	void setTargetXY(Coord_t X, Coord_t Y)  { m_X = X; m_Y = Y;}
 
 	// get / set success
 //	bool getSkillSuccess()  { return m_bSuccess;}
-//	void setSkillSuccess(bool bSuccess) throw() { m_bSuccess = bSuccess;}
+//	void setSkillSuccess(bool bSuccess)  { m_bSuccess = bSuccess;}
 
 private :
 	
@@ -106,16 +106,16 @@ class GCAttackArmsOK3Factory : public PacketFactory {
 public :
 	
 	// constructor
-	GCAttackArmsOK3Factory() throw() {}
+	GCAttackArmsOK3Factory()  {}
 	
 	// destructor
-	virtual ~GCAttackArmsOK3Factory() throw() {}
+	virtual ~GCAttackArmsOK3Factory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCAttackArmsOK3(); }
+	Packet* createPacket()  { return new GCAttackArmsOK3(); }
 
 	// get packet name
 	string getPacketName()  { return "GCAttackArmsOK3"; }

@@ -18,8 +18,8 @@
 class RegenerationSkill: public SkillHandler 
 {
 public:
-	RegenerationSkill() throw() {}
-	~RegenerationSkill() throw() {}
+	RegenerationSkill()  {}
+	~RegenerationSkill()  {}
 	
 public:
     string getSkillHandlerName()  { return "Regeneration"; }

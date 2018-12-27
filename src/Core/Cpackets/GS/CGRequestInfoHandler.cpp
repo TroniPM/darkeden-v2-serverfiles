@@ -20,7 +20,7 @@
 // 뭔가에 대한 정보를 요청하는 경우이다.
 //////////////////////////////////////////////////////////////////////////////
 void CGRequestInfoHandler::execute (CGRequestInfo* pPacket , Player* pPlayer)
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 

@@ -18,7 +18,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 GCKnocksTargetBackOK1::GCKnocksTargetBackOK1 ()
-     throw ()
+     
 {
 	__BEGIN_TRY
 
@@ -33,7 +33,7 @@ GCKnocksTargetBackOK1::GCKnocksTargetBackOK1 ()
 // destructor
 //////////////////////////////////////////////////////////////////////
 GCKnocksTargetBackOK1::~GCKnocksTargetBackOK1 ()
-    throw ()
+    
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -44,7 +44,7 @@ GCKnocksTargetBackOK1::~GCKnocksTargetBackOK1 ()
 // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
 //////////////////////////////////////////////////////////////////////
 void GCKnocksTargetBackOK1::read ( SocketInputStream & iStream )
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -89,7 +89,7 @@ void GCKnocksTargetBackOK1::write ( SocketOutputStream & oStream )
 //
 //////////////////////////////////////////////////////////////////////
 void GCKnocksTargetBackOK1::execute ( Player * pPlayer ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		

@@ -16,8 +16,8 @@
 class Extreme : public SkillHandler 
 {
 public:
-	Extreme() throw() {}
-	~Extreme() throw() {}
+	Extreme()  {}
+	~Extreme()  {}
 	
 public:
     string getSkillHandlerName()  { return "Extreme"; }

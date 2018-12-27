@@ -25,13 +25,13 @@ Mutex    Key::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Key::Key()
-	throw()
+	
 : m_ItemType(0), m_Target(0)
 {
 }
 
 Key::Key(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 : m_ItemType(itemType), m_Target(0)
 {
 	if (!g_pItemInfoManager->isPossibleItem(getItemClass(), m_ItemType, optionType))
@@ -214,7 +214,7 @@ ItemID_t Key::setNewMotorcycle(Slayer* pSlayer)
 // get debug string
 //--------------------------------------------------------------------------------
 string Key::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -274,7 +274,7 @@ Weight_t Key::getWeight() const
 // get debug string
 //--------------------------------------------------------------------------------
 string KeyInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

@@ -24,7 +24,7 @@ Mutex    Trouser::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Trouser::Trouser()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
@@ -33,7 +33,7 @@ Trouser::Trouser()
 }
 
 Trouser::Trouser(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_ItemType(itemType), m_OptionType(optionType), m_Durability(0)
 {
 	setItemType(itemType);
@@ -179,7 +179,7 @@ void Trouser::save(const string & ownerID, Storage storage, StorageID_t storageI
 // get debug string
 //--------------------------------------------------------------------------------
 string Trouser::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -264,7 +264,7 @@ Protection_t Trouser::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string TrouserInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

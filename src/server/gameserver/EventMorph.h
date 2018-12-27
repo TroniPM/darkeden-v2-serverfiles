@@ -27,7 +27,7 @@ public:
 
 public:
 	Creature* getCreature()  { return m_pTargetCreature; }
-	void setCreature(Creature* pCreature) throw() { m_pTargetCreature = pCreature; }
+	void setCreature(Creature* pCreature)  { m_pTargetCreature = pCreature; }
 
 private:
 	Creature* m_pTargetCreature;

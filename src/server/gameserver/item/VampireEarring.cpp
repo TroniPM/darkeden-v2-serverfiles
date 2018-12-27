@@ -25,7 +25,7 @@ Mutex    VampireEarring::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 VampireEarring::VampireEarring()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
@@ -34,7 +34,7 @@ VampireEarring::VampireEarring()
 }
 
 VampireEarring::VampireEarring(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_ItemType(itemType), m_OptionType(optionType), m_Durability(0)
 {
 	setItemType(itemType);
@@ -178,7 +178,7 @@ void VampireEarring::save(const string & ownerID, Storage storage, StorageID_t s
 // get debug string
 //--------------------------------------------------------------------------------
 string VampireEarring::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -263,7 +263,7 @@ Protection_t VampireEarring::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string VampireEarringInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

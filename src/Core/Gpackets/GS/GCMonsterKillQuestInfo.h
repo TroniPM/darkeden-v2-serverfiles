@@ -29,7 +29,7 @@ public:
 
 	static const int szQuestInfo;
 	
-	GCMonsterKillQuestInfo() throw() { }
+	GCMonsterKillQuestInfo()  { }
 	virtual ~GCMonsterKillQuestInfo() ;
 
 public:
@@ -57,7 +57,7 @@ private:
 class GCMonsterKillQuestInfoFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCMonsterKillQuestInfo(); }
+	Packet* createPacket()  { return new GCMonsterKillQuestInfo(); }
 	string getPacketName()  { return "GCMonsterKillQuestInfo"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_MONSTER_KILL_QUEST_INFO; }
 	PacketSize_t getPacketMaxSize() 

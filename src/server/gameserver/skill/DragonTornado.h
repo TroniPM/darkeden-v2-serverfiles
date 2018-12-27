@@ -16,8 +16,8 @@
 class DragonTornado : public SkillHandler 
 {
 public:
-	DragonTornado() throw() {}
-	~DragonTornado() throw() {}
+	DragonTornado()  {}
+	~DragonTornado()  {}
 	
 public:
     string getSkillHandlerName()  { return "DragonTornado"; }

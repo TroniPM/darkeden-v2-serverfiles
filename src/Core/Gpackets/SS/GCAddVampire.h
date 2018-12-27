@@ -30,8 +30,8 @@
 class GCAddVampire : public Packet 
 {
 public:
-	GCAddVampire() throw() : m_pEffectInfo(NULL), m_pPetInfo(NULL), m_pNicknameInfo(NULL) { m_FromFlag = 0; }
-	GCAddVampire(const PCVampireInfo3 & vampireInfo) throw() : m_VampireInfo(vampireInfo), m_pEffectInfo(NULL), m_pPetInfo(NULL), m_pNicknameInfo(NULL) { m_FromFlag = 0; }
+	GCAddVampire()  : m_pEffectInfo(NULL), m_pPetInfo(NULL), m_pNicknameInfo(NULL) { m_FromFlag = 0; }
+	GCAddVampire(const PCVampireInfo3 & vampireInfo)  : m_VampireInfo(vampireInfo), m_pEffectInfo(NULL), m_pPetInfo(NULL), m_pNicknameInfo(NULL) { m_FromFlag = 0; }
 	virtual ~GCAddVampire() ;
 	
 public:
@@ -62,18 +62,18 @@ public:
 	string toString() ;
 
 public:
-	PCVampireInfo3 & getVampireInfo() throw() { return m_VampireInfo; }
+	PCVampireInfo3 & getVampireInfo()  { return m_VampireInfo; }
 	const PCVampireInfo3 & getVampireInfo()  { return m_VampireInfo; }
-	void setVampireInfo(const PCVampireInfo3 & vampireInfo) throw() { m_VampireInfo = vampireInfo; }
+	void setVampireInfo(const PCVampireInfo3 & vampireInfo)  { m_VampireInfo = vampireInfo; }
 
 	EffectInfo* getEffectInfo()  { return m_pEffectInfo; }
-	void setEffectInfo(EffectInfo* pEffectInfo) throw() { m_pEffectInfo = pEffectInfo; }
+	void setEffectInfo(EffectInfo* pEffectInfo)  { m_pEffectInfo = pEffectInfo; }
 
 	PetInfo* getPetInfo()  { return m_pPetInfo; }
-	void setPetInfo(PetInfo* pPetInfo) throw() { m_pPetInfo = pPetInfo; }
+	void setPetInfo(PetInfo* pPetInfo)  { m_pPetInfo = pPetInfo; }
 
 	NicknameInfo* getNicknameInfo()  { return m_pNicknameInfo; }
-	void setNicknameInfo(NicknameInfo* pNicknameInfo) throw() { m_pNicknameInfo = pNicknameInfo; }
+	void setNicknameInfo(NicknameInfo* pNicknameInfo)  { m_pNicknameInfo = pNicknameInfo; }
 
 	StoreOutlook	getStoreOutlook() const { return m_StoreOutlook; }
 	void		setStoreInfo(StoreInfo* pInfo) { pInfo->makeStoreOutlook(m_StoreOutlook); }
@@ -98,7 +98,7 @@ private:
 class GCAddVampireFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCAddVampire(); }
+	Packet* createPacket()  { return new GCAddVampire(); }
 	string getPacketName()  { return "GCAddVampire"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_VAMPIRE; }
 	PacketSize_t getPacketMaxSize()  { return PCVampireInfo3::getMaxSize() + EffectInfo::getMaxSize() + PetInfo::getMaxSize() + NicknameInfo::getMaxSize() + StoreOutlook::getMaxSize() + szBYTE; }

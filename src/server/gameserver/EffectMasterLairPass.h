@@ -31,7 +31,7 @@ public:
 
 public:
 	ZoneID_t    getZoneID(void) const { return m_ZoneID; }
-	void   setZoneID(ZoneID_t zoneID) throw() { m_ZoneID = zoneID; }
+	void   setZoneID(ZoneID_t zoneID)  { m_ZoneID = zoneID; }
 
 private:
 	ZoneID_t m_ZoneID; 

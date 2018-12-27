@@ -27,10 +27,10 @@ public:
 	string toString() ;
 
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(const ObjectID_t & creatureID) throw() { m_ObjectID = creatureID; }
+	void setObjectID(const ObjectID_t & creatureID)  { m_ObjectID = creatureID; }
 
 	string getMessage()  { return m_Message; }
-	void setMessage(const string & msg) throw() { m_Message = msg; }
+	void setMessage(const string & msg)  { m_Message = msg; }
 
 private:
 	ObjectID_t m_ObjectID; // NPC's object id
@@ -47,7 +47,7 @@ private:
 class GCNPCSayDynamicFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCNPCSayDynamic(); }
+	Packet* createPacket()  { return new GCNPCSayDynamic(); }
 	string getPacketName()  { return "GCNPCSayDynamic"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_NPC_SAY_DYNAMIC; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + szBYTE + 2048 ; }

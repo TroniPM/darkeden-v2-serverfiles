@@ -185,7 +185,7 @@ bool OptionClassInfo::ApplyOption( Ousters* pOusters, int PlusPoint )
 //////////////////////////////////////////////////////////////////////////////
 
 OptionInfo::OptionInfo()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -218,14 +218,14 @@ OptionInfo::OptionInfo()
 }
 
 OptionInfo::~OptionInfo()
-	throw()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void OptionInfo::setReqAbility(const string& req) 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -293,7 +293,7 @@ bool OptionInfo::isUpgradeCrash() const
 }
 
 string OptionInfo::toString() const
-	throw()
+	
 {
 	__BEGIN_TRY
 	
@@ -332,14 +332,14 @@ string OptionInfo::toString() const
 //////////////////////////////////////////////////////////////////////////////
 
 OptionInfoSet::OptionInfoSet()
-	throw()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 OptionInfoSet::~OptionInfoSet()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -372,7 +372,7 @@ void OptionInfoSet::addOptionType(uint level, OptionType_t type)
 
 // 지정된 최소, 최대 레벨에 따라, 그 범위 안의 옵션을 벡터에다 집어넣는다.
 void OptionInfoSet::getPossibleOptionTypes(uint minLevel, uint maxLevel, vector<OptionType_t>& rOptionVector)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -391,7 +391,7 @@ void OptionInfoSet::getPossibleOptionTypes(uint minLevel, uint maxLevel, vector<
 }
 
 string OptionInfoSet::toString(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -417,7 +417,7 @@ string OptionInfoSet::toString(void) const
 //////////////////////////////////////////////////////////////////////////////
 
 OptionInfoManager::OptionInfoManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -431,7 +431,7 @@ OptionInfoManager::OptionInfoManager()
 }
 
 OptionInfoManager::~OptionInfoManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -442,7 +442,7 @@ OptionInfoManager::~OptionInfoManager()
 
 void
 OptionInfoManager::release()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -496,7 +496,7 @@ OptionInfoManager::release()
 }
 
 void OptionInfoManager::init()
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -506,7 +506,7 @@ void OptionInfoManager::init()
 }
 
 void OptionInfoManager::load()
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -848,7 +848,7 @@ string OptionInfoManager::getOptionName(const list<OptionType_t>& optionTypes)
 
 
 vector<OptionType_t> OptionInfoManager::getPossibleOptionVector(Item::ItemClass IClass, uint minLevel, uint maxLevel)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1071,7 +1071,7 @@ int OptionInfoManager::getRareUpgradeRatio( OptionType_t optionType, bool succes
 }
 
 void OptionInfoManager::addPetEnchantOption(PetEnchantOption* pPetEnchantOption)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1083,7 +1083,7 @@ void OptionInfoManager::addPetEnchantOption(PetEnchantOption* pPetEnchantOption)
 
 
 string OptionInfoManager::toString() const
-	throw()
+	
 {
 	__BEGIN_TRY
 

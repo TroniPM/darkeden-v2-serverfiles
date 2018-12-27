@@ -24,13 +24,13 @@ Mutex    LearningItem::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 LearningItem::LearningItem()
-	throw()
+	
 : m_ItemType(0)
 {
 }
 
 LearningItem::LearningItem(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 : m_ItemType(itemType)
 {
 	if (!g_pItemInfoManager->isPossibleItem(getItemClass(), m_ItemType, optionType))
@@ -159,7 +159,7 @@ void LearningItem::save(const string & ownerID, Storage storage, StorageID_t sto
 // get debug string
 //--------------------------------------------------------------------------------
 string LearningItem::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -218,7 +218,7 @@ Weight_t LearningItem::getWeight() const
 // get debug string
 //--------------------------------------------------------------------------------
 string LearningItemInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

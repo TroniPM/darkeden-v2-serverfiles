@@ -16,8 +16,8 @@
 class HeartCatalyst : public SkillHandler 
 {
 public:
-	HeartCatalyst() throw() {}
-	~HeartCatalyst() throw() {}
+	HeartCatalyst()  {}
+	~HeartCatalyst()  {}
 	
 public:
     string getSkillHandlerName()  { return "HeartCatalyst"; }

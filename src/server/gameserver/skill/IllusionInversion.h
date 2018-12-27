@@ -16,8 +16,8 @@
 class IllusionInversion : public SkillHandler 
 {
 public:
-	IllusionInversion() throw() {}
-	~IllusionInversion() throw() {}
+	IllusionInversion()  {}
+	~IllusionInversion()  {}
 	
 public:
     string getSkillHandlerName()  { return "IllusionInversion"; }

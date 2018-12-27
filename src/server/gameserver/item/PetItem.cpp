@@ -33,14 +33,14 @@ Mutex    PetItem::m_Mutex;
 //////////////////////////////////////////////////////////////////////////////
 
 PetItem::PetItem()
-	throw()
+	
 {
 	m_ItemType = 0;
 	m_pPetInfo = NULL;
 }
 
 PetItem::PetItem(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	m_ItemType = itemType;
 	m_pPetInfo = NULL;
@@ -307,7 +307,7 @@ void PetItem::whenPCLost( PlayerCreature* pPC )
 }
 
 string PetItem::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -371,7 +371,7 @@ Weight_t PetItem::getWeight() const
 //////////////////////////////////////////////////////////////////////////////
 
 string PetItemInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "PetItemInfo("

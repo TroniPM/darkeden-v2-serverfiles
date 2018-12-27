@@ -17,7 +17,7 @@ class PlayingWithFire: public SkillHandler
 {
 public:
 	PlayingWithFire() ;
-	~PlayingWithFire() throw() {}
+	~PlayingWithFire()  {}
 	
 public:
     string getSkillHandlerName()  { return "PlayingWithFire"; }

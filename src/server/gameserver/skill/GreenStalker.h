@@ -18,8 +18,8 @@
 class GreenStalker: public SkillHandler 
 {
 public:
-	GreenStalker() throw() {}
-	~GreenStalker() throw() {}
+	GreenStalker()  {}
+	~GreenStalker()  {}
 	
 public:
     string getSkillHandlerName()  { return "GreenStalker"; }

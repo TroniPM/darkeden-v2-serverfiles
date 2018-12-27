@@ -21,13 +21,13 @@ public:
 
 public:
 	SpriteType_t getSpriteType()  { return m_SpriteType; }
-	void setSpriteType(SpriteType_t monsterType) throw() { m_SpriteType = monsterType; }
+	void setSpriteType(SpriteType_t monsterType)  { m_SpriteType = monsterType; }
 
 	WORD getMaxMonsters()  { return m_MaxMonsters; }
-	void setMaxMonsters(WORD n) throw() { m_MaxMonsters = n; }
+	void setMaxMonsters(WORD n)  { m_MaxMonsters = n; }
 
 	WORD getCurrentMonsters()  { return m_CurrentMonsters; }
-	void setCurrentMonsters(WORD n) throw() { m_CurrentMonsters = n; }
+	void setCurrentMonsters(WORD n)  { m_CurrentMonsters = n; }
 
 	void addMonster();
 	void addMonster(WORD Count) ;

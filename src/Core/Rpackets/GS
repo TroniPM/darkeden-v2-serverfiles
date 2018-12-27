@@ -27,13 +27,13 @@ class RCSay : public DatagramPacket {
 public :
 	
     // Datagram 객체에서부터 데이타를 읽어서 패킷을 초기화한다.
-    void read ( Datagram & iDatagram ) throw ( ProtocolException , Error );
+    void read ( Datagram & iDatagram ) ;
 		    
     // Datagram 객체로 패킷의 바이너리 이미지를 보낸다.
     void write ( Datagram & oDatagram ) ;
 
 	// execute packet's handler
-	void execute ( Player * pPlayer ) throw ( ProtocolException , Error );
+	void execute ( Player * pPlayer ) ;
 
 	// get packet id
 	PacketID_t getPacketID ()  { return PACKET_RC_SAY; }
@@ -55,11 +55,11 @@ public :
 
 	// get/set Name
 	string getName ()  { return m_Name; }
-	void setName ( string msg ) throw () { m_Name = msg; }
+	void setName ( string msg )  { m_Name = msg; }
 
 	// get/set Message
 	string getMessage ()  { return m_Message; }
-	void setMessage ( string msg ) throw () { m_Message = msg; }
+	void setMessage ( string msg )  { m_Message = msg; }
 	
 	
 private :
@@ -81,7 +81,7 @@ class RCSayFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet * createPacket () throw () { return new RCSay(); }
+	Packet * createPacket ()  { return new RCSay(); }
 
 		// get packet name
 		string getPacketName ()  { return "RCSay"; }
@@ -108,7 +108,7 @@ class RCSayHandler {
 public :
 
 	// execute packet's handler
-	static void execute ( RCSay * pPacket ) throw ( ProtocolException , Error );
+	static void execute ( RCSay * pPacket ) ;
 
 };
 

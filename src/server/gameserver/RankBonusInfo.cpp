@@ -47,7 +47,7 @@ string RankBonusInfo::toString() const
 //////////////////////////////////////////////////////////////////////////////
 
 RankBonusInfoManager::RankBonusInfoManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -58,7 +58,7 @@ RankBonusInfoManager::RankBonusInfoManager()
 }
 
 RankBonusInfoManager::~RankBonusInfoManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -78,7 +78,7 @@ void RankBonusInfoManager::init()
 }
 
 void RankBonusInfoManager::clear()
-	throw()
+	
 {
 	__BEGIN_TRY
 	
@@ -200,7 +200,7 @@ void RankBonusInfoManager::addRankBonusInfo(RankBonusInfo* pRankBonusInfo)
 }
 
 string RankBonusInfoManager::toString() const
-	throw()
+	
 {
 	__BEGIN_TRY
 

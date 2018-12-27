@@ -16,8 +16,8 @@
 class NymphRecovery : public SkillHandler 
 {
 public:
-	NymphRecovery() throw() {}
-	~NymphRecovery() throw() {}
+	NymphRecovery()  {}
+	~NymphRecovery()  {}
 	
 public:
     string getSkillHandlerName()  { return "NymphRecovery"; }

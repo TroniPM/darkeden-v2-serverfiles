@@ -39,17 +39,17 @@ public:
 	virtual string getObjectTableName()  { return "MotorcycleObject"; }
 
 	virtual ItemType_t getItemType()  { return m_ItemType; }
-	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
+	virtual void setItemType(ItemType_t itemType)  { m_ItemType = itemType; }
 
 	virtual bool hasOptionType()  { return !m_OptionType.empty(); }
 	virtual int getOptionTypeSize()  { return m_OptionType.size(); }
 	virtual int getRandomOptionType()  { if (m_OptionType.empty()) return 0; int pos = rand()%m_OptionType.size(); list<OptionType_t>::const_iterator itr = m_OptionType.begin(); for (int i=0; i<pos; i++) itr++; return *itr; }
 	virtual const list<OptionType_t>& getOptionTypeList()  { return m_OptionType; }
 	virtual OptionType_t getFirstOptionType()  { if (m_OptionType.empty()) return 0; return m_OptionType.front(); }
-	virtual void removeOptionType(OptionType_t OptionType) throw() { list<OptionType_t>::iterator itr = find(m_OptionType.begin(), m_OptionType.end(), OptionType); if (itr!=m_OptionType.end()) m_OptionType.erase(itr); }
-	virtual void changeOptionType(OptionType_t currentOptionType, OptionType_t newOptionType) throw() { list<OptionType_t>::iterator itr = find(m_OptionType.begin(), m_OptionType.end(), currentOptionType); if (itr!=m_OptionType.end()) *itr=newOptionType; }
-	virtual void addOptionType(OptionType_t OptionType) throw() { m_OptionType.push_back(OptionType); }
-	virtual void setOptionType(const list<OptionType_t>& OptionType) throw() { m_OptionType = OptionType; }
+	virtual void removeOptionType(OptionType_t OptionType)  { list<OptionType_t>::iterator itr = find(m_OptionType.begin(), m_OptionType.end(), OptionType); if (itr!=m_OptionType.end()) m_OptionType.erase(itr); }
+	virtual void changeOptionType(OptionType_t currentOptionType, OptionType_t newOptionType)  { list<OptionType_t>::iterator itr = find(m_OptionType.begin(), m_OptionType.end(), currentOptionType); if (itr!=m_OptionType.end()) *itr=newOptionType; }
+	virtual void addOptionType(OptionType_t OptionType)  { m_OptionType.push_back(OptionType); }
+	virtual void setOptionType(const list<OptionType_t>& OptionType)  { m_OptionType = OptionType; }
 
 	virtual VolumeWidth_t getVolumeWidth() ;
 	virtual VolumeHeight_t getVolumeHeight() ;
@@ -59,7 +59,7 @@ public:
 	virtual Durability_t getDurability()  { return m_Durability; }
 	void setDurability(Durability_t durability)  { m_Durability = durability; }
 
-	Inventory* getInventory() throw() { return m_pInventory; }
+	Inventory* getInventory()  { return m_pInventory; }
 
 private:
 	ItemType_t			m_ItemType;			// 아이템 타입
@@ -82,7 +82,7 @@ public:
 	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_MOTORCYCLE; }
 
 	virtual Durability_t getDurability()  { return m_Durability; }
-	virtual void setDurability(Durability_t durability) throw() { m_Durability = durability; }
+	virtual void setDurability(Durability_t durability)  { m_Durability = durability; }
 
 	virtual string toString() ;
 
@@ -117,7 +117,7 @@ public:
 	virtual string getItemClassName()  { return "Motorcycle"; }
 	
 public:
-	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new Motorcycle(ItemType,OptionType); }
+	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType)  { return new Motorcycle(ItemType,OptionType); }
 };
 
 

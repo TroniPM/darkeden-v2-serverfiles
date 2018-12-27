@@ -24,14 +24,14 @@ Mutex    Sword::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Sword::Sword()
-	throw()
+	
 {
 	//m_EnchantLevel = 0;
 	setBonusDamage(0);
 }
 
 Sword::Sword(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_OptionType( optionType )
 {
 
@@ -181,7 +181,7 @@ void Sword::save(const string & ownerID, Storage storage, StorageID_t storageID,
 // get debug string
 //--------------------------------------------------------------------------------
 string Sword::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -270,7 +270,7 @@ Damage_t Sword::getMaxDamage() const
 //--------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------
 int Sword::getCriticalBonus(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -284,7 +284,7 @@ int Sword::getCriticalBonus(void) const
 // get debug string
 //--------------------------------------------------------------------------------
 string SwordInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

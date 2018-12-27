@@ -23,9 +23,9 @@ public:
 	~GCRequestedIP ();
 	
 public:
-    void read ( SocketInputStream & iStream ) throw ( ProtocolException , Error );
+    void read ( SocketInputStream & iStream ) ;
     void write ( SocketOutputStream & oStream ) ;
-	void execute ( Player * pPlayer ) throw ( ProtocolException , Error );
+	void execute ( Player * pPlayer ) ;
     PacketID_t getPacketID ()  { return PACKET_GC_REQUESTED_IP; }
 	string getPacketName ()  { return "GCRequestedIP"; }
 	PacketSize_t getPacketSize ()  { return szBYTE + szuint + m_Name.size() + 4; }
@@ -35,10 +35,10 @@ public:
 	string getName()  { return m_Name;}
 	void setName( const char* pName)  { m_Name = pName;}
 
-	void setIP(IP_t ip) throw() { m_IP = ip; }
+	void setIP(IP_t ip)  { m_IP = ip; }
 	IP_t getIP()  { return m_IP; }
 
-	void setPort(uint port) throw() { m_Port = port; }
+	void setPort(uint port)  { m_Port = port; }
 	uint getPort()  { return m_Port; }
 
 protected:
@@ -54,7 +54,7 @@ protected:
 class GCRequestedIPFactory : public PacketFactory 
 {
 public:
-	Packet * createPacket () throw () { return new GCRequestedIP(); }
+	Packet * createPacket ()  { return new GCRequestedIP(); }
 	string getPacketName ()  { return "GCRequestedIP"; }
 	PacketID_t getPacketID ()  { return Packet::PACKET_GC_REQUESTED_IP; }
 	PacketSize_t getPacketMaxSize ()  { return szBYTE + szuint + 10 + 4;}

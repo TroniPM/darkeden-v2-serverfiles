@@ -62,31 +62,31 @@ public :
 
 	// get / set ObjectID
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 	ObjectID_t getTargetObjectID()  { return m_TargetObjectID; }
-	void setTargetObjectID(ObjectID_t ObjectID) throw() { m_TargetObjectID = ObjectID; }
+	void setTargetObjectID(ObjectID_t ObjectID)  { m_TargetObjectID = ObjectID; }
 
 	// get / set SkillType
 	SkillType_t getSkillType()  { return m_SkillType; }
-	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
+	void setSkillType(SkillType_t SkillType)  { m_SkillType = SkillType; }
 	
 /*
 	// get / set Target X,Y
 	Coord_t getTargetX()  { return m_TargetX; }
 	Coord_t getTargetY()  { return m_TargetY; }
-	void setTargetXY(Coord_t X, Coord_t Y) throw() { m_TargetX = X; m_TargetY = Y; }
+	void setTargetXY(Coord_t X, Coord_t Y)  { m_TargetX = X; m_TargetY = Y; }
 */
 	
 	// get / set Duration
 	Duration_t getDuration()  { return m_Duration; }
-	void setDuration(Duration_t Duration) throw() { m_Duration = Duration; }
+	void setDuration(Duration_t Duration)  { m_Duration = Duration; }
 	
 	// get / set CEffectID 
 //	CEffectID_t getCEffectID()  { return m_CEffectID; }
-//	void setCEffectID(CEffectID_t e) throw() { m_CEffectID = e; }
+//	void setCEffectID(CEffectID_t e)  { m_CEffectID = e; }
 
 	BYTE getGrade()  { return m_Grade; }
-	void setGrade( BYTE grade ) throw() { m_Grade = grade; }
+	void setGrade( BYTE grade )  { m_Grade = grade; }
 
 private :
 	
@@ -120,16 +120,16 @@ class GCSkillToObjectOK5Factory : public PacketFactory {
 public :
 	
 	// constructor
-	GCSkillToObjectOK5Factory() throw() {}
+	GCSkillToObjectOK5Factory()  {}
 	
 	// destructor
-	virtual ~GCSkillToObjectOK5Factory() throw() {}
+	virtual ~GCSkillToObjectOK5Factory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCSkillToObjectOK5(); }
+	Packet* createPacket()  { return new GCSkillToObjectOK5(); }
 
 	// get packet name
 	string getPacketName()  { return "GCSkillToObjectOK5"; }

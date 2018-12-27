@@ -35,7 +35,7 @@
 // 
 ////////////////////////////////////////////////////////////////////////
 SocketImpl::SocketImpl () 
-	 throw ()
+	 
 : m_SocketID(INVALID_SOCKET), m_Host("Unknown"), m_Port(0)
 {
 
@@ -46,7 +46,7 @@ SocketImpl::SocketImpl ()
 //
 //////////////////////////////////////////////////////////////////////
 SocketImpl::SocketImpl ( uint port ) 
-	 throw ()
+	 
 : m_SocketID(INVALID_SOCKET), m_Host("Unknown"), m_Port(port)
 {
 
@@ -57,7 +57,7 @@ SocketImpl::SocketImpl ( uint port )
 //
 //////////////////////////////////////////////////////////////////////
 SocketImpl::SocketImpl ( const string & host , uint port ) 
-	throw ()
+	
 : m_SocketID(INVALID_SOCKET), m_Host(host), m_Port(port)
 {
 
@@ -78,7 +78,7 @@ SocketImpl::SocketImpl ( const string & host , uint port )
 //
 ////////////////////////////////////////////////////////////////////////
 SocketImpl::SocketImpl ( const SocketImpl & impl ) 
-	throw ()
+	
 : m_SocketID(impl.m_SocketID), m_Host(impl.m_Host), m_Port(impl.m_Port)
 {
 
@@ -149,7 +149,7 @@ void SocketImpl::close ()
 // bind address to socket
 //////////////////////////////////////////////////////////////////////
 void SocketImpl::bind ()
-	 throw ( BindException , Error )
+	 
 {
 	__BEGIN_TRY
 
@@ -166,7 +166,7 @@ void SocketImpl::bind ()
 // bind address to socket
 //////////////////////////////////////////////////////////////////////
 void SocketImpl::bind ( uint port )
-	 throw ( BindException , Error )
+	 
 {
 	__BEGIN_TRY
 
@@ -199,7 +199,7 @@ void SocketImpl::listen ( uint backlog )
 // connect to remote host
 //////////////////////////////////////////////////////////////////////
 void SocketImpl::connect ( const string & host , uint port )
-     throw ( ConnectException , Error )
+     
 {
 	__BEGIN_TRY 
 		
@@ -223,7 +223,7 @@ void SocketImpl::connect ( const string & host , uint port )
 //
 //////////////////////////////////////////////////////////////////////
 void SocketImpl::connect ()
-     throw ( ConnectException , Error )
+     
 {
 	__BEGIN_TRY 
 
@@ -538,7 +538,7 @@ void SocketImpl::setSendBufferSize ( uint SendBufferSize )
 //
 //////////////////////////////////////////////////////////////////////
 string SocketImpl::_getHost () const 
-       throw ()
+       
 {
 	return string( inet_ntoa( m_SockAddr.sin_addr ) );
 }
@@ -546,7 +546,7 @@ string SocketImpl::_getHost () const
 
 //////////////////////////////////////////////////////////////////////
 //
-// void SocketImpl::_setHost ( const string & host ) throw ()
+// void SocketImpl::_setHost ( const string & host ) 
 //
 // set host address of this socket
 //
@@ -561,7 +561,7 @@ string SocketImpl::_getHost () const
 //
 //////////////////////////////////////////////////////////////////////
 void SocketImpl::_setHost ( const string & host ) 
-     throw ()
+     
 {
 	m_SockAddr.sin_addr.s_addr = inet_addr( host.c_str() );
 }
@@ -584,7 +584,7 @@ void SocketImpl::_setHost ( const string & host )
 //
 //////////////////////////////////////////////////////////////////////
 uint SocketImpl::_getPort () const 
-     throw ()
+     
 {
 	return ntohs( m_SockAddr.sin_port );
 }
@@ -592,7 +592,7 @@ uint SocketImpl::_getPort () const
 
 //////////////////////////////////////////////////////////////////////
 //
-// void SocketImpl::_setPort ( uint port ) throw ()
+// void SocketImpl::_setPort ( uint port ) 
 //
 // set host address of this socket
 //
@@ -607,7 +607,7 @@ uint SocketImpl::_getPort () const
 //
 //////////////////////////////////////////////////////////////////////
 void SocketImpl::_setPort ( uint port ) 
-	 throw ()
+	 
 {
 	m_SockAddr.sin_port = htons(port);
 }

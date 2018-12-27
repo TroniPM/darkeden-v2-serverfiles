@@ -26,13 +26,13 @@ Mutex    MixingItem::m_Mutex;
 //////////////////////////////////////////////////////////////////////////////
 
 MixingItem::MixingItem()
-	throw()
+	
 {
 	m_ItemType = 0;
 }
 
 MixingItem::MixingItem(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num)
-	throw()
+	
 {
 	m_ItemType = itemType;
 	m_Num = Num;
@@ -149,7 +149,7 @@ void MixingItem::save(const string & ownerID, Storage storage, StorageID_t stora
 }
 
 string MixingItem::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -197,7 +197,7 @@ Weight_t MixingItem::getWeight() const
 //////////////////////////////////////////////////////////////////////////////
 
 string MixingItemInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "MixingItemInfo("

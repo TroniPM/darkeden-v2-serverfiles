@@ -30,14 +30,14 @@ public:
 	string toString() ;
 	
 public:
-	ObjectID_t getObjectID() throw() { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 	Coord_t getZoneX()  { return m_ZoneX; }
-	void setZoneX(Coord_t ZoneX) throw() { m_ZoneX = ZoneX; }
+	void setZoneX(Coord_t ZoneX)  { m_ZoneX = ZoneX; }
 
 	Coord_t getZoneY()  { return m_ZoneY; }
-	void setZoneY(Coord_t ZoneY) throw() { m_ZoneY = ZoneY; }
+	void setZoneY(Coord_t ZoneY)  { m_ZoneY = ZoneY; }
 
 private:
 	ObjectID_t m_ObjectID;
@@ -53,7 +53,7 @@ private:
 class CGAddZoneToMouseFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGAddZoneToMouse(); }
+	Packet* createPacket()  { return new CGAddZoneToMouse(); }
 	string getPacketName()  { return "CGAddZoneToMouse"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_ADD_ZONE_TO_MOUSE; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + szCoord + szCoord; }

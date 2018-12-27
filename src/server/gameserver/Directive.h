@@ -191,20 +191,20 @@ public:
 	~Directive() ;
 
 public:
-	list<int>& getConditions(void) throw() { return m_Conditions; }
+	list<int>& getConditions(void)  { return m_Conditions; }
 	void addCondition(int condition) ;
 
 	int getAction(void)  { return m_Action; }
-	void setAction(int action) throw() { m_Action = action; }
+	void setAction(int action)  { m_Action = action; }
 
 	int getParameter(void)  { return m_Parameter; }
-	void setParameter(int parameter) throw() { m_Parameter = parameter; }
+	void setParameter(int parameter)  { m_Parameter = parameter; }
 
 	int getRatio(void)  { return m_Ratio; }
-	void setRatio(int ratio) throw() { m_Ratio = ratio; }
+	void setRatio(int ratio)  { m_Ratio = ratio; }
 
 	int getWeight(void)  { return m_Weight; }
-	void setWeight(int weight) throw() { m_Weight = weight; }
+	void setWeight(int weight)  { m_Weight = weight; }
 
 	string toString(void) ;
 
@@ -250,7 +250,7 @@ public:
 	void clear() ;
 
 	string getName(void)  { return m_Name; }
-	void setName(const string& name) throw() { m_Name = name; }
+	void setName(const string& name)  { m_Name = name; }
 
 	bool hasCondition( int condition ) const;
 

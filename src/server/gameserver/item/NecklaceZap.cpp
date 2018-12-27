@@ -25,14 +25,14 @@ Mutex    NecklaceZap::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 NecklaceZap::NecklaceZap()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
 }
 
 NecklaceZap::NecklaceZap(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	setItemType(itemType);
 	setOptionType(optionType);
@@ -170,7 +170,7 @@ void NecklaceZap::save(const string & ownerID, Storage storage, StorageID_t stor
 // get debug string
 //--------------------------------------------------------------------------------
 string NecklaceZap::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -253,7 +253,7 @@ Protection_t NecklaceZap::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string NecklaceZapInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

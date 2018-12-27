@@ -24,7 +24,7 @@ class GCUseBonusPointFail : public Packet {
 public :
 
 	// constructor
-	GCUseBonusPointFail() throw() {}
+	GCUseBonusPointFail()  {}
 	
 
 public :
@@ -73,7 +73,7 @@ class  GCUseBonusPointFailFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCUseBonusPointFail(); }
+	Packet* createPacket()  { return new GCUseBonusPointFail(); }
 
 	// get packet name
 	string getPacketName()  { return "GCUseBonusPointFail"; }

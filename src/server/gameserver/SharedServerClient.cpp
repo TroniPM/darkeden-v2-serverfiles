@@ -193,7 +193,7 @@ void SharedServerClient::processOutput ()
 //
 //////////////////////////////////////////////////////////////////////
 void SharedServerClient::sendPacket (Packet* pPacket) 
-	 throw (ProtocolException , Error)
+	 
 {	
 	__BEGIN_TRY
 	

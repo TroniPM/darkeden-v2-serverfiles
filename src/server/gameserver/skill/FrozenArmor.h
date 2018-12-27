@@ -16,8 +16,8 @@
 class FrozenArmor : public SkillHandler 
 {
 public:
-	FrozenArmor() throw() {}
-	~FrozenArmor() throw() {}
+	FrozenArmor()  {}
+	~FrozenArmor()  {}
 	
 public:
     string getSkillHandlerName()  { return "FrozenArmor"; }

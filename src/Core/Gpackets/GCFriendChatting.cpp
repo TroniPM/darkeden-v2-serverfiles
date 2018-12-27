@@ -21,7 +21,7 @@ GCFriendChatting::GCFriendChatting()
 	m_IsOnLine = 0;
 }
 void GCFriendChatting::read ( SocketInputStream & iStream ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -50,7 +50,7 @@ void GCFriendChatting::read ( SocketInputStream & iStream )
 // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
 //////////////////////////////////////////////////////////////////////
 void GCFriendChatting::write ( SocketOutputStream & oStream ) const 
-     throw ( ProtocolException , Error )
+     
 {
 	__BEGIN_TRY
 		
@@ -79,7 +79,7 @@ void GCFriendChatting::write ( SocketOutputStream & oStream ) const
 // execute packet's handler
 //////////////////////////////////////////////////////////////////////
 void GCFriendChatting::execute ( Player * pPlayer ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		 
@@ -93,7 +93,7 @@ void GCFriendChatting::execute ( Player * pPlayer )
 // get packet's debug string
 //////////////////////////////////////////////////////////////////////
 string GCFriendChatting::toString () const
-       throw ()
+       
 {
 	__BEGIN_TRY
 		

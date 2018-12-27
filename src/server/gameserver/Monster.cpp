@@ -159,7 +159,7 @@ bool Monster::isRealEnemy(Creature* pEnemy)
 // constructor
 //////////////////////////////////////////////////////////////////////////////
 Monster::Monster (MonsterType_t monsterType)
-	throw () : m_MonsterType(monsterType)
+	 : m_MonsterType(monsterType)
 {
 	__BEGIN_TRY
 
@@ -483,7 +483,7 @@ Monster::~Monster()
 }
 
 SpriteType_t Monster::getSpriteType () const 
-	throw () 
+	 
 { 
 	__BEGIN_TRY
 
@@ -493,7 +493,7 @@ SpriteType_t Monster::getSpriteType () const
 }
 
 Level_t Monster::getLevel () const 
-	throw () 
+	 
 { 
 	__BEGIN_TRY
 
@@ -503,7 +503,7 @@ Level_t Monster::getLevel () const
 }
 
 uint Monster::getBodySize () const 
-	throw () 
+	 
 { 
 	__BEGIN_TRY
 
@@ -513,7 +513,7 @@ uint Monster::getBodySize () const
 }
 
 Color_t Monster::getMainColor () const 
-	throw () 
+	 
 { 
 	__BEGIN_TRY
 
@@ -523,7 +523,7 @@ Color_t Monster::getMainColor () const
 }
 
 Color_t Monster::getSubColor () const 
-	throw () 
+	 
 { 
 	__BEGIN_TRY
 
@@ -533,7 +533,7 @@ Color_t Monster::getSubColor () const
 }
 
 MAlignment Monster::getAlignment () const 
-	throw () 
+	 
 { 
 	__BEGIN_TRY
 
@@ -1618,7 +1618,7 @@ ObjectID_t Monster::getEnemy (EnemyPriority enemyPriority) const
 // 210 - maxAttr : ENEMY_EIGHTH
 //////////////////////////////////////////////////////////////////////////////
 uint Monster::getMaxEnemies () const
-	throw ()
+	
 {
 	return (m_INT < 210) ? (m_INT / 30 + 1) : 8 ;
 }
@@ -1627,7 +1627,7 @@ uint Monster::getMaxEnemies () const
 // get debug string
 //////////////////////////////////////////////////////////////////////////////
 string Monster::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -1672,7 +1672,7 @@ string Monster::toString () const
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void Monster::setDamaged(bool value)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1706,7 +1706,7 @@ void Monster::addPrecedence(Creature* pCreature, int damage)
 	m_PrecedenceTable.addPrecedence(pCreature, damage);
 }
 */
-void Monster::clearEnemyLimitTime() throw() 
+void Monster::clearEnemyLimitTime()  
 { 
 	getCurrentTime(m_EnemyLimitTime); 
 	

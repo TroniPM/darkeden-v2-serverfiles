@@ -16,8 +16,8 @@
 class DetectInvisibility: public SkillHandler 
 {
 public:
-	DetectInvisibility() throw() {}
-	~DetectInvisibility() throw() {}
+	DetectInvisibility()  {}
+	~DetectInvisibility()  {}
 	
 public:
     string getSkillHandlerName()  { return "DetectInvisibility"; }

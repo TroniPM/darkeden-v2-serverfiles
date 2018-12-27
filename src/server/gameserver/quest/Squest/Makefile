@@ -154,7 +154,7 @@ MonsterKillQuest.o: MonsterKillQuest.cpp ../../MonsterInfo.h \
  ../../../../Core/Packet.h ../../../../Core/SocketInputStream.h \
  ../../../../Core/Socket.h ../../../../Core/SocketImpl.h \
  ../../../../Core/SocketAPI.h ../../../../Core/SocketOutputStream.h \
- ../../VisionInfo.h /usr/include/STL/bitset ../../MonsterSummonInfo.h \
+ ../../VisionInfo.h /usr/include/c++/7/bitset ../../MonsterSummonInfo.h \
  ../../MonsterInfoTypes.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../../Treasure.h ../../Item.h \
@@ -225,7 +225,7 @@ QuestFactoryManager.o: QuestFactoryManager.cpp QuestFactoryManager.h \
  ../../../../Core/SocketInputStream.h ../../../../Core/Socket.h \
  ../../../../Core/SocketImpl.h ../../../../Core/SocketAPI.h \
  ../../../../Core/SocketOutputStream.h ../../VisionInfo.h \
- /usr/include/STL/bitset QuestPrice.h QuestUtil.h MonsterSelector.h \
+ /usr/include/c++/7/bitset QuestPrice.h QuestUtil.h MonsterSelector.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h
 Quest.o: Quest.cpp Quest.h ../../../../Core/Types.h \
@@ -479,7 +479,7 @@ QuestPriceReward.o: QuestPriceReward.cpp QuestPriceReward.h \
  ../../../../Core/Packet.h ../../../../Core/SocketInputStream.h \
  ../../../../Core/Socket.h ../../../../Core/SocketImpl.h \
  ../../../../Core/SocketAPI.h ../../../../Core/SocketOutputStream.h \
- ../../VisionInfo.h /usr/include/STL/bitset
+ ../../VisionInfo.h /usr/include/c++/7/bitset
 QuestPricePenalty.o: QuestPricePenalty.cpp QuestPricePenalty.h \
  QuestPrice.h ../../../../Core/Types.h \
  ../../../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -535,7 +535,7 @@ QuestPricePenalty.o: QuestPricePenalty.cpp QuestPricePenalty.h \
  ../../../../Core/Packet.h ../../../../Core/SocketInputStream.h \
  ../../../../Core/Socket.h ../../../../Core/SocketImpl.h \
  ../../../../Core/SocketAPI.h ../../../../Core/SocketOutputStream.h \
- ../../VisionInfo.h /usr/include/STL/bitset
+ ../../VisionInfo.h /usr/include/c++/7/bitset
 SimpleQuest.o: SimpleQuest.cpp SimpleQuest.h ../../../../Core/Types.h \
  ../../../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
   /usr/include/c++/7/streambuf \
@@ -591,7 +591,7 @@ SimpleQuest.o: SimpleQuest.cpp SimpleQuest.h ../../../../Core/Types.h \
  ../../../../Core/SocketInputStream.h ../../../../Core/Socket.h \
  ../../../../Core/SocketImpl.h ../../../../Core/SocketAPI.h \
  ../../../../Core/SocketOutputStream.h ../../VisionInfo.h \
- /usr/include/STL/bitset QuestPrice.h QuestPriceReward.h \
+ /usr/include/c++/7/bitset QuestPrice.h QuestPriceReward.h \
  QuestPricePenalty.h ../../../database/DB.h \
  ../../../database/DatabaseManager.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
@@ -666,7 +666,7 @@ SimpleQuestLoader.o: SimpleQuestLoader.cpp SimpleQuestLoader.h \
  ../../../../Core/SocketInputStream.h ../../../../Core/Socket.h \
  ../../../../Core/SocketImpl.h ../../../../Core/SocketAPI.h \
  ../../../../Core/SocketOutputStream.h ../../VisionInfo.h \
- /usr/include/STL/bitset ../../PlayerCreature.h ../../ObjectRegistry.h \
+ /usr/include/c++/7/bitset ../../PlayerCreature.h ../../ObjectRegistry.h \
  ../../InventorySlot.h ../../Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  ../../Garbage.h ../../RankBonus.h ../../TimeLimitItemManager.h \

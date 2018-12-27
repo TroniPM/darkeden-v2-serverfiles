@@ -583,7 +583,7 @@
 //
 //////////////////////////////////////////////////////////////////////
 PacketFactoryManager::PacketFactoryManager () 
-	throw ()
+	
 : m_Factories(NULL) , m_Size(Packet::PACKET_MAX)
 {
 	__BEGIN_TRY
@@ -607,7 +607,7 @@ PacketFactoryManager::PacketFactoryManager ()
 //
 //////////////////////////////////////////////////////////////////////
 PacketFactoryManager::~PacketFactoryManager () 
-	throw ()
+	
 {
 	__BEGIN_TRY
 		
@@ -1341,7 +1341,7 @@ string PacketFactoryManager::getPacketName (PacketID_t packetID)
 // get debug string
 //////////////////////////////////////////////////////////////////////
 string PacketFactoryManager::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 

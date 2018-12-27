@@ -137,7 +137,7 @@ void CGUseMessageItemFromInventoryHandler::execute(CGUseMessageItemFromInventory
 
 
 void CGUseMessageItemFromInventoryHandler::executeEventTree(CGUseMessageItemFromInventory* pPacket, Player* pPlayer)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -263,7 +263,7 @@ void CGUseMessageItemFromInventoryHandler::executeEventTree(CGUseMessageItemFrom
     __END_DEBUG_EX __END_CATCH
 }
 void CGUseMessageItemFromInventoryHandler::executeEventFromMessage(CGUseMessageItemFromInventory* pPacket, Player* pPlayer)
-throw(ProtocolException, Error)
+
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 

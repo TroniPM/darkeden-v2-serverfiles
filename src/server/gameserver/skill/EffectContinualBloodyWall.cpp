@@ -109,7 +109,7 @@ void EffectContinualBloodyWall::unaffect()
 // get debug string
 //----------------------------------------------------------------------
 string EffectContinualBloodyWall::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 

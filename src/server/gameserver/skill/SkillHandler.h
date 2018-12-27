@@ -104,8 +104,8 @@ class SkillHandler
 {
 ///// constructor & destructor /////
 public:
-	SkillHandler() throw() {}
-	virtual ~SkillHandler() throw() {}
+	SkillHandler()  {}
+	virtual ~SkillHandler()  {}
 
 
 ///// method header for overriding /////

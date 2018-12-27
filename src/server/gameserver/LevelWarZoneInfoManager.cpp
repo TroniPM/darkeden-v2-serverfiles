@@ -14,7 +14,7 @@ LevelWarZoneInfo::~LevelWarZoneInfo()
 }
 
 void LevelWarZoneInfo::setZoneIDList( const string& zoneIDs )	
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -45,7 +45,7 @@ bool LevelWarZoneInfo::isBonusZone(ZoneID_t targetZoneID) const
 }
 
 bool LevelWarZoneInfo::isCreatureThisLevel(Creature* pCreature) const 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -73,7 +73,7 @@ bool LevelWarZoneInfo::isCreatureThisLevel(Creature* pCreature) const
 }
 
 bool LevelWarZoneInfo::isZoneThisLevel(ZoneID_t zoneID) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -92,7 +92,7 @@ bool LevelWarZoneInfo::isZoneThisLevel(ZoneID_t zoneID) const
 }
 
 string LevelWarZoneInfo::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -391,7 +391,7 @@ void LevelWarZoneInfoManager::setLevelWarZoneID( ZoneID_t zoneID, ZoneID_t level
 }
 
 string LevelWarZoneInfoManager::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

@@ -104,7 +104,7 @@ void ActionWarpInZone::execute (Creature * pCreature1 , Creature * pCreature2)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionWarpInZone::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 

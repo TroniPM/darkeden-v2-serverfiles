@@ -80,57 +80,57 @@ public:
 
 	// get/set name
 	string getName()  { return m_Name; }
-	void setName(string name) throw() { m_Name = name; }
+	void setName(string name)  { m_Name = name; }
 
 	// get/set slot
 	Slot getSlot()  { return m_Slot; }
-	void setSlot(Slot slot) throw() { m_Slot = slot; }
+	void setSlot(Slot slot)  { m_Slot = slot; }
 
 	// get/set sex
     Sex getSex()  { return m_BitSet.test(SLAYER_BIT_SEX)?MALE:FEMALE; }
-    void setSex(Sex sex) throw() { m_BitSet.set(SLAYER_BIT_SEX,(sex==MALE?true:false)); }
+    void setSex(Sex sex)  { m_BitSet.set(SLAYER_BIT_SEX,(sex==MALE?true:false)); }
 
 	// get/set hair style
 	HairStyle getHairStyle()  { return HairStyle((m_BitSet.to_ulong() >> 1) & 3); }
-	void setHairStyle(HairStyle hairStyle) throw() { m_BitSet |= bitset<SLAYER_BIT_MAX>(hairStyle << 1); }
+	void setHairStyle(HairStyle hairStyle)  { m_BitSet |= bitset<SLAYER_BIT_MAX>(hairStyle << 1); }
 
 	// get/set race. by sigi. 2002.10.31
 	//bool isSlayer()  { return ((m_BitSet.to_ulong() >> 3) & 1)==0; }
-	//void setSlayer(bool bSlayer=true) throw() { m_BitSet |= bitset<SLAYER_BIT_MAX>((int)(bSlayer==false) << 3); }
+	//void setSlayer(bool bSlayer=true)  { m_BitSet |= bitset<SLAYER_BIT_MAX>((int)(bSlayer==false) << 3); }
 
 	// get/set hair color
 	Color_t getHairColor()  { return m_Colors[ SLAYER_COLOR_HAIR ]; }
-	void setHairColor(Color_t hairColor) throw() { m_Colors[ SLAYER_COLOR_HAIR ] = hairColor; }
+	void setHairColor(Color_t hairColor)  { m_Colors[ SLAYER_COLOR_HAIR ] = hairColor; }
 
 	// get/set skin color
 	Color_t getSkinColor()  { return m_Colors[ SLAYER_COLOR_SKIN ]; }
-	void setSkinColor(Color_t skinColor) throw() { m_Colors[ SLAYER_COLOR_SKIN ] = skinColor; }
+	void setSkinColor(Color_t skinColor)  { m_Colors[ SLAYER_COLOR_SKIN ] = skinColor; }
 
 	// get/set shirt color
 	Color_t getShirtColor(ColorType colorType = MAIN_COLOR)  { return m_Colors[ SLAYER_COLOR_SHIRT +(uint)colorType ]; }
-	void setShirtColor(Color_t shirtColor, ColorType colorType = MAIN_COLOR) throw() { m_Colors[ SLAYER_COLOR_SHIRT +(uint)colorType ] = shirtColor; }
+	void setShirtColor(Color_t shirtColor, ColorType colorType = MAIN_COLOR)  { m_Colors[ SLAYER_COLOR_SHIRT +(uint)colorType ] = shirtColor; }
 
 	// get/set jeans color
 	Color_t getJeansColor(ColorType colorType = MAIN_COLOR)  { return m_Colors[ SLAYER_COLOR_JEANS +(uint)colorType ]; }
-	void setJeansColor(Color_t jeansColor, ColorType colorType = MAIN_COLOR) throw() { m_Colors[ SLAYER_COLOR_JEANS +(uint)colorType ] = jeansColor; }
+	void setJeansColor(Color_t jeansColor, ColorType colorType = MAIN_COLOR)  { m_Colors[ SLAYER_COLOR_JEANS +(uint)colorType ] = jeansColor; }
 
 	// get/set STR
 	Attr_t getSTR()  { return m_STR; }
-	void setSTR(Attr_t str) throw() { m_STR = str; }
+	void setSTR(Attr_t str)  { m_STR = str; }
 	// get/set DEX
 	Attr_t getDEX()  { return m_DEX; }
-	void setDEX(Attr_t dex) throw() { m_DEX = dex; }
+	void setDEX(Attr_t dex)  { m_DEX = dex; }
 	// get/set INT
 	Attr_t getINT()  { return m_INT; }
-	void setINT(Attr_t inte) throw() { m_INT = inte; }
+	void setINT(Attr_t inte)  { m_INT = inte; }
 
 	// get/set Race
 	Race_t getRace()  { return m_Race; }
-	void setRace( Race_t race ) throw() { m_Race = race; }
+	void setRace( Race_t race )  { m_Race = race; }
 
 	// get/set Domain
 	Race_t getDomainType()  { return m_domaintype; }
-	void setDomainType( Race_t domaintype ) throw() { m_domaintype = domaintype; }
+	void setDomainType( Race_t domaintype )  { m_domaintype = domaintype; }
 
 
 private :
@@ -171,7 +171,7 @@ class CLCreatePCFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CLCreatePC(); }
+	Packet* createPacket()  { return new CLCreatePC(); }
 
 	// get packet name
 	string getPacketName()  { return "CLCreatePC"; }

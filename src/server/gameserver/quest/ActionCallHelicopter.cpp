@@ -62,7 +62,7 @@ void ActionCallHelicopter::execute (Creature * pCreature1, Creature * pCreature2
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionCallHelicopter::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 

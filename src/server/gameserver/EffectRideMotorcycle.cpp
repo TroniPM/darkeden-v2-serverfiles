@@ -74,7 +74,7 @@ void EffectRideMotorcycle::unaffect ()
 // get debug string
 //----------------------------------------------------------------------
 string EffectRideMotorcycle::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 

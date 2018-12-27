@@ -35,7 +35,7 @@ public:
 	void setVampire( bool bVampire = true ) { m_bVampire = bVampire; }
 	bool isVampire() const { return m_bVampire; }
 
-	void setUserObjectID(ObjectID_t oid) throw() { m_UserObjectID = oid; }
+	void setUserObjectID(ObjectID_t oid)  { m_UserObjectID = oid; }
 	ObjectID_t getUserObjectID()  { return m_UserObjectID; }
 
 	bool affectCreature(Creature* pCreature, bool bAffectByMove); 

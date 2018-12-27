@@ -31,7 +31,7 @@ public:
     void write (SocketOutputStream & oStream) ;
 
 	PacketSize_t getSize ()  { return szuint + szBYTE + szItemType * m_SignList.size(); }
-	static uint getMaxSize () throw () { return szuint + szBYTE + szItemType * BLOOD_BIBLE_SIGN_SLOT_NUM; }
+	static uint getMaxSize ()  { return szuint + szBYTE + szItemType * BLOOD_BIBLE_SIGN_SLOT_NUM; }
 
 public:
 	uint	getOpenNum() const { return m_OpenNum; }

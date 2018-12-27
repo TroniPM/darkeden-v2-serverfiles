@@ -31,8 +31,8 @@ public:
 	string toString() ;
 
 public:
-	ObjectID_t getObjectID() throw() { return m_ObjectID; }
-	void setObjectID(ObjectID_t id) throw() { m_ObjectID = id; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
+	void setObjectID(ObjectID_t id)  { m_ObjectID = id; }
 
 private:
 	ObjectID_t m_ObjectID; // 플레이어 크리쳐의 object id
@@ -51,7 +51,7 @@ private:
 class CGStashListFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGStashList(); }
+	Packet* createPacket()  { return new CGStashList(); }
 	string getPacketName()  { return "CGStashList"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_STASH_LIST; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID; }

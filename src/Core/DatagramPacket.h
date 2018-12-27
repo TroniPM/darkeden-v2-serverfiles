@@ -31,7 +31,7 @@ class DatagramPacket : public Packet {
 public :
 	
 	// destructor
-	virtual ~DatagramPacket () throw () {}
+	virtual ~DatagramPacket ()  {}
 
 	// 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
 	// 데이터그램 패킷이 TCP 소켓으로 전송되어 왔다면 프로토콜 에러로 간주한다.
@@ -70,11 +70,11 @@ public :
 
 	// get/set host
 	string getHost ()  { return m_Host; }
-	void setHost (const string& host) throw () { m_Host = host; }
+	void setHost (const string& host)  { m_Host = host; }
 
 	// get/set port
 	uint getPort ()  { return m_Port; }
-	void setPort (uint port) throw () { m_Port = port; }
+	void setPort (uint port)  { m_Port = port; }
 	
 
 protected :

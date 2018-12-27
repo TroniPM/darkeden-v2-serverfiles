@@ -16,8 +16,8 @@
 class PoisonMesh: public SkillHandler 
 {
 public:
-	PoisonMesh() throw() {}
-	~PoisonMesh() throw() {}
+	PoisonMesh()  {}
+	~PoisonMesh()  {}
 	
 public:
     string getSkillHandlerName()  { return "PoisonMesh"; }

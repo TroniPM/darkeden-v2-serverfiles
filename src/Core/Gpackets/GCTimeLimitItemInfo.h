@@ -62,7 +62,7 @@ private :
 class GCTimeLimitItemInfoFactory : public PacketFactory {
 
 public :
-	Packet* createPacket() throw() { return new GCTimeLimitItemInfo(); }
+	Packet* createPacket()  { return new GCTimeLimitItemInfo(); }
 	string getPacketName()  { return "GCTimeLimitItemInfo"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_TIME_LIMIT_ITEM_INFO; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE + MAX_TIME_LIMIT_ITEM_INFO * ( szObjectID + szDWORD ); }

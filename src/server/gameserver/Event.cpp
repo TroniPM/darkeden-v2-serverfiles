@@ -31,14 +31,14 @@ Event::Event(GamePlayer* pGamePlayer)
 }
 
 Event::~Event()
-	throw()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void Event::setDeadline(Turn_t delay)
-	throw()
+	
 {
 	__BEGIN_TRY
 

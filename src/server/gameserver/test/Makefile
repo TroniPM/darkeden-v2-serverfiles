@@ -121,7 +121,7 @@ GameServerTest.o: GameServerTest.cpp GameServerTest.h \
  /usr/local/include/cppunit/extensions/TestSuiteFactory.h \
  /usr/local/include/cppunit/extensions/TestFactory.h \
  /usr/local/include/cppunit/extensions/TestFactoryRegistry.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  /usr/local/include/cppunit/extensions/TestSuiteBuilder.h \
  /usr/local/include/cppunit/TestSuite.h \
@@ -194,7 +194,7 @@ GameServerTester.o: GameServerTester.cpp ../../../Core/Types.h \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- ../../../Core/Properties.h /usr/include/STL/map \
+ ../../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  GameServerTest.h /usr/local/include/cppunit/extensions/HelperMacros.h \
@@ -267,7 +267,7 @@ GameServerSkillTest.o: GameServerSkillTest.cpp GameServerSkillTest.h \
  /usr/local/include/cppunit/extensions/TestSuiteFactory.h \
  /usr/local/include/cppunit/extensions/TestFactory.h \
  /usr/local/include/cppunit/extensions/TestFactoryRegistry.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  /usr/local/include/cppunit/extensions/TestSuiteBuilder.h \
  /usr/local/include/cppunit/TestSuite.h \
@@ -302,7 +302,7 @@ GameServerSkillTest.o: GameServerSkillTest.cpp GameServerSkillTest.h \
  ../../../Core/EffectInfo.h ../../../Core/Packet.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
- ../../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -400,7 +400,7 @@ GameServerExpTest.o: GameServerExpTest.cpp GameServerExpTest.h \
  /usr/local/include/cppunit/extensions/TestSuiteFactory.h \
  /usr/local/include/cppunit/extensions/TestFactory.h \
  /usr/local/include/cppunit/extensions/TestFactoryRegistry.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  /usr/local/include/cppunit/extensions/TestSuiteBuilder.h \
  /usr/local/include/cppunit/TestSuite.h \
@@ -436,7 +436,7 @@ GameServerExpTest.o: GameServerExpTest.cpp GameServerExpTest.h \
  ../Effect.h ../../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../../Core/EffectInfo.h /usr/include/STL/bitset \
+ ../../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -521,7 +521,7 @@ GameServerItemTest.o: GameServerItemTest.cpp GameServerItemTest.h \
  /usr/local/include/cppunit/extensions/TestSuiteFactory.h \
  /usr/local/include/cppunit/extensions/TestFactory.h \
  /usr/local/include/cppunit/extensions/TestFactoryRegistry.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  /usr/local/include/cppunit/extensions/TestSuiteBuilder.h \
  /usr/local/include/cppunit/TestSuite.h \
@@ -556,7 +556,7 @@ GameServerItemTest.o: GameServerItemTest.cpp GameServerItemTest.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../VariableManager.h \
+ /usr/include/c++/7/bitset ../VariableManager.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../ItemFactoryManager.h \
  ../ItemFactory.h ../Vampire.h ../PlayerCreature.h ../Creature.h \
@@ -640,7 +640,7 @@ GameServerWarTest.o: GameServerWarTest.cpp GameServerWarTest.h \
  /usr/local/include/cppunit/extensions/TestSuiteFactory.h \
  /usr/local/include/cppunit/extensions/TestFactory.h \
  /usr/local/include/cppunit/extensions/TestFactoryRegistry.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  /usr/local/include/cppunit/extensions/TestSuiteBuilder.h \
  /usr/local/include/cppunit/TestSuite.h \
@@ -713,7 +713,7 @@ GameServerSpeedCheckTest.o: GameServerSpeedCheckTest.cpp \
  /usr/local/include/cppunit/extensions/TestSuiteFactory.h \
  /usr/local/include/cppunit/extensions/TestFactory.h \
  /usr/local/include/cppunit/extensions/TestFactoryRegistry.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  /usr/local/include/cppunit/extensions/TestSuiteBuilder.h \
  /usr/local/include/cppunit/TestSuite.h \
@@ -759,5 +759,5 @@ GameServerSpeedCheckTest.o: GameServerSpeedCheckTest.cpp \
  ../../chinabilling/CBillingPlayerInfo.h \
  ../../chinabilling/CBillingInfo.h \
  ../../../Core/Gpackets/GCReconnectLogin.h \
- ../../../Core/PacketFactory.h /usr/include/STL/bitset \
+ ../../../Core/PacketFactory.h /usr/include/c++/7/bitset \
  ../gameguard/CSAuth.h ../../../Core/Cpackets/CGVerifyTime.h

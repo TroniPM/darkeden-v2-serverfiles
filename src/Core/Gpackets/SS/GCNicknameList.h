@@ -52,11 +52,11 @@ private :
 class GCNicknameListFactory : public PacketFactory 
 {
 public :
-	GCNicknameListFactory() throw() {}
-	virtual ~GCNicknameListFactory() throw() {}
+	GCNicknameListFactory()  {}
+	virtual ~GCNicknameListFactory()  {}
 	
 public:
-	Packet* createPacket() throw() { return new GCNicknameList(); }
+	Packet* createPacket()  { return new GCNicknameList(); }
 	string getPacketName()  { return "GCNicknameList"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_NICKNAME_LIST; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE + NicknameInfo::getMaxSize() * MAX_NICKNAME_NUM; }

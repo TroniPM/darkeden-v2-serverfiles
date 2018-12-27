@@ -16,8 +16,8 @@
 class SacredStamp : public SkillHandler 
 {
 public:
-	SacredStamp() throw() {}
-	~SacredStamp() throw() {}
+	SacredStamp()  {}
+	~SacredStamp()  {}
 	
 public:
     string getSkillHandlerName()  { return "SacredStamp"; }

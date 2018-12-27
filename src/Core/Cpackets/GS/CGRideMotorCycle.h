@@ -55,15 +55,15 @@ public:
 
 	// get/set ObjectID
 	ObjectID_t getObjectID()   { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 	// get/set X
 	Coord_t getX()  { return m_X; }
-	void setX(Coord_t X) throw() { m_X = X; }
+	void setX(Coord_t X)  { m_X = X; }
 
 	// get/set Y
 	Coord_t getY()  { return m_Y; }
-	void setY(Coord_t Y) throw() { m_Y = Y; }
+	void setY(Coord_t Y)  { m_Y = Y; }
 	
 	// get packet's debug string
 	string toString() ;
@@ -95,16 +95,16 @@ class CGRideMotorCycleFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGRideMotorCycleFactory() throw() {}
+	CGRideMotorCycleFactory()  {}
 	
 	// destructor
-	virtual ~CGRideMotorCycleFactory() throw() {}
+	virtual ~CGRideMotorCycleFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGRideMotorCycle(); }
+	Packet* createPacket()  { return new CGRideMotorCycle(); }
 
 	// get packet name
 	string getPacketName()  { return "CGRideMotorCycle"; }

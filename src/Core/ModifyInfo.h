@@ -233,7 +233,7 @@ public:
     void read (SocketInputStream & iStream);
     void write (SocketOutputStream & oStream) ;
 	PacketSize_t getPacketSize ()  { return szBYTE*2 + m_ShortCount*(szBYTE+szshort) + m_LongCount*(szBYTE+szlong); }
-	static PacketSize_t getPacketMaxSize() throw() { return szBYTE*2 + 255*(szBYTE+szshort+szBYTE+szlong); }
+	static PacketSize_t getPacketMaxSize()  { return szBYTE*2 + 255*(szBYTE+szshort+szBYTE+szlong); }
 	string toString () ;
 
 public:
@@ -246,7 +246,7 @@ public:
 	void popShortData(SHORTDATA& rData) ;
 	void popLongData(LONGDATA& rData) ;
 
-	void clearList(void) throw() { m_ShortCount = 0; m_LongCount = 0; m_ShortList.clear(); m_LongList.clear(); }
+	void clearList(void)  { m_ShortCount = 0; m_LongCount = 0; m_ShortList.clear(); m_LongList.clear(); }
 
 protected:
 	BYTE            m_ShortCount;

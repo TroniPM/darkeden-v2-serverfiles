@@ -62,7 +62,7 @@ class LCDeletePCOKFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new LCDeletePCOK(); }
+	Packet* createPacket()  { return new LCDeletePCOK(); }
 
 	// get packet name
 	string getPacketName()  { return "LCDeletePCOK"; }

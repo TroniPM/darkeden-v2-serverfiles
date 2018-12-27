@@ -8,7 +8,7 @@
 #include "DB.h"
 
 OustersSkillSlot::OustersSkillSlot()
-	throw()
+	
 {
 	__BEGIN_TRY
 	m_SkillType = 0;
@@ -18,7 +18,7 @@ OustersSkillSlot::OustersSkillSlot()
 }
 
 OustersSkillSlot::OustersSkillSlot(SkillType_t SkillType, ulong Interval, ulong CastingTime)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -30,7 +30,7 @@ OustersSkillSlot::OustersSkillSlot(SkillType_t SkillType, ulong Interval, ulong 
 }
 
 OustersSkillSlot::~OustersSkillSlot()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -117,7 +117,7 @@ void OustersSkillSlot::save()
 }
 
 Turn_t OustersSkillSlot::getRemainTurn( Timeval currentTime ) const
-	throw()
+	
 {
 	Turn_t remainTurn = ( m_runTime.tv_sec - currentTime.tv_sec ) * 10
 					  + ( m_runTime.tv_usec - currentTime.tv_usec ) / 100000;
@@ -126,7 +126,7 @@ Turn_t OustersSkillSlot::getRemainTurn( Timeval currentTime ) const
 }
 
 void OustersSkillSlot::setRunTime()
-	throw()
+	
 {
 	// 현재 시간을 받아온다.
 	getCurrentTime(m_runTime);
@@ -137,7 +137,7 @@ void OustersSkillSlot::setRunTime()
 }
 
 void OustersSkillSlot::setRunTime(Turn_t delay)
-	throw()
+	
 {
 	// 현재 시간을 받아온다.
 	getCurrentTime(m_runTime);

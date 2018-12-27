@@ -90,7 +90,7 @@ void ActionActivateMazeReturn::execute (Creature * pNPC , Creature * pCreature)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionActivateMazeReturn::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

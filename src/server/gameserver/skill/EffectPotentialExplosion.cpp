@@ -96,7 +96,7 @@ void EffectPotentialExplosion::unaffect(Zone* pZone , ZoneCoord_t x , ZoneCoord_
 }
 
 string EffectPotentialExplosion::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

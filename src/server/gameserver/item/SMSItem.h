@@ -82,7 +82,7 @@ public:
 	virtual string getItemClassName()  { return "SMSItem"; }
 	
 public:
-	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new SMSItem(ItemType,OptionType); }
+	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType)  { return new SMSItem(ItemType,OptionType); }
 };
 
 //////////////////////////////////////////////////////////////////////////////

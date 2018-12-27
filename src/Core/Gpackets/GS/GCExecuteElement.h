@@ -25,7 +25,7 @@ public:
 	~GCExecuteElement() ;
 	
 public:
-    void read(SocketInputStream & iStream) throw(ProtocolException, Error) { iStream.read(m_QuestID); iStream.read(m_Condition); iStream.read(m_Index); }
+    void read(SocketInputStream & iStream)  { iStream.read(m_QuestID); iStream.read(m_Condition); iStream.read(m_Index); }
     void write(SocketOutputStream & oStream)  { oStream.write(m_QuestID); oStream.write(m_Condition); oStream.write(m_Index); }
 	void execute(Player* pPlayer) ;
 	PacketID_t getPacketID()  { return PACKET_GC_EXECUTE_ELEMENT; }
@@ -57,11 +57,11 @@ private:
 class GCExecuteElementFactory : public PacketFactory 
 {
 public :
-	GCExecuteElementFactory() throw() {}
-	virtual ~GCExecuteElementFactory() throw() {}
+	GCExecuteElementFactory()  {}
+	virtual ~GCExecuteElementFactory()  {}
 	
 public:
-	Packet* createPacket() throw() { return new GCExecuteElement(); }
+	Packet* createPacket()  { return new GCExecuteElement(); }
 	string getPacketName()  { return "GCExecuteElement"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_EXECUTE_ELEMENT; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE + szWORD; }

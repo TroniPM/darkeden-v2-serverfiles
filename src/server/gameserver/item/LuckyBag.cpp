@@ -26,13 +26,13 @@ Mutex    LuckyBag::m_Mutex;
 //////////////////////////////////////////////////////////////////////////////
 
 LuckyBag::LuckyBag()
-	throw()
+	
 {
 	m_ItemType = 0;
 }
 
 LuckyBag::LuckyBag(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num)
-	throw()
+	
 {
 	m_ItemType = itemType;
 	m_Num      = Num;
@@ -150,7 +150,7 @@ void LuckyBag::save(const string & ownerID, Storage storage, StorageID_t storage
 }
 
 string LuckyBag::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -198,7 +198,7 @@ Weight_t LuckyBag::getWeight() const
 //////////////////////////////////////////////////////////////////////////////
 
 string LuckyBagInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "LuckyBagInfo("

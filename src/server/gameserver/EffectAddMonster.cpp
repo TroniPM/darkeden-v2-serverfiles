@@ -129,7 +129,7 @@ void EffectAddMonster::unaffect (Creature* pCreature)
 // get debug string
 //----------------------------------------------------------------------
 string EffectAddMonster::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 

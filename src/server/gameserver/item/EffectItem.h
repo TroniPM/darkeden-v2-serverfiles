@@ -59,7 +59,7 @@ public:
 	void	setDuration( int Duration ) { m_Duration = Duration; }
 
 	const string& getNotEffectClass()  { return m_Name; }
-	void setNotEffectClass(const string & name) throw() { m_Name = name;}
+	void setNotEffectClass(const string & name)  { m_Name = name;}
 
 private:
 	Effect::EffectClass m_EffectClass;
@@ -92,7 +92,7 @@ public:
 	virtual string getItemClassName()  { return "EffectItem"; }
 	
 public:
-	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new EffectItem(ItemType,OptionType,1); }
+	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType)  { return new EffectItem(ItemType,OptionType,1); }
 };
 
 //////////////////////////////////////////////////////////////////////////////

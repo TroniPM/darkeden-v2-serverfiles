@@ -25,8 +25,8 @@ public:
 	CBillingPacketRequestMinusMinuteBody();
 
 public:
-	void read( SocketInputStream& iStream ) throw ( ProtocolException, Error );
-	void write( SocketOutputStream& oStream ) throw ( ProtocolException, Error );
+	void read( SocketInputStream& iStream ) ;
+	void write( SocketOutputStream& oStream ) ;
 
 	string toString() ;
 };

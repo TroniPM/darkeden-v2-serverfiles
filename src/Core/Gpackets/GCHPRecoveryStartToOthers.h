@@ -61,19 +61,19 @@ public :
 
 	// get / set ObjectID
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 	// get / set Delay
 	BYTE getDelay()  { return m_Delay; }
-	void setDelay(BYTE Delay) throw() { m_Delay = Delay; }
+	void setDelay(BYTE Delay)  { m_Delay = Delay; }
 
 	// get / set Period
 	HP_t getPeriod()  { return m_Period; }
-	void setPeriod(HP_t Period) throw() { m_Period = Period; }
+	void setPeriod(HP_t Period)  { m_Period = Period; }
 
 	// get / set Quantity
 	HP_t getQuantity()  { return m_Quantity; }
-	void setQuantity(HP_t Quantity) throw() { m_Quantity = Quantity; }
+	void setQuantity(HP_t Quantity)  { m_Quantity = Quantity; }
 
 private :
 	
@@ -106,16 +106,16 @@ class GCHPRecoveryStartToOthersFactory : public PacketFactory {
 public :
 	
 	// constructor
-	GCHPRecoveryStartToOthersFactory() throw() {}
+	GCHPRecoveryStartToOthersFactory()  {}
 	
 	// destructor
-	virtual ~GCHPRecoveryStartToOthersFactory() throw() {}
+	virtual ~GCHPRecoveryStartToOthersFactory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCHPRecoveryStartToOthers(); }
+	Packet* createPacket()  { return new GCHPRecoveryStartToOthers(); }
 
 	// get packet name
 	string getPacketName()  { return "GCHPRecoveryStartToOthers"; }

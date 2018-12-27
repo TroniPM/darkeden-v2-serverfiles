@@ -48,7 +48,7 @@ public :
 
 	// get/set Message
 	string getMessage()  { return m_Message; }
-	void setMessage( const string& message ) throw() { m_Message = message; }
+	void setMessage( const string& message )  { m_Message = message; }
 	
 
 private :
@@ -72,7 +72,7 @@ class GCShowMessageBoxFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCShowMessageBox(); }
+	Packet* createPacket()  { return new GCShowMessageBox(); }
 
 	// get packet name
 	string getPacketName()  { return "GCShowMessageBox"; }

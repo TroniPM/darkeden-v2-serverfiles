@@ -16,8 +16,8 @@
 class Lightness: public SkillHandler 
 {
 public:
-	Lightness() throw() {}
-	~Lightness() throw() {}
+	Lightness()  {}
+	~Lightness()  {}
 
 public:
     string getSkillHandlerName()  { return "Lightness"; }

@@ -16,8 +16,8 @@
 class EarthsTeeth : public SkillHandler 
 {
 public:
-	EarthsTeeth() throw() {}
-	~EarthsTeeth() throw() {}
+	EarthsTeeth()  {}
+	~EarthsTeeth()  {}
 	
 public:
     string getSkillHandlerName()  { return "EarthsTeeth"; }

@@ -16,8 +16,8 @@
 class CreateHolyPotion : public SkillHandler 
 {
 public:
-	CreateHolyPotion() throw() {}
-	~CreateHolyPotion() throw() {}
+	CreateHolyPotion()  {}
+	~CreateHolyPotion()  {}
 	
 public:
     string getSkillHandlerName()  { return "CreateHolyPotion"; }

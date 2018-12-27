@@ -48,10 +48,10 @@ public:
 	
 public:
 	ObjectID_t getTargetObjectID()  { return m_TargetObjectID; }
-	void setTargetObjectID(ObjectID_t id) throw() { m_TargetObjectID = id; }
+	void setTargetObjectID(ObjectID_t id)  { m_TargetObjectID = id; }
 
 	BYTE getCode()  { return m_Code; }
-	void setCode(BYTE code) throw() { m_Code = code; } 
+	void setCode(BYTE code)  { m_Code = code; } 
 
 private:
 	ObjectID_t m_TargetObjectID; // 교환을 원하는 상대방의 ObjectID
@@ -70,7 +70,7 @@ private:
 class CGTradeFinishFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGTradeFinish(); }
+	Packet* createPacket()  { return new CGTradeFinish(); }
 	string getPacketName()  { return "CGTradeFinish"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_TRADE_FINISH; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + szBYTE; }

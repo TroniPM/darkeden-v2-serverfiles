@@ -15,8 +15,8 @@
 class FatalSnick: public SkillHandler 
 {
 public:
-	FatalSnick() throw() {}
-	~FatalSnick() throw() {}
+	FatalSnick()  {}
+	~FatalSnick()  {}
 	
 public:
     string getSkillHandlerName()  { return "FatalSnick"; }

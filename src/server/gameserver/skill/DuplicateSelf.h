@@ -17,7 +17,7 @@ class DuplicateSelf: public SkillHandler
 {
 public:
 	DuplicateSelf() ;
-	~DuplicateSelf() throw() {}
+	~DuplicateSelf()  {}
 	
 public:
     string getSkillHandlerName()  { return "DuplicateSelf"; }

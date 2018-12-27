@@ -32,9 +32,9 @@ public:
 
 public:
 	Damage_t getDamage()  { return m_Damage; }
-	void setDamage(Damage_t Damage) throw() { m_Damage = Damage; }
+	void setDamage(Damage_t Damage)  { m_Damage = Damage; }
 
-	void setUserObjectID(ObjectID_t oid) throw() { m_UserObjectID = oid; }
+	void setUserObjectID(ObjectID_t oid)  { m_UserObjectID = oid; }
 	ObjectID_t getUserObjectID()  { return m_UserObjectID; }
 
 private:

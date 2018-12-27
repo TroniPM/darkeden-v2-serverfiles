@@ -16,8 +16,8 @@
 class RageOfBlood : public SkillHandler 
 {
 public:
-	RageOfBlood() throw() {}
-	~RageOfBlood() throw() {}
+	RageOfBlood()  {}
+	~RageOfBlood()  {}
 	
 public:
 	string getSkillHandlerName()  { return "RageOfBlood"; }

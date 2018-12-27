@@ -53,11 +53,11 @@ public:
 
     // get/set GuildID
     GuildID_t getGuildID()  { return m_GuildID; }
-    void setGuildID( GuildID_t GuildID ) throw() { m_GuildID = GuildID; }
+    void setGuildID( GuildID_t GuildID )  { m_GuildID = GuildID; }
 
 	// get/set Quit Method
 	BYTE	getQuitMethod()	 { return m_Method; }
-	void	setQuitMethod( BYTE Method ) throw() { m_Method = Method; }
+	void	setQuitMethod( BYTE Method )  { m_Method = Method; }
 
 
 private :
@@ -83,16 +83,16 @@ class CGQuitUnionFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGQuitUnionFactory() throw() {}
+	CGQuitUnionFactory()  {}
 	
 	// destructor
-	virtual ~CGQuitUnionFactory() throw() {}
+	virtual ~CGQuitUnionFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGQuitUnion(); }
+	Packet* createPacket()  { return new CGQuitUnion(); }
 
 	// get packet name
 	string getPacketName()  { return "CGQuitUnion"; }

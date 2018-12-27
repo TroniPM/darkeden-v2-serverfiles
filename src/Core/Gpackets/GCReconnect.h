@@ -58,19 +58,19 @@ public :
 
 	// get/set creature name
 	string getName()  { return m_Name; }
-	void setName(const string & name) throw() { m_Name = name; }
+	void setName(const string & name)  { m_Name = name; }
 
 	// get/set pc type
 	PCType getPCType()  { return m_PCType; }
-	void setPCType(PCType pcType) throw() { m_PCType = pcType; }
+	void setPCType(PCType pcType)  { m_PCType = pcType; }
 
 	// get/set server ip
 	string getServerIP()  { return m_ServerIP; }
-	void setServerIP(const string & serverIP) throw() { m_ServerIP = serverIP; }
+	void setServerIP(const string & serverIP)  { m_ServerIP = serverIP; }
 
 	// get/set key
 	DWORD getKey()  { return m_Key; }
-	void setKey(DWORD key) throw() { m_Key = key; }
+	void setKey(DWORD key)  { m_Key = key; }
 
 private :
 	
@@ -102,7 +102,7 @@ class GCReconnectFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCReconnect(); }
+	Packet* createPacket()  { return new GCReconnect(); }
 
 	// get packet name
 	string getPacketName()  { return "GCReconnect"; }

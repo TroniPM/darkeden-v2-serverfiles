@@ -58,15 +58,15 @@ public:
 
 	// get / set ObjectID
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 	// get / set Inventory X
 	CoordInven_t getX()  { return m_InvenX; }
-	void setX(CoordInven_t InvenX) throw() { m_InvenX = InvenX; }
+	void setX(CoordInven_t InvenX)  { m_InvenX = InvenX; }
 
 	// get / set Inventory Y
 	CoordInven_t getY()  { return m_InvenY; }
-	void setY(CoordInven_t InvenY) throw() { m_InvenY = InvenY; }
+	void setY(CoordInven_t InvenY)  { m_InvenY = InvenY; }
 
 
 private :
@@ -94,7 +94,7 @@ class CGReloadFromInventoryFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGReloadFromInventory(); }
+	Packet* createPacket()  { return new CGReloadFromInventory(); }
 
 	// get packet name
 	string getPacketName()  { return "CGReloadFromInventory"; }

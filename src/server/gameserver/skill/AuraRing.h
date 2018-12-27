@@ -16,8 +16,8 @@
 class AuraRing : public SkillHandler 
 {
 public:
-	AuraRing() throw() {}
-	~AuraRing() throw() {}
+	AuraRing()  {}
+	~AuraRing()  {}
 	
 public:
     string getSkillHandlerName()  { return "AuraRing"; }

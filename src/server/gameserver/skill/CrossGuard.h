@@ -16,8 +16,8 @@
 class CrossGuard : public SkillHandler 
 {
 public:
-	CrossGuard() throw() {}
-	~CrossGuard() throw() {}
+	CrossGuard()  {}
+	~CrossGuard()  {}
 	
 public:
     string getSkillHandlerName()  { return "CrossGuard"; }

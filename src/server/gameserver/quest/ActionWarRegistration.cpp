@@ -165,7 +165,7 @@ void ActionWarRegistration::execute (Creature * pCreature1 , Creature * pCreatur
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionWarRegistration::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

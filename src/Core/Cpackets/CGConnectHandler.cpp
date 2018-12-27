@@ -96,7 +96,7 @@ bool isAdultByBirthdayDate(const string& birthday);
 // 잘못된 패킷이라면, ban 에 등록하고 접속을 종료한다.
 //////////////////////////////////////////////////////////////////////////////
 void CGConnectHandler::execute (CGConnect* pPacket , Player* pPlayer)
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 	__BEGIN_DEBUG

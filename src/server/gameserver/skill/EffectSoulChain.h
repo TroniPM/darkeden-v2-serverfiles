@@ -42,7 +42,7 @@ public:
 	void setTargetName( const string& targetName )  { m_TargetName = targetName; }
 
 	Zone* getZone()  { return m_pZone; }
-	void setZone( Zone* pZone ) throw() { m_pZone = pZone; }
+	void setZone( Zone* pZone )  { m_pZone = pZone; }
 	
 private:
 

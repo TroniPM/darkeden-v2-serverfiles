@@ -59,7 +59,7 @@ public :
 	
 	// get/set SkillType
 	SkillType_t getSkillType()  { return m_SkillType; }
-	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
+	void setSkillType(SkillType_t SkillType)  { m_SkillType = SkillType; }
 
 private : 
 
@@ -82,16 +82,16 @@ class  GCCastingSkillFactory : public PacketFactory {
 public :
 	
 	// constructor
-	 GCCastingSkillFactory() throw() {}
+	 GCCastingSkillFactory()  {}
 	
 	// destructor
-	virtual ~GCCastingSkillFactory() throw() {}
+	virtual ~GCCastingSkillFactory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCCastingSkill(); }
+	Packet* createPacket()  { return new GCCastingSkill(); }
 
 	// get packet name
 	string getPacketName()  { return "GCCastingSkill"; }

@@ -78,7 +78,7 @@ void ActionSwapAdvancementItem::execute (Creature * pCreature1 , Creature * pCre
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionSwapAdvancementItem::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

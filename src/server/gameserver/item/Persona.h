@@ -51,16 +51,16 @@ public:
 	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_PERSONA; }
 
 	virtual Durability_t getDurability()  { return m_Durability; }
-	virtual void setDurability(Durability_t durability) throw() { m_Durability = durability; }
+	virtual void setDurability(Durability_t durability)  { m_Durability = durability; }
 
 	Defense_t getDefenseBonus()  { return m_DefenseBonus; }
-	void setDefenseBonus(Defense_t acBonus) throw() { m_DefenseBonus = acBonus; }
+	void setDefenseBonus(Defense_t acBonus)  { m_DefenseBonus = acBonus; }
 
 	Protection_t getProtectionBonus()  { return m_ProtectionBonus; }
-	void setProtectionBonus(Protection_t acBonus) throw() { m_ProtectionBonus = acBonus; }
+	void setProtectionBonus(Protection_t acBonus)  { m_ProtectionBonus = acBonus; }
 
 	virtual uint getItemLevel(void)  { return m_ItemLevel; }
-	virtual void setItemLevel(uint level) throw() { m_ItemLevel = level; }
+	virtual void setItemLevel(uint level)  { m_ItemLevel = level; }
 
 	virtual string toString() ;
 
@@ -99,7 +99,7 @@ public:
 	virtual string getItemClassName()  { return "Persona"; }
 	
 public:
-	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new Persona(ItemType,OptionType); }
+	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType)  { return new Persona(ItemType,OptionType); }
 };
 
 //////////////////////////////////////////////////////////////////////////////

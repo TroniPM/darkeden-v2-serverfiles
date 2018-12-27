@@ -17,7 +17,7 @@ class MassacreMenegroth : public SkillHandler
 {
 public:
 	MassacreMenegroth() ;
-	~MassacreMenegroth() throw() {}
+	~MassacreMenegroth()  {}
 	
 public:
     string getSkillHandlerName()  { return "MassacreMenegroth"; }

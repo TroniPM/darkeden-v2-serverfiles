@@ -16,8 +16,8 @@
 class SweepVice : public SkillHandler 
 {
 public:
-	SweepVice(int level) throw() : m_Level(level) {}
-	~SweepVice() throw() {}
+	SweepVice(int level)  : m_Level(level) {}
+	~SweepVice()  {}
 	
 public:
     string getSkillHandlerName()  { return "SweepVice"; }

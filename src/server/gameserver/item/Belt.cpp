@@ -25,7 +25,7 @@ Mutex    Belt::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Belt::Belt()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0), m_pInventory(NULL)
 {
 	setItemType(0);
@@ -67,7 +67,7 @@ Belt::Belt(ItemType_t itemType, const list<OptionType_t>& optionType)
 // destructor
 //--------------------------------------------------------------------------------
 Belt::~Belt()
-	throw()
+	
 {
 	SAFE_DELETE(m_pInventory);
 }
@@ -292,7 +292,7 @@ void Belt::makePCItemInfo(PCItemInfo& result) const
 // get debug string
 //--------------------------------------------------------------------------------
 string Belt::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -353,7 +353,7 @@ Weight_t Belt::getWeight() const
 // get pocket count
 //--------------------------------------------------------------------------------
 PocketNum_t Belt::getPocketCount(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -391,7 +391,7 @@ Protection_t Belt::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string BeltInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

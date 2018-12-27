@@ -16,8 +16,8 @@
 class Hymn : public SkillHandler 
 {
 public:
-	Hymn() throw() {}
-	~Hymn() throw() {}
+	Hymn()  {}
+	~Hymn()  {}
 	
 public:
     string getSkillHandlerName()  { return "Hymn"; }

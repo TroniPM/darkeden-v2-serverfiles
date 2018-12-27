@@ -67,7 +67,7 @@ class GSRequestGuildInfoFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new GSRequestGuildInfo(); }
+	Packet* createPacket()  { return new GSRequestGuildInfo(); }
 
 	// get packet name
 	string getPacketName()  { return "GSRequestGuildInfo"; }

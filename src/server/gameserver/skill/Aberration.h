@@ -16,8 +16,8 @@
 class Aberration : public SkillHandler 
 {
 public:
-	Aberration() throw() {}
-	~Aberration() throw() {}
+	Aberration()  {}
+	~Aberration()  {}
 	
 public:
     string getSkillHandlerName()  { return "Aberration"; }

@@ -53,7 +53,7 @@ private:
 class CGDepositPetFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGDepositPet(); }
+	Packet* createPacket()  { return new CGDepositPet(); }
 	string getPacketName()  { return "CGDepositPet"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_DEPOSIT_PET; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + szBYTE; }

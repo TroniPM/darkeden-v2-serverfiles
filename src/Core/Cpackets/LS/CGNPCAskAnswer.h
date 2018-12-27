@@ -48,14 +48,14 @@ public:
 public:
 
 	// get / set ObjectID
-	ObjectID_t getObjectID() throw() { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 	
-	ScriptID_t getScriptID() throw() { return m_ScriptID;}
-	void setScriptID(ScriptID_t scriptID) throw() { m_ScriptID = scriptID;}
+	ScriptID_t getScriptID()  { return m_ScriptID;}
+	void setScriptID(ScriptID_t scriptID)  { m_ScriptID = scriptID;}
 	
-	AnswerID_t getAnswerID() throw() { return m_AnswerID;}
-	void setAnswerID(AnswerID_t answerID) throw() { m_AnswerID = answerID;}
+	AnswerID_t getAnswerID()  { return m_AnswerID;}
+	void setAnswerID(AnswerID_t answerID)  { m_AnswerID = answerID;}
 
 private :
 	
@@ -80,7 +80,7 @@ class CGNPCAskAnswerFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGNPCAskAnswer(); }
+	Packet* createPacket()  { return new CGNPCAskAnswer(); }
 
 	// get packet name
 	string getPacketName()  { return "CGNPCAskAnswer"; }

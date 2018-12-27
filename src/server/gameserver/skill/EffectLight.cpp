@@ -203,7 +203,7 @@ void EffectLight::save(const string & ownerID)
 }
 
 string EffectLight::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

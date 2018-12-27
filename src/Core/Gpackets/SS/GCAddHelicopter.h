@@ -47,7 +47,7 @@ private:
 class GCAddHelicopterFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCAddHelicopter(); }
+	Packet* createPacket()  { return new GCAddHelicopter(); }
 	string getPacketName()  { return "GCAddHelicopter"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_HELICOPTER; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + szBYTE; }

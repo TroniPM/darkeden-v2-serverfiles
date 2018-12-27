@@ -88,7 +88,7 @@ void EffectExpTime::unaffect()
 // get debug string
 //----------------------------------------------------------------------
 string EffectExpTime::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 

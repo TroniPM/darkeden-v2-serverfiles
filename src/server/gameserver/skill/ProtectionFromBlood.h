@@ -16,8 +16,8 @@
 class ProtectionFromBlood: public SkillHandler 
 {
 public:
-	ProtectionFromBlood() throw() {}
-	~ProtectionFromBlood() throw() {}
+	ProtectionFromBlood()  {}
+	~ProtectionFromBlood()  {}
 
 public:
     string getSkillHandlerName()  { return "ProtectionFromBlood"; }

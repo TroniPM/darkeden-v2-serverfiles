@@ -16,8 +16,8 @@
 class ThunderBolt : public SkillHandler 
 {
 public:
-	ThunderBolt() throw() {}
-	~ThunderBolt() throw() {}
+	ThunderBolt()  {}
+	~ThunderBolt()  {}
 	
 public:
     string getSkillHandlerName()  { return "ThunderBolt"; }

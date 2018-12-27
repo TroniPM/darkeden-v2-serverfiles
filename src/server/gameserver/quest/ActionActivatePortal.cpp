@@ -192,7 +192,7 @@ void ActionActivatePortal::execute (Creature * pNPC , Creature * pCreature)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionActivatePortal::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

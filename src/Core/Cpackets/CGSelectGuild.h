@@ -48,7 +48,7 @@ public:
 
 	// get/set GuildID
 	GuildID_t getGuildID()  { return m_GuildID; }
-	void setGuildID( GuildID_t GuildID ) throw() { m_GuildID = GuildID; }
+	void setGuildID( GuildID_t GuildID )  { m_GuildID = GuildID; }
 
 
 private :
@@ -72,16 +72,16 @@ class CGSelectGuildFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGSelectGuildFactory() throw() {}
+	CGSelectGuildFactory()  {}
 	
 	// destructor
-	virtual ~CGSelectGuildFactory() throw() {}
+	virtual ~CGSelectGuildFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGSelectGuild(); }
+	Packet* createPacket()  { return new CGSelectGuild(); }
 
 	// get packet name
 	string getPacketName()  { return "CGSelectGuild"; }

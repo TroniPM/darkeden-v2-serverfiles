@@ -133,7 +133,7 @@ void EffectSetAfire::unaffect(Creature* pCreature)
 }
 
 string EffectSetAfire::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

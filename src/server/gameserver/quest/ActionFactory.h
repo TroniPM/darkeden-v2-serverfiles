@@ -16,7 +16,7 @@
 class ActionFactory 
 {
 public:
-	virtual ~ActionFactory() throw() {}
+	virtual ~ActionFactory()  {}
 	virtual ActionType_t getActionType()  = 0;
 	virtual string getActionName()  = 0;
 	virtual Action* createAction()  = 0;

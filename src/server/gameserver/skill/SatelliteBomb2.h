@@ -16,8 +16,8 @@
 class SatelliteBomb2 : public SkillHandler 
 {
 public:
-	SatelliteBomb2() throw() {}
-	~SatelliteBomb2() throw() {}
+	SatelliteBomb2()  {}
+	~SatelliteBomb2()  {}
 	
 public:
     string getSkillHandlerName()  { return "SatelliteBomb2"; }

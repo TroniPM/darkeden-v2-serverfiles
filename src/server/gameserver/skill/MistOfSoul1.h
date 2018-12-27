@@ -16,8 +16,8 @@
 class MistOfSoul1: public SkillHandler 
 {
 public:
-	MistOfSoul1() throw() {}
-	~MistOfSoul1() throw() {}
+	MistOfSoul1()  {}
+	~MistOfSoul1()  {}
 	
 public:
     string getSkillHandlerName()  { return "MistOfSoul1"; }

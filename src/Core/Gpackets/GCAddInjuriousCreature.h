@@ -49,7 +49,7 @@ public:
 
 	// get/set Name
 	string getName()  { return m_Name; }
-	void setName(const string & Name) throw() { m_Name = Name; }
+	void setName(const string & Name)  { m_Name = Name; }
 
 private :
 
@@ -71,7 +71,7 @@ class GCAddInjuriousCreatureFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCAddInjuriousCreature(); }
+	Packet* createPacket()  { return new GCAddInjuriousCreature(); }
 
 	// get packet name
 	string getPacketName()  { return "GCAddInjuriousCreature"; }

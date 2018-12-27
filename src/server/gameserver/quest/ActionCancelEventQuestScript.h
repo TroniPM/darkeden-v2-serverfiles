@@ -27,7 +27,7 @@ public:
 
 public:
 	ScriptID_t getScriptID( int index )  { return m_ScriptID[index]; }
-	void setScriptID( int index, ScriptID_t scriptID ) throw() { m_ScriptID[index] = scriptID; }
+	void setScriptID( int index, ScriptID_t scriptID )  { m_ScriptID[index] = scriptID; }
 
 private:
 	ScriptID_t m_ScriptID[5];   // 말할 대사 아이디

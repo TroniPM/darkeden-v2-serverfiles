@@ -184,7 +184,7 @@ void EffectDecayItem::unaffect (Creature* pCreature)
 // get debug string
 //----------------------------------------------------------------------
 string EffectDecayItem::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 

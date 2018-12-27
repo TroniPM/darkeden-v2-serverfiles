@@ -49,7 +49,7 @@ private:
 class CGModifyNicknameFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGModifyNickname(); }
+	Packet* createPacket()  { return new CGModifyNickname(); }
 	string getPacketName()  { return "CGModifyNickname"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_MODIFY_NICKNAME; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + szBYTE + MAX_NICKNAME_SIZE; }

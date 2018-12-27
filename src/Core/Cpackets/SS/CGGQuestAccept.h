@@ -29,7 +29,7 @@ public:
 
 public:
 	DWORD getQuestID()   { return m_QuestID; }
-	void setQuestID(DWORD QuestID) throw() { m_QuestID = QuestID; }
+	void setQuestID(DWORD QuestID)  { m_QuestID = QuestID; }
 
 private:
 	DWORD       m_QuestID;  // 기술의 종류
@@ -42,7 +42,7 @@ private:
 class CGGQuestAcceptFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGGQuestAccept(); }
+	Packet* createPacket()  { return new CGGQuestAccept(); }
 	string getPacketName()  { return "CGGQuestAccept"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_GQUEST_ACCEPT; }
 	PacketSize_t getPacketMaxSize()  { return szDWORD; }

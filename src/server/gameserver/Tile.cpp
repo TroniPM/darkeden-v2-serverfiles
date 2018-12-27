@@ -25,7 +25,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////////////
 Tile::Tile (WORD wFlags , WORD wOption)
-    throw ()
+    
 {
 	__BEGIN_TRY
 
@@ -39,7 +39,7 @@ Tile::Tile (WORD wFlags , WORD wOption)
 // destructor
 //////////////////////////////////////////////////////////////////////////////
 Tile::~Tile ()
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -848,7 +848,7 @@ TerrainID_t Tile::getTerrain () const
 // get debug string
 //////////////////////////////////////////////////////////////
 string Tile::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -875,7 +875,7 @@ string Tile::toString () const
 // add object into object list
 //////////////////////////////////////////////////////////////
 void Tile::addObject (Object* pObject) 
-	throw (DuplicatedException)
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -964,7 +964,7 @@ void Tile::addObject (Object* pObject)
 // Delete object from object list
 //////////////////////////////////////////////////////////////
 void Tile::deleteObject (ObjectID_t objectID) 
-	throw (NoSuchElementException)
+	
 {
 	__BEGIN_TRY
 
@@ -1021,7 +1021,7 @@ void Tile::deleteObject (ObjectID_t objectID)
 // 특정 Tile Priority를 가진 객체를 삭제한다.
 //////////////////////////////////////////////////////////////
 void Tile::deleteObject (ObjectPriority objectPriority) 
-	throw (NoSuchElementException)
+	
 {
 	__BEGIN_TRY
 
@@ -1072,7 +1072,7 @@ void Tile::deleteObject (ObjectPriority objectPriority)
 // 리스트를 모두 검색해야 한다.
 //////////////////////////////////////////////////////////////
 Object* Tile::getObject (ObjectID_t objectID) const
-	throw (NoSuchElementException)
+	
 {
 	__BEGIN_TRY
 
@@ -1099,7 +1099,7 @@ Object* Tile::getObject (ObjectID_t objectID) const
 // 특정 Tile Priority 를 가진 객체를 리턴한다.
 //////////////////////////////////////////////////////////////
 Object* Tile::getObject (ObjectPriority objectPriority) const
-	throw (NoSuchElementException)
+	
 {
 	__BEGIN_TRY
 

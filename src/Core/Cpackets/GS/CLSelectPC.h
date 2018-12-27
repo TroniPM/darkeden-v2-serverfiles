@@ -55,11 +55,11 @@ public:
 
 	// get/set creature's name
 	string getPCName()  { return m_PCName; }
-	void setPCName(string pcName) throw() { m_PCName = pcName; }
+	void setPCName(string pcName)  { m_PCName = pcName; }
 
 	// get/set pc type
 	PCType getPCType()  { return m_PCType; }
-	void setPCType(PCType pcType) throw() { m_PCType = pcType; }
+	void setPCType(PCType pcType)  { m_PCType = pcType; }
 
 private :
 	
@@ -85,7 +85,7 @@ class CLSelectPCFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CLSelectPC(); }
+	Packet* createPacket()  { return new CLSelectPC(); }
 
 	// get packet name
 	string getPacketName()  { return "CLSelectPC"; }

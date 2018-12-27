@@ -61,7 +61,7 @@ private :
 class GCPartyInviteFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCPartyInvite(); }
+	Packet* createPacket()  { return new GCPartyInvite(); }
 	string getPacketName()  { return "GCPartyInvite"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_PARTY_INVITE; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE + szObjectID; }

@@ -29,16 +29,16 @@ public:
 
 public :
 	ZoneCoord_t getX()  { return m_X; }
-	void setX(ZoneCoord_t x) throw() { m_X = x; }
+	void setX(ZoneCoord_t x)  { m_X = x; }
 
 	ZoneCoord_t getY()  { return m_Y; }
-	void setY(ZoneCoord_t y) throw() { m_Y = y; }
+	void setY(ZoneCoord_t y)  { m_Y = y; }
 
 	BYTE getRadius()  { return m_Radius; }
-	void setRadius(BYTE radius) throw() { m_Radius = radius; }
+	void setRadius(BYTE radius)  { m_Radius = radius; }
 
 	BYTE getMovePercentage()  { return m_MovePercentage; }
-	void setMovePercentage(BYTE movePercentage) throw() { m_MovePercentage = movePercentage; }
+	void setMovePercentage(BYTE movePercentage)  { m_MovePercentage = movePercentage; }
 
 private :
 	ZoneCoord_t m_X;

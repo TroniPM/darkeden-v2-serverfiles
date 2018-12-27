@@ -49,7 +49,7 @@ public :
 	// 최적화시, 미리 계산된 정수를 사용한다.
 	PacketSize_t getSize ();
 
-	static uint getMaxSize() throw() {
+	static uint getMaxSize()  {
 		return ( szGuildID
 			   + szBYTE + 30
 			   + szGuildType
@@ -68,55 +68,55 @@ public :
 
 	// get/set GuildID
 	GuildID_t getID()  { return m_ID; }
-	void setID( GuildID_t GuildID ) throw() { m_ID = GuildID; }
+	void setID( GuildID_t GuildID )  { m_ID = GuildID; }
 
 	// get/set Guild Name
 	string getName()  { return m_Name; }
-	void setName( const string& GuildName ) throw() { m_Name = GuildName; }
+	void setName( const string& GuildName )  { m_Name = GuildName; }
 
 	// get/set GuildType
 	GuildType_t getType()  { return m_Type; }
-	void setType( GuildType_t type ) throw() { m_Type = type; }
+	void setType( GuildType_t type )  { m_Type = type; }
 
 	// get/set Race
 	GuildRace_t getRace()  { return m_Race; }
-	void setRace( GuildRace_t race ) throw() { m_Race = race; }
+	void setRace( GuildRace_t race )  { m_Race = race; }
 
 	// get/set state
 	GuildState_t getState()  { return m_State; }
-	void setState( GuildState_t state ) throw() { m_State = state; }
+	void setState( GuildState_t state )  { m_State = state; }
 
 	// get/set server group ID
 	ServerGroupID_t getServerGroupID()  { return m_ServerGroupID; }
-	void setServerGroupID( ServerGroupID_t serverGroupID ) throw() { m_ServerGroupID = serverGroupID; }
+	void setServerGroupID( ServerGroupID_t serverGroupID )  { m_ServerGroupID = serverGroupID; }
 
 	// get/set Zone ID
 	ZoneID_t getZoneID()  { return m_ZoneID; }
-	void setZoneID( ZoneID_t zoneID ) throw() { m_ZoneID = zoneID; }
+	void setZoneID( ZoneID_t zoneID )  { m_ZoneID = zoneID; }
 
 	// get/set Guild Master
 	string getMaster()  { return m_Master; }
-	void setMaster( const string& master ) throw() { m_Master = master; }
+	void setMaster( const string& master )  { m_Master = master; }
 
 	// get/set Guild Expire Date
 	string getDate()  { return m_Date; }
-	void setDate( const string& date ) throw() { m_Date = date; }
+	void setDate( const string& date )  { m_Date = date; }
 
 	// get/set guild intro
 	string getIntro()  { return m_Intro; }
-	void setIntro( const string& intro ) throw() { m_Intro = intro; }
+	void setIntro( const string& intro )  { m_Intro = intro; }
 
 	// get guild member info list num
 	WORD getGuildMemberInfoListNum()  { return m_GuildMemberInfoList.size(); }
 
 	// add GuildMemberInfo
-	void addGuildMemberInfo( GuildMemberInfo2* pGuildMemberInfo ) throw() { m_GuildMemberInfoList.push_front( pGuildMemberInfo ); }
+	void addGuildMemberInfo( GuildMemberInfo2* pGuildMemberInfo )  { m_GuildMemberInfoList.push_front( pGuildMemberInfo ); }
 
 	// clear GuildMemberInfoList
 	void clearGuildMemberInfoList() ;
 
 	// pop front element in GuildMemberInfoList
-	GuildMemberInfo2* popFrontGuildMemberInfoList() throw()
+	GuildMemberInfo2* popFrontGuildMemberInfoList() 
 	{
 		if ( m_GuildMemberInfoList.empty() )
 		return NULL;

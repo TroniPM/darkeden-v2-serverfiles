@@ -123,7 +123,7 @@
 // Constructor
 //////////////////////////////////////////////////////////////////////////////
 ItemInfoManager::ItemInfoManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -137,7 +137,7 @@ ItemInfoManager::ItemInfoManager()
 // Destructor
 //////////////////////////////////////////////////////////////////////////////
 ItemInfoManager::~ItemInfoManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -832,7 +832,7 @@ uint ItemInfoManager::getItemCount (Item::ItemClass Class) const
 // get possible item type vector for specific item class
 //////////////////////////////////////////////////////////////////////////////
 vector<ItemType_t> ItemInfoManager::getPossibleItemTypes(Item::ItemClass IClass, uint minLevel, uint maxLevel)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -863,7 +863,7 @@ vector<ItemType_t> ItemInfoManager::getPossibleItemTypes(Item::ItemClass IClass,
 }
 
 bool ItemInfoManager::isPossibleItem(Item::ItemClass IClass, ItemType_t IType, const list<OptionType_t>& OType) 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -912,7 +912,7 @@ bool ItemInfoManager::isPossibleItem(Item::ItemClass IClass, ItemType_t IType, c
 // get debug string
 //////////////////////////////////////////////////////////////////////////////
 string ItemInfoManager::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 

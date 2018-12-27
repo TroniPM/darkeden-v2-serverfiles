@@ -41,7 +41,7 @@ private:
 
 class CGSelectRegenZoneFactory : public PacketFactory 
 {
-	Packet* createPacket() throw() { return new CGSelectRegenZone(); }
+	Packet* createPacket()  { return new CGSelectRegenZone(); }
 	string getPacketName()  { return "CGSelectRegenZone"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_SELECT_REGEN_ZONE; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE; }

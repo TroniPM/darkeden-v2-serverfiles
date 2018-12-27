@@ -53,10 +53,10 @@ public:
 	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_SHOESZAP; }
 	
 	Defense_t getDefenseBonus()  { return m_DefenseBonus; }
-	void setDefenseBonus(Defense_t acBonus) throw() { m_DefenseBonus = acBonus; }
+	void setDefenseBonus(Defense_t acBonus)  { m_DefenseBonus = acBonus; }
 
 	Protection_t getProtectionBonus()  { return m_ProtectionBonus; }
-	void setProtectionBonus(Protection_t acBonus) throw() { m_ProtectionBonus = acBonus; }
+	void setProtectionBonus(Protection_t acBonus)  { m_ProtectionBonus = acBonus; }
 
 	virtual string toString() ;
 
@@ -92,7 +92,7 @@ public:
 	virtual string getItemClassName()  { return "ShoesZap"; }
 	
 public:
-	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new ShoesZap(ItemType,OptionType); }
+	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType)  { return new ShoesZap(ItemType,OptionType); }
 };
 
 

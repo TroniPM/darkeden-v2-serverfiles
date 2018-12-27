@@ -16,8 +16,8 @@
 class ThrowHolyWater : public SkillHandler 
 {
 public:
-	ThrowHolyWater() throw() {}
-	~ThrowHolyWater() throw() {}
+	ThrowHolyWater()  {}
+	~ThrowHolyWater()  {}
 	
 public:
     string getSkillHandlerName()  { return "ThrowHolyWater"; }

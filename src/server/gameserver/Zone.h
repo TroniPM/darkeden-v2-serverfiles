@@ -192,7 +192,7 @@ public:
 	void resetSafeZone() ;
 
 	// 오브젝트 등록
-	void registerObject( Object* pObject ) throw() { getObjectRegistry().registerObject( pObject ); }
+	void registerObject( Object* pObject )  { getObjectRegistry().registerObject( pObject ); }
 
 public:
 	void heartbeat();
@@ -211,7 +211,7 @@ public:
 	string toString() ;
 
 public:
-	ObjectRegistry & getObjectRegistry() throw() { return m_ObjectRegistry; }
+	ObjectRegistry & getObjectRegistry()  { return m_ObjectRegistry; }
 
 	const Tile & getTile(ZoneCoord_t x, ZoneCoord_t y) ;
 	Tile & getTile(ZoneCoord_t x, ZoneCoord_t y) throw(OutOfBoundException);
@@ -219,29 +219,29 @@ public:
 	Sector* getSector(ZoneCoord_t x, ZoneCoord_t y) throw(OutOfBoundException);
 
 	ZoneID_t getZoneID()  { return m_ZoneID; }
-	void setZoneID(ZoneID_t zoneID) throw() { m_ZoneID = zoneID; }
+	void setZoneID(ZoneID_t zoneID)  { m_ZoneID = zoneID; }
 	
 	ZoneGroup* getZoneGroup()  { return m_pZoneGroup; }
-	void setZoneGroup(ZoneGroup* pZoneGroup) throw() { m_pZoneGroup = pZoneGroup; }
+	void setZoneGroup(ZoneGroup* pZoneGroup)  { m_pZoneGroup = pZoneGroup; }
 
 	ZoneType getZoneType()  { return m_ZoneType; }
-	void setZoneType(ZoneType zoneType) throw() { m_ZoneType = zoneType; }
+	void setZoneType(ZoneType zoneType)  { m_ZoneType = zoneType; }
 
 	ZoneLevel_t getZoneLevel()  { return m_ZoneLevel; }
-	void setZoneLevel(ZoneLevel_t zoneLevel) throw() { m_ZoneLevel = zoneLevel; }
+	void setZoneLevel(ZoneLevel_t zoneLevel)  { m_ZoneLevel = zoneLevel; }
     ZoneLevel_t getZoneLevel(ZoneCoord_t x, ZoneCoord_t y) ;
 
 	ZoneAccessMode getZoneAccessMode()  { return m_ZoneAccessMode; }
-	void setZoneAccessMode(ZoneAccessMode zoneAccessMode) throw() { m_ZoneAccessMode = zoneAccessMode; }
+	void setZoneAccessMode(ZoneAccessMode zoneAccessMode)  { m_ZoneAccessMode = zoneAccessMode; }
 
 	string getOwnerID()  { return m_OwnerID; }
-	void setOwnerID(const string & ownerID) throw() { m_OwnerID = ownerID; }
+	void setOwnerID(const string & ownerID)  { m_OwnerID = ownerID; }
 
 	DarkLevel_t getDarkLevel()  { return m_DarkLevel; }
-	void setDarkLevel(DarkLevel_t darkLevel) throw() { m_DarkLevel = darkLevel; }
+	void setDarkLevel(DarkLevel_t darkLevel)  { m_DarkLevel = darkLevel; }
 
 	LightLevel_t getLightLevel()  { return m_LightLevel; }
-	void setLightLevel(LightLevel_t lightLevel) throw() { m_LightLevel = lightLevel; }
+	void setLightLevel(LightLevel_t lightLevel)  { m_LightLevel = lightLevel; }
 
 	const WeatherManager* getWeatherManager()  { return m_pWeatherManager; }
 
@@ -249,13 +249,13 @@ public:
 	void setNPCCount(uint n)  { Assert(n <= maxNPCPerZone); m_NPCCount = n; }
 
 	NPCType_t getNPCType(uint n)  { Assert(n < maxNPCPerZone); return m_NPCTypes[n]; }
-	void setNPCType(uint n, NPCType_t npcType) throw() { Assert(n < maxNPCPerZone); m_NPCTypes[n] = npcType; }
+	void setNPCType(uint n, NPCType_t npcType)  { Assert(n < maxNPCPerZone); m_NPCTypes[n] = npcType; }
 
 	uint getMonsterCount()  { return m_MonsterCount; }
 	void setMonsterCount(uint n)  { Assert(n <= maxMonsterPerZone); m_MonsterCount = n; }
 
 	MonsterType_t getMonsterType(uint n)  { Assert(n < maxMonsterPerZone); return m_MonsterTypes[n]; }
-	void setMonsterType(uint n, MonsterType_t npcType) throw() { Assert(n < maxMonsterPerZone); m_MonsterTypes[n] = npcType; }
+	void setMonsterType(uint n, MonsterType_t npcType)  { Assert(n < maxMonsterPerZone); m_MonsterTypes[n] = npcType; }
 
 	ZoneCoord_t getWidth()  { return m_Width; }
 	ZoneCoord_t getHeight()  { return m_Height; }
@@ -272,11 +272,11 @@ public:
 	// ABCD add item to item hash map
 	void addToItemList(Item* pItem) ;
 	void deleteFromItemList(ObjectID_t id) ;
-	hash_map<ObjectID_t, Item*> getItems(void) throw() { return m_Items; }
+	hash_map<ObjectID_t, Item*> getItems(void)  { return m_Items; }
 
-	EffectManager* getEffectManager() throw() { return m_pEffectManager; }
-	EffectManager* getVampirePortalManager() throw() { return m_pVampirePortalManager; }
-	EffectScheduleManager* getEffectScheduleManager(void) throw() { return m_pEffectScheduleManager; }
+	EffectManager* getEffectManager()  { return m_pEffectManager; }
+	EffectManager* getVampirePortalManager()  { return m_pVampirePortalManager; }
+	EffectScheduleManager* getEffectScheduleManager(void)  { return m_pEffectScheduleManager; }
 
 	VSRect* getOuterRect(void) { return &m_OuterRect; }
 	VSRect* getInnerRect(void) { return &m_InnerRect; }
@@ -333,32 +333,32 @@ public:
 public :
 	// 유료화
 	bool isPayPlay()  { return m_bPayPlay; }
-    void setPayPlay(bool bPayPlay=true) throw() { m_bPayPlay = bPayPlay; }
+    void setPayPlay(bool bPayPlay=true)  { m_bPayPlay = bPayPlay; }
 
 	bool isPremiumZone()  { return m_bPremiumZone; }
-	void setPremiumZone(bool bPremiumZone=true) throw() { m_bPremiumZone = bPremiumZone; }
+	void setPremiumZone(bool bPremiumZone=true)  { m_bPremiumZone = bPremiumZone; }
 
 	bool isPKZone()  { return m_bPKZone; }
-	void setPKZone(bool bPKZone=true) throw() { m_bPKZone = bPKZone; }
+	void setPKZone(bool bPKZone=true)  { m_bPKZone = bPKZone; }
 
 	bool isNoPortalZone()  { return m_bNoPortalZone; }
-	void setNoPortalZone(bool bNoPortalZone=true) throw() { m_bNoPortalZone = bNoPortalZone; }
+	void setNoPortalZone(bool bNoPortalZone=true)  { m_bNoPortalZone = bNoPortalZone; }
 
 	bool isMasterLair()  { return m_bMasterLair; }
-	void setMasterLair(bool bMasterLair=true) throw() { m_bMasterLair = bMasterLair; }
+	void setMasterLair(bool bMasterLair=true)  { m_bMasterLair = bMasterLair; }
 
 	bool isCastle()  { return m_bCastle; }
-	void setCastle(bool bCastle=true) throw() { m_bCastle = bCastle; }
+	void setCastle(bool bCastle=true)  { m_bCastle = bCastle; }
 
 	bool isHolyLand()  { return m_bHolyLand; }
-	void setHolyLand(bool bHolyLand=true) throw() { m_bHolyLand = bHolyLand; }
+	void setHolyLand(bool bHolyLand=true)  { m_bHolyLand = bHolyLand; }
 
 	bool isCastleZone()  { return m_bCastleZone; }
-	void setCastleZone(bool bCastleZone=true) throw() { m_bCastleZone = bCastleZone; }
+	void setCastleZone(bool bCastleZone=true)  { m_bCastleZone = bCastleZone; }
 
 	// Relic보관대를 갖고 있나?
 	bool hasRelicTable()  { return m_bHasRelicTable; }
-    void setRelicTable(bool bHasRelicTable=true) throw() { m_bHasRelicTable = bHasRelicTable; }
+    void setRelicTable(bool bHasRelicTable=true)  { m_bHasRelicTable = bHasRelicTable; }
 
 	bool addRelicItem(int relicIndex); 
 	bool deleteRelicItem(); 

@@ -113,7 +113,7 @@ MonsterManager::MonsterManager (Zone* pZone)
 //
 ////////////////////////////////////////////////////////////////////////////////
 MonsterManager::~MonsterManager () 
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -500,7 +500,7 @@ void MonsterManager::addCreature (Creature* pCreature)
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 void MonsterManager::deleteCreature (ObjectID_t creatureID)
-	throw ()//NoSuchElementException , Error)
+	//NoSuchElementException , Error)
 {
 	__BEGIN_TRY
 
@@ -1010,7 +1010,7 @@ void MonsterManager::regenerateCreatures ()
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 bool MonsterManager::findPosition(MonsterType_t monsterType, ZoneCoord_t& RX, ZoneCoord_t& RY) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2366,7 +2366,7 @@ int MonsterManager::upgradeOptionByLuck(int luckLevel, Creature::CreatureClass o
 	__END_CATCH
 }
 
-void MonsterManager::MonsterItemDrop(Monster* pMonster) throw ()
+void MonsterManager::MonsterItemDrop(Monster* pMonster) 
 {
 	__BEGIN_TRY
 
@@ -2606,7 +2606,7 @@ void MonsterManager::killAllMonsters (const hash_map<ObjectID_t, ObjectID_t>& ex
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string MonsterManager::toString () const
-       throw ()
+       
 {
 	__BEGIN_TRY
 

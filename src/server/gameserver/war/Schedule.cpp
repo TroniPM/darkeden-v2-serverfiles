@@ -9,7 +9,7 @@
 #include "Schedule.h"
 
 Schedule::Schedule( Work* pWork, const VSDateTime& Time, ScheduleType type )
-	throw()
+	
 : m_ScheduleType( type ), m_pWork( pWork ), m_ScheduledTime( Time )
 {
 	__BEGIN_TRY
@@ -22,7 +22,7 @@ Schedule::Schedule( Work* pWork, const VSDateTime& Time, ScheduleType type )
 }
 
 Schedule::~Schedule()
-	throw()
+	
 {
 	__BEGIN_TRY
 

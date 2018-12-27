@@ -48,11 +48,11 @@ public:
 
 	// get/set GuildID
 	GuildID_t getGuildID()  { return m_GuildID; }
-	void setGuildID( GuildID_t GuildID ) throw() { m_GuildID = GuildID; }
+	void setGuildID( GuildID_t GuildID )  { m_GuildID = GuildID; }
 
 	// get/set name
 	const string& getName()  { return m_Name; }
-	void setName( const string& name ) throw() { m_Name = name; }
+	void setName( const string& name )  { m_Name = name; }
 
 
 private :
@@ -79,16 +79,16 @@ class CGSelectGuildMemberFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGSelectGuildMemberFactory() throw() {}
+	CGSelectGuildMemberFactory()  {}
 	
 	// destructor
-	virtual ~CGSelectGuildMemberFactory() throw() {}
+	virtual ~CGSelectGuildMemberFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGSelectGuildMember(); }
+	Packet* createPacket()  { return new CGSelectGuildMember(); }
 
 	// get packet name
 	string getPacketName()  { return "CGSelectGuildMember"; }

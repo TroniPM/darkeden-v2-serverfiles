@@ -27,14 +27,14 @@ Mutex    OustersTuningItem::m_Mutex;
 //////////////////////////////////////////////////////////////////////////////
 
 OustersTuningItem::OustersTuningItem()
-	throw()
+	
 {
 	m_ItemType = 0;
 	m_Num = 1;
 }
 
 OustersTuningItem::OustersTuningItem(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num)
-	throw()
+	
 {
 	m_ItemType = itemType;
 	m_Num = Num;
@@ -151,7 +151,7 @@ void OustersTuningItem::save(const string & ownerID, Storage storage, StorageID_
 }
 
 string OustersTuningItem::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -198,7 +198,7 @@ Weight_t OustersTuningItem::getWeight() const
 //////////////////////////////////////////////////////////////////////////////
 
 string OustersTuningItemInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "OustersTuningItemInfo("

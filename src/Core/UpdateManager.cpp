@@ -15,7 +15,7 @@
 // constructor
 //--------------------------------------------------------------------------------
 UpdateManager::UpdateManager () 
-	throw ()
+	
 : m_pResourceManager(NULL)
 {
 }
@@ -25,7 +25,7 @@ UpdateManager::UpdateManager ()
 // destructor
 //--------------------------------------------------------------------------------
 UpdateManager::~UpdateManager () 
-	throw ()
+	
 {
 	// delete all update
 	while ( !m_Updates.empty() ) {
@@ -50,7 +50,7 @@ void UpdateManager::load ( const string & filename )
 {
 	__BEGIN_TRY
 
-	ifstream ifile( filename.c_str() , ios::in | ios::binary | ios::nocreate );
+	ifstream ifile( filename.c_str() , ios::in | ios::binary  );
 	if ( !ifile ) {
 		StringStream msg;
 		msg << "cannot open " << filename << " with read mode";
@@ -91,7 +91,7 @@ void UpdateManager::save ( const string & filename ) const
 {
 	__BEGIN_TRY
 
-	ofstream ofile( filename.c_str() , ios::out | ios::binary | ios::noreplace );
+	ofstream ofile( filename.c_str() , ios::out | ios::binary  /*| ios::noreplace*/ );
 	if ( !ofile ) {
 		StringStream msg;
 		msg << "cannot open " << filename << " with write mode";
@@ -294,7 +294,7 @@ ResourceManager * UpdateManager::getResourceManager ()
 // get size
 //--------------------------------------------------------------------------------
 uint UpdateManager::getSize () const
-	throw ()
+	
 {
 	uint size = szWORD;	// nUpdates
 
@@ -310,7 +310,7 @@ uint UpdateManager::getSize () const
 // get debug string
 //--------------------------------------------------------------------------------
 string UpdateManager::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 

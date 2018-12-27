@@ -37,7 +37,7 @@ public:
 	void setHPRecovery(int hp) { m_HPRecovery = hp; }
 
 	int getTick(void) const { return m_Tick; }
-	void   setTick(Turn_t Tick) throw() { m_Tick = Tick; }
+	void   setTick(Turn_t Tick)  { m_Tick = Tick; }
 private:
 	int m_HPRecovery; 
 	Turn_t m_Tick;

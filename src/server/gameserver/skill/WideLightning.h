@@ -16,8 +16,8 @@
 class WideLightning : public SkillHandler 
 {
 public:
-	WideLightning() throw() {}
-	~WideLightning() throw() {}
+	WideLightning()  {}
+	~WideLightning()  {}
 	
 public:
     string getSkillHandlerName()  { return "WideLightning"; }

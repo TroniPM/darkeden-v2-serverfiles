@@ -58,7 +58,7 @@ public :
 	string toString() ;
 	
 	SkillDomainType_t getSkillDomainType()  { return m_SkillDomainType;}
-	void setSkillDomainType(SkillDomainType_t SkillDomainType) throw()
+	void setSkillDomainType(SkillDomainType_t SkillDomainType) 
 	{
 		m_SkillDomainType = SkillDomainType;
 	}
@@ -83,16 +83,16 @@ class  GCLearnSkillReadyFactory : public PacketFactory {
 public :
 	
 	// constructor
-	 GCLearnSkillReadyFactory() throw() {}
+	 GCLearnSkillReadyFactory()  {}
 	
 	// destructor
-	virtual ~GCLearnSkillReadyFactory() throw() {}
+	virtual ~GCLearnSkillReadyFactory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCLearnSkillReady(); }
+	Packet* createPacket()  { return new GCLearnSkillReady(); }
 
 	// get packet name
 	string getPacketName()  { return "GCLearnSkillReady"; }

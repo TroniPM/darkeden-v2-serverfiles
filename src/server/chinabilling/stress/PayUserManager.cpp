@@ -44,7 +44,7 @@ void PayUserManager::init()
 }
 
 void PayUserManager::run()
-	throw ()
+	
 {
 	__BEGIN_TRY
 

@@ -30,7 +30,7 @@ public:
 	string toString() ;
 
 public:
-	int getDamageBonus() throw() { return m_DamageBonus;}
+	int getDamageBonus()  { return m_DamageBonus;}
 	void setDamageBonus(ToHit_t DamageBonus)  { m_DamageBonus = DamageBonus;}
 
 private:

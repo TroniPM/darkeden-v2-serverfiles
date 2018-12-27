@@ -137,7 +137,7 @@ void EffectGrayDarkness::unaffect()
 }*/
 
 string EffectGrayDarkness::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

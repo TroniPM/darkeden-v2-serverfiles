@@ -16,7 +16,7 @@
 class ConditionFactory 
 {
 public:
-	virtual ~ConditionFactory() throw() {}
+	virtual ~ConditionFactory()  {}
 	virtual ConditionType_t getConditionType()  = 0;
 	virtual string getConditionName()  = 0;
 	virtual Condition* createCondition()  = 0;

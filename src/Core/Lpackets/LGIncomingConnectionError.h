@@ -47,11 +47,11 @@ public:
 
 	// get/set error message
 	string getMessage()  { return m_Message; }
-	void setMessage(string message) throw() { m_Message = message; }
+	void setMessage(string message)  { m_Message = message; }
 
 	// get/set player id
 	string getPlayerID()  { return m_PlayerID; }
-	void setPlayerID(string playerID) throw() { m_PlayerID = playerID; }
+	void setPlayerID(string playerID)  { m_PlayerID = playerID; }
 
 private :
 
@@ -77,7 +77,7 @@ class LGIncomingConnectionErrorFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new LGIncomingConnectionError(); }
+	Packet* createPacket()  { return new LGIncomingConnectionError(); }
 
 	// get packet name
 	string getPacketName()  { return "LGIncomingConnectionError"; }

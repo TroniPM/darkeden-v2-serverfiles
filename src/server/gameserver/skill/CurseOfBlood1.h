@@ -16,8 +16,8 @@
 class CurseOfBlood1: public SkillHandler 
 {
 public:
-	CurseOfBlood1() throw() {}
-	~CurseOfBlood1() throw() {}
+	CurseOfBlood1()  {}
+	~CurseOfBlood1()  {}
 	
 public:
     string getSkillHandlerName()  { return "CurseOfBlood1"; }

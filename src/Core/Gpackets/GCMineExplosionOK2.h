@@ -63,35 +63,35 @@ public :
 
 	// get / set X
 	Coord_t getX()  { return m_X; }
-	void setX(Coord_t X) throw() { m_X = X; }
+	void setX(Coord_t X)  { m_X = X; }
 
 	// get / set Y
 	Coord_t getY()  { return m_Y; }
-	void setY(Coord_t Y) throw() { m_Y = Y; }
+	void setY(Coord_t Y)  { m_Y = Y; }
 	
 	// get / set Dir
 	Dir_t getDir()  { return m_Dir; }
-	void setDir(Dir_t r) throw() { m_Dir = r; }
+	void setDir(Dir_t r)  { m_Dir = r; }
 	
 	// get / set ItemType
 	ItemType_t getItemType()  { return m_ItemType; }
-	void setItemType(ItemType_t r) throw() { m_ItemType = r; }
+	void setItemType(ItemType_t r)  { m_ItemType = r; }
 
-	void setXYDir(Coord_t X, Coord_t Y, Dir_t R) throw() { m_X = X; m_Y = Y; m_Dir = R;}
+	void setXYDir(Coord_t X, Coord_t Y, Dir_t R)  { m_X = X; m_Y = Y; m_Dir = R;}
 
     // get / set Creature List Number
     BYTE getCListNum()  { return m_CListNum; }
-    void setCListNum(BYTE CListNum) throw() { m_CListNum = CListNum; }
+    void setCListNum(BYTE CListNum)  { m_CListNum = CListNum; }
 
 
     // add / delete  Creature List
     void addCListElement(ObjectID_t ObjectID) ;
 
 	// Clear Creature List
-    void clearCList() throw() { m_CList.clear(); m_CListNum = 0; }
+    void clearCList()  { m_CList.clear(); m_CListNum = 0; }
 
     // pop front Element in Status List
-    ObjectID_t popCListElement() throw() { ObjectID_t CreatureList = m_CList.front(); m_CList.pop_front(); return CreatureList; }
+    ObjectID_t popCListElement()  { ObjectID_t CreatureList = m_CList.front(); m_CList.pop_front(); return CreatureList; }
 
 
 private :
@@ -128,16 +128,16 @@ class GCMineExplosionOK2Factory : public PacketFactory {
 public :
 	
 	// constructor
-	GCMineExplosionOK2Factory() throw() {}
+	GCMineExplosionOK2Factory()  {}
 	
 	// destructor
-	virtual ~GCMineExplosionOK2Factory() throw() {}
+	virtual ~GCMineExplosionOK2Factory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCMineExplosionOK2(); }
+	Packet* createPacket()  { return new GCMineExplosionOK2(); }
 
 	// get packet name
 	string getPacketName()  { return "GCMineExplosionOK2"; }

@@ -57,16 +57,16 @@ public:
 public:
 
 	// get / set ObjectID
-	ObjectID_t getObjectID() throw() { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 	// get/set X Coordicate
 	Coord_t getZoneX()  { return m_ZoneX; }
-	void setZoneX(Coord_t ZoneX) throw() { m_ZoneX = ZoneX; }
+	void setZoneX(Coord_t ZoneX)  { m_ZoneX = ZoneX; }
 
 	// get/set Y Coordicate
 	Coord_t getZoneY()  { return m_ZoneY; }
-	void setZoneY(Coord_t ZoneY) throw() { m_ZoneY = ZoneY; }
+	void setZoneY(Coord_t ZoneY)  { m_ZoneY = ZoneY; }
 
 private :
 	
@@ -93,7 +93,7 @@ class CGPickupMoneyFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGPickupMoney(); }
+	Packet* createPacket()  { return new CGPickupMoney(); }
 
 	// get packet name
 	string getPacketName()  { return "CGPickupMoney"; }

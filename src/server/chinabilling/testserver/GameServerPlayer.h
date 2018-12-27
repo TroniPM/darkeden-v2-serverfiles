@@ -55,22 +55,22 @@ public :
 	virtual void disconnect (bool bDisconnected = DISCONNECTED) ;
 	
 	// get/set socket
-	//Socket* getSocket () throw () { return m_pSocket; }
+	//Socket* getSocket ()  { return m_pSocket; }
 	void setSocket (Socket* pSocket);
 
 	// get/set player ID
 	//string getID ()  { return m_ID; }
-	//void setID (const string & id) throw () { m_ID = id; }
+	//void setID (const string & id)  { m_ID = id; }
 
 	// get debug string
 	virtual string toString () ;
 
 public:
-	void executeIntervalValidation( CBillingPacketHeader& header, CBillingPacketRequestIntervalValidationBody& body ) throw ( IOException, Error );
-	void executeLogin( CBillingPacketHeader& header, CBillingPacketRequestLoginBody& body ) throw ( IOException, Error );
-	void executeMinusPoint( CBillingPacketHeader& header, CBillingPacketRequestMinusPointBody& body ) throw ( IOException, Error );
-	void executeMinusMinute( CBillingPacketHeader& header, CBillingPacketRequestMinusMinuteBody& body ) throw ( IOException, Error );
-	void executeLogout( CBillingPacketHeader& header, CBillingPacketRequestLogoutBody& body ) throw ( IOException, Error );
+	void executeIntervalValidation( CBillingPacketHeader& header, CBillingPacketRequestIntervalValidationBody& body ) ;
+	void executeLogin( CBillingPacketHeader& header, CBillingPacketRequestLoginBody& body ) ;
+	void executeMinusPoint( CBillingPacketHeader& header, CBillingPacketRequestMinusPointBody& body ) ;
+	void executeMinusMinute( CBillingPacketHeader& header, CBillingPacketRequestMinusMinuteBody& body ) ;
+	void executeLogout( CBillingPacketHeader& header, CBillingPacketRequestLogoutBody& body ) ;
 	
 protected :
 

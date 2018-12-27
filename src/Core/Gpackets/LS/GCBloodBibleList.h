@@ -18,7 +18,7 @@
 class GCBloodBibleList : public Packet
 {
 public:
-	GCBloodBibleList() throw() { }
+	GCBloodBibleList()  { }
 	virtual ~GCBloodBibleList() ;
 
 public:
@@ -45,7 +45,7 @@ private:
 class GCBloodBibleListFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCBloodBibleList(); }
+	Packet* createPacket()  { return new GCBloodBibleList(); }
 	string getPacketName()  { return "GCBloodBibleList"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_BLOOD_BIBLE_LIST; }
 	PacketSize_t getPacketMaxSize() 

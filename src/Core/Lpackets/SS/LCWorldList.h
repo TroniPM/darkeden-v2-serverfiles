@@ -57,18 +57,18 @@ public:
 
 	// 현재 월드
 	WorldID_t getCurrentWorldID()  { return m_CurrentWorldID; }
-	void setCurrentWorldID( WorldID_t WorldID ) throw() { m_CurrentWorldID = WorldID; }
+	void setCurrentWorldID( WorldID_t WorldID )  { m_CurrentWorldID = WorldID; }
 
     BYTE getListNum()  { return m_WorldInfoList.size(); }
 
 	// add / delete / clear S List
-	void addListElement(WorldInfo* pWorldInfo) throw() { m_WorldInfoList.push_back(pWorldInfo); }
+	void addListElement(WorldInfo* pWorldInfo)  { m_WorldInfoList.push_back(pWorldInfo); }
 
 	// ClearList
-	void clearList() throw() { m_WorldInfoList.clear(); }
+	void clearList()  { m_WorldInfoList.clear(); }
 
 	// pop front Element in Status List
-	WorldInfo* popFrontListElement() throw()
+	WorldInfo* popFrontListElement() 
 	{
 		WorldInfo* TempWorldInfo = m_WorldInfoList.front(); m_WorldInfoList.pop_front(); return TempWorldInfo;
 	}
@@ -96,7 +96,7 @@ class LCWorldListFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new LCWorldList(); }
+	Packet* createPacket()  { return new LCWorldList(); }
 
 	// get packet name
 	string getPacketName()  { return "LCWorldList"; }

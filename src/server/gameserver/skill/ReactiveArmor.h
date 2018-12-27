@@ -16,8 +16,8 @@
 class ReactiveArmor : public SkillHandler 
 {
 public:
-	ReactiveArmor() throw() {}
-	~ReactiveArmor() throw() {}
+	ReactiveArmor()  {}
+	~ReactiveArmor()  {}
 	
 public:
     string getSkillHandlerName()  { return "ReactiveArmor"; }

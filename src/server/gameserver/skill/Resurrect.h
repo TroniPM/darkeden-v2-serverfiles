@@ -16,8 +16,8 @@
 class Resurrect : public SkillHandler 
 {
 public:
-	Resurrect() throw() {}
-	~Resurrect() throw() {}
+	Resurrect()  {}
+	~Resurrect()  {}
 	
 public:
     string getSkillHandlerName()  { return "Resurrect"; }

@@ -24,19 +24,19 @@ public:
 
 public:
 	string getClientIP()  { return m_ClientIP; }
-	void setClientIP(const string & clientIP) throw() { m_ClientIP = clientIP; }
+	void setClientIP(const string & clientIP)  { m_ClientIP = clientIP; }
 
 	string getPlayerID()  { return m_PlayerID; }
-	void setPlayerID(const string & PlayerID) throw() { m_PlayerID = PlayerID; }
+	void setPlayerID(const string & PlayerID)  { m_PlayerID = PlayerID; }
 	
 	string getPCName()  { return m_PCName; }
-	void setPCName(const string & name) throw() { m_PCName = name; }
+	void setPCName(const string & name)  { m_PCName = name; }
 
 	Timeval getExpireTime()  { return m_ExpireTime; }
-	void setExpireTime(Timeval tv) throw() { m_ExpireTime = tv; }
+	void setExpireTime(Timeval tv)  { m_ExpireTime = tv; }
 	
 	DWORD getKey()  { return m_Key; }
-	void setKey(DWORD key) throw() { m_Key = key; }
+	void setKey(DWORD key)  { m_Key = key; }
 
 	string toString() ;
 

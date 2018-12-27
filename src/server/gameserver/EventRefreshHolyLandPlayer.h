@@ -17,7 +17,7 @@ class EventRefreshHolyLandPlayer : public Event
 {
 public:
 	EventRefreshHolyLandPlayer( GamePlayer* pGamePlayer ) ;
-	~EventRefreshHolyLandPlayer() throw() {}
+	~EventRefreshHolyLandPlayer()  {}
 			
 public:
 	virtual EventClass getEventClass()  { return EVENT_CLASS_REFRESH_HOLY_LAND_PLAYER; }

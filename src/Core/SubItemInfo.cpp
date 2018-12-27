@@ -13,7 +13,7 @@
 // read data from socket input stream
 //----------------------------------------------------------------------
 void SubItemInfo::read ( SocketInputStream & iStream ) 
-	throw ( ProtocolException , Error )
+	
 {
 	__BEGIN_TRY
 	try {
@@ -35,7 +35,7 @@ void SubItemInfo::read ( SocketInputStream & iStream )
 // write data to socket output stream
 //----------------------------------------------------------------------
 void SubItemInfo::write ( SocketOutputStream & oStream ) const 
-	throw ( ProtocolException , Error )
+	
 {
 	__BEGIN_TRY
 
@@ -58,7 +58,7 @@ void SubItemInfo::write ( SocketOutputStream & oStream ) const
 // get debug string
 //----------------------------------------------------------------------
 string SubItemInfo::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 

@@ -35,17 +35,17 @@ public:
 
 public:
 	EffectID_t getEffectID()  { return m_EffectID; }
-	void setEffectID(EffectID_t e) throw() { m_EffectID = e; }
+	void setEffectID(EffectID_t e)  { m_EffectID = e; }
 
 	Turn_t getDuration()  { return m_Duration; }
-	void setDuration(Turn_t d) throw() { m_Duration = d; }
+	void setDuration(Turn_t d)  { m_Duration = d; }
 
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t d) throw() { m_ObjectID = d; }
+	void setObjectID(ObjectID_t d)  { m_ObjectID = d; }
 
 	Coord_t getX()  { return m_X;}
 	Coord_t getY()  { return m_Y;}
-	void setXY(Coord_t x, Coord_t y) throw() { m_X = x; m_Y = y;}
+	void setXY(Coord_t x, Coord_t y)  { m_X = x; m_Y = y;}
 	
 private:
 	Coord_t     m_X;
@@ -62,7 +62,7 @@ private:
 class GCAddEffectToTileFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCAddEffectToTile(); }
+	Packet* createPacket()  { return new GCAddEffectToTile(); }
 	string getPacketName()  { return "GCAddEffectToTile"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_EFFECT_TO_TILE; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + szCoord*2 + szEffectID + szTurn; }

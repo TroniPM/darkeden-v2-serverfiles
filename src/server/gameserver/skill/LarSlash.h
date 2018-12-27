@@ -16,8 +16,8 @@
 class LarSlash : public SkillHandler 
 {
 public:
-	LarSlash() throw() {}
-	~LarSlash() throw() {}
+	LarSlash()  {}
+	~LarSlash()  {}
 	
 public:
     string getSkillHandlerName()  { return "LarSlash"; }

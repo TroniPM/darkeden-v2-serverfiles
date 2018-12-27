@@ -17,7 +17,7 @@ class IceHorizon : public SkillHandler
 {
 public:
 	IceHorizon() ;
-	~IceHorizon() throw() {}
+	~IceHorizon()  {}
 	
 public:
     string getSkillHandlerName()  { return "IceHorizon"; }

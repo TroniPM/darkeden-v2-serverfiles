@@ -55,7 +55,7 @@ public:
 
 	// get/set SkillType
 	SkillType_t getSkillType()   { return m_SkillType; }
-	void setObjectID(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
+	void setObjectID(SkillType_t SkillType)  { m_SkillType = SkillType; }
 
 	// get packet's debug string
 	string toString() ;
@@ -81,16 +81,16 @@ class CGCastingSkillFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGCastingSkillFactory() throw() {}
+	CGCastingSkillFactory()  {}
 	
 	// destructor
-	virtual ~CGCastingSkillFactory() throw() {}
+	virtual ~CGCastingSkillFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGCastingSkill(); }
+	Packet* createPacket()  { return new CGCastingSkill(); }
 
 	// get packet name
 	string getPacketName()  { return "CGCastingSkill"; }

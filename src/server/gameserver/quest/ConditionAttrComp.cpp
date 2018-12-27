@@ -12,7 +12,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 ConditionAttrComp::ConditionAttrComp()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -34,7 +34,7 @@ ConditionAttrComp::ConditionAttrComp()
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 ConditionAttrComp::~ConditionAttrComp()
-	throw()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -44,7 +44,7 @@ ConditionAttrComp::~ConditionAttrComp()
 // is satisfied?
 ////////////////////////////////////////////////////////////////////////////////
 bool ConditionAttrComp::isSatisfied (Creature * pCreature1 , Creature * pCreature2, void* pParam) const 
-	throw () 
+	 
 { 
 	Assert(pCreature2 != NULL);
 	Assert(pCreature2->isPC());
@@ -280,7 +280,7 @@ void ConditionAttrComp::read (PropertyBuffer & propertyBuffer)
 // utility function
 ////////////////////////////////////////////////////////////////////////////////
 void ConditionAttrComp::parseOperator(string& op, uint& var)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -300,7 +300,7 @@ void ConditionAttrComp::parseOperator(string& op, uint& var)
 // utility function
 ////////////////////////////////////////////////////////////////////////////////
 bool ConditionAttrComp::satisfy(uint op, uint current, uint restriction) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -329,7 +329,7 @@ bool ConditionAttrComp::satisfy(uint op, uint current, uint restriction) const
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ConditionAttrComp::toString () const 
-	throw () 
+	 
 { 
 	__BEGIN_TRY
 

@@ -18,7 +18,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 GCChangeInventoryItemNum::GCChangeInventoryItemNum () 
-     throw ()
+     
 {
 	__BEGIN_TRY
 	m_ChangedItemListNum = 0;
@@ -30,7 +30,7 @@ GCChangeInventoryItemNum::GCChangeInventoryItemNum ()
 // destructor
 //////////////////////////////////////////////////////////////////////
 GCChangeInventoryItemNum::~GCChangeInventoryItemNum () 
-    throw ()
+    
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -41,7 +41,7 @@ GCChangeInventoryItemNum::~GCChangeInventoryItemNum ()
 // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
 //////////////////////////////////////////////////////////////////////
 void GCChangeInventoryItemNum::read ( SocketInputStream & iStream ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -94,7 +94,7 @@ void GCChangeInventoryItemNum::write ( SocketOutputStream & oStream )
 //
 //////////////////////////////////////////////////////////////////////
 void GCChangeInventoryItemNum::addChangedItemListElement( ObjectID_t id, ItemNum_t num)
-	throw()
+	
 {
 	__BEGIN_TRY
 

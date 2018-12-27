@@ -76,7 +76,7 @@ GameServerPlayer::~GameServerPlayer ()
 
 
 void GameServerPlayer::processInput()
-	throw ( IOException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -93,7 +93,7 @@ void GameServerPlayer::processInput()
 
 
 void GameServerPlayer::processOutput()
-	throw ( IOException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -182,7 +182,7 @@ void GameServerPlayer::processCommand ()
 //
 //////////////////////////////////////////////////////////////////////
 void GameServerPlayer::sendPacket ( MPacket * pPacket )
-	throw ( ProtocolException , Error )
+	
 {
 	__BEGIN_TRY
 
@@ -232,7 +232,7 @@ void GameServerPlayer::disconnect ( bool bDisconnected )
 // set socket
 //////////////////////////////////////////////////////////////////////
 void GameServerPlayer::setSocket ( Socket * pSocket )
-	throw ()
+	
 {
 	__BEGIN_TRY
 

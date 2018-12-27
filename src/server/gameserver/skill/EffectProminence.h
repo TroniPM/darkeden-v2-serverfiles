@@ -28,7 +28,7 @@ public:
 	string toString() ;
 
 public:
-	void setSendEffectClass(EffectClass eClass) throw() { m_SendEffectClass = eClass; }
+	void setSendEffectClass(EffectClass eClass)  { m_SendEffectClass = eClass; }
 
 	int getDamage(void) const { return m_Damage; }
 	void setDamage(int damage) { m_Damage = damage; }

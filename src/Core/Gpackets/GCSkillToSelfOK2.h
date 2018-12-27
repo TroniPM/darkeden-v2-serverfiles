@@ -61,18 +61,18 @@ public :
 
 	// get / set ObjectID
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 	// get / set SkillType
 	SkillType_t getSkillType()  { return m_SkillType; }
-	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
+	void setSkillType(SkillType_t SkillType)  { m_SkillType = SkillType; }
 
 	// get / set Duration
 	Duration_t getDuration()  { return m_Duration; }
-	void setDuration(Duration_t Duration) throw() { m_Duration = Duration; }
+	void setDuration(Duration_t Duration)  { m_Duration = Duration; }
 
 	BYTE getGrade()  { return m_Grade; }
-	void setGrade( BYTE grade ) throw() { m_Grade = grade; }
+	void setGrade( BYTE grade )  { m_Grade = grade; }
 
 private :
 	
@@ -103,16 +103,16 @@ class GCSkillToSelfOK2Factory : public PacketFactory {
 public :
 	
 	// constructor
-	GCSkillToSelfOK2Factory() throw() {}
+	GCSkillToSelfOK2Factory()  {}
 	
 	// destructor
-	virtual ~GCSkillToSelfOK2Factory() throw() {}
+	virtual ~GCSkillToSelfOK2Factory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCSkillToSelfOK2(); }
+	Packet* createPacket()  { return new GCSkillToSelfOK2(); }
 
 	// get packet name
 	string getPacketName()  { return "GCSkillToSelfOK2"; }

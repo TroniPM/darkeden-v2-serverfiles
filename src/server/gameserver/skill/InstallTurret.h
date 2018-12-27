@@ -16,8 +16,8 @@
 class InstallTurret : public SkillHandler 
 {
 public:
-	InstallTurret() throw() {}
-	~InstallTurret() throw() {}
+	InstallTurret()  {}
+	~InstallTurret()  {}
 	
 public:
     string getSkillHandlerName()  { return "InstallTurret"; }

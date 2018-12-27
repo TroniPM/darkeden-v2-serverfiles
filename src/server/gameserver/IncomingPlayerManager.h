@@ -47,16 +47,16 @@ public:
 	void select() throw(TimeoutException, InterruptedException, Error);
 
 	// process all players' inputs
-	void processInputs() throw(IOException, Error);
+	void processInputs() ;
 
 	// process all players' outputs
-	void processOutputs() throw(IOException, Error);
+	void processOutputs() ;
 
 	// process all players' exceptions
-	void processExceptions() throw(IOException, Error);
+	void processExceptions() ;
 	
 	// process all players' commands
-	void processCommands() throw(IOException, Error);
+	void processCommands() ;
 
 	// accept new connection
 	bool acceptNewConnection();

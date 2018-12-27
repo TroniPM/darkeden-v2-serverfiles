@@ -37,8 +37,8 @@ public:
 	};
 
 public:
-	Obstacle(ObjectID_t objectID) throw() : Object(objectID) {}
-	virtual ~Obstacle() throw() {}
+	Obstacle(ObjectID_t objectID)  : Object(objectID) {}
+	virtual ~Obstacle()  {}
 	
 // methods from Object
 public:

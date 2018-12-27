@@ -14,7 +14,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 SGGuildInfo::SGGuildInfo()
-	throw()
+	
 {
 }
 
@@ -22,7 +22,7 @@ SGGuildInfo::SGGuildInfo()
 // destructor
 //////////////////////////////////////////////////////////////////////
 SGGuildInfo::~SGGuildInfo()
-	throw()
+	
 {
 	__BEGIN_TRY
 	
@@ -36,7 +36,7 @@ SGGuildInfo::~SGGuildInfo()
 // Datagram 객체로부터 데이타를 읽어서 패킷을 초기화한다.
 //////////////////////////////////////////////////////////////////////
 void SGGuildInfo::read ( SocketInputStream& iStream ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 
@@ -58,7 +58,7 @@ void SGGuildInfo::read ( SocketInputStream& iStream )
 // Datagram 객체로 패킷의 바이너리 이미지를 보낸다.
 //////////////////////////////////////////////////////////////////////
 void SGGuildInfo::write ( SocketOutputStream& oStream ) const 
-     throw ( ProtocolException , Error )
+     
 {
 	__BEGIN_TRY
 
@@ -79,7 +79,7 @@ void SGGuildInfo::write ( SocketOutputStream& oStream ) const
 // clear guild info list
 //////////////////////////////////////////////////////////////////////
 void SGGuildInfo::clearGuildInfoList()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -99,7 +99,7 @@ void SGGuildInfo::clearGuildInfoList()
 // execute packet's handler
 //////////////////////////////////////////////////////////////////////
 void SGGuildInfo::execute ( Player * pPlayer ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -113,7 +113,7 @@ void SGGuildInfo::execute ( Player * pPlayer )
 // get packet size
 //////////////////////////////////////////////////////////////////////
 PacketSize_t SGGuildInfo::getPacketSize() const
-	throw()
+	
 {
 	__BEGIN_TRY
 	
@@ -134,7 +134,7 @@ PacketSize_t SGGuildInfo::getPacketSize() const
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 string SGGuildInfo::toString () const
-    throw ()
+    
 {
 	StringStream msg;
 

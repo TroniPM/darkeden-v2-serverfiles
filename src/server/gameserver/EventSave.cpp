@@ -20,7 +20,7 @@ EventSave::EventSave (GamePlayer* pGamePlayer)
 }
 
 EventSave::~EventSave () 
-	throw ()
+	
 {
 }
 			

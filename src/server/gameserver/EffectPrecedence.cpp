@@ -110,7 +110,7 @@ void EffectPrecedence::unaffect (Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, Obje
 }
 
 string EffectPrecedence::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 	msg << "EffectPrecedence("

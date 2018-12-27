@@ -24,7 +24,7 @@ Mutex    Necklace::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Necklace::Necklace()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
@@ -33,7 +33,7 @@ Necklace::Necklace()
 }
 
 Necklace::Necklace(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_ItemType(itemType), m_OptionType(optionType), m_Durability(0)
 {
 	setItemType(itemType);
@@ -180,7 +180,7 @@ void Necklace::save(const string & ownerID, Storage storage, StorageID_t storage
 // get debug string
 //--------------------------------------------------------------------------------
 string Necklace::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -265,7 +265,7 @@ Protection_t Necklace::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string NecklaceInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

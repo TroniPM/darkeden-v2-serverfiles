@@ -48,7 +48,7 @@ public :
 
 	// get/set Amount
 	Gold_t getAmount()  { return m_Amount; }
-	void setAmount( Gold_t amount ) throw() { m_Amount = amount; }
+	void setAmount( Gold_t amount )  { m_Amount = amount; }
 	
 
 private :
@@ -72,7 +72,7 @@ class GCModifyMoneyFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCModifyMoney(); }
+	Packet* createPacket()  { return new GCModifyMoney(); }
 
 	// get packet name
 	string getPacketName()  { return "GCModifyMoney"; }

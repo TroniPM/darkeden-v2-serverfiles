@@ -44,7 +44,7 @@ class GCModifyNicknameFactory : public PacketFactory {
 
 public :
 	
-	Packet* createPacket() throw() { return new GCModifyNickname(); }
+	Packet* createPacket()  { return new GCModifyNickname(); }
 	string getPacketName()  { return "GCModifyNickname"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_MODIFY_NICKNAME; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + NicknameInfo::getMaxSize(); }

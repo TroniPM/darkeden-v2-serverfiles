@@ -132,7 +132,7 @@ void EffectDeleteItem::unaffect (Creature* pCreature)
 // get debug string
 //----------------------------------------------------------------------
 string EffectDeleteItem::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 

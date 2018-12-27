@@ -42,13 +42,13 @@ public:
 	
 public:
 	ObjectID_t getTargetObjectID()  { return m_TargetObjectID; }
-	void setTargetObjectID(ObjectID_t id) throw() { m_TargetObjectID = id; }
+	void setTargetObjectID(ObjectID_t id)  { m_TargetObjectID = id; }
 
 	Gold_t getAmount()  { return m_Gold; }
-	void setAmount(Gold_t gold) throw() { m_Gold = gold; }
+	void setAmount(Gold_t gold)  { m_Gold = gold; }
 
 	BYTE getCode()  { return m_Code; }
-	void setCode(BYTE code) throw() { m_Code = code; }
+	void setCode(BYTE code)  { m_Code = code; }
 
 private:
 	ObjectID_t m_TargetObjectID; // 교환을 원하는 상대방의 ObjectID
@@ -67,7 +67,7 @@ private:
 class CGTradeMoneyFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGTradeMoney(); }
+	Packet* createPacket()  { return new CGTradeMoney(); }
 	string getPacketName()  { return "CGTradeMoney"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_TRADE_MONEY; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + szGold + szBYTE; }

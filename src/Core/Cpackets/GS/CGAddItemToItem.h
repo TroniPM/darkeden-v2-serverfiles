@@ -28,13 +28,13 @@ public:
 
 public:
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 	CoordInven_t getX()  { return m_X; }
-	void setX(Coord_t X) throw() { m_X = X; }
+	void setX(Coord_t X)  { m_X = X; }
 
 	CoordInven_t getY()  { return m_Y; }
-	void setY(Coord_t Y) throw() { m_Y = Y; }
+	void setY(Coord_t Y)  { m_Y = Y; }
 
 private :
 	ObjectID_t   m_ObjectID;	// ObjectID
@@ -49,7 +49,7 @@ private :
 class CGAddItemToItemFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGAddItemToItem(); }
+	Packet* createPacket()  { return new CGAddItemToItem(); }
 	string getPacketName()  { return "CGAddItemToItem"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_ADD_ITEM_TO_ITEM; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + szCoordInven + szCoordInven; }

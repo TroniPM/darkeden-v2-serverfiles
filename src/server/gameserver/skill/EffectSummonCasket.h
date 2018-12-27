@@ -34,7 +34,7 @@ public:
 
 public :
 	int getType()  { return m_Type; }
-	void setType(int t) throw() { m_Type = t; }
+	void setType(int t)  { m_Type = t; }
 
 private :
 	int m_Type;		// casket Á¾·ù

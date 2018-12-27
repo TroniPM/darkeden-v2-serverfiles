@@ -24,11 +24,11 @@ class GCDeleteInventoryItem : public Packet {
 public :
 
 	// constructor
-	GCDeleteInventoryItem() throw()
+	GCDeleteInventoryItem() 
 	{
 	}
 
-	GCDeleteInventoryItem(ObjectID_t objectID) throw()
+	GCDeleteInventoryItem(ObjectID_t objectID) 
 		: m_ObjectID(objectID)
 	{
 	}
@@ -64,7 +64,7 @@ public :
 
 	// get/set object id
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t objectID) throw() { m_ObjectID = objectID; }
+	void setObjectID(ObjectID_t objectID)  { m_ObjectID = objectID; }
 
 private :
 
@@ -87,7 +87,7 @@ class GCDeleteInventoryItemFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCDeleteInventoryItem(); }
+	Packet* createPacket()  { return new GCDeleteInventoryItem(); }
 
 	// get packet name
 	string getPacketName()  { return "GCDeleteInventoryItem"; }

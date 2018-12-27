@@ -16,8 +16,8 @@
 class BackStab: public SkillHandler 
 {
 public:
-	BackStab() throw() {}
-	~BackStab() throw() {}
+	BackStab()  {}
+	~BackStab()  {}
 	
 public:
     string getSkillHandlerName()  { return "BackStab"; }

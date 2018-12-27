@@ -82,11 +82,11 @@ private :
 class GCLoadGearFactory : public PacketFactory 
 {
 public :
-	GCLoadGearFactory() throw() {}
-	virtual ~GCLoadGearFactory() throw() {}
+	GCLoadGearFactory()  {}
+	virtual ~GCLoadGearFactory()  {}
 	
 public:
-	Packet* createPacket() throw() { return new GCLoadGear(); }
+	Packet* createPacket()  { return new GCLoadGear(); }
 	string getPacketName()  { return "GCLoadGear"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_LOAD_GEAR; }
 

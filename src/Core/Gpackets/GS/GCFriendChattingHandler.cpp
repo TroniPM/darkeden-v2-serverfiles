@@ -14,7 +14,7 @@
 #include "DB.h"
 
 void GCFriendChattingHandler::execute ( GCFriendChatting * pPacket , Player * pPlayer )
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 	//cout<<"friend1"<<endl;

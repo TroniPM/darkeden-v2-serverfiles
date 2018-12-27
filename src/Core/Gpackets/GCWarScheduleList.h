@@ -46,7 +46,7 @@ public:
 	string toString() ;
 
 public:
-	void addWarScheduleInfo( WarScheduleInfo* warInfo ) throw() { m_WarScheduleList.push_back( warInfo ); }
+	void addWarScheduleInfo( WarScheduleInfo* warInfo )  { m_WarScheduleList.push_back( warInfo ); }
 	WarScheduleInfo* popWarScheduleInfo() ;
 
 private:
@@ -57,7 +57,7 @@ class GCWarScheduleListFactory : public PacketFactory {
 
 public :
 	
-	Packet* createPacket() throw() { return new GCWarScheduleList(); }
+	Packet* createPacket()  { return new GCWarScheduleList(); }
 	string getPacketName()  { return "GCWarScheduleList"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_WAR_SCHEDULE_LIST; }
 	PacketSize_t getPacketMaxSize()  {

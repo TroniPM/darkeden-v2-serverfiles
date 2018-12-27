@@ -16,8 +16,8 @@
 class Piercing : public SkillHandler 
 {
 public:
-	Piercing() throw() {}
-	~Piercing() throw() {}
+	Piercing()  {}
+	~Piercing()  {}
 	
 public:
     string getSkillHandlerName()  { return "Piercing"; }

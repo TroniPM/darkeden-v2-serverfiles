@@ -51,11 +51,11 @@ public:
 public:
 
 	// get / set ObjectID
-	ObjectID_t getObjectID() throw() { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
-	ShopRackType_t getRackType(void) throw() { return m_RackType; }
-	void setRackType(ShopRackType_t type) throw() { m_RackType = type; }
+	ShopRackType_t getRackType(void)  { return m_RackType; }
+	void setRackType(ShopRackType_t type)  { m_RackType = type; }
 
 private :
 	
@@ -79,7 +79,7 @@ class CGShopRequestListFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGShopRequestList(); }
+	Packet* createPacket()  { return new CGShopRequestList(); }
 
 	// get packet name
 	string getPacketName()  { return "CGShopRequestList"; }

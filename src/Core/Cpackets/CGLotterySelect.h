@@ -60,10 +60,10 @@ public:
 	void setType( BYTE type ) { m_Type = type; }
 
 	DWORD getGiftID()  { return m_GiftID; }
-	void setGiftID( DWORD GiftID ) throw() { m_GiftID = GiftID; }
+	void setGiftID( DWORD GiftID )  { m_GiftID = GiftID; }
 
 	DWORD getQuestLevel()  { return m_QuestLevel; }
-	void setQuestLevel( DWORD QuestLevel ) throw() { m_QuestLevel = QuestLevel; }
+	void setQuestLevel( DWORD QuestLevel )  { m_QuestLevel = QuestLevel; }
 
 private :
 
@@ -87,16 +87,16 @@ class CGLotterySelectFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGLotterySelectFactory() throw() {}
+	CGLotterySelectFactory()  {}
 	
 	// destructor
-	virtual ~CGLotterySelectFactory() throw() {}
+	virtual ~CGLotterySelectFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGLotterySelect(); }
+	Packet* createPacket()  { return new CGLotterySelect(); }
 
 	// get packet name
 	string getPacketName()  { return "CGLotterySelect"; }

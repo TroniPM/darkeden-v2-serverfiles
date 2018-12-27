@@ -16,8 +16,8 @@
 class Sacrifice : public SkillHandler 
 {
 public:
-	Sacrifice() throw() {}
-	~Sacrifice() throw() {}
+	Sacrifice()  {}
+	~Sacrifice()  {}
 	
 public:
     string getSkillHandlerName()  { return "Sacrifice"; }

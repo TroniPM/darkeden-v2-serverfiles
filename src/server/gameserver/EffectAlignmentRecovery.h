@@ -42,13 +42,13 @@ public:
 	virtual string toString() ;
 
 public:
-	void setDelay(Turn_t delay) throw() { m_Delay = delay; }
+	void setDelay(Turn_t delay)  { m_Delay = delay; }
 	Turn_t getDelay()  { return m_Delay; }
 
-	void setQuantity(Alignment_t Quantity) throw() { m_AlignmentQuantity = Quantity; }
+	void setQuantity(Alignment_t Quantity)  { m_AlignmentQuantity = Quantity; }
 	Alignment_t getQuantity()  { return m_AlignmentQuantity; }
 
-	void setPeriod(Turn_t Period) throw() { m_Period = Period; }
+	void setPeriod(Turn_t Period)  { m_Period = Period; }
 	Turn_t getPeriod()  { return m_Period; }
 	
 private:

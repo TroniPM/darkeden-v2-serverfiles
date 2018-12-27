@@ -36,7 +36,7 @@ public:
 	virtual ItemClass getItemClass()  { return ITEM_CLASS_CORPSE; }
 
 	virtual ItemType_t getItemType()  { return MONSTER_CORPSE; }
-	virtual void setItemType(ItemType_t monsterType) throw() { throw UnsupportedError(__PRETTY_FUNCTION__); }
+	virtual void setItemType(ItemType_t monsterType)  { throw UnsupportedError(__PRETTY_FUNCTION__); }
 
 	bool isNextTreasureHead() { return (!m_Treasures.empty() && m_Treasures.front()->getItemClass() == ITEM_CLASS_SKULL); }
 
@@ -45,20 +45,20 @@ public:
 // own methods
 public:
 	MonsterType_t getMonsterType()  { return m_MonsterType; }
-	void setMonsterType(MonsterType_t monsterType) throw() { m_MonsterType = monsterType; }
+	void setMonsterType(MonsterType_t monsterType)  { m_MonsterType = monsterType; }
 
 	string getName()  { return m_Name; }
-	void setName(string name) throw() { m_Name = name; }
+	void setName(string name)  { m_Name = name; }
 
 	string getMonsterName()  { return m_Name; }
-	void setMonsterName(string name) throw() { m_Name = name; }
+	void setMonsterName(string name)  { m_Name = name; }
 
 	Dir_t getDir()  { return m_Dir; }
-	void setDir(Dir_t dir) throw() { m_Dir = dir; }
+	void setDir(Dir_t dir)  { m_Dir = dir; }
 
 	bool gethasHead()  { return m_bhasHead; }
-	void addHead() throw() { m_bhasHead = true; }
-	void removeHead() throw() { m_bhasHead = false; }
+	void addHead()  { m_bhasHead = true; }
+	void removeHead()  { m_bhasHead = false; }
 
 	const string& getHostName(void) const { return m_HostName; }
 	void setHostName(const string& name) { m_HostName = name; }

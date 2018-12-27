@@ -25,7 +25,7 @@
 //////////////////////////////////////////////////////////////////////////////
 
 GCStashList::GCStashList() 
-	throw ()
+	
 {
 	__BEGIN_TRY
  
@@ -45,7 +45,7 @@ GCStashList::GCStashList()
 // destructor
 //////////////////////////////////////////////////////////////////////////////
 GCStashList::~GCStashList() 
-	throw ()
+	
 {
 	__BEGIN_TRY
 	
@@ -69,7 +69,7 @@ GCStashList::~GCStashList()
 // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
 //////////////////////////////////////////////////////////////////////////////
 void GCStashList::read ( SocketInputStream & iStream ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 
@@ -143,7 +143,7 @@ void GCStashList::read ( SocketInputStream & iStream )
 // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
 //////////////////////////////////////////////////////////////////////////////
 void GCStashList::write ( SocketOutputStream & oStream ) const 
-     throw ( ProtocolException , Error )
+     
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -226,7 +226,7 @@ void GCStashList::write ( SocketOutputStream & oStream ) const
 // execute packet's handler
 //////////////////////////////////////////////////////////////////////////////
 void GCStashList::execute ( Player * pPlayer ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -240,7 +240,7 @@ void GCStashList::execute ( Player * pPlayer )
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 PacketSize_t GCStashList::getPacketSize () const 
-	throw ()
+	
 { 
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -293,7 +293,7 @@ PacketSize_t GCStashList::getPacketSize () const
 // get packet's debug string
 //////////////////////////////////////////////////////////////////////////////
 string GCStashList::toString () const
-       throw ()
+       
 {
 	__BEGIN_TRY
 		
@@ -328,7 +328,7 @@ string GCStashList::toString () const
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 bool GCStashList::isExist(BYTE rack, BYTE index) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -341,7 +341,7 @@ bool GCStashList::isExist(BYTE rack, BYTE index) const
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 STASHITEM GCStashList::getStashItem(BYTE rack, BYTE index) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -354,7 +354,7 @@ STASHITEM GCStashList::getStashItem(BYTE rack, BYTE index) const
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void GCStashList::setStashItem(BYTE rack, BYTE index, Item* pItem) 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -579,7 +579,7 @@ void GCStashList::setStashItem(BYTE rack, BYTE index, Item* pItem)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 list<SubItemInfo*>& GCStashList::getSubItems(BYTE rack, BYTE index)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -593,7 +593,7 @@ list<SubItemInfo*>& GCStashList::getSubItems(BYTE rack, BYTE index)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 BYTE GCStashList::getSubItemCount(BYTE rack, BYTE index)
-	throw()
+	
 {
 	__BEGIN_TRY
 

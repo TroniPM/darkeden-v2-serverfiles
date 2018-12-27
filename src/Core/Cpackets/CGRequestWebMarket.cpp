@@ -6,7 +6,7 @@
 #include "CGRequestWebMarket.h"
 
 void CGRequestWebMarket::read (SocketInputStream & iStream) 
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY
 
@@ -16,7 +16,7 @@ void CGRequestWebMarket::read (SocketInputStream & iStream)
 }
 
 void CGRequestWebMarket::write (SocketOutputStream & oStream) const 
-     throw (ProtocolException , Error)
+     
 {
 	__BEGIN_TRY
 
@@ -26,7 +26,7 @@ void CGRequestWebMarket::write (SocketOutputStream & oStream) const
 }
 
 void CGRequestWebMarket::execute (Player* pPlayer) 
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY
 		
@@ -36,7 +36,7 @@ void CGRequestWebMarket::execute (Player* pPlayer)
 }
 
 string CGRequestWebMarket::toString () const
-       throw ()
+       
 {
 	__BEGIN_TRY
 		

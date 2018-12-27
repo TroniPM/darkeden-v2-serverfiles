@@ -40,7 +40,7 @@ public:
 	virtual string getObjectTableName()  { return "EventStarObject"; }
 
 	virtual ItemType_t getItemType()  { return m_ItemType; }
-	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
+	virtual void setItemType(ItemType_t itemType)  { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() ;
 	virtual VolumeHeight_t getVolumeHeight() ;
@@ -48,7 +48,7 @@ public:
 
 public:
 	virtual ItemNum_t getNum()  { return m_Num; }
-	virtual void setNum(ItemNum_t Num) throw() { m_Num = Num; }
+	virtual void setNum(ItemNum_t Num)  { m_Num = Num; }
 
 	bool    isStackable()  { return true; }
 	//bool isSilverWeapon()  { return true; }
@@ -100,10 +100,10 @@ public :
 	virtual BYTE isFunctionAddOption() const { return m_fFunction & FUNCTION_ADD_OPTION; }	// 옵션을 추가한다.
 	virtual BYTE isFunctionEnchantRareOption() const { return m_fFunction & FUNCTION_ENCHANT_RARE_OPTION; }	// 옵션을 더 좋게 바꾼다.
 	virtual BYTE isFunctionTransKit() const { return m_fFunction & FUNCTION_TRANS_KIT; }
-	virtual void setFunctionFlag(BYTE flag) throw() { m_fFunction = flag; }
+	virtual void setFunctionFlag(BYTE flag)  { m_fFunction = flag; }
 
 	virtual int getFunctionValue()  { return m_FunctionValue; }
-	virtual void setFunctionValue(int value) throw() { m_FunctionValue = value; }
+	virtual void setFunctionValue(int value)  { m_FunctionValue = value; }
 
 
 	BYTE	   m_fFunction;		// 기능
@@ -134,7 +134,7 @@ public:
 	virtual string getItemClassName()  { return "EventStar"; }
 	
 public:
-	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new EventStar(ItemType,OptionType,1); }
+	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType)  { return new EventStar(ItemType,OptionType,1); }
 };
 
 //////////////////////////////////////////////////////////////////////////////

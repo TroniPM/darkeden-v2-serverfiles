@@ -28,11 +28,11 @@ class GCFastMove : public Packet {
 public :
 
 	// constructor
-	GCFastMove() throw()
+	GCFastMove() 
 	{
 	}
 
-	GCFastMove(ObjectID_t objectID, Coord_t x, Coord_t y, Coord_t x2, Coord_t y2) throw()
+	GCFastMove(ObjectID_t objectID, Coord_t x, Coord_t y, Coord_t x2, Coord_t y2) 
 		: m_ObjectID(objectID), m_FromX(x), m_FromY(y), m_ToX(x2), m_ToY(y2)
 	{
 	}
@@ -68,7 +68,7 @@ public :
 
 	// get/set Creature ID 
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t objectID) throw() { m_ObjectID = objectID; }
+	void setObjectID(ObjectID_t objectID)  { m_ObjectID = objectID; }
 
 	void setXY(Coord_t x, Coord_t y, Coord_t x2, Coord_t y2)
 	{
@@ -106,7 +106,7 @@ class GCFastMoveFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCFastMove(); }
+	Packet* createPacket()  { return new GCFastMove(); }
 
 	// get packet name
 	string getPacketName()  { return "GCFastMove"; }

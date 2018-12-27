@@ -24,7 +24,7 @@ Mutex    VampireAmulet::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 VampireAmulet::VampireAmulet()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
@@ -32,7 +32,7 @@ VampireAmulet::VampireAmulet()
 }
 
 VampireAmulet::VampireAmulet(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_ItemType(itemType), m_OptionType(optionType), m_Durability(0)
 {
 	setItemType(itemType);
@@ -177,7 +177,7 @@ void VampireAmulet::save(const string & ownerID, Storage storage, StorageID_t st
 // get debug string
 //--------------------------------------------------------------------------------
 string VampireAmulet::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -261,7 +261,7 @@ Protection_t VampireAmulet::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string VampireAmuletInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

@@ -16,8 +16,8 @@
 class AcidStorm : public SkillHandler 
 {
 public:
-	AcidStorm() throw() {}
-	~AcidStorm() throw() {}
+	AcidStorm()  {}
+	~AcidStorm()  {}
 	
 public:
     string getSkillHandlerName()  { return "AcidStorm"; }

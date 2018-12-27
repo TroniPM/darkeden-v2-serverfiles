@@ -44,18 +44,18 @@ public:
 	string toString() ;
 
 public:
-	PCOustersInfo3 & getOustersInfo() throw() { return m_OustersInfo; }
+	PCOustersInfo3 & getOustersInfo()  { return m_OustersInfo; }
 	const PCOustersInfo3 & getOustersInfo()  { return m_OustersInfo; }
-	void setOustersInfo(const PCOustersInfo3 & slayerInfo) throw() { m_OustersInfo = slayerInfo; }
+	void setOustersInfo(const PCOustersInfo3 & slayerInfo)  { m_OustersInfo = slayerInfo; }
 
 	EffectInfo* getEffectInfo()  { return m_pEffectInfo; }
-	void setEffectInfo(EffectInfo* pEffectInfo) throw() { m_pEffectInfo = pEffectInfo; }
+	void setEffectInfo(EffectInfo* pEffectInfo)  { m_pEffectInfo = pEffectInfo; }
 
 	PetInfo* getPetInfo()  { return m_pPetInfo; }
-	void setPetInfo(PetInfo* pPetInfo) throw() { m_pPetInfo = pPetInfo; }
+	void setPetInfo(PetInfo* pPetInfo)  { m_pPetInfo = pPetInfo; }
 
 	NicknameInfo* getNicknameInfo()  { return m_pNicknameInfo; }
-	void setNicknameInfo(NicknameInfo* pNicknameInfo) throw() { m_pNicknameInfo = pNicknameInfo; }
+	void setNicknameInfo(NicknameInfo* pNicknameInfo)  { m_pNicknameInfo = pNicknameInfo; }
 
 	StoreOutlook	getStoreOutlook() const { return m_StoreOutlook; }
 	void		setStoreInfo(StoreInfo* pInfo) { pInfo->makeStoreOutlook(m_StoreOutlook); }
@@ -75,7 +75,7 @@ private:
 class GCAddOustersFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCAddOusters(); }
+	Packet* createPacket()  { return new GCAddOusters(); }
 	string getPacketName()  { return "GCAddOusters"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_OUSTERS; }
 	PacketSize_t getPacketMaxSize() 

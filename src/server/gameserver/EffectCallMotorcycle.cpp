@@ -124,7 +124,7 @@ void EffectCallMotorcycle::unaffect (Creature* pCreature)
 // get debug string
 //----------------------------------------------------------------------
 string EffectCallMotorcycle::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 

@@ -124,7 +124,7 @@ PartnerWaitingManager.o: PartnerWaitingManager.cpp ../PlayerCreature.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \
@@ -143,7 +143,7 @@ PartnerWaitingManager.o: PartnerWaitingManager.cpp ../PlayerCreature.h \
  ../../../Core/EncryptUtility.h /usr/include/STL/queue \
  /home/darkeden/src/libs/stl_deque.h /home/darkeden/src/libs/stl_queue.h \
  ../Inventory.h ../VolumeInfo.h ../couple/PartnerWaitingManager.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  WaitForMeet.h PartnerWaitingManager.h WaitForApart.h \
  ../VariableManager.h ../../../Core/Gpackets/GCNPCResponse.h
@@ -209,7 +209,7 @@ CoupleManager.o: CoupleManager.cpp ../../database/DatabaseManager.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../InventorySlot.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../InventorySlot.h \
  ../Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h ../Garbage.h ../RankBonus.h \
  ../ExpFwd.h ../../../Core/Gpackets/GCMonsterKillQuestInfo.h \
@@ -281,7 +281,7 @@ WaitForMeet.o: WaitForMeet.cpp ../../../Core/Assert.h \
  ../../chinabilling/CBillingPlayerInfo.h \
  ../../chinabilling/CBillingInfo.h \
  ../../../Core/Gpackets/GCReconnectLogin.h \
- ../../../Core/PacketFactory.h /usr/include/STL/bitset \
+ ../../../Core/PacketFactory.h /usr/include/c++/7/bitset \
  ../gameguard/CSAuth.h ../Slayer.h ../PlayerCreature.h ../Creature.h \
  ../Object.h ../EffectManager.h ../Effect.h ../../../Core/EffectInfo.h \
  ../ObjectRegistry.h ../InventorySlot.h ../Item.h \
@@ -378,7 +378,7 @@ WaitForApart.o: WaitForApart.cpp ../../../Core/Assert.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/STL/bitset ../ObjectRegistry.h ../../Mutex.h \
+ /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../InventorySlot.h ../Item.h /usr/include/STL/vector \

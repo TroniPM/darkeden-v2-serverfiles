@@ -38,7 +38,7 @@ public:
 	int getLevel(void) const { return m_Level; }
 	void setLevel(int level) { m_Level = level; }
 
-	void setUserObjectID(ObjectID_t oid) throw() { m_UserObjectID = oid; }
+	void setUserObjectID(ObjectID_t oid)  { m_UserObjectID = oid; }
 	ObjectID_t getUserObjectID()  { return m_UserObjectID; }
 
 	void setSlayer( bool bSlayer = true ) { m_bSlayer = bSlayer; }

@@ -28,13 +28,13 @@ Mutex    Pupa::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Pupa::Pupa()
-	throw()
+	
 : m_ItemType(0)
 {
 }
 
 Pupa::Pupa(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num)
-	throw()
+	
 : m_ItemType(itemType), m_Num(Num)
 {
 	//cout << "Pupa::Pupa(" << getOptionTypeToString(optionType).c_str() << ")" << endl;
@@ -185,7 +185,7 @@ void Pupa::save(const string & ownerID, Storage storage, StorageID_t storageID, 
 // get debug string
 //--------------------------------------------------------------------------------
 string Pupa::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -241,7 +241,7 @@ Weight_t Pupa::getWeight() const
 }
 
 int Pupa::getHPAmount(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -252,7 +252,7 @@ int Pupa::getHPAmount(void) const
 }
 
 int Pupa::getMPAmount(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -263,7 +263,7 @@ int Pupa::getMPAmount(void) const
 }
 
 int Pupa::getHPDelay(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -274,7 +274,7 @@ int Pupa::getHPDelay(void) const
 }
 
 int Pupa::getMPDelay(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -285,7 +285,7 @@ int Pupa::getMPDelay(void) const
 }
 
 int Pupa::getHPQuantity(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -296,7 +296,7 @@ int Pupa::getHPQuantity(void) const
 }
 
 int Pupa::getMPQuantity(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -307,7 +307,7 @@ int Pupa::getMPQuantity(void) const
 }
 
 int Pupa::getHPRecoveryUnit(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -318,7 +318,7 @@ int Pupa::getHPRecoveryUnit(void) const
 }
 
 int Pupa::getMPRecoveryUnit(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -332,7 +332,7 @@ int Pupa::getMPRecoveryUnit(void) const
 // parse effect string
 //--------------------------------------------------------------------------------
 void PupaInfo::parseEffect(const string& effect)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -387,7 +387,7 @@ void PupaInfo::parseEffect(const string& effect)
 // get debug string
 //--------------------------------------------------------------------------------
 string PupaInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "PupaInfo("

@@ -35,7 +35,7 @@ public:
 	virtual void executeVampire(Creature* pCreature1, Creature* pCreature2 = NULL);
 
 	SkillDomainType_t getDomainType(void)  { return m_DomainType;}
-	void setDomainType(SkillDomainType_t domain) throw() { m_DomainType = domain;}
+	void setDomainType(SkillDomainType_t domain)  { m_DomainType = domain;}
 
 private:
 	SkillDomainType_t m_DomainType; // 가르쳐 줄 스킬의 도메인

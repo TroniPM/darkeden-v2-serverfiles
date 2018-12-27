@@ -48,7 +48,7 @@ public:
 
 	// get/set GuildID
 	GuildID_t getGuildID()  { return m_GuildID; }
-	void setGuildID( GuildID_t GuildID ) throw() { m_GuildID = GuildID; }
+	void setGuildID( GuildID_t GuildID )  { m_GuildID = GuildID; }
 
 
 private :
@@ -72,16 +72,16 @@ class CGAcceptUnionFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGAcceptUnionFactory() throw() {}
+	CGAcceptUnionFactory()  {}
 	
 	// destructor
-	virtual ~CGAcceptUnionFactory() throw() {}
+	virtual ~CGAcceptUnionFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGAcceptUnion(); }
+	Packet* createPacket()  { return new CGAcceptUnion(); }
 
 	// get packet name
 	string getPacketName()  { return "CGAcceptUnion"; }

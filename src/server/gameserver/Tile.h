@@ -117,21 +117,21 @@ public:
 	bool isAirBlocked()  { return FLAG_ISSET(m_wFlags, TILE_AIR_BLOCKED) > 0; }
 	bool isUndergroundBlocked()  { return FLAG_ISSET(m_wFlags, TILE_UNDERGROUND_BLOCKED) > 0; }
 	bool isBlocked(Creature::MoveMode mode)  { return FLAG_ISSET(m_wFlags, TILE_GROUND_BLOCKED + mode) > 0; }
-	void setBlocked(Creature::MoveMode mode) throw() { FLAG_SET(m_wFlags, TILE_GROUND_BLOCKED + mode); }
-	void clearBlocked(Creature::MoveMode mode) throw() { FLAG_CLEAR(m_wFlags, TILE_GROUND_BLOCKED + mode); }
+	void setBlocked(Creature::MoveMode mode)  { FLAG_SET(m_wFlags, TILE_GROUND_BLOCKED + mode); }
+	void clearBlocked(Creature::MoveMode mode)  { FLAG_CLEAR(m_wFlags, TILE_GROUND_BLOCKED + mode); }
 
 	bool isFixedGroundBlocked()  { return isGroundBlocked() && !hasWalkingCreature(); }
 
 public:
-	void addObject(Object* pObject) throw(DuplicatedException);
-	void deleteObject(ObjectID_t objectID) throw(NoSuchElementException);
-	void deleteObject(ObjectPriority tilePriority) throw(NoSuchElementException);
+	void addObject(Object* pObject) ;
+	void deleteObject(ObjectID_t objectID) ;
+	void deleteObject(ObjectPriority tilePriority) ;
 	Object* getObject(ObjectID_t objectID) ;
 	Object* getObject(ObjectPriority tilePriority) ;
 
 public:
 	WORD getOption()  { return m_wOption; }
-	void setOption(WORD option) throw() { m_wOption = option; }
+	void setOption(WORD option)  { m_wOption = option; }
 
 public:
 	Sector* getSector(void) const { return m_pSector; }
@@ -139,7 +139,7 @@ public:
 
 public:
 	const slist<Object*> & getObjectList()  { return m_Objects; }
-	slist<Object*> & getObjectList() throw() { return m_Objects; }
+	slist<Object*> & getObjectList()  { return m_Objects; }
 
 	string toString() ;
 

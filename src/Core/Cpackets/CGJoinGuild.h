@@ -48,15 +48,15 @@ public:
 
 	// get/set Guild ID
 	GuildID_t getGuildID()  { return m_GuildID; }
-	void setGuildID( GuildID_t GuildID ) throw() { m_GuildID = GuildID; }
+	void setGuildID( GuildID_t GuildID )  { m_GuildID = GuildID; }
 
 	// get/set Guild Member Rank
 	GuildMemberRank_t getGuildMemberRank()  { return m_GuildMemberRank; }
-	void setGuildMemberRank( GuildMemberRank_t GuildMemberRank ) throw() { m_GuildMemberRank = GuildMemberRank; }
+	void setGuildMemberRank( GuildMemberRank_t GuildMemberRank )  { m_GuildMemberRank = GuildMemberRank; }
 
 	// get/set Guild Member Intro
 	string getGuildMemberIntro()  { return m_GuildMemberIntro; }
-	void setGuildMemberIntro( const string& GuildMemberIntro ) throw() { m_GuildMemberIntro = GuildMemberIntro; }
+	void setGuildMemberIntro( const string& GuildMemberIntro )  { m_GuildMemberIntro = GuildMemberIntro; }
 
 
 private :
@@ -86,16 +86,16 @@ class CGJoinGuildFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGJoinGuildFactory() throw() {}
+	CGJoinGuildFactory()  {}
 	
 	// destructor
-	virtual ~CGJoinGuildFactory() throw() {}
+	virtual ~CGJoinGuildFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGJoinGuild(); }
+	Packet* createPacket()  { return new CGJoinGuild(); }
 
 	// get packet name
 	string getPacketName()  { return "CGJoinGuild"; }

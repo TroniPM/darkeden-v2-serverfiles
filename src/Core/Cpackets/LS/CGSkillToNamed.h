@@ -55,15 +55,15 @@ public:
 
 	// get SkillType
 	SkillType_t getSkillType()   { return m_SkillType; }
-	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
+	void setSkillType(SkillType_t SkillType)  { m_SkillType = SkillType; }
 
 	// get CEffectID
 	CEffectID_t getCEffectID()  { return m_CEffectID; }
-	void setCEffectID(CEffectID_t CEffectID) throw() { m_CEffectID = CEffectID; }
+	void setCEffectID(CEffectID_t CEffectID)  { m_CEffectID = CEffectID; }
 
 	// get Target name
 	const string& getTargetName()  { return m_TargetName; }
-	void setTargetName( const string& targetName ) throw() { m_TargetName = targetName; }
+	void setTargetName( const string& targetName )  { m_TargetName = targetName; }
 	
 	// get packet's debug string
 	string toString() ;
@@ -95,16 +95,16 @@ class CGSkillToNamedFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGSkillToNamedFactory() throw() {}
+	CGSkillToNamedFactory()  {}
 	
 	// destructor
-	virtual ~CGSkillToNamedFactory() throw() {}
+	virtual ~CGSkillToNamedFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGSkillToNamed(); }
+	Packet* createPacket()  { return new CGSkillToNamed(); }
 
 	// get packet name
 	string getPacketName()  { return "CGSkillToNamed"; }

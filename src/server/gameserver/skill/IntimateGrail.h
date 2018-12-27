@@ -16,8 +16,8 @@
 class IntimateGrail : public SkillHandler 
 {
 public:
-	IntimateGrail() throw() {}
-	~IntimateGrail() throw() {}
+	IntimateGrail()  {}
+	~IntimateGrail()  {}
 	
 public :
     string getSkillHandlerName()  { return "IntimateGrail"; }

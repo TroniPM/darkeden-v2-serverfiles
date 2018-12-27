@@ -133,7 +133,7 @@ main.o: main.cpp ../../../Core/Types.h \
  /usr/local/include/cppunit/extensions/TestSuiteFactory.h \
  /usr/local/include/cppunit/extensions/TestFactory.h \
  /usr/local/include/cppunit/extensions/TestFactoryRegistry.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  /usr/local/include/cppunit/extensions/TestSuiteBuilder.h \
  /usr/local/include/cppunit/TestSuite.h \
@@ -294,7 +294,7 @@ ScheduleTest.o: ScheduleTest.cpp ScheduleTest.h \
  /usr/local/include/cppunit/extensions/TestSuiteFactory.h \
  /usr/local/include/cppunit/extensions/TestFactory.h \
  /usr/local/include/cppunit/extensions/TestFactoryRegistry.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  /usr/local/include/cppunit/extensions/TestSuiteBuilder.h \
  /usr/local/include/cppunit/TestSuite.h \

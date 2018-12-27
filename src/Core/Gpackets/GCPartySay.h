@@ -81,7 +81,7 @@ class GCPartySayFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCPartySay(); }
+	Packet* createPacket()  { return new GCPartySay(); }
 
 	// get packet name
 	string getPacketName()  { return "GCPartySay"; }

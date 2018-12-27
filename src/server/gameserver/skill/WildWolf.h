@@ -16,8 +16,8 @@
 class WildWolf: public SkillHandler 
 {
 public:
-	WildWolf() throw() {}
-	~WildWolf() throw() {}
+	WildWolf()  {}
+	~WildWolf()  {}
 	
 public:
     string getSkillHandlerName()  { return "WildWolf"; }

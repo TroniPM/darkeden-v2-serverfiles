@@ -357,7 +357,7 @@ void ActionEnterInstant::execute (Creature * pNPC , Creature * pCreature)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionEnterInstant::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

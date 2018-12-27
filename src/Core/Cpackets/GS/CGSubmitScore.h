@@ -86,16 +86,16 @@ class CGSubmitScoreFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGSubmitScoreFactory() throw() {}
+	CGSubmitScoreFactory()  {}
 	
 	// destructor
-	virtual ~CGSubmitScoreFactory() throw() {}
+	virtual ~CGSubmitScoreFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGSubmitScore(); }
+	Packet* createPacket()  { return new CGSubmitScore(); }
 
 	// get packet name
 	string getPacketName()  { return "CGSubmitScore"; }

@@ -60,7 +60,7 @@ public :
 
 	// get / set ObjectID
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 private :
 	
@@ -82,16 +82,16 @@ class GCRideMotorCycleOKFactory : public PacketFactory {
 public :
 	
 	// constructor
-	GCRideMotorCycleOKFactory() throw() {}
+	GCRideMotorCycleOKFactory()  {}
 	
 	// destructor
-	virtual ~GCRideMotorCycleOKFactory() throw() {}
+	virtual ~GCRideMotorCycleOKFactory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCRideMotorCycleOK(); }
+	Packet* createPacket()  { return new GCRideMotorCycleOK(); }
 
 	// get packet name
 	string getPacketName()  { return "GCRideMotorCycleOK"; }

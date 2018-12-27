@@ -23,12 +23,12 @@ public:
 	void read (SocketInputStream & iStream);
 	void write (SocketOutputStream & oStream) ;
 
-	uint getSize () throw ()
+	uint getSize () 
 	{ 
 		return PCItemInfo::getSize() + szSlotID;
 	}
 
-	static uint getMaxSize () throw ()
+	static uint getMaxSize () 
 	{ 
 		return PCItemInfo::getMaxSize() + szSlotID;
 	}
@@ -36,7 +36,7 @@ public:
 	string toString () ;
 
 public:
-	void setSlotID(SlotID_t SlotID) throw() { m_SlotID = SlotID; }
+	void setSlotID(SlotID_t SlotID)  { m_SlotID = SlotID; }
 	SlotID_t getSlotID()  { return m_SlotID; }
 
 private:

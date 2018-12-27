@@ -29,7 +29,7 @@ class isSameNAME
 public:
 	isSameNAME (const string& Name) : m_Name(Name) {}
 
-	bool operator () (pair<const long unsigned int , Creature *> itr) throw ()
+	bool operator () (pair<const long unsigned int , Creature *> itr) 
 	{
 		return (itr.second)->getName() == m_Name;
 	}
@@ -43,7 +43,7 @@ private:
 // constructor
 //////////////////////////////////////////////////////////////////////////////
 CreatureManager::CreatureManager () 
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -57,7 +57,7 @@ CreatureManager::CreatureManager ()
 // destructor
 //////////////////////////////////////////////////////////////////////////////
 CreatureManager::~CreatureManager () 
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -101,7 +101,7 @@ void CreatureManager::addCreature (Creature* pCreature)
 //////////////////////////////////////////////////////////////////////////////
 void CreatureManager::deleteCreature (ObjectID_t objectID) 
 	 //throw (NoSuchElementException , Error)
-	 throw ()
+	 
 {
 	__BEGIN_TRY
 
@@ -142,7 +142,7 @@ void CreatureManager::deleteCreature (ObjectID_t objectID)
 //////////////////////////////////////////////////////////////////////////////
 Creature* CreatureManager::getCreature (ObjectID_t objectID) const 
            //throw (NoSuchElementException , Error)
-           throw ()
+           
 {
 	__BEGIN_TRY
 		
@@ -164,7 +164,7 @@ Creature* CreatureManager::getCreature (ObjectID_t objectID) const
 //////////////////////////////////////////////////////////////////////////////
 Creature* CreatureManager::getCreature (const string& Name) const 
            //throw (NoSuchElementException , Error)
-           throw ()
+           
 {
 	__BEGIN_TRY
 		
@@ -365,7 +365,7 @@ void CreatureManager::broadcastLevelWarBonusPacket (Packet* pPacket , Creature* 
 // get debug string
 //////////////////////////////////////////////////////////////////////////////
 string CreatureManager::toString () const
-	throw ()
+	
 {
 	StringStream msg;
 	msg << "CreatureManager(" << "Size:" << (int)m_Creatures.size();

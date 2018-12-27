@@ -116,7 +116,7 @@ void ActionShowTaxBalance::execute (Creature * pCreature1 , Creature * pCreature
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionShowTaxBalance::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

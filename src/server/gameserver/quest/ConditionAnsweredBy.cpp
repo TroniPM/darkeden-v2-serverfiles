@@ -43,7 +43,7 @@ void ConditionAnsweredBy::read (PropertyBuffer & propertyBuffer)
 	// get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ConditionAnsweredBy::toString () const 
-	throw () 
+	 
 { 
 	__BEGIN_TRY
 

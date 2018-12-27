@@ -59,11 +59,11 @@ public :
 
 	// get/set creature ID 
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t creatureID) throw() { m_ObjectID = creatureID; }
+	void setObjectID(ObjectID_t creatureID)  { m_ObjectID = creatureID; }
 
 	// get /set CurrentHP
 	HP_t getCurrentHP()  { return m_CurrentHP; }
-	void setCurrentHP(HP_t CurrentHP) throw() { m_CurrentHP = CurrentHP; }
+	void setCurrentHP(HP_t CurrentHP)  { m_CurrentHP = CurrentHP; }
 
 private :
 	
@@ -89,7 +89,7 @@ class GCHPRecoveryEndToOthersFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCHPRecoveryEndToOthers(); }
+	Packet* createPacket()  { return new GCHPRecoveryEndToOthers(); }
 
 	// get packet name
 	string getPacketName()  { return "GCHPRecoveryEndToOthers"; }

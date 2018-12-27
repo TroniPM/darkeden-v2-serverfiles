@@ -16,8 +16,8 @@
 class Striking2 : public SkillHandler 
 {
 public:
-	Striking2() throw() {}
-	~Striking2() throw() {}
+	Striking2()  {}
+	~Striking2()  {}
 
 public:
     string getSkillHandlerName()  { return "Striking2"; }

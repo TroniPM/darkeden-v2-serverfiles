@@ -67,16 +67,16 @@ class CGStoreSignFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGStoreSignFactory() throw() {}
+	CGStoreSignFactory()  {}
 	
 	// destructor
-	virtual ~CGStoreSignFactory() throw() {}
+	virtual ~CGStoreSignFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGStoreSign(); }
+	Packet* createPacket()  { return new CGStoreSign(); }
 
 	// get packet name
 	string getPacketName()  { return "CGStoreSign"; }

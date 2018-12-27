@@ -60,15 +60,15 @@ public:
 
 	// get/set guildID
 	GuildID_t getGuildID()  { return m_GuildID; }
-	void setGuildID( GuildID_t guildID ) throw() { m_GuildID = guildID; }
+	void setGuildID( GuildID_t guildID )  { m_GuildID = guildID; }
 
 	// get/set guild name
 	const string& getName()  { return m_Name; }
-	void setName( const string& name ) throw() { m_Name = name; }
+	void setName( const string& name )  { m_Name = name; }
 
 	// get/set sender
 	const string& getSender()  { return m_Sender; }
-	void setSender( const string& sender ) throw() { m_Sender = sender; }
+	void setSender( const string& sender )  { m_Sender = sender; }
 
 private :
 
@@ -97,7 +97,7 @@ class SGExpelGuildMemberOKFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new SGExpelGuildMemberOK(); }
+	Packet* createPacket()  { return new SGExpelGuildMemberOK(); }
 
 	// get packet name
 	string getPacketName()  { return "SGExpelGuildMemberOK"; }

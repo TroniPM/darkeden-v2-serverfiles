@@ -16,8 +16,8 @@
 class BlazeWalk2 : public SkillHandler 
 {
 public:
-	BlazeWalk2() throw() {}
-	~BlazeWalk2() throw() {}
+	BlazeWalk2()  {}
+	~BlazeWalk2()  {}
 
 public :
     string getSkillHandlerName()  { return "BlazeWalk2"; }

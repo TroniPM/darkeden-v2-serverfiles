@@ -17,7 +17,7 @@ class EventShutdown : public Event
 {
 public:
 	EventShutdown( GamePlayer* pGamePlayer ) ;
-	~EventShutdown() throw() {}
+	~EventShutdown()  {}
 			
 public:
 	virtual EventClass getEventClass()  { return EVENT_CLASS_SHUTDOWN; }

@@ -29,11 +29,11 @@ public :
 
 	// get/set zone id
 	ZoneID_t getZoneID ()  { return m_ZoneID; }
-	void setZoneID ( ZoneID_t zoneID ) throw () { m_ZoneID = zoneID; }
+	void setZoneID ( ZoneID_t zoneID )  { m_ZoneID = zoneID; }
 
 	// get/set zone group id
 	ZoneGroupID_t getZoneGroupID ()  { return m_ZoneGroupID; }
-	void setZoneGroupID ( ZoneGroupID_t zoneGroupID ) throw () { m_ZoneGroupID = zoneGroupID; }
+	void setZoneGroupID ( ZoneGroupID_t zoneGroupID )  { m_ZoneGroupID = zoneGroupID; }
 
 	// get debug string
 	string toString () 

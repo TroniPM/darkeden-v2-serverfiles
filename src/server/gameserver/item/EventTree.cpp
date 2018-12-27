@@ -26,13 +26,13 @@ Mutex    EventTree::m_Mutex;
 //////////////////////////////////////////////////////////////////////////////
 
 EventTree::EventTree()
-	throw()
+	
 {
 	m_ItemType = 0;
 }
 
 EventTree::EventTree(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num)
-	throw()
+	
 {
 	m_ItemType = itemType;
 	m_Num      = Num;
@@ -150,7 +150,7 @@ void EventTree::save(const string & ownerID, Storage storage, StorageID_t storag
 }
 
 string EventTree::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -198,7 +198,7 @@ Weight_t EventTree::getWeight() const
 //////////////////////////////////////////////////////////////////////////////
 
 string EventTreeInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "EventTreeInfo("

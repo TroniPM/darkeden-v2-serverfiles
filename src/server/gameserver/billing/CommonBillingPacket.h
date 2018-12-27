@@ -87,7 +87,7 @@ class CommonBillingPacketFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CommonBillingPacket(); }
+	Packet* createPacket()  { return new CommonBillingPacket(); }
 
 	// get packet name
 	string getPacketName()  { return "CommonBillingPacket"; }

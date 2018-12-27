@@ -63,20 +63,20 @@ public :
 
 	// get / set ObjectID
 //	ObjectID_t getObjectID()  { return m_ObjectID; }
-//	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+//	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 	// get / set ObjectID
 	ObjectID_t getTargetObjectID()  { return m_TargetObjectID; }
-	void setTargetObjectID(ObjectID_t TargetObjectID) throw() { m_TargetObjectID = TargetObjectID; }
+	void setTargetObjectID(ObjectID_t TargetObjectID)  { m_TargetObjectID = TargetObjectID; }
 //	Coord_t getTargetX()  { return m_X;}
 //	Coord_t getTargetY()  { return m_Y;}
-//	void setTargetXY(Coord_t X, Coord_t Y) throw() { m_X = X; m_Y = Y;}
+//	void setTargetXY(Coord_t X, Coord_t Y)  { m_X = X; m_Y = Y;}
 
 	// get / set success
 //	bool getSkillSuccess()  { return m_bSuccess;}
-//	void setSkillSuccess(bool bSuccess) throw() { m_bSuccess = bSuccess;}
+//	void setSkillSuccess(bool bSuccess)  { m_bSuccess = bSuccess;}
 //	
-    void setXYDir(Coord_t x, Coord_t y, Coord_t dir) throw()
+    void setXYDir(Coord_t x, Coord_t y, Coord_t dir) 
     {
         m_X = x; m_Y = y; m_dir = dir;
     }
@@ -84,7 +84,7 @@ public :
     Coord_t getY()  { return m_Y;}
     Dir_t getDir()  { return m_dir;}
 	SkillType_t getSkillType()  { return m_SkillType;}
-	void setSkillType(SkillType_t s) throw() { m_SkillType = s;}
+	void setSkillType(SkillType_t s)  { m_SkillType = s;}
 
 private :
 	
@@ -118,16 +118,16 @@ class GCKnocksTargetBackOK4Factory : public PacketFactory {
 public :
 	
 	// constructor
-	GCKnocksTargetBackOK4Factory() throw() {}
+	GCKnocksTargetBackOK4Factory()  {}
 	
 	// destructor
-	virtual ~GCKnocksTargetBackOK4Factory() throw() {}
+	virtual ~GCKnocksTargetBackOK4Factory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCKnocksTargetBackOK4(); }
+	Packet* createPacket()  { return new GCKnocksTargetBackOK4(); }
 
 	// get packet name
 	string getPacketName()  { return "GCKnocksTargetBackOK4"; }

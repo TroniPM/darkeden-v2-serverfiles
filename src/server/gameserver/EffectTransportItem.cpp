@@ -173,7 +173,7 @@ void EffectTransportItem::unaffect (Creature* pCreature)
 // get debug string
 //----------------------------------------------------------------------
 string EffectTransportItem::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 

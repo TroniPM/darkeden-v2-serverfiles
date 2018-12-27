@@ -57,8 +57,8 @@ class GCAddItemToItemVerify : public Packet
 {
 
 public:
-	GCAddItemToItemVerify() throw() { m_Code = ADD_ITEM_TO_ITEM_VERIFY_MAX; m_Parameter = 0;}
-	virtual ~GCAddItemToItemVerify() throw() {}
+	GCAddItemToItemVerify()  { m_Code = ADD_ITEM_TO_ITEM_VERIFY_MAX; m_Parameter = 0;}
+	virtual ~GCAddItemToItemVerify()  {}
 
 public:
 	void read(SocketInputStream & iStream) ;
@@ -72,13 +72,13 @@ public:
 	
 public:
 	BYTE getCode(void)  { return m_Code;}
-	void setCode(BYTE code) throw() { m_Code = code;}
+	void setCode(BYTE code)  { m_Code = code;}
 
 	uint getParameter(void)  { return m_Parameter; }
-	void setParameter(uint parameter) throw() { m_Parameter = parameter; }
+	void setParameter(uint parameter)  { m_Parameter = parameter; }
 
-	void setThirdOptionType(const list<OptionType_t>& optionType) throw() { m_ThirdOptionType = optionType; }
-	std::list<OptionType_t>& getThirdOptionType() throw() { return m_ThirdOptionType; }
+	void setThirdOptionType(const list<OptionType_t>& optionType)  { m_ThirdOptionType = optionType; }
+	std::list<OptionType_t>& getThirdOptionType()  { return m_ThirdOptionType; }
 
 private: 
 	BYTE m_Code;
@@ -94,7 +94,7 @@ private:
 class GCAddItemToItemVerifyFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCAddItemToItemVerify(); }
+	Packet* createPacket()  { return new GCAddItemToItemVerify(); }
 	string getPacketName()  { return "GCAddItemToItemVerify"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_ITEM_TO_ITEM_VERIFY; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE + szuint + 255; }

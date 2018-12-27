@@ -90,7 +90,7 @@ class GCPartyPositionFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCPartyPosition(); }
+	Packet* createPacket()  { return new GCPartyPosition(); }
 
 	// get packet name
 	string getPacketName()  { return "GCPartyPosition"; }

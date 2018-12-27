@@ -32,14 +32,14 @@ const string RelicType2String[] =
 // constructor
 //--------------------------------------------------------------------------------
 Relic::Relic()
-	throw()
+	
 : m_ItemType(0), m_Durability(0)
 {
 	m_EnchantLevel = 0;
 }
 
 Relic::Relic(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 : m_ItemType(itemType), m_Durability(0)
 {
 	try {
@@ -180,7 +180,7 @@ void Relic::save(const string & ownerID, Storage storage, StorageID_t storageID,
 // get debug string
 //--------------------------------------------------------------------------------
 string Relic::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -264,7 +264,7 @@ Protection_t Relic::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string RelicInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

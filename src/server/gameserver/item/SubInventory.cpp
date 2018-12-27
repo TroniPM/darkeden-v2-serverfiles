@@ -26,7 +26,7 @@ Mutex    SubInventory::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 SubInventory::SubInventory()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0), m_pInventory(NULL)
 {
 	setItemType(0);
@@ -62,7 +62,7 @@ SubInventory::SubInventory(ItemType_t itemType, const list<OptionType_t>& option
 // destructor
 //--------------------------------------------------------------------------------
 SubInventory::~SubInventory()
-	throw()
+	
 {
 	SAFE_DELETE(m_pInventory);
 }
@@ -270,7 +270,7 @@ void SubInventory::makePCItemInfo(PCItemInfo& result) const
 // get debug string
 //--------------------------------------------------------------------------------
 string SubInventory::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -331,7 +331,7 @@ Weight_t SubInventory::getWeight() const
 // get pocket count
 //--------------------------------------------------------------------------------
 PocketNum_t SubInventory::getPocketWidthCount(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -343,7 +343,7 @@ PocketNum_t SubInventory::getPocketWidthCount(void) const
 }
 
 PocketNum_t SubInventory::getPocketHeightCount(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -360,7 +360,7 @@ PocketNum_t SubInventory::getPocketHeightCount(void) const
 // get debug string
 //--------------------------------------------------------------------------------
 string SubInventoryInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

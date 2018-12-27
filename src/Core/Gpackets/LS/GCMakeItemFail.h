@@ -79,16 +79,16 @@ class GCMakeItemFailFactory : public PacketFactory {
 public :
 	
 	// constructor
-	GCMakeItemFailFactory() throw() {}
+	GCMakeItemFailFactory()  {}
 	
 	// destructor
-	virtual ~GCMakeItemFailFactory() throw() {}
+	virtual ~GCMakeItemFailFactory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCMakeItemFail(); }
+	Packet* createPacket()  { return new GCMakeItemFail(); }
 
 	// get packet name
 	string getPacketName()  { return "GCMakeItemFail"; }

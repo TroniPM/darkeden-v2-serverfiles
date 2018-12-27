@@ -56,10 +56,10 @@ public :
 	virtual string toString () ;
 
 public :
-	void sendPayInit() throw( ProtocolException, Error );
-	void sendPayCheck( CommonBillingPacket* pPacket ) throw( ProtocolException, Error );
-	void sendPayLogin( Player* pPlayer ) throw( ProtocolException, Error );
-	void sendPayLogout( Player* pPlayer ) throw( ProtocolException, Error );
+	void sendPayInit() ;
+	void sendPayCheck( CommonBillingPacket* pPacket ) ;
+	void sendPayLogin( Player* pPlayer ) ;
+	void sendPayLogout( Player* pPlayer ) ;
 
 	int getRetryCount() const { return m_RetryCount; }
 	int getRetryValue() const { return m_RetryValue; }

@@ -30,23 +30,23 @@ public :
 
 	// get/set GameServerID
 	ServerID_t getServerID()  { return m_ServerID; }
-	void setServerID( ServerID_t ServerID ) throw() { m_ServerID = ServerID; }
+	void setServerID( ServerID_t ServerID )  { m_ServerID = ServerID; }
 
 	// get/set host name
 	string getNickname ()  { return m_Nickname; }
-	void setNickname ( string nickname ) throw () { m_Nickname = nickname; }
+	void setNickname ( string nickname )  { m_Nickname = nickname; }
 	
 	// get/set ip address
 	string getIP ()  { return m_IP; }
-	void setIP ( string ip ) throw () { m_IP = ip; }
+	void setIP ( string ip )  { m_IP = ip; }
 
 	// get/set port
 	uint getTCPPort ()  { return m_TCPPort; }
-	void setTCPPort ( uint port ) throw () { m_TCPPort = port; }
+	void setTCPPort ( uint port )  { m_TCPPort = port; }
 
 	// get/set UDP port
 	uint getUDPPort ()  { return m_UDPPort; }
-	void setUDPPort ( uint port ) throw () { m_UDPPort = port; }
+	void setUDPPort ( uint port )  { m_UDPPort = port; }
 
 	// get/set GameServerGroupID
 	ServerGroupID_t getGroupID()  { return m_GroupID; }
@@ -58,7 +58,7 @@ public :
 
 	// get/set ServerStat
 	ServerStatus getServerStat()  { return m_ServerStat; }
-	void setServerStat( ServerStatus Stat ) throw() { m_ServerStat = Stat; }
+	void setServerStat( ServerStatus Stat )  { m_ServerStat = Stat; }
 
 	// get debug string
 	string toString ()  

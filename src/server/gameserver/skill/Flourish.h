@@ -16,8 +16,8 @@
 class Flourish: public SkillHandler 
 {
 public:
-	Flourish() throw() {}
-	~Flourish() throw() {}
+	Flourish()  {}
+	~Flourish()  {}
 	
 public:
     string getSkillHandlerName()  { return "Flourish"; }

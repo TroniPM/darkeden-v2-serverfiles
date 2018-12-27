@@ -34,7 +34,7 @@ public:
 
 public:
 	// 모든 자료들을 날린다.
-	void clearAll(void) throw() { clear(); m_Num2x2 = 0; m_Num2x2Temp = 0;}
+	void clearAll(void)  { clear(); m_Num2x2 = 0; m_Num2x2Temp = 0;}
 
 	// 아이템을 더한다.
 	bool addItem(Item* pItem) ;

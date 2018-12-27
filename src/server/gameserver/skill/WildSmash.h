@@ -16,8 +16,8 @@
 class WildSmash : public SkillHandler 
 {
 public:
-	WildSmash() throw() {}
-	~WildSmash() throw() {}
+	WildSmash()  {}
+	~WildSmash()  {}
 	
 public:
     string getSkillHandlerName()  { return "WildSmash"; }

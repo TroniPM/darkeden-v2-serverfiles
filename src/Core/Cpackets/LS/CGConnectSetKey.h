@@ -29,13 +29,13 @@ class CGConnectSetKey : public Packet {
 public:
 	
     // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
-    void read ( SocketInputStream & iStream ) throw ( ProtocolException , Error );
+    void read ( SocketInputStream & iStream ) ;
 		    
     // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
     void write ( SocketOutputStream & oStream ) ;
 
 	// execute packet's handler
-	void execute ( Player * pPlayer ) throw ( ProtocolException , Error );
+	void execute ( Player * pPlayer ) ;
 
 	// get packet id
 	PacketID_t getPacketID ()  { return PACKET_CG_ENCODE_KEY; }
@@ -60,9 +60,9 @@ public:
 
 	WORD getHashKey ()  { return m_HashKey; }
 
-	void setEncryptKey ( WORD key ) throw () { m_EncryptKey = key; }
+	void setEncryptKey ( WORD key )  { m_EncryptKey = key; }
 
-	void setHashKey ( WORD key )	throw () { m_HashKey = key; }
+	void setHashKey ( WORD key )	 { m_HashKey = key; }
 
 private :
 
@@ -85,7 +85,7 @@ class CGConnectSetKeyFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet * createPacket () throw () { return new CGConnectSetKey(); }
+	Packet * createPacket ()  { return new CGConnectSetKey(); }
 
 	// get packet name
 	string getPacketName()  { return "CGConnectSetKey"; }

@@ -16,8 +16,8 @@
 class DoubleImpact : public SkillHandler 
 {
 public:
-	DoubleImpact() throw() {}
-	~DoubleImpact() throw() {}
+	DoubleImpact()  {}
+	~DoubleImpact()  {}
 	
 public:
     string getSkillHandlerName()  { return "DoubleImpact"; }

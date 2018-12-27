@@ -31,12 +31,12 @@ public:
 	string toString() ;
 	
 public:
-	ObjectID_t getObjectID() throw() { return m_ObjectID; }
-	void       setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
-	BYTE       getRack(void) throw() { return m_Rack;}
-	void       setRack(BYTE rack) throw() { m_Rack = rack;}
-	BYTE       getIndex(void) throw() { return m_Index;}
-	void       setIndex(BYTE index) throw() { m_Index = index;}
+	ObjectID_t getObjectID()  { return m_ObjectID; }
+	void       setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
+	BYTE       getRack(void)  { return m_Rack;}
+	void       setRack(BYTE rack)  { m_Rack = rack;}
+	BYTE       getIndex(void)  { return m_Index;}
+	void       setIndex(BYTE index)  { m_Index = index;}
 
 private:
 	ObjectID_t m_ObjectID;
@@ -55,7 +55,7 @@ private:
 class CGStashToMouseFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGStashToMouse(); }
+	Packet* createPacket()  { return new CGStashToMouse(); }
 	string getPacketName()  { return "CGStashToMouse"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_STASH_TO_MOUSE; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + szBYTE*2; }

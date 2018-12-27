@@ -16,8 +16,8 @@
 class SummonWaterElemental : public SkillHandler 
 {
 public:
-	SummonWaterElemental() throw() {}
-	~SummonWaterElemental() throw() {}
+	SummonWaterElemental()  {}
+	~SummonWaterElemental()  {}
 	
 public:
     string getSkillHandlerName()  { return "SummonWaterElemental"; }

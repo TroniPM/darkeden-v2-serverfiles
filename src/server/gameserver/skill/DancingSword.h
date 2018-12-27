@@ -16,8 +16,8 @@
 class DancingSword : public SkillHandler 
 {
 public:
-	DancingSword() throw() {}
-	~DancingSword() throw() {}
+	DancingSword()  {}
+	~DancingSword()  {}
 	
 public:
     string getSkillHandlerName()  { return "DancingSword"; }

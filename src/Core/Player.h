@@ -1,9 +1,9 @@
 //////////////////////////////////////////////////////////////////////
-// 
-// Filename    : Player.h 
+//
+// Filename    : Player.h
 // Written by  : reiot@ewestsoft.com
 // Description : 게임서버/로그인서버/테스트 클라이언트용 플레이어 클래스
-// 
+//
 //////////////////////////////////////////////////////////////////////
 
 #ifndef __PLAYER_H__
@@ -38,82 +38,104 @@ class Packet;
 const bool UNDISCONNECTED = true;
 const bool DISCONNECTED   = false;
 
-class Player {
+class Player
+{
 
 public :
 
-	// constructor
-	Player ();
-	Player (Socket * pSocket);
-	
-	// destructor
-	virtual ~Player ();
+    // constructor
+    Player ();
+    Player (Socket *pSocket);
 
-	// read socket's receive buffer and fill input buffer
-	virtual void processInput () ;
-	
-	// parse packet and execute handler for the packet
-	virtual void processCommand (bool Option = true) ;
-	
-	// flush output buffer to socket's send buffer
-	virtual void processOutput () throw (IOException, Error, ProtocolException);
-	
-	// send packet to player's output buffer
-	virtual void sendPacket (Packet* pPacket);
+    // destructor
+    virtual ~Player ();
 
-	// send stream to player's output buffer
-	virtual void sendStream( SocketOutputStream* pOutputStream );
+    // read socket's receive buffer and fill input buffer
+    virtual void processInput () ;
 
-	// disconnect
-	// 플레이어의 연결을 종료할 때, 상대편이 적절하게 로그아웃하지 않을 경우 소켓의 연결이 
-	// 이미 끊겨 있으므로 disconnect(DISCONNECTED) 를 사용해서 연결을 종료해야 한다. 반면, 
-	// 정당하게 로그아웃을 한 경우에는 disconnect(UNDISCONNECTED) 를 사용해야 한다.
-	virtual void disconnect (bool bDisconnected = DISCONNECTED) ;
-	
-	// get/set socket
-	Socket* getSocket () throw () { return m_pSocket; }
-	void setSocket (Socket* pSocket);
+    // parse packet and execute handler for the packet
+    virtual void processCommand (bool Option = true) ;
 
-	// get/set player ID
-	string getID ()  { return m_ID; }
-	void setID (const string & id) throw () { m_ID = id; }
+    // flush output buffer to socket's send buffer
+    virtual void processOutput () ;
 
-	// get / set ServerGroupID
-	ServerGroupID_t getServerGroupID()  { return m_ServerGroupID; }
-	void setServerGroupID(const ServerGroupID_t ServerGroupID) throw() { m_ServerGroupID = ServerGroupID; }
+    // send packet to player's output buffer
+    virtual void sendPacket (Packet *pPacket);
 
-	// get / set MAC Address
-	const BYTE* getMacAddress() const { return m_MacAddress; }
-	void setMacAddress(const BYTE* ma) { copy( ma, ma+6, (BYTE*)m_MacAddress ); }
+    // send stream to player's output buffer
+    virtual void sendStream( SocketOutputStream *pOutputStream );
 
-	// get debug string
-	virtual string toString () ;
+    // disconnect
+    // 플레이어의 연결을 종료할 때, 상대편이 적절하게 로그아웃하지 않을 경우 소켓의 연결이
+    // 이미 끊겨 있으므로 disconnect(DISCONNECTED) 를 사용해서 연결을 종료해야 한다. 반면,
+    // 정당하게 로그아웃을 한 경우에는 disconnect(UNDISCONNECTED) 를 사용해야 한다.
+    virtual void disconnect (bool bDisconnected = DISCONNECTED) ;
 
-	//add by viva
-	//void setKey(WORD EncryptKey, WORD HashKey) ; 
-	
+    // get/set socket
+    Socket *getSocket ()
+    {
+        return m_pSocket;
+    }
+    void setSocket (Socket *pSocket);
+
+    // get/set player ID
+    string getID ()
+    {
+        return m_ID;
+    }
+    void setID (const string &id)
+    {
+        m_ID = id;
+    }
+
+    // get / set ServerGroupID
+    ServerGroupID_t getServerGroupID()
+    {
+        return m_ServerGroupID;
+    }
+    void setServerGroupID(const ServerGroupID_t ServerGroupID)
+    {
+        m_ServerGroupID = ServerGroupID;
+    }
+
+    // get / set MAC Address
+    const BYTE *getMacAddress() const
+    {
+        return m_MacAddress;
+    }
+    void setMacAddress(const BYTE *ma)
+    {
+        copy( ma, ma + 6, (BYTE *)m_MacAddress );
+    }
+
+    // get debug string
+    virtual string toString () ;
+
+    //add by viva
+    //void setKey(WORD EncryptKey, WORD HashKey) ;
+
 protected :
 
-	// player id
-	string m_ID;
-	
-	// TCP client socket
-	Socket* m_pSocket;
-	
-	// buffered socket input stream
-	SocketInputStream* m_pInputStream;
+    // player id
+    string m_ID;
 
-	// buffered socket output stream
-	SocketOutputStream* m_pOutputStream;
+    // TCP client socket
+    Socket *m_pSocket;
 
-	// 이 플레이어가 현재 존재하는 서버의 위치
-	ServerGroupID_t m_ServerGroupID;
+    // buffered socket input stream
+    SocketInputStream *m_pInputStream;
 
-	// MAC Address
-	BYTE m_MacAddress[6];
+    // buffered socket output stream
+    SocketOutputStream *m_pOutputStream;
 
-	//add by viva 2008-12-31
-	//BYTE* pHashTable;
+    // 이 플레이어가 현재 존재하는 서버의 위치
+    ServerGroupID_t m_ServerGroupID;
+
+    // MAC Address
+    BYTE m_MacAddress[6];
+
+    //add by viva 2008-12-31
+    //BYTE* pHashTable;
 };
 
 #endif

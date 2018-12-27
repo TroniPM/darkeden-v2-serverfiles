@@ -16,8 +16,8 @@
 class Cerberus : public SkillHandler 
 {
 public:
-	Cerberus() throw() {}
-	~Cerberus() throw() {}
+	Cerberus()  {}
+	~Cerberus()  {}
 	
 public:
     string getSkillHandlerName()  { return "Cerberus"; }

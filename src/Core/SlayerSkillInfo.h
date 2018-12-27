@@ -46,7 +46,7 @@ public :
 	// 최적화시, 미리 계산된 정수를 사용한다.
 	PacketSize_t getSize ();
 
-	static uint getMaxSize () throw () { 
+	static uint getMaxSize ()  { 
 		return szBYTE + szSkillDomainType + szBYTE + (SubSlayerSkillInfo::getMaxSize()* 255);
 	}
 
@@ -55,7 +55,7 @@ public :
 
 	// get / set New Skill
 	bool isLearnNewSkill()  { return m_bLearnNewSkill; }
-	void setLearnNewSkill(bool NewSkill) throw() { m_bLearnNewSkill = NewSkill; }
+	void setLearnNewSkill(bool NewSkill)  { m_bLearnNewSkill = NewSkill; }
 
 	// get /set DomainType
 	SkillDomainType_t getDomainiType()  { return m_DomainType; }
@@ -63,16 +63,16 @@ public :
 
 	// get / set ListNumber
 	BYTE getListNum()  { return m_ListNum; }
-	void setListNum(BYTE ListNum) throw() { m_ListNum = ListNum; }
+	void setListNum(BYTE ListNum)  { m_ListNum = ListNum; }
 
 	// add / delete / clear S List
-	void addListElement(SubSlayerSkillInfo* pSubSlayerSkillInfo) throw() { m_SubSlayerSkillInfoList.push_back(pSubSlayerSkillInfo); }
+	void addListElement(SubSlayerSkillInfo* pSubSlayerSkillInfo)  { m_SubSlayerSkillInfoList.push_back(pSubSlayerSkillInfo); }
 
 	// ClearList
-	void clearList() throw() { m_SubSlayerSkillInfoList.clear(); m_ListNum = 0; }
+	void clearList()  { m_SubSlayerSkillInfoList.clear(); m_ListNum = 0; }
 
 	// pop front Element in Status List
-	SubSlayerSkillInfo* popFrontListElement() throw() 
+	SubSlayerSkillInfo* popFrontListElement()  
 	{ 
 		SubSlayerSkillInfo* TempSubSlayerSkillInfo = m_SubSlayerSkillInfoList.front(); m_SubSlayerSkillInfoList.pop_front(); return TempSubSlayerSkillInfo; 
 	}

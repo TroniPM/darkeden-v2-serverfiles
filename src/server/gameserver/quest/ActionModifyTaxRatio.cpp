@@ -116,7 +116,7 @@ void ActionModifyTaxRatio::execute (Creature * pCreature1 , Creature * pCreature
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionModifyTaxRatio::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

@@ -23,7 +23,7 @@
 // is satisfied?
 ////////////////////////////////////////////////////////////////////////////////
 bool ConditionEnterHolyLand::isSatisfied (Creature * pCreature1 , Creature * pCreature2, void* pParam) const 
-	throw () 
+	 
 { 
 	/*if (!g_pVariableManager->isActiveHolyLand())
 	{
@@ -113,7 +113,7 @@ void ConditionEnterHolyLand::read (PropertyBuffer & propertyBuffer)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ConditionEnterHolyLand::toString () const 
-	throw () 
+	 
 { 
 	__BEGIN_TRY
 

@@ -63,19 +63,19 @@ public:
 /*	
 	// get/set X Coordicate
 	Coord_t getX()  { return m_X; }
-	void setX(Coord_t x) throw() { m_X = x; }
+	void setX(Coord_t x)  { m_X = x; }
 
 	// get/set Y Coordicate
 	Coord_t getY()  { return m_Y; }
-	void setY(Coord_t y) throw() { m_Y = y; }
+	void setY(Coord_t y)  { m_Y = y; }
 
 	// get/set Direction
 	Dir_t getDir()  { return m_Dir; }
-	void setDir(Dir_t dir) throw() { m_Dir = dir; }
+	void setDir(Dir_t dir)  { m_Dir = dir; }
 */	
 	// get/set ObjectID
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 	
 private :
 	
@@ -101,16 +101,16 @@ class CGBloodDrainFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGBloodDrainFactory() throw() {}
+	CGBloodDrainFactory()  {}
 	
 	// destructor
-	virtual ~CGBloodDrainFactory() throw() {}
+	virtual ~CGBloodDrainFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGBloodDrain(); }
+	Packet* createPacket()  { return new CGBloodDrain(); }
 
 	// get packet name
 	string getPacketName()  { return "CGBloodDrain"; }

@@ -110,7 +110,7 @@ bool isBlockIP(const string& ip);
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CLLoginHandler::execute (CLLogin* pPacket , Player* pPlayer)
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 		
@@ -1047,7 +1047,7 @@ void addLoginPlayerData(const string& ID, const string& ip, const string& SSN, c
 }
 
 bool CLLoginHandler::checkNetMarbleClient (CLLogin* pPacket , Player* pPlayer)
-	     throw (ProtocolException , Error)
+	     
 {
     __BEGIN_TRY __BEGIN_DEBUG_EX
 #ifdef __LOGIN_SERVER__
@@ -1085,7 +1085,7 @@ bool CLLoginHandler::checkNetMarbleClient (CLLogin* pPacket , Player* pPlayer)
 
 
 bool CLLoginHandler::checkFreePass (CLLogin* pPacket , Player* pPlayer)
-	     throw (ProtocolException , Error)
+	     
 {
     __BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -1307,7 +1307,7 @@ bool isBlockMAC(const string& MAC)
 
 }
 bool CLLoginHandler::checkWebLogin( CLLogin* pPacket, Player* pPlayer )
-	throw ( ProtocolException, Error )
+	
 {
 	__BEGIN_TRY
 

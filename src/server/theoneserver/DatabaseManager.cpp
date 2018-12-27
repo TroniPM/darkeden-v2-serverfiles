@@ -17,7 +17,7 @@
 #include "DB.h"
 
 DatabaseManager::DatabaseManager () 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -29,7 +29,7 @@ DatabaseManager::DatabaseManager ()
 }
 
 DatabaseManager::~DatabaseManager () 
-	throw ()
+	
 {
 	__BEGIN_TRY
 	
@@ -116,7 +116,7 @@ void DatabaseManager::init ()
 }
 
 void DatabaseManager::addConnection ( int TID,  Connection * pConnection ) 
-	throw ( DuplicatedException )
+	
 {
 	__BEGIN_TRY
 
@@ -142,7 +142,7 @@ void DatabaseManager::addConnection ( int TID,  Connection * pConnection )
 }
 
 Connection * DatabaseManager::getConnection ( const string& connName ) 
-	throw ( NoSuchElementException )
+	
 {
 	__BEGIN_TRY
 		

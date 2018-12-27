@@ -82,16 +82,16 @@ class GCMakeItemOKFactory : public PacketFactory {
 public :
 	
 	// constructor
-	GCMakeItemOKFactory() throw() {}
+	GCMakeItemOKFactory()  {}
 	
 	// destructor
-	virtual ~GCMakeItemOKFactory() throw() {}
+	virtual ~GCMakeItemOKFactory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCMakeItemOK(); }
+	Packet* createPacket()  { return new GCMakeItemOK(); }
 
 	// get packet name
 	string getPacketName()  { return "GCMakeItemOK"; }

@@ -16,8 +16,8 @@
 class EnergyDrop : public SkillHandler 
 {
 public:
-	EnergyDrop() throw() {}
-	~EnergyDrop() throw() {}
+	EnergyDrop()  {}
+	~EnergyDrop()  {}
 	
 public:
     string getSkillHandlerName()  { return "EnergyDrop"; }

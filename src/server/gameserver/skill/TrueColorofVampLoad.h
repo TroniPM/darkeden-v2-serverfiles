@@ -16,8 +16,8 @@
 class TrueColorofVampLoad : public SkillHandler 
 {
 public:
-	TrueColorofVampLoad() throw() {}
-	~TrueColorofVampLoad() throw() {}
+	TrueColorofVampLoad()  {}
+	~TrueColorofVampLoad()  {}
 	
 public:
 	string getSkillHandlerName()  { return "TrueColorofVampLoad"; }

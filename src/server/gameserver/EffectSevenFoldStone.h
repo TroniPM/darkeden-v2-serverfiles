@@ -39,13 +39,13 @@ public:
 
 public:
 	Level_t getLevel()  { return m_Level; }
-	void setLevel(Level_t Level) throw() { m_Level = Level; }
+	void setLevel(Level_t Level)  { m_Level = Level; }
 
 	EnchantLevel_t getHeroOption()  { return m_Silver; }
-	void setHeroOption(EnchantLevel_t Silver) throw() { m_Silver = Silver; }
+	void setHeroOption(EnchantLevel_t Silver)  { m_Silver = Silver; }
 
 	int getEffectType()  { return m_EffectLevel; }
-	void setEffectType(int Level) throw() { m_EffectLevel = Level; }
+	void setEffectType(int Level)  { m_EffectLevel = Level; }
 
 	VSDateTime&	getLastFeedTime() { return m_LastFeedTime; }
 	void		setFeedTime(const VSDateTime& time) { m_LastFeedTime = time; }

@@ -25,7 +25,7 @@ ConnectionInfoManager* g_pConnectionInfoManager = NULL;
 // constructor
 //////////////////////////////////////////////////////////////////////////////
 ConnectionInfoManager::ConnectionInfoManager () 
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -45,7 +45,7 @@ ConnectionInfoManager::ConnectionInfoManager ()
 // destructor
 //////////////////////////////////////////////////////////////////////////////
 ConnectionInfoManager::~ConnectionInfoManager () 
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -341,7 +341,7 @@ void ConnectionInfoManager::heartbeat ()
 // get debug string
 //////////////////////////////////////////////////////////////////////////////
 string ConnectionInfoManager::toString () const
-	throw ()
+	
 {
 	StringStream msg;
 

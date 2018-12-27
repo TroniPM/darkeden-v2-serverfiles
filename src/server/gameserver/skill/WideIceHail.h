@@ -16,8 +16,8 @@
 class WideIceHail : public SkillHandler 
 {
 public:
-	WideIceHail() throw() { }
-	~WideIceHail() throw() {}
+	WideIceHail()  { }
+	~WideIceHail()  {}
 	
 public:
     string getSkillHandlerName()  { return "WideIceHail"; }

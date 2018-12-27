@@ -16,8 +16,8 @@
 class MiracleShield : public SkillHandler 
 {
 public:
-	MiracleShield() throw() {}
-	~MiracleShield() throw() {}
+	MiracleShield()  {}
+	~MiracleShield()  {}
 	
 public:
     string getSkillHandlerName()  { return "MiracleShield"; }

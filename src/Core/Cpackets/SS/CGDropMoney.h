@@ -56,7 +56,7 @@ public:
 	
 public:
 	Gold_t getAmount(void)  { return m_Amount;}
-	void setAmount(Gold_t amount) throw() { m_Amount = amount;}
+	void setAmount(Gold_t amount)  { m_Amount = amount;}
 
 private :
 	
@@ -77,7 +77,7 @@ class CGDropMoneyFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGDropMoney(); }
+	Packet* createPacket()  { return new CGDropMoney(); }
 
 	// get packet name
 	string getPacketName()  { return "CGDropMoney"; }

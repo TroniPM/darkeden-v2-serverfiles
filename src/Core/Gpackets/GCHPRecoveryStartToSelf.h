@@ -61,15 +61,15 @@ public :
 
 	// get / set Delay
 	BYTE getDelay()  { return m_Delay; }
-	void setDelay(BYTE Delay) throw() { m_Delay = Delay; }
+	void setDelay(BYTE Delay)  { m_Delay = Delay; }
 
 	// get / set Period
 	HP_t getPeriod()  { return m_Period; }
-	void setPeriod(HP_t Period) throw() { m_Period = Period; }
+	void setPeriod(HP_t Period)  { m_Period = Period; }
 
 	// get / set Quantity
 	HP_t getQuantity()  { return m_Quantity; }
-	void setQuantity(HP_t Quantity) throw() { m_Quantity = Quantity; }
+	void setQuantity(HP_t Quantity)  { m_Quantity = Quantity; }
 
 private :
 	
@@ -99,16 +99,16 @@ class GCHPRecoveryStartToSelfFactory : public PacketFactory {
 public :
 	
 	// constructor
-	GCHPRecoveryStartToSelfFactory() throw() {}
+	GCHPRecoveryStartToSelfFactory()  {}
 	
 	// destructor
-	virtual ~GCHPRecoveryStartToSelfFactory() throw() {}
+	virtual ~GCHPRecoveryStartToSelfFactory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCHPRecoveryStartToSelf(); }
+	Packet* createPacket()  { return new GCHPRecoveryStartToSelf(); }
 
 	// get packet name
 	string getPacketName()  { return "GCHPRecoveryStartToSelf"; }

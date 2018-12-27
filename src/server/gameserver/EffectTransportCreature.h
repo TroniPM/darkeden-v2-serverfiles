@@ -41,9 +41,9 @@ public:
 	virtual string toString() ;
 
 public:
-	void setZoneName(const string& zoneName) throw() { m_ZoneName = zoneName; }
+	void setZoneName(const string& zoneName)  { m_ZoneName = zoneName; }
 
-	void setMessageTick(Turn_t tick) throw() { m_MessageTick = tick; }
+	void setMessageTick(Turn_t tick)  { m_MessageTick = tick; }
 	Turn_t getMessageTick()  { return m_MessageTick; }
 	
 private:

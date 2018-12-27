@@ -18,7 +18,7 @@
 //////////////////////////////////////////////////////////////////////////////
 
 EventHeadCount::EventHeadCount(GamePlayer* pGamePlayer) 
-	throw()
+	
 : Event(pGamePlayer)
 {
 	Creature * pCreature = m_pGamePlayer->getCreature();
@@ -32,7 +32,7 @@ EventHeadCount::EventHeadCount(GamePlayer* pGamePlayer)
 }
 
 EventHeadCount::~EventHeadCount() 
-	throw()
+	
 {
 }
 
@@ -81,7 +81,7 @@ void EventHeadCount::activate ()
 }
 
 string EventHeadCount::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 	msg << "EventHeadCount("

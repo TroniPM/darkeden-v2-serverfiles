@@ -63,7 +63,7 @@ class CGVisibleFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGVisible(); }
+	Packet* createPacket()  { return new CGVisible(); }
 
 	// get packet name
 	string getPacketName()  { return "CGVisible"; }

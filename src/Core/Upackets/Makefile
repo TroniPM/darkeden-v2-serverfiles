@@ -153,7 +153,7 @@ CUBeginUpdate.o: CUBeginUpdate.cpp CUBeginUpdate.h ../Packet.h \
  /usr/include/bits/uio.h ../SocketOutputStream.h ../PacketFactory.h \
  ../UpdateManager.h ../Update.h ../UpdateDef.h ../Assert.h \
  ../Resource.h ../ResourceManager.h ../Properties.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h
 CUBeginUpdateHandler.o: CUBeginUpdateHandler.cpp CUBeginUpdate.h \
  ../Packet.h ../Types.h ../types/SystemTypes.h \

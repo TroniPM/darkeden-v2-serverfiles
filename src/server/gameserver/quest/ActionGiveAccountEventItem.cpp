@@ -291,7 +291,7 @@ void ActionGiveAccountEventItem::execute(Creature * pCreature1 , Creature * pCre
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionGiveAccountEventItem::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

@@ -17,7 +17,7 @@ class VoodooRing : public SkillHandler
 {
 public:
 	VoodooRing() ;
-	~VoodooRing() throw() {}
+	~VoodooRing()  {}
 	
 public:
     string getSkillHandlerName()  { return "VoodooRing"; }

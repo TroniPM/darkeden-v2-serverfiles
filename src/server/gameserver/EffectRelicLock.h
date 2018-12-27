@@ -32,7 +32,7 @@ public:
 
 public:
 	//bool   isLockTime() const;
-	//void   setLockTime(const Timeval& tv) throw() { m_LockTime = tv; }
+	//void   setLockTime(const Timeval& tv)  { m_LockTime = tv; }
 
 private:
 	//Timeval m_LockTime;

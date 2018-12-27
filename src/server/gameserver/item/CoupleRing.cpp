@@ -29,13 +29,13 @@ Mutex    CoupleRing::m_Mutex;
 //////////////////////////////////////////////////////////////////////////////
 
 CoupleRing::CoupleRing()
-	throw()
+	
 {
 	m_ItemType = 0;
 }
 
 CoupleRing::CoupleRing(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 : m_ItemType(itemType), m_OptionType(optionType)
 {
 	__BEGIN_TRY
@@ -154,7 +154,7 @@ void CoupleRing::save(const string & ownerID, Storage storage, StorageID_t stora
 }
 
 string CoupleRing::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "CoupleRing("
@@ -240,7 +240,7 @@ bool CoupleRing::hasPartnerItem()
 //////////////////////////////////////////////////////////////////////////////
 
 string CoupleRingInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "CoupleRingInfo("

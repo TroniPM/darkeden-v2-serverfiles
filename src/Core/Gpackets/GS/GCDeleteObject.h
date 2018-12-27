@@ -39,11 +39,11 @@ class GCDeleteObject : public Packet {
 public :
 
 	// constructor
-	GCDeleteObject() throw()
+	GCDeleteObject() 
 	{
 	}
 
-	GCDeleteObject(ObjectID_t objectID) throw()
+	GCDeleteObject(ObjectID_t objectID) 
 		: m_ObjectID(objectID)
 	{
 	}
@@ -79,7 +79,7 @@ public :
 
 	// get/set object id
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t objectID) throw() { m_ObjectID = objectID; }
+	void setObjectID(ObjectID_t objectID)  { m_ObjectID = objectID; }
 
 private :
 
@@ -102,7 +102,7 @@ class GCDeleteObjectFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCDeleteObject(); }
+	Packet* createPacket()  { return new GCDeleteObject(); }
 
 	// get packet name
 	string getPacketName()  { return "GCDeleteObject"; }

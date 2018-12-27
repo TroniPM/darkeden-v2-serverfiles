@@ -65,7 +65,7 @@ public :
 
 	// get/set playerID
 	const string& getCommand()  { return m_Command; }
-	void setCommand(const string& command) throw() { m_Command = command; }
+	void setCommand(const string& command)  { m_Command = command; }
 	
 private :
 
@@ -86,7 +86,7 @@ class GGCommandFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GGCommand(); }
+	Packet* createPacket()  { return new GGCommand(); }
 
 	// get packet name
 	string getPacketName()  { return "GGCommand"; }

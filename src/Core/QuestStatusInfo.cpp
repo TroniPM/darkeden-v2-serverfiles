@@ -1,6 +1,6 @@
 #include "QuestStatusInfo.h"
 
-void QuestStatusInfo::read(SocketInputStream& iStream) throw(ProtocolException, Error)
+void QuestStatusInfo::read(SocketInputStream& iStream) 
 {
 	iStream.read(m_QuestID);
 	iStream.read(m_Status);

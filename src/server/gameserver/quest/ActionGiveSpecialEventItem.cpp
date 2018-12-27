@@ -300,7 +300,7 @@ void ActionGiveSpecialEventItem::execute (Creature * pCreature1 , Creature * pCr
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionGiveSpecialEventItem::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

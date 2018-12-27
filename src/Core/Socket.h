@@ -74,7 +74,7 @@ public :
  
     // get/set socket's nonblocking status
     bool isNonBlocking ();
-    void setNonBlocking (bool on = true);
+    void setNonBlocking (bool on);
  
     // get/set receive buffer size
     uint getReceiveBufferSize ();

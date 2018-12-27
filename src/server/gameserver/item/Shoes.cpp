@@ -24,7 +24,7 @@ Mutex    Shoes::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Shoes::Shoes()
-	throw()
+	
 {
 	setItemType(0);
 	setDurability(0);
@@ -32,7 +32,7 @@ Shoes::Shoes()
 }
 
 Shoes::Shoes(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	setItemType(itemType);
 	setOptionType(optionType);
@@ -174,7 +174,7 @@ void Shoes::save(const string & ownerID, Storage storage, StorageID_t storageID,
 // get debug string
 //--------------------------------------------------------------------------------
 string Shoes::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -260,7 +260,7 @@ Defense_t Shoes::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string ShoesInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

@@ -41,7 +41,7 @@ private:
 class CGPartyLeaveFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGPartyLeave(); }
+	Packet* createPacket()  { return new CGPartyLeave(); }
 	string getPacketName()  { return "CGPartyLeave"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_PARTY_LEAVE; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE + 10; }

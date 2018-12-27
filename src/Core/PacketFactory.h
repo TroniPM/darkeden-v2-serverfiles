@@ -23,10 +23,10 @@ class PacketFactory {
 public :
 	
 	// destructor
-	virtual ~PacketFactory () throw () {}
+	virtual ~PacketFactory ()  {}
 
 	// create packet
-	virtual Packet* createPacket () throw () = 0;
+	virtual Packet* createPacket ()  = 0;
 
 	// get packet name
 	virtual string getPacketName ()  = 0;

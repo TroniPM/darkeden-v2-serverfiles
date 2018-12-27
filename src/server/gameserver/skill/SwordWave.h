@@ -17,7 +17,7 @@ class SwordWave : public SkillHandler
 {
 public:
 	SwordWave() ;
-	~SwordWave() throw() {}
+	~SwordWave()  {}
 	
 public:
     string getSkillHandlerName()  { return "SwordWave"; }

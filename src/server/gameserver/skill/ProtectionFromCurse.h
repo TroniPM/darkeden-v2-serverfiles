@@ -16,8 +16,8 @@
 class ProtectionFromCurse: public SkillHandler 
 {
 public:
-	ProtectionFromCurse() throw() {}
-	~ProtectionFromCurse() throw() {}
+	ProtectionFromCurse()  {}
+	~ProtectionFromCurse()  {}
 
 public:
     string getSkillHandlerName()  { return "ProtectionFromCurse"; }

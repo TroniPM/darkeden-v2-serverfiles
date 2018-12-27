@@ -43,7 +43,7 @@ public:
 			   szDWORD;			// Date
 	}
 
-	static PacketSize_t getMaxSize() throw()
+	static PacketSize_t getMaxSize() 
 	{
 		return szGuildID +		// Guild ID
 			   szBYTE +			// Guild Type
@@ -54,7 +54,7 @@ public:
 			   szDWORD;			// Date
 	}
 
-    void read(SocketInputStream & iStream) throw(ProtocolException, Error)
+    void read(SocketInputStream & iStream) 
 	{
 		__BEGIN_TRY
 
@@ -115,23 +115,23 @@ public:
 
 	// get/set Guild ID
 	GuildID_t getGuildID()  { return m_GuildID; }
-	void setGuildID( GuildID_t GuildID ) throw() { m_GuildID = GuildID; }
+	void setGuildID( GuildID_t GuildID )  { m_GuildID = GuildID; }
 
 	// get/set OfferGuild Type (JOIN-신청자 목록, QUIT-탈퇴신청한 길드)
 	BYTE	getGuildType()	 { return m_Type; }
-	void	setGuildType( BYTE Type ) throw() { m_Type = Type; }
+	void	setGuildType( BYTE Type )  { m_Type = Type; }
 
 	// get/set Guild Name
 	const string& getGuildName()  { return m_GuildName; }
-	void setGuildName( const string& GuildName ) throw() { m_GuildName = GuildName; }
+	void setGuildName( const string& GuildName )  { m_GuildName = GuildName; }
 
 	// get/set Guild Master
 	const string& getGuildMaster()  { return m_MasterName; }
-	void setGuildMaster( const string& GuildMaster ) throw() { m_MasterName = GuildMaster; }
+	void setGuildMaster( const string& GuildMaster )  { m_MasterName = GuildMaster; }
 
 	// get/set Date
 	const DWORD getDate()  { return m_Date; }
-	void setDate( DWORD date  ) throw() { m_Date = date; }
+	void setDate( DWORD date  )  { m_Date = date; }
 
 private :
 
@@ -174,7 +174,7 @@ public :
 
 	list<SingleGuildUnionOffer*>	getUnionOfferList()  { return m_UnionOfferList; }
 	
-	void	addUnionOfferList(SingleGuildUnionOffer* pUnionOffer) throw()
+	void	addUnionOfferList(SingleGuildUnionOffer* pUnionOffer) 
 	{
 		m_UnionOfferList.push_back(pUnionOffer);
 	}
@@ -197,7 +197,7 @@ class GCUnionOfferListFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCUnionOfferList(); }
+	Packet* createPacket()  { return new GCUnionOfferList(); }
 
 	// get packet name
 	string getPacketName()  { return "GCUnionOfferList"; }

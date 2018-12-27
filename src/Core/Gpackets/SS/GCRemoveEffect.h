@@ -51,27 +51,27 @@ public :
 	// get packet's body size
 	// 최적화시, 미리 계산된 정수를 사용한다.
 	PacketSize_t getPacketSize()  { return szObjectID + szBYTE + szEffectID* m_ListNum; }
-	static PacketSize_t getPacketMaxSize() throw() { return 255;}
+	static PacketSize_t getPacketMaxSize()  { return 255;}
 
 	// get packet's debug string
 	string toString() ;
 
 	// get / set ListNumber
 	BYTE getListNum()  { return m_ListNum; }
-	void setListNum(BYTE ListNum) throw() { m_ListNum = ListNum; }
+	void setListNum(BYTE ListNum)  { m_ListNum = ListNum; }
 
 	// get&set ObjectID
 	ObjectID_t getObjectID()  { return m_ObjectID;}
-	void setObjectID(ObjectID_t id) throw() { m_ObjectID = id;}
+	void setObjectID(ObjectID_t id)  { m_ObjectID = id;}
 
 	// add / delete / clear S List
 	void addEffectList(EffectID_t id) ; 
 
 	// ClearList
-	void clearList() throw() { m_EffectList.clear(); m_ListNum = 0; }
+	void clearList()  { m_EffectList.clear(); m_ListNum = 0; }
 
 	// pop front Element in Status List
-	WORD popFrontListElement() throw() { EffectID_t effectID = m_EffectList.front(); m_EffectList.pop_front(); return effectID; }
+	WORD popFrontListElement()  { EffectID_t effectID = m_EffectList.front(); m_EffectList.pop_front(); return effectID; }
 
 protected :
 	
@@ -97,16 +97,16 @@ class GCRemoveEffectFactory : public PacketFactory {
 public :
 	
 	// constructor
-	GCRemoveEffectFactory() throw() {}
+	GCRemoveEffectFactory()  {}
 	
 	// destructor
-	virtual ~GCRemoveEffectFactory() throw() {}
+	virtual ~GCRemoveEffectFactory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCRemoveEffect(); }
+	Packet* createPacket()  { return new GCRemoveEffect(); }
 
 	// get packet name
 	string getPacketName()  { return "GCRemoveEffect"; }

@@ -16,8 +16,8 @@
 class MagmaDetonation1 : public SkillHandler 
 {
 public:
-	MagmaDetonation1() throw() {}
-	~MagmaDetonation1() throw() {}
+	MagmaDetonation1()  {}
+	~MagmaDetonation1()  {}
 	
 public:
     string getSkillHandlerName()  { return "MagmaDetonation1"; }

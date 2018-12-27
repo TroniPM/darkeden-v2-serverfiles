@@ -62,29 +62,29 @@ public :
 
 	// get / set ObjectID
 	ObjectID_t getTargetObjectID()  { return m_ObjectID; }
-	void setTargetObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setTargetObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 	// get / set SkillType
 	SkillType_t getSkillType()  { return m_SkillType; }
-	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
+	void setSkillType(SkillType_t SkillType)  { m_SkillType = SkillType; }
 	
 /*
 	// get / set Target X,Y
 	Coord_t getTargetX()  { return m_TargetX; }
 	Coord_t getTargetY()  { return m_TargetY; }
-	void setTargetXY(Coord_t X, Coord_t Y) throw() { m_TargetX = X; m_TargetY = Y; }
+	void setTargetXY(Coord_t X, Coord_t Y)  { m_TargetX = X; m_TargetY = Y; }
 */
 	
 	// get / set Duration
 	Duration_t getDuration()  { return m_Duration; }
-	void setDuration(Duration_t Duration) throw() { m_Duration = Duration; }
+	void setDuration(Duration_t Duration)  { m_Duration = Duration; }
 	
 	// get / set CEffectID 
 //	CEffectID_t getCEffectID()  { return m_CEffectID; }
-//	void setCEffectID(CEffectID_t e) throw() { m_CEffectID = e; }
+//	void setCEffectID(CEffectID_t e)  { m_CEffectID = e; }
 
 	BYTE getGrade()  { return m_Grade; }
-	void setGrade( BYTE grade ) throw() { m_Grade = grade; }
+	void setGrade( BYTE grade )  { m_Grade = grade; }
 
 private :
 	
@@ -118,16 +118,16 @@ class GCSkillToObjectOK4Factory : public PacketFactory {
 public :
 	
 	// constructor
-	GCSkillToObjectOK4Factory() throw() {}
+	GCSkillToObjectOK4Factory()  {}
 	
 	// destructor
-	virtual ~GCSkillToObjectOK4Factory() throw() {}
+	virtual ~GCSkillToObjectOK4Factory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCSkillToObjectOK4(); }
+	Packet* createPacket()  { return new GCSkillToObjectOK4(); }
 
 	// get packet name
 	string getPacketName()  { return "GCSkillToObjectOK4"; }

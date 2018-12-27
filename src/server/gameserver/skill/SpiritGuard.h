@@ -16,8 +16,8 @@
 class SpiritGuard : public SkillHandler 
 {
 public:
-	SpiritGuard() throw() {}
-	~SpiritGuard() throw() {}
+	SpiritGuard()  {}
+	~SpiritGuard()  {}
 	
 public:
     string getSkillHandlerName()  { return "SpiritGuard"; }

@@ -45,7 +45,7 @@ public:
 	string toString() ;
 	
 	BYTE getErrorID()  { return m_ErrorID; }
-	void setErrorID(BYTE ErrorID) throw() { m_ErrorID = ErrorID; }
+	void setErrorID(BYTE ErrorID)  { m_ErrorID = ErrorID; }
 
 private : 
 
@@ -68,7 +68,7 @@ class LCRegisterPlayerErrorFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new LCRegisterPlayerError(); }
+	Packet* createPacket()  { return new LCRegisterPlayerError(); }
 
 	// get packet name
 	string getPacketName()  { return "LCRegisterPlayerError"; }

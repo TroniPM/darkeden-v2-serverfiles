@@ -29,15 +29,15 @@ public :
 
 	// get/set zone group id
 	WorldID_t getWorldID()  { return m_WorldID; }
-	void setWorldID ( WorldID_t WorldID ) throw () { m_WorldID = WorldID ; }
+	void setWorldID ( WorldID_t WorldID )  { m_WorldID = WorldID ; }
 
 	// get/set zone group id
 	ZoneGroupID_t getServerGroupID()  { return m_ServerGroupID; }
-	void setServerGroupID ( ZoneGroupID_t GroupID ) throw () { m_ServerGroupID = GroupID ; }
+	void setServerGroupID ( ZoneGroupID_t GroupID )  { m_ServerGroupID = GroupID ; }
 
 	// get/set zone group id
 	UserNum_t getUserNum()  { return m_UserNum; }
-	void setUserNum ( UserNum_t UserNum ) throw () { m_UserNum = UserNum; }
+	void setUserNum ( UserNum_t UserNum )  { m_UserNum = UserNum; }
 
 
 	// get debug string

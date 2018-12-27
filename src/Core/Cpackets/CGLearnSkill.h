@@ -29,10 +29,10 @@ public:
 
 public:
 	SkillType_t getSkillType()   { return m_SkillType; }
-	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
+	void setSkillType(SkillType_t SkillType)  { m_SkillType = SkillType; }
 
 	SkillDomainType_t getSkillDomainType()  { return m_DomainType;}
-	void setSkillDomainType(SkillDomainType_t DomainType) throw() { m_DomainType = DomainType;}
+	void setSkillDomainType(SkillDomainType_t DomainType)  { m_DomainType = DomainType;}
 
 private:
 	SkillType_t       m_SkillType;  // 기술의 종류
@@ -46,7 +46,7 @@ private:
 class CGLearnSkillFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGLearnSkill(); }
+	Packet* createPacket()  { return new CGLearnSkill(); }
 	string getPacketName()  { return "CGLearnSkill"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_LEARN_SKILL; }
 	PacketSize_t getPacketMaxSize()  { return szSkillType+szSkillDomainType; }

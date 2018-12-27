@@ -90,7 +90,7 @@ MasterLairManager::MasterLairManager (Zone* pZone)
 //
 ////////////////////////////////////////////////////////////////////////////////
 MasterLairManager::~MasterLairManager () 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

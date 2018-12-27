@@ -25,14 +25,14 @@ Mutex    CoreZap::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 CoreZap::CoreZap()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
 }
 
 CoreZap::CoreZap(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	setItemType(itemType);
 	setOptionType(optionType);
@@ -170,7 +170,7 @@ void CoreZap::save(const string & ownerID, Storage storage, StorageID_t storageI
 // get debug string
 //--------------------------------------------------------------------------------
 string CoreZap::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -253,7 +253,7 @@ Protection_t CoreZap::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string CoreZapInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

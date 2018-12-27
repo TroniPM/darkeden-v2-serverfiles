@@ -17,7 +17,7 @@ class ChaosSplitter : public SkillHandler
 {
 public:
 	ChaosSplitter() ;
-	~ChaosSplitter() throw() {}
+	~ChaosSplitter()  {}
 	
 public:
     string getSkillHandlerName()  { return "ChaosSplitter"; }

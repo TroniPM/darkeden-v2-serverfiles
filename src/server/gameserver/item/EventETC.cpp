@@ -27,13 +27,13 @@ Mutex    EventETC::m_Mutex;
 //////////////////////////////////////////////////////////////////////////////
 
 EventETC::EventETC()
-	throw()
+	
 {
 	m_ItemType = 0;
 }
 
 EventETC::EventETC(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num)
-	throw()
+	
 {
 	m_ItemType = itemType;
 	m_Num      = Num;
@@ -151,7 +151,7 @@ void EventETC::save(const string & ownerID, Storage storage, StorageID_t storage
 }
 
 string EventETC::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -199,7 +199,7 @@ Weight_t EventETC::getWeight() const
 //////////////////////////////////////////////////////////////////////////////
 
 string EventETCInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "EventETCInfo("

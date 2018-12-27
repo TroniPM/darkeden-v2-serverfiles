@@ -24,7 +24,7 @@ Mutex    Ring::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Ring::Ring()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
@@ -35,7 +35,7 @@ Ring::Ring()
 }
 
 Ring::Ring(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_ItemType(itemType), m_OptionType(optionType), m_Durability(0)
 {
 	setItemType(itemType);
@@ -179,7 +179,7 @@ void Ring::save(const string & ownerID, Storage storage, StorageID_t storageID, 
 // get debug string
 //--------------------------------------------------------------------------------
 string Ring::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -264,7 +264,7 @@ Protection_t Ring::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string RingInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

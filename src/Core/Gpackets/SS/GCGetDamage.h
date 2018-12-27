@@ -63,11 +63,11 @@ public :
 	
 	// get/set ObjectID
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 	// get/set Damage
 	WORD getDamage()  { return m_GetDamage; }
-	void setDamage(WORD GetDamage) throw() { m_GetDamage = GetDamage; }
+	void setDamage(WORD GetDamage)  { m_GetDamage = GetDamage; }
 	
 private : 
 	ObjectID_t m_ObjectID;  // ObjectID..
@@ -89,16 +89,16 @@ class  GCGetDamageFactory : public PacketFactory {
 public :
 	
 	// constructor
-	 GCGetDamageFactory() throw() {}
+	 GCGetDamageFactory()  {}
 	
 	// destructor
-	virtual ~GCGetDamageFactory() throw() {}
+	virtual ~GCGetDamageFactory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCGetDamage(); }
+	Packet* createPacket()  { return new GCGetDamage(); }
 
 	// get packet name
 	string getPacketName()  { return "GCGetDamage"; }

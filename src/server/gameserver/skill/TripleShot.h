@@ -16,8 +16,8 @@
 class TripleShot : public SkillHandler 
 {
 public:
-	TripleShot() throw() {}
-	~TripleShot() throw() {}
+	TripleShot()  {}
+	~TripleShot()  {}
 
 public:
     string getSkillHandlerName()  { return "TripleShot"; }

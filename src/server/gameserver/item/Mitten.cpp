@@ -25,14 +25,14 @@ Mutex    Mitten::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Mitten::Mitten()
-	throw()
+	
 {
 	setItemType(0);
 	setDurability(0);
 }
 
 Mitten::Mitten(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	setItemType(itemType);
 	setOptionType(optionType);
@@ -155,7 +155,7 @@ void Mitten::save(const string & ownerID, Storage storage, StorageID_t storageID
 // get debug string
 //--------------------------------------------------------------------------------
 string Mitten::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -174,7 +174,7 @@ string Mitten::toString() const
 // get debug string
 //--------------------------------------------------------------------------------
 string MittenInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

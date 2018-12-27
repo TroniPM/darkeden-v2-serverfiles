@@ -16,8 +16,8 @@
 class Gladiator : public SkillHandler 
 {
 public:
-	Gladiator() throw() {}
-	~Gladiator() throw() {}
+	Gladiator()  {}
+	~Gladiator()  {}
 	
 public :
     string getSkillHandlerName()  { return "Gladiator"; }

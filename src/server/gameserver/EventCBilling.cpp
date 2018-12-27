@@ -25,7 +25,7 @@ EventCBilling::EventCBilling (GamePlayer* pGamePlayer)
 // destructor
 //////////////////////////////////////////////////////////////////////////////
 EventCBilling::~EventCBilling () 
-	throw ()
+	
 {
 }
 

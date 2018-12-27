@@ -16,8 +16,8 @@
 class DivineGuidance: public SkillHandler 
 {
 public:
-	DivineGuidance() throw() {}
-	~DivineGuidance() throw() {}
+	DivineGuidance()  {}
+	~DivineGuidance()  {}
 
 public:
     string getSkillHandlerName()  { return "DivineGuidance"; }

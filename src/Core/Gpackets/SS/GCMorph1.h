@@ -142,7 +142,7 @@ class GCMorph1Factory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCMorph1(); }
+	Packet* createPacket()  { return new GCMorph1(); }
 
 	// get packet name
 	string getPacketName()  { return "GCMorph1"; }

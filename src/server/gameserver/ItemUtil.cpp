@@ -663,7 +663,7 @@ Bullet_t reloadArmsItem(Item* pGun, Item* pMagazine)
 // ÃÑ¾ËÀ» »©ÁØ´Ù.
 //////////////////////////////////////////////////////////////////////////////
 Bullet_t decreaseBullet(Item* pWeapon) 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -754,7 +754,7 @@ Bullet_t decreaseBullet(Item* pWeapon)
 // ³²Àº ÃÑ¾ËÀÇ °¹¼ö¸¦ ¸®ÅÏ
 //////////////////////////////////////////////////////////////////////////////
 Bullet_t getRemainBullet(Item* pWeapon) 
-	throw()
+	
 {
 	__BEGIN_TRY
 

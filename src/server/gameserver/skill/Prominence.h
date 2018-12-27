@@ -16,8 +16,8 @@
 class Prominence : public SkillHandler 
 {
 public:
-	Prominence() throw() {}
-	~Prominence() throw() {}
+	Prominence()  {}
+	~Prominence()  {}
 	
 public:
     string getSkillHandlerName()  { return "Prominence"; }

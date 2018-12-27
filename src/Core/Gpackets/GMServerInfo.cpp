@@ -13,7 +13,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////////////
 GMServerInfo::GMServerInfo () 
-     throw ()
+     
 {
 	__BEGIN_TRY
 
@@ -26,7 +26,7 @@ GMServerInfo::GMServerInfo ()
 // destructor
 //////////////////////////////////////////////////////////////////////////////
 GMServerInfo::~GMServerInfo () 
-    throw ()
+    
 {
 	__BEGIN_TRY
 
@@ -39,7 +39,7 @@ GMServerInfo::~GMServerInfo ()
 // execute packet's handler
 //////////////////////////////////////////////////////////////////////
 void GMServerInfo::execute ( Player * pPlayer ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -52,7 +52,7 @@ void GMServerInfo::execute ( Player * pPlayer )
 // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
 //////////////////////////////////////////////////////////////////////////////
 void GMServerInfo::read ( Datagram & iDatagram ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -132,7 +132,7 @@ string GMServerInfo::toString ()
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void GMServerInfo::addZoneUserData(ZoneID_t ZoneID, DWORD UserNum)
-	    throw()
+	    
 {
 	__BEGIN_TRY
 
@@ -150,7 +150,7 @@ void GMServerInfo::addZoneUserData(ZoneID_t ZoneID, DWORD UserNum)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void GMServerInfo::popZoneUserData(ZONEUSERDATA& rData)
-	    throw()
+	    
 {
 	__BEGIN_TRY
 

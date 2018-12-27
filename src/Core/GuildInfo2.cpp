@@ -17,7 +17,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 GuildInfo2::GuildInfo2 () 
-     throw ()
+     
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -28,7 +28,7 @@ GuildInfo2::GuildInfo2 ()
 // destructor
 //////////////////////////////////////////////////////////////////////
 GuildInfo2::~GuildInfo2 () 
-    throw ()
+    
 {
 	__BEGIN_TRY
 	
@@ -42,7 +42,7 @@ GuildInfo2::~GuildInfo2 ()
 // clear guild member info list
 //////////////////////////////////////////////////////////////////////
 void GuildInfo2::clearGuildMemberInfoList()
-	    throw()
+	    
 {
 	__BEGIN_TRY
 
@@ -62,7 +62,7 @@ void GuildInfo2::clearGuildMemberInfoList()
 // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
 //////////////////////////////////////////////////////////////////////
 void GuildInfo2::read ( SocketInputStream & iStream ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -189,7 +189,7 @@ void GuildInfo2::write ( SocketOutputStream & oStream )
 // getSize
 //--------------------------------------------------------------------
 PacketSize_t GuildInfo2::getSize()
-	throw()
+	
 {
 	__BEGIN_TRY
 

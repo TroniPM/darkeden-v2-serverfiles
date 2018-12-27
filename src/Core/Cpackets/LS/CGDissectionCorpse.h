@@ -55,15 +55,15 @@ public:
 
 	// get/set Corpse's X
 	Coord_t getX()  { return m_X; }
-	void setX(Coord_t X) throw() { m_X = X; }
+	void setX(Coord_t X)  { m_X = X; }
 
 	// get/set Corpse's Y
 	Coord_t getY()  { return m_Y; }
-	void setY(Coord_t Y) throw() { m_Y = Y; }
+	void setY(Coord_t Y)  { m_Y = Y; }
 
 	// get/set ObjectID
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 	BYTE isPet() const { return m_IsPet; }
 	void setPet(BYTE isPet) { m_IsPet = isPet; }
@@ -96,16 +96,16 @@ class CGDissectionCorpseFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGDissectionCorpseFactory() throw() {}
+	CGDissectionCorpseFactory()  {}
 	
 	// destructor
-	virtual ~CGDissectionCorpseFactory() throw() {}
+	virtual ~CGDissectionCorpseFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGDissectionCorpse(); }
+	Packet* createPacket()  { return new CGDissectionCorpse(); }
 
 	// get packet name
 	string getPacketName()  { return "CGDissectionCorpse"; }

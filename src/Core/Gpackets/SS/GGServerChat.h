@@ -57,24 +57,24 @@ public :
 
 	// get/set Sender
 	const string& getSender()  { return m_Sender; }
-	void setSender( const string& sender ) throw() { m_Sender = sender; }
+	void setSender( const string& sender )  { m_Sender = sender; }
 
 	// get/set Receiver
 	const string& getReceiver()  { return m_Receiver; }
-    void setReceiver( const string& receiver) throw() { m_Receiver= receiver; }
+    void setReceiver( const string& receiver)  { m_Receiver= receiver; }
 
 	// get/set text color
 	uint getColor()  { return m_Color; }
-	void setColor( uint color ) throw() { m_Color = color; }
+	void setColor( uint color )  { m_Color = color; }
 
 	// get/set message
 	const string& getMessage()  { return m_Message; }
-	void setMessage( const string& message ) throw() { m_Message = message; }
+	void setMessage( const string& message )  { m_Message = message; }
 
 	// get/set race
 	// 
 	Race_t getRace()  { return m_Race; }
-	void setRace(Race_t race) throw() { m_Race = race; }
+	void setRace(Race_t race)  { m_Race = race; }
 
 private :
 
@@ -110,7 +110,7 @@ class GGServerChatFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GGServerChat(); }
+	Packet* createPacket()  { return new GGServerChat(); }
 
 	// get packet name
 	string getPacketName()  { return "GGServerChat"; }

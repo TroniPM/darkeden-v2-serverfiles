@@ -18,7 +18,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 GCMiniGameScores::GCMiniGameScores () 
-     throw ()
+     
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -29,7 +29,7 @@ GCMiniGameScores::GCMiniGameScores ()
 // destructor
 //////////////////////////////////////////////////////////////////////
 GCMiniGameScores::~GCMiniGameScores () 
-    throw ()
+    
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -40,7 +40,7 @@ GCMiniGameScores::~GCMiniGameScores ()
 // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
 //////////////////////////////////////////////////////////////////////
 void GCMiniGameScores::read ( SocketInputStream & iStream ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 
@@ -116,7 +116,7 @@ PacketSize_t GCMiniGameScores::getPacketSize()
 //
 //////////////////////////////////////////////////////////////////////
 void GCMiniGameScores::execute ( Player * pPlayer ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		

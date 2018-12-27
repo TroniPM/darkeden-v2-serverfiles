@@ -62,7 +62,7 @@ MonsterItemDropOptionManager::~MonsterItemDropOptionManager()
 }
 
 void MonsterItemDropOptionManager::clear()
-	throw()
+	
 {
 	__BEGIN_TRY
 

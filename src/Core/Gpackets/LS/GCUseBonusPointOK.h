@@ -70,7 +70,7 @@ class GCUseBonusPointOKFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCUseBonusPointOK(); }
+	Packet* createPacket()  { return new GCUseBonusPointOK(); }
 
 	// get packet name
 	string getPacketName()  { return "GCUseBonusPointOK"; }

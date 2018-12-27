@@ -29,7 +29,7 @@ public :
 	isSameTID (TID tid) : m_TID(tid) {}
 
 	//
-	bool operator () (Thread* pThread) throw ()
+	bool operator () (Thread* pThread) 
 	{
 		return pThread->getTID() == m_TID;
 	}
@@ -45,7 +45,7 @@ private :
 // constructor
 //////////////////////////////////////////////////////////////////////
 ThreadPool::ThreadPool () 
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -60,7 +60,7 @@ ThreadPool::ThreadPool ()
 // 포함하고 있는 모든 쓰레드 객체를 삭제해야 한다.
 //////////////////////////////////////////////////////////////////////
 ThreadPool::~ThreadPool () 
-	throw ()
+	
 {
 	__BEGIN_TRY
 		

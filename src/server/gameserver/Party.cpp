@@ -56,7 +56,7 @@ GlobalPartyManager* g_pGlobalPartyManager = NULL;
 //////////////////////////////////////////////////////////////////////////////
 
 string PartyInviteInfo::toString(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -77,7 +77,7 @@ string PartyInviteInfo::toString(void) const
 //////////////////////////////////////////////////////////////////////////////
 
 PartyInviteInfoManager::PartyInviteInfoManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -87,7 +87,7 @@ PartyInviteInfoManager::PartyInviteInfoManager()
 }
 
 PartyInviteInfoManager::~PartyInviteInfoManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -365,7 +365,7 @@ PartyInviteInfo* PartyInviteInfoManager::getInviteInfo(const string& HostName)
 //////////////////////////////////////////////////////////////////////////////
 
 Party::Party(Creature::CreatureClass CClass) 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -381,7 +381,7 @@ Party::Party(Creature::CreatureClass CClass)
 }
 
 Party::~Party() 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -493,7 +493,7 @@ void Party::deleteMember(const string& name)
 
 // 파티에 특정 이름을 가진 멤버가 있는지 조사한다.
 bool Party::hasMember(const string& name) const
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -523,7 +523,7 @@ bool Party::hasMember(const string& name) const
 // 파티를 해체하기 전에 파티 멤버들의 파티 ID를 0으로 만들고,
 // 로컬 파티 매니저에서 해당 ID를 가진 파티를 삭제한다.
 void Party::destroyParty(void) 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -588,7 +588,7 @@ void Party::broadcastPacket(Packet* pPacket, Creature* pOwner)
 // 새로운 파티원이 추가되었을 때, 파티원들에게 날아가는
 // GCPartyJoined 패킷을 구성한다.
 void Party::makeGCPartyJoined(GCPartyJoined* pGCPartyJoined) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -650,7 +650,7 @@ void Party::makeGCPartyJoined(GCPartyJoined* pGCPartyJoined) const
 }
 
 int Party::getSize(void) const 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -659,7 +659,7 @@ int Party::getSize(void) const
 	__END_CATCH
 }
 
-hash_map<string, Creature*> Party::getMemberMap(void) throw() 
+hash_map<string, Creature*> Party::getMemberMap(void)  
 { 
 	__BEGIN_TRY
 
@@ -669,7 +669,7 @@ hash_map<string, Creature*> Party::getMemberMap(void) throw()
 }
 
 int Party::getAdjacentMemberSize(Creature* pLeader) const 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -713,7 +713,7 @@ int Party::getAdjacentMemberSize(Creature* pLeader) const
 }
 
 int Party::getAdjacentMemberSize_LOCKED(Creature* pLeader) const 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -759,7 +759,7 @@ int Party::getAdjacentMemberSize_LOCKED(Creature* pLeader) const
 // 리더의 올라간 경험치는 LeaderModifyInfo에다 집어넣고, 
 // 나머지 멤버들의 올라간 경험치는 패킷을 따로 만들어 보낸다.
 int Party::shareAttrExp(Creature* pLeader, int amount, int STRMultiplier, int DEXMultiplier, int INTMultiplier, ModifyInfo& LeaderModifyInfo) const 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -919,7 +919,7 @@ int Party::shareAttrExp(Creature* pLeader, int amount, int STRMultiplier, int DE
 }
 
 int Party::shareVampireExp(Creature* pLeader, int amount, ModifyInfo& LeaderModifyInfo) const 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1038,7 +1038,7 @@ int Party::shareVampireExp(Creature* pLeader, int amount, ModifyInfo& LeaderModi
 }
 
 int Party::shareOustersExp(Creature* pLeader, int amount, ModifyInfo& LeaderModifyInfo) const 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1145,7 +1145,7 @@ int Party::shareOustersExp(Creature* pLeader, int amount, ModifyInfo& LeaderModi
 }
 
 int Party::shareAttackBloodBurst(Creature* pLeader, Creature* pTargetCreature, int amount) const 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1223,7 +1223,7 @@ int Party::shareAttackBloodBurst(Creature* pLeader, Creature* pTargetCreature, i
 }
 
 int Party::shareDefenseBloodBurst(Creature* pLeader, Creature* pTargetCreature, int amount) const 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1302,7 +1302,7 @@ int Party::shareDefenseBloodBurst(Creature* pLeader, Creature* pTargetCreature, 
 
 
 int Party::shareGold(Creature* pLeader, int amount) const 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1464,7 +1464,7 @@ int Party::shareGold(Creature* pLeader, int amount) const
 
 
 void Party::shareRankExp(Creature* pLeader, int otherLevel) 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1600,7 +1600,7 @@ void Party::shareRankExp(Creature* pLeader, int otherLevel)
 }
 
 void Party::shareAdvancementExp(Creature* pLeader, int amount) 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2550,7 +2550,7 @@ void Party::refreshFamilyPay()
 }
 
 string Party::toString(void) const 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2588,7 +2588,7 @@ string Party::toString(void) const
 //////////////////////////////////////////////////////////////////////////////
 
 PartyManager::PartyManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2598,7 +2598,7 @@ PartyManager::PartyManager()
 }
 
 PartyManager::~PartyManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -2730,7 +2730,7 @@ bool PartyManager::deletePartyMember(int ID, Creature* pCreature)
 //////////////////////////////////////////////////////////////////////////////
 
 LocalPartyManager::LocalPartyManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2740,7 +2740,7 @@ LocalPartyManager::LocalPartyManager()
 }
 
 LocalPartyManager::~LocalPartyManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -2791,7 +2791,7 @@ void LocalPartyManager::heartbeat(void)
 }
 
 int LocalPartyManager::getAdjacentMemberSize(int PartyID, Creature* pLeader) const 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2822,7 +2822,7 @@ int LocalPartyManager::getAdjacentMemberSize(int PartyID, Creature* pLeader) con
 int LocalPartyManager::shareAttrExp(int PartyID, Creature* pLeader, int amount, 
 		int STRMultiplier, int DEXMultiplier, int INTMultiplier, 
 		ModifyInfo& LeaderModifyInfo) const 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2851,7 +2851,7 @@ int LocalPartyManager::shareAttrExp(int PartyID, Creature* pLeader, int amount,
 }
 
 int LocalPartyManager::shareVampireExp(int PartyID, Creature* pLeader, int amount, ModifyInfo& LeaderModifyInfo) const 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2880,7 +2880,7 @@ int LocalPartyManager::shareVampireExp(int PartyID, Creature* pLeader, int amoun
 }
 
 int LocalPartyManager::shareOustersExp(int PartyID, Creature* pLeader, int amount, ModifyInfo& LeaderModifyInfo) const 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2909,7 +2909,7 @@ int LocalPartyManager::shareOustersExp(int PartyID, Creature* pLeader, int amoun
 }
 
 int LocalPartyManager::shareAttackBloodBurst(int PartyID, Creature* pLeader, Creature* pTargetCreature, int amount) const 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2938,7 +2938,7 @@ int LocalPartyManager::shareAttackBloodBurst(int PartyID, Creature* pLeader, Cre
 }
 
 int LocalPartyManager::shareDefenseBloodBurst(int PartyID, Creature* pLeader, Creature* pTargetCreature, int amount) const 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2967,7 +2967,7 @@ int LocalPartyManager::shareDefenseBloodBurst(int PartyID, Creature* pLeader, Cr
 }
 
 int LocalPartyManager::shareGold(int PartyID, Creature* pLeader, int amount) const 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2996,7 +2996,7 @@ int LocalPartyManager::shareGold(int PartyID, Creature* pLeader, int amount) con
 }
 
 int LocalPartyManager::shareRankExp(int PartyID, Creature* pLeader, int amount) const 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -3334,7 +3334,7 @@ void LocalPartyManager::shareInstant(int PartyID, Creature* pLeader, int ZoneID,
 }
 
 string LocalPartyManager::toString(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -3367,7 +3367,7 @@ string LocalPartyManager::toString(void) const
 //////////////////////////////////////////////////////////////////////////////
 
 GlobalPartyManager::GlobalPartyManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -3378,7 +3378,7 @@ GlobalPartyManager::GlobalPartyManager()
 }
 
 GlobalPartyManager::~GlobalPartyManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -3765,7 +3765,7 @@ int GlobalPartyManager::registerParty(void)
 }
 
 string GlobalPartyManager::toString(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -3796,7 +3796,7 @@ string GlobalPartyManager::toString(void) const
 //
 //////////////////////////////////////////////////////////////////////////////
 void deleteAllPartyInfo(Creature* pCreature)
-	throw()
+	
 {
 	__BEGIN_TRY
 

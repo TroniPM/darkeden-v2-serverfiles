@@ -16,8 +16,8 @@
 class AttackMelee : public SkillHandler 
 {
 public:
-	AttackMelee() throw() {}
-	~AttackMelee() throw() {}
+	AttackMelee()  {}
+	~AttackMelee()  {}
 	
 public:
     string getSkillHandlerName()  { return "AttackMelee"; }

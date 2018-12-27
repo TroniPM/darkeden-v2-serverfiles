@@ -16,8 +16,8 @@
 class OpenCasket : public SkillHandler 
 {
 public:
-	OpenCasket() throw() {}
-	~OpenCasket() throw() {}
+	OpenCasket()  {}
+	~OpenCasket()  {}
 	
 public:
     string getSkillHandlerName()  { return "OpenCasket"; }

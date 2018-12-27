@@ -80,7 +80,7 @@ public:
 	void addZoneGroup(ZoneGroup* pZoneGroup);
 	
 	// delete zone group from zone group manager
-	void deleteZoneGroup(ZoneGroupID_t zoneGroupID) throw(NoSuchElementException);
+	void deleteZoneGroup(ZoneGroupID_t zoneGroupID) ;
 	
 	// get zone group from zone group manager
 	ZoneGroup* getZoneGroup(ZoneGroupID_t zoneGroupID) ;

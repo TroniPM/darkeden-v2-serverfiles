@@ -48,7 +48,7 @@ public:
 
 public:
 	BYTE getType()   { return m_Type; }
-	void setType(BYTE Type) throw() { m_Type = Type; }
+	void setType(BYTE Type)  { m_Type = Type; }
 
 private:
 	BYTE       m_Type;  // 기술의 종류	
@@ -68,7 +68,7 @@ class CGLoadingReadyFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGLoadingReady(); }
+	Packet* createPacket()  { return new CGLoadingReady(); }
 
 	// get packet name
 	string getPacketName()  { return "CGLoadingReady"; }

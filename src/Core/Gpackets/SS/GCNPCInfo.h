@@ -111,7 +111,7 @@ class GCNPCInfoFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCNPCInfo(); }
+	Packet* createPacket()  { return new GCNPCInfo(); }
 
 	// get packet name
 	string getPacketName()  { return "GCNPCInfo"; }

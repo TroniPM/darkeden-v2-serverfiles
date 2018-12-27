@@ -146,7 +146,7 @@ void EffectTransportItemToCorpse::unaffect (Creature* pCreature)
 // get debug string
 //----------------------------------------------------------------------
 string EffectTransportItemToCorpse::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 

@@ -35,13 +35,13 @@ class CGVerifyTime : public Packet {
 public :
 	
     // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
-    void read ( SocketInputStream & iStream ) throw ( ProtocolException , Error );
+    void read ( SocketInputStream & iStream ) ;
 		    
     // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
     void write ( SocketOutputStream & oStream ) ;
 
 	// execute packet's handler
-	void execute ( Player * pPlayer ) throw ( ProtocolException , Error );
+	void execute ( Player * pPlayer ) ;
 
 	// get packet id
 	PacketID_t getPacketID ()  { return PACKET_CG_VERIFY_TIME; }
@@ -73,7 +73,7 @@ class CGVerifyTimeFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet * createPacket () throw () { return new CGVerifyTime(); }
+	Packet * createPacket ()  { return new CGVerifyTime(); }
 
 	// get packet name
 	string getPacketName ()  { return "CGVerifyTime"; }
@@ -99,7 +99,7 @@ class CGVerifyTimeHandler {
 public :
 
 	// execute packet's handler
-	static void execute ( CGVerifyTime * pPacket , Player * pPlayer ) throw ( ProtocolException , Error );
+	static void execute ( CGVerifyTime * pPacket , Player * pPlayer ) ;
 
 	// 스피드핵 사용자를 디비에 저장한다.
 	static void saveSpeedHackPlayer( Player* pPlayer );

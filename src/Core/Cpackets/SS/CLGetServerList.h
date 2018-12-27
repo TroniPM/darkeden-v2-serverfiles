@@ -62,7 +62,7 @@ class CLGetServerListFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CLGetServerList(); }
+	Packet* createPacket()  { return new CLGetServerList(); }
 
 	// get packet name
 	string getPacketName()  { return "CLGetServerList"; }

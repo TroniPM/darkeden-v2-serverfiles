@@ -111,7 +111,7 @@ const Attr_t MAX_SLAYER_ATTR_OLD = 200;
 const Attr_t MAX_SLAYER_SUM_OLD = 300;
 
 Slayer::Slayer () 
-	throw () 
+	 
 : PlayerCreature(0,NULL)
 {
 	__BEGIN_TRY
@@ -1436,7 +1436,7 @@ void Slayer::tinysave(const string & field)
 }
 
 PhoneNumber_t Slayer::getPhoneSlotNumber(SlotID_t SlotID)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1448,7 +1448,7 @@ PhoneNumber_t Slayer::getPhoneSlotNumber(SlotID_t SlotID)
 }
 
 void Slayer::setPhoneSlotNumber(SlotID_t SlotID, PhoneNumber_t PhoneNumber)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1462,7 +1462,7 @@ void Slayer::setPhoneSlotNumber(SlotID_t SlotID, PhoneNumber_t PhoneNumber)
 }
 
 bool Slayer::isSlotByPhoneNumber(PhoneNumber_t PhoneNumber)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1479,7 +1479,7 @@ bool Slayer::isSlotByPhoneNumber(PhoneNumber_t PhoneNumber)
 }
 
 SlotID_t Slayer::getSlotWithPhoneNumber(PhoneNumber_t PhoneNumber)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1494,7 +1494,7 @@ SlotID_t Slayer::getSlotWithPhoneNumber(PhoneNumber_t PhoneNumber)
 }
 
 SlotID_t Slayer::findEmptyPhoneSlot()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1512,7 +1512,7 @@ SlotID_t Slayer::findEmptyPhoneSlot()
 }
 
 bool Slayer::isEmptyPhoneSlot()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1534,7 +1534,7 @@ bool Slayer::isEmptyPhoneSlot()
 
 // 특정 Skill이 존재하는지 조사하고 SkillSlot을 리턴한다.
 SkillSlot* Slayer::getSkill(SkillType_t SkillType) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1551,7 +1551,7 @@ SkillSlot* Slayer::getSkill(SkillType_t SkillType) const
 
 // 특정 SkillSlot을 자동으로 빈 슬랏을 찾아 넣는다.
 void Slayer::addSkill(SkillSlot* pSkillSlot)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1589,7 +1589,7 @@ void Slayer::addSkill(SkillSlot* pSkillSlot)
 
 // 기술을 배울때만 쓰는 함수이다. 다른 곳에서 쓰면 개 된다.
 void Slayer::addSkill(SkillType_t SkillType)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1632,7 +1632,7 @@ void Slayer::addSkill(SkillType_t SkillType)
 
 // 성?治뵀냅?지워주는 함수다.
 void Slayer::removeCastleSkill(SkillType_t SkillType)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1655,7 +1655,7 @@ void Slayer::removeCastleSkill(SkillType_t SkillType)
 
 // 갖고 있는 모든 성지스킬을 지워주는 함수이다.
 void Slayer::removeAllCastleSkill()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2445,7 +2445,7 @@ void Slayer::takeOffItem(WearPart Part, bool bAddOnMouse, bool bSendModifyInfo)
 // destroyGears
 // 장착 아이템을 Delete 한다.
 void Slayer::destroyGears() 
-	throw()
+	
 {
 	__BEGIN_DEBUG
 
@@ -2471,7 +2471,7 @@ void Slayer::destroyGears()
 }
 
 bool Slayer::isRealWearing(WearPart part) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2534,7 +2534,7 @@ bool Slayer::isRealWearing(WearPart part) const
 }
 
 bool Slayer::isRealWearing(Item* pItem) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2674,7 +2674,7 @@ bool Slayer::isRealWearingEx(WearPart part) const
 }
 
 DWORD Slayer::sendRealWearingInfo(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -2697,7 +2697,7 @@ DWORD Slayer::sendRealWearingInfo(void) const
 }
 
 void Slayer::setMotorcycle(Motorcycle* pMotorcycle)
-	throw()
+	
 {
 	__BEGIN_DEBUG
 
@@ -2786,7 +2786,7 @@ void Slayer::getOffMotorcycle()
 }
 
 PCSlayerInfo2* Slayer::getSlayerInfo2 () const
-	throw ()
+	
 {
 	__BEGIN_DEBUG
 
@@ -2883,7 +2883,7 @@ PCSlayerInfo2* Slayer::getSlayerInfo2 () const
 }
 
 PCSlayerInfo3 Slayer::getSlayerInfo3 () const
-	throw ()
+	
 {
 	__BEGIN_DEBUG
 
@@ -2922,7 +2922,7 @@ PCSlayerInfo3 Slayer::getSlayerInfo3 () const
 }
 
 ExtraInfo* Slayer::getExtraInfo() const
-	throw()
+	
 {
 	__BEGIN_DEBUG
 
@@ -3020,7 +3020,7 @@ ExtraInfo* Slayer::getExtraInfo() const
 }
 
 GearInfo* Slayer::getGearInfo() const
-	throw()
+	
 {
 	__BEGIN_DEBUG
 
@@ -3138,7 +3138,7 @@ GearInfo* Slayer::getGearInfo() const
 // get Inventory Info
 //////////////////////////////////////////////////////////////////////////////
 InventoryInfo* Slayer::getInventoryInfo() const
-    throw()
+    
 {
 	__BEGIN_DEBUG
 
@@ -3255,7 +3255,7 @@ InventoryInfo* Slayer::getInventoryInfo() const
 // get Inventory Info
 //////////////////////////////////////////////////////////////////////////////
 InventoryInfo* Slayer::getInventoryInfo2() const
-    throw()
+    
 {
 	__BEGIN_DEBUG
 
@@ -3369,7 +3369,7 @@ InventoryInfo* Slayer::getInventoryInfo2() const
 }
 
 RideMotorcycleInfo* Slayer::getRideMotorcycleInfo() const
-	throw()
+	
 {
 	__BEGIN_DEBUG
 
@@ -3388,7 +3388,7 @@ RideMotorcycleInfo* Slayer::getRideMotorcycleInfo() const
 }
 
 void Slayer::sendSlayerSkillInfo()
-	throw()
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -3493,7 +3493,7 @@ EffectInfo* Slayer::getEffectInfo()
 }
 
 void Slayer::setGold( Gold_t gold )
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -3505,7 +3505,7 @@ void Slayer::setGold( Gold_t gold )
 }
 
 void Slayer::setGoldEx(Gold_t gold)
-	throw()
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -3527,7 +3527,7 @@ void Slayer::setGoldEx(Gold_t gold)
 }
 
 void Slayer::increaseGoldEx(Gold_t gold)
-	throw()
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -3555,7 +3555,7 @@ void Slayer::increaseGoldEx(Gold_t gold)
 }
 
 void Slayer::decreaseGoldEx(Gold_t gold)
-	throw()
+	
 {
 	__BEGIN_TRY
 	__BEGIN_DEBUG
@@ -3635,7 +3635,7 @@ bool Slayer::checkStashGoldIntegrity()
 
 
 void Slayer::heartbeat(const Timeval& currentTime)
-    throw()
+    
 {
 	__BEGIN_DEBUG
 
@@ -3719,7 +3719,7 @@ void Slayer::heartbeat(const Timeval& currentTime)
 }
 
 void Slayer::getSlayerRecord(SLAYER_RECORD& record) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -3755,7 +3755,7 @@ void Slayer::getSlayerRecord(SLAYER_RECORD& record) const
 }
 
 void Slayer::setResurrectZoneIDEx(ZoneID_t id)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -3776,7 +3776,7 @@ void Slayer::setResurrectZoneIDEx(ZoneID_t id)
 }
 
 void Slayer::saveAlignment(Alignment_t alignment)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -3798,7 +3798,7 @@ void Slayer::saveAlignment(Alignment_t alignment)
 }
 
 uint Slayer::getSlayerLevel(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -3820,7 +3820,7 @@ uint Slayer::getSlayerLevel(void) const
 }
 
 string Slayer::toString () const
-	throw ()
+	
 {
 	__BEGIN_DEBUG
 
@@ -3858,7 +3858,7 @@ string Slayer::toString () const
 }
 
 SkillLevel_t Slayer::getSkillDomainLevelSum() const 
-	throw() 
+	 
 { 
 	__BEGIN_TRY
 
@@ -3875,7 +3875,7 @@ SkillLevel_t Slayer::getSkillDomainLevelSum() const
 
 
 SkillLevel_t Slayer::getHighestSkillDomainLevel() const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -3892,7 +3892,7 @@ SkillLevel_t Slayer::getHighestSkillDomainLevel() const
 }
 
 SkillDomainType_t Slayer::getHighestSkillDomain() const
-	throw()
+	
 {
 	__BEGIN_TRY
 	
@@ -4111,7 +4111,7 @@ void Slayer::saveExps(void) const
 //     클라이언트에서 옵션으로 색값을 찾아서 쓴다.
 //----------------------------------------------------------------------
 void Slayer::getShapeInfo (DWORD& flag, Color_t colors[PCSlayerInfo::SLAYER_COLOR_MAX]) const
-//	throw ()
+//	
 {
 	__BEGIN_DEBUG
 
@@ -4313,7 +4313,7 @@ void Slayer::getShapeInfo (DWORD& flag, Color_t colors[PCSlayerInfo::SLAYER_COLO
 // Rank, RankExp, RankGoalExp의 초기값을 저장한다.
 //----------------------------------------------------------------------
 void Slayer::saveInitialRank(void)
-	throw()
+	
 {
 	int maxDomainLevel = getHighestSkillDomainLevel();
 

@@ -25,14 +25,14 @@ Mutex    GloveZap::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 GloveZap::GloveZap()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
 }
 
 GloveZap::GloveZap(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	setItemType(itemType);
 	setOptionType(optionType);
@@ -170,7 +170,7 @@ void GloveZap::save(const string & ownerID, Storage storage, StorageID_t storage
 // get debug string
 //--------------------------------------------------------------------------------
 string GloveZap::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -253,7 +253,7 @@ Protection_t GloveZap::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string GloveZapInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

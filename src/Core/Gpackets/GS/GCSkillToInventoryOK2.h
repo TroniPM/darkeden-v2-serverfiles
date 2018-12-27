@@ -62,15 +62,15 @@ public :
 
 	// get / set ObjectID 
 	CEffectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 	// get / set SkillType
 	SkillType_t getSkillType()  { return m_SkillType; }
-	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
+	void setSkillType(SkillType_t SkillType)  { m_SkillType = SkillType; }
 
 	// get / set Duration
 	Duration_t getDuration()  { return m_Duration; }
-	void setDuration(Duration_t Duration) throw() { m_Duration = Duration; }
+	void setDuration(Duration_t Duration)  { m_Duration = Duration; }
 
 private :
 	
@@ -99,16 +99,16 @@ class GCSkillToInventoryOK2Factory : public PacketFactory {
 public :
 	
 	// constructor
-	GCSkillToInventoryOK2Factory() throw() {}
+	GCSkillToInventoryOK2Factory()  {}
 	
 	// destructor
-	virtual ~GCSkillToInventoryOK2Factory() throw() {}
+	virtual ~GCSkillToInventoryOK2Factory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCSkillToInventoryOK2(); }
+	Packet* createPacket()  { return new GCSkillToInventoryOK2(); }
 
 	// get packet name
 	string getPacketName()  { return "GCSkillToInventoryOK2"; }

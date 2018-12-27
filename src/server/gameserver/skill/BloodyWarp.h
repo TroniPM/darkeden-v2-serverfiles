@@ -17,8 +17,8 @@ class VampireSkillSlot;
 class BloodyWarp : public SkillHandler 
 {
 public:
-	BloodyWarp() throw() {}
-	~BloodyWarp() throw() {}
+	BloodyWarp()  {}
+	~BloodyWarp()  {}
 	
 public:
     string getSkillHandlerName()  { return "BloodyWarp"; }

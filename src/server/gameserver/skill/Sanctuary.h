@@ -16,8 +16,8 @@
 class Sanctuary : public SkillHandler 
 {
 public:
-	Sanctuary() throw() {}
-	~Sanctuary() throw() {}
+	Sanctuary()  {}
+	~Sanctuary()  {}
 	
 public:
     string getSkillHandlerName()  { return "Sanctuary"; }

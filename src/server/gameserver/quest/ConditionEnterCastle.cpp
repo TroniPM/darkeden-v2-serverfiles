@@ -23,7 +23,7 @@
 // is satisfied?
 ////////////////////////////////////////////////////////////////////////////////
 bool ConditionEnterCastle::isSatisfied (Creature * pCreature1 , Creature * pCreature2, void* pParam) const 
-	throw () 
+	 
 { 
 	/*if (!g_pVariableManager->isActiveCastle())
 	{
@@ -109,7 +109,7 @@ void ConditionEnterCastle::read (PropertyBuffer & propertyBuffer)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ConditionEnterCastle::toString () const 
-	throw () 
+	 
 { 
 	__BEGIN_TRY
 

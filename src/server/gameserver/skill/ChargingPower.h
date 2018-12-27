@@ -16,8 +16,8 @@
 class ChargingPower : public SkillHandler 
 {
 public:
-	ChargingPower() throw() {}
-	~ChargingPower() throw() {}
+	ChargingPower()  {}
+	~ChargingPower()  {}
 	
 public:
     string getSkillHandlerName()  { return "ChargingPower"; }

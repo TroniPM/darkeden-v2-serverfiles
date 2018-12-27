@@ -69,7 +69,7 @@ void ActionSummonMonster::execute (Creature * pCreature1 , Creature * pCreature2
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionSummonMonster::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

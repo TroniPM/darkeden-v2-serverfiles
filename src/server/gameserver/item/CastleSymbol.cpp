@@ -25,14 +25,14 @@ Mutex    CastleSymbol::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 CastleSymbol::CastleSymbol()
-	throw()
+	
 : m_ItemType(0), m_Durability(0)
 {
 	m_EnchantLevel = 0;
 }
 
 CastleSymbol::CastleSymbol(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 : m_ItemType(itemType), m_Durability(0)
 {
 	try {
@@ -177,7 +177,7 @@ void CastleSymbol::save(const string & ownerID, Storage storage, StorageID_t sto
 // get debug string
 //--------------------------------------------------------------------------------
 string CastleSymbol::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -261,7 +261,7 @@ Protection_t CastleSymbol::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string CastleSymbolInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

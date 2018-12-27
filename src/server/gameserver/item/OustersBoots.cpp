@@ -25,7 +25,7 @@ Mutex    OustersBoots::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 OustersBoots::OustersBoots()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
@@ -34,7 +34,7 @@ OustersBoots::OustersBoots()
 }
 
 OustersBoots::OustersBoots(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_ItemType(itemType), m_OptionType(optionType), m_Durability(0)
 {
 	setItemType(itemType);
@@ -177,7 +177,7 @@ void OustersBoots::save(const string & ownerID, Storage storage, StorageID_t sto
 // get debug string
 //--------------------------------------------------------------------------------
 string OustersBoots::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -262,7 +262,7 @@ Protection_t OustersBoots::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string OustersBootsInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

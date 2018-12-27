@@ -16,8 +16,8 @@
 class MeteorStrike : public SkillHandler 
 {
 public:
-	MeteorStrike() throw() {}
-	~MeteorStrike() throw() {}
+	MeteorStrike()  {}
+	~MeteorStrike()  {}
 	
 public:
     string getSkillHandlerName()  { return "MeteorStrike"; }

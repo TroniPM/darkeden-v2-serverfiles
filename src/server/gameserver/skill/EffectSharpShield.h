@@ -38,10 +38,10 @@ public:
 	void setLevel(Level_t Level) ;
 
 	Damage_t getDamage()  { return m_Damage; }
-	void setDamage(Damage_t Damage) throw() { m_Damage = Damage; }
+	void setDamage(Damage_t Damage)  { m_Damage = Damage; }
 
 	EffectClass getClientEffectClass()  { return m_ClientEffectClass; }
-	void setClientEffectClass(EffectClass effectClass) throw() { m_ClientEffectClass = effectClass; }
+	void setClientEffectClass(EffectClass effectClass)  { m_ClientEffectClass = effectClass; }
 
 private:
 	EffectClass 	m_ClientEffectClass;	// 클라이언트에 보내줄때 쓰는 이펙트 클래스 아이디

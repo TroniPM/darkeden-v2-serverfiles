@@ -80,10 +80,10 @@ public:
 
 public:
 	ObjectID_t getTargetObjectID()  { return m_TargetObjectID; }
-	void setTargetObjectID(ObjectID_t id) throw() { m_TargetObjectID = id; }
+	void setTargetObjectID(ObjectID_t id)  { m_TargetObjectID = id; }
 
 	BYTE getCode()  { return m_Code; }
-	void setCode(BYTE code) throw() { m_Code = code; }
+	void setCode(BYTE code)  { m_Code = code; }
 
 private:
 	ObjectID_t m_TargetObjectID; // 교환의 대상 아이디
@@ -101,7 +101,7 @@ private:
 class GCTradeErrorFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCTradeError(); }
+	Packet* createPacket()  { return new GCTradeError(); }
 	string getPacketName()  { return "GCTradeError"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_TRADE_ERROR; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + szBYTE; }

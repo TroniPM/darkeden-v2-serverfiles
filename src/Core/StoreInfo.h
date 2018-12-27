@@ -20,7 +20,7 @@ public:
 	StoreItemInfo() : m_ItemExist(0), m_Price(0) { }
 
 	uint getSize()  { return szBYTE + ((m_ItemExist)?(PCItemInfo::getSize() + szGold):0); }
-	static uint getMaxSize() throw() { return szBYTE + PCItemInfo::getMaxSize() + szGold; }
+	static uint getMaxSize()  { return szBYTE + PCItemInfo::getMaxSize() + szGold; }
 
 	void read (SocketInputStream & iStream);
 	void write (SocketOutputStream & oStream) ;

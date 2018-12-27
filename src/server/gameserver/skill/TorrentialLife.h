@@ -16,8 +16,8 @@
 class TorrentialLife : public SkillHandler 
 {
 public:
-	TorrentialLife() throw() {}
-	~TorrentialLife() throw() {}
+	TorrentialLife()  {}
+	~TorrentialLife()  {}
 	
 public:
     string getSkillHandlerName()  { return "TorrentialLife"; }

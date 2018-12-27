@@ -24,14 +24,14 @@ class UCUpdateList : public Packet {
 public :
 
 	// constructor
-	UCUpdateList () throw () : m_pUpdateManager(NULL) 
+	UCUpdateList ()  : m_pUpdateManager(NULL) 
 	{
 		m_Old = false;
 		m_pUpdateManager = new UpdateManager();
 	}
 
 	// destructor
-	~UCUpdateList () throw ()
+	~UCUpdateList () 
 	{
 		if ( m_pUpdateManager != NULL ) {
 			delete m_pUpdateManager;
@@ -43,10 +43,10 @@ public :
 public :
 
 	// 입력스트림(버퍼)으로부터 데이터를 읽어서 패킷을 초기화한다.
-    void read ( SocketInputStream & iStream ) throw ( ProtocolException , Error ) { throw UnsupportedError(__PRETTY_FUNCTION__); }
+    void read ( SocketInputStream & iStream )  { throw UnsupportedError(__PRETTY_FUNCTION__); }
 
     // 소켓으로부터 데이타를 읽어서 패킷을 초기화한다.
-    void read ( Socket * pSocket ) throw ( ProtocolException , Error );
+    void read ( Socket * pSocket ) ;
 		    
     // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
     void write ( SocketOutputStream & oStream )  { throw UnsupportedError(__PRETTY_FUNCTION__); }
@@ -55,7 +55,7 @@ public :
     void write ( Socket * pSocket ) ;
 
 	// execute packet's handler
-	void execute ( Player * pPlayer ) throw ( ProtocolException , Error );
+	void execute ( Player * pPlayer ) ;
 
 	// get packet id
 	PacketID_t getPacketID ()  { return PACKET_UC_UPDATE_LIST; }
@@ -66,7 +66,7 @@ public :
 	PacketSize_t getPacketSize ()  { return m_pUpdateManager->getSize() + ((m_Old)?0:szBYTE*10); }
 
 	// get packet's max body size
-	static PacketSize_t getPacketMaxSize () throw () { return UpdateManager::getMaxSize() + szBYTE*10; }
+	static PacketSize_t getPacketMaxSize ()  { return UpdateManager::getMaxSize() + szBYTE*10; }
 	
 	// get packet's name
 	string getPacketName ()  { return "UCUpdateList"; }
@@ -78,8 +78,8 @@ public :
 public :
 
 	// get/set update manager
-	UpdateManager * getUpdateManager () throw () { return m_pUpdateManager; }
-	void setUpdateManager ( UpdateManager * pUpdateManager ) throw () { m_pUpdateManager = pUpdateManager; }
+	UpdateManager * getUpdateManager ()  { return m_pUpdateManager; }
+	void setUpdateManager ( UpdateManager * pUpdateManager )  { m_pUpdateManager = pUpdateManager; }
 
 	BYTE* getKeyArray() { return m_Key; }
 	bool isOld() const { return m_Old; }
@@ -112,7 +112,7 @@ class UCUpdateListFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet * createPacket () throw () { return new UCUpdateList(); }
+	Packet * createPacket ()  { return new UCUpdateList(); }
 
 	// get packet name
 	string getPacketName ()  { return "UCUpdateList"; }
@@ -137,7 +137,7 @@ class UCUpdateListHandler {
 public :
 
 	// execute packet's handler
-	static void execute ( UCUpdateList * pPacket , Player * pPlayer ) throw ( ProtocolException , Error );
+	static void execute ( UCUpdateList * pPacket , Player * pPlayer ) ;
 
 };
 

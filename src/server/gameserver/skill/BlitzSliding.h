@@ -16,8 +16,8 @@
 class BlitzSliding : public SkillHandler 
 {
 public:
-	BlitzSliding() throw() {}
-	~BlitzSliding() throw() {}
+	BlitzSliding()  {}
+	~BlitzSliding()  {}
 	
 public:
     string getSkillHandlerName()  { return "BlitzSliding"; }

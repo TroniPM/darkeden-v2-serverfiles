@@ -24,13 +24,13 @@ Mutex    Magazine::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Magazine::Magazine()
-	throw()
+	
 : m_ItemType(0)
 {
 }
 
 Magazine::Magazine(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num)
-	throw()
+	
 : m_ItemType(itemType), m_Num(Num)
 {
 	if (!g_pItemInfoManager->isPossibleItem(getItemClass(), m_ItemType, optionType))
@@ -164,7 +164,7 @@ void Magazine::save(const string & ownerID, Storage storage, StorageID_t storage
 // get debug string
 //--------------------------------------------------------------------------------
 string Magazine::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -224,7 +224,7 @@ Weight_t Magazine::getWeight() const
 // get debug string
 //--------------------------------------------------------------------------------
 string MagazineInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

@@ -147,7 +147,7 @@ void EffectDecayMotorcycle::unaffect (Creature* pCreature)
 // get debug string
 //----------------------------------------------------------------------
 string EffectDecayMotorcycle::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 

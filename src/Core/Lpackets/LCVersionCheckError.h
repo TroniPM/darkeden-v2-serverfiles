@@ -61,7 +61,7 @@ class LCVersionCheckErrorFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new LCVersionCheckError(); }
+	Packet* createPacket()  { return new LCVersionCheckError(); }
 
 	// get packet name
 	string getPacketName()  { return "LCVersionCheckError"; }

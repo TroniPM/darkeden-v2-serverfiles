@@ -17,7 +17,7 @@ class Cabracam : public SkillHandler
 {
 public:
 	Cabracam() ;
-	~Cabracam() throw() {}
+	~Cabracam()  {}
 	
 public:
     string getSkillHandlerName()  { return "Cabracam"; }

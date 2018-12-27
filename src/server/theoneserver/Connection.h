@@ -56,7 +56,7 @@ public:
 	Statement * createStatement() ;	
 	
 	// get the MYSQL object
-	MYSQL * getMYSQL() throw() { return &m_Mysql; }
+	MYSQL * getMYSQL()  { return &m_Mysql; }
 	
 	// get MS's host name(ip)
 	string getHost()  { return m_Host; }
@@ -77,14 +77,14 @@ public:
 	string getName()  { return m_Name; }
 
 	// set connection's name
-	void setName(string name) throw() { m_Name = name; }
+	void setName(string name)  { m_Name = name; }
 
 	// get/set busy status
 	bool isBusy(void)  { return m_bBusy;}
-	void setBusy(bool busy=true) throw() { m_bBusy = busy;}
+	void setBusy(bool busy=true)  { m_bBusy = busy;}
 
 	// get error
-	string getError() throw() { return mysql_error(&m_Mysql); }
+	string getError()  { return mysql_error(&m_Mysql); }
 
 	// lock/unlock
 	void lock()  { m_Mutex.lock(); }

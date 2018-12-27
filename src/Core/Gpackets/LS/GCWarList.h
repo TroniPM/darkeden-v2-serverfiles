@@ -38,7 +38,7 @@ public:
 	int 	getSize()  { return m_WarInfos.size(); }
 	bool 	isEmpty()  { return m_WarInfos.empty(); }
 
-	void addWarInfo( WarInfo* pWarInfo ) throw() { m_WarInfos.push_back( pWarInfo ); }
+	void addWarInfo( WarInfo* pWarInfo )  { m_WarInfos.push_back( pWarInfo ); }
 	WarInfo* popWarInfo() ;
 
 	void	operator = (const GCWarList& WL);
@@ -51,7 +51,7 @@ class GCWarListFactory : public PacketFactory {
 
 public :
 	
-	Packet* createPacket() throw() { return new GCWarList(); }
+	Packet* createPacket()  { return new GCWarList(); }
 	string getPacketName()  { return "GCWarList"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_WAR_LIST; }
 	PacketSize_t getPacketMaxSize()  { return (RaceWarInfo::getMaxSize() + GuildWarInfo::getMaxSize()) * 12; }

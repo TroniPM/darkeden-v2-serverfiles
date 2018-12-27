@@ -29,7 +29,7 @@ public:
 	
 public:
 	Gold_t getAmount(void)  { return m_Amount;}
-	void setAmount(Gold_t amount) throw() { m_Amount = amount;}
+	void setAmount(Gold_t amount)  { m_Amount = amount;}
 
 private :
 	Gold_t m_Amount;
@@ -45,7 +45,7 @@ private :
 class CGStashWithdrawFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGStashWithdraw(); }
+	Packet* createPacket()  { return new CGStashWithdraw(); }
 	string getPacketName()  { return "CGStashWithdraw"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_STASH_WITHDRAW; }
 	PacketSize_t getPacketMaxSize()  { return szGold; }

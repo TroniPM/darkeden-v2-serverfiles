@@ -49,15 +49,15 @@ public :
 	string toString() ;
 
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID( ObjectID_t objectID ) throw() { m_ObjectID = objectID; }
+	void setObjectID( ObjectID_t objectID )  { m_ObjectID = objectID; }
 
 	// get/set Guild ID
 	GuildID_t getGuildID()  { return m_GuildID; }
-	void setGuildID( GuildID_t guildID ) throw() { m_GuildID = guildID; }
+	void setGuildID( GuildID_t guildID )  { m_GuildID = guildID; }
 
 	// get/set Guild Name
 	string getGuildName()  { return m_GuildName; }
-	void setGuildName(const string& guildName) throw() { m_GuildName = guildName; }
+	void setGuildName(const string& guildName)  { m_GuildName = guildName; }
 
 private :
 
@@ -85,7 +85,7 @@ class GCOtherGuildNameFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCOtherGuildName(); }
+	Packet* createPacket()  { return new GCOtherGuildName(); }
 
 	// get packet name
 	string getPacketName()  { return "GCOtherGuildName"; }

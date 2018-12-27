@@ -61,7 +61,7 @@ const int MAX_GOODS_INVENTORY_SIZE = 10;
 // constructor
 //////////////////////////////////////////////////////////////////////////////
 PlayerCreature::PlayerCreature(ObjectID_t OID, Player* pPlayer)
-	throw()
+	
 : Creature(OID, pPlayer), m_pAdvancementClass( NULL )
 {
 	__BEGIN_TRY
@@ -120,7 +120,7 @@ PlayerCreature::PlayerCreature(ObjectID_t OID, Player* pPlayer)
 // destructor
 //////////////////////////////////////////////////////////////////////////////
 PlayerCreature::~PlayerCreature()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -219,7 +219,7 @@ bool PlayerCreature::load()
 // 내부적으로는 락을 걸지 않기 때문이다.
 //////////////////////////////////////////////////////////////////////////////
 void PlayerCreature::registerItem(Item* pItem, ObjectRegistry& OR)
-    throw()
+    
 {
 	__BEGIN_TRY
 
@@ -259,7 +259,7 @@ void PlayerCreature::registerItem(Item* pItem, ObjectRegistry& OR)
 // 내부적으로는 락을 걸지 않기 때문이다.
 //////////////////////////////////////////////////////////////////////////////
 void PlayerCreature::registerInventory(ObjectRegistry& OR)
-    throw()
+    
 {
 	__BEGIN_TRY
 
@@ -296,7 +296,7 @@ void PlayerCreature::registerInventory(ObjectRegistry& OR)
 }
 
 void PlayerCreature::registerInitInventory(ObjectRegistry& OR)
-    throw()
+    
 {
 	__BEGIN_TRY
 
@@ -339,7 +339,7 @@ void PlayerCreature::registerInitInventory(ObjectRegistry& OR)
 // 보관함 안에 들어있는 아이템 등록하기
 //////////////////////////////////////////////////////////////////////////////
 void PlayerCreature::registerStash(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -365,7 +365,7 @@ void PlayerCreature::registerStash(void)
 }
 
 void PlayerCreature::registerGoodsInventory(ObjectRegistry& OR)
-    throw()
+    
 {
 	__BEGIN_TRY
 
@@ -638,7 +638,7 @@ void PlayerCreature::whenQuestLevelUpgrade()
 // 보관함 갯수 세팅하기
 //////////////////////////////////////////////////////////////////////////////
 void PlayerCreature::setStashNumEx(BYTE num)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -677,7 +677,7 @@ void PlayerCreature::setStashNumEx(BYTE num)
 // 보관함에 들어있는 돈 세팅하기
 //////////////////////////////////////////////////////////////////////////////
 void PlayerCreature::setStashGoldEx(Gold_t gold)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -717,7 +717,7 @@ void PlayerCreature::setStashGoldEx(Gold_t gold)
 // 보관함에 들어있는 돈 세팅하기
 //////////////////////////////////////////////////////////////////////////////
 void PlayerCreature::increaseStashGoldEx(Gold_t gold)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -756,7 +756,7 @@ void PlayerCreature::increaseStashGoldEx(Gold_t gold)
 // 보관함에 들어있는 돈 세팅하기
 //////////////////////////////////////////////////////////////////////////////
 void PlayerCreature::decreaseStashGoldEx(Gold_t gold)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -795,7 +795,7 @@ void PlayerCreature::decreaseStashGoldEx(Gold_t gold)
 // 보관함 메모리에서 삭제하??
 //////////////////////////////////////////////////////////////////////////////
 void PlayerCreature::deleteStash(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -809,7 +809,7 @@ void PlayerCreature::deleteStash(void)
 // 플래그셋 메모리에서 삭제하기
 //////////////////////////////////////////////////////////////////////////////
 void PlayerCreature::deleteFlagSet(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -882,7 +882,7 @@ bool PlayerCreature::hasEnemy(const string& Name)
 // 길드 이름을 가져오는 함수
 //----------------------------------------------------------------------
 string PlayerCreature::getGuildName() const
-	throw()
+	
 {
 	Guild* pGuild = g_pGuildManager->getGuild( m_GuildID );
 	
@@ -896,7 +896,7 @@ string PlayerCreature::getGuildName() const
 // 길드 멤버 랭크를 가져오는 함수
 //----------------------------------------------------------------------
 GuildMemberRank_t PlayerCreature::getGuildMemberRank() const
-	throw()
+	
 {
 	Guild* pGuild = g_pGuildManager->getGuild( m_GuildID );
 
@@ -917,7 +917,7 @@ RankExp_t PlayerCreature::getRankExp()  { return m_pRank->getTotalExp(); }
 RankExp_t PlayerCreature::getRankGoalExp()  { return m_pRank->getGoalExp(); }
 
 RankBonus* PlayerCreature::getRankBonus( RankBonus::RankBonusType type ) const
-	throw()
+	
 {
 	__BEGIN_TRY
 	
@@ -934,7 +934,7 @@ RankBonus* PlayerCreature::getRankBonus( RankBonus::RankBonusType type ) const
 }
 
 void PlayerCreature::addRankBonus( RankBonus* rankBonus )
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -954,7 +954,7 @@ void PlayerCreature::addRankBonus( RankBonus* rankBonus )
 }
 
 void PlayerCreature::clearRankBonus()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -980,7 +980,7 @@ void PlayerCreature::clearRankBonus()
 }
 
 RankBonus* PlayerCreature::getRankBonusByRank( Rank_t rank ) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1002,7 +1002,7 @@ RankBonus* PlayerCreature::getRankBonusByRank( Rank_t rank ) const
 }
 
 void PlayerCreature::clearRankBonus( Rank_t rank )
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1033,7 +1033,7 @@ void PlayerCreature::clearRankBonus( Rank_t rank )
 }
 
 bool PlayerCreature::learnRankBonus( DWORD type )
-	throw()
+	
 {
 	//__BEGIN_TRY
 	try
@@ -1101,7 +1101,7 @@ bool PlayerCreature::learnRankBonus( DWORD type )
 }
 
 void PlayerCreature::sendRankBonusInfo()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1120,7 +1120,7 @@ void PlayerCreature::sendRankBonusInfo()
 }
 
 void PlayerCreature::loadRankBonus()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -1431,7 +1431,7 @@ string PlayerCreature::getItemName( ObjectID_t objectID )
 */
 
 void PlayerCreature::addDefaultOptionSet( DefaultOptionSetType_t type )
-	throw()
+	
 {
 	// 이미 있는 것인지 확인한다.
 	slist<DefaultOptionSetType_t>::iterator itr = m_DefaultOptionSet.begin();
@@ -1445,7 +1445,7 @@ void PlayerCreature::addDefaultOptionSet( DefaultOptionSetType_t type )
 }
 
 void PlayerCreature::removeDefaultOptionSet( DefaultOptionSetType_t type )
-	throw()
+	
 {
 	slist<DefaultOptionSetType_t>::iterator before = m_DefaultOptionSet.end();
 	slist<DefaultOptionSetType_t>::iterator current = m_DefaultOptionSet.begin();
@@ -1484,7 +1484,7 @@ void PlayerCreature::setPetInfo(PetInfo* pPetInfo)
 	m_pPet = Pet::makePet(this, m_pPetInfo);
 }
 
-void PlayerCreature::heartbeat(const Timeval& currentTime) throw()
+void PlayerCreature::heartbeat(const Timeval& currentTime) 
 {
 	if ( m_pPet != NULL ) m_pPet->heartbeat( currentTime );
 	m_pGQuestManager->heartbeat();

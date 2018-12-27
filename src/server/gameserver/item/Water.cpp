@@ -24,13 +24,13 @@ Mutex    Water::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Water::Water()
-	throw()
+	
 : m_ItemType(0)
 {
 }
 
 Water::Water(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	m_ItemType = itemType;
 	m_Num      = 1;
@@ -157,7 +157,7 @@ void Water::save(const string & ownerID, Storage storage, StorageID_t storageID,
 // get debug string
 //--------------------------------------------------------------------------------
 string Water::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "Water("
@@ -215,7 +215,7 @@ Weight_t Water::getWeight() const
 // get debug string
 //--------------------------------------------------------------------------------
 string WaterInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

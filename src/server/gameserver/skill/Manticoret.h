@@ -16,8 +16,8 @@
 class Manticoret : public SkillHandler 
 {
 public:
-	Manticoret() throw() {}
-	~Manticoret() throw() {}
+	Manticoret()  {}
+	~Manticoret()  {}
 	
 public:
     string getSkillHandlerName()  { return "Manticoret"; }

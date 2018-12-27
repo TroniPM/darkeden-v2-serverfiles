@@ -12,7 +12,7 @@
 #include "Assert.h"
 
 CGUseItemFromInventory::CGUseItemFromInventory () 
-     throw ()
+     
 {
 	__BEGIN_TRY
 
@@ -22,14 +22,14 @@ CGUseItemFromInventory::CGUseItemFromInventory ()
 }
 	
 CGUseItemFromInventory::~CGUseItemFromInventory () 
-    throw ()
+    
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void CGUseItemFromInventory::read (SocketInputStream & iStream) 
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY
 		
@@ -58,7 +58,7 @@ void CGUseItemFromInventory::read (SocketInputStream & iStream)
 }
 		    
 void CGUseItemFromInventory::write (SocketOutputStream & oStream) const 
-     throw (ProtocolException , Error)
+     
 {
 	__BEGIN_TRY
 
@@ -87,7 +87,7 @@ void CGUseItemFromInventory::write (SocketOutputStream & oStream) const
 }
 
 void CGUseItemFromInventory::execute (Player* pPlayer) 
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY
 

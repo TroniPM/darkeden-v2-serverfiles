@@ -59,7 +59,7 @@ public:
 
 	// get/set GuildType
 	GuildType_t	getGuildType()	 {	return m_GuildType; }
-	void		setGuildType( GuildType_t GuildType )	throw()	{ m_GuildType = GuildType; }
+	void		setGuildType( GuildType_t GuildType )		{ m_GuildType = GuildType; }
 	
 	GuildType_t	m_GuildType;
 	
@@ -80,16 +80,16 @@ class CGRequestGuildListFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGRequestGuildListFactory() throw() {}
+	CGRequestGuildListFactory()  {}
 	
 	// destructor
-	virtual ~CGRequestGuildListFactory() throw() {}
+	virtual ~CGRequestGuildListFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGRequestGuildList(); }
+	Packet* createPacket()  { return new CGRequestGuildList(); }
 
 	// get packet name
 	string getPacketName()  { return "CGRequestGuildList"; }

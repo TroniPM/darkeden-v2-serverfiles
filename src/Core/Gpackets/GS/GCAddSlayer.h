@@ -43,18 +43,18 @@ public:
 	string toString() ;
 
 public:
-	PCSlayerInfo3 & getSlayerInfo() throw() { return m_SlayerInfo; }
+	PCSlayerInfo3 & getSlayerInfo()  { return m_SlayerInfo; }
 	const PCSlayerInfo3 & getSlayerInfo()  { return m_SlayerInfo; }
-	void setSlayerInfo(const PCSlayerInfo3 & slayerInfo) throw() { m_SlayerInfo = slayerInfo; }
+	void setSlayerInfo(const PCSlayerInfo3 & slayerInfo)  { m_SlayerInfo = slayerInfo; }
 
 	EffectInfo* getEffectInfo()  { return m_pEffectInfo; }
-	void setEffectInfo(EffectInfo* pEffectInfo) throw() { m_pEffectInfo = pEffectInfo; }
+	void setEffectInfo(EffectInfo* pEffectInfo)  { m_pEffectInfo = pEffectInfo; }
 
 	PetInfo* getPetInfo()  { return m_pPetInfo; }
-	void setPetInfo(PetInfo* pPetInfo) throw() { m_pPetInfo = pPetInfo; }
+	void setPetInfo(PetInfo* pPetInfo)  { m_pPetInfo = pPetInfo; }
 
 	NicknameInfo* getNicknameInfo()  { return m_pNicknameInfo; }
-	void setNicknameInfo(NicknameInfo* pNicknameInfo) throw() { m_pNicknameInfo = pNicknameInfo; }
+	void setNicknameInfo(NicknameInfo* pNicknameInfo)  { m_pNicknameInfo = pNicknameInfo; }
 
 	StoreOutlook	getStoreOutlook() const { return m_StoreOutlook; }
 	void		setStoreInfo(StoreInfo* pInfo) { pInfo->makeStoreOutlook(m_StoreOutlook); }
@@ -74,7 +74,7 @@ private:
 class GCAddSlayerFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCAddSlayer(); }
+	Packet* createPacket()  { return new GCAddSlayer(); }
 	string getPacketName()  { return "GCAddSlayer"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_SLAYER; }
 	PacketSize_t getPacketMaxSize() 

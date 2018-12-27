@@ -10,7 +10,7 @@
 //#include "Properties.h"
 
 void CGConnectSetKey::read (SocketInputStream & iStream) 
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY
 
@@ -21,7 +21,7 @@ void CGConnectSetKey::read (SocketInputStream & iStream)
 }
 
 void CGConnectSetKey::write (SocketOutputStream & oStream) const 
-     throw (ProtocolException , Error)
+     
 {
 	__BEGIN_TRY
 
@@ -32,7 +32,7 @@ void CGConnectSetKey::write (SocketOutputStream & oStream) const
 }
 
 void CGConnectSetKey::execute (Player* pPlayer) 
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY
 

@@ -16,8 +16,8 @@
 class LarStroke : public SkillHandler 
 {
 public:
-	LarStroke() throw() {}
-	~LarStroke() throw() {}
+	LarStroke()  {}
+	~LarStroke()  {}
 	
 public:
     string getSkillHandlerName()  { return "LarStroke"; }

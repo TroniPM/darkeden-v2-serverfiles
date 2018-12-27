@@ -17,7 +17,7 @@ class IceField : public SkillHandler
 {
 public:
 	IceField() ;
-	~IceField() throw() {}
+	~IceField()  {}
 	
 public:
     string getSkillHandlerName()  { return "IceField"; }

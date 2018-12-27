@@ -63,23 +63,23 @@ public :
 
 	// get / set SkillType
 	SkillType_t getSkillType()  { return m_SkillType; }
-	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
+	void setSkillType(SkillType_t SkillType)  { m_SkillType = SkillType; }
 
 	// get / set ObjectID
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 	// get / set ItemType
 	ItemType_t getItemType()  { return m_ItemType; }
-	void setItemType(ItemType_t ItemType) throw() { m_ItemType = ItemType; }
+	void setItemType(ItemType_t ItemType)  { m_ItemType = ItemType; }
 
 	// get / set CEffectID
 	CEffectID_t getCEffectID()  { return m_CEffectID; }
-	void setCEffectID(CEffectID_t CEffectID) throw() { m_CEffectID = CEffectID; }
+	void setCEffectID(CEffectID_t CEffectID)  { m_CEffectID = CEffectID; }
 
 	// get / set Duration
 	Duration_t getDuration()  { return m_Duration; }
-	void setDuration(Duration_t Duration) throw() { m_Duration = Duration; }
+	void setDuration(Duration_t Duration)  { m_Duration = Duration; }
 
 	// get / set X, Y
 	CoordInven_t getX() { return m_X; }
@@ -89,7 +89,7 @@ public :
 	void setY(Coord_t Y) { m_Y = Y; }
 
 	ItemClass_t getItemClass()  { return m_ItemClass;}
-	void setItemClass( ItemClass_t c) throw() { m_ItemClass = c;}
+	void setItemClass( ItemClass_t c)  { m_ItemClass = c;}
 
 private :
 	
@@ -130,16 +130,16 @@ class GCSkillToInventoryOK1Factory : public PacketFactory {
 public :
 	
 	// constructor
-	GCSkillToInventoryOK1Factory() throw() {}
+	GCSkillToInventoryOK1Factory()  {}
 	
 	// destructor
-	virtual ~GCSkillToInventoryOK1Factory() throw() {}
+	virtual ~GCSkillToInventoryOK1Factory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCSkillToInventoryOK1(); }
+	Packet* createPacket()  { return new GCSkillToInventoryOK1(); }
 
 	// get packet name
 	string getPacketName()  { return "GCSkillToInventoryOK1"; }

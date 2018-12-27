@@ -24,7 +24,7 @@ public:
 	uint getProbability(Weather weather)  { return m_Probabilities[weather]; }
 
 	// 특정 날씨의 확률을 지정한다.
-	void setProbability(Weather weather, uint prob) throw() { m_Probabilities[weather] = prob; }
+	void setProbability(Weather weather, uint prob)  { m_Probabilities[weather] = prob; }
 
 	// get debug string
 	string toString() ;

@@ -50,17 +50,17 @@ public :
 
 	// get / set ListNumber
 	BYTE getChangedItemListNum()  { return m_ChangedItemListNum; }
-	void setChangedItemListNum(BYTE ListNum) throw() { m_ChangedItemListNum = ListNum; }
+	void setChangedItemListNum(BYTE ListNum)  { m_ChangedItemListNum = ListNum; }
 
 	// add / delete / clear S List
 	void addChangedItemListElement(ObjectID_t objectID, BYTE itemNum) ; 
 
 	// ClearList
-	void clearChangedItemList() throw() { m_ChangedItemList.clear(); m_ChangedItemNumList.clear(); m_ChangedItemListNum = 0; }
+	void clearChangedItemList()  { m_ChangedItemList.clear(); m_ChangedItemNumList.clear(); m_ChangedItemListNum = 0; }
 
 	// pop front Element in Object List
-	ObjectID_t popFrontChangedItemListElement() throw() { ObjectID_t item = m_ChangedItemList.front(); m_ChangedItemList.pop_front(); return item; }
-	ItemNum_t popFrontChangedItemNumListElement() throw() { ItemNum_t itemNum = m_ChangedItemNumList.front(); m_ChangedItemNumList.pop_front(); return itemNum; }
+	ObjectID_t popFrontChangedItemListElement()  { ObjectID_t item = m_ChangedItemList.front(); m_ChangedItemList.pop_front(); return item; }
+	ItemNum_t popFrontChangedItemNumListElement()  { ItemNum_t itemNum = m_ChangedItemNumList.front(); m_ChangedItemNumList.pop_front(); return itemNum; }
 
 protected:
 	

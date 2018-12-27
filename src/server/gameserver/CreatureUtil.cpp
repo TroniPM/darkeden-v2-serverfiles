@@ -74,7 +74,7 @@
 // 같은 크리쳐 클래스인가? 
 ////////////////////////////////////////////////////////////////////////////////
 bool isSameRace(Creature* pCreature1, Creature* pCreature2) 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -92,7 +92,7 @@ bool isSameRace(Creature* pCreature1, Creature* pCreature2)
 //
 ////////////////////////////////////////////////////////////////////////////////
 Item* findItemOID(Creature* pCreature, ObjectID_t id) 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -103,7 +103,7 @@ Item* findItemOID(Creature* pCreature, ObjectID_t id)
 }
 
 Item* findItemOID(Creature* pCreature, ObjectID_t id, Item::ItemClass IClass) 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -114,7 +114,7 @@ Item* findItemOID(Creature* pCreature, ObjectID_t id, Item::ItemClass IClass)
 }
 
 Item* findItemOID(Creature* pCreature, ObjectID_t id, int& storage, int& x, int &y) 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -214,7 +214,7 @@ Item* findItemOID(Creature* pCreature, ObjectID_t id, int& storage, int& x, int 
 }
 
 Item* findItemOID(Creature* pCreature, ObjectID_t id, Item::ItemClass IClass, int& storage, int& x, int &y) 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -325,7 +325,7 @@ Item* findItemOID(Creature* pCreature, ObjectID_t id, Item::ItemClass IClass, in
 ////////////////////////////////////////////////////////////////////////////////
 
 Item* findItemIID(Creature* pCreature, ItemID_t id) 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -336,7 +336,7 @@ Item* findItemIID(Creature* pCreature, ItemID_t id)
 }
 
 Item* findItemIID(Creature* pCreature, ItemID_t id, Item::ItemClass IClass) 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -347,7 +347,7 @@ Item* findItemIID(Creature* pCreature, ItemID_t id, Item::ItemClass IClass)
 }
 
 Item* findItemIID(Creature* pCreature, ItemID_t id, int& storage, int& x, int &y) 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -447,7 +447,7 @@ Item* findItemIID(Creature* pCreature, ItemID_t id, int& storage, int& x, int &y
 }
 
 Item* findItemIID(Creature* pCreature, ItemID_t id, Item::ItemClass IClass, int& storage, int& x, int &y) 
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -557,7 +557,7 @@ Item* findItemIID(Creature* pCreature, ItemID_t id, Item::ItemClass IClass, int&
 // 계산하는 함수
 ////////////////////////////////////////////////////////////////////////////////
 int computeCreatureExp(Creature* pCreature, int percent, Ousters* pOusters)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -688,7 +688,7 @@ int computeCreatureExp(Creature* pCreature, int percent, Ousters* pOusters)
 // 흡혈할때 HP 올라가는거만 따로 계산한다. 중복 코드.. -_-; by sigi. 2002.11.19
 ////////////////////////////////////////////////////////////////////////////////
 int computeBloodDrainHealPoint(Creature* pCreature, int percent)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -783,7 +783,7 @@ int computeBloodDrainHealPoint(Creature* pCreature, int percent)
 // 이벤트용 몹인지 검사하기...
 ////////////////////////////////////////////////////////////////////////////////
 bool isEventMonster(Creature* pCreature) 
-	throw()
+	
 {
 	__BEGIN_TRY
 

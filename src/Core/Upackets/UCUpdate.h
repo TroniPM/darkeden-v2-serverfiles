@@ -24,10 +24,10 @@ class UCUpdate : public Packet {
 public :
 
 	// 입력스트림(버퍼)으로부터 데이터를 읽어서 패킷을 초기화한다.
-	void read ( SocketInputStream & iStream ) throw ( ProtocolException , Error ) { throw UnsupportedError(__PRETTY_FUNCTION__); }
+	void read ( SocketInputStream & iStream )  { throw UnsupportedError(__PRETTY_FUNCTION__); }
 
     // 소켓으로부터 직접 데이터를 읽어서 패킷을 초기화한다.
-    void read ( Socket * pSocket ) throw ( ProtocolException , Error );
+    void read ( Socket * pSocket ) ;
 		    
     // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
     void write ( SocketOutputStream & oStream )  { throw UnsupportedError(__PRETTY_FUNCTION__); }
@@ -36,7 +36,7 @@ public :
     void write ( Socket * pSocket ) ;
 
 	// execute packet's handler
-	void execute ( Player * pPlayer ) throw ( ProtocolException , Error );
+	void execute ( Player * pPlayer ) ;
 
 	// get packet id
 	PacketID_t getPacketID ()  { return PACKET_UC_UPDATE; }
@@ -50,7 +50,7 @@ public :
 	}
 	
 	// 아무리 커도 백메가는 받지 못한다.
-	static PacketSize_t getPacketMaxSize () throw () 
+	static PacketSize_t getPacketMaxSize ()  
 	{ 
 		return Resource::getMaxSize();
 	}
@@ -66,7 +66,7 @@ public :
 
 	// get/set resource
 	const Resource & getResource ()  { return m_Resource; }
-	void setResource ( const Resource & resource ) throw () { m_Resource = resource; }
+	void setResource ( const Resource & resource )  { m_Resource = resource; }
 
 private :
 
@@ -88,7 +88,7 @@ class UCUpdateFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet * createPacket () throw () { return new UCUpdate(); }
+	Packet * createPacket ()  { return new UCUpdate(); }
 
 	// get packet name
 	string getPacketName ()  { return "UCUpdate"; }
@@ -113,7 +113,7 @@ class UCUpdateHandler {
 public :
 
 	// execute packet's handler
-	static void execute ( UCUpdate * pPacket , Player * pPlayer ) throw ( ProtocolException , Error );
+	static void execute ( UCUpdate * pPacket , Player * pPlayer ) ;
 
 };
 

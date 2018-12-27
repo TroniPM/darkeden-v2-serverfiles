@@ -25,14 +25,14 @@ Mutex    CoatZap::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 CoatZap::CoatZap()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
 }
 
 CoatZap::CoatZap(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	setItemType(itemType);
 	setOptionType(optionType);
@@ -170,7 +170,7 @@ void CoatZap::save(const string & ownerID, Storage storage, StorageID_t storageI
 // get debug string
 //--------------------------------------------------------------------------------
 string CoatZap::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -253,7 +253,7 @@ Protection_t CoatZap::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string CoatZapInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

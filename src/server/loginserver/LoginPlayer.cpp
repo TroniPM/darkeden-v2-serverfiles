@@ -122,7 +122,7 @@ LoginPlayer::~LoginPlayer ()
 //////////////////////////////////////////////////////////////////////
 void
 LoginPlayer::setExpireTimeForKickCharacter()
-	throw ()
+	
 {
 	getCurrentTime(m_ExpireTimeForKickCharacter);
 
@@ -478,7 +478,7 @@ void LoginPlayer::disconnect_nolog ( bool bDisconnected )
 //
 //--------------------------------------------------------------------------------
 void LoginPlayer::sendPacket ( Packet * pPacket )
-	throw ( ProtocolException , Error )
+	
 {
 	__BEGIN_TRY
 
@@ -521,7 +521,7 @@ Packet * LoginPlayer::getOldPacket ( uint prev )
 //
 //////////////////////////////////////////////////////////////////////
 Packet * LoginPlayer::getOldPacket ( PacketID_t packetID )
-	throw ( NoSuchElementException )
+	
 {
 	__BEGIN_TRY
 
@@ -555,7 +555,7 @@ Packet * LoginPlayer::getOldPacket ( PacketID_t packetID )
 //////////////////////////////////////////////////////////////////////////////
 void
 LoginPlayer::sendLGKickCharacter()
-	throw ()
+	
 {
 	cout << "send LGKickCharacter" << endl;
 
@@ -707,7 +707,7 @@ LoginPlayer::sendLGKickCharacter()
 //////////////////////////////////////////////////////////////////////
 void
 LoginPlayer::sendLCLoginOK()
-	throw ()
+	
 {
 	try {
 	//cout << "Send LCLoginOK" << endl;

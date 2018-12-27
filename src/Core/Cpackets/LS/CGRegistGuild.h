@@ -48,11 +48,11 @@ public:
 
 	// get/set GuildName
 	string getGuildName()  { return m_GuildName; }
-	void setGuildName( const string& guildName ) throw() { m_GuildName = guildName; }
+	void setGuildName( const string& guildName )  { m_GuildName = guildName; }
 
 	// get/set GuildIntro
 	string getGuildIntro()  { return m_GuildIntro; }
-	void setGuildIntro( const string& guildIntro ) throw() { m_GuildIntro = guildIntro; }
+	void setGuildIntro( const string& guildIntro )  { m_GuildIntro = guildIntro; }
 
 
 private :
@@ -79,16 +79,16 @@ class CGRegistGuildFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGRegistGuildFactory() throw() {}
+	CGRegistGuildFactory()  {}
 	
 	// destructor
-	virtual ~CGRegistGuildFactory() throw() {}
+	virtual ~CGRegistGuildFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGRegistGuild(); }
+	Packet* createPacket()  { return new CGRegistGuild(); }
 
 	// get packet name
 	string getPacketName()  { return "CGRegistGuild"; }

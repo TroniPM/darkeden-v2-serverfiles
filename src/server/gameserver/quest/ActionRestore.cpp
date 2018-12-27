@@ -58,7 +58,7 @@ void ActionRestore::execute (Creature * pCreature1 , Creature * pCreature2)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionRestore::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 

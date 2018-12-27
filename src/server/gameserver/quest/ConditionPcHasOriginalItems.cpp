@@ -14,7 +14,7 @@
 // is satisfied?
 ////////////////////////////////////////////////////////////////////////////////
 bool ConditionPcHasOriginalItems::isSatisfied (Creature * pCreature1 , Creature * pCreature2, void* pParam) const 
-	throw () 
+	 
 { 
 	Assert(pCreature2 != NULL);
 	Assert(pCreature2->isPC());
@@ -55,7 +55,7 @@ void ConditionPcHasOriginalItems::read (PropertyBuffer & propertyBuffer)
 	// get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ConditionPcHasOriginalItems::toString () const 
-	throw () 
+	 
 { 
 	__BEGIN_TRY
 

@@ -78,7 +78,7 @@ public:
 
 protected:
 	bool isValidIndex(int index) ;
-	BYTE* getData() throw() { return &m_pData[0]; }
+	BYTE* getData()  { return &m_pData[0]; }
 	
 
 ///// Member data /////

@@ -24,7 +24,7 @@ Mutex    Mine::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Mine::Mine()
-	throw()
+	
 : m_ItemType(0), m_Damage(0), m_Dir(0)
 {
 	m_Num = 1;
@@ -33,7 +33,7 @@ Mine::Mine()
 }
 
 Mine::Mine(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 : m_ItemType(itemType)
 {
 	if (!g_pItemInfoManager->isPossibleItem(getItemClass(), m_ItemType, optionType))
@@ -167,7 +167,7 @@ void Mine::save(const string & ownerID, Storage storage, StorageID_t storageID, 
 // get debug string
 //--------------------------------------------------------------------------------
 string Mine::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -248,7 +248,7 @@ Damage_t Mine::getMaxDamage() const
 // get debug string
 //--------------------------------------------------------------------------------
 string MineInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

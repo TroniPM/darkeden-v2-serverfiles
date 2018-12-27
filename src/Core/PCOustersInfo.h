@@ -57,7 +57,7 @@ public:
 	}
 
 	// get max size of object
-	static uint getMaxSize () throw ()
+	static uint getMaxSize () 
 	{
 		return szBYTE + 20				// 아우스터스 이름
 			+ szSlot					// 슬롯
@@ -82,10 +82,10 @@ public:
 
 public:
     string getName ()  { return m_Name; }
-    void setName (string name) throw () { m_Name = (name.size() > 20) ? name.substr(0,20) : name; }
+    void setName (string name)  { m_Name = (name.size() > 20) ? name.substr(0,20) : name; }
 
 	Slot getSlot ()  { return m_Slot; }
-	void setSlot (Slot slot) throw () { m_Slot = slot; }
+	void setSlot (Slot slot)  { m_Slot = slot; }
 	void setSlot (string slot) 
 	{
 		if (slot == Slot2String[SLOT1])
@@ -99,16 +99,16 @@ public:
 	}
 
 	Alignment_t getAlignment()  { return m_Alignment; }
-	void setAlignment(Alignment_t Alignment) throw() { m_Alignment = Alignment; }
+	void setAlignment(Alignment_t Alignment)  { m_Alignment = Alignment; }
 
 	Fame_t getFame ()  { return m_Fame; }
-	void setFame (Fame_t f) throw () { m_Fame = f; }
+	void setFame (Fame_t f)  { m_Fame = f; }
 
 	Fame_t getKillPoint ()  { return m_KillPoint; }
-	void setKillPoint (Fame_t f) throw () { m_KillPoint = f; }
+	void setKillPoint (Fame_t f)  { m_KillPoint = f; }
 
 	Sex getSex ()  { return m_Sex; }
-	void setSex (Sex sex) throw () { m_Sex = sex; }
+	void setSex (Sex sex)  { m_Sex = sex; }
 	void setSex (string sex) 
 	{
 		if (sex == Sex2String[MALE]) 
@@ -120,22 +120,22 @@ public:
 	}
 
 	Color_t getCoatColor()  { return m_CoatColor; }
-	void setCoatColor(Color_t CoatColor) throw() { m_CoatColor = CoatColor; }
+	void setCoatColor(Color_t CoatColor)  { m_CoatColor = CoatColor; }
 
 	Color_t getHairColor ()  { return m_HairColor; }
-	void setHairColor (Color_t hairColor) throw () { m_HairColor = hairColor; }
+	void setHairColor (Color_t hairColor)  { m_HairColor = hairColor; }
 
 	Color_t getArmColor ()  { return m_ArmColor; }
-	void setArmColor (Color_t armColor) throw () { m_ArmColor = armColor; }
+	void setArmColor (Color_t armColor)  { m_ArmColor = armColor; }
 
 	Color_t getBootsColor ()  { return m_BootsColor; }
-	void setBootsColor (Color_t bootsColor) throw () { m_BootsColor = bootsColor; }
+	void setBootsColor (Color_t bootsColor)  { m_BootsColor = bootsColor; }
 
 	OustersCoatType getCoatType()  { return m_CoatType; }
-	void setCoatType(OustersCoatType coatType) throw() { m_CoatType = coatType; }
+	void setCoatType(OustersCoatType coatType)  { m_CoatType = coatType; }
 
 	OustersArmType getArmType()  { return m_ArmType; }
-	void setArmType( OustersArmType armType ) throw() { m_ArmType = armType; }
+	void setArmType( OustersArmType armType )  { m_ArmType = armType; }
 
     Attr_t getSTR ()  { if (m_STR > maxOustersAttr) throw Error("STR out of range"); return m_STR; }
 	void setSTR (Attr_t str)  { if (str > maxOustersAttr) throw Error("STR out of range"); m_STR = str; }
@@ -147,27 +147,27 @@ public:
 	void setINT (Attr_t inte)  { if (inte > maxOustersAttr) throw Error("INT out of range"); m_INT = inte; }
 
 	HP_t getHP (AttrType attrType = ATTR_CURRENT)  { return m_HP[attrType]; }
-	void setHP (HP_t hp, AttrType attrType = ATTR_CURRENT) throw () { m_HP[attrType] = hp; }
-	void setHP (HP_t curHP, HP_t maxHP) throw () { m_HP[ATTR_CURRENT] = curHP; m_HP[ATTR_MAX] = maxHP; }
+	void setHP (HP_t hp, AttrType attrType = ATTR_CURRENT)  { m_HP[attrType] = hp; }
+	void setHP (HP_t curHP, HP_t maxHP)  { m_HP[ATTR_CURRENT] = curHP; m_HP[ATTR_MAX] = maxHP; }
 
 	MP_t getMP (AttrType attrType = ATTR_CURRENT)  { return m_MP[attrType]; }
-	void setMP (MP_t mp, AttrType attrType = ATTR_CURRENT) throw () { m_MP[attrType] = mp; }
-	void setMP (MP_t curMP, MP_t maxMP) throw () { m_MP[ATTR_CURRENT] = curMP; m_MP[ATTR_MAX] = maxMP; }
+	void setMP (MP_t mp, AttrType attrType = ATTR_CURRENT)  { m_MP[attrType] = mp; }
+	void setMP (MP_t curMP, MP_t maxMP)  { m_MP[ATTR_CURRENT] = curMP; m_MP[ATTR_MAX] = maxMP; }
 
 	Level_t getLevel ()  { return m_Level; }
-	void setLevel (Level_t exp) throw () { m_Level = exp; }
+	void setLevel (Level_t exp)  { m_Level = exp; }
 
 	Exp_t getExp ()  { return m_Exp; }
-	void setExp (Exp_t exp) throw () { m_Exp = exp; }
+	void setExp (Exp_t exp)  { m_Exp = exp; }
 
 	Rank_t getRank ()  { return m_Rank; }
-	void setRank (Rank_t rank) throw () { m_Rank = rank; }
+	void setRank (Rank_t rank)  { m_Rank = rank; }
 
 	Bonus_t getBonus()  { return m_Bonus; }
-	void setBonus(Bonus_t Bonus) throw () { m_Bonus = Bonus; }
+	void setBonus(Bonus_t Bonus)  { m_Bonus = Bonus; }
 
 	SkillBonus_t getSkillBonus()  { return m_SkillBonus; }
-	void setSkillBonus( SkillBonus_t skillBonus ) throw () { m_SkillBonus = skillBonus; }
+	void setSkillBonus( SkillBonus_t skillBonus )  { m_SkillBonus = skillBonus; }
 
 	Level_t getAdvancementLevel() const { return m_AdvancementLevel; }
 	void	setAdvancementLevel(Level_t level) { m_AdvancementLevel = level; }

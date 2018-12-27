@@ -36,12 +36,12 @@ public:
 
 public:
 	Range_t getRange()  { return m_Range; }
-	void setRange(HP_t Range) throw() { m_Range = Range; }
+	void setRange(HP_t Range)  { m_Range = Range; }
 
 	HP_t getPoint()  { return m_Point; }
-	void setPoint(HP_t Point) throw() { m_Point = Point; }
+	void setPoint(HP_t Point)  { m_Point = Point; }
 
-	void setDelay(Turn_t Delay) throw() { m_Delay = Delay; }
+	void setDelay(Turn_t Delay)  { m_Delay = Delay; }
 	Turn_t getDelay()  { return m_Delay; }
 
 private:

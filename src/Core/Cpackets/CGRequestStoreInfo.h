@@ -67,16 +67,16 @@ class CGRequestStoreInfoFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGRequestStoreInfoFactory() throw() {}
+	CGRequestStoreInfoFactory()  {}
 	
 	// destructor
-	virtual ~CGRequestStoreInfoFactory() throw() {}
+	virtual ~CGRequestStoreInfoFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGRequestStoreInfo(); }
+	Packet* createPacket()  { return new CGRequestStoreInfo(); }
 
 	// get packet name
 	string getPacketName()  { return "CGRequestStoreInfo"; }

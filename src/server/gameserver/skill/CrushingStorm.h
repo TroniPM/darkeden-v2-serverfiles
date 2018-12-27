@@ -16,8 +16,8 @@
 class CrushingStorm : public SkillHandler 
 {
 public:
-	CrushingStorm() throw() {}
-	~CrushingStorm() throw() {}
+	CrushingStorm()  {}
+	~CrushingStorm()  {}
 	
 public:
     string getSkillHandlerName()  { return "CrushingStorm"; }

@@ -37,7 +37,7 @@ public:
 
 	bool hasCondition(ConditionType_t conditionType)  { return m_ConditionSet.test(conditionType); }
 
-	list<Trigger*> & getTriggers() throw() { return m_Triggers; }
+	list<Trigger*> & getTriggers()  { return m_Triggers; }
 	const list<Trigger*> & getTriggers()  { return m_Triggers; }
 
 	string toString() ;

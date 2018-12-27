@@ -24,9 +24,9 @@ public:
 	~CGRequestIP ();
 	
 public:
-    void read ( SocketInputStream & iStream ) throw ( ProtocolException , Error );
+    void read ( SocketInputStream & iStream ) ;
     void write ( SocketOutputStream & oStream ) ;
-	void execute ( Player * pPlayer ) throw ( ProtocolException , Error );
+	void execute ( Player * pPlayer ) ;
     PacketID_t getPacketID ()  { return PACKET_CG_REQUEST_IP; }
 	PacketSize_t getPacketSize ()  { return szBYTE + m_Name.size(); }
 	string getPacketName ()  { return "CGRequestIP"; }
@@ -34,7 +34,7 @@ public:
 
 public:
 	string getName()  { return m_Name; }
-	void setName( const char* pName) throw() { m_Name = pName;}
+	void setName( const char* pName)  { m_Name = pName;}
 
 protected:
 	string			m_Name;
@@ -47,7 +47,7 @@ protected:
 class CGRequestIPFactory : public PacketFactory 
 {
 public:
-	Packet * createPacket () throw () { return new CGRequestIP(); }
+	Packet * createPacket ()  { return new CGRequestIP(); }
 	string getPacketName ()  { return "CGRequestIP"; }
 	PacketID_t getPacketID ()  { return Packet::PACKET_CG_REQUEST_IP; }
 	PacketSize_t getPacketMaxSize ()  { return szBYTE + 10;}

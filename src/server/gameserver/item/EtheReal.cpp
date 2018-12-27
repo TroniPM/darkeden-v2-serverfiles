@@ -25,14 +25,14 @@ Mutex    EtheReal::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 EtheReal::EtheReal()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
 }
 
 EtheReal::EtheReal(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	setItemType(itemType);
 	setOptionType(optionType);
@@ -170,7 +170,7 @@ void EtheReal::save(const string & ownerID, Storage storage, StorageID_t storage
 // get debug string
 //--------------------------------------------------------------------------------
 string EtheReal::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -253,7 +253,7 @@ Protection_t EtheReal::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string EtheRealInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

@@ -51,13 +51,13 @@ public:
 	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_DERMIS; }
 
 	Defense_t getDefenseBonus()  { return m_DefenseBonus; }
-	void setDefenseBonus(Defense_t acBonus) throw() { m_DefenseBonus = acBonus; }
+	void setDefenseBonus(Defense_t acBonus)  { m_DefenseBonus = acBonus; }
 
 	Protection_t getProtectionBonus()  { return m_ProtectionBonus; }
-	void setProtectionBonus(Protection_t acBonus) throw() { m_ProtectionBonus = acBonus; }
+	void setProtectionBonus(Protection_t acBonus)  { m_ProtectionBonus = acBonus; }
 
 	virtual uint getItemLevel(void)  { return m_ItemLevel; }
-	virtual void setItemLevel(uint level) throw() { m_ItemLevel = level; }
+	virtual void setItemLevel(uint level)  { m_ItemLevel = level; }
 
 	virtual string toString() ;
 
@@ -95,7 +95,7 @@ public:
 	virtual string getItemClassName()  { return "Dermis"; }
 	
 public:
-	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new Dermis(ItemType,OptionType); }
+	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType)  { return new Dermis(ItemType,OptionType); }
 };
 
 

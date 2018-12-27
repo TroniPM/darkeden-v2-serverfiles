@@ -16,8 +16,8 @@
 class ViaCrucis : public SkillHandler 
 {
 public:
-	ViaCrucis() throw() {}
-	~ViaCrucis() throw() {}
+	ViaCrucis()  {}
+	~ViaCrucis()  {}
 	
 public:
     string getSkillHandlerName()  { return "ViaCrucis"; }

@@ -16,8 +16,8 @@
 class Bless2 : public SkillHandler 
 {
 public:
-	Bless2() throw() {}
-	~Bless2() throw() {}
+	Bless2()  {}
+	~Bless2()  {}
 	
 public :
     string getSkillHandlerName()  { return "Bless2"; }

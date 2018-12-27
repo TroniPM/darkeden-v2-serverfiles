@@ -61,7 +61,7 @@ void ActionWaitForApartCouple::execute (Creature * pCreature1 , Creature * pCrea
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionWaitForApartCouple::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

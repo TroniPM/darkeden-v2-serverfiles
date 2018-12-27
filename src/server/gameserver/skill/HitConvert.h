@@ -16,8 +16,8 @@
 class HitConvert : public SkillHandler 
 {
 public:
-	HitConvert() throw() {}
-	~HitConvert() throw() {}
+	HitConvert()  {}
+	~HitConvert()  {}
 	
 public:
     string getSkillHandlerName()  { return "HitConvert"; }

@@ -23,7 +23,7 @@ NPCManager::NPCManager ()
 }
 
 NPCManager::~NPCManager () 
-	throw ()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -136,7 +136,7 @@ void NPCManager::processCreatures ()
 }
 
 string NPCManager::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

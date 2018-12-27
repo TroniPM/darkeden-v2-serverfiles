@@ -16,8 +16,8 @@
 class Rediance : public SkillHandler 
 {
 public:
-	Rediance() throw() {}
-	~Rediance() throw() {}
+	Rediance()  {}
+	~Rediance()  {}
 	
 public:
     string getSkillHandlerName()  { return "Rediance"; }

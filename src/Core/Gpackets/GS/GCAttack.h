@@ -62,19 +62,19 @@ public :
 
 	// get Object ID 
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t objectID) throw() { m_ObjectID = objectID; }
+	void setObjectID(ObjectID_t objectID)  { m_ObjectID = objectID; }
 
 	// get/set X
 	Coord_t getX()  { return m_X; }
-	void setX(Coord_t x) throw() { m_X = x; }
+	void setX(Coord_t x)  { m_X = x; }
 	
 	// get/set Y
 	Coord_t getY()  { return m_Y; }
-	void setY(Coord_t y) throw() { m_Y = y; }
+	void setY(Coord_t y)  { m_Y = y; }
 
 	// get/set Dir
 	Dir_t getDir()  { return m_Dir; }
-	void setDir(Dir_t dir) throw() { m_Dir = dir; }
+	void setDir(Dir_t dir)  { m_Dir = dir; }
 
 
 private :
@@ -100,16 +100,16 @@ class GCAttackFactory : public PacketFactory {
 public :
 	
 	// constructor
-	GCAttackFactory() throw() {}
+	GCAttackFactory()  {}
 	
 	// destructor
-	virtual ~GCAttackFactory() throw() {}
+	virtual ~GCAttackFactory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCAttack(); }
+	Packet* createPacket()  { return new GCAttack(); }
 
 	// get packet name
 	string getPacketName()  { return "GCAttack"; }

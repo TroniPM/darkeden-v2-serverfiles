@@ -27,13 +27,13 @@ Mutex    EventItem::m_Mutex;
 //////////////////////////////////////////////////////////////////////////////
 
 EventItem::EventItem()
-	throw()
+	
 {
 	m_ItemType = 0;
 }
 
 EventItem::EventItem(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t Num)
-	throw()
+	
 {
 	m_ItemType = itemType;
 	m_Num      = Num;
@@ -151,7 +151,7 @@ void EventItem::save(const string & ownerID, Storage storage, StorageID_t storag
 }
 
 string EventItem::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -203,7 +203,7 @@ void EventItem::whenPCTake( PlayerCreature* pPC )
 //////////////////////////////////////////////////////////////////////////////
 
 string EventItemInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "EventItemInfo("

@@ -83,16 +83,16 @@ class CGPartySayFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGPartySayFactory() throw() {}
+	CGPartySayFactory()  {}
 	
 	// destructor
-	virtual ~CGPartySayFactory() throw() {}
+	virtual ~CGPartySayFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGPartySay(); }
+	Packet* createPacket()  { return new CGPartySay(); }
 
 	// get packet name
 	string getPacketName()  { return "CGPartySay"; }

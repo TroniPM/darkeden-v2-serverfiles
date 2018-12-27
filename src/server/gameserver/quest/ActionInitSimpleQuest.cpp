@@ -61,7 +61,7 @@ void ActionInitSimpleQuest::execute (Creature * pCreature1 , Creature * pCreatur
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionInitSimpleQuest::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

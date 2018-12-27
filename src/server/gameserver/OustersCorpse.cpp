@@ -22,7 +22,7 @@ OustersCorpse::OustersCorpse (Ousters* pOusters)
 }
 
 OustersCorpse::~OustersCorpse()
-	throw()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH

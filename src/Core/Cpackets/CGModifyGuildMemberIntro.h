@@ -51,11 +51,11 @@ public:
 
 	// get/set GuildID
 	GuildID_t getGuildID()  { return m_GuildID; }
-	void setGuildID( GuildID_t guildID ) throw() { m_GuildID = guildID; }
+	void setGuildID( GuildID_t guildID )  { m_GuildID = guildID; }
 
 	// get/set intro
 	const string& getGuildMemberIntro()  { return m_GuildMemberIntro; }
-	void setGuildMemberIntro( const string& intro ) throw() { m_GuildMemberIntro = intro; }
+	void setGuildMemberIntro( const string& intro )  { m_GuildMemberIntro = intro; }
 
 private :
 
@@ -81,16 +81,16 @@ class CGModifyGuildMemberIntroFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGModifyGuildMemberIntroFactory() throw() {}
+	CGModifyGuildMemberIntroFactory()  {}
 	
 	// destructor
-	virtual ~CGModifyGuildMemberIntroFactory() throw() {}
+	virtual ~CGModifyGuildMemberIntroFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGModifyGuildMemberIntro(); }
+	Packet* createPacket()  { return new CGModifyGuildMemberIntro(); }
 
 	// get packet name
 	string getPacketName()  { return "CGModifyGuildMemberIntro"; }

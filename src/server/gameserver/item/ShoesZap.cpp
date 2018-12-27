@@ -25,14 +25,14 @@ Mutex    ShoesZap::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 ShoesZap::ShoesZap()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
 }
 
 ShoesZap::ShoesZap(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	setItemType(itemType);
 	setOptionType(optionType);
@@ -170,7 +170,7 @@ void ShoesZap::save(const string & ownerID, Storage storage, StorageID_t storage
 // get debug string
 //--------------------------------------------------------------------------------
 string ShoesZap::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -253,7 +253,7 @@ Protection_t ShoesZap::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string ShoesZapInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

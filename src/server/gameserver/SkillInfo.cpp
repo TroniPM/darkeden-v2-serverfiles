@@ -201,7 +201,7 @@ string SkillInfo::toString() const
 //////////////////////////////////////////////////////////////////////////////
 
 SkillInfoManager::SkillInfoManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -212,7 +212,7 @@ SkillInfoManager::SkillInfoManager()
 }
 
 SkillInfoManager::~SkillInfoManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -558,7 +558,7 @@ Level_t SkillInfoManager::getLimitLevelByDomainGrade(SkillGrade Grade)
 
 // SkillInfoManager:: toString()
 string SkillInfoManager::toString() const
-	throw()
+	
 {
 	__BEGIN_TRY
 

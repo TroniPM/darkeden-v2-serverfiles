@@ -32,7 +32,7 @@ public:
 	void unlock ();
 	void trylock ();
 	
-	pthread_mutex_t * getMutex () throw () { return &m_Mutex; }
+	pthread_mutex_t * getMutex ()  { return &m_Mutex; }
 
 private:
 	pthread_mutex_t 	m_Mutex; 		// ¹ÂÅØ½º °´Ã¼

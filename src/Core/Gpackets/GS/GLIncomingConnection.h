@@ -66,11 +66,11 @@ public :
 
 	// get/set playerID
 	const string& getPlayerID()  { return m_PlayerID; }
-	void setPlayerID(const string& playerID) throw() { m_PlayerID = playerID; }
+	void setPlayerID(const string& playerID)  { m_PlayerID = playerID; }
 	
 	// get/set client ip
 	const string& getClientIP()  { return m_ClientIP; }
-	void setClientIP(const string& ip) throw() { m_ClientIP = ip; }
+	void setClientIP(const string& ip)  { m_ClientIP = ip; }
 	
 private :
 
@@ -96,7 +96,7 @@ class GLIncomingConnectionFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GLIncomingConnection(); }
+	Packet* createPacket()  { return new GLIncomingConnection(); }
 
 	// get packet name
 	string getPacketName()  { return "GLIncomingConnection"; }

@@ -16,8 +16,8 @@
 class BloodyZenith: public SkillHandler 
 {
 public:
-	BloodyZenith() throw() {}
-	~BloodyZenith() throw() {}
+	BloodyZenith()  {}
+	~BloodyZenith()  {}
 	
 public:
     string getSkillHandlerName()  { return "BloodyZenith"; }

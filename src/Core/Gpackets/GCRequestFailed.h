@@ -51,7 +51,7 @@ private:
 class GCRequestFailedFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCRequestFailed(); }
+	Packet* createPacket()  { return new GCRequestFailed(); }
 	string getPacketName()  { return "GCRequestFailed"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_REQUEST_FAILED; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE + szBYTE + 10; }

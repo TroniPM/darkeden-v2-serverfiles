@@ -59,11 +59,11 @@ public :
 	
 	// get/set m_SkillType
 	SkillType_t getSkillType()  { return m_SkillType; }
-	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
+	void setSkillType(SkillType_t SkillType)  { m_SkillType = SkillType; }
 
 	// get/set m_SkillDomainType
 	SkillDomainType_t getSkillDomainType()  { return m_DomainType;}
-	void setSkillDomainType(SkillDomainType_t DomainType) throw() { m_DomainType = DomainType;}
+	void setSkillDomainType(SkillDomainType_t DomainType)  { m_DomainType = DomainType;}
 
 private : 
 
@@ -88,16 +88,16 @@ class  GCLearnSkillOKFactory : public PacketFactory {
 public :
 	
 	// constructor
-	 GCLearnSkillOKFactory() throw() {}
+	 GCLearnSkillOKFactory()  {}
 	
 	// destructor
-	virtual ~GCLearnSkillOKFactory() throw() {}
+	virtual ~GCLearnSkillOKFactory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCLearnSkillOK(); }
+	Packet* createPacket()  { return new GCLearnSkillOK(); }
 
 	// get packet name
 	string getPacketName()  { return "GCLearnSkillOK"; }

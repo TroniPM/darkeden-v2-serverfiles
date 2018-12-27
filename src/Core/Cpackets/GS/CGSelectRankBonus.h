@@ -43,7 +43,7 @@ public:
 
 public:
 	DWORD getRankBonusType()  { return m_RankBonusType; }
-	void setRankBonusType( DWORD rankBonusType ) throw() { m_RankBonusType = rankBonusType; }
+	void setRankBonusType( DWORD rankBonusType )  { m_RankBonusType = rankBonusType; }
 
 private:
 	DWORD	m_RankBonusType;		// Rank Bonus Type
@@ -57,7 +57,7 @@ class CGSelectRankBonusFactory : public PacketFactory
 {
 public:
 	// create packet
-	Packet* createPacket() throw() { return new CGSelectRankBonus(); }
+	Packet* createPacket()  { return new CGSelectRankBonus(); }
 
 	// get packet name
 	string getPacketName()  { return "CGSelectRankBonus"; }

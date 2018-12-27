@@ -76,16 +76,16 @@ class GCPhoneConnectionFailedFactory : public PacketFactory {
 public :
 	
 	// constructor
-	GCPhoneConnectionFailedFactory() throw() {}
+	GCPhoneConnectionFailedFactory()  {}
 	
 	// destructor
-	virtual ~GCPhoneConnectionFailedFactory() throw() {}
+	virtual ~GCPhoneConnectionFailedFactory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCPhoneConnectionFailed(); }
+	Packet* createPacket()  { return new GCPhoneConnectionFailed(); }
 
 	// get packet name
 	string getPacketName()  { return "GCPhoneConnectionFailed"; }

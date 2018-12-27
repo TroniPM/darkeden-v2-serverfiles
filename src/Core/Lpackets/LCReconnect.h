@@ -57,15 +57,15 @@ public:
 
 	// get/set game server's ip
 	string getGameServerIP()  { return m_GameServerIP; }
-	void setGameServerIP(const string & ip) throw() { m_GameServerIP = ip; }
+	void setGameServerIP(const string & ip)  { m_GameServerIP = ip; }
 
 	// get/set game server's port
 	uint getGameServerPort()  { return m_GameServerPort; }
-	void setGameServerPort(uint port) throw() { m_GameServerPort = port; }
+	void setGameServerPort(uint port)  { m_GameServerPort = port; }
 
 	// get/set key
 	DWORD getKey()  { return m_Key; }
-	void setKey(DWORD key) throw() { m_Key = key; }
+	void setKey(DWORD key)  { m_Key = key; }
 
 private :
 	
@@ -94,7 +94,7 @@ class LCReconnectFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new LCReconnect(); }
+	Packet* createPacket()  { return new LCReconnect(); }
 
 	// get packet name
 	string getPacketName()  { return "LCReconnect"; }

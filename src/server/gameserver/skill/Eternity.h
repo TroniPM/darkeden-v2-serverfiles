@@ -16,8 +16,8 @@
 class Eternity : public SkillHandler 
 {
 public:
-	Eternity() throw() {}
-	~Eternity() throw() {}
+	Eternity()  {}
+	~Eternity()  {}
 	
 public:
     string getSkillHandlerName()  { return "Eternity"; }

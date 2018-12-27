@@ -24,13 +24,13 @@ Mutex    CarryingReceiver::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 CarryingReceiver::CarryingReceiver()
-	throw()
+	
 {
 	setItemType(0);
 }
 
 CarryingReceiver::CarryingReceiver(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	setItemType(itemType);
 	setOptionType(optionType);
@@ -151,7 +151,7 @@ void CarryingReceiver::save(const string & ownerID, Storage storage, StorageID_t
 // get debug string
 //--------------------------------------------------------------------------------
 string CarryingReceiver::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -170,7 +170,7 @@ string CarryingReceiver::toString() const
 // get debug string
 //--------------------------------------------------------------------------------
 string CarryingReceiverInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

@@ -19,7 +19,7 @@
 //////////////////////////////////////////////////////////////////////////////
 
 SweeperBonusManager::SweeperBonusManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -29,7 +29,7 @@ SweeperBonusManager::SweeperBonusManager()
 }
 
 SweeperBonusManager::~SweeperBonusManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -49,7 +49,7 @@ void SweeperBonusManager::init()
 }
 
 void SweeperBonusManager::clear()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -235,7 +235,7 @@ bool SweeperBonusManager::isAble(ZoneID_t zoneID) const
 }
 
 void SweeperBonusManager::setSweeperBonusRace( SweeperBonusType_t sweeperBonusType, Race_t race )
-	throw( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -245,7 +245,7 @@ void SweeperBonusManager::setSweeperBonusRace( SweeperBonusType_t sweeperBonusTy
 }
 
 void SweeperBonusManager::makeSweeperBonusInfo( GCSweeperBonusInfo& gcSweeperBonusInfo )
-	throw( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -266,7 +266,7 @@ void SweeperBonusManager::makeSweeperBonusInfo( GCSweeperBonusInfo& gcSweeperBon
 }
 
 void SweeperBonusManager::makeVoidSweeperBonusInfo( GCSweeperBonusInfo& gcSweeperBonusInfo )
-	throw( Error )
+	
 {
 	__BEGIN_TRY
 
@@ -287,7 +287,7 @@ void SweeperBonusManager::makeVoidSweeperBonusInfo( GCSweeperBonusInfo& gcSweepe
 }
 
 string SweeperBonusManager::toString() const
-	throw()
+	
 {
 	__BEGIN_TRY
 

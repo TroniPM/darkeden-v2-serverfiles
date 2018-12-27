@@ -16,8 +16,8 @@
 class GroundAttack : public SkillHandler 
 {
 public:
-	GroundAttack() throw() {}
-	~GroundAttack() throw() {}
+	GroundAttack()  {}
+	~GroundAttack()  {}
 	
 public:
     string getSkillHandlerName()  { return "GroundAttack"; }

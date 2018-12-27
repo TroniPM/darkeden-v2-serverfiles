@@ -34,20 +34,20 @@ public:
 	string toString() ;
 
 public:
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 	ObjectID_t getObjectID()  { return m_ObjectID; }
 
-	void setItemClass (BYTE IClass) throw() { m_IClass = IClass; }
+	void setItemClass (BYTE IClass)  { m_IClass = IClass; }
 	BYTE getItemClass ()  { return m_IClass; }
 
-	void setItemType (ItemType_t ItemType) throw() { m_ItemType = ItemType; }
+	void setItemType (ItemType_t ItemType)  { m_ItemType = ItemType; }
 	ItemType_t getItemType()  { return m_ItemType; }
 
-	void addOptionType(OptionType_t OptionType) throw() { m_OptionType.push_back( OptionType ); }
-	void setOptionType(const list<OptionType_t>& OptionType) throw() { m_OptionType = OptionType; }
+	void addOptionType(OptionType_t OptionType)  { m_OptionType.push_back( OptionType ); }
+	void setOptionType(const list<OptionType_t>& OptionType)  { m_OptionType = OptionType; }
 	int getOptionTypeSize()  { return m_OptionType.size(); }
 	const list<OptionType_t>& getOptionType()  { return m_OptionType; }
-	OptionType_t popOptionType() throw() 
+	OptionType_t popOptionType()  
 	{ 
 		if (m_OptionType.empty()) return 0;
 		OptionType_t optionType = m_OptionType.front(); 
@@ -55,11 +55,11 @@ public:
 		return optionType; 
 	}
 
-	void addOptionType2(OptionType_t OptionType) throw() { m_OptionType2.push_back( OptionType ); }
-	void setOptionType2(const list<OptionType_t>& OptionType) throw() { m_OptionType2 = OptionType; }
+	void addOptionType2(OptionType_t OptionType)  { m_OptionType2.push_back( OptionType ); }
+	void setOptionType2(const list<OptionType_t>& OptionType)  { m_OptionType2 = OptionType; }
 	int getOptionTypeSize2()  { return m_OptionType2.size(); }
 	const list<OptionType_t>& getOptionType2()  { return m_OptionType2; }
-	OptionType_t popOptionType2() throw() 
+	OptionType_t popOptionType2()  
 	{ 
 		if (m_OptionType2.empty()) return 0;
 		OptionType_t optionType2 = m_OptionType2.front(); 
@@ -67,42 +67,42 @@ public:
 		return optionType2; 
 	}
 
-	void setSilver(Silver_t amount) throw() { m_Silver = amount; }
+	void setSilver(Silver_t amount)  { m_Silver = amount; }
 	Silver_t getSilver()  { return m_Silver; }
 
-	void setGrade(Grade_t grade) throw() { m_Grade = grade; }
+	void setGrade(Grade_t grade)  { m_Grade = grade; }
 	Grade_t getGrade()  { return m_Grade; }
 
-	void setDurability(Durability_t Durability) throw() { m_Durability = Durability; }
+	void setDurability(Durability_t Durability)  { m_Durability = Durability; }
 	Durability_t getDurability()  { return m_Durability; }
 
-	void setEnchantLevel(EnchantLevel_t level) throw() { m_EnchantLevel = level; }
-	EnchantLevel_t getEnchantLevel() throw() { return m_EnchantLevel; }
+	void setEnchantLevel(EnchantLevel_t level)  { m_EnchantLevel = level; }
+	EnchantLevel_t getEnchantLevel()  { return m_EnchantLevel; }
 
-	void setHeroOption(EnchantLevel_t level) throw() { m_HeroOption = level; }
-	EnchantLevel_t getHeroOption() throw() { return m_HeroOption; }
+	void setHeroOption(EnchantLevel_t level)  { m_HeroOption = level; }
+	EnchantLevel_t getHeroOption()  { return m_HeroOption; }
 
-	void setHeroOptionAttr(EnchantLevel_t level) throw() { m_HeroOptionAttr = level; }
-	EnchantLevel_t getHeroOptionAttr() throw() { return m_HeroOptionAttr; }
+	void setHeroOptionAttr(EnchantLevel_t level)  { m_HeroOptionAttr = level; }
+	EnchantLevel_t getHeroOptionAttr()  { return m_HeroOptionAttr; }
 
-	void setItemNum(ItemNum_t ItemNum) throw() { m_ItemNum = ItemNum; }
+	void setItemNum(ItemNum_t ItemNum)  { m_ItemNum = ItemNum; }
 	ItemNum_t getItemNum()  { return m_ItemNum; }
 
-	void setMainColor(WORD MainColor) throw() { m_MainColor = MainColor; }
+	void setMainColor(WORD MainColor)  { m_MainColor = MainColor; }
 	WORD getMainColor()  { return m_MainColor; }
 
 	BYTE getListNum()  { return m_ListNum; }
-	void setListNum(BYTE ListNum) throw() { m_ListNum = ListNum; }
+	void setListNum(BYTE ListNum)  { m_ListNum = ListNum; }
 
-	void addListElement(SubItemInfo* pSubItemInfo) throw() 
+	void addListElement(SubItemInfo* pSubItemInfo)  
 	{ 
 		m_SubItemInfoList.push_back(pSubItemInfo); 
 		m_ListNum++;
 	}
 
-	void clearList() throw() { m_SubItemInfoList.clear(); m_ListNum = 0; }
+	void clearList()  { m_SubItemInfoList.clear(); m_ListNum = 0; }
 
-	SubItemInfo* popFrontListElement() throw() 
+	SubItemInfo* popFrontListElement()  
 	{ 
 		SubItemInfo* TempSubItemInfo = m_SubItemInfoList.front(); 
 		m_SubItemInfoList.pop_front(); 
@@ -129,7 +129,7 @@ public:
 			szEnchantLevel;
 	}
 
-	static uint getMaxSize() throw()
+	static uint getMaxSize() 
 	{
 		return szObjectID +
 			szBYTE +

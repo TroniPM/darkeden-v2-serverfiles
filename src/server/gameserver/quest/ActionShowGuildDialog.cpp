@@ -394,7 +394,7 @@ void ActionShowGuildDialog::execute (Creature * pCreature1, Creature * pCreature
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionShowGuildDialog::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 

@@ -34,16 +34,16 @@ public:
 public :
 	
     // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
-    void read ( SocketInputStream & iStream ) throw ( ProtocolException , Error );
+    void read ( SocketInputStream & iStream ) ;
 
 	// 소켓으로부터 직접 데이터를 읽어서 패킷을 초기화한다.
-	void read ( Socket * pSocket ) throw ( ProtocolException , Error );
+	void read ( Socket * pSocket ) ;
 		    
     // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
     void write ( SocketOutputStream & oStream ) ;
 
 	// execute packet's handler
-	void execute ( Player * pPlayer ) throw ( ProtocolException , Error );
+	void execute ( Player * pPlayer ) ;
 
 	// get packet id
 	PacketID_t getPacketID ()  { return PACKET_CU_BEGIN_UPDATE; }
@@ -52,7 +52,7 @@ public :
 	PacketSize_t getPacketSize ()  { return szWORD + szWORD + szWORD; }
 
 	//
-	static PacketSize_t getPacketMaxSize () throw () { return szWORD + szWORD + szWORD; }
+	static PacketSize_t getPacketMaxSize ()  { return szWORD + szWORD + szWORD; }
 
 	// get packet name
 	string getPacketName ()  { return "CUBeginUpdate"; }
@@ -64,14 +64,14 @@ public :
 
 	// get/set client version
 	WORD getVersion ()  { return m_Version; }
-	void setVersion ( WORD version ) throw () { m_Version = version; }
+	void setVersion ( WORD version )  { m_Version = version; }
 
 	// get/set client version
 	WORD getGuildVersion ()  { return m_GuildVersion; }
-	void setGuildVersion ( WORD version ) throw () { m_GuildVersion = version; }
+	void setGuildVersion ( WORD version )  { m_GuildVersion = version; }
 
 	WORD getInfoVersion ()  { return m_InfoVersion; }
-	void setInfoVersion ( WORD version ) throw () { m_InfoVersion = version; }
+	void setInfoVersion ( WORD version )  { m_InfoVersion = version; }
 
 	TYPE getType() const { return m_Type; }
 
@@ -102,7 +102,7 @@ class CUBeginUpdateFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet * createPacket () throw () { return new CUBeginUpdate(); }
+	Packet * createPacket ()  { return new CUBeginUpdate(); }
 
 	// get packet name
 	string getPacketName ()  { return "CUBeginUpdate"; }
@@ -127,8 +127,8 @@ class CUBeginUpdateHandler {
 public :
 
 	// execute packet's handler
-	static void execute ( CUBeginUpdate * pPacket , Player * pPlayer ) throw ( ProtocolException , Error );
-	static void scan_Dir( const string Directory, CUBeginUpdate * pPacket , UpdateManager * pUpdateManager, bool bHttpPatch, bool bUpdaterPatch ) throw ( ProtocolException , Error );
+	static void execute ( CUBeginUpdate * pPacket , Player * pPlayer ) ;
+	static void scan_Dir( const string Directory, CUBeginUpdate * pPacket , UpdateManager * pUpdateManager, bool bHttpPatch, bool bUpdaterPatch ) ;
 
 };
 

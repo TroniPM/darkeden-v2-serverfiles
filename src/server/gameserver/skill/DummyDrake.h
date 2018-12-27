@@ -16,8 +16,8 @@
 class DummyDrake: public SkillHandler 
 {
 public:
-	DummyDrake() throw() {}
-	~DummyDrake() throw() {}
+	DummyDrake()  {}
+	~DummyDrake()  {}
 	
 public:
     string getSkillHandlerName()  { return "DummyDrake"; }

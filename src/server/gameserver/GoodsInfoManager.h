@@ -41,7 +41,7 @@ public:
 	void setGrade( Grade_t grade ) { m_Grade = grade; }
 
 	Silver_t getSilver()  { return m_Silver; }
-	void setSilver(Silver_t amount) throw() { m_Silver = amount;}
+	void setSilver(Silver_t amount)  { m_Silver = amount;}
 
 	const list<OptionType_t>& getOptionTypeList() const { return m_OptionTypes; }
 	void setOptionTypeList( const list<OptionType_t>& optionTypes ) { m_OptionTypes = optionTypes; }
@@ -50,13 +50,13 @@ public:
 	void setOptionTypeList2( const list<OptionType_t>& optionTypes ) { m_OptionTypes2 = optionTypes; }
 
 	EnchantLevel_t getHeroOption()  { return m_HeroOption;}
-	void setHeroOption(EnchantLevel_t HeroOption) throw() { m_HeroOption = HeroOption; }
+	void setHeroOption(EnchantLevel_t HeroOption)  { m_HeroOption = HeroOption; }
 
 	EnchantLevel_t getHeroOptionAttr()  { return m_HeroOptionAttr;}
-	void setHeroOptionAttr(EnchantLevel_t HeroOptionAttr) throw() { m_HeroOptionAttr = HeroOptionAttr; }
+	void setHeroOptionAttr(EnchantLevel_t HeroOptionAttr)  { m_HeroOptionAttr = HeroOptionAttr; }
 
 	EnchantLevel_t getEnchantLevel()  { return m_EnchantLevel;}
-	void setEnchantLevel(EnchantLevel_t level) throw() { m_EnchantLevel = level; }
+	void setEnchantLevel(EnchantLevel_t level)  { m_EnchantLevel = level; }
 
 	int getNum() const { return m_Num; }
 	void setNum( int num ) { m_Num = num; }

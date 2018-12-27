@@ -16,8 +16,8 @@
 class TransformToBat: public SkillHandler 
 {
 public:
-	TransformToBat() throw() {}
-	~TransformToBat() throw() {}
+	TransformToBat()  {}
+	~TransformToBat()  {}
 	
 public:
     string getSkillHandlerName()  { return "TransformToBat"; }

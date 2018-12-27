@@ -32,37 +32,37 @@ public:
 
 public:
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ID) throw() { m_ObjectID = ID; }
+	void setObjectID(ObjectID_t ID)  { m_ObjectID = ID; }
 
 	CoordInven_t getX()  { return m_X; }
-	void setX(CoordInven_t x) throw() { m_X = x; }
+	void setX(CoordInven_t x)  { m_X = x; }
 	
 	CoordInven_t getY()  { return m_Y; }
-	void setY(CoordInven_t y) throw() { m_Y = y; }
+	void setY(CoordInven_t y)  { m_Y = y; }
 
 	BYTE getItemClass()  { return m_ItemClass; }
-	void setItemClass(BYTE Class) throw() { m_ItemClass = Class; }
+	void setItemClass(BYTE Class)  { m_ItemClass = Class; }
 
 	ItemType_t getItemType()  { return m_ItemType; }
-	void setItemType(ItemType_t ItemType) throw() { m_ItemType = ItemType; }
+	void setItemType(ItemType_t ItemType)  { m_ItemType = ItemType; }
 
 	int getOptionTypeSize()  { return m_OptionType.size(); }
 	const list<OptionType_t>& getOptionType()  { return m_OptionType; }
-	OptionType_t popOptionType() throw()
+	OptionType_t popOptionType() 
 	{
 		if (m_OptionType.empty()) return 0;
 		OptionType_t optionType = m_OptionType.front();
 		m_OptionType.pop_front();
 		return optionType;
 	}
-	void addOptionType(OptionType_t OptionType) throw() { m_OptionType.push_back( OptionType ); }
-	void setOptionType(const list<OptionType_t>& OptionTypes) throw() { m_OptionType = OptionTypes; }
+	void addOptionType(OptionType_t OptionType)  { m_OptionType.push_back( OptionType ); }
+	void setOptionType(const list<OptionType_t>& OptionTypes)  { m_OptionType = OptionTypes; }
 
 	Durability_t getDurability()  { return m_Durability; }
-	void setDurability(Durability_t Durability) throw() { m_Durability = Durability; }
+	void setDurability(Durability_t Durability)  { m_Durability = Durability; }
 
 	ItemNum_t getItemNum()  { return m_ItemNum; }
-	void setItemNum(ItemNum_t ItemNum) throw() { m_ItemNum = ItemNum; }
+	void setItemNum(ItemNum_t ItemNum)  { m_ItemNum = ItemNum; }
 
 protected:
     ObjectID_t    		m_ObjectID;     // item object id

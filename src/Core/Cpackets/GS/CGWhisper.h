@@ -49,15 +49,15 @@ public:
 
 	// get/set Name
 	string getName()  { return m_Name; }
-	void setName(const string & Name) throw() { m_Name = Name; }
+	void setName(const string & Name)  { m_Name = Name; }
 
 	// get/set text color
 	uint getColor()  { return m_Color; }
-	void setColor( uint color ) throw() { m_Color = color; }
+	void setColor( uint color )  { m_Color = color; }
 
 	// get/set chatting message
 	string getMessage()  { return m_Message; }
-	void setMessage(const string & msg) throw() { m_Message = msg; }
+	void setMessage(const string & msg)  { m_Message = msg; }
 	
 
 private :
@@ -86,7 +86,7 @@ class CGWhisperFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGWhisper(); }
+	Packet* createPacket()  { return new CGWhisper(); }
 
 	// get packet name
 	string getPacketName()  { return "CGWhisper"; }

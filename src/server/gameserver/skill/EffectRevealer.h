@@ -38,7 +38,7 @@ public:
 
 	// 볼 수 있는 레벨 계산
 public:
-	void setSkillLevel( ExpLevel_t level ) throw() { m_SkillLevel = level; }
+	void setSkillLevel( ExpLevel_t level )  { m_SkillLevel = level; }
 
 	bool canSeeHide( Creature* pTarget ) ;
 	bool canSeeSniping( Creature* pTarget ) ;

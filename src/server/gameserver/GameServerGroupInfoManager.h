@@ -46,10 +46,10 @@ public :
 	void clear();
 	
 	// add info
-	void addGameServerGroupInfo ( GameServerGroupInfo * pGameServerGroupInfo, WorldID_t WorldID ) throw ( DuplicatedException );
+	void addGameServerGroupInfo ( GameServerGroupInfo * pGameServerGroupInfo, WorldID_t WorldID ) ;
 	
 	// delete info
-	void deleteGameServerGroupInfo ( const ServerGroupID_t ServerGroupID, WorldID_t WorldID ) throw ( NoSuchElementException );
+	void deleteGameServerGroupInfo ( const ServerGroupID_t ServerGroupID, WorldID_t WorldID ) ;
 	
 	// get GameServerGroupInfo by ServerGroupID
 	GameServerGroupInfo * getGameServerGroupInfo ( const ServerGroupID_t ServerGroupID, WorldID_t WorldID ) ;

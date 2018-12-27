@@ -62,11 +62,11 @@ public :
 
 	// get / set ObjectID 
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 	// get/set SlotID
 	SlotID_t getSlotID()  { return m_SlotID; }
-	void setSlotID(SlotID_t SlotID) throw() { m_SlotID = SlotID; }
+	void setSlotID(SlotID_t SlotID)  { m_SlotID = SlotID; }
 
 private :
 
@@ -92,16 +92,16 @@ class GCTakeOffFactory : public PacketFactory {
 public :
 	
 	// constructor
-	GCTakeOffFactory() throw() {}
+	GCTakeOffFactory()  {}
 	
 	// destructor
-	virtual ~GCTakeOffFactory() throw() {}
+	virtual ~GCTakeOffFactory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCTakeOff(); }
+	Packet* createPacket()  { return new GCTakeOff(); }
 
 	// get packet name
 	string getPacketName()  { return "GCTakeOff"; }

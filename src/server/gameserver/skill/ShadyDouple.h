@@ -16,8 +16,8 @@
 class ShadyDouple : public SkillHandler 
 {
 public:
-	ShadyDouple() throw() {}
-	~ShadyDouple() throw() {}
+	ShadyDouple()  {}
+	~ShadyDouple()  {}
 
 public :
     string getSkillHandlerName()  { return "ShadyDouple"; }

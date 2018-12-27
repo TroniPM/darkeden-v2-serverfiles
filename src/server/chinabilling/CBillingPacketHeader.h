@@ -25,8 +25,8 @@ public:
 	CBillingPacketHeader();
 
 public:
-	void read( SocketInputStream& iStream ) throw ( ProtocolException, Error );
-	void write( SocketOutputStream& iStream ) throw ( ProtocolException, Error );
+	void read( SocketInputStream& iStream ) ;
+	void write( SocketOutputStream& iStream ) ;
 
 	string toString() ;
 };

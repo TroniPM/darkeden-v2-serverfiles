@@ -16,8 +16,8 @@
 class SwordOfThor : public SkillHandler 
 {
 public:
-	SwordOfThor() throw() {}
-	~SwordOfThor() throw() {}
+	SwordOfThor()  {}
+	~SwordOfThor()  {}
 	
 public:
     string getSkillHandlerName()  { return "SwordOfThor"; }

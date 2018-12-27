@@ -14,7 +14,7 @@
 //////////////////////////////////////////////////////////////////////////////
 POINT
 BloodyWarp::getWarpPosition(int myX, int myY, int targetX, int targetY)
-	throw()
+	
 {
 	__BEGIN_TRY
 

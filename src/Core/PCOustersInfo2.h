@@ -70,7 +70,7 @@ public:
 		return size;
 	}
 
-	static uint getMaxSize () throw ()
+	static uint getMaxSize () 
 	{
 		uint size;
 		size = szObjectID				// ObjectID
@@ -112,16 +112,16 @@ public:
 
 public:
 	ObjectID_t getObjectID ()  { return m_ObjectID; }
-	void setObjectID (ObjectID_t objectID) throw () { m_ObjectID = objectID; }
+	void setObjectID (ObjectID_t objectID)  { m_ObjectID = objectID; }
 
     string getName ()  { return m_Name; }
-    void setName (string name) throw () { m_Name = (name.size() > 20) ? name.substr(0,20) : name; }
+    void setName (string name)  { m_Name = (name.size() > 20) ? name.substr(0,20) : name; }
 
     Level_t getLevel ()  { return m_Level; }
-    void setLevel (Level_t Level) throw () { m_Level = Level; }
+    void setLevel (Level_t Level)  { m_Level = Level; }
 
 	Sex getSex ()  { return m_Sex; }
-	void setSex (Sex sex) throw () { m_Sex = sex; }
+	void setSex (Sex sex)  { m_Sex = sex; }
 	void setSex (string sex) 
 	{
 		if (sex == Sex2String[MALE]) 
@@ -133,13 +133,13 @@ public:
 	}
 
 	Fame_t getFame ()  { return m_Fame; }
-	void setFame (Fame_t f) throw () { m_Fame = f; }
+	void setFame (Fame_t f)  { m_Fame = f; }
 
 	Fame_t getKillPoint()  { return m_KillPoint; }
-	void setKillPoint(Fame_t f) throw () { m_KillPoint = f; }
+	void setKillPoint(Fame_t f)  { m_KillPoint = f; }
 	
 	Color_t getHairColor ()  { return m_HairColor; }
-	void setHairColor (Color_t hairColor) throw () { m_HairColor = hairColor; }
+	void setHairColor (Color_t hairColor)  { m_HairColor = hairColor; }
 
 	BYTE getWingSylphType() { return m_WingSylphType; }
 	void setWingSylphType(BYTE Type) { m_WingSylphType = Type; }
@@ -154,10 +154,10 @@ public:
 	void setWingEffectColor(Color_t Color) { m_WingEffectColor = Color; }
 
 	BYTE getMasterEffectColor ()  { return m_MasterEffectColor; }
-	void setMasterEffectColor (BYTE color) throw () { m_MasterEffectColor = color; }
+	void setMasterEffectColor (BYTE color)  { m_MasterEffectColor = color; }
 
 	Alignment_t getAlignment()  { return m_Alignment; }
-	void setAlignment(Alignment_t Alignment) throw() { m_Alignment = Alignment; }
+	void setAlignment(Alignment_t Alignment)  { m_Alignment = Alignment; }
 
 	Attr_t getSTR (AttrType attrType = ATTR_CURRENT) 
 	{
@@ -193,36 +193,36 @@ public:
 	}
 
 	HP_t getHP (AttrType attrType = ATTR_CURRENT)  { return m_HP[attrType]; }
-	void setHP (HP_t hp, AttrType attrType = ATTR_CURRENT) throw () { m_HP[attrType] = hp; }
-	void setHP (HP_t curHP, HP_t maxHP) throw () { m_HP[ATTR_CURRENT] = curHP; m_HP[ATTR_MAX] = maxHP; }
+	void setHP (HP_t hp, AttrType attrType = ATTR_CURRENT)  { m_HP[attrType] = hp; }
+	void setHP (HP_t curHP, HP_t maxHP)  { m_HP[ATTR_CURRENT] = curHP; m_HP[ATTR_MAX] = maxHP; }
 
 	HP_t getMP (AttrType attrType = ATTR_CURRENT)  { return m_MP[attrType]; }
-	void setMP (MP_t mp, AttrType attrType = ATTR_CURRENT) throw () { m_MP[attrType] = mp; }
-	void setMP (MP_t curMP, MP_t maxMP) throw () { m_MP[ATTR_CURRENT] = curMP; m_MP[ATTR_MAX] = maxMP; }
+	void setMP (MP_t mp, AttrType attrType = ATTR_CURRENT)  { m_MP[attrType] = mp; }
+	void setMP (MP_t curMP, MP_t maxMP)  { m_MP[ATTR_CURRENT] = curMP; m_MP[ATTR_MAX] = maxMP; }
 
 	Rank_t getRank ()  { return m_Rank; }
-	void setRank (Rank_t rank) throw () { m_Rank = rank; }
+	void setRank (Rank_t rank)  { m_Rank = rank; }
 
 	RankExp_t getRankExp ()  { return m_RankExp; }
-	void setRankExp (RankExp_t rankExp) throw () { m_RankExp = rankExp; }
+	void setRankExp (RankExp_t rankExp)  { m_RankExp = rankExp; }
 
 	Exp_t getExp ()  { return m_Exp; }
-	void setExp (Exp_t exp) throw () { m_Exp = exp; }
+	void setExp (Exp_t exp)  { m_Exp = exp; }
 
 	Gold_t getGold ()  { return m_Gold; }
-	void setGold (Gold_t gold) throw () { m_Gold = gold; }
+	void setGold (Gold_t gold)  { m_Gold = gold; }
 
 	Sight_t getSight ()  { return m_Sight; }
-	void setSight (Sight_t sight) throw () { m_Sight = sight; }
+	void setSight (Sight_t sight)  { m_Sight = sight; }
 
 	Bonus_t getBonus()  { return m_Bonus; }
-	void setBonus(Bonus_t Bonus) throw() { m_Bonus = Bonus; }
+	void setBonus(Bonus_t Bonus)  { m_Bonus = Bonus; }
 
 	SkillBonus_t getSkillBonus()  { return m_SkillBonus; }
-	void setSkillBonus(SkillBonus_t skillBonus) throw() { m_SkillBonus = skillBonus; }
+	void setSkillBonus(SkillBonus_t skillBonus)  { m_SkillBonus = skillBonus; }
 
 	Silver_t getSilverDamage()  { return m_SilverDamage; }
-	void setSilverDamage(Silver_t SilverDamage ) throw() { m_SilverDamage = SilverDamage; }
+	void setSilverDamage(Silver_t SilverDamage )  { m_SilverDamage = SilverDamage; }
 
 	BYTE getCompetence(void) const { return m_Competence; }
 	void setCompetence(BYTE competence) { m_Competence = competence; }

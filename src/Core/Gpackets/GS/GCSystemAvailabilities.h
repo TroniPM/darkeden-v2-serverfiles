@@ -57,11 +57,11 @@ private:
 class GCSystemAvailabilitiesFactory : public PacketFactory 
 {
 public :
-	GCSystemAvailabilitiesFactory() throw() {}
-	virtual ~GCSystemAvailabilitiesFactory() throw() {}
+	GCSystemAvailabilitiesFactory()  {}
+	virtual ~GCSystemAvailabilitiesFactory()  {}
 	
 public:
-	Packet* createPacket() throw() { return new GCSystemAvailabilities(); }
+	Packet* createPacket()  { return new GCSystemAvailabilities(); }
 	string getPacketName()  { return "GCSystemAvailabilities"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_SYSTEM_AVAILABILITIES; }
 	PacketSize_t getPacketMaxSize()  { return szDWORD + szBYTE + szBYTE; }

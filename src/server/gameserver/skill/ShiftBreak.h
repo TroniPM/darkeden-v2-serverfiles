@@ -16,7 +16,7 @@ class ShiftBreak : public SkillHandler
 {
 public:
 	ShiftBreak() ;
-	~ShiftBreak() throw() {}
+	~ShiftBreak()  {}
 	
 public:
     string getSkillHandlerName()  { return "ShiftBreak"; }

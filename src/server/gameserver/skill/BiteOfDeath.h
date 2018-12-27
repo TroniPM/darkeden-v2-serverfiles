@@ -16,8 +16,8 @@
 class BiteOfDeath : public SkillHandler 
 {
 public:
-	BiteOfDeath() throw() {}
-	~BiteOfDeath() throw() {}
+	BiteOfDeath()  {}
+	~BiteOfDeath()  {}
 	
 public:
     string getSkillHandlerName()  { return "BiteOfDeath"; }

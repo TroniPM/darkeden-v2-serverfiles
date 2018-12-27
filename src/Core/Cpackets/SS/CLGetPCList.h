@@ -62,7 +62,7 @@ class CLGetPCListFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CLGetPCList(); }
+	Packet* createPacket()  { return new CLGetPCList(); }
 
 	// get packet name
 	string getPacketName()  { return "CLGetPCList"; }

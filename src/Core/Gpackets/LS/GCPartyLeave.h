@@ -53,7 +53,7 @@ private:
 class GCPartyLeaveFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCPartyLeave(); }
+	Packet* createPacket()  { return new GCPartyLeave(); }
 	string getPacketName()  { return "GCPartyLeave"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_PARTY_LEAVE; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE*2 + 20; }

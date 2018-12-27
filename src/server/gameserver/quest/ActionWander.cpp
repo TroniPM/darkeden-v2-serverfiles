@@ -139,7 +139,7 @@ void ActionWander::execute (Creature * pCreature1 , Creature * pCreature2)
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionWander::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 

@@ -120,7 +120,7 @@ void EffectObservingEye::unaffect(Zone* pZone , ZoneCoord_t x , ZoneCoord_t y , 
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 bool EffectObservingEye::canSeeInvisibility( Creature* pTarget ) const
-	throw( Error )
+	
 {
 	if ( !pTarget->isFlag( Effect::EFFECT_CLASS_INVISIBILITY ) )
 		return true;

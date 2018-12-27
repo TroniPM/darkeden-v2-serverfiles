@@ -106,7 +106,7 @@ class GCUsePowerPointResultFactory : public PacketFactory
 {
 public :
 	// create packet
-	Packet* createPacket() throw() { return new GCUsePowerPointResult(); }
+	Packet* createPacket()  { return new GCUsePowerPointResult(); }
 
 	// get packet name
 	string getPacketName()  { return "GCUsePowerPointResult"; }

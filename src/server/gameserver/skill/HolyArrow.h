@@ -16,8 +16,8 @@
 class HolyArrow : public SkillHandler 
 {
 public:
-	HolyArrow() throw() {}
-	~HolyArrow() throw() {}
+	HolyArrow()  {}
+	~HolyArrow()  {}
 	
 public:
     string getSkillHandlerName()  { return "HolyArrow"; }

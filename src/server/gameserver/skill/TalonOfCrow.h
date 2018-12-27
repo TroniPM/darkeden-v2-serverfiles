@@ -16,8 +16,8 @@
 class TalonOfCrow: public SkillHandler 
 {
 public:
-	TalonOfCrow() throw() {}
-	~TalonOfCrow() throw() {}
+	TalonOfCrow()  {}
+	~TalonOfCrow()  {}
 	
 public:
     string getSkillHandlerName()  { return "TalonOfCrow"; }

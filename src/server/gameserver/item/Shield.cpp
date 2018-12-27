@@ -24,7 +24,7 @@ Mutex    Shield::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Shield::Shield()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
@@ -33,7 +33,7 @@ Shield::Shield()
 }
 
 Shield::Shield(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_ItemType(itemType), m_OptionType(optionType), m_Durability(0)
 {
 	setItemType(itemType);
@@ -177,7 +177,7 @@ void Shield::save(const string & ownerID, Storage storage, StorageID_t storageID
 // get debug string
 //--------------------------------------------------------------------------------
 string Shield::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -262,7 +262,7 @@ Protection_t Shield::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string ShieldInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

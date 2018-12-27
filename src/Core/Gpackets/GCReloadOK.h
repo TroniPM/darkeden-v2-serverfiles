@@ -56,7 +56,7 @@ public :
 
 	// get / set BulletNum
 	Bullet_t getBulletNum()  { return m_BulletNum; }
-	void setBulletNum(Bullet_t BulletNum) throw() { m_BulletNum = BulletNum; }
+	void setBulletNum(Bullet_t BulletNum)  { m_BulletNum = BulletNum; }
 	
 
 private :
@@ -80,7 +80,7 @@ class GCReloadOKFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCReloadOK(); }
+	Packet* createPacket()  { return new GCReloadOK(); }
 
 	// get packet name
 	string getPacketName()  { return "GCReloadOK"; }

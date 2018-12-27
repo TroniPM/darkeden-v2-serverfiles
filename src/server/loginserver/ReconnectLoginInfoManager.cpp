@@ -15,7 +15,7 @@
 // constructor
 //----------------------------------------------------------------------
 ReconnectLoginInfoManager::ReconnectLoginInfoManager () 
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -30,7 +30,7 @@ ReconnectLoginInfoManager::ReconnectLoginInfoManager ()
 // destructor
 //----------------------------------------------------------------------
 ReconnectLoginInfoManager::~ReconnectLoginInfoManager () 
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -184,7 +184,7 @@ void ReconnectLoginInfoManager::heartbeat ()
 // get debug string
 //----------------------------------------------------------------------
 string ReconnectLoginInfoManager::toString () const
-	throw ()
+	
 {
 	StringStream msg;
 

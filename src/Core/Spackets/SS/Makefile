@@ -4539,7 +4539,7 @@ CLCreatePC.o: CLCreatePC.cpp CLCreatePC.h \
  /home/darkeden/sigitest/pt/src/Core/SocketAPI.h \
  /home/darkeden/sigitest/pt/src/Core/SocketOutputStream.h \
  /home/darkeden/sigitest/pt/src/Core/PacketFactory.h \
- /usr/include/STL/bitset
+ /usr/include/c++/7/bitset
 CLCreatePCHandler.o: CLCreatePCHandler.cpp CLCreatePC.h \
  /home/darkeden/sigitest/pt/src/Core/Packet.h \
  /home/darkeden/sigitest/pt/src/Core/Types.h \
@@ -4599,7 +4599,7 @@ CLCreatePCHandler.o: CLCreatePCHandler.cpp CLCreatePC.h \
  /home/darkeden/sigitest/pt/src/Core/SocketAPI.h \
  /home/darkeden/sigitest/pt/src/Core/SocketOutputStream.h \
  /home/darkeden/sigitest/pt/src/Core/PacketFactory.h \
- /usr/include/STL/bitset
+ /usr/include/c++/7/bitset
 CLDeletePC.o: CLDeletePC.cpp CLDeletePC.h \
  /home/darkeden/sigitest/pt/src/Core/Packet.h \
  /home/darkeden/sigitest/pt/src/Core/Types.h \
@@ -11960,7 +11960,7 @@ CGPortCheckHandler.o: CGPortCheckHandler.cpp CGPortCheck.h \
  /home/darkeden/sigitest/pt/src/Core/SocketOutputStream.h \
  /home/darkeden/sigitest/pt/src/Core/Datagram.h \
  /home/darkeden/sigitest/pt/src/Core/PacketFactory.h \
- /home/darkeden/sigitest/pt/src/Core/Properties.h /usr/include/STL/map \
+ /home/darkeden/sigitest/pt/src/Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h /usr/include/i386-linux-gnu/bits/stdio_lim.h
 CGGuildChat.o: CGGuildChat.cpp CGGuildChat.h \

@@ -55,11 +55,11 @@ private:
 class  GCSkillFailed1Factory : public PacketFactory 
 {
 public:
-	GCSkillFailed1Factory() throw() {}
-	virtual ~GCSkillFailed1Factory() throw() {}
+	GCSkillFailed1Factory()  {}
+	virtual ~GCSkillFailed1Factory()  {}
 	
 public:
-	Packet* createPacket() throw() { return new GCSkillFailed1(); }
+	Packet* createPacket()  { return new GCSkillFailed1(); }
 	string getPacketName()  { return "GCSkillFailed1"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_SKILL_FAILED_1; }
 	PacketSize_t getPacketMaxSize()  { return szSkillType + szBYTE + ModifyInfo::getPacketMaxSize(); }

@@ -17,8 +17,8 @@
 class SMGAttack : public SkillHandler 
 {
 public:
-	SMGAttack() throw() {}
-	~SMGAttack() throw() {}
+	SMGAttack()  {}
+	~SMGAttack()  {}
 	
 public:
     string getSkillHandlerName()  { return "SMGAttack"; }

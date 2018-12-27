@@ -22,8 +22,8 @@ public:
 	virtual ~BroadcastFilter() {}
 
 public:
-	virtual bool isSatisfy( GamePlayer* ) throw() = 0;
-	virtual BroadcastFilter* Clone() throw() = 0;
+	virtual bool isSatisfy( GamePlayer* )  = 0;
+	virtual BroadcastFilter* Clone()  = 0;
 };
 
 

@@ -27,8 +27,8 @@ public:
 	string       toString() ;
 	
 public:
-	ObjectID_t getObjectID() throw() { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 private:
 	ObjectID_t m_ObjectID; // Item Object ID
@@ -43,7 +43,7 @@ private:
 class CGSilverCoatingFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGSilverCoating(); }
+	Packet* createPacket()  { return new CGSilverCoating(); }
 	string getPacketName()  { return "CGSilverCoating"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_SILVER_COATING; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID; }

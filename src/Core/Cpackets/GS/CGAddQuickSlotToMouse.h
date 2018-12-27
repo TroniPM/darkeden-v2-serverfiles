@@ -30,11 +30,11 @@ public:
 	string toString() ;
 	
 public:
-	ObjectID_t getObjectID() throw() { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
-	SlotID_t getSlotID() throw() { return m_SlotID; }
-	void setSlotID(SlotID_t SlotID) throw() { m_SlotID = SlotID; }
+	SlotID_t getSlotID()  { return m_SlotID; }
+	void setSlotID(SlotID_t SlotID)  { m_SlotID = SlotID; }
 
 private:
 	ObjectID_t m_ObjectID;
@@ -48,7 +48,7 @@ private:
 class CGAddQuickSlotToMouseFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGAddQuickSlotToMouse(); }
+	Packet* createPacket()  { return new CGAddQuickSlotToMouse(); }
 	string getPacketName()  { return "CGAddQuickSlotToMouse"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_ADD_QUICKSLOT_TO_MOUSE; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + szSlotID; }

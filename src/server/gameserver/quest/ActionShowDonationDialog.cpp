@@ -65,7 +65,7 @@ void ActionShowDonationDialog::execute (Creature * pCreature1, Creature * pCreat
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionShowDonationDialog::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 

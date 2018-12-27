@@ -16,8 +16,8 @@
 class ShineSword : public SkillHandler 
 {
 public:
-	ShineSword() throw() {}
-	~ShineSword() throw() {}
+	ShineSword()  {}
+	~ShineSword()  {}
 	
 public:
     string getSkillHandlerName()  { return "ShineSword"; }

@@ -47,49 +47,49 @@ public:
 
 public:
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t creatureID) throw() { m_ObjectID = creatureID; }
+	void setObjectID(ObjectID_t creatureID)  { m_ObjectID = creatureID; }
 
 	ShopVersion_t getShopVersion(void)  { return m_Version;}
-	void setShopVersion(const ShopVersion_t ver) throw() { m_Version = ver;}
+	void setShopVersion(const ShopVersion_t ver)  { m_Version = ver;}
 
 	ObjectID_t getItemObjectID()  { return m_ItemObjectID;}
-	void setItemObjectID(ObjectID_t id) throw() { m_ItemObjectID = id;}
+	void setItemObjectID(ObjectID_t id)  { m_ItemObjectID = id;}
 
 	BYTE getItemClass()  { return m_ItemClass;}
-	void setItemClass(BYTE IClass) throw() { m_ItemClass = IClass;}
+	void setItemClass(BYTE IClass)  { m_ItemClass = IClass;}
 
 	ItemType_t getItemType()  { return m_ItemType;}
-	void setItemType(ItemType_t type) throw() { m_ItemType = type;}
+	void setItemType(ItemType_t type)  { m_ItemType = type;}
 	
 	int getOptionTypeSize()  { return m_OptionType.size();}
 	const list<OptionType_t>& getOptionType()  { return m_OptionType; }
-	OptionType_t popOptionType() throw()
+	OptionType_t popOptionType() 
 	{
 		if (m_OptionType.empty()) return 0;
 		OptionType_t optionType = m_OptionType.front();
 		m_OptionType.pop_front();
 		return optionType;
 	}
-	void addOptionType(OptionType_t type) throw() { m_OptionType.push_back( type ); }
-	void setOptionType(const list<OptionType_t>& OptionTypes) throw() { m_OptionType = OptionTypes; }
+	void addOptionType(OptionType_t type)  { m_OptionType.push_back( type ); }
+	void setOptionType(const list<OptionType_t>& OptionTypes)  { m_OptionType = OptionTypes; }
 
 	Durability_t getDurability()  { return m_Durability;}
-	void setDurability(Durability_t dur) throw() { m_Durability = dur;}
+	void setDurability(Durability_t dur)  { m_Durability = dur;}
 
 	ItemNum_t getItemNum(void)  { return m_ItemNum;}
-	void setItemNum(ItemNum_t num) throw() { m_ItemNum = num;}
+	void setItemNum(ItemNum_t num)  { m_ItemNum = num;}
 
 	Silver_t getSilver(void)  { return m_Silver; }
-	void setSilver(Silver_t silver) throw() { m_Silver = silver; }
+	void setSilver(Silver_t silver)  { m_Silver = silver; }
 
 	Grade_t getGrade(void)  { return m_Grade; }
-	void setGrade(Grade_t silver) throw() { m_Grade = silver; }
+	void setGrade(Grade_t silver)  { m_Grade = silver; }
 
 	EnchantLevel_t getEnchantLevel(void)  { return m_EnchantLevel; }
-	void setEnchantLevel(EnchantLevel_t level) throw() { m_EnchantLevel = level; }
+	void setEnchantLevel(EnchantLevel_t level)  { m_EnchantLevel = level; }
 
 	EnchantLevel_t getHeroOption(void)  { return m_HeroOption; }
-	void setHeroOption(EnchantLevel_t level) throw() { m_HeroOption = level; }
+	void setHeroOption(EnchantLevel_t level)  { m_HeroOption = level; }
 	
 	Price_t getPrice()  { return m_Price;}
 	void setPrice(Price_t price) { m_Price = price;}
@@ -118,7 +118,7 @@ private:
 class GCShopBuyOKFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCShopBuyOK(); }
+	Packet* createPacket()  { return new GCShopBuyOK(); }
 	string getPacketName()  { return "GCShopBuyOK"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_SHOP_BUY_OK; }
 	PacketSize_t getPacketMaxSize()  

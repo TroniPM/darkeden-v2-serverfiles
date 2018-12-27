@@ -99,7 +99,7 @@ void pthreadAPI::pthread_detach_ex ( pthread_t th )
 //
 //////////////////////////////////////////////////////////////////////
 void pthreadAPI::pthread_exit_ex ( void * retval )
-	 throw ()
+	 
 {
 	pthread_exit( retval );
 }
@@ -111,7 +111,7 @@ void pthreadAPI::pthread_exit_ex ( void * retval )
 //
 //////////////////////////////////////////////////////////////////////
 pthread_t pthreadAPI::pthread_self_ex ()
-	 throw ()
+	 
 {
 	return pthread_self();
 }
@@ -403,7 +403,7 @@ void pthreadAPI::pthread_cond_init_ex ( pthread_cond_t * cond , pthread_condattr
 //
 ////////////////////////////////////////////////////////////////////////////////
 void pthreadAPI::pthread_cond_destroy_ex ( pthread_cond_t * cond )
-     throw ( CondVarException , Error )
+     
 {
 	__BEGIN_TRY
 
@@ -500,7 +500,7 @@ void pthreadAPI::pthread_cond_broadcast_ex ( pthread_cond_t * cond )
 //
 ////////////////////////////////////////////////////////////////////////////////
 void pthreadAPI::pthread_condattr_init_ex ( pthread_condattr_t * attr )
-	 throw ()
+	 
 {
 	__BEGIN_TRY
 		
@@ -516,7 +516,7 @@ void pthreadAPI::pthread_condattr_init_ex ( pthread_condattr_t * attr )
 //
 ////////////////////////////////////////////////////////////////////////////////
 void pthreadAPI::pthread_condattr_destroy_ex ( pthread_condattr_t * attr )
-	 throw ()
+	 
 {
 	__BEGIN_TRY
 		

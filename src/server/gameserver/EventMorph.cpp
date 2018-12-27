@@ -41,7 +41,7 @@
 //////////////////////////////////////////////////////////////////////////////
 
 EventMorph::EventMorph(GamePlayer* pGamePlayer)
-	throw()
+	
 	: Event(pGamePlayer)
 {
 	__BEGIN_TRY
@@ -49,7 +49,7 @@ EventMorph::EventMorph(GamePlayer* pGamePlayer)
 }
 
 EventMorph::~EventMorph()
-	throw()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -539,7 +539,7 @@ void EventMorph::activate ()
 }
 	
 string EventMorph::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 	msg << "EventMorph("

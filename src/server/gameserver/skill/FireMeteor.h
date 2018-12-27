@@ -16,8 +16,8 @@
 class FireMeteor : public SkillHandler 
 {
 public:
-	FireMeteor() throw() {}
-	~FireMeteor() throw() {}
+	FireMeteor()  {}
+	~FireMeteor()  {}
 	
 public:
     string getSkillHandlerName()  { return "FireMeteor"; }

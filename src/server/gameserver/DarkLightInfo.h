@@ -24,10 +24,10 @@ public:
 
 public:
 	DarkLevel_t getDarkLevel()  { return m_DarkLevel; }
-	void setDarkLevel(DarkLevel_t darkLevel) throw() { m_DarkLevel = darkLevel; }
+	void setDarkLevel(DarkLevel_t darkLevel)  { m_DarkLevel = darkLevel; }
 
 	LightLevel_t getLightLevel()  { return m_LightLevel; }
-	void setLightLevel(LightLevel_t lightLevel) throw() { m_LightLevel = lightLevel; }
+	void setLightLevel(LightLevel_t lightLevel)  { m_LightLevel = lightLevel; }
 
 	string toString() ;
 
@@ -64,7 +64,7 @@ public:
 	void init();
 	void load();
 
-	DarkLightInfo* getDarkLightInfo(BYTE month, BYTE hour, BYTE minute) throw(OutOfBoundException, Error);
+	DarkLightInfo* getDarkLightInfo(BYTE month, BYTE hour, BYTE minute) ;
 	const DarkLightInfo* getDarkLightInfo(BYTE month, BYTE hour, BYTE minute) ;
 
 	DarkLightInfo* getCurrentDarkLightInfo( Zone* pZone );

@@ -40,13 +40,13 @@
 //////////////////////////////////////////////////////////////////////////////
 
 EventReloadInfo::EventReloadInfo(GamePlayer* pGamePlayer, InfoType infoType, int infoValue)
-	throw()
+	
 : Event(pGamePlayer), m_InfoType(infoType), m_InfoValue(infoValue)
 {
 }
 
 EventReloadInfo::~EventReloadInfo() 
-	throw()
+	
 {
 }
 
@@ -221,7 +221,7 @@ void EventReloadInfo::activate ()
 }
 
 string EventReloadInfo::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 	msg << "EventReloadInfo("

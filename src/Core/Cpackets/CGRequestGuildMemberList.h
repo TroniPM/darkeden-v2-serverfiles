@@ -48,7 +48,7 @@ public:
 
 	// get/set GuildID
 	GuildID_t getGuildID()  { return m_GuildID; }
-	void setGuildID( GuildID_t GuildID ) throw() { m_GuildID = GuildID; }
+	void setGuildID( GuildID_t GuildID )  { m_GuildID = GuildID; }
 
 
 private :
@@ -72,16 +72,16 @@ class CGRequestGuildMemberListFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGRequestGuildMemberListFactory() throw() {}
+	CGRequestGuildMemberListFactory()  {}
 	
 	// destructor
-	virtual ~CGRequestGuildMemberListFactory() throw() {}
+	virtual ~CGRequestGuildMemberListFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGRequestGuildMemberList(); }
+	Packet* createPacket()  { return new CGRequestGuildMemberList(); }
 
 	// get packet name
 	string getPacketName()  { return "CGRequestGuildMemberList"; }

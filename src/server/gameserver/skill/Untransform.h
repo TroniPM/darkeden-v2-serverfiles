@@ -16,8 +16,8 @@
 class Untransform: public SkillHandler 
 {
 public:
-	Untransform() throw() {}
-	~Untransform() throw() {}
+	Untransform()  {}
+	~Untransform()  {}
 
 public:
     string getSkillHandlerName()  { return "Untransform"; }

@@ -17,7 +17,7 @@ class SummonMigaAttack: public SkillHandler
 {
 public:
 	SummonMigaAttack() ;
-	~SummonMigaAttack() throw() {}
+	~SummonMigaAttack()  {}
 	
 public:
     string getSkillHandlerName()  { return "SummonMigaAttack"; }

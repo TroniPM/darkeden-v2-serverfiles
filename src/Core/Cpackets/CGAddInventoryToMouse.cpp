@@ -7,21 +7,21 @@
 #include "CGAddInventoryToMouse.h"
 
 CGAddInventoryToMouse::CGAddInventoryToMouse () 
-     throw ()
+     
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 CGAddInventoryToMouse::~CGAddInventoryToMouse () 
-    throw ()
+    
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 void CGAddInventoryToMouse::read (SocketInputStream & iStream) 
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY
 		
@@ -34,7 +34,7 @@ void CGAddInventoryToMouse::read (SocketInputStream & iStream)
 }
 
 void CGAddInventoryToMouse::write (SocketOutputStream & oStream) const 
-     throw (ProtocolException , Error)
+     
 {
 	__BEGIN_TRY
 
@@ -47,7 +47,7 @@ void CGAddInventoryToMouse::write (SocketOutputStream & oStream) const
 }
 
 void CGAddInventoryToMouse::execute (Player* pPlayer) 
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY
 

@@ -22,19 +22,19 @@ public:
 
 public:
 	SkillDomainType_t getType()  { return m_Type; }
-	void setType(SkillDomainType_t type) throw() { m_Type = type; }
+	void setType(SkillDomainType_t type)  { m_Type = type; }
 
 	Level_t getLevel()  { return m_Level; }
-	void setLevel(Level_t level) throw() { m_Level = level; }
+	void setLevel(Level_t level)  { m_Level = level; }
 
 	uint getGoalExp()  { return m_GoalExp; }
-	void setGoalExp(Exp_t exp) throw() { m_GoalExp = exp ; }
+	void setGoalExp(Exp_t exp)  { m_GoalExp = exp ; }
 
 	uint getAccumExp()  { return m_AccumExp; }
-	void setAccumExp(Exp_t exp) throw() { m_AccumExp = exp ; }
+	void setAccumExp(Exp_t exp)  { m_AccumExp = exp ; }
 
 	ItemType_t getBestItemType()  { return m_BestItemType; }
-	void setBestItemType(ItemType_t it) throw() { m_BestItemType = it; }
+	void setBestItemType(ItemType_t it)  { m_BestItemType = it; }
 	
 	string toString() ;
 

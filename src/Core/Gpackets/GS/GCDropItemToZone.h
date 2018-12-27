@@ -68,7 +68,7 @@ class GCDropItemToZoneFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCDropItemToZone(); }
+	Packet* createPacket()  { return new GCDropItemToZone(); }
 
 	// get packet name
 	string getPacketName()  { return "GCDropItemToZone"; }

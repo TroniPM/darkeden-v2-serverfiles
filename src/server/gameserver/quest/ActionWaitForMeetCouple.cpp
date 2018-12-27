@@ -66,7 +66,7 @@ void ActionWaitForMeetCouple::execute (Creature * pCreature1 , Creature * pCreat
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionWaitForMeetCouple::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

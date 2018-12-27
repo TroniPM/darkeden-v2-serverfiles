@@ -13,13 +13,13 @@
 //////////////////////////////////////////////////////////////////////////////
 
 GameServerInfoManager::GameServerInfoManager () 
-	throw ()
+	
 {
 }
 
 
 GameServerInfoManager::~GameServerInfoManager () 
-	throw ()
+	
 {
 	// hashmap 안의 각 pair 의 second, 즉 GameServerInfo 객체만을 삭제하고
 	// pair 자체는 그대로 둔다. (GameServerInfo가 힙에 생성되어 있다는 것에
@@ -128,7 +128,7 @@ void GameServerInfoManager::load ()
 }
 
 void GameServerInfoManager::addGameServerInfo(GameServerInfo * pGameServerInfo, const ServerGroupID_t ServerGroupID) 
-	throw (DuplicatedException)
+	
 {
 	__BEGIN_TRY
 
@@ -150,7 +150,7 @@ void GameServerInfoManager::addGameServerInfo(GameServerInfo * pGameServerInfo, 
 }
 	
 void GameServerInfoManager::deleteGameServerInfo (const ServerID_t ServerID, const ServerGroupID_t ServerGroupID) 
-	throw (NoSuchElementException)
+	
 {
 	__BEGIN_TRY
 
@@ -180,7 +180,7 @@ void GameServerInfoManager::deleteGameServerInfo (const ServerID_t ServerID, con
 	
 
 GameServerInfo * GameServerInfoManager::getGameServerInfo (const ServerID_t ServerID, const ServerGroupID_t ServerGroupID) const
-	throw (NoSuchElementException)
+	
 {
 	__BEGIN_TRY
 		
@@ -210,7 +210,7 @@ GameServerInfo * GameServerInfoManager::getGameServerInfo (const ServerID_t Serv
 }
 
 string GameServerInfoManager::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 

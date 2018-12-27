@@ -56,7 +56,7 @@ public:
 
 	// get/set guildID
 	GuildID_t getGuildID()  { return m_GuildID; }
-	void setGuildID( GuildID_t guildID ) throw() { m_GuildID = guildID; }
+	void setGuildID( GuildID_t guildID )  { m_GuildID = guildID; }
 
 private :
 
@@ -79,7 +79,7 @@ class SGDeleteGuildOKFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new SGDeleteGuildOK(); }
+	Packet* createPacket()  { return new SGDeleteGuildOK(); }
 
 	// get packet name
 	string getPacketName()  { return "SGDeleteGuildOK"; }

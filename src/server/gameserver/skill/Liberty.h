@@ -16,8 +16,8 @@
 class Liberty : public SkillHandler 
 {
 public:
-	Liberty() throw() {}
-	~Liberty() throw() {}
+	Liberty()  {}
+	~Liberty()  {}
 	
 public:
     string getSkillHandlerName()  { return "Liberty"; }

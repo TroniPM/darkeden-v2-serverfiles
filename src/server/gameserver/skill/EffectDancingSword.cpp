@@ -81,7 +81,7 @@ void EffectDancingSword::unaffect(Creature* pCreature)
 }
 
 string EffectDancingSword::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

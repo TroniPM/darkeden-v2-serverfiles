@@ -183,7 +183,7 @@ void ActionGiveChildrenItem::execute (Creature * pCreature1 , Creature * pCreatu
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionGiveChildrenItem::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

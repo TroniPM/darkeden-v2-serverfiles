@@ -8,7 +8,7 @@
 #include "DB.h"
 
 SkillSlot::SkillSlot()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -18,7 +18,7 @@ SkillSlot::SkillSlot()
 }
 
 SkillSlot::SkillSlot(SkillType_t SkillType, DWORD Exp, ulong Interval)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -31,7 +31,7 @@ SkillSlot::SkillSlot(SkillType_t SkillType, DWORD Exp, ulong Interval)
 }
 
 SkillSlot::~SkillSlot()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -152,7 +152,7 @@ void SkillSlot::save()
 }
 
 Turn_t SkillSlot::getRemainTurn( Timeval currentTime ) const
-	throw()
+	
 {
 	Turn_t remainTurn = ( m_runTime.tv_sec - currentTime.tv_sec ) * 10
 					  + ( m_runTime.tv_usec - currentTime.tv_usec ) / 100000;
@@ -161,7 +161,7 @@ Turn_t SkillSlot::getRemainTurn( Timeval currentTime ) const
 }
 
 void SkillSlot::setRunTime()
-	throw()
+	
 {
 	// 현재 시간을 받아온다.
 	getCurrentTime(m_runTime);
@@ -172,7 +172,7 @@ void SkillSlot::setRunTime()
 }
 
 void SkillSlot::setRunTime(Turn_t delay, bool bSave)
-	throw()
+	
 {
 	// 현재 시간을 받아온다.
 	getCurrentTime(m_runTime);

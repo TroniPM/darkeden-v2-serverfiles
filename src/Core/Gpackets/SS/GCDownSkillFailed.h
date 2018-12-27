@@ -56,11 +56,11 @@ public:
 	
 	// get/set skill type
 	SkillType_t getSkillType(void)  { return m_SkillType; }
-	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
+	void setSkillType(SkillType_t SkillType)  { m_SkillType = SkillType; }
 
 	// get/set description
 	BYTE getDesc(void)  { return m_Desc;}
-	void setDesc(BYTE desc) throw() { m_Desc = desc;}
+	void setDesc(BYTE desc)  { m_Desc = desc;}
 
 private:
 
@@ -84,16 +84,16 @@ class  GCDownSkillFailedFactory : public PacketFactory {
 public :
 	
 	// constructor
-	 GCDownSkillFailedFactory() throw() {}
+	 GCDownSkillFailedFactory()  {}
 	
 	// destructor
-	virtual ~GCDownSkillFailedFactory() throw() {}
+	virtual ~GCDownSkillFailedFactory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCDownSkillFailed(); }
+	Packet* createPacket()  { return new GCDownSkillFailed(); }
 
 	// get packet name
 	string getPacketName()  { return "GCDownSkillFailed"; }

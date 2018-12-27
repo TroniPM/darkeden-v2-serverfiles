@@ -49,7 +49,7 @@ public:
 
 	// get/set BloodBibleID
 	ItemType_t getBloodBibleID()  { return m_BloodBibleID; }
-	void setBloodBibleID( ItemType_t BloodBibleID ) throw() { m_BloodBibleID = BloodBibleID; }
+	void setBloodBibleID( ItemType_t BloodBibleID )  { m_BloodBibleID = BloodBibleID; }
 
 
 private :
@@ -73,16 +73,16 @@ class CGSelectBloodBibleFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGSelectBloodBibleFactory() throw() {}
+	CGSelectBloodBibleFactory()  {}
 	
 	// destructor
-	virtual ~CGSelectBloodBibleFactory() throw() {}
+	virtual ~CGSelectBloodBibleFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGSelectBloodBible(); }
+	Packet* createPacket()  { return new CGSelectBloodBible(); }
 
 	// get packet name
 	string getPacketName()  { return "CGSelectBloodBible"; }

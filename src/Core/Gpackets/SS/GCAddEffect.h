@@ -35,13 +35,13 @@ public:
 
 public:
 	EffectID_t getEffectID()  { return m_EffectID; }
-	void setEffectID(EffectID_t e) throw() { m_EffectID = e; }
+	void setEffectID(EffectID_t e)  { m_EffectID = e; }
 	
 	ObjectID_t getObjectID()  { return m_ObjectID; }
-	void setObjectID(ObjectID_t o) throw() { m_ObjectID = o; }
+	void setObjectID(ObjectID_t o)  { m_ObjectID = o; }
 
 	Turn_t getDuration()  { return m_Duration; }
-	void setDuration(Turn_t d) throw() { m_Duration = d; }
+	void setDuration(Turn_t d)  { m_Duration = d; }
 	
 private :
 	ObjectID_t m_ObjectID;
@@ -57,11 +57,11 @@ private :
 class GCAddEffectFactory : public PacketFactory 
 {
 public :
-	GCAddEffectFactory() throw() {}
-	virtual ~GCAddEffectFactory() throw() {}
+	GCAddEffectFactory()  {}
+	virtual ~GCAddEffectFactory()  {}
 	
 public:
-	Packet* createPacket() throw() { return new GCAddEffect(); }
+	Packet* createPacket()  { return new GCAddEffect(); }
 	string getPacketName()  { return "GCAddEffect"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_EFFECT; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + szEffectID + szTurn; }

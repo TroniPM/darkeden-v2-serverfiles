@@ -134,7 +134,7 @@ void EffectSuddenBlast::unaffect(Creature* pCreature)
 }
 
 string EffectSuddenBlast::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

@@ -11,7 +11,7 @@
 
 
 void CGUseMessageItemFromInventory::read (SocketInputStream & iStream) 
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY
 
@@ -35,7 +35,7 @@ void CGUseMessageItemFromInventory::read (SocketInputStream & iStream)
 }
 		    
 void CGUseMessageItemFromInventory::write (SocketOutputStream & oStream) const 
-     throw (ProtocolException , Error)
+     
 {
 	__BEGIN_TRY
 
@@ -59,7 +59,7 @@ void CGUseMessageItemFromInventory::write (SocketOutputStream & oStream) const
 }
 
 void CGUseMessageItemFromInventory::execute (Player* pPlayer) 
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY
 

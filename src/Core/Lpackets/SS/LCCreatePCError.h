@@ -30,7 +30,7 @@ public:
 
 public:
 	BYTE getErrorID()  { return m_ErrorID; }
-	void setErrorID(BYTE ErrorID) throw() { m_ErrorID = ErrorID; }
+	void setErrorID(BYTE ErrorID)  { m_ErrorID = ErrorID; }
 
 private: 
 	BYTE m_ErrorID;
@@ -45,7 +45,7 @@ class LCCreatePCErrorFactory : public PacketFactory
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new LCCreatePCError(); }
+	Packet* createPacket()  { return new LCCreatePCError(); }
 
 	// get packet name
 	string getPacketName()  { return "LCCreatePCError"; }

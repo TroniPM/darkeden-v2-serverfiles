@@ -30,7 +30,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 TradeInfo::TradeInfo()
-	throw ()
+	
 {
 	__BEGIN_TRY
 	
@@ -45,7 +45,7 @@ TradeInfo::TradeInfo()
 }
 
 TradeInfo::~TradeInfo()
-	throw ()
+	
 {
 	__BEGIN_TRY
 	
@@ -55,7 +55,7 @@ TradeInfo::~TradeInfo()
 }
 
 bool TradeInfo::hasItem(Item* pItem)
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -70,7 +70,7 @@ bool TradeInfo::hasItem(Item* pItem)
 }
 
 bool TradeInfo::addItem(Item* pItem)
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -82,7 +82,7 @@ bool TradeInfo::addItem(Item* pItem)
 }
 
 bool TradeInfo::removeItem(Item* pItem)
-	throw ()
+	
 {
 	__BEGIN_TRY
 	
@@ -101,7 +101,7 @@ bool TradeInfo::removeItem(Item* pItem)
 }
 
 void TradeInfo::clearAll(void)
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -129,14 +129,14 @@ bool TradeInfo::isValidOKTime(const Timeval& currentTime)
 ////////////////////////////////////////////////////////////////////////////////
 
 TradeManager::TradeManager()
-	throw ()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 TradeManager::~TradeManager()
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -153,14 +153,14 @@ TradeManager::~TradeManager()
 }
 
 void TradeManager::init()
-	throw ()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 bool TradeManager::hasTradeInfo(const string & Name)
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -172,7 +172,7 @@ bool TradeManager::hasTradeInfo(const string & Name)
 }
 
 TradeInfo* TradeManager::getTradeInfo(const string & Name)
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -184,7 +184,7 @@ TradeInfo* TradeManager::getTradeInfo(const string & Name)
 }
 
 void TradeManager::addTradeInfo(TradeInfo* pInfo)
-	throw (DuplicatedException)
+	
 {
 	__BEGIN_TRY
 
@@ -197,7 +197,7 @@ void TradeManager::addTradeInfo(TradeInfo* pInfo)
 }
 
 void TradeManager::removeTradeInfo(const string & Name)
-	throw (NoSuchElementException)
+	
 {
 	__BEGIN_TRY
 	
@@ -218,7 +218,7 @@ void TradeManager::removeTradeInfo(const string & Name)
 }
 
 void TradeManager::initTrade(Creature* pCreature1, Creature* pCreature2)
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -245,7 +245,7 @@ void TradeManager::initTrade(Creature* pCreature1, Creature* pCreature2)
 }
 
 int TradeManager::canTrade(Creature* pCreature1, Creature* pCreature2)
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -429,7 +429,7 @@ ErrorCode:
 }
 
 void TradeManager::processTrade(Creature* pCreature1, Creature* pCreature2)
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -766,7 +766,7 @@ cout << " 테스트 test ab" <<endl;
 // 실제로 되돌려야 할 것은 돈 뿐이다.
 ////////////////////////////////////////////////////////////////////////////////
 void TradeManager::cancelTrade(Creature* pCreature1, Creature* pCreature2)
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -851,7 +851,7 @@ void TradeManager::cancelTrade(Creature* pCreature1, Creature* pCreature2)
 // 실제로 되돌려야 할 것은 돈 뿐이다.
 ////////////////////////////////////////////////////////////////////////////////
 void TradeManager::cancelTrade(Creature* pPC)
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -944,7 +944,7 @@ void TradeManager::cancelTrade(Creature* pPC)
 // 두 크리쳐가 서로 교환중인지를 체크한다.
 ////////////////////////////////////////////////////////////////////////////////
 bool TradeManager::isTrading(Creature* pCreature1, Creature* pCreature2)
-	throw ()
+	
 {
 	__BEGIN_TRY
 

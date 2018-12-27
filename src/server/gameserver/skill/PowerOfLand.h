@@ -16,8 +16,8 @@
 class PowerOfLand : public SkillHandler 
 {
 public:
-	PowerOfLand() throw() {}
-	~PowerOfLand() throw() {}
+	PowerOfLand()  {}
+	~PowerOfLand()  {}
 	
 public:
     string getSkillHandlerName()  { return "PowerOfLand"; }

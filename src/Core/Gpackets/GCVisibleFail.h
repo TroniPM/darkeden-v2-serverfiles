@@ -24,7 +24,7 @@ class GCVisibleFail : public Packet {
 public :
 
 	// constructor
-	GCVisibleFail() throw() {}
+	GCVisibleFail()  {}
 	
 
 public :
@@ -73,7 +73,7 @@ class  GCVisibleFailFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCVisibleFail(); }
+	Packet* createPacket()  { return new GCVisibleFail(); }
 
 	// get packet name
 	string getPacketName()  { return "GCVisibleFail"; }

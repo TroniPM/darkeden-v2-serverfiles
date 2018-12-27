@@ -30,7 +30,7 @@ public:
 	string toString() ;
 
 public:
-	int getToHitBonus() throw() { return m_ToHitBonus;}
+	int getToHitBonus()  { return m_ToHitBonus;}
 	void setToHitBonus(ToHit_t ToHitBonus)  { m_ToHitBonus = ToHitBonus;}
 
 private :

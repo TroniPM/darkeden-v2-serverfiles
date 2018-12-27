@@ -29,7 +29,7 @@ EventRegeneration::EventRegeneration (GamePlayer* pGamePlayer)
 // destructor
 //////////////////////////////////////////////////////////////////////////////
 EventRegeneration::~EventRegeneration () 
-	throw ()
+	
 {
 }
 

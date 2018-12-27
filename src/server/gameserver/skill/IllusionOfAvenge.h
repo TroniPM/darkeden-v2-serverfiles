@@ -16,8 +16,8 @@
 class IllusionOfAvenge : public SkillHandler 
 {
 public:
-	IllusionOfAvenge() throw() {}
-	~IllusionOfAvenge() throw() {}
+	IllusionOfAvenge()  {}
+	~IllusionOfAvenge()  {}
 	
 public:
     string getSkillHandlerName()  { return "IllusionOfAvenge"; }

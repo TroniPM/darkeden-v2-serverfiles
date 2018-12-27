@@ -63,23 +63,23 @@ public :
 	// get / set ObjectID
 	Coord_t getX()  { return m_X;}
 	Coord_t getY()  { return m_Y;}
-	void setXY(Coord_t X, Coord_t Y) throw() { m_X = X; m_Y = Y;}
+	void setXY(Coord_t X, Coord_t Y)  { m_X = X; m_Y = Y;}
 		
 
 	// get / set SkillType
 	SkillType_t getSkillType()  { return m_SkillType; }
-	void setSkillType(SkillType_t SkillType) throw() { m_SkillType = SkillType; }
+	void setSkillType(SkillType_t SkillType)  { m_SkillType = SkillType; }
 
 	// get / set Duration
 	Duration_t getDuration()  { return m_Duration; }
-	void setDuration(Duration_t Duration) throw() { m_Duration = Duration; }
+	void setDuration(Duration_t Duration)  { m_Duration = Duration; }
 	
 	// get / set CEffectID 
 //	CEffectID_t getCEffectID()  { return m_CEffectID; }
-//	void setCEffectID(CEffectID_t e) throw() { m_CEffectID = e; }
+//	void setCEffectID(CEffectID_t e)  { m_CEffectID = e; }
 
 	BYTE getGrade()  { return m_Grade; } 
-	void setGrade( BYTE grade ) throw() { m_Grade = grade; }
+	void setGrade( BYTE grade )  { m_Grade = grade; }
 
 private :
 
@@ -112,16 +112,16 @@ class GCSkillToObjectOK6Factory : public PacketFactory {
 public :
 	
 	// constructor
-	GCSkillToObjectOK6Factory() throw() {}
+	GCSkillToObjectOK6Factory()  {}
 	
 	// destructor
-	virtual ~GCSkillToObjectOK6Factory() throw() {}
+	virtual ~GCSkillToObjectOK6Factory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCSkillToObjectOK6(); }
+	Packet* createPacket()  { return new GCSkillToObjectOK6(); }
 
 	// get packet name
 	string getPacketName()  { return "GCSkillToObjectOK6"; }

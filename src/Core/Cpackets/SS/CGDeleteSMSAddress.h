@@ -44,7 +44,7 @@ private:
 class CGDeleteSMSAddressFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGDeleteSMSAddress(); }
+	Packet* createPacket()  { return new CGDeleteSMSAddress(); }
 	string getPacketName()  { return "CGDeleteSMSAddress"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_DELETE_SMS_ADDRESS; }
 	PacketSize_t getPacketMaxSize()  { return szDWORD; }

@@ -37,7 +37,7 @@ public:
 class GCAddInstalledMineToZoneFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCAddInstalledMineToZone(); }
+	Packet* createPacket()  { return new GCAddInstalledMineToZone(); }
 	string getPacketName()  { return "GCAddInstalledMineToZone"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_ADD_INSTALLED_MINE_TO_ZONE; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + szCoord + szCoord + szBYTE + szItemType + szBYTE + 255 + szDurability + szItemNum + szBYTE +(szObjectID + szBYTE + szItemType + szItemNum + szSlotID)* 12; }

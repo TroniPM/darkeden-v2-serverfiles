@@ -171,7 +171,7 @@ void EffectHasCastleSymbol::affect(Item* pItem)
 }
 
 void EffectHasCastleSymbol::setPart( int part )
-	throw()
+	
 {
 	__BEGIN_TRY
 

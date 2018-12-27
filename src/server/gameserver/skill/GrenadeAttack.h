@@ -16,8 +16,8 @@
 class GrenadeAttack : public SkillHandler 
 {
 public:
-	GrenadeAttack() throw() {}
-	~GrenadeAttack() throw() {}
+	GrenadeAttack()  {}
+	~GrenadeAttack()  {}
 	
 public:
     string getSkillHandlerName()  { return "GrenadeAttack"; }

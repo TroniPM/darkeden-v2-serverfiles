@@ -16,8 +16,8 @@
 class MonsterRangeSkill : public SkillHandler 
 {
 public:
-	MonsterRangeSkill(SkillType_t skillType, Damage_t damage = 0, bool magic = true, bool add = true) throw() : m_SkillType(skillType), m_Damage(damage), m_bMagic(magic), m_bAdd(add) {}
-	~MonsterRangeSkill() throw() {}
+	MonsterRangeSkill(SkillType_t skillType, Damage_t damage = 0, bool magic = true, bool add = true)  : m_SkillType(skillType), m_Damage(damage), m_bMagic(magic), m_bAdd(add) {}
+	~MonsterRangeSkill()  {}
 	
 public:
     string getSkillHandlerName()  { return "MonsterRangeSkill "; }

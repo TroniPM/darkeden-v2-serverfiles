@@ -64,8 +64,8 @@ public:
 	void addZone(Zone* pZone);
 	
 	// delete zone from zone group
-	void deleteZone(ZoneID_t zoneID) throw(NoSuchElementException);
-	Zone* removeZone(ZoneID_t zoneID) throw(NoSuchElementException);
+	void deleteZone(ZoneID_t zoneID) ;
+	Zone* removeZone(ZoneID_t zoneID) ;
 	
 	// get zone from zone group
 	Zone* getZone(ZoneID_t zoneID) ;
@@ -81,15 +81,15 @@ public:
 
 	// get/set zone group id
 	ZoneGroupID_t getZoneGroupID()  { return m_ZoneGroupID; }
-	void setZoneGroupID(ZoneGroupID_t zoneGroupID) throw() { m_ZoneGroupID = zoneGroupID; }
+	void setZoneGroupID(ZoneGroupID_t zoneGroupID)  { m_ZoneGroupID = zoneGroupID; }
 
 	// get zone player manager
-	ZonePlayerManager* getZonePlayerManager() throw() { return m_pZonePlayerManager; }
-	void setZonePlayerManager(ZonePlayerManager* pZonePlayerManager) throw() { m_pZonePlayerManager = pZonePlayerManager; }
+	ZonePlayerManager* getZonePlayerManager()  { return m_pZonePlayerManager; }
+	void setZonePlayerManager(ZonePlayerManager* pZonePlayerManager)  { m_pZonePlayerManager = pZonePlayerManager; }
 
 	// get/set game time
 	GameTime getGameTime()  { return m_GameTime; }
-	void setGameTime(const GameTime & gameTime) throw() { m_GameTime = gameTime; }
+	void setGameTime(const GameTime & gameTime)  { m_GameTime = gameTime; }
 
 	void makeZoneUserInfo ( GMServerInfo & gmServerInfo );
 

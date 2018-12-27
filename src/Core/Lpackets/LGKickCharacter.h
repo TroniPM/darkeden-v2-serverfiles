@@ -57,10 +57,10 @@ public:
 
 	// get/set pcName
 	string getPCName()  { return m_PCName; }
-	void setPCName(const string& pcName) throw() { m_PCName = pcName; }
+	void setPCName(const string& pcName)  { m_PCName = pcName; }
 	
 	uint getID()  { return m_ID; }
-	void setID(uint id) throw() { m_ID = id; }
+	void setID(uint id)  { m_ID = id; }
 
 private :
 
@@ -84,7 +84,7 @@ class LGKickCharacterFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new LGKickCharacter(); }
+	Packet* createPacket()  { return new LGKickCharacter(); }
 
 	// get packet name
 	string getPacketName()  { return "LGKickCharacter"; }

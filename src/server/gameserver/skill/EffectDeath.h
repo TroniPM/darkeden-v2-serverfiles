@@ -31,7 +31,7 @@ public:
 
 public:
 	int  getLevel() const { return m_Level; }
-	void setLevel(int level) throw() { m_Level = level; }
+	void setLevel(int level)  { m_Level = level; }
 
 	int getResistPenalty(void) const { return m_ResistPenalty; }
 	void setResistPenalty(int penalty) { m_ResistPenalty = penalty; }

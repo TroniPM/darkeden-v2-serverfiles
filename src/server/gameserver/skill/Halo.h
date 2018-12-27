@@ -16,8 +16,8 @@
 class Halo: public SkillHandler 
 {
 public:
-	Halo() throw() {}
-	~Halo() throw() {}
+	Halo()  {}
+	~Halo()  {}
 	
 public:
     string getSkillHandlerName()  { return "Halo"; }

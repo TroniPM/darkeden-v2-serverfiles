@@ -16,8 +16,8 @@
 class Evade : public SkillHandler 
 {
 public:
-	Evade() throw() {}
-	~Evade() throw() {}
+	Evade()  {}
+	~Evade()  {}
 	
 public:
     string getSkillHandlerName()  { return "Evade"; }

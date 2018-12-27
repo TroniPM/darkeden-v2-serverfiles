@@ -30,7 +30,7 @@ public:
 
 	PacketSize_t getSize ();
 
-	static uint getMaxSize () throw () 
+	static uint getMaxSize ()  
 	{
 		return szBYTE + (GearSlotInfo::getMaxSize()* 13);
 	}
@@ -39,13 +39,13 @@ public:
 
 public:
 	BYTE getListNum()  { return m_ListNum; }
-	void setListNum(BYTE ListNum) throw() { m_ListNum = ListNum; }
+	void setListNum(BYTE ListNum)  { m_ListNum = ListNum; }
 
-	void addListElement(GearSlotInfo* pGearSlotInfo) throw() { m_GearSlotInfoList.push_back(pGearSlotInfo); }
+	void addListElement(GearSlotInfo* pGearSlotInfo)  { m_GearSlotInfoList.push_back(pGearSlotInfo); }
 
-	void clearList() throw() { m_GearSlotInfoList.clear(); m_ListNum = 0; }
+	void clearList()  { m_GearSlotInfoList.clear(); m_ListNum = 0; }
 
-	GearSlotInfo* popFrontListElement() throw() 
+	GearSlotInfo* popFrontListElement()  
 	{ 
 		GearSlotInfo* TempGearSlotInfo = m_GearSlotInfoList.front(); m_GearSlotInfoList.pop_front(); return TempGearSlotInfo; 
 	}

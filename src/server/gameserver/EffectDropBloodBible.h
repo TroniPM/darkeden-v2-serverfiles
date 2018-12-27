@@ -22,7 +22,7 @@ public:
 
 public:
     EffectClass getEffectClass()  { return EFFECT_CLASS_DROP_BLOOD_BIBLE; }
-	EffectClass getSendEffectClass() throw() { return (EffectClass)((int)EFFECT_CLASS_BLOOD_BIBLE_ARMEGA + m_ItemType); }
+	EffectClass getSendEffectClass()  { return (EffectClass)((int)EFFECT_CLASS_BLOOD_BIBLE_ARMEGA + m_ItemType); }
 
 	ItemType_t	getPart() const { return m_ItemType; }
 	void		setPart( ItemType_t part ) { m_ItemType = part; }

@@ -42,13 +42,13 @@ public:
 	virtual string getObjectTableName()  { return "SubInventoryObject"; }
 
 	virtual ItemType_t getItemType()  { return m_ItemType; }
-	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
+	virtual void setItemType(ItemType_t itemType)  { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() ;
 	virtual VolumeHeight_t getVolumeHeight() ;
 	virtual Weight_t getWeight() ;*/
 
-	void setInventory(Inventory* pInventory) throw() { m_pInventory = pInventory; }
+	void setInventory(Inventory* pInventory)  { m_pInventory = pInventory; }
 	Inventory* getInventory()  { return m_pInventory; }
 
 	PocketNum_t getPocketWidthCount(void) ;
@@ -75,13 +75,13 @@ public:
 	virtual Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_SUB_INVENTORY; }
 
 	uint getPocketWidthCount()  { return m_PocketCount; }
-	void setPocketWidthCount(uint pocketCount) throw() { m_PocketCount = pocketCount; }
+	void setPocketWidthCount(uint pocketCount)  { m_PocketCount = pocketCount; }
 
 	uint getPocketHeightCount()  { return m_PocketCount2; }
-	void setPocketHeightCount(uint pocketCount2) throw() { m_PocketCount2 = pocketCount2; }
+	void setPocketHeightCount(uint pocketCount2)  { m_PocketCount2 = pocketCount2; }
 
 	virtual uint getItemLevel(void)  { return m_ItemLevel; }
-	virtual void setItemLevel(uint level) throw() { m_ItemLevel = level; }
+	virtual void setItemLevel(uint level)  { m_ItemLevel = level; }
 
 	virtual string toString() ;
 
@@ -119,7 +119,7 @@ public:
 	virtual string getItemClassName()  { return "SubInventory"; }
 	
 public:
-	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new SubInventory(ItemType,OptionType); }
+	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType)  { return new SubInventory(ItemType,OptionType); }
 };
 
 

@@ -16,8 +16,8 @@
 class GreatHeal2: public SkillHandler 
 {
 public:
-	GreatHeal2() throw() {}
-	~GreatHeal2() throw() {}
+	GreatHeal2()  {}
+	~GreatHeal2()  {}
 	
 public:
     string getSkillHandlerName()  { return "GreatHeal2"; }

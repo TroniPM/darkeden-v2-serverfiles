@@ -24,7 +24,7 @@ class GCUntransformFail : public Packet {
 public :
 
 	// constructor
-	GCUntransformFail() throw() {}
+	GCUntransformFail()  {}
 	
 
 public :
@@ -73,7 +73,7 @@ class  GCUntransformFailFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCUntransformFail(); }
+	Packet* createPacket()  { return new GCUntransformFail(); }
 
 	// get packet name
 	string getPacketName()  { return "GCUntransformFail"; }

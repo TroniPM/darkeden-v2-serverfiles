@@ -7,7 +7,7 @@
 #include "CGLoadingReady.h"
 
 void CGLoadingReady::read (SocketInputStream & iStream)
-	throw (ProtocolException , Error)
+	
 {
 	__BEGIN_TRY
 	iStream.read(m_Type);
@@ -15,7 +15,7 @@ void CGLoadingReady::read (SocketInputStream & iStream)
 }
 
 void CGLoadingReady::write (SocketOutputStream & oStream) const
-	throw (ProtocolException , Error)
+	
 {
 	__BEGIN_TRY
 	oStream.write(m_Type);
@@ -23,7 +23,7 @@ void CGLoadingReady::write (SocketOutputStream & oStream) const
 }
 
 void CGLoadingReady::execute (Player* pPlayer) 
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY
 		

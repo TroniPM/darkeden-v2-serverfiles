@@ -16,8 +16,8 @@
 class PoisonStorm : public SkillHandler 
 {
 public:
-	PoisonStorm() throw() {}
-	~PoisonStorm() throw() {}
+	PoisonStorm()  {}
+	~PoisonStorm()  {}
 	
 public:
     string getSkillHandlerName()  { return "PoisonStorm"; }

@@ -27,16 +27,16 @@ class CURequest : public Packet {
 public :
 	
     // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
-    void read ( SocketInputStream & iStream ) throw ( ProtocolException , Error );
+    void read ( SocketInputStream & iStream ) ;
 		    
 	// 소켓으로부터 직접 데이타를 읽어서 패킷을 초기화한다.
-    void read ( Socket * pSocket ) throw ( ProtocolException , Error );
+    void read ( Socket * pSocket ) ;
 
     // 출력스트림(버퍼)으로 패킷의 바이너리 이미지를 보낸다.
     void write ( SocketOutputStream & oStream ) ;
 
 	// execute packet's handler
-	void execute ( Player * pPlayer ) throw ( ProtocolException , Error );
+	void execute ( Player * pPlayer ) ;
 
 	// get packet id
 	PacketID_t getPacketID ()  { return PACKET_CU_REQUEST; }
@@ -45,7 +45,7 @@ public :
 	PacketSize_t getPacketSize ()  { return m_Resource.getSize(); }
 
 	// 임시 코드당. -_-;
-	static PacketSize_t getPacketMaxSize () throw () { return Resource::getMaxSize(); }
+	static PacketSize_t getPacketMaxSize ()  { return Resource::getMaxSize(); }
 
 	// get packet name
 	string getPacketName ()  { return "CURequest"; }
@@ -58,7 +58,7 @@ public :
 
 	// get/set resource
 	const Resource & getResource ()  { return m_Resource; }
-	void setResource ( const Resource & resource ) throw () { m_Resource = resource; }
+	void setResource ( const Resource & resource )  { m_Resource = resource; }
 
 
 private :
@@ -82,7 +82,7 @@ class CURequestFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet * createPacket () throw () { return new CURequest(); }
+	Packet * createPacket ()  { return new CURequest(); }
 
 	// get packet name
 	string getPacketName ()  { return "CURequest"; }
@@ -110,7 +110,7 @@ class CURequestHandler {
 public :
 
 	// execute packet's handler
-	static void execute ( CURequest * pPacket , Player * pPlayer ) throw ( ProtocolException , Error );
+	static void execute ( CURequest * pPacket , Player * pPlayer ) ;
 
 };
 

@@ -14,7 +14,7 @@
 // read from socket 
 //--------------------------------------------------------------------------------
 void UCUpdateList::read ( Socket * pSocket )
-	throw ( ProtocolException , Error )
+	
 {
 	__BEGIN_TRY
 
@@ -30,7 +30,7 @@ void UCUpdateList::read ( Socket * pSocket )
 // write to socket output stream
 //--------------------------------------------------------------------------------
 void UCUpdateList::write ( Socket * pSocket ) const
-	throw ( ProtocolException , Error )
+	
 {
 	__BEGIN_TRY
 
@@ -46,7 +46,7 @@ void UCUpdateList::write ( Socket * pSocket ) const
 // execute packet's handler
 //--------------------------------------------------------------------------------
 void UCUpdateList::execute ( Player * pPlayer ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -60,7 +60,7 @@ void UCUpdateList::execute ( Player * pPlayer )
 // get debug string
 //--------------------------------------------------------------------------------
 string UCUpdateList::toString() const
-	throw ()
+	
 {
 	StringStream msg;
 

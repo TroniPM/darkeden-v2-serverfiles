@@ -65,7 +65,7 @@ public:
 
 	// get/set pcName
 	string getPCName()  { return m_PCName; }
-	void setPCName(const string& pcName) throw() { m_PCName = pcName; }
+	void setPCName(const string& pcName)  { m_PCName = pcName; }
 
 private :
 
@@ -87,7 +87,7 @@ class CGPortCheckFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGPortCheck(); }
+	Packet* createPacket()  { return new CGPortCheck(); }
 
 	// get packet name
 	string getPacketName()  { return "CGPortCheck"; }

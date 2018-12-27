@@ -16,8 +16,8 @@
 class Paralyze: public SkillHandler 
 {
 public:
-	Paralyze() throw() {}
-	~Paralyze() throw() {}
+	Paralyze()  {}
+	~Paralyze()  {}
 	
 public:
     string getSkillHandlerName()  { return "Paralyze"; }

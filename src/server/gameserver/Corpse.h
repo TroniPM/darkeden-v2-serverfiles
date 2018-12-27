@@ -39,7 +39,7 @@ public:
 	virtual string getObjectTableName()  { return ""; }
 
 	virtual ItemType_t getItemType()  = 0;
-	virtual void setItemType(ItemType_t monsterType) throw() = 0;
+	virtual void setItemType(ItemType_t monsterType)  = 0;
 
     virtual VolumeWidth_t getVolumeWidth()  { return 0; }
     virtual VolumeHeight_t getVolumeHeight()  { return 0; }
@@ -54,23 +54,23 @@ public:
 	Item* popTreasure( ObjectID_t objectID ) ;
 
 	BYTE getTreasureCount()  { return m_TreasureCount; }
-	void setTreasureCount(BYTE Count) throw() { m_TreasureCount = Count; }
+	void setTreasureCount(BYTE Count)  { m_TreasureCount = Count; }
 
 	ZoneCoord_t getX()  { return m_X; }
-	void setX(ZoneCoord_t x) throw() { m_X = x; }
+	void setX(ZoneCoord_t x)  { m_X = x; }
 
 	ZoneCoord_t getY()  { return m_Y; }
-	void setY(ZoneCoord_t y) throw() { m_Y = y; }
+	void setY(ZoneCoord_t y)  { m_Y = y; }
 
 	// get/set zone
     Zone* getZone()  { return m_pZone; }
-    void setZone(Zone* pZone) throw() { m_pZone = pZone; }
+    void setZone(Zone* pZone)  { m_pZone = pZone; }
 
 	int getLevel()  { return m_Level; }
-	void setLevel(int level) throw() { m_Level = level; }
+	void setLevel(int level)  { m_Level = level; }
 
 	Exp_t getExp()  { return m_Exp; }
-	void setExp(Exp_t exp) throw() { m_Exp = exp; }
+	void setExp(Exp_t exp)  { m_Exp = exp; }
 
 protected:
 	list<Item*> m_Treasures;     // 보물의 리스트
@@ -97,7 +97,7 @@ protected:
 class CorpseFactory : public ItemFactory 
 {
 public:
-	Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return NULL; }
+	Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType)  { return NULL; }
 	string getItemName()  { return "Corpse"; }
 	Item::ItemClass getItemClass()  { return Item::ITEM_CLASS_CORPSE; }
 };

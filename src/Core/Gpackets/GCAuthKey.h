@@ -27,7 +27,7 @@ public:
 	string toString() ;
 
 	DWORD getKey()  { return m_Key; }
-	void setKey(DWORD key) throw() { m_Key = key; }
+	void setKey(DWORD key)  { m_Key = key; }
 
 private:
 	DWORD		m_Key;
@@ -43,7 +43,7 @@ private:
 class GCAuthKeyFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCAuthKey(); }
+	Packet* createPacket()  { return new GCAuthKey(); }
 	string getPacketName()  { return "GCAuthKey"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_AUTH_KEY; }
 	PacketSize_t getPacketMaxSize()  { return szDWORD; }

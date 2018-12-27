@@ -80,7 +80,7 @@ private:
 class CGTypeStringListFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGTypeStringList(); }
+	Packet* createPacket()  { return new CGTypeStringList(); }
 	string getPacketName()  { return "CGTypeStringList"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_TYPE_STRING_LIST; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE + szBYTE + ( szBYTE + MAX_STRING_LENGTH ) * MAX_STRING_NUM + szDWORD; }

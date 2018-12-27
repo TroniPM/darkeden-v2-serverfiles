@@ -16,8 +16,8 @@
 class HandsOfFire : public SkillHandler 
 {
 public:
-	HandsOfFire() throw() {}
-	~HandsOfFire() throw() {}
+	HandsOfFire()  {}
+	~HandsOfFire()  {}
 	
 public:
     string getSkillHandlerName()  { return "HandsOfFire"; }

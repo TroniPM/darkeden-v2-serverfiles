@@ -18,7 +18,7 @@
 class GCRemoveStoreItem : public Packet
 {
 public:
-	GCRemoveStoreItem() throw() { }
+	GCRemoveStoreItem()  { }
 	virtual ~GCRemoveStoreItem() ;
 
 public:
@@ -48,7 +48,7 @@ private:
 class GCRemoveStoreItemFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCRemoveStoreItem(); }
+	Packet* createPacket()  { return new GCRemoveStoreItem(); }
 	string getPacketName()  { return "GCRemoveStoreItem"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_REMOVE_STORE_ITEM; }
 	PacketSize_t getPacketMaxSize() 

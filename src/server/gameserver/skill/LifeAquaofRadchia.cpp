@@ -19,7 +19,7 @@
 #include "Gpackets/GCSkillFailed1.h"
 
 LifeAquaofRadchia::LifeAquaofRadchia()
-	throw()
+	
 {
 
 };

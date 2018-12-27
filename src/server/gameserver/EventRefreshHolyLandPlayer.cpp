@@ -18,7 +18,7 @@
 //////////////////////////////////////////////////////////////////////////////
 
 EventRefreshHolyLandPlayer::EventRefreshHolyLandPlayer( GamePlayer* pGamePlayer )
-	throw ()
+	
 	:Event(pGamePlayer)
 {
 }
@@ -56,7 +56,7 @@ void EventRefreshHolyLandPlayer::activate ()
 }
 
 string EventRefreshHolyLandPlayer::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 	msg << "EventRefreshHolyLandPlayer("

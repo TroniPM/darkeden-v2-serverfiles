@@ -57,8 +57,8 @@ public:
 	};
 
 public:
-	Object(ObjectID_t objectID = 0) throw() : m_ObjectID(objectID) {}
-	virtual ~Object() throw() {}
+	Object(ObjectID_t objectID = 0)  : m_ObjectID(objectID) {}
+	virtual ~Object()  {}
 	
 public:
 	// get/set object id
@@ -103,7 +103,7 @@ class isSameObjectID
 public:
     isSameObjectID(ObjectID_t objectID) : m_ObjectID(objectID) {}
  
-    bool operator()(Object* pObject) throw()
+    bool operator()(Object* pObject) 
     {
         return pObject->getObjectID() == m_ObjectID;
     }

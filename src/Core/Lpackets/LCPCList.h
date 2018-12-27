@@ -67,7 +67,7 @@ public:
 		return m_pPCInfos[slot];
 	}
 
-	void setPCInfo(Slot slot, PCInfo* pPCInfo) throw(DuplicatedException) 
+	void setPCInfo(Slot slot, PCInfo* pPCInfo)  
 	{ 
 		if(m_pPCInfos[ slot ] != NULL)
 			throw DuplicatedException("PCInfo duplicated.");
@@ -95,7 +95,7 @@ class LCPCListFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new LCPCList(); }
+	Packet* createPacket()  { return new LCPCList(); }
 
 	// get packet name
 	string getPacketName()  { return "LCPCList"; }

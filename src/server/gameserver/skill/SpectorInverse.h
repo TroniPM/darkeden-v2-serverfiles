@@ -16,8 +16,8 @@
 class SpectorInverse : public SkillHandler 
 {
 public:
-	SpectorInverse() throw() {}
-	~SpectorInverse() throw() {}
+	SpectorInverse()  {}
+	~SpectorInverse()  {}
 	
 public:
     string getSkillHandlerName()  { return "SpectorInverse"; }

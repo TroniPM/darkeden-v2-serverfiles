@@ -16,8 +16,8 @@
 class Demolisher: public SkillHandler 
 {
 public:
-	Demolisher() throw() {}
-	~Demolisher() throw() {}
+	Demolisher()  {}
+	~Demolisher()  {}
 	
 public:
     string getSkillHandlerName()  { return "Demolisher"; }

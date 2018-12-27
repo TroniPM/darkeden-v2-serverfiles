@@ -16,8 +16,8 @@
 class BloodySkull : public SkillHandler 
 {
 public:
-	BloodySkull() throw() {}
-	~BloodySkull() throw() {}
+	BloodySkull()  {}
+	~BloodySkull()  {}
 	
 public:
     string getSkillHandlerName()  { return "BloodySkull"; }

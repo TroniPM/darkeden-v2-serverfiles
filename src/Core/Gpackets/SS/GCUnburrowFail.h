@@ -24,7 +24,7 @@ class GCUnburrowFail : public Packet {
 public :
 
 	// constructor
-	GCUnburrowFail() throw() {}
+	GCUnburrowFail()  {}
 	
 
 public :
@@ -73,7 +73,7 @@ class  GCUnburrowFailFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCUnburrowFail(); }
+	Packet* createPacket()  { return new GCUnburrowFail(); }
 
 	// get packet name
 	string getPacketName()  { return "GCUnburrowFail"; }

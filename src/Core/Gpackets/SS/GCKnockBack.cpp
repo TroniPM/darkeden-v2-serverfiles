@@ -9,7 +9,7 @@
 
 
 void GCKnockBack::read ( SocketInputStream & iStream )
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -37,7 +37,7 @@ void GCKnockBack::write ( SocketOutputStream & oStream )
 }
 
 void GCKnockBack::execute ( Player * pPlayer ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		

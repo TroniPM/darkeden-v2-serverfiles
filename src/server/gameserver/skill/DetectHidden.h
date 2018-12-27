@@ -16,8 +16,8 @@
 class DetectHidden: public SkillHandler 
 {
 public:
-	DetectHidden() throw() {}
-	~DetectHidden() throw() {}
+	DetectHidden()  {}
+	~DetectHidden()  {}
 	
 public:
     string getSkillHandlerName()  { return "DetectHidden"; }

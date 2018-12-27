@@ -41,10 +41,10 @@ public:
 	
 public:
 	ObjectID_t getTargetObjectID()  { return m_TargetObjectID; }
-	void setTargetObjectID(ObjectID_t id) throw() { m_TargetObjectID = id; }
+	void setTargetObjectID(ObjectID_t id)  { m_TargetObjectID = id; }
 
 	BYTE getCode(void)  { return m_Code; }
-	void setCode(BYTE code) throw() { m_Code = code; }
+	void setCode(BYTE code)  { m_Code = code; }
 
 private:
 	ObjectID_t m_TargetObjectID; // 상대방의 OID
@@ -60,7 +60,7 @@ private:
 class CGPartyInviteFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGPartyInvite(); }
+	Packet* createPacket()  { return new CGPartyInvite(); }
 	string getPacketName()  { return "CGPartyInvite"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_PARTY_INVITE; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + szBYTE; }

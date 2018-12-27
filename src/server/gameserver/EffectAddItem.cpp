@@ -128,7 +128,7 @@ void EffectAddItem::unaffect (Creature* pCreature)
 // get debug string
 //----------------------------------------------------------------------
 string EffectAddItem::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 

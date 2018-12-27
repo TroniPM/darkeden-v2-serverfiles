@@ -16,8 +16,8 @@
 class ShadowOfStorm : public SkillHandler 
 {
 public:
-	ShadowOfStorm() throw() {}
-	~ShadowOfStorm() throw() {}
+	ShadowOfStorm()  {}
+	~ShadowOfStorm()  {}
 	
 public:
     string getSkillHandlerName()  { return "ShadowOfStorm"; }

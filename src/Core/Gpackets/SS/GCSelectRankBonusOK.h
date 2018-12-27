@@ -59,7 +59,7 @@ public :
 	
 	// get/set m_RankBonusType
 	DWORD getRankBonusType()  { return m_RankBonusType; }
-	void setRankBonusType(DWORD rankBonusType) throw() { m_RankBonusType = rankBonusType; }
+	void setRankBonusType(DWORD rankBonusType)  { m_RankBonusType = rankBonusType; }
 
 private : 
 
@@ -81,16 +81,16 @@ class  GCSelectRankBonusOKFactory : public PacketFactory {
 public :
 	
 	// constructor
-	 GCSelectRankBonusOKFactory() throw() {}
+	 GCSelectRankBonusOKFactory()  {}
 	
 	// destructor
-	virtual ~GCSelectRankBonusOKFactory() throw() {}
+	virtual ~GCSelectRankBonusOKFactory()  {}
 
 	
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCSelectRankBonusOK(); }
+	Packet* createPacket()  { return new GCSelectRankBonusOK(); }
 
 	// get packet name
 	string getPacketName()  { return "GCSelectRankBonusOK"; }

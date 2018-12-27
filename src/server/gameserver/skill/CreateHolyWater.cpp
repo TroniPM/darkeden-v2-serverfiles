@@ -190,7 +190,7 @@ void CreateHolyWater::execute(Slayer * pSlayer , ObjectID_t InvenObjectID, Coord
 }
 
 bool CreateHolyWater::canMake(ItemType_t WaterType, int DomainLevel, int SkillLevel)
-	throw()
+	
 {
 	__BEGIN_TRY
 

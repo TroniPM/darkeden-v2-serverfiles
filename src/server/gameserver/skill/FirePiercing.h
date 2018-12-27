@@ -16,8 +16,8 @@
 class FirePiercing : public SkillHandler 
 {
 public:
-	FirePiercing() throw() {}
-	~FirePiercing() throw() {}
+	FirePiercing()  {}
+	~FirePiercing()  {}
 	
 public:
     string getSkillHandlerName()  { return "FirePiercing"; }

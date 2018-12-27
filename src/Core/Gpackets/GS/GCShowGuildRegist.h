@@ -48,7 +48,7 @@ public :
 
 	// get/set Registration Fee
 	Gold_t getRegistrationFee()  { return m_RegistrationFee; }
-	void setRegistrationFee( Gold_t registrationFee ) throw() { m_RegistrationFee = registrationFee; }
+	void setRegistrationFee( Gold_t registrationFee )  { m_RegistrationFee = registrationFee; }
 	
 
 private :
@@ -72,7 +72,7 @@ class GCShowGuildRegistFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCShowGuildRegist(); }
+	Packet* createPacket()  { return new GCShowGuildRegist(); }
 
 	// get packet name
 	string getPacketName()  { return "GCShowGuildRegist"; }

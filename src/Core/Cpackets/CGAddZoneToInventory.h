@@ -30,17 +30,17 @@ public:
 	string toString() ;
 	
 public:
-	ObjectID_t getObjectID() throw() { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 	Coord_t getZoneX()  { return m_ZoneX; }
-	void setZoneX(Coord_t ZoneX) throw() { m_ZoneX = ZoneX; }
+	void setZoneX(Coord_t ZoneX)  { m_ZoneX = ZoneX; }
 
 	Coord_t getZoneY()  { return m_ZoneY; }
-	void setZoneY(Coord_t ZoneY) throw() { m_ZoneY = ZoneY; }
+	void setZoneY(Coord_t ZoneY)  { m_ZoneY = ZoneY; }
 
 	CoordInven_t getInvenX()  { return m_InvenX; }
-	void setInvenX(CoordInven_t InvenX) throw() { m_InvenX = InvenX; }
+	void setInvenX(CoordInven_t InvenX)  { m_InvenX = InvenX; }
 
 	CoordInven_t getInvenY()  { return m_InvenY; }
 	void setInvenY(CoordInven_t InvenY) { m_InvenY = InvenY; }
@@ -60,7 +60,7 @@ private:
 class CGAddZoneToInventoryFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGAddZoneToInventory(); }
+	Packet* createPacket()  { return new CGAddZoneToInventory(); }
 	string getPacketName()  { return "CGAddZoneToInventory"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_ADD_ZONE_TO_INVENTORY; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + szCoord + szCoord + szCoordInven + szCoordInven; }

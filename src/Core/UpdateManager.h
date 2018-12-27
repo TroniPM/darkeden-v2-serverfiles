@@ -71,7 +71,7 @@ public :
 	uint getSize () ;
 
 	// get max size
-	static uint getMaxSize () throw () { return Update::getMaxSize()* maxUpdates; }
+	static uint getMaxSize ()  { return Update::getMaxSize()* maxUpdates; }
 
 
 public :

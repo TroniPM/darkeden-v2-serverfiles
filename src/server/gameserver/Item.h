@@ -667,30 +667,30 @@ public:
 //	virtual Item* getTreasure()  { return NULL; };
 
 	virtual ItemType_t getItemType()  = 0;
-	virtual void setItemType(ItemType_t itemType) throw() = 0;
+	virtual void setItemType(ItemType_t itemType)  = 0;
 
 	virtual bool hasOptionType()  { return false; }
 	virtual int getOptionTypeSize()  { return 0; }
 	virtual int getRandomOptionType()  { return 0; }
 	virtual const list<OptionType_t>& getOptionTypeList()  { static list<OptionType_t> nullList; return nullList; }
 	virtual OptionType_t getFirstOptionType()  { return 0; }
-	virtual void removeOptionType(OptionType_t OptionType) throw() {}
-	virtual void changeOptionType(OptionType_t currentOptionType, OptionType_t newOptionType) throw() {}
-	virtual void addOptionType(OptionType_t OptionType) throw() {}
-	virtual void setOptionType(const list<OptionType_t>& OptionType) throw() {}
+	virtual void removeOptionType(OptionType_t OptionType)  {}
+	virtual void changeOptionType(OptionType_t currentOptionType, OptionType_t newOptionType)  {}
+	virtual void addOptionType(OptionType_t OptionType)  {}
+	virtual void setOptionType(const list<OptionType_t>& OptionType)  {}
 
 	virtual bool hasOptionType2()  { return false; }
 	virtual int getOptionTypeSize2()  { return 0; }
 	virtual int getRandomOptionType2()  { return 0; }
 	virtual const list<OptionType_t>& getOptionTypeList2()  { static list<OptionType_t> nullList; return nullList; }
 	virtual OptionType_t getFirstOptionType2()  { return 0; }
-	virtual void removeOptionType2(OptionType_t OptionType) throw() {}
-	virtual void changeOptionType2(OptionType_t currentOptionType, OptionType_t newOptionType) throw() {}
-	virtual void addOptionType2(OptionType_t OptionType) throw() {}
-	virtual void setOptionType2(const list<OptionType_t>& OptionType) throw() {}
+	virtual void removeOptionType2(OptionType_t OptionType)  {}
+	virtual void changeOptionType2(OptionType_t currentOptionType, OptionType_t newOptionType)  {}
+	virtual void addOptionType2(OptionType_t OptionType)  {}
+	virtual void setOptionType2(const list<OptionType_t>& OptionType)  {}
 
 	ItemID_t getItemID()  { return m_ItemID; }
-	void setItemID(ItemID_t itemID) throw() { m_ItemID = itemID; }
+	void setItemID(ItemID_t itemID)  { m_ItemID = itemID; }
 
 	virtual VolumeWidth_t getVolumeWidth() ;
 	virtual VolumeHeight_t getVolumeHeight() ;
@@ -714,21 +714,21 @@ public:
     virtual MP_t getMPBonus()  { return 0; }
 
 	virtual ItemNum_t getNum()  { return 1; }
-	virtual void setNum(ItemNum_t Num) throw() {}
+	virtual void setNum(ItemNum_t Num)  {}
 
 	virtual bool isStackable()  { 	return false; }
 
 	virtual BYTE getBulletCount()  { return 0; } 
-	virtual void setBulletCount(BYTE bulletCount) throw() {}
+	virtual void setBulletCount(BYTE bulletCount)  {}
 
 	virtual Silver_t getSilver()  { return 0; }
-	virtual void setSilver(Silver_t amount) throw() { }
+	virtual void setSilver(Silver_t amount)  { }
 
 	virtual EnchantLevel_t getEnchantLevel()  { return 0;}
-	virtual void setEnchantLevel(EnchantLevel_t level) throw() { }
+	virtual void setEnchantLevel(EnchantLevel_t level)  { }
 
 	virtual Damage_t getBonusDamage()  { return 0; }
-	virtual void setBonusDamage(Damage_t BonusDamage) throw() {}
+	virtual void setBonusDamage(Damage_t BonusDamage)  {}
 
 	virtual int getCriticalBonus(void)  { return 0; }
 
@@ -747,17 +747,17 @@ public:
 	virtual Luck_t getLuck() const { return 0; }
 
 	virtual EnchantLevel_t getHeroOption()  { return 0;}
-	virtual void setHeroOption(EnchantLevel_t level) throw() { }
+	virtual void setHeroOption(EnchantLevel_t level)  { }
 
 	virtual EnchantLevel_t getHeroOptionAttr()  { return 0;}
-	virtual void setHeroOptionAttr(EnchantLevel_t level) throw() { }
+	virtual void setHeroOptionAttr(EnchantLevel_t level)  { }
 
-	EffectManager& getEffectManager() throw() { return m_EffectManager;}
+	EffectManager& getEffectManager()  { return m_EffectManager;}
 
     // set/remove/check flag
-    void setFlag(Effect::EffectClass Flag) throw() { m_Flag.set(Flag); }
-    void removeFlag(Effect::EffectClass Flag) throw() { m_Flag.reset(Flag); }
-    bool isFlag(Effect::EffectClass Flag) throw() { return m_Flag.test(Flag); }
+    void setFlag(Effect::EffectClass Flag)  { m_Flag.set(Flag); }
+    void removeFlag(Effect::EffectClass Flag)  { m_Flag.reset(Flag); }
+    bool isFlag(Effect::EffectClass Flag)  { return m_Flag.test(Flag); }
 
 	virtual const list<OptionType_t>& getDefaultOptions(void) ;
 

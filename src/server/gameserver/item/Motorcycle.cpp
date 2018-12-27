@@ -24,7 +24,7 @@ Mutex    Motorcycle::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Motorcycle::Motorcycle()
-	throw()
+	
 : m_ItemType(0), m_Durability(0), m_pInventory(NULL)
 {
 }
@@ -60,7 +60,7 @@ Motorcycle::Motorcycle(ItemType_t itemType, const list<OptionType_t>& optionType
 }
 
 Motorcycle::~Motorcycle()
-	throw()
+	
 {
 	SAFE_DELETE(m_pInventory);
 }
@@ -196,7 +196,7 @@ void Motorcycle::save(const string & ownerID, Storage storage, StorageID_t stora
 // get debug string
 //--------------------------------------------------------------------------------
 string Motorcycle::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -257,7 +257,7 @@ Weight_t Motorcycle::getWeight() const
 // get debug string
 //--------------------------------------------------------------------------------
 string MotorcycleInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

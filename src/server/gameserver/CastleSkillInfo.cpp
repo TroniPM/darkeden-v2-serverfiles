@@ -45,7 +45,7 @@ string CastleSkillInfo::toString() const
 //////////////////////////////////////////////////////////////////////////////
 
 CastleSkillInfoManager::CastleSkillInfoManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -53,7 +53,7 @@ CastleSkillInfoManager::CastleSkillInfoManager()
 }
 
 CastleSkillInfoManager::~CastleSkillInfoManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -164,7 +164,7 @@ ZoneID_t CastleSkillInfoManager::getZoneID( SkillType_t SkillType ) const
 }
 
 string CastleSkillInfoManager::toString() const
-	throw()
+	
 {
 	__BEGIN_TRY
 

@@ -20,21 +20,21 @@ OustersEXPInfoManager* g_pOustersEXPInfoManager = NULL;
 ////////////////////////////////////////////////////////////////////////////////
 
 OustersEXPInfo::OustersEXPInfo()
-	throw()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 OustersEXPInfo::~OustersEXPInfo()
-	throw()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
 string OustersEXPInfo::toString() const
-	throw()
+	
 {
 	__BEGIN_TRY
 	
@@ -55,7 +55,7 @@ string OustersEXPInfo::toString() const
 ////////////////////////////////////////////////////////////////////////////////
 
 OustersEXPInfoManager::OustersEXPInfoManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -66,7 +66,7 @@ OustersEXPInfoManager::OustersEXPInfoManager()
 }
 
 OustersEXPInfoManager::~OustersEXPInfoManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -175,7 +175,7 @@ OustersEXPInfo* OustersEXPInfoManager::getOustersEXPInfo(uint  OustersEXPType)
 }
 
 string OustersEXPInfoManager::toString() const
-	throw()
+	
 {
 	__BEGIN_TRY
 

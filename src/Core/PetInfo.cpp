@@ -25,7 +25,7 @@ PetInfo::PetInfo()
 //#endif
 }
 
-void PetInfo::read(SocketInputStream& iStream) throw(ProtocolException, Error)
+void PetInfo::read(SocketInputStream& iStream) 
 {
 	__BEGIN_TRY
 

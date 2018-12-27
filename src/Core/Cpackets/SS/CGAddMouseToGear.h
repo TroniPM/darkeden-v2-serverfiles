@@ -30,11 +30,11 @@ public:
 	string toString() ;
 	
 public:
-	ObjectID_t getObjectID() throw() { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 	SlotID_t getSlotID()  { return m_SlotID; }
-	void setSlotID(SlotID_t SlotID) throw() { m_SlotID = SlotID; }
+	void setSlotID(SlotID_t SlotID)  { m_SlotID = SlotID; }
 
 private:
 	ObjectID_t m_ObjectID;
@@ -49,7 +49,7 @@ private:
 class CGAddMouseToGearFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGAddMouseToGear(); }
+	Packet* createPacket()  { return new CGAddMouseToGear(); }
 	string getPacketName()  { return "CGAddMouseToGear"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_ADD_MOUSE_TO_GEAR; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + szSlotID; }

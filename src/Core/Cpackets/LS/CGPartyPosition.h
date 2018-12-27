@@ -91,16 +91,16 @@ class CGPartyPositionFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGPartyPositionFactory() throw() {}
+	CGPartyPositionFactory()  {}
 	
 	// destructor
-	virtual ~CGPartyPositionFactory() throw() {}
+	virtual ~CGPartyPositionFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGPartyPosition(); }
+	Packet* createPacket()  { return new CGPartyPosition(); }
 
 	// get packet name
 	string getPacketName()  { return "CGPartyPosition"; }

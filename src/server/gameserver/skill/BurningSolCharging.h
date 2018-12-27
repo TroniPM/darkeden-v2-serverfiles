@@ -16,8 +16,8 @@
 class BurningSolCharging : public SkillHandler 
 {
 public:
-	BurningSolCharging() throw() {}
-	~BurningSolCharging() throw() {}
+	BurningSolCharging()  {}
+	~BurningSolCharging()  {}
 	
 public:
     string getSkillHandlerName()  { return "BurningSolCharging"; }

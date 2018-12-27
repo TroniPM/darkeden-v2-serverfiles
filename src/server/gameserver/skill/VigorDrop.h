@@ -16,8 +16,8 @@
 class VigorDrop : public SkillHandler 
 {
 public:
-	VigorDrop() throw() {}
-	~VigorDrop() throw() {}
+	VigorDrop()  {}
+	~VigorDrop()  {}
 	
 public:
     string getSkillHandlerName()  { return "VigorDrop"; }

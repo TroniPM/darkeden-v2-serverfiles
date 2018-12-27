@@ -64,7 +64,7 @@ class LCVersionCheckOKFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new LCVersionCheckOK(); }
+	Packet* createPacket()  { return new LCVersionCheckOK(); }
 
 	// get packet name
 	string getPacketName()  { return "LCVersionCheckOK"; }

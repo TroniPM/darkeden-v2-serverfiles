@@ -67,7 +67,7 @@ public :
 	// use pthread_attr_t pointer instead.
 	// (pthread_attr_t 에 대해 assignment 가 지원되지 않을 가능성 있음)
 	//
-	pthread_attr_t * getAttr () throw () { return &attr; }
+	pthread_attr_t * getAttr ()  { return &attr; }
 
 	// is thread attribute detached state?
 	bool isDetached ()  { return getDetachState() == PTHREAD_CREATE_DETACHED; }

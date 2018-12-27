@@ -26,17 +26,17 @@ public:
 	virtual ~MotorcycleBox() ;
 
 public:
-	Motorcycle* getMotorcycle() throw() { return m_pMotorcycle; }
-	void setMotorcycle(Motorcycle* pMotorcycle) throw() { m_pMotorcycle = pMotorcycle; }
+	Motorcycle* getMotorcycle()  { return m_pMotorcycle; }
+	void setMotorcycle(Motorcycle* pMotorcycle)  { m_pMotorcycle = pMotorcycle; }
 
 	Zone* getZone()  { return m_pZone; }
-	void setZone(Zone* pZone) throw() { m_pZone = pZone; }
+	void setZone(Zone* pZone)  { m_pZone = pZone; }
 
 	ZoneCoord_t getX()  { return m_X; }
-	void setX(ZoneCoord_t X) throw() { m_X = X; }
+	void setX(ZoneCoord_t X)  { m_X = X; }
 
 	ZoneCoord_t getY()  { return m_Y; }
-	void setY(ZoneCoord_t Y) throw() { m_Y = Y; }
+	void setY(ZoneCoord_t Y)  { m_Y = Y; }
 
 	ItemID_t getItemID()  { return m_pMotorcycle->getItemID(); }
 

@@ -24,7 +24,7 @@ Mutex    VampireNecklace::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 VampireNecklace::VampireNecklace()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
@@ -33,7 +33,7 @@ VampireNecklace::VampireNecklace()
 }
 
 VampireNecklace::VampireNecklace(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_ItemType(itemType), m_OptionType(optionType), m_Durability(0)
 {
 	setItemType(itemType);
@@ -178,7 +178,7 @@ void VampireNecklace::save(const string & ownerID, Storage storage, StorageID_t 
 // get debug string
 //--------------------------------------------------------------------------------
 string VampireNecklace::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -263,7 +263,7 @@ Protection_t VampireNecklace::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string VampireNecklaceInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

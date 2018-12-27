@@ -51,9 +51,9 @@ public: // initializing related methods
 
 
 public: // memory related methods
-	void addGuild(Guild* pGuild) throw(DuplicatedException);
-	void addGuild_NOBLOCKED(Guild* pGuild) throw(DuplicatedException);
-	void deleteGuild(GuildID_t id) throw(NoSuchElementException);
+	void addGuild(Guild* pGuild) ;
+	void addGuild_NOBLOCKED(Guild* pGuild) ;
+	void deleteGuild(GuildID_t id) ;
 	Guild* getGuild(GuildID_t id) ;
 	Guild* getGuild_NOBLOCKED(GuildID_t id) ;
 
@@ -63,7 +63,7 @@ public: // memory related methods
 
 public: // misc methods
 	ushort getGuildSize()  { return m_Guilds.size(); }
-	HashMapGuild& getGuilds() throw() { return m_Guilds; }
+	HashMapGuild& getGuilds()  { return m_Guilds; }
 	const HashMapGuild& getGuilds_const()  { return m_Guilds; }
 
 #ifdef __SHARED_SERVER__

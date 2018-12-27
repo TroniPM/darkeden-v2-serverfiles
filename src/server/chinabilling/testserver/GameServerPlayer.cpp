@@ -98,7 +98,7 @@ GameServerPlayer::~GameServerPlayer ()
 
 
 void GameServerPlayer::processInput()
-	throw ( IOException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -115,7 +115,7 @@ void GameServerPlayer::processInput()
 
 
 void GameServerPlayer::processOutput()
-	throw ( IOException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -263,7 +263,7 @@ void GameServerPlayer::processCommand ()
 //
 //////////////////////////////////////////////////////////////////////
 void GameServerPlayer::sendPacket ( Packet * pPacket )
-	throw ( ProtocolException , Error )
+	
 {
 	__BEGIN_TRY
 
@@ -318,7 +318,7 @@ void GameServerPlayer::disconnect ( bool bDisconnected )
 // set socket
 //////////////////////////////////////////////////////////////////////
 void GameServerPlayer::setSocket ( Socket * pSocket )
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -339,7 +339,7 @@ void GameServerPlayer::setSocket ( Socket * pSocket )
 }
 
 void GameServerPlayer::executeIntervalValidation( CBillingPacketHeader& header, CBillingPacketRequestIntervalValidationBody& body )
-	throw ( IOException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -364,7 +364,7 @@ void GameServerPlayer::executeIntervalValidation( CBillingPacketHeader& header, 
 }
 
 void GameServerPlayer::executeLogin( CBillingPacketHeader& header, CBillingPacketRequestLoginBody& body )
-	throw ( IOException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -395,7 +395,7 @@ void GameServerPlayer::executeLogin( CBillingPacketHeader& header, CBillingPacke
 	__END_CATCH
 }
 void GameServerPlayer::executeMinusPoint( CBillingPacketHeader& header, CBillingPacketRequestMinusPointBody& body )
-	throw ( IOException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -424,7 +424,7 @@ void GameServerPlayer::executeMinusPoint( CBillingPacketHeader& header, CBilling
 	__END_CATCH
 }
 void GameServerPlayer::executeMinusMinute( CBillingPacketHeader& header, CBillingPacketRequestMinusMinuteBody& body )
-	throw ( IOException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -452,7 +452,7 @@ void GameServerPlayer::executeMinusMinute( CBillingPacketHeader& header, CBillin
 	__END_CATCH
 }
 void GameServerPlayer::executeLogout( CBillingPacketHeader& header, CBillingPacketRequestLogoutBody& body )
-throw ( IOException, Error )
+
 {
 	__BEGIN_TRY
 

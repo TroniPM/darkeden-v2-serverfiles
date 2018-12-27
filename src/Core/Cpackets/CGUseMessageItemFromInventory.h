@@ -34,7 +34,7 @@ public:
 	
 public:
 	const string& getMessage()  { return m_Message; }
-	void setMessage(const string& msg) throw() { m_Message = msg; }
+	void setMessage(const string& msg)  { m_Message = msg; }
 
 private:
 	string m_Message;
@@ -48,7 +48,7 @@ private:
 class CGUseMessageItemFromInventoryFactory : public CGUseItemFromInventoryFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGUseMessageItemFromInventory(); }
+	Packet* createPacket()  { return new CGUseMessageItemFromInventory(); }
 	string getPacketName()  { return "CGUseMessageItemFromInventory"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_USE_MESSAGE_ITEM_FROM_INVENTORY; }
 	PacketSize_t getPacketMaxSize()  

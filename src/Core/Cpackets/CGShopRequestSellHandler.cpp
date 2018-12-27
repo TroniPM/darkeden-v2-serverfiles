@@ -42,7 +42,7 @@
 // 일반 아이템과 모터 사이클 처리 부분으로 분기한다.
 //////////////////////////////////////////////////////////////////////////////
 void CGShopRequestSellHandler::execute (CGShopRequestSell* pPacket , Player* pPlayer)
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -122,7 +122,7 @@ void CGShopRequestSellHandler::execute (CGShopRequestSell* pPacket , Player* pPl
 //
 //////////////////////////////////////////////////////////////////////////////
 void CGShopRequestSellHandler::executeNormal (CGShopRequestSell* pPacket , Player* pPlayer)
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -364,7 +364,7 @@ void CGShopRequestSellHandler::executeNormal (CGShopRequestSell* pPacket , Playe
 //
 //////////////////////////////////////////////////////////////////////////////
 void CGShopRequestSellHandler::executeMotorcycle (CGShopRequestSell* pPacket , Player* pPlayer)
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -507,7 +507,7 @@ void CGShopRequestSellHandler::executeMotorcycle (CGShopRequestSell* pPacket , P
 //
 //////////////////////////////////////////////////////////////////////////////
 void CGShopRequestSellHandler::executeOpAllSkull (CGShopRequestSell* pPacket , Player* pPlayer)
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -590,7 +590,7 @@ void CGShopRequestSellHandler::executeOpAllSkull (CGShopRequestSell* pPacket , P
 }
 
 void CGShopRequestSellHandler::executeOpSwapAdvancementItem(CGShopRequestSell* pPacket, Player* pPlayer)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1041,7 +1041,7 @@ void CGShopRequestSellHandler::executeOpSwapAdvancementItem(CGShopRequestSell* p
 //
 //////////////////////////////////////////////////////////////////////////////
 void CGShopRequestSellHandler::sendFailPacket (CGShopRequestSell* pPacket , Player* pPlayer)
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 

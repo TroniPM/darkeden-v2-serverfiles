@@ -24,13 +24,13 @@ Mutex    Dermis::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 Dermis::Dermis()
-	throw()
+	
 {
 	setItemType(0);
 }
 
 Dermis::Dermis(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	setItemType(itemType);
 	setOptionType(optionType);
@@ -150,7 +150,7 @@ void Dermis::save(const string & ownerID, Storage storage, StorageID_t storageID
 // get debug string
 //--------------------------------------------------------------------------------
 string Dermis::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -169,7 +169,7 @@ string Dermis::toString() const
 // get debug string
 //--------------------------------------------------------------------------------
 string DermisInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

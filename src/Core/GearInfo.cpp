@@ -19,7 +19,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 GearInfo::GearInfo () 
-     throw ()
+     
 {
 	__BEGIN_TRY
 	m_ListNum = 0;
@@ -31,7 +31,7 @@ GearInfo::GearInfo ()
 // destructor
 //////////////////////////////////////////////////////////////////////
 GearInfo::~GearInfo () 
-    throw ()
+    
 {
 	__BEGIN_TRY
 
@@ -50,7 +50,7 @@ GearInfo::~GearInfo ()
 // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
 //////////////////////////////////////////////////////////////////////
 void GearInfo::read ( SocketInputStream & iStream ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -91,7 +91,7 @@ void GearInfo::write ( SocketOutputStream & oStream )
 // getSize
 //--------------------------------------------------------------------
 PacketSize_t GearInfo::getSize()
-	throw()
+	
 {
 
 	PacketSize_t PacketSize = szBYTE;

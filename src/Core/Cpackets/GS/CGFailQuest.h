@@ -68,16 +68,16 @@ class CGFailQuestFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGFailQuestFactory() throw() {}
+	CGFailQuestFactory()  {}
 	
 	// destructor
-	virtual ~CGFailQuestFactory() throw() {}
+	virtual ~CGFailQuestFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGFailQuest(); }
+	Packet* createPacket()  { return new CGFailQuest(); }
 
 	// get packet name
 	string getPacketName()  { return "CGFailQuest"; }

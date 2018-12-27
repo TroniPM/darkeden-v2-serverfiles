@@ -16,8 +16,8 @@
 class SharpHail : public SkillHandler 
 {
 public:
-	SharpHail() throw() {}
-	~SharpHail() throw() {}
+	SharpHail()  {}
+	~SharpHail()  {}
 	
 public:
     string getSkillHandlerName()  { return "SharpHail"; }

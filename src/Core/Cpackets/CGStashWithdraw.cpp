@@ -7,7 +7,7 @@
 #include "CGStashWithdraw.h"
 
 void CGStashWithdraw::read (SocketInputStream & iStream) 
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY
 		
@@ -17,7 +17,7 @@ void CGStashWithdraw::read (SocketInputStream & iStream)
 }
 
 void CGStashWithdraw::write (SocketOutputStream & oStream) const 
-     throw (ProtocolException , Error)
+     
 {
 	__BEGIN_TRY
 
@@ -27,7 +27,7 @@ void CGStashWithdraw::write (SocketOutputStream & oStream) const
 }
 
 void CGStashWithdraw::execute (Player* pPlayer) 
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY
 

@@ -59,11 +59,11 @@ public:
 
 	// get / set Code
 	BYTE getCode()  { return m_Code; }
-	void setCode(BYTE code) throw() { m_Code = code; }
+	void setCode(BYTE code)  { m_Code = code; }
 
 	// get / set Code
 	uint getValue()  { return m_Value; }
-	void setValue(uint value) throw() { m_Value = value; }
+	void setValue(uint value)  { m_Value = value; }
 
 private :
 	
@@ -87,7 +87,7 @@ class CGRequestInfoFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGRequestInfo(); }
+	Packet* createPacket()  { return new CGRequestInfo(); }
 
 	// get packet name
 	string getPacketName()  { return "CGRequestInfo"; }

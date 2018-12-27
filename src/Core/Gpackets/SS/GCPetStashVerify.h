@@ -28,8 +28,8 @@ enum
 class GCPetStashVerify : public Packet 
 {
 public:
-	GCPetStashVerify() throw() { m_Code = PET_STASH_OK; }
-	virtual ~GCPetStashVerify() throw() {}
+	GCPetStashVerify()  { m_Code = PET_STASH_OK; }
+	virtual ~GCPetStashVerify()  {}
 
 public:
 	void read(SocketInputStream & iStream) ;
@@ -43,7 +43,7 @@ public:
 	
 public:
 	BYTE getCode(void)  { return m_Code;}
-	void setCode(BYTE code) throw() { m_Code = code;}
+	void setCode(BYTE code)  { m_Code = code;}
 
 private: 
 	BYTE m_Code;
@@ -57,7 +57,7 @@ private:
 class GCPetStashVerifyFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCPetStashVerify(); }
+	Packet* createPacket()  { return new GCPetStashVerify(); }
 	string getPacketName()  { return "GCPetStashVerify"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_PET_STASH_VERIFY; }
 	PacketSize_t getPacketMaxSize()  { return szBYTE; }

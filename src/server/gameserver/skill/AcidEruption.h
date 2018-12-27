@@ -16,8 +16,8 @@
 class AcidEruption : public SkillHandler 
 {
 public:
-	AcidEruption() throw() {}
-	~AcidEruption() throw() {}
+	AcidEruption()  {}
+	~AcidEruption()  {}
 	
 public:
     string getSkillHandlerName()  { return "AcidEruption"; }

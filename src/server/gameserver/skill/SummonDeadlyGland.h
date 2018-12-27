@@ -16,8 +16,8 @@
 class SummonDeadlyGland : public SkillHandler 
 {
 public:
-	SummonDeadlyGland() throw() {}
-	~SummonDeadlyGland() throw() {}
+	SummonDeadlyGland()  {}
+	~SummonDeadlyGland()  {}
 	
 public:
     string getSkillHandlerName()  { return "SummonDeadlyGland"; }

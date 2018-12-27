@@ -59,7 +59,7 @@ void ActionInitPartnerWaitingManager::execute (Creature * pCreature1 , Creature 
 // get debug string
 ////////////////////////////////////////////////////////////////////////////////
 string ActionInitPartnerWaitingManager::toString () const 
-	throw ()
+	
 {
 	__BEGIN_TRY
 

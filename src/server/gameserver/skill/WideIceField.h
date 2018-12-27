@@ -16,8 +16,8 @@
 class WideIceField : public SkillHandler 
 {
 public:
-	WideIceField() throw() { }
-	~WideIceField() throw() {}
+	WideIceField()  { }
+	~WideIceField()  {}
 	
 public:
     string getSkillHandlerName()  { return "WideIceField"; }

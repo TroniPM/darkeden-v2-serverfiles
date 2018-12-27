@@ -57,11 +57,11 @@ public:
 
 	// get/set guildID
 	GuildID_t getGuildID()  { return m_GuildID; }
-	void setGuildID( GuildID_t guildID ) throw() { m_GuildID = guildID; }
+	void setGuildID( GuildID_t guildID )  { m_GuildID = guildID; }
 
 	// get/set GuildState
 	GuildState_t getGuildState()  { return m_GuildState; }
-	void setGuildState( GuildState_t guildState ) throw() { m_GuildState = guildState; }
+	void setGuildState( GuildState_t guildState )  { m_GuildState = guildState; }
 
 private :
 
@@ -87,7 +87,7 @@ class SGModifyGuildOKFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new SGModifyGuildOK(); }
+	Packet* createPacket()  { return new SGModifyGuildOK(); }
 
 	// get packet name
 	string getPacketName()  { return "SGModifyGuildOK"; }

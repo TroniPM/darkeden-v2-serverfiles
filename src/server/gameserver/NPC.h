@@ -88,24 +88,24 @@ public:
 	bool isOusters()  { return(m_Race == NPC_RACE_OUSTERS) ? true : false;}
 
 	SpriteType_t getSpriteType()  { return m_SpriteType; } 
-	void setSpriteType(SpriteType_t spriteType) throw() { m_SpriteType = spriteType; }
+	void setSpriteType(SpriteType_t spriteType)  { m_SpriteType = spriteType; }
 
 	const string& getName()  { return m_Name; }
-	void setName(const string & name) throw() { m_Name = name; }
+	void setName(const string & name)  { m_Name = name; }
 
 	NPCID_t getNPCID()  { return m_NPCID;}
-	void setNPCID(NPCID_t NPCID) throw() { m_NPCID = NPCID;}
+	void setNPCID(NPCID_t NPCID)  { m_NPCID = NPCID;}
 
 	Color_t getMainColor()  { return m_MainColor; }
-	void setMainColor(Color_t color) throw() { m_MainColor = color; }
+	void setMainColor(Color_t color)  { m_MainColor = color; }
 
 	Color_t getSubColor()  { return m_SubColor; }
-	void setSubColor(Color_t color) throw() { m_SubColor = color; }
+	void setSubColor(Color_t color)  { m_SubColor = color; }
 
-	Inventory* getInventory() throw() { return m_pInventory; }
-	void setInventory(Inventory* pInventory) throw() { m_pInventory = pInventory; }
+	Inventory* getInventory()  { return m_pInventory; }
+	void setInventory(Inventory* pInventory)  { m_pInventory = pInventory; }
 
-	TriggerManager & getTriggerManager() throw() { return m_TriggerManager; }
+	TriggerManager & getTriggerManager()  { return m_TriggerManager; }
 	const TriggerManager & getTriggerManager()  { return m_TriggerManager; }
 
 	bool isShowInMinimap(void) const { return m_bShowInMinimap; }

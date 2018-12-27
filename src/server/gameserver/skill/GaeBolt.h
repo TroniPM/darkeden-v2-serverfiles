@@ -16,8 +16,8 @@
 class GaeBolt : public SkillHandler 
 {
 public:
-	GaeBolt() throw() { }
-	~GaeBolt() throw() {}
+	GaeBolt()  { }
+	~GaeBolt()  {}
 	
 public:
     string getSkillHandlerName()  { return "GaeBolt"; }

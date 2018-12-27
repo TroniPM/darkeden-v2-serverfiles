@@ -131,7 +131,7 @@ void EffectParalyze::unaffect()
 }
 
 string EffectParalyze::toString() const 
-	throw()
+	
 {
 	__BEGIN_TRY
 

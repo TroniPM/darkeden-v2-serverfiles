@@ -46,10 +46,10 @@ public :
 	void clear();
 	
 	// add info
-	void addGameWorldInfo ( GameWorldInfo * pGameWorldInfo ) throw ( DuplicatedException );
+	void addGameWorldInfo ( GameWorldInfo * pGameWorldInfo ) ;
 	
 	// delete info
-	void deleteGameWorldInfo ( const WorldID_t WorldID ) throw ( NoSuchElementException );
+	void deleteGameWorldInfo ( const WorldID_t WorldID ) ;
 	
 	// get GameWorldInfo by WorldID
 	GameWorldInfo * getGameWorldInfo ( const WorldID_t WorldID ) ;

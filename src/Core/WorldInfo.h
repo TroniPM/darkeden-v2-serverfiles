@@ -45,7 +45,7 @@ public :
 	// 최적화시, 미리 계산된 정수를 사용한다.
 	PacketSize_t getSize ();
 
-	static uint getMaxSize() throw() {
+	static uint getMaxSize()  {
 		return (szBYTE + szBYTE + 20 + szBYTE)* 37;
 	}
 
@@ -54,15 +54,15 @@ public :
 
 	// get / set ID
 	BYTE getID()  { return m_ID; }
-	void setID(WorldID_t ID) throw() { m_ID = ID; }
+	void setID(WorldID_t ID)  { m_ID = ID; }
 
 	// get / set Name
 	string getName()  { return m_Name; }
-	void setName(string Name) throw() { m_Name = Name; }
+	void setName(string Name)  { m_Name = Name; }
 
 	// get / set  Stat
 	BYTE getStat()  { return m_Stat; }
-	void setStat(BYTE Stat) throw() { m_Stat = Stat; }
+	void setStat(BYTE Stat)  { m_Stat = Stat; }
 
 private :
 

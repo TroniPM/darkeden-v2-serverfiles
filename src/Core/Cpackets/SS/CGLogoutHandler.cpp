@@ -38,7 +38,7 @@
 // 크리처와 아이템 정보를 DB에 저장한 후, 접속을 종료한다.
 //////////////////////////////////////////////////////////////////////////////
 void CGLogoutHandler::execute (CGLogout* pPacket , Player* pPlayer)
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 

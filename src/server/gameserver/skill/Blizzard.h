@@ -16,8 +16,8 @@
 class Blizzard : public SkillHandler 
 {
 public:
-	Blizzard() throw() {}
-	~Blizzard() throw() {}
+	Blizzard()  {}
+	~Blizzard()  {}
 	
 public:
     string getSkillHandlerName()  { return "Blizzard"; }

@@ -16,8 +16,8 @@
 class TurnUndead : public SkillHandler 
 {
 public:
-	TurnUndead() throw() {}
-	~TurnUndead() throw() {}
+	TurnUndead()  {}
+	~TurnUndead()  {}
 	
 public:
     string getSkillHandlerName()  { return "TurnUndead"; }

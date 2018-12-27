@@ -30,21 +30,21 @@ public:
 	virtual void create(const string & ownerID);
 
 	SkillType_t getSkillType()  { return m_SkillType; }
-	void setSkillType(SkillType_t Type) throw() { m_SkillType = Type; }
+	void setSkillType(SkillType_t Type)  { m_SkillType = Type; }
 
-	void setExp(Exp_t Exp) throw() { m_Exp = Exp; }
-	Exp_t getExp() throw() { return m_Exp; }
+	void setExp(Exp_t Exp)  { m_Exp = Exp; }
+	Exp_t getExp()  { return m_Exp; }
 
-	void setExpLevel(ExpLevel_t ExpLevel) throw() { m_ExpLevel = ExpLevel; }
-	ExpLevel_t getExpLevel() throw() { return m_ExpLevel; }
+	void setExpLevel(ExpLevel_t ExpLevel)  { m_ExpLevel = ExpLevel; }
+	ExpLevel_t getExpLevel()  { return m_ExpLevel; }
 
-	Turn_t getInterval() throw() { return m_Interval; }
-	void setInterval(Turn_t Interval) throw() { m_Interval = Interval; }
+	Turn_t getInterval()  { return m_Interval; }
+	void setInterval(Turn_t Interval)  { m_Interval = Interval; }
 
-	Turn_t getCastingTime() throw() { return m_CastingTime; }
-	void setCastingTime(Turn_t CastingTime) throw() { m_CastingTime = CastingTime; }
+	Turn_t getCastingTime()  { return m_CastingTime; }
+	void setCastingTime(Turn_t CastingTime)  { m_CastingTime = CastingTime; }
 
-	Timeval getRunTime() throw() { return m_runTime; }
+	Timeval getRunTime()  { return m_runTime; }
 	void setRunTime() ;
 	void setRunTime(Turn_t delay, bool bSave=true) ;
 
@@ -53,8 +53,8 @@ public:
 
 	// 사용가능할 경우 true
 	// 사용 불가능할 경우 false
-	void setDisable() throw() { m_Enable = false; }
-	void setEnable() throw() { m_Enable = true; }
+	void setDisable()  { m_Enable = false; }
+	void setEnable()  { m_Enable = true; }
 	bool canUse()  { return m_Enable; } 
 
 	// 다음 캐스팅이 가능할때까지 남은 시간

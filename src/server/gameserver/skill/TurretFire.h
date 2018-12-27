@@ -16,8 +16,8 @@
 class TurretFire : public SkillHandler 
 {
 public:
-	TurretFire() throw() { }
-	~TurretFire() throw() {}
+	TurretFire()  { }
+	~TurretFire()  {}
 	
 public:
     string getSkillHandlerName()  { return "TurretFire"; }

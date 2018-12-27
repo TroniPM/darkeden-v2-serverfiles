@@ -18,8 +18,8 @@ class GCGuildResponse : public Packet
 {
 
 public:
-	GCGuildResponse() throw() { m_Code = 0; m_Parameter = 0;}
-	virtual ~GCGuildResponse() throw() {}
+	GCGuildResponse()  { m_Code = 0; m_Parameter = 0;}
+	virtual ~GCGuildResponse()  {}
 
 public:
 	void read(SocketInputStream & iStream) ;
@@ -33,10 +33,10 @@ public:
 	
 public:
 	BYTE getCode(void)  { return m_Code;}
-	void setCode(WORD code) throw() { m_Code = code;}
+	void setCode(WORD code)  { m_Code = code;}
 
 	uint getParameter(void)  { return m_Parameter; }
-	void setParameter(uint parameter) throw() { m_Parameter = parameter; }
+	void setParameter(uint parameter)  { m_Parameter = parameter; }
 
 private: 
 	WORD m_Code;
@@ -52,7 +52,7 @@ private:
 class GCGuildResponseFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCGuildResponse(); }
+	Packet* createPacket()  { return new GCGuildResponse(); }
 	string getPacketName()  { return "GCGuildResponse"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_GUILD_RESPONSE; }
 	PacketSize_t getPacketMaxSize()  { return szWORD + szuint; }

@@ -16,8 +16,8 @@
 class CyclingWarRock : public SkillHandler 
 {
 public:
-	CyclingWarRock() throw() {}
-	~CyclingWarRock() throw() {}
+	CyclingWarRock()  {}
+	~CyclingWarRock()  {}
 	
 public:
     string getSkillHandlerName()  { return "CyclingWarRock"; }

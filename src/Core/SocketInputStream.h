@@ -123,7 +123,7 @@ private :
 //public :
 	//WORD m_EncryptKey;
 	//BYTE* m_HashTable;
-	//void setKey(WORD EncryptKey, BYTE* HashTable) throw() {m_EncryptKey = EncryptKey; m_HashTable = HashTable; }
+	//void setKey(WORD EncryptKey, BYTE* HashTable)  {m_EncryptKey = EncryptKey; m_HashTable = HashTable; }
 	//WORD EncryptData(WORD EncryptKey, char* buf, int len) ;
 //end
 };
@@ -136,7 +136,7 @@ private :
 //////////////////////////////////////////////////////////////////////
 template<typename T>
 uint SocketInputStream::read ( T& buf ) 
-	//throw ( ProtocolException , Error )
+	//
 {
 	uint len = (uint)sizeof(T);
 

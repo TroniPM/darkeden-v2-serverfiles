@@ -16,8 +16,8 @@
 class HeterChakram: public SkillHandler 
 {
 public:
-	HeterChakram() throw() {}
-	~HeterChakram() throw() {}
+	HeterChakram()  {}
+	~HeterChakram()  {}
 	
 public:
     string getSkillHandlerName()  { return "HeterChakram"; }

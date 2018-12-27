@@ -16,8 +16,8 @@
 class Hallucination : public SkillHandler 
 {
 public:
-	Hallucination() throw() {}
-	~Hallucination() throw() {}
+	Hallucination()  {}
+	~Hallucination()  {}
 	
 public:
     string getSkillHandlerName()  { return "Hallucination"; }

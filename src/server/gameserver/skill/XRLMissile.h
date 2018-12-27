@@ -16,8 +16,8 @@
 class XRLMissile: public SkillHandler 
 {
 public:
-	XRLMissile() throw() {}
-	~XRLMissile() throw() {}
+	XRLMissile()  {}
+	~XRLMissile()  {}
 
 public:
     string getSkillHandlerName()  { return "XRLMissile"; }

@@ -38,17 +38,17 @@ public:
 	virtual string getObjectTableName()  { return "VampireWingItemObject"; }
 
 	virtual ItemType_t getItemType()  { return m_ItemType; }
-	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
+	virtual void setItemType(ItemType_t itemType)  { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() ;
 	virtual VolumeHeight_t getVolumeHeight() ;
 	virtual Weight_t getWeight() ;
 
 	virtual Color_t getBodyColor()  { return m_BodyColor; }
-	virtual void setBodyColor(Color_t BodyColor) throw() { m_BodyColor = BodyColor; }
+	virtual void setBodyColor(Color_t BodyColor)  { m_BodyColor = BodyColor; }
 
 	virtual Color_t getEffectColor()  { return m_EffectColor; }
-	virtual void setEffectColor(Color_t EffectColor) throw() { m_EffectColor = EffectColor; }
+	virtual void setEffectColor(Color_t EffectColor)  { m_EffectColor = EffectColor; }
 
 	bool    isStackable()  { return true; }
 
@@ -99,7 +99,7 @@ public:
 	virtual string getItemClassName()  { return "VampireWingItem"; }
 	
 public:
-	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new VampireWingItem(ItemType,OptionType); }
+	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType)  { return new VampireWingItem(ItemType,OptionType); }
 };
 
 

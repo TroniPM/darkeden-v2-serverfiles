@@ -16,8 +16,8 @@
 class JabbingVein : public SkillHandler 
 {
 public:
-	JabbingVein() throw() {}
-	~JabbingVein() throw() {}
+	JabbingVein()  {}
+	~JabbingVein()  {}
 
 public:
     string getSkillHandlerName()  { return "JabbingVein"; }

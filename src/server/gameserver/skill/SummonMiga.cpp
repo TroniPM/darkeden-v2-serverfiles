@@ -20,7 +20,7 @@
 
 #include "MonsterAI.h"
 
-SummonMiga::SummonMiga() throw()
+SummonMiga::SummonMiga() 
 {
 }
 

@@ -38,7 +38,7 @@ public:
 	virtual string getObjectTableName()  { return "QuestItemObject"; }
 
 	virtual ItemType_t getItemType()  { return m_ItemType; }
-	virtual void setItemType(ItemType_t itemType) throw() { m_ItemType = itemType; }
+	virtual void setItemType(ItemType_t itemType)  { m_ItemType = itemType; }
 
 	virtual VolumeWidth_t getVolumeWidth() ;
 	virtual VolumeHeight_t getVolumeHeight() ;
@@ -62,7 +62,7 @@ public:
 	virtual string toString() ;
 
 	Ratio_t getBonusRatio()  { return m_BonusRatio; }
-	void setBonusRatio(Ratio_t BonusRatio) throw() { m_BonusRatio = BonusRatio; }
+	void setBonusRatio(Ratio_t BonusRatio)  { m_BonusRatio = BonusRatio; }
 
 private :
 	Ratio_t    m_BonusRatio;
@@ -93,7 +93,7 @@ public:
 	virtual string getItemClassName()  { return "QuestItem"; }
 	
 public:
-	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType) throw() { return new QuestItem(ItemType,OptionType); }
+	virtual Item* createItem(ItemType_t ItemType, const list<OptionType_t>& OptionType)  { return new QuestItem(ItemType,OptionType); }
 };
 
 //////////////////////////////////////////////////////////////////////////////

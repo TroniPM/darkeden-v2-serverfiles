@@ -76,16 +76,16 @@ class CGUndisplayItemFactory : public PacketFactory {
 public:
 	
 	// constructor
-	CGUndisplayItemFactory() throw() {}
+	CGUndisplayItemFactory()  {}
 	
 	// destructor
-	virtual ~CGUndisplayItemFactory() throw() {}
+	virtual ~CGUndisplayItemFactory()  {}
 
 	
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CGUndisplayItem(); }
+	Packet* createPacket()  { return new CGUndisplayItem(); }
 
 	// get packet name
 	string getPacketName()  { return "CGUndisplayItem"; }

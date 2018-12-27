@@ -53,7 +53,7 @@ public:
 
 public:
 	ObjectID_t getTargetObjectID()  { return m_TargetObjectID; }
-	void setTargetObjectID(ObjectID_t id) throw() { m_TargetObjectID = id; }
+	void setTargetObjectID(ObjectID_t id)  { m_TargetObjectID = id; }
 
 	BYTE getCode()  { return m_Code; }
 	void setCode(BYTE code) { m_Code = code; }
@@ -74,7 +74,7 @@ private :
 class GCTradePrepareFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCTradePrepare(); }
+	Packet* createPacket()  { return new GCTradePrepare(); }
 	string getPacketName()  { return "GCTradePrepare"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_TRADE_PREPARE; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + szBYTE; }

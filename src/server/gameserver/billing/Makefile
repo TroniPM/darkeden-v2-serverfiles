@@ -183,7 +183,7 @@ CommonBillingPacket.o: CommonBillingPacket.cpp CommonBillingPacket.h \
  /home/darkeden/vs/src/Core/SocketOutputStream.h \
  /home/darkeden/vs/src/Core/PacketFactory.h BillingInfo.h \
  /home/darkeden/vs/src/Core/Assert.h \
- /home/darkeden/vs/src/Core/Properties.h /usr/include/STL/map \
+ /home/darkeden/vs/src/Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h /usr/include/netinet/in.h \
  /usr/include/stdint.h /usr/include/bits/wordsize.h \
@@ -327,7 +327,7 @@ BillingPlayer.o: BillingPlayer.cpp BillingPlayer.h \
  /home/darkeden/vs/src/Core/SocketOutputStream.h \
  /home/darkeden/vs/src/Core/Assert.h \
  /home/darkeden/vs/src/Core/Packet.h \
- /home/darkeden/vs/src/Core/Properties.h /usr/include/STL/map \
+ /home/darkeden/vs/src/Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h \
  /home/darkeden/vs/src/Core/PacketFactoryManager.h \
@@ -400,7 +400,7 @@ BillingPlayerManager.o: BillingPlayerManager.cpp \
  /home/darkeden/vs/src/Core/Player.h CommonBillingPacket.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  /home/darkeden/vs/src/Core/PacketFactory.h \
- /home/darkeden/vs/src/Core/Properties.h /usr/include/STL/map \
+ /home/darkeden/vs/src/Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h \
  /home/darkeden/vs/src/server/LogClient.h \

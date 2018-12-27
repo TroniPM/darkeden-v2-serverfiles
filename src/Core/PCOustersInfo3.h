@@ -32,11 +32,11 @@ public:
 	};
 
 public:
-	PCOustersInfo3 () throw () 
+	PCOustersInfo3 ()  
 	{
 	}
 
-	PCOustersInfo3 (const PCOustersInfo3 & oustersInfo) throw ()
+	PCOustersInfo3 (const PCOustersInfo3 & oustersInfo) 
 		: m_ObjectID(oustersInfo.m_ObjectID), m_Name(oustersInfo.m_Name), 
 		m_X(oustersInfo.m_X), m_Y(oustersInfo.m_Y), m_Dir(oustersInfo.m_Dir),
 		m_Sex(oustersInfo.m_Sex), m_CoatType(oustersInfo.m_CoatType), m_ArmType(oustersInfo.m_ArmType), m_SylphType(oustersInfo.m_SylphType),
@@ -81,7 +81,7 @@ public:
 	}
 
 	// get max size of object
-	static uint getMaxSize () throw ()
+	static uint getMaxSize () 
 	{
 		return szObjectID					// ObjectID
 			+ szBYTE + 20 					// 뱀파이어 이름
@@ -101,7 +101,7 @@ public:
 			+ szLevel;
 	}
 
-	PCOustersInfo3 & operator = (const PCOustersInfo3 & oustersInfo) throw ()
+	PCOustersInfo3 & operator = (const PCOustersInfo3 & oustersInfo) 
 	{
 		if (&oustersInfo == this)
 			return *this;
@@ -140,22 +140,22 @@ public:
 
 public:
 	ObjectID_t getObjectID ()  { return m_ObjectID; }
-	void setObjectID (ObjectID_t objectID) throw () { m_ObjectID = objectID; }
+	void setObjectID (ObjectID_t objectID)  { m_ObjectID = objectID; }
 
     string getName ()  { return m_Name; }
     void setName (const string & name)  { m_Name = name; Assert(m_Name != ""); }
 
 	Coord_t getX ()  { return m_X; }
-	void setX (Coord_t x) throw () { m_X = x; }
+	void setX (Coord_t x)  { m_X = x; }
 
 	Coord_t getY ()  { return m_Y; }
-	void setY (Coord_t y) throw () { m_Y = y; }
+	void setY (Coord_t y)  { m_Y = y; }
 
 	Dir_t getDir ()  { return m_Dir; }
-	void setDir (Dir_t dir) throw () { m_Dir = dir; }
+	void setDir (Dir_t dir)  { m_Dir = dir; }
 
 	Sex getSex ()  { return m_Sex; }
-	void setSex (Sex sex) throw () { m_Sex = sex; }
+	void setSex (Sex sex)  { m_Sex = sex; }
 	void setSex (const string & sex) 
 	{
 		if (sex == Sex2String[MALE]) 
@@ -167,52 +167,52 @@ public:
 	}
 
 	Color_t getCoatColor ()  { return m_Colors[OUSTERS_COLOR_COAT]; }
-	void setCoatColor (Color_t coatColor) throw () { m_Colors[OUSTERS_COLOR_COAT] = coatColor; }
+	void setCoatColor (Color_t coatColor)  { m_Colors[OUSTERS_COLOR_COAT] = coatColor; }
 
 	Color_t getHairColor ()  { return m_Colors[OUSTERS_COLOR_HAIR]; }
-	void setHairColor (Color_t hairColor) throw () { m_Colors[OUSTERS_COLOR_HAIR] = hairColor; }
+	void setHairColor (Color_t hairColor)  { m_Colors[OUSTERS_COLOR_HAIR] = hairColor; }
 
 	Color_t getArmColor ()  { return m_Colors[OUSTERS_COLOR_ARM]; }
-	void setArmColor (Color_t armColor) throw () { m_Colors[OUSTERS_COLOR_ARM] = armColor; }
+	void setArmColor (Color_t armColor)  { m_Colors[OUSTERS_COLOR_ARM] = armColor; }
 
 	Color_t getBootsColor ()  { return m_Colors[OUSTERS_COLOR_BOOTS]; }
-	void setBootsColor (Color_t bootsColor) throw () { m_Colors[OUSTERS_COLOR_BOOTS] = bootsColor; }
+	void setBootsColor (Color_t bootsColor)  { m_Colors[OUSTERS_COLOR_BOOTS] = bootsColor; }
 
 	BYTE getWingSylphType() { return m_WingSylphType; }
-	void setWingSylphType(BYTE Type) throw (){ m_WingSylphType = Type; }
+	void setWingSylphType(BYTE Type) { m_WingSylphType = Type; }
 
 	ItemType_t getWingItemType()  { return m_WingItemType; }
-	void setWingItemType(ItemType_t ItemType) throw() { m_WingItemType = ItemType; }
+	void setWingItemType(ItemType_t ItemType)  { m_WingItemType = ItemType; }
 
 	Color_t getWingBodyColor()  { return m_Colors[OUSTERS_COLOR_WINGBODY]; }
-	void setWingBodyColor(Color_t Color) throw () { m_Colors[OUSTERS_COLOR_WINGBODY] = Color; }
+	void setWingBodyColor(Color_t Color)  { m_Colors[OUSTERS_COLOR_WINGBODY] = Color; }
 
 	Color_t getWingEffectColor()  { return m_Colors[OUSTERS_COLOR_WINGEFFECT]; }
-	void setWingEffectColor(Color_t Color) throw () { m_Colors[OUSTERS_COLOR_WINGEFFECT] = Color; }
+	void setWingEffectColor(Color_t Color)  { m_Colors[OUSTERS_COLOR_WINGEFFECT] = Color; }
 
 	BYTE getMasterEffectColor() const { return m_MasterEffectColor; }
 	void setMasterEffectColor( BYTE color ) { m_MasterEffectColor = color; }
 
 	OustersCoatType getCoatType()  { return m_CoatType; }
-    void setCoatType(OustersCoatType CoatType) throw() { m_CoatType = CoatType; }
+    void setCoatType(OustersCoatType CoatType)  { m_CoatType = CoatType; }
 
 	OustersArmType getArmType()  { return m_ArmType; }
-    void setArmType(OustersArmType ArmType) throw() { m_ArmType = ArmType; }
+    void setArmType(OustersArmType ArmType)  { m_ArmType = ArmType; }
 
 	OustersSylphType getSylphType()  { return m_SylphType; }
-    void setSylphType(OustersSylphType SylphType) throw() { m_SylphType = SylphType; }
+    void setSylphType(OustersSylphType SylphType)  { m_SylphType = SylphType; }
 
 	HP_t getCurrentHP()  { return m_CurrentHP; }
-	void setCurrentHP(HP_t CurrentHP) throw() { m_CurrentHP = CurrentHP; }
+	void setCurrentHP(HP_t CurrentHP)  { m_CurrentHP = CurrentHP; }
 
 	HP_t getMaxHP()  { return m_MaxHP; }
-	void setMaxHP(HP_t MaxHP) throw() { m_MaxHP = MaxHP; }
+	void setMaxHP(HP_t MaxHP)  { m_MaxHP = MaxHP; }
 
 	Speed_t getAttackSpeed()  { return m_AttackSpeed; }
-	void setAttackSpeed(Speed_t AttackSpeed) throw() { m_AttackSpeed = AttackSpeed; }
+	void setAttackSpeed(Speed_t AttackSpeed)  { m_AttackSpeed = AttackSpeed; }
 
 	Alignment_t getAlignment()  { return m_Alignment; }
-	void setAlignment(Alignment_t Alignment)  throw() { m_Alignment = Alignment; }
+	void setAlignment(Alignment_t Alignment)   { m_Alignment = Alignment; }
 
 	BYTE getCompetence(void) const { return m_Competence; }
 	void setCompetence(BYTE competence) { m_Competence = competence; }
@@ -224,7 +224,7 @@ public:
 	void setUnionID(uint UnionID ) { m_UnionID = UnionID; }
 
 	Rank_t getRank ()  { return m_Rank; }
-	void setRank (Rank_t rank) throw () { m_Rank = rank; }
+	void setRank (Rank_t rank)  { m_Rank = rank; }
 
 	Level_t	getAdvancementLevel() const { return m_AdvancementLevel; }
 	void setAdvancementLevel( Level_t level ) { m_AdvancementLevel = level; }

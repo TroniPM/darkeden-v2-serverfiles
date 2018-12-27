@@ -16,8 +16,8 @@
 class InstallMine: public SkillHandler 
 {
 public:
-	InstallMine () throw () {}
-	~InstallMine () throw () {}
+	InstallMine ()  {}
+	~InstallMine ()  {}
 	
 public :
     string getSkillHandlerName ()  { return "InstallMine"; }

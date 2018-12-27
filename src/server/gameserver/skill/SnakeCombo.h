@@ -16,8 +16,8 @@
 class SnakeCombo : public SkillHandler 
 {
 public:
-	SnakeCombo() throw() {}
-	~SnakeCombo() throw() {}
+	SnakeCombo()  {}
+	~SnakeCombo()  {}
 	
 public:
     string getSkillHandlerName()  { return "SnakeCombo"; }

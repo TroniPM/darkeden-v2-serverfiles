@@ -33,7 +33,7 @@ public:
 class CGResurrectFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGResurrect(); }
+	Packet* createPacket()  { return new CGResurrect(); }
 	string getPacketName()  { return "CGResurrect"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_RESURRECT; }
 	PacketSize_t getPacketMaxSize()  { return 0; }

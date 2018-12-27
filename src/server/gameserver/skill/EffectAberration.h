@@ -31,7 +31,7 @@ public:
 
 public:
 	int  getRatio() const { return m_Ratio; }
-	void setRatio(int ratio) throw() { m_Ratio = ratio; }
+	void setRatio(int ratio)  { m_Ratio = ratio; }
 
 private:
 	int m_Ratio;

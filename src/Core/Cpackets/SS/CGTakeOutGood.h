@@ -30,8 +30,8 @@ public:
 	string toString() ;
 	
 public:
-	ObjectID_t getObjectID() throw() { return m_ObjectID; }
-	void setObjectID(ObjectID_t ObjectID) throw() { m_ObjectID = ObjectID; }
+	ObjectID_t getObjectID()  { return m_ObjectID; }
+	void setObjectID(ObjectID_t ObjectID)  { m_ObjectID = ObjectID; }
 
 private :
 	ObjectID_t m_ObjectID;
@@ -44,7 +44,7 @@ private :
 class CGTakeOutGoodFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGTakeOutGood(); }
+	Packet* createPacket()  { return new CGTakeOutGood(); }
 	string getPacketName()  { return "CGTakeOutGood"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_TAKE_OUT_GOOD; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID; }

@@ -27,10 +27,10 @@ public:
 	string toString() ;
 
 	DWORD getGiftID()  { return m_GiftID; }
-	void setGiftID(DWORD gID) throw() { m_GiftID = gID; }
+	void setGiftID(DWORD gID)  { m_GiftID = gID; }
 
 	string getName()  { return m_Name; }
-	void setName(const string & msg) throw() { m_Name = msg; }
+	void setName(const string & msg)  { m_Name = msg; }
 
 private:
 	DWORD		m_GiftID; // NPC's object id
@@ -47,7 +47,7 @@ private:
 class GCNotifyWinFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCNotifyWin(); }
+	Packet* createPacket()  { return new GCNotifyWin(); }
 	string getPacketName()  { return "GCNotifyWin"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_NOTIFY_WIN; }
 	PacketSize_t getPacketMaxSize()  { return szDWORD + szBYTE + 2048 ; }

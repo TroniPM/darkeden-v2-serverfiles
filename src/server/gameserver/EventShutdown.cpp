@@ -23,7 +23,7 @@
 //////////////////////////////////////////////////////////////////////////////
 
 EventShutdown::EventShutdown( GamePlayer* pGamePlayer )
-	throw ()
+	
 	:Event(pGamePlayer)
 {
 }
@@ -150,7 +150,7 @@ void EventShutdown::activate ()
 }
 
 string EventShutdown::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 	msg << "EventShutdown("

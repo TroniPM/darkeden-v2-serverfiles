@@ -18,7 +18,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 OustersSkillInfo::OustersSkillInfo () 
-     throw ()
+     
 {
 	__BEGIN_TRY
 	m_bLearnNewSkill = false;
@@ -31,7 +31,7 @@ OustersSkillInfo::OustersSkillInfo ()
 // destructor
 //////////////////////////////////////////////////////////////////////
 OustersSkillInfo::~OustersSkillInfo () 
-    throw ()
+    
 {
 	__BEGIN_TRY
 
@@ -51,7 +51,7 @@ OustersSkillInfo::~OustersSkillInfo ()
 // 입력스트림(버퍼)으로부터 데이타를 읽어서 패킷을 초기화한다.
 //////////////////////////////////////////////////////////////////////
 void OustersSkillInfo::read ( SocketInputStream & iStream ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		
@@ -94,7 +94,7 @@ void OustersSkillInfo::write ( SocketOutputStream & oStream )
 // getSize
 //--------------------------------------------------------------------
 PacketSize_t OustersSkillInfo::getSize()
-	throw()
+	
 {
 
 	PacketSize_t PacketSize = szBYTE + szBYTE;

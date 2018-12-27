@@ -33,7 +33,7 @@ public:
 	void setLevel(Level_t Level) ;
 
 	EffectClass getClientEffectClass()  { return m_ClientEffectClass; }
-	void setClientEffectClass(EffectClass effectClass) throw() { m_ClientEffectClass = effectClass; }
+	void setClientEffectClass(EffectClass effectClass)  { m_ClientEffectClass = effectClass; }
 
 private:
 	Level_t 		m_Level;				// 스킬 레벨

@@ -16,8 +16,8 @@
 class Destinies: public SkillHandler 
 {
 public:
-	Destinies() throw() {}
-	~Destinies() throw() {}
+	Destinies()  {}
+	~Destinies()  {}
 	
 public:
     string getSkillHandlerName()  { return "Destinies"; }

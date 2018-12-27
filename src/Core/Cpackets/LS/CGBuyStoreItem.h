@@ -31,14 +31,14 @@ public:
 	string toString() ;
 	
 public:
-	ObjectID_t getOwnerObjectID() throw() { return m_OwnerObjectID; }
-	void setOwnerObjectID(ObjectID_t ObjectID) throw() { m_OwnerObjectID = ObjectID; }
+	ObjectID_t getOwnerObjectID()  { return m_OwnerObjectID; }
+	void setOwnerObjectID(ObjectID_t ObjectID)  { m_OwnerObjectID = ObjectID; }
 
-	ObjectID_t getItemObjectID() throw() { return m_ItemObjectID; }
-	void setItemObjectID(ObjectID_t ObjectID) throw() { m_ItemObjectID = ObjectID; }
+	ObjectID_t getItemObjectID()  { return m_ItemObjectID; }
+	void setItemObjectID(ObjectID_t ObjectID)  { m_ItemObjectID = ObjectID; }
 
 	BYTE getIndex(void)  { return m_Index; }
-	void setIndex(BYTE index) throw() { m_Index = index;}
+	void setIndex(BYTE index)  { m_Index = index;}
 
 private:
 	ObjectID_t		m_OwnerObjectID;
@@ -56,7 +56,7 @@ private:
 class CGBuyStoreItemFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new CGBuyStoreItem(); }
+	Packet* createPacket()  { return new CGBuyStoreItem(); }
 	string getPacketName()  { return "CGBuyStoreItem"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_CG_BUY_STORE_ITEM; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID+szObjectID+szBYTE; }

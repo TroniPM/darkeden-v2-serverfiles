@@ -26,7 +26,7 @@ Mutex    OustersChakram::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 OustersChakram::OustersChakram()
-	throw()
+	
 {
 	setItemType(0);
 	setDurability(0);
@@ -34,7 +34,7 @@ OustersChakram::OustersChakram()
 }
 
 OustersChakram::OustersChakram(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 //: m_OptionType( optionType )
 {
 	setItemType(itemType);
@@ -176,7 +176,7 @@ void OustersChakram::save(const string & ownerID, Storage storage, StorageID_t s
 // get debug string
 //--------------------------------------------------------------------------------
 string OustersChakram::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -264,7 +264,7 @@ Damage_t OustersChakram::getMaxDamage() const
 //--------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------
 int OustersChakram::getCriticalBonus(void) const
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -278,7 +278,7 @@ int OustersChakram::getCriticalBonus(void) const
 // get debug string
 //--------------------------------------------------------------------------------
 string OustersChakramInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

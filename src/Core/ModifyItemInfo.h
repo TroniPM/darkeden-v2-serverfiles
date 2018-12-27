@@ -52,16 +52,16 @@ public :
 
 	// get / set ListNumber
 	BYTE getListNum()  { return m_ListNum; }
-	void setListNum(BYTE ListNum) throw() { m_ListNum = ListNum; }
+	void setListNum(BYTE ListNum)  { m_ListNum = ListNum; }
 
 	// add / delete / clear S List
 	void addListElement(ObjectID_t ObjectID, ModifyType List, DWORD Value) ; 
 
 	// ClearList
-	void clearList() throw() { m_SList.clear(); m_ListNum = 0; }
+	void clearList()  { m_SList.clear(); m_ListNum = 0; }
 
 	// pop front Element in Status List
-	DWORD popFrontListElement() throw() { DWORD StatusList = m_SList.front(); m_SList.pop_front(); return StatusList; }
+	DWORD popFrontListElement()  { DWORD StatusList = m_SList.front(); m_SList.pop_front(); return StatusList; }
 
 private :
 	

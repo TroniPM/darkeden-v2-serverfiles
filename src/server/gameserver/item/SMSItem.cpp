@@ -26,13 +26,13 @@ Mutex    SMSItem::m_Mutex;
 //////////////////////////////////////////////////////////////////////////////
 
 SMSItem::SMSItem()
-	throw()
+	
 {
 	setItemType(0);
 }
 
 SMSItem::SMSItem(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	setItemType(itemType);
 
@@ -148,7 +148,7 @@ void SMSItem::save(const string & ownerID, Storage storage, StorageID_t storageI
 }
 
 string SMSItem::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -195,7 +195,7 @@ Weight_t SMSItem::getWeight() const
 //////////////////////////////////////////////////////////////////////////////
 
 string SMSItemInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 	msg << "SMSItemInfo("

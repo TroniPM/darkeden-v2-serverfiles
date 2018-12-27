@@ -25,14 +25,14 @@ Mutex    WeaponZap::m_Mutex;
 // constructor
 //--------------------------------------------------------------------------------
 WeaponZap::WeaponZap()
-	throw()
+	
 //: m_ItemType(0), m_Durability(0)
 {
 	setItemType(0);
 }
 
 WeaponZap::WeaponZap(ItemType_t itemType, const list<OptionType_t>& optionType)
-	throw()
+	
 {
 	setItemType(itemType);
 	setOptionType(optionType);
@@ -170,7 +170,7 @@ void WeaponZap::save(const string & ownerID, Storage storage, StorageID_t storag
 // get debug string
 //--------------------------------------------------------------------------------
 string WeaponZap::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 
@@ -253,7 +253,7 @@ Protection_t WeaponZap::getProtectionBonus() const
 // get debug string
 //--------------------------------------------------------------------------------
 string WeaponZapInfo::toString() const 
-	throw()
+	
 {
 	StringStream msg;
 

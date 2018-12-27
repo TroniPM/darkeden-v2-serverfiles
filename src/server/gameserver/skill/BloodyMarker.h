@@ -16,8 +16,8 @@
 class BloodyMarker: public SkillHandler 
 {
 public:
-	BloodyMarker() throw() {}
-	~BloodyMarker() throw() {}
+	BloodyMarker()  {}
+	~BloodyMarker()  {}
 	
 public:
     string getSkillHandlerName()  { return "BloodyMarker"; }

@@ -17,7 +17,7 @@ class LandMineExplosion: public SkillHandler
 {
 public:
 	LandMineExplosion() ;
-	~LandMineExplosion() throw() {}
+	~LandMineExplosion()  {}
 	
 public:
     string getSkillHandlerName()  { return "LandMineExplosion"; }

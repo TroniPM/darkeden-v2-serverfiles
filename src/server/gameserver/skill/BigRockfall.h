@@ -16,8 +16,8 @@
 class BigRockfall : public SkillHandler 
 {
 public:
-	BigRockfall() throw() {}
-	~BigRockfall() throw() {}
+	BigRockfall()  {}
+	~BigRockfall()  {}
 	
 public:
     string getSkillHandlerName()  { return "BigRockfall"; }

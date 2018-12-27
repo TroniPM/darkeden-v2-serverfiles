@@ -45,13 +45,13 @@ public:
 
 public:
 	ObjectID_t getObjectID(void)  { return m_ObjectID; }
-	void setObjectID(ObjectID_t creatureID) throw() { m_ObjectID = creatureID; }
+	void setObjectID(ObjectID_t creatureID)  { m_ObjectID = creatureID; }
 
 	ScriptID_t getScriptID(void)  { return m_ScriptID; }
-	void setScriptID(ScriptID_t id) throw() { m_ScriptID = id; }
+	void setScriptID(ScriptID_t id)  { m_ScriptID = id; }
 
 	string getSubject(void)  { return m_Subject; }
-	void setSubject(string subject) throw() { m_Subject = subject; }
+	void setSubject(string subject)  { m_Subject = subject; }
 
 	BYTE getContentsCount(void)  { return m_ContentsCount; }
 
@@ -75,7 +75,7 @@ private:
 class GCNPCAskDynamicFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCNPCAskDynamic(); }
+	Packet* createPacket()  { return new GCNPCAskDynamic(); }
 	string getPacketName()  { return "GCNPCAskDynamic"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_NPC_ASK_DYNAMIC; }
 	PacketSize_t getPacketMaxSize()  

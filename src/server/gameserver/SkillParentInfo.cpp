@@ -17,7 +17,7 @@
 //
 //----------------------------------------------------------------------
 SkillParentInfo::SkillParentInfo (SkillType_t SkillType) 
-	throw () 
+	 
 : m_SkillType(SkillType)
 {
 	__BEGIN_TRY
@@ -32,7 +32,7 @@ SkillParentInfo::SkillParentInfo (SkillType_t SkillType)
 //
 //----------------------------------------------------------------------
 SkillParentInfo::~SkillParentInfo () 
-    throw ()
+    
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -110,7 +110,7 @@ SkillType_t SkillParentInfo::getParents (SkillType_t SkillType) const
 // get debug string
 //----------------------------------------------------------------------
 string SkillParentInfo::toString () const
-	throw ()
+	
 {
 
 	__BEGIN_TRY
@@ -144,7 +144,7 @@ string SkillParentInfo::toString () const
 //
 //--------------------------------------------------------------------
 SkillParentInfoManager::SkillParentInfoManager()
-	throw()
+	
 : m_SkillCount(0), m_SkillParentInfoList(NULL)
 {
 	__BEGIN_TRY
@@ -157,7 +157,7 @@ SkillParentInfoManager::SkillParentInfoManager()
 //
 //--------------------------------------------------------------------
 SkillParentInfoManager::~SkillParentInfoManager()
-	throw()
+	
 {
 	__BEGIN_TRY
 
@@ -327,7 +327,7 @@ SkillParentInfo* SkillParentInfoManager::getSkillParentInfo(SkillType_t SkillTyp
 //
 //--------------------------------------------------------------------
 string SkillParentInfoManager::toString() const
-	throw()
+	
 {
 	__BEGIN_TRY
 

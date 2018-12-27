@@ -47,7 +47,7 @@ MasterLairInfo::~MasterLairInfo()
 // a      bc
 // "hihihi", "dsfsdfsd sdfds, sfd", "anfdsf"
 void MasterLairInfo::setSayText(vector<string>& sayWords, const string& text) 
-	throw()
+	
 {
 	sayWords.clear();
 
@@ -72,31 +72,31 @@ void MasterLairInfo::setSayText(vector<string>& sayWords, const string& text)
 }
 
 void MasterLairInfo::setMasterSummonSay(const string& text) 
-	throw()
+	
 {
 	setSayText(m_MasterSummonSay, text);
 }
 
 void MasterLairInfo::setMasterDeadSlayerSay(const string& text) 
-	throw()
+	
 {
 	setSayText(m_MasterDeadSlayerSay, text);
 }
 
 void MasterLairInfo::setMasterDeadVampireSay(const string& text) 
-	throw()
+	
 {
 	setSayText(m_MasterDeadVampireSay, text);
 }
 
 void MasterLairInfo::setMasterNotDeadSay(const string& text) 
-	throw()
+	
 {
 	setSayText(m_MasterNotDeadSay, text);
 }
 
 const string& MasterLairInfo::getRandomMasterSummonSay() const 
-	throw()
+	
 {
 	static string stringNULL = "";
 
@@ -107,7 +107,7 @@ const string& MasterLairInfo::getRandomMasterSummonSay() const
 
 
 const string& MasterLairInfo::getRandomMasterDeadSlayerSay() const 
-	throw()
+	
 {
 	static string stringNULL = "";
 
@@ -117,7 +117,7 @@ const string& MasterLairInfo::getRandomMasterDeadSlayerSay() const
 }
 
 const string& MasterLairInfo::getRandomMasterDeadVampireSay() const 
-	throw()
+	
 {
 	static string stringNULL = "";
 
@@ -127,7 +127,7 @@ const string& MasterLairInfo::getRandomMasterDeadVampireSay() const
 }
 
 const string& MasterLairInfo::getRandomMasterNotDeadSay() const 
-	throw()
+	
 {
 	static string stringNULL = "";
 
@@ -177,7 +177,7 @@ MasterLairInfo::toString()
 // constructor
 //////////////////////////////////////////////////////////////////////////////
 MasterLairInfoManager::MasterLairInfoManager () 
-	throw ()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -188,7 +188,7 @@ MasterLairInfoManager::MasterLairInfoManager ()
 // destructor
 //////////////////////////////////////////////////////////////////////////////
 MasterLairInfoManager::~MasterLairInfoManager () 
-	throw ()
+	
 {
 	__BEGIN_TRY
 
@@ -457,7 +457,7 @@ void MasterLairInfoManager::addMasterLairInfo (MasterLairInfo* pMasterLairInfo)
 // Delete zone info from zone info manager
 //////////////////////////////////////////////////////////////////////////////
 void MasterLairInfoManager::deleteMasterLairInfo (ZoneID_t zoneID) 
-	throw (NoSuchElementException)
+	
 {
 	__BEGIN_TRY
 		
@@ -487,7 +487,7 @@ void MasterLairInfoManager::deleteMasterLairInfo (ZoneID_t zoneID)
 // get zone from zone info manager
 //////////////////////////////////////////////////////////////////////////////
 MasterLairInfo* MasterLairInfoManager::getMasterLairInfo (ZoneID_t zoneID) 
-	throw (NoSuchElementException)
+	
 {
 	__BEGIN_TRY
 		
@@ -521,7 +521,7 @@ MasterLairInfo* MasterLairInfoManager::getMasterLairInfo (ZoneID_t zoneID)
 // get debug string
 //////////////////////////////////////////////////////////////////////////////
 string MasterLairInfoManager::toString () const
-	throw ()
+	
 {
 	__BEGIN_TRY
 

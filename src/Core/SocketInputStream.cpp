@@ -63,7 +63,7 @@ SocketInputStream::~SocketInputStream ()
 //
 //////////////////////////////////////////////////////////////////////
 uint SocketInputStream::read ( char * buf , uint len ) 
-	throw ( ProtocolException , Error )
+	
 {
 //	__BEGIN_TRY
 		
@@ -120,7 +120,7 @@ uint SocketInputStream::read ( char * buf , uint len )
 // read data from input buffer
 //////////////////////////////////////////////////////////////////////
 uint SocketInputStream::read ( string & str , uint len ) 
-	throw ( ProtocolException , Error )
+	
 {
 	__BEGIN_TRY
 		
@@ -176,7 +176,7 @@ uint SocketInputStream::read ( string & str , uint len )
 // read packet from input buffer
 //////////////////////////////////////////////////////////////////////
 void SocketInputStream::readPacket ( Packet * pPacket ) 
-	throw ( ProtocolException , Error )
+	
 {
 	__BEGIN_TRY
 		
@@ -202,7 +202,7 @@ void SocketInputStream::readPacket ( Packet * pPacket )
 // peek data from buffer
 //////////////////////////////////////////////////////////////////////
 bool SocketInputStream::peek ( char * buf , uint len ) 
-	throw ( ProtocolException , Error )
+	
 {
 //	__BEGIN_TRY
 			
@@ -258,7 +258,7 @@ bool SocketInputStream::peek ( char * buf , uint len )
 //
 //////////////////////////////////////////////////////////////////////
 void SocketInputStream::skip ( uint len ) 
-	throw ( ProtocolException , Error )
+	
 {
 	__BEGIN_TRY
 		
@@ -638,7 +638,7 @@ void SocketInputStream::resize ( int size )
 //
 //////////////////////////////////////////////////////////////////////
 uint SocketInputStream::length () const
-     throw ()
+     
 {
 	__BEGIN_TRY
 
@@ -658,7 +658,7 @@ uint SocketInputStream::length () const
 // get debug string
 //////////////////////////////////////////////////////////////////////
 string SocketInputStream::toString () const
-	throw ()
+	
 {
 	StringStream msg;
 
@@ -672,7 +672,7 @@ string SocketInputStream::toString () const
 }
 //add by viva 2008-12-31
 /*WORD SocketInputStream::EncryptData(WORD EncryptKey, char* buf, int len)
-	throw()
+	
 {
 	for(int i = 0; i<len; i++)
 		*(buf + i) ^= 0xCC;

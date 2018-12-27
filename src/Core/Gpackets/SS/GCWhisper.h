@@ -51,19 +51,19 @@ public :
 
 	// get/set sender's creature id
 	string getName()  { return m_Name ; }
-	void setName(const string & Name) throw() { m_Name = Name ; }
+	void setName(const string & Name)  { m_Name = Name ; }
 
 	//get/set text color
 	uint getColor()  { return m_Color; }
-	void setColor( uint color ) throw() { m_Color = color; }
+	void setColor( uint color )  { m_Color = color; }
 
 	// get/set chatting message
 	string getMessage()  { return m_Message; }
-	void setMessage(const string & msg) throw() { m_Message = msg; }
+	void setMessage(const string & msg)  { m_Message = msg; }
 	
 	// get/set chatting message
 	Race_t getRace()  { return m_Race; }
-	void setRace(Race_t race) throw() { m_Race = race; }
+	void setRace(Race_t race)  { m_Race = race; }
 
 private :
 	
@@ -95,7 +95,7 @@ class GCWhisperFactory : public PacketFactory {
 public :
 	
 	// create packet
-	Packet* createPacket() throw() { return new GCWhisper(); }
+	Packet* createPacket()  { return new GCWhisper(); }
 
 	// get packet name
 	string getPacketName()  { return "GCWhisper"; }

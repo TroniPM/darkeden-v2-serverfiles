@@ -16,8 +16,8 @@
 class PassingHeal: public SkillHandler 
 {
 public:
-	PassingHeal() throw() {}
-	~PassingHeal() throw() {}
+	PassingHeal()  {}
+	~PassingHeal()  {}
 
 public:
     string getSkillHandlerName()  { return "PassingHeal"; }

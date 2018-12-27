@@ -16,8 +16,8 @@
 class CrossCounter : public SkillHandler 
 {
 public:
-	CrossCounter() throw() {}
-	~CrossCounter() throw() {}
+	CrossCounter()  {}
+	~CrossCounter()  {}
 	
 public:
     string getSkillHandlerName()  { return "CrossCounter"; }

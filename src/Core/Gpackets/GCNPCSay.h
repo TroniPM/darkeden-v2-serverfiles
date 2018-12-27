@@ -51,7 +51,7 @@ private:
 class GCNPCSayFactory : public PacketFactory 
 {
 public:
-	Packet* createPacket() throw() { return new GCNPCSay(); }
+	Packet* createPacket()  { return new GCNPCSay(); }
 	string getPacketName()  { return "GCNPCSay"; }
 	PacketID_t getPacketID()  { return Packet::PACKET_GC_NPC_SAY; }
 	PacketSize_t getPacketMaxSize()  { return szObjectID + szScriptID + szBYTE; }

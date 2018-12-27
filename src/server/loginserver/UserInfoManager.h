@@ -39,10 +39,10 @@ public :
 	void init ();
 
 	// add info
-	void addUserInfo ( UserInfo * pUserInfo ) throw ( DuplicatedException );
+	void addUserInfo ( UserInfo * pUserInfo ) ;
 	
 	// delete info
-	void deleteUserInfo ( ZoneGroupID_t ServerGroupID, WorldID_t WorldID ) throw ( NoSuchElementException );
+	void deleteUserInfo ( ZoneGroupID_t ServerGroupID, WorldID_t WorldID ) ;
 	
 	// get info
 	UserInfo * getUserInfo ( ZoneGroupID_t ServerGroupID, WorldID_t WorldID ) ;

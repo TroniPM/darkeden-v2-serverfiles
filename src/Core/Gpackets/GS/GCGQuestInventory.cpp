@@ -16,7 +16,7 @@
 // constructor
 //////////////////////////////////////////////////////////////////////
 GCGQuestInventory::GCGQuestInventory () 
-     throw ()
+     
 {
 	__BEGIN_TRY
 	__END_CATCH
@@ -26,13 +26,13 @@ GCGQuestInventory::GCGQuestInventory ()
 // destructor
 //////////////////////////////////////////////////////////////////////
 GCGQuestInventory::~GCGQuestInventory () 
-    throw ()
+    
 {
 	__BEGIN_TRY
 	__END_CATCH
 }
 
-void GCGQuestInventory::read(SocketInputStream & iStream) throw(ProtocolException, Error)
+void GCGQuestInventory::read(SocketInputStream & iStream) 
 {
 	__BEGIN_TRY
 
@@ -76,7 +76,7 @@ void GCGQuestInventory::write(SocketOutputStream & oStream)
 //
 //////////////////////////////////////////////////////////////////////
 void GCGQuestInventory::execute ( Player * pPlayer ) 
-	 throw ( ProtocolException , Error )
+	 
 {
 	__BEGIN_TRY
 		

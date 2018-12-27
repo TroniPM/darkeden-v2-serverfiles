@@ -54,7 +54,7 @@ MonsterCorpse::MonsterCorpse (MonsterType_t MType, const string& name, Dir_t dir
 // destructor
 //////////////////////////////////////////////////////////////////////////////
 MonsterCorpse::~MonsterCorpse()
-	throw()
+	
 {
 	__BEGIN_TRY
 	__END_CATCH

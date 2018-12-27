@@ -186,22 +186,22 @@ public: // DB methods
 	
 public: // identity methods
 	GuildID_t getGuildID()  { return m_GuildID; }
-	void setGuildID(GuildID_t guildID) throw() { m_GuildID = guildID; }
+	void setGuildID(GuildID_t guildID)  { m_GuildID = guildID; }
 
 	string getName()  { return m_Name; }
-	void setName(const string& name) throw() { m_Name = name; }
+	void setName(const string& name)  { m_Name = name; }
 
 	GuildMemberRank_t getRank()  { return m_Rank; }
 	void setRank(GuildMemberRank_t rank) ;		// Guild class 에서 처리한다.
 
 	bool getLogOn()  { return m_bLogOn; }
-	void setLogOn( bool logOn ) throw() { m_bLogOn = logOn; }
+	void setLogOn( bool logOn )  { m_bLogOn = logOn; }
 
 	ServerID_t	getServerID()	 { return m_ServerID; }
-	void		setServerID( ServerID_t ServerID ) throw() { m_ServerID = ServerID; }
+	void		setServerID( ServerID_t ServerID )  { m_ServerID = ServerID; }
 	
 	string getRequestDateTime() ;
-	void setRequestDateTime( const VSDateTime& vsdatetime ) throw() { m_RequestDateTime = vsdatetime; }
+	void setRequestDateTime( const VSDateTime& vsdatetime )  { m_RequestDateTime = vsdatetime; }
 	void setRequestDateTime( const string& rdatetime ) ;
 	bool isRequestDateTimeOut( const VSDateTime& currentDateTime ) ;
 
@@ -302,34 +302,34 @@ public: // DB methods
 	
 public: // identity methods
 	GuildID_t getID()  { return m_ID; }
-	void setID(GuildID_t id) throw() { m_ID = id; }
+	void setID(GuildID_t id)  { m_ID = id; }
 
 	string getName()  { return m_Name; }
-	void setName(const string& name) throw() { m_Name = name; }
+	void setName(const string& name)  { m_Name = name; }
 
 	GuildType_t getType()  { return m_Type; }
-	void setType(GuildType_t type) throw() { m_Type = type; }
+	void setType(GuildType_t type)  { m_Type = type; }
 
 	GuildRace_t getRace()  { return m_Race; }
-	void setRace( GuildRace_t race ) throw() { m_Race = race; }
+	void setRace( GuildRace_t race )  { m_Race = race; }
 
 	GuildState_t getState()  { return m_State; }
-	void setState(GuildState_t state) throw() { m_State = state; }
+	void setState(GuildState_t state)  { m_State = state; }
 
 	ServerGroupID_t getServerGroupID()  { return m_ServerGroupID; }
-	void setServerGroupID( ServerGroupID_t serverGroupID ) throw() { m_ServerGroupID = serverGroupID; }
+	void setServerGroupID( ServerGroupID_t serverGroupID )  { m_ServerGroupID = serverGroupID; }
 
 	ZoneID_t getZoneID()  { return m_ZoneID; }
-	void setZoneID( ZoneID_t zoneID ) throw() { m_ZoneID = zoneID; }
+	void setZoneID( ZoneID_t zoneID )  { m_ZoneID = zoneID; }
 
 	string getMaster()  { return m_Master; }
-	void setMaster(const string& master) throw() { m_Master = master; }
+	void setMaster(const string& master)  { m_Master = master; }
 
 	string getDate()  { return m_Date; }
-	void setDate( const string& Date ) throw() { m_Date = Date; }
+	void setDate( const string& Date )  { m_Date = Date; }
 
 	string getIntro()  { return m_Intro; }
-	void setIntro( const string& intro ) throw() { m_Intro = intro; }
+	void setIntro( const string& intro )  { m_Intro = intro; }
 
 #ifdef __SHARED_SERVER__
 	void saveIntro( const string& intro ) ;
@@ -347,14 +347,14 @@ public: // identity methods
 
 	void modifyMemberRank( const string& name, GuildMemberRank_t rank ) ;
 
-	HashMapGuildMember& getMembers() throw() { return m_Members; }
+	HashMapGuildMember& getMembers()  { return m_Members; }
 
 	int getActiveMemberCount()  { return m_ActiveMemberCount; }
 	int getWaitMemberCount()  { return m_WaitMemberCount; }
 
 #ifdef __GAME_SERVER__
 	void addCurrentMember( const string& name ) throw( DuplicatedException, Error );
-	void deleteCurrentMember( const string& name ) throw( NoSuchElementException );
+	void deleteCurrentMember( const string& name ) ;
 	list<string> getCurrentMembers() ;
 #endif
 
@@ -367,17 +367,17 @@ public: // identity methods
 
 
 public: // static
-	static GuildID_t getMaxGuildID() throw() { return m_MaxGuildID; }
-	static void setMaxGuildID(GuildID_t id) throw() { m_MaxGuildID = id; }
+	static GuildID_t getMaxGuildID()  { return m_MaxGuildID; }
+	static void setMaxGuildID(GuildID_t id)  { m_MaxGuildID = id; }
 
-	static ZoneID_t getMaxSlayerZoneID() throw() { return m_MaxSlayerZoneID; }
-	static void setMaxSlayerZoneID( ZoneID_t zoneID ) throw() { m_MaxSlayerZoneID = zoneID; }
+	static ZoneID_t getMaxSlayerZoneID()  { return m_MaxSlayerZoneID; }
+	static void setMaxSlayerZoneID( ZoneID_t zoneID )  { m_MaxSlayerZoneID = zoneID; }
 
-	static ZoneID_t getMaxVampireZoneID() throw() { return m_MaxVampireZoneID; }
-	static void setMaxVampireZoneID( ZoneID_t zoneID ) throw() { m_MaxVampireZoneID = zoneID; }
+	static ZoneID_t getMaxVampireZoneID()  { return m_MaxVampireZoneID; }
+	static void setMaxVampireZoneID( ZoneID_t zoneID )  { m_MaxVampireZoneID = zoneID; }
 
-	static ZoneID_t getMaxOustersZoneID() throw() { return m_MaxOustersZoneID; }
-	static void setMaxOustersZoneID( ZoneID_t zoneID ) throw() { m_MaxOustersZoneID = zoneID; }
+	static ZoneID_t getMaxOustersZoneID()  { return m_MaxOustersZoneID; }
+	static void setMaxOustersZoneID( ZoneID_t zoneID )  { m_MaxOustersZoneID = zoneID; }
 
 public:
 	void expireTimeOutWaitMember( VSDateTime currentDateTime, list<string>& mList );

@@ -64,7 +64,7 @@ class CLLogoutFactory : public PacketFactory {
 public:
 	
 	// create packet
-	Packet* createPacket() throw() { return new CLLogout(); }
+	Packet* createPacket()  { return new CLLogout(); }
 
 	// get packet name
 	string getPacketName()  { return "CLLogout"; }

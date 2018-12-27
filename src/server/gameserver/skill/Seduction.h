@@ -16,8 +16,8 @@
 class Seduction : public SkillHandler 
 {
 public:
-	Seduction() throw() {}
-	~Seduction() throw() {}
+	Seduction()  {}
+	~Seduction()  {}
 	
 public:
     string getSkillHandlerName()  { return "Seduction"; }

@@ -274,7 +274,7 @@ main.o: main.cpp ../../Core/Types.h ../../Core/types/SystemTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h GameServer.h \
- ../../Core/Properties.h /usr/include/STL/map \
+ ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../LogClient.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
@@ -333,7 +333,7 @@ Zone.o: Zone.cpp Zone.h ../../Core/Types.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -385,7 +385,7 @@ Zone.o: Zone.cpp Zone.h ../../Core/Types.h \
  ../../Core/SubOustersSkillInfo.h skill/OustersSkillSlot.h Monster.h \
  MonsterInfo.h MonsterSummonInfo.h MonsterInfoTypes.h Treasure.h \
  PrecedenceTable.h NPC.h couple/PartnerWaitingManager.h \
- ../../Core/Player.h ../../Core/Properties.h /usr/include/STL/map \
+ ../../Core/Player.h ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ZoneUtil.h PacketUtil.h \
  TradeManager.h ParkingCenter.h item/Motorcycle.h InfoClassManager.h \
@@ -527,7 +527,7 @@ Slayer.o: Slayer.cpp ../database/DB.h ../database/DatabaseManager.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Garbage.h RankBonus.h ExpFwd.h \
@@ -607,7 +607,7 @@ Slayer.o: Slayer.cpp ../database/DB.h ../database/DatabaseManager.h \
  ../../Core/Rpackets/RCSay.h ../../Core/DatagramPacket.h \
  ../../Core/Datagram.h LoginServerManager.h \
  ../../Core/DatagramSocket.h ../../Core/Properties.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  war/RaceWarLimiter.h PCLimiter.h TimeLimitItemManager.h \
  RankExpTable.h SystemAvailabilitiesManager.h \
@@ -666,7 +666,7 @@ Vampire.o: Vampire.cpp Vampire.h PlayerCreature.h Creature.h Object.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -792,7 +792,7 @@ Ousters.o: Ousters.cpp Ousters.h PlayerCreature.h Creature.h Object.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -978,7 +978,7 @@ ClientManager.o: ClientManager.cpp ClientManager.h ../../Core/Types.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ThreadManager.h ../../Core/Assert.h ThreadPool.h ../Thread.h \
  ../pthreadAPI.h ../../Core/ServerSocket.h ../../Core/Properties.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  IncomingPlayerManager.h ../PlayerManager.h GamePlayer.h \
  ../../Core/Player.h ../../Core/SocketEncryptOutputStream.h \
@@ -990,7 +990,7 @@ ClientManager.o: ClientManager.cpp ClientManager.h ../../Core/Types.h \
  ../PaySystem.h ../../Core/VSDateTime.h billing/BillingPlayerInfo.h \
  ../chinabilling/CBillingPlayerInfo.h ../chinabilling/CBillingInfo.h \
  ../../Core/Gpackets/GCReconnectLogin.h ../../Core/PacketFactory.h \
- /usr/include/STL/bitset gameguard/CSAuth.h \
+ /usr/include/c++/7/bitset gameguard/CSAuth.h \
  ../../Core/DatagramSocket.h ../../Core/Datagram.h \
  ConnectionInfoManager.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
@@ -1078,7 +1078,7 @@ ConnectionInfoManager.o: ConnectionInfoManager.cpp \
  Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -1089,7 +1089,7 @@ ConnectionInfoManager.o: ConnectionInfoManager.cpp \
  /home/darkeden/src/libs/stl_queue.h ../../Core/GameTime.h \
  ../../Core/Gpackets/GMServerInfo.h ../../Core/DatagramPacket.h \
  ../../Core/Datagram.h ../../Core/PacketFactory.h ZoneGroupManager.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  LoginServerManager.h ../Thread.h ../pthreadAPI.h \
  ../../Core/DatagramSocket.h ZonePlayerManager.h ../PlayerManager.h \
@@ -1146,7 +1146,7 @@ Creature.o: Creature.cpp Creature.h Object.h ../../Core/Types.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset ZoneInfo.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ZoneInfo.h \
  Zone.h Tile.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
  Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -1162,7 +1162,7 @@ Creature.o: Creature.cpp Creature.h Object.h ../../Core/Types.h \
  /home/darkeden/src/libs/stl_queue.h ZoneInfoManager.h ZoneGroup.h \
  ../../Core/GameTime.h ../../Core/Gpackets/GMServerInfo.h \
  ../../Core/DatagramPacket.h ../../Core/Datagram.h \
- ../../Core/PacketFactory.h ZoneGroupManager.h /usr/include/STL/map \
+ ../../Core/PacketFactory.h ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h Slayer.h PlayerCreature.h \
  InventorySlot.h Garbage.h RankBonus.h ExpFwd.h \
@@ -1237,7 +1237,7 @@ CreatureManager.o: CreatureManager.cpp CreatureManager.h Creature.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset ../Mutex.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
@@ -1252,7 +1252,7 @@ CreatureManager.o: CreatureManager.cpp CreatureManager.h Creature.h \
  ../chinabilling/CBillingInfo.h ../../Core/Gpackets/GCReconnectLogin.h \
  ../../Core/PacketFactory.h gameguard/CSAuth.h ZoneGroupManager.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_bvector.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ZoneGroup.h Zone.h Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h Item.h Obstacle.h Portal.h \
@@ -1349,7 +1349,7 @@ DarkLightInfo.o: DarkLightInfo.cpp DarkLightInfo.h ../../Core/Types.h \
  Object.h Creature.h EffectManager.h Effect.h ../Timeval.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../Core/EffectInfo.h ../../Core/Packet.h /usr/include/STL/bitset \
+ ../../Core/EffectInfo.h ../../Core/Packet.h /usr/include/c++/7/bitset \
  Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -1409,7 +1409,7 @@ Corpse.o: Corpse.cpp Corpse.h ../../Core/Types.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemFactory.h Zone.h Tile.h /usr/include/STL/slist \
@@ -1486,7 +1486,7 @@ GamePlayer.o: GamePlayer.cpp GamePlayer.h ../../Core/Types.h \
  Event.h skill/Skill.h ../PaySystem.h ../../Core/VSDateTime.h \
  billing/BillingPlayerInfo.h ../chinabilling/CBillingPlayerInfo.h \
  ../chinabilling/CBillingInfo.h ../../Core/Gpackets/GCReconnectLogin.h \
- ../../Core/PacketFactory.h /usr/include/STL/bitset gameguard/CSAuth.h \
+ ../../Core/PacketFactory.h /usr/include/c++/7/bitset gameguard/CSAuth.h \
  ../../Core/Assert.h Creature.h Object.h EffectManager.h Effect.h \
  ../../Core/EffectInfo.h Slayer.h PlayerCreature.h ObjectRegistry.h \
  InventorySlot.h Item.h /usr/include/STL/vector \
@@ -1528,7 +1528,7 @@ GamePlayer.o: GamePlayer.cpp GamePlayer.h ../../Core/Types.h \
  IncomingPlayerManager.h ../PlayerManager.h ../../Core/ServerSocket.h \
  ../../Core/DatagramSocket.h ../../Core/Datagram.h \
  ConnectionInfoManager.h ConnectionInfo.h PCFinder.h NPC.h \
- couple/PartnerWaitingManager.h /usr/include/STL/map \
+ couple/PartnerWaitingManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h TelephoneCenter.h ../Thread.h \
  ../pthreadAPI.h GuildManager.h Guild.h VariableManager.h \
@@ -1591,7 +1591,7 @@ GameServer.o: GameServer.cpp /usr/include/time.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- ../../Core/Properties.h /usr/include/STL/map \
+ ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../../Core/Assert.h ThreadManager.h \
  ClientManager.h ../Timeval.h /usr/include/sys/time.h EventManager.h \
@@ -1682,13 +1682,13 @@ IncomingPlayerManager.o: IncomingPlayerManager.cpp \
  skill/Skill.h ../PaySystem.h ../../Core/VSDateTime.h \
  billing/BillingPlayerInfo.h ../chinabilling/CBillingPlayerInfo.h \
  ../chinabilling/CBillingInfo.h ../../Core/Gpackets/GCReconnectLogin.h \
- ../../Core/PacketFactory.h /usr/include/STL/bitset gameguard/CSAuth.h \
+ ../../Core/PacketFactory.h /usr/include/c++/7/bitset gameguard/CSAuth.h \
  ../../Core/ServerSocket.h ../../Core/DatagramSocket.h \
  ../../Core/Datagram.h ConnectionInfoManager.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ConnectionInfo.h ../../Core/Assert.h ../../Core/Properties.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  LoginServerManager.h ../Thread.h ../pthreadAPI.h PacketUtil.h \
  ZoneInfoManager.h Zone.h Tile.h /usr/include/STL/slist \
@@ -1836,7 +1836,7 @@ InfoClassManager.o: InfoClassManager.cpp InfoClassManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemInfo.h VariableManager.h /usr/include/STL/hash_map \
@@ -1891,7 +1891,7 @@ Inventory.o: Inventory.cpp Inventory.h ../../Core/Types.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  VolumeInfo.h InventorySlot.h ItemInfoManager.h ItemInfo.h \
@@ -1966,7 +1966,7 @@ LoginServerManager.o: LoginServerManager.cpp LoginServerManager.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h ../../Core/DatagramSocket.h \
  ../../Core/SocketAPI.h ../../Core/Datagram.h ../Mutex.h \
- ../../Core/Properties.h /usr/include/STL/map \
+ ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../LogClient.h ../../Core/Assert.h \
  ../../Core/TimeChecker.h ../../Core/VSDateTime.h \
@@ -2035,7 +2035,7 @@ SharedServerManager.o: SharedServerManager.cpp SharedServerManager.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/SocketOutputStream.h \
  ../Mutex.h SharedServerClient.h ../../Core/Player.h \
- ../../Core/Properties.h /usr/include/STL/map \
+ ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../LogClient.h ../../Core/Assert.h \
  ThreadManager.h ThreadPool.h /usr/include/unistd.h \
@@ -2099,7 +2099,7 @@ NPC.o: NPC.cpp NPC.h Creature.h Object.h ../../Core/Types.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Zone.h Tile.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Zone.h Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -2171,7 +2171,7 @@ NPCManager.o: NPCManager.cpp NPCManager.h CreatureManager.h Creature.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset ../Mutex.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
@@ -2193,7 +2193,7 @@ NPCManager.o: NPCManager.cpp NPCManager.h CreatureManager.h Creature.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h ../Thread.h ../pthreadAPI.h PCFinder.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h
 ResurrectLocationManager.o: ResurrectLocationManager.cpp \
@@ -2251,7 +2251,7 @@ ResurrectLocationManager.o: ResurrectLocationManager.cpp \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -2349,7 +2349,7 @@ PCFinder.o: PCFinder.cpp PCFinder.h ../../Core/Types.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset NPC.h Zone.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset NPC.h Zone.h \
  Tile.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -2366,7 +2366,7 @@ PCFinder.o: PCFinder.cpp PCFinder.h ../../Core/Types.h \
  couple/PartnerWaitingManager.h PlayerCreature.h Garbage.h RankBonus.h \
  ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ OptionInfo.h /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../Core/Player.h
 TelephoneCenter.o: TelephoneCenter.cpp TelephoneCenter.h \
@@ -2422,7 +2422,7 @@ TelephoneCenter.o: TelephoneCenter.cpp TelephoneCenter.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -2508,7 +2508,7 @@ ParkingCenter.o: ParkingCenter.cpp ParkingCenter.h ../../Core/Types.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -2575,7 +2575,7 @@ PCManager.o: PCManager.cpp /usr/include/c++/7/algorithm \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset ../Mutex.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
@@ -2620,7 +2620,7 @@ PCManager.o: PCManager.cpp /usr/include/c++/7/algorithm \
  ../../Core/PCOustersInfo3.h ../../Core/OustersSkillInfo.h \
  ../../Core/SubOustersSkillInfo.h skill/OustersSkillSlot.h \
  MonsterCorpse.h ItemFactory.h Corpse.h ZoneGroupManager.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ZoneGroup.h ../../Core/GameTime.h ../../Core/Gpackets/GMServerInfo.h \
  ../../Core/DatagramPacket.h ../../Core/Datagram.h ZoneInfo.h \
@@ -2701,7 +2701,7 @@ Portal.o: Portal.cpp Portal.h Object.h ../../Core/Types.h \
  quest/TriggerManager.h quest/Trigger.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h quest/Condition.h \
- /usr/include/STL/bitset quest/PropertyBuffer.h Zone.h Tile.h \
+ /usr/include/c++/7/bitset quest/PropertyBuffer.h Zone.h Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -2720,7 +2720,7 @@ Portal.o: Portal.cpp Portal.h Object.h ../../Core/Types.h \
  /home/darkeden/src/libs/stl_queue.h ZoneGroup.h ../../Core/GameTime.h \
  ../../Core/Gpackets/GMServerInfo.h ../../Core/DatagramPacket.h \
  ../../Core/Datagram.h ../../Core/PacketFactory.h ZoneGroupManager.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h ZoneInfo.h \
  ZoneInfoManager.h ZonePlayerManager.h ../PlayerManager.h \
  ../../Core/Player.h ../../Core/PCSlayerInfo2.h ../../Core/PCInfo.h \
@@ -2859,7 +2859,7 @@ ScriptManager.o: ScriptManager.cpp ScriptManager.h ../../Core/Types.h \
  ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
  ../../Core/SXml.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
- ../../Core/Properties.h /usr/include/STL/map \
+ ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../../Core/Assert.h
 ThreadManager.o: ThreadManager.cpp ThreadManager.h ../../Core/Types.h \
@@ -2920,7 +2920,7 @@ ThreadManager.o: ThreadManager.cpp ThreadManager.h ../../Core/Types.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -2931,7 +2931,7 @@ ThreadManager.o: ThreadManager.cpp ThreadManager.h ../../Core/Types.h \
  /home/darkeden/src/libs/stl_queue.h ../../Core/GameTime.h \
  ../../Core/Gpackets/GMServerInfo.h ../../Core/DatagramPacket.h \
  ../../Core/Datagram.h ../../Core/PacketFactory.h ../LogClient.h \
- ZoneGroupManager.h /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ ZoneGroupManager.h /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../Core/Properties.h ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \
@@ -3041,7 +3041,7 @@ Tile.o: Tile.cpp Tile.h /usr/include/STL/slist \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -3184,7 +3184,7 @@ TimeManager.o: TimeManager.cpp TimeManager.h ../../Core/Types.h \
  /home/darkeden/src/libs/stl_list.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/Properties.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h
 GoodsInventory.o: GoodsInventory.cpp GoodsInventory.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
@@ -3237,7 +3237,7 @@ GoodsInventory.o: GoodsInventory.cpp GoodsInventory.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../database/DB.h ../database/DatabaseManager.h \
@@ -3299,7 +3299,7 @@ GoodsInfoManager.o: GoodsInfoManager.cpp GoodsInfoManager.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
@@ -3466,7 +3466,7 @@ WeatherManager.o: WeatherManager.cpp WeatherManager.h \
  Effect.h ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
- /usr/include/STL/bitset Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -3535,7 +3535,7 @@ ZoneInfo.o: ZoneInfo.cpp ZoneInfo.h ../../Core/Types.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -3606,7 +3606,7 @@ ZoneGroup.o: ZoneGroup.cpp ZoneGroup.h ../../Core/Types.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -3670,7 +3670,7 @@ ZoneGroupManager.o: ZoneGroupManager.cpp ZoneGroupManager.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
- /home/darkeden/src/libs/stl_bvector.h /usr/include/STL/map \
+ /home/darkeden/src/libs/stl_bvector.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ZoneGroup.h Zone.h Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Object.h \
@@ -3680,7 +3680,7 @@ ZoneGroupManager.o: ZoneGroupManager.cpp ZoneGroupManager.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
@@ -3760,7 +3760,7 @@ ZoneInfoManager.o: ZoneInfoManager.cpp ZoneInfoManager.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -3842,7 +3842,7 @@ ZonePlayerManager.o: ZonePlayerManager.cpp /usr/include/stdio.h \
  skill/Skill.h ../PaySystem.h ../../Core/VSDateTime.h \
  billing/BillingPlayerInfo.h ../chinabilling/CBillingPlayerInfo.h \
  ../chinabilling/CBillingInfo.h ../../Core/Gpackets/GCReconnectLogin.h \
- ../../Core/PacketFactory.h /usr/include/STL/bitset gameguard/CSAuth.h \
+ ../../Core/PacketFactory.h /usr/include/c++/7/bitset gameguard/CSAuth.h \
  ../../Core/ServerSocket.h ../../Core/DatagramSocket.h \
  ../../Core/Datagram.h ConnectionInfoManager.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
@@ -3937,7 +3937,7 @@ ZoneGroupThread.o: ZoneGroupThread.cpp ZoneGroupThread.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -3954,7 +3954,7 @@ ZoneGroupThread.o: ZoneGroupThread.cpp ZoneGroupThread.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
  ../database/Result.h ../../Core/VSDateTime.h ../../Core/Properties.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../Profile.h
 ObjectManager.o: ObjectManager.cpp ObjectManager.h ../../Core/Types.h \
@@ -4008,7 +4008,7 @@ ObjectManager.o: ObjectManager.cpp ObjectManager.h ../../Core/Types.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset ../Mutex.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
@@ -4017,7 +4017,7 @@ ObjectManager.o: ObjectManager.cpp ObjectManager.h ../../Core/Types.h \
  MonsterInfoTypes.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Treasure.h Item.h TimeManager.h ../../Core/GameTime.h DarkLightInfo.h \
- VisionInfo.h WeatherInfo.h ZoneGroupManager.h /usr/include/STL/map \
+ VisionInfo.h WeatherInfo.h ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ZoneGroup.h Zone.h Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Obstacle.h \
@@ -4151,7 +4151,7 @@ AbilityBalance.o: AbilityBalance.cpp AbilityBalance.h Creature.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Slayer.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -4190,7 +4190,7 @@ AbilityBalance.o: AbilityBalance.cpp AbilityBalance.h Creature.h \
  ../../Core/SubVampireSkillInfo.h skill/VampireSkillSlot.h Monster.h \
  MonsterInfo.h MonsterSummonInfo.h MonsterInfoTypes.h Treasure.h \
  PrecedenceTable.h ItemUtil.h ../../Core/Properties.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  VariableManager.h
 PlayerCreature.o: PlayerCreature.cpp PlayerCreature.h Creature.h \
@@ -4245,7 +4245,7 @@ PlayerCreature.o: PlayerCreature.cpp PlayerCreature.h Creature.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -4272,7 +4272,7 @@ PlayerCreature.o: PlayerCreature.cpp PlayerCreature.h Creature.h \
  /home/darkeden/src/libs/stl_queue.h FlagSet.h ParkingCenter.h \
  item/Motorcycle.h item/Key.h Guild.h ../../Core/VSDateTime.h \
  GuildManager.h ../../Core/Gpackets/GCRankBonusInfo.h \
- ../../Core/Gpackets/GCTimeLimitItemInfo.h /usr/include/STL/map \
+ ../../Core/Gpackets/GCTimeLimitItemInfo.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h \
  ../../Core/Gpackets/GCModifyInformation.h \
@@ -4365,7 +4365,7 @@ ZoneUtil.o: ZoneUtil.cpp ZoneUtil.h ../../Core/Types.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../../Core/VSDateTime.h ../database/DB.h \
  ../database/DatabaseManager.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
@@ -4375,7 +4375,7 @@ ZoneUtil.o: ZoneUtil.cpp ZoneUtil.h ../../Core/Types.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../database/Statement.h ../database/Result.h ../../Core/Properties.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h item/Relic.h ItemInfo.h \
@@ -4514,7 +4514,7 @@ Treasure.o: Treasure.cpp Treasure.h ../../Core/Types.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
@@ -4566,7 +4566,7 @@ PacketUtil.o: PacketUtil.cpp PacketUtil.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- ../../Core/Properties.h /usr/include/STL/map \
+ ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h GamePlayer.h ../../Core/Player.h \
  ../../Core/SocketEncryptOutputStream.h \
@@ -4584,7 +4584,7 @@ PacketUtil.o: PacketUtil.cpp PacketUtil.h ../../Core/Types.h \
  Event.h skill/Skill.h ../PaySystem.h ../../Core/VSDateTime.h \
  billing/BillingPlayerInfo.h ../chinabilling/CBillingPlayerInfo.h \
  ../chinabilling/CBillingInfo.h ../../Core/Gpackets/GCReconnectLogin.h \
- ../../Core/PacketFactory.h /usr/include/STL/bitset gameguard/CSAuth.h \
+ ../../Core/PacketFactory.h /usr/include/c++/7/bitset gameguard/CSAuth.h \
  Slayer.h PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ObjectRegistry.h \
  InventorySlot.h Item.h /usr/include/STL/vector \
@@ -4756,7 +4756,7 @@ InventorySlot.o: InventorySlot.cpp InventorySlot.h Item.h Object.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h
 ObjectRegistry.o: ObjectRegistry.cpp ObjectRegistry.h \
@@ -4853,7 +4853,7 @@ WayPoint.o: WayPoint.cpp WayPoint.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h Zone.h \
  Tile.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Object.h \
  ../../Core/Assert.h Creature.h EffectManager.h Effect.h ../Timeval.h \
@@ -4862,7 +4862,7 @@ WayPoint.o: WayPoint.cpp WayPoint.h ../../Core/Types.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -4931,7 +4931,7 @@ OptionInfo.o: OptionInfo.cpp OptionInfo.h ../../Core/Exception.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
@@ -5128,7 +5128,7 @@ ItemRack.o: ItemRack.cpp ../../Core/Assert.h ../../Core/Types.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ParkingCenter.h Zone.h Tile.h /usr/include/STL/slist \
@@ -5239,7 +5239,7 @@ Stash.o: Stash.cpp Stash.h ../../Core/Types.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemRack.h
@@ -5296,7 +5296,7 @@ Garbage.o: Garbage.cpp Garbage.h ObjectRegistry.h ../../Core/Types.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../database/DB.h ../database/DatabaseManager.h \
@@ -5410,7 +5410,7 @@ PriceManager.o: PriceManager.cpp PriceManager.h ../../Core/Types.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemInfoManager.h ItemInfo.h InfoClassManager.h OptionInfo.h \
@@ -5512,7 +5512,7 @@ CreatureUtil.o: CreatureUtil.cpp CreatureUtil.h Creature.h Object.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
@@ -5563,7 +5563,7 @@ CreatureUtil.o: CreatureUtil.cpp CreatureUtil.h Creature.h Object.h \
  couple/PartnerWaitingManager.h PacketUtil.h FlagSet.h \
  SimpleCreatureEffect.h EffectRelicLock.h ctf/FlagManager.h war/Work.h \
  war/Scheduler.h war/Schedule.h ../../Core/VSDateTime.h \
- ../../Core/Gpackets/GCFlagWarStatus.h /usr/include/STL/map \
+ ../../Core/Gpackets/GCFlagWarStatus.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h skill/Sniping.h skill/SkillHandler.h \
  SkillInfo.h skill/HitRoll.h skill/SkillUtil.h ZoneUtil.h GamePlayer.h \
@@ -5641,10 +5641,10 @@ ItemMap.o: ItemMap.cpp ItemMap.h Item.h Object.h ../../Core/Types.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  Inventory.h VolumeInfo.h InventorySlot.h
 TradeManager.o: TradeManager.cpp TradeManager.h ../../Core/Types.h \
@@ -5700,7 +5700,7 @@ TradeManager.o: TradeManager.cpp TradeManager.h ../../Core/Types.h \
  ../../Core/Assert.h EffectManager.h Effect.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Slayer.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -5738,7 +5738,7 @@ TradeManager.o: TradeManager.cpp TradeManager.h ../../Core/Types.h \
  ../../Core/PCOustersInfo.h ../../Core/PCOustersInfo2.h \
  ../../Core/PCOustersInfo3.h ../../Core/OustersSkillInfo.h \
  ../../Core/SubOustersSkillInfo.h skill/OustersSkillSlot.h ItemUtil.h \
- ../../Core/Player.h ItemMap.h /usr/include/STL/map \
+ ../../Core/Player.h ItemMap.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../LogClient.h \
  ../../Core/VSDateTime.h FlagSet.h EventItemUtil.h GamePlayer.h \
@@ -5913,7 +5913,7 @@ SkillInfo.o: SkillInfo.cpp SkillInfo.h ../../Core/Exception.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -6122,7 +6122,7 @@ InitAllStat.o: InitAllStat.cpp Slayer.h PlayerCreature.h Creature.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -6259,7 +6259,7 @@ PrecedenceTable.o: PrecedenceTable.cpp PrecedenceTable.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset
 VariableManager.o: VariableManager.cpp VariableManager.h \
  ../../Core/Exception.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -6316,10 +6316,10 @@ VariableManager.o: VariableManager.cpp VariableManager.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
- ../../Core/Properties.h /usr/include/STL/map \
+ ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h SystemAvailabilitiesManager.h \
- /usr/include/STL/bitset ../../Core/Gpackets/GCSystemAvailabilities.h \
+ /usr/include/c++/7/bitset ../../Core/Gpackets/GCSystemAvailabilities.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h
@@ -6380,11 +6380,11 @@ CombatInfoManager.o: CombatInfoManager.cpp StringPool.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h ItemInfo.h InfoClassManager.h \
  ItemFactory.h ItemLoader.h ../../Core/Gpackets/GCSystemMessage.h \
- ../../Core/PacketFactory.h ZoneGroupManager.h /usr/include/STL/map \
+ ../../Core/PacketFactory.h ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ZoneGroup.h Zone.h Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
@@ -6447,7 +6447,7 @@ UniqueItemManager.o: UniqueItemManager.cpp UniqueItemManager.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemInfoManager.h ItemInfo.h InfoClassManager.h ../database/DB.h \
@@ -6513,7 +6513,7 @@ MasterLairInfoManager.o: MasterLairInfoManager.cpp \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  MonsterSummonInfo.h MonsterInfoTypes.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Treasure.h Item.h ZoneInfo.h Zone.h Tile.h /usr/include/STL/slist \
@@ -6582,7 +6582,7 @@ MasterLairManager.o: MasterLairManager.cpp MasterLairManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
@@ -6605,7 +6605,7 @@ MasterLairManager.o: MasterLairManager.cpp MasterLairManager.h \
  OptionInfo.h Inventory.h VolumeInfo.h ItemUtil.h ItemFactoryManager.h \
  ItemFactory.h EffectMasterLairPass.h EffectContinualGroundAttack.h EffectExpTime.h \
  PacketUtil.h ../../Core/Player.h MonsterCorpse.h Corpse.h \
- ZoneInfoManager.h ZoneInfo.h ZoneGroupManager.h /usr/include/STL/map \
+ ZoneInfoManager.h ZoneInfo.h ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ZoneGroup.h ../../Core/GameTime.h \
  ../../Core/Gpackets/GMServerInfo.h ../../Core/DatagramPacket.h \
@@ -6668,7 +6668,7 @@ MonsterSummonInfo.o: MonsterSummonInfo.cpp ../../Core/Types.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Treasure.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Treasure.h \
  Item.h /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h
 LuckInfo.o: LuckInfo.cpp LuckInfo.h ../../Core/Exception.h \
@@ -6943,7 +6943,7 @@ CastleInfoManager.o: CastleInfoManager.cpp CastleInfoManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -6954,7 +6954,7 @@ CastleInfoManager.o: CastleInfoManager.cpp CastleInfoManager.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
  ItemUtil.h /usr/include/i386-linux-gnu/bits/stdio_lim.h ../../Core/Properties.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ZoneInfoManager.h Zone.h Tile.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -7041,7 +7041,7 @@ HolyLandRaceBonus.o: HolyLandRaceBonus.cpp HolyLandRaceBonus.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -7113,7 +7113,7 @@ ShrineInfoManager.o: ShrineInfoManager.cpp /usr/include/stdio.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../../Core/VSDateTime.h Zone.h Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
@@ -7132,7 +7132,7 @@ ShrineInfoManager.o: ShrineInfoManager.cpp /usr/include/stdio.h \
  RelicUtil.h CastleInfoManager.h PlayerCreature.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- GlobalItemPositionLoader.h ZoneGroupManager.h /usr/include/STL/map \
+ GlobalItemPositionLoader.h ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ZoneGroup.h ../../Core/GameTime.h \
  ../../Core/Gpackets/GMServerInfo.h ../../Core/DatagramPacket.h \
@@ -7197,7 +7197,7 @@ GlobalItemPositionLoader.o: GlobalItemPositionLoader.cpp \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  war/GlobalItemPosition.h ../database/DB.h \
@@ -7267,7 +7267,7 @@ RelicUtil.o: RelicUtil.cpp RelicUtil.h ../../Core/Exception.h \
  /usr/include/getopt.h Item.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h Zone.h \
  Tile.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
@@ -7287,7 +7287,7 @@ RelicUtil.o: RelicUtil.cpp RelicUtil.h ../../Core/Exception.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h ZoneInfoManager.h ZoneInfo.h ZoneGroupManager.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ZoneGroup.h ../../Core/GameTime.h ../../Core/Gpackets/GMServerInfo.h \
  ../../Core/DatagramPacket.h ../../Core/Datagram.h CombatInfoManager.h \
@@ -7358,7 +7358,7 @@ HolyLandManager.o: HolyLandManager.cpp HolyLandManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h PlayerCreature.h ObjectRegistry.h \
  InventorySlot.h Item.h Garbage.h RankBonus.h ExpFwd.h \
@@ -7422,7 +7422,7 @@ BloodBibleBonus.o: BloodBibleBonus.cpp BloodBibleBonus.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h
 BloodBibleBonusManager.o: BloodBibleBonusManager.cpp BloodBibleBonus.h \
@@ -7476,7 +7476,7 @@ BloodBibleBonusManager.o: BloodBibleBonusManager.cpp BloodBibleBonus.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  BloodBibleBonusManager.h /usr/include/STL/hash_map \
@@ -7553,7 +7553,7 @@ CastleShrineInfoManager.o: CastleShrineInfoManager.cpp \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../../Core/VSDateTime.h Zone.h Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
@@ -7572,7 +7572,7 @@ CastleShrineInfoManager.o: CastleShrineInfoManager.cpp \
  RelicUtil.h CastleInfoManager.h PlayerCreature.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- GlobalItemPositionLoader.h ZoneGroupManager.h /usr/include/STL/map \
+ GlobalItemPositionLoader.h ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ZoneGroup.h ../../Core/GameTime.h \
  ../../Core/Gpackets/GMServerInfo.h ../../Core/DatagramPacket.h \
@@ -7635,7 +7635,7 @@ SkillPropertyManager.o: SkillPropertyManager.cpp \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -7784,7 +7784,7 @@ PKZoneInfoManager.o: PKZoneInfoManager.cpp ../database/DB.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -7903,7 +7903,7 @@ DefaultOptionSetInfo.o: DefaultOptionSetInfo.cpp \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
@@ -8021,7 +8021,7 @@ TimeLimitItemManager.o: TimeLimitItemManager.cpp \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
@@ -8036,7 +8036,7 @@ TimeLimitItemManager.o: TimeLimitItemManager.cpp \
  ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
- ../../Core/Gpackets/GCTimeLimitItemInfo.h /usr/include/STL/map \
+ ../../Core/Gpackets/GCTimeLimitItemInfo.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h
 ItemMineInfo.o: ItemMineInfo.cpp ItemUtil.h Item.h Object.h \
@@ -8090,7 +8090,7 @@ ItemMineInfo.o: ItemMineInfo.cpp ItemUtil.h Item.h Object.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemMineInfo.h /usr/include/STL/hash_map \
@@ -8153,7 +8153,7 @@ MonsterItemDrop.o: MonsterItemDrop.cpp ItemUtil.h Item.h Object.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemMineInfo.h /usr/include/STL/hash_map \
@@ -8216,7 +8216,7 @@ InstantDungeonMonster.o: InstantDungeonMonster.cpp ItemUtil.h Item.h Object.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemMineInfo.h /usr/include/STL/hash_map \
@@ -8279,7 +8279,7 @@ CrystalOptionLoader.o: CrystalOptionLoader.cpp ItemUtil.h Item.h Object.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemMineInfo.h /usr/include/STL/hash_map \
@@ -8342,7 +8342,7 @@ MonsterItemDropOption.o: MonsterItemDropOption.cpp ItemUtil.h Item.h Object.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemMineInfo.h /usr/include/STL/hash_map \
@@ -8405,7 +8405,7 @@ MonsterDropSetup.o: MonsterDropSetup.cpp ItemUtil.h Item.h Object.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemMineInfo.h /usr/include/STL/hash_map \
@@ -8468,7 +8468,7 @@ EventItemUtil.o: EventItemUtil.cpp EventItemUtil.h ../../Core/Types.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h Slayer.h \
  PlayerCreature.h Creature.h ObjectRegistry.h ../Mutex.h \
@@ -8562,11 +8562,11 @@ SweeperSet.o: SweeperSet.cpp SweeperSet.h ../../Core/Types.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemFactory.h Inventory.h VolumeInfo.h InventorySlot.h Corpse.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  item/Sweeper.h ItemInfo.h InfoClassManager.h ItemLoader.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
@@ -8648,7 +8648,7 @@ SweeperBonus.o: SweeperBonus.cpp ../database/DB.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h
 SweeperBonusManager.o: SweeperBonusManager.cpp Zone.h \
@@ -8704,7 +8704,7 @@ SweeperBonusManager.o: SweeperBonusManager.cpp Zone.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -8720,7 +8720,7 @@ SweeperBonusManager.o: SweeperBonusManager.cpp Zone.h \
  SweeperBonus.h ItemUtil.h SweeperBonusManager.h LevelWarManager.h \
  war/Scheduler.h war/Work.h war/Schedule.h SweeperSet.h \
  MonsterCorpse.h ItemFactory.h Inventory.h VolumeInfo.h \
- InventorySlot.h Corpse.h /usr/include/STL/map \
+ InventorySlot.h Corpse.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h item/Sweeper.h ItemInfo.h \
  InfoClassManager.h ItemLoader.h ../../Core/Gpackets/GCWarList.h \
@@ -8793,9 +8793,9 @@ LevelWar.o: LevelWar.cpp LevelWar.h ../../Core/Types.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset ItemFactory.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ItemFactory.h \
  Inventory.h VolumeInfo.h InventorySlot.h Corpse.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  item/Sweeper.h ItemInfo.h InfoClassManager.h ItemLoader.h \
  ../../Core/Gpackets/GCWarList.h ../../Core/PacketFactory.h \
@@ -8856,7 +8856,7 @@ LevelWarManager.o: LevelWarManager.cpp /usr/include/stdio.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
- ../../Core/Properties.h /usr/include/STL/map \
+ ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../../Core/Player.h PlayerCreature.h \
  Creature.h Object.h ../../Core/Assert.h EffectManager.h Effect.h \
@@ -8865,7 +8865,7 @@ LevelWarManager.o: LevelWarManager.cpp /usr/include/stdio.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Garbage.h RankBonus.h ExpFwd.h \
@@ -8952,7 +8952,7 @@ LevelWarZoneInfoManager.o: LevelWarZoneInfoManager.cpp \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h InventorySlot.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Garbage.h RankBonus.h ExpFwd.h \
@@ -9036,13 +9036,13 @@ RegenZoneManager.o: RegenZoneManager.cpp RegenZoneManager.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemFactory.h Inventory.h VolumeInfo.h InventorySlot.h Corpse.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h /usr/include/STL/map \
+ /usr/include/bits/sigthread.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../database/DB.h \
  ../database/DatabaseManager.h /usr/include/STL/hash_map \
@@ -9201,7 +9201,7 @@ PetUtil.o: PetUtil.cpp PetUtil.h ../../Core/Types.h \
  ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
- /usr/include/STL/bitset ItemInfo.h InfoClassManager.h ItemFactory.h \
+ /usr/include/c++/7/bitset ItemInfo.h InfoClassManager.h ItemFactory.h \
  ItemLoader.h ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h PetTypeInfo.h PetAttrInfo.h \
@@ -9499,7 +9499,7 @@ Pet.o: Pet.cpp Pet.h Slayer.h PlayerCreature.h Creature.h Object.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -9549,7 +9549,7 @@ Pet.o: Pet.cpp Pet.h Slayer.h PlayerCreature.h Creature.h Object.h \
  gameguard/CSAuth.h Corpse.h ItemFactory.h skill/SkillUtil.h \
  ../../Core/Gpackets/GCPetUseSkill.h
 SystemAvailabilitiesManager.o: SystemAvailabilitiesManager.cpp \
- SystemAvailabilitiesManager.h /usr/include/STL/bitset \
+ SystemAvailabilitiesManager.h /usr/include/c++/7/bitset \
  /usr/lib/gcc/i686-linux-gnu/7/include/stddef.h \
  /usr/include/c++/7/string /home/darkeden/src/libs/stl_config.h \
  /home/darkeden/src/libs/stl_string_fwd.h /home/darkeden/src/libs/stl_alloc.h \
@@ -9829,7 +9829,7 @@ EventZoneInfo.o: EventZoneInfo.cpp EventZoneInfo.h ../../Core/Types.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
@@ -9898,7 +9898,7 @@ SMSServiceThread.o: SMSServiceThread.cpp SMSServiceThread.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
  ../database/Statement.h ../database/Result.h /usr/include/sys/time.h \
- ../../Core/Properties.h /usr/include/STL/map \
+ ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../../Core/Assert.h ../Timeval.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
@@ -9966,7 +9966,7 @@ SMSAddressBook.o: SMSAddressBook.cpp SMSAddressBook.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
  EffectManager.h Effect.h ../Timeval.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
- /usr/include/getopt.h ../../Core/EffectInfo.h /usr/include/STL/bitset \
+ /usr/include/getopt.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  ObjectRegistry.h InventorySlot.h Item.h Garbage.h RankBonus.h \
  ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
@@ -10082,7 +10082,7 @@ GDRLairManager.o: GDRLairManager.cpp GDRLairManager.h \
  Creature.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Zone.h Tile.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Zone.h Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
@@ -10096,7 +10096,7 @@ GDRLairManager.o: GDRLairManager.cpp GDRLairManager.h \
  PrecedenceTable.h MonsterAI.h Directive.h MonsterManager.h \
  MonsterCounter.h ../../Core/Gpackets/GCNoticeEvent.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSystemMessage.h \
- EffectKickOut.h ZoneGroupManager.h /usr/include/STL/map \
+ EffectKickOut.h ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ZoneGroup.h ../../Core/GameTime.h \
  ../../Core/Gpackets/GMServerInfo.h ../../Core/DatagramPacket.h \
@@ -10172,7 +10172,7 @@ GDRLairAbstractStates.o: GDRLairAbstractStates.cpp \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  ../../Core/Gpackets/GCGlobalChat.h Zone.h Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
- EffectManager.h ../../Core/EffectInfo.h /usr/include/STL/bitset \
+ EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -10242,7 +10242,7 @@ NicknameBook.o: NicknameBook.cpp NicknameBook.h ../../Core/Types.h \
  ../../Core/Assert.h EffectManager.h Effect.h ../Timeval.h \
  /usr/include/sys/time.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
- /usr/include/getopt.h ../../Core/EffectInfo.h /usr/include/STL/bitset \
+ /usr/include/getopt.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -10320,7 +10320,7 @@ LevelNickInfoManager.o: LevelNickInfoManager.cpp \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset
 SiegeManager.o: SiegeManager.cpp SiegeManager.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
   /usr/include/c++/7/streambuf \
@@ -10373,7 +10373,7 @@ SiegeManager.o: SiegeManager.cpp SiegeManager.h ../../Core/Types.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -10401,7 +10401,7 @@ SiegeManager.o: SiegeManager.cpp SiegeManager.h ../../Core/Types.h \
  ../PaySystem.h billing/BillingPlayerInfo.h \
  ../chinabilling/CBillingPlayerInfo.h ../chinabilling/CBillingInfo.h \
  ../../Core/Gpackets/GCReconnectLogin.h gameguard/CSAuth.h PCFinder.h \
- NPC.h couple/PartnerWaitingManager.h /usr/include/STL/map \
+ NPC.h couple/PartnerWaitingManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h CreatureUtil.h CastleInfoManager.h \
  war/WarSystem.h war/Scheduler.h war/Work.h war/Schedule.h \
@@ -10470,7 +10470,7 @@ BroadcastFilter.o: BroadcastFilter.cpp BroadcastFilter.h \
  Event.h skill/Skill.h ../PaySystem.h ../../Core/VSDateTime.h \
  billing/BillingPlayerInfo.h ../chinabilling/CBillingPlayerInfo.h \
  ../chinabilling/CBillingInfo.h ../../Core/Gpackets/GCReconnectLogin.h \
- ../../Core/PacketFactory.h /usr/include/STL/bitset gameguard/CSAuth.h \
+ ../../Core/PacketFactory.h /usr/include/c++/7/bitset gameguard/CSAuth.h \
  Creature.h Object.h ../../Core/Assert.h EffectManager.h Effect.h \
  ../../Core/EffectInfo.h
 Store.o: Store.cpp Store.h ../../Core/Types.h \
@@ -10528,7 +10528,7 @@ Store.o: Store.cpp Store.h ../../Core/Types.h \
  /usr/include/sys/time.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
- /usr/include/STL/bitset
+ /usr/include/c++/7/bitset
 AdvancementClassExpTable.o: AdvancementClassExpTable.cpp \
  AdvancementClassExpTable.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -10741,7 +10741,7 @@ DynamicZone.o: DynamicZone.cpp DynamicZone.h ../../Core/Types.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -10752,7 +10752,7 @@ DynamicZone.o: DynamicZone.cpp DynamicZone.h ../../Core/Types.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
  /home/darkeden/src/libs/stl_queue.h ZoneInfo.h ZoneGroupManager.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ZoneGroup.h ../../Core/GameTime.h ../../Core/Gpackets/GMServerInfo.h \
  ../../Core/DatagramPacket.h ../../Core/Datagram.h \
@@ -10866,7 +10866,7 @@ DynamicZoneGateOfAlter.o: DynamicZoneGateOfAlter.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -10947,7 +10947,7 @@ DynamicZoneAlterOfBlood.o: DynamicZoneAlterOfBlood.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -11023,7 +11023,7 @@ DynamicZoneAsylion.o: DynamicZoneAsylion.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -11099,7 +11099,7 @@ DynamicZoneTimeOfDungeon.o: DynamicZoneTimeOfDungeon.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -11229,7 +11229,7 @@ DynamicZoneCastleOfDefense.o: DynamicZoneCastleOfDefense.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -11326,7 +11326,7 @@ DynamicZoneSlayerMirrorOfAbyss.o: DynamicZoneSlayerMirrorOfAbyss.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -11423,7 +11423,7 @@ DynamicZoneVampireMirrorOfAbyss.o: DynamicZoneVampireMirrorOfAbyss.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -11520,7 +11520,7 @@ DynamicZonePartyOfDungeon.o: DynamicZonePartyOfDungeon.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -11617,7 +11617,7 @@ DynamicZonePartyOfDungeon2.o: DynamicZonePartyOfDungeon2.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -11714,7 +11714,7 @@ DynamicZonePartyOfDungeon3.o: DynamicZonePartyOfDungeon3.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -11811,7 +11811,7 @@ DynamicZonePartyOfDungeon4.o: DynamicZonePartyOfDungeon4.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -11908,7 +11908,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -12005,7 +12005,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -12102,7 +12102,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -12199,7 +12199,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -12296,7 +12296,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -12393,7 +12393,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -12490,7 +12490,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -12587,7 +12587,7 @@ DynamicZoneTiffagues_2_1.o:  DynamicZoneTiffagues_2_1.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -12684,7 +12684,7 @@ DynamicZoneTiffagues_2_2.o:  DynamicZoneTiffagues_2_2.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -12781,7 +12781,7 @@ DynamicZoneTiffagues_1.o:  DynamicZoneTiffagues_1.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -12878,7 +12878,7 @@ DynamicZoneBossRoom.o: DynamicZoneBossRoom.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -12975,7 +12975,7 @@ DynamicZoneMiniGame2.o: DynamicZoneMiniGame2.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -13072,7 +13072,7 @@ DynamicZoneMiniGame.o: DynamicZoneMiniGame.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -13169,7 +13169,7 @@ DynamicZoneIkLab.o: DynamicZoneIkLab.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -13266,7 +13266,7 @@ DynamicZoneIkLabSercet.o: DynamicZoneIkLabSercet.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -13363,7 +13363,7 @@ DynamicZoneBossRoom2.o: DynamicZoneBossRoom2.cpp \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -13457,7 +13457,7 @@ NewYear2005ItemUtil.o: NewYear2005ItemUtil.cpp EventItemUtil.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h Slayer.h \
  PlayerCreature.h Creature.h ObjectRegistry.h ../Mutex.h \
@@ -13552,7 +13552,7 @@ Monster.o: Monster.cpp Monster.h Creature.h Object.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset MonsterInfo.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset MonsterInfo.h \
  MonsterSummonInfo.h MonsterInfoTypes.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Treasure.h Item.h \
@@ -13663,7 +13663,7 @@ MonsterInfo.o: MonsterInfo.cpp MonsterInfoTypes.h MonsterInfo.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  MonsterSummonInfo.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Treasure.h Item.h \
@@ -13675,7 +13675,7 @@ MonsterInfo.o: MonsterInfo.cpp MonsterInfoTypes.h MonsterInfo.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../database/Statement.h ../database/Result.h ../../Core/Properties.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  skill/EffectObservingEye.h skill/EffectDetectInvisibility.h \
  EffectLoader.h ../../Core/SXml.h /usr/include/i386-linux-gnu/bits/stdio_lim.h
@@ -13731,7 +13731,7 @@ MonsterManager.o: MonsterManager.cpp MonsterManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset ../Mutex.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
@@ -13765,7 +13765,7 @@ MonsterManager.o: MonsterManager.cpp MonsterManager.h \
  war/WarSystem.h war/Scheduler.h war/Work.h war/Schedule.h \
  ../../Core/Gpackets/GCWarList.h ../../Core/GuildWarInfo.h \
  ../../Core/WarInfo.h ../../Core/ValueList.h ../../Core/RaceWarInfo.h \
- ../../Core/Properties.h /usr/include/STL/map \
+ ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h CastleInfoManager.h PlayerCreature.h \
  Garbage.h RankBonus.h ExpFwd.h \
@@ -13850,7 +13850,7 @@ MonsterAI.o: MonsterAI.cpp MonsterAI.h Creature.h Object.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Zone.h Tile.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Zone.h Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -14010,7 +14010,7 @@ MonsterNameManager.o: MonsterNameManager.cpp MonsterNameManager.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset MonsterInfo.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset MonsterInfo.h \
  MonsterSummonInfo.h MonsterInfoTypes.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Treasure.h Item.h PrecedenceTable.h ../database/DB.h \
@@ -14116,7 +14116,7 @@ Item.o: Item.cpp Item.h Object.h ../../Core/Types.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../database/DB.h ../database/DatabaseManager.h \
@@ -14186,7 +14186,7 @@ ItemInfo.o: ItemInfo.cpp ItemInfo.h ../../Core/Types.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemUtil.h VolumeInfo.h OptionInfo.h /usr/include/STL/hash_map \
@@ -14251,7 +14251,7 @@ ItemUtil.o: ItemUtil.cpp ../database/DB.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h ItemInfo.h ItemInfoManager.h \
  InfoClassManager.h OptionInfo.h ../../Core/Player.h PlayerCreature.h \
@@ -14291,7 +14291,7 @@ ItemUtil.o: ItemUtil.cpp ../database/DB.h \
  VariableManager.h ../../Core/Gpackets/GCCreateItem.h Corpse.h \
  MonsterCorpse.h ctf/FlagManager.h war/Work.h war/Scheduler.h \
  war/Schedule.h ../../Core/Gpackets/GCFlagWarStatus.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../Core/PetInfo.h ../../Core/types/PetTypes.h PetExpInfo.h \
  PetTypeInfo.h item/PetItem.h
@@ -14346,7 +14346,7 @@ ItemFactoryManager.o: ItemFactoryManager.cpp Item.h Object.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemUtil.h ItemFactoryManager.h ItemFactory.h \
@@ -14437,7 +14437,7 @@ ItemInfoManager.o: ItemInfoManager.cpp ../../Core/Exception.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemInfo.h InfoClassManager.h ItemUtil.h item/AR.h ConcreteItem.h \
@@ -14474,7 +14474,7 @@ ItemInfoManager.o: ItemInfoManager.cpp ../../Core/Exception.h \
  item/PetEnchantItem.h item/LuckyBag.h item/SMSItem.h item/CoreZap.h \
  OptionInfo.h item/TrapItem.h item/WarItem.h item/CarryingReceiver.h \
  item/ShoulderArmor.h item/Dermis.h item/Persona.h item/Fascia.h item/Mitten.h item/SubInventory.h item/StoneAbility.h item/SkillBook.h\
- item/EtheReal.h ../../Core/Properties.h /usr/include/STL/map \
+ item/EtheReal.h ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h
 ItemLoaderManager.o: ItemLoaderManager.cpp ItemLoaderManager.h \
@@ -14528,7 +14528,7 @@ ItemLoaderManager.o: ItemLoaderManager.cpp ItemLoaderManager.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemLoader.h Slayer.h PlayerCreature.h Creature.h ObjectRegistry.h \
@@ -14646,7 +14646,7 @@ SlayerCorpse.o: SlayerCorpse.cpp SlayerCorpse.h Item.h Object.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemFactory.h ../../Core/PCSlayerInfo3.h ../../Core/PCInfo.h Corpse.h \
@@ -14731,7 +14731,7 @@ VampireCorpse.o: VampireCorpse.cpp VampireCorpse.h Item.h Object.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemFactory.h Corpse.h ../../Core/PCVampireInfo3.h \
@@ -14810,7 +14810,7 @@ OustersCorpse.o: OustersCorpse.cpp OustersCorpse.h Item.h Object.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemFactory.h Corpse.h ../../Core/PCOustersInfo3.h \
@@ -14889,7 +14889,7 @@ MonsterCorpse.o: MonsterCorpse.cpp MonsterCorpse.h Item.h Object.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemFactory.h Inventory.h VolumeInfo.h InventorySlot.h Corpse.h \
@@ -14954,7 +14954,7 @@ Party.o: Party.cpp Party.h Creature.h Object.h ../../Core/Types.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset ../Mutex.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  ../../Core/ModifyInfo.h /usr/include/STL/hash_map \
@@ -14999,7 +14999,7 @@ Party.o: Party.cpp Party.h Creature.h Object.h ../../Core/Types.h \
  ../../Core/PCOustersInfo.h ../../Core/PCOustersInfo2.h \
  ../../Core/PCOustersInfo3.h ../../Core/OustersSkillInfo.h \
  ../../Core/SubOustersSkillInfo.h skill/OustersSkillSlot.h PCFinder.h \
- NPC.h couple/PartnerWaitingManager.h /usr/include/STL/map \
+ NPC.h couple/PartnerWaitingManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h PacketUtil.h GQuestManager.h \
  GQuestInventory.h ../../Core/Gpackets/GCGQuestInventory.h \
@@ -15074,7 +15074,7 @@ Guild.o: Guild.cpp /usr/include/c++/7/algorithm \
  ../../Core/Gpackets/GCGuildMemberList.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h ../../Core/PacketFactory.h \
  ../../Core/GuildMemberInfo.h ../../Core/Properties.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h
 GuildManager.o: GuildManager.cpp Guild.h ../../Core/Types.h \
@@ -15133,7 +15133,7 @@ GuildManager.o: GuildManager.cpp Guild.h ../../Core/Types.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h ../../Core/Properties.h /usr/include/STL/map \
+ ../database/Result.h ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../../Core/Gpackets/GCWaitGuildList.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
@@ -15202,7 +15202,7 @@ GuildUnion.o: GuildUnion.cpp GuildUnion.h ../../Core/Types.h \
  ../../Core/Gpackets/GGCommand.h ../../Core/DatagramPacket.h \
  ../../Core/Datagram.h LoginServerManager.h ../Thread.h \
  ../pthreadAPI.h ../../Core/DatagramSocket.h GameServer.h \
- ../../Core/Properties.h /usr/include/STL/map \
+ ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../GameServerInfoManager.h \
  ../GameServerInfo.h PacketUtil.h /usr/include/i386-linux-gnu/bits/stdio_lim.h \
@@ -15210,7 +15210,7 @@ GuildUnion.o: GuildUnion.cpp GuildUnion.h ../../Core/Types.h \
  ../../Core/Assert.h EffectManager.h Effect.h ../Timeval.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset NPC.h Zone.h Tile.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset NPC.h Zone.h Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
@@ -15325,7 +15325,7 @@ EffectManager.o: EffectManager.cpp EffectManager.h ../../Core/Types.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h EffectEnemyErase.h EffectLoader.h \
- Creature.h /usr/include/STL/bitset Zone.h Tile.h \
+ Creature.h /usr/include/c++/7/bitset Zone.h Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -15396,7 +15396,7 @@ EffectSchedule.o: EffectSchedule.cpp EffectSchedule.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h Zone.h Tile.h /usr/include/STL/slist \
- /home/darkeden/src/libs/stl_slist.h Creature.h /usr/include/STL/bitset \
+ /home/darkeden/src/libs/stl_slist.h Creature.h /usr/include/c++/7/bitset \
  Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -15461,7 +15461,7 @@ EffectLoaderManager.o: EffectLoaderManager.cpp EffectLoaderManager.h \
  Creature.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -15562,7 +15562,7 @@ EffectShutDown.o: EffectShutDown.cpp ../../Core/Assert.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Zone.h \
  Tile.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
- EffectManager.h ../../Core/EffectInfo.h /usr/include/STL/bitset \
+ EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -15585,7 +15585,7 @@ EffectShutDown.o: EffectShutDown.cpp ../../Core/Assert.h \
  ../database/Result.h Corpse.h ItemFactory.h EventShutdown.h Event.h \
  ClientManager.h EventManager.h ZoneInfoManager.h ZoneInfo.h \
  ZonePlayerManager.h ../PlayerManager.h ../../Core/Player.h \
- ZoneGroupManager.h /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ ZoneGroupManager.h /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ZoneGroup.h ../../Core/GameTime.h ../../Core/Gpackets/GMServerInfo.h \
  ../../Core/DatagramPacket.h ../../Core/Datagram.h StringPool.h \
@@ -15643,7 +15643,7 @@ EffectHPRecovery.o: EffectHPRecovery.cpp EffectHPRecovery.h Effect.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -15739,7 +15739,7 @@ EffectMPRecovery.o: EffectMPRecovery.cpp ../../Core/Assert.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  ../../Core/EffectInfo.h Zone.h Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h EffectManager.h \
- /usr/include/STL/bitset Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -15829,7 +15829,7 @@ EffectAlignmentRecovery.o: EffectAlignmentRecovery.cpp \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -15922,7 +15922,7 @@ EffectEnemyErase.o: EffectEnemyErase.cpp EffectEnemyErase.h Effect.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Slayer.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -16019,7 +16019,7 @@ EffectDecayCorpse.o: EffectDecayCorpse.cpp ../../Core/Assert.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
- EffectManager.h ../../Core/EffectInfo.h /usr/include/STL/bitset \
+ EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -16089,7 +16089,7 @@ EffectDecayItem.o: EffectDecayItem.cpp ../../Core/Assert.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
- EffectManager.h ../../Core/EffectInfo.h /usr/include/STL/bitset \
+ EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -16157,7 +16157,7 @@ EffectAftermath.o: EffectAftermath.cpp EffectAftermath.h Effect.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Slayer.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -16253,7 +16253,7 @@ EffectComa.o: EffectComa.cpp EffectComa.h Effect.h Object.h \
  Creature.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -16300,7 +16300,7 @@ EffectComa.o: EffectComa.cpp EffectComa.h Effect.h Object.h \
  ../../Core/VSDateTime.h billing/BillingPlayerInfo.h \
  ../chinabilling/CBillingPlayerInfo.h ../chinabilling/CBillingInfo.h \
  ../../Core/Gpackets/GCReconnectLogin.h gameguard/CSAuth.h \
- ZoneGroupManager.h /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ ZoneGroupManager.h /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ZoneGroup.h ../../Core/GameTime.h ../../Core/Gpackets/GMServerInfo.h \
  ../../Core/DatagramPacket.h ../../Core/Datagram.h ZoneInfo.h \
@@ -16365,7 +16365,7 @@ EffectPrecedence.o: EffectPrecedence.cpp EffectPrecedence.h Effect.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -16436,7 +16436,7 @@ EffectTransportItem.o: EffectTransportItem.cpp ../../Core/Assert.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
- EffectManager.h ../../Core/EffectInfo.h /usr/include/STL/bitset \
+ EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -16503,7 +16503,7 @@ EffectAddItem.o: EffectAddItem.cpp ../../Core/Assert.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
- EffectManager.h ../../Core/EffectInfo.h /usr/include/STL/bitset \
+ EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -16569,7 +16569,7 @@ EffectRelicTable.o: EffectRelicTable.cpp EffectRelicTable.h Effect.h \
  /usr/include/getopt.h Item.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h Slayer.h \
  PlayerCreature.h Creature.h ObjectRegistry.h ../Mutex.h \
@@ -16663,7 +16663,7 @@ EffectHasSlayerRelic.o: EffectHasSlayerRelic.cpp \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Slayer.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -16703,7 +16703,7 @@ EffectHasSlayerRelic.o: EffectHasSlayerRelic.cpp \
  MonsterInfo.h MonsterSummonInfo.h MonsterInfoTypes.h Treasure.h \
  PrecedenceTable.h MonsterCorpse.h ItemFactory.h Corpse.h \
  ../../Core/Player.h ZoneInfoManager.h ZoneInfo.h ZoneGroupManager.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ZoneGroup.h ../../Core/GameTime.h ../../Core/Gpackets/GMServerInfo.h \
  ../../Core/DatagramPacket.h ../../Core/Datagram.h StringPool.h \
@@ -16765,7 +16765,7 @@ EffectHasVampireRelic.o: EffectHasVampireRelic.cpp \
  EffectManager.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -16778,7 +16778,7 @@ EffectHasVampireRelic.o: EffectHasVampireRelic.cpp \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
  /home/darkeden/src/libs/stl_queue.h ZoneInfo.h ZoneGroupManager.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ZoneGroup.h ../../Core/GameTime.h ../../Core/Gpackets/GMServerInfo.h \
  ../../Core/DatagramPacket.h ../../Core/Datagram.h \
@@ -16864,7 +16864,7 @@ EffectIncreaseAttr.o: EffectIncreaseAttr.cpp EffectIncreaseAttr.h \
  EffectManager.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -16963,7 +16963,7 @@ EffectDeleteItem.o: EffectDeleteItem.cpp ../../Core/Assert.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
- EffectManager.h ../../Core/EffectInfo.h /usr/include/STL/bitset \
+ EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -17028,7 +17028,7 @@ EffectSlayerRelic.o: EffectSlayerRelic.cpp EffectSlayerRelic.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Slayer.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -17067,7 +17067,7 @@ EffectSlayerRelic.o: EffectSlayerRelic.cpp EffectSlayerRelic.h \
  ../../Core/SubVampireSkillInfo.h skill/VampireSkillSlot.h Monster.h \
  MonsterInfo.h MonsterSummonInfo.h MonsterInfoTypes.h Treasure.h \
  PrecedenceTable.h MonsterCorpse.h ItemFactory.h Corpse.h \
- ../../Core/Player.h ZoneGroupManager.h /usr/include/STL/map \
+ ../../Core/Player.h ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ZoneGroup.h ../../Core/GameTime.h \
  ../../Core/Gpackets/GMServerInfo.h ../../Core/DatagramPacket.h \
@@ -17128,14 +17128,14 @@ EffectVampireRelic.o: EffectVampireRelic.cpp EffectVampireRelic.h \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ZoneGroup.h Zone.h Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
@@ -17228,12 +17228,12 @@ EffectRelicPosition.o: EffectRelicPosition.cpp EffectRelicPosition.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../../Core/VSDateTime.h ZoneGroupManager.h /usr/include/STL/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ZoneGroup.h Zone.h Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h Item.h Obstacle.h Portal.h \
@@ -17307,7 +17307,7 @@ EffectRelicLock.o: EffectRelicLock.cpp EffectRelicLock.h Effect.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Slayer.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -17346,7 +17346,7 @@ EffectRelicLock.o: EffectRelicLock.cpp EffectRelicLock.h Effect.h \
  ../../Core/SubVampireSkillInfo.h skill/VampireSkillSlot.h Monster.h \
  MonsterInfo.h MonsterSummonInfo.h MonsterInfoTypes.h Treasure.h \
  PrecedenceTable.h MonsterCorpse.h ItemFactory.h Corpse.h \
- ../../Core/Player.h ZoneGroupManager.h /usr/include/STL/map \
+ ../../Core/Player.h ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ZoneGroup.h ../../Core/GameTime.h \
  ../../Core/Gpackets/GMServerInfo.h ../../Core/DatagramPacket.h \
@@ -17405,7 +17405,7 @@ EffectMasterLairPass.o: EffectMasterLairPass.cpp \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../../Core/Player.h ZoneInfoManager.h Zone.h Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
@@ -17476,7 +17476,7 @@ EffectContinualGroundAttack.o: EffectContinualGroundAttack.cpp \
  Creature.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset ../Mutex.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
@@ -17570,7 +17570,7 @@ EffectGhost.o: EffectGhost.cpp EffectGhost.h Effect.h Object.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../../Core/Player.h ZoneInfoManager.h Zone.h Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
@@ -17646,7 +17646,7 @@ EffectTransportCreature.o: EffectTransportCreature.cpp \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Zone.h Tile.h /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h \
  Creature.h EffectManager.h ../../Core/EffectInfo.h \
- /usr/include/STL/bitset Item.h Obstacle.h Portal.h \
+ /usr/include/c++/7/bitset Item.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
@@ -17727,7 +17727,7 @@ EffectGrandMasterSlayer.o: EffectGrandMasterSlayer.cpp \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Slayer.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -17815,7 +17815,7 @@ EffectMonsterMasterEffect1.o: EffectMonsterMasterEffect1.cpp \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Slayer.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -17903,7 +17903,7 @@ EffectGrandMasterVampire.o: EffectGrandMasterVampire.cpp \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../../Core/Player.h Zone.h Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
@@ -17985,7 +17985,7 @@ EffectKillAftermath.o: EffectKillAftermath.cpp EffectKillAftermath.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Slayer.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -18084,7 +18084,7 @@ EffectHasBloodBible.o: EffectHasBloodBible.cpp EffectHasBloodBible.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Slayer.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -18128,7 +18128,7 @@ EffectHasBloodBible.o: EffectHasBloodBible.cpp EffectHasBloodBible.h \
  ../../Core/VSDateTime.h ../../Core/Gpackets/GCWarList.h \
  ../../Core/GuildWarInfo.h ../../Core/WarInfo.h ../../Core/ValueList.h \
  ../../Core/RaceWarInfo.h CastleInfoManager.h ZoneInfoManager.h \
- ZoneInfo.h HolyLandManager.h ZoneGroupManager.h /usr/include/STL/map \
+ ZoneInfo.h HolyLandManager.h ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ZoneGroup.h ../../Core/GameTime.h \
  ../../Core/Gpackets/GMServerInfo.h ../../Core/DatagramPacket.h \
@@ -18190,7 +18190,7 @@ EffectShrineHoly.o: EffectShrineHoly.cpp EffectShrineHoly.h Effect.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Slayer.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -18229,7 +18229,7 @@ EffectShrineHoly.o: EffectShrineHoly.cpp EffectShrineHoly.h Effect.h \
  ../../Core/SubVampireSkillInfo.h skill/VampireSkillSlot.h Monster.h \
  MonsterInfo.h MonsterSummonInfo.h MonsterInfoTypes.h Treasure.h \
  PrecedenceTable.h MonsterCorpse.h ItemFactory.h Corpse.h \
- ../../Core/Player.h ZoneGroupManager.h /usr/include/STL/map \
+ ../../Core/Player.h ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ZoneGroup.h ../../Core/GameTime.h \
  ../../Core/Gpackets/GMServerInfo.h ../../Core/DatagramPacket.h \
@@ -18289,7 +18289,7 @@ EffectShrineGuard.o: EffectShrineGuard.cpp EffectShrineGuard.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Slayer.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -18328,7 +18328,7 @@ EffectShrineGuard.o: EffectShrineGuard.cpp EffectShrineGuard.h \
  ../../Core/SubVampireSkillInfo.h skill/VampireSkillSlot.h Monster.h \
  MonsterInfo.h MonsterSummonInfo.h MonsterInfoTypes.h Treasure.h \
  PrecedenceTable.h MonsterCorpse.h ItemFactory.h Corpse.h \
- ../../Core/Player.h ZoneGroupManager.h /usr/include/STL/map \
+ ../../Core/Player.h ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ZoneGroup.h ../../Core/GameTime.h \
  ../../Core/Gpackets/GMServerInfo.h ../../Core/DatagramPacket.h \
@@ -18388,7 +18388,7 @@ EffectShrineShield.o: EffectShrineShield.cpp EffectShrineShield.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Slayer.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -18427,7 +18427,7 @@ EffectShrineShield.o: EffectShrineShield.cpp EffectShrineShield.h \
  ../../Core/SubVampireSkillInfo.h skill/VampireSkillSlot.h Monster.h \
  MonsterInfo.h MonsterSummonInfo.h MonsterInfoTypes.h Treasure.h \
  PrecedenceTable.h MonsterCorpse.h ItemFactory.h Corpse.h \
- ../../Core/Player.h ZoneGroupManager.h /usr/include/STL/map \
+ ../../Core/Player.h ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ZoneGroup.h ../../Core/GameTime.h \
  ../../Core/Gpackets/GMServerInfo.h ../../Core/DatagramPacket.h \
@@ -18489,7 +18489,7 @@ EffectTransportItemToCorpse.o: EffectTransportItemToCorpse.cpp \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
- EffectManager.h ../../Core/EffectInfo.h /usr/include/STL/bitset \
+ EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -18557,7 +18557,7 @@ EffectAddItemToCorpse.o: EffectAddItemToCorpse.cpp ../../Core/Assert.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
- EffectManager.h ../../Core/EffectInfo.h /usr/include/STL/bitset \
+ EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -18624,7 +18624,7 @@ EffectHasRelic.o: EffectHasRelic.cpp EffectHasRelic.h Effect.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Slayer.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -18667,7 +18667,7 @@ EffectHasRelic.o: EffectHasRelic.cpp EffectHasRelic.h Effect.h \
  war/Work.h war/Schedule.h ../../Core/VSDateTime.h \
  ../../Core/Gpackets/GCWarList.h ../../Core/GuildWarInfo.h \
  ../../Core/WarInfo.h ../../Core/ValueList.h ../../Core/RaceWarInfo.h \
- ZoneInfoManager.h ZoneInfo.h ZoneGroupManager.h /usr/include/STL/map \
+ ZoneInfoManager.h ZoneInfo.h ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ZoneGroup.h ../../Core/GameTime.h \
  ../../Core/Gpackets/GMServerInfo.h ../../Core/DatagramPacket.h \
@@ -18728,7 +18728,7 @@ EffectHasCastleSymbol.o: EffectHasCastleSymbol.cpp \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../../Core/VSDateTime.h Slayer.h PlayerCreature.h ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
@@ -18772,7 +18772,7 @@ EffectHasCastleSymbol.o: EffectHasCastleSymbol.cpp \
  war/WarSystem.h war/Scheduler.h war/Work.h war/Schedule.h \
  ../../Core/Gpackets/GCWarList.h ../../Core/GuildWarInfo.h \
  ../../Core/WarInfo.h ../../Core/ValueList.h ../../Core/RaceWarInfo.h \
- ZoneInfoManager.h ZoneInfo.h ZoneGroupManager.h /usr/include/STL/map \
+ ZoneInfoManager.h ZoneInfo.h ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ZoneGroup.h ../../Core/GameTime.h \
  ../../Core/Gpackets/GMServerInfo.h ../../Core/DatagramPacket.h \
@@ -18833,7 +18833,7 @@ EffectLoveChain.o: EffectLoveChain.cpp EffectLoveChain.h Effect.h \
  EffectManager.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -18877,7 +18877,7 @@ EffectLoveChain.o: EffectLoveChain.cpp EffectLoveChain.h Effect.h \
  ../../Core/VSDateTime.h billing/BillingPlayerInfo.h \
  ../chinabilling/CBillingPlayerInfo.h ../chinabilling/CBillingInfo.h \
  ../../Core/Gpackets/GCReconnectLogin.h gameguard/CSAuth.h PCFinder.h \
- NPC.h couple/PartnerWaitingManager.h /usr/include/STL/map \
+ NPC.h couple/PartnerWaitingManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ZoneUtil.h ZoneInfoManager.h \
  ZoneInfo.h ../../Core/Gpackets/GCRemoveEffect.h \
@@ -18939,7 +18939,7 @@ EffectPKZoneRegen.o: EffectPKZoneRegen.cpp EffectPKZoneRegen.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -19036,7 +19036,7 @@ EffectPKZoneResurrection.o: EffectPKZoneResurrection.cpp \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -19105,7 +19105,7 @@ EffectGrandMasterOusters.o: EffectGrandMasterOusters.cpp \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../../Core/Player.h Zone.h Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
@@ -19187,7 +19187,7 @@ EffectTranslation.o: EffectTranslation.cpp EffectTranslation.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../../Core/Player.h Zone.h Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
@@ -19255,7 +19255,7 @@ EffectLoud.o: EffectLoud.cpp EffectLoud.h Effect.h Object.h \
  EffectManager.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -19335,7 +19335,7 @@ EffectMute.o: EffectMute.cpp EffectMute.h Effect.h Object.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Slayer.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -19384,7 +19384,7 @@ EffectMute.o: EffectMute.cpp EffectMute.h Effect.h Object.h \
  ../../Core/Gpackets/GCMorphVampire2.h \
  ../../Core/Gpackets/GCChangeDarkLight.h \
  ../../Core/Gpackets/GCRemoveEffect.h PCFinder.h NPC.h \
- couple/PartnerWaitingManager.h /usr/include/STL/map \
+ couple/PartnerWaitingManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h EventRegeneration.h
 SimpleCreatureEffect.o: SimpleCreatureEffect.cpp \
@@ -19439,7 +19439,7 @@ SimpleCreatureEffect.o: SimpleCreatureEffect.cpp \
  EffectManager.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -19519,7 +19519,7 @@ EffectRefiniumTicket.o: EffectRefiniumTicket.cpp \
  EffectManager.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -19599,7 +19599,7 @@ EffectFlagInsert.o: EffectFlagInsert.cpp EffectFlagInsert.h Effect.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Slayer.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -19638,7 +19638,7 @@ EffectFlagInsert.o: EffectFlagInsert.cpp EffectFlagInsert.h Effect.h \
  ../../Core/SubVampireSkillInfo.h skill/VampireSkillSlot.h Monster.h \
  MonsterInfo.h MonsterSummonInfo.h MonsterInfoTypes.h Treasure.h \
  PrecedenceTable.h MonsterCorpse.h ItemFactory.h Corpse.h \
- ../../Core/Player.h ZoneGroupManager.h /usr/include/STL/map \
+ ../../Core/Player.h ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ZoneGroup.h ../../Core/GameTime.h \
  ../../Core/Gpackets/GMServerInfo.h ../../Core/DatagramPacket.h \
@@ -19699,7 +19699,7 @@ EffectHasSweeper.o: EffectHasSweeper.cpp EffectHasSweeper.h Effect.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Zone.h Tile.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Zone.h Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -19765,7 +19765,7 @@ EffectKeepSweeper.o: EffectKeepSweeper.cpp EffectKeepSweeper.h \
  /usr/include/getopt.h Item.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../../Core/Gpackets/GCRemoveEffect.h ../../Core/PacketFactory.h
@@ -19821,13 +19821,13 @@ EffectRegenZone.o: EffectRegenZone.cpp EffectRegenZone.h \
  MonsterCorpse.h Item.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemFactory.h Inventory.h VolumeInfo.h InventorySlot.h Corpse.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h /usr/include/STL/map \
+ /usr/include/bits/sigthread.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h Zone.h Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h Obstacle.h Portal.h \
@@ -19892,7 +19892,7 @@ EffectTryingPosition.o: EffectTryingPosition.cpp \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -19928,7 +19928,7 @@ EffectTryingPosition.o: EffectTryingPosition.cpp \
  war/Scheduler.h war/Work.h war/Schedule.h ../../Core/VSDateTime.h \
  ../../Core/Gpackets/GCWarList.h ../../Core/GuildWarInfo.h \
  ../../Core/WarInfo.h ../../Core/ValueList.h ../../Core/RaceWarInfo.h \
- RegenZoneManager.h /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ RegenZoneManager.h /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h ZoneUtil.h \
  EffectTryRegenZone.h EffectTrying.h skill/EffectFadeOut.h \
  EffectLoader.h ../../Core/Gpackets/GCDeleteEffectFromTile.h \
@@ -19987,7 +19987,7 @@ EffectTrying.o: EffectTrying.cpp EffectTrying.h Effect.h Object.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Zone.h Tile.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Zone.h Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -20055,13 +20055,13 @@ EffectTryRegenZone.o: EffectTryRegenZone.cpp EffectTryRegenZone.h \
  MonsterCorpse.h Item.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemFactory.h Inventory.h VolumeInfo.h InventorySlot.h Corpse.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
- /usr/include/bits/sigthread.h /usr/include/STL/map \
+ /usr/include/bits/sigthread.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h Creature.h Zone.h Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Obstacle.h \
@@ -20134,7 +20134,7 @@ EffectOnBridge.o: EffectOnBridge.cpp ../database/DB.h \
  Creature.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -20222,7 +20222,7 @@ EffectHasPet.o: EffectHasPet.cpp EffectHasPet.h Effect.h Object.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -20304,7 +20304,7 @@ EffectHasPet.o: EffectHasPet.cpp EffectHasPet.h Effect.h Object.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -20386,7 +20386,7 @@ EffectHasPet.o: EffectHasPet.cpp EffectHasPet.h Effect.h Object.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -20469,7 +20469,7 @@ EffectPacketSend.o: EffectPacketSend.cpp EffectPacketSend.h Effect.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -20535,7 +20535,7 @@ EffectDarknessForbidden.o: EffectDarknessForbidden.cpp \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -20602,7 +20602,7 @@ EffectCastingTrap.o: EffectCastingTrap.cpp EffectCastingTrap.h \
  EffectManager.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../../Core/VSDateTime.h Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
@@ -20675,7 +20675,7 @@ EffectWithWarning.o: EffectWithWarning.cpp EffectWithWarning.h \
  ../../Core/Gpackets/GCAddEffect.h skill/EffectIceFieldToCreature.h \
  EffectLoader.h Zone.h Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h EffectManager.h \
- /usr/include/STL/bitset Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset Item.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -20765,7 +20765,7 @@ EffectKickOut.o: EffectKickOut.cpp EffectKickOut.h Effect.h Object.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -20840,11 +20840,11 @@ EffectGDRLairClose.o: EffectGDRLairClose.cpp EffectGDRLairClose.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  ZoneGroupManager.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ZoneGroup.h Zone.h Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h EffectManager.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset Item.h Obstacle.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset Item.h Obstacle.h \
  Portal.h quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
@@ -20906,7 +20906,7 @@ EffectEventQuestReset.o: EffectEventQuestReset.cpp \
  EffectManager.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -20974,7 +20974,7 @@ EffectShareHP.o: EffectShareHP.cpp EffectShareHP.h Effect.h Object.h \
  EffectManager.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -21069,7 +21069,7 @@ EffectCanEnterGDRLair.o: EffectCanEnterGDRLair.cpp \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Slayer.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -21164,7 +21164,7 @@ EffectSimyunEnterLoop.o: EffectSimyunEnterLoop.cpp \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Slayer.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -21260,7 +21260,7 @@ EffectAutoTurret.o: EffectAutoTurret.cpp EffectAutoTurret.h Effect.h \
  EffectManager.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -21326,7 +21326,7 @@ EffectTiffaugesRealWorldLeftUP.o: EffectTiffaugesRealWorldLeftUP.cpp EffectTiffa
  EffectManager.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -21392,7 +21392,7 @@ EffectTurretLaser.o: EffectTurretLaser.cpp EffectTurretLaser.h \
  EffectManager.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -21484,7 +21484,7 @@ EffectKillTimer.o: EffectKillTimer.cpp EffectKillTimer.h Effect.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Monster.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Monster.h \
  MonsterInfo.h MonsterSummonInfo.h MonsterInfoTypes.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -21552,7 +21552,7 @@ EffectDragonEye.o: EffectDragonEye.cpp EffectDragonEye.h \
  EffectManager.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -21644,7 +21644,7 @@ EffectRegenerate.o: EffectRegenerate.cpp EffectRegenerate.h Effect.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Monster.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Monster.h \
  MonsterInfo.h MonsterSummonInfo.h MonsterInfoTypes.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -21715,7 +21715,7 @@ EffectRecallMotorcycle.o: EffectRecallMotorcycle.cpp \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
- EffectManager.h ../../Core/EffectInfo.h /usr/include/STL/bitset \
+ EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -21803,7 +21803,7 @@ EffectRideMotorcycle.o: EffectRideMotorcycle.cpp ../../Core/Assert.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  ../../Core/Cpackets/CGRideMotorCycle.h Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h EffectManager.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset Item.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -21893,7 +21893,7 @@ EffectDonation200501.o: EffectDonation200501.cpp \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Slayer.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -21982,7 +21982,7 @@ SimpleTileEffect.o: SimpleTileEffect.cpp SimpleTileEffect.h Effect.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -22050,7 +22050,7 @@ EffectDeleteTile.o: EffectDeleteTile.cpp EffectDeleteTile.h Effect.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h Zone.h Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h EffectManager.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset Item.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -22212,14 +22212,14 @@ EventShutdown.o: EventShutdown.cpp EventShutdown.h Event.h \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ZoneGroup.h Zone.h Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
@@ -22311,7 +22311,7 @@ EventRegeneration.o: EventRegeneration.cpp EventRegeneration.h Event.h \
  ../../Core/VSDateTime.h billing/BillingPlayerInfo.h \
  ../chinabilling/CBillingPlayerInfo.h ../chinabilling/CBillingInfo.h \
  ../../Core/Gpackets/GCReconnectLogin.h ../../Core/PacketFactory.h \
- /usr/include/STL/bitset gameguard/CSAuth.h Creature.h Object.h \
+ /usr/include/c++/7/bitset gameguard/CSAuth.h Creature.h Object.h \
  ../../Core/Assert.h EffectManager.h Effect.h ../../Core/EffectInfo.h \
  Slayer.h PlayerCreature.h ObjectRegistry.h InventorySlot.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_vector.h \
@@ -22409,7 +22409,7 @@ EventSave.o: EventSave.cpp EventSave.h Event.h ../../Core/Types.h \
  ../../Core/VSDateTime.h billing/BillingPlayerInfo.h \
  ../chinabilling/CBillingPlayerInfo.h ../chinabilling/CBillingInfo.h \
  ../../Core/Gpackets/GCReconnectLogin.h ../../Core/PacketFactory.h \
- /usr/include/STL/bitset gameguard/CSAuth.h Creature.h Object.h \
+ /usr/include/c++/7/bitset gameguard/CSAuth.h Creature.h Object.h \
  ../../Core/Assert.h EffectManager.h Effect.h ../../Core/EffectInfo.h \
  Slayer.h PlayerCreature.h ObjectRegistry.h InventorySlot.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_vector.h \
@@ -22496,7 +22496,7 @@ EventMorph.o: EventMorph.cpp EventMorph.h Event.h ../../Core/Types.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset GamePlayer.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset GamePlayer.h \
  ../../Core/Player.h ../../Core/SocketEncryptOutputStream.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  ../../Core/SocketEncryptInputStream.h ../Mutex.h \
@@ -22520,7 +22520,7 @@ EventMorph.o: EventMorph.cpp EventMorph.h Event.h ../../Core/Types.h \
  couple/PartnerWaitingManager.h PlayerCreature.h Garbage.h RankBonus.h \
  ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCInfo.h \
  ../../Core/PCVampireInfo2.h ../../Core/PCVampireInfo3.h \
@@ -22606,7 +22606,7 @@ EventResurrect.o: EventResurrect.cpp EventResurrect.h Event.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -22627,7 +22627,7 @@ EventResurrect.o: EventResurrect.cpp EventResurrect.h Event.h \
  ../../Core/Gpackets/GCReconnectLogin.h ../../Core/PacketFactory.h \
  gameguard/CSAuth.h ZoneGroup.h ../../Core/GameTime.h \
  ../../Core/Gpackets/GMServerInfo.h ../../Core/DatagramPacket.h \
- ../../Core/Datagram.h ZoneGroupManager.h /usr/include/STL/map \
+ ../../Core/Datagram.h ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ZoneInfo.h ZoneInfoManager.h \
  IncomingPlayerManager.h ../PlayerManager.h ../../Core/ServerSocket.h \
@@ -22714,7 +22714,7 @@ EventReloadInfo.o: EventReloadInfo.cpp EventReloadInfo.h Event.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -22735,7 +22735,7 @@ EventReloadInfo.o: EventReloadInfo.cpp EventReloadInfo.h Event.h \
  ../../Core/Gpackets/GCReconnectLogin.h ../../Core/PacketFactory.h \
  gameguard/CSAuth.h ZoneGroup.h ../../Core/GameTime.h \
  ../../Core/Gpackets/GMServerInfo.h ../../Core/DatagramPacket.h \
- ../../Core/Datagram.h ZoneGroupManager.h /usr/include/STL/map \
+ ../../Core/Datagram.h ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ZoneInfo.h ZoneInfoManager.h \
  ZoneUtil.h IncomingPlayerManager.h ../PlayerManager.h \
@@ -22804,7 +22804,7 @@ EventTransport.o: EventTransport.cpp EventTransport.h Event.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -22883,7 +22883,7 @@ EventKick.o: EventKick.cpp EventKick.h Event.h ../../Core/Types.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -22957,7 +22957,7 @@ EventSystemMessage.o: EventSystemMessage.cpp EventSystemMessage.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -23035,7 +23035,7 @@ EventRefreshHolyLandPlayer.o: EventRefreshHolyLandPlayer.cpp \
  ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -23043,7 +23043,7 @@ EventRefreshHolyLandPlayer.o: EventRefreshHolyLandPlayer.cpp \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
- /home/darkeden/src/libs/stl_queue.h ZoneGroupManager.h /usr/include/STL/map \
+ /home/darkeden/src/libs/stl_queue.h ZoneGroupManager.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ZoneGroup.h ../../Core/GameTime.h \
  ../../Core/Gpackets/GMServerInfo.h ../../Core/DatagramPacket.h \
@@ -23101,7 +23101,7 @@ EventHeadCount.o: EventHeadCount.cpp EventHeadCount.h Event.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset Item.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -23208,7 +23208,7 @@ EventCBilling.o: EventCBilling.cpp EventCBilling.h Event.h \
  ../../Core/VSDateTime.h billing/BillingPlayerInfo.h \
  ../chinabilling/CBillingPlayerInfo.h ../chinabilling/CBillingInfo.h \
  ../../Core/Gpackets/GCReconnectLogin.h ../../Core/PacketFactory.h \
- /usr/include/STL/bitset gameguard/CSAuth.h \
+ /usr/include/c++/7/bitset gameguard/CSAuth.h \
  ../chinabilling/CBillingPlayerManager.h ../Thread.h ../pthreadAPI.h \
  ../../Core/Assert.h
 EventAuth.o: EventAuth.cpp EventAuth.h Event.h ../../Core/Types.h \
@@ -23272,7 +23272,7 @@ EventAuth.o: EventAuth.cpp EventAuth.h Event.h ../../Core/Types.h \
  ../../Core/VSDateTime.h billing/BillingPlayerInfo.h \
  ../chinabilling/CBillingPlayerInfo.h ../chinabilling/CBillingInfo.h \
  ../../Core/Gpackets/GCReconnectLogin.h ../../Core/PacketFactory.h \
- /usr/include/STL/bitset gameguard/CSAuth.h Creature.h Object.h \
+ /usr/include/c++/7/bitset gameguard/CSAuth.h Creature.h Object.h \
  ../../Core/Assert.h EffectManager.h Effect.h ../../Core/EffectInfo.h \
  Slayer.h PlayerCreature.h ObjectRegistry.h InventorySlot.h Item.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_vector.h \
@@ -23364,7 +23364,7 @@ GQuestInfo.o: GQuestInfo.cpp GQuestInfo.h ../../Core/Types.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestLevelElement.h GQuestStatus.h ../../Core/QuestStatusInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../Core/Assert.h ../../Core/Properties.h
 GQuestManager.o: GQuestManager.cpp GQuestManager.h ../../Core/Types.h \
@@ -23421,13 +23421,13 @@ GQuestManager.o: GQuestManager.cpp GQuestManager.h ../../Core/Types.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
  ../../Core/SXml.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
- GQuestElement.h /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ GQuestElement.h /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
  EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset ObjectRegistry.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
@@ -23527,7 +23527,7 @@ GQuestElement.o: GQuestElement.cpp GQuestElement.h ../../Core/Types.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestAllElements.h GQuestBloodDrainElement.h GQuestStatus.h \
- ../../Core/QuestStatusInfo.h GQuestInfo.h /usr/include/STL/map \
+ ../../Core/QuestStatusInfo.h GQuestInfo.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h GQuestGiveVampireExpElement.h \
  GQuestLevelElement.h GQuestSayNPCElement.h GQuestTimeElement.h \
@@ -23535,7 +23535,7 @@ GQuestElement.o: GQuestElement.cpp GQuestElement.h ../../Core/Types.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
  /usr/include/getopt.h GQuestTamePetElement.h GQuestExecuteElement.h \
  GQuestGiveItemElement.h Item.h Object.h ../../Core/Assert.h Effect.h \
- EffectManager.h ../../Core/EffectInfo.h /usr/include/STL/bitset \
+ EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  GQuestGiveQuestItemElement.h GQuestLoseQuestItemElement.h \
  GQuestRaceElement.h GQuestKilledElement.h \
  GQuestGiveDomainExpElement.h GQuestGiveMoneyElement.h \
@@ -23613,14 +23613,14 @@ GQuestStatus.o: GQuestStatus.cpp GQuestStatus.h ../../Core/Types.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestElement.h GQuestManager.h \
  GQuestInventory.h ../../Core/Gpackets/GCGQuestInventory.h \
- ../../Core/PacketFactory.h /usr/include/STL/map \
+ ../../Core/PacketFactory.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h \
  ../../Core/Gpackets/GCGQuestStatusModify.h PlayerCreature.h \
  Creature.h Object.h ../../Core/Assert.h EffectManager.h Effect.h \
  ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
- /usr/include/getopt.h ../../Core/EffectInfo.h /usr/include/STL/bitset \
+ /usr/include/getopt.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -23747,13 +23747,13 @@ GQuestLevelElement.o: GQuestLevelElement.cpp GQuestLevelElement.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
  EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset ObjectRegistry.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
@@ -23815,7 +23815,7 @@ GQuestTimeElement.o: GQuestTimeElement.cpp GQuestTimeElement.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
@@ -23878,7 +23878,7 @@ GQuestGiveVampireExpElement.o: GQuestGiveVampireExpElement.cpp \
  EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset ObjectRegistry.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
@@ -23970,7 +23970,7 @@ GQuestBloodDrainElement.o: GQuestBloodDrainElement.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../Core/Assert.h
 GQuestSayNPCElement.o: GQuestSayNPCElement.cpp GQuestSayNPCElement.h \
@@ -24028,7 +24028,7 @@ GQuestSayNPCElement.o: GQuestSayNPCElement.cpp GQuestSayNPCElement.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../Core/Assert.h
 GQuestExecuteElement.o: GQuestExecuteElement.cpp \
@@ -24089,7 +24089,7 @@ GQuestExecuteElement.o: GQuestExecuteElement.cpp \
  EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset ObjectRegistry.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
@@ -24155,7 +24155,7 @@ GQuestGiveQuestItemElement.o: GQuestGiveQuestItemElement.cpp \
  EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset ObjectRegistry.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
@@ -24226,7 +24226,7 @@ GQuestLoseQuestItemElement.o: GQuestLoseQuestItemElement.cpp \
  EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset ObjectRegistry.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
@@ -24292,7 +24292,7 @@ GQuestGiveItemElement.o: GQuestGiveItemElement.cpp \
  /usr/include/sys/time.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
- /usr/include/STL/bitset PlayerCreature.h Creature.h ObjectRegistry.h \
+ /usr/include/c++/7/bitset PlayerCreature.h Creature.h ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h InventorySlot.h Garbage.h RankBonus.h \
@@ -24364,7 +24364,7 @@ GQuestTamePetElement.o: GQuestTamePetElement.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../Core/Assert.h
 GQuestRaceElement.o: GQuestRaceElement.cpp GQuestRaceElement.h \
@@ -24422,13 +24422,13 @@ GQuestRaceElement.o: GQuestRaceElement.cpp GQuestRaceElement.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
  EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset ObjectRegistry.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
@@ -24490,7 +24490,7 @@ GQuestKilledElement.o: GQuestKilledElement.cpp GQuestKilledElement.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../Core/Assert.h
 GQuestGiveDomainExpElement.o: GQuestGiveDomainExpElement.cpp \
@@ -24551,7 +24551,7 @@ GQuestGiveDomainExpElement.o: GQuestGiveDomainExpElement.cpp \
  EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset ObjectRegistry.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
@@ -24645,7 +24645,7 @@ GQuestGiveMoneyElement.o: GQuestGiveMoneyElement.cpp \
  EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset ObjectRegistry.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
@@ -24710,13 +24710,13 @@ GQuestSkillLevelElement.o: GQuestSkillLevelElement.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
  EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset ObjectRegistry.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
@@ -24779,7 +24779,7 @@ GQuestRideMotorcycleElement.o: GQuestRideMotorcycleElement.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../Core/Assert.h
 GQuestGiveOustersExpElement.o: GQuestGiveOustersExpElement.cpp \
@@ -24840,7 +24840,7 @@ GQuestGiveOustersExpElement.o: GQuestGiveOustersExpElement.cpp \
  EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset ObjectRegistry.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
@@ -24932,13 +24932,13 @@ GQuestTouchWayPointElement.o: GQuestTouchWayPointElement.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  MonsterCorpse.h Item.h Object.h ../../Core/Assert.h Effect.h \
  ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
- /usr/include/STL/bitset ItemFactory.h Inventory.h VolumeInfo.h \
+ /usr/include/c++/7/bitset ItemFactory.h Inventory.h VolumeInfo.h \
  InventorySlot.h Corpse.h Zone.h Tile.h /usr/include/STL/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -25004,13 +25004,13 @@ GQuestHasQuestItemElement.o: GQuestHasQuestItemElement.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
  EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset ObjectRegistry.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
@@ -25072,13 +25072,13 @@ GQuestPartyDissectElement.o: GQuestPartyDissectElement.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../Core/Assert.h PlayerCreature.h Creature.h Object.h \
  EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset ObjectRegistry.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
@@ -25141,7 +25141,7 @@ GQuestKillMonsterElement.o: GQuestKillMonsterElement.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../Core/Assert.h
 GQuestGiveEventQuestItemElement.o: GQuestGiveEventQuestItemElement.cpp \
@@ -25202,7 +25202,7 @@ GQuestGiveEventQuestItemElement.o: GQuestGiveEventQuestItemElement.cpp \
  EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset ObjectRegistry.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
@@ -25293,12 +25293,12 @@ GQuestEventPartyElement.o: GQuestEventPartyElement.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h Party.h \
  Creature.h Object.h ../../Core/Assert.h EffectManager.h Effect.h \
  ../Timeval.h /usr/include/sys/time.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
- /usr/include/getopt.h ../../Core/EffectInfo.h /usr/include/STL/bitset \
+ /usr/include/getopt.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h ../../Core/ModifyInfo.h \
@@ -25361,7 +25361,7 @@ GQuestEventPartyCrashElement.o: GQuestEventPartyCrashElement.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../Core/Assert.h
 GQuestCompleteQuestElement.o: GQuestCompleteQuestElement.cpp \
@@ -25419,13 +25419,13 @@ GQuestCompleteQuestElement.o: GQuestCompleteQuestElement.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
  EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset ObjectRegistry.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
@@ -25487,7 +25487,7 @@ GQuestFastMoveElement.o: GQuestFastMoveElement.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../Core/Assert.h
 GQuestIllegalWarpElement.o: GQuestIllegalWarpElement.cpp \
@@ -25545,7 +25545,7 @@ GQuestIllegalWarpElement.o: GQuestIllegalWarpElement.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../Core/Assert.h
 GQuestCheckPoint.o: GQuestCheckPoint.cpp GQuestCheckPoint.h \
@@ -25594,7 +25594,7 @@ GQuestCheckPoint.o: GQuestCheckPoint.cpp GQuestCheckPoint.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
@@ -25604,7 +25604,7 @@ GQuestCheckPoint.o: GQuestCheckPoint.cpp GQuestCheckPoint.h \
  /usr/include/getopt.h EffectManager.h ../../Core/EffectInfo.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/bitset ItemFactory.h \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ItemFactory.h \
  Inventory.h VolumeInfo.h InventorySlot.h Corpse.h Zone.h Tile.h \
  /usr/include/STL/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -25674,13 +25674,13 @@ GQuestTravelElement.o: GQuestTravelElement.cpp GQuestTravelElement.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  GQuestCheckPoint.h ../../Core/Assert.h PlayerCreature.h Creature.h \
  Object.h EffectManager.h Effect.h ../Timeval.h \
  /usr/include/sys/time.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
- /usr/include/getopt.h ../../Core/EffectInfo.h /usr/include/STL/bitset \
+ /usr/include/getopt.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
@@ -25744,13 +25744,13 @@ GQuestORElement.o: GQuestORElement.cpp GQuestORElement.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
  EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset ObjectRegistry.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
@@ -25812,13 +25812,13 @@ GQuestNOTElement.o: GQuestNOTElement.cpp GQuestNOTElement.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
  EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset ObjectRegistry.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
@@ -25880,13 +25880,13 @@ GQuestRandomElement.o: GQuestRandomElement.cpp GQuestRandomElement.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
  EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset ObjectRegistry.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
@@ -25950,13 +25950,13 @@ GQuestAdvancementClassLevelElement.o: \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
  EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset ObjectRegistry.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
@@ -26018,7 +26018,7 @@ GQuestClearDynamicZoneElement.o: GQuestClearDynamicZoneElement.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../Core/Assert.h
 GQuestAddEffectElement.o: GQuestAddEffectElement.cpp \
@@ -26079,7 +26079,7 @@ GQuestAddEffectElement.o: GQuestAddEffectElement.cpp \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h PlayerCreature.h \
  Creature.h EffectManager.h ../../Core/EffectInfo.h \
- /usr/include/STL/bitset ObjectRegistry.h ../Mutex.h \
+ /usr/include/c++/7/bitset ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  InventorySlot.h Item.h Garbage.h RankBonus.h ExpFwd.h \
@@ -26150,7 +26150,7 @@ GQuestRemoveEffectElement.o: GQuestRemoveEffectElement.cpp \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h PlayerCreature.h \
  Creature.h EffectManager.h ../../Core/EffectInfo.h \
- /usr/include/STL/bitset ObjectRegistry.h ../Mutex.h \
+ /usr/include/c++/7/bitset ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  InventorySlot.h Item.h Garbage.h RankBonus.h ExpFwd.h \
@@ -26222,7 +26222,7 @@ GQuestSetEnterDynamicZoneElement.o: \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h PlayerCreature.h \
  Creature.h EffectManager.h ../../Core/EffectInfo.h \
- /usr/include/STL/bitset ObjectRegistry.h ../Mutex.h \
+ /usr/include/c++/7/bitset ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/bits/initspin.h /usr/include/bits/sigthread.h \
  InventorySlot.h Item.h Garbage.h RankBonus.h ExpFwd.h \
@@ -26290,7 +26290,7 @@ GQuestEnterDynamicZoneElement.o: GQuestEnterDynamicZoneElement.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
- /usr/include/STL/map /home/darkeden/src/libs/stl_tree.h \
+ /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ../../Core/Assert.h
 GQuestStartOtherQuestElement.o: GQuestStartOtherQuestElement.cpp \
@@ -26351,7 +26351,7 @@ GQuestStartOtherQuestElement.o: GQuestStartOtherQuestElement.cpp \
  EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset ObjectRegistry.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
@@ -26418,7 +26418,7 @@ GQuestGiveAdvancementClassExpElement.o: \
  EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset ObjectRegistry.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
@@ -26512,7 +26512,7 @@ GQuestAdvanceClassElement.o: GQuestAdvanceClassElement.cpp \
  EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset ObjectRegistry.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \
@@ -26607,7 +26607,7 @@ GQuestWarpElement.o: GQuestWarpElement.cpp GQuestWarpElement.h \
  EffectManager.h Effect.h ../Timeval.h /usr/include/sys/time.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- ../../Core/EffectInfo.h /usr/include/STL/bitset ObjectRegistry.h \
+ ../../Core/EffectInfo.h /usr/include/c++/7/bitset ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/bits/initspin.h \
  /usr/include/bits/sigthread.h InventorySlot.h Item.h Garbage.h \

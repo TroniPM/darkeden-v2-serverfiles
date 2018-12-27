@@ -338,7 +338,7 @@ void EffectHPRecovery::unaffect (Zone* pZone , ZoneCoord_t x , ZoneCoord_t y , O
 }
 
 string EffectHPRecovery::toString () const 
-	throw ()
+	
 {
 	StringStream msg;
 

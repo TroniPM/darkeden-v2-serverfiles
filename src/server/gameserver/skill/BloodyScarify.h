@@ -16,8 +16,8 @@
 class BloodyScarify: public SkillHandler 
 {
 public:
-	BloodyScarify() throw() {}
-	~BloodyScarify() throw() {}
+	BloodyScarify()  {}
+	~BloodyScarify()  {}
 	
 public:
     string getSkillHandlerName()  { return "BloodyScarify"; }

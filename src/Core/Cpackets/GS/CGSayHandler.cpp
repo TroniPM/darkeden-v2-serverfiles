@@ -139,7 +139,7 @@
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::execute (CGSay* pPacket , Player* pPlayer)
-	 throw (ProtocolException , Error)
+	 
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 		
@@ -272,7 +272,7 @@ void CGSayHandler::execute (CGSay* pPacket , Player* pPlayer)
 #ifdef __GAME_SERVER__
 
 void CGSayHandler::opExecute(Creature* pCreature, GamePlayer* pGamePlayer, string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -602,7 +602,7 @@ void CGSayHandler::opExecute(Creature* pCreature, GamePlayer* pGamePlayer, strin
 }
 
 void CGSayHandler::opcombat(GamePlayer* pGamePlayer, string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 	
@@ -741,7 +741,7 @@ void CGSayHandler::opcombat(GamePlayer* pGamePlayer, string msg, int i)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opview(GamePlayer* pGamePlayer, string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -942,7 +942,7 @@ void CGSayHandler::opview(GamePlayer* pGamePlayer, string msg, int i)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opload(GamePlayer* pGamePlayer, string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 	
@@ -1230,7 +1230,7 @@ void CGSayHandler::opload(GamePlayer* pGamePlayer, string msg, int i)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opset(GamePlayer* pGamePlayer, string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -1829,7 +1829,7 @@ void CGSayHandler::opset(GamePlayer* pGamePlayer, string msg, int i)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opzone( string msg, int i )
-	throw( ProtocolException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -1871,7 +1871,7 @@ void CGSayHandler::opzone( string msg, int i )
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opguild( string msg, int i, Creature* pCreature )
-	throw( ProtocolException, Error )
+	
 {
 	__BEGIN_TRY
 
@@ -2064,7 +2064,7 @@ void CGSayHandler::opguild( string msg, int i, Creature* pCreature )
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opsave(GamePlayer* pGamePlayer , string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -2108,7 +2108,7 @@ void CGSayHandler::opsave(GamePlayer* pGamePlayer , string msg, int i)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opwall(GamePlayer* pGamePlayer , string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -2165,7 +2165,7 @@ void CGSayHandler::opwall(GamePlayer* pGamePlayer , string msg, int i)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opshutdown(GamePlayer* pGamePlayer , string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -2227,7 +2227,7 @@ void CGSayHandler::opshutdown(GamePlayer* pGamePlayer , string msg, int i)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opkick(GamePlayer* pGamePlayer , string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -2265,7 +2265,7 @@ void CGSayHandler::opkick(GamePlayer* pGamePlayer , string msg, int i)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opmute(GamePlayer* pGamePlayer , string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -2337,7 +2337,7 @@ void CGSayHandler::opmute(GamePlayer* pGamePlayer , string msg, int i)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opdenychat(GamePlayer* pGamePlayer , string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -2437,7 +2437,7 @@ void CGSayHandler::opdenychat(GamePlayer* pGamePlayer , string msg, int i)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opfreezing(GamePlayer* pGamePlayer , string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -2468,7 +2468,7 @@ void CGSayHandler::opfreezing(GamePlayer* pGamePlayer , string msg, int i)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opdeny(GamePlayer* pGamePlayer , string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -2497,7 +2497,7 @@ void CGSayHandler::opdeny(GamePlayer* pGamePlayer , string msg, int i)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opinfo(GamePlayer* pGamePlayer , string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -2582,7 +2582,7 @@ void CGSayHandler::opinfo(GamePlayer* pGamePlayer , string msg, int i)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opgoods(GamePlayer* pGamePlayer , string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -2641,7 +2641,7 @@ void CGSayHandler::opgoods(GamePlayer* pGamePlayer , string msg, int i)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opfind(GamePlayer* pGamePlayer , string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -2694,7 +2694,7 @@ void CGSayHandler::opfind(GamePlayer* pGamePlayer , string msg, int i)
 // GCSystemMessage°¡ 256ÀÚ°¡ ÇÑ°è´Ï±î ?¶½ÉÇÏ±? by sigi. 2003.3.22
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opcredit(GamePlayer* pGamePlayer , string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY
 
@@ -2742,7 +2742,7 @@ void CGSayHandler::opcredit(GamePlayer* pGamePlayer , string msg, int i)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opuser(GamePlayer* pGamePlayer , string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -2775,7 +2775,7 @@ void CGSayHandler::opuser(GamePlayer* pGamePlayer , string msg, int i)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::optrace(GamePlayer* pGamePlayer , string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -2841,7 +2841,7 @@ void CGSayHandler::optrace(GamePlayer* pGamePlayer , string msg, int i)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::oppay(GamePlayer* pGamePlayer , string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -2896,7 +2896,7 @@ void CGSayHandler::oppay(GamePlayer* pGamePlayer , string msg, int i)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opfun(GamePlayer* pGamePlayer , string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -2986,7 +2986,7 @@ void CGSayHandler::opfun(GamePlayer* pGamePlayer , string msg, int i)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opwarp(GamePlayer* pGamePlayer , string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -3054,7 +3054,7 @@ void CGSayHandler::opwarp(GamePlayer* pGamePlayer , string msg, int i)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opcreate(GamePlayer* pGamePlayer , string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -3450,7 +3450,7 @@ void CGSayHandler::opcreate(GamePlayer* pGamePlayer , string msg, int i)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opgrant(GamePlayer* pGamePlayer , string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -3510,7 +3510,7 @@ void CGSayHandler::opgrant(GamePlayer* pGamePlayer , string msg, int i)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::oprecall(GamePlayer* pGamePlayer , string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -3678,7 +3678,7 @@ void CGSayHandler::oprecall(GamePlayer* pGamePlayer , string msg, int i)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opmrecall(GamePlayer* pGamePlayer , string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -3688,7 +3688,7 @@ void CGSayHandler::opmrecall(GamePlayer* pGamePlayer , string msg, int i)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opnotice(GamePlayer* pGamePlayer , string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -3716,7 +3716,7 @@ void CGSayHandler::opnotice(GamePlayer* pGamePlayer , string msg, int i)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opsummon(GamePlayer* pGamePlayer , string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -3953,7 +3953,7 @@ static const Effect::EffectClass FirecrackerEffects[] =
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opcommand(GamePlayer* pGamePlayer , string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -5715,7 +5715,7 @@ void CGSayHandler::opcommand(GamePlayer* pGamePlayer , string msg, int i)
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 void CGSayHandler::opworld(GamePlayer* pGamePlayer , string msg, int i, bool bSameWorldOnly)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -5781,7 +5781,7 @@ void CGSayHandler::opworld(GamePlayer* pGamePlayer , string msg, int i, bool bSa
 }
 
 void CGSayHandler::opsoulchain(GamePlayer* pPlayer, string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -5799,7 +5799,7 @@ void CGSayHandler::opsoulchain(GamePlayer* pPlayer, string msg, int i)
 }
 
 void CGSayHandler::oplog(GamePlayer* pPlayer, string msg, int i)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -5856,7 +5856,7 @@ void CGSayHandler::oplog(GamePlayer* pPlayer, string msg, int i)
 }
 
 void CGSayHandler::opmodifyunioninfo(GamePlayer* pGamePlayer , string msg, int i, bool bSameWorldOnly = true)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 
@@ -5874,7 +5874,7 @@ void CGSayHandler::opmodifyunioninfo(GamePlayer* pGamePlayer , string msg, int i
 }
 
 void CGSayHandler::oprefreshguildunion(GamePlayer* pGamePlayer , string msg, int i, bool bSameWorldOnly = true)
-	throw(ProtocolException, Error)
+	
 {
 	__BEGIN_TRY __BEGIN_DEBUG_EX
 

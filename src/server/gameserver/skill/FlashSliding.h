@@ -16,8 +16,8 @@
 class FlashSliding : public SkillHandler 
 {
 public:
-	FlashSliding() throw() {}
-	~FlashSliding() throw() {}
+	FlashSliding()  {}
+	~FlashSliding()  {}
 	
 public:
     string getSkillHandlerName()  { return "FlashSliding"; }

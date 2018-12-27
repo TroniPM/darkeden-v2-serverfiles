@@ -16,8 +16,8 @@
 class KasasArrow : public SkillHandler 
 {
 public:
-	KasasArrow() throw() {}
-	~KasasArrow() throw() {}
+	KasasArrow()  {}
+	~KasasArrow()  {}
 	
 public:
     string getSkillHandlerName()  { return "KasasArrow"; }
