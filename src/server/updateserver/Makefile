@@ -148,7 +148,7 @@ UpdateServer.o: UpdateServer.cpp /usr/include/c++/7/fstream \
  /usr/include/bits/fcntl.h /usr/include/i386-linux-gnu/sys/types.h \
  /usr/include/endian.h /usr/include/i386-linux-gnu/bits/endian.h \
  /usr/include/i386-linux-gnu/sys/select.h /usr/include/i386-linux-gnu/bits/select.h \
- /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/STL/hash_map \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_algobase.h \
  /home/darkeden/src/libs/stl_config.h /home/darkeden/src/libs/stl_relops.h \
  /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \

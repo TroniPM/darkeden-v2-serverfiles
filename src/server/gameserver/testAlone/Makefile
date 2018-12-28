@@ -137,7 +137,7 @@ main.o: main.cpp ../../../Core/Types.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  /usr/local/include/cppunit/extensions/TestSuiteBuilder.h \
  /usr/local/include/cppunit/TestSuite.h \
- /usr/local/include/cppunit/Test.h /usr/include/STL/vector \
+ /usr/local/include/cppunit/Test.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h \
  /usr/local/include/cppunit/TestCaller.h \
@@ -151,7 +151,7 @@ main.o: main.cpp ../../../Core/Types.h \
  /usr/lib/gcc-lib/i686-redhat-linux/2.95.3/include/typeinfo \
  /usr/local/include/cppunit/TextTestRunner.h \
  /usr/local/include/cppunit/ui/text/TestRunner.h TestDef.h
-Scheduler.o: Scheduler.cpp Scheduler.h /usr/include/STL/vector \
+Scheduler.o: Scheduler.cpp Scheduler.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_config.h \
  /usr/include/c++/7/stdexcept /home/darkeden/src/libs/stl_exception.h \
  /usr/include/c++/7/exception \
@@ -191,7 +191,7 @@ Scheduler.o: Scheduler.cpp Scheduler.h /usr/include/STL/vector \
  /home/darkeden/src/libs/stl_hash_fun.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h /usr/include/STL/queue \
  /home/darkeden/src/libs/stl_deque.h /home/darkeden/src/libs/stl_queue.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../../Core/Exception.h \
  ../../../Core/Types.h ../../../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream /usr/include/c++/7/fstream \
@@ -298,7 +298,7 @@ ScheduleTest.o: ScheduleTest.cpp ScheduleTest.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  /usr/local/include/cppunit/extensions/TestSuiteBuilder.h \
  /usr/local/include/cppunit/TestSuite.h \
- /usr/local/include/cppunit/Test.h /usr/include/STL/vector \
+ /usr/local/include/cppunit/Test.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h \
  /usr/local/include/cppunit/TestCaller.h \
@@ -323,7 +323,7 @@ ScheduleTest.o: ScheduleTest.cpp ScheduleTest.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h TestDef.h Work.h \
  Schedule.h VSDateTime.h Scheduler.h /usr/include/STL/queue \
  /home/darkeden/src/libs/stl_deque.h /home/darkeden/src/libs/stl_queue.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h

@@ -61,12 +61,14 @@ CORE_OBJS = WarInfo.o RaceWarInfo.o GuildWarInfo.o LevelWarInfo.o BloodBibleBonu
 			EffectInfo.o SlayerSkillInfo.o VampireSkillInfo.o \
 			SubSlayerSkillInfo.o SubVampireSkillInfo.o Utility.o VSDateTime.o ServerGroupInfo.o TimeChecker.o\
 			NPCInfo.o Shape.o Geometry.o WorldInfo.o GuildInfo.o GuildMemberInfo.o \
-			GuildInfo2.o GuildMemberInfo2.o \
+			\
+			GuildMemberInfo2.o \
 			Encrypter.o	SocketEncryptInputStream.o SocketEncryptOutputStream.o \
 			OustersSkillInfo.o PCOustersInfo.o PCOustersInfo2.o PCOustersInfo3.o SubOustersSkillInfo.o \
 			ItemNameInfo.o SweeperBonusInfo.o PetInfo.o SXml.o NicknameInfo.o QuestStatusInfo.o \
 			BloodBibleSignInfo.o StoreInfo.o
-
+#GuildInfo2.o 
+#TRONIPM: This lib ,GuildInfo2.o, was commented (his place is under NPCInfo.o Shape.o Geometry.o WorldInfo.o GuildInfo.o GuildMemberInfo.o). YOU NEED TO FIX IT.
 CORE_SRCS = $(CORE_OBJS:.o=.cpp)
 CORE_LIB = $(LIBDIR)/libCore.a
 
@@ -108,6 +110,7 @@ TARGETS = $(CORE_LIB) $(GS_PACKET_LIB) $(LS_PACKET_LIB) $(US_PACKET_LIB) $(SS_PA
 #----------------------------------------------------------------------
 # actions
 #----------------------------------------------------------------------
+
 all : $(TARGETS)
 	$(MAKE) -C Lpackets
 	$(MAKE) -C Gpackets
@@ -3440,144 +3443,144 @@ SXml.o: SXml.cpp SXml.h Types.h types/SystemTypes.h \
  types/ObjectTypes.h types/CreatureTypes.h types/ItemTypes.h \
  types/ZoneTypes.h types/QuestTypes.h types/ShopTypes.h \
  types/GuildTypes.h types/WarTypes.h types/ServerType.h Utility.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
- /home/darkeden/src/libs/stl_bvector.h /usr/include/STL/iosfwd \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
- /usr/include/STL/cstdarg /usr/include/STL/ctime \
- /usr/lib/xerces-c/include/xercesc/sax/SAXParseException.hpp \
- /usr/lib/xerces-c/include/xercesc/sax/SAXException.hpp \
- /usr/lib/xerces-c/include/xercesc/util/XMLString.hpp \
- /usr/lib/xerces-c/include/xercesc/util/BaseRefVectorOf.hpp \
- /usr/lib/xerces-c/include/xercesc/util/ArrayIndexOutOfBoundsException.hpp \
- /usr/lib/xerces-c/include/xercesc/util/XMLException.hpp \
- /usr/lib/xerces-c/include/xercesc/util/XMemory.hpp \
- /usr/lib/xerces-c/include/xercesc/util/XercesDefs.hpp \
- /usr/lib/xerces-c/include/xercesc/util/XercesVersion.hpp \
- /usr/lib/xerces-c/include/xercesc/util/AutoSense.hpp \
- /usr/lib/xerces-c/include/xercesc/util/Platforms/Linux/LinuxDefs.hpp \
- /usr/lib/xerces-c/include/xercesc/util/Compilers/GCCDefs.hpp \
- /usr/lib/xerces-c/include/xercesc/util/XMLExceptMsgs.hpp \
- /usr/lib/xerces-c/include/xercesc/dom/DOMError.hpp \
- /usr/lib/xerces-c/include/xercesc/util/XMLUni.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/XMLErrorReporter.hpp \
- /usr/lib/xerces-c/include/xercesc/util/XMLEnumerator.hpp \
- /usr/lib/xerces-c/include/xercesc/util/PlatformUtils.hpp \
- /usr/lib/xerces-c/include/xercesc/util/PanicHandler.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/MemoryManager.hpp \
- /usr/lib/xerces-c/include/xercesc/util/BaseRefVectorOf.c \
- /usr/lib/xerces-c/include/xercesc/framework/MemBufInputSource.hpp \
- /usr/lib/xerces-c/include/xercesc/sax/InputSource.hpp \
- /usr/lib/xerces-c/include/xercesc/sax2/XMLReaderFactory.hpp \
- /usr/lib/xerces-c/include/xercesc/parsers/SAX2XMLReaderImpl.hpp \
- /usr/lib/xerces-c/include/xercesc/parsers/SAXParser.hpp \
- /usr/lib/xerces-c/include/xercesc/sax/Parser.hpp \
- /usr/lib/xerces-c/include/xercesc/internal/VecAttrListImpl.hpp \
- /usr/lib/xerces-c/include/xercesc/sax/AttributeList.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/XMLAttr.hpp \
- /usr/lib/xerces-c/include/xercesc/util/QName.hpp \
- /usr/lib/xerces-c/include/xercesc/util/XMLUniDefs.hpp \
- /usr/lib/xerces-c/include/xercesc/internal/XSerializable.hpp \
- /usr/lib/xerces-c/include/xercesc/internal/XSerializeEngine.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/BinOutputStream.hpp \
- /usr/lib/xerces-c/include/xercesc/util/BinInputStream.hpp \
- /usr/lib/xerces-c/include/xercesc/util/RefHashTableOf.hpp \
- /usr/lib/xerces-c/include/xercesc/util/HashBase.hpp \
- /usr/lib/xerces-c/include/xercesc/util/IllegalArgumentException.hpp \
- /usr/lib/xerces-c/include/xercesc/util/NoSuchElementException.hpp \
- /usr/lib/xerces-c/include/xercesc/util/RuntimeException.hpp \
- /usr/lib/xerces-c/include/xercesc/util/HashXMLCh.hpp \
- /usr/lib/xerces-c/include/xercesc/util/RefHashTableOf.c \
- /usr/lib/xerces-c/include/xercesc/util/NullPointerException.hpp \
- /usr/lib/xerces-c/include/xercesc/util/ValueVectorOf.hpp \
- /usr/lib/xerces-c/include/xercesc/util/ValueVectorOf.c \
- /usr/lib/xerces-c/include/xercesc/internal/XSerializationException.hpp \
- /usr/lib/xerces-c/include/xercesc/internal/XProtoType.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/XMLAttDef.hpp \
- /usr/lib/xerces-c/include/xercesc/validators/datatype/DatatypeValidator.hpp \
- /usr/lib/xerces-c/include/xercesc/util/KVStringPair.hpp \
- /usr/lib/xerces-c/include/xercesc/util/regx/RegularExpression.hpp \
- /usr/lib/xerces-c/include/xercesc/util/RefArrayVectorOf.hpp \
- /usr/lib/xerces-c/include/xercesc/util/RefArrayVectorOf.c \
- /usr/lib/xerces-c/include/xercesc/util/Janitor.hpp \
- /usr/lib/xerces-c/include/xercesc/util/Janitor.c \
- /usr/lib/xerces-c/include/xercesc/util/Mutexes.hpp \
- /usr/lib/xerces-c/include/xercesc/util/regx/Op.hpp \
- /usr/lib/xerces-c/include/xercesc/util/RefVectorOf.hpp \
- /usr/lib/xerces-c/include/xercesc/util/RefVectorOf.c \
- /usr/lib/xerces-c/include/xercesc/util/regx/TokenFactory.hpp \
- /usr/lib/xerces-c/include/xercesc/util/regx/Token.hpp \
- /usr/lib/xerces-c/include/xercesc/util/regx/BMPattern.hpp \
- /usr/lib/xerces-c/include/xercesc/util/regx/ModifierToken.hpp \
- /usr/lib/xerces-c/include/xercesc/util/regx/ConditionToken.hpp \
- /usr/lib/xerces-c/include/xercesc/util/regx/OpFactory.hpp \
- /usr/lib/xerces-c/include/xercesc/validators/schema/SchemaSymbols.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/psvi/XSSimpleTypeDefinition.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/psvi/XSTypeDefinition.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/psvi/XSObject.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/psvi/XSConstants.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/ValidationContext.hpp \
- /usr/lib/xerces-c/include/xercesc/util/NameIdPool.hpp \
- /usr/lib/xerces-c/include/xercesc/util/NameIdPool.c \
- /usr/lib/xerces-c/include/xercesc/framework/XMLDocumentHandler.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/XMLElementDecl.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/XMLAttDefList.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/XMLEntityHandler.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/XMLBuffer.hpp \
- /usr/lib/xerces-c/include/xercesc/util/SecurityManager.hpp \
- /usr/lib/xerces-c/include/xercesc/validators/DTD/DocTypeHandler.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/XMLNotationDecl.hpp \
- /usr/lib/xerces-c/include/xercesc/validators/DTD/DTDAttDef.hpp \
- /usr/lib/xerces-c/include/xercesc/validators/DTD/DTDElementDecl.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/XMLContentModel.hpp \
- /usr/lib/xerces-c/include/xercesc/validators/DTD/DTDEntityDecl.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/XMLEntityDecl.hpp \
- /usr/lib/xerces-c/include/xercesc/internal/VecAttributesImpl.hpp \
- /usr/lib/xerces-c/include/xercesc/sax2/Attributes.hpp \
- /usr/lib/xerces-c/include/xercesc/internal/XMLScanner.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/XMLBufferMgr.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/XMLErrorCodes.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/XMLRefInfo.hpp \
- /usr/lib/xerces-c/include/xercesc/internal/ReaderMgr.hpp \
- /usr/lib/xerces-c/include/xercesc/internal/XMLReader.hpp \
- /usr/lib/xerces-c/include/xercesc/util/XMLChar.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/XMLRecognizer.hpp \
- /usr/lib/xerces-c/include/xercesc/util/RefStackOf.hpp \
- /usr/lib/xerces-c/include/xercesc/util/EmptyStackException.hpp \
- /usr/lib/xerces-c/include/xercesc/util/RefStackOf.c \
- /usr/lib/xerces-c/include/xercesc/sax/Locator.hpp \
- /usr/lib/xerces-c/include/xercesc/internal/ElemStack.hpp \
- /usr/lib/xerces-c/include/xercesc/util/StringPool.hpp \
- /usr/lib/xerces-c/include/xercesc/validators/common/GrammarResolver.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/XMLGrammarPool.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/psvi/XSModel.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/psvi/XSNamedMap.hpp \
- /usr/lib/xerces-c/include/xercesc/util/RefHash2KeysTableOf.hpp \
- /usr/lib/xerces-c/include/xercesc/util/RefHash2KeysTableOf.c \
- /usr/lib/xerces-c/include/xercesc/framework/psvi/XSNamedMap.c \
- /usr/lib/xerces-c/include/xercesc/validators/schema/SchemaElementDecl.hpp \
- /usr/lib/xerces-c/include/xercesc/validators/common/Grammar.hpp \
- /usr/lib/xerces-c/include/xercesc/validators/schema/ComplexTypeInfo.hpp \
- /usr/lib/xerces-c/include/xercesc/validators/schema/SchemaAttDef.hpp \
- /usr/lib/xerces-c/include/xercesc/validators/datatype/UnionDatatypeValidator.hpp \
- /usr/lib/xerces-c/include/xercesc/validators/schema/PSVIDefs.hpp \
- /usr/lib/xerces-c/include/xercesc/validators/schema/identity/IdentityConstraint.hpp \
- /usr/lib/xerces-c/include/xercesc/validators/schema/identity/IC_Field.hpp \
- /usr/lib/xerces-c/include/xercesc/validators/schema/identity/XPathMatcher.hpp \
- /usr/lib/xerces-c/include/xercesc/util/ValueStackOf.hpp \
- /usr/lib/xerces-c/include/xercesc/util/ValueStackOf.c \
- /usr/lib/xerces-c/include/xercesc/sax2/SAX2XMLReader.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/XMLValidator.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/XMLValidityCodes.hpp \
- /usr/lib/xerces-c/include/xercesc/framework/XMLPScanToken.hpp \
- /usr/lib/xerces-c/include/xercesc/sax2/DefaultHandler.hpp \
- /usr/lib/xerces-c/include/xercesc/sax2/ContentHandler.hpp \
- /usr/lib/xerces-c/include/xercesc/sax2/LexicalHandler.hpp \
- /usr/lib/xerces-c/include/xercesc/sax2/DeclHandler.hpp \
- /usr/lib/xerces-c/include/xercesc/sax/DTDHandler.hpp \
- /usr/lib/xerces-c/include/xercesc/sax/EntityResolver.hpp \
- /usr/lib/xerces-c/include/xercesc/sax/ErrorHandler.hpp
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /home/darkeden/src/libs/stl_bvector.h /usr/include/c++/7/iosfwd \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdarg /usr/include/c++/7/ctime \
+ /usr/include/xercesc/sax/SAXParseException.hpp \
+ /usr/include/xercesc/sax/SAXException.hpp \
+ /usr/include/xercesc/util/XMLString.hpp \
+ /usr/include/xercesc/util/BaseRefVectorOf.hpp \
+ /usr/include/xercesc/util/ArrayIndexOutOfBoundsException.hpp \
+ /usr/include/xercesc/util/XMLException.hpp \
+ /usr/include/xercesc/util/XMemory.hpp \
+ /usr/include/xercesc/util/XercesDefs.hpp \
+ /usr/include/xercesc/util/XercesVersion.hpp \
+ /home/darkeden/src/libs/AutoSense.hpp \
+ /home/darkeden/src/libs/LinuxDefs.hpp \
+ /home/darkeden/src/libs/GCCDefs.hpp \
+ /usr/include/xercesc/util/XMLExceptMsgs.hpp \
+ /usr/include/xercesc/dom/DOMError.hpp \
+ /usr/include/xercesc/util/XMLUni.hpp \
+ /usr/include/xercesc/framework/XMLErrorReporter.hpp \
+ /usr/include/xercesc/util/XMLEnumerator.hpp \
+ /usr/include/xercesc/util/PlatformUtils.hpp \
+ /usr/include/xercesc/util/PanicHandler.hpp \
+ /usr/include/xercesc/framework/MemoryManager.hpp \
+ /usr/include/xercesc/util/BaseRefVectorOf.c \
+ /usr/include/xercesc/framework/MemBufInputSource.hpp \
+ /usr/include/xercesc/sax/InputSource.hpp \
+ /usr/include/xercesc/sax2/XMLReaderFactory.hpp \
+ /usr/include/xercesc/parsers/SAX2XMLReaderImpl.hpp \
+ /usr/include/xercesc/parsers/SAXParser.hpp \
+ /usr/include/xercesc/sax/Parser.hpp \
+ /usr/include/xercesc/internal/VecAttrListImpl.hpp \
+ /usr/include/xercesc/sax/AttributeList.hpp \
+ /usr/include/xercesc/framework/XMLAttr.hpp \
+ /usr/include/xercesc/util/QName.hpp \
+ /usr/include/xercesc/util/XMLUniDefs.hpp \
+ /usr/include/xercesc/internal/XSerializable.hpp \
+ /usr/include/xercesc/internal/XSerializeEngine.hpp \
+ /usr/include/xercesc/framework/BinOutputStream.hpp \
+ /usr/include/xercesc/util/BinInputStream.hpp \
+ /usr/include/xercesc/util/RefHashTableOf.hpp \
+ /usr/include/xercesc/util/HashBase.hpp \
+ /usr/include/xercesc/util/IllegalArgumentException.hpp \
+ /usr/include/xercesc/util/NoSuchElementException.hpp \
+ /usr/include/xercesc/util/RuntimeException.hpp \
+ /usr/include/xercesc/util/HashXMLCh.hpp \
+ /usr/include/xercesc/util/RefHashTableOf.c \
+ /usr/include/xercesc/util/NullPointerException.hpp \
+ /usr/include/xercesc/util/ValueVectorOf.hpp \
+ /usr/include/xercesc/util/ValueVectorOf.c \
+ /usr/include/xercesc/internal/XSerializationException.hpp \
+ /usr/include/xercesc/internal/XProtoType.hpp \
+ /usr/include/xercesc/framework/XMLAttDef.hpp \
+ /usr/include/xercesc/validators/datatype/DatatypeValidator.hpp \
+ /usr/include/xercesc/util/KVStringPair.hpp \
+ /usr/include/xercesc/util/regx/RegularExpression.hpp \
+ /usr/include/xercesc/util/RefArrayVectorOf.hpp \
+ /usr/include/xercesc/util/RefArrayVectorOf.c \
+ /usr/include/xercesc/util/Janitor.hpp \
+ /usr/include/xercesc/util/Janitor.c \
+ /usr/include/xercesc/util/Mutexes.hpp \
+ /usr/include/xercesc/util/regx/Op.hpp \
+ /usr/include/xercesc/util/RefVectorOf.hpp \
+ /usr/include/xercesc/util/RefVectorOf.c \
+ /usr/include/xercesc/util/regx/TokenFactory.hpp \
+ /usr/include/xercesc/util/regx/Token.hpp \
+ /usr/include/xercesc/util/regx/BMPattern.hpp \
+ /usr/include/xercesc/util/regx/ModifierToken.hpp \
+ /usr/include/xercesc/util/regx/ConditionToken.hpp \
+ /usr/include/xercesc/util/regx/OpFactory.hpp \
+ /usr/include/xercesc/validators/schema/SchemaSymbols.hpp \
+ /usr/include/xercesc/framework/psvi/XSSimpleTypeDefinition.hpp \
+ /usr/include/xercesc/framework/psvi/XSTypeDefinition.hpp \
+ /usr/include/xercesc/framework/psvi/XSObject.hpp \
+ /usr/include/xercesc/framework/psvi/XSConstants.hpp \
+ /usr/include/xercesc/framework/ValidationContext.hpp \
+ /usr/include/xercesc/util/NameIdPool.hpp \
+ /usr/include/xercesc/util/NameIdPool.c \
+ /usr/include/xercesc/framework/XMLDocumentHandler.hpp \
+ /usr/include/xercesc/framework/XMLElementDecl.hpp \
+ /usr/include/xercesc/framework/XMLAttDefList.hpp \
+ /usr/include/xercesc/framework/XMLEntityHandler.hpp \
+ /usr/include/xercesc/framework/XMLBuffer.hpp \
+ /usr/include/xercesc/util/SecurityManager.hpp \
+ /usr/include/xercesc/validators/DTD/DocTypeHandler.hpp \
+ /usr/include/xercesc/framework/XMLNotationDecl.hpp \
+ /usr/include/xercesc/validators/DTD/DTDAttDef.hpp \
+ /usr/include/xercesc/validators/DTD/DTDElementDecl.hpp \
+ /usr/include/xercesc/framework/XMLContentModel.hpp \
+ /usr/include/xercesc/validators/DTD/DTDEntityDecl.hpp \
+ /usr/include/xercesc/framework/XMLEntityDecl.hpp \
+ /usr/include/xercesc/internal/VecAttributesImpl.hpp \
+ /usr/include/xercesc/sax2/Attributes.hpp \
+ /usr/include/xercesc/internal/XMLScanner.hpp \
+ /usr/include/xercesc/framework/XMLBufferMgr.hpp \
+ /usr/include/xercesc/framework/XMLErrorCodes.hpp \
+ /usr/include/xercesc/framework/XMLRefInfo.hpp \
+ /usr/include/xercesc/internal/ReaderMgr.hpp \
+ /usr/include/xercesc/internal/XMLReader.hpp \
+ /usr/include/xercesc/util/XMLChar.hpp \
+ /usr/include/xercesc/framework/XMLRecognizer.hpp \
+ /usr/include/xercesc/util/RefStackOf.hpp \
+ /usr/include/xercesc/util/EmptyStackException.hpp \
+ /usr/include/xercesc/util/RefStackOf.c \
+ /usr/include/xercesc/sax/Locator.hpp \
+ /usr/include/xercesc/internal/ElemStack.hpp \
+ /usr/include/xercesc/util/StringPool.hpp \
+ /usr/include/xercesc/validators/common/GrammarResolver.hpp \
+ /usr/include/xercesc/framework/XMLGrammarPool.hpp \
+ /usr/include/xercesc/framework/psvi/XSModel.hpp \
+ /usr/include/xercesc/framework/psvi/XSNamedMap.hpp \
+ /usr/include/xercesc/util/RefHash2KeysTableOf.hpp \
+ /usr/include/xercesc/util/RefHash2KeysTableOf.c \
+ /usr/include/xercesc/framework/psvi/XSNamedMap.c \
+ /usr/include/xercesc/validators/schema/SchemaElementDecl.hpp \
+ /usr/include/xercesc/validators/common/Grammar.hpp \
+ /usr/include/xercesc/validators/schema/ComplexTypeInfo.hpp \
+ /usr/include/xercesc/validators/schema/SchemaAttDef.hpp \
+ /usr/include/xercesc/validators/datatype/UnionDatatypeValidator.hpp \
+ /usr/include/xercesc/validators/schema/PSVIDefs.hpp \
+ /usr/include/xercesc/validators/schema/identity/IdentityConstraint.hpp \
+ /usr/include/xercesc/validators/schema/identity/IC_Field.hpp \
+ /usr/include/xercesc/validators/schema/identity/XPathMatcher.hpp \
+ /usr/include/xercesc/util/ValueStackOf.hpp \
+ /usr/include/xercesc/util/ValueStackOf.c \
+ /usr/include/xercesc/sax2/SAX2XMLReader.hpp \
+ /usr/include/xercesc/framework/XMLValidator.hpp \
+ /usr/include/xercesc/framework/XMLValidityCodes.hpp \
+ /usr/include/xercesc/framework/XMLPScanToken.hpp \
+ /usr/include/xercesc/sax2/DefaultHandler.hpp \
+ /usr/include/xercesc/sax2/ContentHandler.hpp \
+ /usr/include/xercesc/sax2/LexicalHandler.hpp \
+ /usr/include/xercesc/sax2/DeclHandler.hpp \
+ /usr/include/xercesc/sax/DTDHandler.hpp \
+ /usr/include/xercesc/sax/EntityResolver.hpp \
+ /usr/include/xercesc/sax/ErrorHandler.hpp
 NicknameInfo.o: NicknameInfo.cpp NicknameInfo.h Types.h \
  types/SystemTypes.h /usr/include/c++/7/iostream \
   /usr/include/c++/7/streambuf \
@@ -3709,7 +3712,7 @@ BloodBibleSignInfo.o: BloodBibleSignInfo.cpp BloodBibleSignInfo.h \
  types/GuildTypes.h types/WarTypes.h types/ServerType.h Utility.h \
  Exception.h StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h Packet.h SocketInputStream.h Socket.h \
- SocketImpl.h SocketAPI.h SocketOutputStream.h /usr/include/STL/vector \
+ SocketImpl.h SocketAPI.h SocketOutputStream.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Assert.h
 StoreInfo.o: StoreInfo.cpp StoreInfo.h Types.h types/SystemTypes.h \
@@ -3756,7 +3759,7 @@ StoreInfo.o: StoreInfo.cpp StoreInfo.h Types.h types/SystemTypes.h \
  Packet.h Exception.h StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h SocketInputStream.h Socket.h SocketImpl.h \
  SocketAPI.h SocketOutputStream.h PCItemInfo.h SubItemInfo.h Assert.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h
 PacketFactoryManager.o: PacketFactoryManager.cpp Assert.h Types.h \
  Cpackets/CGConnectSetKey.h \
@@ -3846,7 +3849,7 @@ PacketFactoryManager.o: PacketFactoryManager.cpp Assert.h Types.h \
  Gpackets/GCAddNewItemToZone.h Gpackets/GCAddNPC.h \
  Gpackets/GCAddSlayer.h PCSlayerInfo3.h PCInfo.h PetInfo.h \
  types/PetTypes.h VSDateTime.h NicknameInfo.h StoreInfo.h PCItemInfo.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Gpackets/GCAddSlayerCorpse.h Gpackets/GCAddVampire.h PCVampireInfo3.h \
  Gpackets/GCAddVampireCorpse.h Gpackets/GCAddVampireFromBurrowing.h \
@@ -3917,7 +3920,7 @@ PacketFactoryManager.o: PacketFactoryManager.cpp Assert.h Types.h \
  Gpackets/GCThrowItemOK1.h Gpackets/GCThrowItemOK2.h \
  Gpackets/GCThrowItemOK3.h Gpackets/GCVisibleOK.h \
  Gpackets/GCVisibleFail.h Gpackets/GCNPCInfo.h \
- Gpackets/GCNPCAskVariable.h /usr/include/STL/hash_map \
+ Gpackets/GCNPCAskVariable.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ScriptParameter.h Gpackets/GCWarScheduleList.h Gpackets/GCWarList.h \
  GuildWarInfo.h WarInfo.h ValueList.h RaceWarInfo.h \
@@ -4133,7 +4136,7 @@ PacketValidator.o: PacketValidator.cpp PacketValidator.h PacketIDSet.h \
  Exception.h StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h SocketInputStream.h Socket.h SocketImpl.h \
  SocketAPI.h SocketOutputStream.h PlayerStatus.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h
 PacketFactoryManager.o: PacketFactoryManager.cpp Assert.h Types.h \
  types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -4222,7 +4225,7 @@ PacketFactoryManager.o: PacketFactoryManager.cpp Assert.h Types.h \
  Gpackets/GCAddNewItemToZone.h Gpackets/GCAddNPC.h \
  Gpackets/GCAddSlayer.h PCSlayerInfo3.h PCInfo.h PetInfo.h \
  types/PetTypes.h VSDateTime.h NicknameInfo.h StoreInfo.h PCItemInfo.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Gpackets/GCAddSlayerCorpse.h Gpackets/GCAddVampire.h PCVampireInfo3.h \
  Gpackets/GCAddVampireCorpse.h Gpackets/GCAddVampireFromBurrowing.h \
@@ -4293,7 +4296,7 @@ PacketFactoryManager.o: PacketFactoryManager.cpp Assert.h Types.h \
  Gpackets/GCThrowItemOK1.h Gpackets/GCThrowItemOK2.h \
  Gpackets/GCThrowItemOK3.h Gpackets/GCVisibleOK.h \
  Gpackets/GCVisibleFail.h Gpackets/GCNPCInfo.h \
- Gpackets/GCNPCAskVariable.h /usr/include/STL/hash_map \
+ Gpackets/GCNPCAskVariable.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ScriptParameter.h Gpackets/GCWarScheduleList.h Gpackets/GCWarList.h \
  GuildWarInfo.h WarInfo.h ValueList.h RaceWarInfo.h \
@@ -4509,7 +4512,7 @@ PacketValidator.o: PacketValidator.cpp PacketValidator.h PacketIDSet.h \
  Exception.h StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h SocketInputStream.h Socket.h SocketImpl.h \
  SocketAPI.h SocketOutputStream.h PlayerStatus.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h
 PacketFactoryManager.o: PacketFactoryManager.cpp Assert.h Types.h \
  types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -4598,7 +4601,7 @@ PacketFactoryManager.o: PacketFactoryManager.cpp Assert.h Types.h \
  Gpackets/GCAddNewItemToZone.h Gpackets/GCAddNPC.h \
  Gpackets/GCAddSlayer.h PCSlayerInfo3.h PCInfo.h PetInfo.h \
  types/PetTypes.h VSDateTime.h NicknameInfo.h StoreInfo.h PCItemInfo.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Gpackets/GCAddSlayerCorpse.h Gpackets/GCAddVampire.h PCVampireInfo3.h \
  Gpackets/GCAddVampireCorpse.h Gpackets/GCAddVampireFromBurrowing.h \
@@ -4669,7 +4672,7 @@ PacketFactoryManager.o: PacketFactoryManager.cpp Assert.h Types.h \
  Gpackets/GCThrowItemOK1.h Gpackets/GCThrowItemOK2.h \
  Gpackets/GCThrowItemOK3.h Gpackets/GCVisibleOK.h \
  Gpackets/GCVisibleFail.h Gpackets/GCNPCInfo.h \
- Gpackets/GCNPCAskVariable.h /usr/include/STL/hash_map \
+ Gpackets/GCNPCAskVariable.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ScriptParameter.h Gpackets/GCWarScheduleList.h Gpackets/GCWarList.h \
  GuildWarInfo.h WarInfo.h ValueList.h RaceWarInfo.h \
@@ -4885,7 +4888,7 @@ PacketValidator.o: PacketValidator.cpp PacketValidator.h PacketIDSet.h \
  Exception.h StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h SocketInputStream.h Socket.h SocketImpl.h \
  SocketAPI.h SocketOutputStream.h PlayerStatus.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h
 PacketFactoryManager.o: PacketFactoryManager.cpp Assert.h Types.h \
  types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -4974,7 +4977,7 @@ PacketFactoryManager.o: PacketFactoryManager.cpp Assert.h Types.h \
  Gpackets/GCAddNewItemToZone.h Gpackets/GCAddNPC.h \
  Gpackets/GCAddSlayer.h PCSlayerInfo3.h PCInfo.h PetInfo.h \
  types/PetTypes.h VSDateTime.h NicknameInfo.h StoreInfo.h PCItemInfo.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Gpackets/GCAddSlayerCorpse.h Gpackets/GCAddVampire.h PCVampireInfo3.h \
  Gpackets/GCAddVampireCorpse.h Gpackets/GCAddVampireFromBurrowing.h \
@@ -5045,7 +5048,7 @@ PacketFactoryManager.o: PacketFactoryManager.cpp Assert.h Types.h \
  Gpackets/GCThrowItemOK1.h Gpackets/GCThrowItemOK2.h \
  Gpackets/GCThrowItemOK3.h Gpackets/GCVisibleOK.h \
  Gpackets/GCVisibleFail.h Gpackets/GCNPCInfo.h \
- Gpackets/GCNPCAskVariable.h /usr/include/STL/hash_map \
+ Gpackets/GCNPCAskVariable.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ScriptParameter.h Gpackets/GCWarScheduleList.h Gpackets/GCWarList.h \
  GuildWarInfo.h WarInfo.h ValueList.h RaceWarInfo.h \
@@ -5261,5 +5264,5 @@ PacketValidator.o: PacketValidator.cpp PacketValidator.h PacketIDSet.h \
  Exception.h StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h SocketInputStream.h Socket.h SocketImpl.h \
  SocketAPI.h SocketOutputStream.h PlayerStatus.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h

@@ -221,7 +221,7 @@ ItemIDRegistry.o: ItemIDRegistry.cpp ../../database/DB.h \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -237,7 +237,7 @@ ItemIDRegistry.o: ItemIDRegistry.cpp ../../database/DB.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
  ../../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  Motorcycle.h ../ItemFactory.h ../ItemLoader.h Potion.h \
  ../ConcreteItem.h ../ItemPolicies.h Water.h HolyWater.h Magazine.h \
@@ -312,11 +312,11 @@ AR.o: AR.cpp AR.h ../ConcreteItem.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../ItemInfoManager.h \
  ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -349,7 +349,7 @@ AR.o: AR.cpp AR.h ../ConcreteItem.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -408,11 +408,11 @@ Belt.o: Belt.cpp Belt.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -445,7 +445,7 @@ Belt.o: Belt.cpp Belt.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -504,11 +504,11 @@ Blade.o: Blade.cpp Blade.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -541,7 +541,7 @@ Blade.o: Blade.cpp Blade.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -600,14 +600,14 @@ Bomb.o: Bomb.cpp Bomb.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -635,7 +635,7 @@ Bomb.o: Bomb.cpp Bomb.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -696,14 +696,14 @@ BombMaterial.o: BombMaterial.cpp BombMaterial.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -731,7 +731,7 @@ BombMaterial.o: BombMaterial.cpp BombMaterial.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -792,11 +792,11 @@ Bracelet.o: Bracelet.cpp Bracelet.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -829,7 +829,7 @@ Bracelet.o: Bracelet.cpp Bracelet.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -888,11 +888,11 @@ Coat.o: Coat.cpp Coat.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -925,7 +925,7 @@ Coat.o: Coat.cpp Coat.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -984,11 +984,11 @@ Cross.o: Cross.cpp Cross.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -1021,7 +1021,7 @@ Cross.o: Cross.cpp Cross.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -1080,11 +1080,11 @@ Mace.o: Mace.cpp Mace.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -1117,7 +1117,7 @@ Mace.o: Mace.cpp Mace.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -1176,14 +1176,14 @@ ETC.o: ETC.cpp ETC.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -1211,7 +1211,7 @@ ETC.o: ETC.cpp ETC.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -1271,11 +1271,11 @@ Glove.o: Glove.cpp Glove.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -1308,7 +1308,7 @@ Glove.o: Glove.cpp Glove.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -1367,11 +1367,11 @@ Sword.o: Sword.cpp Sword.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -1404,7 +1404,7 @@ Sword.o: Sword.cpp Sword.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -1463,11 +1463,11 @@ Helm.o: Helm.cpp Helm.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -1500,7 +1500,7 @@ Helm.o: Helm.cpp Helm.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -1560,14 +1560,14 @@ HolyWater.o: HolyWater.cpp HolyWater.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -1595,7 +1595,7 @@ HolyWater.o: HolyWater.cpp HolyWater.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -1655,14 +1655,14 @@ Key.o: Key.cpp Key.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -1690,7 +1690,7 @@ Key.o: Key.cpp Key.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -1751,14 +1751,14 @@ LearningItem.o: LearningItem.cpp LearningItem.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -1786,7 +1786,7 @@ LearningItem.o: LearningItem.cpp LearningItem.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -1847,14 +1847,14 @@ Magazine.o: Magazine.cpp Magazine.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -1882,7 +1882,7 @@ Magazine.o: Magazine.cpp Magazine.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -1942,14 +1942,14 @@ Mine.o: Mine.cpp Mine.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -1977,7 +1977,7 @@ Mine.o: Mine.cpp Mine.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -2037,14 +2037,14 @@ Money.o: Money.cpp Money.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -2072,7 +2072,7 @@ Money.o: Money.cpp Money.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -2133,14 +2133,14 @@ Motorcycle.o: Motorcycle.cpp Motorcycle.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -2168,7 +2168,7 @@ Motorcycle.o: Motorcycle.cpp Motorcycle.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -2229,11 +2229,11 @@ Necklace.o: Necklace.cpp Necklace.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -2266,7 +2266,7 @@ Necklace.o: Necklace.cpp Necklace.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -2326,11 +2326,11 @@ Potion.o: Potion.cpp Potion.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -2363,7 +2363,7 @@ Potion.o: Potion.cpp Potion.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -2427,11 +2427,11 @@ Ring.o: Ring.cpp Ring.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -2464,7 +2464,7 @@ Ring.o: Ring.cpp Ring.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -2524,11 +2524,11 @@ SG.o: SG.cpp SG.h ../ConcreteItem.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../ItemInfoManager.h \
  ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -2561,7 +2561,7 @@ SG.o: SG.cpp SG.h ../ConcreteItem.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -2621,11 +2621,11 @@ SMG.o: SMG.cpp SMG.h ../ConcreteItem.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../ItemInfoManager.h \
  ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -2658,7 +2658,7 @@ SMG.o: SMG.cpp SMG.h ../ConcreteItem.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -2718,11 +2718,11 @@ Shield.o: Shield.cpp Shield.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -2755,7 +2755,7 @@ Shield.o: Shield.cpp Shield.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -2814,11 +2814,11 @@ Shoes.o: Shoes.cpp Shoes.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -2851,7 +2851,7 @@ Shoes.o: Shoes.cpp Shoes.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -2911,11 +2911,11 @@ SR.o: SR.cpp SR.h ../ConcreteItem.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../ItemInfoManager.h \
  ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -2948,7 +2948,7 @@ SR.o: SR.cpp SR.h ../ConcreteItem.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -3008,11 +3008,11 @@ Trouser.o: Trouser.cpp Trouser.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -3045,7 +3045,7 @@ Trouser.o: Trouser.cpp Trouser.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -3105,11 +3105,11 @@ VampireBracelet.o: VampireBracelet.cpp VampireBracelet.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -3142,7 +3142,7 @@ VampireBracelet.o: VampireBracelet.cpp VampireBracelet.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -3202,11 +3202,11 @@ VampireRing.o: VampireRing.cpp VampireRing.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -3239,7 +3239,7 @@ VampireRing.o: VampireRing.cpp VampireRing.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -3299,11 +3299,11 @@ VampireNecklace.o: VampireNecklace.cpp VampireNecklace.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -3336,7 +3336,7 @@ VampireNecklace.o: VampireNecklace.cpp VampireNecklace.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -3396,11 +3396,11 @@ VampireCoat.o: VampireCoat.cpp VampireCoat.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -3433,7 +3433,7 @@ VampireCoat.o: VampireCoat.cpp VampireCoat.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -3492,14 +3492,14 @@ Water.o: Water.cpp Water.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -3527,7 +3527,7 @@ Water.o: Water.cpp Water.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -3587,14 +3587,14 @@ Skull.o: Skull.cpp Skull.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -3622,7 +3622,7 @@ Skull.o: Skull.cpp Skull.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -3686,14 +3686,14 @@ Serum.o: Serum.cpp Serum.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -3721,7 +3721,7 @@ Serum.o: Serum.cpp Serum.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -3782,14 +3782,14 @@ VampireETC.o: VampireETC.cpp VampireETC.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -3817,7 +3817,7 @@ VampireETC.o: VampireETC.cpp VampireETC.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -3878,14 +3878,14 @@ SlayerPortalItem.o: SlayerPortalItem.cpp SlayerPortalItem.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -3913,7 +3913,7 @@ SlayerPortalItem.o: SlayerPortalItem.cpp SlayerPortalItem.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -3974,14 +3974,14 @@ VampirePortalItem.o: VampirePortalItem.cpp VampirePortalItem.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -4009,7 +4009,7 @@ VampirePortalItem.o: VampirePortalItem.cpp VampirePortalItem.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -4071,14 +4071,14 @@ EventGiftBox.o: EventGiftBox.cpp EventGiftBox.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -4106,7 +4106,7 @@ EventGiftBox.o: EventGiftBox.cpp EventGiftBox.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -4171,14 +4171,14 @@ EventStar.o: EventStar.cpp EventStar.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -4206,7 +4206,7 @@ EventStar.o: EventStar.cpp EventStar.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -4271,11 +4271,11 @@ VampireEarring.o: VampireEarring.cpp VampireEarring.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -4308,7 +4308,7 @@ VampireEarring.o: VampireEarring.cpp VampireEarring.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -4367,14 +4367,14 @@ Relic.o: Relic.cpp Relic.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -4402,7 +4402,7 @@ Relic.o: Relic.cpp Relic.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -4463,11 +4463,11 @@ VampireWeapon.o: VampireWeapon.cpp VampireWeapon.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -4500,7 +4500,7 @@ VampireWeapon.o: VampireWeapon.cpp VampireWeapon.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -4560,11 +4560,11 @@ VampireAmulet.o: VampireAmulet.cpp VampireAmulet.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -4597,7 +4597,7 @@ VampireAmulet.o: VampireAmulet.cpp VampireAmulet.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -4657,14 +4657,14 @@ QuestItem.o: QuestItem.cpp QuestItem.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -4692,7 +4692,7 @@ QuestItem.o: QuestItem.cpp QuestItem.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -4756,7 +4756,7 @@ Gun.o: Gun.cpp Gun.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemUtil.h \
  ../../../Core/PCItemInfo.h ../../../Core/SubItemInfo.h
@@ -4813,14 +4813,14 @@ EventTree.o: EventTree.cpp EventTree.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -4848,7 +4848,7 @@ EventTree.o: EventTree.cpp EventTree.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -4913,14 +4913,14 @@ EventETC.o: EventETC.cpp EventETC.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -4948,7 +4948,7 @@ EventETC.o: EventETC.cpp EventETC.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -5014,14 +5014,14 @@ BloodBible.o: BloodBible.cpp /usr/include/stdio.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -5049,7 +5049,7 @@ BloodBible.o: BloodBible.cpp /usr/include/stdio.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/c++/7/cstdio ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -5110,14 +5110,14 @@ CastleSymbol.o: CastleSymbol.cpp /usr/include/stdio.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -5145,7 +5145,7 @@ CastleSymbol.o: CastleSymbol.cpp /usr/include/stdio.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/c++/7/cstdio ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -5205,14 +5205,14 @@ CoupleRing.o: CoupleRing.cpp CoupleRing.h CoupleRingBase.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -5240,7 +5240,7 @@ CoupleRing.o: CoupleRing.cpp CoupleRing.h CoupleRingBase.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -5302,14 +5302,14 @@ VampireCoupleRing.o: VampireCoupleRing.cpp VampireCoupleRing.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -5337,7 +5337,7 @@ VampireCoupleRing.o: VampireCoupleRing.cpp VampireCoupleRing.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -5399,7 +5399,7 @@ CoupleRingBase.o: CoupleRingBase.cpp CoupleRingBase.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h CoupleRing.h ../ItemInfo.h \
  ../InfoClassManager.h ../ItemFactory.h ../ItemLoader.h ../../Mutex.h \
@@ -5459,14 +5459,14 @@ EventItem.o: EventItem.cpp EventItem.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -5494,7 +5494,7 @@ EventItem.o: EventItem.cpp EventItem.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -5559,11 +5559,11 @@ DyePotion.o: DyePotion.cpp DyePotion.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -5596,7 +5596,7 @@ DyePotion.o: DyePotion.cpp DyePotion.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -5660,14 +5660,14 @@ ResurrectItem.o: ResurrectItem.cpp ResurrectItem.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -5695,7 +5695,7 @@ ResurrectItem.o: ResurrectItem.cpp ResurrectItem.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -5760,14 +5760,14 @@ MixingItem.o: MixingItem.cpp MixingItem.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -5795,7 +5795,7 @@ MixingItem.o: MixingItem.cpp MixingItem.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -5860,11 +5860,11 @@ OustersArmsband.o: OustersArmsband.cpp OustersArmsband.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -5897,7 +5897,7 @@ OustersArmsband.o: OustersArmsband.cpp OustersArmsband.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -5961,11 +5961,11 @@ OustersBoots.o: OustersBoots.cpp OustersBoots.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -5998,7 +5998,7 @@ OustersBoots.o: OustersBoots.cpp OustersBoots.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -6062,11 +6062,11 @@ OustersChakram.o: OustersChakram.cpp OustersChakram.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -6099,7 +6099,7 @@ OustersChakram.o: OustersChakram.cpp OustersChakram.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -6163,11 +6163,11 @@ OustersCirclet.o: OustersCirclet.cpp OustersCirclet.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -6200,7 +6200,7 @@ OustersCirclet.o: OustersCirclet.cpp OustersCirclet.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -6264,11 +6264,11 @@ OustersCoat.o: OustersCoat.cpp OustersCoat.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -6301,7 +6301,7 @@ OustersCoat.o: OustersCoat.cpp OustersCoat.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -6365,11 +6365,11 @@ OustersPendent.o: OustersPendent.cpp OustersPendent.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -6402,7 +6402,7 @@ OustersPendent.o: OustersPendent.cpp OustersPendent.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -6466,11 +6466,11 @@ OustersRing.o: OustersRing.cpp OustersRing.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -6503,7 +6503,7 @@ OustersRing.o: OustersRing.cpp OustersRing.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -6567,11 +6567,11 @@ OustersStone.o: OustersStone.cpp OustersStone.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -6604,7 +6604,7 @@ OustersStone.o: OustersStone.cpp OustersStone.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -6668,11 +6668,11 @@ OustersWristlet.o: OustersWristlet.cpp OustersWristlet.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -6705,7 +6705,7 @@ OustersWristlet.o: OustersWristlet.cpp OustersWristlet.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -6768,14 +6768,14 @@ Larva.o: Larva.cpp Larva.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -6803,7 +6803,7 @@ Larva.o: Larva.cpp Larva.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -6871,14 +6871,14 @@ Pupa.o: Pupa.cpp Pupa.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -6906,7 +6906,7 @@ Pupa.o: Pupa.cpp Pupa.h ../Item.h ../Object.h ../../../Core/Types.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -6975,11 +6975,11 @@ ComposMei.o: ComposMei.cpp ComposMei.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -7012,7 +7012,7 @@ ComposMei.o: ComposMei.cpp ComposMei.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -7080,14 +7080,14 @@ OustersSummonItem.o: OustersSummonItem.cpp OustersSummonItem.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -7115,7 +7115,7 @@ OustersSummonItem.o: OustersSummonItem.cpp OustersSummonItem.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -7180,11 +7180,11 @@ EffectItem.o: EffectItem.cpp EffectItem.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -7217,7 +7217,7 @@ EffectItem.o: EffectItem.cpp EffectItem.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -7281,14 +7281,14 @@ CodeSheet.o: CodeSheet.cpp CodeSheet.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -7316,7 +7316,7 @@ CodeSheet.o: CodeSheet.cpp CodeSheet.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -7381,14 +7381,14 @@ MoonCard.o: MoonCard.cpp MoonCard.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -7416,7 +7416,7 @@ MoonCard.o: MoonCard.cpp MoonCard.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -7481,14 +7481,14 @@ CommonItem.o: CommonItem.cpp CommonItem.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -7516,7 +7516,7 @@ CommonItem.o: CommonItem.cpp CommonItem.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -7581,14 +7581,14 @@ Sweeper.o: Sweeper.cpp /usr/include/stdio.h /usr/include/features.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -7616,7 +7616,7 @@ Sweeper.o: Sweeper.cpp /usr/include/stdio.h /usr/include/features.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio ../skill/Skill.h ../skill/SkillSlot.h \
+ /usr/include/c++/7/cstdio ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
  ../../../Core/PCVampireInfo3.h ../../../Core/VampireSkillInfo.h \
@@ -7676,7 +7676,7 @@ PetItem.o: PetItem.cpp PetItem.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
@@ -7684,7 +7684,7 @@ PetItem.o: PetItem.cpp PetItem.h ../Item.h ../Object.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../../Core/PetInfo.h ../../../Core/types/PetTypes.h \
  ../../../Core/VSDateTime.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -7713,7 +7713,7 @@ PetItem.o: PetItem.cpp PetItem.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -7786,14 +7786,14 @@ PetFood.o: PetFood.cpp PetFood.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../../Core/types/PetTypes.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -7822,7 +7822,7 @@ PetFood.o: PetFood.cpp PetFood.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -7887,14 +7887,14 @@ PetEnchantItem.o: PetEnchantItem.cpp PetEnchantItem.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../../Core/types/PetTypes.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -7923,7 +7923,7 @@ PetEnchantItem.o: PetEnchantItem.cpp PetEnchantItem.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -7988,14 +7988,14 @@ LuckyBag.o: LuckyBag.cpp LuckyBag.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -8023,7 +8023,7 @@ LuckyBag.o: LuckyBag.cpp LuckyBag.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -8088,11 +8088,11 @@ SMSItem.o: SMSItem.cpp SMSItem.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -8125,7 +8125,7 @@ SMSItem.o: SMSItem.cpp SMSItem.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -8189,11 +8189,11 @@ CoreZap.o: CoreZap.cpp CoreZap.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -8225,7 +8225,7 @@ CoreZap.o: CoreZap.cpp CoreZap.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -8289,14 +8289,14 @@ TrapItem.o: TrapItem.cpp TrapItem.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../database/DB.h ../../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
@@ -8324,7 +8324,7 @@ TrapItem.o: TrapItem.cpp TrapItem.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -8389,14 +8389,14 @@ WarItem.o: WarItem.cpp /usr/include/stdio.h /usr/include/features.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ItemInfo.h ../InfoClassManager.h \
  ../ItemFactory.h ../ItemLoader.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../ItemInfoManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -8455,11 +8455,11 @@ CarryingReceiver.o: CarryingReceiver.cpp CarryingReceiver.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -8492,7 +8492,7 @@ CarryingReceiver.o: CarryingReceiver.cpp CarryingReceiver.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -8552,11 +8552,11 @@ ShoulderArmor.o: ShoulderArmor.cpp ShoulderArmor.h ../Item.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -8589,7 +8589,7 @@ ShoulderArmor.o: ShoulderArmor.cpp ShoulderArmor.h ../Item.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -8649,11 +8649,11 @@ Dermis.o: Dermis.cpp Dermis.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -8686,7 +8686,7 @@ Dermis.o: Dermis.cpp Dermis.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -8746,11 +8746,11 @@ Persona.o: Persona.cpp Persona.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -8783,7 +8783,7 @@ Persona.o: Persona.cpp Persona.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -8843,11 +8843,11 @@ Fascia.o: Fascia.cpp Fascia.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -8880,7 +8880,7 @@ Fascia.o: Fascia.cpp Fascia.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -8944,11 +8944,11 @@ Mitten.o: Mitten.cpp Mitten.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -8981,7 +8981,7 @@ Mitten.o: Mitten.cpp Mitten.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -9045,11 +9045,11 @@ SubInventory.o: SubInventory.cpp SubInventory.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -9082,7 +9082,7 @@ SubInventory.o: SubInventory.cpp SubInventory.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -9146,11 +9146,11 @@ SubInventory.o: SubInventory.cpp SubInventory.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -9183,7 +9183,7 @@ SubInventory.o: SubInventory.cpp SubInventory.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -9247,11 +9247,11 @@ SubInventory.o: SubInventory.cpp SubInventory.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -9284,7 +9284,7 @@ SubInventory.o: SubInventory.cpp SubInventory.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -9348,11 +9348,11 @@ StoneAbility.o: StoneAbility.cpp StoneAbility.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -9385,7 +9385,7 @@ StoneAbility.o: StoneAbility.cpp StoneAbility.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -9449,11 +9449,11 @@ StoneAbility.o: StoneAbility.cpp StoneAbility.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -9486,7 +9486,7 @@ StoneAbility.o: StoneAbility.cpp StoneAbility.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -9550,11 +9550,11 @@ CoatZap.o: CoatZap.cpp CoatZap.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -9587,7 +9587,7 @@ CoatZap.o: CoatZap.cpp CoatZap.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -9651,11 +9651,11 @@ BootZap.o: BootZap.cpp BootZap.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -9688,7 +9688,7 @@ BootZap.o: BootZap.cpp BootZap.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -9752,11 +9752,11 @@ WeaponZap.o: WeaponZap.cpp WeaponZap.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -9789,7 +9789,7 @@ WeaponZap.o: WeaponZap.cpp WeaponZap.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -9853,11 +9853,11 @@ HelmZap.o: HelmZap.cpp HelmZap.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -9890,7 +9890,7 @@ HelmZap.o: HelmZap.cpp HelmZap.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -9954,11 +9954,11 @@ BeltZap.o: BeltZap.cpp BeltZap.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -9991,7 +9991,7 @@ BeltZap.o: BeltZap.cpp BeltZap.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -10055,11 +10055,11 @@ GloveZap.o: GloveZap.cpp GloveZap.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -10092,7 +10092,7 @@ GloveZap.o: GloveZap.cpp GloveZap.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -10156,11 +10156,11 @@ ShoesZap.o: ShoesZap.cpp ShoesZap.h ../Item.h ../Object.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../ConcreteItem.h ../ItemInfo.h \
  ../ItemInfoManager.h ../InfoClassManager.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -10193,7 +10193,7 @@ ShoesZap.o: ShoesZap.cpp ShoesZap.h ../Item.h ../Object.h \
  ../../../Core/SlayerSkillInfo.h ../../../Core/PCSkillInfo.h \
  ../../../Core/SubSlayerSkillInfo.h ../CreatureUtil.h \
  ../SlayerAttrExpTable.h ../SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \

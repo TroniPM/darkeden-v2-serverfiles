@@ -25,6 +25,7 @@ RUN apt update && apt install -y \
     build-essential \
     libcppunit-dev \
     zlib1g \
+    libxerces-c-dev \
     #libstdc++6-4.7-dev \
     #libstdc++-4.8-dev \
     #nano \

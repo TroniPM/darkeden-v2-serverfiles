@@ -127,13 +127,13 @@ PartnerWaitingManager.o: PartnerWaitingManager.cpp ../PlayerCreature.h \
  /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- ../InventorySlot.h ../Item.h /usr/include/STL/vector \
+ ../InventorySlot.h ../Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Garbage.h ../RankBonus.h \
  ../ExpFwd.h ../../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../../Core/PacketFactory.h \
  ../../../Core/Gpackets/GCSelectQuestID.h ../OptionInfo.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h ../PCFinder.h ../NPC.h ../Zone.h \
  ../Tile.h ../Obstacle.h ../Portal.h ../quest/TriggerManager.h \
@@ -193,7 +193,7 @@ CoupleManager.o: CoupleManager.cpp ../../database/DatabaseManager.h \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -210,7 +210,7 @@ CoupleManager.o: CoupleManager.cpp ../../database/DatabaseManager.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
  /usr/include/c++/7/bitset ../ObjectRegistry.h ../InventorySlot.h \
- ../Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ ../Item.h /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h ../Garbage.h ../RankBonus.h \
  ../ExpFwd.h ../../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../../Core/PacketFactory.h \
@@ -285,11 +285,11 @@ WaitForMeet.o: WaitForMeet.cpp ../../../Core/Assert.h \
  ../gameguard/CSAuth.h ../Slayer.h ../PlayerCreature.h ../Creature.h \
  ../Object.h ../EffectManager.h ../Effect.h ../../../Core/EffectInfo.h \
  ../ObjectRegistry.h ../InventorySlot.h ../Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_vector.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Garbage.h ../RankBonus.h \
  ../ExpFwd.h ../../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../../Core/Gpackets/GCSelectQuestID.h ../OptionInfo.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h ../Zone.h ../Tile.h ../Obstacle.h \
  ../Portal.h ../quest/TriggerManager.h ../quest/Trigger.h \
@@ -310,7 +310,7 @@ WaitForMeet.o: WaitForMeet.cpp ../../../Core/Assert.h \
  ../../database/DatabaseManager.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
- ../../database/Result.h /usr/include/STL/cstdio \
+ ../../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -381,13 +381,13 @@ WaitForApart.o: WaitForApart.cpp ../../../Core/Assert.h \
  /usr/include/c++/7/bitset ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- ../InventorySlot.h ../Item.h /usr/include/STL/vector \
+ ../InventorySlot.h ../Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Garbage.h ../RankBonus.h \
  ../ExpFwd.h ../../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../../Core/PacketFactory.h \
  ../../../Core/Gpackets/GCSelectQuestID.h ../OptionInfo.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h ../Zone.h ../Tile.h ../Obstacle.h \
  ../Portal.h ../quest/TriggerManager.h ../quest/Trigger.h \
@@ -410,7 +410,7 @@ WaitForApart.o: WaitForApart.cpp ../../../Core/Assert.h \
  ../../database/DatabaseManager.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
- ../../database/Result.h /usr/include/STL/cstdio \
+ ../../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \

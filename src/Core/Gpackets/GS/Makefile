@@ -752,12 +752,12 @@ GCAddGearToInventory.o: GCAddGearToInventory.cpp \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  /home/darkeden/vs/src/server/gameserver/InventorySlot.h \
  /home/darkeden/vs/src/server/gameserver/Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  /home/darkeden/vs/src/server/gameserver/Garbage.h \
  /home/darkeden/vs/src/server/gameserver/RankBonus.h \
  /home/darkeden/vs/src/server/gameserver/quest/Squest/QuestManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/vs/src/server/gameserver/Inventory.h \
  /home/darkeden/vs/src/server/gameserver/VolumeInfo.h \
@@ -16928,7 +16928,7 @@ GCShopList.o: GCShopList.cpp GCShopList.h \
  /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  /home/darkeden/vs/src/server/gameserver/EffectManager.h \
  /home/darkeden/vs/src/Core/EffectInfo.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h
 GCShopListHandler.o: GCShopListHandler.cpp GCShopList.h \
  /home/darkeden/vs/src/Core/Packet.h \
@@ -17059,7 +17059,7 @@ GCShopListMysterious.o: GCShopListMysterious.cpp \
  /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  /home/darkeden/vs/src/server/gameserver/EffectManager.h \
  /home/darkeden/vs/src/Core/EffectInfo.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h
 GCShopListMysteriousHandler.o: GCShopListMysteriousHandler.cpp \
  GCShopListMysterious.h /home/darkeden/vs/src/Core/Packet.h \
@@ -26205,7 +26205,7 @@ GCNPCInfoHandler.o: GCNPCInfoHandler.cpp GCNPCInfo.h \
  /home/darkeden/vs/src/Core/RideMotorcycleSlotInfo.h \
  /home/darkeden/vs/src/Core/NPCInfo.h
 GCNPCAskVariable.o: GCNPCAskVariable.cpp GCNPCAskVariable.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_algobase.h /home/darkeden/src/libs/stl_config.h \
  /home/darkeden/src/libs/stl_relops.h /home/darkeden/src/libs/stl_pair.h \
  /usr/include/c++/7/ext/type_traits.h /usr/include/string.h \
@@ -26267,7 +26267,7 @@ GCNPCAskVariable.o: GCNPCAskVariable.cpp GCNPCAskVariable.h \
  /home/darkeden/vs/src/Core/PacketFactory.h \
  /home/darkeden/vs/src/Core/ScriptParameter.h
 GCNPCAskVariableHandler.o: GCNPCAskVariableHandler.cpp \
- GCNPCAskVariable.h /usr/include/STL/hash_map \
+ GCNPCAskVariable.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_algobase.h \
  /home/darkeden/src/libs/stl_config.h /home/darkeden/src/libs/stl_relops.h \
  /home/darkeden/src/libs/stl_pair.h /usr/include/c++/7/ext/type_traits.h \

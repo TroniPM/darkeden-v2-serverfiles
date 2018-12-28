@@ -163,7 +163,7 @@ Mofus.o: Mofus.cpp Mofus.h /home/darkeden/vs/src/Core/Types.h \
  /home/darkeden/vs/src/server/database/DatabaseManager.h \
  /home/darkeden/vs/src/Core/Exception.h \
  /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h /usr/include/STL/hash_map \
+ /home/darkeden/src/libs/stl_list.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/vs/src/server/database/Connection.h \
@@ -386,7 +386,7 @@ MPlayerManager.o: MPlayerManager.cpp Mofus.h \
  /home/darkeden/vs/src/server/gameserver/ObjectRegistry.h \
  /home/darkeden/vs/src/server/gameserver/InventorySlot.h \
  /home/darkeden/vs/src/server/gameserver/Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_vector.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h \
  /home/darkeden/vs/src/server/gameserver/Garbage.h \
  /home/darkeden/vs/src/server/gameserver/RankBonus.h \
@@ -395,7 +395,7 @@ MPlayerManager.o: MPlayerManager.cpp Mofus.h \
  /home/darkeden/vs/src/Core/PacketFactory.h \
  /home/darkeden/vs/src/Core/Gpackets/GCSelectQuestID.h \
  /home/darkeden/vs/src/server/gameserver/OptionInfo.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h \
  /home/darkeden/vs/src/server/gameserver/PCFinder.h \

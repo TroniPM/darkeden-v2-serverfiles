@@ -116,10 +116,10 @@ FlagManager.o: FlagManager.cpp FlagManager.h ../../../Core/Types.h \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../war/Work.h ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../war/Scheduler.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
- /home/darkeden/src/libs/stl_queue.h /usr/include/STL/hash_map \
+ /home/darkeden/src/libs/stl_queue.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../war/Schedule.h ../../../Core/VSDateTime.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
@@ -204,11 +204,11 @@ FlagWar.o: FlagWar.cpp FlagWar.h ../war/Work.h \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h ../../../Core/VSDateTime.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  FlagManager.h ../war/Scheduler.h /usr/include/STL/queue \
  /home/darkeden/src/libs/stl_deque.h /home/darkeden/src/libs/stl_queue.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../war/Schedule.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
@@ -282,7 +282,7 @@ NewbieFlagWar.o: NewbieFlagWar.cpp NewbieFlagWar.h FlagWar.h \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h ../../../Core/VSDateTime.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../ZoneUtil.h ../Creature.h ../Object.h ../../../Core/Assert.h \
  ../EffectManager.h ../Effect.h ../../Timeval.h \
@@ -296,7 +296,7 @@ NewbieFlagWar.o: NewbieFlagWar.cpp NewbieFlagWar.h FlagWar.h \
  ../Zone.h ../Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h ../Item.h ../Obstacle.h ../Portal.h \
  ../quest/TriggerManager.h ../quest/Trigger.h ../quest/Condition.h \
- ../quest/PropertyBuffer.h ../Sector.h /usr/include/STL/hash_map \
+ ../quest/PropertyBuffer.h ../Sector.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \

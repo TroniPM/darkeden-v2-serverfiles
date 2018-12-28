@@ -121,7 +121,7 @@ Guild.o: Guild.cpp /usr/include/c++/7/algorithm \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../Core/VSDateTime.h ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \
@@ -184,7 +184,7 @@ GuildManager.o: GuildManager.cpp Guild.h ../../Core/Types.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../Core/VSDateTime.h GuildManager.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
@@ -247,7 +247,7 @@ ResurrectLocationManager.o: ResurrectLocationManager.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/DB.h ../database/DatabaseManager.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
@@ -400,7 +400,7 @@ GameServerInfoManager.o: GameServerInfoManager.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h GameServerInfo.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/DB.h ../database/DatabaseManager.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
@@ -458,7 +458,7 @@ GameServerGroupInfoManager.o: GameServerGroupInfoManager.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- GameServerGroupInfo.h /usr/include/STL/hash_map \
+ GameServerGroupInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/DatabaseManager.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
@@ -524,7 +524,7 @@ GameServerManager.o: GameServerManager.cpp /usr/include/stdio.h \
  ../../Core/SocketAPI.h ../../Core/Socket.h ../Mutex.h \
  ../../Core/Assert.h ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
- /home/darkeden/src/libs/stl_multimap.h Guild.h /usr/include/STL/hash_map \
+ /home/darkeden/src/libs/stl_multimap.h Guild.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../Core/VSDateTime.h \
  GuildManager.h ../../Core/Packet.h ../../Core/SocketInputStream.h \
@@ -578,7 +578,7 @@ SharedServer.o: SharedServer.cpp SharedServer.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- GameServerInfoManager.h GameServerInfo.h /usr/include/STL/hash_map \
+ GameServerInfoManager.h GameServerInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h GameServerGroupInfoManager.h \
  GameServerGroupInfo.h GameServerManager.h ../Thread.h ../pthreadAPI.h \
@@ -597,7 +597,7 @@ SharedServer.o: SharedServer.cpp SharedServer.h ../../Core/Types.h \
  ../../Core/SocketInputStream.h ../../Core/SocketOutputStream.h \
  ../../Core/PacketFactory.h ../../Core/PacketValidator.h \
  ../../Core/PacketIDSet.h ../../Core/PlayerStatus.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h ../GameWorldInfoManager.h \
  ../GameWorldInfo.h GuildManager.h ResurrectLocationManager.h \
  StringPool.h ../LogClient.h
@@ -695,7 +695,7 @@ StringPool.o: StringPool.cpp StringPool.h ../../Core/Exception.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h /usr/include/STL/hash_map \
+ /home/darkeden/src/libs/stl_list.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \

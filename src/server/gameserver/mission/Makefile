@@ -143,10 +143,10 @@ QuestInfo.o: QuestInfo.cpp QuestInfo.h ../../../Core/Types.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
  ../../../Core/SocketOutputStream.h ../../../Core/PacketFactory.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  QuestManager.h QuestStatus.h ../../../Core/VSDateTime.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h EventQuestAdvance.h \
  ../PlayerCreature.h ../Creature.h ../Object.h ../EffectManager.h \
  ../Effect.h ../../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
@@ -181,7 +181,7 @@ QuestInfo.o: QuestInfo.cpp QuestInfo.h ../../../Core/Types.h \
  ../../database/DatabaseManager.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
- ../../database/Result.h /usr/include/STL/cstdio \
+ ../../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -242,11 +242,11 @@ MonsterKillQuestInfo.o: MonsterKillQuestInfo.cpp \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
  ../../../Core/SocketOutputStream.h ../../../Core/PacketFactory.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  MonsterKillQuestStatus.h QuestStatus.h ../../../Core/VSDateTime.h \
  ../../../Core/Gpackets/GCQuestStatus.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -306,7 +306,7 @@ GatherItemQuestInfo.o: GatherItemQuestInfo.cpp GatherItemQuestStatus.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- ../../../Core/PacketFactory.h /usr/include/STL/vector \
+ ../../../Core/PacketFactory.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Item.h ../Object.h ../Effect.h \
  ../../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
@@ -320,7 +320,7 @@ GatherItemQuestInfo.o: GatherItemQuestInfo.cpp GatherItemQuestStatus.h \
  ../InventorySlot.h ../Garbage.h ../RankBonus.h ../ExpFwd.h \
  ../../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../../Core/Gpackets/GCSelectQuestID.h ../OptionInfo.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h
 MeetNPCQuestInfo.o: MeetNPCQuestInfo.cpp MeetNPCQuestInfo.h \
@@ -374,11 +374,11 @@ MeetNPCQuestInfo.o: MeetNPCQuestInfo.cpp MeetNPCQuestInfo.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
  ../../../Core/SocketOutputStream.h ../../../Core/PacketFactory.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  MeetNPCQuestStatus.h QuestStatus.h ../../../Core/VSDateTime.h \
  ../../../Core/Gpackets/GCQuestStatus.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -436,7 +436,7 @@ RewardClass.o: RewardClass.cpp RewardClass.h ../../../Core/Types.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
  ../../../Core/SocketOutputStream.h ../../../Core/PacketFactory.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  RewardInfo.h ../../../Core/Assert.h
 RandomRewardClass.o: RandomRewardClass.cpp RandomRewardClass.h \
@@ -489,7 +489,7 @@ RandomRewardClass.o: RandomRewardClass.cpp RandomRewardClass.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
  ../../../Core/SocketOutputStream.h ../../../Core/PacketFactory.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  RewardInfo.h ../../../Core/Assert.h
 SlayerWeaponRewardClass.o: SlayerWeaponRewardClass.cpp \
@@ -542,7 +542,7 @@ SlayerWeaponRewardClass.o: SlayerWeaponRewardClass.cpp \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
  ../../../Core/SocketOutputStream.h ../../../Core/PacketFactory.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../PlayerCreature.h ../Creature.h ../Object.h ../../../Core/Assert.h \
  ../EffectManager.h ../Effect.h ../../Timeval.h \
@@ -555,7 +555,7 @@ SlayerWeaponRewardClass.o: SlayerWeaponRewardClass.cpp \
  ../InventorySlot.h ../Item.h ../Garbage.h ../RankBonus.h ../ExpFwd.h \
  ../../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../../Core/Gpackets/GCSelectQuestID.h ../OptionInfo.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h ../Slayer.h ../Zone.h ../Tile.h \
  ../Obstacle.h ../Portal.h ../quest/TriggerManager.h \
@@ -579,7 +579,7 @@ SlayerWeaponRewardClass.o: SlayerWeaponRewardClass.cpp \
  ../../database/DatabaseManager.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
- ../../database/Result.h /usr/include/STL/cstdio \
+ ../../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Ousters.h \
  ../../../Core/PCOustersInfo.h ../../../Core/PCOustersInfo2.h \
@@ -636,7 +636,7 @@ AnotherQuestRewardClass.o: AnotherQuestRewardClass.cpp \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
  ../../../Core/SocketOutputStream.h ../../../Core/PacketFactory.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  RewardInfo.h ../../../Core/Assert.h
 RewardInfo.o: RewardInfo.cpp RewardInfo.h ../../../Core/Types.h \
@@ -688,7 +688,7 @@ RewardInfo.o: RewardInfo.cpp RewardInfo.h ../../../Core/Types.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
  ../../../Core/SocketOutputStream.h ../../../Core/PacketFactory.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h
 ItemRewardInfo.o: ItemRewardInfo.cpp ItemRewardInfo.h \
  ../../../Core/Types.h ../../../Core/types/SystemTypes.h \
@@ -743,7 +743,7 @@ ItemRewardInfo.o: ItemRewardInfo.cpp ItemRewardInfo.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h RewardInfo.h \
  ../../../Core/Gpackets/GCNPCResponse.h ../../../Core/PacketFactory.h \
@@ -754,7 +754,7 @@ ItemRewardInfo.o: ItemRewardInfo.cpp ItemRewardInfo.h \
  ../RankBonus.h ../ExpFwd.h \
  ../../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../../Core/Gpackets/GCSelectQuestID.h ../OptionInfo.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h ../Inventory.h ../VolumeInfo.h \
  ../ItemInfoManager.h ../ItemInfo.h ../InfoClassManager.h \
@@ -826,12 +826,12 @@ QuestAdvanceRewardInfo.o: QuestAdvanceRewardInfo.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h RewardInfo.h \
  ../../../Core/Gpackets/GCNPCResponse.h ../../../Core/PacketFactory.h \
  QuestManager.h QuestInfo.h RewardClass.h QuestStatus.h \
- ../../../Core/VSDateTime.h /usr/include/STL/hash_map \
+ ../../../Core/VSDateTime.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  EventQuestAdvance.h ../PlayerCreature.h ../Creature.h \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
@@ -894,12 +894,12 @@ AnotherQuestRewardInfo.o: AnotherQuestRewardInfo.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h RewardInfo.h \
  ../../../Core/Gpackets/GCNPCResponse.h ../../../Core/PacketFactory.h \
  QuestManager.h QuestInfo.h RewardClass.h QuestStatus.h \
- ../../../Core/VSDateTime.h /usr/include/STL/hash_map \
+ ../../../Core/VSDateTime.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../PlayerCreature.h ../Creature.h ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
@@ -959,7 +959,7 @@ MiniGameQuestInfo.o: MiniGameQuestInfo.cpp MiniGameQuestInfo.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
  ../../../Core/SocketOutputStream.h ../../../Core/PacketFactory.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  MiniGameQuestStatus.h QuestStatus.h ../../../Core/VSDateTime.h \
  ../../../Core/Gpackets/GCQuestStatus.h
@@ -1013,10 +1013,10 @@ QuestInfoManager.o: QuestInfoManager.cpp QuestInfoManager.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
  ../../../Core/SocketOutputStream.h ../../../Core/PacketFactory.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  QuestInfo.h ../../../Core/Assert.h RewardClass.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h ItemRewardInfo.h ../Item.h ../Object.h \
  ../Effect.h ../../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
  /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
@@ -1096,9 +1096,9 @@ SimpleQuestInfoManager.o: SimpleQuestInfoManager.cpp \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
  ../../../Core/SocketOutputStream.h ../../../Core/PacketFactory.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- RewardClass.h /usr/include/STL/vector \
+ RewardClass.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  RewardClassInfoManager.h MonsterKillQuestInfo.h QuestInfo.h \
  ../../../Core/Assert.h MonsterKillQuestStatus.h QuestStatus.h \
@@ -1161,9 +1161,9 @@ EventQuestInfoManager.o: EventQuestInfoManager.cpp \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
  ../../../Core/SocketOutputStream.h ../../../Core/PacketFactory.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- RewardClass.h /usr/include/STL/vector \
+ RewardClass.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  RewardClassInfoManager.h MonsterKillQuestInfo.h QuestInfo.h \
  ../../../Core/Assert.h MonsterKillQuestStatus.h QuestStatus.h \
@@ -1231,9 +1231,9 @@ RewardClassInfoManager.o: RewardClassInfoManager.cpp \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
  ../../../Core/SocketOutputStream.h ../../../Core/PacketFactory.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- RandomRewardClass.h RewardClass.h /usr/include/STL/vector \
+ RandomRewardClass.h RewardClass.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  SlayerWeaponRewardClass.h ItemRewardInfo.h ../Item.h ../Object.h \
  ../../../Core/Assert.h ../Effect.h ../../Timeval.h \
@@ -1298,7 +1298,7 @@ SimpleQuestRewardManager.o: SimpleQuestRewardManager.cpp \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
  ../../../Core/SocketOutputStream.h ../../../Core/PacketFactory.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/DB.h ../../database/DatabaseManager.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
@@ -1311,7 +1311,7 @@ SimpleQuestRewardManager.o: SimpleQuestRewardManager.cpp \
  ../Effect.h ../../Timeval.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../EffectManager.h ../../../Core/EffectInfo.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  RandomRewardClass.h RewardClass.h SlayerWeaponRewardClass.h \
  ItemRewardInfo.h RewardInfo.h
@@ -1365,9 +1365,9 @@ QuestManager.o: QuestManager.cpp QuestManager.h ../../../Core/Types.h \
  ../../../Core/SocketInputStream.h ../../../Core/Socket.h \
  ../../../Core/SocketImpl.h ../../../Core/SocketAPI.h \
  ../../../Core/SocketOutputStream.h ../../../Core/PacketFactory.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
- QuestStatus.h ../../../Core/VSDateTime.h /usr/include/STL/hash_map \
+ QuestStatus.h ../../../Core/VSDateTime.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  MonsterKillQuestStatus.h ../../../Core/Gpackets/GCQuestStatus.h \
  GatherItemQuestStatus.h ../Item.h ../Object.h ../Effect.h \
@@ -1443,10 +1443,10 @@ QuestStatus.o: QuestStatus.cpp QuestStatus.h ../../../Core/Types.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- ../../../Core/PacketFactory.h /usr/include/STL/vector \
+ ../../../Core/PacketFactory.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h QuestManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h
 MonsterKillQuestStatus.o: MonsterKillQuestStatus.cpp \
  MonsterKillQuestStatus.h QuestStatus.h ../../../Core/Types.h \
@@ -1499,7 +1499,7 @@ MonsterKillQuestStatus.o: MonsterKillQuestStatus.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- ../../../Core/PacketFactory.h /usr/include/STL/vector \
+ ../../../Core/PacketFactory.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../../../Core/Gpackets/GCQuestStatus.h
 GatherItemQuestStatus.o: GatherItemQuestStatus.cpp \
@@ -1553,14 +1553,14 @@ GatherItemQuestStatus.o: GatherItemQuestStatus.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- ../../../Core/PacketFactory.h /usr/include/STL/vector \
+ ../../../Core/PacketFactory.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../Item.h ../Object.h ../Effect.h \
  ../../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../EffectManager.h ../../../Core/EffectInfo.h \
  /usr/include/c++/7/bitset ../../../Core/Gpackets/GCQuestStatus.h \
- QuestInfoManager.h /usr/include/STL/hash_map \
+ QuestInfoManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../PlayerCreature.h ../Creature.h ../ObjectRegistry.h ../../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
@@ -1622,7 +1622,7 @@ DummyQuestStatus.o: DummyQuestStatus.cpp DummyQuestStatus.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- ../../../Core/PacketFactory.h /usr/include/STL/vector \
+ ../../../Core/PacketFactory.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../../../Core/Gpackets/GCQuestStatus.h
 MeetNPCQuestStatus.o: MeetNPCQuestStatus.cpp MeetNPCQuestStatus.h \
@@ -1676,7 +1676,7 @@ MeetNPCQuestStatus.o: MeetNPCQuestStatus.cpp MeetNPCQuestStatus.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- ../../../Core/PacketFactory.h /usr/include/STL/vector \
+ ../../../Core/PacketFactory.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../../../Core/Gpackets/GCQuestStatus.h
 MiniGameQuestStatus.o: MiniGameQuestStatus.cpp MiniGameQuestStatus.h \
@@ -1730,7 +1730,7 @@ MiniGameQuestStatus.o: MiniGameQuestStatus.cpp MiniGameQuestStatus.h \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- ../../../Core/PacketFactory.h /usr/include/STL/vector \
+ ../../../Core/PacketFactory.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../../../Core/Gpackets/GCQuestStatus.h \
  ../PlayerCreature.h ../Creature.h ../Object.h ../EffectManager.h \
@@ -1744,7 +1744,7 @@ MiniGameQuestStatus.o: MiniGameQuestStatus.cpp MiniGameQuestStatus.h \
  ../InventorySlot.h ../Item.h ../Garbage.h ../RankBonus.h ../ExpFwd.h \
  ../../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../../Core/Gpackets/GCSelectQuestID.h ../OptionInfo.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h ../Slayer.h ../Zone.h ../Tile.h \
  ../Obstacle.h ../Portal.h ../quest/TriggerManager.h \
@@ -1768,7 +1768,7 @@ MiniGameQuestStatus.o: MiniGameQuestStatus.cpp MiniGameQuestStatus.h \
  ../../database/DatabaseManager.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
- ../../database/Result.h /usr/include/STL/cstdio \
+ ../../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -1825,10 +1825,10 @@ EventQuestAdvance.o: EventQuestAdvance.cpp EventQuestAdvance.h \
  ../../../Core/types/ServerType.h ../../../Core/Utility.h \
  ../../../Core/Exception.h ../../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- ../../../Core/Assert.h /usr/include/STL/vector \
+ ../../../Core/Assert.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../../database/DB.h \
- ../../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -1902,13 +1902,13 @@ EventQuestLootingManager.o: EventQuestLootingManager.cpp \
  ../../../Core/Packet.h ../../../Core/SocketInputStream.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
- /usr/include/c++/7/bitset /usr/include/STL/vector \
+ /usr/include/c++/7/bitset /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../Monster.h ../Creature.h \
  ../MonsterInfo.h ../MonsterSummonInfo.h ../MonsterInfoTypes.h \
- ../Treasure.h /usr/include/STL/hash_map \
+ ../Treasure.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../PrecedenceTable.h ../ItemFactoryManager.h ../ItemFactory.h \
  ../PlayerCreature.h ../ObjectRegistry.h ../../Mutex.h \
@@ -1940,7 +1940,7 @@ EventQuestLootingManager.o: EventQuestLootingManager.cpp \
  ../../database/DatabaseManager.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
- ../../database/Result.h /usr/include/STL/cstdio \
+ ../../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -1951,4 +1951,4 @@ EventQuestLootingManager.o: EventQuestLootingManager.cpp \
  ../../../Core/OustersSkillInfo.h ../../../Core/SubOustersSkillInfo.h \
  ../skill/OustersSkillSlot.h EventQuestAdvance.h QuestManager.h \
  QuestInfo.h RewardClass.h ../../../Core/Gpackets/GCNPCResponse.h \
- QuestStatus.h ../../../Core/VSDateTime.h /usr/include/STL/iosfwd
+ QuestStatus.h ../../../Core/VSDateTime.h /usr/include/c++/7/iosfwd

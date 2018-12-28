@@ -245,7 +245,7 @@ Statement.o: Statement.cpp Statement.h \
  /home/darkeden/vs/src/server/Profile.h \
  /home/darkeden/vs/src/server/Timeval.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h
 Result.o: Result.cpp Result.h /home/darkeden/vs/src/Core/Types.h \
@@ -358,7 +358,7 @@ DatabaseManager.o: DatabaseManager.cpp /usr/include/stdio.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
  /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h /usr/include/STL/hash_map \
+ /home/darkeden/src/libs/stl_list.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
@@ -498,7 +498,7 @@ Statement.o: Statement.cpp Statement.h \
  /home/darkeden/vs/src/server/Profile.h \
  /home/darkeden/vs/src/server/Timeval.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h
 Result.o: Result.cpp Result.h /home/darkeden/vs/src/Core/Types.h \
@@ -611,7 +611,7 @@ DatabaseManager.o: DatabaseManager.cpp /usr/include/stdio.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
  /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h /usr/include/STL/hash_map \
+ /home/darkeden/src/libs/stl_list.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
@@ -751,7 +751,7 @@ Statement.o: Statement.cpp Statement.h \
  /home/darkeden/vs/src/server/Profile.h \
  /home/darkeden/vs/src/server/Timeval.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h
 DatabaseManager.o: DatabaseManager.cpp /usr/include/stdio.h \
@@ -808,7 +808,7 @@ DatabaseManager.o: DatabaseManager.cpp /usr/include/stdio.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
  /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h /usr/include/STL/hash_map \
+ /home/darkeden/src/libs/stl_list.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
@@ -948,7 +948,7 @@ Statement.o: Statement.cpp Statement.h \
  /home/darkeden/vs/src/server/Profile.h \
  /home/darkeden/vs/src/server/Timeval.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h
 Result.o: Result.cpp Result.h /home/darkeden/vs/src/Core/Types.h \
@@ -1061,7 +1061,7 @@ DatabaseManager.o: DatabaseManager.cpp /usr/include/stdio.h \
  /home/darkeden/vs/src/Core/Utility.h \
  /home/darkeden/vs/src/Core/Exception.h \
  /home/darkeden/vs/src/Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h /usr/include/STL/hash_map \
+ /home/darkeden/src/libs/stl_list.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \

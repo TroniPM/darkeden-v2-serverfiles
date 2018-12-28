@@ -334,11 +334,11 @@ Zone.o: Zone.cpp Zone.h ../../Core/Types.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -375,7 +375,7 @@ Zone.o: Zone.cpp Zone.h ../../Core/Types.h \
  ../../Core/RideMotorcycleInfo.h ../../Core/RideMotorcycleSlotInfo.h \
  ../../Core/SlayerSkillInfo.h ../../Core/PCSkillInfo.h \
  ../../Core/SubSlayerSkillInfo.h CreatureUtil.h SlayerAttrExpTable.h \
- SomethingGrowingUp.h /usr/include/STL/cstdio skill/Skill.h \
+ SomethingGrowingUp.h /usr/include/c++/7/cstdio skill/Skill.h \
  skill/SkillSlot.h ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
  ../../Core/PCVampireInfo3.h ../../Core/VampireSkillInfo.h \
@@ -513,7 +513,7 @@ Slayer.o: Slayer.cpp ../database/DB.h ../database/DatabaseManager.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -528,7 +528,7 @@ Slayer.o: Slayer.cpp ../database/DB.h ../database/DatabaseManager.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- ObjectRegistry.h InventorySlot.h Item.h /usr/include/STL/vector \
+ ObjectRegistry.h InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
@@ -549,7 +549,7 @@ Slayer.o: Slayer.cpp ../database/DB.h ../database/DatabaseManager.h \
  ../../Core/RideMotorcycleInfo.h ../../Core/RideMotorcycleSlotInfo.h \
  ../../Core/SlayerSkillInfo.h ../../Core/PCSkillInfo.h \
  ../../Core/SubSlayerSkillInfo.h CreatureUtil.h SlayerAttrExpTable.h \
- SomethingGrowingUp.h /usr/include/STL/cstdio \
+ SomethingGrowingUp.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h ../../Core/Player.h \
  ../LogClient.h /usr/include/STL/algo.h /usr/include/STL/algobase.h \
@@ -670,12 +670,12 @@ Vampire.o: Vampire.cpp Vampire.h PlayerCreature.h Creature.h Object.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Inventory.h \
  VolumeInfo.h Zone.h Tile.h Obstacle.h Portal.h quest/TriggerManager.h \
@@ -702,7 +702,7 @@ Vampire.o: Vampire.cpp Vampire.h PlayerCreature.h Creature.h Object.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/SkillSlot.h EffectLoaderManager.h \
  EffectLoader.h SkillParentInfo.h ItemInfoManager.h ItemInfo.h \
  InfoClassManager.h AbilityBalance.h Stash.h TradeManager.h FlagSet.h \
@@ -796,12 +796,12 @@ Ousters.o: Ousters.cpp Ousters.h PlayerCreature.h Creature.h Object.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Inventory.h \
  VolumeInfo.h Zone.h Tile.h Obstacle.h Portal.h quest/TriggerManager.h \
@@ -828,7 +828,7 @@ Ousters.o: Ousters.cpp Ousters.h PlayerCreature.h Creature.h Object.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/SkillSlot.h EffectLoaderManager.h \
  EffectLoader.h SkillParentInfo.h ItemInfoManager.h ItemInfo.h \
  InfoClassManager.h AbilityBalance.h Stash.h TradeManager.h FlagSet.h \
@@ -913,7 +913,7 @@ OustersEXPInfo.o: OustersEXPInfo.cpp OustersEXPInfo.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h ../database/DB.h \
- ../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
@@ -992,10 +992,10 @@ ClientManager.o: ClientManager.cpp ClientManager.h ../../Core/Types.h \
  ../../Core/Gpackets/GCReconnectLogin.h ../../Core/PacketFactory.h \
  /usr/include/c++/7/bitset gameguard/CSAuth.h \
  ../../Core/DatagramSocket.h ../../Core/Datagram.h \
- ConnectionInfoManager.h /usr/include/STL/hash_map \
+ ConnectionInfoManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ConnectionInfo.h ZonePlayerManager.h \
- Effect.h Object.h ZoneGroupManager.h /usr/include/STL/vector \
+ Effect.h Object.h ZoneGroupManager.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_bvector.h ZoneGroup.h Zone.h Tile.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h Item.h Obstacle.h Portal.h \
@@ -1064,7 +1064,7 @@ ConnectionInfoManager.o: ConnectionInfoManager.cpp \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ConnectionInfo.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
  /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
@@ -1079,7 +1079,7 @@ ConnectionInfoManager.o: ConnectionInfoManager.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h Party.h \
@@ -1148,11 +1148,11 @@ Creature.o: Creature.cpp Creature.h Object.h ../../Core/Types.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ZoneInfo.h \
  Zone.h Tile.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
- Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ Item.h /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -1181,7 +1181,7 @@ Creature.o: Creature.cpp Creature.h Object.h ../../Core/Types.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h ZoneUtil.h \
  ../../Core/VSDateTime.h VisionInfo.h ../../Core/Gpackets/GCSay.h
@@ -1240,7 +1240,7 @@ CreatureManager.o: CreatureManager.cpp CreatureManager.h Creature.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  GamePlayer.h ../../Core/Player.h \
  ../../Core/SocketEncryptOutputStream.h ../../Core/Encrypter.h \
@@ -1251,7 +1251,7 @@ CreatureManager.o: CreatureManager.cpp CreatureManager.h Creature.h \
  billing/BillingPlayerInfo.h ../chinabilling/CBillingPlayerInfo.h \
  ../chinabilling/CBillingInfo.h ../../Core/Gpackets/GCReconnectLogin.h \
  ../../Core/PacketFactory.h gameguard/CSAuth.h ZoneGroupManager.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_bvector.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_bvector.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  ZoneGroup.h Zone.h Tile.h /home/darkeden/src/libs/slist \
@@ -1281,7 +1281,7 @@ CreatureManager.o: CreatureManager.cpp CreatureManager.h Creature.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -1337,7 +1337,7 @@ DarkLightInfo.o: DarkLightInfo.cpp DarkLightInfo.h ../../Core/Types.h \
  ../../Core/GameTime.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h TimeManager.h ../database/DB.h \
- ../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
@@ -1350,7 +1350,7 @@ DarkLightInfo.o: DarkLightInfo.cpp DarkLightInfo.h ../../Core/Types.h \
  /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
  /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h ../../Core/Packet.h /usr/include/c++/7/bitset \
- Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ Item.h /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h Party.h \
@@ -1410,12 +1410,12 @@ Corpse.o: Corpse.cpp Corpse.h ../../Core/Types.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemFactory.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
- quest/PropertyBuffer.h Sector.h /usr/include/STL/hash_map \
+ quest/PropertyBuffer.h Sector.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
@@ -1489,12 +1489,12 @@ GamePlayer.o: GamePlayer.cpp GamePlayer.h ../../Core/Types.h \
  ../../Core/PacketFactory.h /usr/include/c++/7/bitset gameguard/CSAuth.h \
  ../../Core/Assert.h Creature.h Object.h EffectManager.h Effect.h \
  ../../Core/EffectInfo.h Slayer.h PlayerCreature.h ObjectRegistry.h \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -1514,7 +1514,7 @@ GamePlayer.o: GamePlayer.cpp GamePlayer.h ../../Core/Types.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -1604,9 +1604,9 @@ GameServer.o: GameServer.cpp /usr/include/time.h \
  ../LogClient.h ../SystemAPI.h ../../Core/PacketFactoryManager.h \
  ../../Core/PacketFactory.h ../../Core/PacketValidator.h \
  ../../Core/PacketIDSet.h ../../Core/PlayerStatus.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
- ../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -1685,7 +1685,7 @@ IncomingPlayerManager.o: IncomingPlayerManager.cpp \
  ../../Core/PacketFactory.h /usr/include/c++/7/bitset gameguard/CSAuth.h \
  ../../Core/ServerSocket.h ../../Core/DatagramSocket.h \
  ../../Core/Datagram.h ConnectionInfoManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ConnectionInfo.h ../../Core/Assert.h ../../Core/Properties.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
@@ -1693,7 +1693,7 @@ IncomingPlayerManager.o: IncomingPlayerManager.cpp \
  LoginServerManager.h ../Thread.h ../pthreadAPI.h PacketUtil.h \
  ZoneInfoManager.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h Creature.h EffectManager.h \
- Effect.h ../../Core/EffectInfo.h Item.h /usr/include/STL/vector \
+ Effect.h ../../Core/EffectInfo.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h Party.h \
@@ -1776,12 +1776,12 @@ SharedServerClient.o: SharedServerClient.cpp SharedServerClient.h \
  ../../Core/SocketOutputStream.h ../../Core/Assert.h \
  ../../Core/PacketFactoryManager.h ../../Core/PacketFactory.h \
  ../../Core/PacketValidator.h ../../Core/PacketIDSet.h \
- ../../Core/PlayerStatus.h /usr/include/STL/vector \
+ ../../Core/PlayerStatus.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h GuildManager.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  Guild.h ../../Core/VSDateTime.h
 InfoClassManager.o: InfoClassManager.cpp InfoClassManager.h \
@@ -1837,9 +1837,9 @@ InfoClassManager.o: InfoClassManager.cpp InfoClassManager.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
- ItemInfo.h VariableManager.h /usr/include/STL/hash_map \
+ ItemInfo.h VariableManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h
 Inventory.o: Inventory.cpp Inventory.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -1892,14 +1892,14 @@ Inventory.o: Inventory.cpp Inventory.h ../../Core/Types.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  VolumeInfo.h InventorySlot.h ItemInfoManager.h ItemInfo.h \
  InfoClassManager.h ParkingCenter.h Zone.h Tile.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -1977,7 +1977,7 @@ LoginServerManager.o: LoginServerManager.cpp LoginServerManager.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketOutputStream.h \
  ../database/DB.h ../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -2041,7 +2041,7 @@ SharedServerManager.o: SharedServerManager.cpp SharedServerManager.h \
  ThreadManager.h ThreadPool.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../database/DB.h ../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -2101,11 +2101,11 @@ NPC.o: NPC.cpp NPC.h Creature.h Object.h ../../Core/Types.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Zone.h Tile.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -2174,14 +2174,14 @@ NPCManager.o: NPCManager.cpp NPCManager.h CreatureManager.h Creature.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/DB.h ../database/DatabaseManager.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
  ../database/Result.h NPC.h Zone.h Tile.h /home/darkeden/src/libs/slist \
- /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/STL/vector \
+ /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h ObjectRegistry.h \
@@ -2242,7 +2242,7 @@ ResurrectLocationManager.o: ResurrectLocationManager.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  Slayer.h PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
  EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
@@ -2255,7 +2255,7 @@ ResurrectLocationManager.o: ResurrectLocationManager.cpp \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
@@ -2280,7 +2280,7 @@ ResurrectLocationManager.o: ResurrectLocationManager.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -2351,11 +2351,11 @@ PCFinder.o: PCFinder.cpp PCFinder.h ../../Core/Types.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset NPC.h Zone.h \
  Tile.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -2426,12 +2426,12 @@ TelephoneCenter.o: TelephoneCenter.cpp TelephoneCenter.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -2453,7 +2453,7 @@ TelephoneCenter.o: TelephoneCenter.cpp TelephoneCenter.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h
 ParkingCenter.o: ParkingCenter.cpp ParkingCenter.h ../../Core/Types.h \
@@ -2509,11 +2509,11 @@ ParkingCenter.o: ParkingCenter.cpp ParkingCenter.h ../../Core/Types.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -2578,9 +2578,9 @@ PCManager.o: PCManager.cpp /usr/include/c++/7/algorithm \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GamePlayer.h ../../Core/Player.h \
  ../../Core/SocketEncryptOutputStream.h ../../Core/Encrypter.h \
  ../../Core/EncryptUtility.h ../../Core/SocketEncryptInputStream.h \
@@ -2611,7 +2611,7 @@ PCManager.o: PCManager.cpp /usr/include/c++/7/algorithm \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio skill/SkillSlot.h \
+ ../database/Result.h /usr/include/c++/7/cstdio skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
  ../../Core/PCVampireInfo3.h ../../Core/VampireSkillInfo.h \
@@ -2698,7 +2698,7 @@ Portal.o: Portal.cpp Portal.h Object.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
- quest/TriggerManager.h quest/Trigger.h /usr/include/STL/vector \
+ quest/TriggerManager.h quest/Trigger.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h quest/Condition.h \
  /usr/include/c++/7/bitset quest/PropertyBuffer.h Zone.h Tile.h \
@@ -2710,7 +2710,7 @@ Portal.o: Portal.cpp Portal.h Object.h ../../Core/Types.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h Item.h Obstacle.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -2740,7 +2740,7 @@ Portal.o: Portal.cpp Portal.h Object.h ../../Core/Types.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo3.h \
@@ -2848,7 +2848,7 @@ ScriptManager.o: ScriptManager.cpp ScriptManager.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h Script.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/DB.h ../database/DatabaseManager.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
@@ -2857,7 +2857,7 @@ ScriptManager.o: ScriptManager.cpp ScriptManager.h ../../Core/Types.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
- ../../Core/SXml.h /usr/include/STL/vector \
+ ../../Core/SXml.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  ../../Core/Properties.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
@@ -2910,7 +2910,7 @@ ThreadManager.o: ThreadManager.cpp ThreadManager.h ../../Core/Types.h \
  ../Thread.h ../pthreadAPI.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph ../Mutex.h \
- ZoneGroupThread.h ZoneGroup.h /usr/include/STL/hash_map \
+ ZoneGroupThread.h ZoneGroup.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
@@ -2921,7 +2921,7 @@ ThreadManager.o: ThreadManager.cpp ThreadManager.h ../../Core/Types.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h Party.h \
@@ -3042,11 +3042,11 @@ Tile.o: Tile.cpp Tile.h /home/darkeden/src/libs/slist \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../Core/Player.h Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
@@ -3071,7 +3071,7 @@ Tile.o: Tile.cpp Tile.h /home/darkeden/src/libs/slist \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -3133,7 +3133,7 @@ Sector.o: Sector.cpp Sector.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  Object.h ../../Core/Assert.h
 TimeManager.o: TimeManager.cpp TimeManager.h ../../Core/Types.h \
@@ -3238,10 +3238,10 @@ GoodsInventory.o: GoodsInventory.cpp GoodsInventory.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../database/DB.h ../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
@@ -3300,9 +3300,9 @@ GoodsInfoManager.o: GoodsInfoManager.cpp GoodsInfoManager.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
@@ -3403,7 +3403,7 @@ WeatherInfo.o: WeatherInfo.cpp WeatherInfo.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../database/DB.h \
- ../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
@@ -3466,11 +3466,11 @@ WeatherManager.o: WeatherManager.cpp WeatherManager.h \
  Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h ../../Core/EffectInfo.h ../../Core/Packet.h \
- /usr/include/c++/7/bitset Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
- quest/PropertyBuffer.h Sector.h /usr/include/STL/hash_map \
+ quest/PropertyBuffer.h Sector.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
@@ -3536,11 +3536,11 @@ ZoneInfo.o: ZoneInfo.cpp ZoneInfo.h ../../Core/Types.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -3597,7 +3597,7 @@ ZoneGroup.o: ZoneGroup.cpp ZoneGroup.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h Zone.h \
  Tile.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Object.h \
  ../../Core/Assert.h Creature.h EffectManager.h Effect.h ../Timeval.h \
@@ -3607,7 +3607,7 @@ ZoneGroup.o: ZoneGroup.cpp ZoneGroup.h ../../Core/Types.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -3667,9 +3667,9 @@ ZoneGroupManager.o: ZoneGroupManager.cpp ZoneGroupManager.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ZoneGroup.h Zone.h Tile.h \
@@ -3761,11 +3761,11 @@ ZoneInfoManager.o: ZoneInfoManager.cpp ZoneInfoManager.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -3845,11 +3845,11 @@ ZonePlayerManager.o: ZonePlayerManager.cpp /usr/include/stdio.h \
  ../../Core/PacketFactory.h /usr/include/c++/7/bitset gameguard/CSAuth.h \
  ../../Core/ServerSocket.h ../../Core/DatagramSocket.h \
  ../../Core/Datagram.h ConnectionInfoManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ConnectionInfo.h Slayer.h PlayerCreature.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h ObjectRegistry.h InventorySlot.h Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_bvector.h Garbage.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_bvector.h Garbage.h \
  RankBonus.h ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
@@ -3870,7 +3870,7 @@ ZonePlayerManager.o: ZonePlayerManager.cpp /usr/include/stdio.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio skill/SkillSlot.h \
+ ../database/Result.h /usr/include/c++/7/cstdio skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h ../LogClient.h \
  ../../Core/Cpackets/CGLogout.h ../Profile.h ZoneInfoManager.h \
  ZoneInfo.h ZoneUtil.h ResurrectLocationManager.h ../Thread.h \
@@ -3927,7 +3927,7 @@ ZoneGroupThread.o: ZoneGroupThread.cpp ZoneGroupThread.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Thread.h \
  ../pthreadAPI.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
- /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph ZoneGroup.h /usr/include/STL/hash_map \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph ZoneGroup.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
@@ -3938,7 +3938,7 @@ ZoneGroupThread.o: ZoneGroupThread.cpp ZoneGroupThread.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h Party.h \
@@ -4011,10 +4011,10 @@ ObjectManager.o: ObjectManager.cpp ObjectManager.h ../../Core/Types.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../LogClient.h ../PlayerManager.h MonsterInfo.h MonsterSummonInfo.h \
- MonsterInfoTypes.h /usr/include/STL/vector \
+ MonsterInfoTypes.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Treasure.h Item.h TimeManager.h ../../Core/GameTime.h DarkLightInfo.h \
  VisionInfo.h WeatherInfo.h ZoneGroupManager.h /usr/include/c++/7/map \
@@ -4047,7 +4047,7 @@ ObjectManager.o: ObjectManager.cpp ObjectManager.h ../../Core/Types.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h SkillDomainInfoManager.h \
  ../GameWorldInfoManager.h ../GameWorldInfo.h SkillParentInfo.h \
@@ -4155,12 +4155,12 @@ AbilityBalance.o: AbilityBalance.cpp AbilityBalance.h Creature.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -4182,7 +4182,7 @@ AbilityBalance.o: AbilityBalance.cpp AbilityBalance.h Creature.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -4249,12 +4249,12 @@ PlayerCreature.o: PlayerCreature.cpp PlayerCreature.h Creature.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Stash.h \
  ../database/DB.h ../database/DatabaseManager.h \
@@ -4292,7 +4292,7 @@ PlayerCreature.o: PlayerCreature.cpp PlayerCreature.h Creature.h \
  mission/RewardClass.h ../../Core/Gpackets/GCNPCResponse.h \
  mission/QuestStatus.h ../../Core/Properties.h PKZoneInfoManager.h \
  ../../Core/Cpackets/CGSay.h RankExpTable.h SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h EventKick.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h EventKick.h \
  ../GameServerInfoManager.h ../GameServerInfo.h DefaultOptionSetInfo.h \
  Pet.h Slayer.h ../../Core/PCSlayerInfo.h ../../Core/PCInfo.h \
  ../../Core/PCSlayerInfo2.h ../../Core/PCSlayerInfo3.h \
@@ -4367,7 +4367,7 @@ ZoneUtil.o: ZoneUtil.cpp ZoneUtil.h ../../Core/Types.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../../Core/VSDateTime.h ../database/DB.h \
- ../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
@@ -4377,7 +4377,7 @@ ZoneUtil.o: ZoneUtil.cpp ZoneUtil.h ../../Core/Types.h \
  ../database/Statement.h ../database/Result.h ../../Core/Properties.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h item/Relic.h ItemInfo.h \
  InfoClassManager.h ItemFactory.h ItemLoader.h Zone.h Tile.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Obstacle.h \
@@ -4400,7 +4400,7 @@ ZoneUtil.o: ZoneUtil.cpp ZoneUtil.h ../../Core/Types.h \
  ../../Core/RideMotorcycleSlotInfo.h ../../Core/SlayerSkillInfo.h \
  ../../Core/PCSkillInfo.h ../../Core/SubSlayerSkillInfo.h \
  CreatureUtil.h SlayerAttrExpTable.h SomethingGrowingUp.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h \
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h \
  skill/SkillSlot.h ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
  ../../Core/PCVampireInfo3.h ../../Core/VampireSkillInfo.h \
@@ -4515,9 +4515,9 @@ Treasure.o: Treasure.cpp Treasure.h ../../Core/Types.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h OptionInfo.h ItemInfoManager.h \
  ItemInfo.h InfoClassManager.h VariableManager.h UniqueItemManager.h \
  ItemUtil.h ../../Core/SXml.h
@@ -4587,12 +4587,12 @@ PacketUtil.o: PacketUtil.cpp PacketUtil.h ../../Core/Types.h \
  ../../Core/PacketFactory.h /usr/include/c++/7/bitset gameguard/CSAuth.h \
  Slayer.h PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
  EffectManager.h Effect.h ../../Core/EffectInfo.h ObjectRegistry.h \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -4612,7 +4612,7 @@ PacketUtil.o: PacketUtil.cpp PacketUtil.h ../../Core/Types.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -4757,7 +4757,7 @@ InventorySlot.o: InventorySlot.cpp InventorySlot.h Item.h Object.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h
 ObjectRegistry.o: ObjectRegistry.cpp ObjectRegistry.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
@@ -4863,11 +4863,11 @@ WayPoint.o: WayPoint.cpp WayPoint.h ../../Core/Types.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -4932,9 +4932,9 @@ OptionInfo.o: OptionInfo.cpp OptionInfo.h ../../Core/Exception.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
@@ -4965,7 +4965,7 @@ OptionInfo.o: OptionInfo.cpp OptionInfo.h ../../Core/Exception.h \
  ../../Core/RideMotorcycleInfo.h ../../Core/RideMotorcycleSlotInfo.h \
  ../../Core/SlayerSkillInfo.h ../../Core/PCSkillInfo.h \
  ../../Core/SubSlayerSkillInfo.h CreatureUtil.h SlayerAttrExpTable.h \
- SomethingGrowingUp.h /usr/include/STL/cstdio \
+ SomethingGrowingUp.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -5065,7 +5065,7 @@ VampEXPInfo.o: VampEXPInfo.cpp VampEXPInfo.h ../../Core/Exception.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h ../database/DB.h \
- ../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
@@ -5129,12 +5129,12 @@ ItemRack.o: ItemRack.cpp ../../Core/Assert.h ../../Core/Types.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ParkingCenter.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
- quest/PropertyBuffer.h Sector.h /usr/include/STL/hash_map \
+ quest/PropertyBuffer.h Sector.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
@@ -5240,7 +5240,7 @@ Stash.o: Stash.cpp Stash.h ../../Core/Types.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemRack.h
 Garbage.o: Garbage.cpp Garbage.h ObjectRegistry.h ../../Core/Types.h \
@@ -5297,10 +5297,10 @@ Garbage.o: Garbage.cpp Garbage.h ObjectRegistry.h ../../Core/Types.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../database/DB.h ../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
@@ -5350,7 +5350,7 @@ ShopTemplate.o: ShopTemplate.cpp ShopTemplate.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/DB.h ../database/DatabaseManager.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
@@ -5411,10 +5411,10 @@ PriceManager.o: PriceManager.cpp PriceManager.h ../../Core/Types.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemInfoManager.h ItemInfo.h InfoClassManager.h OptionInfo.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ItemUtil.h Creature.h Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
@@ -5442,7 +5442,7 @@ PriceManager.o: PriceManager.cpp PriceManager.h ../../Core/Types.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -5513,7 +5513,7 @@ CreatureUtil.o: CreatureUtil.cpp CreatureUtil.h Creature.h Object.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h Slayer.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
@@ -5521,7 +5521,7 @@ CreatureUtil.o: CreatureUtil.cpp CreatureUtil.h Creature.h Object.h \
  InventorySlot.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -5543,7 +5543,7 @@ CreatureUtil.o: CreatureUtil.cpp CreatureUtil.h Creature.h Object.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -5642,7 +5642,7 @@ ItemMap.o: ItemMap.cpp ItemMap.h Item.h Object.h ../../Core/Types.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
@@ -5694,7 +5694,7 @@ TradeManager.o: TradeManager.cpp TradeManager.h ../../Core/Types.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Creature.h Object.h \
  ../../Core/Assert.h EffectManager.h Effect.h ../../Core/EffectInfo.h \
@@ -5704,7 +5704,7 @@ TradeManager.o: TradeManager.cpp TradeManager.h ../../Core/Types.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
@@ -5729,7 +5729,7 @@ TradeManager.o: TradeManager.cpp TradeManager.h ../../Core/Types.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -5794,7 +5794,7 @@ FlagSet.o: FlagSet.cpp FlagSet.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../database/DB.h \
- ../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
@@ -5849,7 +5849,7 @@ AlignmentManager.o: AlignmentManager.cpp AlignmentManager.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h ../database/DB.h \
- ../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
@@ -5917,12 +5917,12 @@ SkillInfo.o: SkillInfo.cpp SkillInfo.h ../../Core/Exception.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -5944,7 +5944,7 @@ SkillInfo.o: SkillInfo.cpp SkillInfo.h ../../Core/Exception.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h SkillPropertyManager.h \
  skill/SkillUtil.h Vampire.h ../../Core/PCVampireInfo.h \
@@ -6004,7 +6004,7 @@ SkillDomainInfoManager.o: SkillDomainInfoManager.cpp \
  ../../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h SkillDomainInfoManager.h \
  ../../Core/Assert.h ../database/DB.h ../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -6058,7 +6058,7 @@ SkillParentInfo.o: SkillParentInfo.cpp SkillParentInfo.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../database/DB.h \
- ../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
@@ -6126,12 +6126,12 @@ InitAllStat.o: InitAllStat.cpp Slayer.h PlayerCreature.h Creature.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -6153,7 +6153,7 @@ InitAllStat.o: InitAllStat.cpp Slayer.h PlayerCreature.h Creature.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -6251,7 +6251,7 @@ PrecedenceTable.o: PrecedenceTable.cpp PrecedenceTable.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Creature.h Object.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
@@ -6305,9 +6305,9 @@ VariableManager.o: VariableManager.cpp VariableManager.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h /usr/include/STL/hash_map \
+ /home/darkeden/src/libs/stl_list.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
- /home/darkeden/src/libs/stl_hash_map.h /usr/include/STL/vector \
+ /home/darkeden/src/libs/stl_hash_map.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  ../database/DB.h ../database/DatabaseManager.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
@@ -6368,7 +6368,7 @@ CombatInfoManager.o: CombatInfoManager.cpp StringPool.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h /usr/include/STL/hash_map \
+ /home/darkeden/src/libs/stl_list.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h CombatInfoManager.h \
  ../../Core/Assert.h ../Mutex.h /usr/include/pthread.h \
@@ -6381,7 +6381,7 @@ CombatInfoManager.o: CombatInfoManager.cpp StringPool.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h ItemInfo.h InfoClassManager.h \
  ItemFactory.h ItemLoader.h ../../Core/Gpackets/GCSystemMessage.h \
  ../../Core/PacketFactory.h ZoneGroupManager.h /usr/include/c++/7/map \
@@ -6448,10 +6448,10 @@ UniqueItemManager.o: UniqueItemManager.cpp UniqueItemManager.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemInfoManager.h ItemInfo.h InfoClassManager.h ../database/DB.h \
- ../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -6505,7 +6505,7 @@ MasterLairInfoManager.o: MasterLairInfoManager.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  MonsterInfo.h ../../Core/Assert.h Creature.h Object.h EffectManager.h \
  Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
@@ -6514,7 +6514,7 @@ MasterLairInfoManager.o: MasterLairInfoManager.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- MonsterSummonInfo.h MonsterInfoTypes.h /usr/include/STL/vector \
+ MonsterSummonInfo.h MonsterInfoTypes.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Treasure.h Item.h ZoneInfo.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Obstacle.h Portal.h \
@@ -6583,11 +6583,11 @@ MasterLairManager.o: MasterLairManager.cpp MasterLairManager.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
- /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph /usr/include/STL/hash_map \
+ /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  MasterLairInfoManager.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h Obstacle.h Portal.h \
@@ -6658,7 +6658,7 @@ MonsterSummonInfo.o: MonsterSummonInfo.cpp ../../Core/Types.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  MonsterSummonInfo.h MonsterInfoTypes.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h /usr/include/STL/vector \
+ /home/darkeden/src/libs/stl_list.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h MonsterInfo.h ../../Core/Exception.h \
  ../../Core/StringStream.h ../../Core/Assert.h Creature.h Object.h \
@@ -6669,7 +6669,7 @@ MonsterSummonInfo.o: MonsterSummonInfo.cpp ../../Core/Types.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Treasure.h \
- Item.h /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ Item.h /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h
 LuckInfo.o: LuckInfo.cpp LuckInfo.h ../../Core/Exception.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
@@ -6716,10 +6716,10 @@ LuckInfo.o: LuckInfo.cpp LuckInfo.h ../../Core/Exception.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h /usr/include/STL/vector \
+ /home/darkeden/src/libs/stl_list.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../../Core/Assert.h VariableManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
@@ -6775,7 +6775,7 @@ LogNameManager.o: LogNameManager.cpp LogNameManager.h NameManager.h \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../database/DB.h \
@@ -6831,7 +6831,7 @@ RankBonusInfo.o: RankBonusInfo.cpp RankBonusInfo.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h ../database/DB.h \
- ../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
@@ -6934,7 +6934,7 @@ CastleInfoManager.o: CastleInfoManager.cpp CastleInfoManager.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
  EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
@@ -6947,7 +6947,7 @@ CastleInfoManager.o: CastleInfoManager.cpp CastleInfoManager.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
@@ -7032,7 +7032,7 @@ HolyLandRaceBonus.o: HolyLandRaceBonus.cpp HolyLandRaceBonus.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h CastleInfoManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  PlayerCreature.h Creature.h Object.h ../../Core/Assert.h \
  EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
@@ -7045,7 +7045,7 @@ HolyLandRaceBonus.o: HolyLandRaceBonus.cpp HolyLandRaceBonus.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
@@ -7097,7 +7097,7 @@ ShrineInfoManager.o: ShrineInfoManager.cpp /usr/include/stdio.h \
  ../../Core/types/WarTypes.h ../../Core/types/ServerType.h \
  ../../Core/Utility.h ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
@@ -7115,7 +7115,7 @@ ShrineInfoManager.o: ShrineInfoManager.cpp /usr/include/stdio.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../../Core/VSDateTime.h Zone.h Tile.h /home/darkeden/src/libs/slist \
- /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/STL/vector \
+ /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h ObjectRegistry.h \
@@ -7198,10 +7198,10 @@ GlobalItemPositionLoader.o: GlobalItemPositionLoader.cpp \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  war/GlobalItemPosition.h ../database/DB.h \
- ../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -7268,12 +7268,12 @@ RelicUtil.o: RelicUtil.cpp RelicUtil.h ../../Core/Exception.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h Zone.h \
  Tile.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -7349,7 +7349,7 @@ HolyLandManager.o: HolyLandManager.cpp HolyLandManager.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  PCManager.h CreatureManager.h Creature.h Object.h ../../Core/Assert.h \
  EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
@@ -7359,7 +7359,7 @@ HolyLandManager.o: HolyLandManager.cpp HolyLandManager.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h PlayerCreature.h ObjectRegistry.h \
  InventorySlot.h Item.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
@@ -7423,7 +7423,7 @@ BloodBibleBonus.o: BloodBibleBonus.cpp BloodBibleBonus.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h
 BloodBibleBonusManager.o: BloodBibleBonusManager.cpp BloodBibleBonus.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
@@ -7477,9 +7477,9 @@ BloodBibleBonusManager.o: BloodBibleBonusManager.cpp BloodBibleBonus.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
- BloodBibleBonusManager.h /usr/include/STL/hash_map \
+ BloodBibleBonusManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/DB.h ../database/DatabaseManager.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
@@ -7537,7 +7537,7 @@ CastleShrineInfoManager.o: CastleShrineInfoManager.cpp \
  ../../Core/types/WarTypes.h ../../Core/types/ServerType.h \
  ../../Core/Utility.h ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ShrineInfoManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
@@ -7555,7 +7555,7 @@ CastleShrineInfoManager.o: CastleShrineInfoManager.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../../Core/VSDateTime.h Zone.h Tile.h /home/darkeden/src/libs/slist \
- /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/STL/vector \
+ /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h ObjectRegistry.h \
@@ -7639,12 +7639,12 @@ SkillPropertyManager.o: SkillPropertyManager.cpp \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -7666,7 +7666,7 @@ SkillPropertyManager.o: SkillPropertyManager.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h
 StringPool.o: StringPool.cpp StringPool.h ../../Core/Exception.h \
@@ -7714,7 +7714,7 @@ StringPool.o: StringPool.cpp StringPool.h ../../Core/Exception.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h /usr/include/STL/hash_map \
+ /home/darkeden/src/libs/stl_list.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \
@@ -7769,7 +7769,7 @@ PKZoneInfoManager.o: PKZoneInfoManager.cpp ../database/DB.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -7785,7 +7785,7 @@ PKZoneInfoManager.o: PKZoneInfoManager.cpp ../database/DB.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h Party.h \
@@ -7841,7 +7841,7 @@ GameServerGroupInfoManager.o: GameServerGroupInfoManager.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- GameServerGroupInfo.h /usr/include/STL/hash_map \
+ GameServerGroupInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/DatabaseManager.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
@@ -7904,9 +7904,9 @@ DefaultOptionSetInfo.o: DefaultOptionSetInfo.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
@@ -7959,7 +7959,7 @@ CastleSkillInfo.o: CastleSkillInfo.cpp CastleSkillInfo.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h /usr/include/STL/hash_map \
+ /home/darkeden/src/libs/stl_list.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h skill/Skill.h ../../Core/Assert.h \
  ../database/DB.h ../database/DatabaseManager.h \
@@ -8022,9 +8022,9 @@ TimeLimitItemManager.o: TimeLimitItemManager.cpp \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
@@ -8091,9 +8091,9 @@ ItemMineInfo.o: ItemMineInfo.cpp ItemUtil.h Item.h Object.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
- ItemMineInfo.h /usr/include/STL/hash_map \
+ ItemMineInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ItemFactoryManager.h ItemFactory.h ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \
@@ -8154,9 +8154,9 @@ MonsterItemDrop.o: MonsterItemDrop.cpp ItemUtil.h Item.h Object.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
- ItemMineInfo.h /usr/include/STL/hash_map \
+ ItemMineInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ItemFactoryManager.h ItemFactory.h ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \
@@ -8217,9 +8217,9 @@ InstantDungeonMonster.o: InstantDungeonMonster.cpp ItemUtil.h Item.h Object.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
- ItemMineInfo.h /usr/include/STL/hash_map \
+ ItemMineInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ItemFactoryManager.h ItemFactory.h ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \
@@ -8280,9 +8280,9 @@ CrystalOptionLoader.o: CrystalOptionLoader.cpp ItemUtil.h Item.h Object.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
- ItemMineInfo.h /usr/include/STL/hash_map \
+ ItemMineInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ItemFactoryManager.h ItemFactory.h ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \
@@ -8343,9 +8343,9 @@ MonsterItemDropOption.o: MonsterItemDropOption.cpp ItemUtil.h Item.h Object.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
- ItemMineInfo.h /usr/include/STL/hash_map \
+ ItemMineInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ItemFactoryManager.h ItemFactory.h ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \
@@ -8406,9 +8406,9 @@ MonsterDropSetup.o: MonsterDropSetup.cpp ItemUtil.h Item.h Object.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
- ItemMineInfo.h /usr/include/STL/hash_map \
+ ItemMineInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ItemFactoryManager.h ItemFactory.h ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \
@@ -8469,7 +8469,7 @@ EventItemUtil.o: EventItemUtil.cpp EventItemUtil.h ../../Core/Types.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h Slayer.h \
  PlayerCreature.h Creature.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
@@ -8477,7 +8477,7 @@ EventItemUtil.o: EventItemUtil.cpp EventItemUtil.h ../../Core/Types.h \
  InventorySlot.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -8499,7 +8499,7 @@ EventItemUtil.o: EventItemUtil.cpp EventItemUtil.h ../../Core/Types.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -8563,7 +8563,7 @@ SweeperSet.o: SweeperSet.cpp SweeperSet.h ../../Core/Types.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemFactory.h Inventory.h VolumeInfo.h InventorySlot.h Corpse.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
@@ -8572,7 +8572,7 @@ SweeperSet.o: SweeperSet.cpp SweeperSet.h ../../Core/Types.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/DB.h ../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
@@ -8634,7 +8634,7 @@ SweeperBonus.o: SweeperBonus.cpp ../database/DB.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -8649,7 +8649,7 @@ SweeperBonus.o: SweeperBonus.cpp ../database/DB.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h
 SweeperBonusManager.o: SweeperBonusManager.cpp Zone.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
@@ -8705,11 +8705,11 @@ SweeperBonusManager.o: SweeperBonusManager.cpp Zone.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -8780,11 +8780,11 @@ LevelWar.o: LevelWar.cpp LevelWar.h ../../Core/Types.h \
  LevelWarManager.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- war/Scheduler.h /usr/include/STL/vector \
+ war/Scheduler.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h /usr/include/STL/queue \
  /home/darkeden/src/libs/stl_deque.h /home/darkeden/src/libs/stl_queue.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h war/Schedule.h \
  ../../Core/VSDateTime.h SweeperSet.h MonsterCorpse.h Item.h Object.h \
  ../../Core/Assert.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
@@ -8848,7 +8848,7 @@ LevelWarManager.o: LevelWarManager.cpp /usr/include/stdio.h \
  ../../Core/types/WarTypes.h ../../Core/types/ServerType.h \
  ../../Core/Utility.h ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -8866,7 +8866,7 @@ LevelWarManager.o: LevelWarManager.cpp /usr/include/stdio.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- ObjectRegistry.h InventorySlot.h Item.h /usr/include/STL/vector \
+ ObjectRegistry.h InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
@@ -8938,7 +8938,7 @@ LevelWarZoneInfoManager.o: LevelWarZoneInfoManager.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -8953,7 +8953,7 @@ LevelWarZoneInfoManager.o: LevelWarZoneInfoManager.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- ObjectRegistry.h InventorySlot.h Item.h /usr/include/STL/vector \
+ ObjectRegistry.h InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
@@ -8974,7 +8974,7 @@ LevelWarZoneInfoManager.o: LevelWarZoneInfoManager.cpp \
  ../../Core/RideMotorcycleInfo.h ../../Core/RideMotorcycleSlotInfo.h \
  ../../Core/SlayerSkillInfo.h ../../Core/PCSkillInfo.h \
  ../../Core/SubSlayerSkillInfo.h CreatureUtil.h SlayerAttrExpTable.h \
- SomethingGrowingUp.h /usr/include/STL/cstdio \
+ SomethingGrowingUp.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -9037,7 +9037,7 @@ RegenZoneManager.o: RegenZoneManager.cpp RegenZoneManager.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemFactory.h Inventory.h VolumeInfo.h InventorySlot.h Corpse.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
@@ -9045,7 +9045,7 @@ RegenZoneManager.o: RegenZoneManager.cpp RegenZoneManager.h \
  /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph /usr/include/c++/7/map \
  /home/darkeden/src/libs/stl_tree.h /home/darkeden/src/libs/stl_map.h \
  /home/darkeden/src/libs/stl_multimap.h ../database/DB.h \
- ../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -9071,7 +9071,7 @@ RegenZoneManager.o: RegenZoneManager.cpp RegenZoneManager.h \
  ../../Core/RideMotorcycleInfo.h ../../Core/RideMotorcycleSlotInfo.h \
  ../../Core/SlayerSkillInfo.h ../../Core/PCSkillInfo.h \
  ../../Core/SubSlayerSkillInfo.h CreatureUtil.h SlayerAttrExpTable.h \
- SomethingGrowingUp.h /usr/include/STL/cstdio \
+ SomethingGrowingUp.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -9135,10 +9135,10 @@ PetTypeInfo.o: PetTypeInfo.cpp PetTypeInfo.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/types/PetTypes.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h /usr/include/STL/vector \
+ /home/darkeden/src/libs/stl_list.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../database/DB.h \
- ../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -9195,7 +9195,7 @@ PetUtil.o: PetUtil.cpp PetUtil.h ../../Core/Types.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/VSDateTime.h PetExpInfo.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  item/PetItem.h Item.h Object.h ../../Core/Assert.h Effect.h \
  ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
@@ -9205,7 +9205,7 @@ PetUtil.o: PetUtil.cpp PetUtil.h ../../Core/Types.h \
  ItemLoader.h ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
  /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph PetTypeInfo.h PetAttrInfo.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../Core/ModifyInfo.h GamePlayer.h \
  ../../Core/Player.h ../../Core/SocketEncryptOutputStream.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
@@ -9214,7 +9214,7 @@ PetUtil.o: PetUtil.cpp PetUtil.h ../../Core/Types.h \
  Event.h skill/Skill.h ../PaySystem.h billing/BillingPlayerInfo.h \
  ../chinabilling/CBillingPlayerInfo.h ../chinabilling/CBillingInfo.h \
  ../../Core/Gpackets/GCReconnectLogin.h ../../Core/PacketFactory.h \
- gameguard/CSAuth.h VariableManager.h /usr/include/STL/cstdio \
+ gameguard/CSAuth.h VariableManager.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h
 PetAttrInfo.o: PetAttrInfo.cpp PetAttrInfo.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -9261,9 +9261,9 @@ PetAttrInfo.o: PetAttrInfo.cpp PetAttrInfo.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/types/PetTypes.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h /usr/include/STL/vector \
+ /home/darkeden/src/libs/stl_list.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
- /home/darkeden/src/libs/stl_bvector.h /usr/include/STL/hash_map \
+ /home/darkeden/src/libs/stl_bvector.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  PetExpInfo.h ../database/DB.h ../database/DatabaseManager.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
@@ -9319,12 +9319,12 @@ PetExpInfo.o: PetExpInfo.cpp PetExpInfo.h ../../Core/Types.h \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
- ../../Core/types/PetTypes.h /usr/include/STL/vector \
+ ../../Core/types/PetTypes.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h ../database/DB.h \
  ../database/DatabaseManager.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h /usr/include/STL/hash_map \
+ /home/darkeden/src/libs/stl_list.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -9378,7 +9378,7 @@ RankExpTable.o: RankExpTable.cpp RankExpTable.h ../../Core/Types.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
  SomethingGrowingUp.h ../database/DB.h ../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -9386,9 +9386,9 @@ RankExpTable.o: RankExpTable.cpp RankExpTable.h ../../Core/Types.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
- ../../Core/Assert.h /usr/include/STL/vector \
+ ../../Core/Assert.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h
 SlayerAttrExpTable.o: SlayerAttrExpTable.cpp SlayerAttrExpTable.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
@@ -9436,7 +9436,7 @@ SlayerAttrExpTable.o: SlayerAttrExpTable.cpp SlayerAttrExpTable.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ExpFwd.h \
  SomethingGrowingUp.h ../database/DB.h ../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -9444,9 +9444,9 @@ SlayerAttrExpTable.o: SlayerAttrExpTable.cpp SlayerAttrExpTable.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
- ../../Core/Assert.h /usr/include/STL/vector \
+ ../../Core/Assert.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h
 Pet.o: Pet.cpp Pet.h Slayer.h PlayerCreature.h Creature.h Object.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
@@ -9503,12 +9503,12 @@ Pet.o: Pet.cpp Pet.h Slayer.h PlayerCreature.h Creature.h Object.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -9530,7 +9530,7 @@ Pet.o: Pet.cpp Pet.h Slayer.h PlayerCreature.h Creature.h Object.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -9599,7 +9599,7 @@ SystemAvailabilitiesManager.o: SystemAvailabilitiesManager.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  ../database/DB.h ../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -9705,10 +9705,10 @@ ItemGradeManager.o: ItemGradeManager.cpp ItemGradeManager.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../database/DB.h ../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
@@ -9762,10 +9762,10 @@ ItemHeroOptionManager.o: ItemHeroOptionManager.cpp ItemHeroOptionManager.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../database/DB.h ../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
@@ -9818,9 +9818,9 @@ EventZoneInfo.o: EventZoneInfo.cpp EventZoneInfo.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Object.h ../../Core/Assert.h Creature.h \
  EffectManager.h Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
@@ -9892,7 +9892,7 @@ SMSServiceThread.o: SMSServiceThread.cpp SMSServiceThread.h \
  ../pthreadAPI.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
  /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph ../database/DB.h \
- ../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
@@ -9953,9 +9953,9 @@ SMSAddressBook.o: SMSAddressBook.cpp SMSAddressBook.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
@@ -10018,7 +10018,7 @@ FiniteStateMachine.o: FiniteStateMachine.cpp FiniteStateMachine.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../Core/Assert.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
@@ -10071,7 +10071,7 @@ GDRLairManager.o: GDRLairManager.cpp GDRLairManager.h \
  FiniteStateMachine.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
  /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
  /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../Core/Assert.h ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
@@ -10084,7 +10084,7 @@ GDRLairManager.o: GDRLairManager.cpp GDRLairManager.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Zone.h Tile.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h Party.h \
@@ -10108,7 +10108,7 @@ GDRLairManager.o: GDRLairManager.cpp GDRLairManager.h \
  VolumeInfo.h ItemUtil.h ../../Core/Player.h EffectGDRLairClose.h \
  VariableManager.h /usr/include/STL/cmath /usr/include/math.h \
  /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h \
- /usr/include/bits/mathcalls.h /usr/include/STL/cstdio \
+ /usr/include/bits/mathcalls.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h ../../Core/SXml.h ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
@@ -10160,7 +10160,7 @@ GDRLairAbstractStates.o: GDRLairAbstractStates.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../Core/Assert.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
@@ -10173,7 +10173,7 @@ GDRLairAbstractStates.o: GDRLairAbstractStates.cpp \
  ../../Core/Gpackets/GCGlobalChat.h Zone.h Tile.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
- Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ Item.h /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -10236,7 +10236,7 @@ NicknameBook.o: NicknameBook.cpp NicknameBook.h ../../Core/Types.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
- ../../Core/SocketOutputStream.h /usr/include/STL/hash_map \
+ ../../Core/SocketOutputStream.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h PlayerCreature.h Creature.h Object.h \
  ../../Core/Assert.h EffectManager.h Effect.h ../Timeval.h \
@@ -10246,7 +10246,7 @@ NicknameBook.o: NicknameBook.cpp NicknameBook.h ../../Core/Types.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
@@ -10304,9 +10304,9 @@ LevelNickInfoManager.o: LevelNickInfoManager.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
@@ -10374,11 +10374,11 @@ SiegeManager.o: SiegeManager.cpp SiegeManager.h ../../Core/Types.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -10407,7 +10407,7 @@ SiegeManager.o: SiegeManager.cpp SiegeManager.h ../../Core/Types.h \
  war/WarSystem.h war/Scheduler.h war/Work.h war/Schedule.h \
  ../../Core/Gpackets/GCWarList.h ../../Core/GuildWarInfo.h \
  ../../Core/WarInfo.h ../../Core/ValueList.h ../../Core/RaceWarInfo.h \
- EventTransport.h /usr/include/STL/cstdio \
+ EventTransport.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h
 BroadcastFilter.o: BroadcastFilter.cpp BroadcastFilter.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
@@ -10522,7 +10522,7 @@ Store.o: Store.cpp Store.h ../../Core/Types.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PCItemInfo.h \
- ../../Core/SubItemInfo.h ../../Core/Assert.h /usr/include/STL/vector \
+ ../../Core/SubItemInfo.h ../../Core/Assert.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Item.h Object.h Effect.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
@@ -10576,7 +10576,7 @@ AdvancementClassExpTable.o: AdvancementClassExpTable.cpp \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
  SomethingGrowingUp.h ../database/DB.h ../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -10584,9 +10584,9 @@ AdvancementClassExpTable.o: AdvancementClassExpTable.cpp \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../database/Statement.h ../database/Result.h /usr/include/i386-linux-gnu/sys/time.h \
- ../../Core/Assert.h /usr/include/STL/vector \
+ ../../Core/Assert.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h
 DynamicZoneManager.o: DynamicZoneManager.cpp DynamicZoneManager.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
@@ -10635,7 +10635,7 @@ DynamicZoneManager.o: DynamicZoneManager.cpp DynamicZoneManager.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  DynamicZoneGroup.h DynamicZoneInfo.h ../../Core/Assert.h
 DynamicZoneInfo.o: DynamicZoneInfo.cpp DynamicZoneInfo.h \
@@ -10682,7 +10682,7 @@ DynamicZoneInfo.o: DynamicZoneInfo.cpp DynamicZoneInfo.h \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../Core/Assert.h ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h
@@ -10731,7 +10731,7 @@ DynamicZone.o: DynamicZone.cpp DynamicZone.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ZoneInfoManager.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
@@ -10742,7 +10742,7 @@ DynamicZone.o: DynamicZone.cpp DynamicZone.h ../../Core/Types.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -10801,7 +10801,7 @@ DynamicZoneGroup.o: DynamicZoneGroup.cpp DynamicZoneGroup.h \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  DynamicZone.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h \
  /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
@@ -10858,7 +10858,7 @@ DynamicZoneGateOfAlter.o: DynamicZoneGateOfAlter.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h DynamicZone.h \
  ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h PlayerCreature.h Creature.h Object.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
@@ -10870,7 +10870,7 @@ DynamicZoneGateOfAlter.o: DynamicZoneGateOfAlter.cpp \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
@@ -10938,7 +10938,7 @@ DynamicZoneAlterOfBlood.o: DynamicZoneAlterOfBlood.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
@@ -10948,7 +10948,7 @@ DynamicZoneAlterOfBlood.o: DynamicZoneAlterOfBlood.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -11014,7 +11014,7 @@ DynamicZoneAsylion.o: DynamicZoneAsylion.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
@@ -11024,7 +11024,7 @@ DynamicZoneAsylion.o: DynamicZoneAsylion.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -11090,7 +11090,7 @@ DynamicZoneTimeOfDungeon.o: DynamicZoneTimeOfDungeon.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
@@ -11100,7 +11100,7 @@ DynamicZoneTimeOfDungeon.o: DynamicZoneTimeOfDungeon.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -11168,7 +11168,7 @@ DynamicZoneFactoryManager.o: DynamicZoneFactoryManager.cpp \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h DynamicZone.h \
  ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../../Core/Assert.h \
  DynamicZoneGateOfAlter.h DynamicZoneAlterOfBlood.h \
@@ -11220,7 +11220,7 @@ DynamicZoneCastleOfDefense.o: DynamicZoneCastleOfDefense.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
@@ -11230,7 +11230,7 @@ DynamicZoneCastleOfDefense.o: DynamicZoneCastleOfDefense.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -11257,7 +11257,7 @@ DynamicZoneCastleOfDefense.o: DynamicZoneCastleOfDefense.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -11317,7 +11317,7 @@ DynamicZoneSlayerMirrorOfAbyss.o: DynamicZoneSlayerMirrorOfAbyss.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
@@ -11327,7 +11327,7 @@ DynamicZoneSlayerMirrorOfAbyss.o: DynamicZoneSlayerMirrorOfAbyss.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -11354,7 +11354,7 @@ DynamicZoneSlayerMirrorOfAbyss.o: DynamicZoneSlayerMirrorOfAbyss.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -11414,7 +11414,7 @@ DynamicZoneVampireMirrorOfAbyss.o: DynamicZoneVampireMirrorOfAbyss.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
@@ -11424,7 +11424,7 @@ DynamicZoneVampireMirrorOfAbyss.o: DynamicZoneVampireMirrorOfAbyss.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -11451,7 +11451,7 @@ DynamicZoneVampireMirrorOfAbyss.o: DynamicZoneVampireMirrorOfAbyss.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -11511,7 +11511,7 @@ DynamicZonePartyOfDungeon.o: DynamicZonePartyOfDungeon.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
@@ -11521,7 +11521,7 @@ DynamicZonePartyOfDungeon.o: DynamicZonePartyOfDungeon.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -11548,7 +11548,7 @@ DynamicZonePartyOfDungeon.o: DynamicZonePartyOfDungeon.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -11608,7 +11608,7 @@ DynamicZonePartyOfDungeon2.o: DynamicZonePartyOfDungeon2.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
@@ -11618,7 +11618,7 @@ DynamicZonePartyOfDungeon2.o: DynamicZonePartyOfDungeon2.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -11645,7 +11645,7 @@ DynamicZonePartyOfDungeon2.o: DynamicZonePartyOfDungeon2.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -11705,7 +11705,7 @@ DynamicZonePartyOfDungeon3.o: DynamicZonePartyOfDungeon3.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
@@ -11715,7 +11715,7 @@ DynamicZonePartyOfDungeon3.o: DynamicZonePartyOfDungeon3.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -11742,7 +11742,7 @@ DynamicZonePartyOfDungeon3.o: DynamicZonePartyOfDungeon3.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -11802,7 +11802,7 @@ DynamicZonePartyOfDungeon4.o: DynamicZonePartyOfDungeon4.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
@@ -11812,7 +11812,7 @@ DynamicZonePartyOfDungeon4.o: DynamicZonePartyOfDungeon4.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -11839,7 +11839,7 @@ DynamicZonePartyOfDungeon4.o: DynamicZonePartyOfDungeon4.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -11899,7 +11899,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
@@ -11909,7 +11909,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -11936,7 +11936,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -11996,7 +11996,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
@@ -12006,7 +12006,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -12033,7 +12033,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -12093,7 +12093,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
@@ -12103,7 +12103,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -12130,7 +12130,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -12190,7 +12190,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
@@ -12200,7 +12200,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -12227,7 +12227,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -12287,7 +12287,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
@@ -12297,7 +12297,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -12324,7 +12324,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -12384,7 +12384,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
@@ -12394,7 +12394,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -12421,7 +12421,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -12481,7 +12481,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
@@ -12491,7 +12491,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -12518,7 +12518,7 @@ DynamicZoneOustersMirrorOfAbyss.o: DynamicZoneOustersMirrorOfAbyss.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -12578,7 +12578,7 @@ DynamicZoneTiffagues_2_1.o:  DynamicZoneTiffagues_2_1.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
@@ -12588,7 +12588,7 @@ DynamicZoneTiffagues_2_1.o:  DynamicZoneTiffagues_2_1.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -12615,7 +12615,7 @@ DynamicZoneTiffagues_2_1.o:  DynamicZoneTiffagues_2_1.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -12675,7 +12675,7 @@ DynamicZoneTiffagues_2_2.o:  DynamicZoneTiffagues_2_2.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
@@ -12685,7 +12685,7 @@ DynamicZoneTiffagues_2_2.o:  DynamicZoneTiffagues_2_2.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -12712,7 +12712,7 @@ DynamicZoneTiffagues_2_2.o:  DynamicZoneTiffagues_2_2.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -12772,7 +12772,7 @@ DynamicZoneTiffagues_1.o:  DynamicZoneTiffagues_1.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
@@ -12782,7 +12782,7 @@ DynamicZoneTiffagues_1.o:  DynamicZoneTiffagues_1.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -12809,7 +12809,7 @@ DynamicZoneTiffagues_1.o:  DynamicZoneTiffagues_1.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -12869,7 +12869,7 @@ DynamicZoneBossRoom.o: DynamicZoneBossRoom.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
@@ -12879,7 +12879,7 @@ DynamicZoneBossRoom.o: DynamicZoneBossRoom.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -12906,7 +12906,7 @@ DynamicZoneBossRoom.o: DynamicZoneBossRoom.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -12966,7 +12966,7 @@ DynamicZoneMiniGame2.o: DynamicZoneMiniGame2.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
@@ -12976,7 +12976,7 @@ DynamicZoneMiniGame2.o: DynamicZoneMiniGame2.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -13003,7 +13003,7 @@ DynamicZoneMiniGame2.o: DynamicZoneMiniGame2.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -13063,7 +13063,7 @@ DynamicZoneMiniGame.o: DynamicZoneMiniGame.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
@@ -13073,7 +13073,7 @@ DynamicZoneMiniGame.o: DynamicZoneMiniGame.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -13100,7 +13100,7 @@ DynamicZoneMiniGame.o: DynamicZoneMiniGame.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -13160,7 +13160,7 @@ DynamicZoneIkLab.o: DynamicZoneIkLab.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
@@ -13170,7 +13170,7 @@ DynamicZoneIkLab.o: DynamicZoneIkLab.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -13197,7 +13197,7 @@ DynamicZoneIkLab.o: DynamicZoneIkLab.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -13257,7 +13257,7 @@ DynamicZoneIkLabSercet.o: DynamicZoneIkLabSercet.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
@@ -13267,7 +13267,7 @@ DynamicZoneIkLabSercet.o: DynamicZoneIkLabSercet.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -13294,7 +13294,7 @@ DynamicZoneIkLabSercet.o: DynamicZoneIkLabSercet.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -13354,7 +13354,7 @@ DynamicZoneBossRoom2.o: DynamicZoneBossRoom2.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h DynamicZoneInfo.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h DynamicZoneInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
@@ -13364,7 +13364,7 @@ DynamicZoneBossRoom2.o: DynamicZoneBossRoom2.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h ../Mutex.h \
@@ -13391,7 +13391,7 @@ DynamicZoneBossRoom2.o: DynamicZoneBossRoom2.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -13458,7 +13458,7 @@ NewYear2005ItemUtil.o: NewYear2005ItemUtil.cpp EventItemUtil.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h Slayer.h \
  PlayerCreature.h Creature.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
@@ -13466,7 +13466,7 @@ NewYear2005ItemUtil.o: NewYear2005ItemUtil.cpp EventItemUtil.h \
  InventorySlot.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -13488,7 +13488,7 @@ NewYear2005ItemUtil.o: NewYear2005ItemUtil.cpp EventItemUtil.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -13553,10 +13553,10 @@ Monster.o: Monster.cpp Monster.h Creature.h Object.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset MonsterInfo.h \
- MonsterSummonInfo.h MonsterInfoTypes.h /usr/include/STL/vector \
+ MonsterSummonInfo.h MonsterInfoTypes.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Treasure.h Item.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h PrecedenceTable.h MonsterManager.h \
  CreatureManager.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
@@ -13584,7 +13584,7 @@ Monster.o: Monster.cpp Monster.h Creature.h Object.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -13664,10 +13664,10 @@ MonsterInfo.o: MonsterInfo.cpp MonsterInfoTypes.h MonsterInfo.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- MonsterSummonInfo.h /usr/include/STL/vector \
+ MonsterSummonInfo.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Treasure.h Item.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
@@ -13734,9 +13734,9 @@ MonsterManager.o: MonsterManager.cpp MonsterManager.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- MonsterCounter.h Item.h /usr/include/STL/vector \
+ MonsterCounter.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  ../LogClient.h MonsterInfo.h MonsterSummonInfo.h MonsterInfoTypes.h \
  Treasure.h ItemInfoManager.h ItemInfo.h InfoClassManager.h \
@@ -13781,7 +13781,7 @@ MonsterManager.o: MonsterManager.cpp MonsterManager.h \
  ../../Core/RideMotorcycleInfo.h ../../Core/RideMotorcycleSlotInfo.h \
  ../../Core/SlayerSkillInfo.h ../../Core/PCSkillInfo.h \
  ../../Core/SubSlayerSkillInfo.h SlayerAttrExpTable.h \
- SomethingGrowingUp.h /usr/include/STL/cstdio \
+ SomethingGrowingUp.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -13852,11 +13852,11 @@ MonsterAI.o: MonsterAI.cpp MonsterAI.h Creature.h Object.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Zone.h Tile.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -13881,7 +13881,7 @@ MonsterAI.o: MonsterAI.cpp MonsterAI.h Creature.h Object.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -13947,7 +13947,7 @@ Directive.o: Directive.cpp Directive.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../database/DB.h \
- ../database/DatabaseManager.h /usr/include/STL/hash_map \
+ ../database/DatabaseManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
@@ -14002,7 +14002,7 @@ MonsterNameManager.o: MonsterNameManager.cpp MonsterNameManager.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  Monster.h Creature.h Object.h ../../Core/Assert.h EffectManager.h \
  Effect.h ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
@@ -14011,7 +14011,7 @@ MonsterNameManager.o: MonsterNameManager.cpp MonsterNameManager.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset MonsterInfo.h \
- MonsterSummonInfo.h MonsterInfoTypes.h /usr/include/STL/vector \
+ MonsterSummonInfo.h MonsterInfoTypes.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Treasure.h Item.h PrecedenceTable.h ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \
@@ -14117,10 +14117,10 @@ Item.o: Item.cpp Item.h Object.h ../../Core/Types.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../database/DB.h ../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
@@ -14134,7 +14134,7 @@ Item.o: Item.cpp Item.h Object.h ../../Core/Types.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
  OptionInfo.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  Store.h ../../Core/StoreInfo.h \
- ../../Core/Cpackets/CGRequestStoreInfo.h /usr/include/STL/cstdio \
+ ../../Core/Cpackets/CGRequestStoreInfo.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h
 ItemInfo.o: ItemInfo.cpp ItemInfo.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -14187,9 +14187,9 @@ ItemInfo.o: ItemInfo.cpp ItemInfo.h ../../Core/Types.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
- ItemUtil.h VolumeInfo.h OptionInfo.h /usr/include/STL/hash_map \
+ ItemUtil.h VolumeInfo.h OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h
 ItemUtil.o: ItemUtil.cpp ../database/DB.h \
  ../database/DatabaseManager.h ../../Core/Types.h \
@@ -14237,7 +14237,7 @@ ItemUtil.o: ItemUtil.cpp ../database/DB.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -14252,7 +14252,7 @@ ItemUtil.o: ItemUtil.cpp ../database/DB.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h ItemInfo.h ItemInfoManager.h \
  InfoClassManager.h OptionInfo.h ../../Core/Player.h PlayerCreature.h \
  Creature.h ObjectRegistry.h InventorySlot.h Garbage.h RankBonus.h \
@@ -14275,7 +14275,7 @@ ItemUtil.o: ItemUtil.cpp ../database/DB.h \
  ../../Core/RideMotorcycleInfo.h ../../Core/RideMotorcycleSlotInfo.h \
  ../../Core/SlayerSkillInfo.h ../../Core/PCSkillInfo.h \
  ../../Core/SubSlayerSkillInfo.h CreatureUtil.h SlayerAttrExpTable.h \
- SomethingGrowingUp.h /usr/include/STL/cstdio \
+ SomethingGrowingUp.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -14347,10 +14347,10 @@ ItemFactoryManager.o: ItemFactoryManager.cpp Item.h Object.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemUtil.h ItemFactoryManager.h ItemFactory.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ItemInfoManager.h ItemInfo.h \
  InfoClassManager.h item/Motorcycle.h ItemLoader.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
@@ -14438,11 +14438,11 @@ ItemInfoManager.o: ItemInfoManager.cpp ../../Core/Exception.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemInfo.h InfoClassManager.h ItemUtil.h item/AR.h ConcreteItem.h \
  ../database/DB.h ../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../Mutex.h \
@@ -14529,7 +14529,7 @@ ItemLoaderManager.o: ItemLoaderManager.cpp ItemLoaderManager.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemLoader.h Slayer.h PlayerCreature.h Creature.h ObjectRegistry.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
@@ -14537,7 +14537,7 @@ ItemLoaderManager.o: ItemLoaderManager.cpp ItemLoaderManager.h \
  /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Garbage.h RankBonus.h \
  ExpFwd.h ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -14559,7 +14559,7 @@ ItemLoaderManager.o: ItemLoaderManager.cpp ItemLoaderManager.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -14647,7 +14647,7 @@ SlayerCorpse.o: SlayerCorpse.cpp SlayerCorpse.h Item.h Object.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemFactory.h ../../Core/PCSlayerInfo3.h ../../Core/PCInfo.h Corpse.h \
  Creature.h Slayer.h PlayerCreature.h ObjectRegistry.h ../Mutex.h \
@@ -14656,7 +14656,7 @@ SlayerCorpse.o: SlayerCorpse.cpp SlayerCorpse.h Item.h Object.h \
  InventorySlot.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -14677,7 +14677,7 @@ SlayerCorpse.o: SlayerCorpse.cpp SlayerCorpse.h Item.h Object.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h
 VampireCorpse.o: VampireCorpse.cpp VampireCorpse.h Item.h Object.h \
@@ -14732,7 +14732,7 @@ VampireCorpse.o: VampireCorpse.cpp VampireCorpse.h Item.h Object.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemFactory.h Corpse.h ../../Core/PCVampireInfo3.h \
  ../../Core/PCInfo.h Creature.h Vampire.h PlayerCreature.h \
@@ -14742,7 +14742,7 @@ VampireCorpse.o: VampireCorpse.cpp VampireCorpse.h Item.h Object.h \
  InventorySlot.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Inventory.h \
  VolumeInfo.h Zone.h Tile.h Obstacle.h Portal.h quest/TriggerManager.h \
@@ -14811,7 +14811,7 @@ OustersCorpse.o: OustersCorpse.cpp OustersCorpse.h Item.h Object.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemFactory.h Corpse.h ../../Core/PCOustersInfo3.h \
  ../../Core/PCInfo.h Creature.h Ousters.h PlayerCreature.h \
@@ -14821,7 +14821,7 @@ OustersCorpse.o: OustersCorpse.cpp OustersCorpse.h Item.h Object.h \
  InventorySlot.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Inventory.h \
  VolumeInfo.h Zone.h Tile.h Obstacle.h Portal.h quest/TriggerManager.h \
@@ -14890,11 +14890,11 @@ MonsterCorpse.o: MonsterCorpse.cpp MonsterCorpse.h Item.h Object.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemFactory.h Inventory.h VolumeInfo.h InventorySlot.h Corpse.h \
  Monster.h Creature.h MonsterInfo.h MonsterSummonInfo.h \
- MonsterInfoTypes.h Treasure.h /usr/include/STL/hash_map \
+ MonsterInfoTypes.h Treasure.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  PrecedenceTable.h ../database/DB.h ../database/DatabaseManager.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
@@ -14957,10 +14957,10 @@ Party.o: Party.cpp Party.h Creature.h Object.h ../../Core/Types.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- ../../Core/ModifyInfo.h /usr/include/STL/hash_map \
+ ../../Core/ModifyInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h CreatureUtil.h Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GamePlayer.h ../../Core/Player.h \
  ../../Core/SocketEncryptOutputStream.h ../../Core/Encrypter.h \
  ../../Core/EncryptUtility.h ../../Core/SocketEncryptInputStream.h \
@@ -14990,7 +14990,7 @@ Party.o: Party.cpp Party.h Creature.h Object.h ../../Core/Types.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -15061,7 +15061,7 @@ Guild.o: Guild.cpp /usr/include/c++/7/algorithm \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../Core/VSDateTime.h ../database/DB.h \
  ../database/DatabaseManager.h ../database/Connection.h \
@@ -15124,7 +15124,7 @@ GuildManager.o: GuildManager.cpp Guild.h ../../Core/Types.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../Core/VSDateTime.h GuildManager.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
@@ -15186,7 +15186,7 @@ GuildUnion.o: GuildUnion.cpp GuildUnion.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../Core/Gpackets/GCUnionOfferList.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -15212,7 +15212,7 @@ GuildUnion.o: GuildUnion.cpp GuildUnion.h ../../Core/Types.h \
  /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset NPC.h Zone.h Tile.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h Party.h \
@@ -15327,11 +15327,11 @@ EffectManager.o: EffectManager.cpp EffectManager.h ../../Core/Types.h \
  ../../Core/SocketOutputStream.h EffectEnemyErase.h EffectLoader.h \
  Creature.h /usr/include/c++/7/bitset Zone.h Tile.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -15397,11 +15397,11 @@ EffectSchedule.o: EffectSchedule.cpp EffectSchedule.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h /usr/include/c++/7/bitset \
- Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ Item.h /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h Party.h \
  ../../Core/ModifyInfo.h PCManager.h CreatureManager.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
@@ -15465,12 +15465,12 @@ EffectLoaderManager.o: EffectLoaderManager.cpp EffectLoaderManager.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -15492,7 +15492,7 @@ EffectLoaderManager.o: EffectLoaderManager.cpp EffectLoaderManager.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -15563,11 +15563,11 @@ EffectShutDown.o: EffectShutDown.cpp ../../Core/Assert.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Zone.h \
  Tile.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
- Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ Item.h /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -15644,11 +15644,11 @@ EffectHPRecovery.o: EffectHPRecovery.cpp EffectHPRecovery.h Effect.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -15673,7 +15673,7 @@ EffectHPRecovery.o: EffectHPRecovery.cpp EffectHPRecovery.h Effect.h \
  ../../Core/RideMotorcycleInfo.h ../../Core/RideMotorcycleSlotInfo.h \
  ../../Core/SlayerSkillInfo.h ../../Core/PCSkillInfo.h \
  ../../Core/SubSlayerSkillInfo.h CreatureUtil.h SlayerAttrExpTable.h \
- SomethingGrowingUp.h /usr/include/STL/cstdio \
+ SomethingGrowingUp.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -15739,11 +15739,11 @@ EffectMPRecovery.o: EffectMPRecovery.cpp ../../Core/Assert.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  ../../Core/EffectInfo.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h EffectManager.h \
- /usr/include/c++/7/bitset Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
- quest/PropertyBuffer.h Sector.h /usr/include/STL/hash_map \
+ quest/PropertyBuffer.h Sector.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
@@ -15768,7 +15768,7 @@ EffectMPRecovery.o: EffectMPRecovery.cpp ../../Core/Assert.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Ousters.h \
  ../../Core/PCOustersInfo.h ../../Core/PCOustersInfo2.h \
@@ -15830,11 +15830,11 @@ EffectAlignmentRecovery.o: EffectAlignmentRecovery.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -15859,7 +15859,7 @@ EffectAlignmentRecovery.o: EffectAlignmentRecovery.cpp \
  ../../Core/RideMotorcycleInfo.h ../../Core/RideMotorcycleSlotInfo.h \
  ../../Core/SlayerSkillInfo.h ../../Core/PCSkillInfo.h \
  ../../Core/SubSlayerSkillInfo.h CreatureUtil.h SlayerAttrExpTable.h \
- SomethingGrowingUp.h /usr/include/STL/cstdio \
+ SomethingGrowingUp.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -15926,12 +15926,12 @@ EffectEnemyErase.o: EffectEnemyErase.cpp EffectEnemyErase.h Effect.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -15953,7 +15953,7 @@ EffectEnemyErase.o: EffectEnemyErase.cpp EffectEnemyErase.h Effect.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -16020,11 +16020,11 @@ EffectDecayCorpse.o: EffectDecayCorpse.cpp ../../Core/Assert.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Tile.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
- Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ Item.h /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -16090,11 +16090,11 @@ EffectDecayItem.o: EffectDecayItem.cpp ../../Core/Assert.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Tile.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
- Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ Item.h /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -16161,12 +16161,12 @@ EffectAftermath.o: EffectAftermath.cpp EffectAftermath.h Effect.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -16188,7 +16188,7 @@ EffectAftermath.o: EffectAftermath.cpp EffectAftermath.h Effect.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -16257,12 +16257,12 @@ EffectComa.o: EffectComa.cpp EffectComa.h Effect.h Object.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -16284,7 +16284,7 @@ EffectComa.o: EffectComa.cpp EffectComa.h Effect.h Object.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -16366,11 +16366,11 @@ EffectPrecedence.o: EffectPrecedence.cpp EffectPrecedence.h Effect.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -16437,11 +16437,11 @@ EffectTransportItem.o: EffectTransportItem.cpp ../../Core/Assert.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Tile.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
- Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ Item.h /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -16504,11 +16504,11 @@ EffectAddItem.o: EffectAddItem.cpp ../../Core/Assert.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Tile.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
- Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ Item.h /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -16570,7 +16570,7 @@ EffectRelicTable.o: EffectRelicTable.cpp EffectRelicTable.h Effect.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h Slayer.h \
  PlayerCreature.h Creature.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
@@ -16578,7 +16578,7 @@ EffectRelicTable.o: EffectRelicTable.cpp EffectRelicTable.h Effect.h \
  InventorySlot.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -16600,7 +16600,7 @@ EffectRelicTable.o: EffectRelicTable.cpp EffectRelicTable.h Effect.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -16667,12 +16667,12 @@ EffectHasSlayerRelic.o: EffectHasSlayerRelic.cpp \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -16694,7 +16694,7 @@ EffectHasSlayerRelic.o: EffectHasSlayerRelic.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -16766,11 +16766,11 @@ EffectHasVampireRelic.o: EffectHasVampireRelic.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -16799,7 +16799,7 @@ EffectHasVampireRelic.o: EffectHasVampireRelic.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -16868,12 +16868,12 @@ EffectIncreaseAttr.o: EffectIncreaseAttr.cpp EffectIncreaseAttr.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -16895,7 +16895,7 @@ EffectIncreaseAttr.o: EffectIncreaseAttr.cpp EffectIncreaseAttr.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -16964,11 +16964,11 @@ EffectDeleteItem.o: EffectDeleteItem.cpp ../../Core/Assert.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Tile.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
- Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ Item.h /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -17032,12 +17032,12 @@ EffectSlayerRelic.o: EffectSlayerRelic.cpp EffectSlayerRelic.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -17059,7 +17059,7 @@ EffectSlayerRelic.o: EffectSlayerRelic.cpp EffectSlayerRelic.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -17124,9 +17124,9 @@ EffectVampireRelic.o: EffectVampireRelic.cpp EffectVampireRelic.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
  ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h ZoneGroupManager.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h ZoneGroupManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
- /home/darkeden/src/libs/stl_hash_map.h /usr/include/STL/vector \
+ /home/darkeden/src/libs/stl_hash_map.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
@@ -17163,7 +17163,7 @@ EffectVampireRelic.o: EffectVampireRelic.cpp EffectVampireRelic.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -17229,9 +17229,9 @@ EffectRelicPosition.o: EffectRelicPosition.cpp EffectRelicPosition.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- ../../Core/VSDateTime.h ZoneGroupManager.h /usr/include/STL/hash_map \
+ ../../Core/VSDateTime.h ZoneGroupManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
- /home/darkeden/src/libs/stl_hash_map.h /usr/include/STL/vector \
+ /home/darkeden/src/libs/stl_hash_map.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
@@ -17311,12 +17311,12 @@ EffectRelicLock.o: EffectRelicLock.cpp EffectRelicLock.h Effect.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -17338,7 +17338,7 @@ EffectRelicLock.o: EffectRelicLock.cpp EffectRelicLock.h Effect.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -17408,11 +17408,11 @@ EffectMasterLairPass.o: EffectMasterLairPass.cpp \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../../Core/Player.h ZoneInfoManager.h Zone.h Tile.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -17479,9 +17479,9 @@ EffectContinualGroundAttack.o: EffectContinualGroundAttack.cpp \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- MonsterCounter.h Item.h /usr/include/STL/vector \
+ MonsterCounter.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  PCManager.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Obstacle.h Portal.h \
@@ -17508,7 +17508,7 @@ EffectContinualGroundAttack.o: EffectContinualGroundAttack.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -17573,11 +17573,11 @@ EffectGhost.o: EffectGhost.cpp EffectGhost.h Effect.h Object.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../../Core/Player.h ZoneInfoManager.h Zone.h Tile.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -17640,9 +17640,9 @@ EffectTransportCreature.o: EffectTransportCreature.cpp \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
- VariableManager.h /usr/include/STL/hash_map \
+ VariableManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
- /home/darkeden/src/libs/stl_hash_map.h /usr/include/STL/vector \
+ /home/darkeden/src/libs/stl_hash_map.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  Zone.h Tile.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  Creature.h EffectManager.h ../../Core/EffectInfo.h \
@@ -17671,7 +17671,7 @@ EffectTransportCreature.o: EffectTransportCreature.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h ../../Core/Player.h \
  StringPool.h
@@ -17731,12 +17731,12 @@ EffectGrandMasterSlayer.o: EffectGrandMasterSlayer.cpp \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -17758,7 +17758,7 @@ EffectGrandMasterSlayer.o: EffectGrandMasterSlayer.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h ../../Core/Player.h \
  ../../Core/Gpackets/GCAddEffect.h \
@@ -17819,12 +17819,12 @@ EffectMonsterMasterEffect1.o: EffectMonsterMasterEffect1.cpp \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -17846,7 +17846,7 @@ EffectMonsterMasterEffect1.o: EffectMonsterMasterEffect1.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h ../../Core/Player.h \
  ../../Core/Gpackets/GCAddEffect.h \
@@ -17905,11 +17905,11 @@ EffectGrandMasterVampire.o: EffectGrandMasterVampire.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../../Core/Player.h Zone.h Tile.h /home/darkeden/src/libs/slist \
- /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/STL/vector \
+ /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
- quest/PropertyBuffer.h Sector.h /usr/include/STL/hash_map \
+ quest/PropertyBuffer.h Sector.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
@@ -17989,12 +17989,12 @@ EffectKillAftermath.o: EffectKillAftermath.cpp EffectKillAftermath.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -18016,7 +18016,7 @@ EffectKillAftermath.o: EffectKillAftermath.cpp EffectKillAftermath.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -18088,12 +18088,12 @@ EffectHasBloodBible.o: EffectHasBloodBible.cpp EffectHasBloodBible.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -18115,7 +18115,7 @@ EffectHasBloodBible.o: EffectHasBloodBible.cpp EffectHasBloodBible.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h item/BloodBible.h \
  ItemInfo.h InfoClassManager.h ItemFactory.h Vampire.h \
@@ -18194,12 +18194,12 @@ EffectShrineHoly.o: EffectShrineHoly.cpp EffectShrineHoly.h Effect.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -18221,7 +18221,7 @@ EffectShrineHoly.o: EffectShrineHoly.cpp EffectShrineHoly.h Effect.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -18293,12 +18293,12 @@ EffectShrineGuard.o: EffectShrineGuard.cpp EffectShrineGuard.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -18320,7 +18320,7 @@ EffectShrineGuard.o: EffectShrineGuard.cpp EffectShrineGuard.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -18392,12 +18392,12 @@ EffectShrineShield.o: EffectShrineShield.cpp EffectShrineShield.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -18419,7 +18419,7 @@ EffectShrineShield.o: EffectShrineShield.cpp EffectShrineShield.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -18490,11 +18490,11 @@ EffectTransportItemToCorpse.o: EffectTransportItemToCorpse.cpp \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Tile.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
- Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ Item.h /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -18558,11 +18558,11 @@ EffectAddItemToCorpse.o: EffectAddItemToCorpse.cpp ../../Core/Assert.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Tile.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
- Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ Item.h /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -18628,12 +18628,12 @@ EffectHasRelic.o: EffectHasRelic.cpp EffectHasRelic.h Effect.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -18655,7 +18655,7 @@ EffectHasRelic.o: EffectHasRelic.cpp EffectHasRelic.h Effect.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h item/Relic.h ItemInfo.h \
  InfoClassManager.h ItemFactory.h Vampire.h ../../Core/PCVampireInfo.h \
@@ -18733,12 +18733,12 @@ EffectHasCastleSymbol.o: EffectHasCastleSymbol.cpp \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/signal.h /usr/include/i386-linux-gnu/bits/initspin.h \
  /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph InventorySlot.h Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -18760,7 +18760,7 @@ EffectHasCastleSymbol.o: EffectHasCastleSymbol.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h item/CastleSymbol.h \
  ItemInfo.h InfoClassManager.h ItemFactory.h CastleInfoManager.h \
@@ -18837,12 +18837,12 @@ EffectLoveChain.o: EffectLoveChain.cpp EffectLoveChain.h Effect.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -18864,7 +18864,7 @@ EffectLoveChain.o: EffectLoveChain.cpp EffectLoveChain.h Effect.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -18940,11 +18940,11 @@ EffectPKZoneRegen.o: EffectPKZoneRegen.cpp EffectPKZoneRegen.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -18969,7 +18969,7 @@ EffectPKZoneRegen.o: EffectPKZoneRegen.cpp EffectPKZoneRegen.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -19037,11 +19037,11 @@ EffectPKZoneResurrection.o: EffectPKZoneResurrection.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -19107,11 +19107,11 @@ EffectGrandMasterOusters.o: EffectGrandMasterOusters.cpp \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../../Core/Player.h Zone.h Tile.h /home/darkeden/src/libs/slist \
- /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/STL/vector \
+ /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
- quest/PropertyBuffer.h Sector.h /usr/include/STL/hash_map \
+ quest/PropertyBuffer.h Sector.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
@@ -19189,11 +19189,11 @@ EffectTranslation.o: EffectTranslation.cpp EffectTranslation.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../../Core/Player.h Zone.h Tile.h /home/darkeden/src/libs/slist \
- /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/STL/vector \
+ /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
- quest/PropertyBuffer.h Sector.h /usr/include/STL/hash_map \
+ quest/PropertyBuffer.h Sector.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
@@ -19259,12 +19259,12 @@ EffectLoud.o: EffectLoud.cpp EffectLoud.h Effect.h Object.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Inventory.h \
  VolumeInfo.h Zone.h Tile.h Obstacle.h Portal.h quest/TriggerManager.h \
@@ -19339,12 +19339,12 @@ EffectMute.o: EffectMute.cpp EffectMute.h Effect.h Object.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -19366,7 +19366,7 @@ EffectMute.o: EffectMute.cpp EffectMute.h Effect.h Object.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -19443,12 +19443,12 @@ SimpleCreatureEffect.o: SimpleCreatureEffect.cpp \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Inventory.h \
  VolumeInfo.h Zone.h Tile.h Obstacle.h Portal.h quest/TriggerManager.h \
@@ -19523,12 +19523,12 @@ EffectRefiniumTicket.o: EffectRefiniumTicket.cpp \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Inventory.h \
  VolumeInfo.h Zone.h Tile.h Obstacle.h Portal.h quest/TriggerManager.h \
@@ -19603,12 +19603,12 @@ EffectFlagInsert.o: EffectFlagInsert.cpp EffectFlagInsert.h Effect.h \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -19630,7 +19630,7 @@ EffectFlagInsert.o: EffectFlagInsert.cpp EffectFlagInsert.h Effect.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -19701,11 +19701,11 @@ EffectHasSweeper.o: EffectHasSweeper.cpp EffectHasSweeper.h Effect.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Zone.h Tile.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -19766,7 +19766,7 @@ EffectKeepSweeper.o: EffectKeepSweeper.cpp EffectKeepSweeper.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ../../Core/Gpackets/GCRemoveEffect.h ../../Core/PacketFactory.h
 EffectRegenZone.o: EffectRegenZone.cpp EffectRegenZone.h \
@@ -19822,7 +19822,7 @@ EffectRegenZone.o: EffectRegenZone.cpp EffectRegenZone.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemFactory.h Inventory.h VolumeInfo.h InventorySlot.h Corpse.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
@@ -19832,7 +19832,7 @@ EffectRegenZone.o: EffectRegenZone.cpp EffectRegenZone.h \
  /home/darkeden/src/libs/stl_multimap.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
- quest/PropertyBuffer.h Sector.h /usr/include/STL/hash_map \
+ quest/PropertyBuffer.h Sector.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ObjectRegistry.h Party.h ../../Core/ModifyInfo.h PCManager.h \
  CreatureManager.h ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
@@ -19893,11 +19893,11 @@ EffectTryingPosition.o: EffectTryingPosition.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -19922,7 +19922,7 @@ EffectTryingPosition.o: EffectTryingPosition.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h war/WarSystem.h \
  war/Scheduler.h war/Work.h war/Schedule.h ../../Core/VSDateTime.h \
@@ -19989,11 +19989,11 @@ EffectTrying.o: EffectTrying.cpp EffectTrying.h Effect.h Object.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Zone.h Tile.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -20056,7 +20056,7 @@ EffectTryRegenZone.o: EffectTryRegenZone.cpp EffectTryRegenZone.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  ItemFactory.h Inventory.h VolumeInfo.h InventorySlot.h Corpse.h \
  ../Mutex.h /usr/include/pthread.h /usr/include/sched.h \
@@ -20066,7 +20066,7 @@ EffectTryRegenZone.o: EffectTryRegenZone.cpp EffectTryRegenZone.h \
  /home/darkeden/src/libs/stl_multimap.h Creature.h Zone.h Tile.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Obstacle.h \
  Portal.h quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
- quest/PropertyBuffer.h Sector.h /usr/include/STL/hash_map \
+ quest/PropertyBuffer.h Sector.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ObjectRegistry.h Party.h ../../Core/ModifyInfo.h PCManager.h \
  CreatureManager.h ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
@@ -20119,7 +20119,7 @@ EffectOnBridge.o: EffectOnBridge.cpp ../database/DB.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -20135,7 +20135,7 @@ EffectOnBridge.o: EffectOnBridge.cpp ../database/DB.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h Party.h \
@@ -20156,7 +20156,7 @@ EffectOnBridge.o: EffectOnBridge.cpp ../database/DB.h \
  ../../Core/RideMotorcycleInfo.h ../../Core/RideMotorcycleSlotInfo.h \
  ../../Core/SlayerSkillInfo.h ../../Core/PCSkillInfo.h \
  ../../Core/SubSlayerSkillInfo.h CreatureUtil.h SlayerAttrExpTable.h \
- SomethingGrowingUp.h /usr/include/STL/cstdio \
+ SomethingGrowingUp.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -20226,12 +20226,12 @@ EffectHasPet.o: EffectHasPet.cpp EffectHasPet.h Effect.h Object.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h GamePlayer.h \
  ../../Core/Player.h ../../Core/SocketEncryptOutputStream.h \
@@ -20251,7 +20251,7 @@ EffectHasPet.o: EffectHasPet.cpp EffectHasPet.h Effect.h Object.h \
  ../../Core/Gpackets/GCRemoveEffect.h \
  ../../Core/Gpackets/GCModifyInformation.h item/PetItem.h ItemInfo.h \
  InfoClassManager.h ItemFactory.h ItemLoader.h VariableManager.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h
  EffectLoginEvent.o: EffectLoginEvent.cpp EffectLoginEvent.h Effect.h Object.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
@@ -20308,12 +20308,12 @@ EffectHasPet.o: EffectHasPet.cpp EffectHasPet.h Effect.h Object.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h GamePlayer.h \
  ../../Core/Player.h ../../Core/SocketEncryptOutputStream.h \
@@ -20333,7 +20333,7 @@ EffectHasPet.o: EffectHasPet.cpp EffectHasPet.h Effect.h Object.h \
  ../../Core/Gpackets/GCRemoveEffect.h \
  ../../Core/Gpackets/GCModifyInformation.h ItemInfo.h \
  InfoClassManager.h ItemFactory.h ItemLoader.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h
  EffectHellGardenJoin.o: EffectHellGardenJoin.cpp EffectHellGardenJoin.h Effect.h Object.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
@@ -20390,12 +20390,12 @@ EffectHasPet.o: EffectHasPet.cpp EffectHasPet.h Effect.h Object.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h GamePlayer.h \
  ../../Core/Player.h ../../Core/SocketEncryptOutputStream.h \
@@ -20415,7 +20415,7 @@ EffectHasPet.o: EffectHasPet.cpp EffectHasPet.h Effect.h Object.h \
  ../../Core/Gpackets/GCRemoveEffect.h \
  ../../Core/Gpackets/GCModifyInformation.h ItemInfo.h \
  InfoClassManager.h ItemFactory.h ItemLoader.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h
 EffectPacketSend.o: EffectPacketSend.cpp EffectPacketSend.h Effect.h \
  Object.h ../../Core/Types.h ../../Core/types/SystemTypes.h \
  /usr/include/c++/7/iostream  \
@@ -20470,11 +20470,11 @@ EffectPacketSend.o: EffectPacketSend.cpp EffectPacketSend.h Effect.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -20536,11 +20536,11 @@ EffectDarknessForbidden.o: EffectDarknessForbidden.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -20604,11 +20604,11 @@ EffectCastingTrap.o: EffectCastingTrap.cpp EffectCastingTrap.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  ../../Core/VSDateTime.h Tile.h /home/darkeden/src/libs/slist \
- /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/STL/vector \
+ /home/darkeden/src/libs/stl_slist.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
- quest/PropertyBuffer.h Sector.h /usr/include/STL/hash_map \
+ quest/PropertyBuffer.h Sector.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  Zone.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
@@ -20675,11 +20675,11 @@ EffectWithWarning.o: EffectWithWarning.cpp EffectWithWarning.h \
  ../../Core/Gpackets/GCAddEffect.h skill/EffectIceFieldToCreature.h \
  EffectLoader.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h EffectManager.h \
- /usr/include/c++/7/bitset Item.h /usr/include/STL/vector \
+ /usr/include/c++/7/bitset Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
- quest/PropertyBuffer.h Sector.h /usr/include/STL/hash_map \
+ quest/PropertyBuffer.h Sector.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
@@ -20703,7 +20703,7 @@ EffectWithWarning.o: EffectWithWarning.cpp EffectWithWarning.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  Vampire.h ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
  ../../Core/PCVampireInfo3.h ../../Core/VampireSkillInfo.h \
@@ -20766,11 +20766,11 @@ EffectKickOut.o: EffectKickOut.cpp EffectKickOut.h Effect.h Object.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -20778,7 +20778,7 @@ EffectKickOut.o: EffectKickOut.cpp EffectKickOut.h Effect.h Object.h \
  ../../Core/Encrypter.h ../../Core/EncryptUtility.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
  /home/darkeden/src/libs/stl_queue.h ../../Core/Gpackets/GCSystemMessage.h \
- ../../Core/PacketFactory.h /usr/include/STL/cstdio \
+ ../../Core/PacketFactory.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h
 EffectGDRLairClose.o: EffectGDRLairClose.cpp EffectGDRLairClose.h \
  Effect.h Object.h ../../Core/Types.h ../../Core/types/SystemTypes.h \
@@ -20829,7 +20829,7 @@ EffectGDRLairClose.o: EffectGDRLairClose.cpp EffectGDRLairClose.h \
  ../Timeval.h /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
  /usr/include/getopt.h GDRLairManager.h FiniteStateMachine.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../../Core/VSDateTime.h GDRLairAbstractStates.h ../Thread.h \
  ../pthreadAPI.h /usr/include/pthread.h /usr/include/sched.h \
@@ -20838,7 +20838,7 @@ EffectGDRLairClose.o: EffectGDRLairClose.cpp EffectGDRLairClose.h \
  ../../Core/Packet.h ../../Core/SocketInputStream.h \
  ../../Core/Socket.h ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
- ZoneGroupManager.h /usr/include/STL/vector \
+ ZoneGroupManager.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
@@ -20852,7 +20852,7 @@ EffectGDRLairClose.o: EffectGDRLairClose.cpp EffectGDRLairClose.h \
  /usr/include/STL/queue /home/darkeden/src/libs/stl_deque.h \
  /home/darkeden/src/libs/stl_queue.h ../../Core/GameTime.h \
  ../../Core/Gpackets/GMServerInfo.h ../../Core/DatagramPacket.h \
- ../../Core/Datagram.h /usr/include/STL/cstdio \
+ ../../Core/Datagram.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h
 EffectEventQuestReset.o: EffectEventQuestReset.cpp \
  EffectEventQuestReset.h Effect.h Object.h ../../Core/Types.h \
@@ -20910,17 +20910,17 @@ EffectEventQuestReset.o: EffectEventQuestReset.cpp \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  ../../Core/Player.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h \
- ../../Core/Gpackets/GCSystemMessage.h /usr/include/STL/cstdio \
+ ../../Core/Gpackets/GCSystemMessage.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h
 EffectShareHP.o: EffectShareHP.cpp EffectShareHP.h Effect.h Object.h \
  ../../Core/Types.h ../../Core/types/SystemTypes.h \
@@ -20978,12 +20978,12 @@ EffectShareHP.o: EffectShareHP.cpp EffectShareHP.h Effect.h Object.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -21005,7 +21005,7 @@ EffectShareHP.o: EffectShareHP.cpp EffectShareHP.h Effect.h Object.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -21073,12 +21073,12 @@ EffectCanEnterGDRLair.o: EffectCanEnterGDRLair.cpp \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -21100,7 +21100,7 @@ EffectCanEnterGDRLair.o: EffectCanEnterGDRLair.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -21168,12 +21168,12 @@ EffectSimyunEnterLoop.o: EffectSimyunEnterLoop.cpp \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -21195,7 +21195,7 @@ EffectSimyunEnterLoop.o: EffectSimyunEnterLoop.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -21261,11 +21261,11 @@ EffectAutoTurret.o: EffectAutoTurret.cpp EffectAutoTurret.h Effect.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -21327,11 +21327,11 @@ EffectTiffaugesRealWorldLeftUP.o: EffectTiffaugesRealWorldLeftUP.cpp EffectTiffa
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -21393,11 +21393,11 @@ EffectTurretLaser.o: EffectTurretLaser.cpp EffectTurretLaser.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -21422,7 +21422,7 @@ EffectTurretLaser.o: EffectTurretLaser.cpp EffectTurretLaser.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -21486,9 +21486,9 @@ EffectKillTimer.o: EffectKillTimer.cpp EffectKillTimer.h Effect.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Monster.h \
  MonsterInfo.h MonsterSummonInfo.h MonsterInfoTypes.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
- Treasure.h Item.h /usr/include/STL/hash_map \
+ Treasure.h Item.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  PrecedenceTable.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Obstacle.h Portal.h \
@@ -21556,12 +21556,12 @@ EffectDragonEye.o: EffectDragonEye.cpp EffectDragonEye.h \
  ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -21583,7 +21583,7 @@ EffectDragonEye.o: EffectDragonEye.cpp EffectDragonEye.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -21646,9 +21646,9 @@ EffectRegenerate.o: EffectRegenerate.cpp EffectRegenerate.h Effect.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Monster.h \
  MonsterInfo.h MonsterSummonInfo.h MonsterInfoTypes.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
- Treasure.h Item.h /usr/include/STL/hash_map \
+ Treasure.h Item.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  PrecedenceTable.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Obstacle.h Portal.h \
@@ -21716,11 +21716,11 @@ EffectRecallMotorcycle.o: EffectRecallMotorcycle.cpp \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h Tile.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  EffectManager.h ../../Core/EffectInfo.h /usr/include/c++/7/bitset \
- Item.h /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ Item.h /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -21745,7 +21745,7 @@ EffectRecallMotorcycle.o: EffectRecallMotorcycle.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h
 EffectRideMotorcycle.o: EffectRideMotorcycle.cpp ../../Core/Assert.h \
@@ -21804,11 +21804,11 @@ EffectRideMotorcycle.o: EffectRideMotorcycle.cpp ../../Core/Assert.h \
  ../../Core/Cpackets/CGRideMotorCycle.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -21832,7 +21832,7 @@ EffectRideMotorcycle.o: EffectRideMotorcycle.cpp ../../Core/Assert.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h GamePlayer.h \
  ../../Core/Player.h ../../Core/SocketEncryptOutputStream.h \
@@ -21897,12 +21897,12 @@ EffectDonation200501.o: EffectDonation200501.cpp \
  PlayerCreature.h ObjectRegistry.h ../Mutex.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- InventorySlot.h Item.h /usr/include/STL/vector \
+ InventorySlot.h Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/PacketFactory.h ../../Core/Gpackets/GCSelectQuestID.h \
- OptionInfo.h /usr/include/STL/hash_map \
+ OptionInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
@@ -21924,7 +21924,7 @@ EffectDonation200501.o: EffectDonation200501.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h ../../Core/Player.h \
  ../../Core/Gpackets/GCAddEffect.h \
@@ -21983,11 +21983,11 @@ SimpleTileEffect.o: SimpleTileEffect.cpp SimpleTileEffect.h Effect.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h Zone.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -22051,11 +22051,11 @@ EffectDeleteTile.o: EffectDeleteTile.cpp EffectDeleteTile.h Effect.h \
  ../../Core/SocketOutputStream.h Zone.h Tile.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Creature.h EffectManager.h \
  ../../Core/EffectInfo.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -22208,9 +22208,9 @@ EventShutdown.o: EventShutdown.cpp EventShutdown.h Event.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h ZoneGroupManager.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h ZoneGroupManager.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
- /home/darkeden/src/libs/stl_hash_map.h /usr/include/STL/vector \
+ /home/darkeden/src/libs/stl_hash_map.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
@@ -22314,11 +22314,11 @@ EventRegeneration.o: EventRegeneration.cpp EventRegeneration.h Event.h \
  /usr/include/c++/7/bitset gameguard/CSAuth.h Creature.h Object.h \
  ../../Core/Assert.h EffectManager.h Effect.h ../../Core/EffectInfo.h \
  Slayer.h PlayerCreature.h ObjectRegistry.h InventorySlot.h Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_vector.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -22338,7 +22338,7 @@ EventRegeneration.o: EventRegeneration.cpp EventRegeneration.h Event.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -22412,11 +22412,11 @@ EventSave.o: EventSave.cpp EventSave.h Event.h ../../Core/Types.h \
  /usr/include/c++/7/bitset gameguard/CSAuth.h Creature.h Object.h \
  ../../Core/Assert.h EffectManager.h Effect.h ../../Core/EffectInfo.h \
  Slayer.h PlayerCreature.h ObjectRegistry.h InventorySlot.h Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_vector.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -22436,7 +22436,7 @@ EventSave.o: EventSave.cpp EventSave.h Event.h ../../Core/Types.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -22509,10 +22509,10 @@ EventMorph.o: EventMorph.cpp EventMorph.h Event.h ../../Core/Types.h \
  ../chinabilling/CBillingInfo.h ../../Core/Gpackets/GCReconnectLogin.h \
  ../../Core/PacketFactory.h gameguard/CSAuth.h PCFinder.h NPC.h Zone.h \
  Tile.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_vector.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
- quest/PropertyBuffer.h Sector.h /usr/include/STL/hash_map \
+ quest/PropertyBuffer.h Sector.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_hash_map.h \
  ObjectRegistry.h Party.h ../../Core/ModifyInfo.h PCManager.h \
  CreatureManager.h /usr/include/STL/queue /home/darkeden/src/libs/stl_queue.h \
@@ -22539,7 +22539,7 @@ EventMorph.o: EventMorph.cpp EventMorph.h Event.h ../../Core/Types.h \
  ../database/DatabaseManager.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/SkillSlot.h ItemUtil.h \
  ZoneInfoManager.h ZoneInfo.h ZoneGroupManager.h ZoneGroup.h \
  ../../Core/GameTime.h ../../Core/Gpackets/GMServerInfo.h \
@@ -22607,11 +22607,11 @@ EventResurrect.o: EventResurrect.cpp EventResurrect.h Event.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -22649,7 +22649,7 @@ EventResurrect.o: EventResurrect.cpp EventResurrect.h Event.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -22715,11 +22715,11 @@ EventReloadInfo.o: EventReloadInfo.cpp EventReloadInfo.h Event.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -22805,11 +22805,11 @@ EventTransport.o: EventTransport.cpp EventTransport.h Event.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -22884,11 +22884,11 @@ EventKick.o: EventKick.cpp EventKick.h Event.h ../../Core/Types.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -22958,11 +22958,11 @@ EventSystemMessage.o: EventSystemMessage.cpp EventSystemMessage.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -23028,7 +23028,7 @@ EventRefreshHolyLandPlayer.o: EventRefreshHolyLandPlayer.cpp \
  /usr/include/getopt.h HolyLandManager.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h Zone.h \
  Tile.h /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Object.h \
  ../../Core/Assert.h Creature.h EffectManager.h Effect.h \
@@ -23036,7 +23036,7 @@ EventRefreshHolyLandPlayer.o: EventRefreshHolyLandPlayer.cpp \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
  quest/PropertyBuffer.h Sector.h ObjectRegistry.h Party.h \
@@ -23102,11 +23102,11 @@ EventHeadCount.o: EventHeadCount.cpp EventHeadCount.h Event.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h /usr/include/c++/7/bitset Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -23137,7 +23137,7 @@ EventHeadCount.o: EventHeadCount.cpp EventHeadCount.h Event.h \
  ../../Core/RideMotorcycleInfo.h ../../Core/RideMotorcycleSlotInfo.h \
  ../../Core/SlayerSkillInfo.h ../../Core/PCSkillInfo.h \
  ../../Core/SubSlayerSkillInfo.h CreatureUtil.h SlayerAttrExpTable.h \
- SomethingGrowingUp.h /usr/include/STL/cstdio \
+ SomethingGrowingUp.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -23275,11 +23275,11 @@ EventAuth.o: EventAuth.cpp EventAuth.h Event.h ../../Core/Types.h \
  /usr/include/c++/7/bitset gameguard/CSAuth.h Creature.h Object.h \
  ../../Core/Assert.h EffectManager.h Effect.h ../../Core/EffectInfo.h \
  Slayer.h PlayerCreature.h ObjectRegistry.h InventorySlot.h Item.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_vector.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h Garbage.h RankBonus.h ExpFwd.h \
  ../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../Core/Gpackets/GCSelectQuestID.h OptionInfo.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h Zone.h Tile.h Obstacle.h Portal.h \
  quest/TriggerManager.h quest/Trigger.h quest/Condition.h \
@@ -23299,7 +23299,7 @@ EventAuth.o: EventAuth.cpp EventAuth.h Event.h ../../Core/Types.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -23353,9 +23353,9 @@ GQuestInfo.o: GQuestInfo.cpp GQuestInfo.h ../../Core/Types.h \
  ../../Core/types/QuestTypes.h ../../Core/types/ShopTypes.h \
  ../../Core/types/GuildTypes.h ../../Core/types/WarTypes.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h ../../Core/Exception.h \
  ../../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h GQuestElement.h GQuestManager.h \
@@ -23416,10 +23416,10 @@ GQuestManager.o: GQuestManager.cpp GQuestManager.h ../../Core/Types.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  GQuestStatus.h ../../Core/QuestStatusInfo.h GQuestInfo.h \
- ../../Core/SXml.h /usr/include/STL/vector \
+ ../../Core/SXml.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_bvector.h \
  GQuestElement.h /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
@@ -23471,7 +23471,7 @@ GQuestManager.o: GQuestManager.cpp GQuestManager.h ../../Core/Types.h \
  ../database/Result.h MonsterCorpse.h ItemFactory.h Corpse.h Monster.h \
  MonsterInfo.h MonsterSummonInfo.h MonsterInfoTypes.h Treasure.h \
  PrecedenceTable.h EffectEventQuestReset.h EffectLoader.h \
- GQuestCheckPoint.h /usr/include/STL/cstdio \
+ GQuestCheckPoint.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h
 GQuestElement.o: GQuestElement.cpp GQuestElement.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -23518,9 +23518,9 @@ GQuestElement.o: GQuestElement.cpp GQuestElement.h ../../Core/Types.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -23608,9 +23608,9 @@ GQuestStatus.o: GQuestStatus.cpp GQuestStatus.h ../../Core/Types.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h GQuestInfo.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestElement.h GQuestManager.h \
  GQuestInventory.h ../../Core/Gpackets/GCGQuestInventory.h \
  ../../Core/PacketFactory.h /usr/include/c++/7/map \
@@ -23684,7 +23684,7 @@ GQuestInventory.o: GQuestInventory.cpp GQuestInventory.h \
  ../../Core/SocketImpl.h ../../Core/SocketAPI.h \
  ../../Core/SocketOutputStream.h ../../Core/PacketFactory.h \
  ../database/DB.h ../database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
@@ -23738,9 +23738,9 @@ GQuestLevelElement.o: GQuestLevelElement.cpp GQuestLevelElement.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -23806,9 +23806,9 @@ GQuestTimeElement.o: GQuestTimeElement.cpp GQuestTimeElement.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -23866,9 +23866,9 @@ GQuestGiveVampireExpElement.o: GQuestGiveVampireExpElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -23909,7 +23909,7 @@ GQuestGiveVampireExpElement.o: GQuestGiveVampireExpElement.cpp \
  ../database/DatabaseManager.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/SkillSlot.h Ousters.h \
  ../../Core/PCOustersInfo.h ../../Core/PCOustersInfo2.h \
  ../../Core/PCOustersInfo3.h ../../Core/OustersSkillInfo.h \
@@ -23961,9 +23961,9 @@ GQuestBloodDrainElement.o: GQuestBloodDrainElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -24019,9 +24019,9 @@ GQuestSayNPCElement.o: GQuestSayNPCElement.cpp GQuestSayNPCElement.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -24077,9 +24077,9 @@ GQuestExecuteElement.o: GQuestExecuteElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -24143,9 +24143,9 @@ GQuestGiveQuestItemElement.o: GQuestGiveQuestItemElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -24214,9 +24214,9 @@ GQuestLoseQuestItemElement.o: GQuestLoseQuestItemElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -24280,9 +24280,9 @@ GQuestGiveItemElement.o: GQuestGiveItemElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -24355,9 +24355,9 @@ GQuestTamePetElement.o: GQuestTamePetElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -24413,9 +24413,9 @@ GQuestRaceElement.o: GQuestRaceElement.cpp GQuestRaceElement.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -24481,9 +24481,9 @@ GQuestKilledElement.o: GQuestKilledElement.cpp GQuestKilledElement.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -24539,9 +24539,9 @@ GQuestGiveDomainExpElement.o: GQuestGiveDomainExpElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -24577,7 +24577,7 @@ GQuestGiveDomainExpElement.o: GQuestGiveDomainExpElement.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h skill/SkillUtil.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -24633,9 +24633,9 @@ GQuestGiveMoneyElement.o: GQuestGiveMoneyElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -24654,7 +24654,7 @@ GQuestGiveMoneyElement.o: GQuestGiveMoneyElement.cpp \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h \
  ../../Core/Gpackets/GCModifyInformation.h ../../Core/ModifyInfo.h \
  ../../Core/Gpackets/GCSystemMessage.h ../../Core/Player.h \
- /usr/include/STL/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h
+ /usr/include/c++/7/cstdio /usr/include/i386-linux-gnu/bits/stdio_lim.h
 GQuestSkillLevelElement.o: GQuestSkillLevelElement.cpp \
  GQuestSkillLevelElement.h GQuestElement.h ../../Core/Types.h \
  ../../Core/types/SystemTypes.h /usr/include/c++/7/iostream \
@@ -24701,9 +24701,9 @@ GQuestSkillLevelElement.o: GQuestSkillLevelElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -24770,9 +24770,9 @@ GQuestRideMotorcycleElement.o: GQuestRideMotorcycleElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -24828,9 +24828,9 @@ GQuestGiveOustersExpElement.o: GQuestGiveOustersExpElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -24871,7 +24871,7 @@ GQuestGiveOustersExpElement.o: GQuestGiveOustersExpElement.cpp \
  ../database/DatabaseManager.h ../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/SkillSlot.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
  ../../Core/PCVampireInfo3.h ../../Core/VampireSkillInfo.h \
@@ -24923,9 +24923,9 @@ GQuestTouchWayPointElement.o: GQuestTouchWayPointElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -24995,9 +24995,9 @@ GQuestHasQuestItemElement.o: GQuestHasQuestItemElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -25063,9 +25063,9 @@ GQuestPartyDissectElement.o: GQuestPartyDissectElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -25132,9 +25132,9 @@ GQuestKillMonsterElement.o: GQuestKillMonsterElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -25190,9 +25190,9 @@ GQuestGiveEventQuestItemElement.o: GQuestGiveEventQuestItemElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -25229,7 +25229,7 @@ GQuestGiveEventQuestItemElement.o: GQuestGiveEventQuestItemElement.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -25284,9 +25284,9 @@ GQuestEventPartyElement.o: GQuestEventPartyElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -25352,9 +25352,9 @@ GQuestEventPartyCrashElement.o: GQuestEventPartyCrashElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -25410,9 +25410,9 @@ GQuestCompleteQuestElement.o: GQuestCompleteQuestElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -25478,9 +25478,9 @@ GQuestFastMoveElement.o: GQuestFastMoveElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -25536,9 +25536,9 @@ GQuestIllegalWarpElement.o: GQuestIllegalWarpElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -25596,7 +25596,7 @@ GQuestCheckPoint.o: GQuestCheckPoint.cpp GQuestCheckPoint.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/Assert.h \
  /usr/include/c++/7/map /home/darkeden/src/libs/stl_tree.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_bvector.h \
  MonsterCorpse.h Item.h Object.h Effect.h ../Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
@@ -25609,7 +25609,7 @@ GQuestCheckPoint.o: GQuestCheckPoint.cpp GQuestCheckPoint.h \
  /home/darkeden/src/libs/slist /home/darkeden/src/libs/stl_slist.h Creature.h \
  Obstacle.h Portal.h quest/TriggerManager.h quest/Trigger.h \
  quest/Condition.h quest/PropertyBuffer.h Sector.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ObjectRegistry.h ../Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph Party.h \
@@ -25665,9 +25665,9 @@ GQuestTravelElement.o: GQuestTravelElement.cpp GQuestTravelElement.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -25735,9 +25735,9 @@ GQuestORElement.o: GQuestORElement.cpp GQuestORElement.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -25803,9 +25803,9 @@ GQuestNOTElement.o: GQuestNOTElement.cpp GQuestNOTElement.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -25871,9 +25871,9 @@ GQuestRandomElement.o: GQuestRandomElement.cpp GQuestRandomElement.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -25941,9 +25941,9 @@ GQuestAdvancementClassLevelElement.o: \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -26009,9 +26009,9 @@ GQuestClearDynamicZoneElement.o: GQuestClearDynamicZoneElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -26067,9 +26067,9 @@ GQuestAddEffectElement.o: GQuestAddEffectElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -26138,9 +26138,9 @@ GQuestRemoveEffectElement.o: GQuestRemoveEffectElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -26210,9 +26210,9 @@ GQuestSetEnterDynamicZoneElement.o: \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -26281,9 +26281,9 @@ GQuestEnterDynamicZoneElement.o: GQuestEnterDynamicZoneElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -26339,9 +26339,9 @@ GQuestStartOtherQuestElement.o: GQuestStartOtherQuestElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -26406,9 +26406,9 @@ GQuestGiveAdvancementClassExpElement.o: \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -26444,7 +26444,7 @@ GQuestGiveAdvancementClassExpElement.o: \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h skill/SkillUtil.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -26500,9 +26500,9 @@ GQuestAdvanceClassElement.o: GQuestAdvanceClassElement.cpp \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \
@@ -26538,7 +26538,7 @@ GQuestAdvanceClassElement.o: GQuestAdvanceClassElement.cpp \
  ../database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../database/Statement.h \
- ../database/Result.h /usr/include/STL/cstdio \
+ ../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h skill/Skill.h skill/SkillSlot.h \
  ../../Core/Gpackets/GCModifyInformation.h Vampire.h \
  ../../Core/PCVampireInfo.h ../../Core/PCVampireInfo2.h \
@@ -26595,9 +26595,9 @@ GQuestWarpElement.o: GQuestWarpElement.cpp GQuestWarpElement.h \
  ../../Core/types/ServerType.h ../../Core/Utility.h \
  ../../Core/Exception.h ../../Core/StringStream.h \
  /usr/include/c++/7/list /home/darkeden/src/libs/stl_list.h ../../Core/SXml.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
- /usr/include/STL/vector /home/darkeden/src/libs/stl_range_errors.h \
+ /usr/include/c++/7/vector /home/darkeden/src/libs/stl_range_errors.h \
  /home/darkeden/src/libs/stl_bvector.h GQuestManager.h GQuestInventory.h \
  ../../Core/Gpackets/GCGQuestInventory.h ../../Core/Packet.h \
  ../../Core/SocketInputStream.h ../../Core/Socket.h \

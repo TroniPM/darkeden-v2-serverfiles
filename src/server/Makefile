@@ -405,13 +405,13 @@ PlayerManager.o: PlayerManager.cpp PlayerManager.h ../Core/Types.h \
  ../Core/SocketOutputStream.h /usr/include/c++/7/bitset \
  gameserver/Slayer.h gameserver/PlayerCreature.h \
  gameserver/ObjectRegistry.h gameserver/InventorySlot.h \
- gameserver/Item.h /usr/include/STL/vector \
+ gameserver/Item.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h gameserver/Garbage.h \
  gameserver/RankBonus.h gameserver/ExpFwd.h \
  ../Core/Gpackets/GCMonsterKillQuestInfo.h ../Core/PacketFactory.h \
  ../Core/Gpackets/GCSelectQuestID.h gameserver/OptionInfo.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h gameserver/Zone.h gameserver/Tile.h \
  gameserver/Obstacle.h gameserver/Portal.h \
@@ -435,7 +435,7 @@ PlayerManager.o: PlayerManager.cpp PlayerManager.h ../Core/Types.h \
  database/DatabaseManager.h database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h database/Statement.h \
- database/Result.h /usr/include/STL/cstdio \
+ database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h gameserver/skill/Skill.h \
  gameserver/skill/SkillSlot.h ../Core/Gpackets/GCModifyInformation.h
 GameWorldInfoManager.o: GameWorldInfoManager.cpp \
@@ -483,7 +483,7 @@ GameWorldInfoManager.o: GameWorldInfoManager.cpp \
  ../Core/types/GuildTypes.h ../Core/types/WarTypes.h \
  ../Core/types/ServerType.h ../Core/Utility.h ../Core/Exception.h \
  ../Core/StringStream.h /usr/include/c++/7/list \
- /home/darkeden/src/libs/stl_list.h GameWorldInfo.h /usr/include/STL/hash_map \
+ /home/darkeden/src/libs/stl_list.h GameWorldInfo.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h database/DatabaseManager.h \
  database/Connection.h /usr/local/include/mysql/mysql.h \
@@ -780,7 +780,7 @@ Profile.o: Profile.cpp Profile.h ../Core/Types.h \
  /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h Mutex.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/signal.h \
  /usr/include/i386-linux-gnu/bits/initspin.h /usr/lib/i386-linux-gnu/perl/5.26.1/bits/sigthread.ph \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  ../Core/Assert.h Thread.h pthreadAPI.h ../Core/VSDateTime.h \
  ../Core/Gpackets/GMServerInfo.h ../Core/DatagramPacket.h \
@@ -833,7 +833,7 @@ PacketProfile.o: PacketProfile.cpp PacketProfile.h ../Core/Types.h \
  ../Core/types/ServerType.h ../Core/Utility.h Timeval.h \
  /usr/include/i386-linux-gnu/sys/time.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h /usr/include/i386-linux-gnu/bits/confname.h \
- /usr/include/getopt.h /usr/include/STL/hash_map \
+ /usr/include/getopt.h /usr/include/c++/7/backward/hash_map \
  /home/darkeden/src/libs/stl_hashtable.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_hash_map.h ../Core/VSDateTime.h \
  /usr/include/STL/iomanip.h /usr/include/i386-linux-gnu/bits/stdio_lim.h
@@ -883,7 +883,7 @@ GameServerInfoManager.o: GameServerInfoManager.cpp \
  ../Core/types/ServerType.h ../Core/Utility.h ../Core/Exception.h \
  ../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h GameServerInfo.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  database/DB.h database/DatabaseManager.h database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
@@ -939,7 +939,7 @@ PaySystem.o: PaySystem.cpp PaySystem.h ../Core/Types.h \
  /usr/include/getopt.h ../Core/VSDateTime.h ../Core/Exception.h \
  ../Core/StringStream.h /usr/include/c++/7/list \
  /home/darkeden/src/libs/stl_list.h database/DB.h database/DatabaseManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_vector.h /home/darkeden/src/libs/stl_hash_map.h \
  database/Connection.h /usr/local/include/mysql/mysql.h \
  /usr/local/include/mysql/mysql_com.h \

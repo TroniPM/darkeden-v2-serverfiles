@@ -125,7 +125,7 @@ GameServerTest.o: GameServerTest.cpp GameServerTest.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  /usr/local/include/cppunit/extensions/TestSuiteBuilder.h \
  /usr/local/include/cppunit/TestSuite.h \
- /usr/local/include/cppunit/Test.h /usr/include/STL/vector \
+ /usr/local/include/cppunit/Test.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h \
  /usr/local/include/cppunit/TestCaller.h \
@@ -207,7 +207,7 @@ GameServerTester.o: GameServerTester.cpp ../../../Core/Types.h \
  /usr/local/include/cppunit/extensions/TestFactoryRegistry.h \
  /usr/local/include/cppunit/extensions/TestSuiteBuilder.h \
  /usr/local/include/cppunit/TestSuite.h \
- /usr/local/include/cppunit/Test.h /usr/include/STL/vector \
+ /usr/local/include/cppunit/Test.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h \
  /usr/local/include/cppunit/TestCaller.h \
@@ -271,7 +271,7 @@ GameServerSkillTest.o: GameServerSkillTest.cpp GameServerSkillTest.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  /usr/local/include/cppunit/extensions/TestSuiteBuilder.h \
  /usr/local/include/cppunit/TestSuite.h \
- /usr/local/include/cppunit/Test.h /usr/include/STL/vector \
+ /usr/local/include/cppunit/Test.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h \
  /usr/local/include/cppunit/TestCaller.h \
@@ -310,7 +310,7 @@ GameServerSkillTest.o: GameServerSkillTest.cpp GameServerSkillTest.h \
  ../../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../../Core/PacketFactory.h \
  ../../../Core/Gpackets/GCSelectQuestID.h ../OptionInfo.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h ../Zone.h ../Tile.h ../Obstacle.h \
  ../Portal.h ../quest/TriggerManager.h ../quest/Trigger.h \
@@ -333,7 +333,7 @@ GameServerSkillTest.o: GameServerSkillTest.cpp GameServerSkillTest.h \
  ../../database/DatabaseManager.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
- ../../database/Result.h /usr/include/STL/cstdio \
+ ../../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h \
  ../skill/SkillHandlerManager.h ../skill/SkillHandler.h ../SkillInfo.h \
@@ -404,7 +404,7 @@ GameServerExpTest.o: GameServerExpTest.cpp GameServerExpTest.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  /usr/local/include/cppunit/extensions/TestSuiteBuilder.h \
  /usr/local/include/cppunit/TestSuite.h \
- /usr/local/include/cppunit/Test.h /usr/include/STL/vector \
+ /usr/local/include/cppunit/Test.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h \
  /usr/local/include/cppunit/TestCaller.h \
@@ -444,7 +444,7 @@ GameServerExpTest.o: GameServerExpTest.cpp GameServerExpTest.h \
  ../../../Core/Gpackets/GCMonsterKillQuestInfo.h \
  ../../../Core/PacketFactory.h \
  ../../../Core/Gpackets/GCSelectQuestID.h ../OptionInfo.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h /home/darkeden/src/libs/slist \
  /home/darkeden/src/libs/stl_slist.h ../Zone.h ../Tile.h ../Obstacle.h \
  ../Portal.h ../quest/TriggerManager.h ../quest/Trigger.h \
@@ -467,7 +467,7 @@ GameServerExpTest.o: GameServerExpTest.cpp GameServerExpTest.h \
  ../../database/DatabaseManager.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
- ../../database/Result.h /usr/include/STL/cstdio \
+ ../../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/Skill.h ../skill/SkillSlot.h \
  ../../../Core/Gpackets/GCModifyInformation.h ../Vampire.h \
  ../../../Core/PCVampireInfo.h ../../../Core/PCVampireInfo2.h \
@@ -525,7 +525,7 @@ GameServerItemTest.o: GameServerItemTest.cpp GameServerItemTest.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  /usr/local/include/cppunit/extensions/TestSuiteBuilder.h \
  /usr/local/include/cppunit/TestSuite.h \
- /usr/local/include/cppunit/Test.h /usr/include/STL/vector \
+ /usr/local/include/cppunit/Test.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h \
  /usr/local/include/cppunit/TestCaller.h \
@@ -557,7 +557,7 @@ GameServerItemTest.o: GameServerItemTest.cpp GameServerItemTest.h \
  ../../../Core/Socket.h ../../../Core/SocketImpl.h \
  ../../../Core/SocketAPI.h ../../../Core/SocketOutputStream.h \
  /usr/include/c++/7/bitset ../VariableManager.h \
- /usr/include/STL/hash_map /home/darkeden/src/libs/stl_hashtable.h \
+ /usr/include/c++/7/backward/hash_map /home/darkeden/src/libs/stl_hashtable.h \
  /home/darkeden/src/libs/stl_hash_map.h ../ItemFactoryManager.h \
  ../ItemFactory.h ../Vampire.h ../PlayerCreature.h ../Creature.h \
  ../ObjectRegistry.h ../../Mutex.h /usr/include/pthread.h \
@@ -593,7 +593,7 @@ GameServerItemTest.o: GameServerItemTest.cpp GameServerItemTest.h \
  ../../database/DatabaseManager.h ../../database/Connection.h \
  /usr/local/include/mysql/mysql.h /usr/local/include/mysql/mysql_com.h \
  /usr/local/include/mysql/mysql_version.h ../../database/Statement.h \
- ../../database/Result.h /usr/include/STL/cstdio \
+ ../../database/Result.h /usr/include/c++/7/cstdio \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h ../skill/SkillSlot.h ../ZoneUtil.h \
  ../../../Core/VSDateTime.h ../ItemUtil.h
 GameServerWarTest.o: GameServerWarTest.cpp GameServerWarTest.h \
@@ -644,7 +644,7 @@ GameServerWarTest.o: GameServerWarTest.cpp GameServerWarTest.h \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  /usr/local/include/cppunit/extensions/TestSuiteBuilder.h \
  /usr/local/include/cppunit/TestSuite.h \
- /usr/local/include/cppunit/Test.h /usr/include/STL/vector \
+ /usr/local/include/cppunit/Test.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h \
  /usr/local/include/cppunit/TestCaller.h \
@@ -717,7 +717,7 @@ GameServerSpeedCheckTest.o: GameServerSpeedCheckTest.cpp \
  /home/darkeden/src/libs/stl_map.h /home/darkeden/src/libs/stl_multimap.h \
  /usr/local/include/cppunit/extensions/TestSuiteBuilder.h \
  /usr/local/include/cppunit/TestSuite.h \
- /usr/local/include/cppunit/Test.h /usr/include/STL/vector \
+ /usr/local/include/cppunit/Test.h /usr/include/c++/7/vector \
  /home/darkeden/src/libs/stl_range_errors.h /home/darkeden/src/libs/stl_vector.h \
  /home/darkeden/src/libs/stl_bvector.h \
  /usr/local/include/cppunit/TestCaller.h \
