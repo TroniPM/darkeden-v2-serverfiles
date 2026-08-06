@@ -1,0 +1,213 @@
+//////////////////////////////////////////////////////////////////////////////
+// Filename    : Treasure.h
+// Written by  : excel96
+// Description :
+//
+// BEGIN_TREASURE (50)
+//   BEGIN_ITEM_CLASS (SWORD, 50)
+//     <(1,50,50) (STR+1,50)(STR+2,30)(STR+3,20)>
+//     <(2,30,50) (STR+1,50)(STR+2,30)(STR+3,20)>
+//     <(3,20,50) (STR+1,50)(STR+2,30)(STR+3,20)>
+//   END_ITEM_CLASS
+//   BEGIN_ITEM_CLASS (BLADE, 50)
+//     <(2,50,50) (STR+1,50)(STR+2,30)(STR+3,20)>
+//     <(3,30,50) (STR+1,50)(STR+2,30)(STR+3,20)>
+//     <(4,20,50) (STR+1,50)(STR+2,30)(STR+3,20)>
+//   END_ITEM_CLASS
+// END_TREASURE
+//
+// BEGIN_TREASURE (100)
+//   BEGIN_ITEM_CLASS (SKULL, 100)
+//     <(12,100,0)()>
+//   END_ITEM_CLASS
+// END_TREASURE
+//////////////////////////////////////////////////////////////////////////////
+
+#ifndef __TREASURE_H__
+#define __TREASURE_H__
+
+#include "Types.h"
+#include "Exception.h"
+#include "Item.h"
+#include <list>
+#include <vector>
+#include <fstream>
+#include <hash_map>
+
+//class XMLTree;
+
+struct ITEM_TEMPLATE
+{
+	Item::ItemClass 		ItemClass;
+	int             		ItemType;
+	list<OptionType_t>    	OptionType;
+	bool            		bCreateOption;
+	int	            		NextOptionRatio;
+	list<OptionType_t>    	OptionType2;
+};
+
+//////////////////////////////////////////////////////////////////////////////
+// class TreasureOptionType
+//////////////////////////////////////////////////////////////////////////////
+class TreasureOptionType
+{
+public:
+	TreasureOptionType() throw();
+	~TreasureOptionType() throw();
+
+public:
+	int getOptionType(void) const { return m_OptionType; }
+	int getRatio(void) const { return m_Ratio; }
+
+public:
+	void loadFromFile(ifstream& file) throw();
+	void parseString(const string& text) throw();
+
+	string toString(void) const throw();
+//	XMLTree*	makeXMLTree() const;
+
+public:
+	int m_OptionType;
+	int m_Ratio;
+};
+
+//////////////////////////////////////////////////////////////////////////////
+// class TreasureItemType
+//////////////////////////////////////////////////////////////////////////////
+class TreasureItemType
+{
+public:
+	TreasureItemType() throw();
+	~TreasureItemType() throw();
+
+public:
+	int getItemType(void) const { return m_ItemType; }
+	int getRatio(void) const { return m_Ratio; }
+
+public:
+	void loadFromFile(int itemClass, ifstream& file) throw();
+	void parseString(int itemClass, const string& text) throw();
+	bool getRandomOption(ITEM_TEMPLATE* pTemplate) throw();
+	bool getRandomOption2(ITEM_TEMPLATE* pTemplate) throw();
+	string toString(void) const throw();
+//	XMLTree*	makeXMLTree() const;
+
+public:
+	int m_ItemType;
+	int m_Ratio;
+	int m_OptionTypeTotalRatio;
+	vector<TreasureOptionType*> m_TreasureOptionTypes;
+
+	void setRndItemOptionMax( int Value=2 ){ m_OptionRatioMax=Value; }
+	int  getRndItemOptionMax( ) { return m_OptionRatioMax ; }
+	int  m_OptionRatioMax;
+};
+
+//////////////////////////////////////////////////////////////////////////////
+// class TreasureItemClass
+//////////////////////////////////////////////////////////////////////////////
+class TreasureItemClass
+{
+public:
+	TreasureItemClass() throw();
+	~TreasureItemClass() throw();
+
+public:
+	Item::ItemClass getItemClass(void) const { return m_ItemClass; }
+	int getRatio(void) const { return m_Ratio; }
+
+public:
+	void loadFromFile(ifstream& file) throw();
+	void parseString(const string& text) throw();
+	bool getRandomItem(ITEM_TEMPLATE* pTemplate) throw();
+	string toString(void) const throw();
+//	XMLTree*	makeXMLTree() const;
+
+public:
+	static Item::ItemClass getItemClassFromString(const string& text) throw();
+
+public:
+	Item::ItemClass m_ItemClass;
+	int m_Ratio;
+	int m_ItemTypeTotalRatio;
+	vector<TreasureItemType*> m_TreasureItemTypes;
+	
+	// Add By Sonic 2006.10.21  Ôö¼ÓÒ»¸öµô±¦ÊôÐÔ×î´óÖµ±äÁ¿
+	void setRndItemOptionMax( int Value=2 ){ m_OptionRatioMax=Value; }
+	int  getRndItemOptionMax( ) { return m_OptionRatioMax ; }
+	int  m_OptionRatioMax;
+	// End By Sonic 2006.10.21
+};
+
+//////////////////////////////////////////////////////////////////////////////
+// class Treasure
+//////////////////////////////////////////////////////////////////////////////
+class Treasure
+{
+public:
+	Treasure() throw();
+	~Treasure() throw();
+
+public:
+	void loadFromFile(ifstream& file) throw();
+	void parseString(const string& text) throw();
+	bool getRandomItem(ITEM_TEMPLATE* pTemplate) throw();
+	bool getRandomItem(ITEM_TEMPLATE* pTemplate, int nPercent) throw();
+	
+	string toString(void) const throw();
+//	XMLTree*	makeXMLTree() const;
+
+public:
+	int m_ItemRatio; // ¾ÆÀÌÅÛ ÀÚÃ¼°¡ ³ª¿Ã È®·ü
+	int m_OptionRatio; // ³ª¿Â ¾ÆÀÌÅÛ¿¡ ¿É¼ÇÀÌ ºÙÀ» È®·ü
+	int m_ItemClassTotalRatio; // ¸ðµç ¾ÆÀÌÅÛ Å¬·¡½ºÀÇ È®·üÀÇ ÇÕ
+	vector<TreasureItemClass*> m_TreasureItemClasses;
+	// Add By Sonic 2006.10.21  Ôö¼ÓÒ»¸öµô±¦ÊôÐÔ×î´óÖµ±äÁ¿
+	void setRndItemOptionMax( int Value=2 ){ m_OptionRatioMax=Value; }
+	int  getRndItemOptionMax( ) { return m_OptionRatioMax ; }
+	int  m_OptionRatioMax;
+	// End By Sonic 2006.10.21
+};
+
+//////////////////////////////////////////////////////////////////////////////
+// class TreasureList
+//////////////////////////////////////////////////////////////////////////////
+class TreasureList
+{
+public:
+	TreasureList() throw();
+	~TreasureList() throw();
+
+public:
+	const list<Treasure*>& getTreasures(void) const { return m_Treasures; }
+
+public:
+	void loadFromFile(ifstream& file) throw();
+	void parseString(const string& text) throw();
+	void addTreasure(Treasure* pTreasure) throw();
+
+	string toString(void) const throw();
+//	XMLTree*	makeXMLTree() const;
+
+public:
+	list<Treasure*> m_Treasures;
+};
+
+
+class TreasureLists
+{
+public :
+    TreasureLists();
+    ~TreasureLists();
+
+    void clear();
+
+    TreasureList*   getTreasure(const string& filename) const;
+    void            addTreasure(const string& filename, TreasureList* pTreasureList);
+    TreasureList*   loadTreasure(const string& filename);
+
+private :
+    hash_map<string, TreasureList*>     m_TreasureLists;
+};
+
+#endif

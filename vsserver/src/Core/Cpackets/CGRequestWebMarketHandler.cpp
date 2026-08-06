@@ -1,0 +1,84 @@
+//////////////////////////////////////////////////////////////////////////////
+// Filename    : CGRequestWebMarketHandler.cpp
+// Written By  :
+// Description :
+//////////////////////////////////////////////////////////////////////////////
+#include "CGRequestWebMarket.h"
+
+	#include "GamePlayer.h"
+	#include "PlayerCreature.h"
+	#include "DB.h"
+	#include "Properties.h"
+
+	#include "Gpackets/GCShowWebMarket.h"
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+void CGRequestWebMarketHandler::execute (CGRequestWebMarket* pPacket , Player* pPlayer)
+	 throw (Error)
+{
+	__BEGIN_TRY
+		
+	Assert(pPacket != NULL);
+	Assert(pPlayer != NULL);
+
+	GamePlayer* pGamePlayer = dynamic_cast<GamePlayer*>(pPlayer);
+	Assert(pGamePlayer != NULL);
+
+	PlayerCreature* pPC = dynamic_cast<PlayerCreature*>(pGamePlayer->getCreature());
+	Assert( pPC != NULL );
+
+	switch ( pPacket->getCode() )
+	{
+		case CGRequestWebMarket::REQUEST_WEB_MARKET:
+			{
+				// 키 생성
+				DWORD key = rand() << ( time(0) % 10 ) + rand() >> ( time(0) % 10 );
+
+				cout << "Key: " << key << endl;
+
+				// 키 저장
+				Statement* pStmt = NULL;
+				Result* pResult = NULL;
+				
+				BEGIN_DB
+				{
+					pStmt = g_pDatabaseManager->getDistConnection("PLAYER_DB")->createStatement();
+					pResult = pStmt->executeQuery( "UPDATE WebMarketKey SET Key = %u WHERE PlayerID = '%s'", key, pGamePlayer->getID().c_str() );
+
+					if ( pStmt->getAffectedRowCount() == 0 )
+					{
+						pStmt->executeQuery( "INSERT INTO WebMarketKey VALUES( '%s', %u )", pGamePlayer->getID().c_str(), key );
+					}
+				}
+				END_DB( pStmt )
+
+				// 월드ID 불러오기
+				static int WorldID = g_pConfig->getPropertyInt("Dimension") * 3 + g_pConfig->getPropertyInt("WorldID");
+
+				// 패킷 생성
+				GCShowWebMarket gcShowWebMarket;
+				gcShowWebMarket.setPlayerID( pGamePlayer->getID() );
+				gcShowWebMarket.setName( pPC->getName() );
+				gcShowWebMarket.setWorldID( WorldID );
+				gcShowWebMarket.setKey( key );
+
+				// 패킷 보내기
+				pGamePlayer->sendPacket( &gcShowWebMarket );
+			}
+			break;
+
+		case CGRequestWebMarket::REQUEST_BUY_COMPLETE:
+			{
+				// GoodsObject 를 새로 로딩한다
+				pPC->loadGoods();
+			}
+			break;
+
+		default:
+			break;
+	}
+
+	__END_CATCH	
+}
+
