@@ -50,7 +50,7 @@ void EffectCurseOfBlood1::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectCurseOfBlood1 " << "unaffect BEGIN" << endl;
+	//cout << "EffectCurseOfBlood1 " << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	pCreature->removeFlag(Effect::EFFECT_CLASS_CURSE_OF_BLOOD1);
@@ -63,7 +63,7 @@ void EffectCurseOfBlood1::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_CURSE_OF_BLOOD1);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectCurseOfBlood1 " << "unaffect END" << endl;
+	//cout << "EffectCurseOfBlood1 " << "unaffect END" << eos;
 
 	__END_CATCH
 }
@@ -73,12 +73,12 @@ void EffectCurseOfBlood1::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectCurseOfBlood1 " << "unaffect BEGIN" << endl;
+	//cout << "EffectCurseOfBlood1 " << "unaffect BEGIN" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature*>(m_pTarget);
 	unaffect(pCreature);
 
-	//cout << "EffectCurseOfBlood1 " << "unaffect END" << endl;
+	//cout << "EffectCurseOfBlood1 " << "unaffect END" << eos;
 
 	__END_CATCH
 }

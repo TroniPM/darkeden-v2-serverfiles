@@ -85,7 +85,7 @@ void EffectFierceFlame::affect()
 		}
 	}
 
-	//cout << "EffectFierceFlame" << "affect BEGIN" << endl;
+	//cout << "EffectFierceFlame" << "affect BEGIN" << eos;
 
 	__END_CATCH 
 }
@@ -168,12 +168,12 @@ void EffectFierceFlame::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectFierceFlame" << "unaffect BEGIN" << endl;
+	//cout << "EffectFierceFlame" << "unaffect BEGIN" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature*>(m_pTarget);
 	unaffect(pCreature);
 
-	//cout << "EffectFierceFlame" << "unaffect END" << endl;
+	//cout << "EffectFierceFlame" << "unaffect END" << eos;
 
 	__END_CATCH
 }

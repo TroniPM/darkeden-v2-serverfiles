@@ -38,12 +38,12 @@ void EffectXRLMissile::affect()
 
 	Creature* pCreature = dynamic_cast<Creature*>(m_pTarget);
 	affect(pCreature);
-	//cout << "EffectXRLMissile " << "begin begin" << endl;
+	//cout << "EffectXRLMissile " << "begin begin" << eos;
 
 //	Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 //	affect(pCreature);
 
-	//cout << "EffectXRLMissile " << "begin end" << endl;
+	//cout << "EffectXRLMissile " << "begin end" << eos;
 
 	__END_CATCH 
 

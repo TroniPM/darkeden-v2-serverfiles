@@ -56,7 +56,7 @@ void EffectDoom::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectDoom" << "unaffect BEGIN" << endl;
+	//cout << "EffectDoom" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -109,7 +109,7 @@ void EffectDoom::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_DOOM);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectDoom" << "unaffect END" << endl;
+	//cout << "EffectDoom" << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

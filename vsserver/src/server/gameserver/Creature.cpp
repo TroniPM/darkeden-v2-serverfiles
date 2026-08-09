@@ -165,7 +165,7 @@ void Creature::setZoneID (ZoneID_t zoneID)
 			<< "ZoneID - Zone - ZoneGroupID - ZoneGroup - ZoneInfo 간의 무결성이 깨졌당.\n"
 			<< nsee.toString();
 
-		cerr << msg.toString() << endl;
+		cerr << msg.toString() << eos;
 
 		throw Error(msg.toString());
 	}

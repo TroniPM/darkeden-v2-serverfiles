@@ -31,7 +31,7 @@ void EffectHandsOfFire::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectHandsOfFire" << "unaffect BEGIN" << endl;
+	//cout << "EffectHandsOfFire" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isOusters());
@@ -58,7 +58,7 @@ void EffectHandsOfFire::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_HANDS_OF_FIRE);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectHandsOfFire" << "unaffect END" << endl;
+	//cout << "EffectHandsOfFire" << "unaffect END" << eos;
 
 	__END_CATCH
 }

@@ -260,10 +260,10 @@ void EffectSevenFoldStoneLoader::load(Creature* pCreature)
 			int Silver= pResult->getInt(++i);
 			EffectSevenFoldStone* pEffectSevenFoldStone[count];
 			EffectManager* pEffectManager = pCreature->getEffectManager();
-			cout << "시간 : " << diffSecs << endl;
+			cout << "시간 : " << diffSecs << eos;
 				if (MagiccurrentTime <= MagiccurrentTimeWait) 
 				{
-				cout << " 작동 1 " << endl;
+				cout << " 작동 1 " << eos;
 				pEffectSevenFoldStone[s] = new EffectSevenFoldStone(pCreature);
 				pEffectSevenFoldStone[s]->setDeadline(diffSecs*10);
 				pEffectSevenFoldStone[s]->setLevel(EffectClassi);
@@ -273,7 +273,7 @@ void EffectSevenFoldStoneLoader::load(Creature* pCreature)
 				pEffectManager->addEffect(pEffectSevenFoldStone[s]);
 				pCreature->setFlag((Effect::EffectClass)EffectClassi);
 				}else{
-				cout << " 작동 2 " << endl;
+				cout << " 작동 2 " << eos;
 				pEffectSevenFoldStone[s] = new EffectSevenFoldStone(pCreature);
 				pEffectSevenFoldStone[s]->setDeadline(100);
 				pEffectSevenFoldStone[s]->setLevel(EffectClassi);
@@ -283,7 +283,7 @@ void EffectSevenFoldStoneLoader::load(Creature* pCreature)
 				pCreature->setFlag((Effect::EffectClass)EffectClassi);
 				}
 				s++;
-			cout << "오류의 원인 끝" << endl;
+			cout << "오류의 원인 끝" << eos;
 		}
 
 		SAFE_DELETE(pStmt);

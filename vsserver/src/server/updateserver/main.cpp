@@ -137,7 +137,7 @@ void main(void) {
 	readdir( 0, Testdir, count );
 	scandir
 
-	//cout << " DirName : " << TestDir->d_Name << endl;
+	//cout << " DirName : " << TestDir->d_Name << eos;
 
 }
 */
@@ -176,7 +176,7 @@ void main(void) {
 						directories.push_back( dir );
 
 				} else
-					//cout << endl;
+					//cout << eos;
 			}
 			
 		}
@@ -204,7 +204,7 @@ void scan_Source( const string & Directory ) {
 
 	DIR * pDIR = opendir( Directory.c_str() );
 	struct dirent * versionDir;
-//	//cout << "Open Dir : " << Directory << endl;
+//	//cout << "Open Dir : " << Directory << eos;
 
 	while ( ( versionDir = readdir( pDIR ) ) != NULL ) {
 
@@ -212,28 +212,28 @@ void scan_Source( const string & Directory ) {
 
 		if ( versionDir->d_ino != 0  && vName[0] != '.' ) {
 
-//			//cout << "versionDir : " << versionDir->d_name<< endl;
+//			//cout << "versionDir : " << versionDir->d_name<< eos;
 
 			string DirectoryName = Directory + "/";
 			string SubDirectory = DirectoryName + versionDir->d_name;
 
 			struct stat List;
 			stat( SubDirectory.c_str(), &List );
-//			//cout << versionDir->d_name << " " << List.st_size << endl;
+//			//cout << versionDir->d_name << " " << List.st_size << eos;
 
 			replace ( DirectoryName.begin(), DirectoryName.end(), '/', '\\' );
-//			//cout << "Path : " << array << " Path Size : " << size << endl;
+//			//cout << "Path : " << array << " Path Size : " << size << eos;
 
 			if( S_ISDIR( List.st_mode ) ) {
 
-//				//cout << versionDir->d_name << " is Directory " << endl;
+//				//cout << versionDir->d_name << " is Directory " << eos;
 
 
 //			string SubDirectory = DirectoryName + "/" + namelist[n]->d_name;
 
-//				//cout << "SubDirectory : " << SubDirectory << endl;
+//				//cout << "SubDirectory : " << SubDirectory << eos;
 				scan_Source( SubDirectory );
-//			//cout << get_current_dir_name() << endl;
+//			//cout << get_current_dir_name() << eos;
 			} else {
 				SourceInfo * pSourceInfo = new SourceInfo();
 				pSourceInfo->setName( versionDir->d_name );
@@ -247,10 +247,10 @@ void scan_Source( const string & Directory ) {
 				// 똑같은 이름이 있다면 최신 버젼으로 넣어 줘야쥐.
 				if ( itr != SourceInfoList.end() ) {
 
-					//cout << "원본 파일에서 같은 이름의 파일이 발견 되었다!" << endl;
+					//cout << "원본 파일에서 같은 이름의 파일이 발견 되었다!" << eos;
 
-					//cout << "원래 있던 파일의 디렉은 : " << (*itr)->getDirectory() << ", 파일 이름은 : " << (*itr)->getName() << endl;
-					//cout << "최신 파일의 버젼은 : " << pSourceInfo->getDirectory() << ", 파일 이름은 : " << pSourceInfo->getName() << endl;
+					//cout << "원래 있던 파일의 디렉은 : " << (*itr)->getDirectory() << ", 파일 이름은 : " << (*itr)->getName() << eos;
+					//cout << "최신 파일의 버젼은 : " << pSourceInfo->getDirectory() << ", 파일 이름은 : " << pSourceInfo->getName() << eos;
 
 				// 같은 파일이 없다.
 				} else {
@@ -273,7 +273,7 @@ void scan_Version( const string & Directory, int version ) {
 
 	DIR * pDIR = opendir( Directory.c_str() );
 	struct dirent * versionDir;
-//	//cout << "Open Dir : " << Directory << endl;
+//	//cout << "Open Dir : " << Directory << eos;
 
 	while ( ( versionDir = readdir( pDIR ) ) != NULL ) {
 
@@ -281,40 +281,40 @@ void scan_Version( const string & Directory, int version ) {
 
 		if( vName == "index.dat" ) {
 			string removeName = Directory + "/" + "index.dat";
-			//cout << "Remove index.dat Directory : " << removeName << endl;
+			//cout << "Remove index.dat Directory : " << removeName << eos;
 			remove( removeName.c_str() );
 		}
 
 		if ( versionDir->d_ino != 0  && vName[0] != '.' && vName != "index.dat" ) {
 
-//			//cout << "versionDir : " << versionDir->d_name<< endl;
+//			//cout << "versionDir : " << versionDir->d_name<< eos;
 			string DirectoryName = Directory;
 
 			string SubDirectory = DirectoryName + "/" + versionDir->d_name;
 
 			/*
 			replace ( DirectoryName.begin(), DirectoryName.end(), '/', '\\' );
-//			//cout << "ChangeName : " << DirectoryName << endl;
+//			//cout << "ChangeName : " << DirectoryName << eos;
 			*/
 
 			struct stat List;
 			stat( SubDirectory.c_str(), &List );
-//			//cout << versionDir->d_name << " " << List.st_size << endl;
+//			//cout << versionDir->d_name << " " << List.st_size << eos;
 
-//			//cout << "Path : " << array << " Path Size : " << size << endl;
+//			//cout << "Path : " << array << " Path Size : " << size << eos;
 
 			if( S_ISDIR( List.st_mode ) ) {
 
 				int version = atoi( vName.substr( 1 , 5 ).c_str() );
 
-//				//cout << versionDir->d_name << " is Directory " << endl;
+//				//cout << versionDir->d_name << " is Directory " << eos;
 
 
 //			string SubDirectory = DirectoryName + "/" + namelist[n]->d_name;
 
-//				//cout << "SubDirectory : " << SubDirectory << endl;
+//				//cout << "SubDirectory : " << SubDirectory << eos;
 				scan_Version( SubDirectory, version );
-//			//cout << get_current_dir_name() << endl;
+//			//cout << get_current_dir_name() << eos;
 			} else {
 
 				VersionInfo * pVersionInfo = new VersionInfo();
@@ -332,22 +332,22 @@ void scan_Version( const string & Directory, int version ) {
 				
 				// 똑같은 이름이 있다면 최신 버젼으로 넣어 줘야쥐.
 				if ( itr != VersionInfoList.end() ) {
-					//cout << "같은 파일이 발견 되었다 최신 버젼으로 고치자" << endl;
+					//cout << "같은 파일이 발견 되었다 최신 버젼으로 고치자" << eos;
 
-					//cout << "원래 있던 파일의 버젼은 : " << (*itr)->getVersion() << ", 파일 이름은 : " << (*itr)->getName() << endl;
-					//cout << "최신 파일의 버젼은 : " << pVersionInfo->getVersion() << ", 파일 이름은 : " << pVersionInfo->getName() << endl;
+					//cout << "원래 있던 파일의 버젼은 : " << (*itr)->getVersion() << ", 파일 이름은 : " << (*itr)->getName() << eos;
+					//cout << "최신 파일의 버젼은 : " << pVersionInfo->getVersion() << ", 파일 이름은 : " << pVersionInfo->getName() << eos;
 
 					if( (*itr)->getVersion() < pVersionInfo->getVersion() ) {
 
 						VersionInfo * pTempVersionInfo = (*itr);
 
 						VersionInfoList.erase( itr );
-						//cout << "기존의 파일을 삭제한다." << endl;
+						//cout << "기존의 파일을 삭제한다." << eos;
 
 						delete pTempVersionInfo;
 
 						VersionInfoList.push_back(pVersionInfo);
-						//cout << "새 파일을 리스트에 추가한다." << endl;
+						//cout << "새 파일을 리스트에 추가한다." << eos;
 
 					} else {
 
@@ -404,14 +404,14 @@ void create_Index() {
 					Count++;
 				}
 			}
-			//cout << "Version : " << version << ", Count: " << Count << endl;
+			//cout << "Version : " << version << ", Count: " << Count << eos;
 
 			ofile.write( (const char *)&Count , szWORD );
 			beforeVersion = version;
 		}
 
-		//cout << "create Index msg1 : " << msg1.toString() << endl;
-		//cout << "create Index msg2 : " << msg2.toString() << endl;
+		//cout << "create Index msg1 : " << msg1.toString() << eos;
+		//cout << "create Index msg2 : " << msg2.toString() << eos;
 
 		pUpdate = new Update();
 		pUpdate->setVersion(version);
@@ -429,7 +429,7 @@ void create_Index() {
 
 		char filename[256];
 		sprintf(filename,"%s/v%05d/index.dat", g_pConfig->getProperty("PatchDirectory").c_str() , i );
-		ifstream ifile( filename, ios::in | ios::binary | ios::nocreate );
+		ifstream ifile( filename, ios::in | ios::binary  );
 		// 파일이 없으면 빈 인덱스를 생성한다.
 		if ( !ifile ) {
 			int Count = 0;
@@ -454,7 +454,7 @@ void create_Index() {
 int main ( int argc , char * argv[] )
 {
     if ( argc < 3 ) {
-        //cout << "Usage : updateserver -f 환경파일" << endl;
+        //cout << "Usage : updateserver -f 환경파일" << eos;
         exit(1);
     }
 
@@ -479,32 +479,32 @@ int main ( int argc , char * argv[] )
         g_pConfig = new Properties();
         g_pConfig->load(Argv[2]);
     
-        //cout << g_pConfig->toString() << endl;
+        //cout << g_pConfig->toString() << eos;
     
     } catch ( Error & e ) {
-        //cout << e.toString() << endl;
+        //cout << e.toString() << eos;
     }
 
 	// 소스 디렉토리를 읽는다.
 //	scan_Source( g_pConfig->getProperty( "SourceDirectory") );
 
 	/*
-	//cout << "============================================================================" << endl;
+	//cout << "============================================================================" << eos;
 	for( list<SourceInfo*>::const_iterator itr = SourceInfoList.begin(); itr != SourceInfoList.end(); itr++ ) {
-		//cout << "Name : " << (*itr)->getName() << ", Directory : " << (*itr)->getDirectory() << endl;
+		//cout << "Name : " << (*itr)->getName() << ", Directory : " << (*itr)->getDirectory() << eos;
 	}
-	//cout << "============================================================================" << endl;
+	//cout << "============================================================================" << eos;
 	*/
 
 //	scan_Version( g_pConfig->getProperty("PatchDirectory" ), 0 );
 
 	/*
 	// 버젼 디렉토리를 읽는다.
-	//cout << "============================================================================" << endl;
+	//cout << "============================================================================" << eos;
 	for( list<VersionInfo*>::const_iterator itr = VersionInfoList.begin(); itr != VersionInfoList.end(); itr++ ) {
-		//cout << "Version : " << (*itr)->getVersion() << ",Name : " << (*itr)->getName() << ", Directory : " << (*itr)->getDirectory() << endl;
+		//cout << "Version : " << (*itr)->getVersion() << ",Name : " << (*itr)->getName() << ", Directory : " << (*itr)->getDirectory() << eos;
 	}
-	//cout << "============================================================================" << endl;
+	//cout << "============================================================================" << eos;
 	*/
 
 	// index.dat 생성을 위한 작업을 한다.
@@ -534,11 +534,11 @@ int main ( int argc , char * argv[] )
 
 		// 로그가 이뤄지기 전에 서버가 끝날 경우를 대비해서
 		ofstream ofile("../log/instant.log",ios::out);
-		ofile << e.toString() << endl;
+		ofile << e.toString() << eos;
 		ofile.close();
 
 		// 표준 출력으로도 출력해준다.
-		//cout << e.toString() << endl;
+		//cout << e.toString() << eos;
 
 		// 업데이트 서버를 중단시킨다.
 		// 이 내부에서 하위 매니저 역시 중단되어야 한다.

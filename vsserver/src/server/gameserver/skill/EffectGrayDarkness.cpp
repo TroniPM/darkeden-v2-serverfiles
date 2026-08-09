@@ -108,7 +108,7 @@ void EffectGrayDarkness::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectGrayDarkness " << "unaffect BEGIN" << endl;
+	//cout << "EffectGrayDarkness " << "unaffect BEGIN" << eos;
 
 	Tile & tile = m_pZone->getTile(m_X, m_Y);
 
@@ -124,7 +124,7 @@ void EffectGrayDarkness::unaffect()
 
 	tile.deleteEffect(m_ObjectID);
 
-	//cout << "EffectGrayDarkness " << "unaffect END" << endl;
+	//cout << "EffectGrayDarkness " << "unaffect END" << eos;
 
 	__END_CATCH
 }

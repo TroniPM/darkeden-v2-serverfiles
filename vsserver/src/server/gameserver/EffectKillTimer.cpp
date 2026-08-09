@@ -41,7 +41,7 @@ void EffectKillTimer::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectKillTimer" << "unaffect BEGIN" << endl;
+	//cout << "EffectKillTimer" << "unaffect BEGIN" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 
@@ -59,7 +59,7 @@ void EffectKillTimer::unaffect()
 		}
 	}
 
-	//cout << "EffectKillTimer" << "unaffect END" << endl;
+	//cout << "EffectKillTimer" << "unaffect END" << eos;
 						
 	__END_CATCH
 }

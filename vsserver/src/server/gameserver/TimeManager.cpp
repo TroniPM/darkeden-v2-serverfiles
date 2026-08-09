@@ -29,8 +29,8 @@ void TimeManager::init ()
 		string month = strBaseGameTime.substr(yearEnd + 1 , monEnd - yearEnd);
 		string day = strBaseGameTime.substr(monEnd + 1 , dayEnd - monEnd);
 
-		//cout << yearEnd << ":" << monEnd << ":" << dayEnd << endl;
-		//cout << "BaseGameTime : " << year << "/" << month << "/" << day << endl;
+		//cout << yearEnd << ":" << monEnd << ":" << dayEnd << eos;
+		//cout << "BaseGameTime : " << year << "/" << month << "/" << day << eos;
 
 		yearEnd = strBaseRealTime.find('-' , 0);
 		monEnd = strBaseRealTime.find('-' , yearEnd + 1);
@@ -40,8 +40,8 @@ void TimeManager::init ()
 		month = strBaseRealTime.substr(yearEnd + 1 , monEnd);
 		day = strBaseRealTime.substr(monEnd + 1 , string::npos);
 
-		//cout << yearEnd << ":" << monEnd << ":" << dayEnd << endl;
-		//cout << "BaseRealTime : " << year << "/" << month << "/" << day << endl;
+		//cout << yearEnd << ":" << monEnd << ":" << dayEnd << eos;
+		//cout << "BaseRealTime : " << year << "/" << month << "/" << day << eos;
 
 		// 기준 게임 시간 : 1999년 8월 18일
 		// 기준 게임 시간 : 1990년 7월 20일

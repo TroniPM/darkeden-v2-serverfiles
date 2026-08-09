@@ -57,7 +57,7 @@ void EffectReactiveArmor::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectReactiveArmor" << "unaffect BEGIN" << endl;
+	//cout << "EffectReactiveArmor" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isOusters());
@@ -79,7 +79,7 @@ void EffectReactiveArmor::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_REACTIVE_ARMOR);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectReactiveArmor" << "unaffect END" << endl;
+	//cout << "EffectReactiveArmor" << "unaffect END" << eos;
 
 	__END_CATCH
 }

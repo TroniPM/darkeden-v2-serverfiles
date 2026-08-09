@@ -74,31 +74,31 @@ void EffectContinualGroundAttack::affect()
 		int range = min(100, (m_MaxNumber-m_MinNumber));		// 동시에 1~100사이
 		int number = (range>0? m_MinNumber + rand()%range : m_MinNumber);
 
-		cout << "EffectContinualGroundAttack: " << (int)m_pZone->getZoneID() << ", num= " << number << endl;
+		cout << "EffectContinualGroundAttack: " << (int)m_pZone->getZoneID() << ", num= " << number << eos;
 
 		VSRect rect(0, 0, m_pZone->getWidth()-1, m_pZone->getHeight()-1);
-cout << "test " << endl;
+cout << "test " << eos;
 		// m_MinNumber ~ m_MaxNumber 개의 공격
 		for (int i=0; i<number; i++)
 		{
-cout << "test start " << endl;
+cout << "test start " << eos;
 			const BPOINT& pt = m_pZone->getRandomEmptyTilePosition();
 
 			if (!rect.ptInRect(pt.x, pt.y)) continue;
-cout << "test start 2" << endl;
+cout << "test start 2" << eos;
 			// 중심 타일 체크
 			Tile& tile = m_pZone->getTile(pt.x, pt.y);
 
 			int X = pt.x;
 			int Y = pt.y;
-cout << "test start 3" << endl;
+cout << "test start 3" << eos;
 			if (!tile.canAddEffect()) continue;
 
 			int	DamagePercent = 100;
 		
 			// 이펙트 오브젝트를 생성한다.
 			Effect* pAttackEffect = NULL;
-cout << "test 1" << endl;
+cout << "test 1" << eos;
 			switch (m_AttackEffect)
 			{
 				case EFFECT_CLASS_GROUND_ATTACK :
@@ -146,13 +146,13 @@ cout << "test 1" << endl;
 				break;
 			}
 
-cout << "test 2" << endl;
+cout << "test 2" << eos;
 			if (pAttackEffect!=NULL)
 			{
 				// 타일에 붙은 이펙트는 OID를 받아야 한다.
 				ObjectRegistry & objectregister = m_pZone->getObjectRegistry();
 				objectregister.registerObject(pAttackEffect);
-			cout << "test 3" << endl;
+			cout << "test 3" << eos;
 				// 존 및 타일에다가 이펙트를 추가한다.
 				m_pZone->addEffect(pAttackEffect);	
 				tile.addEffect(pAttackEffect);

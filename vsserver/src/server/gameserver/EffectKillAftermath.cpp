@@ -63,13 +63,13 @@ void EffectKillAftermath::unaffect(Creature* pFromCreature)
 	__BEGIN_TRY 
 	__BEGIN_DEBUG
 
-	//cout << "EffectKillAftermath" << "unaffect BEGIN" << endl;
+	//cout << "EffectKillAftermath" << "unaffect BEGIN" << eos;
 
 	Assert(pFromCreature != NULL);
 	pFromCreature->removeFlag(Effect::EFFECT_CLASS_KILL_AFTERMATH);
 	destroy(pFromCreature->getName());
 
-	//cout << "EffectKillAftermath" << "unaffect END" << endl;
+	//cout << "EffectKillAftermath" << "unaffect END" << eos;
 
 	__END_DEBUG 
 	__END_CATCH
@@ -82,12 +82,12 @@ void EffectKillAftermath::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectKillAftermath" << "unaffect BEGIN" << endl;
+	//cout << "EffectKillAftermath" << "unaffect BEGIN" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 	unaffect(pCreature);
 
-	//cout << "EffectKillAftermath" << "unaffect END" << endl;
+	//cout << "EffectKillAftermath" << "unaffect END" << eos;
 						
 	__END_CATCH
 }
@@ -226,7 +226,7 @@ void EffectKillAftermathLoader::load(Creature* pCreature)
 
 	if (pCreature == NULL)
 	{
-		//cout << "EffectKillAftermathLoader : 크리쳐가 널입니다." << endl;
+		//cout << "EffectKillAftermathLoader : 크리쳐가 널입니다." << eos;
 		return;
 	}
 

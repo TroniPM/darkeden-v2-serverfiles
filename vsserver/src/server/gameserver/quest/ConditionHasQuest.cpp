@@ -39,13 +39,13 @@ bool ConditionHasQuest::isSatisfied (Creature * pCreature1 , Creature * pCreatur
 	PlayerCreature* pPC = dynamic_cast<PlayerCreature*>(pCreature2);
 	Assert( pPC != NULL );
 
-	//cout << "isSatisfied? " << toString() << " ... " << pPC->getName() << endl;
+	//cout << "isSatisfied? " << toString() << " ... " << pPC->getName() << eos;
 
 	QuestManager* pQM = pPC->getQuestManager();
 	if ( pQM == NULL || !pQM->hasQuest() ) return false;
 	if ( pQM->getQuestStatus( m_QuestID ) == NULL ) return false;
 
-	//cout << "Satisfied" << endl;
+	//cout << "Satisfied" << eos;
 
 	return true;
 }

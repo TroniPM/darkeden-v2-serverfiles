@@ -33,7 +33,7 @@ void EffectRequital::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectRequital" << "unaffect BEGIN" << endl;
+	//cout << "EffectRequital" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isSlayer());
@@ -50,7 +50,7 @@ void EffectRequital::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_REQUITAL);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectRequital" << "unaffect END" << endl;
+	//cout << "EffectRequital" << "unaffect END" << eos;
 
 	__END_CATCH
 }

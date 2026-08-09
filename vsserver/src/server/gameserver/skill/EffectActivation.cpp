@@ -50,7 +50,7 @@ void EffectActivation::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectActivation " << "unaffect BEGIN" << endl;
+	//cout << "EffectActivation " << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isSlayer());
@@ -67,7 +67,7 @@ void EffectActivation::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_ACTIVATION);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectActivation " << "unaffect END" << endl;
+	//cout << "EffectActivation " << "unaffect END" << eos;
 
 	__END_CATCH
 }

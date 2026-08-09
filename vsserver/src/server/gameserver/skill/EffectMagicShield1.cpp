@@ -33,7 +33,7 @@ void EffectMagicShield1::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectMagicShield1" << "unaffect BEGIN" << endl;
+	//cout << "EffectMagicShield1" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isSlayer());
@@ -60,7 +60,7 @@ void EffectMagicShield1::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_MAGIC_SHIELD1);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectMagicShield1" << "unaffect END" << endl;
+	//cout << "EffectMagicShield1" << "unaffect END" << eos;
 
 	__END_CATCH
 }

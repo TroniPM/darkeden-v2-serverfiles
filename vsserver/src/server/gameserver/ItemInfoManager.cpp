@@ -166,21 +166,21 @@ void ItemInfoManager::init ()
 	g_pARInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_AR] = g_pARInfoManager;
 	AR::initItemIDRegistry();
-	//cout << "AR" << endl;
+	//cout << "AR" << eos;
 	
 	// initialize BladeInfoManager
 	g_pBeltInfoManager = new BeltInfoManager ();
 	g_pBeltInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_BELT] = g_pBeltInfoManager;
 	Belt::initItemIDRegistry();
-	//cout << "Belt" << endl;
+	//cout << "Belt" << eos;
 	
 	// initialize CrossInfoManager
 	g_pCrossInfoManager = new CrossInfoManager ();
 	g_pCrossInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_CROSS] = g_pCrossInfoManager;
 	Cross::initItemIDRegistry();
-	//cout << "Cross" << endl;
+	//cout << "Cross" << eos;
 
 
 	// initialize BladeInfoManager
@@ -188,35 +188,35 @@ void ItemInfoManager::init ()
 	g_pBladeInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_BLADE] = g_pBladeInfoManager;
 	Blade::initItemIDRegistry();
-	//cout << "Blade" << endl;
+	//cout << "Blade" << eos;
 	
 	// initialize BombInfoManager
 	g_pBombInfoManager = new BombInfoManager ();
 	g_pBombInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_BOMB] = g_pBombInfoManager;
 	Bomb::initItemIDRegistry();
-	//cout << "Bomb" << endl;
+	//cout << "Bomb" << eos;
 
 	// initialize BombMeterialInfoManager
 	g_pBombMaterialInfoManager = new BombMaterialInfoManager ();
 	g_pBombMaterialInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_BOMB_MATERIAL] = g_pBombMaterialInfoManager;
 	BombMaterial::initItemIDRegistry();
-	//cout << "BombMaterial" << endl;
+	//cout << "BombMaterial" << eos;
 
 	// initialize BraceletInfoManager
 	g_pBraceletInfoManager = new BraceletInfoManager ();
 	g_pBraceletInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_BRACELET] = g_pBraceletInfoManager;
 	Bracelet::initItemIDRegistry();
-	//cout << "Bracelet" << endl;
+	//cout << "Bracelet" << eos;
 
 	// initialize VampireBraceletInfoManager
 	g_pCoatInfoManager = new CoatInfoManager ();
 	g_pCoatInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_COAT] = g_pCoatInfoManager;
 	Coat::initItemIDRegistry();
-	//cout << "Coat" << endl;
+	//cout << "Coat" << eos;
 	
 
 	// initialize ETCInfoManager
@@ -224,238 +224,238 @@ void ItemInfoManager::init ()
 	g_pETCInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_ETC] = g_pETCInfoManager;
 	ETC::initItemIDRegistry();
-	//cout << "ETC" << endl;
+	//cout << "ETC" << eos;
 
 	// initialize GloveInfoManager
 	g_pGloveInfoManager = new GloveInfoManager ();
 	g_pGloveInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_GLOVE] = g_pGloveInfoManager;
 	Glove::initItemIDRegistry();
-	//cout << "Glove" << endl;
+	//cout << "Glove" << eos;
 
 	// initialize HelmInfoManager
 	g_pHelmInfoManager = new HelmInfoManager ();
 	g_pHelmInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_HELM] = g_pHelmInfoManager;
 	Helm::initItemIDRegistry();
-	//cout << "Helm" << endl;
+	//cout << "Helm" << eos;
 
 	// initialize HolyWaterInfoManager
 	g_pHolyWaterInfoManager = new HolyWaterInfoManager ();
 	g_pHolyWaterInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_HOLYWATER] = g_pHolyWaterInfoManager;
 	HolyWater::initItemIDRegistry();
-	//cout << "HolyWater" << endl;
+	//cout << "HolyWater" << eos;
 	
 	// initialize KeyInfoManager 
 	g_pKeyInfoManager = new KeyInfoManager ();
 	g_pKeyInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_KEY] = g_pKeyInfoManager;
 	Key::initItemIDRegistry();
-	//cout << "Key" << endl;
+	//cout << "Key" << eos;
 
 	// initialize LearningItemInfoManager
 	g_pLearningItemInfoManager = new LearningItemInfoManager ();
 	g_pLearningItemInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_LEARNINGITEM] = g_pLearningItemInfoManager;
 	LearningItem::initItemIDRegistry();
-	//cout << "Learning" << endl;
+	//cout << "Learning" << eos;
 
 	// initialize MagazineInfoManager
 	g_pMagazineInfoManager = new MagazineInfoManager ();
 	g_pMagazineInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_MAGAZINE] = g_pMagazineInfoManager;
 	Magazine::initItemIDRegistry();
-	//cout << "Magazine" << endl;
+	//cout << "Magazine" << eos;
 
 	// initialize MineInfoManager
 	g_pMineInfoManager = new MineInfoManager ();
 	g_pMineInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_MINE] = g_pMineInfoManager;
 	Mine::initItemIDRegistry();
-	//cout << "Mine" << endl;
+	//cout << "Mine" << eos;
 
 	// initialize WaterInfoManager 
 	g_pMoneyInfoManager = new MoneyInfoManager ();
 	g_pMoneyInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_MONEY] = g_pMoneyInfoManager;
 	Money::initItemIDRegistry();
-	//cout << "Money" << endl;
+	//cout << "Money" << eos;
 
 	// initialize MotorcycleInfoManager 
 	g_pMotorcycleInfoManager = new MotorcycleInfoManager ();
 	g_pMotorcycleInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_MOTORCYCLE] = g_pMotorcycleInfoManager;
 	Motorcycle::initItemIDRegistry();
-	//cout << "Motorcycle" << endl;
+	//cout << "Motorcycle" << eos;
 
 	// initialize NecklaceInfoManager
 	g_pNecklaceInfoManager = new NecklaceInfoManager ();
 	g_pNecklaceInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_NECKLACE] = g_pNecklaceInfoManager;
 	Necklace::initItemIDRegistry();
-	//cout << "Necklace" << endl;
+	//cout << "Necklace" << eos;
 
 	// initialize PotionInfoManager
 	g_pPotionInfoManager = new PotionInfoManager();
 	g_pPotionInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_POTION] = g_pPotionInfoManager;
 	Potion::initItemIDRegistry();
-	//cout << "Potion" << endl;
+	//cout << "Potion" << eos;
 
 	// initialize RingInfoManager
 	g_pRingInfoManager = new RingInfoManager ();
 	g_pRingInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_RING] = g_pRingInfoManager;
 	Ring::initItemIDRegistry();
-	//cout << "Ring" << endl;
+	//cout << "Ring" << eos;
 
 	// initialize SGInfoManager
 	g_pSGInfoManager = new SGInfoManager ();
 	g_pSGInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_SG] = g_pSGInfoManager;
 	SG::initItemIDRegistry();
-	//cout << "SG" << endl;
+	//cout << "SG" << eos;
 
 	// initialize SMGInfoManager
 	g_pSMGInfoManager = new SMGInfoManager ();
 	g_pSMGInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_SMG] = g_pSMGInfoManager;
 	SMG::initItemIDRegistry();
-	//cout << "SMG" << endl;
+	//cout << "SMG" << eos;
 
 	// initialize ShieldInfoManager
 	g_pShieldInfoManager = new ShieldInfoManager ();
 	g_pShieldInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_SHIELD] = g_pShieldInfoManager;
 	Shield::initItemIDRegistry();
-	//cout << "Shield" << endl;
+	//cout << "Shield" << eos;
 	
 	// initialize ShoesInfoManager
 	g_pShoesInfoManager = new ShoesInfoManager ();
 	g_pShoesInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_SHOES] = g_pShoesInfoManager;
 	Shoes::initItemIDRegistry();
-	//cout << "Shoes" << endl;
+	//cout << "Shoes" << eos;
 
 	// initialize SwordInfoManager
 	g_pSwordInfoManager = new SwordInfoManager();
 	g_pSwordInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_SWORD] = g_pSwordInfoManager;
 	Sword::initItemIDRegistry();
-	//cout << "Sword" << endl;
+	//cout << "Sword" << eos;
 
 	// initialize SRInfoManager
 	g_pSRInfoManager = new SRInfoManager ();
 	g_pSRInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_SR] = g_pSRInfoManager;
 	SR::initItemIDRegistry();
-	//cout << "SR" << endl;
+	//cout << "SR" << eos;
 
 	// initialize VampireBraceletInfoManager
 	g_pTrouserInfoManager = new TrouserInfoManager ();
 	g_pTrouserInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_TROUSER] = g_pTrouserInfoManager;
 	Trouser::initItemIDRegistry();
-	//cout << "Trouser" << endl;
+	//cout << "Trouser" << eos;
 
 	// initialize VampireBraceletInfoManager
 	g_pVampireBraceletInfoManager = new VampireBraceletInfoManager ();
 	g_pVampireBraceletInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_VAMPIRE_BRACELET] = g_pVampireBraceletInfoManager;
 	VampireBracelet::initItemIDRegistry();
-	//cout << "VampireBracelet" << endl;
+	//cout << "VampireBracelet" << eos;
 
 	// initialize VampireBraceletInfoManager
 	g_pVampireNecklaceInfoManager = new VampireNecklaceInfoManager ();
 	g_pVampireNecklaceInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_VAMPIRE_NECKLACE] = g_pVampireNecklaceInfoManager;
 	VampireNecklace::initItemIDRegistry();
-	//cout << "VampireNecklace" << endl;
+	//cout << "VampireNecklace" << eos;
 	
 	// initialize VampireBraceletInfoManager
 	g_pVampireRingInfoManager = new VampireRingInfoManager ();
 	g_pVampireRingInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_VAMPIRE_RING] = g_pVampireRingInfoManager;
 	VampireRing::initItemIDRegistry();
-	//cout << "VampireRing" << endl;
+	//cout << "VampireRing" << eos;
 	
 	// initialize WaterInfoManager 
 	g_pWaterInfoManager = new WaterInfoManager ();
 	g_pWaterInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_WATER] = g_pWaterInfoManager;
 	Water::initItemIDRegistry();
-	//cout << "Water" << endl;
+	//cout << "Water" << eos;
 
 	// initialize VampireCoatInfoManager
 	g_pVampireCoatInfoManager = new VampireCoatInfoManager ();
 	g_pVampireCoatInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_VAMPIRE_COAT] = g_pVampireCoatInfoManager;
 	VampireCoat::initItemIDRegistry();
-	//cout << "VampireCoat" << endl;
+	//cout << "VampireCoat" << eos;
 
 	// initialize SkullInfoManager
 	g_pSkullInfoManager = new SkullInfoManager ();
 	g_pSkullInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_SKULL] = g_pSkullInfoManager;
 	Skull::initItemIDRegistry();
-	//cout << "Skull" << endl;
+	//cout << "Skull" << eos;
 
 	// initialize MaceInfoManager
 	g_pMaceInfoManager = new MaceInfoManager ();
 	g_pMaceInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_MACE] = g_pMaceInfoManager;
 	Mace::initItemIDRegistry();
-	//cout << "Mace" << endl;
+	//cout << "Mace" << eos;
 
 	// initialize SerumInfoManager
 	g_pSerumInfoManager = new SerumInfoManager ();
 	g_pSerumInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_SERUM] = g_pSerumInfoManager;
 	Serum::initItemIDRegistry();
-	//cout << "Serum" << endl;
+	//cout << "Serum" << eos;
 
 	// initialize VampireETCInfoManager
 	g_pVampireETCInfoManager = new VampireETCInfoManager ();
 	g_pVampireETCInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_VAMPIRE_ETC] = g_pVampireETCInfoManager;
 	VampireETC::initItemIDRegistry();
-	//cout << "VampireETC" << endl;
+	//cout << "VampireETC" << eos;
 	
 	// initialize SlayerPortalItemInfoManager
 	g_pSlayerPortalItemInfoManager = new SlayerPortalItemInfoManager ();
 	g_pSlayerPortalItemInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_SLAYER_PORTAL_ITEM] = g_pSlayerPortalItemInfoManager;
 	SlayerPortalItem::initItemIDRegistry();
-	//cout << "SlayerPortalItem" << endl;
+	//cout << "SlayerPortalItem" << eos;
 	
 	// initialize VampirePortalItemInfoManager
 	g_pVampirePortalItemInfoManager = new VampirePortalItemInfoManager ();
 	g_pVampirePortalItemInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_VAMPIRE_PORTAL_ITEM] = g_pVampirePortalItemInfoManager;
 	VampirePortalItem::initItemIDRegistry();
-	//cout << "VampirePortalItem" << endl;
+	//cout << "VampirePortalItem" << eos;
 
 	// initialize EventGiftBoxInfoManager
 	g_pEventGiftBoxInfoManager = new EventGiftBoxInfoManager ();
 	g_pEventGiftBoxInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_EVENT_GIFT_BOX] = g_pEventGiftBoxInfoManager;
 	EventGiftBox::initItemIDRegistry();
-	//cout << "EventGiftBox" << endl;
+	//cout << "EventGiftBox" << eos;
 
 	// initialize EventStarInfoManager
 	g_pEventStarInfoManager = new EventStarInfoManager ();
 	g_pEventStarInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_EVENT_STAR] = g_pEventStarInfoManager;
 	EventStar::initItemIDRegistry();
-	//cout << "EventStar" << endl;
+	//cout << "EventStar" << eos;
 
 	// initialize VampireBraceletInfoManager
 	g_pVampireEarringInfoManager = new VampireEarringInfoManager ();
 	g_pVampireEarringInfoManager->init();
 	m_InfoClassManagers[Item::ITEM_CLASS_VAMPIRE_EARRING] = g_pVampireEarringInfoManager;
 	VampireEarring::initItemIDRegistry();
-	//cout << "VampireEarring" << endl;
+	//cout << "VampireEarring" << eos;
 
 	g_pRelicInfoManager = new RelicInfoManager();
 	g_pRelicInfoManager->init();
@@ -876,8 +876,8 @@ bool ItemInfoManager::isPossibleItem(Item::ItemClass IClass, ItemType_t IType, c
 		{
 			try
 			{
-				//cout << "IM::getOptionInfo(" << (int)OType << ")" << endl;
-				//cout << "IM::getOptionInfo(" << getOptionTypeToString(OType).c_str() << ")" << endl;
+				//cout << "IM::getOptionInfo(" << (int)OType << ")" << eos;
+				//cout << "IM::getOptionInfo(" << getOptionTypeToString(OType).c_str() << ")" << eos;
 				list<OptionType_t>::const_iterator itr = OType.begin();
 				for (; itr!=OType.end(); itr++)
 				{
@@ -893,7 +893,7 @@ bool ItemInfoManager::isPossibleItem(Item::ItemClass IClass, ItemType_t IType, c
 			}
 			catch (NoSuchElementException& nsee)
 			{
-				cout << nsee.toString().c_str() << endl;
+				cout << nsee.toString().c_str() << eos;
 				return false;
 			}
 		}

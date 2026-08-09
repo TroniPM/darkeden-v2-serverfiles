@@ -160,8 +160,8 @@ void CBillingPlayer::processCommand()
 			////////////////////////////////////////////////////////////////////////////////////
 			if ( header.Packet_Type != CBILLING_PACKET_RESPONSE )
 			{
-				cout << "error" << endl;
-				cout << "try to disconnect to china billing server" << endl;
+				cout << "error" << eos;
+				cout << "try to disconnect to china billing server" << eos;
 
 				filelog( LOGFILE_CBILLING_PLAYER, "!!!!!!!!!!!!!!!! try to disconnect to china billing server" );
 
@@ -338,8 +338,8 @@ void CBillingPlayer::disconnect( bool bDisconnected )
 	}
 	catch ( InvalidProtocolException& t )
 	{
-		cerr << "CBillingPlayer::disconnect Exception occur!!" << endl;
-		cerr << t.toString() << endl;
+		cerr << "CBillingPlayer::disconnect Exception occur!!" << eos;
+		cerr << t.toString() << eos;
 		m_pSocket->close();
 	}
 
@@ -392,10 +392,10 @@ void CBillingPlayer::sendLogin( LoginPlayer* pLoginPlayer )
 	body.write( *m_pOutputStream );
 
 #ifdef __COUT_CBILLING_SYSTEM__
-	cout << "----------------------------------------------------------------" << endl;
-	cout << "Request Login : " << body.Login_Name << endl;
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << "----------------------------------------------------------------" << eos;
+	cout << "Request Login : " << body.Login_Name << eos;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 #endif
 
 	filelog( LOGFILE_CBILLING_PLAYER, "Request Login : %s\n%s\n%s", body.Login_Name, header.toString().c_str(), body.toString().c_str() );
@@ -423,10 +423,10 @@ void CBillingPlayer::sendIntervalValidation()
 	body.write( *m_pOutputStream );
 
 #ifdef __COUT_CBILLING_SYSTEM__
-	cout << "----------------------------------------------------------------" << endl;
-	cout << "Request Interval Validation : " << body.Parameter_Value << " min" << endl;
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << "----------------------------------------------------------------" << eos;
+	cout << "Request Interval Validation : " << body.Parameter_Value << " min" << eos;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 #endif
 
 	filelog( LOGFILE_CBILLING_PLAYER, "Request Interval Validation : %s\n%s\n%s", body.Parameter_Value, header.toString().c_str(), body.toString().c_str() );
@@ -461,10 +461,10 @@ void CBillingPlayer::sendLogin( GamePlayer* pGamePlayer )
 	body.write( *m_pOutputStream );
 
 #ifdef __COUT_CBILLING_SYSTEM__
-	cout << "----------------------------------------------------------------" << endl;
-	cout << "Request Login : " << body.Login_Name << endl;
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << "----------------------------------------------------------------" << eos;
+	cout << "Request Login : " << body.Login_Name << eos;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 #endif
 
 	filelog( LOGFILE_CBILLING_PLAYER, "Request Login : %s\n%s\n%s", body.Login_Name, header.toString().c_str(), body.toString().c_str() );
@@ -492,10 +492,10 @@ void CBillingPlayer::sendMinusPoint( GamePlayer* pGamePlayer )
 	body.write( *m_pOutputStream );
 
 #ifdef __COUT_CBILLING_SYSTEM__
-	cout << "----------------------------------------------------------------" << endl;
-	cout << "Request Minus Point : " << body.Login_Name << endl;
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << "----------------------------------------------------------------" << eos;
+	cout << "Request Minus Point : " << body.Login_Name << eos;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 #endif
 
 	filelog( LOGFILE_CBILLING_PLAYER, "Request Minus Point : %s\n%s\n%s", body.Login_Name, header.toString().c_str(), body.toString().c_str() );
@@ -523,10 +523,10 @@ void CBillingPlayer::sendMinusMinute( GamePlayer* pGamePlayer )
 	body.write( *m_pOutputStream );
 
 #ifdef __COUT_CBILLING_SYSTEM__
-	cout << "----------------------------------------------------------------" << endl;
-	cout << "Request Minus Minute : " << body.Login_Name << endl;
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << "----------------------------------------------------------------" << eos;
+	cout << "Request Minus Minute : " << body.Login_Name << eos;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 #endif
 
 	filelog( LOGFILE_CBILLING_PLAYER, "Request Minus Minute : %s\n%s\n%s", body.Login_Name, header.toString().c_str(), body.toString().c_str() );
@@ -554,10 +554,10 @@ void CBillingPlayer::sendLogout( GamePlayer* pGamePlayer )
 	body.write( *m_pOutputStream );
 
 #ifdef __COUT_CBILLING_SYSTEM__
-	cout << "----------------------------------------------------------------" << endl;
-	cout << "Request Logout : " << body.Login_Name << endl;
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << "----------------------------------------------------------------" << eos;
+	cout << "Request Logout : " << body.Login_Name << eos;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 #endif
 
 	filelog( LOGFILE_CBILLING_PLAYER, "Request Logout : %s\n%s\n%s", body.Login_Name, header.toString().c_str(), body.toString().c_str() );
@@ -608,11 +608,11 @@ void CBillingPlayer::executeError( CBillingPacketHeader& header, CBillingPacketE
 #endif
 
 #ifdef __COUT_CBILLING_SYSTEM__
-	cout << "----------------------------------------------------------------" << endl;
-	cout << "Response Error : " << body.Login_Name << endl;
-	cout << body.Return_Message << endl;
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << "----------------------------------------------------------------" << eos;
+	cout << "Response Error : " << body.Login_Name << eos;
+	cout << body.Return_Message << eos;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 #endif
 	filelog( LOGFILE_CBILLING_PACKET, "Response Error : %s\n%s\n%s", body.Login_Name, header.toString().c_str(), body.toString().c_str() );
 
@@ -651,10 +651,10 @@ void CBillingPlayer::executeLogin( CBillingPacketHeader& header, CBillingPacketR
 	__LEAVE_CRITICAL_SECTION( (*g_pLoginPlayerManager) )
 
 #ifdef __COUT_CBILLING_SYSTEM__
-	cout << "----------------------------------------------------------------" << endl;
-	cout << "Response Login OK : " << body.Login_Name << endl;
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << "----------------------------------------------------------------" << eos;
+	cout << "Response Login OK : " << body.Login_Name << eos;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 #endif
 	filelog( LOGFILE_CBILLING_PACKET, "Response Login OK : %s\n%s\n%s", body.Login_Name, header.toString().c_str(), body.toString().c_str() );
 
@@ -670,10 +670,10 @@ void CBillingPlayer::executeIntervalValidation( CBillingPacketHeader& header, CB
 	if ( atoi(body.Parameter_Value) != g_pCBillingPlayerManager->getMinusIntervalInt() )
 	{
 		// 게임서버와 중국 빌링 서버간에 minus interval 이 맞지 않다. 죽어야 한다.
-		cerr << "-------------------------------------------------------------------------------" << endl;
-		cerr << "Interval configuration is different between gameserver and china billing server" << endl;
-		cerr << "gameserver interval : " << g_pCBillingPlayerManager->getMinusIntervalInt() << ", china billing server interval : " << body.Parameter_Value << endl;
-		cerr << "-------------------------------------------------------------------------------" << endl;
+		cerr << "-------------------------------------------------------------------------------" << eos;
+		cerr << "Interval configuration is different between gameserver and china billing server" << eos;
+		cerr << "gameserver interval : " << g_pCBillingPlayerManager->getMinusIntervalInt() << ", china billing server interval : " << body.Parameter_Value << eos;
+		cerr << "-------------------------------------------------------------------------------" << eos;
 
 		filelog( LOGFILE_CBILLING_ERROR, "Different Interval between gameserver and china billing server\ngameserver interval : %d, china billing server interval : %s", g_pCBillingPlayerManager->getMinusIntervalInt(), body.Parameter_Value );
 
@@ -682,10 +682,10 @@ void CBillingPlayer::executeIntervalValidation( CBillingPacketHeader& header, CB
 	}
 
 #ifdef __COUT_CBILLING_SYSTEM__
-	cout << "----------------------------------------------------------------" << endl;
-	cout << "Response Interval Validation : " << body.Parameter_Value << endl;
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << "----------------------------------------------------------------" << eos;
+	cout << "Response Interval Validation : " << body.Parameter_Value << eos;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 #endif
 	filelog( LOGFILE_CBILLING_PACKET, "Response Interval Validation : %s\n%s\n%s", body.Parameter_Value, header.toString().c_str(), body.toString().c_str() );
 
@@ -734,20 +734,20 @@ void CBillingPlayer::executeLogin( CBillingPacketHeader& header, CBillingPacketR
 			pGamePlayer->setPayPlayer( false );
 
 #ifdef __COUT_CBILLING_SYSTEM__
-			cout << "----------------------------------------------------------------" << endl;
-			cout << "Response Login OK : " << body.Login_Name << " has no left time. DISCONNECT" << endl;
-			cout << header.toString().c_str() << endl;
-			cout << body.toString().c_str() << endl;
+			cout << "----------------------------------------------------------------" << eos;
+			cout << "Response Login OK : " << body.Login_Name << " has no left time. DISCONNECT" << eos;
+			cout << header.toString().c_str() << eos;
+			cout << body.toString().c_str() << eos;
 #endif
 			filelog( LOGFILE_CBILLING_PACKET, "Response Login OK : %s has no left time. DISCONNECT\n%s\n%s", body.Login_Name, header.toString().c_str(), body.toString().c_str() );
 		}
 		else
 		{
 #ifdef __COUT_CBILLING_SYSTEM__
-			cout << "----------------------------------------------------------------" << endl;
-			cout << "Response Login OK : " << body.Login_Name << endl;
-			cout << header.toString().c_str() << endl;
-			cout << body.toString().c_str() << endl;
+			cout << "----------------------------------------------------------------" << eos;
+			cout << "Response Login OK : " << body.Login_Name << eos;
+			cout << header.toString().c_str() << eos;
+			cout << body.toString().c_str() << eos;
 #endif
 			filelog( LOGFILE_CBILLING_PACKET, "Response Login OK : %s\n%s\n%s", body.Login_Name, header.toString().c_str(), body.toString().c_str() );
 		}
@@ -761,10 +761,10 @@ void CBillingPlayer::executeLogin( CBillingPacketHeader& header, CBillingPacketR
 	else
 	{
 #ifdef __COUT_CBILLING_SYSTEM__
-		cout << "----------------------------------------------------------------" << endl;
-		cout << "Response Login OK : " << body.Login_Name << endl;
-		cout << header.toString().c_str() << endl;
-		cout << body.toString().c_str() << endl;
+		cout << "----------------------------------------------------------------" << eos;
+		cout << "Response Login OK : " << body.Login_Name << eos;
+		cout << header.toString().c_str() << eos;
+		cout << body.toString().c_str() << eos;
 #endif
 		filelog( LOGFILE_CBILLING_PACKET, "Response Login OK : %s\n%s\n%s", body.Login_Name, header.toString().c_str(), body.toString().c_str() );
 	}
@@ -845,10 +845,10 @@ void CBillingPlayer::executeMinusPoint( CBillingPacketHeader& header, CBillingPa
 	__LEAVE_CRITICAL_SECTION( (*g_pPCFinder) )
 
 #ifdef __COUT_CBILLING_SYSTEM__
-	cout << "----------------------------------------------------------------" << endl;
-	cout << "Response Minus Point : " << body.Login_Name << endl;
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << "----------------------------------------------------------------" << eos;
+	cout << "Response Minus Point : " << body.Login_Name << eos;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 #endif
 	filelog( LOGFILE_CBILLING_PACKET, "Response Minus Point : %s\n%s\n%s", body.Login_Name, header.toString().c_str(), body.toString().c_str() );
 
@@ -863,10 +863,10 @@ void CBillingPlayer::executeMinusMinute( CBillingPacketHeader& header, CBillingP
 	__BEGIN_TRY
 
 #ifdef __COUT_CBILLING_SYSTEM__
-	cout << "----------------------------------------------------------------" << endl;
-	cout << "Response Minus Minute : " << body.Login_Name << endl;
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << "----------------------------------------------------------------" << eos;
+	cout << "Response Minus Minute : " << body.Login_Name << eos;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 #endif
 	filelog( LOGFILE_CBILLING_PACKET, "Response Minus Minute : %s\n%s\n%s", body.Login_Name, header.toString().c_str(), body.toString().c_str() );
 
@@ -879,10 +879,10 @@ void CBillingPlayer::executeLogout( CBillingPacketHeader& header, CBillingPacket
 	__BEGIN_TRY
 
 #ifdef __COUT_CBILLING_SYSTEM__
-	cout << "----------------------------------------------------------------" << endl;
-	cout << "Response Logout OK : " << body.Login_Name << endl;
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << "----------------------------------------------------------------" << eos;
+	cout << "Response Logout OK : " << body.Login_Name << eos;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 #endif
 	filelog( LOGFILE_CBILLING_PACKET, "Response Logout OK : %s\n%s\n%s", body.Login_Name, header.toString().c_str(), body.toString().c_str() );
 
@@ -902,9 +902,9 @@ void CBillingPlayer::checkSessionID( CBillingPacketHeader& header, GamePlayer* p
 	if ( pGamePlayer->increaseRecvID() != header.Session_ID )
 	{
 #ifdef __COUT_CBILLING_SYSTEM__
-		cerr << "******************************************************************" << endl;
-		cerr << "Session Fail : Recv ID = " << header.Session_ID << ", Respect ID = " << pGamePlayer->getRecvID() << endl;
-		cerr << header.toString().c_str() << endl;
+		cerr << "******************************************************************" << eos;
+		cerr << "Session Fail : Recv ID = " << header.Session_ID << ", Respect ID = " << pGamePlayer->getRecvID() << eos;
+		cerr << header.toString().c_str() << eos;
 #endif
 		filelog( LOGFILE_CBILLING_ERROR, "Session Fail : RecvID = %d, Respect ID = %d\n%s", header.Session_ID, pGamePlayer->getRecvID(), header.toString().c_str() );
 	}

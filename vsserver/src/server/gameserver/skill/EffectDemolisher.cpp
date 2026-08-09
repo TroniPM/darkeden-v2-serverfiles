@@ -91,7 +91,7 @@ void EffectDemolisher::affect()
 		}
 	}
 
-	//cout << "EffectDestinies" << "affect BEGIN" << endl;
+	//cout << "EffectDestinies" << "affect BEGIN" << eos;
 
 	__END_CATCH 
 }
@@ -177,9 +177,9 @@ void EffectDemolisher::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectDemolisher" << "unaffect BEGIN" << endl;
+	//cout << "EffectDemolisher" << "unaffect BEGIN" << eos;
 
-	//cout << "EffectDemolisher" << "unaffect END" << endl;
+	//cout << "EffectDemolisher" << "unaffect END" << eos;
 
 	__END_CATCH
 }

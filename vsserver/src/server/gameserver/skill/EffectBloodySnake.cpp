@@ -56,7 +56,7 @@ void EffectBloodySnake::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectBloodySnake" << "affect BEGIN" << endl;
+	//cout << "EffectBloodySnake" << "affect BEGIN" << eos;
 	
 	Assert(m_pZone != NULL);
 
@@ -226,7 +226,7 @@ void EffectBloodySnake::affect()
 	cout << "EffectSnake(" << m_ObjectID << ")"
 		<< "[" << Dir2String[m_Dir].c_str() << "] ("
 		<< m_X << ", " << m_Y << ") --> ("
-		<< pt.x << ", " << pt.y << ")" << endl;
+		<< pt.x << ", " << pt.y << ")" << eos;
 	*/
 
 	// 다음 이동할 타일에 추가한다.
@@ -275,7 +275,7 @@ void EffectBloodySnake::affect()
 		setDeadline( 0 );
 	}
 
-	//cout << "EffectBloodySnake" << "affect END" << endl;
+	//cout << "EffectBloodySnake" << "affect END" << eos;
 
 	__END_CATCH 
 }
@@ -314,12 +314,12 @@ void EffectBloodySnake::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectBloodySnake" << "unaffect BEGIN" << endl;
+	//cout << "EffectBloodySnake" << "unaffect BEGIN" << eos;
 
     Tile& tile = m_pZone->getTile(m_X, m_Y);
 	tile.deleteEffect(m_ObjectID);
 
-	//cout << "EffectBloodySnake" << "unaffect END" << endl;
+	//cout << "EffectBloodySnake" << "unaffect END" << eos;
 
 	__END_CATCH
 }

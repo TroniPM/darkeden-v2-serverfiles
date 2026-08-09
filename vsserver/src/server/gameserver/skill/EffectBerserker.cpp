@@ -40,12 +40,12 @@ void EffectBerserker::unaffect()
 {
     __BEGIN_TRY
 
-	//cout << "EffectBerserker " << "unaffect BEGIN" << endl;
+	//cout << "EffectBerserker " << "unaffect BEGIN" << eos;
 
     Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
     unaffect(pCreature);
 
-	//cout << "EffectBerserker " << "unaffect END" << endl;
+	//cout << "EffectBerserker " << "unaffect END" << eos;
 
     __END_CATCH
 }
@@ -58,7 +58,7 @@ void EffectBerserker::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectBerserker " << "unaffect BEGIN" << endl;
+	//cout << "EffectBerserker " << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isSlayer() == true);
@@ -82,7 +82,7 @@ void EffectBerserker::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_BERSERKER);
 	pZone->broadcastPacket(pSlayer->getX(), pSlayer->getY(), &gcRemoveEffect);
 
-	//cout << "EffectBerserker " << "unaffect END" << endl;
+	//cout << "EffectBerserker " << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

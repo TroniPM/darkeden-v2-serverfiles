@@ -105,7 +105,7 @@ void ActionQuestReward::execute (Creature * pCreature1 , Creature * pCreature2)
 		}
 	}
 
-	//cout << "ActionQuestReward : result " << (int)result << endl;
+	//cout << "ActionQuestReward : result " << (int)result << eos;
 
 	GCNPCResponse gcNPCResponse;
 

@@ -24,7 +24,7 @@ string SMSMessage::toString() const
 
 void operator++ (string& id)
 {
-	cout << "start operator++" << id << endl;
+	cout << "start operator++" << id << eos;
 
 	string::iterator itr = id.end();
 	--itr;
@@ -38,7 +38,7 @@ void operator++ (string& id)
 	Assert( (*itr) <= '8' && (*itr) >= '0' );
 	++(*itr);
 
-	cout << "end operator++" << id << endl;
+	cout << "end operator++" << id << eos;
 }
 
 void SMSServiceThread::run() throw()
@@ -89,7 +89,7 @@ void SMSServiceThread::run() throw()
 		if ( pResult->next() ) max = pResult->getString(1);
 		if ( max.size() == KEY_SIZE ) mid = max;
 		++mid;
-		cout << "initial mid : " << mid << endl;;
+		cout << "initial mid : " << mid << eos;;
 
 		SAFE_DELETE( pStmt );
 	}
@@ -119,7 +119,7 @@ void SMSServiceThread::run() throw()
 
 						BEGIN_DB
 						{
-							//cout << pMsg->toString() << endl;
+							//cout << pMsg->toString() << eos;
 							filelog( "SMS.log", "Send message [%s] %s", mid.c_str(), pMsg->toString().c_str() );
 							pStmt = m_pConnection->createStatement();
 							pStmt->executeQuery( "INSERT INTO uds_msg (mid,recvdate,target,toname,callback,body) VALUES "
@@ -135,7 +135,7 @@ void SMSServiceThread::run() throw()
 								pStmt->executeQuery( "INSERT INTO msg_queue (mid) VALUES ('%s')", mid.c_str() );
 								filelog( "SMS.log", "insert queue %s", mid.c_str() );
 
-	//							cout << mid << " message sent!" << endl;
+	//							cout << mid << " message sent!" << eos;
 								++mid;
 								//mid++;
 							}

@@ -317,7 +317,7 @@ void VariableManager::load()
 
 
 			setVariable(attrID, attr1);
-			cout << toString(attrID).c_str() << endl;
+			cout << toString(attrID).c_str() << eos;
 		}
 		SAFE_DELETE(pStmt);
 	}

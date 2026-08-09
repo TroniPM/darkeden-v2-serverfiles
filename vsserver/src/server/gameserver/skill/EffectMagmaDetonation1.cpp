@@ -47,7 +47,7 @@ void EffectMagmaDetonation1::affect()
 	__BEGIN_TRY
 
 		Assert(m_pZone != NULL);
-	//cout << "UserObejctID:" << (int)m_UserObjectID << endl;
+	//cout << "UserObejctID:" << (int)m_UserObjectID << eos;
 	// 获取使用技能的人物
 	Creature * pCastCreature = m_pZone->getCreature( m_UserObjectID );
 
@@ -156,7 +156,7 @@ void EffectMagmaDetonation1::affect()
 
 	setNextTime(m_Tick);
 
-	//cout << "EffectAcidSwamp" << "affect END" << endl;
+	//cout << "EffectAcidSwamp" << "affect END" << eos;
 
 	__END_CATCH
 }

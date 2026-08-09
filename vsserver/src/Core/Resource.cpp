@@ -41,7 +41,7 @@ Resource::Resource ( Version_t version , const string & str )
 		m_Filename = str.substr( 0 , firstspace );	
 		m_FileSize = atoi( str.substr( firstspace + 1 , str.size() - firstspace ).c_str() );	
 
-		cout << toString() << endl;
+		cout << toString() << eos;
 	}
 
 	__END_CATCH

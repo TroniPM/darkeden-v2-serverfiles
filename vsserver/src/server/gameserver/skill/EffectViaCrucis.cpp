@@ -77,7 +77,7 @@ void EffectViaCrucis::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectViaCrucis" << "affect BEGIN" << endl;
+	//cout << "EffectViaCrucis" << "affect BEGIN" << eos;
 	
 	Assert(m_pZone != NULL);
 
@@ -191,7 +191,7 @@ void EffectViaCrucis::affect()
 	
 	setNextTime(3);
 
-	//cout << "EffectViaCrucis" << "affect END" << endl;
+	//cout << "EffectViaCrucis" << "affect END" << eos;
 
 	__END_CATCH 
 }
@@ -203,12 +203,12 @@ void EffectViaCrucis::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectViaCrucis" << "unaffect BEGIN" << endl;
+	//cout << "EffectViaCrucis" << "unaffect BEGIN" << eos;
 
     Tile& tile = m_pZone->getTile(m_X, m_Y);
 	tile.deleteEffect(m_ObjectID);
 
-	//cout << "EffectViaCrucis" << "unaffect END" << endl;
+	//cout << "EffectViaCrucis" << "unaffect END" << eos;
 
 	__END_CATCH
 }

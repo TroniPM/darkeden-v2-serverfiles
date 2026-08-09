@@ -264,7 +264,7 @@ void ConditionAttrComp::read (PropertyBuffer & propertyBuffer)
 			}
 			else
 			{
-				cout << "ConditionAttrComp::read() : Unknown attribute type[" << attr << "]" << endl;
+				cout << "ConditionAttrComp::read() : Unknown attribute type[" << attr << "]" << eos;
 				throw ("ConditionAttrComp::read() : Unknown attribute type");
 			}
 
@@ -289,7 +289,7 @@ void ConditionAttrComp::parseOperator(string& op, uint& var)
 	else if (op == "HIGHER") var = CONDITION_ATTR_COMP_HIGHER;
 	else
 	{
-		cout << "ConditionAttrComp::parseOperator() : Unknown operator[" << op << "]" << endl;
+		cout << "ConditionAttrComp::parseOperator() : Unknown operator[" << op << "]" << eos;
 		throw ("ConditionAttrComp::parseOperator() : Unknown operator");
 	}
 

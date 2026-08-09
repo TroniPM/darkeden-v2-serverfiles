@@ -64,7 +64,7 @@ void GameServerInfoManager::init ()
 	load();
 
 	// just print to cout
-	cout << toString() << endl;
+	cout << toString() << eos;
 
 	__END_CATCH
 }
@@ -89,7 +89,7 @@ void GameServerInfoManager::load ()
 
 		if (pResult->getRowCount() == 0)
 		{
-			cerr << "GameServerInfo TABLE does not exist!" << endl;
+			cerr << "GameServerInfo TABLE does not exist!" << eos;
 			throw Error("GameServerInfo TABLE does not exist!");
 		}
 
@@ -109,7 +109,7 @@ void GameServerInfoManager::load ()
 
 		if (pResult->getRowCount() == 0)
 		{
-			cerr << "GameServerInfo TABLE does not exist!" << endl;
+			cerr << "GameServerInfo TABLE does not exist!" << eos;
 			throw Error("GameServerInfo TABLE does not exist!");
 		}
 
@@ -129,7 +129,7 @@ void GameServerInfoManager::load ()
 
 	for( int i = 1; i < m_MaxWorldID; i++ ) m_pGameServerInfos[i] = new HashMapGameServerInfo[m_MaxServerGroupID];
 
-	cout << "MAX SERVER GROUP = " << m_MaxServerGroupID << endl;
+	cout << "MAX SERVER GROUP = " << m_MaxServerGroupID << eos;
 
 	BEGIN_DB
 	{
@@ -184,7 +184,7 @@ void GameServerInfoManager::load ()
 
 			pGameServerInfo->setNonPKServer();
 
-			cout << "WorldID:" << (int)worldID << " ServerGroupID:" << (int)serverGroupID << " NonPK set" << endl;
+			cout << "WorldID:" << (int)worldID << " ServerGroupID:" << (int)serverGroupID << " NonPK set" << eos;
 		}
 
 		SAFE_DELETE(pStmt);
@@ -214,7 +214,7 @@ void GameServerInfoManager::load ()
 
 			pGameServerInfo->setCastleFollowingServerID( followServerID );
 
-			cout << "WorldID:" << (int)worldID << " ServerGroupID:" << (int)serverGroupID << " follows" << (int)followServerID << endl;
+			cout << "WorldID:" << (int)worldID << " ServerGroupID:" << (int)serverGroupID << " follows" << (int)followServerID << eos;
 		}
 
 		SAFE_DELETE(pStmt);

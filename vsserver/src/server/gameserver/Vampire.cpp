@@ -362,7 +362,7 @@ Vampire::~Vampire()
 							flag,
 							color[PCVampireInfo::VAMPIRE_COLOR_COAT]);
 
-		////cout << "SAVE = " << pField << endl;
+		////cout << "SAVE = " << pField << eos;
 
 		tinysave(pField);
 
@@ -1061,20 +1061,20 @@ bool Vampire::load ()
 		&& m_Level > 1 && m_Level < VAMPIRE_MAX_LEVEL) 
 	{
 		//ofstream file("뱀프능력치조정.txt", ios::out | ios::app);
-		//file << "NAME:" << m_Name << endl;
-		//file << "==VampEXP==" << endl;
-		//file << "현재레벨의총경험치 : " << (int)pVampEXPInfo->getAccumExp() << endl;
-		//file << "현재 누적 경험치 : " << (int)m_Exp << endl;
-		//file << "현재 목표 경?蝸?: " << (int)m_GoalExp << endl;
+		//file << "NAME:" << m_Name << eos;
+		//file << "==VampEXP==" << eos;
+		//file << "현재레벨의총경험치 : " << (int)pVampEXPInfo->getAccumExp() << eos;
+		//file << "현재 누적 경험치 : " << (int)m_Exp << eos;
+		//file << "현재 목표 경?蝸?: " << (int)m_GoalExp << eos;
 
 		// 이전 레벨의 인포를 받아온다.
 		VampEXPInfo* pBeforeVampEXPInfo = g_pVampEXPInfoManager->getVampEXPInfo(m_Level - 1);
 		// 이전 레벨의 총 경험치 + 목표 경험치 변화량 = 현재 ?㈏?경험치
 		m_Exp = pBeforeVampEXPInfo->getAccumExp() + (pVampEXPInfo->getGoalExp() - m_GoalExp);
 
-		//file << "수정된 누적 경험치 : " << (int)m_Exp << endl;
-		//file << "수정된 목표 경험치 : " << (int)m_GoalExp << endl;
-		//file << endl;
+		//file << "수정된 누적 경험치 : " << (int)m_Exp << eos;
+		//file << "수정된 목표 경험치 : " << (int)m_GoalExp << eos;
+		//file << eos;
 		//file.close();
 
 	   // by sigi. 2002.5.15
@@ -1101,20 +1101,20 @@ bool Vampire::load ()
 		&& m_Rank > 1 && m_Rank < VAMPIRE_MAX_RANK) 
 	{
 		//ofstream file("뱀프능력치조정.txt", ios::out | ios::app);
-		//file << "NAME:" << m_Name << endl;
-		//file << "==VampEXP==" << endl;
-		//file << "현재레벨의총경험치 : " << (int)pVampEXPInfo->getAccumExp() << endl;
-		//file << "현재 누적 경험치 : " << (int)m_Exp << endl;
-		//file << "현재 목???戀蝸?: " << (int)m_GoalExp << endl;
+		//file << "NAME:" << m_Name << eos;
+		//file << "==VampEXP==" << eos;
+		//file << "현재레벨의총경험치 : " << (int)pVampEXPInfo->getAccumExp() << eos;
+		//file << "현재 누적 경험치 : " << (int)m_Exp << eos;
+		//file << "현재 목???戀蝸?: " << (int)m_GoalExp << eos;
 
 		// 이전 레벨의 인포를 받아온다.
 		RankEXPInfo* pBeforeRankEXPInfo = g_pRankEXPInfoManager[RANK_TYPE_VAMPIRE]->getRankEXPInfo(m_Rank - 1);
 		// 이전 레벨의 총 경험치 + 목표 경험치 변화량 = 현재 누적 경험치
 		m_RankExp = pBeforeRankEXPInfo->getAccumExp() + (pRankEXPInfo->getGoalExp() - m_RankGoalExp);
 
-		//file << "수정된 누적 경험치 : " << (int)m_Exp << endl;
-		//file << "수정된 목표 경험치 : " << (int)m_GoalExp << endl;
-		//file << endl;
+		//file << "수정된 누적 경험치 : " << (int)m_Exp << eos;
+		//file << "수정된 목표 경험치 : " << (int)m_GoalExp << eos;
+		//file << eos;
 		//file.close();
 
 		char pField[80];
@@ -1481,7 +1481,7 @@ void Vampire::wearItem(WearPart Part, Item* pItem)
 				// 검은 마우스 포인터에 달아줄 수 있지만, 방패는 어떻게 할 수가 없다.
 				// 인벤토리에 넣어줘야 할 텐데, 지금 당장은 어떻게 할 지를 모르겠네...
 				// 걍 입을 수 없다는 패킷을 보내주자...
-				//cerr << "양손에 칼과 방패를 들고 있어서, 양손 무기를 장착할 수 없습니다." << endl;
+				//cerr << "양손에 칼과 방패를 들고 있어서, 양손 무기를 장착할 수 없습니다." << eos;
 				return;
 			}
 		}
@@ -2074,7 +2074,7 @@ bool Vampire::isRealWearing(Item* pItem) const
 	}
 
 	if(ReqSkillLearn && !hasSkill(ReqSkillLearn)){
-		//cout << "스킬을 배우지않음" << endl;
+		//cout << "스킬을 배우지않음" << eos;
 		return false;
 	}
 

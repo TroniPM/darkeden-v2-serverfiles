@@ -257,7 +257,7 @@ void ConnectionInfoManager::heartbeat ()
 		gmServerInfo.setWorldID( worldID );
 		gmServerInfo.setServerID( serverID );
 
-		//cout << "GroupCount: " << GroupCount << endl;
+		//cout << "GroupCount: " << GroupCount << eos;
 		uint numPC = 0;
 
 		for (int i = 1; i < GroupCount; i++) 

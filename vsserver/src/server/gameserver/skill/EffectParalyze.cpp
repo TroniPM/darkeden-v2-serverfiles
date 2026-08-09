@@ -51,7 +51,7 @@ void EffectParalyze::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectParalyze " << "unaffect BEGIN" << endl;
+	//cout << "EffectParalyze " << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	pCreature->removeFlag(Effect::EFFECT_CLASS_PARALYZE);
@@ -110,7 +110,7 @@ void EffectParalyze::unaffect(Creature* pCreature)
 	}
 	*/
 
-	//cout << "EffectParalyze " << "unaffect END" << endl;
+	//cout << "EffectParalyze " << "unaffect END" << eos;
 
 	__END_CATCH
 }
@@ -120,12 +120,12 @@ void EffectParalyze::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectParalyze " << "unaffect BEGIN" << endl;
+	//cout << "EffectParalyze " << "unaffect BEGIN" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature*>(m_pTarget);
 	unaffect(pCreature);
 
-	//cout << "EffectParalyze " << "unaffect END" << endl;
+	//cout << "EffectParalyze " << "unaffect END" << eos;
 
 	__END_CATCH
 }

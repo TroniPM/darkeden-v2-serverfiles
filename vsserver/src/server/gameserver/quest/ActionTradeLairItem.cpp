@@ -366,7 +366,7 @@ void ActionTradeLairItem::execute(Creature * pCreature1 , Creature * pCreature2)
 			it.NextOptionRatio += pMonsterItemDrop->getItemRareOptionBounsRatio();
 			it.NextOptionRatio = pItemInfo->getBonusRatio();
 
-			//cout << "TradeLairItem: BonusRatio = " << it.NextOptionRatio << endl;
+			//cout << "TradeLairItem: BonusRatio = " << it.NextOptionRatio << eos;
 
 			pTreasure->setRndItemOptionMax(g_pMonsterItemDropManager->getMonsterItemDrop(pMonsterItemDrop->getSlayerRandomDrop1())->getOptionCount());
 

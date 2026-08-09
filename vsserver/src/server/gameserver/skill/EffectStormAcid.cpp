@@ -37,12 +37,12 @@ void EffectStormAcid::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectStormAcid " << "begin begin" << endl;
+	//cout << "EffectStormAcid " << "begin begin" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 	affect(pCreature);
 
-	//cout << "EffectStormAcid " << "begin end" << endl;
+	//cout << "EffectStormAcid " << "begin end" << eos;
 
 	__END_CATCH 
 
@@ -55,7 +55,7 @@ void EffectStormAcid::affect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectStormAcid " << "begin" << endl;
+	//cout << "EffectStormAcid " << "begin" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -141,7 +141,7 @@ void EffectStormAcid::affect(Creature* pCreature)
 	
 	setNextTime(m_Tick);
 
-	//cout << "EffectStormAcid " << "end" << endl;
+	//cout << "EffectStormAcid " << "end" << eos;
 
 	__END_CATCH
 }

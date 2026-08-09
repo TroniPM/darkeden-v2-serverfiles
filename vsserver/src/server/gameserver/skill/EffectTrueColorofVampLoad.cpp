@@ -33,7 +33,7 @@ void EffectTrueColorofVampLoad::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectTrueColorofVampLoad" << "unaffect BEGIN" << endl;
+	//cout << "EffectTrueColorofVampLoad" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isVampire());
@@ -60,7 +60,7 @@ void EffectTrueColorofVampLoad::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_TRUE_COLOR_OF_VAMP_LOAD);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectTrueColorofVampLoad" << "unaffect END" << endl;
+	//cout << "EffectTrueColorofVampLoad" << "unaffect END" << eos;
 
 	__END_CATCH
 }

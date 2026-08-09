@@ -31,7 +31,7 @@ void EffectJabbingVein::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectJabbingVein" << "unaffect BEGIN" << endl;
+	//cout << "EffectJabbingVein" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 //	Assert(pCreature->isOusters());
@@ -51,7 +51,7 @@ void EffectJabbingVein::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_JABBING_VEIN);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectJabbingVein" << "unaffect END" << endl;
+	//cout << "EffectJabbingVein" << "unaffect END" << eos;
 
 	__END_CATCH
 }

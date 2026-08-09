@@ -75,7 +75,7 @@ void EffectRelicTable::unaffect(Item* pItem)
 	__BEGIN_DEBUG
 
 	/*
-	//cout << "EffectRelicTable" << "unaffect BEGIN" << endl;
+	//cout << "EffectRelicTable" << "unaffect BEGIN" << eos;
 
 	Assert(pItem != NULL);
 
@@ -91,7 +91,7 @@ void EffectRelicTable::unaffect(Item* pItem)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_HAS_SLAYER_RELIC);
 	pZone->broadcastPacket(pItem->getX(), pItem->getY(), &gcRemoveEffect);
 
-	//cout << "EffectRelicTable" << "unaffect END" << endl;
+	//cout << "EffectRelicTable" << "unaffect END" << eos;
 	*/
 	pItem->removeFlag( getEffectClass() );
 

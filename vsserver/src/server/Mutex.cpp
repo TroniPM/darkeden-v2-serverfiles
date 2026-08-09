@@ -46,7 +46,7 @@ Mutex::~Mutex ()
 	} 
 	catch ( MutexException & me ) 
 	{
-		cerr << me.toString() << endl;
+		cerr << me.toString() << eos;
 		throw Error(me.toString());
 	}
 	
@@ -77,14 +77,14 @@ void Mutex::lock ()
 		}
 		else
 		{
-			cerr << "Mutex::lock() : SELF DEAD LOCK [" << m_Name << "]" << endl;
+			cerr << "Mutex::lock() : SELF DEAD LOCK [" << m_Name << "]" << eos;
 			filelog("MutexError.log", "Mutex::lock() : SELF DEAD LOCK [%s]", m_Name.c_str());
 			throw Error("Mutex::lock() : SELF DEAD LOCK");
 		}
 	} 
 	catch ( MutexException & me ) 
 	{
-		cerr << me.toString() << endl;
+		cerr << me.toString() << eos;
 		throw Error(me.toString());
 	}
 
@@ -117,14 +117,14 @@ void Mutex::trylock ()
 		}
 		else
 		{
-			cerr << "Mutex::trylock() : SELF DEAD LOCK [" << m_Name << "]" << endl;
+			cerr << "Mutex::trylock() : SELF DEAD LOCK [" << m_Name << "]" << eos;
 			filelog("MutexError.log", "Mutex::trylock() : SELF DEAD LOCK [%s]", m_Name.c_str());
 			throw Error("Mutex::trylock() : SELF DEAD LOCK");
 		}
 	} 
 	catch ( MutexException & me ) 
 	{
-		cerr << me.toString() << endl;
+		cerr << me.toString() << eos;
 		throw Error(me.toString());
 	}
 
@@ -151,7 +151,7 @@ void Mutex::unlock ()
 	}
 	catch ( MutexException & me ) 
 	{
-		cerr << me.toString() << endl;
+		cerr << me.toString() << eos;
 		throw Error(me.toString());
 	}
 

@@ -35,7 +35,7 @@ void CLRegisterPlayerHandler::execute (CLRegisterPlayer* pPacket , Player* pPlay
 
 	LoginPlayer* pLoginPlayer = dynamic_cast<LoginPlayer*>(pPlayer);
 
-	//cout << "Registering Player... " << endl;
+	//cout << "Registering Player... " << eos;
 
 	//----------------------------------------------------------------------
 	// 로그인 플레이어의 아이디가 guest 인지 체크한다.
@@ -51,7 +51,7 @@ void CLRegisterPlayerHandler::execute (CLRegisterPlayer* pPacket , Player* pPlay
 
 	try {
 
-		//cout << "플레이어 정보 검증 : " << pPacket->toString() << endl;
+		//cout << "플레이어 정보 검증 : " << pPacket->toString() << eos;
 
 		if (pPacket->getID() == "") {
 			lcRegisterPlayerError.setErrorID(EMPTY_ID);	
@@ -97,7 +97,7 @@ void CLRegisterPlayerHandler::execute (CLRegisterPlayer* pPacket , Player* pPlay
 
 		pLoginPlayer->sendPacket(&lcRegisterPlayerError);
 
-		//cout << lcRegisterPlayerError.toString() << endl;
+		//cout << lcRegisterPlayerError.toString() << eos;
 
 		// 일단 버퍼를 플러시하고, 연결을 차단한다.
 		//
@@ -260,7 +260,7 @@ void CLRegisterPlayerHandler::execute (CLRegisterPlayer* pPacket , Player* pPlay
 	{
 		SAFE_DELETE(pStmt);
 
-		//cout << de.toString() << endl;
+		//cout << de.toString() << eos;
 
 		//--------------------------------------------------------------------------------
 		// 등록 실패 패킷을 전송한다.
@@ -272,7 +272,7 @@ void CLRegisterPlayerHandler::execute (CLRegisterPlayer* pPacket , Player* pPlay
 		//--------------------------------------------------------------------------------
 		uint nFailed = pLoginPlayer->getFailureCount();
 
-		//cout << pLoginPlayer->getID() << "'s Failure Count = " << ++nFailed << endl;
+		//cout << pLoginPlayer->getID() << "'s Failure Count = " << ++nFailed << eos;
 
 		if (nFailed > 3) 
 			throw DisconnectException("too many failure");
@@ -288,7 +288,7 @@ void CLRegisterPlayerHandler::execute (CLRegisterPlayer* pPacket , Player* pPlay
 		SAFE_DELETE(pStmt);
 
 		// 흠. SQL 에러이든지 등록이 잘 안되었다는 소리다.
-		//cout << sqe.toString() << endl;
+		//cout << sqe.toString() << eos;
 
 		//--------------------------------------------------------------------------------
 		// 등록 실패 패킷을 전송한다.
@@ -302,7 +302,7 @@ void CLRegisterPlayerHandler::execute (CLRegisterPlayer* pPacket , Player* pPlay
 		//--------------------------------------------------------------------------------
 		uint nFailed = pLoginPlayer->getFailureCount();
 
-		//cout << pLoginPlayer->getID() << "'s Failure Count = " << ++nFailed << endl;
+		//cout << pLoginPlayer->getID() << "'s Failure Count = " << ++nFailed << eos;
 
 		if (nFailed > 3) 
 			throw DisconnectException("too many failure");

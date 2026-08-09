@@ -389,10 +389,10 @@ void SlayerTuningItemLoader::load(Creature* pCreature)
 									pBeltInventory = ((SubInventory*)pBelts)->getInventory();
 										if (pBeltInventory->canAddingEx(x, y, pSlayerTuningItem))
 										{
-											cout << " 추가완료"<< endl;
+											cout << " 추가완료"<< eos;
 											pBeltInventory->addItemEx(x, y, pSlayerTuningItem);
 										}else{
-											cout << " 버그"<< endl;
+											cout << " 버그"<< eos;
 											processItemBugEx(pCreature, pSlayerTuningItem);
 										}
 								}else{

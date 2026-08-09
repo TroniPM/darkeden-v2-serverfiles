@@ -206,7 +206,7 @@ void GameServerManager::processInputs ()
 						} 
 						catch (Throwable & t) 
 						{
-							cerr << t.toString() << endl;
+							cerr << t.toString() << eos;
 						}
 
 						deleteGameServerPlayer(i);
@@ -230,7 +230,7 @@ void GameServerManager::processInputs ()
 							} 
 							catch (Throwable & t) 
 							{
-								cerr << t.toString() << endl;
+								cerr << t.toString() << eos;
 							}
 
 							deleteGameServerPlayer(i);
@@ -286,7 +286,7 @@ void GameServerManager::processCommands()
 				} 
 				catch (Throwable & t) 
 				{
-					cerr << t.toString() << endl;
+					cerr << t.toString() << eos;
 				}
 
 				deleteGameServerPlayer(i);
@@ -304,11 +304,11 @@ void GameServerManager::processCommands()
 					try 
 					{
 						pGameServerPlayer->disconnect();
-						cout << pe.toString().c_str() << endl;
+						cout << pe.toString().c_str() << eos;
 					} 
 					catch (Throwable & t) 
 					{
-						cerr << t.toString() << endl;
+						cerr << t.toString() << eos;
 					}
 
 					deleteGameServerPlayer(i);
@@ -367,7 +367,7 @@ void GameServerManager::processOutputs ()
 					} 
 					catch (Throwable & t) 
 					{
-						cerr << t.toString() << endl;
+						cerr << t.toString() << eos;
 					}
 
 					GameServerPlayer* pGameServerPlayer = pGameServerPlayer;
@@ -396,7 +396,7 @@ void GameServerManager::processOutputs ()
 						} 
 						catch (Throwable & t) 
 						{
-							cerr << t.toString() << endl;
+							cerr << t.toString() << eos;
 						}
 
 						deleteGameServerPlayer(i);
@@ -418,7 +418,7 @@ void GameServerManager::processOutputs ()
 						} 
 						catch (Throwable & t) 
 						{
-							cerr << t.toString() << endl;
+							cerr << t.toString() << eos;
 						}
 
 						deleteGameServerPlayer(i);
@@ -478,7 +478,7 @@ void GameServerManager::processExceptions ()
 					} 
 					catch (Throwable & t) 
 					{
-						//cerr << t.toString() << endl;
+						//cerr << t.toString() << eos;
 					} 
 
 					deleteGameServerPlayer(i);
@@ -488,7 +488,7 @@ void GameServerManager::processExceptions ()
 			} 
 			else 
 			{
-				//cerr << "Exception in Loginserver to Gameserver" << endl;
+				//cerr << "Exception in Loginserver to Gameserver" << eos;
 			}
 		}
 	}
@@ -512,7 +512,7 @@ void GameServerManager::acceptNewConnection ()
 	// 또한 NonBlockingIOException도 발생할 수 없다.
 	Socket* client = NULL;
 
-	cout << "accepted" << endl;
+	cout << "accepted" << eos;
 
 	try {
 		client = m_pServerSocket->accept();

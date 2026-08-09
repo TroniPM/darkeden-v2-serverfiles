@@ -48,7 +48,7 @@ EffectHarpoonBomb::EffectHarpoonBomb(Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y)
 
 void EffectHarpoonBomb::crash(Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y)
 {
-	cout << "crashing " << X << ", " << Y << endl;
+	cout << "crashing " << X << ", " << Y << eos;
 	Assert(pZone != NULL);
 	Creature* pCastCreature = pZone->getCreature( m_UserObjectID );
 
@@ -163,7 +163,7 @@ void EffectHarpoonBomb::crash(Zone* pZone, ZoneCoord_t X, ZoneCoord_t Y)
 		}
 	}
 
-	cout << "crashed" << endl;
+	cout << "crashed" << eos;
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -181,14 +181,14 @@ void EffectHarpoonBomb::affect()
 
 	if ( pCreature == NULL )
 	{
-		cout << "to zone" << endl;
+		cout << "to zone" << eos;
 		pZone = m_pZone;
 		cX = m_X;
 		cY = m_Y;
 	}
 	else
 	{
-		cout << "to creature" << endl;
+		cout << "to creature" << eos;
 		pZone = pCreature->getZone();
 		cX = pCreature->getX();
 		cY = pCreature->getY();
@@ -204,7 +204,7 @@ void EffectHarpoonBomb::affect()
 		{
 			int X = cX + x;
 			int Y = cY + y;
-			cout << "check " << X << ", " << Y << endl;
+			cout << "check " << X << ", " << Y << eos;
 
 			if(!rect.ptInRect(X, Y)) continue;
 			Tile& tile = pZone->getTile(X, Y);
@@ -223,7 +223,7 @@ void EffectHarpoonBomb::affect()
 
 					if ( pTargetCreature->isFlag( Effect::EFFECT_CLASS_COMA ) )
 					{
-						//cout << "Test1 " << endl;
+						//cout << "Test1 " << eos;
 						crash( pZone, X, Y );
 						Effect* pComa = pTargetCreature->findEffect( Effect::EFFECT_CLASS_COMA );
 						if ( pComa != NULL )
@@ -241,7 +241,7 @@ void EffectHarpoonBomb::affect()
 						// add by coffee 2006-12.29 修正枪手炸圣诞树和重生塔
 								//if( pMonster->getMonsterType() 	== 482 || pMonster->getMonsterType() 	== 673 ) continue;
 						/*
-						//cout << "Test2 " << endl;
+						//cout << "Test2 " << eos;
 						crash( pZone, X, Y );
 						pZone->deleteItemDelayed(pTargetItem, X, Y);
 						*/

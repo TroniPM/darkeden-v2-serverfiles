@@ -44,12 +44,12 @@ void EffectGhostBlade::unaffect()
 {
     __BEGIN_TRY
 
-	//cout << "EffectGhostBlade " << "unaffect BEGIN" << endl;
+	//cout << "EffectGhostBlade " << "unaffect BEGIN" << eos;
 
     Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
     unaffect(pCreature);
 
-	//cout << "EffectGhostBlade " << "unaffect END" << endl;
+	//cout << "EffectGhostBlade " << "unaffect END" << eos;
 
     __END_CATCH
 }
@@ -62,7 +62,7 @@ void EffectGhostBlade::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectGhostBlade " << "unaffect BEGIN" << endl;
+	//cout << "EffectGhostBlade " << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isSlayer() == true);
@@ -86,7 +86,7 @@ void EffectGhostBlade::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_GHOST_BLADE);
 	pZone->broadcastPacket(pSlayer->getX(), pSlayer->getY(), &gcRemoveEffect);
 
-	//cout << "EffectGhostBlade " << "unaffect END" << endl;
+	//cout << "EffectGhostBlade " << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

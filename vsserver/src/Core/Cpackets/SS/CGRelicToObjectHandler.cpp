@@ -59,9 +59,9 @@ void CGRelicToObjectHandler::execute (CGRelicToObject* pPacket , Player* pPlayer
 		
 #ifdef __GAME_SERVER__
 
-//	cout << "CGRelicToObject start" << endl;
+//	cout << "CGRelicToObject start" << eos;
 //	cout << "¹ÞÀº ÆÐÅ¶(¾ÆÀÌÅÛ ¿ÀºêÁ§Æ®)" << pPacket->getItemObjectID()
-//		 << "¹ÞÀº ÆÐÅ¶(¼º¹° º¸°üÇÔ)"  << pPacket->getObjectID() << endl;
+//		 << "¹ÞÀº ÆÐÅ¶(¼º¹° º¸°üÇÔ)"  << pPacket->getObjectID() << eos;
 
 	Assert(pPacket != NULL);
 	Assert(pPlayer != NULL);
@@ -88,7 +88,7 @@ void CGRelicToObjectHandler::execute (CGRelicToObject* pPacket , Player* pPlayer
 		static hash_map<string, string> scripts;
 		if ( scripts.empty() )
 		{
-			cout << "½ºÅ©¸³Æ® ÃÊ±âÈ­" << endl;
+			cout << "½ºÅ©¸³Æ® ÃÊ±âÈ­" << eos;
 			scripts["Ô¼º²Ñ·"] = "Ð»Ð»Äã,ÎÒÓÀÔ¶¶¼²»»áÍü¼ÇÄã¶ÔÎÒµÄ¶÷»Ý.";
 			scripts["±ÈÁ¦"] = "¸Ï½ôÈ¥¾È¾ÈÆäËûÈË°É,°ÝÍÐÄãÁË.";
 			scripts["Àí²éµÂ"] = "ÎØÎØ...ÖÕÓÚµÃ¾ÈÁË.";
@@ -113,7 +113,7 @@ void CGRelicToObjectHandler::execute (CGRelicToObject* pPacket , Player* pPlayer
 			GCCannotAdd _GCCannotAdd;
 			_GCCannotAdd.setObjectID(pPacket->getObjectID());
 			pPlayer->sendPacket(&_GCCannotAdd);
-			cout << "¸ó½ºÅÍ°¡ ¾ø½À´Ï´Ù." << endl;
+			cout << "¸ó½ºÅÍ°¡ ¾ø½À´Ï´Ù." << eos;
 
 			return;
 		}
@@ -129,7 +129,7 @@ void CGRelicToObjectHandler::execute (CGRelicToObject* pPacket , Player* pPlayer
 			_GCCannotAdd.setObjectID(pPacket->getObjectID());
 			pPlayer->sendPacket(&_GCCannotAdd);
 
-			cout << "ÀÌ»óÇÑ ¸ó½ºÅÍÀÌ°Å³ª ¸ó½ºÅÍ ÀÌ¸§ÀÌ Æ²¸³´Ï´Ù. : " << (int)pMonster->getMonsterType() << "," << pMonster->getName() << endl;
+			cout << "ÀÌ»óÇÑ ¸ó½ºÅÍÀÌ°Å³ª ¸ó½ºÅÍ ÀÌ¸§ÀÌ Æ²¸³´Ï´Ù. : " << (int)pMonster->getMonsterType() << "," << pMonster->getName() << eos;
 
 			return;
 		}
@@ -181,7 +181,7 @@ void CGRelicToObjectHandler::execute (CGRelicToObject* pPacket , Player* pPlayer
 	}
 	else if ( pItem->isFlagItem() )
 	{
-		//cout << "±ê¹ß ²Å±â!" << endl;
+		//cout << "±ê¹ß ²Å±â!" << eos;
 		executeFlag( pPacket, pPlayer );
 	}
 	else if (pItem->getItemClass()==Item::ITEM_CLASS_SWEEPER)
@@ -237,7 +237,7 @@ void CGRelicToObjectHandler::executeRelic(CGRelicToObject* pPacket , Player* pPl
 		_GCCannotAdd.setObjectID(pPacket->getObjectID());
 		pPlayer->sendPacket(&_GCCannotAdd);
 
-		//cout << "return: not RelicTable" << endl;
+		//cout << "return: not RelicTable" << eos;
 		return;
 	}
 
@@ -252,7 +252,7 @@ void CGRelicToObjectHandler::executeRelic(CGRelicToObject* pPacket , Player* pPl
 		_GCCannotAdd.setObjectID(pPacket->getObjectID());
 		pPlayer->sendPacket(&_GCCannotAdd);
 
-		//cout << "return: not in 2 tile" << endl;
+		//cout << "return: not in 2 tile" << eos;
 		return;
 	}
 
@@ -277,7 +277,7 @@ void CGRelicToObjectHandler::executeRelic(CGRelicToObject* pPacket , Player* pPl
 		_GCCannotAdd.setObjectID(pPacket->getObjectID());
 		pPlayer->sendPacket(&_GCCannotAdd);
 
-		//cout << "return: Cannot add" << endl;
+		//cout << "return: Cannot add" << eos;
 		return;
 	}
 
@@ -314,7 +314,7 @@ void CGRelicToObjectHandler::executeRelic(CGRelicToObject* pPacket , Player* pPl
 		_GCCannotAdd.setObjectID(pPacket->getObjectID());
 		pPlayer->sendPacket(&_GCCannotAdd);
 
-		//cout << "return: Cannot Add2" << endl;
+		//cout << "return: Cannot Add2" << eos;
 		return;
 	}
 
@@ -538,7 +538,7 @@ void CGRelicToObjectHandler::executeBloodBible(CGRelicToObject* pPacket , Player
 		_GCCannotAdd.setObjectID(pPacket->getObjectID());
 		pPlayer->sendPacket(&_GCCannotAdd);
 
-		//cout << "return: not Shrine" << endl;
+		//cout << "return: not Shrine" << eos;
 		return;
 	}
 
@@ -555,7 +555,7 @@ void CGRelicToObjectHandler::executeBloodBible(CGRelicToObject* pPacket , Player
 		_GCCannotAdd.setObjectID(pPacket->getObjectID());
 		pPlayer->sendPacket(&_GCCannotAdd);
 
-		//cout << "return: not in 2 tile or not shrine" << endl;
+		//cout << "return: not in 2 tile or not shrine" << eos;
 		return;
 	}
 
@@ -592,7 +592,7 @@ void CGRelicToObjectHandler::executeCastleSymbol(CGRelicToObject* pPacket , Play
 
 	Item* pTableItem = pZone->getItem( pPacket->getObjectID() );
 
-//	cout << "executeCastleSymbol" << endl;
+//	cout << "executeCastleSymbol" << eos;
 
 	// ±×·± itemÀÌ ¾ø°Å³ª
 	// ½ÃÃ¼°¡ ¾Æ´Ï°Å³ª
@@ -608,7 +608,7 @@ void CGRelicToObjectHandler::executeCastleSymbol(CGRelicToObject* pPacket , Play
 		_GCCannotAdd.setObjectID(pPacket->getObjectID());
 		pPlayer->sendPacket(&_GCCannotAdd);
 
-		//cout << "return: not Shrine" << endl;
+		//cout << "return: not Shrine" << eos;
 		return;
 	}
 
@@ -625,14 +625,14 @@ void CGRelicToObjectHandler::executeCastleSymbol(CGRelicToObject* pPacket , Play
 		_GCCannotAdd.setObjectID(pPacket->getObjectID());
 		pPlayer->sendPacket(&_GCCannotAdd);
 
-		//cout << "return: not in 2 tile or not shrine" << endl;
+		//cout << "return: not in 2 tile or not shrine" << eos;
 		return;
 	}
 
 #ifndef __OLD_GUILD_WAR__
 //	if ( pZone->getZoneID() == 1500 )
 //	{
-		cout << "siegeManager Call" << endl;
+		cout << "siegeManager Call" << eos;
 		SiegeManager::Instance().putItem( pPlayerCreature, pCorpse, pItem );
 		return;
 //	}
@@ -685,7 +685,7 @@ void CGRelicToObjectHandler::executeFlag(CGRelicToObject* pPacket , Player* pPla
 		_GCCannotAdd.setObjectID(pPacket->getObjectID());
 		pPlayer->sendPacket(&_GCCannotAdd);
 
-		//cout << "return: not Shrine" << endl;
+		//cout << "return: not Shrine" << eos;
 		return;
 	}
 
@@ -702,14 +702,14 @@ void CGRelicToObjectHandler::executeFlag(CGRelicToObject* pPacket , Player* pPla
 		_GCCannotAdd.setObjectID(pPacket->getObjectID());
 		pPlayer->sendPacket(&_GCCannotAdd);
 
-		//cout << "return: not in 2 tile or not shrine" << endl;
+		//cout << "return: not in 2 tile or not shrine" << eos;
 		return;
 	}
 
 	if (g_pFlagManager->putFlag( pPlayerCreature, pItem, pCorpse ))
 	{
 		// putCastleSymbol ¾È¿¡¼­ Ã³¸®ÇÑ´Ù.
-		//cout << "±ê¹ß ²È¾ÒÁö·Õ~" << endl;
+		//cout << "±ê¹ß ²È¾ÒÁö·Õ~" << eos;
 	}	
 	else
 	{
@@ -717,7 +717,7 @@ void CGRelicToObjectHandler::executeFlag(CGRelicToObject* pPacket , Player* pPla
 		_GCCannotAdd.setObjectID(pPacket->getObjectID());
 		pPlayer->sendPacket(&_GCCannotAdd);
 
-		//cout << "return: not in 2 tile or not shrine" << endl;
+		//cout << "return: not in 2 tile or not shrine" << eos;
 		return;
 	}
 
@@ -765,7 +765,7 @@ void CGRelicToObjectHandler::executeSweeper(CGRelicToObject* pPacket , Player* p
 		_GCCannotAdd.setObjectID(pPacket->getObjectID());
 		pPlayer->sendPacket(&_GCCannotAdd);
 
-		//cout << "return: not Shrine" << endl;
+		//cout << "return: not Shrine" << eos;
 		return;
 	}
 
@@ -781,7 +781,7 @@ void CGRelicToObjectHandler::executeSweeper(CGRelicToObject* pPacket , Player* p
 		_GCCannotAdd.setObjectID(pPacket->getObjectID());
 		pPlayer->sendPacket(&_GCCannotAdd);
 
-		//cout << "return: not in 2 tile or not shrine" << endl;
+		//cout << "return: not in 2 tile or not shrine" << eos;
 		return;
 	}
 
@@ -835,7 +835,7 @@ void CGRelicToObjectHandler::executeSweeper(CGRelicToObject* pPacket , Player* p
 		_GCCannotAdd.setObjectID(pPacket->getObjectID());
 		pPlayer->sendPacket(&_GCCannotAdd);
 
-		//cout << "return: not in 2 tile or not shrine" << endl;
+		//cout << "return: not in 2 tile or not shrine" << eos;
 		return;
 	}
 

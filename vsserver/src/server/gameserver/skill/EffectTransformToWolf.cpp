@@ -55,20 +55,20 @@ void EffectTransformToWolf::unaffect()
 {
 	__BEGIN_TRY	
 
-	//cout << "EffectTransfromToWolf " << "unaffect BEGIN" << endl;
+	//cout << "EffectTransfromToWolf " << "unaffect BEGIN" << eos;
 
     Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 	Assert(pCreature != NULL);
 
 	if (pCreature->isSlayer())
 	{
-		//cout << "EffectTransfromToWolf::unaffect() : Slayer cannot transfrom to wolf!" << endl;
+		//cout << "EffectTransfromToWolf::unaffect() : Slayer cannot transfrom to wolf!" << eos;
 		throw Error("EffectTransfromToWolf::unaffect() : Slayer cannot transfrom to wolf!");
 	}
 
 	unaffect(pCreature);
 
-	//cout << "EffectTransfromToWolf " << "unaffect END" << endl;
+	//cout << "EffectTransfromToWolf " << "unaffect END" << eos;
 
 	__END_CATCH
 }
@@ -80,7 +80,7 @@ void EffectTransformToWolf::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectTransfromToWolf " << "unaffect BEGIN" << endl;
+	//cout << "EffectTransfromToWolf " << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -112,7 +112,7 @@ void EffectTransformToWolf::unaffect(Creature* pCreature)
 		Assert(false);
 	}
 
-	//cout << "EffectTransfromToWolf " << "unaffect END" << endl;
+	//cout << "EffectTransfromToWolf " << "unaffect END" << eos;
 	
 	__END_CATCH
 }

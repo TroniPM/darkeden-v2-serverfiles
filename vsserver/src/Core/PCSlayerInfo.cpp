@@ -18,13 +18,13 @@ PCSlayerInfo::setShapeInfo(DWORD flag, Color_t color[SLAYER_COLOR_MAX])
 {
 	m_Outlook = bitset<SLAYER_BIT_MAX>(flag);
 
-	//cout << "-----------SET------------" << endl;
-	//cout << m_Outlook << endl;
+	//cout << "-----------SET------------" << eos;
+	//cout << m_Outlook << eos;
 
 	for ( uint i = 0 ; i < SLAYER_COLOR_MAX ; i ++ )
 	{
 		m_Colors[i] = color[i];
-		//cout << (int)color[i] << endl;
+		//cout << (int)color[i] << eos;
 	}
 }
 
@@ -130,7 +130,7 @@ void PCSlayerInfo::read ( SocketInputStream & iStream )
 
 
 	} catch( Throwable & t ) {
-		cout << t.toString() << endl;
+		cout << t.toString() << eos;
 	}
 
 	iStream.read(m_AdvancementLevel);
@@ -228,7 +228,7 @@ void PCSlayerInfo::write ( SocketOutputStream & oStream ) const
 		oStream.write( m_Colors[i] );
 
 	} catch (Throwable & t ) {
-		cout << t.toString() << endl;
+		cout << t.toString() << eos;
 	}
 
 	oStream.write( m_AdvancementLevel );

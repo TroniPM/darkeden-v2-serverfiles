@@ -278,7 +278,7 @@ void PetItem::whenPCTake( PlayerCreature* pPC )
 
 	if ( !pPC->isFlag( Effect::EFFECT_CLASS_HAS_PET ) )
 	{
-		//cout << pPC->getName() << " 에게 펫 가졌다는 이펙트 부칩니당" << endl;
+		//cout << pPC->getName() << " 에게 펫 가졌다는 이펙트 부칩니당" << eos;
 		EffectHasPet* pEffect = new EffectHasPet(pPC);
 		pEffect->setNextTime(600);
 		pPC->setFlag( Effect::EFFECT_CLASS_HAS_PET );
@@ -300,7 +300,7 @@ void PetItem::whenPCLost( PlayerCreature* pPC )
 	pPC->getPetItems().remove(this);
 	if ( pPC->getPetItems().empty() )
 	{
-		//cout << pPC->getName() << " 에게서 펫 가졌다는 이펙트 떼냄니당" << endl;
+		//cout << pPC->getName() << " 에게서 펫 가졌다는 이펙트 떼냄니당" << eos;
 		Effect* pEffect = pPC->findEffect( Effect::EFFECT_CLASS_HAS_PET );
 		if ( pEffect != NULL ) pEffect->setDeadline(0);
 	}
@@ -506,7 +506,7 @@ void PetItemLoader::load(Creature* pCreature)
 				pPetInfo->setCutHead( pResult->getInt(++i) );
 				pPetInfo->setAttack( pResult->getInt(++i) );
 				pPetInfo->setFeedTime( VSDateTime(pResult->getString(++i)) );
-				cout << " 고장 지점 1 "<< endl;
+				cout << " 고장 지점 1 "<< eos;
 				VSDateTime MagiccurrentTime = VSDateTime::currentDateTime();
 				VSDateTime ExpertcurrentTime = VSDateTime::currentDateTime();
 
@@ -528,12 +528,12 @@ void PetItemLoader::load(Creature* pCreature)
 				int diffSecs = ExpertcurrentTime.secsTo( ExpertcurrentTimeWait );
 				pPetInfo->setExpertPetChangerRemainSec( diffSecs );
 				}
-				cout << " 데이터 기록표 : " << pPetInfo->getExpertPetChangerRemainSec() << "," << pPetInfo->getMagicRemainSec() << endl;
+				cout << " 데이터 기록표 : " << pPetInfo->getExpertPetChangerRemainSec() << "," << pPetInfo->getMagicRemainSec() << eos;
 
 //				pPetInfo->setExpertPetChangerRemainSec( (ExpertDayTime) );
-			cout << " 고장 지점 2 "<< endl;
+			cout << " 고장 지점 2 "<< eos;
 				pPetInfo->setNickname( pResult->getString(++i) );
-			cout << " 고장 지점 3 "<< endl;
+			cout << " 고장 지점 3 "<< eos;
 				pPetInfo->setEnchantSkillType( pResult->getInt(++i) );
 				pPetInfo->setPetVersionOption( pResult->getInt(++i) );
 
@@ -551,7 +551,7 @@ void PetItemLoader::load(Creature* pCreature)
 				// 양방향 링크
 				pPetItem->setPetInfo( pPetInfo );
 				pPetInfo->setPetItem( pPetItem );
-			cout << " 고장 지점 4 "<< endl;
+			cout << " 고장 지점 4 "<< eos;
 				uint ratio = 100;
 
 				if ( storage == STORAGE_PET_STASH )
@@ -656,10 +656,10 @@ void PetItemLoader::load(Creature* pCreature)
 									pBeltInventory = ((SubInventory*)pBelts)->getInventory();
 										if (pBeltInventory->canAddingEx(x, y, pPetItem))
 										{
-											cout << " 추가완료"<< endl;
+											cout << " 추가완료"<< eos;
 											pBeltInventory->addItemEx(x, y, pPetItem);
 										}else{
-											cout << " 버그"<< endl;
+											cout << " 버그"<< eos;
 											processItemBugEx(pCreature, pPetItem);
 										}
 								}else{

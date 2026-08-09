@@ -128,7 +128,7 @@ void CreatureManager::deleteCreature (ObjectID_t objectID)
 	} 
 	//catch (Throwable & t) 
 	//{
-		//cerr << t.toString() << endl;
+		//cerr << t.toString() << eos;
 	//}
 
 	__LEAVE_CRITICAL_SECTION(m_Mutex)

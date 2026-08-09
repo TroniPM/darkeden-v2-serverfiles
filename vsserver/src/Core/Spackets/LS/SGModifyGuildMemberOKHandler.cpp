@@ -40,7 +40,7 @@ void SGModifyGuildMemberOKHandler::execute ( SGModifyGuildMemberOK* pPacket )
 
 #ifdef __GAME_SERVER__
 
-	//cout << "SGModifyGuildMember received" << endl;
+	//cout << "SGModifyGuildMember received" << eos;
 
 	Assert( pPacket != NULL );
 

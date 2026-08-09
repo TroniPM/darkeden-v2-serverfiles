@@ -23,7 +23,7 @@ void SubVampireSkillInfo::read ( SocketInputStream & iStream )
 	iStream.read( m_CastingTime );
 
 	} catch( Throwable & t ) {
-		cout << t.toString() << endl;
+		cout << t.toString() << eos;
 	}
 
 	__END_CATCH
@@ -44,7 +44,7 @@ void SubVampireSkillInfo::write ( SocketOutputStream & oStream ) const
 	oStream.write( m_CastingTime );
 
 	} catch (Throwable & t ) {
-		cout << t.toString() << endl;
+		cout << t.toString() << eos;
 	}
 
 	__END_CATCH

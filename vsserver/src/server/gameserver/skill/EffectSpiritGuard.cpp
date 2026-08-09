@@ -188,7 +188,7 @@ void EffectSpiritGuard::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 	
-	// cout << "EffectSpiritGuard " << "unaffect BEGIN" << endl;
+	// cout << "EffectSpiritGuard " << "unaffect BEGIN" << eos;
 	Assert(pCreature != NULL);
 
 	if ( !pCreature->isSlayer() )

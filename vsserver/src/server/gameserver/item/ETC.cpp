@@ -409,10 +409,10 @@ void ETCLoader::load(Creature* pCreature)
 									pBeltInventory = ((SubInventory*)pBelt)->getInventory();
 										if (pBeltInventory->canAddingEx(x, y, pETC))
 										{
-											cout << " 추가완료"<< endl;
+											cout << " 추가완료"<< eos;
 											pBeltInventory->addItemEx(x, y, pETC);
 										}else{
-											cout << " 버그"<< endl;
+											cout << " 버그"<< eos;
 											processItemBugEx(pCreature, pETC);
 										}
 								}else{

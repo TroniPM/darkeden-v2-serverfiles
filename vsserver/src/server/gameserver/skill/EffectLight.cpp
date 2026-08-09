@@ -45,7 +45,7 @@ void EffectLight::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectLight " << "unaffect BEGIN" << endl;
+	//cout << "EffectLight " << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isSlayer());
@@ -89,7 +89,7 @@ void EffectLight::unaffect(Creature* pCreature)
 		destroy(pSlayer->getName());
 	}
 
-	//cout << "EffectLight " << "unaffect END" << endl;
+	//cout << "EffectLight " << "unaffect END" << eos;
 	
 	__END_CATCH
 }
@@ -224,7 +224,7 @@ void EffectLightLoader::load(Creature* pCreature)
 
 	if (pCreature == NULL)
 	{
-		//cout << "EffectLightLoader : 크리쳐가 널입니다." << endl;
+		//cout << "EffectLightLoader : 크리쳐가 널입니다." << eos;
 		return;
 	}
 

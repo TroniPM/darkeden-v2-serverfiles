@@ -499,10 +499,10 @@ pVampireCoat->setHeroOptionAttr(pResult->getInt(++i));
 									pBeltInventory = ((SubInventory*)pBelts)->getInventory();
 										if (pBeltInventory->canAddingEx(x, y, pVampireCoat))
 										{
-											cout << " 추가완료"<< endl;
+											cout << " 추가완료"<< eos;
 											pBeltInventory->addItemEx(x, y, pVampireCoat);
 										}else{
-											cout << " 버그"<< endl;
+											cout << " 버그"<< eos;
 											processItemBugEx(pCreature, pVampireCoat);
 										}
 								}else{

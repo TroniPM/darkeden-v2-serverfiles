@@ -145,8 +145,8 @@ void SBillingPlayer::processCommand()
 			////////////////////////////////////////////////////////////////////////////////////
 			if ( header.Packet_Type != CBILLING_PACKET_RESPONSE )
 			{
-				cout << "error" << endl;
-				cout << header.toString().c_str() << endl;
+				cout << "error" << eos;
+				cout << header.toString().c_str() << eos;
 				return;
 				// 에러다 낭패~
 			}
@@ -300,8 +300,8 @@ void SBillingPlayer::disconnect( bool bDisconnected )
 	}
 	catch ( InvalidProtocolException& t )
 	{
-		cerr << "SBillingPlayer::disconnect Exception occur!!" << endl;
-		cerr << t.toString() << endl;
+		cerr << "SBillingPlayer::disconnect Exception occur!!" << eos;
+		cerr << t.toString() << eos;
 		m_pSocket->close();
 	}
 
@@ -343,10 +343,10 @@ void SBillingPlayer::sendIntervalValidation()
 	body.write( *m_pOutputStream );
 
 #ifdef __Cout_CBILLING_SYSTEM__
-	cout << "----------------------------------------------------------------" << endl;
-	cout << "Request Interval Validation : " << body.Parameter_Value << " min" << endl;
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << "----------------------------------------------------------------" << eos;
+	cout << "Request Interval Validation : " << body.Parameter_Value << " min" << eos;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 #endif
 
 	filelog( LOGFILE_CBILLING_PLAYER, "Request Interval Validation : %s\n%s\n%s", body.Parameter_Value, header.toString().c_str(), body.toString().c_str() );
@@ -377,10 +377,10 @@ void SBillingPlayer::sendLogin( PayUser* pPayUser )
 	pPayUser->setSendTime();
 
 #ifdef __Cout_CBILLING_SYSTEM__
-	cout << "----------------------------------------------------------------" << endl;
-	cout << "Request Login : " << body.Login_Name << endl;
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << "----------------------------------------------------------------" << eos;
+	cout << "Request Login : " << body.Login_Name << eos;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 #endif
 
 	filelog( LOGFILE_CBILLING_PLAYER, "Request Login : %s\n%s\n%s", body.Login_Name, header.toString().c_str(), body.toString().c_str() );
@@ -409,10 +409,10 @@ void SBillingPlayer::sendMinusPoint( PayUser* pPayUser )
 	pPayUser->setSendTime();
 
 #ifdef __Cout_CBILLING_SYSTEM__
-	cout << "----------------------------------------------------------------" << endl;
-	cout << "Request Minus Point : " << body.Login_Name << endl;
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << "----------------------------------------------------------------" << eos;
+	cout << "Request Minus Point : " << body.Login_Name << eos;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 #endif
 
 	filelog( LOGFILE_CBILLING_PLAYER, "Request Minus Point : %s\n%s\n%s", body.Login_Name, header.toString().c_str(), body.toString().c_str() );
@@ -441,10 +441,10 @@ void SBillingPlayer::sendMinusMinute( PayUser* pPayUser )
 	pPayUser->setSendTime();
 
 #ifdef __Cout_CBILLING_SYSTEM__
-	cout << "----------------------------------------------------------------" << endl;
-	cout << "Request Minus Minute : " << body.Login_Name << endl;
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << "----------------------------------------------------------------" << eos;
+	cout << "Request Minus Minute : " << body.Login_Name << eos;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 #endif
 
 	filelog( LOGFILE_CBILLING_PLAYER, "Request Minus Minute : %s\n%s\n%s", body.Login_Name, header.toString().c_str(), body.toString().c_str() );
@@ -473,10 +473,10 @@ void SBillingPlayer::sendLogout( PayUser* pPayUser )
 	pPayUser->setSendTime();
 
 #ifdef __Cout_CBILLING_SYSTEM__
-	cout << "----------------------------------------------------------------" << endl;
-	cout << "Request Logout : " << body.Login_Name << endl;
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << "----------------------------------------------------------------" << eos;
+	cout << "Request Logout : " << body.Login_Name << eos;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 #endif
 
 	filelog( LOGFILE_CBILLING_PLAYER, "Request Logout : %s\n%s\n%s", body.Login_Name, header.toString().c_str(), body.toString().c_str() );
@@ -495,11 +495,11 @@ void SBillingPlayer::executeError( CBillingPacketHeader& header, CBillingPacketE
 	pPayUser->setLeftTime( 0 );
 
 #ifdef __Cout_CBILLING_SYSTEM__
-	cout << "----------------------------------------------------------------" << endl;
-	cout << "Response Error : " << body.Login_Name << endl;
-	cout << body.Return_Message << endl;
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << "----------------------------------------------------------------" << eos;
+	cout << "Response Error : " << body.Login_Name << eos;
+	cout << body.Return_Message << eos;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 #endif
 	filelog( LOGFILE_CBILLING_PACKET, "Response Error : %s\n%s\n%s", body.Login_Name, header.toString().c_str(), body.toString().c_str() );
 
@@ -514,10 +514,10 @@ void SBillingPlayer::executeIntervalValidation( CBillingPacketHeader& header, CB
 	if ( atoi(body.Parameter_Value) != g_pSBillingPlayerManager->getMinusIntervalInt() )
 	{
 		// 게임서버와 중국 빌링 서버간에 minus interval 이 맞지 않다. 죽어야 한다.
-		cerr << "-------------------------------------------------------------------------------" << endl;
-		cerr << "Interval configuration is different between gameserver and china billing server" << endl;
-		cerr << "gameserver interval : " << g_pSBillingPlayerManager->getMinusIntervalInt() << ", china billing server interval : " << body.Parameter_Value << endl;
-		cerr << "-------------------------------------------------------------------------------" << endl;
+		cerr << "-------------------------------------------------------------------------------" << eos;
+		cerr << "Interval configuration is different between gameserver and china billing server" << eos;
+		cerr << "gameserver interval : " << g_pSBillingPlayerManager->getMinusIntervalInt() << ", china billing server interval : " << body.Parameter_Value << eos;
+		cerr << "-------------------------------------------------------------------------------" << eos;
 
 		filelog( LOGFILE_CBILLING_ERROR, "Different Interval between gameserver and china billing server\ngameserver interval : %d, china billing server interval : %s", g_pSBillingPlayerManager->getMinusIntervalInt(), body.Parameter_Value );
 
@@ -526,10 +526,10 @@ void SBillingPlayer::executeIntervalValidation( CBillingPacketHeader& header, CB
 	}
 
 #ifdef __Cout_CBILLING_SYSTEM__
-	cout << "----------------------------------------------------------------" << endl;
-	cout << "Response Interval Validation : " << body.Parameter_Value << endl;
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << "----------------------------------------------------------------" << eos;
+	cout << "Response Interval Validation : " << body.Parameter_Value << eos;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 #endif
 	filelog( LOGFILE_CBILLING_PACKET, "Response Interval Validation : %s\n%s\n%s", body.Parameter_Value, header.toString().c_str(), body.toString().c_str() );
 
@@ -549,18 +549,18 @@ void SBillingPlayer::executeLogin( CBillingPacketHeader& header, CBillingPacketR
 
 	// disconnect if no Left Time
 #ifdef __Cout_CBILLING_SYSTEM__
-	cout << "----------------------------------------------------------------" << endl;
-	cout << "Response Login OK : " << body.Login_Name << " has no left time. DISCONNECT" << endl;
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << "----------------------------------------------------------------" << eos;
+	cout << "Response Login OK : " << body.Login_Name << " has no left time. DISCONNECT" << eos;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 #endif
 	filelog( LOGFILE_CBILLING_PACKET, "Response Login OK : %s has no left time. DISCONNECT\n%s\n%s", body.Login_Name, header.toString().c_str(), body.toString().c_str() );
 
 #ifdef __Cout_CBILLING_SYSTEM__
-	//	cout << "----------------------------------------------------------------" << endl;
-	//	cout << "Response Login OK : " << body.Login_Name << endl;
-	//	cout << header.toString().c_str() << endl;
-	//	cout << body.toString().c_str() << endl;
+	//	cout << "----------------------------------------------------------------" << eos;
+	//	cout << "Response Login OK : " << body.Login_Name << eos;
+	//	cout << header.toString().c_str() << eos;
+	//	cout << body.toString().c_str() << eos;
 #endif
 	//	filelog( LOGFILE_CBILLING_PACKET, "Response Login OK : %s\n%s\n%s", body.Login_Name, header.toString().c_str(), body.toString().c_str() );
 
@@ -576,10 +576,10 @@ void SBillingPlayer::executeMinusPoint( CBillingPacketHeader& header, CBillingPa
 	pPayUser->setRecvTime();
 
 #ifdef __Cout_CBILLING_SYSTEM__
-	cout << "----------------------------------------------------------------" << endl;
-	cout << "Response Minus Point : " << body.Login_Name << endl;
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << "----------------------------------------------------------------" << eos;
+	cout << "Response Minus Point : " << body.Login_Name << eos;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 #endif
 	filelog( LOGFILE_CBILLING_PACKET, "Response Minus Point : %s\n%s\n%s", body.Login_Name, header.toString().c_str(), body.toString().c_str() );
 
@@ -595,10 +595,10 @@ void SBillingPlayer::executeMinusMinute( CBillingPacketHeader& header, CBillingP
 	pPayUser->setRecvTime();
 
 #ifdef __Cout_CBILLING_SYSTEM__
-	cout << "----------------------------------------------------------------" << endl;
-	cout << "Response Minus Minute : " << body.Login_Name << endl;
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << "----------------------------------------------------------------" << eos;
+	cout << "Response Minus Minute : " << body.Login_Name << eos;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 #endif
 	filelog( LOGFILE_CBILLING_PACKET, "Response Minus Minute : %s\n%s\n%s", body.Login_Name, header.toString().c_str(), body.toString().c_str() );
 
@@ -614,10 +614,10 @@ void SBillingPlayer::executeLogout( CBillingPacketHeader& header, CBillingPacket
 	pPayUser->setRecvTime();
 
 #ifdef __Cout_CBILLING_SYSTEM__
-	cout << "----------------------------------------------------------------" << endl;
-	cout << "Response Logout OK : " << body.Login_Name << endl;
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << "----------------------------------------------------------------" << eos;
+	cout << "Response Logout OK : " << body.Login_Name << eos;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 #endif
 	filelog( LOGFILE_CBILLING_PACKET, "Response Logout OK : %s\n%s\n%s", body.Login_Name, header.toString().c_str(), body.toString().c_str() );
 

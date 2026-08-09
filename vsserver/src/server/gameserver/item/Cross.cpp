@@ -541,10 +541,10 @@ pCross->setHeroOptionAttr(pResult->getInt(++i));
 									pBeltInventory = ((SubInventory*)pBelt)->getInventory();
 										if (pBeltInventory->canAddingEx(x, y, pCross))
 										{
-											cout << " 추가완료"<< endl;
+											cout << " 추가완료"<< eos;
 											pBeltInventory->addItemEx(x, y, pCross);
 										}else{
-											cout << " 버그"<< endl;
+											cout << " 버그"<< eos;
 											processItemBugEx(pCreature, pCross);
 										}
 								}else{

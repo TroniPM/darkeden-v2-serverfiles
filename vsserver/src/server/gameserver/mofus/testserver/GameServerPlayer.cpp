@@ -218,8 +218,8 @@ void GameServerPlayer::disconnect ( bool bDisconnected )
 	} 
 	catch ( InvalidProtocolException & t ) 
 	{
-		cerr << "GameServerPlayer::disconnect Exception Check!!" << endl;
-		cerr << t.toString() << endl;
+		cerr << "GameServerPlayer::disconnect Exception Check!!" << eos;
+		cerr << t.toString() << eos;
 		m_pSocket->close();
 		//throw Error("¾¾¹Ù...");
 	}

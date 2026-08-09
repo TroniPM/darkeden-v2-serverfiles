@@ -41,12 +41,12 @@ void EffectStriking2::affect(Zone* pZone , ZoneCoord_t x , ZoneCoord_t y , Objec
 void EffectStriking2::unaffect()
 	throw(Error)
 {
-	//cout << "EffectStriking2 " << "unaffect BEGIN" << endl;
+	//cout << "EffectStriking2 " << "unaffect BEGIN" << eos;
 
     Creature* pCreature = dynamic_cast<Creature*>(m_pTarget);
 	unaffect(pCreature);
 
-	//cout << "EffectStriking2 " << "unaffect END" << endl;
+	//cout << "EffectStriking2 " << "unaffect END" << eos;
 }
 
 void EffectStriking2::unaffect(Creature* pCreature)
@@ -54,7 +54,7 @@ void EffectStriking2::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectStriking2 " << "unaffect BEGIN" << endl;
+	//cout << "EffectStriking2 " << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isSlayer());
@@ -78,7 +78,7 @@ void EffectStriking2::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_STRIKING2);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectStriking2 " << "unaffect END" << endl;
+	//cout << "EffectStriking2 " << "unaffect END" << eos;
 
 	__END_CATCH
 }

@@ -513,14 +513,14 @@ Item* ItemFactoryManager::createItem (Item::ItemClass IClass, ItemType_t ItemTyp
 		{
 			StringStream msg;
 			msg << "item factory [" << (int)IClass << "] not exist.";
-			cerr << "ItemFactoryManager::createItem() : NoSuchElementException" << endl;
+			cerr << "ItemFactoryManager::createItem() : NoSuchElementException" << eos;
 			filelog("itembug.log", "ItemFactoryManager::createItem() : Invalid Item Class : %d", IClass);
 			throw NoSuchElementException(msg.toString());
 		}
 	} 
 	catch (Throwable & t) 
 	{
-		cerr << t.toString() << endl;
+		cerr << t.toString() << eos;
 	}
 
 

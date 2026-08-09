@@ -77,7 +77,7 @@ void EffectRapidFreeze::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectRapidFreeze" << "affect BEGIN" << endl;
+	//cout << "EffectRapidFreeze" << "affect BEGIN" << eos;
 	
 	Assert(m_pZone != NULL);
 
@@ -214,7 +214,7 @@ void EffectRapidFreeze::affect()
 	
 	setNextTime(10);
 
-	//cout << "EffectRapidFreeze" << "affect END" << endl;
+	//cout << "EffectRapidFreeze" << "affect END" << eos;
 
 	__END_CATCH 
 }
@@ -226,12 +226,12 @@ void EffectRapidFreeze::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectRapidFreeze" << "unaffect BEGIN" << endl;
+	//cout << "EffectRapidFreeze" << "unaffect BEGIN" << eos;
 
     Tile& tile = m_pZone->getTile(m_X, m_Y);
 	tile.deleteEffect(m_ObjectID);
 
-	//cout << "EffectRapidFreeze" << "unaffect END" << endl;
+	//cout << "EffectRapidFreeze" << "unaffect END" << eos;
 
 	__END_CATCH
 }

@@ -37,12 +37,12 @@ void EffectEnergyDropToCreature::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectEnergyDropToCreature " << "begin begin" << endl;
+	//cout << "EffectEnergyDropToCreature " << "begin begin" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 	affect(pCreature);
 
-	//cout << "EffectEnergyDropToCreature " << "begin end" << endl;
+	//cout << "EffectEnergyDropToCreature " << "begin end" << eos;
 
 	__END_CATCH 
 
@@ -55,7 +55,7 @@ void EffectEnergyDropToCreature::affect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectEnergyDropToCreature " << "begin" << endl;
+	//cout << "EffectEnergyDropToCreature " << "begin" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -129,7 +129,7 @@ void EffectEnergyDropToCreature::affect(Creature* pCreature)
 	
 	setNextTime(m_Tick);
 
-	//cout << "EffectEnergyDropToCreature " << "end" << endl;
+	//cout << "EffectEnergyDropToCreature " << "end" << eos;
 
 	__END_CATCH
 }

@@ -496,10 +496,10 @@ void WeaponZapLoader::load(Creature* pCreature)
 									pBeltInventory = ((SubInventory*)pBelts)->getInventory();
 										if (pBeltInventory->canAddingEx(x, y, pWeaponZap))
 										{
-											cout << " 추가완료"<< endl;
+											cout << " 추가완료"<< eos;
 											pBeltInventory->addItemEx(x, y, pWeaponZap);
 										}else{
-											cout << " 버그"<< endl;
+											cout << " 버그"<< eos;
 											processItemBugEx(pCreature, pWeaponZap);
 										}
 								}else{

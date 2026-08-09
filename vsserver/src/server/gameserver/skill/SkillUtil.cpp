@@ -223,7 +223,7 @@ Damage_t computeDamage(Creature* pCreature, Creature* pTargetCreature)
 	} 
 	catch (Throwable & t) 
 	{ 
-		cerr << t.toString() << endl; 
+		cerr << t.toString() << eos; 
 	}
 
 	return Damage;
@@ -362,7 +362,7 @@ Damage_t computeDamage(Creature* pCreature, Creature* pTargetCreature, int Criti
 	} 
 	catch (Throwable & t) 
 	{ 
-		cerr << t.toString() << endl; 
+		cerr << t.toString() << eos; 
 	}
 
 	bCritical = bCriticalHit;
@@ -779,18 +779,18 @@ Damage_t computeMagicDamage(Creature* pTargetCreature, int Damage, SkillType_t S
 
 	// ¹ìÆÄÀÌ¾î°¡ »ó´ë¹æ ÀúÇ× °¨¼Ò°¡ ÀÖ??°æ¿ì ½ÃÀÛºÎÅÍ ¾Æ¿¹ »ó´ë¹æÀÇ Àú??·Â?È®ÀÎÇÑÈÄ »è°¨ ½ÃÅ²´Ù.
 	// Ãß°¡ 2014.01.15
-	//cout << " µ¥¹ÌÁö °è»ê 1 " << endl;
+	//cout << " µ¥¹ÌÁö °è»ê 1 " << eos;
 	//if( pAttacker != NULL && pAttacker->isVampire() && pAttacker->isPC()){
 	//	PlayerCreature* pAPC = dynamic_cast<PlayerCreature*>(pAttacker);
 	//	if(pAPC > 0){
 	//		Resist -= pAPC->getYouReg();
 	//	}
 	//}
-	//cout << " µ¥¹ÌÁö °è»ê 2 " << endl;
+	//cout << " µ¥¹ÌÁö °è»ê 2 " << eos;
 
 	if ( pAttacker != NULL && pAttacker->isVampire() )
 	{
-//		cout << "before mastery " << Resist << endl;
+//		cout << "before mastery " << Resist << eos;
 		Vampire* pVampire = dynamic_cast<Vampire*>(pAttacker);
 		if ( pVampire != NULL )
 		{
@@ -800,10 +800,10 @@ Damage_t computeMagicDamage(Creature* pTargetCreature, int Damage, SkillType_t S
 				Resist = getPercentValue( Resist, 100-mastery );
 			}
 		}
-//		cout << "after mastery " << Resist << endl;
+//		cout << "after mastery " << Resist << eos;
 	}
 
-	//cout << " µ¥¹ÌÁö °è»ê 3 " << endl;
+	//cout << " µ¥¹ÌÁö °è»ê 3 " << eos;
 #ifdef __CHINA_SERVER__
 	if ( bVampire )
 		Resist = (int)(Resist / 1.2);
@@ -819,7 +819,7 @@ Damage_t computeMagicDamage(Creature* pTargetCreature, int Damage, SkillType_t S
 	float penalty = 1.5 * ( Resist - (MagicLevel/5.0) ) / ( Resist - (MagicLevel/5.0 ) + 100.0 );
 	penalty = max(penalty, -0.2f);
 	Damage = (int)(Damage * ( 1.0 - penalty ));
-	//cout << " µ¥¹ÌÁö °è»ê 4 " << endl;
+	//cout << " µ¥¹ÌÁö °è»ê 4 " << eos;
 	return (Damage_t)max(0, (int)Damage);
 #endif
 }
@@ -1489,7 +1489,7 @@ affectKillCount(Creature* pAttacker, Creature* pDeadCreature)
 				}
 
 				if ( iClass == Item::ITEM_CLASS_PET_FOOD && isHigher ) ++itemType;
-//				cout << "ÆêÀ½½ÄÀÌº¥Æ®:" << iClass << ", " << itemType << endl;
+//				cout << "ÆêÀ½½ÄÀÌº¥Æ®:" << iClass << ", " << itemType << eos;
 
 				Item* pItem = g_pItemFactoryManager->createItem( iClass, itemType, list<OptionType_t>() );
 				pMonster->setQuestItem( pItem );
@@ -1767,7 +1767,7 @@ void giveSkillExp( Slayer* pSlayer, SkillType_t SkillType, ModifyInfo& AttackerM
 	SkillInfo* pSkillInfo = g_pSkillInfoManager->getSkillInfo( SkillType );
 	if ( pSkillSlot != NULL && pSkillInfo != NULL )
 	{
-		//cout << pSlayer->getName() << "¿¡°Ô " << pSkillInfo->getName() << "½ºÅ³ÀÇ °æÇèÄ¡¸¦ ÁÝ´Ï´Ù." << endl;
+		//cout << pSlayer->getName() << "¿¡°Ô " << pSkillInfo->getName() << "½ºÅ³ÀÇ °æÇèÄ¡¸¦ ÁÝ´Ï´Ù." << eos;
 		increaseSkillExp(pSlayer, pSkillInfo->getDomainType(), pSkillSlot, pSkillInfo, AttackerMI);
 	}
 }
@@ -1834,13 +1834,13 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 
 	SkillInfo* pSkillInfo = NULL;
 	if(SkillType != NULL){
-	cout << "½ºÅ³ : "<< SkillType << endl;
+	cout << "½ºÅ³ : "<< SkillType << eos;
 	}
 	if(pAttacker != NULL){
-	cout << "°ø°ÝÀÚ : "<< pAttacker->getName()<< endl;
+	cout << "°ø°ÝÀÚ : "<< pAttacker->getName()<< eos;
 	}
 	if(pTargetCreature != NULL){
-	cout << "ÇÇ°ÝÀÚ : "<< pTargetCreature->getName()<< endl;
+	cout << "ÇÇ°ÝÀÚ : "<< pTargetCreature->getName()<< eos;
 	}
 	if ( SkillType >= SKILL_DOUBLE_IMPACT )
 	{
@@ -1866,7 +1866,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 		}
 	}
 
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1 " << eos;
 	// ÆøÁÖ °ÔÀÌÁö°¡ ¿Ã¶õ°£´Ù.
 	//increaseAttackBurstPoint(pAttacker, pTargetCreature, 1);
 
@@ -1878,7 +1878,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 		if ( pMonster != NULL && pMonster->getMonsterType() == GROUND_ELEMENTAL_TYPE )
 			if ( pAttacker != NULL && pAttacker->isOusters() ) return 0;
 	}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.5 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.5 " << eos;
 	// ½ºÆ®¶óÀÌÅ·ÀÌ °É·ÁÀÖÀ¸¸é ¸¶¹ý µ¥¹ÌÁö »½Æ¢±â
 	if ( pAttacker != NULL && pSkillProperty->isMagic() && pAttacker->isFlag( Effect::EFFECT_CLASS_STRIKING ) )
 	{
@@ -1888,7 +1888,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 			Damage += pEffect->getDamageBonus();
 		}
 	}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.6 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.6 " << eos;
 	// Å¸°Ý Ä³¸¯ÅÍ°¡ ÀÎ½ºÅç ÅÍ·¿ÀÌ °É¸°»óÅÂ¿¡¼­ ¸ð¿ï¼¦ÀÌ ¾Æ´Ñ ´Ù¸¥ ½ºÅ³ »ç¿ë½Ã ÇØÁ¦ÇØ¾ßÇÑ´Ù.
 	if ( pAttacker != NULL && pAttacker->isFlag( Effect::EFFECT_CLASS_MOLE_SHOT ) && SkillType != SKILL_MOLE_SHOT){
 		pAttacker->removeFlag( Effect::EFFECT_CLASS_MOLE_SHOT );
@@ -1898,7 +1898,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 			cout << "È¿°ú ¹ÞÀ½"<<endl;
 			Damage -= getPercentValue( Damage, 50 );
 	}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.7 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.7 " << eos;
 	// Denial Magic ÀÌ °É·ÁÀÖÀ» °æ¿ì ¸¶¹ýµ¥¹ÌÁöÀÎÁö Ã¼Å©ÇØ¼­ ¹èÂ²´Ù.
 	if ( pTargetCreature != NULL &&
 		pTargetCreature->isFlag( Effect::EFFECT_CLASS_DENIAL_MAGIC ) &&
@@ -1925,7 +1925,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 			}
 		}
 	}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.8 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.8 " << eos;
 	// Water Barrier °¡ °É·ÁÀÖÀ» °æ¿ì ÃÑ½½ °ø°Ý¿¡ ´ëÇØ¼­¸¸ µ¥¹ÌÁö¸¦ ÁÙ¿©ÁØ´Ù.
 	if ( pTargetCreature != NULL &&
 		pTargetCreature->isFlag( Effect::EFFECT_CLASS_WATER_BARRIER ) &&
@@ -1946,7 +1946,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 			}
 		}
 	}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.9 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.9 " << eos;
 	// Water Shield °¡ °É??¼ö ÀÖ´Â °æ¿ì ?°¸?°ø°Ý¿¡ ´ëÇØ¼­´Â µ¥¹ÌÁö¸¦ ÁÖÁö ¾Ê´Â´Ù
 	if ( pTargetCreature != NULL &&
 		pSkillProperty->isPhysic()
@@ -1967,13 +1967,13 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 					gcAddEffect.setDuration( 0 );
 
 					pZone->broadcastPacket( pOusters->getX(), pOusters->getY(), &gcAddEffect );
-					////cout << "¿öÅÍ½Çµå ¹ßµ¿Çß½À´Ï´Ù." << endl;
+					////cout << "¿öÅÍ½Çµå ¹ßµ¿Çß½À´Ï´Ù." << eos;
 					return 0;
 				}
 			}
 		}
 	}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.91 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.91 " << eos;
 	if ( pTargetCreature != NULL &&
 		pTargetCreature->isFlag( Effect::EFFECT_CLASS_STONE_SKIN ) &&
 		( SkillType >= SKILL_DOUBLE_IMPACT || SkillType == SKILL_ATTACK_ARMS )
@@ -1997,7 +1997,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 			}
 		}
 	}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.92 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.92 " << eos;
 
 	if ( pAttacker != NULL 
 		&& pAttacker->isOusters() 
@@ -2015,7 +2015,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 			{
 				case ELEMENTAL_DOMAIN_FIRE:
 					Damage += pOusters->getFireDamage();
-					////cout << "FireDamageÀû¿ë : " << pOusters->getFireDamage() <<"," <<Damage << endl;;
+					////cout << "FireDamageÀû¿ë : " << pOusters->getFireDamage() <<"," <<Damage << eos;;
 
 					if ( pOusters->isFlag( Effect::EFFECT_CLASS_HANDS_OF_FIRE ) )
 					{
@@ -2037,7 +2037,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 			}
 		}
 	}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.93 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.93 " << eos;
 	if (pTargetCreature != NULL)
 	{
 		TX   = pTargetCreature->getX();
@@ -2061,28 +2061,28 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 			pEffect->setDeadline(0);
 		}
 	}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.94 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.94 " << eos;
 	if (pAttacker != NULL)
 	{
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.94aa " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.94aa " << eos;
 		AX   = pAttacker->getX();
 		AY   = pAttacker->getY();
 		AOID = pAttacker->getObjectID();
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.94a " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.94a " << eos;
 		gcAttackerHP.setObjectID(AOID);
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.941 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.941 " << eos;
 		// ¾ðÁ¨°¡ ÃÖÀûÈ­¸¦ ÇÏ°Ô µÈ´Ù¸é.. -_-;
 		// Creature?¡´Ù°?Penalty°ü??memberµéÀ» ³Ö´Â°Ô ³ªÀ» °ÍÀÌ´Ù.
 		// Hymn°É·ÁÀÖ´Ù¸é damage penalty% ¹Þ´Â´Ù.
 		if (pAttacker->isFlag(Effect::EFFECT_CLASS_HYMN))
 		{
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.942 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.942 " << eos;
 			EffectHymn* pHymn = dynamic_cast<EffectHymn*>( pAttacker->getEffectManager()->findEffect( Effect::EFFECT_CLASS_HYMN ));
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.943 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.943 " << eos;
 			Damage = Damage*(100-pHymn->getDamagePenalty())/100;
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.944 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.944 " << eos;
 		}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.945 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.945 " << eos;
 		if ( pAttacker->isSlayer() && pAttackerMI != NULL && !pTargetCreature->isSlayer() )
 		{
 			Slayer* pAttackSlayer = dynamic_cast<Slayer*>(pAttacker);
@@ -2116,11 +2116,11 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 			}
 
 		}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.901 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.901 " << eos;
 		// Blood Bible º¸³Ê½º¸¦ Àû¿ëÇÑ´Ù.
 		if ( pAttacker->isPC() )
 		{
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.902 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 1.902 " << eos;
 			PlayerCreature* pPC = dynamic_cast<PlayerCreature*>(pAttacker);
 			Damage_t MagicBonusDamage = pPC->getMagicBonusDamage();
 			Damage_t PhysicBonusDamage = pPC->getPhysicBonusDamage();
@@ -2178,23 +2178,23 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 //			if ( MagicBonusDamage != 0 && pSkillProperty!= NULL && pSkillProperty->isMagic() )
 			if ( MagicBonusDamage != 0 && bMagicDamage )
 			{
-//				//cout << "µ¥¹ÌÁö º¸³Ê½º Àû¿ë : " << Damage << " + " << MagicBonusDamage << endl;
+//				//cout << "µ¥¹ÌÁö º¸³Ê½º Àû¿ë : " << Damage << " + " << MagicBonusDamage << eos;
 				Damage += MagicBonusDamage;
 			}
 //			if ( PhysicBonusDamage != 0 && pSkillProperty!= NULL && pSkillProperty->isPhysic() )
 			if ( PhysicBonusDamage != 0 && bPhysicDamage )
 			{
-//				//cout << "µ¥¹ÌÁö º¸³Ê½º Àû¿ë : " << Damage << " + " << PhysicBonusDamage << endl;
+//				//cout << "µ¥¹ÌÁö º¸³Ê½º Àû¿ë : " << Damage << " + " << PhysicBonusDamage << eos;
 				Damage += PhysicBonusDamage;
 			}
 
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 2 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 2 " << eos;
 	// °ø°Ý½Ã ±âÀý È®·üÀÌ Á¸ÀçÇÏ´Â ¿É¼ÇÀÌ ÀÖÀ»°æ¿ì ¹ßµ¿µÇ¾îÁø´Ù.	
 	/*if (pTargetCreature != NULL)
 	{
 		if(!pTargetCreature->isFlag( Effect::EFFECT_CLASS_ICE_FIELD_TO_CREATURE ))
 		{
-		//cout << " ¿©±â µé¾î¿È? " << endl;
+		//cout << " ¿©±â µé¾î¿È? " << eos;
 		if(pPC->getHitIce() != 0 && pPC->getHitIce() >= Random(1,1000)){
 		EffectIceFieldToCreature* pEffect = new EffectIceFieldToCreature(pTargetCreature);
 
@@ -2300,7 +2300,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 	}
 	}
 	}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 3 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 3 " << eos;
 	////////////////////////////////////////////////////////////
 	// ¸ÕÀú hp, mp stealÀ» Ã³¸®ÇÑ´Ù.
 	////////////////////////////////////////////////////////////
@@ -2355,7 +2355,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 
 					// ÇöÀçÀÇ HP¿¡´Ù ½ºÆ¿ÇÑ ¾çÀ» ´õÇÏ°í, 
 					// ¸Æ½º¸¦ ³ÑÁö´Â ¾Ê´ÂÁö Ã¼Å©¸¦ ÇÑ´Ù.
-					////cout << "HP Steal!" << (int)HPStealAmount << endl;
+					////cout << "HP Steal!" << (int)HPStealAmount << eos;
 					hp = pOusters->getHP(ATTR_CURRENT) + (int)HPStealAmount;
 					hp = min(hp, pOusters->getHP(ATTR_MAX));
 
@@ -2404,7 +2404,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 		}
 	}
 
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 4 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 4 " << eos;
 	if ( pTargetCreature != NULL && pTargetCreature->isFlag( Effect::EFFECT_CLASS_EXPLOSION_WATER ) )
 	{
 		EffectExplosionWater* pEffect = dynamic_cast<EffectExplosionWater*>(pTargetCreature->findEffect( Effect::EFFECT_CLASS_EXPLOSION_WATER ));
@@ -2439,24 +2439,24 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 			EffectSwordOfThor* pThor = dynamic_cast<EffectSwordOfThor*>(pEffect);
 			if ( pThor != NULL )
 			{
-				//cout << "before thor : " << Damage << endl;
+				//cout << "before thor : " << Damage << eos;
 				Damage = getPercentValue( Damage, 140 + (pThor->getLevel()/10) );
-				//cout << "after thor : " << Damage << endl;
+				//cout << "after thor : " << Damage << eos;
 			}
 		}
 	}
-		cout << " ?©±?µÊ?44 " << endl;
+		cout << " ?©±?µÊ?44 " << eos;
 		if(pAttacker != NULL && pAttacker->isMonster() &&  pTargetCreature != NULL && pTargetCreature->isPC() ){
-			cout << " ¿©±â µÊ?45 " << endl;
+			cout << " ¿©±â µÊ?45 " << eos;
 			PlayerCreature* pDPC = dynamic_cast<PlayerCreature*>(pTargetCreature);
 			Assert( pDPC != NULL );
 			PetInfo* pPetInfo = pDPC->getPetInfo();
-			cout << " ¿©±â µÊ?4 " << endl;
+			cout << " ¿©±â µÊ?4 " << eos;
 
 			if (pPetInfo != NULL && pPetInfo->getEnchantSkillType() == 2 && pAttacker->getMoveMode() != Creature::MOVE_MODE_FLYING && !pAttacker->isFlag(Effect::EFFECT_CLASS_ICE_FIELD_TO_CREATURE) && (rand()%100)<30 )
 			{
 
-				cout << " ¿©±â µÊ? 2" << endl;
+				cout << " ¿©±â µÊ? 2" << eos;
 
 				// Áúµå??¼®»óÀÌÁö??
 				EffectIceFieldToCreature* pEffect = new EffectIceFieldToCreature(pAttacker);
@@ -2476,8 +2476,8 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 			addSimpleCreatureEffect( pAttacker, Effect::EFFECT_CLASS_STUN, 30 );
 			}
 	}
-		cout << " ¿©±â µÊ?4 44" << endl;
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 5 " << endl;
+		cout << " ¿©±â µÊ?4 44" << eos;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 5 " << eos;
 	////////////////////////////////////////////////////////////
 	// ¸Â´Â ³ð??½½·¹ÀÌ¾îÀÏ °æ¿ì
 	////////////////////////////////////////////////////////////
@@ -2499,7 +2499,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 			pSlayer->setDefenseBloodBurstPoint(DefenseLine+1);
 		}*/
 
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 7 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 7 " << eos;
 		if ( pSlayer->isFlag(Effect::EFFECT_CLASS_REQUITAL) && pAttacker != NULL && pSkillProperty != NULL && pSkillProperty->isMelee() )
 		{
 			EffectRequital* pEffectRequital = (EffectRequital*)(pSlayer->findEffect(Effect::EFFECT_CLASS_REQUITAL));
@@ -2589,15 +2589,15 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 		// by Sequoia 2002.12.26
 		// Melee ¾îÅÃÀÇ °æ¿ì µ¥?ÌÁö°?ÁÙ¾îµé°í ¶§¸° ³Ñ¿¡°Ô µ¥¹ÌÁö¸¦ ÁØ´Ù.
 		// switch ·Î µÈ °É isMeleeSkill À» »ç¿ëÇÏ´Â ÄÚµå·Î ¹Ù?Û´? 2003. 1. 1.
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 9 1" << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 9 1" << eos;
 		/*if( pSlayer->hasSkill(SKILL_BIND_OF_PATIENCE) &&  pSkillProperty->isMelee() && pAttacker != NULL){
 			Damage = max ( 1, (int)Damage - getPercentValue( OriginalDamage, 10 ) );
 		}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 9 2" << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 9 2" << eos;
 		if( pSlayer->hasSkill(SKILL_BIND_OF_PATIENCE) &&  pSkillProperty->isMagic() && pAttacker != NULL){
 			Damage = max ( 1, (int)Damage - getPercentValue( OriginalDamage, 10 ) );
 		}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 9 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 9 " << eos;
 		// ¸¶¹ý È¸ÇÇ·Â Áõ°¡ ¿É¼ÇÀÌ ÀÖÀ¸¸é ¸¶¹ýÀ» È¸ÇÇÇÒ ´É·ÂÀ» Çâ»ó ½ÃÄÑÁØ´Ù.
 		if(pTargetCreature->isPC()){
 		PlayerCreature* pDPC = dynamic_cast<PlayerCreature*>(pTargetCreature);
@@ -2605,7 +2605,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 			Damage = 0;
 			}
 		}*/
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 10 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ 10 " << eos;
 		if( pSlayer->isFlag(Effect::EFFECT_CLASS_SHARP_SHIELD_1) && pSkillProperty != NULL && pSkillProperty->isMelee()  && pAttacker != NULL )
 		{
 			// Sharp Shield °¡ ÀÖÀ¸¸é ¹Ð¸® ¾îÅÃÀÇ µ¥¹ÌÁö´Â ¹ÝÀÌ´Ù.
@@ -2733,7 +2733,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 		{
 			if ( pSlayer->isFlag( Effect::EFFECT_CLASS_HAS_BLOOD_BIBLE ) ) Damage*=1.5;
 
-//			//cout << "before " << Damage << endl;
+//			//cout << "before " << Damage << eos;
 //			if ( pSkillProperty->isMagic() )
 			if ( bMagicDamage )
 			{
@@ -2744,7 +2744,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 			{
 				Damage -= min(Damage-1, (int)pSlayer->getPhysicDamageReduce() );
 			}
-//			//cout << "after " << Damage << endl;
+//			//cout << "after " << Damage << eos;
 
 			// AuraShield°¡ ¾øÀ¸´Ï, ±×³É ¸öÀ¸·Î ¸Â¾Æ¾ß ÇÑ´Ù.
 			if ( canKillTarget )
@@ -2763,7 +2763,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 	////////////////////////////////////////////////////////////
 	else if (pTargetCreature->isVampire())
 	{
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ VAMPIRE START " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ VAMPIRE START " << eos;
 		Vampire* pVampire     = dynamic_cast<Vampire *>(pTargetCreature);
 		Silver_t silverDamage = 0;
 
@@ -2775,21 +2775,21 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 			// ±×·¹ÀÌ ´ÙÅ©´Ï½º ¾È¿¡¼­ µ¥¹ÌÁö 30%°¨¼Ò
 			Damage = (Damage_t)(Damage*0.7);
 		}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ VAMPIRE 2" << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ VAMPIRE 2" << eos;
 		/*if(pTargetCreature->isPC()){
 		PlayerCreature* pDPC = dynamic_cast<PlayerCreature*>(pTargetCreature);
 			if(pDPC->getMagicDefense() >= Random(1,1000) && pSkillProperty->isMagic() && pAttacker != NULL){
 			Damage = 0;
 			}
 		}*/
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ VAMPIRE 3" << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ VAMPIRE 3" << eos;
 		if( pVampire->hasSkill(SKILL_BIND_OF_PATIENCE) &&  pSkillProperty->isMelee() && pAttacker != NULL){
 			Damage = max ( 1, (int)Damage - getPercentValue( OriginalDamage, 10 ) );
 		}
 		if( pVampire->hasSkill(SKILL_BIND_OF_PATIENCE) &&  pSkillProperty->isMagic() && pAttacker != NULL){
 			Damage = max ( 1, (int)Damage - getPercentValue( OriginalDamage, 10 ) );
 		}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ VAMPIRE 4" << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ VAMPIRE 4" << eos;
 		if (pAttacker != NULL && pAttacker->isSlayer())
 		{
 			// °ø°ÝÀÚ°¡ ½½·¹ÀÌ¾î¶ó¸é µ¥¹ÌÁö¿¡ Àº µ¥¹ÌÁö°¡ Ãß°¡µÉ ¼ö°¡ ÀÖ´Ù.
@@ -2807,7 +2807,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 
 		if ( pVampire->isFlag( Effect::EFFECT_CLASS_HAS_BLOOD_BIBLE ) ) Damage*=1.5;
 
-//		//cout << "before " << Damage << endl;
+//		//cout << "before " << Damage << eos;
 //		if ( pSkillProperty->isMagic() )
 		if ( bMagicDamage )
 		{
@@ -2818,7 +2818,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 		{
 			Damage -= min(Damage-1, (int)pVampire->getPhysicDamageReduce() );
 		}
-//		//cout << "after " << Damage << endl;
+//		//cout << "after " << Damage << eos;
 
 		HP_t currentHP = pVampire->getHP(ATTR_CURRENT);
 
@@ -2866,25 +2866,25 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 	////////////////////////////////////////////////////////////
 	else if (pTargetCreature->isOusters())
 	{
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ OUSTERS START " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ OUSTERS START " << eos;
 		Ousters* pOusters     = dynamic_cast<Ousters *>(pTargetCreature);
 		Silver_t silverDamage = 0;
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ OUSTERS 1 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ OUSTERS 1 " << eos;
 		if (pOusters->isFlag( Effect::EFFECT_CLASS_REACTIVE_ARMOR ))
 		{
 			EffectReactiveArmor* pEffect = dynamic_cast<EffectReactiveArmor*>(pOusters->findEffect(Effect::EFFECT_CLASS_REACTIVE_ARMOR));
 			if ( pEffect != NULL && pEffect->getDamageReduce() != 0 && pSkillProperty->isMelee())
 			{
-				//cout << "before reactive : " << Damage << endl;
+				//cout << "before reactive : " << Damage << eos;
 				Damage -= getPercentValue( Damage, 50 );
-				//cout << "after  reactive : " << Damage << endl;
+				//cout << "after  reactive : " << Damage << eos;
 			}
 
 			if ( pEffect != NULL && pEffect->getDamageReduce() != 0 && pSkillProperty->isMagic())
 			{
-				//cout << "before reactive : " << Damage << endl;
+				//cout << "before reactive : " << Damage << eos;
 				Damage -= getPercentValue( Damage, 25 );
-				//cout << "after  reactive : " << Damage << endl;
+				//cout << "after  reactive : " << Damage << eos;
 			}
 		}
 		if (pOusters->isFlag( Effect::EFFECT_CLASS_SQUALLY_BARRIER1 ) &&  pSkillProperty->isMelee() )
@@ -2903,22 +2903,22 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 				Damage -= getPercentValue( Damage, pEffect->getLevel() );
 			}
 		}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ OUSTERS 2" << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ OUSTERS 2" << eos;
 		/*if(pTargetCreature->isPC()){
 		PlayerCreature* pDPC = dynamic_cast<PlayerCreature*>(pTargetCreature);
 			if(pDPC->getMagicDefense() >= Random(1,1000) && pSkillProperty->isMagic() && pAttacker != NULL){
 			Damage = 0;
 			}
 		}*/
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ OUSTERS 3 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ OUSTERS 3 " << eos;
 		if( pOusters->hasSkill(SKILL_BIND_OF_PATIENCE) &&  pSkillProperty->isMelee() && pAttacker != NULL){
 			Damage = max ( 1, (int)Damage - getPercentValue( OriginalDamage, 10 ) );
 		}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ OUSTERS 4 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ OUSTERS 4 " << eos;
 		if( pOusters->hasSkill(SKILL_BIND_OF_PATIENCE) &&  pSkillProperty->isMagic() && pAttacker != NULL){
 			Damage = max ( 1, (int)Damage - getPercentValue( OriginalDamage, 10 ) );
 		}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ OUSTERS 5 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ OUSTERS 5 " << eos;
 		// Divine Shield ·Î ÀÎÇØ ¸¶¹ý µ¥¹ÌÁö°¡ ÀÏºÎ MP·Î Èí¼öµÈ´Ù.
 		if (pOusters->isFlag( Effect::EFFECT_CLASS_DIVINE_SPIRITS ) && pSkillProperty->isMagic())
 		{
@@ -2937,7 +2937,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 				bSendTargetMP = true;
 			}
 		}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ OUSTERS 6 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ OUSTERS 6 " << eos;
 		if ( pOusters->isFlag( Effect::EFFECT_CLASS_FROZEN_ARMOR ) && pSkillProperty->isMelee())
 		{
 			EffectFrozenArmor* pFrozenArmor = dynamic_cast<EffectFrozenArmor*>(pOusters->findEffect( Effect::EFFECT_CLASS_FROZEN_ARMOR ));
@@ -2961,7 +2961,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 				}
 			}
 		}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ OUSTERS 7 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ OUSTERS 7 " << eos;
 		if (pAttacker != NULL && pAttacker->isSlayer())
 		{
 			// °ø°ÝÀÚ°¡ ½½·¹ÀÌ¾î¶ó¸é µ¥¹ÌÁö¿¡ Àº µ¥¹ÌÁö°¡ Ãß°¡µÉ ¼ö°¡ ÀÖ´Ù.
@@ -2969,7 +2969,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 			silverDamage = (Silver_t)(computeSlayerSilverDamage(pAttacker, Damage, pAttackerMI) * 1.5);
 			silverDamage = max( 0, getPercentValue( silverDamage, 100 - pOusters->getSilverResist() ) );
 		}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾ø??OUSTERS 8 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾ø??OUSTERS 8 " << eos;
 		// Àº µ¥¹ÌÁö´Â Ãß°¡ µ¥¹ÌÁöÀÌ´Ù.
 		Damage += silverDamage;
 		// add by Coffee 2007-3-4 ½£¼¼ÄÜ ÉÁÒ«Ö®½£ ¹àÒøÉËº¦
@@ -2978,10 +2978,10 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 			silverDamage = Damage;
 		}
 		// end
-	//cout << " ¿©±â´Â ¹®???øÀ?OUSTERS 9 " << endl;
+	//cout << " ¿©±â´Â ¹®???øÀ?OUSTERS 9 " << eos;
 		HP_t currentHP = pOusters->getHP(ATTR_CURRENT);
 
-//		//cout << "before " << Damage << endl;
+//		//cout << "before " << Damage << eos;
 //		if ( pSkillProperty->isMagic() )
 		if ( bMagicDamage )
 		{
@@ -2992,7 +2992,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 		{
 			Damage -= min(Damage-1, (int)pOusters->getPhysicDamageReduce() );
 		}
-//		//cout << "after " << Damage << endl;
+//		//cout << "after " << Damage << eos;
 
 		if ( canKillTarget )
 			Result = max(0, (int)currentHP - (int)Damage);
@@ -3003,37 +3003,37 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 
 		bBroadcastTargetHP = true;
 		bSendTargetHP      = true;
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ OUSTERS 10 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ OUSTERS 10 " << eos;
 		if (silverDamage != 0 && pOusters->getSilverDamage() < (pOusters->getHP(ATTR_MAX)/2))
 		{
 			Silver_t newSilverDamage = pOusters->getSilverDamage() + silverDamage;
 			pOusters->saveSilverDamage(newSilverDamage);
 			if (pMI) pMI->addShortData(MODIFY_SILVER_DAMAGE, newSilverDamage);
 		}
-	cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ OUSTERS 11 " << endl;
+	cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ OUSTERS 11 " << eos;
 	} 
 	////////////////////////////////////////////////////////////
 	// ¸Â´Â ³ðÀÌ ¸ó½ºÅÍÀÏ °æ¿ì
 	////////////////////////////////////////////////////////////
 	else if (pTargetCreature->isMonster()) 
 	{
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 1 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 1 " << eos;
 		Monster* pMonster     = dynamic_cast<Monster *>(pTargetCreature);
 		const MonsterInfo* pMonsterInfo = g_pMonsterInfoManager->getMonsterInfo(pMonster->getMonsterType());
 		Silver_t silverDamage = 0;
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 2 " << endl;		
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 2 " << eos;		
 		if (pAttacker != NULL && pAttacker->isSlayer())
 		{
 			// °ø°ÝÀÚ°¡ ½½·¹ÀÌ¾î¶ó¸é µ¥¹ÌÁö¿¡ Àº µ¥¹ÌÁö°¡ Ãß°¡µÉ ¼ö°¡ ÀÖ´Ù.
 			silverDamage = computeSlayerSilverDamage(pAttacker, Damage, pAttackerMI);
 		}
-		//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 3" << endl;	
+		//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 3" << eos;	
 		// Àº µ¥¹ÌÁö´Â Ãß°¡ µ¥¹ÌÁöÀÌ´Ù.
 		Damage += silverDamage;
 		if(pMonsterInfo->getEnhanceProtectDamage() != 0){
 		Damage = getPercentValue((int)Damage,(int)pMonsterInfo->getEnhanceProtectDamage());
 		}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 4 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 4 " << eos;
 		if ( canKillTarget ){
 			Result = max(0, (int)pMonster->getHP(ATTR_CURRENT) - (int)Damage);
 		}else{
@@ -3041,7 +3041,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 		}
 		pMonster->setHP(Result,  ATTR_CURRENT);
 
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 5 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 5 " << eos;
 		if ( pMonster->isFlag( Effect::EFFECT_CLASS_SHARE_HP ) )
 		{
 			EffectShareHP* pEffect = dynamic_cast<EffectShareHP*>(pMonster->findEffect( Effect::EFFECT_CLASS_SHARE_HP ));
@@ -3063,7 +3063,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 				}
 			}
 		}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 6 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 6 " << eos;
 		if (Result == 0 && pAttacker!=NULL && pAttacker->isPC())
 		{
 			increaseFame(pAttacker, Damage);
@@ -3080,14 +3080,14 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 		}
 
 		bBroadcastTargetHP = true;
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 7" << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 7" << eos;
 		if (silverDamage != 0 && pMonster->getSilverDamage() < (pMonster->getHP(ATTR_MAX)/2))
 		{
 			pMonster->setSilverDamage(pMonster->getSilverDamage() + silverDamage);
 		}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 8 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 8 " << eos;
 		pMonster->setDamaged(true);
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 9 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 9 " << eos;
 		if (pAttacker != NULL && pAttacker->isPC())
 		{
 			// ¸Â´Â ³ðÀÌ ¸ó½ºÅÍÀÌ°í, °ø°ÝÀÚ°¡ »ç¶÷ÀÌ¶ó¸é,
@@ -3095,7 +3095,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 			pMonster->addPrecedence(pAttacker->getName(), pAttacker->getPartyID(), Damage);
 			pMonster->setLastHitCreatureClass(pAttacker->getCreatureClass());
 		}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 10 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 10 " << eos;
 		/*
 		// ¸ó½ºÅÍ°¡ ¸¸¾à Á×¾ú´Ù¸é ¿ì¼±±Ç °è»êÀ» ÇØÁà¾ß ÇÑ´Ù.
 		if (pMonster->isDead())
@@ -3110,7 +3110,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 		*/
 		// ¸ó½ºÅÍ°¡ ¾ÆÁ÷ Á×Áö´Â ¾Ê¾ÒÁö¸¸, ÈíÇ÷ÀÌ °¡´ÉÇÑ »óÅÂ¶ó¸é,
 		// ¸¸¾à ¿ì¼±±Ç °è»êÀ» ÇÏÁö ¾Ê¾Ò´Ù¸é °è»êÀ» ÇØÁØ´Ù.
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 11 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 11 " << eos;
 		if (pMonster->getHP(ATTR_CURRENT)*3 < pMonster->getHP(ATTR_MAX))
 		{
 			PrecedenceTable* pTable = pMonster->getPrecedenceTable();
@@ -3133,7 +3133,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 				pMonster->addEffect(pEffectPrecedence);
 			}
 		}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 12 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 12 " << eos;
 
 		if ( pMonster->getMonsterType() == 722 && pAttacker != NULL && !pAttacker->isFlag( Effect::EFFECT_CLASS_BLINDNESS ) )
 		{
@@ -3156,7 +3156,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 			}
 		}
 	}
-	cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 13 " << endl;
+	cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 13 " << eos;
 //	if ( pAttacker != NULL ) pAttacker->setLastTarget( pTargetCreature->getObjectID() );
 
 	////////////////////////////////////////////////////////////
@@ -3188,7 +3188,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 
 		pZone->broadcastPacket(TX, TY, &gcTargetHP, pTargetCreature);
 	}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 14 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 14 " << eos;
 	if (bSendTargetHP && pTargetCreature != NULL) // ¸Â´Â ´ç»çÀÚ¿¡°Ô HP°¡ ??¾ú´Ù?¾Ë·ÁÁØ´Ù. 
 	{
 		if (pTargetCreature->isSlayer())
@@ -3210,7 +3210,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 		}
 		else Assert(false);
 	}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 15 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 15 " << eos;
 	if (bSendTargetMP && pTargetCreature != NULL) // ¸Â´Â ´ç»çÀÚ¿¡°Ô MP°¡ ÁÙ¾ú´Ù°í ¾Ë·ÁÁØ´Ù.
 	{
 		if (pTargetCreature->isSlayer())
@@ -3239,7 +3239,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 		}
 		else Assert(false);
 	}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 16 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 16 " << eos;
 	if (bBroadcastAttackerHP && pAttacker != NULL) // ¶§¸®´Â ³ðÀÇ HP°¡ ÁÙ¾úÀ¸´Ï, ºê·ÎµåÄ³½ºÆÃÇØÁØ´Ù.
 	{
 		if (pAttacker->isSlayer())
@@ -3266,7 +3266,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 
 		pZone->broadcastPacket(AX, AY, &gcAttackerHP, pAttacker);
 	}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 17 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 17 " << eos;
 	if (bSendAttackerHP && pAttacker != NULL) // ¶§¸®´Â ³ð¿¡°Ô HP°¡ ÁÙ¾ú´Ù°í ¾Ë·ÁÁØ´Ù.
 	{
 		if (pAttacker->isSlayer())
@@ -3288,7 +3288,7 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 		}
 		else Assert(false);
 	}
-	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 18 " << endl;
+	//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 18 " << eos;
 	if (bSendAttackerMP && pAttacker != NULL) // ¶§¸®´Â ³ð¿¡°Ô MP°¡ ÁÙ¾ú´Ù°í ¾Ë·ÁÁØ´Ù.
 	{
 		if (pAttacker->isSlayer())
@@ -3303,8 +3303,8 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 		}
 		else Assert(false);
 	}
-//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 19"	<< endl;
-	////cout << " ??â´?¹®Á¦ ¾øÀ½ MONSTER 19 / " << pTargetCreature->getName() << " °ø°ÝÀÚ : " << pAttacker->getName() << " ½ºÅ³ Å¸ÀÔ : " << SkillType << endl;
+//cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 19"	<< eos;
+	////cout << " ??â´?¹®Á¦ ¾øÀ½ MONSTER 19 / " << pTargetCreature->getName() << " °ø°ÝÀÚ : " << pAttacker->getName() << " ½ºÅ³ Å¸ÀÔ : " << SkillType << eos;
 	// Á×ÀÎ °æ¿ìÀÇ KillCount Áõ°¡. by sigi. 2002.8.31
 	if (pTargetCreature->isDead())
 	{
@@ -3312,8 +3312,8 @@ HP_t setDamage(Creature* pTargetCreature, Damage_t Damage,
 		affectKillCount(pAttacker, pTargetCreature);
 		}
 	}
-cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 20"	<< endl;
-	////cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 20 / " << pTargetCreature->getName() << " °ø°ÝÀÚ : " << pAttacker->getName() << " ½ºÅ³ Å¸ÀÔ : " << SkillType << endl;
+cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 20"	<< eos;
+	////cout << " ¿©±â´Â ¹®Á¦ ¾øÀ½ MONSTER 20 / " << pTargetCreature->getName() << " °ø°ÝÀÚ : " << pAttacker->getName() << " ½ºÅ³ Å¸ÀÔ : " << SkillType << eos;
 		
 	return Result;
 }
@@ -3770,16 +3770,16 @@ bool hasEnoughMana(Creature* pCaster, int RequiredMP)
 		// Sacrifice¸¦ ¾´ »óÅÂ¶ó¸é ¸¶³ª°¡ ¸ðÀÚ¶óµµ HP·Î ´ë½ÅÇÒ ¼ö ÀÖ´Ù.
 		if (pSlayer->isFlag(Effect::EFFECT_CLASS_SACRIFICE))
 		{
-			////cout << "RequiredMP : " << (int)RequiredMP << endl;
+			////cout << "RequiredMP : " << (int)RequiredMP << eos;
 			int margin = RequiredMP - pSlayer->getMP(ATTR_CURRENT);
-			////cout << "margin: " << (int)margin<< endl;
+			////cout << "margin: " << (int)margin<< eos;
 
 			// ¿ä±¸Ä¡¿¡¼­ ÇöÀç ¼öÄ¡¸¦ »« °ªÀÌ 0ÀÌ»óÀÌ¶ó¸é , 
 			// ¿ä±¸Ä¡°¡ ´õ Å©´Ù´Â ¸»ÀÌ´Ù. ÀÌ ¼öÄ¡´Â HP¿¡¼­ Á¦°ÅÇÑ´Ù.
 			if (margin > 0)
 			{
 				margin = (int)pSlayer->getHP(ATTR_CURRENT)*2 - (int)margin ;
-				////cout << "margin: " << (int)margin<< endl;
+				////cout << "margin: " << (int)margin<< eos;
 				if (margin > 0) return true;
 			} else {
 				return true;
@@ -3827,7 +3827,7 @@ bool hasEnoughMana(Creature* pCaster, int RequiredMP)
 	}
 	else
 	{
-		cerr << "hasEnoughMana() : Invalid Creature Class" << endl;
+		cerr << "hasEnoughMana() : Invalid Creature Class" << eos;
 		Assert(false);
 	}
 
@@ -3978,12 +3978,12 @@ int decreaseMana(Creature* pCaster, int MP, ModifyInfo& info)
 		// ¸ó½ºÅÍ´Â ¹«ÇÑ ¸¶³ª µÇ°Ú´Ù. À½È±È± 
 		// ³ªÁß¿¡¶óµµ ¸ó½ºÅÍ¿¡ ???Ä«¿îÆ®³ª ??±×·² °ÍÀÌ »ý±æÁöµµ ¸ð¸£Áö.
 		// comment by ±è¼º??
-		cerr << "decreaseMana() : Monster don't have Mana" << endl;
+		cerr << "decreaseMana() : Monster don't have Mana" << eos;
 		Assert(false);
 	}
 	else
 	{
-		cerr << "hasEnoughMana() : Invalid Creature Class" << endl;
+		cerr << "hasEnoughMana() : Invalid Creature Class" << eos;
 		Assert(false);
 	}
 
@@ -5008,7 +5008,7 @@ void shareOustersExp(Ousters* pOusters, Exp_t Point, ModifyInfo& _ModifyInfo)
 
 	pSlayer->tinysave(msg1.toString());
 
-//	//cout << "ÈûÀ» ³·?ä´Ï´?" << endl;
+//	//cout << "ÈûÀ» ³·?ä´Ï´?" << eos;
 }
 
 void decreaseINT(Slayer* pSlayer)
@@ -5038,7 +5038,7 @@ void decreaseINT(Slayer* pSlayer)
 
 	pSlayer->tinysave(msg1.toString());
 
-//	//cout << "ÀÎÆ®¸¦ ³·Ãä´Ï´Ù." << endl;
+//	//cout << "ÀÎÆ®¸¦ ³·Ãä´Ï´Ù." << eos;
 }
 
 void decreaseDEX(Slayer* pSlayer)
@@ -5068,7 +5068,7 @@ void decreaseDEX(Slayer* pSlayer)
 
 	pSlayer->tinysave(msg1.toString());
 
-//	//cout << "µ¦½º¸¦ ³·Ãä´Ï´Ù." << endl;
+//	//cout << "µ¦½º¸¦ ³·Ãä´Ï´Ù." << eos;
 }*/
 
 //////////////////////////////////////////////////////////////////////////////
@@ -5456,9 +5456,9 @@ bool increaseDomainExp(Slayer* pSlayer, SkillDomainType_t Domain, Exp_t Point, M
 	{
 		int levelDiff = (int)pSlayer->getLevel() - (int)EnemyLevel;
 
-//		//cout << "enemyLevel : " << (int)EnemyLevel << " , TargetNum : " << TargetNum << endl;
+//		//cout << "enemyLevel : " << (int)EnemyLevel << " , TargetNum : " << TargetNum << eos;
 
-//		//cout << "Point : " << Point << endl;
+//		//cout << "Point : " << Point << eos;
 
 		if ( levelDiff > 50 ) Point = getPercentValue( Point, 30 );
 		else if ( levelDiff > 40 ) Point = getPercentValue( Point, 50 );
@@ -5466,13 +5466,13 @@ bool increaseDomainExp(Slayer* pSlayer, SkillDomainType_t Domain, Exp_t Point, M
 		else if ( levelDiff < -30 ) Point = getPercentValue( Point, 130 );
 		else if ( levelDiff < -20 ) Point = getPercentValue( Point, 120 );
 
-//		//cout << "after level Point : " << Point << endl;
+//		//cout << "after level Point : " << Point << eos;
 	}
 
 	if ( TargetNum != -1 )
 		Point = Point * (TargetNum+1) / 3;
 
-//	//cout << "after target Point : " << Point << endl;
+//	//cout << "after target Point : " << Point << eos;
 
 	// ÀÌ¹Ì ÁöÁ¤µÈ domain¿¡ ¸Â´Â ¹«±â¸¦ µé°í ÀÖ´Ù°í °¡Á¤ÇÏ°í..
 	// ¹«±â type¿¡ µû¶ó¼­ SkillPoint¸¦ ´Ù¸£°Ô ÁØ´Ù.
@@ -5555,7 +5555,7 @@ bool increaseDomainExp(Slayer* pSlayer, SkillDomainType_t Domain, Exp_t Point, M
 		// ½Ã°£´ë¿¡ µû¶ó ¿Ã¶ó°¡´Â °æÇèÄ¡??´Þ¶óÁø´Ù.
 		Point = (Exp_t)getPercentValue(Point, DomainExpTimebandFactor[getZoneTimeband(pSlayer->getZone())]);
 
-		////cout << pSlayer->getName() << "¿¡°Ô " << (int)Domain << " µµ¸ÞÀÎÀÇ °æÇèÄ¡¸¦ " << Point << "¸¸Å­ ÁÝ´Ï´Ù." << endl;
+		////cout << pSlayer->getName() << "¿¡°Ô " << (int)Domain << " µµ¸ÞÀÎÀÇ °æÇèÄ¡¸¦ " << Point << "¸¸Å­ ÁÝ´Ï´Ù." << eos;
 
 		// º¸»ó¿ë ÄÚµå
 		//Point = max(2, (int)getPercentValue(Point, 150));
@@ -5586,7 +5586,7 @@ bool increaseDomainExp(Slayer* pSlayer, SkillDomainType_t Domain, Exp_t Point, M
 		pSlayer->setGoalExp(Domain, NewGoalExp);
 //		pSlayer->setSkillDomainExp(Domain, NewExp);
 
-		////cout << "³²Àº °æÇèÄ¡??" << NewGoalExp << endl;
+		////cout << "³²Àº °æÇèÄ¡??" << NewGoalExp << eos;
 
 		// ¸ñÇ¥ °æÇèÄ¡°¡ 0 ÀÌ¶ó¸é, ·¹º§¾÷À» ÇÒ ¼ö ÀÖ´Â »óÅÂÀÎ°¡¸¦ °Ë»çÇÑ´Ù.
 		if (NewGoalExp == 0 && CurDomainLevel != SLAYER_MAX_DOMAIN_LEVEL) 
@@ -5600,7 +5600,7 @@ bool increaseDomainExp(Slayer* pSlayer, SkillDomainType_t Domain, Exp_t Point, M
 			pSlayer->setGoalExp (Domain, NewGoalExp);
 			pSlayer->setSkillDomainLevel (Domain, NewDomainLevel);
 
-			////cout << "·¹º§¾÷ÇØ¼­ ³²Àº °æÇèÄ¡´Â " << NewGoalExp << endl;
+			////cout << "·¹º§¾÷ÇØ¼­ ³²Àº °æÇèÄ¡´Â " << NewGoalExp << eos;
 
 			SkillType_t NewLearnSkillType = g_pSkillInfoManager->getSkillTypeByLevel(Domain, NewDomainLevel);
 
@@ -5620,7 +5620,7 @@ bool increaseDomainExp(Slayer* pSlayer, SkillDomainType_t Domain, Exp_t Point, M
 			}
 
 			isLevelUp = true;
-			////cout << "·¹º§¾÷ ÇÒ ¼ö ÀÖ½À´Ï´Ù." << endl;
+			////cout << "·¹º§¾÷ ÇÒ ¼ö ÀÖ½À´Ï´Ù." << eos;
 		}
 
 /*		if (DiffExp != 0)
@@ -5660,7 +5660,7 @@ bool increaseDomainExp(Slayer* pSlayer, SkillDomainType_t Domain, Exp_t Point, M
 				j++;
 				if (j > SKILL_DOMAIN_VAMPIRE)
 				{
-					cerr << "Out of Skill Domain Range!!!" << endl;
+					cerr << "Out of Skill Domain Range!!!" << eos;
 					Assert(false);
 				}
 			}
@@ -5669,7 +5669,7 @@ bool increaseDomainExp(Slayer* pSlayer, SkillDomainType_t Domain, Exp_t Point, M
 			SkillDomainType_t DownDomainType  = ds[j].DomainType;
 			Level_t           DownDomainLevel = ds[j].DomainLevel;
 
-			////cout << (int)DownDomainType << "µµ¸ÞÀÎÀÇ µµ¸ÞÀÎ ·¹º§À» ³·Ãä´Ï´Ù." << endl;
+			////cout << (int)DownDomainType << "µµ¸ÞÀÎÀÇ µµ¸ÞÀÎ ·¹º§À» ³·Ãä´Ï´Ù." << eos;
 
 			// ?öÀ?µµ¸ÞÀÎ¿¡¼­ ¹è¿ï ¼ö ÀÖ´Â ±â¼úÀÌ ÀÖ´Ù¸é Disable ½ÃÅ²´Ù.
 			SkillType_t eraseSkillType = g_pSkillInfoManager->getSkillTypeByLevel(DownDomainType, DownDomainLevel);
@@ -5694,8 +5694,8 @@ bool increaseDomainExp(Slayer* pSlayer, SkillDomainType_t Domain, Exp_t Point, M
 			// ´Ù¿î ±×·¹ÀÌµå µÇ¾úÀ¸¹Ç·Î ±× ·¹º§¿¡ ¸Â´Â µµ¸ÞÀÎ °æÇèÄ¡¸¦ ¼ÂÆÃÇÑ´Ù.
 			pSlayer->setGoalExp(DownDomainType, DownDomainGoalExp);
 //			pSlayer->setSkillDomainExp(DownDomainType, DownDomainSumExp);
-			////cout << "·¹º§ : " << (int)DownDomainLevel << endl;
-			////cout << "³²Àº°æÇèÄ¡ : " << (int)DownDomainGoalExp << endl;
+			////cout << "·¹º§ : " << (int)DownDomainLevel << eos;
+			////cout << "³²Àº°æÇèÄ¡ : " << (int)DownDomainGoalExp << eos;
 
 			StringStream DownSave;
 			if (DownDomainType == SKILL_DOMAIN_BLADE)
@@ -5936,7 +5936,7 @@ bool increaseDomainExp(Slayer* pSlayer, SkillDomainType_t Domain, Exp_t Point, M
 			checkFreeLevelLimit( pSlayer );
 			pSlayer->whenQuestLevelUpgrade();
 
-			////cout << "·¹º§¾÷ÇØ¼­ ÀÌÆåÆ®µµ ?ï¾îÁá½À´Ï´?" << endl;
+			////cout << "·¹º§¾÷ÇØ¼­ ÀÌÆåÆ®µµ ?ï¾îÁá½À´Ï´?" << eos;
 		}
 	}
 
@@ -5971,7 +5971,7 @@ void increaseVampExp(Vampire* pVampire, Exp_t Point, ModifyInfo& _ModifyInfo)
 	// °æÇèÄ¡ µÎ¹è
 	if ( isAffectExp2X() ) Point *= 2;
 
-	////cout << pVampire->getName() << " ¿¡°Ô " << Point << "¸¸Å­ °æÇèÄ¡¸¦ ÁÝ´Ï´Ù." << endl;
+	////cout << pVampire->getName() << " ¿¡°Ô " << Point << "¸¸Å­ °æÇèÄ¡¸¦ ÁÝ´Ï´Ù." << eos;
 
 /*	if (curLevel >= VAMPIRE_MAX_LEVEL) 
 	{
@@ -6041,7 +6041,7 @@ void increaseVampExp(Vampire* pVampire, Exp_t Point, ModifyInfo& _ModifyInfo)
 		// Ä«?îÆ??ÃÊ±âÈ­½ÃÄÑ ÁØ´Ù. 
 		if (ExpSaveCount > VAMPIRE_EXP_SAVE_PERIOD)
 		{
-			////cout << "°æÇèÄ¡¸¦ ÀúÀåÇÕ´Ï´Ù." << endl;
+			////cout << "°æÇèÄ¡¸¦ ÀúÀåÇÕ´Ï´Ù." << eos;
 
 			StringStream attrsave;
 //			attrsave << "Exp = " << NewExp << ", GoalExp = " << NewGoalExp;
@@ -6056,7 +6056,7 @@ void increaseVampExp(Vampire* pVampire, Exp_t Point, ModifyInfo& _ModifyInfo)
 	}
 	else
 	{
-		////cout << "·¹º§ÀÌ ¿Ã¶ú½À´Ï´Ù." << endl;
+		////cout << "·¹º§ÀÌ ¿Ã¶ú½À´Ï´Ù." << eos;
 		// ·¹º§ ¾÷!!
 		VAMPIRE_RECORD prev;
 		pVampire->getVampireRecord(prev);
@@ -6085,7 +6085,7 @@ void increaseVampExp(Vampire* pVampire, Exp_t Point, ModifyInfo& _ModifyInfo)
 
 		pVampire->setGoalExp(NextGoalExp);
 		_ModifyInfo.addLongData(MODIFY_VAMP_GOAL_EXP, NextGoalExp);
-		////cout << "?²À?°æÇè???" << NextGoalExp << " ÀÔ´Ï´Ù." << endl;
+		////cout << "?²À?°æÇè???" << NextGoalExp << " ÀÔ´Ï´Ù." << eos;
 
 		StringStream sav;
 		sav << "Level = " << (int)curLevel 
@@ -6170,7 +6170,7 @@ void increaseOustersExp(Ousters* pOusters, Exp_t Point, ModifyInfo& _ModifyInfo)
 	// ½Ã°£´ë¿¡ µû¶ó ¿Ã¶ó°¡´Â °æÇèÄ¡°¡ ´Þ¶óÁø´Ù.
 	Point = (Exp_t)getPercentValue(Point, DomainExpTimebandFactor[getZoneTimeband(pOusters->getZone())]);
 
-	////cout << pOusters->getName() << " ¿¡°Ô " << Point << "¸¸Å­ °æÇèÄ¡¸¦ ÁÝ´Ï´Ù." << endl;
+	////cout << pOusters->getName() << " ¿¡°Ô " << Point << "¸¸Å­ °æÇèÄ¡¸¦ ÁÝ´Ï´Ù." << eos;
 
 /*	if (curLevel >= OUSTERS_MAX_LEVEL) 
 	{
@@ -7487,7 +7487,7 @@ Exp_t computeSkillPointBonus(SkillDomainType_t Domain, SkillLevel_t DomainLevel,
 	}
 
 	////cout << "skillPoint: " << (int)itemType << " / " << (int)bestItemType
-	//	 << ", " << (int)Point << " --> " << (int)newPoint << endl;
+	//	 << ", " << (int)Point << " --> " << (int)newPoint << eos;
 
 	// by sigi. 2002.11.5
 	newPoint = max(1, (int)newPoint);

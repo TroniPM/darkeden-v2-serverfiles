@@ -53,7 +53,7 @@ void EffectFadeOut::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 	
-	//cout << "EffectFadeOut " << "unaffect BEGIN" << endl;
+	//cout << "EffectFadeOut " << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -104,7 +104,7 @@ void EffectFadeOut::unaffect(Creature* pCreature)
 		addInvisibleCreature(pZone, pCreature, x, y);
 	}
 
-	//cout << "EffectFadeOut " << "unaffect END" << endl;
+	//cout << "EffectFadeOut " << "unaffect END" << eos;
 
 	__END_CATCH
 }
@@ -116,12 +116,12 @@ void EffectFadeOut::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectFadeOut " << "unaffect BEGIN" << endl;
+	//cout << "EffectFadeOut " << "unaffect BEGIN" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature*>(m_pTarget);
 	unaffect(pCreature);
 	
-	//cout << "EffectFadeOut " << "unaffect END" << endl;
+	//cout << "EffectFadeOut " << "unaffect END" << eos;
 
 	__END_CATCH
 }

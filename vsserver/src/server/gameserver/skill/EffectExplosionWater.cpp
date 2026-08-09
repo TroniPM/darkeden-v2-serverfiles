@@ -43,7 +43,7 @@ void EffectExplosionWater::unaffect( Creature* pCreature )
 {
 	__BEGIN_TRY
 
-	//cout << "EffectExplosionWater " << "unaffect BEGIN" << endl;
+	//cout << "EffectExplosionWater " << "unaffect BEGIN" << eos;
 
 	Assert( pCreature != NULL );
 

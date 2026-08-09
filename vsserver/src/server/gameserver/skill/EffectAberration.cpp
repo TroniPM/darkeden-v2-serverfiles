@@ -55,7 +55,7 @@ void EffectAberration::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectAberration" << "unaffect BEGIN" << endl;
+	//cout << "EffectAberration" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -80,7 +80,7 @@ void EffectAberration::unaffect(Creature* pCreature)
 		pZone->monsterScan(pMonster, pMonster->getX(), pMonster->getY(), pMonster->getDir());
 	}
 
-	//cout << "EffectAberration" << "unaffect END" << endl;
+	//cout << "EffectAberration" << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

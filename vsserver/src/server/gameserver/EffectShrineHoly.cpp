@@ -140,7 +140,7 @@ void EffectShrineHoly::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectShrineHoly" << "unaffect BEGIN" << endl;
+	//cout << "EffectShrineHoly" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -156,7 +156,7 @@ void EffectShrineHoly::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_SHRINE_HOLY);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectShrineHoly" << "unaffect END" << endl;
+	//cout << "EffectShrineHoly" << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH
@@ -170,7 +170,7 @@ void EffectShrineHoly::unaffect(Item* pItem)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectShrineHoly" << "unaffect BEGIN" << endl;
+	//cout << "EffectShrineHoly" << "unaffect BEGIN" << eos;
 
 	Assert(pItem != NULL);
 
@@ -189,7 +189,7 @@ void EffectShrineHoly::unaffect(Item* pItem)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_SHRINE_HOLY);
 	pZone->broadcastPacket(pCorpse->getX(), pCorpse->getY(), &gcRemoveEffect);
 
-	//cout << "EffectShrineHoly" << "unaffect END" << endl;
+	//cout << "EffectShrineHoly" << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

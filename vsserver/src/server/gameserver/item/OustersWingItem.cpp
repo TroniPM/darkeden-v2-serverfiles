@@ -415,10 +415,10 @@ void OustersWingItemLoader::load(Creature* pCreature)
 									pBeltInventory = ((SubInventory*)pBelts)->getInventory();
 										if (pBeltInventory->canAddingEx(x, y, pOustersWingItem))
 										{
-											cout << " 추가완료"<< endl;
+											cout << " 추가완료"<< eos;
 											pBeltInventory->addItemEx(x, y, pOustersWingItem);
 										}else{
-											cout << " 버그"<< endl;
+											cout << " 버그"<< eos;
 											processItemBugEx(pCreature, pOustersWingItem);
 										}
 								}else{

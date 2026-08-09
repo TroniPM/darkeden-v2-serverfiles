@@ -254,7 +254,7 @@ void EffectBloodCurse::unaffect()
 	Tile& tile = m_pZone->getTile(m_X, m_Y);
 	tile.deleteEffect(m_ObjectID);
 
-	//cout << "EffectBloodCurse" << "unaffect END" << endl;
+	//cout << "EffectBloodCurse" << "unaffect END" << eos;
 
 	__END_CATCH
 }

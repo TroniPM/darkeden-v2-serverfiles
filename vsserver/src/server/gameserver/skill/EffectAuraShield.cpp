@@ -51,7 +51,7 @@ void EffectAuraShield::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectAuraShield" << "unaffect BEGIN" << endl;
+	//cout << "EffectAuraShield" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isSlayer());
@@ -68,7 +68,7 @@ void EffectAuraShield::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_AURA_SHIELD);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectAuraShield" << "unaffect END" << endl;
+	//cout << "EffectAuraShield" << "unaffect END" << eos;
 
 	__END_CATCH
 }

@@ -51,7 +51,7 @@ void EffectFreezeRing1::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectFreezeRing1 " << "unaffect BEGIN" << endl;
+	//cout << "EffectFreezeRing1 " << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	pCreature->removeFlag(Effect::EFFECT_CLASS_FREEZE_RING1);
@@ -64,7 +64,7 @@ void EffectFreezeRing1::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_FREEZE_RING1);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectFreezeRing1 " << "unaffect END" << endl;
+	//cout << "EffectFreezeRing1 " << "unaffect END" << eos;
 
 	__END_CATCH
 }
@@ -74,12 +74,12 @@ void EffectFreezeRing1::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectFreezeRing1 " << "unaffect BEGIN" << endl;
+	//cout << "EffectFreezeRing1 " << "unaffect BEGIN" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature*>(m_pTarget);
 	unaffect(pCreature);
 
-	//cout << "EffectFreezeRing1 " << "unaffect END" << endl;
+	//cout << "EffectFreezeRing1 " << "unaffect END" << eos;
 
 	__END_CATCH
 }

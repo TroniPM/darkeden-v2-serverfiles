@@ -45,7 +45,7 @@ void EffectBloodyWall::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectBloodyWall" << "affect BEGIN" << endl;
+	//cout << "EffectBloodyWall" << "affect BEGIN" << eos;
 	
 	Assert(m_pZone != NULL);
 
@@ -242,7 +242,7 @@ void EffectBloodyWall::affect()
 	
 	setNextTime(m_Tick);
 
-	//cout << "EffectBloodyWall" << "affect END" << endl;
+	//cout << "EffectBloodyWall" << "affect END" << eos;
 
 	__END_CATCH 
 }
@@ -281,12 +281,12 @@ void EffectBloodyWall::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectBloodyWall" << "unaffect BEGIN" << endl;
+	//cout << "EffectBloodyWall" << "unaffect BEGIN" << eos;
 
     Tile& tile = m_pZone->getTile(m_X, m_Y);
 	tile.deleteEffect(m_ObjectID);
 
-	//cout << "EffectBloodyWall" << "unaffect END" << endl;
+	//cout << "EffectBloodyWall" << "unaffect END" << eos;
 
 	__END_CATCH
 }

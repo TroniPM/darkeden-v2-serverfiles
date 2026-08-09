@@ -335,8 +335,8 @@ void Tile::deleteCreature (ObjectID_t creatureID)
 	} 
 	catch (Throwable & t) 
 	{
-		//cerr << "Delete Creature 지롱.." << endl;
-		//cerr << t.toString() << endl;
+		//cerr << "Delete Creature 지롱.." << eos;
+		//cerr << t.toString() << eos;
 		filelog("tileError.txt", "Tile::deleteCreature - %s", t.toString().c_str());
 	}
 
@@ -450,7 +450,7 @@ void Tile::deleteItem ()
 	//Assert(hasItem());
 	if (!hasItem())
 	{
-		//cerr << "Tile::hasItem() : 아이템이 없습니다." << endl;
+		//cerr << "Tile::hasItem() : 아이템이 없습니다." << eos;
 		return;
 	}
 
@@ -929,9 +929,9 @@ void Tile::addObject (Object* pObject)
 			}
 			else
 			{	
-				cerr << toString() << endl;
-				cerr << "겹쳐진 tile priority 값은 = " << (int)pObject->getObjectPriority() << endl;
-				cerr << "플래그 값은 = " << m_wFlags << endl;
+				cerr << toString() << eos;
+				cerr << "겹쳐진 tile priority 값은 = " << (int)pObject->getObjectPriority() << eos;
+				cerr << "플래그 값은 = " << m_wFlags << eos;
 				filelog("TILEBUG.log", "%s", toString().c_str());
 				throw DuplicatedException("tile priority duplicated");
 			}
@@ -1003,11 +1003,11 @@ void Tile::deleteObject (ObjectID_t objectID)
 	/*
 	if (before == m_Objects.end())
 	{
-		cout << objectID << "아무것두 없당" << endl;
+		cout << objectID << "아무것두 없당" << eos;
 	}
 	else
 	{
-		cout << objectID << " " << (*before)->getObjectID() << endl;
+		cout << objectID << " " << (*before)->getObjectID() << eos;
 	}
 	*/
 

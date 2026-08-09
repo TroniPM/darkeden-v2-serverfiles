@@ -67,7 +67,7 @@ void EffectTiffaugesJoin::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 	
-	// cout << "EffectTiffaugesJoin " << "unaffect BEGIN" << endl;
+	// cout << "EffectTiffaugesJoin " << "unaffect BEGIN" << eos;
 	Assert(pCreature != NULL);
 
 	if ( !pCreature->isSlayer() )

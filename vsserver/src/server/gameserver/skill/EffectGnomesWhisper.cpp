@@ -31,7 +31,7 @@ void EffectGnomesWhisper::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectGnomesWhisper" << "unaffect BEGIN" << endl;
+	//cout << "EffectGnomesWhisper" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 //	Assert(pCreature->isOusters());
@@ -53,7 +53,7 @@ void EffectGnomesWhisper::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_GNOMES_WHISPER);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectGnomesWhisper" << "unaffect END" << endl;
+	//cout << "EffectGnomesWhisper" << "unaffect END" << eos;
 
 	__END_CATCH
 }

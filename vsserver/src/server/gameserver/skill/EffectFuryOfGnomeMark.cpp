@@ -40,7 +40,7 @@ void EffectFuryOfGnomeMark::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectFuryOfGnomeMark" << "affect BEGIN" << endl;
+	//cout << "EffectFuryOfGnomeMark" << "affect BEGIN" << eos;
 	
 	__END_CATCH 
 }
@@ -70,12 +70,12 @@ void EffectFuryOfGnomeMark::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectFuryOfGnomeMark" << "unaffect BEGIN" << endl;
+	//cout << "EffectFuryOfGnomeMark" << "unaffect BEGIN" << eos;
 
     Tile& tile = m_pZone->getTile(m_X, m_Y);
 	tile.deleteEffect(m_ObjectID);
 
-	//cout << "EffectFuryOfGnomeMark" << "unaffect END" << endl;
+	//cout << "EffectFuryOfGnomeMark" << "unaffect END" << eos;
 
 	__END_CATCH
 }

@@ -31,7 +31,7 @@ void EffectDivineSpirits::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectDivineSpirits" << "unaffect BEGIN" << endl;
+	//cout << "EffectDivineSpirits" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isOusters());
@@ -58,7 +58,7 @@ void EffectDivineSpirits::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_DIVINE_SPIRITS);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectDivineSpirits" << "unaffect END" << endl;
+	//cout << "EffectDivineSpirits" << "unaffect END" << eos;
 
 	__END_CATCH
 }

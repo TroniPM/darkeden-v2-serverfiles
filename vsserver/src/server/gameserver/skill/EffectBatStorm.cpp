@@ -34,14 +34,14 @@ bool EffectBatStorm::affectCreature(Creature* pTargetCreature, bool bAffectByMov
 {
 	__BEGIN_TRY
 
-	//cout << "EffectBatStorm " << "affectCreature Begin " << endl;
+	//cout << "EffectBatStorm " << "affectCreature Begin " << eos;
 
 	Assert(pTargetCreature != NULL);
 
 	// 상대에게 이미 poison 이펙트가 걸려져 있는 경우에는 걸리지 않는다.
 	if (pTargetCreature->isFlag(Effect::EFFECT_CLASS_STORM_BAT))
 	{
-		//cout << "EffectBatStorm " << "affectCreature End(Already Effected) " << endl;
+		//cout << "EffectBatStorm " << "affectCreature End(Already Effected) " << eos;
 		return false;
 	}
 	
@@ -53,7 +53,7 @@ bool EffectBatStorm::affectCreature(Creature* pTargetCreature, bool bAffectByMov
 
 	if (StormDamage > 0)
 	{
-		//cout << "EffectBatStorm(Damage:" << StormDamage << ") Affected" << endl;
+		//cout << "EffectBatStorm(Damage:" << StormDamage << ") Affected" << eos;
 		// 포이즌 이펙트를 생성해서, 타겟 크리쳐에 붙이고, 플래그를 켜준다.
 		EffectStormBat* pEffectStormBat = new EffectStormBat(pTargetCreature);
 		pEffectStormBat->setLevel(m_Level);
@@ -73,7 +73,7 @@ bool EffectBatStorm::affectCreature(Creature* pTargetCreature, bool bAffectByMov
 		pZone->broadcastPacket(pTargetCreature->getX(), pTargetCreature->getY(), &gcAddEffect);
 	}
 
-	//cout << "EffectBatStorm " << "affectCreature End " << endl;
+	//cout << "EffectBatStorm " << "affectCreature End " << eos;
 
 	return true;
 

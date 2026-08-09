@@ -63,7 +63,7 @@ void GameServerGroupInfoManager::init ()
 	load();
 
 	// just print to cout
-	cout << toString() << endl;
+	cout << toString() << eos;
 
 	__END_CATCH
 }
@@ -126,7 +126,7 @@ void GameServerGroupInfoManager::load ()
 		throw Error(sqe.toString());
 
 	} catch ( Throwable & t ) {
-		cout << t.toString() << endl;
+		cout << t.toString() << eos;
 	}
 
 	__END_CATCH

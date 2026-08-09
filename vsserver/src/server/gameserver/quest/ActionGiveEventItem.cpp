@@ -208,8 +208,8 @@ void ActionGiveEventItem::execute(Creature * pCreature1 , Creature * pCreature2)
 	Timeval afterTime;
 	getCurrentTime(afterTime);
 
-	cout << "luaExecute time before : " << beforeTime.tv_sec  << "." << beforeTime.tv_usec << endl;
-	cout << "luaExecute time after  : " << afterTime.tv_sec  << "." << afterTime.tv_usec << endl;
+	cout << "luaExecute time before : " << beforeTime.tv_sec  << "." << beforeTime.tv_usec << eos;
+	cout << "luaExecute time after  : " << afterTime.tv_sec  << "." << afterTime.tv_usec << eos;
 	*/
 	//--------------------------------------------------------
 

@@ -225,7 +225,7 @@ void SiegeWar::executeEnd()
 							g_pLoginServerManager->sendPacket( pGameServerInfo->getIP(),
 																pGameServerInfo->getUDPPort(),
 																&ggCommand );
-							cout << "send change castle packet to " << pGameServerInfo->getIP() << ", " << pGameServerInfo->getUDPPort() << endl;
+							cout << "send change castle packet to " << pGameServerInfo->getIP() << ", " << pGameServerInfo->getUDPPort() << eos;
 						}
 					}
 				}

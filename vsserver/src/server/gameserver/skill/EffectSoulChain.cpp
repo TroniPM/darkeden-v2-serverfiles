@@ -50,7 +50,7 @@ void EffectSoulChain::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 	
-	//cout << "EffectSoulChain " << "unaffect BEGIN" << endl;
+	//cout << "EffectSoulChain " << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 

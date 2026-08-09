@@ -273,7 +273,7 @@ void EffectYellowPoisonToCreatureLoader::load(Creature* pCreature)
 	//Assert(pCreature != NULL);
 	if (pCreature == NULL)
 	{
-		//cout << "EffectYellowPoisonToCreatureLoader : 크리쳐가 널입니다." << endl;
+		//cout << "EffectYellowPoisonToCreatureLoader : 크리쳐가 널입니다." << eos;
 		return;
 	}
 		

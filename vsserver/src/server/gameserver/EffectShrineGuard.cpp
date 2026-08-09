@@ -139,7 +139,7 @@ void EffectShrineGuard::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectShrineGuard" << "unaffect BEGIN" << endl;
+	//cout << "EffectShrineGuard" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -155,7 +155,7 @@ void EffectShrineGuard::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_SHRINE_GUARD);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectShrineGuard" << "unaffect END" << endl;
+	//cout << "EffectShrineGuard" << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH
@@ -169,7 +169,7 @@ void EffectShrineGuard::unaffect(Item* pItem)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectShrineGuard" << "unaffect BEGIN" << endl;
+	//cout << "EffectShrineGuard" << "unaffect BEGIN" << eos;
 
 	Assert(pItem != NULL);
 
@@ -188,7 +188,7 @@ void EffectShrineGuard::unaffect(Item* pItem)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_SHRINE_GUARD);
 	pZone->broadcastPacket(pCorpse->getX(), pCorpse->getY(), &gcRemoveEffect);
 
-	//cout << "EffectShrineGuard" << "unaffect END" << endl;
+	//cout << "EffectShrineGuard" << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

@@ -71,7 +71,7 @@ void EffectMasterLairPass::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectMasterLairPass" << "unaffect BEGIN" << endl;
+	//cout << "EffectMasterLairPass" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -90,7 +90,7 @@ void EffectMasterLairPass::unaffect(Creature* pCreature)
 
 	*/
 
-	//cout << "EffectMasterLairPass" << "unaffect END" << endl;
+	//cout << "EffectMasterLairPass" << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

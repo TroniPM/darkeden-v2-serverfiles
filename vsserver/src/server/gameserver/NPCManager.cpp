@@ -83,7 +83,7 @@ void NPCManager::load (ZoneID_t zoneID, int race)
 
 				pNPC->setTaxingCastleZoneID( pResult->getInt(++i) );
 
-//				cout << pNPC->getName() << "은 " << pNPC->getTaxingCastleZoneID() << " 존에서 세금 매깁니다." << endl;
+//				cout << pNPC->getName() << "은 " << pNPC->getTaxingCastleZoneID() << " 존에서 세금 매깁니다." << eos;
 				filelog("NPC.log", "%s는 %u존에서 세금 매깁니다.", pNPC->getName().c_str(), pNPC->getTaxingCastleZoneID() );
 
 				printf("NPC[%s] loading begin >> ", pNPC->getName().c_str());
@@ -128,7 +128,7 @@ void NPCManager::processCreatures ()
 	catch (Throwable & t)
 	{
 		filelog("NPCManagerBug.log", "ProcessCreatureBug : %s", t.toString().c_str());
-		//cerr << t.toString() << endl;
+		//cerr << t.toString() << eos;
 	}
 
 	__END_DEBUG

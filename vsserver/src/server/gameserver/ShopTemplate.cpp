@@ -143,7 +143,7 @@ ShopTemplate* ShopTemplateManager::getTemplate(ShopTemplateID_t id) const
 
 	if (itr == m_Entries.end())
 	{
-		cerr << "ShopTemplateManager::getTemplate() : NoSuchElementException" << endl;
+		cerr << "ShopTemplateManager::getTemplate() : NoSuchElementException" << eos;
 		throw NoSuchElementException("template not exist.");
 	}
 

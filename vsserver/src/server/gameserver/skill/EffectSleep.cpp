@@ -47,7 +47,7 @@ void EffectSleep::unaffect( Creature* pCreature )
 {
 	__BEGIN_TRY
 
-	//cout << "EffectSleep " << "unaffect BEGIN" << endl;
+	//cout << "EffectSleep " << "unaffect BEGIN" << eos;
 
 	Assert( pCreature != NULL );
 

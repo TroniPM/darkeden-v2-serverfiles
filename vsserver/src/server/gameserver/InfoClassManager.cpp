@@ -173,7 +173,7 @@ ItemType_t  InfoClassManager::getRandomItemType() const
 	cout << "m_TotalRatio = " << m_TotalRatio
 		<< ", fail/succeed = " << failRatio<< "/" << succeedRatio
 		<< ", newTotalRatio = " << newTotalRatio
-		<< ", select = " << itemTypeRatio << endl;
+		<< ", select = " << itemTypeRatio << eos;
 	*/
 
 	// 0번은 실패로 보고..
@@ -198,7 +198,7 @@ ItemType_t  InfoClassManager::getRandomItemType() const
 
 		ratioSum += ratio;
 
-		//cout << " , ratioSum/Select = " << ratioSum << "/" << itemTypeRatio << endl;
+		//cout << " , ratioSum/Select = " << ratioSum << "/" << itemTypeRatio << eos;
 
 		if (itemTypeRatio < ratioSum)
 		{

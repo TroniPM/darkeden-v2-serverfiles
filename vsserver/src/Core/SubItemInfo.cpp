@@ -25,7 +25,7 @@ void SubItemInfo::read ( SocketInputStream & iStream )
 	iStream.read( m_SlotID );
 
 	} catch( Throwable & t ) {
-		cout << t.toString() << endl;
+		cout << t.toString() << eos;
 	}
 
 	__END_CATCH
@@ -48,7 +48,7 @@ void SubItemInfo::write ( SocketOutputStream & oStream ) const
 	oStream.write( m_SlotID );
 
 	} catch (Throwable & t ) {
-		cout << t.toString() << endl;
+		cout << t.toString() << eos;
 	}
 
 	__END_CATCH

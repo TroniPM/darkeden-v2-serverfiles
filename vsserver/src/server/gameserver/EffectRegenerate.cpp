@@ -53,7 +53,7 @@ void EffectRegenerate::affect() throw(Error)
 		gcHP.setCurrentHP( pMonster->getHP() );
 		pMonster->getZone()->broadcastPacket( pMonster->getX(), pMonster->getY(), &gcHP );
 
-		cout << pMonster->getName() << "의 HP가 " << pMonster->getHP() << "가 되었습니다." << endl;
+		cout << pMonster->getName() << "의 HP가 " << pMonster->getHP() << "가 되었습니다." << eos;
 	}
 
 	__END_CATCH
@@ -66,9 +66,9 @@ void EffectRegenerate::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectRegenerate" << "unaffect BEGIN" << endl;
+	//cout << "EffectRegenerate" << "unaffect BEGIN" << eos;
 
-	//cout << "EffectRegenerate" << "unaffect END" << endl;
+	//cout << "EffectRegenerate" << "unaffect END" << eos;
 						
 	__END_CATCH
 }

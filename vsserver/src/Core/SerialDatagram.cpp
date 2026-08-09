@@ -116,7 +116,7 @@ void SerialDatagram::read ( SerialDatagramPacket * & pPacket )
 	read( (char*)&packetSize , szPacketSize );
 	read( (char*)&serial, szuint );
 
-	cout << "SerialDatagramPacket I  D : " << packetID << endl;
+	cout << "SerialDatagramPacket I  D : " << packetID << eos;
 
 	// 패킷 아이디가 이상할 경우
 	if ( packetID >= Packet::PACKET_MAX )

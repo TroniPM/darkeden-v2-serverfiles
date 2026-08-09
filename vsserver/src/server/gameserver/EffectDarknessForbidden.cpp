@@ -32,12 +32,12 @@ void EffectDarknessForbidden::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectDarknessForbidden" << "unaffect BEGIN" << endl;
+	//cout << "EffectDarknessForbidden" << "unaffect BEGIN" << eos;
 
     Tile& tile = m_pZone->getTile(m_X, m_Y);
 	tile.deleteEffect(m_ObjectID);
 
-	//cout << "EffectDarknessForbidden" << "unaffect END" << endl;
+	//cout << "EffectDarknessForbidden" << "unaffect END" << eos;
 
 	__END_CATCH
 }

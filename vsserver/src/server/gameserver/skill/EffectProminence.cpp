@@ -41,7 +41,7 @@ void EffectProminence::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectProminence" << "affect BEGIN" << endl;
+	//cout << "EffectProminence" << "affect BEGIN" << eos;
 	
 	Assert(m_pZone != NULL);
 
@@ -163,7 +163,7 @@ void EffectProminence::affect()
 	
 	setNextTime(m_Tick);
 
-	//cout << "EffectProminence" << "affect END" << endl;
+	//cout << "EffectProminence" << "affect END" << eos;
 
 	__END_CATCH 
 }
@@ -175,12 +175,12 @@ void EffectProminence::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectProminence" << "unaffect BEGIN" << endl;
+	//cout << "EffectProminence" << "unaffect BEGIN" << eos;
 
     Tile& tile = m_pZone->getTile(m_X, m_Y);
 	tile.deleteEffect(m_ObjectID);
 
-	//cout << "EffectProminence" << "unaffect END" << endl;
+	//cout << "EffectProminence" << "unaffect END" << eos;
 
 	__END_CATCH
 }

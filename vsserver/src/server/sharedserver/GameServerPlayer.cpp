@@ -212,10 +212,10 @@ void GameServerPlayer::sendPacket ( Packet * pPacket )
 	m_pOutputStream->writePacket( pPacket );
 
 	/*
-	cout << endl;
-	cout << "=== GameServerPlayer::sendPacket() ===" << endl;
-	cout << pPacket->toString() << endl;
-	cout << "============================" << endl;
+	cout << eos;
+	cout << "=== GameServerPlayer::sendPacket() ===" << eos;
+	cout << pPacket->toString() << eos;
+	cout << "============================" << eos;
 	*/
 
 	__END_CATCH
@@ -246,8 +246,8 @@ void GameServerPlayer::disconnect ( bool bDisconnected )
 	} 
 	catch ( InvalidProtocolException & t ) 
 	{
-		cerr << "GameServerPlayer::disconnect Exception Check!!" << endl;
-		cerr << t.toString() << endl;
+		cerr << "GameServerPlayer::disconnect Exception Check!!" << eos;
+		cerr << t.toString() << eos;
 		m_pSocket->close();
 		//throw Error("¾¾¹Ù...");
 	}

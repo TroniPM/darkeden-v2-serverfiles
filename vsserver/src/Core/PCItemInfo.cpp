@@ -157,7 +157,7 @@ void PCItemInfo::write ( SocketOutputStream & oStream )
 	oStream.write( m_HeroOption );
 	oStream.write( m_HeroOptionAttr );
 
-	//cout << toString().c_str() << endl;
+	//cout << toString().c_str() << eos;
 
 	__END_CATCH
 }

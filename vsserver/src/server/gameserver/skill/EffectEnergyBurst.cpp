@@ -33,7 +33,7 @@ void EffectEnergyBurst::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectEnergyBurst" << "unaffect BEGIN" << endl;
+	//cout << "EffectEnergyBurst" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isOusters());
@@ -60,7 +60,7 @@ void EffectEnergyBurst::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_ENERGY_BURST);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectEnergyBurst" << "unaffect END" << endl;
+	//cout << "EffectEnergyBurst" << "unaffect END" << eos;
 
 	__END_CATCH
 }

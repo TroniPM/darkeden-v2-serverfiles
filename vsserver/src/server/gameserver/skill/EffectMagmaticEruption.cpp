@@ -77,7 +77,7 @@ void EffectMagmaticEruption::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectMagmaticEruption" << "affect BEGIN" << endl;
+	//cout << "EffectMagmaticEruption" << "affect BEGIN" << eos;
 	
 	Assert(m_pZone != NULL);
 
@@ -190,7 +190,7 @@ void EffectMagmaticEruption::affect()
 	
 	setNextTime(10);
 
-	//cout << "EffectMagmaticEruption" << "affect END" << endl;
+	//cout << "EffectMagmaticEruption" << "affect END" << eos;
 
 	__END_CATCH 
 }
@@ -202,12 +202,12 @@ void EffectMagmaticEruption::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectMagmaticEruption" << "unaffect BEGIN" << endl;
+	//cout << "EffectMagmaticEruption" << "unaffect BEGIN" << eos;
 
     Tile& tile = m_pZone->getTile(m_X, m_Y);
 	tile.deleteEffect(m_ObjectID);
 
-	//cout << "EffectMagmaticEruption" << "unaffect END" << endl;
+	//cout << "EffectMagmaticEruption" << "unaffect END" << eos;
 
 	__END_CATCH
 }

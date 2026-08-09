@@ -69,7 +69,7 @@ void EffectArmageddon::affect(Creature* pCreature)
 	//	return;
 	//}
 
-	//cout << "EffectArmageddon affect damage :" << m_Damage << endl;
+	//cout << "EffectArmageddon affect damage :" << m_Damage << eos;
 
 	// 매초 데미지 주는거 잠시 막아놓음. by Sequoia
 	/*if ( pCreature->isSlayer() )
@@ -109,7 +109,7 @@ void EffectArmageddon::unaffect(Creature* pCreature)
 
 	Assert(pCreature != NULL);
 
-	//cout << "EffectArmageddon unaffect.." << endl;
+	//cout << "EffectArmageddon unaffect.." << eos;
 
 	// 플래그를 끈다.
 	pCreature->removeFlag(Effect::EFFECT_CLASS_ARMAGEDDON);
@@ -162,7 +162,7 @@ string EffectArmageddon::toString()
 void EffectArmageddon::decreaseHP( Damage_t damage )
 	throw()
 {
-	//cout << "EffectArmageddon Damaged : " << (int)damage << endl;
+	//cout << "EffectArmageddon Damaged : " << (int)damage << eos;
 
 	HP_t RemainHP = max( 0, m_HP - damage );
 

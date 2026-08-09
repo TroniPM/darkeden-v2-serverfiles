@@ -92,7 +92,7 @@ void EffectPassingHeal::affect(Creature* pTargetCreature)
 	setDeadline(0);
 	if ( pTargetCreature == NULL ) return;
 
-	cout << "affect passing heal : " << pTargetCreature->getName() << endl;
+	cout << "affect passing heal : " << pTargetCreature->getName() << eos;
 
 	Zone* pZone = pTargetCreature->getZone();
 
@@ -371,7 +371,7 @@ void EffectPassingHeal::affect(Creature* pTargetCreature)
 		if ( bAffected ) break;
 	}
 
-	cout << "affected passing heal : " << pTargetCreature->getName() << endl;
+	cout << "affected passing heal : " << pTargetCreature->getName() << eos;
 
 	__END_CATCH
 }

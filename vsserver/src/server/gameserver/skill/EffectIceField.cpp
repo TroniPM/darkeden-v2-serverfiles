@@ -43,7 +43,7 @@ void EffectIceField::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectIceField" << "affect BEGIN" << endl;
+	//cout << "EffectIceField" << "affect BEGIN" << eos;
 	
 	Assert(m_pZone != NULL);
 
@@ -116,7 +116,7 @@ void EffectIceField::affect()
 	
 	setNextTime(m_Tick);
 
-	//cout << "EffectIceField" << "affect END" << endl;
+	//cout << "EffectIceField" << "affect END" << eos;
 
 	__END_CATCH 
 }
@@ -146,12 +146,12 @@ void EffectIceField::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectIceField" << "unaffect BEGIN" << endl;
+	//cout << "EffectIceField" << "unaffect BEGIN" << eos;
 
     Tile& tile = m_pZone->getTile(m_X, m_Y);
 	tile.deleteEffect(m_ObjectID);
 
-	//cout << "EffectIceField" << "unaffect END" << endl;
+	//cout << "EffectIceField" << "unaffect END" << eos;
 
 	__END_CATCH
 }

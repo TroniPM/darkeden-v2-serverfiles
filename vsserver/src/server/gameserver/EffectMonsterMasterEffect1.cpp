@@ -34,7 +34,7 @@ Effect::EffectClass EffectMonsterMasterEffect1::getSendEffectClass() const throw
 	if ( level > 0 ) return (Effect::EffectClass)level;
 	else return getEffectClass();
 
-	cout << " 오오라 " << level << endl;
+	cout << " 오오라 " << level << eos;
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -59,7 +59,7 @@ void EffectMonsterMasterEffect1::affect(Creature* pCreature)
 
 	Assert(pCreature->isMonster());
 
-	cout << " 작동됨 " << getSendEffectClass() << "크리쳐 오브젝트 : " << pCreature->getObjectID() << endl;
+	cout << " 작동됨 " << getSendEffectClass() << "크리쳐 오브젝트 : " << pCreature->getObjectID() << eos;
 
 	pCreature->setFlag(getSendEffectClass());
 
@@ -92,7 +92,7 @@ void EffectMonsterMasterEffect1::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectMonsterMasterEffect1" << "unaffect BEGIN" << endl;
+	//cout << "EffectMonsterMasterEffect1" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -108,7 +108,7 @@ void EffectMonsterMasterEffect1::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(getSendEffectClass());
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectMonsterMasterEffect1" << "unaffect END" << endl;
+	//cout << "EffectMonsterMasterEffect1" << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

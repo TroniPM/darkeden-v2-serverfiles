@@ -40,7 +40,7 @@ ComposMei::ComposMei(ItemType_t itemType, const list<OptionType_t>& optionType, 
 {
 	setItemType(itemType);
 	setNum(Num);
-	//cout << "ComposMei::ComposMei(" << getOptionTypeToString(optionType).c_str() << ")" << endl;
+	//cout << "ComposMei::ComposMei(" << getOptionTypeToString(optionType).c_str() << ")" << eos;
 	if (!g_pItemInfoManager->isPossibleItem(getItemClass(), getItemType(), getOptionTypeList()))
 	{
 		filelog("itembug.log", "ComposMei::ComposMei() : Invalid item type or option type");
@@ -642,10 +642,10 @@ void ComposMeiLoader::load(Creature* pCreature)
 									pBeltInventory = ((SubInventory*)pBelt)->getInventory();
 										if (pBeltInventory->canAddingEx(x, y, pComposMei))
 										{
-											cout << " 추가완료"<< endl;
+											cout << " 추가완료"<< eos;
 											pBeltInventory->addItemEx(x, y, pComposMei);
 										}else{
-											cout << " 버그"<< endl;
+											cout << " 버그"<< eos;
 											processItemBugEx(pCreature, pComposMei);
 										}
 								}else{

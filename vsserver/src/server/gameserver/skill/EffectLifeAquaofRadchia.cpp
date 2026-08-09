@@ -40,7 +40,7 @@ void EffectLifeAquaofRadchia::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectLifeAquaofRadchia" << "affect BEGIN" << endl;
+	//cout << "EffectLifeAquaofRadchia" << "affect BEGIN" << eos;
 	
 	Assert(m_pZone != NULL);
 
@@ -115,7 +115,7 @@ void EffectLifeAquaofRadchia::affect()
 	
 	setNextTime(m_Tick);
 
-	//cout << "EffectLifeAquaofRadchia" << "affect END" << endl;
+	//cout << "EffectLifeAquaofRadchia" << "affect END" << eos;
 
 	__END_CATCH 
 }
@@ -145,12 +145,12 @@ void EffectLifeAquaofRadchia::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectLifeAquaofRadchia" << "unaffect BEGIN" << endl;
+	//cout << "EffectLifeAquaofRadchia" << "unaffect BEGIN" << eos;
 
     Tile& tile = m_pZone->getTile(m_X, m_Y);
 	tile.deleteEffect(m_ObjectID);
 
-	//cout << "EffectLifeAquaofRadchia" << "unaffect END" << endl;
+	//cout << "EffectLifeAquaofRadchia" << "unaffect END" << eos;
 
 	__END_CATCH
 }

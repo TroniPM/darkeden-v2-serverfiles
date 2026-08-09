@@ -77,7 +77,7 @@ void ActionSetPosition::execute (Creature * pCreature1 , Creature * pCreature2)
 			pZone->getTile( m_X-1, m_Y ).setBlocked(Creature::MOVE_MODE_WALKING);
 		}
 	} catch (Throwable &t) {
-		cout << t.toString() << endl;
+		cout << t.toString() << eos;
 		throw; // -_-;
 	}
 	

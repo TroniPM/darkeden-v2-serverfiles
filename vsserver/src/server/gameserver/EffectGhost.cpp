@@ -66,7 +66,7 @@ void EffectGhost::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectGhost" << "unaffect BEGIN" << endl;
+	//cout << "EffectGhost" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -85,7 +85,7 @@ void EffectGhost::unaffect(Creature* pCreature)
 
 	*/
 
-	//cout << "EffectGhost" << "unaffect END" << endl;
+	//cout << "EffectGhost" << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

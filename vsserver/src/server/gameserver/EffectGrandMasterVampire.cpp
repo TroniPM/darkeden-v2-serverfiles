@@ -89,7 +89,7 @@ void EffectGrandMasterVampire::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectGrandMasterVampire" << "unaffect BEGIN" << endl;
+	//cout << "EffectGrandMasterVampire" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -105,7 +105,7 @@ void EffectGrandMasterVampire::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_GRAND_MASTER_VAMPIRE);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectGrandMasterVampire" << "unaffect END" << endl;
+	//cout << "EffectGrandMasterVampire" << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

@@ -162,13 +162,13 @@ int CrystalOptionLoaderManager::getRandomItem(int minID, int maxID)
 
 	if(pCrystalOptionLoader->getItemOptionRatio() >= Randoms ){
 
-	cout << "아이템의 옵션 넣기 성공 : 확률(" << pCrystalOptionLoader->getItemOptionRatio() << " / " << Randoms << endl;
+	cout << "아이템의 옵션 넣기 성공 : 확률(" << pCrystalOptionLoader->getItemOptionRatio() << " / " << Randoms << eos;
 
 	return (int)pCrystalOptionLoader->getItemOptions();
 
 	}
 
-	cout << "아이템의 옵션 넣기 실패 : 확률(" << pCrystalOptionLoader->getItemOptionRatio() << " / " << Randoms << endl;
+	cout << "아이템의 옵션 넣기 실패 : 확률(" << pCrystalOptionLoader->getItemOptionRatio() << " / " << Randoms << eos;
 
 	minID++;
 

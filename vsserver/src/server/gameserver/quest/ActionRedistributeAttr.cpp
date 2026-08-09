@@ -35,13 +35,13 @@ void ActionRedistributeAttr::read (PropertyBuffer & propertyBuffer)
 		else if (AttrType == "INT") m_AttrType = 2;
 		else
 		{
-			cout << "ActionRedistributeAttr::read() : Unknown ATTR type" << endl;
+			cout << "ActionRedistributeAttr::read() : Unknown ATTR type" << eos;
 			throw ("ActionRedistributeAttr::read() : Unknown ATTR type");
 		}
 	} 
 	catch (NoSuchElementException & nsee)
 	{
-		cout << nsee.toString() << endl;
+		cout << nsee.toString() << eos;
 		throw Error(nsee.toString());
 	}
 	
@@ -105,7 +105,7 @@ void ActionRedistributeAttr::execute (Creature * pCreature1 , Creature * pCreatu
 
 		if (pResult->getRowCount() == 0)
 		{
-			cerr << "ActionRedistributeAttr : No Vampire Record On Table" << endl;
+			cerr << "ActionRedistributeAttr : No Vampire Record On Table" << eos;
 			throw Error("ActionRedistributeAttr : No Vampire Record On Table");
 		}
 		else

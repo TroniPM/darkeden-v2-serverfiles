@@ -1358,7 +1358,7 @@ void Ousters::wearItem(WearPart Part, Item* pItem)
 				// 검은 마우스 포인터에 달아줄 수 있지만, 방패는 어떻게 할 수가 없다.
 				// 인벤토리에 넣어줘야 할 텐데, 지금 당장은 어떻게 할 지를 모르겠네...
 				// 걍 입을 수 없다는 패킷을 보내주자...
-				//cerr << "양손에 칼과 방패를 들고 있어서, 양손 무기를 장착할 수 없습니다." << endl;
+				//cerr << "양손에 칼과 방패를 들고 있어서, 양손 무기를 장착할 수 없습니다." << eos;
 				return;
 			}
 		}
@@ -2024,7 +2024,7 @@ bool Ousters::isRealWearing(Item* pItem) const
 	}
 
 	if(ReqSkillLearn && !hasSkill(ReqSkillLearn)){
-		//cout << "스킬을 배우지않음" << endl;
+		//cout << "스킬을 배우지않음" << eos;
 		return false;
 	}
 
@@ -3338,7 +3338,7 @@ SkillBonus_t Ousters::getSkillPointCount( ElementalDomain eDomain )
 		}
 	}
 
-	//cout << (int)eDomain << "에 넣은 스킬포인트 : " << ret << endl;
+	//cout << (int)eDomain << "에 넣은 스킬포인트 : " << ret << eos;
 
 	return ret;
 }

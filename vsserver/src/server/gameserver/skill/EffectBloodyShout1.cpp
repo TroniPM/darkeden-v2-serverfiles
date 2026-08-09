@@ -33,7 +33,7 @@ void EffectBloodyShout1::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectBloodyShout1" << "unaffect BEGIN" << endl;
+	//cout << "EffectBloodyShout1" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isVampire());
@@ -60,7 +60,7 @@ void EffectBloodyShout1::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_BLOODY_SHOUT1);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectBloodyShout1" << "unaffect END" << endl;
+	//cout << "EffectBloodyShout1" << "unaffect END" << eos;
 
 	__END_CATCH
 }

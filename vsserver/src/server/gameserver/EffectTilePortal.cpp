@@ -52,7 +52,7 @@ void EffectTilePortal::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectTilePortal::unaffect() begin" << endl;
+	//cout << "EffectTilePortal::unaffect() begin" << eos;
 
 	// 타일에서 이펙트를 삭제하고...
 	Tile& tile = m_pZone->getTile(m_X, m_Y);
@@ -65,7 +65,7 @@ void EffectTilePortal::unaffect()
 	gcDeleteEffectFromTile.setXY(m_X, m_Y);
 	m_pZone->broadcastPacket(m_X, m_Y, &gcDeleteEffectFromTile);
 
-	//cout << "EffectTilePortal::unaffect() end" << endl;
+	//cout << "EffectTilePortal::unaffect() end" << eos;
 
 	__END_CATCH
 }

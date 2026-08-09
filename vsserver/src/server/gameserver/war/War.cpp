@@ -96,7 +96,7 @@ void War::initWarIDRegistry()
 
 	__LEAVE_CRITICAL_SECTION(m_Mutex)
 
-	cout << "War::WarIDRegistry:" << m_WarIDRegistry << endl;
+	cout << "War::WarIDRegistry:" << m_WarIDRegistry << eos;
 
 	__END_CATCH
 }

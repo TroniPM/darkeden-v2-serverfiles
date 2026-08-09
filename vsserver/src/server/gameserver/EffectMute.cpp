@@ -80,12 +80,12 @@ void EffectMute::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectMute" << "unaffect BEGIN" << endl;
+	//cout << "EffectMute" << "unaffect BEGIN" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 	unaffect(pCreature);
 
-	//cout << "EffectMute" << "unaffect END" << endl;
+	//cout << "EffectMute" << "unaffect END" << eos;
 						
 	__END_CATCH
 }

@@ -50,7 +50,7 @@ void ActionWaitForMeetCouple::execute (Creature * pCreature1 , Creature * pCreat
 	NPC* pNPC = dynamic_cast<NPC*>(pCreature1);
 	Assert( pNPC != NULL );
 
-//	cout << "ActionWaitForMeeCouple(" << pNPC->getObjectID() << ")" << endl;
+//	cout << "ActionWaitForMeeCouple(" << pNPC->getObjectID() << ")" << eos;
 
 	GCNPCResponse gcNPCResponse;
 	gcNPCResponse.setCode( NPC_RESPONSE_WAIT_FOR_MEET_COUPLE );

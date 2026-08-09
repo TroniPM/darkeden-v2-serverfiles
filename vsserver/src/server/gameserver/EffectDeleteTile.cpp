@@ -67,7 +67,7 @@ void EffectDeleteTile::unaffect()
 {
 	__BEGIN_TRY
 
-	cout << "delete effect " << m_X << " , " << m_Y << endl;
+	cout << "delete effect " << m_X << " , " << m_Y << eos;
 	Tile& EffectedTile = m_pZone->getTile(m_X, m_Y);
 	EffectedTile.deleteEffect(m_ObjectID);
 

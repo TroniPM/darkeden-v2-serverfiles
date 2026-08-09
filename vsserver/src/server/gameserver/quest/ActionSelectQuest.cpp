@@ -111,7 +111,7 @@ void ActionSelectQuest::execute (Creature * pCreature1 , Creature * pCreature2)
 			pPacketQI->goal = pQI->getGoalNum();
 			pPacketQI->timeLimit = pQI->getTimeLimit();
 
-			//cout << pPacketQI->questID << ", " << pPacketQI->goal << ", " << pPacketQI->timeLimit << endl;
+			//cout << pPacketQI->questID << ", " << pPacketQI->goal << ", " << pPacketQI->timeLimit << eos;
 
 			gcMKQInfo.addQuestInfo( pPacketQI );
 		}

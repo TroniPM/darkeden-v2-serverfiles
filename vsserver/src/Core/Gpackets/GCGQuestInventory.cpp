@@ -56,7 +56,7 @@ void GCGQuestInventory::write(SocketOutputStream & oStream) const throw(Protocol
 	BYTE size = m_ItemList.size();
 	oStream.write(size);
 
-	//cout << "퀘스트 인벤토리 개수 : " << (int)size << endl;
+	//cout << "퀘스트 인벤토리 개수 : " << (int)size << eos;
 
 	list<ItemType_t>::const_iterator itr = m_ItemList.begin();
 	list<ItemType_t>::const_iterator endItr = m_ItemList.end();
@@ -64,7 +64,7 @@ void GCGQuestInventory::write(SocketOutputStream & oStream) const throw(Protocol
 	for ( ; itr != endItr ; ++itr )
 	{
 		oStream.write( (*itr) );
-		//cout << "	퀘스트 아이템 : " << (int)(*itr) << endl;
+		//cout << "	퀘스트 아이템 : " << (int)(*itr) << eos;
 	}
 
 	__END_CATCH

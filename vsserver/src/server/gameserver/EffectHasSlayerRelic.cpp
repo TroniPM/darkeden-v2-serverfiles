@@ -150,7 +150,7 @@ void EffectHasSlayerRelic::affect(Item* pItem)
 		msg << pVampire->getName() << " 님이 ";
 	}
 
-	msg << " 슬레이어 성물을 가지고 있습니다." << endl;
+	msg << " 슬레이어 성물을 가지고 있습니다." << eos;
 
 	GCSystemMessage gcSystemMessage;
 	gcSystemMessage.setMessage(msg.toString());

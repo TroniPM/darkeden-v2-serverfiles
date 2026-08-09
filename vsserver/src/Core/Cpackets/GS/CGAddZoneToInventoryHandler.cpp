@@ -82,17 +82,17 @@ void CGAddZoneToInventoryHandler::execute (CGAddZoneToInventory* pPacket , Playe
 		if (!isValidZoneCoord(pZone, ZoneX, ZoneY)) goto ERROR;
 
 		Tile& _Tile = pZone->getTile(ZoneX , ZoneY);
-		cout << "여기까지는 됨" << endl;
+		cout << "여기까지는 됨" << eos;
 		// 타일에 아이템이 존재하는지를 체크한다.
 		if (!_Tile.hasItem()) goto ERROR;
 
 		// 아이템 포인터가 널이거나, 모터사이클이라면 주을 수 없다.
 		Item* pItem = _Tile.getItem();
 		if (pItem == NULL || !isPortableItem(pItem)) goto ERROR;
-		cout << "여기까지는 됨2" << endl;
+		cout << "여기까지는 됨2" << eos;
 		// 아이템을 주을 수 없는 상태라면 주을 수 없다. -_-;
 		if (!isAbleToPickupItem(pPC, pItem)) goto ERROR;
-		cout << "여기까지는 됨3" << endl;
+		cout << "여기까지는 됨3" << eos;
 		// OID가 일치하는지를 검사해야 한다.
 		ObjectID_t ItemObjectID = pItem->getObjectID();
 		if (ItemObjectID != pPacket->getObjectID()) goto ERROR;
@@ -104,12 +104,12 @@ void CGAddZoneToInventoryHandler::execute (CGAddZoneToInventory* pPacket , Playe
 
 		// 인벤토리 좌표 초과라면 에러다.
 		if (InvenX >= 10 || InvenY >= 6) goto ERROR;
-		cout << "여기까지는 됨4" << endl;
+		cout << "여기까지는 됨4" << eos;
 		// 그 좌표에 아이템을 더할 수 없어도 에러다.
 		if (!pInventory->canAdding(InvenX, InvenY, pItem)) goto ERROR;
 
 		// 피의 성서일 경우 주울 수 있는지 확인한다. --> 이 코드는 isAbleToPickup 내부로 옮겼다..
-		cout << "여기까지는 됨5" << endl;
+		cout << "여기까지는 됨5" << eos;
 		// 우선권이 붙어있는 아이템일 경우에는 주인 또는 주인파티가 아니라면 주을 수 없다.
 		// 렐릭일 경우에는 우선순위 이펙트를 삭제해준다.
 		if ( isRelicItem( pItem )
@@ -120,7 +120,7 @@ void CGAddZoneToInventoryHandler::execute (CGAddZoneToInventory* pPacket , Playe
 			effectManager.deleteEffect(Effect::EFFECT_CLASS_PRECEDENCE);
 			pItem->removeFlag(Effect::EFFECT_CLASS_PRECEDENCE);
 		}
-		cout << "여기까지는 됨6" << endl;
+		cout << "여기까지는 됨6" << eos;
 		if (pItem->isFlag(Effect::EFFECT_CLASS_PRECEDENCE))
 		{
 			Timeval currentTime;
@@ -174,21 +174,21 @@ void CGAddZoneToInventoryHandler::execute (CGAddZoneToInventory* pPacket , Playe
 		Item* pPrevItem = pInventory->searchItem(InvenX, InvenY, pItem, pt);
 			if (pPrevItem != NULL)
 			{
-			cout << "여기 사용되나"<< endl;
+			cout << "여기 사용되나"<< eos;
 
 			if (canStack(pItem, pPrevItem))
 			{
 				// add by sonic 2006.10.30  렝岺唐珂쇌掘齡膠틔렴瞳寧폅
 				if(pItem->isTimeLimitItem() || pPrevItem->isTimeLimitItem())
 				{
-					//cout << "cannot add" << endl;
+					//cout << "cannot add" << eos;
 					GCCannotAdd _GCCannotAdd;
 					_GCCannotAdd.setObjectID(pPacket->getObjectID());
 					pPlayer->sendPacket(&_GCCannotAdd);
 					return;
 				}
 				int MaxStack = ItemMaxStack[pItem->getItemClass()];
-			cout << "아이템 정보 : "<< pItem->getSilver() << " 아이템 정보 2 : " << pPrevItem->getSilver() << endl;
+			cout << "아이템 정보 : "<< pItem->getSilver() << " 아이템 정보 2 : " << pPrevItem->getSilver() << eos;
 		//f(pItem->getSilver() == pPrevItem->getSilver()){
 				
 				if( pt.x == InvenX && pt.y == InvenY ) 
@@ -245,7 +245,7 @@ void CGAddZoneToInventoryHandler::execute (CGAddZoneToInventory* pPacket , Playe
 						GCNoticeEvent gcNE;
 						gcNE.setCode( NOTICE_EVENT_NETMARBLE_CARD_FULL );
 						pGamePlayer->sendPacket( &gcNE );
-						cout << "gcNE sent" << endl;
+						cout << "gcNE sent" << eos;
 					}
 
 					if ( pPrevItem->getItemClass() == Item::ITEM_CLASS_LUCKY_BAG
@@ -265,7 +265,7 @@ void CGAddZoneToInventoryHandler::execute (CGAddZoneToInventory* pPacket , Playe
 
 						if ( !pInventory->addItem(pt.x, pt.y, pNewItem) )
 						{
-							cout << "-_-;" << endl;
+							cout << "-_-;" << eos;
 							return;
 						}
 
@@ -495,7 +495,7 @@ void CGAddZoneToInventoryHandler::execute (CGAddZoneToInventory* pPacket , Playe
 	} 
 	catch (Throwable & t) 
 	{ 
-		//cerr << t.toString() << endl; 
+		//cerr << t.toString() << eos; 
 	}
 
 ERROR:
@@ -740,7 +740,7 @@ void CGAddZoneToInventoryHandler::execute (CGAddZoneToInventory* pPacket , Playe
 	} 
 	catch (Throwable & t) 
 	{ 
-		//cerr << t.toString() << endl; 
+		//cerr << t.toString() << eos; 
 	}
 
 #endif	// __GAME_SERVER__

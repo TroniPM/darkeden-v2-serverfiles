@@ -32,7 +32,7 @@ void EffectSummonSylph::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectSummonSylph" << "unaffect BEGIN" << endl;
+	//cout << "EffectSummonSylph" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isOusters());
@@ -69,7 +69,7 @@ void EffectSummonSylph::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(556);
 	pTargetOusters->getPlayer()->sendPacket(&gcRemoveEffect);*/
 
-	//cout << "EffectSummonSylph" << "unaffect END" << endl;
+	//cout << "EffectSummonSylph" << "unaffect END" << eos;
 
 	__END_CATCH
 }

@@ -28,8 +28,8 @@ void Restore::execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSk
 {
 	__BEGIN_TRY
 
-	//cout << "TID[" << Thread::self() << "]" << getSkillHandlerName() << " Begin" << endl;
-	cout << "Restore2 Start" << endl;
+	//cout << "TID[" << Thread::self() << "]" << getSkillHandlerName() << " Begin" << eos;
+	cout << "Restore2 Start" << eos;
 
 	Assert(pSlayer != NULL);
 	Assert(pSkillSlot != NULL);
@@ -49,7 +49,7 @@ void Restore::execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSk
 			|| !pFromCreature->isVampire())
 		{
 			executeSkillFailException(pSlayer, getSkillType());
-			//cout << "TID[" << Thread::self() << "]" << getSkillHandlerName() << " End" << endl;
+			//cout << "TID[" << Thread::self() << "]" << getSkillHandlerName() << " End" << eos;
 			return;
 		}
 
@@ -302,7 +302,7 @@ void Restore::execute(Slayer* pSlayer, ObjectID_t TargetObjectID, SkillSlot* pSk
 		executeSkillFailException(pSlayer, getSkillType());
 	}
 
-	//cout << "TID[" << Thread::self() << "]" << getSkillHandlerName() << " End" << endl;
+	//cout << "TID[" << Thread::self() << "]" << getSkillHandlerName() << " End" << eos;
 
 	__END_CATCH
 }
@@ -315,8 +315,8 @@ void Restore::execute(NPC* pNPC, Creature* pFromCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "TID[" << Thread::self() << "]" << getSkillHandlerName() << " Begin" << endl;
-	cout << "NPC Restore start" << endl;
+	//cout << "TID[" << Thread::self() << "]" << getSkillHandlerName() << " Begin" << eos;
+	cout << "NPC Restore start" << eos;
 
 	Assert(pNPC != NULL);
 	Assert(pFromCreature != NULL);
@@ -329,7 +329,7 @@ void Restore::execute(NPC* pNPC, Creature* pFromCreature)
 		// 뱀파이어만 건드릴 수가 있다.
 		if (!pFromCreature->isVampire())
 		{
-			//cout << "TID[" << Thread::self() << "]" << getSkillHandlerName() << " End" << endl;
+			//cout << "TID[" << Thread::self() << "]" << getSkillHandlerName() << " End" << eos;
 			return;
 		}
 
@@ -561,7 +561,7 @@ void Restore::execute(NPC* pNPC, Creature* pFromCreature)
 
 	}
 
-	//cout << "TID[" << Thread::self() << "]" << getSkillHandlerName() << " End" << endl;
+	//cout << "TID[" << Thread::self() << "]" << getSkillHandlerName() << " End" << eos;
 
 	__END_CATCH
 }

@@ -73,8 +73,8 @@ void TriggerManager::load (const string & name)
 			pTrigger->setTriggerID(pResult->getInt(1));
 
 			//cout << "Trigger[" << pTrigger->getTriggerID() << "] loading > ";
-			//cout << "CONDITIONS:\n" << trim(pResult->getString(3)) << endl;
-			//cout << "ACTIONS:\n" << trim(pResult->getString(4)) << endl;
+			//cout << "CONDITIONS:\n" << trim(pResult->getString(3)) << eos;
+			//cout << "ACTIONS:\n" << trim(pResult->getString(4)) << eos;
 
 			pTrigger->setTriggerType(trim(pResult->getString(2)));
 			pTrigger->setConditions(trim(pResult->getString(3)));

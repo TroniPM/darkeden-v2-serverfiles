@@ -141,12 +141,12 @@ void Item::makePCItemInfo(PCItemInfo& result) const
 
 void Item::whenPCTake( PlayerCreature* pPC )
 {
-//	cout << pPC->getName() << " Take " << toString() << endl; 
+//	cout << pPC->getName() << " Take " << toString() << eos; 
 }
 
 void Item::whenPCLost( PlayerCreature* pPC )
 {
-//	cout << pPC->getName() << " Lost " << toString() << endl; 
+//	cout << pPC->getName() << " Lost " << toString() << eos; 
 	Store* pStore = pPC->getStore();
 	BYTE index = pStore->getItemIndex(this);
 

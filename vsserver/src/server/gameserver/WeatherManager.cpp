@@ -274,11 +274,11 @@ void WeatherManager::heartbeat ()
 
 			m_pZone->broadcastDarkLightPacket(&gcChangeDarkLight, &gcChangeDarkLight2, NULL);
 
-			//cout << "(DarkLevel/LightLevel) : (" << (int)darkLevel << "," << (int)lightLevel << ") at " << g_pTimeManager->getGameTime().toString() << endl;
+			//cout << "(DarkLevel/LightLevel) : (" << (int)darkLevel << "," << (int)lightLevel << ") at " << g_pTimeManager->getGameTime().toString() << eos;
 		}
 		else
 		{
-			//cout << "(DarkLevel/LightLevel) : (" << (int)darkLevel << "," << (int)lightLevel << ") at " << g_pTimeManager->getGameTime().toString() << endl;
+			//cout << "(DarkLevel/LightLevel) : (" << (int)darkLevel << "," << (int)lightLevel << ") at " << g_pTimeManager->getGameTime().toString() << eos;
 		}
 
 		m_Next10Min += 120;

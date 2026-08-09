@@ -311,7 +311,7 @@ DirectiveSet* DirectiveSetManager::getDirectiveSet(uint index)
 
 	if (index >= m_nSetCount)
 	{
-		cerr << "DirectiveSetManager::getDirectiveSet() : Out of bounds, value = [" << index << "]" << endl;
+		cerr << "DirectiveSetManager::getDirectiveSet() : Out of bounds, value = [" << index << "]" << eos;
 		throw("DirectiveSetManager::getDirectiveSet() : Out of bounds!");
 	}
 
@@ -331,7 +331,7 @@ void DirectiveSetManager::createDirectiveSet(uint index, const string& name, con
 
 	if (index >= m_nSetCount)
 	{
-		cerr << "DirectiveSetManager::createDirectiveSet() : Out of bounds!" << endl;
+		cerr << "DirectiveSetManager::createDirectiveSet() : Out of bounds!" << eos;
 		throw("DirectiveSetManager::createDirectiveSet() : Out of bounds!");
 	}
 
@@ -408,7 +408,7 @@ void DirectiveSetManager::createDirectiveSet(uint index, const string& name, con
 			}
 			else
 			{
-				cerr << "DirectiveSetManager::createDirectiveSet() : 알 수 없는 IDENTIFIER" << endl;
+				cerr << "DirectiveSetManager::createDirectiveSet() : 알 수 없는 IDENTIFIER" << eos;
 				throw ("DirectiveSetManager::createDirectiveSet() : 알 수 없는 IDENTIFIER");
 			}
 		}
@@ -479,7 +479,7 @@ void DirectiveSetManager::createDirectiveSet(uint index, const string& name, con
 				}
 				else
 				{
-					cerr << "DirectiveSetManager::createDirectiveSet() : 알 수 없는 IDENTIFIER" << endl;
+					cerr << "DirectiveSetManager::createDirectiveSet() : 알 수 없는 IDENTIFIER" << eos;
 					throw ("DirectiveSetManager::createDirectiveSet() : 알 수 없는 IDENTIFIER");
 				}
 			}
@@ -491,7 +491,7 @@ void DirectiveSetManager::createDirectiveSet(uint index, const string& name, con
 	m_ppSet[index]->setAttackAir( m_ppSet[index]->hasCondition( DIRECTIVE_COND_ENEMY_ON_AIR ) );
 	m_ppSet[index]->setSeeSafeZone( m_ppSet[index]->hasCondition( DIRECTIVE_COND_ENEMY_ON_SAFE_ZONE ) );
 
-	if ( m_ppSet[index]->canSeeSafeZone() ) cout << index << " : can see safe zone" << endl;
+	if ( m_ppSet[index]->canSeeSafeZone() ) cout << index << " : can see safe zone" << eos;
 
 	__END_CATCH
 }
@@ -529,8 +529,8 @@ void DirectiveSetManager::parseDirectiveParameter(Directive* pDirective, const s
 			case MODE_CONDITION:
 				if (paramCount != 0) 
 				{
-					cerr << "DirectiveSetManager::parseParameter() : There's two or more parameters in condition" << endl;
-					cerr << "ParsingText: " << text.c_str() << endl;
+					cerr << "DirectiveSetManager::parseParameter() : There's two or more parameters in condition" << eos;
+					cerr << "ParsingText: " << text.c_str() << eos;
 					throw("DirectiveSetManager::parseParameter() : There's two or more parameters in condition");
 				}
 				pDirective->addCondition(getCondition(token));
@@ -553,8 +553,8 @@ void DirectiveSetManager::parseDirectiveParameter(Directive* pDirective, const s
 
 
 						default :
-							cerr << "DirectiveSetManager::parseParameter() : There's two or more parameters in condition" << endl;
-							cerr << "ParsingText: " << text.c_str() << endl;
+							cerr << "DirectiveSetManager::parseParameter() : There's two or more parameters in condition" << eos;
+							cerr << "ParsingText: " << text.c_str() << eos;
 							throw Error("No Need Parameter!");
 					}
 
@@ -593,7 +593,7 @@ int DirectiveSetManager::getCondition(const string& token)
 	msg << "DirectiveSetManager::getCondition() : Invalid condition string["
 		<< token << "]";
 
-	cerr << msg.toString() << endl;
+	cerr << msg.toString() << eos;
 	throw(msg.toString());
 	return DIRECTIVE_COND_MAX;
 
@@ -612,7 +612,7 @@ int DirectiveSetManager::getAction(const string& token)
 	for (int i=0; i<DIRECTIVE_ACTION_MAX; i++)
 		if (DirectiveAction2String[i] == token) return i;
 
-	cerr << "DirectiveSetManager::getAction() : Invalid action[" << token << "]" << endl;
+	cerr << "DirectiveSetManager::getAction() : Invalid action[" << token << "]" << eos;
 	throw("DirectiveSetManager::getAction() : Invalid action");
 	return DIRECTIVE_COND_MAX;
 
@@ -635,7 +635,7 @@ int DirectiveSetManager::getParameter(const string& token)
 			return i;
 	}
 
-	cerr << "DirectiveSetManager::getParameter() : Invalid parameter[" << token << "]" << endl;
+	cerr << "DirectiveSetManager::getParameter() : Invalid parameter[" << token << "]" << eos;
 	throw("DirectiveSetManager::getParameter() : Invalid parameter");
 
 	return 0;
@@ -656,7 +656,7 @@ int DirectiveSetManager::getRatio(const string& token)
 
 	if (rValue < 0 || rValue > 100) 
 	{
-		cerr << "DirectiveSetManager::getRatio() : Invalid ratio value" << endl;
+		cerr << "DirectiveSetManager::getRatio() : Invalid ratio value" << eos;
 		throw ("DirectiveSetManager::getRatio() : Invalid ratio value");
 	}
 

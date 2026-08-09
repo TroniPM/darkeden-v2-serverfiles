@@ -49,14 +49,14 @@ bool EffectEnergyDrop::affectCreature(Creature* pTargetCreature, bool bAffectByM
 {
 	__BEGIN_TRY
 
-	//cout << "EffectEnergyDrop " << "affectCreature Begin " << endl;
+	//cout << "EffectEnergyDrop " << "affectCreature Begin " << eos;
 
 	Assert(pTargetCreature != NULL);
 
 	// 상대에게 이미 poison 이펙트가 걸려져 있는 경우에는 걸리지 않는다.
 	if (pTargetCreature->isFlag(Effect::EFFECT_CLASS_ENERGY_DROP_TO_CREATURE))
 	{
-		//cout << "EffectEnergyDrop " << "affectCreature End(Already Effected) " << endl;
+		//cout << "EffectEnergyDrop " << "affectCreature End(Already Effected) " << eos;
 		return false;
 	}
 
@@ -72,7 +72,7 @@ bool EffectEnergyDrop::affectCreature(Creature* pTargetCreature, bool bAffectByM
 	// 상대방에게 미칠 독 데미지를 계산한다.
 	int DropDamage = computeMagicDamage(pTargetCreature, m_Damage, SKILL_ENERGY_DROP);
 
-	//cout << "EffectEnergyDrop(Damage:" << DropDamage << ") Affected" << endl;
+	//cout << "EffectEnergyDrop(Damage:" << DropDamage << ") Affected" << eos;
 	if (DropDamage > 0)
 	{
 		// 포이즌 이펙트를 생성해서, 타겟 크리쳐에 붙이고, 플래그를 켜준다.
@@ -113,7 +113,7 @@ bool EffectEnergyDrop::affectCreature(Creature* pTargetCreature, bool bAffectByM
 		pZone->broadcastPacket(pTargetCreature->getX(), pTargetCreature->getY(), &gcAddEffect);
 	}
 
-	//cout << "EffectEnergyDrop " << "affectCreature End " << endl;
+	//cout << "EffectEnergyDrop " << "affectCreature End " << eos;
 
 	return true;
 

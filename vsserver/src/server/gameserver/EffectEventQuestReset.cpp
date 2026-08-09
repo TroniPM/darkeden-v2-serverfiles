@@ -53,7 +53,7 @@ void EffectEventQuestReset::affect (Creature* pCreature)
 
 //	int lastSec = getRemainDuration() * 10;
 	int lastSec = timediff( m_Deadline, gCurrentTime ).tv_sec;
-	cout << "lastSec : " << lastSec << endl;
+	cout << "lastSec : " << lastSec << eos;
 	int lastHours = lastSec/3600;
 	int lastMins = (lastSec%3600)/60;
 
@@ -63,7 +63,7 @@ void EffectEventQuestReset::affect (Creature* pCreature)
 	gcSM.setMessage(buffer);
 	pPC->getPlayer()->sendPacket( &gcSM );
 
-	cout << gcSM.getMessage() << endl;
+	cout << gcSM.getMessage() << eos;
 
 	__END_CATCH
 }

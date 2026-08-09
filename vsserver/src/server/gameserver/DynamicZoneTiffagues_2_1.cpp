@@ -176,7 +176,7 @@ void DynamicZoneTiffagues_2_1::heartbeat()
 			clearMono();
 			processEntering();
 			m_OMOAStatus = SAY_TIFFAUGE;
-			cout << "-----------------------ADD_MONO" << endl;
+			cout << "-----------------------ADD_MONO" << eos;
 		}
 		break;
 	case SAY_TIFFAUGE:
@@ -273,7 +273,7 @@ void DynamicZoneTiffagues_2_1::heartbeat()
 			// 10분이라는 시간이 주어지는데 클리어를 못했을 경우 내보내버린다.
 			killPC();
 			m_OMOAStatus = CLEAR_MONO;
-			cout << "-----------------------CLEAR_MONO" << endl;
+			cout << "-----------------------CLEAR_MONO" << eos;
 		}
 
 		}
@@ -290,7 +290,7 @@ void DynamicZoneTiffagues_2_1::heartbeat()
 			// 보스형 나오신다.
 			timecheck();
 			m_OMOAStatus = WAIT_FOR_COMPLETE;
-			cout << "-----------------------WAIT_FOR_COMPLETE" << endl;
+			cout << "-----------------------WAIT_FOR_COMPLETE" << eos;
 		}
 		break;
 
@@ -300,7 +300,7 @@ void DynamicZoneTiffagues_2_1::heartbeat()
 			// 10분이라는 시간이 주어지는데 클리어를 못했을 경우 내보내버린다.
 			openGateToOut();
 			m_OMOAStatus = CLEAR_MONO;
-			cout << "-----------------------CLEAR_MONO" << endl;
+			cout << "-----------------------CLEAR_MONO" << eos;
 		}
 
 	/*	if ( !checkMono() )
@@ -317,7 +317,7 @@ void DynamicZoneTiffagues_2_1::heartbeat()
 		if ( clearMono() )
 		{
 			m_OMOAStatus = WAIT_FOR_CLEAR;
-			cout << "-----------------------WAIT_FOR_CLEAR" << endl;
+			cout << "-----------------------WAIT_FOR_CLEAR" << eos;
 		}
 		break;
 
@@ -326,7 +326,7 @@ void DynamicZoneTiffagues_2_1::heartbeat()
 		{
 			m_OMOAStatus = OUSTERS_MIRROR_OF_ABYSS_END;
 			m_Status = DYNAMIC_ZONE_STATUS_READY;
-			cout << "-----------------------READY" << endl;
+			cout << "-----------------------READY" << eos;
 		}
 		break;
 	}
@@ -341,7 +341,7 @@ void DynamicZoneTiffagues_2_1::heartbeat()
 			if ( current > m_Deadline )
 			{
 				m_OMOAStatus = CLEAR_MONO;
-				cout << "-----------------------Time out" << endl;
+				cout << "-----------------------Time out" << eos;
 			}
 		}
 		else if ( m_OMOAStatus == WAIT_FOR_COMPLETE )

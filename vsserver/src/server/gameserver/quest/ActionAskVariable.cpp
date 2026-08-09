@@ -239,7 +239,7 @@ void ActionAskVariable::execute (Creature * pCreature1 , Creature * pCreature2)
 				if ( pGuild == NULL ) pParam->setValue( "없는" );
 				else pParam->setValue( pGuild->getName() );
 
-				cout << pParam->getValue() << " 원군" << endl;;
+				cout << pParam->getValue() << " 원군" << eos;;
 			}
 		}
 		else if ( keyword == "RedistGold" )

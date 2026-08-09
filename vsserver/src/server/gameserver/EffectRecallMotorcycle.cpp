@@ -64,7 +64,7 @@ void EffectRecallMotorcycle::unaffect ()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectRecallMotorcycle unaffect" << endl;
+	//cout << "EffectRecallMotorcycle unaffect" << eos;
 
 	Zone* pZone = m_pZone;
 	ZoneCoord_t x = m_X;
@@ -115,7 +115,7 @@ void EffectRecallMotorcycle::unaffect ()
 					}
 					else
 					{
-						//cout << "Zone->addItemDelayed" << endl;
+						//cout << "Zone->addItemDelayed" << eos;
 						m_pTargetZone->addItemDelayed(pTempItem, x, y);
 
 						Slayer* pOwner = dynamic_cast<Slayer*>((m_pTargetZone->getCreature(m_OwnerOID)));

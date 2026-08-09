@@ -79,7 +79,7 @@ void EffectDecayCorpse::unaffect (Zone* pZone , ZoneCoord_t x , ZoneCoord_t y , 
 				} 
 				catch (NoSuchElementException & nsee) 
 				{
-					cerr << "EffectDecayCorpse::unaffect() : NoSuchElementException" << endl;
+					cerr << "EffectDecayCorpse::unaffect() : NoSuchElementException" << eos;
 					throw Error(nsee.toString());
 				}
 

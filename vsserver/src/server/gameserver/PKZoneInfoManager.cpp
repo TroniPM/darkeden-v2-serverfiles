@@ -79,7 +79,7 @@ void PKZoneInfoManager::addPKZoneInfo( PKZoneInfo* pPKZoneInfo )
 //		pZone->resetDarkLightInfo();
 	}
 
-	cout << "[" << pPKZoneInfo->getZoneID() << "]" << pPKZoneInfo->toString().c_str() << endl;
+	cout << "[" << pPKZoneInfo->getZoneID() << "]" << pPKZoneInfo->toString().c_str() << eos;
 
 	__END_CATCH
 }

@@ -153,7 +153,7 @@ void EffectHydroConvergence::affect()
 // 		}
 // 	}
 
-	//cout << "EffectHydroConvergence" << "affect BEGIN" << endl;
+	//cout << "EffectHydroConvergence" << "affect BEGIN" << eos;
 
 	__END_CATCH 
 }
@@ -237,7 +237,7 @@ void EffectHydroConvergence::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectHydroConvergence" << "unaffect BEGIN" << endl;
+	//cout << "EffectHydroConvergence" << "unaffect BEGIN" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature*>(m_pTarget);
 	// 读取5*5范围内对象,并创建伤害
@@ -290,7 +290,7 @@ void EffectHydroConvergence::unaffect()
 	 	}
 	unaffect(pCreature);
 
-	//cout << "EffectHydroConvergence" << "unaffect END" << endl;
+	//cout << "EffectHydroConvergence" << "unaffect END" << eos;
 
 	__END_CATCH
 }

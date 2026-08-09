@@ -34,14 +34,14 @@ bool EffectBloodyStorm::affectCreature(Creature* pTargetCreature, bool bAffectBy
 {
 	__BEGIN_TRY
 
-	//cout << "EffectBloodyStorm " << "affectCreature Begin " << endl;
+	//cout << "EffectBloodyStorm " << "affectCreature Begin " << eos;
 
 	Assert(pTargetCreature != NULL);
 
 	// 상대에게 이미 poison 이펙트가 걸려져 있는 경우에는 걸리지 않는다.
 	if (pTargetCreature->isFlag(Effect::EFFECT_CLASS_STORM_BLOODY))
 	{
-		//cout << "EffectBloodyStorm " << "affectCreature End " << endl;
+		//cout << "EffectBloodyStorm " << "affectCreature End " << eos;
 		return false;
 	}
 	
@@ -72,7 +72,7 @@ bool EffectBloodyStorm::affectCreature(Creature* pTargetCreature, bool bAffectBy
 		pZone->broadcastPacket(pTargetCreature->getX(), pTargetCreature->getY(), &gcAddEffect);
 	}
 
-	//cout << "EffectBloodyStorm " << "affectCreature End " << endl;
+	//cout << "EffectBloodyStorm " << "affectCreature End " << eos;
 
 	return true;
 

@@ -36,7 +36,7 @@ void EffectGateWayMonster::affect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	cout << "Effect Relic start" << endl;
+	cout << "Effect Relic start" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -47,7 +47,7 @@ void EffectGateWayMonster::affect(Creature* pCreature)
 
 	if(pCreature->isSlayer() || pCreature->isVampire() || pCreature->isOusters() )
 	{
-		cout << "슬레이어나 뱀파이어는 이 이펙트가 붙지 않음" << endl;
+		cout << "슬레이어나 뱀파이어는 이 이펙트가 붙지 않음" << eos;
 		return;
 	}
 
@@ -72,13 +72,13 @@ void EffectGateWayMonster::affect(Creature* pCreature)
 		}
 		else
 		{
-			cout << "성물 보관함이 아니라면 이 이펙트가 붙지 못함" << endl;
+			cout << "성물 보관함이 아니라면 이 이펙트가 붙지 못함" << eos;
 			return;
 		}
 	}
 	else
 	{
-		cout << "몬스터가 아니라면 이펙트가 붙지 못함" << endl;
+		cout << "몬스터가 아니라면 이펙트가 붙지 못함" << eos;
 		return 0;
 	}
 
@@ -106,7 +106,7 @@ void EffectGateWayMonster::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectGateWayMonster" << "unaffect BEGIN" << endl;
+	//cout << "EffectGateWayMonster" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -122,7 +122,7 @@ void EffectGateWayMonster::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_GATEWAY_MONSTER);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectGateWayMonster" << "unaffect END" << endl;
+	//cout << "EffectGateWayMonster" << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

@@ -77,7 +77,7 @@ void EffectShadowOfStorm::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectShadowOfStorm" << "affect BEGIN" << endl;
+	//cout << "EffectShadowOfStorm" << "affect BEGIN" << eos;
 	
 	Assert(m_pZone != NULL);
 
@@ -214,7 +214,7 @@ void EffectShadowOfStorm::affect()
 	
 	setNextTime(10);
 
-	//cout << "EffectShadowOfStorm" << "affect END" << endl;
+	//cout << "EffectShadowOfStorm" << "affect END" << eos;
 
 	__END_CATCH 
 }
@@ -226,12 +226,12 @@ void EffectShadowOfStorm::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectShadowOfStorm" << "unaffect BEGIN" << endl;
+	//cout << "EffectShadowOfStorm" << "unaffect BEGIN" << eos;
 
     Tile& tile = m_pZone->getTile(m_X, m_Y);
 	tile.deleteEffect(m_ObjectID);
 
-	//cout << "EffectShadowOfStorm" << "unaffect END" << endl;
+	//cout << "EffectShadowOfStorm" << "unaffect END" << eos;
 
 	__END_CATCH
 }

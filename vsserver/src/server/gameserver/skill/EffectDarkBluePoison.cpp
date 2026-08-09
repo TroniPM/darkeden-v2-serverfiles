@@ -34,12 +34,12 @@ void EffectDarkBluePoison::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectDarkBluePoison " << "affect BEGIN" << endl;
+	//cout << "EffectDarkBluePoison " << "affect BEGIN" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 	affect(pCreature);
 
-	//cout << "EffectDarkBluePoison " << "affect END" << endl;
+	//cout << "EffectDarkBluePoison " << "affect END" << eos;
 
 	__END_CATCH 
 
@@ -52,7 +52,7 @@ void EffectDarkBluePoison::affect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectDarkBluePoison " << "affect BEGIN" << endl;
+	//cout << "EffectDarkBluePoison " << "affect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -102,7 +102,7 @@ void EffectDarkBluePoison::affect(Creature* pCreature)
 	
 	setNextTime(m_Tick);
 
-	//cout << "EffectDarkBluePoison " << "affect END" << endl;
+	//cout << "EffectDarkBluePoison " << "affect END" << eos;
 
 	__END_CATCH
 }
@@ -124,7 +124,7 @@ void EffectDarkBluePoison::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectDarkBluePoison " << "unaffect BEGIN" << endl;
+	//cout << "EffectDarkBluePoison " << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -146,7 +146,7 @@ void EffectDarkBluePoison::unaffect(Creature* pCreature)
 		pPlayer->sendPacket(&gcRemoveEffect);
 	}
 
-	//cout << "EffectDarkBluePoison " << "unaffect END" << endl;
+	//cout << "EffectDarkBluePoison " << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH
@@ -159,12 +159,12 @@ void EffectDarkBluePoison::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectDarkBluePoison " << "unaffect BEGIN" << endl;
+	//cout << "EffectDarkBluePoison " << "unaffect BEGIN" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature*>(m_pTarget);
 	unaffect(pCreature);
 
-	//cout << "EffectDarkBluePoison " << "unaffect END" << endl;
+	//cout << "EffectDarkBluePoison " << "unaffect END" << eos;
 
 	__END_CATCH
 }

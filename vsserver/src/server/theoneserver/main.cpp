@@ -23,7 +23,7 @@
 
 void memoryError()
 {
-	cerr << "CRITICAL ERROR! NOT ENOUGH MEMORY!" << endl;
+	cerr << "CRITICAL ERROR! NOT ENOUGH MEMORY!" << eos;
 	exit(0);
 }
 
@@ -36,10 +36,10 @@ int main ( int argc , char * argv[] )
 {
 	// 메모리 없다.. 함수를 설정한다.
 	set_new_handler(memoryError);
-	cerr << "Processing Arguments..." << endl;
+	cerr << "Processing Arguments..." << eos;
 
 	if ( argc < 3 ) {
-		cout << "Usage : theoneserver -f 환경파일 [-p port]" << endl;
+		cout << "Usage : theoneserver -f 환경파일 [-p port]" << eos;
 		exit(1);
 	}
 
@@ -60,18 +60,18 @@ int main ( int argc , char * argv[] )
 			throw Error("Usage : loginserver -f 환경파일 [-p port]"); 
 		}
 
-		cerr << "Making Properties.." << endl;
+		cerr << "Making Properties.." << eos;
 
 		// 첫번째 파라미터가 -f 일 경우, 두번째 파라미터는 환경파일의 위치가 된다.
 		g_pConfig = new Properties();
 		g_pConfig->load(Argv[2]);
 		
-		cerr << "Making Properties Complete!" << endl;
+		cerr << "Making Properties Complete!" << eos;
 		
-		cout << g_pConfig->toString() << endl;
+		cout << g_pConfig->toString() << eos;
 
 	} catch ( Error & e ) {
-		cerr << e.toString() << endl;
+		cerr << e.toString() << eos;
 		exit(1);
 	}
 
@@ -83,15 +83,15 @@ int main ( int argc , char * argv[] )
 				throw Error("Usage : theoneserver -f 환경파일 [-p port]");
 
 			g_pConfig->setProperty("TheOneServerUDPPort", Argv[4]);
-			cout << "TheOneServerUDPPort : " << g_pConfig->getProperty("TheOneServerUDPPort") << endl;;
+			cout << "TheOneServerUDPPort : " << g_pConfig->getProperty("TheOneServerUDPPort") << eos;;
 		}
 
 	} catch ( Error & e ) {
-		cerr << e.toString() << endl;
+		cerr << e.toString() << eos;
 		exit(1);
 	}
 
-	cerr << "Processing Arguments Complete!" << endl;
+	cerr << "Processing Arguments Complete!" << eos;
 
 	//
 	// 절대 서버 객체를 생성하고 초기화한 후 활성화시킨다.
@@ -114,7 +114,7 @@ int main ( int argc , char * argv[] )
 	} 
 	catch ( Throwable & e ) 
 	{
-		cerr << e.toString() << endl;
+		cerr << e.toString() << eos;
 
 		// 절대 서버를 중단시킨다.
 		// 이 내부에서 하위 매니저 역시 중단되어야 한다.

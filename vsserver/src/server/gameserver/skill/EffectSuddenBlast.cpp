@@ -104,12 +104,12 @@ void EffectSuddenBlast::unaffect()
 {
     __BEGIN_TRY
 
-	//cout << "EffectSuddenBlast " << "unaffect BEGIN" << endl;
+	//cout << "EffectSuddenBlast " << "unaffect BEGIN" << eos;
 
     Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
     unaffect(pCreature);
 
-	//cout << "EffectSuddenBlast " << "unaffect END" << endl;
+	//cout << "EffectSuddenBlast " << "unaffect END" << eos;
 
     __END_CATCH
 }
@@ -120,14 +120,14 @@ void EffectSuddenBlast::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectSuddenBlast " << "unaffect BEGIN" << endl;
+	//cout << "EffectSuddenBlast " << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
 	Zone* pZone = pCreature->getZone();
 	Assert(pZone != NULL);
 
-	//cout << "EffectSuddenBlast " << "unaffect END" << endl;
+	//cout << "EffectSuddenBlast " << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

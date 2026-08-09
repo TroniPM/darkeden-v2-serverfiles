@@ -53,7 +53,7 @@ Relic::Relic(ItemType_t itemType, const list<OptionType_t>& optionType)
 			throw ("Relic::Relic() : Invalid item type or optionType");
 		}
 	} catch (Throwable& t) {
-		cout << t.toString().c_str() << endl;
+		cout << t.toString().c_str() << eos;
 		Assert(false);
 	}
 }

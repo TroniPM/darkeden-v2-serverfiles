@@ -185,7 +185,7 @@ SweeperBonus* SweeperBonusManager::getSweeperBonus( SweeperBonusType_t sweeperBo
 
 	if ( itr == m_SweeperBonuses.end() )
 	{
-		cerr << "SweeperBonusManager::getSweeperBonus() : no such element" << endl;
+		cerr << "SweeperBonusManager::getSweeperBonus() : no such element" << eos;
 		throw NoSuchElementException();
 	}
 

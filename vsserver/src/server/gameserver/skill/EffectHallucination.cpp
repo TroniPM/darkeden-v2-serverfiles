@@ -55,7 +55,7 @@ void EffectHallucination::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectHallucination" << "unaffect BEGIN" << endl;
+	//cout << "EffectHallucination" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -80,7 +80,7 @@ void EffectHallucination::unaffect(Creature* pCreature)
 		pZone->monsterScan(pMonster, pMonster->getX(), pMonster->getY(), pMonster->getDir());
 	}
 
-	//cout << "EffectHallucination" << "unaffect END" << endl;
+	//cout << "EffectHallucination" << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

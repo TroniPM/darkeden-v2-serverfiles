@@ -189,7 +189,7 @@ Vampire::~Vampire()
 						flag,
 						color[PCVampireInfo::VAMPIRE_COLOR_COAT]);
 
-	//cout << "SAVE = " << pField << endl;
+	//cout << "SAVE = " << pField << eos;
 
 	tinysave(pField);
 
@@ -527,20 +527,20 @@ bool Vampire::load ()
 	if ((pVampEXPInfo->getAccumExp() != m_Exp + m_GoalExp) && m_Level > 1) 
 	{
 		//ofstream file("뱀프능력치조정.txt", ios::out | ios::app);
-		//file << "NAME:" << m_Name << endl;
-		//file << "==VampEXP==" << endl;
-		//file << "현재레벨의총경험치 : " << (int)pVampEXPInfo->getAccumExp() << endl;
-		//file << "현재 누적 경험치 : " << (int)m_Exp << endl;
-		//file << "현재 목표 경험치 : " << (int)m_GoalExp << endl;
+		//file << "NAME:" << m_Name << eos;
+		//file << "==VampEXP==" << eos;
+		//file << "현재레벨의총경험치 : " << (int)pVampEXPInfo->getAccumExp() << eos;
+		//file << "현재 누적 경험치 : " << (int)m_Exp << eos;
+		//file << "현재 목표 경험치 : " << (int)m_GoalExp << eos;
 
 		// 이전 레벨의 인포를 받아온다.
 		VampEXPInfo* pBeforeVampEXPInfo = g_pVampEXPInfoManager->getVampEXPInfo(m_Level - 1);
 		// 이전 레벨의 총 경험치 + 목표 경험치 변화량 = 현재 누적 경험치
 		m_Exp = pBeforeVampEXPInfo->getAccumExp() + (pVampEXPInfo->getGoalExp() - m_GoalExp);
 
-		//file << "수정된 누적 경험치 : " << (int)m_Exp << endl;
-		//file << "수정된 목표 경험치 : " << (int)m_GoalExp << endl;
-		//file << endl;
+		//file << "수정된 누적 경험치 : " << (int)m_Exp << eos;
+		//file << "수정된 목표 경험치 : " << (int)m_GoalExp << eos;
+		//file << eos;
 		//file.close();
 
 		/*

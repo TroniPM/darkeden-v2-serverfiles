@@ -64,16 +64,16 @@ void ActionDeleteGetItem::execute (Creature * pCreature1 , Creature * pCreature2
 	if(pGamePlayer->getSpecialEventCount() == 0  && !pCreature2->isFlag(Effect::EFFECT_CLASS_HI_PASS)){
 	Inventory* pInventory = pPC->getInventory();
 	Assert( pInventory != NULL );
-	cout << " 여긴 문제 없음! 01" << endl;
+	cout << " 여긴 문제 없음! 01" << eos;
 	// 인벤토리에서 재료 아이템?だ?받아온다.
 	Item* pItem = pInventory->SerchItemCall( (Item::ItemClass)m_ItemClass, m_ItemType, m_ItemNum);
 
-	cout << " 여긴 문제 없음! 0" << endl;
+	cout << " 여긴 문제 없음! 0" << eos;
 	// 조건 아이템의 갯수가 Num값 초과일 경우에는 아이템 갯수만 변동이 있다는걸 알린다.
 	// 반드시 초과시에만 갯수 변동이 있는것이고, 딱 Num값 일 경우에는 삭제 시켜야 한다.
 	if(pItem->getNum() > m_ItemNum){ 
 	
-	cout << " 여긴 문제 없음! 1" << endl;
+	cout << " 여긴 문제 없음! 1" << eos;
 	// 초과일시 아이템 값 변동.
 	//decreaseItemNum(pItem, pInventory, pCreature2->getName(), STORAGE_INVENTORY, 0, pItem->getX(), pItem->getY());
 	pItem->setNum(pItem->getNum() - m_ItemNum); // 아이?邦?갯수를 하나 줄인다.
@@ -82,7 +82,7 @@ void ActionDeleteGetItem::execute (Creature * pCreature1 , Creature * pCreature2
 	sprintf(pField, "Num=%d", pItem->getNum());
 	pItem->tinysave(pField);
 
-	cout << " 여긴 문제 없음! 2" << endl;
+	cout << " 여긴 문제 없음! 2" << eos;
 	// 클라이언트에 아이템을 삭제시켜줘야 한다.
 	GCDeleteInventoryItem gcDeleteInventoryItem;
 	gcDeleteInventoryItem.setObjectID(pItem->getObjectID());

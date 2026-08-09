@@ -91,7 +91,7 @@ void EffectDestinies::affect()
 		}
 	}
 
-	//cout << "EffectDestinies" << "affect BEGIN" << endl;
+	//cout << "EffectDestinies" << "affect BEGIN" << eos;
 
 	__END_CATCH 
 }
@@ -177,9 +177,9 @@ void EffectDestinies::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectDestinies" << "unaffect BEGIN" << endl;
+	//cout << "EffectDestinies" << "unaffect BEGIN" << eos;
 
-	//cout << "EffectDestinies" << "unaffect END" << endl;
+	//cout << "EffectDestinies" << "unaffect END" << eos;
 
 	__END_CATCH
 }

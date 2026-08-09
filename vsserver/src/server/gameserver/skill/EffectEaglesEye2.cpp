@@ -33,7 +33,7 @@ void EffectEaglesEye2::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectEaglesEye2" << "unaffect BEGIN" << endl;
+	//cout << "EffectEaglesEye2" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isSlayer());
@@ -60,7 +60,7 @@ void EffectEaglesEye2::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_EAGLES_EYE2);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectEaglesEye2" << "unaffect END" << endl;
+	//cout << "EffectEaglesEye2" << "unaffect END" << eos;
 
 	__END_CATCH
 }

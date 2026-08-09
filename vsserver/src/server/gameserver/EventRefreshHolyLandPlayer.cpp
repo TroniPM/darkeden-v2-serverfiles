@@ -39,7 +39,7 @@ void EventRefreshHolyLandPlayer::activate ()
 
 		for ( ; zItr != zones.end(); ++zItr )
 		{
-//			cout << zItr->second->getZoneID() << " Á¸ update" << endl;
+//			cout << zItr->second->getZoneID() << " Á¸ update" << eos;
 			zItr->second->setRefreshHolyLandPlayer(true);
 		}
 	}

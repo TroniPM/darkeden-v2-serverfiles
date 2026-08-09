@@ -33,7 +33,7 @@ void EffectAllysterWind::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectAllysterWind" << "unaffect BEGIN" << endl;
+	//cout << "EffectAllysterWind" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isOusters());
@@ -60,7 +60,7 @@ void EffectAllysterWind::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_ALLYSTER_WIND);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectAllysterWind" << "unaffect END" << endl;
+	//cout << "EffectAllysterWind" << "unaffect END" << eos;
 
 	__END_CATCH
 }

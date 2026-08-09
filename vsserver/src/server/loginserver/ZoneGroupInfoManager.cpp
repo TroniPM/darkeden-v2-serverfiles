@@ -55,7 +55,7 @@ void ZoneGroupInfoManager::init ()
 	load();
 
 	// just print to cout
-	cout << toString() << endl;
+	cout << toString() << eos;
 
 	__END_CATCH
 }

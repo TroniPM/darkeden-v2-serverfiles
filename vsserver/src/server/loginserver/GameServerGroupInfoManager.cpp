@@ -75,7 +75,7 @@ void GameServerGroupInfoManager::init ()
 	load();
 
 	// just print to cout
-	cout << toString() << endl;
+	cout << toString() << eos;
 
 	__END_CATCH
 }
@@ -142,7 +142,7 @@ void GameServerGroupInfoManager::load ()
 
 	} catch ( Throwable & t ) {
 		SAFE_DELETE( pStmt );
-		cout << t.toString() << endl;
+		cout << t.toString() << eos;
 	}
 
 	__END_CATCH
@@ -163,7 +163,7 @@ void GameServerGroupInfoManager::addGameServerGroupInfo ( GameServerGroupInfo * 
 		throw DuplicatedException("duplicated game-server nickname");
 
 	cout << "addGameServerGroupInfo: " << (int)WorldID << ", " << GroupID 
-		<< " : " << pGameServerGroupInfo->getGroupName().c_str() << endl;
+		<< " : " << pGameServerGroupInfo->getGroupName().c_str() << eos;
 
 	m_GameServerGroupInfos[WorldID][GroupID] = pGameServerGroupInfo;
 

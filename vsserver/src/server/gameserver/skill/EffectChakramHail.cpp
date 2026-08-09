@@ -41,7 +41,7 @@ void EffectChakramHail::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectChakramHail" << "affect BEGIN" << endl;
+	//cout << "EffectChakramHail" << "affect BEGIN" << eos;
 	
 	Assert(m_pZone != NULL);
 
@@ -153,7 +153,7 @@ void EffectChakramHail::affect()
 	
 	setNextTime(m_Tick);
 
-	//cout << "EffectChakramHail" << "affect END" << endl;
+	//cout << "EffectChakramHail" << "affect END" << eos;
 
 	__END_CATCH 
 }
@@ -165,12 +165,12 @@ void EffectChakramHail::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectChakramHail" << "unaffect BEGIN" << endl;
+	//cout << "EffectChakramHail" << "unaffect BEGIN" << eos;
 
     Tile& tile = m_pZone->getTile(m_X, m_Y);
 	tile.deleteEffect(m_ObjectID);
 
-	//cout << "EffectChakramHail" << "unaffect END" << endl;
+	//cout << "EffectChakramHail" << "unaffect END" << eos;
 
 	__END_CATCH
 }

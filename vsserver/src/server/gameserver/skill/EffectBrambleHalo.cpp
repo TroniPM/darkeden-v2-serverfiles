@@ -188,7 +188,7 @@ void EffectBrambleHalo::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 	
-	// cout << "EffectBrambleHalo " << "unaffect BEGIN" << endl;
+	// cout << "EffectBrambleHalo " << "unaffect BEGIN" << eos;
 	Assert(pCreature != NULL);
 
 	if ( !pCreature->isSlayer() )

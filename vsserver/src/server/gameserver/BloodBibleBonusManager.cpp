@@ -130,7 +130,7 @@ BloodBibleBonus* BloodBibleBonusManager::getBloodBibleBonus( BloodBibleBonusType
 
 	if ( itr == m_BloodBibleBonuses.end() )
 	{
-		cerr << "BloodBibleBonusManager::getBloodBibleBonus() : no such element" << endl;
+		cerr << "BloodBibleBonusManager::getBloodBibleBonus() : no such element" << eos;
 		throw NoSuchElementException();
 	}
 

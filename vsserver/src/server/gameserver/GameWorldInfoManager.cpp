@@ -56,7 +56,7 @@ void GameWorldInfoManager::init ()
 	load();
 
 	// just print to cout
-	cout << toString() << endl;
+	cout << toString() << eos;
 
 	__END_CATCH
 }
@@ -79,17 +79,17 @@ void GameWorldInfoManager::load ()
 		pStmt = g_pDatabaseManager->getConnection("DARKEDEN")->createStatement();
 		Result * pResult = pStmt->executeQuery( "SELECT ID, Name, Stat FROM WorldInfo" );
 
-		cout << "Loading GameWorldInfoManager...." << endl;
+		cout << "Loading GameWorldInfoManager...." << eos;
 
 		while ( pResult->next() ) {
-			//cout << "TICK" << endl;
+			//cout << "TICK" << eos;
 			GameWorldInfo * pGameWorldInfo = new GameWorldInfo();
 			pGameWorldInfo->setID( pResult->getInt(1) );
 			pGameWorldInfo->setName( pResult->getString(2) );
 			pGameWorldInfo->setStatus( (WorldStatus)pResult->getInt(3) );
 			addGameWorldInfo( pGameWorldInfo );
 		}
-		cout << "End GameWorldInfoManager Load"<< endl;
+		cout << "End GameWorldInfoManager Load"<< eos;
 
 		// 필살 삭제!
 		SAFE_DELETE( pStmt );
@@ -103,7 +103,7 @@ void GameWorldInfoManager::load ()
 
 	} catch ( Throwable & t ) {
 		SAFE_DELETE( pStmt );
-		cout << t.toString() << endl;
+		cout << t.toString() << eos;
 	}
 
 	__END_CATCH
@@ -136,8 +136,8 @@ void GameWorldInfoManager::addGameWorldInfo ( GameWorldInfo * pGameWorldInfo )
 {
 	__BEGIN_TRY
 
-	cout << pGameWorldInfo->toString() << endl;
-	cout << "Size : " << m_GameWorldInfos.size() << endl;
+	cout << pGameWorldInfo->toString() << eos;
+	cout << "Size : " << m_GameWorldInfos.size() << eos;
 
 	HashMapGameWorldInfo::iterator itr = m_GameWorldInfos.find( pGameWorldInfo->getID() );
 	

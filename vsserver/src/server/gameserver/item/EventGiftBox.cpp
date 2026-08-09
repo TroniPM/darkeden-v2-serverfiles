@@ -379,10 +379,10 @@ void EventGiftBoxLoader::load(Creature* pCreature)
 									pBeltInventory = ((SubInventory*)pBelt)->getInventory();
 										if (pBeltInventory->canAddingEx(x, y, pEventGiftBox))
 										{
-											cout << " 추가완료"<< endl;
+											cout << " 추가완료"<< eos;
 											pBeltInventory->addItemEx(x, y, pEventGiftBox);
 										}else{
-											cout << " 버그"<< endl;
+											cout << " 버그"<< eos;
 											processItemBugEx(pCreature, pEventGiftBox);
 										}
 								}else{

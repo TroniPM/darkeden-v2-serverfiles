@@ -56,7 +56,7 @@ void EffectDeath::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectDeath" << "unaffect BEGIN" << endl;
+	//cout << "EffectDeath" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -109,7 +109,7 @@ void EffectDeath::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_DEATH);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectDeath" << "unaffect END" << endl;
+	//cout << "EffectDeath" << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

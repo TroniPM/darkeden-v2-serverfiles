@@ -98,7 +98,7 @@ void CommonBillingPacket::test ()
 	Assert(Remain_Time==500);
 
 
-	cout << "OK" << endl;
+	cout << "OK" << eos;
 
 
 	__END_CATCH
@@ -166,7 +166,7 @@ void CommonBillingPacket::read (SocketInputStream & iStream)
 	*/
 
 #ifdef __COUT_BILLING_SYSTEM__
-	cout << "[read] " << toString().c_str() << endl;
+	cout << "[read] " << toString().c_str() << eos;
 #endif
 
 	__END_CATCH
@@ -178,7 +178,7 @@ void CommonBillingPacket::write (SocketOutputStream & oStream) const
 	__BEGIN_TRY
 		
 #ifdef __COUT_BILLING_SYSTEM__
-	cout << "[write] " << toString().c_str() << endl;
+	cout << "[write] " << toString().c_str() << eos;
 #endif
 
 	/*

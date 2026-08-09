@@ -39,7 +39,7 @@ void EffectEternity::unaffect()
 {
     __BEGIN_TRY
 
-	//cout << "EffectEternity " << "unaffect BEGIN" << endl;
+	//cout << "EffectEternity " << "unaffect BEGIN" << eos;
 
 	Zone* pZone = m_pZone;
 	Assert( pZone != NULL );
@@ -48,7 +48,7 @@ void EffectEternity::unaffect()
 	if ( pCreature == NULL ) return;
     unaffect(pCreature);
 
-	//cout << "EffectEternity " << "unaffect END" << endl;
+	//cout << "EffectEternity " << "unaffect END" << eos;
 
     __END_CATCH
 }

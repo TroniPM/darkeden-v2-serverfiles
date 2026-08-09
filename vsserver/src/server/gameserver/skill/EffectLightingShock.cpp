@@ -81,7 +81,7 @@ void EffectLightingShock::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectLightingShock" << "affect BEGIN" << endl;
+	//cout << "EffectLightingShock" << "affect BEGIN" << eos;
 	
 	Assert(m_pZone != NULL);
 
@@ -239,7 +239,7 @@ void EffectLightingShock::affect()
 	
 	setNextTime(5);
 
-	//cout << "EffectLightingShock" << "affect END" << endl;
+	//cout << "EffectLightingShock" << "affect END" << eos;
 
 	__END_CATCH 
 }
@@ -251,12 +251,12 @@ void EffectLightingShock::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectLightingShock" << "unaffect BEGIN" << endl;
+	//cout << "EffectLightingShock" << "unaffect BEGIN" << eos;
 
     Tile& tile = m_pZone->getTile(m_X, m_Y);
 	tile.deleteEffect(m_ObjectID);
 
-	//cout << "EffectLightingShock" << "unaffect END" << endl;
+	//cout << "EffectLightingShock" << "unaffect END" << eos;
 
 	__END_CATCH
 }

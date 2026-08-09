@@ -55,7 +55,7 @@ void EffectSpiralSlay::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectSpiralSlay " << "unaffect BEGIN" << endl;
+	//cout << "EffectSpiralSlay " << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isSlayer());
@@ -82,7 +82,7 @@ void EffectSpiralSlay::unaffect(Creature* pCreature)
 	makeGCOtherModifyInfo(&gcOtherModifyInfo, pSlayer, &prev);
 	pZone->broadcastPacket(pSlayer->getX(), pSlayer->getY(), &gcOtherModifyInfo, pSlayer);
 
-	//cout << "EffectSpiralSlay " << "unaffect END" << endl;
+	//cout << "EffectSpiralSlay " << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

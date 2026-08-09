@@ -277,7 +277,7 @@ string GuildMember::toString() const
 	__BEGIN_TRY
 	
 	StringStream msg;
-	msg << "GuildID = " << (int)m_GuildID << " Name = " << m_Name << " Rank = " << (int)m_Rank << endl;
+	msg << "GuildID = " << (int)m_GuildID << " Name = " << m_Name << " Rank = " << (int)m_Rank << eos;
 
 	return msg.toString();
 
@@ -305,7 +305,7 @@ string GuildMember::getRequestDateTime() const
 			m_RequestDateTime.date().year(), m_RequestDateTime.date().month(), m_RequestDateTime.date().day(),
 			m_RequestDateTime.time().hour(), m_RequestDateTime.time().minute(), m_RequestDateTime.time().second() );
 
-	cout << buf << endl;
+	cout << buf << eos;
 
 	return string(buf);
 
@@ -625,7 +625,7 @@ GuildMember* Guild::getMember( const string& name ) const
 
 	if ( itr == m_Members.end() )
 	{
-		//cout << "Guild::getMember() : NoSuchMember" << endl;
+		//cout << "Guild::getMember() : NoSuchMember" << eos;
 		m_Mutex.unlock();
 
 		return NULL;
@@ -653,7 +653,7 @@ GuildMember* Guild::getMember_NOLOCKED( const string& name ) const
 
 	if ( itr == m_Members.end() )
 	{
-		//cerr << "Guild::getMember() : NoSuchMember" << endl;
+		//cerr << "Guild::getMember() : NoSuchMember" << eos;
 
 		return NULL;
 	}
@@ -724,7 +724,7 @@ void Guild::deleteMember( const string& name )
 
 	if ( itr == m_Members.end() )
 	{
-		cerr << "Guild::deleteMember() : NoSuchElementException" << endl;
+		cerr << "Guild::deleteMember() : NoSuchElementException" << eos;
 		m_Mutex.unlock();
 
 		return;
@@ -771,7 +771,7 @@ void Guild::modifyMember( GuildMember& Member )
 
 	if ( itr == m_Members.end() )
 	{
-		cerr << "Guild::modifyMember() : NoSuchElementException" << endl;
+		cerr << "Guild::modifyMember() : NoSuchElementException" << eos;
 		m_Mutex.unlock();
 
 		return;
@@ -1049,7 +1049,7 @@ string Guild::toString() const
 		<< " GuildZoneID = " << (int)m_ZoneID
 		<< " Master = " << m_Master
 		<< " Date = " << m_Date
-		<< endl;
+		<< eos;
 
 	return msg.toString();
 

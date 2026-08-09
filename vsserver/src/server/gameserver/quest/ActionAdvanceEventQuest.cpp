@@ -115,7 +115,7 @@ void ActionAdvanceEventQuest::execute (Creature * pCreature1 , Creature * pCreat
 //
 //			for ( ; itr != rList.end(); ++itr, ++qitr )
 //			{
-//				cout << "Quest Reward : " << (int)*itr << " checking.." << endl;
+//				cout << "Quest Reward : " << (int)*itr << " checking.." << eos;
 //				
 //			}
 		}
@@ -125,7 +125,7 @@ void ActionAdvanceEventQuest::execute (Creature * pCreature1 , Creature * pCreat
 		}
 	}
 
-	//cout << "ActionAdvanceEventQuest : result " << (int)result << endl;
+	//cout << "ActionAdvanceEventQuest : result " << (int)result << eos;
 
 	GCNPCResponse gcNPCResponse;
 

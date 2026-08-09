@@ -228,7 +228,7 @@ void CLCreatePCHandler::execute (CLCreatePC* pPacket , Player* pPlayer)
 			if (nINT < 5 || nINT > 20)  bInvalidAttr = true;
 			if (nSTR + nDEX + nINT > 30) bInvalidAttr = true;
 
-			//cout << "Slayer: " << nSTR << ", " << nDEX << ", " << nINT << endl;
+			//cout << "Slayer: " << nSTR << ", " << nDEX << ", " << nINT << eos;
 		}
 		else if ( pPacket->getRace() == RACE_VAMPIRE )	// vampire인 경우. 무조건 20. by sigi. 2002.10.31
 		{
@@ -253,7 +253,7 @@ void CLCreatePCHandler::execute (CLCreatePC* pPacket , Player* pPlayer)
 			}
 			// 
 
-			//cout << "Vampire: " << nSTR << ", " << nDEX << ", " << nINT << endl;
+			//cout << "Vampire: " << nSTR << ", " << nDEX << ", " << nINT << eos;
 		}
 		else if ( pPacket->getRace() == RACE_OUSTERS )
 		{
@@ -413,7 +413,7 @@ void CLCreatePCHandler::execute (CLCreatePC* pPacket , Player* pPlayer)
 		pStmt->executeQuery(slayerSQL.toString());
 		pStmt->executeQuery(vampireSQL.toString());
 		*/
-		cout << "SLAYER: " << pPacket->getDomainType() << ", " << nDEX << ", " << nINT << endl;
+		cout << "SLAYER: " << pPacket->getDomainType() << ", " << nDEX << ", " << nINT << eos;
 		// 캐릭터 생성시에 뱀파이어를 선택할 수 있다.
 		// by sigi. 2002.10.31
 		string race;

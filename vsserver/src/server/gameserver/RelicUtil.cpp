@@ -784,7 +784,7 @@ dissectionRelicItem( Corpse* pCorpse, Item* pItem, const TPOINT& pt )
 				// 보너스/패널티를 다시 조정해준다.
 				g_pCombatInfoManager->computeModify();
 			} catch (Throwable& t) {
-				cout << t.toString().c_str() << endl;
+				cout << t.toString().c_str() << eos;
 				throw;
 			}
 		}

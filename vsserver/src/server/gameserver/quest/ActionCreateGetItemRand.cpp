@@ -62,11 +62,11 @@ void ActionCreateGetItemRand::execute (Creature * pCreature1 , Creature * pCreat
 	
 	// 지급 되는 아이템을 받아온다.
 	Item* pGItem = g_pMonsterItemDropManager->getPayItem( m_ItemGroupID,m_ItemGroupID2 );
-		cout << "여기까지는 되는데...2" << endl;
+		cout << "여기까지는 되는데...2" << eos;
 	//m_ItemGroupID = 0;
 	//m_ItemGroupID2 = 0;
 	Assert( pGItem != NULL );
-			cout << "여기까지는 되는데..3." << endl;
+			cout << "여기까지는 되는데..3." << eos;
 	_TPOINT pt;
 
 	// 컨디션에서 조건을 이미 통과했기때문에 인벤토리에 자리가 있는지 여부만 파악한다.

@@ -463,10 +463,10 @@ void MagazineLoader::load(Creature* pCreature)
 									pBeltInventory = ((SubInventory*)pBelt)->getInventory();
 										if (pBeltInventory->canAddingEx(x, y, pMagazine))
 										{
-											cout << " 추가완료"<< endl;
+											cout << " 추가완료"<< eos;
 											pBeltInventory->addItemEx(x, y, pMagazine);
 										}else{
-											cout << " 버그"<< endl;
+											cout << " 버그"<< eos;
 											processItemBugEx(pCreature, pMagazine);
 										}
 								}else{

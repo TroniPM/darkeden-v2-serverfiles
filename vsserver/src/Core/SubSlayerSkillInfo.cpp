@@ -26,7 +26,7 @@ void SubSlayerSkillInfo::read ( SocketInputStream & iStream )
 	iStream.read( m_Enable );
 
 	} catch( Throwable & t ) {
-		cout << t.toString() << endl;
+		cout << t.toString() << eos;
 	}
 
 	__END_CATCH
@@ -50,7 +50,7 @@ void SubSlayerSkillInfo::write ( SocketOutputStream & oStream ) const
 	oStream.write( m_Enable );
 
 	} catch (Throwable & t ) {
-		cout << t.toString() << endl;
+		cout << t.toString() << eos;
 	}
 
 	__END_CATCH

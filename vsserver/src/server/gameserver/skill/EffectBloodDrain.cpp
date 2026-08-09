@@ -58,7 +58,7 @@ void EffectBloodDrain::unaffect(Creature* pFromCreature)
 {
 	__BEGIN_TRY 
 
-	//cout << "EffectBloodDrain" << "unaffect BEGIN" << endl;
+	//cout << "EffectBloodDrain" << "unaffect BEGIN" << eos;
 	Assert(pFromCreature != NULL);
 
 	if ( pFromCreature->isSlayer() )
@@ -119,7 +119,7 @@ void EffectBloodDrain::unaffect(Creature* pFromCreature)
 		destroy( pFromCreature->getName() );
 	}
 
-	//cout << "EffectBloodDrain" << "unaffect END" << endl;
+	//cout << "EffectBloodDrain" << "unaffect END" << eos;
 
 	__END_CATCH
 }
@@ -131,12 +131,12 @@ void EffectBloodDrain::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectBloodDrain" << "unaffect BEGIN" << endl;
+	//cout << "EffectBloodDrain" << "unaffect BEGIN" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 	unaffect(pCreature);
 
-	//cout << "EffectBloodDrain" << "unaffect END" << endl;
+	//cout << "EffectBloodDrain" << "unaffect END" << eos;
 						
 	__END_CATCH
 }

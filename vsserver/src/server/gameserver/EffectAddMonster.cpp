@@ -86,7 +86,7 @@ void EffectAddMonster::unaffect (Zone* pZone , ZoneCoord_t x , ZoneCoord_t y , C
 
 		TPOINT pt = pZone->addCreature(pMonster, x, y, 2);
 
-		cout << pZone->getZoneID() << "존의 (" << x << "," << y << ")에 몬스터가 추가되었습니다" << endl;
+		cout << pZone->getZoneID() << "존의 (" << x << "," << y << ")에 몬스터가 추가되었습니다" << eos;
 
 		if (pt.x == -1)
 		{

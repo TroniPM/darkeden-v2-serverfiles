@@ -38,12 +38,12 @@ void EffectWhitsuntide::unaffect()
 {
 	__BEGIN_TRY	
 
-	//cout << "EffectWhitsuntide" << "unaffect BEGIN" << endl;
+	//cout << "EffectWhitsuntide" << "unaffect BEGIN" << eos;
 
     Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 	unaffect(pCreature);
 
-	//cout << "EffectWhitsuntide" << "unaffect END" << endl;
+	//cout << "EffectWhitsuntide" << "unaffect END" << eos;
 
 	__END_CATCH
 }
@@ -55,7 +55,7 @@ void EffectWhitsuntide::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectWhitsuntide" << "unaffect BEGIN" << endl;
+	//cout << "EffectWhitsuntide" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isSlayer()); // 슬레이어말고는 걸리지 않는다.
@@ -78,7 +78,7 @@ void EffectWhitsuntide::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_WHITSUNTIDE);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectWhitsuntide" << "unaffect END" << endl;
+	//cout << "EffectWhitsuntide" << "unaffect END" << eos;
 
 	__END_CATCH
 }

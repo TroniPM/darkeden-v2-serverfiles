@@ -23,27 +23,27 @@
 
 void handleMemoryError()
 {
-	cerr << "==============================================================================" << endl;
-	cerr << "CRITICAL ERROR! NOT ENOUGH MEMORY!" << endl;
-	cerr << "==============================================================================" << endl;
+	cerr << "==============================================================================" << eos;
+	cerr << "CRITICAL ERROR! NOT ENOUGH MEMORY!" << eos;
+	cerr << "==============================================================================" << eos;
 	filelog("CriticalError.log", "CRITICAL ERROR! NOT ENOUGH MEMORY!");
 	abort();
 }
 
 void handleUnhandledException()
 {
-	cerr << "==============================================================================" << endl;
-	cerr << "UNHANDLED EXCEPTION OCCURED" << endl;
-	cerr << "==============================================================================" << endl;
+	cerr << "==============================================================================" << eos;
+	cerr << "UNHANDLED EXCEPTION OCCURED" << eos;
+	cerr << "==============================================================================" << eos;
 	filelog("CriticalError.log", "UNHANDLED EXCEPTION OCCURED");
 	abort();
 }
 
 void handleUnexpectedException()
 {
-	cerr << "==============================================================================" << endl;
-	cerr << "UNEXPECTED EXCEPTION OCCURED" << endl;
-	cerr << "==============================================================================" << endl;
+	cerr << "==============================================================================" << eos;
+	cerr << "UNEXPECTED EXCEPTION OCCURED" << eos;
+	cerr << "==============================================================================" << eos;
 	filelog("CriticalError.log", "UNEXPECTED EXCEPTION OCCURED");
 	abort();
 }
@@ -60,7 +60,7 @@ void testMaxMemory()
 
 		sprintf(str, "0x%08X = %04d0 M", p, i);
 
-		cout << str << endl;
+		cout << str << eos;
 	}
 }
 
@@ -71,7 +71,7 @@ void testMaxMemory()
 //////////////////////////////////////////////////////////////////////
 int main (int argc , char* argv[])
 {
-	cout << ">>> STARTING GAME SERVER..." << endl;
+	cout << ">>> STARTING GAME SERVER..." << eos;
 
 	filelog("serverStart.log", "GameServer Start");
 
@@ -88,11 +88,11 @@ int main (int argc , char* argv[])
 
 	// 적절한 위치를 찾아보자.
 	srand(time(0));
-	cout << ">>> RANDOMIZATION INITIALIZATION SUCCESS..." << endl;
+	cout << ">>> RANDOMIZATION INITIALIZATION SUCCESS..." << eos;
 
     if (argc < 3) 
 	{
-        //cout << "Usage : gameserver -f 환경파일" << endl;
+        //cout << "Usage : gameserver -f 환경파일" << eos;
         exit(1);
     }
 
@@ -103,7 +103,7 @@ int main (int argc , char* argv[])
     for (int i = 0 ; i < argc ; i ++)
         Argv[i] = argv[i];
 
-	cout << ">>> COMMAND-LINE PARAMETER READING SUCCESS..." << endl;
+	cout << ">>> COMMAND-LINE PARAMETER READING SUCCESS..." << eos;
 
     // 환경 파일을 읽어들인다.
     // 단 실행 파일은 $VSHOME/bin에, 환경 파일은 $VSHOME/conf 에 존재해야 한다.�
@@ -120,7 +120,7 @@ int main (int argc , char* argv[])
         g_pConfig = new Properties();
         g_pConfig->load(Argv[2]);
     
-        //cout << g_pConfig->toString() << endl;
+        //cout << g_pConfig->toString() << eos;
 
 		// by sigi. 2002.12.26
         if (argc>=4 && Argv[3] == "-t") 
@@ -135,7 +135,7 @@ int main (int argc , char* argv[])
     } 
 	catch (Error & e) 
 	{
-        //cout << e.toString() << endl;
+        //cout << e.toString() << eos;
     }
 
 	// 로그 매니저를 생성하고 초기화한후 활성화시킨다.
@@ -153,16 +153,16 @@ int main (int argc , char* argv[])
 
 		log(LOG_GAMESERVER, "", "", "Game Server Start");
 
-		//cout << "LogServerIP = " << LogServerIP << endl;
-		//cout << "LogServerPort = " << LogServerPort << endl;
-		//cout << "LogLevel = " << LogClient::getLogLevel() << endl;
+		//cout << "LogServerIP = " << LogServerIP << eos;
+		//cout << "LogServerPort = " << LogServerPort << eos;
+		//cout << "LogLevel = " << LogClient::getLogLevel() << eos;
 	} 
 	catch (Error & e) 
 	{
-		//cout << e.toString() << endl;
+		//cout << e.toString() << eos;
 	}
 
-	cout << ">>> LOGCLIENT INITIALZATION SUCCESS..." << endl;
+	cout << ">>> LOGCLIENT INITIALZATION SUCCESS..." << eos;
 
 	//
 	// 게임 서버 객체를 생성하고 초기화한 후 활성화시킨다.
@@ -177,12 +177,12 @@ int main (int argc , char* argv[])
 		// 게임 서버 객체를 생성한다.
 		g_pGameServer = new GameServer();
 
-		cout << ">>> GAME SERVER INSTANCE CREATED..." << endl;
+		cout << ">>> GAME SERVER INSTANCE CREATED..." << eos;
 
 		// 게임 서버 객체를 초기화한다.
 		g_pGameServer->init();
 
-		cout << ">>> GAME SERVER INITIALIZATION SUCCESS..." << endl;
+		cout << ">>> GAME SERVER INITIALIZATION SUCCESS..." << eos;
 
 		// 게임 서버 객체를 활성화시킨다.
 		g_pGameServer->start();
@@ -191,11 +191,11 @@ int main (int argc , char* argv[])
 	{
 		// 로그가 이뤄지기 전에 서버가 끝날 경우를 대비해서
 		ofstream ofile("../log/instant.log",ios::out);
-		ofile << e.toString() << endl;
+		ofile << e.toString() << eos;
 		ofile.close();
 
 		// 표준 출력으로도 출력해준다.
-		cout << e.toString() << endl;
+		cout << e.toString() << eos;
 
 		// 게임 서버를 중단시킨다.
 		// 이 내부에서 하위 매니저 역시 중단되어야 한다.
@@ -203,6 +203,6 @@ int main (int argc , char* argv[])
 	} 
 	catch (...) 
 	{
-		cout << "unknown exception..." << endl;
+		cout << "unknown exception..." << eos;
 	}
 }

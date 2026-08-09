@@ -144,19 +144,19 @@ void ClientManager::run ()
 
 			//vstime.start();
 			g_pIncomingPlayerManager->select();
-			//file << "IncomingPlayerManagerSelect:" << vstime.elapsed() << endl;
+			//file << "IncomingPlayerManagerSelect:" << vstime.elapsed() << eos;
 
 			//vstime.restart();
 			g_pIncomingPlayerManager->processExceptions();
-			//file << "IncomingPlayerManagerException:" << vstime.elapsed() << endl;
+			//file << "IncomingPlayerManagerException:" << vstime.elapsed() << eos;
 
 			//vstime.restart();
 			g_pIncomingPlayerManager->processInputs();
-			//file << "IncomingPlayerManagerInput:" << vstime.elapsed() << endl;
+			//file << "IncomingPlayerManagerInput:" << vstime.elapsed() << eos;
 
 			//vstime.restart();
 			g_pIncomingPlayerManager->processOutputs();
-			//file << "IncomingPlayerManagerOutput:" << vstime.elapsed() << endl;
+			//file << "IncomingPlayerManagerOutput:" << vstime.elapsed() << eos;
 		} 
 		catch (TimeoutException&) 
 		{
@@ -174,7 +174,7 @@ void ClientManager::run ()
 
 		//vstime.start();
 		g_pIncomingPlayerManager->processCommands();
-		//file << "IncomingPlayerManagerCommands:" << vstime.elapsed() << endl;
+		//file << "IncomingPlayerManagerCommands:" << vstime.elapsed() << eos;
 
 		/*
 		try 
@@ -201,7 +201,7 @@ void ClientManager::run ()
 
 		//vstime.start();
 		g_pConnectionInfoManager->heartbeat();
-		//file << "ConnectionInfoManagerHeartbeat:" << vstime.elapsed() << endl;
+		//file << "ConnectionInfoManagerHeartbeat:" << vstime.elapsed() << eos;
 
 		//file.close();
 		Timeval currentTime;
@@ -226,7 +226,7 @@ void ClientManager::run ()
 			for ( ; itr != endItr ; ++itr )
 			{
 				string& myIP = *itr;
-//				cout << "My IP Address is : " << myIP << endl;
+//				cout << "My IP Address is : " << myIP << eos;
 
 				GTOAcknowledgement GTO;
 				GTO.setServerIP( myIP );

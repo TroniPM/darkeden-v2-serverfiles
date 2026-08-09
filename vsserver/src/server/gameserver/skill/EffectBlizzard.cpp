@@ -77,7 +77,7 @@ void EffectBlizzard::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectBlizzard" << "affect BEGIN" << endl;
+	//cout << "EffectBlizzard" << "affect BEGIN" << eos;
 	
 	Assert(m_pZone != NULL);
 
@@ -214,7 +214,7 @@ void EffectBlizzard::affect()
 	
 	setNextTime(3);
 
-	//cout << "EffectBlizzard" << "affect END" << endl;
+	//cout << "EffectBlizzard" << "affect END" << eos;
 
 	__END_CATCH 
 }
@@ -226,12 +226,12 @@ void EffectBlizzard::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectBlizzard" << "unaffect BEGIN" << endl;
+	//cout << "EffectBlizzard" << "unaffect BEGIN" << eos;
 
     Tile& tile = m_pZone->getTile(m_X, m_Y);
 	tile.deleteEffect(m_ObjectID);
 
-	//cout << "EffectBlizzard" << "unaffect END" << endl;
+	//cout << "EffectBlizzard" << "unaffect END" << eos;
 
 	__END_CATCH
 }

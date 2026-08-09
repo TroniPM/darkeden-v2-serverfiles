@@ -71,7 +71,7 @@ string PropertyBuffer::getProperty (string key)
 		}
 	}
 
-	cout << "PropertyBuffer::getProperty() : thers is no [" << key << "] element." << endl;
+	cout << "PropertyBuffer::getProperty() : thers is no [" << key << "] element." << eos;
 	throw NoSuchElementException(key);
 
 	__END_CATCH

@@ -311,7 +311,7 @@ GamePlayer::~GamePlayer ()
 	}
 	catch (NoSuchElementException& nsee)
 	{
-		cerr << "GamePlayer::~GamePlayer() : " << nsee.toString() << endl;
+		cerr << "GamePlayer::~GamePlayer() : " << nsee.toString() << eos;
 		throw ("GamePlayer::~GamePlayer() : NoSuchElementException");
 	}
 	catch (Throwable& t )
@@ -514,7 +514,7 @@ void GamePlayer::processCommand (bool Option)
 					}
 				}
 
-				//cout << "[" << (int)Thread::self() << "] execute before : " << pPacket->getPacketName().c_str() << endl;
+				//cout << "[" << (int)Thread::self() << "] execute before : " << pPacket->getPacketName().c_str() << eos;
 	
 				// 이제 이 패킷스트럭처를 가지고 패킷핸들러를 수행하면 된다.
 				// 패킷아이디가 잘못될 경우는 패킷핸들러매니저에서 처리한다.
@@ -541,7 +541,7 @@ void GamePlayer::processCommand (bool Option)
 							pPacket->toString().c_str());
 						throw DisconnectException("GamePlayer Error 2!");
 					}
-				//cout << "[" << (int)Thread::self() << "] execute after : " << pPacket->getPacketName().c_str() << endl;
+				//cout << "[" << (int)Thread::self() << "] execute after : " << pPacket->getPacketName().c_str() << eos;
 
 				// 패킷을 nPacketHistorySize 개만큼만 저장한다.
 				while (m_PacketHistory.size() > nPacketHistorySize) 
@@ -604,8 +604,8 @@ void GamePlayer::processCommand (bool Option)
 	} 
 	catch (Throwable & t) 
 	{
-		//cerr << t.toString() << endl;
-		//cerr << "GamePlayer Throwable Exception Check!" << endl;
+		//cerr << t.toString() << eos;
+		//cerr << "GamePlayer Throwable Exception Check!" << eos;
 		throw;
 	}
 	*/
@@ -639,9 +639,9 @@ void GamePlayer::processOutput ()
 	} 
 	catch (InvalidProtocolException & It) 
 	{
-		//cerr << "GamePlayer::processOutput Exception Check!!" << endl;
-		//cerr << It.toString() << endl;
-		//cerr << "익셉션 났는데...... 아이는 몇인고?" << (int)i << endl;
+		//cerr << "GamePlayer::processOutput Exception Check!!" << eos;
+		//cerr << It.toString() << eos;
+		//cerr << "익셉션 났는데...... 아이는 몇인고?" << (int)i << eos;
 		throw DisconnectException("Pipe 연결의 파괴로 접속을 짜른다");
 	}
 
@@ -683,8 +683,8 @@ void GamePlayer::sendPacket (Packet* pPacket)
 
 		Player::sendPacket(pPacket);
 
-		cout << "GamePlayer::sendPacket() : " << pPacket->toString() << endl;
-		cout << "GamePlayer::sendPacket() PACKET SIZE : " << pPacket->getPacketSize() << endl;
+		cout << "GamePlayer::sendPacket() : " << pPacket->toString() << eos;
+		cout << "GamePlayer::sendPacket() PACKET SIZE : " << pPacket->getPacketSize() << eos;
 
 		/*
 		if (getCreature() != NULL)
@@ -724,8 +724,8 @@ void GamePlayer::sendPacket (Packet* pPacket)
 	} 
 	catch (InvalidProtocolException & It) 
 	{
-		//cout << "GamePlayer::sendPacket Exception Check!!" << endl;
-		//cout << It.toString() << endl;
+		//cout << "GamePlayer::sendPacket Exception Check!!" << eos;
+		//cout << It.toString() << eos;
 		//throw DisconnectException("Pipe 연결의 파괴로 접속을 짜른다");
 	}
 
@@ -847,7 +847,7 @@ void GamePlayer::disconnect (bool bDisconnected)
 	// 원래는 LGIncomingConnectionOKHandler에서 처리했다. by sigi. 2002.6.19
 	if (m_pReconnectPacket!=NULL)
 	{
-		//cout << "[SendReconnect] " << m_pReconnectPacket->toString().c_str() << endl;
+		//cout << "[SendReconnect] " << m_pReconnectPacket->toString().c_str() << eos;
 
 		try 
 		{
@@ -880,8 +880,8 @@ void GamePlayer::disconnect (bool bDisconnected)
 		} 
 		catch (Throwable & t) 
 		{
-			//cerr << "GamePlayer::disconnect() : GamePlayer::disconnect Exception Check!!" << endl;
-			//cerr << t.toString() << endl;
+			//cerr << "GamePlayer::disconnect() : GamePlayer::disconnect Exception Check!!" << eos;
+			//cerr << t.toString() << eos;
 		}
 	}
 
@@ -1923,7 +1923,7 @@ void GamePlayer::logLoginoutDateTime()
 			 << m_pCreature->getName() << "\t" << racecode << "\t"
 			 << level << "\t" << str << "\t" << dex << "\t" << inte << "\t"
 			 << m_LoginDateTime.toDateTime() << "\t"
-			 << logoutDateTime.toDateTime() << endl;
+			 << logoutDateTime.toDateTime() << eos;
 		file.close();
 	}
 	catch (...)

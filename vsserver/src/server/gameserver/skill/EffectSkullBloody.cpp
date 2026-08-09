@@ -37,12 +37,12 @@ void EffectSkullBloody::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectSkullBloody " << "begin begin" << endl;
+	//cout << "EffectSkullBloody " << "begin begin" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 	affect(pCreature);
 
-	//cout << "EffectSkullBloody " << "begin end" << endl;
+	//cout << "EffectSkullBloody " << "begin end" << eos;
 
 	__END_CATCH 
 
@@ -55,7 +55,7 @@ void EffectSkullBloody::affect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectSkullBloody " << "begin" << endl;
+	//cout << "EffectSkullBloody " << "begin" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -141,7 +141,7 @@ void EffectSkullBloody::affect(Creature* pCreature)
 	
 	setNextTime(m_Tick);
 
-	//cout << "EffectSkullBloody " << "end" << endl;
+	//cout << "EffectSkullBloody " << "end" << eos;
 
 	__END_CATCH
 }

@@ -37,12 +37,12 @@ void EffectViciousGuidance::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectViciousGuidance " << "begin begin" << endl;
+	//cout << "EffectViciousGuidance " << "begin begin" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 	affect(pCreature);
 
-	//cout << "EffectViciousGuidance " << "begin end" << endl;
+	//cout << "EffectViciousGuidance " << "begin end" << eos;
 
 	__END_CATCH 
 
@@ -55,8 +55,8 @@ void EffectViciousGuidance::affect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectViciousGuidance " << "begin" << endl;
-	//cout << "EffectViciousGuidance " << "end" << endl;
+	//cout << "EffectViciousGuidance " << "begin" << eos;
+	//cout << "EffectViciousGuidance " << "end" << eos;
 	Assert(pCreature != NULL);
 
 	Zone* pZone = pCreature->getZone();

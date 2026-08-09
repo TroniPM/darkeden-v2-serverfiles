@@ -12,6 +12,7 @@
 #include "Assert.h"
 #include "Mutex.h"
 #include "Profile.h"
+#include <stdarg.h>
 
 #define __FULL_PROFILE__
 

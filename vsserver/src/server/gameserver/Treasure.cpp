@@ -55,7 +55,7 @@ void TreasureOptionType::loadFromFile(ifstream& file)
 	}
 	catch (NoSuchElementException & nsee)
 	{
-		cerr << "TreasureOptionType::loadFromFile() : Unknown Option" << endl;
+		cerr << "TreasureOptionType::loadFromFile() : Unknown Option" << eos;
 		throw ("TreasureOptionType::loadFromFile() : Unknown Option");
 	}
 
@@ -67,8 +67,8 @@ void TreasureOptionType::parseString(const string& text)
 {
 	__BEGIN_TRY
 
-	//cout << "OptionTypeText:" << text << endl;
-	//cout << " ¿ä±â ½ÇÇà µÊ 6! " << endl;
+	//cout << "OptionTypeText:" << text << eos;
+	//cout << " ¿ä±â ½ÇÇà µÊ 6! " << eos;
 	if (text.size() < 3) return;
 
 	uint a = text.find_first_of(',', 0);
@@ -87,16 +87,16 @@ void TreasureOptionType::parseString(const string& text)
 		}
 		catch (NoSuchElementException & nsee)
 		{
-			cerr << "TreasureOptionType::parseString() : Unknown Option String[" << optionString << "]" << endl;
+			cerr << "TreasureOptionType::parseString() : Unknown Option String[" << optionString << "]" << eos;
 			throw ("TreasureOptionType::parseString() : Unknown Option String");
 		}
 	}
 	else
 	{
-		cerr << "TreasureOptionType::parseString() : Error[" << text << "]" << endl;
+		cerr << "TreasureOptionType::parseString() : Error[" << text << "]" << eos;
 		throw ("TreasureOptionType::parseString() : Error");
 	}
-	//cout << " ¿ä±â ½ÇÇà µÊ !9 " << endl;
+	//cout << " ¿ä±â ½ÇÇà µÊ !9 " << eos;
 	__END_CATCH
 }
 
@@ -216,10 +216,10 @@ void TreasureItemType::parseString(int itemClass, const string& text)
 	uint i = text.find_first_of('(', 0);
 	uint j = text.find_first_of(',', i+1);
 	uint k = text.find_first_of(')', j+1);
-	//cout << " ¿ä±â ½ÇÇà µÊ !7 " << endl;
+	//cout << " ¿ä±â ½ÇÇà µÊ !7 " << eos;
 	if (i == string::npos || j == string::npos || k == string::npos)
 	{
-		cerr << "TreasureItemType::parseString() : Error" << endl;
+		cerr << "TreasureItemType::parseString() : Error" << eos;
 		throw ("TreasureItemType::parseString() : Error");
 	}
 
@@ -248,7 +248,7 @@ void TreasureItemType::parseString(int itemClass, const string& text)
 	{
 		while (b < newText.size()-1)
 		{
-	//cout << " ¿ä±â ½ÇÇà µÊ !8 " << endl;
+	//cout << " ¿ä±â ½ÇÇà µÊ !8 " << eos;
 			////////////////////////////////////////////////////////////
 			// (STR+1,50)(STR+2,30)(STR+30)
 			////////////////////////////////////////////////////////////
@@ -259,7 +259,7 @@ void TreasureItemType::parseString(int itemClass, const string& text)
 
 			string substring = trim(newText.substr(a+1, b-a-1));
 
-			////cout << "TIT::substring\n" << substring << endl << endl;
+			////cout << "TIT::substring\n" << substring << eos << eos;
 
 			TreasureOptionType* pTOT = new TreasureOptionType;
 			pTOT->parseString(substring);
@@ -291,7 +291,7 @@ bool TreasureItemType::getRandomOption(ITEM_TEMPLATE* pTemplate)
 	if (m_OptionTypeTotalRatio == 0) 
 	{
 		//pTemplate->OptionType.clear();
-		////cout << "OptionTypeTotalRatio = 0" << endl;
+		////cout << "OptionTypeTotalRatio = 0" << eos;
 		return false;
 	}
 	// add by Sonic 2006.10.21 Ôö¼Ó¶þÊôÐÔÒÔÉÏµÄµô±¦ m_OptionRatioMax
@@ -304,7 +304,7 @@ bool TreasureItemType::getRandomOption(ITEM_TEMPLATE* pTemplate)
 		int ratioSum    = 0;
 
 		////cout << "numOption=" << m_TreasureOptionTypes.size()
-		//	 << ", Ratio=" << optionRatio << "/" << m_OptionTypeTotalRatio << endl;
+		//	 << ", Ratio=" << optionRatio << "/" << m_OptionTypeTotalRatio << eos;
 
 		for (uint i=0; i<m_TreasureOptionTypes.size(); i++)
 		{
@@ -320,13 +320,13 @@ bool TreasureItemType::getRandomOption(ITEM_TEMPLATE* pTemplate)
 					if (hasOptionClass( pTemplate->OptionType, pTOT->getOptionType() ))
 					{
 						// ´õ ÀÌ»ó Ã£Áö ¸»ÀÚ.
-						////cout << "has Same OptionClass(" << pTOT->getOptionType() << ")" << endl;
+						////cout << "has Same OptionClass(" << pTOT->getOptionType() << ")" << eos;
 						return true;
 					}
 
 					if (pTOT->getOptionType()!=0)
 					{
-						////cout << "add Option: " << pTOT->getOptionType() << endl;
+						////cout << "add Option: " << pTOT->getOptionType() << eos;
 						pTemplate->OptionType.push_back( pTOT->getOptionType() );
 					}
 				}
@@ -357,7 +357,7 @@ bool TreasureItemType::getRandomOption(ITEM_TEMPLATE* pTemplate)
 
 	////cout << "Cannot Select Option: "
 	//	<< optionRatio << ", "
-	//	<< ratioSum << endl;
+	//	<< ratioSum << eos;
 	return false;
 
 	__END_CATCH
@@ -371,7 +371,7 @@ bool TreasureItemType::getRandomOption2(ITEM_TEMPLATE* pTemplate)
 	if (m_OptionTypeTotalRatio == 0) 
 	{
 		//pTemplate->OptionType.clear();
-		////cout << "OptionTypeTotalRatio = 0" << endl;
+		////cout << "OptionTypeTotalRatio = 0" << eos;
 		return false;
 	}
 	// add by Sonic 2006.10.21 Ôö¼Ó¶þÊôÐÔÒÔÉÏµÄµô±¦ m_OptionRatioMax
@@ -384,7 +384,7 @@ bool TreasureItemType::getRandomOption2(ITEM_TEMPLATE* pTemplate)
 		int ratioSum    = 0;
 
 		////cout << "numOption=" << m_TreasureOptionTypes.size()
-		//	 << ", Ratio=" << optionRatio << "/" << m_OptionTypeTotalRatio << endl;
+		//	 << ", Ratio=" << optionRatio << "/" << m_OptionTypeTotalRatio << eos;
 
 		for (uint i=0; i<m_TreasureOptionTypes.size(); i++)
 		{
@@ -400,13 +400,13 @@ bool TreasureItemType::getRandomOption2(ITEM_TEMPLATE* pTemplate)
 					if (hasOptionClass( pTemplate->OptionType2, pTOT->getOptionType() ))
 					{
 						// ´õ ÀÌ»ó Ã£Áö ¸»ÀÚ.
-						////cout << "has Same OptionClass(" << pTOT->getOptionType() << ")" << endl;
+						////cout << "has Same OptionClass(" << pTOT->getOptionType() << ")" << eos;
 						return true;
 					}
 
 					if (pTOT->getOptionType()!=0)
 					{
-						////cout << "add Option: " << pTOT->getOptionType() << endl;
+						////cout << "add Option: " << pTOT->getOptionType() << eos;
 						pTemplate->OptionType2.push_back( pTOT->getOptionType() );
 					}
 				}
@@ -437,7 +437,7 @@ bool TreasureItemType::getRandomOption2(ITEM_TEMPLATE* pTemplate)
 
 	////cout << "Cannot Select Option: "
 	//	<< optionRatio << ", "
-	//	<< ratioSum << endl;
+	//	<< ratioSum << eos;
 	return false;
 
 	__END_CATCH
@@ -554,7 +554,7 @@ void TreasureItemClass::parseString(const string& text)
 	// <(2,30) (STR+1,50)(STR+2,30)(STR+3,20)>
 	// <(3,20) (STR+1,50)(STR+2,30)(STR+3,20)>
 	////////////////////////////////////////////////////////////
-		//cout << " ¿ä±â ½ÇÇà µÊ !5 " << endl;
+		//cout << " ¿ä±â ½ÇÇà µÊ !5 " << eos;
 	// ¾ÆÀÌÅÛ Å¬·¡½º ¹× È®·üÀ» ÀÐ¾îµéÀÎ´Ù. 
 	uint i = text.find_first_of('(', 0);
 	uint j = text.find_first_of(',', i+1);
@@ -568,7 +568,7 @@ void TreasureItemClass::parseString(const string& text)
 
 	string newText = text.substr(k+1, text.size()-k-1);
 
-	////cout << "TIC::newText\n" << newText << endl << endl;
+	////cout << "TIC::newText\n" << newText << eos << eos;
 
 	uint a = 0;
 	uint b = 0;
@@ -587,13 +587,13 @@ void TreasureItemClass::parseString(const string& text)
 
 		string substring = trim(newText.substr(a+1, b-a-1));
 
-		////cout << "TIC::substring\n" << substring << endl << endl;
+		////cout << "TIC::substring\n" << substring << eos << eos;
 
 		TreasureItemType* pTIT = new TreasureItemType;
 		pTIT->parseString(m_ItemClass, substring);
 
 		m_TreasureItemTypes.push_back(pTIT);
-	//cout << " ¿ä±â ½ÇÇà µÊ !6 " << endl;
+	//cout << " ¿ä±â ½ÇÇà µÊ !6 " << eos;
 		substring.clear();
 	}
 
@@ -720,7 +720,7 @@ Item::ItemClass TreasureItemClass::getItemClassFromString(const string& text)
 
 	StringStream msg;
 	msg << "TreasureItemClass::getItemClassFromString() : Unknown String[" << text << "]";
-	cerr << msg.toString() << endl;
+	cerr << msg.toString() << eos;
 	throw (msg.toString());
 
 	__END_CATCH
@@ -807,7 +807,7 @@ void Treasure::parseString(const string& text)
 	// <(3,20)(STR+1,50)(STR+2,30)(STR+3,20)>
 	// END_ITEM_CLASS
 	////////////////////////////////////////////////////////////
-		//cout << " ¿ä±â ½ÇÇà µÊ !2 " << endl;
+		//cout << " ¿ä±â ½ÇÇà µÊ !2 " << eos;
 	// ¸ÕÀú ¾ÆÀÌÅÛ ÀÚÃ¼°¡ ³ª¿Ã È®·ü°ú, ±× ¾ÆÀÌÅÛ¿¡ ¿É¼ÇÀÌ ºÙÀ» È®·üÀ» ÀÐ¾îµéÀÎ´Ù.
 	uint i = text.find_first_of('(');
 	uint j = text.find_first_of(',');
@@ -815,7 +815,7 @@ void Treasure::parseString(const string& text)
 
 	if (i == string::npos || j == string::npos || k == string::npos) 
 	{
-		cerr << "Treasure::parseString() : Error" << endl;
+		cerr << "Treasure::parseString() : Error" << eos;
 		throw ("Treasure::parseString() : Error");
 	}
 
@@ -840,7 +840,7 @@ void Treasure::parseString(const string& text)
 
 	while (b < newText.size()-1)
 	{
-	//cout << " ¿ä±â ½ÇÇà µÊ !3 " << endl;
+	//cout << " ¿ä±â ½ÇÇà µÊ !3 " << eos;
 		////////////////////////////////////////////////////////////
 		// BEGIN_ITEM_CLASS (SWORD, 50)
 		// <(1,50,50) (STR+1,50)(STR+2,30)(STR+3,20)>
@@ -859,15 +859,15 @@ void Treasure::parseString(const string& text)
 		if (a == string::npos || b == string::npos) break;
 
 		string substring = trim(newText.substr(a+BTOKENSIZE, b-a-BTOKENSIZE));
-	//cout << " ¿ä±â ½ÇÇà µÊ !3.5 " << endl;
+	//cout << " ¿ä±â ½ÇÇà µÊ !3.5 " << eos;
 		TreasureItemClass* pTIC = new TreasureItemClass;
 		pTIC->parseString(substring);
 
 		m_TreasureItemClasses.push_back(pTIC);
-	//cout << " ¿ä±â ½ÇÇà µÊ !4 " << endl;
+	//cout << " ¿ä±â ½ÇÇà µÊ !4 " << eos;
 		substring.clear();
 	}
-	//cout << " ¿ä±â ½ÇÇà µÊ !5 " << endl;
+	//cout << " ¿ä±â ½ÇÇà µÊ !5 " << eos;
 	newText.clear();
 
 	// ÆÄ½ÌÀÌ ³¡³µÀ¸¸é, ÀüÃ¼ È®·üÀ» °è»êÇÑ´Ù.
@@ -877,7 +877,7 @@ void Treasure::parseString(const string& text)
 		TreasureItemClass* pTIC = m_TreasureItemClasses[i];
 		m_ItemClassTotalRatio += pTIC->getRatio();
 	}
-		//cout << " ¿ä±â ½ÇÇà µÊ !6 " << endl;
+		//cout << " ¿ä±â ½ÇÇà µÊ !6 " << eos;
 	__END_CATCH
 }
 
@@ -894,10 +894,10 @@ bool Treasure::getRandomItem(ITEM_TEMPLATE* pTemplate)
 	// ¸ÕÀú ¾ÆÀÌÅÛÀÌ ³ª¿ÃÁö ¾È ³ª¿ÃÁö¿¡ ´ëÇÑ È®·üÃ¼Å©¸¦ ½ÃÇàÇÑ´Ù.
 	int ItemRatio = rand()%TREASURE_RATIO_MODULUS;
 
-	////cout << "ItemÈ®·üÃ¼Å©: " << ItemRatio << " " << m_ItemRatio << endl
-	//	 << "¼öÁ¤È®·ü"       << ItemRatio << " " << g_pVariableManager->getItemProbRatio()/100 << endl;
+	////cout << "ItemÈ®·üÃ¼Å©: " << ItemRatio << " " << m_ItemRatio << eos
+	//	 << "¼öÁ¤È®·ü"       << ItemRatio << " " << g_pVariableManager->getItemProbRatio()/100 << eos;
 
-	////cout << "ItemÈ®·ü Ã¼Å© : " << ItemRatio << " < " << m_ItemRatio << endl;
+	////cout << "ItemÈ®·ü Ã¼Å© : " << ItemRatio << " < " << m_ItemRatio << eos;
 
 	// ¾ÆÀÌÅÛÀÌ ³ª¿À±â·Î °áÁ¤µÇ¾ú´Ù¸é...
 	double EventMultiplier = 0.0;
@@ -919,13 +919,13 @@ bool Treasure::getRandomItem(ITEM_TEMPLATE* pTemplate)
 			pTemplate->bCreateOption = false;
 		}
 
-		////cout << "¿É¼Ç È®·ü Ã¼Å© : " << OptionRatio << " < " << m_OptionRatio << endl;
+		////cout << "¿É¼Ç È®·ü Ã¼Å© : " << OptionRatio << " < " << m_OptionRatio << eos;
 
 		int itemClassRatio = rand()%m_ItemClassTotalRatio;
 		int ratioSum       = 0;
 		int preRatioSum	   = 0;
 
-		////cout << "¾ÆÀÌÅÛ Å¬·¡½º È®·ü : " << itemClassRatio << " / " << m_ItemClassTotalRatio << endl;
+		////cout << "¾ÆÀÌÅÛ Å¬·¡½º È®·ü : " << itemClassRatio << " / " << m_ItemClassTotalRatio << eos;
 
 		for (uint i=0; i<m_TreasureItemClasses.size(); i++)
 		{
@@ -961,9 +961,9 @@ bool Treasure::getRandomItem(ITEM_TEMPLATE* pTemplate, int nPercent)
 	// ¾ÆÀÌÅÛ È®·ü¿¡ ¼öÁ¤Ä¡ ´ëÀÔ
 	int ModifyItemRatio = getPercentValue( m_ItemRatio, nPercent );
 
-//	//cout << "Item value : " << ItemRatio << endl;
-//	//cout << "Bonus Ratio : " << nPercent << endl;
-//	//cout << "Item Ratio : " << ModifyItemRatio << endl;
+//	//cout << "Item value : " << ItemRatio << eos;
+//	//cout << "Bonus Ratio : " << nPercent << eos;
+//	//cout << "Item Ratio : " << ModifyItemRatio << eos;
 
 	if (ItemRatio < ModifyItemRatio )
 	{
@@ -978,7 +978,7 @@ bool Treasure::getRandomItem(ITEM_TEMPLATE* pTemplate, int nPercent)
 			pTemplate->bCreateOption = false;
 		}
 
-		////cout << "¿É¼Ç È®·ü Ã¼Å© : " << OptionRatio << " < " << m_OptionRatio << endl;
+		////cout << "¿É¼Ç È®·ü Ã¼Å© : " << OptionRatio << " < " << m_OptionRatio << eos;
 
 		if ( m_ItemClassTotalRatio == 0 )
 			return false;
@@ -987,7 +987,7 @@ bool Treasure::getRandomItem(ITEM_TEMPLATE* pTemplate, int nPercent)
 		int ratioSum       = 0;
 		int preRatioSum	   = 0;
 
-		////cout << "¾ÆÀÌÅÛ Å¬·¡½º È®·ü : " << itemClassRatio << " / " << m_ItemClassTotalRatio << endl;
+		////cout << "¾ÆÀÌÅÛ Å¬·¡½º È®·ü : " << itemClassRatio << " / " << m_ItemClassTotalRatio << eos;
 
 		for (uint i=0; i<m_TreasureItemClasses.size(); i++)
 		{
@@ -1107,7 +1107,7 @@ void TreasureList::parseString(const string& text)
 	throw()
 {
 	__BEGIN_TRY
-	//cout << " ¿ä±â ½ÇÇà µÊ ! " << endl;
+	//cout << " ¿ä±â ½ÇÇà µÊ ! " << eos;
 	////////////////////////////////////////////////////////////
 	// BEGIN_TREASURE (50)
 	//   BEGIN_ITEM_CLASS (SWORD, 50)
@@ -1136,23 +1136,23 @@ void TreasureList::parseString(const string& text)
 	{
 		a = text.find(bToken, b);
 		b = text.find(eToken, a+1);
-	//cout << " ¿ä±â ½ÇÇà µÊ !!! " << endl;
+	//cout << " ¿ä±â ½ÇÇà µÊ !!! " << eos;
 		if (a == string::npos || b == string::npos) break;
 
 		string substring = trim(text.substr(a+BTOKENSIZE, b-a-BTOKENSIZE));
 
-		////cout << "TreasureList SubString:\n" << substring << endl << endl;
+		////cout << "TreasureList SubString:\n" << substring << eos << eos;
 
 		Treasure* pTreasure = new Treasure;
 		pTreasure->parseString(substring);
 		addTreasure(pTreasure);
-	//cout << " ¿ä±â ½ÇÇà µÊ !!! " << endl;
+	//cout << " ¿ä±â ½ÇÇà µÊ !!! " << eos;
 		count += 1;
-	//cout << " ¿ä±â ½ÇÇà µÊ !!!? " << endl;
+	//cout << " ¿ä±â ½ÇÇà µÊ !!!? " << eos;
 		substring.clear();
-	//cout << " ¿ä±â ½ÇÇà µÊ !!!?? " << endl;
+	//cout << " ¿ä±â ½ÇÇà µÊ !!!?? " << eos;
 	}
-	//cout << " ¿ä±â ½ÇÇà µÊ END " << endl;
+	//cout << " ¿ä±â ½ÇÇà µÊ END " << eos;
 	__END_CATCH
 }
 
@@ -1254,13 +1254,13 @@ TreasureList*
 TreasureLists::loadTreasure(const string& filename)
 {
 	TreasureList* pTreasureList = new TreasureList;
-	ifstream file(filename.c_str(), ios::in | ios::nocreate | ios::binary);
+	ifstream file(filename.c_str(), ios::in  | ios::binary);
 
 	if (!file)
 	{
 		StringStream msg;
 		msg << "Cannot open " << filename << " to read.";
-		cerr << msg.toString() << endl;
+		cerr << msg.toString() << eos;
 		throw (msg.toString());
 	}
 
@@ -1269,7 +1269,7 @@ TreasureLists::loadTreasure(const string& filename)
 
 	addTreasure(filename, pTreasureList);
 
-//	//cout << "Generating XML File.. " << endl;
+//	//cout << "Generating XML File.. " << eos;
 //	XMLTree* pXML = pTreasureList->makeXMLTree();
 //	pXML->SaveToFile( (filename+".xml").c_str() );
 

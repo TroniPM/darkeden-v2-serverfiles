@@ -64,7 +64,7 @@ void ActionGiveLotto::execute (Creature * pCreature1 , Creature * pCreature2)
 
 	if ( questLevel < 0 ) questLevel = pPC->getQuestManager()->getEventQuestAdvanceManager()->getQuestLevel() - 1;
 
-	cout << "Activated : " << toString() << " ... " << pPC->getName() << " ...  " << questLevel << endl;
+	cout << "Activated : " << toString() << " ... " << pPC->getName() << " ...  " << questLevel << eos;
 
 	EventQuestAdvance::Status status = pPC->getQuestManager()->getEventQuestAdvanceManager()->getStatus( questLevel );
 	int ownerQuestLevel = pPC->getQuestManager()->getEventQuestAdvanceManager()->getQuestLevel();

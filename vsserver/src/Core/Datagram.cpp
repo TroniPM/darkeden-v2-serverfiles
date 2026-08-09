@@ -142,7 +142,7 @@ void Datagram::read ( DatagramPacket * & pPacket )
 	read( (char*)&packetID , szPacketID );
 	read( (char*)&packetSize , szPacketSize );
 
-	//cout << "DatagramPacket I  D : " << packetID << endl;
+	//cout << "DatagramPacket I  D : " << packetID << eos;
 
 	// 패킷 아이디가 이상할 경우
 	if ( packetID >= Packet::PACKET_MAX )
@@ -316,7 +316,7 @@ void Datagram::setAddress ( SOCKADDR_IN * pSockAddr )
 
 	//char str[80];
 	//sprintf(str, "0x%X - 0x%X", m_SockAddr.sin_port, ntohs(m_SockAddr.sin_port));
-    //cout << "[Datagram::setAddress] " << inet_ntoa(m_SockAddr.sin_addr) << ":" << ntohs(m_SockAddr.sin_port) << " - " << str << endl;
+    //cout << "[Datagram::setAddress] " << inet_ntoa(m_SockAddr.sin_addr) << ":" << ntohs(m_SockAddr.sin_port) << " - " << str << eos;
 
 	__END_CATCH
 }

@@ -84,8 +84,8 @@ bool QuestInfo::canExecute( PlayerCreature* pPC ) const
 	}
 	else
 	{
-	//	cout << "아우스터즈냐? -_-; QuestInfo::canExecute()" << endl;
-		cout << "넌대체머냐-_-; QuestInfo::canExecute()" << endl;
+	//	cout << "아우스터즈냐? -_-; QuestInfo::canExecute()" << eos;
+		cout << "넌대체머냐-_-; QuestInfo::canExecute()" << eos;
 		return false;
 	}
 

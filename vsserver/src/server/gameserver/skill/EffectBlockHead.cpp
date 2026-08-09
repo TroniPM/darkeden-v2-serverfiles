@@ -31,7 +31,7 @@ void EffectBlockHead::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectBlockHead" << "unaffect BEGIN" << endl;
+	//cout << "EffectBlockHead" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 //	Assert(pCreature->isOusters());
@@ -51,7 +51,7 @@ void EffectBlockHead::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_BLOCK_HEAD);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectBlockHead" << "unaffect END" << endl;
+	//cout << "EffectBlockHead" << "unaffect END" << eos;
 
 	__END_CATCH
 }

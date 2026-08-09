@@ -41,6 +41,7 @@ void itoa( int value, char* buf, int r )
 	#include "xercesc/sax2/SAX2XMLReader.hpp"
 	#include "xercesc/sax2/Attributes.hpp"
 	#include "xercesc/sax2/DefaultHandler.hpp"
+#include <stdarg.h>
 //#pragma warning (pop)
 
 //#pragma warning(disable:4100)

@@ -300,7 +300,7 @@ void ShrineInfoManager::load()
 			// ItemType과 Shrine ID는 같아야 한다. 같지 않을 경우 DB설정 오류로 로딩과정에서 막는다.
 			if ( pShrineSet->getBloodBibleItemType() != pShrineSet->getShrineID() )
 			{
-				cout << "ShrineID 와 ItemType이 맞지 않습니다. DB설정을 점검하세요." << endl;
+				cout << "ShrineID 와 ItemType이 맞지 않습니다. DB설정을 점검하세요." << eos;
 				Assert( false );
 			}
 
@@ -414,7 +414,7 @@ void ShrineInfoManager::addShrineToZone( ShrineInfo& shrineInfo, ItemType_t item
 	cout << "AddShrine[" << (int)shrineInfo.getZoneID() << "] " 
 			<< (shrineInfo.getShrineType()==ShrineInfo::SHRINE_GUARD? "Guard":"Holy")
 			<< ", mtype=" << shrineInfo.getMonsterType()
-			<< ", oid=" << pShrine->getObjectID() << endl;
+			<< ", oid=" << pShrine->getObjectID() << eos;
 
 	if ( shrineInfo.getShrineType() == ShrineInfo::SHRINE_GUARD )
 	{
@@ -746,7 +746,7 @@ bool ShrineInfoManager::returnBloodBible( ShrineID_t shrineID, bool bLock ) cons
 {
 	__BEGIN_TRY
 
-	cout << "ShrineInfoManager::returnCastleBloodBible() is deprecated" << endl;
+	cout << "ShrineInfoManager::returnCastleBloodBible() is deprecated" << eos;
 	Assert(false);
 
 	return false;
@@ -921,7 +921,7 @@ bool ShrineInfoManager::putBloodBible(PlayerCreature* pPC, Item* pItem, MonsterC
 {
 	__BEGIN_TRY
 
-	cout << "ShrineInfoManager::removeShrineShield() is deprecated" << endl;
+	cout << "ShrineInfoManager::removeShrineShield() is deprecated" << eos;
 	Assert(false);
 
 	return false;
@@ -1045,7 +1045,7 @@ bool ShrineInfoManager::removeShrineShield( ShrineInfo* pShrineInfo )
 {
 	__BEGIN_TRY
 
-	cout << "ShrineInfoManager::addShrineShield_LOCKED( Zone *pZone ) is deprecated" << endl;
+	cout << "ShrineInfoManager::addShrineShield_LOCKED( Zone *pZone ) is deprecated" << eos;
 	Assert( false );
 
 	return false;
@@ -1069,7 +1069,7 @@ bool ShrineInfoManager::removeShrineShield( ShrineInfo* pShrineInfo )
 {
 	__BEGIN_TRY
 
-	cout << "ShrineInfoManager::addShrineShield_LOCKED( Zone *pZone ) is deprecated" << endl;
+	cout << "ShrineInfoManager::addShrineShield_LOCKED( Zone *pZone ) is deprecated" << eos;
 	Assert( false );
 
 	return false;

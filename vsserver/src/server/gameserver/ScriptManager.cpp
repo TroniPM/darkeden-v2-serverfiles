@@ -70,7 +70,7 @@ void ScriptManager::load (const string & ownerID)
 				pSubject->SetText(msg);
 				pChild->AddChild(pSubject);
 
-				//cout << "SUBJECT:" << msg << endl;
+				//cout << "SUBJECT:" << msg << eos;
 			}
 
 			////////////////////////////////////////////////////////////
@@ -99,7 +99,7 @@ void ScriptManager::load (const string & ownerID)
 				pContent->AddAttribute("AnswerID", ++answerid);
 				pChild->AddChild(pContent);
 
-				//cout << "CONTENT:" << msg << endl;
+				//cout << "CONTENT:" << msg << eos;
 			}
 
 			setScript(scriptID, pScript);
@@ -134,7 +134,7 @@ Script* ScriptManager::getScript (ScriptID_t scriptID) const
 	{
 		StringStream msg;
 		msg << "No Such Script(ID:" << scriptID << ") exist...";
-		cerr << msg.toString() << endl;
+		cerr << msg.toString() << eos;
 		throw NoSuchElementException(msg.toString());
 	}
 

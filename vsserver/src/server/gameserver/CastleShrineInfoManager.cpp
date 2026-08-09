@@ -119,7 +119,7 @@ void CastleShrineInfoManager::load()
 			// ItemType과 Shrine ID는 같아야 한다. 같지 않을 경우 DB설정 오류로 로딩과정에서 막는다.
 			if ( pShrineSet->m_ItemType != pShrineSet->m_ShrineID )
 			{
-				cout << "ShrineID 와 ItemType이 맞지 않습니다. DB설정을 점검하세요." << endl;
+				cout << "ShrineID 와 ItemType이 맞지 않습니다. DB설정을 점검하세요." << eos;
 				Assert( false );
 			}
 
@@ -212,7 +212,7 @@ Item* CastleShrineInfoManager::addShrineToZone( ShrineInfo& shrineInfo, ItemType
 	cout << "AddShrine[" << (int)shrineInfo.getZoneID() << "] " 
 			<< (shrineInfo.getShrineType()==ShrineInfo::SHRINE_GUARD? "Guard":"Holy")
 			<< ", mtype=" << shrineInfo.getMonsterType()
-			<< ", oid=" << pShrine->getObjectID() << endl;
+			<< ", oid=" << pShrine->getObjectID() << eos;
 
 	Item* pItem =  NULL;
 

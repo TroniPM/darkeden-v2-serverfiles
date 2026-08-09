@@ -73,7 +73,7 @@ void EffectReloadTimer::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectReloadTimer " << "unaffect BEGIN" << endl;
+	//cout << "EffectReloadTimer " << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isSlayer());
@@ -115,8 +115,8 @@ void EffectReloadTimer::unaffect(Creature* pCreature)
 
 			if (pItem == NULL || pInventory == NULL)
 			{
-				//cout << "EffectReloadTimer : 아이템이 널이거나, 인벤토리가 널입니다." << endl;
-				//cout << "EffectReloadTimer " << "unaffect END" << endl;
+				//cout << "EffectReloadTimer : 아이템이 널이거나, 인벤토리가 널입니다." << eos;
+				//cout << "EffectReloadTimer " << "unaffect END" << eos;
 				return;
 			}
 	
@@ -188,7 +188,7 @@ void EffectReloadTimer::unaffect(Creature* pCreature)
 		pPlayer->sendPacket(&ok);
 	}
 
-	//cout << "EffectReloadTimer " << "unaffect END" << endl;
+	//cout << "EffectReloadTimer " << "unaffect END" << eos;
 
 	__END_CATCH
 }

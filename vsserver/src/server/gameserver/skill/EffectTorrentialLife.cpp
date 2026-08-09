@@ -38,12 +38,12 @@ void EffectTorrentialLife::unaffect()
 {
 	__BEGIN_TRY	
 
-	//cout << "EffectTorrentialLife" << "unaffect BEGIN" << endl;
+	//cout << "EffectTorrentialLife" << "unaffect BEGIN" << eos;
 
     Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 	unaffect(pCreature);
 
-	//cout << "EffectTorrentialLife" << "unaffect END" << endl;
+	//cout << "EffectTorrentialLife" << "unaffect END" << eos;
 
 	__END_CATCH
 }
@@ -55,7 +55,7 @@ void EffectTorrentialLife::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectTorrentialLife" << "unaffect BEGIN" << endl;
+	//cout << "EffectTorrentialLife" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isOusters()); // 슬레이어말고는 걸리지 않는다.
@@ -78,7 +78,7 @@ void EffectTorrentialLife::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_TORRENTIALLIFE);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectTorrentialLife" << "unaffect END" << endl;
+	//cout << "EffectTorrentialLife" << "unaffect END" << eos;
 
 	__END_CATCH
 }

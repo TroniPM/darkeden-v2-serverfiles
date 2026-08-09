@@ -31,7 +31,7 @@ void EffectWaterBarrier::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectWaterBarrier" << "unaffect BEGIN" << endl;
+	//cout << "EffectWaterBarrier" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isOusters());
@@ -51,7 +51,7 @@ void EffectWaterBarrier::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_WATER_BARRIER);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectWaterBarrier" << "unaffect END" << endl;
+	//cout << "EffectWaterBarrier" << "unaffect END" << eos;
 
 	__END_CATCH
 }

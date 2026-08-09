@@ -140,7 +140,7 @@ void EffectHeterChakram::affect()
 // 		}
 // 	}
 	
-	//cout << "EffectHeterChakram" << "affect BEGIN" << endl;
+	//cout << "EffectHeterChakram" << "affect BEGIN" << eos;
 
 	__END_CATCH 
 }
@@ -224,7 +224,7 @@ void EffectHeterChakram::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectHeterChakram" << "unaffect BEGIN" << endl;
+	//cout << "EffectHeterChakram" << "unaffect BEGIN" << eos;
 // 	try
 // 	{
 		Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
@@ -289,7 +289,7 @@ void EffectHeterChakram::unaffect()
 	 	}
 	
 	unaffect(pCreature);
-	//cout << "EffectHeterChakram" << "unaffect END" << endl;
+	//cout << "EffectHeterChakram" << "unaffect END" << eos;
 	
 	__END_CATCH
 }

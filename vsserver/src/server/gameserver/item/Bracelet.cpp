@@ -44,7 +44,7 @@ Bracelet::Bracelet(ItemType_t itemType, const list<OptionType_t>& optionType)
 	if (!g_pItemInfoManager->isPossibleItem(getItemClass(), getItemType(), getOptionTypeList()))
 	{
 		filelog("itembug.log", "Bracelet::Bracelet() : Invalid item type or option type");
-		cerr << "Bracelet::Bracelet() : Invalid item type or optionType" << endl;
+		cerr << "Bracelet::Bracelet() : Invalid item type or optionType" << eos;
 		throw ("Bracelet::Bracelet() : Invalid item type or optionType");
 	}
 }
@@ -501,10 +501,10 @@ void BraceletLoader::load(Creature* pCreature)
 									pBeltInventory = ((SubInventory*)pBelt)->getInventory();
 										if (pBeltInventory->canAddingEx(x, y, pBracelet))
 										{
-											cout << " 추가완료"<< endl;
+											cout << " 추가완료"<< eos;
 											pBeltInventory->addItemEx(x, y, pBracelet);
 										}else{
-											cout << " 버그"<< endl;
+											cout << " 버그"<< eos;
 											processItemBugEx(pCreature, pBracelet);
 										}
 								}else{

@@ -58,9 +58,9 @@ void CLLogin::read (SocketInputStream & iStream)
 		int realage = atoi(age);
 
 		// µð¹ö±ë
-		cout << "ID : " << m_ID << endl;
-		cout << "PW : " << m_Password << endl;
-		cout << "Age : " << realage << endl;
+		cout << "ID : " << m_ID << eos;
+		cout << "PW : " << m_Password << eos;
+		cout << "Age : " << realage << eos;
 
 		if ( realage > 18 )
 			setAdult(true);

@@ -174,12 +174,12 @@ TPOINT findSuitablePosition(Zone* pZone, ZoneCoord_t cx, ZoneCoord_t cy, Creatur
 			/*
 			if (rTile.isBlocked(MMode))
 			{
-				//cout << "[" << checkCount << "] Block : (" << x << ", " << y << ")" << endl;
+				//cout << "[" << checkCount << "] Block : (" << x << ", " << y << ")" << eos;
 			}
 
 			if (rTile.hasPortal())
 			{
-				//cout << "[" << checkCount << "] Portal : (" << x << ", " << y << ")" << endl;
+				//cout << "[" << checkCount << "] Portal : (" << x << ", " << y << ")" << eos;
 			}
 			*/
 		}
@@ -817,7 +817,7 @@ void addUnburrowCreature(Zone* pZone, Creature* pCreature, ZoneCoord_t cx, ZoneC
 		}
 		else
 		{
-			cerr << "addUnburrowCreature() : Cannot find suitable position" << endl;
+			cerr << "addUnburrowCreature() : Cannot find suitable position" << eos;
 			throw Error("Cannot unburrow monster.");
 		}	
 	}
@@ -1146,7 +1146,7 @@ void addInvisibleCreature(Zone* pZone, Creature* pCreature, ZoneCoord_t cx, Zone
 						//Assert( pEffectGnomesWhisper != NULL );
 					}
 
-					////cout << "checking" << endl;
+					////cout << "checking" << eos;
 					if ( !pCreature->isFlag(Effect::EFFECT_CLASS_HIDE)
 							|| pViewer->isFlag(Effect::EFFECT_CLASS_DETECT_HIDDEN)
 							|| ( pEffectGnomesWhisper != NULL && pEffectGnomesWhisper->canSeeHide() )
@@ -1159,12 +1159,12 @@ void addInvisibleCreature(Zone* pZone, Creature* pCreature, ZoneCoord_t cx, Zone
 						)
 						{
 							pViewer->getPlayer()->sendPacket(&gcAddEffect);
-							////cout << "send add invisible effect" << endl;
+							////cout << "send add invisible effect" << eos;
 						}
 						else
 						{
 							pViewer->getPlayer()->sendPacket(&gcDO);
-							////cout << "send delete object" << endl;
+							////cout << "send delete object" << eos;
 						}
 						// invisbility와 관련해서만, 볼 수 없는자..
 /*						if (!pViewer->isFlag(Effect::EFFECT_CLASS_DETECT_INVISIBILITY) 
@@ -1741,7 +1741,7 @@ bool checkMine(Zone* pZone, Creature* pCreature, ZoneCoord_t X, ZoneCoord_t Y)
 	// 타일에 아이템이 없어도 폭파시키지 않는다.
 	if (!rTile.hasItem()) return false;
 
-	////cout << "Check Mine Start" << endl;
+	////cout << "Check Mine Start" << eos;
 
 	Item* pItem = rTile.getItem();
 
@@ -1811,7 +1811,7 @@ bool checkMine(Zone* pZone, Creature* pCreature, ZoneCoord_t X, ZoneCoord_t Y)
 	{
 		tileX = X + xOffsetByEType[ tileI];
 		tileY = Y + yOffsetByEType[ tileI];
-		////cout << "Check1 Tile X : " << (int)tileX << "," << " Tile Y : " << (int)tileY << endl;
+		////cout << "Check1 Tile X : " << (int)tileX << "," << " Tile Y : " << (int)tileY << eos;
 
 		// 현재 좌표가 존 내부이고, 안전 지대가 아니라면...
 		if (rect.ptInRect(tileX, tileY) && !(pZone->getZoneLevel(tileX, tileY) & SAFE_ZONE))
@@ -1870,7 +1870,7 @@ bool checkMine(Zone* pZone, Creature* pCreature, ZoneCoord_t X, ZoneCoord_t Y)
 	{
 		Creature* pTargetCreature = *itr;
 		_GCMineExplosionOK1.clearList();
-		////cout << "Set Damage : " << (int)Damage << endl;
+		////cout << "Set Damage : " << (int)Damage << eos;
 
 		if( pTargetCreature->isSlayer() ) Damage = max( 1, Damage / 2 );
 		setDamage(pTargetCreature, Damage, NULL, 0, &_GCMineExplosionOK1);
@@ -1893,7 +1893,7 @@ bool checkMine(Zone* pZone, Creature* pCreature, ZoneCoord_t X, ZoneCoord_t Y)
 
 	pZone->broadcastPacket(X, Y, &_GCMineExplosionOK2, cList);
 
-	////cout << "Check Mine End" << endl;
+	////cout << "Check Mine End" << eos;
 	return true;
  
 	__END_CATCH
@@ -1922,7 +1922,7 @@ bool checkMine( Zone * pZone, ZoneCoord_t X, ZoneCoord_t Y )
 	// 타일에 아이템이 없어도 폭파시키지 않는다.
 	if (rTile.hasItem() == false) return false;
 
-	////cout << "Check Mine2 Start" << endl;
+	////cout << "Check Mine2 Start" << eos;
 
 	Item* pItem = rTile.getItem();
 
@@ -1991,7 +1991,7 @@ bool checkMine( Zone * pZone, ZoneCoord_t X, ZoneCoord_t Y )
 	{
 		tileX = X + xOffsetByEType[ tileI];
 		tileY = Y + yOffsetByEType[ tileI];
-		////cout << "Check2 Tile X : " << (int)tileX << "," << " Tile Y : " << (int)tileY << endl;
+		////cout << "Check2 Tile X : " << (int)tileX << "," << " Tile Y : " << (int)tileY << eos;
 
 		// 현재 좌표가 존 내부이고, 안전 지대가 아니라면...
 		if (rect.ptInRect(tileX, tileY) && !(pZone->getZoneLevel(tileX, tileY) & SAFE_ZONE))
@@ -2050,7 +2050,7 @@ bool checkMine( Zone * pZone, ZoneCoord_t X, ZoneCoord_t Y )
 	{
 		Creature* pTargetCreature = *itr;
 		_GCMineExplosionOK1.clearList();
-		////cout << "Set Damage : " << (int)Damage << endl;
+		////cout << "Set Damage : " << (int)Damage << eos;
 
 		if( pTargetCreature->isSlayer() ) Damage = max( 1, Damage / 2 );
 		setDamage(pTargetCreature, Damage, NULL, 0, &_GCMineExplosionOK1);
@@ -2073,7 +2073,7 @@ bool checkMine( Zone * pZone, ZoneCoord_t X, ZoneCoord_t Y )
 
 	pZone->broadcastPacket(X, Y, &_GCMineExplosionOK2, cList);
 
-	////cout << "Check Mine2 End" << endl;
+	////cout << "Check Mine2 End" << eos;
 	return true;
  
 	__END_CATCH
@@ -2147,7 +2147,7 @@ void transportCreature(Creature* pCreature, ZoneID_t TargetZoneID, ZoneCoord_t T
 		return;
 	}
 
-	//cout << "ZoneUtil.cpp step 1" << endl;
+	//cout << "ZoneUtil.cpp step 1" << eos;
 
 
 	Assert(pGamePlayer != NULL);
@@ -2155,7 +2155,7 @@ void transportCreature(Creature* pCreature, ZoneID_t TargetZoneID, ZoneCoord_t T
 
 	if (bSendMoveOK)
 	{
-		//cout << "ZoneUtil.cpp step 2" << endl;
+		//cout << "ZoneUtil.cpp step 2" << eos;
 		// 일단 바보 클라이언트를 위해서 GCMoveOK 를 날려준다.
 		GCMoveOK gcMoveOK(pCreature->getX(), pCreature->getY(), pCreature->getDir());
 		pGamePlayer->sendPacket(&gcMoveOK);
@@ -2172,7 +2172,7 @@ void transportCreature(Creature* pCreature, ZoneID_t TargetZoneID, ZoneCoord_t T
 
 	/*	if(TargetZoneID==1013 )//각薑쟁갰뒈인
 		{
-			//cout << "ZoneUtil.cpp step New1013" << endl;
+			//cout << "ZoneUtil.cpp step New1013" << eos;
 			if(pZoneInfo->isNoPortalZone())
 			{
 				PlayerCreature* pPC = dynamic_cast<PlayerCreature*>(pGamePlayer->getCreature());
@@ -2197,10 +2197,10 @@ void transportCreature(Creature* pCreature, ZoneID_t TargetZoneID, ZoneCoord_t T
 							}
 							else
 							{
-								//cout << " User: = " << pCreature->getName() << endl;
-								//cout << " pItem->Hour = " << (int)pItem->getHour() << endl;
-								//cout << " pItem->isTimeLimitItem = " << (int)pItem->isTimeLimitItem() << endl;
-								//cout << " pItem->Num = " << (int)pItem->getNum() << endl;
+								//cout << " User: = " << pCreature->getName() << eos;
+								//cout << " pItem->Hour = " << (int)pItem->getHour() << eos;
+								//cout << " pItem->isTimeLimitItem = " << (int)pItem->isTimeLimitItem() << eos;
+								//cout << " pItem->Num = " << (int)pItem->getNum() << eos;
 								pPC->getInventory()->deleteItem(pItem->getObjectID());
 								pItem->destroy();
 								SAFE_DELETE(pItem);
@@ -2225,7 +2225,7 @@ void transportCreature(Creature* pCreature, ZoneID_t TargetZoneID, ZoneCoord_t T
 	//	return;
 	//}
 	
-	//cout << "ZoneUtil.cpp step 3" << endl;
+	//cout << "ZoneUtil.cpp step 3" << eos;
 //#endif
 	
 	bool bNoMoney = false;
@@ -2240,7 +2240,7 @@ void transportCreature(Creature* pCreature, ZoneID_t TargetZoneID, ZoneCoord_t T
 			&& !(g_pWarSystem->hasActiveRaceWar() && pZoneInfo->isHolyLand())
 		)
 		{
-			//cout << "ZoneUtil.cpp step 4" << endl;
+			//cout << "ZoneUtil.cpp step 4" << eos;
 
 			bool bEnterZone = true;
 
@@ -2250,7 +2250,7 @@ void transportCreature(Creature* pCreature, ZoneID_t TargetZoneID, ZoneCoord_t T
 			// 유료 서비스 사용이 가능한가?
 			if (pGamePlayer->loginPayPlay(connectIP, pGamePlayer->getID()))
 			{
-				//cout << "ZoneUtil.cpp step 5" << endl;
+				//cout << "ZoneUtil.cpp step 5" << eos;
 			
 				sendPayInfo(pGamePlayer);
 
@@ -2264,7 +2264,7 @@ void transportCreature(Creature* pCreature, ZoneID_t TargetZoneID, ZoneCoord_t T
 			}
 			else if (pZoneInfo->isPayPlay() && !pGamePlayer->isFamilyFreePass() ) // 패밀리 프리 패스는 유료존으로 갈 수 있다.
 			{
-				//cout << "ZoneUtil.cpp step 6" << endl;
+				//cout << "ZoneUtil.cpp step 6" << eos;
 
 				bEnterZone = false;
 			}
@@ -2272,7 +2272,7 @@ void transportCreature(Creature* pCreature, ZoneID_t TargetZoneID, ZoneCoord_t T
 			if (!bEnterZone)
 			{
 
-				//cout << "ZoneUtil.cpp step 7" << endl;
+				//cout << "ZoneUtil.cpp step 7" << eos;
 			
 				// 현재 존에 들어갈 수 없는 경우이다.
 				// 유료 서비스 사용 불가인 경우
@@ -2329,7 +2329,7 @@ void transportCreature(Creature* pCreature, ZoneID_t TargetZoneID, ZoneCoord_t T
 			}
 		}
 
-		//cout << "ZoneUtil.cpp step 8" << endl;
+		//cout << "ZoneUtil.cpp step 8" << eos;
 		// 크리처의 정보를 저장한다.
 		pCreature->save();
 
@@ -2403,7 +2403,7 @@ void transportCreature(Creature* pCreature, ZoneID_t TargetZoneID, ZoneCoord_t T
 		// 크리처의 새로운 좌표는 포탈의 도착 지점이다.
 		//pCreature->setXY(TX, TY);
 		//pCreature->setZone(NULL);
-		//cout << "ZoneUtil.cpp step 9" << endl;
+		//cout << "ZoneUtil.cpp step 9" << eos;
 
 		// IPM으로 플레이어를 옮긴다.
 		//g_pIncomingPlayerManager->addPlayer(pGamePlayer);
@@ -2443,13 +2443,13 @@ void transportCreature(Creature* pCreature, ZoneID_t TargetZoneID, ZoneCoord_t T
 		|| pZone->isHolyLand() && !pNewZone->isHolyLand())
 	{
 		sendHolyLandWarpEffect( pCreature );
-		//cout << "ZoneUtil.cpp step 10" << endl;
+		//cout << "ZoneUtil.cpp step 10" << eos;
 	}
 
 	// change player status
 	pGamePlayer->setPlayerStatus(GPS_WAITING_FOR_CG_READY);
 
-	//cout << "ZoneUtil.cpp step 11" << endl;
+	//cout << "ZoneUtil.cpp step 11" << eos;
 
 	__END_CATCH
 }
@@ -2470,7 +2470,7 @@ Zone* getZoneByZoneID(ZoneID_t ZID)
 	} 
 	catch (NoSuchElementException&) 
 	{
-		//cerr << "getZoneByZoneID() : No Such ZoneInfo: " << (int)ZID << endl;
+		//cerr << "getZoneByZoneID() : No Such ZoneInfo: " << (int)ZID << eos;
 		StringStream msg;
 		msg << "getZoneByZoneID() : No Such ZoneInfo [" << (int)ZID << "]";
 		throw Error(msg.toString());
@@ -2484,7 +2484,7 @@ Zone* getZoneByZoneID(ZoneID_t ZID)
 	catch (NoSuchElementException&) 
 	{
 		// 일단은 서버가 1대이므로.. 그대로 나간다...
-		//cerr << "getZoneByZoneID() : No Such ZoneGroup" << endl;
+		//cerr << "getZoneByZoneID() : No Such ZoneGroup" << eos;
 		throw Error("getZoneByZoneID() : No Such ZoneGroup");
 
 		/*
@@ -2556,7 +2556,7 @@ void addMonstersToZone(Zone* pZone, ZoneCoord_t x, ZoneCoord_t y, SpriteType_t S
 	}
 	catch (Throwable& t)
 	{
-		cerr << t.toString() << endl;
+		cerr << t.toString() << eos;
 	}
 
 	__END_CATCH
@@ -2626,7 +2626,7 @@ void addMonstersToZone(Zone* pZone, const SUMMON_INFO2& summonInfo, list<Monster
 	}
 	catch (Throwable& t)
 	{
-		cerr << t.toString() << endl;
+		cerr << t.toString() << eos;
 	}
 
 	__END_CATCH
@@ -3089,7 +3089,7 @@ void loadBulletinBoard( Zone* pZone )
 
 			if ( timeLimit < currentDateTime )
 			{
-				//cout << "게시판 시간 다되서 지워버립니다." << ID << " : [" << X << "," << Y << "] " << msg << " [" << type << "] " << endl;
+				//cout << "게시판 시간 다되서 지워버립니다." << ID << " : [" << X << "," << Y << "] " << msg << " [" << type << "] " << eos;
 				Statement* pStmt2 = g_pDatabaseManager->getConnection("DARKEDEN")->createStatement();
 				pStmt2->executeQuery("DELETE FROM BulletinBoardObject WHERE ID = %u", ID);
 				continue;

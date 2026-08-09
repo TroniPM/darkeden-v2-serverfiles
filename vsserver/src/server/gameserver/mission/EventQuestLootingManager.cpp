@@ -67,7 +67,7 @@ bool EventQuestLootingInfo::isTargetMonster( PlayerCreature* pPC, Monster* pMons
 		}
 		else
 		{
-			cout << "³Í¹¹³Ä!" << endl;
+			cout << "³Í¹¹³Ä!" << eos;
 			qGrade = 0;
 		}
 
@@ -153,7 +153,7 @@ bool EventQuestLootingManager::killed( PlayerCreature* pPC, Monster* pMonster ) 
 	EventQuestLootingInfo* pInfo = isTargetMonster( pPC, pMonster );
 	if ( pInfo == NULL ) return false;
 
-//	cout << "Affecting ratio : " << ratio[pInfo->m_QuestLevel] << endl;
+//	cout << "Affecting ratio : " << ratio[pInfo->m_QuestLevel] << eos;
 	if ( (rand()%100) < ratio[pInfo->m_QuestLevel] )
 	{
 		Item* pItem = pInfo->getLootingItem();

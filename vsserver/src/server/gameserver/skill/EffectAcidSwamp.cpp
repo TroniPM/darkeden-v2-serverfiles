@@ -42,7 +42,7 @@ void EffectAcidSwamp::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectAcidSwamp" << "affect BEGIN" << endl;
+	//cout << "EffectAcidSwamp" << "affect BEGIN" << eos;
 	
 	Assert(m_pZone != NULL);
 
@@ -168,7 +168,7 @@ void EffectAcidSwamp::affect()
 	
 	setNextTime(m_Tick);
 
-	//cout << "EffectAcidSwamp" << "affect END" << endl;
+	//cout << "EffectAcidSwamp" << "affect END" << eos;
 
 	__END_CATCH 
 }
@@ -207,12 +207,12 @@ void EffectAcidSwamp::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectAcidSwamp" << "unaffect BEGIN" << endl;
+	//cout << "EffectAcidSwamp" << "unaffect BEGIN" << eos;
 
     Tile& tile = m_pZone->getTile(m_X, m_Y);
 	tile.deleteEffect(m_ObjectID);
 
-	//cout << "EffectAcidSwamp" << "unaffect END" << endl;
+	//cout << "EffectAcidSwamp" << "unaffect END" << eos;
 
 	__END_CATCH
 }

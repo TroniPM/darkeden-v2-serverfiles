@@ -37,7 +37,7 @@ Pupa::Pupa(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_t 
 	throw()
 : m_ItemType(itemType), m_Num(Num)
 {
-	//cout << "Pupa::Pupa(" << getOptionTypeToString(optionType).c_str() << ")" << endl;
+	//cout << "Pupa::Pupa(" << getOptionTypeToString(optionType).c_str() << ")" << eos;
 	if (!g_pItemInfoManager->isPossibleItem(getItemClass(), m_ItemType, optionType))
 	{
 		filelog("itembug.log", "Pupa::Pupa() : Invalid item type or option type");
@@ -639,10 +639,10 @@ void PupaLoader::load(Creature* pCreature)
 									pBeltInventory = ((SubInventory*)pBelts)->getInventory();
 										if (pBeltInventory->canAddingEx(x, y, pPupa))
 										{
-											cout << " 추가완료"<< endl;
+											cout << " 추가완료"<< eos;
 											pBeltInventory->addItemEx(x, y, pPupa);
 										}else{
-											cout << " 버그"<< endl;
+											cout << " 버그"<< eos;
 											processItemBugEx(pCreature, pPupa);
 										}
 								}else{

@@ -41,11 +41,11 @@ void EffectGroundAttack::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectGroundAttack" << "affect BEGIN" << endl;
+	//cout << "EffectGroundAttack" << "affect BEGIN" << eos;
 
 	//setNextTime(m_Delay);
 
-	//cout << "EffectGroundAttack" << "affect END" << endl;
+	//cout << "EffectGroundAttack" << "affect END" << eos;
 
 	__END_CATCH 
 }
@@ -75,7 +75,7 @@ void EffectGroundAttack::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectGroundAttack" << "unaffect BEGIN" << endl;
+	//cout << "EffectGroundAttack" << "unaffect BEGIN" << eos;
 	Assert(m_pZone != NULL);
 
 	// 시전자를 가져온다.
@@ -215,7 +215,7 @@ void EffectGroundAttack::unaffect()
 	Tile& tile = m_pZone->getTile(m_X, m_Y);
 	tile.deleteEffect(m_ObjectID);
 
-	//cout << "EffectGroundAttack" << "unaffect END" << endl;
+	//cout << "EffectGroundAttack" << "unaffect END" << eos;
 
 	__END_CATCH
 }

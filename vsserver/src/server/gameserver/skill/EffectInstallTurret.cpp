@@ -47,12 +47,12 @@ void EffectInstallTurret::unaffect()
 {
 	__BEGIN_TRY	
 
-	//cout << "EffectInstallTurret" << "unaffect BEGIN" << endl;
+	//cout << "EffectInstallTurret" << "unaffect BEGIN" << eos;
 
     Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 	unaffect(pCreature);
 
-	//cout << "EffectInstallTurret" << "unaffect END" << endl;
+	//cout << "EffectInstallTurret" << "unaffect END" << eos;
 
 	__END_CATCH
 }
@@ -64,7 +64,7 @@ void EffectInstallTurret::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectInstallTurret" << "unaffect BEGIN" << endl;
+	//cout << "EffectInstallTurret" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isSlayer()); // 슬레이어말고는 걸리지 않는다.
@@ -91,7 +91,7 @@ void EffectInstallTurret::unaffect(Creature* pCreature)
 	makeGCOtherModifyInfo(&gcOtherModifyInfo, pSlayer, &prev);
 	pZone->broadcastPacket(pSlayer->getX(), pSlayer->getY(), &gcOtherModifyInfo, pSlayer);
 
-	//cout << "EffectInstallTurret" << "unaffect END" << endl;
+	//cout << "EffectInstallTurret" << "unaffect END" << eos;
 
 	__END_CATCH
 }

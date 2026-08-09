@@ -127,7 +127,7 @@ void EffectSlayerRelic::affect(Item* pItem)
 		msg << pVampire->getName() << " 님이 ";
 	}
 
-	msg << " 슬레이어 성물을 가지고 있습니다." << endl;
+	msg << " 슬레이어 성물을 가지고 있습니다." << eos;
 
 	GCSystemMessage gcSystemMessage;
 	gcSystemMessage.setMessage(msg.toString());
@@ -178,7 +178,7 @@ void EffectSlayerRelic::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectSlayerRelic" << "unaffect BEGIN" << endl;
+	//cout << "EffectSlayerRelic" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -194,7 +194,7 @@ void EffectSlayerRelic::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_SLAYER_RELIC);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectSlayerRelic" << "unaffect END" << endl;
+	//cout << "EffectSlayerRelic" << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH
@@ -208,7 +208,7 @@ void EffectSlayerRelic::unaffect(Item* pItem)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectSlayerRelic" << "unaffect BEGIN" << endl;
+	//cout << "EffectSlayerRelic" << "unaffect BEGIN" << eos;
 
 	Assert(pItem != NULL);
 
@@ -227,7 +227,7 @@ void EffectSlayerRelic::unaffect(Item* pItem)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_SLAYER_RELIC);
 	pZone->broadcastPacket(pCorpse->getX(), pCorpse->getY(), &gcRemoveEffect);
 
-	//cout << "EffectSlayerRelic" << "unaffect END" << endl;
+	//cout << "EffectSlayerRelic" << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

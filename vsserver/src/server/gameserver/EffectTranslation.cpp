@@ -52,7 +52,7 @@ void EffectTranslation::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectTranslation" << "unaffect BEGIN" << endl;
+	//cout << "EffectTranslation" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -68,7 +68,7 @@ void EffectTranslation::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_TRANSLATION);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectTranslation" << "unaffect END" << endl;
+	//cout << "EffectTranslation" << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

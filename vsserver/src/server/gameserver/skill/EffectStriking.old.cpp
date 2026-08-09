@@ -58,11 +58,11 @@ void EffectStriking::unaffect(Item* pItem)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectStriking " << "unaffect BEGIN" << endl;
+	//cout << "EffectStriking " << "unaffect BEGIN" << eos;
 
 	if (pItem == NULL)
 	{
-		//cout << "EffectStriking " << "unaffect END" << endl;
+		//cout << "EffectStriking " << "unaffect END" << eos;
 		return;
 	}
 
@@ -120,7 +120,7 @@ void EffectStriking::unaffect(Item* pItem)
 
 	pItem->removeFlag(Effect::EFFECT_CLASS_STRIKING);
 
-	//cout << "EffectStriking " << "unaffect END" << endl;
+	//cout << "EffectStriking " << "unaffect END" << eos;
 
 	__END_CATCH
 }

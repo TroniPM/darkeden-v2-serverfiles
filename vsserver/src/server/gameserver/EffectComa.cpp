@@ -77,7 +77,7 @@ void EffectComa::unaffect(Creature* pDeadCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectComa " << "unaffect BEGIN(Creature)" << endl;
+	//cout << "EffectComa " << "unaffect BEGIN(Creature)" << eos;
 	
 	Assert(pDeadCreature != NULL);
 	//Assert(pDeadCreature->isDead());
@@ -101,7 +101,7 @@ void EffectComa::unaffect(Creature* pDeadCreature)
 		pOusters->setHP(0, ATTR_CURRENT);
 	}
 
-	//cout << "EffectComa " << "unaffect END(Creature)" << endl;
+	//cout << "EffectComa " << "unaffect END(Creature)" << eos;
 
 	__END_CATCH
 }
@@ -111,12 +111,12 @@ void EffectComa::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectComa " << "unaffect BEGIN" << endl;
+	//cout << "EffectComa " << "unaffect BEGIN" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature*>(m_pTarget);
 	unaffect(pCreature);
 
-	//cout << "EffectComa " << "unaffect END" << endl;
+	//cout << "EffectComa " << "unaffect END" << eos;
 
 	__END_CATCH
 }

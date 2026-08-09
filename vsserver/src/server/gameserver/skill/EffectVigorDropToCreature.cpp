@@ -36,12 +36,12 @@ void EffectVigorDropToCreature::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectVigorDropToCreature " << "begin begin" << endl;
+	//cout << "EffectVigorDropToCreature " << "begin begin" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 	affect(pCreature);
 
-	//cout << "EffectVigorDropToCreature " << "begin end" << endl;
+	//cout << "EffectVigorDropToCreature " << "begin end" << eos;
 
 	__END_CATCH 
 
@@ -54,7 +54,7 @@ void EffectVigorDropToCreature::affect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectVigorDropToCreature " << "begin" << endl;
+	//cout << "EffectVigorDropToCreature " << "begin" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -128,7 +128,7 @@ void EffectVigorDropToCreature::affect(Creature* pCreature)
 	
 	setNextTime(m_Tick);
 
-	//cout << "EffectVigorDropToCreature " << "end" << endl;
+	//cout << "EffectVigorDropToCreature " << "end" << eos;
 
 	__END_CATCH
 }

@@ -137,7 +137,7 @@ void EffectSummonFireElemental::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectSummonFireElemental" << "unaffect BEGIN" << endl;
+	//cout << "EffectSummonFireElemental" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isOusters());
@@ -157,7 +157,7 @@ void EffectSummonFireElemental::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_FIRE_ELEMENTAL);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectSummonFireElemental" << "unaffect END" << endl;
+	//cout << "EffectSummonFireElemental" << "unaffect END" << eos;
 
 	__END_CATCH
 }

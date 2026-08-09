@@ -277,7 +277,7 @@ bool isPotentialEnemy(Monster* pMonster, Creature* pCreature)
 		Creature* pOwner = pMonster->getZone()->getCreature( pMonster->getOwnerObjectID() );
 		if ( pOwner != NULL && pOwner->getCreatureClass() == pCreature->getCreatureClass() && canAttack( pOwner, pCreature ) )
 		{
-//			cout << __PRETTY_FUNCTION__ << pCreature->getName() << "is same race as owner" << pOwner->getName() << endl;
+//			cout << __PRETTY_FUNCTION__ << pCreature->getName() << "is same race as owner" << pOwner->getName() << eos;
 			return false;
 		}
 
@@ -358,7 +358,7 @@ list<Packet*> * getRelicEffectPacket( MonsterCorpse* pMonsterCorpse, Effect::Eff
 	{
 		Effect* pEffect = pMonsterCorpse->getEffectManager().findEffect( EClass );
 
-		if ( pEffect == NULL ) cout << (int)EClass << endl;
+		if ( pEffect == NULL ) cout << (int)EClass << eos;
 
 		Assert(pEffect!=NULL);
 
@@ -869,37 +869,37 @@ try {
 
 	// SMP 정보 파일을 연다.
 	string SMPFilename = g_pConfig->getProperty("HomePath") + "/data/" + pZoneInfo->getSMPFilename();
-	ifstream SMP(SMPFilename.c_str(), ios::in | ios::binary | ios::nocreate);
+	ifstream SMP(SMPFilename.c_str(), ios::in | ios::binary );
 	if (!SMP)
 	{
 		strcpy(lwrFilename, SMPFilename.c_str());
 		strlwr( lwrFilename );
-		SMP.open(lwrFilename, ios::in | ios::binary | ios::nocreate);
+		SMP.open(lwrFilename, ios::in | ios::binary );
 
-		//cout << "second chk : " << lwrFilename.c_str() << endl;
+		//cout << "second chk : " << lwrFilename.c_str() << eos;
 
 		if (!SMP)
 		{
 			StringStream msg;
 			msg << SMPFilename << " not exist or cannot open it";
-			cerr << msg.toString() << endl;
+			cerr << msg.toString() << eos;
 			throw FileNotExistException(msg.toString());
 		}
 	}
 
     // read zone version
-	SMP.read(&versionLen,szDWORD);
+	SMP.read((char*)&versionLen,szDWORD);
 	SMP.read(version,versionLen);
 	version[versionLen] = 0;
 	
 	// read zone id
-	SMP.read(&zoneID,szWORD);
+	SMP.read((char*)&zoneID,szWORD);
 	
 	// read zone group id (no use)
-	SMP.read(&zoneGroupID,szWORD);
+	SMP.read((char*)&zoneGroupID,szWORD);
 	
 	// read zone name
-	SMP.read(&zonenameLen,szDWORD);
+	SMP.read((char*)&zonenameLen,szDWORD);
 	if (zonenameLen > 0)
 	{
 		SMP.read(zonename,zonenameLen);
@@ -907,11 +907,11 @@ try {
 	}
 
     // read zone type & level 
-	SMP.read(&zoneType,szBYTE);
-	SMP.read(&zoneLevel,szBYTE);
+	SMP.read((char*)&zoneType,szBYTE);
+	SMP.read((char*)&zoneLevel,szBYTE);
 
 	// read zone description
-	SMP.read(&descLen,szDWORD);
+	SMP.read((char*)&descLen,szDWORD);
 	if (descLen > 0)
 	{
 		pDesc = new char[descLen+1];
@@ -922,8 +922,8 @@ try {
 	}
 
 	// read zone width & height
-	SMP.read(&m_Width, szWORD);
-	SMP.read(&m_Height ,szWORD);
+	SMP.read((char*)&m_Width, szWORD);
+	SMP.read((char*)&m_Height ,szWORD);
 
 	Assert(m_Width <= maxZoneWidth);
 	Assert(m_Height <= maxZoneHeight);
@@ -997,7 +997,7 @@ try {
 		for (ZoneCoord_t x=0; x<m_Width; x++)
 		{
 			BYTE flag = 0;
-			SMP.read(&flag, szBYTE);
+			SMP.read((char*)&flag, szBYTE);
 
 			// 순서대로 지하, 지상, 공중 블록
 			if (flag & 0x01) m_pTiles[x][y].setBlocked(Creature::MOVE_MODE_BURROWING);
@@ -1023,7 +1023,7 @@ try {
 				BYTE	type;
 				ZoneID_t targetZoneID;
 				BYTE     targetX, targetY;
-				SMP.read(&type, szBYTE);
+				SMP.read((char*)&type, szBYTE);
 
 				PortalType_t portalType = PORTAL_NORMAL;
 
@@ -1031,9 +1031,9 @@ try {
 
 				if (type == PORTAL_NORMAL)
 				{
-					SMP.read(&targetZoneID, szZoneID);
-					SMP.read(&targetX,      szBYTE);
-					SMP.read(&targetY,      szBYTE);
+					SMP.read((char*)&targetZoneID, szZoneID);
+					SMP.read((char*)&targetX,      szBYTE);
+					SMP.read((char*)&targetY,      szBYTE);
 
 					// 포탈을 생성해 준다.
 					NormalPortal* pNormalPortal = new NormalPortal();
@@ -1047,14 +1047,14 @@ try {
 
 					if (bOutput)
 					{
-						cout << "Normal(" << (int)x << "," << (int)y << "," << (int)targetZoneID << "," << (int)targetX << "," << (int)targetY << ")" << endl;
+						cout << "Normal(" << (int)x << "," << (int)y << "," << (int)targetZoneID << "," << (int)targetX << "," << (int)targetY << ")" << eos;
 					}
 				}
 				else if (type == PORTAL_SLAYER)
 				{
-					SMP.read(&targetZoneID, szZoneID);
-					SMP.read(&targetX,      szBYTE);
-					SMP.read(&targetY,      szBYTE);
+					SMP.read((char*)&targetZoneID, szZoneID);
+					SMP.read((char*)&targetX,      szBYTE);
+					SMP.read((char*)&targetY,      szBYTE);
 
 					// 포탈을 생성해 준다.
 					NormalPortal* pNormalPortal = new NormalPortal();
@@ -1070,14 +1070,14 @@ try {
 
 					if (bOutput)
 					{
-						cout << "Slayer(" << (int)x << "," << (int)y << "," << (int)targetZoneID << "," << (int)targetX << "," << (int)targetY << ")" << endl;
+						cout << "Slayer(" << (int)x << "," << (int)y << "," << (int)targetZoneID << "," << (int)targetX << "," << (int)targetY << ")" << eos;
 					}
 				}
 				else if (type == PORTAL_VAMPIRE)
 				{
-					SMP.read(&targetZoneID, szZoneID);
-					SMP.read(&targetX,      szBYTE);
-					SMP.read(&targetY,      szBYTE);
+					SMP.read((char*)&targetZoneID, szZoneID);
+					SMP.read((char*)&targetX,      szBYTE);
+					SMP.read((char*)&targetY,      szBYTE);
 
 					// 포탈을 생성해 준다.
 					NormalPortal* pNormalPortal = new NormalPortal();
@@ -1093,22 +1093,22 @@ try {
 
 					if (bOutput)
 					{
-						cout << "Vampire(" << (int)x << "," << (int)y << "," << (int)targetZoneID << "," << (int)targetX << "," << (int)targetY << ")" << endl;
+						cout << "Vampire(" << (int)x << "," << (int)y << "," << (int)targetZoneID << "," << (int)targetX << "," << (int)targetY << ")" << eos;
 					}
 				}
 				else if (type == PORTAL_MULTI_TARGET)
 				{
 					BYTE size;
-					SMP.read(&size, szBYTE);
+					SMP.read((char*)&size, szBYTE);
 
 					// 포탈을 생성해 준다.
 					MultiPortal* pMultiPortal = new MultiPortal();
 
 					for(int i = 0; i < size; i++) 
 					{
-						SMP.read(&targetZoneID, szZoneID);
-						SMP.read(&targetX,      szBYTE);
-						SMP.read(&targetY,      szBYTE);
+						SMP.read((char*)&targetZoneID, szZoneID);
+						SMP.read((char*)&targetX,      szBYTE);
+						SMP.read((char*)&targetY,      szBYTE);
 
 						pMultiPortal->setObjectType(PORTAL_SLAYER);
 
@@ -1127,14 +1127,14 @@ try {
 
 					if (bOutput)
 					{
-						cout << "Multi(" << (int)x << "," << (int)y << "," << (int)targetZoneID << "," << (int)targetX << "," << (int)targetY << ")" << endl;
+						cout << "Multi(" << (int)x << "," << (int)y << "," << (int)targetZoneID << "," << (int)targetX << "," << (int)targetY << ")" << eos;
 					}
 				}
 				else if ( type == PORTAL_GUILD )
 				{
-					SMP.read(&targetZoneID, szZoneID);
-					SMP.read(&targetX,      szBYTE);
-					SMP.read(&targetY,      szBYTE);
+					SMP.read((char*)&targetZoneID, szZoneID);
+					SMP.read((char*)&targetX,      szBYTE);
+					SMP.read((char*)&targetY,      szBYTE);
 
 					// 포탈을 생성해 준다.
 					GuildPortal* pGuildPortal = new GuildPortal();
@@ -1148,15 +1148,15 @@ try {
 
 					if (bOutput)
 					{
-						cout << "Guild(" << (int)x << "," << (int)y << "," << (int)targetZoneID << "," << (int)targetX << "," << (int)targetY << ")" << endl;
+						cout << "Guild(" << (int)x << "," << (int)y << "," << (int)targetZoneID << "," << (int)targetX << "," << (int)targetY << ")" << eos;
 					}
 
 				}
 				else if ( type == PORTAL_BATTLE )
 				{
-					SMP.read(&targetZoneID, szZoneID);
-					SMP.read(&targetX,      szBYTE);
-					SMP.read(&targetY,      szBYTE);
+					SMP.read((char*)&targetZoneID, szZoneID);
+					SMP.read((char*)&targetX,      szBYTE);
+					SMP.read((char*)&targetY,      szBYTE);
 
 					// 포탈을 생성해 준다.
 					NormalPortal* pNormalPortal = new NormalPortal();
@@ -1170,14 +1170,14 @@ try {
 
 					if (bOutput)
 					{
-						cout << "Battle(" << (int)x << "," << (int)y << "," << (int)targetZoneID << "," << (int)targetX << "," << (int)targetY << ")" << endl;
+						cout << "Battle(" << (int)x << "," << (int)y << "," << (int)targetZoneID << "," << (int)targetX << "," << (int)targetY << ")" << eos;
 					}
 				}
 				else if (type == PORTAL_OUSTERS)
 				{
-					SMP.read(&targetZoneID, szZoneID);
-					SMP.read(&targetX,      szBYTE);
-					SMP.read(&targetY,      szBYTE);
+					SMP.read((char*)&targetZoneID, szZoneID);
+					SMP.read((char*)&targetX,      szBYTE);
+					SMP.read((char*)&targetY,      szBYTE);
 
 					// 포탈을 생성해 준다.
 					NormalPortal* pNormalPortal = new NormalPortal();
@@ -1193,7 +1193,7 @@ try {
 
 					if (bOutput)
 					{
-						cout << "Ousters(" << (int)x << "," << (int)y << "," << (int)targetZoneID << "," << (int)targetX << "," << (int)targetY << ")" << endl;
+						cout << "Ousters(" << (int)x << "," << (int)y << "," << (int)targetZoneID << "," << (int)targetX << "," << (int)targetY << ")" << eos;
 					}
 				}
 				else
@@ -1285,7 +1285,7 @@ try {
 						rTile.addPortal(pPortal);
 
 						//cout << "[" << (int)pTargetZoneInfo->getZoneID() << "] is MasterLair"
-						//	 << endl;
+						//	 << eos;
 					}
 					//----------------------------------------
 					// 아담의 성지로 들어갈려고 할 때
@@ -1328,7 +1328,7 @@ try {
 						rTile.addPortal(pPortal);
 
 						//cout << "[" << (int)pTargetZoneInfo->getZoneID() << "] is MasterLair"
-						//	 << endl;
+						//	 << eos;
 					}
 					//----------------------------------------
 					// 성 밖에서 성 안으로 들어가는 경우
@@ -1373,7 +1373,7 @@ try {
 						rTile.addPortal(pPortal);
 
 						//cout << "[" << (int)pTargetZoneInfo->getZoneID() << "] is MasterLair"
-						//	 << endl;
+						//	 << eos;
 					}
 					//----------------------------------------
 					// 성 지하 던젼으로 들어가는 입구
@@ -1502,7 +1502,7 @@ try {
 
 	if ( isDynamicZone() )
 	{
-		cout << "MonsterRegenPositions(" << m_ZoneID << "," << m_MonsterRegenPositions.size() << ")" << endl;
+		cout << "MonsterRegenPositions(" << m_ZoneID << "," << m_MonsterRegenPositions.size() << ")" << eos;
 	}
 
 	if ((isMasterLair() || m_ZoneID == 3002) && m_EmptyTilePositions.size()==0)
@@ -1528,14 +1528,14 @@ try {
 
 	// SSI 정보 파일을 연다.
 	string SSIFilename = g_pConfig->getProperty("HomePath") + "/data/" + pZoneInfo->getSSIFilename();
-	ifstream SSI(SSIFilename.c_str(), ios::in | ios::binary | ios::nocreate);
+	ifstream SSI(SSIFilename.c_str(), ios::in | ios::binary );
 	if (!SSI)
 	{
 		strcpy(lwrFilename, SSIFilename.c_str());
 		strlwr( lwrFilename );
-		SSI.open(lwrFilename, ios::in | ios::binary | ios::nocreate);
+		SSI.open(lwrFilename, ios::in | ios::binary );
 
-		//cout << "second chk : " << lwrFilename.c_str() << endl;
+		//cout << "second chk : " << lwrFilename.c_str() << eos;
 
 		if (!SSI)
 		{
@@ -1546,20 +1546,20 @@ try {
 	}
 
 	int size = 0;
-	SSI.read(&size, szint);
+	SSI.read((char*)&size, szint);
 
 	BYTE left, top, right, bottom, level;
 	for (int i=0; i<size; i++)
 	{
-		SSI.read(&level, szBYTE);
-		SSI.read(&left, szBYTE);
-		SSI.read(&top, szBYTE);
-		SSI.read(&right, szBYTE);
-		SSI.read(&bottom, szBYTE);
+		SSI.read((char*)&level, szBYTE);
+		SSI.read((char*)&left, szBYTE);
+		SSI.read((char*)&top, szBYTE);
+		SSI.read((char*)&right, szBYTE);
+		SSI.read((char*)&bottom, szBYTE);
 
 		if (bOutput)
 		{
-			cout << "LEVEL:" << (int)level << ",(" << (int)left << "," << (int)top << "," << (int)right << "," << (int)bottom << ")" << endl;
+			cout << "LEVEL:" << (int)level << ",(" << (int)left << "," << (int)top << "," << (int)right << "," << (int)bottom << ")" << eos;
 		}
 
 		Assert(left <= right);
@@ -1647,7 +1647,7 @@ try {
 	}*/
 
 } catch ( Throwable& t )
-{ cout << t.toString() << endl; Assert(false);}
+{ cout << t.toString() << eos; Assert(false);}
 
 
 	__END_DEBUG
@@ -1690,37 +1690,37 @@ try {
 
 	// SMP 정보 파일을 연다.
 	string SMPFilename = g_pConfig->getProperty("HomePath") + "/data/" + pZoneInfo->getSMPFilename();
-	ifstream SMP(SMPFilename.c_str(), ios::in | ios::binary | ios::nocreate);
+	ifstream SMP(SMPFilename.c_str(), ios::in | ios::binary );
 	if (!SMP)
 	{
 		strcpy( lwrFilename, SMPFilename.c_str());
 		strlwr( lwrFilename );
-		SMP.open(lwrFilename, ios::in | ios::binary | ios::nocreate);
+		SMP.open(lwrFilename, ios::in | ios::binary );
 
-		//cout << "second chk : " << lwrFilename << endl;
+		//cout << "second chk : " << lwrFilename << eos;
 
 		if (!SMP)
 		{
 			StringStream msg;
 			msg << SMPFilename << " not exist or cannot open it";
-			cerr << msg.toString() << endl;
+			cerr << msg.toString() << eos;
 			throw FileNotExistException(msg.toString());
 		}
 	}
 
     // read zone version
-	SMP.read(&versionLen,szDWORD);
+	SMP.read((char*)&versionLen,szDWORD);
 	SMP.read(version,versionLen);
 	version[versionLen] = 0;
 	
 	// read zone id
-	SMP.read(&zoneID,szWORD);
+	SMP.read((char*)&zoneID,szWORD);
 	
 	// read zone group id (no use)
-	SMP.read(&zoneGroupID,szWORD);
+	SMP.read((char*)&zoneGroupID,szWORD);
 	
 	// read zone name
-	SMP.read(&zonenameLen,szDWORD);
+	SMP.read((char*)&zonenameLen,szDWORD);
 	if (zonenameLen > 0)
 	{
 		SMP.read(zonename,zonenameLen);
@@ -1728,11 +1728,11 @@ try {
 	}
 
     // read zone type & level 
-	SMP.read(&zoneType,szBYTE);
-	SMP.read(&zoneLevel,szBYTE);
+	SMP.read((char*)&zoneType,szBYTE);
+	SMP.read((char*)&zoneLevel,szBYTE);
 
 	// read zone description
-	SMP.read(&descLen,szDWORD);
+	SMP.read((char*)&descLen,szDWORD);
 	if (descLen > 0)
 	{
 		pDesc = new char[descLen+1];
@@ -1743,8 +1743,8 @@ try {
 	}
 
 	// read zone width & height
-	SMP.read(&m_Width, szWORD);
-	SMP.read(&m_Height ,szWORD);
+	SMP.read((char*)&m_Width, szWORD);
+	SMP.read((char*)&m_Height ,szWORD);
 
 	Assert(m_Width <= maxZoneWidth);
 	Assert(m_Height <= maxZoneHeight);
@@ -1835,7 +1835,7 @@ try {
 		for (ZoneCoord_t x=0; x<m_Width; x++)
 		{
 			BYTE flag = 0;
-			SMP.read(&flag, szBYTE);
+			SMP.read((char*)&flag, szBYTE);
 
 			// 순서대로 지하, 지상, 공중 블록
 			if (flag & 0x01) m_pTiles[x][y].setBlocked(Creature::MOVE_MODE_BURROWING);
@@ -1861,7 +1861,7 @@ try {
 				BYTE	type;
 				ZoneID_t targetZoneID;
 				BYTE     targetX, targetY;
-				SMP.read(&type, szBYTE);
+				SMP.read((char*)&type, szBYTE);
 
 				PortalType_t portalType = PORTAL_NORMAL;
 
@@ -1877,9 +1877,9 @@ try {
 
 				if (type == PORTAL_NORMAL)
 				{
-					SMP.read(&targetZoneID, szZoneID);
-					SMP.read(&targetX,      szBYTE);
-					SMP.read(&targetY,      szBYTE);
+					SMP.read((char*)&targetZoneID, szZoneID);
+					SMP.read((char*)&targetX,      szBYTE);
+					SMP.read((char*)&targetY,      szBYTE);
 
 					// 포탈을 생성해 준다.
 					NormalPortal* pNormalPortal = new NormalPortal();
@@ -1893,14 +1893,14 @@ try {
 
 					if (bOutput)
 					{
-						cout << "Normal(" << (int)x << "," << (int)y << "," << (int)targetZoneID << "," << (int)targetX << "," << (int)targetY << ")" << endl;
+						cout << "Normal(" << (int)x << "," << (int)y << "," << (int)targetZoneID << "," << (int)targetX << "," << (int)targetY << ")" << eos;
 					}
 				}
 				else if (type == PORTAL_SLAYER)
 				{
-					SMP.read(&targetZoneID, szZoneID);
-					SMP.read(&targetX,      szBYTE);
-					SMP.read(&targetY,      szBYTE);
+					SMP.read((char*)&targetZoneID, szZoneID);
+					SMP.read((char*)&targetX,      szBYTE);
+					SMP.read((char*)&targetY,      szBYTE);
 
 					// 포탈을 생성해 준다.
 					NormalPortal* pNormalPortal = new NormalPortal();
@@ -1916,14 +1916,14 @@ try {
 
 					if (bOutput)
 					{
-						cout << "Slayer(" << (int)x << "," << (int)y << "," << (int)targetZoneID << "," << (int)targetX << "," << (int)targetY << ")" << endl;
+						cout << "Slayer(" << (int)x << "," << (int)y << "," << (int)targetZoneID << "," << (int)targetX << "," << (int)targetY << ")" << eos;
 					}
 				}
 				else if (type == PORTAL_VAMPIRE)
 				{
-					SMP.read(&targetZoneID, szZoneID);
-					SMP.read(&targetX,      szBYTE);
-					SMP.read(&targetY,      szBYTE);
+					SMP.read((char*)&targetZoneID, szZoneID);
+					SMP.read((char*)&targetX,      szBYTE);
+					SMP.read((char*)&targetY,      szBYTE);
 
 					// 포탈을 생성해 준다.
 					NormalPortal* pNormalPortal = new NormalPortal();
@@ -1939,22 +1939,22 @@ try {
 
 					if (bOutput)
 					{
-						cout << "Vampire(" << (int)x << "," << (int)y << "," << (int)targetZoneID << "," << (int)targetX << "," << (int)targetY << ")" << endl;
+						cout << "Vampire(" << (int)x << "," << (int)y << "," << (int)targetZoneID << "," << (int)targetX << "," << (int)targetY << ")" << eos;
 					}
 				}
 				else if (type == PORTAL_MULTI_TARGET)
 				{
 					BYTE size;
-					SMP.read(&size, szBYTE);
+					SMP.read((char*)&size, szBYTE);
 
 					// 포탈을 생성해 준다.
 					MultiPortal* pMultiPortal = new MultiPortal();
 
 					for(int i = 0; i < size; i++) 
 					{
-						SMP.read(&targetZoneID, szZoneID);
-						SMP.read(&targetX,      szBYTE);
-						SMP.read(&targetY,      szBYTE);
+						SMP.read((char*)&targetZoneID, szZoneID);
+						SMP.read((char*)&targetX,      szBYTE);
+						SMP.read((char*)&targetY,      szBYTE);
 
 						pMultiPortal->setObjectType(PORTAL_SLAYER);
 
@@ -1973,14 +1973,14 @@ try {
 
 					if (bOutput)
 					{
-						cout << "Multi(" << (int)x << "," << (int)y << "," << (int)targetZoneID << "," << (int)targetX << "," << (int)targetY << ")" << endl;
+						cout << "Multi(" << (int)x << "," << (int)y << "," << (int)targetZoneID << "," << (int)targetX << "," << (int)targetY << ")" << eos;
 					}
 				}
 				else if ( type == PORTAL_GUILD )
 				{
-					SMP.read(&targetZoneID, szZoneID);
-					SMP.read(&targetX,      szBYTE);
-					SMP.read(&targetY,      szBYTE);
+					SMP.read((char*)&targetZoneID, szZoneID);
+					SMP.read((char*)&targetX,      szBYTE);
+					SMP.read((char*)&targetY,      szBYTE);
 
 					// 포탈을 생성해 준다.
 					GuildPortal* pGuildPortal = new GuildPortal();
@@ -1994,15 +1994,15 @@ try {
 
 					if (bOutput)
 					{
-						cout << "Guild(" << (int)x << "," << (int)y << "," << (int)targetZoneID << "," << (int)targetX << "," << (int)targetY << ")" << endl;
+						cout << "Guild(" << (int)x << "," << (int)y << "," << (int)targetZoneID << "," << (int)targetX << "," << (int)targetY << ")" << eos;
 					}
 
 				}
 				else if ( type == PORTAL_BATTLE )
 				{
-					SMP.read(&targetZoneID, szZoneID);
-					SMP.read(&targetX,      szBYTE);
-					SMP.read(&targetY,      szBYTE);
+					SMP.read((char*)&targetZoneID, szZoneID);
+					SMP.read((char*)&targetX,      szBYTE);
+					SMP.read((char*)&targetY,      szBYTE);
 
 					// 포탈을 생성해 준다.
 					NormalPortal* pNormalPortal = new NormalPortal();
@@ -2016,7 +2016,7 @@ try {
 
 					if (bOutput)
 					{
-						cout << "Slayer(" << (int)x << "," << (int)y << "," << (int)targetZoneID << "," << (int)targetX << "," << (int)targetY << ")" << endl;
+						cout << "Slayer(" << (int)x << "," << (int)y << "," << (int)targetZoneID << "," << (int)targetX << "," << (int)targetY << ")" << eos;
 					}
 				}
 				else
@@ -2113,7 +2113,7 @@ try {
 						rTile.addPortal(pPortal);
 
 						//cout << "[" << (int)pTargetZoneInfo->getZoneID() << "] is MasterLair"
-						//	 << endl;
+						//	 << eos;
 					}
 					//----------------------------------------
 					// 유료존으로 들어가는 경우
@@ -2162,9 +2162,9 @@ try {
 	///*
 	if (m_MonsterRegenPositions.size()==0)
 	{
-		cout << "MonsterRegenPosition not exist" << endl;
-		cout << "Width = " << m_Width << endl;
-		cout << "Height = " << m_Height << endl;
+		cout << "MonsterRegenPosition not exist" << eos;
+		cout << "Width = " << m_Width << eos;
+		cout << "Height = " << m_Height << eos;
 
 		//Assert(m_MonsterRegenPositions.size()!=0);
 
@@ -2194,7 +2194,7 @@ try {
 
 	if ((isMasterLair() || m_ZoneID == 3002) && m_EmptyTilePositions.size()==0)
 	{
-		cout << "MasterLair has No EmptyTilePosition" << endl;
+		cout << "MasterLair has No EmptyTilePosition" << eos;
 		Assert(m_EmptyTilePositions.size()!=0);
 	}
 	// */
@@ -2222,14 +2222,14 @@ try {
 
 	// SSI 정보 파일을 연다.
 	string SSIFilename = g_pConfig->getProperty("HomePath") + "/data/" + pZoneInfo->getSSIFilename();
-	ifstream SSI(SSIFilename.c_str(), ios::in | ios::binary | ios::nocreate);
+	ifstream SSI(SSIFilename.c_str(), ios::in | ios::binary );
 	if (!SSI)
 	{
 		strcpy( lwrFilename, SSIFilename.c_str());
 		strlwr( lwrFilename );
-		SSI.open(lwrFilename, ios::in | ios::binary | ios::nocreate);
+		SSI.open(lwrFilename, ios::in | ios::binary );
 
-		//cout << "second chk : " << lwrFilename << endl;
+		//cout << "second chk : " << lwrFilename << eos;
 
 		if (!SSI)
 		{
@@ -2240,20 +2240,20 @@ try {
 	}
 
 	int size = 0;
-	SSI.read(&size, szint);
+	SSI.read((char*)&size, szint);
 
 	BYTE left, top, right, bottom, level;
 	for (int i=0; i<size; i++)
 	{
-		SSI.read(&level, szBYTE);
-		SSI.read(&left, szBYTE);
-		SSI.read(&top, szBYTE);
-		SSI.read(&right, szBYTE);
-		SSI.read(&bottom, szBYTE);
+		SSI.read((char*)&level, szBYTE);
+		SSI.read((char*)&left, szBYTE);
+		SSI.read((char*)&top, szBYTE);
+		SSI.read((char*)&right, szBYTE);
+		SSI.read((char*)&bottom, szBYTE);
 
 		if (bOutput)
 		{
-			cout << "LEVEL:" << (int)level << ",(" << (int)left << "," << (int)top << "," << (int)right << "," << (int)bottom << ")" << endl;
+			cout << "LEVEL:" << (int)level << ",(" << (int)left << "," << (int)top << "," << (int)right << "," << (int)bottom << ")" << eos;
 		}
 
 		Assert(left <= right);
@@ -2275,9 +2275,9 @@ try {
 
 // eventMonsterManager는 reload에서는 무시한다.
 //#ifdef __XMAS_EVENT_CODE__
-//	cout << "Begin Event Monster Loading..." << endl;
+//	cout << "Begin Event Monster Loading..." << eos;
 //	m_pEventMonsterManager->load();
-//	cout << "Event Monster Loading Completed..." << endl;
+//	cout << "Event Monster Loading Completed..." << eos;
 //#endif
 
 	// 마스터 레어인 경우
@@ -2313,7 +2313,7 @@ try {
 	// 스프라이트 갯수를 초기화한다.
 	initSpriteCount();
 } catch ( Throwable& t )
-{ cout << t.toString() << endl; Assert(false);}
+{ cout << t.toString() << eos; Assert(false);}
 
 	__END_DEBUG
 	__END_CATCH
@@ -2402,8 +2402,8 @@ void Zone::loadTriggeredPortal ()
 				{
 					if (getTile(x,y).hasPortal())
 					{
-						//cerr << "loadTriggeredPortal : 이미 포탈??존재합니다." << endl;
-						//cerr << "ZONEID:" << m_ZoneID << ",X:" << x << "Y:" << y << endl;
+						//cerr << "loadTriggeredPortal : 이미 포탈??존재합니다." << eos;
+						//cerr << "ZONEID:" << m_ZoneID << ",X:" << x << "Y:" << y << eos;
 						//Portal* pPortal = getTile(x,y).getPortal();
 						//SAFE_DELETE(pPortal);
 						getTile(x,y).deletePortal();
@@ -3424,7 +3424,7 @@ void Zone::addPC(Creature* pCreature, ZoneCoord_t cx, ZoneCoord_t cy, Dir_t dir)
 				// PC방은 남은 시간이 5시간(300분) 이하일 때 출력
 				if (pGamePlayer->getPayPlayType()==PAY_PLAY_TYPE_PCROOM)
 				{
-					//cout << "PC방 사용시간 : " << usedMin << "/" << pGamePlayer->getPayPlayAvailableHours() << endl;
+					//cout << "PC방 사용시간 : " << usedMin << "/" << pGamePlayer->getPayPlayAvailableHours() << eos;
 
 					if (remainMin <= 300)
 					{
@@ -3678,7 +3678,7 @@ void Zone::addPC(Creature* pCreature, ZoneCoord_t cx, ZoneCoord_t cy, Dir_t dir)
 			{
 				ZoneID_t levelWarZoneId = g_pLevelWarZoneInfoManager->getCreatureZoneID( pCreature );
 
-				//				cout << "ZoneID : " << levelWarZoneId << endl;
+				//				cout << "ZoneID : " << levelWarZoneId << eos;
 				if ( levelWarZoneId != 1 )
 				{
 					Zone* pLevelZone = getZoneByZoneID(levelWarZoneId);
@@ -3744,19 +3744,19 @@ void Zone::addPC(Creature* pCreature, ZoneCoord_t cx, ZoneCoord_t cy, Dir_t dir)
 			GuildUnion *pUnion = GuildUnionManager::Instance().getGuildUnion( pPC->getGuildID() );
 			if(pUnion != NULL)
 			{
-				//	cout << "GuildUNION : Union이 있는 PlayerCreature" << endl;
+				//	cout << "GuildUNION : Union이 있는 PlayerCreature" << eos;
 
 				if( g_pGuildManager->isGuildMaster ( pPC->getGuildID(), pPC ) )
-					//		cout << "GuildUNION : PC가 GuildMaster다" << endl;
+					//		cout << "GuildUNION : PC가 GuildMaster다" << eos;
 
 					if( pUnion->getMasterGuildID() == pPC->getGuildID() )
-						//		cout << "GuildUNION : 연합의 마스터 길드가 내 길드다" << endl;
+						//		cout << "GuildUNION : 연합의 마스터 길드가 내 길드다" << eos;
 
 						// 요청한놈이 지가 속한 길드의 마스터인가? || 연합의 마스터길드가 내 길드가 맞나?
 						if( g_pGuildManager->isGuildMaster ( pPC->getGuildID(), pPC )
 							&& pUnion->getMasterGuildID() == pPC->getGuildID() )
 						{
-							//		cout << "그러면..OfferList를 만들어서 보내주자.." << endl;
+							//		cout << "그러면..OfferList를 만들어서 보내주자.." << eos;
 
 							if(GuildUnionOfferManager::Instance().makeOfferList(pUnion->getUnionID(), gcUnionOfferList ))
 							{
@@ -4260,7 +4260,7 @@ void Zone::addCreature(Creature* pCreature, ZoneCoord_t cx, ZoneCoord_t cy, Dir_
 
 			m_pMonsterManager->addCreature(pCreature);
 			if ( pCreature->getClanType() != CLAN_VAMPIRE_MONSTER )
-				cout << pCreature->toString() << " regens at " << pt.x << " , " << pt.y << endl;
+				cout << pCreature->toString() << " regens at " << pt.x << " , " << pt.y << eos;
 
 			switch ( pMonster->getMonsterType() )
 			{
@@ -4310,7 +4310,7 @@ void Zone::addCreature(Creature* pCreature, ZoneCoord_t cx, ZoneCoord_t cy, Dir_
 			m_pNPCManager->addCreature(pCreature);
 		}
 
-		//cout << "타일에 몬스터 추가하기" << endl;
+		//cout << "타일에 몬스터 추가하기" << eos;
 	   	m_pTiles[pt.x][pt.y].addCreature(pCreature, false);
 	
 		//--------------------------------------------------------------------------------
@@ -4324,7 +4324,7 @@ void Zone::addCreature(Creature* pCreature, ZoneCoord_t cx, ZoneCoord_t cy, Dir_
 		//--------------------------------------------------------------------------------
 		// 주변??PC들에게 알릴 GCAddNPC or GCAddMonster 패킷을 생성한다.
 		//--------------------------------------------------------------------------------
-		//cout << "주변의 PC들에게 알릴 패킷 만들기" << endl;
+		//cout << "주변의 PC들에게 알릴 패킷 만들기" << eos;
 		Creature::CreatureClass CClass = pCreature->getCreatureClass();
 
 		if (CClass == Creature::CREATURE_CLASS_NPC)
@@ -4336,7 +4336,7 @@ void Zone::addCreature(Creature* pCreature, ZoneCoord_t cx, ZoneCoord_t cy, Dir_
 		}
 		else if (CClass == Creature::CREATURE_CLASS_MONSTER)
 		{
-			//cout << "몬스터용 패킷 만들기" << endl;
+			//cout << "몬스터용 패킷 만들기" << eos;
 			Monster* pMonster = dynamic_cast<Monster*>(pCreature);
 
 			// zone에 처음 들어갈때도 여러가지 상태가 있다.. by sigi
@@ -4606,7 +4606,7 @@ TPOINT Zone::addItem(Item* pItem, ZoneCoord_t cx, ZoneCoord_t cy, bool bAllowCre
 					m_RelicTableX = pt.x;
 					m_RelicTableY = pt.y;
 					
-					//cout << "Relic인 경우에는 시체가 사라지지 않습니다" << endl;
+					//cout << "Relic인 경우에는 시체가 사라지지 않습니다" << eos;
 				}
 			}
 		} 
@@ -4935,7 +4935,7 @@ void Zone::deleteCreature(Creature* pCreature, ZoneCoord_t x, ZoneCoord_t y)
 	} 
 	catch (Throwable & t) 
 	{
-		cerr << t.toString() << endl;
+		cerr << t.toString() << eos;
 		filelog("zoneDeleteCreatureError.log", "Zone::deleteCreature() : %s", t.toString().c_str());
 	}
 
@@ -8589,7 +8589,7 @@ for(int i=0; i < 3; i++){
 	catch (Throwable & t)
 	{
 		filelog("ZoneBug.txt", "%s : %s", "Zone::heartbeat(2)", t.toString().c_str());
-		cerr << t.toString() << endl;
+		cerr << t.toString() << eos;
 		throw;
 	}
 
@@ -9008,7 +9008,7 @@ void Zone::decayMotorcycle(ZoneCoord_t cx, ZoneCoord_t cy, Motorcycle* pMotorcyc
 {
 	__BEGIN_TRY
 
-	cout << "Zone::decayMotorcycle	" << endl;
+	cout << "Zone::decayMotorcycle	" << eos;
 
 	Assert(m_OuterRect.ptInRect(cx, cy));
 	Assert(pMotorcycle != NULL);
@@ -9035,12 +9035,12 @@ void Zone::transportItemToCorpse(Item* pItem, Zone* pTargetZone, ObjectID_t corp
 {
 	__BEGIN_TRY
 
-	//cout << "transportItemToCorpse : " << (int)pZone->getZoneID() << ", (" << cx << ", " << cy << ")" << endl;
+	//cout << "transportItemToCorpse : " << (int)pZone->getZoneID() << ", (" << cx << ", " << cy << ")" << eos;
 	Assert(pItem != NULL);
 
 	if (pTargetZone->getZoneGroup()==this->getZoneGroup())
 	{
-		//cout << "same zone - to corpse" << endl;
+		//cout << "same zone - to corpse" << eos;
 		// 같은 zone이면 바로 옮긴다.
 		//deleteFromItemList(pItem->getObjectID());
 
@@ -9072,7 +9072,7 @@ void Zone::transportItemToCorpse(Item* pItem, Zone* pTargetZone, ObjectID_t corp
 	}
 	else
 	{
-		//cout << "transportItemToCorpse" << endl;
+		//cout << "transportItemToCorpse" << eos;
 		EffectTransportItemToCorpse* pEffectTransportItem = new EffectTransportItemToCorpse(this, pItem, pTargetZone, corpseObjectID, 0);
 		pEffectTransportItem->setNextTime(999999);
 		m_ObjectRegistry.registerObject(pEffectTransportItem);
@@ -9094,7 +9094,7 @@ void Zone::transportItem(ZoneCoord_t x, ZoneCoord_t y, Item* pItem,
 {
 	__BEGIN_TRY
 
-	//cout << "transportItem : " << (int)pZone->getZoneID() << ", (" << cx << ", " << cy << ")" << endl;
+	//cout << "transportItem : " << (int)pZone->getZoneID() << ", (" << cx << ", " << cy << ")" << eos;
 
 	// 이거 잘못해놔가 다운돼다. ㅜ.ㅜ; by sigi
 	Assert(m_OuterRect.ptInRect(x, y));
@@ -9102,7 +9102,7 @@ void Zone::transportItem(ZoneCoord_t x, ZoneCoord_t y, Item* pItem,
 
 	if (pZone->getZoneGroup()==this->getZoneGroup())
 	{
-		//cout << "same zone" << endl;
+		//cout << "same zone" << eos;
 		// 같은 zone group 이면 바로 옮긴다.
 		deleteFromItemList(pItem->getObjectID());
 		getTile(x, y).deleteItem();
@@ -9118,7 +9118,7 @@ void Zone::transportItem(ZoneCoord_t x, ZoneCoord_t y, Item* pItem,
 	}
 	else
 	{
-		//cout << "transportItem" << endl;
+		//cout << "transportItem" << eos;
 		EffectTransportItem* pEffectTransportItem = new EffectTransportItem(this, x, y, pZone, cx, cy, pItem, 0);
 		pEffectTransportItem->setNextTime(999999);
 		m_ObjectRegistry.registerObject(pEffectTransportItem);
@@ -9199,7 +9199,7 @@ bool Zone::addRelicItem(int relicIndex)
 {
 	__BEGIN_TRY
 
-	//cout << "[addRelicItem] ZoneID=" << (int)m_ZoneID << ", relicIndex=" << relicIndex << endl;
+	//cout << "[addRelicItem] ZoneID=" << (int)m_ZoneID << ", relicIndex=" << relicIndex << eos;
 
 	const RelicInfo* pRelicInfo = dynamic_cast<RelicInfo*>(g_pRelicInfoManager->getItemInfo(relicIndex));
 
@@ -9231,7 +9231,7 @@ bool Zone::addRelicItem(int relicIndex)
 			return false;
 		}
 
-		//cout << "new Monster OK" << endl;
+		//cout << "new Monster OK" << eos;
 
 		// MonsterCorpse를 생성한다. (성물 보관대)
 		MonsterCorpse* pMonsterCorpse = NULL;
@@ -9243,10 +9243,10 @@ bool Zone::addRelicItem(int relicIndex)
 			pMonsterCorpse->setY( cy );
 			Assert(pMonsterCorpse != NULL);
 		} catch (Throwable& t) {
-			//cout << t.toString().c_str() << endl;
+			//cout << t.toString().c_str() << eos;
 		}
 
-		//cout << "new MonsterCorpse OK" << endl;
+		//cout << "new MonsterCorpse OK" << eos;
 
 		if (pRelicInfo->relicType==RELIC_TYPE_SLAYER)
 		{
@@ -9276,7 +9276,7 @@ bool Zone::addRelicItem(int relicIndex)
 		Item* pItem = g_pItemFactoryManager->createItem(Item::ITEM_CLASS_RELIC, relicIndex, optionNULL);
 		Assert(pItem!=NULL);
 
-		//cout << "new RelicItem OK" << endl;
+		//cout << "new RelicItem OK" << eos;
 
 		// 이 Zone은 RelicTable을 갖고 있다고 표시한다.
 		m_bHasRelicTable = true;
@@ -9305,7 +9305,7 @@ bool Zone::addRelicItem(int relicIndex)
 			g_pCombatInfoManager->setRelicOwner(relicIndex, CombatInfoManager::RELIC_OWNER_VAMPIRE);
 		}
 
-		//cout << "addTreasure OK" << endl;
+		//cout << "addTreasure OK" << eos;
 
 		// 바로 Zone에 추가하면 안되므로(동기화 문제)
 		// Effect를 사용해서 추가하도록 한다.
@@ -9315,7 +9315,7 @@ bool Zone::addRelicItem(int relicIndex)
 
 		addEffect_LOCKING(pEffectAddItem);
 
-		//cout << "addRelic OK" << endl;
+		//cout << "addRelic OK" << eos;
 	}
 
 	return true;
@@ -9352,7 +9352,7 @@ bool Zone::deleteRelicItem()
 
 	addEffect_LOCKING( pEffectDeleteItem );
 
-	//cout << "delete Relic OK" << endl;
+	//cout << "delete Relic OK" << eos;
 
 	m_bHasRelicTable = false;
 
@@ -9658,7 +9658,7 @@ bool Zone::deleteNPC(Creature* pCreature)
 
 	} catch (NoSuchElementException) {
 		cout << "NoSuchNPC : " << pCreature->getName().c_str() 
-				<< ", (" << pCreature->getX() << ", " << pCreature->getY() << ")" << endl;
+				<< ", (" << pCreature->getX() << ", " << pCreature->getY() << ")" << eos;
 
 		return false;
 	}
@@ -10050,7 +10050,7 @@ void    Zone::remainRaceWarPlayers()
 	__LEAVE_CRITICAL_SECTION(m_Mutex)
 
 	} catch (Throwable& t) {
-		cout << t.toString().c_str() << endl;
+		cout << t.toString().c_str() << eos;
 		throw;
 	}
 
@@ -10142,7 +10142,7 @@ void    Zone::remainPayPlayer()
 			}
 		}
 	} catch (Throwable& t) {
-		cout << t.toString().c_str() << endl;
+		cout << t.toString().c_str() << eos;
 		throw;
 	}
 

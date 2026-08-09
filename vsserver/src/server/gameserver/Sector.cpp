@@ -42,7 +42,7 @@ void Sector::addObject(Object* pObject)
 	hash_map<ObjectID_t, Object*>::iterator itr = m_Objects.find(pObject->getObjectID());
 	if (itr != m_Objects.end())
 	{
-		cerr << "Sector::addObjectID() : DuplicatedException" << endl;
+		cerr << "Sector::addObjectID() : DuplicatedException" << eos;
 		throw DuplicatedException();
 	}
 
@@ -59,7 +59,7 @@ void Sector::deleteObject(ObjectID_t id)
 	hash_map<ObjectID_t, Object*>::iterator itr = m_Objects.find(id);
 	if (itr == m_Objects.end())
 	{
-		cerr << "Sector::deleteObjectID() : NoSuchElementException" << endl;
+		cerr << "Sector::deleteObjectID() : NoSuchElementException" << eos;
 		throw NoSuchElementException();
 	}
 
@@ -76,7 +76,7 @@ Object* Sector::getObject(ObjectID_t id)
 	hash_map<ObjectID_t, Object*>::iterator itr = m_Objects.find(id);
 	if (itr == m_Objects.end())
 	{
-		cerr << "Sector::getObjectID() : NoSuchElementException" << endl;
+		cerr << "Sector::getObjectID() : NoSuchElementException" << eos;
 		throw NoSuchElementException();
 	}
 

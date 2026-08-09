@@ -32,7 +32,7 @@ void EffectIceFieldToCreature::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectIceFieldToCreature" << "unaffect BEGIN" << endl;
+	//cout << "EffectIceFieldToCreature" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 //	Assert(pCreature->isOusters());
@@ -52,7 +52,7 @@ void EffectIceFieldToCreature::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(getSendEffectClass());
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectIceFieldToCreature" << "unaffect END" << endl;
+	//cout << "EffectIceFieldToCreature" << "unaffect END" << eos;
 
 	__END_CATCH
 }

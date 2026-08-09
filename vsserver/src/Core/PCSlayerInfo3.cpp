@@ -61,7 +61,7 @@ void PCSlayerInfo3::read ( SocketInputStream & iStream )
 	}
 	catch ( Throwable & t ) 
 	{
-		cout << t.toString() << endl;
+		cout << t.toString() << eos;
 	}
 	
 	__END_CATCH
@@ -122,11 +122,11 @@ void PCSlayerInfo3::write ( SocketOutputStream & oStream ) const
 		oStream.write( m_MotorItemType );
 		oStream.write( m_JacketItemType);
 
-		//cout << "½ÂÁ÷ ·¹º§ : " << (int)m_AdvancementLevel << endl;
+		//cout << "½ÂÁ÷ ·¹º§ : " << (int)m_AdvancementLevel << eos;
 	} 
 	catch ( Throwable & t ) 
 	{
-		cout << t.toString() << endl;
+		cout << t.toString() << eos;
 	}
 
 	__END_CATCH

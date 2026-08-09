@@ -51,7 +51,7 @@ void EffectDetectInvisibility::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectDetectInvisibility " << "unaffect BEGIN" << endl;
+	//cout << "EffectDetectInvisibility " << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isSlayer());
@@ -70,7 +70,7 @@ void EffectDetectInvisibility::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_DETECT_INVISIBILITY);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectDetectInvisibility " << "unaffect END" << endl;
+	//cout << "EffectDetectInvisibility " << "unaffect END" << eos;
 
 	__END_CATCH
 }
@@ -82,12 +82,12 @@ void EffectDetectInvisibility::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectDetectInvisibility " << "unaffect BEGIN" << endl;
+	//cout << "EffectDetectInvisibility " << "unaffect BEGIN" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature*>(m_pTarget);
 	unaffect(pCreature);
 
-	//cout << "EffectDetectInvisibility " << "unaffect END" << endl;
+	//cout << "EffectDetectInvisibility " << "unaffect END" << eos;
 
 	__END_CATCH
 }

@@ -102,7 +102,7 @@ void Player::processInput ()
 	} 
 	catch (NonBlockingIOException& nbie) 
 	{
-		//cout << nbie.toString().c_str() << endl;
+		//cout << nbie.toString().c_str() << eos;
 	}
 
 	__END_CATCH
@@ -206,7 +206,7 @@ void Player::processOutput ()
 	} 
 	catch ( InvalidProtocolException & t ) 
 	{
-		cerr << t.toString() << endl;
+		cerr << t.toString() << eos;
 		throw InvalidProtocolException("Player::processOutput에서 상위로 던진다 누가 받노?");
 	}
 
@@ -228,10 +228,10 @@ void Player::sendPacket ( Packet * pPacket )
 		m_pOutputStream->writePacket( pPacket );
 
 	/*
-	cout << endl;
-	cout << "=== Player::sendPacket() ===" << endl;
-	cout << pPacket->toString() << endl;
-	cout << "============================" << endl;
+	cout << eos;
+	cout << "=== Player::sendPacket() ===" << eos;
+	cout << pPacket->toString() << eos;
+	cout << "============================" << eos;
 	*/
 
 	__END_CATCH
@@ -278,8 +278,8 @@ void Player::disconnect ( bool bDisconnected )
 	} 
 	catch ( InvalidProtocolException & t ) 
 	{
-		cerr << "Player::disconnect Exception Check!!" << endl;
-		cerr << t.toString() << endl;
+		cerr << "Player::disconnect Exception Check!!" << eos;
+		cerr << t.toString() << eos;
 		m_pSocket->close();
 		//throw Error("씨바...");
 	}

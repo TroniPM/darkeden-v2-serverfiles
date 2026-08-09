@@ -248,7 +248,7 @@ void EffectDragonHurricane::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectDragonHurricane" << "unaffect BEGIN" << endl;
+	//cout << "EffectDragonHurricane" << "unaffect BEGIN" << eos;
 
     Tile& tile = m_pZone->getTile(m_X, m_Y);
 	tile.deleteEffect(m_ObjectID);
@@ -259,7 +259,7 @@ void EffectDragonHurricane::unaffect()
 	gcDT.setEffectID(getSendEffectClass());
 	m_pZone->broadcastPacket( m_X, m_Y, &gcDT );
 
-	//cout << "EffectDragonHurricane" << "unaffect END" << endl;
+	//cout << "EffectDragonHurricane" << "unaffect END" << eos;
 
 	__END_CATCH
 }

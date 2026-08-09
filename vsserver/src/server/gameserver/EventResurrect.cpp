@@ -104,7 +104,7 @@ void EventResurrect::activate ()
 	catch (NoSuchElementException& t) 
 	{
 		filelog("eventRessurect.txt", "%s-%s", t.toString().c_str(), pDeadPC->getName().c_str());
-		cerr << "EventResurrect::activate() : NoSuchElementException" << endl;
+		cerr << "EventResurrect::activate() : NoSuchElementException" << eos;
 		//throw Error("존에 플레이어가 존재하지 않습니다.");
 		// 어떻게 없어졌겠지.. -_-;
 		// 무시하고.. 그냥 진행한다.

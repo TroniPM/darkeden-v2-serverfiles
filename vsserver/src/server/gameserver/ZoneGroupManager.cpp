@@ -401,7 +401,7 @@ void ZoneGroupManager::outputLoadValue()
 	ofstream file("loadBalance.txt", ios::app);
 
 	VSDateTime current = VSDateTime::currentDateTime();
-	file << current.toString() << endl;
+	file << current.toString() << eos;
 
 	hash_map< ZoneGroupID_t , ZoneGroup* >::const_iterator itr;
 
@@ -427,11 +427,11 @@ void ZoneGroupManager::outputLoadValue()
 			totalLoad += load;
 		}
 
-		file << " = " << totalLoad << endl;
+		file << " = " << totalLoad << eos;
 
 	}
 
-	file << endl;
+	file << eos;
 	file.close();
 }
 
@@ -808,12 +808,12 @@ void   ZoneGroupManager::balanceZoneGroup(bool bForce, bool bDefault)
 			// group이 같으면 이동시킬 필요가 없다.
 			if (oldGroupID==newGroupID)
 			{
-				//cout << "same ZoneGroup" << endl;
+				//cout << "same ZoneGroup" << eos;
 				continue;
 			}
 			
 			try {
-				//cout << "[" << (int)zoneID << "] " << (int)oldGroupID << " --> " << (int)newGroupID << endl;
+				//cout << "[" << (int)zoneID << "] " << (int)oldGroupID << " --> " << (int)newGroupID << eos;
 
 				hash_map< ZoneGroupID_t , ZoneGroup* >::iterator iOldZoneGroup = m_ZoneGroups.find( oldGroupID );
 				hash_map< ZoneGroupID_t , ZoneGroup* >::iterator iNewZoneGroup = m_ZoneGroups.find( newGroupID );

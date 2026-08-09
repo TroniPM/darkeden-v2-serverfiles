@@ -35,14 +35,14 @@ void SiegeManager::init(ZoneID_t zoneID)
 	Zone* pSiegeZone = getZoneByZoneID( zoneID );
 	if ( pSiegeZone == NULL ) return;
 
-	MonsterCorpse* pShrine = new MonsterCorpse( 560, "Ê¥Îï±£¹ÜÌ¨", 2 );
+	MonsterCorpse* pShrine = new MonsterCorpse( 560, "Ê¥ï¿½ï±£ï¿½ï¿½Ì¨", 2 );
 	Assert( pShrine != NULL );
 
 	pShrine->setShrine(true);
 	pShrine->setZone( pSiegeZone );
 	pSiegeZone->registerObject( pShrine );
 
-	TPOINT tp = pSiegeZone->addItem( pShrine, 191, 64, true );
+	TPOINT tp = pSiegeZone->addItem( pShrine, 95, 64, true );
 	Assert( tp.x != -1 );
 	pShrine->setFlag( Effect::EFFECT_CLASS_CASTLE_SHRINE_HOLY );
 }
@@ -150,7 +150,7 @@ void SiegeManager::start(ZoneID_t zoneID)
 		Monster* pMonster = new Monster( mType );
 		pMonster->setTreasure(false);
 		pMonster->setScanEnemy(true);
-		pMonster->setName("ÎÀ±ø");
+		pMonster->setName("ï¿½ï¿½ï¿½ï¿½");
 
 		try
 		{
@@ -256,7 +256,7 @@ void SiegeManager::putItem( PlayerCreature* pPC, MonsterCorpse* pCorpse, Item* p
 
 	GCSystemMessage gcSM;
 	char buffer[256];
-	sprintf( buffer, "%dºÅ¹¥»÷·½»ñµÃÊ¤Àû.10ÃëºóÒÆ¶¯µ½¸´»îµØµã.", side );
+	sprintf( buffer, "%dï¿½Å¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¤ï¿½ï¿½.10ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½.", side );
 	gcSM.setMessage( buffer );
 	pPC->getZone()->broadcastPacket( &gcSM );
 
@@ -288,7 +288,7 @@ void SiegeManager::recallGuild( ZoneID_t currentZoneID, ZoneID_t siegeZoneID, Gu
 		Creature* pTargetCreature = *itr;
 		if ( pTargetCreature == NULL ) continue;
 
-		// ¼ÒÈ¯ÀÚÀÇ Á¸°ú ÁÂÇ¥.
+		// ï¿½ï¿½È¯ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç¥.
 		ZoneID_t ZoneNum = siegeZoneID;
 		Coord_t ZoneX = targetPos[side-1].x;
 		Coord_t ZoneY = targetPos[side-1].y;

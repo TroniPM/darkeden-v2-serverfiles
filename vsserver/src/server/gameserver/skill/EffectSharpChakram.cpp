@@ -31,7 +31,7 @@ void EffectSharpChakram::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectSharpChakram" << "unaffect BEGIN" << endl;
+	//cout << "EffectSharpChakram" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isOusters());
@@ -53,7 +53,7 @@ void EffectSharpChakram::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_SHARP_CHAKRAM);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectSharpChakram" << "unaffect END" << endl;
+	//cout << "EffectSharpChakram" << "unaffect END" << eos;
 
 	__END_CATCH
 }

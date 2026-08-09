@@ -37,12 +37,12 @@ void EffectStormBat::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectStormBat " << "begin begin" << endl;
+	//cout << "EffectStormBat " << "begin begin" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 	affect(pCreature);
 
-	//cout << "EffectStormBat " << "begin end" << endl;
+	//cout << "EffectStormBat " << "begin end" << eos;
 
 	__END_CATCH 
 
@@ -55,7 +55,7 @@ void EffectStormBat::affect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectStormBat " << "begin" << endl;
+	//cout << "EffectStormBat " << "begin" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -141,7 +141,7 @@ void EffectStormBat::affect(Creature* pCreature)
 	
 	setNextTime(m_Tick);
 
-	//cout << "EffectStormBat " << "end" << endl;
+	//cout << "EffectStormBat " << "end" << eos;
 
 	__END_CATCH
 }

@@ -95,7 +95,7 @@ void WarSystem::prepareRaceWar()
 	m_RaceWarTimeParam = ((DWORD)((DWORD)(sendStartTime.date().year() - 2000))*1000000) + ((DWORD)((DWORD)sendStartTime.date().month())*10000)
 					   + ((DWORD)((DWORD)sendStartTime.date().day())*100);//	   + ((DWORD)((DWORD)sendStartTime.time().hour()));
 
-	cout << "종족전쟁 패킷 보내는 날짜 : " << m_RaceWarTimeParam << endl;
+	cout << "종족전쟁 패킷 보내는 날짜 : " << m_RaceWarTimeParam << eos;
 
 	__END_CATCH
 }
@@ -341,7 +341,7 @@ void WarSystem::sendGCWarList(Player* pPlayer)
 	if (!m_GCWarList.isEmpty())
 	{
 		pPlayer->sendPacket( &m_GCWarList );
-		//cout << m_GCWarList.toString().c_str() << endl;
+		//cout << m_GCWarList.toString().c_str() << eos;
 	}
 
     __LEAVE_CRITICAL_SECTION(m_MutexWarList)
@@ -609,7 +609,7 @@ WarSchedule* WarSystem::getActiveWarSchedule_LOCKED( ZoneID_t zoneID )
 		War* pWar = dynamic_cast<War*>( pWarSchedule->getWork() );
 		if( pWar == NULL )
 		{
-			cout << "WarSystem에 들어있는 Schedule의 Work객체가 War가 아니거나 NULL입니다. 삽질삽질~~~~" << endl;
+			cout << "WarSystem에 들어있는 Schedule의 Work객체가 War가 아니거나 NULL입니다. 삽질삽질~~~~" << eos;
 			continue;
 		}
 

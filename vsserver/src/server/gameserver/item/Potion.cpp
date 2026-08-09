@@ -40,7 +40,7 @@ Potion::Potion(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNu
 	setItemType(itemType);
 	setNum(Num);
 
-	//cout << "Potion::Potion(" << getOptionTypeToString(optionType).c_str() << ")" << endl;
+	//cout << "Potion::Potion(" << getOptionTypeToString(optionType).c_str() << ")" << eos;
 	if (!g_pItemInfoManager->isPossibleItem(getItemClass(), getItemType(), optionType))
 	{
 		filelog("itembug.log", "Potion::Potion() : Invalid item type or option type");
@@ -618,7 +618,7 @@ void PotionLoader::load(Creature* pCreature)
 								pBeltInventory = pBelt->getInventory();
 								if (pBeltInventory->canAddingEx(x, 0, pPotion))
 								{
-									cout << " 추가완료"<< endl;
+									cout << " 추가완료"<< eos;
 									pBeltInventory->addItemEx(x, 0, pPotion);
 								}
 								else
@@ -662,10 +662,10 @@ void PotionLoader::load(Creature* pCreature)
 									pBeltInventory = ((SubInventory*)pBelt)->getInventory();
 										if (pBeltInventory->canAddingEx(x, y, pPotion))
 										{
-											cout << " 추가완료"<< endl;
+											cout << " 추가완료"<< eos;
 											pBeltInventory->addItemEx(x, y, pPotion);
 										}else{
-											cout << " 버그"<< endl;
+											cout << " 버그"<< eos;
 											processItemBugEx(pCreature, pPotion);
 										}
 								}else{

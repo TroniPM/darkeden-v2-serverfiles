@@ -331,7 +331,7 @@ void LevelWarZoneInfoManager::broadcast( ZoneID_t zoneID, Packet* pPacket ) cons
 
 	hash_map< ZoneID_t , LevelWarZoneInfo* >::const_iterator itr = m_LevelWarZoneInfos.find(zoneID);
 
-//	cout << VSDateTime::currentDateTime().toString() << endl;
+//	cout << VSDateTime::currentDateTime().toString() << eos;
 	if (itr != m_LevelWarZoneInfos.end())
 	{
 		LevelWarZoneInfo* pLevelWarZoneInfo = itr->second;
@@ -340,12 +340,12 @@ void LevelWarZoneInfoManager::broadcast( ZoneID_t zoneID, Packet* pPacket ) cons
 
 		for ( ; zitr != zendItr ; zitr++ )
 		{
-//			cout << *zitr << endl;
+//			cout << *zitr << eos;
 			Zone* pZone = getZoneByZoneID( *zitr );
 			pZone->broadcastLevelWarBonusPacket( pPacket );
 		}
 	}
-//	cout << VSDateTime::currentDateTime().toString() << endl;
+//	cout << VSDateTime::currentDateTime().toString() << eos;
 
 	__LEAVE_CRITICAL_SECTION( m_Mutex )
 

@@ -26,9 +26,9 @@ bool ConditionPcHasOriginalItems::isSatisfied (Creature * pCreature1 , Creature 
 	if ( pInventory == NULL ) return false;
 
 //	_TPOINT tp;
-	cout << " 여긴 문제 없음! " << endl;
+	cout << " 여긴 문제 없음! " << eos;
 	return pInventory->SerchItemCalls( (Item::ItemClass)m_ItemClass, m_ItemType, m_ItemNumber);
-	cout << " 여긴 문제 없음! 2" << endl;
+	cout << " 여긴 문제 없음! 2" << eos;
 }
 
 ////////////////////////////////////////////////////////////////////////////////

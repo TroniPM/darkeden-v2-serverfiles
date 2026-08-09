@@ -80,7 +80,7 @@ void CGAddZoneToMouseHandler::execute (CGAddZoneToMouse* pPacket , Player* pPlay
 
 		// 아이템 포인터가 널이거나, 주을 수 없는 아이템이라면 주을 수 없다.
 		Item* pItem = _Tile.getItem();
-	cout <<  "아이템 오브젝트 : " << pItem->getObjectID() << "정보 :" << pItem->getEnchantLevel() << "정보2:" << (int)pItem->getHeroOption() << endl;
+	cout <<  "아이템 오브젝트 : " << pItem->getObjectID() << "정보 :" << pItem->getEnchantLevel() << "정보2:" << (int)pItem->getHeroOption() << eos;
 		if (pItem == NULL || !isPortableItem(pItem)) goto ERROR;
 		if (!isAbleToPickupItem(pPC, pItem)) goto ERROR;
 

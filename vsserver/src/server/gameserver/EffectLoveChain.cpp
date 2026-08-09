@@ -51,7 +51,7 @@ void EffectLoveChain::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 	
-	//cout << "EffectLoveChain " << "unaffect BEGIN" << endl;
+	//cout << "EffectLoveChain " << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 

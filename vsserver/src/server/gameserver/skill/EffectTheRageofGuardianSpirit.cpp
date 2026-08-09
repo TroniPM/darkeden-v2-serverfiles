@@ -31,7 +31,7 @@ void EffectTheRageofGuardianSpirit::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectTheRageofGuardianSpirit" << "unaffect BEGIN" << endl;
+	//cout << "EffectTheRageofGuardianSpirit" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isOusters());
@@ -58,7 +58,7 @@ void EffectTheRageofGuardianSpirit::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_THE_RAGE_OF_GUARDIAN_SPIRIT);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectTheRageofGuardianSpirit" << "unaffect END" << endl;
+	//cout << "EffectTheRageofGuardianSpirit" << "unaffect END" << eos;
 
 	__END_CATCH
 }

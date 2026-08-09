@@ -212,9 +212,9 @@ void EffectSimyunEnterLoopLoader::load (Creature* pCreature)
 
 			Timeval currentTime;
 			getCurrentTime(currentTime);
-			cout << " 시간 측정 : " << currentTime.tv_sec << endl;
-			cout << " 시간 측정2 : " << DayTime << endl;
-			cout << " 시간 측정3 : " << DayTime-currentTime.tv_sec << endl;
+			cout << " 시간 측정 : " << currentTime.tv_sec << eos;
+			cout << " 시간 측정2 : " << DayTime << eos;
+			cout << " 시간 측정3 : " << DayTime-currentTime.tv_sec << eos;
 			EffectSimyunEnterLoop* pEffectSimyunEnterLoop = new EffectSimyunEnterLoop(pCreature);
 
 			EffectManager* pEffectManager = pCreature->getEffectManager();

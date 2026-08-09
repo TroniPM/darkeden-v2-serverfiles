@@ -37,12 +37,12 @@ void EffectPoison::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectPoison " << "begin begin" << endl;
+	//cout << "EffectPoison " << "begin begin" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 	affect(pCreature);
 
-	//cout << "EffectPoison " << "begin end" << endl;
+	//cout << "EffectPoison " << "begin end" << eos;
 
 	__END_CATCH 
 
@@ -55,7 +55,7 @@ void EffectPoison::affect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectPoison " << "begin" << endl;
+	//cout << "EffectPoison " << "begin" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -130,7 +130,7 @@ void EffectPoison::affect(Creature* pCreature)
 	cout << " Æ÷ÀÌÁð ÀÌÆåÆ® »ç¿ë 4 " <<endl;
 	setNextTime(m_Tick);
 
-	//cout << "EffectPoison " << "end" << endl;
+	//cout << "EffectPoison " << "end" << eos;
 
 	__END_CATCH
 }

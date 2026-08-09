@@ -114,7 +114,7 @@ bool Monster::isRealEnemy(Creature* pEnemy)
 		Creature* pOwner = m_pZone->getCreature( m_OwnerObjectID );
 		if ( pOwner != NULL && pOwner->getCreatureClass() == pEnemy->getCreatureClass() && canAttack( pOwner, pEnemy ) )
 		{
-//			cout << __PRETTY_FUNCTION__ << pEnemy->getName() << "is same class as owner" << pOwner->getName() << endl;
+//			cout << __PRETTY_FUNCTION__ << pEnemy->getName() << "is same class as owner" << pOwner->getName() << eos;
 			return false;
 		}
 
@@ -214,7 +214,7 @@ Monster::Monster (MonsterType_t monsterType)
 	if ( m_HP[ATTR_MAX] > 20000 )
 	{
 		if ( monsterType >= 717 )
-			cout << pMonsterInfo->getHName() << "의 HP : " << m_HP[ATTR_MAX] << endl;
+			cout << pMonsterInfo->getHName() << "의 HP : " << m_HP[ATTR_MAX] << eos;
 		else
 			m_HP[ATTR_MAX] = 20000;
 	}
@@ -249,7 +249,7 @@ Monster::Monster (MonsterType_t monsterType)
 			m_pBrain = new MonsterAI(this, aitype);
 		else
 		{
-			cout << pMonsterInfo->getHName() << "은 뇌가 없다." << endl;
+			cout << pMonsterInfo->getHName() << "은 뇌가 없다." << eos;
 			m_pBrain = NULL;
 		}
 	}
@@ -442,7 +442,7 @@ Monster::Monster (MonsterType_t monsterType)
 	addEffect( pEffect );
 	setFlag(pEffect->getSendEffectClass());
 	
-	cout << " 오오라 코드 : " << m_EffectClass << endl;
+	cout << " 오오라 코드 : " << m_EffectClass << eos;
 	/*SimpleCreatureEffect* pEffect = new SimpleCreatureEffect( (Effect::EffectClass)m_EffectClass, this );
 	pEffect->setDeadline(999999);
 	addEffect( pEffect );*
@@ -1120,7 +1120,7 @@ void Monster::addEnemy (Creature* pCreature)
 								}
 								catch (NoSuchElementException& nsee)
 								{
-									//cerr << nsee.toString() << endl;
+									//cerr << nsee.toString() << eos;
 									pEnemy = NULL;
 								}
 								*/
@@ -1186,7 +1186,7 @@ void Monster::addEnemy (Creature* pCreature)
 								}
 								catch (NoSuchElementException& nsee)
 								{
-									//cerr << nsee.toString() << endl;
+									//cerr << nsee.toString() << eos;
 									pEnemy = NULL;
 								}
 								*/
@@ -1301,7 +1301,7 @@ void Monster::addEnemy (Creature* pCreature)
 	} 
 	catch (Throwable & t) 
 	{
-		//cerr << t.toString() << endl;
+		//cerr << t.toString() << eos;
 	}
 
 	__END_DEBUG
@@ -1371,7 +1371,7 @@ void Monster::deleteEnemy (ObjectID_t enemyID)
 
 	if (itr == m_Enemies.end())
 	{
-		//cerr << "Monster::deleteEnemy() : NoSuchElementException" << endl;
+		//cerr << "Monster::deleteEnemy() : NoSuchElementException" << eos;
 		//throw NoSuchElementException();
 
 		// exception 무시. by sigi. 2002.10.7
@@ -1480,7 +1480,7 @@ Creature* Monster::getPrimaryEnemy () const
 			}
 			catch (NoSuchElementException& nsee)
 			{
-				//cerr << nsee.toString() << endl;
+				//cerr << nsee.toString() << eos;
 				pEnemy = NULL;
 			}
 			*/
@@ -1503,7 +1503,7 @@ Creature* Monster::getPrimaryEnemy () const
 				}
 				catch (NoSuchElementException& nsee)
 				{
-					//cerr << nsee.toString() << endl;
+					//cerr << nsee.toString() << eos;
 					pCreature = NULL;
 				}
 				*/
@@ -1535,7 +1535,7 @@ Creature* Monster::getPrimaryEnemy () const
 				}
 				catch (NoSuchElementException& nsee)
 				{
-					//cerr << nsee.toString() << endl;
+					//cerr << nsee.toString() << eos;
 					pCreature = NULL;
 				}
 				*/
@@ -1564,8 +1564,8 @@ Creature* Monster::getPrimaryEnemy () const
 
 	if (pEnemy == NULL)
 	{
-		//cerr << "<ENEMY NULL ERROR>" << endl;
-		//cerr << "Monster's AttackOrder : " << AttackOrder2String[getAttackOrder()] << endl;
+		//cerr << "<ENEMY NULL ERROR>" << eos;
+		//cerr << "Monster's AttackOrder : " << AttackOrder2String[getAttackOrder()] << eos;
 		//cerr << "Enemy's ObjectID : " << m_Enemies.front();
 	}
 
@@ -1593,7 +1593,7 @@ ObjectID_t Monster::getEnemy (EnemyPriority enemyPriority) const
 		ep = EnemyPriority(ep+1);
 	}
 
-	cerr << "Monster::getEnemy() : NoSuchElementException" << endl;
+	cerr << "Monster::getEnemy() : NoSuchElementException" << eos;
 	throw NoSuchElementException();
 
 	__END_CATCH
@@ -1772,7 +1772,7 @@ bool Monster::isEnemyToAttack(Creature* pCreature) const
 		Creature* pOwner = m_pZone->getCreature( m_OwnerObjectID );
 		if ( pOwner != NULL && pOwner->getCreatureClass() == pCreature->getCreatureClass() && canAttack( pOwner, pCreature ) )
 		{
-//			cout << __PRETTY_FUNCTION__ << pCreature->getName() << "is same race as owner " << pOwner->getName() << endl;
+//			cout << __PRETTY_FUNCTION__ << pCreature->getName() << "is same race as owner " << pOwner->getName() << eos;
 			return false;
 		}
 

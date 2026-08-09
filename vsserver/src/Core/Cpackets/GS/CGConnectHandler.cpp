@@ -186,11 +186,11 @@ void CGConnectHandler::execute (CGConnect* pPacket , Player* pPlayer)
 	catch (InvalidProtocolException & ipe) 
 	{
 		FILELOG_INCOMING_CONNECTION("connectionError.log", "%s: %s", ipe.toString().c_str(), pGamePlayer->getSocket()->getHost().c_str());
-		cout << endl
-			 << "+-----------------------+" << endl
-			 << "| Level 2 Access Denied |" << endl
-			 << "+-----------------------+" << endl
-			 << endl;
+		cout << eos
+			 << "+-----------------------+" << eos
+			 << "| Level 2 Access Denied |" << eos
+			 << "+-----------------------+" << eos
+			 << eos;
 
 		GCDisconnect gcDisconnect;
 		gcDisconnect.setMessage(ipe.toString());
@@ -413,7 +413,7 @@ void CGConnectHandler::execute (CGConnect* pPacket , Player* pPlayer)
 			if (!pSlayer->load())
 			{
 				filelog("connectDB_BUG.txt", "Failed to load SLAYER(%s) data from DB", pPacket->getPCName().c_str());
-				cout << " 여기는 되나요" << endl;
+				cout << " 여기는 되나요" << eos;
 				throw ProtocolException("Failed to load SLAYER data from DB");
 			}
 
@@ -423,7 +423,7 @@ void CGConnectHandler::execute (CGConnect* pPacket , Player* pPlayer)
 			if (pSlayer->getName() != pPacket->getPCName())
 			{
 				cout << "Different Name : " << pSlayer->getName().c_str()
-						<< ", " << pPacket->getPCName().c_str() << endl;
+						<< ", " << pPacket->getPCName().c_str() << eos;
 
 				Assert(pSlayer->getName() == pPacket->getPCName());
 			}
@@ -632,7 +632,7 @@ void CGConnectHandler::execute (CGConnect* pPacket , Player* pPlayer)
 		}
 	//}
 
-				cout << " 여기는 되나요2" << endl;
+				cout << " 여기는 되나요2" << eos;
 
 	// 이??접속 중인 경우의 처리. 
 	// PCFinder에서의 DuplicatedException을 명확하게 처리하기 위해서
@@ -663,7 +663,7 @@ void CGConnectHandler::execute (CGConnect* pPacket , Player* pPlayer)
 	EventHeadCount* pEventHeadCount = new EventHeadCount(pGamePlayer);
 	pEventHeadCount->setDeadline(18000);
 	pGamePlayer->addEvent(pEventHeadCount);
-				cout << " 여기는 되나요3" << endl;
+				cout << " 여기는 되나요3" << eos;
 	if ( pCreature->isGOD() )
 	{
 		EffectGhost* pEffect = new EffectGhost(pCreature);
@@ -676,7 +676,7 @@ void CGConnectHandler::execute (CGConnect* pPacket , Player* pPlayer)
 #ifdef __TEST_SERVER__
 		EventAuth* pAuth = new EventAuth( pGamePlayer );
 		pGamePlayer->addEvent( pAuth );
-		cout << "엔프로텍트 인증 타이머 붙입니다 : " << pGamePlayer->getID() << endl;
+		cout << "엔프로텍트 인증 타이머 붙입니다 : " << pGamePlayer->getID() << eos;
 #endif
 	}
 
@@ -688,7 +688,7 @@ void CGConnectHandler::execute (CGConnect* pPacket , Player* pPlayer)
 		pCreature->addEffect( pEffect );
 		pCreature->setFlag( pEffect->getEffectClass() );
 	}
-				cout << " 여기는 되나요4" << endl;
+				cout << " 여기는 되나요4" << eos;
 	// 성이나 성 던전 안으로 로그인할 수 없다.
 	ZoneID_t castleZoneID;
 	ZoneInfo* pZoneInfo = g_pZoneInfoManager->getZoneInfo(pCreature->getZoneID());
@@ -719,7 +719,7 @@ void CGConnectHandler::execute (CGConnect* pPacket , Player* pPlayer)
 			}
 		}
 	}
-				cout << " 여기는 되나요5" << endl;
+				cout << " 여기는 되나요5" << eos;
 	Zone* pZone = pCreature->getZone();
 	Assert(pZone != NULL);
 	
@@ -878,7 +878,7 @@ void CGConnectHandler::execute (CGConnect* pPacket , Player* pPlayer)
 
 	// 유료존에서만 적용되는 아이템 때문에 여기서 체크
 	// 2002.8.26. by sigi
-				cout << " 아이템 로드 부분 이 부분이 안되면 이부분이 오류다." << endl;
+				cout << " 아이템 로드 부분 이 부분이 안되면 이부분이 오류다." << eos;
 	if (pPacket->getPCType() == PC_SLAYER) 
 	{
 		Assert(pSlayer!=NULL);
@@ -984,7 +984,7 @@ void CGConnectHandler::execute (CGConnect* pPacket , Player* pPlayer)
 	// GCUpdateInfo 용 PC 정보, SkillInfo 를 구성한다.
 	//----------------------------------------------------------------------
 
-				cout << " 여기는 되나요7" << endl;
+				cout << " 여기는 되나요7" << eos;
 
 	GCUpdateInfo gcUpdateInfo;
 			
@@ -1036,7 +1036,7 @@ isAdultByBirthdayDate(const string& birthday)
     if ( Timec.tm_mday < 10 ) AdultSSN << "0";
     AdultSSN << Timec.tm_mday;
 
-    cout << "Birthday = " << birthday.c_str() << " ADULTSSN = " << AdultSSN.toString().c_str() << endl;
+    cout << "Birthday = " << birthday.c_str() << " ADULTSSN = " << AdultSSN.toString().c_str() << eos;
 
     int year  = atoi( birthday.substr(0,4).c_str() );
     int month = atoi( birthday.substr(5,2).c_str() );
@@ -1044,27 +1044,27 @@ isAdultByBirthdayDate(const string& birthday)
 
     if ( Timec.tm_year - 18 + 1900 > year )
     {
-        cout << "어른" << endl;
+        cout << "어른" << eos;
         return true;
     }
     else if ( Timec.tm_year - 18 + 1900 == year )
     {
         if ( Timec.tm_mon + 1 > month )
         {
-            cout << "어른" << endl;
+            cout << "어른" << eos;
             return true;
         }
         else if ( Timec.tm_mon + 1 == month )
         {
             if ( Timec.tm_mday >= day )
             {
-                cout << "어른" << endl;
+                cout << "어른" << eos;
                 return true;
             }
         }
     }
 
-    cout << "애들" << endl;
+    cout << "애들" << eos;
     return false;
 }
 

@@ -33,7 +33,7 @@ void EffectSquallyBarrier1::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectSquallyBarrier1" << "unaffect BEGIN" << endl;
+	//cout << "EffectSquallyBarrier1" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isOusters());
@@ -60,7 +60,7 @@ void EffectSquallyBarrier1::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(m_ClientEffectClass);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectSquallyBarrier1" << "unaffect END" << endl;
+	//cout << "EffectSquallyBarrier1" << "unaffect END" << eos;
 
 	__END_CATCH
 }

@@ -35,12 +35,12 @@ void EffectDecreaseHP::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectDecreaseHP " << "begin begin" << endl;
+	//cout << "EffectDecreaseHP " << "begin begin" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 	affect(pCreature);
 
-	//cout << "EffectDecreaseHP " << "begin end" << endl;
+	//cout << "EffectDecreaseHP " << "begin end" << eos;
 
 	__END_CATCH 
 
@@ -53,8 +53,8 @@ void EffectDecreaseHP::affect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectDecreaseHP " << "begin" << endl;
-	//cout << "EffectDecreaseHP " << "end" << endl;
+	//cout << "EffectDecreaseHP " << "begin" << eos;
+	//cout << "EffectDecreaseHP " << "end" << eos;
 
 	__END_CATCH
 }

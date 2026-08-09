@@ -42,7 +42,7 @@ void EffectHalo::affect()
 
 	setNextTime(10);
 
-	//cout << "EffectHalo" << "affect BEGIN" << endl;
+	//cout << "EffectHalo" << "affect BEGIN" << eos;
 	Creature* pCreature = m_pZone->getCreature( m_TargetOID );
 	affect(pCreature);
 	
@@ -127,7 +127,7 @@ void EffectHalo::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectHalo" << "unaffect BEGIN" << endl;
+	//cout << "EffectHalo" << "unaffect BEGIN" << eos;
 
     Tile& tile = m_pZone->getTile(m_X, m_Y);
 	tile.deleteEffect(m_ObjectID);
@@ -138,7 +138,7 @@ void EffectHalo::unaffect()
 	gcDT.setEffectID(Effect::EFFECT_CLASS_HALO);
 	m_pZone->broadcastPacket( m_X, m_Y, &gcDT );
 
-	//cout << "EffectHalo" << "unaffect END" << endl;
+	//cout << "EffectHalo" << "unaffect END" << eos;
 
 	__END_CATCH
 }

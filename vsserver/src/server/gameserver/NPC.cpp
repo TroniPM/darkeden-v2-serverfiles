@@ -374,7 +374,7 @@ bool NPC::giveSimpleQuest(Creature* pCreature, QuestID_t qid)
 		// 그런 QuestID는 없다.
 		if (pQuest==NULL)
 		{
-			// cout << "No Such Quest(" << (int)qid << ")" << endl;
+			// cout << "No Such Quest(" << (int)qid << ")" << eos;
 			return false;
 		}
 
@@ -388,7 +388,7 @@ bool NPC::giveSimpleQuest(Creature* pCreature, QuestID_t qid)
 
 		// quest 추가 실패
 		SAFE_DELETE(pQuest);
-		//cout << "cannot add Quest(" << (int)qid << ")" << endl;
+		//cout << "cannot add Quest(" << (int)qid << ")" << eos;
 	}
 
 #endif

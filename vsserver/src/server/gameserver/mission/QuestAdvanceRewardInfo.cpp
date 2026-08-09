@@ -58,7 +58,7 @@ string QuestAdvanceRewardInfo::toString() const throw()
 	msg << "QuestAdvanceRewardInfo("
 		<< "ThisQuestLevel : " << m_ThisQuestLevel
 		<< " ,NextQuestLevel : " << m_NextQuestLevel
-		<< ") : " << endl << RewardInfo::toString().c_str();
+		<< ") : " << eos << RewardInfo::toString().c_str();
 
 	return msg.toString();
 

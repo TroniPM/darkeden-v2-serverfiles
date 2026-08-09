@@ -78,7 +78,7 @@ void EffectCrushingStorm::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectCrushingStorm" << "affect BEGIN" << endl;
+	//cout << "EffectCrushingStorm" << "affect BEGIN" << eos;
 	
 	Assert(m_pZone != NULL);
 
@@ -88,7 +88,7 @@ void EffectCrushingStorm::affect()
 	
 	setNextTime(10);
 
-	//cout << "EffectCrushingStorm" << "affect END" << endl;
+	//cout << "EffectCrushingStorm" << "affect END" << eos;
 
 	__END_CATCH 
 }
@@ -100,12 +100,12 @@ void EffectCrushingStorm::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectCrushingStorm" << "unaffect BEGIN" << endl;
+	//cout << "EffectCrushingStorm" << "unaffect BEGIN" << eos;
 
     Tile& tile = m_pZone->getTile(m_X, m_Y);
 	tile.deleteEffect(m_ObjectID);
 
-	//cout << "EffectCrushingStorm" << "unaffect END" << endl;
+	//cout << "EffectCrushingStorm" << "unaffect END" << eos;
 
 	__END_CATCH
 }

@@ -121,7 +121,7 @@ void PCSlayerInfo2::read ( SocketInputStream & iStream )
 	} 
 	catch ( Throwable & t ) 
 	{
-		cout << t.toString() << endl;
+		cout << t.toString() << eos;
 	}
 
 	__END_CATCH
@@ -181,7 +181,7 @@ void PCSlayerInfo2::write ( SocketOutputStream & oStream ) const
 		oStream.write( m_Rank );
 		oStream.write( m_RankExp );
 
-//		cout << m_RankExp << endl;
+//		cout << m_RankExp << eos;
 
 		// write attributes
 		oStream.write( m_STRExp );
@@ -239,7 +239,7 @@ void PCSlayerInfo2::write ( SocketOutputStream & oStream ) const
 	} 
 	catch ( Throwable & t ) 
 	{
-		cout << t.toString() << endl;
+		cout << t.toString() << eos;
 	}
 
 	__END_CATCH

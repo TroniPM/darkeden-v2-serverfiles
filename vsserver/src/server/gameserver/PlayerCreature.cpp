@@ -681,7 +681,7 @@ void PlayerCreature::setStashGoldEx(Gold_t gold)
 {
 	__BEGIN_TRY
 
-	//cout << "setStashGoldEx Called" << "Name:" << getName() << " Gold: " << (int)gold << endl;
+	//cout << "setStashGoldEx Called" << "Name:" << getName() << " Gold: " << (int)gold << eos;
 	Statement* pStmt = NULL;
 
 	setStashGold(gold);
@@ -832,7 +832,7 @@ void PlayerCreature::addEnemy(const string& Name)
 	if (itr == m_Enemies.end()) 
 	{
 		m_Enemies.push_back(Name);
-		//cout << "선공자를 추가한다 : " << Name << endl;
+		//cout << "선공자를 추가한다 : " << Name << eos;
 	}
 
 	__END_DEBUG
@@ -850,7 +850,7 @@ void PlayerCreature::deleteEnemy(const string& Name)
 	if (itr != m_Enemies.end()) 
 	{
 		m_Enemies.erase(itr);
-		//cout << "선공자를 지운다 : " << Name << endl;
+		//cout << "선공자를 지운다 : " << Name << eos;
 	}
 
 	__END_DEBUG
@@ -867,7 +867,7 @@ bool PlayerCreature::hasEnemy(const string& Name)
     list<string>::const_iterator itr = find(m_Enemies.begin(), m_Enemies.end() , Name);
 	if (itr != m_Enemies.end()) 
 	{
-		//cout << "선공자로 이미 설정이 되어있??: " << Name << endl;
+		//cout << "선공자로 이미 설정이 되어있??: " << Name << eos;
 		return true;
 	} 
 	else 
@@ -1351,7 +1351,7 @@ bool    PlayerCreature::checkEvent(QuestEvent* pQuestEvent)
 
 		if (pCompleteQuest!=NULL)
 		{
-			//cout << "[Complete] " << pCompleteQuest->toString().c_str() << endl;
+			//cout << "[Complete] " << pCompleteQuest->toString().c_str() << eos;
 			return true;
 		}
 	}
@@ -1586,12 +1586,12 @@ bool PlayerCreature::increaseAdvancementClassExp(Exp_t exp, bool bApplyExpBonus)
 		}
 	}
 
-	cout << getName() << "에게 승직 경험치 " << (int)exp << "만큼 줍니다." << endl;
+	cout << getName() << "에게 승직 경험치 " << (int)exp << "만큼 줍니다." << eos;
 	Level_t prevLevel = getAdvancementClassLevel();
 	bool ret = m_pAdvancementClass->increaseExp( exp, true, true );
 	if ( getAdvancementClassLevel() > 0 ) m_bAdvanced = true;
 	Level_t nextLevel = getAdvancementClassLevel();
-	cout << getName() << "이 " << (int)prevLevel << " 에서 " << (int)nextLevel << " 이 되었습니다." << endl;
+	cout << getName() << "이 " << (int)prevLevel << " 에서 " << (int)nextLevel << " 이 되었습니다." << eos;
 
 	if ( prevLevel != nextLevel )
 	{
@@ -1602,7 +1602,7 @@ bool PlayerCreature::increaseAdvancementClassExp(Exp_t exp, bool bApplyExpBonus)
 		Level_t _5pointend = max((int)nextLevel, 50);
 
 		Bonus_t bonusdiff = (( _4pointend - _4pointstart ) * 4) + (( _5pointend - _5pointstart ) * 5);
-		cout << getName() << "에게 " << (int)bonusdiff << "만큼 능력치 줍니다." << endl;
+		cout << getName() << "에게 " << (int)bonusdiff << "만큼 능력치 줍니다." << eos;
 		bonus += bonusdiff;
 		setBonus( bonus );
 

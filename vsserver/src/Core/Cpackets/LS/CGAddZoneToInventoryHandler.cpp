@@ -189,7 +189,7 @@ void CGAddZoneToInventoryHandler::execute (CGAddZoneToInventory* pPacket , Playe
 				// add by sonic 2006.10.30  防止有时间限制物品放在一起
 				if(pItem->isTimeLimitItem() || pPrevItem->isTimeLimitItem())
 				{
-					//cout << "cannot add" << endl;
+					//cout << "cannot add" << eos;
 					GCCannotAdd _GCCannotAdd;
 					_GCCannotAdd.setObjectID(pPacket->getObjectID());
 					pPlayer->sendPacket(&_GCCannotAdd);
@@ -250,7 +250,7 @@ void CGAddZoneToInventoryHandler::execute (CGAddZoneToInventory* pPacket , Playe
 						GCNoticeEvent gcNE;
 						gcNE.setCode( NOTICE_EVENT_NETMARBLE_CARD_FULL );
 						pGamePlayer->sendPacket( &gcNE );
-						cout << "gcNE sent" << endl;
+						cout << "gcNE sent" << eos;
 					}
 
 					if ( pPrevItem->getItemClass() == Item::ITEM_CLASS_LUCKY_BAG
@@ -270,7 +270,7 @@ void CGAddZoneToInventoryHandler::execute (CGAddZoneToInventory* pPacket , Playe
 
 						if ( !pInventory->addItem(pt.x, pt.y, pNewItem) )
 						{
-							cout << "-_-;" << endl;
+							cout << "-_-;" << eos;
 							return;
 						}
 
@@ -477,7 +477,7 @@ void CGAddZoneToInventoryHandler::execute (CGAddZoneToInventory* pPacket , Playe
 	} 
 	catch (Throwable & t) 
 	{ 
-		//cerr << t.toString() << endl; 
+		//cerr << t.toString() << eos; 
 	}
 
 ERROR:
@@ -722,7 +722,7 @@ void CGAddZoneToInventoryHandler::execute (CGAddZoneToInventory* pPacket , Playe
 	} 
 	catch (Throwable & t) 
 	{ 
-		//cerr << t.toString() << endl; 
+		//cerr << t.toString() << eos; 
 	}
 
 #endif	// __GAME_SERVER__

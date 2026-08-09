@@ -45,7 +45,7 @@ void EffectFlameSight::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectFlameSight " << "unaffect BEGIN" << endl;
+	//cout << "EffectFlameSight " << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isOusters());
@@ -89,7 +89,7 @@ void EffectFlameSight::unaffect(Creature* pCreature)
 		destroy(pOusters->getName());
 	}
 
-	//cout << "EffectFlameSight " << "unaffect END" << endl;
+	//cout << "EffectFlameSight " << "unaffect END" << eos;
 	
 	__END_CATCH
 }
@@ -224,7 +224,7 @@ void EffectFlameSightLoader::load(Creature* pCreature)
 
 	if (pCreature == NULL)
 	{
-		//cout << "EffectFlameSightLoader : 크리쳐가 널입니다." << endl;
+		//cout << "EffectFlameSightLoader : 크리쳐가 널입니다." << eos;
 		return;
 	}
 

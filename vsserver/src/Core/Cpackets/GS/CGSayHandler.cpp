@@ -261,7 +261,7 @@ void CGSayHandler::execute (CGSay* pPacket , Player* pPlayer)
 	}
 
 	} catch (Throwable & t) {
-		//cout << t.toString() << endl;
+		//cout << t.toString() << eos;
 	}
 
 #endif
@@ -284,7 +284,7 @@ void CGSayHandler::opExecute(Creature* pCreature, GamePlayer* pGamePlayer, strin
 	}
 
 	else if (msg.substr(i+1 , 4) == "wall" && !(pCreature->isPLAYER())) {
-		//cout << "==================Operator Order Wall Execute==================" << endl;
+		//cout << "==================Operator Order Wall Execute==================" << eos;
 
 		opwall(pGamePlayer, msg, i);
 
@@ -292,7 +292,7 @@ void CGSayHandler::opExecute(Creature* pCreature, GamePlayer* pGamePlayer, strin
 
 	// halt
 	else if (msg.substr(i+1 , 8) == "shutdown" && pCreature->isGOD()) {
-		//cout << "==================Operator Order Shutdown Execute==================" << endl;
+		//cout << "==================Operator Order Shutdown Execute==================" << eos;
 
 		opshutdown(pGamePlayer, msg, i);
 
@@ -304,35 +304,35 @@ void CGSayHandler::opExecute(Creature* pCreature, GamePlayer* pGamePlayer, strin
 	}
 
 	else if (msg.substr(i+1 , 4) == "kick" && !(pCreature->isPLAYER())){
-		//cout << "==================Operator Order kick Execute==================" << endl;
+		//cout << "==================Operator Order kick Execute==================" << eos;
 
 		opkick(pGamePlayer, msg, i);
 
 	}
 
 	else if (msg.substr(i+1 , 4) == "mute" && pCreature->isGOD()){
-		//cout << "==================Operator Order mute Execute==================" << endl;
+		//cout << "==================Operator Order mute Execute==================" << eos;
 
 		opmute(pGamePlayer, msg, i);
 
 	}
 
 	else if (msg.substr(i+1 , 8) == "denychat" && !pCreature->isPLAYER()){
-		//cout << "==================Operator Order denychat Execute==================" << endl;
+		//cout << "==================Operator Order denychat Execute==================" << eos;
 
 		opdenychat(pGamePlayer, msg, i);
 
 	}
 
 	else if (msg.substr(i+1 , 8) == "freezing" && pCreature->isGOD()){
-		//cout << "==================Operator Order freezing Execute==================" << endl;
+		//cout << "==================Operator Order freezing Execute==================" << eos;
 
 		opfreezing(pGamePlayer, msg, i);
 
 	}
 
 	else if (msg.substr(i+1 , 4) == "deny" && !(pCreature->isPLAYER()) ) {
-		//cout << "==================Operator Order deny Execute==================" << endl;
+		//cout << "==================Operator Order deny Execute==================" << eos;
 
 
 		opdeny(pGamePlayer, msg, i);
@@ -340,41 +340,41 @@ void CGSayHandler::opExecute(Creature* pCreature, GamePlayer* pGamePlayer, strin
 	}
 
 	else if (msg.substr(i+1 , 4) == "info" && pCreature->isGOD()){
-		//cout << "==================Operator Order info Execute==================" << endl;
+		//cout << "==================Operator Order info Execute==================" << eos;
 
 		opinfo(pGamePlayer, msg, i);
 
 	}
 
 	else if (msg.substr(i+1 , 5) == "goods"){
-		//cout << "==================Operator Order info Execute==================" << endl;
+		//cout << "==================Operator Order info Execute==================" << eos;
 
 		opgoods(pGamePlayer, msg, i);
 
 	}
 
 	else if (msg.substr(i+1 , 5) == "trace" && !(pCreature->isPLAYER())){
-		//cout << "==================Operator Order trace Execute==================" << endl;
+		//cout << "==================Operator Order trace Execute==================" << eos;
 		optrace(pGamePlayer, msg, i);
 	}
 
 	else if (msg.substr(i+1 , 4) == "warp" && !(pCreature->isPLAYER())){
-		//cout << "==================Operator Order warp Execute==================" << endl;
+		//cout << "==================Operator Order warp Execute==================" << eos;
 		opwarp(pGamePlayer, msg, i);
 	}
 
 	else if (msg.substr(i+1 , 6) == "create" && pCreature->isGOD()){
-		//cout << "==================Operator Order create Execute==================" << endl;
+		//cout << "==================Operator Order create Execute==================" << eos;
 		opcreate(pGamePlayer, msg, i);
 	}
 
 	else if (msg.substr(i+1 , 6) == "summon" && pCreature->isGOD()){
-		//cout << "==================Operator Order create Execute==================" << endl;
+		//cout << "==================Operator Order create Execute==================" << eos;
 		opsummon(pGamePlayer, msg, i);
 	}
 	
 	else if (msg.substr(i+1 , 5) == "grant" && pCreature->isGOD()){
-		//cout << "==================Operator Order grant Execute==================" << endl;
+		//cout << "==================Operator Order grant Execute==================" << eos;
 		opgrant(pGamePlayer, msg, i);
 	}
 
@@ -463,15 +463,15 @@ void CGSayHandler::opExecute(Creature* pCreature, GamePlayer* pGamePlayer, strin
 	*/
 
 	else if (msg.substr(i+1 , 6) == "recall" && pCreature->isGOD()) {
-		//cout << "==================Operator Order recall Execute==================" << endl;
+		//cout << "==================Operator Order recall Execute==================" << eos;
 		oprecall(pGamePlayer, msg, i);
 	}
 	else if (msg.substr(i+1 , 4) == "user" && pCreature->isGOD()){
-		//cout << "==================Operator Order user Execute==================" << endl;
+		//cout << "==================Operator Order user Execute==================" << eos;
 		opuser(pGamePlayer, msg, i);
 	}
 	else if (msg.substr(i+1 , 6) == "notice" && pCreature->isGOD()){
-		//cout << "==================Operator Order user Execute==================" << endl;
+		//cout << "==================Operator Order user Execute==================" << eos;
 		opnotice(pGamePlayer, msg, i);
 	}
 
@@ -557,10 +557,10 @@ void CGSayHandler::opExecute(Creature* pCreature, GamePlayer* pGamePlayer, strin
 		string Address = msg.substr(l+1, m-l-1);
 		string Message = msg.substr(m+1, msg.size()-m-1);
 
-		cout << ExecutableTime << endl;
-		cout << Version << endl;
-		cout << Address << endl;
-		cout << Message << endl;
+		cout << ExecutableTime << eos;
+		cout << Version << eos;
+		cout << Address << eos;
+		cout << Message << eos;
 
 		Statement* pStmt = NULL;
 
@@ -637,7 +637,7 @@ void CGSayHandler::opcombat(GamePlayer* pGamePlayer, string msg, int i)
 			|| g_pCombatInfoManager->isSlayerBonus()
 			|| g_pCombatInfoManager->isVampireBonus())
 		{
-			cout << "이미 전쟁중입니다" << endl;
+			cout << "이미 전쟁중입니다" << eos;
 //			message << "이미 전쟁중입니다";
 			gcSystemMessage.setMessage( g_pStringPool->getString( STRID_COMBAT_ALEADY_START ) );
 
@@ -645,7 +645,7 @@ void CGSayHandler::opcombat(GamePlayer* pGamePlayer, string msg, int i)
 		}
 		else
 		{
-			cout << "전쟁이 시작되었습니다" << endl;
+			cout << "전쟁이 시작되었습니다" << eos;
 //			message << "전쟁이 시작되었습니다";
 			gcSystemMessage.setMessage( g_pStringPool->getString( STRID_COMBAT_START ) );
 
@@ -689,7 +689,7 @@ void CGSayHandler::opcombat(GamePlayer* pGamePlayer, string msg, int i)
 				|| g_pCombatInfoManager->isVampireBonus()))
 
 		{
-			cout << "전쟁을 종료합니다." << endl;
+			cout << "전쟁을 종료합니다." << eos;
 			gcSystemMessage.setMessage( g_pStringPool->getString( STRID_COMBAT_END ) );
 			g_pZoneGroupManager->broadcast( &gcSystemMessage );
 
@@ -727,7 +727,7 @@ void CGSayHandler::opcombat(GamePlayer* pGamePlayer, string msg, int i)
 		}
 		else
 		{
-			cout << "전쟁중이 아니거나 종료할 수 없습니다." << endl;
+			cout << "전쟁중이 아니거나 종료할 수 없습니다." << eos;
 			gcSystemMessage.setMessage( g_pStringPool->getString( STRID_CANNOT_END_COMBAT ) );
 			
 			pGamePlayer->sendPacket (&gcSystemMessage);
@@ -756,7 +756,7 @@ void CGSayHandler::opview(GamePlayer* pGamePlayer, string msg, int i)
 	
 	string set_type = msg.substr(j+1, z-j-1);
 
-	cout << "modifier : " << pCreature->getName() << " set type : " << set_type << endl;
+	cout << "modifier : " << pCreature->getName() << " set type : " << set_type << eos;
 
 	if(set_type == "star")
 	{
@@ -766,9 +766,9 @@ void CGSayHandler::opview(GamePlayer* pGamePlayer, string msg, int i)
 	else if(set_type == "evnet_activate")
 	{
 		if(g_pVariableManager->getEventActivate() == 1)
-			message << "慤숭攣瞳쏵契櫓..." << endl;
+			message << "慤숭攣瞳쏵契櫓..." << eos;
 		else
-			message << "慤숭綠界岺" << endl;
+			message << "慤숭綠界岺" << eos;
 		gcSystemMessage.setMessage(message.toString());
 	}
 	else if(set_type == "event_ratio")
@@ -2630,7 +2630,7 @@ void CGSayHandler::opgoods(GamePlayer* pGamePlayer , string msg, int i)
 
 		gcGoodsList.addGoodsInfo( pGI );
 	}
-//		cout << pGI->toString() << endl;
+//		cout << pGI->toString() << eos;
 
 	pGamePlayer->sendPacket( &gcGoodsList );
 
@@ -3042,7 +3042,7 @@ void CGSayHandler::opwarp(GamePlayer* pGamePlayer , string msg, int i)
 		}
 		catch (Throwable & t)
 		{
-			cerr << t.toString() << endl;
+			cerr << t.toString() << eos;
 		}
 	}
 
@@ -3129,7 +3129,7 @@ void CGSayHandler::opcreate(GamePlayer* pGamePlayer , string msg, int i)
 		pos = msg.find_first_of(' ' , previous+1);
 		string optionString = trim( msg.substr(previous+1, pos-previous-1) );
 
-		//cout << "optionString: " << optionString.c_str() << endl;
+		//cout << "optionString: " << optionString.c_str() << eos;
 
 		if (optionString.size()==0)
 			break;
@@ -3163,7 +3163,7 @@ void CGSayHandler::opcreate(GamePlayer* pGamePlayer , string msg, int i)
 
 			if (OptionType!=0)
 			{
-				//cout << "optionType = " << (int)OptionType << endl;
+				//cout << "optionType = " << (int)OptionType << eos;
 				optionTypes.push_back( OptionType );
 			}
 		}
@@ -3177,7 +3177,7 @@ void CGSayHandler::opcreate(GamePlayer* pGamePlayer , string msg, int i)
 		pos2 = msg.find_first_of(' ' , previous2+1);
 		string optionString2 = trim( msg.substr(previous2+1, pos2-previous2-1) );
 
-		//cout << "optionString: " << optionString.c_str() << endl;
+		//cout << "optionString: " << optionString.c_str() << eos;
 
 		if (optionString2.size()==0)
 			break;
@@ -3201,7 +3201,7 @@ void CGSayHandler::opcreate(GamePlayer* pGamePlayer , string msg, int i)
 
 			if (OptionType2!=0)
 			{
-				//cout << "optionType = " << (int)OptionType << endl;
+				//cout << "optionType = " << (int)OptionType << eos;
 				SetoptionTypes.push_back( OptionType2 );
 			}
 		}
@@ -3214,7 +3214,7 @@ void CGSayHandler::opcreate(GamePlayer* pGamePlayer , string msg, int i)
 	// 정상적으로 생성할 수 있는 아이템이 아니라면 리턴한다.
 	if (!g_pItemInfoManager->isPossibleItem(ItemClass, ItemType, optionTypes))
 	{
-		//cerr << "Cannot create item" << endl;
+		//cerr << "Cannot create item" << eos;
 		StringStream msg;
 		msg << g_pStringPool->getString( STRID_CANNOT_CREATE_ITEM_2 )
 			<< ItemClass2ShortString[ItemClass]
@@ -3229,7 +3229,7 @@ void CGSayHandler::opcreate(GamePlayer* pGamePlayer , string msg, int i)
 		return;
 	}
 
-	//cout << "createItemOptions : " << getOptionTypeToString(optionTypes) << endl;
+	//cout << "createItemOptions : " << getOptionTypeToString(optionTypes) << eos;
 	// create로 생성한 유니크 아이템도 개수 제한을 시켜야할까?
 	ItemInfo* pItemInfo = g_pItemInfoManager->getItemInfo( ItemClass, ItemType );
 	Assert(pItemInfo!=NULL);
@@ -3278,11 +3278,11 @@ void CGSayHandler::opcreate(GamePlayer* pGamePlayer , string msg, int i)
 		}
 		else 
 		{
-			cout << "-_-;;;;" << endl;
+			cout << "-_-;;;;" << eos;
 		}
 	}
 
-	//cout << "createItemOptions : " << getOptionTypeToString(pItem->getOptionTypeList()) << endl;
+	//cout << "createItemOptions : " << getOptionTypeToString(pItem->getOptionTypeList()) << eos;
 
 	if (isStackable(pItem->getItemClass())
 		&& lNum < rNum)
@@ -3348,7 +3348,7 @@ void CGSayHandler::opcreate(GamePlayer* pGamePlayer , string msg, int i)
 		} 
 		else 
 		{
-			//cerr << "아이템 창?뗄?실패하였습니다" << endl;
+			//cerr << "아이템 창?뗄?실패하였습니다" << eos;
 			SAFE_DELETE(pItem);
 		}
 	} 
@@ -3374,7 +3374,7 @@ void CGSayHandler::opcreate(GamePlayer* pGamePlayer , string msg, int i)
 		} 
 		else 
 		{
-			//cout << "아이템 창조에 실패하였습니다" << endl;
+			//cout << "아이템 창조에 실패하였습니다" << eos;
 			SAFE_DELETE(pItem);
 		}
 	}
@@ -3400,7 +3400,7 @@ void CGSayHandler::opcreate(GamePlayer* pGamePlayer , string msg, int i)
 		} 
 		else 
 		{
-			//cout << "아이템 창조에 실패하였습니다" << endl;
+			//cout << "아이템 창조에 실패하였습니다" << eos;
 			SAFE_DELETE(pItem);
 		}
 	}*/
@@ -3480,29 +3480,29 @@ void CGSayHandler::opgrant(GamePlayer* pGamePlayer , string msg, int i)
 		{
 			Slayer* pSlayer = dynamic_cast<Slayer*>(pTargetCreature);
 			pSlayer->setCompetence(Competence);
-			//cout << "set new Competence : " << (int)pSlayer->getCompetence() << endl;
+			//cout << "set new Competence : " << (int)pSlayer->getCompetence() << eos;
 		} 
 		else if (pTargetCreature->isVampire()) 
 		{
 			Vampire* pVampire= dynamic_cast<Vampire*>(pTargetCreature);
 			pVampire->setCompetence(Competence);
-			//cout << "set new Competence : " << (int)pVampire->getCompetence() << endl;
+			//cout << "set new Competence : " << (int)pVampire->getCompetence() << eos;
 		}
 		else if (pTargetCreature->isOusters()) 
 		{
 			Ousters* pOusters= dynamic_cast<Ousters*>(pTargetCreature);
 			pOusters->setCompetence(Competence);
-			//cout << "set new Competence : " << (int)pOusters->getCompetence() << endl;
+			//cout << "set new Competence : " << (int)pOusters->getCompetence() << eos;
 		}
 	}
 	//}
 	//catch (NoSuchElementException& nsee)
 	//{
-		//cout << nsee.toString() << endl;
+		//cout << nsee.toString() << eos;
 	//	pTargetCreature = NULL;
 	//}
 
-	//cout << "Creature Name : " << Name << endl;
+	//cout << "Creature Name : " << Name << eos;
 
 	__END_DEBUG_EX __END_CATCH
 }
@@ -3555,7 +3555,7 @@ void CGSayHandler::oprecall(GamePlayer* pGamePlayer , string msg, int i)
 
 		Name = msg.substr(j+1, i - j -1).c_str();
 
-		//cout << "Name : (" <<  Name << ")" << endl;
+		//cout << "Name : (" <<  Name << ")" << eos;
 
 		// NoSuch제거. by sigi. 2002.5.2
 		__ENTER_CRITICAL_SECTION((*g_pPCFinder))
@@ -3841,7 +3841,7 @@ void CGSayHandler::opsummon(GamePlayer* pGamePlayer , string msg, int i)
 
 	string MonsterName = msg.substr(j+1, k-j-1);
 
-//	cout << MonsterName << endl;
+//	cout << MonsterName << eos;
 
 	// SpriteType이 아니고 MonsterType이 설정된 ???
 	if (o!=string::npos && p!=string::npos)
@@ -3923,7 +3923,7 @@ void CGSayHandler::opsummon(GamePlayer* pGamePlayer , string msg, int i)
 	} 
 	catch (Throwable& t) 
 	{
-		cout << t.toString() << endl;
+		cout << t.toString() << eos;
 		filelog("summon.txt", "[%s]%s", (pGamePlayer==NULL?"Nobody":pGamePlayer->getCreature()->getName().c_str()), t.toString().c_str());
 	}
 
@@ -4393,8 +4393,8 @@ void CGSayHandler::opcommand(GamePlayer* pGamePlayer , string msg, int i)
 		ZoneID_t zoneID = (ZoneID_t)atoi( trim( value1.substr(0, j) ).c_str() );
 		GuildID_t guildID = (GuildID_t)atoi( trim( value1.substr(j+1, value1.size()-j-1) ).c_str() );
 
-//		cout << zoneID << endl;
-//		cout << guildID << endl;
+//		cout << zoneID << eos;
+//		cout << guildID << eos;
 
 		bSendPacket = false;
 
@@ -5346,7 +5346,7 @@ void CGSayHandler::opcommand(GamePlayer* pGamePlayer , string msg, int i)
 		string name = trim( value1.substr(0,j) );
 		string nick = trim( value1.substr(j+1, value1.size()) );
 
-		cout << "ForceNick " << name << " : " << nick << endl;;
+		cout << "ForceNick " << name << " : " << nick << eos;;
 
 		Creature* pTargetCreature;
 		Creature* pCreature = pGamePlayer->getCreature();
@@ -5397,7 +5397,7 @@ void CGSayHandler::opcommand(GamePlayer* pGamePlayer , string msg, int i)
 	else if ( command == "RemoveNick" )
 	{
 		string name = trim( value1 );
-		cout << "RemoveNick " << name << endl;
+		cout << "RemoveNick " << name << eos;
 
 		Creature* pTargetCreature;
 		Creature* pCreature = pGamePlayer->getCreature();
@@ -5560,7 +5560,7 @@ void CGSayHandler::opcommand(GamePlayer* pGamePlayer , string msg, int i)
 
 			if ( side < 8 && side > 0 )
 			{
-				cout << "side : " << side << endl;
+				cout << "side : " << side << eos;
 				addSimpleCreatureEffect( pTargetCreature, (Effect::EffectClass)(Effect::EFFECT_CLASS_SIEGE_DEFENDER + side - 1) );
 			}
 
@@ -5695,7 +5695,7 @@ void CGSayHandler::opcommand(GamePlayer* pGamePlayer , string msg, int i)
 					cout << ".";
 				}
 			}
-			cout << endl;
+			cout << eos;
 		}
 	}
 	else 
@@ -5881,7 +5881,7 @@ void CGSayHandler::oprefreshguildunion(GamePlayer* pGamePlayer , string msg, int
 	uint j = msg.find_first_of(' ' , i+1);
 	string command = msg.substr(j+1, msg.size()-j-1).c_str();
 
-	cout << "GuildUnionManager->reload()" << endl;
+	cout << "GuildUnionManager->reload()" << eos;
 
 	GuildUnionManager::Instance().reload();	
 	

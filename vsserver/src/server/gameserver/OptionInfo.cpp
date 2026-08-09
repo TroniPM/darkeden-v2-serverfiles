@@ -255,7 +255,7 @@ void OptionInfo::setReqAbility(const string& req)
 		else if (identifier == "SUM") { setReqSum(reqAbility);    }
 		else if (identifier != "")
 		{
-			//cerr << "OptionInfo::setReqAbility() : Unknown ability type [" << identifier << "]" << endl;
+			//cerr << "OptionInfo::setReqAbility() : Unknown ability type [" << identifier << "]" << eos;
 			throw ("OptionInfo::setReqAbility() : Unknown ability type");
 		}
 
@@ -586,7 +586,7 @@ void OptionInfoManager::load()
 					for (uint l=gambleLevel; l<=GAMBLE_OPTION_LEVEL_MAX; l++)
 					{
 						m_GambleOptions[ic][l].push_back( type );
-						//cout << "GambleOption[" << ic << "][" << l << "] = " << (int)type << endl;
+						//cout << "GambleOption[" << ic << "][" << l << "] = " << (int)type << eos;
 					}
 				}
 			}
@@ -683,13 +683,13 @@ void OptionInfoManager::load()
 
 					if (pOptionInfo==NULL)
 					{
-                    	cerr << "No Such Option : "  << optionType << endl;
+                    	cerr << "No Such Option : "  << optionType << eos;
                     	Assert(false);
 					}
 
                     totalRatio += pOptionInfo->getRatio();
                 } catch (NoSuchElementException&) {
-                    cerr << "No Such Option : "  << optionType << endl;
+                    cerr << "No Such Option : "  << optionType << eos;
                     Assert(false);
                 }
             }
@@ -700,7 +700,7 @@ void OptionInfoManager::load()
 
 
 	} catch (Throwable& t) {
-		cerr << t.toString().c_str() << endl;
+		cerr << t.toString().c_str() << eos;
 		throw;
 	}
 	
@@ -748,13 +748,13 @@ OptionInfo* OptionInfoManager::getOptionInfo(OptionType_t OptionType)
 {
 	__BEGIN_TRY
 
-	//cout << "getOptionInfo(" << (int)OptionType << ") " << endl;
+	//cout << "getOptionInfo(" << (int)OptionType << ") " << eos;
 
 	hash_map<OptionType_t, OptionInfo*>::iterator itr = m_OptionInfos.find(OptionType);
 
 	if (itr == m_OptionInfos.end())
 	{
-		//cerr << "OptionInfoManager::getOptionInfo() : No Such Element Exception. OptionType=" << (int)OptionType << endl;
+		//cerr << "OptionInfoManager::getOptionInfo() : No Such Element Exception. OptionType=" << (int)OptionType << eos;
 		//throw NoSuchElementException();
 
 		// nosuch제거. 2002.8.23. by sigi
@@ -771,7 +771,7 @@ list<OptionType_t> OptionInfoManager::getMixOptionInfo(int OptionType)
 {
 	__BEGIN_TRY
 
-	//cout << "getOptionInfo(" << (int)OptionType << ") " << endl;
+	//cout << "getOptionInfo(" << (int)OptionType << ") " << eos;
 	list<OptionType_t> 			m_OptionTypeClass;
 
 	hash_map<OptionType_t, OptionInfo*>::iterator itr;
@@ -794,7 +794,7 @@ OptionInfo* OptionInfoManager::getOptionInfo(const string& nickname)
 
 	if (itr == m_NicknameOptionInfos.end())
 	{
-		//cerr << "OptionInfoManager::getOptionInfo() : No Such Element Exception" << endl;
+		//cerr << "OptionInfoManager::getOptionInfo() : No Such Element Exception" << eos;
 		//throw NoSuchElementException();
 
 		// nosuch제거. 2002.8.23. by sigi
@@ -815,7 +815,7 @@ OptionType_t OptionInfoManager::getOptionType(const string& nickname)
 
 	if (itr == m_NicknameOptionInfos.end())
 	{
-		cerr << "OptionInfoManager::getOptionInfo() : No Such Element Exception" << endl;
+		cerr << "OptionInfoManager::getOptionInfo() : No Such Element Exception" << eos;
 		throw NoSuchElementException();
 	}
 

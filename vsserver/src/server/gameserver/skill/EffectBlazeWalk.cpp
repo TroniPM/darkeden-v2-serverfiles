@@ -37,12 +37,12 @@ void EffectBlazeWalk::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectBlazeWalk " << "begin begin" << endl;
+	//cout << "EffectBlazeWalk " << "begin begin" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 	affect(pCreature);
 
-	//cout << "EffectBlazeWalk " << "begin end" << endl;
+	//cout << "EffectBlazeWalk " << "begin end" << eos;
 
 	__END_CATCH 
 
@@ -104,8 +104,8 @@ void EffectBlazeWalk::affect(Creature* pCreature)
 	}
 	else setDeadline(0);
 
-//cout << "EffectBlazeWalk " << "begin" << endl;
-	//cout << "EffectBlazeWalk " << "end" << endl;
+//cout << "EffectBlazeWalk " << "begin" << eos;
+	//cout << "EffectBlazeWalk " << "end" << eos;
 
 	__END_CATCH
 }

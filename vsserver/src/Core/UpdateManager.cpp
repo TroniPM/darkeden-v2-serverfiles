@@ -50,7 +50,7 @@ void UpdateManager::load ( const string & filename )
 {
 	__BEGIN_TRY
 
-	ifstream ifile( filename.c_str() , ios::in | ios::binary | ios::nocreate );
+	ifstream ifile( filename.c_str() , ios::in | ios::binary );
 	if ( !ifile ) {
 		StringStream msg;
 		msg << "cannot open " << filename << " with read mode";
@@ -75,7 +75,7 @@ void UpdateManager::load ( const string & filename )
 	
 	}
 
-	cout << "filename = " << filename.c_str() << " num = " << size << endl;
+	cout << "filename = " << filename.c_str() << " num = " << size << eos;
 
 	ifile.close();
 
@@ -91,7 +91,7 @@ void UpdateManager::save ( const string & filename ) const
 {
 	__BEGIN_TRY
 
-	ofstream ofile( filename.c_str() , ios::out | ios::binary | ios::noreplace );
+	ofstream ofile( filename.c_str() , ios::out | ios::binary );
 	if ( !ofile ) {
 		StringStream msg;
 		msg << "cannot open " << filename << " with write mode";
@@ -161,9 +161,9 @@ void UpdateManager::write ( Socket * pSocket ) const
 	//--------------------------------------------------------------------------------
 	WORD nUpdates = m_Updates.size();
 	
-	//cout << "============================================"<< endl;
-	//cout << "업데이트할 항목의 갯수는 얼마 일까요? : " << (int)nUpdates << endl;
-	//cout << "============================================"<< endl;
+	//cout << "============================================"<< eos;
+	//cout << "업데이트할 항목의 갯수는 얼마 일까요? : " << (int)nUpdates << eos;
+	//cout << "============================================"<< eos;
 
 	if ( nUpdates > maxUpdates )
 		throw InvalidProtocolException("too many updates");
@@ -280,7 +280,7 @@ ResourceManager * UpdateManager::getResourceManager ()
 	
 		}//for
 
-//		cout << "Generating Resource Manager\n" << m_pResourceManager->toString() << endl;
+//		cout << "Generating Resource Manager\n" << m_pResourceManager->toString() << eos;
 
 	}//!empty
 

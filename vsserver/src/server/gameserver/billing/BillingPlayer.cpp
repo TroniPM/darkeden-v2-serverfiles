@@ -234,10 +234,10 @@ void BillingPlayer::sendPacket ( Packet * pPacket )
 	pPacket->write( *m_pOutputStream );
 
 	/*
-	cout << endl;
-	cout << "=== BillingPlayer::sendPacket() ===" << endl;
-	cout << pPacket->toString() << endl;
-	cout << "============================" << endl;
+	cout << eos;
+	cout << "=== BillingPlayer::sendPacket() ===" << eos;
+	cout << pPacket->toString() << eos;
+	cout << "============================" << eos;
 	*/
 
 	__END_CATCH
@@ -268,8 +268,8 @@ void BillingPlayer::disconnect ( bool bDisconnected )
 	} 
 	catch ( InvalidProtocolException & t ) 
 	{
-		cerr << "BillingPlayer::disconnect Exception Check!!" << endl;
-		cerr << t.toString() << endl;
+		cerr << "BillingPlayer::disconnect Exception Check!!" << eos;
+		cerr << t.toString() << eos;
 		m_pSocket->close();
 		//throw Error("¾¾¹Ù...");
 	}
@@ -324,7 +324,7 @@ void BillingPlayer::sendPayInit()
 	filelog(LOGFILE_BILLING_PLAYER, "%s", cbPacket.toString().c_str());
 
 #ifdef __COUT_BILLING_SYSTEM__
-	cout << "[send] BillingPlayer::sendPayInit" << endl;
+	cout << "[send] BillingPlayer::sendPayInit" << eos;
 #endif
 
 	__END_CATCH
@@ -339,7 +339,7 @@ void BillingPlayer::sendPayCheck( CommonBillingPacket* pPacket )
 	__BEGIN_TRY
 		
 #ifdef __COUT_BILLING_SYSTEM__
-	cout << "BillingPlayer::sendPayCheck" << endl;
+	cout << "BillingPlayer::sendPayCheck" << eos;
 #endif
 
 	string PlayerID = pPacket->User_ID;
@@ -381,10 +381,10 @@ void BillingPlayer::sendPayCheck( CommonBillingPacket* pPacket )
 	sendPacket( &cbPacket );
 
 	/*
-	cout << "[send] BillingPlayer::sendPayCheck (" << PlayerID.c_str() << ") - " << (int)isPlaying << endl;
+	cout << "[send] BillingPlayer::sendPayCheck (" << PlayerID.c_str() << ") - " << (int)isPlaying << eos;
 
 	cbPacket.setExpire_Date(PlayerID);
-	cout << "[CHECK_EXPIRE_TIME] " << cbPacket.toString().c_str() << endl;
+	cout << "[CHECK_EXPIRE_TIME] " << cbPacket.toString().c_str() << eos;
 	*/
 
 	__END_CATCH
@@ -435,14 +435,14 @@ void BillingPlayer::sendPayLogin( Player* pPlayer )
 		sendPacket( &cbPacket );
 
 	#ifdef __COUT_BILLING_SYSTEM__
-		cout << "[send] BillingPlayer::sendPayLogin (" << pPlayer->getID().c_str() << ") trying[" << requestCount << "]" << endl;
+		cout << "[send] BillingPlayer::sendPayLogin (" << pPlayer->getID().c_str() << ") trying[" << requestCount << "]" << eos;
 	#endif
 	}
 	else
 	{
 		filelog(LOGFILE_BILLING_PLAYER, "ERROR Not GamePlayer(%s)", pPlayer->getID().c_str());
 	#ifdef __COUT_BILLING_SYSTEM__
-		cout << "[ERROR] BillingPlayer::Not GamePlayer (" << pPlayer->getID().c_str() << ")" << endl;
+		cout << "[ERROR] BillingPlayer::Not GamePlayer (" << pPlayer->getID().c_str() << ")" << eos;
 	#endif
 	}
 
@@ -481,14 +481,14 @@ void BillingPlayer::sendPayLogin( Player* pPlayer )
 		sendPacket( &cbPacket );
 
 	#ifdef __COUT_BILLING_SYSTEM__
-		cout << "[send] BillingPlayer::sendPayLoginCheck (" << pPlayer->getID().c_str() << ") trying[" << requestCount << "]" << endl;
+		cout << "[send] BillingPlayer::sendPayLoginCheck (" << pPlayer->getID().c_str() << ") trying[" << requestCount << "]" << eos;
 	#endif
 	}
 	else
 	{
 		filelog(LOGFILE_BILLING_PLAYER, "ERROR Not GamePlayer(%s)", pPlayer->getID().c_str());
 	#ifdef __COUT_BILLING_SYSTEM__
-		cout << "[ERROR] BillingPlayer::Not GamePlayer (" << pPlayer->getID().c_str() << ")" << endl;
+		cout << "[ERROR] BillingPlayer::Not GamePlayer (" << pPlayer->getID().c_str() << ")" << eos;
 	#endif
 	}
 
@@ -527,14 +527,14 @@ void BillingPlayer::sendPayLogout( Player* pPlayer )
 		sendPacket( &cbPacket );
 
 	#ifdef __COUT_BILLING_SYSTEM__
-		cout << "[send] BillingPlayer::sendPayLogout (" << pPlayer->getID().c_str() << ")" << endl;
+		cout << "[send] BillingPlayer::sendPayLogout (" << pPlayer->getID().c_str() << ")" << eos;
 	#endif
 	}
 	else
 	{
 		filelog(LOGFILE_BILLING_PLAYER, "ERROR Not GamePlayer(%s)", pPlayer->getID().c_str());
 	#ifdef __COUT_BILLING_SYSTEM__
-		cout << "[ERROR] BillingPlayer::Not GamePlayer (" << pPlayer->getID().c_str() << ")" << endl;
+		cout << "[ERROR] BillingPlayer::Not GamePlayer (" << pPlayer->getID().c_str() << ")" << eos;
 	#endif
 	}
 

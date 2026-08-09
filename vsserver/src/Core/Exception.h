@@ -119,7 +119,7 @@ private :
 //#define __END_CATCH } catch (Throwable & t) { t.addStack(__PRETTY_FUNCTION__); throw; }
 
 // 메세지 출력 END_CATCH
-//#define __END_CATCH } catch (Throwable & t) { cout << "\nCAUGHT Exception IN END_CATCH MACRO...\n[" << __PRETTY_FUNCTION__ << "]\n>>> " << t.toString() << endl; t.addStack(__PRETTY_FUNCTION__); throw; }
+//#define __END_CATCH } catch (Throwable & t) { cout << "\nCAUGHT Exception IN END_CATCH MACRO...\n[" << __PRETTY_FUNCTION__ << "]\n>>> " << t.toString() << eos; t.addStack(__PRETTY_FUNCTION__); throw; }
 
 
 /*
@@ -151,7 +151,7 @@ private :
 	#define __END_DEBUG ((void)0);
 #elif defined(__LINUX__) || defined(__WIN_CONSOLE__)
 	#define __BEGIN_DEBUG try {
-	#define __END_DEBUG  } catch (Throwable & t) { cout << t.toString() << endl; throw; } catch (exception & e) { cout << e.what() << endl; throw; }
+	#define __END_DEBUG  } catch (Throwable & t) { cout << t.toString() << eos; throw; } catch (exception & e) { cout << e.what() << eos; throw; }
 #elif defined(__MFC__)
 	#define __BEGIN_DEBUG try {
 	#define __END_DEBUG } catch (Throwable & t) { AfxMessageBox(t.toString()); throw; }
@@ -770,6 +770,6 @@ public :
 	};
 
 #define __BEGIN_DEBUG_EX try {
-#define __END_DEBUG_EX  } catch (ProtocolException&) { throw; } catch (Error&) { throw; } catch (Exception & e) { ofstream file("packet_exception.txt", ios::out | ios::app); file << e.toString() << endl; file.close(); cout << e.toString() << endl; } 
+#define __END_DEBUG_EX  } catch (ProtocolException&) { throw; } catch (Error&) { throw; } catch (Exception & e) { ofstream file("packet_exception.txt", ios::out | ios::app); file << e.toString() << eos; file.close(); cout << e.toString() << eos; } 
 
 #endif

@@ -76,7 +76,7 @@ void GCGQuestStatusInfo::write ( SocketOutputStream & oStream )
 
 	BYTE size = m_Infos.size();
 	oStream.write(size);
-	//cout << "Äù½ºÆ® °³¼ö : " << (int)size << endl;
+	//cout << "Äù½ºÆ® °³¼ö : " << (int)size << eos;
 
 	list<QuestStatusInfo*>::const_iterator itr = m_Infos.begin();
 

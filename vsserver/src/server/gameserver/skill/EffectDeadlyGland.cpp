@@ -98,7 +98,7 @@ cout << "여기서 리턴되나? 2"<<endl;
 				if ( pCreature->isPC() )
 				{
 cout << "여기서 리턴되나? 3"<<endl;
-					//cout << pCreature->getName() << "을 RingOfFlare로 " << m_Damage << "만큼의 데미지를 줬습니다." << endl;
+					//cout << pCreature->getName() << "을 RingOfFlare로 " << m_Damage << "만큼의 데미지를 줬습니다." << eos;
 					GCModifyInformation gcMI;
 					::setDamage( pCreature, m_Damage, pCastCreature, SKILL_SUMMON_DEADLY_GLAND, &gcMI, &gcAttackerMI, false );
 
@@ -160,7 +160,7 @@ void EffectDeadlyGland::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectDeadlyGland" << "unaffect BEGIN" << endl;
+	//cout << "EffectDeadlyGland" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isMonster());
@@ -177,7 +177,7 @@ void EffectDeadlyGland::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(getSendEffectClass());
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectDeadlyGland" << "unaffect END" << endl;
+	//cout << "EffectDeadlyGland" << "unaffect END" << eos;
 
 	__END_CATCH
 }

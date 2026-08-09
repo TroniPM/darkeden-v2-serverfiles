@@ -160,7 +160,7 @@ void ConditionFactoryManager::addFactory (ConditionFactory * pFactory)
 	{
 		StringStream msg;
 		msg << "duplicate condition factories, " << pFactory->getConditionName() ;
-		cout << msg.toString() << endl;
+		cout << msg.toString() << eos;
 		throw Error(msg.toString());
 	}
 	
@@ -183,7 +183,7 @@ Condition * ConditionFactoryManager::createCondition (ConditionType_t conditionT
 	{
 		StringStream msg;
 		msg << "condition factory [" << conditionType << "] not exist.";
-		cout << msg.toString() << endl;
+		cout << msg.toString() << eos;
 		throw Error(msg.toString());
 	}
 
@@ -207,7 +207,7 @@ string ConditionFactoryManager::getConditionName (ConditionType_t conditionType)
 	{
 		StringStream msg;
 		msg << "invalid condition type (" << conditionType << ")";
-		cout << msg.toString() << endl;
+		cout << msg.toString() << eos;
 		throw Error(msg.toString());
 	}
 
@@ -241,7 +241,7 @@ ConditionType_t ConditionFactoryManager::getConditionType (const string & condit
 	}
 
 	string msg = "no such condition type : " + conditionname;
-	cout << msg << endl;
+	cout << msg << eos;
 	throw Error(msg);
 
 	__END_CATCH

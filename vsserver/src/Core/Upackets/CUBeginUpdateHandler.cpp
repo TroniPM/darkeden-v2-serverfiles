@@ -46,7 +46,7 @@ void CUBeginUpdateHandler::execute ( CUBeginUpdate * pPacket , Player * pPlayer 
 
 	try {
 
-		//cout << "Client Version : " << pPacket->getVersion() << endl;
+		//cout << "Client Version : " << pPacket->getVersion() << eos;
 
 		//--------------------------------------------------------------------------------
 		// 패치 디렉토리의 하위 디렉토리들의 리스트를 생성한다.
@@ -58,7 +58,7 @@ void CUBeginUpdateHandler::execute ( CUBeginUpdate * pPacket , Player * pPlayer 
 
 		string patchDir = g_pConfig->getProperty("HomeDir") + separator + g_pConfig->getProperty("PatchDir");
 
-		//cout << "patchDir = " << patchDir << endl;
+		//cout << "patchDir = " << patchDir << eos;
 
 		// 패치 디렉토리를 오픈한다.
 		DIR * pDIR = opendir( patchDir.c_str() );
@@ -94,7 +94,7 @@ void CUBeginUpdateHandler::execute ( CUBeginUpdate * pPacket , Player * pPlayer 
 						directories.push_back( dir );
 
 				} else
-					//cout << endl;
+					//cout << eos;
 			}
 			
 		}
@@ -107,7 +107,7 @@ void CUBeginUpdateHandler::execute ( CUBeginUpdate * pPacket , Player * pPlayer 
 
 		// 테스트로 출력해본다.
 		for ( list<string>::iterator itr = directories.begin() ; itr != directories.end() ; itr ++ )
-			//cout << "Newer Version : " << *itr << endl;
+			//cout << "Newer Version : " << *itr << eos;
 
 
 		//--------------------------------------------------------------------------------
@@ -125,7 +125,7 @@ void CUBeginUpdateHandler::execute ( CUBeginUpdate * pPacket , Player * pPlayer 
 			// ex> "/home/vs/reiot/data/patch" + "/" + "v00010" + "/" + "index.dat"
 			string filename = patchDir + separator + *itr + separator + "index.dat";
 
-			//cout << "try to open " << filename << endl;
+			//cout << "try to open " << filename << eos;
 
 			pUpdateManager->load( filename );
 
@@ -133,7 +133,7 @@ void CUBeginUpdateHandler::execute ( CUBeginUpdate * pPacket , Player * pPlayer 
 //			i++;
 		}
 
-		//cout << pUpdateManager->toString() << endl;
+		//cout << pUpdateManager->toString() << eos;
 
 		pUpdateServerPlayer->sendPacket( &ucUpdateList );
 
@@ -157,7 +157,7 @@ void CUBeginUpdateHandler::scan_Dir( const string Directory, CUBeginUpdate* pPac
 
 	DIR * pDIR = opendir( Directory.c_str() );
 	struct dirent * versionDir;
-	//cout << "Open Dir : " << Directory << endl;
+	//cout << "Open Dir : " << Directory << eos;
 
 	while ( ( versionDir = readdir( pDIR ) ) != NULL ) {
 
@@ -165,16 +165,16 @@ void CUBeginUpdateHandler::scan_Dir( const string Directory, CUBeginUpdate* pPac
 
 		if ( versionDir->d_ino != 0  && vName[0] != '.' ) {
 
-			//cout << "versionDir : " << versionDir->d_name<< endl;
+			//cout << "versionDir : " << versionDir->d_name<< eos;
 
 			string DirectoryName = Directory + "/";
 			string SubDirectory = DirectoryName + versionDir->d_name;
 
 			struct stat List;
 			stat( SubDirectory.c_str(), &List );
-			//cout << versionDir->d_name << " " << List.st_size << endl;
+			//cout << versionDir->d_name << " " << List.st_size << eos;
 
-			//cout << "Path : " << SubDirectory << " Path Size : " << List.st_size << endl;
+			//cout << "Path : " << SubDirectory << " Path Size : " << List.st_size << eos;
 
 			if( S_ISDIR( List.st_mode ) ) {
 
@@ -190,14 +190,14 @@ void CUBeginUpdateHandler::scan_Dir( const string Directory, CUBeginUpdate* pPac
 
 				if ( version == ClientVersion ) {
 
-					//cout << versionDir->d_name << " is Directory " << endl;
+					//cout << versionDir->d_name << " is Directory " << eos;
 
 
 					string SubDirectory = DirectoryName + versionDir->d_name;
 
-					//cout << "SubDirectory : " << SubDirectory << endl;
+					//cout << "SubDirectory : " << SubDirectory << eos;
 					scan_Dir( SubDirectory, pPacket, pUpdateManager, bHttpPatch, bUpdaterPatch );
-//					//cout << get_current_dir_name() << endl;
+//					//cout << get_current_dir_name() << eos;
 				}
 
 			} else {
@@ -206,7 +206,7 @@ void CUBeginUpdateHandler::scan_Dir( const string Directory, CUBeginUpdate* pPac
 
 				//Version_t PatchVersion = atoi( tempversion.c_str() );
 
-				//cout << "It is correct file" << endl;
+				//cout << "It is correct file" << eos;
 
 				StringStream msg1;
 				StringStream msg2;
@@ -220,8 +220,8 @@ void CUBeginUpdateHandler::scan_Dir( const string Directory, CUBeginUpdate* pPac
 				}
 
 
-				//cout << " msg1 :" << msg1.toString() << endl;
-				//cout << " msg2 :" << msg2.toString() << endl;
+				//cout << " msg1 :" << msg1.toString() << eos;
+				//cout << " msg2 :" << msg2.toString() << eos;
 
 				Update * pUpdate = new Update();
 
@@ -406,7 +406,7 @@ void CUBeginUpdateHandler::execute ( CUBeginUpdate * pPacket , Player * pPlayer 
 		}
 	}
 
-	//cout << pUpdateManager->toString() << endl;
+	//cout << pUpdateManager->toString() << eos;
 	pUpdateServerPlayer->sendPacket( &ucUpdateList );
 	pUpdateServerPlayer->setPlayerStatus( USPS_AFTER_SENDING_UC_UPDATE_LIST );
 

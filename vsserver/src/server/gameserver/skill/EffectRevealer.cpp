@@ -52,7 +52,7 @@ void EffectRevealer::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectRevealer " << "unaffect BEGIN" << endl;
+	//cout << "EffectRevealer " << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isSlayer());
@@ -73,7 +73,7 @@ void EffectRevealer::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_REVEALER);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectRevealer " << "unaffect END" << endl;
+	//cout << "EffectRevealer " << "unaffect END" << eos;
 
 	__END_CATCH
 }

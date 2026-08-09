@@ -48,14 +48,14 @@ bool EffectMeteoBlaze::affectCreature(Creature* pTargetCreature, bool bAffectByM
 {
 	__BEGIN_TRY
 
-	//cout << "EffectMeteoBlaze " << "affectCreature Begin " << endl;
+	//cout << "EffectMeteoBlaze " << "affectCreature Begin " << eos;
 
 	Assert(pTargetCreature != NULL);
 
 	// 상대에게 이미 poison 이펙트가 걸려져 있는 경우에는 걸리지 않는다.
 	if (pTargetCreature->isFlag(Effect::EFFECT_CLASS_METEO_BLAZE_TO_CREATURE))
 	{
-		//cout << "EffectMeteoBlaze " << "affectCreature End(Already Effected) " << endl;
+		//cout << "EffectMeteoBlaze " << "affectCreature End(Already Effected) " << eos;
 		return false;
 	}
 
@@ -70,7 +70,7 @@ bool EffectMeteoBlaze::affectCreature(Creature* pTargetCreature, bool bAffectByM
 
 	Creature* pAttacker = pZone->getCreature( m_UserObjectID );
 
-	//cout << "EffectMeteoBlaze(Damage:" << DropDamage << ") Affected" << endl;
+	//cout << "EffectMeteoBlaze(Damage:" << DropDamage << ") Affected" << eos;
 	if (m_Damage > 0)
 	{
 		// 포이즌 이펙트를 생성해서, 타겟 크리쳐에 붙이고, 플래그를 켜준다.
@@ -109,7 +109,7 @@ bool EffectMeteoBlaze::affectCreature(Creature* pTargetCreature, bool bAffectByM
 		pZone->broadcastPacket(pTargetCreature->getX(), pTargetCreature->getY(), &gcAddEffect);
 	}
 
-	//cout << "EffectMeteoBlaze " << "affectCreature End " << endl;
+	//cout << "EffectMeteoBlaze " << "affectCreature End " << eos;
 
 	return true;
 

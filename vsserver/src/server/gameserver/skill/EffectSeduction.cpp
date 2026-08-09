@@ -54,7 +54,7 @@ void EffectSeduction::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectSeduction" << "unaffect BEGIN" << endl;
+	//cout << "EffectSeduction" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -107,7 +107,7 @@ void EffectSeduction::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_SEDUCTION);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectSeduction" << "unaffect END" << endl;
+	//cout << "EffectSeduction" << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

@@ -130,7 +130,7 @@ void EffectVampireRelic::affect(Item* pItem)
 		msg << pVampire->getName() << " 님이 ";
 	}
 
-	msg << " 뱀파이어 성물을 가지고 있습니다." << endl;
+	msg << " 뱀파이어 성물을 가지고 있습니다." << eos;
 
 	GCSystemMessage gcSystemMessage;
 	gcSystemMessage.setMessage(msg.toString());
@@ -181,7 +181,7 @@ void EffectVampireRelic::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectVampireRelic" << "unaffect BEGIN" << endl;
+	//cout << "EffectVampireRelic" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -197,7 +197,7 @@ void EffectVampireRelic::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_VAMPIRE_RELIC);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectVampireRelic" << "unaffect END" << endl;
+	//cout << "EffectVampireRelic" << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH
@@ -210,7 +210,7 @@ void EffectVampireRelic::unaffect(Item* pItem)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectVampireRelic" << "unaffect BEGIN" << endl;
+	//cout << "EffectVampireRelic" << "unaffect BEGIN" << eos;
 
 	Assert(pItem != NULL);
 
@@ -229,7 +229,7 @@ void EffectVampireRelic::unaffect(Item* pItem)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_VAMPIRE_RELIC);
 	pZone->broadcastPacket(pCorpse->getX(), pCorpse->getY(), &gcRemoveEffect);
 
-	//cout << "EffectVampireRelic" << "unaffect END" << endl;
+	//cout << "EffectVampireRelic" << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

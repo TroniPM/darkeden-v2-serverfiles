@@ -54,7 +54,7 @@ void GameServerInfoManager::init ()
 	load();
 
 	// just print to cout
-	cout << toString() << endl;
+	cout << toString() << eos;
 
 	__END_CATCH
 }
@@ -88,7 +88,7 @@ void GameServerInfoManager::load ()
 
 	m_pGameServerInfos = new HashMapGameServerInfo[m_MaxServerGroupID];
 
-	cout << "MAX SERVER GROUP = " << m_MaxServerGroupID << endl;
+	cout << "MAX SERVER GROUP = " << m_MaxServerGroupID << eos;
 
 	BEGIN_DB
 	{

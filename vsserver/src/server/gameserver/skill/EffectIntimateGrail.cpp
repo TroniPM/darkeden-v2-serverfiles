@@ -55,12 +55,12 @@ void EffectIntimateGrail::unaffect()
 {
 	__BEGIN_TRY	
 
-	//cout << "EffectIntimateGrail" << "unaffect BEGIN" << endl;
+	//cout << "EffectIntimateGrail" << "unaffect BEGIN" << eos;
 
     Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 	unaffect(pCreature);
 
-	//cout << "EffectIntimateGrail" << "unaffect END" << endl;
+	//cout << "EffectIntimateGrail" << "unaffect END" << eos;
 
 	__END_CATCH
 }
@@ -72,7 +72,7 @@ void EffectIntimateGrail::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectIntimateGrail" << "unaffect BEGIN" << endl;
+	//cout << "EffectIntimateGrail" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -94,7 +94,7 @@ void EffectIntimateGrail::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_INTIMATE_GRAIL);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectIntimateGrail" << "unaffect END" << endl;
+	//cout << "EffectIntimateGrail" << "unaffect END" << eos;
 
 	__END_CATCH
 }

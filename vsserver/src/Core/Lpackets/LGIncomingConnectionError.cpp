@@ -103,7 +103,7 @@ void LGIncomingConnectionError::execute ( Player * pPlayer )
 {
 	__BEGIN_TRY
 		
-	cout << "LGIncomingConnectionError::execute() called." << endl;
+	cout << "LGIncomingConnectionError::execute() called." << eos;
 
 	LGIncomingConnectionErrorHandler::execute( this );
 		

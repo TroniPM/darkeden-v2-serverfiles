@@ -358,7 +358,7 @@ Action * ActionFactoryManager::createAction (ActionType_t actionType) const
 	{
 		StringStream msg;
 		msg << "action factory [" << actionType << "] not exist.";
-		cout << msg.toString() << endl;
+		cout << msg.toString() << eos;
 		throw Error(msg.toString());
 	}
 
@@ -382,7 +382,7 @@ string ActionFactoryManager::getActionName (ActionType_t actionType) const
 	{
 		StringStream msg;
 		msg << "invalid action type (" << actionType << ")";
-		cout << msg.toString() << endl;
+		cout << msg.toString() << eos;
 		throw Error(msg.toString());
 	}
 
@@ -401,7 +401,7 @@ ActionType_t ActionFactoryManager::getActionType (const string & actionname) con
 	__BEGIN_TRY
 
 #ifdef __OUTPUT_INIT__
-	cout << "Action[" << actionname << "]..." << endl;
+	cout << "Action[" << actionname << "]..." << eos;
 #endif
 
 	for (int i = 0 ; i < m_Size ; i ++)
@@ -416,7 +416,7 @@ ActionType_t ActionFactoryManager::getActionType (const string & actionname) con
 	}
 
 	string msg = "no such action type : " + actionname;
-	cout << msg << endl;
+	cout << msg << eos;
 	throw Error(msg);
 
 	__END_CATCH

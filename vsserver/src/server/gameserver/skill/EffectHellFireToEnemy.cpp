@@ -95,7 +95,7 @@ void EffectHellFireToEnemy::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectHellFireToEnemy" << "unaffect BEGIN" << endl;
+	//cout << "EffectHellFireToEnemy" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 //	Assert(pCreature->isOusters());
@@ -115,7 +115,7 @@ void EffectHellFireToEnemy::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_HELLFIRE_TO_ENEMY);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectHellFireToEnemy" << "unaffect END" << endl;
+	//cout << "EffectHellFireToEnemy" << "unaffect END" << eos;
 
 	__END_CATCH
 }

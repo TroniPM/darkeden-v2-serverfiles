@@ -34,7 +34,7 @@ bool ConditionEnterHolyLand::isSatisfied (Creature * pCreature1 , Creature * pCr
 	Assert(pCreature2 != NULL);
 	Assert(pCreature2->isPC());
 
-	//cout << "Condition: EnterHolyLand" << endl;
+	//cout << "Condition: EnterHolyLand" << eos;
 
 	bool bPayPlay = false;
 

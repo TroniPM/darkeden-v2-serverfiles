@@ -119,7 +119,7 @@ void EventTransport::activate ()
 	catch (NoSuchElementException& t) 
 	{
 		filelog("eventTransport.txt", "%s", t.toString().c_str());
-		cerr << "EventTransport::activate() : NoSuchElementException" << endl;
+		cerr << "EventTransport::activate() : NoSuchElementException" << eos;
 		throw Error("존에 플레이어가 존재하지 않습니다.");
 	}
 

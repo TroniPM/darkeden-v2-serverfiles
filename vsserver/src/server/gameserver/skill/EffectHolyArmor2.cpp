@@ -34,12 +34,12 @@ void EffectHolyArmor2::unaffect()
 {
     __BEGIN_TRY
 
-	//cout << "EffectHolyArmor2 " << "unaffect BEGIN" << endl;
+	//cout << "EffectHolyArmor2 " << "unaffect BEGIN" << eos;
 
     Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
     unaffect(pCreature);
 
-	//cout << "EffectHolyArmor2 " << "unaffect END" << endl;
+	//cout << "EffectHolyArmor2 " << "unaffect END" << eos;
 
     __END_CATCH
 }
@@ -50,7 +50,7 @@ void EffectHolyArmor2::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectHolyArmor2 " << "unaffect BEGIN" << endl;
+	//cout << "EffectHolyArmor2 " << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isSlayer());
@@ -74,7 +74,7 @@ void EffectHolyArmor2::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_HOLY_ARMOR2);
 	pZone->broadcastPacket(pSlayer->getX(), pSlayer->getY(), &gcRemoveEffect);
 
-	//cout << "EffectHolyArmor2 " << "unaffect END" << endl;
+	//cout << "EffectHolyArmor2 " << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

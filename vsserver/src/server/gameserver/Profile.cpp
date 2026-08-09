@@ -239,17 +239,17 @@ void ProfileSampleSet::endProfile(const string& name)
 
 void ProfileSampleSet::outputProfile(bool bOutputOnlyRootNode, bool bOutputThreadID)
 {
-	cout << "==================================================" << endl;
+	cout << "==================================================" << eos;
 
 	if (bOutputThreadID)
-		cout << "TID:" << Thread::self() << endl;
+		cout << "TID:" << Thread::self() << eos;
 
 	cout << setw(15) << " Average       ";
 	cout << setw(15) << " Total         ";
 	cout << setw(15) << " CallCount     ";
 	cout << setw(15) << " Child         ";
 	cout << setw(15) << " Name          ";
-	cout << endl;
+	cout << eos;
 
 	for (int i=0; i<MAX_PROFILE_SAMPLES; i++)
 	{
@@ -269,7 +269,7 @@ void ProfileSampleSet::outputProfile(bool bOutputOnlyRootNode, bool bOutputThrea
 			}
 
 			cout << m_ProfileSamples[i].getName();
-			cout << endl;
+			cout << eos;
 		}
 
 		// 루트 노드만 찍는다는 것은 배열의 제일 앞부분에 존재하는
@@ -281,7 +281,7 @@ void ProfileSampleSet::outputProfile(bool bOutputOnlyRootNode, bool bOutputThrea
 		}
 	}
 
-	cout << "==================================================" << endl;
+	cout << "==================================================" << eos;
 }
 
 void ProfileSampleSet::outputProfileToFile(const char* filename, bool bOutputOnlyRootNode, bool bOutputThreadID, GMServerInfo* pServerInfo)
@@ -291,23 +291,23 @@ void ProfileSampleSet::outputProfileToFile(const char* filename, bool bOutputOnl
 	ofstream file(real_filename.c_str(), ios::out | ios::app);
 	if (!file) return;
 
-	file << "==================================================" << endl;
+	file << "==================================================" << eos;
 
-	file << VSDateTime::currentDateTime().toString() << endl;
+	file << VSDateTime::currentDateTime().toString() << eos;
 
 	if (pServerInfo!=NULL)
-		file << pServerInfo->toString().c_str() << endl;
-	file << "--------------------------------------------------" << endl;
+		file << pServerInfo->toString().c_str() << eos;
+	file << "--------------------------------------------------" << eos;
 
 	if (bOutputThreadID)
-		file << "TID:" << Thread::self() << endl;
+		file << "TID:" << Thread::self() << eos;
 
 	file << setw(15) << " Average       ";
 	file << setw(15) << " Total         ";
 	file << setw(15) << " CallCount     ";
 	file << setw(15) << " Child         ";
 	file << setw(15) << " Name          ";
-	file << endl;
+	file << eos;
 
 	for (int i=0; i<MAX_PROFILE_SAMPLES; i++)
 	{
@@ -327,7 +327,7 @@ void ProfileSampleSet::outputProfileToFile(const char* filename, bool bOutputOnl
 			}
 
 			file << m_ProfileSamples[i].getName();
-			file << endl;
+			file << eos;
 		}
 
 		// 루트 노드만 찍는다는 것은 배열의 제일 앞부분에 존재하는
@@ -339,7 +339,7 @@ void ProfileSampleSet::outputProfileToFile(const char* filename, bool bOutputOnl
 		}
 	}
 
-	file << "==================================================" << endl;
+	file << "==================================================" << eos;
 
 	file.close();
 }

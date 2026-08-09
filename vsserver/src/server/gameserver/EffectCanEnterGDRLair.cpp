@@ -214,9 +214,9 @@ void EffectCanEnterGDRLairLoader::load (Creature* pCreature)
 			Timeval currentTime;
 			getCurrentTime(currentTime);
 
-			cout << " 시간 측정G : " << currentTime.tv_sec << endl;
-			cout << " 시간 측정G2 : " << DayTime << endl;
-			cout << " 시간 측정G3 : " << DayTime-currentTime.tv_sec << endl;
+			cout << " 시간 측정G : " << currentTime.tv_sec << eos;
+			cout << " 시간 측정G2 : " << DayTime << eos;
+			cout << " 시간 측정G3 : " << DayTime-currentTime.tv_sec << eos;
 
 			EffectCanEnterGDRLair* pEffectCanEnterGDRLair = new EffectCanEnterGDRLair(pCreature);
 

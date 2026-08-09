@@ -185,9 +185,9 @@ void EffectCureCriticalWounds::affect(Creature* pCreature)
 		}
 	}
 
-	//cout << "EffectCureCriticalWounds " << "affect BEGIN" << endl;
+	//cout << "EffectCureCriticalWounds " << "affect BEGIN" << eos;
 	setNextTime(m_Delay);
-	//cout << "EffectCureCriticalWounds " << "affect END" << endl;
+	//cout << "EffectCureCriticalWounds " << "affect END" << eos;
 
 	__END_CATCH
 }

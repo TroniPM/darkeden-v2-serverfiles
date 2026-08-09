@@ -186,11 +186,11 @@ void CGConnectHandler::execute (CGConnect* pPacket , Player* pPlayer)
 	catch (InvalidProtocolException & ipe) 
 	{
 		FILELOG_INCOMING_CONNECTION("connectionError.log", "%s: %s", ipe.toString().c_str(), pGamePlayer->getSocket()->getHost().c_str());
-		cout << endl
-			 << "+-----------------------+" << endl
-			 << "| Level 2 Access Denied |" << endl
-			 << "+-----------------------+" << endl
-			 << endl;
+		cout << eos
+			 << "+-----------------------+" << eos
+			 << "| Level 2 Access Denied |" << eos
+			 << "+-----------------------+" << eos
+			 << eos;
 
 		GCDisconnect gcDisconnect;
 		gcDisconnect.setMessage(ipe.toString());
@@ -423,7 +423,7 @@ void CGConnectHandler::execute (CGConnect* pPacket , Player* pPlayer)
 			if (pSlayer->getName() != pPacket->getPCName())
 			{
 				cout << "Different Name : " << pSlayer->getName().c_str()
-						<< ", " << pPacket->getPCName().c_str() << endl;
+						<< ", " << pPacket->getPCName().c_str() << eos;
 
 				Assert(pSlayer->getName() == pPacket->getPCName());
 			}
@@ -705,7 +705,7 @@ void CGConnectHandler::execute (CGConnect* pPacket , Player* pPlayer)
 #ifdef __TEST_SERVER__
 		EventAuth* pAuth = new EventAuth( pGamePlayer );
 		pGamePlayer->addEvent( pAuth );
-		cout << "엔프로텍트 인증 타이머 붙입니다 : " << pGamePlayer->getID() << endl;
+		cout << "엔프로텍트 인증 타이머 붙입니다 : " << pGamePlayer->getID() << eos;
 #endif
 	}
 
@@ -1101,7 +1101,7 @@ isAdultByBirthdayDate(const string& birthday)
     if ( Timec.tm_mday < 10 ) AdultSSN << "0";
     AdultSSN << Timec.tm_mday;
 
-    cout << "Birthday = " << birthday.c_str() << " ADULTSSN = " << AdultSSN.toString().c_str() << endl;
+    cout << "Birthday = " << birthday.c_str() << " ADULTSSN = " << AdultSSN.toString().c_str() << eos;
 
     int year  = atoi( birthday.substr(0,4).c_str() );
     int month = atoi( birthday.substr(5,2).c_str() );
@@ -1109,27 +1109,27 @@ isAdultByBirthdayDate(const string& birthday)
 
     if ( Timec.tm_year - 18 + 1900 > year )
     {
-        cout << "어른" << endl;
+        cout << "어른" << eos;
         return true;
     }
     else if ( Timec.tm_year - 18 + 1900 == year )
     {
         if ( Timec.tm_mon + 1 > month )
         {
-            cout << "어른" << endl;
+            cout << "어른" << eos;
             return true;
         }
         else if ( Timec.tm_mon + 1 == month )
         {
             if ( Timec.tm_mday >= day )
             {
-                cout << "어른" << endl;
+                cout << "어른" << eos;
                 return true;
             }
         }
     }
 
-    cout << "애들" << endl;
+    cout << "애들" << eos;
     return false;
 }
 

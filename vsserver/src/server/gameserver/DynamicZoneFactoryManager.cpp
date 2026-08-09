@@ -139,7 +139,7 @@ void DynamicZoneFactoryManager::addFactory( DynamicZoneFactory * pFactory )
 	{
 		StringStream msg;
 		msg << "duplicate DynamicZone factories, " << pFactory->getDynamicZoneName() ;
-		cout << msg.toString() << endl;
+		cout << msg.toString() << eos;
 		Assert( false );
 	}
 	
@@ -157,7 +157,7 @@ DynamicZone* DynamicZoneFactoryManager::createDynamicZone( int dynamicZoneType )
 	{
 		StringStream msg;
 		msg << "dynamiczone factory [" << dynamicZoneType << "] not exist.";
-		cout << msg.toString() << endl;
+		cout << msg.toString() << eos;
 		Assert( false );
 	}
 
@@ -176,7 +176,7 @@ string DynamicZoneFactoryManager::getDynamicZoneName( int dynamicZoneType ) cons
 	{
 		StringStream msg;
 		msg << "invalid dynamiczone type (" << dynamicZoneType << ")";
-		cout << msg.toString() << endl;
+		cout << msg.toString() << eos;
 		Assert( false );
 	}
 
@@ -201,7 +201,7 @@ int DynamicZoneFactoryManager::getDynamicZoneType( const string& dynamicZoneName
 	}
 
 	string msg = "no such dynamiczone type : " + dynamicZoneName;
-	cout << msg << endl;
+	cout << msg << eos;
 	Assert( false );
 
 	return DYNAMIC_ZONE_MAX;

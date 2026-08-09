@@ -160,7 +160,7 @@ Inventory::~Inventory()
 	} 
 	catch (Throwable & t) 
 	{ 
-		//cerr << t.toString() << endl; 
+		//cerr << t.toString() << eos; 
 	}
 	
 	__END_CATCH
@@ -400,7 +400,7 @@ bool Inventory::CheckaddItem(CoordInven_t X, CoordInven_t Y, Item* pItem, Item* 
 
 	if (pItem == NULL)
 	{
-		//cerr << "Inventory::addItem() : 아이템 포인터가 널입니다." << endl;
+		//cerr << "Inventory::addItem() : 아이템 포인터가 널입니다." << eos;
 		return false;
 	}
 	
@@ -429,7 +429,7 @@ bool Inventory::addItem(CoordInven_t X, CoordInven_t Y, Item* pItem)
 
 	if (pItem == NULL)
 	{
-		//cerr << "Inventory::addItem() : 아이템 포인터가 널입니다." << endl;
+		//cerr << "Inventory::addItem() : 아이템 포인터가 널입니다." << eos;
 		return false;
 	}
 	
@@ -473,8 +473,8 @@ Item* Inventory::addItemEx(CoordInven_t X, CoordInven_t Y, Item* pItem)
 
 	if (!canAddingEx(X, Y, pItem)) 
 	{
-		//cerr << "Inventory::addItemEx() : canAddingExCheck failed!!!" << endl;
-		//cerr << toString() << endl;
+		//cerr << "Inventory::addItemEx() : canAddingExCheck failed!!!" << eos;
+		//cerr << toString() << eos;
 		throw Error("Inventory::addItemEx() : 아이템을 더할 수 없습니다!");
 	}
 
@@ -630,7 +630,7 @@ bool Inventory::getEmptySlot(VolumeWidth_t ItemWidth, VolumeHeight_t ItemHeight,
 				p.x = x; 
 				p.y = y;
 
-				//cout << (int)x << ", " << (int)y << " ]" << endl;
+				//cout << (int)x << ", " << (int)y << " ]" << eos;
 				return true;
 			}
 		}
@@ -1091,15 +1091,15 @@ bool Inventory::SerchItemCalls(Item::ItemClass IClass, ItemType_t ItemType, Item
 	throw()
 {
 	__BEGIN_TRY
-			cout << " 검색 시작"<< endl;
+			cout << " 검색 시작"<< eos;
 	for (int y=0; y<m_Height; y++)
 	{
 		for (int x=0; x<m_Width; x++)
 		{
-			cout << " 인벤 정렬중 "<< endl;
+			cout << " 인벤 정렬중 "<< eos;
 			InventorySlot& slot  = getInventorySlot(x, y);
 			Item*          pItem = slot.getItem();
-			cout << " 인벤 아이템 검색"<< endl;
+			cout << " 인벤 아이템 검색"<< eos;
 			if (pItem != NULL && 
 				pItem->getItemClass() == IClass && pItem->getItemType() == ItemType && pItem->getNum() >= num) // 해당 아이템 조건이 있을경우 리턴 '-'
 			{
@@ -1446,7 +1446,7 @@ bool Inventory::hasEnoughStar(const XMAS_STAR& star)
 {
 	__BEGIN_TRY
 
-	//cout << "필요한 별의 숫자 : " << star.amount << endl;
+	//cout << "필요한 별의 숫자 : " << star.amount << eos;
 	
 	int amount[STAR_COLOR_MAX];
 	memset(amount, 0, sizeof(int)*STAR_COLOR_MAX);
@@ -1464,7 +1464,7 @@ bool Inventory::hasEnoughStar(const XMAS_STAR& star)
 			if (pItem != NULL && pItem->getItemClass() == Item::ITEM_CLASS_EVENT_STAR)
 			{
 				int ItemNum =  pItem->getNum();
-				//cout << pItem->getItemType() << " " << ItemNum << endl;
+				//cout << pItem->getItemType() << " " << ItemNum << eos;
 				switch (pItem->getItemType())
 				{
 					case 0: amount[STAR_COLOR_BLACK] += ItemNum; break;
@@ -1480,8 +1480,8 @@ bool Inventory::hasEnoughStar(const XMAS_STAR& star)
 		}
 	}
 
-	//cout << star.color << endl;
-	//cout << "가지고 있는 공의 숫자: " << amount[star.color] << endl;
+	//cout << star.color << eos;
+	//cout << "가지고 있는 공의 숫자: " << amount[star.color] << eos;
 
 	if (amount[star.color] >= star.amount) return true;
 
@@ -1510,7 +1510,7 @@ void Inventory::decreaseStar(const XMAS_STAR& star)
 			if (pItem != NULL && pItem->getItemClass() == Item::ITEM_CLASS_EVENT_STAR)
 			{
 				ItemType_t IType = pItem->getItemType();
-				cout << IType << " " << star.color << endl;
+				cout << IType << " " << star.color << eos;
 
 				if ((IType == 0 && star.color == STAR_COLOR_BLACK) ||
 					(IType == 1 && star.color == STAR_COLOR_RED)   ||

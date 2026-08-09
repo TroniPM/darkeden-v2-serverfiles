@@ -40,7 +40,7 @@ void EffectIceHorizon::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectIceHorizon" << "affect BEGIN" << endl;
+	//cout << "EffectIceHorizon" << "affect BEGIN" << eos;
 	
 	Assert(m_pZone != NULL);
 
@@ -115,7 +115,7 @@ void EffectIceHorizon::affect()
 	
 	setNextTime(m_Tick);
 
-	//cout << "EffectIceHorizon" << "affect END" << endl;
+	//cout << "EffectIceHorizon" << "affect END" << eos;
 
 	__END_CATCH 
 }
@@ -145,12 +145,12 @@ void EffectIceHorizon::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectIceHorizon" << "unaffect BEGIN" << endl;
+	//cout << "EffectIceHorizon" << "unaffect BEGIN" << eos;
 
     Tile& tile = m_pZone->getTile(m_X, m_Y);
 	tile.deleteEffect(m_ObjectID);
 
-	//cout << "EffectIceHorizon" << "unaffect END" << endl;
+	//cout << "EffectIceHorizon" << "unaffect END" << eos;
 
 	__END_CATCH
 }

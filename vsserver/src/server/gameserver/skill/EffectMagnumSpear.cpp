@@ -91,12 +91,12 @@ void EffectMagnumSpear::unaffect()
 {
     __BEGIN_TRY
 
-	//cout << "EffectMagnumSpear " << "unaffect BEGIN" << endl;
+	//cout << "EffectMagnumSpear " << "unaffect BEGIN" << eos;
 
     Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
     unaffect(pCreature);
 
-	//cout << "EffectMagnumSpear " << "unaffect END" << endl;
+	//cout << "EffectMagnumSpear " << "unaffect END" << eos;
 
     __END_CATCH
 }
@@ -107,7 +107,7 @@ void EffectMagnumSpear::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectMagnumSpear " << "unaffect BEGIN" << endl;
+	//cout << "EffectMagnumSpear " << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -122,7 +122,7 @@ void EffectMagnumSpear::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_MAGNUM_SPEAR);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectMagnumSpear " << "unaffect END" << endl;
+	//cout << "EffectMagnumSpear " << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

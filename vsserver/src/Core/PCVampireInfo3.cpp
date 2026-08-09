@@ -117,7 +117,7 @@ void PCVampireInfo3::write ( SocketOutputStream & oStream ) const
 	oStream.write( m_BatType );
 	oStream.write( m_WingItemType );
 
-	//cout << "PCVampireInfo3: Name=" << m_Name.c_str() << ", CoatType=" << (int)coatType << endl;
+	//cout << "PCVampireInfo3: Name=" << m_Name.c_str() << ", CoatType=" << (int)coatType << eos;
 
 	// write colors
 	for ( uint i = 0 ; i < VAMPIRE_COLOR_MAX ; i ++ )
@@ -143,7 +143,7 @@ void PCVampireInfo3::write ( SocketOutputStream & oStream ) const
 	oStream.write( m_Rank );
 	oStream.write( m_AdvancementLevel );
 
-	//cout << "½ÂÁ÷ ·¹º§ : " << (int)m_AdvancementLevel << endl;
+	//cout << "½ÂÁ÷ ·¹º§ : " << (int)m_AdvancementLevel << eos;
 
 	__END_CATCH
 }

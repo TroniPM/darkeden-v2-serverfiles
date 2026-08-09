@@ -108,7 +108,7 @@ void EffectDarkness::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectDarkness " << "unaffect BEGIN" << endl;
+	//cout << "EffectDarkness " << "unaffect BEGIN" << eos;
 
 	Tile & tile = m_pZone->getTile(m_X, m_Y);
 
@@ -124,7 +124,7 @@ void EffectDarkness::unaffect()
 
 	tile.deleteEffect(m_ObjectID);
 
-	//cout << "EffectDarkness " << "unaffect END" << endl;
+	//cout << "EffectDarkness " << "unaffect END" << eos;
 
 	__END_CATCH
 }

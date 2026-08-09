@@ -19,7 +19,7 @@
 
 void memoryError()
 {
-	cout << "CRITICAL ERROR! NOT ENOUGH MEMORY!" << endl;
+	cout << "CRITICAL ERROR! NOT ENOUGH MEMORY!" << eos;
 	exit(0);
 }
 
@@ -34,7 +34,7 @@ int main ( int argc , char * argv[] )
 	set_new_handler(memoryError);
 
 	if ( argc < 3 ) {
-		cout << "Usage : sharedserver -f 환경파일" << endl;
+		cout << "Usage : sharedserver -f 환경파일" << eos;
 		exit(1);
 	}
 
@@ -59,10 +59,10 @@ int main ( int argc , char * argv[] )
 		g_pConfig = new Properties();
 		g_pConfig->load(Argv[2]);
 		
-		cout << g_pConfig->toString() << endl;
+		cout << g_pConfig->toString() << eos;
 
 	} catch ( Error & e ) {
-		cout << e.toString() << endl;
+		cout << e.toString() << eos;
 	}
 
 	// 로그 매니저를 생성하고 초기화한후 활성화시킨다.
@@ -82,7 +82,7 @@ int main ( int argc , char * argv[] )
 	} 
 	catch ( Throwable & t ) 
 	{
-		cout << t.toString() << endl;
+		cout << t.toString() << eos;
 	}
 
 	//
@@ -108,7 +108,7 @@ int main ( int argc , char * argv[] )
 	{
 		// 로그가 이뤄지기 전에 서버가 끝날 경우를 대비해서
 		ofstream ofile("../log/instant.log",ios::out);
-		ofile << e.toString() << endl;
+		ofile << e.toString() << eos;
 		ofile.close();
 
 		// 하위에서 캐치되지 않은 예외 또는 에러가 발생했다는 뜻이다.
@@ -116,7 +116,7 @@ int main ( int argc , char * argv[] )
 		log(LOG_SHAREDSERVER_ERROR, "", "", e.toString());
 
 		// 표준 출력으로도 출력해준다.
-		cout << e.toString() << endl;
+		cout << e.toString() << eos;
 
 		// 로그인 서버를 중단시킨다.
 		// 이 내부에서 하위 매니저 역시 중단되어야 한다.

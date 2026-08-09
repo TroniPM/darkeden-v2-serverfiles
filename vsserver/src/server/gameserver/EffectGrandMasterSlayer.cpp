@@ -104,7 +104,7 @@ void EffectGrandMasterSlayer::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectGrandMasterSlayer" << "unaffect BEGIN" << endl;
+	//cout << "EffectGrandMasterSlayer" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -120,7 +120,7 @@ void EffectGrandMasterSlayer::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_GRAND_MASTER_SLAYER);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectGrandMasterSlayer" << "unaffect END" << endl;
+	//cout << "EffectGrandMasterSlayer" << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

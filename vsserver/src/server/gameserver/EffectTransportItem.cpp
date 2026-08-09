@@ -81,7 +81,7 @@ void EffectTransportItem::unaffect (Zone* pZone , ZoneCoord_t x , ZoneCoord_t y 
 {
 	__BEGIN_TRY
 
-	//cout << "EffectTransportItem unaffect(pZone,x,y,pTarget)" << endl;
+	//cout << "EffectTransportItem unaffect(pZone,x,y,pTarget)" << eos;
 
 	// pTargetZone, x, y
 	// m_pZone, m_StartX, m_StartY
@@ -122,16 +122,16 @@ void EffectTransportItem::unaffect (Zone* pZone , ZoneCoord_t x , ZoneCoord_t y 
 					if (pZone->getZoneGroup()==m_pTargetZone->getZoneGroup())
 					//if (pZone==m_pTargetZone)
 					{
-						//cout << "Zone->addItem" << endl;
+						//cout << "Zone->addItem" << eos;
 						m_pTargetZone->addItem(pTempItem, x, y);
 					}
 					else
 					{
-						//cout << "Zone->addItemDelayed" << endl;
+						//cout << "Zone->addItemDelayed" << eos;
 						m_pTargetZone->addItemDelayed(pTempItem, x, y);
 					}
 
-					//cout << "addItemDelayed OK" << endl;
+					//cout << "addItemDelayed OK" << eos;
 				}
 			}
 		}
@@ -154,7 +154,7 @@ void EffectTransportItem::unaffect ()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectTransportItem unaffect" << endl;
+	//cout << "EffectTransportItem unaffect" << eos;
 
 	__END_CATCH
 }

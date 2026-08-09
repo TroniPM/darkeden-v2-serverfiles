@@ -204,7 +204,7 @@ void TradeManager::removeTradeInfo(const string & Name)
 	hash_map<string, TradeInfo*>::iterator itr = m_InfoMap.find(Name);
 	if (itr == m_InfoMap.end())
 	{
-		cerr << "TradeManager::removeTradeInfo() : NoSuchElementException" << endl;
+		cerr << "TradeManager::removeTradeInfo() : NoSuchElementException" << eos;
 		// 의미 없는??같아서 무시한다.
 		// by sigi. 2002.8.31
 		//throw NoSuchElementException();

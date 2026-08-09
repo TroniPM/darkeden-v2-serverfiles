@@ -113,7 +113,7 @@ Item* MonsterItemDrop::getItem()
 	
 	int RandomDrop = Random(getItemOptionGroup(),getItemOptionGroup2());
 	int OptionAdd = g_pMonsterItemDropOptionManager->getRandomItem( RandomDrop, getItemOptionGroup2(), oList );
-	//cout << "아이템에 옵션 넣기 : (" << OptionAdd << ")" << endl;
+	//cout << "아이템에 옵션 넣기 : (" << OptionAdd << ")" << eos;
 	
 	if(OptionAdd != 0 ){oList.push_back( OptionAdd  );}
 	MinOpcount++;
@@ -122,11 +122,11 @@ Item* MonsterItemDrop::getItem()
 	//cout << " 아이템 클래스 : " <<  (Item::ItemClass)getItemClass() <<  " 아이템 타입 : " << getItemType() <<endl;
 	pItem = g_pItemFactoryManager->createItem( (Item::ItemClass)getItemClass(), getItemType() , oList );
 
-	//cout << "아이템에 옵션 갯수 / 타입 / 클래스: (" << MinOpcount<< ")" << getItemType() << "/" << (Item::ItemClass)getItemClass() << endl;
+	//cout << "아이템에 옵션 갯수 / 타입 / 클래스: (" << MinOpcount<< ")" << getItemType() << "/" << (Item::ItemClass)getItemClass() << eos;
 	}else{
 	pItem = g_pItemFactoryManager->createItem( (Item::ItemClass)getItemClass(), getItemType() , getItemOptions());
 
-	//cout << "아이템에 옵션 갯수 / 타입 / 클래스: (" << MinOpcount<< ")" << getItemType() << "/" <<  (Item::ItemClass)getItemClass() << endl;
+	//cout << "아이템에 옵션 갯수 / 타입 / 클래스: (" << MinOpcount<< ")" << getItemType() << "/" <<  (Item::ItemClass)getItemClass() << eos;
 	}
 
 	if((Item::ItemClass)getItemClass() != Item::ITEM_CLASS_EFFECT_ITEM && (Item::ItemClass)getItemClass() != Item::ITEM_CLASS_EVENT_STAR && getMinGrade() >= 1){ // 최소 급수 값이 0이상이어야 실행이 가능하다.
@@ -153,7 +153,7 @@ Item* MonsterItemDrop::getItem()
 				while(MinOpcount2 <= MaxOpcount2){
 					int RandomDrop2 = Random(getItemOptionGroup(),getItemOptionGroup2());
 					int OptionAdd2 = g_pMonsterItemDropOptionManager->getRandomItem( RandomDrop2, getItemOptionGroup2(), sList );	
-					//cout << "아이템에 세트 옵션 넣기 : (" << OptionAdd2 << ")" << endl;
+					//cout << "아이템에 세트 옵션 넣기 : (" << OptionAdd2 << ")" << eos;
 					if(OptionAdd2 != 0 ){
 					sList.push_back( OptionAdd2  );
 					}	
@@ -246,27 +246,27 @@ void MonsterItemDropManager::load()
 	{
 		pStmt = g_pDatabaseManager->getConnection("DARKEDEN")->createStatement();
 		Result* pResult = pStmt->executeQuery("SELECT ID, SLAYERDROPSTRING, VAMPIREDROPSTRING, OUSTERSDROPSTRING, OPTIONCOUNT FROM MonsterItemDrop");
-		//cout << " 로드 1 " << endl;
+		//cout << " 로드 1 " << eos;
 		while( pResult->next() )
 		{
 			uint i = 0;
 			MonsterItemDrop* pMonsterItemDrop = new MonsterItemDrop();
-		//cout << " 로드 1.1 " << endl;
+		//cout << " 로드 1.1 " << eos;
 			int 	id 			= pResult->getInt(++i);
 			string 	dropstring	= pResult->getString(++i);
 			string 	dropstring2	= pResult->getString(++i);
 			string 	dropstring3	= pResult->getString(++i);
 			int 	optioncount 			= pResult->getInt(++i);
 			pMonsterItemDrop->setID( id );
-		//cout << " 로드 1.2 " << endl;
+		//cout << " 로드 1.2 " << eos;
 			pMonsterItemDrop->parseSlayerTreasureString( dropstring );
 			pMonsterItemDrop->parseVampireTreasureString( dropstring2 );
 			pMonsterItemDrop->parseOustersTreasureString( dropstring3 );
-		//cout << " 로드 1.3 " << endl;
+		//cout << " 로드 1.3 " << eos;
 			pMonsterItemDrop->setOptionCount( optioncount );
 			addMonsterItemDrop(pMonsterItemDrop);	
 		}
-		//cout << " 로드 2 " << endl;
+		//cout << " 로드 2 " << eos;
 
 	}
 	END_DB(pStmt)

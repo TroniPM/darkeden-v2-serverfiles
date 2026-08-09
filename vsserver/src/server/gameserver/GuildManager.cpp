@@ -646,7 +646,7 @@ bool GuildManager::isGuildMaster( GuildID_t guildID, PlayerCreature* pPC )
 
 	if ( pGuild == NULL ) return false;
 
-//	cout << "isGuildMaster : " << pGuild->getMaster() << ", " << pPC->getName() << endl;
+//	cout << "isGuildMaster : " << pGuild->getMaster() << ", " << pPC->getName() << eos;
 	return ( pGuild->getMaster() == pPC->getName() );
 
 	__END_CATCH

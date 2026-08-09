@@ -138,7 +138,7 @@ void ActionEnterSiege::execute (Creature * pNPC , Creature * pCreature)
 
 	if ( side < 8 && side > 0 )
 	{
-		cout << "side : " << side << endl;
+		cout << "side : " << side << eos;
 		addSimpleCreatureEffect( pPC, (Effect::EffectClass)(Effect::EFFECT_CLASS_SIEGE_DEFENDER + side - 1) );
 	}
 

@@ -51,7 +51,7 @@ void CGTypeStringList::read (SocketInputStream & iStream)
 	}
 
 	iStream.read( m_Param );
-//	cout << "Parameter : " << m_Param << " )" << endl;
+//	cout << "Parameter : " << m_Param << " )" << eos;
 
 	__END_CATCH
 }

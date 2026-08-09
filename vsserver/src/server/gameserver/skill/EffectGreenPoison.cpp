@@ -36,14 +36,14 @@ bool EffectGreenPoison::affectCreature(Creature* pTargetCreature, bool bAffectBy
 {
 	__BEGIN_TRY
 
-	//cout << "EffectGreenPoison " << "affectCreature Begin " << endl;
+	//cout << "EffectGreenPoison " << "affectCreature Begin " << eos;
 
 	Assert(pTargetCreature != NULL);
 
 	// 상대에게 이미 poison 이펙트가 걸려져 있는 경우에는 걸리지 않는다.
 	if (pTargetCreature->isFlag(Effect::EFFECT_CLASS_POISON))
 	{
-		//cout << "EffectGreenPoison " << "affectCreature End " << endl;
+		//cout << "EffectGreenPoison " << "affectCreature End " << eos;
 		return false;
 	}
 
@@ -59,27 +59,27 @@ bool EffectGreenPoison::affectCreature(Creature* pTargetCreature, bool bAffectBy
 	Creature* pAttacker = pZone->getCreature( m_UserObjectID );
 	// 상대방에게 미칠 독 데미지를 계산한다.
 	int PoisonDamage = computeMagicDamage(pTargetCreature, m_Damage, SKILL_GREEN_POISON, m_bVampire, pAttacker);
-	cout << "이펙트 사용 1 " << endl;
+	cout << "이펙트 사용 1 " << eos;
 	if (PoisonDamage > 0)
 	{
-	cout << "이펙트 사용 1.5 " << endl;
+	cout << "이펙트 사용 1.5 " << eos;
 		// 포이즌 이펙트를 생성해서, 타겟 크리쳐에 붙이고, 플래그를 켜준다.
 		EffectPoison* pEffectPoison = new EffectPoison(pTargetCreature);
-	cout << "이펙트 사용 1.6 " << endl;
+	cout << "이펙트 사용 1.6 " << eos;
 		pEffectPoison->setLevel(m_Level);
 		pEffectPoison->setPoint(PoisonDamage);
-	cout << "이펙트 사용 1.7 " << endl;
+	cout << "이펙트 사용 1.7 " << eos;
 		pEffectPoison->setDeadline(m_Duration); // 이부분 바꿔야 한다.
-	cout << "이펙트 사용 1.8 " << endl;
+	cout << "이펙트 사용 1.8 " << eos;
 		pEffectPoison->setTick(50);             // 이부분도 바꿔야 한다.
 		pEffectPoison->setUserObjectID( m_UserObjectID );
-	cout << "이펙트 사용 1.85 " << endl;
+	cout << "이펙트 사용 1.85 " << eos;
 		pEffectPoison->affect(pTargetCreature);
-	cout << "이펙트 사용 1.9 " << endl;
+	cout << "이펙트 사용 1.9 " << eos;
 		pTargetCreature->addEffect(pEffectPoison);
-	cout << "이펙트 사용 2.0 " << endl;
+	cout << "이펙트 사용 2.0 " << eos;
 		pTargetCreature->setFlag(Effect::EFFECT_CLASS_POISON);
-	cout << "이펙트 사용 2.1 " << endl;
+	cout << "이펙트 사용 2.1 " << eos;
 		// 이펙트가 붙었다고 주변에 알려준다.
 		GCAddEffect gcAddEffect;
 		gcAddEffect.setObjectID(pTargetCreature->getObjectID());
@@ -87,8 +87,8 @@ bool EffectGreenPoison::affectCreature(Creature* pTargetCreature, bool bAffectBy
 		gcAddEffect.setDuration(m_Duration);
 		pZone->broadcastPacket(pTargetCreature->getX(), pTargetCreature->getY(), &gcAddEffect);
 	}
-	cout << "이펙트 사용 2 " << endl;
-	//cout << "EffectGreenPoison " << "affectCreature End " << endl;
+	cout << "이펙트 사용 2 " << eos;
+	//cout << "EffectGreenPoison " << "affectCreature End " << eos;
 
 	return true;
 
@@ -121,12 +121,12 @@ void EffectGreenPoison::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectGreenPoison " << "unaffect BEGIN" << endl;
+	//cout << "EffectGreenPoison " << "unaffect BEGIN" << eos;
 
 	Tile& tile = m_pZone->getTile(m_X, m_Y);
 	tile.deleteEffect(m_ObjectID);
 
-	//cout << "EffectGreenPoison " << "unaffect END" << endl;
+	//cout << "EffectGreenPoison " << "unaffect END" << eos;
 
 	__END_CATCH
 }

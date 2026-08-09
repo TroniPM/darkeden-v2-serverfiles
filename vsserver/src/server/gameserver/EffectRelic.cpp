@@ -33,7 +33,7 @@ void EffectRelic::affect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	cout << "Effect Relic start" << endl;
+	cout << "Effect Relic start" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -54,7 +54,7 @@ void EffectRelic::affect(Creature* pCreature)
 
 				if(PlusHP < 500)
 				{
-					cout << "에너지를 회복합니다: " << PlusHP << endl;
+					cout << "에너지를 회복합니다: " << PlusHP << eos;
 				}
 
 				pMonster->setHP(PlusHP, ATTR_CURRENT);
@@ -67,13 +67,13 @@ void EffectRelic::affect(Creature* pCreature)
 		}
 		else
 		{
-			cout << "성물 보관함이 아니라면 이 이펙트가 붙지 못함" << endl;
+			cout << "성물 보관함이 아니라면 이 이펙트가 붙지 못함" << eos;
 			return;
 		}
 	}
 	else
 	{
-		cout << "몬스터가 아니라면 이펙트가 붙지 못함" << endl;
+		cout << "몬스터가 아니라면 이펙트가 붙지 못함" << eos;
 		return;
 	}
 
@@ -101,7 +101,7 @@ void EffectRelic::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectRelic" << "unaffect BEGIN" << endl;
+	//cout << "EffectRelic" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -117,7 +117,7 @@ void EffectRelic::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_RELIC);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectRelic" << "unaffect END" << endl;
+	//cout << "EffectRelic" << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

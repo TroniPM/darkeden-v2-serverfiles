@@ -111,7 +111,7 @@ void SkillDomainInfoManager::init ()
 			if (!pResult->next())
 			{
 				SAFE_DELETE(pStmt);
-				cerr << "There is no data in DomainInfo Table" << endl;
+				cerr << "There is no data in DomainInfo Table" << eos;
 				throw Error ("There is no data in DomainInfo Table");
 			}
 

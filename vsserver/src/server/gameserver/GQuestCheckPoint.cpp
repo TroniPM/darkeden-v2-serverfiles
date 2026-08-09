@@ -87,7 +87,7 @@ string GQuestCheckPoint::getTargetList(Race_t race, Level_t level, DWORD grade, 
 	else if ( level <= 90 ) pointnum += 1;
 	else pointnum += 2;
 
-	cout << (int)grade << "그레이드 " << (int)level << "레벨 " << pointnum << "개" << endl;
+	cout << (int)grade << "그레이드 " << (int)level << "레벨 " << pointnum << "개" << eos;
 
 	if ( pointnum > waypoints.size() ) pointnum = waypoints.size();
 	for ( int i=0; i<waypoints.size(); ++i )

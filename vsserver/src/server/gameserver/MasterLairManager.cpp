@@ -79,7 +79,7 @@ MasterLairManager::MasterLairManager (Zone* pZone)
 
 	m_Mutex.setName("MasterLairManager");
 
-	//cout << "Init MasterLairManager: zoneID=" << (int)m_pZone->getZoneID() << endl;
+	//cout << "Init MasterLairManager: zoneID=" << (int)m_pZone->getZoneID() << eos;
 
 	__END_CATCH
 }
@@ -137,7 +137,7 @@ bool MasterLairManager::enterCreature(Creature* pCreature)
 		&& m_Event!=EVENT_MINION_COMBAT
 		&& m_Event!=EVENT_MASTER_COMBAT)
 	{
-		//cout << "[" << (int)m_pZone->getZoneID() << "] MasterLairManager: 지금은 들어갈 수 없는 모드" << endl;
+		//cout << "[" << (int)m_pZone->getZoneID() << "] MasterLairManager: 지금은 들어갈 수 없는 모드" << eos;
 		m_Mutex.unlock();
 		return false;
 	}
@@ -156,18 +156,18 @@ bool MasterLairManager::enterCreature(Creature* pCreature)
 
 			if (pPassEffect->getZoneID()==m_pZone->getZoneID())
 			{
-				//cout << "[" << (int)m_pZone->getZoneID() << "] MasterLairManager: " << pCreature->getName().c_str() << " has EffectPass" << endl;
+				//cout << "[" << (int)m_pZone->getZoneID() << "] MasterLairManager: " << pCreature->getName().c_str() << " has EffectPass" << eos;
 				m_Mutex.unlock();
 
 				goto ENTER_OK;
 			}
 
 			// 다른 Lair의 Pass다. - -;
-			//cout << "[" << (int)m_pZone->getZoneID() << "] MMasterLairManager: " << pCreature->getName().c_str() << " has Wrong EffectPass" << endl;
+			//cout << "[" << (int)m_pZone->getZoneID() << "] MMasterLairManager: " << pCreature->getName().c_str() << " has Wrong EffectPass" << eos;
 		}
 		else
 		{
-			//cout << "[" << (int)m_pZone->getZoneID() << "] MMasterLairManager: " << pCreature->getName().c_str() << " can't enter more" << endl;
+			//cout << "[" << (int)m_pZone->getZoneID() << "] MMasterLairManager: " << pCreature->getName().c_str() << " can't enter more" << eos;
 
 			m_Mutex.unlock();
 			return false;
@@ -178,7 +178,7 @@ bool MasterLairManager::enterCreature(Creature* pCreature)
 	if (m_Event!=EVENT_WAITING_PLAYER)
 	{
 		//cout << "[" << (int)m_pZone->getZoneID() << "] MasterLairManager: Not WAITING_PLAYER: "
-		//	<< m_pZone->getPCManager()->getSize() << " / " << m_nPassPlayer << "/" << m_nMaxPassPlayer << endl;
+		//	<< m_pZone->getPCManager()->getSize() << " / " << m_nPassPlayer << "/" << m_nMaxPassPlayer << eos;
 
 		m_Mutex.unlock();
 		return false;
@@ -188,7 +188,7 @@ bool MasterLairManager::enterCreature(Creature* pCreature)
 	if (m_nPassPlayer >= g_pVariableManager->getVariable(MASTER_LAIR_PLAYER_NUM))	// by sigi. 2002.12.31
 	{
 		//cout << "[" << (int)m_pZone->getZoneID() << "] MasterLairManager: Already Maximum Players: "
-			//<< m_pZone->getPCManager()->getSize() << " / " << m_nPassPlayer << "/" << m_nMaxPassPlayer << endl;
+			//<< m_pZone->getPCManager()->getSize() << " / " << m_nPassPlayer << "/" << m_nMaxPassPlayer << eos;
 
 		m_Mutex.unlock();
 		return false;
@@ -202,7 +202,7 @@ bool MasterLairManager::enterCreature(Creature* pCreature)
 		pPassEffect = new EffectMasterLairPass(pCreature, m_pZone->getZoneID());
 
 		//cout << "[" << (int)m_pZone->getZoneID() << "] MasterLairManager: " << pCreature->getName().c_str() << " received EffectPass: "
-		//	<< m_pZone->getPCManager()->getSize() << " / " << m_nPassPlayer << "/" << m_nMaxPassPlayer << endl;
+		//	<< m_pZone->getPCManager()->getSize() << " / " << m_nPassPlayer << "/" << m_nMaxPassPlayer << eos;
 	}
 	else
 	{
@@ -302,7 +302,7 @@ bool MasterLairManager::leaveCreature(Creature* pCreature)
 	__END_CATCH
 
 	//cout << "[" << (int)m_pZone->getZoneID() << "] MasterLairManager: " << pCreature->getName().c_str() << " leaved: "
-	//		<< m_pZone->getPCManager()->getSize() << " / " << m_nPassPlayer << "/" << m_nMaxPassPlayer << endl;
+	//		<< m_pZone->getPCManager()->getSize() << " / " << m_nPassPlayer << "/" << m_nMaxPassPlayer << eos;
 	return true;
 }
 
@@ -634,7 +634,7 @@ void MasterLairManager::activeEventWaitingPlayer()
 	int lairAttackMinNumber = pInfo->getLairAttackMinNumber();
 	int lairAttackMaxNumber = pInfo->getLairAttackMaxNumber();
 
-	//cout << "EffectCon: " << (int)m_pZone->getZoneID() << ", " << lairAttackTick << ", " << lairAttackMinNumber << ", " << lairAttackMaxNumber << endl;
+	//cout << "EffectCon: " << (int)m_pZone->getZoneID() << ", " << lairAttackTick << ", " << lairAttackMinNumber << ", " << lairAttackMaxNumber << eos;
 
 	if (lairAttackMinNumber>0 && lairAttackMaxNumber>0)
 	{
@@ -696,7 +696,7 @@ void MasterLairManager::activeEventWaitingPlayer()
 
 	m_Event = EVENT_WAITING_PLAYER;
 
-	//cout << "[" << (int)m_pZone->getZoneID() << "] MasterLairManager::activeEventWaitingPlayer" << endl;
+	//cout << "[" << (int)m_pZone->getZoneID() << "] MasterLairManager::activeEventWaitingPlayer" << eos;
 
 	__END_CATCH
 }
@@ -762,7 +762,7 @@ void MasterLairManager::activeEventMinionCombat()
 	getCurrentTime( m_EventTime );
 	m_EventTime.tv_sec += pInfo->getEndDelay();
 
-	//cout << "[" << (int)m_pZone->getZoneID() << "] MasterLairManager::activeEventMinionCombat" << endl;
+	//cout << "[" << (int)m_pZone->getZoneID() << "] MasterLairManager::activeEventMinionCombat" << eos;
 
 	__END_CATCH
 }
@@ -888,7 +888,7 @@ void MasterLairManager::activeEventMasterCombat()
 	m_Event = EVENT_MASTER_COMBAT;
 	m_EventValue = 0;
 
-	//cout << "[" << (int)m_pZone->getZoneID() << "[ MasterLairManager::activeEventMasterCombat" << endl;
+	//cout << "[" << (int)m_pZone->getZoneID() << "[ MasterLairManager::activeEventMasterCombat" << eos;
 
 	__END_CATCH
 }
@@ -933,7 +933,7 @@ void MasterLairManager::activeEventWaitingKickOut()
 
 	m_pZone->broadcastPacket( &gcNoticeEvent );
 
-	//cout << "[" << (int)m_pZone->getZoneID() << "] MasterLairManager::activeEventKickOut" << endl;
+	//cout << "[" << (int)m_pZone->getZoneID() << "] MasterLairManager::activeEventKickOut" << eos;
 
 	__END_CATCH
 }
@@ -959,7 +959,7 @@ void MasterLairManager::activeEventWaitingRegen()
 
 	m_bMasterReady = false;
 
-	//cout << "[" << (int)m_pZone->getZoneID() << "] MasterLairManager::activeEventWaitingRegen" << endl;
+	//cout << "[" << (int)m_pZone->getZoneID() << "] MasterLairManager::activeEventWaitingRegen" << eos;
 	
 
 	__END_CATCH
@@ -1080,7 +1080,7 @@ void MasterLairManager::kickOutPlayers()
 	ZoneCoord_t zoneX 	= pInfo->getKickZoneX();
 	ZoneCoord_t zoneY 	= pInfo->getKickZoneY();
 
-	//cout << "[kickOut] " << (int)zoneID << ": "<< (int)zoneX << ", " << (int)zoneY << endl;
+	//cout << "[kickOut] " << (int)zoneID << ": "<< (int)zoneX << ", " << (int)zoneY << eos;
 
 	// 존의 모든 사용자들을 다른 곳으로 이동시킨다.
 	PCManager* pPCManager = (PCManager*)(m_pZone->getPCManager());

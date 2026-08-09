@@ -17,6 +17,7 @@
 #include <fstream>
 #include <stdio.h>
 #include <functional>
+#include <iterator>
 #include <algorithm>
 
 int DefaultClanID[CLAN_MAX] =
@@ -47,7 +48,7 @@ void saveTreasure(const string& filename, TreasureList* pTreasureList)
 	const list<Treasure*>& TList = pTreasureList->getTreasures();
 	int TreasureCount = TList.size();
 
-	file.write(&TreasureCount, sizeof(int));
+	file.write((char*)&TreasureCount, sizeof(int));
 
 	list<Treasure*>::const_iterator itr = TList.begin();
 	for (; itr != TList.end(); itr++)
@@ -57,13 +58,13 @@ void saveTreasure(const string& filename, TreasureList* pTreasureList)
 		int ItemRatio           = pTreasure->m_ItemRatio;
 		int OptionRatio         = pTreasure->m_OptionRatio;
 
-		file.write(&ItemRatio, sizeof(int));
-		file.write(&OptionRatio, sizeof(int));
+		file.write((char*)&ItemRatio, sizeof(int));
+		file.write((char*)&OptionRatio, sizeof(int));
 
 		vector<TreasureItemClass*> TICs = pTreasure->m_TreasureItemClasses;
 		int ItemClassCount = TICs.size();
 
-		file.write(&ItemClassCount, sizeof(int));
+		file.write((char*)&ItemClassCount, sizeof(int));
 
 		for (uint i=0; i<TICs.size(); i++)
 		{
@@ -72,13 +73,13 @@ void saveTreasure(const string& filename, TreasureList* pTreasureList)
 			int ItemClass          = (int)pTIC->m_ItemClass;
 			int ItemClassRatio     = pTIC->m_Ratio;
 
-			file.write(&ItemClass, sizeof(int));
-			file.write(&ItemClassRatio, sizeof(int));
+			file.write((char*)&ItemClass, sizeof(int));
+			file.write((char*)&ItemClassRatio, sizeof(int));
 
 			vector<TreasureItemType*> TITs = pTIC->m_TreasureItemTypes;
 			int ItemTypeCount = TITs.size();
 
-			file.write(&ItemTypeCount, sizeof(int));
+			file.write((char*)&ItemTypeCount, sizeof(int));
 
 			for (uint j=0; j<TITs.size(); j++)
 			{
@@ -87,13 +88,13 @@ void saveTreasure(const string& filename, TreasureList* pTreasureList)
 				int ItemType             = pTIT->m_ItemType;
 				int ItemTypeRatio        = pTIT->m_Ratio;
 
-				file.write(&ItemType, sizeof(int));
-				file.write(&ItemTypeRatio, sizeof(int));
+				file.write((char*)&ItemType, sizeof(int));
+				file.write((char*)&ItemTypeRatio, sizeof(int));
 
 				vector<TreasureOptionType*> TOTs = pTIT->m_TreasureOptionTypes;
 				int OptionTypeCount = TOTs.size();
 
-				file.write(&OptionTypeCount, sizeof(int));
+				file.write((char*)&OptionTypeCount, sizeof(int));
 
 				for (uint k=0; k<TOTs.size(); k++)
 				{
@@ -102,8 +103,8 @@ void saveTreasure(const string& filename, TreasureList* pTreasureList)
 					int OptionType  = pTOT->m_OptionType;
 					int OptionRatio = pTOT->m_Ratio;
 
-					file.write(&OptionType, sizeof(int));
-					file.write(&OptionRatio, sizeof(int));
+					file.write((char*)&OptionType, sizeof(int));
+					file.write((char*)&OptionRatio, sizeof(int));
 				}
 			}
 		}
@@ -300,7 +301,7 @@ void MonsterInfo::parseSlayerTreasureString(const string& text)
 	/*
 	if (newtext.size() < 10)
 	{
-		cerr << "MonsterInfo::parseSlayerTreasureString() : Too short treasure string" << endl;
+		cerr << "MonsterInfo::parseSlayerTreasureString() : Too short treasure string" << eos;
 		throw ("MonsterInfo::parseSlayerTreasureString() : Too short treasure string");
 	}
 	*/
@@ -331,7 +332,7 @@ void MonsterInfo::parseVampireTreasureString(const string& text)
 	/*
 	if (newtext.size() < 10)
 	{
-		cerr << "MonsterInfo::parseVampireTreasureString() : Too short treasure string" << endl;
+		cerr << "MonsterInfo::parseVampireTreasureString() : Too short treasure string" << eos;
 		throw ("MonsterInfo::parseVampireTreasureString() : Too short treasure string");
 	}
 	*/
@@ -390,7 +391,7 @@ void MonsterInfo::setMonsterSummonInfo(const string& text)
 //		cout << "[SummonInfo] " 
 //			<< getHName().c_str() << " : " 
 //			<< m_pMonsterSummonInfo->toString().c_str() 
-//			<< endl;
+//			<< eos;
 	}
 }
 
@@ -443,7 +444,7 @@ void MonsterInfo::setDefaultEffects(const string& text)
 		else if (part == "OBSERVING_EYE")	m_DefaultEffects.push_back( Effect::EFFECT_CLASS_OBSERVING_EYE );
 		else 
 		{
-			cout << "MonsterInfo::setDefaultEffects() - Wrong EffectClass: " << part.c_str() << endl;
+			cout << "MonsterInfo::setDefaultEffects() - Wrong EffectClass: " << part.c_str() << eos;
 			Assert(false);
 		}
 
@@ -767,11 +768,11 @@ void MonsterInfoManager::load ()
 					//	<< ",MonsterName:" << pInfo->getEName()
 					//	<< ",SlayerTreasure:" << pInfo->getSlayerTreasureList()->getTreasures().size()
 					//	<< ",VampireTreasure:" << pInfo->getVampireTreasureList()->getTreasures().size()
-					//	<< endl;
+					//	<< eos;
 				}
 				else
 				{
-					cout << "[NoTreasureFile] " << pInfo->getHName().c_str() << endl;
+					cout << "[NoTreasureFile] " << pInfo->getHName().c_str() << eos;
 				}
 			}
 		}*/
@@ -827,7 +828,7 @@ void MonsterInfoManager::load ()
 					<< ",MonsterName:" << pMonsterInfo->getEName()
 					<< ",SlayerTreasure:" << pMonsterInfo->getSlayerTreasureList()->getTreasures().size()
 					<< ",VampireTreasure:" << pMonsterInfo->getVampireTreasureList()->getTreasures().size()
-					<< endl;
+					<< eos;
 			}
 
 			slayer_treasure.clear();
@@ -847,7 +848,7 @@ void MonsterInfoManager::load ()
 	{
 		cout << "Class[" << itr->first << "] : ";
 		copy( itr->second.begin(), itr->second.end(), ostream_iterator<SpriteType_t>( cout, ", " ) );
-		cout << endl;
+		cout << eos;
 	}
 
 	__END_DEBUG
@@ -995,7 +996,7 @@ void MonsterInfoManager::reload (MonsterType_t monsterType)
 //						<< ",MonsterName:" << pInfo->getEName()
 //						<< ",SlayerTreasure:" << pInfo->getSlayerTreasureList()->getTreasures().size()
 //						<< ",VampireTreasure:" << pInfo->getVampireTreasureList()->getTreasures().size()
-//						<< endl;
+//						<< eos;
 				}
 			}
 		}
@@ -1015,13 +1016,13 @@ void MonsterInfoManager::addMonsterInfo (MonsterType_t monsterType , MonsterInfo
 
 	if (monsterType >= m_MaxMonsterType) 
 	{
-		cerr << "MonsterInfoManager::addMonsterInfo() : Out of bounds" << endl;
+		cerr << "MonsterInfoManager::addMonsterInfo() : Out of bounds" << eos;
 		throw OutOfBoundException();
 	}
 	
 	if (m_MonsterInfos[monsterType] != NULL)
 	{
-		cerr << "MonsterInfoManager::addMonsterInfo() : Duplicated Exception" << endl;
+		cerr << "MonsterInfoManager::addMonsterInfo() : Duplicated Exception" << eos;
 		throw DuplicatedException();
 	}
 
@@ -1056,13 +1057,13 @@ const MonsterInfo* MonsterInfoManager::getMonsterInfo (MonsterType_t monsterType
 
 	if (monsterType >= m_MaxMonsterType)
 	{
-		cerr << "MonsterInfoManager::getMonsterInfo() : Out of bounds" << endl;
+		cerr << "MonsterInfoManager::getMonsterInfo() : Out of bounds" << eos;
 		throw OutOfBoundException();
 	}
 	
 	if (m_MonsterInfos[monsterType] == NULL)
 	{
-		cerr << "MonsterInfoManager::getMonsterInfo() : No Such Element Exception" << endl;
+		cerr << "MonsterInfoManager::getMonsterInfo() : No Such Element Exception" << eos;
 		throw NoSuchElementException();
 	}
 
@@ -1079,13 +1080,13 @@ const vector<MonsterType_t>& MonsterInfoManager::getMonsterTypeBySprite(SpriteTy
 
 	if (m_MonsterSpriteSet[spriteType].empty())
 	{
-		cerr << "MonsterInfoManager::getMonsterTypeBySprite() : no such element exception" << (int)spriteType << endl;
+		cerr << "MonsterInfoManager::getMonsterTypeBySprite() : no such element exception" << (int)spriteType << eos;
 		throw NoSuchElementException();
 	}
 	
 	if (spriteType >= MAX_SPRITE_TYPE)
 	{
-		cerr << "MonsterInfoManager::getMonsterTypeBySprite() : out of bounds" << endl;
+		cerr << "MonsterInfoManager::getMonsterTypeBySprite() : out of bounds" << eos;
 		throw OutOfBoundException();
 	}
 
@@ -1100,13 +1101,13 @@ string MonsterInfoManager::getNameBySpriteType(SpriteType_t spriteType) const
 
 	if (m_MonsterSpriteSet[spriteType].empty())
 	{
-		cerr << "MonsterInfoManager::getMonsterTypeBySprite() : no such element exception" << (int)spriteType << endl;
+		cerr << "MonsterInfoManager::getMonsterTypeBySprite() : no such element exception" << (int)spriteType << eos;
 		throw NoSuchElementException();
 	}
 	
 	if (spriteType >= MAX_SPRITE_TYPE)
 	{
-		cerr << "MonsterInfoManager::getMonsterTypeBySprite() : out of bounds" << endl;
+		cerr << "MonsterInfoManager::getMonsterTypeBySprite() : out of bounds" << eos;
 		throw OutOfBoundException();
 	}
 
@@ -1124,7 +1125,7 @@ SpriteType_t MonsterInfoManager::getSpriteTypeByName(const string& monsterName) 
 	
 	if (itr==m_MonsterSpriteTypes.end())
 	{
-		//cerr << "MonsterInfoManager::getMonsterTypeBySprite() : no such element exception" << endl;
+		//cerr << "MonsterInfoManager::getMonsterTypeBySprite() : no such element exception" << eos;
 		//throw NoSuchElementException();
 
 		return 0;
@@ -1144,7 +1145,7 @@ MonsterType_t MonsterInfoManager::getChiefMonsterTypeByName(const string& monste
 	
 	if (itr==m_ChiefMonster.end())
 	{
-		//cerr << "MonsterInfoManager::getMonsterTypeBySprite() : no such element exception" << endl;
+		//cerr << "MonsterInfoManager::getMonsterTypeBySprite() : no such element exception" << eos;
 		//throw NoSuchElementException();
 
 		return 0;

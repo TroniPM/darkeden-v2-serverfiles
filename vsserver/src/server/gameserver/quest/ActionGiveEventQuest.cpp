@@ -92,7 +92,7 @@ void ActionGiveEventQuest::execute (Creature * pCreature1 , Creature * pCreature
 
 	//cout << "Quest List : ";
 	//copy( quests.begin(), quests.end(), ostream_iterator<DWORD>(cout, ",") );
-	//cout << endl;
+	//cout << eos;
 
 	GCSelectQuestID gcGiveEventQuestID( quests.begin(), quests.end() );
 

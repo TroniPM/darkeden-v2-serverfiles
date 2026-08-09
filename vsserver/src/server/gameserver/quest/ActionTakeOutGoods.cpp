@@ -95,7 +95,7 @@ void ActionTakeOutGoods::execute (Creature * pCreature1 , Creature * pCreature2)
 
 		gcGoodsList.addGoodsInfo( pGI );
 
-//		cout << pGI->toString() << endl;
+//		cout << pGI->toString() << eos;
 	}
 
 	pPC->getPlayer()->sendPacket( &gcGoodsList );

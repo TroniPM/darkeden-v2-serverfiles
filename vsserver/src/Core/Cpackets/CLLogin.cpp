@@ -57,10 +57,10 @@ void CLLogin::read (SocketInputStream & iStream)
 
 		int realage = atoi(age);
 
-		// µð¹ö±ë
-		cout << "ID : " << m_ID << endl;
-		cout << "PW : " << m_Password << endl;
-		cout << "Age : " << realage << endl;
+		// ï¿½ï¿½ï¿½ï¿½ï¿½
+		cout << "ID : " << m_ID << eos;
+		cout << "PW : " << m_Password << eos;
+		cout << "Age : " << realage << eos;
 
 		if ( realage > 18 )
 			setAdult(true);
@@ -78,6 +78,8 @@ void CLLogin::read (SocketInputStream & iStream)
 		BYTE szID;
 
 		iStream.read(szID);
+
+		cerr << "DBG CLLogin::read: szID=" << (int)szID << endl;
 
 		if (szID == 0)
 			throw InvalidProtocolException("szID == 0");
@@ -103,6 +105,8 @@ void CLLogin::read (SocketInputStream & iStream)
 
 		iStream.read( m_LoginMode );
 
+		cerr << "DBG CLLogin::read: ID='" << m_ID << "' PW='" << m_Password << "' mac=" << m_strMacAddress << " mode=" << (int)m_LoginMode << endl;
+
 		/* convert hex -> str */
 		
 		char	tmpStr[20];
@@ -120,8 +124,8 @@ void CLLogin::write (SocketOutputStream & oStream) const
 {
 	__BEGIN_TRY
 
-	// ³Ý¸¶ºíÀÇ Cpsso °ü·ÃµÈ ÄÚµå´Â ¼­¹öÀÇ Write ¿¡¼­´Â °íÄ¡Áö ¾Ê´Â´Ù  (¾²ÀÌÁö ¾ÊÀ¸¹Ç·Î ;;)
-	// Client ¿¡¼­¸¸ ¾Ë¾Æ¼­ Ã³¸®ÇØ¼­ º¸³»ÁÖµµ·Ï ÇÑ´Ù.
+	// ï¿½Ý¸ï¿½ï¿½ï¿½ï¿½ï¿½ Cpsso ï¿½ï¿½ï¿½Ãµï¿½ ï¿½Úµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Write ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½Ê´Â´ï¿½  (ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ ;;)
+	// Client ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ë¾Æ¼ï¿½ Ã³ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ ï¿½Ñ´ï¿½.
 	BYTE szID = m_ID.size();
 
 	if (szID == 0)

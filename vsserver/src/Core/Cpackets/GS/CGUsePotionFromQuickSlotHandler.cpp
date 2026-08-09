@@ -334,7 +334,7 @@ void CGUsePotionFromQuickSlotHandler::execute (CGUsePotionFromQuickSlot* pPacket
 
 				if (g_pParkingCenter->hasMotorcycleBox(targetID))
 				{
-					cout << "기존에 불려진 오토바이가 있습니다" << endl;
+					cout << "기존에 불려진 오토바이가 있습니다" << eos;
 
 					MotorcycleBox* pMotorcycleBox = g_pParkingCenter->getMotorcycleBox(targetID);
 
@@ -423,7 +423,7 @@ void CGUsePotionFromQuickSlotHandler::execute (CGUsePotionFromQuickSlot* pPacket
 
 
 					// 오토바이를 존에 추가한다.
-					cout << "오토바이를 존에 추가합니다" << pSlayer->getX() << " " << pSlayer->getY() << endl;
+					cout << "오토바이를 존에 추가합니다" << pSlayer->getX() << " " << pSlayer->getY() << eos;
 					TPOINT pt = pZone->addItem(pMotorcycle, pSlayer->getX(), pSlayer->getY(), false);
 
 				   if(pt.x == -1)

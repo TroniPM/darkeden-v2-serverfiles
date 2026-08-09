@@ -34,7 +34,7 @@ void __assert__ ( const char * file , uint line , const char * func , const char
 	msg << expr << " at " << ctime(&currentTime);
 	
 	ofstream ofile("assertion_failed.log",ios::app);
-	ofile << msg.toString() << endl;
+	ofile << msg.toString() << eos;
 	ofile.close();
 
 	throw AssertionError( msg.toString() );
@@ -61,7 +61,7 @@ void __protocol_assert__ ( const char * file , uint line , const char * func , c
 	msg << expr << " at " << ctime(&currentTime);
 	
 	ofstream ofile("protocol_assertion_failed.log",ios::app);
-	ofile << msg.toString() << endl;
+	ofile << msg.toString() << eos;
 	ofile.close();
 
 	throw InvalidProtocolException( msg.toString() );

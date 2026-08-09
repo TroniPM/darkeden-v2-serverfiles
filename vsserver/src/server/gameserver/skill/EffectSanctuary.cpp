@@ -103,7 +103,7 @@ void EffectSanctuary::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectSanctuary " << "unaffect BEGIN" << endl;
+	//cout << "EffectSanctuary " << "unaffect BEGIN" << eos;
 
 	Tile & tile = m_pZone->getTile(m_X, m_Y);
 //
@@ -119,7 +119,7 @@ void EffectSanctuary::unaffect()
 
 	tile.deleteEffect(m_ObjectID);
 
-	//cout << "EffectSanctuary " << "unaffect END" << endl;
+	//cout << "EffectSanctuary " << "unaffect END" << eos;
 
 	__END_CATCH
 }

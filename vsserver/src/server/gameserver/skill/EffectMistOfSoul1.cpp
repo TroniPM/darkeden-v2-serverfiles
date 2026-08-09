@@ -51,7 +51,7 @@ void EffectMistOfSoul1::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectMistOfSoul1 " << "unaffect BEGIN" << endl;
+	//cout << "EffectMistOfSoul1 " << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	pCreature->removeFlag(Effect::EFFECT_CLASS_MIST_OF_SOUL1);
@@ -64,7 +64,7 @@ void EffectMistOfSoul1::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_MIST_OF_SOUL1);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectMistOfSoul1 " << "unaffect END" << endl;
+	//cout << "EffectMistOfSoul1 " << "unaffect END" << eos;
 
 	__END_CATCH
 }
@@ -74,12 +74,12 @@ void EffectMistOfSoul1::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectMistOfSoul1 " << "unaffect BEGIN" << endl;
+	//cout << "EffectMistOfSoul1 " << "unaffect BEGIN" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature*>(m_pTarget);
 	unaffect(pCreature);
 
-	//cout << "EffectMistOfSoul1 " << "unaffect END" << endl;
+	//cout << "EffectMistOfSoul1 " << "unaffect END" << eos;
 
 	__END_CATCH
 }

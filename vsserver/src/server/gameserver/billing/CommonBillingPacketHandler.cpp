@@ -118,7 +118,7 @@ void CommonBillingPacketHandler::executeBillingLoginVerify(CommonBillingPacket* 
 						<<  pPacket->User_ID << ", "
 						<< billMethod << ", " 
 						<< expireDate << ", " 
-						<< pPacket->Remain_Time << " )" << endl;
+						<< pPacket->Remain_Time << " )" << eos;
 #endif
 			}
 			else
@@ -127,7 +127,7 @@ void CommonBillingPacketHandler::executeBillingLoginVerify(CommonBillingPacket* 
 				filelog(LOGFILE_BILLING_PLAYER, "LoginVerify: PayPlay (%s, PCRoom)", pPacket->User_ID);
 #ifdef __COUT_BILLING_SYSTEM__
 				cout << "LoginVerify: PayPlay ( " 
-						<<  pPacket->User_ID << ", PCRoom )" << endl;
+						<<  pPacket->User_ID << ", PCRoom )" << eos;
 #endif
 			}
 
@@ -157,7 +157,7 @@ void CommonBillingPacketHandler::executeBillingLoginVerify(CommonBillingPacket* 
 			filelog(LOGFILE_BILLING_PLAYER, "LoginVerify: No Account(%s)", pPacket->User_ID );
 
 			#ifdef __COUT_BILLING_SYSTEM__
-			cout << "LoginVerify: No Account(" << pPacket->User_ID << ")" << endl;
+			cout << "LoginVerify: No Account(" << pPacket->User_ID << ")" << eos;
 			#endif
 
 			// 유료 사용 불가
@@ -175,7 +175,7 @@ void CommonBillingPacketHandler::executeBillingLoginVerify(CommonBillingPacket* 
 						// 아직 무료 기간이 남아있는 경우.
 						filelog(LOGFILE_BILLING_PLAYER, "LoginVerify: FreePlay (%s)", pPacket->User_ID);
 						#ifdef __COUT_BILLING_SYSTEM__
-							cout << "LoginVerify: FreePlay (" <<  pPacket->User_ID << ")" << endl;
+							cout << "LoginVerify: FreePlay (" <<  pPacket->User_ID << ")" << eos;
 						#endif
 					}
 					else
@@ -184,7 +184,7 @@ void CommonBillingPacketHandler::executeBillingLoginVerify(CommonBillingPacket* 
 						filelog(LOGFILE_BILLING_PLAYER, "LoginVerify: Disconnect by ATTR (%s)", pPacket->User_ID);
 					
 						#ifdef __COUT_BILLING_SYSTEM__
-							cout << "LoginVerify: Disconnect by ATTR (" << pPacket->User_ID << ")" << endl;
+							cout << "LoginVerify: Disconnect by ATTR (" << pPacket->User_ID << ")" << eos;
 						#endif
 
 						disconnectGamePlayer( pGamePlayer, 5*10 ); // 5초 후 짜른다.
@@ -196,7 +196,7 @@ void CommonBillingPacketHandler::executeBillingLoginVerify(CommonBillingPacket* 
 					filelog(LOGFILE_BILLING_PLAYER, "LoginVerify: Disconnect (%s)", pPacket->User_ID);
 
 					#ifdef __COUT_BILLING_SYSTEM__
-						cout << "LoginVerify: Disconnect (" << pPacket->User_ID << ")" << endl;
+						cout << "LoginVerify: Disconnect (" << pPacket->User_ID << ")" << eos;
 					#endif
 
 					disconnectGamePlayer( pGamePlayer, 5*10 ); // 5초 후 짜른다.
@@ -211,7 +211,7 @@ void CommonBillingPacketHandler::executeBillingLoginVerify(CommonBillingPacket* 
 			filelog(LOGFILE_BILLING_PLAYER, "LoginVerify: Disconnect (%s)", pPacket->User_ID);
 
 			#ifdef __COUT_BILLING_SYSTEM__
-				cout << "LoginVerify: Disconnect (" << pPacket->User_ID << ")" << endl;
+				cout << "LoginVerify: Disconnect (" << pPacket->User_ID << ")" << eos;
 			#endif
 
 			disconnectGamePlayer( pGamePlayer, 10*10 ); // 10 초 후 짜른다.
@@ -222,7 +222,7 @@ void CommonBillingPacketHandler::executeBillingLoginVerify(CommonBillingPacket* 
 		filelog(LOGFILE_BILLING_PLAYER, "LoginVerify: No Such Player(%s)", pPacket->User_ID);
 
 		#ifdef __COUT_BILLING_SYSTEM__
-			cout << "LoginVerify: No Such Player(" << pPacket->User_ID << ")" << endl;
+			cout << "LoginVerify: No Such Player(" << pPacket->User_ID << ")" << eos;
 		#endif
 	}
 
@@ -273,7 +273,7 @@ void CommonBillingPacketHandler::executeBillingLoginCheckVerify(CommonBillingPac
 					<<  pPacket->User_ID << ", "
 					<< billMethod << ", " 
 					<< expireDate << ", " 
-					<< pPacket->Remain_Time << " )" << endl;
+					<< pPacket->Remain_Time << " )" << eos;
 #endif
 
 			// 유료 접속 가능
@@ -308,19 +308,19 @@ void CommonBillingPacketHandler::executeBillingLoginCheckVerify(CommonBillingPac
 				filelog(LOGFILE_BILLING_PLAYER, "LoginCheckVerify: Can FreePlay (%s)", pPacket->User_ID);
 
 				#ifdef __COUT_BILLING_SYSTEM__
-					cout << "LoginCheckVerify: Can FreePlay (" << pPacket->User_ID << ")" << endl;
+					cout << "LoginCheckVerify: Can FreePlay (" << pPacket->User_ID << ")" << eos;
 				#endif
 
 			}
 			else
 			{
 				// 짤라야될 애당.
-				cout << pPacket->User_ID << " cannot play by billing" << endl;
+				cout << pPacket->User_ID << " cannot play by billing" << eos;
 
 				filelog(LOGFILE_BILLING_PLAYER, "LoginCheckVerify: Cannot BillingPlay (%s)", pPacket->User_ID);
 
 				#ifdef __COUT_BILLING_SYSTEM__
-					cout << "LoginCheckVerify: Cannot BillingPlay (" << pPacket->User_ID << ")" << endl;
+					cout << "LoginCheckVerify: Cannot BillingPlay (" << pPacket->User_ID << ")" << eos;
 				#endif
 			}
 		}
@@ -330,7 +330,7 @@ void CommonBillingPacketHandler::executeBillingLoginCheckVerify(CommonBillingPac
 		filelog(LOGFILE_BILLING_PLAYER, "LoginCheckVerify: No Such Player(%s)", pPacket->User_ID);
 
 		#ifdef __COUT_BILLING_SYSTEM__
-			cout << "LoginCheckVerify: No Such Player(" << pPacket->User_ID << ")" << endl;
+			cout << "LoginCheckVerify: No Such Player(" << pPacket->User_ID << ")" << eos;
 		#endif
 	}
 
@@ -380,7 +380,7 @@ void CommonBillingPacketHandler::executeBillingRemain(CommonBillingPacket* pPack
 				if (pGamePlayer->getBillingSession()==session)
 				{
 					#ifdef __COUT_BILLING_SYSTEM__
-						cout << "***** Disconnect (" << pPacket->User_ID << ":" << session << ")" << endl;
+						cout << "***** Disconnect (" << pPacket->User_ID << ":" << session << ")" << eos;
 					#endif
 					disconnectGamePlayer( pGamePlayer, 5*10 );
 					filelog(LOGFILE_BILLING_PLAYER, "BillingRemain: Disconnect(%s:%s), Result=%d", pPacket->User_ID, session, result);
@@ -388,7 +388,7 @@ void CommonBillingPacketHandler::executeBillingRemain(CommonBillingPacket* pPack
 				else
 				{
 					#ifdef __COUT_BILLING_SYSTEM__
-						cout << "*****  No Such Session(" << pPacket->User_ID << ":" << session << ")" << endl;
+						cout << "*****  No Such Session(" << pPacket->User_ID << ":" << session << ")" << eos;
 					#endif
 
 					filelog(LOGFILE_BILLING_PLAYER, "BillingRemain: Disconnect: No Such Session(%s:%s)", pPacket->User_ID, session);
@@ -464,7 +464,7 @@ void CommonBillingPacketHandler::executeBillingRemain(CommonBillingPacket* pPack
 
 				#ifdef __COUT_BILLING_SYSTEM__
 					cout << "[" << pPacket->User_ID << "] " 
-							<< msg.toString().c_str() << endl;
+							<< msg.toString().c_str() << eos;
 
 							//<< billMethod << ", "
 							//<< pPacket->getExpire_DateToString().c_str() << "까지, "
@@ -478,7 +478,7 @@ void CommonBillingPacketHandler::executeBillingRemain(CommonBillingPacket* pPack
 	else
 	{
 		#ifdef __COUT_BILLING_SYSTEM__
-			cout << "BillingRemain: No Such Player(" << pPacket->User_ID << ")" << endl;
+			cout << "BillingRemain: No Such Player(" << pPacket->User_ID << ")" << eos;
 		#endif
 		filelog(LOGFILE_BILLING_PLAYER, "BillingRemain: No Such Player(%s)", pPacket->User_ID);
 	}
@@ -572,7 +572,7 @@ void CommonBillingPacketHandler::sendBillingRemainMessage(CommonBillingPacket* p
 		#ifdef __COUT_BILLING_SYSTEM__
 			cout <<	"[" << pPacket->User_ID << "] ExpireDateTime : " << vsdtExpireDate.toString()
 				 << " CurrentDateTime : " << currentDateTime.toString()
-				 << " Remain Days : " << day << endl;
+				 << " Remain Days : " << day << eos;
 		#endif
 
 		//int day = pPacket->Remain_Time;
@@ -617,7 +617,7 @@ void CommonBillingPacketHandler::sendBillingRemainMessage(CommonBillingPacket* p
 
 	#ifdef __COUT_BILLING_SYSTEM__
 		cout <<	"[" << pPacket->User_ID << "] "
-				<< msg.toString().c_str() << endl;
+				<< msg.toString().c_str() << eos;
 	#endif
 
 	sendSystemMessage(pGamePlayer, msg.toString());

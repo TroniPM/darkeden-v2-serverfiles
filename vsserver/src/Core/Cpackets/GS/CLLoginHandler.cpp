@@ -120,7 +120,7 @@ void CLLoginHandler::execute (CLLogin* pPacket , Player* pPlayer)
 	Assert(pPlayer != NULL);
 
 	//add by zdj
-	cout << pPacket->toString().c_str() << endl;
+	cout << pPacket->toString().c_str() << eos;
 
 	LoginPlayer* pLoginPlayer = dynamic_cast<LoginPlayer*>(pPlayer);
 	Statement*   pStmt        = NULL;
@@ -142,18 +142,18 @@ void CLLoginHandler::execute (CLLogin* pPacket , Player* pPlayer)
 //	static bool bWebLogin = g_pConfig->getPropertyInt("WebLogin") != 0;
 
 	//add by zdj
-	cout << "CLLoginHandler.cpp step1" << endl;
+	cout << "CLLoginHandler.cpp step1" << eos;
 
 	// set web login player
 	if ( bWebLogin ) 
 	{
 		pLoginPlayer->setWebLogin();
 		//add by zdj
-		cout << "CLLoginHandler.cpp step2" << endl;
+		cout << "CLLoginHandler.cpp step2" << eos;
 	
 	}
 
-//	cout << pPacket->toString() << endl;
+//	cout << pPacket->toString() << eos;
 
 	if ( isBlockIP(connectIP) || isBlockMAC(connectMAC))
 	{
@@ -161,14 +161,14 @@ void CLLoginHandler::execute (CLLogin* pPacket , Player* pPlayer)
 		lcLoginError.setErrorID(IP_DENYED);
 		pLoginPlayer->sendPacket(&lcLoginError);
 
-		cout << "IP_DENYED:" << connectIP.c_str() << endl;
+		cout << "IP_DENYED:" << connectIP.c_str() << eos;
 
 		filelog( "loginfail.txt", "Error Code: IP_DENYED, 1, PlayerID : %s", pPacket->getID().c_str() );
 		return;
 	}
 
 	//add by zdj
-	cout << "CLLoginHandler.cpp step3" << endl;
+	cout << "CLLoginHandler.cpp step3" << eos;
 
 
 	// 사내테스트 버전에서는 '#sigi'  <-- 이런 식으로 계정이 들어온다.
@@ -176,7 +176,7 @@ void CLLoginHandler::execute (CLLogin* pPacket , Player* pPlayer)
 	{
 
 		//add by zdj
-		cout << "CLLoginHandler.cpp step4" << endl;
+		cout << "CLLoginHandler.cpp step4" << eos;
 
 		ID = ID.c_str()+1;
 		pPacket->setID( ID );
@@ -185,18 +185,18 @@ void CLLoginHandler::execute (CLLogin* pPacket , Player* pPlayer)
 		if ( bWebLogin )
 		{
 
-			cout << "WebLogin" << endl;
+			cout << "WebLogin" << eos;
 
 			if ( !checkWebLogin( pPacket, pPlayer ) )
 			{
 				return;
 			}
 			else
-				cout << "Web Login OK" << endl;
+				cout << "Web Login OK" << eos;
 		}
 		else
 		{
-			cout << "not WebLogin" << endl;
+			cout << "not WebLogin" << eos;
 
 			// 넷마블에서 접속하는 경우
 			// by sigi. 2002.10.23
@@ -210,18 +210,18 @@ void CLLoginHandler::execute (CLLogin* pPacket , Player* pPlayer)
 		if (!bWebLogin && bFreePass)
 		{
 			//add by zdj
-			cout << "CLLoginHandler.cpp step5" << endl;
+			cout << "CLLoginHandler.cpp step5" << eos;
 
 			// 웹로그인이 아닌 FreePass 는 넷마블 사용자로 ID 앞에 예약문자가 하나더 있다.
 			ID = ID.c_str()+1;
 			pPacket->setID( ID );
 		}
 
-//		cout << "테스트 클라이언트" << endl;
+//		cout << "테스트 클라이언트" << eos;
 		BEGIN_DB
 		{
 			//add by zdj
-			cout << "CLLoginHandler.cpp step6" << endl;
+			cout << "CLLoginHandler.cpp step6" << eos;
 
 			// 증거를 남긴다.
 			pStmt = g_pDatabaseManager->getConnection("DARKEDEN")->createStatement();
@@ -237,23 +237,23 @@ void CLLoginHandler::execute (CLLogin* pPacket , Player* pPlayer)
 	else 
 	{
 		//add by zdj
-		cout << "CLLoginHandler.cpp step7" << endl;
+		cout << "CLLoginHandler.cpp step7" << eos;
 
 		// 웹 로그인 체크
 		if ( bWebLogin )
 		{
-			cout << "WebLogin" << endl;
+			cout << "WebLogin" << eos;
 
 			if ( !checkWebLogin( pPacket, pPlayer ) )
 			{
 				return;
 			}
 			else
-				cout << "Web Login OK" << endl;
+				cout << "Web Login OK" << eos;
 		}
 		else
 		{
-			cout << "not WebLogin" << endl;
+			cout << "not WebLogin" << eos;
 
 			// by sigi. 2002.10.23
 			if (!checkNetMarbleClient( pPacket, pPlayer ))
@@ -304,8 +304,8 @@ void CLLoginHandler::execute (CLLogin* pPacket , Player* pPlayer)
 
 		if (bError)
 		{
-//			cout << "이상한 글자" << endl;
-			//cout << "Error" << endl;
+//			cout << "이상한 글자" << eos;
+			//cout << "Error" << eos;
 			LCLoginError lcLoginError;
 			lcLoginError.setErrorID(INVALID_ID_PASSWORD);	
 			pLoginPlayer->sendPacket(&lcLoginError);
@@ -359,8 +359,8 @@ void CLLoginHandler::execute (CLLogin* pPacket , Player* pPlayer)
 		// invalid ID or Password 라는 뜻이다.
 		if (bNoPlayer)	//pResult->getRowCount() == 0) 
 		{
-			//cout << "no Result : " << ID.c_str() << endl;
-//			cout << "플레이어 없음" << endl;
+			//cout << "no Result : " << ID.c_str() << eos;
+//			cout << "플레이어 없음" << eos;
 			LCLoginError lcLoginError;
 			lcLoginError.setErrorID(INVALID_ID_PASSWORD);
 			pLoginPlayer->sendPacket(&lcLoginError);
@@ -369,7 +369,7 @@ void CLLoginHandler::execute (CLLogin* pPacket , Player* pPlayer)
 			// 실패 회수가 3보다 클 경우, 연결을 종료한다.
 			uint nFailed = pLoginPlayer->getFailureCount();
 
-//			cout << "실패 회수 " << nFailed << endl;
+//			cout << "실패 회수 " << nFailed << eos;
 
 			if (nFailed > 3) 
 			{
@@ -412,7 +412,7 @@ void CLLoginHandler::execute (CLLogin* pPacket , Player* pPlayer)
 				if (pResult->getRowCount() == 0) 
 				{
 					/*
-					cout << "NetMarble New Player: " << ID.c_str() << endl;
+					cout << "NetMarble New Player: " << ID.c_str() << eos;
 
 					pStmt->executeQuery("INSERT INTO Player (PlayerID, Password, Name, SSN, Event) Values ('%s', '%s', '%s', '123456-1122339', 0)",
 											ID.c_str(), PASSWORD.c_str(), ID.c_str());										
@@ -438,7 +438,7 @@ void CLLoginHandler::execute (CLLogin* pPacket , Player* pPlayer)
 				}
 				else
 				{
-					cout << "NetMarble Player: " << ID.c_str() << endl;
+					cout << "NetMarble Player: " << ID.c_str() << eos;
 
 					pResult->next();
 
@@ -458,7 +458,7 @@ void CLLoginHandler::execute (CLLogin* pPacket , Player* pPlayer)
 			}
 			else
 			{
-				cout << "Normal Player: " << ID.c_str() << endl;
+				cout << "Normal Player: " << ID.c_str() << eos;
 
 				pResult->next();
 
@@ -495,15 +495,15 @@ void CLLoginHandler::execute (CLLogin* pPacket , Player* pPlayer)
 			// add by inthesky for THAILAND child guard rule
 			bool bChildGuardArea = onChildGuardTimeArea(g_pConfig->getPropertyInt("CHILDGUARD_START_TIME"),g_pConf
 
-			cout << "Global ChildGuard Policy : " << g_pConfig->getProperty("CHILDGUARD") << endl;
-			cout << "ChildGuard Start Time : " << (int)g_pConfig->getPropertyInt("CHILDGUARD_START_TIME") << endl;
-			cout << "ChildGuard End Time : " << (int)g_pConfig->getPropertyInt("CHILDGUARD_END_TIME") << endl;
+			cout << "Global ChildGuard Policy : " << g_pConfig->getProperty("CHILDGUARD") << eos;
+			cout << "ChildGuard Start Time : " << (int)g_pConfig->getPropertyInt("CHILDGUARD_START_TIME") << eos;
+			cout << "ChildGuard End Time : " << (int)g_pConfig->getPropertyInt("CHILDGUARD_END_TIME") << eos;
 
-			if(bChildGuardArea)     cout << "ChildGuard System : RUN" << endl;
-			else                    cout << "ChildGuard System : STOP" << endl;
+			if(bChildGuardArea)     cout << "ChildGuard System : RUN" << eos;
+			else                    cout << "ChildGuard System : STOP" << eos;
 
-			if(bPermission) cout << "(" << ID << ") Permission : ALLOW" << endl;
-			else            cout << "(" << ID << ") Permission : DENY" << endl;
+			if(bPermission) cout << "(" << ID << ") Permission : ALLOW" << eos;
+			else            cout << "(" << ID << ") Permission : DENY" << eos;
 
 			if (!bPermission && bChildGuardArea )
 			{
@@ -807,18 +807,18 @@ void CLLoginHandler::execute (CLLogin* pPacket , Player* pPlayer)
 							lcLoginOK.setFamily( true );
 							lcLoginOK.setLastDays( familyLastDays );
 
-							cout << "Family 요금제" << endl;
+							cout << "Family 요금제" << eos;
 						}
 						else 
 						{
 							lcLoginOK.setFamily( false );
 							lcLoginOK.setLastDays( lastDays );
-							cout << "Premium 요금제" << endl;
+							cout << "Premium 요금제" << eos;
 						}
 					}
 				}
 
-				cout << lcLoginOK.getLastDays() << "일 남았습니다." << endl;
+				cout << lcLoginOK.getLastDays() << "일 남았습니다." << eos;
 				if ( lcLoginOK.getLastDays() > 1000 )
 					filelog("PayPlayDateLog.txt", "UserID : %s , LastDays : %ld", ID.c_str() ,lcLoginOK.getLastDays());
 
@@ -884,7 +884,7 @@ void CLLoginHandler::execute (CLLogin* pPacket , Player* pPlayer)
 
 				*/
 				pLoginPlayer->sendPacket(&lcLoginOK);
-				cout << "LoginOK send" << endl;
+				cout << "LoginOK send" << eos;
 
 				pLoginPlayer->setPlayerStatus(LPS_WAITING_FOR_CL_GET_PC_LIST);
 			}
@@ -928,16 +928,16 @@ isAdultByBirthday(const string& birthday)
 	if ( Timec.tm_mday < 10 ) AdultSSN << "0";
 	AdultSSN << Timec.tm_mday;
 
-	cout << "SSN = " << birthday.c_str() << " ADULTSSN = " << AdultSSN.toString().c_str() << endl;
+	cout << "SSN = " << birthday.c_str() << " ADULTSSN = " << AdultSSN.toString().c_str() << eos;
 
 	// 성인인지 아닌지 주민등록 번호 체크
 	if (atoi(birthday.c_str()) <= atoi(AdultSSN.toString().c_str()))
 	{
-		//cout << "어른" << endl;
+		//cout << "어른" << eos;
 		return true;
 	}
 		
-	//cout << "애들" << endl;
+	//cout << "애들" << eos;
 	return false;
 }
 
@@ -1074,7 +1074,7 @@ bool CLLoginHandler::checkNetMarbleClient (CLLogin* pPacket , Player* pPlayer)
 		pLoginPlayer->setFreePass(true);
 
 
-		//cout << "NetMarble Login OK" << endl;
+		//cout << "NetMarble Login OK" << eos;
 	}
 
 #endif
@@ -1117,21 +1117,21 @@ bool CLLoginHandler::checkFreePass (CLLogin* pPacket , Player* pPlayer)
 			
 			if (password==pPacket->getPassword())
 			{
-				//cout << "password OK" << endl;
+				//cout << "password OK" << eos;
 				SAFE_DELETE(pStmt);
 				return true;
 			}
 			else
 			{
-				//cout << "password wrong: " << password << " != " << pPacket->getPassword().c_str() << endl;
+				//cout << "password wrong: " << password << " != " << pPacket->getPassword().c_str() << eos;
 			}
 		}
 		else
 		{
-			//cout << "ID wrong: " << pPacket->getID().c_str() << endl;
+			//cout << "ID wrong: " << pPacket->getID().c_str() << eos;
 			// 원래는 안되는건데..
 			// 새 사용자는 무조건 추가한다고 넷마블해서 그래 하라네. 헐~~~
-			cout << "NetMarble New Player: " << pPacket->getID().c_str() << endl;
+			cout << "NetMarble New Player: " << pPacket->getID().c_str() << eos;
 
 			// 여기까지 오면 무조건 넷마블이라고 본다.
 			// SpecialEventCount 칼럼은 2로 세팅해준다. 즉, 이벤트 아이템을 이미준걸로 생각
@@ -1336,14 +1336,14 @@ bool CLLoginHandler::checkWebLogin( CLLogin* pPacket, Player* pPlayer )
 			VSDateTime vsCreate( pResult->getString(2) );
 			VSDateTime vsNow( pResult->getString(3) );
 
-			cout << "PlayerID: " << pPacket->getID().c_str() << endl;
-			cout << "*DB)     Key: " << key.c_str() << ", create: " << vsCreate.toString().c_str() << ", now:" << vsNow.toString().c_str() << endl;
-			cout << "*Packet) Key: " << pPacket->getPassword() << endl;
+			cout << "PlayerID: " << pPacket->getID().c_str() << eos;
+			cout << "*DB)     Key: " << key.c_str() << ", create: " << vsCreate.toString().c_str() << ", now:" << vsNow.toString().c_str() << eos;
+			cout << "*Packet) Key: " << pPacket->getPassword() << eos;
 
 			// check key
 			if ( key != pPacket->getPassword() )
 			{
-				cout << "키가 틀림 : " << pPacket->getPassword() << endl;
+				cout << "키가 틀림 : " << pPacket->getPassword() << eos;
 				LCLoginError lcLoginError;
 				lcLoginError.setErrorID(INVALID_ID_PASSWORD);	
 				pLoginPlayer->sendPacket(&lcLoginError);
@@ -1351,7 +1351,7 @@ bool CLLoginHandler::checkWebLogin( CLLogin* pPacket, Player* pPlayer )
 				filelog( "keydiff.txt", "db key: %s, packet key: %s, Player ID: %s", key.c_str(), pPacket->getPassword().c_str(), pPacket->getID().c_str() );
 
 				SAFE_DELETE(pStmt);
-				cout << "3" << endl;
+				cout << "3" << eos;
 				return false;
 			}
 
@@ -1375,7 +1375,7 @@ bool CLLoginHandler::checkWebLogin( CLLogin* pPacket, Player* pPlayer )
 		}
 		else
 		{
-			cout << "키가 없다 : " << pPacket->getID() << endl;
+			cout << "키가 없다 : " << pPacket->getID() << eos;
 			// 키가 없다.
 			LCLoginError lcLoginError;
 			lcLoginError.setErrorID(NOT_FOUND_KEY);	
@@ -1383,7 +1383,7 @@ bool CLLoginHandler::checkWebLogin( CLLogin* pPacket, Player* pPlayer )
 			filelog( "loginfail.txt", "Error Code: NOT_FOUND_KEY, 11, PlayerID : %s", pPacket->getID().c_str() );
 
 			SAFE_DELETE(pStmt);
-			cout << "4" << endl;
+			cout << "4" << eos;
 			return false;
 		}
 
@@ -1391,7 +1391,7 @@ bool CLLoginHandler::checkWebLogin( CLLogin* pPacket, Player* pPlayer )
 	}
 	END_DB(pStmt)
 	} catch (Throwable& t) {
-		cout << "5" << endl;
+		cout << "5" << eos;
 		return false;
 	}
 

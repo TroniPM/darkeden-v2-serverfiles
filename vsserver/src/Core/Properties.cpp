@@ -141,7 +141,7 @@ void Properties::save ()
 	for ( map< string , string , StringCompare >::iterator itr = m_Properties.begin() ;
 		  itr != m_Properties.end() ;
 		  itr ++ )
-		ofile << itr->first << ' ' << Separator << ' ' << itr->second << endl;
+		ofile << itr->first << ' ' << Separator << ' ' << itr->second << eos;
 	
 	ofile.close();
 

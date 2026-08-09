@@ -134,7 +134,7 @@ void UpdateServerPlayer::processCommand ()
 
 			if (bLog)
 			{
-				//cout << "packetID:" << packetID << ",packetSize:" << szPacketHeader + packetSize << endl;
+				//cout << "packetID:" << packetID << ",packetSize:" << szPacketHeader + packetSize << eos;
 				StringStream msg;
 				msg << "packetID:" << packetID << ",packetSize:" << szPacketHeader + packetSize;
 				filelog("badUser.txt", "%s", msg.toString().c_str());
@@ -151,7 +151,7 @@ void UpdateServerPlayer::processCommand ()
 								<< szPacketHeader + packetSize << "/" << m_pInputStream->length() << ") from "
 								<< m_pSocket->getHost() << ":" << m_pSocket->getPort();
 
-							//cout << msg.toString() << endl;
+							//cout << msg.toString() << eos;
 							filelog("badUser.txt", "%s", msg.toString().c_str());
 						}
 						
@@ -181,7 +181,7 @@ void UpdateServerPlayer::processCommand ()
 
 						CUBeginUpdate cuBeginUpdate;
 						cuBeginUpdate.read( *m_pInputStream );
-						//cout << "before execute" << endl;
+						//cout << "before execute" << eos;
 
 						if (bLog)
 						{
@@ -197,7 +197,7 @@ void UpdateServerPlayer::processCommand ()
 						{
 							cuBeginUpdate.execute( this );
 						}	
-						//cout << "after execute" << endl;
+						//cout << "after execute" << eos;
 					}
 					break;
 
@@ -210,7 +210,7 @@ void UpdateServerPlayer::processCommand ()
 								<< szPacketHeader + packetSize << "/" << m_pInputStream->length() << ") from "
 								<< m_pSocket->getHost() << ":" << m_pSocket->getPort();
 
-							//cout << msg.toString() << endl;
+							//cout << msg.toString() << eos;
 							filelog("badUser.txt", "%s", msg.toString().c_str());
 						}
 
@@ -253,7 +253,7 @@ void UpdateServerPlayer::processCommand ()
 								<< szPacketHeader + packetSize << "/" << m_pInputStream->length() << ") from "
 								<< m_pSocket->getHost() << ":" << m_pSocket->getPort();
 
-							//cout << msg.toString() << endl;
+							//cout << msg.toString() << eos;
 							filelog("badUser.txt", "%s", msg.toString().c_str());
 						}
 						
@@ -297,7 +297,7 @@ void UpdateServerPlayer::processCommand ()
 								<< szPacketHeader + packetSize << "/" << m_pInputStream->length() << ") from "
 								<< m_pSocket->getHost() << ":" << m_pSocket->getPort();
 
-							//cout << msg.toString() << endl;
+							//cout << msg.toString() << eos;
 							filelog("badUser.txt", "%s", msg.toString().c_str());
 						}
 						
@@ -335,7 +335,7 @@ void UpdateServerPlayer::processCommand ()
 					{
 						if (bLog)
 						{
-							//cout << "Invalid Packet ID!!!" << endl;
+							//cout << "Invalid Packet ID!!!" << eos;
 							filelog("badUser.txt", "Invalid Packet ID");
 						}
 						throw InvalidProtocolException("invalid packet id");
@@ -390,7 +390,7 @@ void UpdateServerPlayer::sendPacket ( Packet * pPacket )
 	__BEGIN_DEBUG
 
 	//cout << "SEND PACKET " << pPacket->getPacketName().c_str() << " to "
-//		<< m_pSocket->getHost().c_str() << ":" << m_pSocket->getPort() << endl;
+//		<< m_pSocket->getHost().c_str() << ":" << m_pSocket->getPort() << eos;
 
 	PacketID_t packetID = pPacket->getPacketID();
 	PacketSize_t packetSize = pPacket->getPacketSize();
@@ -399,8 +399,8 @@ void UpdateServerPlayer::sendPacket ( Packet * pPacket )
 	// 패킷을 소켓에 직접 뿌린다.
 	pPacket->write( m_pSocket );
 
-	//cout << "Send Packet Size : " << pPacket->getPacketSize() << endl;
-	//cout << "Send Buffer Size : " << m_pSocket->getSendBufferSize() << endl;
+	//cout << "Send Packet Size : " << pPacket->getPacketSize() << eos;
+	//cout << "Send Buffer Size : " << m_pSocket->getSendBufferSize() << eos;
 
 	__END_DEBUG
 

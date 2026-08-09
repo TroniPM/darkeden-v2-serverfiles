@@ -398,9 +398,9 @@ void ItemLoaderManager::load (Vampire* pVampire)
 	g_pSlayerPortalItemLoader->load(pVampire);
 	g_pVampirePortalItemLoader->load(pVampire);
 	g_pEventGiftBoxLoader->load(pVampire);
-	cout << " 오류의 근원지인가?" << endl;
+	cout << " 오류의 근원지인가?" << eos;
 	g_pEventStarLoader->load(pVampire);
-	cout << " 오류의 근원지인가?2" << endl;
+	cout << " 오류의 근원지인가?2" << eos;
 	g_pVampireEarringLoader->load(pVampire);
 	g_pRelicLoader->load(pVampire);
 	g_pVampireWeaponLoader->load(pVampire);

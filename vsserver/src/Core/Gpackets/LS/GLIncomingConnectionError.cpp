@@ -101,7 +101,7 @@ void GLIncomingConnectionError::execute ( Player * pPlayer )
 {
 	__BEGIN_TRY
 		
-	//cout << "GLIncomingConnectionError::execute() called." << endl;
+	//cout << "GLIncomingConnectionError::execute() called." << eos;
 
 	GLIncomingConnectionErrorHandler::execute( this );
 		

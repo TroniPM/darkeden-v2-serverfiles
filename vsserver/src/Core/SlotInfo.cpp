@@ -38,7 +38,7 @@ void SlotInfo::read ( SocketInputStream & iStream )
 	iStream.read( m_MainColor );
 
 	} catch( Throwable & t ) {
-		cout << t.toString() << endl;
+		cout << t.toString() << eos;
 	}
 
 	__END_CATCH
@@ -74,7 +74,7 @@ void SlotInfo::write ( SocketOutputStream & oStream ) const
 	oStream.write( m_MainColor );
 
 	} catch (Throwable & t ) {
-		cout << t.toString() << endl;
+		cout << t.toString() << eos;
 	}
 
 	__END_CATCH

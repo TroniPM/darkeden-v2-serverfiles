@@ -36,7 +36,7 @@ Larva::Larva(ItemType_t itemType, const list<OptionType_t>& optionType, ItemNum_
 	throw()
 : m_ItemType(itemType), m_Num(Num)
 {
-	//cout << "Larva::Larva(" << getOptionTypeToString(optionType).c_str() << ")" << endl;
+	//cout << "Larva::Larva(" << getOptionTypeToString(optionType).c_str() << ")" << eos;
 	if (!g_pItemInfoManager->isPossibleItem(getItemClass(), m_ItemType, optionType))
 	{
 		filelog("itembug.log", "Larva::Larva() : Invalid item type or option type");
@@ -635,10 +635,10 @@ void LarvaLoader::load(Creature* pCreature)
 									pBeltInventory = ((SubInventory*)pBelt)->getInventory();
 										if (pBeltInventory->canAddingEx(x, y, pLarva))
 										{
-											cout << " 추가완료"<< endl;
+											cout << " 추가완료"<< eos;
 											pBeltInventory->addItemEx(x, y, pLarva);
 										}else{
-											cout << " 버그"<< endl;
+											cout << " 버그"<< eos;
 											processItemBugEx(pCreature, pLarva);
 										}
 								}else{

@@ -68,12 +68,12 @@ void EffectWillOfLife::unaffect()
 {
     __BEGIN_TRY
 
-	//cout << "EffectWillOfLife" << "unaffect BEGIN" << endl;
+	//cout << "EffectWillOfLife" << "unaffect BEGIN" << eos;
 
     Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
     unaffect(pCreature);
 
-	//cout << "EffectWillOfLife" << "unaffect END" << endl;
+	//cout << "EffectWillOfLife" << "unaffect END" << eos;
 
     __END_CATCH
 }
@@ -84,7 +84,7 @@ void EffectWillOfLife::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectWillOfLife" << "unaffect BEGIN" << endl;
+	//cout << "EffectWillOfLife" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isVampire());
@@ -104,7 +104,7 @@ void EffectWillOfLife::unaffect(Creature* pCreature)
 	gcHP.setCurrentHP( pVampire->getHP( ATTR_CURRENT ) );
 	pVampire->getPlayer()->sendPacket( &gcHP );
 
-	//cout << "EffectWillOfLife" << "unaffect END" << endl;
+	//cout << "EffectWillOfLife" << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

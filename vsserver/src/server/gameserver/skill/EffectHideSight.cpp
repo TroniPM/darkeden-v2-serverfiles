@@ -31,7 +31,7 @@ void EffectHideSight::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectHideSight" << "unaffect BEGIN" << endl;
+	//cout << "EffectHideSight" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isOusters());
@@ -58,7 +58,7 @@ void EffectHideSight::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_HIDE_SIGHT);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectHideSight" << "unaffect END" << endl;
+	//cout << "EffectHideSight" << "unaffect END" << eos;
 
 	__END_CATCH
 }

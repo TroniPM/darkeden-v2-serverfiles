@@ -325,7 +325,7 @@ void WarSystem::sendGCWarList(Player* pPlayer)
 	if (!m_GCWarList.isEmpty())
 	{
 		pPlayer->sendPacket( &m_GCWarList );
-		//cout << m_GCWarList.toString().c_str() << endl;
+		//cout << m_GCWarList.toString().c_str() << eos;
 	}
 
     __LEAVE_CRITICAL_SECTION(m_MutexWarList)
@@ -538,7 +538,7 @@ WarSchedule* WarSystem::getActiveWarSchedule_LOCKED( ZoneID_t zoneID )
 		War* pWar = dynamic_cast<War*>( pWarSchedule->getWork() );
 		if( pWar == NULL )
 		{
-			cout << "WarSystem에 들어있는 Schedule의 Work객체가 War가 아니거나 NULL입니다. 삽질삽질~~~~" << endl;
+			cout << "WarSystem에 들어있는 Schedule의 Work객체가 War가 아니거나 NULL입니다. 삽질삽질~~~~" << eos;
 			continue;
 		}
 

@@ -297,7 +297,7 @@ void Trigger::setActions (const string & str)
 	} 
 	catch (NoSuchElementException & nsee)
 	{
-		cout << nsee.toString() << endl;
+		cout << nsee.toString() << eos;
 		throw Error(nsee.toString());
 	}
 
@@ -327,7 +327,7 @@ void Trigger::setActions (const string & str)
 	} 
 	catch (NoSuchElementException & nsee)
 	{
-		cout << nsee.toString() << endl;
+		cout << nsee.toString() << eos;
 		throw Error(nsee.toString());
 	}
 	*/
@@ -386,7 +386,7 @@ void Trigger::setCounterActions (const string & str)
 	} 
 	catch (NoSuchElementException & nsee)
 	{
-		cout << nsee.toString() << endl;
+		cout << nsee.toString() << eos;
 		throw Error(nsee.toString());
 	}
 
@@ -416,7 +416,7 @@ void Trigger::setCounterActions (const string & str)
 	} 
 	catch (NoSuchElementException & nsee)
 	{
-		cout << nsee.toString() << endl;
+		cout << nsee.toString() << eos;
 		throw Error(nsee.toString());
 	}
 	*/

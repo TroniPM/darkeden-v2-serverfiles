@@ -284,7 +284,7 @@ void CastleInfoManager::load ()
 			pZoneInfo->setCastle();
 
 			CastleInfo* pCastleInfo = new CastleInfo();
-			//cout << "new OK" << endl;
+			//cout << "new OK" << eos;
 
 			pCastleInfo->setZoneID( zoneID );
 			pCastleInfo->setShrineID( pResult->getInt(++i) );
@@ -321,7 +321,7 @@ void CastleInfoManager::load ()
 
 			addCastleInfo(pCastleInfo);
 
-			cout << pCastleInfo->toString().c_str() << endl;
+			cout << pCastleInfo->toString().c_str() << eos;
 
 		}
 			

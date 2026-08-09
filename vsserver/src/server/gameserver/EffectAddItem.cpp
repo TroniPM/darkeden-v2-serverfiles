@@ -78,7 +78,7 @@ void EffectAddItem::unaffect (Zone* pZone , ZoneCoord_t x , ZoneCoord_t y , Obje
 {
 	__BEGIN_TRY
 
-	//cout << "EffectAddItem::unaffect (Zone* pZone , ZoneCoord_t x , ZoneCoord_t y , Object* pTarget)" << endl;
+	//cout << "EffectAddItem::unaffect (Zone* pZone , ZoneCoord_t x , ZoneCoord_t y , Object* pTarget)" << eos;
 
 	// 올바른 좌표이어야 한다.
 	Assert(pTarget!=NULL);

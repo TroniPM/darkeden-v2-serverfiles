@@ -205,7 +205,7 @@ Slayer::~Slayer()
 						color[PCSlayerInfo::SLAYER_COLOR_WEAPON],
 						color[PCSlayerInfo::SLAYER_COLOR_SHIELD]);
 
-		//cout << "SAVE = " << pField << endl;
+		//cout << "SAVE = " << pField << eos;
 			
 		tinysave(pField);
 
@@ -569,7 +569,7 @@ void Slayer::loadItem( bool checkTimeLimit )
 	throw (InvalidProtocolException, Error)
 {
 	__BEGIN_TRY
-	////cout << " 아이템 로드 시작" << endl;
+	////cout << " 아이템 로드 시작" << eos;
 	PlayerCreature::loadItem();
 
 	// 인벤토리를 생성한다. 
@@ -578,12 +578,12 @@ void Slayer::loadItem( bool checkTimeLimit )
 	m_pInventory = new Inventory(10, 6);
 	m_pInventory->setOwner(getName());
 
-	//cout << " 아이템 로드 진행 시작" << endl;
+	//cout << " 아이템 로드 진행 시작" << eos;
 
 	// 아이템을 로드한다.
 	g_pItemLoaderManager->load(this);
 
-	//cout << " 아이템 로드 진행" << endl;
+	//cout << " 아이템 로드 진행" << eos;
 
 	// 구매한 아이템을 로드한다.
 	PlayerCreature::loadGoods();
@@ -608,18 +608,18 @@ void Slayer::loadItem( bool checkTimeLimit )
 	}
 
 	// 입고 있는 옷에 따라 능력치를 계산해 준다.
-	//cout << " 여기서 안됨?" << endl;
+	//cout << " 여기서 안됨?" << eos;
 	initAllStat();
 	//cout << "루프 돌림"<<endl;
-	////cout << "Slayer::loadItem() : STR[CURRENT]" << (int)m_STR[ATTR_CURRENT] << endl;
-	////cout << "Slayer::loadItem() : STR[MAX]" << (int)m_STR[ATTR_MAX] << endl;
-	////cout << "Slayer::loadItem() : STR[BASIC]" << (int)m_STR[ATTR_BASIC] << endl;
-	////cout << "Slayer::loadItem() : DEX[CURRENT]" << (int)m_DEX[ATTR_CURRENT] << endl;
-	////cout << "Slayer::loadItem() : DEX[MAX]" << (int)m_DEX[ATTR_MAX] << endl;
-	////cout << "Slayer::loadItem() : DEX[BASIC]" << (int)m_DEX[ATTR_BASIC] << endl;
-	////cout << "Slayer::loadItem() : INT[CURRENT]" << (int)m_INT[ATTR_CURRENT] << endl;
-	////cout << "Slayer::loadItem() : INT[MAX]" << (int)m_INT[ATTR_MAX] << endl;
-	////cout << "Slayer::loadItem() : INT[BASIC]" << (int)m_INT[ATTR_BASIC] << endl;
+	////cout << "Slayer::loadItem() : STR[CURRENT]" << (int)m_STR[ATTR_CURRENT] << eos;
+	////cout << "Slayer::loadItem() : STR[MAX]" << (int)m_STR[ATTR_MAX] << eos;
+	////cout << "Slayer::loadItem() : STR[BASIC]" << (int)m_STR[ATTR_BASIC] << eos;
+	////cout << "Slayer::loadItem() : DEX[CURRENT]" << (int)m_DEX[ATTR_CURRENT] << eos;
+	////cout << "Slayer::loadItem() : DEX[MAX]" << (int)m_DEX[ATTR_MAX] << eos;
+	////cout << "Slayer::loadItem() : DEX[BASIC]" << (int)m_DEX[ATTR_BASIC] << eos;
+	////cout << "Slayer::loadItem() : INT[CURRENT]" << (int)m_INT[ATTR_CURRENT] << eos;
+	////cout << "Slayer::loadItem() : INT[MAX]" << (int)m_INT[ATTR_MAX] << eos;
+	////cout << "Slayer::loadItem() : INT[BASIC]" << (int)m_INT[ATTR_BASIC] << eos;
 
 	__END_CATCH
 }
@@ -735,17 +735,17 @@ bool Slayer::load()
 		RankExp_t RankGoalExp        = pResult->getInt(++i);
 
 		m_pRank = new Rank( CurRank, RankGoalExp, RankExpTable::s_RankExpTables[RANK_TYPE_SLAYER] );
-//		//cout << getRankGoalExp() << endl;
+//		//cout << getRankGoalExp() << eos;
 
-		////cout << "Slayer::load() : STR[CURRENT]" << (int)m_STR[ATTR_CURRENT] << endl;
-		////cout << "Slayer::load() : STR[MAX]" << (int)m_STR[ATTR_MAX] << endl;
-		////cout << "Slayer::load() : STR[BASIC]" << (int)m_STR[ATTR_BASIC] << endl;
-		////cout << "Slayer::load() : DEX[CURRENT]" << (int)m_DEX[ATTR_CURRENT] << endl;
-		////cout << "Slayer::load() : DEX[MAX]" << (int)m_DEX[ATTR_MAX] << endl;
-		////cout << "Slayer::load() : DEX[BASIC]" << (int)m_DEX[ATTR_BASIC] << endl;
-		////cout << "Slayer::load() : INT[CURRENT]" << (int)m_INT[ATTR_CURRENT] << endl;
-		////cout << "Slayer::load() : INT[MAX]" << (int)m_INT[ATTR_MAX] << endl;
-		////cout << "Slayer::load() : INT[BASIC]" << (int)m_INT[ATTR_BASIC] << endl;
+		////cout << "Slayer::load() : STR[CURRENT]" << (int)m_STR[ATTR_CURRENT] << eos;
+		////cout << "Slayer::load() : STR[MAX]" << (int)m_STR[ATTR_MAX] << eos;
+		////cout << "Slayer::load() : STR[BASIC]" << (int)m_STR[ATTR_BASIC] << eos;
+		////cout << "Slayer::load() : DEX[CURRENT]" << (int)m_DEX[ATTR_CURRENT] << eos;
+		////cout << "Slayer::load() : DEX[MAX]" << (int)m_DEX[ATTR_MAX] << eos;
+		////cout << "Slayer::load() : DEX[BASIC]" << (int)m_DEX[ATTR_BASIC] << eos;
+		////cout << "Slayer::load() : INT[CURRENT]" << (int)m_INT[ATTR_CURRENT] << eos;
+		////cout << "Slayer::load() : INT[MAX]" << (int)m_INT[ATTR_MAX] << eos;
+		////cout << "Slayer::load() : INT[BASIC]" << (int)m_INT[ATTR_BASIC] << eos;
 
 		m_HP[ATTR_CURRENT]  = pResult->getInt(++i);
 		m_HP[ATTR_MAX]      = pResult->getInt(++i);
@@ -1043,12 +1043,12 @@ bool Slayer::load()
 	if (pSTRInfo->getAccumExp() != m_STRExp + m_STRGoalExp) 
 	{
 		//ofstream file("능력치조정.txt", ios::out | ios::app);
-		//file << "NAME:" << m_Name << endl;
-		//file << "==STR==" << endl;
-		//file << "현재레벨의총경험치 : " << (int)pSTRInfo->getAccumExp() << endl;
-		//file << "현재 누적 경험치 : " << (int)m_STRExp << endl;
-		//file << "현재 목표 경험치 : " << (int)m_STRGoalExp << endl;
-		//file << endl;
+		//file << "NAME:" << m_Name << eos;
+		//file << "==STR==" << eos;
+		//file << "현재레벨의총경험치 : " << (int)pSTRInfo->getAccumExp() << eos;
+		//file << "현재 누적 경험치 : " << (int)m_STRExp << eos;
+		//file << "현재 목표 경험치 : " << (int)m_STRGoalExp << eos;
+		//file << eos;
 
 		// 현재 목표 경험치가 현재 레벨의 목표 경험치 보다 크다면, 재 설정 해준다.
 		if (m_STRGoalExp > pSTRInfo->getGoalExp()) 
@@ -1061,8 +1061,8 @@ bool Slayer::load()
 		// 이전 레벨의 총 경험치 + 목표 경험치 변화량 = 현재 누적 경험치
 		m_STRExp = pBeforeSTRInfo->getAccumExp() + (pSTRInfo->getGoalExp() - m_STRGoalExp);
 
-		//file << "수정된 누적 경험치 : " << (int)m_STRExp << endl;
-		//file << "수정된 목표 경험치 : " << (int)m_STRGoalExp << endl;
+		//file << "수정된 누적 경험치 : " << (int)m_STRExp << eos;
+		//file << "수정된 목표 경험치 : " << (int)m_STRGoalExp << eos;
 
 //		StringStream attrsave;
 //		attrsave << "STRExp = " << (int)m_STRExp << ", STRGoalExp = " << (int)m_STRGoalExp;
@@ -1082,12 +1082,12 @@ bool Slayer::load()
 	if (pDEXInfo->getAccumExp() != m_DEXExp + m_DEXGoalExp) 
 	{
 		//ofstream file("능력치조정.txt", ios::out | ios::app);
-		//file << "NAME:" << m_Name << endl;
-		//file << "==DEX==" << endl;
-		//file << "현재레벨의총경험치 : " << (int)pDEXInfo->getAccumExp() << endl;
-		//file << "현재 누적 경험치 : " << (int)m_DEXExp << endl;
-		//file << "현재 목표 경험치 : " << (int)m_DEXGoalExp << endl;
-		//file << endl;
+		//file << "NAME:" << m_Name << eos;
+		//file << "==DEX==" << eos;
+		//file << "현재레벨의총경험치 : " << (int)pDEXInfo->getAccumExp() << eos;
+		//file << "현재 누적 경험치 : " << (int)m_DEXExp << eos;
+		//file << "현재 목표 경험치 : " << (int)m_DEXGoalExp << eos;
+		//file << eos;
 
 		// 현재 목표 경험치가 현재 레벨의 목표 경험치 보다 크다면, 재 설정 해준다.
 		if (m_DEXGoalExp > pDEXInfo->getGoalExp()) 
@@ -1100,8 +1100,8 @@ bool Slayer::load()
 		// 이전 레벨의 총 경험치 + 목표 경험치 변화량 = 현재 누적 경험치
 		m_DEXExp = pBeforeDEXInfo->getAccumExp() + (pDEXInfo->getGoalExp() - m_DEXGoalExp);
 
-		//file << "수정된 누적 경험치 : " << (int)m_DEXExp << endl;
-		//file << "수정된 목표 경험치 : " << (int)m_DEXGoalExp << endl;
+		//file << "수정된 누적 경험치 : " << (int)m_DEXExp << eos;
+		//file << "수정된 목표 경험치 : " << (int)m_DEXGoalExp << eos;
 
 //		StringStream attrsave;
 //		attrsave << "DEXExp = " << (int)m_DEXExp << ", DEXGoalExp = " << (int)m_DEXGoalExp;
@@ -1121,12 +1121,12 @@ bool Slayer::load()
 	if (pINTInfo->getAccumExp() != m_INTExp + m_INTGoalExp) 
 	{
 		//ofstream file("능력치조정.txt", ios::out | ios::app);
-		//file << "NAME:" << m_Name << endl;
-		//file << "==INT==" << endl;
-		//file << "현재레벨의총경험치 : " << (int)pINTInfo->getAccumExp() << endl;
-		//file << "현재 누적 경험치 : " << (int)m_INTExp << endl;
-		//file << "현재 목표 경험치 : " << (int)m_INTGoalExp << endl;
-		//file << endl;
+		//file << "NAME:" << m_Name << eos;
+		//file << "==INT==" << eos;
+		//file << "현재레벨의총경험치 : " << (int)pINTInfo->getAccumExp() << eos;
+		//file << "현재 누적 경험치 : " << (int)m_INTExp << eos;
+		//file << "현재 목표 경험치 : " << (int)m_INTGoalExp << eos;
+		//file << eos;
 
 		// 현재 목표 경험치가 현재 레벨의 목표 경험치 보다 크다면, 재 설정 해준다.
 		if (m_INTGoalExp > pINTInfo->getGoalExp()) 
@@ -1139,8 +1139,8 @@ bool Slayer::load()
 		// 이전 레벨의 총 경험치 + 목표 경험치 변화량 = 현재 누적 경험치
 		m_INTExp = pBeforeINTInfo->getAccumExp() + (pINTInfo->getGoalExp() - m_INTGoalExp);
 
-		//file << "수정된 누적 경험치 : " << (int)m_INTExp << endl;
-		//file << "수정된 목표 경험치 : " << (int)m_INTGoalExp << endl;
+		//file << "수정된 누적 경험치 : " << (int)m_INTExp << eos;
+		//file << "수정된 목표 경험치 : " << (int)m_INTGoalExp << eos;
 
 //		StringStream attrsave;
 //		attrsave << "INTExp = " << (int)m_INTExp << ", INTGoalExp = " << (int)m_INTGoalExp;
@@ -1169,12 +1169,12 @@ bool Slayer::load()
 	if (m_Rank>1 && pRankInfo->getAccumExp() != m_RankExp + m_RankGoalExp) 
 	{
 		//ofstream file("능력치조정.txt", ios::out | ios::app);
-		//file << "NAME:" << m_Name << endl;
-		//file << "==Rank==" << endl;
-		//file << "현재레벨의총경험치 : " << (int)pRankInfo->getAccumExp() << endl;
-		//file << "현재 누적 경험치 : " << (int)m_RankExp << endl;
-		//file << "현재 목표 경험치 : " << (int)m_RankGoalExp << endl;
-		//file << endl;
+		//file << "NAME:" << m_Name << eos;
+		//file << "==Rank==" << eos;
+		//file << "현재레벨의총경험치 : " << (int)pRankInfo->getAccumExp() << eos;
+		//file << "현재 누적 경험치 : " << (int)m_RankExp << eos;
+		//file << "현재 목표 경험치 : " << (int)m_RankGoalExp << eos;
+		//file << eos;
 
 		// 현재 목표 경험치가 현재 레벨의 목표 경험치 보다 크다면, 재 설정 해준다.
 		if (m_RankGoalExp > pRankInfo->getGoalExp()) 
@@ -1187,8 +1187,8 @@ bool Slayer::load()
 		// 이전 레벨의 총 경험치 + 목표 경험치 변화량 = 현재 누적 경험치
 		m_RankExp = pBeforeRankInfo->getAccumExp() + (pRankInfo->getGoalExp() - m_RankGoalExp);
 
-		//file << "수정된 누적 경험치 : " << (int)m_RankExp << endl;
-		//file << "수정된 목표 경험치 : " << (int)m_RankGoalExp << endl;
+		//file << "수정된 누적 경험치 : " << (int)m_RankExp << eos;
+		//file << "수정된 목표 경험치 : " << (int)m_RankGoalExp << eos;
 
 //		StringStream attrsave;
 //		attrsave << "RankExp = " << (int)m_RankExp << ", RankGoalExp = " << (int)m_RankGoalExp;
@@ -1214,12 +1214,12 @@ bool Slayer::load()
 			&& m_SkillDomainLevels[i] > 0) 
 		{
 			//ofstream file("도메인조정.txt", ios::out | ios::app);
-			//file << "NAME:" << m_Name << endl;
-			//file << "==" << i << "==" << endl;
-			//file << "현재레벨의총경험치 : " << (int)pDomainInfo->getAccumExp() << endl;
-			//file << "현재 누적 경험치 : " << (int)m_SkillDomainExps[i] << endl;
-			//file << "현재 목표 경험치 : " << (int)m_GoalExp[i] << endl;
-			//file << endl;
+			//file << "NAME:" << m_Name << eos;
+			//file << "==" << i << "==" << eos;
+			//file << "현재레벨의총경험치 : " << (int)pDomainInfo->getAccumExp() << eos;
+			//file << "현재 누적 경험치 : " << (int)m_SkillDomainExps[i] << eos;
+			//file << "현재 목표 경험치 : " << (int)m_GoalExp[i] << eos;
+			//file << eos;
 
 			// 현재 목표 경험치가 현재 레벨의 목표 경험치 보다 크다면, 재 설정 해준다.
 			if (m_GoalExp[i] > pDomainInfo->getGoalExp()) 
@@ -1232,8 +1232,8 @@ bool Slayer::load()
 			// 이전 레벨의 총 경험치 + 목표 경험치 변화량 = 현재 누적 경험치
 			m_SkillDomainExps[i] = pBeforeDomainInfo->getAccumExp() + (pDomainInfo->getGoalExp() - m_GoalExp[i]);
 
-			//file << "수정된 누적 경험치 : " << (int)m_SkillDomainExps[i] << endl;
-			//file << "수정된 목표 경험치 : " << (int)m_GoalExp[i] << endl;
+			//file << "수정된 누적 경험치 : " << (int)m_SkillDomainExps[i] << eos;
+			//file << "수정된 목표 경험치 : " << (int)m_GoalExp[i] << eos;
 
 			//StringStream attrsave;
 			// by sigi. 2002.5.15
@@ -1276,9 +1276,9 @@ bool Slayer::load()
 
 	// 모든 능력치를 로드했기 때문에,
 	// 이걸 기본으로 부가 능력치를 초기화한다.
-	//cout << " 이것도 시작?" << endl;
+	//cout << " 이것도 시작?" << eos;
 	initAllStat();
-	//cout << " 이것도 시작2?" << endl;
+	//cout << " 이것도 시작2?" << eos;
 	// 전쟁 참가 Flag 체크
 	if ( RaceWarLimiter::isInPCList( this ) )
 	{
@@ -1750,7 +1750,7 @@ void Slayer::wearItem(WearPart Part, Item* pItem)
 				// 검은 마우스 포인터에 달아줄 수 있지만, 방패는 어떻게 할 수가 없다.
 				// 인벤토리에 넣어줘야 할 텐데, 지금 당장은 어떻게 할 지를 모르겠네...
 				// 걍 입을 수 없다는 패킷을 보내주자...
-				cerr << "양손에 칼과 방패를 들고 있어서, 양손 무기를 장착할 수 없습니다." << endl;
+				cerr << "양손에 칼과 방패를 들고 있어서, 양손 무기를 장착할 수 없습니다." << eos;
 				return;
 			}
 		}
@@ -1894,17 +1894,17 @@ void Slayer::wearItem(WearPart Part, Item* pItem)
 			break;
 		case Item::ITEM_CLASS_COAT:
 			m_SlayerInfo.setJacketType(getJacketType(IType));
-			////cout << "Jacket: ItemType=" << (int)IType << ", JacketType=" << JacketType2String[m_SlayerInfo.getJacketType()] << endl;
+			////cout << "Jacket: ItemType=" << (int)IType << ", JacketType=" << JacketType2String[m_SlayerInfo.getJacketType()] << eos;
 			m_SlayerInfo.setJacketColor( color );
 			break;
 		case Item::ITEM_CLASS_TROUSER:
 			m_SlayerInfo.setPantsType(getPantsType(IType));
-			////cout << "Pants: ItemType=" << (int)IType << ", PantsType=" << PantsType2String[m_SlayerInfo.getPantsType()] << endl;
+			////cout << "Pants: ItemType=" << (int)IType << ", PantsType=" << PantsType2String[m_SlayerInfo.getPantsType()] << eos;
 			m_SlayerInfo.setPantsColor( color );
 			break;
 		case Item::ITEM_CLASS_SHOULDER_ARMOR:
 			m_SlayerInfo.setShoulderType(getShoulderType(IType));
-			////cout << "Pants: ItemType=" << (int)IType << ", PantsType=" << PantsType2String[m_SlayerInfo.getPantsType()] << endl;
+			////cout << "Pants: ItemType=" << (int)IType << ", PantsType=" << PantsType2String[m_SlayerInfo.getPantsType()] << eos;
 			m_SlayerInfo.setShoulderColor( color );
 			break;
 		default:
@@ -2105,7 +2105,7 @@ void Slayer::wearItem(WearPart Part)
 	m_pRealWearingCheck[Part] = true;
 
 	initAllStat();
-	//cout << " 이것도 시작2?" << endl;
+	//cout << " 이것도 시작2?" << eos;
 	sendRealWearingInfo();
 	sendModifyInfo(prev); // 비교 후 달라진 능력치 전송
 
@@ -2250,7 +2250,7 @@ void Slayer::wearItem(WearPart Part)
 		Zone* pZone = m_pZone;
 		pZone->broadcastPacket(m_X, m_Y, &_GCChangeShape, this);
 
-		////cout << _GCChangeShape.toString().c_str()  << endl;
+		////cout << _GCChangeShape.toString().c_str()  << eos;
 	}
 
 	if (m_pZone != NULL)
@@ -2312,14 +2312,14 @@ void Slayer::takeOffItem(WearPart Part, bool bAddOnMouse, bool bSendModifyInfo)
 	{
 		getSlayerRecord(prev); 
 		initAllStat();
-		//cout << " 이것도 시작3?" << endl;
+		//cout << " 이것도 시작3?" << eos;
 		sendRealWearingInfo();
 		sendModifyInfo(prev);
 	}
 	else
 	{
 		initAllStat();
-		//cout << " 이것도 시작3?" << endl;
+		//cout << " 이것도 시작3?" << eos;
 	}
 
 	// 있어선 안될 체크 -_-; 임시 땜빵
@@ -2574,7 +2574,7 @@ bool Slayer::isRealWearing(Item* pItem) const
 		if (!pGamePlayer->isPayPlaying() 
 			&& !pGamePlayer->isPremiumPlay())
 		{
-			////cout << "Premium Item :" << pItem->getItemClassName().c_str() << endl;
+			////cout << "Premium Item :" << pItem->getItemClassName().c_str() << eos;
 			return false;
 		}
 	}
@@ -2646,21 +2646,21 @@ bool Slayer::isRealWearing(Item* pItem) const
 		|| m_Sex == MALE && ReqGender == GENDER_FEMALE
 		|| m_Sex == FEMALE && ReqGender == GENDER_MALE)
 	{
-		////cout << "Disable: " << pItem->getItemClassName().c_str() << endl;
+		////cout << "Disable: " << pItem->getItemClassName().c_str() << eos;
 		return false;
 	}
 
 	if(ReqSkillLearn && !hasSkill(ReqSkillLearn)){
-		//cout << "스킬을 배우지않음" << endl;
+		//cout << "스킬을 배우지않음" << eos;
 		return false;
 	}
 
 	if(ReqDomainType && ReqDomainType != getHighestSkillDomain()){
-		//cout << "도메인이 다름" << endl;
+		//cout << "도메인이 다름" << eos;
 		return false;
 	} 
 
-	////cout << "Enable: " << pItem->getItemClassName().c_str() << endl;
+	////cout << "Enable: " << pItem->getItemClassName().c_str() << eos;
 
 	return true;
 
@@ -2709,7 +2709,7 @@ void Slayer::setMotorcycle(Motorcycle* pMotorcycle)
 	// by sigi.2002.6.22
 	m_SlayerInfo.setMotorcycleType( getMotorcycleType(pMotorcycle->getItemType()) );
 	m_SlayerInfo.setMotorItemType(m_pMotorcycle->getItemType());
-	//cout << "오토바이 :" << getMotorcycleType(pMotorcycle->getItemType()) << endl;
+	//cout << "오토바이 :" << getMotorcycleType(pMotorcycle->getItemType()) << eos;
 	if ( !pMotorcycle->hasOptionType() )
 	{
     	m_SlayerInfo.setMotorcycleColor(388);
@@ -2760,7 +2760,7 @@ void Slayer::getOffMotorcycle()
 		} 
 		else 
 		{
-			////cout << "Slayer::getOffMotorcycle() - pMotorcycleBox is NULL" << endl;
+			////cout << "Slayer::getOffMotorcycle() - pMotorcycleBox is NULL" << eos;
 			filelog("errorLog.txt", "Slayer::getOffMotorcycle() - No MotorcycleBox: %d", (int)m_pMotorcycle->getItemID());
 			//throw Error("오토바이를 벗을려고 하는데 ParkingCenter에 MotorcycleBox가 없습니다.");
 		}
@@ -2800,22 +2800,22 @@ PCSlayerInfo2* Slayer::getSlayerInfo2 () const
 	pInfo->setSkinColor(m_SkinColor);
 	pInfo->setMasterEffectColor(m_MasterEffectColor);
 
-	////cout << "PCSlayerInfo2: HairStyle = " << HairStyle2String[pInfo->getHairStyle()] << endl;
+	////cout << "PCSlayerInfo2: HairStyle = " << HairStyle2String[pInfo->getHairStyle()] << eos;
 
 	//pInfo->setPhoneNumber(m_PhoneNumber);
 
 	// 성향
 	pInfo->setAlignment(m_Alignment);
 
-	////cout << "STR[CURRENT]" << (int)m_STR[ATTR_CURRENT] << endl;
-	////cout << "STR[MAX]" << (int)m_STR[ATTR_MAX] << endl;
-	////cout << "STR[BASIC]" << (int)m_STR[ATTR_BASIC] << endl;
-	////cout << "DEX[CURRENT]" << (int)m_DEX[ATTR_CURRENT] << endl;
-	////cout << "DEX[MAX]" << (int)m_DEX[ATTR_MAX] << endl;
-	////cout << "DEX[BASIC]" << (int)m_DEX[ATTR_BASIC] << endl;
-	////cout << "INT[CURRENT]" << (int)m_INT[ATTR_CURRENT] << endl;
-	////cout << "INT[MAX]" << (int)m_INT[ATTR_MAX] << endl;
-	////cout << "INT[BASIC]" << (int)m_INT[ATTR_BASIC] << endl;
+	////cout << "STR[CURRENT]" << (int)m_STR[ATTR_CURRENT] << eos;
+	////cout << "STR[MAX]" << (int)m_STR[ATTR_MAX] << eos;
+	////cout << "STR[BASIC]" << (int)m_STR[ATTR_BASIC] << eos;
+	////cout << "DEX[CURRENT]" << (int)m_DEX[ATTR_CURRENT] << eos;
+	////cout << "DEX[MAX]" << (int)m_DEX[ATTR_MAX] << eos;
+	////cout << "DEX[BASIC]" << (int)m_DEX[ATTR_BASIC] << eos;
+	////cout << "INT[CURRENT]" << (int)m_INT[ATTR_CURRENT] << eos;
+	////cout << "INT[MAX]" << (int)m_INT[ATTR_MAX] << eos;
+	////cout << "INT[BASIC]" << (int)m_INT[ATTR_BASIC] << eos;
 
 	// 능력치
 	pInfo->setSTR(m_STR[ATTR_CURRENT], ATTR_CURRENT);
@@ -2840,7 +2840,7 @@ PCSlayerInfo2* Slayer::getSlayerInfo2 () const
 	pInfo->setRank(getRank());
 	pInfo->setRankExp(getRankGoalExp());
 
-//	//cout << getRankGoalExp() << endl;
+//	//cout << getRankGoalExp() << eos;
 
 	pInfo->setHP(m_HP[ATTR_CURRENT] , m_HP[ATTR_MAX]);
 	pInfo->setMP(m_MP[ATTR_CURRENT] , m_MP[ATTR_MAX]);
@@ -3432,7 +3432,7 @@ void Slayer::sendSlayerSkillInfo()
 				pSubSlayerSkillInfo->setSkillExpLevel(pSkillSlot->getExpLevel());
 				pSubSlayerSkillInfo->setSkillTurn(pSkillSlot->getInterval());
 
-//				//cout << pSkillInfo->getName() << "스킬 딜레이 " << pSkillSlot->getInterval() << endl;
+//				//cout << pSkillInfo->getName() << "스킬 딜레이 " << pSkillSlot->getInterval() << eos;
 
 				// casting time 항목을 다음 캐스팅까지 남은 시간으로 한다.
 				//pSubSlayerSkillInfo->setCastingTime(pSkillSlot->getCastingTime());
@@ -3970,7 +3970,7 @@ IP_t Slayer::getIP(void) const
 			pResult->next();
 			IP = pResult->getDWORD(1);
 			Port = pResult->getDWORD(2);
-			////cout << "Requested IP : " << IP   << endl;
+			////cout << "Requested IP : " << IP   << eos;
 		}
 
 		SAFE_DELETE(pStmt);
@@ -3979,7 +3979,7 @@ IP_t Slayer::getIP(void) const
 
 	struct in_addr sa;
 	sa.s_addr = IP;
-	//cout << getName().c_str() << " = " << inet_ntoa(sa) << ":" << Port << endl;
+	//cout << getName().c_str() << " = " << inet_ntoa(sa) << ":" << Port << eos;
 
 	RCSay dp;
 	dp.setName("server");

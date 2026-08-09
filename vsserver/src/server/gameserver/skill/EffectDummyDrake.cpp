@@ -85,7 +85,7 @@ void EffectDummyDrake::affect()
 // 		}
 // 	}
 
-	//cout << "EffectDummyDrake" << "affect BEGIN" << endl;
+	//cout << "EffectDummyDrake" << "affect BEGIN" << eos;
 
 	__END_CATCH 
 }
@@ -168,7 +168,7 @@ void EffectDummyDrake::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectDummyDrake" << "unaffect BEGIN" << endl;
+	//cout << "EffectDummyDrake" << "unaffect BEGIN" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature*>(m_pTarget);
 	// 读取5*5范围内对象,并创建伤害
@@ -221,7 +221,7 @@ void EffectDummyDrake::unaffect()
 	 	}
 	unaffect(pCreature);
 
-	//cout << "EffectDummyDrake" << "unaffect END" << endl;
+	//cout << "EffectDummyDrake" << "unaffect END" << eos;
 
 	__END_CATCH
 }

@@ -39,7 +39,7 @@ void SGExpelGuildMemberOKHandler::execute ( SGExpelGuildMemberOK* pPacket)
 
 #ifdef __GAME_SERVER__
 
-	//cout << "SGExpelGuildMember received" << endl;
+	//cout << "SGExpelGuildMember received" << eos;
 
 	Assert( pPacket != NULL );
 

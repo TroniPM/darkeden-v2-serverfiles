@@ -612,7 +612,7 @@ void SocketInputStream::resize ( int size )
 	m_Tail = len;	// m_Tail 은 들어있는 데이타의 길이와 같다.
 
 	ofstream ofile("buffer_resized.log",ios::app);
-	ofile << "SocketInputStream resized " << size << " bytes!" << endl;
+	ofile << "SocketInputStream resized " << size << " bytes!" << eos;
 	ofile.close();
 
 	__END_CATCH

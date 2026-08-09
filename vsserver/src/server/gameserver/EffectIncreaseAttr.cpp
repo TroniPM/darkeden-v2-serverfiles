@@ -60,12 +60,12 @@ void EffectIncreaseAttr::unaffect()
 {
 	__BEGIN_TRY	
 
-	//cout << "EffectIncreaseAttr" << "unaffect BEGIN" << endl;
+	//cout << "EffectIncreaseAttr" << "unaffect BEGIN" << eos;
 
     Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 	unaffect(pCreature);
 
-	//cout << "EffectIncreaseAttr" << "unaffect END" << endl;
+	//cout << "EffectIncreaseAttr" << "unaffect END" << eos;
 
 	__END_CATCH
 }
@@ -77,7 +77,7 @@ void EffectIncreaseAttr::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectIncreaseAttr" << "unaffect BEGIN" << endl;
+	//cout << "EffectIncreaseAttr" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -154,7 +154,7 @@ void EffectIncreaseAttr::unaffect(Creature* pCreature)
 		pZone->broadcastPacket(pOusters->getX(), pOusters->getY(), &gcOtherModifyInfo, pOusters);
 	}
 
-	//cout << "EffectIncreaseAttr" << "unaffect END" << endl;
+	//cout << "EffectIncreaseAttr" << "unaffect END" << eos;
 
 	__END_CATCH
 }

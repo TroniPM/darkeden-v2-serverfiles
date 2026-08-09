@@ -59,12 +59,12 @@ void CLSelectPCHandler::execute (CLSelectPC* pPacket , Player* pPlayer)
 		if (pLoginPlayer->isBillingPlayAvaiable()
 			&& pLoginPlayer->getBillingUserStatus()!="XX")
 		{
-			cout << "isBillingPlay: " << pLoginPlayer->getID().c_str() << endl;
+			cout << "isBillingPlay: " << pLoginPlayer->getID().c_str() << eos;
 		}
 		else if (pLoginPlayer->isPayPlaying())
 		{
 			// 걍 통과~
-			cout << "isPayPlaying: " << pLoginPlayer->getID().c_str() << endl;
+			cout << "isPayPlaying: " << pLoginPlayer->getID().c_str() << eos;
 
 			// 그러나.. 밑에서 능력치 체크를 해야한다.
 			if (pLoginPlayer->getPayType()!=PAY_TYPE_FREE)
@@ -74,7 +74,7 @@ void CLSelectPCHandler::execute (CLSelectPC* pPacket , Player* pPlayer)
 		}
 		else
 		{
-			cout <<  "CannotPlay: " << pLoginPlayer->getID().c_str() << endl;
+			cout <<  "CannotPlay: " << pLoginPlayer->getID().c_str() << eos;
 
 			// 게임 할 수 없는 캐릭터(빌링 관련)
 			LCSelectPCError lcSelectPCError;
@@ -97,11 +97,11 @@ void CLSelectPCHandler::execute (CLSelectPC* pPacket , Player* pPlayer)
 			&& pLoginPlayer->getPayType()==PAY_TYPE_FREE)
 		{
 			// 완전 무료 사용자는 그냥 통과한다.
-			cout << "But PAY_TYPE_FREE" << endl;
+			cout << "But PAY_TYPE_FREE" << eos;
 		}
 		else
 		{
-			cout << endl;
+			cout << eos;
 
 			LCSelectPCError lcSelectPCError;
 			lcSelectPCError.setCode( SELECT_PC_NOT_BILLING_CHECK );
@@ -302,7 +302,7 @@ void CLSelectPCHandler::execute (CLSelectPC* pPacket , Player* pPlayer)
 		bool bNonPKServer = g_pGameServerInfoManager->getGameServerInfo( 1, pLoginPlayer->getServerGroupID(), pLoginPlayer->getWorldID() )->isNonPKServer();
 		if ( bNonPKServer )
 		{
-			//cout << "WorldID:" << (int)(pLoginPlayer->getWorldID()) << " ServerGroupID:" << (int)(pLoginPlayer->getServerGroupID()) << endl;
+			//cout << "WorldID:" << (int)(pLoginPlayer->getWorldID()) << " ServerGroupID:" << (int)(pLoginPlayer->getServerGroupID()) << eos;
 
 			int playerLevel = pResult->getInt(3);
 			int competence = pResult->getInt(4);
@@ -343,7 +343,7 @@ void CLSelectPCHandler::execute (CLSelectPC* pPacket , Player* pPlayer)
 			ZoneInfo* pZoneInfo = g_pZoneInfoManager->getZoneInfo(zoneID);
 			ZoneGroupInfo* pZoneGroupInfo = g_pZoneGroupInfoManager->getZoneGroupInfo(pZoneInfo->getZoneGroupID());
 			//cout << "ConnctServerGroup: " << (int)pLoginPlayer->getServerGroupID() << ", ServerID: " << (int)pZoneGroupInfo->getServerID();
-			//cout << "WorldID " << (int)WorldID << ", ServerGroupID : " << (int)pLoginPlayer->getServerGroupID() << ", ServerID : " << (int)pZoneGroupInfo->getServerID() << endl;
+			//cout << "WorldID " << (int)WorldID << ", ServerGroupID : " << (int)pLoginPlayer->getServerGroupID() << ", ServerID : " << (int)pZoneGroupInfo->getServerID() << eos;
 			pGameServerInfo = g_pGameServerInfoManager->getGameServerInfo(pZoneGroupInfo->getServerID(), pLoginPlayer->getServerGroupID(), WorldID );
 		}
 
@@ -412,11 +412,11 @@ void CLSelectPCHandler::execute (CLSelectPC* pPacket , Player* pPlayer)
 		SAFE_DELETE(pStmt);
 		SAFE_DELETE(pStmt1); //(!)
 
-		//cout << "CLSelectPC SendPacket to Server IP : " << pGameServerInfo->getIP() << endl;
+		//cout << "CLSelectPC SendPacket to Server IP : " << pGameServerInfo->getIP() << eos;
 	} 
 	catch (SQLQueryException & sqe) 
 	{
-		//cout << sqe.toString() << endl;
+		//cout << sqe.toString() << eos;
 
 		SAFE_DELETE(pStmt);
 		SAFE_DELETE(pStmt1); //(!)

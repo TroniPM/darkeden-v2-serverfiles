@@ -37,12 +37,12 @@ void EffectMeteoBlazeToCreature::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectMeteoBlazeToCreature " << "begin begin" << endl;
+	//cout << "EffectMeteoBlazeToCreature " << "begin begin" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 	affect(pCreature);
 
-	//cout << "EffectMeteoBlazeToCreature " << "begin end" << endl;
+	//cout << "EffectMeteoBlazeToCreature " << "begin end" << eos;
 
 	__END_CATCH 
 
@@ -55,7 +55,7 @@ void EffectMeteoBlazeToCreature::affect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectMeteoBlazeToCreature " << "begin" << endl;
+	//cout << "EffectMeteoBlazeToCreature " << "begin" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -113,7 +113,7 @@ void EffectMeteoBlazeToCreature::affect(Creature* pCreature)
 	
 	setNextTime(m_Tick);
 
-	//cout << "EffectMeteoBlazeToCreature " << "end" << endl;
+	//cout << "EffectMeteoBlazeToCreature " << "end" << eos;
 
 	__END_CATCH
 }

@@ -67,7 +67,7 @@ void MasterLairInfo::setSayText(vector<string>& sayWords, const string& text)
 
 		sayWords.push_back( words );
 
-//		cout << "SayWord: " << words.c_str() << endl;
+//		cout << "SayWord: " << words.c_str() << eos;
 	}
 }
 
@@ -256,14 +256,14 @@ void MasterLairInfoManager::load ()
 			if(pZoneInfo->isAvailable())
 			{
 
-				cout << "LOAD MASTER LAIR : ZoneID(" << (int)zoneID << ") , Enable " << endl;
+				cout << "LOAD MASTER LAIR : ZoneID(" << (int)zoneID << ") , Enable " << eos;
 			
 #endif
 			
 				pZoneInfo->setMasterLair();
 
 				MasterLairInfo* pMasterLairInfo = new MasterLairInfo();
-				//cout << "new OK" << endl;
+				//cout << "new OK" << eos;
 
 				pMasterLairInfo->setZoneID( zoneID );
 				pMasterLairInfo->setMasterNotReadyMonsterType( pResult->getInt(++i) );
@@ -294,7 +294,7 @@ void MasterLairInfoManager::load ()
 
 				addMasterLairInfo(pMasterLairInfo);
 
-				//cout << pMasterLairInfo->toString().c_str() << endl;
+				//cout << pMasterLairInfo->toString().c_str() << eos;
 
 				// 체크 코드
 				// 마스터의 몬스터 정보가 있는지 체크한다.
@@ -317,7 +317,7 @@ void MasterLairInfoManager::load ()
 					}
 
 				} catch (Throwable& t) {
-					cout << t.toString().c_str() << endl;
+					cout << t.toString().c_str() << eos;
 					throw Error("마스터의 몬스터 정보가 없당.");
 				}
 
@@ -325,7 +325,7 @@ void MasterLairInfoManager::load ()
 			}//isAvailable
 			else
 			{
-				cout << "LOAD MASTER LAIR : ZoneID(" << (int)zoneID << "), Disable " << endl;
+				cout << "LOAD MASTER LAIR : ZoneID(" << (int)zoneID << "), Disable " << eos;
 			}
 #endif
 		}
@@ -345,7 +345,7 @@ void MasterLairInfoManager::reload ()
 {
 	__BEGIN_TRY
 	
-	//cout << "MasterLairInfoManager::reload()" << endl;
+	//cout << "MasterLairInfoManager::reload()" << eos;
 
 	Statement* pStmt = NULL;
 
@@ -365,11 +365,11 @@ void MasterLairInfoManager::reload ()
 			ZoneID_t zoneID = pResult->getInt(++i);
 
 			MasterLairInfo* pMasterLairInfo = getMasterLairInfo( zoneID );
-			//cout << "new OK" << endl;
+			//cout << "new OK" << eos;
 
 			if (pMasterLairInfo!=NULL)
 			{
-				//cout << "Reload: " << zoneID << endl;
+				//cout << "Reload: " << zoneID << eos;
 				pMasterLairInfo->setZoneID( zoneID );
 				pMasterLairInfo->setMasterNotReadyMonsterType( pResult->getInt(++i) );
 				pMasterLairInfo->setMasterMonsterType( pResult->getInt(++i) );
@@ -418,7 +418,7 @@ void MasterLairInfoManager::reload ()
 					}
 
 				} catch (Throwable& t) {
-					cout << t.toString().c_str() << endl;
+					cout << t.toString().c_str() << eos;
 					throw Error("마스터의 몬스터 정보가 없당.");
 				}
 			}

@@ -65,7 +65,7 @@ IncomingPlayerManager::IncomingPlayerManager ()
 			catch ( BindException& b )
 			{
 				SAFE_DELETE( m_pServerSocket );
-				cout << "IncomingPlayerManager(" << g_pConfig->getPropertyInt("TCPPort") << ") : " << b.toString() << endl;
+				cout << "IncomingPlayerManager(" << g_pConfig->getPropertyInt("TCPPort") << ") : " << b.toString() << eos;
 				sleep( 1);
 			}
 		}
@@ -153,10 +153,10 @@ void IncomingPlayerManager::init ()
 
 	Connection* pDistConnection = new Connection(dist_host, dist_db, dist_user, dist_password, dist_port);
 	g_pDatabaseManager->addDistConnection(((int)Thread::self()), pDistConnection);
-	cout << "******************************************************" << endl;
-	cout << " THREAD CONNECT UIIRIBUTION DB " << endl;
-	cout << " TID Number = " << (int)Thread::self()<< endl;
-	cout << "******************************************************" << endl;
+	cout << "******************************************************" << eos;
+	cout << " THREAD CONNECT UIIRIBUTION DB " << eos;
+	cout << " TID Number = " << (int)Thread::self()<< eos;
+	cout << "******************************************************" << eos;
 
 	/*
     // Login DB 의 PCRoomDBInfo Table 읽어서 Connection 만들기
@@ -177,7 +177,7 @@ void IncomingPlayerManager::init ()
              << "  ID=" << (int)ID
              << ", HOST=" << host.c_str()
              << ", DB=" << db.c_str()
-             << ", User=" << user.c_str() << endl;
+             << ", User=" << user.c_str() << eos;
 
         Connection * pConnection = new Connection(host, db, user, password);
         Assert(pConnection!=NULL);
@@ -372,7 +372,7 @@ void IncomingPlayerManager::processInputs ()
 						} 
 						catch (Throwable & t) 
 						{
-							cerr << t.toString() << endl;
+							cerr << t.toString() << eos;
 						}
 
 
@@ -410,7 +410,7 @@ void IncomingPlayerManager::processInputs ()
 							} 
 							catch (Throwable & t) 
 							{
-								cerr << t.toString() << endl;
+								cerr << t.toString() << eos;
 							}
 
 							// by sigi. 2002.12.30
@@ -479,7 +479,7 @@ void IncomingPlayerManager::processCommands()
 				} 
 				catch (Throwable & t) 
 				{
-					cerr << t.toString() << endl;
+					cerr << t.toString() << eos;
 				}
 
 				// by sigi. 2002.12.30
@@ -502,7 +502,7 @@ void IncomingPlayerManager::processCommands()
 				}
 				catch (Throwable& t)
 				{
-					cerr << t.toString() << endl;
+					cerr << t.toString() << eos;
 					filelog( "Destructer.log", "IncommingPlayerManager.cpp +509 : %s" , t.toString().c_str() );
 				}
 			} 
@@ -523,7 +523,7 @@ void IncomingPlayerManager::processCommands()
 					} 
 					catch (Throwable & t) 
 					{
-						cerr << t.toString() << endl;
+						cerr << t.toString() << eos;
 					}
 
 					// by sigi. 2002.12.30
@@ -546,7 +546,7 @@ void IncomingPlayerManager::processCommands()
 					}
 					catch (Throwable& t)
 					{
-						cerr << t.toString() << endl;
+						cerr << t.toString() << eos;
 						filelog( "Destructer.log", "IncommingPlayerManager.cpp +509 : %s" , t.toString().c_str() );
 					}
 				}
@@ -607,7 +607,7 @@ void IncomingPlayerManager::processOutputs ()
 					} 
 					catch (Throwable & t) 
 					{
-						cerr << t.toString() << endl;
+						cerr << t.toString() << eos;
 					}
 
 					// by sigi. 2002.12.30
@@ -647,7 +647,7 @@ void IncomingPlayerManager::processOutputs ()
 						} 
 						catch (Throwable & t) 
 						{
-							cerr << t.toString() << endl;
+							cerr << t.toString() << eos;
 						}
 
 						// by sigi. 2002.12.30
@@ -682,7 +682,7 @@ void IncomingPlayerManager::processOutputs ()
 						} 
 						catch (Throwable & t) 
 						{
-							cerr << t.toString() << endl;
+							cerr << t.toString() << eos;
 						}
 
 						// by sigi. 2002.12.30
@@ -757,7 +757,7 @@ void IncomingPlayerManager::processExceptions ()
 					} 
 					catch (Throwable & t) 
 					{
-						//cerr << t.toString() << endl;
+						//cerr << t.toString() << eos;
 					} 
 
 					// by sigi. 2002.12.30
@@ -779,7 +779,7 @@ void IncomingPlayerManager::processExceptions ()
 			} 
 			else 
 			{
-				//cerr << "Exception in Loginserver to Gameserver" << endl;
+				//cerr << "Exception in Loginserver to Gameserver" << eos;
 			}
 		}
 	}
@@ -1355,14 +1355,14 @@ void IncomingPlayerManager::heartbeat()
 														pGamePlayer->getKickRequestPort(), 
 														&glKickVerify );
 
-					cout << "LGKickVerify Send Packet to ServerIP : " << pGamePlayer->getKickRequestHost() << endl;
-					cout << "LGKickVerify Send Packet to ServerPort : " << pGamePlayer->getKickRequestPort() << endl;
+					cout << "LGKickVerify Send Packet to ServerIP : " << pGamePlayer->getKickRequestHost() << eos;
+					cout << "LGKickVerify Send Packet to ServerPort : " << pGamePlayer->getKickRequestPort() << eos;
 				}
 
 			} 
 			catch (Throwable & t) 
 			{
-				cerr << t.toString() << endl;
+				cerr << t.toString() << eos;
 			}
 
 			Creature* pCreature = pGamePlayer->getCreature();
@@ -1445,7 +1445,7 @@ void IncomingPlayerManager::heartbeat()
 					{
 						//cout << "LogoutPayPlay:[" << (int)pZone->getZoneID() << "] " 
 						//		<< (int)pZone->isPayPlay() << " , "
-						//		<< (int)pZone->isPremiumZone() << endl;
+						//		<< (int)pZone->isPremiumZone() << eos;
 						pGamePlayer->logoutPayPlay( pGamePlayer->getID() );
 					}
 				}
@@ -1466,7 +1466,7 @@ void IncomingPlayerManager::heartbeat()
 		// 로그아웃을 하는 경우이다.
 		} else if (pGamePlayer->getPlayerStatus() == GPS_AFTER_SENDING_GL_INCOMING_CONNECTION) {
 
-//			cout << "Logout..." << pGamePlayer->getID() << endl;
+//			cout << "Logout..." << pGamePlayer->getID() << eos;
 
 /*			Creature * pCreature = pGamePlayer->getCreature();
 
@@ -1496,7 +1496,7 @@ void IncomingPlayerManager::heartbeat()
 				port = g_pConfig->getPropertyInt("LoginServerUDPPort");
 			}
 	
-			//cout << "ReconnectAddress = " << g_pConfig->getProperty("LoginServerIP").c_str() << ":" << port << endl;
+			//cout << "ReconnectAddress = " << g_pConfig->getProperty("LoginServerIP").c_str() << ":" << port << eos;
 
 			/*
 			if (g_pConfig->getProperty("User") == "excel96")

@@ -31,7 +31,7 @@ void EffectLoud::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectLoud" << "unaffect BEGIN" << endl;
+	//cout << "EffectLoud" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 //	Assert(pCreature->isOusters());
@@ -51,7 +51,7 @@ void EffectLoud::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_LOUD);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectLoud" << "unaffect END" << endl;
+	//cout << "EffectLoud" << "unaffect END" << eos;
 
 	__END_CATCH
 }

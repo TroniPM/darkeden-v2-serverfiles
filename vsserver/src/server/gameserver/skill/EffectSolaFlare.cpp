@@ -77,7 +77,7 @@ void EffectSolaFlare::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectSolaFlare" << "affect BEGIN" << endl;
+	//cout << "EffectSolaFlare" << "affect BEGIN" << eos;
 	
 	Assert(m_pZone != NULL);
 
@@ -190,7 +190,7 @@ void EffectSolaFlare::affect()
 	
 	setNextTime(3);
 
-	//cout << "EffectSolaFlare" << "affect END" << endl;
+	//cout << "EffectSolaFlare" << "affect END" << eos;
 
 	__END_CATCH 
 }
@@ -202,12 +202,12 @@ void EffectSolaFlare::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectSolaFlare" << "unaffect BEGIN" << endl;
+	//cout << "EffectSolaFlare" << "unaffect BEGIN" << eos;
 
     Tile& tile = m_pZone->getTile(m_X, m_Y);
 	tile.deleteEffect(m_ObjectID);
 
-	//cout << "EffectSolaFlare" << "unaffect END" << endl;
+	//cout << "EffectSolaFlare" << "unaffect END" << eos;
 
 	__END_CATCH
 }

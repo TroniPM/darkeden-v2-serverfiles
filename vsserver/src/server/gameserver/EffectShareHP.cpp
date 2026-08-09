@@ -34,12 +34,12 @@ void EffectShareHP::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectShareHP " << "begin begin" << endl;
+	//cout << "EffectShareHP " << "begin begin" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 	affect(pCreature);
 
-	//cout << "EffectShareHP " << "begin end" << endl;
+	//cout << "EffectShareHP " << "begin end" << eos;
 
 	__END_CATCH 
 
@@ -52,8 +52,8 @@ void EffectShareHP::affect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectShareHP " << "begin" << endl;
-	//cout << "EffectShareHP " << "end" << endl;
+	//cout << "EffectShareHP " << "begin" << eos;
+	//cout << "EffectShareHP " << "end" << eos;
 
 	__END_CATCH
 }

@@ -55,7 +55,7 @@ void EffectHeartCatalyst::affect(Creature* pCreature)
 	if (pWeapon == NULL || !isArmsWeapon(pWeapon))
 	{
 		setDeadline(0);
-		//cout << "TID[" << Thread::self() << "]" << getSkillHandlerName() << " End" << endl;
+		//cout << "TID[" << Thread::self() << "]" << getSkillHandlerName() << " End" << eos;
 		return;
 	}
 
@@ -85,12 +85,12 @@ void EffectHeartCatalyst::unaffect()
 {
     __BEGIN_TRY
 
-	//cout << "EffectHeartCatalyst " << "unaffect BEGIN" << endl;
+	//cout << "EffectHeartCatalyst " << "unaffect BEGIN" << eos;
 
     Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
     unaffect(pCreature);
 
-	//cout << "EffectHeartCatalyst " << "unaffect END" << endl;
+	//cout << "EffectHeartCatalyst " << "unaffect END" << eos;
 
     __END_CATCH
 }
@@ -101,7 +101,7 @@ void EffectHeartCatalyst::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectHeartCatalyst " << "unaffect BEGIN" << endl;
+	//cout << "EffectHeartCatalyst " << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isSlayer());
@@ -125,7 +125,7 @@ void EffectHeartCatalyst::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_HEART_CATALYST);
 	pZone->broadcastPacket(pSlayer->getX(), pSlayer->getY(), &gcRemoveEffect);
 
-	//cout << "EffectHeartCatalyst " << "unaffect END" << endl;
+	//cout << "EffectHeartCatalyst " << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

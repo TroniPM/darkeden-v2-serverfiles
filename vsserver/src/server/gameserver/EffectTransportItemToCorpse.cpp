@@ -91,7 +91,7 @@ void EffectTransportItemToCorpse::unaffect (Zone* pZone , ZoneCoord_t x , ZoneCo
 	if (pZone->getZoneGroup()==m_pTargetZone->getZoneGroup())
 	//if (pZone==m_pTargetZone)
 	{
-		//cout << "Zone->addItem" << endl;
+		//cout << "Zone->addItem" << eos;
 		//pZone->addItem(pTempItem, x, y);
 
 		Item* pCorpseItem = m_pTargetZone->getItem( m_CorpseObjectID );
@@ -110,7 +110,7 @@ void EffectTransportItemToCorpse::unaffect (Zone* pZone , ZoneCoord_t x , ZoneCo
 	}
 	else
 	{
-		//cout << "Zone->addItemDelayed" << endl;
+		//cout << "Zone->addItemDelayed" << eos;
 		m_pTargetZone->addItemToCorpseDelayed(pItem, m_CorpseObjectID);
 	}
 
@@ -127,7 +127,7 @@ void EffectTransportItemToCorpse::unaffect ()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectTransportItemToCorpse unaffect" << endl;
+	//cout << "EffectTransportItemToCorpse unaffect" << eos;
 
 	__END_CATCH
 }

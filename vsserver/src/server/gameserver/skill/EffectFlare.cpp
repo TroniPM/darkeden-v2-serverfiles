@@ -77,11 +77,11 @@ void EffectFlare::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectFlare " << "unaffect BEGIN" << endl;
+	//cout << "EffectFlare " << "unaffect BEGIN" << eos;
 
 	if (pCreature == NULL)
 	{
-		//cout << "EffectFlare " << "unaffect END" << endl;
+		//cout << "EffectFlare " << "unaffect END" << eos;
 	}
 
 	pCreature->removeFlag(Effect::EFFECT_CLASS_FLARE);
@@ -129,7 +129,7 @@ void EffectFlare::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_FLARE);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectFlare " << "unaffect END" << endl;
+	//cout << "EffectFlare " << "unaffect END" << eos;
 	
 	__END_DEBUG
 	__END_CATCH
@@ -142,12 +142,12 @@ void EffectFlare::unaffect()
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectFlare " << "unaffect BEGIN" << endl;
+	//cout << "EffectFlare " << "unaffect BEGIN" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature*>(m_pTarget);
 	unaffect(pCreature);
 
-	//cout << "EffectFlare " << "unaffect END" << endl;
+	//cout << "EffectFlare " << "unaffect END" << eos;
 	
 	__END_DEBUG
 	__END_CATCH

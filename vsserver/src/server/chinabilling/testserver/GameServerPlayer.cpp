@@ -162,11 +162,11 @@ void GameServerPlayer::processCommand ()
 			header.Return_Code = ntohl( header.Return_Code );
 			header.Body_Length = ntohl( header.Body_Length );
 
-			cout << header.toString().c_str() << endl;
+			cout << header.toString().c_str() << eos;
 
 			if ( header.Packet_Type != CBILLING_PACKET_REQUEST )
 			{
-				cout << "error" << endl;
+				cout << "error" << eos;
 				return;
 			}
 			
@@ -270,10 +270,10 @@ void GameServerPlayer::sendPacket ( Packet * pPacket )
 	m_pOutputStream->writePacket( pPacket );
 
 	/*
-	cout << endl;
-	cout << "=== GameServerPlayer::sendPacket() ===" << endl;
-	cout << pPacket->toString() << endl;
-	cout << "============================" << endl;
+	cout << eos;
+	cout << "=== GameServerPlayer::sendPacket() ===" << eos;
+	cout << pPacket->toString() << eos;
+	cout << "============================" << eos;
 	*/
 
 	__END_CATCH
@@ -304,8 +304,8 @@ void GameServerPlayer::disconnect ( bool bDisconnected )
 	} 
 	catch ( InvalidProtocolException & t ) 
 	{
-		cerr << "GameServerPlayer::disconnect Exception Check!!" << endl;
-		cerr << t.toString() << endl;
+		cerr << "GameServerPlayer::disconnect Exception Check!!" << eos;
+		cerr << t.toString() << eos;
 		m_pSocket->close();
 		//throw Error("¾¾¹Ù...");
 	}
@@ -357,8 +357,8 @@ void GameServerPlayer::executeIntervalValidation( CBillingPacketHeader& header, 
 	sHeader.write( *m_pOutputStream );
 	sBody.write( *m_pOutputStream );
 
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 
 	__END_CATCH
 }
@@ -389,8 +389,8 @@ void GameServerPlayer::executeLogin( CBillingPacketHeader& header, CBillingPacke
 	sHeader.write( *m_pOutputStream );
 	sBody.write( *m_pOutputStream );
 
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 
 	__END_CATCH
 }
@@ -418,8 +418,8 @@ void GameServerPlayer::executeMinusPoint( CBillingPacketHeader& header, CBilling
 	sHeader.write( *m_pOutputStream );
 	sBody.write( *m_pOutputStream );
 
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 
 	__END_CATCH
 }
@@ -446,8 +446,8 @@ void GameServerPlayer::executeMinusMinute( CBillingPacketHeader& header, CBillin
 	sHeader.write( *m_pOutputStream );
 	sBody.write( *m_pOutputStream );
 
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 
 	__END_CATCH
 }
@@ -471,8 +471,8 @@ throw ( IOException, Error )
 	sHeader.write( *m_pOutputStream );
 	sBody.write( *m_pOutputStream );
 	
-	cout << header.toString().c_str() << endl;
-	cout << body.toString().c_str() << endl;
+	cout << header.toString().c_str() << eos;
+	cout << body.toString().c_str() << eos;
 
 	__END_CATCH
 }

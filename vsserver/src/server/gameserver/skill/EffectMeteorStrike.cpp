@@ -254,7 +254,7 @@ void EffectMeteorStrike::unaffect()
 	Tile& tile = m_pZone->getTile(m_X, m_Y);
 	tile.deleteEffect(m_ObjectID);
 
-	//cout << "EffectMeteorStrike" << "unaffect END" << endl;
+	//cout << "EffectMeteorStrike" << "unaffect END" << eos;
 
 	__END_CATCH
 }

@@ -50,7 +50,7 @@ void EffectDetectHidden::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectDetectHidden " << "unaffect BEGIN" << endl;
+	//cout << "EffectDetectHidden " << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isSlayer());
@@ -69,7 +69,7 @@ void EffectDetectHidden::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_DETECT_HIDDEN);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectDetectHidden " << "unaffect END" << endl;
+	//cout << "EffectDetectHidden " << "unaffect END" << eos;
 
 	__END_CATCH
 }

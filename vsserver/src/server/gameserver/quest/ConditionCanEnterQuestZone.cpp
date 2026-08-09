@@ -37,8 +37,8 @@ bool ConditionCanEnterQuestZone::isSatisfied (Creature * pCreature1 , Creature *
 		bDynamicZoneAvailable = pDynamicZoneGroup->canEnter();
 	}
 
-	cout << "QuestZoneID: " << m_QuestZoneID << endl;
-	cout << "Quest: " << ( bQuestCondition ? "true" : "false" ) << " Zone: " << ( bDynamicZoneAvailable ? "true" : "false" ) << endl;
+	cout << "QuestZoneID: " << m_QuestZoneID << eos;
+	cout << "Quest: " << ( bQuestCondition ? "true" : "false" ) << " Zone: " << ( bDynamicZoneAvailable ? "true" : "false" ) << eos;
 
 	return bQuestCondition && bDynamicZoneAvailable;
 }

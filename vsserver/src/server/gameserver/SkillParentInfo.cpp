@@ -78,7 +78,7 @@ bool SkillParentInfo::hasParent (SkillType_t SkillType)
 	}
 	catch(Throwable & t) 
 	{
-		//cerr << t.toString() << endl;
+		//cerr << t.toString() << eos;
 	}
 	return false;
 
@@ -99,7 +99,7 @@ SkillType_t SkillParentInfo::getParents (SkillType_t SkillType) const
 		if (SkillType == (*itr)) return *itr;
 	}
 
-	cerr << "SkillParentInfo::getParents() : NoSuchElementException" << endl;
+	cerr << "SkillParentInfo::getParents() : NoSuchElementException" << eos;
 	throw NoSuchElementException();
 
 	__END_CATCH
@@ -306,13 +306,13 @@ SkillParentInfo* SkillParentInfoManager::getSkillParentInfo(SkillType_t SkillTyp
 
 	if (SkillType >= m_SkillCount)
 	{
-		cerr << "SkillParentInfoManager::getSkillParentInfo() : out of bounds" << endl;
+		cerr << "SkillParentInfoManager::getSkillParentInfo() : out of bounds" << eos;
 		throw OutOfBoundException ();
 	}
 
 	if (m_SkillParentInfoList[SkillType] == NULL)
 	{
-		cerr << "SkillParentInfoManager::getSkillParentInfo() : NoSuchElementException" << endl;
+		cerr << "SkillParentInfoManager::getSkillParentInfo() : NoSuchElementException" << eos;
 		throw NoSuchElementException ();
 	}
 

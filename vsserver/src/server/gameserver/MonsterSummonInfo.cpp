@@ -60,7 +60,7 @@ void MonsterCollectionInfo::parseString(const string& text)
 
 		Num  = atoi( trim(text.substr(b+1, c-b-1)).c_str() );
 
-		//cout << "[MonsterCollectionInfo] " << name.c_str() << ", " << (int)Num << endl;
+		//cout << "[MonsterCollectionInfo] " << name.c_str() << ", " << (int)Num << eos;
 
 		if (bMonsterType)
 		{
@@ -69,7 +69,7 @@ void MonsterCollectionInfo::parseString(const string& text)
 			try {
 				g_pMonsterInfoManager->getMonsterInfo(MonsterType);
 			} catch (Throwable& t) {
-				cout << t.toString().c_str() << endl;
+				cout << t.toString().c_str() << eos;
 				Assert(false);
 			}
 		}
@@ -83,7 +83,7 @@ void MonsterCollectionInfo::parseString(const string& text)
 
 		if (SpriteType==0 && MonsterType==0)
 		{
-			cout << "[Error] MonsterSummonInfo에 알 수 없는 몬스터 : " << name.c_str() << endl;
+			cout << "[Error] MonsterSummonInfo에 알 수 없는 몬스터 : " << name.c_str() << eos;
 			Assert(false);
 		}
 	}
@@ -132,7 +132,7 @@ void MonsterCollection::parseString(const string& text)
 		MonsterCollectionInfo mc;
 		mc.parseString( text.substr(a, b-a+1) );
 
-		//cout << "[MonsterCollection] " << text.substr(a,b-a+1).c_str() << endl;
+		//cout << "[MonsterCollection] " << text.substr(a,b-a+1).c_str() << eos;
 
 		Infos.push_back( mc );
 
@@ -220,7 +220,7 @@ void MonsterSummonStep::parseString(const string& text)
 		MonsterCollection mc;
 		mc.parseString( text.substr(a, b-a+1) );
 
-		//cout << "[MonsterSummonStep] " << text.substr(a,b-a+1).c_str() << endl;
+		//cout << "[MonsterSummonStep] " << text.substr(a,b-a+1).c_str() << eos;
 
 		Collections.push_back( mc );
 	}
@@ -307,7 +307,7 @@ void MonsterSummonInfo::parseString(const string& text)
 		MonsterSummonStep ms;
 		ms.parseString( text.substr(a,b-a+1) );
 
-		//cout << "[MonsterSummonInfo] " << text.substr(a,b-a+1).c_str() << endl;
+		//cout << "[MonsterSummonInfo] " << text.substr(a,b-a+1).c_str() << eos;
 
 		Steps.push_back( ms );
 	}

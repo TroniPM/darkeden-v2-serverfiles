@@ -121,7 +121,7 @@ void PCManager::processCreatures ()
 
 	__ENTER_CRITICAL_SECTION(m_Mutex)
 
-	//cerr << "TID[" << Thread::self() << "]" << "PCM::process go" << endl;
+	//cerr << "TID[" << Thread::self() << "]" << "PCM::process go" << eos;
 
 	Timeval currentTime;
 	getCurrentTime(currentTime);
@@ -182,14 +182,14 @@ void PCManager::processCreatures ()
 
 					if (currentHP*3 >= maxHP)
 					{
-						////cout << "Target HP is over 1/3" << endl;
+						////cout << "Target HP is over 1/3" << eos;
 
 						EffectComa* pEffectComa = dynamic_cast<EffectComa*>(pVampire->findEffect(Effect::EFFECT_CLASS_COMA));
 						Assert(pEffectComa != NULL);
 
 						if (pEffectComa->canResurrect())
 						{
-							////cout << "Can Resurrect!" << endl;
+							////cout << "Can Resurrect!" << eos;
 
 							// 타겟의 이펙트 매니저에서 코마 이펙트를 삭제한다.
 							pVampire->deleteEffect(Effect::EFFECT_CLASS_COMA);
@@ -817,7 +817,7 @@ void PCManager::processCreatures ()
 
 							if (pEffectCasket!=NULL)
 							{
-								////cout << "Coma --> casket unaffect" << endl;
+								////cout << "Coma --> casket unaffect" << eos;
 								pEffectCasket->unaffect();
 							}
 
@@ -1156,10 +1156,10 @@ void PCManager::processCreatures ()
 	catch (Throwable & t)
 	{
 		filelog("PCManagerBug.log", "ProcessCreatureBug : %s", t.toString().c_str());
-		//cerr << t.toString() << endl;
+		//cerr << t.toString() << eos;
 	}
 
-	//cerr << "TID[" << Thread::self() << "]" << "PCM::process end" << endl;
+	//cerr << "TID[" << Thread::self() << "]" << "PCM::process end" << eos;
 	
 	__LEAVE_CRITICAL_SECTION(m_Mutex)
 

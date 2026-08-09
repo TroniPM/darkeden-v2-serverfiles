@@ -90,7 +90,7 @@ void ZoneInfo::setZoneType ( const string & zoneType )
 		StringStream msg;
 		msg << "ZoneInfo::setZoneType() : Invalid Zone Type[" << zoneType << "]";
 
-		cerr << msg.toString() << endl;
+		cerr << msg.toString() << eos;
 		throw Error(msg.toString());
 	}
 }

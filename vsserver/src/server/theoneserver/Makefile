@@ -30,7 +30,7 @@ DEFS     = -D__LINUX__ -D_REENTRANT -D__THE_ONE_SERVER__
 INCLUDES = -I$(STLDIR) -I$(COREDIR) -I$(SERVDIR) -I$(DBINCDIR) -I.
 CCFLAGS  = -Wall -c -g  
 #CCFLAGS  = -Wall -c -g 
-LIBS     = -L$(LIBDIR) -lCore -lTheOneServerPackets -lServerCore 
+LIBS     = -L$(LIBDIR) -lCore -lTheOneServerPackets -lServerCore  -lstlport_gcc
 #LIBS     = -L$(LIBDIR) -lTheOneServerPackets -lItems -lQuest -lGameServerDatabase -lServerCore -lGameServerPackets -lSkill -lCore -lGameServerBilling -lLuaScript -lGameServerTest -lWar -lCouple -lMission -lCTF -lGameServerCBilling
 SYSLIBS  = -L$(MYSQLDIR) -static -lmysqlclient -lpthread -lnsl -lz
 
@@ -75,4 +75,3 @@ depall :
 
 dep :
 	gccmakedep $(SRCS) $(INCLUDES)
-# DO NOT DELETE

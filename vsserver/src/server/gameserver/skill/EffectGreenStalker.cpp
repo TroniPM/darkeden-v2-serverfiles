@@ -38,12 +38,12 @@ void EffectGreenStalker::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectGreenStalker " << "affect BEGIN" << endl;
+	//cout << "EffectGreenStalker " << "affect BEGIN" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 	affect(pCreature);
 
-	//cout << "EffectGreenStalker " << "affect END" << endl;
+	//cout << "EffectGreenStalker " << "affect END" << eos;
 
 	__END_CATCH 
 
@@ -56,7 +56,7 @@ void EffectGreenStalker::affect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectGreenStalker " << "affect BEGIN" << endl;
+	//cout << "EffectGreenStalker " << "affect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -142,7 +142,7 @@ void EffectGreenStalker::affect(Creature* pCreature)
 
 	setNextTime(m_Tick);
 
-	//cout << "EffectGreenStalker " << "affect END" << endl;
+	//cout << "EffectGreenStalker " << "affect END" << eos;
 
 	__END_CATCH
 }
@@ -164,7 +164,7 @@ void EffectGreenStalker::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectGreenStalker " << "unaffect BEGIN" << endl;
+	//cout << "EffectGreenStalker " << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -180,7 +180,7 @@ void EffectGreenStalker::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_GREEN_STALKER);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectGreenStalker " << "unaffect END" << endl;
+	//cout << "EffectGreenStalker " << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH
@@ -193,12 +193,12 @@ void EffectGreenStalker::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectGreenStalker " << "unaffect BEGIN" << endl;
+	//cout << "EffectGreenStalker " << "unaffect BEGIN" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature*>(m_pTarget);
 	unaffect(pCreature);
 
-	//cout << "EffectGreenStalker " << "unaffect END" << endl;
+	//cout << "EffectGreenStalker " << "unaffect END" << eos;
 
 	__END_CATCH
 }

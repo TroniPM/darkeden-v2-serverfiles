@@ -417,7 +417,7 @@ void EventMorph::activate ()
 	} 
 	catch (NoSuchElementException&) 
 	{
-		cerr << "Critical Error : 포탈에 지정된 존 아이디가 틀리거나, ZoneInfoManager에 해당 존이 존재하지 않습니다." << endl;
+		cerr << "Critical Error : 포탈에 지정된 존 아이디가 틀리거나, ZoneInfoManager에 해당 존이 존재하지 않습니다." << eos;
 		throw Error("Critical Error : 포탈에 지정된 존 아이디가 틀리거나, ZoneInfoManager에 해당 존이 존재하지 않습니다.");
 	}
 
@@ -428,7 +428,7 @@ void EventMorph::activate ()
 	}
 	catch (NoSuchElementException&) 
 	{
-		cerr << "Critical Error : 현재로는 게임 서버는 1대뿐이당.." << endl;
+		cerr << "Critical Error : 현재로는 게임 서버는 1대뿐이당.." << eos;
 
 		// 일단은 서버가 1대이므로.. 그대로 나간다...
 		throw Error("Critical Error : 현재로는 게임 서버는 1대뿐이당..");
@@ -468,7 +468,7 @@ void EventMorph::activate ()
 	} 
 	catch (NoSuchElementException & nsee) 
 	{
-		cerr << nsee.toString() << endl;
+		cerr << nsee.toString() << eos;
 		throw Error(nsee.toString());
 	}
 
@@ -526,7 +526,7 @@ void EventMorph::activate ()
 
 	ofstream file("blood.txt", ios::out | ios::app);
 	file << "슬레이어 [" << pSlayer->getName() << "] 뱀파로 변하다 >> ";
-	file << getCurrentTimeStringEx() << endl;
+	file << getCurrentTimeStringEx() << eos;
 	file.close();
 
 

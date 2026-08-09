@@ -51,7 +51,7 @@ void EffectSharpShield::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectSharpShield" << "unaffect BEGIN" << endl;
+	//cout << "EffectSharpShield" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isSlayer());
@@ -68,7 +68,7 @@ void EffectSharpShield::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList( m_ClientEffectClass );
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectSharpShield" << "unaffect END" << endl;
+	//cout << "EffectSharpShield" << "unaffect END" << eos;
 
 	__END_CATCH
 }

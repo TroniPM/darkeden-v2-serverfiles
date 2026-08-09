@@ -31,7 +31,7 @@ void EffectIceOfSoulStone::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectIceOfSoulStone" << "unaffect BEGIN" << endl;
+	//cout << "EffectIceOfSoulStone" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 //	Assert(pCreature->isOusters());
@@ -51,7 +51,7 @@ void EffectIceOfSoulStone::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_ICE_OF_SOUL_STONE);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectIceOfSoulStone" << "unaffect END" << endl;
+	//cout << "EffectIceOfSoulStone" << "unaffect END" << eos;
 
 	__END_CATCH
 }

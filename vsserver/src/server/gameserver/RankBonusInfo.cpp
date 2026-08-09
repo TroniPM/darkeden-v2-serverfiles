@@ -169,13 +169,13 @@ RankBonusInfo* RankBonusInfoManager::getRankBonusInfo( DWORD rankBonusType ) con
 
 	if ( rankBonusType >= m_Count )
 	{
-		cerr << "RankBonusInfoManager::getRankBonusInfo() : out of bound" << endl;
+		cerr << "RankBonusInfoManager::getRankBonusInfo() : out of bound" << eos;
 		throw OutOfBoundException();
 	}
 
 	if ( m_RankBonusInfoList[rankBonusType] == NULL )
 	{
-		cerr << "RankBonusInfoManager::getRankBonusInfo() : no such element" << endl;
+		cerr << "RankBonusInfoManager::getRankBonusInfo() : no such element" << eos;
 		throw NoSuchElementException();
 	}
 

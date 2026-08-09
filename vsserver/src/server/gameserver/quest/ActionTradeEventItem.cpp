@@ -79,7 +79,7 @@ void ActionTradeEventItem::execute(Creature * pCreature1 , Creature * pCreature2
 
 	// 이 사람의 인벤토리에 축구공이 충분한지 살핀다.
 
-	//cout << "축구공 " << m_GoalAmount << " 개 아이템: " << endl;
+	//cout << "축구공 " << m_GoalAmount << " 개 아이템: " << eos;
 
 	g_pPriceManager->getBallPrice(m_GoalAmount, star);
 
@@ -331,7 +331,7 @@ void ActionTradeEventItem::execute(Creature * pCreature1 , Creature * pCreature2
 
 			//축구공을 줄인다.
 			pInventory->decreaseStar(star);
-			cout << "플레이어의 축구공을 " << star.amount << " 개 줄였습니다." << endl;
+			cout << "플레이어의 축구공을 " << star.amount << " 개 줄였습니다." << eos;
 
 			GCNPCResponse   gcNPCResponse;
 			gcNPCResponse.setCode(NPC_RESPONSE_DECREASE_BALL);

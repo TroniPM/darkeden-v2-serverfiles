@@ -92,11 +92,11 @@ void EffectHellGardenJoin::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectHellGardenJoin" << "unaffect BEGIN" << endl;
+	//cout << "EffectHellGardenJoin" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
-	//cout << "EffectHellGardenJoin 지웁니다." << endl;
+	//cout << "EffectHellGardenJoin 지웁니다." << eos;
 
 	// 능력치를 정상적으로 되돌리기 위해서는 플래그를 끄고,
 	// initAllStat을 불러야 한다.
@@ -110,7 +110,7 @@ void EffectHellGardenJoin::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_HELL_GARDEN_JOIN);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectHellGardenJoin" << "unaffect END" << endl;
+	//cout << "EffectHellGardenJoin" << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

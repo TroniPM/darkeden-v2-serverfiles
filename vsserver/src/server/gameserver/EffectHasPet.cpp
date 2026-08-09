@@ -63,7 +63,7 @@ void EffectHasPet::affect(Creature* pCreature)
 	PlayerCreature* pPC = dynamic_cast<PlayerCreature*>(pCreature);
 	Assert( pPC != NULL );
 
-	//cout << pPC->getName() << " ÀÇ ÆêÀÌ ¹ä¸ÔÀ»¶§°¡ µÆ½À´Ï´Ù." << endl;
+	//cout << pPC->getName() << " ÀÇ ÆêÀÌ ¹ä¸ÔÀ»¶§°¡ µÆ½À´Ï´Ù." << eos;
 
 	GamePlayer* pGamePlayer = dynamic_cast<GamePlayer*>(pPC->getPlayer());
 	Assert( pGamePlayer != NULL );
@@ -78,7 +78,7 @@ void EffectHasPet::affect(Creature* pCreature)
 
 		PetInfo* pPetInfo = pPetItem->getPetInfo();
 
-		//cout << pPC->getName() << " ÀÇ ÆêÀÎ " << pPetItem->getObjectID() << " ¹ø ÆêÀÌ ¹ä¸Ô½À´Ï´Ù." << pPetInfo->getPetHP() << endl;
+		//cout << pPC->getName() << " ÀÇ ÆêÀÎ " << pPetItem->getObjectID() << " ¹ø ÆêÀÌ ¹ä¸Ô½À´Ï´Ù." << pPetInfo->getPetHP() << eos;
 
 		if ( pPetInfo == NULL )
 		{
@@ -119,7 +119,7 @@ void EffectHasPet::affect(Creature* pCreature)
 			if ( pPetInfo->getPetHP() == 0 )
 			{
 				filelog( "Pet.log", "%sÀÇ ÆêÀÌ Á×¾ú´Ù.", pPC->getName().c_str() );
-				//cout << pPC->getName() << "ÀÇ ÆêÀÌ Á×¾ú´Ù" << endl;
+				//cout << pPC->getName() << "ÀÇ ÆêÀÌ Á×¾ú´Ù" << eos;
 				if ( pPC->getPetInfo() == pPetInfo )
 				{
 					pPC->setPetInfo(NULL);
@@ -181,11 +181,11 @@ void EffectHasPet::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectHasPet" << "unaffect BEGIN" << endl;
+	//cout << "EffectHasPet" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 
-	//cout << "EffectHasPet Áö¿ó´Ï´Ù." << endl;
+	//cout << "EffectHasPet Áö¿ó´Ï´Ù." << eos;
 
 	// ´É·ÂÄ¡¸¦ Á¤»óÀûÀ¸·Î µÇµ¹¸®±â À§ÇØ¼­´Â ÇÃ·¡±×¸¦ ²ô°í,
 	// initAllStatÀ» ºÒ·¯¾ß ÇÑ´Ù.
@@ -199,7 +199,7 @@ void EffectHasPet::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_HAS_PET);
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectHasPet" << "unaffect END" << endl;
+	//cout << "EffectHasPet" << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

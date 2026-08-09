@@ -1227,7 +1227,7 @@ void PacketFactoryManager::init ()
 	//addFactory( new GCUseSkillCardOKFactory() );
 //end
 #if __OUTPUT_INIT__
-	cout << toString() << endl;
+	cout << toString() << eos;
 #endif
 	
 	__END_CATCH

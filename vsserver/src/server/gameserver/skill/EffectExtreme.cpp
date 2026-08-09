@@ -36,12 +36,12 @@ void EffectExtreme::unaffect()
 {
     __BEGIN_TRY
 
-	//cout << "EffectExtreme" << "unaffect BEGIN" << endl;
+	//cout << "EffectExtreme" << "unaffect BEGIN" << eos;
 
     Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
     unaffect(pCreature);
 
-	//cout << "EffectExtreme" << "unaffect END" << endl;
+	//cout << "EffectExtreme" << "unaffect END" << eos;
 
     __END_CATCH
 }
@@ -52,7 +52,7 @@ void EffectExtreme::unaffect(Creature* pCreature)
 	__BEGIN_TRY
 	__BEGIN_DEBUG
 
-	//cout << "EffectExtreme" << "unaffect BEGIN" << endl;
+	//cout << "EffectExtreme" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isVampire());
@@ -76,7 +76,7 @@ void EffectExtreme::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(Effect::EFFECT_CLASS_EXTREME);
 	pZone->broadcastPacket(pVampire->getX(), pVampire->getY(), &gcRemoveEffect);
 
-	//cout << "EffectExtreme" << "unaffect END" << endl;
+	//cout << "EffectExtreme" << "unaffect END" << eos;
 
 	__END_DEBUG
 	__END_CATCH

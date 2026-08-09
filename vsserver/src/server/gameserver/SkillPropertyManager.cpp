@@ -145,13 +145,13 @@ SkillProperty* SkillPropertyManager::getSkillProperty(SkillType_t SkillType)
 
 	if (SkillType >= SKILL_MAX)
 	{
-		cerr << "SkillPropertyManager::getSkillProperty() : out of bounds" << endl;
+		cerr << "SkillPropertyManager::getSkillProperty() : out of bounds" << eos;
 		throw OutOfBoundException ();
 	}
 
 	if (m_SkillProperties[SkillType] == NULL)
 	{
-		cerr << "SkillPropertyManager::getSkillProperty() : no such element" << endl;
+		cerr << "SkillPropertyManager::getSkillProperty() : no such element" << eos;
 		throw NoSuchElementException ();
 	}
 
@@ -167,15 +167,15 @@ void SkillPropertyManager::addSkillProperty( SkillProperty* pSkillProperty )
 
 	if (pSkillProperty->getType() >= SKILL_MAX)
 	{
-		cerr << "SkillPropertyManager::getSkillProperty() : out of bounds" << endl;
-		cout << pSkillProperty->getType() << SKILL_MAX << endl;
+		cerr << "SkillPropertyManager::getSkillProperty() : out of bounds" << eos;
+		cout << pSkillProperty->getType() << SKILL_MAX << eos;
 		throw OutOfBoundException ();
 	}
 
 	if (m_SkillProperties[pSkillProperty->getType()] != NULL)
 	{
-		cerr << "SkillPropertyManager::getSkillProperty() : Dup element" << endl;
-		cout << pSkillProperty->getType() << SKILL_MAX << endl;
+		cerr << "SkillPropertyManager::getSkillProperty() : Dup element" << eos;
+		cout << pSkillProperty->getType() << SKILL_MAX << eos;
 		throw DuplicatedException ();
 	}
 

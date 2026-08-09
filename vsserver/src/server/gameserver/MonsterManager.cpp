@@ -289,7 +289,7 @@ void MonsterManager::parseMonsterList(const string& text, bool bReload)
 				}
 				catch (EmptyTileNotExistException&)
 				{
-					//cerr << "MonsterManager::load() : ÀÚ¸®°¡ ¾ø³×?" << endl;
+					//cerr << "MonsterManager::load() : ÀÚ¸®°¡ ¾ø³×?" << eos;
 					SAFE_DELETE(pMonster);
 				}
 
@@ -334,8 +334,8 @@ void MonsterManager::parseEventMonsterList(const string& text, bool bReload)
 		{
 			tx = atoi(text.substr(m+1, n-m-1).c_str());
 			ty = atoi(text.substr(n+1, l-n-1).c_str());
-			//cout << "x : " << tx << endl;
-			//cout << "y : " << ty << endl;
+			//cout << "x : " << tx << eos;
+			//cout << "y : " << ty << eos;
 			l = m;
 		}
 
@@ -353,7 +353,7 @@ void MonsterManager::parseEventMonsterList(const string& text, bool bReload)
 		{
 			////cout << "[MM] load EventMonsterList: [" << m_pZone->getZoneID() << "] mtype=" << monsterType
 			//	<< ", maxMonsters=" << maxMonsters
-			//	<< ", regenDelay=" << regenDelay << endl;
+			//	<< ", regenDelay=" << regenDelay << eos;
 			if (m_pEventMonsterInfo==NULL)
 			{
 				m_pEventMonsterInfo = new vector<EventMonsterInfo>;
@@ -420,7 +420,7 @@ void MonsterManager::parseEventMonsterList(const string& text, bool bReload)
 					}
 					catch (EmptyTileNotExistException&)
 					{
-						//cerr << "MonsterManager::load() : ÀÚ¸®??¾ø³×?" << endl;
+						//cerr << "MonsterManager::load() : ÀÚ¸®??¾ø³×?" << eos;
 						SAFE_DELETE(pMonster);
 					}
 				}
@@ -472,7 +472,7 @@ void MonsterManager::addCreature (Creature* pCreature)
 		}
 
 		////cout << "[MM] add EventMonster: [" << pMonster->getEventMonsterIndex()
-		//	<< "] = " << info.monsterType << ", delay = " << info.regenDelay << endl;
+		//	<< "] = " << info.monsterType << ", delay = " << info.regenDelay << eos;
 		return;
 	}
 
@@ -509,7 +509,7 @@ void MonsterManager::deleteCreature (ObjectID_t creatureID)
 
 	if (itr == m_Creatures.end()) 
 	{
-		cerr << "MonsterManager::deleteCreature() : NoSuchElementException" << endl;
+		cerr << "MonsterManager::deleteCreature() : NoSuchElementException" << eos;
 		
 		// ÀÌ°Íµµ ¿ÜºÎ¿¡¼­ Á¦´ë·Î Ã³¸® ¾ÈµÇ°í ÀÖ´Â°Å °°´Ù.
 		// by sigi. 2002.5.9
@@ -538,7 +538,7 @@ void MonsterManager::deleteCreature (ObjectID_t creatureID)
 			EventMonsterInfo& info = (*m_pEventMonsterInfo)[index];
 			info.bExist = false;
 			////cout << "[MM] delete EventMonster: [" << pMonster->getEventMonsterIndex()
-			//	<< "] = " << info.monsterType << endl;
+			//	<< "] = " << info.monsterType << eos;
 		}
 
 		return;
@@ -549,7 +549,7 @@ void MonsterManager::deleteCreature (ObjectID_t creatureID)
 
 	if (itr2 == m_Monsters.end()) 
 	{
-		cerr << "MonsterManager::deleteCreature() : NoSuchElementException" << endl;
+		cerr << "MonsterManager::deleteCreature() : NoSuchElementException" << eos;
 		//throw NoSuchElementException("±×·± SpriteTypeÀ» °¡Áø ¸ó½ºÅÍ´Â Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.");
 	}
 	else 
@@ -571,7 +571,7 @@ void MonsterManager::addPotentialEnemy(Monster* pAttackedMonster, Creature* pCre
 {
 	__BEGIN_TRY
 
-	////cout << "MonsterManager::addPotentialEnemy()" << endl;
+	////cout << "MonsterManager::addPotentialEnemy()" << eos;
 		
 	hash_map< ObjectID_t , Creature* >::const_iterator itr = m_Creatures.begin();
 
@@ -587,7 +587,7 @@ void MonsterManager::addPotentialEnemy(Monster* pAttackedMonster, Creature* pCre
 			&& pMonsterCreature!=pAttackedMonster)
 		{
 			Monster* pMonster = dynamic_cast<Monster*>(pMonsterCreature);
-			////cout << "addPotentialEnemy: " << pMonster->getName().c_str() << endl;
+			////cout << "addPotentialEnemy: " << pMonster->getName().c_str() << eos;
 			pMonster->addPotentialEnemy( pCreature );
 		}
 	}
@@ -605,7 +605,7 @@ void MonsterManager::addEnemy(Monster* pAttackedMonster, Creature* pCreature)
 {
 	__BEGIN_TRY
 		
-	////cout << "MonsterManager::addEnemy()" << endl;
+	////cout << "MonsterManager::addEnemy()" << eos;
 
 	hash_map< ObjectID_t , Creature* >::const_iterator itr = m_Creatures.begin();
 
@@ -621,7 +621,7 @@ void MonsterManager::addEnemy(Monster* pAttackedMonster, Creature* pCreature)
 			&& pMonsterCreature!=pAttackedMonster)
 		{
 			Monster* pMonster = dynamic_cast<Monster*>(pMonsterCreature);
-			////cout << "addEnemy: " << pMonster->getName().c_str() << endl;
+			////cout << "addEnemy: " << pMonster->getName().c_str() << eos;
 			pMonster->addEnemy( pCreature );
 		}
 	}
@@ -676,7 +676,7 @@ void MonsterManager::processCreatures ()
 
 					if (itr == m_Monsters.end()) 
 					{
-						//cerr << "MonsterManager::processCreatures() : NoSuchElementException" << endl;
+						//cerr << "MonsterManager::processCreatures() : NoSuchElementException" << eos;
 						//throw NoSuchElementException("±×·± SpriteTypeÀ» °¡Áø ¸ó½ºÅÍ´Â Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.");
 					}
 					else
@@ -743,7 +743,7 @@ void MonsterManager::processCreatures ()
 								info.bExist = false;
 
 								////cout << "[MM] dead EventMonster: [" << pMonster->getEventMonsterIndex()
-								//	<< "] = " << info.monsterType << endl;
+								//	<< "] = " << info.monsterType << eos;
 							}
 						}
 					}
@@ -754,7 +754,7 @@ void MonsterManager::processCreatures ()
 
 						if (itr == m_Monsters.end()) 
 						{
-							//cerr << "MonsterManager::processCreatures() : NoSuchElementException" << endl;
+							//cerr << "MonsterManager::processCreatures() : NoSuchElementException" << eos;
 							//throw NoSuchElementException("±×·± SpriteTypeÀ» °¡Áø ¸ó½ºÅÍ´Â Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.");
 						}
 						else
@@ -816,7 +816,7 @@ void MonsterManager::processCreatures ()
 	catch (Throwable & t)
 	{
 		filelog("MonsterManagerBug.log", "ProcessCreatureBug : %s", t.toString().c_str());
-		//cerr << t.toString() << endl;
+		//cerr << t.toString() << eos;
 	}
 
 //	__END_PROFILE_MONSTER("MM_PROCESS_CREATURES");
@@ -918,7 +918,7 @@ void MonsterManager::regenerateCreatures ()
 			}
 			catch (EmptyTileNotExistException&)
 			{
-				//cerr << "MonsterManager::processCreatures() : ÀÚ¸®°¡ ¾ø³×?" << endl;
+				//cerr << "MonsterManager::processCreatures() : ÀÚ¸®°¡ ¾ø³×?" << eos;
 				SAFE_DELETE(pMonster);
 			}
 		}
@@ -984,7 +984,7 @@ void MonsterManager::regenerateCreatures ()
 				}
 				catch (EmptyTileNotExistException&)
 				{
-					//cerr << "MonsterManager::processCreatures() : ÀÚ¸®°¡ ¾ø³×?" << endl;
+					//cerr << "MonsterManager::processCreatures() : ÀÚ¸®°¡ ¾ø³×?" << eos;
 					SAFE_DELETE(pMonster);
 				}
 			}
@@ -1000,7 +1000,7 @@ void MonsterManager::regenerateCreatures ()
 			*/
 		}
 
-		////cout << endl;
+		////cout << eos;
 	}
 
 	__END_DEBUG
@@ -1047,7 +1047,7 @@ bool MonsterManager::findPosition(MonsterType_t monsterType, ZoneCoord_t& RX, Zo
 
 		if (++count >= 300)
 		{
-			cerr << "MonsterManager::findPosition() : Max Count Exceeded" << endl;
+			cerr << "MonsterManager::findPosition() : Max Count Exceeded" << eos;
 			throw ("MonsterManager::findPosition() : Max Count Exceeded");
 		}
 	}
@@ -1186,7 +1186,7 @@ void MonsterManager::killCreature (Creature* pDeadCreature)
 	// ¸ó½ºÅÍ µå¶ø ·Îµå ÄÚµå¸¦ ºÒ·¯¿Â´Ù '-'
 	MonsterDropSetup* pMonsterItemDrop = g_pMonsterDropSetupManager->getMonsterDropSetup(pDeadMonster->getMonsterType());
 	if(pMonsterItemDrop != NULL && pMonsterItemDrop->IsInventory()){
-	//cout << " ÀÎº¥Åä¸® ¾ÆÀÌÅÛÀ» Áö±Þ " << endl;
+	//cout << " ÀÎº¥Åä¸® ¾ÆÀÌÅÛÀ» Áö±Þ " << eos;
 	MonsterItemDrop(pDeadMonster);
 	}
 
@@ -1250,7 +1250,7 @@ void MonsterManager::killCreature (Creature* pDeadCreature)
 		gcSay.setColor( MASTER_SAY_COLOR );
 
 		gcSay.setMessage( g_pStringPool->getString(345) );
-		//cout << gcSay.getMessage() << endl;
+		//cout << gcSay.getMessage() << eos;
 		pZone->broadcastPacket(cx, cy, &gcSay);
 	}
 	else if ( pDeadMonster->getMonsterType() == 723 )
@@ -1260,7 +1260,7 @@ void MonsterManager::killCreature (Creature* pDeadCreature)
 		gcSay.setColor( MASTER_SAY_COLOR );
 
 		gcSay.setMessage( g_pStringPool->getString(360) );
-		//cout << gcSay.getMessage() << endl;
+		//cout << gcSay.getMessage() << eos;
 		pZone->broadcastPacket(cx, cy, &gcSay);
 	}
 
@@ -1308,7 +1308,7 @@ MonsterManager::addMonsters(ZoneCoord_t x, ZoneCoord_t y, MonsterType_t monsterT
 		try {
 
 			pMonster = new Monster(monsterType);
-			////cout << "¸ó½ºÅÍ Ãß°¡" << endl;
+			////cout << "¸ó½ºÅÍ Ãß°¡" << eos;
 
 			// ¼ÒÈ¯µÈ ¸ó½ºÅÍ°¡ ¾ÆÀÌÅÛÀ» °¡Áö´Â°¡?
 			pMonster->setTreasure( summonInfo.hasItem );
@@ -1375,7 +1375,7 @@ MonsterManager::addMonsters(ZoneCoord_t x, ZoneCoord_t y, MonsterType_t monsterT
 				pMonster->setClanType( clanType );
 			}
 
-			////cout << "clanType=" << (int)pMonster->getClanType() << endl;
+			////cout << "clanType=" << (int)pMonster->getClanType() << eos;
 
 			// 
 			if (summonInfo.canScanEnemy)
@@ -1397,7 +1397,7 @@ MonsterManager::addMonsters(ZoneCoord_t x, ZoneCoord_t y, MonsterType_t monsterT
 		}
 		catch (EmptyTileNotExistException&)
 		{
-			//cerr << "MonsterManager::processCreatures() : ÀÚ¸®°¡ ¾ø³×?" << endl;
+			//cerr << "MonsterManager::processCreatures() : ÀÚ¸®°¡ ¾ø³×?" << eos;
 			SAFE_DELETE(pMonster);
 		}
 	}
@@ -1498,8 +1498,8 @@ void MonsterManager::addItem(Monster* pDeadMonster, MonsterCorpse* pMonsterCorps
 			}
 		}
 
-		////cout << "ÀÌº¥Æ® ¾ÆÀÌÅÛ »ý¼º"  << "[" << i >> "," << EventSelector << "]" << m_SumOfCakeRatio << endl 
-			 //<< "(" << ricecake_template.ItemClass << " " << ricecake_template.ItemType << ")" << endl;
+		////cout << "ÀÌº¥Æ® ¾ÆÀÌÅÛ »ý¼º"  << "[" << i >> "," << EventSelector << "]" << m_SumOfCakeRatio << eos 
+			 //<< "(" << ricecake_template.ItemClass << " " << ricecake_template.ItemType << ")" << eos;
 
 		if (bOK)
 		{
@@ -1731,7 +1731,7 @@ void MonsterManager::addItem(Monster* pDeadMonster, MonsterCorpse* pMonsterCorps
 			if ( pZone->isPayPlay() 
 				|| pZone->isPremiumZone())
 			{
-				////cout << "»ý¼ºÈ®·ü!!!! : " << g_pVariableManager->getPremiumItemProbePercent() << endl;
+				////cout << "»ý¼ºÈ®·ü!!!! : " << g_pVariableManager->getPremiumItemProbePercent() << eos;
 			// add by sonic Ôö¼ÓÈýÊôÐÔµô±¦µØÍ¼ 2006.10.27
 				if(pDeadMonster->getZoneID() == 1013)//Èç¹ûµ±Ç°µØÍ¼ÎªÉè¶¨µÄµô±¦µØÍ¼
 				{
@@ -1767,7 +1767,7 @@ void MonsterManager::addItem(Monster* pDeadMonster, MonsterCorpse* pMonsterCorps
 							}
 						}
 
-	//					//cout << "ºê·ÎµåÄ³½ºÆÃ : " << pDeadMonster->getX() << ", " << pDeadMonster->getY() << endl;
+	//					//cout << "ºê·ÎµåÄ³½ºÆÃ : " << pDeadMonster->getX() << ", " << pDeadMonster->getY() << eos;
 						
 						pZone->broadcastPacket( pDeadMonster->getX(), pDeadMonster->getY(), &gcAE );
 					}
@@ -1802,7 +1802,7 @@ void MonsterManager::addItem(Monster* pDeadMonster, MonsterCorpse* pMonsterCorps
 					if ( pItem->isUnique() ) pItem->setGrade(6);
 					else
 						pItem->setGrade( ItemGradeManager::Instance().getRandomGrade() );
-	//				//cout << "·çÆÃ ¾ÆÀÌÅÛ µî±Þ : " << pItem->getGrade() << endl;
+	//				//cout << "·çÆÃ ¾ÆÀÌÅÛ µî±Þ : " << pItem->getGrade() << eos;
 
 					pItem->setDurability( computeMaxDurability(pItem) );
 
@@ -1834,7 +1834,7 @@ void MonsterManager::addItem(Monster* pDeadMonster, MonsterCorpse* pMonsterCorps
 			}
 			else
 			{
-				////cout << "»ý¼ºÈ®·ü!!!! : " << g_pVariableManager->getPremiumItemProbePercent() << endl;
+				////cout << "»ý¼ºÈ®·ü!!!! : " << g_pVariableManager->getPremiumItemProbePercent() << eos;
 				if (pTreasure->getRandomItem(&it, g_pVariableManager->getItemProbRatio() + itemBonusPercent ))
 				{
 					// by sigi. 2002.10.21
@@ -1851,7 +1851,7 @@ void MonsterManager::addItem(Monster* pDeadMonster, MonsterCorpse* pMonsterCorps
 					else
 						pItem->setGrade( ItemGradeManager::Instance().getRandomGrade() );
 	//				pItem->setGrade( ItemGradeManager::Instance().getRandomGrade() );
-	//				//cout << "·çÆÃ ¾ÆÀÌÅÛ µî±Þ : " << pItem->getGrade() << endl;
+	//				//cout << "·çÆÃ ¾ÆÀÌÅÛ µî±Þ : " << pItem->getGrade() << eos;
 
 					pItem->setDurability( computeMaxDurability(pItem) );
 		
@@ -1922,7 +1922,7 @@ void MonsterManager::addItem(Monster* pDeadMonster, MonsterCorpse* pMonsterCorps
 					if ( pZone->isPayPlay() 
 						|| pZone->isPremiumZone())
 					{
-						////cout << "»ý¼ºÈ®·ü!!!! : " << g_pVariableManager->getPremiumItemProbePercent() << endl;
+						////cout << "»ý¼ºÈ®·ü!!!! : " << g_pVariableManager->getPremiumItemProbePercent() << eos;
 						if (pTreasure->getRandomItem(&it, itemRatioBonus + g_pVariableManager->getPremiumItemProbePercent() + itemBonusPercent ) )
 						{
 							// by sigi. 2002.10.21
@@ -1951,7 +1951,7 @@ void MonsterManager::addItem(Monster* pDeadMonster, MonsterCorpse* pMonsterCorps
 									}
 								}
 
-	//							//cout << "ºê·ÎµåÄ³?ºÆ?: " << pDeadMonster->getX() << ", " << pDeadMonster->getY() << endl;
+	//							//cout << "ºê·ÎµåÄ³?ºÆ?: " << pDeadMonster->getX() << ", " << pDeadMonster->getY() << eos;
 								
 								pZone->broadcastPacket( pDeadMonster->getX(), pDeadMonster->getY(), &gcAE );
 							}
@@ -1997,7 +1997,7 @@ void MonsterManager::addItem(Monster* pDeadMonster, MonsterCorpse* pMonsterCorps
 							else
 								pItem->setGrade( ItemGradeManager::Instance().getRandomGrade() );
 							//pItem->setGrade( ItemGradeManager::Instance().getRandomGrade() );
-							////cout << "·çÆÃ ¾ÆÀÌÅÛ µî±Þ : " << pItem->getGrade() << endl;
+							////cout << "·çÆÃ ¾ÆÀÌÅÛ µî±Þ : " << pItem->getGrade() << eos;
 
 							pItem->setDurability( computeMaxDurability(pItem) );
 				
@@ -2008,7 +2008,7 @@ void MonsterManager::addItem(Monster* pDeadMonster, MonsterCorpse* pMonsterCorps
 					}
 					else
 					{
-						////cout << "»ý¼ºÈ®·ü!!!! : " << g_pVariableManager->getPremiumItemProbePercent() << endl;
+						////cout << "»ý¼ºÈ®·ü!!!! : " << g_pVariableManager->getPremiumItemProbePercent() << eos;
 						if (pTreasure->getRandomItem(&it, g_pVariableManager->getItemProbRatio() + itemBonusPercent ))
 						{
 							// by sigi. 2002.10.21
@@ -2024,7 +2024,7 @@ void MonsterManager::addItem(Monster* pDeadMonster, MonsterCorpse* pMonsterCorps
 							else
 								pItem->setGrade( ItemGradeManager::Instance().getRandomGrade() );
 							//pItem->setGrade( ItemGradeManager::Instance().getRandomGrade() );
-	//						//cout << "·çÆÃ ¾ÆÀÌÅÛ µî±Þ : " << pItem->getGrade() << endl;
+	//						//cout << "·çÆÃ ¾ÆÀÌÅÛ µî±Þ : " << pItem->getGrade() << eos;
 
 							pItem->setDurability( computeMaxDurability(pItem) );
 				
@@ -2095,7 +2095,7 @@ void MonsterManager::addItem(Monster* pDeadMonster, MonsterCorpse* pMonsterCorps
 
 			Zone* pZone = pDeadMonster->getZone();
 
-	//cout << " ¹®Á¦Á¡ " << it.ItemClass << it.ItemType << endl;
+	//cout << " ¹®Á¦Á¡ " << it.ItemClass << it.ItemType << eos;
 			pItem = g_pItemFactoryManager->createItem(it.ItemClass, it.ItemType, it.OptionType);
 			Assert(pItem != NULL);
 			pItem->setGrade( ItemGradeManager::Instance().getRandomGrade() );
@@ -2148,7 +2148,7 @@ void MonsterManager::addItem(Monster* pDeadMonster, MonsterCorpse* pMonsterCorps
 		ball_template.OptionType=0;
 
 		//if(g_pVariable->getDebugMode() == "//cout")
-			////cout << "Ãà±¸°ø ¾ÆÀÌÅÛ »ý¼º" << endl;
+			////cout << "Ãà±¸°ø ¾ÆÀÌÅÛ »ý¼º" << eos;
 
 		Item *pItem = g_pItemFactoryManager->createItem(ball_template.ItemClass, ball_template.ItemType, ball_template.OptionType);
 		Assert(pItem != NULL);
@@ -2162,7 +2162,7 @@ void MonsterManager::addItem(Monster* pDeadMonster, MonsterCorpse* pMonsterCorps
 	//   ¸ðµç ¸ó½ºÅÍ¿¡°Ô¼­ º°ÀÌ ³ª¿Ã ¼ö ÀÖÀ¸¹Ç·Î, ¿©±â¿¡ ÇÏµåÄÚµùÇÏ¿´´Ù.
 	//   1/1500 ÀÇ È®·ü·Î º° ¾ÆÀÌÅÛÀ» Ãß°¡·Î »ý¼ºÇÑ´Ù.(°É¸®´Â ?ðÀ?Àç¼ö´Ù)
 	//////////////////////////////////////////////////////////////////////
-	////cout << "Monster Manager: star -> " << g_pVariable->getStar() << endl;
+	////cout << "Monster Manager: star -> " << g_pVariable->getStar() << eos;
 	//int star_percentage = g_pVariable->getStar();
     /*
 	if(rand()%500 == 0) {
@@ -2177,7 +2177,7 @@ void MonsterManager::addItem(Monster* pDeadMonster, MonsterCorpse* pMonsterCorps
 			star_template.ItemType = (rand() % 5) + 1;
 		star_template.OptionType = 0;
 
-		//cout << "ÀÌº¥Æ® ¾ÆÀÌÅÛ »ý¼º" << star_template.ItemType << endl;
+		//cout << "ÀÌº¥Æ® ¾ÆÀÌÅÛ »ý¼º" << star_template.ItemType << eos;
 		Item* pItem = g_pItemFactoryManager->createItem(star_template.ItemClass,star_template.ItemType, star_template.OptionType);
 		Assert(pItem != NULL);
 		pMonsterCorpse->addTreasure(pItem);
@@ -2197,7 +2197,7 @@ int MonsterManager::upgradeItemTypeByLuck(int luckLevel, Creature::CreatureClass
 
 	luckLevel = luckLevel + (rand()%20) - 10;
 	luckLevel = min(MAX_LUCK_LEVEL, luckLevel);
-//	//cout << "Apply luck : " << luckLevel << endl;
+//	//cout << "Apply luck : " << luckLevel << eos;
 
 	int ratio;
 
@@ -2246,8 +2246,8 @@ int MonsterManager::upgradeItemTypeByLuck(int luckLevel, Creature::CreatureClass
 	int value = rand()%10000;
 //	int value = 0;//rand()%10000;
 
-//	//cout << "ratio : " << ratio << endl;
-//	//cout << "value : " << value << endl;
+//	//cout << "ratio : " << ratio << eos;
+//	//cout << "value : " << value << eos;
 
 /*	const LuckInfo& luckInfo = g_pLuckInfoManager->getLuckInfo(luckLevel);
 
@@ -2256,17 +2256,17 @@ int MonsterManager::upgradeItemTypeByLuck(int luckLevel, Creature::CreatureClass
 	if (upgradeCount==0)
 		return;*/
 
-//	//cout << "before : " << it.ItemClass << "/" << (int)it.ItemType << endl;
+//	//cout << "before : " << it.ItemClass << "/" << (int)it.ItemType << eos;
 	if ( ratio > 0 && value < ratio )
 	{
 		it.ItemType = getUpgradeItemType(it.ItemClass, it.ItemType, 1);
-//		//cout << "after : " << it.ItemClass << "/" << (int)it.ItemType << endl;
+//		//cout << "after : " << it.ItemClass << "/" << (int)it.ItemType << eos;
 		return 1;
 	}
 	else if ( ratio < 0 && value < (-ratio) )
 	{
 		it.ItemType = getDowngradeItemType(it.ItemClass, it.ItemType);
-//		//cout << "after : " << it.ItemClass << "/" << (int)it.ItemType << endl;
+//		//cout << "after : " << it.ItemClass << "/" << (int)it.ItemType << eos;
 		return -1;
 	}
 
@@ -2287,10 +2287,10 @@ int MonsterManager::upgradeOptionByLuck(int luckLevel, Creature::CreatureClass o
 
 	luckLevel = luckLevel + (rand()%20) - 10;
 	luckLevel = min(MAX_LUCK_LEVEL, luckLevel);
-//	//cout << "Apply luck to option : " << luckLevel << endl;
+//	//cout << "Apply luck to option : " << luckLevel << eos;
 
 	int grade = pOptionInfo->getGrade() + 1;
-//	//cout << "Option Grade : " << grade << endl;
+//	//cout << "Option Grade : " << grade << eos;
 
 	int ratio;
 
@@ -2339,15 +2339,15 @@ int MonsterManager::upgradeOptionByLuck(int luckLevel, Creature::CreatureClass o
 	int value = rand()%10000;
 //	int value = 0;//rand()%10000;
 
-//	//cout << "ratio : " << ratio << endl;
-//	//cout << "value : " << value << endl;
+//	//cout << "ratio : " << ratio << eos;
+//	//cout << "value : " << value << eos;
 
-//	//cout << "before : " << pOptionInfo->getHName() << endl;
+//	//cout << "before : " << pOptionInfo->getHName() << eos;
 
 	if ( ratio > 0 && value < ratio && pOptionInfo->getUpgradeType() != optionType && pOptionInfo->isUpgradePossible() )
 	{
 		(*it.OptionType.begin()) = pOptionInfo->getUpgradeType();
-//		//cout << "after : " << g_pOptionInfoManager->getOptionInfo( it.OptionType.front() )->getHName() << endl;
+//		//cout << "after : " << g_pOptionInfoManager->getOptionInfo( it.OptionType.front() )->getHName() << eos;
 		return 1;
 	}
 	else if ( ratio < 0 && value < (-ratio) && pOptionInfo->getPreviousType() != optionType )
@@ -2357,7 +2357,7 @@ int MonsterManager::upgradeOptionByLuck(int luckLevel, Creature::CreatureClass o
 		else
 			it.OptionType.pop_front();
 //		if ( it.OptionType.front() == 0 ) it.OptionType.pop_front();
-//		//cout << "after : " << g_pOptionInfoManager->getOptionInfo( it.OptionType.front() )->getHName() << endl;
+//		//cout << "after : " << g_pOptionInfoManager->getOptionInfo( it.OptionType.front() )->getHName() << eos;
 		return -1;
 	}
 

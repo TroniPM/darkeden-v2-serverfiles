@@ -103,7 +103,7 @@ void EffectCyclingWarRock::affect()
 
 				if ( pCreature->isPC() )
 				{
-					//cout << pCreature->getName() << "을 CyclingWarRock로 " << m_Damage << "만큼의 데미지를 줬습니다." << endl;
+					//cout << pCreature->getName() << "을 CyclingWarRock로 " << m_Damage << "만큼의 데미지를 줬습니다." << eos;
 					GCModifyInformation gcMI;
 					::setDamage( pCreature, m_Damage, pCastCreature, SKILL_CYCLING_WAR_ROCK, &gcMI, &gcAttackerMI );
 
@@ -164,7 +164,7 @@ void EffectCyclingWarRock::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectCyclingWarRock" << "unaffect BEGIN" << endl;
+	//cout << "EffectCyclingWarRock" << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isOusters());
@@ -184,7 +184,7 @@ void EffectCyclingWarRock::unaffect(Creature* pCreature)
 	gcRemoveEffect.addEffectList(getSendEffectClass());
 	pZone->broadcastPacket(pCreature->getX(), pCreature->getY(), &gcRemoveEffect);
 
-	//cout << "EffectCyclingWarRock" << "unaffect END" << endl;
+	//cout << "EffectCyclingWarRock" << "unaffect END" << eos;
 
 	__END_CATCH
 }

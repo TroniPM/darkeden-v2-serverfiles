@@ -36,12 +36,12 @@ void EffectShadyDouple::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectShadyDouple " << "begin begin" << endl;
+	//cout << "EffectShadyDouple " << "begin begin" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 	affect(pCreature);
 
-	//cout << "EffectShadyDouple " << "begin end" << endl;
+	//cout << "EffectShadyDouple " << "begin end" << eos;
 
 	__END_CATCH 
 
@@ -89,8 +89,8 @@ void EffectShadyDouple::affect(Creature* pCreature)
 	}
 	else setDeadline(0);
 
-//cout << "EffectShadyDouple " << "begin" << endl;
-	//cout << "EffectShadyDouple " << "end" << endl;
+//cout << "EffectShadyDouple " << "begin" << eos;
+	//cout << "EffectShadyDouple " << "end" << eos;
 
 	__END_CATCH
 }

@@ -635,10 +635,10 @@ void BeltLoader::load(Creature* pCreature)
 									Inventory* pBeltInventorys = ((SubInventory*)pBelts)->getInventory();
 										if (pBeltInventorys->canAddingEx(x, y, pBelt))
 										{
-											cout << " 추가완료"<< endl;
+											cout << " 추가완료"<< eos;
 											pBeltInventorys->addItemEx(x, y, pBelt);
 										}else{
-											cout << " 버그"<< endl;
+											cout << " 버그"<< eos;
 											processItemBugEx(pCreature, pBelt);
 										}
 								}else{

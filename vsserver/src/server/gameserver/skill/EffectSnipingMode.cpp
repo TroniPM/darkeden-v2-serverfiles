@@ -48,7 +48,7 @@ void EffectSnipingMode::unaffect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectSnipingMode " << "unaffect BEGIN" << endl;
+	//cout << "EffectSnipingMode " << "unaffect BEGIN" << eos;
 
 	Assert(pCreature != NULL);
 	Assert(pCreature->isSlayer()); // 슬레이어말고는 걸리지 않는다.
@@ -68,7 +68,7 @@ void EffectSnipingMode::unaffect(Creature* pCreature)
 	pSlayer->sendRealWearingInfo();
 	pSlayer->sendModifyInfo(prev);
 
-	//cout << "EffectSnipingMode " << "unaffect END" << endl;
+	//cout << "EffectSnipingMode " << "unaffect END" << eos;
 
 	__END_CATCH
 }

@@ -504,7 +504,7 @@ void VampireCoupleRingLoader::load(Zone* pZone)
 {
 	__BEGIN_TRY
 
-	cout << "존에 떨어진 아이템 로드는 지원하지 않습니다." << endl;
+	cout << "존에 떨어진 아이템 로드는 지원하지 않습니다." << eos;
 	Assert( false );
 
 	Assert(pZone != NULL);

@@ -43,7 +43,7 @@ void EffectHellFire::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectHellFire" << "affect BEGIN" << endl;
+	//cout << "EffectHellFire" << "affect BEGIN" << eos;
 	
 	Assert(m_pZone != NULL);
 
@@ -113,7 +113,7 @@ void EffectHellFire::affect()
 	
 	setNextTime(m_Tick);
 
-	//cout << "EffectHellFire" << "affect END" << endl;
+	//cout << "EffectHellFire" << "affect END" << eos;
 
 	__END_CATCH 
 }
@@ -143,12 +143,12 @@ void EffectHellFire::unaffect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectHellFire" << "unaffect BEGIN" << endl;
+	//cout << "EffectHellFire" << "unaffect BEGIN" << eos;
 
     Tile& tile = m_pZone->getTile(m_X, m_Y);
 	tile.deleteEffect(m_ObjectID);
 
-	//cout << "EffectHellFire" << "unaffect END" << endl;
+	//cout << "EffectHellFire" << "unaffect END" << eos;
 
 	__END_CATCH
 }

@@ -224,7 +224,7 @@ void CLCreatePCHandler::execute (CLCreatePC* pPacket , Player* pPlayer)
 			if (nINT < 5 || nINT > 20)  bInvalidAttr = true;
 			if (nSTR + nDEX + nINT > 30) bInvalidAttr = true;
 
-			//cout << "Slayer: " << nSTR << ", " << nDEX << ", " << nINT << endl;
+			//cout << "Slayer: " << nSTR << ", " << nDEX << ", " << nINT << eos;
 		}
 		else if ( pPacket->getRace() == RACE_VAMPIRE )	// vampire인 경우. 무조건 20. by sigi. 2002.10.31
 		{
@@ -249,7 +249,7 @@ void CLCreatePCHandler::execute (CLCreatePC* pPacket , Player* pPlayer)
 			}
 			// 
 
-			//cout << "Vampire: " << nSTR << ", " << nDEX << ", " << nINT << endl;
+			//cout << "Vampire: " << nSTR << ", " << nDEX << ", " << nINT << eos;
 		}
 		else if ( pPacket->getRace() == RACE_OUSTERS )
 		{

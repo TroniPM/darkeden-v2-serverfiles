@@ -111,7 +111,7 @@ void CGUseItemFromInventoryHandler::execute(CGUseItemFromInventory* pPacket, Pla
 
 #ifdef __GAME_SERVER__
 
-//	cout << "CGUseItemFromInventoryHandler " << endl;
+//	cout << "CGUseItemFromInventoryHandler " << eos;
 	Assert(pPacket != NULL);
 	Assert(pPlayer != NULL);
 
@@ -134,7 +134,7 @@ void CGUseItemFromInventoryHandler::execute(CGUseItemFromInventory* pPacket, Pla
 	CoordInven_t InvenX = pPacket->getX();
 	CoordInven_t InvenY = pPacket->getY();
 
-	//cout << "패킷날라옴 : " << pPacket->toString() << endl;
+	//cout << "패킷날라옴 : " << pPacket->toString() << eos;
 
 	// 인벤토리 좌표를 넘어가는 영역이라면 안 된다.
 	if (InvenX >= pInventory->getWidth() || InvenY >= pInventory->getHeight())
@@ -161,7 +161,7 @@ void CGUseItemFromInventoryHandler::execute(CGUseItemFromInventory* pPacket, Pla
 	// OID가 일치하지 않거나, 사용할 수 없는 아이템이라면 에러다.
 	if (ItemObjectID != pPacket->getObjectID() || !isUsableItem(pItem, pCreature))
 	{
-		//cout << "아템 사용 불가. 옵젝트 아디가 안 맞던가..." << endl;
+		//cout << "아템 사용 불가. 옵젝트 아디가 안 맞던가..." << eos;
 		GCCannotUse _GCCannotUse;
 		_GCCannotUse.setObjectID(pPacket->getObjectID());
 		pGamePlayer->sendPacket(&_GCCannotUse);
@@ -192,7 +192,7 @@ void CGUseItemFromInventoryHandler::execute(CGUseItemFromInventory* pPacket, Pla
 	}
 
 	// 아이템의 종류에 따라, 처리 함수를 분기시켜 준다.
-	////cout << pItem->getItemClass() << endl;
+	////cout << pItem->getItemClass() << eos;
 
 	switch (pItem->getItemClass())
 	{
@@ -1121,7 +1121,7 @@ void CGUseItemFromInventoryHandler::executeKeyItem(CGUseItemFromInventory* pPack
 
 #ifdef __GAME_SERVER__
 
-	////cout << pPacket->toString().c_str() << endl;
+	////cout << pPacket->toString().c_str() << eos;
 
 	Assert(pPacket != NULL);
 	Assert(pPlayer != NULL);
@@ -1262,7 +1262,7 @@ void CGUseItemFromInventoryHandler::executeKeyItem(CGUseItemFromInventory* pPack
 
 	if (g_pParkingCenter->hasMotorcycleBox(targetID)) 
 	{
-		////cout << "기존에 불려진 오토바이가 있습니다" << endl;
+		////cout << "기존에 불려진 오토바이가 있습니다" << eos;
 
 		MotorcycleBox* pMotorcycleBox = g_pParkingCenter->getMotorcycleBox(targetID);
 
@@ -1349,7 +1349,7 @@ void CGUseItemFromInventoryHandler::executeKeyItem(CGUseItemFromInventory* pPack
 
 
 		// 오토바이를 존에 추가한다.
-		////cout << "오토바이를 존에 추가합니다" << pSlayer->getX() << " " << pSlayer->getY() << endl;
+		////cout << "오토바이를 존에 추가합니다" << pSlayer->getX() << " " << pSlayer->getY() << eos;
 		TPOINT pt = pZone->addItem(pMotorcycle, pSlayer->getX(), pSlayer->getY(), false);
 
 		if(pt.x == -1)
@@ -1435,7 +1435,7 @@ void CGUseItemFromInventoryHandler::executeFirecraker(CGUseItemFromInventory* pP
 
 #ifdef __GAME_SERVER__
 
-	////cout << pPacket->toString().c_str() << endl;
+	////cout << pPacket->toString().c_str() << eos;
 
 	Assert(pPacket != NULL);
 	Assert(pPlayer != NULL);
@@ -2050,19 +2050,19 @@ void CGUseItemFromInventoryHandler::executeResurrectItem(CGUseItemFromInventory*
 	Item*           pItem        = pInventory->getItem(InvenX, InvenY);
 	ResurrectItemInfo*	pItemInfo	 = dynamic_cast<ResurrectItemInfo*>(g_pItemInfoManager->getItemInfo( pItem->getItemClass(), pItem->getItemType() ));
 
-	//cout << "Resurrection 아이템을 사용함 : " << pPC->getName() << " : " << pItem->getItemType() << endl;
+	//cout << "Resurrection 아이템을 사용함 : " << pPC->getName() << " : " << pItem->getItemType() << eos;
 
 	if ( pItem->getObjectID() != pPacket->getObjectID() ||
 		pItemInfo == NULL )
 	{
-		//cout << "아템 오브젝트 아디가 틀림" << endl;
+		//cout << "아템 오브젝트 아디가 틀림" << eos;
 		sendCannotUse( pPacket, pPlayer );
 		return;
 	}
 
 	if ( !pPC->isFlag(Effect::EFFECT_CLASS_COMA) )
 	{
-		//cout << "죽은 상태가 아님" << endl;
+		//cout << "죽은 상태가 아님" << eos;
 		sendCannotUse( pPacket, pPlayer );
 		return;
 	}
@@ -2266,7 +2266,7 @@ void CGUseItemFromInventoryHandler::executeTranslator(CGUseItemFromInventory* pP
 		pItemInfo == NULL ||
 		pPC->isFlag( Effect::EFFECT_CLASS_TRANSLATION ) )
 	{
-		////cout << "아템 오브젝트 아디가 틀림" << endl;
+		////cout << "아템 오브젝트 아디가 틀림" << eos;
 		sendCannotUse( pPacket, pPlayer );
 		return;
 	}
@@ -2417,7 +2417,7 @@ void CGUseItemFromInventoryHandler::executePetItem(CGUseItemFromInventory* pPack
 		PetInfo* pTargetPetInfo = pPetItem->getPetInfo();
 		if ( pTargetPetInfo->getPetHP() == 0 )
 		{
-//			cout << pPC->getName() << " 죽은 펫 부르지 마셈" << endl;
+//			cout << pPC->getName() << " 죽은 펫 부르지 마셈" << eos;
 			sendCannotUse( pPacket, pPlayer );
 			return;
 		}
@@ -2433,11 +2433,11 @@ void CGUseItemFromInventoryHandler::executePetItem(CGUseItemFromInventory* pPack
 		if ( pPetInfo == NULL || pPetInfo->getPetItem() != pPetItem )
 		{
 			pPC->setPetInfo( pTargetPetInfo );
-			//cout << pPetItem->getObjectID() << " 아이템의 펫을 불렀습니다." << endl;
+			//cout << pPetItem->getObjectID() << " 아이템의 펫을 불렀습니다." << eos;
 		}
 		else
 		{
-			//cout << "펫을 지웠습니다." << endl;
+			//cout << "펫을 지웠습니다." << eos;
 			pPC->setPetInfo( NULL );
 		}
 
@@ -2554,7 +2554,7 @@ void CGUseItemFromInventoryHandler::executeEventGiftBox(CGUseItemFromInventory* 
 	}
 
 	// DEBUG
-	cout << "Name : " << pCreature->getName() << " , GiftBoxType : " << pItem->getItemType() << endl;
+	cout << "Name : " << pCreature->getName() << " , GiftBoxType : " << pItem->getItemType() << eos;
 
 	if ( pItem->getItemType() >= 22 && pItem->getItemType() <= 26 )
 	{

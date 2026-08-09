@@ -141,7 +141,7 @@ void PCOustersInfo3::write ( SocketOutputStream & oStream ) const
 	oStream.write( m_Rank );
 	oStream.write( m_AdvancementLevel );
 
-//	cout << "½ÂÁ÷ ·¹º§ : " << (int)m_AdvancementLevel << endl;
+//	cout << "½ÂÁ÷ ·¹º§ : " << (int)m_AdvancementLevel << eos;
 
 	__END_CATCH
 }

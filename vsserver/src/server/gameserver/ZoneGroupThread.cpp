@@ -63,9 +63,9 @@ void ZoneGroupThread::run ()
 
 	Connection* pConnection = new Connection(host, db, user, password, port);
 	g_pDatabaseManager->addConnection((int)Thread::self(), pConnection);
-	cout << "******************************************************" << endl;
-	cout << " THREAD CONNECT DB " << endl;
-	cout << "******************************************************" << endl;
+	cout << "******************************************************" << eos;
+	cout << " THREAD CONNECT DB " << eos;
+	cout << "******************************************************" << eos;
 
 	string dist_host     = g_pConfig->getProperty("UI_DB_HOST");
 	string dist_db       = "DARKEDEN";
@@ -77,10 +77,10 @@ void ZoneGroupThread::run ()
 
 	Connection* pDistConnection = new Connection(dist_host, dist_db, dist_user, dist_password, dist_port);
 	g_pDatabaseManager->addDistConnection(((int)Thread::self()), pDistConnection);
-	cout << "******************************************************" << endl;
-	cout << " THREAD CONNECT UIIRIBUTION DB " << endl;
-	cout << " TID Number = " << (int)Thread::self()<< endl;
-	cout << "******************************************************" << endl;
+	cout << "******************************************************" << eos;
+	cout << " THREAD CONNECT UIIRIBUTION DB " << eos;
+	cout << " TID Number = " << (int)Thread::self()<< eos;
+	cout << "******************************************************" << eos;
 
 	/*
 	// Login DB 의 PCRoomDBInfo Table 읽어서 Connection 만들기
@@ -102,7 +102,7 @@ void ZoneGroupThread::run ()
 			 << "  ID=" << (int)ID
 			 << ", HOST=" << host.c_str()
 			 << ", DB=" << db.c_str()
-			 << ", User=" << user.c_str() << endl;
+			 << ", User=" << user.c_str() << eos;
 
 		Connection * pConnection = new Connection(host, db, user, password);
 		Assert(pConnection!=NULL);

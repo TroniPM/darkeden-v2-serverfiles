@@ -221,7 +221,7 @@ void PartyInviteInfoManager::cancelInvite(Creature* pHost, Creature* pGuest)
 
 	if (nCondition != 0)
 	{
-		cerr << "PartyInviteInfoManager::cancelInvite() : Error = " << nCondition << endl;
+		cerr << "PartyInviteInfoManager::cancelInvite() : Error = " << nCondition << eos;
 		// initInviteInfo()에서 일어나는 현상과 마찬가지로 여기에서도 
 		// 그 반대의 현상이 일어나서, 주석처리해 버렸다.
 		//throw Error("PartyInviteInfoManager::cancelInvite()");
@@ -283,7 +283,7 @@ void PartyInviteInfoManager::cancelInvite(Creature* pCreature)
 	/*
 	else
 	{
-		cerr << "PartyInviteInfoManager::cancelInvite() : Error" << endl;
+		cerr << "PartyInviteInfoManager::cancelInvite() : Error" << eos;
 		throw ("PartyInviteInfoManager::cancelInvite() : Error");
 	}
 	*/
@@ -299,7 +299,7 @@ bool PartyInviteInfoManager::addInviteInfo(PartyInviteInfo* pInfo)
 	hash_map<string, PartyInviteInfo*>::iterator itr = m_InfoMap.find(pInfo->getHostName());
 	if (itr != m_InfoMap.end())
 	{
-		cerr << "PartyInviteInfoManager::addInviteInfo() : DuplicatedException" << endl;
+		cerr << "PartyInviteInfoManager::addInviteInfo() : DuplicatedException" << eos;
 		//throw DuplicatedException("PartyInviteInfoManager::addInviteInfo() : DuplicatedException");
 
 		// Exception제거. by sigi. 2002.5.9
@@ -325,7 +325,7 @@ void PartyInviteInfoManager::deleteInviteInfo(const string& HostName)
 	}
 
 	/*
-	cerr << "PartyInviteInfoManager::deleteInviteInfo() : NoSuchElementException" << endl;
+	cerr << "PartyInviteInfoManager::deleteInviteInfo() : NoSuchElementException" << eos;
 	throw NoSuchElementException("PartyInviteInfoManager::deleteInviteInfo() : NoSuchElementException");
 	*/
 
@@ -345,7 +345,7 @@ PartyInviteInfo* PartyInviteInfoManager::getInviteInfo(const string& HostName)
 	}
 	/*
 	{
-		cerr << "PartyInviteInfoManager::getInviteInfo() : NoSuchElementException" << endl;
+		cerr << "PartyInviteInfoManager::getInviteInfo() : NoSuchElementException" << eos;
 		throw NoSuchElementException("PartyInviteInfoManager::getInviteInfo() : NoSuchElementException");
 	}
 	*/
@@ -400,7 +400,7 @@ Creature* Party::getMember(const string& name) const
 {
 	__BEGIN_TRY
 
-	////cout << "Party::getMember() : BEGIN" << endl;
+	////cout << "Party::getMember() : BEGIN" << eos;
 
 	Creature* pCreature = NULL;
 
@@ -409,7 +409,7 @@ Creature* Party::getMember(const string& name) const
 	hash_map<string, Creature*>::const_iterator itr = m_MemberMap.find(name);
 	if (itr == m_MemberMap.end())
 	{
-		cerr << "Party::getMember() : NoSuchElementException" << endl;
+		cerr << "Party::getMember() : NoSuchElementException" << eos;
 		throw NoSuchElementException("Party::getMember() : NoSuchElementException");
 	}
 
@@ -417,7 +417,7 @@ Creature* Party::getMember(const string& name) const
 
 	__LEAVE_CRITICAL_SECTION(m_Mutex)
 
-	////cout << "Party::getMember() : END" << endl;
+	////cout << "Party::getMember() : END" << eos;
 
 	return pCreature;
 
@@ -430,12 +430,12 @@ void Party::addMember(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	////cout << "Party::addMember() : BEGIN" << endl;
+	////cout << "Party::addMember() : BEGIN" << eos;
 
 	// 파티에 속할 수 있는 종족이 아니라면...
 	if (pCreature->getCreatureClass() != m_CreatureClass)
 	{
-		cerr << "Party::addMember() : Invalid Creature Class" << endl;
+		cerr << "Party::addMember() : Invalid Creature Class" << eos;
 		throw Error("Party::addMember() : Invalid Creature Class");
 	}
 
@@ -449,14 +449,14 @@ void Party::addMember(Creature* pCreature)
 	else
 	{
 		/*
-		cerr << "Party::addMember() : DuplicatedException" << endl;
+		cerr << "Party::addMember() : DuplicatedException" << eos;
 		throw DuplicatedException("Party::addMember() : DuplicatedException");
 		*/
 	}
 
 	__LEAVE_CRITICAL_SECTION(m_Mutex)
 
-	////cout << "Party::addMember() : END" << endl;
+	////cout << "Party::addMember() : END" << eos;
 
 	__END_CATCH
 }
@@ -467,14 +467,14 @@ void Party::deleteMember(const string& name)
 {
 	__BEGIN_TRY
 
-	////cout << "Party::deleteMember() : BEGIN" << endl;
+	////cout << "Party::deleteMember() : BEGIN" << eos;
 
 	__ENTER_CRITICAL_SECTION(m_Mutex)
 
 	hash_map<string, Creature*>::iterator itr = m_MemberMap.find(name);
 	if (itr == m_MemberMap.end())
 	{
-		//cerr << "Party::deleteMember() : NoSuchElementException" << endl;
+		//cerr << "Party::deleteMember() : NoSuchElementException" << eos;
 		//throw NoSuchElementException("Party::deleteMember() : NoSuchElementException");
 
 		m_Mutex.unlock();
@@ -486,7 +486,7 @@ void Party::deleteMember(const string& name)
 
 	__LEAVE_CRITICAL_SECTION(m_Mutex)
 
-	////cout << "Party::deleteMember() : END" << endl;
+	////cout << "Party::deleteMember() : END" << eos;
 
 	__END_CATCH
 }
@@ -497,14 +497,14 @@ bool Party::hasMember(const string& name) const
 {
 	__BEGIN_TRY
 
-	////cout << "Party::hasMember() : BEGIN" << endl;
+	////cout << "Party::hasMember() : BEGIN" << eos;
 
 	__ENTER_CRITICAL_SECTION(m_Mutex)
 
 	hash_map<string, Creature*>::const_iterator itr = m_MemberMap.find(name);
 	if (itr == m_MemberMap.end())
 	{
-		////cout << "Party::hasMember() : END" << endl;
+		////cout << "Party::hasMember() : END" << eos;
 
 		m_Mutex.unlock();
 		return false;
@@ -512,7 +512,7 @@ bool Party::hasMember(const string& name) const
 
 	__LEAVE_CRITICAL_SECTION(m_Mutex)
 
-	////cout << "Party::hasMember() : END" << endl;
+	////cout << "Party::hasMember() : END" << eos;
 
 	return true;
 
@@ -527,7 +527,7 @@ void Party::destroyParty(void)
 {
 	__BEGIN_TRY
 
-	////cout << "Party::destroyParty() : BEGIN" << endl;
+	////cout << "Party::destroyParty() : BEGIN" << eos;
 
 	__ENTER_CRITICAL_SECTION(m_Mutex)
 
@@ -539,7 +539,7 @@ void Party::destroyParty(void)
 		pCreature->setPartyID(0);
 //		pCreature->removeFlag( Effect::EFFECT_CLASS_CAN_ENTER_GDR_LAIR );
 
-		////cout << "파티에 남아있는 크리쳐[" << pCreature->getName() << "]의 파티 ID를 0으로 만들었습니다." << endl;
+		////cout << "파티에 남아있는 크리쳐[" << pCreature->getName() << "]의 파티 ID를 0으로 만들었습니다." << eos;
 
 		// 각각의 존에 있는 로컬 파티 매니저에서 해당하는 파티 객체를 삭제한다.
 		Zone* pZone = pCreature->getZone();
@@ -553,7 +553,7 @@ void Party::destroyParty(void)
 
 	__LEAVE_CRITICAL_SECTION(m_Mutex)
 
-	////cout << "Party::destroyParty() : END" << endl;
+	////cout << "Party::destroyParty() : END" << eos;
 
 	__END_CATCH
 }
@@ -564,7 +564,7 @@ void Party::broadcastPacket(Packet* pPacket, Creature* pOwner)
 {
 	__BEGIN_TRY
 
-	////cout << "Party::broadcastPacket() : BEGIN" << endl;
+	////cout << "Party::broadcastPacket() : BEGIN" << eos;
 
 	__ENTER_CRITICAL_SECTION(m_Mutex)
 
@@ -580,7 +580,7 @@ void Party::broadcastPacket(Packet* pPacket, Creature* pOwner)
 
 	__LEAVE_CRITICAL_SECTION(m_Mutex)
 
-	////cout << "Party::broadcastPacket() : END" << endl;
+	////cout << "Party::broadcastPacket() : END" << eos;
 
 	__END_CATCH
 }
@@ -592,7 +592,7 @@ void Party::makeGCPartyJoined(GCPartyJoined* pGCPartyJoined) const
 {
 	__BEGIN_TRY
 
-	////cout << "Party::makeGCPartyJoined() : BEGIN" << endl;
+	////cout << "Party::makeGCPartyJoined() : BEGIN" << eos;
 
 	Assert(pGCPartyJoined != NULL);
 
@@ -644,7 +644,7 @@ void Party::makeGCPartyJoined(GCPartyJoined* pGCPartyJoined) const
 
 	__LEAVE_CRITICAL_SECTION(m_Mutex)
 
-	////cout << "Party::makeGCPartyJoined() : END" << endl;
+	////cout << "Party::makeGCPartyJoined() : END" << eos;
 
 	__END_CATCH
 }
@@ -673,7 +673,7 @@ int Party::getAdjacentMemberSize(Creature* pLeader) const
 {
 	__BEGIN_TRY
 
-	////cout << "Party::getAdjacentMemberSize() : BEGIN" << endl;
+	////cout << "Party::getAdjacentMemberSize() : BEGIN" << eos;
 
 	Zone* pZone = pLeader->getZone();
 	Assert(pZone != NULL);
@@ -705,7 +705,7 @@ int Party::getAdjacentMemberSize(Creature* pLeader) const
 	//Assert(rValue >= 1);
 	if (rValue == 0) rValue = 1;
 
-	////cout << "Party::getAdjacentMemberSize() : END" << endl;
+	////cout << "Party::getAdjacentMemberSize() : END" << eos;
 
 	return rValue;
 
@@ -717,7 +717,7 @@ int Party::getAdjacentMemberSize_LOCKED(Creature* pLeader) const
 {
 	__BEGIN_TRY
 
-	////cout << "Party::getAdjacentMemberSize() : BEGIN" << endl;
+	////cout << "Party::getAdjacentMemberSize() : BEGIN" << eos;
 
 	Zone* pZone = pLeader->getZone();
 	Assert(pZone != NULL);
@@ -748,7 +748,7 @@ int Party::getAdjacentMemberSize_LOCKED(Creature* pLeader) const
 	// 자신도 포함되므로 적어도 1보다는 커야 한다.
 	Assert(rValue >= 1);
 
-	////cout << "Party::getAdjacentMemberSize() : END" << endl;
+	////cout << "Party::getAdjacentMemberSize() : END" << eos;
 
 	return rValue;
 
@@ -818,8 +818,8 @@ int Party::shareAttrExp(Creature* pLeader, int amount, int STRMultiplier, int DE
 	// 경험치를 파티원의 숫자에 증폭시?껜?
 	int nMemberSize = MemberList.size();
 
-	////cout << "파티원의 숫자 : " << nMemberSize << endl;
-	////cout << "원래 경험치 : " << amount << endl;
+	////cout << "파티원의 숫자 : " << nMemberSize << eos;
+	////cout << "원래 경험치 : " << amount << eos;
 
 	if (nMemberSize == 1)
 	{
@@ -846,8 +846,8 @@ int Party::shareAttrExp(Creature* pLeader, int amount, int STRMultiplier, int DE
 		default: break;
 	}
 
-	////cout << "증폭된 경험치 : " << amount << endl;
-	////cout << "파티원의 레벨합 : " << LevelSum << endl;
+	////cout << "증폭된 경험치 : " << amount << eos;
+	////cout << "파티원의 레벨합 : " << LevelSum << eos;
 
 	// 각각의 파티원들의 경험치를 올려준다.
 	list<Creature*>::iterator itr = MemberList.begin();
@@ -860,11 +860,11 @@ int Party::shareAttrExp(Creature* pLeader, int amount, int STRMultiplier, int DE
 		Slayer* pSlayer = dynamic_cast<Slayer*>(pCreature);
 		int myQuota = (int)((float)amount * (float)pSlayer->getSlayerLevel() / (float)LevelSum);
 
-		////cout << "나의 몫 : " << myQuota << endl;
+		////cout << "나의 몫 : " << myQuota << eos;
 
 		if (pCreature->getName() != pLeader->getName())
 		{
-			////cout << "본인[" << pCreature->getName() << "]이 아니라서 패킷을 보냅니다." << endl;
+			////cout << "본인[" << pCreature->getName() << "]이 아니라서 패킷을 보냅니다." << eos;
 
 			Item* pWeapon = pSlayer->getWearItem(Slayer::WEAR_RIGHTHAND);
 			if (pWeapon != NULL)
@@ -902,7 +902,7 @@ int Party::shareAttrExp(Creature* pLeader, int amount, int STRMultiplier, int DE
 		}
 		else
 		{
-			////cout << "본인[" << pCreature->getName() << "]이라서 패킷 준비만 합니다." << endl;
+			////cout << "본인[" << pCreature->getName() << "]이라서 패킷 준비만 합니다." << eos;
 
 			// 본인이라면 일단 나중에 보내기 위해, 담기만 한다.
 			divideAttrExp(pSlayer, myQuota, 
@@ -971,8 +971,8 @@ int Party::shareVampireExp(Creature* pLeader, int amount, ModifyInfo& LeaderModi
 	// 경험치를 파티원의 숫자에 증폭시킨다.
 	int nMemberSize = MemberList.size();
 
-	////cout << "파티원의 숫자 : " << nMemberSize << endl;
-	////cout << "원래 경험치 : " << amount << endl;
+	////cout << "파티원의 숫자 : " << nMemberSize << eos;
+	////cout << "원래 경험치 : " << amount << eos;
 
 	if (nMemberSize == 1)
 	{
@@ -996,8 +996,8 @@ int Party::shareVampireExp(Creature* pLeader, int amount, ModifyInfo& LeaderModi
 		default: break;
 	}
 
-	////cout << "증폭된 경험치 : " << amount << endl;
-	////cout << "파티원들의 레벨 합 : " << LevelSum << endl;
+	////cout << "증폭된 경험치 : " << amount << eos;
+	////cout << "파티원들의 레벨 합 : " << LevelSum << eos;
 
 	// 각각의 파티원들의 경험치를 올려준다.
 	list<Creature*>::iterator itr = MemberList.begin();
@@ -1010,11 +1010,11 @@ int Party::shareVampireExp(Creature* pLeader, int amount, ModifyInfo& LeaderModi
 		Vampire* pVampire = dynamic_cast<Vampire*>(pCreature);
 		int myQuota = (int)( (float)amount * (float)pVampire->getLevel() / (float)LevelSum );
 
-		////cout << "나의 몫 : " << myQuota << endl;
+		////cout << "나의 몫 : " << myQuota << eos;
 
 		if (pCreature != pLeader)
 		{
-			////cout << "본인이 아니라서 패킷을 보냅니다." << endl;
+			////cout << "본인이 아니라서 패킷을 보냅니다." << eos;
 
 			// 본인이 아니라면...
 			GCModifyInformation gcModifyInformation;
@@ -1023,7 +1023,7 @@ int Party::shareVampireExp(Creature* pLeader, int amount, ModifyInfo& LeaderModi
 		}
 		else
 		{
-			////cout << "본인이라서 패킷을 보내지 않습니다." << endl;
+			////cout << "본인이라서 패킷을 보내지 않습니다." << eos;
 
 			// 본인이라면 일단 나중에 보내기 위해, 담기만 한다.
 			increaseVampExp(pVampire, myQuota, LeaderModifyInfo);
@@ -1083,8 +1083,8 @@ int Party::shareOustersExp(Creature* pLeader, int amount, ModifyInfo& LeaderModi
 	// 경험치를 파티원의 숫자에 증폭시킨다.
 	int nMemberSize = MemberList.size();
 
-	////cout << "파티원의 숫자 : " << nMemberSize << endl;
-	////cout << "원래 경험치 : " << amount << endl;
+	////cout << "파티원의 숫자 : " << nMemberSize << eos;
+	////cout << "원래 경험치 : " << amount << eos;
 
 	if (nMemberSize == 1)
 	{
@@ -1121,7 +1121,7 @@ int Party::shareOustersExp(Creature* pLeader, int amount, ModifyInfo& LeaderModi
 
 		if (pCreature != pLeader)
 		{
-			////cout << "본인이 아니라서 패킷을 보냅니다." << endl;
+			////cout << "본인이 아니라서 패킷을 보냅니다." << eos;
 
 			// 본인이 아니라면...
 			GCModifyInformation gcModifyInformation;
@@ -1130,7 +1130,7 @@ int Party::shareOustersExp(Creature* pLeader, int amount, ModifyInfo& LeaderModi
 		}
 		else
 		{
-			////cout << "본인이라서 패킷을 보내지 않습니다." << endl;
+			////cout << "본인이라서 패킷을 보내지 않습니다." << eos;
 
 			// 본인이라면 일단 나중에 보내기 위해, 담기만 한다.
 			increaseOustersExp(pOusters, myQuota, LeaderModifyInfo);
@@ -1199,7 +1199,7 @@ int Party::shareAttackBloodBurst(Creature* pLeader, Creature* pTargetCreature, i
 
 		if (pCreature != pLeader)
 		{
-			////cout << "본인이 아니라서 패킷을 보냅니다." << endl;
+			////cout << "본인이 아니라서 패킷을 보냅니다." << eos;
 
 			// 본인이 아니라면...
 			increaseAttackBurstPoint(pCreature, pTargetCreature, amount);
@@ -1207,7 +1207,7 @@ int Party::shareAttackBloodBurst(Creature* pLeader, Creature* pTargetCreature, i
 		}
 		else
 		{
-			////cout << "본인이라서 패킷을 보내지 않습니다." << endl;
+			////cout << "본인이라서 패킷을 보내지 않습니다." << eos;
 
 			// 본인이라면 일단 나중에 보내기 위해, 담기만 한다.
 			increaseAttackBurstPoint(pCreature, pTargetCreature, amount);
@@ -1277,7 +1277,7 @@ int Party::shareDefenseBloodBurst(Creature* pLeader, Creature* pTargetCreature, 
 
 		if (pCreature != pLeader)
 		{
-			////cout << "본인이 아니라서 패킷을 보냅니다." << endl;
+			////cout << "본인이 아니라서 패킷을 보냅니다." << eos;
 
 			// 본인이 아니라면...
 			increaseDefenseBurstPoint(pTargetCreature, pCreature,  amount);
@@ -1285,7 +1285,7 @@ int Party::shareDefenseBloodBurst(Creature* pLeader, Creature* pTargetCreature, 
 		}
 		else
 		{
-			////cout << "본인이라서 패킷을 보내지 않습니다." << endl;
+			////cout << "본인이라서 패킷을 보내지 않습니다." << eos;
 
 			// 본인이라면 일단 나중에 보내기 위해, 담기만 한다.
 			increaseDefenseBurstPoint(pTargetCreature, pCreature, amount);
@@ -1341,8 +1341,8 @@ int Party::shareGold(Creature* pLeader, int amount) const
 	// 경험치를 파티원의 숫자에 증폭시킨다.
 	int nMemberSize = MemberList.size();
 
-	////cout << "파티원의 숫자 : " << nMemberSize << endl;
-	////cout << "원래 경험치 : " << amount << endl;
+	////cout << "파티원의 숫자 : " << nMemberSize << eos;
+	////cout << "원래 경험치 : " << amount << eos;
 
 	if (nMemberSize == 1)
 	{
@@ -1530,8 +1530,8 @@ void Party::shareRankExp(Creature* pLeader, int otherLevel)
 	// 파티원 평균 레벨에 의한 경험치를 구한다.
 	int amount = (int) computeRankExp( LevelSum2 / nMemberSize, otherLevel );
 
-	////cout << "파티원의 숫자 : " << nMemberSize << endl;
-	////cout << "원래 경험치 : " << amount << endl;
+	////cout << "파티원의 숫자 : " << nMemberSize << eos;
+	////cout << "원래 경험치 : " << amount << eos;
 
 	if (nMemberSize == 1)
 	{
@@ -1554,8 +1554,8 @@ void Party::shareRankExp(Creature* pLeader, int otherLevel)
 		default: break;
 	}
 
-	////cout << "증폭된 경험치 : " << amount << endl;
-	////cout << "파티원들의 레벨 합 : " << LevelSum << endl;
+	////cout << "증폭된 경험치 : " << amount << eos;
+	////cout << "파티원들의 레벨 합 : " << LevelSum << eos;
 
 	// 각각의 파티원들의 경험치를 올려준다.
 	list<Creature*>::iterator itr = MemberList.begin();
@@ -1639,8 +1639,8 @@ void Party::shareAdvancementExp(Creature* pLeader, int amount)
 	// 경험치를 파티원의 숫자에 증폭시킨다.
 	int nMemberSize = MemberList.size();
 
-	////cout << "파티원의 숫자 : " << nMemberSize << endl;
-	////cout << "원래 경험치 : " << amount << endl;
+	////cout << "파티원의 숫자 : " << nMemberSize << eos;
+	////cout << "원래 경험치 : " << amount << eos;
 
 	if (nMemberSize == 1)
 	{
@@ -1664,8 +1664,8 @@ void Party::shareAdvancementExp(Creature* pLeader, int amount)
 		default: break;
 	}
 
-	////cout << "증폭된 경험치 : " << amount << endl;
-	////cout << "파티원들의 레벨 합 : " << LevelSum << endl;
+	////cout << "증폭된 경험치 : " << amount << eos;
+	////cout << "파티원들의 레벨 합 : " << LevelSum << eos;
 
 	// 각각의 파티원들의 경험치를 올려준다.
 	list<Creature*>::iterator itr = MemberList.begin();
@@ -2380,9 +2380,9 @@ void Party::dissectCorpse(Creature* pDissecter, MonsterCorpse* pCorpse) throw(Er
 {
 	__BEGIN_TRY
 
-	//cout << __PRETTY_FUNCTION__ << endl;
+	//cout << __PRETTY_FUNCTION__ << eos;
 	if ( getSize() != 2 ) return;
-	//cout << "dissectCorpse!" << endl;
+	//cout << "dissectCorpse!" << eos;
 
 	Zone*       pZone = pDissecter->getZone();
 	ZoneCoord_t cx    = pDissecter->getX();
@@ -2431,7 +2431,7 @@ void Party::eventPartyCrash() throw(Error)
 {
 	__BEGIN_TRY
 
-	//cout << __PRETTY_FUNCTION__ << endl;
+	//cout << __PRETTY_FUNCTION__ << eos;
 
 	/*__ENTER_CRITICAL_SECTION(m_Mutex)
 
@@ -2702,7 +2702,7 @@ bool PartyManager::deletePartyMember(int ID, Creature* pCreature)
 	__BEGIN_TRY
 
 	__ENTER_CRITICAL_SECTION(m_Mutex)
-	//cout << " 파티 에러 1 " << endl;
+	//cout << " 파티 에러 1 " << eos;
 	// 해당하는 파티가 있는지 찾아본다.
 	hash_map<int, Party*>::const_iterator itr = m_PartyMap.find(ID);
 	if (itr == m_PartyMap.end())
@@ -2710,12 +2710,12 @@ bool PartyManager::deletePartyMember(int ID, Creature* pCreature)
 		m_Mutex.unlock();
 		return false;
 	}
-	//cout << " 파티 에러 2 " << endl;
+	//cout << " 파티 에러 2 " << eos;
 	Party* pParty = itr->second;
 	Assert(pParty != NULL);
 
 	pParty->deleteMember(pCreature->getName());
-	//cout << " 파티 에러 3 " << endl;
+	//cout << " 파티 에러 3 " << eos;
 	__LEAVE_CRITICAL_SECTION(m_Mutex)
 
 	return true;
@@ -2763,7 +2763,7 @@ void LocalPartyManager::heartbeat(void)
 
 		if (pParty->getSize() == 0)
 		{
-			////cout << "로컬파티의 사이즈가 0이 되어서, 파티 객체[" << pParty->getID() << "]를 삭제합니다." << endl;
+			////cout << "로컬파티의 사이즈가 0이 되어서, 파티 객체[" << pParty->getID() << "]를 삭제합니다." << eos;
 
 			SAFE_DELETE(pParty);
 
@@ -3420,7 +3420,7 @@ bool GlobalPartyManager::addPartyMember(int ID, Creature* pCreature)
 
 	__ENTER_CRITICAL_SECTION(m_Mutex)
 
-	////cout << "GlobalPartyManager::addPartyMember() : BEGIN" << endl;
+	////cout << "GlobalPartyManager::addPartyMember() : BEGIN" << eos;
 
 	// 먼저 해당파티를 찾아서 피티원의 숫자를 확인한다.
 	hash_map<int, Party*>::iterator itr = m_PartyMap.find(ID);
@@ -3428,7 +3428,7 @@ bool GlobalPartyManager::addPartyMember(int ID, Creature* pCreature)
 	{
 		m_Mutex.unlock();
 
-		//cerr << "GlobalPartyManager::addPartyMember() : NoSuchElementException" << endl;
+		//cerr << "GlobalPartyManager::addPartyMember() : NoSuchElementException" << eos;
 		//throw NoSuchElementException("GlobalPartyManager::addPartyMember() : NoSuchElementException");
 
 		// NoSuch제거. by sigi. 2002.5.13
@@ -3441,8 +3441,8 @@ bool GlobalPartyManager::addPartyMember(int ID, Creature* pCreature)
 	{
 		m_Mutex.unlock();
 
-		////cout << "파티 맥스 사이즈를 초과" << endl;
-		////cout << "GlobalPartyManager::addPartyMember() : END" << endl;
+		////cout << "파티 맥스 사이즈를 초과" << eos;
+		////cout << "GlobalPartyManager::addPartyMember() : END" << eos;
 		return false;
 	}
 
@@ -3523,7 +3523,7 @@ bool GlobalPartyManager::addPartyMember(int ID, Creature* pCreature)
 
 	__LEAVE_CRITICAL_SECTION(m_Mutex)
 
-	////cout << "GlobalPartyManager::addPartyMember() : END" << endl;
+	////cout << "GlobalPartyManager::addPartyMember() : END" << eos;
 
 	return true;
 
@@ -3535,42 +3535,42 @@ bool GlobalPartyManager::deletePartyMember(int ID, Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	////cout << "GlobalPartyManager::deletePartyMember() : BEGIN" << endl;
+	////cout << "GlobalPartyManager::deletePartyMember() : BEGIN" << eos;
 
 	__ENTER_CRITICAL_SECTION(m_Mutex)
-	//cout << " 파티 에러 체크 START " << endl;
+	//cout << " 파티 에러 체크 START " << eos;
 	hash_map<int, Party*>::iterator itr = m_PartyMap.find(ID);
 	if (itr == m_PartyMap.end())
 	{
 		//m_Mutex.unlock();
-	//cout << " 파티 에러 체크 1 " << endl;
-		cerr << "GlobalPartyManager::deletePartyMember() : NoSuchElementException" << endl;
+	//cout << " 파티 에러 체크 1 " << eos;
+		cerr << "GlobalPartyManager::deletePartyMember() : NoSuchElementException" << eos;
 		//throw NoSuchElementException("GlobalPartyManager::deletePartyMember() : NoSuchElementException");
 
 		// 외부에서 NoSuch처리도 안하는데 -_-; by sigi. 2002.5.9
 		m_Mutex.unlock();
 		return false;
 	}
-	//cout << " 파티 에러 체크 2 " << endl;
+	//cout << " 파티 에러 체크 2 " << eos;
 	Party* pParty = itr->second;
 
-	////cout << "파티를 찾았다." << endl;
-	////cout << pParty->toString() << endl;
-	////cout << "지우려고하는 놈의 이름은:" << pCreature->getName() << endl;
-	//cout << " 파티 에러 체크 3 " << endl;
+	////cout << "파티를 찾았다." << eos;
+	////cout << pParty->toString() << eos;
+	////cout << "지우려고하는 놈의 이름은:" << pCreature->getName() << eos;
+	//cout << " 파티 에러 체크 3 " << eos;
 	// 멤버들에게 파티원이 파티에서 추방되었다는 사실을 알려준다.
 	GCPartyLeave gcPartyLeave;
 	gcPartyLeave.setExpellee(pCreature->getName());
 	gcPartyLeave.setExpeller("");
 	pParty->broadcastPacket(&gcPartyLeave);
-	//cout << " 파티 에러 체크 4 " << endl;
+	//cout << " 파티 에러 체크 4 " << eos;
 	pParty->eventPartyCrash();
-	//cout << " 파티 에러 체크 5 " << endl;
+	//cout << " 파티 에러 체크 5 " << eos;
 	// 떠나는 당사자에게도 GCPartyLeave가 날아가야하기 때문에,
 	// 먼저 패킷을 브로드캐스팅한 다음에, 실제로 파티에서 삭제해준다.
 	pParty->deleteMember(pCreature->getName());
 	pCreature->setPartyID(0);
-	//cout << " 파티 에러 체크 6 " << endl;
+	//cout << " 파티 에러 체크 6 " << eos;
 	// 패밀리 요금제 적용 처리
 	GamePlayer* pGamePlayer = dynamic_cast<GamePlayer*>(pCreature->getPlayer());
 	if ( pGamePlayer != NULL )
@@ -3586,26 +3586,26 @@ bool GlobalPartyManager::deletePartyMember(int ID, Creature* pCreature)
 			pGamePlayer->setFamilyPayPartyType( FAMILY_PAY_PARTY_TYPE_FREE_PASS_END );
 		}
 	}
-	//cout << " 파티 에러 체크 7 " << endl;
+	//cout << " 파티 에러 체크 7 " << eos;
 	// 파티의 사이즈가 1이 되었다면 삭제한다.
 	if (pParty->getSize() == 1)
 	{
-	//cout << " 파티 에러 체크 7.5 " << endl;
-		////cout << "글로벌파티의 사이즈가 0이 되어서, 파티 객체[" << pParty->getID() << "]를 삭제합니다." << endl;
+	//cout << " 파티 에러 체크 7.5 " << eos;
+		////cout << "글로벌파티의 사이즈가 0이 되어서, 파티 객체[" << pParty->getID() << "]를 삭제합니다." << eos;
 
 		m_PartyMap.erase(itr);
 
 		// 남은 파티원들의 파티 ID를 0으로 만들고,
 		// 각각의 로컬 파티 매니저에서 파티를 삭제한다.
 		pParty->destroyParty();
-	//cout << " 파티 에러 체크 7.6 " << endl;
+	//cout << " 파티 에러 체크 7.6 " << eos;
 		// 객체를 지운다.
 		SAFE_DELETE(pParty);
 	}
-	//cout << " 파티 에러 체크 8 " << endl;
+	//cout << " 파티 에러 체크 8 " << eos;
 	__LEAVE_CRITICAL_SECTION(m_Mutex)
 
-	////cout << "GlobalPartyManager::deletePartyMember() : END" << endl;
+	////cout << "GlobalPartyManager::deletePartyMember() : END" << eos;
 
 	return true;
 
@@ -3617,7 +3617,7 @@ bool GlobalPartyManager::expelPartyMember(int ID, Creature* pExpeller, const str
 {
 	__BEGIN_TRY
 
-	////cout << "GlobalPartyManager::expelPartyMember() : BEGIN" << endl;
+	////cout << "GlobalPartyManager::expelPartyMember() : BEGIN" << eos;
 
 	__ENTER_CRITICAL_SECTION(m_Mutex)
 
@@ -3625,7 +3625,7 @@ bool GlobalPartyManager::expelPartyMember(int ID, Creature* pExpeller, const str
 	hash_map<int, Party*>::iterator itr = m_PartyMap.find(ID);
 	if (itr == m_PartyMap.end())
 	{
-		cerr << "GlobalPartyManager::expelPartyMember() : NoSuchElementException" << endl;
+		cerr << "GlobalPartyManager::expelPartyMember() : NoSuchElementException" << eos;
 
 		// 외부에서 NoSuch처리도 안하는데 -_-; by sigi. 2002.5.9
 		//throw NoSuchElementException("GlobalPartyManager::expelPartyMember() : NoSuchElementException");
@@ -3642,8 +3642,8 @@ bool GlobalPartyManager::expelPartyMember(int ID, Creature* pExpeller, const str
 		m_Mutex.unlock();
 
 		// 에러인데...?
-		////cout << "추방하는 놈이 파티에 존재하지 않음" << endl;
-		////cout << "GlobalPartyManager::expelPartyMember() : END" << endl;
+		////cout << "추방하는 놈이 파티에 존재하지 않음" << eos;
+		////cout << "GlobalPartyManager::expelPartyMember() : END" << eos;
 		return false;
 	}
 
@@ -3653,8 +3653,8 @@ bool GlobalPartyManager::expelPartyMember(int ID, Creature* pExpeller, const str
 		m_Mutex.unlock();
 
 		// 에러인데...?
-		////cout << "추방당하는 놈이 파티에 존재하지 않음" << endl;
-		////cout << "GlobalPartyManager::expelPartyMember() : END" << endl;
+		////cout << "추방당하는 놈이 파티에 존재하지 않음" << eos;
+		////cout << "GlobalPartyManager::expelPartyMember() : END" << eos;
 		return false;
 	}
 
@@ -3666,7 +3666,7 @@ bool GlobalPartyManager::expelPartyMember(int ID, Creature* pExpeller, const str
 
 	pParty->eventPartyCrash();
 
-	////cout << "멤버들에게 파티원이 파티에서 추방되었다는 사실을 알려준다." << endl;
+	////cout << "멤버들에게 파티원이 파티에서 추방되었다는 사실을 알려준다." << eos;
 
 	// 추방당할 놈을 파티에서 삭제한다.
 	// * NOTE *
@@ -3693,32 +3693,32 @@ bool GlobalPartyManager::expelPartyMember(int ID, Creature* pExpeller, const str
 		}
 	}
 
-	////cout << "파티에서 [" << pExpellee->getName() << "]를 삭제했다." << endl;
+	////cout << "파티에서 [" << pExpellee->getName() << "]를 삭제했다." << eos;
 
 	// 파티의 사이즈가 1이 되었다면 삭제한다.
 	if (pParty->getSize() == 1)
 	{
-		////cout << "파티 사이즈가 1이 되어서 파티를 삭제한다." << endl;
+		////cout << "파티 사이즈가 1이 되어서 파티를 삭제한다." << eos;
 
 		m_PartyMap.erase(itr);
 
-		////cout << "itr을 삭제" << endl;
+		////cout << "itr을 삭제" << eos;
 
 		// 남은 파티원들의 파티 ID를 0으로 만들고,
 		// 각각의 로컬 파티 매니저에서 파티를 삭제한다.
 		pParty->destroyParty();
 
-		////cout << "After Party::destroyParty()" << endl;
+		////cout << "After Party::destroyParty()" << eos;
 
 		// 객체를 지운다.
 		SAFE_DELETE(pParty);
 
-		////cout << "After object deletion" << endl;
+		////cout << "After object deletion" << eos;
 	}
 
 	__LEAVE_CRITICAL_SECTION(m_Mutex)
 
-	////cout << "GlobalPartyManager::expelPartyMember() : END" << endl;
+	////cout << "GlobalPartyManager::expelPartyMember() : END" << eos;
 
 	return true;
 
@@ -3733,7 +3733,7 @@ void GlobalPartyManager::refreshFamilyPay( int ID )
 	hash_map<int, Party*>::iterator itr = m_PartyMap.find(ID);
 	if (itr == m_PartyMap.end())
 	{
-		cerr << "GlobalPartyManager::refreshFamilyPay() : NoSuchElementException" << endl;
+		cerr << "GlobalPartyManager::refreshFamilyPay() : NoSuchElementException" << eos;
 
 		m_Mutex.unlock();
 		return;
@@ -3800,8 +3800,8 @@ void deleteAllPartyInfo(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	////cout << "DeleteAllPartyInfo BEGIN" << endl;
-	//cout << " 로컬 파티 에러 1 " << endl;
+	////cout << "DeleteAllPartyInfo BEGIN" << eos;
+	//cout << " 로컬 파티 에러 1 " << eos;
 	Zone* pZone = pCreature->getZone();
 	Assert(pZone != NULL);
 
@@ -3810,7 +3810,7 @@ void deleteAllPartyInfo(Creature* pCreature)
 
 	PartyInviteInfoManager* pPIIM = pZone->getPartyInviteInfoManager();
 	Assert(pPIIM != NULL);
-	//cout << " 로컬 파티 에러 2 " << endl;
+	//cout << " 로컬 파티 에러 2 " << eos;
 	// 클래스가 삭제될 경우, 해당하는 파티 초청 정보를 삭제해야 함은 물론,
 	// 파티 초청 상대에게도 이 사실을 알려줘야 한다.
 	PartyInviteInfo* pInviteInfo = pPIIM->getInviteInfo(pCreature->getName());
@@ -3819,17 +3819,17 @@ void deleteAllPartyInfo(Creature* pCreature)
 		pPIIM->cancelInvite(pCreature);
 	}
 	}
-	//cout << " 로컬 파티 에러 3 " << endl;
+	//cout << " 로컬 파티 에러 3 " << eos;
 	int PartyID = pCreature->getPartyID();
-	//cout << " 로컬 파티 에러4 " << endl;
+	//cout << " 로컬 파티 에러4 " << eos;
 	// 파티에 속해있을 경우에는 파티에서 자신을 삭제하고, 
 	// 다른 파티원들에게 알려야 한다.
 	if (PartyID != 0)
 	{
-	//cout << " 로컬 파티 에러 4.5 " << endl;
+	//cout << " 로컬 파티 에러 4.5 " << eos;
 		// 글로벌 파티에서 삭제하고, 파티원들에게 알린다.
 		g_pGlobalPartyManager->deletePartyMember(PartyID, pCreature);
-	//cout << " 로컬 파티 에러 4.6 " << endl;
+	//cout << " 로컬 파티 에러 4.6 " << eos;
 		// 현재 속해있는 존의 로컬파티매니저에서 정보를 삭제한다.
 		// Zone::deleteCreature() 함수 내부에서 특정 크리쳐가 
 		// 그 존을 떠날 경우, LocalPartyManager 내부에서 그 크리쳐가
@@ -3852,8 +3852,8 @@ void deleteAllPartyInfo(Creature* pCreature)
 		// 확실하게 해주는 의미에서 다시한번 0으로 만들어준다.
 		pCreature->setPartyID(0);
 	}
-	//cout << " 로컬 파티 에러5 " << endl;
-	////cout << "DeleteAllPartyInfo END" << endl;
+	//cout << " 로컬 파티 에러5 " << eos;
+	////cout << "DeleteAllPartyInfo END" << eos;
 
 	__END_CATCH
 }

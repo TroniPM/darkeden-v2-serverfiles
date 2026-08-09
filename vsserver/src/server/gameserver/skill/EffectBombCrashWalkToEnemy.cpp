@@ -37,12 +37,12 @@ void EffectBombCrashWalkToEnemy::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectBombCrashWalkToEnemy " << "begin begin" << endl;
+	//cout << "EffectBombCrashWalkToEnemy " << "begin begin" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 	affect(pCreature);
 
-	//cout << "EffectBombCrashWalkToEnemy " << "begin end" << endl;
+	//cout << "EffectBombCrashWalkToEnemy " << "begin end" << eos;
 
 	__END_CATCH 
 
@@ -55,8 +55,8 @@ void EffectBombCrashWalkToEnemy::affect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectBombCrashWalkToEnemy " << "begin" << endl;
-	//cout << "EffectBombCrashWalkToEnemy " << "end" << endl;
+	//cout << "EffectBombCrashWalkToEnemy " << "begin" << eos;
+	//cout << "EffectBombCrashWalkToEnemy " << "end" << eos;
 	Assert(pCreature != NULL);
 
 	Zone* pZone = pCreature->getZone();

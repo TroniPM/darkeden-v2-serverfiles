@@ -22,7 +22,7 @@ void ActionTurnOnFlag::read (PropertyBuffer & propertyBuffer)
 	} 
 	catch (NoSuchElementException & nsee)
 	{
-		cout << nsee.toString() << endl;
+		cout << nsee.toString() << eos;
 		throw Error(nsee.toString());
 	}
 	

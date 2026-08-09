@@ -21,7 +21,7 @@
 
 void memoryError()
 {
-	cerr << "CRITICAL ERROR! NOT ENOUGH MEMORY!" << endl;
+	cerr << "CRITICAL ERROR! NOT ENOUGH MEMORY!" << eos;
 	exit(0);
 }
 
@@ -32,11 +32,11 @@ void memoryError()
 //////////////////////////////////////////////////////////////////////
 int main (int argc , char* argv[])
 {
-	cout << ">>> STARTING CACHE SERVER..." << endl;
+	cout << ">>> STARTING CACHE SERVER..." << eos;
 
 	// 메모리 없다..함수를 설정한다.
 	set_new_handler(memoryError);
-	cout << ">>> MEMORY HANDLER INSTALL SUCCESS..." << endl;
+	cout << ">>> MEMORY HANDLER INSTALL SUCCESS..." << eos;
 
 	// What?
 	int* pPointer = NULL;
@@ -45,11 +45,11 @@ int main (int argc , char* argv[])
 
 	// 적절한 위치를 찾아보자.
 	srand(time(0));
-	cout << ">>> RANDOMIZATION INITIALIZATION SUCCESS..." << endl;
+	cout << ">>> RANDOMIZATION INITIALIZATION SUCCESS..." << eos;
 
     if (argc < 3) 
 	{
-        cout << "Usage : cacheserver -f 환경파일" << endl;
+        cout << "Usage : cacheserver -f 환경파일" << eos;
         exit(1);
     }
 
@@ -60,7 +60,7 @@ int main (int argc , char* argv[])
     for (int i = 0 ; i < argc ; i ++)
         Argv[i] = argv[i];
 
-	cout << ">>> COMMAND-LINE PARAMETER READING SUCCESS..." << endl;
+	cout << ">>> COMMAND-LINE PARAMETER READING SUCCESS..." << eos;
 
     // 환경 파일을 읽어들인다.
     // 단 실행 파일은 $VSHOME/bin에, 환경 파일은 $VSHOME/conf 에 존재해야 한다.�
@@ -77,11 +77,11 @@ int main (int argc , char* argv[])
         g_pConfig = new Properties();
         g_pConfig->load(Argv[2]);
     
-        //cout << g_pConfig->toString() << endl;
+        //cout << g_pConfig->toString() << eos;
     } 
 	catch (Error & e) 
 	{
-        //cout << e.toString() << endl;
+        //cout << e.toString() << eos;
     }
 
 	// 로그 매니저를 생성하고 초기화한후 활성화시킨다.
@@ -99,16 +99,16 @@ int main (int argc , char* argv[])
 
 		log(LOG_GAMESERVER, "", "", "Cache Server Start");
 
-		//cout << "LogServerIP = " << LogServerIP << endl;
-		//cout << "LogServerPort = " << LogServerPort << endl;
-		//cout << "LogLevel = " << LogClient::getLogLevel() << endl;
+		//cout << "LogServerIP = " << LogServerIP << eos;
+		//cout << "LogServerPort = " << LogServerPort << eos;
+		//cout << "LogLevel = " << LogClient::getLogLevel() << eos;
 	} 
 	catch (Error & e) 
 	{
-		//cout << e.toString() << endl;
+		//cout << e.toString() << eos;
 	}
 
-	cout << ">>> LOGCLIENT INITIALZATION SUCCESS..." << endl;
+	cout << ">>> LOGCLIENT INITIALZATION SUCCESS..." << eos;
 
 	//
 	// 게임 서버 객체를 생성하고 초기화한 후 활성화시킨다.
@@ -124,12 +124,12 @@ int main (int argc , char* argv[])
 		// 게임 서버 객체를 생성한다.
 		g_pCacheServer = new CacheServer();
 
-		cout << ">>> CACHE SERVER INSTANCE CREATED..." << endl;
+		cout << ">>> CACHE SERVER INSTANCE CREATED..." << eos;
 
 		// 게임 서버 객체를 초기화한다.
 		g_pCacheServer->init();
 
-		cout << ">>> CACHE SERVER INITIALIZATION SUCCESS..." << endl;
+		cout << ">>> CACHE SERVER INITIALIZATION SUCCESS..." << eos;
 
 		// 게임 서버 객체를 활성화시킨다.
 		g_pCacheServer->start();
@@ -138,11 +138,11 @@ int main (int argc , char* argv[])
 	{
 		// 로그가 이뤄지기 전에 서버가 끝날 경우를 대비해서
 		ofstream ofile("../log/instant.log",ios::out);
-		ofile << e.toString() << endl;
+		ofile << e.toString() << eos;
 		ofile.close();
 
 		// 표준 출력으로도 출력해준다.
-		cout << e.toString() << endl;
+		cout << e.toString() << eos;
 
 		// 게임 서버를 중단시킨다.
 		// 이 내부에서 하위 매니저 역시 중단되어야 한다.
@@ -150,6 +150,6 @@ int main (int argc , char* argv[])
 	} 
 	catch (...) 
 	{
-		cout << "unknown exception..." << endl;
+		cout << "unknown exception..." << eos;
 	}
 }

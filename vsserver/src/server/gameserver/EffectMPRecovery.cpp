@@ -68,7 +68,7 @@ void EffectMPRecovery::affect(Creature* pCreature)
 
 	if ( pCreature->isFlag( Effect::EFFECT_CLASS_PLEASURE_EXPLOSION ) )
 	{
-		cout << "Pleasure Explosion ¶«¿¡ ¾È Âù´Ù." << endl;
+		cout << "Pleasure Explosion ¶«¿¡ ¾È Âù´Ù." << eos;
 		return;
 	}
 

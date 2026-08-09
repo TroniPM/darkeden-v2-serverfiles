@@ -87,7 +87,7 @@ void ZoneInfoManager::load ()
 
 			ZoneID_t zoneID = pResult->getInt(++i);
 
-//			cout << "load ZoneInfo = " << zoneID << endl;
+//			cout << "load ZoneInfo = " << zoneID << eos;
 
 			ZoneInfo* pZoneInfo = NULL;
 			bool bExistInfo = false;
@@ -110,7 +110,7 @@ void ZoneInfoManager::load ()
 			{
 				pZoneInfo = new ZoneInfo();
 			}
-			//cout << "new OK" << endl;
+			//cout << "new OK" << eos;
 
 			//if (zoneID!=31 && zoneID!=21)
 			{
@@ -149,13 +149,13 @@ void ZoneInfoManager::load ()
 				}
 				*/
 			
-				//cout << "load ZoneInfo = " << zoneID << endl;
-				//cout << "ZoneInfo = " << pZoneInfo->toString().c_str() << endl << endl;
+				//cout << "load ZoneInfo = " << zoneID << eos;
+				//cout << "ZoneInfo = " << pZoneInfo->toString().c_str() << eos << eos;
 			}
 			/*
 			else
 			{
-				cout << "skip load ZoneID = " << i << endl << endl;
+				cout << "skip load ZoneID = " << i << eos << eos;
 			}
 			*/
 
@@ -191,7 +191,7 @@ void ZoneInfoManager::addZoneInfo (ZoneInfo* pZoneInfo)
 	hash_map<string, ZoneInfo*>::iterator fitr = m_FullNameMap.find(pZoneInfo->getFullName());
 	if (fitr != m_FullNameMap.end())
 	{
-		cerr << "Duplicated Zone Full Name" << endl;
+		cerr << "Duplicated Zone Full Name" << eos;
 		throw Error("Duplicated Zone Full Name");
 	}
 
@@ -202,7 +202,7 @@ void ZoneInfoManager::addZoneInfo (ZoneInfo* pZoneInfo)
 	hash_map<string, ZoneInfo*>::iterator sitr = m_ShortNameMap.find(pZoneInfo->getShortName());
 	if (sitr != m_ShortNameMap.end())
 	{
-		cerr << "Duplicated Zone Short Name" << endl;
+		cerr << "Duplicated Zone Short Name" << eos;
 		throw Error("Duplicated Zone Short Name");
 	}
 

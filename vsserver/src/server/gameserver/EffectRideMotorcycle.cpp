@@ -58,7 +58,7 @@ void EffectRideMotorcycle::unaffect ()
 
 	Slayer* pOwner = dynamic_cast<Slayer*>(m_pTarget);
 	if ( pOwner == NULL ) return;
-	//cout << "EffectRideMotorcycle unaffect" << endl;
+	//cout << "EffectRideMotorcycle unaffect" << eos;
 	CGRideMotorCycle cgRide;
 	cgRide.setObjectID( m_pMotorcycle->getObjectID() );
 	cgRide.setX(m_MotorX);

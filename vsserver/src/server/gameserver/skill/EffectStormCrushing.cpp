@@ -37,12 +37,12 @@ void EffectStormCrushing::affect()
 {
 	__BEGIN_TRY
 
-	//cout << "EffectStormCrushing " << "begin begin" << endl;
+	//cout << "EffectStormCrushing " << "begin begin" << eos;
 
 	Creature* pCreature = dynamic_cast<Creature *>(m_pTarget);
 	affect(pCreature);
 
-	//cout << "EffectStormCrushing " << "begin end" << endl;
+	//cout << "EffectStormCrushing " << "begin end" << eos;
 
 	__END_CATCH 
 
@@ -55,7 +55,7 @@ void EffectStormCrushing::affect(Creature* pCreature)
 {
 	__BEGIN_TRY
 
-	//cout << "EffectStormCrushing " << "begin" << endl;
+	//cout << "EffectStormCrushing " << "begin" << eos;
 
 	Assert(pCreature != NULL);
 
@@ -117,7 +117,7 @@ void EffectStormCrushing::affect(Creature* pCreature)
 	
 	setNextTime(m_Tick);
 
-	//cout << "EffectStormCrushing " << "end" << endl;
+	//cout << "EffectStormCrushing " << "end" << eos;
 
 	__END_CATCH
 }

@@ -242,7 +242,7 @@ void SkillInfoManager::init()
 
 				if ( pRequireSkillInfo == NULL )
 				{
-					cout << "스킬 로드 순서가 틀려먹었습니다. : " << (int)m_SkillInfoList[i]->getType() << " / " << (int)(*itr) << endl;
+					cout << "스킬 로드 순서가 틀려먹었습니다. : " << (int)m_SkillInfoList[i]->getType() << " / " << (int)(*itr) << eos;
 					Assert(false);
 				}
 
@@ -487,7 +487,7 @@ void SkillInfoManager::addSkillInfo(SkillInfo* pSkillInfo)
 
 		if ( pRequireSkillInfo == NULL )
 		{
-			cout << "스킬 로드 순서가 틀려먹었습니다. : " << (int)pSkillInfo->getType() << " / " << (int)(*itr) << endl;
+			cout << "스킬 로드 순서가 틀려먹었습니다. : " << (int)pSkillInfo->getType() << " / " << (int)(*itr) << eos;
 			Assert(false);
 		}
 
@@ -504,13 +504,13 @@ SkillInfo* SkillInfoManager::getSkillInfo(SkillType_t SkillType)
 
 	if (SkillType >= m_SkillCount)
 	{
-		cerr << "SkillInfoManager::getSkillInfo() : out of bounds : " << (int)SkillType << endl;
+		cerr << "SkillInfoManager::getSkillInfo() : out of bounds : " << (int)SkillType << eos;
 		throw OutOfBoundException ();
 	}
 
 	if (m_SkillInfoList[SkillType] == NULL)
 	{
-		cerr << "SkillInfoManager::getSkillInfo() : no such element : " << (int)SkillType << endl;
+		cerr << "SkillInfoManager::getSkillInfo() : no such element : " << (int)SkillType << eos;
 		throw NoSuchElementException ();
 	}
 

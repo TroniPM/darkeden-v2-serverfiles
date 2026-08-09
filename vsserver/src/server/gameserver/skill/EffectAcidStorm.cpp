@@ -34,14 +34,14 @@ bool EffectAcidStorm::affectCreature(Creature* pTargetCreature, bool bAffectByMo
 {
 	__BEGIN_TRY
 
-	//cout << "EffectAcidStorm " << "affectCreature Begin " << endl;
+	//cout << "EffectAcidStorm " << "affectCreature Begin " << eos;
 
 	Assert(pTargetCreature != NULL);
 
 	// 상대에게 이미 poison 이펙트가 걸려져 있는 경우에는 걸리지 않는다.
 	if (pTargetCreature->isFlag(Effect::EFFECT_CLASS_STORM_ACID))
 	{
-		//cout << "EffectAcidStorm " << "affectCreature End(Already Effected) " << endl;
+		//cout << "EffectAcidStorm " << "affectCreature End(Already Effected) " << eos;
 		return false;
 	}
 	
@@ -53,7 +53,7 @@ bool EffectAcidStorm::affectCreature(Creature* pTargetCreature, bool bAffectByMo
 
 	if (StormDamage > 0)
 	{
-		//cout << "EffectAcidStorm(Damage:" << StormDamage << ") Affected" << endl;
+		//cout << "EffectAcidStorm(Damage:" << StormDamage << ") Affected" << eos;
 		// 포이즌 이펙트를 생성해서, 타겟 크리쳐에 붙이고, 플래그를 켜준다.
 		EffectStormAcid* pEffectStormAcid = new EffectStormAcid(pTargetCreature);
 		pEffectStormAcid->setLevel(m_Level);
@@ -73,7 +73,7 @@ bool EffectAcidStorm::affectCreature(Creature* pTargetCreature, bool bAffectByMo
 		pZone->broadcastPacket(pTargetCreature->getX(), pTargetCreature->getY(), &gcAddEffect);
 	}
 
-	//cout << "EffectAcidStorm " << "affectCreature End " << endl;
+	//cout << "EffectAcidStorm " << "affectCreature End " << eos;
 
 	return true;
 

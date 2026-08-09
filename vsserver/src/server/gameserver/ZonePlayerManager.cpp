@@ -88,7 +88,7 @@ ZonePlayerManager::ZonePlayerManager ()
 	// add by inthesky for THAILAND ChildGuard rule
 	string strChildGuardSwitch = g_pConfig->getProperty("CHILDGUARD");
 
-	cout << "ChildGuard Policy : " << strChildGuardSwitch << endl;
+	cout << "ChildGuard Policy : " << strChildGuardSwitch << eos;
 
 	if(strChildGuardSwitch == "Enable" || strChildGuardSwitch == "ENABLE" || strChildGuardSwitch == "enable")
 	{
@@ -104,8 +104,8 @@ ZonePlayerManager::ZonePlayerManager ()
 	getCurrentTime(m_tmChildGuardCheckTerm);
 	m_tmChildGuardCheckTerm.tv_sec += m_nChildGuardCheckTerm;
 
-	cout << "ChildGuard TimeArea : "<<(int)m_nChildGuardStartTime << " - " << (int)m_nChildGuardEndTime << endl;
-	cout << "ChildGuard CheckTerm : "<<(int)m_nChildGuardCheckTerm << "/sec" << endl;
+	cout << "ChildGuard TimeArea : "<<(int)m_nChildGuardStartTime << " - " << (int)m_nChildGuardEndTime << eos;
+	cout << "ChildGuard CheckTerm : "<<(int)m_nChildGuardCheckTerm << "/sec" << eos;
 
 #endif
 */
@@ -544,10 +544,10 @@ void ZonePlayerManager::processCommands()
 
 		try {
 			ps.loginPayPlay("111.111.222.333", "sdfdf");
-			cout << "[" << (int)Thread::self() << "] " << i << endl;
+			cout << "[" << (int)Thread::self() << "] " << i << eos;
 		} catch (Throwable&t)
 		{
-			cout << t.toString().c_str() << endl;
+			cout << t.toString().c_str() << eos;
 		}
 	}
 	*/
@@ -753,7 +753,7 @@ void ZonePlayerManager::processCommands()
 								}
 							}
 						#elif defined(__PAY_SYSTEM_FREE_LIMIT__) || defined(__PAY_SYSTEM_LOGIN__) 
-							//cout << "Pay timeout" << endl;
+							//cout << "Pay timeout" << eos;
 							//throw DisconnectException();
 
 							PlayerCreature* pPC = dynamic_cast<PlayerCreature*>(pCreature);
@@ -815,8 +815,8 @@ void ZonePlayerManager::processCommands()
 							//cout << "check time : 30sec.."<<endl;
 							bool bChildGuardArea = onChildGuardTimeArea(m_nChildGuardStartTime, m_nChildGuardEndTime, m_bChildGuard);
 
-                            //if(bChildGuardArea)   cout << "ChildGuard Area : Yes" << endl;
-                            //else                  cout << "ChildGuard Area : No" << endl;
+                            //if(bChildGuardArea)   cout << "ChildGuard Area : Yes" << eos;
+                            //else                  cout << "ChildGuard Area : No" << eos;
 
                             //if(pTempPlayer->getPermission())      cout << "Player Permission : ALLOW"<<endl;
                             //else                                  cout << "Player Permission : DENY"<<endl;
