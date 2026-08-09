@@ -28,10 +28,17 @@ services:
     container_name: darkeden-mysql
     entrypoint: ["/bin/bash", "/docker/mysql41-entrypoint.sh"]
     volumes:
-      - ./mysql-data:/usr/local/mysql/data
+      # ⚠️ volume NOMEADO (não bind mount): o bind mount ./mysql-data fica
+      # em filesystem vboxsf (pasta compartilhada), onde chown é no-op e o
+      # mysqld (uid 999) não consegue escrever → EACCES em ./ibdata1.
+      # Volume nomeado vive em /var/lib/docker/volumes (ext4 nativo).
+      - mysql-data:/usr/local/mysql/data
       - ./mysql41-entrypoint.sh:/docker/mysql41-entrypoint.sh:ro
       # Banco real (tarballs DARKEDEN/USERINFO + patch-compat.sql) — usados pelo entrypoint
       - ../sqls:/docker-entrypoint-initdb.d:ro
     ports:
       - "3306:3306"
     restart: unless-stopped
+
+volumes:
+  mysql-data:
