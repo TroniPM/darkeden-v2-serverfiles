@@ -47,179 +47,14 @@ UPDATE DARKEDEN.ZoneInfo SET ZoneGroupID=0 WHERE ZoneID IN
 --    banco e, se falhar, faz um retry em minúsculas — mas o ifstream
 --    (STLport no Linux) não limpa o estado de erro do 1o open, então o
 --    retry NUNCA funciona. O nome tem que bater EXATO de primeira.
+--    ⚠️ IMPORTANTE: os nomes aqui vêm do banco REAL (tarball). MUITAS
+--    zonas tiveram o arquivo sobrescrito por mapas genéricos errados em
+--    versões anteriores deste patch (ex.: guild shops 2000-2024 com
+--    alter_of_blood.smp, tutoriais com asylion_dungeon.smp). Isso fazia
+--    NPCs/portais caírem fora do layout -> EmptyTileNotExistException no
+--    gameserver. CORRIGIDO: cada zona usa o mapa correto do banco real.
 --    (idempotente: roda de novo sem efeito)
 -- ------------------------------------------------------------------
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_ne.smp', SsiFileName='eslania_ne.ssi' WHERE ZoneID=11;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_NW.smp', SsiFileName='eslania_NW.ssi' WHERE ZoneID=12;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_se.smp', SsiFileName='eslania_se.ssi' WHERE ZoneID=13;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_sw.smp', SsiFileName='eslania_sw.ssi' WHERE ZoneID=14;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='limbo_lair_ne.smp', SsiFileName='limbo_lair_ne.ssi' WHERE ZoneID=21;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='limbo_lair_nw.smp', SsiFileName='limbo_lair_nw.ssi' WHERE ZoneID=22;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='limbo_lair_se.smp', SsiFileName='limbo_lair_se.ssi' WHERE ZoneID=23;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='limbo_lair_sw.smp', SsiFileName='limbo_lair_sw.ssi' WHERE ZoneID=24;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='drobeta_ne.smp', SsiFileName='drobeta_ne.ssi' WHERE ZoneID=31;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='drobeta_nw.smp', SsiFileName='drobeta_nw.ssi' WHERE ZoneID=32;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='drobeta_se.smp', SsiFileName='drobeta_se.ssi' WHERE ZoneID=33;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='drobeta_sw.smp', SsiFileName='drobeta_sw.ssi' WHERE ZoneID=34;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='rodin_ne.smp', SsiFileName='rodin_ne.ssi' WHERE ZoneID=41;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='rodin_nw.smp', SsiFileName='rodin_nw.ssi' WHERE ZoneID=42;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='rodin_se.smp', SsiFileName='rodin_se.ssi' WHERE ZoneID=43;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='rodin_sw.smp', SsiFileName='rodin_sw.ssi' WHERE ZoneID=44;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='timore_ne.smp', SsiFileName='timore_ne.ssi' WHERE ZoneID=51;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='timore_nw.smp', SsiFileName='timore_nw.ssi' WHERE ZoneID=52;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='timore_se.smp', SsiFileName='timore_se.ssi' WHERE ZoneID=53;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='timore_sw.smp', SsiFileName='timore_sw.ssi' WHERE ZoneID=54;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='perona_ne.smp', SsiFileName='perona_ne.ssi' WHERE ZoneID=61;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='perona_nw.smp', SsiFileName='perona_nw.ssi' WHERE ZoneID=62;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='perona_se.smp', SsiFileName='perona_se.ssi' WHERE ZoneID=63;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='perona_sw.smp', SsiFileName='perona_sw.ssi' WHERE ZoneID=64;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='triste_ne.smp', SsiFileName='triste_ne.ssi' WHERE ZoneID=71;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='triste_nw.smp', SsiFileName='triste_nw.ssi' WHERE ZoneID=72;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='triste_se.smp', SsiFileName='triste_se.ssi' WHERE ZoneID=73;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='triste_sw.smp', SsiFileName='triste_sw.ssi' WHERE ZoneID=74;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='stray_ne.smp', SsiFileName='stray_ne.ssi' WHERE ZoneID=75;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='stray_nw.smp', SsiFileName='stray_nw.ssi' WHERE ZoneID=81;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='stray_se.smp', SsiFileName='stray_se.ssi' WHERE ZoneID=82;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='stray_sw.smp', SsiFileName='stray_sw.ssi' WHERE ZoneID=83;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_nw.smp', SsiFileName='eslania_nw.ssi' WHERE ZoneID=84;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='triste_dungeon.smp', SsiFileName='triste_dungeon.ssi' WHERE ZoneID=91;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='dragon_1f.smp', SsiFileName='dragon_1f.ssi' WHERE ZoneID=92;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='dragon_2f.smp', SsiFileName='dragon_2f.ssi' WHERE ZoneID=93;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='stray_dungeon.smp', SsiFileName='stray_dungeon.ssi' WHERE ZoneID=94;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='drobeta_dungeon.smp', SsiFileName='drobeta_dungeon.ssi' WHERE ZoneID=1001;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='drobeta_dungeon.smp', SsiFileName='drobeta_dungeon.ssi' WHERE ZoneID=1002;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='drobeta_dungeon.smp', SsiFileName='drobeta_dungeon.ssi' WHERE ZoneID=1003;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='drobeta_dungeon.smp', SsiFileName='drobeta_dungeon.ssi' WHERE ZoneID=1004;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='drobeta_dungeon.smp', SsiFileName='drobeta_dungeon.ssi' WHERE ZoneID=1005;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='drobeta_dungeon.smp', SsiFileName='drobeta_dungeon.ssi' WHERE ZoneID=1006;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='drobeta_dungeon.smp', SsiFileName='drobeta_dungeon.ssi' WHERE ZoneID=1007;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='drobeta_dungeon.smp', SsiFileName='drobeta_dungeon.ssi' WHERE ZoneID=1008;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='drobeta_dungeon.smp', SsiFileName='drobeta_dungeon.ssi' WHERE ZoneID=1009;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='drobeta_dungeon.smp', SsiFileName='drobeta_dungeon.ssi' WHERE ZoneID=1010;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='drobeta_dungeon.smp', SsiFileName='drobeta_dungeon.ssi' WHERE ZoneID=1011;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='drobeta_dungeon.smp', SsiFileName='drobeta_dungeon.ssi' WHERE ZoneID=1012;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='drobeta_dungeon.smp', SsiFileName='drobeta_dungeon.ssi' WHERE ZoneID=1013;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='limbo_dungeon.smp', SsiFileName='limbo_dungeon.ssi' WHERE ZoneID=1020;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1100;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1101;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1102;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1103;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1104;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1105;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1106;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1111;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1112;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1113;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1114;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1115;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1121;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1122;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1123;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1124;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1125;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1126;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1127;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1128;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1129;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1130;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1131;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1132;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1133;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1134;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='rodin_dungeon.smp', SsiFileName='rodin_dungeon.ssi' WHERE ZoneID=1201;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='rodin_dungeon.smp', SsiFileName='rodin_dungeon.ssi' WHERE ZoneID=1202;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='rodin_dungeon.smp', SsiFileName='rodin_dungeon.ssi' WHERE ZoneID=1203;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='rodin_dungeon.smp', SsiFileName='rodin_dungeon.ssi' WHERE ZoneID=1204;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='rodin_dungeon.smp', SsiFileName='rodin_dungeon.ssi' WHERE ZoneID=1205;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='rodin_dungeon.smp', SsiFileName='rodin_dungeon.ssi' WHERE ZoneID=1206;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='rodin_dungeon.smp', SsiFileName='rodin_dungeon.ssi' WHERE ZoneID=1211;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='rodin_dungeon.smp', SsiFileName='rodin_dungeon.ssi' WHERE ZoneID=1212;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='rodin_dungeon.smp', SsiFileName='rodin_dungeon.ssi' WHERE ZoneID=1221;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='rodin_dungeon.smp', SsiFileName='rodin_dungeon.ssi' WHERE ZoneID=1222;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='rodin_dungeon.smp', SsiFileName='rodin_dungeon.ssi' WHERE ZoneID=1231;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='rodin_dungeon.smp', SsiFileName='rodin_dungeon.ssi' WHERE ZoneID=1232;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='rodin_dungeon.smp', SsiFileName='rodin_dungeon.ssi' WHERE ZoneID=1241;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='rodin_dungeon.smp', SsiFileName='rodin_dungeon.ssi' WHERE ZoneID=1242;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='rodin_dungeon.smp', SsiFileName='rodin_dungeon.ssi' WHERE ZoneID=1251;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='rodin_dungeon.smp', SsiFileName='rodin_dungeon.ssi' WHERE ZoneID=1252;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='rodin_dungeon.smp', SsiFileName='rodin_dungeon.ssi' WHERE ZoneID=1261;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='rodin_dungeon.smp', SsiFileName='rodin_dungeon.ssi' WHERE ZoneID=1262;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='timore_dungeon.smp', SsiFileName='timore_dungeon.ssi' WHERE ZoneID=1301;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='timore_dungeon.smp', SsiFileName='timore_dungeon.ssi' WHERE ZoneID=1302;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='timore_dungeon.smp', SsiFileName='timore_dungeon.ssi' WHERE ZoneID=1303;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='timore_dungeon.smp', SsiFileName='timore_dungeon.ssi' WHERE ZoneID=1311;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='timore_dungeon.smp', SsiFileName='timore_dungeon.ssi' WHERE ZoneID=1312;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='timore_dungeon.smp', SsiFileName='timore_dungeon.ssi' WHERE ZoneID=1313;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='timore_dungeon.smp', SsiFileName='timore_dungeon.ssi' WHERE ZoneID=1314;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='timore_dungeon.smp', SsiFileName='timore_dungeon.ssi' WHERE ZoneID=1321;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='timore_dungeon.smp', SsiFileName='timore_dungeon.ssi' WHERE ZoneID=1322;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='timore_dungeon.smp', SsiFileName='timore_dungeon.ssi' WHERE ZoneID=1323;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='timore_dungeon.smp', SsiFileName='timore_dungeon.ssi' WHERE ZoneID=1324;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='perona_dungeon.smp', SsiFileName='perona_dungeon.ssi' WHERE ZoneID=1401;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='perona_dungeon.smp', SsiFileName='perona_dungeon.ssi' WHERE ZoneID=1402;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='perona_dungeon.smp', SsiFileName='perona_dungeon.ssi' WHERE ZoneID=1410;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='perona_dungeon.smp', SsiFileName='perona_dungeon.ssi' WHERE ZoneID=1411;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='perona_dungeon.smp', SsiFileName='perona_dungeon.ssi' WHERE ZoneID=1412;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='perona_dungeon.smp', SsiFileName='perona_dungeon.ssi' WHERE ZoneID=1413;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='adam_new_c.smp', SsiFileName='adam_new_c.ssi' WHERE ZoneID=1500;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='adam_new_e.smp', SsiFileName='adam_new_e.ssi' WHERE ZoneID=1501;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='adam_new_n.smp', SsiFileName='adam_new_n.ssi' WHERE ZoneID=1502;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='adam_new_s.smp', SsiFileName='adam_new_s.ssi' WHERE ZoneID=1503;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='adam_new_w.smp', SsiFileName='adam_new_w.ssi' WHERE ZoneID=1504;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='adam_new_c.smp', SsiFileName='adam_new_c.ssi' WHERE ZoneID=1505;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='adam_new_c.smp', SsiFileName='adam_new_c.ssi' WHERE ZoneID=1506;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='stray_ne.smp', SsiFileName='stray_ne.ssi' WHERE ZoneID=1600;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='stray_nw.smp', SsiFileName='stray_nw.ssi' WHERE ZoneID=1601;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='stray_se.smp', SsiFileName='stray_se.ssi' WHERE ZoneID=1602;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='stray_sw.smp', SsiFileName='stray_sw.ssi' WHERE ZoneID=1603;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='stray_ne.smp', SsiFileName='stray_ne.ssi' WHERE ZoneID=1604;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='stray_nw.smp', SsiFileName='stray_nw.ssi' WHERE ZoneID=1611;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='stray_nw.smp', SsiFileName='stray_nw.ssi' WHERE ZoneID=1612;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='stray_ne.smp', SsiFileName='stray_ne.ssi' WHERE ZoneID=1621;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2000;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2001;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2002;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2003;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2004;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2010;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2011;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2012;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2013;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2014;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2020;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2021;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2022;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2023;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2024;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='asylion_dungeon.smp', SsiFileName='asylion_dungeon.ssi' WHERE ZoneID=2101;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='asylion_dungeon.smp', SsiFileName='asylion_dungeon.ssi' WHERE ZoneID=2102;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='asylion_dungeon.smp', SsiFileName='asylion_dungeon.ssi' WHERE ZoneID=3001;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='asylion_dungeon.smp', SsiFileName='asylion_dungeon.ssi' WHERE ZoneID=3002;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='asylion_dungeon.smp', SsiFileName='asylion_dungeon.ssi' WHERE ZoneID=3003;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='asylion_dungeon.smp', SsiFileName='asylion_dungeon.ssi' WHERE ZoneID=4001;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='asylion_dungeon.smp', SsiFileName='asylion_dungeon.ssi' WHERE ZoneID=4002;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='asylion_dungeon.smp', SsiFileName='asylion_dungeon.ssi' WHERE ZoneID=4003;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='asylion_dungeon.smp', SsiFileName='asylion_dungeon.ssi' WHERE ZoneID=4004;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='asylion_dungeon.smp', SsiFileName='asylion_dungeon.ssi' WHERE ZoneID=4005;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='woban_1f.smp', SsiFileName='woban_1f.ssi' WHERE ZoneID=8000;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='woban_2f.smp', SsiFileName='woban_2f.ssi' WHERE ZoneID=8001;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='woban_2f.smp', SsiFileName='woban_2f.ssi' WHERE ZoneID=8002;
-
--- ------------------------------------------------------------------
--- 5) Usuário do server — NÃO existe nos arquivos reais (o banco mysql/
---    é recriado pelo mysql_install_db). O GRANT cria o usuário, e a
---    senha é convertida para o formato ANTIGO (16 bytes), único que o
---    cliente libmysqlclient 3.23 dos servidores entende.
---    Remove também usuários anônimos (senão 'elcastle' via localhost
---    cai no anônimo e leva Access denied).
--- ------------------------------------------------------------------
-GRANT ALL PRIVILEGES ON DARKEDEN.* TO 'elcastle'@'%' IDENTIFIED BY 'elca110';
-GRANT ALL PRIVILEGES ON USERINFO.* TO 'elcastle'@'%' IDENTIFIED BY 'elca110';
-UPDATE mysql.user SET Password=OLD_PASSWORD('elca110') WHERE User='elcastle' AND Host='%';
-DELETE FROM mysql.user WHERE User='';
-FLUSH PRIVILEGES;
-
--- FIM do patch
 UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_ne.smp', SsiFileName='eslania_ne.ssi' WHERE ZoneID=11;
 UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_NW.smp', SsiFileName='eslania_NW.ssi' WHERE ZoneID=12;
 UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_se.smp', SsiFileName='eslania_se.ssi' WHERE ZoneID=13;
@@ -267,33 +102,33 @@ UPDATE DARKEDEN.ZoneInfo SET SmpFileName='tunnel_peiac.smp', SsiFileName='tunnel
 UPDATE DARKEDEN.ZoneInfo SET SmpFileName='losttaiyan_b1f.smp', SsiFileName='losttaiyan_b1f.ssi' WHERE ZoneID=1011;
 UPDATE DARKEDEN.ZoneInfo SET SmpFileName='losttaiyan_b2f.smp', SsiFileName='losttaiyan_b2f.ssi' WHERE ZoneID=1012;
 UPDATE DARKEDEN.ZoneInfo SET SmpFileName='asylion_dungeon.smp', SsiFileName='asylion_dungeon.ssi' WHERE ZoneID=1013;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='limbo_dungeon.smp', SsiFileName='limbo_dungeon.ssi' WHERE ZoneID=1020;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1100;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1101;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1102;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1103;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1104;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1105;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1106;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1111;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1112;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1113;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1114;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1115;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1121;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1122;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1123;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1124;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1125;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1126;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1127;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1128;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1129;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1130;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1131;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1132;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1133;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='eslania_dungeon.smp', SsiFileName='eslania_dungeon.ssi' WHERE ZoneID=1134;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='drobeta_stadium.smp', SsiFileName='drobeta_stadium.ssi' WHERE ZoneID=1020;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='bathory_dungeon_b1f.smp', SsiFileName='bathory_dungeon_b1f.ssi' WHERE ZoneID=1100;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='bathory_dungeon_b2f.smp', SsiFileName='bathory_dungeon_b2f.ssi' WHERE ZoneID=1101;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='bathory_dungeon_b3f.smp', SsiFileName='bathory_dungeon_b3f.ssi' WHERE ZoneID=1102;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='bathory_dungeon_b4f.smp', SsiFileName='bathory_dungeon_b4f.ssi' WHERE ZoneID=1103;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='bathory_lair.smp', SsiFileName='bathory_lair.ssi' WHERE ZoneID=1104;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='tunnel_ghorgova.smp', SsiFileName='tunnel_ghorgova.ssi' WHERE ZoneID=1105;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='bathory_lair_clon.smp', SsiFileName='bathory_lair_clon.ssi' WHERE ZoneID=1106;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='castle_rasen_1_1.smp', SsiFileName='castle_rasen_1_1.ssi' WHERE ZoneID=1111;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='castle_rasen_1_2.smp', SsiFileName='castle_rasen_1_2.ssi' WHERE ZoneID=1112;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='castle_rasen_2_2.smp', SsiFileName='castle_rasen_2_2.ssi' WHERE ZoneID=1113;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='tepes_lair.smp', SsiFileName='tepes_lair.ssi' WHERE ZoneID=1114;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='tepes_lair_clon.smp', SsiFileName='tepes_lair_clon.ssi' WHERE ZoneID=1115;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='slayer_battlezone1.smp', SsiFileName='slayer_battlezone1.ssi' WHERE ZoneID=1121;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='slayer_battlezone2.smp', SsiFileName='slayer_battlezone2.ssi' WHERE ZoneID=1122;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='bathory_battlezone.smp', SsiFileName='bathory_battlezone.ssi' WHERE ZoneID=1123;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='rasen_battlezone.smp', SsiFileName='rasen_battlezone.ssi' WHERE ZoneID=1124;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='drobeta_dungeon_s1f.smp', SsiFileName='drobeta_dungeon_s1f.ssi' WHERE ZoneID=1125;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='drobeta_dungeon_v1f.smp', SsiFileName='drobeta_dungeon_v1f.ssi' WHERE ZoneID=1126;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='icen_dungeon3f.smp', SsiFileName='icen_dungeon3f.ssi' WHERE ZoneID=1127;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='laom_dungeon3f.smp', SsiFileName='laom_dungeon3f.ssi' WHERE ZoneID=1128;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='laom_dungeon4f.smp', SsiFileName='laom_dungeon4f.ssi' WHERE ZoneID=1129;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='laom_Dungeon5F.smp', SsiFileName='laom_Dungeon5F.ssi' WHERE ZoneID=1130;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='caligo_dungeon.smp', SsiFileName='caligo_dungeon.ssi' WHERE ZoneID=1131;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='caligo_dungeon.smp', SsiFileName='caligo_dungeon.ssi' WHERE ZoneID=1132;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='caligo_dungeon.smp', SsiFileName='caligo_dungeon.ssi' WHERE ZoneID=1133;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='caligo_dungeon.smp', SsiFileName='caligo_dungeon.ssi' WHERE ZoneID=1134;
 UPDATE DARKEDEN.ZoneInfo SET SmpFileName='castle_octavus.smp', SsiFileName='castle_octavus.ssi' WHERE ZoneID=1201;
 UPDATE DARKEDEN.ZoneInfo SET SmpFileName='castle_tertius.smp', SsiFileName='castle_tertius.ssi' WHERE ZoneID=1202;
 UPDATE DARKEDEN.ZoneInfo SET SmpFileName='castle_septimus.smp', SsiFileName='castle_septimus.ssi' WHERE ZoneID=1203;
@@ -341,31 +176,31 @@ UPDATE DARKEDEN.ZoneInfo SET SmpFileName='ik_lab_b2f.smp', SsiFileName='ik_lab_b
 UPDATE DARKEDEN.ZoneInfo SET SmpFileName='under_pass_1f.smp', SsiFileName='under_pass_1f.ssi' WHERE ZoneID=1611;
 UPDATE DARKEDEN.ZoneInfo SET SmpFileName='under_pass_2f.smp', SsiFileName='under_pass_2f.ssi' WHERE ZoneID=1612;
 UPDATE DARKEDEN.ZoneInfo SET SmpFileName='castellum.smp', SsiFileName='castellum.ssi' WHERE ZoneID=1621;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2000;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2001;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2002;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2003;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2004;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2010;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2011;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2012;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2013;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2014;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2020;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2021;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2022;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2023;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=2024;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='asylion_dungeon.smp', SsiFileName='asylion_dungeon.ssi' WHERE ZoneID=2101;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='asylion_dungeon.smp', SsiFileName='asylion_dungeon.ssi' WHERE ZoneID=2102;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='asylion_dungeon.smp', SsiFileName='asylion_dungeon.ssi' WHERE ZoneID=3001;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='asylion_dungeon.smp', SsiFileName='asylion_dungeon.ssi' WHERE ZoneID=3002;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='asylion_dungeon.smp', SsiFileName='asylion_dungeon.ssi' WHERE ZoneID=3003;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='asylion_dungeon.smp', SsiFileName='asylion_dungeon.ssi' WHERE ZoneID=4001;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='asylion_dungeon.smp', SsiFileName='asylion_dungeon.ssi' WHERE ZoneID=4002;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='asylion_dungeon.smp', SsiFileName='asylion_dungeon.ssi' WHERE ZoneID=4003;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='asylion_dungeon.smp', SsiFileName='asylion_dungeon.ssi' WHERE ZoneID=4004;
-UPDATE DARKEDEN.ZoneInfo SET SmpFileName='asylion_dungeon.smp', SsiFileName='asylion_dungeon.ssi' WHERE ZoneID=4005;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='guild_army_b1.smp', SsiFileName='guild_army_b1.ssi' WHERE ZoneID=2000;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='guild_army_1f.smp', SsiFileName='guild_army_1f.ssi' WHERE ZoneID=2001;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='guild_army_2f.smp', SsiFileName='guild_army_2f.ssi' WHERE ZoneID=2002;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='guild_army_3f.smp', SsiFileName='guild_army_3f.ssi' WHERE ZoneID=2003;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='guild_army_4f.smp', SsiFileName='guild_army_4f.ssi' WHERE ZoneID=2004;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='guild_cleric_b1.smp', SsiFileName='guild_cleric_b1.ssi' WHERE ZoneID=2010;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='guild_cleric_1f.smp', SsiFileName='guild_cleric_1f.ssi' WHERE ZoneID=2011;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='guild_cleric_2f.smp', SsiFileName='guild_cleric_2f.ssi' WHERE ZoneID=2012;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='guild_cleric_3f.smp', SsiFileName='guild_cleric_3f.ssi' WHERE ZoneID=2013;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='guild_cleric_4f.smp', SsiFileName='guild_cleric_4f.ssi' WHERE ZoneID=2014;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='guild_knight_b1.smp', SsiFileName='guild_knight_b1.ssi' WHERE ZoneID=2020;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='guild_knight_1f.smp', SsiFileName='guild_knight_1f.ssi' WHERE ZoneID=2021;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='guild_knight_2f.smp', SsiFileName='guild_knight_2f.ssi' WHERE ZoneID=2022;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='guild_knight_3f.smp', SsiFileName='guild_knight_3f.ssi' WHERE ZoneID=2023;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='guild_knight_4f.smp', SsiFileName='guild_knight_4f.ssi' WHERE ZoneID=2024;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='tutorial_n.smp', SsiFileName='tutorial_n.ssi' WHERE ZoneID=2101;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='tutorial_s.smp', SsiFileName='tutorial_s.ssi' WHERE ZoneID=2102;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='maze.smp', SsiFileName='maze.ssi' WHERE ZoneID=3001;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='trapzone01.smp', SsiFileName='trapzone01.ssi' WHERE ZoneID=3002;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='trapzone02.smp', SsiFileName='trapzone02.ssi' WHERE ZoneID=3003;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='gate_of_alter.smp', SsiFileName='gate_of_alter.ssi' WHERE ZoneID=4001;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='alter_of_blood.smp', SsiFileName='alter_of_blood.ssi' WHERE ZoneID=4002;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='gate_of_alter.smp', SsiFileName='gate_of_alter.ssi' WHERE ZoneID=4003;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='gate_of_alter.smp', SsiFileName='gate_of_alter.ssi' WHERE ZoneID=4004;
+UPDATE DARKEDEN.ZoneInfo SET SmpFileName='gate_of_alter.smp', SsiFileName='gate_of_alter.ssi' WHERE ZoneID=4005;
 UPDATE DARKEDEN.ZoneInfo SET SmpFileName='devt.smp', SsiFileName='devt.ssi' WHERE ZoneID=8000;
 UPDATE DARKEDEN.ZoneInfo SET SmpFileName='survival.smp', SsiFileName='survival.ssi' WHERE ZoneID=8001;
 UPDATE DARKEDEN.ZoneInfo SET SmpFileName='gate_of_alter.smp', SsiFileName='gate_of_alter.ssi' WHERE ZoneID=8005;
@@ -377,7 +212,21 @@ UPDATE DARKEDEN.ZoneInfo SET SmpFileName='gate_of_alter.smp', SsiFileName='gate_
 UPDATE DARKEDEN.ZoneInfo SET SmpFileName='gate_of_alter.smp', SsiFileName='gate_of_alter.ssi' WHERE ZoneID=9010;
 
 -- ------------------------------------------------------------------
--- 5) Zonas adam_* (1500-1506): mapa do cliente é 128x256 e os
+-- 5) Usuário do server — NÃO existe nos arquivos reais (o banco mysql/
+--    é recriado pelo mysql_install_db). O GRANT cria o usuário, e a
+--    senha é convertida para o formato ANTIGO (16 bytes), único que o
+--    cliente libmysqlclient 3.23 dos servidores entende.
+--    Remove também usuários anônimos (senão 'elcastle' via localhost
+--    cai no anônimo e leva Access denied).
+-- ------------------------------------------------------------------
+GRANT ALL PRIVILEGES ON DARKEDEN.* TO 'elcastle'@'%' IDENTIFIED BY 'elca110';
+GRANT ALL PRIVILEGES ON USERINFO.* TO 'elcastle'@'%' IDENTIFIED BY 'elca110';
+UPDATE mysql.user SET Password=OLD_PASSWORD('elca110') WHERE User='elcastle' AND Host='%';
+DELETE FROM mysql.user WHERE User='';
+FLUSH PRIVILEGES;
+
+-- ------------------------------------------------------------------
+-- 6) Zonas adam_* (1500-1506): mapa do cliente é 128x256 e os
 --    ZoneTriggers originais passam de X=156/169 -> Assert em
 --    Zone.cpp:2396 (loadTriggeredPortal) derruba o gameserver.
 --    Em vez de desativar, CORRIGIR os triggers para dentro do mapa
@@ -386,13 +235,6 @@ UPDATE DARKEDEN.ZoneInfo SET SmpFileName='gate_of_alter.smp', SsiFileName='gate_
 UPDATE DARKEDEN.ZoneTriggers SET X1=123, X2=127 WHERE ZoneID IN (1501,1504,1505,1506) AND X1=156 AND X2=160;
 UPDATE DARKEDEN.ZoneTriggers SET X1=122, X2=127 WHERE ZoneID IN (1501,1504,1505,1506) AND X1=169 AND X2=174;
 UPDATE DARKEDEN.ZoneInfo SET ZoneGroupID=1 WHERE ZoneID IN (1500,1501,1504,1505,1506);
-
--- ------------------------------------------------------------------
--- 6) WayPointInfo da zona 1105 (eslania_dungeon): waypoints com
---    X=165 e Y=201 fora do mapa -> trazidos para dentro.
--- ------------------------------------------------------------------
-UPDATE DARKEDEN.WayPointInfo SET Y=127 WHERE ZoneID=1105 AND Y=201;
-UPDATE DARKEDEN.WayPointInfo SET X=127 WHERE ZoneID=1105 AND X=165;
 
 -- ------------------------------------------------------------------
 -- 7) NPCs das zonas adam_* (1501/1504/1505/1506) spawnavam em
