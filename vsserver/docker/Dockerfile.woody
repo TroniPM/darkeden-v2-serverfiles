@@ -1,0 +1,51 @@
+# =====================================================================
+# Dockerfile.woody - build do DarkEden server (código ~2005)
+# Base: Debian 3.0 woody (EOL) - ambiente ORIGINAL da época
+# ---------------------------------------------------------------------
+# Este é um EXPERIMENTO para máxima fidelidade:
+#   - gcc-2.95.4 (o compilador original - provado pelo CSAuth.o)
+#   - 32-bit (Intel 80386) - como o servidor original
+#   - libs da época (libmysqlclient10, libxerces1, zlib 1.1.4)
+#   - CSAuth.a (anti-cheat 32-bit) linka nativamente
+# ---------------------------------------------------------------------
+# A toolchain completa (lua, STLport, xerces, cppunit, patch de headers)
+# é instalada pelo setup-woody-toolchain.sh - SEM "|| true" para que
+# qualquer falha ABORTE o build da imagem (não mascarar erros).
+# ---------------------------------------------------------------------
+FROM debian/eol:woody
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# ------------------------------------------------------------------
+# 1. Pacotes base (apt antigo - sem --no-install-recommends)
+# ------------------------------------------------------------------
+RUN apt-get update && apt-get install -y \
+    gcc-2.95 \
+    g++-2.95 \
+    make \
+    libc6-dev \
+    zlib1g-dev \
+    libxerces1-dev \
+    libmysqlclient10-dev \
+    wget \
+    tar \
+    && rm -rf /var/lib/apt/lists/*
+
+# g++/gcc apontam para o 2.95 (Makefiles usam CC=g++)
+RUN ln -sf /usr/bin/g++-2.95 /usr/bin/g++ && ln -sf /usr/bin/gcc-2.95 /usr/bin/gcc
+
+# ------------------------------------------------------------------
+# 2. Toolchain da época (lua, STLport, xerces, cppunit, headers patch)
+#    Roda o setup-woody-toolchain.sh (set -e, falha aborta o build)
+# ------------------------------------------------------------------
+COPY thirdparty/ /opt/thirdparty/
+COPY setup-woody-toolchain.sh /opt/
+RUN chmod +x /opt/setup-woody-toolchain.sh \
+    && bash /opt/setup-woody-toolchain.sh /opt/thirdparty
+
+# ------------------------------------------------------------------
+# 3. Script de build (o build.sh é MONTADO de fora pelo build-server,
+#    em /src/docker/build.sh — não precisa ser copiado para a imagem)
+# ------------------------------------------------------------------
+WORKDIR /src
+CMD ["/bin/bash"]

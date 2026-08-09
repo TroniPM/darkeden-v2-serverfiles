@@ -1,0 +1,45 @@
+bin/*
+lib/*
+lib/
+
+build/
+*.o
+*.a
+.deps
+
+# Removendo logs
+*.log
+WarLog.txt
+CheckMineBug.txt
+balanceZoneGroup.txt
+
+#arquivos de log do servidor
+*.server-pids
+*.out 
+*/docker/mysql-data/*
+vsserver/data/*
+vsserver/packetsizeerror.txt
+vsserver/PayPlayDateLog.txt
+vsserver/loginfail.txt
+
+# binarios e logs gerados pelo build/execucao do servidor
+vsserver/bin/
+vsserver/log/
+vsserver/lib/
+build.log
+
+# artefatos de build / backups / arquivos compilados
+*.luac
+a.out
+*.bak
+*.backup
+*.orig
+*.rej
+*.old
+*.old.*
+*.oldHP
+vsserver/src/server/gameserver/quest/luaScript/test/lt
+
+# metadata de VCS antigo (SourceSafe/CVS)
+vssver.scc
+CVS/

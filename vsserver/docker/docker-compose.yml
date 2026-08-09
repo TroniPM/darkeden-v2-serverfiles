@@ -1,0 +1,37 @@
+# =====================================================================
+# docker-compose.yml - DarkEden server (ambiente woody)
+# ---------------------------------------------------------------------
+# Serviços:
+#   - mysql     : MySQL 4.1 (NÃO 5.7!) — o cliente libmysqlclient da imagem
+#                 woody é 3.23.49 (protocolo handshake v9, 2001). O MySQL
+#                 5.7 usa protocolo v10 e REJEITA clientes pré-4.1 com
+#                 "Bad handshake". O 4.1 ainda aceita clientes 3.23
+#                 (senha no formato antigo OLD_PASSWORD).
+#                 - Porta 3306 exposta no host
+#                 - Dados persistidos no volume ./docker/mysql-data
+#                 - O BANCO vem dos ARQUIVOS REAIS do servidor: os
+#                   tarballs ../sqls/DARKEDEN.tar.gz e ../sqls/USERINFO.tar.gz
+#                   (FRM/MYD/MYI) — NÃO de dumps .sql, que têm schema
+#                   diferente deste código. O entrypoint custom
+#                   (mysql41-entrypoint.sh) extrai os tarballs na 1a
+#                   subida e aplica o patch de compatibilidade
+#                   (../sqls/patch-compat.sql) para o ambiente local.
+#
+# OBS: o BUILD do servidor NÃO é serviço deste compose — o caminho
+# oficial é ./build-server (raiz), que usa `docker run` direto com a
+# imagem darkeden-woody:test. Evita `docker compose up` disparar um
+# build sem querer.
+# =====================================================================
+services:
+  mysql:
+    image: vettadock/mysql-old:4.1
+    container_name: darkeden-mysql
+    entrypoint: ["/bin/bash", "/docker/mysql41-entrypoint.sh"]
+    volumes:
+      - ./mysql-data:/usr/local/mysql/data
+      - ./mysql41-entrypoint.sh:/docker/mysql41-entrypoint.sh:ro
+      # Banco real (tarballs DARKEDEN/USERINFO + patch-compat.sql) — usados pelo entrypoint
+      - ../sqls:/docker-entrypoint-initdb.d:ro
+    ports:
+      - "3306:3306"
+    restart: unless-stopped

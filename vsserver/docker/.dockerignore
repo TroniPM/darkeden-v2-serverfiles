@@ -1,0 +1,12 @@
+# =====================================================================
+# .dockerignore - contexto do build da imagem woody (Dockerfile.woody)
+# ---------------------------------------------------------------------
+# O build roda com contexto = vsserver/docker/ (ver 02-build-image.sh).
+# A pasta mysql-data/ contém os DADOS do MySQL 5.7 (criados pelo
+# container, dono root/dnsmasq, permissões travadas). Ela NÃO faz
+# parte da imagem de build — sem este ignore o docker build falha com
+# "can't stat '.../mysql-data/DARKEDEN'" (permission denied ao varrer
+# o contexto) e envia ~180MB inúteis ao daemon.
+# =====================================================================
+mysql-data/
+*.log
