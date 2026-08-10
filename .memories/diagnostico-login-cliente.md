@@ -1,8 +1,14 @@
-# Diagnóstico: login pelo cliente (2026-08-08, atualizado 2026-08-09)
+# Diagnóstico: login pelo cliente (2026-08-08, atualizado 2026-08-09 ~23h)
 
-Situação: cliente DarkEden (binário de origem desconhecida) no PC fora da VM
-fecha imediatamente ao tentar logar (com usuário certo OU errado), sem
-mensagem de erro nem log no cliente.
+**STATUS: RESOLVIDO — login + criação de personagem funcionando!**
+O usuário logou com sucesso (test123/test456) e criou o personagem
+**TroniPM** (Slayer). O próximo problema (entrar no servidor) está em
+`diagnostico-entrar-no-servidor.md`.
+
+Situação original: cliente DarkEden (binário `fengshen.bin` de
+3.207.168 B, compilado 11/fev/2014) no PC fora da VM fechava imediatamente
+ao tentar logar. RESOLVIDO com UPDATE na tabela ClientVersion (ver abaixo).
+
 
 ## Estado do servidor (verificado)
 
@@ -124,3 +130,52 @@ mensagem de erro nem log no cliente.
 4. Identificar a versão/origem do cliente usado no PC (pendente).
 5. Questão do packetID (145 vs 153) fica em PAUSA — só importa depois que o
    cliente real conseguir chegar ao loginserver.
+
+## AVANÇO REAL DO CLIENTE (2026-08-09, noite) — CLIENTE CHEGA AO LOGINSERVER!
+
+- O cliente real (`fengshen.bin` de 3.207.168 B, compilado 11/fev/2014, da
+  pasta `/media/sf_Client-exe` = "Game(800)" — NÃO é o fs_Debug.exe, nem o
+  fengshen.bin do zip da fonte) agora CONECTA no loginserver (VM agora tem IP
+  **192.168.50.17**; `ServerInfo.inf` do cliente aponta para .17:9999 ✓) e
+  envia: `CLVersionCheck(154)` + `CLLogin(145)` — mas CRASHA (Access
+  Violation 0xc0000005, dentro de `strlen` @ 0x00645860) ao receber a
+  resposta do servidor.
+- CrashReport2.log (cliente): AV em strlen com ponteiro inválido.
+- Protocolo do binário (família A): CL_LOGIN=145, CL_VERSION_CHECK=154,
+  CL_RECONNECT_LOGIN=149, CG_ENCODE_KEY=15 — CONFIRMADO por captura e pelo
+  binário rodando (extração via símbolos ELF).
+
+## POR QUE CRASHAVA — CAUSA RAIZ ENCONTRADA (2026-08-09 noite)
+
+- O loginserver RODANDO (`vsserver/bin/loginserver`, build 16:48, família A)
+  NÃO corresponde à fonte atual do Packet.h (família B: CL_LOGIN=144,
+  LC_LOGIN_OK=389; LC region difere em ~49 entradas). A fonte família A foi
+  perdida — NÃO rebuildar do zero sem recriar a família A!
+- IDs reais do servidor rodando (extraídos dos símbolos ELF):
+  LC_LOGIN_OK=**438**, LC_LOGIN_ERROR=**437**, LC_VERSION_CHECK_OK=**449**,
+  LC_VERSION_CHECK_ERROR=**448**, LC_WORLD_LIST=**450**, LC_SERVER_LIST=**447**.
+  O cliente espera exatamente esses (mesma família A) ✓.
+- **CAUSA DO CRASH**: a tabela `DARKEDEN.ClientVersion` tinha (889861, 958891)
+  (valores da fonte Mar/2014), mas o binário fev/2014 envia Version=**78786544**
+  e ServerVersion=**4455444** (constantes extraídas do binário). O servidor
+  comparava e enviava **LCVersionCheckError (448)** → handler do cliente de
+  "versão errada" → crash (strlen em string inválida da tabela de mensagens).
+- CORREÇÃO APLICADA (2026-08-09 22h, SEM rebuild): 
+  `UPDATE ClientVersion SET Version=78786544, ServerVersion=4455444;`
+  → teste com script (mesmos valores do cliente) agora devolve
+  **packetID=449 (LCVersionCheckOK)** + **438 (LCLoginOK, body 5B)** ✓.
+- PENDENTE: usuário testar o cliente real no PC. Próximo passo esperado:
+  cliente envia CLGetWorldList → servidor responde LCWorldList (450) → ...
+  Observar loginserver.out.
+
+## Fonte do cliente (zip /media/sf_Client-source/Game(800)vs.zip)
+
+- `designed/project/Client/...` = código-fonte do cliente (Mar/2014, família B
+  — NÃO corresponde ao binário fev/2014; usar só p/ estrutura/handlers).
+- Login flow: `UIMessageManager.cpp` (~linha 1900, Execute_UI_LOGIN): envia
+  CLVersionCheck (versão de `g_pUserInformation->GameVersion/ServerVersion`)
+  + CLLogin, seta CPS_AFTER_SENDING_CL_LOGIN, MODE_WAIT_LOGINOK.
+- Handler LCLoginOK: envia CLGetWorldList e espera LCWorldList.
+- Handler LCVersionCheckError: mostra dialog de versão errada (suspeito do crash).
+- Criptografia de stream desativada nos DOIS lados (setKey comentado).
+- Header pacotes: packetID(2) + packetSize(4) + seq(1) = 7 bytes. ✓
