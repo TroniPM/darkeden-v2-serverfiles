@@ -43,3 +43,4 @@ vsserver/src/server/gameserver/quest/luaScript/test/lt
 # metadata de VCS antigo (SourceSafe/CVS)
 vssver.scc
 CVS/
+vsserver/SequenceError.txt
