@@ -247,4 +247,14 @@ UPDATE DARKEDEN.Triggers SET Actions = REPLACE(REPLACE(Actions, 'X : 166', 'X : 
 UPDATE DARKEDEN.Triggers SET Actions = REPLACE(REPLACE(Actions, 'X : 166', 'X : 126'), 'Y : 40', 'Y : 5') WHERE TriggerID=1631;
 UPDATE DARKEDEN.Triggers SET Actions = REPLACE(REPLACE(Actions, 'X : 166', 'X : 126'), 'Y : 40', 'Y : 5') WHERE TriggerID=1643;
 
+
+
+-- ------------------------------------------------------------------
+-- 8) ClientVersion: o client compilado a partir da fonte mar/2014
+--    envia GameVersion=889861 / ServerVersion=958891 no CLVersionCheck.
+--    O servidor rejeita (LCVersionCheckError) se não bater com esta
+--    tabela — o dump original vinha com os valores do binário fev/2014
+--    (78786544/4455444), o que derrubava o login do client da fonte.
+-- ------------------------------------------------------------------
+UPDATE DARKEDEN.ClientVersion SET Version=889861, ServerVersion=958891;
 -- FIM do patch
